@@ -1,5 +1,6 @@
 ---
 title: "Thông báo đẩy trên web"
+description: "Thiết lập khóa VAPID, client WebPushHelper và service worker để B1.church và B1 Admin gửi thông báo đẩy trên trình duyệt đến thành viên."
 ---
 
 # Thông báo đẩy trên web
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Trang liên quan
 
-- [Kiến trúc thông báo](./architecture/notifications): Toàn bộ phễu leo thang thông báo trong ứng dụng/đẩy/email và bộ máy nhắc nhở
-- [Kiến trúc thời gian thực](./realtime): Gửi qua WebSocket. Thông báo đẩy giờ được kích hoạt từ cùng phễu trong ứng dụng song song với socket trong cùng một lượt, không chỉ là phương án dự phòng khi gửi qua socket thất bại
-- [Endpoint messaging](./api/endpoints/messaging): Thông báo, thiết bị và phần còn lại của bề mặt messaging
-- [AppHelper](./shared-libraries/app-helper): Gói npm cung cấp `WebPushHelper`
+- [Kiến trúc thông báo](./architecture/notifications.md): Toàn bộ phễu leo thang thông báo trong ứng dụng/đẩy/email và bộ máy nhắc nhở
+- [Kiến trúc thời gian thực](./realtime.md): Gửi qua WebSocket. Thông báo đẩy giờ được kích hoạt từ cùng phễu trong ứng dụng song song với socket trong cùng một lượt, không chỉ là phương án dự phòng khi gửi qua socket thất bại
+- [Endpoint messaging](./api/endpoints/messaging.md): Thông báo, thiết bị và phần còn lại của bề mặt messaging
+- [AppHelper](./shared-libraries/app-helper.md): Gói npm cung cấp `WebPushHelper`

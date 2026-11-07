@@ -1,5 +1,6 @@
 ---
 title: "Integrasyon at Extension Surface"
+description: "Mapa ng bawat paraan ng pagkonekta sa ChurchApps B1: REST API, API key, OAuth, webhook, MCP, at content provider, may link sa bawat sanggunian."
 ---
 
 # Integrasyon at Extension Surface
@@ -14,12 +15,12 @@ Lahat ng maaaring ikabit ng third party ay dumadaan sa iisang API at iisang mode
 
 May anim na paraan papasok o palabas, at lahat sila ay nagbabahagi ng iisang auth layer:
 
-- **[REST API](../api/api-keys)**: ang buong product surface, na maaaring tawagin gamit ang bearer token mula sa anumang wika.
-- **[API keys](../api/api-keys)**: ang pinakasimpleng credential, isang token na `cak_…` na nakatali sa isang tao sa isang simbahan.
-- **[OAuth 2.0 & Connected Apps](../api/connected-apps)**: pahintulot ng simbahan kada simbahan para sa mga multi-tenant na app. Naglalabas ito ng parehong JWT na nakukuha ng isang user.
-- **[Webhooks](../api/webhooks)**: mga naka-sign at matibay na naihahatid na outbound na event.
-- **[MCP server](../api/mcp)**: isang wrapper para sa AI sa ibabaw ng REST API, sa `/mcp`.
-- **[Content providers](../freeplay-content-provider)**: ang inbound na daan para sa mga external na media library papunta sa FreePlay at sa mga B1 app.
+- **[REST API](../api/api-keys.md)**: ang buong product surface, na maaaring tawagin gamit ang bearer token mula sa anumang wika.
+- **[API keys](../api/api-keys.md)**: ang pinakasimpleng credential, isang token na `cak_…` na nakatali sa isang tao sa isang simbahan.
+- **[OAuth 2.0 & Connected Apps](../api/connected-apps.md)**: pahintulot ng simbahan kada simbahan para sa mga multi-tenant na app. Naglalabas ito ng parehong JWT na nakukuha ng isang user.
+- **[Webhooks](../api/webhooks.md)**: mga naka-sign at matibay na naihahatid na outbound na event.
+- **[MCP server](../api/mcp.md)**: isang wrapper para sa AI sa ibabaw ng REST API, sa `/mcp`.
+- **[Content providers](../freeplay-content-provider.md)**: ang inbound na daan para sa mga external na media library papunta sa FreePlay at sa mga B1 app.
 
 Lahat maliban sa content providers ay inihahain ng iisang monolithic na API (ang repository na [Api](https://github.com/ChurchApps/Api)), at ang mga module nito ay nakakabit sa matatag na base path: `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting`, at `/mcp`.
 
@@ -80,7 +81,7 @@ Ginagating ng mga controller ang mga aksyon gamit ang `au.checkAccess(contentTyp
 - Ang scope ay maaari lamang *mag-alis* ng pahintulot, kaya hindi kailanman makakataas ang isang scoped na credential sa pagiging server o domain administrator. Sinadyang hindi naka-map sa anumang scope ang mga pahintulot na iyon.
 - May prefix na `cak_` ang mga API key. Sinusuri ng `CustomAuthProvider.getUser()` ang prefix na ito, hina-hash ang secret, at muling nireresolba ang live na RBAC ng nagmamay-ari na tao sa bawat tawag.
 
-Tingnan ang [API Keys → Scopes](../api/api-keys#scopes) para sa buong catalog ng scope.
+Tingnan ang [API Keys → Scopes](../api/api-keys.md#scopes) para sa buong catalog ng scope.
 
 ## Reference ng Surface
 
@@ -90,7 +91,7 @@ Ang buong product surface. Tumatanggap ang anumang naka-authenticate na endpoint
 
 ### API keys
 
-Isang personal access token na `cak_<prefix>.<secret>`, na nililikha sa **B1Admin → Settings → Developer → API Keys**. Ang SHA-256 hash lamang ang iniimbak. Ipinapakita nang minsan lang ang raw na key. Pinamamahalaan sa `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Pinakamainam para sa mga script ng iisang simbahan at para sa mga connector gaya ng Zapier, Make, at Google Sheets. → **[API Keys](../api/api-keys)**
+Isang personal access token na `cak_<prefix>.<secret>`, na nililikha sa **B1Admin → Settings → Developer → API Keys**. Ang SHA-256 hash lamang ang iniimbak. Ipinapakita nang minsan lang ang raw na key. Pinamamahalaan sa `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Pinakamainam para sa mga script ng iisang simbahan at para sa mga connector gaya ng Zapier, Make, at Google Sheets. → **[API Keys](../api/api-keys.md)**
 
 ### OAuth 2.0 & Connected Apps
 
@@ -102,19 +103,19 @@ Para sa mga multi-tenant na app na nangangailangan ng pahintulot ng bawat simbah
 
 Maaaring magparehistro ang mga public na client sa sarili nila gamit ang `POST /oauth/register` (RFC 7591 dynamic client registration). Nakakakuha sila ng `client_id` at walang secret, at dapat na `https` o loopback ang kanilang redirect URI.
 
-Ang **Connected App** ay ang pagtingin ng admin ng simbahan sa isang ipinagkaloob na token. Nakalista ito at nababawi sa `/membership/oauth/connections`. Naglalaman din ang controller ng OAuth **relay-session** bridge (`/oauth/relay/*`) na nagpapahintulot sa isang device na walang browser na mag-sign in sa isang *external* na provider. → **[Connected Apps & OAuth](../api/connected-apps)**
+Ang **Connected App** ay ang pagtingin ng admin ng simbahan sa isang ipinagkaloob na token. Nakalista ito at nababawi sa `/membership/oauth/connections`. Naglalaman din ang controller ng OAuth **relay-session** bridge (`/oauth/relay/*`) na nagpapahintulot sa isang device na walang browser na mag-sign in sa isang *external* na provider. → **[Connected Apps & OAuth](../api/connected-apps.md)**
 
 ### Webhooks
 
-Ang tanging outbound na surface. Nagsa-subscribe ang isang simbahan ng pampublikong HTTPS endpoint sa mga event. Kapag may tugmang pagbabago, ang `WebhookDispatcher.emit(churchId, event, payload)` ay nagdaragdag ng mga display name sa mga payload na id lamang (`personName`, `groupName`, `formName`; tumatakbo lamang ang mga lookup kapag may tugmang subscription). Nagtatala ito ng delivery, at isang background worker ang nagpo-POST ng naka-sign na JSON envelope na may retry/backoff at redelivery. Ang engine ay nasa `Api/src/shared/webhooks/`, at ang CRUD kada simbahan ay nasa ilalim ng `/membership/webhooks` (`WebhookController.ts`). Binabago ng field na `connectorType` ang hugis ng body para sa Slack / Discord. Mas malayo ang narating ng connector na `mailchimp`: sarili nitong pinamamahalaan ang buong HTTP exchange (method/URL/auth kada event laban sa API ng Mailchimp, at naka-encrypt ang mga credential sa `webhooks.connectorConfig`). → **[Webhooks](../api/webhooks)**
+Ang tanging outbound na surface. Nagsa-subscribe ang isang simbahan ng pampublikong HTTPS endpoint sa mga event. Kapag may tugmang pagbabago, ang `WebhookDispatcher.emit(churchId, event, payload)` ay nagdaragdag ng mga display name sa mga payload na id lamang (`personName`, `groupName`, `formName`; tumatakbo lamang ang mga lookup kapag may tugmang subscription). Nagtatala ito ng delivery, at isang background worker ang nagpo-POST ng naka-sign na JSON envelope na may retry/backoff at redelivery. Ang engine ay nasa `Api/src/shared/webhooks/`, at ang CRUD kada simbahan ay nasa ilalim ng `/membership/webhooks` (`WebhookController.ts`). Binabago ng field na `connectorType` ang hugis ng body para sa Slack / Discord. Mas malayo ang narating ng connector na `mailchimp`: sarili nitong pinamamahalaan ang buong HTTP exchange (method/URL/auth kada event laban sa API ng Mailchimp, at naka-encrypt ang mga credential sa `webhooks.connectorConfig`). → **[Webhooks](../api/webhooks.md)**
 
 ### MCP server
 
-Isang AI-facing na wrapper sa `/mcp` (`Api/src/modules/mcp/`). Tatlong pangkalahatang tool ang naglalantad ng buong REST surface nang dinamiko sa anumang MCP client: `list_endpoints`, `describe_endpoint`, at `api_call`. Pareho ang auth, ang parehong bearer token gaya ng lahat ng iba. Para sa mga client na nag-sign in gamit ang OAuth (claude.ai custom connectors), ang 401 mula sa `/mcp` ay may header na `WWW-Authenticate` na tumuturo sa `/.well-known/oauth-protected-resource`. Ang `/.well-known/oauth-authorization-server` ay nag-aanunsyo ng mga endpoint ng `/membership/oauth`, dynamic registration, PKCE, at ang consent page ng `/oauth` sa B1Admin (`WellKnownController.ts`, `OAuthMetadata.ts`). Muling pumapasok ang `api_call` sa Express stack sa loob ng proseso, kaya nananatiling ipinatutupad ang bawat patakaran ng pahintulot at scoping ng simbahan. → **[MCP Server](../api/mcp)**
+Isang AI-facing na wrapper sa `/mcp` (`Api/src/modules/mcp/`). Tatlong pangkalahatang tool ang naglalantad ng buong REST surface nang dinamiko sa anumang MCP client: `list_endpoints`, `describe_endpoint`, at `api_call`. Pareho ang auth, ang parehong bearer token gaya ng lahat ng iba. Para sa mga client na nag-sign in gamit ang OAuth (claude.ai custom connectors), ang 401 mula sa `/mcp` ay may header na `WWW-Authenticate` na tumuturo sa `/.well-known/oauth-protected-resource`. Ang `/.well-known/oauth-authorization-server` ay nag-aanunsyo ng mga endpoint ng `/membership/oauth`, dynamic registration, PKCE, at ang consent page ng `/oauth` sa B1Admin (`WellKnownController.ts`, `OAuthMetadata.ts`). Muling pumapasok ang `api_call` sa Express stack sa loob ng proseso, kaya nananatiling ipinatutupad ang bawat patakaran ng pahintulot at scoping ng simbahan. → **[MCP Server](../api/mcp.md)**
 
 ### Content providers
 
-Ang inbound na daan ng content, sa hiwalay na package na `Packages/content-providers` (`@churchapps/content-providers`) at hindi sa API. Ang bawat provider ay nagpapatupad ng interface na `IProvider` (`src/interfaces.ts`): `browse`, `getPlaylist`, `getInstructions`, at mga auth hook. Nagrerehistro ito ng sarili sa isang `Map` registry (`src/providers/registry.ts`). Dito, **ang B1 ang OAuth client**. Nagdedeklara ang provider ng `AuthType` na `none`, `oauth_pkce`, `device_flow`, o `form_login`. Pinapatakbo ng mga shared helper (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) ang PKCE / device flow sa panig ng client laban sa external na pinagmulan. Labing-isang provider ang kasalukuyang ipinapadala, kabilang ang Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church, at B1.church. Pinapakain nila ang FreePlay at ang mga B1 app. → **[FreePlay Content Provider](../freeplay-content-provider)**
+Ang inbound na daan ng content, sa hiwalay na package na `Packages/content-providers` (`@churchapps/content-providers`) at hindi sa API. Ang bawat provider ay nagpapatupad ng interface na `IProvider` (`src/interfaces.ts`): `browse`, `getPlaylist`, `getInstructions`, at mga auth hook. Nagrerehistro ito ng sarili sa isang `Map` registry (`src/providers/registry.ts`). Dito, **ang B1 ang OAuth client**. Nagdedeklara ang provider ng `AuthType` na `none`, `oauth_pkce`, `device_flow`, o `form_login`. Pinapatakbo ng mga shared helper (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) ang PKCE / device flow sa panig ng client laban sa external na pinagmulan. Labing-isang provider ang kasalukuyang ipinapadala, kabilang ang Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church, at B1.church. Pinapakain nila ang FreePlay at ang mga B1 app. → **[FreePlay Content Provider](../freeplay-content-provider.md)**
 
 **Ang mga year plan** ay dumadaan din sa daang ito. Ang isang publisher ng kurikulum (na may `lessons.edit`) ay nagpapanatili ng mga nakaayos na sunod-sunod na week-1/2/3 sa admin ng Lessons.church (mga table ng `LessonsApi` na `yearPlans` / `yearPlanWeeks`, na may opsyonal na `startMonth` at `anchor` kada linggo na `easter` o `christmas`). Inihahain ng `GET /yearPlans/public` sa LessonsApi ang mga live na plano nang anonymous. Hinihydrate nito ang program/study/venue ng bawat linggo mula sa lesson tree. Ginagamit ng **Serving → Plans → Schedule Lesson → Apply Year Plan** ng B1Admin ang endpoint na ito at sumusulat ng isang DoingApi plan kada kasamang linggo (`providerId=lessonschurch`, `providerPlanId=/lessons/{programId}/{studyId}/{lessonId}/{venueId}`). Para sa mga plano na may `startMonth`, nireresolba ang mga naka-anchor na linggo laban sa napiling taon (Easter sa pamamagitan ng Gregorian computus, Christmas bilang ang Linggo sa o bago ng Dis. 25), at pinupunan ang mga agwat sa pagitan nila. Ang mga plano na walang `startMonth` ay nagmamapa pa rin ng linggo N sa `startDate + (N−1)×7` na araw. Nilalaktawan sa oras ng pag-apply ang mga linggong galing sa external na OLF provider o may hindi kumpletong path. Ini-e-edit ng mga simbahan ang nagresultang mga plano na parang iba pang plano, at ang FreePlay ay tumutugtog ng kung ano man ang nasa plano.
 
@@ -122,12 +123,12 @@ Ang inbound na daan ng content, sa hiwalay na package na `Packages/content-provi
 
 | Surface | Mekanismo ng auth | Direksyon | Saan ipinatutupad | Reference |
 |---|---|---|---|---|
-| REST API | `Bearer` JWT o `cak_…` key | Papasok | `Api/src/modules/*` | [API Keys](../api/api-keys) |
-| API keys | Token na `cak_` na may SHA-256 hash | Credential | `Api/.../membership/controllers/ApiKeyController.ts` | [API Keys](../api/api-keys) |
-| OAuth 2.0 / Connected Apps | Auth code (PKCE) · device · refresh → JWT; dynamic client registration | Papasok | `Api/.../membership/controllers/OAuthController.ts` | [Connected Apps](../api/connected-apps) |
-| Webhooks | Secret kada hook, HMAC-SHA256 signature | Palabas | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks) |
-| MCP server | `Bearer` JWT, OAuth JWT (natutuklasan sa pamamagitan ng `/.well-known`), o `cak_…` key | Papasok (AI) | `Api/src/modules/mcp/` | [MCP Server](../api/mcp) |
-| Content providers | Depende sa provider: wala / OAuth PKCE / device / form | Papasok na content | `Packages/content-providers/` | [Content Provider](../freeplay-content-provider) |
+| REST API | `Bearer` JWT o `cak_…` key | Papasok | `Api/src/modules/*` | [API Keys](../api/api-keys.md) |
+| API keys | Token na `cak_` na may SHA-256 hash | Credential | `Api/.../membership/controllers/ApiKeyController.ts` | [API Keys](../api/api-keys.md) |
+| OAuth 2.0 / Connected Apps | Auth code (PKCE) · device · refresh → JWT; dynamic client registration | Papasok | `Api/.../membership/controllers/OAuthController.ts` | [Connected Apps](../api/connected-apps.md) |
+| Webhooks | Secret kada hook, HMAC-SHA256 signature | Palabas | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks.md) |
+| MCP server | `Bearer` JWT, OAuth JWT (natutuklasan sa pamamagitan ng `/.well-known`), o `cak_…` key | Papasok (AI) | `Api/src/modules/mcp/` | [MCP Server](../api/mcp.md) |
+| Content providers | Depende sa provider: wala / OAuth PKCE / device / form | Papasok na content | `Packages/content-providers/` | [Content Provider](../freeplay-content-provider.md) |
 
 ## Mga Prebuilt na Connector
 
@@ -143,9 +144,9 @@ Para sa sarili mong code, binabalot ng **[`@churchapps/integration-sdk`](https:/
 
 ## Mga Kaugnay na Pahina
 
-- [API Keys](../api/api-keys): ang pinakasimpleng credential at ang catalog ng scope
-- [Connected Apps & OAuth](../api/connected-apps): mga multi-tenant na daloy ng pahintulot
-- [Webhooks](../api/webhooks): ang outbound na sistema ng event
-- [MCP Server](../api/mcp): ang wrapper ng AI integration
-- [FreePlay Content Provider](../freeplay-content-provider): pagiging inbound na pinagmumulan ng content
+- [API Keys](../api/api-keys.md): ang pinakasimpleng credential at ang catalog ng scope
+- [Connected Apps & OAuth](../api/connected-apps.md): mga multi-tenant na daloy ng pahintulot
+- [Webhooks](../api/webhooks.md): ang outbound na sistema ng event
+- [MCP Server](../api/mcp.md): ang wrapper ng AI integration
+- [FreePlay Content Provider](../freeplay-content-provider.md): pagiging inbound na pinagmumulan ng content
 - [Integrations (end-user)](/docs/b1-admin/integrations/): mga gabay sa setup ng prebuilt na connector

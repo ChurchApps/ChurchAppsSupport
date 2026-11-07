@@ -1,5 +1,6 @@
 ---
 title: "Mencatat Donasi"
+description: "Catat donasi gereja di B1 Admin dengan membuat batch, memasukkan pemberian satu per satu, mengimpor CSV, atau mencatat satu pemberian dari profil donatur."
 ---
 
 # Mencatat Donasi

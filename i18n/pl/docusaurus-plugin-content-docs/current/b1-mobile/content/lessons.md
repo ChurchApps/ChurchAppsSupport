@@ -1,5 +1,7 @@
 ---
-title: "Lessons (wycofane)"
+title: "Ekran lekcji w B1 Mobile (wycofany)"
+sidebar_label: "Lessons (wycofane)"
+description: "Strona Lekcje (wycofane): dlaczego ekran lekcji w B1 Mobile został wycofany i gdzie teraz znaleźć materiały, czyli FreePlay lub Lessons.church."
 ---
 
 # Lessons (wycofane)
@@ -19,7 +21,7 @@ Ekran Lessons dawał dostęp do programu nauczania i materiałów edukacyjnych T
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) na swoje konto
+- [Zainstaluj B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) na swoje konto
 - Twój kościół musi mieć skonfigurowany program nauczania w Lessons.church
 
 </div>
@@ -54,5 +56,5 @@ Ekran Lessons pojawia się wtedy, gdy Twój kościół skonfiguruje program nauc
 
 - [Przegląd FreePlay](/docs/freeplay/) -- Zastępcza aplikacja telewizyjna do odtwarzania lekcji
 - [Lessons.church](/docs/lessons-church/) -- Przeglądanie i zarządzanie materiałami programowymi bezpośrednio
-- [Biblia](./bible) -- Czytaj Pismo Święte wraz z lekcjami
-- [Kazania](./sermons) -- Oglądaj kazania uzupełniające Twoje studia
+- [Biblia](./bible.md) -- Czytaj Pismo Święte wraz z lekcjami
+- [Kazania](./sermons.md) -- Oglądaj kazania uzupełniające Twoje studia

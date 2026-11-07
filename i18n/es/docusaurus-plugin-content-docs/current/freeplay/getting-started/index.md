@@ -1,5 +1,7 @@
 ---
-title: "Primeros pasos"
+title: "Primeros pasos con la app FreePlay TV"
+sidebar_label: "Primeros pasos"
+description: "Configura FreePlay en Android TV, Fire TV o Apple TV: instala la app, ábrela por primera vez y conoce los controles remotos y la barra lateral."
 ---
 
 # Primeros pasos con FreePlay
@@ -42,7 +44,7 @@ FreePlay funciona en Fire TV (incluidos los sticks más recientes con Vega OS), 
 
 Cuando abra FreePlay por primera vez, verá una pantalla de presentación animada con el logotipo de FreePlay. La aplicación comprueba si hay proveedores de contenido conectados previamente. Si ya conectó un proveedor, la llevará directamente al explorador de contenido de ese proveedor. De lo contrario, abrirá la pantalla de **Proveedores de contenido**, donde puede conectar su primera fuente de contenido.
 
-Si el televisor está vinculado a un calendario en el [Modo programado](../scheduled-mode/), FreePlay omite todo esto y abre directamente el reproductor programado.
+Si el televisor está vinculado a un calendario en el [Modo programado](../scheduled-mode/index.md), FreePlay omite todo esto y abre directamente el reproductor programado.
 
 ## Navegar con el control remoto del televisor
 
@@ -62,13 +64,13 @@ La barra lateral se contrae a una franja estrecha de íconos cuando está explor
 
 La barra lateral enumera, de arriba hacia abajo:
 
-- **Plan de hoy**: se muestra cuando el televisor está vinculado a un plan. Consulte [Modo de plan](../plan-mode/)
-- **Anuncios**: se muestra una vez que haya elegido una carpeta de anuncios. Consulte [Anuncios](../content-providers/announcements)
-- **Explorar**: cada proveedor de contenido conectado que puede explorar. Consulte [Explorar y descargar contenido](../content-providers/browsing-content)
-- **Configuración**: en la parte inferior de la barra lateral. Abre **Vincular a un calendario** (vincule este televisor a un calendario o plan; consulte [Elegir un modo de vinculación](./pairing-modes)), **Descargas** (reproduzca o elimine el contenido guardado en este dispositivo) y **Proveedores** (conecte proveedores de contenido y elija la carpeta de anuncios)
+- **Plan de hoy**: se muestra cuando el televisor está vinculado a un plan. Consulte [Modo de plan](../plan-mode/index.md)
+- **Anuncios**: se muestra una vez que haya elegido una carpeta de anuncios. Consulte [Anuncios](../content-providers/announcements.md)
+- **Explorar**: cada proveedor de contenido conectado que puede explorar. Consulte [Explorar y descargar contenido](../content-providers/browsing-content.md)
+- **Configuración**: en la parte inferior de la barra lateral. Abre **Vincular a un calendario** (vincule este televisor a un calendario o plan; consulte [Elegir un modo de vinculación](./pairing-modes.md)), **Descargas** (reproduzca o elimine el contenido guardado en este dispositivo) y **Proveedores** (conecte proveedores de contenido y elija la carpeta de anuncios)
 
 ## Lo que sigue
 
-- **[Elegir un modo de vinculación](./pairing-modes)**: conozca las distintas formas de conectar su televisor
-- **[Modo programado](../scheduled-mode/)**: programe sus televisores con FreePlay Admin
-- **[Proveedores de contenido](../content-providers/)**: conéctese con Lessons.church, Bible Project y más
+- **[Elegir un modo de vinculación](./pairing-modes.md)**: conozca las distintas formas de conectar su televisor
+- **[Modo programado](../scheduled-mode/index.md)**: programe sus televisores con FreePlay Admin
+- **[Proveedores de contenido](../content-providers/index.md)**: conéctese con Lessons.church, Bible Project y más

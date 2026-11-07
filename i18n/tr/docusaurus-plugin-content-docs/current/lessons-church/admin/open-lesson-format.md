@@ -1,5 +1,6 @@
 ---
 title: "Açık Ders Formatı"
+description: "Lessons.church'teki üçüncü taraf müfredat sağlayıcıları için biçim belirtimi: sağlayıcı ağacı ve mekân akışı JSON alanları, eylemler ve medya dosyaları."
 ---
 
 # Açık Ders Formatı

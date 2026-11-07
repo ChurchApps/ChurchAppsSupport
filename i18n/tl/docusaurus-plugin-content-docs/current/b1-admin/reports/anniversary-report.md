@@ -1,5 +1,6 @@
 ---
 title: "Listahan ng Anibersaryo"
+description: "Kumuha ng listahan ng lahat ng may anibersaryo ng kasal sa napiling buwan sa B1 Admin, kasama ang petsa, at i-export sa spreadsheet para sa bulletin o card."
 ---
 
 # Listahan ng Anibersaryo

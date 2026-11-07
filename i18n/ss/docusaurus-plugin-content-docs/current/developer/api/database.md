@@ -1,5 +1,6 @@
 ---
 title: "Database"
+description: "Funda kutsi i-ChurchApps API yahlukanisa kanjani data kuma-database we-MySQL lasitfupha, lilelinye nelilelinye ngemodyuli, nekutsi ungasetha kanjani tixhumo bese uzicala."
 ---
 
 # Database
@@ -13,8 +14,8 @@ I-ChurchApps API isebentisa umumo we-**database-nga-module ngayinye**. Module ng
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- Faka **MySQL 8.0+** -- buka [Prerequisites](../setup/prerequisites)
-- Hlela emastringi ekuxhumana ne-database ku-fayela lakho le-`.env` -- buka [Environment Variables](../setup/environment-variables)
+- Faka **MySQL 8.0+** -- buka [Prerequisites](../setup/prerequisites.md)
+- Hlela emastringi ekuxhumana ne-database ku-fayela lakho le-`.env` -- buka [Environment Variables](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Tincumo Letisemcoka Temumo
 
 - **Database yinye ku-module ngayinye** -- Module ngayinye igcina database yayo ye-MySQL lene-connection pool yayo (lephatswa yi-`KyselyPool`). Loku kugcina ema-module angahlangani futsi kuvumela schema ngayinye kutfutfuka ngayodvwana.
-- **Bunikati lobodvwa** -- Emathebula e-module afundvwa futsi abhalwe ngukhodi yaleyo module kuphela. Nangabe leminye i-module idzinga idatha, ibiza i-gateway yemodule lenikatiwe kunekubuta emathebula ngco -- buka [Kukhulumisana Emkhatsini Wema-Module](./module-structure#cross-module-communication).
+- **Bunikati lobodvwa** -- Emathebula e-module afundvwa futsi abhalwe ngukhodi yaleyo module kuphela. Nangabe leminye i-module idzinga idatha, ibiza i-gateway yemodule lenikatiwe kunekubuta emathebula ngco -- buka [Kukhulumisana Emkhatsini Wema-Module](./module-structure.md#cross-module-communication).
 - **Sifanekiso se-Repository ngaphandle kwe-ORM** -- Konkhe kufinyelela idatha kuhamba ngeti-class te-repository letakha i-SQL lekhitiwe nge-Kysely query builder kuhambisana ne-schema ye-module. Loku kuniketa kulawula lokugcwele etikwekusebenta nekutiphatsa kwemibuto.
 - **Kwakhelwe i-multi-tenant** -- Umbuto ngamunye uncishiswa nge-`churchId`. Onkhe emathebula afaka kholomu le-`churchId`, futsi layela lwe-repository luphatsa kwahlukaniswa kwabatsatsi ngekutentekela.
 
@@ -129,5 +130,5 @@ Lesibopho yiso lesenta imincele yema-module ibe ngiyo yangempela: schema ngayiny
 
 ## Emahlandla Lahlobene
 
-- **[Module Structure](./module-structure)** -- Kuhlelwa kwema-controller nema-repository ngekhatsi kwe-module ngayinye
-- **[Local API Setup](./local-setup)** -- Umhlahlandlela logcwele wesinyatselo ngesinyatselo
+- **[Module Structure](./module-structure.md)** -- Kuhlelwa kwema-controller nema-repository ngekhatsi kwe-module ngayinye
+- **[Local API Setup](./local-setup.md)** -- Umhlahlandlela logcwele wesinyatselo ngesinyatselo

@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Forbind VOMO-frivilligtilmeldinger og kioskcheck-ins til B1 Admin-personer og grupper med Zapier, inkl. API-nøglens omfang og opsætningstrin."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ Når VOMO-projektet er afsluttet, skal du rydde B1-gruppen manuelt (eller kombin
 
 ### Send en sms med "tak for din tilmelding"
 
-Kæd VOMO Participation sammen med Clearstream Send Text eller Text In Church Send Message i samme Zap. Begge har førsteklasses Zapier-handlinger. Se [Clearstream](./clearstream) og [Text In Church](./text-in-church).
+Kæd VOMO Participation sammen med Clearstream Send Text eller Text In Church Send Message i samme Zap. Begge har førsteklasses Zapier-handlinger. Se [Clearstream](./clearstream.md) og [Text In Church](./text-in-church.md).
 
 ### Opdag frafald
 
@@ -91,6 +92,6 @@ Kør en daglig Zapier-*Schedule*-trigger, der kalder Find Organizer i VOMO for e
 
 ## Se også
 
-- [Zapier (overblik)](../zapier): B1-siden af alle Zapier-opskrifter
-- [Clearstream](./clearstream), [Text In Church](./text-in-church): kobler frivilliges tilmeldinger sammen med sms-bekræftelser
+- [Zapier (overblik)](../zapier.md): B1-siden af alle Zapier-opskrifter
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md): kobler frivilliges tilmeldinger sammen med sms-bekræftelser
 - [Webhooks (udviklerreference)](/docs/developer/api/webhooks): de hændelser, VOMO kan udløse på

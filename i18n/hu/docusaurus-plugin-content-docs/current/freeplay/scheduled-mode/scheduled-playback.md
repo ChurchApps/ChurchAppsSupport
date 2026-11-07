@@ -1,5 +1,6 @@
 ---
 title: "Ütemezett lejátszás a TV-n"
+description: "A párosított FreePlay TV letölti a következő hetet, és órarend szerint játssza, akár offline is. Információs panel, távirányító-gombok és lejátszólista rögzítése."
 ---
 
 # Ütemezett lejátszás a TV-n
@@ -13,8 +14,8 @@ Amint egy TV-készülék össze van párosítva egy naptárral, a FreePlay autom
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- [Párosítsa a TV-t egy naptárral](./pairing-a-screen)
-- [Helyezzen tartalmat a naptárba](./scheduling-the-calendar), vagy állítson be alapértelmezett ismétlést a képernyő csoportjához
+- [Párosítsa a TV-t egy naptárral](./pairing-a-screen.md)
+- [Helyezzen tartalmat a naptárba](./scheduling-the-calendar.md), vagy állítson be alapértelmezett ismétlést a képernyő csoportjához
 
 </div>
 
@@ -40,7 +41,7 @@ A panelen három gomb található:
 
 - **Lejátszási lista rögzítése** - Az aktuális tartalom folyamatos ismétlését tartja fenn, és figyelmen kívül hagyja a naptárat. A **Lejátszási lista rögzítésének feloldása** gombbal térhet vissza a menetrendhez
 - **Tartalom böngészése** - Kilép az ütemezett lejátszóból, és a csatlakoztatott szolgáltatók tartalmait böngészheti
-- **Beállítások** - Megnyitja a FreePlay beállításait, ahol [leválaszthatja, vagy másik naptárhoz párosíthatja](./pairing-a-screen#changing-or-unpairing-from-the-tv) a készüléket
+- **Beállítások** - Megnyitja a FreePlay beállításait, ahol [leválaszthatja, vagy másik naptárhoz párosíthatja](./pairing-a-screen.md#changing-or-unpairing-from-the-tv) a készüléket
 
 :::tip
 A böngészés után a menetrendhez való visszatéréshez nyomja meg a távirányító **Vissza** gombját a **Tartalomszolgáltatók** képernyőn, vagy nyissa meg a **Beállításokat**, válassza a **Párosítás naptárral** lehetőséget, majd a **Vissza a menetrendhez** pontot. Egy párosított TV a FreePlay előtérbe kerülésekor mindig visszatér az ütemezett lejátszóhoz, és indításkor is mindig az ütemezett lejátszót nyitja meg.
@@ -77,6 +78,6 @@ Egy képernyő naptárát webböngészőben is lejátszhatja. A FreePlay Adminba
 
 ## Kapcsolódó cikkek
 
-- **[A naptár ütemezése](./scheduling-the-calendar)** - Beállítható, mi játszódjon le, és mi történjen, ha az korábban véget ér
-- **[Képernyők és csoportok kezelése](./managing-screens)** - Minden képernyő letöltéseinek ellenőrzése a FreePlay Adminból
-- **[Tartalom lejátszása](../content-providers/playing-content)** - A lejátszóvezérlők, ha saját maga játssza le a tartalmat
+- **[A naptár ütemezése](./scheduling-the-calendar.md)** - Beállítható, mi játszódjon le, és mi történjen, ha az korábban véget ér
+- **[Képernyők és csoportok kezelése](./managing-screens.md)** - Minden képernyő letöltéseinek ellenőrzése a FreePlay Adminból
+- **[Tartalom lejátszása](../content-providers/playing-content.md)** - A lejátszóvezérlők, ha saját maga játssza le a tartalmat

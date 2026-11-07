@@ -1,5 +1,7 @@
 ---
-title: "Tifundvo (Sekuyekelwe)"
+title: "Ithabhu Yetifundvo Lesisusiwe ku-B1.church"
+sidebar_label: "Tifundvo (Sekuyekelwe)"
+description: "Ithabhu ye-Lessons ku-B1.church isisusiwe. Tfola kutsi tifundvo tekucwaninga tikuphi manje: phepha ku-Lessons.church futsi uyidlale ku-TV yasekilasini nge-FreePlay."
 ---
 
 # Tifundvo (Sekuyekelwe)

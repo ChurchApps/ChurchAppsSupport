@@ -1,5 +1,6 @@
 ---
 title: "Poravimo režimo pasirinkimas"
+description: "Pasirinkite tinkamą FreePlay TV susiejimo būdą: kalendorius iš FreePlay Admin, bažnyčios plano iš B1 Admin arba visai be susiejimo."
 ---
 
 # Poravimo režimo pasirinkimas
@@ -32,7 +33,7 @@ FreePlay gali valdyti televizorių trimis būdais. Jis gali sekti kalendorių, k
 
 **Geriausiai tinka:** fojė ir koridorių ekranams, pranešimų ciklams bei klasėms, kuriose pamoka turi jau groti, kai žmonės įeina.
 
-Visą vadovą rasite **[Tvarkaraščio režimas](../scheduled-mode/)** skiltyje.
+Visą vadovą rasite **[Tvarkaraščio režimas](../scheduled-mode/index.md)** skiltyje.
 
 ## Plano režimas (B1 Admin)
 
@@ -42,7 +43,7 @@ Visą vadovą rasite **[Tvarkaraščio režimas](../scheduled-mode/)** skiltyje.
 
 **Geriausiai tinka:** televizoriams, rodantiems turinį, susijusį su savaitės tarnystės planu, kai kas nors pradeda atkūrimą tuo metu, kai jo reikia.
 
-Visą vadovą rasite **[Plano režimas](../plan-mode/)** skiltyje.
+Visą vadovą rasite **[Plano režimas](../plan-mode/index.md)** skiltyje.
 
 :::tip
 Dabartinį tarnystės planą galite paleisti ir pagal tvarkaraštį. FreePlay Admin pridėkite kalendoriaus įrašą ir pasirinkite plano tipą skyriuje **Tarnystės planai**.
@@ -50,7 +51,7 @@ Dabartinį tarnystės planą galite paleisti ir pagal tvarkaraštį. FreePlay Ad
 
 ## Turinio teikėjai (be poravimo)
 
-Jei televizoriaus visai nereikia poruoti, galite naršyti turinio teikėjus tiesiogiai. Tokie teikėjai kaip [Lessons.church](../../lessons-church/) ir Bible Project turi turinį, kurį galite atsisiųsti ir leisti bet kada.
+Jei televizoriaus visai nereikia poruoti, galite naršyti turinio teikėjus tiesiogiai. Tokie teikėjai kaip [Lessons.church](../../lessons-church/index.md) ir Bible Project turi turinį, kurį galite atsisiųsti ir leisti bet kada.
 
 **Geriausiai tinka:** televizoriams, kuriuose savanoriai kiekvieną savaitę pasirenka, ką groti, arba kai norite pažiūrėti, kas prieinama.
 
@@ -60,6 +61,6 @@ Ekraną **Teikėjai** galite atidaryti bet kada iš **Nustatymų** šoninės juo
 
 ## Susiję straipsniai
 
-- **[Tvarkaraščio režimas](../scheduled-mode/)** - Įtraukite televizorius į kalendorių su FreePlay Admin
-- **[Plano režimas](../plan-mode/)** - Visas vadovas, kaip poruoti su tarnystės planu
-- **[Turinio teikėjai](../content-providers/)** - Naršykite ir atsisiųskite turinį iš išorinių šaltinių
+- **[Tvarkaraščio režimas](../scheduled-mode/index.md)** - Įtraukite televizorius į kalendorių su FreePlay Admin
+- **[Plano režimas](../plan-mode/index.md)** - Visas vadovas, kaip poruoti su tarnystės planu
+- **[Turinio teikėjai](../content-providers/index.md)** - Naršykite ir atsisiųskite turinį iš išorinių šaltinių

@@ -1,5 +1,6 @@
 ---
 title: "Examiner les demandes de suppression de compte"
+description: "Approuvez ou refusez les demandes de suppression de compte des membres dans B1 Admin, acheminez-les par le groupe d'approbation du répertoire et respectez le délai RGPD de 30 jours."
 ---
 
 # Examiner les demandes de suppression de compte

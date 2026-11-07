@@ -1,5 +1,6 @@
 ---
 title: "Planvorlagen"
+description: "Ablauf und Positionen eines Gottesdienstplans als wiederverwendbare Vorlage in B1 Admin speichern und mit einem Klick auf künftige Pläne anwenden."
 ---
 
 # Planvorlagen

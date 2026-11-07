@@ -1,5 +1,7 @@
 ---
-title: "Lições (Descontinuado)"
+title: "Tela de Lições no B1 Mobile (Aposentada)"
+sidebar_label: "Lições (Descontinuado)"
+description: "Página de Lições (descontinuada): por que a tela de Lições do B1 Mobile foi aposentada e onde encontrar o currículo agora (FreePlay ou Lessons.church)."
 ---
 
 # Lições (Descontinuado)
@@ -19,7 +21,7 @@ A tela de Lições dava acesso ao currículo e aos materiais de aprendizado da s
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
+- [Instale o B1 Mobile](../getting-started/installing.md) e [faça login](../getting-started/logging-in.md) na sua conta
 - Sua igreja precisa ter o currículo configurado no Lessons.church
 
 </div>
@@ -54,5 +56,5 @@ A tela de Lições aparece quando sua igreja configurou o currículo pelo Lesson
 
 - [Visão geral do FreePlay](/docs/freeplay/) -- O aplicativo de TV que substitui a reprodução de lições
 - [Lessons.church](/docs/lessons-church/) -- Navegue e gerencie o conteúdo curricular diretamente
-- [Bíblia](./bible) -- Leia as Escrituras junto com suas lições
-- [Sermões](./sermons) -- Assista aos sermões que complementam seus estudos
+- [Bíblia](./bible.md) -- Leia as Escrituras junto com suas lições
+- [Sermões](./sermons.md) -- Assista aos sermões que complementam seus estudos

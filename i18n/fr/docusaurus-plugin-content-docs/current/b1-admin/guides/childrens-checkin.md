@@ -1,5 +1,6 @@
 ---
 title: "Guide : configurer le pointage du ministère des enfants"
+description: "Configurez l'enregistrement des enfants dans B1 Admin : reliez les familles, créez des groupes par tranche d'âge, configurez les services et imprimez les étiquettes de nom pour le kiosque B1 Checkin."
 ---
 
 # Configurer le pointage du ministère des enfants

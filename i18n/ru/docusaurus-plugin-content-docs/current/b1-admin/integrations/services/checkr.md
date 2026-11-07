@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Подключите заявки волонтёров B1 Admin к фоновым проверкам Checkr через Make.com с необязательными уведомлениями о статусе отчёта для координатора безопасного служения."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ title: "Checkr"
 
 ## См. также
 
-- [Make (обзор)](../make) — сторона B1 в каждом сценарии Make
-- [Mobile Message](./mobile-message) — для SMS-провайдеров без приложений Zapier, тот же шаблон Webhooks/HTTP, что и в связке Checkr с Make
+- [Make (обзор)](../make.md) — сторона B1 в каждом сценарии Make
+- [Mobile Message](./mobile-message.md) — для SMS-провайдеров без приложений Zapier, тот же шаблон Webhooks/HTTP, что и в связке Checkr с Make
 - [Документация по API Checkr](https://docs.checkr.com/)

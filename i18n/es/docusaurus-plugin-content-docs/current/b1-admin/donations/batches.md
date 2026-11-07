@@ -1,5 +1,6 @@
 ---
 title: "Lotes de donaciones"
+description: "Agrupa las ofrendas en lotes de donación en B1 Admin y ciérralos, imprímelos o expórtalos para que los totales coincidan con tus depósitos bancarios."
 ---
 
 # Lotes de donaciones

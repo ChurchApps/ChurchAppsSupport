@@ -1,5 +1,6 @@
 ---
 title: "Aviseringar"
+description: "Ställ in pushlarm för B1 Mobile-appen, och visa, öppna och rensa dina församlingsnotiser om meddelanden, grupper och tjänst."
 ---
 
 # Aviseringar
@@ -13,7 +14,7 @@ B1 Mobile använder pushaviseringar för att hålla dig informerad om vad som h�
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Installera B1 Mobile](../getting-started/installing) och [logga in](../getting-started/logging-in) på ditt konto
+- [Installera B1 Mobile](../getting-started/installing.md) och [logga in](../getting-started/logging-in.md) på ditt konto
 - Tillåt aviseringar för B1 Mobile i enhetens inställningar
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile använder pushaviseringar för att hålla dig informerad om vad som h�
 
 Aviseringar kan omfatta en rad olika aktiviteter, bland annat:
 
-- **Meddelanden** -- När någon skickar dig ett [privat meddelande](./messaging).
-- **Grupp­aktivitet** -- Uppdateringar, inlägg och samtal från [grupper](../groups/) du tillhör.
+- **Meddelanden** -- När någon skickar dig ett [privat meddelande](./messaging.md).
+- **Grupp­aktivitet** -- Uppdateringar, inlägg och samtal från [grupper](../groups/index.md) du tillhör.
 - **Tjänstetilldelningar** -- När du tilldelas en [plan](../serving/viewing-plans.md) eller när status för din tilldelning ändras.
 - **Andra uppdateringar** -- Allmänna meddelanden och aktiviteter som är relevanta för dig.
 

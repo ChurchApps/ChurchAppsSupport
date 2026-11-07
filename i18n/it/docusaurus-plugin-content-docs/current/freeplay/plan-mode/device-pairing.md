@@ -1,5 +1,6 @@
 ---
 title: "Associare il dispositivo"
+description: "Associare una TV FreePlay a un tipo di piano in B1 Admin con il codice di quattro lettere sullo schermo, poi scaricare i media per Plan Mode."
 ---
 
 # Associare il dispositivo
@@ -13,7 +14,7 @@ Per usare la modalità piano, associ la TV a un tipo di piano in B1 Admin. FreeP
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Installa e avvia FreePlay. Vedi [Per iniziare](../getting-started/)
+- Installa e avvia FreePlay. Vedi [Per iniziare](../getting-started/index.md)
 - Ti serve l'accesso a **B1 Admin** da un computer o da un telefono per completare l'associazione
 
 </div>
@@ -25,7 +26,7 @@ Per usare la modalità piano, associ la TV a un tipo di piano in B1 Admin. FreeP
 3. FreePlay mostra un codice di associazione di quattro lettere in caratteri grandi, accanto a un codice QR.
 4. Sotto il codice, un indicatore pulsante **In attesa di conferma** mostra che FreePlay sta aspettando che tu completi l'associazione.
 
-Lo stesso codice funziona per la [Modalità programmata](../scheduled-mode/) in FreePlay Admin e per la Modalità piano in B1 Admin. Il codice QR e l'indirizzo **freeplay.church/pair** sullo schermo aprono FreePlay Admin. Per la Modalità piano, ignorali e inserisci il codice in B1 Admin come descritto sotto.
+Lo stesso codice funziona per la [Modalità programmata](../scheduled-mode/index.md) in FreePlay Admin e per la Modalità piano in B1 Admin. Il codice QR e l'indirizzo **freeplay.church/pair** sullo schermo aprono FreePlay Admin. Per la Modalità piano, ignorali e inserisci il codice in B1 Admin come descritto sotto.
 
 ## Inserire il codice in B1 Admin
 
@@ -61,5 +62,5 @@ I codici di associazione scadono dopo 15 minuti. FreePlay mostra automaticamente
 ## Articoli correlati
 
 - **[Panoramica della modalità piano](./index.md)** - In cosa la modalità piano differisce dalla modalità programmata
-- **[Associare uno schermo](../scheduled-mode/pairing-a-screen)** - Associa la stessa TV a un calendario in FreePlay Admin
-- **[Riproduzione dei contenuti](../content-providers/playing-content)** - Controlli del lettore per la riproduzione del piano
+- **[Associare uno schermo](../scheduled-mode/pairing-a-screen.md)** - Associa la stessa TV a un calendario in FreePlay Admin
+- **[Riproduzione dei contenuti](../content-providers/playing-content.md)** - Controlli del lettore per la riproduzione del piano

@@ -1,5 +1,6 @@
 ---
 title: "Styring af indsendelser"
+description: "Gennemgå, udskriv og omfordel formularindsendelser i B1 Admin, flyt svar til den rette person, og følg op på gæstekort og bønneanmodninger."
 ---
 
 # Styring af indsendelser

@@ -1,5 +1,6 @@
 ---
 title: "알림 및 리마인더 아키텍처"
+description: "B1 Admin API가 알림, 예약 리마인더, 교회 이메일 한도, 문자 수신 거부를 하나의 전달 경로와 환경설정 게이트를 통해 처리하는 방식입니다."
 ---
 
 # 알림 및 리마인더 아키텍처
@@ -185,6 +186,6 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 
 ## 관련 페이지
 
-- [실시간 아키텍처](../realtime) — 앱 내 전달 단계가 기반으로 삼는 WebSocket 프로토콜과 클라이언트 기본 구성 요소(`SocketHelper`, `SubscriptionManager`, `ConversationStore`)
-- [웹 푸시 알림](../web-push) — 푸시 단계에서 사용하는 VAPID 설정과 브라우저 Push API 경로
-- [메시징 엔드포인트](../api/endpoints/messaging) — 메시지, 대화, 연결, 알림/리마인더 경로를 포함한 전체 REST 인터페이스
+- [실시간 아키텍처](../realtime.md) — 앱 내 전달 단계가 기반으로 삼는 WebSocket 프로토콜과 클라이언트 기본 구성 요소(`SocketHelper`, `SubscriptionManager`, `ConversationStore`)
+- [웹 푸시 알림](../web-push.md) — 푸시 단계에서 사용하는 VAPID 설정과 브라우저 Push API 경로
+- [메시징 엔드포인트](../api/endpoints/messaging.md) — 메시지, 대화, 연결, 알림/리마인더 경로를 포함한 전체 REST 인터페이스

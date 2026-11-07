@@ -1,5 +1,6 @@
 ---
 title: "Slack y Discord"
+description: "Publica en un canal de Slack o Discord eventos de B1 Admin como nuevas personas, donaciones y envíos de formularios, con un webhook entrante y sin Zapier."
 ---
 
 # Slack y Discord
@@ -114,7 +115,7 @@ Si algo falló (insignia roja `failed` o `exhausted`), el diálogo muestra el es
 
 - **Ningún mensaje aparece + estado de entrega `400`** — generalmente el tipo de conector está establecido en **Estándar** pero la URL es una de Slack/Discord. Slack/Discord rechazan la envolvente cruda. Cambia la lista desplegable a **Slack** o **Discord** y reenvía la prueba.
 - **Webhook desactivado automáticamente** — después de 3 entregas fallidas consecutivas B1 apaga el webhook. Arregla la URL (o rótala en Slack/Discord) y alterna **Activo** de vuelta.
-- **El mensaje llegó pero falta detalle** — cada plataforma de chat limita el tamaño del mensaje. Los mensajes de B1 son de una línea por diseño; para notificaciones más ricas usa [Zapier](./zapier) o [Make](./make) para componer un mensaje de Slack más completo a través de sus acciones de Slack.
+- **El mensaje llegó pero falta detalle** — cada plataforma de chat limita el tamaño del mensaje. Los mensajes de B1 son de una línea por diseño; para notificaciones más ricas usa [Zapier](./zapier.md) o [Make](./make.md) para componer un mensaje de Slack más completo a través de sus acciones de Slack.
 
 ## Cambiar tipos de conector más tarde
 
@@ -122,6 +123,6 @@ Puedes cambiar el tipo de conector en un webhook existente — entra en vigor en
 
 ## Ver También
 
-- [Zapier](./zapier) — para flujos de trabajo de múltiples pasos disparados por eventos de B1
-- [Make](./make) — constructor de escenarios visuales
+- [Zapier](./zapier.md) — para flujos de trabajo de múltiples pasos disparados por eventos de B1
+- [Make](./make.md) — constructor de escenarios visuales
 - [Webhooks (referencia de desarrollador)](/docs/developer/api/webhooks) — el formato completo de carga + firma si alguna vez apuntas un webhook a tu propio servidor

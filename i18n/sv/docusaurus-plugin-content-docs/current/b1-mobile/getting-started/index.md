@@ -1,5 +1,7 @@
 ---
-title: "Komma igång"
+title: "Komma igång med B1 Mobile (utfasad)"
+sidebar_label: "Komma igång"
+description: "Konfigurera B1 Mobile på din telefon: hitta appen, logga in med ditt ChurchApps-konto och välj din församling. Observera att B1 Mobile är utfasad till förmån för PWA:n."
 ---
 
 # Komma igång
@@ -25,10 +27,10 @@ Det var allt. När du har valt din kyrka laddar appen kyrkans grafiska profil, n
 
 ## I det här avsnittet
 
-- [Installera appen](./installing) -- Var du laddar ner B1 Mobile och enhetskrav.
-- [Logga in](./logging-in) -- Hur du loggar in eller skapar ett nytt konto.
-- [Byta kyrka](./switching-churches) -- Hur du byter mellan kyrkor om du tillhör fler än en.
+- [Installera appen](./installing.md) -- Var du laddar ner B1 Mobile och enhetskrav.
+- [Logga in](./logging-in.md) -- Hur du loggar in eller skapar ett nytt konto.
+- [Byta kyrka](./switching-churches.md) -- Hur du byter mellan kyrkor om du tillhör fler än en.
 
 :::tip
-B1 Mobile använder samma ChurchApps-konto som alla andra ChurchApps-produkter. Om du redan har ett konto från [B1.church](../../b1-church/), B1 Admin eller Lessons.church kan du använda samma uppgifter för att logga in.
+B1 Mobile använder samma ChurchApps-konto som alla andra ChurchApps-produkter. Om du redan har ett konto från [B1.church](../../b1-church/index.md), B1 Admin eller Lessons.church kan du använda samma uppgifter för att logga in.
 :::

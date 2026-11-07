@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Hubungkan B1 Admin ke Claude agar Anda dapat bertanya tentang kehadiran, pemberian, dan grup dalam bahasa sehari-hari, dengan opsi masuk dan opsi kunci dengan izin terbatas."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ Ini adalah antarmuka yang sama seperti `/membership/people`, `/giving/donations`
 
 - [API Keys](/docs/developer/api/api-keys): referensi lengkap scope
 - [MCP Server (referensi developer)](/docs/developer/api/mcp): detail protokol dan skema alat
-- [ChatGPT](./chatgpt): ide yang sama, untuk model OpenAI
+- [ChatGPT](./chatgpt.md): ide yang sama, untuk model OpenAI

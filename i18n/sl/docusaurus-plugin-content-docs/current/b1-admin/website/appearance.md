@@ -1,5 +1,6 @@
 ---
 title: "Videz"
+description: "V B1 Admin nastavite barve, pisave, razmike, logotip in krmarjenje za spletno stran cerkve, ter dodajte pripomočke, analitiko GA4, preusmeritve in CSS po meri."
 ---
 
 # Videz
@@ -13,7 +14,7 @@ Stran Videz vam omogoča prilagajanje splošnega videza in občutka vaše cerkve
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Dokončajte [začetno nastavitev](initial-setup) za svojo spletno stran
+- Dokončajte [začetno nastavitev](./initial-setup.md) za svojo spletno stran
 - Pripravite logotip svoje cerkve v formatu PNG s prosojnim ozadjem in razmerjem stranic 4:1
 - Če imate obstoječ slogovni vodnik, poznajte barve svoje cerkve (šestnajstiške vrednosti)
 
@@ -98,7 +99,7 @@ Lastna CSS koda je zmogljiva, vendar lahko ob nepravilni uporabi pokvari postavi
 :::
 
 :::info
-Vaša stran uveljavlja politiko varnosti vsebine (Content Security Policy), ki blokira vgrajene skripte iz katerega koli drugega vira. Polje **Lastna HTML koda** tukaj in [element HTML](page-editor#using-the-html-element) na posameznih straneh sta zaupanja vredni izjemi -- koda, ki jo tam shranite, se izvede tako, kot je, zato prilepite skripte le iz virov, ki jim zaupate (na primer sledilne kode za analitiko, klepetalne pripomočke in podobne vdelane vsebine).
+Vaša stran uveljavlja politiko varnosti vsebine (Content Security Policy), ki blokira vgrajene skripte iz katerega koli drugega vira. Polje **Lastna HTML koda** tukaj in [element HTML](./page-editor.md#using-the-html-element) na posameznih straneh sta zaupanja vredni izjemi -- koda, ki jo tam shranite, se izvede tako, kot je, zato prilepite skripte le iz virov, ki jim zaupate (na primer sledilne kode za analitiko, klepetalne pripomočke in podobne vdelane vsebine).
 :::
 
 ## Teme slogov
@@ -107,5 +108,5 @@ Vaša stran uveljavlja politiko varnosti vsebine (Content Security Policy), ki b
 
 ## Naslednji koraki
 
-- [Upravljanje strani](managing-pages) -- Ustvarjanje in urejanje strani vaše spletne strani
-- [Datoteke](files) -- Nalaganje medijskih datotek za vašo spletno stran
+- [Upravljanje strani](./managing-pages.md) -- Ustvarjanje in urejanje strani vaše spletne strani
+- [Datoteke](./files.md) -- Nalaganje medijskih datotek za vašo spletno stran

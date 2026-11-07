@@ -1,5 +1,6 @@
 ---
 title: "Referência de Endpoints"
+description: "Encontre cada endpoint da API ChurchApps por módulo, com método HTTP, caminho, autenticação e permissão, e as convenções de lote e erros."
 ---
 
 # Referência de Endpoints
@@ -89,10 +90,10 @@ Os parâmetros do relatório são passados como valores de query string (ex: `?s
 
 | Módulo | Caminho Base | Descrição |
 |--------|-------------|-----------|
-| [Autenticação](./authentication) | `/membership/users`, `/membership/oauth` | Login, registro, tokens JWT, OAuth, permissões |
-| [Membros](./membership) | `/membership/*` | Pessoas, igrejas, grupos, domicílios, papéis, formulários, configurações |
-| [Presença](./attendance) | `/attendance/*` | Campus, cultos, sessões, visitas, registros de check-in |
-| [Conteúdo](./content) | `/content/*` | Páginas, sermões, eventos, arquivos, galerias, Bíblia, streaming |
-| [Doações](./giving) | `/giving/*` | Doações, fundos, gateways de pagamento, assinaturas |
-| [Mensagens](./messaging) | `/messaging/*` | Conversas, notificações, dispositivos, SMS |
-| [Tarefas](./doing) | `/doing/*` | Planos, tarefas, atribuições, automações, agendamento |
+| [Autenticação](./authentication.md) | `/membership/users`, `/membership/oauth` | Login, registro, tokens JWT, OAuth, permissões |
+| [Membros](./membership.md) | `/membership/*` | Pessoas, igrejas, grupos, domicílios, papéis, formulários, configurações |
+| [Presença](./attendance.md) | `/attendance/*` | Campus, cultos, sessões, visitas, registros de check-in |
+| [Conteúdo](./content.md) | `/content/*` | Páginas, sermões, eventos, arquivos, galerias, Bíblia, streaming |
+| [Doações](./giving.md) | `/giving/*` | Doações, fundos, gateways de pagamento, assinaturas |
+| [Mensagens](./messaging.md) | `/messaging/*` | Conversas, notificações, dispositivos, SMS |
+| [Tarefas](./doing.md) | `/doing/*` | Planos, tarefas, atribuições, automações, agendamento |

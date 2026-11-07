@@ -1,5 +1,6 @@
 ---
 title: "Dashboard"
+description: "Orientieren Sie sich auf dem Startbildschirm der B1 Mobile App: Häufig genutzte Funktionen sind als große Karten zu sehen, weitere unter Schnellaktionen."
 ---
 
 # Dashboard
@@ -28,7 +29,7 @@ Unterhalb der Hauptkarte sehen Sie bis zu zwei **empfohlene Karten** nebeneinand
 
 ## Schnellaktionen
 
-Die übrigen Funktionen erscheinen unterhalb der empfohlenen Karten in einem Raster **Schnellaktionen**. Jedes Element zeigt ein Symbol und eine Beschriftung. Dies sind alle anderen Navigationslinks, die Ihre Gemeinde eingerichtet hat – von [Gruppen](../groups/) und [Spenden](../giving/) bis hin zu [Check-in](../checkin/), [Predigten](../content/sermons.md) und mehr.
+Die übrigen Funktionen erscheinen unterhalb der empfohlenen Karten in einem Raster **Schnellaktionen**. Jedes Element zeigt ein Symbol und eine Beschriftung. Dies sind alle anderen Navigationslinks, die Ihre Gemeinde eingerichtet hat – von [Gruppen](../groups/index.md) und [Spenden](../giving/index.md) bis hin zu [Check-in](../checkin/index.md), [Predigten](../content/sermons.md) und mehr.
 
 ## Wie sich das Layout anpasst
 
@@ -41,7 +42,7 @@ Das Dashboard-Layout richtet sich nach Ihrem Nutzungsverhalten. Jedes Mal, wenn 
 Wenn Sie die App noch nicht genutzt haben, erscheinen die Funktionen in der Standardreihenfolge, die Ihre Gemeinde eingerichtet hat. Mit der Zeit ordnet sich das Dashboard entsprechend Ihren Gewohnheiten neu.
 
 :::info
-Welche Funktionen auf Ihrem Dashboard verfügbar sind, legt Ihr Gemeindeadministrator über [B1 Admin](../../b1-admin/) fest. Wenn Sie eine erwartete Funktion nicht sehen, wenden Sie sich an das Gemeindebüro.
+Welche Funktionen auf Ihrem Dashboard verfügbar sind, legt Ihr Gemeindeadministrator über [B1 Admin](../../b1-admin/index.md) fest. Wenn Sie eine erwartete Funktion nicht sehen, wenden Sie sich an das Gemeindebüro.
 :::
 
 ## Dashboard aktualisieren

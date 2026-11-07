@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Descubra lo que el sitio de B1.church de su iglesia ofrece a los miembros, desde el portal de miembros y los grupos hasta donativos, eventos, servicio y registro de asistencia."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ Cuando los miembros visitan el sitio de B1.church de su iglesia, ven el sitio we
 
 ## Más información
 
-- [Primeros pasos](./getting-started/): cree su cuenta, inicie sesión y aprenda a navegar por B1.church.
-- [Grupos](./groups/): únase y participe en los grupos de su iglesia.
-- [Donaciones](./giving/): haga donativos y administre sus donaciones.
-- [Eventos](./events/): explore e inscríbase en los próximos eventos de la iglesia.
-- [Servicio](./serving/): vea los planes e inscríbase en puestos de voluntario.
-- [Planes](./plans/): vea los planes de servicio y sus puestos de voluntario.
-- [Registro de entrada](./checkin/): registre su entrada en servicios y eventos, y regístrese como invitado.
-- [Directorio de la comunidad](./community/): encuentre y conéctese con otros miembros.
-- [Contenido](./content/): sermones, Biblia, versículo del día y transmisiones en vivo. (La reproducción de lecciones se trasladó a [FreePlay](/docs/freeplay/)).
+- [Primeros pasos](./getting-started/index.md): cree su cuenta, inicie sesión y aprenda a navegar por B1.church.
+- [Grupos](./groups/index.md): únase y participe en los grupos de su iglesia.
+- [Donaciones](./giving/index.md): haga donativos y administre sus donaciones.
+- [Eventos](./events/index.md): explore e inscríbase en los próximos eventos de la iglesia.
+- [Servicio](./serving/index.md): vea los planes e inscríbase en puestos de voluntario.
+- [Planes](./plans/index.md): vea los planes de servicio y sus puestos de voluntario.
+- [Registro de entrada](./checkin/index.md): registre su entrada en servicios y eventos, y regístrese como invitado.
+- [Directorio de la comunidad](./community/index.md): encuentre y conéctese con otros miembros.
+- [Contenido](./content/index.md): sermones, Biblia, versículo del día y transmisiones en vivo. (La reproducción de lecciones se trasladó a [FreePlay](/docs/freeplay/)).
 
 :::info
 B1.church es completamente gratuito para iglesias y miembros. El administrador de su iglesia configura y personaliza el sitio desde B1 Admin. Como miembro, solo necesita visitar la URL de B1.church de su iglesia para empezar.

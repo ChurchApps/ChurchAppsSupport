@@ -1,5 +1,6 @@
 ---
 title: "Structure du module"
+description: "Organisation des modules de l’API : contrôleurs, dépôts, passerelles, contrôles d’accès et les six fonctions Lambda des environnements B1."
 ---
 
 # Structure du module
@@ -13,8 +14,8 @@ Chaque module API suit une structure interne cohérente avec les contrôleurs, l
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Configurer l'API localement -- voir [Configuration locale de l'API](./local-setup)
-- Consulter l'architecture [Base de données](./database) pour comprendre la couche d'accès aux données
+- Configurer l'API localement -- voir [Configuration locale de l'API](./local-setup.md)
+- Consulter l'architecture [Base de données](./database.md) pour comprendre la couche d'accès aux données
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Communication entre modules
 
-Chaque module possède sa propre base de données (voir [Base de données](./database)), et un module ne requête jamais directement les tables d'un autre module. Quand un module a besoin de données possédées par un autre -- par exemple, le module doing résolvant les personnes de membership -- il passe par la **gateway** du module propriétaire dans `src/shared/modules/` :
+Chaque module possède sa propre base de données (voir [Base de données](./database.md)), et un module ne requête jamais directement les tables d'un autre module. Quand un module a besoin de données possédées par un autre -- par exemple, le module doing résolvant les personnes de membership -- il passe par la **gateway** du module propriétaire dans `src/shared/modules/` :
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Localement, la fonction `web` s'exécute sur le port 8084 et la fonction `socket
 
 ## Articles connexes
 
-- **[Base de données](./database)** -- Chaînes de connexion, scripts de schéma et modèles d'accès aux données
-- **[Configuration locale de l'API](./local-setup)** -- Guide de configuration complet étape par étape
-- **[ApiHelper](../shared-libraries/api-helper)** -- La bibliothèque partagée qui fournit `CustomBaseController` et les middleware d'authentification
+- **[Base de données](./database.md)** -- Chaînes de connexion, scripts de schéma et modèles d'accès aux données
+- **[Configuration locale de l'API](./local-setup.md)** -- Guide de configuration complet étape par étape
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- La bibliothèque partagée qui fournit `CustomBaseController` et les middleware d'authentification

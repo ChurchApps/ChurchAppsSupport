@@ -1,5 +1,6 @@
 ---
 title: "Tworzenie kalendarzy"
+description: "Utwórz kalendarz w B1 Admin, połącz grupy lub zaimportuj pliki .ics i zarządzaj wydarzeniami, zapisami i notatkami w jednym miejscu."
 ---
 
 # Tworzenie kalendarzy
@@ -61,7 +62,7 @@ Kliknij wydarzenie w kalendarzu, a następnie kliknij **Usuń z kalendarza**. Sp
 :::
 
 :::info
-Jeśli chcesz utworzyć jeden kalendarz, który pobiera wydarzenia z wielu grup w całym kościele, zobacz [Kalendarz wyselekcjonowany](curated-calendar), aby poznać szybsze rozwiązanie.
+Jeśli chcesz utworzyć jeden kalendarz, który pobiera wydarzenia z wielu grup w całym kościele, zobacz [Kalendarz wyselekcjonowany](./curated-calendar.md), aby poznać szybsze rozwiązanie.
 :::
 
 ## Dodawanie i edycja wydarzeń {#adding-and-editing-events}
@@ -75,7 +76,7 @@ Kliknij **Nowe wydarzenie** na stronie szczegółów kalendarza, aby dodać wyda
 - **Rozpoczęcie** i **Zakończenie**, **Powtarzanie** oraz **Widoczność** (**Publiczne** lub **Prywatne**).
 - **Tagi** -- Etykiety oddzielone przecinkami, na przykład `młodzież, uczniowie`. Element Kalendarz na Twojej stronie może być ustawiony tak, aby pokazywał tylko wydarzenia z określonym tagiem. To to samo pole **Tagi**, które widoczne jest w ustawieniach rejestracji wydarzenia.
 - **Kto może zobaczyć notatki** oraz **Kto może dodawać notatki** -- Kto może czytać i dodawać notatki do wydarzenia (zobacz [Notatki do wydarzeń](#event-notes)). Wybierz **Tylko personel** (domyślnie), **Liderzy grupy** (liderzy grupy wydarzenia) lub **Członkowie grupy** (wszyscy w grupie wydarzenia, łącznie z jej liderami).
-- **Sale** i **Zasoby** -- Rezerwuj przestrzeń i sprzęt na wydarzenie. Zobacz [Sale, zasoby i planowanie](rooms-resources).
+- **Sale** i **Zasoby** -- Rezerwuj przestrzeń i sprzęt na wydarzenie. Zobacz [Sale, zasoby i planowanie](./rooms-resources.md).
 
 Kliknij **Zapisz**. Jeśli wydarzenie się powtarza, B1 poprosi o potwierdzenie, ponieważ zapisanie zaktualizuje każde wystąpienie w serii.
 
@@ -101,12 +102,12 @@ Możesz włączyć rejestrację na dowolne wydarzenie w kalendarzu, aby członko
    - **Zamknięcie rejestracji** -- Data i godzina, o których rejestracja się kończy.
    - **Tagi** -- Etykiety oddzielone przecinkami (np. „młodzież, rekolekcje, VBS”), które pomagają kategoryzować wydarzenia z możliwością rejestracji.
    - **Pytania rejestracyjne** -- Opcjonalnie dołącz [formularz](../forms/creating-forms.md), aby osoby zapisujące się odpowiadały na dodatkowe pytania (ograniczenia dietetyczne, rozmiar koszulki, kontakt awaryjny itp.) w ramach zapisu. Wybierz **Brak**, aby pominąć pytania.
-   - **Włącz listę oczekujących** -- Gdy wydarzenie się zapełni, pozwól dodatkowym osobom dołączyć do listy oczekujących zamiast odmawiać. Zobacz [Płatne rejestracje](paid-registrations#waitlist).
+   - **Włącz listę oczekujących** -- Gdy wydarzenie się zapełni, pozwól dodatkowym osobom dołączyć do listy oczekujących zamiast odmawiać. Zobacz [Płatne rejestracje](./paid-registrations.md#waitlist).
 4. Zapisz wydarzenie.
 
-W przypadku płatnych wydarzeń ta sama strona ustawień pozwala zdefiniować płatne **Typy uczestników**, opcjonalne **Wybory** (dodatki) oraz **Kody rabatowe**, a płatności są realizowane przez dostawcę płatności darowizn Twojego kościoła. Pełny opis znajdziesz w [Płatnych rejestracjach](paid-registrations).
+W przypadku płatnych wydarzeń ta sama strona ustawień pozwala zdefiniować płatne **Typy uczestników**, opcjonalne **Wybory** (dodatki) oraz **Kody rabatowe**, a płatności są realizowane przez dostawcę płatności darowizn Twojego kościoła. Pełny opis znajdziesz w [Płatnych rejestracjach](./paid-registrations.md).
 
-Gdy rejestracja jest włączona, członkowie zobaczą przycisk **Zarejestruj się na to wydarzenie**, kiedy wyświetlą wydarzenie na [witrynie B1](../../b1-church/events/registering) lub w [aplikacji mobilnej B1](../../b1-mobile/events/registering). Jeśli dołączysz formularz, osoby zapisujące się zobaczą krok **Pytania** podczas rejestracji, a ich odpowiedzi zostaną zapisane wraz ze zgłoszeniem.
+Gdy rejestracja jest włączona, członkowie zobaczą przycisk **Zarejestruj się na to wydarzenie**, kiedy wyświetlą wydarzenie na [witrynie B1](../../b1-church/events/registering.md) lub w [aplikacji mobilnej B1](../../b1-mobile/events/registering.md). Jeśli dołączysz formularz, osoby zapisujące się zobaczą krok **Pytania** podczas rejestracji, a ich odpowiedzi zostaną zapisane wraz ze zgłoszeniem.
 
 :::info
 Pytania rejestracyjne działają tylko z formularzami, które **nie** są oznaczone jako Ograniczone. Formularz ograniczony jest automatycznie pomijany podczas rejestracji, zamiast być wyświetlany, dlatego przy dołączaniu pytań do wydarzenia używaj formularza nieograniczonego.
@@ -126,7 +127,7 @@ Aby wyświetlać i zarządzać rejestracjami na swoje wydarzenia:
    - **Przenieś z listy oczekujących** rejestrację, gdy zwolni się miejsce
    - **Eksportuj CSV** -- Pobierz wszystkie rejestracje, w tym typy uczestników, wybory, kwoty płatności i odpowiedzi na pytania
 
-Jeśli do wydarzenia dołączono pytania rejestracyjne, strona szczegółów pokazuje także filtr **Tylko pytania bez odpowiedzi**, który szybko wyszukuje osoby, które jeszcze nie przesłały odpowiedzi, oraz przycisk **Wyświetl odpowiedzi** przy każdej rejestracji z odpowiedziami. Płatne wydarzenia dodają kolumnę **Typ**, kolumnę **Opłacone / Razem**, liczniki dla poszczególnych typów oraz okno szczegółów płatności -- zobacz [Płatne rejestracje](paid-registrations#the-registration-roster).
+Jeśli do wydarzenia dołączono pytania rejestracyjne, strona szczegółów pokazuje także filtr **Tylko pytania bez odpowiedzi**, który szybko wyszukuje osoby, które jeszcze nie przesłały odpowiedzi, oraz przycisk **Wyświetl odpowiedzi** przy każdej rejestracji z odpowiedziami. Płatne wydarzenia dodają kolumnę **Typ**, kolumnę **Opłacone / Razem**, liczniki dla poszczególnych typów oraz okno szczegółów płatności -- zobacz [Płatne rejestracje](./paid-registrations.md#the-registration-roster).
 
 :::tip
 Używaj paska postępu pojemności, aby śledzić, jak szybko wydarzenia się zapełniają. Pasek zmienia kolor na czerwony, gdy wydarzenie osiągnie lub przekroczy pojemność.
@@ -134,7 +135,7 @@ Używaj paska postępu pojemności, aby śledzić, jak szybko wydarzenia się za
 
 ## Następne kroki
 
-- [Kalendarz wyselekcjonowany](curated-calendar) -- Utwórz kalendarz, który pobiera wydarzenia z wielu grup
-- [Płatne rejestracje](paid-registrations) -- Typy uczestników, dodatki, kody rabatowe, płatności i listy oczekujących
-- [Przewodnik rejestracji na wydarzenia](../guides/event-registration) -- Przewodnik krok po kroku dotyczący konfiguracji rejestracji na wydarzenia
-- [Przegląd kalendarzy](./) -- Powrót do przeglądu kalendarzy
+- [Kalendarz wyselekcjonowany](./curated-calendar.md) -- Utwórz kalendarz, który pobiera wydarzenia z wielu grup
+- [Płatne rejestracje](./paid-registrations.md) -- Typy uczestników, dodatki, kody rabatowe, płatności i listy oczekujących
+- [Przewodnik rejestracji na wydarzenia](../guides/event-registration.md) -- Przewodnik krok po kroku dotyczący konfiguracji rejestracji na wydarzenia
+- [Przegląd kalendarzy](./index.md) -- Powrót do przeglądu kalendarzy

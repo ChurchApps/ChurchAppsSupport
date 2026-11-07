@@ -1,5 +1,7 @@
 ---
-title: "Mga Group"
+title: "Mga Grupo ng Simbahan sa B1.church Member Portal"
+sidebar_label: "Mga Group"
+description: "Tumingin at sumali sa mga grupo sa iyong B1.church site, tingnan ang pulong, event, miyembro, at resources, at makipag-chat sa iyong grupo."
 ---
 
 # Mga Group

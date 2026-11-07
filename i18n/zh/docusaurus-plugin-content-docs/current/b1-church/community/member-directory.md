@@ -1,5 +1,7 @@
 ---
-title: "成员目录"
+title: "B1.church 会友门户中的会友通讯录"
+sidebar_label: "成员目录"
+description: "在 B1.church 通讯录中搜索和浏览教会会友，查看其个人资料和家庭成员，并了解谁可以访问通讯录。"
 ---
 
 # 成员目录

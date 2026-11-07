@@ -1,5 +1,6 @@
 ---
 title: "Utilizarea editorului de pagini"
+description: "Configurează editorul de pagini din B1 Admin: adaugă secțiuni și elemente, stilizează-le, previzualizează pe mobil și publică. Include anulare și istoric."
 ---
 
 # Utilizarea editorului de pagini
@@ -17,8 +18,8 @@ Editorul de pagini al B1 este un constructor vizual, cu funcție de glisare și 
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Finalizați [Configurarea inițială](initial-setup) pentru a vă configura site-ul web
-- Creați cel puțin o pagină în [Gestionarea paginilor](managing-pages)
+- Finalizați [Configurarea inițială](./initial-setup.md) pentru a vă configura site-ul web
+- Creați cel puțin o pagină în [Gestionarea paginilor](./managing-pages.md)
 - Aveți nevoie de permisiunea **content.edit** pentru a accesa editorul
 
 </div>
@@ -31,7 +32,7 @@ Editorul de pagini al B1 este un constructor vizual, cu funcție de glisare și 
 Editorul se deschide în modul ecran complet. Panoul din stânga arată structura paginii și elementele de conținut disponibile; zona centrală afișează o previzualizare live a paginii.
 
 :::info
-Editorul se afișează întotdeauna în modul luminos, indiferent de setarea temei din B1 Admin, și utilizează fonturile pentru titluri și text pe care le-ați ales în [Aspect](appearance). Acest lucru asigură că previzualizarea corespunde exact modului în care pagina va arăta vizitatorilor site-ului.
+Editorul se afișează întotdeauna în modul luminos, indiferent de setarea temei din B1 Admin, și utilizează fonturile pentru titluri și text pe care le-ați ales în [Aspect](./appearance.md). Acest lucru asigură că previzualizarea corespunde exact modului în care pagina va arăta vizitatorilor site-ului.
 :::
 
 ## Structura paginii: secțiuni și elemente
@@ -61,7 +62,7 @@ Ați construit deja o secțiune, dar doriți o altă structură? Folosiți comut
    - **Image** -- Încărcați o fotografie sau adăugați un link către ea
    - **Button** -- Un link de tip îndemn la acțiune, pe care se poate face clic
    - **Card** -- O imagine cu un titlu și o descriere
-   - **Form** -- Inserați un [formular](../forms/creating-forms) direct în pagină. Dacă formularul are o [fotografie de antet](../forms/creating-forms.md#adding-a-header-photo), aceasta apare deasupra întrebărilor
+   - **Form** -- Inserați un [formular](../forms/creating-forms.md) direct în pagină. Dacă formularul are o [fotografie de antet](../forms/creating-forms.md#adding-a-header-photo), aceasta apare deasupra întrebărilor
    - **Calendar** -- Afișați un calendar de evenimente
    - **FAQ** -- Blocuri de întrebări și răspunsuri de tip acordeon
    - **Video** -- Inserați un videoclip după adresa URL
@@ -79,7 +80,7 @@ Ați construit deja o secțiune, dar doriți o altă structură? Folosiți comut
    - **Map** -- O hartă încorporată, centrată pe adresa bisericii dumneavoastră
    - **Table** -- O grilă simplă de rânduri și coloane pentru conținut tabelar
    - **Text with Photo** -- Text și o imagine una lângă alta
-   - **Logo** -- Logo-ul bisericii dumneavoastră, preluat din [Aspect](appearance)
+   - **Logo** -- Logo-ul bisericii dumneavoastră, preluat din [Aspect](./appearance.md)
    - **Live Stream** -- Playerul transmisiunii dumneavoastră live, inserat direct în pagină
    - **Podcast** -- O listă de episoade preluate dintr-un flux RSS de podcast extern, pe care îl furnizați, cu setări pentru numărul de episoade afișate și pentru afișarea sau nu a datelor și descrierilor. Fiecare episod de pe site-ul live are un player audio și un link **Download**, care salvează fișierul audio al episodului sub titlul episodului. Acesta servește la prezentarea oricărui flux de podcast pe site-ul dumneavoastră; pentru a publica propriile predici ca podcast, consultați în schimb [Gestionarea predicilor](../sermons/managing-sermons.md#your-podcast-feed)
    - **Donation** -- Un buton de donație sau un formular de donație inserat
@@ -100,7 +101,7 @@ Dacă lipiți în caseta JavaScript doar o adresă web (de exemplu, un link căt
 
 Elementul **Calendar** afișează evenimentele dintr-unul dintre calendarele dumneavoastră:
 
-1. Sub **Select**, alegeți **Group Calendar** (evenimentele unui singur grup -- lista afișează grupurile din care faceți parte) sau **Curated Calendar** (un calendar pe care l-ați creat la **Calendars**; consultați [Calendarul selectat](../calendars/curated-calendar)).
+1. Sub **Select**, alegeți **Group Calendar** (evenimentele unui singur grup -- lista afișează grupurile din care faceți parte) sau **Curated Calendar** (un calendar pe care l-ați creat la **Calendars**; consultați [Calendarul selectat](../calendars/curated-calendar.md)).
 2. Sub **Select Calendar**, alegeți grupul sau calendarul.
 3. Sub **Display**, alegeți modul de afișare:
    - **Month calendar** -- O grilă lunară prin care vizitatorii pot naviga.
@@ -133,7 +134,7 @@ Faceți clic pe orice element pentru a deschide panoul său de stil. Opțiunile 
 Pentru stilizare avansată, fiecare secțiune și fiecare element are un câmp **Custom CSS**, unde puteți scrie propriile reguli CSS. Acestea se aplică doar elementului respectiv, astfel încât nu vor afecta involuntar restul paginii.
 
 :::tip
-Dacă doriți să aplicați stiluri pe întregul site -- cum ar fi un font personalizat sau o culoare globală -- folosiți setările [Aspect](appearance) în loc de CSS personalizat pe pagini individuale.
+Dacă doriți să aplicați stiluri pe întregul site -- cum ar fi un font personalizat sau o culoare globală -- folosiți setările [Aspect](./appearance.md) în loc de CSS personalizat pe pagini individuale.
 :::
 
 ## Previzualizarea paginii
@@ -188,7 +189,7 @@ Folosiți fluxul de ciornă/publicare atunci când doriți să pregătiți o pag
 
 ## Articole conexe
 
-- [Gestionarea paginilor](managing-pages) -- Creați pagini, setați adresele URL și gestionați navigarea site-ului
-- [Aspect](appearance) -- Setați culorile, fonturile și identitatea vizuală la nivelul întregului site
-- [Fișiere](files) -- Încărcați imagini și documente pentru a le folosi în editor
-- [Crearea formularelor](../forms/creating-forms) -- Construiți formulare pe care le puteți insera în pagini
+- [Gestionarea paginilor](./managing-pages.md) -- Creați pagini, setați adresele URL și gestionați navigarea site-ului
+- [Aspect](./appearance.md) -- Setați culorile, fonturile și identitatea vizuală la nivelul întregului site
+- [Fișiere](./files.md) -- Încărcați imagini și documente pentru a le folosi în editor
+- [Crearea formularelor](../forms/creating-forms.md) -- Construiți formulare pe care le puteți insera în pagini

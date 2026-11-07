@@ -1,5 +1,6 @@
 ---
 title: "Klassrum"
+description: "Ställ in och hantera klassrummen som organiserar kyrkans undervisningsschema i Lessons.church, från rum och åldersgrupper till vyer för volontärer."
 ---
 
 # Klassrum

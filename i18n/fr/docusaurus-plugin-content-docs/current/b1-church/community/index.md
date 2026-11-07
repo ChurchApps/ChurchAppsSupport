@@ -1,5 +1,7 @@
 ---
-title: "Communauté"
+title: "Annuaire des membres dans B1.church"
+sidebar_label: "Communauté"
+description: "Recherchez les membres de votre église par nom ou groupe, consultez les profils, et trouvez où sont désormais les mises à jour de la Chronologie retirée."
 ---
 
 # Communauté
@@ -26,5 +28,5 @@ Les membres et les informations visibles pour vous dans l'annuaire dépendent de
 :::
 
 :::tip
-Utilisez les fonctionnalités communautaires en complément des [Groupes](../groups/) pour rester engagé avec votre église tout au long de la semaine.
+Utilisez les fonctionnalités communautaires en complément des [Groupes](../groups/index.md) pour rester engagé avec votre église tout au long de la semaine.
 :::

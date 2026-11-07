@@ -1,5 +1,6 @@
 ---
 title: "Kungeniswa Ngebuningi"
+description: "Ngenisa timfundziso ngobuningi kusuka ku-YouTube noma ku-Vimeo ku-B1 Admin, bese uyihlela ibe luhlu lwemavidiyo."
 ---
 
 # Kungeniswa Ngebuningi
@@ -14,7 +15,7 @@ Likhasi le-Kungeniswa Ngebuningi likuvumela kugcwalisa ngekushesha umtsamo wakho
 <h4>Ngembi Kwekucala</h4>
 
 - Udzinga imvumo **contentApi.streamingServices.edit**. Buka [Tikhundla Netimvumo](../settings/roles-permissions.md) uma ungenawo umfanelo.
-- Yakha ku-[luhlu](playlists) lulodvwa okungenani kute ungenise tintshumayelo takho kulo
+- Yakha ku-[luhlu](./playlists.md) lulodvwa okungenani kute ungenise tintshumayelo takho kulo
 - Yiba nemniningwane we-ID Yeshanela yakho YeYouTube nome imniningwane ye-akhawundi ye-Vimeo lelungele
 
 </div>
@@ -39,7 +40,7 @@ Ngembi kwekungenisa emavidiyo, udzinga luhlu lulodvwa okungenani kute uwahlele k
 2. Chofota **Yakha Luhlu Lwekucala** bese ugcwalisa ligama, inchazelo, lusuku lwekushicelela, kanye nesitfombe lesincane.
 3. Chofota **Gcina**, bese ubuyela ethebhini ye-**Kungeniswa Ngebuningi**.
 
-Buka [Tinhlu](playlists) kute utfole imiyalo lecacile mayelana nekwakha nekuphatsa tinhlu.
+Buka [Tinhlu](./playlists.md) kute utfole imiyalo lecacile mayelana nekwakha nekuphatsa tinhlu.
 
 ## Kungenisa Emavidiyo
 
@@ -54,11 +55,11 @@ Buka [Tinhlu](playlists) kute utfole imiyalo lecacile mayelana nekwakha nekuphat
 Emavidiyo akho atakungeniswa nayo yonkhe imniningwane yawo, lokufaka ekhatsi tihloko, tinchazelo, tilusuku, kanye netitfombe letincane.
 
 :::info
-Kungeniswa ngebuningi kuncono kakhulu nawucala, uma ususuka kwenye i-platform. Nawengeta tintshumayelo nga ngayinye kusukela manje, sebentisa likhasi le-[Kuphatsa Tintshumayelo](managing-sermons) esikhundleni saloko.
+Kungeniswa ngebuningi kuncono kakhulu nawucala, uma ususuka kwenye i-platform. Nawengeta tintshumayelo nga ngayinye kusukela manje, sebentisa likhasi le-[Kuphatsa Tintshumayelo](./managing-sermons.md) esikhundleni saloko.
 :::
 
 ## Tinyatselo Letilandzelako
 
-- [Kuphatsa Tintshumayelo](managing-sermons) -- Hlela imniningwane yetintshumayelo letingeniswe
-- [Tinhlu](playlists) -- Yakha futsi uphatse tichungechunge tetintshumayelo
-- [Kusakaza Bukhoma](live-streaming) -- Lungisa kusakaza bukhoma kwemakhonzo akho
+- [Kuphatsa Tintshumayelo](./managing-sermons.md) -- Hlela imniningwane yetintshumayelo letingeniswe
+- [Tinhlu](./playlists.md) -- Yakha futsi uphatse tichungechunge tetintshumayelo
+- [Kusakaza Bukhoma](./live-streaming.md) -- Lungisa kusakaza bukhoma kwemakhonzo akho

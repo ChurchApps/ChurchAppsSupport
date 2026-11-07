@@ -1,5 +1,6 @@
 ---
 title: "FreePlay-overzicht"
+description: "Overzicht van FreePlay, de klassen-tv-app voor offline lesweergave op Android TV, Fire TV en Apple TV, met links naar installatiegidsen."
 ---
 
 # FreePlay-overzicht
@@ -34,11 +35,11 @@ Wanneer u FreePlay start, maakt het verbinding met uw inhoudsproviders en contro
 
 ## Secties
 
-- **[Aan de slag](./getting-started/)** - Installeer de app, start deze en kies hoe u verbinding wilt maken
-- **[Klaslokaal modus](./scheduled-mode/)** - Combineer met een klaslokaal en speel geplande lessen af
-- **[Schema modus](./plan-mode/)** - Combineer met een kerkdienstplan
-- **[Inhoudsproviders](./content-providers/)** - Verbind met externe inhoudsbronnen
-- **[Lessen verkennen](./content-providers/browsing-content)** - Verken de volledige lessenbibliotheek op programma en studie
+- **[Aan de slag](./getting-started/index.md)** - Installeer de app, start deze en kies hoe u verbinding wilt maken
+- **[Klaslokaal modus](./scheduled-mode/index.md)** - Combineer met een klaslokaal en speel geplande lessen af
+- **[Schema modus](./plan-mode/index.md)** - Combineer met een kerkdienstplan
+- **[Inhoudsproviders](./content-providers/index.md)** - Verbind met externe inhoudsbronnen
+- **[Lessen verkennen](./content-providers/browsing-content.md)** - Verken de volledige lessenbibliotheek op programma en studie
 
 :::info
 FreePlay maakt deel uit van de [ChurchApps](https://churchapps.org) reeks gratis, open-source tools voor kerken.

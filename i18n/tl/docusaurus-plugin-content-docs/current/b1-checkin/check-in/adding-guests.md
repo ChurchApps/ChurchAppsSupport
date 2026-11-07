@@ -1,5 +1,6 @@
 ---
 title: "Pagdaragdag ng mga Bisita"
+description: "Magdagdag ng batang bisita, kamag-anak, o kaibigan sa isang household sa B1 Checkin kiosk, saka magtakda ng grupo at tapusin ang check-in."
 ---
 
 # Pagdaragdag ng mga Bisita
@@ -13,8 +14,8 @@ Kung may bumibisita sa iyong pamilya at kailangang mag-check in kasama ng iyong 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [Hanapin ang iyong pamilya](./looking-up-members) at pumili ng miyembro mula sa search results
-- Nasa [household review screen](./household-review) ka kung saan makikita mo ang mga miyembro ng iyong pamilya
+- [Hanapin ang iyong pamilya](./looking-up-members.md) at pumili ng miyembro mula sa search results
+- Nasa [household review screen](./household-review.md) ka kung saan makikita mo ang mga miyembro ng iyong pamilya
 
 </div>
 
@@ -36,8 +37,8 @@ Kung ang pangalan ng bisita ay tumutugma sa isang tao na nasa sistema na at hind
 
 Kapag lumabas na ang bisita sa iyong household list, maaari kang:
 
-- **I-expand ang kanilang card** at [i-assign sila sa isang grupo](./group-assignment), katulad ng ibang miyembro ng pamilya.
-- **[Mag-check in](./completing-checkin)** ng buong household kasama ang bisita.
+- **I-expand ang kanilang card** at [i-assign sila sa isang grupo](./group-assignment.md), katulad ng ibang miyembro ng pamilya.
+- **[Mag-check in](./completing-checkin.md)** ng buong household kasama ang bisita.
 
 ## Pagkansela
 
@@ -49,4 +50,4 @@ Ang pagdaragdag ng bisita sa kiosk ay gumagawa ng person record sa database ng i
 
 ## Susunod na Hakbang
 
-Pagkatapos magdagdag ng mga bisita at [mag-assign ng mga grupo](./group-assignment) kung kinakailangan, handa ka nang [kumpletuhin ang check-in](./completing-checkin).
+Pagkatapos magdagdag ng mga bisita at [mag-assign ng mga grupo](./group-assignment.md) kung kinakailangan, handa ka nang [kumpletuhin ang check-in](./completing-checkin.md).

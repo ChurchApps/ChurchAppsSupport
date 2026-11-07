@@ -1,5 +1,7 @@
 ---
-title: "Detail Grup"
+title: "Detail Grup di Portal Anggota B1.church"
+sidebar_label: "Detail Grup"
+description: "Buka halaman detail grup di tampilan anggota B1.church (B1 Admin): lihat acara, pertemuan, formulir, dan anggota, lalu bergabung atau ajukan permintaan."
 ---
 
 # Detail Grup

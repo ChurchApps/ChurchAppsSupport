@@ -1,5 +1,6 @@
 ---
 title: "Aspetto"
+description: "Imposta colori, font, spaziature, logo e navigazione del sito della chiesa in B1 Admin, oltre a widget, analisi GA4, reindirizzamenti e CSS personalizzato."
 ---
 
 # Aspetto
@@ -13,7 +14,7 @@ La pagina Aspetto ti permette di personalizzare l'aspetto generale del sito web 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Completa la [Configurazione iniziale](initial-setup) del tuo sito web
+- Completa la [Configurazione iniziale](./initial-setup.md) del tuo sito web
 - Prepara il logo della chiesa in formato PNG con sfondo trasparente e rapporto d'aspetto 4:1
 - Conosci i colori del marchio della chiesa (valori esadecimali), se hai già una guida di stile
 
@@ -98,7 +99,7 @@ Il CSS personalizzato è potente, ma se usato in modo errato può rompere il lay
 :::
 
 :::info
-Il tuo sito applica una Content Security Policy che blocca gli script inline provenienti da qualsiasi altra fonte. Il campo **HTML personalizzato** qui, e l'[elemento HTML](page-editor#using-the-html-element) nelle singole pagine, sono le eccezioni consentite: il codice salvato lì viene eseguito così com'è, quindi incolla solo script provenienti da fonti di cui ti fidi (tag di analisi, widget di chat e incorporamenti simili).
+Il tuo sito applica una Content Security Policy che blocca gli script inline provenienti da qualsiasi altra fonte. Il campo **HTML personalizzato** qui, e l'[elemento HTML](./page-editor.md#using-the-html-element) nelle singole pagine, sono le eccezioni consentite: il codice salvato lì viene eseguito così com'è, quindi incolla solo script provenienti da fonti di cui ti fidi (tag di analisi, widget di chat e incorporamenti simili).
 :::
 
 ## Temi di stile
@@ -107,5 +108,5 @@ Se vuoi un punto di partenza rapido, le **Tavolozze suggerite** nella sezione Ta
 
 ## Passaggi successivi
 
-- [Gestire le pagine](managing-pages): crea e organizza le pagine del tuo sito web
-- [File](files): carica i contenuti multimediali per il tuo sito
+- [Gestire le pagine](./managing-pages.md): crea e organizza le pagine del tuo sito web
+- [File](./files.md): carica i contenuti multimediali per il tuo sito

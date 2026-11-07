@@ -1,5 +1,6 @@
 ---
 title: "Opprette kalendere"
+description: "Opprett en kalender i B1 Admin, koble til grupper eller importer .ics-filer, og administrer arrangementer, påmeldinger og notater fra ett sted."
 ---
 
 # Opprette kalendere
@@ -61,7 +62,7 @@ Klikk på et arrangement i kalenderen, og klikk deretter **Fjern fra kalender**.
 :::
 
 :::info
-Hvis du vil lage én kalender som henter arrangementer fra mange grupper i hele kirken, se [Utvalgt kalender](curated-calendar) for en enklere fremgangsmåte.
+Hvis du vil lage én kalender som henter arrangementer fra mange grupper i hele kirken, se [Utvalgt kalender](./curated-calendar.md) for en enklere fremgangsmåte.
 :::
 
 ## Legge til og redigere arrangementer {#adding-and-editing-events}
@@ -75,7 +76,7 @@ Klikk **Nytt arrangement** på detaljsiden for kalenderen for å legge til et ar
 - **Start** og **Slutt**, **Gjentas** og **Synlighet** (**Offentlig** eller **Privat**).
 - **Merkelapper** -- Merkelapper atskilt med komma, for eksempel `ungdom, elever`. Et kalenderelement på nettstedet ditt kan settes til kun å vise arrangementer med en bestemt merkelapp. Dette er det samme feltet **Merkelapper** som vises i arrangementets påmeldingsinnstillinger.
 - **Hvem kan se notater** og **Hvem kan skrive notater** -- Hvem som kan lese og legge til notater på arrangementet (se [Arrangementsnotater](#event-notes)). Velg **Kun ansatte** (standard), **Gruppeledere** (ledere for arrangementets gruppe) eller **Gruppemedlemmer** (alle i arrangementets gruppe, inkludert ledere).
-- **Rom** og **Ressurser** -- Reserver plass og utstyr til arrangementet. Se [Rom, ressurser og planlegging](rooms-resources).
+- **Rom** og **Ressurser** -- Reserver plass og utstyr til arrangementet. Se [Rom, ressurser og planlegging](./rooms-resources.md).
 
 Klikk **Lagre**. Hvis arrangementet gjentas, ber B1 deg bekrefte, fordi lagring oppdaterer alle forekomster i serien.
 
@@ -101,12 +102,12 @@ Du kan aktivere påmelding for alle kalenderarrangementer, slik at medlemmer kan
    - **Påmelding stenger** -- Dato og klokkeslett når påmeldingen stenger.
    - **Merkelapper** -- Merkelapper atskilt med komma (f.eks. «ungdom, retrett, vbs») for å kategorisere arrangementer som det kan meldes seg på.
    - **Påmeldingsspørsmål** -- Du kan eventuelt knytte et [skjema](../forms/creating-forms.md) slik at påmeldte svarer på ekstra spørsmål (kostholdsbehov, T-skjortestørrelse, nødkontakt osv.) som en del av påmeldingen. Velg **Ingen** for å hoppe over spørsmålene.
-   - **Aktiver venteliste** -- Når arrangementet blir fullt, kan flere påmeldte settes på venteliste i stedet for å bli avvist. Se [Betalte påmeldinger](paid-registrations#waitlist).
+   - **Aktiver venteliste** -- Når arrangementet blir fullt, kan flere påmeldte settes på venteliste i stedet for å bli avvist. Se [Betalte påmeldinger](./paid-registrations.md#waitlist).
 4. Lagre arrangementet.
 
-For betalte arrangementer lar den samme innstillingssiden deg definere prissatte **deltakertyper**, eventuelle **valg** (tilleggsvarer) og **rabattkoder**, med betaling som innkreves gjennom kirkens giveleverandør. Se [Betalte påmeldinger](paid-registrations) for hele gjennomgangen.
+For betalte arrangementer lar den samme innstillingssiden deg definere prissatte **deltakertyper**, eventuelle **valg** (tilleggsvarer) og **rabattkoder**, med betaling som innkreves gjennom kirkens giveleverandør. Se [Betalte påmeldinger](./paid-registrations.md) for hele gjennomgangen.
 
-Når påmelding er aktivert, vil medlemmer se en knapp **Meld deg på dette arrangementet** når de viser arrangementet på [B1-nettstedet](../../b1-church/events/registering) eller [B1-mobilappen](../../b1-mobile/events/registering). Hvis du har knyttet et skjema, får de påmeldte et trinn for **Spørsmål** under påmeldingen, og svarene deres lagres sammen med påmeldingen.
+Når påmelding er aktivert, vil medlemmer se en knapp **Meld deg på dette arrangementet** når de viser arrangementet på [B1-nettstedet](../../b1-church/events/registering.md) eller [B1-mobilappen](../../b1-mobile/events/registering.md). Hvis du har knyttet et skjema, får de påmeldte et trinn for **Spørsmål** under påmeldingen, og svarene deres lagres sammen med påmeldingen.
 
 :::info
 Påmeldingsspørsmål fungerer bare med skjemaer som **ikke** er merket som begrenset. Et begrenset skjema hoppes automatisk over under påmeldingen i stedet for å vises, så bruk et ubegrenset skjema når du knytter spørsmål til et arrangement.
@@ -126,7 +127,7 @@ For å se og administrere påmeldinger til arrangementene dine:
    - **Flytt opp** påmeldinger fra ventelisten når en plass blir ledig
    - **Eksporter CSV** -- Last ned alle påmeldinger, inkludert deltakertyper, valg, betalingsbeløp og svar på spørsmål
 
-Hvis arrangementet har påmeldingsspørsmål knyttet til seg, viser detaljsiden også et filter for **Kun ubesvarte spørsmål** for raskt å finne påmeldte som ikke har sendt inn svar ennå, og en knapp for **Vis svar** på hver besvart påmelding for å se svarene deres. Betalte arrangementer legger til en kolonne for **Type**, en kolonne for **Betalt / Totalt**, antall per type og en dialog med betalingsdetaljer -- se [Betalte påmeldinger](paid-registrations#the-registration-roster).
+Hvis arrangementet har påmeldingsspørsmål knyttet til seg, viser detaljsiden også et filter for **Kun ubesvarte spørsmål** for raskt å finne påmeldte som ikke har sendt inn svar ennå, og en knapp for **Vis svar** på hver besvart påmelding for å se svarene deres. Betalte arrangementer legger til en kolonne for **Type**, en kolonne for **Betalt / Totalt**, antall per type og en dialog med betalingsdetaljer -- se [Betalte påmeldinger](./paid-registrations.md#the-registration-roster).
 
 :::tip
 Bruk fremdriftslinjen for kapasitet for å følge med på hvor raskt arrangementene fylles opp. Linjen blir rød når et arrangement er på eller over kapasiteten.
@@ -134,7 +135,7 @@ Bruk fremdriftslinjen for kapasitet for å følge med på hvor raskt arrangement
 
 ## Neste steg
 
-- [Utvalgt kalender](curated-calendar) -- Lag en kalender som henter fra flere grupper
-- [Betalte påmeldinger](paid-registrations) -- Deltakertyper, tilleggsvalg, rabattkoder, betalinger og ventelister
-- [Veiledning for påmelding til arrangementer](../guides/event-registration) -- Trinn for trinn for å sette opp påmelding til arrangementer
-- [Oversikt over kalendere](./) -- Gå tilbake til oversikten over kalendere
+- [Utvalgt kalender](./curated-calendar.md) -- Lag en kalender som henter fra flere grupper
+- [Betalte påmeldinger](./paid-registrations.md) -- Deltakertyper, tilleggsvalg, rabattkoder, betalinger og ventelister
+- [Veiledning for påmelding til arrangementer](../guides/event-registration.md) -- Trinn for trinn for å sette opp påmelding til arrangementer
+- [Oversikt over kalendere](./index.md) -- Gå tilbake til oversikten over kalendere

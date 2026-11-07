@@ -1,5 +1,6 @@
 ---
 title: "Entrada de Conteo y Tendencia"
+description: "Registra el total de asistentes de un servicio o grupo en B1 Admin sin lista nominal y sigue las cifras semana a semana en el informe de tendencias."
 ---
 
 # Entrada de Conteo y Tendencia

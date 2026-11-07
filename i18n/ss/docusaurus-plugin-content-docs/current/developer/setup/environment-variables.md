@@ -1,5 +1,6 @@
 ---
 title: "Emavariyebuli Endzawo"
+description: "Setfa ifayela le-.env kumaprojekthi e-ChurchApps, khetha phakathi kwe-API yedemo eyabelwanako ne-API yendzawo, bese ugcwalisa tiguquki ze-B1 Admin, B1.church, B1 Mobile, Lessons.church nalokunye."
 ---
 
 # Emavariyebuli Endzawo
@@ -13,9 +14,9 @@ Lonkhe liphrojekthi le-ChurchApps lisebentisa ifayela le-`.env` ekuhleleni kwend
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- Faka [tidzingo tekucala](./prerequisites) teliphrojekthi lakho
+- Faka [tidzingo tekucala](./prerequisites.md) teliphrojekthi lakho
 - Kopisha (clone) i-repository yeliphrojekthi lofuna kusebentela kulo
-- Bukisisa [Simo Sonkhe Semaphrojekthi](./project-overview) kute ucondze kutsi ngimaphi ema-module e-API lawadzingekako liphrojekthi lakho
+- Bukisisa [Simo Sonkhe Semaphrojekthi](./project-overview.md) kute ucondze kutsi ngimaphi ema-module e-API lawadzingekako liphrojekthi lakho
 
 </div>
 
@@ -60,7 +61,7 @@ https://api.staging.churchapps.org/doing
 
 ### Sincumo 2: I-API Yasekhaya
 
-Gijimisa liphrojekthi le-Api emshinini wakho. Kudzinga i-MySQL 8.0+ nema-database lakhiwe kumamodyuli wonkhe. Bona umhlahlandlela we-[API local setup](../api/local-setup).
+Gijimisa liphrojekthi le-Api emshinini wakho. Kudzinga i-MySQL 8.0+ nema-database lakhiwe kumamodyuli wonkhe. Bona umhlahlandlela we-[API local setup](../api/local-setup.md).
 
 ```bash
 # Iphetheni ye-Base URL

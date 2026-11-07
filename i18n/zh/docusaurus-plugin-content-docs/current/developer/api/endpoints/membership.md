@@ -1,5 +1,6 @@
 ---
 title: "Membership 端点"
+description: "ChurchApps 会员 API 的端点参考：人员、家庭、小组、角色、表单和设置，并附有认证和权限规则。"
 ---
 
 # Membership 端点
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 基础路径：`/membership/users`
 
-有关登录、注册和密码管理端点，请参阅[身份验证与权限](./authentication)。
+有关登录、注册和密码管理端点，请参阅[身份验证与权限](./authentication.md)。
 
 | 方法 | 路径 | 身份验证 | 权限 | 说明 |
 |--------|------|------|------------|-------------|
@@ -342,6 +343,6 @@ Authorization: Bearer <token>
 
 ## 相关页面
 
-- [身份验证与权限](./authentication) —— 登录流程、JWT、OAuth、权限模型
-- [出勤端点](./attendance) —— 礼拜和到访追踪
-- [模块结构](../module-structure) —— 代码组织模式
+- [身份验证与权限](./authentication.md) —— 登录流程、JWT、OAuth、权限模型
+- [出勤端点](./attendance.md) —— 礼拜和到访追踪
+- [模块结构](../module-structure.md) —— 代码组织模式

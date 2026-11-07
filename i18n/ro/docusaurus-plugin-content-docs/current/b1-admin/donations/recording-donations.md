@@ -1,5 +1,6 @@
 ---
 title: "Înregistrarea donațiilor"
+description: "Înregistrați donațiile în B1 Admin creând un lot, introducând darurile unul câte unul, importând un CSV sau adăugând un dar din profilul donatorului."
 ---
 
 # Înregistrarea donațiilor

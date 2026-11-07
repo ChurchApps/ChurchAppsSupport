@@ -1,5 +1,7 @@
 ---
-title: "Đăng ký tham gia sự kiện"
+title: "Đăng ký sự kiện trong B1 Mobile"
+sidebar_label: "Đăng ký tham gia sự kiện"
+description: "Đăng ký bản thân và gia đình cho sự kiện nhà thờ từ ứng dụng B1 Mobile, kiểm tra số chỗ còn lại, và xác nhận đăng ký qua ba bước."
 ---
 
 # Đăng ký tham gia sự kiện
@@ -13,7 +15,7 @@ title: "Đăng ký tham gia sự kiện"
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
 - Sự kiện phải được bật tính năng đăng ký và thời gian đăng ký phải đang mở
 
 </div>
@@ -50,4 +52,4 @@ Nếu bạn cần hủy, hãy liên hệ với quản trị viên nhà thờ. H�
 ## Bài viết liên quan
 
 - [Tổng quan về sự kiện](./index.md) -- Xem các sự kiện có đăng ký trên điện thoại
-- [Xem lịch phục vụ](../serving/viewing-plans) -- Xem lịch phục vụ của bạn
+- [Xem lịch phục vụ](../serving/viewing-plans.md) -- Xem lịch phục vụ của bạn

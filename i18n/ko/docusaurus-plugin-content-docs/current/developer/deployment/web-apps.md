@@ -1,5 +1,6 @@
 ---
 title: "웹 앱 배포"
+description: "B1 Admin 같은 ChurchApps 웹 앱을 Amazon S3와 CloudFront에 배포하는 단계입니다. 병합 시 GitHub Actions로 자동 배포하거나 수동 명령으로 배포할 수 있습니다."
 ---
 
 # 웹 앱 배포
@@ -13,7 +14,7 @@ ChurchApps 웹 애플리케이션은 **Amazon S3**과 CDN인 **CloudFront**로 s
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- 웹 앱을 로컬에서 설정하고 빌드 확인 -- [웹 앱](../web-apps/) 참조
+- 웹 앱을 로컬에서 설정하고 빌드 확인 -- [웹 앱](../web-apps/index.md) 참조
 - S3 및 CloudFront 액세스로 AWS 자격증명 구성
 - 대상 S3 버킷 이름 및 CloudFront 배포 ID 알기
 
@@ -53,6 +54,6 @@ GitHub Actions 워크플로우는 `main` 브랜치에 푸시할 때 자동으로
 
 ## 관련 문서
 
-- **[웹 앱](../web-apps/)** -- B1Admin, B1App, LessonsApp 설정 가이드
-- **[API 배포](./apis)** -- 백엔드 API 배포
-- **[모바일 배포](./mobile)** -- 모바일 앱을 앱 스토어에 배포
+- **[웹 앱](../web-apps/index.md)** -- B1Admin, B1App, LessonsApp 설정 가이드
+- **[API 배포](./apis.md)** -- 백엔드 API 배포
+- **[모바일 배포](./mobile.md)** -- 모바일 앱을 앱 스토어에 배포

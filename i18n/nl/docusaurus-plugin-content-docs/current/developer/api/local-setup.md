@@ -1,5 +1,6 @@
 ---
 title: "Local API Setup"
+description: "Stel de ChurchApps API lokaal in: kloon de repo, configureer zes MySQL-moduledatabases, initialiseer het schema en start de hot-reload-devserver."
 ---
 
 # Local API Setup
@@ -13,9 +14,9 @@ Deze gids leidt u door het instellen van de ChurchApps API voor lokale ontwikkel
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Installeer **Node.js 22+**, **Git** en **MySQL 8.0+** -- zie [Prerequisites](../setup/prerequisites)
+- Installeer **Node.js 22+**, **Git** en **MySQL 8.0+** -- zie [Prerequisites](../setup/prerequisites.md)
 - Maak een MySQL-gebruiker met privileges voor databaseaanmaak
-- Lees de [Environment Variables](../setup/environment-variables)-referentie voor API-configuratie
+- Lees de [Environment Variables](../setup/environment-variables.md)-referentie voor API-configuratie
 
 </div>
 
@@ -111,6 +112,6 @@ Dit laat u bibliotheekwijzigingen tegen de API testen zonder naar npm te publice
 
 ## Gerelateerde Artikelen
 
-- **[Database](./database)** -- De database-per-module-architectuur begrijpen
-- **[Module Structure](./module-structure)** -- Hoe controllers, repositories en modellen zijn georganiseerd
-- **[Shared Libraries](../shared-libraries/)** -- Werken met `@churchapps/helpers` en `@churchapps/apihelper`
+- **[Database](./database.md)** -- De database-per-module-architectuur begrijpen
+- **[Module Structure](./module-structure.md)** -- Hoe controllers, repositories en modellen zijn georganiseerd
+- **[Shared Libraries](../shared-libraries/index.md)** -- Werken met `@churchapps/helpers` en `@churchapps/apihelper`

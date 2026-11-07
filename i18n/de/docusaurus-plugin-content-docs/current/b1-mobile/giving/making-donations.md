@@ -1,5 +1,7 @@
 ---
-title: "Eine Spende geben"
+title: "Eine Spende in B1 Mobile geben"
+sidebar_label: "Eine Spende geben"
+description: "Spenden Sie über die Registerkarte Spenden in B1 Mobile: Fonds wählen, Betrag eingeben, mit Stripe zahlen und frühere Gaben schnell wiederholen."
 ---
 
 # Eine Spende geben
@@ -13,8 +15,8 @@ title: "Eine Spende geben"
 <div class="prereqs">
 <h4>Bevor du beginnst</h4>
 
-- [B1 Mobile installieren](../getting-started/installing) und dich [in deinem Konto anmelden](../getting-started/logging-in)
-- Halte eine Kredit- oder Debitkarte bereit oder [speichere vorab eine Zahlungsmethode](./managing-payments)
+- [B1 Mobile installieren](../getting-started/installing.md) und dich [in deinem Konto anmelden](../getting-started/logging-in.md)
+- Halte eine Kredit- oder Debitkarte bereit oder [speichere vorab eine Zahlungsmethode](./managing-payments.md)
 
 </div>
 
@@ -42,10 +44,10 @@ Alle Zahlungen werden über **Stripe** abgewickelt, eine vertrauenswürdige und 
 Wenn du denselben Betrag wie bei deiner letzten Spende geben möchtest, musst du nicht den gesamten Spendenablauf durchlaufen. Im Tab **Übersicht** werden deine letzte Gabe sowie eine Schaltfläche **Wiederholen** angezeigt. Tippe darauf, um dieselbe Spende schnell erneut abzusenden.
 
 :::tip
-Wenn du regelmäßig geben möchtest, speichere deine Zahlungsmethode im Tab **Verwalten**, damit du beim nächsten Mal noch schneller spenden kannst. Details findest du unter [Zahlungsmethoden verwalten](./managing-payments).
+Wenn du regelmäßig geben möchtest, speichere deine Zahlungsmethode im Tab **Verwalten**, damit du beim nächsten Mal noch schneller spenden kannst. Details findest du unter [Zahlungsmethoden verwalten](./managing-payments.md).
 :::
 
 ## Verwandte Artikel
 
-- [Zahlungsmethoden verwalten](./managing-payments) -- Eine Karte für schnelleres künftiges Geben speichern
-- [Spendenverlauf](./donation-history) -- Deine Übersicht über Gaben und frühere Spenden ansehen
+- [Zahlungsmethoden verwalten](./managing-payments.md) -- Eine Karte für schnelleres künftiges Geben speichern
+- [Spendenverlauf](./donation-history.md) -- Deine Übersicht über Gaben und frühere Spenden ansehen

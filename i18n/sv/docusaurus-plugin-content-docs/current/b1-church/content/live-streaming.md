@@ -1,5 +1,7 @@
 ---
-title: "Livesändningar"
+title: "Titta på livesändningar på B1.church"
+sidebar_label: "Livesändningar"
+description: "Titta på din kyrkas livegudstjänster på sidan Stream i B1.church och delta i chatten vid sidan av sändningen, utan att behöva logga in."
 ---
 
 # Livesändningar

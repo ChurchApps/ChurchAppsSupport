@@ -1,5 +1,7 @@
 ---
-title: "Câu Kinh Thánh trong ngày"
+title: "Câu Kinh Thánh mỗi ngày trên trang web và cổng B1.church"
+sidebar_label: "Câu Kinh Thánh trong ngày"
+description: "Xem hình ảnh câu Kinh Thánh mỗi ngày và các câu trước đó, rồi chia sẻ hoặc tải về từ trang web hoặc cổng thành viên B1.church trên mọi kích thước màn hình."
 ---
 
 # Câu Kinh Thánh trong ngày

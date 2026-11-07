@@ -1,5 +1,6 @@
 ---
 title: "Triển khai"
+description: "Tìm nơi triển khai từng dự án ChurchApps, từ API AWS Lambda và web S3 đến bản build di động Expo và B1 Admin tự host trên Railway hoặc Docker."
 ---
 
 # Triển khai
@@ -14,12 +15,12 @@ ChurchApps sử dụng các chiến lược triển khai khác nhau tùy theo lo
 
 | Loại dự án | Đích triển khai | Công cụ |
 |-------------|-------------------|---------|
-| [API](./apis) | AWS Lambda | Serverless Framework v3 (runtime Node.js 24.x) |
-| [Ứng dụng web](./web-apps) | S3 + CloudFront | Build tĩnh, đồng bộ S3, làm mới bộ nhớ đệm CloudFront |
-| [Ứng dụng di động](./mobile) | Cửa hàng ứng dụng | Expo EAS Build + OTA Updates |
-| [Tự lưu trữ (Railway)](./railway-template) | Railway | Mẫu một cú nhấp: MySQL + Api + B1Admin + B1App |
-| [Tự lưu trữ (Docker)](./docker) | Bất kỳ máy chủ Docker nào | Trình cài đặt một dòng; image GHCR dựng sẵn + Caddy, `./deploy/b1` để nâng cấp/sao lưu/khôi phục |
-| [Proxy tên miền tùy chỉnh Caddy](./caddy-proxy) | EC2 Windows (Elastic IP `3.23.251.61`) | Caddyfile tĩnh + dịch vụ WinSW + đồng bộ bản đồ theo lịch |
+| [API](./apis.md) | AWS Lambda | Serverless Framework v3 (runtime Node.js 24.x) |
+| [Ứng dụng web](./web-apps.md) | S3 + CloudFront | Build tĩnh, đồng bộ S3, làm mới bộ nhớ đệm CloudFront |
+| [Ứng dụng di động](./mobile.md) | Cửa hàng ứng dụng | Expo EAS Build + OTA Updates |
+| [Tự lưu trữ (Railway)](./railway-template.md) | Railway | Mẫu một cú nhấp: MySQL + Api + B1Admin + B1App |
+| [Tự lưu trữ (Docker)](./docker.md) | Bất kỳ máy chủ Docker nào | Trình cài đặt một dòng; image GHCR dựng sẵn + Caddy, `./deploy/b1` để nâng cấp/sao lưu/khôi phục |
+| [Proxy tên miền tùy chỉnh Caddy](./caddy-proxy.md) | EC2 Windows (Elastic IP `3.23.251.61`) | Caddyfile tĩnh + dịch vụ WinSW + đồng bộ bản đồ theo lịch |
 | FreeShow | Tải xuống trực tiếp | Electron Builder (tệp nhị phân đa nền tảng) |
 
 ## Môi trường

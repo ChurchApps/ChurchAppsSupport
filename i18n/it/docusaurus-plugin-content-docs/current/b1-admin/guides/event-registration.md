@@ -1,5 +1,6 @@
 ---
 title: "Guida: Configurare la Registrazione agli Eventi"
+description: "Imposta in B1 Admin un modulo di iscrizione per raccogliere i dati dei partecipanti e pagamenti facoltativi, incorporalo nel sito e monitora le iscrizioni."
 ---
 
 # Configurare la Registrazione agli Eventi

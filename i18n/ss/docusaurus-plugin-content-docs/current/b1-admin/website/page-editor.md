@@ -1,5 +1,6 @@
 ---
 title: "Kusebentisa Umhleli Wekhasi"
+description: "Setela umhleleli wekhasi ku-B1 Admin ngekwengeta tigaba netinhlobo, kulungisa kwato, kubukwa ngefoni, nekushicilela imisebenti. Ihlanganisa ne-undo nelandvo lekuhleleka."
 ---
 
 # Kusebentisa Umhleli Wekhasi
@@ -13,8 +14,8 @@ Umhleli wekhasi we-B1 sisakhi se-visual drag-and-drop lesikuvumela kutsi wakle e
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Cedza [Initial Setup](initial-setup) kute uphetse kulungisa liwebhusayithi lakho
-- Dala likhasi lelilodvwa nakukanyeti ku- [Managing Pages](managing-pages)
+- Cedza [Initial Setup](./initial-setup.md) kute uphetse kulungisa liwebhusayithi lakho
+- Dala likhasi lelilodvwa nakukanyeti ku- [Managing Pages](./managing-pages.md)
 - Udzinga imvumo ye- **content.edit** kute ufinyelele kumhleli
 
 </div>
@@ -53,7 +54,7 @@ Likhasi ngalinye lakhiwe ngemazinga lamabili:
    - **Image** -- Layisha nome ukhomba sitfombe
    - **Button** -- Linki lelingachofotwa lelicelela sento (call-to-action)
    - **Card** -- Sitfombe lesinesihloko nesichazo
-   - **Form** -- Faka [ifomu](../forms/creating-forms) ngco kulikhasi
+   - **Form** -- Faka [ifomu](../forms/creating-forms.md) ngco kulikhasi
    - **Calendar** -- Khombisa likhalenda letehlakalo
    - **FAQ** -- Ticenye temibuto nemiphendvulo yesakhiwo se-accordion
    - **Video** -- Faka vidiyo nge-URL
@@ -94,7 +95,7 @@ Chofota noma ngayiphi incenye kute uvule iphaneli yayo yekubukeka. Tinketfo leti
 Ekuhleleni lokutfutfukile, sigaba nencenye ngayinye inesikhala se- **Custom CSS** lapho ungabhala khona imitsetfo yakho ye-CSS. Lena ibotjelwe kuleyo ncenye, ngako ayisoze yatsintsa lokunye kwelikhasi ngaphandle kwekufuna kwakho.
 
 :::tip
-Uma udzinga kusebentisa tinhlobo kulo lonkhe lisayithi lakho -- njenge fonti lekhetsile nome umbala lohlangene -- sebentisa tilungiselelo te- [Appearance](appearance) esikhundleni se-custom CSS emakhasini lodvwa lodvwa.
+Uma udzinga kusebentisa tinhlobo kulo lonkhe lisayithi lakho -- njenge fonti lekhetsile nome umbala lohlangene -- sebentisa tilungiselelo te- [Appearance](./appearance.md) esikhundleni se-custom CSS emakhasini lodvwa lodvwa.
 :::
 
 ## Kubuka Likhasi Lakho
@@ -143,7 +144,7 @@ Sebentisa luhlelo lwe-draft/publish nawufuna kulungisela likhasi -- sibonelo, se
 
 ## Imibhalo Lehlobene
 
-- [Managing Pages](managing-pages) -- Dala emakhasi, misa ema-URL, futsi uphatse i-navigation yelisayithi
-- [Appearance](appearance) -- Misa imibala, imibhalo, kanye ne-branding yelo lonkhe lisayithi
-- [Files](files) -- Layisha titfombe nemibhalo kute utisebentise kumhleli
-- [Creating Forms](../forms/creating-forms) -- Yakha emafomu longawafaka emakhasini
+- [Managing Pages](./managing-pages.md) -- Dala emakhasi, misa ema-URL, futsi uphatse i-navigation yelisayithi
+- [Appearance](./appearance.md) -- Misa imibala, imibhalo, kanye ne-branding yelo lonkhe lisayithi
+- [Files](./files.md) -- Layisha titfombe nemibhalo kute utisebentise kumhleli
+- [Creating Forms](../forms/creating-forms.md) -- Yakha emafomu longawafaka emakhasini

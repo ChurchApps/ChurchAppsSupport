@@ -1,5 +1,6 @@
 ---
 title: "Kelompok Donasi"
+description: "Kelompokkan persembahan ke dalam batch donasi di B1 Admin, lalu tutup, cetak, atau ekspor masing-masing agar totalnya sesuai dengan setoran bank Anda."
 ---
 
 # Kelompok Donasi

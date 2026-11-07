@@ -1,5 +1,6 @@
 ---
 title: "filer"
+description: "Upload, gennemse og administrér billeder og dokumenter til din kirkes hjemmeside i B1 Admin, inklusive tilslutning af ekstern lagring for mere plads."
 ---
 
 # filer
@@ -13,7 +14,7 @@ filer siden er det centrale lager til alle medie og dokumenter brugt på dit kir
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- fuldført [oprindelig opsætning](initial-setup) til dit websted
+- fuldført [oprindelig opsætning](./initial-setup.md) til dit websted
 - optimér billeder før upload til hurtigere side load gange
 - forberede dine filer i almindeligt webformat (PNG, JPG, PDF osv.)
 
@@ -48,7 +49,7 @@ til de bedste resultater, optimér billeder før upload. mindre fil størrelse h
 3. filer du upload her er tilgængelige til bruger på tværs af alle dit websted sider og indhold blokke.
 
 :::info
-når opbygning af sider i [administrering af sider](managing-pages), kan du reference ethvert fil uploadet her ved dets URL. Dette holder alle dit medie organiseret i ét centralt sted.
+når opbygning af sider i [administrering af sider](./managing-pages.md), kan du reference ethvert fil uploadet her ved dets URL. Dette holder alle dit medie organiseret i ét centralt sted.
 :::
 
 ## slettelse af filer
@@ -63,5 +64,5 @@ slettede filer kan ikke gendannes. dobbeltkontrol som fil ikke længere bruges p
 
 ## Næste trin
 
-- [administrering af sider](managing-pages) -- Tilføj dit uploadede filer til websted sider
-- [udseende](appearance) -- tilpas dit websteds visuelt tema
+- [administrering af sider](./managing-pages.md) -- Tilføj dit uploadede filer til websted sider
+- [udseende](./appearance.md) -- tilpas dit websteds visuelt tema

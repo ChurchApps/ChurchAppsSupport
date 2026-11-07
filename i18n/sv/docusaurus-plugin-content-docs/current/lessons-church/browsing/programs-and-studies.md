@@ -1,5 +1,6 @@
 ---
 title: "Program och studier"
+description: "Så hänger Lessons.church-program, studier, lektioner och varianter ihop, så att du hittar rätt läroplan och kan gå mellan relaterade lektioner."
 ---
 
 # Program och studier

@@ -1,5 +1,6 @@
 ---
 title: "Pregledovanje skupin"
+description: "Brskajte po javnih skupinah cerkve na B1.church po kategorijah in na karticah preverite termine srečanj, lokacije in opise ter poiščite primerno skupino."
 ---
 
 # Pregledovanje skupin

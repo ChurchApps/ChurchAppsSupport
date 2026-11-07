@@ -1,5 +1,6 @@
 ---
 title: "Designando Grupos"
+description: "Escolha o grupo ou classe de cada membro da família para cada horário de culto no B1 Checkin, com categorias, orientação por idade e série e a opção None."
 ---
 
 # Designando Grupos
@@ -13,7 +14,7 @@ Quando você toca no botão de um horário de culto na tela de revisão da famí
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Revise sua família](./household-review) na tela de revisão da família
+- [Revise sua família](./household-review.md) na tela de revisão da família
 - Expanda o membro que deseja designar e toque em um botão de horário de culto
 - Certifique-se de que o administrador da sua igreja tenha [criado grupos](../../b1-admin/groups/creating-groups.md) e os vinculado aos horários de culto no B1 Admin
 
@@ -34,7 +35,7 @@ Toque em um cartão de categoria para expandi-lo e ver os grupos individuais den
 2. Revise a lista de grupos dentro daquela categoria. Cada grupo mostra seu nome com um ícone de seleção à direita.
 3. Toque no **nome do grupo** que deseja designar.
 
-O aplicativo salva sua seleção e retorna à [tela de revisão da família](./household-review). O botão do horário de culto para aquele membro agora mostrará o nome do grupo que você selecionou.
+O aplicativo salva sua seleção e retorna à [tela de revisão da família](./household-review.md). O botão do horário de culto para aquele membro agora mostrará o nome do grupo que você selecionou.
 
 ## Orientação por Idade e Série
 
@@ -52,7 +53,7 @@ Use a opção **Nenhum** para adultos que frequentam o culto principal e não pr
 
 Para alterar uma designação de grupo já feita:
 
-1. Volte para a [tela de revisão da família](./household-review).
+1. Volte para a [tela de revisão da família](./household-review.md).
 2. Expanda o membro cujo grupo deseja alterar.
 3. Toque no botão do horário de culto (que agora mostra o nome do grupo atualmente designado).
 4. Selecione um grupo diferente ou toque em **Nenhum**.
@@ -63,8 +64,8 @@ Grupos e categorias são configurados pelo administrador da sua igreja no B1 Adm
 
 ## Próximos Passos
 
-Depois de designar grupos, volte para a [tela de revisão da família](./household-review) para:
+Depois de designar grupos, volte para a [tela de revisão da família](./household-review.md) para:
 
 - Designar grupos a membros adicionais da família
-- [Adicionar um convidado](./adding-guests) se alguém estiver visitando com sua família
-- [Concluir o check-in](./completing-checkin) quando todas as designações estiverem prontas
+- [Adicionar um convidado](./adding-guests.md) se alguém estiver visitando com sua família
+- [Concluir o check-in](./completing-checkin.md) quando todas as designações estiverem prontas

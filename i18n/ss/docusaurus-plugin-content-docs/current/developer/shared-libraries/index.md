@@ -1,5 +1,6 @@
 ---
 title: "Tincwadzi Letabelwanako"
+description: "Madokhumenti emapakheji e-@churchapps npm asetjentiswa yi-B1 Admin, B1.church, nama-API, kanye nekusetfwa kwe-Packages workspace nekukhipha ngama-changesets."
 ---
 
 # Tincwadzi Letabelwanako
@@ -14,9 +15,9 @@ Ikhodi lebelwanako ye-ChurchApps ishicilelwa ku-npm ngaphasi kwesikhala se-`@chu
 
 | Phakheji | Sichasiso | Isetjentiswa Ngubani |
 |---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | Umatimba wesisekelo: tisebenti letingakabambeleli kufreyimu kanye netinhlobo te-TypeScript letabelwanako letakha sivumelwano selwati sendlula ema-app | Onkhe emaphrojekthi |
-| [`@churchapps/apihelper`](./api-helper) | Tisebenti te-Express tase-server: kutivela, ema-base controller, kufinyelela ku-database, kanye nekuhlanganiswa ne-AWS ne-imeyili | Onkhe ema-API |
-| [`@churchapps/apphelper`](./app-helper) | Tincenye te-React letabelwanako kanye netindzawo temisebenti (kungena, kuniketa, ema-form, i-markdown, wewebhusayithi) | Onkhe ema-web app |
+| [`@churchapps/helpers`](./helpers.md) | Umatimba wesisekelo: tisebenti letingakabambeleli kufreyimu kanye netinhlobo te-TypeScript letabelwanako letakha sivumelwano selwati sendlula ema-app | Onkhe emaphrojekthi |
+| [`@churchapps/apihelper`](./api-helper.md) | Tisebenti te-Express tase-server: kutivela, ema-base controller, kufinyelela ku-database, kanye nekuhlanganiswa ne-AWS ne-imeyili | Onkhe ema-API |
+| [`@churchapps/apphelper`](./app-helper.md) | Tincenye te-React letabelwanako kanye netindzawo temisebenti (kungena, kuniketa, ema-form, i-markdown, wewebhusayithi) | Onkhe ema-web app |
 | `@churchapps/content-providers` | Sento lesisembili phezu kwebahlinzeki belwati bangaphandle (Lessons.church, Planning Center, Dropbox, nalabanye) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Emathulusi ekwakha kuhlanganiswa kwe-B1.church: kutfolakala kwe-webhook, i-REST client lenetinhlobo, kanye netisebenti te-OAuth | Bafaki mtimba bangaphandle labakha kuhlanganiswa |
 | `@churchapps/texting` | Sento lesisembili sebahlinzeki bema-SMS (Text In Church, Clearstream, Mutual Ministry) | Api |

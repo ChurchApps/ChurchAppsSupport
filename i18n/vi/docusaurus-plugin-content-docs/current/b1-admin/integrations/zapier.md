@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Kết nối B1 Admin với Zapier để khởi tạo tự động hóa khi có người mới, khoản dâng và thành viên nhóm, và ghi dữ liệu ngược lại B1 mà không cần lập trình."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Chọn một trigger, sau đó thêm một hoặc nhiều bước action. Các v
 ### Đăng quyên góp lên kênh Slack với thẻ thông tin phong phú hơn trình kết nối có sẵn
 
 - **Trigger** — B1: New Donation
-- **Action** — Slack: Send Channel Message. Tự thiết kế bố cục bất kỳ (nút bấm, tệp đính kèm, v.v.) mà [trình kết nối Slack](./slack-discord) có sẵn không làm được.
+- **Action** — Slack: Send Channel Message. Tự thiết kế bố cục bất kỳ (nút bấm, tệp đính kèm, v.v.) mà [trình kết nối Slack](./slack-discord.md) có sẵn không làm được.
 
 ### Thêm thành viên nhóm mới vào Google Group
 
@@ -106,6 +107,6 @@ Trigger là **REST hook**, không phải polling. Zapier không hỏi B1 mỗi 1
 
 ## Xem thêm
 
-- [Make](./make): cùng mô hình, nền tảng khác
-- [Slack & Discord](./slack-discord): thông báo trò chuyện đơn giản hơn, không cần Zapier
+- [Make](./make.md): cùng mô hình, nền tảng khác
+- [Slack & Discord](./slack-discord.md): thông báo trò chuyện đơn giản hơn, không cần Zapier
 - [Webhooks (tài liệu tham khảo cho nhà phát triển)](/docs/developer/api/webhooks)

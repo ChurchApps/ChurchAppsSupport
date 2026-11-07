@@ -1,5 +1,7 @@
 ---
-title: "Verset du jour"
+title: "Verset du jour dans B1 Mobile"
+sidebar_label: "Verset du jour"
+description: "Ouvrez le Verset du jour dans B1 Mobile pour voir le verset biblique du jour en image adaptée à votre téléphone ou tablette, mise à jour chaque jour."
 ---
 
 # Verset du jour
@@ -13,7 +15,7 @@ L'écran Verset du jour affiche un verset biblique quotidien sous forme d'image 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Installez B1 Mobile](../getting-started/installing) et [connectez-vous](../getting-started/logging-in) à votre compte
+- [Installez B1 Mobile](../getting-started/installing.md) et [connectez-vous](../getting-started/logging-in.md) à votre compte
 - Votre église doit avoir activé la fonctionnalité Verset du jour
 
 </div>
@@ -46,5 +48,5 @@ Le Verset du jour est une fonctionnalité de contenu intégrée à B1 Mobile. Si
 
 ## Articles connexes
 
-- [Bible](./bible) -- Lisez des passages complets des Écritures dans le lecteur intégré
-- [Prédications](./sermons) -- Regardez les prédications enregistrées de votre église
+- [Bible](./bible.md) -- Lisez des passages complets des Écritures dans le lecteur intégré
+- [Prédications](./sermons.md) -- Regardez les prédications enregistrées de votre église

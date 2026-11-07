@@ -1,5 +1,7 @@
 ---
-title: "Nhóm"
+title: "Màn hình Nhóm trong B1 Mobile"
+sidebar_label: "Nhóm"
+description: "Tìm các nhóm bạn tham gia trên màn hình Nhóm của B1 Mobile, gồm nhóm bạn truy cập nhiều nhất ở trên cùng và các nhóm còn lại của nhà thờ bên dưới."
 ---
 
 # Nhóm
@@ -30,10 +32,10 @@ Dưới đây là những việc bạn có thể làm từ màn hình Nhóm:
 - **Luôn kết nối** -- Xem những gì các thành viên trong nhóm đang chia sẻ, theo dõi các cuộc trò chuyện và tương tác với nội dung của nhóm.
 
 :::tip
-Màn hình Nhóm thích ứng theo cách bạn sử dụng, giống như [bảng điều khiển](../dashboard/). Các nhóm bạn truy cập thường xuyên nhất sẽ được đưa lên đầu để bạn truy cập nhanh.
+Màn hình Nhóm thích ứng theo cách bạn sử dụng, giống như [bảng điều khiển](../dashboard/index.md). Các nhóm bạn truy cập thường xuyên nhất sẽ được đưa lên đầu để bạn truy cập nhanh.
 :::
 
 ## Các Bước Tiếp Theo
 
-- [Chi Tiết Nhóm](./group-details) -- Xem những gì có trên trang chi tiết của một nhóm
-- [Dòng Thời Gian Nhóm](./group-timeline) -- Tìm hiểu về nguồn hoạt động tổng hợp của các nhóm của bạn
+- [Chi Tiết Nhóm](./group-details.md) -- Xem những gì có trên trang chi tiết của một nhóm
+- [Dòng Thời Gian Nhóm](./group-timeline.md) -- Tìm hiểu về nguồn hoạt động tổng hợp của các nhóm của bạn

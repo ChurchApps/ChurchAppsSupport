@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Synchroniseer B1 Admin-personen en groeps- of lijstlidmaatschap als tags naar een Mailchimp-doelgroep, met installatie, eerste import en probleemoplossing."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Door de eerste lading via de importeur van Mailchimp te doen, houd je controle o
 
 ## Andere recepten (Zapier / Make)
 
-Alles wat verder gaat dan synchronisatie van doelgroepen, is nog steeds mogelijk via [Zapier](../zapier) of [Make](../make). Dat geldt bijvoorbeeld voor het taggen van givers bij `donation.created`, een omgekeerde richting van Mailchimp naar B1, of synchronisatie met een ander e-mailplatform (Constant Contact, Brevo, enz.). Deze diensten reageren op dezelfde webhook-gebeurtenissen:
+Alles wat verder gaat dan synchronisatie van doelgroepen, is nog steeds mogelijk via [Zapier](../zapier.md) of [Make](../make.md). Dat geldt bijvoorbeeld voor het taggen van givers bij `donation.created`, een omgekeerde richting van Mailchimp naar B1, of synchronisatie met een ander e-mailplatform (Constant Contact, Brevo, enz.). Deze diensten reageren op dezelfde webhook-gebeurtenissen:
 
 - **Givers taggen:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Tweerichtingsverkeer:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ Als je persoons- en groepssynchronisatie eerder via Zapier hebt ingesteld, zet d
 
 - [Webhooks (ontwikkelaarsreferentie)](/docs/developer/api/webhooks): de engine eronder, de gebeurtenissencatalogus en de semantiek van levering en herhaling
 - [Opgeslagen lijsten](/docs/b1-admin/people/lists): doelgroepen op basis van regels die natuurlijk aansluiten op Mailchimp-tags
-- [Zapier (overzicht)](../zapier): voor recepten die verder gaan dan synchronisatie van doelgroepen
+- [Zapier (overzicht)](../zapier.md): voor recepten die verder gaan dan synchronisatie van doelgroepen

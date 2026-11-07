@@ -1,5 +1,7 @@
 ---
-title: "Vers van de Dag"
+title: "Vers van de dag op de B1.church-website en portaal"
+sidebar_label: "Vers van de Dag"
+description: "Bekijk de Bijbelvers-afbeelding van elke dag en eerdere verzen, en deel of download ze op je B1.church-website of ledenportaal op elk schermformaat."
 ---
 
 # Vers van de Dag

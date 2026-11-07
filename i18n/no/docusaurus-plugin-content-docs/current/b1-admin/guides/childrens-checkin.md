@@ -1,5 +1,6 @@
 ---
 title: "Veiledning: Sett opp innsjekking for barneundervisning"
+description: "Sett opp barneinnsjekk i B1 Admin: koble familier, lag aldersbaserte grupper, konfigurer gudstjenester og skriv ut navnelapper til B1 Checkin-kiosken."
 ---
 
 # Sett opp innsjekking for barneundervisning

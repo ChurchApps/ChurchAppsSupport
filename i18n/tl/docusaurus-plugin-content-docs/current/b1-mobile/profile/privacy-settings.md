@@ -1,5 +1,6 @@
 ---
 title: "Mga Setting ng Privacy"
+description: "Kontrolin kung anong detalye ng profile, gaya ng telepono at email, ang makikita ng iba sa B1 Mobile directory, at tingnan ang nakabinbing pagbabago."
 ---
 
 # Mga Setting ng Privacy
@@ -13,7 +14,7 @@ Ang tab na **Visibility** sa iyong Profile screen ay nagbibigay-daan sa iyong ko
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [I-install ang B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
 
 </div>
 
@@ -52,8 +53,8 @@ Ang tab na **Account** ay nagbibigay ng access sa iyong mga setting ng seguridad
 
 | Tab | Layunin |
 |---|---|
-| **Profile** | [I-edit ang iyong personal na impormasyon](./editing-profile) at larawan |
-| **Household** | [Tingnan ang iyong mga miyembro ng pamilya](./household) |
+| **Profile** | [I-edit ang iyong personal na impormasyon](./editing-profile.md) at larawan |
+| **Household** | [Tingnan ang iyong mga miyembro ng pamilya](./household.md) |
 | **Visibility** | Kontrolin kung ano ang nakikita ng iba sa direktoryo |
 | **Pending** | Suriin ang mga pagbabago sa profile na naghihintay ng pag-apruba |
 | **Account** | Pamahalaan ang mga setting ng seguridad |
@@ -62,6 +63,6 @@ Ang mga tab na ito ay nagtutulungan para bigyan ka ng buong kontrol sa iyong per
 
 ## Mga Kaugnay na Artikulo
 
-- [Pag-edit ng Iyong Profile](./editing-profile) -- I-update ang iyong personal na impormasyon
-- [Sambahayan](./household) -- Tingnan at pamahalaan ang iyong mga miyembro ng pamilya
+- [Pag-edit ng Iyong Profile](./editing-profile.md) -- I-update ang iyong personal na impormasyon
+- [Sambahayan](./household.md) -- Tingnan at pamahalaan ang iyong mga miyembro ng pamilya
 - [Direktoryo ng mga Miyembro](../community/member-directory.md) -- Tingnan kung paano lumalabas ang iyong profile sa iba

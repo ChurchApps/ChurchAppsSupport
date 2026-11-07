@@ -1,5 +1,6 @@
 ---
 title: "Veiledning: Generer årsavslutningsdonasjonsrapporter"
+description: "Avslutt årets gaveregistreringer i B1 Admin, kontroller skatteinnstillinger for fond, og lag skattefradragsberettigede giverbekreftelser for alle givere."
 ---
 
 # Generer årsavslutningsdonasjonsrapporter

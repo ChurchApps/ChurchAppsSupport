@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Sinhronizirajte osebe in članstvo v skupinah iz B1 Admin z občinstvom Mailchimp kot oznakami, z navodili za nastavitev in odpravljanje težav."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Začetno nalaganje prek uvoznika Mailchimpa vam ohrani nadzor nad vprašanjem pr
 
 ## Drugi recepti (Zapier / Make)
 
-Vse, kar presega sinhronizacijo občinstva — označevanje darovalcev ob `donation.created`, obratna smer Mailchimp → B1 ali sinhronizacija z drugo platformo za e-pošto (Constant Contact, Brevo itd.) — je še vedno na voljo prek [Zapier](../zapier) ali [Make](../make), ki se sprožita ob istih dogodkih webhooka:
+Vse, kar presega sinhronizacijo občinstva — označevanje darovalcev ob `donation.created`, obratna smer Mailchimp → B1 ali sinhronizacija z drugo platformo za e-pošto (Constant Contact, Brevo itd.) — je še vedno na voljo prek [Zapier](../zapier.md) ali [Make](../make.md), ki se sprožita ob istih dogodkih webhooka:
 
 - **Označevanje darovalcev:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Obojesmerno:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ Vse, kar presega sinhronizacijo občinstva — označevanje darovalcev ob `donat
 
 - [Webhooki (razvijalska referenca)](/docs/developer/api/webhooks) — mehanizem pod tem, katalog dogodkov, semantika dostav in ponovitev
 - [Shranjeni seznami](/docs/b1-admin/people/lists) — občinstva na podlagi pravil, ki se naravno preslikajo v oznake Mailchimpa
-- [Zapier (pregled)](../zapier) — za recepte, ki presegajo sinhronizacijo občinstva
+- [Zapier (pregled)](../zapier.md) — za recepte, ki presegajo sinhronizacijo občinstva

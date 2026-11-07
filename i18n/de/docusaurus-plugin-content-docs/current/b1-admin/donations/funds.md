@@ -1,5 +1,6 @@
 ---
 title: "Fonds verwalten"
+description: "Erstellen und ordnen Sie in B1 Admin Spendenfonds, legen Sie den Status der Steuerabzugsfähigkeit und die Sichtbarkeit für Spender fest und prüfen Sie Fondssummen und Spendenverläufe für die Berichterstattung."
 ---
 
 # Fonds verwalten

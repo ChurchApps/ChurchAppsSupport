@@ -1,5 +1,6 @@
 ---
 title: "Aukų santrauka"
+description: "Paleiskite B1 Admin aukų suvestinės ataskaitą: bendra aukų suma, unikalių aukotojų skaičius ir sumos pagal fondą pasirinktam laikotarpiui."
 ---
 
 # Aukų santrauka

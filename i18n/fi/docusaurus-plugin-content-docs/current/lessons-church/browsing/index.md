@@ -1,5 +1,6 @@
 ---
 title: "Sisällön selaaminen"
+description: "Selaa Lessons.churchin ilmaista opetussuunnitelmakirjastoa ilman tiliä: etusivun rakenne, ohjelmittain selaaminen, haku ja ulkoiset tarjoajat."
 ---
 
 # Sisällön selaaminen

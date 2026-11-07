@@ -1,5 +1,6 @@
 ---
 title: "Kuvunywa Kwemakhalenda"
+description: "Hlola tikhokelo letilindzele tekubhukha emakamelo netinsita ku-B1 Admin, bheka kungavumelani, uyavuma noma wenqabe, ushicilele umcimbi uma kufanele."
 ---
 
 # Kuvunywa Kwemakhalenda
@@ -13,7 +14,7 @@ Likhasi Lekuvunywa (Approvals) yindzawo lapho baphatsi babuyeketa khona futsi be
 <div class="prereqs">
 <h4>Ngembikwe Kucala</h4>
 
-- Hlela emakamelo nome tinsita nge-**Approval Group** ku-[Emakamelo Netinsita](rooms-resources)
+- Hlela emakamelo nome tinsita nge-**Approval Group** ku-[Emakamelo Netinsita](./rooms-resources.md)
 - Udzinga imvumo ye-**Calendars Admin** nome imvumo ye-**content.edit**
 
 </div>
@@ -43,10 +44,10 @@ Chofota sibonakaliso se-**✓** (vumela) nome se-**✗** (nqaba) kunoma yisiphi 
 Nangabe inchubo yakho yekhalenda idzinga imvumo yemicimbi ngembikwe iyaboniswa esiveni, imicimbi lesalindzile ivela ku-**Pending Events** phaneli. Vumela umcimbi kuze ushicilelwe ekhalendeni, nome uwunqaba kuze wati lomuntfu lowufakile kutsi kudzingeka kwentiwe lushintjo.
 
 :::tip
-Hlela Licembu Lekuvumela likamelo ku-[Emakamelo Netinsita](rooms-resources) kudzingekisela imvumo yalelokamelo. Emacembu lanelilungelo angase acele likamelo nawadala imicimbi, futsi letetisandzo tigelete kulelikhasi.
+Hlela Licembu Lekuvumela likamelo ku-[Emakamelo Netinsita](./rooms-resources.md) kudzingekisela imvumo yalelokamelo. Emacembu lanelilungelo angase acele likamelo nawadala imicimbi, futsi letetisandzo tigelete kulelikhasi.
 :::
 
 ## Tihloko Letihlobene
 
-- [Emakamelo, Tinsita Nekuhlelwa Kwesikhatsi](rooms-resources) — hlela emakamelo netinsita letingabhukhwa
-- [Dala Emakhalenda](creating-calendars) — phatsa emakhalenda nemicimbi
+- [Emakamelo, Tinsita Nekuhlelwa Kwesikhatsi](./rooms-resources.md) — hlela emakamelo netinsita letingabhukhwa
+- [Dala Emakhalenda](./creating-calendars.md) — phatsa emakhalenda nemicimbi

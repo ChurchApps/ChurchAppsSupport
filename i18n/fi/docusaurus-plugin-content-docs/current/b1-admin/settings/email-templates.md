@@ -1,5 +1,6 @@
 ---
 title: "Sähköpostipohjat"
+description: "Määritä B1 Adminissa sähköposti- ja tekstiviestipohjat yhdistelykentillä, tekstiviestivaihtoehdoilla ja esikatselulla massaviestintään."
 ---
 
 # Sähköpostipohjat

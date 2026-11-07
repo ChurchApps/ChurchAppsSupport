@@ -1,5 +1,6 @@
 ---
 title: "A portál áttekintése"
+description: "A Lessons.church portál áttekintése: osztálytermek, ütemezett leckék, feed-linkek beállítása, valamint Külső szolgáltatók és adminisztrációs eszközök."
 ---
 
 # A portál áttekintése

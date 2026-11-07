@@ -1,5 +1,7 @@
 ---
-title: "Začínáme"
+title: "Začínáme s členským portálem B1.church"
+sidebar_label: "Začínáme"
+description: "Najděte web vaší církve na B1.church, vytvořte si členský účet a zjistěte, co portál nabízí: od skupin a darů po odbavení a plány."
 ---
 
 # Začínáme s B1.church

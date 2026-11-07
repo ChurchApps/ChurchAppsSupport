@@ -1,5 +1,6 @@
 ---
 title: "FreePlay-innehållsleverantör"
+description: "Det en innehållsleverantör behöver tillhandahålla för att koppla ett lektionsbibliotek till FreePlay: logotyp, inloggning, katalog, spellistor och mediaformat."
 ---
 
 # FreePlay-innehållsleverantör

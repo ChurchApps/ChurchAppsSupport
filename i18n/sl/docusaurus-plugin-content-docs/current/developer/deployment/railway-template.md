@@ -1,5 +1,6 @@
 ---
 title: "Samostojno gostovanje na Railwayu"
+description: "Namestite zasebno instanco ChurchApps na Railway v približno 15 minutah ter nastavite e-pošto, lastne domene, usmerjanje, darovanje in datoteke za B1 Admin."
 ---
 
 # Samostojno gostovanje na Railwayu
@@ -195,7 +196,7 @@ Te omogočajo določene funkcije in jih je mogoče dodati kasneje prek nadzorne 
 | `VIMEO_TOKEN` | Podpora za pridige na Vimeu |
 | `API_BIBLE_KEY` | Iskanje bibličnih verzov v lekcijah in vsebinah |
 | `YOUVERSION_API_KEY` | Integracija z YouVersion Bible |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Potisna obvestila v brskalniku ([ustvarite par ključev VAPID](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Potisna obvestila v brskalniku ([ustvarite par ključev VAPID](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Neobvezna sinhronizacija s CRM za nove registracije |
 
 ## Posodabljanje
@@ -234,9 +235,9 @@ Stroški se linearno povečujejo s prometom, nalaganjem fotografij in velikostjo
 
 ## Sorodni članki
 
-- **[Samostojno gostovanje z Dockerjem](./docker)** — Isti sklad na lastni strojni opremi ali VPS
-- **[Začetna nastavitev](../../getting-started/initial-setup)** — Prvi koraki po ustvarjenju cerkve
-- **[Začetna nastavitev spletnega mesta](../../b1-admin/website/initial-setup)** — Konfiguracija javnega spletnega mesta vaše cerkve
-- **[Nastavitve darovanj](../../b1-admin/donations/online-giving-setup)** — Povežite Stripe ali PayPal
-- **[Lokalna nastavitev API](../api/local-setup)** — Zagon sklada lokalno za razvoj
-- **[Namestitev API (AWS)](./apis)** — Kako je uradni ChurchApps SaaS nameščen
+- **[Samostojno gostovanje z Dockerjem](./docker.md)** — Isti sklad na lastni strojni opremi ali VPS
+- **[Začetna nastavitev](../../getting-started/initial-setup.md)** — Prvi koraki po ustvarjenju cerkve
+- **[Začetna nastavitev spletnega mesta](../../b1-admin/website/initial-setup.md)** — Konfiguracija javnega spletnega mesta vaše cerkve
+- **[Nastavitve darovanj](../../b1-admin/donations/online-giving-setup.md)** — Povežite Stripe ali PayPal
+- **[Lokalna nastavitev API](../api/local-setup.md)** — Zagon sklada lokalno za razvoj
+- **[Namestitev API (AWS)](./apis.md)** — Kako je uradni ChurchApps SaaS nameščen

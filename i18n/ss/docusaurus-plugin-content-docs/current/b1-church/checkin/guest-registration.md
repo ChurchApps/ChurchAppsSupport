@@ -1,5 +1,6 @@
 ---
 title: "Kubhalisa Tivakashi"
+description: "Bhalisa wena nemndeni wakho njengevakashi lekucala ngefomu le-QR ku-B1 Checkin kutsi tisebenti tikukwazi kukungenisa nakufika."
 ---
 
 # Kubhalisa Tivakashi
@@ -42,7 +43,7 @@ Kubhalisa kwakho kudala imibhalo emshinini welikhaya welibandla:
 
 - **Likhaya** (household) lakhiwa kusetjentiswa sibongo salomuntfu lotsite kucala.
 - **Imibhalo yemuntfu** yakhiwa yalelilunga ngalinye lemndeni ngesimo se-"Sivakashi" kubulunga.
-- Volontiya kumbe umphatsi welibandla angabe angenisa (check in) umndeni wakho asebentisa i-kiosk ye-[B1 Checkin](../../b1-checkin/check-in/looking-up-members).
+- Volontiya kumbe umphatsi welibandla angabe angenisa (check in) umndeni wakho asebentisa i-kiosk ye-[B1 Checkin](../../b1-checkin/check-in/looking-up-members.md).
 
 :::info
 Nangabe i-imeyili yakho ifana neminye lesivele ikhona emshinini welibandla, luhlelo luyaxhumana naleyo mibhalo esikhundleni sekwakha lokuphindziwe. Loku kugcina imininingwane yelibandla ihlanzekile.
@@ -54,5 +55,5 @@ Kunikeza i-imeyili yakho kusita libandla kutsi likulandzele ngemuva kwekuvakashe
 
 ## Tihloko Letihlobene
 
-- [Kungena Wedvwa](./self-checkin) -- Zingenise ngemuva kwekubhalisa
-- [Kwengeta Tivakashi (Kiosk)](../../b1-checkin/check-in/adding-guests) -- Kutsi bavolontiya bangeta njani tivakashi e-kiosk
+- [Kungena Wedvwa](./self-checkin.md) -- Zingenise ngemuva kwekubhalisa
+- [Kwengeta Tivakashi (Kiosk)](../../b1-checkin/check-in/adding-guests.md) -- Kutsi bavolontiya bangeta njani tivakashi e-kiosk

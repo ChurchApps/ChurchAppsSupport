@@ -1,5 +1,6 @@
 ---
 title: "Lahjoitukset"
+description: "Kirjaa, järjestä ja raportoi lahjoituksia B1 Adminissa: erät, rahastot, vuosittaiset todistukset sekä Stripe- ja PayPal-verkkolahjoitukset."
 ---
 
 # Lahjoitukset

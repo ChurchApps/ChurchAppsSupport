@@ -1,5 +1,6 @@
 ---
 title: "Bağış Raporları"
+description: "B1 Admin'de Donations Summary panosu, Lapsed Givers görünümü ve CSV dışa aktarımlarıyla bağış toplamlarını, bağışçı kayıplarını ve toplu kayıt ayrıntılarını inceleyin."
 ---
 
 # Bağış Raporları

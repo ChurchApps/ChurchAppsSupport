@@ -1,5 +1,6 @@
 ---
 title: "Planoversikt"
+description: "Se frivilliges oppgaver på tvers av mange datoer i B1 Admin, finn ubesatte posisjoner, og fyll inn eller send e-post til teamet fra ett rutenett."
 ---
 
 # Planoversikt

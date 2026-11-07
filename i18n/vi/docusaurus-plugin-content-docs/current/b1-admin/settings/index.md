@@ -1,5 +1,6 @@
 ---
 title: "Cài đặt"
+description: "Tìm đường trong phần Cài đặt của B1 Admin: thông tin hội thánh, thương hiệu, cơ sở, trường tùy chỉnh, vai trò người dùng và điều hướng ứng dụng B1.church."
 ---
 
 # Cài đặt

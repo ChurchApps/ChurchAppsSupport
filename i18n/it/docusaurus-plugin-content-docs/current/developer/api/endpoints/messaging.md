@@ -1,5 +1,6 @@
 ---
 title: "Endpoint Messaging"
+description: "Riferimento per gli endpoint dell'API di messaggistica di ChurchApps: conversazioni, regole di accesso alle note, SMS, modelli email, notifiche e dispositivi."
 ---
 
 # Endpoint Messaging
@@ -190,7 +191,7 @@ Percorso base: `/messaging/notificationpreferences`
 
 Percorso base: `/messaging/connections`
 
-Gestisce le connessioni WebSocket/in tempo reale per la chat, le conversazioni di gruppo, i messaggi privati e le dirette in streaming. Per il protocollo completo, vedi [Architettura in tempo reale](../../realtime).
+Gestisce le connessioni WebSocket/in tempo reale per la chat, le conversazioni di gruppo, i messaggi privati e le dirette in streaming. Per il protocollo completo, vedi [Architettura in tempo reale](../../realtime.md).
 
 | Metodo | Percorso | Autenticazione | Permesso | Descrizione |
 |--------|----------|----------------|----------|-------------|
@@ -367,9 +368,9 @@ Tiene traccia dello stato di consegna dei messaggi inviati (SMS, notifiche push,
 
 ## Pagine correlate
 
-- [Architettura in tempo reale](../../realtime) -- Protocollo WebSocket, sottoscrizione alle stanze e framework di consegna unificato
-- [Notifiche push web](../../web-push) -- Registrazione e consegna delle notifiche push nel browser
-- [Endpoint Membership](./membership) -- Persone, gruppi, ruoli e identità di base
-- [Endpoint delle presenze](./attendance) -- Tracciamento di servizi e visite
-- [Autenticazione e permessi](./authentication) -- Flusso di accesso, JWT, OAuth, modello dei permessi
-- [Struttura del modulo](../module-structure) -- Schemi di organizzazione del codice
+- [Architettura in tempo reale](../../realtime.md) -- Protocollo WebSocket, sottoscrizione alle stanze e framework di consegna unificato
+- [Notifiche push web](../../web-push.md) -- Registrazione e consegna delle notifiche push nel browser
+- [Endpoint Membership](./membership.md) -- Persone, gruppi, ruoli e identità di base
+- [Endpoint delle presenze](./attendance.md) -- Tracciamento di servizi e visite
+- [Autenticazione e permessi](./authentication.md) -- Flusso di accesso, JWT, OAuth, modello dei permessi
+- [Struttura del modulo](../module-structure.md) -- Schemi di organizzazione del codice

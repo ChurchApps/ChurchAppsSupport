@@ -1,5 +1,6 @@
 ---
 title: "Upravljanje skladi"
+description: "Ustvarite in uredite sklade za darove v B1 Admin, nastavite davčno odbitnost in vidnost za darovalce ter pregledujte vsote skladov in zgodovino darov."
 ---
 
 # Upravljanje skladi

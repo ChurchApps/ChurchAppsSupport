@@ -1,5 +1,7 @@
 ---
-title: "Direktoryo ng mga Miyembro"
+title: "Member Directory sa B1 Mobile App"
+sidebar_label: "Direktoryo ng mga Miyembro"
+description: "Hanapin ang mga tao sa simbahan gamit ang B1 Mobile member directory: mag-browse ayon sa alpabeto, maghanap ayon sa pangalan, at buksan ang profile."
 ---
 
 # Direktoryo ng mga Miyembro
@@ -13,7 +15,7 @@ Ang direktoryo ng mga miyembro sa B1 Mobile ay nagbibigay-daan sa iyong mag-brow
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [I-install ang B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
 
 </div>
 
@@ -51,5 +53,5 @@ Ang impormasyong nakikita sa bawat profile ay depende sa mga privacy at director
 
 ## Mga Kaugnay na Artikulo
 
-- [Pagmemensahe](./messaging) -- Magpadala ng pribadong mensahe sa isang taong nahanap mo sa direktoryo
+- [Pagmemensahe](./messaging.md) -- Magpadala ng pribadong mensahe sa isang taong nahanap mo sa direktoryo
 - [Mga Setting ng Privacy](../profile/privacy-settings.md) -- Kontrolin kung ano ang makikita ng iba tungkol sa iyo sa direktoryo

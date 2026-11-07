@@ -1,5 +1,6 @@
 ---
 title: "Guida: Gestire i piccoli gruppi"
+description: "Imposta piccoli gruppi, studi biblici e team di ministero in B1 Admin, poi pubblica sul sito B1 un calendario e una sezione gruppi per tutta la chiesa."
 ---
 
 # Gestire i piccoli gruppi
@@ -78,7 +79,7 @@ I membri possono scoprire, unirsi e partecipare ai gruppi dal loro telefono o co
 
 1. I membri navigano e si uniscono ai gruppi su [B1.church](../../b1-church/groups/browsing-groups.md)
 2. I membri del gruppo possono visualizzare dettagli, calendari e pubblicare nelle [conversazioni](../../b1-church/groups/conversations.md)
-3. Tutte le funzionalità dei gruppi sono disponibili anche sull'[app B1 Mobile](../../b1-mobile/groups/)
+3. Tutte le funzionalità dei gruppi sono disponibili anche sull'[app B1 Mobile](../../b1-mobile/groups/index.md)
 
 :::info
 I membri vedono i loro gruppi, gli eventi imminenti e le conversazioni del gruppo sia su web che su mobile — tutto resta sincronizzato.
@@ -97,4 +98,4 @@ I tuoi piccoli gruppi sono configurati e collegati. I membri possono scoprire gr
 - [Calendario curato](../calendars/curated-calendar.md) — costruisci un calendario unificato della chiesa
 - [Navigare gruppi (Web)](../../b1-church/groups/browsing-groups.md) — come i membri trovano i gruppi
 - [Conversazioni di gruppo (Web)](../../b1-church/groups/conversations.md) — discussioni di gruppo
-- [Gruppi (Mobile)](../../b1-mobile/groups/) — gruppi sull'app mobile
+- [Gruppi (Mobile)](../../b1-mobile/groups/index.md) — gruppi sull'app mobile

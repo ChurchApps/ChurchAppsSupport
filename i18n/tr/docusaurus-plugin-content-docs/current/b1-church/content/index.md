@@ -1,5 +1,7 @@
 ---
-title: "İçerik"
+title: "B1.church Üye Portalında İçerik Özellikleri"
+sidebar_label: "İçerik"
+description: "Kilisenizin B1.church üye portalında hangi içerikleri etkinleştirdiğini görün; ardından vaazlara, canlı yayınlara, İncil okumasına ve derslere göz atın."
 ---
 
 # İçerik

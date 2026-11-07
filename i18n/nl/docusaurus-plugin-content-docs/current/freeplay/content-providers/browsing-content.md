@@ -1,5 +1,6 @@
 ---
 title: "Browsing and Downloading Content"
+description: "Blader met je tv-afstandsbediening door de bibliotheek van een gekoppelde provider in FreePlay, en download of stream daarna lessen en video's om af te spelen."
 ---
 
 # Browsing and Downloading Content
@@ -13,7 +14,7 @@ Zodra u met een inhoudsprovider verbonden bent, kunt u de bibliotheek doorblader
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Maak verbinding met ten minste één inhoudsprovider -- zie [Connecting to Providers](./connecting-providers)
+- Maak verbinding met ten minste één inhoudsprovider -- zie [Connecting to Providers](./connecting-providers.md)
 - Zorg ervoor dat uw TV-afstandsbediening gereed is voor navigatie
 
 </div>
@@ -62,7 +63,7 @@ Afspelen werkt op dezelfde manier als lessenafspelen. Gebruik deze besturingsele
 Wanneer u de speler afsluit, keert u terug naar de inhoudsbrowser op het rootniveau van de huidige provider.
 
 :::info
-Voor een volledige referentie van alle spelerbesturingselementen, zie [Playing Lessons](../content-providers/playing-content).
+Voor een volledige referentie van alle spelerbesturingselementen, zie [Playing Lessons](./playing-content.md).
 :::
 
 ## Tussen Providers Schakelen

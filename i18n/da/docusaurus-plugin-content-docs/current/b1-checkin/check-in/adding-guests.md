@@ -1,5 +1,6 @@
 ---
 title: "Tilføjelse af gæster"
+description: "Tilføj et besøgende barn, familiemedlem eller en ven til en husstand på B1 Checkin-kiosken, tildel grupper og fuldfør check-in."
 ---
 
 # Tilføjelse af gæster
@@ -13,8 +14,8 @@ Hvis nogen besøger din familie og skal checke ind med din husstand, kan du tilf
 <div class="prereqs">
 <h4>Før du starter</h4>
 
-- [Slå din familie op](./looking-up-members) og vælg et medlem fra søgeresultaterne
-- Være på [husstands oversigten](./household-review) hvor du kan se dine familiemedlemmer
+- [Slå din familie op](./looking-up-members.md) og vælg et medlem fra søgeresultaterne
+- Være på [husstands oversigten](./household-review.md) hvor du kan se dine familiemedlemmer
 
 </div>
 
@@ -36,8 +37,8 @@ Hvis gæstens navn matcher nogen, som allerede er i systemet, og som ikke er med
 
 Når gæsten vises i din husstands liste, kan du:
 
-- **Udvide deres kort** og [tildele dem en gruppe](./group-assignment), ligesom ethvert andet familiemedlem.
-- **[Checke ind](./completing-checkin)** hele husstanden inklusive gæsten.
+- **Udvide deres kort** og [tildele dem en gruppe](./group-assignment.md), ligesom ethvert andet familiemedlem.
+- **[Checke ind](./completing-checkin.md)** hele husstanden inklusive gæsten.
 
 ## Annullering
 
@@ -49,4 +50,4 @@ Tilføjelse af gæst ved kiosken opretter en person record i din kirkes database
 
 ## Næste trin
 
-Efter tilføjelse af gæster og [tildeling af grupper](./group-assignment) efter behov, er du klar til at [fuldføre checkin](./completing-checkin).
+Efter tilføjelse af gæster og [tildeling af grupper](./group-assignment.md) efter behov, er du klar til at [fuldføre checkin](./completing-checkin.md).

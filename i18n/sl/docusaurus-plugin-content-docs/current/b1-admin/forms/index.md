@@ -1,5 +1,6 @@
 ---
 title: "Obrazci"
+description: "Poiščite, filtrirajte, uredite, arhivirajte in obnovite obrazce v B1 Admin ter določite člane obrazca in pregledujte oddane odgovore."
 ---
 
 # Obrazci

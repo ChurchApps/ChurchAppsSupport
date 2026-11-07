@@ -1,5 +1,6 @@
 ---
 title: "Prerequisites"
+description: "Installeer Node.js, npm, Git en de platformtoolchains voordat je aan ChurchApps-projecten zoals B1 Admin, Lessons.church, FreePlay of de API lokaal werkt."
 ---
 
 # Prerequisites
@@ -13,7 +14,7 @@ De tools die u nodig hebt, zijn afhankelijk van welke projecten u wilt gebruiken
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Lees het [Project Overview](./project-overview) om te bepalen welke projecten u wilt gebruiken
+- Lees het [Project Overview](./project-overview.md) om te bepalen welke projecten u wilt gebruiken
 - Hebt u beheerdersrechten op uw ontwikkelmachine voor softwareinstallatie
 
 </div>
@@ -40,7 +41,7 @@ Als u van plan bent om de API lokaal uit te voeren (in plaats van naar staging t
 |------|---------|-------|
 | **MySQL** | 8.0+ | Elke API-module gebruikt zijn eigen database |
 
-U hebt zes databases nodig voor de kern-API: `membership`, `attendance`, `content`, `giving`, `messaging` en `doing`. De API bevat scripts om het schema te initialiseren -- zie de [API lokale setup](../api/local-setup)-gids.
+U hebt zes databases nodig voor de kern-API: `membership`, `attendance`, `content`, `giving`, `messaging` en `doing`. De API bevat scripts om het schema te initialiseren -- zie de [API lokale setup](../api/local-setup.md)-gids.
 
 ## Mobiele App-Ontwikkeling
 
@@ -110,5 +111,5 @@ mysql --version   # Only needed for local API development
 
 ## Volgende Stappen
 
-- **[Project Overview](./project-overview)** -- Bekijk alle projecten en wat ze doen
-- **[Environment Variables](./environment-variables)** -- Configureer uw `.env`-bestanden
+- **[Project Overview](./project-overview.md)** -- Bekijk alle projecten en wat ze doen
+- **[Environment Variables](./environment-variables.md)** -- Configureer uw `.env`-bestanden

@@ -1,5 +1,6 @@
 ---
 title: "Criando uma Conta"
+description: "Cadastre uma conta ChurchApps no Lessons.church e conecte-a a um perfil de igreja novo ou existente para gerenciar salas e programações."
 ---
 
 # Criando uma Conta

@@ -1,5 +1,6 @@
 ---
 title: "वेब ऐप्स"
+description: "ChurchApps के तीन वेब ऐप्स (B1 Admin, B1.church, Lessons.church) का अवलोकन: उनका साझा React और MUI स्टैक, apphelper पैकेज और बिल्ड टूलिंग।"
 ---
 
 # वेब ऐप्स
@@ -41,7 +42,7 @@ ChurchApps में तीन वेब एप्लिकेशन शाम�
 | `@churchapps/apphelper-website` | वेबसाइट/CMS कंपोनेंट |
 
 :::tip
-इन साझा पैकेजों को स्थानीय रूप से विकसित करने के बारे में जानकारी के लिए, [AppHelper](../shared-libraries/app-helper) दस्तावेज़ देखें।
+इन साझा पैकेजों को स्थानीय रूप से विकसित करने के बारे में जानकारी के लिए, [AppHelper](../shared-libraries/app-helper.md) दस्तावेज़ देखें।
 :::
 
 ## Postinstall स्क्रिप्ट

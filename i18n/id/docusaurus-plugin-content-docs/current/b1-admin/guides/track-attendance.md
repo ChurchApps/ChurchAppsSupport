@@ -1,5 +1,6 @@
 ---
 title: "Panduan: Melacak Kehadiran Gereja"
+description: "Lacak kehadiran gereja di B1 Admin dengan mengatur kampus dan jam layanan, mencatatnya secara manual atau lewat check-in mandiri, serta membaca laporan."
 ---
 
 # Melacak Kehadiran Gereja

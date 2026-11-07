@@ -1,5 +1,7 @@
 ---
-title: "圣经"
+title: "在 B1.church 上阅读圣经"
+sidebar_label: "圣经"
+description: "在 B1.church 圣经阅读器中阅读经文，可控制书卷、章节和译本，并有一个用于每日阅读的圣经页面。"
 ---
 
 # 圣经

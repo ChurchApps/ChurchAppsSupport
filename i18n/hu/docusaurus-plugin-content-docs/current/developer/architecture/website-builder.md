@@ -1,5 +1,6 @@
 ---
 title: "Weboldal-szerkesztő architektúrája"
+description: "A B1 weboldal-építő fejlesztői térképe: tartalomfa, megosztott elemkatalógus, megjelenítési folyamat és AI-alapú oldalgenerálás a B1 Adminban és a B1.churchben."
 ---
 
 # Weboldal-szerkesztő architektúrája
@@ -82,7 +83,7 @@ A megjelenítők a `Packages/apphelper/src/website/components/elementTypes/` kö
 
 ### Szerkesztőűrlapok (B1Admin)
 
-A szerkesztő típusonkénti beállítási űrlapjai a `B1Admin/src/site/admin/elements/` könyvtárban vannak. Az `ElementEdit.tsx` egy külön komponenshez irányítja a kérést (`GalleryEdit`, `TestimonialEdit`, `StatsEdit` …), vagy típusonként egy beágyazott mezőépítőhöz. A katalógus AI-oldali tükre az API MCP-eszköze, a `describe_page_builder` (lásd [MCP-szerver](../api/mcp)).
+A szerkesztő típusonkénti beállítási űrlapjai a `B1Admin/src/site/admin/elements/` könyvtárban vannak. Az `ElementEdit.tsx` egy külön komponenshez irányítja a kérést (`GalleryEdit`, `TestimonialEdit`, `StatsEdit` …), vagy típusonként egy beágyazott mezőépítőhöz. A katalógus AI-oldali tükre az API MCP-eszköze, a `describe_page_builder` (lásd [MCP-szerver](../api/mcp.md)).
 
 A szerkesztő előnézete ugyanazt a `Theme`-et csatolja, mint az élő webhely. Ez a globális stílusokból állítja be a `--headingFont` és `--bodyFont` CSS-változókat. A B1App ezeket a változókat a `pages.css` fájlon keresztül alkalmazza, amelyet a B1Admin nem tud importálni, ezért a `ContentEditor.tsx` beilleszti az `EDITOR_PAGE_FONT_CSS` (`src/site/admin/editorCss.ts`) stílust, hogy ezek a `.page` szöveg- és `h1`–`h6` címsorok betűtípusára is érvényesüljenek. Enélkül az előnézet az admin betűtípusával mutatta volna a címeket.
 
@@ -151,7 +152,7 @@ Mindez a B1App oldalán történő megjelenítés a ContentApi adatai fölött: 
 |----------|---------|
 | Meta leírások | A `pages.metaDescription` (≤300 karakter) a `MetaHelper.getMetaData()` révén kerül a Next.js `Metadata` objektumba (description + Open Graph) minden builderrel megjelenített útvonalon. A B1Admin oldalbeállításai között van egy AI **Generálás** gomb (lásd lent) |
 | Átirányítások | Gyülekezetenkénti `redirects` sorok, amelyeket a `/content/redirects` alatt kezelünk (`content.edit`, 200 soros korlát, normalizált útvonalak). 404 előtt a B1App oldalútvonala feloldja az útvonalat a `GET /content/redirects/public/:churchId` végponton, és Next `permanentRedirect` függvényével HTTP 308-at ad; az egyezés nélküli útvonalak a `notFound()` függvényhez futnak |
-| Márkázott 404 | A `not-found.tsx` a `BrandedNotFound` komponenst jeleníti meg a gyülekezet logójával, nevével és témájával, nem általános hibaoldalt. Az ismeretlen `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` és `/volunteer/[planId]` útvonalak valódi 404-et adnak, akárcsak az ismeretlen aldomainek és a hibás oldal-slugok (lásd [Webhelyútvonalak és többwebhelyes működés](./websites)) |
+| Márkázott 404 | A `not-found.tsx` a `BrandedNotFound` komponenst jeleníti meg a gyülekezet logójával, nevével és témájával, nem általános hibaoldalt. Az ismeretlen `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` és `/volunteer/[planId]` útvonalak valódi 404-et adnak, akárcsak az ismeretlen aldomainek és a hibás oldal-slugok (lásd [Webhelyútvonalak és többwebhelyes működés](./websites.md)) |
 | Strukturált adatok | `BlogPosting` JSON-LD a blogbejegyzéseken; `VideoObject` az egyes igehirdetési oldalakon (`/{sdSlug}/sermons/[sermonId]`) és a `sermons` elemet tartalmazó oldalakon; `Event` a naptár-/eseményelemekből az építőoldalakon és minden `/{sdSlug}/events/[eventId]` oldalon (a következő előfordulás, az esemény fotójával `image`-ként); schema.org `Event` a `serviceTimes` elemből |
 | Igehirdetési oldalak | Minden nyilvános igehirdetés kapott egy feltérképezhető oldalt a `/sermons/[sermonId]` címen, teljes metaadatokkal: az igehirdetések már nincsenek a kliensoldali böngészőelembe zárva |
 | Analitika | A `ga4MeasurementId` nyilvános beállítás (a B1Admin átirányításai mellett kezelve) gyülekezetenként GA4 gtag-et ültet be a `next/script` segítségével. A B1 alkalmazás (`/{sdSlug}/mobile`) is erre az azonosítóra küldi az oldalmegtekintéseket, a ChurchApps saját címkéje mellett, ha az érvényes `G-` azonosító (a GTM-konténer-azonosítók csak a webhelyen maradnak). Minden `gtag('config')` a `display_mode` értéket `installed` vagy `browser` értékkel viszi, a `navigator.standalone` vagy a `(display-mode: standalone)` médialekérdezés alapján (`B1App/src/helpers/mobileAnalytics.ts`) |
@@ -199,7 +200,7 @@ A B1Admin `SectionToolbar` átírás gombja és az oldallistán lévő „Webhel
 | `POST /website/generateAltText` | Látásmodell-hívás legfeljebb 20 képURL-re; tömör alt szöveget ad (≤125 karakter, a „photo of" előtagok eltávolítva) |
 | `POST /website/generateMetaDescription` | Egy SEO meta leírás (≤155 karakter) az oldal szöveges tartalmából – a B1Admin oldalbeállításainak Generálás gombjához kötve |
 
-Ezeknek a végpontoknak a promptjai markdown fájlok az `AskApi/config/instructions/` alatt, köztük az elemkatalógus, amelyből a modell generál. Két tervezési elv tartja pontosan az elemkatalógust: a kliens minden kérésben átadja az `availableElementTypes` listát (a prompt csak ebből a listából használhat típusokat – a szerver nem keményen kódolja a teljes készletet), az API MCP `describe_page_builder` eszköze pedig ugyanezt az útmutatót hordozza az [MCP](../api/mcp) rendszeren keresztül dolgozó AI-ügynököknek. A modellek Anthropic Claude-modellek az OpenRouteren keresztül – a szakasztartalomhoz 3.5 Haiku (késleltetés miatt), a vázlatokhoz, webhelytervekhez és látáshoz 3.5 Sonnet –, és OpenAI tartalék, ha nincs beállítva OpenRouter-kulcs.
+Ezeknek a végpontoknak a promptjai markdown fájlok az `AskApi/config/instructions/` alatt, köztük az elemkatalógus, amelyből a modell generál. Két tervezési elv tartja pontosan az elemkatalógust: a kliens minden kérésben átadja az `availableElementTypes` listát (a prompt csak ebből a listából használhat típusokat – a szerver nem keményen kódolja a teljes készletet), az API MCP `describe_page_builder` eszköze pedig ugyanezt az útmutatót hordozza az [MCP](../api/mcp.md) rendszeren keresztül dolgozó AI-ügynököknek. A modellek Anthropic Claude-modellek az OpenRouteren keresztül – a szakasztartalomhoz 3.5 Haiku (késleltetés miatt), a vázlatokhoz, webhelytervekhez és látáshoz 3.5 Sonnet –, és OpenAI tartalék, ha nincs beállítva OpenRouter-kulcs.
 
 ## Beszélgetős űrlapok
 
@@ -224,8 +225,8 @@ A gyorsítótárat ürítő vezérlők: oldalak (mentés, törlés, duplikálás
 
 ## Kapcsolódó oldalak
 
-- [Webhelyútvonalak és többwebhelyes működés](./websites) — hogyan oldódik fel egy kérés gyülekezetté/webhellyé, és hogyan irányítódnak az egyéni domainek
-- [Tartalmi végpontok](../api/endpoints/content) — a teljes REST-felület oldalakhoz, szakaszokhoz, elemekhez, blokkokhoz, bejegyzésekhez, átirányításokhoz és beállításokhoz
-- [AppHelper](../shared-libraries/app-helper) — az npm-csomag, amely a megjelenítőket, a regisztrációt, az elválasztókat és a widgeteket szállítja
-- [MCP-szerver](../api/mcp) — beleértve a `describe_page_builder` útmutató eszközt
+- [Webhelyútvonalak és többwebhelyes működés](./websites.md) — hogyan oldódik fel egy kérés gyülekezetté/webhellyé, és hogyan irányítódnak az egyéni domainek
+- [Tartalmi végpontok](../api/endpoints/content.md) — a teljes REST-felület oldalakhoz, szakaszokhoz, elemekhez, blokkokhoz, bejegyzésekhez, átirányításokhoz és beállításokhoz
+- [AppHelper](../shared-libraries/app-helper.md) — az npm-csomag, amely a megjelenítőket, a regisztrációt, az elválasztókat és a widgeteket szállítja
+- [MCP-szerver](../api/mcp.md) — beleértve a `describe_page_builder` útmutató eszközt
 - [Oldalszerkesztő (végfelhasználói)](/docs/b1-admin/website/page-editor) — a munkatársaknak szóló szerkesztő dokumentáció

@@ -1,5 +1,7 @@
 ---
-title: "Önbejelentkezés"
+title: "Önbejelentkezés a B1 Mobile alkalmazásból"
+sidebar_label: "Önbejelentkezés"
+description: "Jelentkeztesd be magadat és háztartásodat egy istentiszteletre a B1 Mobile alkalmazásból, beleértve az időpont kiválasztását és az egyes személyek csoportba sorolását."
 ---
 
 # Önbejelentkezés
@@ -13,7 +15,7 @@ A bejelentkezés a B1 Mobile alkalmazásból egyszerű, több lépésből álló
 <div class="prereqs">
 <h4>Mielőtt elkezdené</h4>
 
-- [Telepítse a B1 Mobile alkalmazást](../getting-started/installing), és [jelentkezzen be](../getting-started/logging-in) fiókjába
+- [Telepítse a B1 Mobile alkalmazást](../getting-started/installing.md), és [jelentkezzen be](../getting-started/logging-in.md) fiókjába
 - Ellenőrizze, hogy a [háztartási tagjai](../profile/household.md) be vannak-e állítva a profiljában
 
 </div>

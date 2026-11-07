@@ -1,5 +1,6 @@
 ---
 title: "Gabay: Subaybayan ang Attendance sa Simbahan"
+description: "I-track ang attendance sa B1 Admin: i-set up ang campus at oras ng serbisyo, itala nang manu-mano o sa self check-in, at basahin ang mga report."
 ---
 
 # Subaybayan ang Attendance sa Simbahan

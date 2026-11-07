@@ -1,5 +1,6 @@
 ---
 title: "添加访客"
+description: "在 B1 Checkin 自助登记机上为家庭添加来访的孩子、亲属或朋友，然后分配小组并完成登记。"
 ---
 
 # 添加访客
@@ -13,8 +14,8 @@ title: "添加访客"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [查找您的家庭](./looking-up-members)并从搜索结果中选择一位成员
-- 在[家庭查看界面](./household-review)上，您可以看到您的家庭成员
+- [查找您的家庭](./looking-up-members.md)并从搜索结果中选择一位成员
+- 在[家庭查看界面](./household-review.md)上，您可以看到您的家庭成员
 
 </div>
 
@@ -36,8 +37,8 @@ title: "添加访客"
 
 访客出现在您的家庭列表中后，您可以：
 
-- **展开他们的卡片**并[将他们分配到小组](./group-assignment)，就像其他家庭成员一样。
-- **[签到](./completing-checkin)**整个家庭，包括访客。
+- **展开他们的卡片**并[将他们分配到小组](./group-assignment.md)，就像其他家庭成员一样。
+- **[签到](./completing-checkin.md)**整个家庭，包括访客。
 
 ## 取消
 
@@ -49,4 +50,4 @@ title: "添加访客"
 
 ## 下一步
 
-添加访客并根据需要[分配小组](./group-assignment)后，您就可以[完成签到](./completing-checkin)了。
+添加访客并根据需要[分配小组](./group-assignment.md)后，您就可以[完成签到](./completing-checkin.md)了。

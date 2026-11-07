@@ -1,5 +1,6 @@
 ---
 title: "Kılavuz: Kilise Web Sitenizi Yayınlayın"
+description: "B1 Admin'de kilise web sitesi kurun: ana sayfayı oluşturun, renk ve logoyu ayarlayın, temel sayfaları ekleyin, özel alan adı bağlayın ve bağış formları ekleyin."
 ---
 
 # Kilise Web Sitenizi Yayınlayın

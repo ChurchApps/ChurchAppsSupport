@@ -1,5 +1,6 @@
 ---
 title: "Check-In"
+description: "Cum funcționează check-in-ul în B1Checkin, B1App și B1 Admin: modelul de date pentru prezență, grupurile ca săli, limitele de capacitate și regulile de siguranță la ridicare."
 ---
 
 # Check-In
@@ -216,7 +217,7 @@ Două căi creează o persoană în timpul check-in-ului:
 
 ## Pagini conexe
 
-- [Endpoint-uri Attendance](../api/endpoints/attendance) -- Suprafața REST completă pentru campusuri, servicii, sesiuni, vizite și vizite-sesiuni
-- [Endpoint-uri Membership](../api/endpoints/membership) -- Persoane, gospodării și grupuri
-- [Webhook-uri](../api/webhooks) -- Evenimentele `session.created`, `attendance.recorded` și `attendance.checkout`
-- [Structura modulului](../api/module-structure) -- Cum este organizat modulul attendance pe server
+- [Endpoint-uri Attendance](../api/endpoints/attendance.md) -- Suprafața REST completă pentru campusuri, servicii, sesiuni, vizite și vizite-sesiuni
+- [Endpoint-uri Membership](../api/endpoints/membership.md) -- Persoane, gospodării și grupuri
+- [Webhook-uri](../api/webhooks.md) -- Evenimentele `session.created`, `attendance.recorded` și `attendance.checkout`
+- [Structura modulului](../api/module-structure.md) -- Cum este organizat modulul attendance pe server

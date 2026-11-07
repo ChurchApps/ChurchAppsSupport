@@ -1,5 +1,6 @@
 ---
 title: "Prehliadanie obsahu"
+description: "Ako prechádzať bezplatnú knižnicu kurikula Lessons.church bez účtu: rozloženie domovskej stránky, prechádzanie podľa programu, vyhľadávanie a externí poskytovatelia."
 ---
 
 # Prehliadanie obsahu

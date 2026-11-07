@@ -1,5 +1,6 @@
 ---
 title: "Tilstedeværelse slutpunkter"
+description: "Reference for deltagelses-API'et i B1 Admin og B1 Checkin: kampusser, gudstjenester, tider, sessioner, besøg, check-in-regler og eksport-endpoints."
 ---
 
 # Tilstedeværelse slutpunkter
@@ -41,6 +42,6 @@ Udvider GenericCrudController med CRUD ruter `getById`, `getAll`, `post` og `del
 
 ## Relaterede artikler
 
-- [Medlemskab slutpunkter](./membership) — Mennesker, grupper, roller og kirkestyre
-- [Godkendelse & Tilladelser](./authentication) — Login flow, JWT, tilladels model
-- [Modul struktur](../module-structure) — Kode organiserings mønstre
+- [Medlemskab slutpunkter](./membership.md) — Mennesker, grupper, roller og kirkestyre
+- [Godkendelse & Tilladelser](./authentication.md) — Login flow, JWT, tilladels model
+- [Modul struktur](../module-structure.md) — Kode organiserings mønstre

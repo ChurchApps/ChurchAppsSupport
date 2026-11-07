@@ -1,5 +1,6 @@
 ---
 title: "Chei API"
+description: "Creați, limitați și revocați cheile API B1 în B1 Admin pentru scripturi de server și conectorii Zapier, Make sau Google Sheets, fără un flux OAuth complet."
 ---
 
 # Chei API
@@ -104,7 +105,7 @@ O cheie revocată nu mai funcționează imediat — nu există perioadă de gra�
 
 ## Diferența față de OAuth
 
-Cheile API sunt potrivite atunci când **biserica dumneavoastră este singura care folosește integrarea**. Pentru un conector care trebuie să acceseze multe biserici, cu consimțământul explicit al fiecăreia, de exemplu o aplicație SaaS partajată în comunitatea B1, folosiți în schimb [OAuth și aplicații conectate](./connected-apps).
+Cheile API sunt potrivite atunci când **biserica dumneavoastră este singura care folosește integrarea**. Pentru un conector care trebuie să acceseze multe biserici, cu consimțământul explicit al fiecăreia, de exemplu o aplicație SaaS partajată în comunitatea B1, folosiți în schimb [OAuth și aplicații conectate](./connected-apps.md).
 
 | | Cheie API | OAuth |
 |---|---|---|

@@ -1,5 +1,7 @@
 ---
-title: "内容"
+title: "B1.church 会友门户中的内容功能"
+sidebar_label: "内容"
+description: "查看您的教会在 B1.church 会友门户中启用了哪些内容，然后浏览讲道、直播、圣经阅读和课程。"
 ---
 
 # 内容

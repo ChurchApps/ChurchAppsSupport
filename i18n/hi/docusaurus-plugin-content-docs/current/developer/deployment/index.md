@@ -1,5 +1,6 @@
 ---
 title: "डिप्लॉयमेंट"
+description: "हर ChurchApps प्रोजेक्ट कहाँ तैनात होता है खोजें: AWS Lambda API और S3 वेब ऐप से लेकर Expo मोबाइल बिल्ड और Railway या Docker पर स्व-होस्टेड B1 Admin तक।"
 ---
 
 # डिप्लॉयमेंट
@@ -14,12 +15,12 @@ ChurchApps प्रोजेक्ट के प्रकार के अन�
 
 | प्रोजेक्ट प्रकार | डिप्लॉयमेंट लक्ष्य | टूलिंग |
 |-------------|-------------------|---------|
-| [APIs](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 24.x runtime) |
-| [Web Apps](./web-apps) | S3 + CloudFront | स्टेटिक build, S3 sync, CloudFront invalidation |
-| [Mobile Apps](./mobile) | ऐप स्टोर | Expo EAS Build + OTA Updates |
-| [Self-Hosting (Railway)](./railway-template) | Railway | One-click template: MySQL + Api + B1Admin + B1App |
-| [Self-Hosting (Docker)](./docker) | कोई भी Docker होस्ट | एक-लाइन इंस्टॉलर; पहले से बनी GHCR images + Caddy, `./deploy/b1` upgrade/backup/rollback |
-| [Caddy Custom-Domain Proxy](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | स्टेटिक Caddyfile + WinSW सेवा + निर्धारित map sync |
+| [APIs](./apis.md) | AWS Lambda | Serverless Framework v3 (Node.js 24.x runtime) |
+| [Web Apps](./web-apps.md) | S3 + CloudFront | स्टेटिक build, S3 sync, CloudFront invalidation |
+| [Mobile Apps](./mobile.md) | ऐप स्टोर | Expo EAS Build + OTA Updates |
+| [Self-Hosting (Railway)](./railway-template.md) | Railway | One-click template: MySQL + Api + B1Admin + B1App |
+| [Self-Hosting (Docker)](./docker.md) | कोई भी Docker होस्ट | एक-लाइन इंस्टॉलर; पहले से बनी GHCR images + Caddy, `./deploy/b1` upgrade/backup/rollback |
+| [Caddy Custom-Domain Proxy](./caddy-proxy.md) | Windows EC2 (Elastic IP `3.23.251.61`) | स्टेटिक Caddyfile + WinSW सेवा + निर्धारित map sync |
 | FreeShow | सीधा डाउनलोड | Electron Builder (क्रॉस-प्लेटफ़ॉर्म बाइनरी) |
 
 ## वातावरण

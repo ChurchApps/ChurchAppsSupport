@@ -1,5 +1,6 @@
 ---
 title: "Pracovné postupy"
+description: "Vytvárajte Kanban nástenky v B1 Admin pre nadväzujúcu starostlivosť s automatickými e-mailmi, SMS a spúšťačmi, ktoré pridávajú ľudí automaticky."
 ---
 
 # Pracovné postupy

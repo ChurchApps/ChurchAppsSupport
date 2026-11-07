@@ -1,5 +1,6 @@
 ---
 title: "Chế độ trình chiếu"
+description: "Chạy bài học toàn màn hình trên máy chiếu hoặc TV lớp học với Chế độ trình chiếu của Lessons.church, và đi qua từng phần trong giờ học."
 ---
 
 # Chế độ trình chiếu

@@ -1,5 +1,6 @@
 ---
 title: "Dokumentasi Pengembang"
+description: "Panduan dokumentasi developer ChurchApps: pengaturan lokal, API dan aplikasi web, pustaka bersama, build mobile, dan deployment untuk proyek open-source."
 ---
 
 # Dokumentasi Pengembang
@@ -24,16 +25,16 @@ Karakteristik utama:
 
 ## Isi Bagian Ini
 
-- **[Penyiapan](setup/)** -- Lingkungan pengembangan lokal, prasyarat, dan konfigurasi
-  - [Prasyarat](setup/prerequisites) -- Alat dan perangkat lunak yang diperlukan
-  - [Ikhtisar Proyek](setup/project-overview) -- Semua proyek sekilas
-  - [Variabel Lingkungan](setup/environment-variables) -- Mengonfigurasi file `.env`
-- **[API](api/)** -- Penyiapan API inti secara lokal, inisialisasi basis data, dan struktur modul
-- **[Aplikasi Web](web-apps/)** -- Menjalankan B1Admin, B1App, dan LessonsApp secara lokal
-- **[Aplikasi Seluler](mobile/)** -- Membangun B1Mobile dan aplikasi Expo lainnya
-- **[Pustaka Bersama](shared-libraries/)** -- Bekerja dengan Helpers, ApiHelper, dan AppHelper
-- **[Penerapan](deployment/)** -- Menerapkan API, aplikasi web, dan aplikasi seluler
-- **[Penyedia Konten FreePlay](freeplay-content-provider)** -- Mengintegrasikan pustaka pelajaran Anda dengan FreePlay
+- **[Penyiapan](./setup/index.md)** -- Lingkungan pengembangan lokal, prasyarat, dan konfigurasi
+  - [Prasyarat](./setup/prerequisites.md) -- Alat dan perangkat lunak yang diperlukan
+  - [Ikhtisar Proyek](./setup/project-overview.md) -- Semua proyek sekilas
+  - [Variabel Lingkungan](./setup/environment-variables.md) -- Mengonfigurasi file `.env`
+- **[API](./api/index.md)** -- Penyiapan API inti secara lokal, inisialisasi basis data, dan struktur modul
+- **[Aplikasi Web](./web-apps/index.md)** -- Menjalankan B1Admin, B1App, dan LessonsApp secara lokal
+- **[Aplikasi Seluler](./mobile/index.md)** -- Membangun B1Mobile dan aplikasi Expo lainnya
+- **[Pustaka Bersama](./shared-libraries/index.md)** -- Bekerja dengan Helpers, ApiHelper, dan AppHelper
+- **[Penerapan](./deployment/index.md)** -- Menerapkan API, aplikasi web, dan aplikasi seluler
+- **[Penyedia Konten FreePlay](./freeplay-content-provider.md)** -- Mengintegrasikan pustaka pelajaran Anda dengan FreePlay
 
 ## Komunitas dan Sumber Daya
 

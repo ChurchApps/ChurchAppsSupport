@@ -1,5 +1,6 @@
 ---
 title: "Przegląd B1 Church Checkin"
+description: "Skonfiguruj aplikację kiosku B1 Church Checkin na iPadach lub tabletach z Androidem: rodziny same się zameldują, a dzieci trafią do grup, z drukiem etykiet."
 ---
 
 # Przegląd B1 Church Checkin
@@ -24,7 +25,7 @@ Ustaw tablet iPad lub Android w holu lub strefie powitalnej. Członkowie podchod
 - **Przegląd gospodarstwa domowego** -- Zobacz wszystkich członków rodziny ze zdjęciami i aktualnymi przypisaniami do grup na pierwszy rzut oka.
 - **Przypisywanie do grup** -- Przypisz każdego członka rodziny do odpowiedniej klasy lub grupy dla wybranej godziny nabożeństwa.
 - **Zameldowanie gościa** -- Dodaj gościa do swojego gospodarstwa domowego na miejscu, podając imię i nazwisko.
-- **Rejestracja gości za pomocą kodu QR** -- Wyświetl kod QR, który odwiedzający mogą zeskanować, aby [zarejestrować się](../b1-church/checkin/guest-registration) samodzielnie na swoim telefonie przed zameldowaniem, lub mogą dotknąć **Zarejestruj tutaj**, aby wypełnić ten sam formularz na kiosku.
+- **Rejestracja gości za pomocą kodu QR** -- Wyświetl kod QR, który odwiedzający mogą zeskanować, aby [zarejestrować się](../b1-church/checkin/guest-registration.md) samodzielnie na swoim telefonie przed zameldowaniem, lub mogą dotknąć **Zarejestruj tutaj**, aby wypełnić ten sam formularz na kiosku.
 - **Drukowanie etykiet** -- Drukuj etykiety z imionami dla dzieci oraz kartki do odbioru przez rodziców z unikalnymi kodami zabezpieczającymi.
 - **Obsługa drukarek sieciowych** -- Wykrywaj i konfiguruj drukarki sieciowe bezpośrednio w aplikacji.
 - **Automatyczne logowanie** -- Po pierwszym logowaniu aplikacja zapamiętuje dane uwierzytelniające i przy kolejnych uruchomieniach przechodzi od razu do ekranu nabożeństw.
@@ -33,8 +34,8 @@ Ustaw tablet iPad lub Android w holu lub strefie powitalnej. Członkowie podchod
 
 ## Sekcje dokumentacji
 
-- **[Pierwsze kroki](./getting-started/)** -- Instalacja aplikacji, logowanie i konfiguracja drukarki.
-- **[Przebieg meldowania](./check-in/)** -- Pełny proces meldowania od wyboru nabożeństwa do drukowania etykiet.
+- **[Pierwsze kroki](./getting-started/index.md)** -- Instalacja aplikacji, logowanie i konfiguracja drukarki.
+- **[Przebieg meldowania](./check-in/index.md)** -- Pełny proces meldowania od wyboru nabożeństwa do drukowania etykiet.
 
 :::tip
 B1 Church Checkin najlepiej działa na 10-calowym tablecie (iPad lub Android) zamontowanym w orientacji poziomej, w miejscu łatwo dostępnym dla rodzin. Pobierz aplikację z [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) lub [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).

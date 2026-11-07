@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "Připojte ChatGPT k datům vašeho sboru v B1 pomocí API klíče a ptejte se běžným jazykem na lidi, dary a docházku v B1 Admin."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Připojte ChatGPT k datům vaší církve v B1 a ptejte se ho běžným jazykem 
 </div>
 
 :::tip Doporučeno: nejprve zkuste Claude — je zdarma
-[Claude](./claude) se připojí k B1 v **bezplatném tarifu** a nastaví se za méně než 3 minuty — stačí přidat B1 jako konektor a přihlásit se svým účtem B1. Klíč není potřeba. Je to nejsnazší způsob, jak může vaše církev vyzkoušet AI s B1, než za cokoli zaplatí.
+[Claude](./claude.md) se připojí k B1 v **bezplatném tarifu** a nastaví se za méně než 3 minuty — stačí přidat B1 jako konektor a přihlásit se svým účtem B1. Klíč není potřeba. Je to nejsnazší způsob, jak může vaše církev vyzkoušet AI s B1, než za cokoli zaplatí.
 :::
 
 ## Nastavení
@@ -254,5 +255,5 @@ Každý, kdo má odkaz, může klást dotazy přirozeným jazykem. Oprávnění 
 
 - [API Keys](/docs/developer/api/api-keys) — úplný přehled oprávnění
 - [MCP Server (referenční příručka pro vývojáře)](/docs/developer/api/mcp) — podrobnosti protokolu a schémata nástrojů
-- [Claude](./claude) — stejná myšlenka, pro modely Anthropic
+- [Claude](./claude.md) — stejná myšlenka, pro modely Anthropic
 - [Referenční příručka REST API](/docs/developer/api/endpoints) — všechny koncové body, které může volat akce vlastního GPT

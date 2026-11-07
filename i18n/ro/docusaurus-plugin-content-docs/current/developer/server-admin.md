@@ -1,5 +1,6 @@
 ---
 title: "Administrarea serverului"
+description: "Doar pentru utilizatorii Server.Admin: resetați autentificarea în doi pași, impersonați conturi, moderați Commons și aprobați e-mailul bisericii în B1 Admin."
 ---
 
 # Administrarea serverului

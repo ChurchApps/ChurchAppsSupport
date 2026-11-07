@@ -1,5 +1,6 @@
 ---
 title: "Kuxhumanisa Sikrini"
+description: "Hlanganisa i-FreePlay TV nekhalenda lelihlelelwe lelicembu letiskrini ku-FreePlay Admin ngekhodi letinhlamvu letine lelisesikrinini se-TV, kuze idlale lokuqukethwe lokuhleliwe ngekwayo."
 ---
 
 # Kuxhumanisa Sikrini
@@ -13,9 +14,9 @@ Ukuze ubeke i-TV ekhalendeni, yixhumanise ne-**FreePlay Admin**. I-TV iveta likh
 <div class="prereqs">
 <h4>Ngaphambi Kokuqala</h4>
 
-- Faka uphinde uvule i-FreePlay ku-TV. Bona [Kuqala](../getting-started/)
+- Faka uphinde uvule i-FreePlay ku-TV. Bona [Kuqala](../getting-started/index.md)
 - Ube nelogini ye-ChurchApps yebandla lakho ukuze ungene ku-FreePlay Admin
-- Uma ufisa, [akha uhla lwemculo](./building-playlists) bese [uyihlela](./scheduling-the-calendar) kuqala ukuze i-TV ibe nalokudlala masinyane
+- Uma ufisa, [akha uhla lwemculo](./building-playlists.md) bese [uyihlela](./scheduling-the-calendar.md) kuqala ukuze i-TV ibe nalokudlala masinyane
 
 </div>
 
@@ -38,7 +39,7 @@ Likhodi liphila imizuzu lelitfoli-shumi nesihlanu, futsi ikhawunta ngaphansi kwa
 5. Ngaphansi kwe-**Mode**, shiya **Scheduled** likhetsiwe. I-TV itawudlala ngekhalenda yeliqembu ngekwayo.
 6. Cindzetela **Pair**.
 
-I-TV ikhombisa **Connected!** bese ikhombisa **Loading your schedule...**. Ikhipha lokuhleleleke bese iqala kudlala. Bona [Kudlala Ngekhalenda ku-TV](./scheduled-playback).
+I-TV ikhombisa **Connected!** bese ikhombisa **Loading your schedule...**. Ikhipha lokuhleleleke bese iqala kudlala. Bona [Kudlala Ngekhalenda ku-TV](./scheduled-playback.md).
 
 :::info
 Uma i-FreePlay Admin ithi **That code didn't match a TV**, hlola likhodi lesikrinini. Uma liphelelwe sikhatsi, sebenzisa likhodi lelisha le-TV lesikhombisa njengamanje.
@@ -51,11 +52,11 @@ Ku-**Mode** kunetinketho letimbili:
 - **Scheduled** - Idlala ngekhalenda yeliqembu ngekwayo. Akudingeki kutsi umuntu acindzetele Start.
 - **Manual** - Umuntu ukhetsa lokuqukethwe nge-remote. Sikrini sesandla sisabonakala ohlwini lwakho lwe-**Screens**, kodvwa asilandzeli ikhalenda, ngako inkhundla ye-**Group** iyavalwa.
 
-Ungashintsha imodi yesikrini kamuva uyisebentise **Edit** kusikhatsi se-[Screens page](./managing-screens).
+Ungashintsha imodi yesikrini kamuva uyisebentise **Edit** kusikhatsi se-[Screens page](./managing-screens.md).
 
 ## Kuxhumanisa Nesikhatsi Sesevisi Kunalokuya
 
-Likhodi lesikrini se-**Pair this screen** isebenta futsi ku-B1 Admin. Uma uyifaka lapho bese ukhetsa luhlobo lwesikhatsi ngaphansi kwe-**Show Plans For**, i-TV itawulandzela luhlobo lwesikhatsi lolo ku-[Plan Mode](../plan-mode/) esikhundleni sekhalenda. Bona [Kuxhumanisa Lidivayisi Lakho](../plan-mode/device-pairing).
+Likhodi lesikrini se-**Pair this screen** isebenta futsi ku-B1 Admin. Uma uyifaka lapho bese ukhetsa luhlobo lwesikhatsi ngaphansi kwe-**Show Plans For**, i-TV itawulandzela luhlobo lwesikhatsi lolo ku-[Plan Mode](../plan-mode/index.md) esikhundleni sekhalenda. Bona [Kuxhumanisa Lidivayisi Lakho](../plan-mode/device-pairing.md).
 
 ## Kushintsha Noma Kuhlukanisa Kusuka ku-TV
 
@@ -79,6 +80,6 @@ I-TV ibuyela kukukhombisa likhodi lekuxhuma. Yixhumanise futsi nanoma nini lapho
 
 ## Tindzatjana Letihlobene
 
-- **[Kuphatsa Tikrini Netiqembu](./managing-screens)** - Tshintsha ligama lesikrini, sidlulisele eliqembwini lelinye, noma hlola lokulandziwe kuso
-- **[Kuhlela Ikhalenda](./scheduling-the-calendar)** - Chaza lokudlalwako yitikrini letiqembu
-- **[Kukhetsa Imodi Yekuxhuma](../getting-started/pairing-modes)** - Qhathanisa i-Scheduled Mode ne-Plan Mode nekubheka tinhlinzeko ngwe
+- **[Kuphatsa Tikrini Netiqembu](./managing-screens.md)** - Tshintsha ligama lesikrini, sidlulisele eliqembwini lelinye, noma hlola lokulandziwe kuso
+- **[Kuhlela Ikhalenda](./scheduling-the-calendar.md)** - Chaza lokudlalwako yitikrini letiqembu
+- **[Kukhetsa Imodi Yekuxhuma](../getting-started/pairing-modes.md)** - Qhathanisa i-Scheduled Mode ne-Plan Mode nekubheka tinhlinzeko ngwe

@@ -1,5 +1,6 @@
 ---
 title: "Searching"
+description: "Vind programma's, studies en lessen in de Lessons.church-bibliotheek op trefwoord of bijbelverhaal, en zie hoe resultaten worden gerangschikt en gelabeld."
 ---
 
 # Searching

@@ -1,5 +1,6 @@
 ---
 title: "Tervsablonok"
+description: "Mentse el a szolgálati terv istentiszteleti rendjét és pozícióit sablonként a B1 Adminban, majd egy kattintással alkalmazza a jövőbeli tervekre."
 ---
 
 # Tervsablonok

@@ -1,5 +1,7 @@
 ---
-title: "Pradžia"
+title: "Pradžia su ChurchApps: pirmosios 15 minučių"
+sidebar_label: "Pradžia"
+description: "Nustatykite ChurchApps paskyrą per kelis žingsnius: bažnyčios duomenys, žmonių importas į B1 Admin, komandos kvietimas ir pirmasis projektas."
 ---
 
 # Pradžia

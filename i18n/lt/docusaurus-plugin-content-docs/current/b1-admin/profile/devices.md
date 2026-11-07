@@ -1,5 +1,6 @@
 ---
 title: "Upravljanje uređajima"
+description: "Susiekite, pavadinkite ir pašalinkite prie B1 Admin paskyros prijungtus ChurchAppsPlayer ir FreePlay ekranus, kad bažnyčios ekranai būtų saugūs."
 ---
 
 # Upravljanje uređajima

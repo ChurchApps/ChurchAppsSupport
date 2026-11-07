@@ -1,5 +1,6 @@
 ---
 title: "Digitální signalizace"
+description: "Zobrazujte obsah lekcí na TV v hale nebo na chodbě v B1 Admin přes URL kanálu digitální signalizace s aktuálním plánem, nebo použijte FreePlay TV."
 ---
 
 # Digitální signalizace
@@ -14,7 +15,7 @@ Posílejte obsah lekcí na televizi v předsálí nebo na chodbě pomocí kanál
 <h4>Než začnete</h4>
 
 - Nastavte [typ plánu](./plans.md) s naplánovaným obsahem z [Lessons.church](../../b1-church/content/lessons.md) nebo jiným obsahem lekcí
-- Mějte účet u [SignPresenter](https://www.signpresenter.com) a zařízení nastavené k jeho zobrazení, nebo televizi s [FreePlay](../../freeplay/)
+- Mějte účet u [SignPresenter](https://www.signpresenter.com) a zařízení nastavené k jeho zobrazení, nebo televizi s [FreePlay](../../freeplay/index.md)
 
 </div>
 
@@ -36,14 +37,14 @@ Podrobný postup nastavení v SignPresenter najdete v [návodu SignPresenter pro
 
 ## Použití televizí FreePlay
 
-Pokud vaše obrazovky běží na [FreePlay](../../freeplay/), URL kanálu nepotřebujete. Dialogové okno **Kanál digitální signalizace** odkazuje na **admin.freeplay.church/calendar**, kde můžete tento typ plánu naplánovat na své televize FreePlay:
+Pokud vaše obrazovky běží na [FreePlay](../../freeplay/index.md), URL kanálu nepotřebujete. Dialogové okno **Kanál digitální signalizace** odkazuje na **admin.freeplay.church/calendar**, kde můžete tento typ plánu naplánovat na své televize FreePlay:
 
 1. Klikněte v dialogovém okně na odkaz **admin.freeplay.church/calendar**. FreePlay Admin používá stejné přihlášení jako B1 Admin.
 2. Vyberte skupinu obrazovek pro své televize a klikněte na **Přidat plán**.
 3. V části **Přehrát** vyberte svůj typ plánu v **Servisní plány**. Je označen jako **(aktuální plán)**.
 4. Nastavte dny a časy a klikněte na **Uložit**.
 
-Televize každý týden přehrávají ten plán, který je pro daný typ plánu aktuální, ve časech, které jste nastavili. Funguje to i s lekcemi Go Curriculum, včetně upravených plánů. FreePlay se přihlašuje pomocí účtu Go Curriculum propojeného se službou v sekci **Poskytovatelé obsahu** (viz [Plánování lekcí](./scheduling-lessons.md)), případně pomocí připojení Go Curriculum celého kostela, pokud služba žádné nemá. Všechny možnosti najdete v [Plánování kalendáře](../../freeplay/scheduled-mode/scheduling-the-calendar) a způsob přidání televize najdete v [Párování obrazovky](../../freeplay/scheduled-mode/pairing-a-screen).
+Televize každý týden přehrávají ten plán, který je pro daný typ plánu aktuální, ve časech, které jste nastavili. Funguje to i s lekcemi Go Curriculum, včetně upravených plánů. FreePlay se přihlašuje pomocí účtu Go Curriculum propojeného se službou v sekci **Poskytovatelé obsahu** (viz [Plánování lekcí](./scheduling-lessons.md)), případně pomocí připojení Go Curriculum celého kostela, pokud služba žádné nemá. Všechny možnosti najdete v [Plánování kalendáře](../../freeplay/scheduled-mode/scheduling-the-calendar.md) a způsob přidání televize najdete v [Párování obrazovky](../../freeplay/scheduled-mode/pairing-a-screen.md).
 
 :::note
 URL kanálu nezahrnuje média Go Curriculum, protože tento obsah vyžaduje přihlášení k Go Curriculum vašeho kostela. Chcete-li zobrazit lekci Go Curriculum na televizi v předsálí nebo ve třídě, použijte FreePlay.
@@ -53,4 +54,4 @@ URL kanálu nezahrnuje média Go Curriculum, protože tento obsah vyžaduje při
 
 - Spravujte plány, které tento displej digitální signalizace napájí, na stránce [Plány](./plans.md)
 - Plánujte obsah pomocí [Lessons.church](./scheduling-lessons.md)
-- Zařaďte televize FreePlay do kalendáře pomocí [Plánovaného režimu](../../freeplay/scheduled-mode/)
+- Zařaďte televize FreePlay do kalendáře pomocí [Plánovaného režimu](../../freeplay/scheduled-mode/index.md)

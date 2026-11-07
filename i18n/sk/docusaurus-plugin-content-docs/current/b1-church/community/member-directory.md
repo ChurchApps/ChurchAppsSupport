@@ -1,5 +1,7 @@
 ---
-title: "Adresár členov"
+title: "Adresár členov v členskom portáli B1.church"
+sidebar_label: "Adresár členov"
+description: "Vyhľadávajte a prechádzajte členov zboru v adresári B1.church, zobrazujte ich profily a členov domácnosti a zistite, kto má prístup k adresáru."
 ---
 
 # Adresár členov

@@ -1,5 +1,6 @@
 ---
 title: "Mengekspor Data"
+description: "Ekspor orang ke CSV, daftar anggota grup, atau cadangan basis data B1 lengkap dari B1 Admin, dan lihat isi B1 Export Zip."
 ---
 
 # Mengekspor Data

@@ -1,5 +1,7 @@
 ---
-title: "Blogg"
+title: "Bläddra i B1.church-bloggen och RSS-flöden"
+sidebar_label: "Blogg"
+description: "Bläddra i och filtrera B1.church-bloggen för din kyrka efter kategori eller tagg, bläddra bland äldre inlägg eller följ nya via RSS-flöden."
 ---
 
 # Blogg

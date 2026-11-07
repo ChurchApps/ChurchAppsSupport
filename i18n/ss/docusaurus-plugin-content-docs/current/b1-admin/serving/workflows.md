@@ -1,5 +1,6 @@
 ---
 title: "Tinchubo Temisebenti"
+description: "Akha timbhoyi temitfwalo yetemtsetfo ku-B1 Admin kuletsa labantfu ekuhambeni netinyatselo letilandzelako ngemeyili lazenta, temilayezo, nemaduzane langeta labantfu ngekuzenta."
 ---
 
 # Tinchubo Temisebenti
@@ -200,7 +201,7 @@ Sebentisa lena kute utfole tindzawo letivimbako -- sibonelo, inyatselo lapho ema
 ## Timibhalo Lehlobene
 
 - [Imisebenti](./tasks.md) -- imisebenti lengiyo lekwakhelwe emakhadi enchubo yemsebenti
-- [Kutitenzela](./automations.md) -- yakha imisebenti lephindzaphindzako ngekulandzelana kwesikhatsi
+- [Kutitenzela](./workflows.md) -- yakha imisebenti lephindzaphindzako ngekulandzelana kwesikhatsi
 - [Ema-Form](../forms/index.md) -- yakha ema-form langasusa tinchubo temisebenti
 - [Emacembu](../groups/index.md) -- emacembu lasento se-"Add to group" singafaka bantfu kuwo
 - [Tindzima & Emalungelo](../settings/roles-permissions.md) -- lawula kutsi ngubani longabona, ahlele, futsi aphatse tinchubo temisebenti

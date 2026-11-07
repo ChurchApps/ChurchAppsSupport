@@ -1,5 +1,6 @@
 ---
 title: "Website"
+description: "Prezentare generală a constructorului de site din B1 Admin: pagini, blog, blocuri, aspect, fișiere și calendare, cu linkuri către ghiduri."
 ---
 
 # Website
@@ -22,7 +23,7 @@ Linkurile de navigare sunt afișate într-o structură arborescentă. Puteți re
 
 ### Blog
 
-Publicați noutăți, actualizări și devoționale sub formă de articole de blog la adresa `/blog` de pe site-ul dumneavoastră, cu un feed RSS. Consultați ghidul [Blog](blog).
+Publicați noutăți, actualizări și devoționale sub formă de articole de blog la adresa `/blog` de pe site-ul dumneavoastră, cu un feed RSS. Consultați ghidul [Blog](./blog.md).
 
 ### Blocuri
 
@@ -30,24 +31,24 @@ Creați componente de conținut reutilizabile pe care le puteți plasa pe mai mu
 
 ### Aspect
 
-Personalizați tema, culorile, fonturile, logo-ul și spațierea site-ului dumneavoastră web. Puteți aplica teme de stil predefinite pentru un început rapid sau puteți ajusta fiecare detaliu cu ajutorul editorului de paletă de culori, al setărilor tipografice și al CSS-ului personalizat. Consultați ghidul [Aspect](appearance) pentru detalii complete.
+Personalizați tema, culorile, fonturile, logo-ul și spațierea site-ului dumneavoastră web. Puteți aplica teme de stil predefinite pentru un început rapid sau puteți ajusta fiecare detaliu cu ajutorul editorului de paletă de culori, al setărilor tipografice și al CSS-ului personalizat. Consultați ghidul [Aspect](./appearance.md) pentru detalii complete.
 
 ### Fișiere
 
-Încărcați și gestionați toate resursele media -- imagini, documente și alte fișiere -- într-o singură locație centrală și copiați linkurile fișierelor pentru a le folosi oriunde pe site. Consultați [Fișiere](files) pentru mai multe informații.
+Încărcați și gestionați toate resursele media -- imagini, documente și alte fișiere -- într-o singură locație centrală și copiați linkurile fișierelor pentru a le folosi oriunde pe site. Consultați [Fișiere](./files.md) pentru mai multe informații.
 
 ### Calendare
 
 Publicați calendare de evenimente pe site-ul dumneavoastră, astfel încât vizitatorii să poată vedea ce se întâmplă la biserica dumneavoastră. Creați calendare selectate care adună evenimente din mai multe grupuri într-o singură vizualizare. Calendarele au propriul element **Calendars** în meniul B1 Admin, separat de **Website**.
 
 :::tip
-Începeți cu [Configurarea inițială](initial-setup) dacă vă configurați site-ul web pentru prima dată. Acest ghid vă parcurge configurarea domeniului, crearea primei pagini și configurarea aspectului site-ului.
+Începeți cu [Configurarea inițială](./initial-setup.md) dacă vă configurați site-ul web pentru prima dată. Acest ghid vă parcurge configurarea domeniului, crearea primei pagini și configurarea aspectului site-ului.
 :::
 
 ## Pașii următori
 
-- [Configurarea inițială](initial-setup) -- Puneți site-ul web în funcțiune pentru prima dată
-- [Gestionarea paginilor](managing-pages) -- Aflați cum să creați și să organizați paginile
-- [Utilizarea editorului de pagini](page-editor) -- Construiți și stilizați conținutul paginilor cu editorul vizual
-- [Aspect](appearance) -- Personalizați aspectul și atmosfera site-ului
-- [Fișiere](files) -- Încărcați și gestionați fișierele media
+- [Configurarea inițială](./initial-setup.md) -- Puneți site-ul web în funcțiune pentru prima dată
+- [Gestionarea paginilor](./managing-pages.md) -- Aflați cum să creați și să organizați paginile
+- [Utilizarea editorului de pagini](./page-editor.md) -- Construiți și stilizați conținutul paginilor cu editorul vizual
+- [Aspect](./appearance.md) -- Personalizați aspectul și atmosfera site-ului
+- [Fișiere](./files.md) -- Încărcați și gestionați fișierele media

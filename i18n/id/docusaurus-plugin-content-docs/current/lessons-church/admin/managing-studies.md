@@ -1,5 +1,6 @@
 ---
 title: "Mengelola Studi"
+description: "Buat, ubah, dan kategorikan studi dalam program di area admin Lessons.church, serta lampirkan ikhtisar seri atau templat newsletter ke setiap studi."
 ---
 
 # Mengelola Studi

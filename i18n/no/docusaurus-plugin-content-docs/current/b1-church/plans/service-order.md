@@ -1,5 +1,7 @@
 ---
-title: "Gudstjenesteorden"
+title: "Detaljer om gudstjenesteorden i B1.church-appen"
+sidebar_label: "Gudstjenesteorden"
+description: "Se en plans gudstjenesteorden i B1.church-appen, med kumulativ tid, sangtekster, tonearter og leksjonsforhåndsvisning for teamet ditt."
 ---
 
 # Gudstjenesteorden

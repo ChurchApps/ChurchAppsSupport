@@ -1,12 +1,13 @@
 ---
 title: "Povezane aplikacije in OAuth"
+description: "Povežite aplikacije tretjih oseb s podatki B1 prek OAuth 2.0 brez gesel ali API ključev ter kadarkoli preklicite dostop v nastavitvah B1 Admin."
 ---
 
 # Povezane aplikacije in OAuth
 
 <div class="article-intro">
 
-B1 API podpira OAuth 2.0, tako da lahko aplikacija tretje osebe zaprosi vsakega cerkvenega skrbnika za dovoljenje za dostop do njegovih podatkov, ne da bi cerkev kdaj delila geslo ali API ključ. **Povezana aplikacija** je OAuth žeton, ki ga je odobril cerkveni skrbnik. Če ga prekličete, aplikacija tretje osebe z enim klikom izgubi dostop. To pot uporabite za povezovalnike SaaS z več najemniki. Za integracijo ene same cerkve raje uporabite [API ključe](./api-keys).
+B1 API podpira OAuth 2.0, tako da lahko aplikacija tretje osebe zaprosi vsakega cerkvenega skrbnika za dovoljenje za dostop do njegovih podatkov, ne da bi cerkev kdaj delila geslo ali API ključ. **Povezana aplikacija** je OAuth žeton, ki ga je odobril cerkveni skrbnik. Če ga prekličete, aplikacija tretje osebe z enim klikom izgubi dostop. To pot uporabite za povezovalnike SaaS z več najemniki. Za integracijo ene same cerkve raje uporabite [API ključe](./api-keys.md).
 
 </div>
 
@@ -27,7 +28,7 @@ B1 API podpira OAuth 2.0, tako da lahko aplikacija tretje osebe zaprosi vsakega 
 | **Povezana aplikacija** | Določen par `(odjemalec, cerkveni skrbnik)`, pri katerem je skrbnik odjemalcu dodelil dostop. Vsaka povezana aplikacija temelji na OAuth osveževalnem žetonu. |
 | **Dostopni žeton** | Kratkotrajen JWT (≈ 7 dni), ki ga odjemalec uporablja za klice API-ja. Oblika je enaka uporabniškemu JWT-ju: `Authorization: Bearer <jwt>`. |
 | **Osveževalni žeton** | Dolgotrajen neprozoren niz (≈ 90 dni), ki ga odjemalec uporablja za pridobivanje novih dostopnih žetonov. |
-| **Obseg** | Omejuje, kaj lahko dostopni žeton počne. Glejte [katalog obsegov](./api-keys#scopes). |
+| **Obseg** | Omejuje, kaj lahko dostopni žeton počne. Glejte [katalog obsegov](./api-keys.md#scopes). |
 
 ## Tokovi odobritve
 
@@ -162,7 +163,7 @@ Seznam samodejno izključuje poteke žetone.
 
 ## Obsegi in soglasje
 
-Nizi obsegov so enak katalog kot pri [API ključih](./api-keys#scopes). Najboljše prakse za odjemalce:
+Nizi obsegov so enak katalog kot pri [API ključih](./api-keys.md#scopes). Najboljše prakse za odjemalce:
 
 - **Zahtevajte najožje obsege, ki delujejo.** Cerkve opazijo, če zahtevate `donations:write`, ko potrebujete samo branje podatkov o ljudeh.
 - **Uporabite osveževalni žeton in kratkotrajne dostopne žetone.** Dolgotrajne dostopne žetone je težje hitro preklicati.
@@ -183,7 +184,7 @@ Registrirani preusmeritveni URI-ji se morajo natančno ujemati z `redirect_uri` 
 
 ### Dinamična registracija odjemalca
 
-`POST /membership/oauth/register` (javno, RFC 7591) omogoča, da se odjemalec, kot je MCP povezovalnik claude.ai, registrira sam. Oglašen je v dokumentu `/.well-known/oauth-authorization-server` API-ja. Glejte [MCP strežnik → odkritje OAuth](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (javno, RFC 7591) omogoča, da se odjemalec, kot je MCP povezovalnik claude.ai, registrira sam. Oglašen je v dokumentu `/.well-known/oauth-authorization-server` API-ja. Glejte [MCP strežnik → odkritje OAuth](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ Na strani soglasja v B1Admin dobi samodejno registrirani odjemalec obvestilo, da
 
 ## Podpora SDK-ju
 
-Paket `@churchapps/integration-sdk` ovije vsak tok OAuth s tipiziranimi pomočniki: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` in `.awaitDeviceToken()`. Glejte README paketa in [Webhooks](./webhooks#sdk-support) za celoten primer.
+Paket `@churchapps/integration-sdk` ovije vsak tok OAuth s tipiziranimi pomočniki: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` in `.awaitDeviceToken()`. Glejte README paketa in [Webhooks](./webhooks.md#sdk-support) za celoten primer.

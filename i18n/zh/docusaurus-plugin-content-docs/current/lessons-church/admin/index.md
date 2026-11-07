@@ -1,5 +1,6 @@
 ---
 title: "管理后台"
+description: "ChurchApps 中 Lessons.church 管理区域概览，涵盖如何管理项目、课程研读、课程、资源、统计数据以及外部课程提供方。"
 ---
 
 # 管理后台

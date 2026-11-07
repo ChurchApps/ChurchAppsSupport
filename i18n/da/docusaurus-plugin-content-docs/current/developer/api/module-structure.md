@@ -1,5 +1,6 @@
 ---
 title: "Modulstruktur"
+description: "Forklarer API'ets modulopbygning: controllere, repositories, gateways, autorisationstjek og de seks Lambda-funktioner i B1-udviklingsmiljøer."
 ---
 
 # Modulstruktur
@@ -13,8 +14,8 @@ Hvert API-modul følger en konsistent intern struktur med controllere, repositor
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Opsætning af API lokalt -- se [Lokalt API Setup](./local-setup)
-- Gennemgå [Database](./database) arkitektur for at forstå dataaccesslaget
+- Opsætning af API lokalt -- se [Lokalt API Setup](./local-setup.md)
+- Gennemgå [Database](./database.md) arkitektur for at forstå dataaccesslaget
 
 </div>
 
@@ -170,6 +171,6 @@ Lokalt kører `web`-funktionen på port 8084 og `socket`-funktionen på port 808
 
 ## Relaterede artikler
 
-- **[Database](./database)** -- Forbindelsesstrenke, skemascripter og dataadgangsmønstre
-- **[Lokalt API Setup](./local-setup)** -- Komplet trin-for-trin opsætningsvejledning
-- **[ApiHelper](../shared-libraries/api-helper)** -- Det delte bibliotek, der leverer `CustomBaseController` og auth middleware
+- **[Database](./database.md)** -- Forbindelsesstrenke, skemascripter og dataadgangsmønstre
+- **[Lokalt API Setup](./local-setup.md)** -- Komplet trin-for-trin opsætningsvejledning
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- Det delte bibliotek, der leverer `CustomBaseController` og auth middleware

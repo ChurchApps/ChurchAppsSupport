@@ -1,5 +1,6 @@
 ---
 title: "Mobile Message"
+description: "通过 Zapier 或 Make 的 webhook 将 B1 Admin 事件连接到澳大利亚短信 API Mobile Message，发送欢迎、奉献和提醒短信。"
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ Mobile Message 的 `/v1/messages` 端点每次调用接受最多 10,000 条消�
 
 ### Make 替代方案
 
-如果您更喜欢 Make，在 B1 观察事件触发器后放置 **HTTP — 发起请求** 模块，以相同方式配置它（POST、基本身份验证、JSON 主体）。查看 [Make 概览](../make) 以获取 B1 侧。
+如果您更喜欢 Make，在 B1 观察事件触发器后放置 **HTTP — 发起请求** 模块，以相同方式配置它（POST、基本身份验证、JSON 主体）。查看 [Make 概览](../make.md) 以获取 B1 侧。
 
 ## 限制和注释
 
@@ -102,6 +103,6 @@ Mobile Message 的 `/v1/messages` 端点每次调用接受最多 10,000 条消�
 
 ## 另请参阅
 
-- [Clearstream](./clearstream)、[Text In Church](./text-in-church) — 具有原生 Zapier 应用的替代短信提供商（无需 Webhooks-by-Zapier 步骤）
-- [Zapier（概览）](../zapier) — 每个 Zapier 方案的 B1 侧
+- [Clearstream](./clearstream.md)、[Text In Church](./text-in-church.md) — 具有原生 Zapier 应用的替代短信提供商（无需 Webhooks-by-Zapier 步骤）
+- [Zapier（概览）](../zapier.md) — 每个 Zapier 方案的 B1 侧
 - [Mobile Message API 文档](https://mobilemessage.com.au/api-documentation)

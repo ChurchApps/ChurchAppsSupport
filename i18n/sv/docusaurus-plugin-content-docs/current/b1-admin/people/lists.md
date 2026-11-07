@@ -1,5 +1,6 @@
 ---
 title: "Sparade listor"
+description: "Spara en sökning i People i B1 Admin som en namngiven lista och ladda den igen med ett klick. Listor uppdateras löpande, så nya matchande medlemmar visas automatiskt."
 ---
 
 # Sparade listor

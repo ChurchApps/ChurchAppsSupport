@@ -1,5 +1,7 @@
 ---
-title: "Självincheckning"
+title: "Självincheckning i B1.church medlemsportal"
+sidebar_label: "Självincheckning"
+description: "Checka in dig själv och ditt hushåll till en gudstjänst från B1.church medlemsportalen. Välj gudstjänsttider och grupper i några snabba steg."
 ---
 
 # Självincheckning
@@ -45,7 +47,7 @@ När du har valt grupper för alla som deltar trycker du på knappen längst ner
 
 Du ser en bekräftelse på att incheckningen är klar och din närvaro är sparad. Efter en stund går sidan tillbaka till gudstjänstlistan, redo för nästa incheckning.
 
-Om din kyrka skriver ut namnskyltar vid en incheckningsstation ser du i stället **Du är incheckad!** med en QR-kod och en säkerhetskod. Visa koden vid en incheckningsstation för att skriva ut dina namnskyltar, och tryck sedan på **Klar**. På en B1 Checkin-kiosk trycker du på **Skanna kod** och håller QR-koden framför kameran. Se [Skriva ut etiketter för incheckning med telefon](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Om din kyrka skriver ut namnskyltar vid en incheckningsstation ser du i stället **Du är incheckad!** med en QR-kod och en säkerhetskod. Visa koden vid en incheckningsstation för att skriva ut dina namnskyltar, och tryck sedan på **Klar**. På en B1 Checkin-kiosk trycker du på **Skanna kod** och håller QR-koden framför kameran. Se [Skriva ut etiketter för incheckning med telefon](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Om ditt hushåll redan är incheckat för den gudstjänst du väljer visas en länk **Visa incheckningskod** bredvid rubriken **Vilka är här**. Tryck på den för att visa QR-koden och säkerhetskoden igen, till exempel om du stängde sidan innan du nådde en incheckningsstation.
 

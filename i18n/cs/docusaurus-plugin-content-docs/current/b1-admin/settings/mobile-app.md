@@ -1,5 +1,6 @@
 ---
 title: "Nastavení mobilní aplikace"
+description: "Nastavte navigační záložky, dlaždice na domovské obrazovce, výzvu k přihlášení a soukromí adresáře členů pro aplikaci B1.church v B1 Admin."
 ---
 
 # Nastavení mobilní aplikace

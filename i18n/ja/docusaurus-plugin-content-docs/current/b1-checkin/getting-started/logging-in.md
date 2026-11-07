@@ -1,5 +1,7 @@
 ---
-title: "ログイン"
+title: "B1 Church Checkin へのログイン"
+sidebar_label: "ログイン"
+description: "B1 Church Checkin のキオスクアプリにサインインし、教会を選びます。チェックインタブレットの自動ログイン、管理設定、ログアウトについて説明します。"
 ---
 
 # ログイン
@@ -63,7 +65,7 @@ title: "ログイン"
 2. キオスクの PIN が設定されている場合は、求められたら PIN を入力します。
 3. **Admin Settings** 画面が開き、次のオプションが表示されます。
    - **Change Service** — 選択中のサービス時間を切り替えます
-   - **Change Printer** — [プリンターの設定](./printer-setup)を開き、プリンターを検索して選択します
+   - **Change Printer** — [プリンターの設定](./printer-setup.md)を開き、プリンターを検索して選択します
    - **Set/Change PIN** — 管理者アクセスを保護するキオスクの PIN を設定または変更します
    - **Logout** — サインアウトし、ログイン画面に戻ります
 
@@ -73,4 +75,4 @@ title: "ログイン"
 
 ## 次のステップ
 
-ログインしたら、[プリンターを設定する](./printer-setup)か、[チェックインの手順](../check-in/)に直接進めます。
+ログインしたら、[プリンターを設定する](./printer-setup.md)か、[チェックインの手順](../check-in/index.md)に直接進めます。

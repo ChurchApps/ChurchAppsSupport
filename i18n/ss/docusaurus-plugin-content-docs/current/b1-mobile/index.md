@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (Kuyekelwe Kusetjentiswa)"
+description: "Ichaza kutsi i-app yekhwe ye-B1 Mobile ayisasebentiswa, kutsi emalungu nebalawuli kufanele basebentise i-B1.church PWA esikhundleni saloko, nemakhasi langasendulo agcinwa kuze abhekisele kuwo."
 ---
 
 # B1 Mobile (Kuyekelwe Kusetjentiswa)
@@ -39,16 +40,16 @@ B1 Mobile beyisekela titfunyiselwa letihlwatjelwako kute ungasoze wehluleke kulu
 
 ## Funda Kabanti
 
-- [Kucala](./getting-started/) -- Faka i-app, wakhe i-akhawunti, futsi ukhetse libandla lakho.
-- [Dashboard](./dashboard/) -- Condzisisa sikrini sakho sasekhaya lesititfomele.
-- [Emacembu](./groups/) -- Hlala uhlangene nemacembu ebandla lakho.
-- [Kunikela](./giving/) -- Wenta iminikelo kusuka kumakhalekhukhwini wakho.
-- [Imicimbi](./events/) -- Cwaninga futsi ubhalise emicimbini yebandla letako.
-- [Kungena](./checkin/) -- Ngena emitandzweni nasemicimbini.
-- [Kukhonta](./serving/) -- Buka tinhlelo takho tekukhonta, tabelo, netfuba tekutivolontiya.
-- [Umphakatsi](./community/) -- Cwaninga luhlu lwemalunga futsi utfumele imilayeto.
-- [Kucuketfwe](./content/) -- Timshumayelo, liBhayibheli, ivesi lelilanga, netifundvo (sikrini setifundvo silikhelwe — buka [FreePlay](/docs/freeplay/)).
-- [Iphrofayela](./profile/) -- Phatsa iphrofayela yakho netilungiselelo te-akhawunti.
+- [Kucala](./getting-started/index.md) -- Faka i-app, wakhe i-akhawunti, futsi ukhetse libandla lakho.
+- [Dashboard](./dashboard/index.md) -- Condzisisa sikrini sakho sasekhaya lesititfomele.
+- [Emacembu](./groups/index.md) -- Hlala uhlangene nemacembu ebandla lakho.
+- [Kunikela](./giving/index.md) -- Wenta iminikelo kusuka kumakhalekhukhwini wakho.
+- [Imicimbi](./events/index.md) -- Cwaninga futsi ubhalise emicimbini yebandla letako.
+- [Kungena](./checkin/index.md) -- Ngena emitandzweni nasemicimbini.
+- [Kukhonta](./serving/index.md) -- Buka tinhlelo takho tekukhonta, tabelo, netfuba tekutivolontiya.
+- [Umphakatsi](./community/index.md) -- Cwaninga luhlu lwemalunga futsi utfumele imilayeto.
+- [Kucuketfwe](./content/index.md) -- Timshumayelo, liBhayibheli, ivesi lelilanga, netifundvo (sikrini setifundvo silikhelwe — buka [FreePlay](/docs/freeplay/)).
+- [Iphrofayela](./profile/index.md) -- Phatsa iphrofayela yakho netilungiselelo te-akhawunti.
 
 :::info
 B1 Mobile itsatselwe indzawo ngu-[B1.church PWA](../b1-church/getting-started/installing-pwa.md). Kufakwa lokusha kufanele kusebentise i-PWA — i-app yemvelo ayisabhajwa.

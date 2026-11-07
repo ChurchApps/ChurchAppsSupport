@@ -1,5 +1,7 @@
 ---
-title: "Conteúdo"
+title: "Recursos de Conteúdo no App B1 Mobile"
+sidebar_label: "Conteúdo"
+description: "Encontre sermões, transmissões ao vivo, leitura bíblica e Versículo do Dia no app B1 Mobile e veja quais recursos de conteúdo sua igreja ativou."
 ---
 
 # Conteúdo
@@ -30,20 +32,20 @@ Veja uma imagem de versículo bíblico com formatação elegante, que muda todos
 
 ### Lessons (Descontinuado)
 
-A tela de Lessons integrada foi substituída pelo **[FreePlay](/docs/freeplay/)** para reprodução em sala de aula, e por visitar diretamente o [Lessons.church](https://lessons.church) para navegação. Consulte a [página de referência de Lessons](./lessons) para mais detalhes.
+A tela de Lessons integrada foi substituída pelo **[FreePlay](/docs/freeplay/)** para reprodução em sala de aula, e por visitar diretamente o [Lessons.church](https://lessons.church) para navegação. Consulte a [página de referência de Lessons](./lessons.md) para mais detalhes.
 
 ## Encontrando Conteúdo
 
 Os recursos de conteúdo estão disponíveis pelo menu lateral do aplicativo. O administrador da sua igreja decide quais recursos de conteúdo estão habilitados, por isso você pode não ver todas as opções listadas acima. Se algum recurso específico não aparecer, a sua igreja pode ainda não tê-lo configurado.
 
 :::info
-Os recursos de conteúdo são configurados pelo administrador da sua igreja por meio do [B1 Admin](../../b1-admin/). Se você não vir um recurso que espera encontrar, entre em contato com a secretaria da sua igreja.
+Os recursos de conteúdo são configurados pelo administrador da sua igreja por meio do [B1 Admin](../../b1-admin/index.md). Se você não vir um recurso que espera encontrar, entre em contato com a secretaria da sua igreja.
 :::
 
 ## Próximos Passos
 
-- [Sermões](./sermons) -- Navegue e assista a sermões gravados
-- [Transmissão ao Vivo](./live-streaming) -- Assista a transmissões ao vivo
-- [Bíblia](./bible) -- Leia as Escrituras no leitor integrado
-- [Versículo do Dia](./verse-of-the-day) -- Veja o versículo diário de hoje
+- [Sermões](./sermons.md) -- Navegue e assista a sermões gravados
+- [Transmissão ao Vivo](./live-streaming.md) -- Assista a transmissões ao vivo
+- [Bíblia](./bible.md) -- Leia as Escrituras no leitor integrado
+- [Versículo do Dia](./verse-of-the-day.md) -- Veja o versículo diário de hoje
 - [FreePlay](/docs/freeplay/) -- Reproduza lições em TVs de sala de aula (substitui a tela Lessons descontinuada no aplicativo)

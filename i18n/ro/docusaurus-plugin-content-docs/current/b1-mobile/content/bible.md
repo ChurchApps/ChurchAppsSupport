@@ -1,5 +1,7 @@
 ---
-title: "Biblia"
+title: "Citirea Bibliei în B1 Mobile"
+sidebar_label: "Biblia"
+description: "Folosiți cititorul biblic integrat din aplicația B1 Mobile pentru a deschide Scriptura din meniul lateral, a naviga între cărți, capitole și versete și a găsi opțiunea Biblie a bisericii dvs."
 ---
 
 # Biblia
@@ -13,7 +15,7 @@ B1 Mobile include un cititor de Biblie integrat, astfel încât să poți citi S
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalează B1 Mobile](../getting-started/installing) și [autentifică-te](../getting-started/logging-in) în contul tău
+- [Instalează B1 Mobile](../getting-started/installing.md) și [autentifică-te](../getting-started/logging-in.md) în contul tău
 - Biserica ta trebuie să aibă activată funcția Biblie
 
 </div>
@@ -37,7 +39,7 @@ Cititorul încorporat oferă comenzi pentru parcurgerea Scripturii. Poți:
 Cititorul ocupă întreg ecranul, oferindu-ți mult spațiu pentru a citi confortabil pe dispozitivul tău.
 
 :::tip
-Fă din ecranul Biblie parte din rutina ta zilnică — este un mod rapid de a citi Scriptura oriunde te-ai afla. Combină-l cu [Versetul zilei](./verse-of-the-day) pentru inspirație zilnică.
+Fă din ecranul Biblie parte din rutina ta zilnică — este un mod rapid de a citi Scriptura oriunde te-ai afla. Combină-l cu [Versetul zilei](./verse-of-the-day.md) pentru inspirație zilnică.
 :::
 
 ## Disponibilitate
@@ -46,6 +48,6 @@ Ecranul Biblie este disponibil atunci când biserica ta a activat această func�
 
 ## Articole conexe
 
-- [Versetul zilei](./verse-of-the-day) -- Vezi un verset biblic zilnic
-- [Predici](./sermons) -- Urmărește predici care completează citirea ta din Biblie
+- [Versetul zilei](./verse-of-the-day.md) -- Vezi un verset biblic zilnic
+- [Predici](./sermons.md) -- Urmărește predici care completează citirea ta din Biblie
 - [FreePlay](/docs/freeplay/) -- Redă programa structurată pe televizoarele din clase (înlocuiește ecranul Lecții din aplicație, care este depreciat)

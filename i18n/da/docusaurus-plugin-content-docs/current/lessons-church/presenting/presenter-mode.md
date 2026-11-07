@@ -1,5 +1,6 @@
 ---
 title: "Presenter mode"
+description: "Kør en lektion på fuld skærm på en klasseværelsesprojektor eller et tv med Presenter Mode i Lessons.church, og gennemgå hver sektion under undervisningen."
 ---
 
 # Presenter mode

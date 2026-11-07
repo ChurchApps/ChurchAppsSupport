@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Prijunkite VOMO savanorių registracijas ir savitarnos registracijas prie B1 Admin asmenų ir grupių per Zapier, su API raktų leidimais ir sąrankos žingsniais."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ Kai VOMO projektas baigiasi, B1 grupę išvalykite rankiniu būdu (arba sujunkit
 
 ### Siųsti SMS padėkos žinutę „Ačiū, kad užsiregistravote“
 
-Tame pačiame Zap sujunkite VOMO Participation → Clearstream Send Text arba Text In Church Send Message. Abu turi pirminius Zapier veiksmus – žr. [Clearstream](./clearstream) ir [Text In Church](./text-in-church).
+Tame pačiame Zap sujunkite VOMO Participation → Clearstream Send Text arba Text In Church Send Message. Abu turi pirminius Zapier veiksmus – žr. [Clearstream](./clearstream.md) ir [Text In Church](./text-in-church.md).
 
 ### Nustatyti, kas atsitraukia
 
@@ -91,6 +92,6 @@ Paleiskite kasdienį Zapier *Schedule* paleidiklį, kuris VOMO iškviečia Find 
 
 ## Taip pat žr.
 
-- [Zapier (apžvalga)](../zapier) – B1 pusė kiekvienam Zapier scenarijui
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) – susieja savanorių registracijas su SMS patvirtinimais
+- [Zapier (apžvalga)](../zapier.md) – B1 pusė kiekvienam Zapier scenarijui
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) – susieja savanorių registracijas su SMS patvirtinimais
 - [Webhooks (kūrėjų nuoroda)](/docs/developer/api/webhooks) – įvykiai, kuriais VOMO gali paleisti veiksmus

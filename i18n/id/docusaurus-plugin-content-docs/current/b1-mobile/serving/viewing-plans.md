@@ -1,5 +1,7 @@
 ---
-title: "Melihat Rencana Pelayanan"
+title: "Melihat Rencana Pelayanan di B1 Mobile"
+sidebar_label: "Melihat Rencana Pelayanan"
+description: "Periksa jadwal pelayanan mendatang dan lampau di B1 Mobile, baca detail rencana serta urutan ibadah, dan cetak untuk latihan atau belakang panggung."
 ---
 
 # Melihat Rencana Pelayanan
@@ -13,7 +15,7 @@ Layar rencana di B1 Mobile memberi Anda gambaran lengkap tentang jadwal pelayana
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- [Pasang B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Pasang B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 - Ditugaskan ke setidaknya satu rencana pelayanan oleh administrator gereja Anda
 
 </div>
@@ -61,4 +63,4 @@ Anda akan menerima [notifikasi push](../community/notifications.md) saat Anda di
 
 ## Artikel Terkait
 
-- [Pendaftaran Relawan](./volunteer-signup) -- Telusuri dan daftar untuk posisi relawan yang terbuka
+- [Pendaftaran Relawan](./volunteer-signup.md) -- Telusuri dan daftar untuk posisi relawan yang terbuka

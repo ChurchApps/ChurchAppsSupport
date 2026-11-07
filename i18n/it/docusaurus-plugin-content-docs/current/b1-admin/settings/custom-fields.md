@@ -1,5 +1,6 @@
 ---
 title: "Campi personalizzati"
+description: "Definisci in B1 Admin campi personalizzati per dettagli extra, come la scadenza della verifica dei precedenti o la taglia, poi cerca e filtra su di essi."
 ---
 
 # Campi personalizzati

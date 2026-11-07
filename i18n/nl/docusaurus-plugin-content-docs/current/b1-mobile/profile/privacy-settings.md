@@ -1,5 +1,6 @@
 ---
 title: "Privacyinstellingen"
+description: "Bepaal welke profielgegevens zoals telefoon, e-mail en adres andere leden in de ledengids van B1 Mobile kunnen zien, en controleer openstaande wijzigingen."
 ---
 
 # Privacyinstellingen
@@ -13,7 +14,7 @@ Het tabblad **Zichtbaarheid** op je Profielscherm laat je bepalen wat andere ker
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [log in](../getting-started/logging-in) op je account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [log in](../getting-started/logging-in.md) op je account
 
 </div>
 
@@ -52,8 +53,8 @@ Het tabblad **Account** geeft toegang tot je beveiligingsinstellingen. Gebruik d
 
 | Tabblad | Doel |
 |---|---|
-| **Profiel** | [Bewerk je persoonlijke gegevens](./editing-profile) en foto |
-| **Huishouden** | [Bekijk je gezinsleden](./household) |
+| **Profiel** | [Bewerk je persoonlijke gegevens](./editing-profile.md) en foto |
+| **Huishouden** | [Bekijk je gezinsleden](./household.md) |
 | **Zichtbaarheid** | Bepaal wat anderen in de gids kunnen zien |
 | **In behandeling** | Controleer profielwijzigingen die op goedkeuring wachten |
 | **Account** | Beveiligingsinstellingen beheren |
@@ -62,6 +63,6 @@ Deze tabbladen werken samen om je volledige controle te geven over je persoonlij
 
 ## Gerelateerde artikelen
 
-- [Je profiel bewerken](./editing-profile) -- Werk je persoonlijke gegevens bij
-- [Huishouden](./household) -- Bekijk en beheer je gezinsleden
+- [Je profiel bewerken](./editing-profile.md) -- Werk je persoonlijke gegevens bij
+- [Huishouden](./household.md) -- Bekijk en beheer je gezinsleden
 - [Ledengids](../community/member-directory.md) -- Zie hoe je profiel voor anderen verschijnt

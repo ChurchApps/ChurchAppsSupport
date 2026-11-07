@@ -1,5 +1,6 @@
 ---
 title: "Pag-import ng Datos"
+description: "Ilipat ang umiiral na tao, grupo, attendance, at talaan ng handog sa B1 Admin gamit ang B1 Transfer tool, o mag-export ng backup ng datos anumang oras."
 ---
 
 # Pag-import ng Datos

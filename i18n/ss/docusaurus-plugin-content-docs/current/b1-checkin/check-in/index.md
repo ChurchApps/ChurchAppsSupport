@@ -1,5 +1,6 @@
 ---
 title: "Luchungechunge Lwekubhalisa"
+description: "Hamba ngesinyatselo ngesinyatselo kusuka ekukhetseni kwesevisi kuya ekuphumeni ku-kiosk ye-B1 Church Checkin, bese usetela tinkhonzo, emaqembu nebantfu ku-B1 Admin kuqala."
 ---
 
 # Luchungechunge Lwekubhalisa
@@ -12,13 +13,13 @@ Luchungechunge lwekubhalisa ku-B1 Church Checkin lulandzela indlela lelula, inya
 
 ## Luchungechunge Lwekubhalisa Ngekushesha
 
-1. **[Khetsa inkhonzo](./selecting-service)** -- Khetsa kutsi ngutsini inkhonzo loya kuyo (sib., Lisontfo Ekuseni, Lisontfo Ntsambama, Emkhatsini Weviki).
-2. **[Funa umndeni wakho](./looking-up-members)** -- Funa ngenombolo yelucingo nobe ngesibongo kute utitfole kusistimu.
-3. **[Buyeketa umndeni wakho](./household-review)** -- Bona onkhe emalunga emndeni kanye nekwabelwa kwabo kwamanje kwemacembu.
-4. **[Yabela emacembu](./group-assignment)** -- Khetsa kutsi ngutsini likilasi nobe licembu lilunga ngalinye lemndeni lelifanele liye kulo sikhatsi ngasinye senkhonzo.
-5. **[Engeta tivakashi](./adding-guests)** (ngalokutsandvekako) -- Engeta sivakashi emndenini wakho nangabe siphindzelana nawe.
-6. **[Cedza kubhalisa](./completing-checkin)** -- Cindzetela inkinobho yekubhalisa kute utfumele umlandvo wekubakhona bese uphrinta emalebula.
-7. **[Phuma](./checking-out)** (etikhungweni letinabantfu) -- Ngesikhatsi sekulanda, cinisekisa ikhodi yekuphepha kanye nemuntfu lolandzako, kusetjentiswa luhlu lwebantfu labatsenjiwe bekulanda, kubita umtali, kanye nekuphrinta kabusha emalebula.
+1. **[Khetsa inkhonzo](./selecting-service.md)** -- Khetsa kutsi ngutsini inkhonzo loya kuyo (sib., Lisontfo Ekuseni, Lisontfo Ntsambama, Emkhatsini Weviki).
+2. **[Funa umndeni wakho](./looking-up-members.md)** -- Funa ngenombolo yelucingo nobe ngesibongo kute utitfole kusistimu.
+3. **[Buyeketa umndeni wakho](./household-review.md)** -- Bona onkhe emalunga emndeni kanye nekwabelwa kwabo kwamanje kwemacembu.
+4. **[Yabela emacembu](./group-assignment.md)** -- Khetsa kutsi ngutsini likilasi nobe licembu lilunga ngalinye lemndeni lelifanele liye kulo sikhatsi ngasinye senkhonzo.
+5. **[Engeta tivakashi](./adding-guests.md)** (ngalokutsandvekako) -- Engeta sivakashi emndenini wakho nangabe siphindzelana nawe.
+6. **[Cedza kubhalisa](./completing-checkin.md)** -- Cindzetela inkinobho yekubhalisa kute utfumele umlandvo wekubakhona bese uphrinta emalebula.
+7. **[Phuma](./checking-out.md)** (etikhungweni letinabantfu) -- Ngesikhatsi sekulanda, cinisekisa ikhodi yekuphepha kanye nemuntfu lolandzako, kusetjentiswa luhlu lwebantfu labatsenjiwe bekulanda, kubita umtali, kanye nekuphrinta kabusha emalebula.
 
 Ngemuva kwekutsi kubhalisa kucedze, i-app ikhombisa skrini sempumelelo bese ibuyela ngekutentela eskrinini sekufuna, lulungele umndeni lolandzelako.
 
@@ -36,5 +37,5 @@ Cinisekisa kutsi loku lokulandzelako sekuhleliwe ku-B1 Admin ngembi kwekusebenti
 - **Bantfu** babengetiwe kusistimu benekuhlanganiswa nemindeni. Bona [kwengeta bantfu](../../b1-admin/people/adding-people.md).
 
 :::info
-Nangabe ungakabi wakuhlela i-kiosk ngco, bona [Kucala](../getting-started/) kutetimiyalo tekufaka i-app, kungena, nekuhlela iprinta.
+Nangabe ungakabi wakuhlela i-kiosk ngco, bona [Kucala](../getting-started/index.md) kutetimiyalo tekufaka i-app, kungena, nekuhlela iprinta.
 :::

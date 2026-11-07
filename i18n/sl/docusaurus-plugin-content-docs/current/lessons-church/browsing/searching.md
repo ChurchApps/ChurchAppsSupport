@@ -1,5 +1,6 @@
 ---
 title: "Iskanje"
+description: "Poišči programe, študije in ure v knjižnici Lessons.church po ključni besedi ali svetopisemski zgodbi ter izvedi, kako so rezultati razvrščeni in označeni."
 ---
 
 # Iskanje

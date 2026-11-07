@@ -1,5 +1,6 @@
 ---
 title: "Architektura oznámení a připomínek"
+description: "Jak API B1 Admin směruje oznámení, plánované připomínky, limity e-mailů církve a odhlášení z SMS přes jeden doručovací kanál a bránu předvoleb."
 ---
 
 # Architektura oznámení a připomínek
@@ -185,6 +186,6 @@ Lokálně lze stejnou logiku spustit na vyžádání příkazy `npm run timer:30
 
 ## Související stránky
 
-- [Architektura v reálném čase](../realtime): protokol WebSocket a klientské primitivy (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), na kterých stojí doručování v aplikaci
-- [Web Push oznámení](../web-push): nastavení VAPID a cesta prohlížečového Push API, kterou používá eskalace přes push
-- [Koncové body messagingu](../api/endpoints/messaging): úplné REST rozhraní pro zprávy, konverzace, spojení a trasy oznámení a připomínek
+- [Architektura v reálném čase](../realtime.md): protokol WebSocket a klientské primitivy (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), na kterých stojí doručování v aplikaci
+- [Web Push oznámení](../web-push.md): nastavení VAPID a cesta prohlížečového Push API, kterou používá eskalace přes push
+- [Koncové body messagingu](../api/endpoints/messaging.md): úplné REST rozhraní pro zprávy, konverzace, spojení a trasy oznámení a připomínek

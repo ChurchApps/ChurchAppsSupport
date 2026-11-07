@@ -1,5 +1,6 @@
 ---
 title: "Noter"
+description: "Gennemgå pastorale noter, opfølgninger og planer fra personer, grupper, begivenheder og arbejdskort på én liste i B1 Admin, nyeste først."
 ---
 
 # Noter

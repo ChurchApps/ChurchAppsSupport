@@ -1,5 +1,6 @@
 ---
 title: "Leitfäden für Freiwillige"
+description: "Rollenspezifische Leitfäden für Ehrenamtliche in Lessons.church einrichten: Jeder sieht nur seine Schritte und kann sie vorab drucken oder teilen."
 ---
 
 # Leitfäden für Freiwillige

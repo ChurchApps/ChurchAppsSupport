@@ -1,5 +1,7 @@
 ---
-title: "Visa planer"
+title: "Dina tjänsteplaner i B1.church medlemsportal"
+sidebar_label: "Visa planer"
+description: "Kontrollera dina tjänsteplaner i B1.church, acceptera eller avböj förfrågningar, ange spärrdatum och granska din tidigare tjänstehistorik."
 ---
 
 # Visa planer

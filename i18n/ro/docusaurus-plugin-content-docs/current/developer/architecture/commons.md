@@ -1,5 +1,6 @@
 ---
 title: "Content Commons"
+description: "Cum circulă cântecele, lecțiile și șabloanele trimise de utilizatori prin coada de moderare comună din Server Admin al B1 Admin, de la trimitere până la publicare."
 ---
 
 # Content Commons — Bibliotecă comună de resurse și moderare

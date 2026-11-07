@@ -1,5 +1,6 @@
 ---
 title: "Sprievodca: Správa malých skupín"
+description: "Nastavte malé skupiny, biblické štúdiá a služobné tímy v B1 Admin, potom zverejnite celocírkevný kalendár a sekciu skupín na webe B1."
 ---
 
 # Správa malých skupín
@@ -78,7 +79,7 @@ Podľa sprievodcu [Správa stránok](../website/managing-pages.md) urobte nasled
 
 1. Členovia prehliadajú a pridávajú sa do skupín na [B1.church](../../b1-church/groups/browsing-groups.md)
 2. Členovia skupiny si môžu pozrieť podrobnosti a kalendáre a pridávať príspevky do [konverzácií](../../b1-church/groups/conversations.md)
-3. Všetky funkcie skupín sú dostupné aj v [aplikácii B1 Mobile](../../b1-mobile/groups/)
+3. Všetky funkcie skupín sú dostupné aj v [aplikácii B1 Mobile](../../b1-mobile/groups/index.md)
 
 :::info
 Členovia vidia svoje skupiny, nadchádzajúce udalosti a skupinové konverzácie na webe aj v mobilnej aplikácii — všetko zostáva synchronizované.
@@ -97,4 +98,4 @@ Vaše malé skupiny sú nastavené a prepojené. Členovia môžu objavovať sku
 - [Kurátorský kalendár](../calendars/curated-calendar.md) — vytvorenie spoločného cirkevného kalendára
 - [Prehliadanie skupín (web)](../../b1-church/groups/browsing-groups.md) — ako členovia nájdu skupiny
 - [Skupinové konverzácie (web)](../../b1-church/groups/conversations.md) — skupinové diskusie
-- [Skupiny (mobil)](../../b1-mobile/groups/) — skupiny v mobilnej aplikácii
+- [Skupiny (mobil)](../../b1-mobile/groups/index.md) — skupiny v mobilnej aplikácii

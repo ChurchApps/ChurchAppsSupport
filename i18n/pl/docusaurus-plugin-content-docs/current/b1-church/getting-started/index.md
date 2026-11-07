@@ -1,5 +1,7 @@
 ---
-title: "Pierwsze kroki"
+title: "Pierwsze kroki z portalem członka B1.church"
+sidebar_label: "Pierwsze kroki"
+description: "Znajdź witrynę B1.church swojego kościoła, załóż konto członka i poznaj możliwości portalu: od grup i darowizn po meldowanie i plany."
 ---
 
 # Pierwsze kroki z B1.church

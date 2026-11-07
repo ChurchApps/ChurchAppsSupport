@@ -1,5 +1,6 @@
 ---
 title: "A B1App használata"
+description: "Tájékozódás a B1.church tagi portálon telefonon vagy számítógépen: Főoldal, alsó fülsor, Továbbiak oldal és Me oldal."
 ---
 
 # A B1App használata
@@ -92,7 +93,7 @@ A részletes oldalak -- egy csoport, egy terv, a Saját oldala, valamint a Terve
 
 ## A Saját oldal
 
-A **Saját** (`/mobile/me`) az Ön személyes központja. Megmutatja a nevét és fotóját a **Profil szerkesztése** és a **Beállítások** ([értesítési beállítások](./notification-preferences.md)) gombokkal, majd azt, ami Önre vár -- szolgálati feladatok, eseményregisztrációk és csoportesemények --, ezt követi a háztartása, a csoportjai, az idei [adakozása](../giving/), az Ön által beküldött űrlapok, a részvételi előzményei, a [regisztrációi](../events/my-registrations.md), valamint a legutóbbi értesítései és üzenetei. Részletekért lásd: [A Saját oldal](./me-page).
+A **Saját** (`/mobile/me`) az Ön személyes központja. Megmutatja a nevét és fotóját a **Profil szerkesztése** és a **Beállítások** ([értesítési beállítások](./notification-preferences.md)) gombokkal, majd azt, ami Önre vár -- szolgálati feladatok, eseményregisztrációk és csoportesemények --, ezt követi a háztartása, a csoportjai, az idei [adakozása](../giving/index.md), az Ön által beküldött űrlapok, a részvételi előzményei, a [regisztrációi](../events/my-registrations.md), valamint a legutóbbi értesítései és üzenetei. Részletekért lásd: [A Saját oldal](./me-page.md).
 
 Ha nincs bejelentkezve, a Saját oldalon helyette a **Bejelentkezés** gomb látszik.
 

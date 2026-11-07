@@ -1,5 +1,6 @@
 ---
 title: "Mga Kinakailangan"
+description: "I-set up ang Node.js, npm, Git, at platform toolchains bago magtrabaho sa ChurchApps tulad ng B1 Admin, Lessons.church, FreePlay, o API nang lokal."
 ---
 
 # Mga Kinakailangan
@@ -13,7 +14,7 @@ Nakadepende sa mga proyektong balak mong pagtrabahuhan ang mga kasangkapang kail
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Repasuhin ang [Project Overview](./project-overview) para malaman kung aling mga proyekto ang gusto mong pagtrabahuhan
+- Repasuhin ang [Project Overview](./project-overview.md) para malaman kung aling mga proyekto ang gusto mong pagtrabahuhan
 - Magkaroon ng administrator access sa iyong development machine para makapag-install ng software
 
 </div>
@@ -40,7 +41,7 @@ Kung balak mong patakbuhin nang lokal ang API (sa halip na ituro sa mga demo API
 |------|---------|-------|
 | **MySQL** | 8.0+ | Gumagamit ang bawat module ng API ng sarili nitong database |
 
-Kakailanganin mo ng anim na database para sa core API: `membership`, `attendance`, `content`, `giving`, `messaging`, at `doing`. May mga script ang API para i-initialize ang schema -- tingnan ang gabay na [API local setup](../api/local-setup).
+Kakailanganin mo ng anim na database para sa core API: `membership`, `attendance`, `content`, `giving`, `messaging`, at `doing`. May mga script ang API para i-initialize ang schema -- tingnan ang gabay na [API local setup](../api/local-setup.md).
 
 ## Pag-develop ng Mobile App
 
@@ -110,5 +111,5 @@ mysql --version   # Kailangan lang para sa lokal na API development
 
 ## Mga Susunod na Hakbang
 
-- **[Project Overview](./project-overview)** -- Tingnan ang lahat ng proyekto at kung ano ang ginagawa ng bawat isa
-- **[Environment Variables](./environment-variables)** -- I-configure ang iyong mga file na `.env`
+- **[Project Overview](./project-overview.md)** -- Tingnan ang lahat ng proyekto at kung ano ang ginagawa ng bawat isa
+- **[Environment Variables](./environment-variables.md)** -- I-configure ang iyong mga file na `.env`

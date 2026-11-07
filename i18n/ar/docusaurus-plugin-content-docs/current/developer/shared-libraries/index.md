@@ -1,5 +1,6 @@
 ---
 title: "المكتبات المشتركة"
+description: "وثائق حزم @churchapps على npm المشتركة بين B1 Admin وB1.church وواجهات API، إضافة إلى إعداد مساحة عمل Packages والإصدار باستخدام changesets."
 ---
 
 # المكتبات المشتركة
@@ -14,9 +15,9 @@ title: "المكتبات المشتركة"
 
 | الحزمة | الوصف | يُستخدم من قِبَل |
 |---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | طبقة الأساس: دوال مساعدة مستقلة عن أي إطار عمل، والواجهات المشتركة في TypeScript التي تشكّل عقد البيانات المتبادل بين التطبيقات | جميع المشاريع |
-| [`@churchapps/apihelper`](./api-helper) | أدوات الخادم المبنية على Express: المصادقة، والمتحكّمات الأساسية، والوصول إلى قاعدة البيانات، وتكاملات AWS والبريد الإلكتروني | جميع واجهات API |
-| [`@churchapps/apphelper`](./app-helper) | مكونات React المشتركة ووحدات الميزات (تسجيل الدخول، والتبرعات، والنماذج، وMarkdown، والموقع الإلكتروني) | جميع تطبيقات الويب |
+| [`@churchapps/helpers`](./helpers.md) | طبقة الأساس: دوال مساعدة مستقلة عن أي إطار عمل، والواجهات المشتركة في TypeScript التي تشكّل عقد البيانات المتبادل بين التطبيقات | جميع المشاريع |
+| [`@churchapps/apihelper`](./api-helper.md) | أدوات الخادم المبنية على Express: المصادقة، والمتحكّمات الأساسية، والوصول إلى قاعدة البيانات، وتكاملات AWS والبريد الإلكتروني | جميع واجهات API |
+| [`@churchapps/apphelper`](./app-helper.md) | مكونات React المشتركة ووحدات الميزات (تسجيل الدخول، والتبرعات، والنماذج، وMarkdown، والموقع الإلكتروني) | جميع تطبيقات الويب |
 | `@churchapps/content-providers` | تجريد فوق مزودي المحتوى من أطراف ثالثة (Lessons.church وPlanning Center وDropbox وغيرها) | Api وB1Admin وB1App وFreePlay |
 | `@churchapps/integration-sdk` | أداة لبناء تكاملات B1.church: التحقق من Webhook، وعميل REST مُنمَّط الأنواع، ومساعدات OAuth | مطوّرو التكاملات الخارجية |
 | `@churchapps/texting` | تجريد لمزودي الرسائل النصية القصيرة (Text In Church وClearstream وMutual Ministry وMinistryStuff وNalo Solutions وTwilio) | Api |

@@ -1,5 +1,7 @@
 ---
-title: "Inscription des bénévoles"
+title: "Inscription bénévole dans l’application B1 Mobile"
+sidebar_label: "Inscription des bénévoles"
+description: "Trouvez les postes bénévoles ouverts, inscrivez-vous ou retirez votre inscription dans B1 Mobile. Délais et fonctionnement des limites de places expliqués."
 ---
 
 # Inscription des bénévoles
@@ -13,7 +15,7 @@ Parcourez les postes de bénévolat disponibles et inscrivez-vous aux services �
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Installez B1 Mobile](../getting-started/installing) et [connectez-vous](../getting-started/logging-in) à votre compte
+- [Installez B1 Mobile](../getting-started/installing.md) et [connectez-vous](../getting-started/logging-in.md) à votre compte
 - Votre administrateur d'église doit avoir activé l'inscription volontaire sur au moins un poste
 
 </div>
@@ -60,5 +62,5 @@ Activez les [notifications push](../community/notifications.md) pour être infor
 
 ## Articles connexes
 
-- [Consulter les plans](./viewing-plans) -- Consultez vos plans assignés et leurs ordres de service
+- [Consulter les plans](./viewing-plans.md) -- Consultez vos plans assignés et leurs ordres de service
 - [Notifications](../community/notifications.md) -- Restez informé de vos affectations de service

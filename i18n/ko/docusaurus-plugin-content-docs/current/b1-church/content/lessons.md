@@ -1,5 +1,7 @@
 ---
-title: "수업(지원 중단됨)"
+title: "B1.church의 지원 중단된 Lessons 탭"
+sidebar_label: "수업(지원 중단됨)"
+description: "B1.church의 Lessons 탭은 지원이 중단되었습니다. 레슨 교육과정이 이제 있는 곳을 찾으세요. Lessons.church에서 둘러보고 FreePlay로 교실 TV에서 재생하세요."
 ---
 
 # 수업(지원 중단됨)
@@ -9,7 +11,7 @@ B1.church의 내장 **수업** 탭은 지원이 중단되었습니다. Lessons.c
 
 교과 과정을 찾아보거나 일정을 정하거나 직접 편집하려면 브라우저에서 [Lessons.church](https://lessons.church)에 로그인하세요. 교실 TV에서 수업을 재생하려면 TV 기기에 [FreePlay](/docs/freeplay/getting-started/)를 설치하세요.
 
-B1Admin에서 수업 계획 유형과 연결된 그룹의 부모는 이 지원 중단된 탭이 아닌 [그룹 세부정보](/docs/b1-church/groups/group-details.md) 페이지에서 **이 주의 수업**을 봅니다.
+B1Admin에서 수업 계획 유형과 연결된 그룹의 부모는 이 지원 중단된 탭이 아닌 [그룹 세부정보](../groups/group-details.md) 페이지에서 **이 주의 수업**을 봅니다.
 :::
 
 <div class="article-intro">

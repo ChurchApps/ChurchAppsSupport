@@ -1,5 +1,6 @@
 ---
 title: "Painel"
+description: "Conheça a tela inicial do B1 Mobile, onde os recursos mais usados aparecem como cartões grandes e os demais ficam em Ações Rápidas."
 ---
 
 # Painel
@@ -28,7 +29,7 @@ Logo abaixo do cartão de destaque, você verá até dois **cartões em destaque
 
 ## Ações rápidas
 
-Os demais recursos aparecem em uma grade de **Ações rápidas** abaixo dos cartões em destaque. Cada item mostra um ícone e um rótulo. São todos os outros links de navegação configurados pela sua igreja, dando acesso a tudo, desde [grupos](../groups/) e [doações](../giving/) até [check-in](../checkin/), [sermões](../content/sermons.md) e muito mais.
+Os demais recursos aparecem em uma grade de **Ações rápidas** abaixo dos cartões em destaque. Cada item mostra um ícone e um rótulo. São todos os outros links de navegação configurados pela sua igreja, dando acesso a tudo, desde [grupos](../groups/index.md) e [doações](../giving/index.md) até [check-in](../checkin/index.md), [sermões](../content/sermons.md) e muito mais.
 
 ## Como o layout se adapta
 
@@ -41,7 +42,7 @@ O layout do painel é personalizado com base nos seus padrões de uso. Sempre qu
 Se você ainda não usou o aplicativo, os recursos aparecem na ordem padrão configurada pela sua igreja. Com o tempo, o painel se reorganiza para refletir seus hábitos.
 
 :::info
-Os recursos disponíveis no seu painel são configurados pelo administrador da sua igreja por meio do [B1 Admin](../../b1-admin/). Se você não encontrar um recurso que espera, entre em contato com a secretaria da igreja.
+Os recursos disponíveis no seu painel são configurados pelo administrador da sua igreja por meio do [B1 Admin](../../b1-admin/index.md). Se você não encontrar um recurso que espera, entre em contato com a secretaria da igreja.
 :::
 
 ## Atualizando o painel

@@ -1,5 +1,7 @@
 ---
-title: "Plänen anzeigen"
+title: "Palvelusuunnitelmien tarkastelu B1 Mobilessa"
+sidebar_label: "Plänen anzeigen"
+description: "Tarkista tulevat ja menneet palvelemisaikataulusi B1 Mobilessa, lue suunnitelmien tiedot ja palvelujärjestys sekä tulosta suunnitelmat harjoituksiin tai lavan taakse."
 ---
 
 # Plänen anzeigen
@@ -13,7 +15,7 @@ Der Plan-Bildschirm in B1 Mobile bietet dir einen vollständigen Überblick übe
 <div class="prereqs">
 <h4>Bevor du beginnst</h4>
 
-- [B1 Mobile installieren](../getting-started/installing) und dich in deinem Konto [anmelden](../getting-started/logging-in)
+- [B1 Mobile installieren](../getting-started/installing.md) und dich in deinem Konto [anmelden](../getting-started/logging-in.md)
 - Von deinem Gemeindeadministrator mindestens einem Dienstplan zugewiesen werden
 
 </div>
@@ -61,4 +63,4 @@ Du erhältst [Push-Benachrichtigungen](../community/notifications.md), wenn dir 
 
 ## Verwandte Artikel
 
-- [Freiwilligen-Anmeldung](./volunteer-signup) -- Offene Freiwilligenstellen durchsehen und sich dafür anmelden
+- [Freiwilligen-Anmeldung](./volunteer-signup.md) -- Offene Freiwilligenstellen durchsehen und sich dafür anmelden

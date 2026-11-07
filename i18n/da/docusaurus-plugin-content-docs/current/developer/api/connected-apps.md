@@ -1,12 +1,13 @@
 ---
 title: "Forbundne apps og OAuth"
+description: "Forbind tredjepartsapps til en kirkes B1-data med OAuth 2.0-samtykke, uden delte adgangskoder eller API-nøgler, og tilbagekald adgang i B1 Admin."
 ---
 
 # Forbundne apps og OAuth
 
 <div class="article-intro">
 
-B1 API'et understøtter OAuth 2.0, så en tredjepartsapp kan bede hver kirkeadministrator om tilladelse til at få adgang til deres data, uden at kirken nogensinde deler en adgangskode eller API-nøgle. En **forbundet app** er et OAuth-token, som en kirkeadministrator har godkendt. Hvis du tilbagekalder det, afbrydes tredjepartsappens adgang med ét klik. Brug denne fremgangsmåde til multi-tenant SaaS-connectors. Til en integration for én enkelt kirke foretrækkes [API-nøgler](./api-keys).
+B1 API'et understøtter OAuth 2.0, så en tredjepartsapp kan bede hver kirkeadministrator om tilladelse til at få adgang til deres data, uden at kirken nogensinde deler en adgangskode eller API-nøgle. En **forbundet app** er et OAuth-token, som en kirkeadministrator har godkendt. Hvis du tilbagekalder det, afbrydes tredjepartsappens adgang med ét klik. Brug denne fremgangsmåde til multi-tenant SaaS-connectors. Til en integration for én enkelt kirke foretrækkes [API-nøgler](./api-keys.md).
 
 </div>
 
@@ -27,7 +28,7 @@ B1 API'et understøtter OAuth 2.0, så en tredjepartsapp kan bede hver kirkeadmi
 | **Forbundet app** | Et specifikt par af `(klient, kirkeadministrator)`, hvor administratoren har givet klienten adgang. Hver forbundet app er knyttet til et OAuth-opdateringstoken. |
 | **Adgangstoken** | Et kortlivet JWT (ca. 7 dage), som klienten bruger til API-kald. Har samme form som et bruger-JWT: `Authorization: Bearer <jwt>`. |
 | **Opdateringstoken** | En langlivet, uigennemsigtig streng (ca. 90 dage), som klienten bruger til at udstede nye adgangstokens. |
-| **Scope** | Begrænser, hvad adgangstokenet må gøre. Se [scope-kataloget](./api-keys#scopes). |
+| **Scope** | Begrænser, hvad adgangstokenet må gøre. Se [scope-kataloget](./api-keys.md#scopes). |
 
 ## Godkendelsesflows
 
@@ -162,7 +163,7 @@ Listen udelader automatisk udløbne tokens.
 
 ## Scopes og samtykke
 
-Scope-strengene er det samme katalog som for [API-nøgler](./api-keys#scopes). Bedste praksis for klienter:
+Scope-strengene er det samme katalog som for [API-nøgler](./api-keys.md#scopes). Bedste praksis for klienter:
 
 - **Anmod om de snævreste scopes, der virker.** Kirker lægger mærke til det, hvis du beder om `donations:write`, når du kun har brug for at læse personer.
 - **Brug et opdateringstoken og kortlivede adgangstokens.** Langlivede adgangstokens er sværere at tilbagekalde hurtigt.
@@ -183,7 +184,7 @@ Registrerede redirect-URI'er skal præcis matche `redirect_uri` i anmodningen. E
 
 ### Dynamisk klientregistrering
 
-`POST /membership/oauth/register` (offentlig, RFC 7591) gør det muligt for en klient, f.eks. claude.ai's MCP-connector, at registrere sig selv. Det annonceres i API'ets `/.well-known/oauth-authorization-server`-dokument. Se [MCP-server → OAuth-opdagelse](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (offentlig, RFC 7591) gør det muligt for en klient, f.eks. claude.ai's MCP-connector, at registrere sig selv. Det annonceres i API'ets `/.well-known/oauth-authorization-server`-dokument. Se [MCP-server → OAuth-opdagelse](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ På B1Admins samtykkeside får en selvregistreret klient en besked om, at den ha
 
 ## SDK-understøttelse
 
-Pakken `@churchapps/integration-sdk` indpakker hvert OAuth-flow med typede hjælpefunktioner: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` og `.awaitDeviceToken()`. Se pakkens README og [Webhooks](./webhooks#sdk-support) for et eksempel fra start til slut.
+Pakken `@churchapps/integration-sdk` indpakker hvert OAuth-flow med typede hjælpefunktioner: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` og `.awaitDeviceToken()`. Se pakkens README og [Webhooks](./webhooks.md#sdk-support) for et eksempel fra start til slut.

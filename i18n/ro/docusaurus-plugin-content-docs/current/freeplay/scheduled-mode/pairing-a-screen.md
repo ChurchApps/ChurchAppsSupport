@@ -1,5 +1,6 @@
 ---
 title: "Asocierea unui ecran"
+description: "Asociați un TV FreePlay cu calendarul unui grup de ecrane în FreePlay Admin, folosind codul de patru litere de pe TV, ca să redea conținut programat singur."
 ---
 
 # Asocierea unui ecran
@@ -13,9 +14,9 @@ Pentru a pune un televizor pe un calendar, asociază-l cu **FreePlay Admin**. Te
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Instalează și pornește FreePlay pe televizor. Vezi [Primii pași](../getting-started/)
+- Instalează și pornește FreePlay pe televizor. Vezi [Primii pași](../getting-started/index.md)
 - Ai nevoie de un cont ChurchApps pentru biserica ta, ca să te poți conecta la FreePlay Admin
-- Opțional, [creează o listă de redare](./building-playlists) și [programeaz-o](./scheduling-the-calendar) mai întâi, astfel încât televizorul să aibă imediat ceva de redat
+- Opțional, [creează o listă de redare](./building-playlists.md) și [programeaz-o](./scheduling-the-calendar.md) mai întâi, astfel încât televizorul să aibă imediat ceva de redat
 
 </div>
 
@@ -38,7 +39,7 @@ Codul este valabil 15 minute, iar un numărătoare inversă de sub el arată câ
 5. Sub **Mod**, lasă selectat **Programat**. Televizorul va reda conform calendarului grupului, în mod automat.
 6. Dă clic pe **Asociază**.
 
-Televizorul afișează **Conectat!** și apoi **Se încarcă programul...**. Descarcă ce este programat și începe redarea. Vezi [Redarea programată pe televizor](./scheduled-playback).
+Televizorul afișează **Conectat!** și apoi **Se încarcă programul...**. Descarcă ce este programat și începe redarea. Vezi [Redarea programată pe televizor](./scheduled-playback.md).
 
 :::info
 Dacă FreePlay Admin afișează **Codul nu corespunde unui televizor**, verifică codul de pe ecran. Dacă a expirat, folosește codul nou afișat acum de televizor.
@@ -51,11 +52,11 @@ Setarea **Mod** are două opțiuni:
 - **Programat** - Redă conform calendarului grupului, în mod automat. Nimeni nu trebuie să apese Start.
 - **Manual** - Cineva alege conținutul cu telecomanda. Un ecran manual apare în continuare în lista ta **Ecrane**, dar nu urmează un calendar, așa că câmpul **Grup** este dezactivat.
 
-Poți schimba ulterior modul unui ecran din **Editează**, de pe [pagina Ecrane](./managing-screens).
+Poți schimba ulterior modul unui ecran din **Editează**, de pe [pagina Ecrane](./managing-screens.md).
 
 ## Asocierea cu un plan de serviciu în schimb
 
-Codul de pe ecranul **Asociază acest ecran** funcționează și în B1 Admin. Dacă îl introduci acolo și alegi un tip de plan sub **Afișează planurile pentru**, televizorul urmărește acel tip de plan în [Modul plan](../plan-mode/), în loc de un calendar. Vezi [Asocierea dispozitivului tău](../plan-mode/device-pairing).
+Codul de pe ecranul **Asociază acest ecran** funcționează și în B1 Admin. Dacă îl introduci acolo și alegi un tip de plan sub **Afișează planurile pentru**, televizorul urmărește acel tip de plan în [Modul plan](../plan-mode/index.md), în loc de un calendar. Vezi [Asocierea dispozitivului tău](../plan-mode/device-pairing.md).
 
 ## Modificarea sau dezasocierea de pe televizor
 
@@ -79,6 +80,6 @@ Televizorul revine la afișarea unui cod de asociere. Asociază-l din nou oricâ
 
 ## Articole conexe
 
-- **[Gestionarea ecranelor și a grupurilor](./managing-screens)** - Redenumește un ecran, mută-l în alt grup sau verifică descărcările sale
-- **[Programarea calendarului](./scheduling-the-calendar)** - Decide ce redau ecranele grupului
-- **[Alegerea unui mod de asociere](../getting-started/pairing-modes)** - Compară Modul programat cu Modul plan și navigarea furnizorilor pe cont propriu
+- **[Gestionarea ecranelor și a grupurilor](./managing-screens.md)** - Redenumește un ecran, mută-l în alt grup sau verifică descărcările sale
+- **[Programarea calendarului](./scheduling-the-calendar.md)** - Decide ce redau ecranele grupului
+- **[Alegerea unui mod de asociere](../getting-started/pairing-modes.md)** - Compară Modul programat cu Modul plan și navigarea furnizorilor pe cont propriu

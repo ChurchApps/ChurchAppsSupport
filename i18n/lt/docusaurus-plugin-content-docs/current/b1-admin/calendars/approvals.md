@@ -1,5 +1,6 @@
 ---
 title: "Kalendoriaus patvirtinimai"
+description: "Peržiūrėkite kambarių ir išteklių rezervavimo užklausas B1 Admin, patikrinkite konfliktus, tada patvirtinkite arba atmeskite, galbūt paskelbdami renginį."
 ---
 
 # Kalendoriaus patvirtinimai
@@ -13,7 +14,7 @@ Patvirtinimų puslapyje administratoriai peržiūri ir tvarko laukiančius kamba
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Sukonfigūruokite kambarius arba išteklius su **Patvirtinimo grupe** skiltyje [Kambariai ir ištekliai](rooms-resources)
+- Sukonfigūruokite kambarius arba išteklius su **Patvirtinimo grupe** skiltyje [Kambariai ir ištekliai](./rooms-resources.md)
 - Jums reikia **Kalendorių administratoriaus** leidimo arba **content.edit** leidimo
 
 </div>
@@ -41,7 +42,7 @@ Spustelėkite **Patvirtinti** arba **Atmesti** bet kuriame rezervavimo prašyme 
 Kai spustelite **Patvirtinti**, atsidaro dialogo langas **Patvirtinti rezervavimą**, kuriame tuo pačiu veiksmu galite paskelbti ir renginį:
 
 1. Pažymėkite **Skelbti viešame kalendoriuje**, kad renginys būtų matomas viešai jo grupės kalendoriuje. Jei žymės nepažymėsite, rezervavimas bus patvirtintas be renginio matomumo pakeitimo.
-2. Kai pažymėta **Skelbti viešame kalendoriuje**, galite pasirinktinai iš **Taip pat pridėti į kalendorių** pasirinkti kuratorinį kalendorių, kad renginys būtų pridėtas ir į vieną iš jūsų [kuratorinių kalendorių](curated-calendar). Jei to nereikia, palikite **Nėra**. (Ši parinktis rodoma tik tuo atveju, jei turite **content.edit** leidimą.)
+2. Kai pažymėta **Skelbti viešame kalendoriuje**, galite pasirinktinai iš **Taip pat pridėti į kalendorių** pasirinkti kuratorinį kalendorių, kad renginys būtų pridėtas ir į vieną iš jūsų [kuratorinių kalendorių](./curated-calendar.md). Jei to nereikia, palikite **Nėra**. (Ši parinktis rodoma tik tuo atveju, jei turite **content.edit** leidimą.)
 3. Spustelėkite **Patvirtinti**.
 
 ## Laukiantys renginiai
@@ -49,10 +50,10 @@ Kai spustelite **Patvirtinti**, atsidaro dialogo langas **Patvirtinti rezervavim
 Jei jūsų kalendoriaus darbo eiga reikalauja, kad renginiai būtų patvirtinti prieš tapdami matomi visuomenei, laukiantys renginiai rodomi skiltyje **Renginių prašymai**. Spustelėkite **Patvirtinti**, kad renginys būtų paskelbtas kalendoriuje, arba **Atmesti**, kad pateikėjas gautų pranešimą, jog reikia pakeitimų.
 
 :::tip
-Nustatykite kambariui patvirtinimo grupę skiltyje [Kambariai ir ištekliai](rooms-resources), kad tam kambariui būtų reikalaujama patvirtinimo. Tada grupės, turinčios prieigą, kurdamos renginius, galės prašyti to kambario, o tokie prašymai pateks į šį puslapį.
+Nustatykite kambariui patvirtinimo grupę skiltyje [Kambariai ir ištekliai](./rooms-resources.md), kad tam kambariui būtų reikalaujama patvirtinimo. Tada grupės, turinčios prieigą, kurdamos renginius, galės prašyti to kambario, o tokie prašymai pateks į šį puslapį.
 :::
 
 ## Susiję straipsniai
 
-- [Kambariai, ištekliai ir planavimas](rooms-resources) — sukonfigūruokite rezervuojamus kambarius ir išteklius
-- [Kalendorių kūrimas](creating-calendars) — tvarkykite kalendorius ir renginius
+- [Kambariai, ištekliai ir planavimas](./rooms-resources.md) — sukonfigūruokite rezervuojamus kambarius ir išteklius
+- [Kalendorių kūrimas](./creating-calendars.md) — tvarkykite kalendorius ir renginius

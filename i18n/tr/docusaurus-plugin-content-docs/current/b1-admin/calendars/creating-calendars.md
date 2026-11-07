@@ -1,5 +1,6 @@
 ---
 title: "Takvimler Oluşturma"
+description: "B1 Admin'de takvim oluşturun, grupları bağlayın ya da .ics dosyalarını içe aktarın; etkinlikleri, kayıtları ve notları tek yerden yönetin."
 ---
 
 # Takvimler Oluşturma
@@ -61,7 +62,7 @@ Grupları takviminize bağlamak, etkinlikleri otomatik olarak toplamanın güçl
 :::
 
 :::info
-Kilisenizdeki birçok gruptan etkinlik alan tek bir takvim oluşturmak istiyorsanız, daha kolay bir yöntem için [Düzenlenmiş Takvim](curated-calendar) sayfasına bakın.
+Kilisenizdeki birçok gruptan etkinlik alan tek bir takvim oluşturmak istiyorsanız, daha kolay bir yöntem için [Düzenlenmiş Takvim](./curated-calendar.md) sayfasına bakın.
 :::
 
 ## Etkinlik Ekleme ve Düzenleme {#adding-and-editing-events}
@@ -75,7 +76,7 @@ Etkinlik eklemek için takvim ayrıntı sayfasında **Yeni Etkinlik**'e tıklay�
 - **Başlangıç** ve **Bitiş**, **Tekrarlar** ve **Görünürlük** (**Herkese açık** veya **Özel**).
 - **Etiketler** -- Virgülle ayrılmış etiketler, örneğin `youth, students`. Web sitenizdeki bir Takvim öğesi yalnızca belirli bir etiketi olan etkinlikleri gösterecek şekilde ayarlanabilir. Bu, etkinliğin kayıt ayarlarında gösterilen aynı **Etiketler** alanıdır.
 - **Notları kimler görebilir** ve **Notları kimler paylaşabilir** -- Etkinliğin notlarını kimlerin okuyup ekleyebileceğini belirler (bkz. [Etkinlik Notları](#event-notes)). **Yalnızca personel** (varsayılan), **Grup liderleri** (etkinliğin grubunun liderleri) veya **Grup üyeleri** (liderleri de dahil olmak üzere etkinliğin grubundaki herkes) seçeneklerinden birini seçin.
-- **Odalar** ve **Kaynaklar** -- Etkinlik için alan ve ekipman ayırın. Bkz. [Odalar, Kaynaklar ve Planlama](rooms-resources).
+- **Odalar** ve **Kaynaklar** -- Etkinlik için alan ve ekipman ayırın. Bkz. [Odalar, Kaynaklar ve Planlama](./rooms-resources.md).
 
 **Kaydet**'e tıklayın. Etkinlik tekrarlanıyorsa, B1 onayınızı ister, çünkü kaydetmek serideki her tekrarı günceller.
 
@@ -101,12 +102,12 @@ Takvimi web sitenize eklemek için bir sayfaya bir **Takvim** öğesi ekleyin ve
    - **Kayıt Kapanır** -- Kaydın kapanacağı tarih ve saat.
    - **Etiketler** -- Kaydedilebilir etkinlikleri kategorize etmeye yardımcı olan virgülle ayrılmış etiketler (ör. "gençlik, inziva, vbs").
    - **Kayıt Soruları** -- İsteğe bağlı olarak bir [form](../forms/creating-forms.md) ekleyin; böylece kayıt olanlar kayıt sırasında ek sorulara (beslenme kısıtlamaları, tişört bedeni, acil durum iletişim kişisi vb.) yanıt verir. Soruları atlamak için **Yok**'u seçin.
-   - **Bekleme Listesini Etkinleştir** -- Etkinlik dolduğunda, ek kayıt olanların geri çevrilmek yerine bekleme listesine katılmasına izin verin. Bkz. [Ücretli Kayıtlar](paid-registrations#waitlist).
+   - **Bekleme Listesini Etkinleştir** -- Etkinlik dolduğunda, ek kayıt olanların geri çevrilmek yerine bekleme listesine katılmasına izin verin. Bkz. [Ücretli Kayıtlar](./paid-registrations.md#waitlist).
 4. Etkinliği kaydedin.
 
-Ücretli etkinlikler için aynı ayarlar sayfası, fiyatlandırılmış **Katılımcı Türleri**, isteğe bağlı **Seçimler** (ek hizmetler) ve **İndirim Kodları** tanımlamanızı sağlar; ödemeler kilisenizin bağış sağlayıcısı üzerinden alınır. Tam anlatım için bkz. [Ücretli Kayıtlar](paid-registrations).
+Ücretli etkinlikler için aynı ayarlar sayfası, fiyatlandırılmış **Katılımcı Türleri**, isteğe bağlı **Seçimler** (ek hizmetler) ve **İndirim Kodları** tanımlamanızı sağlar; ödemeler kilisenizin bağış sağlayıcısı üzerinden alınır. Tam anlatım için bkz. [Ücretli Kayıtlar](./paid-registrations.md).
 
-Kayıt etkinleştirildiğinde, üyeler etkinliği [B1 web sitesinde](../../b1-church/events/registering) veya [B1 Mobil uygulamada](../../b1-mobile/events/registering) görüntülediklerinde **Bu Etkinlik için Kaydol** düğmesini görecektir. Bir form eklediyseniz, kayıt olanlar kayıt sırasında bir **Sorular** adımını görür ve yanıtları kayıtlarıyla birlikte kaydedilir.
+Kayıt etkinleştirildiğinde, üyeler etkinliği [B1 web sitesinde](../../b1-church/events/registering.md) veya [B1 Mobil uygulamada](../../b1-mobile/events/registering.md) görüntülediklerinde **Bu Etkinlik için Kaydol** düğmesini görecektir. Bir form eklediyseniz, kayıt olanlar kayıt sırasında bir **Sorular** adımını görür ve yanıtları kayıtlarıyla birlikte kaydedilir.
 
 :::info
 Kayıt Soruları yalnızca **kısıtlı** olarak işaretlenmemiş formlarla çalışır. Kısıtlı bir form, gösterilmek yerine kayıt sırasında otomatik olarak atlanır; bu nedenle etkinliğe soru eklerken kısıtlı olmayan bir form kullanın.
@@ -126,7 +127,7 @@ Etkinlikleriniz için kayıtları görüntülemek ve yönetmek üzere:
    - Bir yer açıldığında bekleme listesindeki kayıtları **Öne Al**
    - **CSV Dışa Aktar** -- Katılımcı türleri, seçimler, ödeme tutarları ve soru yanıtları dahil tüm kayıtları indirin
 
-Etkinliğe Kayıt Soruları eklenmişse, ayrıntı sayfasında ayrıca henüz yanıt vermemiş kayıt olanları hızlıca bulmak için bir **Yalnızca yanıtlanmamış sorular** filtresi ve yanıtlanmış her kaydın yanında yanıtlarını görmek için bir **Yanıtları Görüntüle** düğmesi bulunur. Ücretli etkinliklerde bir **Tür** sütunu, bir **Ödenen / Toplam** sütunu, tür başına sayılar ve bir ödeme ayrıntıları iletişim kutusu eklenir -- bkz. [Ücretli Kayıtlar](paid-registrations#the-registration-roster).
+Etkinliğe Kayıt Soruları eklenmişse, ayrıntı sayfasında ayrıca henüz yanıt vermemiş kayıt olanları hızlıca bulmak için bir **Yalnızca yanıtlanmamış sorular** filtresi ve yanıtlanmış her kaydın yanında yanıtlarını görmek için bir **Yanıtları Görüntüle** düğmesi bulunur. Ücretli etkinliklerde bir **Tür** sütunu, bir **Ödenen / Toplam** sütunu, tür başına sayılar ve bir ödeme ayrıntıları iletişim kutusu eklenir -- bkz. [Ücretli Kayıtlar](./paid-registrations.md#the-registration-roster).
 
 :::tip
 Etkinliklerin ne kadar hızlı dolduğunu izlemek için kapasite ilerleme çubuğunu kullanın. Etkinlik kapasiteye ulaştığında veya kapasiteyi aştığında çubuk kırmızıya döner.
@@ -134,7 +135,7 @@ Etkinliklerin ne kadar hızlı dolduğunu izlemek için kapasite ilerleme çubu�
 
 ## Sonraki Adımlar
 
-- [Düzenlenmiş Takvim](curated-calendar) -- Birden fazla gruptan etkinlik alan bir takvim oluşturun
-- [Ücretli Kayıtlar](paid-registrations) -- Katılımcı türleri, ek hizmet seçimleri, indirim kodları, ödemeler ve bekleme listeleri
-- [Etkinlik Kaydı Kılavuzu](../guides/event-registration) -- Etkinlik kaydını kurmak için adım adım kılavuz
-- [Takvimlere Genel Bakış](./) -- Takvimler genel bakışına dönün
+- [Düzenlenmiş Takvim](./curated-calendar.md) -- Birden fazla gruptan etkinlik alan bir takvim oluşturun
+- [Ücretli Kayıtlar](./paid-registrations.md) -- Katılımcı türleri, ek hizmet seçimleri, indirim kodları, ödemeler ve bekleme listeleri
+- [Etkinlik Kaydı Kılavuzu](../guides/event-registration.md) -- Etkinlik kaydını kurmak için adım adım kılavuz
+- [Takvimlere Genel Bakış](./index.md) -- Takvimler genel bakışına dönün

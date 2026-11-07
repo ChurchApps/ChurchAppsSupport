@@ -1,5 +1,6 @@
 ---
 title: "Approbations de Calendrier"
+description: "Examinez les demandes de réservation de salles et de ressources en attente dans B1 Admin, vérifiez les conflits, puis approuvez ou refusez-les, en publiant éventuellement l'événement."
 ---
 
 # Approbations de Calendrier
@@ -13,7 +14,7 @@ La page Approbations est l'endroit où les administrateurs examinent et agissent
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Configurez les salles ou ressources avec un **Groupe d'Approbation** dans [Salles et Ressources](rooms-resources)
+- Configurez les salles ou ressources avec un **Groupe d'Approbation** dans [Salles et Ressources](./rooms-resources.md)
 - Vous avez besoin de la permission **Calendars Admin** ou de la permission **content.edit**
 
 </div>
@@ -49,10 +50,10 @@ Lorsque vous cliquez sur **Approuver**, une boîte de dialogue **Approuver la r�
 Si votre flux de travail de calendrier nécessite l'approbation des événements avant qu'ils ne deviennent visibles au public, les événements en attente apparaissent dans la section **Demandes d'événement**. Cliquez sur **Approuver** pour publier un événement au calendrier, ou sur **Rejeter** pour notifier le soumetteur que des modifications sont nécessaires.
 
 :::tip
-Configurez un Groupe d'Approbation sur une salle dans [Salles et Ressources](rooms-resources) pour exiger l'approbation pour cette salle. Les groupes avec accès peuvent ensuite demander la salle lors de la création d'événements, et ces demandes circulent vers cette page.
+Configurez un Groupe d'Approbation sur une salle dans [Salles et Ressources](./rooms-resources.md) pour exiger l'approbation pour cette salle. Les groupes avec accès peuvent ensuite demander la salle lors de la création d'événements, et ces demandes circulent vers cette page.
 :::
 
 ## Articles Connexes
 
-- [Salles, Ressources et Planification](rooms-resources) — configurer les salles et ressources réservables
-- [Création de Calendriers](creating-calendars) — gérer les calendriers et les événements
+- [Salles, Ressources et Planification](./rooms-resources.md) — configurer les salles et ressources réservables
+- [Création de Calendriers](./creating-calendars.md) — gérer les calendriers et les événements

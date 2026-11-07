@@ -1,5 +1,7 @@
 ---
-title: "Pridigy"
+title: "Procházení kázání na webu B1.church"
+sidebar_label: "Pridigy"
+description: "Procházejte a sledujte nahraná kázání z knihovny vaší církve na webu B1.church, seskupená do sérií nebo playlistů. Bez přihlášení."
 ---
 
 # Pridigy

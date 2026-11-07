@@ -1,5 +1,6 @@
 ---
 title: "Predloge načrtov"
+description: "Vrstni red bogoslužja in razporeditev položajev shranite kot predlogo načrta v B1 Admin ter jo nato z enim klikom uporabite za prihodnje načrte."
 ---
 
 # Predloge načrtov

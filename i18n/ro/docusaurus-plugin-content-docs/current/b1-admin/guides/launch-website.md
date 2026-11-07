@@ -1,5 +1,6 @@
 ---
 title: "Ghid: Lansați site-ul web al bisericii"
+description: "Configurați site-ul bisericii în B1 Admin: pagina principală, culori și logo, pagini-cheie, domeniu propriu și formulare de donații."
 ---
 
 # Lansați site-ul web al bisericii

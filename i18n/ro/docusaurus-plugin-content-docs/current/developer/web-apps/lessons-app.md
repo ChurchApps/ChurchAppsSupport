@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "Configurați local editorul de lecții LessonsApp (Next.js) pe Node.js 22+, conectați-l la un LessonsApi local și aflați despre implementarea S3/CloudFront."
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ LessonsApp este aplicația de gestionare a conținutului lecțiilor pentru [Less
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Instalați **Node.js 22+** și **Git** -- consultați [Cerințe preliminare](../setup/prerequisites)
-- Configurați ținta API (LessonsApi local) -- consultați [Variabile de mediu](../setup/environment-variables)
+- Instalați **Node.js 22+** și **Git** -- consultați [Cerințe preliminare](../setup/prerequisites.md)
+- Configurați ținta API (LessonsApi local) -- consultați [Variabile de mediu](../setup/environment-variables.md)
 
 </div>
 
@@ -81,5 +82,5 @@ Compilările de producție sunt implementate pe **S3 + CloudFront**:
 3. Se declanșează invalidarea CloudFront pentru a servi noua versiune
 
 :::tip
-Pentru instrucțiuni detaliate de implementare, consultați ghidul [Implementarea aplicațiilor web](../deployment/web-apps).
+Pentru instrucțiuni detaliate de implementare, consultați ghidul [Implementarea aplicațiilor web](../deployment/web-apps.md).
 :::

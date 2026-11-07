@@ -1,5 +1,6 @@
 ---
 title: "Sdílená knihovna obsahu"
+description: "Jak se uživatelsky odeslané písně, lekce a šablony pohybují sdílenou frontou moderování v Server Admin B1 Admin, od odeslání po publikování."
 ---
 
 # Content Commons — sdílená knihovna položek a moderace

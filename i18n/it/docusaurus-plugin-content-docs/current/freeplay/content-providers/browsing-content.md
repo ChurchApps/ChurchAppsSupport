@@ -1,5 +1,6 @@
 ---
 title: "Sfogliare e scaricare i contenuti"
+description: "Navigare la libreria di un provider collegato con il telecomando di FreePlay, poi scaricare o trasmettere lezioni e video per la riproduzione."
 ---
 
 # Sfogliare e scaricare i contenuti
@@ -13,7 +14,7 @@ Una volta collegato a un provider di contenuti, puoi sfogliarne la libreria, sca
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Collegati ad almeno un provider di contenuti: vedi [Collegamento ai provider](./connecting-providers)
+- Collegati ad almeno un provider di contenuti: vedi [Collegamento ai provider](./connecting-providers.md)
 - Tieni a portata di mano il telecomando della TV per la navigazione
 
 </div>
@@ -38,7 +39,7 @@ Puoi scendere quanto la struttura dei contenuti del provider lo permette. Il bro
 
 ## Sfogliare Lessons.church
 
-La [libreria di Lessons.church](../../lessons-church/) è organizzata come il suo sito web. Al livello più alto vedrai due cartelle:
+La [libreria di Lessons.church](../../lessons-church/index.md) è organizzata come il suo sito web. Al livello più alto vedrai due cartelle:
 
 - **Lezioni**: entra per **programma**, poi per **studio**, poi per **lezione**. Ogni lezione elenca poi i suoi **ambiti**, cioè le versioni della lezione per una particolare fascia d'età o contesto, come Prescolare o Elementari. Seleziona un ambito per aprire la schermata di download di quella versione della lezione
 - **Extra**: video e risorse aggiuntive, raggruppati per categoria
@@ -78,7 +79,7 @@ Durante la riproduzione usa questi comandi:
 Quando esci dal lettore, torni al browser dei contenuti al livello radice del provider corrente.
 
 :::info
-Per un riferimento completo a tutti i comandi del lettore, vedi [Riproduzione dei contenuti](./playing-content).
+Per un riferimento completo a tutti i comandi del lettore, vedi [Riproduzione dei contenuti](./playing-content.md).
 :::
 
 ## Passare da un provider all'altro

@@ -1,5 +1,6 @@
 ---
 title: "Calendario di disponibilità"
+description: "Configura sale e attrezzature in B1 Admin, prenotale sul calendario, aggiungi tempi di allestimento e ripristino e gestisci ricorrenze e approvazioni."
 ---
 
 # Calendario di disponibilità
@@ -13,7 +14,7 @@ Il calendario di disponibilità vi dà una visione d'insieme di tutte le prenota
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Configurate almeno una [stanza o risorsa](rooms-resources) nella sezione Stanze e risorse
+- Configurate almeno una [stanza o risorsa](./rooms-resources.md) nella sezione Stanze e risorse
 - Avete bisogno dell'accesso in modifica alla sezione Calendari in B1 Admin
 
 </div>
@@ -58,7 +59,7 @@ Utilizzate il menu a discesa **Stanza / Risorsa** in alto a sinistra per restrin
 6. Fate clic su **Salva** per inviare la prenotazione.
 
 :::info
-Se la stanza o la risorsa ha un **Gruppo di approvazione** configurato, la prenotazione apparirà come **In sospeso** fino a quando un leader di quel gruppo la approva. Vedere [Approvazioni del calendario](approvals) per il flusso di lavoro di approvazione.
+Se la stanza o la risorsa ha un **Gruppo di approvazione** configurato, la prenotazione apparirà come **In sospeso** fino a quando un leader di quel gruppo la approva. Vedere [Approvazioni del calendario](./approvals.md) per il flusso di lavoro di approvazione.
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Il calendario evidenzierà i conflitti prima di salvare. Se vedete un avvertimen
 
 ## Articoli correlati
 
-- [Stanze, risorse e pianificazione](rooms-resources) — configurate spazi e attrezzature prenotabili
-- [Approvazioni del calendario](approvals) — approvate o negate richieste di prenotazione
-- [Creazione di calendari](creating-calendars) — gestite calendari degli eventi
+- [Stanze, risorse e pianificazione](./rooms-resources.md) — configurate spazi e attrezzature prenotabili
+- [Approvazioni del calendario](./approvals.md) — approvate o negate richieste di prenotazione
+- [Creazione di calendari](./creating-calendars.md) — gestite calendari degli eventi

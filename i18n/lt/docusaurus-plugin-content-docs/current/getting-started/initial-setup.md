@@ -1,5 +1,7 @@
 ---
-title: "Pradinis nustatymas"
+title: "Pradinė bažnyčios sąranka B1 Admin"
+sidebar_label: "Pradinis nustatymas"
+description: "Naujos bažnyčios B1 Admin pirminė sąranka: informacija, prekės ženklas, vaidmenys ir rekomenduojama žmonių, grupių, lankomumo ir aukojimo nustatymo tvarka."
 ---
 
 # Pradinis nustatymas

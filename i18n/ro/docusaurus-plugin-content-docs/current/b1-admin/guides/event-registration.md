@@ -1,5 +1,6 @@
 ---
 title: "Ghid: Configurarea înregistrării la evenimente"
+description: "Configurați în B1 Admin un formular de înscriere la eveniment pentru date și plăți opționale, îl integrați pe site și urmăriți înscrierile."
 ---
 
 # Configurarea înregistrării la evenimente
@@ -11,7 +12,7 @@ Creați un formular de înregistrare la eveniment, colectați informațiile part
 </div>
 
 :::info
-**Două moduri de a gestiona înregistrarea la evenimente:** Acest ghid acoperă **înregistrarea prin formulare**, care vă oferă control complet asupra câmpurilor personalizate și a colectării plăților. Pentru evenimente mai simple, în care trebuie doar să urmăriți cine participă, folosiți **înregistrarea nativă la eveniment**, integrată în calendar -- consultați [Crearea calendarelor](../calendars/creating-calendars.md#enabling-event-registration) pentru instrucțiuni de configurare. Înregistrarea nativă permite membrilor să se înscrie direct de pe [site-ul B1](../../b1-church/events/registering) și din [aplicația mobilă](../../b1-mobile/events/registering), cu urmărirea capacității, intervale de date și confirmări prin e-mail.
+**Două moduri de a gestiona înregistrarea la evenimente:** Acest ghid acoperă **înregistrarea prin formulare**, care vă oferă control complet asupra câmpurilor personalizate și a colectării plăților. Pentru evenimente mai simple, în care trebuie doar să urmăriți cine participă, folosiți **înregistrarea nativă la eveniment**, integrată în calendar -- consultați [Crearea calendarelor](../calendars/creating-calendars.md#enabling-event-registration) pentru instrucțiuni de configurare. Înregistrarea nativă permite membrilor să se înscrie direct de pe [site-ul B1](../../b1-church/events/registering.md) și din [aplicația mobilă](../../b1-mobile/events/registering.md), cu urmărirea capacității, intervale de date și confirmări prin e-mail.
 :::
 
 <div class="prereqs">

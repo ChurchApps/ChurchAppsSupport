@@ -1,5 +1,7 @@
 ---
-title: "Trasmissione in diretta"
+title: "Orari e configurazione delle dirette in B1 Admin"
+sidebar_label: "Trasmissione in diretta"
+description: "Programma dirette settimanali o singole, imposta chat e anticipo video, collega un canale YouTube e risolvi i problemi di embed in B1 Admin."
 ---
 
 # Trasmissione in diretta
@@ -15,7 +17,7 @@ La pagina Orari della diretta ti permette di configurare il calendario delle tra
 
 - Ti serve il permesso **contentApi.streamingServices.edit**. Vedi [Ruoli e permessi](../settings/roles-permissions.md) se non hai accesso.
 - Tieni pronto il tuo ID canale YouTube se intendi usare la trasmissione in diretta automatica
-- Aggiungi almeno un [sermone](managing-sermons) o un URL di diretta permanente da usare come fonte della trasmissione
+- Aggiungi almeno un [sermone](./managing-sermons.md) o un URL di diretta permanente da usare come fonte della trasmissione
 
 </div>
 
@@ -76,13 +78,13 @@ Per trovare il tuo ID canale YouTube, vai nelle impostazioni avanzate del tuo ca
 
 ## Personalizzare colori e logo
 
-La tua pagina di trasmissione in diretta usa le impostazioni di [Aspetto](../website/appearance) del tuo sito web:
+La tua pagina di trasmissione in diretta usa le impostazioni di [Aspetto](../website/appearance.md) del tuo sito web:
 
 - Il **colore di accento chiaro** con testo scuro è usato per l'intestazione.
 - Il **colore di accento scuro** con testo chiaro è usato per la barra laterale.
 - Il tuo **Logo per sfondo chiaro** compare sulla pagina di streaming. Usa un'immagine con sfondo trasparente e proporzioni 4:1.
 
-Per cambiare questi elementi, vai su **Sito web** poi **Aspetto** e aggiorna le impostazioni della tua [Tavolozza dei colori](../website/appearance#color-palette) e del [Logo](../website/appearance#logo-and-branding).
+Per cambiare questi elementi, vai su **Sito web** poi **Aspetto** e aggiorna le impostazioni della tua [Tavolozza dei colori](../website/appearance.md#color-palette) e del [Logo](../website/appearance.md#logo-and-branding).
 
 ## Aggiungere conduttori dello streaming
 
@@ -129,5 +131,5 @@ L'incorporamento automatico della diretta del canale YouTube può essere bloccat
 
 ## Passi successivi
 
-- [Gestire i sermoni](managing-sermons) -- Aggiungi sermoni alla tua libreria
-- [Playlist](playlists) -- Organizza i sermoni in serie
+- [Gestire i sermoni](./managing-sermons.md) -- Aggiungi sermoni alla tua libreria
+- [Playlist](./playlists.md) -- Organizza i sermoni in serie

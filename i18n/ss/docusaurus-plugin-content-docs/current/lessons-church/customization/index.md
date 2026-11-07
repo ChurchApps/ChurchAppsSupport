@@ -1,5 +1,6 @@
 ---
 title: "Kulungiselwa"
+description: "Funda kutsi ufihle tingcenye, tindzima, noma tetento kulifundziso le-Lessons.church, bese uhlele kabusha lokuqukethwe, kungaba ngekilasi linye noma kuwo wonkhe emakilasi elibandla lakho."
 ---
 
 # Kulungiselwa

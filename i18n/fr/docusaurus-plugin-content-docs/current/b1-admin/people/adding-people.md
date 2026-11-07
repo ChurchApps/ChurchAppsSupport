@@ -1,5 +1,6 @@
 ---
 title: "Ajouter des personnes"
+description: "Ajoutez une personne à la base de données de votre église dans B1 Admin, renseignez ses coordonnées et reliez les membres de la famille en foyers pour l'enregistrement et les rapports."
 ---
 
 # Ajouter des personnes

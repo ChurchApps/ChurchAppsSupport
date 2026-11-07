@@ -1,12 +1,13 @@
 ---
 title: "Verbonden apps & OAuth"
+description: "Koppel apps van derden aan kerkgegevens in B1 via OAuth 2.0-toestemming, zonder gedeelde wachtwoorden of API-sleutels. Trek toegang in via B1 Admin."
 ---
 
 # Verbonden apps & OAuth
 
 <div class="article-intro">
 
-De B1 API ondersteunt OAuth 2.0, zodat een applicatie van derden elke kerkbeheerder om toestemming kan vragen om toegang tot hun gegevens te krijgen, zonder dat de kerk ooit een wachtwoord of API-sleutel hoeft te delen. Een **Connected App** is een OAuth-token dat een kerkbeheerder heeft goedgekeurd; het intrekken ervan beëindigt de toegang van de app van derden met één klik. Gebruik deze route voor multi-tenant SaaS-connectors. Voor een integratie met één kerk heeft [API-sleutels](./api-keys) de voorkeur.
+De B1 API ondersteunt OAuth 2.0, zodat een applicatie van derden elke kerkbeheerder om toestemming kan vragen om toegang tot hun gegevens te krijgen, zonder dat de kerk ooit een wachtwoord of API-sleutel hoeft te delen. Een **Connected App** is een OAuth-token dat een kerkbeheerder heeft goedgekeurd; het intrekken ervan beëindigt de toegang van de app van derden met één klik. Gebruik deze route voor multi-tenant SaaS-connectors. Voor een integratie met één kerk heeft [API-sleutels](./api-keys.md) de voorkeur.
 
 </div>
 
@@ -27,7 +28,7 @@ De B1 API ondersteunt OAuth 2.0, zodat een applicatie van derden elke kerkbeheer
 | **Connected App** | Een specifiek `(client, kerkbeheerder)`-paar waarbij de beheerder toegang aan de client heeft verleend. Elke Connected App wordt ondersteund door een OAuth-refreshtoken. |
 | **Access token** | Een kortlevende JWT (≈ 7 dagen) die de client gebruikt voor API-aanroepen. Dezelfde vorm als een gebruikers-JWT: `Authorization: Bearer <jwt>`. |
 | **Refresh token** | Een langlevende ondoorzichtige string (≈ 90 dagen) die de client gebruikt om nieuwe toegangstokens aan te maken. |
-| **Scope** | Beperkt wat het toegangstoken kan doen. Zie de [scopecatalogus](./api-keys#scopes). |
+| **Scope** | Beperkt wat het toegangstoken kan doen. Zie de [scopecatalogus](./api-keys.md#scopes). |
 
 ## Autorisatiestromen
 
@@ -162,7 +163,7 @@ De lijst sluit verlopen tokens automatisch uit.
 
 ## Scopes en toestemming
 
-De scopestrings vormen dezelfde catalogus als bij [API-sleutels](./api-keys#scopes). Best practices voor clients:
+De scopestrings vormen dezelfde catalogus als bij [API-sleutels](./api-keys.md#scopes). Best practices voor clients:
 
 - **Vraag de smalste scopes die werken.** Kerken merken het als je `donations:write` vraagt terwijl je alleen mensen wilt lezen.
 - **Gebruik een refreshtoken met kortlevende toegangstokens.** Langlevende toegangstokens zijn moeilijker snel in te trekken.
@@ -183,7 +184,7 @@ Geregistreerde redirect-URI's moeten exact overeenkomen met de `redirect_uri` in
 
 ### Dynamische clientregistratie
 
-`POST /membership/oauth/register` (publiek, RFC 7591) laat een client, zoals de MCP-connector van claude.ai, zichzelf registreren. Dit wordt geadverteerd in het document `/.well-known/oauth-authorization-server` van de API. Zie [MCP-server → OAuth-discovery](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (publiek, RFC 7591) laat een client, zoals de MCP-connector van claude.ai, zichzelf registreren. Dit wordt geadverteerd in het document `/.well-known/oauth-authorization-server` van de API. Zie [MCP-server → OAuth-discovery](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ Op de toestemmingspagina van B1Admin krijgt een zelf-geregistreerde client een m
 
 ## SDK-ondersteuning
 
-Het pakket `@churchapps/integration-sdk` omhult elke OAuth-stroom met getypeerde helpers: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` en `.awaitDeviceToken()`. Zie de README van het pakket en [Webhooks](./webhooks#sdk-support) voor een volledig voorbeeld.
+Het pakket `@churchapps/integration-sdk` omhult elke OAuth-stroom met getypeerde helpers: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` en `.awaitDeviceToken()`. Zie de README van het pakket en [Webhooks](./webhooks.md#sdk-support) voor een volledig voorbeeld.

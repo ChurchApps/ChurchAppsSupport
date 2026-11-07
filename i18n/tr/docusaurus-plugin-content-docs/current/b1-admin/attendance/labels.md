@@ -1,5 +1,6 @@
 ---
 title: "Check-In Etiket Tasarımcısı"
+description: "B1 Admin'de check-in sırasında yazdırılan isim etiketi ve teslim fişi şablonlarını özelleştirin: alanlar, konumlandırma ve doğum günü ya da not koşulları."
 ---
 
 # Check-In Etiket Tasarımcısı
@@ -13,8 +14,8 @@ Etiket Tasarımcısı, aileler çocuklarını check-in yaptırdığında yazdır
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [Yoklama](setup) bölümünü ayarlayın ve check-in etkin en az bir ibadet saati tanımlayın
-- Etiketlerin yazdırılabilmesi için [Check-In](check-in) bölümünü kurun
+- [Yoklama](./setup.md) bölümünü ayarlayın ve check-in etkin en az bir ibadet saati tanımlayın
+- Etiketlerin yazdırılabilmesi için [Check-In](./check-in.md) bölümünü kurun
 - Yoklama bölümüne yönetici erişimine ihtiyacınız var
 
 </div>
@@ -85,6 +86,6 @@ Bir sonraki ibadetinizden önce düzenin doğru göründüğünü doğrulamak i�
 
 ## İlgili Makaleler
 
-- [Check-In Kurulumu](setup) — check-in için ibadetleri ve grupları yapılandırın
-- [Check-In Tamamlama](check-in) — aileler için check-in akışı
-- [B1 Checkin Başlangıç](../../b1-checkin/getting-started/) — Checkin kiosk uygulaması
+- [Check-In Kurulumu](./setup.md) — check-in için ibadetleri ve grupları yapılandırın
+- [Check-In Tamamlama](./check-in.md) — aileler için check-in akışı
+- [B1 Checkin Başlangıç](../../b1-checkin/getting-started/index.md) — Checkin kiosk uygulaması

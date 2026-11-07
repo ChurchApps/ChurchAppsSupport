@@ -1,5 +1,6 @@
 ---
 title: "Meninjau Permintaan Penghapusan Akun"
+description: "Setujui atau tolak permintaan penghapusan akun anggota di B1 Admin, arahkan melalui Grup Persetujuan Direktori, dan penuhi tenggat 30 hari GDPR."
 ---
 
 # Meninjau Permintaan Penghapusan Akun

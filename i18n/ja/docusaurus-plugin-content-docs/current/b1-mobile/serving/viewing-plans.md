@@ -1,5 +1,7 @@
 ---
-title: "プランの表示"
+title: "B1 Mobile での奉仕プランの確認"
+sidebar_label: "プランの表示"
+description: "B1 Mobile で今後と過去の奉仕スケジュールを確認し、プランの詳細と礼拝進行を読み、リハーサルや舞台裏の参照用に印刷できます。"
 ---
 
 # プランの表示
@@ -13,7 +15,7 @@ B1 Mobile のプラン画面では、奉仕スケジュールの全体像を確�
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- [B1 Mobile をインストール](../getting-started/installing)し、アカウントに[ログイン](../getting-started/logging-in)してください
+- [B1 Mobile をインストール](../getting-started/installing.md)し、アカウントに[ログイン](../getting-started/logging-in.md)してください
 - 教会の管理者から、少なくとも 1 つの奉仕プランに割り当てられている必要があります
 
 </div>
@@ -61,4 +63,4 @@ B1 Mobile のプラン画面では、奉仕スケジュールの全体像を確�
 
 ## 関連記事
 
-- [ボランティアへの登録](./volunteer-signup) -- 募集中のボランティア枠を探して登録します
+- [ボランティアへの登録](./volunteer-signup.md) -- 募集中のボランティア枠を探して登録します

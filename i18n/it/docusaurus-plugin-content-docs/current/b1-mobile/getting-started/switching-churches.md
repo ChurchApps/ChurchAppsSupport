@@ -1,5 +1,6 @@
 ---
 title: "Cambio Chiesa"
+description: "Passa da una chiesa all'altra nell'app B1 Mobile scegliendo una chiesa recente o cercandola per nome, il tutto con un solo accesso ChurchApps."
 ---
 
 # Cambio Chiesa
@@ -13,7 +14,7 @@ Se sei membro di più di una chiesa, B1 Mobile rende facile passare dall'una all
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- [Installa B1 Mobile](./installing) e [accedi](./logging-in) al tuo account
+- [Installa B1 Mobile](./installing.md) e [accedi](./logging-in.md) al tuo account
 
 </div>
 
@@ -24,7 +25,7 @@ Se sei membro di più di una chiesa, B1 Mobile rende facile passare dall'una all
 3. Appare la schermata **Ricerca Chiesa**. Le chiese visitate di recente vengono mostrate in alto per un accesso rapido.
 4. Tocca una chiesa recente per passare ad essa, oppure digita nel campo di ricerca per trovare una chiesa diversa.
 
-Quando cambi chiesa, l'app si ricarica con il marchio, i link di navigazione e i contenuti di quella chiesa. La tua [dashboard](../dashboard/), i [gruppi](../groups/) e altri dati rifletteranno la chiesa appena selezionata.
+Quando cambi chiesa, l'app si ricarica con il marchio, i link di navigazione e i contenuti di quella chiesa. La tua [dashboard](../dashboard/index.md), i [gruppi](../groups/index.md) e altri dati rifletteranno la chiesa appena selezionata.
 
 ## Ricerca di una Chiesa
 

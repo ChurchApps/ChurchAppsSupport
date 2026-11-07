@@ -1,5 +1,7 @@
 ---
-title: "Service Order"
+title: "B1.church ऐप में सेवा क्रम विवरण"
+sidebar_label: "Service Order"
+description: "B1.church ऐप में योजना का सेवा क्रम देखें, जिसमें संचयी समय, गीत के बोल, कुंजी परिवर्तन और आपकी टीम के लिए पाठ पूर्वावलोकन शामिल हैं।"
 ---
 
 # Service Order

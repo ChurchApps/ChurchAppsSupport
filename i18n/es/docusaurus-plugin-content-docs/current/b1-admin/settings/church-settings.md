@@ -1,5 +1,6 @@
 ---
 title: "Configuración de la iglesia"
+description: "Configura el nombre, la dirección, el subdominio, la zona horaria, el formato regional, el proveedor de mensajes de texto y el almacenamiento de archivos de tu iglesia en la página de Configuración de la iglesia en B1 Admin."
 ---
 
 # Configuración de la iglesia

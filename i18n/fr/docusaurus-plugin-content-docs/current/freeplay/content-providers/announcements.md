@@ -1,5 +1,6 @@
 ---
 title: "Annonces"
+description: "Diffuser en boucle un dossier de diapositives sur FreePlay TV pour les annonces avant le cours : choisir le dossier, le synchroniser, puis l'arrêter."
 ---
 
 # Annonces
@@ -13,7 +14,7 @@ FreePlay peut diffuser en boucle un dossier de diapositives d'annonces sur votre
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Connectez un fournisseur de contenu](./connecting-providers) qui contient vos diapositives d'annonces, comme Dropbox ou OneDrive
+- [Connectez un fournisseur de contenu](./connecting-providers.md) qui contient vos diapositives d'annonces, comme Dropbox ou OneDrive
 - Placez les images ou vidéos que vous souhaitez diffuser en boucle dans un même dossier chez ce fournisseur
 
 </div>
@@ -37,7 +38,7 @@ Une fois les diapositives téléchargées, un élément **Annonces** apparaît p
 - Après la dernière diapositive, la boucle recommence à la première
 - Si le dossier ne contient qu'une seule vidéo, elle se répète sur place
 
-La boucle est lue à partir des fichiers enregistrés sur l'appareil ; elle continue donc de fonctionner sans connexion Internet. Vous pouvez utiliser les mêmes commandes de télécommande que pour tout autre contenu -- voir [Lecture de contenu](./playing-content).
+La boucle est lue à partir des fichiers enregistrés sur l'appareil ; elle continue donc de fonctionner sans connexion Internet. Vous pouvez utiliser les mêmes commandes de télécommande que pour tout autre contenu -- voir [Lecture de contenu](./playing-content.md).
 
 ## Mettre à jour les diapositives
 
@@ -61,6 +62,6 @@ Déconnecter le fournisseur désactive aussi les annonces qui en proviennent.
 
 ## Articles connexes
 
-- **[Connexion aux fournisseurs](./connecting-providers)** - Connectez le fournisseur qui contient vos diapositives
-- **[Parcourir et télécharger du contenu](./browsing-content)** - Parcourez les dossiers d'un fournisseur et lancez la lecture du contenu à la demande
-- **[Lecture de contenu](./playing-content)** - Commandes du lecteur avec la télécommande du téléviseur
+- **[Connexion aux fournisseurs](./connecting-providers.md)** - Connectez le fournisseur qui contient vos diapositives
+- **[Parcourir et télécharger du contenu](./browsing-content.md)** - Parcourez les dossiers d'un fournisseur et lancez la lecture du contenu à la demande
+- **[Lecture de contenu](./playing-content.md)** - Commandes du lecteur avec la télécommande du téléviseur

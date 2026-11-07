@@ -1,5 +1,6 @@
 ---
 title: "An toàn khi điểm danh"
+description: "Cấu hình an toàn trẻ em trong B1 Admin: sức chứa phòng, tỷ lệ tình nguyện viên, danh sách người đón đáng tin cậy và tin nhắn báo phụ huynh khi check-in."
 ---
 
 # An toàn khi điểm danh
@@ -15,7 +16,7 @@ B1 có sẵn một bộ công cụ bảo vệ trẻ em khi điểm danh: giới 
 
 - Thiết lập [cấu trúc điểm danh](setup.md) và [kiosk điểm danh](check-in.md) của bạn
 - Phòng là các [nhóm](../groups/creating-groups.md) được liên kết với giờ thờ phượng — các cài đặt an toàn bên dưới được đặt trên nhóm
-- Chức năng nhắn tin cho phụ huynh và phát thanh khẩn cấp yêu cầu một nhà cung cấp dịch vụ nhắn tin đã kết nối ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), hoặc Mutual Ministry)
+- Chức năng nhắn tin cho phụ huynh và phát thanh khẩn cấp yêu cầu một nhà cung cấp dịch vụ nhắn tin đã kết nối ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md), hoặc Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Cả hai tính năng đều gửi tin nhắn văn bản qua nhà cung cấp dị
 
 Những người đã từ chối nhận tin nhắn, hoặc không có số di động trong hồ sơ, sẽ được bỏ qua tự động — kiosk sẽ báo số tin nhắn đã gửi và số tin nhắn đã bị bỏ qua.
 
-Xem hướng dẫn phía kiosk tại [Trả trẻ & An toàn cho trẻ em](../../b1-checkin/check-in/checking-out).
+Xem hướng dẫn phía kiosk tại [Trả trẻ & An toàn cho trẻ em](../../b1-checkin/check-in/checking-out.md).
 
 ## Bài viết liên quan
 
 - [Điểm danh](check-in.md) — thiết lập kiosk và phần cứng
-- [Trả trẻ & An toàn cho trẻ em](../../b1-checkin/check-in/checking-out) — quy trình trả trẻ tại kiosk, xác minh người đón và nhắn tin
+- [Trả trẻ & An toàn cho trẻ em](../../b1-checkin/check-in/checking-out.md) — quy trình trả trẻ tại kiosk, xác minh người đón và nhắn tin
 - [Tạo nhóm](../groups/creating-groups.md) — nơi đặt cài đặt phòng
 - [Thiết lập điểm danh](setup.md) — buổi thờ phượng, giờ thờ phượng và phân công phòng
 - [Độ tuổi tối thiểu để nhắn tin riêng](../settings/mobile-app.md#member-directory--messaging-settings) — chặn các cuộc trò chuyện riêng mới với trẻ em, đồng thời vẫn giữ trẻ trong danh bạ

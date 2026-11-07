@@ -1,5 +1,6 @@
 ---
 title: "Le Mie Registrazioni"
+description: "Controlla lo stato delle iscrizioni, paga un saldo dovuto, modifica partecipanti o extra, o annulla un'iscrizione a un evento nel portale membri B1 Church."
 ---
 
 # Le Mie Registrazioni
@@ -14,7 +15,7 @@ La pagina **Registrations** nel portale dei membri è la tua base per ogni event
 <h4>Prima di Iniziare</h4>
 
 - Devi essere [loggato](../getting-started/logging-in.md) — le registrazioni degli ospiti non appaiono qui
-- Hai bisogno di almeno una registrazione a un evento. Vedi [Registrazione agli Eventi](./registering).
+- Hai bisogno di almeno una registrazione a un evento. Vedi [Registrazione agli Eventi](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Il tuo posto viene rilasciato immediatamente. Se l'evento ha una lista d'attesa,
 
 ## Articoli Correlati
 
-- [Registrazione agli Eventi](./registering) -- Il processo di iscrizione, incluso pagamento e liste d'attesa
+- [Registrazione agli Eventi](./registering.md) -- Il processo di iscrizione, incluso pagamento e liste d'attesa
 - [Panoramica degli Eventi](./index.md) -- Naviga i prossimi eventi

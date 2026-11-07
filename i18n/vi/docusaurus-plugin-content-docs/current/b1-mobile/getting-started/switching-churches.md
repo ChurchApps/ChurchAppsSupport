@@ -1,5 +1,6 @@
 ---
 title: "Chuyển đổi nhà thờ"
+description: "Chuyển giữa các nhà thờ trong ứng dụng B1 Mobile bằng cách chọn nhà thờ gần đây hoặc tìm theo tên, tất cả chỉ với một tài khoản ChurchApps."
 ---
 
 # Chuyển đổi nhà thờ
@@ -13,7 +14,7 @@ Nếu bạn là thành viên của nhiều hơn một nhà thờ, B1 Mobile giú
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Cài đặt B1 Mobile](./installing) và [đăng nhập](./logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](./installing.md) và [đăng nhập](./logging-in.md) vào tài khoản của bạn
 
 </div>
 
@@ -24,7 +25,7 @@ Nếu bạn là thành viên của nhiều hơn một nhà thờ, B1 Mobile giú
 3. Màn hình **Tìm kiếm nhà thờ** xuất hiện. Các nhà thờ bạn đã truy cập gần đây được hiển thị ở đầu màn hình để truy cập nhanh.
 4. Nhấn vào một nhà thờ gần đây để chuyển sang nhà thờ đó, hoặc nhập vào ô tìm kiếm để tìm một nhà thờ khác.
 
-Khi bạn chuyển nhà thờ, ứng dụng sẽ tải lại với thương hiệu, liên kết điều hướng và nội dung của nhà thờ đó. [Bảng điều khiển](../dashboard/), [nhóm](../groups/) và các dữ liệu khác của bạn sẽ phản ánh nhà thờ mới được chọn.
+Khi bạn chuyển nhà thờ, ứng dụng sẽ tải lại với thương hiệu, liên kết điều hướng và nội dung của nhà thờ đó. [Bảng điều khiển](../dashboard/index.md), [nhóm](../groups/index.md) và các dữ liệu khác của bạn sẽ phản ánh nhà thờ mới được chọn.
 
 ## Tìm kiếm nhà thờ
 

@@ -1,5 +1,6 @@
 ---
 title: "Distribusjon av API"
+description: "Deploy ChurchApps API til AWS Lambda med Serverless: bygg, demo- og produksjons-arbeidsflyter, databasemigreringer og SSM-konfigurasjon."
 ---
 
 # Distribusjon av API
@@ -13,7 +14,7 @@ ChurchApps-API-ene distribueres som AWS Lambda-funksjoner ved hjelp av Serverles
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sett opp API-et lokalt. Se [Lokalt oppsett av API](../api/local-setup)
+- Sett opp API-et lokalt. Se [Lokalt oppsett av API](../api/local-setup.md)
 - Konfigurer AWS-legitimasjon på maskinen din
 - Sørg for at du har tilgang til målet AWS-kontoen
 
@@ -47,7 +48,7 @@ I praksis distribueres API-et av GitHub Actions: **Deploy Demo** kjøres ved hve
 
 ## Databasemigreringer
 
-**Deploy Prod** kjører ventende databasemigreringer som en del av distribusjonen. Produksjonsdatabasene aksepterer bare tilkoblinger fra innsiden av VPC-et. Rett etter `serverless deploy` kaller arbeidsflyten derfor `migrate`-Lambda-funksjonen (`api-Prod-migrate`), som kjører alle modulenes ventende migreringer og returnerer `{ ok, environment, modules }`. Hvis en modul feiler eller blir avvist (for eksempel en database uten migreringshistorikk), mislykkes jobben, slik at skjemaet aldri ligger etter koden. **Rollback Prod** tilbakefører bare Lambda-koden. Migreringene forblir kjørt, så hold dem additive. Se [Serveradministrasjon: databasemigreringer](../server-admin#database-migrations) for å sjekke status eller kjøre migreringer manuelt.
+**Deploy Prod** kjører ventende databasemigreringer som en del av distribusjonen. Produksjonsdatabasene aksepterer bare tilkoblinger fra innsiden av VPC-et. Rett etter `serverless deploy` kaller arbeidsflyten derfor `migrate`-Lambda-funksjonen (`api-Prod-migrate`), som kjører alle modulenes ventende migreringer og returnerer `{ ok, environment, modules }`. Hvis en modul feiler eller blir avvist (for eksempel en database uten migreringshistorikk), mislykkes jobben, slik at skjemaet aldri ligger etter koden. **Rollback Prod** tilbakefører bare Lambda-koden. Migreringene forblir kjørt, så hold dem additive. Se [Serveradministrasjon: databasemigreringer](../server-admin.md#database-migrations) for å sjekke status eller kjøre migreringer manuelt.
 
 ## Hva som opprettes
 
@@ -75,6 +76,6 @@ Hver sammenslåing til `main` distribueres først til demomiljøet. Kontroller e
 
 ## Relaterte artikler
 
-- **[Lokalt oppsett av API](../api/local-setup)**: Sette opp API-et for utvikling
-- **[Modulstruktur](../api/module-structure)**: Forstå arkitekturen for Lambda-funksjonene
-- **[Distribusjon av webapper](./web-apps)**: Distribuere frontend-applikasjonene
+- **[Lokalt oppsett av API](../api/local-setup.md)**: Sette opp API-et for utvikling
+- **[Modulstruktur](../api/module-structure.md)**: Forstå arkitekturen for Lambda-funksjonene
+- **[Distribusjon av webapper](./web-apps.md)**: Distribuere frontend-applikasjonene

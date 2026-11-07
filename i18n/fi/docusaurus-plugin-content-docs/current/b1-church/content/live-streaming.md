@@ -1,5 +1,7 @@
 ---
-title: "Suora lähetys"
+title: "Suoratoistojen katselu B1.churchissa"
+sidebar_label: "Suora lähetys"
+description: "Katso seurakuntasi live-palvelut B1.church Stream -sivulla ja liity lähetyksen rinnalla chattiin ilman kirjautumista."
 ---
 
 # Suora lähetys

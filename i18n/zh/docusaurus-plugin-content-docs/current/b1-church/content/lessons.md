@@ -1,5 +1,7 @@
 ---
-title: "课程（已弃用）"
+title: "B1.church 中已弃用的课程标签"
+sidebar_label: "课程（已弃用）"
+description: "B1.church 中的“课程”标签已弃用。请在 Lessons.church 上浏览课程，并使用 FreePlay 在教室电视上播放。"
 ---
 
 # 课程（已弃用）
@@ -9,7 +11,7 @@ B1.church 上的嵌入式 **课程** 标签已被弃用。来自 Lessons.church 
 
 要浏览、安排或直接编辑课程，请在浏览器中登录 [Lessons.church](https://lessons.church)。要在教室电视上播放课程，请在您的电视设备上安装 [FreePlay](/docs/freeplay/getting-started/)。
 
-与在 B1Admin 中关联到课程计划类型的小组相关联的家长在 [小组详情](/docs/b1-church/groups/group-details.md) 页面上看到 **本周的课程** -- 不在这个已弃用的标签上。
+与在 B1Admin 中关联到课程计划类型的小组相关联的家长在 [小组详情](../groups/group-details.md) 页面上看到 **本周的课程** -- 不在这个已弃用的标签上。
 :::
 
 <div class="article-intro">

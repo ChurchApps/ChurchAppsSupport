@@ -1,5 +1,6 @@
 ---
 title: "实时架构"
+description: "ChurchApps 的 WebSocket 层如何实时推送聊天、在线状态和通知：套接字握手、房间订阅，以及面向开发者的客户端基础组件。"
 ---
 
 # 实时架构
@@ -226,8 +227,8 @@ await NotificationService.getInstance().initialize(userContext);
 
 ## 相关页面
 
-- [通知架构](./architecture/notifications) ——此传输进入的应用内/推送/电子邮件升级漏斗
-- [消息端点](./api/endpoints/messaging) ——消息、对话、连接、设备的完整 REST 表面
-- [Web 推送通知](./web-push) ——浏览器推送，独立于页面内套接字传递
-- [AppHelper](./shared-libraries/app-helper) ——提供客户端原语的 npm 包
-- [模块结构](./api/module-structure) ——消息模块在服务器端的组织方式
+- [通知架构](./architecture/notifications.md) ——此传输进入的应用内/推送/电子邮件升级漏斗
+- [消息端点](./api/endpoints/messaging.md) ——消息、对话、连接、设备的完整 REST 表面
+- [Web 推送通知](./web-push.md) ——浏览器推送，独立于页面内套接字传递
+- [AppHelper](./shared-libraries/app-helper.md) ——提供客户端原语的 npm 包
+- [模块结构](./api/module-structure.md) ——消息模块在服务器端的组织方式

@@ -1,5 +1,6 @@
 ---
 title: "Útmutató: A gyermekistentiszteleti bejelentkezés beállítása"
+description: "Gyermekbejelentkezés beállítása a B1 Admin-ban: családok összekötése, korcsoportok, szolgálatok beállítása, névcímkék nyomtatása a B1 Checkin kioszkhoz."
 ---
 
 # A gyermekistentiszteleti bejelentkezés beállítása

@@ -1,5 +1,7 @@
 ---
-title: "Dâng hiến"
+title: "Quyên góp trong ứng dụng B1 Mobile"
+sidebar_label: "Dâng hiến"
+description: "Quyên góp trong ứng dụng B1 Mobile, xem tổng quyên góp trong năm và quản lý phương thức thanh toán đã lưu. Gồm các tab Tổng quan, Quyên góp, Quản lý và Lịch sử."
 ---
 
 # Dâng hiến
@@ -24,7 +26,7 @@ Mục dâng hiến được chia thành bốn tab:
 Mọi khoản dâng thực hiện qua B1 Mobile đều được xử lý an toàn qua **Stripe**. Thông tin thanh toán của bạn được hạ tầng bảo mật của Stripe xử lý và không bao giờ được lưu trên máy chủ của ChurchApps. Bạn có thể yên tâm dâng hiến vì thông tin tài chính của mình được bảo vệ.
 
 :::info
-Quản trị viên hội thánh của bạn thiết lập các quỹ có sẵn và cách xử lý thanh toán thông qua [B1 Admin](../../b1-admin/). Nếu bạn không thấy tùy chọn dâng hiến trong ứng dụng, hội thánh của bạn có thể chưa cấu hình tính năng này.
+Quản trị viên hội thánh của bạn thiết lập các quỹ có sẵn và cách xử lý thanh toán thông qua [B1 Admin](../../b1-admin/index.md). Nếu bạn không thấy tùy chọn dâng hiến trong ứng dụng, hội thánh của bạn có thể chưa cấu hình tính năng này.
 :::
 
 ## Bạn có thể làm gì
@@ -38,6 +40,6 @@ Dưới đây là những việc bạn có thể làm trong mục dâng hiến:
 
 ## Bước tiếp theo
 
-- [Thực hiện một khoản dâng](./making-donations) -- Tìm hiểu cách dâng từ ứng dụng
-- [Quản lý phương thức thanh toán](./managing-payments) -- Thêm hoặc xóa phương thức thanh toán đã lưu
-- [Lịch sử dâng hiến](./donation-history) -- Xem bản tóm tắt dâng hiến và các lần dâng trước đây
+- [Thực hiện một khoản dâng](./making-donations.md) -- Tìm hiểu cách dâng từ ứng dụng
+- [Quản lý phương thức thanh toán](./managing-payments.md) -- Thêm hoặc xóa phương thức thanh toán đã lưu
+- [Lịch sử dâng hiến](./donation-history.md) -- Xem bản tóm tắt dâng hiến và các lần dâng trước đây

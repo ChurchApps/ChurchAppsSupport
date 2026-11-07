@@ -1,5 +1,6 @@
 ---
 title: "Duomenų saugumas"
+description: "Kaip ChurchApps saugo bažnyčios duomenis B1 Admin: maišytus slaptažodžius, HTTPS, atskirtas duomenų bazes ir BDAR duomenų įrankius."
 ---
 
 # Duomenų saugumas

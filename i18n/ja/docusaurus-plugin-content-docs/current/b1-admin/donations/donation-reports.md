@@ -1,5 +1,6 @@
 ---
 title: "寄付レポート"
+description: "B1 Admin の Donations Summary ダッシュボード、Lapsed Givers 表示、CSV 書き出しを使って、献金総額、献金者の離脱、バッチごとの詳細を確認します。"
 ---
 
 # 寄付レポート

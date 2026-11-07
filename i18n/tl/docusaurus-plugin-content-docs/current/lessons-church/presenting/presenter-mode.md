@@ -1,5 +1,6 @@
 ---
 title: "Presenter Mode"
+description: "Patakbuhin ang aralin nang full-screen sa classroom projector o TV gamit ang Presenter Mode ng Lessons.church, at dumaan sa bawat section sa klase."
 ---
 
 # Presenter Mode

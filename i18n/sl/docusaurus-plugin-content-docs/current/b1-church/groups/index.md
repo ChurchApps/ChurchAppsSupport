@@ -1,5 +1,7 @@
 ---
-title: "Skupine"
+title: "Cerkvene skupine v portalu za člane B1.church"
+sidebar_label: "Skupine"
+description: "Brskajte po skupinah in se pridružite na vašem spletnem mestu B1.church. Na straneh skupin preverite srečanja, dogodke, člane in gradiva ter klepetajte."
 ---
 
 # Skupine

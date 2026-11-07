@@ -1,5 +1,6 @@
 ---
 title: "Jaarplannen beheren"
+description: "Maak een jaarplan met wekelijkse lessen in Lessons.church, koppel weken aan Pasen of Kerst en publiceer het zodat kerken het in B1 Admin kunnen toepassen."
 ---
 
 # Jaarplannen beheren

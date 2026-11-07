@@ -1,5 +1,6 @@
 ---
 title: "Vadovas: paleiskite savo bažnyčios svetainę"
+description: "Nustatykite bažnyčios svetainę B1 Admin: pagrindinis puslapis, spalvos ir logotipas, svarbūs puslapiai, savas domenas ir aukojimo formos."
 ---
 
 # Paleiskite savo bažnyčios svetainę

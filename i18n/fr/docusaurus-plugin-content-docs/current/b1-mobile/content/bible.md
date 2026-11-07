@@ -1,5 +1,7 @@
 ---
-title: "Bible"
+title: "Lire la Bible dans B1 Mobile"
+sidebar_label: "Bible"
+description: "Ouvrez les Écritures depuis le menu latéral de B1 Mobile, naviguez entre livres, chapitres et versets, et trouvez l’option biblique de votre église."
 ---
 
 # Bible

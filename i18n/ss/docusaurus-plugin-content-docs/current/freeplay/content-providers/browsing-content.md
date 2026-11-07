@@ -1,5 +1,6 @@
 ---
 title: "Kuhlola Nekulayisha Kucuketfwe"
+description: "Hamba ethafeni lemtfombo wemhlinzeki lexhunyiwe nge-TV remote ku-FreePlay, bese uyalanda noma usakaze tifundziso netividiyo kutsi ziciniswe."
 ---
 
 # Kuhlola Nekulayisha Kucuketfwe
@@ -13,7 +14,7 @@ Nawusuxhumene nemniketi wekucuketfwe, ungahlola inchubomlomo yakhe, ulayishe ema
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- Xhumana nekungenani umniketi munye wekucuketfwe -- buka [Kuxhumana Nebaniketi](./connecting-providers)
+- Xhumana nekungenani umniketi munye wekucuketfwe -- buka [Kuxhumana Nebaniketi](./connecting-providers.md)
 - Yiba ne-remote yakho ye-TV lulungele kuhamba
 
 </div>
@@ -62,7 +63,7 @@ Kudlalwa kusebenta ngendlela lefananako nekudlalwa kwetifundzo. Sebentisa lokula
 Nawuphuma emdlalini, ubuyela esisebentini sekuhlola kucuketfwe ebangeni leliyimphandze lemniketi wamanje.
 
 :::info
-Kulwati loluphelele lwakho konkhe lokulawulwa kwemdlali, buka [Kudlalwa Kwetifundzo](../content-providers/playing-content).
+Kulwati loluphelele lwakho konkhe lokulawulwa kwemdlali, buka [Kudlalwa Kwetifundzo](./playing-content.md).
 :::
 
 ## Kushintjela Emkatsini Webaniketi

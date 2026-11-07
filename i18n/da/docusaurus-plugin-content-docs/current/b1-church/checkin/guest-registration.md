@@ -1,5 +1,6 @@
 ---
 title: "Gæst registrering"
+description: "Registrér dig selv og din familie som første gangs gæster med QR-formularen i B1 Checkin, så frivillige kan checke jer ind, når I ankommer."
 ---
 
 # Gæst registrering
@@ -42,7 +43,7 @@ Din registrering opretter records i kirkens database:
 
 - En **husstand** oprettes ved hjælp af primær kontakts efternavn.
 - **Person records** oprettes for hvert familiemedlem med status "Gæst".
-- En kirke frivillig eller administrator kan derefter checke din familie ind ved hjælp af [B1 Checkin](../../b1-checkin/check-in/looking-up-members) kiosken.
+- En kirke frivillig eller administrator kan derefter checke din familie ind ved hjælp af [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md) kiosken.
 
 :::info
 Hvis din e-mail matcher en eksisterende record i kirkens database, linker systemet til denne record i stedet for at oprette en duplikat. Dette holder kirkens data ren.
@@ -54,5 +55,5 @@ At give din e-mail adresse hjælper kirken med at følge op med dig efter dit be
 
 ## Relaterede artikler
 
-- [Selv check-in](./self-checkin) -- Check dig selv ind efter registrering
-- [Tilføjelse af gæster (kiosk)](../../b1-checkin/check-in/adding-guests) -- Sådan tilføjer frivillige gæster ved kiosken
+- [Selv check-in](./self-checkin.md) -- Check dig selv ind efter registrering
+- [Tilføjelse af gæster (kiosk)](../../b1-checkin/check-in/adding-guests.md) -- Sådan tilføjer frivillige gæster ved kiosken

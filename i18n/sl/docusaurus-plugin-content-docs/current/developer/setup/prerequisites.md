@@ -1,5 +1,6 @@
 ---
 title: "Predpogoji"
+description: "Namesti Node.js, npm, Git in platformska orodja, preden lokalno začneš z projekti ChurchApps, kot so B1 Admin, Lessons.church, FreePlay ali API."
 ---
 
 # Predpogoji
@@ -13,7 +14,7 @@ Orodja, ki jih potrebujete, so odvisna od tega, na katerih projektih nameravate 
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Oglejte si [pregled projektov](./project-overview), da ugotovite, na katerih projektih želite delati
+- Oglejte si [pregled projektov](./project-overview.md), da ugotovite, na katerih projektih želite delati
 - Na razvojnem računalniku morate imeti skrbniški dostop za namestitev programske opreme
 
 </div>
@@ -40,7 +41,7 @@ Za preprosto preklapljanje med različicami Node uporabite upravitelja različic
 |------|---------|-------|
 | **MySQL** | 8.0+ | Vsak modul API uporablja svojo podatkovno bazo |
 
-Za osnovni API potrebujete šest podatkovnih baz: `membership`, `attendance`, `content`, `giving`, `messaging` in `doing`. API vključuje skripte za inicializacijo sheme -- glejte vodnik [lokalna nastavitev API](../api/local-setup).
+Za osnovni API potrebujete šest podatkovnih baz: `membership`, `attendance`, `content`, `giving`, `messaging` in `doing`. API vključuje skripte za inicializacijo sheme -- glejte vodnik [lokalna nastavitev API](../api/local-setup.md).
 
 ## Razvoj mobilnih aplikacij
 
@@ -110,5 +111,5 @@ mysql --version   # Potrebno samo za lokalni razvoj API
 
 ## Naslednji koraki
 
-- **[Pregled projektov](./project-overview)** -- Oglejte si vse projekte in kaj počnejo
-- **[Okoljske spremenljivke](./environment-variables)** -- Nastavite datoteke `.env`
+- **[Pregled projektov](./project-overview.md)** -- Oglejte si vse projekte in kaj počnejo
+- **[Okoljske spremenljivke](./environment-variables.md)** -- Nastavite datoteke `.env`

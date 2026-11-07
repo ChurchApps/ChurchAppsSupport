@@ -1,5 +1,7 @@
 ---
-title: "Gruplar"
+title: "B1.church Üye Portalında Kilise Grupları"
+sidebar_label: "Gruplar"
+description: "B1.church sitenizde kilise gruplarına göz atıp katılın; grup sayfalarından toplantıları, etkinlikleri, üyeleri ve kaynakları inceleyin ve grubunuzla sohbet edin."
 ---
 
 # Gruplar

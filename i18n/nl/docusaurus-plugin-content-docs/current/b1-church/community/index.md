@@ -1,5 +1,7 @@
 ---
-title: "Gemeenschap"
+title: "Ledenlijst van de gemeenschap in B1.church"
+sidebar_label: "Gemeenschap"
+description: "Zoek in de ledenlijst van je kerk in B1.church op naam of groep, bekijk profielen en ontdek waar de vervallen Tijdlijn-updates nu te vinden zijn."
 ---
 
 # Gemeenschap
@@ -26,5 +28,5 @@ De leden en informatie die voor u zichtbaar zijn in de gids, zijn afhankelijk va
 :::
 
 :::tip
-Gebruik de gemeenschapsfuncties naast [Groepen](../groups/) om gedurende de week betrokken te blijven bij uw kerk.
+Gebruik de gemeenschapsfuncties naast [Groepen](../groups/index.md) om gedurende de week betrokken te blijven bij uw kerk.
 :::

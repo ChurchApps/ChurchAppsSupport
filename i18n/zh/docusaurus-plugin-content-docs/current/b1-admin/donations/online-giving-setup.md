@@ -1,5 +1,6 @@
 ---
 title: "在线捐赠设置"
+description: "将 Stripe、PayPal、Kingdom Funding 或 Paystack 连接到 B1 Admin，使会友可通过您的 B1.church 网站在线奉献，且捐款自动同步至您的记录。"
 ---
 
 # 在线捐赠设置

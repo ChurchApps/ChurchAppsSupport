@@ -1,5 +1,6 @@
 ---
 title: "Docházka"
+description: "Přehled docházky, místností a hostů týdne v B1 Admin a nastavení poboček, časů bohoslužeb, počtů účastníků a odbavení na kiosku ze stránky Docházka."
 ---
 
 # Docházka

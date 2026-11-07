@@ -1,5 +1,6 @@
 ---
 title: "Rollerin Atanması"
+description: "B1 Admin'de roller atayarak personel ve gönüllülere yalnızca ihtiyaç duydukları kişi, bağış, katılım ve grup alanlarına erişim verin."
 ---
 
 # Rollerin Atanması

@@ -1,5 +1,6 @@
 ---
 title: "المصادقة والصلاحيات"
+description: "مرجع تسجيل الدخول عبر JWT والتحقق بخطوتين وتدفقات OAuth 2.0 ونموذج الأذونات في واجهة ChurchApps البرمجية، للمطورين الذين يبنون التكاملات."
 ---
 
 # المصادقة والصلاحيات
@@ -244,7 +245,7 @@ crudSettings: {
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | جلب عميل بمعرّف العميل (السر مخفي) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | إنشاء عميل أو تحديثه |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | حذف عميل |
-| POST | `/membership/oauth/register` | عامة | — | التسجيل الديناميكي للعملاء (RFC 7591) للعملاء العامين مثل موصّلات MCP. راجع [التطبيقات المتصلة](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | عامة | — | التسجيل الديناميكي للعملاء (RFC 7591) للعملاء العامين مثل موصّلات MCP. راجع [التطبيقات المتصلة](../connected-apps.md#dynamic-client-registration) |
 
 ### نقاط نهاية الموافقة على الأجهزة
 
@@ -265,5 +266,5 @@ crudSettings: {
 
 ## صفحات ذات صلة
 
-- [بنية الوحدات](../module-structure) — كيفية تنظيم وحدات التحكم والمستودعات والنماذج
-- [الإعداد المحلي](../local-setup) — تشغيل واجهة البرمجة محليًا للتطوير
+- [بنية الوحدات](../module-structure.md) — كيفية تنظيم وحدات التحكم والمستودعات والنماذج
+- [الإعداد المحلي](../local-setup.md) — تشغيل واجهة البرمجة محليًا للتطوير

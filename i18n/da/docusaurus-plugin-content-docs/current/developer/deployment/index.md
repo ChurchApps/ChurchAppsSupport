@@ -1,5 +1,6 @@
 ---
 title: "Installation"
+description: "Find hvor hvert ChurchApps-projekt deployes: AWS Lambda-API'er, S3-webapps, Expo-mobilbuilds og selvhostet B1 Admin på Railway eller Docker."
 ---
 
 # Installation
@@ -14,9 +15,9 @@ ChurchApps bruger forskellige installationsstrategier afhængigt af projekttypen
 
 | Projekttype | Installationsmål | Værktøj |
 |-------------|-------------------|---------|
-| [API'er](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 22.x runtime) |
-| [Webapps](./web-apps) | S3 + CloudFront | Statisk build, S3 sync, CloudFront invalidation |
-| [Mobilapps](./mobile) | App Stores | Expo EAS Build + OTA Updates |
+| [API'er](./apis.md) | AWS Lambda | Serverless Framework v3 (Node.js 22.x runtime) |
+| [Webapps](./web-apps.md) | S3 + CloudFront | Statisk build, S3 sync, CloudFront invalidation |
+| [Mobilapps](./mobile.md) | App Stores | Expo EAS Build + OTA Updates |
 | FreeShow | Direkte download | Electron Builder (cross-platform binære filer) |
 
 ## Miljøer

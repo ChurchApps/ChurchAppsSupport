@@ -1,5 +1,6 @@
 ---
 title: "Guide : Créer votre bibliothèque de sermons et le direct"
+description: "Importez vos prédications YouTube ou Vimeo, organisez-les en listes de lecture et configurez des diffusions en direct récurrentes avec clavardage dans B1 Admin pour le site web de votre église."
 ---
 
 # Créer votre bibliothèque de sermons et le direct

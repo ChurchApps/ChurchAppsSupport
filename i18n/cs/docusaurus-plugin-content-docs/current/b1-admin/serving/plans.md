@@ -1,5 +1,6 @@
 ---
 title: "Plány služeb"
+description: "Nastavte plánování dobrovolníků v B1 Admin: vytvářejte plány podle data, kopírujte je z minulých týdnů a přiřazujte členy týmu na pozice."
 ---
 
 # Plány služeb

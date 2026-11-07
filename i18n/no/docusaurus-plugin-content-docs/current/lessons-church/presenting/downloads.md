@@ -1,5 +1,6 @@
 ---
 title: "Nedlastinger og materiell"
+description: "Finn og last ned utskrivbare aktivitetsark, lederveiledninger og PDF-er knyttet til Lessons.church-leksjoner, studier eller programmer til klassen din."
 ---
 
 # Nedlastinger og materiell

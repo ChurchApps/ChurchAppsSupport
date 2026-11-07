@@ -1,5 +1,6 @@
 ---
 title: "Mode programmé"
+description: "Programmer les TV FreePlay selon un calendrier dans FreePlay Admin : démarrage et arrêt automatiques, lecture maintenue en cas de coupure Wi-Fi."
 ---
 
 # Mode programmé
@@ -18,16 +19,16 @@ FreePlay Admin utilise votre identifiant ChurchApps, le même que celui de B1 Ad
 
 FreePlay Admin comporte quatre pages principales, listées en haut du site :
 
-- **[Écrans](./managing-screens)** - Les téléviseurs que vous avez associés, leur état et les **groupes d'écrans** auxquels ils appartiennent. Les écrans d'un même groupe partagent un calendrier et une boucle par défaut
-- **[Listes de lecture](./building-playlists)** - Des boucles d'images et de vidéos que vous choisissez parmi vos fournisseurs de contenu
-- **[Calendrier](./scheduling-the-calendar)** - Ce que chaque groupe d'écrans diffuse, et à quel moment
-- **[Fournisseurs](./building-playlists#connecting-providers)** - Les sources de contenu dont vos listes de lecture sont alimentées. Vous connectez chacune d'elles une seule fois pour toute l'église
+- **[Écrans](./managing-screens.md)** - Les téléviseurs que vous avez associés, leur état et les **groupes d'écrans** auxquels ils appartiennent. Les écrans d'un même groupe partagent un calendrier et une boucle par défaut
+- **[Listes de lecture](./building-playlists.md)** - Des boucles d'images et de vidéos que vous choisissez parmi vos fournisseurs de contenu
+- **[Calendrier](./scheduling-the-calendar.md)** - Ce que chaque groupe d'écrans diffuse, et à quel moment
+- **[Fournisseurs](./building-playlists.md#connecting-providers)** - Les sources de contenu dont vos listes de lecture sont alimentées. Vous connectez chacune d'elles une seule fois pour toute l'église
 
 Lorsque rien n'est programmé, les écrans d'un groupe diffusent sa **boucle par défaut**. Si le groupe n'a pas de boucle par défaut, les écrans restent éteints.
 
 ## En quoi il diffère du mode plan
 
-- **[Mode plan](../plan-mode/)** suit un type de plan de culte depuis B1 Admin. Quelqu'un appuie sur **Start Plan** sur le téléviseur, et la leçon démarre à ce moment-là
+- **[Mode plan](../plan-mode/index.md)** suit un type de plan de culte depuis B1 Admin. Quelqu'un appuie sur **Start Plan** sur le téléviseur, et la leçon démarre à ce moment-là
 - **Le mode programmé** suit un calendrier. Le contenu démarre et s'arrête aux heures que vous définissez, ce qui convient bien aux écrans d'accueil, aux boucles d'annonces et aux salles de classe où la leçon doit être affichée avant l'arrivée de tout le monde
 
 Une entrée du calendrier peut aussi diffuser un plan de culte. Choisissez le type de plan sous **Service plans** lorsque vous ajoutez une programmation, et l'écran diffuse le plan en cours dans B1 Admin cette semaine-là. Cela inclut les leçons Go Curriculum, même celles que vous avez personnalisées dans le plan. L'écran utilise l'identifiant Go Curriculum lié au ministère du type de plan dans B1 Admin, ou la connexion Go Curriculum de l'église si le ministère n'en a pas.
@@ -49,8 +50,8 @@ Appuyez sur **Ctrl+K** (**⌘K** sur Mac), ou cliquez sur la zone de recherche d
 
 ## Dans cette section
 
-- **[Associer un écran](./pairing-a-screen)** - Afficher le code sur le téléviseur et l'associer dans FreePlay Admin
-- **[Gérer les écrans et les groupes](./managing-screens)** - Consulter l'état et les téléchargements, et organiser les écrans en groupes
-- **[Connecter les fournisseurs et créer des listes de lecture](./building-playlists)** - Relier des sources de contenu et créer des boucles d'images et de vidéos
-- **[Planifier le calendrier](./scheduling-the-calendar)** - Décider ce qui est diffusé et quand, et ce qui se passe lorsque le contenu se termine plus tôt
-- **[Lecture programmée sur le téléviseur](./scheduled-playback)** - Ce que fait le téléviseur de lui-même, et comment utiliser la télécommande pendant la lecture
+- **[Associer un écran](./pairing-a-screen.md)** - Afficher le code sur le téléviseur et l'associer dans FreePlay Admin
+- **[Gérer les écrans et les groupes](./managing-screens.md)** - Consulter l'état et les téléchargements, et organiser les écrans en groupes
+- **[Connecter les fournisseurs et créer des listes de lecture](./building-playlists.md)** - Relier des sources de contenu et créer des boucles d'images et de vidéos
+- **[Planifier le calendrier](./scheduling-the-calendar.md)** - Décider ce qui est diffusé et quand, et ce qui se passe lorsque le contenu se termine plus tôt
+- **[Lecture programmée sur le téléviseur](./scheduled-playback.md)** - Ce que fait le téléviseur de lui-même, et comment utiliser la télécommande pendant la lecture

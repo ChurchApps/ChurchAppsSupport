@@ -1,5 +1,7 @@
 ---
-title: "Turinys"
+title: "Turinio funkcijos B1 Mobile programėlėje"
+sidebar_label: "Turinys"
+description: "Raskite pamokslus, tiesiogines transliacijas, Biblijos skaitymą ir Dienos eilutę B1 Mobile programėlėje ir sužinokite, kurios funkcijos įjungtos."
 ---
 
 # Turinys
@@ -30,20 +32,20 @@ Peržiūrėkite gražiai suformatuotą Biblijos eilutės paveikslėlį, kuris ka
 
 ### Pamokos (nebenaudojama)
 
-Įmontuotas Lessons ekranas pakeistas **[FreePlay](/docs/freeplay/)** klasės kambario atkūrimui ir apsilankymu [Lessons.church](https://lessons.church) tiesiogiai naršymui. Išsamesnės informacijos ieškokite [Lessons informacijos puslapyje](./lessons).
+Įmontuotas Lessons ekranas pakeistas **[FreePlay](/docs/freeplay/)** klasės kambario atkūrimui ir apsilankymu [Lessons.church](https://lessons.church) tiesiogiai naršymui. Išsamesnės informacijos ieškokite [Lessons informacijos puslapyje](./lessons.md).
 
 ## Turinio paieška
 
 Turinio funkcijos pasiekiamos per programos šoninį meniu. Jūsų bažnyčios administratorius nusprendžia, kurios turinio funkcijos įjungtos, todėl galite nematyti visų aukščiau išvardytų parinkčių. Jei kurios nors funkcijos nėra, bažnyčia jos dar gali nebūti sukonfigūravusi.
 
 :::info
-Turinio funkcijas konfigūruoja jūsų bažnyčios administratorius per [B1 Admin](../../b1-admin/). Jei nematote tikėtinos funkcijos, kreipkitės į bažnyčios raštinę.
+Turinio funkcijas konfigūruoja jūsų bažnyčios administratorius per [B1 Admin](../../b1-admin/index.md). Jei nematote tikėtinos funkcijos, kreipkitės į bažnyčios raštinę.
 :::
 
 ## Kiti žingsniai
 
-- [Pamokslai](./sermons) – Naršykite ir žiūrėkite įrašytus pamokslus
-- [Tiesioginės transliacijos](./live-streaming) – Žiūrėkite tiesiogines transliacijas
-- [Biblija](./bible) – Skaitykite Šventąjį Raštą įmontuotame skaitytuve
-- [Kasdienis eilėraštis](./verse-of-the-day) – Peržiūrėkite šiandienos kasdienį eilėraštį
+- [Pamokslai](./sermons.md) – Naršykite ir žiūrėkite įrašytus pamokslus
+- [Tiesioginės transliacijos](./live-streaming.md) – Žiūrėkite tiesiogines transliacijas
+- [Biblija](./bible.md) – Skaitykite Šventąjį Raštą įmontuotame skaitytuve
+- [Kasdienis eilėraštis](./verse-of-the-day.md) – Peržiūrėkite šiandienos kasdienį eilėraštį
 - [FreePlay](/docs/freeplay/) – Leiskite pamokas klasės kambarių televizoriuose (pakeičia nebenaudojamą programos Lessons ekraną)

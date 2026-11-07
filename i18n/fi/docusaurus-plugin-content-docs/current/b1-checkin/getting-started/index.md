@@ -1,5 +1,7 @@
 ---
-title: "Aloittaminen"
+title: "Aloitus B1 Checkinin kanssa"
+sidebar_label: "Aloittaminen"
+description: "Asenna B1 Checkin -kioskisovellus Android-tabletille: asenna, kirjaudu, valitse seurakuntasi ja halutessasi yhdistä tarratulostin."
 ---
 
 # Aloittaminen B1 Church Checkin -sovelluksen kanssa
@@ -27,9 +29,9 @@ B1 Church Checkin -sovelluksen käyttöönotto vie vain muutaman minuutin. Täm�
 
 Kun avaat sovelluksen ensimmäistä kertaa, käyt läpi kolme vaihetta:
 
-1. **[Kirjaudu sisään](./logging-in)** -- Anna sähköpostiosoitteesi ja salasanasi todentaaksesi itsesi.
-2. **[Valitse seurakuntasi](./logging-in)** -- Jos tilisi on linkitetty useisiin seurakuntiin, valitse, mitä seurakuntaa tämä kioski palvelee.
-3. **[Määritä tulostin](./printer-setup)** -- Määritä verkkotulostin tarrojen tulostamista varten tai ohita tämä vaihe, jos et tarvitse tarroja.
+1. **[Kirjaudu sisään](./logging-in.md)** -- Anna sähköpostiosoitteesi ja salasanasi todentaaksesi itsesi.
+2. **[Valitse seurakuntasi](./logging-in.md)** -- Jos tilisi on linkitetty useisiin seurakuntiin, valitse, mitä seurakuntaa tämä kioski palvelee.
+3. **[Määritä tulostin](./printer-setup.md)** -- Määritä verkkotulostin tarrojen tulostamista varten tai ohita tämä vaihe, jos et tarvitse tarroja.
 
 Ensimmäisen kirjautumisen jälkeen sovellus tallentaa kirjautumistietosi ja seurakuntavalintasi. Seuraavilla käynnistyskerroilla se siirtyy automaattisesti suoraan palveluruutuun.
 
@@ -43,6 +45,6 @@ Varmista, että seurakuntasi ylläpitäjä on määrittänyt palvelut, palveluaj
 
 ## Seuraavat vaiheet
 
-- [Kirjautuminen](./logging-in) -- Yksityiskohtaiset ohjeet kirjautumiseen ja seurakunnan valintaan.
-- [Tulostimen määritys](./printer-setup) -- Tarratulostimen löytäminen, valitseminen ja testaaminen.
-- [Sisäänkirjauksen kulku](../check-in/) -- Opi koko sisäänkirjausprosessi, kun kioski on määritetty.
+- [Kirjautuminen](./logging-in.md) -- Yksityiskohtaiset ohjeet kirjautumiseen ja seurakunnan valintaan.
+- [Tulostimen määritys](./printer-setup.md) -- Tarratulostimen löytäminen, valitseminen ja testaaminen.
+- [Sisäänkirjauksen kulku](../check-in/index.md) -- Opi koko sisäänkirjausprosessi, kun kioski on määritetty.

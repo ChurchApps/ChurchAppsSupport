@@ -1,5 +1,6 @@
 ---
 title: "Slack & Discord"
+description: "I-post ang event ng B1 Admin, tulad ng bagong tao, donasyon, at form submission, sa Slack o Discord channel gamit ang incoming webhook, walang Zapier."
 ---
 
 # Slack & Discord
@@ -114,7 +115,7 @@ Kung may nabigo (pulang `failed` o `exhausted` badge), ipinapakita ng dialog ang
 
 - **Walang mensahe na lumalabas + delivery status `400`** — karaniwang ang Connector Type ay nakatakda sa **Standard** ngunit ang URL ay isang Slack/Discord isa. Ang Slack/Discord ay nagtatatangi ng raw envelope. Lumipat ang dropdown sa **Slack** o **Discord** at ipadala ang test.
 - **Webhook auto-disabled** — pagkatapos ng 3 sunod-sunod na failed deliveries, i-off ng B1 ang webhook. I-ayos ang URL (o i-rotate ito sa Slack/Discord) at i-toggle ang **Active** pabalik.
-- **Mensahe ay dumating ngunit nawawalan ng detalye** — bawat chat platform ay limitado ang laki ng mensahe. Ang mga mensahe ng B1 ay one-liners ng disenyo; para sa mas mayamang mga notification gumamit ng [Zapier](./zapier) o [Make](./make) upang bumuo ng mas puno na Slack message gamit ang kanilang Slack actions.
+- **Mensahe ay dumating ngunit nawawalan ng detalye** — bawat chat platform ay limitado ang laki ng mensahe. Ang mga mensahe ng B1 ay one-liners ng disenyo; para sa mas mayamang mga notification gumamit ng [Zapier](./zapier.md) o [Make](./make.md) upang bumuo ng mas puno na Slack message gamit ang kanilang Slack actions.
 
 ## Pagbabago ng Connector Types Mamaya
 
@@ -122,6 +123,6 @@ Maaari mong baguhin ang Connector Type sa isang umiiral na webhook — ito ay ma
 
 ## Makita Din
 
-- [Zapier](./zapier) — para sa multi-step workflows na nag-trigger mula sa B1 events
-- [Make](./make) — visual scenario builder
+- [Zapier](./zapier.md) — para sa multi-step workflows na nag-trigger mula sa B1 events
+- [Make](./make.md) — visual scenario builder
 - [Webhooks (developer reference)](/docs/developer/api/webhooks) — ang buong payload + signature format kung kailanman mo ay ituro ang webhook sa iyong sariling server

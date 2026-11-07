@@ -1,5 +1,6 @@
 ---
 title: "FreePlay Genel Bakış"
+description: "FreePlay'e genel bakış: Android TV, Fire TV ve Apple TV'de çevrimdışı ders oynatma için sınıf TV uygulaması ve kurulum rehberlerine bağlantılar."
 ---
 
 # FreePlay Genel Bakış
@@ -22,10 +23,10 @@ Kısa bir **<a href="/guides/freeplay-quickstart" target="_blank">hızlı başla
 
 - **Çevrimdışı oynatma** - Videoları ve görsel slaytları önceden indirin, böylece ibadetler sırasında hiçbir zaman Wi-Fi'ye bağımlı kalmazsınız
 - **İndirme yönetimi** - İndirilen tüm içerikleri **Ayarlar** > **İndirilenler** bölümünden görüntüleyin ve yönetin
-- **Zamanlanmış mod** - [admin.freeplay.church](https://admin.freeplay.church) adresinde oynatma listeleri oluşturup bunları bir takvime yerleştirin. Eşleştirilmiş TV'ler, kimse Başlat'a basmadan bunları doğru zamanlarda oynatır -- bkz. [Zamanlanmış Mod](./scheduled-mode/)
+- **Zamanlanmış mod** - [admin.freeplay.church](https://admin.freeplay.church) adresinde oynatma listeleri oluşturup bunları bir takvime yerleştirin. Eşleştirilmiş TV'ler, kimse Başlat'a basmadan bunları doğru zamanlarda oynatır -- bkz. [Zamanlanmış Mod](./scheduled-mode/index.md)
 - **Plan eşleştirme** - Cihazınızı, odalar arasında koordineli içerik için bir kilise ibadet planına bağlayın
 - **İçerik sağlayıcıları** - [Lessons.church](/docs/lessons-church/), Bible Project, Dropbox ve OneDrive gibi harici kaynaklardan içerik göz atın ve indirin
-- **Duyurular** - Bağlı bir sağlayıcıdan bir klasördeki slaytları döngüsel olarak oynatın -- bkz. [Duyurular](./content-providers/announcements)
+- **Duyurular** - Bağlı bir sağlayıcıdan bir klasördeki slaytları döngüsel olarak oynatın -- bkz. [Duyurular](./content-providers/announcements.md)
 - **TV kumandasına uygun** - Yön tuşları ve seçme tuşu bulunan standart bir TV kumandasıyla tüm uygulamada gezinin
 - **Daraltılabilir kenar çubuğu** - İnce bir kenar çubuğu, ekranı kalabalıklaştırmadan gezinmeyi erişilebilir tutar
 
@@ -35,10 +36,10 @@ FreePlay'i başlattığınızda içerik sağlayıcılarınıza bağlanır ve kul
 
 ## Bölümler
 
-- **[Başlarken](./getting-started/)** - Uygulamayı kurun, başlatın ve nasıl bağlanacağınızı seçin
-- **[Zamanlanmış Mod](./scheduled-mode/)** - TV'leri bir takvime eşleştirin ve FreePlay Admin üzerinden yönetin
-- **[Plan Modu](./plan-mode/)** - Bir kilise ibadet planıyla eşleştirin
-- **[İçerik Sağlayıcıları](./content-providers/)** - Harici içerik kaynaklarına bağlanın
+- **[Başlarken](./getting-started/index.md)** - Uygulamayı kurun, başlatın ve nasıl bağlanacağınızı seçin
+- **[Zamanlanmış Mod](./scheduled-mode/index.md)** - TV'leri bir takvime eşleştirin ve FreePlay Admin üzerinden yönetin
+- **[Plan Modu](./plan-mode/index.md)** - Bir kilise ibadet planıyla eşleştirin
+- **[İçerik Sağlayıcıları](./content-providers/index.md)** - Harici içerik kaynaklarına bağlanın
 
 :::info
 FreePlay, kiliseler için ücretsiz ve açık kaynaklı araçlardan oluşan [ChurchApps](https://churchapps.org) paketinin bir parçasıdır.

@@ -1,5 +1,6 @@
 ---
 title: "Osebe"
+description: "Iščite, dodajajte in urejajte člane v razdelku Osebe v B1 Admin, vključno z gospodinjstvi, množičnimi posodobitvami ter tiskom in izvozom imenika."
 ---
 
 # Osebe

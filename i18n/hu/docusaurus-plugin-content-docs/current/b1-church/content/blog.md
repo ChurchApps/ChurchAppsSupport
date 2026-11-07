@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "B1.church blog böngészése és RSS-hírfolyamok"
+sidebar_label: "Blog"
+description: "Egyházi blog böngészése a B1.church-en kategória vagy címke szerint, régebbi bejegyzések lapozása, és új bejegyzések követése RSS-en."
 ---
 
 # Blog

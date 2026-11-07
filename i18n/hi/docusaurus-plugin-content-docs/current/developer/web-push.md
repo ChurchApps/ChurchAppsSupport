@@ -1,5 +1,6 @@
 ---
 title: "वेब Push सूचनाएँ"
+description: "VAPID कुंजियाँ, WebPushHelper क्लाइंट और सर्विस वर्कर हैंडलिंग सेट करें, ताकि B1.church और B1 Admin सदस्यों को ब्राउज़र पुश नोटिफ़िकेशन भेज सकें।"
 ---
 
 # वेब Push सूचनाएँ
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## संबंधित पृष्ठ
 
-- [Notifications Architecture](./architecture/notifications) -- पूरा इन-ऐप/push/ईमेल escalation funnel और रिमाइंडर इंजन
-- [Real-time Architecture](./realtime) -- WebSocket डिलीवरी; push अब उसी पास में socket डिलीवरी के साथ उसी इन-ऐप funnel से फ़ायर होता है, केवल तब fallback के रूप में नहीं जब socket डिलीवरी न पहुँचे
-- [Messaging Endpoints](./api/endpoints/messaging) -- सूचनाएँ, डिवाइस, और messaging सतह का बाकी हिस्सा
-- [AppHelper](./shared-libraries/app-helper) -- npm पैकेज जो `WebPushHelper` भेजता है
+- [Notifications Architecture](./architecture/notifications.md) -- पूरा इन-ऐप/push/ईमेल escalation funnel और रिमाइंडर इंजन
+- [Real-time Architecture](./realtime.md) -- WebSocket डिलीवरी; push अब उसी पास में socket डिलीवरी के साथ उसी इन-ऐप funnel से फ़ायर होता है, केवल तब fallback के रूप में नहीं जब socket डिलीवरी न पहुँचे
+- [Messaging Endpoints](./api/endpoints/messaging.md) -- सूचनाएँ, डिवाइस, और messaging सतह का बाकी हिस्सा
+- [AppHelper](./shared-libraries/app-helper.md) -- npm पैकेज जो `WebPushHelper` भेजता है

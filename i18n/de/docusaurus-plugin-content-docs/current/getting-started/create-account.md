@@ -1,5 +1,6 @@
 ---
 title: "Konto erstellen"
+description: "Ein ChurchApps-Konto auf B1.church registrieren, E-Mail bestätigen und eine Gemeinde anlegen oder beitreten, um B1 Admin einzurichten."
 ---
 
 # Konto erstellen

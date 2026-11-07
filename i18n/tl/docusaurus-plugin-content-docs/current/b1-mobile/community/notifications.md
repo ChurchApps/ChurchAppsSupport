@@ -1,5 +1,6 @@
 ---
 title: "Mga Notipikasyon"
+description: "I-set up ang push alert sa B1 Mobile app, at tingnan, buksan, at i-clear ang mga notification ng simbahan para sa mensahe, grupo, at paglilingkod."
 ---
 
 # Mga Notipikasyon
@@ -13,7 +14,7 @@ Ang B1 Mobile ay gumagamit ng push notifications upang panatilihing natutugunan 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [Mag-install ng B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [Mag-install ng B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
 - Payagan ang mga notipikasyon para sa B1 Mobile sa iyong mga setting ng device
 
 </div>
@@ -22,8 +23,8 @@ Ang B1 Mobile ay gumagamit ng push notifications upang panatilihing natutugunan 
 
 Ang mga notipikasyon ay maaaring sumasaklaw sa isang hanay ng aktibidad, kabilang ang:
 
-- **Mga Mensahe** -- Kapag nagpadala sa iyo ng [private message](./messaging) ang isang tao.
-- **Aktibidad ng Grupo** -- Mga update, post, at pag-uusap mula sa [groups](../groups/) kung saan ka kasapi.
+- **Mga Mensahe** -- Kapag nagpadala sa iyo ng [private message](./messaging.md) ang isang tao.
+- **Aktibidad ng Grupo** -- Mga update, post, at pag-uusap mula sa [groups](../groups/index.md) kung saan ka kasapi.
 - **Mga Pagtalaga ng Pagsisilbi** -- Kapag itinalagang ka sa isang [plan](../serving/viewing-plans.md) o kapag nagbago ang iyong assignment status.
 - **Ibang mga Update** -- Mga pangkalahatang anunsyo at aktibidad na nauugnay sa iyo.
 

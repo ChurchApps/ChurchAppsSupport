@@ -1,5 +1,6 @@
 ---
 title: "消息模块接口"
+description: "ChurchApps 消息 API 端点参考：会话、备注访问规则、短信、电子邮件模板、通知和设备。"
 ---
 
 # 消息模块接口
@@ -190,7 +191,7 @@ Authorization: Bearer <token>
 
 基础路径：`/messaging/connections`
 
-用于管理聊天、群组会话、私信和直播的 WebSocket/实时连接。端到端协议请参见 [实时架构](../../realtime)。
+用于管理聊天、群组会话、私信和直播的 WebSocket/实时连接。端到端协议请参见 [实时架构](../../realtime.md)。
 
 | 方法 | 路径 | 鉴权 | 权限 | 说明 |
 |--------|------|------|------|------------|
@@ -367,9 +368,9 @@ Authorization: Bearer <token>
 
 ## 相关页面
 
-- [实时架构](../../realtime) -- WebSocket 协议、房间订阅以及统一投递框架
-- [Web 推送通知](../../web-push) -- 浏览器推送注册与投递
-- [成员模块接口](./membership) -- 人员、群组、角色和核心身份
-- [考勤接口](./attendance) -- 服务与访问记录
-- [身份验证与权限](./authentication) -- 登录流程、JWT、OAuth、权限模型
-- [模块结构](../module-structure) -- 代码组织模式
+- [实时架构](../../realtime.md) -- WebSocket 协议、房间订阅以及统一投递框架
+- [Web 推送通知](../../web-push.md) -- 浏览器推送注册与投递
+- [成员模块接口](./membership.md) -- 人员、群组、角色和核心身份
+- [考勤接口](./attendance.md) -- 服务与访问记录
+- [身份验证与权限](./authentication.md) -- 登录流程、JWT、OAuth、权限模型
+- [模块结构](../module-structure.md) -- 代码组织模式

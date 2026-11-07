@@ -1,5 +1,6 @@
 ---
 title: "Proxy server Caddy pre vlastné domény"
+description: "Zostavenie a spustenie reverzného proxy Caddy, ktorý obsluhuje vlastné cirkevné domény pre weby B1.church, vrátane certifikátov TLS, mapovania hostiteľov a známych úskalí."
 ---
 
 # Proxy server Caddy pre vlastné domény
@@ -10,7 +11,7 @@ Vlastné domény cirkví (`mychurch.org` → webová stránka cirkvi v B1) sa uk
 
 </div>
 
-Ako sa požiadavka po doručení do B1App priradí k cirkvi a stránke, nájdete v článku [Smerovanie webov a viacero stránok](../architecture/websites).
+Ako sa požiadavka po doručení do B1App priradí k cirkvi a stránke, nájdete v článku [Smerovanie webov a viacero stránok](../architecture/websites.md).
 
 ## Komponenty
 
@@ -88,5 +89,5 @@ Administratívne API počúva iba na `localhost:2019`. Starý režim runtime ho 
 
 ## Súvisiace stránky
 
-- [Smerovanie webov a viacero stránok](../architecture/websites) — ako sa preposlaná požiadavka priradí k cirkvi a stránke v B1App
-- [Nasadenie API](./apis) — nasadenie Membership API, ktoré obsluhuje `authorize` a `hostmap`
+- [Smerovanie webov a viacero stránok](../architecture/websites.md) — ako sa preposlaná požiadavka priradí k cirkvi a stránke v B1App
+- [Nasadenie API](./apis.md) — nasadenie Membership API, ktoré obsluhuje `authorize` a `hostmap`

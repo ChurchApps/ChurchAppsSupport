@@ -1,5 +1,6 @@
 ---
 title: "Concluindo o check-in"
+description: "Conclua o check-in da família no quiosque do B1 Checkin, com limites de sala, impressão de etiquetas, códigos de retirada e próximos passos."
 ---
 
 # Concluindo o check-in
@@ -13,9 +14,9 @@ Depois de revisar sua família e fazer as atribuições de grupo necessárias, v
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- [Revise sua família](./household-review) na tela de revisão da família
-- [Atribua grupos](./group-assignment) aos membros da família que precisam fazer check-in em uma classe ou programa específico
-- Opcionalmente, [adicione os visitantes](./adding-guests) que estão com a sua família
+- [Revise sua família](./household-review.md) na tela de revisão da família
+- [Atribua grupos](./group-assignment.md) aos membros da família que precisam fazer check-in em uma classe ou programa específico
+- Opcionalmente, [adicione os visitantes](./adding-guests.md) que estão com a sua família
 
 </div>
 
@@ -28,10 +29,10 @@ Depois de revisar sua família e fazer as atribuições de grupo necessárias, v
 
 ## Salas lotadas e proporção de voluntários
 
-Se a sua igreja configurou [limites de segurança](../../b1-admin/attendance/checkin-safety) nas salas, o servidor os verifica antes de salvar:
+Se a sua igreja configurou [limites de segurança](../../b1-admin/attendance/checkin-safety.md) nas salas, o servidor os verifica antes de salvar:
 
 - Se uma sala selecionada estiver **lotada ou fechada**, o check-in não é concluído, e o aplicativo informa o nome da sala para que você escolha outra.
-- Se o horário de culto tiver uma [programação de check-in](../../b1-admin/attendance/setup#setting-a-check-in-schedule) e a janela de check-in não estiver aberta neste momento, o check-in nas salas desse horário também é recusado. A tela **Não é possível fazer check-in ainda** lista a sala com o motivo "o check-in não está aberto neste momento"; toque em **Trocar salas** para escolher outro horário de culto ou outro grupo. (Horários de culto que já estão encerrados aparecem como **Encerrado** na [tela da família](./household-review) e não podem ser escolhidos, por isso você normalmente só verá isso se uma janela for fechada durante um check-in.)
+- Se o horário de culto tiver uma [programação de check-in](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) e a janela de check-in não estiver aberta neste momento, o check-in nas salas desse horário também é recusado. A tela **Não é possível fazer check-in ainda** lista a sala com o motivo "o check-in não está aberto neste momento"; toque em **Trocar salas** para escolher outro horário de culto ou outro grupo. (Horários de culto que já estão encerrados aparecem como **Encerrado** na [tela da família](./household-review.md) e não podem ser escolhidos, por isso você normalmente só verá isso se uma janela for fechada durante um check-in.)
 - Uma família que fez check-in em um horário de culto anterior pode voltar mais tarde e adicionar um horário de culto aberto, mesmo depois que a janela anterior tiver fechado. Os check-ins existentes são mantidos e não fazem o novo check-in ser recusado.
 - Se uma sala infantil estiver **com falta de voluntários** para a proporção definida, o aplicativo mostra um aviso que um membro da equipe pode confirmar para prosseguir, ou bloqueia o check-in por completo, dependendo de como a sua igreja configurou a aplicação da proporção.
 
@@ -49,7 +50,7 @@ O mesmo código de segurança aparece na etiqueta de nome da criança e no compr
 O código de segurança é gerado novamente a cada check-in e usa apenas consoantes e dígitos (as vogais são excluídas para evitar a formação de palavras inadequadas).
 
 :::warning
-Se as etiquetas não forem impressas, abra as Configurações do administrador tocando sete vezes no **logotipo da igreja** e depois toque em **Trocar impressora** para verificar a conexão com a impressora. Consulte [Configuração da impressora](../getting-started/printer-setup) para ver os passos de solução de problemas.
+Se as etiquetas não forem impressas, abra as Configurações do administrador tocando sete vezes no **logotipo da igreja** e depois toque em **Trocar impressora** para verificar a conexão com a impressora. Consulte [Configuração da impressora](../getting-started/printer-setup.md) para ver os passos de solução de problemas.
 :::
 
 ## O que acontece após o check-in

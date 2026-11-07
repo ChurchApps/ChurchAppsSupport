@@ -1,5 +1,6 @@
 ---
 title: 신앙고백
+description: "ChurchApps가 하나님, 예수님, 성령, 성경, 구원, 교회에 대해 믿는 바입니다. Lessons.church 교육과정을 검토하는 기준입니다."
 ---
 
 # 신앙고백

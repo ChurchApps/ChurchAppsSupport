@@ -1,5 +1,6 @@
 ---
 title: "Повезане услуге"
+description: "Повежите B1 Admin с Mailchimp, Donorbox, Subsplash, VOMO, Clearstream и другим алатима помоћу Zapier или Make рецепата, с водичем за сваки."
 ---
 
 # Повезане услуге
@@ -14,14 +15,14 @@ title: "Повезане услуге"
 
 | Услуга | Категорија | Посредник | Шта можете повезати |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | Е-пошта | Zapier или Make | Синхронизујте нове особе и даваоце из B1 у Mailchimp публику |
-| [Donorbox](./donorbox) | Донације | Zapier | Пошаљите донације и даваоце из Donorbox назад у B1 |
-| [Subsplash](./subsplash) | Апликација / Донације | Zapier | Увезите давања и особе из Subsplash у B1 |
-| [VOMO](./vomo) | Волонтирање | Zapier | Синхронизујте пријаве волонтера између B1 група и VOMO пројеката |
-| [Clearstream](./clearstream) | SMS | Zapier | Покрените Clearstream поруку из B1 догађаја; примајте одговоре као B1 записе |
-| [Text In Church](./text-in-church) | SMS / Радни токови | Zapier | Покрените Text In Church радне токове из B1; примајте податке са Connect Card-а |
-| [Mobile Message](./mobile-message) | SMS (AU) | Webhooks by Zapier или Make | Шаљите SMS из било ког B1 догађаја |
-| [Checkr](./checkr) | Провере прошлости | Make | Покрените проверу прошлости када се особа придружи служећем тиму |
+| [Mailchimp](./mailchimp.md) | Е-пошта | Zapier или Make | Синхронизујте нове особе и даваоце из B1 у Mailchimp публику |
+| [Donorbox](./donorbox.md) | Донације | Zapier | Пошаљите донације и даваоце из Donorbox назад у B1 |
+| [Subsplash](./subsplash.md) | Апликација / Донације | Zapier | Увезите давања и особе из Subsplash у B1 |
+| [VOMO](./vomo.md) | Волонтирање | Zapier | Синхронизујте пријаве волонтера између B1 група и VOMO пројеката |
+| [Clearstream](./clearstream.md) | SMS | Zapier | Покрените Clearstream поруку из B1 догађаја; примајте одговоре као B1 записе |
+| [Text In Church](./text-in-church.md) | SMS / Радни токови | Zapier | Покрените Text In Church радне токове из B1; примајте податке са Connect Card-а |
+| [Mobile Message](./mobile-message.md) | SMS (AU) | Webhooks by Zapier или Make | Шаљите SMS из било ког B1 догађаја |
+| [Checkr](./checkr.md) | Провере прошлости | Make | Покрените проверу прошлости када се особа придружи служећем тиму |
 
 ## Заједничко за све њих
 
@@ -45,8 +46,8 @@ title: "Повезане услуге"
 
 ## Погледајте још
 
-- [Zapier (преглед)](../zapier): B1 страна сваког Zapier рецепта је иста. Овај документ то покрива једном.
-- [Make (преглед)](../make): исто важи и за Make сценарије.
-- [Slack & Discord](../slack-discord): обавештења у ћаскању без посредника.
-- [Google Sheets](../google-sheets): извози на захтев.
+- [Zapier (преглед)](../zapier.md): B1 страна сваког Zapier рецепта је иста. Овај документ то покрива једном.
+- [Make (преглед)](../make.md): исто важи и за Make сценарије.
+- [Slack & Discord](../slack-discord.md): обавештења у ћаскању без посредника.
+- [Google Sheets](../google-sheets.md): извози на захтев.
 - [Веб-куке (референца за програмере)](/docs/developer/api/webhooks): каталог догађаја на који се сваки рецепт ослања.

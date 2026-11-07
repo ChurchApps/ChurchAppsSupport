@@ -1,5 +1,7 @@
 ---
-title: "로그인하기"
+title: "B1 Church 체크인에 로그인하기"
+sidebar_label: "로그인하기"
+description: "B1 Church 체크인 키오스크 앱에 로그인하고 교회를 선택하세요. 체크인 태블릿의 자동 로그인, 관리자 설정, 로그아웃을 이해하세요."
 ---
 
 # 로그인하기
@@ -63,7 +65,7 @@ B1 Admin이나 다른 ChurchApps 제품에서 사용하는 이메일과 비밀�
 2. 키오스크 PIN이 설정되어 있다면 요청이 나타날 때 PIN을 입력하세요.
 3. 다음 옵션이 있는 **Admin Settings** 화면이 열립니다.
    - **Change Service** -- 선택한 예배 시간 변경
-   - **Change Printer** -- [프린터 설정](./printer-setup)을 열어 프린터를 찾고 선택
+   - **Change Printer** -- [프린터 설정](./printer-setup.md)을 열어 프린터를 찾고 선택
    - **Set/Change PIN** -- 관리자 접근을 보호하는 키오스크 PIN 설정 또는 변경
    - **Logout** -- 로그아웃하고 로그인 화면으로 돌아가기
 
@@ -73,4 +75,4 @@ B1 Admin이나 다른 ChurchApps 제품에서 사용하는 이메일과 비밀�
 
 ## 다음 단계
 
-로그인한 뒤에는 [프린터를 설정](./printer-setup)하거나 바로 [체크인 작업 흐름](../check-in/)으로 이동할 수 있습니다.
+로그인한 뒤에는 [프린터를 설정](./printer-setup.md)하거나 바로 [체크인 작업 흐름](../check-in/index.md)으로 이동할 수 있습니다.

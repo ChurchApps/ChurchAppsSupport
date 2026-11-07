@@ -1,5 +1,7 @@
 ---
-title: "سجل التبرعات"
+title: "عرض سجل التبرعات في B1 Mobile"
+sidebar_label: "سجل التبرعات"
+description: "تحقق من عطاءك منذ بداية السنة وآخر هدية وسجل التبرعات الكامل في B1 Mobile، وكرر هدية سابقة بنقرة واحدة من تبويب النظرة العامة."
 ---
 
 # سجل التبرعات
@@ -13,8 +15,8 @@ title: "سجل التبرعات"
 <div class="prereqs">
 <h4>قبل أن تبدأ</h4>
 
-- [ثبّت تطبيق B1 Mobile](../getting-started/installing) و[سجّل الدخول](../getting-started/logging-in) إلى حسابك
-- [قدّم تبرعاً واحداً على الأقل](./making-donations) لرؤية سجلك
+- [ثبّت تطبيق B1 Mobile](../getting-started/installing.md) و[سجّل الدخول](../getting-started/logging-in.md) إلى حسابك
+- [قدّم تبرعاً واحداً على الأقل](./making-donations.md) لرؤية سجلك
 
 </div>
 
@@ -45,5 +47,5 @@ title: "سجل التبرعات"
 
 ## مقالات ذات صلة
 
-- [تقديم تبرع](./making-donations) -- قدّم هدية جديدة من التطبيق
-- [إدارة طرق الدفع](./managing-payments) -- أضِف طرق دفع محفوظة أو احذفها
+- [تقديم تبرع](./making-donations.md) -- قدّم هدية جديدة من التطبيق
+- [إدارة طرق الدفع](./managing-payments.md) -- أضِف طرق دفع محفوظة أو احذفها

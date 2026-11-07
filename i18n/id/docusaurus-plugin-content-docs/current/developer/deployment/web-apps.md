@@ -1,5 +1,6 @@
 ---
 title: "Web App Deployment"
+description: "Cara deploy aplikasi web ChurchApps seperti B1 Admin ke Amazon S3 dan CloudFront, dengan deploy otomatis lewat GitHub Actions saat merge atau perintah manual."
 ---
 
 # Web App Deployment
@@ -13,7 +14,7 @@ Aplikasi web ChurchApps di-deploy sebagai situs statis ke **Amazon S3** dengan *
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- Siapkan aplikasi web secara lokal dan pastikan aplikasi dapat dibangun -- lihat [Aplikasi Web](../web-apps/)
+- Siapkan aplikasi web secara lokal dan pastikan aplikasi dapat dibangun -- lihat [Aplikasi Web](../web-apps/index.md)
 - Konfigurasikan kredensial AWS dengan akses S3 dan CloudFront
 - Ketahui nama bucket S3 tujuan dan ID distribusi CloudFront
 
@@ -53,6 +54,6 @@ Jika Anda perlu memverifikasi build secara lokal sebelum deployment, jalankan `n
 
 ## Artikel Terkait
 
-- **[Aplikasi Web](../web-apps/)** -- Panduan pengaturan untuk B1Admin, B1App, dan LessonsApp
-- **[Deployment API](./apis)** -- Men-deploy API backend
-- **[Deployment Mobile](./mobile)** -- Men-deploy aplikasi mobile ke toko aplikasi
+- **[Aplikasi Web](../web-apps/index.md)** -- Panduan pengaturan untuk B1Admin, B1App, dan LessonsApp
+- **[Deployment API](./apis.md)** -- Men-deploy API backend
+- **[Deployment Mobile](./mobile.md)** -- Men-deploy aplikasi mobile ke toko aplikasi

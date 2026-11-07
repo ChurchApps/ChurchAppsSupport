@@ -1,5 +1,6 @@
 ---
 title: "Esittäminen"
+description: "Näytä oppitunnit projektorilla Lessons.churchin esitystilassa, jaa roolikohtaisia opasteita vapaaehtoisille ja tulosta materiaalit ennen tuntia."
 ---
 
 # Esittäminen

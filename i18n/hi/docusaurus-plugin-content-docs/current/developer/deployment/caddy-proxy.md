@@ -1,5 +1,6 @@
 ---
 title: "Caddy कस्टम-डोमेन प्रॉक्सी"
+description: "Caddy रिवर्स प्रॉक्सी बनाएँ और चलाएँ जो B1.church साइटों के लिए कस्टम चर्च डोमेन सेवा करता है, TLS प्रमाणपत्र, होस्ट मैपिंग और ज्ञात समस्याओं सहित।"
 ---
 
 # Caddy कस्टम-डोमेन प्रॉक्सी
@@ -10,7 +11,7 @@ title: "Caddy कस्टम-डोमेन प्रॉक्सी"
 
 </div>
 
-B1App तक पहुँचने के बाद अनुरोध किसी चर्च/साइट पर कैसे हल होता है, इसके लिए [Website Routing & Multi-Site](../architecture/websites) देखें।
+B1App तक पहुँचने के बाद अनुरोध किसी चर्च/साइट पर कैसे हल होता है, इसके लिए [Website Routing & Multi-Site](../architecture/websites.md) देखें।
 
 ## घटक
 
@@ -88,5 +89,5 @@ API में `CaddyHelper` (और `/membership/domains/caddy` + `/caddy/init` 
 
 ## संबंधित पृष्ठ
 
-- [Website Routing & Multi-Site](../architecture/websites) -- प्रॉक्सी किया गया अनुरोध B1App में चर्च/साइट पर कैसे हल होता है
-- [API Deployment](./apis) -- Membership API जो `authorize`/`hostmap` परोसता है, उसे डिप्लॉय करना
+- [Website Routing & Multi-Site](../architecture/websites.md) -- प्रॉक्सी किया गया अनुरोध B1App में चर्च/साइट पर कैसे हल होता है
+- [API Deployment](./apis.md) -- Membership API जो `authorize`/`hostmap` परोसता है, उसे डिप्लॉय करना

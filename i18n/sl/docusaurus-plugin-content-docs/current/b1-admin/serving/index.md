@@ -1,5 +1,7 @@
 ---
-title: "Služenje"
+title: "Pregled služenja v B1 Admin"
+sidebar_label: "Služenje"
+description: "Usklajujte prostovoljce in načrtujte cerkvena bogoslužja v razdelku Služenje v B1 Admin, od zavihkov služb in ekip do načrtov, pesmi in nalog."
 ---
 
 # Služenje

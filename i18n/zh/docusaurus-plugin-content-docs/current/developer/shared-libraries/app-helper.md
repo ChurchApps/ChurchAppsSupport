@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "Packages 工作区中共享包 @churchapps/apphelper 的参考文档，包括其子路径入口点、各应用使用的导出内容，以及本地开发和发布步骤。"
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ title: "AppHelper"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 安装 **Node.js** 和 **Git**——查看[先决条件](../setup/prerequisites)
+- 安装 **Node.js** 和 **Git**——查看[先决条件](../setup/prerequisites.md)
 - 熟悉[包工作区](./index.md)设置和发布流程
 
 </div>
@@ -92,6 +93,6 @@ B1Transfer 和 LessonsApp 仅使用根和 `login` 入口点——`donations`、`
 
 ## 相关文章
 
-- **[Helpers](./helpers)**——与 AppHelper 一起使用的基本实用工具包
-- **[网络应用](../web-apps/)**——消费此包的网络应用
+- **[Helpers](./helpers.md)**——与 AppHelper 一起使用的基本实用工具包
+- **[网络应用](../web-apps/index.md)**——消费此包的网络应用
 - **[共享库概述](./index.md)**——工作区设置、发布流程和本地链接工作流

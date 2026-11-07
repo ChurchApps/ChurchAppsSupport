@@ -1,5 +1,6 @@
 ---
 title: "Kalendorius su laisvomis laikais"
+description: "Nustatykite rezervuojamus kambarius ir įrangą B1 Admin, rezervuokite juos kalendoriuje, pridėkite paruošimo buferius ir tvarkykite pasikartojančius rezervavimus."
 ---
 
 # Kalendorius su laisvomis laikais
@@ -13,7 +14,7 @@ Kalendorius su laisvomis laikais suteikia jums bendrą vaizdą apie visus kambar
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Sukurkite bent vieną [kambarį arba išteklių](rooms-resources) skiltyje Kambariai ir ištekliai
+- Sukurkite bent vieną [kambarį arba išteklių](./rooms-resources.md) skiltyje Kambariai ir ištekliai
 - Jums reikia redagavimo prieigos prie skilties Kalendoriai B1 Admin programoje
 
 </div>
@@ -58,7 +59,7 @@ Naudokite išskleidžiamąjį sąrašą **Kambarys / Išteklius** viršuje kair�
 6. Spustelėkite **Įrašyti**, kad pateiktumėte užsakymą.
 
 :::info
-Jei kambariui arba ištekliui nustatyta **Patvirtinimo grupė**, užsakymas bus rodomas kaip **Laukiama**, kol šios grupės vadovas jį patvirtins. Patvirtinimo eigą žr. [Kalendorių patvirtinimai](approvals).
+Jei kambariui arba ištekliui nustatyta **Patvirtinimo grupė**, užsakymas bus rodomas kaip **Laukiama**, kol šios grupės vadovas jį patvirtins. Patvirtinimo eigą žr. [Kalendorių patvirtinimai](./approvals.md).
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Prieš įrašydami kalendorius paryškins visus konfliktus. Jei matote konflikto
 
 ## Susiję straipsniai
 
-- [Kambariai, ištekliai ir planavimas](rooms-resources) — sukurkite rezervuojamas erdves ir įrangą
-- [Kalendorių patvirtinimai](approvals) — patvirtinkite arba atmeskite užsakymo prašymus
-- [Kalendorių kūrimas](creating-calendars) — tvarkykite renginių kalendorius
+- [Kambariai, ištekliai ir planavimas](./rooms-resources.md) — sukurkite rezervuojamas erdves ir įrangą
+- [Kalendorių patvirtinimai](./approvals.md) — patvirtinkite arba atmeskite užsakymo prašymus
+- [Kalendorių kūrimas](./creating-calendars.md) — tvarkykite renginių kalendorius

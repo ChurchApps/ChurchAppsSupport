@@ -1,21 +1,22 @@
 ---
 title: "Pripomienky udalostí"
+description: "Nastavte pripomienky udalostí v B1 Admin pre push, e-mail a text, vyberte časovanie, príjemcov a vlastnú správu, aby ľudia dostali upozornenie načas."
 ---
 
 # Pripomienky udalostí
 
 <div class="article-intro">
 
-Pripomienky udalostí automaticky upozornia správnych ľudí pred začiatkom udalosti -- napríklad: "Nezmeškajte to! Workshop o zdravotníctve začína zajtra o 9:00." Pripomienku nastavíte raz pri udalosti a B1 ju odošle načas cez push notifikácie, e-mail a, ak má vaša cirkev nastavené textové správy, aj ako SMS. Členovia si môžu vo svojich [Nastaveniach oznámení](../../b1-church/getting-started/notification-preferences) sami určiť, ktoré pripomienky chcú dostávať.
+Pripomienky udalostí automaticky upozornia správnych ľudí pred začiatkom udalosti -- napríklad: "Nezmeškajte to! Workshop o zdravotníctve začína zajtra o 9:00." Pripomienku nastavíte raz pri udalosti a B1 ju odošle načas cez push notifikácie, e-mail a, ak má vaša cirkev nastavené textové správy, aj ako SMS. Členovia si môžu vo svojich [Nastaveniach oznámení](../../b1-church/getting-started/notification-preferences.md) sami určiť, ktoré pripomienky chcú dostávať.
 
 </div>
 
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Vytvorte udalosť, na ktorú chcete ľudí upozorniť (pozri [Vytváranie kalendárov](creating-calendars))
-- Ak chcete osloviť registrovaných účastníkov, [zapnite registráciu](creating-calendars) pri udalosti
-- Ak chcete osloviť celú skupinu, uistite sa, že udalosť patrí do [skupiny](../groups/creating-groups) s členmi
+- Vytvorte udalosť, na ktorú chcete ľudí upozorniť (pozri [Vytváranie kalendárov](./creating-calendars.md))
+- Ak chcete osloviť registrovaných účastníkov, [zapnite registráciu](./creating-calendars.md) pri udalosti
+- Ak chcete osloviť celú skupinu, uistite sa, že udalosť patrí do [skupiny](../groups/creating-groups.md) s členmi
 
 </div>
 
@@ -57,21 +58,21 @@ Hostia pridaní len menom (bez prepojeného osobného záznamu) nemôžu dostať
 - Opakované udalosti sa spracúvajú automaticky: každý nadchádzajúci výskyt dostane vlastnú pripomienku.
 
 :::tip
-Pripomienky sa odosielajú **najprv ako push notifikácie, s e-mailom ako záložným kanálom**. Ak má člen zapnuté push notifikácie, dostane push; ak nie, dostane namiesto toho e-mail. Členovia si kanály pre každý typ oznámenia vyberajú vo svojich [Nastaveniach oznámení](../../b1-church/getting-started/notification-preferences).
+Pripomienky sa odosielajú **najprv ako push notifikácie, s e-mailom ako záložným kanálom**. Ak má člen zapnuté push notifikácie, dostane push; ak nie, dostane namiesto toho e-mail. Členovia si kanály pre každý typ oznámenia vyberajú vo svojich [Nastaveniach oznámení](../../b1-church/getting-started/notification-preferences.md).
 :::
 
 ## Textové pripomienky
 
 Kanál **Text** sa zobrazí, len ak je vaša cirkev pripojená k poskytovateľovi textových správ. Textové správy idú cez poskytovateľa vašej cirkvi a každá môže cirkvi stáť peniaze. Posielajú sa okrem akejkoľvek push alebo e-mailovej pripomienky a len ľuďom, ktorí:
 
-- zapnuli **Textové správy** vo svojich [Nastaveniach oznámení](../../b1-church/getting-started/notification-preferences), a
+- zapnuli **Textové správy** vo svojich [Nastaveniach oznámení](../../b1-church/getting-started/notification-preferences.md), a
 - majú vo svojom profile uvedené mobilné číslo.
 
 Každá správa začína názvom vašej cirkvi, zmestí sa do jednej textovej správy a končí textom „Reply STOP to opt out.“ Kto odpovie STOP, prestane od vašej cirkvi dostávať textové správy. Aby sa odpovede STOP dostali do B1, vložte **URL adresu webhooku pre prichádzajúce správy (STOP)** z vašich [nastavení textových správ](../settings/church-settings.md#texting) do webhooku pre prichádzajúce správy u vášho poskytovateľa.
 
 ## Čo môžu členovia ovplyvniť
 
-Pripomienky vždy rešpektujú [Nastavenia oznámení](../../b1-church/getting-started/notification-preferences) každého člena. Člen môže:
+Pripomienky vždy rešpektujú [Nastavenia oznámení](../../b1-church/getting-started/notification-preferences.md) každého člena. Člen môže:
 
 - vypnúť **Pripomienky udalostí** pre push, e-mail alebo textové správy, pričom ostatné oznámenia nechá zapnuté.
 - zapnúť alebo vypnúť textové pripomienky voľbou **Textové správy**.
@@ -81,10 +82,10 @@ Vaše rozhodnutie nemôžete prepísať, ak sa člen odhlásil z pripomienok uda
 
 ## Pripomienky pre služby
 
-Dobrovoľníci naplánovaní v pláne dostanú samostatnú **pripomienku služby** s detailmi plánu a, ak ešte neodpovedali, tlačidlá **Prijať / Odmietnuť** priamo v e-maile. Tieto pripomienky sa nastavujú pri type plánu, nie pri kalendárnej udalosti, a môžu sa odoslať aj textovou správou. Pozri [Pripomienky pre dobrovoľníkov](../serving/plans#volunteer-reminders) a [Nedeľní dobrovoľníci](../guides/sunday-volunteers), kde nájdete, ako fungujú plánovanie dobrovoľníkov a ich pripomienky.
+Dobrovoľníci naplánovaní v pláne dostanú samostatnú **pripomienku služby** s detailmi plánu a, ak ešte neodpovedali, tlačidlá **Prijať / Odmietnuť** priamo v e-maile. Tieto pripomienky sa nastavujú pri type plánu, nie pri kalendárnej udalosti, a môžu sa odoslať aj textovou správou. Pozri [Pripomienky pre dobrovoľníkov](../serving/plans.md#volunteer-reminders) a [Nedeľní dobrovoľníci](../guides/sunday-volunteers.md), kde nájdete, ako fungujú plánovanie dobrovoľníkov a ich pripomienky.
 
 ## Ďalšie kroky
 
-- [Nastavenia oznámení](../../b1-church/getting-started/notification-preferences) -- Čo môžu členovia ovládať
-- [Sprievodca registráciou na udalosti](../guides/event-registration) -- Nastavte registráciu, aby sa pripomienky mohli dostať k účastníkom
-- [Vytváranie kalendárov](creating-calendars) -- Späť na nastavenie kalendára
+- [Nastavenia oznámení](../../b1-church/getting-started/notification-preferences.md) -- Čo môžu členovia ovládať
+- [Sprievodca registráciou na udalosti](../guides/event-registration.md) -- Nastavte registráciu, aby sa pripomienky mohli dostať k účastníkom
+- [Vytváranie kalendárov](./creating-calendars.md) -- Späť na nastavenie kalendára

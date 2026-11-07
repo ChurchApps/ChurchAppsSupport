@@ -1,5 +1,6 @@
 ---
 title: "MCP 서버"
+description: "Claude Code, Cursor, Claude Desktop 같은 AI 클라이언트가 API 키 또는 OAuth 로그인으로 교회 데이터 엔드포인트를 호출할 수 있도록 B1 API에 MCP 접근을 설정하세요."
 ---
 
 # MCP 서버
@@ -13,7 +14,7 @@ B1 API는 `/mcp`에서 [MCP (Model Context Protocol)](https://modelcontextprotoc
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- 클라이언트가 사용할 범위를 가진 [B1 API 키](./api-keys)(`cak_…`), 또는 OAuth로 로그인할 수 있는 MCP 클라이언트([OAuth 탐색](#oauth-discovery) 참고)
+- 클라이언트가 사용할 범위를 가진 [B1 API 키](./api-keys.md)(`cak_…`), 또는 OAuth로 로그인할 수 있는 MCP 클라이언트([OAuth 탐색](#oauth-discovery) 참고)
 - 접근 가능한 B1 API 호스트 — 호스팅 교회는 `https://api.churchapps.org`, 자체 배포라면 직접 운영하는 주소
 - MCP 클라이언트. 최종 사용자 설정은 [Claude](/docs/b1-admin/integrations/claude)와 [ChatGPT](/docs/b1-admin/integrations/chatgpt)를 참고하세요
 
@@ -119,7 +120,7 @@ Authorization: Bearer cak_<prefix>.<secret>
 
 ### `describe_page_builder`
 
-일반 도구가 아닌 유일한 도구입니다. `/content/*` 엔드포인트를 통해 웹사이트 페이지를 만드는 방법을 설명하는 정적이며 독립적인 가이드입니다. Page → Section → Element 데이터 모델, 생성 작업 흐름, 각 `elementType`과 `answersJSON` 형식, `dividerTop`/`dividerBottom` 모양 구분선 같은 섹션 수준 설정, 그리고 전체 과정을 보여주는 예시를 포함합니다. B1Admin 편집기에서 관리하는 요소 목록을 그대로 반영합니다([웹사이트 빌더 아키텍처](../architecture/website-builder) 참고). 에이전트는 페이지 콘텐츠를 만들거나 편집하기 전에 한 번 호출한 뒤, `api_call`로 작업하도록 되어 있습니다.
+일반 도구가 아닌 유일한 도구입니다. `/content/*` 엔드포인트를 통해 웹사이트 페이지를 만드는 방법을 설명하는 정적이며 독립적인 가이드입니다. Page → Section → Element 데이터 모델, 생성 작업 흐름, 각 `elementType`과 `answersJSON` 형식, `dividerTop`/`dividerBottom` 모양 구분선 같은 섹션 수준 설정, 그리고 전체 과정을 보여주는 예시를 포함합니다. B1Admin 편집기에서 관리하는 요소 목록을 그대로 반영합니다([웹사이트 빌더 아키텍처](../architecture/website-builder.md) 참고). 에이전트는 페이지 콘텐츠를 만들거나 편집하기 전에 한 번 호출한 뒤, `api_call`로 작업하도록 되어 있습니다.
 
 ## 인증 모델
 
@@ -153,11 +154,11 @@ MCP 요청 자체는 `CustomAuthProvider.getUser()`를 거칩니다. 이는 인�
 
 ## OAuth 탐색
 
-MCP 서버는 OAuth 2.1 메타데이터를 공개하므로, OAuth로 발견된 서버에만 연결하는 클라이언트(특히 Claude.ai의 "Add custom connector" UI)가 키를 붙여 넣지 않고도 사용자를 로그인시킬 수 있습니다. `/mcp`는 보호된 리소스이고, `/membership/oauth` 아래의 [OAuth 제공자](./connected-apps)가 권한 서버이며, B1Admin의 `/oauth` 페이지가 동의 화면입니다.
+MCP 서버는 OAuth 2.1 메타데이터를 공개하므로, OAuth로 발견된 서버에만 연결하는 클라이언트(특히 Claude.ai의 "Add custom connector" UI)가 키를 붙여 넣지 않고도 사용자를 로그인시킬 수 있습니다. `/mcp`는 보호된 리소스이고, `/membership/oauth` 아래의 [OAuth 제공자](./connected-apps.md)가 권한 서버이며, B1Admin의 `/oauth` 페이지가 동의 화면입니다.
 
 | 엔드포인트 | 용도 |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (`/.well-known/oauth-protected-resource/mcp`도 가능) | 보호된 리소스 메타데이터(RFC 9728). `resource`는 `<api>/mcp`, `authorization_servers`는 API 루트, `scopes_supported`는 모든 [API 키 범위](./api-keys#scopes)를 나열합니다 |
+| `GET /.well-known/oauth-protected-resource` (`/.well-known/oauth-protected-resource/mcp`도 가능) | 보호된 리소스 메타데이터(RFC 9728). `resource`는 `<api>/mcp`, `authorization_servers`는 API 루트, `scopes_supported`는 모든 [API 키 범위](./api-keys.md#scopes)를 나열합니다 |
 | `GET /.well-known/oauth-authorization-server` | 권한 서버 메타데이터(RFC 8414). `authorization_endpoint`는 B1Admin `/oauth`, `token_endpoint`는 `/membership/oauth/token`, `registration_endpoint`는 `/membership/oauth/register`입니다 |
 | `POST /membership/oauth/register` | 동적 클라이언트 등록(RFC 7591) |
 
@@ -209,8 +210,8 @@ MCP 서버는 Api 저장소의 `src/modules/mcp/`에 있습니다. 주요 파일
 
 ## 관련 문서
 
-- [API 키](./api-keys)
-- [웹훅](./webhooks)
-- [연결된 앱(OAuth)](./connected-apps)
+- [API 키](./api-keys.md)
+- [웹훅](./webhooks.md)
+- [연결된 앱(OAuth)](./connected-apps.md)
 - [Claude — 최종 사용자 설정](/docs/b1-admin/integrations/claude)
 - [ChatGPT — 최종 사용자 설정](/docs/b1-admin/integrations/chatgpt)

@@ -1,5 +1,6 @@
 ---
 title: "Архитектура уведомлений и напоминаний"
+description: "Как API B1 Admin направляет уведомления, напоминания по расписанию, лимиты email церкви и отказы от SMS через единый канал доставки и фильтр настроек."
 ---
 
 # Архитектура уведомлений и напоминаний
@@ -185,6 +186,6 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 
 ## Связанные страницы
 
-- [Архитектура реального времени](../realtime) — протокол WebSocket и клиентские примитивы (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), на которых работает доставка in-app
-- [Web Push-уведомления](../web-push) — настройка VAPID и путь браузерного Push API, используемый уровнем эскалации push
-- [Endpoints сообщений](../api/endpoints/messaging) — полный REST-интерфейс для сообщений, диалогов, связей и маршрутов уведомлений и напоминаний
+- [Архитектура реального времени](../realtime.md) — протокол WebSocket и клиентские примитивы (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), на которых работает доставка in-app
+- [Web Push-уведомления](../web-push.md) — настройка VAPID и путь браузерного Push API, используемый уровнем эскалации push
+- [Endpoints сообщений](../api/endpoints/messaging.md) — полный REST-интерфейс для сообщений, диалогов, связей и маршрутов уведомлений и напоминаний

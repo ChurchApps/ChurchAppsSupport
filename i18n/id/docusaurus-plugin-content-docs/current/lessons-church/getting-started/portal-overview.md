@@ -1,5 +1,6 @@
 ---
 title: "Ikhtisar Portal"
+description: "Jelajahi portal Lessons.church untuk menemukan kelas, meninjau pelajaran terjadwal, mengatur tautan feed, serta membuka Penyedia Eksternal dan alat Admin."
 ---
 
 # Ikhtisar Portal

@@ -1,5 +1,7 @@
 ---
-title: "Začetek dela"
+title: "Začetek z Lessons.church"
+sidebar_label: "Začetek dela"
+description: "Ustvari brezplačen račun Lessons.church, poveži cerkev, nastavi učilnice in načrtuj prve ure. Brez naročnine in preizkusnega obdobja."
 ---
 
 # Začetek dela

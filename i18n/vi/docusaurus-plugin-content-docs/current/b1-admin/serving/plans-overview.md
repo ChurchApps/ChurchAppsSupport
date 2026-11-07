@@ -1,5 +1,6 @@
 ---
 title: "Tổng quan kế hoạch"
+description: "Xem tổng quan phân công tình nguyện viên qua nhiều ngày phục vụ trong B1 Admin, phát hiện vị trí còn trống, và điền hoặc gửi email cho nhóm từ một bảng duy nhất."
 ---
 
 # Tổng quan kế hoạch

@@ -1,5 +1,6 @@
 ---
 title: "Išsaugoti sąrašai"
+description: "Išsaugokite Asmenų paiešką B1 Admin kaip pavadintą sąrašą ir įkelkite vienu paspaudimu. Sąrašai atnaujinami, todėl nauji atitinkantys nariai rodomi automatiškai."
 ---
 
 # Išsaugoti sąrašai

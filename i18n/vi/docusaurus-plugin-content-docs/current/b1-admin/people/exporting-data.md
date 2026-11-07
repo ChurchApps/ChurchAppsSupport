@@ -1,5 +1,6 @@
 ---
 title: "Xuất dữ liệu"
+description: "Xuất danh sách người ra CSV, danh sách thành viên nhóm hoặc bản sao lưu đầy đủ cơ sở dữ liệu B1 từ B1 Admin, và xem nội dung tệp B1 Export Zip."
 ---
 
 # Xuất dữ liệu

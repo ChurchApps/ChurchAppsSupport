@@ -1,5 +1,6 @@
 ---
 title: "Elenco Anniversari"
+description: "Estrai in B1 Admin l'elenco di chi festeggia un anniversario di matrimonio in un mese scelto, con le date visibili ed esportabile in un foglio di calcolo."
 ---
 
 # Elenco Anniversari

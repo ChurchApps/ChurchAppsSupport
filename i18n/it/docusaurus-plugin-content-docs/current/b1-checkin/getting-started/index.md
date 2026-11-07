@@ -1,5 +1,7 @@
 ---
-title: "Per Iniziare"
+title: "Iniziare con B1 Checkin"
+sidebar_label: "Per Iniziare"
+description: "Configura l'app chiosco B1 Checkin su un tablet Android: installala, accedi, scegli la tua chiesa e, se vuoi, collega una stampante per etichette."
 ---
 
 # Per Iniziare con B1 Church Checkin
@@ -27,9 +29,9 @@ Configurare B1 Church Checkin richiede solo pochi minuti. Questa sezione ti guid
 
 Quando avvii l'app per la prima volta, passerai attraverso tre passaggi:
 
-1. **[Accedi](./logging-in)** -- Inserisci la tua email e password per autenticarti.
-2. **[Seleziona la tua chiesa](./logging-in)** -- Se il tuo account è collegato a più chiese, scegli quale deve servire questo kiosk.
-3. **[Configura una stampante](./printer-setup)** -- Configura una stampante di rete per la stampa delle etichette, oppure salta questo passaggio se non hai bisogno di etichette.
+1. **[Accedi](./logging-in.md)** -- Inserisci la tua email e password per autenticarti.
+2. **[Seleziona la tua chiesa](./logging-in.md)** -- Se il tuo account è collegato a più chiese, scegli quale deve servire questo kiosk.
+3. **[Configura una stampante](./printer-setup.md)** -- Configura una stampante di rete per la stampa delle etichette, oppure salta questo passaggio se non hai bisogno di etichette.
 
 Dopo il primo accesso, l'app salva le tue credenziali e la selezione della chiesa. Nei lanci successivi, passerà direttamente alla schermata dei servizi automaticamente.
 
@@ -43,6 +45,6 @@ Assicurati che l'amministratore della tua chiesa abbia configurato i servizi, gl
 
 ## Passaggi Successivi
 
-- [Accesso](./logging-in) -- Istruzioni dettagliate per l'accesso e la selezione della chiesa.
-- [Configurazione Stampante](./printer-setup) -- Come scoprire, selezionare e testare la tua stampante di etichette.
-- [Flusso di Check-In](../check-in/) -- Scopri il flusso completo del check-in una volta configurato il kiosk.
+- [Accesso](./logging-in.md) -- Istruzioni dettagliate per l'accesso e la selezione della chiesa.
+- [Configurazione Stampante](./printer-setup.md) -- Come scoprire, selezionare e testare la tua stampante di etichette.
+- [Flusso di Check-In](../check-in/index.md) -- Scopri il flusso completo del check-in una volta configurato il kiosk.

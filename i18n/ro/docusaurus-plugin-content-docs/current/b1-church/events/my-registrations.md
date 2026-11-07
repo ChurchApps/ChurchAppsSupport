@@ -1,5 +1,6 @@
 ---
 title: "Înregistrările mele"
+description: "Verifică starea înscrierilor, plătește soldul restant, editează participanții sau suplimentele ori anulează o înscriere în portalul B1 Church."
 ---
 
 # Înregistrările mele
@@ -14,7 +15,7 @@ Pagina **Înregistrări** din portalul membrilor este punctul tău de plecare pe
 <h4>Înainte de a începe</h4>
 
 - Trebuie să fii [autentificat](../getting-started/logging-in.md). Înregistrările făcute de oaspeți nu apar aici.
-- Ai nevoie de cel puțin o înregistrare la un eveniment. Consultă [Înscrierea la evenimente](./registering).
+- Ai nevoie de cel puțin o înregistrare la un eveniment. Consultă [Înscrierea la evenimente](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Locul tău este eliberat imediat. Dacă evenimentul are listă de așteptare, ur
 
 ## Articole asociate
 
-- [Înscrierea la evenimente](./registering) -- Procesul de înscriere, inclusiv plata și listele de așteptare
+- [Înscrierea la evenimente](./registering.md) -- Procesul de înscriere, inclusiv plata și listele de așteptare
 - [Prezentarea generală a evenimentelor](./index.md) -- Răsfoiește evenimentele viitoare

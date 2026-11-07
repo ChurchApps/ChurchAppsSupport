@@ -1,5 +1,7 @@
 ---
-title: "Urutan Ibadah"
+title: "Urutan Ibadah di B1 Admin"
+sidebar_label: "Urutan Ibadah"
+description: "Atur urutan ibadah untuk rencana ibadah di B1 Admin: tambahkan lagu, pelajaran, dan item khusus, susun ke dalam bagian, lalu cetak lembar pelaksanaan."
 ---
 
 # Urutan Ibadah

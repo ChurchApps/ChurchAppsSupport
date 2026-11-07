@@ -1,5 +1,7 @@
 ---
-title: "Bài học (Đã ngừng hỗ trợ)"
+title: "Tab Bài học đã ngừng sử dụng trong B1.church"
+sidebar_label: "Bài học (Đã ngừng hỗ trợ)"
+description: "Tab Bài học trong B1.church đã ngừng sử dụng. Tìm nơi chương trình bài học hiện nằm: duyệt trên Lessons.church và phát trên TV lớp học bằng FreePlay."
 ---
 
 # Bài học (Đã ngừng hỗ trợ)
@@ -9,7 +11,7 @@ Tab **Lessons** được nhúng trên B1.church đã ngừng hỗ trợ. Việc 
 
 Để xem, lên lịch hoặc chỉnh sửa giáo trình trực tiếp, hãy đăng nhập vào [Lessons.church](https://lessons.church) bằng trình duyệt. Để phát bài học trên TV lớp học, hãy cài đặt [FreePlay](/docs/freeplay/getting-started/) trên thiết bị TV của bạn.
 
-Phụ huynh của các nhóm gắn với một loại kế hoạch bài học trong B1Admin sẽ thấy **bài học của tuần này** ở trang [chi tiết nhóm](/docs/b1-church/groups/group-details.md), chứ không phải trên tab đã ngừng hỗ trợ này.
+Phụ huynh của các nhóm gắn với một loại kế hoạch bài học trong B1Admin sẽ thấy **bài học của tuần này** ở trang [chi tiết nhóm](../groups/group-details.md), chứ không phải trên tab đã ngừng hỗ trợ này.
 :::
 
 <div class="article-intro">

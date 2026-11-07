@@ -1,5 +1,7 @@
 ---
-title: "Lektioner"
+title: "Lektionsskærm i B1 Mobile (udfaset)"
+sidebar_label: "Lektioner"
+description: "Lektioner (udfaset): hvorfor skærmen Lektioner i B1 Mobile-appen blev udfaset, og hvor du finder undervisningsmateriale nu (FreePlay eller Lessons.church)."
 ---
 
 # Lektioner
@@ -13,7 +15,7 @@ Skærmen Lektioner giver dig adgang til din kirkes læreplan og undervisningsmat
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [log ind](../getting-started/logging-in) på din konto
+- [Installer B1 Mobile](../getting-started/installing.md) og [log ind](../getting-started/logging-in.md) på din konto
 - Din kirke skal have læreplan konfigureret gennem Lessons.church
 
 </div>
@@ -46,5 +48,5 @@ Skærmen Lektioner vises, når din kirke har konfigureret læreplan gennem Lesso
 
 ## Relaterede artikler
 
-- [Bibelen](./bible) -- Læs Skriftten ved siden af dine lektioner
-- [Prædikener](./sermons) -- Se prædikener, der udfylder dine studier
+- [Bibelen](./bible.md) -- Læs Skriftten ved siden af dine lektioner
+- [Prædikener](./sermons.md) -- Se prædikener, der udfylder dine studier

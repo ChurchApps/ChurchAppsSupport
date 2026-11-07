@@ -1,5 +1,6 @@
 ---
 title: "Doing-Endpunkte"
+description: "Endpunkt-Referenz der Doing-API hinter Dienstplänen, Ehrenamtszuweisungen, Aufgaben und Automatisierungen in B1 Admin mit Pfaden, Authentifizierung und Rechten."
 ---
 
 # Doing-Endpunkte
@@ -278,6 +279,6 @@ Leitet Anfragen an externe Inhaltsanbieter weiter (z. B. ProPresenter, EasyWorsh
 
 ## Verwandte Seiten
 
-- [Membership-Endpunkte](./membership) — Personen, Gruppen, Rollen und Berechtigungen
-- [Attendance-Endpunkte](./attendance) — Erfassung von Gottesdiensten und Besuchen
-- [Modulstruktur](../module-structure) — Muster der Code-Organisation
+- [Membership-Endpunkte](./membership.md) — Personen, Gruppen, Rollen und Berechtigungen
+- [Attendance-Endpunkte](./attendance.md) — Erfassung von Gottesdiensten und Besuchen
+- [Modulstruktur](../module-structure.md) — Muster der Code-Organisation

@@ -1,5 +1,6 @@
 ---
 title: "Kişi Ekleme"
+description: "B1 Admin'e kilise veritabanınıza bir kişi ekleyin, bilgilerini doldurun ve aile üyelerini check-in ve raporlama için hanelere bağlayın."
 ---
 
 # Kişi Ekleme

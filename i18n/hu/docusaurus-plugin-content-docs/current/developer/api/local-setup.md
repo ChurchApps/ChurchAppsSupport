@@ -1,5 +1,6 @@
 ---
 title: "Helyi API beállítása"
+description: "Állítsd be a ChurchApps API-t helyben: klónozd a repót, konfiguráld a hat MySQL-modul adatbázisát, inicializáld a sémát, és indítsd el a hot-reload fejlesztői szervert."
 ---
 
 # Helyi API beállítása
@@ -13,9 +14,9 @@ Ez az útmutató végigvezet a ChurchApps API helyi fejlesztési környezetének
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Telepítse a **Node.js 24+**, a **Git** és a **MySQL 8.0+** szoftvert -- lásd: [Előfeltételek](../setup/prerequisites)
+- Telepítse a **Node.js 24+**, a **Git** és a **MySQL 8.0+** szoftvert -- lásd: [Előfeltételek](../setup/prerequisites.md)
 - Hozzon létre egy MySQL-felhasználót, amelynek van adatbázis-létrehozási jogosultsága
-- Tekintse át a [Környezeti változók](../setup/environment-variables) leírását az API konfigurációjához
+- Tekintse át a [Környezeti változók](../setup/environment-variables.md) leírását az API konfigurációjához
 
 </div>
 
@@ -82,7 +83,7 @@ Az API újratöltéssel indul a [http://localhost:8084](http://localhost:8084) c
 
 ## Telepítés
 
-A staging környezet megszűnt. Az API minden `main` ágra történő push után a demo környezetbe települ, az éles környezetbe pedig a kézi **Deploy Prod** munkafolyamattal, amely a függőben lévő adatbázis-migrációkat is alkalmazza. Részletekért lásd: [API telepítés](../deployment/apis).
+A staging környezet megszűnt. Az API minden `main` ágra történő push után a demo környezetbe települ, az éles környezetbe pedig a kézi **Deploy Prod** munkafolyamattal, amely a függőben lévő adatbázis-migrációkat is alkalmazza. Részletekért lásd: [API telepítés](../deployment/apis.md).
 
 ## Helyi könyvtárfejlesztés
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Így a könyvtármódosításokat az API-val tesztelheti anélkül, hogy npm-re publikálná őket. Részletekért lásd: [Megosztott könyvtárak](../shared-libraries/#local-development-against-a-consuming-app) -- és soha ne commitolja a `package.json` fájlba a link által írt portál-feloldást.
+Így a könyvtármódosításokat az API-val tesztelheti anélkül, hogy npm-re publikálná őket. Részletekért lásd: [Megosztott könyvtárak](../shared-libraries/index.md#local-development-against-a-consuming-app) -- és soha ne commitolja a `package.json` fájlba a link által írt portál-feloldást.
 
 ## Kapcsolódó cikkek
 
-- **[Adatbázis](./database)** -- Az adatbázis modulonkénti felépítésének megértése
-- **[Modulszerkezet](./module-structure)** -- Hogyan szerveződnek a vezérlők, tárolók és modellek
-- **[Megosztott könyvtárak](../shared-libraries/)** -- A `@churchapps/helpers` és `@churchapps/apihelper` használata
+- **[Adatbázis](./database.md)** -- Az adatbázis modulonkénti felépítésének megértése
+- **[Modulszerkezet](./module-structure.md)** -- Hogyan szerveződnek a vezérlők, tárolók és modellek
+- **[Megosztott könyvtárak](../shared-libraries/index.md)** -- A `@churchapps/helpers` és `@churchapps/apihelper` használata

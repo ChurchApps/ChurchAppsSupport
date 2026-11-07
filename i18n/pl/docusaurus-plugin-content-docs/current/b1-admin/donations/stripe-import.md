@@ -1,5 +1,6 @@
 ---
 title: "Import ze Stripe"
+description: "Pobieraj darowizny ze Stripe do B1 Admin dzięki imporcie z podglądem, który oznacza każdą płatność jako nową, już zaimportowaną lub pominiętą przed zatwierdzeniem."
 ---
 
 # Import ze Stripe

@@ -1,5 +1,7 @@
 ---
-title: "Ayetul Zilei"
+title: "Versetul zilei în B1 Mobile"
+sidebar_label: "Ayetul Zilei"
+description: "Deschideți ecranul Versetul zilei din B1 Mobile pentru a vedea versetul biblic de azi ca imagine adaptată orientării telefonului sau tabletei, actualizată zilnic."
 ---
 
 # Ayetul Zilei
@@ -13,7 +15,7 @@ Ecranul Ayetul Zilei afișează un verset biblic zilnic sub forma unei imagini f
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalează B1 Mobile](../getting-started/installing) și [autentifică-te](../getting-started/logging-in) în contul tău
+- [Instalează B1 Mobile](../getting-started/installing.md) și [autentifică-te](../getting-started/logging-in.md) în contul tău
 - Biserica ta trebuie să aibă activată funcția Ayetul Zilei
 
 </div>
@@ -46,5 +48,5 @@ Ayetul Zilei este o funcție de conținut integrată în B1 Mobile. Dacă nu o v
 
 ## Articole conexe
 
-- [Biblia](./bible) -- Citește pasaje întregi din Scriptură în cititorul integrat
-- [Predici](./sermons) -- Urmărește predicile înregistrate ale bisericii tale
+- [Biblia](./bible.md) -- Citește pasaje întregi din Scriptură în cititorul integrat
+- [Predici](./sermons.md) -- Urmărește predicile înregistrate ale bisericii tale

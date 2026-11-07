@@ -1,5 +1,6 @@
 ---
 title: "Gimtadienių ir sukaktuvių sąrašai"
+description: "Sudarykite sąrašą narių, turinčių gimtadienį ar metines pasirinktą mėnesį, naudodami B1 Admin asmenų filtrus, ir eksportuokite datas."
 ---
 
 # Gimtadienių ir sukaktuvių sąrašai

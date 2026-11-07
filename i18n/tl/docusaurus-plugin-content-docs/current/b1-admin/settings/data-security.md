@@ -1,5 +1,6 @@
 ---
 title: "Seguridad ng Data"
+description: "Alamin kung paano pinoprotektahan ng ChurchApps ang datos ng simbahan mo sa B1 Admin, mula sa hashed na password at HTTPS hanggang sa hiwalay na database at GDPR tools."
 ---
 
 # Seguridad ng Data

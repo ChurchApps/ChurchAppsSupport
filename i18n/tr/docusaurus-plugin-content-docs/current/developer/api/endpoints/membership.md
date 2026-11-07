@@ -1,5 +1,6 @@
 ---
 title: "Üyelik Uç Noktaları"
+description: "ChurchApps Membership API uç nokta başvurusu: kişiler, haneler, gruplar, roller, formlar ve ayarlar; kimlik doğrulama ve izin kurallarıyla birlikte."
 ---
 
 # Üyelik Uç Noktaları
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Temel yol: `/membership/users`
 
-Oturum açma, kayıt ve parola yönetimi uç noktaları için bkz. [Kimlik Doğrulama ve İzinler](./authentication).
+Oturum açma, kayıt ve parola yönetimi uç noktaları için bkz. [Kimlik Doğrulama ve İzinler](./authentication.md).
 
 | Yöntem | Yol | Kimlik doğrulama | İzin | Açıklama |
 |--------|------|------|------|-------------|
@@ -342,6 +343,6 @@ Temel yol: `/membership/clientErrors`
 
 ## İlgili Sayfalar
 
-- [Kimlik Doğrulama ve İzinler](./authentication): Oturum açma akışı, JWT, OAuth, izin modeli
-- [Yoklama Uç Noktaları](./attendance): İbadet ve ziyaret takibi
-- [Modül Yapısı](../module-structure): Kod organizasyon kalıpları
+- [Kimlik Doğrulama ve İzinler](./authentication.md): Oturum açma akışı, JWT, OAuth, izin modeli
+- [Yoklama Uç Noktaları](./attendance.md): İbadet ve ziyaret takibi
+- [Modül Yapısı](../module-structure.md): Kod organizasyon kalıpları

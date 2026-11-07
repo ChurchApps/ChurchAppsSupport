@@ -1,5 +1,6 @@
 ---
 title: "Tạo nhóm"
+description: "Thiết lập nhóm mới trong B1 Admin, từ chọn danh mục và đặt tên đến cấu hình chính sách tham gia, nhãn, tin nhắn và cài đặt điểm danh."
 ---
 
 # Tạo nhóm

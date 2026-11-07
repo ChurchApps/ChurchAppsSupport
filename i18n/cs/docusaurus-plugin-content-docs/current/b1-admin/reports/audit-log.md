@@ -1,5 +1,6 @@
 ---
 title: "Protokol auditu"
+description: "Prohlédněte si auditní protokol v B1 Admin: kdo se přihlásil, upravil záznamy osob nebo změnil oprávnění. Filtrované položky lze exportovat do CSV."
 ---
 
 # Protokol auditu
@@ -78,6 +79,6 @@ Protokol auditu pravidelně kontrolujte, zejména po zaškolení nových členů
 
 ## Související články
 
-- [Role a oprávnění](../settings/roles-permissions) -- Správa toho, kdo má k čemu přístup
-- [Zabezpečení dat](../settings/data-security) -- Pochopení způsobu ochrany vašich dat
+- [Role a oprávnění](../settings/roles-permissions.md) -- Správa toho, kdo má k čemu přístup
+- [Zabezpečení dat](../settings/data-security.md) -- Pochopení způsobu ochrany vašich dat
 - [Přehled sestav](./index.md) -- Zobrazení všech dostupných sestav

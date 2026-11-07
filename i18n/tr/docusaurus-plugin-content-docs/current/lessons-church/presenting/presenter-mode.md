@@ -1,5 +1,6 @@
 ---
 title: "Sunum Modu"
+description: "Lessons.church'te Sunum Modu ile dersi sınıf projektöründe veya TV'de tam ekran çalıştırın ve ders sırasında her bölümde ilerleyin."
 ---
 
 # Sunum Modu

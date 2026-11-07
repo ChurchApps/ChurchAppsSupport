@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Forklarer ChurchApps API-ets modulære monolitt, seks datamoduler, teknologistakk, porter og Lambda-funksjoner, med lenker til oppsett og endepunkter."
 ---
 
 # API
@@ -52,8 +53,8 @@ Når API-et rulles ut til AWS, kjører det som seks Lambda-funksjoner:
 
 API-et er avhengig av to delte ChurchApps-pakker:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Grunnleggende verktøy (DateHelper, ApiHelper osv.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Express-serververktøy inkludert autentisering, databasehjelpere og AWS-integrasjoner
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Grunnleggende verktøy (DateHelper, ApiHelper osv.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Express-serververktøy inkludert autentisering, databasehjelpere og AWS-integrasjoner
 
 :::info
 API-et bruker ES-moduler (`"type": "module"` i `package.json`). Sørg for at importene dine bruker ES-modulsyntaksen.
@@ -61,11 +62,11 @@ API-et bruker ES-moduler (`"type": "module"` i `package.json`). Sørg for at imp
 
 ## I denne delen
 
-- **[Lokalt oppsett](./local-setup)** -- Klon, konfigurer og kjør API-et lokalt
-- **[Database](./database)** -- Database-per-modul-arkitektur, skriptfiler for skjema og datatilgangsmønstre
-- **[Modulstruktur](./module-structure)** -- Kontrollere, repositorier, modeller og autentisering
-- **[API-nøkler](./api-keys)** -- Personlige tilgangstokener for skript og tilkoblinger
-- **[Tilkoblede apper (OAuth)](./connected-apps)** -- Flerleie OAuth-flyt for tredjepartsapper
-- **[Webhooks](./webhooks)** -- Send push-varsler om hendelser til eksterne systemer
-- **[MCP-server](./mcp)** -- Model Context Protocol-endepunkt som eksponerer API-et for KI-assistenter
-- **[Endepunktreferanse](./endpoints/)** -- Fullstendig REST API-dokumentasjon for alle moduler
+- **[Lokalt oppsett](./local-setup.md)** -- Klon, konfigurer og kjør API-et lokalt
+- **[Database](./database.md)** -- Database-per-modul-arkitektur, skriptfiler for skjema og datatilgangsmønstre
+- **[Modulstruktur](./module-structure.md)** -- Kontrollere, repositorier, modeller og autentisering
+- **[API-nøkler](./api-keys.md)** -- Personlige tilgangstokener for skript og tilkoblinger
+- **[Tilkoblede apper (OAuth)](./connected-apps.md)** -- Flerleie OAuth-flyt for tredjepartsapper
+- **[Webhooks](./webhooks.md)** -- Send push-varsler om hendelser til eksterne systemer
+- **[MCP-server](./mcp.md)** -- Model Context Protocol-endepunkt som eksponerer API-et for KI-assistenter
+- **[Endepunktreferanse](./endpoints/index.md)** -- Fullstendig REST API-dokumentasjon for alle moduler

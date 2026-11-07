@@ -1,5 +1,6 @@
 ---
 title: "Správa vášho profilu"
+description: "Aktualizujte svoj účet ChurchApps v B1 Admin: upravte meno, e-mail a heslo, zapnite dvojfaktorové prihlásenie, vyberte tému alebo zmažte účet."
 ---
 
 # Správa vášho profilu

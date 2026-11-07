@@ -1,5 +1,6 @@
 ---
 title: "Zaznamenávání docházky"
+description: "Zapište docházku na schůzku skupiny v B1 Admin: vytvořte záznam, označte účastníky, uložte poznámky a vytiskněte listinu nebo exportujte do tabulky."
 ---
 
 # Zaznamenávání docházky

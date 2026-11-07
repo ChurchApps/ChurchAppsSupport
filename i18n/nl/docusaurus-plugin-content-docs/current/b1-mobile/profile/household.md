@@ -1,5 +1,6 @@
 ---
 title: "Huishouden"
+description: "Bekijk wie in je gezin zit en hoe leden met elkaar zijn verbonden in het tabblad Profiel van B1 Mobile, waar inchecken en andere functies op vertrouwen."
 ---
 
 # Huishouden
@@ -13,7 +14,7 @@ Het tabblad **Huishouden** op je Profielscherm toont je gezinsleden. Dit is waar
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [log in](../getting-started/logging-in) op je account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [log in](../getting-started/logging-in.md) op je account
 
 </div>
 
@@ -33,7 +34,7 @@ Je huishoudelijke informatie wordt door verschillende functies in B1 Mobile en i
 
 - **Check-in** -- Wanneer je [aanwezig bent](../checkin/self-checkin.md) bij een dienst of evenement, kun je in plaats van elke persoon afzonderlijk in te checken je hele huishouden in één keer inchecken.
 - **Kerkgegevens** -- Je kerk gebruikt huishoudensgegevens om gezinsverslagen georganiseerd te houden en met je gezin als eenheid te communiceren.
-- **Gids** -- Andere leden kunnen je huishoudgegevens in de [kerkgids](../community/member-directory.md) zien, afhankelijk van je [privacyinstellingen](./privacy-settings).
+- **Gids** -- Andere leden kunnen je huishoudgegevens in de [kerkgids](../community/member-directory.md) zien, afhankelijk van je [privacyinstellingen](./privacy-settings.md).
 
 ## Je huishouden bekijken
 
@@ -47,10 +48,10 @@ Het huishoudlidmaatschap wordt doorgaans beheerd door je kerkbeheerder. Als je i
 
 ## Gegevens actueel houden
 
-Als gegevens van een gezinslid moeten worden bijgewerkt, kunnen zij [hun eigen profiel bewerken](./editing-profile), of je kunt contact opnemen met je kerkbeheerder om wijzigingen aan te brengen. Het actueel houden van huishoudgegevens zorgt ervoor dat functies zoals [check-in](../checkin/) soepel voor je hele gezin werken.
+Als gegevens van een gezinslid moeten worden bijgewerkt, kunnen zij [hun eigen profiel bewerken](./editing-profile.md), of je kunt contact opnemen met je kerkbeheerder om wijzigingen aan te brengen. Het actueel houden van huishoudgegevens zorgt ervoor dat functies zoals [check-in](../checkin/index.md) soepel voor je hele gezin werken.
 
 ## Gerelateerde artikelen
 
 - [Zelf inchecken](../checkin/self-checkin.md) -- Check jezelf in en gezinsleden voor diensten
-- [Je profiel bewerken](./editing-profile) -- Werk je eigen persoonlijke gegevens bij
-- [Privacyinstellingen](./privacy-settings) -- Bepaal wat anderen over je huishouden kunnen zien
+- [Je profiel bewerken](./editing-profile.md) -- Werk je eigen persoonlijke gegevens bij
+- [Privacyinstellingen](./privacy-settings.md) -- Bepaal wat anderen over je huishouden kunnen zien

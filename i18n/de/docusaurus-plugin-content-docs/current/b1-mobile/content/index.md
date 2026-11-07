@@ -1,5 +1,7 @@
 ---
-title: "Inhalte"
+title: "Inhaltsfunktionen in der B1 Mobile App"
+sidebar_label: "Inhalte"
+description: "Finden Sie Predigten, Livestreams, Bibellesen und Vers des Tages in der B1 Mobile App und sehen Sie, welche Inhalte Ihre Gemeinde aktiviert hat."
 ---
 
 # Inhalte
@@ -30,20 +32,20 @@ Sieh dir ein schön gestaltetes Bibelvers-Bild an, das sich jeden Tag ändert. D
 
 ### Lessons (veraltet)
 
-Der eingebettete Lessons-Bereich wurde durch **[FreePlay](/docs/freeplay/)** für die Wiedergabe im Klassenzimmer ersetzt sowie durch den direkten Besuch von [Lessons.church](https://lessons.church) zum Durchsuchen. Details findest du auf der [Lessons-Referenzseite](./lessons).
+Der eingebettete Lessons-Bereich wurde durch **[FreePlay](/docs/freeplay/)** für die Wiedergabe im Klassenzimmer ersetzt sowie durch den direkten Besuch von [Lessons.church](https://lessons.church) zum Durchsuchen. Details findest du auf der [Lessons-Referenzseite](./lessons.md).
 
 ## Inhalte finden
 
 Inhaltsfunktionen sind über das Seitenmenü in der App verfügbar. Dein Gemeindeadministrator entscheidet, welche Inhaltsfunktionen aktiviert sind, daher siehst du möglicherweise nicht alle oben aufgeführten Optionen. Wenn eine bestimmte Funktion fehlt, hat deine Gemeinde sie möglicherweise noch nicht eingerichtet.
 
 :::info
-Inhaltsfunktionen werden von deinem Gemeindeadministrator über [B1 Admin](../../b1-admin/) konfiguriert. Wenn du eine Funktion nicht siehst, die du erwartest, wende dich an das Gemeindebüro.
+Inhaltsfunktionen werden von deinem Gemeindeadministrator über [B1 Admin](../../b1-admin/index.md) konfiguriert. Wenn du eine Funktion nicht siehst, die du erwartest, wende dich an das Gemeindebüro.
 :::
 
 ## Nächste Schritte
 
-- [Predigten](./sermons) -- Aufgezeichnete Predigten durchsuchen und ansehen
-- [Live-Streaming](./live-streaming) -- Live-Übertragungen verfolgen
-- [Bibel](./bible) -- Die Heilige Schrift im integrierten Leser lesen
-- [Vers des Tages](./verse-of-the-day) -- Den heutigen Vers des Tages ansehen
+- [Predigten](./sermons.md) -- Aufgezeichnete Predigten durchsuchen und ansehen
+- [Live-Streaming](./live-streaming.md) -- Live-Übertragungen verfolgen
+- [Bibel](./bible.md) -- Die Heilige Schrift im integrierten Leser lesen
+- [Vers des Tages](./verse-of-the-day.md) -- Den heutigen Vers des Tages ansehen
 - [FreePlay](/docs/freeplay/) -- Lektionen auf Klassenzimmer-Fernsehern abspielen (ersetzt den veralteten Lessons-Bereich in der App)

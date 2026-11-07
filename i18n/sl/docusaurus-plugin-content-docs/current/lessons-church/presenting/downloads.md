@@ -1,5 +1,6 @@
 ---
 title: "Prenosi in gradivo"
+description: "Najdi in prenesi natisljive delovne liste, vodnike za voditelje in PDF-je, priložene uram, študijam ali programom v Lessons.church za tvoj razred."
 ---
 
 # Prenosi in gradivo

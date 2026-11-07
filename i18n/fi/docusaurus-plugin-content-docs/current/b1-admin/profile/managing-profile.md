@@ -1,5 +1,6 @@
 ---
 title: "Profiilin hallinta"
+description: "Päivitä ChurchApps-tilisi B1 Adminissa: muokkaa nimeä, sähköpostia ja salasanaa, ota käyttöön kaksivaiheinen kirjautuminen, valitse teema tai poista tili."
 ---
 
 # Profiilin hallinta

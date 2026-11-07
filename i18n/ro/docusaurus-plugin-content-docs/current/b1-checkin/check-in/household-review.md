@@ -1,5 +1,6 @@
 ---
 title: "Verificarea gospodăriei"
+description: "Verifică gospodăria în B1 Checkin după ce alegi o persoană, alocă grupe pentru fiecare oră și marchează oaspeții sau voluntarii înainte de check-in."
 ---
 
 # Verificarea gospodăriei
@@ -13,8 +14,8 @@ După ce selectați o persoană din rezultatele căutării, aplicația încarcă
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Selectați un serviciu](./selecting-service) de pe ecranul serviciilor
-- [Căutați un membru](./looking-up-members) și selectați-l din rezultatele căutării
+- [Selectați un serviciu](./selecting-service.md) de pe ecranul serviciilor
+- [Căutați un membru](./looking-up-members.md) și selectați-l din rezultatele căutării
 
 </div>
 
@@ -35,9 +36,9 @@ Atingeți cardul unui membru pentru a-l extinde. Când este extins, veți vedea 
 - **Grupurile oferite** la acea oră de serviciu, listate sub nume (de exemplu, „Nursery, Preschool, Adult Bible Class"), astfel încât să puteți vedea ce clase sunt disponibile înainte de a alege
 - Un **buton** care afișează grupul atribuit în prezent sau „Selectați grup” dacă nu a fost atribuit încă niciun grup
 
-Dacă o oră de serviciu are un [program de check-in](../../b1-admin/attendance/setup#setting-a-check-in-schedule) și fereastra sa este închisă chiar acum, rândul afișează **Închis** în loc de buton, împreună cu următoarea oră de deschidere, atunci când există una, de exemplu **Închis · se deschide duminică 9:30 AM**. Dacă persoana este deja înregistrată la acea oră de serviciu, rândul afișează în schimb grupul său cu un semn de bifare (de exemplu, **Kids Room 1 · Check-in efectuat**), astfel încât să puteți vedea unde se află chiar dacă fereastra s-a închis.
+Dacă o oră de serviciu are un [program de check-in](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) și fereastra sa este închisă chiar acum, rândul afișează **Închis** în loc de buton, împreună cu următoarea oră de deschidere, atunci când există una, de exemplu **Închis · se deschide duminică 9:30 AM**. Dacă persoana este deja înregistrată la acea oră de serviciu, rândul afișează în schimb grupul său cu un semn de bifare (de exemplu, **Kids Room 1 · Check-in efectuat**), astfel încât să puteți vedea unde se află chiar dacă fereastra s-a închis.
 
-Atingeți butonul grupului pentru a merge la [ecranul de selectare a grupului](./group-assignment), unde puteți alege sau schimba grupul pentru acea persoană și ora de serviciu.
+Atingeți butonul grupului pentru a merge la [ecranul de selectare a grupului](./group-assignment.md), unde puteți alege sau schimba grupul pentru acea persoană și ora de serviciu.
 
 Cardul extins afișează și etichetele **Membru**, **Oaspete** și **Voluntar**. Atingeți una pentru a stabili cum se înregistrează această persoană. Membru este opțiunea implicită. Tipul contează pentru camerele copiilor: voluntarii sunt incluși în raportul voluntar-copil al camerei, iar oaspeții se iau în calcul pentru orice capacitate de oaspeți stabilită de biserica dumneavoastră.
 
@@ -51,9 +52,9 @@ Nu trebuie să atribuiți fiecare membru al familiei unui grup. Adulții care pa
 
 Din ecranul de verificare a gospodăriei, aveți trei opțiuni:
 
-- **Extindeți un membru** și atingeți un buton de oră de serviciu pentru a [atribui sau schimba un grup](./group-assignment).
-- **Atingeți butonul „Adaugă oaspete”** de sub lista membrilor pentru a [adăuga un oaspete](./adding-guests) la gospodărie.
-- **Atingeți butonul Check-in** din partea de jos a ecranului pentru a [finaliza check-in-ul](./completing-checkin) pentru toți membrii gospodăriei.
+- **Extindeți un membru** și atingeți un buton de oră de serviciu pentru a [atribui sau schimba un grup](./group-assignment.md).
+- **Atingeți butonul „Adaugă oaspete”** de sub lista membrilor pentru a [adăuga un oaspete](./adding-guests.md) la gospodărie.
+- **Atingeți butonul Check-in** din partea de jos a ecranului pentru a [finaliza check-in-ul](./completing-checkin.md) pentru toți membrii gospodăriei.
 
 :::info
 Orice atribuiri de grupuri dintr-un check-in anterior la același serviciu sunt încărcate automat. Dacă copiii dumneavoastră participă la aceleași grupuri în fiecare săptămână, s-ar putea să nu fie nevoie să schimbați nimic. Verificați doar și faceți check-in.
@@ -61,6 +62,6 @@ Orice atribuiri de grupuri dintr-un check-in anterior la același serviciu sunt 
 
 ## Pașii următori
 
-- [Atribuiți grupuri](./group-assignment) membrilor familiei care trebuie să fie înregistrați la o clasă sau un program specific.
-- [Adăugați un oaspete](./adding-guests) dacă cineva vine în vizită împreună cu familia dumneavoastră.
-- [Finalizați check-in-ul](./completing-checkin) când atribuirile tuturor par corecte.
+- [Atribuiți grupuri](./group-assignment.md) membrilor familiei care trebuie să fie înregistrați la o clasă sau un program specific.
+- [Adăugați un oaspete](./adding-guests.md) dacă cineva vine în vizită împreună cu familia dumneavoastră.
+- [Finalizați check-in-ul](./completing-checkin.md) când atribuirile tuturor par corecte.

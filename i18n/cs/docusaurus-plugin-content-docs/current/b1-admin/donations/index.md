@@ -1,5 +1,6 @@
 ---
 title: "Dary"
+description: "Evidujte, organizujte a vykazujte dary sboru v B1 Admin, od dávek a fondů po roční potvrzení a online dary přes Stripe nebo PayPal."
 ---
 
 # Dary

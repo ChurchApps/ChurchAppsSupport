@@ -1,5 +1,6 @@
 ---
 title: "API-nøkler"
+description: "Opprett, avgrens og tilbakekall B1 API-nøkler i B1 Admin for serverskript og Zapier-, Make- eller Google Sheets-koblinger, uten full OAuth-flyt."
 ---
 
 # API-nøkler
@@ -104,7 +105,7 @@ En tilbakekalt nøkkel er borte umiddelbart. Det er ingen karenstid.
 
 ## Hvordan den skiller seg fra OAuth
 
-API-nøkler passer når **din menighet er den eneste som bruker integrasjonen**. For en kobling som trenger tilgang til mange menigheter, der hver gir sitt eksplisitte samtykke (som en SaaS-app delt i B1-fellesskapet), bruk i stedet [OAuth og tilkoblede apper](./connected-apps).
+API-nøkler passer når **din menighet er den eneste som bruker integrasjonen**. For en kobling som trenger tilgang til mange menigheter, der hver gir sitt eksplisitte samtykke (som en SaaS-app delt i B1-fellesskapet), bruk i stedet [OAuth og tilkoblede apper](./connected-apps.md).
 
 | | API-nøkkel | OAuth |
 |---|---|---|

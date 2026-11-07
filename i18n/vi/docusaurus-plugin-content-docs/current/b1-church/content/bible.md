@@ -1,5 +1,7 @@
 ---
-title: "Kinh Thánh"
+title: "Đọc Kinh Thánh trên B1.church"
+sidebar_label: "Kinh Thánh"
+description: "Đọc Kinh Thánh trong trình đọc Kinh Thánh của B1.church, với các điều khiển sách, chương và bản dịch, cùng trang Kinh Thánh để đọc hằng ngày."
 ---
 
 # Kinh Thánh

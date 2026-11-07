@@ -1,5 +1,6 @@
 ---
 title: "Flussi di lavoro"
+description: "Crea bacheche in stile Kanban in B1 Admin per accompagnare le persone nei passaggi di follow-up con email, SMS automatici e trigger che aggiungono persone."
 ---
 
 # Flussi di lavoro

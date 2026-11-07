@@ -1,12 +1,13 @@
 ---
 title: "Prijave na dogodke"
+description: "Kako delujejo prijave na dogodke v B1 Admin in B1App: vrste udeležencev, plačljivi dodatki, popustne kode, plačila prek prehoda ter čakalni seznam."
 ---
 
 # Prijave na dogodke
 
 <div class="article-intro">
 
-Neposredna prijava na dogodke se nahaja v modulu vsebine in ima od vala plačljivih prijav naprej popoln model poslovanja: udeleženci z določenimi cenami, dodatne izbire z določenimi cenami, kode za popust, plačila prek obstoječega plačilnega prehoda za darovanja v cerkvi ter seznam čakajočih, ki ga določa status. Pot denarja namenoma ponovno uporablja sklad za darovanja. Krmilnik prijav zaračunava prek iste abstrakcije `GatewayService` / `IGatewayProvider`, ki je opisana na strani [Darovanja](./giving), zato modul vsebine ne vsebuje podatkov o karticah in ne potrebuje poznavanja SDK-ja plačilnega prehoda. Ta stran opisuje podatkovni model, pravila za cene in zmogljivost ter tokove prijave, plačila in čakalnega seznama.
+Neposredna prijava na dogodke se nahaja v modulu vsebine in ima od vala plačljivih prijav naprej popoln model poslovanja: udeleženci z določenimi cenami, dodatne izbire z določenimi cenami, kode za popust, plačila prek obstoječega plačilnega prehoda za darovanja v cerkvi ter seznam čakajočih, ki ga določa status. Pot denarja namenoma ponovno uporablja sklad za darovanja. Krmilnik prijav zaračunava prek iste abstrakcije `GatewayService` / `IGatewayProvider`, ki je opisana na strani [Darovanja](./giving.md), zato modul vsebine ne vsebuje podatkov o karticah in ne potrebuje poznavanja SDK-ja plačilnega prehoda. Ta stran opisuje podatkovni model, pravila za cene in zmogljivost ter tokove prijave, plačila in čakalnega seznama.
 
 </div>
 
@@ -112,7 +113,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Tokenizacija poteka v brskalniku natanko kot pri donacijah (glej [Darovanja](./giving)). Čarovnik uporablja register ponudnikov plačil apphelper, zato se prijavljeni člani lahko plačajo s shranjenimi karticami, gostje pa tokenizirajo novo kartico. Krmilnik zrcali posebnosti ponudnikov iz `DonateController` (ID-ji metod plačila `pm-{id}` pri Kingdom Funding, odgovori Stripe SCA `requires_action`, ki se vrnejo odjemalcu brez beleženja plačila). Uspešno zaračunavanje zapiše vrstico v `registrationPayments`, poveča `amountPaid` in potrdi prijavo. **Vračila niso implementirana.** Preklicana plačana prijava obdrži vrstice plačil, morebitna vračila pa se izvedejo zunaj sistema, v nadzorni plošči plačilnega prehoda.
+Tokenizacija poteka v brskalniku natanko kot pri donacijah (glej [Darovanja](./giving.md)). Čarovnik uporablja register ponudnikov plačil apphelper, zato se prijavljeni člani lahko plačajo s shranjenimi karticami, gostje pa tokenizirajo novo kartico. Krmilnik zrcali posebnosti ponudnikov iz `DonateController` (ID-ji metod plačila `pm-{id}` pri Kingdom Funding, odgovori Stripe SCA `requires_action`, ki se vrnejo odjemalcu brez beleženja plačila). Uspešno zaračunavanje zapiše vrstico v `registrationPayments`, poveča `amountPaid` in potrdi prijavo. **Vračila niso implementirana.** Preklicana plačana prijava obdrži vrstice plačil, morebitna vračila pa se izvedejo zunaj sistema, v nadzorni plošči plačilnega prehoda.
 
 Obe vstopni točki potekata po isti kodni poti: `register` (plačilo ob prijavi) in `pay` (plačilo preostanka / dokončanje čakalnega seznama).
 
@@ -149,7 +150,7 @@ Medmodulne poizvedbe (iskanje ali ustvarjanje osebe gosta, nalaganje cerkve za e
 
 ## Sorodne strani
 
-- [Darovanja](./giving) — abstrakcija plačilnega prehoda, register ponudnikov in model tokenizacije, ki jih ta funkcionalnost ponovno uporablja
-- [Končne točke vsebine](../api/endpoints/content) — površina REST modula vsebine
-- [Webhooki](../api/webhooks) — dogodek `registration.created`
-- [Struktura modulov](../api/module-structure) — kako je modul vsebine organiziran na strani strežnika
+- [Darovanja](./giving.md) — abstrakcija plačilnega prehoda, register ponudnikov in model tokenizacije, ki jih ta funkcionalnost ponovno uporablja
+- [Končne točke vsebine](../api/endpoints/content.md) — površina REST modula vsebine
+- [Webhooki](../api/webhooks.md) — dogodek `registration.created`
+- [Struktura modulov](../api/module-structure.md) — kako je modul vsebine organiziran na strani strežnika

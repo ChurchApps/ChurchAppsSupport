@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Połącz darowizny Subsplash, nowe osoby i odpowiedzi z formularzy z B1 przez Zapier, aby wpłaty i profile trafiały automatycznie do B1 Admin."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Włącz Zap. Kolejne darowizny z Subsplash będą trafiać do **B1Admin → Dona
 
 ## Zobacz także
 
-- [Donorbox](./donorbox) — ten sam schemat przepisów, inna platforma do darowizn
-- [Zapier (przegląd)](../zapier) — strona B1 wszystkich przepisów Zapier
+- [Donorbox](./donorbox.md) — ten sam schemat przepisów, inna platforma do darowizn
+- [Zapier (przegląd)](../zapier.md) — strona B1 wszystkich przepisów Zapier
 - [Przewodnik integracji Subsplash z Zapier](https://support.subsplash.com/en/articles/9825926-zapier-integration) (dokumentacja Subsplash)

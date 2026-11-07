@@ -1,5 +1,7 @@
 ---
-title: "Potek bogoslužja"
+title: "Vrstni red bogoslužja v B1 Admin"
+sidebar_label: "Potek bogoslužja"
+description: "Nastavite vrstni red bogoslužja v B1 Admin: dodajte pesmi, lekcije in postavke po meri, jih razporedite v razdelke ter natisnite delovni list."
 ---
 
 # Potek bogoslužja

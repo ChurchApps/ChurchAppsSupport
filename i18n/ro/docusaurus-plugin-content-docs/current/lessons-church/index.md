@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "Răsfoiți, programați și prezentați lecții gratuite pe vârste de la peste 12 furnizori în Lessons.church, cu clase, locații și integrări FreePlay sau B1."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church funcționează împreună cu alte instrumente ChurchApps pentru a
 
 ## Secțiuni de documentație
 
-- [Primii pași](./getting-started/) -- Creați-vă contul și aflați noțiunile de bază
-- [Explorarea conținutului](./browsing/) -- Găsiți programe, studii și lecții
-- [Clase](./classrooms/) -- Configurați clasele și programați lecțiile
-- [Personalizare](./customization/) -- Adaptați lecțiile la biserica dumneavoastră
-- [Prezentare](./presenting/) -- Livrați lecțiile în clasă folosind modul de prezentare
-- [Administrare](./admin/) -- Gestionați programele, studiile și lecțiile ca administrator
+- [Primii pași](./getting-started/index.md) -- Creați-vă contul și aflați noțiunile de bază
+- [Explorarea conținutului](./browsing/index.md) -- Găsiți programe, studii și lecții
+- [Clase](./classrooms/index.md) -- Configurați clasele și programați lecțiile
+- [Personalizare](./customization/index.md) -- Adaptați lecțiile la biserica dumneavoastră
+- [Prezentare](./presenting/index.md) -- Livrați lecțiile în clasă folosind modul de prezentare
+- [Administrare](./admin/index.md) -- Gestionați programele, studiile și lecțiile ca administrator
 - [Declarația de credință](./statement-of-faith.md) -- Convingerile fundamentale și ghidurile de curriculum
 
 Pentru asistență, scrieți la [support@churchapps.org](mailto:support@churchapps.org).

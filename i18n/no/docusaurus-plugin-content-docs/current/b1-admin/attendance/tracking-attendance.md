@@ -1,5 +1,6 @@
 ---
 title: "Følge opp oppmøte"
+description: "Se oppmøtetrender, filtrer rapporter etter campus, gudstjeneste eller gruppe, og eksporter gruppeoppmøte fra Attendance-siden i B1 Admin."
 ---
 
 # Følge opp oppmøte

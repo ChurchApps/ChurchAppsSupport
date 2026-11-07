@@ -1,5 +1,6 @@
 ---
 title: "Suunnitelman tarkistus ja ilmoitukset"
+description: "Tarkista B1 Adminin palvelusuunnitelmat täyttämättömien paikkojen, aikataulukonfliktien ja estettyjen vapaaehtoisten varalta ja ilmoita koko tiimille."
 ---
 
 # Suunnitelman tarkistus ja vapaaehtoisten ilmoitukset

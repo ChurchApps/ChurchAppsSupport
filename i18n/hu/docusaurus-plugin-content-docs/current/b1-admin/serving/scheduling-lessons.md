@@ -1,5 +1,7 @@
 ---
-title: "Leckék ütemezése"
+title: "Leckék ütemezése a Lessons.church-ből a B1 Adminban"
+sidebar_label: "Leckék ütemezése"
+description: "Lessons.church összekötése a B1 Adminnal, majd leckék ütemezése, sorozat tömeges ütemezése vagy éves terv alkalmazása egy szolgálat terveire."
 ---
 
 # Leckék ütemezése a Lessons.church-ből

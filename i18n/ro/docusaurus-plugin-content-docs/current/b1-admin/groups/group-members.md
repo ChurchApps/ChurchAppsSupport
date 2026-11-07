@@ -1,5 +1,6 @@
 ---
 title: "Membrii grupului"
+description: "Adăugați, eliminați și desemnați lideri pentru membrii grupurilor în B1 Admin, apoi trimiteți e-mail, SMS, tipăriți sau exportați lista din pagina grupului."
 ---
 
 # Membrii grupului

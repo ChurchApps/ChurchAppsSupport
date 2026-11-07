@@ -1,5 +1,7 @@
 ---
-title: "Bijbel"
+title: "De Bijbel lezen in B1 Mobile"
+sidebar_label: "Bijbel"
+description: "Open de Bijbel in de B1 Mobile-app via het zijmenu, navigeer door boeken, hoofdstukken en verzen en vind de Bijbeloptie van je kerk."
 ---
 
 # Bijbel
@@ -13,7 +15,7 @@ B1 Mobile bevat een ingebouwde Bijbellezer zodat u rechtstreeks vanuit de app de
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [meld u aan](../getting-started/logging-in) op uw account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [meld u aan](../getting-started/logging-in.md) op uw account
 - Uw kerk moet de Bijbelfunctie hebben ingeschakeld
 
 </div>
@@ -37,7 +39,7 @@ De ingebouwde lezer biedt bedieningselementen voor het verplaatsen door de Schri
 De lezer vult het scherm, waardoor u voldoende ruimte heeft om comfortabel op uw apparaat te lezen.
 
 :::tip
-Maak het Bijbelscherm onderdeel van uw dagelijkse routine -- het is een snelle manier om de Bijbel overal ter wereld te lezen. Combineer het met de [Vers van de dag](./verse-of-the-day) voor dagelijkse inspiratie.
+Maak het Bijbelscherm onderdeel van uw dagelijkse routine -- het is een snelle manier om de Bijbel overal ter wereld te lezen. Combineer het met de [Vers van de dag](./verse-of-the-day.md) voor dagelijkse inspiratie.
 :::
 
 ## Beschikbaarheid
@@ -46,6 +48,6 @@ Het Bijbelscherm is beschikbaar wanneer uw kerk deze functie heeft ingeschakeld.
 
 ## Gerelateerde artikelen
 
-- [Vers van de dag](./verse-of-the-day) -- Zie een dagelijkse Bijbelvers
-- [Preken](./sermons) -- Bekijk preken die uw Bijbellezen aanvullen
-- [Lessen](./lessons) -- Open gestructureerde curriculum en studiemateriaal
+- [Vers van de dag](./verse-of-the-day.md) -- Zie een dagelijkse Bijbelvers
+- [Preken](./sermons.md) -- Bekijk preken die uw Bijbellezen aanvullen
+- [Lessen](./lessons.md) -- Open gestructureerde curriculum en studiemateriaal

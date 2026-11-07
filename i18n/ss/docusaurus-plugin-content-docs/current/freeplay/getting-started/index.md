@@ -1,5 +1,7 @@
 ---
-title: "Kucala"
+title: "Kuqala Nge-FreePlay TV App"
+sidebar_label: "Kucala"
+description: "Setfa i-FreePlay ku-Android TV, Fire TV, noma Apple TV: faka i-app, yivule ngekucala, bese ufunda tilawuli te-remote nesidvonga."
 ---
 
 # Kucala Ngekusebentisa i-FreePlay
@@ -52,5 +54,5 @@ Incenye yaseceleni iyagoqeka ibe siphawu lesincane nawuhlola kucuketfwe. Cindzet
 
 ## Kulandzelani
 
-- **[Kukhetsa Simo Sekuhlanganiswa](./pairing-modes)** - Fundza ngetindlela letehlukene tekuxhuma TV yakho
-- **[Baniketi Bekucuketfwe](../content-providers/)** - Xhuma ku-Lessons.church, Bible Project, naletinye
+- **[Kukhetsa Simo Sekuhlanganiswa](./pairing-modes.md)** - Fundza ngetindlela letehlukene tekuxhuma TV yakho
+- **[Baniketi Bekucuketfwe](../content-providers/index.md)** - Xhuma ku-Lessons.church, Bible Project, naletinye

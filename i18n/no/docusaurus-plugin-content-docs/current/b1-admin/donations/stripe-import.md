@@ -1,5 +1,6 @@
 ---
 title: "Stripe-import"
+description: "Hent Stripe-gaver inn i B1 Admin med en forhåndsvisning der hver betaling merkes som ny, allerede importert eller hoppet over før du bekrefter."
 ---
 
 # Stripe-import

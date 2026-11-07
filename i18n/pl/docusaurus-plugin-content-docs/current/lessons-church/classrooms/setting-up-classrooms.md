@@ -1,5 +1,6 @@
 ---
 title: "Konfigurowanie sal lekcyjnych"
+description: "Tworzenie, zmiana nazwy i usuwanie sal w portalu Lessons.church, by każda sala lub grupa wiekowa była gotowa do tygodniowego planowania lekcji."
 ---
 
 # Konfigurowanie sal lekcyjnych

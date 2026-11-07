@@ -1,5 +1,6 @@
 ---
 title: "Autenticación y permisos"
+description: "Referencia del inicio de sesión JWT, la autenticación de dos factores, los flujos OAuth 2.0 y el modelo de permisos de la API de ChurchApps para desarrolladores que crean integraciones."
 ---
 
 # Autenticación y permisos
@@ -244,7 +245,7 @@ Para dispositivos sin navegador (aplicaciones de televisión, quioscos):
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Obtiene un cliente por su client ID (secreto oculto) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Crea o actualiza un cliente |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Elimina un cliente |
-| POST | `/membership/oauth/register` | Pública | — | Registro dinámico de clientes (RFC 7591) para clientes públicos como los conectores MCP. Consulte [Aplicaciones conectadas](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Pública | — | Registro dinámico de clientes (RFC 7591) para clientes públicos como los conectores MCP. Consulte [Aplicaciones conectadas](../connected-apps.md#dynamic-client-registration) |
 
 ### Endpoints de aprobación de dispositivos
 
@@ -265,5 +266,5 @@ En las tablas de endpoints de esta documentación, estas se indican como **JWT**
 
 ## Páginas relacionadas
 
-- [Estructura de módulos](../module-structure): cómo se organizan los controladores, repositorios y modelos
-- [Configuración local](../local-setup): ejecutar la API localmente para desarrollo
+- [Estructura de módulos](../module-structure.md): cómo se organizan los controladores, repositorios y modelos
+- [Configuración local](../local-setup.md): ejecutar la API localmente para desarrollo

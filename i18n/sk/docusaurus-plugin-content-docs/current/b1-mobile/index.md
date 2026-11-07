@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (zastarané)"
+description: "Vysvetľuje, že natívna aplikácia B1 Mobile je zastaraná a že členovia a správcovia by mali namiesto nej používať PWA B1.church, pričom staršie stránky sú ponechané ako referencia."
 ---
 
 # B1 Mobile (zastarané)
@@ -40,16 +41,16 @@ B1 Mobile podporovala push notifikácie, aby ste nepremeškali dôležité aktua
 
 ## Zistiť viac
 
-- [Začíname](./getting-started/) -- Nainštalujte aplikáciu, vytvorte si účet a vyberte svoju cirkev.
-- [Panel](./dashboard/) -- Oboznámte sa s prispôsobenou domovskou obrazovkou.
-- [Skupiny](./groups/) -- Zostaňte v kontakte so skupinami svojej cirkvi.
-- [Darovanie](./giving/) -- Posielajte dary z telefónu.
-- [Udalosti](./events/) -- Prezerajte si a registrujte sa na nadchádzajúce udalosti cirkvi.
-- [Odbavenie](./checkin/) -- Odbavenie na bohoslužby a udalosti.
-- [Služba](./serving/) -- Zobrazujte svoje plány služieb, pridelené úlohy a dobrovoľnícke príležitosti.
-- [Komunita](./community/) -- Prechádzajte adresár členov a posielajte správy.
-- [Obsah](./content/) -- Kázne, Biblia, verš dňa a lekcie (obrazovka lekcií je zastaraná -- pozri [FreePlay](/docs/freeplay/)).
-- [Profil](./profile/) -- Spravujte svoj profil a nastavenia účtu.
+- [Začíname](./getting-started/index.md) -- Nainštalujte aplikáciu, vytvorte si účet a vyberte svoju cirkev.
+- [Panel](./dashboard/index.md) -- Oboznámte sa s prispôsobenou domovskou obrazovkou.
+- [Skupiny](./groups/index.md) -- Zostaňte v kontakte so skupinami svojej cirkvi.
+- [Darovanie](./giving/index.md) -- Posielajte dary z telefónu.
+- [Udalosti](./events/index.md) -- Prezerajte si a registrujte sa na nadchádzajúce udalosti cirkvi.
+- [Odbavenie](./checkin/index.md) -- Odbavenie na bohoslužby a udalosti.
+- [Služba](./serving/index.md) -- Zobrazujte svoje plány služieb, pridelené úlohy a dobrovoľnícke príležitosti.
+- [Komunita](./community/index.md) -- Prechádzajte adresár členov a posielajte správy.
+- [Obsah](./content/index.md) -- Kázne, Biblia, verš dňa a lekcie (obrazovka lekcií je zastaraná -- pozri [FreePlay](/docs/freeplay/)).
+- [Profil](./profile/index.md) -- Spravujte svoj profil a nastavenia účtu.
 
 :::info
 Aplikáciu B1 Mobile nahradila [PWA B1.church](../b1-church/getting-started/installing-pwa.md). Nové nasadenia by mali používať PWA. Natívna aplikácia sa už neaktualizuje.

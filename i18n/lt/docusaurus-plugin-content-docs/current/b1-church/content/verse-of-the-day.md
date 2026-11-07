@@ -1,5 +1,7 @@
 ---
-title: "Dienos eilutė"
+title: "Dienos eilutė B1.church svetainėje ir portale"
+sidebar_label: "Dienos eilutė"
+description: "Naršykite kasdienio Biblijos eilutės paveikslėlį ir ankstesnes eilutes, tada jas bendrinkite ar atsisiųskite iš B1.church svetainės ar narių portalo."
 ---
 
 # Dienos eilutė

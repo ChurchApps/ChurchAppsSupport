@@ -1,5 +1,6 @@
 ---
 title: "Kapcsolódás szolgáltatókhoz"
+description: "FreePlay csatlakoztatása tartalomszolgáltatóhoz QR-kóddal, e-mailes belépéssel vagy egykattintásos hozzáféréssel; kezelés és bontás a Beállításokban."
 ---
 
 # Kapcsolódás szolgáltatókhoz
@@ -13,7 +14,7 @@ Mielőtt tartalmat böngészhetne egy szolgáltatótól, csatlakoznia kell hozz�
 <div class="prereqs">
 <h4>Mielőtt elkezdené</h4>
 
-- Telepítse és indítsa el a FreePlay alkalmazást -- lásd: [Első lépések](../getting-started/)
+- Telepítse és indítsa el a FreePlay alkalmazást -- lásd: [Első lépések](../getting-started/index.md)
 - Legyen kéznél a TV-távirányító a navigáláshoz
 - Bejelentkezést igénylő szolgáltatóknál készítse elő a fiókja hitelesítő adatait
 
@@ -80,7 +81,7 @@ A **Csatlakoztatva** jelvényt mutató szolgáltatókártyára kattintva megnyí
 
 - **Könyvtár megjelenítése** -- A szolgáltató tartalomkönyvtárának megjelenítése vagy elrejtése az oldalsávban
 - **Mai lecke automatikus letöltése** -- Ezt a szolgáltatót használja a mai lecke forrásaként, és előre letölti a fájljait (csak az aktuális leckét kínáló szolgáltatóknál látható)
-- **Használat hirdetésekhez** -- Válasszon ki egy mappát ettől a szolgáltatótól, amelyet az oldalsáv **Hirdetések** menüpontjában ismétlődve játszik le. Lásd: [Hirdetések](./announcements)
+- **Használat hirdetésekhez** -- Válasszon ki egy mappát ettől a szolgáltatótól, amelyet az oldalsáv **Hirdetések** menüpontjában ismétlődve játszik le. Lásd: [Hirdetések](./announcements.md)
 - **Hirdetésfrissítések ellenőrzése** -- Akkor jelenik meg, ha már kiválasztott egy hirdetésmappát; letölti az új diákat, és eltávolítja a törölteket
 - **Leválasztás** -- A kapcsolat eltávolítása
 
@@ -100,6 +101,6 @@ A leválasztás eltávolítja a mentett hitelesítési adatokat az eszközéről
 
 ## Kapcsolódó cikkek
 
-- **[Tartalom böngészése és letöltése](./browsing-content)** - Mappák böngészése és tartalom lejátszása csatlakozás után
-- **[Hirdetések](./announcements)** - Egy csatlakoztatott szolgáltató diákból álló mappájának ismétlődő lejátszása
+- **[Tartalom böngészése és letöltése](./browsing-content.md)** - Mappák böngészése és tartalom lejátszása csatlakozás után
+- **[Hirdetések](./announcements.md)** - Egy csatlakoztatott szolgáltató diákból álló mappájának ismétlődő lejátszása
 - **[Tartalomszolgáltatók áttekintése](./index.md)** - Az összes elérhető szolgáltató megtekintése

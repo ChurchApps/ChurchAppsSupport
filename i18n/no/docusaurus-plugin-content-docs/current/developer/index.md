@@ -1,5 +1,6 @@
 ---
 title: "Utviklerdokumentasjon"
+description: "Finn frem i ChurchApps utviklerdokumentasjon: lokalt oppsett, veiledninger for API og webapper, delte biblioteker, mobilbygg og distribusjon for åpen kildekode-prosjektene."
 ---
 
 # Utviklerdokumentasjon
@@ -24,16 +25,16 @@ Viktige kjennetegn:
 
 ## Hva denne delen dekker
 
-- **[Oppsett](setup/)** – Lokalt utviklingsmiljø, forutsetninger og konfigurasjon
-  - [Forutsetninger](setup/prerequisites) – Nødvendige verktøy og programvare
-  - [Prosjektoversikt](setup/project-overview) – Alle prosjekter samlet
-  - [Miljøvariabler](setup/environment-variables) – Konfigurere `.env`-filer
-- **[API](api/)** – Lokalt oppsett av kjerne-API-et, databaseinitialisering og modulstruktur
-- **[Webapper](web-apps/)** – Kjøre B1Admin, B1App og LessonsApp lokalt
-- **[Mobilapper](mobile/)** – Bygge B1Mobile og andre Expo-apper
-- **[Delte biblioteker](shared-libraries/)** – Arbeide med Helpers, ApiHelper og AppHelper
-- **[Utrulling](deployment/)** – Deploye API-er, webapper og mobilapper
-- **[FreePlay-innholdsleverandør](freeplay-content-provider)** – Integrere leksjonsbiblioteket ditt med FreePlay
+- **[Oppsett](./setup/index.md)** – Lokalt utviklingsmiljø, forutsetninger og konfigurasjon
+  - [Forutsetninger](./setup/prerequisites.md) – Nødvendige verktøy og programvare
+  - [Prosjektoversikt](./setup/project-overview.md) – Alle prosjekter samlet
+  - [Miljøvariabler](./setup/environment-variables.md) – Konfigurere `.env`-filer
+- **[API](./api/index.md)** – Lokalt oppsett av kjerne-API-et, databaseinitialisering og modulstruktur
+- **[Webapper](./web-apps/index.md)** – Kjøre B1Admin, B1App og LessonsApp lokalt
+- **[Mobilapper](./mobile/index.md)** – Bygge B1Mobile og andre Expo-apper
+- **[Delte biblioteker](./shared-libraries/index.md)** – Arbeide med Helpers, ApiHelper og AppHelper
+- **[Utrulling](./deployment/index.md)** – Deploye API-er, webapper og mobilapper
+- **[FreePlay-innholdsleverandør](./freeplay-content-provider.md)** – Integrere leksjonsbiblioteket ditt med FreePlay
 
 ## Fellesskap og ressurser
 

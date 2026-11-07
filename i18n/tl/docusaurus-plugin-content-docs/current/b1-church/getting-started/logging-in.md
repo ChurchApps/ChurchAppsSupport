@@ -1,5 +1,7 @@
 ---
-title: "Pag-log In"
+title: "Pag-log In sa B1.church at Member Portal"
+sidebar_label: "Pag-log In"
+description: "Mag-sign in sa B1.church member portal, gumamit ng two-factor code o single sign-on, i-reset ang nakalimutang password, at mag-log out mula sa account menu."
 ---
 
 # Pag-log In
@@ -13,7 +15,7 @@ Ang pag-log in sa B1.church ay nagbibigay sa iyo ng access sa member portal kung
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Kailangan mo ng ChurchApps account. Tingnan ang [Getting Started](../getting-started/) para gumawa ng isa.
+- Kailangan mo ng ChurchApps account. Tingnan ang [Getting Started](./index.md) para gumawa ng isa.
 - Kailangan mo ang B1.church URL ng iyong simbahan (halimbawa, `https://yourchurchname.b1.church`).
 
 </div>
@@ -35,7 +37,7 @@ Mananatili kang naka-sign in sa parehong browser o naka-install na app hanggang 
 
 ## Pag-access sa Member Portal
 
-Kapag naka-log in na, maa-access mo ang member portal sa pamamagitan ng pag-click sa iyong **pangalan** sa kanang itaas ng pahina at pagpili ng **Member Portal** mula sa menu. Nandito ang lahat ng iyong personal na tool ng simbahan, kabilang ang iyong [Home dashboard](./navigating.md), [Me page](./me-page.md), [mga grupo](../groups/), [giving](../giving/), at iba pa.
+Kapag naka-log in na, maa-access mo ang member portal sa pamamagitan ng pag-click sa iyong **pangalan** sa kanang itaas ng pahina at pagpili ng **Member Portal** mula sa menu. Nandito ang lahat ng iyong personal na tool ng simbahan, kabilang ang iyong [Home dashboard](./navigating.md), [Me page](./me-page.md), [mga grupo](../groups/index.md), [giving](../giving/index.md), at iba pa.
 
 ## Ang Iyong User Menu
 

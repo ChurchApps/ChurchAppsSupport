@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "Siapkan aplikasi web anggota B1App secara lokal dengan Next.js 22+, atur endpoint API di .env, dan jalankan dev server di port 3301."
 ---
 
 # B1App
@@ -13,8 +14,8 @@ B1App adalah aplikasi anggota gereja untuk publik yang dibangun dengan Next.js. 
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Instal **Node.js 22+** dan **Git** -- lihat [Prasyarat](../setup/prerequisites)
-- Konfigurasikan target API Anda (demo atau lokal) -- lihat [Variabel Lingkungan](../setup/environment-variables)
+- Instal **Node.js 22+** dan **Git** -- lihat [Prasyarat](../setup/prerequisites.md)
+- Konfigurasikan target API Anda (demo atau lokal) -- lihat [Variabel Lingkungan](../setup/environment-variables.md)
 
 </div>
 
@@ -89,5 +90,5 @@ Build produksi di-deploy ke **S3 + CloudFront**:
 3. Invalidasi CloudFront dipicu agar versi baru disajikan
 
 :::tip
-Untuk instruksi deployment yang lebih rinci, lihat panduan [Deployment Web App](../deployment/web-apps).
+Untuk instruksi deployment yang lebih rinci, lihat panduan [Deployment Web App](../deployment/web-apps.md).
 :::

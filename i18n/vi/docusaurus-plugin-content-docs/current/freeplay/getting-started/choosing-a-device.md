@@ -1,5 +1,6 @@
 ---
 title: "Chọn thiết bị"
+description: "Chọn thiết bị phù hợp cho TV lớp học FreePlay, từ Fire TV Stick và hộp Onn đến Apple TV, và những thiết bị nên tránh."
 ---
 
 # Chọn thiết bị cho FreePlay

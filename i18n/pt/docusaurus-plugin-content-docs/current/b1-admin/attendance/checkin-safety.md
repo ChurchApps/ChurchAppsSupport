@@ -1,5 +1,6 @@
 ---
 title: "Segurança no Check-In"
+description: "Configure a segurança infantil no B1 Admin: capacidade das salas, voluntários por criança, lista de retirada autorizada e textos aos pais no check-in."
 ---
 
 # Segurança no Check-In
@@ -15,7 +16,7 @@ O B1 inclui um conjunto de controles de segurança infantil para check-in: limit
 
 - Configure sua [estrutura de presença](setup.md) e [quiosques de check-in](check-in.md)
 - Salas são [grupos](../groups/creating-groups.md) ligados a horários de serviço — as configurações de segurança abaixo vivem no grupo
-- Page-a-parent e difusão de emergência requerem um provedor de mensagens de texto conectado ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), ou Mutual Ministry)
+- Page-a-parent e difusão de emergência requerem um provedor de mensagens de texto conectado ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md), ou Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Ambos os recursos enviam mensagens de texto através do provedor de mensagens de
 
 Pessoas que optaram por não receber mensagens de texto, ou que não têm número móvel no arquivo, são ignoradas automaticamente — o quiosque relata quantas mensagens foram enviadas e quantas foram ignoradas.
 
-Veja o guia passo a passo do lado do quiosque em [Check-Out & Segurança Infantil](../../b1-checkin/check-in/checking-out).
+Veja o guia passo a passo do lado do quiosque em [Check-Out & Segurança Infantil](../../b1-checkin/check-in/checking-out.md).
 
 ## Artigos Relacionados
 
 - [Check-In](check-in.md) — configuração de quiosque e hardware
-- [Check-Out & Segurança Infantil](../../b1-checkin/check-in/checking-out) — checkout do quiosque, verificação de busca e fluxos de chamada
+- [Check-Out & Segurança Infantil](../../b1-checkin/check-in/checking-out.md) — checkout do quiosque, verificação de busca e fluxos de chamada
 - [Criando Grupos](../groups/creating-groups.md) — onde as configurações de sala vivem
 - [Configuração de Presença](setup.md) — serviços, horários de serviço e atribuições de sala
 - [Idade Mínima para Mensagens Privadas](../settings/mobile-app.md#member-directory--messaging-settings) — bloqueia novas conversas de mensagens privadas com crianças enquanto as mantém no diretório

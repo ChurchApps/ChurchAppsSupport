@@ -1,5 +1,6 @@
 ---
 title: "Layar Digital"
+description: "Kirim konten pelajaran ke TV lobi atau lorong dengan URL feed signage digital di B1 Admin yang selalu menampilkan rencana terkini, atau pakai TV FreePlay."
 ---
 
 # Layar Digital
@@ -14,7 +15,7 @@ Kirimkan konten pelajaran Anda ke TV di lobi atau lorong gereja menggunakan umpa
 <h4>Sebelum Memulai</h4>
 
 - Siapkan [jenis rencana](./plans.md) dengan [Lessons.church](../../b1-church/content/lessons.md) atau konten pelajaran lain yang sudah dijadwalkan
-- Miliki akun [SignPresenter](https://www.signpresenter.com) dan perangkat yang sudah diatur untuk menampilkannya, atau TV yang menjalankan [FreePlay](../../freeplay/)
+- Miliki akun [SignPresenter](https://www.signpresenter.com) dan perangkat yang sudah diatur untuk menampilkannya, atau TV yang menjalankan [FreePlay](../../freeplay/index.md)
 
 </div>
 
@@ -36,14 +37,14 @@ Untuk panduan pengaturan langkah demi langkah di dalam SignPresenter, lihat [pan
 
 ## Menggunakan TV FreePlay Sebagai Gantinya
 
-Jika layar Anda menjalankan [FreePlay](../../freeplay/), Anda tidak memerlukan URL umpan. Dialog **Digital Signage Feed** menautkan ke **admin.freeplay.church/calendar**, tempat Anda dapat menjadwalkan jenis rencana ini di TV FreePlay Anda:
+Jika layar Anda menjalankan [FreePlay](../../freeplay/index.md), Anda tidak memerlukan URL umpan. Dialog **Digital Signage Feed** menautkan ke **admin.freeplay.church/calendar**, tempat Anda dapat menjadwalkan jenis rencana ini di TV FreePlay Anda:
 
 1. Klik tautan **admin.freeplay.church/calendar** di dialog. FreePlay Admin menggunakan login yang sama dengan B1 Admin.
 2. Pilih grup layar untuk TV Anda, lalu klik **Add schedule**.
 3. Di bagian **Play**, pilih jenis rencana Anda dari **Service plans**. Rencana yang sedang berjalan ditandai **(current plan)**.
 4. Atur hari dan waktunya, lalu klik **Save**.
 
-TV akan memutar rencana yang sedang berjalan untuk jenis rencana tersebut setiap minggu, pada waktu yang Anda atur. Ini juga berfungsi dengan pelajaran Go Curriculum, termasuk rencana yang sudah Anda sesuaikan. FreePlay masuk menggunakan akun Go Curriculum yang ditautkan ke ministry di bawah **Content Providers** (lihat [Menjadwalkan Pelajaran](./scheduling-lessons.md)), atau koneksi Go Curriculum gereja jika ministry tersebut tidak memilikinya. Lihat [Menjadwalkan Kalender](../../freeplay/scheduled-mode/scheduling-the-calendar) untuk semua opsi, dan [Memasangkan Layar](../../freeplay/scheduled-mode/pairing-a-screen) untuk menambahkan TV.
+TV akan memutar rencana yang sedang berjalan untuk jenis rencana tersebut setiap minggu, pada waktu yang Anda atur. Ini juga berfungsi dengan pelajaran Go Curriculum, termasuk rencana yang sudah Anda sesuaikan. FreePlay masuk menggunakan akun Go Curriculum yang ditautkan ke ministry di bawah **Content Providers** (lihat [Menjadwalkan Pelajaran](./scheduling-lessons.md)), atau koneksi Go Curriculum gereja jika ministry tersebut tidak memilikinya. Lihat [Menjadwalkan Kalender](../../freeplay/scheduled-mode/scheduling-the-calendar.md) untuk semua opsi, dan [Memasangkan Layar](../../freeplay/scheduled-mode/pairing-a-screen.md) untuk menambahkan TV.
 
 :::note
 URL umpan tidak menyertakan media Go Curriculum, karena konten tersebut memerlukan login Go Curriculum gereja Anda. Untuk menampilkan pelajaran Go Curriculum di TV lobi atau ruang kelas, gunakan FreePlay.
@@ -53,4 +54,4 @@ URL umpan tidak menyertakan media Go Curriculum, karena konten tersebut memerluk
 
 - Kelola rencana yang mengisi tampilan layar digital ini di halaman [Rencana](./plans.md)
 - Jadwalkan konten dengan [Lessons.church](./scheduling-lessons.md)
-- Tempatkan TV FreePlay di kalender dengan [Mode Terjadwal](../../freeplay/scheduled-mode/)
+- Tempatkan TV FreePlay di kalender dengan [Mode Terjadwal](../../freeplay/scheduled-mode/index.md)

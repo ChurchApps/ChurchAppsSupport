@@ -1,5 +1,6 @@
 ---
 title: "Ticelo Letabelwanako"
+description: "Indlela tingoma, tifundo, nemafomethi letingeniswa ngabasebenti ihamba ngayo emgceni wekuhlola we-B1 Admin's Server Admin, kuze kushicilelwe."
 ---
 
 # Ticelo Letabelwanako — Lilabhulali Lelabelwanako Letintfo & Kuhlolwa

@@ -1,5 +1,6 @@
 ---
 title: "Importando dados"
+description: "Traga pessoas, grupos, presenças e doações existentes para o B1 Admin com a ferramenta B1 Transfer, ou exporte um backup dos seus dados quando quiser."
 ---
 
 # Importando dados

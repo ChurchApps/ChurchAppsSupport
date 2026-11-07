@@ -1,5 +1,6 @@
 ---
 title: "API Anahtarları"
+description: "Sunucu betikleri ve Zapier, Make ya da Google Sheets bağlayıcıları için B1 Admin'de B1 API anahtarları oluşturun, kapsamlandırın ve iptal edin; OAuth akışı gerekmez."
 ---
 
 # API Anahtarları
@@ -104,7 +105,7 @@ Tüm uç noktalar Membership modülünün `/membership/apiKeys` yolu altındadı
 
 ## OAuth'tan Farkı
 
-API anahtarları, **kilisenizin entegrasyonu tek başına kullandığı** durumlar için uygundur. Her kilisenin açık onayıyla birden fazla kiliseye erişmesi gereken bir bağlayıcı için (ör. B1 topluluğunda paylaşılan bir SaaS uygulaması) bunun yerine [OAuth ve Bağlı Uygulamalar](./connected-apps) bölümüne bakın.
+API anahtarları, **kilisenizin entegrasyonu tek başına kullandığı** durumlar için uygundur. Her kilisenin açık onayıyla birden fazla kiliseye erişmesi gereken bir bağlayıcı için (ör. B1 topluluğunda paylaşılan bir SaaS uygulaması) bunun yerine [OAuth ve Bağlı Uygulamalar](./connected-apps.md) bölümüne bakın.
 
 | | API anahtarı | OAuth |
 |---|---|---|

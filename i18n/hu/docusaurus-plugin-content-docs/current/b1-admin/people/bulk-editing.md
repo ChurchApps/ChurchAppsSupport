@@ -1,5 +1,6 @@
 ---
 title: "Személyek tömeges szerkesztése"
+description: "Tagsági státusz, családi állapot, nem, leiratkozás, egyéni igen/nem mezők vagy csoporttagság módosítása sok személynél egyszerre a B1 Admin-ban."
 ---
 
 # Személyek tömeges szerkesztése

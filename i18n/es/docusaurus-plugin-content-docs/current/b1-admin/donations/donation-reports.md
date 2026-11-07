@@ -1,5 +1,6 @@
 ---
 title: "Informes de donaciones"
+description: "Revisa totales de donaciones, donantes inactivos y lotes en B1 Admin con el panel Resumen de donaciones, la vista Donantes inactivos y exportaciones CSV."
 ---
 
 # Informes de donaciones

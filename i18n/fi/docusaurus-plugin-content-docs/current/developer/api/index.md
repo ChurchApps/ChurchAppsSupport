@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Selittää ChurchApps-API:n modulaarisen monoliittisen suunnittelun, sen kuusi tietomoduulia, teknologiapinon, portit ja Lambda-funktiot, linkkeineen asennus-, tietokanta-, todennus- ja päätepisteoppaisiin kehittäjille."
 ---
 
 # API
@@ -52,8 +53,8 @@ Kun API otetaan käyttöön AWS:ssä, se toimii kuutena Lambda-funktiona:
 
 API käyttää kahta jaettua ChurchApps-pakettia:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Perustyökalut (DateHelper, ApiHelper jne.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Express-palvelimen apuvälineet, mukaan lukien todennus, tietokantaapuvälineet ja AWS-integraatiot
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Perustyökalut (DateHelper, ApiHelper jne.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Express-palvelimen apuvälineet, mukaan lukien todennus, tietokantaapuvälineet ja AWS-integraatiot
 
 :::info
 API käyttää ES-moduuleja (`"type": "module"` tiedostossa `package.json`). Varmista, että tuonti-lauseesi käyttävät ES-moduulien syntaksia.
@@ -61,11 +62,11 @@ API käyttää ES-moduuleja (`"type": "module"` tiedostossa `package.json`). Var
 
 ## Tässä osiossa
 
-- **[Paikallinen asennus](./local-setup)** -- Kloonaa, määritä ja suorita API paikallisesti
-- **[Tietokanta](./database)** -- Moduulikohtainen tietokantarakenne, skeemaskriptit ja tietojen käyttömallit
-- **[Moduulin rakenne](./module-structure)** -- Ohjaimet, repositoriot, mallit ja todennus
-- **[API-avaimet](./api-keys)** -- Henkilökohtaiset käyttöoikeustunnukset skripteille ja liittimille
-- **[Yhdistetyt sovellukset (OAuth)](./connected-apps)** -- Monivuokraajainen OAuth-kulku kolmannen osapuolen sovelluksille
-- **[Webhookit](./webhooks)** -- Tapahtumailmoitusten lähettäminen ulkoisiin järjestelmiin
-- **[MCP-palvelin](./mcp)** -- Model Context Protocol -päätepiste, joka tarjoaa API:n tekoälyavustajille
-- **[Päätepisteviite](./endpoints/)** -- Täydellinen REST API -dokumentaatio kaikille moduuleille
+- **[Paikallinen asennus](./local-setup.md)** -- Kloonaa, määritä ja suorita API paikallisesti
+- **[Tietokanta](./database.md)** -- Moduulikohtainen tietokantarakenne, skeemaskriptit ja tietojen käyttömallit
+- **[Moduulin rakenne](./module-structure.md)** -- Ohjaimet, repositoriot, mallit ja todennus
+- **[API-avaimet](./api-keys.md)** -- Henkilökohtaiset käyttöoikeustunnukset skripteille ja liittimille
+- **[Yhdistetyt sovellukset (OAuth)](./connected-apps.md)** -- Monivuokraajainen OAuth-kulku kolmannen osapuolen sovelluksille
+- **[Webhookit](./webhooks.md)** -- Tapahtumailmoitusten lähettäminen ulkoisiin järjestelmiin
+- **[MCP-palvelin](./mcp.md)** -- Model Context Protocol -päätepiste, joka tarjoaa API:n tekoälyavustajille
+- **[Päätepisteviite](./endpoints/index.md)** -- Täydellinen REST API -dokumentaatio kaikille moduuleille

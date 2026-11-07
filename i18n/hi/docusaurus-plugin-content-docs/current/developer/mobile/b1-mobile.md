@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "B1 Mobile React Native/Expo ऐप को लोकल रूप से सेट अप और चलाएँ, इसके API एंडपॉइंट कॉन्फ़िगर करें, और Android या iOS के लिए बिल्ड करें। ध्यान दें कि B1 Mobile अब अप्रचलित (deprecated) है।"
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobile ChurchApps के लिए मुख्य सदस्य-उन्�
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- **Node.js** और **Expo CLI** इंस्टॉल करें -- देखें [पूर्वापेक्षाएँ](../setup/prerequisites)
+- **Node.js** और **Expo CLI** इंस्टॉल करें -- देखें [पूर्वापेक्षाएँ](../setup/prerequisites.md)
 - **Android Studio** (Android emulator के लिए) या **Xcode** (iOS simulator के लिए) इंस्टॉल करें
-- अपना API लक्ष्य कॉन्फ़िगर करें (demo या local) -- देखें [एनवायरनमेंट वेरिएबल](../setup/environment-variables)
+- अपना API लक्ष्य कॉन्फ़िगर करें (demo या local) -- देखें [एनवायरनमेंट वेरिएबल](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ OTA अपडेट केवल JavaScript में हुए बदलाव�
 
 ## संबंधित लेख
 
-- **[मोबाइल डिप्लॉयमेंट](../deployment/mobile)** -- मोबाइल ऐप बनाने, सबमिट करने और डिप्लॉय करने की पूरी मार्गदर्शिका
-- **[एनवायरनमेंट वेरिएबल](../setup/environment-variables)** -- मोबाइल एनवायरनमेंट कॉन्फ़िगरेशन का पूरा संदर्भ
+- **[मोबाइल डिप्लॉयमेंट](../deployment/mobile.md)** -- मोबाइल ऐप बनाने, सबमिट करने और डिप्लॉय करने की पूरी मार्गदर्शिका
+- **[एनवायरनमेंट वेरिएबल](../setup/environment-variables.md)** -- मोबाइल एनवायरनमेंट कॉन्फ़िगरेशन का पूरा संदर्भ

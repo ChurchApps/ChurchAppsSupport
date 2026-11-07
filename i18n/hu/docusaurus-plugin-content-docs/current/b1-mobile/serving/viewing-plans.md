@@ -1,5 +1,7 @@
 ---
-title: "Szolgálati beosztások megtekintése"
+title: "Szolgálati tervek megtekintése a B1 Mobile alkalmazásban"
+sidebar_label: "Szolgálati beosztások megtekintése"
+description: "Ellenőrizd közelgő és korábbi szolgálati beosztásodat a B1 Mobile alkalmazásban, olvasd el a terv részleteit és istentiszteleti rendjét, és nyomtasd ki a terveket próbákhoz vagy a színpad mögötti használathoz."
 ---
 
 # Szolgálati beosztások megtekintése
@@ -13,7 +15,7 @@ A B1 Mobile beosztások képernyője teljes képet ad a szolgálati menetrendedr
 <div class="prereqs">
 <h4>Mielőtt elkezdenéd</h4>
 
-- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing) és [jelentkezz be](../getting-started/logging-in) a fiókodba
+- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing.md) és [jelentkezz be](../getting-started/logging-in.md) a fiókodba
 - Az egyházi adminisztrátorod rendeljen hozzá legalább egy szolgálati beosztáshoz
 
 </div>
@@ -61,4 +63,4 @@ Rendszeresen nézd meg a **Közelgő** fület, hogy naprakész maradj a beosztá
 
 ## Kapcsolódó cikkek
 
-- [Önkéntes jelentkezés](./volunteer-signup) -- Nyitott önkéntes pozíciók böngészése és jelentkezés rájuk
+- [Önkéntes jelentkezés](./volunteer-signup.md) -- Nyitott önkéntes pozíciók böngészése és jelentkezés rájuk

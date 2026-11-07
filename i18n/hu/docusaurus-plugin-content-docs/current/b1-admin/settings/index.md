@@ -1,5 +1,6 @@
 ---
 title: "Beállítások"
+description: "Eligazodás a B1 Admin Beállításaiban: egyházi adatok, arculat, telephelyek, egyéni mezők, szerepkörök és a B1.church-alkalmazás menüje."
 ---
 
 # Beállítások

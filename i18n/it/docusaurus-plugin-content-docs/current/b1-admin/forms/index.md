@@ -1,5 +1,6 @@
 ---
 title: "Moduli"
+description: "Trova, filtra, modifica, archivia e ripristina i moduli in B1 Admin, e scopri dove assegnare i membri del modulo e consultare le risposte."
 ---
 
 # Moduli

@@ -1,5 +1,6 @@
 ---
 title: "Uitchecken & kinderveiligheid"
+description: "Check kinderen uit op een bemand B1 Checkin-station met beveiligingscodes, geverifieerde ophalers, ouderoproep, labelherdruk en noodmeldingen."
 ---
 
 # Uitchecken & kinderveiligheid
@@ -14,7 +15,7 @@ Uitchecken sluit de cyclus van het inchecken van kinderen af: een ouder toont de
 <h4>Voordat je begint</h4>
 
 - Uitchecken is beschikbaar op stations die in de kioskinstellingen op **bemand** zijn ingesteld
-- Kinderen moeten [ingecheckt](./completing-checkin) zijn met een afgedrukt ophaallabel met de beveiligingscode
+- Kinderen moeten [ingecheckt](./completing-checkin.md) zijn met een afgedrukt ophaallabel met de beveiligingscode
 - Oproepen en noodmeldingen vereisen dat je kerk een sms-provider heeft gekoppeld in B1 Admin
 
 </div>
@@ -39,7 +40,7 @@ Als een getypte naam overeenkomt met iemand die voor dat gezin als **Niet gemach
 Zodra de ophaler is bevestigd, tik je op uitchecken. De naam van de ophaler wordt opgeslagen bij het aanwezigheidsrecord.
 
 :::info
-Vertrouwde en niet-gemachtigde ophaalpersonen worden door kerkmedewerkers beheerd op de pagina van elke persoon in B1 Admin. Zie [Incheckbeveiliging](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Vertrouwde en niet-gemachtigde ophaalpersonen worden door kerkmedewerkers beheerd op de pagina van elke persoon in B1 Admin. Zie [Incheckbeveiliging](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Een ouder oproepen
@@ -65,6 +66,6 @@ De melding gaat naar elk ingecheckt gezin voor de geselecteerde dienst. Gebruik 
 
 ## Gerelateerde artikelen
 
-- [Inchecken afronden](./completing-checkin): waar beveiligingscodes en ophaallabels vandaan komen
-- [Incheckbeveiliging](../../b1-admin/attendance/checkin-safety): het instellen van capaciteiten, verhoudingen, ophaalpersonen en de vereiste sms-provider
-- [Printerinstellingen](../getting-started/printer-setup): configuratie van de labelprinter
+- [Inchecken afronden](./completing-checkin.md): waar beveiligingscodes en ophaallabels vandaan komen
+- [Incheckbeveiliging](../../b1-admin/attendance/checkin-safety.md): het instellen van capaciteiten, verhoudingen, ophaalpersonen en de vereiste sms-provider
+- [Printerinstellingen](../getting-started/printer-setup.md): configuratie van de labelprinter

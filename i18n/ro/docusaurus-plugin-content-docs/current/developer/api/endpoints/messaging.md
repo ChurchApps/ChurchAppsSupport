@@ -1,5 +1,6 @@
 ---
 title: "Punctele finale pentru mesagerie"
+description: "Referință pentru endpoint-urile API-ului de mesagerie ChurchApps: conversații, reguli de acces la notițe, mesaje text, șabloane de e-mail, notificări și dispozitive."
 ---
 
 # Punctele finale pentru mesagerie
@@ -190,7 +191,7 @@ Cale de bază: `/messaging/notificationpreferences`
 
 Cale de bază: `/messaging/connections`
 
-Gestionează conexiunile WebSocket/în timp real pentru chat, conversațiile de grup, mesajele private și transmisiunile live. Consultați [Arhitectura în timp real](../../realtime) pentru protocolul complet.
+Gestionează conexiunile WebSocket/în timp real pentru chat, conversațiile de grup, mesajele private și transmisiunile live. Consultați [Arhitectura în timp real](../../realtime.md) pentru protocolul complet.
 
 | Metodă | Cale | Autentificare | Permisiune | Descriere |
 |--------|------|------|------|-------------|
@@ -367,9 +368,9 @@ Urmărește starea livrării pentru mesajele trimise (SMS, notificări push, e-m
 
 ## Pagini conexe
 
-- [Arhitectura în timp real](../../realtime) -- protocolul WebSocket, abonările la camere și framework-ul de livrare unificată
-- [Notificări push pentru web](../../web-push) -- înscrierea și livrarea push în browser
-- [Punctele finale pentru membri](./membership) -- persoane, grupuri, roluri și identitatea de bază
-- [Punctele finale pentru prezențe](./attendance) -- urmărirea serviciilor și a vizitelor
-- [Autentificare și permisiuni](./authentication) -- fluxul de autentificare, JWT, OAuth, modelul de permisiuni
-- [Structura modulului](../module-structure) -- modele de organizare a codului
+- [Arhitectura în timp real](../../realtime.md) -- protocolul WebSocket, abonările la camere și framework-ul de livrare unificată
+- [Notificări push pentru web](../../web-push.md) -- înscrierea și livrarea push în browser
+- [Punctele finale pentru membri](./membership.md) -- persoane, grupuri, roluri și identitatea de bază
+- [Punctele finale pentru prezențe](./attendance.md) -- urmărirea serviciilor și a vizitelor
+- [Autentificare și permisiuni](./authentication.md) -- fluxul de autentificare, JWT, OAuth, modelul de permisiuni
+- [Structura modulului](../module-structure.md) -- modele de organizare a codului

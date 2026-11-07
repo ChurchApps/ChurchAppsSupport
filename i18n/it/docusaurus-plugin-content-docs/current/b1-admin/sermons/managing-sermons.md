@@ -1,5 +1,6 @@
 ---
 title: "Gestione dei Sermoni"
+description: "Gestisci la libreria dei sermoni in B1 Admin: aggiungi sermoni da YouTube, Vimeo o Facebook, modifica i dettagli e ottieni un feed podcast per la tua chiesa."
 ---
 
 # Gestione dei Sermoni
@@ -14,7 +15,7 @@ La pagina Sermoni visualizza l'intera libreria di sermoni. Da qui puoi aggiunger
 <h4>Prima di Iniziare</h4>
 
 - È necessario il permesso **contentApi.streamingServices.edit**. Vedi [Ruoli & Permessi](../settings/roles-permissions.md) se non hai accesso.
-- Crea almeno una [playlist](playlists) per organizzare i tuoi sermoni
+- Crea almeno una [playlist](./playlists.md) per organizzare i tuoi sermoni
 - Tieni pronti i tuoi ID video o URL da YouTube, Vimeo o Facebook
 
 </div>
@@ -35,7 +36,7 @@ La pagina Sermoni visualizza l'intera libreria di sermoni. Da qui puoi aggiunger
 6. Apporta le modifiche che desideri e fai clic su **Salva**.
 
 :::tip
-Puoi anche aggiungere un URL di live stream permanente selezionando **Aggiungi URL Live Permanente** dal menu a discesa **Aggiungi Sermone**. Questo crea una connessione persistente al live stream del tuo canale YouTube utilizzando il tuo ID canale. Vedi [Live Streaming](live-streaming) per ulteriori dettagli.
+Puoi anche aggiungere un URL di live stream permanente selezionando **Aggiungi URL Live Permanente** dal menu a discesa **Aggiungi Sermone**. Questo crea una connessione persistente al live stream del tuo canale YouTube utilizzando il tuo ID canale. Vedi [Live Streaming](./live-streaming.md) per ulteriori dettagli.
 :::
 
 ## Modifica di un Sermone
@@ -73,11 +74,11 @@ Dopo aver aggiunto un sermone, puoi pianificarlo per la trasmissione sulla tua p
 3. Il sermone verrà riprodotto all'ora del servizio pianificato.
 
 :::info
-Per importare più sermoni contemporaneamente invece di aggiungerli uno per uno, utilizza lo strumento [Importazione in Blocco](bulk-import) per estrarre i video direttamente dal tuo account YouTube o Vimeo.
+Per importare più sermoni contemporaneamente invece di aggiungerli uno per uno, utilizza lo strumento [Importazione in Blocco](./bulk-import.md) per estrarre i video direttamente dal tuo account YouTube o Vimeo.
 :::
 
 ## Passi Successivi
 
-- [Playlist](playlists) -- Organizza i sermoni in serie
-- [Live Streaming](live-streaming) -- Configura la tua pianificazione di streaming
-- [Importazione in Blocco](bulk-import) -- Importa più sermoni contemporaneamente
+- [Playlist](./playlists.md) -- Organizza i sermoni in serie
+- [Live Streaming](./live-streaming.md) -- Configura la tua pianificazione di streaming
+- [Importazione in Blocco](./bulk-import.md) -- Importa più sermoni contemporaneamente

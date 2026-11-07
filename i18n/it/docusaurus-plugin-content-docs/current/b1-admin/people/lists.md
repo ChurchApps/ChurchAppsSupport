@@ -1,5 +1,6 @@
 ---
 title: "Liste Salvate"
+description: "Salva una ricerca tra le Persone di B1 Admin come lista con nome e ricaricala con un clic. Le liste restano attive e includono i nuovi membri corrispondenti."
 ---
 
 # Liste Salvate

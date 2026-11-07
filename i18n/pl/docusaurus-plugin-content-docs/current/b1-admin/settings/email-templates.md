@@ -1,5 +1,6 @@
 ---
 title: "Szablony wiadomości e-mail"
+description: "Skonfiguruj szablony e-maili i wiadomości SMS w B1 Admin, z polami scalania, opcjami SMS-ów i podglądem do masowej komunikacji."
 ---
 
 # Szablony wiadomości e-mail

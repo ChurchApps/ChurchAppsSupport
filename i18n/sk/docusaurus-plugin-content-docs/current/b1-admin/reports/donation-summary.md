@@ -1,5 +1,6 @@
 ---
 title: "Súhrn darov"
+description: "Spustite správu Súhrn darov v B1 Admin a pozrite si celkové dary, počet jedinečných darcov a sumy podľa fondu pre ľubovoľné obdobie."
 ---
 
 # Súhrn darov

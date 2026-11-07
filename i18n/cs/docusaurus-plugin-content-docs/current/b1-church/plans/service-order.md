@@ -1,5 +1,7 @@
 ---
-title: "Pořadí bohoslužby"
+title: "Detail pořadí bohoslužby v aplikaci B1.church"
+sidebar_label: "Pořadí bohoslužby"
+description: "Zobrazte pořadí bohoslužby v aplikaci B1.church s kumulativním časováním, texty písní, transpozicí tónin a náhledy lekcí pro váš tým."
 ---
 
 # Pořadí bohoslužby

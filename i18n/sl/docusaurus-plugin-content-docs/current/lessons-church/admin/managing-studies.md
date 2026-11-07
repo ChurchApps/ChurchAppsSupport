@@ -1,5 +1,6 @@
 ---
 title: "Upravljanje študijev"
+description: "Ustvari, uredi in kategoriziraj študije znotraj programa v upravi Lessons.church ter vsaki priloži pregled serije ali predloge biltena."
 ---
 
 # Upravljanje študijev

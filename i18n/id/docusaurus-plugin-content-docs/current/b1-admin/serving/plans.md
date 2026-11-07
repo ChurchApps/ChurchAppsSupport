@@ -1,5 +1,6 @@
 ---
 title: "Rencana Layanan"
+description: "Atur penjadwalan relawan di B1 Admin: buat rencana ibadah per tanggal, salin dari minggu sebelumnya, tugaskan tim ke posisi, dan atur batas daftar serta pengingat."
 ---
 
 # Rencana Layanan

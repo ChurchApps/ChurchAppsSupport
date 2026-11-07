@@ -1,5 +1,7 @@
 ---
-title: "Lukujärjestyksen laatiminen"
+title: "Oppituntien ajoittaminen Lessons.churchista B1 Adminissa"
+sidebar_label: "Lukujärjestyksen laatiminen"
+description: "Yhdistä Lessons.church B1 Adminiin ja ajoita oppitunnit, ajoita sarja kerralla tai sovella vuosisuunnitelma ryhmän palvelusuunnitelmiin."
 ---
 
 # Lukujärjestyksen laatiminen Lessons.churchista

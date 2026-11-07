@@ -1,5 +1,6 @@
 ---
 title: "Kalendáre"
+description: "Nastavte kalendáre v B1 Admin, spravujte, ktoré udalosti sa v nich zobrazujú, a zverejnite ich na webe B1.church, aby zbor videl nadchádzajúce podujatia."
 ---
 
 # Kalendáre
@@ -18,20 +19,20 @@ Sekcia Kalendáre v B1 Admin vám umožňuje vytvárať prispôsobené kalendár
 
 ## Čo môžete robiť
 
-- **Pridať nový kalendár** -- Kliknite na **Add Calendar** v hornej časti stránky a vytvorte kalendár pre konkrétnu službu, typ udalosti alebo účel. Podrobné pokyny nájdete v časti [Vytváranie kalendárov](creating-calendars).
+- **Pridať nový kalendár** -- Kliknite na **Add Calendar** v hornej časti stránky a vytvorte kalendár pre konkrétnu službu, typ udalosti alebo účel. Podrobné pokyny nájdete v časti [Vytváranie kalendárov](./creating-calendars.md).
 - **Upraviť kalendár** -- Kliknite na **Manage Events** pri ľubovoľnom kalendári, otvorte ho a spravujte, ktoré skupiny sú v ňom zahrnuté.
 - **Publikovať kalendáre** -- Kalendáre môžu byť zobrazené na vašej webovej stránke B1.church, aby návštevníci mohli vidieť nadchádzajúce udalosti vo vašom kostole.
-- **Vytvárať prispôsobené kalendáre** -- Spojte udalosti z viacerých skupín do jedného zobrazenia kalendára a získajte komplexný prehľad o všetkom, čo sa deje vo vašom kostole. Podrobnosti nájdete v časti [Prispôsobený kalendár](curated-calendar).
-- **Spravovať miestnosti a zdroje** -- Sledujte rezervovateľné priestory a vybavenie a spravujte žiadosti o schválenie. Podrobnosti nájdete v časti [Miestnosti a zdroje](rooms-resources).
-- **Zobraziť dostupnosť** -- Pozrite si všetky rezervácie miestností a zdrojov v jednom kalendári a rezervujte priestory pre nadchádzajúce udalosti. Podrobnosti nájdete v časti [Kalendár dostupnosti](availability).
+- **Vytvárať prispôsobené kalendáre** -- Spojte udalosti z viacerých skupín do jedného zobrazenia kalendára a získajte komplexný prehľad o všetkom, čo sa deje vo vašom kostole. Podrobnosti nájdete v časti [Prispôsobený kalendár](./curated-calendar.md).
+- **Spravovať miestnosti a zdroje** -- Sledujte rezervovateľné priestory a vybavenie a spravujte žiadosti o schválenie. Podrobnosti nájdete v časti [Miestnosti a zdroje](./rooms-resources.md).
+- **Zobraziť dostupnosť** -- Pozrite si všetky rezervácie miestností a zdrojov v jednom kalendári a rezervujte priestory pre nadchádzajúce udalosti. Podrobnosti nájdete v časti [Kalendár dostupnosti](./availability.md).
 
 :::info
-Kalendáre úzko spolupracujú so [skupinami](../groups/creating-groups.md). Keď majú skupiny naplánované udalosti, tieto udalosti je možné zahrnúť do vašich kalendárov. Ako prepojiť skupiny s kalendármi, sa dozviete na stránke [Vytváranie kalendárov](creating-calendars).
+Kalendáre úzko spolupracujú so [skupinami](../groups/creating-groups.md). Keď majú skupiny naplánované udalosti, tieto udalosti je možné zahrnúť do vašich kalendárov. Ako prepojiť skupiny s kalendármi, sa dozviete na stránke [Vytváranie kalendárov](./creating-calendars.md).
 :::
 
 ## Ďalšie kroky
 
-- [Vytváranie kalendárov](creating-calendars) -- Nastavte nový kalendár a prepojte skupiny
-- [Prispôsobený kalendár](curated-calendar) -- Zhromažďujte udalosti z viacerých skupín do jedného zobrazenia
-- [Miestnosti a zdroje](rooms-resources) -- Spravujte rezervovateľné priestory a vybavenie
-- [Kalendár dostupnosti](availability) -- Zobrazujte a spravujte rezervácie miestností a zdrojov
+- [Vytváranie kalendárov](./creating-calendars.md) -- Nastavte nový kalendár a prepojte skupiny
+- [Prispôsobený kalendár](./curated-calendar.md) -- Zhromažďujte udalosti z viacerých skupín do jedného zobrazenia
+- [Miestnosti a zdroje](./rooms-resources.md) -- Spravujte rezervovateľné priestory a vybavenie
+- [Kalendár dostupnosti](./availability.md) -- Zobrazujte a spravujte rezervácie miestností a zdrojov

@@ -1,5 +1,7 @@
 ---
-title: "Logga in"
+title: "Logga in i B1 Mobile"
+sidebar_label: "Logga in"
+description: "Logga in i B1 Mobile-appen med ditt ChurchApps-konto, registrera ett nytt konto eller återställ ett glömt lösenord med en 6-siffrig kod."
 ---
 
 # Logga in
@@ -13,7 +15,7 @@ B1 Mobile använder samma ChurchApps-konto som du använder på B1.church och an
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Installera B1 Mobile](./installing) på din iOS- eller Android-enhet
+- [Installera B1 Mobile](./installing.md) på din iOS- eller Android-enhet
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile använder samma ChurchApps-konto som du använder på B1.church och an
 3. Ange din **e-postadress** och ditt **lösenord**.
 4. Tryck på **Logga in**.
 
-När du har loggat in kommer du till [instrumentpanelen](../dashboard/). Om du inte har valt en kyrka ännu uppmanas du att söka efter och välja en.
+När du har loggat in kommer du till [instrumentpanelen](../dashboard/index.md). Om du inte har valt en kyrka ännu uppmanas du att söka efter och välja en.
 
 ## Skapa ett nytt konto
 

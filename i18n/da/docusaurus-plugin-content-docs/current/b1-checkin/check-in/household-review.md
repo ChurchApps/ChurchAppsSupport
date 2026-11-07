@@ -1,5 +1,6 @@
 ---
 title: "Gennemgang af din husstand"
+description: "Gennemgå din husstand i B1 Checkin efter valg af person, tildel grupper for hvert gudstjenestetidspunkt og markér gæster eller frivillige før check-in."
 ---
 
 # Gennemgang af din husstand
@@ -13,8 +14,8 @@ Efter at du vælger en person fra søgeresultaterne, indlæser appen din hele hu
 <div class="prereqs">
 <h4>Før du starter</h4>
 
-- [Vælg en servin](./selecting-service) fra servin skærmen
-- [Slå et medlem op](./looking-up-members) og vælg det fra søgeresultaterne
+- [Vælg en servin](./selecting-service.md) fra servin skærmen
+- [Slå et medlem op](./looking-up-members.md) og vælg det fra søgeresultaterne
 
 </div>
 
@@ -34,7 +35,7 @@ Tryk på et medlems kort for at udvide det. Når det er udvidet, vil du se en li
 - **Servin tid navnet** (for eksempel "09:00" eller "11:00")
 - En **knap**, der viser den aktuelt tildelte gruppe eller "Vælg gruppe" hvis ingen gruppe er blevet tildelt endnu
 
-Tryk på gruppe knappen for at gå til [gruppe vælge skærmen](./group-assignment) hvor du kan vælge eller ændre gruppen for denne person og servin tid.
+Tryk på gruppe knappen for at gå til [gruppe vælge skærmen](./group-assignment.md) hvor du kan vælge eller ændre gruppen for denne person og servin tid.
 
 Tryk på medlems kort igen for at sammenfolde det.
 
@@ -46,9 +47,9 @@ Du behøver ikke at tildele hvert familiemedlem til en gruppe. Voksne, som delta
 
 Fra husstands oversigten har du tre muligheder:
 
-- **Udvid et medlem** og tryk på en servin tid knap for at [tildele eller ændre en gruppe](./group-assignment).
-- **Tryk på tilføj gæst knappen** under medlemslisten for at [tilføje en gæst](./adding-guests) til din husstand.
-- **Tryk på check-in knappen** nederst på skærmen for at [fuldføre checkin](./completing-checkin) for alle i husstanden.
+- **Udvid et medlem** og tryk på en servin tid knap for at [tildele eller ændre en gruppe](./group-assignment.md).
+- **Tryk på tilføj gæst knappen** under medlemslisten for at [tilføje en gæst](./adding-guests.md) til din husstand.
+- **Tryk på check-in knappen** nederst på skærmen for at [fuldføre checkin](./completing-checkin.md) for alle i husstanden.
 
 :::info
 Enhver gruppe tildeling fra et tidligere checkin til samme servin er forudindlæst automatisk. Hvis dine børn deltager i de samme grupper hver uge, behøver du muligvis ikke at ændre noget -- bare gennemgå og checkin.
@@ -56,6 +57,6 @@ Enhver gruppe tildeling fra et tidligere checkin til samme servin er forudindlæ
 
 ## Næste trin
 
-- [Tildel grupper](./group-assignment) til familiemedlemmer, som skal checke ind i en bestemt klasse eller program.
-- [Tilføj en gæst](./adding-guests), hvis nogen besøger med din familie.
-- [Fuldføre checkin](./completing-checkin) når alle tildelinger ser korrekte ud.
+- [Tildel grupper](./group-assignment.md) til familiemedlemmer, som skal checke ind i en bestemt klasse eller program.
+- [Tilføj en gæst](./adding-guests.md), hvis nogen besøger med din familie.
+- [Fuldføre checkin](./completing-checkin.md) når alle tildelinger ser korrekte ud.

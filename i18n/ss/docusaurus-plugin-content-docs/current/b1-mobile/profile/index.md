@@ -1,5 +1,7 @@
 ---
-title: "Iphrofayela"
+title: "Iphrofayili Nemakhadi Lalabelwe Ku-B1 Mobile"
+sidebar_label: "Iphrofayela"
+description: "Phatsa ligama lakho, imininingwane yekuxhumana, umndeni, nekubonakala kwebucopho kuyiphrofayili ye-B1 Mobile, futsi ubhekane namakhadi emsebenti netimisebenti letabelwe wena."
 ---
 
 # Iphrofayela
@@ -20,7 +22,7 @@ Ithebhu ye-**Iphrofayela** ikuvumela kubuka nekuhlela imininingwane yakho yebumu
 
 ### Umndeni
 
-Ithebhu ye-**Umndeni** ikhombisa emalunga emndeni wakho netikhundla tabo ngekhatsi kwemndeni wakho. Lemininingwane isetjentiswa ticini letifana ne[kungena](../checkin/), lapho ungangenisa umndeni wakho wonkhe kanyekanye.
+Ithebhu ye-**Umndeni** ikhombisa emalunga emndeni wakho netikhundla tabo ngekhatsi kwemndeni wakho. Lemininingwane isetjentiswa ticini letifana ne[kungena](../checkin/index.md), lapho ungangenisa umndeni wakho wonkhe kanyekanye.
 
 ### Kubukwa
 
@@ -42,6 +44,6 @@ Ithebhu ye-**I-Akhawunti** iniketa kufinyelela etilungiselelweni takho tekupheph
 
 ## Tinyatselo Letilandzelako
 
-- [Kuhlela Iphrofayela Yakho](./editing-profile) -- Buyeketa ligama lakho, imininingwane yekutfintana, nesitfombe
-- [Umndeni](./household) -- Buka futsi uphatse emalunga emndeni wakho
-- [Tilungiselelo Tekubukwa](./privacy-settings) -- Lawula loko labanye labangakubona ngawe
+- [Kuhlela Iphrofayela Yakho](./editing-profile.md) -- Buyeketa ligama lakho, imininingwane yekutfintana, nesitfombe
+- [Umndeni](./household.md) -- Buka futsi uphatse emalunga emndeni wakho
+- [Tilungiselelo Tekubukwa](./privacy-settings.md) -- Lawula loko labanye labangakubona ngawe

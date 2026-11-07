@@ -1,5 +1,6 @@
 ---
 title: "Innstillinger for mobilappen"
+description: "Konfigurer navigasjonsfaner, flis på startskjermen, innloggingsmelding og personvern for medlemskatalogen i B1.church-medlemsappen via B1 Admin."
 ---
 
 # Innstillinger for mobilappen

@@ -1,5 +1,6 @@
 ---
 title: "Palveluntarjoajiin yhdistäminen"
+description: "Yhdistä FreePlay sisällöntarjoajaan QR-koodilla, sähköpostikirjautumisella tai yhden napsautuksen käyttöoikeudella ja hallitse tai katkaise yhteys asetuksista."
 ---
 
 # Palveluntarjoajiin yhdistäminen
@@ -13,7 +14,7 @@ Ennen kuin voit selata palveluntarjoajan sisältöä, sinun on yhdistettävä si
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Asenna ja käynnistä FreePlay -- katso [Aloita käyttö](../getting-started/)
+- Asenna ja käynnistä FreePlay -- katso [Aloita käyttö](../getting-started/index.md)
 - Valmistele TV-kaukosäädin navigointia varten
 - Palveluntarjoajia, jotka vaativat kirjautumisen, varten tarvitset tilisi tunnukset
 
@@ -80,7 +81,7 @@ Kun valitset palveluntarjoajan kortin, jossa on **Yhdistetty**-merkki, avautuu s
 
 - **Selaa kirjastoa** -- Näytä tai piilota tämän palveluntarjoajan sisältökirjasto sivupalkissa
 - **Lataa tämän päivän oppitunti automaattisesti** -- Käytä tätä palveluntarjoajaa tämän päivän oppitunnin lähteenä ja lataa sen tiedostot etukäteen (näkyy vain palveluntarjoajille, jotka tarjoavat ajankohtaisen oppitunnin)
-- **Käytä ilmoituksiin** -- Valitse tämän palveluntarjoajan kansio, jonka diat toistetaan silmukassa **Ilmoitukset**-kohdasta sivupalkissa. Katso [Ilmoitukset](./announcements)
+- **Käytä ilmoituksiin** -- Valitse tämän palveluntarjoajan kansio, jonka diat toistetaan silmukassa **Ilmoitukset**-kohdasta sivupalkissa. Katso [Ilmoitukset](./announcements.md)
 - **Tarkista ilmoitusten päivitykset** -- Näkyy, kun ilmoituskansio on valittu; lataa uudet diat ja poistaa poistetut
 - **Katkaise yhteys** -- Poista yhteys
 
@@ -100,6 +101,6 @@ Yhteyden katkaiseminen poistaa tallennetut todennustiedot laitteeltasi. Sinun on
 
 ## Aiheeseen liittyvät artikkelit
 
-- **[Sisällön selaaminen ja lataaminen](./browsing-content)** - Selaa kansioita ja toista sisältöä yhdistämisen jälkeen
-- **[Ilmoitukset](./announcements)** - Toista palveluntarjoajan kansion diat silmukassa
+- **[Sisällön selaaminen ja lataaminen](./browsing-content.md)** - Selaa kansioita ja toista sisältöä yhdistämisen jälkeen
+- **[Ilmoitukset](./announcements.md)** - Toista palveluntarjoajan kansion diat silmukassa
 - **[Sisältöpalveluntarjoajien yleiskatsaus](./index.md)** - Katso kaikki saatavilla olevat palveluntarjoajat

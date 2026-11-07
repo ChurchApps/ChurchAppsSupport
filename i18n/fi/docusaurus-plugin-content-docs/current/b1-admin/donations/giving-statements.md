@@ -1,5 +1,6 @@
 ---
 title: "Käyttöpalautukset"
+description: "Luo B1 Adminissa vuosittaiset lahjoitustodistukset kaikille lahjoittajille. Lataa ne CSV-tiedostoina tai tulosta verovähennyskelpoisine summineen."
 ---
 
 # Käyttöpalautukset

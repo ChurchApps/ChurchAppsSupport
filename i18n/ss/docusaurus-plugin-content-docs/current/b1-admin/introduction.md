@@ -1,5 +1,6 @@
 ---
 title: Singeniso Se-B1.church
+description: "Ukuhamba nawe ekungeneni ku-B1 Admin, ukuhamba ku-Dashboard ne-Jump menu, nekusetfula lulwati lwebandla ngaphambi kwekuhlola letinye tithulusi."
 ---
 
 # Wemukelekile ku-B1.church Admin!
@@ -33,16 +34,16 @@ Kute lusito lolwengetiwe, sicela utfumele i-imeyili ku-[support@churchapps.org](
 10. Manje ungangena ku-B1.church nge-**member portal** noma i-**admin portal**. I-member portal ikuvumela kubona kutsi i-B1.church ibukeka njani emalungwini akho, ubuke emacembu akho, futsi uphatse iminikelo yakho yebuwena.
 
 :::tip
-Cala ngelikhasi le-[Tilungiselelo](./settings/) kute ulungise ligama lelibandla lakho, kuvela kwemake, netimvumo tebasebenti bakho. Loku kucinisekisa kutsi konkhe lokunye lokutakulungisa kutakuvela kahle.
+Cala ngelikhasi le-[Tilungiselelo](./settings/index.md) kute ulungise ligama lelibandla lakho, kuvela kwemake, netimvumo tebasebenti bakho. Loku kucinisekisa kutsi konkhe lokunye lokutakulungisa kutakuvela kahle.
 :::
 
 ## Tinyatselo Letilandzelako
 
 Ngemuva kwekubuka lesingeniso, hlola letinye tici letibalulekile:
 
-- [Kwengeta Bantfu](./people/adding-people) -- Fundza kutsi ungawengeta njani emalunga ku-database yakho
-- [Emacembu](./groups/) -- Lungisa futsi uphatse emacembu elibandla
-- [Emahlelo Ekukhonta](./serving/plans) -- Hlela inkonzo yakho yekukhonta
-- [Kuba Khona](./attendance/) -- Landzelela kuba khona kanye nekungena (check-in)
-- [Liwebusayithi](./website/) -- Yakha futsi ulungise liwebusayithi lelibandla lakho
-- [Tilungiselelo](./settings/) -- Lungisa imniningwane yelibandla lakho netimvumo
+- [Kwengeta Bantfu](./people/adding-people.md) -- Fundza kutsi ungawengeta njani emalunga ku-database yakho
+- [Emacembu](./groups/index.md) -- Lungisa futsi uphatse emacembu elibandla
+- [Emahlelo Ekukhonta](./serving/plans.md) -- Hlela inkonzo yakho yekukhonta
+- [Kuba Khona](./attendance/index.md) -- Landzelela kuba khona kanye nekungena (check-in)
+- [Liwebusayithi](./website/index.md) -- Yakha futsi ulungise liwebusayithi lelibandla lakho
+- [Tilungiselelo](./settings/index.md) -- Lungisa imniningwane yelibandla lakho netimvumo

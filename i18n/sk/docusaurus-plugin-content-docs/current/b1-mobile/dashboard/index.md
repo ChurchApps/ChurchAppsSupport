@@ -1,5 +1,6 @@
 ---
 title: "Prehľad"
+description: "Zorientujte sa na domovskej obrazovke B1 Mobile, kde sú vaše najpoužívanejšie funkcie zobrazené ako veľké karty a ostatné sú v Rýchlych akciách."
 ---
 
 # Prehľad
@@ -28,7 +29,7 @@ Pod hlavnou kartou uvidíte až dve **odporúčané karty** zobrazené vedľa se
 
 ## Rýchle akcie
 
-Ostatné funkcie sa zobrazia v mriežke **Rýchle akcie** pod odporúčanými kartami. Každá položka zobrazuje ikonu a popisok. Ide o všetky ostatné navigačné odkazy, ktoré váš kostol nakonfiguroval, a poskytujú prístup k všetkému od [skupín](../groups/) a [darovania](../giving/) až po [prezentáciu](../checkin/), [kázania](../content/sermons.md) a ďalšie.
+Ostatné funkcie sa zobrazia v mriežke **Rýchle akcie** pod odporúčanými kartami. Každá položka zobrazuje ikonu a popisok. Ide o všetky ostatné navigačné odkazy, ktoré váš kostol nakonfiguroval, a poskytujú prístup k všetkému od [skupín](../groups/index.md) a [darovania](../giving/index.md) až po [prezentáciu](../checkin/index.md), [kázania](../content/sermons.md) a ďalšie.
 
 ## Ako sa rozloženie prispôsobuje
 
@@ -41,7 +42,7 @@ Rozloženie prehľadu je personalizované podľa vášho spôsobu používania. 
 Ak ste aplikáciu ešte nepoužívali, funkcie sa zobrazia v predvolenom poradí, ktoré nakonfiguroval váš kostol. Postupom času sa prehľad preusporiada podľa vašich zvyklostí.
 
 :::info
-Funkcie dostupné na vašom prehľade nastavuje správca vášho kostola v [B1 Admin](../../b1-admin/). Ak nevidíte funkciu, ktorú očakávate, kontaktujte kostolnú kancelária.
+Funkcie dostupné na vašom prehľade nastavuje správca vášho kostola v [B1 Admin](../../b1-admin/index.md). Ak nevidíte funkciu, ktorú očakávate, kontaktujte kostolnú kancelária.
 :::
 
 ## Obnovenie prehľadu

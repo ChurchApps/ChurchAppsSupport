@@ -1,5 +1,6 @@
 ---
 title: "Mga Service Plan"
+description: "I-set up ang iskedyul ng boluntaryo sa B1 Admin: gumawa ng plano kada petsa, kopyahin ang nakaraan, italaga ang team sa posisyon, at itakda ang deadline at paalala."
 ---
 
 # Mga Service Plan

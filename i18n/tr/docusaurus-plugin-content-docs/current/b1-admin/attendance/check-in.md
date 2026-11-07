@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "B1 Checkin ve B1 Admin ile Self Check-In Kurulumu"
+sidebar_label: "Check-In"
+description: "B1 Admin'de B1 Checkin uygulamasıyla self check-in ayarlarını yapın: cihazlar, kiosk hesapları, zamanlamalar, marka öğeleri ve QR ile misafir kaydı."
 ---
 
 # Check-In
@@ -99,7 +101,7 @@ Kiosk aktif olarak kullanılmadığında duyurular, yaklaşan etkinlikler veya h
 
 Check-in kiosku, ziyaretçilerin kendi telefonlarından kendilerini ve ailelerini kaydetmek için tarayabileceği bir QR kodu gösterebilir. Bu, ilk kez gelen misafirler için giriş sürecini hızlandırır.
 
-Bir misafir QR kodunu taradığında, aile adlarını ve sormayı seçtiğiniz diğer bilgileri girdikleri bir [misafir kayıt sayfasına](../../b1-church/checkin/guest-registration) yönlendirilir. Bir gönüllü daha sonra kiosktan onları arayıp giriş yaptırabilir.
+Bir misafir QR kodunu taradığında, aile adlarını ve sormayı seçtiğiniz diğer bilgileri girdikleri bir [misafir kayıt sayfasına](../../b1-church/checkin/guest-registration.md) yönlendirilir. Bir gönüllü daha sonra kiosktan onları arayıp giriş yaptırabilir.
 
 ### QR Misafir Kaydını Etkinleştirme
 

@@ -1,5 +1,7 @@
 ---
-title: "Registracija į renginius"
+title: "Registracija į renginius B1 Mobile programėlėje"
+sidebar_label: "Registracija į renginius"
+description: "Registruokite save ir šeimos narius į bažnyčios renginius B1 Mobile programėlėje, tikrinkite likusias vietas ir patvirtinkite registraciją trimis žingsniais."
 ---
 
 # Registracija į renginius
@@ -13,7 +15,7 @@ Registruokitės į bažnyčios renginius tiesiogiai per B1 Mobile, atlikdami pap
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiekite B1 Mobile](../getting-started/installing) ir [prisijunkite](../getting-started/logging-in) prie savo paskyros
+- [Įdiekite B1 Mobile](../getting-started/installing.md) ir [prisijunkite](../getting-started/logging-in.md) prie savo paskyros
 - Renginyje turi būti įjungta registracija, o registracijos langas turi būti atviras
 
 </div>
@@ -50,4 +52,4 @@ Jei reikia atšaukti registraciją, kreipkitės į bažnyčios administratorių.
 ## Susiję straipsniai
 
 - [Renginių apžvalga](./index.md) -- Naršykite renginius, į kuriuos galima registruotis mobiliajame įrenginyje
-- [Planų peržiūra](../serving/viewing-plans) -- Peržiūrėkite savo tarnystės tvarkaraštį
+- [Planų peržiūra](../serving/viewing-plans.md) -- Peržiūrėkite savo tarnystės tvarkaraštį

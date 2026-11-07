@@ -1,5 +1,6 @@
 ---
 title: "Instalarea ca aplicație (PWA)"
+description: "Instalează B1.church ca aplicație pe iPhone sau Android din portalul de membri, adăugând pictograma pe ecranul principal din Safari sau Chrome."
 ---
 
 # Instalarea ca aplicație (PWA)

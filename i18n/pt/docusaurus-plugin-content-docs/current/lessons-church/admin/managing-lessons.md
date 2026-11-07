@@ -1,5 +1,6 @@
 ---
 title: "Gerenciando Lições"
+description: "Monte a estrutura de uma lição no admin do Lessons.church: locais, seções e ações por função (Say, Do, Note ou Play), texto para levar para casa e recursos."
 ---
 
 # Gerenciando Lições

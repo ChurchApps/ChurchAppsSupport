@@ -1,5 +1,7 @@
 ---
-title: "Chỉnh sửa hồ sơ của bạn"
+title: "Chỉnh sửa hồ sơ trong cổng thành viên B1.church"
+sidebar_label: "Chỉnh sửa hồ sơ của bạn"
+description: "Cập nhật thông tin liên hệ, thành viên gia đình, email và mật khẩu đăng nhập, cùng cài đặt quyền riêng tư trong cổng thành viên B1.church."
 ---
 
 # Chỉnh sửa hồ sơ của bạn

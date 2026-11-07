@@ -1,5 +1,6 @@
 ---
 title: "Gerenciando Dispositivos"
+description: "Emparelhe, nomeie e remova telas ChurchAppsPlayer e FreePlay conectadas à sua conta no B1 Admin, para que os painéis da igreja fiquem atualizados e seguros."
 ---
 
 # Gerenciando Dispositivos

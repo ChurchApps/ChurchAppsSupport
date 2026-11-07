@@ -1,5 +1,7 @@
 ---
-title: "Günün Ayeti"
+title: "B1.church Web Sitesi ve Portalda Günün Ayeti"
+sidebar_label: "Günün Ayeti"
+description: "Her günkü ayet resmine ve geçmiş ayetlere göz atın; B1.church web sitenizden veya portalından herhangi bir ekran boyutunda paylaşın ya da indirin."
 ---
 
 # Günün Ayeti

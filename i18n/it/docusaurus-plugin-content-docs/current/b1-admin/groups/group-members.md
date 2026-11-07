@@ -1,5 +1,6 @@
 ---
 title: "Membri del gruppo"
+description: "Aggiungi, rimuovi e nomina leader tra i membri del gruppo in B1 Admin, poi invia email o SMS, stampa o esporta l'elenco dalla pagina del gruppo."
 ---
 
 # Membri del gruppo

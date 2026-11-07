@@ -1,5 +1,7 @@
 ---
-title: "Pagtingin sa Mga Plan"
+title: "Iyong mga Service Plan sa B1.church Member Portal"
+sidebar_label: "Pagtingin sa Mga Plan"
+description: "Tingnan ang iyong takda sa service plan sa B1.church, tanggapin o tanggihan ang mga hiling, magtakda ng blockout date, at tingnan ang nakaraang paglilingkod."
 ---
 
 # Pagtingin sa Mga Plan

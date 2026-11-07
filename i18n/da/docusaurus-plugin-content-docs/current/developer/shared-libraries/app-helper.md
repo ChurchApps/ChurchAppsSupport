@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "Reference for den delte @churchapps/apphelper-pakke i Packages-workspacet: dens understi-indgangspunkter, hvilke apps der bruger hver eksport, samt lokal udvikling og udgivelse."
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ title: "AppHelper"
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Installer **Node.js** og **Git** -- se [Forudsætninger](../setup/prerequisites)
+- Installer **Node.js** og **Git** -- se [Forudsætninger](../setup/prerequisites.md)
 - Gør dig bekendt med [npm link workflow](./index.md) til lokal udvikling
 
 </div>
@@ -75,6 +76,6 @@ Når du publicerer, skal du sørge for at opdatere versionsnummeret i den releva
 
 ## Relaterede artikler
 
-- **[Helpers](./helpers)** -- Det grundlæggende værktøjspakke, der bruges sammen med AppHelper
-- **[Webapps](../web-apps/)** -- De webapps, der forbruger disse pakker
+- **[Helpers](./helpers.md)** -- Det grundlæggende værktøjspakke, der bruges sammen med AppHelper
+- **[Webapps](../web-apps/index.md)** -- De webapps, der forbruger disse pakker
 - **[Oversigt over delte biblioteker](./index.md)** -- `npm link` workflow og pakke oversigt

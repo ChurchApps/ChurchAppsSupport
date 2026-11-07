@@ -1,5 +1,6 @@
 ---
 title: "Vnos števila prisotnih in trend"
+description: "Vnesite skupno število udeležencev za bogoslužje ali skupino v B1 Admin brez imenskega seznama in spremljajte tedenske vsote v poročilu o trendu."
 ---
 
 # Vnos števila prisotnih in trend

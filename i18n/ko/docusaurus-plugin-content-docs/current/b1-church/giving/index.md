@@ -1,5 +1,7 @@
 ---
-title: "헌금"
+title: "B1.church의 온라인 헌금 및 기부"
+sidebar_label: "헌금"
+description: "B1.church에서 계정 없이 온라인으로 교회에 헌금하거나, 로그인하여 정기 헌금, 결제 수단, 헌금 명세서를 관리하세요."
 ---
 
 # 헌금

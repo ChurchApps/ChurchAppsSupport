@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile(단종됨)"
+description: "B1 Mobile 네이티브 앱은 지원이 종료되어 회원과 관리자는 B1.church PWA를 사용해야 하며, 기존 페이지는 참고용으로 남아 있습니다."
 ---
 
 # B1 Mobile(단종됨)
@@ -40,16 +41,16 @@ B1 Mobile은 푸시 알림을 지원했으므로 교회 또는 그룹의 중요�
 
 ## 자세히 알아보기
 
-- [시작하기](./getting-started/) -- 앱을 설치하고, 계정을 만들고, 교회를 선택하세요.
-- [대시보드](./dashboard/) -- 개인화된 홈 화면을 이해하세요.
-- [Groups](./groups/) -- 교회 그룹과 연결을 유지하세요.
-- [Giving](./giving/) -- 휴대폰에서 헌금하세요.
-- [Events](./events/) -- 예정된 교회 이벤트를 보고 등록하세요.
-- [Check-In](./checkin/) -- 예배 및 이벤트를 위해 체크인하세요.
-- [Serving](./serving/) -- 봉사 계획, 배치 및 자원봉사 기회를 보세요.
-- [Community](./community/) -- 회원 디렉토리를 보고 메시지를 보내세요.
-- [Content](./content/) -- 설교, 성경, 오늘의 말씀 및 레슨([FreePlay](/docs/freeplay/) 참조 -- 레슨 화면은 단종됨).
-- [Profile](./profile/) -- 프로필 및 계정 설정을 관리하세요.
+- [시작하기](./getting-started/index.md) -- 앱을 설치하고, 계정을 만들고, 교회를 선택하세요.
+- [대시보드](./dashboard/index.md) -- 개인화된 홈 화면을 이해하세요.
+- [Groups](./groups/index.md) -- 교회 그룹과 연결을 유지하세요.
+- [Giving](./giving/index.md) -- 휴대폰에서 헌금하세요.
+- [Events](./events/index.md) -- 예정된 교회 이벤트를 보고 등록하세요.
+- [Check-In](./checkin/index.md) -- 예배 및 이벤트를 위해 체크인하세요.
+- [Serving](./serving/index.md) -- 봉사 계획, 배치 및 자원봉사 기회를 보세요.
+- [Community](./community/index.md) -- 회원 디렉토리를 보고 메시지를 보내세요.
+- [Content](./content/index.md) -- 설교, 성경, 오늘의 말씀 및 레슨([FreePlay](/docs/freeplay/) 참조 -- 레슨 화면은 단종됨).
+- [Profile](./profile/index.md) -- 프로필 및 계정 설정을 관리하세요.
 
 :::info
 B1 Mobile은 [B1.church PWA](../b1-church/getting-started/installing-pwa.md)로 대체되었습니다. 새로운 배포는 PWA를 사용해야 합니다 -- 기본 앱은 더 이상 업데이트되지 않습니다.

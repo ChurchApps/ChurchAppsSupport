@@ -1,5 +1,6 @@
 ---
 title: "Zarządzanie programami"
+description: "Tworzenie i edycja programów nauczania w Lessons.church, ustawianie slugów i miniatur, grupowanie studiów w kategorie oraz dołączanie zasobów programu."
 ---
 
 # Zarządzanie programami

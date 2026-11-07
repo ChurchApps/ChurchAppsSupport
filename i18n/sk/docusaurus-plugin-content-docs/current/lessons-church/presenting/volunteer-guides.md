@@ -1,5 +1,6 @@
 ---
 title: "Dobrovoľnícke sprievodcovia"
+description: "Nastavenie sprievodcov pre konkrétne roly v Lessons.church, aby každý dobrovoľník videl len svoje kroky, a ich vytlačenie alebo zdieľanie pred hodinou."
 ---
 
 # Dobrovoľnícke sprievodcovia

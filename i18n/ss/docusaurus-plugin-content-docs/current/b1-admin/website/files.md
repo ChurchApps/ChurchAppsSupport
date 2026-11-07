@@ -1,5 +1,6 @@
 ---
 title: "Emafayela"
+description: "Layisha, bhala, futsi uphatse tithombe netidokhumenti tewebhusayithi yesonto lakho ku-B1 Admin, kufaka phakatsi kuhlanganiswa kwesitoreji sekuvumela sakho lesingaphandle."
 ---
 
 # Emafayela
@@ -13,7 +14,7 @@ Likhasi le-Files sisikhungo sesitolo salo lonkhe umdidiya nemibhalo lesetjentisw
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Cedza [Initial Setup](initial-setup) yeliwebhusayithi lakho
+- Cedza [Initial Setup](./initial-setup.md) yeliwebhusayithi lakho
 - Nciphisa titfombe ngaphambi kwekutsi ulayishe kute emakhasi alayishe ngekushesha
 - Lungisa emafayela akho ngetifometi letijwayelekile tewebhu (PNG, JPG, PDF, njll.)
 
@@ -48,7 +49,7 @@ Kute utfole imiphumela lemihle kakhulu, nciphisa titfombe ngaphambi kwekulayisha
 3. Emafayela lowalayisha lapha akhona kute asetjentiswe kuwo onkhe emakhasi eliwebhusayithi lakho nemibhalo yekucuketfwa.
 
 :::info
-Nawakha emakhasi ku- [Managing Pages](managing-pages), ungakhomba noma ngeliphi ifayela lelilayishwe lapha nge-URL yalo. Loku kugcina umdidiya wakho wonkhe uhlelekile endzaweni yinye lesisekelo.
+Nawakha emakhasi ku- [Managing Pages](./managing-pages.md), ungakhomba noma ngeliphi ifayela lelilayishwe lapha nge-URL yalo. Loku kugcina umdidiya wakho wonkhe uhlelekile endzaweni yinye lesisekelo.
 :::
 
 ## Kususa Emafayela
@@ -63,5 +64,5 @@ Emafayela lasusiwe akakwati kubuyiselwa. Cinisekisa kabili kutsi ifayela alisase
 
 ## Tinyatselo Letilandzelako
 
-- [Managing Pages](managing-pages) -- Ngeta emafayela lowalayishile emakhasini eliwebhusayithi
-- [Appearance](appearance) -- Lungisa sihloko lesibonakalako selisayithi lakho
+- [Managing Pages](./managing-pages.md) -- Ngeta emafayela lowalayishile emakhasini eliwebhusayithi
+- [Appearance](./appearance.md) -- Lungisa sihloko lesibonakalako selisayithi lakho

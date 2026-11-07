@@ -1,5 +1,6 @@
 ---
 title: "Registro de asistencia"
+description: "Registra la asistencia de cada reunión de grupo en B1 Admin: crea una sesión, marca asistentes, guarda notas e imprime listas o exporta a una hoja de cálculo."
 ---
 
 # Registro de asistencia

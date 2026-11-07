@@ -1,5 +1,6 @@
 ---
 title: "Itsura"
+description: "Itakda ang kulay, font, spacing, logo, at navigation ng website ng simbahan sa B1 Admin, kasama ang widget, GA4 analytics, redirect, at custom CSS."
 ---
 
 # Itsura
@@ -13,7 +14,7 @@ Hinahayaan ka ng pahinang Appearance na i-customize ang kabuuang itsura at datin
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Kumpletuhin ang [Initial Setup](initial-setup) para sa iyong website
+- Kumpletuhin ang [Initial Setup](./initial-setup.md) para sa iyong website
 - Ihanda ang logo ng iyong simbahan sa PNG format na may transparent na background at 4:1 na aspect ratio
 - Alamin ang mga brand color ng iyong simbahan (hex values) kung mayroon kang umiiral na style guide
 
@@ -98,7 +99,7 @@ Makapangyarihan ang custom CSS ngunit maaari nitong sirain ang layout ng iyong s
 :::
 
 :::info
-Nagpapatupad ang iyong site ng Content Security Policy na humaharang sa mga inline script mula sa anumang ibang pinagmulan. Ang field na **Custom HTML** dito, at ang [HTML element](page-editor#using-the-html-element) sa mga indibidwal na pahina, ang mga pinagkakatiwalaang eksepsiyon -- ang code na sini-save mo roon ay tatakbo nang eksakto kung paano ito, kaya i-paste lamang ang mga script mula sa mga pinagkakatiwalaang pinagmulan (mga analytics tag, chat widget, at katulad na embed).
+Nagpapatupad ang iyong site ng Content Security Policy na humaharang sa mga inline script mula sa anumang ibang pinagmulan. Ang field na **Custom HTML** dito, at ang [HTML element](./page-editor.md#using-the-html-element) sa mga indibidwal na pahina, ang mga pinagkakatiwalaang eksepsiyon -- ang code na sini-save mo roon ay tatakbo nang eksakto kung paano ito, kaya i-paste lamang ang mga script mula sa mga pinagkakatiwalaang pinagmulan (mga analytics tag, chat widget, at katulad na embed).
 :::
 
 ## Mga Style Theme
@@ -107,5 +108,5 @@ Kung nais mo ng mabilis na panimulang punto, ang **Suggested Palettes** sa seksy
 
 ## Mga Susunod na Hakbang
 
-- [Managing Pages](managing-pages) -- Gumawa at mag-ayos ng mga pahina ng iyong website
-- [Files](files) -- Mag-upload ng media asset para sa iyong site
+- [Managing Pages](./managing-pages.md) -- Gumawa at mag-ayos ng mga pahina ng iyong website
+- [Files](./files.md) -- Mag-upload ng media asset para sa iyong site

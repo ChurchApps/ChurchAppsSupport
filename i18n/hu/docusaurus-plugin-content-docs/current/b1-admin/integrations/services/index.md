@@ -1,5 +1,6 @@
 ---
 title: "Csatlakoztatott szolgáltatások"
+description: "B1 Admin csatlakoztatása Mailchimphez, Donorboxhoz, Subsplashhez, VOMO-hoz és más eszközökhöz Zapier vagy Make receptekkel, eszközönkénti útmutatókkal."
 ---
 
 # Csatlakoztatott szolgáltatások
@@ -14,14 +15,14 @@ A Zapier- vagy Make-recept általában a leggyorsabb módja annak, hogy a B1-et 
 
 | Szolgáltatás | Kategória | Híd | Mit köthetsz össze |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | Email | Zapier vagy Make | Új B1-es személyek és adakozók szinkronizálása egy Mailchimp-közönséggel |
-| [Donorbox](./donorbox) | Adományozás | Zapier | Donorbox-adományok és -adakozók visszaküldése a B1-be |
-| [Subsplash](./subsplash) | Alkalmazás / Adományozás | Zapier | Subsplash-adományok és személyek lehívása a B1-be |
-| [VOMO](./vomo) | Önkéntesség | Zapier | Önkéntes-jelentkezések szinkronizálása a B1-csoportok és a VOMO-projektek között |
-| [Clearstream](./clearstream) | SMS | Zapier | Clearstream-szöveges üzenet indítása B1-eseményekből; a válaszok B1-rekordként való rögzítése |
-| [Text In Church](./text-in-church) | SMS / munkafolyamatok | Zapier | Text In Church-munkafolyamatok indítása a B1-ből; Connect Card adatok fogadása |
-| [Mobile Message](./mobile-message) | SMS (AU) | Webhooks by Zapier vagy Make | SMS küldése bármely B1-eseményből |
-| [Checkr](./checkr) | Háttérellenőrzés | Make | Háttérellenőrzés indítása, amikor valaki csatlakozik egy szolgálócsapathoz |
+| [Mailchimp](./mailchimp.md) | Email | Zapier vagy Make | Új B1-es személyek és adakozók szinkronizálása egy Mailchimp-közönséggel |
+| [Donorbox](./donorbox.md) | Adományozás | Zapier | Donorbox-adományok és -adakozók visszaküldése a B1-be |
+| [Subsplash](./subsplash.md) | Alkalmazás / Adományozás | Zapier | Subsplash-adományok és személyek lehívása a B1-be |
+| [VOMO](./vomo.md) | Önkéntesség | Zapier | Önkéntes-jelentkezések szinkronizálása a B1-csoportok és a VOMO-projektek között |
+| [Clearstream](./clearstream.md) | SMS | Zapier | Clearstream-szöveges üzenet indítása B1-eseményekből; a válaszok B1-rekordként való rögzítése |
+| [Text In Church](./text-in-church.md) | SMS / munkafolyamatok | Zapier | Text In Church-munkafolyamatok indítása a B1-ből; Connect Card adatok fogadása |
+| [Mobile Message](./mobile-message.md) | SMS (AU) | Webhooks by Zapier vagy Make | SMS küldése bármely B1-eseményből |
+| [Checkr](./checkr.md) | Háttérellenőrzés | Make | Háttérellenőrzés indítása, amikor valaki csatlakozik egy szolgálócsapathoz |
 
 ## Mindegyiknek közös vonása
 
@@ -45,8 +46,8 @@ Szándékosan kihagytuk a Planning Center Services-specifikus eszközöket (zene
 
 ## Lásd még
 
-- [Zapier (áttekintés)](../zapier): minden Zapier-recept B1 oldala azonos, ezt a dokumentum egyszer tárgyalja.
-- [Make (áttekintés)](../make): ugyanez a Make-forgatókönyvekre.
-- [Slack és Discord](../slack-discord): csatornaértesítések bármilyen híd nélkül.
-- [Google Sheets](../google-sheets): igény szerinti exportok.
+- [Zapier (áttekintés)](../zapier.md): minden Zapier-recept B1 oldala azonos, ezt a dokumentum egyszer tárgyalja.
+- [Make (áttekintés)](../make.md): ugyanez a Make-forgatókönyvekre.
+- [Slack és Discord](../slack-discord.md): csatornaértesítések bármilyen híd nélkül.
+- [Google Sheets](../google-sheets.md): igény szerinti exportok.
 - [Webhookok (fejlesztői referencia)](/docs/developer/api/webhooks): az eseménykatalógus, amelyre minden recept támaszkodik.

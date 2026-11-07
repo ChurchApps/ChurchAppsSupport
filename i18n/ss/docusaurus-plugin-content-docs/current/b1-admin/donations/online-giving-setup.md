@@ -1,5 +1,6 @@
 ---
 title: "Kuhlela Kunikela Kwenkhulumo-mgca"
+description: "Xhuma i-Stripe, PayPal, Kingdom Funding noma Paystack ku-B1 Admin, kuze bantfu banikele ewebhusayitini ye-B1.church netiminikelo ingenele emarekhodini."
 ---
 
 # Kuhlela Kunikela Kwenkhulumo-mgca

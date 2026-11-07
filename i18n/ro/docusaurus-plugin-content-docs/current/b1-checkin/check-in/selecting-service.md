@@ -1,5 +1,6 @@
 ---
 title: "Selectarea unui serviciu"
+description: "Alege slujba la care participi din ecranul de servicii B1 Checkin, care stabilește orele și grupele afișate pentru restul fluxului de check-in."
 ---
 
 # Selectarea unui serviciu
@@ -13,7 +14,7 @@ Primul pas al fiecărui check-in este alegerea serviciului la care participați.
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Conectați-vă](../getting-started/logging-in) la aplicația B1 Church Checkin și selectați biserica dumneavoastră
+- [Conectați-vă](../getting-started/logging-in.md) la aplicația B1 Church Checkin și selectați biserica dumneavoastră
 - Asigurați-vă că administratorul bisericii a [configurat serviciile și orele serviciilor](../../b1-admin/attendance/setup.md) în B1 Admin
 
 </div>
@@ -24,11 +25,11 @@ Primul pas al fiecărui check-in este alegerea serviciului la care participați.
 2. Veți vedea o listă cu toate serviciile configurate pentru biserica dumneavoastră. Fiecare serviciu apare ca un card care afișează numele serviciului (de exemplu, „Duminică dimineața” sau „Miercuri seara”).
 3. Atingeți serviciul la care participați.
 
-Aplicația încarcă orele și grupurile asociate acelui serviciu, apoi vă duce la [ecranul de căutare a membrilor](./looking-up-members).
+Aplicația încarcă orele și grupurile asociate acelui serviciu, apoi vă duce la [ecranul de căutare a membrilor](./looking-up-members.md).
 
 ## Când check-in-ul nu este deschis
 
-Dacă administratorul dumneavoastră a atribuit unei ore de serviciu un [program de check-in](../../b1-admin/attendance/setup#setting-a-check-in-schedule), aplicația permite familiilor să aleagă acea oră de serviciu doar cât timp fereastra de check-in este deschisă. Orele de serviciu a căror fereastră este închisă în acest moment apar în continuare pe [ecranul gospodăriei](./household-review), dar sunt marcate cu **Închis** (de exemplu, **Închis · se deschide duminică la 9:30**) în loc să afișeze un buton pentru grupuri.
+Dacă administratorul dumneavoastră a atribuit unei ore de serviciu un [program de check-in](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule), aplicația permite familiilor să aleagă acea oră de serviciu doar cât timp fereastra de check-in este deschisă. Orele de serviciu a căror fereastră este închisă în acest moment apar în continuare pe [ecranul gospodăriei](./household-review.md), dar sunt marcate cu **Închis** (de exemplu, **Închis · se deschide duminică la 9:30**) în loc să afișeze un buton pentru grupuri.
 
 Dacă toate orele de serviciu pentru serviciul pe care l-ați atins sunt închise, aplicația vă spune când se deschide check-in-ul, de exemplu **„Check-in-ul pentru acest serviciu se deschide duminică la 9:30.”** (Dacă nu se poate afișa un moment de deschidere, apare mesajul **„Check-in-ul nu este deschis pentru acest serviciu în acest moment.”**) Atingeți **Înapoi** pentru a reveni la lista serviciilor și a alege alt serviciu sau așteptați până se deschide fereastra și încercați din nou.
 
@@ -56,4 +57,4 @@ Dacă biserica dumneavoastră are configurat un singur serviciu, tot trebuie să
 
 ## Pasul următor
 
-După ce selectați un serviciu, veți [căuta familia dumneavoastră](./looking-up-members) după numărul de telefon sau după nume.
+După ce selectați un serviciu, veți [căuta familia dumneavoastră](./looking-up-members.md) după numărul de telefon sau după nume.

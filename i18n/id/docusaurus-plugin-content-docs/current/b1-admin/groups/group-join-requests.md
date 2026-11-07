@@ -1,5 +1,6 @@
 ---
 title: "Permintaan Bergabung ke Grup"
+description: "Tinjau, setujui, atau tolak permintaan bergabung ke grup di B1 Admin, temukan permintaan tertunda sebagai pemimpin atau admin, dan beri alasan saat menolak."
 ---
 
 # Permintaan Bergabung ke Grup

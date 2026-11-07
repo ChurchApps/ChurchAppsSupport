@@ -1,5 +1,6 @@
 ---
 title: "Digital skilting"
+description: "Send leksjonsinnhold til en TV i lobby eller gang i B1 Admin med en URL for digital skilting som alltid viser gjeldende plan, eller bruk FreePlay-TV-er."
 ---
 
 # Digital skilting
@@ -14,7 +15,7 @@ Send leksjonsinnholdet ditt til en TV i lobbyen eller i gangen ved hjelp av en f
 <h4>Før du begynner</h4>
 
 - Sett opp en [planstype](./plans.md) med [Lessons.church](../../b1-church/content/lessons.md) eller annet leksjonsinnhold som er planlagt
-- Ha en konto hos [SignPresenter](https://www.signpresenter.com) og en enhet satt opp til å vise den, eller en TV som kjører [FreePlay](../../freeplay/)
+- Ha en konto hos [SignPresenter](https://www.signpresenter.com) og en enhet satt opp til å vise den, eller en TV som kjører [FreePlay](../../freeplay/index.md)
 
 </div>
 
@@ -36,14 +37,14 @@ For trinnvise instruksjoner for oppsett inne i SignPresenter, se [SignPresenters
 
 ## Bruke FreePlay-TV-er i stedet
 
-Hvis skjermene dine kjører [FreePlay](../../freeplay/), trenger du ikke feed-URL-en. Dialogboksen **Digital skilting-feed** lenker til **admin.freeplay.church/calendar**, der du kan planlegge denne planstypen på FreePlay-TV-ene dine:
+Hvis skjermene dine kjører [FreePlay](../../freeplay/index.md), trenger du ikke feed-URL-en. Dialogboksen **Digital skilting-feed** lenker til **admin.freeplay.church/calendar**, der du kan planlegge denne planstypen på FreePlay-TV-ene dine:
 
 1. Klikk på lenken **admin.freeplay.church/calendar** i dialogboksen. FreePlay Admin bruker samme innlogging som B1 Admin.
 2. Velg skjermgruppen for TV-ene dine, og klikk på **Legg til plan**.
 3. Under **Spill av** velger du planstypen din fra **Tjenesteplaner**. Den er merket **(gjeldende plan)**.
 4. Angi dager og klokkeslett, og klikk deretter på **Lagre**.
 
-TV-ene spiller av den planen som er gjeldende for planstypen hver uke, til tidspunktene du har angitt. Dette fungerer også med Go Curriculum-leksjoner, inkludert planer du har tilpasset. FreePlay logger på med Go Curriculum-kontoen som er koblet til tjenesteområdet under **Innholdsleverandører** (se [Planlegge leksjoner](./scheduling-lessons.md)), eller med kirkens Go Curriculum-tilkobling hvis tjenesteområdet ikke har en. Se [Planlegge kalenderen](../../freeplay/scheduled-mode/scheduling-the-calendar) for alle alternativene, og [Koble til en skjerm](../../freeplay/scheduled-mode/pairing-a-screen) for å legge til en TV.
+TV-ene spiller av den planen som er gjeldende for planstypen hver uke, til tidspunktene du har angitt. Dette fungerer også med Go Curriculum-leksjoner, inkludert planer du har tilpasset. FreePlay logger på med Go Curriculum-kontoen som er koblet til tjenesteområdet under **Innholdsleverandører** (se [Planlegge leksjoner](./scheduling-lessons.md)), eller med kirkens Go Curriculum-tilkobling hvis tjenesteområdet ikke har en. Se [Planlegge kalenderen](../../freeplay/scheduled-mode/scheduling-the-calendar.md) for alle alternativene, og [Koble til en skjerm](../../freeplay/scheduled-mode/pairing-a-screen.md) for å legge til en TV.
 
 :::note
 Feed-URL-en inkluderer ikke Go Curriculum-medier, fordi det innholdet krever Go Curriculum-innloggingen til kirken din. For å vise en Go Curriculum-leksjon på en TV i lobbyen eller klasserommet, bruk FreePlay.
@@ -53,4 +54,4 @@ Feed-URL-en inkluderer ikke Go Curriculum-medier, fordi det innholdet krever Go 
 
 - Administrer planene som mater denne digitale skiltingen, på siden [Planer](./plans.md)
 - Planlegg innhold med [Lessons.church](./scheduling-lessons.md)
-- Sett FreePlay-TV-er på en kalender med [Planlagt modus](../../freeplay/scheduled-mode/)
+- Sett FreePlay-TV-er på en kalender med [Planlagt modus](../../freeplay/scheduled-mode/index.md)

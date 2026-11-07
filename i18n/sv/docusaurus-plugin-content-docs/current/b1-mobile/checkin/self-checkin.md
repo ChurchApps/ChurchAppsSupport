@@ -1,5 +1,7 @@
 ---
-title: "Självincheckning"
+title: "Egen incheckning från B1 Mobile-appen"
+sidebar_label: "Självincheckning"
+description: "Checka in dig själv och ditt hushåll till en gudstjänst från B1 Mobile-appen, inklusive att välja gudstjänsttid och tilldela varje person en grupp."
 ---
 
 # Självincheckning
@@ -13,7 +15,7 @@ Att checka in via B1 Mobile är en enkel process i flera steg. På bara några t
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Installera B1 Mobile](../getting-started/installing) och [logga in](../getting-started/logging-in) på ditt konto
+- [Installera B1 Mobile](../getting-started/installing.md) och [logga in](../getting-started/logging-in.md) på ditt konto
 - Kontrollera att dina [hushållsmedlemmar](../profile/household.md) är upplagda i din profil
 
 </div>

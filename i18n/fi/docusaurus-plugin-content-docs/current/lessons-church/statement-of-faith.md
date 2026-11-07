@@ -1,5 +1,6 @@
 ---
 title: Uskontunnustus
+description: "Mitä ChurchApps uskoo Jumalasta, Jeesuksesta, Pyhästä Hengestä, Raamatusta, pelastuksesta ja seurakunnasta: Lessons.church-opetussuunnitelman arvioinnin perusta."
 ---
 
 # Uskontunnustus

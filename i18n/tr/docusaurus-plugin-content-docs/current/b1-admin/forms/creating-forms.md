@@ -1,5 +1,6 @@
 ---
 title: "Form Oluşturma"
+description: "B1 Admin'de etkinlik kayıtları, anketler ve ziyaretçi kartları için özel formlar oluşturun; bunları bağlantı, QR kod ya da basılı olarak paylaşın."
 ---
 
 # Form Oluşturma

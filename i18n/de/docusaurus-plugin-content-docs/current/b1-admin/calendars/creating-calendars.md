@@ -1,5 +1,6 @@
 ---
 title: "Kalender erstellen"
+description: "Erstellen Sie in B1 Admin einen Kalender, verbinden Sie Gruppen oder importieren Sie .ics-Dateien und verwalten Sie Termine, Anmeldungen und Notizen an einem Ort."
 ---
 
 # Kalender erstellen
@@ -61,7 +62,7 @@ Das Verbinden von Gruppen mit Ihrem Kalender ist eine wirkungsvolle Möglichkeit
 :::
 
 :::info
-Wenn Sie einen einzigen Kalender erstellen möchten, der Veranstaltungen aus vielen Gruppen Ihrer Kirche bündelt, lesen Sie [Kuratierter Kalender](curated-calendar) für einen einfacheren Weg.
+Wenn Sie einen einzigen Kalender erstellen möchten, der Veranstaltungen aus vielen Gruppen Ihrer Kirche bündelt, lesen Sie [Kuratierter Kalender](./curated-calendar.md) für einen einfacheren Weg.
 :::
 
 ## Veranstaltungen hinzufügen und bearbeiten {#adding-and-editing-events}
@@ -75,7 +76,7 @@ Klicken Sie auf der Detailseite des Kalenders auf **Neue Veranstaltung**, um ein
 - **Start** und **Ende**, **Wiederholung** und **Sichtbarkeit** (**Öffentlich** oder **Privat**).
 - **Schlagwörter** – Durch Kommas getrennte Bezeichnungen, wie `Jugend, Schüler`. Ein Kalender-Element auf Ihrer Website kann so eingestellt werden, dass nur Veranstaltungen mit einem bestimmten Schlagwort angezeigt werden. Dies ist dasselbe Feld **Schlagwörter**, das in den Anmeldeeinstellungen der Veranstaltung erscheint.
 - **Wer Notizen sehen kann** und **Wer Notizen verfassen kann** – Wer die Notizen der Veranstaltung lesen und ergänzen darf (siehe [Notizen zu Veranstaltungen](#event-notes)). Wählen Sie **Nur Mitarbeitende** (die Voreinstellung), **Gruppenleitende** (Leitende der Gruppe der Veranstaltung) oder **Gruppenmitglieder** (alle Personen in der Gruppe der Veranstaltung, einschließlich der Leitenden).
-- **Räume** und **Ressourcen** – Reservieren Sie Raum und Ausstattung für die Veranstaltung. Siehe [Räume, Ressourcen & Planung](rooms-resources).
+- **Räume** und **Ressourcen** – Reservieren Sie Raum und Ausstattung für die Veranstaltung. Siehe [Räume, Ressourcen & Planung](./rooms-resources.md).
 
 Klicken Sie auf **Speichern**. Wiederholt sich die Veranstaltung, bittet B1 um Bestätigung, da beim Speichern alle Termine der Reihe aktualisiert werden.
 
@@ -101,12 +102,12 @@ Sie können für jede Kalenderveranstaltung eine Anmeldung aktivieren, damit sic
    - **Anmeldung schließt** – Datum und Uhrzeit, zu denen die Anmeldung endet.
    - **Schlagwörter** – Durch Kommas getrennte Bezeichnungen (z. B. „Jugend, Freizeit, Kinderbibelwoche“), um anmeldbare Veranstaltungen zu kategorisieren.
    - **Fragen zur Anmeldung** – Hängen Sie optional ein [Formular](../forms/creating-forms.md) an, damit Teilnehmende bei der Anmeldung zusätzliche Fragen beantworten (Ernährungseinschränkungen, T-Shirt-Größe, Notfallkontakt usw.). Wählen Sie **Keine**, um Fragen zu überspringen.
-   - **Warteliste aktivieren** – Ist die Veranstaltung voll, können zusätzliche Interessierte auf eine Warteliste statt abgewiesen zu werden. Siehe [Kostenpflichtige Anmeldungen](paid-registrations#waitlist).
+   - **Warteliste aktivieren** – Ist die Veranstaltung voll, können zusätzliche Interessierte auf eine Warteliste statt abgewiesen zu werden. Siehe [Kostenpflichtige Anmeldungen](./paid-registrations.md#waitlist).
 4. Speichern Sie die Veranstaltung.
 
-Bei kostenpflichtigen Veranstaltungen können Sie auf derselben Einstellungsseite preisierte **Teilnehmertypen**, optionale **Auswahlmöglichkeiten** (Zusatzoptionen) und **Rabattcodes** festlegen. Die Zahlung wird über den bestehenden Spendenanbieter Ihrer Kirche abgewickelt. Die vollständige Anleitung finden Sie unter [Kostenpflichtige Anmeldungen](paid-registrations).
+Bei kostenpflichtigen Veranstaltungen können Sie auf derselben Einstellungsseite preisierte **Teilnehmertypen**, optionale **Auswahlmöglichkeiten** (Zusatzoptionen) und **Rabattcodes** festlegen. Die Zahlung wird über den bestehenden Spendenanbieter Ihrer Kirche abgewickelt. Die vollständige Anleitung finden Sie unter [Kostenpflichtige Anmeldungen](./paid-registrations.md).
 
-Sobald die Anmeldung aktiviert ist, sehen Mitglieder eine Schaltfläche **Für diese Veranstaltung anmelden**, wenn sie die Veranstaltung auf der [B1-Website](../../b1-church/events/registering) oder in der [B1-Mobile-App](../../b1-mobile/events/registering) ansehen. Haben Sie ein Formular angehängt, sehen Angemeldete während der Anmeldung einen Schritt **Fragen**, und ihre Antworten werden mit der Anmeldung gespeichert.
+Sobald die Anmeldung aktiviert ist, sehen Mitglieder eine Schaltfläche **Für diese Veranstaltung anmelden**, wenn sie die Veranstaltung auf der [B1-Website](../../b1-church/events/registering.md) oder in der [B1-Mobile-App](../../b1-mobile/events/registering.md) ansehen. Haben Sie ein Formular angehängt, sehen Angemeldete während der Anmeldung einen Schritt **Fragen**, und ihre Antworten werden mit der Anmeldung gespeichert.
 
 :::info
 Fragen zur Anmeldung funktionieren nur mit Formularen, die **nicht** als eingeschränkt markiert sind. Ein eingeschränktes Formular wird bei der Anmeldung automatisch übersprungen statt angezeigt. Verwenden Sie daher ein nicht eingeschränktes Formular, wenn Sie Fragen an eine Veranstaltung anhängen.
@@ -126,7 +127,7 @@ So sehen und verwalten Sie die Anmeldungen zu Ihren Veranstaltungen:
    - Anmeldungen von der Warteliste **nachrücken lassen**, sobald ein Platz frei wird
    - **CSV exportieren** – Alle Anmeldungen herunterladen, einschließlich Teilnehmertypen, Auswahlmöglichkeiten, Zahlbeträgen und Antworten auf Fragen
 
-Hat die Veranstaltung angehängte Fragen zur Anmeldung, zeigt die Detailseite außerdem einen Filter **Nur unbeantwortete Fragen**, um Angemeldete schnell zu finden, die ihre Antworten noch nicht abgegeben haben, sowie eine Schaltfläche **Antworten ansehen** bei jeder beantworteten Anmeldung, um ihre Antworten einzusehen. Bei kostenpflichtigen Veranstaltungen kommen eine Spalte **Typ**, eine Spalte **Bezahlt / Gesamt**, Zählungen pro Typ und ein Dialog mit Zahlungsdetails hinzu – siehe [Kostenpflichtige Anmeldungen](paid-registrations#the-registration-roster).
+Hat die Veranstaltung angehängte Fragen zur Anmeldung, zeigt die Detailseite außerdem einen Filter **Nur unbeantwortete Fragen**, um Angemeldete schnell zu finden, die ihre Antworten noch nicht abgegeben haben, sowie eine Schaltfläche **Antworten ansehen** bei jeder beantworteten Anmeldung, um ihre Antworten einzusehen. Bei kostenpflichtigen Veranstaltungen kommen eine Spalte **Typ**, eine Spalte **Bezahlt / Gesamt**, Zählungen pro Typ und ein Dialog mit Zahlungsdetails hinzu – siehe [Kostenpflichtige Anmeldungen](./paid-registrations.md#the-registration-roster).
 
 :::tip
 Nutzen Sie den Fortschrittsbalken der Kapazität, um zu verfolgen, wie schnell sich Veranstaltungen füllen. Der Balken wird rot, sobald eine Veranstaltung die Kapazität erreicht oder überschreitet.
@@ -134,7 +135,7 @@ Nutzen Sie den Fortschrittsbalken der Kapazität, um zu verfolgen, wie schnell s
 
 ## Nächste Schritte
 
-- [Kuratierter Kalender](curated-calendar) – Einen Kalender erstellen, der Veranstaltungen aus mehreren Gruppen bündelt
-- [Kostenpflichtige Anmeldungen](paid-registrations) – Teilnehmertypen, Zusatzoptionen, Rabattcodes, Zahlungen und Wartelisten
-- [Anleitung zur Veranstaltungsanmeldung](../guides/event-registration) – Schritt-für-Schritt-Anleitung zur Einrichtung der Veranstaltungsanmeldung
-- [Übersicht Kalender](./) – Zurück zur Übersicht der Kalender
+- [Kuratierter Kalender](./curated-calendar.md) – Einen Kalender erstellen, der Veranstaltungen aus mehreren Gruppen bündelt
+- [Kostenpflichtige Anmeldungen](./paid-registrations.md) – Teilnehmertypen, Zusatzoptionen, Rabattcodes, Zahlungen und Wartelisten
+- [Anleitung zur Veranstaltungsanmeldung](../guides/event-registration.md) – Schritt-für-Schritt-Anleitung zur Einrichtung der Veranstaltungsanmeldung
+- [Übersicht Kalender](./index.md) – Zurück zur Übersicht der Kalender

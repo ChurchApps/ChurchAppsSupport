@@ -1,5 +1,6 @@
 ---
 title: "Navigere i B1App"
+description: "Finn frem i B1.church-medlemsportalen på mobil eller datamaskin: Home-oversikten, fanelinjen nederst, More-siden og Me-siden."
 ---
 
 # Navigere i B1App
@@ -92,7 +93,7 @@ Detaljsidene, for eksempel en gruppe, en plan, Me-siden din og skjermene for Pla
 
 ## Me-siden
 
-**Me** (`/mobile/me`) er din personlige oversikt. Den viser navnet og bildet ditt med knappene **Rediger profil** og **Innstillinger** ([varslingsinnstillinger](./notification-preferences.md)). Deretter vises hva som kommer opp for deg, som tjenesteoppdrag, arrangementspåmeldinger og gruppearrangementer, etterfulgt av husstanden din, gruppene dine, [gavene dine](../giving/) i år, skjemaene du har sendt inn, oppmøtehistorikken din, [påmeldingene dine](../events/my-registrations.md) og de nyeste varslene og meldingene dine. Se [Me-siden](./me-page) for detaljer.
+**Me** (`/mobile/me`) er din personlige oversikt. Den viser navnet og bildet ditt med knappene **Rediger profil** og **Innstillinger** ([varslingsinnstillinger](./notification-preferences.md)). Deretter vises hva som kommer opp for deg, som tjenesteoppdrag, arrangementspåmeldinger og gruppearrangementer, etterfulgt av husstanden din, gruppene dine, [gavene dine](../giving/index.md) i år, skjemaene du har sendt inn, oppmøtehistorikken din, [påmeldingene dine](../events/my-registrations.md) og de nyeste varslene og meldingene dine. Se [Me-siden](./me-page.md) for detaljer.
 
 Hvis du er logget ut, viser Me-siden en knapp **Logg inn** i stedet.
 

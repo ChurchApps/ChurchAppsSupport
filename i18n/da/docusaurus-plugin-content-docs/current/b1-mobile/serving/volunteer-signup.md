@@ -1,5 +1,7 @@
 ---
-title: "Frivilligtilmelding"
+title: "Frivillig tilmelding i B1 Mobile-appen"
+sidebar_label: "Frivilligtilmelding"
+description: "Find ledige frivillige positioner til kommende gudstjenester, tilmeld dig, eller fjern en tilmelding i B1 Mobile-appen. Dækker frister og pladsgrænser."
 ---
 
 # Frivilligtilmelding
@@ -13,7 +15,7 @@ Gennemse tilgængelige frivillige positioner og tilmeld dig kommende gudstjenest
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [log ind](../getting-started/logging-in) på din konto
+- [Installer B1 Mobile](../getting-started/installing.md) og [log ind](../getting-started/logging-in.md) på din konto
 - Din kirkes administrator skal have aktiveret selvtilmelding på mindst en position
 
 </div>
@@ -60,5 +62,5 @@ Aktivér [push-meddelelser](../community/notifications.md) for at blive holdt in
 
 ## Relaterede artikler
 
-- [Se planer](./viewing-plans) -- Se dine tildelte planer og serviceordrer
+- [Se planer](./viewing-plans.md) -- Se dine tildelte planer og serviceordrer
 - [Meddelelser](../community/notifications.md) -- Hold dig opdateret om tjeneste tildelte opgaver

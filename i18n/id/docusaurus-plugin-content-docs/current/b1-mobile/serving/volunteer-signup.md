@@ -1,5 +1,7 @@
 ---
-title: "Pendaftaran Relawan"
+title: "Pendaftaran Sukarelawan di Aplikasi B1 Mobile"
+sidebar_label: "Pendaftaran Relawan"
+description: "Temukan posisi sukarelawan terbuka untuk ibadah mendatang, daftar, atau hapus pendaftaran di aplikasi B1 Mobile. Mencakup batas waktu dan cara kuota berlaku."
 ---
 
 # Pendaftaran Relawan
@@ -13,7 +15,7 @@ Telusuri posisi relawan yang tersedia dan daftar untuk layanan yang akan datang 
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- [Pasang B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Pasang B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 - Administrator gereja Anda harus telah mengaktifkan pendaftaran mandiri pada setidaknya satu posisi
 
 </div>
@@ -60,5 +62,5 @@ Aktifkan [notifikasi push](../community/notifications.md) untuk tetap mengetahui
 
 ## Artikel Terkait
 
-- [Melihat Rencana](./viewing-plans) -- Lihat rencana dan urutan layanan yang ditugaskan kepada Anda
+- [Melihat Rencana](./viewing-plans.md) -- Lihat rencana dan urutan layanan yang ditugaskan kepada Anda
 - [Notifikasi](../community/notifications.md) -- Tetap mendapat informasi tentang tugas pelayanan Anda

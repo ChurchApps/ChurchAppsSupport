@@ -1,5 +1,6 @@
 ---
 title: "Mga Shared Library"
+description: "Dokumentasyon ng @churchapps npm packages na ginagamit ng B1 Admin, B1.church, at APIs, at kung paano i-set up ang Packages workspace at mag-release."
 ---
 
 # Mga Shared Library
@@ -14,9 +15,9 @@ Ang shared code ng ChurchApps ay nilalathala sa npm sa ilalim ng scope na `@chur
 
 | Package | Paglalarawan | Ginagamit Ng | 
 |---------|-------------|--------------|
-| [`@churchapps/helpers`](./helpers) | Pundasyong layer: mga helper function na walang framework at ang mga shared TypeScript interface na bumubuo ng cross-app data contract | Lahat ng project |
-| [`@churchapps/apihelper`](./api-helper) | Mga utility ng server-side Express: auth, base controller, database access, mga integrasyon ng AWS at email | Lahat ng API |
-| [`@churchapps/apphelper`](./app-helper) | Mga shared React component at feature module (login, donasyon, form, markdown, website) | Lahat ng web app |
+| [`@churchapps/helpers`](./helpers.md) | Pundasyong layer: mga helper function na walang framework at ang mga shared TypeScript interface na bumubuo ng cross-app data contract | Lahat ng project |
+| [`@churchapps/apihelper`](./api-helper.md) | Mga utility ng server-side Express: auth, base controller, database access, mga integrasyon ng AWS at email | Lahat ng API |
+| [`@churchapps/apphelper`](./app-helper.md) | Mga shared React component at feature module (login, donasyon, form, markdown, website) | Lahat ng web app |
 | `@churchapps/content-providers` | Abstraksyon sa mga third-party content provider (Lessons.church, Planning Center, Dropbox, at iba pa) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Toolkit para sa paggawa ng integrasyon ng B1.church: webhook verification, typed REST client, OAuth helper | Mga external na developer ng integrasyon |
 | `@churchapps/texting` | Abstraksyon ng SMS provider (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

@@ -1,5 +1,6 @@
 ---
 title: "Slack și Discord"
+description: "Publicați în B1 Admin evenimente precum persoane noi, donații și formulare trimise pe un canal Slack sau Discord, printr-un webhook, fără Zapier."
 ---
 
 # Slack și Discord
@@ -114,7 +115,7 @@ Dacă ceva a eșuat (o insignă roșie `failed` sau `exhausted`), fereastra afi�
 
 - **Nu apare niciun mesaj și starea livrării este `400`**: de obicei, **Connector Type** este setat pe **Standard**, dar URL-ul este de Slack sau Discord. Slack și Discord resping envelope-ul brut. Schimbați lista la **Slack** sau **Discord** și retrimiteți testul.
 - **Webhook dezactivat automat**: după 3 livrări consecutive eșuate, B1 oprește webhook-ul. Corectați URL-ul (sau rotiți-l în Slack/Discord) și activați din nou **Active**.
-- **Mesajul ajunge, dar lipsesc detalii**: fiecare platformă de chat limitează dimensiunea mesajelor. Mesajele B1 sunt intenționat scurte; pentru notificări mai bogate, folosiți [Zapier](./zapier) sau [Make](./make) ca să compuneți un mesaj Slack mai complet prin acțiunile lor pentru Slack.
+- **Mesajul ajunge, dar lipsesc detalii**: fiecare platformă de chat limitează dimensiunea mesajelor. Mesajele B1 sunt intenționat scurte; pentru notificări mai bogate, folosiți [Zapier](./zapier.md) sau [Make](./make.md) ca să compuneți un mesaj Slack mai complet prin acțiunile lor pentru Slack.
 
 ## Schimbarea tipului de conector mai târziu
 
@@ -122,6 +123,6 @@ Puteți schimba Connector Type pentru un webhook existent. Modificarea se aplic�
 
 ## Vezi și
 
-- [Zapier](./zapier): pentru fluxuri de lucru cu mai mulți pași, declanșate de evenimentele B1
-- [Make](./make): constructor de scenarii vizual
+- [Zapier](./zapier.md): pentru fluxuri de lucru cu mai mulți pași, declanșate de evenimentele B1
+- [Make](./make.md): constructor de scenarii vizual
 - [Webhook-uri (referință pentru dezvoltatori)](/docs/developer/api/webhooks): formatul complet al payload-ului și al semnăturii, dacă vreodată direcționați un webhook către propriul server

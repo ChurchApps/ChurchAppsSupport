@@ -1,5 +1,6 @@
 ---
 title: "엔드포인트 참고"
+description: "모듈별로 모든 ChurchApps API 엔드포인트를 찾고, 각 경로의 HTTP 메서드, 경로, 인증, 권한을 확인하세요. API를 호출하기 전에 일괄 저장과 오류 규칙도 알아봅니다."
 ---
 
 # 엔드포인트 참고
@@ -89,10 +90,10 @@ Authorization: Bearer <token>
 
 | 모듈 | 기본 경로 | 설명 |
 |--------|-----------|-------------|
-| [인증](./authentication) | `/membership/users`, `/membership/oauth` | 로그인, 등록, JWT 토큰, OAuth, 권한 |
-| [회원](./membership) | `/membership/*` | 사람, 교회, 그룹, 가구, 역할, 양식, 설정 |
-| [참석](./attendance) | `/attendance/*` | 캠퍼스, 서비스, 세션, 방문, 체크인 기록 |
-| [컨텐츠](./content) | `/content/*` | 페이지, 설교, 이벤트, 파일, 갤러리, 성경, 스트리밍 |
-| [헌금](./giving) | `/giving/*` | 기부금, 펀드, 결제 게이트웨이, 구독 |
-| [메시징](./messaging) | `/messaging/*` | 대화, 알림, 장치, SMS |
-| [할 일](./doing) | `/doing/*` | 계획, 작업, 할당, 자동화, 스케줄링 |
+| [인증](./authentication.md) | `/membership/users`, `/membership/oauth` | 로그인, 등록, JWT 토큰, OAuth, 권한 |
+| [회원](./membership.md) | `/membership/*` | 사람, 교회, 그룹, 가구, 역할, 양식, 설정 |
+| [참석](./attendance.md) | `/attendance/*` | 캠퍼스, 서비스, 세션, 방문, 체크인 기록 |
+| [컨텐츠](./content.md) | `/content/*` | 페이지, 설교, 이벤트, 파일, 갤러리, 성경, 스트리밍 |
+| [헌금](./giving.md) | `/giving/*` | 기부금, 펀드, 결제 게이트웨이, 구독 |
+| [메시징](./messaging.md) | `/messaging/*` | 대화, 알림, 장치, SMS |
+| [할 일](./doing.md) | `/doing/*` | 계획, 작업, 할당, 자동화, 스케줄링 |

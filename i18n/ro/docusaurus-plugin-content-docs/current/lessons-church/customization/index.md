@@ -1,5 +1,6 @@
 ---
 title: "Personalizare"
+description: "Cum ascundeți secțiuni, roluri sau acțiuni dintr-o lecție Lessons.church și reordonați conținutul, pentru o clasă sau toate clasele bisericii."
 ---
 
 # Personalizare

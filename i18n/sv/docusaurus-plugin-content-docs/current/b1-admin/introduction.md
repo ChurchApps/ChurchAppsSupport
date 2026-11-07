@@ -1,5 +1,6 @@
 ---
 title: Introduktion till B1.church
+description: "Guidar dig genom inloggning i B1 Admin, hur du hittar runt i Dashboard och Jump-menyn och hur du anger kyrkans uppgifter innan du utforskar andra verktyg."
 ---
 
 # Välkommen till B1.church Admin!
@@ -34,7 +35,7 @@ För ytterligare support, skicka gärna ett e-postmeddelande till [support@churc
 10. Du kan nu gå in i B1.church via **medlemsportalen** eller **adminportalen**. Medlemsportalen låter dig se hur B1.church ser ut för dina medlemmar, visa dina grupper och hantera dina personliga gåvor.
 
 :::tip
-Börja med sidan [Settings](./settings/) för att konfigurera ditt kyrkonamn, din grafiska profil och teambehörigheter. Det säkerställer att allt annat du ställer in visas korrekt.
+Börja med sidan [Settings](./settings/index.md) för att konfigurera ditt kyrkonamn, din grafiska profil och teambehörigheter. Det säkerställer att allt annat du ställer in visas korrekt.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -81,9 +82,9 @@ Sökning är ofta det snabbaste sättet att nå en sida -- skriv en del av sidan
 
 Efter att ha sett den här introduktionen kan du utforska dessa viktiga funktioner:
 
-- [Adding People](./people/adding-people) -- Lär dig hur du lägger till medlemmar i din databas
-- [Groups](./groups/) -- Skapa och hantera kyrkans grupper
-- [Serving Plans](./serving/plans) -- Organisera din tjänst i kyrkan
-- [Attendance](./attendance/) -- Följ närvaro och incheckning
-- [Website](./website/) -- Bygg och anpassa din kyrkas webbplats
-- [Settings](./settings/) -- Konfigurera din kyrkas information och behörigheter
+- [Adding People](./people/adding-people.md) -- Lär dig hur du lägger till medlemmar i din databas
+- [Groups](./groups/index.md) -- Skapa och hantera kyrkans grupper
+- [Serving Plans](./serving/plans.md) -- Organisera din tjänst i kyrkan
+- [Attendance](./attendance/index.md) -- Följ närvaro och incheckning
+- [Website](./website/index.md) -- Bygg och anpassa din kyrkas webbplats
+- [Settings](./settings/index.md) -- Konfigurera din kyrkas information och behörigheter

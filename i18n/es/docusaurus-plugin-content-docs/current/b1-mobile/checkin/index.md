@@ -1,5 +1,7 @@
 ---
-title: "Registro de Asistencia"
+title: "Registro de asistencia en la iglesia con la aplicación B1 Mobile"
+sidebar_label: "Registro de Asistencia"
+description: "Registre su asistencia usted y su hogar a los servicios de la iglesia desde su teléfono en B1 Mobile, eligiendo servicios y grupos antes de llegar."
 ---
 
 # Registro de Asistencia
@@ -16,7 +18,7 @@ El proceso de registro de asistencia es un flujo rápido de varios pasos que te 
 
 ## Primeros Pasos
 
-Para acceder al registro de asistencia, abre la sección de **Registro de Asistencia** en B1 Mobile. Debes haber iniciado sesión para usar esta función. Si no has iniciado sesión, se te pedirá que [inicies sesión](../getting-started/logging-in) primero.
+Para acceder al registro de asistencia, abre la sección de **Registro de Asistencia** en B1 Mobile. Debes haber iniciado sesión para usar esta función. Si no has iniciado sesión, se te pedirá que [inicies sesión](../getting-started/logging-in.md) primero.
 
 :::info
 La función de registro de asistencia requiere que tu iglesia haya configurado servicios y grupos de asistencia en sus ajustes de administración. Si no aparecen servicios cuando abres la pantalla de registro, es posible que tu iglesia aún no tenga esta función configurada. Contacta al administrador de tu iglesia para obtener ayuda.
@@ -30,4 +32,4 @@ La función de registro de asistencia requiere que tu iglesia haya configurado s
 
 ## Próximos Pasos
 
-- [Registro Personal](./self-checkin) -- Guía paso a paso para registrar tu asistencia desde tu teléfono
+- [Registro Personal](./self-checkin.md) -- Guía paso a paso para registrar tu asistencia desde tu teléfono

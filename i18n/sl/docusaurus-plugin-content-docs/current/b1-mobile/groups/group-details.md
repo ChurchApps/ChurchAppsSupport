@@ -1,5 +1,7 @@
 ---
-title: "Podrobnosti skupine"
+title: "Podrobnosti skupine v aplikaciji B1 Mobile"
+sidebar_label: "Podrobnosti skupine"
+description: "Oglejte si, kaj prikazuje podrobna stran skupine v B1 Mobile: podatke o skupini, objave in člane, ter kako jo odprete iz zaslona Skupine."
 ---
 
 # Podrobnosti skupine
@@ -13,7 +15,7 @@ Ko se dotaknete skupine na zaslonu Skupine, se odpre stran s podrobnostmi o tej 
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite B1 Mobile](../getting-started/installing) in se [prijavite](../getting-started/logging-in) v svoj račun
+- [Namestite B1 Mobile](../getting-started/installing.md) in se [prijavite](../getting-started/logging-in.md) v svoj račun
 - Odprite zaslon [Skupine](./index.md)
 
 </div>
@@ -46,5 +48,5 @@ Vaša najpogosteje obiskana skupina je prikazana kot glavna kartica na vrhu zasl
 
 ## Sorodni članki
 
-- [Časovnica skupine](./group-timeline) -- Spoznajte združen pregled dejavnosti v vseh vaših skupinah
+- [Časovnica skupine](./group-timeline.md) -- Spoznajte združen pregled dejavnosti v vseh vaših skupinah
 - [Sporočanje](../community/messaging.md) -- Pošljite zasebna sporočila članom skupine

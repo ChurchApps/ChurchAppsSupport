@@ -1,5 +1,6 @@
 ---
 title: "मोबाइल मैसेज"
+description: "B1 Admin इवेंट को Mobile Message, एक ऑस्ट्रेलियाई SMS API, से जोड़ें, Zapier या Make webhooks से स्वागत, दान और रिमाइंडर टेक्स्ट भेजें।"
 ---
 
 # मोबाइल मैसेज
@@ -85,7 +86,7 @@ Zap चालू करें। B1Admin में एक परीक्षण 
 
 ### Make विकल्प
 
-यदि आप Make पसंद करते हैं, तो B1 Watch Events ट्रिगर के बाद **HTTP — Make a request** मॉड्यूल जोड़ें और उसे उसी तरह कॉन्फ़िगर करें (POST, Basic Auth, JSON body)। B1 की ओर की जानकारी के लिए [Make overview](../make) देखें।
+यदि आप Make पसंद करते हैं, तो B1 Watch Events ट्रिगर के बाद **HTTP — Make a request** मॉड्यूल जोड़ें और उसे उसी तरह कॉन्फ़िगर करें (POST, Basic Auth, JSON body)। B1 की ओर की जानकारी के लिए [Make overview](../make.md) देखें।
 
 ## सीमाएँ और नोट्स
 
@@ -102,6 +103,6 @@ Zap चालू करें। B1Admin में एक परीक्षण 
 
 ## इसे भी देखें
 
-- [Clearstream](./clearstream), [Text In Church](./text-in-church): अन्य SMS प्रदाता जिनके पास मूल Zapier ऐप हैं (Webhooks-by-Zapier चरण की ज़रूरत नहीं)
-- [Zapier (overview)](../zapier): हर Zapier रेसिपी का B1 पक्ष
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md): अन्य SMS प्रदाता जिनके पास मूल Zapier ऐप हैं (Webhooks-by-Zapier चरण की ज़रूरत नहीं)
+- [Zapier (overview)](../zapier.md): हर Zapier रेसिपी का B1 पक्ष
 - [मोबाइल मैसेज API दस्तावेज़](https://mobilemessage.com.au/api-documentation)

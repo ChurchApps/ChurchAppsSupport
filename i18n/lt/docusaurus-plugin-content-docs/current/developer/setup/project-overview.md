@@ -1,5 +1,6 @@
 ---
 title: "Projekto apžvalga"
+description: "ChurchApps saugyklų apžvalga pagal kategorijas: karkasai, kūrimo prievadai, duomenų bazės ir kaip bendri @churchapps paketai jas susieja."
 ---
 
 # Projekto apžvalga
@@ -13,7 +14,7 @@ ChurchApps sudaro maždaug 20 nepriklausomų saugyklų, kiekviena paskelbta [Chu
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Įdiekite [būtinąsias sąlygas](./prerequisites) projekto kategorijai, su kuria norite dirbti
+- Įdiekite [būtinąsias sąlygas](./prerequisites.md) projekto kategorijai, su kuria norite dirbti
 
 </div>
 
@@ -72,7 +73,7 @@ Bendras kodas skelbiamas npm registre `@churchapps` srityje ir yra naudojamas ka
 | `@churchapps/integration-sdk` | B1.church integracijų įrankinė: webhook, REST klientas, OAuth | Išorinių integracijų kūrėjai |
 | `@churchapps/texting` | SMS tiekėjų abstrakcija | Api |
 
-Darbo srities sąranką ir leidimo eigą žr. [Bendrosios bibliotekos](../shared-libraries/).
+Darbo srities sąranką ir leidimo eigą žr. [Bendrosios bibliotekos](../shared-libraries/index.md).
 
 ## Projektų ryšiai
 
@@ -90,5 +91,5 @@ Visos frontend programos priklauso nuo `@churchapps/helpers`. Žiniatinklio prog
 
 ## Kiti žingsniai
 
-- **[Aplinkos kintamieji](./environment-variables)** -- Sukonfigūruokite `.env` failus, kad prisijungtumėte prie API
-- **[API vietinė sąranka](../api/local-setup)** -- Nustatykite backend API vietiniame kompiuteryje
+- **[Aplinkos kintamieji](./environment-variables.md)** -- Sukonfigūruokite `.env` failus, kad prisijungtumėte prie API
+- **[API vietinė sąranka](../api/local-setup.md)** -- Nustatykite backend API vietiniame kompiuteryje

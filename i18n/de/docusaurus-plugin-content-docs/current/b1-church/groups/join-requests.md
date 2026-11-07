@@ -1,5 +1,6 @@
 ---
 title: "Um Beitritt zu einer Gruppe bitten"
+description: "Beantragen Sie auf B1.church den Beitritt zu genehmigungspflichtigen Gruppen, mit optionaler Notiz. Offene Anfragen können Sie verfolgen oder stornieren."
 ---
 
 # Um Beitritt zu einer Gruppe bitten

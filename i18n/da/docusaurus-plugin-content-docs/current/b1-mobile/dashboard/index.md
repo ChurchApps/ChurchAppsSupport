@@ -1,5 +1,6 @@
 ---
 title: "Instrumentbræt"
+description: "Find rundt på B1 Mobile-startskærmen, hvor dine mest brugte funktioner vises som store kort, og resten findes under Hurtige handlinger."
 ---
 
 # Instrumentbræt
@@ -24,7 +25,7 @@ Under heltekort vil du se op til to **udvalgte kort** vist side om side. Disse r
 
 ## Hurtige handlinger
 
-De resterende funktioner vises i et **Hurtige handlinger** net under de udvalgte kort. Hver post viser et ikon og etiket. Disse er alle de andre navigationlinks din kirke har konfigureret, hvilket giver dig adgang til alt fra [grupper](../groups/) og [giver](../giving/) til [tjek ind](../checkin/), [prædikener](../content/sermons.md) og mere.
+De resterende funktioner vises i et **Hurtige handlinger** net under de udvalgte kort. Hver post viser et ikon og etiket. Disse er alle de andre navigationlinks din kirke har konfigureret, hvilket giver dig adgang til alt fra [grupper](../groups/index.md) og [giver](../giving/index.md) til [tjek ind](../checkin/index.md), [prædikener](../content/sermons.md) og mere.
 
 ## Hvordan layoutet tilpasser sig
 
@@ -37,7 +38,7 @@ Instrumentbrætets layout er personaliseret baseret på dine brugningsmønstre. 
 Hvis du ikke har brugt appen endnu, vises funktioner i standardrækkefølgen din kirke har konfigureret. Over tid omarrangeres instrumentbrættet for at matche dine vaner.
 
 :::info
-De funktioner, der er tilgængelige på dit instrumentbræt, er konfigureret af din kirkes administrator gennem [B1 Admin](../../b1-admin/). Hvis du ikke ser en funktion, du forventer, kontakt dit kirkekontор.
+De funktioner, der er tilgængelige på dit instrumentbræt, er konfigureret af din kirkes administrator gennem [B1 Admin](../../b1-admin/index.md). Hvis du ikke ser en funktion, du forventer, kontakt dit kirkekontор.
 :::
 
 ## Opdatering af instrumentbrættet

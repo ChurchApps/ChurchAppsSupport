@@ -1,5 +1,6 @@
 ---
 title: "開発者向けドキュメント"
+description: "ChurchApps 開発者ドキュメントの案内。オープンソースプロジェクトのローカル環境構築、API と Web アプリのガイド、共有ライブラリ、モバイルビルド、デプロイを掲載しています。"
 ---
 
 # 開発者向けドキュメント
@@ -24,16 +25,16 @@ ChurchAppsは、教会向けの総合的な管理プラットフォームを構�
 
 ## このセクションの内容
 
-- **[セットアップ](setup/)** -- ローカル開発環境、前提条件、設定
-  - [前提条件](setup/prerequisites) -- 必要なツールとソフトウェア
-  - [プロジェクトの概要](setup/project-overview) -- すべてのプロジェクトの一覧
-  - [環境変数](setup/environment-variables) -- `.env`ファイルの設定
-- **[API](api/)** -- コアAPIのローカルセットアップ、データベースの初期化、モジュール構成
-- **[Webアプリ](web-apps/)** -- B1Admin、B1App、LessonsAppのローカルでの実行
-- **[モバイルアプリ](mobile/)** -- B1Mobileやその他のExpoアプリのビルド
-- **[共有ライブラリ](shared-libraries/)** -- Helpers、ApiHelper、AppHelperの利用
-- **[デプロイ](deployment/)** -- API、Webアプリ、モバイルアプリのデプロイ
-- **[FreePlayコンテンツプロバイダー](freeplay-content-provider)** -- レッスンライブラリをFreePlayに統合
+- **[セットアップ](./setup/index.md)** -- ローカル開発環境、前提条件、設定
+  - [前提条件](./setup/prerequisites.md) -- 必要なツールとソフトウェア
+  - [プロジェクトの概要](./setup/project-overview.md) -- すべてのプロジェクトの一覧
+  - [環境変数](./setup/environment-variables.md) -- `.env`ファイルの設定
+- **[API](./api/index.md)** -- コアAPIのローカルセットアップ、データベースの初期化、モジュール構成
+- **[Webアプリ](./web-apps/index.md)** -- B1Admin、B1App、LessonsAppのローカルでの実行
+- **[モバイルアプリ](./mobile/index.md)** -- B1Mobileやその他のExpoアプリのビルド
+- **[共有ライブラリ](./shared-libraries/index.md)** -- Helpers、ApiHelper、AppHelperの利用
+- **[デプロイ](./deployment/index.md)** -- API、Webアプリ、モバイルアプリのデプロイ
+- **[FreePlayコンテンツプロバイダー](./freeplay-content-provider.md)** -- レッスンライブラリをFreePlayに統合
 
 ## コミュニティとリソース
 

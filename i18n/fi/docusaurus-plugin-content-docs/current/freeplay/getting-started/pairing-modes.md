@@ -1,5 +1,6 @@
 ---
 title: "Yhdistämistilan valitseminen"
+description: "Valitse oikea tapa yhdistää FreePlay TV: kalenteri FreePlay Administa, palvelusuunnitelma B1 Administa tai ei yhdistämistä lainkaan."
 ---
 
 # Yhdistämistilan valitseminen
@@ -32,7 +33,7 @@ Syötä koodi **FreePlay Adminissa** osoitteessa [admin.freeplay.church](https:/
 
 **Sopii parhaiten:** Aula- ja käytävämainoksiin, ilmoitussilmukoihin ja luokkahuoneisiin, joissa oppitunnin pitää olla jo käynnissä, kun ihmiset saapuvat.
 
-Katso **[Aikataulutettu tila](../scheduled-mode/)** koko ohjeesta.
+Katso **[Aikataulutettu tila](../scheduled-mode/index.md)** koko ohjeesta.
 
 ## Suunnitelmatila (B1 Admin)
 
@@ -42,7 +43,7 @@ Syötä koodi **B1 Adminissa**, kun haluat TV:n seuraavan jumalanpalveluksen suu
 
 **Sopii parhaiten:** TV:ille, jotka näyttävät viikoittaiseen jumalanpalvelussuunnitelmaan liittyvää sisältöä ja joissa joku aloittaa toiston, kun on aika.
 
-Katso **[Suunnitelmatila](../plan-mode/)** koko ohjeesta.
+Katso **[Suunnitelmatila](../plan-mode/index.md)** koko ohjeesta.
 
 :::tip
 Voit myös toistaa nykyisen jumalanpalveluksen suunnitelman aikataulun mukaan. Lisää FreePlay Adminissa kalenterimerkintä ja valitse suunnitelmatyyppi kohdasta **Jumalanpalveluksen suunnitelmat**.
@@ -50,7 +51,7 @@ Voit myös toistaa nykyisen jumalanpalveluksen suunnitelman aikataulun mukaan. L
 
 ## Sisältötarjoajat (ei yhdistämistä)
 
-Jos TV:tä ei tarvitse yhdistää lainkaan, voit selata sisältötarjoajia suoraan. Tarjoajilla, kuten [Lessons.church](../../lessons-church/) ja Bible Project, on sisältöä, jonka voit ladata ja toistaa milloin tahansa.
+Jos TV:tä ei tarvitse yhdistää lainkaan, voit selata sisältötarjoajia suoraan. Tarjoajilla, kuten [Lessons.church](../../lessons-church/index.md) ja Bible Project, on sisältöä, jonka voit ladata ja toistaa milloin tahansa.
 
 **Sopii parhaiten:** TV:ille, joissa vapaaehtoiset valitsevat joka viikko toistettavan sisällön, tai kun haluat tutustua tarjolla olevaan sisältöön.
 
@@ -60,6 +61,6 @@ Voit avata **Tarjoajat**-näkymän milloin tahansa sivupalkin alareunan **Asetuk
 
 ## Aiheeseen liittyvät artikkelit
 
-- **[Aikataulutettu tila](../scheduled-mode/)** - Aseta TV:t kalenteriin FreePlay Adminilla
-- **[Suunnitelmatila](../plan-mode/)** - Täydellinen opas yhdistämiseen jumalanpalveluksen suunnitelman kanssa
-- **[Sisältötarjoajat](../content-providers/)** - Selaa ja lataa sisältöä ulkoisista lähteistä
+- **[Aikataulutettu tila](../scheduled-mode/index.md)** - Aseta TV:t kalenteriin FreePlay Adminilla
+- **[Suunnitelmatila](../plan-mode/index.md)** - Täydellinen opas yhdistämiseen jumalanpalveluksen suunnitelman kanssa
+- **[Sisältötarjoajat](../content-providers/index.md)** - Selaa ja lataa sisältöä ulkoisista lähteistä

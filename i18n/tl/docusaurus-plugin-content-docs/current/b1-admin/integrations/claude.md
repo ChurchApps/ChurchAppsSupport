@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Ikonekta ang B1 Admin sa Claude para magtanong sa simpleng wika tungkol sa attendance, handog, at grupo, may opsyong mag-sign in o limitadong API key."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ Ito ang parehong `/membership/people`, `/giving/donations`, `/attendance/visits`
 
 - [API Keys](/docs/developer/api/api-keys) -- kumpletong sanggunian ng scope
 - [MCP Server (developer reference)](/docs/developer/api/mcp) -- mga detalye ng protocol at schema ng tool
-- [ChatGPT](./chatgpt) -- parehong ideya, para sa mga modelo ng OpenAI
+- [ChatGPT](./chatgpt.md) -- parehong ideya, para sa mga modelo ng OpenAI

@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Finn ut hva menighetens B1.church-nettsted tilbyr, fra medlemsportalen og grupper til gaver, arrangementer, frivillig tjeneste og innsjekking."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ Når medlemmer besøker B1.church-nettstedet ditt, ser de kirkens offentlige net
 
 ## Lær mer
 
-- [Komme i gang](./getting-started/) -- Opprett kontoen din, logg inn og lær hvordan du navigerer B1.church.
-- [Grupper](./groups/) -- Bli med og delta i kirkens grupper.
-- [Gaver](./giving/) -- Gi gaver og administrer giverne dine.
-- [Arrangementer](./events/) -- Bla gjennom og meld deg på kommende kirkearrangementer.
-- [Tjeneste](./serving/) -- Se planer og meld deg på frivillige posisjoner.
-- [Planer](./plans/) -- Se tjenesteplaner og dine frivillige posisjoner.
-- [Innsjekking](./checkin/) -- Sjekk inn til gudstjenester, arrangementer og gjesteregistrering.
-- [Fellesskapskatalog](./community/) -- Finn og koble deg på med andre medlemmer.
-- [Innhold](./content/) -- Prekener, Bibelen, dagens vers og direktesending. (Avspilling av leksjoner er flyttet til [FreePlay](/docs/freeplay/).)
+- [Komme i gang](./getting-started/index.md) -- Opprett kontoen din, logg inn og lær hvordan du navigerer B1.church.
+- [Grupper](./groups/index.md) -- Bli med og delta i kirkens grupper.
+- [Gaver](./giving/index.md) -- Gi gaver og administrer giverne dine.
+- [Arrangementer](./events/index.md) -- Bla gjennom og meld deg på kommende kirkearrangementer.
+- [Tjeneste](./serving/index.md) -- Se planer og meld deg på frivillige posisjoner.
+- [Planer](./plans/index.md) -- Se tjenesteplaner og dine frivillige posisjoner.
+- [Innsjekking](./checkin/index.md) -- Sjekk inn til gudstjenester, arrangementer og gjesteregistrering.
+- [Fellesskapskatalog](./community/index.md) -- Finn og koble deg på med andre medlemmer.
+- [Innhold](./content/index.md) -- Prekener, Bibelen, dagens vers og direktesending. (Avspilling av leksjoner er flyttet til [FreePlay](/docs/freeplay/).)
 
 :::info
 B1.church er helt gratis for kirker og medlemmer. Kirkeadministratoren din setter opp og tilpasser nettstedet gjennom B1 Admin. Som medlem besøker du bare kirkens B1.church-URL for å komme i gang.

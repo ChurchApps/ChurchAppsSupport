@@ -1,5 +1,6 @@
 ---
 title: "Režim prezentácie"
+description: "Spustenie lekcie na celú obrazovku na triednom projektore alebo TV v režime Presenter Mode v Lessons.church a prechádzanie jednotlivými sekciami počas hodiny."
 ---
 
 # Režim prezentácie

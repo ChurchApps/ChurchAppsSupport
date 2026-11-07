@@ -1,5 +1,7 @@
 ---
-title: "Versículo del Día"
+title: "Versículo del día en B1 Mobile"
+sidebar_label: "Versículo del Día"
+description: "Abra la pantalla del Versículo del día en B1 Mobile para ver el versículo bíblico de hoy como imagen ajustada a la orientación de su teléfono o tableta, actualizado a diario."
 ---
 
 # Versículo del Día
@@ -13,7 +15,7 @@ La pantalla de Versículo del Día muestra un versículo bíblico diario como un
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instala B1 Mobile](../getting-started/installing) e [inicia sesión](../getting-started/logging-in) en tu cuenta
+- [Instala B1 Mobile](../getting-started/installing.md) e [inicia sesión](../getting-started/logging-in.md) en tu cuenta
 - Tu iglesia debe tener la función de Versículo del Día habilitada
 
 </div>
@@ -46,5 +48,5 @@ El Versículo del Día es una función de contenido integrada de B1 Mobile. Si n
 
 ## Artículos Relacionados
 
-- [Biblia](./bible) -- Lee pasajes completos de las Escrituras en el lector integrado
-- [Sermones](./sermons) -- Mira sermones grabados de tu iglesia
+- [Biblia](./bible.md) -- Lee pasajes completos de las Escrituras en el lector integrado
+- [Sermones](./sermons.md) -- Mira sermones grabados de tu iglesia

@@ -1,5 +1,6 @@
 ---
 title: "Menghubungkan FreePlay ke B1 Admin"
+description: "Hubungkan TV kelas yang menjalankan FreePlay ke pelajaran terjadwal di B1 Admin agar guru dapat memutarnya di layar selama kelas berlangsung."
 ---
 
 # Menghubungkan TV Kelas ke Pelajaran B1 Admin Anda

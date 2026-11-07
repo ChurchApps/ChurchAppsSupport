@@ -1,5 +1,6 @@
 ---
 title: "Lịch tổng hợp"
+description: "Thiết lập lịch tổng hợp toàn hội thánh trong B1 Admin lấy sự kiện từ nhiều nhóm, rồi chia sẻ lên website, qua đăng ký ICS hoặc dưới dạng tệp tải về."
 ---
 
 # Lịch tổng hợp
@@ -15,7 +16,7 @@ Lịch tổng hợp gom sự kiện từ nhiều nhóm vào một chế độ xe
 
 - Thiết lập các [nhóm](../groups/creating-groups.md) mà bạn muốn đưa sự kiện vào lịch
 - Đảm bảo các trưởng nhóm đã thêm sự kiện vào nhóm của họ
-- Làm quen với những kiến thức cơ bản về [Tạo lịch](creating-calendars)
+- Làm quen với những kiến thức cơ bản về [Tạo lịch](./creating-calendars.md)
 
 </div>
 
@@ -61,5 +62,5 @@ Chỉ các sự kiện **công khai** mới xuất hiện trên lịch tổng h�
 
 ## Các bước tiếp theo
 
-- [Tạo lịch](creating-calendars) -- Tìm hiểu những kiến thức cơ bản về tạo lịch
-- [Tổng quan về lịch](./) -- Quay lại trang tổng quan về lịch
+- [Tạo lịch](./creating-calendars.md) -- Tìm hiểu những kiến thức cơ bản về tạo lịch
+- [Tổng quan về lịch](./index.md) -- Quay lại trang tổng quan về lịch

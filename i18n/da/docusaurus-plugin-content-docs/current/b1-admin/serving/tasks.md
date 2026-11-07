@@ -1,5 +1,6 @@
 ---
 title: "opgaver"
+description: "Opret, tildel og luk opgaver i B1 Admin. Find dem under Tjeneste > Mit arbejde, og sæt forfaldspåmindelser, så opfølgning aldrig glipper."
 ---
 
 # opgaver
@@ -54,10 +55,10 @@ Klik på ethvert opgaver for at åbne dets detalje siden. Fra her kan du:
 4. lukkede opgaver fjernes fra standarden visning men kan stadig få adgang til ved aktivering af **vis lukket**.
 
 :::info
-Du kan automatisere tilbagevendende opgaver så de opbygges på en skema. Se [automatiseringer](./automations.md) til detaljer på opsætning af dette.
+Du kan automatisere tilbagevendende opgaver så de opbygges på en skema. Se [automatiseringer](./workflows.md) til detaljer på opsætning af dette.
 :::
 
 ## Næste trin
 
-- opsæt [automatiseringer](./automations.md) for at opbygge tilbagevendende opgaver automatisk
+- opsæt [automatiseringer](./workflows.md) for at opbygge tilbagevendende opgaver automatisk
 - Brug opgaver sammen med [tjenesteplaner](./plans.md) for at spore service forberedelse handlingspunkter

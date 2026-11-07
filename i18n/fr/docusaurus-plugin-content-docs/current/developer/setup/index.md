@@ -1,5 +1,6 @@
 ---
 title: "Installation"
+description: "Choisir une installation locale : frontend avec les API de démo partagées, ou pile complète en local avec MySQL pour les modifications backend."
 ---
 
 # Installation
@@ -40,15 +41,15 @@ Cette approche vous permet de commencer à modifier le frontend en quelques minu
 
 ### 2. Tout exécuter en local
 
-Si vous devez modifier le code de l'API ou travailler hors ligne, vous pouvez faire tourner la pile complète en local. Cela nécessite MySQL 8.0+ et une configuration supplémentaire. Voir le guide [installation locale de l'API](../api/local-setup) pour des instructions détaillées.
+Si vous devez modifier le code de l'API ou travailler hors ligne, vous pouvez faire tourner la pile complète en local. Cela nécessite MySQL 8.0+ et une configuration supplémentaire. Voir le guide [installation locale de l'API](../api/local-setup.md) pour des instructions détaillées.
 
 ## Pour commencer
 
 Suivez ces pages dans l'ordre :
 
-1. **[Prérequis](prerequisites)** -- Installer les outils nécessaires (Node.js, Git, MySQL, etc.)
-2. **[Vue d'ensemble du projet](project-overview)** -- Comprendre quels projets existent et ce qu'ils font
-3. **[Variables d'environnement](environment-variables)** -- Configurer vos fichiers `.env` pour tout relier entre eux
+1. **[Prérequis](./prerequisites.md)** -- Installer les outils nécessaires (Node.js, Git, MySQL, etc.)
+2. **[Vue d'ensemble du projet](./project-overview.md)** -- Comprendre quels projets existent et ce qu'ils font
+3. **[Variables d'environnement](./environment-variables.md)** -- Configurer vos fichiers `.env` pour tout relier entre eux
 
 :::info
 Chaque projet ChurchApps est un dépôt Git indépendant. Vous n'avez besoin de cloner que le ou les projets sur lesquels vous souhaitez travailler.

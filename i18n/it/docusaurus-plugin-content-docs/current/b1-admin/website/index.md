@@ -1,5 +1,6 @@
 ---
 title: "Sito Web"
+description: "Panoramica del costruttore di siti di B1 Admin: pagine, blog, blocchi, aspetto, file e calendari, con link alle guide di configurazione e modifica."
 ---
 
 # Sito Web
@@ -22,7 +23,7 @@ I tuoi link di navigazione vengono visualizzati in una struttura ad albero. Puoi
 
 ### Blog {#blog}
 
-Pubblica notizie, aggiornamenti e meditazioni come post del blog in `/blog` sul tuo sito, con un feed RSS. Vedi la guida [Blog](blog).
+Pubblica notizie, aggiornamenti e meditazioni come post del blog in `/blog` sul tuo sito, con un feed RSS. Vedi la guida [Blog](./blog.md).
 
 ### Blocchi
 
@@ -30,24 +31,24 @@ Costruisci componenti di contenuto riutilizzabili che puoi posizionare su più p
 
 ### Aspetto
 
-Personalizza il tema del tuo sito web, i colori, i caratteri, il logo e la spaziatura. Puoi applicare temi di stile pre-costruiti per un inizio veloce o mettere a punto ogni dettaglio con l'editor della tavolozza di colori, le impostazioni della tipografia e CSS personalizzato. Vedi la guida [Aspetto](appearance) per i dettagli completi.
+Personalizza il tema del tuo sito web, i colori, i caratteri, il logo e la spaziatura. Puoi applicare temi di stile pre-costruiti per un inizio veloce o mettere a punto ogni dettaglio con l'editor della tavolozza di colori, le impostazioni della tipografia e CSS personalizzato. Vedi la guida [Aspetto](./appearance.md) per i dettagli completi.
 
 ### File
 
-Carica e gestisci tutti i tuoi asset multimediali -- immagini, documenti e altri file -- in una posizione centrale, e copia i link dei file per l'uso in qualsiasi punto del tuo sito. Vedi [File](files) per ulteriori informazioni.
+Carica e gestisci tutti i tuoi asset multimediali -- immagini, documenti e altri file -- in una posizione centrale, e copia i link dei file per l'uso in qualsiasi punto del tuo sito. Vedi [File](./files.md) per ulteriori informazioni.
 
 ### Calendari
 
 Pubblica calendari di eventi sul tuo sito web in modo che i visitatori possano vedere cosa succede nella tua chiesa. Crea calendari curati che estraggono eventi da più gruppi in una singola vista. I calendari hanno una voce **Calendars** nel menu di B1 Admin, separata da **Website**.
 
 :::tip
-Inizia con [Configurazione Iniziale](initial-setup) se stai configurando il tuo sito web per la prima volta. Ti guida attraverso la configurazione del dominio, la creazione della tua prima pagina e la configurazione dell'aspetto del tuo sito.
+Inizia con [Configurazione Iniziale](./initial-setup.md) se stai configurando il tuo sito web per la prima volta. Ti guida attraverso la configurazione del dominio, la creazione della tua prima pagina e la configurazione dell'aspetto del tuo sito.
 :::
 
 ## Passaggi Successivi
 
-- [Configurazione Iniziale](initial-setup) -- Ottieni il tuo sito web operativo per la prima volta
-- [Gestione delle Pagine](managing-pages) -- Scopri come creare e organizzare le tue pagine
-- [Utilizzo dell'Editor di Pagina](page-editor) -- Costruisci e personalizza il contenuto della tua pagina con l'editor visivo
-- [Aspetto](appearance) -- Personalizza l'aspetto e l'ambiente del tuo sito
-- [File](files) -- Carica e gestisci i file multimediali
+- [Configurazione Iniziale](./initial-setup.md) -- Ottieni il tuo sito web operativo per la prima volta
+- [Gestione delle Pagine](./managing-pages.md) -- Scopri come creare e organizzare le tue pagine
+- [Utilizzo dell'Editor di Pagina](./page-editor.md) -- Costruisci e personalizza il contenuto della tua pagina con l'editor visivo
+- [Aspetto](./appearance.md) -- Personalizza l'aspetto e l'ambiente del tuo sito
+- [File](./files.md) -- Carica e gestisci i file multimediali

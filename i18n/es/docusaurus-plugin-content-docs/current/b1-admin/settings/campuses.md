@@ -1,5 +1,6 @@
 ---
 title: "Campus"
+description: "Configura los campus en B1 Admin para saber a qué sede pertenece cada persona y grupo, y luego filtra personas, asistencia y datos demográficos por ubicación."
 ---
 
 # Campus

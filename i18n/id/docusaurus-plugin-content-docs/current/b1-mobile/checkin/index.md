@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Check-In Gereja Menggunakan Aplikasi B1 Mobile"
+sidebar_label: "Check-In"
+description: "Check-in diri Anda dan keluarga ke ibadah gereja dari ponsel di B1 Mobile, dengan memilih ibadah dan grup sebelum Anda tiba."
 ---
 
 # Check-In
@@ -16,7 +18,7 @@ Proses check-in adalah alur singkat dengan beberapa langkah yang memandu Anda me
 
 ## Memulai
 
-Untuk mengakses check-in, buka bagian **Check-In** di B1 Mobile. Anda harus sudah masuk untuk menggunakan fitur ini. Jika belum masuk, Anda akan diminta untuk [masuk](../getting-started/logging-in) terlebih dahulu.
+Untuk mengakses check-in, buka bagian **Check-In** di B1 Mobile. Anda harus sudah masuk untuk menggunakan fitur ini. Jika belum masuk, Anda akan diminta untuk [masuk](../getting-started/logging-in.md) terlebih dahulu.
 
 :::info
 Fitur check-in memerlukan gereja Anda telah menyiapkan ibadah dan kelompok kehadiran di pengaturan administrasi mereka. Jika tidak ada ibadah yang muncul saat Anda membuka layar check-in, gereja Anda mungkin belum mengonfigurasi fitur ini. Hubungi administrator gereja Anda untuk bantuan.
@@ -30,4 +32,4 @@ Fitur check-in memerlukan gereja Anda telah menyiapkan ibadah dan kelompok kehad
 
 ## Langkah Selanjutnya
 
-- [Check-In Mandiri](./self-checkin) -- Panduan langkah demi langkah untuk check-in dari ponsel Anda
+- [Check-In Mandiri](./self-checkin.md) -- Panduan langkah demi langkah untuk check-in dari ponsel Anda

@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Ikonekta ang Clearstream SMS sa B1 Admin gamit ang Zapier: magpadala ng text sa bagong handog o form, at ibalik sa B1 ang mga sagot bilang tao."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ I-on ang Zap. Ang B1 ay nag-register ng donation webhook sa activation; makikita
 
 ## Makita Din
 
-- [Text In Church](./text-in-church) — alternatibong SMS platform, katulad na wiring shape
-- [Mobile Message](./mobile-message) — para sa mga churches sa labas ng US
-- [Zapier (overview)](../zapier) — B1 side ng bawat Zapier recipe
+- [Text In Church](./text-in-church.md) — alternatibong SMS platform, katulad na wiring shape
+- [Mobile Message](./mobile-message.md) — para sa mga churches sa labas ng US
+- [Zapier (overview)](../zapier.md) — B1 side ng bawat Zapier recipe
 - [Clearstream API docs](https://api-docs.clearstream.io/) — para sa custom integrations lampas sa Zapier app

@@ -1,5 +1,7 @@
 ---
-title: "Palvelu"
+title: "Vapaaehtoispalvelu ja ilmoittautuminen B1.churchissa"
+sidebar_label: "Palvelu"
+description: "Selaa vapaaehtoistehtäviä B1.churchissa, ilmoittaudu avoimiin tehtäviin, tarkastele palvelutehtäviäsi ja peruuta ilmoittautumisesi ennen määräaikaa."
 ---
 
 # Palvelu
@@ -14,8 +16,8 @@ B1.church-sivuston Palvelu-osio auttaa sinua selaamaan vapaaehtoistehtäviä ja 
 
 - **Selata vapaaehtoistehtäviä** -- Katso tulevat palvelusuunnitelmat, joissa on täyttämättömiä tehtäviä.
 - **Ilmoittautua tehtäviin** -- Valitse tehtävä ja ilmoittaudu siihen yhdellä napsautuksella.
-- **Tarkastella suunnitelmiasi** -- Katso tulevat ja menneet [palvelutehtävät](../plans/viewing-plans).
-- **Vastata tehtävänantoihin** -- Hyväksy tai hylkää sinulle määrätyt tehtävät Suunnitelmat-sivulta tai Etusivun **Palvelet**-osiosta. Jos suunnitelmasi muuttuvat hyväksymisen jälkeen, voit [perua hyväksytyn tehtävän](../plans/viewing-plans#declining-an-accepted-assignment) siihen asti, kunnes palvelu on ohi.
+- **Tarkastella suunnitelmiasi** -- Katso tulevat ja menneet [palvelutehtävät](../plans/viewing-plans.md).
+- **Vastata tehtävänantoihin** -- Hyväksy tai hylkää sinulle määrätyt tehtävät Suunnitelmat-sivulta tai Etusivun **Palvelet**-osiosta. Jos suunnitelmasi muuttuvat hyväksymisen jälkeen, voit [perua hyväksytyn tehtävän](../plans/viewing-plans.md#declining-an-accepted-assignment) siihen asti, kunnes palvelu on ohi.
 - **Poistaa ilmoittautumisia** -- Peru itse tekemäsi ilmoittautuminen, jos suunnitelmasi muuttuvat (ennen määräaikaa).
 
 ## Miten se toimii
@@ -28,5 +30,5 @@ Vapaaehtoissivulla näkyvät vain ne tehtävät, jotka seurakuntasi ylläpitäj�
 
 ## Lue lisää
 
-- [Vapaaehtoisilmoittautuminen](./volunteer-signup) -- Vaiheittainen opas vapaaehtoistehtävien selaamiseen ja niihin ilmoittautumiseen
-- [Suunnitelmien tarkastelu](../plans/viewing-plans) -- Katso itsellesi määrätyt palvelusuunnitelmat ja jumalanpalveluksen järjestykset
+- [Vapaaehtoisilmoittautuminen](./volunteer-signup.md) -- Vaiheittainen opas vapaaehtoistehtävien selaamiseen ja niihin ilmoittautumiseen
+- [Suunnitelmien tarkastelu](../plans/viewing-plans.md) -- Katso itsellesi määrätyt palvelusuunnitelmat ja jumalanpalveluksen järjestykset

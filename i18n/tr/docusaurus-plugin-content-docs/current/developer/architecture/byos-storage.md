@@ -1,5 +1,6 @@
 ---
 title: "Kendi Depolamanızı Getirin (BYOS)"
+description: "Kilisenin dosya yüklemelerinin 100 MB platform sınırını aşması için B1 Admin'e kendi Google Drive, Dropbox, OneDrive veya S3 uyumlu depolama alanınızı bağlayın."
 ---
 
 # Kendi Depolamanızı Getirin (BYOS)
@@ -8,7 +9,7 @@ Kiliseler, `/content/files` yüzeylerinde (web sitesi Dosyaları, grup kaynaklar
 
 ## Sağlayıcı katmanı
 
-BYOS, [MinistryStuff](./ministrystuff) için oluşturulan depolama katmanını yeniden kullanır: `Packages/apihelper` içindeki `IStorageProvider`, `StorageResolver` tarafından `content.storageProviders` tablosundan kilise başına çözümlenir. Tekil `churchapps`/`ministrystuff` sağlayıcılarının aksine, BYOS sağlayıcıları kilise başına kimlik bilgilerini tutar. Bu yüzden `StorageResolver.forChurch`, her istek için kilisenin satırından bir örnek oluşturur. Uygulamalar çözücünün yanında, `Api/src/modules/content/helpers/` içinde yer alır: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider` ve ayrıca `ByosAuth` (OAuth belirteç değişimi ve tek uçuşlu yenileme). Dropbox yenileme belirteçlerini döndürdüğü için yenilemeler, `ProviderProxyController`'ın yaptığı şekilde tekilleştirilir.
+BYOS, [MinistryStuff](./ministrystuff.md) için oluşturulan depolama katmanını yeniden kullanır: `Packages/apihelper` içindeki `IStorageProvider`, `StorageResolver` tarafından `content.storageProviders` tablosundan kilise başına çözümlenir. Tekil `churchapps`/`ministrystuff` sağlayıcılarının aksine, BYOS sağlayıcıları kilise başına kimlik bilgilerini tutar. Bu yüzden `StorageResolver.forChurch`, her istek için kilisenin satırından bir örnek oluşturur. Uygulamalar çözücünün yanında, `Api/src/modules/content/helpers/` içinde yer alır: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider` ve ayrıca `ByosAuth` (OAuth belirteç değişimi ve tek uçuşlu yenileme). Dropbox yenileme belirteçlerini döndürdüğü için yenilemeler, `ProviderProxyController`'ın yaptığı şekilde tekilleştirilir.
 
 `storageProviders` kimlik bilgilerini taşır: `accessToken`/`refreshToken`/`tokenExpiresAt` (şifrelenmiş OAuth üçlüsü) veya `apiKey`/`apiSecret` ile `settings` JSON'u (`{endpoint, region, bucket, publicBase}`, S3). Belirteçler asla istemciye ulaşmaz. `GET /content/storage/providers` gizli bilgileri maskeler ve bir `connected` boolean değeri döndürür.
 

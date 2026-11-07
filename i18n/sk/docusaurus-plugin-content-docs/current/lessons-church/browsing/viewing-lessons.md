@@ -1,5 +1,6 @@
 ---
 title: "Zobrazenie lekcií"
+description: "Postup otvorenia lekcie v Lessons.church, čítanie jej sekcií a akcií podľa rolí, nájdenie sťahovaní a prepínanie vekových skupín pred hodinou."
 ---
 
 # Zobrazenie lekcií

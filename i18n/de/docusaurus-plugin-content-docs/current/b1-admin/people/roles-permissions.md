@@ -1,5 +1,6 @@
 ---
 title: "Rollen zuweisen"
+description: "Weisen Sie in B1 Admin Rollen zu, damit Mitarbeitende und Freiwillige nur auf die Bereiche für Personen, Spenden, Anwesenheit und Gruppen zugreifen, die sie benötigen."
 ---
 
 # Rollen zuweisen

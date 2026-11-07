@@ -1,5 +1,6 @@
 ---
 title: "Pengaturan"
+description: "Temukan jalan Anda di Pengaturan B1 Admin: info gereja, merek, kampus, bidang kustom, peran pengguna, dan navigasi aplikasi B1.church."
 ---
 
 # Pengaturan

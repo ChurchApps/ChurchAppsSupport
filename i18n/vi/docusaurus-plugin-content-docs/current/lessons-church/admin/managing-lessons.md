@@ -1,5 +1,6 @@
 ---
 title: "Quản lý bài học"
+description: "Xây cấu trúc bài học trong Lessons.church: thêm địa điểm, phần, hành động theo vai trò (Nói, Làm, Ghi chú, Chơi), nội dung và tài nguyên cho phụ huynh."
 ---
 
 # Quản lý bài học

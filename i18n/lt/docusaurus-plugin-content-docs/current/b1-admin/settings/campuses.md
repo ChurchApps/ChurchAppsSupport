@@ -1,5 +1,6 @@
 ---
 title: "Filialai"
+description: "Nustatykite B1 Admin filialus, kad žinotumėte, kuriam objektui priklauso kiekvienas asmuo ir grupė, ir filtruotumėte pagal vietą."
 ---
 
 # Filialai

@@ -1,5 +1,6 @@
 ---
 title: "Upravljanje prijavama"
+description: "Peržiūrėkite, spausdinkite ir perskirstykite formų pateikimus B1 Admin, perduodami atsakymus tinkamam asmeniui ir sekdami lankytojų kortelių bei maldų prašymus."
 ---
 
 # Upravljanje prijavama

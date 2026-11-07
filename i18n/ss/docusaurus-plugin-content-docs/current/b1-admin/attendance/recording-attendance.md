@@ -1,5 +1,6 @@
 ---
 title: "Kubhala Kubakhona"
+description: "Rekhoda kutfola kwebantfu kulonkhana ngalunye ku-B1 Admin: dala sikhatsi, makha labakhonile, gcina manothi, uphrinte tinhlu noma udlulise kuspredshithi."
 ---
 
 # Kubhala Kubakhona

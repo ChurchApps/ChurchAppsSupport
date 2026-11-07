@@ -1,5 +1,6 @@
 ---
 title: "Menginstal Aplikasi"
+description: "Pasang B1 Mobile dari App Store atau Google Play. Perlu diingat, aplikasi ini tidak digunakan lagi dan PWA B1.church kini yang direkomendasikan."
 ---
 
 # Menginstal Aplikasi
@@ -25,7 +26,7 @@ Anda juga dapat mencari "B1 Mobile" jika pencarian pertama tidak menampilkan has
 
 ## Setelah Menginstal
 
-Setelah aplikasi terinstal, buka dari layar utama perangkat Anda. Anda akan melihat layar pencarian gereja, tempat Anda dapat menemukan dan memilih gereja Anda. Jika Anda sudah memiliki akun ChurchApps, Anda dapat langsung [masuk](./logging-in). Jika belum, Anda dapat membuat akun dari layar masuk.
+Setelah aplikasi terinstal, buka dari layar utama perangkat Anda. Anda akan melihat layar pencarian gereja, tempat Anda dapat menemukan dan memilih gereja Anda. Jika Anda sudah memiliki akun ChurchApps, Anda dapat langsung [masuk](./logging-in.md). Jika belum, Anda dapat membuat akun dari layar masuk.
 
 Aplikasi akan meminta izin untuk mengirim notifikasi push. Kami menyarankan Anda mengizinkan notifikasi agar dapat menerima pembaruan dari gereja dan grup Anda.
 

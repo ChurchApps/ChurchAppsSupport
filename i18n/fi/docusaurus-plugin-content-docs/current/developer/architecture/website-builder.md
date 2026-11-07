@@ -1,5 +1,6 @@
 ---
 title: "Verkkosivustonrakentajan arkkitehtuuri"
+description: "Kehittäjäkartta B1-verkkosivurakentajasta: sisältöpuu, jaettu elementtikatalogi, renderöintiputki ja tekoälyavusteinen sivujen luonti B1 Adminissa ja B1.churchissa."
 ---
 
 # Verkkosivustonrakentajan arkkitehtuuri
@@ -82,7 +83,7 @@ Renderöijät sijaitsevat kansiossa `Packages/apphelper/src/website/components/e
 
 ### Editorin lomakkeet (B1Admin)
 
-Editorin tyyppikohtaiset asetuslomakkeet sijaitsevat kansiossa `B1Admin/src/site/admin/elements/`. `ElementEdit.tsx` ohjaa tyypin omalle komponentille (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) tai tyyppikohtaiselle sisäiselle kenttärakentajalle. Tekoälylle suunnattu peili tästä katalogista on API:n MCP-työkalu `describe_page_builder` (katso [MCP-palvelin](../api/mcp)).
+Editorin tyyppikohtaiset asetuslomakkeet sijaitsevat kansiossa `B1Admin/src/site/admin/elements/`. `ElementEdit.tsx` ohjaa tyypin omalle komponentille (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) tai tyyppikohtaiselle sisäiselle kenttärakentajalle. Tekoälylle suunnattu peili tästä katalogista on API:n MCP-työkalu `describe_page_builder` (katso [MCP-palvelin](../api/mcp.md)).
 
 Editorin esikatselu liittää saman `Theme`-komponentin kuin julkinen sivusto. Se asettaa `--headingFont`- ja `--bodyFont`-CSS-muuttujat seurakunnan yleisistä tyyleistä. B1App soveltaa nämä muuttujat tiedoston `pages.css` kautta, jota B1Admin ei voi tuoda. Siksi `ContentEditor.tsx` lisää `EDITOR_PAGE_FONT_CSS`-tyylit (`src/site/admin/editorCss.ts`), jotka soveltavat ne `.page`-elementin leipätekstiin ja `h1`–`h6`-otsikoihin. Ilman sitä esikatselussa otsikot näkyivät ylläpitosivuston fontilla.
 
@@ -157,7 +158,7 @@ Tämä kaikki on B1Appin puolella tehtävää renderöintiä ContentApi-datan p�
 |------|----------|
 | Metakuvaukset | `pages.metaDescription` (enintään 300 merkkiä) kulkee funktion `MetaHelper.getMetaData()` kautta Next.js:n `Metadata`-objektiin (kuvaus ja Open Graph) jokaisella rakentajan renderöimällä reitillä. B1Adminin sivuasetuksissa on tekoälyllä toimiva Luo-painike (katso alla) |
 | Uudelleenohjaukset | Seurakuntakohtaiset `redirects`-rivit, joita hallitaan osoitteessa `/content/redirects` (`content.edit`, 200 rivin raja, normalisoidut polut). Mahdollisessa 404-tilanteessa B1Appin sivureitti ratkaisee polun päätepisteen `GET /content/redirects/public/:churchId` avulla ja antaa HTTP 308 -uudelleenohjauksen Next:n `permanentRedirect`-funktiolla. Täsmäämättömät polut siirtyvät `notFound()`-funktioon |
-| Brändätty 404 | `not-found.tsx` renderöi `BrandedNotFound`-komponentin seurakunnan logolla, nimellä ja teemalla yleisen virheen sijaan. Tuntemattomat `/register/[eventId]`-, `/events/[eventId]`-, `/stream/[pageSlug]`- ja `/volunteer/[planId]`-polut palauttavat oikean 404-vastauksen. Sama koskee tuntemattomia aliverkkotunnuksia ja virheellisiä sivu-slugeja (katso [Verkkosivujen reititys ja monisivustot](./websites)) |
+| Brändätty 404 | `not-found.tsx` renderöi `BrandedNotFound`-komponentin seurakunnan logolla, nimellä ja teemalla yleisen virheen sijaan. Tuntemattomat `/register/[eventId]`-, `/events/[eventId]`-, `/stream/[pageSlug]`- ja `/volunteer/[planId]`-polut palauttavat oikean 404-vastauksen. Sama koskee tuntemattomia aliverkkotunnuksia ja virheellisiä sivu-slugeja (katso [Verkkosivujen reititys ja monisivustot](./websites.md)) |
 | Jäsennelty data | `BlogPosting`-JSON-LD blogikirjoituksille. `VideoObject` jokaisen saarnan sivulla (`/{sdSlug}/sermons/[sermonId]`) ja sivuilla, joilla on `sermons`-elementti. `Event` kalenteri- ja tapahtumaelementeistä rakentajan sivuilla sekä jokaisella `/{sdSlug}/events/[eventId]`-sivulla (seuraava esiintymä, tapahtuman valokuva `image`-kenttänä). schema.org `Event` `serviceTimes`-elementistä |
 | Saarnasivut | Jokainen julkinen saarna saa indeksoitavan sivun osoitteeseen `/sermons/[sermonId]` täydellisillä metatiedoilla. Saarnat eivät ole enää lukittuina asiakaspuolen selainelementin sisään |
 | Analytiikka | Julkinen asetusavain `ga4MeasurementId` (hallitaan B1Adminissa uudelleenohjausten vieressä) lisää seurakuntakohtaisen GA4 gtag-koodin `next/script`-komponentilla. B1-sovellus (`/{sdSlug}/mobile`) lähettää sivunäyttönsä myös tähän tunnukseen ChurchAppsin oman tagin rinnalla, kun tunnus on kelvollinen `G-`-tunnus. GTM-konttitunnukset pysyvät vain verkkosivustolla. Jokaisessa `gtag('config')`-kutsussa on `display_mode`-arvo `installed` tai `browser`. Arvo perustuu `navigator.standalone`-ominaisuuteen tai `(display-mode: standalone)`-media-kyselyyn (`B1App/src/helpers/mobileAnalytics.ts`) |
@@ -205,7 +206,7 @@ B1Adminin `SectionToolbar`-kirjoitauspainike ja sivulistan "Luo sivusto" -painik
 | `POST /website/generateAltText` | Näkömallikutsu enintään 20 kuva-URL-osoitteelle. Palauttaa tiiviin alt-tekstin (enintään 125 merkkiä, ”photo of” -etuliitteet poistettu) |
 | `POST /website/generateMetaDescription` | Yksi SEO-metakuvaus (enintään 155 merkkiä) sivun tekstisisällöstä. Kytketty B1Adminin sivuasetusten Luo-painikkeeseen |
 
-Näiden päätepisteiden kehotteet ovat Markdown-tiedostoja kansiossa `AskApi/config/instructions/`, mukaan lukien elementtikatalogi, jonka pohjalta malli generoi. Kaksi suunnitteluratkaisua pitää katalogin rehellisenä. Ensinnäkin asiakas välittää `availableElementTypes`-kentän jokaisessa pyynnössä, joten kehote saa käyttää vain tuon listan tyyppejä. Palvelin ei koskaan kovakoodaa koko joukkoa. Toiseksi API:n MCP-työkalu `describe_page_builder` sisältää saman oppaan tekoälyagenteille, jotka työskentelevät [MCP:n](../api/mcp) kautta. Malleina on Anthropic Claude OpenRouterin kautta: 3.5 Haiku osion sisältöön (viiveen takia) sekä 3.5 Sonnet runkoihin, sivustosuunnitelmiin ja näkökykyyn. OpenAI-varamalli käytetään, jos OpenRouter-avainta ei ole määritetty.
+Näiden päätepisteiden kehotteet ovat Markdown-tiedostoja kansiossa `AskApi/config/instructions/`, mukaan lukien elementtikatalogi, jonka pohjalta malli generoi. Kaksi suunnitteluratkaisua pitää katalogin rehellisenä. Ensinnäkin asiakas välittää `availableElementTypes`-kentän jokaisessa pyynnössä, joten kehote saa käyttää vain tuon listan tyyppejä. Palvelin ei koskaan kovakoodaa koko joukkoa. Toiseksi API:n MCP-työkalu `describe_page_builder` sisältää saman oppaan tekoälyagenteille, jotka työskentelevät [MCP:n](../api/mcp.md) kautta. Malleina on Anthropic Claude OpenRouterin kautta: 3.5 Haiku osion sisältöön (viiveen takia) sekä 3.5 Sonnet runkoihin, sivustosuunnitelmiin ja näkökykyyn. OpenAI-varamalli käytetään, jos OpenRouter-avainta ei ole määritetty.
 
 ## Keskustelevat lomakkeet
 
@@ -230,8 +231,8 @@ Ohjaimet, jotka käynnistävät päivityksen: sivut (tallennus, poisto, kopioint
 
 ## Aiheeseen liittyvät sivut
 
-- [Verkkosivujen reititys ja monisivustot](./websites): miten pyyntö ratkaistaan seurakunnaksi ja sivustoksi ja miten mukautetut verkkotunnukset reititetään
-- [Sisältöpäätepisteet](../api/endpoints/content): täydellinen REST-rajapinta sivuille, osioille, elementeille, lohkoille, kirjoituksille, uudelleenohjauksille ja asetuksille
-- [AppHelper](../shared-libraries/app-helper): npm-paketti, joka toimittaa renderöijät, rekisterin, erottimet ja widgetit
-- [MCP-palvelin](../api/mcp), mukaan lukien `describe_page_builder`-oppaan työkalu
+- [Verkkosivujen reititys ja monisivustot](./websites.md): miten pyyntö ratkaistaan seurakunnaksi ja sivustoksi ja miten mukautetut verkkotunnukset reititetään
+- [Sisältöpäätepisteet](../api/endpoints/content.md): täydellinen REST-rajapinta sivuille, osioille, elementeille, lohkoille, kirjoituksille, uudelleenohjauksille ja asetuksille
+- [AppHelper](../shared-libraries/app-helper.md): npm-paketti, joka toimittaa renderöijät, rekisterin, erottimet ja widgetit
+- [MCP-palvelin](../api/mcp.md), mukaan lukien `describe_page_builder`-oppaan työkalu
 - [Sivueditori (loppukäyttäjä)](/docs/b1-admin/website/page-editor): henkilökunnalle suunnattu editorin dokumentaatio

@@ -1,5 +1,6 @@
 ---
 title: "외관"
+description: "B1 Admin에서 교회 웹사이트의 색상, 글꼴, 간격, 로고, 내비게이션을 설정하세요. 위젯, GA4 분석, 리디렉션, 사용자 지정 CSS도 포함합니다."
 ---
 
 # 외관
@@ -13,7 +14,7 @@ title: "외관"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- 웹사이트의 [초기 설정](initial-setup)을 완료하세요.
+- 웹사이트의 [초기 설정](./initial-setup.md)을 완료하세요.
 - 교회 로고를 투명 배경과 4:1 가로세로 비율의 PNG 형식으로 준비하세요.
 - 기존 스타일 가이드가 있다면 교회의 브랜드 색상(16진수 값)을 확인하세요.
 
@@ -98,7 +99,7 @@ Style Settings 아래의 **Redirects & analytics** 카드에는 서로 관련은
 :::
 
 :::info
-이 사이트는 다른 출처의 인라인 스크립트를 차단하는 콘텐츠 보안 정책(Content Security Policy)을 적용합니다. 여기의 **Custom HTML** 입력란과 개별 페이지의 [HTML 요소](page-editor#using-the-html-element)는 예외입니다. 여기에 저장한 코드는 그대로 실행되므로, 신뢰할 수 있는 출처의 스크립트(분석 태그, 채팅 위젯 등 비슷한 삽입 코드)만 붙여 넣으세요.
+이 사이트는 다른 출처의 인라인 스크립트를 차단하는 콘텐츠 보안 정책(Content Security Policy)을 적용합니다. 여기의 **Custom HTML** 입력란과 개별 페이지의 [HTML 요소](./page-editor.md#using-the-html-element)는 예외입니다. 여기에 저장한 코드는 그대로 실행되므로, 신뢰할 수 있는 출처의 스크립트(분석 태그, 채팅 위젯 등 비슷한 삽입 코드)만 붙여 넣으세요.
 :::
 
 ## 스타일 테마
@@ -107,5 +108,5 @@ Style Settings 아래의 **Redirects & analytics** 카드에는 서로 관련은
 
 ## 다음 단계
 
-- [페이지 관리](managing-pages) -- 웹사이트 페이지를 만들고 정리합니다.
-- [파일](files) -- 사이트에 사용할 미디어 자산을 업로드합니다.
+- [페이지 관리](./managing-pages.md) -- 웹사이트 페이지를 만들고 정리합니다.
+- [파일](./files.md) -- 사이트에 사용할 미디어 자산을 업로드합니다.

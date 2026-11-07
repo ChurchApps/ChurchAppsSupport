@@ -1,5 +1,6 @@
 ---
 title: "Distribution av API"
+description: "Distribuera ChurchApps API till AWS Lambda med Serverless, med byggen, demo- och produktionsarbetsflöden, databasmigreringar och SSM-konfiguration."
 ---
 
 # Distribution av API
@@ -13,7 +14,7 @@ ChurchApps API:er distribueras som AWS Lambda-funktioner med hjälp av Serverles
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Konfigurera API:et lokalt -- se [Lokal API-konfiguration](../api/local-setup)
+- Konfigurera API:et lokalt -- se [Lokal API-konfiguration](../api/local-setup.md)
 - Konfigurera AWS-autentiseringsuppgifter på din dator
 - Kontrollera att du har åtkomst till målkontot i AWS
 
@@ -47,7 +48,7 @@ I praktiken driftsätts API:et av GitHub Actions: **Deploy Demo** körs vid varj
 
 ## Databasmigreringar
 
-**Deploy Prod** tillämpar väntande databasmigreringar som en del av driftsättningen. Produktionsdatabaserna accepterar endast anslutningar från insidan av VPC:n, så direkt efter `serverless deploy` anropar arbetsflödet Lambda-funktionen `migrate` (`api-Prod-migrate`), som kör varje moduls väntande migreringar och returnerar `{ ok, environment, modules }`. Om någon modul misslyckas eller nekas (till exempel en databas utan migreringshistorik) misslyckas jobbet, så att schemat aldrig hamnar efter koden. **Rollback Prod** återställer endast Lambda-koden; migreringar förblir tillämpade, så håll dem additiva. Se [Serveradministration -- Databasmigreringar](../server-admin#database-migrations) för att kontrollera status eller köra migreringar manuellt.
+**Deploy Prod** tillämpar väntande databasmigreringar som en del av driftsättningen. Produktionsdatabaserna accepterar endast anslutningar från insidan av VPC:n, så direkt efter `serverless deploy` anropar arbetsflödet Lambda-funktionen `migrate` (`api-Prod-migrate`), som kör varje moduls väntande migreringar och returnerar `{ ok, environment, modules }`. Om någon modul misslyckas eller nekas (till exempel en databas utan migreringshistorik) misslyckas jobbet, så att schemat aldrig hamnar efter koden. **Rollback Prod** återställer endast Lambda-koden; migreringar förblir tillämpade, så håll dem additiva. Se [Serveradministration -- Databasmigreringar](../server-admin.md#database-migrations) för att kontrollera status eller köra migreringar manuellt.
 
 ## Vad som skapas
 
@@ -75,6 +76,6 @@ Varje sammanfogning till `main` driftsätts först till demomiljön. Kontrollera
 
 ## Relaterade artiklar
 
-- **[Lokal API-konfiguration](../api/local-setup)** -- Konfigurera API:et för utveckling
-- **[Modulstruktur](../api/module-structure)** -- Förstå arkitekturen för Lambda-funktionerna
-- **[Distribution av webbappar](./web-apps)** -- Driftsätta frontend-applikationerna
+- **[Lokal API-konfiguration](../api/local-setup.md)** -- Konfigurera API:et för utveckling
+- **[Modulstruktur](../api/module-structure.md)** -- Förstå arkitekturen för Lambda-funktionerna
+- **[Distribution av webbappar](./web-apps.md)** -- Driftsätta frontend-applikationerna

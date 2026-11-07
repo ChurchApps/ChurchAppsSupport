@@ -1,5 +1,6 @@
 ---
 title: "Objave"
+description: "Rodykite skaidrių aplanką FreePlay TV pranešimams prieš pamoką: pasirinkite teikėjo aplanką, palaikykite sinchronizavimą, išjunkite baigus."
 ---
 
 # Objave
@@ -13,7 +14,7 @@ FreePlay gali nuolat rodyti aplanko su objavų skaidrėmis turinį jūsų televi
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Prisijunkite prie turinio teikėjo](./connecting-providers), kuriame yra jūsų objavų skaidrės, pavyzdžiui, Dropbox ar OneDrive
+- [Prisijunkite prie turinio teikėjo](./connecting-providers.md), kuriame yra jūsų objavų skaidrės, pavyzdžiui, Dropbox ar OneDrive
 - Įdėkite norimus rodyti paveikslėlius ar vaizdo įrašus į vieną aplanką tame teikėjo sraute
 
 </div>
@@ -37,7 +38,7 @@ Atsisiuntus skaidres, šoninės juostos viršuje (po **Šiandienos planu**, jei 
 - Po paskutinės skaidrės ciklas prasideda iš naujo nuo pirmosios
 - Jei aplanke yra vienas vaizdo įrašas, jis kartojamas vietoje
 
-Ciklas rodomas iš įrenginyje išsaugotų failų, todėl veikia ir be interneto ryšio. Tuos pačius nuotolinio valdymo pultus galite naudoti kaip ir bet kuriam kitam turiniui – žr. [Turinio atkūrimas](./playing-content).
+Ciklas rodomas iš įrenginyje išsaugotų failų, todėl veikia ir be interneto ryšio. Tuos pačius nuotolinio valdymo pultus galite naudoti kaip ir bet kuriam kitam turiniui – žr. [Turinio atkūrimas](./playing-content.md).
 
 ## Skaidrių atnaujinimas
 
@@ -61,6 +62,6 @@ Atjungus teikėją, išjungiamos ir iš jo gautos objavos.
 
 ## Susiję straipsniai
 
-- **[Prisijungimas prie teikėjų](./connecting-providers)** – prijunkite teikėją, kuriame yra jūsų skaidrės
-- **[Turinio naršymas ir atsisiuntimas](./browsing-content)** – naršykite teikėjo aplankus ir leiskite turinį pagal poreikį
-- **[Turinio atkūrimas](./playing-content)** – atkūrimo valdikliai jūsų televizoriaus nuotolinio valdymo pultui
+- **[Prisijungimas prie teikėjų](./connecting-providers.md)** – prijunkite teikėją, kuriame yra jūsų skaidrės
+- **[Turinio naršymas ir atsisiuntimas](./browsing-content.md)** – naršykite teikėjo aplankus ir leiskite turinį pagal poreikį
+- **[Turinio atkūrimas](./playing-content.md)** – atkūrimo valdikliai jūsų televizoriaus nuotolinio valdymo pultui

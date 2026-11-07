@@ -1,5 +1,7 @@
 ---
-title: "Erste Schritte"
+title: "Erste Schritte mit B1 Checkin"
+sidebar_label: "Erste Schritte"
+description: "Die B1-Checkin-Kiosk-App auf einem Android-Tablet einrichten: installieren, anmelden, Gemeinde auswählen und optional einen Etikettendrucker verbinden."
 ---
 
 # Erste Schritte mit B1 Church Checkin
@@ -27,9 +29,9 @@ Die Einrichtung von B1 Church Checkin dauert nur wenige Minuten. Dieser Abschnit
 
 Wenn du die App zum ersten Mal startest, durchläufst du drei Schritte:
 
-1. **[Anmelden](./logging-in)** -- Gib deine E-Mail-Adresse und dein Passwort ein, um dich zu authentifizieren.
-2. **[Kirche auswählen](./logging-in)** -- Wenn dein Konto mehreren Kirchen zugeordnet ist, wähle aus, welche dieser Kiosk bedienen soll.
-3. **[Drucker einrichten](./printer-setup)** -- Konfiguriere einen Netzwerkdrucker für den Etikettendruck oder überspringe diesen Schritt, wenn du keine Etiketten benötigst.
+1. **[Anmelden](./logging-in.md)** -- Gib deine E-Mail-Adresse und dein Passwort ein, um dich zu authentifizieren.
+2. **[Kirche auswählen](./logging-in.md)** -- Wenn dein Konto mehreren Kirchen zugeordnet ist, wähle aus, welche dieser Kiosk bedienen soll.
+3. **[Drucker einrichten](./printer-setup.md)** -- Konfiguriere einen Netzwerkdrucker für den Etikettendruck oder überspringe diesen Schritt, wenn du keine Etiketten benötigst.
 
 Nach der ersten Anmeldung speichert die App deine Anmeldedaten und die Kirchenauswahl. Bei künftigen Starts wird automatisch direkt der Gottesdienst-Bildschirm angezeigt.
 
@@ -43,6 +45,6 @@ Stelle sicher, dass dein Kirchenadministrator Gottesdienste, Gottesdienstzeiten 
 
 ## Nächste Schritte
 
-- [Anmelden](./logging-in) -- Ausführliche Anleitung zur Anmeldung und Kirchenauswahl.
-- [Druckereinrichtung](./printer-setup) -- So findest, wählst und testest du deinen Etikettendrucker.
-- [Check-in-Ablauf](../check-in/) -- Lerne den gesamten Check-in-Ablauf kennen, sobald dein Kiosk eingerichtet ist.
+- [Anmelden](./logging-in.md) -- Ausführliche Anleitung zur Anmeldung und Kirchenauswahl.
+- [Druckereinrichtung](./printer-setup.md) -- So findest, wählst und testest du deinen Etikettendrucker.
+- [Check-in-Ablauf](../check-in/index.md) -- Lerne den gesamten Check-in-Ablauf kennen, sobald dein Kiosk eingerichtet ist.

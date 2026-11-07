@@ -1,5 +1,6 @@
 ---
 title: "Notas"
+description: "Revise notas de cuidado pastoral, acompanhamentos e planejamentos de pessoas, grupos, eventos e cards de fluxo em uma só lista do B1 Admin, do mais recente."
 ---
 
 # Notas

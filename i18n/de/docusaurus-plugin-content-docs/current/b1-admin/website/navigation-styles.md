@@ -1,5 +1,6 @@
 ---
 title: "Navigations-Styles"
+description: "Farben für feste und transparente Navigationsleisten Ihrer Website in B1 Admin anpassen, inklusive Link-, Hover- und aktiver Zustände."
 ---
 
 # Navigations-Styles

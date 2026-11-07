@@ -1,5 +1,6 @@
 ---
 title: "Idővonal"
+description: "A B1.church Idővonal fülét megszüntették. Csevegések, események, feladatok és értesítések: a Me oldal, a harang ikon és az egyes csoportok."
 ---
 
 # Idővonal
@@ -16,13 +17,13 @@ Az önálló **Idővonal** fület megszüntették. A gyülekezeti portál mostan
 | --- | --- |
 | Csoportbeszélgetések és közlemények | A [csoportok](../groups/conversations.md) csevegése (**Csevegés megnyitása**) |
 | Közelgő események neked és a csoportjaidnak | A **Me** oldal (`/mobile/me`) és az egyes csoportok **Következő esemény** szakasza |
-| Feladatok és szolgálati beosztások | A **Me** oldal és a [Tervek](../plans/) |
+| Feladatok és szolgálati beosztások | A **Me** oldal és a [Tervek](../plans/index.md) |
 | Új igehirdetések | A **Legutóbbi igehirdetés** szakasz a Főoldalon és a [Igehirdetések](../content/sermons.md) fül |
 | Minden, ami értesített | Az alkalmazássáv **csengő** ikonja vagy a `/mobile/notifications` oldal |
 
 ## A Me oldal
 
-A [Me oldal](../getting-started/me-page) a régi hírfolyam legközelebbi megfelelője. Megmutatja, mi vár rád: szolgálati beosztásaidat, eseményregisztrációidat és a csoportesemények időpontjait. Emellett látod a beküldött űrlapjaidat, a jelenléti előzményeidet és a legutóbbi értesítéseidet. Innen közvetlenül elérhetők a profilod, az értesítési beállítások, az üzenetek, az adakozás és a regisztrációk.
+A [Me oldal](../getting-started/me-page.md) a régi hírfolyam legközelebbi megfelelője. Megmutatja, mi vár rád: szolgálati beosztásaidat, eseményregisztrációidat és a csoportesemények időpontjait. Emellett látod a beküldött űrlapjaidat, a jelenléti előzményeidet és a legutóbbi értesítéseidet. Innen közvetlenül elérhetők a profilod, az értesítési beállítások, az üzenetek, az adakozás és a regisztrációk.
 
 ## Értesítések
 

@@ -1,5 +1,6 @@
 ---
 title: "Poskytovateľ obsahu pre FreePlay"
+description: "Čo musí poskytovateľ obsahu zabezpečiť na pripojenie knižnice lekcií k FreePlay: logo, model prihlásenia, koncové body katalógu a playlistov a formáty médií."
 ---
 
 # Poskytovateľ obsahu pre FreePlay

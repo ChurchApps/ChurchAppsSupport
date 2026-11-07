@@ -1,5 +1,6 @@
 ---
 title: "Despliegue de Aplicación Web"
+description: "Pasos para desplegar apps web de ChurchApps, como B1 Admin, en Amazon S3 y CloudFront con GitHub Actions al fusionar o con comandos manuales."
 ---
 
 # Despliegue de Aplicación Web
@@ -13,7 +14,7 @@ Las aplicaciones web de ChurchApps se despliegan como sitios estáticos en **Ama
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Configurar la aplicación web localmente y verificar que se compila -- ver [Aplicaciones Web](../web-apps/)
+- Configurar la aplicación web localmente y verificar que se compila -- ver [Aplicaciones Web](../web-apps/index.md)
 - Configurar credenciales de AWS con acceso a S3 y CloudFront
 - Conocer el nombre del grupo S3 de destino e ID de distribución de CloudFront
 
@@ -53,6 +54,6 @@ Si necesita verificar una compilación localmente antes de desplegar, ejecute `n
 
 ## Artículos Relacionados
 
-- **[Aplicaciones Web](../web-apps/)** -- Guías de configuración para B1Admin, B1App y LessonsApp
-- **[Despliegue de API](./apis)** -- Despliegue de las APIs backend
-- **[Despliegue Móvil](./mobile)** -- Despliegue de aplicaciones móviles a tiendas de aplicaciones
+- **[Aplicaciones Web](../web-apps/index.md)** -- Guías de configuración para B1Admin, B1App y LessonsApp
+- **[Despliegue de API](./apis.md)** -- Despliegue de las APIs backend
+- **[Despliegue Móvil](./mobile.md)** -- Despliegue de aplicaciones móviles a tiendas de aplicaciones

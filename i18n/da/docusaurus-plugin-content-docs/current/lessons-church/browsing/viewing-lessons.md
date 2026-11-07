@@ -1,5 +1,6 @@
 ---
 title: "Visning af lektioner"
+description: "Gennemgå åbningen af en lektion i Lessons.church, læsning af dens sektioner og rollehandlinger, find downloads og skift mellem aldersgruppe-lokaler inden undervisningen."
 ---
 
 # Visning af lektioner

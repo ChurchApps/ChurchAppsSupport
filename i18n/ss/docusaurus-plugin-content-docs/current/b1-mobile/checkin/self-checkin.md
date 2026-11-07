@@ -1,5 +1,7 @@
 ---
-title: "Kutibhalisa"
+title: "Kungena Ngakho Nge-App ye-B1 Mobile"
+sidebar_label: "Kutibhalisa"
+description: "Zingenisa wena nemndeni wakho enkhonzweni usebentisa i-app ye-B1 Mobile, kuhlanganisa nekukhetsa sikhatsi senkhonzo nekubela ilungu ngalinye liqembu lalo."
 ---
 
 # Kutibhalisa
@@ -13,7 +15,7 @@ Kutibhalisa nge-B1 Mobile yinchubo lelula, lenetitebe letinyenti. Ngekucindzetel
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- [Faka i-B1 Mobile](../getting-started/installing) bese [ungena](../getting-started/logging-in) ku-akhawundi yakho
+- [Faka i-B1 Mobile](../getting-started/installing.md) bese [ungena](../getting-started/logging-in.md) ku-akhawundi yakho
 - Cinisekisa kutsi [emalunga emndeni wakho](../profile/household.md) asetwe kuphrofayela yakho
 
 </div>

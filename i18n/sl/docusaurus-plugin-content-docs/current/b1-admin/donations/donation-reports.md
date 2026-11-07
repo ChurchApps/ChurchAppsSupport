@@ -1,5 +1,6 @@
 ---
 title: "Izkazi o darovanjih"
+description: "Pregledujte vsote darov, izgubljene darovalce in podrobnosti serij v B1 Admin s povzetkom darov, pogledom izgubljenih darovalcev in izvozi CSV."
 ---
 
 # Izkazi o darovanjih

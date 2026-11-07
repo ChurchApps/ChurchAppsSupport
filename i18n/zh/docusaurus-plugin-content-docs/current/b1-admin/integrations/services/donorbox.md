@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "通过 Zapier 将 Donorbox 连接到 B1 Admin，使在线捐款自动生成奉献记录和捐款人档案，无需手动导出。"
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Donorbox 的 *新或更新的捐款* 也会触发编辑。在 `event_type` 上�
 
 ## 另请参阅
 
-- [Zapier（概览）](../zapier) — 每个 Zapier 方案的 B1 侧
-- [Subsplash](./subsplash) — 另一个具有 Zapier 应用的捐款平台
-- [Mailchimp](./mailchimp) — 将"新礼物"链到电子邮件标记
+- [Zapier（概览）](../zapier.md) — 每个 Zapier 方案的 B1 侧
+- [Subsplash](./subsplash.md) — 另一个具有 Zapier 应用的捐款平台
+- [Mailchimp](./mailchimp.md) — 将"新礼物"链到电子邮件标记

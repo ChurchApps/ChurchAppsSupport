@@ -1,5 +1,7 @@
 ---
-title: "Siaran Langsung"
+title: "Menonton Siaran Langsung di Aplikasi B1 Mobile"
+sidebar_label: "Siaran Langsung"
+description: "Saksikan siaran langsung gereja Anda di aplikasi B1 Mobile, buka layar Stream dari laci atau hitung mundur Khotbah, dan lihat kapan ibadah dimulai."
 ---
 
 # Siaran Langsung
@@ -13,14 +15,14 @@ B1 Mobile memungkinkan Anda menonton siaran langsung gereja Anda langsung dari p
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- [Pasang B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Pasang B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 - Gereja Anda harus sudah mengatur jadwal streaming
 
 </div>
 
 ## Menonton Siaran Langsung
 
-1. Buka layar **Stream** dari menu drawer, atau ketuk hitung mundur di layar [Khotbah](./sermons) saat siaran langsung akan segera dimulai.
+1. Buka layar **Stream** dari menu drawer, atau ketuk hitung mundur di layar [Khotbah](./sermons.md) saat siaran langsung akan segera dimulai.
 2. Jika sebuah ibadah sedang tayang, pemutar video akan dimuat otomatis dan siaran mulai diputar.
 3. Tonton siaran langsung di dalam aplikasi.
 
@@ -31,7 +33,7 @@ Ketika tidak ada siaran langsung yang sedang aktif, layar mungkin menampilkan ko
 Ada dua cara untuk mengakses siaran langsung:
 
 - **Menu drawer** -- Buka menu drawer lalu ketuk **Stream** untuk langsung ke layar siaran langsung.
-- **Layar Khotbah** -- Ketika siaran langsung dijadwalkan dalam 24 jam ke depan, hitung mundur akan muncul di layar [Khotbah](./sermons). Setelah siaran dimulai, Anda dapat membuka siaran dari sana.
+- **Layar Khotbah** -- Ketika siaran langsung dijadwalkan dalam 24 jam ke depan, hitung mundur akan muncul di layar [Khotbah](./sermons.md). Setelah siaran dimulai, Anda dapat membuka siaran dari sana.
 
 ## Sebelum dan Sesudah Ibadah
 
@@ -46,5 +48,5 @@ Jika layar siaran menampilkan hitung mundur atau pesan offline, ibadah berikutny
 Layar siaran langsung tersedia ketika gereja Anda sudah mengatur jadwal streaming. Jika Anda tidak melihat opsi **Stream** di menu drawer aplikasi, gereja Anda mungkin belum mengatur siaran langsung. Hubungi administrator gereja Anda untuk informasi lebih lanjut.
 
 :::tip
-Periksa layar [Khotbah](./sermons) untuk melihat penghitung waktu yang menunjukkan kapan siaran langsung berikutnya akan dimulai.
+Periksa layar [Khotbah](./sermons.md) untuk melihat penghitung waktu yang menunjukkan kapan siaran langsung berikutnya akan dimulai.
 :::

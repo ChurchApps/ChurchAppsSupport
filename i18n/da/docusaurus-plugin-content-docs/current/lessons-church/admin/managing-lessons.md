@@ -1,5 +1,6 @@
 ---
 title: "Administrering af lektioner"
+description: "Opbyg en lektions struktur i Lessons.church-admin: tilføj lokaler, sektioner og rollebaserede handlinger som Say, Do, Note eller Play, samt forældrenes hjemmetekst og ressourcer."
 ---
 
 # Administrering af lektioner

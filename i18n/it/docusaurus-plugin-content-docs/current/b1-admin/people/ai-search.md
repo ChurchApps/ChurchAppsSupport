@@ -1,5 +1,6 @@
 ---
 title: "Ricerca AI"
+description: "Cerca nella directory Persone di B1 Admin con domande in linguaggio naturale, ad esempio chi non viene da tre mesi, invece di costruire filtri."
 ---
 
 # Ricerca AI

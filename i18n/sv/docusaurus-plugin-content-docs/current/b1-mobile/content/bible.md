@@ -1,5 +1,7 @@
 ---
-title: "Bibeln"
+title: "Läsa Bibeln i B1 Mobile"
+sidebar_label: "Bibeln"
+description: "Använd den inbyggda Bibelläsaren i B1 Mobile-appen för att öppna Skriften från sidomenyn, navigera mellan böcker, kapitel och verser, och hitta din församlings Bibelalternativ."
 ---
 
 # Bibeln
@@ -13,7 +15,7 @@ B1 Mobile innehåller en inbyggd bibelläsare så att du kan läsa Skriften dire
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Installera B1 Mobile](../getting-started/installing) och [logga in](../getting-started/logging-in) på ditt konto
+- [Installera B1 Mobile](../getting-started/installing.md) och [logga in](../getting-started/logging-in.md) på ditt konto
 - Din församling måste ha funktionen Bibeln aktiverad
 
 </div>
@@ -37,7 +39,7 @@ Den inbäddade läsaren har reglage för att röra dig genom Skriften. Du kan:
 Läsaren fyller skärmen, så att du får gott om utrymme för att läsa bekvämt på din enhet.
 
 :::tip
-Gör bibelskärmen till en del av din dagliga rutin. Det är ett snabbt sätt att läsa Skriften var du än är. Kombinera den gärna med [Dagens vers](./verse-of-the-day) för daglig inspiration.
+Gör bibelskärmen till en del av din dagliga rutin. Det är ett snabbt sätt att läsa Skriften var du än är. Kombinera den gärna med [Dagens vers](./verse-of-the-day.md) för daglig inspiration.
 :::
 
 ## Tillgänglighet
@@ -46,6 +48,6 @@ Bibelskärmen är tillgänglig när din församling har aktiverat funktionen. Om
 
 ## Relaterade artiklar
 
-- [Dagens vers](./verse-of-the-day) -- Se dagens bibelvers
-- [Predikningar](./sermons) -- Se predikningar som kompletterar din bibelläsning
+- [Dagens vers](./verse-of-the-day.md) -- Se dagens bibelvers
+- [Predikningar](./sermons.md) -- Se predikningar som kompletterar din bibelläsning
 - [FreePlay](/docs/freeplay/) -- Spela strukturerat läroplansmaterial på klassrumsskärmar (ersätter den föråldrade Lektioner-skärmen i appen)

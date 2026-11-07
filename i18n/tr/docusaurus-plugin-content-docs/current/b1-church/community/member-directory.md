@@ -1,5 +1,7 @@
 ---
-title: "Üye Dizini"
+title: "B1.church Üye Portalında Üye Dizini"
+sidebar_label: "Üye Dizini"
+description: "B1.church dizininde kilise üyelerini arayın ve göz atın, profillerini ve hane üyelerini görüntüleyin ve dizine kimin erişebildiğini görün."
 ---
 
 # Üye Dizini

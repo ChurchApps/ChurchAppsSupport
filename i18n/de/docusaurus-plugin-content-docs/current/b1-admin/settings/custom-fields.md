@@ -1,5 +1,6 @@
 ---
 title: "Benutzerdefinierte Felder"
+description: "Eigene Felder in B1 Admin anlegen, z. B. für Ablauf des Führungszeugnisses oder Shirtgröße, und danach suchen und filtern."
 ---
 
 # Benutzerdefinierte Felder

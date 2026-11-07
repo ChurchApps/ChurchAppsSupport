@@ -1,5 +1,6 @@
 ---
 title: "Kustomisasi"
+description: "Cara menyembunyikan bagian, peran, atau aksi dalam pelajaran Lessons.church dan mengatur ulang konten, untuk satu kelas atau semua kelas di gereja Anda."
 ---
 
 # Kustomisasi

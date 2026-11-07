@@ -1,5 +1,6 @@
 ---
 title: "Ustawienia kościoła"
+description: "Ustaw nazwę, adres, subdomenę, strefę czasową, format regionalny, dostawcę SMS-ów i pamięć plików dla kościoła na stronie Ustawienia kościoła w B1 Admin."
 ---
 
 # Ustawienia kościoła

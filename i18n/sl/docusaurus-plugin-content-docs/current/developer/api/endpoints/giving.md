@@ -1,5 +1,6 @@
 ---
 title: "Končne točke za darovanja"
+description: "Referenca končnih točk API-ja Giving v ChurchApps: darovi, paketi, plačilni prehodi, naročnine in plačilni načini ter pravila za avtentikacijo in dovoljenja."
 ---
 
 # Končne točke za darovanja
@@ -284,6 +285,6 @@ Razširja `GenericCrudController` s potmi CRUD: `getById`, `getAll`, `post`, `de
 
 ## Sorodne strani
 
-- [Končne točke za člane](./membership) — Osebe, cerkve, skupine, vloge in dovoljenja
-- [Avtentikacija in dovoljenja](./authentication) — Potek prijave, JWT, OAuth, model dovoljenj
-- [Struktura modula](../module-structure) — Vzorci organizacije kode
+- [Končne točke za člane](./membership.md) — Osebe, cerkve, skupine, vloge in dovoljenja
+- [Avtentikacija in dovoljenja](./authentication.md) — Potek prijave, JWT, OAuth, model dovoljenj
+- [Struktura modula](../module-structure.md) — Vzorci organizacije kode

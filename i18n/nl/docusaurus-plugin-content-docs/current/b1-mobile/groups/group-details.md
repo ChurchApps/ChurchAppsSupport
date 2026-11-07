@@ -1,5 +1,7 @@
 ---
-title: "Groepsdetails"
+title: "Groepsdetails in de B1 Mobile-app"
+sidebar_label: "Groepsdetails"
+description: "Bekijk wat de groepsdetailpagina in B1 Mobile toont, zoals groepsinfo, berichten en leden, en hoe je die opent vanaf het scherm Groepen."
 ---
 
 # Groepsdetails
@@ -13,7 +15,7 @@ Wanneer je een groep aanraakt op het Groepenscherm, kom je op de detailpagina va
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [log in](../getting-started/logging-in) op je account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [log in](../getting-started/logging-in.md) op je account
 - Open het scherm [Groepen](./index.md)
 
 </div>
@@ -46,5 +48,5 @@ Je meest bezochte groep verschijnt als heldenkaart boven aan het scherm Groepen,
 
 ## Gerelateerde artikelen
 
-- [Groepstijdlijn](./group-timeline) -- Leer over de geïntegreerde activiteitsfeed in al je groepen
+- [Groepstijdlijn](./group-timeline.md) -- Leer over de geïntegreerde activiteitsfeed in al je groepen
 - [Berichten](../community/messaging.md) -- Stuur privéberichten naar groepsleden

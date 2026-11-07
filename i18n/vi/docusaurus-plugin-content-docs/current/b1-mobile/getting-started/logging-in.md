@@ -1,5 +1,7 @@
 ---
-title: "Đăng nhập"
+title: "Đăng nhập B1 Mobile"
+sidebar_label: "Đăng nhập"
+description: "Đăng nhập B1 Mobile bằng tài khoản ChurchApps, đăng ký tài khoản mới, hoặc khôi phục mật khẩu đã quên bằng mã 6 chữ số."
 ---
 
 # Đăng nhập
@@ -13,7 +15,7 @@ B1 Mobile sử dụng cùng tài khoản ChurchApps mà bạn dùng trên B1.chu
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Cài đặt B1 Mobile](./installing) trên thiết bị iOS hoặc Android của bạn
+- [Cài đặt B1 Mobile](./installing.md) trên thiết bị iOS hoặc Android của bạn
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile sử dụng cùng tài khoản ChurchApps mà bạn dùng trên B1.chu
 3. Nhập **địa chỉ email** và **mật khẩu** của bạn.
 4. Nhấn **Đăng nhập**.
 
-Sau khi đăng nhập, bạn sẽ được chuyển đến [bảng điều khiển](../dashboard/). Nếu bạn chưa chọn nhà thờ, bạn sẽ được nhắc tìm kiếm và chọn một nhà thờ.
+Sau khi đăng nhập, bạn sẽ được chuyển đến [bảng điều khiển](../dashboard/index.md). Nếu bạn chưa chọn nhà thờ, bạn sẽ được nhắc tìm kiếm và chọn một nhà thờ.
 
 ## Tạo tài khoản mới
 

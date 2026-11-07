@@ -1,5 +1,6 @@
 ---
 title: "Demografie"
+description: "Bekijk de leeftijd, het geslacht, het lidmaatschap, de burgerlijke staat en de campussamenstelling van je gemeente in interactieve grafieken in B1 Admin."
 ---
 
 # Demografie

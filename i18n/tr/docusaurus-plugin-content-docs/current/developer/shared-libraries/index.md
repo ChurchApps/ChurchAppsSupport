@@ -1,5 +1,6 @@
 ---
 title: "Paylaşılan Kütüphaneler"
+description: "B1 Admin, B1.church ve API'ler tarafından kullanılan @churchapps npm paketlerinin dokümanları; Packages çalışma alanının nasıl kurulacağı ve changesets ile sürüm yayımlanması."
 ---
 
 # Paylaşılan Kütüphaneler
@@ -14,9 +15,9 @@ ChurchApps'in paylaşılan kodu `@churchapps/*` kapsamı altında npm'e yayımla
 
 | Paket | Açıklama | Kullanan |
 |---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | Temel katman: çerçeveden bağımsız yardımcı işlevler ve uygulamalar arası veri sözleşmesini oluşturan ortak TypeScript arayüzleri | Tüm projeler |
-| [`@churchapps/apihelper`](./api-helper) | Sunucu tarafı Express yardımcıları: kimlik doğrulama, temel denetleyiciler, veritabanı erişimi, AWS ve e-posta entegrasyonları | Tüm API'ler |
-| [`@churchapps/apphelper`](./app-helper) | Paylaşılan React bileşenleri ve özellik modülleri (giriş, bağışlar, formlar, markdown, web sitesi) | Tüm web uygulamaları |
+| [`@churchapps/helpers`](./helpers.md) | Temel katman: çerçeveden bağımsız yardımcı işlevler ve uygulamalar arası veri sözleşmesini oluşturan ortak TypeScript arayüzleri | Tüm projeler |
+| [`@churchapps/apihelper`](./api-helper.md) | Sunucu tarafı Express yardımcıları: kimlik doğrulama, temel denetleyiciler, veritabanı erişimi, AWS ve e-posta entegrasyonları | Tüm API'ler |
+| [`@churchapps/apphelper`](./app-helper.md) | Paylaşılan React bileşenleri ve özellik modülleri (giriş, bağışlar, formlar, markdown, web sitesi) | Tüm web uygulamaları |
 | `@churchapps/content-providers` | Üçüncü taraf içerik sağlayıcılarına (Lessons.church, Planning Center, Dropbox ve diğerleri) yönelik soyutlama katmanı | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | B1.church entegrasyonları oluşturmaya yönelik araç seti: webhook doğrulama, tipli REST istemcisi, OAuth yardımcıları | Harici entegrasyon geliştiricileri |
 | `@churchapps/texting` | SMS sağlayıcı soyutlaması (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

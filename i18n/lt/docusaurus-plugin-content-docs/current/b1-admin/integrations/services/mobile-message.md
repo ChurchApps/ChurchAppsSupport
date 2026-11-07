@@ -1,5 +1,6 @@
 ---
 title: "Mobile Message"
+description: "Prijunkite B1 Admin renginius prie Mobile Message SMS API per Zapier ar Make, kad siųstumėte sveikinimo, aukų ir priminimų žinutes."
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ Mobile Message `/v1/messages` endpoint'as vienu kvietimu priima iki 10 000 žinu
 
 ### Make alternatyva
 
-Jei naudojate Make, po B1 Watch Events trigerio įdėkite **HTTP — Make a request** modulį ir sukonfigūruokite jį taip pat (POST, Basic Auth, JSON turinys). B1 pusės informaciją rasite [Make apžvalgoje](../make).
+Jei naudojate Make, po B1 Watch Events trigerio įdėkite **HTTP — Make a request** modulį ir sukonfigūruokite jį taip pat (POST, Basic Auth, JSON turinys). B1 pusės informaciją rasite [Make apžvalgoje](../make.md).
 
 ## Apribojimai ir pastabos
 
@@ -102,6 +103,6 @@ Jei naudojate Make, po B1 Watch Events trigerio įdėkite **HTTP — Make a requ
 
 ## Taip pat žr.
 
-- [Clearstream](./clearstream), [Text In Church](./text-in-church): alternatyvūs SMS tiekėjai su natyviomis Zapier programėlėmis (Webhooks by Zapier žingsnio nereikia)
-- [Zapier (apžvalga)](../zapier): B1 pusė kiekvienam Zapier receptui
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md): alternatyvūs SMS tiekėjai su natyviomis Zapier programėlėmis (Webhooks by Zapier žingsnio nereikia)
+- [Zapier (apžvalga)](../zapier.md): B1 pusė kiekvienam Zapier receptui
 - [Mobile Message API dokumentacija](https://mobilemessage.com.au/api-documentation)

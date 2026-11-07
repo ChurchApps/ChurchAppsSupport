@@ -1,5 +1,7 @@
 ---
-title: "Grupper"
+title: "Grupper i B1 Admin"
+sidebar_label: "Grupper"
+description: "Ställ in och ordna grupper i B1 Admin, inklusive kategorier, medlemmar, kalendrar och anslutningsförfrågningar, med en guide till hur du hittar sidan Grupper."
 ---
 
 # Grupper

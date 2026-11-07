@@ -1,5 +1,6 @@
 ---
 title: "Ustawienia prywatności"
+description: "Wybierz, które dane profilu, jak telefon, e-mail i adres, widzą inni członkowie w katalogu B1 Mobile, i przeglądaj oczekujące zmiany."
 ---
 
 # Ustawienia prywatności
@@ -13,7 +14,7 @@ Karta **Widoczność** na ekranie Profilu pozwala kontrolować, co inni członka
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) do swojego konta
+- [Zainstaluj B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) do swojego konta
 
 </div>
 
@@ -52,8 +53,8 @@ Karta **Konto** zapewnia dostęp do ustawień bezpieczeństwa. Użyj tej karty, 
 
 | Karta | Przeznaczenie |
 |---|---|
-| **Profil** | [Edytuj swoje dane osobowe](./editing-profile) i zdjęcie |
-| **Gospodarstwo domowe** | [Zobacz członków swojej rodziny](./household) |
+| **Profil** | [Edytuj swoje dane osobowe](./editing-profile.md) i zdjęcie |
+| **Gospodarstwo domowe** | [Zobacz członków swojej rodziny](./household.md) |
 | **Widoczność** | Kontroluj, co inni widzą w katalogu |
 | **Oczekujące** | Przeglądaj zmiany profilu oczekujące na zatwierdzenie |
 | **Konto** | Zarządzaj ustawieniami bezpieczeństwa |
@@ -62,6 +63,6 @@ Te karty razem dają Ci pełną kontrolę nad Twoimi danymi osobowymi i sposobem
 
 ## Powiązane artykuły
 
-- [Edycja profilu](./editing-profile) -- Aktualizuj swoje dane osobowe
-- [Gospodarstwo domowe](./household) -- Przeglądaj i zarządzaj członkami rodziny
+- [Edycja profilu](./editing-profile.md) -- Aktualizuj swoje dane osobowe
+- [Gospodarstwo domowe](./household.md) -- Przeglądaj i zarządzaj członkami rodziny
 - [Katalog członków](../community/member-directory.md) -- Zobacz, jak Twój profil wygląda dla innych

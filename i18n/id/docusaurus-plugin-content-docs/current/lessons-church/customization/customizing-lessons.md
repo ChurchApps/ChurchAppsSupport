@@ -1,5 +1,6 @@
 ---
 title: "Menyesuaikan Lessons"
+description: "Hapus, sembunyikan, atau atur ulang bagian dan peran dalam pelajaran Lessons.church, dan pilih apakah perubahan berlaku untuk satu kelas atau semua kelas."
 ---
 
 # Menyesuaikan Lessons

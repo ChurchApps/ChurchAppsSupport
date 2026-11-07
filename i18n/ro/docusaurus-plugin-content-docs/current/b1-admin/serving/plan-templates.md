@@ -1,5 +1,6 @@
 ---
 title: "Șabloane de plan"
+description: "Salvează ordinea slujbei și pozițiile unui plan de serviciu ca șablon reutilizabil în B1 Admin, apoi aplică-l planurilor viitoare dintr-un singur clic."
 ---
 
 # Șabloane de plan

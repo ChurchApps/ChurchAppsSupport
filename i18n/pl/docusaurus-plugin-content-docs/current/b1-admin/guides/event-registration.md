@@ -1,5 +1,6 @@
 ---
 title: "Przewodnik: Konfigurowanie rejestracji na wydarzenia"
+description: "Skonfiguruj formularz zapisów na wydarzenie w B1 Admin, by zbierać dane uczestników i opcjonalne płatności, osadzić go na stronie kościoła i śledzić zgłoszenia."
 ---
 
 # Konfigurowanie rejestracji na wydarzenia
@@ -11,7 +12,7 @@ Utwórz formularz rejestracji na wydarzenie, zbieraj informacje o uczestnikach o
 </div>
 
 :::info
-**Dwa sposoby obsługi rejestracji na wydarzenia:** Ten przewodnik opisuje **rejestrację opartą na formularzach**, która daje pełną kontrolę nad polami niestandardowymi i zbieraniem płatności. W przypadku prostszych wydarzeń, gdzie wystarczy śledzić, kto przyjdzie, użyj **natywnej rejestracji na wydarzenia** wbudowanej w kalendarz -- instrukcje konfiguracji znajdziesz w sekcji [Tworzenie kalendarzy](../calendars/creating-calendars.md#enabling-event-registration). Natywna rejestracja pozwala członkom zapisywać się bezpośrednio przez [stronę B1](../../b1-church/events/registering) i [aplikację mobilną B1](../../b1-mobile/events/registering), z kontrolą liczby miejsc, oknami dat i potwierdzeniami e-mail.
+**Dwa sposoby obsługi rejestracji na wydarzenia:** Ten przewodnik opisuje **rejestrację opartą na formularzach**, która daje pełną kontrolę nad polami niestandardowymi i zbieraniem płatności. W przypadku prostszych wydarzeń, gdzie wystarczy śledzić, kto przyjdzie, użyj **natywnej rejestracji na wydarzenia** wbudowanej w kalendarz -- instrukcje konfiguracji znajdziesz w sekcji [Tworzenie kalendarzy](../calendars/creating-calendars.md#enabling-event-registration). Natywna rejestracja pozwala członkom zapisywać się bezpośrednio przez [stronę B1](../../b1-church/events/registering.md) i [aplikację mobilną B1](../../b1-mobile/events/registering.md), z kontrolą liczby miejsc, oknami dat i potwierdzeniami e-mail.
 :::
 
 <div class="prereqs">

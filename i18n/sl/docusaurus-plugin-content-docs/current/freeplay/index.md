@@ -1,5 +1,6 @@
 ---
 title: "Pregled aplikacije FreePlay"
+description: "Pregled FreePlay, aplikacije za razredne TV-je za predvajanje ur brez povezave na Android TV, Fire TV in Apple TV, s povezavami do vodnikov za namestitev."
 ---
 
 # Pregled aplikacije FreePlay
@@ -22,10 +23,10 @@ Naš **<a href="/guides/freeplay-b1admin" target="_blank">celoten vodnik za nast
 
 - **Predvajanje brez povezave** - Prenesite videoposnetke in diapozitive s slikami vnaprej, tako da med bogoslužji nikoli ne potrebujete Wi-Fi
 - **Upravljanje prenosov** - Ogled in upravljanje vse prenesene vsebine v **Nastavitve** > **Prenosi**
-- **Načrtovani način** - Ustvarite sezname predvajanja in jih dodajte v koledar na [admin.freeplay.church](https://admin.freeplay.church); povezani televizorji jih bodo predvajali ob pravem času, brez da bi kdo pritisnil Začni -- glejte [Načrtovani način](./scheduled-mode/)
+- **Načrtovani način** - Ustvarite sezname predvajanja in jih dodajte v koledar na [admin.freeplay.church](https://admin.freeplay.church); povezani televizorji jih bodo predvajali ob pravem času, brez da bi kdo pritisnil Začni -- glejte [Načrtovani način](./scheduled-mode/index.md)
 - **Povezovanje z načrtom** - Povežite napravo z načrtom cerkvenega bogoslužja za usklajeno vsebino v različnih prostorih
 - **Ponudniki vsebine** - Brskajte in prenašajte vsebino iz zunanjih virov, kot so [Lessons.church](/docs/lessons-church/), Bible Project, Dropbox in OneDrive
-- **Obvestila** - Predvajajte zanko mape diapozitivov iz povezanega ponudnika -- glejte [Obvestila](./content-providers/announcements)
+- **Obvestila** - Predvajajte zanko mape diapozitivov iz povezanega ponudnika -- glejte [Obvestila](./content-providers/announcements.md)
 - **Prijazno do daljinskega upravljalnika** - Krmarite po celotni aplikaciji s standardnim daljinskim upravljalnikom za televizor z uporabo smernih tipk in gumba za izbiro
 - **Zložljiva stranska vrstica** - Ozka stranska vrstica omogoča dostop do navigacije, ne da bi zasedla zaslon
 
@@ -35,10 +36,10 @@ Ko zaženete FreePlay, se poveže z vašimi ponudniki vsebine in preveri razpolo
 
 ## Razdelki
 
-- **[Začetek](./getting-started/)** - Namestite aplikacijo, jo zaženite in izberite, kako se povezati
-- **[Načrtovani način](./scheduled-mode/)** - Povežite televizorje s koledarjem in jih upravljajte v FreePlay Admin
-- **[Način načrta](./plan-mode/)** - Povežite se z načrtom cerkvenega bogoslužja
-- **[Ponudniki vsebine](./content-providers/)** - Povežite se z zunanjimi viri vsebine
+- **[Začetek](./getting-started/index.md)** - Namestite aplikacijo, jo zaženite in izberite, kako se povezati
+- **[Načrtovani način](./scheduled-mode/index.md)** - Povežite televizorje s koledarjem in jih upravljajte v FreePlay Admin
+- **[Način načrta](./plan-mode/index.md)** - Povežite se z načrtom cerkvenega bogoslužja
+- **[Ponudniki vsebine](./content-providers/index.md)** - Povežite se z zunanjimi viri vsebine
 
 :::info
 FreePlay je del paketa brezplačnih orodij odprte kode za cerkve [ChurchApps](https://churchapps.org).

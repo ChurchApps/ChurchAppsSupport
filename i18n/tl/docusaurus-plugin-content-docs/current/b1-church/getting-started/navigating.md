@@ -1,5 +1,6 @@
 ---
 title: "Pag-navigate sa B1App"
+description: "Alamin ang daan sa B1.church member portal sa telepono o computer: Home dashboard, bottom tab bar, More page, at Me page."
 ---
 
 # Pag-navigate sa B1App
@@ -92,7 +93,7 @@ Ang mga detalyadong pahina -- isang grupo, isang plan, ang iyong Me page, at ang
 
 ## Ang Me Page
 
-Ang **Me** (`/mobile/me`) ang iyong personal na hub. Ipinapakita nito ang iyong pangalan at larawan kasama ang mga button na **Edit Profile** at **Settings** ([notification preferences](./notification-preferences.md)), pagkatapos ang mga paparating para sa iyo -- mga assignment sa serving, event registration, at mga event ng grupo -- kasunod ng iyong household, mga grupo, [giving](../giving/) mo ngayong taon, mga form na naipasa mo, kasaysayan ng attendance, [mga registration](../events/my-registrations.md), at mga kamakailang notification at mensahe. Tingnan ang [The Me Page](./me-page) para sa mga detalye.
+Ang **Me** (`/mobile/me`) ang iyong personal na hub. Ipinapakita nito ang iyong pangalan at larawan kasama ang mga button na **Edit Profile** at **Settings** ([notification preferences](./notification-preferences.md)), pagkatapos ang mga paparating para sa iyo -- mga assignment sa serving, event registration, at mga event ng grupo -- kasunod ng iyong household, mga grupo, [giving](../giving/index.md) mo ngayong taon, mga form na naipasa mo, kasaysayan ng attendance, [mga registration](../events/my-registrations.md), at mga kamakailang notification at mensahe. Tingnan ang [The Me Page](./me-page.md) para sa mga detalye.
 
 Kapag naka-sign out ka, ang Me page ay nagpapakita ng button na **Sign In** sa halip.
 

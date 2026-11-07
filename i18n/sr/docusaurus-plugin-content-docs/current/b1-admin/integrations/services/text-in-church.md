@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "Повежите B1 Admin и Text In Church преко Zapier-а: направите API кључ, креирајте Zap од картице за контакт до B1 и огледајте чланство групе."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ title: "Text In Church"
 
 ## Погледајте још
 
-- [Clearstream](./clearstream): алтернативна SMS платформа сличног Zapier облика
-- [Zapier (преглед)](../zapier): B1 страна сваког Zapier рецепта
+- [Clearstream](./clearstream.md): алтернативна SMS платформа сличног Zapier облика
+- [Zapier (преглед)](../zapier.md): B1 страна сваког Zapier рецепта
 - [Упутство за Text In Church Zapier](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (TIC-ова документација)

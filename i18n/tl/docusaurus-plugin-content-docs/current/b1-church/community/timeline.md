@@ -1,5 +1,6 @@
 ---
 title: "Timeline"
+description: "Hindi na available ang Timeline tab sa B1.church member portal. Hanapin ang group chat, event, gawain, at alerto sa Me page, bell icon, at sa bawat grupo."
 ---
 
 # Timeline
@@ -16,13 +17,13 @@ Retirado na ang hiwalay na **Timeline** tab. Ngayon ay bumubukas ang member port
 | --- | --- |
 | Mga usapan at anunsyo ng grupo | Ang chat sa loob ng bawat [grupo](../groups/conversations.md) (**Open chat**) |
 | Mga paparating na event para sa iyo at sa iyong mga grupo | Ang pahinang **Me** (`/mobile/me`) at ang seksyong **Next event** ng bawat grupo |
-| Mga gawain at atas sa paglilingkod | Ang pahinang **Me** at ang [Plans](../plans/) |
+| Mga gawain at atas sa paglilingkod | Ang pahinang **Me** at ang [Plans](../plans/index.md) |
 | Mga bagong sermon | Ang seksyong **Latest sermon** sa Home at ang tab na [Sermons](../content/sermons.md) |
 | Anumang nag-ping sa iyo | Ang icon na **bell** sa app bar, o `/mobile/notifications` |
 
 ## Ang Me Page
 
-Ang [Me Page](../getting-started/me-page) ang pinakamalapit na pamalit sa dating feed. Inililista nito ang mga paparating para sa iyo -- mga atas sa paglilingkod, pagpaparehistro sa event, at mga event ng grupo -- kasama ang mga form na isinumite mo, ang kasaysayan ng attendance mo, at ang iyong pinakabagong mga notification, at direktang nagli-link sa iyong profile, mga kagustuhan sa notification, mensahe, giving, at mga pagpaparehistro.
+Ang [Me Page](../getting-started/me-page.md) ang pinakamalapit na pamalit sa dating feed. Inililista nito ang mga paparating para sa iyo -- mga atas sa paglilingkod, pagpaparehistro sa event, at mga event ng grupo -- kasama ang mga form na isinumite mo, ang kasaysayan ng attendance mo, at ang iyong pinakabagong mga notification, at direktang nagli-link sa iyong profile, mga kagustuhan sa notification, mensahe, giving, at mga pagpaparehistro.
 
 ## Mga Notification
 

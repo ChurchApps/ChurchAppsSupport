@@ -1,5 +1,7 @@
 ---
-title: "报名参加活动"
+title: "B1.church 中的活动报名"
+sidebar_label: "报名参加活动"
+description: "在 B1.church 报名参加教会活动：填写您的信息，添加家庭成员，选择选项，使用折扣码，然后付款或加入候补名单。"
 ---
 
 # 报名参加活动
@@ -79,14 +81,14 @@ title: "报名参加活动"
 
 ## 加入候补名单 {#joining-a-waitlist}
 
-如果活动已满，且你的教会已开启候补名单，第一步会显示："This event is full. You can join the waitlist and we will notify you if a spot opens."（此活动已满。您可以加入候补名单，如有名额空出，我们会通知您。）按正常流程完成报名即可——在候补期间会跳过付款。当有名额空出时，你会收到一封电子邮件；如果需要付款，邮件中会包含一个用于完成付款的链接。你也可以在[我的报名](./my-registrations)中查看状态并付款。
+如果活动已满，且你的教会已开启候补名单，第一步会显示："This event is full. You can join the waitlist and we will notify you if a spot opens."（此活动已满。您可以加入候补名单，如有名额空出，我们会通知您。）按正常流程完成报名即可——在候补期间会跳过付款。当有名额空出时，你会收到一封电子邮件；如果需要付款，邮件中会包含一个用于完成付款的链接。你也可以在[我的报名](./my-registrations.md)中查看状态并付款。
 
 ## 更改或取消报名
 
-如果你已登录，可以在成员门户的 **Registrations**（报名）页面中自行编辑或取消报名——参见[我的报名](./my-registrations)。访客应联系教会办公室，工作人员则可以在 B1 Admin 的报名页面中进行更改。
+如果你已登录，可以在成员门户的 **Registrations**（报名）页面中自行编辑或取消报名——参见[我的报名](./my-registrations.md)。访客应联系教会办公室，工作人员则可以在 B1 Admin 的报名页面中进行更改。
 
 ## 相关文章
 
 - [活动概览](./index.md) —— 浏览可报名的即将举行的活动
-- [我的报名](./my-registrations) —— 查看、编辑、支付余额以及取消你的报名
-- [奉献](../giving/making-donations) —— 在参加活动的同时进行奉献
+- [我的报名](./my-registrations.md) —— 查看、编辑、支付余额以及取消你的报名
+- [奉献](../giving/making-donations.md) —— 在参加活动的同时进行奉献

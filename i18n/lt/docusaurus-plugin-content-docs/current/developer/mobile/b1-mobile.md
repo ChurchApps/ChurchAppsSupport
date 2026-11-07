@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "Vietinis B1 Mobile (React Native / Expo) programos paleidimas, API galinių taškų nustatymas ir kūrimas Android ar iOS. B1 Mobile yra pasenusi."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobile yra pagrindinė mobilioji programėlė ChurchApps nariams. Ji sukurta 
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Įdiekite **Node.js** ir **Expo CLI** -- žr. [Reikalavimus](../setup/prerequisites)
+- Įdiekite **Node.js** ir **Expo CLI** -- žr. [Reikalavimus](../setup/prerequisites.md)
 - Įdiekite **Android Studio** (Android emuliatoriui) arba **Xcode** (iOS simuliatoriui)
-- Nustatykite API tikslą (demonstracinį arba vietinį) -- žr. [Aplinkos kintamuosius](../setup/environment-variables)
+- Nustatykite API tikslą (demonstracinį arba vietinį) -- žr. [Aplinkos kintamuosius](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ OTA atnaujinimai tinka tik JavaScript pakeitimams. Jei keičiate natyvų kodą a
 
 ## Susiję straipsniai
 
-- **[Mobilioji diegimas](../deployment/mobile)** -- Išsamus vadovas, kaip kurti, pateikti ir diegti mobiliąsias programėles
-- **[Aplinkos kintamieji](../setup/environment-variables)** -- Išsamus mobiliosios aplinkos konfigūravimo žinynas
+- **[Mobilioji diegimas](../deployment/mobile.md)** -- Išsamus vadovas, kaip kurti, pateikti ir diegti mobiliąsias programėles
+- **[Aplinkos kintamieji](../setup/environment-variables.md)** -- Išsamus mobiliosios aplinkos konfigūravimo žinynas

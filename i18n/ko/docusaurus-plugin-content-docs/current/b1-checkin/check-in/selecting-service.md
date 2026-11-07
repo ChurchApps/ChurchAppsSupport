@@ -1,5 +1,6 @@
 ---
 title: "예배 선택하기"
+description: "B1 Checkin의 예배 화면에서 참석하는 예배를 선택하세요. 이 선택에 따라 이후 체크인 과정에서 보이는 예배 시간과 그룹이 정해집니다."
 ---
 
 # 예배 선택하기
@@ -13,7 +14,7 @@ title: "예배 선택하기"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- B1 Church Checkin 앱에 [로그인](../getting-started/logging-in)하고 교회를 선택하세요.
+- B1 Church Checkin 앱에 [로그인](../getting-started/logging-in.md)하고 교회를 선택하세요.
 - 교회 관리자가 B1 Admin에서 [예배와 예배 시간을 설정](../../b1-admin/attendance/setup.md)했는지 확인하세요.
 
 </div>
@@ -24,11 +25,11 @@ title: "예배 선택하기"
 2. 교회에 설정된 모든 예배 목록이 나타납니다. 각 예배는 "Sunday Morning" 또는 "Wednesday Evening"처럼 예배 이름이 적힌 카드로 표시됩니다.
 3. 참석하는 예배를 누릅니다.
 
-앱은 그 예배와 연결된 예배 시간과 그룹을 불러온 뒤, [구성원 조회 화면](./looking-up-members)으로 이동합니다.
+앱은 그 예배와 연결된 예배 시간과 그룹을 불러온 뒤, [구성원 조회 화면](./looking-up-members.md)으로 이동합니다.
 
 ## 체크인이 열려 있지 않을 때
 
-관리자가 예배 시간에 [체크인 일정](../../b1-admin/attendance/setup#setting-a-check-in-schedule)을 설정했다면, 앱은 체크인 시간대가 열려 있을 때만 그 예배 시간을 선택하게 합니다. 지금 체크인 시간대가 닫혀 있는 예배 시간도 [가족 화면](./household-review)에는 계속 나타나지만, **Closed**로 표시되며(예: **Closed · opens Sun 9:30 AM**), 그룹 버튼은 제공되지 않습니다.
+관리자가 예배 시간에 [체크인 일정](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule)을 설정했다면, 앱은 체크인 시간대가 열려 있을 때만 그 예배 시간을 선택하게 합니다. 지금 체크인 시간대가 닫혀 있는 예배 시간도 [가족 화면](./household-review.md)에는 계속 나타나지만, **Closed**로 표시되며(예: **Closed · opens Sun 9:30 AM**), 그룹 버튼은 제공되지 않습니다.
 
 누른 예배의 모든 예배 시간이 닫혀 있다면, 앱이 체크인이 언제 열리는지 알려 줍니다. 예를 들어 **"Check-in for this service opens Sun 9:30 AM."**처럼 표시됩니다. (열리는 시각을 표시할 수 없으면 **"Check-in isn't open for this service right now."**라고 표시됩니다.) **Back**을 눌러 예배 목록으로 돌아가 다른 예배를 고르거나, 체크인이 열릴 때까지 기다렸다가 다시 시도하세요.
 
@@ -56,4 +57,4 @@ title: "예배 선택하기"
 
 ## 다음 단계
 
-예배를 선택한 뒤에는 전화번호나 이름으로 [가족을 조회](./looking-up-members)하세요.
+예배를 선택한 뒤에는 전화번호나 이름으로 [가족을 조회](./looking-up-members.md)하세요.

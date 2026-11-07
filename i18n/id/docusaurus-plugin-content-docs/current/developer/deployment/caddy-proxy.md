@@ -1,5 +1,6 @@
 ---
 title: "Proxy Domain Kustom Caddy"
+description: "Bangun dan jalankan reverse proxy Caddy yang melayani domain gereja kustom untuk situs B1.church, mencakup sertifikat TLS, pemetaan host, dan jebakan umum."
 ---
 
 # Proxy Domain Kustom Caddy
@@ -10,7 +11,7 @@ Domain gereja kustom (`mychurch.org` → situs B1 gereja) berakhir di satu insta
 
 </div>
 
-Untuk cara permintaan di-resolve ke gereja/situs setelah sampai di B1App, lihat [Perutean Website & Multi-Situs](../architecture/websites).
+Untuk cara permintaan di-resolve ke gereja/situs setelah sampai di B1App, lihat [Perutean Website & Multi-Situs](../architecture/websites.md).
 
 ## Komponen
 
@@ -88,5 +89,5 @@ Admin API hanya terikat ke `localhost:2019`. Mode runtime lama mengeksposnya sec
 
 ## Halaman Terkait
 
-- [Perutean Website & Multi-Situs](../architecture/websites): bagaimana permintaan yang di-proxy di-resolve ke gereja/situs di B1App
-- [Deployment API](./apis): deployment Membership API yang melayani `authorize`/`hostmap`
+- [Perutean Website & Multi-Situs](../architecture/websites.md): bagaimana permintaan yang di-proxy di-resolve ke gereja/situs di B1App
+- [Deployment API](./apis.md): deployment Membership API yang melayani `authorize`/`hostmap`

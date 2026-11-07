@@ -1,5 +1,6 @@
 ---
 title: "Aanwezigheid instellen"
+description: "Stel campussen, diensten, dienstijden en groepstoewijzingen in B1 Admin in, zodat aanwezigheidsregistratie en check-inschema's in je hele kerk werken."
 ---
 
 # Aanwezigheid instellen

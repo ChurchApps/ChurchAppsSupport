@@ -1,5 +1,6 @@
 ---
 title: "Razpoložljivostni koledar"
+description: "Nastavite sobe in opremo za rezervacije v B1 Admin, dodajte zaloge za pripravo in počistitev ter upravljajte ponavljajoče se rezervacije."
 ---
 
 # Razpoložljivostni koledar
@@ -13,7 +14,7 @@ Razpoložljivostni koledar vam ponuja pregled vseh rezervacij sob in virov v va�
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- V razdelku Sobe in viri nastavite vsaj eno [sobo ali vir](rooms-resources)
+- V razdelku Sobe in viri nastavite vsaj eno [sobo ali vir](./rooms-resources.md)
 - Potrebujete dostop za urejanje razdelka Koledarji v aplikaciji B1 Admin
 
 </div>
@@ -58,7 +59,7 @@ Za prikaz koledarja samo za eno sobo ali vir uporabite spustni seznam **Soba / V
 6. Kliknite **Shrani**, da oddate rezervacijo.
 
 :::info
-Če je pri sobi ali viru nastavljena **Skupina za odobritev**, bo rezervacija prikazana kot **Čaka**, dokler je ne odobri vodja te skupine. Postopek odobritve je opisan v članku [Odobritve koledarja](approvals).
+Če je pri sobi ali viru nastavljena **Skupina za odobritev**, bo rezervacija prikazana kot **Čaka**, dokler je ne odobri vodja te skupine. Postopek odobritve je opisan v članku [Odobritve koledarja](./approvals.md).
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Koledar bo pred shranjevanjem označil morebitne konflikte. Če se prikaže opoz
 
 ## Sorodni članki
 
-- [Sobe, viri in načrtovanje](rooms-resources) — nastavitev prostorov in opreme, ki jih je mogoče rezervirati
-- [Odobritve koledarja](approvals) — odobritev ali zavrnitev zahtevkov za rezervacijo
-- [Ustvarjanje koledarjev](creating-calendars) — upravljanje koledarjev dogodkov
+- [Sobe, viri in načrtovanje](./rooms-resources.md) — nastavitev prostorov in opreme, ki jih je mogoče rezervirati
+- [Odobritve koledarja](./approvals.md) — odobritev ali zavrnitev zahtevkov za rezervacijo
+- [Ustvarjanje koledarjev](./creating-calendars.md) — upravljanje koledarjev dogodkov

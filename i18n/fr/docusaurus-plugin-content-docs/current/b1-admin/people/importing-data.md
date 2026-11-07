@@ -1,5 +1,6 @@
 ---
 title: "Importer des données"
+description: "Intégrez les personnes, groupes, présences et dossiers de dons existants dans B1 Admin à l'aide de l'outil B1 Transfer, ou exportez une sauvegarde de vos données à tout moment."
 ---
 
 # Importer des données

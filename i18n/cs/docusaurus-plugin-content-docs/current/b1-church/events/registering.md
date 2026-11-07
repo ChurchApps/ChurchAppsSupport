@@ -1,5 +1,7 @@
 ---
-title: "Registrace na akce"
+title: "Registrace na událost v B1.church"
+sidebar_label: "Registrace na akce"
+description: "Registrujte se na událost v B1.church: zadejte údaje, přidejte rodinu, vyberte možnosti, uplatněte slevový kód a zaplaťte nebo čekejte na uvolnění místa."
 ---
 
 # Registrace na akce
@@ -79,14 +81,14 @@ Zobrazí se potvrzovací zpráva s údaji o akci a seznamem všech zaregistrovan
 
 ## Přihlášení na seznam čekajících
 
-Pokud je akce plná a váš sbor povolil seznam čekajících, první krok zobrazí zprávu: *„Tato akce je plná. Můžete se připojit na seznam čekajících a my vás upozorníme, pokud se uvolní místo.“* Přihlášení dokončete jako obvykle – zatímco jste na seznamu čekajících, platba se přeskakuje. Když se uvolní místo, obdržíte e-mail; pokud je třeba zaplatit, obsahuje odkaz k dokončení platby. Svůj stav a platbu můžete zkontrolovat také v sekci [Moje registrace](./my-registrations).
+Pokud je akce plná a váš sbor povolil seznam čekajících, první krok zobrazí zprávu: *„Tato akce je plná. Můžete se připojit na seznam čekajících a my vás upozorníme, pokud se uvolní místo.“* Přihlášení dokončete jako obvykle – zatímco jste na seznamu čekajících, platba se přeskakuje. Když se uvolní místo, obdržíte e-mail; pokud je třeba zaplatit, obsahuje odkaz k dokončení platby. Svůj stav a platbu můžete zkontrolovat také v sekci [Moje registrace](./my-registrations.md).
 
 ## Změna nebo zrušení registrace
 
-Pokud jste přihlášeni, můžete svou registraci sami upravit nebo zrušit na stránce **Registrace** v členské sekci – viz [Moje registrace](./my-registrations). Hosté by měli kontaktovat kancelář sboru a změnu může provést i personál na stránce registrací v B1 Admin.
+Pokud jste přihlášeni, můžete svou registraci sami upravit nebo zrušit na stránce **Registrace** v členské sekci – viz [Moje registrace](./my-registrations.md). Hosté by měli kontaktovat kancelář sboru a změnu může provést i personál na stránce registrací v B1 Admin.
 
 ## Související články
 
 - [Přehled akcí](./index.md) -- Procházejte nadcházející akce s registrací
-- [Moje registrace](./my-registrations) -- Zobrazení, úprava, úhrada nedoplatků a zrušení vašich registrací
-- [Darování](../giving/making-donations) -- Darujte spolu s účastí na akci
+- [Moje registrace](./my-registrations.md) -- Zobrazení, úprava, úhrada nedoplatků a zrušení vašich registrací
+- [Darování](../giving/making-donations.md) -- Darujte spolu s účastí na akci

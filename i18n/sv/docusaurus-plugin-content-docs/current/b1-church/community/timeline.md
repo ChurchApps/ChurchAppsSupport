@@ -1,5 +1,6 @@
 ---
 title: "Tidslinje"
+description: "Fliken Timeline i B1.church medlemsportalen har avvecklats. Hitta gruppchattar, händelser, uppgifter och aviseringar på sidan Me, klockikonen och i varje grupp."
 ---
 
 # Tidslinje
@@ -16,13 +17,13 @@ Den fristående fliken **Tidslinje** har tagits bort. Medlemsportalen öppnas nu
 | --- | --- |
 | Gruppkonversationer och meddelanden | Chatten i varje [grupp](../groups/conversations.md) (**Öppna chatt**) |
 | Kommande händelser för dig och dina grupper | Sidan **Jag** (`/mobile/me`) och avsnittet **Nästa händelse** i varje grupp |
-| Uppgifter och tjänstetilldelningar | Sidan **Jag** och [Planer](../plans/) |
+| Uppgifter och tjänstetilldelningar | Sidan **Jag** och [Planer](../plans/index.md) |
 | Nya predikningar | Avsnittet **Senaste predikan** på startsidan och fliken [Predikningar](../content/sermons.md) |
 | Allt som har skickat en notis till dig | Klockikonen i appfältet, eller `/mobile/notifications` |
 
 ## Sidan Jag
 
-[Sidan Jag](../getting-started/me-page) är den närmaste ersättningen för det gamla flödet. Den visar vad som väntar för dig – tjänstetilldelningar, eventregistreringar och gruppevenemang – tillsammans med formulär du har skickat in, din närvarohistorik och dina senaste aviseringar. Därifrån kommer du direkt till din profil, inställningar för aviseringar, meddelanden, gåvor och registreringar.
+[Sidan Jag](../getting-started/me-page.md) är den närmaste ersättningen för det gamla flödet. Den visar vad som väntar för dig – tjänstetilldelningar, eventregistreringar och gruppevenemang – tillsammans med formulär du har skickat in, din närvarohistorik och dina senaste aviseringar. Därifrån kommer du direkt till din profil, inställningar för aviseringar, meddelanden, gåvor och registreringar.
 
 ## Aviseringar
 

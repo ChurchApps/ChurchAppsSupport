@@ -1,5 +1,7 @@
 ---
-title: "Začínáme"
+title: "Pierwsze kroki z B1 Mobile (wycofane)"
+sidebar_label: "Začínáme"
+description: "Skonfiguruj B1 Mobile na telefonie: znajdź aplikację, zaloguj się kontem ChurchApps i wybierz kościół. B1 Mobile jest wycofywany na rzecz PWA."
 ---
 
 Ne, toto je chybné. Přeložil jsem do češtiny, ale zadání vyžadovalo polštinu. Zde je správný překlad do polštiny:
@@ -31,10 +33,10 @@ To wszystko. Po wybraniu kościoła aplikacja wczyta jego branding, linki nawiga
 
 ## W tej sekcji
 
-- [Instalacja aplikacji](./installing) -- Gdzie pobrać B1 Mobile i wymagania urządzenia.
-- [Logowanie](./logging-in) -- Jak się zalogować lub utworzyć nowe konto.
-- [Zmiana kościoła](./switching-churches) -- Jak przełączać się między kościołami, jeśli należysz do więcej niż jednego.
+- [Instalacja aplikacji](./installing.md) -- Gdzie pobrać B1 Mobile i wymagania urządzenia.
+- [Logowanie](./logging-in.md) -- Jak się zalogować lub utworzyć nowe konto.
+- [Zmiana kościoła](./switching-churches.md) -- Jak przełączać się między kościołami, jeśli należysz do więcej niż jednego.
 
 :::tip
-B1 Mobile korzysta z tego samego konta ChurchApps co wszystkie pozostałe produkty ChurchApps. Jeśli masz już konto na [B1.church](../../b1-church/), B1 Admin lub Lessons.church, możesz użyć tych samych danych logowania.
+B1 Mobile korzysta z tego samego konta ChurchApps co wszystkie pozostałe produkty ChurchApps. Jeśli masz już konto na [B1.church](../../b1-church/index.md), B1 Admin lub Lessons.church, możesz użyć tych samych danych logowania.
 :::

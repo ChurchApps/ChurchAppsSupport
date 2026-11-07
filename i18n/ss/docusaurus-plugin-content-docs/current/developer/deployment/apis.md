@@ -1,5 +1,6 @@
 ---
 title: "Kufakwa Kwe-API"
+description: "Fakela i-ChurchApps API ku-AWS Lambda nge-Serverless, kuhlanganisa kwakhiwa, imisebenti ye-demo ne-prod, kufuduswa kwe-database, nekumiswa kwe-SSM."
 ---
 
 # Kufakwa Kwe-API
@@ -13,7 +14,7 @@ Ema-API e-ChurchApps afakwa njengemisebenti ye-AWS Lambda kusetjentiswa i-Server
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- Hlela i-API ngasekhaya -- bona [API Local Setup](../api/local-setup)
+- Hlela i-API ngasekhaya -- bona [API Local Setup](../api/local-setup.md)
 - Hlela ema-credential e-AWS emshinini wakho
 - Chaka kutsi unemvumo yekufinyelela ku-akhawunti ye-AWS lehlosiwe
 
@@ -68,6 +69,6 @@ Kute uhlole kufakwa ngaphandle kwekutsintsa i-production, faka njalo ku-staging 
 
 ## Emahloko Lahlobene
 
-- **[API Local Setup](../api/local-setup)** -- Kuhlela i-API kutfutfukiswa
-- **[Simo Semodyuli](../api/module-structure)** -- Kucondza sakhiwo semisebenti ye-Lambda
-- **[Kufakwa Kwe-Web App](./web-apps)** -- Kufaka tinhlelo te-frontend
+- **[API Local Setup](../api/local-setup.md)** -- Kuhlela i-API kutfutfukiswa
+- **[Simo Semodyuli](../api/module-structure.md)** -- Kucondza sakhiwo semisebenti ye-Lambda
+- **[Kufakwa Kwe-Web App](./web-apps.md)** -- Kufaka tinhlelo te-frontend

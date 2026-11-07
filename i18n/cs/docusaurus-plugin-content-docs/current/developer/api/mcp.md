@@ -1,5 +1,6 @@
 ---
 title: "Server MCP"
+description: "Nastavte přístup MCP k API B1, aby AI klienti jako Claude Code, Cursor nebo Claude Desktop mohli volat endpointy dat církve pomocí API klíčů nebo OAuth."
 ---
 
 # Server MCP
@@ -13,7 +14,7 @@ B1 API obsahuje server [MCP (Model Context Protocol)](https://modelcontextprotoc
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Klíč B1 API](./api-keys) (`cak_…`) s oprávněními, která klient potřebuje, nebo MCP klient, který se umí přihlásit přes OAuth (viz [zjišťování OAuth](#oauth-discovery))
+- [Klíč B1 API](./api-keys.md) (`cak_…`) s oprávněními, která klient potřebuje, nebo MCP klient, který se umí přihlásit přes OAuth (viz [zjišťování OAuth](#oauth-discovery))
 - Dostupná adresa hostitele B1 API: `https://api.churchapps.org` pro hostované církve, nebo vaše vlastní nasazení
 - MCP klient. Nastavení pro koncové uživatele najdete v článcích [Claude](/docs/b1-admin/integrations/claude) a [ChatGPT](/docs/b1-admin/integrations/chatgpt)
 
@@ -119,7 +120,7 @@ Výsledek nástroje je označen `isError: true` u každé odpovědi se stavem �
 
 ### `describe_page_builder`
 
-Jediný nástroj, který není obecný: statický, samostatný průvodce tvorbou webových stránek přes endpointy `/content/*`. Obsahuje datový model Stránka → Sekce → Prvek, pracovní postup vytváření, každý `elementType` s tvarem `answersJSON`, nastavení na úrovni sekce (například dělicí tvary `dividerTop` a `dividerBottom`) a ucelený příklad od začátku do konce. Nemá žádné vstupy a zrcadlí katalog prvků spravovaný v editoru B1Admin (viz [Architektura tvorby webu](../architecture/website-builder)). Agenti by jej měli zavolat jednou před vytvářením nebo úpravou obsahu stránky a poté jednat přes `api_call`.
+Jediný nástroj, který není obecný: statický, samostatný průvodce tvorbou webových stránek přes endpointy `/content/*`. Obsahuje datový model Stránka → Sekce → Prvek, pracovní postup vytváření, každý `elementType` s tvarem `answersJSON`, nastavení na úrovni sekce (například dělicí tvary `dividerTop` a `dividerBottom`) a ucelený příklad od začátku do konce. Nemá žádné vstupy a zrcadlí katalog prvků spravovaný v editoru B1Admin (viz [Architektura tvorby webu](../architecture/website-builder.md)). Agenti by jej měli zavolat jednou před vytvářením nebo úpravou obsahu stránky a poté jednat přes `api_call`.
 
 ## Model ověřování
 
@@ -153,11 +154,11 @@ Na `/mcp` není žádné omezení rychlosti na úrovni aplikace. V produkci se o
 
 ## Zjišťování OAuth
 
-Server MCP zveřejňuje metadata OAuth 2.1, aby se klienti, kteří se připojují jen k serverům zjištěným přes OAuth (zejména dialog „Add custom connector“ v claude.ai), mohli přihlásit uživatele bez vloženého klíče. `/mcp` je chráněný zdroj, [poskytovatel OAuth](./connected-apps) pod `/membership/oauth` je jeho autorizační server a stránka `/oauth` v B1Admin je souhlasová obrazovka.
+Server MCP zveřejňuje metadata OAuth 2.1, aby se klienti, kteří se připojují jen k serverům zjištěným přes OAuth (zejména dialog „Add custom connector“ v claude.ai), mohli přihlásit uživatele bez vloženého klíče. `/mcp` je chráněný zdroj, [poskytovatel OAuth](./connected-apps.md) pod `/membership/oauth` je jeho autorizační server a stránka `/oauth` v B1Admin je souhlasová obrazovka.
 
 | Endpoint | Účel |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (také `/.well-known/oauth-protected-resource/mcp`) | Metadata chráněného zdroje (RFC 9728): `resource` je `<api>/mcp`, `authorization_servers` je kořen API a `scopes_supported` obsahuje každé [oprávnění API klíče](./api-keys#scopes) |
+| `GET /.well-known/oauth-protected-resource` (také `/.well-known/oauth-protected-resource/mcp`) | Metadata chráněného zdroje (RFC 9728): `resource` je `<api>/mcp`, `authorization_servers` je kořen API a `scopes_supported` obsahuje každé [oprávnění API klíče](./api-keys.md#scopes) |
 | `GET /.well-known/oauth-authorization-server` | Metadata autorizačního serveru (RFC 8414): `authorization_endpoint` je `/oauth` v B1Admin, `token_endpoint` je `/membership/oauth/token` a `registration_endpoint` je `/membership/oauth/register` |
 | `POST /membership/oauth/register` | Dynamická registrace klienta (RFC 7591) |
 
@@ -209,8 +210,8 @@ Server MCP je v `src/modules/mcp/` v repozitáři Api. Důležité soubory:
 
 ## Související
 
-- [Klíče API](./api-keys)
-- [Webhooky](./webhooks)
-- [Připojené aplikace (OAuth)](./connected-apps)
+- [Klíče API](./api-keys.md)
+- [Webhooky](./webhooks.md)
+- [Připojené aplikace (OAuth)](./connected-apps.md)
 - [Claude: nastavení pro koncové uživatele](/docs/b1-admin/integrations/claude)
 - [ChatGPT: nastavení pro koncové uživatele](/docs/b1-admin/integrations/chatgpt)

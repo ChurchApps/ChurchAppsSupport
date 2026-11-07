@@ -1,5 +1,6 @@
 ---
 title: "Aprovações de Calendário"
+description: "Revise as solicitações pendentes de reserva de salas e recursos no B1 Admin, verifique conflitos e aprove ou recuse, publicando o evento se desejar."
 ---
 
 # Aprovações de Calendário
@@ -13,7 +14,7 @@ A página Aprovações é onde administradores revisam e agem sobre solicitaçõ
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Configure salas ou recursos com um **Grupo de Aprovação** em [Salas & Recursos](rooms-resources)
+- Configure salas ou recursos com um **Grupo de Aprovação** em [Salas & Recursos](./rooms-resources.md)
 - Você precisa da permissão **Calendars Admin** ou da permissão **content.edit**
 
 </div>
@@ -41,7 +42,7 @@ Clique em **Aprovar** ou **Rejeitar** em qualquer solicitação de reserva (reje
 Quando você clica em **Aprovar**, um diálogo **Aprovar reserva** abre para que você possa também publicar o evento no mesmo passo:
 
 1. Marque **Publicar no calendário público** para tornar o evento público no calendário do seu grupo. Deixe desmarcado para aprovar a reserva sem mudar a visibilidade do evento.
-2. Uma vez que **Publicar no calendário público** está marcado, você pode opcionalmente escolher um calendário selecionado de **Também adicionar ao calendário** para adicionar o evento a um dos seus [calendários selecionados](curated-calendar) também. Deixe definido para **Nenhum** para pular isso. (Esta opção apenas aparece se você tem a permissão **content.edit**.)
+2. Uma vez que **Publicar no calendário público** está marcado, você pode opcionalmente escolher um calendário selecionado de **Também adicionar ao calendário** para adicionar o evento a um dos seus [calendários selecionados](./curated-calendar.md) também. Deixe definido para **Nenhum** para pular isso. (Esta opção apenas aparece se você tem a permissão **content.edit**.)
 3. Clique em **Aprovar**.
 
 ## Eventos Pendentes
@@ -49,10 +50,10 @@ Quando você clica em **Aprovar**, um diálogo **Aprovar reserva** abre para que
 Se seu fluxo de trabalho de calendário requer aprovação de evento antes de eventos ficarem visíveis ao público, eventos pendentes aparecem na seção **Solicitações de Evento**. Clique em **Aprovar** para publicar um evento no calendário, ou em **Rejeitar** para notificar o solicitante de que mudanças são necessárias.
 
 :::tip
-Configure um Grupo de Aprovação em uma sala em [Salas & Recursos](rooms-resources) para requerer aprovação para aquela sala. Grupos com acesso podem então solicitar a sala ao criar eventos, e essas solicitações fluem para esta página.
+Configure um Grupo de Aprovação em uma sala em [Salas & Recursos](./rooms-resources.md) para requerer aprovação para aquela sala. Grupos com acesso podem então solicitar a sala ao criar eventos, e essas solicitações fluem para esta página.
 :::
 
 ## Artigos Relacionados
 
-- [Salas, Recursos & Agendamento](rooms-resources) — configure salas e recursos reserváveis
-- [Criando Calendários](creating-calendars) — gerencie calendários e eventos
+- [Salas, Recursos & Agendamento](./rooms-resources.md) — configure salas e recursos reserváveis
+- [Criando Calendários](./creating-calendars.md) — gerencie calendários e eventos

@@ -1,5 +1,6 @@
 ---
 title: Introducción a B1.church
+description: "Te guía para iniciar sesión en B1 Admin, moverte por el Panel y el menú de salto, y configurar los datos de la iglesia antes de explorar otras herramientas."
 ---
 
 # ¡Bienvenido a B1.church Admin!
@@ -30,7 +31,7 @@ Para más ayuda, escribe a [support@churchapps.org](mailto:support@churchapps.or
 10. Ahora puedes entrar a B1.church a través del **portal de miembros** o del **portal de administración**. El portal de miembros te permite ver cómo se ve B1.church para tus miembros, consultar tus grupos y administrar tus donaciones personales.
 
 :::tip
-Empieza con la página de [Configuración](./settings/) para configurar el nombre de tu iglesia, la identidad visual y los permisos del equipo. Esto asegura que todo lo que configures después se muestre correctamente.
+Empieza con la página de [Configuración](./settings/index.md) para configurar el nombre de tu iglesia, la identidad visual y los permisos del equipo. Esto asegura que todo lo que configures después se muestre correctamente.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -77,9 +78,9 @@ Buscar suele ser la forma más rápida de llegar a una página. Escribe parte de
 
 Después de ver esta introducción, explora estas funciones clave:
 
-- [Agregar personas](./people/adding-people): aprende a agregar miembros a tu base de datos
-- [Grupos](./groups/): configura y administra los grupos de la iglesia
-- [Planes de servicio](./serving/plans): organiza tu ministerio de servicio
-- [Asistencia](./attendance/): registra la asistencia y el registro
-- [Sitio web](./website/): crea y personaliza el sitio web de tu iglesia
-- [Configuración](./settings/): configura la información de tu iglesia y los permisos
+- [Agregar personas](./people/adding-people.md): aprende a agregar miembros a tu base de datos
+- [Grupos](./groups/index.md): configura y administra los grupos de la iglesia
+- [Planes de servicio](./serving/plans.md): organiza tu ministerio de servicio
+- [Asistencia](./attendance/index.md): registra la asistencia y el registro
+- [Sitio web](./website/index.md): crea y personaliza el sitio web de tu iglesia
+- [Configuración](./settings/index.md): configura la información de tu iglesia y los permisos

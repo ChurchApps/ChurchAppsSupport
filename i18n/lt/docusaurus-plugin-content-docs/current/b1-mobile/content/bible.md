@@ -1,5 +1,7 @@
 ---
-title: "Biblija"
+title: "Biblijos skaitymas B1 Mobile programėlėje"
+sidebar_label: "Biblija"
+description: "Atidarykite Šventąjį Raštą B1 Mobile Biblijos skaitytuvu iš šoninio meniu, naršykite knygas, skyrius ir eilutes."
 ---
 
 # Biblija
@@ -13,7 +15,7 @@ B1 Mobile turi įmontuotą Biblijos skaityklę, todėl Šventąjį Raštą galit
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiekite B1 Mobile](../getting-started/installing) ir [prisijunkite](../getting-started/logging-in) prie savo paskyros
+- [Įdiekite B1 Mobile](../getting-started/installing.md) ir [prisijunkite](../getting-started/logging-in.md) prie savo paskyros
 - Jūsų bažnyčioje turi būti įjungta Biblijos funkcija
 
 </div>
@@ -37,7 +39,7 @@ Biblijos skaityklę palaiko YouVersion arba kita jūsų bažnyčios sukonfigūru
 Skaityklė užpildo visą ekraną, todėl patogu skaityti savo įrenginyje.
 
 :::tip
-Įtraukite Biblijos ekraną į savo kasdienę rutiną — tai greitas būdas skaityti Šventąjį Raštą bet kur esant. Derinkite jį su [Eilute dienai](./verse-of-the-day), kad gautumėte kasdienio įkvėpimo.
+Įtraukite Biblijos ekraną į savo kasdienę rutiną — tai greitas būdas skaityti Šventąjį Raštą bet kur esant. Derinkite jį su [Eilute dienai](./verse-of-the-day.md), kad gautumėte kasdienio įkvėpimo.
 :::
 
 ## Prieinamumas
@@ -46,6 +48,6 @@ Biblijos ekranas pasiekiamas, kai jūsų bažnyčia įjungia šią funkciją. Je
 
 ## Susiję straipsniai
 
-- [Eilutė dienai](./verse-of-the-day) -- Žiūrėkite kasdienę Biblijos eilutę
-- [Pamokslai](./sermons) -- Žiūrėkite pamokslus, papildančius jūsų Biblijos skaitymą
+- [Eilutė dienai](./verse-of-the-day.md) -- Žiūrėkite kasdienę Biblijos eilutę
+- [Pamokslai](./sermons.md) -- Žiūrėkite pamokslus, papildančius jūsų Biblijos skaitymą
 - [FreePlay](/docs/freeplay/) -- Vesti struktūrinę mokymo programą klasės televizoriuose (pakeičia nebenaudojamą programėlės Pamokų ekraną)

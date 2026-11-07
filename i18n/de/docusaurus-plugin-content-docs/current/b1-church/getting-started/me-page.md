@@ -1,5 +1,6 @@
 ---
 title: "Die Me-Seite"
+description: "Die Seite Me auf einen Blick: Dienste, Termine, Anmeldungen, Haushalt, Gruppen, Spenden, Formulare, Anwesenheit und Posteingang im B1App-Portal."
 ---
 
 # Die Me-Seite
@@ -31,7 +32,7 @@ Wenn Sie abgemeldet sind, sehen Sie stattdessen den Text „Melden Sie sich an, 
 Der Abschnitt **Demnächst** listet Ihre nächsten drei Einträge in chronologischer Reihenfolge auf, jeweils mit einem Typ-Kennzeichen. Wenn es mehr gibt, tippen Sie auf **Alle demnächst**, um die vollständige Liste zu sehen, und auf **Zurück zu Me**, um zurückzukehren.
 
 - **Dienst** – Ihre Ehrenamtsaufgaben in den kommenden Gottesdienstplänen, mit Datum und Beginnzeit des Gottesdienstes, bei dem Sie dienen (bei mehreren Gottesdienstzeiten die Zeit, zu der Ihr Team benötigt wird, oder nur das Datum, wenn der Plan keine Zeiten hat). Tippen Sie auf einen Eintrag, um den Plan zu öffnen.
-- **Anmeldung** – Veranstaltungen, für die Sie sich [angemeldet](../events/registering) haben. Tippen Sie darauf, um zu Ihren [Anmeldungen](../events/my-registrations) zu gelangen.
+- **Anmeldung** – Veranstaltungen, für die Sie sich [angemeldet](../events/registering.md) haben. Tippen Sie darauf, um zu Ihren [Anmeldungen](../events/my-registrations.md) zu gelangen.
 - **Veranstaltung** – Kommende Veranstaltungen aus Gruppen, denen Sie angehören. Tippen Sie auf eine, um die Veranstaltungen der Gruppe zu öffnen.
 
 Wenn eine Veranstaltung oder Anmeldung ein Foto hat, erscheint zu Beginn der Zeile eine kleine Vorschau.
@@ -66,7 +67,7 @@ Der Abschnitt **Anfragen & Anmeldungen** zeigt, wie viele Veranstaltungsanmeldun
 
 Wenn Ihre Gemeinde buchbare Räume oder Ressourcen hat, erscheinen zwei weitere Links:
 
-- **Veranstaltung anfragen** – Beantragen Sie, eine Veranstaltung mit den benötigten Räumen und Geräten zu reservieren. Siehe [Veranstaltungen & Räume anfragen](../events/requesting-events).
+- **Veranstaltung anfragen** – Beantragen Sie, eine Veranstaltung mit den benötigten Räumen und Geräten zu reservieren. Siehe [Veranstaltungen & Räume anfragen](../events/requesting-events.md).
 - **Meine Anfragen** – Verfolgen Sie den Status Ihrer Anfragen und stornieren Sie offene.
 
 Wenn Ihre Gemeinde keine Räume oder Ressourcen eingerichtet hat, sind diese Links ausgeblendet.
@@ -77,8 +78,8 @@ Der Abschnitt **Posteingang** zeigt Ihre zwei neuesten Benachrichtigungen, damit
 
 ## Verwandte Artikel
 
-- [Navigation in B1App](./navigating) – Der Aufbau des Mitgliederportals
-- [Veranstaltungen & Räume anfragen](../events/requesting-events) – Anfragen für Räume und Ressourcen einreichen und verfolgen
-- [Meine Anmeldungen](../events/my-registrations) – Ihre Veranstaltungsanmeldungen verwalten
-- [Ehrenamt-Anmeldung](../serving/volunteer-signup) – So funktionieren Dienstaufgaben
-- [Selbst-Check-in](../checkin/self-checkin) – So wird Ihre Anwesenheit erfasst
+- [Navigation in B1App](./navigating.md) – Der Aufbau des Mitgliederportals
+- [Veranstaltungen & Räume anfragen](../events/requesting-events.md) – Anfragen für Räume und Ressourcen einreichen und verfolgen
+- [Meine Anmeldungen](../events/my-registrations.md) – Ihre Veranstaltungsanmeldungen verwalten
+- [Ehrenamt-Anmeldung](../serving/volunteer-signup.md) – So funktionieren Dienstaufgaben
+- [Selbst-Check-in](../checkin/self-checkin.md) – So wird Ihre Anwesenheit erfasst

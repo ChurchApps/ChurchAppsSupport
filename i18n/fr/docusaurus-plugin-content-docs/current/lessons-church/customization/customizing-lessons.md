@@ -1,5 +1,6 @@
 ---
 title: "Personnaliser les leçons"
+description: "Retirer, masquer ou réordonner sections et rôles d'une leçon Lessons.church, et choisir si les modifications s'appliquent à une classe ou à toutes."
 ---
 
 # Personnaliser les leçons

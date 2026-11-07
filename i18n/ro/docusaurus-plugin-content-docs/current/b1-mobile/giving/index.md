@@ -1,5 +1,7 @@
 ---
-title: "Dăruire"
+title: "Donații în aplicația B1 Mobile"
+sidebar_label: "Dăruire"
+description: "Faceți un dar în aplicația B1 Mobile, verificați donațiile anului curent și gestionați metodele de plată salvate. Acoperă filele Prezentare generală, Donează, Gestionează și Istoric."
 ---
 
 # Dăruire
@@ -24,7 +26,7 @@ Secțiunea de dăruire este organizată în patru file:
 Toate donațiile făcute prin B1 Mobile sunt procesate în siguranță prin **Stripe**. Informațiile dumneavoastră de plată sunt gestionate de infrastructura sigură a Stripe și nu sunt stocate niciodată pe serverele ChurchApps. Puteți dărui cu încredere, știind că detaliile financiare sunt protejate.
 
 :::info
-Administratorul bisericii dumneavoastră configurează fondurile disponibile și procesarea plăților prin [B1 Admin](../../b1-admin/). Dacă nu vedeți o opțiune de dăruire în aplicație, este posibil ca biserica dumneavoastră să nu fi configurat încă această funcționalitate.
+Administratorul bisericii dumneavoastră configurează fondurile disponibile și procesarea plăților prin [B1 Admin](../../b1-admin/index.md). Dacă nu vedeți o opțiune de dăruire în aplicație, este posibil ca biserica dumneavoastră să nu fi configurat încă această funcționalitate.
 :::
 
 ## Ce puteți face
@@ -38,6 +40,6 @@ Iată ce puteți face din secțiunea de dăruire:
 
 ## Pașii următori
 
-- [Efectuarea unei donații](./making-donations) -- Aflați cum să faceți un dar din aplicație
-- [Gestionarea metodelor de plată](./managing-payments) -- Adăugați sau eliminați metode de plată salvate
-- [Istoricul donațiilor](./donation-history) -- Vizualizați rezumatul dăruirii și donațiile anterioare
+- [Efectuarea unei donații](./making-donations.md) -- Aflați cum să faceți un dar din aplicație
+- [Gestionarea metodelor de plată](./managing-payments.md) -- Adăugați sau eliminați metode de plată salvate
+- [Istoricul donațiilor](./donation-history.md) -- Vizualizați rezumatul dăruirii și donațiile anterioare

@@ -1,5 +1,6 @@
 ---
 title: "管理支付方式"
+description: "在 B1 Mobile 奉献板块的“管理”标签页中添加、查看和删除已保存的银行卡，让重复捐款无需重新输入卡片信息，更加便捷。"
 ---
 
 # 管理支付方式
@@ -13,7 +14,7 @@ title: "管理支付方式"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in)您的账户
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md)您的账户
 
 </div>
 
@@ -31,7 +32,7 @@ title: "管理支付方式"
 4. 输入卡片信息。信息会安全地发送到 **Stripe** 进行处理。
 5. 保存后，新卡片将出现在您的支付方式列表中。
 
-下次您从**捐赠**标签[进行奉献](./making-donations)时，已保存的卡片将作为支付选项可用。
+下次您从**捐赠**标签[进行奉献](./making-donations.md)时，已保存的卡片将作为支付选项可用。
 
 ## 删除支付方式
 
@@ -44,7 +45,7 @@ title: "管理支付方式"
 该卡片将不再作为奉献时的支付选项显示。
 
 :::info
-删除支付方式不会影响任何过往的奉献。您的[奉献历史](./donation-history)保持不变。
+删除支付方式不会影响任何过往的奉献。您的[奉献历史](./donation-history.md)保持不变。
 :::
 
 :::tip
@@ -53,5 +54,5 @@ title: "管理支付方式"
 
 ## 相关文章
 
-- [进行奉献](./making-donations) -- 了解如何使用已保存的支付方式进行奉献
-- [奉献历史](./donation-history) -- 查看奉献摘要和过往奉献记录
+- [进行奉献](./making-donations.md) -- 了解如何使用已保存的支付方式进行奉献
+- [奉献历史](./donation-history.md) -- 查看奉献摘要和过往奉献记录

@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "Brskaj, načrtuj in predstavljaj brezplačne ure po starostnih skupinah od 12+ ponudnikov v Lessons.church, z učilnicami in integracijami FreePlay ali B1."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church deluje z drugimi orodji ChurchApps, ki vam pomagajo posredovati v
 
 ## Razdelki dokumentacije
 
-- [Začetek](./getting-started/) -- Ustvarite račun in spoznajte osnove
-- [Brskanje po vsebini](./browsing/) -- Poiščite programe, študije in lekcije
-- [Razredi](./classrooms/) -- Nastavite razrede in načrtujte lekcije
-- [Prilagajanje](./customization/) -- Prilagodite lekcije svoji cerkvi
-- [Predstavljanje](./presenting/) -- Izvajajte lekcije v razredu z načinom predstavitve
-- [Administracija](./admin/) -- Upravljajte programe, študije in lekcije kot skrbnik
+- [Začetek](./getting-started/index.md) -- Ustvarite račun in spoznajte osnove
+- [Brskanje po vsebini](./browsing/index.md) -- Poiščite programe, študije in lekcije
+- [Razredi](./classrooms/index.md) -- Nastavite razrede in načrtujte lekcije
+- [Prilagajanje](./customization/index.md) -- Prilagodite lekcije svoji cerkvi
+- [Predstavljanje](./presenting/index.md) -- Izvajajte lekcije v razredu z načinom predstavitve
+- [Administracija](./admin/index.md) -- Upravljajte programe, študije in lekcije kot skrbnik
 - [Veroizpoved](./statement-of-faith.md) -- Temeljna verovanja in smernice za učni načrt
 
 Za podporo pišite na [support@churchapps.org](mailto:support@churchapps.org).

@@ -1,5 +1,6 @@
 ---
 title: "Integrations- och tilläggsyta"
+description: "Karta över alla sätt att ansluta till ChurchApps B1: REST API, API-nycklar, OAuth, webhooks, MCP och innehållsleverantörer, med länkar till varje referens."
 ---
 
 # Integrations- och tilläggsyta
@@ -14,12 +15,12 @@ Allt som en tredje part kan koppla in sig till går genom ett API och en auktori
 
 Det finns sex sätt in eller ut, och alla delar samma autentiseringslager:
 
-- **[REST API](../api/api-keys)** — hela produktytan, som kan anropas med en bearer-token från vilket språk som helst.
-- **[API-nycklar](../api/api-keys)** — den enklaste autentiseringsuppgiften: en `cak_…`-token kopplad till en person i en församling.
-- **[OAuth 2.0 & anslutna appar](../api/connected-apps)** — godkännande per församling för appar med flera kunder; utfärdar samma JWT som en användare får.
-- **[Webhooks](../api/webhooks)** — signerade, hållbart levererade utgående händelser.
-- **[MCP-server](../api/mcp)** — ett AI-anpassat omslag runt REST API:t på `/mcp`.
-- **[Innehållsleverantörer](../freeplay-content-provider)** — den inkommande vägen för externa mediebibliotek till FreePlay och B1-apparna.
+- **[REST API](../api/api-keys.md)** — hela produktytan, som kan anropas med en bearer-token från vilket språk som helst.
+- **[API-nycklar](../api/api-keys.md)** — den enklaste autentiseringsuppgiften: en `cak_…`-token kopplad till en person i en församling.
+- **[OAuth 2.0 & anslutna appar](../api/connected-apps.md)** — godkännande per församling för appar med flera kunder; utfärdar samma JWT som en användare får.
+- **[Webhooks](../api/webhooks.md)** — signerade, hållbart levererade utgående händelser.
+- **[MCP-server](../api/mcp.md)** — ett AI-anpassat omslag runt REST API:t på `/mcp`.
+- **[Innehållsleverantörer](../freeplay-content-provider.md)** — den inkommande vägen för externa mediebibliotek till FreePlay och B1-apparna.
 
 Allt utom innehållsleverantörer levereras av ett enda monolitiskt API (repositoryt [Api](https://github.com/ChurchApps/Api)) vars moduler monteras under stabila basvägar — `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting` och `/mcp`.
 
@@ -80,7 +81,7 @@ Controllers grindar åtgärder med `au.checkAccess(contentType, action)` mot tok
 - Ett scope kan bara *ta bort* behörigheter, så en avgränsad autentiseringsuppgift kan aldrig höja sig till server- eller domänadministration (de behörigheterna är avsiktligt inte kopplade till något scope).
 - API-nycklar bär prefixet `cak_`; `CustomAuthProvider.getUser()` förgrenar på det, hashar hemligheten och löser om ägarens aktuella RBAC vid varje anrop.
 
-Se [API-nycklar → Scopes](../api/api-keys#scopes) för hela katalogen.
+Se [API-nycklar → Scopes](../api/api-keys.md#scopes) för hela katalogen.
 
 ## Ytreferens
 
@@ -90,7 +91,7 @@ Den kompletta produktytan. Varje autentiserad endpoint accepterar antingen en JW
 
 ### API-nycklar
 
-Ett personligt åtkomsttoken i formatet `cak_<prefix>.<secret>`, skapat under **B1Admin → Settings → Developer → API Keys**. Endast en SHA-256-hash lagras; den råa nyckeln visas en gång. Hanteras på `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Bäst för en enskild församlings egna skript och för kopplingar som Zapier, Make och Google Sheets. → **[API-nycklar](../api/api-keys)**
+Ett personligt åtkomsttoken i formatet `cak_<prefix>.<secret>`, skapat under **B1Admin → Settings → Developer → API Keys**. Endast en SHA-256-hash lagras; den råa nyckeln visas en gång. Hanteras på `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Bäst för en enskild församlings egna skript och för kopplingar som Zapier, Make och Google Sheets. → **[API-nycklar](../api/api-keys.md)**
 
 ### OAuth 2.0 & anslutna appar
 
@@ -102,19 +103,19 @@ För appar med flera klienter som behöver att varje församling godkänner. Imp
 
 Publika klienter kan också registrera sig själva med `POST /oauth/register` (RFC 7591 dynamisk klientregistrering); de får ett `client_id` och ingen hemlighet, och deras omdirigerings-URI:er måste vara `https` eller loopback.
 
-En **ansluten app** är församlingsadministratörens vy av en beviljad token, listad och återkallbar under `/membership/oauth/connections`. Controllern är även värd för en OAuth-**relay-session**-brygga (`/oauth/relay/*`) som gör det möjligt för en enhet utan webbläsare att slutföra en inloggning mot en *extern* leverantör. → **[Anslutna appar & OAuth](../api/connected-apps)**
+En **ansluten app** är församlingsadministratörens vy av en beviljad token, listad och återkallbar under `/membership/oauth/connections`. Controllern är även värd för en OAuth-**relay-session**-brygga (`/oauth/relay/*`) som gör det möjligt för en enhet utan webbläsare att slutföra en inloggning mot en *extern* leverantör. → **[Anslutna appar & OAuth](../api/connected-apps.md)**
 
 ### Webhooks
 
-Den enda utgående ytan. En församling prenumererar en publik HTTPS-endpoint på händelser; när en matchande ändring sker berikar `WebhookDispatcher.emit(churchId, event, payload)` payloads som bara innehåller id med visningsnamn (`personName`, `groupName`, `formName` — uppslagen körs först när en prenumeration matchar), registrerar en leverans, och en bakgrundsworker POST:ar en signerad JSON-envelope med återförsök med backoff och omleverans. Motorn finns i `Api/src/shared/webhooks/`, med CRUD per församling under `/membership/webhooks` (`WebhookController.ts`). Ett fält `connectorType` formar om innehållet för Slack och Discord; `mailchimp`-kopplingen går längre och äger hela HTTP-utbytet (metod/URL/autentisering per händelse mot Mailchimps API, med krypterade uppgifter i `webhooks.connectorConfig`). → **[Webhooks](../api/webhooks)**
+Den enda utgående ytan. En församling prenumererar en publik HTTPS-endpoint på händelser; när en matchande ändring sker berikar `WebhookDispatcher.emit(churchId, event, payload)` payloads som bara innehåller id med visningsnamn (`personName`, `groupName`, `formName` — uppslagen körs först när en prenumeration matchar), registrerar en leverans, och en bakgrundsworker POST:ar en signerad JSON-envelope med återförsök med backoff och omleverans. Motorn finns i `Api/src/shared/webhooks/`, med CRUD per församling under `/membership/webhooks` (`WebhookController.ts`). Ett fält `connectorType` formar om innehållet för Slack och Discord; `mailchimp`-kopplingen går längre och äger hela HTTP-utbytet (metod/URL/autentisering per händelse mot Mailchimps API, med krypterade uppgifter i `webhooks.connectorConfig`). → **[Webhooks](../api/webhooks.md)**
 
 ### MCP-server
 
-Ett AI-anpassat omslag på `/mcp` (`Api/src/modules/mcp/`). Tre generiska verktyg — `list_endpoints`, `describe_endpoint` och `api_call` — exponerar hela REST-ytan dynamiskt för vilken MCP-klient som helst. Autentiseringen är samma bearer-token som allt annat. För klienter som loggar in med OAuth (claude.ai-anpassade kopplingar) bär ett 401-svar från `/mcp` en header `WWW-Authenticate` som pekar på `/.well-known/oauth-protected-resource`, och `/.well-known/oauth-authorization-server` annonserar endpoints under `/membership/oauth`, dynamisk registrering, PKCE och B1Admins samtyckessida under `/oauth` (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` återgår in i Express-stacken i samma process, så alla behörighets- och församlingsavgränsningsregler gäller fortfarande. → **[MCP-server](../api/mcp)**
+Ett AI-anpassat omslag på `/mcp` (`Api/src/modules/mcp/`). Tre generiska verktyg — `list_endpoints`, `describe_endpoint` och `api_call` — exponerar hela REST-ytan dynamiskt för vilken MCP-klient som helst. Autentiseringen är samma bearer-token som allt annat. För klienter som loggar in med OAuth (claude.ai-anpassade kopplingar) bär ett 401-svar från `/mcp` en header `WWW-Authenticate` som pekar på `/.well-known/oauth-protected-resource`, och `/.well-known/oauth-authorization-server` annonserar endpoints under `/membership/oauth`, dynamisk registrering, PKCE och B1Admins samtyckessida under `/oauth` (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` återgår in i Express-stacken i samma process, så alla behörighets- och församlingsavgränsningsregler gäller fortfarande. → **[MCP-server](../api/mcp.md)**
 
 ### Innehållsleverantörer
 
-Den inkommande innehållsvägen, i det separata paketet `Packages/content-providers` (`@churchapps/content-providers`) snarare än i API:t. Varje leverantör implementerar gränssnittet `IProvider` (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions` samt autentiseringshakar — och registrerar sig själv i ett `Map`-register (`src/providers/registry.ts`). Här är **B1 OAuth-klienten**: en leverantör deklarerar en `AuthType` av `none`, `oauth_pkce`, `device_flow` eller `form_login`, och de delade hjälpfunktionerna (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) kör PKCE- eller enhetsflödet på klientsidan mot den externa källan. Elva leverantörer levereras idag — bland annat Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church och B1.church — och matar FreePlay och B1-apparna. → **[FreePlay-innehållsleverantör](../freeplay-content-provider)**
+Den inkommande innehållsvägen, i det separata paketet `Packages/content-providers` (`@churchapps/content-providers`) snarare än i API:t. Varje leverantör implementerar gränssnittet `IProvider` (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions` samt autentiseringshakar — och registrerar sig själv i ett `Map`-register (`src/providers/registry.ts`). Här är **B1 OAuth-klienten**: en leverantör deklarerar en `AuthType` av `none`, `oauth_pkce`, `device_flow` eller `form_login`, och de delade hjälpfunktionerna (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) kör PKCE- eller enhetsflödet på klientsidan mot den externa källan. Elva leverantörer levereras idag — bland annat Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church och B1.church — och matar FreePlay och B1-apparna. → **[FreePlay-innehållsleverantör](../freeplay-content-provider.md)**
 
 **Årsplaner** går via den här vägen. En läroplansutgivare (med `lessons.edit`) underhåller ordnade sekvenser för vecka 1/2/3 i Lessons.church-administrationen (`LessonsApi`-tabellerna `yearPlans` och `yearPlanWeeks`, med valfri `startMonth` och per vecka en `anchor` av `easter` eller `christmas`). `GET /yearPlans/public` på LessonsApi serverar publicerade planer anonymt och fyller i varje veckas program/studie/plats från lektionsträdet. B1Admins **Serving → Plans → Schedule Lesson → Apply Year Plan** använder den endpointen och skriver en DoingApi-plan per inkluderad vecka (`providerId=lessonschurch`, `providerPlanId=/lessons/{programId}/{studyId}/{lessonId}/{venueId}`). Planer med `startMonth` placerar förankrade veckor mot det valda året (påsk enligt gregoriansk påskberäkning (computus), jul som söndagen på eller närmast före 25 dec) och fyller perioderna mellan dem; planer utan `startMonth` mappar fortfarande vecka N till `startDate + (N−1)×7` dagar. Veckor från externa OLF-leverantörer eller med en ofullständig sökväg hoppas över vid tillämpningen; församlingar redigerar de resulterande planerna precis som vilka andra planer som helst, och FreePlay spelar upp det som finns på planen.
 
@@ -122,12 +123,12 @@ Den inkommande innehållsvägen, i det separata paketet `Packages/content-provid
 
 | Yta | Autentiseringsmekanism | Riktning | Var implementerat | Referens |
 |---|---|---|---|---|
-| REST API | `Bearer` JWT eller `cak_…`-nyckel | Inkommande | `Api/src/modules/*` | [API-nycklar](../api/api-keys) |
-| API-nycklar | SHA-256-hashad `cak_`-token | Autentiseringsuppgift | `Api/.../membership/controllers/ApiKeyController.ts` | [API-nycklar](../api/api-keys) |
-| OAuth 2.0 / anslutna appar | Auth-kod (PKCE) · enhet · refresh → JWT; dynamisk klientregistrering | Inkommande | `Api/.../membership/controllers/OAuthController.ts` | [Anslutna appar](../api/connected-apps) |
-| Webhooks | Hemlighet per hook, HMAC-SHA256-signatur | Utgående | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks) |
-| MCP-server | `Bearer` JWT, OAuth-JWT (upptäckt via `/.well-known`), eller `cak_…`-nyckel | Inkommande (AI) | `Api/src/modules/mcp/` | [MCP-server](../api/mcp) |
-| Innehållsleverantörer | Per leverantör: ingen / OAuth PKCE / enhet / formulär | Inkommande innehåll | `Packages/content-providers/` | [Innehållsleverantör](../freeplay-content-provider) |
+| REST API | `Bearer` JWT eller `cak_…`-nyckel | Inkommande | `Api/src/modules/*` | [API-nycklar](../api/api-keys.md) |
+| API-nycklar | SHA-256-hashad `cak_`-token | Autentiseringsuppgift | `Api/.../membership/controllers/ApiKeyController.ts` | [API-nycklar](../api/api-keys.md) |
+| OAuth 2.0 / anslutna appar | Auth-kod (PKCE) · enhet · refresh → JWT; dynamisk klientregistrering | Inkommande | `Api/.../membership/controllers/OAuthController.ts` | [Anslutna appar](../api/connected-apps.md) |
+| Webhooks | Hemlighet per hook, HMAC-SHA256-signatur | Utgående | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks.md) |
+| MCP-server | `Bearer` JWT, OAuth-JWT (upptäckt via `/.well-known`), eller `cak_…`-nyckel | Inkommande (AI) | `Api/src/modules/mcp/` | [MCP-server](../api/mcp.md) |
+| Innehållsleverantörer | Per leverantör: ingen / OAuth PKCE / enhet / formulär | Inkommande innehåll | `Packages/content-providers/` | [Innehållsleverantör](../freeplay-content-provider.md) |
 
 ## Färdiga kopplingar
 
@@ -143,9 +144,9 @@ För din egen kod omsluter **[`@churchapps/integration-sdk`](https://www.npmjs.c
 
 ## Relaterade sidor
 
-- [API-nycklar](../api/api-keys) — den enklaste autentiseringsuppgiften och scope-katalogen
-- [Anslutna appar & OAuth](../api/connected-apps) — samtyckesflöden för appar med flera klienter
-- [Webhooks](../api/webhooks) — systemet för utgående händelser
-- [MCP-server](../api/mcp) — AI-integrationens omslag
-- [FreePlay-innehållsleverantör](../freeplay-content-provider) — att bli en inkommande innehållskälla
+- [API-nycklar](../api/api-keys.md) — den enklaste autentiseringsuppgiften och scope-katalogen
+- [Anslutna appar & OAuth](../api/connected-apps.md) — samtyckesflöden för appar med flera klienter
+- [Webhooks](../api/webhooks.md) — systemet för utgående händelser
+- [MCP-server](../api/mcp.md) — AI-integrationens omslag
+- [FreePlay-innehållsleverantör](../freeplay-content-provider.md) — att bli en inkommande innehållskälla
 - [Integrationer (slutanvändare)](/docs/b1-admin/integrations/) — installationsguider för färdiga kopplingar

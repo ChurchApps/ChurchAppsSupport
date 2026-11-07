@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (nebenaudojama)"
+description: "Paaiškinta, kad vietinė B1 Mobile programėlė nebenaudojama ir nariams bei administratoriams rekomenduojama B1.church PWA; seni puslapiai palikti nuorodai."
 ---
 
 # B1 Mobile (nebenaudojama)
@@ -40,16 +41,16 @@ B1 Mobile palaikė įspėjimus (push pranešimus), kad nepraleistumėte svarbių
 
 ## Sužinokite daugiau
 
-- [Pradžia](./getting-started/) -- įdiekite programėlę, sukurkite paskyrą ir pasirinkite bažnyčią.
-- [Valdymo skydelis](./dashboard/) -- supraskite savo asmeninį pagrindinį ekraną.
-- [Grupės](./groups/) -- palaikykite ryšį su savo bažnyčios grupėmis.
-- [Aukojimai](./giving/) -- aukokite iš telefono.
-- [Renginiai](./events/) -- naršykite ir registruokitės į artėjančius bažnyčios renginius.
-- [Registracija](./checkin/) -- registruokite save ir šeimos narius į pamaldas bei renginius.
-- [Tarnystė](./serving/) -- peržiūrėkite savo tarnystės planus, paskyrimus ir savanorystės galimybes.
-- [Bendruomenė](./community/) -- naršykite narių katalogą ir siųskite žinutes.
-- [Turinys](./content/) -- pamokslai, Biblija, dienos eilutė ir pamokos (pamokų ekranas nebenaudojamas — žr. [FreePlay](/docs/freeplay/)).
-- [Profilis](./profile/) -- tvarkykite savo profilį ir paskyros nustatymus.
+- [Pradžia](./getting-started/index.md) -- įdiekite programėlę, sukurkite paskyrą ir pasirinkite bažnyčią.
+- [Valdymo skydelis](./dashboard/index.md) -- supraskite savo asmeninį pagrindinį ekraną.
+- [Grupės](./groups/index.md) -- palaikykite ryšį su savo bažnyčios grupėmis.
+- [Aukojimai](./giving/index.md) -- aukokite iš telefono.
+- [Renginiai](./events/index.md) -- naršykite ir registruokitės į artėjančius bažnyčios renginius.
+- [Registracija](./checkin/index.md) -- registruokite save ir šeimos narius į pamaldas bei renginius.
+- [Tarnystė](./serving/index.md) -- peržiūrėkite savo tarnystės planus, paskyrimus ir savanorystės galimybes.
+- [Bendruomenė](./community/index.md) -- naršykite narių katalogą ir siųskite žinutes.
+- [Turinys](./content/index.md) -- pamokslai, Biblija, dienos eilutė ir pamokos (pamokų ekranas nebenaudojamas — žr. [FreePlay](/docs/freeplay/)).
+- [Profilis](./profile/index.md) -- tvarkykite savo profilį ir paskyros nustatymus.
 
 :::info
 B1 Mobile pakeitė [B1.church PWA](../b1-church/getting-started/installing-pwa.md). Naujiems diegimams reikėtų naudoti PWA — vietinė programa nebeatnaujinama.

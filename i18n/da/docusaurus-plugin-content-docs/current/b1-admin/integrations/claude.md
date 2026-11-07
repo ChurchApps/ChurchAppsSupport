@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Forbind B1 Admin til Claude, så du kan spørge om fremmøde, gaver og grupper i almindeligt sprog, med login eller en API-nøgle med begrænsede rettigheder."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ Det er den samme flade med `/membership/people`, `/giving/donations`, `/attendan
 
 - [API-nøgler](/docs/developer/api/api-keys) – fuld referenceliste over scopes
 - [MCP-server (udviklerreference)](/docs/developer/api/mcp) – protokoldetaljer og værktøjsskemaer
-- [ChatGPT](./chatgpt) – samme idé, til OpenAI's modeller
+- [ChatGPT](./chatgpt.md) – samme idé, til OpenAI's modeller

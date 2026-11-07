@@ -1,5 +1,6 @@
 ---
 title: "Zadania"
+description: "Twórz, przydzielaj i zamykaj zadania w B1 Admin. Znajdziesz je w Służba > Moja praca, a przypomnienia o terminie pomogą nie przeoczyć żadnych spraw."
 ---
 
 # Zadania

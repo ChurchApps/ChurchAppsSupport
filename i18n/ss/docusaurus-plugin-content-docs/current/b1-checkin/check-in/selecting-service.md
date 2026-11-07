@@ -1,5 +1,6 @@
 ---
 title: "Kukhetsa Inkhonzo"
+description: "Khetsa sevisi lolungela kuyo esikrinini sesevisi se-B1 Checkin, lesisetela sikhatsi sesevisi namaqembu alandzelako kuhamba konkhe kwekungena."
 ---
 
 # Kukhetsa Inkhonzo
@@ -13,7 +14,7 @@ Sinyatselo sekucala sekubhalisa konkhe kutsi ukhetse kutsi ngutsini inkhonzo lol
 <div class="prereqs">
 <h4>Ngembi Kwekucala</h4>
 
-- [Ngena](../getting-started/logging-in) ku-B1 Church Checkin bese ukhetsa libandla lakho
+- [Ngena](../getting-started/logging-in.md) ku-B1 Church Checkin bese ukhetsa libandla lakho
 - Cinisekisa kutsi umlawuli webandla lakho [usewahlele tinkhonzo netikhatsi tato](../../b1-admin/attendance/setup.md) ku-B1 Admin
 
 </div>
@@ -24,7 +25,7 @@ Sinyatselo sekucala sekubhalisa konkhe kutsi ukhetse kutsi ngutsini inkhonzo lol
 2. Utawubona luhlu lwato tonkhe tinkhonzo lesetihleliwe ebandleni lakho. Inkhonzo ngayinye ivela njengekhadi lelikhombisa ligama lenkhonzo (sibonelo, "Sonto Ekuseni" nobe "Lesibili Kusihlwa").
 3. Cindzetela inkhonzo loya kuyo.
 
-I-app iyalayisha tikhatsi tenkhonzo nemacembu lahlobene naloo nkhonzo, bese ikuyisa [kuskrini sekufuna lilunga](./looking-up-members).
+I-app iyalayisha tikhatsi tenkhonzo nemacembu lahlobene naloo nkhonzo, bese ikuyisa [kuskrini sekufuna lilunga](./looking-up-members.md).
 
 :::info
 Tinkhonzo tihlelwa ngumlawuli webandla lakho ku-B1 Admin ngaphansi kwesigaba sekubakhona. Nangabe ungayiboni inkhonzo loyilindzele, cela umlawuli wakho kutsi ahlole kutsi seyakhiwe [ekuhleleni kwekubakhona](../../b1-admin/attendance/setup.md).
@@ -46,4 +47,4 @@ Nangabe libandla lakho linenkhonzo yinye kuphela lehleliwe, kusadzingeka uyicind
 
 ## Sinyatselo Lesilandzelako
 
-Ngemuva kwekukhetsa inkhonzo, [utawufuna umndeni wakho](./looking-up-members) ngenombolo yelucingo nobe ngeligama.
+Ngemuva kwekukhetsa inkhonzo, [utawufuna umndeni wakho](./looking-up-members.md) ngenombolo yelucingo nobe ngeligama.

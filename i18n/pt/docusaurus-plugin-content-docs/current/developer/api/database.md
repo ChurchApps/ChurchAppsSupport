@@ -1,5 +1,6 @@
 ---
 title: "Banco de Dados"
+description: "Saiba como a API da ChurchApps divide os dados entre seis bancos MySQL, um por módulo, e como configurar e inicializar as conexões."
 ---
 
 # Banco de Dados
@@ -13,8 +14,8 @@ A API do ChurchApps usa uma arquitetura de **banco de dados por módulo**. Cada 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Instale o **MySQL 8.0+** -- veja [Pré-requisitos](../setup/prerequisites)
-- Configure as strings de conexão de banco de dados no seu arquivo `.env` -- veja [Variáveis de Ambiente](../setup/environment-variables)
+- Instale o **MySQL 8.0+** -- veja [Pré-requisitos](../setup/prerequisites.md)
+- Configure as strings de conexão de banco de dados no seu arquivo `.env` -- veja [Variáveis de Ambiente](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Principais Decisões de Design
 
 - **Um banco de dados por módulo** -- Cada módulo mantém seu próprio banco de dados MySQL com um pool de conexões dedicado (gerenciado por `KyselyPool`). Isso mantém os módulos desacoplados e permite a evolução independente do esquema.
-- **Propriedade exclusiva** -- As tabelas de um módulo são lidas e escritas apenas pelo código do próprio módulo. Quando outro módulo precisa dos dados, ele chama o gateway do módulo proprietário em vez de consultar as tabelas diretamente -- veja [Comunicação Entre Módulos](./module-structure#cross-module-communication).
+- **Propriedade exclusiva** -- As tabelas de um módulo são lidas e escritas apenas pelo código do próprio módulo. Quando outro módulo precisa dos dados, ele chama o gateway do módulo proprietário em vez de consultar as tabelas diretamente -- veja [Comunicação Entre Módulos](./module-structure.md#cross-module-communication).
 - **Padrão de repositório sem ORM** -- Todo acesso a dados passa por classes de repositório que constroem SQL tipado com o construtor de consultas Kysely sobre o esquema do módulo. Isso proporciona controle total sobre o desempenho e o comportamento das consultas.
 - **Multi-inquilino por design** -- Toda consulta é restrita por `churchId`. Todas as tabelas incluem uma coluna `churchId`, e a camada de repositório aplica o isolamento entre inquilinos automaticamente.
 
@@ -129,5 +130,5 @@ Essa restrição é o que torna os limites de módulo reais: cada esquema pode e
 
 ## Artigos Relacionados
 
-- **[Estrutura do Módulo](./module-structure)** -- Como controladores e repositórios são organizados dentro de cada módulo
-- **[Configuração Local da API](./local-setup)** -- Guia de configuração completo, passo a passo
+- **[Estrutura do Módulo](./module-structure.md)** -- Como controladores e repositórios são organizados dentro de cada módulo
+- **[Configuração Local da API](./local-setup.md)** -- Guia de configuração completo, passo a passo

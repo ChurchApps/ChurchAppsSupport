@@ -1,5 +1,6 @@
 ---
 title: "Kusesha"
+description: "Thola tinhlelo, tifundvo netifundziso ku-laybhurari ye-Lessons.church ngemagama lasemtsetfweni noma indzaba yeBhayibheli, bese ufunda kutsi imiphumela yekufuna ihlelwa kanjani futsi ibhalwa kanjani."
 ---
 
 # Kusesha

@@ -1,5 +1,6 @@
 ---
 title: "Отчёты о посещаемости"
+description: "Три отчёта о посещаемости в B1 Admin (Attendance Trend, Group Attendance, Daily Group Attendance): что показывает каждый и как их запустить и экспортировать."
 ---
 
 # Отчёты о посещаемости

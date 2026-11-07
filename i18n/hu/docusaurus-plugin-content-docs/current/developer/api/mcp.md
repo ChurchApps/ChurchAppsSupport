@@ -1,5 +1,6 @@
 ---
 title: "MCP-szerver"
+description: "Állítsd be az MCP-hozzáférést a B1 API-hoz, hogy az AI-kliensek, például a Claude Code, a Cursor vagy a Claude Desktop API-kulcsokkal vagy OAuth-bejelentkezéssel hívhassák a gyülekezeti adatvégpontokat."
 ---
 
 # MCP-szerver
@@ -13,7 +14,7 @@ A B1 API a `/mcp` útvonalon [MCP (Model Context Protocol)](https://modelcontext
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Egy [B1 API-kulcs](./api-keys) (`cak_…`) a kliens számára szükséges hatókörökkel, vagy egy MCP-kliens, amely OAuth-tal tud bejelentkezni (lásd [OAuth-felfedezés](#oauth-discovery))
+- Egy [B1 API-kulcs](./api-keys.md) (`cak_…`) a kliens számára szükséges hatókörökkel, vagy egy MCP-kliens, amely OAuth-tal tud bejelentkezni (lásd [OAuth-felfedezés](#oauth-discovery))
 - Egy elérhető B1 API-kiszolgáló — `https://api.churchapps.org` hosztolt egyházak számára, vagy saját telepítés
 - Egy MCP-kliens. A végfelhasználói beállításhoz lásd [Claude](/docs/b1-admin/integrations/claude) és [ChatGPT](/docs/b1-admin/integrations/chatgpt)
 
@@ -119,7 +120,7 @@ Az eszköz-eredmény `isError: true` jelölést kap minden 400-as vagy magasabb 
 
 ### `describe_page_builder`
 
-Az egyetlen nem általános eszköz: egy statikus, önálló útmutató a weboldalak építéséhez a `/content/*` végpontokon keresztül. Tartalmazza a Page → Section → Element adatmodellt, a létrehozási munkafolyamatot, minden `elementType`-ot az `answersJSON` alakjával, a szekciószintű beállításokat (például a `dividerTop`/`dividerBottom` alakú elválasztókat), és egy kidolgozott, végpontok közötti példát. Bemenet nélkül működik, és a B1Admin szerkesztőben karbantartott elem-katalógust tükrözi (lásd [Weboldal-szerkesztő architektúra](../architecture/website-builder)). Az ügynököknek érdemes egyszer meghívniuk, mielőtt oldaltartalmat hoznának létre vagy szerkesztenének, és utána az `api_call` eszközön keresztül hajtaniuk végre a műveleteket.
+Az egyetlen nem általános eszköz: egy statikus, önálló útmutató a weboldalak építéséhez a `/content/*` végpontokon keresztül. Tartalmazza a Page → Section → Element adatmodellt, a létrehozási munkafolyamatot, minden `elementType`-ot az `answersJSON` alakjával, a szekciószintű beállításokat (például a `dividerTop`/`dividerBottom` alakú elválasztókat), és egy kidolgozott, végpontok közötti példát. Bemenet nélkül működik, és a B1Admin szerkesztőben karbantartott elem-katalógust tükrözi (lásd [Weboldal-szerkesztő architektúra](../architecture/website-builder.md)). Az ügynököknek érdemes egyszer meghívniuk, mielőtt oldaltartalmat hoznának létre vagy szerkesztenének, és utána az `api_call` eszközön keresztül hajtaniuk végre a műveleteket.
 
 ## Hitelesítési modell
 
@@ -153,11 +154,11 @@ Az `/mcp` végponton nincs alkalmazásszintű sebességkorlát. Az éles környe
 
 ## OAuth-felfedezés
 
-Az MCP-szerver OAuth 2.1 metaadatokat hirdet, hogy azok a kliensek, amelyek csak OAuth-felfedezéssel rendelkező szerverekhez csatlakoznak — különösen a Claude.ai „Add custom connector” felülete —, beillesztett kulcs nélkül be tudják jelentkeztetni a felhasználót. Az `/mcp` a védett erőforrás, a `/membership/oauth` alatti [OAuth-szolgáltató](./connected-apps) az engedélyezési szerver, a B1Admin `/oauth` oldala pedig a hozzájáruló képernyő.
+Az MCP-szerver OAuth 2.1 metaadatokat hirdet, hogy azok a kliensek, amelyek csak OAuth-felfedezéssel rendelkező szerverekhez csatlakoznak — különösen a Claude.ai „Add custom connector” felülete —, beillesztett kulcs nélkül be tudják jelentkeztetni a felhasználót. Az `/mcp` a védett erőforrás, a `/membership/oauth` alatti [OAuth-szolgáltató](./connected-apps.md) az engedélyezési szerver, a B1Admin `/oauth` oldala pedig a hozzájáruló képernyő.
 
 | Végpont | Cél |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (valamint `/.well-known/oauth-protected-resource/mcp`) | Védett erőforrás metaadatai (RFC 9728): a `resource` értéke `<api>/mcp`, az `authorization_servers` az API gyökere, a `scopes_supported` pedig felsorolja az összes [API-kulcs-hatókört](./api-keys#scopes) |
+| `GET /.well-known/oauth-protected-resource` (valamint `/.well-known/oauth-protected-resource/mcp`) | Védett erőforrás metaadatai (RFC 9728): a `resource` értéke `<api>/mcp`, az `authorization_servers` az API gyökere, a `scopes_supported` pedig felsorolja az összes [API-kulcs-hatókört](./api-keys.md#scopes) |
 | `GET /.well-known/oauth-authorization-server` | Engedélyezési szerver metaadatai (RFC 8414): az `authorization_endpoint` a B1Admin `/oauth`, a `token_endpoint` a `/membership/oauth/token`, a `registration_endpoint` a `/membership/oauth/register` |
 | `POST /membership/oauth/register` | Dinamikus kliensregisztráció (RFC 7591) |
 
@@ -209,8 +210,8 @@ Az MCP-szerver az Api repó `src/modules/mcp/` könyvtárában található. Font
 
 ## Kapcsolódó
 
-- [API-kulcsok](./api-keys)
-- [Webhookok](./webhooks)
-- [Összekapcsolt alkalmazások (OAuth)](./connected-apps)
+- [API-kulcsok](./api-keys.md)
+- [Webhookok](./webhooks.md)
+- [Összekapcsolt alkalmazások (OAuth)](./connected-apps.md)
 - [Claude — végfelhasználói beállítás](/docs/b1-admin/integrations/claude)
 - [ChatGPT — végfelhasználói beállítás](/docs/b1-admin/integrations/chatgpt)

@@ -1,5 +1,7 @@
 ---
-title: "Přihlášení k dobrovolnictví"
+title: "Přihlášení dobrovolníků v členském portálu B1.church"
+sidebar_label: "Přihlášení k dobrovolnictví"
+description: "Procházejte volná dobrovolnická místa podle kategorií a přihlaste se na nadcházející bohoslužby nebo se před termínem odhlaste na B1.church."
 ---
 
 # Přihlášení k dobrovolnictví
@@ -74,4 +76,4 @@ Stránku pro dobrovolníky pravidelně kontrolujte, zejména na začátku týdne
 ## Související články
 
 - [Přehled služeb](./index.md) – přehled funkcí služeb na B1.church
-- [Zobrazení plánů](../plans/viewing-plans) – zobrazte si přiřazené plány a pořadí služeb
+- [Zobrazení plánů](../plans/viewing-plans.md) – zobrazte si přiřazené plány a pořadí služeb

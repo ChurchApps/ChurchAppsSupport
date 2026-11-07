@@ -1,5 +1,6 @@
 ---
 title: "服务器管理"
+description: "仅限 Server.Admin 用户：在 B1 Admin 中重置双重验证登录、模拟账户登录、管理 Commons 内容，以及审核教会电子邮件。"
 ---
 
 # 服务器管理

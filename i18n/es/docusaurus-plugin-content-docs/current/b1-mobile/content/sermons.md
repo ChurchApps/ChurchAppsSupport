@@ -1,5 +1,7 @@
 ---
-title: "Sermones"
+title: "Ver sermones en B1 Mobile"
+sidebar_label: "Sermones"
+description: "Explore, busque y vea sermones y series grabados en la aplicación B1 Mobile, incluido cómo seguir la cuenta regresiva de una transmisión en vivo."
 ---
 
 # Sermones
@@ -13,7 +15,7 @@ La pantalla de Sermones te permite explorar y ver sermones grabados de tu iglesi
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instala B1 Mobile](../getting-started/installing) e [inicia sesión](../getting-started/logging-in) en tu cuenta
+- [Instala B1 Mobile](../getting-started/installing.md) e [inicia sesión](../getting-started/logging-in.md) en tu cuenta
 - Tu iglesia debe tener contenido de sermones configurado en su portal de administración
 
 </div>
@@ -29,7 +31,7 @@ En la parte superior de la pantalla, el sermón más reciente se muestra como un
 
 ## Cuenta Regresiva de Transmisión en Vivo
 
-Cuando una [transmisión en vivo](./live-streaming) está próxima dentro de las siguientes 24 horas, aparece un temporizador de cuenta regresiva en la pantalla de Sermones. Esto te avisa cuándo será la próxima transmisión del servicio para que puedas planificar verlo en vivo.
+Cuando una [transmisión en vivo](./live-streaming.md) está próxima dentro de las siguientes 24 horas, aparece un temporizador de cuenta regresiva en la pantalla de Sermones. Esto te avisa cuándo será la próxima transmisión del servicio para que puedas planificar verlo en vivo.
 
 ## Ver un Sermón
 
@@ -51,7 +53,7 @@ Cada entrada de sermón puede mostrar:
 - **Miniatura** -- Una imagen de vista previa del sermón
 
 :::tip
-Si ves una cuenta regresiva en la pantalla de Sermones, tócala para ir directamente a la [transmisión en vivo](./live-streaming) cuando comience.
+Si ves una cuenta regresiva en la pantalla de Sermones, tócala para ir directamente a la [transmisión en vivo](./live-streaming.md) cuando comience.
 :::
 
 ## Disponibilidad

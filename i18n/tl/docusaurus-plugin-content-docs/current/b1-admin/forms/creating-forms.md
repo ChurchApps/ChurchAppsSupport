@@ -1,5 +1,6 @@
 ---
 title: "Paggawa ng Mga Form"
+description: "Gumawa ng custom na form sa B1 Admin para sa event registration, survey, at visitor card, at ibahagi ito sa pamamagitan ng link, QR code, o print."
 ---
 
 # Paggawa ng Mga Form

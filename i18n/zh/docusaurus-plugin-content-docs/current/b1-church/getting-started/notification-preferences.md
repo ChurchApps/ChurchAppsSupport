@@ -1,5 +1,6 @@
 ---
 title: "通知偏好设置"
+description: "在 B1 Admin 和 B1 应用中，通过同一界面为每种通知类型设置通知渠道、电子邮件频率、免打扰时段和短信退订。"
 ---
 
 # 通知偏好设置
@@ -60,6 +61,6 @@ title: "通知偏好设置"
 
 ## 相关
 
-- [志愿者报名](../serving/volunteer-signup) -- 服事提醒以及回复排班请求
-- [报名参加活动](../events/registering) -- 报名参加会发送提醒的活动
-- [安装应用](installing-pwa) -- 将 B1 添加到您的设备，以便接收推送通知
+- [志愿者报名](../serving/volunteer-signup.md) -- 服事提醒以及回复排班请求
+- [报名参加活动](../events/registering.md) -- 报名参加会发送提醒的活动
+- [安装应用](./installing-pwa.md) -- 将 B1 添加到您的设备，以便接收推送通知

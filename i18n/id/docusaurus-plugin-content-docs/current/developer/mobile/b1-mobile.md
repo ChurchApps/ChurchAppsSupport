@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "Atur dan jalankan aplikasi B1 Mobile (React Native/Expo) secara lokal, konfigurasi endpoint API, dan build untuk Android atau iOS. B1 Mobile sudah usang."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobile adalah aplikasi seluler utama untuk anggota ChurchApps, dibangun denga
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Instal **Node.js** dan **Expo CLI** -- lihat [Prasyarat](../setup/prerequisites)
+- Instal **Node.js** dan **Expo CLI** -- lihat [Prasyarat](../setup/prerequisites.md)
 - Instal **Android Studio** (untuk emulator Android) atau **Xcode** (untuk simulator iOS)
-- Konfigurasikan target API Anda (demo atau lokal) -- lihat [Variabel Lingkungan](../setup/environment-variables)
+- Konfigurasikan target API Anda (demo atau lokal) -- lihat [Variabel Lingkungan](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ Pembaruan OTA ideal untuk perubahan khusus JavaScript. Jika Anda mengubah kode n
 
 ## Artikel Terkait
 
-- **[Deployment Seluler](../deployment/mobile)** -- Panduan lengkap untuk membangun, mengirimkan, dan men-deploy aplikasi seluler
-- **[Variabel Lingkungan](../setup/environment-variables)** -- Referensi lengkap untuk konfigurasi lingkungan seluler
+- **[Deployment Seluler](../deployment/mobile.md)** -- Panduan lengkap untuk membangun, mengirimkan, dan men-deploy aplikasi seluler
+- **[Variabel Lingkungan](../setup/environment-variables.md)** -- Referensi lengkap untuk konfigurasi lingkungan seluler

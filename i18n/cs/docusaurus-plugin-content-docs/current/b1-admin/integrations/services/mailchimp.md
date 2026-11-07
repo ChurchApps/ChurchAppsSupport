@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Synchronizujte lidi a členství ve skupinách nebo uložených seznamech z B1 Admin do publika Mailchimp jako štítky, s nastavením, prvním importem a řešením potíží."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Počáteční načtení přes importér Mailchimpu vám ponechá kontrolu nad so
 
 ## Další postupy (Zapier / Make)
 
-Vše nad rámec synchronizace publika, například označování dárců při události `donation.created`, opačný směr Mailchimp → B1 nebo synchronizace s úplně jinou e-mailovou platformou (Constant Contact, Brevo apod.), je stále dostupné přes [Zapier](../zapier) nebo [Make](../make). Tyto nástroje reagují na stejné události webhooku:
+Vše nad rámec synchronizace publika, například označování dárců při události `donation.created`, opačný směr Mailchimp → B1 nebo synchronizace s úplně jinou e-mailovou platformou (Constant Contact, Brevo apod.), je stále dostupné přes [Zapier](../zapier.md) nebo [Make](../make.md). Tyto nástroje reagují na stejné události webhooku:
 
 - **Označování dárců:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Obousměrně:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ Pokud jste dříve propojili synchronizaci osob a skupin přes Zapier, po zapnut
 
 - [Webhooky (referenční příručka pro vývojáře)](/docs/developer/api/webhooks): engine, na kterém to celé stojí, katalog událostí a sémantika doručení a opakování
 - [Uložené seznamy](/docs/b1-admin/people/lists): pravidlová publika, která se přirozeně mapují na štítky Mailchimpu
-- [Zapier (přehled)](../zapier): pro postupy nad rámec synchronizace publika
+- [Zapier (přehled)](../zapier.md): pro postupy nad rámec synchronizace publika

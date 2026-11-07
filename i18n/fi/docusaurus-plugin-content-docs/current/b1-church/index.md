@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Selvitä, mitä seurakuntasi B1.church-sivusto tarjoaa jäsenille: jäsenportaalista ja ryhmistä lahjoituksiin, tapahtumiin, palvelemiseen ja sisäänkirjautumiseen."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ Kun jäsenet vierailevat B1.church-sivustollanne, he näkevät seurakuntanne jul
 
 ## Lue lisää
 
-- [Aloittaminen](./getting-started/) -- Luo tili, kirjaudu sisään ja opi navigoimaan B1.churchissa.
-- [Ryhmät](./groups/) -- Liity seurakuntasi ryhmiin ja osallistu niihin.
-- [Lahjoitukset](./giving/) -- Tee lahjoituksia ja hallitse lahjoitustasi.
-- [Tapahtumat](./events/) -- Selaa tulevia seurakuntatapahtumia ja ilmoittaudu niihin.
-- [Palvelu](./serving/) -- Näe suunnitelmat ja ilmoittaudu vapaaehtoistehtäviin.
-- [Suunnitelmat](./plans/) -- Näe palvelusuunnitelmat ja vapaaehtoistehtäväsi.
-- [Sisäänkirjaus](./checkin/) -- Kirjaudu sisään jumalanpalveluksiin, tapahtumiin ja vieraiden ilmoittautumiseen.
-- [Yhteisöhakemisto](./community/) -- Löydä muut jäsenet ja ota heihin yhteyttä.
-- [Sisältö](./content/) -- Saarnat, Raamattu, päivän jae ja suoratoisto. (Oppituntien toisto on siirtynyt [FreePlayhin](/docs/freeplay/).)
+- [Aloittaminen](./getting-started/index.md) -- Luo tili, kirjaudu sisään ja opi navigoimaan B1.churchissa.
+- [Ryhmät](./groups/index.md) -- Liity seurakuntasi ryhmiin ja osallistu niihin.
+- [Lahjoitukset](./giving/index.md) -- Tee lahjoituksia ja hallitse lahjoitustasi.
+- [Tapahtumat](./events/index.md) -- Selaa tulevia seurakuntatapahtumia ja ilmoittaudu niihin.
+- [Palvelu](./serving/index.md) -- Näe suunnitelmat ja ilmoittaudu vapaaehtoistehtäviin.
+- [Suunnitelmat](./plans/index.md) -- Näe palvelusuunnitelmat ja vapaaehtoistehtäväsi.
+- [Sisäänkirjaus](./checkin/index.md) -- Kirjaudu sisään jumalanpalveluksiin, tapahtumiin ja vieraiden ilmoittautumiseen.
+- [Yhteisöhakemisto](./community/index.md) -- Löydä muut jäsenet ja ota heihin yhteyttä.
+- [Sisältö](./content/index.md) -- Saarnat, Raamattu, päivän jae ja suoratoisto. (Oppituntien toisto on siirtynyt [FreePlayhin](/docs/freeplay/).)
 
 :::info
 B1.church on täysin ilmainen seurakunnille ja jäsenille. Seurakuntasi ylläpitäjä perustaa ja muokkaa sivuston B1 Adminin kautta. Jäsenenä sinun tarvitsee vain vierailla seurakuntasi B1.church-osoitteessa aloittaaksesi.

@@ -1,5 +1,6 @@
 ---
 title: "Gabay: I-set Up ang Online na Pagbibigay"
+description: "I-set up ang online giving sa B1 Admin: gumawa ng donation fund, ikonekta ang Stripe, at magdagdag ng Donate page sa B1.church website para sa mga miyembro."
 ---
 
 # I-set Up ang Online na Pagbibigay
@@ -70,7 +71,7 @@ Gamitin muna ang test mode ng Stripe kung gusto mong mag-verify nang walang toto
 Ikalat ang balita para malaman ng mga miyembro na maaari na silang magbigay online.
 
 1. Ibahagi ang giving URL sa pamamagitan ng inyong website, email newsletter, bulletin, at social media
-2. Maaari ring magbigay ang mga miyembro sa pamamagitan ng [B1 Mobile app](../../b1-mobile/giving/) — kasama na ang giving feature
+2. Maaari ring magbigay ang mga miyembro sa pamamagitan ng [B1 Mobile app](../../b1-mobile/giving/index.md) — kasama na ang giving feature
 
 :::info
 Ang mga miyembrong naka-log in ay maaaring mag-save ng paraan ng pagbabayad, mag-set up ng paulit-ulit na donasyon, at tingnan ang kanilang kasaysayan ng pagbibigay. Gumagana rin ang anonymous na pagbibigay — hindi kailangan ng login.

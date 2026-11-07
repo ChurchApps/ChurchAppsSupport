@@ -1,5 +1,6 @@
 ---
 title: "Tibalo"
+description: "Thola tinombolo tekulandza ngenhlelo, ubone tibandla letidonsa tincenye takho, bese utfola tindzawo tato ku-Lessons.church admin statistics, nekuhlunga ngelikhalenda lesikhatsi."
 ---
 
 # Tibalo

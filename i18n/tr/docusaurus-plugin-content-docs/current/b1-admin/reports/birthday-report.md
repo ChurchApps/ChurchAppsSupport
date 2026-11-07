@@ -1,5 +1,6 @@
 ---
 title: "Doğum Günü ve Yıl Dönümü Listeleri"
+description: "B1 Admin'de Kişi arama filtrelerini kullanarak belirli bir aydaki doğum günü veya yıl dönümü olan herkesin listesini oluşturun, ardından tarihleri görüntüleyin veya dışa aktarın."
 ---
 
 # Doğum Günü ve Yıl Dönümü Listeleri

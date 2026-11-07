@@ -1,5 +1,6 @@
 ---
 title: "Kudala Emakhalenda"
+description: "Dala ikhalendari ku-B1 Admin, xhuma emaqembu noma ngenisa emafayili .ics, bese uphatha tiketimenti, kubhalisa, nemanothi indzawo munye."
 ---
 
 # Kudala Emakhalenda
@@ -47,7 +48,7 @@ Kuhlanganisa emacembu nekhalenda lakho yindlela lenemandla yekubutsa imicimbi ng
 :::
 
 :::info
-Nangabe ufuna kudala ikhalenda linye lelibutsa imicimbi emacenjini lamanyenti kulo lonkhe libandla lakho, buka [Ikhalenda Lelihlelwe](curated-calendar) kutfola indlela lelula.
+Nangabe ufuna kudala ikhalenda linye lelibutsa imicimbi emacenjini lamanyenti kulo lonkhe libandla lakho, buka [Ikhalenda Lelihlelwe](./curated-calendar.md) kutfola indlela lelula.
 :::
 
 ## Kuvula Kubhalisela Umcimbi {#enabling-event-registration}
@@ -62,12 +63,12 @@ Ungakwati kuvula kubhalisa kunoma ngumuphi umcimbi wekhalenda kuze emalunga akwa
    - **Registration Closes** -- Lusuku nesikhatsi lapho kubhalisa kuphela khona.
    - **Tags** -- Emagama lahlukaniswe ngemakhoma (sib. "labasha, luhambo, vbs") kusita kuhlukanisa imicimbi lengabhaliselwa.
    - **Registration Questions** -- Ungakwati kuhlanganisa [ifomu](../forms/creating-forms.md) kuze labhalisile baphendvule imibuto lengetiwe (tinhlobo tekudla, linani lehembe le-T-shirt, umuntfu wekushaya kuye ngesikhatsi sengoti, njalonjalo) njengencenye yekubhalisa. Khetsa **None** kweqa imibuto.
-   - **Enable Waitlist** -- Nangabe umcimbi ugcwala, vumela labhalisile labengetiwe bangenele luhlu lwekulindza esikhundleni sekutalwa. Buka [Kubhalisa Lokukhokhelwako](paid-registrations#waitlist).
+   - **Enable Waitlist** -- Nangabe umcimbi ugcwala, vumela labhalisile labengetiwe bangenele luhlu lwekulindza esikhundleni sekutalwa. Buka [Kubhalisa Lokukhokhelwako](./paid-registrations.md#waitlist).
 4. Sindza umcimbi.
 
-Kwimicimbi lekhokhelwako, likhasi lelifanako letinhlelo likuvumela kuchaza **Attendee Types** letinemtsengo, **Selections** letikhetsekako (tintfo letengetiwe), ne-**Discount Codes**, kukhokha kubuthwa ngekusebentisa umniki-msebenti wemnikelo webandla lakho. Buka [Kubhalisa Lokukhokhelwako](paid-registrations) kutfola inchubo lengagcwele.
+Kwimicimbi lekhokhelwako, likhasi lelifanako letinhlelo likuvumela kuchaza **Attendee Types** letinemtsengo, **Selections** letikhetsekako (tintfo letengetiwe), ne-**Discount Codes**, kukhokha kubuthwa ngekusebentisa umniki-msebenti wemnikelo webandla lakho. Buka [Kubhalisa Lokukhokhelwako](./paid-registrations.md) kutfola inchubo lengagcwele.
 
-Nangabe kubhalisa sekuvuliwe, emalunga atawubona inkinobho ye-**Register for this Event** nababuka umcimbi ku-[webusayithi ye-B1](../../b1-church/events/registering) nome ku-[app ye-B1 Mobile](../../b1-mobile/events/registering). Nangabe uhlanganise ifomu, labhalisile babona sinyatselo se-**Questions** ngesikhatsi sekubhalisa futsi timphendvulo tabo tiyagcinwa nekubhalisa kwabo.
+Nangabe kubhalisa sekuvuliwe, emalunga atawubona inkinobho ye-**Register for this Event** nababuka umcimbi ku-[webusayithi ye-B1](../../b1-church/events/registering.md) nome ku-[app ye-B1 Mobile](../../b1-mobile/events/registering.md). Nangabe uhlanganise ifomu, labhalisile babona sinyatselo se-**Questions** ngesikhatsi sekubhalisa futsi timphendvulo tabo tiyagcinwa nekubhalisa kwabo.
 
 :::info
 Registration Questions isebenta kuphela nemafomu **langakaphawulwa** njenge Restricted. Ifomu leliphawulwe njenge Restricted liyaeqiwa ngalokutentekelako ngesikhatsi sekubhalisa esikhundleni sekuvezwa, ngako sebentisa ifomu lelingakaphawulwa nawuhlanganisa imibuto kumcimbi.
@@ -87,7 +88,7 @@ Kubuka nekuphatsa kubhalisa kwemicimbi yakho:
    - **Kunyusa** kubhalisa lokusekulindzeni nangabe sikhala sivuliwe
    - **Export CSV** -- Layisha konkhe kubhalisa, kufaka ekhatsi tinhlobo talabatakubakhona, tikhetso, tilinganiso tekukhokha, kanye netimphendvulo temibuto
 
-Nangabe umcimbi une-Registration Questions lehlanganisiwe, likhasi lemininingwane libuye liveta i-**Unanswered questions only** filter kutfola ngekushesha labhalisile labangakafaki timphendvulo, kanye nenkinobho ye-**View Answers** kukubhalisa ngakunye lokuphenduliwe kubona timphendvulo tabo. Imicimbi lekhokhelwako yengeta insika ye-**Type**, insika ye-**Paid / Total**, tibalo temaluhlobo ngamunye, ne-dialog yemininingwane yekukhokha -- buka [Kubhalisa Lokukhokhelwako](paid-registrations#the-registration-roster).
+Nangabe umcimbi une-Registration Questions lehlanganisiwe, likhasi lemininingwane libuye liveta i-**Unanswered questions only** filter kutfola ngekushesha labhalisile labangakafaki timphendvulo, kanye nenkinobho ye-**View Answers** kukubhalisa ngakunye lokuphenduliwe kubona timphendvulo tabo. Imicimbi lekhokhelwako yengeta insika ye-**Type**, insika ye-**Paid / Total**, tibalo temaluhlobo ngamunye, ne-dialog yemininingwane yekukhokha -- buka [Kubhalisa Lokukhokhelwako](./paid-registrations.md#the-registration-roster).
 
 :::tip
 Sebentisa i-progress bar yelinani lelivumelekile kulandzelela kutsi imicimbi igcwala ngasiphi lisivinini. Le-bar ishintja ibe bomvu nangabe umcimbi usekulinganini nome ngetulu kwalo.
@@ -95,7 +96,7 @@ Sebentisa i-progress bar yelinani lelivumelekile kulandzelela kutsi imicimbi igc
 
 ## Tinyatselo Letilandzelako
 
-- [Ikhalenda Lelihlelwe](curated-calendar) -- Dala ikhalenda lelibutsa kusuka emacenjini lamanyenti
-- [Kubhalisa Lokukhokhelwako](paid-registrations) -- Tinhlobo talabatakubakhona, tikhetso letengetiwe, emakhodi esaphulelo, kukhokha, kanye netiluhlu tekulindza
-- [Umhlahlandlela Wekubhalisela Umcimbi](../guides/event-registration) -- Umhlahlandlela wenyatselo ngenyatselo wekuhlela kubhalisela umcimbi
-- [Kubuka Konkhe Emakhalenda](./) -- Buyela ekubukeni konkhe kwemakhalenda
+- [Ikhalenda Lelihlelwe](./curated-calendar.md) -- Dala ikhalenda lelibutsa kusuka emacenjini lamanyenti
+- [Kubhalisa Lokukhokhelwako](./paid-registrations.md) -- Tinhlobo talabatakubakhona, tikhetso letengetiwe, emakhodi esaphulelo, kukhokha, kanye netiluhlu tekulindza
+- [Umhlahlandlela Wekubhalisela Umcimbi](../guides/event-registration.md) -- Umhlahlandlela wenyatselo ngenyatselo wekuhlela kubhalisela umcimbi
+- [Kubuka Konkhe Emakhalenda](./index.md) -- Buyela ekubukeni konkhe kwemakhalenda

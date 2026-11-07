@@ -1,5 +1,6 @@
 ---
 title: "Kuphatsa Tintshumayelo"
+description: "Phatsa thala lwetinkhulumo ku-B1 Admin: engeta tinkhulumo ku-YouTube, Vimeo noma Facebook, hlela imininingwane, bese utfola i-podcast yesonto lakho."
 ---
 
 # Kuphatsa Tintshumayelo
@@ -14,7 +15,7 @@ Likhasi le-Tintshumayelo likhombisa umtsamo wakho wonkhe wetintshumayelo. Kusuka
 <h4>Ngembi Kwekucala</h4>
 
 - Udzinga imvumo **contentApi.streamingServices.edit**. Buka [Tikhundla Netimvumo](../settings/roles-permissions.md) uma ungenawo umfanelo.
-- Yakha ku-[luhlu](playlists) lulodvwa okungenani kute uhlele tintshumayelo takho kulo
+- Yakha ku-[luhlu](./playlists.md) lulodvwa okungenani kute uhlele tintshumayelo takho kulo
 - Yiba nema-ID nome ema-URL evidiyo yakho lalungele kusuka ku-YouTube, Vimeo, nome Facebook
 
 </div>
@@ -35,7 +36,7 @@ Likhasi le-Tintshumayelo likhombisa umtsamo wakho wonkhe wetintshumayelo. Kusuka
 6. Yenta lawo lonkhe lawafunako, bese uchofota **Gcina**.
 
 :::tip
-Ungakwati futsi kwengeta i-URL yekusakaza bukhoma lehlala njalo ngekukhetsa **Engeta i-URL Yekusakaza Bukhoma Lohlala Njalo** kuluhlu lolwehlako lwe-Engeta Intshumayelo. Loku kwakha luxhumano lolungapheli kumsakazo wobukhoma weshanela yakho ye-YouTube ngekusebentisa i-ID Yeshanela yakho. Buka [Kusakaza Bukhoma](live-streaming) kute utfole imininingwane lengephi.
+Ungakwati futsi kwengeta i-URL yekusakaza bukhoma lehlala njalo ngekukhetsa **Engeta i-URL Yekusakaza Bukhoma Lohlala Njalo** kuluhlu lolwehlako lwe-Engeta Intshumayelo. Loku kwakha luxhumano lolungapheli kumsakazo wobukhoma weshanela yakho ye-YouTube ngekusebentisa i-ID Yeshanela yakho. Buka [Kusakaza Bukhoma](./live-streaming.md) kute utfole imininingwane lengephi.
 :::
 
 ## Kuhlela Intshumayelo
@@ -64,11 +65,11 @@ Ngemuva kwekwengeta intshumayelo, ungayihlela kutsi isakazwe ekhasini lakho leku
 3. Intshumayelo itawudlala ngesikhatsi lesihleliwe senkhonzo.
 
 :::info
-Kute ungenise tintshumayelo letinyenti kanyekanye esikhundleni sekutingenisa nga ngayinye, sebentisa lithulusi le-[Kungeniswa Ngebuningi](bulk-import) kute utfole emavidiyo abesuka mbamba ku-akhawundi yakho ye-YouTube nome Vimeo.
+Kute ungenise tintshumayelo letinyenti kanyekanye esikhundleni sekutingenisa nga ngayinye, sebentisa lithulusi le-[Kungeniswa Ngebuningi](./bulk-import.md) kute utfole emavidiyo abesuka mbamba ku-akhawundi yakho ye-YouTube nome Vimeo.
 :::
 
 ## Tinyatselo Letilandzelako
 
-- [Tinhlu](playlists) -- Hlela tintshumayelo tibe tichungechunge
-- [Kusakaza Bukhoma](live-streaming) -- Lungisa shedyuli yakho yekusakaza
-- [Kungeniswa Ngebuningi](bulk-import) -- Ngenisa tintshumayelo letinyenti kanyekanye
+- [Tinhlu](./playlists.md) -- Hlela tintshumayelo tibe tichungechunge
+- [Kusakaza Bukhoma](./live-streaming.md) -- Lungisa shedyuli yakho yekusakaza
+- [Kungeniswa Ngebuningi](./bulk-import.md) -- Ngenisa tintshumayelo letinyenti kanyekanye

@@ -1,5 +1,6 @@
 ---
 title: "Affecter des groupes"
+description: "Choisissez le groupe ou la classe de chaque membre pour chaque horaire dans B1 Checkin, avec catégories, conseils d'âge et option Aucun."
 ---
 
 # Affecter des groupes
@@ -13,7 +14,7 @@ Lorsque vous appuyez sur un bouton d'heure de service sur l'écran de revue du f
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Passez en revue votre foyer](./household-review) sur l'écran de revue du foyer
+- [Passez en revue votre foyer](./household-review.md) sur l'écran de revue du foyer
 - Développez le membre que vous souhaitez affecter et appuyez sur un bouton d'heure de service
 - Assurez-vous que l'administrateur de votre église a [créé des groupes](../../b1-admin/groups/creating-groups.md) et les a liés à des heures de service dans B1 Admin
 
@@ -34,7 +35,7 @@ Appuyez sur une carte de catégorie pour la développer et voir les groupes indi
 2. Passez en revue la liste des groupes de cette catégorie. Chaque groupe affiche son nom accompagné d'une icône de sélection à droite.
 3. Appuyez sur le **nom du groupe** que vous souhaitez affecter.
 
-L'application enregistre votre sélection et vous ramène à l'[écran de revue du foyer](./household-review). Le bouton d'heure de service de ce membre affiche maintenant le nom du groupe que vous avez sélectionné.
+L'application enregistre votre sélection et vous ramène à l'[écran de revue du foyer](./household-review.md). Le bouton d'heure de service de ce membre affiche maintenant le nom du groupe que vous avez sélectionné.
 
 ## Conseils sur l'âge et le niveau scolaire
 
@@ -52,7 +53,7 @@ Utilisez l'option **Aucun** pour les adultes qui assistent au service de culte p
 
 Pour modifier une affectation de groupe déjà effectuée :
 
-1. Retournez à l'[écran de revue du foyer](./household-review).
+1. Retournez à l'[écran de revue du foyer](./household-review.md).
 2. Développez le membre dont vous souhaitez modifier le groupe.
 3. Appuyez sur le bouton d'heure de service (qui affiche maintenant le nom du groupe actuellement affecté).
 4. Sélectionnez un groupe différent ou appuyez sur **Aucun**.
@@ -63,8 +64,8 @@ Les groupes et catégories sont configurés par l'administrateur de votre églis
 
 ## Étapes suivantes
 
-Après avoir affecté des groupes, retournez à l'[écran de revue du foyer](./household-review) pour :
+Après avoir affecté des groupes, retournez à l'[écran de revue du foyer](./household-review.md) pour :
 
 - Affecter des groupes à d'autres membres de la famille
-- [Ajouter un invité](./adding-guests) si quelqu'un accompagne votre famille
-- [Finaliser l'enregistrement](./completing-checkin) une fois que toutes les affectations sont prêtes
+- [Ajouter un invité](./adding-guests.md) si quelqu'un accompagne votre famille
+- [Finaliser l'enregistrement](./completing-checkin.md) une fois que toutes les affectations sont prêtes

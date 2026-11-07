@@ -1,5 +1,7 @@
 ---
-title: "礼拜程序"
+title: "B1 Admin 中的崇拜程序"
+sidebar_label: "礼拜程序"
+description: "在 B1 Admin 中为敬拜计划设置崇拜程序：添加诗歌、课程和自定义项目，将其整理成各个部分，并打印流程单。"
 ---
 
 # 礼拜程序

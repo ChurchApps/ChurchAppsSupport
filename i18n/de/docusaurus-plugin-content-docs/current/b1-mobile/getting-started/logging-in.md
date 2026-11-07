@@ -1,5 +1,7 @@
 ---
-title: "Anmeldung"
+title: "Anmeldung bei B1 Mobile"
+sidebar_label: "Anmeldung"
+description: "Melden Sie sich in B1 Mobile mit Ihrem ChurchApps-Konto an, registrieren Sie ein neues Konto oder setzen Sie das Passwort mit einem 6-stelligen Code zurück."
 ---
 
 # Anmeldung
@@ -13,7 +15,7 @@ B1 Mobile verwendet das gleiche ChurchApps-Konto, das Sie auf B1.church und ande
 <div class="prereqs">
 <h4>Bevor Sie Beginnen</h4>
 
-- [Installieren Sie B1 Mobile](./installing) auf Ihrem iOS- oder Android-Gerät
+- [Installieren Sie B1 Mobile](./installing.md) auf Ihrem iOS- oder Android-Gerät
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile verwendet das gleiche ChurchApps-Konto, das Sie auf B1.church und ande
 3. Geben Sie Ihre **E-Mail-Adresse** und Ihr **Passwort** ein.
 4. Tippen Sie auf **Sign In**.
 
-Nach der Anmeldung werden Sie zum [Dashboard](../dashboard/) gebracht. Wenn Sie noch keine Kirche ausgewählt haben, werden Sie aufgefordert, eine zu suchen und auszuwählen.
+Nach der Anmeldung werden Sie zum [Dashboard](../dashboard/index.md) gebracht. Wenn Sie noch keine Kirche ausgewählt haben, werden Sie aufgefordert, eine zu suchen und auszuwählen.
 
 ## Erstellen eines Neuen Kontos
 

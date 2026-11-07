@@ -1,5 +1,6 @@
 ---
 title: "Personen zoeken"
+description: "Zoek in B1 Admin op naam in de People-lijst, sorteer en kies kolommen, bouw filters met Advanced Search en exporteer resultaten naar CSV."
 ---
 
 # Personen zoeken

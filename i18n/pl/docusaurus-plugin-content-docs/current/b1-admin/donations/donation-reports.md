@@ -1,5 +1,6 @@
 ---
 title: "Raporty dotyczące darowizn"
+description: "Przeglądaj sumy darowizn, odejścia darczyńców i szczegóły partii w B1 Admin dzięki pulpitowi Donations Summary, widokowi Lapsed Givers i eksportom CSV."
 ---
 
 # Raporty dotyczące darowizn

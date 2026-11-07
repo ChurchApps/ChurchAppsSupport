@@ -1,5 +1,7 @@
 ---
-title: "دليل الأعضاء"
+title: "دليل الأعضاء في تطبيق B1 Mobile"
+sidebar_label: "دليل الأعضاء"
+description: "ابحث عن أشخاص في كنيستك عبر دليل أعضاء B1 Mobile: تصفح أبجدياً، وابحث بالاسم، وافتح الملفات الشخصية وروابط الأسر."
 ---
 
 # دليل الأعضاء
@@ -13,7 +15,7 @@ title: "دليل الأعضاء"
 <div class="prereqs">
 <h4>قبل أن تبدأ</h4>
 
-- [ثبّت تطبيق B1 Mobile](../getting-started/installing) و[سجّل الدخول](../getting-started/logging-in) إلى حسابك
+- [ثبّت تطبيق B1 Mobile](../getting-started/installing.md) و[سجّل الدخول](../getting-started/logging-in.md) إلى حسابك
 
 </div>
 
@@ -51,5 +53,5 @@ title: "دليل الأعضاء"
 
 ## مقالات ذات صلة
 
-- [المراسلة](./messaging) -- أرسل رسالة خاصة إلى شخص تجده في الدليل
+- [المراسلة](./messaging.md) -- أرسل رسالة خاصة إلى شخص تجده في الدليل
 - [إعدادات الخصوصية](../profile/privacy-settings.md) -- تحكّم فيما يمكن للآخرين رؤيته عنك في الدليل

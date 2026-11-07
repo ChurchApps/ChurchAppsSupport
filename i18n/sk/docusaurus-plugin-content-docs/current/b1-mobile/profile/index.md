@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Profil a priradené karty v B1 Mobile"
+sidebar_label: "Profil"
+description: "Spravujte svoje meno, kontaktné údaje, domácnosť a nastavenia viditeľnosti súkromia v profile B1 Mobile a spracovávajte karty pracovných postupov a úlohy, ktoré vám boli pridelené."
 ---
 
 # Profil
@@ -34,7 +36,7 @@ Karta **Profil** umožňuje zobraziť a upraviť vaše osobné údaje vrátane m
 
 ### Domácnosť
 
-Karta **Domácnosť** zobrazuje vaších členov rodiny a ich úlohy v rámci domácnosti. Tieto údaje sa používajú pre funkcie ako [check-in](../checkin/), kde môžete naraz prihlásiť celú rodinu.
+Karta **Domácnosť** zobrazuje vaších členov rodiny a ich úlohy v rámci domácnosti. Tieto údaje sa používajú pre funkcie ako [check-in](../checkin/index.md), kde môžete naraz prihlásiť celú rodinu.
 
 ### Viditeľnosť
 
@@ -69,6 +71,6 @@ Klepnutím na jednoduchú úlohu zobrazíte, od koho pochádza, koho sa týka, a
 
 ## Ďalšie kroky
 
-- [Úprava profilu](./editing-profile) -- Aktualizácia mena, kontaktných údajov a fotografie
-- [Domácnosť](./household) -- Zobrazenie a správa členov rodiny
-- [Nastavenia ochrany súkromia](./privacy-settings) -- Určenie, čo môžu ostatní vidieť o vás
+- [Úprava profilu](./editing-profile.md) -- Aktualizácia mena, kontaktných údajov a fotografie
+- [Domácnosť](./household.md) -- Zobrazenie a správa členov rodiny
+- [Nastavenia ochrany súkromia](./privacy-settings.md) -- Určenie, čo môžu ostatní vidieť o vás

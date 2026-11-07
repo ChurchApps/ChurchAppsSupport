@@ -1,5 +1,6 @@
 ---
 title: "Laitteen valinta"
+description: "Valitse FreePlay-luokkahuonetelevisioon sopiva laite: Fire TV -tikku, Onn-boksi tai Apple TV, ja tiedä mitä kannattaa välttää."
 ---
 
 # Laitteen valinta FreePlaylle

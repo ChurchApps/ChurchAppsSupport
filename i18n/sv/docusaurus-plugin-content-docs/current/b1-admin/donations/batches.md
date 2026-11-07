@@ -1,5 +1,6 @@
 ---
 title: "Gåvobatcher"
+description: "Gruppera gåvor i insamlingssatser i B1 Admin och stäng, skriv ut eller exportera varje sats så att summorna stämmer med banköverföringarna."
 ---
 
 # Gåvobatcher

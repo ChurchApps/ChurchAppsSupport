@@ -1,5 +1,7 @@
 ---
-title: "Skupnost"
+title: "Imenik članov skupnosti v B1.church"
+sidebar_label: "Skupnost"
+description: "V imeniku članov B1.church poiščite člane cerkve po imenu ali skupini, si oglejte profile in preverite, kje so zdaj posodobitve iz opuščene Časovnice."
 ---
 
 # Skupnost
@@ -26,5 +28,5 @@ Za dostop do funkcij skupnosti se morate [prijaviti](../getting-started/logging-
 :::
 
 :::tip
-Funkcije skupnosti uporabljajte skupaj z [Skupinami](../groups/), da boste ves teden ostali povezani s svojo cerkvijo.
+Funkcije skupnosti uporabljajte skupaj z [Skupinami](../groups/index.md), da boste ves teden ostali povezani s svojo cerkvijo.
 :::

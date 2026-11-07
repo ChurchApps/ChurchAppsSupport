@@ -1,5 +1,6 @@
 ---
 title: "Pamamahala ng mga Aralin"
+description: "Buuin ang istruktura ng aralin sa Lessons.church admin: venues, sections, role-based na Say, Do, Note, o Play actions, take-home copy, at resources."
 ---
 
 # Pamamahala ng mga Aralin

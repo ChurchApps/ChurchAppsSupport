@@ -1,5 +1,6 @@
 ---
 title: "Uppgifter"
+description: "Skapa, tilldela och stäng uppgifter i B1 Admin, hitta dem under Serving > My Work och ställ in förfallodatumpåminnelser så att uppföljningar aldrig glöms bort."
 ---
 
 # Uppgifter

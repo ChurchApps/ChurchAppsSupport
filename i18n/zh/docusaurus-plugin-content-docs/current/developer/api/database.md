@@ -1,5 +1,6 @@
 ---
 title: "数据库"
+description: "了解 ChurchApps API 如何将数据分布在六个 MySQL 数据库中（每个模块一个），以及如何配置连接和初始化数据库。"
 ---
 
 # 数据库
@@ -13,8 +14,8 @@ ChurchApps API 采用**每模块一库**的架构。六个数据模块中的每�
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 安装 **MySQL 8.0+** -- 请参见[前置条件](../setup/prerequisites)
-- 在 `.env` 文件中配置数据库连接字符串 -- 请参见[环境变量](../setup/environment-variables)
+- 安装 **MySQL 8.0+** -- 请参见[前置条件](../setup/prerequisites.md)
+- 在 `.env` 文件中配置数据库连接字符串 -- 请参见[环境变量](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### 关键设计决策
 
 - **每模块一库** -- 每个模块维护自己的 MySQL 数据库，并配有专属连接池（由 `KyselyPool` 管理）。这使模块之间保持解耦，并支持各自独立的模式演进。
-- **独占所有权** -- 某个模块的数据表只能由该模块自身的代码进行读写。当另一个模块需要这些数据时，它会调用所属模块的网关，而不是直接查询这些表——参见[跨模块通信](./module-structure#cross-module-communication)。
+- **独占所有权** -- 某个模块的数据表只能由该模块自身的代码进行读写。当另一个模块需要这些数据时，它会调用所属模块的网关，而不是直接查询这些表——参见[跨模块通信](./module-structure.md#cross-module-communication)。
 - **不使用 ORM 的仓储模式** -- 所有数据访问都通过仓储类完成，这些类使用 Kysely 查询构建器针对模块的模式构建带类型的 SQL。这让开发者能够完全掌控查询性能和行为。
 - **原生多租户设计** -- 每个查询都以 `churchId` 为作用域限定。所有数据表都包含 `churchId` 列，仓储层会自动强制执行租户隔离。
 
@@ -129,5 +130,5 @@ const people = await repos.person.loadAll(churchId);
 
 ## 相关文章
 
-- **[模块结构](./module-structure)** -- 每个模块内部控制器和仓储的组织方式
-- **[本地 API 环境搭建](./local-setup)** -- 完整的分步搭建指南
+- **[模块结构](./module-structure.md)** -- 每个模块内部控制器和仓储的组织方式
+- **[本地 API 环境搭建](./local-setup.md)** -- 完整的分步搭建指南

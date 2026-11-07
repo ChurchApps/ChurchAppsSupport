@@ -1,5 +1,6 @@
 ---
 title: "Navigationsstile"
+description: "Tilpas farver til solide og gennemsigtige navigationslinjer på din kirkes hjemmeside i B1 Admin, inklusive link-, hover- og aktive tilstande."
 ---
 
 # Navigationsstile

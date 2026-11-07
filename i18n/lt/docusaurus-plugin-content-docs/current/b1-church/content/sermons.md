@@ -1,5 +1,7 @@
 ---
-title: "Propovědi"
+title: "Pamokslų naršymas jūsų B1.church svetainėje"
+sidebar_label: "Propovědi"
+description: "Naršykite ir žiūrėkite įrašytus pamokslus iš bažnyčios bibliotekos B1.church svetainėje, sugrupuotus į serijas ar grojaraščius. Prisijungti nereikia."
 ---
 
 # Propovědi

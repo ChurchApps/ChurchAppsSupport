@@ -1,5 +1,7 @@
 ---
-title: "Uređivanje profila"
+title: "Urejanje profila v aplikaciji B1 Mobile"
+sidebar_label: "Uređivanje profila"
+description: "Posodobite ime, e-pošto, telefon, naslov in profilno fotografijo v aplikaciji B1 Mobile, da bodo evidence in imenik vaše cerkve ostali ažurni."
 ---
 
 # Uređivanje profila
@@ -13,7 +15,7 @@ Kartica **Profil** omogućuje vam ažuriranje osobnih podataka kako bi vaša crk
 <div class="prereqs">
 <h4>Prije nego što počnete</h4>
 
-- [Instalirajte B1 Mobile](../getting-started/installing) i [se prijavite](../getting-started/logging-in) na svoj račun
+- [Instalirajte B1 Mobile](../getting-started/installing.md) i [se prijavite](../getting-started/logging-in.md) na svoj račun
 
 </div>
 
@@ -34,7 +36,7 @@ Vaš profil obuhvaća sljedeće osobne podatke:
 3. Dodirnite polje koje želite ažurirati i unesite promjene.
 4. Spremite promjene kada završite.
 
-Vaši ažurirani podaci sinkroniziraju se automatski. Svatko tko pregleda vaš profil (ovisno o vašim [postavkama privatnosti](./privacy-settings)) odmah će vidjeti nove podatke.
+Vaši ažurirani podaci sinkroniziraju se automatski. Svatko tko pregleda vaš profil (ovisno o vašim [postavkama privatnosti](./privacy-settings.md)) odmah će vidjeti nove podatke.
 
 :::tip
 Držite adresu e-pošte i broj telefona ažurnima. Vaša crkva koristi ove podatke za slanje važnih obavijesti i podsjetnika.
@@ -46,7 +48,7 @@ Fotografiju profila možete dodati ili promijeniti na kartici **Profil**. Vaša 
 
 ## Promjene u svim uslugama ChurchApps
 
-Budući da sve usluge ChurchApps dijele isti sustav računa, promjena koju unesete u aplikaciji B1 Mobile odmah je vidljiva na [B1.church](../../b1-church/), u alatima za upravljanje vaše crkve i u svim ostalim povezanim uslugama. Ne morate zasebno ažurirati podatke na svakom mjestu.
+Budući da sve usluge ChurchApps dijele isti sustav računa, promjena koju unesete u aplikaciji B1 Mobile odmah je vidljiva na [B1.church](../../b1-church/index.md), u alatima za upravljanje vaše crkve i u svim ostalim povezanim uslugama. Ne morate zasebno ažurirati podatke na svakom mjestu.
 
 :::info
 Neke crkve zahtijevaju odobrenje administratora za određene promjene profila. Ako se vaša izmjena ne pojavi odmah, provjerite njezin status na kartici **Na čekanju** na zaslonu profila.
@@ -54,5 +56,5 @@ Neke crkve zahtijevaju odobrenje administratora za određene promjene profila. A
 
 ## Povezani članci
 
-- [Kućanstvo](./household) -- Pregledajte i upravljajte članovima svoje obitelji
-- [Postavke privatnosti](./privacy-settings) -- Odredite što drugi mogu vidjeti o vama
+- [Kućanstvo](./household.md) -- Pregledajte i upravljajte članovima svoje obitelji
+- [Postavke privatnosti](./privacy-settings.md) -- Odredite što drugi mogu vidjeti o vama

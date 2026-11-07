@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "Połącz B1 Admin z Make, aby automatyzować procesy: utwórz klucz API, skonfiguruj wyzwalacz i akcje B1.church oraz rozwiąż typowe błędy."
 ---
 
 # Make
@@ -110,6 +111,6 @@ Aplikacja B1.church dla Make jest open source. Definicje JSON znajdują się w r
 
 ## Zobacz także
 
-- [Zapier](./zapier) — ten sam wzorzec z prostszym interfejsem i większym katalogiem aplikacji
-- [Slack & Discord](./slack-discord) — wbudowane powiadomienia czatu bez Make
+- [Zapier](./zapier.md) — ten sam wzorzec z prostszym interfejsem i większym katalogiem aplikacji
+- [Slack & Discord](./slack-discord.md) — wbudowane powiadomienia czatu bez Make
 - [Webhooki (dokumentacja dla deweloperów)](/docs/developer/api/webhooks)

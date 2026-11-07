@@ -1,5 +1,6 @@
 ---
 title: "Flervalutastöd"
+description: "Registrera och rapportera gåvor i olika valutor i B1 Admin, inklusive manuell inmatning, onlinegivande via Stripe och hur sammanlagda summor omräknas."
 ---
 
 # Flervalutastöd

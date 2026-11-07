@@ -1,5 +1,6 @@
 ---
 title: "체크아웃 및 어린이 안전"
+description: "수동 B1 Checkin 스테이션에서 보안 코드, 확인된 픽업 인원, 부모 호출, 라벨 재인쇄, 긴급 방송을 활용해 어린이를 체크아웃하세요."
 ---
 
 # 체크아웃 및 어린이 안전
@@ -14,7 +15,7 @@ title: "체크아웃 및 어린이 안전"
 <h4>시작하기 전에</h4>
 
 - 체크아웃은 키오스크 관리 설정에서 **관리됨** 모드로 설정된 스테이션에서 사용 가능합니다
-- 어린이는 보안 코드가 있는 인쇄된 픽업 라벨을 가지고 [체크인](./completing-checkin)되어야 합니다
+- 어린이는 보안 코드가 있는 인쇄된 픽업 라벨을 가지고 [체크인](./completing-checkin.md)되어야 합니다
 - 페이징 및 긴급 방송을 위해서는 교회가 B1 Admin에서 문자 공급자와 연결되어 있어야 합니다
 
 </div>
@@ -39,7 +40,7 @@ title: "체크아웃 및 어린이 안전"
 픽업 사람이 확인되면 체크아웃을 탭합니다. 픽업 사람의 이름이 출석 기록과 함께 저장됩니다.
 
 :::info
-신뢰할 수 있는 픽업 사람과 권한이 없는 픽업 사람은 B1 Admin의 각 사람 페이지에서 교회 직원이 관리합니다. [체크인 안전](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people)을 참조하세요.
+신뢰할 수 있는 픽업 사람과 권한이 없는 픽업 사람은 B1 Admin의 각 사람 페이지에서 교회 직원이 관리합니다. [체크인 안전](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people)을 참조하세요.
 :::
 
 ## 부모에게 페이징
@@ -65,6 +66,6 @@ title: "체크아웃 및 어린이 안전"
 
 ## 관련 기사
 
-- [체크인 완료](./completing-checkin) - 보안 코드 및 픽업 라벨의 출처
-- [체크인 안전](../../b1-admin/attendance/checkin-safety) - 용량, 비율, 픽업 사람 및 문자 공급자 요구사항 구성
-- [프린터 설정](../getting-started/printer-setup) - 라벨 프린터 구성
+- [체크인 완료](./completing-checkin.md) - 보안 코드 및 픽업 라벨의 출처
+- [체크인 안전](../../b1-admin/attendance/checkin-safety.md) - 용량, 비율, 픽업 사람 및 문자 공급자 요구사항 구성
+- [프린터 설정](../getting-started/printer-setup.md) - 라벨 프린터 구성

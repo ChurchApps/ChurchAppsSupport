@@ -1,5 +1,6 @@
 ---
 title: Introdução ao B1.church
+description: "Guia para entrar no B1 Admin, navegar pelo Painel e pelo menu Jump e configurar as informações da igreja antes de explorar outras ferramentas."
 ---
 
 # Bem-vindo ao B1.church Admin!
@@ -30,7 +31,7 @@ Para mais suporte, envie um e-mail para [support@churchapps.org](mailto:support@
 10. Agora você pode entrar no B1.church pelo **portal do membro** ou pelo **portal administrativo**. O portal do membro permite ver como o B1.church aparece para os seus membros, visualizar os seus grupos e gerenciar as suas doações pessoais.
 
 :::tip
-Comece pela página de [Configurações](./settings/) para configurar o nome da igreja, a identidade visual e as permissões da equipe. Isso garante que tudo o que você configurar depois seja exibido corretamente.
+Comece pela página de [Configurações](./settings/index.md) para configurar o nome da igreja, a identidade visual e as permissões da equipe. Isso garante que tudo o que você configurar depois seja exibido corretamente.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -77,9 +78,9 @@ A pesquisa costuma ser a forma mais rápida de chegar a uma página — digite p
 
 Depois de assistir a esta introdução, explore estes recursos principais:
 
-- [Adicionando pessoas](./people/adding-people) -- Aprenda a adicionar membros ao seu banco de dados
-- [Grupos](./groups/) -- Configure e gerencie os grupos da igreja
-- [Planos de serviço](./serving/plans) -- Organize o seu ministério de serviço
-- [Presença](./attendance/) -- Acompanhe a presença e o check-in
-- [Site](./website/) -- Crie e personalize o site da sua igreja
-- [Configurações](./settings/) -- Configure as informações da igreja e as permissões
+- [Adicionando pessoas](./people/adding-people.md) -- Aprenda a adicionar membros ao seu banco de dados
+- [Grupos](./groups/index.md) -- Configure e gerencie os grupos da igreja
+- [Planos de serviço](./serving/plans.md) -- Organize o seu ministério de serviço
+- [Presença](./attendance/index.md) -- Acompanhe a presença e o check-in
+- [Site](./website/index.md) -- Crie e personalize o site da sua igreja
+- [Configurações](./settings/index.md) -- Configure as informações da igreja e as permissões

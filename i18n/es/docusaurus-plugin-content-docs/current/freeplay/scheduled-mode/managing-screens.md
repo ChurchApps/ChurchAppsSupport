@@ -1,5 +1,6 @@
 ---
 title: "Gestionar pantallas y grupos"
+description: "Revisa qué TV FreePlay están en línea y listos para el domingo, edita sus ajustes y crea grupos con un mismo calendario en FreePlay Admin."
 ---
 
 # Gestionar pantallas y grupos
@@ -14,7 +15,7 @@ La página **Pantallas** de FreePlay Admin muestra todos los televisores vincula
 <h4>Antes de empezar</h4>
 
 - Inicia sesión en FreePlay Admin en [admin.freeplay.church](https://admin.freeplay.church)
-- [Vincula al menos una pantalla](./pairing-a-screen)
+- [Vincula al menos una pantalla](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Usa **Presentar** para reproducir el calendario de la pantalla en tu navegador, 
 
 Haz clic en la etiqueta de una pantalla para abrir su página. A la izquierda:
 
-- **Presentar en el navegador** - Reproduce el calendario de esta pantalla a pantalla completa en tu navegador, tal como se vería en el televisor. Consulta [Presentar desde un navegador](./scheduled-playback#presenting-from-a-browser)
+- **Presentar en el navegador** - Reproduce el calendario de esta pantalla a pantalla completa en tu navegador, tal como se vería en el televisor. Consulta [Presentar desde un navegador](./scheduled-playback.md#presenting-from-a-browser)
 - **Editar** - Cambia la etiqueta, el grupo o el modo
 - **Más** > **Desvincular** - Desconecta el televisor. Vuelve a mostrar un código de vinculación
 
@@ -93,6 +94,6 @@ Al eliminar un grupo también se elimina su programación. Las pantallas de ese 
 
 ## Artículos relacionados
 
-- **[Vincular una pantalla](./pairing-a-screen)** - Agregar un televisor nuevo
-- **[Programar el calendario](./scheduling-the-calendar)** - Definir lo que reproduce cada grupo y su bucle predeterminado
-- **[Reproducción programada en el televisor](./scheduled-playback)** - Lo que significa la fecha "Listo hasta" en el propio televisor
+- **[Vincular una pantalla](./pairing-a-screen.md)** - Agregar un televisor nuevo
+- **[Programar el calendario](./scheduling-the-calendar.md)** - Definir lo que reproduce cada grupo y su bucle predeterminado
+- **[Reproducción programada en el televisor](./scheduled-playback.md)** - Lo que significa la fecha "Listo hasta" en el propio televisor

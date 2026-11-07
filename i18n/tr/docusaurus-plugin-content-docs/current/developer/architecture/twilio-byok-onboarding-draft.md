@@ -6,7 +6,7 @@ description: "B1 kilisesine ait Twilio kurulumu, herkese açık kayıt yönergel
 # Kiliseye ait Twilio katılım taslağı
 
 :::caution Önerilen entegrasyon için taslak
-Bu, önerilen bir iş akışıdır. B1 artık **Ayarlar > Metin Mesajlaşma** altında temel bir **Twilio** seçeneği sunuyor (Account SID, Auth Token, Gönderici Numarası ve gelen STOP webhook'u). Bkz. [Kilise Ayarları: Metin Mesajlaşma](../../b1-admin/settings/church-settings.md#texting). Aşağıdaki ek B1 kurulum denetimleri, rıza eşleştirmesi ve doğrulama adımları gelecek bir sürümün gereksinimleridir; mevcut ayarları bulmanız için verilmiş talimatlar değildir. Kapsam ve bağımlılıklar için [teknik öneriye](./twilio-byok-proposal) bakın. Twilio kaynakları 22 Ekim 2026 tarihinde kontrol edilmiştir; bir kampanya göndermeden önce güncel gereksinimleri doğrulayın.
+Bu, önerilen bir iş akışıdır. B1 artık **Ayarlar > Metin Mesajlaşma** altında temel bir **Twilio** seçeneği sunuyor (Account SID, Auth Token, Gönderici Numarası ve gelen STOP webhook'u). Bkz. [Kilise Ayarları: Metin Mesajlaşma](../../b1-admin/settings/church-settings.md#texting). Aşağıdaki ek B1 kurulum denetimleri, rıza eşleştirmesi ve doğrulama adımları gelecek bir sürümün gereksinimleridir; mevcut ayarları bulmanız için verilmiş talimatlar değildir. Kapsam ve bağımlılıklar için [teknik öneriye](./twilio-byok-proposal.md) bakın. Twilio kaynakları 22 Ekim 2026 tarihinde kontrol edilmiştir; bir kampanya göndermeden önce güncel gereksinimleri doğrulayın.
 :::
 
 ## Önerilen düzen
@@ -34,7 +34,7 @@ Kilisenizin B1 web sitesinde, örneğin `https://www.example.org/text-updates` g
 | Mevcut otomasyonlar | Her form gönderenini ya da grup üyesini bir metin mesajlaşma iş akışına kaydetmeyin. Yalnızca önerilen ve doğrulanmış rıza eşleştirmesi o programa yetki verebilir. |
 | Teşekkür mesajı | Kutu işaretlenmediğinde ya da onay/inceleme hâlâ bekliyorsa, SMS kaydının yapıldığını iddia etmeden yalnızca formun alındığını doğrulayın. |
 
-Mevcut bir onay kutusu sorusu formu örnekleyebilir; ancak B1'in yine de rıza kaydına ve gönderim kapılarına ihtiyacı vardır. Mevcut ortak oluşturucu açıklamaları düz metin olarak gösterir; oraya Markdown veya URL yazmak, politika bağlantılarının tıklanabilir olacağı konusunda yeterli güvence vermez. Uygulama, gerçek bağlantılar içeren erişilebilir bir rıza kontrolü sağlamalıdır. Bkz. [B1 formları oluşturma](../../b1-admin/forms/creating-forms) ve [teknik öneri](./twilio-byok-proposal#consent-and-suppression-are-required-release-work).
+Mevcut bir onay kutusu sorusu formu örnekleyebilir; ancak B1'in yine de rıza kaydına ve gönderim kapılarına ihtiyacı vardır. Mevcut ortak oluşturucu açıklamaları düz metin olarak gösterir; oraya Markdown veya URL yazmak, politika bağlantılarının tıklanabilir olacağı konusunda yeterli güvence vermez. Uygulama, gerçek bağlantılar içeren erişilebilir bir rıza kontrolü sağlamalıdır. Bkz. [B1 formları oluşturma](../../b1-admin/forms/creating-forms.md) ve [teknik öneri](./twilio-byok-proposal.md#consent-and-suppression-are-required-release-work).
 
 Twilio, gönüllü ve doğrulanabilir bir onay ister. SMS'i zorunlu üyelik koşulları, e-posta/telefon izinleri, bağış rızası veya etkinlik kaydıyla birleştirmeyin. Bir ziyaretçi kartındaki mobil numara tek başına SMS rızası değildir. Bkz. Twilio'nun [gönüllü rıza gereksinimleri](https://www.twilio.com/docs/api/errors/30923) ve [kampanya önerileri](https://help.twilio.com/hc/en-us/articles/26149060902555-A2P-10DLC-Campaign-Registration-Recommendations).
 

@@ -1,5 +1,6 @@
 ---
 title: "Varsler"
+description: "Sett opp push-varsler for B1 Mobile-appen, og se, åpne og fjern menighetsvarsler om meldinger, grupper og frivillig tjeneste."
 ---
 
 # Varsler
@@ -13,7 +14,7 @@ B1 Mobile bruker push-varsler for å holde deg informert om hva som skjer i meni
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- [Installer B1 Mobile](../getting-started/installing.md) og [logg inn](../getting-started/logging-in.md) på kontoen din
 - Tillat varsler for B1 Mobile i innstillingene på enheten din
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile bruker push-varsler for å holde deg informert om hva som skjer i meni
 
 Varsler kan omfatte en rekke aktiviteter, blant annet:
 
-- **Meldinger** -- Når noen sender deg en [privat melding](./messaging).
-- **Gruppeaktivitet** -- Oppdateringer, innlegg og samtaler i [grupper](../groups/) du er medlem av.
+- **Meldinger** -- Når noen sender deg en [privat melding](./messaging.md).
+- **Gruppeaktivitet** -- Oppdateringer, innlegg og samtaler i [grupper](../groups/index.md) du er medlem av.
 - **Tjenesteoppdrag** -- Når du blir tildelt en [plan](../serving/viewing-plans.md), eller når statusen på oppdraget ditt endres.
 - **Andre oppdateringer** -- Generelle kunngjøringer og aktivitet som er relevant for deg.
 

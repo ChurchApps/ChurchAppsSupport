@@ -1,5 +1,6 @@
 ---
 title: "Modelos de plano"
+description: "Salve a ordem do culto e as posições de um plano como modelo reutilizável no B1 Admin e aplique-o a planos futuros com um clique."
 ---
 
 # Modelos de plano

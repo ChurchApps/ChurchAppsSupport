@@ -1,5 +1,7 @@
 ---
-title: "Ders Planlama"
+title: "Portalde Sınıf Derslerini Planlama"
+sidebar_label: "Ders Planlama"
+description: "B1 Admin portalında her tarih için program, çalışma ve yaşa özel mekân seçerek Lessons.church derslerini bir sınıf takvimine planlayın."
 ---
 
 # Ders Planlama

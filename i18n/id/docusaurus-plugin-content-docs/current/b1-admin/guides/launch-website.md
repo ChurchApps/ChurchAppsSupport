@@ -1,5 +1,6 @@
 ---
 title: "Panduan: Meluncurkan Situs Web Gereja Anda"
+description: "Atur situs gereja di B1 Admin: bangun beranda, sesuaikan warna dan logo, tambahkan halaman utama, hubungkan domain kustom, dan tambahkan formulir pemberian."
 ---
 
 # Meluncurkan Situs Web Gereja Anda

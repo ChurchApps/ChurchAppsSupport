@@ -1,5 +1,7 @@
 ---
-title: "Serviceordre"
+title: "Gudstjenesteforløb i B1.church-appen"
+sidebar_label: "Serviceordre"
+description: "Se en plans gudstjenesteforløb i B1.church-appen med samlet tidsforløb, sangtekster, toneartstransponering og lektionsforhåndsvisninger til dit team."
 ---
 
 # Serviceordre

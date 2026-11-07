@@ -1,5 +1,6 @@
 ---
 title: "Vodnik: Spremljanje udeležbe v cerkvi"
+description: "Spremljajte prisotnost v B1 Admin: nastavite kampuse in čase bogoslužij, zabeležite jo ročno ali prek samostojne prijave ter berite poročila."
 ---
 
 # Spremljanje udeležbe v cerkvi

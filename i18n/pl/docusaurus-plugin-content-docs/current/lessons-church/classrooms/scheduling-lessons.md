@@ -1,5 +1,7 @@
 ---
-title: "Planowanie lekcji"
+title: "Planowanie lekcji w salach w portalu"
+sidebar_label: "Planowanie lekcji"
+description: "Planowanie lekcji Lessons.church w kalendarzu sali w portalu B1 Admin: wybierz program, studium, lekcję i miejsce dla danej grupy wiekowej na każdą datę."
 ---
 
 # Planowanie lekcji

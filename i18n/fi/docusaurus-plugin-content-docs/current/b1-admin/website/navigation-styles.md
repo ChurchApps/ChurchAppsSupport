@@ -1,5 +1,6 @@
 ---
 title: "Navigointityylit"
+description: "Mukauta kiinteiden ja läpinäkyvien verkkosivun navigointipalkkien värit B1 Adminissa, myös linkkien, kohdistuksen ja aktiivisen tilan värit."
 ---
 
 # Navigointityylit

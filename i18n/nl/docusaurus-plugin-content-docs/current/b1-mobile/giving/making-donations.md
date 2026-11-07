@@ -1,5 +1,7 @@
 ---
-title: "Een donatie doen"
+title: "Een donatie doen in B1 Mobile"
+sidebar_label: "Een donatie doen"
+description: "Geef aan je kerk via het tabblad Doneren in B1 Mobile: kies een fonds, voer een bedrag in, betaal met Stripe en herhaal eerdere giften snel."
 ---
 
 # Een donatie doen
@@ -13,8 +15,8 @@ Geven via B1 Mobile is snel en eenvoudig. Het tabblad **Doneren** in de geefpagi
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [log in](../getting-started/logging-in) op je account
-- Heb een creditcard of debetkaart klaar, of [sla een betalingsmethode op](./managing-payments) van tevoren
+- [Installeer B1 Mobile](../getting-started/installing.md) en [log in](../getting-started/logging-in.md) op je account
+- Heb een creditcard of debetkaart klaar, of [sla een betalingsmethode op](./managing-payments.md) van tevoren
 
 </div>
 
@@ -42,10 +44,10 @@ Controleer het donatiebedrag en fonds dubbel voordat je verzendt. Donaties worde
 Als je hetzelfde bedrag wilt geven als je laatste donatie, hoef je niet door de volledige donatieflow te gaan. Het tabblad **Overzicht** toont je meest recente gift samen met een **Herhalen** knop. Tik erop om dezelfde donatie snel opnieuw in te dienen.
 
 :::tip
-Als je van plan bent regelmatig te geven, sla je betalingsmethode op in het tabblad **Beheren** zodat je volgende keer nog sneller kunt doneren. Zie [Betalingsmethoden beheren](./managing-payments) voor details.
+Als je van plan bent regelmatig te geven, sla je betalingsmethode op in het tabblad **Beheren** zodat je volgende keer nog sneller kunt doneren. Zie [Betalingsmethoden beheren](./managing-payments.md) voor details.
 :::
 
 ## Gerelateerde artikelen
 
-- [Betalingsmethoden beheren](./managing-payments) -- Sla een kaart op voor sneller toekomstig geven
-- [Donatiegeschiedenis](./donation-history) -- Bekijk je donatiesamenvatting en vorige donaties
+- [Betalingsmethoden beheren](./managing-payments.md) -- Sla een kaart op voor sneller toekomstig geven
+- [Donatiegeschiedenis](./donation-history.md) -- Bekijk je donatiesamenvatting en vorige donaties

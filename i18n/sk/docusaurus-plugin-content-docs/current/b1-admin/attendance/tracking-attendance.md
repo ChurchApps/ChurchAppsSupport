@@ -1,5 +1,6 @@
 ---
 title: "Sledovanie účasti"
+description: "Prehliadajte trendy účasti, filtrujte správy podľa kampusu, bohoslužby alebo skupiny a exportujte účasť skupín zo stránky Attendance v B1 Admin."
 ---
 
 # Sledovanie účasti

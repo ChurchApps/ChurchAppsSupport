@@ -1,5 +1,6 @@
 ---
 title: "Krmarjenje po B1App"
+description: "Krmarite po portalu članov B1.church na telefonu ali računalniku: nadzorna plošča Domov, spodnja vrstica zavihkov, stran Več in stran Jaz."
 ---
 
 # Krmarjenje po B1App
@@ -92,7 +93,7 @@ Podrobne strani -- skupina, načrt, vaša stran Jaz ter zaslona Načrti in Darov
 
 ## Stran Jaz
 
-**Jaz** (`/mobile/me`) je vaše osebno središče. Prikazuje vaše ime in fotografijo z gumboma **Uredi profil** in **Nastavitve** (za [nastavitve obveščanja](./notification-preferences.md)), nato pa, kaj vas čaka -- dodelitve služb, prijave na dogodke in dogodke skupin -- ter vaše gospodinjstvo, vaše skupine, vaša [darovanja](../giving/) v letu, obrazce, ki ste jih oddali, zgodovino udeležbe, vaše [prijave](../events/my-registrations.md) ter nedavna obvestila in sporočila. Podrobnosti najdete v razdelku [Stran Jaz](./me-page).
+**Jaz** (`/mobile/me`) je vaše osebno središče. Prikazuje vaše ime in fotografijo z gumboma **Uredi profil** in **Nastavitve** (za [nastavitve obveščanja](./notification-preferences.md)), nato pa, kaj vas čaka -- dodelitve služb, prijave na dogodke in dogodke skupin -- ter vaše gospodinjstvo, vaše skupine, vaša [darovanja](../giving/index.md) v letu, obrazce, ki ste jih oddali, zgodovino udeležbe, vaše [prijave](../events/my-registrations.md) ter nedavna obvestila in sporočila. Podrobnosti najdete v razdelku [Stran Jaz](./me-page.md).
 
 Če niste prijavljeni, stran Jaz namesto tega prikaže gumb **Prijava**.
 

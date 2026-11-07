@@ -1,5 +1,6 @@
 ---
 title: "Hitelesítés és jogosultságok"
+description: "Referencia a ChurchApps API JWT-bejelentkezéséhez, kétlépcsős azonosításához, OAuth 2.0 folyamataihoz és jogosultsági modelljéhez integrációkat építő fejlesztők számára."
 ---
 
 # Hitelesítés és jogosultságok
@@ -244,7 +245,7 @@ Böngésző nélküli eszközökhöz (TV-alkalmazások, kioszkok):
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Kliens lekérése kliensazonosító alapján (a titok elrejtve) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Kliens létrehozása vagy frissítése |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Kliens törlése |
-| POST | `/membership/oauth/register` | Nyilvános | — | Dinamikus kliensregisztráció (RFC 7591) olyan nyilvános kliensek számára, mint az MCP-csatlakozók. Lásd: [Csatlakoztatott alkalmazások](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Nyilvános | — | Dinamikus kliensregisztráció (RFC 7591) olyan nyilvános kliensek számára, mint az MCP-csatlakozók. Lásd: [Csatlakoztatott alkalmazások](../connected-apps.md#dynamic-client-registration) |
 
 ### Eszközjóváhagyási végpontok
 
@@ -265,5 +266,5 @@ A dokumentáció végponttáblázataiban ezeket a Hitelesítés oszlopban **JWT*
 
 ## Kapcsolódó oldalak
 
-- [Modulstruktúra](../module-structure) — A vezérlők, adattárak és modellek felépítése
-- [Helyi telepítés](../local-setup) — Az API helyi futtatása fejlesztéshez
+- [Modulstruktúra](../module-structure.md) — A vezérlők, adattárak és modellek felépítése
+- [Helyi telepítés](../local-setup.md) — Az API helyi futtatása fejlesztéshez

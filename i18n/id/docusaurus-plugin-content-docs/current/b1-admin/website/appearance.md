@@ -1,5 +1,6 @@
 ---
 title: "Tampilan"
+description: "Atur warna, font, jarak, logo, dan navigasi situs gereja Anda di B1 Admin, serta widget, analitik GA4, pengalihan, dan CSS kustom."
 ---
 
 # Tampilan
@@ -13,7 +14,7 @@ Halaman Tampilan memungkinkan Anda menyesuaikan tampilan keseluruhan situs web g
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Selesaikan [Pengaturan Awal](initial-setup) untuk situs web Anda
+- Selesaikan [Pengaturan Awal](./initial-setup.md) untuk situs web Anda
 - Siapkan logo gereja Anda dalam format PNG dengan latar belakang transparan dan rasio aspek 4:1
 - Ketahui warna merek gereja Anda (nilai hex) jika Anda sudah memiliki panduan gaya
 
@@ -98,7 +99,7 @@ CSS kustom sangat kuat tetapi dapat merusak tata letak situs Anda jika digunakan
 :::
 
 :::info
-Situs Anda menerapkan Content Security Policy yang memblokir skrip inline dari sumber lain. Kolom **Custom HTML** di sini, dan [elemen HTML](page-editor#using-the-html-element) pada halaman individual, adalah pengecualian tepercaya -- kode yang Anda simpan di sana dijalankan apa adanya, jadi tempelkan skrip hanya dari sumber yang Anda percaya (tag analitik, widget obrolan, dan sematan serupa).
+Situs Anda menerapkan Content Security Policy yang memblokir skrip inline dari sumber lain. Kolom **Custom HTML** di sini, dan [elemen HTML](./page-editor.md#using-the-html-element) pada halaman individual, adalah pengecualian tepercaya -- kode yang Anda simpan di sana dijalankan apa adanya, jadi tempelkan skrip hanya dari sumber yang Anda percaya (tag analitik, widget obrolan, dan sematan serupa).
 :::
 
 ## Tema Gaya
@@ -107,5 +108,5 @@ Jika Anda menginginkan titik awal yang cepat, **Suggested Palettes** di bagian C
 
 ## Langkah Berikutnya
 
-- [Mengelola Halaman](managing-pages) -- Membangun dan mengatur halaman situs web Anda
-- [Berkas](files) -- Mengunggah aset media untuk situs Anda
+- [Mengelola Halaman](./managing-pages.md) -- Membangun dan mengatur halaman situs web Anda
+- [Berkas](./files.md) -- Mengunggah aset media untuk situs Anda

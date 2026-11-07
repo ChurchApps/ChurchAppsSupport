@@ -1,5 +1,6 @@
 ---
 title: "모바일 배포"
+description: "Expo EAS로 B1 Mobile 앱의 Android 및 iOS 릴리스를 빌드하고, 앱 스토어에 제출하며, OTA 업데이트를 푸시하는 과정을 안내합니다."
 ---
 
 # 모바일 배포
@@ -13,7 +14,7 @@ ChurchApps 모바일 앱은 **Expo EAS 빌드**를 사용하여 빌드되고 앱
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- 모바일 앱을 로컬에서 설정 -- [B1 Mobile](../mobile/b1-mobile) 참조
+- 모바일 앱을 로컬에서 설정 -- [B1 Mobile](../mobile/b1-mobile.md) 참조
 - [EAS CLI](https://docs.expo.dev/eas/) 설치 및 구성
 - Google Play Console(Android) 및/또는 Apple App Store Connect(iOS)에 액세스 권한
 
@@ -77,6 +78,6 @@ OTA 업데이트는 스토어 빌드보다 훨씬 빠릅니다 -- 변경 사항�
 
 ## 관련 문서
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- 로컬 설정 및 개발 가이드
-- **[API 배포](./apis)** -- 백엔드 API 배포
-- **[웹 앱 배포](./web-apps)** -- 프론트엔드 웹 애플리케이션 배포
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- 로컬 설정 및 개발 가이드
+- **[API 배포](./apis.md)** -- 백엔드 API 배포
+- **[웹 앱 배포](./web-apps.md)** -- 프론트엔드 웹 애플리케이션 배포

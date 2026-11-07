@@ -1,5 +1,6 @@
 ---
 title: "Check-In -tarrakilpen suunnittelu"
+description: "Muokkaa B1 Adminissa sisäänkirjautumisessa tulostettavia nimilappu- ja noutolappupohjia: kentät, sijoittelu sekä syntymäpäivä- ja huomautusehdot."
 ---
 
 # Check-In -tarrakilpen suunnittelu
@@ -13,8 +14,8 @@ Tarrakilpen suunnittelutyökalun avulla voit luoda ja muokata nimilappu- ja nout
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Ota käyttöön [Attendance](setup) ja määritä vähintään yksi palveluaika, jolle sisäänkirjaus on käytössä
-- Ota käyttöön [Check-In](check-in), jotta tarrat tulostuvat
+- Ota käyttöön [Attendance](./setup.md) ja määritä vähintään yksi palveluaika, jolle sisäänkirjaus on käytössä
+- Ota käyttöön [Check-In](./check-in.md), jotta tarrat tulostuvat
 - Tarvitset ylläpitäjän käyttöoikeudet Attendance-osioon
 
 </div>
@@ -85,6 +86,6 @@ Tee testitulostus pohjan muokkaamisen jälkeen varmistaaksesi, että asettelu n�
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Check-In Setup](setup) — palveluiden ja ryhmien määrittäminen sisäänkirjausta varten
-- [Completing Check-In](check-in) — perheiden sisäänkirjausprosessi
-- [B1 Checkin Getting Started](../../b1-checkin/getting-started/) — Checkin-päätesovellus
+- [Check-In Setup](./setup.md) — palveluiden ja ryhmien määrittäminen sisäänkirjausta varten
+- [Completing Check-In](./check-in.md) — perheiden sisäänkirjausprosessi
+- [B1 Checkin Getting Started](../../b1-checkin/getting-started/index.md) — Checkin-päätesovellus

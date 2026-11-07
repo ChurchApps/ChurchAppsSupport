@@ -1,5 +1,6 @@
 ---
 title: "Richieste di adesione ai gruppi"
+description: "Esamina, approva o rifiuta le richieste di adesione ai gruppi in B1 Admin, trova quelle in sospeso come leader o admin e indica un motivo nel rifiuto."
 ---
 
 # Richieste di adesione ai gruppi

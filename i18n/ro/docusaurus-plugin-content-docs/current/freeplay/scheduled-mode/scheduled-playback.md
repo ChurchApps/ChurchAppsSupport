@@ -1,5 +1,6 @@
 ---
 title: "Redarea programată pe TV"
+description: "Un TV FreePlay asociat descarcă săptămâna următoare și redă după ceas, chiar offline. Include panoul de informații, butoanele și fixarea unui playlist."
 ---
 
 # Redarea programată pe TV
@@ -13,8 +14,8 @@ Odată ce un TV este asociat unui calendar, FreePlay îl rulează automat. Desca
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Asociați TV-ul cu un calendar](./pairing-a-screen)
-- [Adăugați ceva în calendar](./scheduling-the-calendar), sau setați o buclă implicită pentru grupul ecranului
+- [Asociați TV-ul cu un calendar](./pairing-a-screen.md)
+- [Adăugați ceva în calendar](./scheduling-the-calendar.md), sau setați o buclă implicită pentru grupul ecranului
 
 </div>
 
@@ -40,7 +41,7 @@ Panoul are și trei butoane:
 
 - **Fixează această listă** - Păstrează conținutul curent redat în buclă și ignoră calendarul. Selectați **Anulează fixarea listei** pentru a reveni la program
 - **Răsfoiește conținutul** - Părăsește playerul programat pentru a răsfoi furnizorii conectați
-- **Setări** - Deschide setările FreePlay, unde puteți [să dezasociați sau să asociați un alt calendar](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Setări** - Deschide setările FreePlay, unde puteți [să dezasociați sau să asociați un alt calendar](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 Pentru a reveni la program după răsfoire, apăsați **Înapoi** pe telecomandă din ecranul **Furnizori de conținut**, sau deschideți **Setări**, selectați **Asociază cu un calendar** și alegeți **Înapoi la program**. Un TV asociat revine și el la playerul programat ori de câte ori FreePlay revine în prim-plan, și se deschide întotdeauna la playerul programat.
@@ -77,6 +78,6 @@ Puteți reda și calendarul unui ecran într-un browser web. În FreePlay Admin,
 
 ## Articole conexe
 
-- **[Programarea calendarului](./scheduling-the-calendar)** - Stabiliți ce se redă și ce se întâmplă când se termină mai devreme
-- **[Gestionarea ecranelor și a grupurilor](./managing-screens)** - Verificați descărcările fiecărui ecran din FreePlay Admin
-- **[Redarea conținutului](../content-providers/playing-content)** - Comenzile playerului atunci când redați conținut singur
+- **[Programarea calendarului](./scheduling-the-calendar.md)** - Stabiliți ce se redă și ce se întâmplă când se termină mai devreme
+- **[Gestionarea ecranelor și a grupurilor](./managing-screens.md)** - Verificați descărcările fiecărui ecran din FreePlay Admin
+- **[Redarea conținutului](../content-providers/playing-content.md)** - Comenzile playerului atunci când redați conținut singur

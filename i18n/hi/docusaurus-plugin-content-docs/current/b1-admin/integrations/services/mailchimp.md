@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "B1 Admin के लोगों और समूह या सहेजी गई सूची की सदस्यता को टैग के रूप में Mailchimp ऑडियंस से सिंक करें, साथ में सेटअप, प्रारंभिक आयात और समस्या-निवारण चरण।"
 ---
 
 # Mailchimp {#mailchimp}
@@ -65,7 +66,7 @@ Mailchimp के importer से प्रारंभिक लोड करन
 
 ## अन्य Recipes (Zapier / Make) {#other-recipes-zapier--make}
 
-Audience sync से परे के काम — `donation.created` पर givers को tag करना, Mailchimp → B1 की उल्टी दिशा, या पूरी तरह किसी दूसरे email platform (Constant Contact, Brevo, आदि) से sync — अब भी [Zapier](../zapier) या [Make](../make) के ज़रिए संभव हैं, जो उसी webhook events पर trigger होते हैं:
+Audience sync से परे के काम — `donation.created` पर givers को tag करना, Mailchimp → B1 की उल्टी दिशा, या पूरी तरह किसी दूसरे email platform (Constant Contact, Brevo, आदि) से sync — अब भी [Zapier](../zapier.md) या [Make](../make.md) के ज़रिए संभव हैं, जो उसी webhook events पर trigger होते हैं:
 
 - **Givers को tag करें:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **दो-तरफ़ा:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ Audience sync से परे के काम — `donation.created` पर gi
 
 - [Webhooks (developer reference)](/docs/developer/api/webhooks) — इसके नीचे का engine, event catalog, delivery/retry के नियम
 - [Saved Lists](/docs/b1-admin/people/lists) — नियम-आधारित audiences जो Mailchimp tags से स्वाभाविक रूप से मेल खाती हैं
-- [Zapier (overview)](../zapier) — audience sync से परे के recipes के लिए
+- [Zapier (overview)](../zapier.md) — audience sync से परे के recipes के लिए

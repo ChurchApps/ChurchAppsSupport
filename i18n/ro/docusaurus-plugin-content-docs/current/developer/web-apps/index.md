@@ -1,5 +1,6 @@
 ---
 title: "Aplicații web"
+description: "Prezentare a celor trei aplicații web ChurchApps (B1 Admin, B1.church, Lessons.church), stack-ul comun React și MUI, apphelper și uneltele de build."
 ---
 
 # Aplicații web
@@ -41,7 +42,7 @@ Aplicațiile partajează componente UI și utilitare prin familia de pachete `@c
 | `@churchapps/apphelper-website` | Componente pentru site-uri web și CMS |
 
 :::tip
-Pentru detalii despre dezvoltarea locală a acestor pachete partajate, consultați documentația [AppHelper](../shared-libraries/app-helper).
+Pentru detalii despre dezvoltarea locală a acestor pachete partajate, consultați documentația [AppHelper](../shared-libraries/app-helper.md).
 :::
 
 ## Script postinstall

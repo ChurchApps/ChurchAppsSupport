@@ -1,5 +1,6 @@
 ---
 title: "Kiến trúc Trình xây dựng Website"
+description: "Sơ đồ cho trình tạo trang web B1: cây nội dung, danh mục phần tử chung, quy trình hiển thị và tạo trang bằng AI trong B1 Admin và B1.church."
 ---
 
 # Kiến trúc Trình xây dựng Website
@@ -82,7 +83,7 @@ Các bộ render nằm trong `Packages/apphelper/src/website/components/elementT
 
 ### Biểu mẫu chỉnh sửa (B1Admin)
 
-Các biểu mẫu cài đặt theo từng loại của trình chỉnh sửa nằm trong `B1Admin/src/site/admin/elements/`. `ElementEdit.tsx` chuyển tiếp đến một component riêng (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) hoặc một bộ xây dựng trường nội tuyến cho từng loại. Bản phản chiếu danh mục hướng tới AI là công cụ `describe_page_builder` của MCP trong API (xem [MCP Server](../api/mcp)).
+Các biểu mẫu cài đặt theo từng loại của trình chỉnh sửa nằm trong `B1Admin/src/site/admin/elements/`. `ElementEdit.tsx` chuyển tiếp đến một component riêng (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) hoặc một bộ xây dựng trường nội tuyến cho từng loại. Bản phản chiếu danh mục hướng tới AI là công cụ `describe_page_builder` của MCP trong API (xem [MCP Server](../api/mcp.md)).
 
 Bản xem trước của trình chỉnh sửa gắn cùng một `Theme` với trang công khai, và theme này đặt các biến CSS `--headingFont` / `--bodyFont` từ kiểu dáng toàn cục của nhà thờ. B1App áp dụng các biến này qua `pages.css`, còn B1Admin không thể import file đó, nên `ContentEditor.tsx` chèn `EDITOR_PAGE_FONT_CSS` (`src/site/admin/editorCss.ts`) để áp dụng chúng cho chữ nội dung `.page` và `h1`–`h6`. Nếu không có bước này, bản xem trước sẽ hiển thị tiêu đề bằng phông chữ của trang quản trị.
 
@@ -151,7 +152,7 @@ Tất cả những điều này là việc render phía B1App trên dữ liệu 
 |----------|----------------|
 | Meta description | `pages.metaDescription` (tối đa 300 ký tự) được chuyển qua `MetaHelper.getMetaData()` vào `Metadata` của Next.js (description + Open Graph) trên mọi route do builder render. Phần cài đặt trang của B1Admin có nút AI "Generate" (xem bên dưới) |
 | Chuyển hướng | Các dòng `redirects` theo nhà thờ được quản lý tại `/content/redirects` (`content.edit`, giới hạn 200 dòng, đường dẫn đã chuẩn hóa). Khi sắp trả về 404, route trang của B1App sẽ đối chiếu đường dẫn với `GET /content/redirects/public/:churchId` và trả về HTTP 308 qua `permanentRedirect` của Next; đường dẫn không khớp sẽ chuyển tiếp tới `notFound()` |
-| Trang 404 có thương hiệu | `not-found.tsx` render `BrandedNotFound` với logo, tên và theme của nhà thờ thay vì một thông báo lỗi chung chung. Các đường dẫn không tồn tại như `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` và `/volunteer/[planId]` trả về 404 thực sự, cũng như các subdomain không tồn tại và slug trang sai định dạng (xem [Website Routing & Multi-Site](./websites)) |
+| Trang 404 có thương hiệu | `not-found.tsx` render `BrandedNotFound` với logo, tên và theme của nhà thờ thay vì một thông báo lỗi chung chung. Các đường dẫn không tồn tại như `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` và `/volunteer/[planId]` trả về 404 thực sự, cũng như các subdomain không tồn tại và slug trang sai định dạng (xem [Website Routing & Multi-Site](./websites.md)) |
 | Dữ liệu có cấu trúc | JSON-LD `BlogPosting` cho bài blog; `VideoObject` trên trang từng bài giảng (`/{sdSlug}/sermons/[sermonId]`) và trên các trang có phần tử `sermons`; `Event` từ các phần tử lịch/sự kiện trên trang builder và trên mỗi trang `/{sdSlug}/events/[eventId]` (lần xuất hiện kế tiếp, với ảnh sự kiện làm `image`); schema.org `Event` từ phần tử `serviceTimes` |
 | Trang bài giảng | Mọi bài giảng công khai đều có một trang có thể được crawler lập chỉ mục tại `/sermons/[sermonId]` với đầy đủ metadata. Bài giảng không còn bị khóa bên trong trình duyệt phía client |
 | Phân tích | Khóa cài đặt công khai `ga4MeasurementId` (được quản lý cùng chỗ với chuyển hướng trong B1Admin) chèn một gtag GA4 riêng cho từng nhà thờ qua `next/script`. Ứng dụng B1 (`/{sdSlug}/mobile`) cũng gửi lượt xem trang tới ID này, bên cạnh thẻ của chính ChurchApps, khi ID có dạng `G-` hợp lệ (các ID container GTM chỉ dành cho website). Mỗi `gtag('config')` mang `display_mode` là `installed` hoặc `browser`, dựa trên `navigator.standalone` hoặc truy vấn media `(display-mode: standalone)` (`B1App/src/helpers/mobileAnalytics.ts`) |
@@ -199,7 +200,7 @@ Nút rewrite trên `SectionToolbar` và nút "Generate Site" trong danh sách tr
 | `POST /website/generateAltText` | Lệnh gọi thị giác trên tối đa 20 URL ảnh; trả về văn bản alt ngắn gọn (tối đa 125 ký tự, đã loại bỏ tiền tố "photo of") |
 | `POST /website/generateMetaDescription` | Một meta description SEO (tối đa 155 ký tự) từ nội dung văn bản của trang, được gắn với nút Generate trong phần cài đặt trang của B1Admin |
 
-Prompt của các endpoint này là các file markdown trong `AskApi/config/instructions/`, bao gồm danh mục phần tử mà mô hình dùng để tạo nội dung. Hai điểm thiết kế giữ cho danh mục đáng tin cậy: client truyền `availableElementTypes` trong mọi yêu cầu (prompt chỉ được dùng các loại có trong danh sách đó; máy chủ không cứng hóa toàn bộ tập hợp), và công cụ `describe_page_builder` của MCP trong API mang cùng hướng dẫn cho các tác nhân AI làm việc qua [MCP](../api/mcp). Các mô hình là Anthropic Claude qua OpenRouter: 3.5 Haiku cho nội dung section (độ trễ thấp), 3.5 Sonnet cho dàn ý, kế hoạch site và thị giác, với phương án dự phòng là OpenAI khi chưa cấu hình khóa OpenRouter.
+Prompt của các endpoint này là các file markdown trong `AskApi/config/instructions/`, bao gồm danh mục phần tử mà mô hình dùng để tạo nội dung. Hai điểm thiết kế giữ cho danh mục đáng tin cậy: client truyền `availableElementTypes` trong mọi yêu cầu (prompt chỉ được dùng các loại có trong danh sách đó; máy chủ không cứng hóa toàn bộ tập hợp), và công cụ `describe_page_builder` của MCP trong API mang cùng hướng dẫn cho các tác nhân AI làm việc qua [MCP](../api/mcp.md). Các mô hình là Anthropic Claude qua OpenRouter: 3.5 Haiku cho nội dung section (độ trễ thấp), 3.5 Sonnet cho dàn ý, kế hoạch site và thị giác, với phương án dự phòng là OpenAI khi chưa cấu hình khóa OpenRouter.
 
 ## Biểu mẫu hội thoại
 
@@ -224,8 +225,8 @@ Các controller gọi bump: pages (lưu, xóa, nhân bản, xuất bản, hủy,
 
 ## Trang liên quan
 
-- [Website Routing & Multi-Site](./websites): cách một yêu cầu được phân giải thành nhà thờ/site và cách tên miền tùy chỉnh được định tuyến
-- [Content Endpoints](../api/endpoints/content): toàn bộ REST cho trang, section, phần tử, khối, bài viết, chuyển hướng và cài đặt
-- [AppHelper](../shared-libraries/app-helper): gói npm cung cấp bộ render, registry, đường phân chia và widget
-- [MCP Server](../api/mcp): bao gồm công cụ hướng dẫn `describe_page_builder`
+- [Website Routing & Multi-Site](./websites.md): cách một yêu cầu được phân giải thành nhà thờ/site và cách tên miền tùy chỉnh được định tuyến
+- [Content Endpoints](../api/endpoints/content.md): toàn bộ REST cho trang, section, phần tử, khối, bài viết, chuyển hướng và cài đặt
+- [AppHelper](../shared-libraries/app-helper.md): gói npm cung cấp bộ render, registry, đường phân chia và widget
+- [MCP Server](../api/mcp.md): bao gồm công cụ hướng dẫn `describe_page_builder`
 - [Page Editor (end-user)](/docs/b1-admin/website/page-editor): tài liệu cho trình chỉnh sửa dành cho nhân viên

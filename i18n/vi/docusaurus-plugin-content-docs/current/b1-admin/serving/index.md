@@ -1,5 +1,7 @@
 ---
-title: "Phục vụ"
+title: "Tổng quan Phục vụ trong B1 Admin"
+sidebar_label: "Phục vụ"
+description: "Điều phối tình nguyện viên và lên kế hoạch các buổi thờ phượng trong khu vực Phục vụ của B1 Admin, từ các tab mục vụ và nhóm đến kế hoạch, bài hát và công việc."
 ---
 
 # Phục vụ

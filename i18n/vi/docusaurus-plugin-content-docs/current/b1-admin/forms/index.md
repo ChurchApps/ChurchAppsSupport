@@ -1,5 +1,6 @@
 ---
 title: "Biểu mẫu"
+description: "Tìm, lọc, chỉnh sửa, lưu trữ và khôi phục biểu mẫu tùy chỉnh trong B1 Admin, cùng nơi thiết lập thành viên biểu mẫu và xem các phản hồi."
 ---
 
 # Biểu mẫu

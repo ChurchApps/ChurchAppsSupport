@@ -1,5 +1,7 @@
 ---
-title: "Modifier votre profil"
+title: "Modifier votre profil dans le portail membre B1.church"
+sidebar_label: "Modifier votre profil"
+description: "Mettez à jour coordonnées, membres du foyer, e-mail et mot de passe de connexion, et paramètres de confidentialité dans le portail membre B1.church."
 ---
 
 # Modifier votre profil

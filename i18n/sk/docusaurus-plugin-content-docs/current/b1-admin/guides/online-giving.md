@@ -1,5 +1,6 @@
 ---
 title: "Sprievodca: Nastavenie online darovaní"
+description: "Nastavte online dávanie v B1 Admin: vytvorte fondy darov, pripojte Stripe a pridajte na web B1.church stránku Donate pre členov."
 ---
 
 # Nastavenie online darovaní
@@ -70,7 +71,7 @@ Ak chcete overiť funkčnosť bez skutočných platieb, najprv použite testovac
 Dajte vedieť, aby členovia vedeli, že môžu darovať online.
 
 1. Zdieľajte adresu URL pre darovanie na svojej webovej stránke, v e-mailových newsletteroch, vo farských ohlasoch a na sociálnych sieťach
-2. Členovia môžu darovať aj cez [aplikáciu B1 Mobile](../../b1-mobile/giving/) — funkcia darovania je v nej zabudovaná
+2. Členovia môžu darovať aj cez [aplikáciu B1 Mobile](../../b1-mobile/giving/index.md) — funkcia darovania je v nej zabudovaná
 
 :::info
 Prihlásení členovia si môžu uložiť platobné metódy, nastaviť opakované dary a zobraziť si históriu darov. Funguje aj anonymné darovanie — prihlásenie nie je potrebné.

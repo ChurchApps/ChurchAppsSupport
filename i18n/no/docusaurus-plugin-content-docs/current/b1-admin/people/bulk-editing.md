@@ -1,5 +1,6 @@
 ---
 title: "Masseredigering av personer"
+description: "Oppdater medlemsstatus, sivilstand, kjønn, reservasjon, egendefinerte ja/nei-felt eller gruppemedlemskap for mange personer samtidig i B1 Admin."
 ---
 
 # Masseredigering av personer

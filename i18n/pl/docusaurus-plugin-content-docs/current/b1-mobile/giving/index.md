@@ -1,5 +1,7 @@
 ---
-title: "Dary"
+title: "Dawanie w aplikacji B1 Mobile"
+sidebar_label: "Dary"
+description: "Złóż dar w B1 Mobile, sprawdź dary od początku roku i zarządzaj zapisanymi metodami płatności. Opisuje karty Przegląd, Dar, Zarządzaj i Historia."
 ---
 
 # Dary
@@ -24,7 +26,7 @@ Sekcja darowizn jest podzielona na cztery zakładki:
 Wszystkie darowizny dokonywane za pośrednictwem B1 Mobile są bezpiecznie przetwarzane przez **Stripe**. Twoje dane płatnicze są obsługiwane przez bezpieczną infrastrukturę Stripe i nigdy nie są przechowywane na serwerach ChurchApps. Możesz przekazywać dary z pełnym zaufaniem, wiedząc, że Twoje dane finansowe są chronione.
 
 :::info
-Dostępne fundusze oraz obsługę płatności konfiguruje administrator Twojego kościoła w [B1 Admin](../../b1-admin/). Jeśli w aplikacji nie widzisz opcji przekazania darowizny, Twój kościół może jeszcze nie mieć skonfigurowanej tej funkcji.
+Dostępne fundusze oraz obsługę płatności konfiguruje administrator Twojego kościoła w [B1 Admin](../../b1-admin/index.md). Jeśli w aplikacji nie widzisz opcji przekazania darowizny, Twój kościół może jeszcze nie mieć skonfigurowanej tej funkcji.
 :::
 
 ## Co możesz zrobić
@@ -38,6 +40,6 @@ Oto, co możesz zrobić w sekcji darowizn:
 
 ## Następne kroki
 
-- [Wykonywanie darowizny](./making-donations) -- Dowiedz się, jak przekazać dar z aplikacji
-- [Zarządzanie metodami płatności](./managing-payments) -- Dodawanie lub usuwanie zapisanych metod płatności
-- [Historia darowizn](./donation-history) -- Przeglądaj podsumowanie darowizn i wcześniejsze wpłaty
+- [Wykonywanie darowizny](./making-donations.md) -- Dowiedz się, jak przekazać dar z aplikacji
+- [Zarządzanie metodami płatności](./managing-payments.md) -- Dodawanie lub usuwanie zapisanych metod płatności
+- [Historia darowizn](./donation-history.md) -- Przeglądaj podsumowanie darowizn i wcześniejsze wpłaty

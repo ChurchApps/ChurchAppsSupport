@@ -1,5 +1,6 @@
 ---
 title: "데이터 보안"
+description: "ChurchApps가 B1 Admin에서 교회 데이터를 어떻게 보호하는지 확인하세요. 해시된 비밀번호, HTTPS, 분리된 데이터베이스, GDPR 데이터 도구를 다룹니다."
 ---
 
 # 데이터 보안

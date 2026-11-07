@@ -1,5 +1,7 @@
 ---
-title: "Začíname"
+title: "Začíname s aplikáciou FreePlay TV"
+sidebar_label: "Začíname"
+description: "Nastavenie FreePlay na Android TV, Fire TV alebo Apple TV: inštalácia aplikácie, prvé spustenie a ovládanie diaľkovým ovládačom a bočným panelom."
 ---
 
 # Začíname s FreePlay
@@ -42,7 +44,7 @@ FreePlay funguje na Fire TV (vrátane novších sticku s Vega OS), Android TV a 
 
 Keď prvýkrát otvoríte FreePlay, uvidíte animovanú úvodnú obrazovku s logom FreePlay. Aplikácia skontroluje, či sú k nej pripojení nejakí poskytovatelia obsahu. Ak ste už jedného poskytovateľa pripojili, otvorí sa priamo jeho prehliadač obsahu. Inak sa otvorí obrazovka **Poskytovatelia obsahu**, kde môžete pripojiť svoj prvý zdroj obsahu.
 
-Ak je televízor spárovaný s kalendárom v [režime plánovania](../scheduled-mode/), FreePlay preskočí všetky tieto kroky a otvorí sa rovno plánovaný prehrávač.
+Ak je televízor spárovaný s kalendárom v [režime plánovania](../scheduled-mode/index.md), FreePlay preskočí všetky tieto kroky a otvorí sa rovno plánovaný prehrávač.
 
 ## Ovládanie diaľkovým ovládačom televízora
 
@@ -62,13 +64,13 @@ Keď prehľadávate obsah, bočný panel sa zbalí do úzkeho pásu ikon. Stlač
 
 Bočný panel zhora nadol obsahuje:
 
-- **Dnešný plán** – Zobrazí sa, keď je televízor spárovaný s plánom. Pozrite si [Režim plánu](../plan-mode/)
-- **Oznámenia** – Zobrazí sa, keď zvolíte priečinok oznámení. Pozrite si [Oznámenia](../content-providers/announcements)
-- **Prehliadať** – Každý pripojený poskytovateľ obsahu, ktorý môžete prehliadať. Pozrite si [Prehliadanie a sťahovanie obsahu](../content-providers/browsing-content)
-- **Nastavenia** – Na spodnej časti bočného panela. Otvára **Spárovať s kalendárom** (spárovanie tohto televízora s kalendárom alebo plánom – pozrite si [Výber režimu párovania](./pairing-modes)), **Sťahovanie** (prehrávanie alebo mazanie obsahu uloženého v tomto zariadení) a **Poskytovatelia** (pripojenie poskytovateľov obsahu a výber priečinka oznámení)
+- **Dnešný plán** – Zobrazí sa, keď je televízor spárovaný s plánom. Pozrite si [Režim plánu](../plan-mode/index.md)
+- **Oznámenia** – Zobrazí sa, keď zvolíte priečinok oznámení. Pozrite si [Oznámenia](../content-providers/announcements.md)
+- **Prehliadať** – Každý pripojený poskytovateľ obsahu, ktorý môžete prehliadať. Pozrite si [Prehliadanie a sťahovanie obsahu](../content-providers/browsing-content.md)
+- **Nastavenia** – Na spodnej časti bočného panela. Otvára **Spárovať s kalendárom** (spárovanie tohto televízora s kalendárom alebo plánom – pozrite si [Výber režimu párovania](./pairing-modes.md)), **Sťahovanie** (prehrávanie alebo mazanie obsahu uloženého v tomto zariadení) a **Poskytovatelia** (pripojenie poskytovateľov obsahu a výber priečinka oznámení)
 
 ## Čo bude ďalej
 
-- **[Výber režimu párovania](./pairing-modes)** – Zistite, aké sú rôzne spôsoby pripojenia vášho televízora
-- **[Režim plánovania](../scheduled-mode/)** – Pridajte svoje televízory do kalendára pomocou FreePlay Admin
-- **[Poskytovatelia obsahu](../content-providers/)** – Pripojte sa k Lessons.church, Bible Project a ďalším
+- **[Výber režimu párovania](./pairing-modes.md)** – Zistite, aké sú rôzne spôsoby pripojenia vášho televízora
+- **[Režim plánovania](../scheduled-mode/index.md)** – Pridajte svoje televízory do kalendára pomocou FreePlay Admin
+- **[Poskytovatelia obsahu](../content-providers/index.md)** – Pripojte sa k Lessons.church, Bible Project a ďalším

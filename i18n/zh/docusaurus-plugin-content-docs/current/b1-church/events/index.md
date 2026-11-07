@@ -1,5 +1,7 @@
 ---
-title: "活动"
+title: "B1.church 上的教会活动：浏览与报名"
+sidebar_label: "活动"
+description: "在 B1.church 上浏览即将举行的教会活动，查看报名状态，并报名或将活动添加到您的日历。"
 ---
 
 # 活动
@@ -43,7 +45,7 @@ B1.church 上的活动板块让你可以浏览即将举行的教会活动，并�
 
 ## 了解更多
 
-- [报名活动](./registering) -- 报名参加活动的分步指南
-- [我的报名](./my-registrations) -- 查看你的报名、支付余额、编辑或取消报名
-- [申请活动与房间](./requesting-events) -- 申请活动，并预订所需的房间和资源
-- [自助签到](../checkin/self-checkin) -- 到达活动现场时签到
+- [报名活动](./registering.md) -- 报名参加活动的分步指南
+- [我的报名](./my-registrations.md) -- 查看你的报名、支付余额、编辑或取消报名
+- [申请活动与房间](./requesting-events.md) -- 申请活动，并预订所需的房间和资源
+- [自助签到](../checkin/self-checkin.md) -- 到达活动现场时签到

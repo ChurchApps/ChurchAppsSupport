@@ -1,5 +1,7 @@
 ---
-title: "Hizmet"
+title: "B1 Admin'de Hizmet Genel Bakışı"
+sidebar_label: "Hizmet"
+description: "B1 Admin'in Hizmet alanında gönüllüleri koordine edin ve ibadet planları yapın: hizmet sekmelerinden ekiplere, planlardan şarkılara ve görevlere kadar."
 ---
 
 # Hizmet

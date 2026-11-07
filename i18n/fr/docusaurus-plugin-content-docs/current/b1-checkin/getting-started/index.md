@@ -1,5 +1,7 @@
 ---
-title: "Premiers pas"
+title: "Premiers pas avec B1 Checkin"
+sidebar_label: "Premiers pas"
+description: "Installez l'app de borne B1 Checkin sur une tablette Android : installation, connexion, choix de votre église et imprimante d'étiquettes facultative."
 ---
 
 # Premiers pas avec B1 Church Checkin
@@ -27,9 +29,9 @@ La mise en place de B1 Church Checkin ne prend que quelques minutes. Cette secti
 
 Lorsque vous lancez l'application pour la première fois, vous passerez par trois étapes :
 
-1. **[Connexion](./logging-in)** -- Saisissez votre adresse e-mail et votre mot de passe pour vous authentifier.
-2. **[Sélection de votre église](./logging-in)** -- Si votre compte est lié à plusieurs églises, choisissez celle que ce kiosque doit desservir.
-3. **[Configuration d'une imprimante](./printer-setup)** -- Configurez une imprimante réseau pour l'impression d'étiquettes, ou ignorez cette étape si vous n'avez pas besoin d'étiquettes.
+1. **[Connexion](./logging-in.md)** -- Saisissez votre adresse e-mail et votre mot de passe pour vous authentifier.
+2. **[Sélection de votre église](./logging-in.md)** -- Si votre compte est lié à plusieurs églises, choisissez celle que ce kiosque doit desservir.
+3. **[Configuration d'une imprimante](./printer-setup.md)** -- Configurez une imprimante réseau pour l'impression d'étiquettes, ou ignorez cette étape si vous n'avez pas besoin d'étiquettes.
 
 Après la première connexion, l'application enregistre vos identifiants et votre sélection d'église. Lors des prochains lancements, elle accédera automatiquement à l'écran des cultes.
 
@@ -43,6 +45,6 @@ Assurez-vous que l'administrateur de votre église a configuré les cultes, les 
 
 ## Prochaines étapes
 
-- [Connexion](./logging-in) -- Instructions détaillées pour la connexion et la sélection de l'église.
-- [Configuration de l'imprimante](./printer-setup) -- Comment découvrir, sélectionner et tester votre imprimante d'étiquettes.
-- [Processus d'enregistrement](../check-in/) -- Découvrez le processus complet d'enregistrement une fois votre kiosque configuré.
+- [Connexion](./logging-in.md) -- Instructions détaillées pour la connexion et la sélection de l'église.
+- [Configuration de l'imprimante](./printer-setup.md) -- Comment découvrir, sélectionner et tester votre imprimante d'étiquettes.
+- [Processus d'enregistrement](../check-in/index.md) -- Découvrez le processus complet d'enregistrement une fois votre kiosque configuré.

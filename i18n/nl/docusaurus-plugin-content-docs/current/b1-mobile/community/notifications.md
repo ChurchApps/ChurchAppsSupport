@@ -1,5 +1,6 @@
 ---
 title: "Meldingen"
+description: "Stel pushmeldingen in voor de B1 Mobile-app en bekijk, open en wis daarna je kerkmeldingen over berichten, groepen en dienstwerk."
 ---
 
 # Meldingen
@@ -13,7 +14,7 @@ B1 Mobile maakt gebruik van push-meldingen om je op de hoogte te houden van wat 
 <div class="prereqs">
 <h4>Voorbepaling</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [meld je aan](../getting-started/logging-in) op je account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [meld je aan](../getting-started/logging-in.md) op je account
 - Meldingen toestaan voor B1 Mobile in je apparaatinstellingen
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile maakt gebruik van push-meldingen om je op de hoogte te houden van wat 
 
 Meldingen kunnen verschillende activiteiten betreffen:
 
-- **Berichten** -- Wanneer iemand je een [privébericht](./messaging) stuurt.
-- **Groepsactiviteit** -- Updates, berichten en gesprekken van [groepen](../groups/) waartoe je behoort.
+- **Berichten** -- Wanneer iemand je een [privébericht](./messaging.md) stuurt.
+- **Groepsactiviteit** -- Updates, berichten en gesprekken van [groepen](../groups/index.md) waartoe je behoort.
 - **Dienststoewijzingen** -- Wanneer je aan een [plan](../serving/viewing-plans.md) bent toegewezen of wanneer je toewijzingsstatus verandert.
 - **Andere updates** -- Algemene aankondigingen en activiteit relevant voor jou.
 

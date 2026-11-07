@@ -1,5 +1,6 @@
 ---
 title: "Prijavos"
+description: "Registracijos veikimas B1Checkin, B1App ir B1 Admin: lankomumo duomenų modelis, grupės kaip kambariai, talpos ribos ir saugaus atsiėmimo taisyklės."
 ---
 
 # Prijavos
@@ -216,7 +217,7 @@ B1App `src/components/checkin/GuestRegister.tsx` gauna kontrolinį sąrašą iš
 
 ## Susiję puslapiai
 
-- [Lankomumo galutiniai taškai](../api/endpoints/attendance) -- Pilnas REST paviršius kampusams, paslaugoms, seansams, apsilankymams ir apsilankymų seansams
-- [Narystės galutiniai taškai](../api/endpoints/membership) -- Asmenys, namų ūkiai ir grupės
-- [Webhook'ai](../api/webhooks) -- `session.created`, `attendance.recorded` ir `attendance.checkout` įvykiai
-- [Modulio struktūra](../api/module-structure) -- Kaip lankomumo modulis organizuotas serverio pusėje
+- [Lankomumo galutiniai taškai](../api/endpoints/attendance.md) -- Pilnas REST paviršius kampusams, paslaugoms, seansams, apsilankymams ir apsilankymų seansams
+- [Narystės galutiniai taškai](../api/endpoints/membership.md) -- Asmenys, namų ūkiai ir grupės
+- [Webhook'ai](../api/webhooks.md) -- `session.created`, `attendance.recorded` ir `attendance.checkout` įvykiai
+- [Modulio struktūra](../api/module-structure.md) -- Kaip lankomumo modulis organizuotas serverio pusėje

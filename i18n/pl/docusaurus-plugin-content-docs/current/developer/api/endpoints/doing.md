@@ -1,5 +1,6 @@
 ---
 title: "Endpointy Doing"
+description: "Dokumentacja Doing API, obsługującego plany służby, przydziały wolontariuszy, zadania i automatyzacje w B1 Admin, ze ścieżkami, autoryzacją i uprawnieniami."
 ---
 
 # Endpointy Doing
@@ -278,6 +279,6 @@ Przekazuje żądania do zewnętrznych dostawców treści (np. ProPresenter, Easy
 
 ## Powiązane strony
 
-- [Endpointy członkostwa](./membership) — Osoby, grupy, role i uprawnienia
-- [Endpointy frekwencji](./attendance) — Śledzenie nabożeństw i odwiedzin
-- [Struktura modułów](../module-structure) — Wzorce organizacji kodu
+- [Endpointy członkostwa](./membership.md) — Osoby, grupy, role i uprawnienia
+- [Endpointy frekwencji](./attendance.md) — Śledzenie nabożeństw i odwiedzin
+- [Struktura modułów](../module-structure.md) — Wzorce organizacji kodu

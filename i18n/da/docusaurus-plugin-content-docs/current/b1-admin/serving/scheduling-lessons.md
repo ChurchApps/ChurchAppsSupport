@@ -1,5 +1,7 @@
 ---
-title: "planlægning af lektioner fra Lessons.church"
+title: "Planlægning af lektioner fra Lessons.church i B1 Admin"
+sidebar_label: "planlægning af lektioner fra Lessons.church"
+description: "Forbind Lessons.church til B1 Admin, og planlæg derefter lektioner, planlæg en serie i bulk, eller anvend en årsplan på et teams gudstjenesteplaner."
 ---
 
 # planlægning af lektioner fra Lessons.church

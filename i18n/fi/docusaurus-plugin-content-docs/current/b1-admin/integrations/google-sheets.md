@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "Yhdistä B1 Admin Google Sheetsiin B1 Export -lisäosalla ja hae People-, Donations-, Groups- ja Attendance-tiedot taulukkovälilehdille tarpeen mukaan."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ Vienti suoritetaan taustalla Google-tilisi alla. Jos API-avain kierrätetään t
 - **"B1 rejected the API key (401)"**: avain on mitätöity tai se on väärin. Luo uusi avain ja liitä se uudelleen.
 - **"This API key lacks permission for /giving/donations (403)"**: avaimella ei ole oikeutta `donations:read`. Päivitä avaimen käyttöoikeudet B1Adminissa.
 - **Taulukko ei päivity** vientiajon jälkeen: varmista, että katsot *oikeaa* välilehden nimeä (`B1 People` jne.). Vienti luo välilehden, jos sitä ei ole.
-- **"Quota exceeded"**: Apps Script asettaa `UrlFetchApp`-kutsuille käyttäjäkohtaisia päivittäisiä rajoja (tyypillisesti tuhansia kutsuja päivässä). Suuri kirkko, jolla on paljon tietueita, voi joutua jakamaan viennit useammalle päivälle tai käyttämään [Makea](./make) tai mukautettua integraatiota suurimittaiseen synkronointiin.
+- **"Quota exceeded"**: Apps Script asettaa `UrlFetchApp`-kutsuille käyttäjäkohtaisia päivittäisiä rajoja (tyypillisesti tuhansia kutsuja päivässä). Suuri kirkko, jolla on paljon tietueita, voi joutua jakamaan viennit useammalle päivälle tai käyttämään [Makea](./make.md) tai mukautettua integraatiota suurimittaiseen synkronointiin.
 
 ## Lisäosan mukauttaminen
 
@@ -108,6 +109,6 @@ Lisäosa on avointa lähdekoodia. Apps Script -projekti sijaitsee repossa `B1Int
 
 ## Katso myös
 
-- [Zapier](./zapier): reaaliaikaiseen synkronointiin pyynnöstä tapahtuvan viennin sijaan
-- [Make](./make): synkronointiin monimutkaisemmilla muunnoksilla
+- [Zapier](./zapier.md): reaaliaikaiseen synkronointiin pyynnöstä tapahtuvan viennin sijaan
+- [Make](./make.md): synkronointiin monimutkaisemmilla muunnoksilla
 - [API-avaimet (kehittäjäviite)](/docs/developer/api/api-keys)

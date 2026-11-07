@@ -1,5 +1,6 @@
 ---
 title: "Veri Güvenliği"
+description: "ChurchApps'in kilise verilerinizi B1 Admin'de nasıl koruduğunu öğrenin: karma şifrelerden ve HTTPS'den ayrı veritabanlarına ve GDPR veri araçlarına kadar."
 ---
 
 # Veri Güvenliği

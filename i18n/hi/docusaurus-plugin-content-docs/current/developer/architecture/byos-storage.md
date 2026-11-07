@@ -1,5 +1,6 @@
 ---
 title: "अपना स्टोरेज लाएँ (BYOS)"
+description: "B1 Admin में अपना Google Drive, Dropbox, OneDrive या S3-संगत बकेट जोड़ें, ताकि चर्च फ़ाइल अपलोड 100MB प्लेटफ़ॉर्म सीमा से बचें।"
 ---
 
 # अपना स्टोरेज लाएँ (BYOS)
@@ -8,7 +9,7 @@ title: "अपना स्टोरेज लाएँ (BYOS)"
 
 ## प्रोवाइडर सीम
 
-BYOS, [MinistryStuff](./ministrystuff) के लिए बनाए गए स्टोरेज सीम को दोबारा इस्तेमाल करता है: `IStorageProvider` (`Packages/apihelper`), जिसे `StorageResolver` हर चर्च के लिए `content.storageProviders` टेबल से तय करता है। सिंगलटन `churchapps`/`ministrystuff` प्रोवाइडर के उलट, BYOS प्रोवाइडर हर चर्च की अपनी credentials रखते हैं, इसलिए `StorageResolver.forChurch` हर अनुरोध पर चर्च की पंक्ति से एक इंस्टेंस बनाता है। इम्प्लीमेंटेशन resolver के साथ `Api/src/modules/content/helpers/` में हैं: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, और साथ में `ByosAuth` (OAuth token exchange + single-flight refresh। Dropbox refresh tokens को घुमाता है, इसलिए refresh को उसी तरह de-duplicate किया जाता है जैसे `ProviderProxyController` करता है)।
+BYOS, [MinistryStuff](./ministrystuff.md) के लिए बनाए गए स्टोरेज सीम को दोबारा इस्तेमाल करता है: `IStorageProvider` (`Packages/apihelper`), जिसे `StorageResolver` हर चर्च के लिए `content.storageProviders` टेबल से तय करता है। सिंगलटन `churchapps`/`ministrystuff` प्रोवाइडर के उलट, BYOS प्रोवाइडर हर चर्च की अपनी credentials रखते हैं, इसलिए `StorageResolver.forChurch` हर अनुरोध पर चर्च की पंक्ति से एक इंस्टेंस बनाता है। इम्प्लीमेंटेशन resolver के साथ `Api/src/modules/content/helpers/` में हैं: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, और साथ में `ByosAuth` (OAuth token exchange + single-flight refresh। Dropbox refresh tokens को घुमाता है, इसलिए refresh को उसी तरह de-duplicate किया जाता है जैसे `ProviderProxyController` करता है)।
 
 `storageProviders` में credentials रहते हैं: `accessToken`/`refreshToken`/`tokenExpiresAt` (encrypted, OAuth trio) या `apiKey`/`apiSecret` + `settings` JSON (`{endpoint, region, bucket, publicBase}`, S3)। Tokens कभी क्लाइंट तक नहीं पहुँचते। `GET /content/storage/providers` secrets मास्क करता है और `connected` boolean लौटाता है।
 

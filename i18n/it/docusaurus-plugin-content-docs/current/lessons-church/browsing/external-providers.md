@@ -1,5 +1,6 @@
 ---
 title: "Fornitori esterni"
+description: "Scopri come i provider di curricula terzi aggiungono i propri contenuti a Lessons.church con l'Open Lesson Format e come collegarne uno dal portale."
 ---
 
 # Fornitori esterni

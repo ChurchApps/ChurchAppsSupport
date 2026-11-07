@@ -1,5 +1,6 @@
 ---
 title: "Način načrta"
+description: "Poveži TV v FreePlay s cerkvenim načrtom bogoslužja iz B1 Admin, da prikazuje tedenske ure, predstavitve in medije v pravilnem vrstnem redu."
 ---
 
 # Način načrta
@@ -12,13 +13,13 @@ Način načrta poveže vaš televizor z bogoslužnim načrtom vaše cerkve. Name
 
 ## Kako se razlikuje od drugih načinov
 
-- **[Načrtovani način](../scheduled-mode/)** predvaja sezname predvajanja iz koledarja v FreePlay Admin ob časih, ki jih nastavite, brez da bi kdo pritisnil Začni
+- **[Načrtovani način](../scheduled-mode/index.md)** predvaja sezname predvajanja iz koledarja v FreePlay Admin ob časih, ki jih nastavite, brez da bi kdo pritisnil Začni
 - **Način načrta** pridobi vsebino, povezano z vrsto načrta, ki lahko vključuje lekcije, predstavitve ponudnikov, dodatke in drugo medijsko vsebino, urejeno v poljubnem vrstnem redu
 
 Način načrta je še posebej uporaben, kadar vaš bogoslužni načrt vključuje mešanico vsebine iz različnih virov, vse organizirane v eno zaporedje.
 
 :::tip
-Želite, da se tekoči načrt predvaja samodejno ob določenem času? V FreePlay Admin dodajte vnos v koledar in pod **Bogoslužni načrti** izberite vrsto načrta. Glejte [Načrtovanje koledarja](../scheduled-mode/scheduling-the-calendar).
+Želite, da se tekoči načrt predvaja samodejno ob določenem času? V FreePlay Admin dodajte vnos v koledar in pod **Bogoslužni načrti** izberite vrsto načrta. Glejte [Načrtovanje koledarja](../scheduled-mode/scheduling-the-calendar.md).
 :::
 
 ## Kako deluje
@@ -32,4 +33,4 @@ Televizor ostane povezan z vrsto načrta. Vsak teden samodejno prevzame najnovej
 
 ## V tem razdelku
 
-- **[Povezovanje naprave](./device-pairing)** - Kako ustvariti in vnesti kodo za povezavo
+- **[Povezovanje naprave](./device-pairing.md)** - Kako ustvariti in vnesti kodo za povezavo

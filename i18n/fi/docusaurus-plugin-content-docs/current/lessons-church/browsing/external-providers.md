@@ -1,5 +1,6 @@
 ---
 title: "Ulkoiset palveluntarjoajat"
+description: "Miten ulkoiset opetussuunnitelmatarjoajat lisäävät sisältönsä Lessons.churchiin Open Lesson Format -muodolla ja miten yhdistät tarjoajan portaalista."
 ---
 
 # Ulkoiset palveluntarjoajat

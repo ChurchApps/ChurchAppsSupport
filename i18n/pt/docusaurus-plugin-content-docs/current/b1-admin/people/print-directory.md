@@ -1,5 +1,6 @@
 ---
 title: "Imprimir Diretório"
+description: "Gere um diretório de membros para impressão, agrupado por domicílio, com fotos, contatos e aniversários, no formato carta, pelo B1 Admin."
 ---
 
 # Imprimir Diretório

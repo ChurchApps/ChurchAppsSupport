@@ -1,12 +1,13 @@
 ---
 title: "Bağlı Uygulamalar ve OAuth"
+description: "Üçüncü taraf uygulamalarını OAuth 2.0 onayıyla kilisenin B1 verilerine bağlayın; paylaşılan parola veya API anahtarı gerekmez, erişimi B1 Admin'den iptal edin."
 ---
 
 # Bağlı Uygulamalar ve OAuth
 
 <div class="article-intro">
 
-B1 API, üçüncü taraf bir uygulamanın her kilise yöneticisinden verilerine erişim izni istemesine olanak tanıyan OAuth 2.0'ı destekler. Bu süreçte kilise hiçbir zaman parola veya API anahtarı paylaşmak zorunda kalmaz. **Bağlı Uygulama**, bir kilise yöneticisinin onayladığı OAuth jetonudur; iptal edildiğinde üçüncü taraf uygulamanın erişimi tek tıklamayla sona erer. Bu yolu çok kiracılı SaaS bağlayıcıları için kullanın. Tek bir kilise entegrasyonu için [API Anahtarları](./api-keys) tercih edin.
+B1 API, üçüncü taraf bir uygulamanın her kilise yöneticisinden verilerine erişim izni istemesine olanak tanıyan OAuth 2.0'ı destekler. Bu süreçte kilise hiçbir zaman parola veya API anahtarı paylaşmak zorunda kalmaz. **Bağlı Uygulama**, bir kilise yöneticisinin onayladığı OAuth jetonudur; iptal edildiğinde üçüncü taraf uygulamanın erişimi tek tıklamayla sona erer. Bu yolu çok kiracılı SaaS bağlayıcıları için kullanın. Tek bir kilise entegrasyonu için [API Anahtarları](./api-keys.md) tercih edin.
 
 </div>
 
@@ -27,7 +28,7 @@ B1 API, üçüncü taraf bir uygulamanın her kilise yöneticisinden verilerine 
 | **Bağlı Uygulama** | Yöneticinin istemciye erişim verdiği belirli bir `(istemci, kilise yöneticisi)` çifti. Her Bağlı Uygulama bir OAuth yenileme jetonuyla desteklenir. |
 | **Erişim jetonu** | İstemcinin API çağrılarında kullandığı, kısa ömürlü bir JWT (≈ 7 gün). Kullanıcı JWT'siyle aynı biçimdedir: `Authorization: Bearer <jwt>`. |
 | **Yenileme jetonu** | İstemcinin yeni erişim jetonları üretmek için kullandığı, uzun ömürlü ve içeriği yorumlanamayan bir dize (≈ 90 gün). |
-| **Kapsam** | Erişim jetonunun neler yapabileceğini sınırlar. [Kapsam kataloğuna](./api-keys#scopes) bakın. |
+| **Kapsam** | Erişim jetonunun neler yapabileceğini sınırlar. [Kapsam kataloğuna](./api-keys.md#scopes) bakın. |
 
 ## Yetkilendirme Akışları
 
@@ -162,7 +163,7 @@ Liste, süresi dolmuş jetonları otomatik olarak dışarıda bırakır.
 
 ## Kapsamlar ve Onay
 
-Kapsam dizeleri, [API anahtarlarıyla](./api-keys#scopes) aynı kataloğu kullanır. İstemciler için en iyi uygulamalar şunlardır:
+Kapsam dizeleri, [API anahtarlarıyla](./api-keys.md#scopes) aynı kataloğu kullanır. İstemciler için en iyi uygulamalar şunlardır:
 
 - **İşinizi görecek en dar kapsamları isteyin.** Yalnızca kişileri okumanız gerekirken `donations:write` isterseniz kiliseler bunu fark eder.
 - **Kısa ömürlü erişim jetonlarını bir yenileme jetonuyla birlikte kullanın.** Uzun ömürlü erişim jetonlarını hızlıca iptal etmek daha zordur.
@@ -183,7 +184,7 @@ Kayıtlı yönlendirme URI'leri, istekteki `redirect_uri` ile tam olarak eşleş
 
 ### Dinamik İstemci Kaydı
 
-`POST /membership/oauth/register` (genel, RFC 7591), claude.ai'nin MCP bağlayıcısı gibi bir istemcinin kendini kaydetmesine olanak tanır. Bu uç nokta, API'nin `/.well-known/oauth-authorization-server` belgesinde duyurulur. Bkz. [MCP Sunucusu → OAuth Keşfi](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (genel, RFC 7591), claude.ai'nin MCP bağlayıcısı gibi bir istemcinin kendini kaydetmesine olanak tanır. Bu uç nokta, API'nin `/.well-known/oauth-authorization-server` belgesinde duyurulur. Bkz. [MCP Sunucusu → OAuth Keşfi](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ B1Admin onay sayfasında, kendini kaydetmiş bir istemci için bunun kendi kendi
 
 ## SDK Desteği
 
-`@churchapps/integration-sdk` paketi, her OAuth akışını tipli yardımcı fonksiyonlarla sarmalar: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` ve `.awaitDeviceToken()`. Paket README'sine bakın. Uçtan uca bir örnek için [Webhooks](./webhooks#sdk-support) sayfasına da göz atabilirsiniz.
+`@churchapps/integration-sdk` paketi, her OAuth akışını tipli yardımcı fonksiyonlarla sarmalar: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` ve `.awaitDeviceToken()`. Paket README'sine bakın. Uçtan uca bir örnek için [Webhooks](./webhooks.md#sdk-support) sayfasına da göz atabilirsiniz.

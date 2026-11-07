@@ -1,5 +1,6 @@
 ---
 title: "Consulter les leçons"
+description: "Ouvrir une leçon sur Lessons.church, lire ses sections et actions par rôle, trouver les téléchargements et changer de lieu d'âge avant le cours."
 ---
 
 # Consulter les leçons

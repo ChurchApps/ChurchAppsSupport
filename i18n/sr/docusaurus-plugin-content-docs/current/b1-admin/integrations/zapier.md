@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Повежите B1 Admin са Zapier-ом да покренете аутоматизације за нове особе, донације и чланове група, и уписујете записе назад у B1 без кодирања."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Izaberite okidač, zatim dodajte jedan ili više koraka sa radnjama. Primeri su 
 ### Slanje donacija na Slack kanal sa bogatijom karticom nego što nudi ugrađeni konektor
 
 - **Okidač** — B1: New Donation
-- **Radnja** — Slack: Send Channel Message. Sastavite bilo koji raspored (dugmad, prilozi itd.) koji [ugrađeni Slack konektor](./slack-discord) ne može da napravi.
+- **Radnja** — Slack: Send Channel Message. Sastavite bilo koji raspored (dugmad, prilozi itd.) koji [ugrađeni Slack konektor](./slack-discord.md) ne može da napravi.
 
 ### Dodavanje novih članova grupe u Google grupu
 
@@ -106,6 +107,6 @@ To znači da se okidač aktivira samo za događaje koji se dese **nakon** što u
 
 ## Pogledajte i
 
-- [Make](./make): isti obrazac, druga platforma
-- [Slack & Discord](./slack-discord): jednostavnija obaveštenja u ćaskanju bez Zapier-a
+- [Make](./make.md): isti obrazac, druga platforma
+- [Slack & Discord](./slack-discord.md): jednostavnija obaveštenja u ćaskanju bez Zapier-a
 - [Webhook-ovi (referenca za programere)](/docs/developer/api/webhooks)

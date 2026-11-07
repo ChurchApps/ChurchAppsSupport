@@ -1,12 +1,13 @@
 ---
 title: "Selvhosting med Docker"
+description: "Installer en privat B1 Admin, medlemsportal, API og MySQL-stakk på egen maskin med Docker, og oppgrader og sikkerhetskopier den med b1-kommandoen."
 ---
 
 # Selvhosting med Docker
 
 <div class="article-intro">
 
-Kjør din egen private instans av B1 Admin, B1-medlemsportalen og nettstedet, API-et og en MySQL-database på en hvilken som helst maskin med Docker — en hjemmeserver, en liten VPS eller en lokal boks. Én kommando installerer den, én kommando oppgraderer den, og hver oppgradering tar først en sikkerhetskopi. Hvis du heller ikke vil drifte en server i det hele tatt, se [Selvhosting på Railway](./railway-template) for det administrerte alternativet.
+Kjør din egen private instans av B1 Admin, B1-medlemsportalen og nettstedet, API-et og en MySQL-database på en hvilken som helst maskin med Docker — en hjemmeserver, en liten VPS eller en lokal boks. Én kommando installerer den, én kommando oppgraderer den, og hver oppgradering tar først en sikkerhetskopi. Hvis du heller ikke vil drifte en server i det hele tatt, se [Selvhosting på Railway](./railway-template.md) for det administrerte alternativet.
 
 </div>
 
@@ -94,10 +95,10 @@ Hvis du installerte på `localhost` og senere vil ha den offentlig: pek DNS mot 
 
 Disse fungerer nøyaktig som på Railway — de samme miljøvariablene, satt i `.env` i stedet for Railway-dashbordet:
 
-- **[E-post / SMTP](./railway-template#1-email-highly-recommended)** — leverandørgjennomganger for Resend, Brevo og Gmail
-- **[Flere nettsteder](./railway-template#3-multi-site-multiple-churches-on-one-instance)** — ubegrenset antall kirker per instans. `/` serverer kirken hvis slug er `DEFAULT_CHURCH_SLUG` (den første kirken er `church`); pek ekstra domener mot boksen og koble dem under **Settings → Domains** i B1Admin
-- **[Nettbasert giving](./railway-template#4-online-giving-stripe--paypal)** — konfigureres per kirke i admin-grensesnittet
-- **[Valgfrie integrasjoner](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[E-post / SMTP](./railway-template.md#1-email-highly-recommended)** — leverandørgjennomganger for Resend, Brevo og Gmail
+- **[Flere nettsteder](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** — ubegrenset antall kirker per instans. `/` serverer kirken hvis slug er `DEFAULT_CHURCH_SLUG` (den første kirken er `church`); pek ekstra domener mot boksen og koble dem under **Settings → Domains** i B1Admin
+- **[Nettbasert giving](./railway-template.md#4-online-giving-stripe--paypal)** — konfigureres per kirke i admin-grensesnittet
+- **[Valgfrie integrasjoner](./railway-template.md#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Push-varsler](#push-notifications)** — `WEB_PUSH_*`; installasjonsprogrammet lar disse stå tomme, så push er av til du legger dem til
 
 Invitasjoner og annen e-post sendt av kirken aktiveres automatisk på en selvhostet instans (den hostede tjenesten låser disse bak en manuell gjennomgang for å beskytte avsenderomdømmet).
@@ -148,7 +149,7 @@ Tre navngitte Docker-volumer holder all tilstand:
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-For store mediebiblioteker kan du bytte fillagring til S3 — sett `FILE_STORE=S3` pluss `AWS_*`-variablene beskrevet i [Railway-veiledningens avsnitt om fillagring](./railway-template#5-file-storage). Databasesikkerhetskopier inkluderer ikke S3-objekter; aktiver versjonering av bøtten der.
+For store mediebiblioteker kan du bytte fillagring til S3 — sett `FILE_STORE=S3` pluss `AWS_*`-variablene beskrevet i [Railway-veiledningens avsnitt om fillagring](./railway-template.md#5-file-storage). Databasesikkerhetskopier inkluderer ikke S3-objekter; aktiver versjonering av bøtten der.
 
 ## Oppdatering
 
@@ -187,6 +188,6 @@ Fortsatt fast? Åpne en sak på [github.com/ChurchApps/ChurchAppsSupport/issues]
 
 ## Relaterte artikler
 
-- **[Selvhosting på Railway](./railway-template)** — administrert vertsalternativ, pluss de delte veiledningene for konfigurasjon etter distribusjon
-- **[Første oppsett](../../getting-started/initial-setup)** — første steg etter at kirken din er opprettet
-- **[Lokalt API-oppsett](../api/local-setup)** — kjøre stacken direkte for utvikling
+- **[Selvhosting på Railway](./railway-template.md)** — administrert vertsalternativ, pluss de delte veiledningene for konfigurasjon etter distribusjon
+- **[Første oppsett](../../getting-started/initial-setup.md)** — første steg etter at kirken din er opprettet
+- **[Lokalt API-oppsett](../api/local-setup.md)** — kjøre stacken direkte for utvikling

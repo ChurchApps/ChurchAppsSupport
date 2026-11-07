@@ -1,5 +1,6 @@
 ---
 title: "Grupp-tidslinje"
+description: "Se hvordan gruppetidslinjen i B1 Mobile samler innlegg, samtaler og oppdateringer fra alle grupper i én feed, og hva du gjør når den er pauset."
 ---
 
 # Grupp-tidslinje
@@ -17,7 +18,7 @@ Gruppetidslinjefunksjonen er midlertidig utilgjengelig mens forbedringer gjøres
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Installer B1 Mobil](../getting-started/installing) og [logg på](../getting-started/logging-in) kontoen din
+- [Installer B1 Mobil](../getting-started/installing.md) og [logg på](../getting-started/logging-in.md) kontoen din
 - Vær medlem av minst en gruppe på kirken
 
 </div>
@@ -41,7 +42,7 @@ Hver element i tidslinjen viser hvilken gruppe det kom fra, slik at du alltid ve
 Tidslinjen er en fin måte å holde kontakten med kirkemenigheten på et øyeblikk. Her er noen tips for å få det beste ut av det:
 
 - **Sjekk regelmessig** -- Åpne gruppeskjermen og scroll gjennom tidslinjen for å holde deg oppdatert på nylig aktivitet.
-- **Trykk for mer** -- Hvis et innlegg fanger blikket, trykk det eller gruppenavnet for å gå til den fullstendige [gruppdetaljsiden](./group-details) for mer kontekst.
+- **Trykk for mer** -- Hvis et innlegg fanger blikket, trykk det eller gruppenavnet for å gå til den fullstendige [gruppdetaljsiden](./group-details.md) for mer kontekst.
 - **Alt på ett sted** -- Du trenger ikke besøke hver gruppe separat. Tidslinjen bringer all aktivitet til deg.
 
 :::info
@@ -54,5 +55,5 @@ Aktiver [pushvarsler](../community/notifications.md) for å bli varslet når nye
 
 ## Relaterte artikler
 
-- [Gruppdetaljer](./group-details) -- Se en enkelt gruppens full profil og innlegg
+- [Gruppdetaljer](./group-details.md) -- Se en enkelt gruppens full profil og innlegg
 - [Varsler](../community/notifications.md) -- Få varsling om gruppaktivitet

@@ -1,5 +1,7 @@
 ---
-title: "Prenos v živo"
+title: "Gledanje prenosov v živo na B1.church"
+sidebar_label: "Prenos v živo"
+description: "Gledajte živa bogoslužja vaše cerkve na strani B1.church Stream in se pridružite klepetu ob prenosu, brez prijave."
 ---
 
 # Prenos v živo

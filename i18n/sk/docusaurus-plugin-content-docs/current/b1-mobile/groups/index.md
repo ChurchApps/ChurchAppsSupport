@@ -1,5 +1,7 @@
 ---
-title: "Skupiny"
+title: "Obrazovka Skupiny v B1 Mobile"
+sidebar_label: "Skupiny"
+description: "Nájdite skupiny, do ktorých patríte, na obrazovke Skupiny v B1 Mobile, vrátane vašej najčastejšie navštevovanej skupiny hore a ostatných skupín vašej cirkvi nižšie."
 ---
 
 # Skupiny
@@ -30,10 +32,10 @@ Z obrazovky Skupiny môžete robiť nasledovné:
 - **Zostať v spojení** -- Pozrite si, čo zdieľajú členovia vašej skupiny, sledujte rozhovory a zapájajte sa do obsahu skupiny.
 
 :::tip
-Obrazovka Skupiny sa prispôsobuje vášmu používaniu, rovnako ako [prehľad](../dashboard/). Skupiny, ktoré navštevujete najčastejšie, sa presúvajú na vrch pre rýchly prístup.
+Obrazovka Skupiny sa prispôsobuje vášmu používaniu, rovnako ako [prehľad](../dashboard/index.md). Skupiny, ktoré navštevujete najčastejšie, sa presúvajú na vrch pre rýchly prístup.
 :::
 
 ## Ďalšie kroky
 
-- [Detaily skupiny](./group-details) -- Čo sa nachádza na stránke s detailmi skupiny
-- [Časová os skupiny](./group-timeline) -- Zistite viac o jednotnom kanáli aktivít vo vašich skupinách
+- [Detaily skupiny](./group-details.md) -- Čo sa nachádza na stránke s detailmi skupiny
+- [Časová os skupiny](./group-timeline.md) -- Zistite viac o jednotnom kanáli aktivít vo vašich skupinách

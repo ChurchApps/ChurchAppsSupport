@@ -1,5 +1,6 @@
 ---
 title: "Content Commons"
+description: "Jak zgłaszane przez użytkowników pieśni, lekcje i szablony przechodzą przez wspólną kolejkę moderacji w Server Admin B1 Admin, od zgłoszenia do publikacji."
 ---
 
 # Content Commons — wspólna biblioteka zasobów i moderacja

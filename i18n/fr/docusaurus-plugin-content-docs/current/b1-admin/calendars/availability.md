@@ -1,5 +1,6 @@
 ---
 title: "Calendrier de Disponibilité"
+description: "Configurez les salles et équipements réservables dans B1 Admin, puis réservez-les au calendrier, ajoutez des délais de préparation et de rangement et gérez les réservations récurrentes ou soumises à approbation."
 ---
 
 # Calendrier de Disponibilité
@@ -13,7 +14,7 @@ Le Calendrier de Disponibilité vous donne une vue d'ensemble de toutes les rés
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Configurez au moins une [salle ou ressource](rooms-resources) dans la section Salles et Ressources
+- Configurez au moins une [salle ou ressource](./rooms-resources.md) dans la section Salles et Ressources
 - Vous avez besoin d'un accès de modification à la section Calendriers dans B1 Admin
 
 </div>
@@ -58,7 +59,7 @@ Utilisez la liste déroulante **Salle / Ressource** en haut à gauche pour rédu
 6. Cliquez sur **Enregistrer** pour soumettre la réservation.
 
 :::info
-Si la salle ou la ressource a un **Groupe d'Approbation** configuré, la réservation apparaîtra comme **En Attente** jusqu'à ce qu'un leader de ce groupe l'approuve. Voir [Approbations de Calendrier](approvals) pour le flux d'approbation.
+Si la salle ou la ressource a un **Groupe d'Approbation** configuré, la réservation apparaîtra comme **En Attente** jusqu'à ce qu'un leader de ce groupe l'approuve. Voir [Approbations de Calendrier](./approvals.md) pour le flux d'approbation.
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Le calendrier mettra en évidence tous les conflits avant que vous ne sauviez. S
 
 ## Articles Connexes
 
-- [Salles, Ressources et Planification](rooms-resources) — configurer les espaces et l'équipement réservables
-- [Approbations de Calendrier](approvals) — approuver ou refuser les demandes de réservation
-- [Création de Calendriers](creating-calendars) — gérer les calendriers d'événements
+- [Salles, Ressources et Planification](./rooms-resources.md) — configurer les espaces et l'équipement réservables
+- [Approbations de Calendrier](./approvals.md) — approuver ou refuser les demandes de réservation
+- [Création de Calendriers](./creating-calendars.md) — gérer les calendriers d'événements

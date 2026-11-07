@@ -1,5 +1,6 @@
 ---
 title: "Printer oppsett"
+description: "Sett opp en nettverksbasert etikettskriver for B1 Checkin-kiosker: finn den på Wi-Fi-nettverket, velg den, kjør en testutskrift og lagre valget."
 ---
 
 # Printer oppsett

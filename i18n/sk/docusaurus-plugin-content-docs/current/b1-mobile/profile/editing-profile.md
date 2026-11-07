@@ -1,5 +1,7 @@
 ---
-title: "Úprava vášho profilu"
+title: "Úprava vášho profilu v aplikácii B1 Mobile"
+sidebar_label: "Úprava vášho profilu"
+description: "Aktualizujte svoje meno, e-mail, telefón, adresu a profilovú fotografiu v aplikácii B1 Mobile, aby záznamy vašej cirkvi a adresár zostali aktuálne."
 ---
 
 # Úprava vášho profilu
@@ -13,7 +15,7 @@ Karta **Profil** vám umožňuje aktualizovať vaše osobné údaje, aby mala va
 <div class="prereqs">
 <h4>Pred začatím</h4>
 
-- [Nainštalujte B1 Mobile](../getting-started/installing) a [sa prihláste](../getting-started/logging-in) do svojho účtu
+- [Nainštalujte B1 Mobile](../getting-started/installing.md) a [sa prihláste](../getting-started/logging-in.md) do svojho účtu
 
 </div>
 
@@ -34,7 +36,7 @@ Váš profil obsahuje tieto osobné údaje:
 3. Klepnite na pole, ktoré chcete upraviť, a urobte zmeny.
 4. Keď skončíte, uložte zmeny.
 
-Vaše aktualizované údaje sa synchronizujú automaticky. Každý, kto si pozrie váš profil (v závislosti od vašich [nastavení ochrany súkromia](./privacy-settings)), uvidí nové údaje okamžite.
+Vaše aktualizované údaje sa synchronizujú automaticky. Každý, kto si pozrie váš profil (v závislosti od vašich [nastavení ochrany súkromia](./privacy-settings.md)), uvidí nové údaje okamžite.
 
 :::tip
 Udržiavajte svoju e-mailovú adresu a telefónne číslo aktuálne. Vaša cirkev ich používa na zasielanie dôležitých aktualizácií a pripomienok.
@@ -46,7 +48,7 @@ Profilovú fotografiu môžete pridať alebo zmeniť na karte **Profil**. Vaša 
 
 ## Zmeny naprieč ChurchApps
 
-Keďže všetky služby ChurchApps zdieľajú rovnaký systém účtov, zmena, ktorú urobíte v B1 Mobile, je okamžite viditeľná v [B1.church](../../b1-church/), v administračných nástrojoch vašej cirkvi a v ďalších pripojených službách. Svoje údaje nemusíte aktualizovať osobitne na každom mieste.
+Keďže všetky služby ChurchApps zdieľajú rovnaký systém účtov, zmena, ktorú urobíte v B1 Mobile, je okamžite viditeľná v [B1.church](../../b1-church/index.md), v administračných nástrojoch vašej cirkvi a v ďalších pripojených službách. Svoje údaje nemusíte aktualizovať osobitne na každom mieste.
 
 :::info
 Niektoré cirkvi vyžadujú schválenie správcom pri určitých zmenách profilu. Ak sa vaša aktualizácia neobjaví okamžite, skontrolujte jej stav na karte **Čakajúce** na obrazovke vášho profilu.
@@ -54,5 +56,5 @@ Niektoré cirkvi vyžadujú schválenie správcom pri určitých zmenách profil
 
 ## Súvisiace články
 
-- [Domácnosť](./household) -- Zobrazenie a správa členov vašej rodiny
-- [Nastavenia ochrany súkromia](./privacy-settings) -- Kontrola toho, čo môžu ostatní vidieť o vás
+- [Domácnosť](./household.md) -- Zobrazenie a správa členov vašej rodiny
+- [Nastavenia ochrany súkromia](./privacy-settings.md) -- Kontrola toho, čo môžu ostatní vidieť o vás

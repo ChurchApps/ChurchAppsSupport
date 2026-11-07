@@ -1,5 +1,6 @@
 ---
 title: "Kufakwa Kwe-Web App"
+description: "Tinyatelo tekufaka ema-app eweb e-ChurchApps njenge-B1 Admin ku-Amazon S3 ne-CloudFront, ngekufakwa ngekuzenta e-GitHub Actions ekuhlanganiseni noma ngemiyalo."
 ---
 
 # Kufakwa Kwe-Web App
@@ -13,7 +14,7 @@ Tinhlelo te-web te-ChurchApps tifakwa njengemasayithi lamile ku-**Amazon S3** ka
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- Hlela uhlelo lwe-web ngasekhaya bese uchaka kutsi liyakha -- bona [Tinhlelo Te-Web](../web-apps/)
+- Hlela uhlelo lwe-web ngasekhaya bese uchaka kutsi liyakha -- bona [Tinhlelo Te-Web](../web-apps/index.md)
 - Hlela ema-credential e-AWS anemvumo ye-S3 kanye ne-CloudFront
 - Yati ligama le-bucket ye-S3 lehlosiwe kanye ne-ID ye-CloudFront distribution
 
@@ -53,6 +54,6 @@ Nangabe udzinga kuchaka lokwakhiwe ngasekhaya ngaphambi kwekufaka, gijimisa i-`n
 
 ## Emahloko Lahlobene
 
-- **[Tinhlelo Te-Web](../web-apps/)** -- Imihlahlandlela yekuhlelwa ye-B1Admin, B1App, ne-LessonsApp
-- **[Kufakwa Kwe-API](./apis)** -- Kufaka ema-backend API
-- **[Kufakwa Kwetinhlelo Teselula](./mobile)** -- Kufaka tinhlelo teselula etitolo tetinhlelo
+- **[Tinhlelo Te-Web](../web-apps/index.md)** -- Imihlahlandlela yekuhlelwa ye-B1Admin, B1App, ne-LessonsApp
+- **[Kufakwa Kwe-API](./apis.md)** -- Kufaka ema-backend API
+- **[Kufakwa Kwetinhlelo Teselula](./mobile.md)** -- Kufaka tinhlelo teselula etitolo tetinhlelo

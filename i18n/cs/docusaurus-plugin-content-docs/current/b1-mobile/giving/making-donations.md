@@ -1,5 +1,7 @@
 ---
-title: "Vytvoření daru"
+title: "Darování v B1 Mobile"
+sidebar_label: "Vytvoření daru"
+description: "Darujte církvi na kartě Dar v B1 Mobile: vyberte fond, zadejte částku, zaplaťte přes Stripe a rychle opakujte dřívější dary."
 ---
 
 # Vytvoření daru
@@ -13,8 +15,8 @@ Darování přes B1 Mobile je rychlé a jednoduché. Záložka **Dary** v sekci 
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Nainstalujte B1 Mobile](../getting-started/installing) a [přihlaste se](../getting-started/logging-in) ke svému účtu
-- Připravte si kreditní nebo debetní kartu, nebo si předem [uložte platební metodu](./managing-payments)
+- [Nainstalujte B1 Mobile](../getting-started/installing.md) a [přihlaste se](../getting-started/logging-in.md) ke svému účtu
+- Připravte si kreditní nebo debetní kartu, nebo si předem [uložte platební metodu](./managing-payments.md)
 
 </div>
 
@@ -42,10 +44,10 @@ Před odesláním si ještě jednou zkontrolujte částku daru a fond. Dary jsou
 Pokud chcete darovat stejnou částku, jako byl váš poslední dar, nemusíte procházet celý postup darování. Záložka **Přehled** zobrazuje váš nejnovější dar spolu s tlačítkem **Opakovat**. Klepnutím na něj rychle odešlete stejný dar znovu.
 
 :::tip
-Pokud plánujete darovat pravidelně, uložte si platební metodu na záložce **Správa**, abyste příště mohli darovat ještě rychleji. Podrobnosti najdete v článku [Správa platebních metod](./managing-payments).
+Pokud plánujete darovat pravidelně, uložte si platební metodu na záložce **Správa**, abyste příště mohli darovat ještě rychleji. Podrobnosti najdete v článku [Správa platebních metod](./managing-payments.md).
 :::
 
 ## Související články
 
-- [Správa platebních metod](./managing-payments) -- Uložení karty pro rychlejší darování v budoucnu
-- [Historie darů](./donation-history) -- Zobrazení přehledu darů a minulých příspěvků
+- [Správa platebních metod](./managing-payments.md) -- Uložení karty pro rychlejší darování v budoucnu
+- [Historie darů](./donation-history.md) -- Zobrazení přehledu darů a minulých příspěvků

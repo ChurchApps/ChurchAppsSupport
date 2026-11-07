@@ -1,12 +1,13 @@
 ---
 title: "Self-Hosting with Docker"
+description: "Zainstaluj prywatny stos B1 Admin, portalu członka, API i MySQL na własnym komputerze przez Docker, a potem aktualizuj i twórz kopie zapasowe poleceniem b1."
 ---
 
 # Self-Hosting with Docker
 
 <div class="article-intro">
 
-Uruchom własną prywatną instancję B1 Admin, portalu członków i strony B1, API oraz bazy danych MySQL na dowolnym komputerze z Dockerem — serwerze domowym, małym VPS lub urządzeniu lokalnym. Jedno polecenie instaluje system, jedno polecenie go aktualizuje, a każda aktualizacja najpierw tworzy kopię zapasową. Jeśli wolisz w ogóle nie zarządzać serwerem, zobacz [Self-Hosting on Railway](./railway-template), czyli zarządzaną alternatywę.
+Uruchom własną prywatną instancję B1 Admin, portalu członków i strony B1, API oraz bazy danych MySQL na dowolnym komputerze z Dockerem — serwerze domowym, małym VPS lub urządzeniu lokalnym. Jedno polecenie instaluje system, jedno polecenie go aktualizuje, a każda aktualizacja najpierw tworzy kopię zapasową. Jeśli wolisz w ogóle nie zarządzać serwerem, zobacz [Self-Hosting on Railway](./railway-template.md), czyli zarządzaną alternatywę.
 
 </div>
 
@@ -94,10 +95,10 @@ Jeśli system zainstalowano na `localhost`, a później chcesz udostępnić go p
 
 Działają dokładnie tak samo jak na Railway — te same zmienne środowiskowe, ustawiane w `.env` zamiast w panelu Railway:
 
-- **[E-mail / SMTP](./railway-template#1-email-highly-recommended)** — poradniki konfiguracji dla Resend, Brevo i Gmaila
-- **[Wiele stron](./railway-template#3-multi-site-multiple-churches-on-one-instance)** — nieograniczona liczba kościołów na jednej instancji. `/` obsługuje kościół, którego slug to `DEFAULT_CHURCH_SLUG` (pierwszy kościół to `church`); wskaż dodatkowe domeny na tę maszynę i przypisz je w **Settings → Domains** w B1Admin
-- **[Online giving](./railway-template#4-online-giving-stripe--paypal)** — konfigurowane osobno dla każdego kościoła w interfejsie administratora
-- **[Opcjonalne integracje](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[E-mail / SMTP](./railway-template.md#1-email-highly-recommended)** — poradniki konfiguracji dla Resend, Brevo i Gmaila
+- **[Wiele stron](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** — nieograniczona liczba kościołów na jednej instancji. `/` obsługuje kościół, którego slug to `DEFAULT_CHURCH_SLUG` (pierwszy kościół to `church`); wskaż dodatkowe domeny na tę maszynę i przypisz je w **Settings → Domains** w B1Admin
+- **[Online giving](./railway-template.md#4-online-giving-stripe--paypal)** — konfigurowane osobno dla każdego kościoła w interfejsie administratora
+- **[Opcjonalne integracje](./railway-template.md#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Powiadomienia push](#push-notifications)** — `WEB_PUSH_*`; instalator pozostawia te pola puste, więc push jest wyłączony, dopóki ich nie dodasz
 
 Zaproszenia i inne wiadomości wysyłane przez kościół są na instancji self-hosted włączane automatycznie (usługa hostowana blokuje je do ręcznego sprawdzenia, aby chronić reputację nadawcy).
@@ -148,7 +149,7 @@ Wszystkie dane przechowywane są w trzech nazwanych wolumenach Docker:
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-W przypadku dużych bibliotek multimediów możesz przełączyć przechowywanie plików na S3 — ustaw `FILE_STORE=S3` oraz zmienne `AWS_*` opisane w sekcji [File Storage w poradniku Railway](./railway-template#5-file-storage). Kopie zapasowe bazy danych nie obejmują obiektów S3; włącz tam wersjonowanie bucketu.
+W przypadku dużych bibliotek multimediów możesz przełączyć przechowywanie plików na S3 — ustaw `FILE_STORE=S3` oraz zmienne `AWS_*` opisane w sekcji [File Storage w poradniku Railway](./railway-template.md#5-file-storage). Kopie zapasowe bazy danych nie obejmują obiektów S3; włącz tam wersjonowanie bucketu.
 
 ## Aktualizacja
 
@@ -187,6 +188,6 @@ Nadal masz problem? Otwórz zgłoszenie pod adresem [github.com/ChurchApps/Churc
 
 ## Powiązane artykuły
 
-- **[Self-Hosting on Railway](./railway-template)** — zarządzana alternatywa hostingowa oraz wspólne poradniki konfiguracji po wdrożeniu
-- **[Initial Setup](../../getting-started/initial-setup)** — pierwsze kroki po utworzeniu kościoła
-- **[Local API Setup](../api/local-setup)** — uruchamianie stosu bezpośrednio na potrzeby programowania
+- **[Self-Hosting on Railway](./railway-template.md)** — zarządzana alternatywa hostingowa oraz wspólne poradniki konfiguracji po wdrożeniu
+- **[Initial Setup](../../getting-started/initial-setup.md)** — pierwsze kroki po utworzeniu kościoła
+- **[Local API Setup](../api/local-setup.md)** — uruchamianie stosu bezpośrednio na potrzeby programowania

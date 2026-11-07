@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "Next.js 22+ के साथ B1App मेंबर वेब ऐप को लोकल रूप से सेट अप करें, .env में इसके API एंडपॉइंट कॉन्फ़िगर करें, और पोर्ट 3301 पर डेव सर्वर चलाएँ।"
 ---
 
 # B1App
@@ -13,8 +14,8 @@ B1App एक सार्वजनिक-मुखी चर्च सदस्�
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- **Node.js 22+** और **Git** इंस्टॉल करें -- देखें [Prerequisites](../setup/prerequisites)
-- अपना API लक्ष्य कॉन्फ़िगर करें (demo या local) -- देखें [Environment Variables](../setup/environment-variables)
+- **Node.js 22+** और **Git** इंस्टॉल करें -- देखें [Prerequisites](../setup/prerequisites.md)
+- अपना API लक्ष्य कॉन्फ़िगर करें (demo या local) -- देखें [Environment Variables](../setup/environment-variables.md)
 
 </div>
 
@@ -89,5 +90,5 @@ Next.js डेव सर्वर [http://localhost:3301](http://localhost:3301)
 3. नया संस्करण देने के लिए CloudFront invalidation ट्रिगर होता है
 
 :::tip
-विस्तृत डिप्लॉयमेंट निर्देशों के लिए [Web App Deployment](../deployment/web-apps) गाइड देखें।
+विस्तृत डिप्लॉयमेंट निर्देशों के लिए [Web App Deployment](../deployment/web-apps.md) गाइड देखें।
 :::

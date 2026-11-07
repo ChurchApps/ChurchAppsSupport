@@ -1,5 +1,7 @@
 ---
-title: "Wstępna konfiguracja"
+title: "Wstępna konfiguracja kościoła w B1 Admin"
+sidebar_label: "Wstępna konfiguracja"
+description: "Pierwsza konfiguracja nowego kościoła w B1 Admin: dane, branding, role i zalecana kolejność ustawiania osób, grup, obecności i ofiar."
 ---
 
 # Wstępna konfiguracja

@@ -1,5 +1,6 @@
 ---
 title: "签到"
+description: "签到在 B1Checkin、B1App 和 B1 Admin 中的工作方式：考勤数据模型、将小组作为房间、容量限制和接送安全规则。"
 ---
 
 # 签到
@@ -216,7 +217,7 @@ B1App 的 `src/components/checkin/GuestRegister.tsx` 通过匿名的 `GET /membe
 
 ## 相关页面
 
-- [出勤端点](../api/endpoints/attendance) —— 校区、礼拜、场次、到访记录和到访场次的完整 REST 接口
-- [会员端点](../api/endpoints/membership) —— 人员、家庭和小组
-- [Webhooks](../api/webhooks) —— `session.created`、`attendance.recorded` 和 `attendance.checkout` 事件
-- [模块结构](../api/module-structure) —— 出勤模块在服务端的组织方式
+- [出勤端点](../api/endpoints/attendance.md) —— 校区、礼拜、场次、到访记录和到访场次的完整 REST 接口
+- [会员端点](../api/endpoints/membership.md) —— 人员、家庭和小组
+- [Webhooks](../api/webhooks.md) —— `session.created`、`attendance.recorded` 和 `attendance.checkout` 事件
+- [模块结构](../api/module-structure.md) —— 出勤模块在服务端的组织方式

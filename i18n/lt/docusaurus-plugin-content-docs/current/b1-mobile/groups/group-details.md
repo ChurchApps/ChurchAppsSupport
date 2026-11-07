@@ -1,5 +1,7 @@
 ---
-title: "Grupu informacija"
+title: "Grupės informacija B1 Mobile programėlėje"
+sidebar_label: "Grupu informacija"
+description: "Peržiūrėkite B1 Mobile grupės detalių puslapį: grupės informaciją, įrašus ir narius bei kaip jį atidaryti iš Grupių ekrano."
 ---
 
 # Grupu informacija
@@ -13,7 +15,7 @@ Kai iš grupių ekrano palieciate grupę, atsiveriate tos grupės išsamų pusla
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiekite B1 Mobile](../getting-started/installing) ir [prisijunkite](../getting-started/logging-in) prie savo paskyros
+- [Įdiekite B1 Mobile](../getting-started/installing.md) ir [prisijunkite](../getting-started/logging-in.md) prie savo paskyros
 - Atidarykite [Grupių](./index.md) ekraną
 
 </div>
@@ -46,5 +48,5 @@ Dažniausiai lankoma grupė rodoma kaip pagrindinė kortelė grupių ekrano vir�
 
 ## Susiję straipsniai
 
-- [Grupės laiko juosta](./group-timeline) -- Sužinokite apie bendrą visų jūsų grupių veiklos srautą
+- [Grupės laiko juosta](./group-timeline.md) -- Sužinokite apie bendrą visų jūsų grupių veiklos srautą
 - [Pranešimai](../community/messaging.md) -- Siųskite privačius pranešimus grupės nariams

@@ -1,5 +1,6 @@
 ---
 title: Pengenalan B1.church
+description: "Panduan masuk ke B1 Admin, menjelajahi Dasbor dan menu Jump, serta mengatur informasi gereja sebelum mengeksplorasi alat lainnya."
 ---
 
 # Selamat Datang di B1.church Admin!
@@ -34,7 +35,7 @@ Untuk bantuan lebih lanjut, silakan kirim email ke [support@churchapps.org](mail
 10. Sekarang Anda dapat masuk ke B1.church melalui **portal anggota** atau **portal admin**. Portal anggota memungkinkan Anda melihat tampilan B1.church bagi anggota Anda, melihat grup Anda, dan mengelola donasi pribadi Anda.
 
 :::tip
-Mulailah dari halaman [Settings](./settings/) untuk mengonfigurasi nama gereja, identitas merek, dan izin tim Anda. Ini memastikan semua yang Anda atur berikutnya akan tampil dengan benar.
+Mulailah dari halaman [Settings](./settings/index.md) untuk mengonfigurasi nama gereja, identitas merek, dan izin tim Anda. Ini memastikan semua yang Anda atur berikutnya akan tampil dengan benar.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -81,9 +82,9 @@ Mencari sering kali merupakan cara tercepat untuk mencapai sebuah halaman -- ket
 
 Setelah menonton pengenalan ini, jelajahi fitur-fitur utama berikut:
 
-- [Adding People](./people/adding-people) -- Pelajari cara menambahkan anggota ke basis data Anda
-- [Groups](./groups/) -- Mengatur dan mengelola grup gereja
-- [Serving Plans](./serving/plans) -- Mengatur pelayanan Anda
-- [Attendance](./attendance/) -- Melacak kehadiran dan check-in
-- [Website](./website/) -- Membangun dan menyesuaikan situs web gereja Anda
-- [Settings](./settings/) -- Mengonfigurasi informasi dan izin gereja Anda
+- [Adding People](./people/adding-people.md) -- Pelajari cara menambahkan anggota ke basis data Anda
+- [Groups](./groups/index.md) -- Mengatur dan mengelola grup gereja
+- [Serving Plans](./serving/plans.md) -- Mengatur pelayanan Anda
+- [Attendance](./attendance/index.md) -- Melacak kehadiran dan check-in
+- [Website](./website/index.md) -- Membangun dan menyesuaikan situs web gereja Anda
+- [Settings](./settings/index.md) -- Mengonfigurasi informasi dan izin gereja Anda

@@ -1,5 +1,6 @@
 ---
 title: "Sledování docházky"
+description: "Sledujte trendy docházky, filtrujte přehledy podle pobočky, bohoslužby nebo skupiny a exportujte docházku skupin ze stránky Docházka v B1 Admin."
 ---
 
 # Sledování docházky

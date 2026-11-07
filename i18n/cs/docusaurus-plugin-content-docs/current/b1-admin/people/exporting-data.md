@@ -1,5 +1,6 @@
 ---
 title: "Export údajů"
+description: "Exportujte lidi do CSV, seznamy členů skupin nebo úplnou zálohu databáze B1 z B1 Admin a zjistěte, co obsahuje archiv B1 Export Zip."
 ---
 
 # Export údajů

@@ -1,5 +1,6 @@
 ---
 title: "Wysyłanie prośby o dołączenie do grupy"
+description: "Poproś o dołączenie do grupy wymagającej zatwierdzenia w B1.church, dodaj opcjonalną notatkę dla lidera i śledź lub anuluj oczekującą prośbę."
 ---
 
 # Wysyłanie prośby o dołączenie do grupy

@@ -1,5 +1,6 @@
 ---
 title: "Varslingsinnstillinger"
+description: "Angi varselkanaler, e-postfrekvens, stille timer og SMS-avmeldinger for hver varseltype i B1 Admin og B1-appen, fra ett skjermbilde."
 ---
 
 # Varslingsinnstillinger
@@ -60,6 +61,6 @@ Tidskritiske varsler – for eksempel et sikkerhetsvarsel eller en sikkerhetsmel
 
 ## Relatert
 
-- [Frivillig påmelding](../serving/volunteer-signup) – Påminnelser om tjeneste og svar på forespørsler om planen
-- [Melde seg på arrangementer](../events/registering) – Meld deg på arrangementer som sender påminnelser
-- [Installere appen](installing-pwa) – Legg B1 til på enheten din slik at du kan motta push-varsler
+- [Frivillig påmelding](../serving/volunteer-signup.md) – Påminnelser om tjeneste og svar på forespørsler om planen
+- [Melde seg på arrangementer](../events/registering.md) – Meld deg på arrangementer som sender påminnelser
+- [Installere appen](./installing-pwa.md) – Legg B1 til på enheten din slik at du kan motta push-varsler

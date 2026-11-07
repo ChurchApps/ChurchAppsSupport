@@ -1,5 +1,6 @@
 ---
 title: "Kampusy"
+description: "Skonfiguruj kampusy w B1 Admin, aby śledzić, do jakiej lokalizacji należy każda osoba i grupa, i filtrować osoby, frekwencję oraz dane demograficzne według miejsca."
 ---
 
 # Kampusy

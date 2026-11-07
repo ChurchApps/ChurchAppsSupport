@@ -1,5 +1,6 @@
 ---
 title: "Formulare"
+description: "Finden, filtern, bearbeiten, archivieren und wiederherstellen Sie eigene Formulare in B1 Admin, außerdem erfahren Sie, wo Sie Formularmitglieder festlegen und Einsendungen prüfen."
 ---
 
 # Formulare

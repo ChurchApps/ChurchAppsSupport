@@ -1,5 +1,6 @@
 ---
 title: "Gruppehelse"
+description: "90-dagers oversikt i B1 Admin over medlemmer, innmeldinger, utmeldinger, frafall og snittoppmøte, så du ser hvilke grupper som trenger oppfølging."
 ---
 
 # Gruppehelse
@@ -13,8 +14,8 @@ Dashbordet Gruppehelse gir deg et fugleperspektiv på hvordan alle gruppene dine
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger minst noen få grupper med medlemmer for å se meningsfulle data. Se [Opprette grupper](creating-groups).
-- Oppmøtedata hentes fra registrerte samlinger. Se delen [Oppmøte](../attendance/).
+- Du trenger minst noen få grupper med medlemmer for å se meningsfulle data. Se [Opprette grupper](./creating-groups.md).
+- Oppmøtedata hentes fra registrerte samlinger. Se delen [Oppmøte](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Når du klikker på et gruppenavn, kommer du direkte til gruppens detaljside, de
 
 ## Relaterte artikler
 
-- [Opprette grupper](creating-groups) — sett opp grupper
-- [Gruppemedlemmer](group-members) — administrer gruppemedlemskap
-- [Registrere oppmøte](../attendance/tracking-attendance) — registrer samlinger som mater dette dashbordet
+- [Opprette grupper](./creating-groups.md) — sett opp grupper
+- [Gruppemedlemmer](./group-members.md) — administrer gruppemedlemskap
+- [Registrere oppmøte](../attendance/tracking-attendance.md) — registrer samlinger som mater dette dashbordet

@@ -1,5 +1,6 @@
 ---
 title: "通知与提醒架构"
+description: "B1 Admin API 如何通过统一的投递通道和偏好设置关卡，处理通知、定时提醒、教会电子邮件限制和短信退订。"
 ---
 
 # 通知与提醒架构
@@ -185,6 +186,6 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 
 ## 相关页面
 
-- [实时架构](../realtime)——应用内送达级别所依托的 WebSocket 协议和客户端基础组件（`SocketHelper`、`SubscriptionManager`、`ConversationStore`）
-- [Web Push 通知](../web-push)——VAPID 设置以及推送升级级别所使用的浏览器 Push API 路径
-- [消息端点](../api/endpoints/messaging)——消息、对话、连接以及通知/提醒路由的完整 REST 接口
+- [实时架构](../realtime.md)——应用内送达级别所依托的 WebSocket 协议和客户端基础组件（`SocketHelper`、`SubscriptionManager`、`ConversationStore`）
+- [Web Push 通知](../web-push.md)——VAPID 设置以及推送升级级别所使用的浏览器 Push API 路径
+- [消息端点](../api/endpoints/messaging.md)——消息、对话、连接以及通知/提醒路由的完整 REST 接口

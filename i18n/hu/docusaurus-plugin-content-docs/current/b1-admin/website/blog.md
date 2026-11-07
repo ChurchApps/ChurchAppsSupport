@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Blogbejegyzések írása a weboldalához a B1 Adminban"
+sidebar_label: "Blog"
+description: "Írjon, ütemezzen és tegyen közzé blogbejegyzéseket egyházi weboldalán a B1 Adminban: kivonatok, kategóriák, címkék, fejléckép és kommentbeágyazás."
 ---
 
 # Blog
@@ -13,8 +15,8 @@ A Blog oldal lehetővé teszi, hogy híreket, frissítéseket és áhítatokat t
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Végezze el a weboldal [kezdeti beállítását](initial-setup)
-- Ha azt szeretné, hogy a látogatók a menüből is megtalálják a blogot, adjon hozzá navigációs hivatkozást a `/blog` oldalhoz a [Oldalak kezelése](managing-pages) részben
+- Végezze el a weboldal [kezdeti beállítását](./initial-setup.md)
+- Ha azt szeretné, hogy a látogatók a menüből is megtalálják a blogot, adjon hozzá navigációs hivatkozást a `/blog` oldalhoz a [Oldalak kezelése](./managing-pages.md) részben
 
 </div>
 
@@ -31,7 +33,7 @@ A Blog oldal lehetővé teszi, hogy híreket, frissítéseket és áhítatokat t
 3. Adjon hozzá egy **Kivonatot** – ez egy rövid összefoglaló, amely a bejegyzések listájában, a meta leírásokban és az RSS-hírcsatornában jelenik meg. Ha üresen hagyja, a rendszer automatikusan generál egyet a bejegyzés tartalmának elejéből.
 4. Írja meg a bejegyzés szövegét a **Tartalom** szerkesztőben, Markdown formátumban. Kattintson a **Előnézet** gombra, hogy lássa, hogyan fog kinézni a formázott bejegyzés.
 5. Válasszon egy **Kategóriát** (válasszon egy meglévőt, vagy írjon be újat), és opcionálisan adjon meg vesszővel elválasztott **Címkéket**.
-6. Kattintson a **Kép kiválasztása** gombra, hogy egy fotót válasszon a [Fájlok](files) galériájából, vagy töltsön fel újat. A feltöltött fotók a beépített kivágóeszközben nyílnak meg, amely 16:9 arányra van rögzítve, így bármelyik fotót úgy igazíthatja, hogy illeszkedjen a bejegyzés fejlécéhez és a kártyákhoz.
+6. Kattintson a **Kép kiválasztása** gombra, hogy egy fotót válasszon a [Fájlok](./files.md) galériájából, vagy töltsön fel újat. A feltöltött fotók a beépített kivágóeszközben nyílnak meg, amely 16:9 arányra van rögzítve, így bármelyik fotót úgy igazíthatja, hogy illeszkedjen a bejegyzés fejlécéhez és a kártyákhoz.
 7. Állítsa be a **Szerzőt** – alapértelmezés szerint Ön van beállítva, de az adatbázisában bármely személyt kereshet és kiválaszthat.
 8. Kapcsolja be a **Közzétéve** opciót, és állítson be egy **Közzététel dátumát**, amikor készen áll arra, hogy a bejegyzés nyilvánossá váljon. Ha kikapcsolva hagyja, a bejegyzés piszkozatként marad mentve.
 
@@ -58,7 +60,7 @@ A listában minden bejegyzés az alábbi három állapot egyikét mutatja:
 A közzétett bejegyzések a `{yoursite}/blog` címen jelennek meg, oldalanként 10 bejegyzéssel. A **Régebbi**/**Újabb** hivatkozásokkal lapozhat az archívumban. Emellett van kategória szűrő, valamint minden bejegyzés szerzője és fotója is látható. A címkék kattintható elemekként is megjelennek, így a látogatók ugyanúgy szűrhetik a listát címke szerint. Az egyes bejegyzések a `{yoursite}/blog/{slug}` címen érhetők el, és tartalmaznak az azonos kategóriából származó kapcsolódó bejegyzéseket. A blog oldal RSS-hírcsatornát is közzétesz, amelyet a hírolvasók és automatizálási eszközök, például a Zapier automatikusan felismernek.
 
 :::info
-A blogbejegyzések külön tartalomtípust alkotnak a normál weboldal-oldalaktól – nem a [oldalszerkesztőben](page-editor) készülnek, és nem jelennek meg az Oldalak listájában. Ez gyorsabbá és az íráson összpontosítóbbá teszi a blogbejegyzések készítését.
+A blogbejegyzések külön tartalomtípust alkotnak a normál weboldal-oldalaktól – nem a [oldalszerkesztőben](./page-editor.md) készülnek, és nem jelennek meg az Oldalak listájában. Ez gyorsabbá és az íráson összpontosítóbbá teszi a blogbejegyzések készítését.
 :::
 
 ## Megjegyzések hozzáadása a bejegyzések alá
@@ -77,6 +79,6 @@ Törölje a mezőben lévő szöveget, majd kattintson a **Mentés** gombra, hog
 
 ## Következő lépések
 
-- [Oldalak kezelése](managing-pages) – Navigációs hivatkozás hozzáadása a blogjához
-- [Fájlok](files) – Fotók feltöltése a bejegyzéseihez
+- [Oldalak kezelése](./managing-pages.md) – Navigációs hivatkozás hozzáadása a blogjához
+- [Fájlok](./files.md) – Fotók feltöltése a bejegyzéseihez
 - [Zapier integráció](../integrations/zapier.md) – Automatizálások indítása új bejegyzések közzétételekor

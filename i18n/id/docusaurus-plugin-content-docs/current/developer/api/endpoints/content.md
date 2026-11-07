@@ -1,5 +1,6 @@
 ---
 title: "Endpoint Konten"
+description: "Referensi endpoint Content API ChurchApps: halaman situs web, postingan blog, pengalihan, khotbah, acara, berkas, pencarian Alkitab, dan lagu di B1 Admin."
 ---
 
 # Endpoint Konten
@@ -133,7 +134,7 @@ Path dasar: `/content/pageHistory`
 
 Path dasar: `/content/posts`
 
-Postingan blog adalah baris mandiri: `title`, `slug` (unik per gereja), `excerpt`, `content` (isi markdown), `authorId`, `photoUrl`, `publishDate`, `category`, dan `tags`. Postingan dianggap terbit setelah `publishDate` diatur dan sudah lewat. Endpoint baca memperkaya setiap postingan dengan `authorName` yang diambil dari `authorId`. Lihat [Arsitektur Website Builder](../../architecture/website-builder#blog).
+Postingan blog adalah baris mandiri: `title`, `slug` (unik per gereja), `excerpt`, `content` (isi markdown), `authorId`, `photoUrl`, `publishDate`, `category`, dan `tags`. Postingan dianggap terbit setelah `publishDate` diatur dan sudah lewat. Endpoint baca memperkaya setiap postingan dengan `authorName` yang diambil dari `authorId`. Lihat [Arsitektur Website Builder](../../architecture/website-builder.md#blog).
 
 | Metode | Path | Autentikasi | Izin | Deskripsi |
 |--------|------|------|------|-------------|
@@ -458,8 +459,8 @@ Path dasar: `/content/support`
 
 ## Halaman Terkait
 
-- [Arsitektur Website Builder](../../architecture/website-builder) -- Bagaimana halaman, bagian, elemen, postingan, dan pengalihan saling terhubung di seluruh aplikasi
-- [Endpoint Keanggotaan](./membership) -- Orang, gereja, grup, peran, izin
-- [Endpoint Kehadiran](./attendance) -- Pelacakan layanan dan kunjungan
-- [Autentikasi & Izin](./authentication) -- Alur login, JWT, model izin
-- [Struktur Modul](../module-structure) -- Pola organisasi kode
+- [Arsitektur Website Builder](../../architecture/website-builder.md) -- Bagaimana halaman, bagian, elemen, postingan, dan pengalihan saling terhubung di seluruh aplikasi
+- [Endpoint Keanggotaan](./membership.md) -- Orang, gereja, grup, peran, izin
+- [Endpoint Kehadiran](./attendance.md) -- Pelacakan layanan dan kunjungan
+- [Autentikasi & Izin](./authentication.md) -- Alur login, JWT, model izin
+- [Struktur Modul](../module-structure.md) -- Pola organisasi kode

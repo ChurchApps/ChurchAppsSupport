@@ -1,5 +1,6 @@
 ---
 title: "Veranstaltungen & Räume anfragen"
+description: "Raum- oder Gerätebuchung für eine Veranstaltung im B1.church-Mitgliederportal anfragen, Status unter „Meine Anfragen“ verfolgen und ausstehende stornieren."
 ---
 
 # Veranstaltungen & Räume anfragen
@@ -42,11 +43,11 @@ Nach dem Absenden zeigt eine Zusammenfassung **Anfrage gesendet** den Status jed
 Solange eine Anfrage noch ausstehend ist, können Sie sie mit **Anfrage zurückziehen** zurückziehen. Sie werden um eine Bestätigung gebeten. Eine Stornierung kann nicht rückgängig gemacht werden.
 
 :::info
-Anfragen werden von den Mitarbeitenden Ihrer Gemeinde auf der Seite [Genehmigungen](../../b1-admin/calendars/approvals) in B1 Admin geprüft. Welche Räume und Ressourcen eine Genehmigung benötigen, legt Ihre Gemeinde fest -- siehe [Räume & Ressourcen](../../b1-admin/calendars/rooms-resources).
+Anfragen werden von den Mitarbeitenden Ihrer Gemeinde auf der Seite [Genehmigungen](../../b1-admin/calendars/approvals.md) in B1 Admin geprüft. Welche Räume und Ressourcen eine Genehmigung benötigen, legt Ihre Gemeinde fest -- siehe [Räume & Ressourcen](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Verwandte Artikel
 
-- [Die Seite Ich](../getting-started/me-page) -- Wo die Links für Anfragen zu finden sind
-- [Kalender-Genehmigungen (B1 Admin)](../../b1-admin/calendars/approvals) -- Wie Mitarbeitende Anfragen prüfen
-- [Räume & Ressourcen (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Wie Gemeinden buchbare Räume einrichten
+- [Die Seite Ich](../getting-started/me-page.md) -- Wo die Links für Anfragen zu finden sind
+- [Kalender-Genehmigungen (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Wie Mitarbeitende Anfragen prüfen
+- [Räume & Ressourcen (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Wie Gemeinden buchbare Räume einrichten

@@ -1,5 +1,6 @@
 ---
 title: "Mobil Dağıtım"
+description: "B1 Mobile uygulamasının Android ve iOS sürümlerini Expo EAS ile derlemeyi, uygulama mağazalarına göndermeyi ve OTA güncellemeleri göndermeyi adım adım anlatır."
 ---
 
 # Mobil Dağıtım
@@ -13,7 +14,7 @@ ChurchApps mobil uygulamaları **Expo EAS Build** ile derlenir ve uygulama mağa
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Mobil uygulamayı yerel olarak kurun -- bkz. [B1 Mobile](../mobile/b1-mobile)
+- Mobil uygulamayı yerel olarak kurun -- bkz. [B1 Mobile](../mobile/b1-mobile.md)
 - [EAS CLI](https://docs.expo.dev/eas/) aracını kurun ve yapılandırın
 - Google Play Console (Android) ve/veya Apple App Store Connect (iOS) erişiminiz olsun
 
@@ -77,6 +78,6 @@ Sürüm numaralarını tüm dosyalarda güncellemeyi unutmak derleme hatalarına
 
 ## İlgili Makaleler
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- Yerel kurulum ve geliştirme kılavuzu
-- **[API Dağıtımı](./apis)** -- Arka uç API'lerinin dağıtımı
-- **[Web Uygulaması Dağıtımı](./web-apps)** -- Ön yüz web uygulamalarının dağıtımı
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- Yerel kurulum ve geliştirme kılavuzu
+- **[API Dağıtımı](./apis.md)** -- Arka uç API'lerinin dağıtımı
+- **[Web Uygulaması Dağıtımı](./web-apps.md)** -- Ön yüz web uygulamalarının dağıtımı

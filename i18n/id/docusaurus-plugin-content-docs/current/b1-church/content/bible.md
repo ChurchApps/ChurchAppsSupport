@@ -1,5 +1,7 @@
 ---
-title: "Alkitab"
+title: "Membaca Alkitab di B1.church"
+sidebar_label: "Alkitab"
+description: "Baca Kitab Suci di pembaca Alkitab B1.church, dengan kontrol kitab, pasal, dan terjemahan, serta halaman Alkitab untuk bacaan harian."
 ---
 
 # Alkitab

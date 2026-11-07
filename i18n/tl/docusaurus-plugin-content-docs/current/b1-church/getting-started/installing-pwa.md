@@ -1,5 +1,6 @@
 ---
 title: "Pag-install bilang App (PWA)"
+description: "I-install ang B1.church bilang app sa iPhone o Android mula sa member portal, at idagdag ang icon nito sa home screen gamit ang Safari o Chrome."
 ---
 
 # Pag-install bilang App (PWA)

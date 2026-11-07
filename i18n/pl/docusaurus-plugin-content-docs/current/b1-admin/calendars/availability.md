@@ -1,5 +1,6 @@
 ---
 title: "Kalendarz dostępności"
+description: "Skonfiguruj sale i sprzęt w B1 Admin, rezerwuj je w kalendarzu, dodaj bufory czasowe i obsłuż rezerwacje cykliczne oraz wymagające zatwierdzenia."
 ---
 
 # Kalendarz dostępności
@@ -13,7 +14,7 @@ Kalendarz dostępności daje ogólny widok wszystkich rezerwacji sal i zasobów 
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Skonfiguruj co najmniej jedną [salę lub zasób](rooms-resources) w sekcji Pokoje i zasoby
+- Skonfiguruj co najmniej jedną [salę lub zasób](./rooms-resources.md) w sekcji Pokoje i zasoby
 - Potrzebujesz uprawnień do edycji w sekcji Kalendarze w B1 Admin
 
 </div>
@@ -58,7 +59,7 @@ Użyj listy rozwijanej **Sala / Zasób** w lewym górnym rogu, aby zawęzić kal
 6. Kliknij **Zapisz**, aby wysłać rezerwację.
 
 :::info
-Jeśli dla sali lub zasobu skonfigurowano **Grupę zatwierdzającą**, rezerwacja pojawi się jako **Oczekująca**, dopóki lider tej grupy jej nie zatwierdzi. Proces zatwierdzania opisano w artykule [Zatwierdzanie w kalendarzu](approvals).
+Jeśli dla sali lub zasobu skonfigurowano **Grupę zatwierdzającą**, rezerwacja pojawi się jako **Oczekująca**, dopóki lider tej grupy jej nie zatwierdzi. Proces zatwierdzania opisano w artykule [Zatwierdzanie w kalendarzu](./approvals.md).
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Kalendarz podświetli wszelkie konflikty przed zapisaniem. Jeśli zobaczysz ostr
 
 ## Powiązane artykuły
 
-- [Pokoje, zasoby i planowanie](rooms-resources) — konfigurowanie miejsc i sprzętu do rezerwacji
-- [Zatwierdzanie w kalendarzu](approvals) — zatwierdzanie lub odrzucanie próśb o rezerwację
-- [Tworzenie kalendarzy](creating-calendars) — zarządzanie kalendarzami wydarzeń
+- [Pokoje, zasoby i planowanie](./rooms-resources.md) — konfigurowanie miejsc i sprzętu do rezerwacji
+- [Zatwierdzanie w kalendarzu](./approvals.md) — zatwierdzanie lub odrzucanie próśb o rezerwację
+- [Tworzenie kalendarzy](./creating-calendars.md) — zarządzanie kalendarzami wydarzeń

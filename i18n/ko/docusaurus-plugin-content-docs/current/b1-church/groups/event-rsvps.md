@@ -1,5 +1,6 @@
 ---
 title: "이벤트 RSVP"
+description: "B1.church 회원 포털에서 그룹 행사에 참석, 미정, 불참으로 응답하고 다른 사람들의 참석 인원을 확인하세요. 리더도 응답을 검토할 수 있습니다."
 ---
 
 # 이벤트 RSVP
@@ -30,14 +31,14 @@ RSVP는 해당 특정 회차에만 적용됩니다. 매주 열리는 모임이�
 ## 그룹 리더를 위한 안내
 
 - **응답 보기** -- 리더에게는 그룹 달력(**All events**)의 각 이벤트에 **View responses** 링크가 보입니다. 이를 열면 **Responses** 시트가 열리며, 응답별(Going, Maybe, Can't go)로 모든 사람이 나열됩니다. 아직 아무도 응답하지 않았다면 "No responses yet."(아직 응답 없음)이 표시됩니다.
-- **RSVP 켜기 또는 끄기** -- 이벤트를 만들거나 편집할 때 **Allow RSVPs** 스위치를 사용합니다. RSVP가 꺼진 이벤트에는 응답 버튼이 표시되지 않습니다. B1 Admin에서 이벤트를 일괄로 만드는 직원도 같은 옵션을 가지며, [그룹 달력](../../b1-admin/groups/group-calendar#event-rsvps)을 참조하세요.
+- **RSVP 켜기 또는 끄기** -- 이벤트를 만들거나 편집할 때 **Allow RSVPs** 스위치를 사용합니다. RSVP가 꺼진 이벤트에는 응답 버튼이 표시되지 않습니다. B1 Admin에서 이벤트를 일괄로 만드는 직원도 같은 옵션을 가지며, [그룹 달력](../../b1-admin/groups/group-calendar.md#event-rsvps)을 참조하세요.
 
 :::tip
-RSVP는 간단한 인원 파악 도구입니다. 이벤트에 신청 세부 정보, 정원 관리 또는 결제가 필요하다면 대신 [이벤트 등록](../events/registering)을 사용하세요.
+RSVP는 간단한 인원 파악 도구입니다. 이벤트에 신청 세부 정보, 정원 관리 또는 결제가 필요하다면 대신 [이벤트 등록](../events/registering.md)을 사용하세요.
 :::
 
 ## 관련 문서
 
 - [그룹 상세 정보](./group-details.md) -- 그룹 상세 페이지의 모든 내용
-- [그룹 달력 (B1 Admin)](../../b1-admin/groups/group-calendar) -- 직원과 리더가 그룹 이벤트와 RSVP를 관리하는 방법
-- [이벤트 등록하기](../events/registering) -- 정원과 결제를 포함한 전체 이벤트 등록
+- [그룹 달력 (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- 직원과 리더가 그룹 이벤트와 RSVP를 관리하는 방법
+- [이벤트 등록하기](../events/registering.md) -- 정원과 결제를 포함한 전체 이벤트 등록

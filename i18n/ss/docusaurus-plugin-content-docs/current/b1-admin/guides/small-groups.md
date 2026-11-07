@@ -1,5 +1,6 @@
 ---
 title: "Umhlahlandlela: Sebenta Nemacembu Lamancane"
+description: "Setfula emaqembu emancane, tifundvo te-Bhayibheli nemaqembu emsebenti ku-B1 Admin, bese ushicilela ikhalendari yebandla nemaqembu ewebhusayitini ye-B1."
 ---
 
 # Sebenta Nemacembu Lamancane
@@ -78,7 +79,7 @@ Emalunga angatfola, ajoyine, futsi abambe icandzi emacembeni kusuka kulucingo lw
 
 1. Emalunga abhonga futsi ajoyine emacembu ku-[B1.church](../../b1-church/groups/browsing-groups.md)
 2. Emalunga elicembu angabuka imininingwane, emakhalenda, futsi ashicilele [etincocweni](../../b1-church/groups/conversations.md)
-3. Tonkhe tici temacembu tikhona nako [ku-app ye-B1 Mobile](../../b1-mobile/groups/)
+3. Tonkhe tici temacembu tikhona nako [ku-app ye-B1 Mobile](../../b1-mobile/groups/index.md)
 
 :::info
 Emalunga abona emacembu awo, emicimbi letako, netincoco temacembu kokubili ku-web nakwiselula — konkhe kuhlala kuhambisana.
@@ -97,4 +98,4 @@ Emacembu akho lamancane ahleliwe futsi axhumene. Emalunga angatfola emacembu, ab
 - [Likhalenda Lelihlelwe](../calendars/curated-calendar.md) — yakha likhalenda lelihlangene lelibandla
 - [Kubhonga Emacembu (Web)](../../b1-church/groups/browsing-groups.md) — indlela emalunga latfola ngayo emacembu
 - [Tincoco Temacembu (Web)](../../b1-church/groups/conversations.md) — tinkulumo temacembu
-- [Emacembu (Mobile)](../../b1-mobile/groups/) — emacembu ku-app yeselula
+- [Emacembu (Mobile)](../../b1-mobile/groups/index.md) — emacembu ku-app yeselula

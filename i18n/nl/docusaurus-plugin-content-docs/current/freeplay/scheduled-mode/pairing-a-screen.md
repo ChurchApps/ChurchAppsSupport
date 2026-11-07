@@ -1,5 +1,6 @@
 ---
 title: "Een scherm koppelen"
+description: "Koppel een FreePlay-tv aan een schermgroep-agenda in FreePlay Admin met de vierletterige code op de tv, zodat hij geplande content zelfstandig afspeelt."
 ---
 
 # Een scherm koppelen
@@ -13,9 +14,9 @@ Om een tv aan een agenda te koppelen, koppel je hem aan **FreePlay Admin**. De t
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- Installeer FreePlay op de tv en start de app. Zie [Aan de slag](../getting-started/)
+- Installeer FreePlay op de tv en start de app. Zie [Aan de slag](../getting-started/index.md)
 - Zorg dat je een ChurchApps-account voor je kerk hebt, zodat je kunt inloggen op FreePlay Admin
-- Optioneel: [maak eerst een afspeellijst](./building-playlists) en [plan deze in](./scheduling-the-calendar), zodat de tv meteen iets kan afspelen
+- Optioneel: [maak eerst een afspeellijst](./building-playlists.md) en [plan deze in](./scheduling-the-calendar.md), zodat de tv meteen iets kan afspelen
 
 </div>
 
@@ -38,7 +39,7 @@ De code is 15 minuten geldig. Een aftelklok onder de code laat zien hoeveel tijd
 5. Laat onder **Modus** de optie **Gepland** geselecteerd. De tv speelt dan zelfstandig af volgens de agenda van de groep.
 6. Klik op **Koppelen**.
 
-De tv toont **Verbonden!** en daarna **Je agenda wordt geladen...**. Hij downloadt wat is ingepland en begint met afspelen. Zie [Gepland afspelen op de tv](./scheduled-playback).
+De tv toont **Verbonden!** en daarna **Je agenda wordt geladen...**. Hij downloadt wat is ingepland en begint met afspelen. Zie [Gepland afspelen op de tv](./scheduled-playback.md).
 
 :::info
 Als FreePlay Admin meldt dat **Die code past bij geen enkele tv**, controleer dan de code op het scherm. Als de code is verlopen, gebruik dan de nieuwe code die de tv nu toont.
@@ -51,11 +52,11 @@ De instelling **Modus** heeft twee opties:
 - **Gepland** - Speelt zelfstandig af volgens de agenda van de groep. Niemand hoeft op Start te drukken.
 - **Handmatig** - Iemand kiest inhoud met de afstandsbediening. Een handmatig scherm verschijnt wel in je lijst **Schermen**, maar het volgt geen agenda, dus het veld **Groep** is uitgeschakeld.
 
-Je kunt de modus van een scherm later wijzigen via **Bewerken** op de [pagina Schermen](./managing-screens).
+Je kunt de modus van een scherm later wijzigen via **Bewerken** op de [pagina Schermen](./managing-screens.md).
 
 ## In plaats daarvan koppelen aan een dienstplan
 
-De code op het scherm **Dit scherm koppelen** werkt ook in B1 Admin. Als je die code daar invoert en onder **Plannen tonen voor** een plantype kiest, volgt de tv dat plantype in de [Planmodus](../plan-mode/) in plaats van een agenda. Zie [Je apparaat koppelen](../plan-mode/device-pairing).
+De code op het scherm **Dit scherm koppelen** werkt ook in B1 Admin. Als je die code daar invoert en onder **Plannen tonen voor** een plantype kiest, volgt de tv dat plantype in de [Planmodus](../plan-mode/index.md) in plaats van een agenda. Zie [Je apparaat koppelen](../plan-mode/device-pairing.md).
 
 ## Koppeling wijzigen of opheffen op de tv
 
@@ -79,6 +80,6 @@ De tv toont weer een koppelcode. Koppel hem opnieuw wanneer je dat wilt.
 
 ## Gerelateerde artikelen
 
-- **[Schermen en groepen beheren](./managing-screens)** - Hernoem een scherm, verplaats het naar een andere groep of controleer de downloads
-- **[De agenda plannen](./scheduling-the-calendar)** - Bepaal wat de schermen van de groep afspelen
-- **[Een koppelmodus kiezen](../getting-started/pairing-modes)** - Vergelijk de geplande modus met de Planmodus en het zelf bladeren door contentaanbieders
+- **[Schermen en groepen beheren](./managing-screens.md)** - Hernoem een scherm, verplaats het naar een andere groep of controleer de downloads
+- **[De agenda plannen](./scheduling-the-calendar.md)** - Bepaal wat de schermen van de groep afspelen
+- **[Een koppelmodus kiezen](../getting-started/pairing-modes.md)** - Vergelijk de geplande modus met de Planmodus en het zelf bladeren door contentaanbieders

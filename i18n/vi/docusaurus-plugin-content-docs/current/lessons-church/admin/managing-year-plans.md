@@ -1,5 +1,6 @@
 ---
 title: "Quản lý kế hoạch năm"
+description: "Tạo kế hoạch năm gồm các bài học hằng tuần trong Lessons.church, neo các tuần vào Phục sinh hoặc Giáng sinh, và xuất bản để nhà thờ áp dụng trong B1 Admin."
 ---
 
 # Quản lý kế hoạch năm

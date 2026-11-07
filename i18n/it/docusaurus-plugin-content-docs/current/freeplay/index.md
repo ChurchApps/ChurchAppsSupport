@@ -1,5 +1,6 @@
 ---
 title: "Panoramica di FreePlay"
+description: "Panoramica di FreePlay, l'app TV per la riproduzione offline delle lezioni su Android TV, Fire TV e Apple TV, con link alle guide di configurazione."
 ---
 
 # Panoramica di FreePlay
@@ -22,10 +23,10 @@ La nostra **<a href="/guides/freeplay-b1admin" target="_blank">guida completa al
 
 - **Riproduzione offline** - Scarica in anticipo video e diapositive immagine, così non dipendi mai dal Wi-Fi durante le funzioni
 - **Gestione dei download** - Visualizza e gestisci tutti i contenuti scaricati da **Impostazioni** > **Download**
-- **Modalità programmata** - Crea playlist e inseriscile in un calendario su [admin.freeplay.church](https://admin.freeplay.church): i TV associati le riprodurranno agli orari giusti senza che nessuno prema Avvia -- vedi [Modalità programmata](./scheduled-mode/)
+- **Modalità programmata** - Crea playlist e inseriscile in un calendario su [admin.freeplay.church](https://admin.freeplay.church): i TV associati le riprodurranno agli orari giusti senza che nessuno prema Avvia -- vedi [Modalità programmata](./scheduled-mode/index.md)
 - **Associazione al piano** - Collega il tuo dispositivo a un piano del servizio della chiesa per contenuti coordinati tra le stanze
 - **Fornitori di contenuti** - Sfoglia e scarica contenuti da fonti esterne come [Lessons.church](/docs/lessons-church/), Bible Project, Dropbox e OneDrive
-- **Annunci** - Riproduci in loop una cartella di diapositive da un fornitore collegato -- vedi [Annunci](./content-providers/announcements)
+- **Annunci** - Riproduci in loop una cartella di diapositive da un fornitore collegato -- vedi [Annunci](./content-providers/announcements.md)
 - **Compatibile con il telecomando TV** - Naviga in tutta l'app con un telecomando TV standard, usando i tasti direzionali e seleziona
 - **Barra laterale richiudibile** - Una barra laterale sottile mantiene accessibile la navigazione senza ingombrare lo schermo
 
@@ -35,10 +36,10 @@ Quando avvii FreePlay, si collega ai tuoi fornitori di contenuti e verifica la p
 
 ## Sezioni
 
-- **[Per iniziare](./getting-started/)** - Installa l'app, avviala e scegli come collegarti
-- **[Modalità programmata](./scheduled-mode/)** - Associa i TV a un calendario e gestiscili in FreePlay Admin
-- **[Modalità piano](./plan-mode/)** - Associa a un piano del servizio della chiesa
-- **[Fornitori di contenuti](./content-providers/)** - Collegati a fonti di contenuti esterne
+- **[Per iniziare](./getting-started/index.md)** - Installa l'app, avviala e scegli come collegarti
+- **[Modalità programmata](./scheduled-mode/index.md)** - Associa i TV a un calendario e gestiscili in FreePlay Admin
+- **[Modalità piano](./plan-mode/index.md)** - Associa a un piano del servizio della chiesa
+- **[Fornitori di contenuti](./content-providers/index.md)** - Collegati a fonti di contenuti esterne
 
 :::info
 FreePlay fa parte della suite di strumenti gratuiti e open source di [ChurchApps](https://churchapps.org) per le chiese.

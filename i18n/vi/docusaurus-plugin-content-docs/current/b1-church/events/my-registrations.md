@@ -1,5 +1,6 @@
 ---
 title: "Đăng ký của tôi"
+description: "Kiểm tra trạng thái đăng ký, thanh toán số dư còn nợ, chỉnh sửa người tham dự hoặc tiện ích thêm, hoặc hủy đăng ký sự kiện trong cổng thành viên B1 Church."
 ---
 
 # Đăng ký của tôi
@@ -14,7 +15,7 @@ Trang **Đăng ký** trong cổng thành viên là nơi bạn xem tất cả cá
 <h4>Trước khi bắt đầu</h4>
 
 - Bạn phải [đăng nhập](../getting-started/logging-in.md) — đăng ký của khách không xuất hiện tại đây
-- Bạn cần có ít nhất một đăng ký sự kiện. Xem [Đăng ký sự kiện](./registering).
+- Bạn cần có ít nhất một đăng ký sự kiện. Xem [Đăng ký sự kiện](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Chỗ của bạn được giải phóng ngay lập tức. Nếu sự kiện có
 
 ## Bài viết liên quan
 
-- [Đăng ký sự kiện](./registering) -- Quy trình đăng ký, bao gồm thanh toán và danh sách chờ
+- [Đăng ký sự kiện](./registering.md) -- Quy trình đăng ký, bao gồm thanh toán và danh sách chờ
 - [Tổng quan về sự kiện](./index.md) -- Xem các sự kiện sắp tới

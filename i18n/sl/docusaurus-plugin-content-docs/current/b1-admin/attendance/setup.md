@@ -1,5 +1,6 @@
 ---
 title: "Nastavitev obiskanosti"
+description: "Nastavite kampuse, bogoslužja, čase in dodelitve skupin v B1 Admin, da sledenje prisotnosti in urniki prijave delujejo v celotni cerkvi."
 ---
 
 # Nastavitev obiskanosti

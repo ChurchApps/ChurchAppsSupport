@@ -1,5 +1,6 @@
 ---
 title: "Anmeldungs-Etikettendesigner"
+description: "Passen Sie in B1 Admin die Namensschild- und Abholzettel-Vorlagen an, die beim Check-in gedruckt werden, inklusive Feldern, Positionierung und Bedingungen für Geburtstage oder Notizen."
 ---
 
 # Anmeldungs-Etikettendesigner
@@ -13,8 +14,8 @@ Der Etikettendesigner ermöglicht es Ihnen, die Namensschild- und Abholquittungs
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Richten Sie [Anwesenheit](setup) ein und konfigurieren Sie mindestens eine Gottesdienstzeit mit aktivierter Anmeldung
-- Richten Sie [Anmeldung](check-in) ein, damit Etiketten gedruckt werden
+- Richten Sie [Anwesenheit](./setup.md) ein und konfigurieren Sie mindestens eine Gottesdienstzeit mit aktivierter Anmeldung
+- Richten Sie [Anmeldung](./check-in.md) ein, damit Etiketten gedruckt werden
 - Sie benötigen Verwaltungszugriff auf den Anwesenheitsbereich
 
 </div>
@@ -85,6 +86,6 @@ Machen Sie einen Testdruck nach dem Bearbeiten einer Vorlage, um zu bestätigen,
 
 ## Verwandte Artikel
 
-- [Anmeldungseinrichtung](setup) – konfigurieren Sie Services und Gruppen für die Anmeldung
-- [Anmeldung abschließen](check-in) – der Anmeldungsablauf für Familien
-- [B1 Checkin Erste Schritte](../../b1-checkin/getting-started/) – die Checkin-Kiosk-App
+- [Anmeldungseinrichtung](./setup.md) – konfigurieren Sie Services und Gruppen für die Anmeldung
+- [Anmeldung abschließen](./check-in.md) – der Anmeldungsablauf für Familien
+- [B1 Checkin Erste Schritte](../../b1-checkin/getting-started/index.md) – die Checkin-Kiosk-App

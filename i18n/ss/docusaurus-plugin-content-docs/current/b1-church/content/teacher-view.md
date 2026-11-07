@@ -1,5 +1,6 @@
 ---
 title: "Umbono weThishela wetiFundvo"
+description: "Vula lifundvo ku-Teacher View esikrinini lesigcweleko kusuka ehlelweni ku-B1.church, bese uyahamba phakatsi kwetigaba, udlale tinhlobo tetimidiya, uphindze utsatse tinsita tekilasi."
 ---
 
 # Umbono weThishela wetiFundvo

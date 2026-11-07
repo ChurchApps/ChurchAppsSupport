@@ -1,5 +1,7 @@
 ---
-title: "Lahjoitukset"
+title: "Lahjoittaminen B1 Mobile -sovelluksessa"
+sidebar_label: "Lahjoitukset"
+description: "Tee lahjoitus B1 Mobile -sovelluksessa, tarkista vuoden alusta kertynyt lahjoituksesi ja hallitse tallennettuja maksutapoja. Kattaa Yleiskatsaus-, Lahjoita-, Hallinta- ja Historia-välilehdet."
 ---
 
 # Lahjoitukset
@@ -24,7 +26,7 @@ Lahjoitusosio on jaettu neljään välilehteen:
 Kaikki B1 Mobilen kautta tehdyt lahjoitukset käsitellään turvallisesti **Stripe**-palvelussa. Maksutietosi käsittelee Stripen turvallinen infrastruktuuri, eikä niitä koskaan tallenneta ChurchApps-palvelimille. Voit lahjoittaa luottavaisin mielin, sillä taloudelliset tietosi ovat suojattuina.
 
 :::info
-Kirkkosi ylläpitäjä määrittää käytettävissä olevat rahastot ja maksujen käsittelyn [B1 Adminin](../../b1-admin/) kautta. Jos sovelluksessa ei näy lahjoitusvaihtoehtoa, kirkossasi ei ehkä ole vielä otettu tätä ominaisuutta käyttöön.
+Kirkkosi ylläpitäjä määrittää käytettävissä olevat rahastot ja maksujen käsittelyn [B1 Adminin](../../b1-admin/index.md) kautta. Jos sovelluksessa ei näy lahjoitusvaihtoehtoa, kirkossasi ei ehkä ole vielä otettu tätä ominaisuutta käyttöön.
 :::
 
 ## Mitä voit tehdä
@@ -38,6 +40,6 @@ Tässä on, mitä voit tehdä lahjoitusosiossa:
 
 ## Seuraavat vaiheet
 
-- [Lahjoituksen tekeminen](./making-donations) -- Opi tekemään lahjoitus sovelluksesta
-- [Maksutapojen hallinta](./managing-payments) -- Lisää tai poista tallennettuja maksutapoja
-- [Lahjoitushistoria](./donation-history) -- Tarkastele lahjoitusyhteenvetoasi ja aiempia lahjoituksiasi
+- [Lahjoituksen tekeminen](./making-donations.md) -- Opi tekemään lahjoitus sovelluksesta
+- [Maksutapojen hallinta](./managing-payments.md) -- Lisää tai poista tallennettuja maksutapoja
+- [Lahjoitushistoria](./donation-history.md) -- Tarkastele lahjoitusyhteenvetoasi ja aiempia lahjoituksiasi

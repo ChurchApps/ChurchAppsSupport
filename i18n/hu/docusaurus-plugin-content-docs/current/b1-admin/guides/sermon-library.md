@@ -1,5 +1,6 @@
 ---
 title: "Útmutató: Igehirdetési könyvtár és élő közvetítés összeállítása"
+description: "YouTube- vagy Vimeo-prédikációk importálása, lejátszási listákba rendezése, és ismétlődő élő közvetítés chattel a B1 Admin-ban."
 ---
 
 # Igehirdetési könyvtár és élő közvetítés összeállítása

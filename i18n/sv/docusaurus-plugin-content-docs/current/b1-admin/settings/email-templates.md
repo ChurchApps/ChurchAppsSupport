@@ -1,5 +1,6 @@
 ---
 title: "E-postmallar"
+description: "Ställ in e-post- och sms-mallar i B1 Admin, med sammanslagningsfält, sms-alternativ och förhandsgranskning för masskommunikation."
 ---
 
 # E-postmallar

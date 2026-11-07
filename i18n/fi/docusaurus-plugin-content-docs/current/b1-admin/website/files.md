@@ -1,5 +1,6 @@
 ---
 title: "Tiedostot"
+description: "Lataa, selaa ja hallitse kuvia ja asiakirjoja seurakuntasi verkkosivulle B1 Adminissa, myös ulkoisen tallennustilan linkitys lisätilaa varten."
 ---
 
 # Tiedostot
@@ -13,7 +14,7 @@ Tiedostot-sivu on keskeinen säilytyspaikka kaikille kirkkosi verkkosivustolla k
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Suorita [Alustava asennus](initial-setup) verkkosivustollesi
+- Suorita [Alustava asennus](./initial-setup.md) verkkosivustollesi
 - Optimoi kuvat ennen lataamista, jotta sivut latautuvat nopeammin
 - Valmistele tiedostot yleisissä verkkomuodoissa (PNG, JPG, PDF jne.)
 
@@ -42,7 +43,7 @@ Tiedostotaulukko listaa jokaisen ladatun tiedoston **Name**- ja **Size**-tietoin
 3. Tässä ladatut tiedostot ovat käytettävissä kaikilla verkkosivustosi sivuilla ja sisältölohkoissa.
 
 :::info
-Kun rakennat sivuja [Sivujen hallinta](managing-pages) -osiossa, voit viitata mihin tahansa tänne ladattuun tiedostoon sen URL-osoitteen avulla. Tämä pitää kaikki mediasi järjestyksessä yhdessä keskitetyssä paikassa.
+Kun rakennat sivuja [Sivujen hallinta](./managing-pages.md) -osiossa, voit viitata mihin tahansa tänne ladattuun tiedostoon sen URL-osoitteen avulla. Tämä pitää kaikki mediasi järjestyksessä yhdessä keskitetyssä paikassa.
 :::
 
 ## Tiedostojen poistaminen
@@ -57,5 +58,5 @@ Poistettuja tiedostoja ei voi palauttaa. Tarkista kaksi kertaa, ettei tiedostoa 
 
 ## Seuraavat vaiheet
 
-- [Sivujen hallinta](managing-pages) -- Lisää ladatut tiedostot verkkosivujen sivuille
-- [Ulkoasu](appearance) -- Mukauta sivustosi visuaalista teemaa
+- [Sivujen hallinta](./managing-pages.md) -- Lisää ladatut tiedostot verkkosivujen sivuille
+- [Ulkoasu](./appearance.md) -- Mukauta sivustosi visuaalista teemaa

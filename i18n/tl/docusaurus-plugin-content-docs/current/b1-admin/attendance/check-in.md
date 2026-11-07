@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Pag-set up ng Self Check-In gamit ang B1 Checkin at B1 Admin"
+sidebar_label: "Check-In"
+description: "I-set up ang self check-in sa mga serbisyo gamit ang B1 Checkin app sa B1 Admin: mga device, kiosk, iskedyul, branding, at QR sign-up ng bisita."
 ---
 
 # Check-In
@@ -99,7 +101,7 @@ Gamitin ang idle screen para magpakita ng mga anunsyo, paparating na event, o we
 
 Maaaring magpakita ang check-in kiosk ng QR code na ini-scan ng mga bisita para sila mismo at ang kanilang pamilya ay makapagparehistro sa sarili nilang telepono. Pinapabilis nito ang proseso ng check-in para sa mga unang beses na bisita.
 
-Kapag nag-scan ng QR code ang isang bisita, dinadala siya sa [guest registration page](../../b1-church/checkin/guest-registration) kung saan ilalagay niya ang mga pangalan ng kanyang pamilya at anumang iba pang detalyeng hihingin mo. Maaari na siyang hanapin ng boluntaryo sa kiosk at i-check in.
+Kapag nag-scan ng QR code ang isang bisita, dinadala siya sa [guest registration page](../../b1-church/checkin/guest-registration.md) kung saan ilalagay niya ang mga pangalan ng kanyang pamilya at anumang iba pang detalyeng hihingin mo. Maaari na siyang hanapin ng boluntaryo sa kiosk at i-check in.
 
 ### Pag-enable ng QR Guest Registration
 

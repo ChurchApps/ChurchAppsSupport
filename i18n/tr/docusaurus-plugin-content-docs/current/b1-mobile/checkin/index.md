@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "B1 Mobile ile Check-In"
+sidebar_label: "Check-In"
+description: "B1 Mobile uygulamasından telefonunuzla kendinizi ve hanenizi ibadetlere check-in yapın; gelmeden önce hizmetleri ve grupları seçin."
 ---
 
 # Check-In
@@ -16,7 +18,7 @@ Check-In süreci, bir hizmet seçmenizi, kimlerin katılacağını belirlemenizi
 
 ## Başlarken
 
-Check-In bölümüne erişmek için B1 Mobile uygulamasında **Check-In** bölümünü açın. Bu özelliği kullanmak için oturum açmış olmanız gerekir. Oturum açmadıysanız, önce [giriş yapmanız](../getting-started/logging-in) istenecektir.
+Check-In bölümüne erişmek için B1 Mobile uygulamasında **Check-In** bölümünü açın. Bu özelliği kullanmak için oturum açmış olmanız gerekir. Oturum açmadıysanız, önce [giriş yapmanız](../getting-started/logging-in.md) istenecektir.
 
 :::info
 Check-In özelliği, kilisenizin yönetim ayarlarında hizmetleri ve yoklama gruplarını oluşturmuş olmasını gerektirir. Check-In ekranını açtığınızda hiçbir hizmet görünmüyorsa, kiliseniz bu özelliği henüz yapılandırmamış olabilir. Yardım için kilise yöneticinize başvurun.
@@ -30,4 +32,4 @@ Check-In özelliği, kilisenizin yönetim ayarlarında hizmetleri ve yoklama gru
 
 ## Sonraki Adımlar
 
-- [Kendi Kendine Check-In](./self-checkin) -- Telefonunuzdan check-in yapmak için adım adım kılavuz
+- [Kendi Kendine Check-In](./self-checkin.md) -- Telefonunuzdan check-in yapmak için adım adım kılavuz

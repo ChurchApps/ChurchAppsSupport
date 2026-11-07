@@ -1,5 +1,6 @@
 ---
 title: "Verificarea ieșirii și siguranța copiilor"
+description: "Fă check-out copiilor la o stație B1 Checkin cu personal: coduri de securitate, ridicare verificată, apelare părinți și anunțuri de urgență."
 ---
 
 # Verificarea ieșirii și siguranța copiilor
@@ -14,7 +15,7 @@ Ieșirea încheie procesul de înregistrare a copiilor: un părinte prezintă co
 <h4>Înainte de a începe</h4>
 
 - Ieșirea este disponibilă pe stațiile setate în modul **cu personal** din setările de administrare ale chioșcului
-- Copiii trebuie să fi fost [înregistrați](./completing-checkin) cu o etichetă de ridicare tipărită, care conține codul de securitate
+- Copiii trebuie să fi fost [înregistrați](./completing-checkin.md) cu o etichetă de ridicare tipărită, care conține codul de securitate
 - Pentru mesajele către părinți și transmisiile de urgență, biserica dumneavoastră trebuie să aibă conectat un furnizor de mesagerie text în B1 Admin
 
 </div>
@@ -39,7 +40,7 @@ Dacă un nume scris corespunde unei persoane marcate **Not Authorized** pentru a
 Odată confirmată persoana care ridică, atingeți pentru a înregistra ieșirea. Numele persoanei care ridică este salvat împreună cu fișa de prezență.
 
 :::info
-Persoanele de încredere și cele neautorizate pentru ridicare sunt gestionate de personalul bisericii, pe pagina fiecărei persoane din B1 Admin — consultați [Siguranța la înregistrare](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Persoanele de încredere și cele neautorizate pentru ridicare sunt gestionate de personalul bisericii, pe pagina fiecărei persoane din B1 Admin — consultați [Siguranța la înregistrare](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Trimiterea unui mesaj unui părinte
@@ -65,6 +66,6 @@ Transmisia ajunge la fiecare gospodărie cu copii înregistrați pentru serviciu
 
 ## Articole conexe
 
-- [Finalizarea înregistrării](./completing-checkin) — de unde provin codurile de securitate și etichetele de ridicare
-- [Siguranța la înregistrare](../../b1-admin/attendance/checkin-safety) — configurarea capacităților, raporturilor, persoanelor care ridică și a cerinței de furnizor de mesagerie text
-- [Configurarea imprimantei](../getting-started/printer-setup) — configurarea imprimantei de etichete
+- [Finalizarea înregistrării](./completing-checkin.md) — de unde provin codurile de securitate și etichetele de ridicare
+- [Siguranța la înregistrare](../../b1-admin/attendance/checkin-safety.md) — configurarea capacităților, raporturilor, persoanelor care ridică și a cerinței de furnizor de mesagerie text
+- [Configurarea imprimantei](../getting-started/printer-setup.md) — configurarea imprimantei de etichete

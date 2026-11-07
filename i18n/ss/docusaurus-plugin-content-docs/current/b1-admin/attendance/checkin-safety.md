@@ -1,5 +1,6 @@
 ---
 title: "Kuphepha Kwekungena"
+description: "Lungisa tilawulo tekuvikela tingane ku-B1 Admin: bukhulu bemakamelo, inani levasebenti, tincwadzi letitsetfwako, nemilayezo yekucela umzali ekufikeni."
 ---
 
 # Kuphepha Kwekungena
@@ -15,7 +16,7 @@ I-B1 ihlanganisa luhlu lwekulawula kuphepha kwebantfwana ekungeneni: emilinganis
 
 - Hlela [sakhiwo sakho sekubakhona](setup.md) ne-[emakiyoski ekungena](check-in.md)
 - Emakamelo [emaqembu](../groups/creating-groups.md) lahlanganiswe netikhatsi tenkhonzo — emasethingi ekuphepha langentasi ahlala eliqenjini
-- Kubita umtali nekusakata sitiso sesiphuthumako kudzinga umniki wetincomo we-SMS lohlanganisiwe ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), nobe Mutual Ministry)
+- Kubita umtali nekusakata sitiso sesiphuthumako kudzinga umniki wetincomo we-SMS lohlanganisiwe ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md), nobe Mutual Ministry)
 
 </div>
 
@@ -90,11 +91,11 @@ Tonkhe letimphawu tembili titfumela imilayeto ye-tekisi ngemniki wetincomo we-SM
 
 Bantfu labangavumelanga kutfola imilayeto, nobe labangenanombolo yeselula ebhalisiwe, bayeqwa ngekutigcinela — i-kiosk ibika kutsi imilayeto lemingaki lestfunyelwe nemingaki leyeqiwe.
 
-Bona luhambo lolusuka nge-kiosk ku-[Kuphuma & Kuphepha Kwemntfwana](../../b1-checkin/check-in/checking-out).
+Bona luhambo lolusuka nge-kiosk ku-[Kuphuma & Kuphepha Kwemntfwana](../../b1-checkin/check-in/checking-out.md).
 
 ## Timiba Letihambelanako
 
 - [Kungena](check-in.md) — kuhlelwa kwekiosk nema-hardware
-- [Kuphuma & Kuphepha Kwemntfwana](../../b1-checkin/check-in/checking-out) — kuphuma kwe-kiosk, kucinisekiswa kwekulanda, nemiyalo yekubita
+- [Kuphuma & Kuphepha Kwemntfwana](../../b1-checkin/check-in/checking-out.md) — kuphuma kwe-kiosk, kucinisekiswa kwekulanda, nemiyalo yekubita
 - [Kudala Emaqembu](../groups/creating-groups.md) — lapho emasethingi elikamelo akhona khona
 - [Kuhlelwa Kwekubakhona](setup.md) — tinkhonzo, tikhatsi tenkhonzo, nekwabelwa kwemakamelo

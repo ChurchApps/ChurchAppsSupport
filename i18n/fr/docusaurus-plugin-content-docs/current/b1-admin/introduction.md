@@ -1,5 +1,6 @@
 ---
 title: Introduction à B1.church
+description: "Guide de connexion à B1 Admin, de navigation dans le tableau de bord et le menu Accès rapide, puis de configuration des informations de l'église avant d'explorer les autres outils."
 ---
 
 # Bienvenue dans B1.church Admin !
@@ -30,7 +31,7 @@ Pour toute aide complémentaire, écrivez à [support@churchapps.org](mailto:sup
 10. Vous pouvez maintenant accéder à B1.church par le **portail des membres** ou le **portail d'administration**. Le portail des membres vous permet de voir l'apparence de B1.church pour vos membres, de consulter vos groupes et de gérer vos dons personnels.
 
 :::tip
-Commencez par la page [Paramètres](./settings/) pour configurer le nom de votre église, son identité visuelle et les autorisations de votre équipe. Cela garantit que tout le reste s'affichera correctement.
+Commencez par la page [Paramètres](./settings/index.md) pour configurer le nom de votre église, son identité visuelle et les autorisations de votre équipe. Cela garantit que tout le reste s'affichera correctement.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -77,9 +78,9 @@ La recherche est souvent le moyen le plus rapide d'atteindre une page : tapez un
 
 Après cette introduction, découvrez ces fonctionnalités clés :
 
-- [Ajouter des personnes](./people/adding-people) : apprenez à ajouter des membres à votre base de données
-- [Groupes](./groups/) : créer et gérer les groupes de votre église
-- [Plans de service](./serving/plans) : organiser votre ministère de service
-- [Présence](./attendance/) : suivre la présence et le pointage
-- [Site web](./website/) : créer et personnaliser le site web de votre église
-- [Paramètres](./settings/) : configurer les informations de votre église et les autorisations
+- [Ajouter des personnes](./people/adding-people.md) : apprenez à ajouter des membres à votre base de données
+- [Groupes](./groups/index.md) : créer et gérer les groupes de votre église
+- [Plans de service](./serving/plans.md) : organiser votre ministère de service
+- [Présence](./attendance/index.md) : suivre la présence et le pointage
+- [Site web](./website/index.md) : créer et personnaliser le site web de votre église
+- [Paramètres](./settings/index.md) : configurer les informations de votre église et les autorisations

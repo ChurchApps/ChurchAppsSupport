@@ -1,5 +1,6 @@
 ---
 title: "デプロイ"
+description: "各 ChurchApps プロジェクトのデプロイ先を確認できます。AWS Lambda の API、S3 のウェブアプリ、Expo のモバイルビルド、Railway または Docker で自己ホストする B1 Admin を扱います。"
 ---
 
 # デプロイ
@@ -14,12 +15,12 @@ ChurchApps ではプロジェクトの種類に応じて異なるデプロイ方
 
 | プロジェクトの種類 | デプロイ先 | ツール |
 |-------------|-------------------|---------|
-| [API](./apis) | AWS Lambda | Serverless Framework v3（Node.js 24.x ランタイム） |
-| [Web アプリ](./web-apps) | S3 + CloudFront | 静的ビルド、S3 への同期、CloudFront のキャッシュ無効化 |
-| [モバイルアプリ](./mobile) | アプリストア | Expo EAS Build + OTA アップデート |
-| [セルフホスティング（Railway）](./railway-template) | Railway | ワンクリックテンプレート: MySQL + Api + B1Admin + B1App |
-| [セルフホスティング（Docker）](./docker) | 任意の Docker ホスト | ワンライナーのインストーラー。ビルド済みの GHCR イメージと Caddy を使用し、`./deploy/b1` でアップグレード/バックアップ/ロールバックを行います |
-| [Caddy カスタムドメインプロキシ](./caddy-proxy) | Windows EC2（Elastic IP `3.23.251.61`） | 静的な Caddyfile + WinSW サービス + 定期的なマップ同期 |
+| [API](./apis.md) | AWS Lambda | Serverless Framework v3（Node.js 24.x ランタイム） |
+| [Web アプリ](./web-apps.md) | S3 + CloudFront | 静的ビルド、S3 への同期、CloudFront のキャッシュ無効化 |
+| [モバイルアプリ](./mobile.md) | アプリストア | Expo EAS Build + OTA アップデート |
+| [セルフホスティング（Railway）](./railway-template.md) | Railway | ワンクリックテンプレート: MySQL + Api + B1Admin + B1App |
+| [セルフホスティング（Docker）](./docker.md) | 任意の Docker ホスト | ワンライナーのインストーラー。ビルド済みの GHCR イメージと Caddy を使用し、`./deploy/b1` でアップグレード/バックアップ/ロールバックを行います |
+| [Caddy カスタムドメインプロキシ](./caddy-proxy.md) | Windows EC2（Elastic IP `3.23.251.61`） | 静的な Caddyfile + WinSW サービス + 定期的なマップ同期 |
 | FreeShow | 直接ダウンロード | Electron Builder（クロスプラットフォームのバイナリ） |
 
 ## 環境

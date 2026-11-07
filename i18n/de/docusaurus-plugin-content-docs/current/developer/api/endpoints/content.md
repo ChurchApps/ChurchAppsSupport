@@ -1,5 +1,6 @@
 ---
 title: "Inhalts-Endpunkte"
+description: "Endpunkt-Referenz der ChurchApps-Content-API: Webseiten, Blogbeiträge, Weiterleitungen, Predigten, Termine, Dateien, Bibelabfragen und Lieder in B1 Admin."
 ---
 
 # Inhalts-Endpunkte
@@ -133,7 +134,7 @@ Basispfad: `/content/pageHistory`
 
 Basispfad: `/content/posts`
 
-Blogbeiträge sind eigenständige Datensätze: `title`, `slug` (pro Kirche eindeutig), `excerpt`, `content` (Markdown-Text), `authorId`, `photoUrl`, `publishDate`, `category` und `tags`. Ein Beitrag ist veröffentlicht, sobald `publishDate` gesetzt und in der Vergangenheit ist. Lese-Endpunkte ergänzen jeden Beitrag um `authorName`, das aus `authorId` ermittelt wird. Siehe [Architektur des Website-Builders](../../architecture/website-builder#blog).
+Blogbeiträge sind eigenständige Datensätze: `title`, `slug` (pro Kirche eindeutig), `excerpt`, `content` (Markdown-Text), `authorId`, `photoUrl`, `publishDate`, `category` und `tags`. Ein Beitrag ist veröffentlicht, sobald `publishDate` gesetzt und in der Vergangenheit ist. Lese-Endpunkte ergänzen jeden Beitrag um `authorName`, das aus `authorId` ermittelt wird. Siehe [Architektur des Website-Builders](../../architecture/website-builder.md#blog).
 
 | Methode | Pfad | Authentifizierung | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
@@ -458,8 +459,8 @@ Basispfad: `/content/support`
 
 ## Verwandte Seiten
 
-- [Architektur des Website-Builders](../../architecture/website-builder) -- Wie Seiten, Abschnitte, Elemente, Beiträge und Weiterleitungen in den Apps zusammenspielen
-- [Mitgliedschafts-Endpunkte](./membership) -- Personen, Kirchen, Gruppen, Rollen, Berechtigungen
-- [Anwesenheit-Endpunkte](./attendance) -- Erfassung von Gottesdiensten und Besuchen
-- [Authentifizierung und Berechtigungen](./authentication) -- Anmeldeablauf, JWT, Berechtigungsmodell
-- [Modulstruktur](../module-structure) -- Muster der Code-Organisation
+- [Architektur des Website-Builders](../../architecture/website-builder.md) -- Wie Seiten, Abschnitte, Elemente, Beiträge und Weiterleitungen in den Apps zusammenspielen
+- [Mitgliedschafts-Endpunkte](./membership.md) -- Personen, Kirchen, Gruppen, Rollen, Berechtigungen
+- [Anwesenheit-Endpunkte](./attendance.md) -- Erfassung von Gottesdiensten und Besuchen
+- [Authentifizierung und Berechtigungen](./authentication.md) -- Anmeldeablauf, JWT, Berechtigungsmodell
+- [Modulstruktur](../module-structure.md) -- Muster der Code-Organisation

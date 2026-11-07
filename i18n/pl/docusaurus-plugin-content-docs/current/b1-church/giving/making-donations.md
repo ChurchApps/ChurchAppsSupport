@@ -1,5 +1,7 @@
 ---
-title: "Dokonywanie darowizny"
+title: "Składanie darów w portalu członka B1.church"
+sidebar_label: "Dokonywanie darowizny"
+description: "Złóż jednorazowy lub cykliczny dar dla swojego kościoła przez B1.church, z kontem lub bez, a potem przejrzyj historię darów."
 ---
 
 # Dokonywanie darowizny

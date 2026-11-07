@@ -1,5 +1,6 @@
 ---
 title: "Check-out e Sicurezza dei Bambini"
+description: "Registra l'uscita dei bambini a una postazione B1 Checkin presidiata con codici di sicurezza, ritiro verificato, chiamata ai genitori ed emergenze."
 ---
 
 # Check-out e Sicurezza dei Bambini
@@ -14,7 +15,7 @@ Il check-out chiude il ciclo sul check-in dei bambini: un genitore presenta il c
 <h4>Prima di Iniziare</h4>
 
 - Il check-out è disponibile su stazioni impostate su modalità **manned** nelle impostazioni di amministrazione del chiosco
-- I bambini devono essere stati [controllati](./completing-checkin) con un'etichetta di ritiro stampata che riporta il codice di sicurezza
+- I bambini devono essere stati [controllati](./completing-checkin.md) con un'etichetta di ritiro stampata che riporta il codice di sicurezza
 - L'avviso e i broadcast di emergenza richiedono che la tua chiesa abbia un fornitore di SMS collegato in B1 Admin
 
 </div>
@@ -39,7 +40,7 @@ Se un nome digitato corrisponde a qualcuno contrassegnato come **Non Autorizzato
 Una volta confermato il ritiratario, tocca il check-out. Il nome della persona che ritira viene memorizzato nel record di frequenza.
 
 :::info
-Le persone di ritiro affidabili e non autorizzate vengono gestite dal personale della chiesa nella pagina di ogni persona in B1 Admin -- vedi [Sicurezza Check-In](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Le persone di ritiro affidabili e non autorizzate vengono gestite dal personale della chiesa nella pagina di ogni persona in B1 Admin -- vedi [Sicurezza Check-In](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Avviso di un Genitore
@@ -65,6 +66,6 @@ Il broadcast va a ogni famiglia controllata per il servizio selezionato. Usalo p
 
 ## Articoli Correlati
 
-- [Completamento del Check-In](./completing-checkin) -- da dove provengono i codici di sicurezza e le etichette di ritiro
-- [Sicurezza Check-In](../../b1-admin/attendance/checkin-safety) -- configurazione di capacità, rapporti, persone di ritiro e il requisito del fornitore di SMS
-- [Configurazione Stampante](../getting-started/printer-setup) -- configurazione della stampante di etichette
+- [Completamento del Check-In](./completing-checkin.md) -- da dove provengono i codici di sicurezza e le etichette di ritiro
+- [Sicurezza Check-In](../../b1-admin/attendance/checkin-safety.md) -- configurazione di capacità, rapporti, persone di ritiro e il requisito del fornitore di SMS
+- [Configurazione Stampante](../getting-started/printer-setup.md) -- configurazione della stampante di etichette

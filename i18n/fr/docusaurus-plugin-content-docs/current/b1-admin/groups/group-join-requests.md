@@ -1,5 +1,6 @@
 ---
 title: "Demandes d'adhésion aux groupes"
+description: "Examinez, approuvez ou refusez les demandes d'adhésion aux groupes dans B1 Admin, trouvez les demandes en attente en tant que responsable ou administrateur, et ajoutez un motif en cas de refus."
 ---
 
 # Demandes d'adhésion aux groupes

@@ -1,5 +1,6 @@
 ---
 title: "Campos personalizados"
+description: "Define campos personalizados en B1 Admin para registrar datos adicionales de personas, como fechas de vencimiento de verificación de antecedentes o tallas de camiseta, y luego busca y filtra por ellos."
 ---
 
 # Campos personalizados

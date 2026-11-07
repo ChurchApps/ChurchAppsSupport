@@ -1,5 +1,6 @@
 ---
 title: "Tlač adresára"
+description: "Vygenerujte tlačiteľný adresár členov zoskupený podľa domácností z B1 Admin s fotkami, kontaktmi a narodeninami vo formáte pre papier Letter."
 ---
 
 # Tlač adresára

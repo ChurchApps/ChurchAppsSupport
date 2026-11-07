@@ -1,5 +1,6 @@
 ---
 title: B1.church 소개
+description: "B1 Admin에 로그인하고, 대시보드와 점프 메뉴를 찾아보며, 다른 도구를 살펴보기 전에 교회 정보를 설정하는 방법을 안내합니다."
 ---
 
 # B1.church Admin에 오신 것을 환영합니다!
@@ -30,7 +31,7 @@ B1.church를 선택해 주셔서 감사합니다! 이 소개에서는 B1.church 
 10. 이제 **회원 포털** 또는 **관리자 포털**을 통해 B1.church에 들어갈 수 있습니다. 회원 포털에서는 교인들에게 B1.church가 어떻게 보이는지 확인하고, 그룹을 보고, 개인 헌금을 관리할 수 있습니다.
 
 :::tip
-먼저 [Settings](./settings/) 페이지에서 교회 이름, 브랜딩, 팀 권한을 설정하세요. 그래야 이후에 설정하는 모든 항목이 올바르게 표시됩니다.
+먼저 [Settings](./settings/index.md) 페이지에서 교회 이름, 브랜딩, 팀 권한을 설정하세요. 그래야 이후에 설정하는 모든 항목이 올바르게 표시됩니다.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -77,9 +78,9 @@ Jump 메뉴의 마지막 그룹은 **Quick Actions**입니다. 이전에 대시�
 
 이 소개 영상을 본 후에는 다음 주요 기능을 살펴보세요.
 
-- [사람 추가](./people/adding-people) -- 데이터베이스에 교인을 추가하는 방법 알아보기
-- [Groups](./groups/) -- 교회 그룹 설정 및 관리
-- [Serving Plans](./serving/plans) -- 섬김 사역 체계화하기
-- [Attendance](./attendance/) -- 출석 및 체크인 추적
-- [Website](./website/) -- 교회 웹사이트 만들기 및 맞춤 설정
-- [Settings](./settings/) -- 교회 정보 및 권한 설정
+- [사람 추가](./people/adding-people.md) -- 데이터베이스에 교인을 추가하는 방법 알아보기
+- [Groups](./groups/index.md) -- 교회 그룹 설정 및 관리
+- [Serving Plans](./serving/plans.md) -- 섬김 사역 체계화하기
+- [Attendance](./attendance/index.md) -- 출석 및 체크인 추적
+- [Website](./website/index.md) -- 교회 웹사이트 만들기 및 맞춤 설정
+- [Settings](./settings/index.md) -- 교회 정보 및 권한 설정

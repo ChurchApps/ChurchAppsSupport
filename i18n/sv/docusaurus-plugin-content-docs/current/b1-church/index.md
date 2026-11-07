@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Ta reda på vad din församlings B1.church-webbplats erbjuder medlemmar, från medlemsportalen och grupper till gåvor, evenemang, tjänst och incheckning."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ När medlemmar besöker er B1.church-webbplats ser de kyrkans offentliga webbpla
 
 ## Läs mer
 
-- [Komma igång](./getting-started/) -- Skapa ditt konto, logga in och lär dig navigera i B1.church.
-- [Grupper](./groups/) -- Gå med i och delta i din kyrkas grupper.
-- [Gåvor](./giving/) -- Ge gåvor och hantera dina gåvor.
-- [Evenemang](./events/) -- Bläddra bland kommande kyrkliga evenemang och registrera dig för dem.
-- [Tjänst](./serving/) -- Se planer och anmäl dig till volontärpositioner.
-- [Planer](./plans/) -- Se tjänsteplaner och dina volontärpositioner.
-- [Incheckning](./checkin/) -- Checka in till gudstjänster och evenemang och registrera gäster.
-- [Gemenskapskatalog](./community/) -- Hitta och kontakta andra medlemmar.
-- [Innehåll](./content/) -- Predikningar, Bibeln, dagens vers och livesändningar. (Uppspelning av lektioner har flyttats till [FreePlay](/docs/freeplay/).)
+- [Komma igång](./getting-started/index.md) -- Skapa ditt konto, logga in och lär dig navigera i B1.church.
+- [Grupper](./groups/index.md) -- Gå med i och delta i din kyrkas grupper.
+- [Gåvor](./giving/index.md) -- Ge gåvor och hantera dina gåvor.
+- [Evenemang](./events/index.md) -- Bläddra bland kommande kyrkliga evenemang och registrera dig för dem.
+- [Tjänst](./serving/index.md) -- Se planer och anmäl dig till volontärpositioner.
+- [Planer](./plans/index.md) -- Se tjänsteplaner och dina volontärpositioner.
+- [Incheckning](./checkin/index.md) -- Checka in till gudstjänster och evenemang och registrera gäster.
+- [Gemenskapskatalog](./community/index.md) -- Hitta och kontakta andra medlemmar.
+- [Innehåll](./content/index.md) -- Predikningar, Bibeln, dagens vers och livesändningar. (Uppspelning av lektioner har flyttats till [FreePlay](/docs/freeplay/).)
 
 :::info
 B1.church är helt gratis för kyrkor och medlemmar. Din kyrkoadministratör ställer in och anpassar webbplatsen via B1 Admin. Som medlem besöker du helt enkelt din kyrkas B1.church-webbadress för att komma igång.

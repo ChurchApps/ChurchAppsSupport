@@ -1,5 +1,6 @@
 ---
 title: "Campagnes et promesses"
+description: "Créez des campagnes de collecte de fonds dans B1 Admin, enregistrez les engagements de dons des membres et suivez la progression vers un objectif par rapport aux dons réels versés à chaque fonds."
 ---
 
 # Campagnes et promesses
@@ -13,7 +14,7 @@ Les campagnes vous permettent de lancer une collecte de fonds vers un objectif p
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Configurez vos [fonds de dons](funds) -- chaque campagne est liée à un fonds
+- Configurez vos [fonds de dons](./funds.md) -- chaque campagne est liée à un fonds
 - Vous devez avoir accès à la section Donations de B1 Admin
 
 </div>
@@ -66,6 +67,6 @@ Cliquez sur **Edit** (Modifier) sur n'importe quelle ligne de campagne (ou sur *
 
 ## Articles associés
 
-- [Enregistrement des donations](recording-donations) -- enregistrer les dons effectifs qui honorent les promesses
-- [Fonds](funds) -- configurer le fonds à associer à une campagne
-- [Rapports de donations](donation-reports) -- rapports sur les donations par fonds
+- [Enregistrement des donations](./recording-donations.md) -- enregistrer les dons effectifs qui honorent les promesses
+- [Fonds](./funds.md) -- configurer le fonds à associer à une campagne
+- [Rapports de donations](./donation-reports.md) -- rapports sur les donations par fonds

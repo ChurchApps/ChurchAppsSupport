@@ -1,5 +1,6 @@
 ---
 title: "Connecting to Providers"
+description: "Koppel FreePlay aan een contentprovider met een QR-code, e-mailaanmelding of eenklik-toegang, en beheer of verbreek de koppeling via Instellingen."
 ---
 
 # Connecting to Providers
@@ -13,7 +14,7 @@ Voordat u inhoud van een provider kunt doorbladeren, moet u ermee verbinden. Som
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Installeer en start FreePlay -- zie [Getting Started](../getting-started/)
+- Installeer en start FreePlay -- zie [Getting Started](../getting-started/index.md)
 - Zorg ervoor dat uw TV-afstandsbediening gereed is voor navigatie
 - Voor providers die inloggen vereisen, hebt u uw accountgegevens beschikbaar
 
@@ -80,5 +81,5 @@ Als u verbreekt, wordt de opgeslagen verificatie van uw apparaat verwijderd. U m
 
 ## Gerelateerde Artikelen
 
-- **[Browsing and Downloading Content](./browsing-content)** - Navigeer mappen en speel inhoud af nadat u verbinding maakt
+- **[Browsing and Downloading Content](./browsing-content.md)** - Navigeer mappen en speel inhoud af nadat u verbinding maakt
 - **[Content Providers Overview](./index.md)** - Zie alle beschikbare providers

@@ -1,5 +1,6 @@
 ---
 title: "B1App Navigeren"
+description: "Vind je weg in het B1.church-ledenportaal op telefoon of computer: het Home-dashboard, de onderste tabbalk, de Meer-pagina en de Me-pagina."
 ---
 
 # B1App Navigeren
@@ -22,12 +23,12 @@ Het lidmaatschapsportaal in B1.church gebruikt een zijbalk navigatieindeling die
 Wanneer je het lidmaatschapsportaal opent, zie je een verticale zijbalk aan de linkerkant van het scherm. Deze zijbalk bevat tabbladen voor elk gedeelte van het portaal:
 
 - **Tijdlijn** -- Je persoonlijke voeding met updates en gesprekken van je groepen en kerk. Dit is het standaard tabblad dat laadt wanneer je het lidmaatschapsportaal opent.
-- **Groepen** -- Bekijk en heb interactie met [groepen](../groups/) waar je bij hoort.
+- **Groepen** -- Bekijk en heb interactie met [groepen](../groups/index.md) waar je bij hoort.
 - **Gemeenschap** -- Blader in het [ledengids](../community/member-directory.md) van de kerk.
-- **Plannen** -- Zie aankomende [serviceplannen](../plans/) en je toegewezen vrijwilligersposities.
-- **Check-in** -- [Check jezelf en je huishouden in](../checkin/) voor diensten en evenementen.
+- **Plannen** -- Zie aankomende [serviceplannen](../plans/index.md) en je toegewezen vrijwilligersposities.
+- **Check-in** -- [Check jezelf en je huishouden in](../checkin/index.md) voor diensten en evenementen.
 - **Lessen** -- Krijg toegang tot [lessen](../content/lessons.md) en curricula.
-- **Donaties** -- Maak online [donaties](../giving/) en bekijk je geefgeschiedenis.
+- **Donaties** -- Maak online [donaties](../giving/index.md) en bekijk je geefgeschiedenis.
 
 Klik op een tabblad om naar dat gedeelte te schakelen. Het actieve tabblad is gemarkeerd zodat je altijd weet waar je bent.
 

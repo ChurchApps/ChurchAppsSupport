@@ -1,5 +1,7 @@
 ---
-title: "Transmissão ao vivo"
+title: "Horários e Configuração de Transmissões ao Vivo no B1 Admin"
+sidebar_label: "Transmissão ao vivo"
+description: "Agende transmissões ao vivo semanais ou únicas, ajuste o chat e o vídeo antecipado, conecte o YouTube e solucione problemas de incorporação no B1 Admin."
 ---
 
 # Transmissão ao vivo
@@ -15,7 +17,7 @@ A página Horários da transmissão ao vivo permite configurar a agenda de trans
 
 - Você precisa da permissão **contentApi.streamingServices.edit**. Veja [Funções e permissões](../settings/roles-permissions.md) se você não tiver acesso.
 - Tenha em mãos o ID do seu canal do YouTube caso pretenda usar a transmissão ao vivo automatizada
-- Adicione pelo menos um [sermão](managing-sermons) ou uma URL de transmissão permanente para usar como fonte da sua transmissão
+- Adicione pelo menos um [sermão](./managing-sermons.md) ou uma URL de transmissão permanente para usar como fonte da sua transmissão
 
 </div>
 
@@ -76,13 +78,13 @@ Para encontrar o ID do seu canal do YouTube, acesse as configurações avançada
 
 ## Personalizando cores e logotipo
 
-A sua página de transmissão ao vivo usa as configurações de [Aparência](../website/appearance) do seu site:
+A sua página de transmissão ao vivo usa as configurações de [Aparência](../website/appearance.md) do seu site:
 
 - A **cor de destaque clara** com texto escuro é usada no cabeçalho.
 - A **cor de destaque escura** com texto claro é usada na barra lateral.
 - O seu **Logotipo para fundo claro** aparece na página de transmissão. Use uma imagem com fundo transparente e proporção de 4:1.
 
-Para alterar essas configurações, acesse **Site** e depois **Aparência** e atualize as configurações de [Paleta de cores](../website/appearance#color-palette) e [Logotipo](../website/appearance#logo-and-branding).
+Para alterar essas configurações, acesse **Site** e depois **Aparência** e atualize as configurações de [Paleta de cores](../website/appearance.md#color-palette) e [Logotipo](../website/appearance.md#logo-and-branding).
 
 ## Adicionando apresentadores da transmissão
 
@@ -129,5 +131,5 @@ O player automatizado da transmissão do canal no YouTube pode ser bloqueado qua
 
 ## Próximos passos
 
-- [Gerenciando sermões](managing-sermons) -- Adicione sermões à sua biblioteca
-- [Listas de reprodução](playlists) -- Organize os sermões em séries
+- [Gerenciando sermões](./managing-sermons.md) -- Adicione sermões à sua biblioteca
+- [Listas de reprodução](./playlists.md) -- Organize os sermões em séries

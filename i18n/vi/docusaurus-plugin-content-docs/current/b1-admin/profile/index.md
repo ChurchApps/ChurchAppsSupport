@@ -1,5 +1,7 @@
 ---
-title: "Hồ sơ"
+title: "Cài đặt hồ sơ và thiết bị trong B1 Admin"
+sidebar_label: "Hồ sơ"
+description: "Cập nhật tên, email, mật khẩu, đăng nhập hai bước, giao diện và thiết bị đã kết nối trong hồ sơ B1 Admin, cùng duyệt thay đổi hồ sơ thành viên."
 ---
 
 # Hồ sơ

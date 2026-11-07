@@ -1,5 +1,7 @@
 ---
-title: "Redigering af din profil"
+title: "Redigering af din profil i B1 Mobile-appen"
+sidebar_label: "Redigering af din profil"
+description: "Opdater dit navn, din e-mail, dit telefonnummer, din adresse og dit profilbillede i B1 Mobile-appen, så kirkens registre og katalog forbliver opdaterede."
 ---
 
 # Redigering af din profil
@@ -13,7 +15,7 @@ Fanen **Profil** lader dig opdatere dine personlige oplysninger, så din kirke a
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [log ind](../getting-started/logging-in) på din konto
+- [Installer B1 Mobile](../getting-started/installing.md) og [log ind](../getting-started/logging-in.md) på din konto
 
 </div>
 
@@ -34,7 +36,7 @@ Din profil omfatter følgende personlige detaljer:
 3. Tryk på det felt, du vil opdatere, og foretag dine ændringer.
 4. Gem dine ændringer når du er færdig.
 
-Dine opdaterede oplysninger synkroniseres automatisk. Alle der ser din profil (underlagt dine [privatlivsindstillinger](./privacy-settings)) vil se de nye detaljer med det samme.
+Dine opdaterede oplysninger synkroniseres automatisk. Alle der ser din profil (underlagt dine [privatlivsindstillinger](./privacy-settings.md)) vil se de nye detaljer med det samme.
 
 :::tip
 Hold din e-mailadresse og telefonnummer aktuelle. Din kirke bruger disse oplysninger til at sende dig vigtige opdateringer og påmindelser.
@@ -46,7 +48,7 @@ Du kan tilføje eller ændre dit profilbillede fra fanen **Profil**. Dit billede
 
 ## Ændringer på tværs af ChurchApps
 
-Fordi alle ChurchApps-tjenester deler det samme kontosystem, er en ændring du foretager i B1 Mobile øjeblikkeligt synlig i [B1.church](../../b1-church/), dit kirkes admin-værktøjer og alle andre forbundne tjenester. Du behøver ikke at opdatere dine oplysninger separat på hvert sted.
+Fordi alle ChurchApps-tjenester deler det samme kontosystem, er en ændring du foretager i B1 Mobile øjeblikkeligt synlig i [B1.church](../../b1-church/index.md), dit kirkes admin-værktøjer og alle andre forbundne tjenester. Du behøver ikke at opdatere dine oplysninger separat på hvert sted.
 
 :::info
 Nogle kirker kræver administratorgodkendelse for visse profiländringer. Hvis din opdatering ikke vises øjeblikkeligt, tjek fanen **Afventer** på din profilskærm for dens status.
@@ -54,5 +56,5 @@ Nogle kirker kræver administratorgodkendelse for visse profiländringer. Hvis d
 
 ## Relaterede artikler
 
-- [Husstand](./household) -- Se og administrer dine familiemedlemmer
-- [Privatlivsindstillinger](./privacy-settings) -- Kontroller hvad andre kan se om dig
+- [Husstand](./household.md) -- Se og administrer dine familiemedlemmer
+- [Privatlivsindstillinger](./privacy-settings.md) -- Kontroller hvad andre kan se om dig

@@ -1,5 +1,6 @@
 ---
 title: "Telephelyek"
+description: "Telephelyek beállítása a B1 Adminban: személyek és csoportok hozzárendelése, majd szűrés helyszín szerint a személyeknél, részvételnél és demográfiánál."
 ---
 
 # Telephelyek

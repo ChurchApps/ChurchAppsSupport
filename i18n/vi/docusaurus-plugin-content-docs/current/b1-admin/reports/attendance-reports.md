@@ -1,5 +1,6 @@
 ---
 title: "Báo cáo điểm danh"
+description: "Xem ba báo cáo điểm danh của B1 Admin (Xu hướng điểm danh, Điểm danh nhóm, Điểm danh nhóm theo ngày), nội dung từng báo cáo, cùng các bước chạy và xuất báo cáo."
 ---
 
 # Báo cáo điểm danh

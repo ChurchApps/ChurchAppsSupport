@@ -1,5 +1,7 @@
 ---
-title: "Melihat Rencana Ibadah"
+title: "Rencana Pelayanan Anda di Portal Anggota B1.church"
+sidebar_label: "Melihat Rencana Ibadah"
+description: "Periksa tugas rencana pelayanan Anda di B1.church, terima atau tolak permintaan, atur tanggal tidak tersedia, dan tinjau riwayat pelayanan Anda sebelumnya."
 ---
 
 # Melihat Rencana Ibadah

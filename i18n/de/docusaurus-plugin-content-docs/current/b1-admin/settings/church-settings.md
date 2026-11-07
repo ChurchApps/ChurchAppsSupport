@@ -1,5 +1,6 @@
 ---
 title: "Kircheneinstellungen"
+description: "Name, Adresse, Subdomain, Zeitzone, Regionalformat, SMS-Anbieter und Dateispeicher Ihrer Gemeinde auf der Seite Church Settings in B1 Admin festlegen."
 ---
 
 # Kircheneinstellungen

@@ -1,5 +1,6 @@
 ---
 title: "Personalização"
+description: "Saiba como ocultar seções, funções ou ações em uma lição do Lessons.church e reordenar o conteúdo, para uma sala ou para todas as salas da sua igreja."
 ---
 
 # Personalização

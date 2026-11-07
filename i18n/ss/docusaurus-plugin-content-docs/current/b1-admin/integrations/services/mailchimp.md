@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Vumelanisa bantfu ne-B1 Admin nemalungu eliqembu nohlu lolugciniwe lwe-Mailchimp njengetagi, nemahlahlandlela ekusetfuleni nasekulungiseni tinkinga."
 ---
 
 # Mailchimp
@@ -74,7 +75,7 @@ Nako-ke. Engeta umuntfu ku-B1Admin kucinisekisa — umbhaleli lomusha uvela ku-M
 
 ## Lenye Indlela nge-Make
 
-I-[app ye-Mailchimp](https://www.make.com/en/integrations/mailchimp) ye-Make ifaka ema-module lasi-44 — kuchumana kufana ncimingca, ngesicalisi se-B1 se-*Watch Events* lesitsatsa indzawo ye-Zapier. Buka [liphepha lekubuka le-Make](../make) yeluhlangotsi lwe-B1.
+I-[app ye-Mailchimp](https://www.make.com/en/integrations/mailchimp) ye-Make ifaka ema-module lasi-44 — kuchumana kufana ncimingca, ngesicalisi se-B1 se-*Watch Events* lesitsatsa indzawo ye-Zapier. Buka [liphepha lekubuka le-Make](../make.md) yeluhlangotsi lwe-B1.
 
 ## Imikhawulo & Ematiko
 
@@ -90,6 +91,6 @@ I-[app ye-Mailchimp](https://www.make.com/en/integrations/mailchimp) ye-Make ifa
 
 ## Buka Nalokunye
 
-- [Zapier (kubuka konkhe)](../zapier) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Zapier
-- [Make (kubuka konkhe)](../make) — kufanako, sakhi sekubona
+- [Zapier (kubuka konkhe)](../zapier.md) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Zapier
+- [Make (kubuka konkhe)](../make.md) — kufanako, sakhi sekubona
 - [Webhooks (inkomba yentfutfuki)](/docs/developer/api/webhooks#event-catalog)

@@ -1,5 +1,7 @@
 ---
-title: "Imininingwane Yelicembu"
+title: "Imininingwane Yeliqembu Ku-App ye-B1 Mobile"
+sidebar_label: "Imininingwane Yelicembu"
+description: "Bona kutsi likhasi lemininingwane yeliqembu ku-B1 Mobile likhombisa ni, kuhlanganisa ulwatiso lweliqembu, tipositi, nemalungu, nekutsi ungalivula kanjani kusuka kusikrini semaqembu."
 ---
 
 # Imininingwane Yelicembu
@@ -13,7 +15,7 @@ Nawucindzetela licembu kusuka esikrinini se-Emacembu, uyisiwa ekhasini lemininin
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- [Faka B1 Mobile](../getting-started/installing) futsi [ungene](../getting-started/logging-in) ku-akhawunti yakho
+- [Faka B1 Mobile](../getting-started/installing.md) futsi [ungene](../getting-started/logging-in.md) ku-akhawunti yakho
 - Vula sikrini se-[Emacembu](./index.md)
 
 </div>
@@ -46,5 +48,5 @@ Licembu lakho lelivakashelwa kakhulu livela njengelikhadi leliqoshiwe etulu kwes
 
 ## Timibhalo Lehambelanako
 
-- [Sikhatsi Selicembu](./group-timeline) -- Funda ngeluhlu lwetento loluhlangene emacenjini akho onkhe
+- [Sikhatsi Selicembu](./group-timeline.md) -- Funda ngeluhlu lwetento loluhlangene emacenjini akho onkhe
 - [Kutfumela Imilayeto](../community/messaging.md) -- Tfumela imilayeto yangasese emalungeni elicembu

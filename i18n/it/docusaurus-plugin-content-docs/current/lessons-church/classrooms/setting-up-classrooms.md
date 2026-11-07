@@ -1,5 +1,6 @@
 ---
 title: "Configurazione delle classi"
+description: "Creare, rinominare e rimuovere aule nel portale Lessons.church, così ogni stanza o fascia d'età è pronta per la programmazione settimanale delle lezioni."
 ---
 
 # Configurazione delle classi

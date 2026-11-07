@@ -1,5 +1,7 @@
 ---
-title: "Auto Check-In"
+title: "Auto-înregistrare în portalul de membri B1.church"
+sidebar_label: "Auto Check-In"
+description: "Înregistrează-te pe tine și gospodăria la o slujbă din portalul de membri B1.church, alegând orele și grupele în câțiva pași rapizi."
 ---
 
 # Auto Check-In
@@ -45,7 +47,7 @@ Odată ce ai selectat grupuri pentru toți cei care participă, apasă butonul d
 
 Vei vedea o confirmare că check-in-ul tău a fost finalizat și prezența ta a fost salvată. După câteva momente, pagina revine la lista serviciilor, pregătită pentru următorul check-in.
 
-Dacă biserica ta tipărește etichete cu numele la un punct de check-in, vei vedea în schimb **Ai făcut check-in!**, împreună cu un cod QR și un cod de securitate. Arată codul la un punct de check-in pentru a tipări etichetele cu numele, apoi apasă **Gata**. La un terminal B1 Checkin, apasă **Scanează codul** și ține codul QR în fața camerei — vezi [Tipărirea etichetelor pentru check-in de pe telefon](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Dacă biserica ta tipărește etichete cu numele la un punct de check-in, vei vedea în schimb **Ai făcut check-in!**, împreună cu un cod QR și un cod de securitate. Arată codul la un punct de check-in pentru a tipări etichetele cu numele, apoi apasă **Gata**. La un terminal B1 Checkin, apasă **Scanează codul** și ține codul QR în fața camerei — vezi [Tipărirea etichetelor pentru check-in de pe telefon](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Dacă gospodăria ta a făcut deja check-in pentru serviciul selectat, lângă titlul **Cine este prezent** apare un link **Afișează codul de check-in**. Apasă-l pentru a afișa din nou codul QR și codul de securitate — de exemplu, dacă ai închis pagina înainte de a ajunge la un punct de check-in.
 

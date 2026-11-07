@@ -1,5 +1,6 @@
 ---
 title: "Endpoints de Asistencia"
+description: "Referencia de la API de asistencia en B1 Admin y B1 Checkin: campus, servicios, horarios de servicio, sesiones, visitas, reglas de registro y endpoints de exportación."
 ---
 
 # Endpoints de Asistencia
@@ -270,6 +271,6 @@ Registra las rachas de asistencia de las personas: semanas consecutivas en las q
 
 ## Páginas relacionadas
 
-- [Endpoints de Membresía](./membership) — Personas, grupos, roles y gestión de la iglesia
-- [Autenticación y permisos](./authentication) — Flujo de inicio de sesión, JWT, modelo de permisos
-- [Estructura del módulo](../module-structure) — Patrones de organización del código
+- [Endpoints de Membresía](./membership.md) — Personas, grupos, roles y gestión de la iglesia
+- [Autenticación y permisos](./authentication.md) — Flujo de inicio de sesión, JWT, modelo de permisos
+- [Estructura del módulo](../module-structure.md) — Patrones de organización del código

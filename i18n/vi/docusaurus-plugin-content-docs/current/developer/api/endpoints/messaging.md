@@ -1,5 +1,6 @@
 ---
 title: "Điểm cuối Nhắn tin"
+description: "Tài liệu endpoint messaging API ChurchApps: cuộc trò chuyện, quy tắc truy cập ghi chú, nhắn tin SMS, mẫu email, thông báo và thiết bị."
 ---
 
 # Điểm cuối Nhắn tin
@@ -190,7 +191,7 @@ Authorization: Bearer <token>
 
 Đường dẫn gốc: `/messaging/connections`
 
-Quản lý các kết nối WebSocket/thời gian thực cho trò chuyện, trò chuyện nhóm, tin nhắn riêng và phát trực tuyến. Xem [Kiến trúc thời gian thực](../../realtime) để biết giao thức đầu cuối.
+Quản lý các kết nối WebSocket/thời gian thực cho trò chuyện, trò chuyện nhóm, tin nhắn riêng và phát trực tuyến. Xem [Kiến trúc thời gian thực](../../realtime.md) để biết giao thức đầu cuối.
 
 | Phương thức | Đường dẫn | Xác thực | Quyền | Mô tả |
 |--------|------|------|------------|-------------|
@@ -367,9 +368,9 @@ Theo dõi trạng thái gửi của các tin nhắn đã gửi (SMS, thông báo
 
 ## Trang liên quan
 
-- [Kiến trúc thời gian thực](../../realtime) -- Giao thức WebSocket, đăng ký phòng, và khung phân phối thống nhất
-- [Thông báo đẩy trên web](../../web-push) -- Đăng ký và gửi thông báo đẩy trên trình duyệt
-- [Điểm cuối Thành viên](./membership) -- Người, nhóm, vai trò và danh tính cốt lõi
-- [Điểm cuối Điểm danh](./attendance) -- Theo dõi buổi nhóm và lượt thăm
-- [Xác thực & Quyền](./authentication) -- Luồng đăng nhập, JWT, OAuth, mô hình quyền
-- [Cấu trúc mô-đun](../module-structure) -- Các mẫu tổ chức mã nguồn
+- [Kiến trúc thời gian thực](../../realtime.md) -- Giao thức WebSocket, đăng ký phòng, và khung phân phối thống nhất
+- [Thông báo đẩy trên web](../../web-push.md) -- Đăng ký và gửi thông báo đẩy trên trình duyệt
+- [Điểm cuối Thành viên](./membership.md) -- Người, nhóm, vai trò và danh tính cốt lõi
+- [Điểm cuối Điểm danh](./attendance.md) -- Theo dõi buổi nhóm và lượt thăm
+- [Xác thực & Quyền](./authentication.md) -- Luồng đăng nhập, JWT, OAuth, mô hình quyền
+- [Cấu trúc mô-đun](../module-structure.md) -- Các mẫu tổ chức mã nguồn

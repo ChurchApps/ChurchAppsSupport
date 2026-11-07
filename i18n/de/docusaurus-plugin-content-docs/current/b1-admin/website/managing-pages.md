@@ -1,5 +1,6 @@
 ---
 title: "Seiten verwalten"
+description: "Seiten und Navigation in B1 Admins Ansicht Website-Seiten anlegen, bearbeiten und ordnen, mit Seiteneinstellungen, Weiterleitungen und Seitenvorlagen."
 ---
 
 # Seiten verwalten
@@ -13,13 +14,13 @@ Die Website Pages-Ansicht ist Ihre zentrale Anlaufstelle zum Erstellen, Bearbeit
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Führen Sie die [Initiale Einrichtung](initial-setup) durch, um Ihre Domäne und die grundlegenden Website-Einstellungen zu konfigurieren
-- Halten Sie Ihren Inhalt und Ihre Bilder bereit. Verwenden Sie zunächst den [Files](files)-Manager, um Mediendateien hochzuladen.
+- Führen Sie die [Initiale Einrichtung](./initial-setup.md) durch, um Ihre Domäne und die grundlegenden Website-Einstellungen zu konfigurieren
+- Halten Sie Ihren Inhalt und Ihre Bilder bereit. Verwenden Sie zunächst den [Files](./files.md)-Manager, um Mediendateien hochzuladen.
 
 </div>
 
 :::info
-Wenn Ihre Kirche mehr als eine Website hat (zum Beispiel separate Websites pro Campus), verwenden Sie die Site-Umschaltung oben in der Website Pages-Ansicht, um zwischen ihnen zu wechseln. Jede Website hat ihre eigenen Seiten, Navigation und [Appearance](appearance)-Einstellungen.
+Wenn Ihre Kirche mehr als eine Website hat (zum Beispiel separate Websites pro Campus), verwenden Sie die Site-Umschaltung oben in der Website Pages-Ansicht, um zwischen ihnen zu wechseln. Jede Website hat ihre eigenen Seiten, Navigation und [Appearance](./appearance.md)-Einstellungen.
 :::
 
 ## Verstehen von Seitentypen
@@ -35,7 +36,7 @@ Sie können jede automatisch generierte Seite in eine benutzerdefinierte Seite u
 
 1. Klicken Sie auf die **Add Page**-Schaltfläche oben rechts in der Ansicht Website Pages.
 2. Wählen Sie einen Seitentyp (leer oder eine Vorlage) und geben Sie ihm einen Namen.
-3. Klicken Sie auf **Edit Content** neben einer Seite, um den [Seiten-Editor](page-editor) zu öffnen, in dem Sie Abschnitte, Text, Bilder und andere Elemente hinzufügen können.
+3. Klicken Sie auf **Edit Content** neben einer Seite, um den [Seiten-Editor](./page-editor.md) zu öffnen, in dem Sie Abschnitte, Text, Bilder und andere Elemente hinzufügen können.
 4. Klicken Sie auf **Page Settings** neben einer Seite, um den Seitentitel, URL-Pfad und andere Metadaten zu aktualisieren.
 5. Klicken Sie auf den Pfad einer Seite in der Spalte **Path**, um die Live-Seite in einem neuen Tab zu öffnen und genau zu sehen, wie sie für Besucher aussieht.
 
@@ -112,10 +113,10 @@ Wenn Sie Ihre Website von Grund auf aufbauen, können Sie sie mit einer **Site T
 3. Wenn Sie eine gefallen hat, klicken Sie auf **Apply Template**.
 4. Seiten, die noch nicht existieren, werden erstellt und zu Ihrer Navigation hinzugefügt. Bestehende Seiten bleiben unverändert.
 
-Öffnen Sie nach dem Anwenden einer Vorlage jede Seite im [Seiten-Editor](page-editor), um den Platzhalter-Text und die Bilder durch den eigentlichen Inhalt Ihrer Kirche zu ersetzen.
+Öffnen Sie nach dem Anwenden einer Vorlage jede Seite im [Seiten-Editor](./page-editor.md), um den Platzhalter-Text und die Bilder durch den eigentlichen Inhalt Ihrer Kirche zu ersetzen.
 
 :::info
-Site-Vorlagen erstellen die Seitenstruktur und Navigation. Sie überschreiben nicht Ihr Website-Farbschema oder Ihre Schriftarten -- diese werden von [Appearance](appearance) gesteuert.
+Site-Vorlagen erstellen die Seitenstruktur und Navigation. Sie überschreiben nicht Ihr Website-Farbschema oder Ihre Schriftarten -- diese werden von [Appearance](./appearance.md) gesteuert.
 :::
 
 ## Bild-Lightbox
@@ -124,7 +125,7 @@ Wenn Besucher auf ein Bild auf Ihrer Website klicken, wird es in einer Vollbild-
 
 ## Nächste Schritte
 
-- [Initial Setup](initial-setup) -- Anweisungen zur erstmaligen Einrichtung
-- [Using the Page Editor](page-editor) -- Erfahren Sie, wie Sie Seiten-Inhalte erstellen und gestalten
-- [Appearance](appearance) -- Passen Sie das visuelle Design Ihrer Website an
-- [Files](files) -- Laden Sie Mediendateien für Ihre Seiten hoch und verwalten Sie sie
+- [Initial Setup](./initial-setup.md) -- Anweisungen zur erstmaligen Einrichtung
+- [Using the Page Editor](./page-editor.md) -- Erfahren Sie, wie Sie Seiten-Inhalte erstellen und gestalten
+- [Appearance](./appearance.md) -- Passen Sie das visuelle Design Ihrer Website an
+- [Files](./files.md) -- Laden Sie Mediendateien für Ihre Seiten hoch und verwalten Sie sie

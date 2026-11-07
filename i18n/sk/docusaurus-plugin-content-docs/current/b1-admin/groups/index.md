@@ -1,5 +1,7 @@
 ---
-title: "Skupiny"
+title: "Skupiny v B1 Admin"
+sidebar_label: "Skupiny"
+description: "Nastavujte a organizujte skupiny v B1 Admin vrátane kategórií, členov, kalendárov a žiadostí o pripojenie, so sprievodcom, ako nájsť stránku Groups."
 ---
 
 # Skupiny

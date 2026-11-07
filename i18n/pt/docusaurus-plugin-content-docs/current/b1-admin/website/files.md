@@ -1,5 +1,6 @@
 ---
 title: "Arquivos"
+description: "Envie, navegue e gerencie imagens e documentos do site da igreja no B1 Admin, incluindo a vinculação de armazenamento externo para mais espaço."
 ---
 
 # Arquivos
@@ -13,7 +14,7 @@ A página Arquivos é o repositório central para toda mídia e documentos usado
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Complete a [Configuração Inicial](initial-setup) do seu site
+- Complete a [Configuração Inicial](./initial-setup.md) do seu site
 - Otimize imagens antes de enviar para tempos de carregamento de página mais rápidos
 - Prepare seus arquivos em formatos comuns da web (PNG, JPG, PDF, etc.)
 
@@ -42,7 +43,7 @@ A tabela de arquivos lista todos os arquivos enviados com seu **Name** e **Size*
 3. Arquivos que você envia aqui estão disponíveis para uso em todas as suas páginas de site e blocos de conteúdo.
 
 :::info
-Ao construir páginas em [Managing Pages](managing-pages), você pode referenciar qualquer arquivo enviado aqui por sua URL. Isso mantém toda sua mídia organizada em um local central.
+Ao construir páginas em [Managing Pages](./managing-pages.md), você pode referenciar qualquer arquivo enviado aqui por sua URL. Isso mantém toda sua mídia organizada em um local central.
 :::
 
 ## Deletando Arquivos
@@ -57,5 +58,5 @@ Arquivos deletados não podem ser recuperados. Verifique novamente se um arquivo
 
 ## Próximas Etapas
 
-- [Managing Pages](managing-pages) -- Adicione seus arquivos enviados a páginas de site
-- [Appearance](appearance) -- Personalize o tema visual do seu site
+- [Managing Pages](./managing-pages.md) -- Adicione seus arquivos enviados a páginas de site
+- [Appearance](./appearance.md) -- Personalize o tema visual do seu site

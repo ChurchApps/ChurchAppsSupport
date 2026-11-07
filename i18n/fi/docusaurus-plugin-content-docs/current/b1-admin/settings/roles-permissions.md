@@ -1,5 +1,6 @@
 ---
 title: "Roolit ja käyttöoikeudet"
+description: "Määritä B1 Adminissa roolit, jotka säätelevät henkilökunnan ja vapaaehtoisten näkyvyyttä ja muokkausoikeuksia lahjoituksista henkilöihin ja ryhmiin."
 ---
 
 # Roolit ja käyttöoikeudet

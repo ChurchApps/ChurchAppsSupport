@@ -1,5 +1,7 @@
 ---
-title: "Erste Schritte"
+title: "Erste Schritte mit Lessons.church"
+sidebar_label: "Erste Schritte"
+description: "Kostenloses Lessons.church-Konto anlegen, Gemeinde verbinden, Klassenzimmer einrichten und erste Lektionen planen. Kein Abo und keine Testphase nötig."
 ---
 
 # Erste Schritte

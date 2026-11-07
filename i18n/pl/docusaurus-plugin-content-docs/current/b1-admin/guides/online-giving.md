@@ -1,5 +1,6 @@
 ---
 title: "Przewodnik: konfiguracja internetowych darowizn"
+description: "Skonfiguruj darowizny online w B1 Admin: utwórz fundusze, połącz Stripe i dodaj stronę Donate na swojej stronie B1.church dla członków."
 ---
 
 # Konfiguracja internetowych darowizn
@@ -70,7 +71,7 @@ Jeśli chcesz sprawdzić działanie bez prawdziwych obciążeń, najpierw użyj 
 Poinformuj członków, że mogą już składać darowizny online.
 
 1. Udostępnij adres do darowizn na swojej stronie internetowej, w newsletterach e-mailowych, biuletynach i mediach społecznościowych
-2. Członkowie mogą też składać darowizny w [aplikacji B1 Mobile](../../b1-mobile/giving/) — funkcja darowizn jest w niej wbudowana
+2. Członkowie mogą też składać darowizny w [aplikacji B1 Mobile](../../b1-mobile/giving/index.md) — funkcja darowizn jest w niej wbudowana
 
 :::info
 Członkowie, którzy się zalogują, mogą zapisywać metody płatności, konfigurować darowizny cykliczne i przeglądać historię swoich darowizn. Darowizny anonimowe również są możliwe — nie jest wymagane logowanie.

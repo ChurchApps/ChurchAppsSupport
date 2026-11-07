@@ -1,5 +1,6 @@
 ---
 title: "API-telepítés"
+description: "Telepítsd a ChurchApps API-t AWS Lambdára a Serverless segítségével: buildek, a demo és éles munkafolyamatok, adatbázis-migrációk és SSM-konfiguráció."
 ---
 
 # API-telepítés
@@ -13,7 +14,7 @@ A ChurchApps API-kat AWS Lambda-függvényekként telepítjük a Serverless Fram
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Állítsa be a API-t helyileg – lásd: [Helyi API-beállítás](../api/local-setup)
+- Állítsa be a API-t helyileg – lásd: [Helyi API-beállítás](../api/local-setup.md)
 - Konfigurálja az AWS-hitelesítő adatokat a gépén
 - Győződjön meg róla, hogy hozzáférése van a céloldali AWS-fiókhoz
 
@@ -47,7 +48,7 @@ A gyakorlatban az API-t a GitHub Actions telepíti: a **Deploy Demo** minden `ma
 
 ## Adatbázis-migrációk
 
-A **Deploy Prod** a telepítés részeként alkalmazza a függőben lévő adatbázis-migrációkat. Az éles adatbázisok csak a VPC-n belülről fogadnak kapcsolatot, ezért a `serverless deploy` után a munkafolyamat meghívja a `migrate` Lambda-függvényt (`api-Prod-migrate`), amely lefuttatja minden modul függőben lévő migrációit, és visszaadja a `{ ok, environment, modules }` értéket. Ha bármelyik modul hibázik vagy elutasításra kerül (például egy olyan adatbázis, amelynek nincs migrációs előzménye), a feladat meghiúsul, így az adatbázis-séma soha nem maradhat el a kódtól. A **Rollback Prod** csak a Lambda-kódot állítja vissza; a migrációk megmaradnak, ezért érdemes őket additívan tervezni. A migrációk állapotának ellenőrzéséhez vagy kézi futtatásához lásd: [Szerveradminisztráció -- Adatbázis-migrációk](../server-admin#database-migrations).
+A **Deploy Prod** a telepítés részeként alkalmazza a függőben lévő adatbázis-migrációkat. Az éles adatbázisok csak a VPC-n belülről fogadnak kapcsolatot, ezért a `serverless deploy` után a munkafolyamat meghívja a `migrate` Lambda-függvényt (`api-Prod-migrate`), amely lefuttatja minden modul függőben lévő migrációit, és visszaadja a `{ ok, environment, modules }` értéket. Ha bármelyik modul hibázik vagy elutasításra kerül (például egy olyan adatbázis, amelynek nincs migrációs előzménye), a feladat meghiúsul, így az adatbázis-séma soha nem maradhat el a kódtól. A **Rollback Prod** csak a Lambda-kódot állítja vissza; a migrációk megmaradnak, ezért érdemes őket additívan tervezni. A migrációk állapotának ellenőrzéséhez vagy kézi futtatásához lásd: [Szerveradminisztráció -- Adatbázis-migrációk](../server-admin.md#database-migrations).
 
 ## Mi jön létre
 
@@ -75,6 +76,6 @@ A `main` ágra történő minden összevonás először a demó környezetbe tel
 
 ## Kapcsolódó cikkek
 
-- **[Helyi API-beállítás](../api/local-setup)** -- Az API beállítása fejlesztéshez
-- **[Modulszerkezet](../api/module-structure)** -- A Lambda-függvényarchitektúra megismerése
-- **[Webalkalmazás-telepítés](./web-apps)** -- A frontend alkalmazások telepítése
+- **[Helyi API-beállítás](../api/local-setup.md)** -- Az API beállítása fejlesztéshez
+- **[Modulszerkezet](../api/module-structure.md)** -- A Lambda-függvényarchitektúra megismerése
+- **[Webalkalmazás-telepítés](./web-apps.md)** -- A frontend alkalmazások telepítése

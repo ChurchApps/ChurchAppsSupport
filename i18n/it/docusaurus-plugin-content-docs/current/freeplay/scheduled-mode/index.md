@@ -1,5 +1,6 @@
 ---
 title: "Modalità pianificata"
+description: "Configurare le TV FreePlay per riprodurre playlist su calendario da FreePlay Admin: avvio e arresto automatici, anche con cali del Wi-Fi."
 ---
 
 # Modalità pianificata
@@ -18,16 +19,16 @@ FreePlay Admin usa il tuo accesso ChurchApps, lo stesso che usi per B1 Admin. No
 
 FreePlay Admin ha quattro pagine principali, elencate in alto nel sito:
 
-- **[Schermi](./managing-screens)** - Le TV che hai abbinato, il loro stato e i **gruppi di schermi** a cui appartengono. Gli schermi di un gruppo condividono un unico calendario e un unico loop predefinito
-- **[Playlist](./building-playlists)** - Loop di immagini e video che scegli dai tuoi provider di contenuti
-- **[Calendario](./scheduling-the-calendar)** - Cosa riproduce ciascun gruppo di schermi, e quando
-- **[Provider](./building-playlists#connecting-providers)** - Le fonti di contenuti da cui le tue playlist attingono. Ne colleghi ciascuna una sola volta per l'intera chiesa
+- **[Schermi](./managing-screens.md)** - Le TV che hai abbinato, il loro stato e i **gruppi di schermi** a cui appartengono. Gli schermi di un gruppo condividono un unico calendario e un unico loop predefinito
+- **[Playlist](./building-playlists.md)** - Loop di immagini e video che scegli dai tuoi provider di contenuti
+- **[Calendario](./scheduling-the-calendar.md)** - Cosa riproduce ciascun gruppo di schermi, e quando
+- **[Provider](./building-playlists.md#connecting-providers)** - Le fonti di contenuti da cui le tue playlist attingono. Ne colleghi ciascuna una sola volta per l'intera chiesa
 
 Quando non è programmato nulla, gli schermi di un gruppo riproducono il suo **loop predefinito**. Se il gruppo non ha un loop predefinito, gli schermi restano spenti.
 
 ## In cosa differisce dalla modalità piano
 
-- **[Modalità piano](../plan-mode/)** segue un tipo di piano di servizio da B1 Admin. Qualcuno preme **Avvia piano** sulla TV, e la lezione parte in quel momento
+- **[Modalità piano](../plan-mode/index.md)** segue un tipo di piano di servizio da B1 Admin. Qualcuno preme **Avvia piano** sulla TV, e la lezione parte in quel momento
 - **La modalità pianificata** segue un calendario. I contenuti iniziano e finiscono agli orari che imposti, quindi funziona bene per la segnaletica nell'atrio, i loop di annunci e le aule in cui la lezione deve essere già visibile prima che qualcuno entri
 
 Una voce del calendario può comunque riprodurre un piano di servizio. Scegli il tipo di piano sotto **Piani di servizio** quando aggiungi una programmazione, e lo schermo riproduce il piano attualmente attivo in B1 Admin in quella settimana. Questo include le lezioni di Go Curriculum, anche quelle che hai personalizzato nel piano. Lo schermo usa l'accesso a Go Curriculum collegato al ministero del tipo di piano in B1 Admin, oppure la connessione a Go Curriculum della chiesa se il ministero non ne ha una.
@@ -49,8 +50,8 @@ Premi **Ctrl+K** (**⌘K** su un Mac), oppure clicca sulla casella di ricerca ne
 
 ## In questa sezione
 
-- **[Abbinare uno schermo](./pairing-a-screen)** - Mostra il codice sulla TV e abbinalo in FreePlay Admin
-- **[Gestire schermi e gruppi](./managing-screens)** - Controlla stato e download, e organizza gli schermi in gruppi
-- **[Collegare i provider e creare playlist](./building-playlists)** - Collega le fonti di contenuti e crea loop di immagini e video
-- **[Programmare il calendario](./scheduling-the-calendar)** - Decidi cosa riprodurre e quando, e cosa succede quando termina in anticipo
-- **[Riproduzione pianificata sulla TV](./scheduled-playback)** - Cosa fa la TV da sola, e come usare il telecomando durante la riproduzione
+- **[Abbinare uno schermo](./pairing-a-screen.md)** - Mostra il codice sulla TV e abbinalo in FreePlay Admin
+- **[Gestire schermi e gruppi](./managing-screens.md)** - Controlla stato e download, e organizza gli schermi in gruppi
+- **[Collegare i provider e creare playlist](./building-playlists.md)** - Collega le fonti di contenuti e crea loop di immagini e video
+- **[Programmare il calendario](./scheduling-the-calendar.md)** - Decidi cosa riprodurre e quando, e cosa succede quando termina in anticipo
+- **[Riproduzione pianificata sulla TV](./scheduled-playback.md)** - Cosa fa la TV da sola, e come usare il telecomando durante la riproduzione

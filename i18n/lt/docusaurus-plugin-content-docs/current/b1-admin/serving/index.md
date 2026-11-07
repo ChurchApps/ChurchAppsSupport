@@ -1,5 +1,7 @@
 ---
-title: "Aptarnavimas"
+title: "Tarnystės apžvalga B1 Admin"
+sidebar_label: "Aptarnavimas"
+description: "Koordinuokite savanorius ir planuokite pamaldas B1 Admin Tarnystės skiltyje: skirtukus, komandas, pamaldų planus, dainas ir užduotis."
 ---
 
 # Aptarnavimas

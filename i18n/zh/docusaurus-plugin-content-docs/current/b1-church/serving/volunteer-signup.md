@@ -1,5 +1,7 @@
 ---
-title: "志愿者报名"
+title: "B1.church 会员门户中的志愿者报名"
+sidebar_label: "志愿者报名"
+description: "按类别浏览开放的志愿者岗位，报名即将举行的礼拜，或在截止日期前在 B1.church 上取消报名。"
 ---
 
 # 志愿者报名
@@ -74,4 +76,4 @@ title: "志愿者报名"
 ## 相关文章
 
 - [服事概览](./index.md) -- B1.church 服事功能概览
-- [查看计划](../plans/viewing-plans) -- 查看您被分配的计划和服事流程
+- [查看计划](../plans/viewing-plans.md) -- 查看您被分配的计划和服事流程

@@ -1,5 +1,6 @@
 ---
 title: "Mengelola Layar dan Grup"
+description: "Cek TV FreePlay mana yang online dan siap untuk hari Minggu, lalu ubah pengaturan layar dan buat grup yang berbagi satu kalender di FreePlay Admin."
 ---
 
 # Mengelola Layar dan Grup
@@ -14,7 +15,7 @@ Halaman **Layar** di FreePlay Admin menampilkan setiap TV yang dipasangkan ke ge
 <h4>Sebelum Anda Mulai</h4>
 
 - Masuk ke FreePlay Admin di [admin.freeplay.church](https://admin.freeplay.church)
-- [Pasangkan setidaknya satu layar](./pairing-a-screen)
+- [Pasangkan setidaknya satu layar](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Gunakan **Tampilkan** untuk memutar kalender layar di browser Anda, atau **Edit*
 
 Klik label layar untuk membuka halamannya. Di sebelah kiri:
 
-- **Tampilkan di browser** - Putar kalender layar ini secara layar penuh di browser Anda, seperti tampilannya di TV. Lihat [Menampilkan dari Browser](./scheduled-playback#presenting-from-a-browser)
+- **Tampilkan di browser** - Putar kalender layar ini secara layar penuh di browser Anda, seperti tampilannya di TV. Lihat [Menampilkan dari Browser](./scheduled-playback.md#presenting-from-a-browser)
 - **Edit** - Ubah label, grup, atau mode
 - **Lainnya** > **Lepas pasangan** - Putuskan sambungan TV. TV akan kembali menampilkan kode pemasangan
 
@@ -93,6 +94,6 @@ Menghapus grup juga menghapus jadwalnya. Layar di grup tersebut akan mati hingga
 
 ## Artikel Terkait
 
-- **[Memasangkan Layar](./pairing-a-screen)** - Menambahkan TV baru
-- **[Menjadwalkan Kalender](./scheduling-the-calendar)** - Menentukan apa yang diputar setiap grup dan perulangan defaultnya
-- **[Pemutaran Terjadwal di TV](./scheduled-playback)** - Arti tanggal "Siap hingga" di TV itu sendiri
+- **[Memasangkan Layar](./pairing-a-screen.md)** - Menambahkan TV baru
+- **[Menjadwalkan Kalender](./scheduling-the-calendar.md)** - Menentukan apa yang diputar setiap grup dan perulangan defaultnya
+- **[Pemutaran Terjadwal di TV](./scheduled-playback.md)** - Arti tanggal "Siap hingga" di TV itu sendiri

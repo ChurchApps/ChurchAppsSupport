@@ -1,5 +1,6 @@
 ---
 title: "Odalar, Kaynaklar ve Planlama"
+description: "B1 Admin'de oda, ekipman, blokaj ve etkinlik şablonlarını kurun; gruplar rezervasyon talep etsin, siz de çifte rezervasyonu önlemek için onaylayın."
 ---
 
 # Odalar, Kaynaklar ve Planlama
@@ -14,7 +15,7 @@ Odalar ve Kaynaklar, kilisenizin rezerve edilebilir alanlarını ve ekipmanları
 <h4>Başlamadan Önce</h4>
 
 - B1 Admin içindeki Takvimler bölümüne yönetici erişiminiz olmalıdır
-- Rezervasyon talebi gönderecek üyelerin bulunduğu [gruplar](../groups/creating-groups) ayarlanmış olmalıdır
+- Rezervasyon talebi gönderecek üyelerin bulunduğu [gruplar](../groups/creating-groups.md) ayarlanmış olmalıdır
 
 </div>
 
@@ -76,7 +77,7 @@ Yeni bir etkinlik oluştururken personel, etkinlik ayrıntılarını önceden do
 
 ## İlgili Makaleler
 
-- [Müsaitlik Takvimi](availability) — tüm rezervasyonları bir bakışta görüntüleyin ve odaları veya kaynakları doğrudan rezerve edin
-- [Takvim Onayları](approvals) — oda ve kaynak rezervasyon taleplerini onaylayın veya reddedin
-- [Takvim Oluşturma](creating-calendars) — etkinlik takvimlerini ayarlayın
-- [Grup Oluşturma](../groups/creating-groups) — oda ve kaynak rezerve edebilecek grupları ayarlayın
+- [Müsaitlik Takvimi](./availability.md) — tüm rezervasyonları bir bakışta görüntüleyin ve odaları veya kaynakları doğrudan rezerve edin
+- [Takvim Onayları](./approvals.md) — oda ve kaynak rezervasyon taleplerini onaylayın veya reddedin
+- [Takvim Oluşturma](./creating-calendars.md) — etkinlik takvimlerini ayarlayın
+- [Grup Oluşturma](../groups/creating-groups.md) — oda ve kaynak rezerve edebilecek grupları ayarlayın

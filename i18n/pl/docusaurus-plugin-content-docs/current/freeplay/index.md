@@ -1,5 +1,6 @@
 ---
 title: "Przegląd FreePlay"
+description: "Przegląd FreePlay, aplikacji klasowej do odtwarzania lekcji offline na Android TV, Fire TV i Apple TV, z linkami do przewodników konfiguracji."
 ---
 
 # Przegląd FreePlay
@@ -22,10 +23,10 @@ Nasz **<a href="/guides/freeplay-b1admin" target="_blank">pełny przewodnik konf
 
 - **Odtwarzanie offline** - Pobieraj wcześniej filmy i slajdy graficzne, aby nigdy nie zależeć od Wi-Fi podczas nabożeństw
 - **Zarządzanie pobranymi plikami** - Przeglądaj i zarządzaj wszystkimi pobranymi treściami w sekcji **Ustawienia** > **Pobrane**
-- **Tryb zaplanowany** - Twórz listy odtwarzania i umieszczaj je w kalendarzu na stronie [admin.freeplay.church](https://admin.freeplay.church). Sparowane telewizory odtwarzają je o właściwej porze, bez konieczności naciskania przycisku Start. Zobacz [Tryb zaplanowany](./scheduled-mode/)
+- **Tryb zaplanowany** - Twórz listy odtwarzania i umieszczaj je w kalendarzu na stronie [admin.freeplay.church](https://admin.freeplay.church). Sparowane telewizory odtwarzają je o właściwej porze, bez konieczności naciskania przycisku Start. Zobacz [Tryb zaplanowany](./scheduled-mode/index.md)
 - **Parowanie z planem** - Połącz urządzenie z planem nabożeństwa kościoła, aby treści były skoordynowane między salami
 - **Dostawcy treści** - Przeglądaj i pobieraj treści z zewnętrznych źródeł, takich jak [Lessons.church](/docs/lessons-church/), Bible Project, Dropbox i OneDrive
-- **Ogłoszenia** - Odtwarzaj w pętli folder slajdów z połączonego dostawcy. Zobacz [Ogłoszenia](./content-providers/announcements)
+- **Ogłoszenia** - Odtwarzaj w pętli folder slajdów z połączonego dostawcy. Zobacz [Ogłoszenia](./content-providers/announcements.md)
 - **Obsługa pilotem telewizora** - Poruszaj się po całej aplikacji za pomocą standardowego pilota telewizyjnego, używając przycisków kierunkowych i przycisku wyboru
 - **Zwijany pasek boczny** - Smukły pasek boczny zapewnia dostęp do nawigacji bez zaśmiecania ekranu
 
@@ -35,10 +36,10 @@ Po uruchomieniu FreePlay łączy się z dostawcami treści i sprawdza dostępne 
 
 ## Sekcje
 
-- **[Pierwsze kroki](./getting-started/)** - Zainstaluj aplikację, uruchom ją i wybierz sposób połączenia
-- **[Tryb zaplanowany](./scheduled-mode/)** - Połącz telewizory z kalendarzem i zarządzaj nimi w FreePlay Admin
-- **[Tryb planu](./plan-mode/)** - Sparuj z planem nabożeństwa kościoła
-- **[Dostawcy treści](./content-providers/)** - Połącz się z zewnętrznymi źródłami treści
+- **[Pierwsze kroki](./getting-started/index.md)** - Zainstaluj aplikację, uruchom ją i wybierz sposób połączenia
+- **[Tryb zaplanowany](./scheduled-mode/index.md)** - Połącz telewizory z kalendarzem i zarządzaj nimi w FreePlay Admin
+- **[Tryb planu](./plan-mode/index.md)** - Sparuj z planem nabożeństwa kościoła
+- **[Dostawcy treści](./content-providers/index.md)** - Połącz się z zewnętrznymi źródłami treści
 
 :::info
 FreePlay jest częścią bezpłatnego, otwartoźródłowego zestawu narzędzi dla kościołów [ChurchApps](https://churchapps.org).

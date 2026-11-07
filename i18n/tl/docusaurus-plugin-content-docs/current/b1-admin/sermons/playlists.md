@@ -1,5 +1,6 @@
 ---
 title: "Mga Playlist"
+description: "Pagsamahin ang mga sermon sa series sa B1 Admin para mabasa at masundan ng mga bisita sa website ng B1.church ang bawat sermon series nang sunud-sunod."
 ---
 
 # Mga Playlist
@@ -39,10 +40,10 @@ Gawin muna ang inyong mga playlist bago magdagdag ng mga sermon. Sa ganitong par
 
 ## Pagdaragdag ng mga Sermon sa Playlist
 
-Kapag [nagdaragdag o nag-e-edit ng sermon](managing-sermons), itinatalaga ninyo ito sa isang playlist gamit ang dropdown na **Playlist**. Ang lahat ng sermon na nakatalaga sa iisang playlist ay pinagsasama-sama at ipinapakita nang may pagkakasunod-sunod sa inyong website.
+Kapag [nagdaragdag o nag-e-edit ng sermon](./managing-sermons.md), itinatalaga ninyo ito sa isang playlist gamit ang dropdown na **Playlist**. Ang lahat ng sermon na nakatalaga sa iisang playlist ay pinagsasama-sama at ipinapakita nang may pagkakasunod-sunod sa inyong website.
 
 :::info
-Maaari rin ninyong itakda ang mga sermon sa mga playlist habang nagba-[Bulk Import](bulk-import). Kapag nag-i-import mula sa YouTube o Vimeo, pumili ng playlist mula sa dropdown na **Import Into Playlist** bago i-click ang **Import**.
+Maaari rin ninyong itakda ang mga sermon sa mga playlist habang nagba-[Bulk Import](./bulk-import.md). Kapag nag-i-import mula sa YouTube o Vimeo, pumili ng playlist mula sa dropdown na **Import Into Playlist** bago i-click ang **Import**.
 :::
 
 ## Paano Lumalabas ang mga Playlist sa Inyong Website
@@ -55,5 +56,5 @@ Ipinapakita ang mga playlist sa inyong B1.church website bilang mga koleksyong m
 
 ## Mga Susunod na Hakbang
 
-- [Pamamahala ng mga Sermon](managing-sermons) -- Magdagdag ng mga indibidwal na sermon sa inyong mga playlist
-- [Bulk Import](bulk-import) -- Mag-import ng maraming sermon at itakda ang mga ito sa mga playlist
+- [Pamamahala ng mga Sermon](./managing-sermons.md) -- Magdagdag ng mga indibidwal na sermon sa inyong mga playlist
+- [Bulk Import](./bulk-import.md) -- Mag-import ng maraming sermon at itakda ang mga ito sa mga playlist

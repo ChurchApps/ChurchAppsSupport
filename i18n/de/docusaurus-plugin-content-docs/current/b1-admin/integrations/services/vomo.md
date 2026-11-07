@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Verbinden Sie VOMO-Freiwilligenanmeldungen und Kiosk-Check-ins über Zapier mit Personen und Gruppen in B1 Admin, inklusive API-Schlüssel-Berechtigungen und Einrichtungsschritten."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ Wenn das VOMO-Projekt endet, löschen Sie die B1-Gruppe manuell (oder koppeln Si
 
 ### Senden Sie einen „Thanks for signing up" Text über SMS
 
-Kettenverkettung VOMO-Partizipation → Clearstream-Textnachricht senden oder Text In Church Nachricht senden im gleichen Zap. Beide haben First-Class Zapier-Aktionen – siehe [Clearstream](./clearstream) und [Text In Church](./text-in-church).
+Kettenverkettung VOMO-Partizipation → Clearstream-Textnachricht senden oder Text In Church Nachricht senden im gleichen Zap. Beide haben First-Class Zapier-Aktionen – siehe [Clearstream](./clearstream.md) und [Text In Church](./text-in-church.md).
 
 ### Erkennen Sie Dropout
 
@@ -91,6 +92,6 @@ Führen Sie einen täglichen Zapier *Schedule* Auslöser aus, der Find Organizer
 
 ## Siehe auch
 
-- [Zapier (Übersicht)](../zapier) – B1-Seite jedes Zapier-Rezepts
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) – koppeln Sie Freiwilligenanmeldungen mit SMS-Bestätigungen
+- [Zapier (Übersicht)](../zapier.md) – B1-Seite jedes Zapier-Rezepts
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) – koppeln Sie Freiwilligenanmeldungen mit SMS-Bestätigungen
 - [Webhooks (Entwickler-Referenz)](/docs/developer/api/webhooks) – die Ereignisse, die VOMO auslösen kann

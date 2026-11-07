@@ -1,5 +1,6 @@
 ---
 title: "Nastavitev tiskalnika"
+description: "Nastavite omrežni tiskalnik nalepk za kioske B1 Checkin: poiščite ga v Wi-Fi omrežju, izberite ga, zaženite preizkusni tisk in shranite izbiro."
 ---
 
 # Nastavitev tiskalnika
@@ -13,7 +14,7 @@ B1 Church Checkin lahko natisne oznake z imeni in izpisnice za prevzem otrok na 
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Prijavite se](./logging-in) v aplikacijo B1 Church Checkin in izberite svojo cerkev
+- [Prijavite se](./logging-in.md) v aplikacijo B1 Church Checkin in izberite svojo cerkev
 - Povežite združljiv mrežni nalepkarski tiskalnik na isto omrežje Wi-Fi kot tablični računalnik
 
 </div>
@@ -87,4 +88,4 @@ Izbira tiskalnika se ohrani tudi po ponovnem zagonu aplikacije. Nastavitve ni tr
 
 ## Naslednji koraki
 
-Ko je tiskalnik nastavljen, ste pripravljeni na prijavo. Celoten postopek si oglejte v [postopku prijave](../check-in/), začnite pa z [izbiro bogoslužja](../check-in/selecting-service).
+Ko je tiskalnik nastavljen, ste pripravljeni na prijavo. Celoten postopek si oglejte v [postopku prijave](../check-in/index.md), začnite pa z [izbiro bogoslužja](../check-in/selecting-service.md).

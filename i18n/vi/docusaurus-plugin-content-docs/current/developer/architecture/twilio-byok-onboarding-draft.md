@@ -6,7 +6,7 @@ description: "Bản nháp thiết lập Twilio do nhà thờ sở hữu trên B1
 # Bản nháp thiết lập Twilio do nhà thờ sở hữu
 
 :::caution Bản nháp cho tích hợp đang được đề xuất
-Đây là quy trình đang được đề xuất. Hiện tại B1 đã có một lựa chọn **Twilio** cơ bản trong **Cài đặt > Nhắn tin** (Account SID, Auth Token, From Number và webhook STOP đến). Xem [Cài đặt nhà thờ: Nhắn tin](../../b1-admin/settings/church-settings.md#texting). Các thiết lập bổ sung của B1, ánh xạ sự đồng ý và các bước kiểm tra bên dưới là yêu cầu cho một bản phát hành trong tương lai, không phải hướng dẫn để tìm các thiết lập hiện có. Đọc [đề xuất kỹ thuật](./twilio-byok-proposal) để biết phạm vi và các phụ thuộc. Các nguồn của Twilio được kiểm tra vào ngày 22 tháng 10 năm 2026; hãy xác minh các yêu cầu hiện hành trước khi gửi chiến dịch.
+Đây là quy trình đang được đề xuất. Hiện tại B1 đã có một lựa chọn **Twilio** cơ bản trong **Cài đặt > Nhắn tin** (Account SID, Auth Token, From Number và webhook STOP đến). Xem [Cài đặt nhà thờ: Nhắn tin](../../b1-admin/settings/church-settings.md#texting). Các thiết lập bổ sung của B1, ánh xạ sự đồng ý và các bước kiểm tra bên dưới là yêu cầu cho một bản phát hành trong tương lai, không phải hướng dẫn để tìm các thiết lập hiện có. Đọc [đề xuất kỹ thuật](./twilio-byok-proposal.md) để biết phạm vi và các phụ thuộc. Các nguồn của Twilio được kiểm tra vào ngày 22 tháng 10 năm 2026; hãy xác minh các yêu cầu hiện hành trước khi gửi chiến dịch.
 :::
 
 ## Cách sắp xếp được khuyến nghị
@@ -34,7 +34,7 @@ Bản đề xuất đầu tiên này bao gồm một số điện thoại địa
 | Tự động hóa hiện có | Không đưa mọi người gửi biểu mẫu hoặc mọi thành viên nhóm vào quy trình nhắn tin. Chỉ ánh xạ sự đồng ý đã được xác minh và đề xuất mới có thể cho phép chương trình đó. |
 | Tin nhắn cảm ơn | Xác nhận rằng biểu mẫu đã được nhận, nhưng không khẳng định người dùng đã đăng ký SMS khi họ bỏ chọn ô hoặc khi việc xác nhận/xét duyệt vẫn đang chờ. |
 
-Một câu hỏi dạng ô đánh dấu hiện có có thể minh họa cho biểu mẫu, nhưng B1 vẫn cần sổ ghi sự đồng ý và các cổng kiểm soát gửi tin. Bộ hiển thị dùng chung hiện tại hiển thị mô tả dưới dạng văn bản thuần; việc nhập Markdown hoặc URL vào đó không đủ để bảo đảm các liên kết chính sách có thể nhấp được. Việc triển khai phải cung cấp một điều khiển đồng ý có thể truy cập, với các liên kết thực sự. Xem [tạo biểu mẫu B1](../../b1-admin/forms/creating-forms) và [đề xuất kỹ thuật](./twilio-byok-proposal#consent-and-suppression-are-required-release-work).
+Một câu hỏi dạng ô đánh dấu hiện có có thể minh họa cho biểu mẫu, nhưng B1 vẫn cần sổ ghi sự đồng ý và các cổng kiểm soát gửi tin. Bộ hiển thị dùng chung hiện tại hiển thị mô tả dưới dạng văn bản thuần; việc nhập Markdown hoặc URL vào đó không đủ để bảo đảm các liên kết chính sách có thể nhấp được. Việc triển khai phải cung cấp một điều khiển đồng ý có thể truy cập, với các liên kết thực sự. Xem [tạo biểu mẫu B1](../../b1-admin/forms/creating-forms.md) và [đề xuất kỹ thuật](./twilio-byok-proposal.md#consent-and-suppression-are-required-release-work).
 
 Twilio yêu cầu sự đồng ý (opt-in) tự nguyện và có thể xác minh. Không gộp SMS với các điều khoản thành viên bắt buộc, quyền nhận email/điện thoại, sự đồng ý quyên góp hoặc đăng ký sự kiện. Số di động trên thẻ khách không tự nó là sự đồng ý nhận SMS. Xem [yêu cầu về sự đồng ý tự nguyện](https://www.twilio.com/docs/api/errors/30923) và [khuyến nghị cho chiến dịch](https://help.twilio.com/hc/en-us/articles/26149060902555-A2P-10DLC-Campaign-Registration-Recommendations) của Twilio.
 

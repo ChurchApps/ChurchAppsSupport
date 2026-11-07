@@ -1,5 +1,6 @@
 ---
 title: "Thiết lập"
+description: "Chọn hướng phát triển cục bộ: dùng API demo dùng chung cho frontend, hoặc chạy toàn bộ hệ thống cùng MySQL cho các thay đổi backend."
 ---
 
 # Thiết lập
@@ -40,15 +41,15 @@ Cách này giúp bạn bắt đầu thay đổi frontend chỉ trong vài phút.
 
 ### 2. Chạy toàn bộ hệ thống cục bộ
 
-Nếu bạn cần chỉnh sửa mã API hoặc làm việc khi không có kết nối mạng, bạn có thể chạy toàn bộ hệ thống cục bộ. Cách này yêu cầu MySQL 8.0 trở lên và cấu hình bổ sung. Xem hướng dẫn [thiết lập API cục bộ](../api/local-setup) để biết hướng dẫn chi tiết.
+Nếu bạn cần chỉnh sửa mã API hoặc làm việc khi không có kết nối mạng, bạn có thể chạy toàn bộ hệ thống cục bộ. Cách này yêu cầu MySQL 8.0 trở lên và cấu hình bổ sung. Xem hướng dẫn [thiết lập API cục bộ](../api/local-setup.md) để biết hướng dẫn chi tiết.
 
 ## Bắt đầu
 
 Hãy làm theo các trang sau theo thứ tự:
 
-1. **[Điều kiện tiên quyết](prerequisites)** -- Cài đặt các công cụ cần thiết (Node.js, Git, MySQL, v.v.)
-2. **[Tổng quan dự án](project-overview)** -- Tìm hiểu các dự án hiện có và chức năng của từng dự án
-3. **[Biến môi trường](environment-variables)** -- Cấu hình các tệp `.env` để kết nối mọi thứ với nhau
+1. **[Điều kiện tiên quyết](./prerequisites.md)** -- Cài đặt các công cụ cần thiết (Node.js, Git, MySQL, v.v.)
+2. **[Tổng quan dự án](./project-overview.md)** -- Tìm hiểu các dự án hiện có và chức năng của từng dự án
+3. **[Biến môi trường](./environment-variables.md)** -- Cấu hình các tệp `.env` để kết nối mọi thứ với nhau
 
 :::info
 Mỗi dự án ChurchApps là một kho Git độc lập. Bạn chỉ cần sao chép (clone) những dự án cụ thể mà bạn muốn làm việc.

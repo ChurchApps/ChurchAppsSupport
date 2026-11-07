@@ -1,5 +1,6 @@
 ---
 title: "Grup Zaman Çizelgesi"
+description: "Gönderileri, sohbetleri ve güncellemeleri tüm gruplarınızdan tek akışta birleştiren B1 Mobile grup zaman çizelgesini ve duraklatıldığında yapılacakları öğrenin."
 ---
 
 # Grup Zaman Çizelgesi
@@ -17,7 +18,7 @@ Grup zaman çizelgesi özelliği, iyileştirmeler yapılırken geçici olarak ku
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
 - Kilisenizdeki en az bir grubun üyesi olun
 
 </div>
@@ -41,7 +42,7 @@ Zaman çizelgesindeki her öğe, hangi gruptan geldiğini gösterir; böylece ok
 Zaman çizelgesi, kilise topluluğunuzla bir bakışta bağlantıda kalmanın harika bir yoludur. Bundan en iyi şekilde yararlanmanız için birkaç ipucu:
 
 - **Düzenli olarak kontrol edin** -- Gruplar ekranını açın ve son etkinlikleri takip etmek için zaman çizelgesinde kaydırın.
-- **Daha fazlası için dokunun** -- Bir gönderi dikkatinizi çekerse, daha fazla bağlam için üzerine dokunun veya grup adına dokunarak tam [grup ayrıntı sayfasına](./group-details) gidin.
+- **Daha fazlası için dokunun** -- Bir gönderi dikkatinizi çekerse, daha fazla bağlam için üzerine dokunun veya grup adına dokunarak tam [grup ayrıntı sayfasına](./group-details.md) gidin.
 - **Her şey tek bir yerde** -- Her grubu ayrı ayrı ziyaret etmenize gerek yok. Zaman çizelgesi tüm etkinlikleri size getirir.
 
 :::info
@@ -54,5 +55,5 @@ Uygulamada olmadığınızda bile gruplarınızda yeni gönderiler göründüğ�
 
 ## İlgili Makaleler
 
-- [Grup Ayrıntıları](./group-details) -- Tek bir grubun tam profilini ve gönderilerini görüntüleyin
+- [Grup Ayrıntıları](./group-details.md) -- Tek bir grubun tam profilini ve gönderilerini görüntüleyin
 - [Bildirimler](../community/notifications.md) -- Grup etkinlikleri hakkında bildirim alın

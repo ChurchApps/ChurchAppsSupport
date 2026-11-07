@@ -1,5 +1,6 @@
 ---
 title: "Söka efter personer"
+description: "Sök i din People-katalog i B1 Admin på namn, sortera och välj kolumner i tabellvyn, skapa filter med Advanced Search och exportera träffarna till CSV."
 ---
 
 # Söka efter personer

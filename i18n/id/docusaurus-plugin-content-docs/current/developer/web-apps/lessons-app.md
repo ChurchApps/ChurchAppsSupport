@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "Siapkan editor pelajaran Next.js LessonsApp secara lokal di Node.js 22+, arahkan ke LessonsApi lokal, dan pahami build serta deployment S3/CloudFront-nya."
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ LessonsApp adalah aplikasi pengelolaan konten pelajaran untuk [Lessons.church](h
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- Pasang **Node.js 22+** dan **Git** -- lihat [Prasyarat](../setup/prerequisites)
-- Konfigurasikan target API Anda (LessonsApi lokal) -- lihat [Variabel Lingkungan](../setup/environment-variables)
+- Pasang **Node.js 22+** dan **Git** -- lihat [Prasyarat](../setup/prerequisites.md)
+- Konfigurasikan target API Anda (LessonsApi lokal) -- lihat [Variabel Lingkungan](../setup/environment-variables.md)
 
 </div>
 
@@ -81,5 +82,5 @@ Build produksi diterapkan ke **S3 + CloudFront**:
 3. Invalidasi CloudFront dipicu agar versi baru disajikan
 
 :::tip
-Untuk petunjuk penerapan yang lebih rinci, lihat panduan [Penerapan Aplikasi Web](../deployment/web-apps).
+Untuk petunjuk penerapan yang lebih rinci, lihat panduan [Penerapan Aplikasi Web](../deployment/web-apps.md).
 :::

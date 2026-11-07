@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Yhdistä Subsplashin lahjoitukset, uudet henkilöt ja lomakevastaukset B1:een Zapierilla, jotta lahjat ja profiilit siirtyvät automaattisesti B1 Adminiin."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Ota Zap käyttöön. Tulevat Subsplash-lahjoitukset siirtyvät **B1Adminin → D
 
 ## Katso myös
 
-- [Donorbox](./donorbox) — sama reseptirakenne, eri lahjoitusalusta
-- [Zapier (yleiskatsaus)](../zapier) — B1:n puoli jokaisesta Zapier-reseptistä
+- [Donorbox](./donorbox.md) — sama reseptirakenne, eri lahjoitusalusta
+- [Zapier (yleiskatsaus)](../zapier.md) — B1:n puoli jokaisesta Zapier-reseptistä
 - [Subsplashin Zapier-integraation ohje](https://support.subsplash.com/en/articles/9825926-zapier-integration) (Subsplashin dokumentaatio)

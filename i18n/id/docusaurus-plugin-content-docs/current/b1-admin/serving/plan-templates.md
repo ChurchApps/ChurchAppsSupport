@@ -1,5 +1,6 @@
 ---
 title: "Templat Rencana"
+description: "Simpan urutan ibadah dan posisi pelayanan sebagai templat yang dapat dipakai ulang di B1 Admin, lalu terapkan ke rencana mendatang dengan satu klik."
 ---
 
 # Templat Rencana

@@ -1,5 +1,7 @@
 ---
-title: "Historial de Donaciones"
+title: "Ver el historial de donativos en B1 Mobile"
+sidebar_label: "Historial de Donaciones"
+description: "Consulte sus donativos del año, su último donativo y el registro completo de donativos en B1 Mobile, y repita un donativo anterior con un toque desde la pestaña Resumen."
 ---
 
 # Historial de Donaciones
@@ -13,8 +15,8 @@ B1 Mobile te brinda una visión clara de tus ofrendas a través de dos pestañas
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instala B1 Mobile](../getting-started/installing) e [inicia sesión](../getting-started/logging-in) en tu cuenta
-- [Realiza al menos una donación](./making-donations) para ver tu historial
+- [Instala B1 Mobile](../getting-started/installing.md) e [inicia sesión](../getting-started/logging-in.md) en tu cuenta
+- [Realiza al menos una donación](./making-donations.md) para ver tu historial
 
 </div>
 
@@ -45,5 +47,5 @@ Revisa la pestaña **Resumen** regularmente para mantenerte al tanto de tus meta
 
 ## Artículos Relacionados
 
-- [Realizar una Donación](./making-donations) -- Haz una nueva ofrenda desde la aplicación
-- [Administrar Métodos de Pago](./managing-payments) -- Agrega o elimina métodos de pago guardados
+- [Realizar una Donación](./making-donations.md) -- Haz una nueva ofrenda desde la aplicación
+- [Administrar Métodos de Pago](./managing-payments.md) -- Agrega o elimina métodos de pago guardados

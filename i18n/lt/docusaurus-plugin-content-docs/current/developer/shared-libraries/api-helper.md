@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "@churchapps/apihelper paketo nuoroda (Packages darbo sritis): vietinis kūrimas, testavimas su Yarn portalu ir publikavimas su changesets."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ Paketas `@churchapps/apihelper` teikia serverio pusės pagalbines priemones viso
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Įdiekite **Node.js** ir **Git** -- žr. [Reikalavimai](../setup/prerequisites)
+- Įdiekite **Node.js** ir **Git** -- žr. [Reikalavimai](../setup/prerequisites.md)
 - Susipažinkite su [Paketų darbo sritimi](./index.md) ir leidimo eiga
-- Šis paketas priklauso nuo [`@churchapps/helpers`](./helpers) (kaip lygiavertis priklausomybė) ir jį eksportuoja toliau
+- Šis paketas priklauso nuo [`@churchapps/helpers`](./helpers.md) (kaip lygiavertis priklausomybė) ir jį eksportuoja toliau
 
 </div>
 
@@ -65,6 +66,6 @@ Leidimai vykdomi per changesets: su kiekvienu pakeitimu šakniniame darbo sritie
 
 ## Susiję straipsniai
 
-- **[Helpers](./helpers)** -- Bazinis pagalbinių funkcijų paketas, nuo kurio priklauso šis paketas
-- **[Modulio struktūra](../api/module-structure)** -- Kaip valdikliai ir autentifikacijos tarpiniai programinės įrangos komponentai naudojami API moduliuose
-- **[Vietinė API sąranka](../api/local-setup)** -- API paruošimas vietiniam kūrimui
+- **[Helpers](./helpers.md)** -- Bazinis pagalbinių funkcijų paketas, nuo kurio priklauso šis paketas
+- **[Modulio struktūra](../api/module-structure.md)** -- Kaip valdikliai ir autentifikacijos tarpiniai programinės įrangos komponentai naudojami API moduliuose
+- **[Vietinė API sąranka](../api/local-setup.md)** -- API paruošimas vietiniam kūrimui

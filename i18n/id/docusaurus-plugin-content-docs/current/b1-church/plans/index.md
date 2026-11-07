@@ -1,5 +1,6 @@
 ---
 title: "Rencana"
+description: "Lihat rencana pelayanan yang ditugaskan kepada Anda di B1.church, periksa posisi dan tanggal, lalu terima atau tolak tugas dari portal anggota."
 ---
 
 # Rencana

@@ -1,5 +1,7 @@
 ---
-title: "Ilmoittautuminen tapahtumiin"
+title: "Tapahtumailmoittautuminen B1.churchissa"
+sidebar_label: "Ilmoittautuminen tapahtumiin"
+description: "Ilmoittaudu tapahtumaan B1.churchissa: anna tietosi, lisää perheenjäseniä, valitse vaihtoehdot, käytä alennuskoodeja ja maksa tai liity jonoon."
 ---
 
 # Ilmoittautuminen tapahtumiin
@@ -79,14 +81,14 @@ Vahvistusviesti näyttää tapahtuman tiedot ja luettelon kaikista ilmoittautune
 
 ## Odotuslistalle liittyminen
 
-Jos tapahtuma on täynnä ja seurakuntasi on ottanut käyttöön odotuslistan, ensimmäisessä vaiheessa näkyy teksti: *"Tapahtuma on täynnä. Voit liittyä odotuslistalle, ja ilmoitamme sinulle, jos paikka vapautuu."* Tee ilmoittautuminen tavalliseen tapaan -- maksu ohitetaan, kun olet odotuslistalla. Kun paikka vapautuu, saat sähköpostin. Jos maksu on erääntynyt, viestissä on linkki maksun suorittamiseen. Voit myös tarkistaa tilanteesi ja maksaa [Omat ilmoittautumiset](./my-registrations) -sivulta.
+Jos tapahtuma on täynnä ja seurakuntasi on ottanut käyttöön odotuslistan, ensimmäisessä vaiheessa näkyy teksti: *"Tapahtuma on täynnä. Voit liittyä odotuslistalle, ja ilmoitamme sinulle, jos paikka vapautuu."* Tee ilmoittautuminen tavalliseen tapaan -- maksu ohitetaan, kun olet odotuslistalla. Kun paikka vapautuu, saat sähköpostin. Jos maksu on erääntynyt, viestissä on linkki maksun suorittamiseen. Voit myös tarkistaa tilanteesi ja maksaa [Omat ilmoittautumiset](./my-registrations.md) -sivulta.
 
 ## Ilmoittautumisen muuttaminen tai peruminen
 
-Jos olet kirjautunut sisään, voit muokata tai perua ilmoittautumisesi itse jäsenportaalin **Ilmoittautumiset**-sivulta. Katso [Omat ilmoittautumiset](./my-registrations). Vieraiden tulee ottaa yhteyttä seurakunnan toimistoon, ja henkilökunta voi tehdä muutoksen B1 Adminin ilmoittautumissivulta.
+Jos olet kirjautunut sisään, voit muokata tai perua ilmoittautumisesi itse jäsenportaalin **Ilmoittautumiset**-sivulta. Katso [Omat ilmoittautumiset](./my-registrations.md). Vieraiden tulee ottaa yhteyttä seurakunnan toimistoon, ja henkilökunta voi tehdä muutoksen B1 Adminin ilmoittautumissivulta.
 
 ## Liittyvät artikkelit
 
 - [Tapahtumien yleiskatsaus](./index.md) -- Selaa tulevia ilmoittautumista vaativia tapahtumia
-- [Omat ilmoittautumiset](./my-registrations) -- Katso, muokkaa, maksa saldoja ja peru ilmoittautumisesi
-- [Lahjoitusten tekeminen](../giving/making-donations) -- Tee lahjoitus tapahtumaan osallistumisen yhteydessä
+- [Omat ilmoittautumiset](./my-registrations.md) -- Katso, muokkaa, maksa saldoja ja peru ilmoittautumisesi
+- [Lahjoitusten tekeminen](../giving/making-donations.md) -- Tee lahjoitus tapahtumaan osallistumisen yhteydessä

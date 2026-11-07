@@ -1,5 +1,6 @@
 ---
 title: "Dodajanje gostov"
+description: "Na kiosku B1 Checkin dodajte gostujočega otroka, sorodnika ali prijatelja v gospodinjstvo, nato mu dodelite skupine in dokončajte prijavo."
 ---
 
 # Dodajanje gostov
@@ -13,8 +14,8 @@ title: "Dodajanje gostov"
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Poiščite svojo družino](./looking-up-members) in izberite člana iz rezultatov iskanja
-- Bodite na [zaslonu za pregled gospodinjstva](./household-review), kjer lahko vidite člane vaše družine
+- [Poiščite svojo družino](./looking-up-members.md) in izberite člana iz rezultatov iskanja
+- Bodite na [zaslonu za pregled gospodinjstva](./household-review.md), kjer lahko vidite člane vaše družine
 
 </div>
 
@@ -36,8 +37,8 @@ Gost je dodan v vaše gospodinjstvo, vi pa se vrnete na zaslon za pregled gospod
 
 Ko se gost prikaže na seznamu vašega gospodinjstva, lahko:
 
-- **Razširite njegovo kartico** in ga [dodelite skupini](./group-assignment), enako kot katerega koli drugega člana družine.
-- **[Prijavite](./completing-checkin)** celotno gospodinjstvo, vključno z gostom.
+- **Razširite njegovo kartico** in ga [dodelite skupini](./group-assignment.md), enako kot katerega koli drugega člana družine.
+- **[Prijavite](./completing-checkin.md)** celotno gospodinjstvo, vključno z gostom.
 
 ## Preklic
 
@@ -49,4 +50,4 @@ Dodajanje gosta na kiosku ustvari zapis osebe v bazi podatkov vaše cerkve. Cerk
 
 ## Naslednji korak
 
-Ko dodate goste in po potrebi [dodelite skupine](./group-assignment), ste pripravljeni, da [dokončate prijavo](./completing-checkin).
+Ko dodate goste in po potrebi [dodelite skupine](./group-assignment.md), ste pripravljeni, da [dokončate prijavo](./completing-checkin.md).

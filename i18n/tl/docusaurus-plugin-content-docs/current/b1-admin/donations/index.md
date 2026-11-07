@@ -1,5 +1,6 @@
 ---
 title: "Mga Donasyon"
+description: "Itala, ayusin, at iulat ang handog ng simbahan sa B1 Admin, mula batch at pondo hanggang taunang statement at online donasyon sa Stripe o PayPal."
 ---
 
 # Mga Donasyon

@@ -1,5 +1,7 @@
 ---
-title: "Profilo"
+title: "Impostazioni profilo e dispositivi in B1 Admin"
+sidebar_label: "Profilo"
+description: "Aggiorna nome, email, password, accesso a due fattori, tema e dispositivi collegati nel tuo profilo B1 Admin, e approva le modifiche dei membri."
 ---
 
 # Profilo

@@ -1,5 +1,6 @@
 ---
 title: "Aviseringar och påminnelser: arkitektur"
+description: "Hur B1 Admin API:et dirigerar aviseringar, schemalagda påminnelser, gränser för församlings-e-post och sms-avregistreringar genom en enda leveranstratt och preferensspärr."
 ---
 
 # Aviseringar och påminnelser: arkitektur
@@ -185,6 +186,6 @@ Lokalt kan samma logik köras på begäran med `npm run timer:30min` och `npm ru
 
 ## Relaterade sidor
 
-- [Realtidsarkitektur](../realtime): WebSocket-protokollet och klientprimitiverna (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) som leveransnivån i appen bygger på
-- [Webbpushnotiser](../web-push): VAPID-inställning och webbläsarens Push API-väg, som används av pushnivån i eskaleringen
-- [Slutpunkter för messaging](../api/endpoints/messaging): hela REST-ytan för meddelanden, konversationer, kontakter och rutter för aviseringar och påminnelser
+- [Realtidsarkitektur](../realtime.md): WebSocket-protokollet och klientprimitiverna (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) som leveransnivån i appen bygger på
+- [Webbpushnotiser](../web-push.md): VAPID-inställning och webbläsarens Push API-väg, som används av pushnivån i eskaleringen
+- [Slutpunkter för messaging](../api/endpoints/messaging.md): hela REST-ytan för meddelanden, konversationer, kontakter och rutter för aviseringar och påminnelser

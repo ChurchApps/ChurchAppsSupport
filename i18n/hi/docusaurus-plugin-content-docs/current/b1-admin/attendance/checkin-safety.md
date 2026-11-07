@@ -1,5 +1,6 @@
 ---
 title: "चेक-इन सुरक्षा"
+description: "B1 Admin में बाल-सुरक्षा नियंत्रण सेट करें: कमरे की क्षमता, स्वयंसेवक अनुपात, विश्वसनीय पिकअप सूचियाँ और चेक-इन के लिए माता-पिता को पेज संदेश।"
 ---
 
 # चेक-इन सुरक्षा
@@ -15,7 +16,7 @@ B1 में चेक-इन के लिए बाल-सुरक्षा �
 
 - अपनी [attendance structure](setup.md) और [check-in kiosks](check-in.md) को सेट अप करें
 - कमरे [groups](../groups/creating-groups.md) हैं जो सेवा समय से जुड़े हैं — नीचे दी गई सुरक्षा सेटिंग्स समूह पर रहती हैं
-- Page-a-parent और emergency broadcast के लिए एक जुड़े texting प्रदाता की आवश्यकता है ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), या Mutual Ministry)
+- Page-a-parent और emergency broadcast के लिए एक जुड़े texting प्रदाता की आवश्यकता है ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md), या Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Capacity और Closed for Check-In हमेशा कठिन सीमाए
 
 जिन लोगों ने texts को opt out किया है, या जिनके पास कोई mobile नंबर फाइल पर नहीं है, उन्हें स्वचालित रूप से छोड़ दिया जाता है — किस्क दिखाता है कितने संदेश भेजे गए और कितने छोड़ दिए गए।
 
-किस्क-साइड walkthrough देखें [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out)।
+किस्क-साइड walkthrough देखें [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out.md)।
 
 ## संबंधित आलेख
 
 - [Check-In](check-in.md) — किस्क सेटअप और हार्डवेयर
-- [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out) — किस्क चेक-आउट, पिकअप verification, और paging flows
+- [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out.md) — किस्क चेक-आउट, पिकअप verification, और paging flows
 - [Creating Groups](../groups/creating-groups.md) — जहां कमरे की सेटिंग्स रहती हैं
 - [Attendance Setup](setup.md) — सेवाएं, सेवा समय, और कमरे असाइनमेंट
 - [Minimum Age for Private Messages](../settings/mobile-app.md#member-directory--messaging-settings) — बच्चों को निर्देशिका में रखते हुए नई निजी-संदेश बातचीत को ब्लॉक करता है

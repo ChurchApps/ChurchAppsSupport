@@ -1,5 +1,6 @@
 ---
 title: "Tömeges importálás"
+description: "Importáljon igehirdetési videókat tömegesen YouTube-csatornából vagy Vimeo-fiókból a B1 Adminba, majd rendezze őket lejátszási listába."
 ---
 
 # Tömeges importálás
@@ -14,7 +15,7 @@ A Tömeges importálás oldalon gyorsan feltöltheti igehirdetés-könyvtárát 
 <h4>Mielőtt elkezdi</h4>
 
 - Szüksége lesz a **contentApi.streamingServices.edit** jogosultságra. Ha nincs hozzáférése, tekintse meg a [Szerepkörök és jogosultságok](../settings/roles-permissions.md) oldalt.
-- Hozzon létre legalább egy [lejátszási listát](playlists), amelybe az igehirdetéseket importálhatja
+- Hozzon létre legalább egy [lejátszási listát](./playlists.md), amelybe az igehirdetéseket importálhatja
 - Legyen kéznél a YouTube-csatorna azonosítója vagy a Vimeo-fiók adatai
 
 </div>
@@ -39,7 +40,7 @@ Videók importálása előtt legalább egy lejátszási listára van szüksége,
 2. Kattintson az **Első lejátszási lista létrehozása** gombra, és adja meg a nevet, a leírást, a közzétételi dátumot és a bélyegképet.
 3. Kattintson a **Mentés** gombra, majd az **Igehirdetés hozzáadása** gombra kattintva és a **Tömeges importálás** lehetőséget választva térjen vissza a tömeges importáláshoz.
 
-A lejátszási listák létrehozásáról és kezeléséről részletes útmutatót a [Lejátszási listák](playlists) oldalon talál.
+A lejátszási listák létrehozásáról és kezeléséről részletes útmutatót a [Lejátszási listák](./playlists.md) oldalon talál.
 
 ## Videók importálása
 
@@ -54,11 +55,11 @@ A lejátszási listák létrehozásáról és kezeléséről részletes útmutat
 A videók minden adatukkal együtt importálódnak, beleértve a címeket, a leírásokat, a dátumokat és a bélyegképeket. A YouTube-címekben és -leírásokban lévő speciális karakterek, például a `&`, az aposztrófok és az idézőjelek úgy jelennek meg, ahogy be vannak írva, nem pedig olyan kódokként, mint a `&amp;`.
 
 :::info
-A tömeges importálás ideális kezdéshez, ha másik platformról költözik át. Az egyes igehirdetések későbbi hozzáadásához a [Igehirdetések kezelése](managing-sermons) oldalt használja.
+A tömeges importálás ideális kezdéshez, ha másik platformról költözik át. Az egyes igehirdetések későbbi hozzáadásához a [Igehirdetések kezelése](./managing-sermons.md) oldalt használja.
 :::
 
 ## Következő lépések
 
-- [Igehirdetések kezelése](managing-sermons) -- Az importált igehirdetések adatainak szerkesztése
-- [Lejátszási listák](playlists) -- Igehirdetés-sorozatok létrehozása és kezelése
-- [Élő közvetítés](live-streaming) -- Élő közvetítés beállítása az istentiszteleteihez
+- [Igehirdetések kezelése](./managing-sermons.md) -- Az importált igehirdetések adatainak szerkesztése
+- [Lejátszási listák](./playlists.md) -- Igehirdetés-sorozatok létrehozása és kezelése
+- [Élő közvetítés](./live-streaming.md) -- Élő közvetítés beállítása az istentiszteleteihez

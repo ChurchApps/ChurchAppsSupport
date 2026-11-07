@@ -1,5 +1,6 @@
 ---
 title: "Lecture du contenu"
+description: "Piloter FreePlay à la télécommande : pause, passage des diapositives et vidéos, accès à tout message, et sortie du lecteur depuis le contenu."
 ---
 
 # Lecture du contenu
@@ -13,13 +14,13 @@ Le lecteur FreePlay occupe tout l'écran et est conçu pour les télécommandes 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Choisissez le contenu à lire. Voir [Parcourir et télécharger du contenu](./browsing-content), [Mode Plan](../plan-mode/) ou [Annonces](./announcements)
+- Choisissez le contenu à lire. Voir [Parcourir et télécharger du contenu](./browsing-content.md), [Mode Plan](../plan-mode/index.md) ou [Annonces](./announcements.md)
 - Appuyez sur **Start** (Démarrer) pour ouvrir le lecteur
 
 </div>
 
 :::info
-Les écrans associés à un calendrier utilisent un lecteur programmé distinct, aux commandes légèrement différentes. Voir [Lecture programmée sur le téléviseur](../scheduled-mode/scheduled-playback).
+Les écrans associés à un calendrier utilisent un lecteur programmé distinct, aux commandes légèrement différentes. Voir [Lecture programmée sur le téléviseur](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Commandes du lecteur
@@ -57,7 +58,7 @@ Appuyez sur **Up** (Haut) pendant la lecture pour ouvrir **Select a Message** (S
 Appuyez sur **Down** (Bas) ou **Back** (Retour) sur votre télécommande pour quitter le lecteur. Où vous arrivez dépend de ce que vous lisiez :
 
 - **Contenu d'un fournisseur** - Retour au navigateur de contenu
-- **Un plan** - Retour à l'écran de téléchargement du plan. Voir [Mode Plan](../plan-mode/)
+- **Un plan** - Retour à l'écran de téléchargement du plan. Voir [Mode Plan](../plan-mode/index.md)
 - **Un téléchargement** - Retour à l'écran **Downloads** (Téléchargements)
 
 :::info
@@ -66,5 +67,5 @@ L'écran reste allumé pendant que le lecteur est ouvert, afin que le télévise
 
 ## Articles associés
 
-- **[Parcourir et télécharger du contenu](./browsing-content)** - Trouver du contenu et le télécharger pour une lecture hors ligne
-- **[Lecture programmée sur le téléviseur](../scheduled-mode/scheduled-playback)** - Commandes de la télécommande pour les écrans qui suivent un calendrier
+- **[Parcourir et télécharger du contenu](./browsing-content.md)** - Trouver du contenu et le télécharger pour une lecture hors ligne
+- **[Lecture programmée sur le téléviseur](../scheduled-mode/scheduled-playback.md)** - Commandes de la télécommande pour les écrans qui suivent un calendrier

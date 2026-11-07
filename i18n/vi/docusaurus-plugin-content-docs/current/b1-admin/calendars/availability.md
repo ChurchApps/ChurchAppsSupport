@@ -1,5 +1,6 @@
 ---
 title: "Lịch khả dụng"
+description: "Thiết lập phòng và thiết bị có thể đặt trong B1 Admin, đặt lịch trên lịch chung, thêm đệm chuẩn bị và dọn dẹp, và xử lý đặt định kỳ hoặc cần phê duyệt."
 ---
 
 # Lịch khả dụng
@@ -13,7 +14,7 @@ Lịch khả dụng giúp bạn xem tổng quan về tất cả các lượt đ�
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Thiết lập ít nhất một [phòng hoặc tài nguyên](rooms-resources) trong mục Phòng & Tài nguyên
+- Thiết lập ít nhất một [phòng hoặc tài nguyên](./rooms-resources.md) trong mục Phòng & Tài nguyên
 - Bạn cần có quyền chỉnh sửa mục Lịch trong B1 Admin
 
 </div>
@@ -58,7 +59,7 @@ Sử dụng danh sách thả xuống **Room / Resource** ở góc trên bên tr�
 6. Nhấp **Save** để gửi lượt đặt.
 
 :::info
-Nếu phòng hoặc tài nguyên đã được cấu hình **Approval Group**, lượt đặt sẽ hiển thị là **Pending** cho đến khi một người lãnh đạo của nhóm đó duyệt. Xem [Duyệt lịch](approvals) để biết quy trình duyệt.
+Nếu phòng hoặc tài nguyên đã được cấu hình **Approval Group**, lượt đặt sẽ hiển thị là **Pending** cho đến khi một người lãnh đạo của nhóm đó duyệt. Xem [Duyệt lịch](./approvals.md) để biết quy trình duyệt.
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Lịch sẽ đánh dấu mọi xung đột trước khi bạn lưu. Nếu bạn 
 
 ## Bài viết liên quan
 
-- [Phòng, Tài nguyên & Lập lịch](rooms-resources) — thiết lập các không gian và thiết bị có thể đặt trước
-- [Duyệt lịch](approvals) — duyệt hoặc từ chối yêu cầu đặt chỗ
-- [Tạo lịch](creating-calendars) — quản lý các lịch sự kiện
+- [Phòng, Tài nguyên & Lập lịch](./rooms-resources.md) — thiết lập các không gian và thiết bị có thể đặt trước
+- [Duyệt lịch](./approvals.md) — duyệt hoặc từ chối yêu cầu đặt chỗ
+- [Tạo lịch](./creating-calendars.md) — quản lý các lịch sự kiện

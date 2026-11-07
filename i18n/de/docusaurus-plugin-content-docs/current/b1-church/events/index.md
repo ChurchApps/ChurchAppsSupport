@@ -1,5 +1,7 @@
 ---
-title: "Veranstaltungen"
+title: "Gemeindetermine auf B1.church: ansehen und anmelden"
+sidebar_label: "Veranstaltungen"
+description: "Kommende Gemeindeveranstaltungen auf B1.church durchsehen, den Anmeldestatus prüfen und sich anmelden oder Termine in den Kalender eintragen."
 ---
 
 # Veranstaltungen
@@ -43,7 +45,7 @@ Ist eine Veranstaltung ausgebucht, können Sie unter Umständen trotzdem die **W
 
 ## Mehr erfahren
 
-- [Für Veranstaltungen anmelden](./registering) — Schritt-für-Schritt-Anleitung zur Anmeldung für eine Veranstaltung
-- [Meine Anmeldungen](./my-registrations) — Ihre Anmeldungen einsehen, Restbeträge bezahlen, bearbeiten oder stornieren
-- [Veranstaltungen & Räume anfragen](./requesting-events) — Eine Veranstaltung mit den benötigten Räumen und Ressourcen beantragen
-- [Self Check-In](../checkin/self-checkin) — Einchecken, wenn Sie bei der Veranstaltung ankommen
+- [Für Veranstaltungen anmelden](./registering.md) — Schritt-für-Schritt-Anleitung zur Anmeldung für eine Veranstaltung
+- [Meine Anmeldungen](./my-registrations.md) — Ihre Anmeldungen einsehen, Restbeträge bezahlen, bearbeiten oder stornieren
+- [Veranstaltungen & Räume anfragen](./requesting-events.md) — Eine Veranstaltung mit den benötigten Räumen und Ressourcen beantragen
+- [Self Check-In](../checkin/self-checkin.md) — Einchecken, wenn Sie bei der Veranstaltung ankommen

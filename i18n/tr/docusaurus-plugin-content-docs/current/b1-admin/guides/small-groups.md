@@ -1,5 +1,6 @@
 ---
 title: "Kılavuz: Küçük Grupları Yönetin"
+description: "B1 Admin'de küçük gruplar, Kutsal Kitap çalışmaları ve hizmet ekipleri kurun; ardından B1 web sitenize kilise geneli takvim ve grup bölümü yayınlayın."
 ---
 
 # Küçük Grupları Yönetin
@@ -78,7 +79,7 @@ Gruplarınızın ve takviminizin B1 web sitenizde ziyaretçilere ve üyelere gö
 
 1. Üyeler gruplara [B1.church](../../b1-church/groups/browsing-groups.md) üzerinden göz atıp katılabilir
 2. Grup üyeleri ayrıntıları ve takvimleri görüntüleyebilir ve [sohbetlerde](../../b1-church/groups/conversations.md) paylaşımda bulunabilir
-3. Tüm grup özellikleri [B1 Mobile uygulamasında](../../b1-mobile/groups/) da kullanılabilir
+3. Tüm grup özellikleri [B1 Mobile uygulamasında](../../b1-mobile/groups/index.md) da kullanılabilir
 
 :::info
 Üyeler gruplarını, yaklaşan etkinliklerini ve grup sohbetlerini hem web'de hem de mobilde görür — her şey senkron kalır.
@@ -97,4 +98,4 @@ Küçük gruplarınız kuruldu ve birbirine bağlandı. Üyeler grupları keşfe
 - [Seçilmiş Takvim](../calendars/curated-calendar.md) — birleşik bir kilise takvimi oluşturun
 - [Gruplara Göz Atma (Web)](../../b1-church/groups/browsing-groups.md) — üyelerin grupları nasıl bulduğu
 - [Grup Sohbetleri (Web)](../../b1-church/groups/conversations.md) — grup tartışmaları
-- [Gruplar (Mobil)](../../b1-mobile/groups/) — mobil uygulamada gruplar
+- [Gruplar (Mobil)](../../b1-mobile/groups/index.md) — mobil uygulamada gruplar

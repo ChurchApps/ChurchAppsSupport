@@ -1,5 +1,6 @@
 ---
 title: "Câmpuri personalizate"
+description: "Definește câmpuri personalizate în B1 Admin, de pildă data expirării verificării de cazier sau mărimea tricoului, apoi caută și filtrează după ele."
 ---
 
 # Câmpuri personalizate

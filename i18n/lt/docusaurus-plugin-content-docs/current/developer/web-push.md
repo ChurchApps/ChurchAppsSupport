@@ -1,5 +1,6 @@
 ---
 title: "Web Push pranešimai"
+description: "VAPID raktų, WebPushHelper kliento ir paslaugų darbuotojo tvarkymo sąranka, kad B1.church ir B1 Admin galėtų siųsti naršyklės pranešimus nariams."
 ---
 
 # Web Push pranešimai
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Susiję puslapiai
 
-- [Pranešimų architektūra](./architecture/notifications) -- Visa programos viduje, push ir el. pašto eskalavimo grandinė bei priminimų variklis
-- [Realaus laiko architektūra](./realtime) -- WebSocket pristatymas; push dabar siunčiamas iš tos pačios programos pranešimų grandinės kartu su socket pristatymu toje pačioje eigoje, o ne tik kaip atsarginis variantas, kai socket pristatymas nepavyksta
-- [Messaging galiniai taškai](./api/endpoints/messaging) -- Pranešimai, įrenginiai ir likęs messaging paviršius
-- [AppHelper](./shared-libraries/app-helper) -- npm paketas, kuriame pateikiamas `WebPushHelper`
+- [Pranešimų architektūra](./architecture/notifications.md) -- Visa programos viduje, push ir el. pašto eskalavimo grandinė bei priminimų variklis
+- [Realaus laiko architektūra](./realtime.md) -- WebSocket pristatymas; push dabar siunčiamas iš tos pačios programos pranešimų grandinės kartu su socket pristatymu toje pačioje eigoje, o ne tik kaip atsarginis variantas, kai socket pristatymas nepavyksta
+- [Messaging galiniai taškai](./api/endpoints/messaging.md) -- Pranešimai, įrenginiai ir likęs messaging paviršius
+- [AppHelper](./shared-libraries/app-helper.md) -- npm paketas, kuriame pateikiamas `WebPushHelper`

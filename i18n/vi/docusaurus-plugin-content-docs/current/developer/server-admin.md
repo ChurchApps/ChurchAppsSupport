@@ -1,5 +1,6 @@
 ---
 title: "Quản trị máy chủ"
+description: "Chỉ dành cho người dùng Server.Admin: đặt lại đăng nhập hai lớp, mạo danh tài khoản, kiểm duyệt Commons và phê duyệt email của nhà thờ trong B1 Admin."
 ---
 
 # Quản trị máy chủ

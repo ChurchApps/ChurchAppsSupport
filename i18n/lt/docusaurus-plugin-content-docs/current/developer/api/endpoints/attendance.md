@@ -1,5 +1,6 @@
 ---
 title: "Lankomumo galutiniai taškai"
+description: "Lankomumo API nuorodos B1 Admin ir B1 Checkin: filialai, pamaldos, laikai, sesijos, apsilankymai, registracijos taisyklės ir eksporto galiniai taškai."
 ---
 
 # Lankomumo galutiniai taškai
@@ -270,6 +271,6 @@ Seka asmenų lankomumo serijas – iš eilės einančias savaites, per kurias as
 
 ## Susiję puslapiai
 
-- [Narystės galutiniai taškai](./membership) — Asmenys, grupės, vaidmenys ir bažnyčios valdymas
-- [Autentifikacija ir leidimai](./authentication) — Prisijungimo eiga, JWT, leidimų modelis
-- [Modulio struktūra](../module-structure) — Kodo organizavimo modeliai
+- [Narystės galutiniai taškai](./membership.md) — Asmenys, grupės, vaidmenys ir bažnyčios valdymas
+- [Autentifikacija ir leidimai](./authentication.md) — Prisijungimo eiga, JWT, leidimų modelis
+- [Modulio struktūra](../module-structure.md) — Kodo organizavimo modeliai

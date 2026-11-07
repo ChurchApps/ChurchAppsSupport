@@ -1,5 +1,7 @@
 ---
-title: "Medlemsregister"
+title: "Medlemsoversigt i B1.church medlemsportalen"
+sidebar_label: "Medlemsregister"
+description: "Søg og gennemse kirkens medlemmer i B1.church-oversigten, se deres profiler og husstandsmedlemmer, og se hvem der kan få adgang til oversigten."
 ---
 
 # Medlemsregister

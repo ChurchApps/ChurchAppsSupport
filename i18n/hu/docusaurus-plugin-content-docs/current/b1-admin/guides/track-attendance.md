@@ -1,5 +1,6 @@
 ---
 title: "Útmutató: Gyülekezeti látogatottság nyomon követése"
+description: "Gyülekezeti részvétel követése a B1 Admin-ban: campusok és szolgálati idők beállítása, rögzítés kézzel vagy önbejelentkezéssel, és jelentések olvasása."
 ---
 
 # Gyülekezeti látogatottság nyomon követése

@@ -1,5 +1,6 @@
 ---
 title: "Donaties registreren"
+description: "Registreer kerkgiften in B1 Admin: maak een batch aan, voer giften één voor één in, importeer een CSV of registreer één gift vanaf een donorprofiel."
 ---
 
 # Donaties registreren

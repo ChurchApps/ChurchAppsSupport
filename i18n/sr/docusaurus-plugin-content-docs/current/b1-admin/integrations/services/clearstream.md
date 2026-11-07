@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Повежите Clearstream SMS са B1 Admin преко Zapier: шаљите поруке при новим поклонима или пријавама образаца и враћајте одговоре као особе."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Clearstream-ове Zapier радње: *Send Text to Number*, *Send Text to List*
 
 ## Погледајте и
 
-- [Text In Church](./text-in-church): алтернативна SMS платформа сличне структуре повезивања
-- [Mobile Message](./mobile-message): за цркве ван САД
-- [Zapier (преглед)](../zapier): B1 страна сваког Zapier рецепта
+- [Text In Church](./text-in-church.md): алтернативна SMS платформа сличне структуре повезивања
+- [Mobile Message](./mobile-message.md): за цркве ван САД
+- [Zapier (преглед)](../zapier.md): B1 страна сваког Zapier рецепта
 - [Clearstream API документација](https://api-docs.clearstream.io/): за прилагођене интеграције изван Zapier додатка

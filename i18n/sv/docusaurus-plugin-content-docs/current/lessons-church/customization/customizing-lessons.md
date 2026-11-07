@@ -1,5 +1,6 @@
 ---
 title: "Anpassa lektioner"
+description: "Ta bort, dölj eller ordna om sektioner och roller i en Lessons.church-lektion och välj om ändringarna gäller ett klassrum eller alla."
 ---
 
 # Anpassa lektioner

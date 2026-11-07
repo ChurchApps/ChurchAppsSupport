@@ -1,5 +1,6 @@
 ---
 title: "Customizing Lessons"
+description: "Verwijder, verberg of herschik onderdelen en rollen in een Lessons.church-les, en kies of de wijzigingen voor één klaslokaal of voor alle gelden."
 ---
 
 # Customizing Lessons

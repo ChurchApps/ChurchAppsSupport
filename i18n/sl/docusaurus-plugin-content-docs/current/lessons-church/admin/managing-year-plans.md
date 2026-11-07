@@ -1,5 +1,6 @@
 ---
 title: "Upravljanje letnih načrtov"
+description: "Ustvari letni načrt tedenskih ur v Lessons.church, usidraj tedne na Veliko noč ali božič in ga objavi, da ga cerkve uporabijo v B1 Admin."
 ---
 
 # Upravljanje letnih načrtov

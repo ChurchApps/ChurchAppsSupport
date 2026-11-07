@@ -1,5 +1,6 @@
 ---
 title: "Välja en enhet"
+description: "Välj rätt enhet för FreePlay-klassrums-TV i ChurchApps supportdokumentation, från Fire TV Stick och Onn-boxar till Apple TV, och vilka du bör undvika."
 ---
 
 # Välja en enhet för FreePlay

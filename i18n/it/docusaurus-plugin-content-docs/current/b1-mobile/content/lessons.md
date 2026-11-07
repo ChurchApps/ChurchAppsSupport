@@ -1,5 +1,7 @@
 ---
-title: "Lezioni"
+title: "Schermata Lezioni in B1 Mobile (ritirata)"
+sidebar_label: "Lezioni"
+description: "Pagina Lezioni (obsoleta): perché la schermata Lezioni in B1 Mobile è stata ritirata e dove trovare ora i programmi di studio (FreePlay o Lessons.church)."
 ---
 
 # Lezioni
@@ -13,7 +15,7 @@ La schermata Lezioni ti dà accesso al curriculum e ai materiali didattici della
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- [Installa B1 Mobile](../getting-started/installing) e [accedi](../getting-started/logging-in) al tuo account
+- [Installa B1 Mobile](../getting-started/installing.md) e [accedi](../getting-started/logging-in.md) al tuo account
 - La tua chiesa deve avere un curriculum configurato tramite Lessons.church
 
 </div>
@@ -46,5 +48,5 @@ La schermata Lezioni appare quando la tua chiesa ha configurato il curriculum tr
 
 ## Articoli Correlati
 
-- [Bibbia](./bible) -- Leggi le Scritture insieme alle tue lezioni
-- [Sermoni](./sermons) -- Guarda i sermoni che completano i tuoi studi
+- [Bibbia](./bible.md) -- Leggi le Scritture insieme alle tue lezioni
+- [Sermoni](./sermons.md) -- Guarda i sermoni che completano i tuoi studi

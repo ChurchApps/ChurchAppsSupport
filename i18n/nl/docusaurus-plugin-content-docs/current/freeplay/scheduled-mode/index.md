@@ -1,5 +1,6 @@
 ---
 title: "Geplande modus"
+description: "Laat FreePlay-tv's playlists volgens agenda afspelen via FreePlay Admin. Schermen starten en stoppen zelf en blijven spelen bij wifi-storingen."
 ---
 
 # Geplande modus
@@ -18,16 +19,16 @@ FreePlay Admin gebruikt je ChurchApps-inloggegevens, dezelfde die je voor B1 Adm
 
 FreePlay Admin heeft vier hoofdpagina's, die bovenaan de site worden weergegeven:
 
-- **[Schermen](./managing-screens)** - De tv's die je hebt gekoppeld, hun status en de **schermgroepen** waartoe ze behoren. Schermen in een groep delen één agenda en één standaardlus
-- **[Afspeellijsten](./building-playlists)** - Lussen van afbeeldingen en video's die je kiest uit je contentproviders
-- **[Agenda](./scheduling-the-calendar)** - Wat elke schermgroep afspeelt, en wanneer
-- **[Providers](./building-playlists#connecting-providers)** - De contentbronnen waaruit je afspeellijsten putten. Je koppelt elke bron één keer voor de hele kerk
+- **[Schermen](./managing-screens.md)** - De tv's die je hebt gekoppeld, hun status en de **schermgroepen** waartoe ze behoren. Schermen in een groep delen één agenda en één standaardlus
+- **[Afspeellijsten](./building-playlists.md)** - Lussen van afbeeldingen en video's die je kiest uit je contentproviders
+- **[Agenda](./scheduling-the-calendar.md)** - Wat elke schermgroep afspeelt, en wanneer
+- **[Providers](./building-playlists.md#connecting-providers)** - De contentbronnen waaruit je afspeellijsten putten. Je koppelt elke bron één keer voor de hele kerk
 
 Als er niets is ingepland, speelt een schermgroep zijn **standaardlus** af. Als de groep geen standaardlus heeft, worden de schermen zwart.
 
 ## Het verschil met de planmodus
 
-- **[Planmodus](../plan-mode/)** volgt één dienstplantype uit B1 Admin. Iemand drukt op **Start plan** op de tv, en de les wordt afgespeeld zodra dat gebeurt
+- **[Planmodus](../plan-mode/index.md)** volgt één dienstplantype uit B1 Admin. Iemand drukt op **Start plan** op de tv, en de les wordt afgespeeld zodra dat gebeurt
 - **De geplande modus** volgt een agenda. Inhoud begint en stopt op de tijden die je instelt, wat goed werkt voor lobbyborden, aankondigingslussen en klaslokalen waar de les al moet staan voordat iemand binnenkomt
 
 Een agenda-item kan nog steeds een dienstplan afspelen. Kies het plantype onder **Dienstplannen** wanneer je een planning toevoegt, en het scherm speelt het plan af dat in B1 Admin die week actueel is. Dit geldt ook voor Go Curriculum-lessen, zelfs als je ze in het plan hebt aangepast. Het scherm gebruikt de Go Curriculum-inlog die aan het ministerie van het plantype in B1 Admin is gekoppeld, of de Go Curriculum-verbinding van de kerk als het ministerie er geen heeft.
@@ -49,8 +50,8 @@ Druk op **Ctrl+K** (**⌘K** op een Mac), of klik op het zoekveld in de koptekst
 
 ## In deze sectie
 
-- **[Een scherm koppelen](./pairing-a-screen)** - Toon de code op de tv en koppel die in FreePlay Admin
-- **[Schermen en groepen beheren](./managing-screens)** - Controleer status en downloads, en orden schermen in groepen
-- **[Providers koppelen en afspeellijsten maken](./building-playlists)** - Koppel contentbronnen en maak lussen van afbeeldingen en video's
-- **[De agenda plannen](./scheduling-the-calendar)** - Bepaal wat wanneer wordt afgespeeld, en wat er gebeurt als iets eerder eindigt
-- **[Gepland afspelen op de tv](./scheduled-playback)** - Wat de tv zelfstandig doet, en hoe je de afstandsbediening gebruikt tijdens het afspelen
+- **[Een scherm koppelen](./pairing-a-screen.md)** - Toon de code op de tv en koppel die in FreePlay Admin
+- **[Schermen en groepen beheren](./managing-screens.md)** - Controleer status en downloads, en orden schermen in groepen
+- **[Providers koppelen en afspeellijsten maken](./building-playlists.md)** - Koppel contentbronnen en maak lussen van afbeeldingen en video's
+- **[De agenda plannen](./scheduling-the-calendar.md)** - Bepaal wat wanneer wordt afgespeeld, en wat er gebeurt als iets eerder eindigt
+- **[Gepland afspelen op de tv](./scheduled-playback.md)** - Wat de tv zelfstandig doet, en hoe je de afstandsbediening gebruikt tijdens het afspelen

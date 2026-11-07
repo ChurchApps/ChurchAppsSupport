@@ -1,5 +1,6 @@
 ---
 title: "Tìm kiếm người"
+description: "Tìm trong danh bạ Người của B1 Admin theo tên, sắp xếp và chọn cột trong chế độ bảng, tạo bộ lọc bằng Tìm kiếm nâng cao và xuất kết quả ra CSV."
 ---
 
 # Tìm kiếm người

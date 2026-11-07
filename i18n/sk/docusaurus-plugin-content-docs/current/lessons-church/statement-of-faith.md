@@ -1,5 +1,6 @@
 ---
 title: Vyznanie viery
+description: "Čo ChurchApps verí o Bohu, Ježišovi, Duchu Svätom, Písme, spáse a cirkvi – štandard pri posudzovaní kurikula Lessons.church."
 ---
 
 # Vyznanie viery

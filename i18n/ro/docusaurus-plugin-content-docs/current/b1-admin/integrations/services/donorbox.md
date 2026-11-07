@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Conectați Donorbox la B1 Admin prin Zapier, ca donațiile online să creeze automat înregistrări de donații și profiluri de donatori, fără export manual."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Declanșatorul *New or Updated Donation* de la Donorbox se activează și la mod
 
 ## Vezi și
 
-- [Zapier (prezentare generală)](../zapier) — partea B1 a fiecărei rețete Zapier
-- [Subsplash](./subsplash) — o altă platformă de donații cu o aplicație Zapier
-- [Mailchimp](./mailchimp) — conectați „cadou nou" la o etichetă de e-mail
+- [Zapier (prezentare generală)](../zapier.md) — partea B1 a fiecărei rețete Zapier
+- [Subsplash](./subsplash.md) — o altă platformă de donații cu o aplicație Zapier
+- [Mailchimp](./mailchimp.md) — conectați „cadou nou" la o etichetă de e-mail

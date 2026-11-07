@@ -1,5 +1,6 @@
 ---
 title: "Tifanekiso Tetinhlelo"
+description: "Gcina ihlelo letinkonzo nemaphozisheni njengesifanekiso ku-B1 Admin, bese usisebentisa kuhlelo lwesikhatsi lelitako ngekucindzetela kanye."
 ---
 
 # Tifanekiso Tetinhlelo

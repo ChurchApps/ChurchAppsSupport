@@ -1,5 +1,6 @@
 ---
 title: "Likhasi Lami"
+description: "Ikhasi le-Me ku-portal yelilungu le-B1App likhombisa kusilanda sinye: ukusebenta lokutako, emicimbi, nekubhalisa, kanye nemndeni, emaqembu, kuniketa, tifomu, kuba khona nelibhokisi lemilayezo."
 ---
 
 # Likhasi Lami
@@ -26,7 +27,7 @@ Vula imenyu yeliphothali bese uchofoza **Me**. Likhasi liyalayisha nemininingwan
 Ingcenye ye-**Lokutako** ikhombisa konkhe lokungaphambili kwakho ngesilinganiso selusuku, ngakunye kuhambisana ne-chip yenhlobo:
 
 - **Kukhonta** -- Tikhundla takho tebuvolontiya etinhlelweni temsebenti letitako. Chofoza kunye kuze uvule luhlelo.
-- **Kubhaliswa** -- Imicimbi lo[ubhalisele yona](../events/registering). Chofoza uye [ekubhaliseni kwakho](../events/my-registrations).
+- **Kubhaliswa** -- Imicimbi lo[ubhalisele yona](../events/registering.md). Chofoza uye [ekubhaliseni kwakho](../events/my-registrations.md).
 - **Umcimbi** -- Imicimbi letako yemacembu lawulunga kuwo. Chofoza kunye kuze uvule imicimbi yelicembu.
 
 Nangabe kute lokuhleliwe, utawubona "Akukho lokutako" — tikhatsi takho tekukhonta, imicimbi, kanye nekubhaliswa kutawuvela lapha njengoba kuhlelwa.
@@ -39,14 +40,14 @@ Ngaphansi kwe-Lokutako, ingcenye ye-**Tatiso Letisha Kakhulu** ikhombisa tatiso 
 
 Nangabe lelibandla lakini linemakamelo nome tinsiza letingabhukwa, likhasi le-Me likhombisa nengcenye ye-**Tindlela Letisheshako**:
 
-- **Cela Umcimbi** -- Cela kubamba umcimbi ngemakamelo netintfo ledzingako. Bona [Kucela Imicimbi Nemakamelo](../events/requesting-events).
+- **Cela Umcimbi** -- Cela kubamba umcimbi ngemakamelo netintfo ledzingako. Bona [Kucela Imicimbi Nemakamelo](../events/requesting-events.md).
 - **Titfiso Tami** -- Lalela simo setitfiso takho futsi ukhansele letisalindzele.
 
 Nangabe lelibandla lakini alikafaki emakamelo nome tinsiza, letindlela letisheshako tifihliwe.
 
 ## Imibhalo Lehlobene
 
-- [Kuhamba nge-B1App](./navigating) -- Luhlaka lweliphothali yemalungu
-- [Kucela Imicimbi Nemakamelo](../events/requesting-events) -- Ngenisa futsi ulandzele titfiso tekamelo/insiza
-- [Kubhaliswa Kwami](../events/my-registrations) -- Phatsa kubhaliswa kwakho kwemicimbi
-- [Kubhalisa Kubavolontiya](../serving/volunteer-signup) -- Kutsi tabelo tekukhonta tisebenta njani
+- [Kuhamba nge-B1App](./navigating.md) -- Luhlaka lweliphothali yemalungu
+- [Kucela Imicimbi Nemakamelo](../events/requesting-events.md) -- Ngenisa futsi ulandzele titfiso tekamelo/insiza
+- [Kubhaliswa Kwami](../events/my-registrations.md) -- Phatsa kubhaliswa kwakho kwemicimbi
+- [Kubhalisa Kubavolontiya](../serving/volunteer-signup.md) -- Kutsi tabelo tekukhonta tisebenta njani

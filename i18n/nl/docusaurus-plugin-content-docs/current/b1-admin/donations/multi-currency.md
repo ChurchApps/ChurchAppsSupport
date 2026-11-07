@@ -1,5 +1,6 @@
 ---
 title: "Ondersteuning voor meerdere valuta"
+description: "Registreer en rapporteer donaties in verschillende valuta's in B1 Admin, inclusief handmatige invoer, Stripe-online giften en omrekening van totalen."
 ---
 
 # Ondersteuning voor meerdere valuta

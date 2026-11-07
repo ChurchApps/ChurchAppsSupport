@@ -1,5 +1,6 @@
 ---
 title: "Tilordne roller"
+description: "Tildel roller i B1 Admin slik at ansatte og frivillige kun får tilgang til personer, gaver, oppmøte og grupper de trenger."
 ---
 
 # Tilordne roller

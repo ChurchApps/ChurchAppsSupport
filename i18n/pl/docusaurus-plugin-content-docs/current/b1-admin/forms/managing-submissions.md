@@ -1,5 +1,6 @@
 ---
 title: "Správa odeslaných formulářů"
+description: "Przeglądaj, drukuj i przypisuj zgłoszenia z formularzy w B1 Admin, kierując odpowiedzi do właściwej osoby i śledząc karty odwiedzających oraz prośby modlitewne."
 ---
 
 Hmm, wait. I'm supposed to output Polish, not Czech. Let me redo that properly.

@@ -1,5 +1,6 @@
 ---
 title: "결제 수단 관리"
+description: "B1 Mobile 헌금 섹션의 관리 탭에서 저장된 카드를 추가하고, 확인하고, 삭제하세요. 카드 정보를 다시 입력하지 않아 반복 헌금이 더 빨라집니다."
 ---
 
 # 결제 수단 관리
@@ -13,7 +14,7 @@ title: "결제 수단 관리"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [B1 모바일 설치](../getting-started/installing) 및 계정으로 [로그인](../getting-started/logging-in)
+- [B1 모바일 설치](../getting-started/installing.md) 및 계정으로 [로그인](../getting-started/logging-in.md)
 
 </div>
 
@@ -31,7 +32,7 @@ title: "결제 수단 관리"
 4. 카드 정보를 입력합니다. 정보는 **Stripe**에 안전하게 전송되어 처리됩니다.
 5. 저장되면 새 카드가 결제 수단 목록에 나타납니다.
 
-저장된 카드는 다음에 **헌금하기** 탭에서 [헌금](./making-donations)할 때 결제 옵션으로 사용할 수 있습니다.
+저장된 카드는 다음에 **헌금하기** 탭에서 [헌금](./making-donations.md)할 때 결제 옵션으로 사용할 수 있습니다.
 
 ## 결제 수단 삭제
 
@@ -44,7 +45,7 @@ title: "결제 수단 관리"
 해당 카드는 헌금 시 결제 옵션으로 더 이상 나타나지 않습니다.
 
 :::info
-결제 수단을 삭제해도 과거 헌금에는 영향을 미치지 않습니다. [헌금 내역](./donation-history)은 변경되지 않습니다.
+결제 수단을 삭제해도 과거 헌금에는 영향을 미치지 않습니다. [헌금 내역](./donation-history.md)은 변경되지 않습니다.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ title: "결제 수단 관리"
 
 ## 관련 문서
 
-- [헌금하기](./making-donations) -- 저장된 결제 수단을 사용하여 헌금하는 방법
-- [헌금 내역](./donation-history) -- 헌금 요약과 과거 헌금 확인
+- [헌금하기](./making-donations.md) -- 저장된 결제 수단을 사용하여 헌금하는 방법
+- [헌금 내역](./donation-history.md) -- 헌금 요약과 과거 헌금 확인

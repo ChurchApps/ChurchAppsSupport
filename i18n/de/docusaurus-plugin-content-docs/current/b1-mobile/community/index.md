@@ -1,5 +1,7 @@
 ---
-title: "Gemeinschaft"
+title: "Gemeinschaftsfunktionen in der B1 Mobile App"
+sidebar_label: "Gemeinschaft"
+description: "Mit der B1 Mobile App das Mitgliederverzeichnis durchsuchen, private Nachrichten an Mitglieder senden und Push-Benachrichtigungen Ihrer Gemeinde prüfen."
 ---
 
 # Gemeinschaft
@@ -12,13 +14,13 @@ Die Funktionen unter **Gemeinschaft** in B1 Mobile helfen Ihnen, direkt von Ihre
 
 ## Was Sie hier finden
 
-- **[Mitgliederverzeichnis](./member-directory)** -- Durchsuchen Sie das Mitgliederverzeichnis Ihrer Gemeinde und suchen Sie nach Personen anhand ihres Namens. Tippen Sie auf ein Mitglied, um dessen Profil mit Kontaktdaten und Familienbeziehungen anzuzeigen.
-- **[Nachrichten](./messaging)** -- Senden und empfangen Sie private Nachrichten an andere Gemeindemitglieder. Beginnen Sie neue Unterhaltungen oder setzen Sie bestehende dort fort, wo Sie aufgehört haben.
-- **[Benachrichtigungen](./notifications)** -- Bleiben Sie mit Push-Benachrichtigungen über Gruppenaktivitäten, Nachrichten, Dienstaufgaben und andere wichtige Neuigkeiten Ihrer Gemeinde auf dem Laufenden.
+- **[Mitgliederverzeichnis](./member-directory.md)** -- Durchsuchen Sie das Mitgliederverzeichnis Ihrer Gemeinde und suchen Sie nach Personen anhand ihres Namens. Tippen Sie auf ein Mitglied, um dessen Profil mit Kontaktdaten und Familienbeziehungen anzuzeigen.
+- **[Nachrichten](./messaging.md)** -- Senden und empfangen Sie private Nachrichten an andere Gemeindemitglieder. Beginnen Sie neue Unterhaltungen oder setzen Sie bestehende dort fort, wo Sie aufgehört haben.
+- **[Benachrichtigungen](./notifications.md)** -- Bleiben Sie mit Push-Benachrichtigungen über Gruppenaktivitäten, Nachrichten, Dienstaufgaben und andere wichtige Neuigkeiten Ihrer Gemeinde auf dem Laufenden.
 
 ## Erste Schritte
 
-Sie müssen angemeldet sein, um auf die Gemeinschaftsfunktionen zuzugreifen. Wenn Sie nicht angemeldet sind, werden Sie aufgefordert, sich [anzumelden](../getting-started/logging-in), sobald Sie einen dieser Bereiche verwenden möchten.
+Sie müssen angemeldet sein, um auf die Gemeinschaftsfunktionen zuzugreifen. Wenn Sie nicht angemeldet sind, werden Sie aufgefordert, sich [anzumelden](../getting-started/logging-in.md), sobald Sie einen dieser Bereiche verwenden möchten.
 
 Das Mitgliederverzeichnis, die Nachrichten und die Benachrichtigungen sind jeweils über die Navigation der App erreichbar. Zusammen bieten sie Ihnen eine einfache Möglichkeit, Menschen zu finden, privat zu kommunizieren und über das Geschehen in Ihrer Gemeinde informiert zu bleiben.
 

@@ -1,5 +1,7 @@
 ---
-title: "寄付履歴"
+title: "B1 Mobile での寄付履歴の確認"
+sidebar_label: "寄付履歴"
+description: "B1 Mobile で年初来の寄付額、直近の寄付、寄付記録の全体を確認します。概要タブからワンタップで過去の寄付を繰り返すこともできます。"
 ---
 
 # 寄付履歴
@@ -13,8 +15,8 @@ B1 Mobileでは、2つのタブで寄付の状況を明確に確認できます�
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- [B1 Mobileをインストール](../getting-started/installing)し、アカウントに[ログイン](../getting-started/logging-in)してください
-- 履歴を確認するために、[少なくとも一度寄付](./making-donations)してください
+- [B1 Mobileをインストール](../getting-started/installing.md)し、アカウントに[ログイン](../getting-started/logging-in.md)してください
+- 履歴を確認するために、[少なくとも一度寄付](./making-donations.md)してください
 
 </div>
 
@@ -45,5 +47,5 @@ B1 Mobileでは、2つのタブで寄付の状況を明確に確認できます�
 
 ## 関連記事
 
-- [寄付をする](./making-donations) -- アプリから新たに寄付します
-- [支払い方法の管理](./managing-payments) -- 保存した支払い方法を追加または削除します
+- [寄付をする](./making-donations.md) -- アプリから新たに寄付します
+- [支払い方法の管理](./managing-payments.md) -- 保存した支払い方法を追加または削除します

@@ -1,5 +1,6 @@
 ---
 title: "Tietojen vieminen"
+description: "Vie henkilöt CSV-muodossa, ryhmien jäsenlistat tai koko B1-tietokannan varmuuskopio B1 Administa ja katso, mitä B1 Export Zip sisältää."
 ---
 
 # Tietojen vieminen

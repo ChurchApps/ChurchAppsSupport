@@ -1,5 +1,6 @@
 ---
 title: "Programmer og studier"
+description: "Lær hvordan Lessons.church-programmer, studier, lektioner og lokaler hænger sammen, så du kan finde det rette curriculum og navigere mellem relaterede lektioner."
 ---
 
 # Programmer og studier

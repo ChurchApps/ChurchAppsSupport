@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Explica o monólito modular da API ChurchApps, seus seis módulos de dados, a stack, portas e funções Lambda, com links para as docs de setup e endpoints."
 ---
 
 # API
@@ -52,8 +53,8 @@ Quando implantada na AWS, a API roda como seis funções Lambda:
 
 A API depende de dois pacotes compartilhados do ChurchApps:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Utilitários base (DateHelper, ApiHelper etc.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Utilitários do servidor Express, incluindo autenticação, auxiliares de banco de dados e integrações com a AWS
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Utilitários base (DateHelper, ApiHelper etc.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Utilitários do servidor Express, incluindo autenticação, auxiliares de banco de dados e integrações com a AWS
 
 :::info
 A API usa módulos ES (`"type": "module"` no `package.json`). Certifique-se de que suas importações usem a sintaxe de módulos ES.
@@ -61,11 +62,11 @@ A API usa módulos ES (`"type": "module"` no `package.json`). Certifique-se de q
 
 ## Nesta seção
 
-- **[Configuração local](./local-setup)** -- Clone, configure e execute a API localmente
-- **[Banco de dados](./database)** -- Arquitetura de um banco por módulo, scripts de esquema e padrões de acesso a dados
-- **[Estrutura do módulo](./module-structure)** -- Controllers, repositórios, modelos e autenticação
-- **[Chaves de API](./api-keys)** -- Tokens de acesso pessoais para scripts e conectores
-- **[Aplicativos conectados (OAuth)](./connected-apps)** -- Fluxo OAuth multi-inquilino para aplicativos de terceiros
-- **[Webhooks](./webhooks)** -- Envia notificações de eventos para sistemas externos
-- **[Servidor MCP](./mcp)** -- Endpoint do Model Context Protocol que expõe a API para assistentes de IA
-- **[Referência de endpoints](./endpoints/)** -- Documentação REST completa de todos os módulos
+- **[Configuração local](./local-setup.md)** -- Clone, configure e execute a API localmente
+- **[Banco de dados](./database.md)** -- Arquitetura de um banco por módulo, scripts de esquema e padrões de acesso a dados
+- **[Estrutura do módulo](./module-structure.md)** -- Controllers, repositórios, modelos e autenticação
+- **[Chaves de API](./api-keys.md)** -- Tokens de acesso pessoais para scripts e conectores
+- **[Aplicativos conectados (OAuth)](./connected-apps.md)** -- Fluxo OAuth multi-inquilino para aplicativos de terceiros
+- **[Webhooks](./webhooks.md)** -- Envia notificações de eventos para sistemas externos
+- **[Servidor MCP](./mcp.md)** -- Endpoint do Model Context Protocol que expõe a API para assistentes de IA
+- **[Referência de endpoints](./endpoints/index.md)** -- Documentação REST completa de todos os módulos

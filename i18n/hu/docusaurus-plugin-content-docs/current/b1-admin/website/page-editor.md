@@ -1,5 +1,6 @@
 ---
 title: "A oldalszerkesztő használata"
+description: "Oldalszerkesztő használata a B1 Adminban: szakaszok és elemek, stílusok, mobil előnézet, vázlatok közzététele, visszavonás és verziótörténet."
 ---
 
 # A oldalszerkesztő használata
@@ -17,8 +18,8 @@ A B1 oldalszerkesztő egy vizuális, húzd-és-ejtsd típusú szerkesztő, amell
 <div class="prereqs">
 <h4>Mielőtt elkezdenéd</h4>
 
-- Végezd el a [kezdeti beállítást](initial-setup), hogy a weboldalad konfigurálva legyen
-- Hozz létre legalább egy oldalt a [Oldalak kezelése](managing-pages) részben
+- Végezd el a [kezdeti beállítást](./initial-setup.md), hogy a weboldalad konfigurálva legyen
+- Hozz létre legalább egy oldalt a [Oldalak kezelése](./managing-pages.md) részben
 - A szerkesztő eléréséhez szükséged van a **content.edit** jogosultságra
 
 </div>
@@ -31,7 +32,7 @@ A B1 oldalszerkesztő egy vizuális, húzd-és-ejtsd típusú szerkesztő, amell
 A szerkesztő teljes képernyős módban nyílik meg. A bal oldali panelen látod az oldal szerkezetét és az elérhető tartalmi elemeket; a középső területen az oldal élő előnézete található.
 
 :::info
-A szerkesztő mindig világos módban jelenik meg, a B1 Admin témabeállításától függetlenül, és az [Megjelenés](appearance) részben kiválasztott címsor- és szövegtípusokat használja. Ez biztosítja, hogy az előnézet pontosan úgy nézzen ki, ahogy az oldal a látogatóknak meg fog jelenni.
+A szerkesztő mindig világos módban jelenik meg, a B1 Admin témabeállításától függetlenül, és az [Megjelenés](./appearance.md) részben kiválasztott címsor- és szövegtípusokat használja. Ez biztosítja, hogy az előnézet pontosan úgy nézzen ki, ahogy az oldal a látogatóknak meg fog jelenni.
 :::
 
 ## Az oldal szerkezete: szakaszok és elemek
@@ -61,7 +62,7 @@ Már összeállítottál egy szakaszt, de másik szerkezetre vágysz? Használd 
    - **Kép** – Fénykép feltöltése vagy hivatkozás egy képre
    - **Gomb** – Kattintható hívás a cselekvésre (linkgomb)
    - **Kártya** – Kép címmel és leírással
-   - **Űrlap** – [Űrlap](../forms/creating-forms) beágyazása közvetlenül az oldalra. Ha az űrlapnak van [fejlécképe](../forms/creating-forms.md#adding-a-header-photo), az a kérdések fölött jelenik meg
+   - **Űrlap** – [Űrlap](../forms/creating-forms.md) beágyazása közvetlenül az oldalra. Ha az űrlapnak van [fejlécképe](../forms/creating-forms.md#adding-a-header-photo), az a kérdések fölött jelenik meg
    - **Naptár** – Eseménynaptár megjelenítése
    - **GYIK** – Harmonikaszerű kérdés-válasz blokkok
    - **Videó** – Videó beágyazása URL alapján
@@ -79,7 +80,7 @@ Már összeállítottál egy szakaszt, de másik szerkezetre vágysz? Használd 
    - **Térkép** – Beágyazott térkép, amely a gyülekezet címére van középre igazítva
    - **Táblázat** – Egyszerű sor- és oszlopracs táblázatos tartalomhoz
    - **Szöveg képpel** – Szöveg és kép egymás mellett
-   - **Logó** – A gyülekezeti logód, amelyet az [Megjelenés](appearance) részből vesz át
+   - **Logó** – A gyülekezeti logód, amelyet az [Megjelenés](./appearance.md) részből vesz át
    - **Élő közvetítés** – Az élő közvetítés lejátszója, közvetlenül az oldalba ágyazva
    - **Podcast** – Epizódok listája egy általad megadott külső podcast RSS-feed URL-ből, beállításokkal arra, hány epizódot mutasson és megjelenjenek-e a dátumok és leírások. Az élő oldalon minden epizódnál van hanglejátszó és egy **Letöltés** hivatkozás, amely az epizód hangfájlját az epizód címe alatt menti el. Ez bármely podcast-feed megjelenítésére szolgál az oldaladon; ha a saját igehirdetéseidet szeretnéd podcastként közzétenni, lásd helyette: [Igehirdetések kezelése](../sermons/managing-sermons.md#your-podcast-feed)
    - **Adakozás** – Adománygomb vagy beágyazott adományűrlap
@@ -100,7 +101,7 @@ Ha csak egy webcímet (például egy képhivatkozást) illesztesz be a JavaScrip
 
 A **Naptár** elem az egyik naptáradból mutat eseményeket:
 
-1. A **Kiválasztás** alatt válaszd a **Csoportnaptár** lehetőséget (egy csoport eseményei – a listában azok a csoportok szerepelnek, amelyek tagja vagy) vagy a **Válogatott naptár** lehetőséget (a **Naptárak** alatt összeállított naptár; lásd: [Válogatott naptár](../calendars/curated-calendar)).
+1. A **Kiválasztás** alatt válaszd a **Csoportnaptár** lehetőséget (egy csoport eseményei – a listában azok a csoportok szerepelnek, amelyek tagja vagy) vagy a **Válogatott naptár** lehetőséget (a **Naptárak** alatt összeállított naptár; lásd: [Válogatott naptár](../calendars/curated-calendar.md)).
 2. A **Naptár kiválasztása** alatt válaszd ki a csoportot vagy naptárat.
 3. A **Megjelenítés** alatt válaszd ki, hogyan jelenjen meg:
    - **Havi naptár** – Havi rács, amelyen a látogatók lapozhatnak.
@@ -133,7 +134,7 @@ Kattints bármelyik elemre a stíluspanel megnyitásához. Gyakori beállításo
 Haladó formázáshoz minden szakasznak és elemnek van egy **Egyéni CSS** mezője, ahol saját CSS-szabályokat írhatsz. Ezek csak az adott elemre vonatkoznak, így nem befolyásolják véletlenül az oldal többi részét.
 
 :::tip
-Ha az egész weboldalon szeretnél stílusokat alkalmazni – például egyéni betűtípust vagy globális színt –, használd a [Megjelenés](appearance) beállításait, ne egyéni CSS-t az egyes oldalakon.
+Ha az egész weboldalon szeretnél stílusokat alkalmazni – például egyéni betűtípust vagy globális színt –, használd a [Megjelenés](./appearance.md) beállításait, ne egyéni CSS-t az egyes oldalakon.
 :::
 
 ## Az oldal előnézete
@@ -188,7 +189,7 @@ Használd a piszkozat/közzététel folyamatot, ha egy oldalt előre szeretnél 
 
 ## Kapcsolódó cikkek
 
-- [Oldalak kezelése](managing-pages) – Oldalak létrehozása, URL-ek beállítása és a webhely navigációjának kezelése
-- [Megjelenés](appearance) – Webhelyszintű színek, betűtípusok és arculat beállítása
-- [Fájlok](files) – Képek és dokumentumok feltöltése a szerkesztőben való használathoz
-- [Űrlapok létrehozása](../forms/creating-forms) – Oldalakba beágyazható űrlapok készítése
+- [Oldalak kezelése](./managing-pages.md) – Oldalak létrehozása, URL-ek beállítása és a webhely navigációjának kezelése
+- [Megjelenés](./appearance.md) – Webhelyszintű színek, betűtípusok és arculat beállítása
+- [Fájlok](./files.md) – Képek és dokumentumok feltöltése a szerkesztőben való használathoz
+- [Űrlapok létrehozása](../forms/creating-forms.md) – Oldalakba beágyazható űrlapok készítése

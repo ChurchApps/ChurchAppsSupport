@@ -1,5 +1,6 @@
 ---
 title: "Pridávanie hostí"
+description: "Pridajte návštevu, príbuzného alebo priateľa do domácnosti na kiosku B1 Checkin, potom priraďte skupiny a dokončite prihlásenie."
 ---
 
 # Pridávanie hostí
@@ -13,8 +14,8 @@ Ak niekto navštevuje vašu rodinu a potrebuje sa prihlásiť spolu s vašou dom
 <div class="prereqs">
 <h4>Pred začatím</h4>
 
-- [Vyhľadajte svoju rodinu](./looking-up-members) a vyberte člena zo zoznamu výsledkov vyhľadávania
-- Buďte na [obrazovke kontroly domácnosti](./household-review), kde vidíte členov svojej rodiny
+- [Vyhľadajte svoju rodinu](./looking-up-members.md) a vyberte člena zo zoznamu výsledkov vyhľadávania
+- Buďte na [obrazovke kontroly domácnosti](./household-review.md), kde vidíte členov svojej rodiny
 
 </div>
 
@@ -36,8 +37,8 @@ Ak meno hosťa zodpovedá niekomu, kto je už v systéme a nie je členom, aplik
 
 Keď sa hosť zobrazí v zozname vašej domácnosti, môžete:
 
-- **Rozbaliť jeho kartu** a [priradiť ho do skupiny](./group-assignment), rovnako ako ktoréhokoľvek iného člena rodiny.
-- **[Prihlásiť](./completing-checkin)** celú domácnosť vrátane hosťa.
+- **Rozbaliť jeho kartu** a [priradiť ho do skupiny](./group-assignment.md), rovnako ako ktoréhokoľvek iného člena rodiny.
+- **[Prihlásiť](./completing-checkin.md)** celú domácnosť vrátane hosťa.
 
 ## Zrušenie
 
@@ -49,4 +50,4 @@ Pridanie hosťa na kiosku vytvorí záznam osoby v databáze vašej cirkvi. Spr�
 
 ## Ďalší krok
 
-Po pridaní hostí a [priradení skupín](./group-assignment), ak je to potrebné, ste pripravení [dokončiť prihlásenie](./completing-checkin).
+Po pridaní hostí a [priradení skupín](./group-assignment.md), ak je to potrebné, ste pripravení [dokončiť prihlásenie](./completing-checkin.md).

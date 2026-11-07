@@ -1,5 +1,7 @@
 ---
-title: "Bắt đầu"
+title: "Bắt đầu với B1 Mobile (Ngừng hỗ trợ)"
+sidebar_label: "Bắt đầu"
+description: "Thiết lập B1 Mobile trên điện thoại: tìm ứng dụng, đăng nhập bằng tài khoản ChurchApps và chọn nhà thờ. Lưu ý B1 Mobile đã ngừng hỗ trợ, thay bằng PWA."
 ---
 
 # Bắt đầu
@@ -25,10 +27,10 @@ Vậy là xong. Khi bạn đã chọn hội thánh, ứng dụng sẽ tải thư
 
 ## Trong mục này
 
-- [Cài đặt ứng dụng](./installing) -- Nơi tải B1 Mobile và yêu cầu thiết bị.
-- [Đăng nhập](./logging-in) -- Cách đăng nhập hoặc tạo tài khoản mới.
-- [Chuyển đổi hội thánh](./switching-churches) -- Cách chuyển đổi giữa các hội thánh nếu bạn thuộc nhiều hơn một hội thánh.
+- [Cài đặt ứng dụng](./installing.md) -- Nơi tải B1 Mobile và yêu cầu thiết bị.
+- [Đăng nhập](./logging-in.md) -- Cách đăng nhập hoặc tạo tài khoản mới.
+- [Chuyển đổi hội thánh](./switching-churches.md) -- Cách chuyển đổi giữa các hội thánh nếu bạn thuộc nhiều hơn một hội thánh.
 
 :::tip
-B1 Mobile sử dụng cùng tài khoản ChurchApps với tất cả các sản phẩm ChurchApps khác. Nếu bạn đã có tài khoản từ [B1.church](../../b1-church/), B1 Admin hoặc Lessons.church, bạn có thể dùng chính thông tin đăng nhập đó để đăng nhập.
+B1 Mobile sử dụng cùng tài khoản ChurchApps với tất cả các sản phẩm ChurchApps khác. Nếu bạn đã có tài khoản từ [B1.church](../../b1-church/index.md), B1 Admin hoặc Lessons.church, bạn có thể dùng chính thông tin đăng nhập đó để đăng nhập.
 :::

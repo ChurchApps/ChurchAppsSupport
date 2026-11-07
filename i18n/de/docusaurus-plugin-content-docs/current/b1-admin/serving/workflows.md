@@ -1,5 +1,6 @@
 ---
 title: "Workflows"
+description: "Kanban-Boards in B1 Admin erstellen, um Personen mit automatischen E-Mails, SMS und Auslösern durch Nachfolgeschritte zu führen."
 ---
 
 # Workflows

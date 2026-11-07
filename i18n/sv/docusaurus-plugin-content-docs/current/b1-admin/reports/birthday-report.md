@@ -1,5 +1,6 @@
 ---
 title: "Födelsedags- och årsdagslistor"
+description: "Skapa en lista över alla med födelsedag eller bröllopsdag i en viss månad med People-sökfilter i B1 Admin, och visa eller exportera datumen."
 ---
 
 # Födelsedags- och årsdagslistor

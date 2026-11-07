@@ -1,5 +1,7 @@
 ---
-title: "Kubhalisa Kuzinikela"
+title: "Kubhalisa Kuvolontiya ku-B1.church"
+sidebar_label: "Kubhalisa Kuzinikela"
+description: "Hlola tikhundla letivulekile tebavolontiya ngetigaba, bhalisa kulinsita lelitsatsa lamatfuba, noma ususe kubhalisa kwakho ku-B1.church ngaphambi kwesikhatsi sekugcina."
 ---
 
 # Kubhalisa Kuzinikela
@@ -73,4 +75,4 @@ Hlola likhasi lekutinikela njalo, ikakhulu ekucaleni kweviki. Tikhundla letitsan
 ## Tihloko Letihlobene
 
 - [Sifinyeto Sekukhonta](./index.md) -- Sifinyeto semasici ekukhonta ku-B1.church
-- [Kubuka Tinhlelo](../plans/viewing-plans) -- Buka tinhlelo takho lowabelwe kuto kanye netinhlu tenkhonzo
+- [Kubuka Tinhlelo](../plans/viewing-plans.md) -- Buka tinhlelo takho lowabelwe kuto kanye netinhlu tenkhonzo

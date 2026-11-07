@@ -1,5 +1,6 @@
 ---
 title: "Auschecken & Kindersicherheit"
+description: "Kinder an einer besetzten B1-Checkin-Station abmelden: mit Sicherheitscodes, geprüften Abholpersonen, Elternausruf, Etikettenneudruck und Notfallmeldungen."
 ---
 
 # Auschecken & Kindersicherheit
@@ -14,7 +15,7 @@ Auschecken schließt die Schleife beim Kinder-Check-In: Ein Elternteil zeigt den
 <h4>Bevor Sie beginnen</h4>
 
 - Auschecken ist auf Stationen verfügbar, die in den Kiosk-Admin-Einstellungen auf **manned**-Modus eingestellt sind
-- Kinder müssen mit einem gedruckten Abhol-Label [eingecheckt](./completing-checkin) worden sein, das den Sicherheitscode trägt
+- Kinder müssen mit einem gedruckten Abhol-Label [eingecheckt](./completing-checkin.md) worden sein, das den Sicherheitscode trägt
 - Paging und Notfall-Rundfunk erfordern, dass Ihre Kirche einen Textnachrichten-Provider in B1 Admin verbunden hat
 
 </div>
@@ -39,7 +40,7 @@ Wenn ein eingegebener Name mit jemandem übereinstimmt, der für diesen Haushalt
 Sobald die abhol-Person bestätigt ist, tippen Sie auschecken. Der Name der Abhol-Person wird in der Anwesenheits-Aufzeichnung gespeichert.
 
 :::info
-Vertrauenswürdige und nicht autorisierte Abhol-Personen werden vom Kirchenpersonal auf der Seite jeder Person in B1 Admin verwaltet -- siehe [Check-In Safety](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Vertrauenswürdige und nicht autorisierte Abhol-Personen werden vom Kirchenpersonal auf der Seite jeder Person in B1 Admin verwaltet -- siehe [Check-In Safety](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Seite nach Eltern
@@ -65,6 +66,6 @@ Der Rundfunk geht an jeden eingecheckten Haushalt für den ausgewählten Gottesd
 
 ## Verwandte Artikel
 
-- [Check-In abschließen](./completing-checkin) -- wo Sicherheitscodes und Abhol-Labels herkommen
-- [Check-In Safety](../../b1-admin/attendance/checkin-safety) -- Konfiguration von Kapazitäten, Verhältnissen, Abhol-Personen und der Textnachrichten-Provider-Anforderung
-- [Printer Setup](../getting-started/printer-setup) -- Konfiguration des Label-Druckers
+- [Check-In abschließen](./completing-checkin.md) -- wo Sicherheitscodes und Abhol-Labels herkommen
+- [Check-In Safety](../../b1-admin/attendance/checkin-safety.md) -- Konfiguration von Kapazitäten, Verhältnissen, Abhol-Personen und der Textnachrichten-Provider-Anforderung
+- [Printer Setup](../getting-started/printer-setup.md) -- Konfiguration des Label-Druckers

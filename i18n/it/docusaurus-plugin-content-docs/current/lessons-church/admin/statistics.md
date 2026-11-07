@@ -1,5 +1,6 @@
 ---
 title: "Statistiche"
+description: "Conteggi dei download per studio, chiese che usano le tue risorse e mappa delle loro posizioni nelle statistiche di Lessons.church, filtrabili per data."
 ---
 
 # Statistiche

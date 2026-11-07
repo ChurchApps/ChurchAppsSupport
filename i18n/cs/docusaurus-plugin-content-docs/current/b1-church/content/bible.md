@@ -1,5 +1,7 @@
 ---
-title: "Bible"
+title: "Čtení Bible na B1.church"
+sidebar_label: "Bible"
+description: "Čtěte Písmo v čtečce Bible na B1.church s ovládáním knihy, kapitoly a překladu a se stránkou Bible pro denní čtení."
 ---
 
 # Bible

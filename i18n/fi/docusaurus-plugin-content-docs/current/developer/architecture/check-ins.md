@@ -1,5 +1,6 @@
 ---
 title: "Lasten sisäänkirjaus"
+description: "Miten sisäänkirjautuminen toimii B1Checkinin, B1Appin ja B1 Adminin välillä: läsnäolon tietomalli, ryhmät huoneina, kapasiteettirajat ja noutoturvasäännöt."
 ---
 
 # Lasten sisäänkirjaus
@@ -216,7 +217,7 @@ B1Appin `src/components/checkin/GuestRegister.tsx` hakee tarkistuslistan anonyym
 
 ## Liittyvät sivut
 
-- [Osallistumisen päätepisteet](../api/endpoints/attendance) -- Täysi REST-pinta kampuksille, palveluille, sessioille, käynneille ja käyntisessioille
-- [Jäsenyyden päätepisteet](../api/endpoints/membership) -- Henkilöt, kotitaloudet ja ryhmät
-- [Webhookit](../api/webhooks) -- Tapahtumat `session.created`, `attendance.recorded` ja `attendance.checkout`
-- [Moduulirakenne](../api/module-structure) -- Miten osallistumismoduuli on järjestetty palvelinpuolella
+- [Osallistumisen päätepisteet](../api/endpoints/attendance.md) -- Täysi REST-pinta kampuksille, palveluille, sessioille, käynneille ja käyntisessioille
+- [Jäsenyyden päätepisteet](../api/endpoints/membership.md) -- Henkilöt, kotitaloudet ja ryhmät
+- [Webhookit](../api/webhooks.md) -- Tapahtumat `session.created`, `attendance.recorded` ja `attendance.checkout`
+- [Moduulirakenne](../api/module-structure.md) -- Miten osallistumismoduuli on järjestetty palvelinpuolella

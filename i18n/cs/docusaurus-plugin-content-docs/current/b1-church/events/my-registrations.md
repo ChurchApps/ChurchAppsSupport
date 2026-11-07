@@ -1,5 +1,6 @@
 ---
 title: "Moje registrace"
+description: "Zkontrolujte stav registrace, zaplaťte nedoplatek, upravte účastníky nebo doplňky, či zrušte přihlášku na událost v členském portálu B1 Church."
 ---
 
 # Moje registrace
@@ -14,7 +15,7 @@ Stránka **Registrace** v členském portálu je vaším přehledem všech akcí
 <h4>Než začnete</h4>
 
 - Musíte být [přihlášeni](../getting-started/logging-in.md). Registrace hostů se zde nezobrazují.
-- Potřebujete alespoň jednu registraci na akci. Viz [Registrace na akce](./registering).
+- Potřebujete alespoň jednu registraci na akci. Viz [Registrace na akce](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Vaše místo se okamžitě uvolní. Pokud má akce čekací listinu, další čl
 
 ## Související články
 
-- [Registrace na akce](./registering) -- Postup přihlášení, včetně platby a čekacích listin
+- [Registrace na akce](./registering.md) -- Postup přihlášení, včetně platby a čekacích listin
 - [Přehled akcí](./index.md) -- Procházení nadcházejících akcí

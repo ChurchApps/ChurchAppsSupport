@@ -1,5 +1,6 @@
 ---
 title: "Protokol zdarzeń"
+description: "Przeglądaj dziennik zdarzeń w B1 Admin, aby sprawdzić, kto się logował, edytował dane osób lub zmieniał uprawnienia, i eksportuj wybrane wpisy do CSV."
 ---
 
 # Protokol zdarzeń
@@ -78,6 +79,6 @@ Regularnie przeglądaj protokół zdarzeń, szczególnie po wdrożeniu nowych cz
 
 ## Powiązane artykuły
 
-- [Role i uprawnienia](../settings/roles-permissions) -- Zarządzaj tym, kto ma dostęp do czego
-- [Bezpieczeństwo danych](../settings/data-security) -- Dowiedz się, jak chronione są Twoje dane
+- [Role i uprawnienia](../settings/roles-permissions.md) -- Zarządzaj tym, kto ma dostęp do czego
+- [Bezpieczeństwo danych](../settings/data-security.md) -- Dowiedz się, jak chronione są Twoje dane
 - [Przegląd raportów](./index.md) -- Zobacz wszystkie dostępne raporty

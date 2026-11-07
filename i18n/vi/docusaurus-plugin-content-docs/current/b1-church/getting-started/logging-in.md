@@ -1,5 +1,7 @@
 ---
-title: "Đăng nhập"
+title: "Đăng nhập vào B1.church và cổng thành viên"
+sidebar_label: "Đăng nhập"
+description: "Đăng nhập vào cổng thành viên B1.church, dùng mã xác thực hai bước hoặc đăng nhập một lần, đặt lại mật khẩu đã quên và đăng xuất từ menu tài khoản."
 ---
 
 # Đăng nhập
@@ -17,7 +19,7 @@ title: "Đăng nhập"
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Bạn cần có tài khoản ChurchApps. Xem [Bắt đầu](../getting-started/) để tạo tài khoản.
+- Bạn cần có tài khoản ChurchApps. Xem [Bắt đầu](./index.md) để tạo tài khoản.
 - Bạn cần địa chỉ B1.church của hội thánh (ví dụ: `https://yourchurchname.b1.church`).
 
 </div>
@@ -39,7 +41,7 @@ Bạn sẽ được giữ đăng nhập trên cùng một trình duyệt hoặc 
 
 ## Truy cập cổng thành viên
 
-Sau khi đăng nhập, bạn có thể truy cập cổng thành viên bằng cách nhấp vào **tên** của bạn ở góc trên bên phải trang và chọn **Cổng thành viên** trong menu. Cổng thành viên là nơi chứa tất cả các công cụ cá nhân của hội thánh, bao gồm [bảng điều khiển Trang chủ](./navigating.md), [trang Tôi](./me-page.md), [nhóm](../groups/), [quyên góp](../giving/) và nhiều công cụ khác.
+Sau khi đăng nhập, bạn có thể truy cập cổng thành viên bằng cách nhấp vào **tên** của bạn ở góc trên bên phải trang và chọn **Cổng thành viên** trong menu. Cổng thành viên là nơi chứa tất cả các công cụ cá nhân của hội thánh, bao gồm [bảng điều khiển Trang chủ](./navigating.md), [trang Tôi](./me-page.md), [nhóm](../groups/index.md), [quyên góp](../giving/index.md) và nhiều công cụ khác.
 
 ## Menu người dùng của bạn
 

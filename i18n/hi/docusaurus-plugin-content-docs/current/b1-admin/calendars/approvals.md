@@ -1,5 +1,6 @@
 ---
 title: "कैलेंडर स्वीकृति"
+description: "B1 Admin में लंबित कमरे और संसाधन बुकिंग अनुरोधों की समीक्षा करें, टकराव जाँचें, फिर उन्हें स्वीकृत या अस्वीकृत करें, और चाहें तो इवेंट प्रकाशित करें।"
 ---
 
 # कैलेंडर स्वीकृति
@@ -13,7 +14,7 @@ Approvals page वह जगह है जहां administrators pending room 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- Rooms या resources को एक **Approval Group** के साथ कॉन्फ़िगर करें [Rooms & Resources](rooms-resources) में
+- Rooms या resources को एक **Approval Group** के साथ कॉन्फ़िगर करें [Rooms & Resources](./rooms-resources.md) में
 - आपको **Calendars Admin** अनुमति या **content.edit** अनुमति चाहिए
 
 </div>
@@ -41,7 +42,7 @@ B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-
 जब आप **Approve** पर क्लिक करते हैं, एक **Approve booking** dialog खुल जाता है ताकि आप एक ही step में event को भी publish कर सकें:
 
 1. **Publish to public calendar** को check करें ताकि event को अपने group के calendar पर public बनाया जा सके। Unchecked छोड़ें ताकि event की visibility को change किए बिना booking को approve किया जा सके।
-2. एक बार **Publish to public calendar** को check कर दिया जाए, तो आप optionally **Also add to calendar** से एक curated calendar चुन सकते हैं ताकि event को एक भी अपने [curated calendars](curated-calendar) में जोड़ा जा सके। इसे **None** पर सेट करके छोड़ें ताकि यह skip किया जा सके। (यह option केवल तब दिखाई देता है यदि आपके पास **content.edit** अनुमति है।)
+2. एक बार **Publish to public calendar** को check कर दिया जाए, तो आप optionally **Also add to calendar** से एक curated calendar चुन सकते हैं ताकि event को एक भी अपने [curated calendars](./curated-calendar.md) में जोड़ा जा सके। इसे **None** पर सेट करके छोड़ें ताकि यह skip किया जा सके। (यह option केवल तब दिखाई देता है यदि आपके पास **content.edit** अनुमति है।)
 3. **Approve** पर क्लिक करें।
 
 ## Pending Events
@@ -49,10 +50,10 @@ B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-
 यदि आपकी calendar workflow events को events को public के लिए visible होने से पहले approval की आवश्यकता है, तो pending events **Event Requests** section में दिखाई देते हैं। Calendar पर event publish करने के लिए **Approve** पर क्लिक करें, या submitter को notify करने के लिए **Reject** पर क्लिक करें कि changes की आवश्यकता है।
 
 :::tip
-एक room पर Approval Group को [Rooms & Resources](rooms-resources) में setup करें ताकि उस room के लिए approval की requirement दी जा सके। Access वाले groups तब events बनाते समय room को request कर सकते हैं, और वह requests इस page में flow करते हैं।
+एक room पर Approval Group को [Rooms & Resources](./rooms-resources.md) में setup करें ताकि उस room के लिए approval की requirement दी जा सके। Access वाले groups तब events बनाते समय room को request कर सकते हैं, और वह requests इस page में flow करते हैं।
 :::
 
 ## संबंधित आलेख
 
-- [Rooms, Resources & Scheduling](rooms-resources) — bookable rooms और resources को कॉन्फ़िगर करें
-- [Creating Calendars](creating-calendars) — calendars और events को manage करें
+- [Rooms, Resources & Scheduling](./rooms-resources.md) — bookable rooms और resources को कॉन्फ़िगर करें
+- [Creating Calendars](./creating-calendars.md) — calendars और events को manage करें

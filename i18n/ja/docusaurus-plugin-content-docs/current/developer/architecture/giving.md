@@ -1,5 +1,6 @@
 ---
 title: "献金のアーキテクチャ"
+description: "ChurchApps の寄付に関する開発者ガイドです。B1 Admin と B1.church が、Stripe、PayPal、Kingdom Funding、Paystack のゲートウェイを通じて寄付を送る仕組みを説明します。"
 ---
 
 # 献金のアーキテクチャ
@@ -134,7 +135,7 @@ giving スキーマ(`Api/src/modules/giving/db/DatabaseTypes.ts`、モデルは 
 
 ### ゲスト・匿名での献金
 
-公開の献金ページ(`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`)と「今すぐ献金」パネルは、`@churchapps/apphelper/website` の `NonAuthDonationWrapper` を描画します。これは reCAPTCHA とゲートウェイの Elements コンテキストを、プロバイダーの `GuestForm` の周囲に注入します。ゲストはログインも、保存済みの支払い方法も、履歴もありません。フローは次のとおりです。`GET /giving/funds/churchId/:id` と `GET /giving/donate/gateways/:churchId`(公開鍵のみ)を取得し、`POST /giving/donate/captcha-verify` で訪問者を検証し、ブラウザ上でトークン化して、`/giving/donate/charge`(または `/subscribe`)に送信します。検証の呼び出しは、10 分間有効な HMAC 署名付きの `captchaPass`(`Api/src/modules/giving/helpers/CaptchaPass.ts`)を返します。フォームは、ゲストによる決済関連の呼び出しのたびにこれを送信します。`CAPTCHA_ENFORCE=true` の場合、API は、その教会に対する有効なパスがないゲストの `create-order`、`charge`、`subscribe`、`addcard`、`ach-setup-intent-anon` の呼び出しを拒否します。有料のイベント登録をするゲスト(`POST /content/registrations/register`)も、請求の直前に同じパスを確認します。詳しくは [Event Registrations](./registrations#payment-flow) を参照してください。ゲストによる ACH では、匿名の `POST /giving/paymentmethods/ach-setup-intent-anon` を使います。これは即時の確認(Financial Connections)のみを許可します。少額入金による確認は数日後に完了するため、その時点ではゲストはすでにページを離れており、献金を完了できないからです。フォームは、確認されていない SetupIntent での請求を拒否し、寄付者にカードによる支払い、またはサインイン済みの銀行口座の設定を案内します。
+公開の献金ページ(`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`)と「今すぐ献金」パネルは、`@churchapps/apphelper/website` の `NonAuthDonationWrapper` を描画します。これは reCAPTCHA とゲートウェイの Elements コンテキストを、プロバイダーの `GuestForm` の周囲に注入します。ゲストはログインも、保存済みの支払い方法も、履歴もありません。フローは次のとおりです。`GET /giving/funds/churchId/:id` と `GET /giving/donate/gateways/:churchId`(公開鍵のみ)を取得し、`POST /giving/donate/captcha-verify` で訪問者を検証し、ブラウザ上でトークン化して、`/giving/donate/charge`(または `/subscribe`)に送信します。検証の呼び出しは、10 分間有効な HMAC 署名付きの `captchaPass`(`Api/src/modules/giving/helpers/CaptchaPass.ts`)を返します。フォームは、ゲストによる決済関連の呼び出しのたびにこれを送信します。`CAPTCHA_ENFORCE=true` の場合、API は、その教会に対する有効なパスがないゲストの `create-order`、`charge`、`subscribe`、`addcard`、`ach-setup-intent-anon` の呼び出しを拒否します。有料のイベント登録をするゲスト(`POST /content/registrations/register`)も、請求の直前に同じパスを確認します。詳しくは [Event Registrations](./registrations.md#payment-flow) を参照してください。ゲストによる ACH では、匿名の `POST /giving/paymentmethods/ach-setup-intent-anon` を使います。これは即時の確認(Financial Connections)のみを許可します。少額入金による確認は数日後に完了するため、その時点ではゲストはすでにページを離れており、献金を完了できないからです。フォームは、確認されていない SetupIntent での請求を拒否し、寄付者にカードによる支払い、またはサインイン済みの銀行口座の設定を案内します。
 
 ゲストフォームには、同じチャージ呼び出しで使われる 3 つのオプションがあります。献金 URL の `?fundId=` と `?amount=` は、用途の配分を事前に選択します(各プロバイダーのゲストフォームがマウント時に読み取り、通常の用途変更ハンドラーを経由するため、合計と手数料が更新されます)。`anonymous: true` を指定すると、`DonateController.charge` はクライアントから送られた人物を破棄し、献金を `personId = null` で記録します。ゲストフォームは `/people/loadOrCreate` と、顧客/保管の手順をスキップします。また、即時記録を行う 3 つのプロバイダーは、ゲートウェイの顧客から人物を解決することをやめます。Apple Pay では、そのページのドメインを Stripe に登録する必要があります。そのため、Stripe のゲストフォームは、セッションごとに一度、公開かつレート制限付きの `POST /giving/donate/register-domain` にリクエストを送ります。このエンドポイントは、教会に属するドメインのみを受け付けます(`<subDomain>.b1.church`、コンテンツモジュールのドメインテーブルの行、またはローカルホスト)。その後、Stripe の payment-method-domains API を呼び出します。
 
@@ -175,6 +176,6 @@ Stripe のインポート(`B1Admin/src/donations/StripeImportPage.tsx`)は、B1 
 
 ## 関連ページ
 
-- [Giving Endpoints](../api/endpoints/giving) — 献金、用途、バッチ、ゲートウェイ、サブスクリプション、支払い方法、Webhook に関する REST の公開面全体
-- [AppHelper](../shared-libraries/app-helper) — 決済プロバイダーレジストリと献金コンポーネントを提供する npm パッケージ
-- [Module Structure](../api/module-structure) — GivingApi モジュールがサーバー側でどのように構成されているか
+- [Giving Endpoints](../api/endpoints/giving.md) — 献金、用途、バッチ、ゲートウェイ、サブスクリプション、支払い方法、Webhook に関する REST の公開面全体
+- [AppHelper](../shared-libraries/app-helper.md) — 決済プロバイダーレジストリと献金コンポーネントを提供する npm パッケージ
+- [Module Structure](../api/module-structure.md) — GivingApi モジュールがサーバー側でどのように構成されているか

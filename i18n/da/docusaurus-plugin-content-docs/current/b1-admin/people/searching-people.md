@@ -1,5 +1,6 @@
 ---
 title: "Søg folk"
+description: "Søg i din B1 Admin-personoversigt efter navn, sortér og vælg kolonner i tabelvisningen, opbyg filtre med Advanced Search og eksportér resultater til CSV."
 ---
 
 # Søg folk

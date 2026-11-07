@@ -1,5 +1,6 @@
 ---
 title: "Superficie di integrazione ed estensione"
+description: "Mappa di tutti i modi per collegarsi a ChurchApps B1: API REST, chiavi API, OAuth, webhook, MCP e provider di contenuti, con link a ogni riferimento."
 ---
 
 # Superficie di integrazione ed estensione
@@ -14,12 +15,12 @@ Tutto ciò a cui una terza parte può collegarsi passa attraverso un'unica API e
 
 Ci sono sei modi di entrare o uscire, e condividono tutti lo stesso livello di autenticazione:
 
-- **[REST API](../api/api-keys)** — l'intera superficie del prodotto, richiamabile con un bearer token da qualsiasi linguaggio.
-- **[Chiavi API](../api/api-keys)** — la credenziale più semplice: un token `cak_…` legato a una persona in una chiesa.
-- **[OAuth 2.0 e App connesse](../api/connected-apps)** — consenso per chiesa per app multi-tenant; emette lo stesso JWT che riceve un utente.
-- **[Webhook](../api/webhooks)** — eventi in uscita firmati e consegnati in modo durevole.
-- **[Server MCP](../api/mcp)** — un wrapper orientato all'IA sull'API REST, disponibile su `/mcp`.
-- **[Provider di contenuti](../freeplay-content-provider)** — il percorso in ingresso per le librerie multimediali esterne verso FreePlay e le app B1.
+- **[REST API](../api/api-keys.md)** — l'intera superficie del prodotto, richiamabile con un bearer token da qualsiasi linguaggio.
+- **[Chiavi API](../api/api-keys.md)** — la credenziale più semplice: un token `cak_…` legato a una persona in una chiesa.
+- **[OAuth 2.0 e App connesse](../api/connected-apps.md)** — consenso per chiesa per app multi-tenant; emette lo stesso JWT che riceve un utente.
+- **[Webhook](../api/webhooks.md)** — eventi in uscita firmati e consegnati in modo durevole.
+- **[Server MCP](../api/mcp.md)** — un wrapper orientato all'IA sull'API REST, disponibile su `/mcp`.
+- **[Provider di contenuti](../freeplay-content-provider.md)** — il percorso in ingresso per le librerie multimediali esterne verso FreePlay e le app B1.
 
 Tutto tranne i provider di contenuti è servito da un'unica API monolitica (il repository [Api](https://github.com/ChurchApps/Api)) i cui moduli sono montati su percorsi di base stabili — `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting` e `/mcp`.
 
@@ -80,7 +81,7 @@ I controller limitano le azioni con `au.checkAccess(contentType, action)` sull'a
 - Uno scope può solo *rimuovere* permessi, quindi una credenziale con ambito non può mai ottenere privilegi di amministrazione del server o del dominio (tali permessi sono deliberatamente non associati ad alcuno scope).
 - Le chiavi API hanno il prefisso `cak_`; `CustomAuthProvider.getUser()` lo riconosce, calcola l'hash del segreto e risolve di nuovo i permessi RBAC attuali della persona proprietaria a ogni chiamata.
 
-Vedi [Chiavi API → Scope](../api/api-keys#scopes) per il catalogo completo.
+Vedi [Chiavi API → Scope](../api/api-keys.md#scopes) per il catalogo completo.
 
 ## Riferimento delle superfici
 
@@ -90,7 +91,7 @@ L'intera superficie del prodotto. Ogni endpoint autenticato accetta sia un JWT s
 
 ### Chiavi API
 
-Un token di accesso personale `cak_<prefix>.<secret>`, creato in **B1Admin → Impostazioni → Sviluppatore → Chiavi API**. Viene memorizzato solo un hash SHA-256; la chiave in chiaro viene mostrata una sola volta. Gestito su `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Ideale per gli script di una singola chiesa e per connettori come Zapier, Make e Google Sheets. → **[Chiavi API](../api/api-keys)**
+Un token di accesso personale `cak_<prefix>.<secret>`, creato in **B1Admin → Impostazioni → Sviluppatore → Chiavi API**. Viene memorizzato solo un hash SHA-256; la chiave in chiaro viene mostrata una sola volta. Gestito su `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Ideale per gli script di una singola chiesa e per connettori come Zapier, Make e Google Sheets. → **[Chiavi API](../api/api-keys.md)**
 
 ### OAuth 2.0 e App connesse
 
@@ -102,19 +103,19 @@ Per app multi-tenant che richiedono il consenso di ogni chiesa. Implementato in 
 
 I client pubblici possono anche registrarsi da soli con `POST /oauth/register` (registrazione dinamica del client RFC 7591); ricevono un `client_id` senza segreto, e i loro URI di reindirizzamento devono essere `https` o loopback.
 
-Una **App connessa** è la vista, per l'amministratore della chiesa, di un token concesso; è elencata e revocabile in `/membership/oauth/connections`. Il controller ospita anche un ponte di **relay-session** OAuth (`/oauth/relay/*`) che permette a un dispositivo senza browser di completare l'accesso presso un fornitore *esterno*. → **[App connesse e OAuth](../api/connected-apps)**
+Una **App connessa** è la vista, per l'amministratore della chiesa, di un token concesso; è elencata e revocabile in `/membership/oauth/connections`. Il controller ospita anche un ponte di **relay-session** OAuth (`/oauth/relay/*`) che permette a un dispositivo senza browser di completare l'accesso presso un fornitore *esterno*. → **[App connesse e OAuth](../api/connected-apps.md)**
 
 ### Webhook
 
-L'unica superficie in uscita. Una chiesa iscrive un endpoint HTTPS pubblico a degli eventi; quando si verifica una modifica corrispondente, `WebhookDispatcher.emit(churchId, event, payload)` arricchisce i payload con soli id con i nomi visualizzati (`personName`, `groupName`, `formName` — le ricerche vengono eseguite solo quando una sottoscrizione corrisponde), registra una consegna, e un worker in background invia un envelope JSON firmato con ritentativi, backoff e nuova consegna. Il motore si trova in `Api/src/shared/webhooks/`, mentre le operazioni CRUD per chiesa sono sotto `/membership/webhooks` (`WebhookController.ts`). Un campo `connectorType` modifica la forma del corpo per Slack / Discord; il connettore `mailchimp` va oltre e gestisce l'intero scambio HTTP (metodo/URL/autenticazione per evento sull'API di Mailchimp, credenziali cifrate in `webhooks.connectorConfig`). → **[Webhook](../api/webhooks)**
+L'unica superficie in uscita. Una chiesa iscrive un endpoint HTTPS pubblico a degli eventi; quando si verifica una modifica corrispondente, `WebhookDispatcher.emit(churchId, event, payload)` arricchisce i payload con soli id con i nomi visualizzati (`personName`, `groupName`, `formName` — le ricerche vengono eseguite solo quando una sottoscrizione corrisponde), registra una consegna, e un worker in background invia un envelope JSON firmato con ritentativi, backoff e nuova consegna. Il motore si trova in `Api/src/shared/webhooks/`, mentre le operazioni CRUD per chiesa sono sotto `/membership/webhooks` (`WebhookController.ts`). Un campo `connectorType` modifica la forma del corpo per Slack / Discord; il connettore `mailchimp` va oltre e gestisce l'intero scambio HTTP (metodo/URL/autenticazione per evento sull'API di Mailchimp, credenziali cifrate in `webhooks.connectorConfig`). → **[Webhook](../api/webhooks.md)**
 
 ### Server MCP
 
-Un wrapper orientato all'IA su `/mcp` (`Api/src/modules/mcp/`). Tre strumenti generici — `list_endpoints`, `describe_endpoint`, `api_call` — espongono dinamicamente l'intera superficie REST a qualsiasi client MCP. L'autenticazione è lo stesso bearer token di tutto il resto. Per i client che accedono con OAuth (connettori personalizzati di claude.ai), una risposta 401 da `/mcp` include un'intestazione `WWW-Authenticate` che punta a `/.well-known/oauth-protected-resource`, e `/.well-known/oauth-authorization-server` pubblicizza gli endpoint `/membership/oauth`, la registrazione dinamica, PKCE e la pagina di consenso `/oauth` di B1Admin (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` rientra nello stack Express in-process, così ogni regola di permesso e di ambito per chiesa continua ad applicarsi. → **[Server MCP](../api/mcp)**
+Un wrapper orientato all'IA su `/mcp` (`Api/src/modules/mcp/`). Tre strumenti generici — `list_endpoints`, `describe_endpoint`, `api_call` — espongono dinamicamente l'intera superficie REST a qualsiasi client MCP. L'autenticazione è lo stesso bearer token di tutto il resto. Per i client che accedono con OAuth (connettori personalizzati di claude.ai), una risposta 401 da `/mcp` include un'intestazione `WWW-Authenticate` che punta a `/.well-known/oauth-protected-resource`, e `/.well-known/oauth-authorization-server` pubblicizza gli endpoint `/membership/oauth`, la registrazione dinamica, PKCE e la pagina di consenso `/oauth` di B1Admin (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` rientra nello stack Express in-process, così ogni regola di permesso e di ambito per chiesa continua ad applicarsi. → **[Server MCP](../api/mcp.md)**
 
 ### Provider di contenuti
 
-Il percorso dei contenuti in ingresso, nel pacchetto separato `Packages/content-providers` (`@churchapps/content-providers`) anziché nell'API. Ogni provider implementa l'interfaccia `IProvider` (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions`, più gli hook di autenticazione — e si registra autonomamente in un registro `Map` (`src/providers/registry.ts`). Qui **B1 è il client OAuth**: un provider dichiara un `AuthType` tra `none`, `oauth_pkce`, `device_flow` o `form_login`, e gli helper condivisi (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) eseguono lato client il flusso PKCE / device verso la fonte esterna. Oggi sono disponibili undici provider — tra cui Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church e B1.church — che alimentano FreePlay e le app B1. → **[Provider di contenuti FreePlay](../freeplay-content-provider)**
+Il percorso dei contenuti in ingresso, nel pacchetto separato `Packages/content-providers` (`@churchapps/content-providers`) anziché nell'API. Ogni provider implementa l'interfaccia `IProvider` (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions`, più gli hook di autenticazione — e si registra autonomamente in un registro `Map` (`src/providers/registry.ts`). Qui **B1 è il client OAuth**: un provider dichiara un `AuthType` tra `none`, `oauth_pkce`, `device_flow` o `form_login`, e gli helper condivisi (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) eseguono lato client il flusso PKCE / device verso la fonte esterna. Oggi sono disponibili undici provider — tra cui Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church e B1.church — che alimentano FreePlay e le app B1. → **[Provider di contenuti FreePlay](../freeplay-content-provider.md)**
 
 **I piani annuali** utilizzano questo percorso. Un editore di curricoli (con `lessons.edit`) mantiene sequenze ordinate di settimane 1/2/3 nell'amministrazione di Lessons.church (tabelle `yearPlans` / `yearPlanWeeks` di LessonsApi, con `startMonth` facoltativo e `anchor` per settimana di `easter` / `christmas`); `GET /yearPlans/public` su LessonsApi serve in forma anonima i piani attivi, idratando il programma/studio/luogo di ogni settimana dall'albero delle lezioni. B1Admin, in **Servizio → Piani → Programma lezione → Applica piano annuale**, consuma quell'endpoint e scrive un piano DoingApi per ogni settimana inclusa (`providerId=lessonschurch`, `providerPlanId=/lessons/{programId}/{studyId}/{lessonId}/{venueId}`). I piani con `startMonth` risolvono le settimane ancorate rispetto all'anno scelto (Pasqua tramite il computo gregoriano, Natale come la domenica precedente o uguale al 25 dicembre) e riempiono gli intervalli tra di esse; i piani senza `startMonth` associano comunque la settimana N a `startDate + (N−1)×7` giorni. Le settimane provenienti da provider OLF esterni o con un percorso incompleto vengono saltate al momento dell'applicazione; le chiese modificano i piani risultanti come qualsiasi altro, e FreePlay riproduce ciò che è presente nel piano.
 
@@ -122,12 +123,12 @@ Il percorso dei contenuti in ingresso, nel pacchetto separato `Packages/content-
 
 | Superficie | Meccanismo di autenticazione | Direzione | Dove è implementata | Riferimento |
 |---|---|---|---|---|
-| REST API | JWT `Bearer` o chiave `cak_…` | In ingresso | `Api/src/modules/*` | [Chiavi API](../api/api-keys) |
-| Chiavi API | Token `cak_` con hash SHA-256 | Credenziale | `Api/.../membership/controllers/ApiKeyController.ts` | [Chiavi API](../api/api-keys) |
-| OAuth 2.0 / App connesse | Codice di autorizzazione (PKCE) · device · refresh → JWT; registrazione dinamica del client | In ingresso | `Api/.../membership/controllers/OAuthController.ts` | [App connesse](../api/connected-apps) |
-| Webhook | Segreto per hook, firma HMAC-SHA256 | In uscita | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhook](../api/webhooks) |
-| Server MCP | JWT `Bearer`, JWT OAuth (scoperto tramite `/.well-known`), o chiave `cak_…` | In ingresso (IA) | `Api/src/modules/mcp/` | [Server MCP](../api/mcp) |
-| Provider di contenuti | Per provider: nessuno / OAuth PKCE / device / form | Contenuti in ingresso | `Packages/content-providers/` | [Provider di contenuti](../freeplay-content-provider) |
+| REST API | JWT `Bearer` o chiave `cak_…` | In ingresso | `Api/src/modules/*` | [Chiavi API](../api/api-keys.md) |
+| Chiavi API | Token `cak_` con hash SHA-256 | Credenziale | `Api/.../membership/controllers/ApiKeyController.ts` | [Chiavi API](../api/api-keys.md) |
+| OAuth 2.0 / App connesse | Codice di autorizzazione (PKCE) · device · refresh → JWT; registrazione dinamica del client | In ingresso | `Api/.../membership/controllers/OAuthController.ts` | [App connesse](../api/connected-apps.md) |
+| Webhook | Segreto per hook, firma HMAC-SHA256 | In uscita | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhook](../api/webhooks.md) |
+| Server MCP | JWT `Bearer`, JWT OAuth (scoperto tramite `/.well-known`), o chiave `cak_…` | In ingresso (IA) | `Api/src/modules/mcp/` | [Server MCP](../api/mcp.md) |
+| Provider di contenuti | Per provider: nessuno / OAuth PKCE / device / form | Contenuti in ingresso | `Packages/content-providers/` | [Provider di contenuti](../freeplay-content-provider.md) |
 
 ## Connettori predefiniti
 
@@ -143,9 +144,9 @@ Per il tuo codice, **[`@churchapps/integration-sdk`](https://www.npmjs.com/packa
 
 ## Pagine correlate
 
-- [Chiavi API](../api/api-keys) — la credenziale più semplice e il catalogo degli scope
-- [App connesse e OAuth](../api/connected-apps) — flussi di consenso multi-tenant
-- [Webhook](../api/webhooks) — il sistema di eventi in uscita
-- [Server MCP](../api/mcp) — il wrapper per l'integrazione con l'IA
-- [Provider di contenuti FreePlay](../freeplay-content-provider) — diventare una fonte di contenuti in ingresso
+- [Chiavi API](../api/api-keys.md) — la credenziale più semplice e il catalogo degli scope
+- [App connesse e OAuth](../api/connected-apps.md) — flussi di consenso multi-tenant
+- [Webhook](../api/webhooks.md) — il sistema di eventi in uscita
+- [Server MCP](../api/mcp.md) — il wrapper per l'integrazione con l'IA
+- [Provider di contenuti FreePlay](../freeplay-content-provider.md) — diventare una fonte di contenuti in ingresso
 - [Integrazioni (per utenti finali)](/docs/b1-admin/integrations/) — guide alla configurazione dei connettori predefiniti

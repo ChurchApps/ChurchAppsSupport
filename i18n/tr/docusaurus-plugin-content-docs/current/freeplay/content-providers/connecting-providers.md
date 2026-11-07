@@ -1,5 +1,6 @@
 ---
 title: "Sağlayıcılara Bağlanma"
+description: "FreePlay'i bir QR kodu, e-posta girişi veya tek tıkla erişim ile içerik sağlayıcısına bağlayın; bağlantıyı Ayarlar'dan yönetin veya kesin."
 ---
 
 # Sağlayıcılara Bağlanma
@@ -13,7 +14,7 @@ Bir sağlayıcıdan içerik görüntülemeden önce ona bağlanmanız gerekir. B
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- FreePlay'i yükleyip başlatın -- bkz. [Başlarken](../getting-started/)
+- FreePlay'i yükleyip başlatın -- bkz. [Başlarken](../getting-started/index.md)
 - Gezinmek için TV kumandanızı hazır bulundurun
 - Giriş gerektiren sağlayıcılar için hesap bilgilerinizin elinizde olduğundan emin olun
 
@@ -80,7 +81,7 @@ E-posta alanı, parola alanı ve oturum açma düğmesi arasında geçiş yapmak
 
 - **Kütüphaneye Göz At** -- Bu sağlayıcının içerik kütüphanesini kenar çubuğunda göster veya gizle
 - **Bugünkü Dersi Otomatik İndir** -- Bu sağlayıcıyı bugünkü dersin kaynağı olarak kullanın ve dosyalarını önceden indirin (yalnızca güncel ders sunan sağlayıcılarda gösterilir)
-- **Duyurular için Kullan** -- Kenar çubuğundaki **Duyurular** öğesinde döngüsel olarak gösterilecek bir klasörü bu sağlayıcıdan seçin. Bkz. [Duyurular](./announcements)
+- **Duyurular için Kullan** -- Kenar çubuğundaki **Duyurular** öğesinde döngüsel olarak gösterilecek bir klasörü bu sağlayıcıdan seçin. Bkz. [Duyurular](./announcements.md)
 - **Duyuru Güncellemelerini Denetle** -- Bir duyuru klasörü seçildikten sonra gösterilir; yeni slaytları indirir ve silinenleri kaldırır
 - **Bağlantıyı Kes** -- Bağlantıyı kaldırır
 
@@ -100,6 +101,6 @@ Bağlantıyı kesmek, kaydedilmiş kimlik doğrulama bilgilerini cihazınızdan 
 
 ## İlgili Makaleler
 
-- **[İçerikte Gezinme ve İçerik İndirme](./browsing-content)** - Bağlandıktan sonra klasörlerde gezinin ve içeriği oynatın
-- **[Duyurular](./announcements)** - Bağlı bir sağlayıcıdan slayt klasörünü döngüsel olarak gösterin
+- **[İçerikte Gezinme ve İçerik İndirme](./browsing-content.md)** - Bağlandıktan sonra klasörlerde gezinin ve içeriği oynatın
+- **[Duyurular](./announcements.md)** - Bağlı bir sağlayıcıdan slayt klasörünü döngüsel olarak gösterin
 - **[İçerik Sağlayıcılarına Genel Bakış](./index.md)** - Kullanılabilir tüm sağlayıcıları görün

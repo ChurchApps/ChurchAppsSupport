@@ -1,5 +1,6 @@
 ---
 title: "Raporty frekwencji"
+description: "Raporty frekwencji w B1 Admin: Trend frekwencji, Frekwencja w grupach i Dzienna frekwencja w grupach. Co pokazuje każdy z nich oraz jak je uruchomić i wyeksportować."
 ---
 
 # Raporty frekwencji

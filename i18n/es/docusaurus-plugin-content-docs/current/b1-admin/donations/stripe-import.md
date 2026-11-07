@@ -1,5 +1,6 @@
 ---
 title: "Importación de Stripe"
+description: "Importa donaciones de Stripe a B1 Admin con una vista previa que marca cada cargo como nuevo, ya importado u omitido antes de confirmar la importación."
 ---
 
 # Importación de Stripe

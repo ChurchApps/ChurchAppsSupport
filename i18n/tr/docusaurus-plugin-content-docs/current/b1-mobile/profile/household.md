@@ -1,5 +1,6 @@
 ---
 title: "Gospodarstwo domowe"
+description: "B1 Mobile Profil sekmesinde hanenizde kimlerin olduğunu ve üyelerin nasıl bağlantılı olduğunu görün; check-in ve diğer özellikler bunlara dayanır."
 ---
 
 Bu bölümde yanlış bir dil görünüyor; aşağıda düzeltilmiş Türkçe çevirisi yer almaktadır.
@@ -19,7 +20,7 @@ Profil ekranınızdaki **Hane Halkı** sekmesi aile üyelerinizi gösterir. Bura
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
 
 </div>
 
@@ -39,7 +40,7 @@ Hane halkı bilgileriniz B1 Mobile'daki ve ChurchApps genelindeki çeşitli öze
 
 - **Yoklama** -- Bir ibadet veya etkinlik için [yoklama yaptığınızda](../checkin/self-checkin.md) her kişiyi tek tek işaretlemek yerine hane halkınızın tamamını bir kerede işaretleyebilirsiniz.
 - **Kilise kayıtları** -- Kiliseniz, aile kayıtlarını düzenli tutmak ve aileyle bir bütün olarak iletişim kurmak için hane halkı verilerini kullanır.
-- **Rehber** -- Diğer üyeler, [gizlilik ayarlarınıza](./privacy-settings) bağlı olarak hane halkı bilgilerinizi [kilise rehberinde](../community/member-directory.md) görebilir.
+- **Rehber** -- Diğer üyeler, [gizlilik ayarlarınıza](./privacy-settings.md) bağlı olarak hane halkı bilgilerinizi [kilise rehberinde](../community/member-directory.md) görebilir.
 
 ## Hane Halkınızı Görüntüleme
 
@@ -53,10 +54,10 @@ Hane halkı üyeliği genellikle kilise yöneticiniz tarafından yönetilir. Han
 
 ## Bilgileri Güncel Tutma
 
-Bir aile üyesinin bilgilerinin güncellenmesi gerekiyorsa, kendi [profilini düzenleyebilir](./editing-profile) veya değişiklik yapmak için kilise yöneticinize başvurabilirsiniz. Hane halkı bilgilerinin doğru olması, [yoklama](../checkin/) gibi özelliklerin tüm aileniz için sorunsuz çalışmasını sağlar.
+Bir aile üyesinin bilgilerinin güncellenmesi gerekiyorsa, kendi [profilini düzenleyebilir](./editing-profile.md) veya değişiklik yapmak için kilise yöneticinize başvurabilirsiniz. Hane halkı bilgilerinin doğru olması, [yoklama](../checkin/index.md) gibi özelliklerin tüm aileniz için sorunsuz çalışmasını sağlar.
 
 ## İlgili Makaleler
 
 - [Kendi Kendine Yoklama](../checkin/self-checkin.md) -- Hane halkı üyelerinizi ibadetler için yoklamaya alın
-- [Profilinizi Düzenleme](./editing-profile) -- Kişisel bilgilerinizi güncelleyin
-- [Gizlilik Ayarları](./privacy-settings) -- Hane halkınız hakkında başkalarının neleri görebileceğini kontrol edin
+- [Profilinizi Düzenleme](./editing-profile.md) -- Kişisel bilgilerinizi güncelleyin
+- [Gizlilik Ayarları](./privacy-settings.md) -- Hane halkınız hakkında başkalarının neleri görebileceğini kontrol edin

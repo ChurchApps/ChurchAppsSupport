@@ -1,5 +1,6 @@
 ---
 title: "Správa serveru"
+description: "Pouze pro uživatele Server.Admin: resetovat dvoufázové přihlášení, přihlásit se jako jiný účet, moderovat Commons a schvalovat e-mail církve v B1 Admin."
 ---
 
 # Správa serveru

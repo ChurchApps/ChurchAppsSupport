@@ -1,5 +1,6 @@
 ---
 title: "Yêu cầu Sự kiện & Phòng"
+description: "Yêu cầu đặt phòng hoặc thiết bị cho sự kiện từ cổng thành viên B1.church, theo dõi trạng thái trong Yêu cầu của tôi và hủy khi đang chờ duyệt."
 ---
 
 # Yêu cầu Sự kiện & Phòng
@@ -42,11 +43,11 @@ Mở **Yêu cầu của tôi** từ trang Tôi. Mỗi yêu cầu hiển thị s�
 Khi yêu cầu vẫn đang chờ, bạn có thể rút lại bằng **Hủy yêu cầu** (bạn sẽ được yêu cầu xác nhận. Việc hủy không thể hoàn tác).
 
 :::info
-Yêu cầu được nhân viên nhà thờ xem xét tại [trang Phê duyệt](../../b1-admin/calendars/approvals) trong B1 Admin. Việc phòng và tài nguyên nào cần phê duyệt do nhà thờ của bạn quyết định. Xem [Phòng & Tài nguyên](../../b1-admin/calendars/rooms-resources).
+Yêu cầu được nhân viên nhà thờ xem xét tại [trang Phê duyệt](../../b1-admin/calendars/approvals.md) trong B1 Admin. Việc phòng và tài nguyên nào cần phê duyệt do nhà thờ của bạn quyết định. Xem [Phòng & Tài nguyên](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Bài Viết Liên Quan
 
-- [Trang Tôi](../getting-started/me-page) -- Nơi chứa các liên kết yêu cầu
-- [Phê duyệt Lịch (B1 Admin)](../../b1-admin/calendars/approvals) -- Cách nhân viên xem xét yêu cầu
-- [Phòng & Tài nguyên (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Cách nhà thờ thiết lập các không gian có thể đặt trước
+- [Trang Tôi](../getting-started/me-page.md) -- Nơi chứa các liên kết yêu cầu
+- [Phê duyệt Lịch (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Cách nhân viên xem xét yêu cầu
+- [Phòng & Tài nguyên (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Cách nhà thờ thiết lập các không gian có thể đặt trước

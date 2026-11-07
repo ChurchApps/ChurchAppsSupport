@@ -1,5 +1,6 @@
 ---
 title: "Piani di servizio"
+description: "Configura i turni dei volontari in B1 Admin: crea piani per data, copia da settimane precedenti, assegna i membri alle posizioni e gestisci scadenze e promemoria."
 ---
 
 # Piani di servizio

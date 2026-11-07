@@ -1,5 +1,6 @@
 ---
 title: "Procurando Membros"
+description: "Encontre sua família no quiosque do B1 Checkin pesquisando pelos dígitos do telefone ou pelo nome, e cadastre-se como visitante se for sua primeira vez."
 ---
 
 # Procurando Membros
@@ -13,7 +14,7 @@ Após selecionar um serviço, você chega à tela de busca de membros. Este é o
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Selecione um serviço](./selecting-service) na tela de serviços
+- [Selecione um serviço](./selecting-service.md) na tela de serviços
 - Certifique-se de que sua família foi [adicionada ao sistema](../../b1-admin/people/adding-people.md) por um administrador da igreja
 
 </div>
@@ -45,7 +46,7 @@ O aplicativo pesquisa membros cujo nome corresponde ao que você digitou.
 
 Os resultados da busca aparecem como cartões abaixo do campo de busca. Cada cartão mostra o **nome** da pessoa e **foto** (se houver uma em arquivo).
 
-Toque no cartão de uma pessoa para selecioná-la. O aplicativo carrega todos os membros da família dessa pessoa e o leva para a [tela de revisão de família](./household-review).
+Toque no cartão de uma pessoa para selecioná-la. O aplicativo carrega todos os membros da família dessa pessoa e o leva para a [tela de revisão de família](./household-review.md).
 
 :::tip
 Pesquisar pelos últimos 4 dígitos de um número de telefone é a forma mais rápida de procurar sua família. Incentive os membros a usar esse método para uma experiência de check-in mais rápida.
@@ -60,7 +61,7 @@ Se nenhum resultado for encontrado, o aplicativo exibe uma mensagem informando. 
 Se sua igreja tem o registro de convidado por QR ativado, um link **Registrar como convidado** aparece abaixo da busca na tela de busca. Visitantes pela primeira vez podem usá-lo para adicionar sua família ao sistema da igreja antes do check-in.
 
 1. Toque em **Registrar como convidado**. Uma janela abre com um código QR e a mensagem "Escaneie para registrar como convidado."
-2. Escolha como preencher o [formulário de registro de convidado](../../b1-church/checkin/guest-registration):
+2. Escolha como preencher o [formulário de registro de convidado](../../b1-church/checkin/guest-registration.md):
    - **No seu telefone** -- Escaneie o código QR, preencha o formulário no seu telefone e toque em **OK** para fechar a janela.
    - **No quiosque** -- Toque em **Registrar aqui** para abrir o mesmo formulário direto no tablet. Preencha-o e toque em **Registrar**, depois toque em **Pronto** (ou a seta voltar) para retornar à tela de busca.
 3. Após registrado, procure sua família pelo nome ou número de telefone para fazer check-in.
@@ -71,7 +72,7 @@ O formulário aberto com **Registrar aqui** fica na página de registro de convi
 
 ## Imprimindo Etiquetas para um Check-in por Telefone
 
-Famílias que já fizeram check-in no telefone através do [autoatendimento B1 Church](../../b1-church/checkin/self-checkin) podem imprimir seus crachás no quiosque sem se procurarem.
+Famílias que já fizeram check-in no telefone através do [autoatendimento B1 Church](../../b1-church/checkin/self-checkin.md) podem imprimir seus crachás no quiosque sem se procurarem.
 
 1. Na tela de busca, toque no botão **Escanear código** (o ícone de código QR).
 2. Aponte o código QR do seu telefone para a câmera. Se o aplicativo pedir acesso à câmera, toque em **Permitir Câmera**. A câmera frontal é usada por padrão; toque no botão de inverter para alternar.
@@ -81,4 +82,4 @@ Escanear apenas imprime etiquetas -- a presença já foi registrada quando a fam
 
 ## Próximo Passo
 
-Após selecionar uma pessoa, você irá [revisar sua família](./household-review) e gerenciar atribuições de grupos.
+Após selecionar uma pessoa, você irá [revisar sua família](./household-review.md) e gerenciar atribuições de grupos.

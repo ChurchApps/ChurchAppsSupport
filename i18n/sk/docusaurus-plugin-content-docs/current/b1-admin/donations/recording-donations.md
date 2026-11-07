@@ -1,5 +1,6 @@
 ---
 title: "Zaznamenávanie darov"
+description: "Zaznamenávajte dary v B1 Admin: vytvorte dávku a zadajte dary po jednom, importujte CSV alebo zapíšte jeden dar z profilu darcu."
 ---
 
 # Zaznamenávanie darov

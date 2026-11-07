@@ -1,5 +1,7 @@
 ---
-title: "Entrando"
+title: "Como Fazer Login no B1 Church Checkin"
+sidebar_label: "Entrando"
+description: "Entre no app de quiosque B1 Church Checkin, escolha sua igreja e entenda o login automático, as configurações de administrador e o logout no tablet."
 ---
 
 # Entrando
@@ -63,7 +65,7 @@ As configurações de administrador ficam intencionalmente ocultas para que os m
 2. Se um PIN do quiosque estiver definido, digite o PIN quando solicitado.
 3. A tela **Configurações de administrador** será aberta com as seguintes opções:
    - **Alterar culto** — troca o horário de culto selecionado
-   - **Alterar impressora** — abre as [configurações de impressora](./printer-setup) para buscar e selecionar uma impressora
+   - **Alterar impressora** — abre as [configurações de impressora](./printer-setup.md) para buscar e selecionar uma impressora
    - **Definir/Alterar PIN** — define ou atualiza o PIN do quiosque que protege o acesso de administrador
    - **Sair** — encerra a sessão e volta à tela de login
 
@@ -73,4 +75,4 @@ Sair apaga todas as credenciais salvas e a seleção de igreja. Você precisará
 
 ## Próximos passos
 
-Depois de entrar, você pode [configurar uma impressora](./printer-setup) ou ir direto para o [fluxo de check-in](../check-in/).
+Depois de entrar, você pode [configurar uma impressora](./printer-setup.md) ou ir direto para o [fluxo de check-in](../check-in/index.md).

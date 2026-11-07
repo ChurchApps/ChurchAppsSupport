@@ -1,5 +1,6 @@
 ---
 title: "Päätepisteiden viite"
+description: "Löydä jokainen ChurchApps-API-päätepiste moduulin mukaan, näe kunkin reitin HTTP-metodi, polku, todennus ja käyttöoikeus sekä opi erätallennuksen ja virhekäytännöt ennen API:n kutsumista."
 ---
 
 # Päätepisteiden viite
@@ -89,10 +90,10 @@ Raportin parametrit välitetään kyselymerkkijonon arvoina (esim. `?startDate=2
 
 | Moduuli | Perusreitti | Kuvaus |
 |---------|-------------|--------|
-| [Authentication](./authentication) | `/membership/users`, `/membership/oauth` | Kirjautuminen, rekisteröityminen, JWT-tokenit, OAuth, oikeudet |
-| [Membership](./membership) | `/membership/*` | Henkilöt, seurakunnat, ryhmät, taloudet, roolit, lomakkeet, asetukset |
-| [Attendance](./attendance) | `/attendance/*` | Kampukset, palvelut, istunnot, vierailut, sisäänkirjautumistiedot |
-| [Content](./content) | `/content/*` | Sivut, saarnat, tapahtumat, tiedostot, galleriat, Raamattu, suoratoisto |
-| [Giving](./giving) | `/giving/*` | Lahjoitukset, rahastot, maksuyhdyskäytävät, tilaukset |
-| [Messaging](./messaging) | `/messaging/*` | Keskustelut, ilmoitukset, laitteet, tekstiviestit |
-| [Doing](./doing) | `/doing/*` | Suunnitelmat, tehtävät, tehtävänjaot, automaatiot, aikataulutus |
+| [Authentication](./authentication.md) | `/membership/users`, `/membership/oauth` | Kirjautuminen, rekisteröityminen, JWT-tokenit, OAuth, oikeudet |
+| [Membership](./membership.md) | `/membership/*` | Henkilöt, seurakunnat, ryhmät, taloudet, roolit, lomakkeet, asetukset |
+| [Attendance](./attendance.md) | `/attendance/*` | Kampukset, palvelut, istunnot, vierailut, sisäänkirjautumistiedot |
+| [Content](./content.md) | `/content/*` | Sivut, saarnat, tapahtumat, tiedostot, galleriat, Raamattu, suoratoisto |
+| [Giving](./giving.md) | `/giving/*` | Lahjoitukset, rahastot, maksuyhdyskäytävät, tilaukset |
+| [Messaging](./messaging.md) | `/messaging/*` | Keskustelut, ilmoitukset, laitteet, tekstiviestit |
+| [Doing](./doing.md) | `/doing/*` | Suunnitelmat, tehtävät, tehtävänjaot, automaatiot, aikataulutus |

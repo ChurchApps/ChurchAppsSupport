@@ -1,5 +1,6 @@
 ---
 title: "Maksulliset ilmoittautumiset"
+description: "Määritä B1 Adminissa maksulliset ilmoittautumiset: hinnoitellut osallistujatyypit, lisäpalvelut, alennuskoodit, odotuslistat ja maksut lahjoituspalvelun kautta."
 ---
 
 # Maksulliset ilmoittautumiset
@@ -17,7 +18,7 @@ Tapahtumailmoittautuminen voi olla muutakin kuin yksinkertainen osallistujamää
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Ota ilmoittautuminen käyttöön tapahtumassa ensin — katso [Kalenterien luominen](creating-calendars#enabling-event-registration)
+- Ota ilmoittautuminen käyttöön tapahtumassa ensin — katso [Kalenterien luominen](./creating-calendars.md#enabling-event-registration)
 - Jotta maksut voidaan kerätä verkossa, kirkkosi tarvitsee [verkkolahjoitusten asetukset](../donations/online-giving-setup.md) (Stripe, PayPal tai Kingdom Funding). Ilmaiset tapahtumat eivät vaadi lahjoitusasetuksia. Ilman verkkolahjoituksia maksulliset ilmoittautumiset toimivat edelleen, mutta ihmiset maksavat suoraan kirkolle — katso [Kirkot ilman verkkolahjoituksia](#churches-without-online-giving).
 
 </div>
@@ -66,7 +67,7 @@ Jokainen koodi näyttää **Uses**-laskurin, josta näet, kuinka usein sitä on 
 Ota **Enable Waitlist** käyttöön Registration Settings -kortilla. Kun tapahtuma saavuttaa kapasiteettinsa:
 
 - Uusille ilmoittautujille tarjotaan odotuslistapaikka sen sijaan, että heidät torjuttaisiin. He suorittavat saman ilmoittautumisen (maksu ohitetaan odotuslistalla ollessa).
-- Kun joku peruu ilmoittautumisensa, vanhin odotuslistalla oleva ilmoittautuminen **siirretään automaattisesti** ja hän saa sähköpostin, jonka mukaan paikka vapautui. Jos hänellä on maksamatonta saldoa, sähköposti ohjaa hänet kirkkosi B1-sivuston [Ilmoittautumiseni](../../b1-church/events/my-registrations) -sivulle, jossa hän voi suorittaa maksun.
+- Kun joku peruu ilmoittautumisensa, vanhin odotuslistalla oleva ilmoittautuminen **siirretään automaattisesti** ja hän saa sähköpostin, jonka mukaan paikka vapautui. Jos hänellä on maksamatonta saldoa, sähköposti ohjaa hänet kirkkosi B1-sivuston [Ilmoittautumiseni](../../b1-church/events/my-registrations.md) -sivulle, jossa hän voi suorittaa maksun.
 - Voit siirtää henkilön käsin milloin tahansa odotuslistalla olevan rivin **Promote**-toiminnolla — hyödyllinen esimerkiksi tapahtuman kapasiteetin nostamisen jälkeen.
 
 :::info
@@ -79,7 +80,7 @@ Avaa tapahtuma Registrations-sivulta nähdäksesi kaikki ilmoittautumiset. Korti
 
 - Napsauta rivin tietokuvaketta avataksesi **Registration Details** -ikkunan — jäsenet, valinnat, maksettu/saldo sekä **Payments**-taulukko, johon on listattu jokainen veloitus (summa, maksutapa, päivämäärä).
 - **Export CSV** lataa koko ilmoittautujaluettelon sarakkeineen: jäsenet, osallistujatyypit, valinnat, maksettu/yhteensä/saldo, tila sekä yksi sarake kutakin ilmoittautumiskysymystä kohden.
-- **Add Attendee** kirjaa offline- tai puhelinilmoittautumisen kenelle tahansa seurakuntasi jäsenelle. Valitse henkilö ja maksullisessa tapahtumassa hänen osallistujatyyppinsä. Hänen korttiaan ei veloiteta: maksullinen ilmoittautuminen tallennetaan **odottavana** koko summa maksettavana saldona. Jos kirkollasi on verkkolahjoitukset, henkilö voi maksaa sen [Ilmoittautumiseni](../../b1-church/events/my-registrations) -sivulta; muuten maksu kerätään henkilökohtaisesti. Tarvitset Registrations Edit -oikeuden lisätäksesi osallistujia.
+- **Add Attendee** kirjaa offline- tai puhelinilmoittautumisen kenelle tahansa seurakuntasi jäsenelle. Valitse henkilö ja maksullisessa tapahtumassa hänen osallistujatyyppinsä. Hänen korttiaan ei veloiteta: maksullinen ilmoittautuminen tallennetaan **odottavana** koko summa maksettavana saldona. Jos kirkollasi on verkkolahjoitukset, henkilö voi maksaa sen [Ilmoittautumiseni](../../b1-church/events/my-registrations.md) -sivulta; muuten maksu kerätään henkilökohtaisesti. Tarvitset Registrations Edit -oikeuden lisätäksesi osallistujia.
 
 :::info
 Hyvityksiä ei käsitellä B1:ssä. Jos peruutetusta maksullisesta ilmoittautumisesta on palautettava rahat, tee hyvitys lahjoituspalveluntarjoajasi hallintapaneelista (esim. Stripe).
@@ -94,12 +95,12 @@ Maksut kulkevat samaa lahjoitusyhteyskäytävää kuin kirkkosi jo käyttämä l
 Jos kirkollasi ei ole määritettyä lahjoituspalveluntarjoajaa, maksulliset tapahtumat voivat silti ottaa ilmoittautumisia vastaan. Maksuvaihe kertoo ilmoittautujille, että verkkomaksu ei ole käytettävissä ja että he voivat maksaa suoraan kirkolle. Painike **Register and Pay Later** tallentaa ilmoittautumisen. Se tallennetaan **odottavana** koko summa maksettavana saldona, ja se näkyy ilmoittautujaluettelossa saldovaroituksella. Kerää rahat tavalliseen tapaasi.
 
 :::info
-B1:ssä ei ole tapaa merkitä offline-maksua vastaanotetuksi. Maksettava saldo pysyy ilmoittautujaluettelossa ja ilmoittautujan [Ilmoittautumiseni](../../b1-church/events/my-registrations) -kortilla rahojen keräämisen jälkeenkin, joten pidä itse kirjaa siitä, ketkä ovat maksaneet.
+B1:ssä ei ole tapaa merkitä offline-maksua vastaanotetuksi. Maksettava saldo pysyy ilmoittautujaluettelossa ja ilmoittautujan [Ilmoittautumiseni](../../b1-church/events/my-registrations.md) -kortilla rahojen keräämisen jälkeenkin, joten pidä itse kirjaa siitä, ketkä ovat maksaneet.
 :::
 
 ## Liittyvät artikkelit
 
-- [Kalenterien luominen](creating-calendars#enabling-event-registration) — ilmoittautumisen ja perusasetusten käyttöönotto
+- [Kalenterien luominen](./creating-calendars.md#enabling-event-registration) — ilmoittautumisen ja perusasetusten käyttöönotto
 - [Verkkolahjoitusten asetukset](../donations/online-giving-setup.md) — kassalla käytettävän maksuyhdyskäytävän määrittäminen
-- [Ilmoittautuminen tapahtumiin](../../b1-church/events/registering) — mitä jäsenet näkevät ilmoittautuessaan
-- [Ilmoittautumiseni](../../b1-church/events/my-registrations) — miten jäsenet maksavat saldot ja muokkaavat ilmoittautumisiaan
+- [Ilmoittautuminen tapahtumiin](../../b1-church/events/registering.md) — mitä jäsenet näkevät ilmoittautuessaan
+- [Ilmoittautumiseni](../../b1-church/events/my-registrations.md) — miten jäsenet maksavat saldot ja muokkaavat ilmoittautumisiaan

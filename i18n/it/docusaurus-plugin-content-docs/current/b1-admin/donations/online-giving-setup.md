@@ -1,5 +1,6 @@
 ---
 title: "Configurazione delle donazioni online"
+description: "Collega a B1 Admin Stripe, PayPal, Kingdom Funding o Paystack, così i membri possono donare online dal tuo sito B1.church e le offerte si sincronizzano."
 ---
 
 # Configurazione delle donazioni online

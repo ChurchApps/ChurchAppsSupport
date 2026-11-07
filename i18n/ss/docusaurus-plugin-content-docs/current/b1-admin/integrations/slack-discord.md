@@ -1,5 +1,6 @@
 ---
 title: "Slack & Discord"
+description: "Phostela timcimbi te-B1 Admin, njengebantfu labasha, timinikelo netifomu, esiteshini se-Slack noma Discord nge-webhook yekungena, ngaphandle kwe-Zapier."
 ---
 
 # Slack & Discord
@@ -114,7 +115,7 @@ Nangabe kutsite kwehluleka (i-badge lebomvu `failed` nome `exhausted`), inkulumo
 
 - **Akukho mlayeto lovelako + simo sekuletsa `400`** — imvamisa i-Connector Type ihlelwe ibe **Standard** kepha i-URL yiyeSlack/Discord. I-Slack/Discord iyanqaba umthwalo lomvelo. Shintja i-dropdown ibe **Slack** nome **Discord** bese uphindze uhlola.
 - **I-Webhook izicalisa yodwana** — ngemuva kwekwehluleka lokulandzelanako lokutsatfu i-B1 iyayivala i-webhook. Lungisa i-URL (nome uyishintje ku-Slack/Discord) bese uvula-vala **Active** kabusha.
-- **Umlayeto uyefikile kepha ushoda ngemininingwane** — sonkhe sikhundla senkulumo-mpendvulwano sinemkhawulo webukhulu bemlayeto. Timilayeto te-B1 yimigca yinye ngekuhlelwa; kwesati lesibhalwe kabanti sebentisa i-[Zapier](./zapier) nome i-[Make](./make) kwakha umlayeto lopheleleko we-Slack ngekusebentisa ema-action awo eSlack.
+- **Umlayeto uyefikile kepha ushoda ngemininingwane** — sonkhe sikhundla senkulumo-mpendvulwano sinemkhawulo webukhulu bemlayeto. Timilayeto te-B1 yimigca yinye ngekuhlelwa; kwesati lesibhalwe kabanti sebentisa i-[Zapier](./zapier.md) nome i-[Make](./make.md) kwakha umlayeto lopheleleko we-Slack ngekusebentisa ema-action awo eSlack.
 
 ## Kushintja Luhlobo Lwe-Connector Kamuva
 
@@ -122,6 +123,6 @@ Ungashintja i-Connector Type ku-webhook lesele ikhona — kusebenta ekuletsweni 
 
 ## Bona Nako
 
-- [Zapier](./zapier) — kwemisebenti lenetinyatselo letinyenti leyicalisiwe yimicimbi ye-B1
-- [Make](./make) — sakhi sesento lesibonakalako
+- [Zapier](./zapier.md) — kwemisebenti lenetinyatselo letinyenti leyicalisiwe yimicimbi ye-B1
+- [Make](./make.md) — sakhi sesento lesibonakalako
 - [Webhooks (developer reference)](/docs/developer/api/webhooks) — indlela lephelele yemthwalo + kusayina nangabe ngelinye lilanga ubhekisa i-webhook eserveni yakho

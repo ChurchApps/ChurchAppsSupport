@@ -1,5 +1,7 @@
 ---
-title: "Pag-edit ng Iyong Profile"
+title: "Pag-edit ng Profile mo sa B1.church Member Portal"
+sidebar_label: "Pag-edit ng Iyong Profile"
+description: "I-update ang contact detail, miyembro ng household, login email at password, at privacy setting sa B1.church member portal."
 ---
 
 # Pag-edit ng Iyong Profile

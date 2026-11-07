@@ -1,5 +1,6 @@
 ---
 title: "Webhookok"
+description: "Állíts be valós idejű webhookokat a B1 Adminból: regisztrálj végpontokat, válassz eseményeket, ellenőrizd a HMAC-aláírásokat, kezeld az újrapróbálkozásokat, és küldd újra a sikertelen adatcsomagokat."
 ---
 
 # Webhookok
@@ -33,7 +34,7 @@ Lépjen a **Beállítások → Fejlesztő → Webhookok → Új webhook** menüp
 
 ### API-n keresztül
 
-Minden végpont a Membership modul `/membership/webhooks` alapútvonala alatt érhető el. Ezek vagy egy egyházi adminisztrátortól származó JWT-t, vagy a `settings:write` hatókörrel létrehozott [API-kulcsot](./api-keys) igényelnek. Ugyanazok az útvonalak mindkettőt elfogadják. Ez teszi lehetővé, hogy a Zapier és a Make az egyház nevében regisztráljon webhookokat, amikor egy Zap vagy forgatókönyv bekapcsolásra kerül.
+Minden végpont a Membership modul `/membership/webhooks` alapútvonala alatt érhető el. Ezek vagy egy egyházi adminisztrátortól származó JWT-t, vagy a `settings:write` hatókörrel létrehozott [API-kulcsot](./api-keys.md) igényelnek. Ugyanazok az útvonalak mindkettőt elfogadják. Ez teszi lehetővé, hogy a Zapier és a Make az egyház nevében regisztráljon webhookokat, amikor egy Zap vagy forgatókönyv bekapcsolásra kerül.
 
 ```http
 POST /membership/webhooks

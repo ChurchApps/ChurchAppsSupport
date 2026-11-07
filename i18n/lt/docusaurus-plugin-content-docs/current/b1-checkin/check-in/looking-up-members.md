@@ -1,5 +1,6 @@
 ---
 title: "Članų paieška"
+description: "Raskite šeimą B1 Checkin terminale ieškodami pagal telefono skaitmenis ar vardą, o jei lankotės pirmą kartą, užsiregistruokite kaip svečias."
 ---
 
 # Članų paieška
@@ -13,7 +14,7 @@ Pasirinkus pamaldas, atsidursite narių paieškos ekrane. Čia ieškote savo še
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Pasirinkite pamaldas](./selecting-service) paslaugų ekrane
+- [Pasirinkite pamaldas](./selecting-service.md) paslaugų ekrane
 - Įsitikinkite, kad jūsų namų ūkis buvo [pridėtas į sistemą](../../b1-admin/people/adding-people.md) bažnyčios administratoriaus
 
 </div>
@@ -45,7 +46,7 @@ Programėlė ieško narių, kurių vardas atitinka jūsų įvestą tekstą.
 
 Paieškos rezultatai rodomi kortelėmis po paieškos lauku. Kiekvienoje kortelėje rodomas asmens **vardas** ir **nuotrauka** (jei ji įrašyta).
 
-Bakstelėkite asmens kortelę, kad jį pasirinktumėte. Programėlė įkelia visus to asmens namų ūkio narius ir perkelia jus į [namų ūkio peržiūros ekraną](./household-review).
+Bakstelėkite asmens kortelę, kad jį pasirinktumėte. Programėlė įkelia visus to asmens namų ūkio narius ir perkelia jus į [namų ūkio peržiūros ekraną](./household-review.md).
 
 :::tip
 Greičiausias būdas surasti savo šeimą – paieška pagal paskutinius 4 telefono numerio skaitmenis. Skatinkite narius naudoti šį būdą, kad prisiregistravimas būtų greitesnis.
@@ -60,7 +61,7 @@ Jei rezultatų nerasta, programėlė parodo pranešimą. Patikrinkite įvestus s
 Jei jūsų bažnyčioje įjungta QR kodu grįstа svečių registracija, paieškos ekrane po paieškos lauku atsiranda nuoroda **Registruotis kaip svečias**. Pirmą kartą lankantys asmenys gali ja pasinaudoti, kad prieš prisiregistruodami į bažnyčios sistemą įtrauktų savo šeimą.
 
 1. Bakstelėkite **Registruotis kaip svečias**. Atsidaro langas su QR kodu ir pranešimu „Nuskaitykite, kad užsiregistruotumėte kaip svečias.“
-2. Pasirinkite, kaip užpildyti [svečio registracijos formą](../../b1-church/checkin/guest-registration):
+2. Pasirinkite, kaip užpildyti [svečio registracijos formą](../../b1-church/checkin/guest-registration.md):
    - **Savo telefone** -- Nuskaitykite QR kodą, užpildykite formą telefone ir bakstelėkite **Gerai**, kad uždarytumėte langą.
    - **Kioske** -- Bakstelėkite **Registruotis čia**, kad ta pati forma atsidarytų tiesiai planšetėje. Ją užpildykite ir bakstelėkite **Registruotis**, tada bakstelėkite **Atlikta** (arba atgal rodyklę), kad grįžtumėte į paieškos ekraną.
 3. Užsiregistravę ieškokite savo šeimos pagal vardą ar telefono numerį, kad prisiregistruotumėte.
@@ -71,7 +72,7 @@ Forma, atidaryta su **Registruotis čia**, lieka svečio registracijos puslapyje
 
 ## Etikečių spausdinimas telefoninei registracijai
 
-Šeimos, kurios jau prisiregistravo telefone per [B1 Church savitarnos registraciją](../../b1-church/checkin/self-checkin), gali atsispausdinti vardinius ženkliukus kiosko be paieškos.
+Šeimos, kurios jau prisiregistravo telefone per [B1 Church savitarnos registraciją](../../b1-church/checkin/self-checkin.md), gali atsispausdinti vardinius ženkliukus kiosko be paieškos.
 
 1. Paieškos ekrane bakstelėkite mygtuką **Nuskaityti kodą** (QR kodo piktograma).
 2. Laikykite telefone rodomą QR kodą prie kameros. Jei programėlė paprašys leidimo naudoti kamerą, bakstelėkite **Leisti kamerą**. Pagal numatytuosius nustatymus naudojama priekinė kamera; norėdami ją perjungti, bakstelėkite apvertimo mygtuką.
@@ -81,4 +82,4 @@ Nuskaitymas tik spausdina etiketes -- lankomumas jau buvo įrašytas, kai šeima
 
 ## Kitas žingsnis
 
-Pasirinkę asmenį, [peržiūrėsite savo namų ūkį](./household-review) ir tvarkysite grupių priskyrimus.
+Pasirinkę asmenį, [peržiūrėsite savo namų ūkį](./household-review.md) ir tvarkysite grupių priskyrimus.

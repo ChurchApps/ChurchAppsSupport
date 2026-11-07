@@ -1,5 +1,6 @@
 ---
 title: "Gestione Pagine"
+description: "Crea, modifica e organizza pagine e navigazione nella vista Pagine del sito di B1 Admin, incluse impostazioni, reindirizzamenti e modelli di sito."
 ---
 
 # Gestione Pagine
@@ -13,13 +14,13 @@ La visualizzazione Pagine Sito Web è il tuo hub centrale per creare, modificare
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Completa la [Configurazione Iniziale](initial-setup) per configurare il tuo dominio e le impostazioni di base del sito
-- Tieni pronto il tuo contenuto e le tue immagini. Usa il gestore [File](files) per caricare gli asset multimediali per primo.
+- Completa la [Configurazione Iniziale](./initial-setup.md) per configurare il tuo dominio e le impostazioni di base del sito
+- Tieni pronto il tuo contenuto e le tue immagini. Usa il gestore [File](./files.md) per caricare gli asset multimediali per primo.
 
 </div>
 
 :::info
-Se la tua chiesa ha più di un sito web (ad esempio, siti separati per campus), utilizza lo strumento di cambio sito in cima alla visualizzazione Pagine Sito Web per passare da un sito all'altro. Ogni sito ha le sue proprie pagine, navigazione e impostazioni di [aspetto](appearance).
+Se la tua chiesa ha più di un sito web (ad esempio, siti separati per campus), utilizza lo strumento di cambio sito in cima alla visualizzazione Pagine Sito Web per passare da un sito all'altro. Ogni sito ha le sue proprie pagine, navigazione e impostazioni di [aspetto](./appearance.md).
 :::
 
 ## Comprensione dei Tipi di Pagina
@@ -35,7 +36,7 @@ Puoi convertire qualsiasi pagina generata automaticamente in una pagina personal
 
 1. Fai clic sul pulsante **Aggiungi Pagina** in alto a destra della visualizzazione Pagine Sito Web.
 2. Scegli un tipo di pagina (vuoto o un modello) e dagli un nome.
-3. Fai clic su **Modifica Contenuto** accanto a qualsiasi pagina per aprire l'[editor di pagine](page-editor), dove puoi aggiungere sezioni, testo, immagini e altri elementi.
+3. Fai clic su **Modifica Contenuto** accanto a qualsiasi pagina per aprire l'[editor di pagine](./page-editor.md), dove puoi aggiungere sezioni, testo, immagini e altri elementi.
 4. Fai clic su **Impostazioni Pagina** accanto a una pagina per aggiornare il titolo della pagina, il percorso URL e altri metadati.
 5. Fai clic sul percorso di una pagina nella colonna **Percorso** per aprire la pagina dal vivo in una nuova scheda e vedere esattamente come apparirà ai visitatori.
 
@@ -112,10 +113,10 @@ Se stai costruendo il tuo sito da zero, puoi inizializzarlo usando un **Modello 
 3. Quando ne trovi uno che ti piace, fai clic su **Applica Modello**.
 4. Le pagine che non esistono già vengono create e aggiunte alla tua navigazione. Le pagine esistenti rimangono così come sono.
 
-Dopo aver applicato un modello, apri ogni pagina nell'[editor di pagine](page-editor) per sostituire il testo e le immagini segnaposto con il contenuto reale della tua chiesa.
+Dopo aver applicato un modello, apri ogni pagina nell'[editor di pagine](./page-editor.md) per sostituire il testo e le immagini segnaposto con il contenuto reale della tua chiesa.
 
 :::info
-I modelli di sito creano la struttura della pagina e la navigazione. Non sostituiscono lo schema di colori o i caratteri del tuo sito -- questi sono controllati da [Aspetto](appearance).
+I modelli di sito creano la struttura della pagina e la navigazione. Non sostituiscono lo schema di colori o i caratteri del tuo sito -- questi sono controllati da [Aspetto](./appearance.md).
 :::
 
 ## Lightbox Immagine
@@ -124,7 +125,7 @@ Quando i visitatori fanno clic su un'immagine sul tuo sito web, si apre in un ov
 
 ## Prossimi Passaggi
 
-- [Configurazione Iniziale](initial-setup) -- Istruzioni di configurazione iniziale
-- [Utilizzo dell'Editor di Pagine](page-editor) -- Scopri come costruire e stilizzare il contenuto della pagina
-- [Aspetto](appearance) -- Personalizza il tema visivo del tuo sito
-- [File](files) -- Carica e gestisci asset multimediali per le tue pagine
+- [Configurazione Iniziale](./initial-setup.md) -- Istruzioni di configurazione iniziale
+- [Utilizzo dell'Editor di Pagine](./page-editor.md) -- Scopri come costruire e stilizzare il contenuto della pagina
+- [Aspetto](./appearance.md) -- Personalizza il tema visivo del tuo sito
+- [File](./files.md) -- Carica e gestisci asset multimediali per le tue pagine

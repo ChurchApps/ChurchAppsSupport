@@ -1,5 +1,6 @@
 ---
 title: "移动应用部署"
+description: "逐步介绍如何使用 Expo EAS 构建 B1 Mobile 应用的 Android 和 iOS 版本，提交到应用商店，并推送 OTA 更新。"
 ---
 
 # 移动应用部署
@@ -13,7 +14,7 @@ ChurchApps 移动应用使用 **Expo EAS Build** 构建和部署，并通过应�
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 在本地配置好移动应用 -- 参见 [B1 Mobile](../mobile/b1-mobile)
+- 在本地配置好移动应用 -- 参见 [B1 Mobile](../mobile/b1-mobile.md)
 - 安装并配置 [EAS CLI](https://docs.expo.dev/eas/)
 - 拥有 Google Play Console（Android）和/或 Apple App Store Connect（iOS）的访问权限
 
@@ -77,6 +78,6 @@ OTA 更新比商店构建快得多 -- 更改可以在几分钟内到达用户，
 
 ## 相关文章
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- 本地配置和开发指南
-- **[API 部署](./apis)** -- 部署后端 API
-- **[Web 应用部署](./web-apps)** -- 部署前端 Web 应用
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- 本地配置和开发指南
+- **[API 部署](./apis.md)** -- 部署后端 API
+- **[Web 应用部署](./web-apps.md)** -- 部署前端 Web 应用

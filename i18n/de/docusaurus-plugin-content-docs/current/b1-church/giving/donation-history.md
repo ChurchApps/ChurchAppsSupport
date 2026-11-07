@@ -1,5 +1,7 @@
 ---
-title: "Spendenverlauf"
+title: "Spendenverlauf und Spendenbescheinigungen auf B1.church"
+sidebar_label: "Spendenverlauf"
+description: "Frühere Spenden ansehen, nach Jahr filtern und Spendenbescheinigungen für die Steuer über die Seite Spenden im B1.church-Mitgliederportal drucken."
 ---
 
 # Spendenverlauf

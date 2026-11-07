@@ -1,5 +1,6 @@
 ---
 title: "Mengelola Pelajaran"
+description: "Susun pelajaran di admin Lessons.church: tambahkan venue, bagian, dan aksi Say, Do, Note, atau Play per peran, plus salinan take-home dan sumber daya."
 ---
 
 # Mengelola Pelajaran

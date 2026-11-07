@@ -1,5 +1,6 @@
 ---
 title: "Lista de Aniversários de Casamento"
+description: "Liste todas as pessoas com aniversário de casamento em um mês escolhido no B1 Admin, com as datas nos resultados e exportação para planilha."
 ---
 
 # Lista de Aniversários de Casamento

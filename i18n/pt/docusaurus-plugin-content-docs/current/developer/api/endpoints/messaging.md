@@ -1,5 +1,6 @@
 ---
 title: "Endpoints de Mensagens"
+description: "Referência dos endpoints de mensagens da API ChurchApps: conversas, regras de acesso a notas, SMS, modelos de e-mail, notificações e dispositivos."
 ---
 
 # Endpoints de Mensagens
@@ -190,7 +191,7 @@ Caminho base: `/messaging/notificationpreferences`
 
 Caminho base: `/messaging/connections`
 
-Gerencia as conexões WebSocket/em tempo real para chat, conversas de grupos, mensagens privadas e transmissões ao vivo. Consulte [Arquitetura em tempo real](../../realtime) para o protocolo completo de ponta a ponta.
+Gerencia as conexões WebSocket/em tempo real para chat, conversas de grupos, mensagens privadas e transmissões ao vivo. Consulte [Arquitetura em tempo real](../../realtime.md) para o protocolo completo de ponta a ponta.
 
 | Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|---------|--------------|-----------|-----------|
@@ -367,9 +368,9 @@ Acompanha o status de entrega das mensagens enviadas (SMS, notificações push e
 
 ## Páginas relacionadas
 
-- [Arquitetura em tempo real](../../realtime) -- protocolo WebSocket, assinaturas de salas e a estrutura de entrega unificada
-- [Notificações push na web](../../web-push) -- Cadastro e entrega de push no navegador
-- [Endpoints de Membresia](./membership) -- Pessoas, grupos, funções e identidade central
-- [Endpoints de Presença](./attendance) -- Rastreamento de cultos e visitas
-- [Autenticação e Permissões](./authentication) -- Fluxo de login, JWT, OAuth, modelo de permissões
-- [Estrutura do módulo](../module-structure) -- Padrões de organização do código
+- [Arquitetura em tempo real](../../realtime.md) -- protocolo WebSocket, assinaturas de salas e a estrutura de entrega unificada
+- [Notificações push na web](../../web-push.md) -- Cadastro e entrega de push no navegador
+- [Endpoints de Membresia](./membership.md) -- Pessoas, grupos, funções e identidade central
+- [Endpoints de Presença](./attendance.md) -- Rastreamento de cultos e visitas
+- [Autenticação e Permissões](./authentication.md) -- Fluxo de login, JWT, OAuth, modelo de permissões
+- [Estrutura do módulo](../module-structure.md) -- Padrões de organização do código

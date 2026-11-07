@@ -1,5 +1,6 @@
 ---
 title: "AI keresés"
+description: "Keresés a B1 Admin személyi nyilvántartásában egyszerű kérdésekkel, például: kik nem jártak három hónapja, szűrők építése nélkül."
 ---
 
 # AI keresés

@@ -1,12 +1,13 @@
 ---
 title: "Smerovanie webstránok a viacero webov"
+description: "Ako B1.church mapuje subdomény a vlastné domény na správnu cirkev alebo sekundárny web, plus okrajová vrstva Caddy, ktorá spracúva TLS pre vlastné domény."
 ---
 
 # Smerovanie webstránok a viacero webov
 
 <div class="article-intro">
 
-Jeden kostol teraz môže prevádzkovať viac odlišných webových stránok a každá z nich môže byť na subdoméne `*.b1.church` alebo na plne vlastnej doméne patriacej kostolu. Táto stránka opisuje smerovaciu vrstvu, ktorá je *pod* tvorcom webu: ako sa prichádzajúca požiadavka preloží na kostol **a** na konkrétnu stránku, dátový model viacerých stránok (sentinelová hodnota `siteId`, ktorá zachováva každú existujúcu stránku bez zmeny) a okraj pre vlastné domény — samostatne spravovaný proxy server Caddy na EC2, ktorý ukončuje TLS a prepisuje každú doménu kostola na jej upstream `*.b1.church`. Informácie o tom, čo sa vykreslí po tom, ako je požiadavka vyriešená — strom stránok, sekcií a prvkov — nájdete v [Tvorca webstránok](./website-builder).
+Jeden kostol teraz môže prevádzkovať viac odlišných webových stránok a každá z nich môže byť na subdoméne `*.b1.church` alebo na plne vlastnej doméne patriacej kostolu. Táto stránka opisuje smerovaciu vrstvu, ktorá je *pod* tvorcom webu: ako sa prichádzajúca požiadavka preloží na kostol **a** na konkrétnu stránku, dátový model viacerých stránok (sentinelová hodnota `siteId`, ktorá zachováva každú existujúcu stránku bez zmeny) a okraj pre vlastné domény — samostatne spravovaný proxy server Caddy na EC2, ktorý ukončuje TLS a prepisuje každú doménu kostola na jej upstream `*.b1.church`. Informácie o tom, čo sa vykreslí po tom, ako je požiadavka vyriešená — strom stránok, sekcií a prvkov — nájdete v [Tvorca webstránok](./website-builder.md).
 
 </div>
 
@@ -201,7 +202,7 @@ Riadky `www.*` sú z mapy vylúčené; Caddy obsluhuje `www.{host}` cez presmero
 
 ### Aktuálny stav — statická konfigurácia, žiadny runtime stav
 
-Box (Windows EC2 za trvalou Elastic IP) spúšťa Caddy zo **statického Caddyfile**: on-demand TLS, ktorého `ask` ukazuje na `/membership/domains/authorize`, plus súbor mapy host→upstream, ktorý každých 5 minút obnovuje naplánovaná úloha z `/membership/domains/hostmap` a ktorá končí elegantným `caddy reload`. Konfigurácia prežije reštarty bez akéhokoľvek runtime stavu — žiadny opätovný „priming“ — a neznáma hodnota SNI je **odmietnutá na úrovni TLS** (pre hostiteľa, ktorý `authorize` odmietne, sa nevydá žiadny certifikát), zatiaľ čo autorizovaný, ale ešte nenamapovaný hostiteľ (nová doména v rámci okna synchronizácie) dostane čistú chybu 404. Nové domény sú smerovateľné do ~5 minút od uloženia; ich certifikáty sa vydajú pri prvom zásahu. Nastavenie a prevádzka, ako aj gotchas overené v praxi: [Proxy pre vlastnú doménu Caddy](../deployment/caddy-proxy).
+Box (Windows EC2 za trvalou Elastic IP) spúšťa Caddy zo **statického Caddyfile**: on-demand TLS, ktorého `ask` ukazuje na `/membership/domains/authorize`, plus súbor mapy host→upstream, ktorý každých 5 minút obnovuje naplánovaná úloha z `/membership/domains/hostmap` a ktorá končí elegantným `caddy reload`. Konfigurácia prežije reštarty bez akéhokoľvek runtime stavu — žiadny opätovný „priming“ — a neznáma hodnota SNI je **odmietnutá na úrovni TLS** (pre hostiteľa, ktorý `authorize` odmietne, sa nevydá žiadny certifikát), zatiaľ čo autorizovaný, ale ešte nenamapovaný hostiteľ (nová doména v rámci okna synchronizácie) dostane čistú chybu 404. Nové domény sú smerovateľné do ~5 minút od uloženia; ich certifikáty sa vydajú pri prvom zásahu. Nastavenie a prevádzka, ako aj gotchas overené v praxi: [Proxy pre vlastnú doménu Caddy](../deployment/caddy-proxy.md).
 
 ### Starý runtime push — cesta na návrat, čaká na zmazanie
 
@@ -209,8 +210,8 @@ Box (Windows EC2 za trvalou Elastic IP) spúšťa Caddy zo **statického Caddyfi
 
 ## Súvisiace stránky
 
-- [Proxy pre vlastnú doménu Caddy](../deployment/caddy-proxy) — samotný okrajový box: nastavenie čerstvého boxu, služba WinSW, úloha synchronizácie mapy a prevádzkové gotchas
-- [Tvorca webstránok](./website-builder) — strom stránok/sekcií/prvkov, renderery, blog, SEO a generovanie pomocou AI (čo sa vykreslí po tom, ako je požiadavka vyriešená na kostol/stránku)
-- [Koncové body obsahu](../api/endpoints/content) — REST rozhranie pre stránky, bloky, odkazy a globálne štýly, všetky teraz rozpoznávajú `?siteId=`
-- [B1App](../web-apps/b1-app) — aplikácia Next.js, ktorá hostí middleware a smerovanie `[sdSlug]`
-- [Nasadenie webových aplikácií](../deployment/web-apps) — ako sa B1App nasadzuje do Vercelu
+- [Proxy pre vlastnú doménu Caddy](../deployment/caddy-proxy.md) — samotný okrajový box: nastavenie čerstvého boxu, služba WinSW, úloha synchronizácie mapy a prevádzkové gotchas
+- [Tvorca webstránok](./website-builder.md) — strom stránok/sekcií/prvkov, renderery, blog, SEO a generovanie pomocou AI (čo sa vykreslí po tom, ako je požiadavka vyriešená na kostol/stránku)
+- [Koncové body obsahu](../api/endpoints/content.md) — REST rozhranie pre stránky, bloky, odkazy a globálne štýly, všetky teraz rozpoznávajú `?siteId=`
+- [B1App](../web-apps/b1-app.md) — aplikácia Next.js, ktorá hostí middleware a smerovanie `[sdSlug]`
+- [Nasadenie webových aplikácií](../deployment/web-apps.md) — ako sa B1App nasadzuje do Vercelu

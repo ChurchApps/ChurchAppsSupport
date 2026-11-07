@@ -1,5 +1,6 @@
 ---
 title: "Adicionando Visitantes"
+description: "Adicione uma criança visitante, parente ou amigo a uma família no quiosque do B1 Checkin, depois atribua grupos e conclua o check-in."
 ---
 
 # Adicionando Visitantes
@@ -13,8 +14,8 @@ Se alguém está visitando sua família e precisa fazer check-in com seu domicí
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Busque sua família](./looking-up-members) e selecione um membro nos resultados da pesquisa
-- Esteja na [tela de revisão do domicílio](./household-review) onde você pode ver os membros da sua família
+- [Busque sua família](./looking-up-members.md) e selecione um membro nos resultados da pesquisa
+- Esteja na [tela de revisão do domicílio](./household-review.md) onde você pode ver os membros da sua família
 
 </div>
 
@@ -36,8 +37,8 @@ Se o nome do visitante corresponder a alguém que já está no sistema e não é
 
 Uma vez que o visitante apareça na lista do seu domicílio, você pode:
 
-- **Expandir o cartão** e [atribuí-lo a um grupo](./group-assignment), assim como qualquer outro membro da família.
-- **[Fazer check-in](./completing-checkin)** de todo o domicílio incluindo o visitante.
+- **Expandir o cartão** e [atribuí-lo a um grupo](./group-assignment.md), assim como qualquer outro membro da família.
+- **[Fazer check-in](./completing-checkin.md)** de todo o domicílio incluindo o visitante.
 
 ## Cancelando
 
@@ -49,4 +50,4 @@ Adicionar um visitante no quiosque cria um registro de pessoa no banco de dados 
 
 ## Próximo Passo
 
-Após adicionar visitantes e [atribuir grupos](./group-assignment) conforme necessário, você está pronto para [concluir o check-in](./completing-checkin).
+Após adicionar visitantes e [atribuir grupos](./group-assignment.md) conforme necessário, você está pronto para [concluir o check-in](./completing-checkin.md).

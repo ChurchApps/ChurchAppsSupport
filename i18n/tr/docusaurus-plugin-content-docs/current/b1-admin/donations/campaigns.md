@@ -1,5 +1,6 @@
 ---
 title: "Kampanyalar ve Taahhütler"
+description: "B1 Admin'de bağış kampanyaları oluşturun, üyelerin taahhütlerini kaydedin ve her fona yapılan gerçek bağışlara göre hedefe ilerlemeyi takip edin."
 ---
 
 # Kampanyalar ve Taahhütler
@@ -13,7 +14,7 @@ Kampanyalar, bir bina fonu, misyon gezisi veya özel bir proje gibi belirli bir 
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [Bağış fonlarınızı](funds) ayarlayın — her kampanya bir fona bağlıdır
+- [Bağış fonlarınızı](./funds.md) ayarlayın — her kampanya bir fona bağlıdır
 - B1 Admin'in Bağışlar bölümüne erişiminizin olması gerekir
 
 </div>
@@ -66,6 +67,6 @@ Kampanyanın adını, hedefini, tarihlerini veya fonunu güncellemek için herha
 
 ## İlgili Makaleler
 
-- [Bağış Kaydetme](recording-donations) — taahhütleri yerine getiren gerçek bağışları kaydedin
-- [Fonlar](funds) — bir kampanyayla ilişkilendirilecek fonu ayarlayın
-- [Bağış Raporları](donation-reports) — fonlara göre bağış raporlaması
+- [Bağış Kaydetme](./recording-donations.md) — taahhütleri yerine getiren gerçek bağışları kaydedin
+- [Fonlar](./funds.md) — bir kampanyayla ilişkilendirilecek fonu ayarlayın
+- [Bağış Raporları](./donation-reports.md) — fonlara göre bağış raporlaması

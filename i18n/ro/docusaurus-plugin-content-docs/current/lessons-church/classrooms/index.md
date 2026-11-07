@@ -1,5 +1,6 @@
 ---
 title: "Clase"
+description: "Configurați clasele care organizează programul de predare în Lessons.church, de la săli și grupe de vârstă la vizualizările pentru voluntari."
 ---
 
 # Clase

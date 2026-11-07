@@ -1,5 +1,6 @@
 ---
 title: "Provedores de Conteúdo"
+description: "Navegue e baixe materiais de lições, vídeos e imagens do Lessons.church, Dropbox, OneDrive e outros provedores no app de TV FreePlay."
 ---
 
 # Provedores de Conteúdo
@@ -14,7 +15,7 @@ Provedores de conteúdo são serviços externos que fornecem materiais de liçõ
 
 O FreePlay inclui atualmente os seguintes provedores:
 
-- **[Lessons.church](../../lessons-church/)** - Currículo gratuito e de código aberto para o ministério infantil
+- **[Lessons.church](../../lessons-church/index.md)** - Currículo gratuito e de código aberto para o ministério infantil
 - **Bible Project** - Vídeos e recursos que exploram a Bíblia
 - **SignPresenter** - Conteúdo de apresentações e sinalização para igrejas
 - **B1.church** - Conteúdo da configuração B1 da sua própria igreja
@@ -24,7 +25,7 @@ O FreePlay inclui atualmente os seguintes provedores:
 - **OneDrive** - Navegue e reproduza imagens, vídeos e áudios do seu próprio Microsoft OneDrive
 
 :::note
-O Google Drive e o FreeShow não são mais exibidos no aplicativo de TV do FreePlay. Para usar conteúdo do Google Drive nas suas TVs, conecte-o no [FreePlay Admin](../scheduled-mode/building-playlists#connecting-providers), adicione os arquivos a uma playlist e agende essa playlist.
+O Google Drive e o FreeShow não são mais exibidos no aplicativo de TV do FreePlay. Para usar conteúdo do Google Drive nas suas TVs, conecte-o no [FreePlay Admin](../scheduled-mode/building-playlists.md#connecting-providers), adicione os arquivos a uma playlist e agende essa playlist.
 :::
 
 :::info
@@ -37,14 +38,14 @@ Cada provedor tem sua própria biblioteca de conteúdo, organizada em pastas e a
 
 Os provedores conectados aparecem na barra lateral à esquerda da tela, sob o título **Navegar**. Você pode alternar entre provedores selecionando-os na barra lateral, o que facilita pular entre fontes de conteúdo durante a configuração.
 
-Você também pode escolher uma pasta de qualquer provedor conectado para repetir em loop como [anúncios](./announcements) na sua TV.
+Você também pode escolher uma pasta de qualquer provedor conectado para repetir em loop como [anúncios](./announcements.md) na sua TV.
 
 :::tip
-Os provedores que você conecta na TV valem apenas para aquela TV. Se você usar o [Modo Agendado](../scheduled-mode/), conecte os provedores uma única vez no FreePlay Admin; assim, todas as telas agendadas poderão reproduzir conteúdo deles.
+Os provedores que você conecta na TV valem apenas para aquela TV. Se você usar o [Modo Agendado](../scheduled-mode/index.md), conecte os provedores uma única vez no FreePlay Admin; assim, todas as telas agendadas poderão reproduzir conteúdo deles.
 :::
 
 ## Nesta seção
 
-- **[Conectando a provedores](./connecting-providers)** - Como autenticar e conectar
-- **[Navegando e baixando conteúdo](./browsing-content)** - Navegue pelas pastas, baixe arquivos e reproduza conteúdo
-- **[Anúncios](./announcements)** - Repita em loop uma pasta de slides de um provedor
+- **[Conectando a provedores](./connecting-providers.md)** - Como autenticar e conectar
+- **[Navegando e baixando conteúdo](./browsing-content.md)** - Navegue pelas pastas, baixe arquivos e reproduza conteúdo
+- **[Anúncios](./announcements.md)** - Repita em loop uma pasta de slides de um provedor

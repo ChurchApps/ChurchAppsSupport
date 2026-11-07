@@ -1,5 +1,6 @@
 ---
 title: "Értesítési beállítások"
+description: "Értesítési csatornák, e-mail-gyakoriság, csendes órák és SMS-leiratkozás típusonként a B1 Adminban és a B1 alkalmazásban, egy helyen."
 ---
 
 # Értesítési beállítások
@@ -60,6 +61,6 @@ Az időérzékeny értesítések -- például egy biztonsági riasztás vagy egy
 
 ## Kapcsolódó oldalak
 
-- [Önkéntes jelentkezés](../serving/volunteer-signup) -- Szolgálati emlékeztetők és válasz a beosztási kérésekre
-- [Regisztráció eseményekre](../events/registering) -- Jelentkezés olyan eseményekre, amelyek emlékeztetőt küldenek
-- [Az alkalmazás telepítése](installing-pwa) -- A B1 hozzáadása az eszközödhöz, hogy push-értesítéseket kapj
+- [Önkéntes jelentkezés](../serving/volunteer-signup.md) -- Szolgálati emlékeztetők és válasz a beosztási kérésekre
+- [Regisztráció eseményekre](../events/registering.md) -- Jelentkezés olyan eseményekre, amelyek emlékeztetőt küldenek
+- [Az alkalmazás telepítése](./installing-pwa.md) -- A B1 hozzáadása az eszközödhöz, hogy push-értesítéseket kapj

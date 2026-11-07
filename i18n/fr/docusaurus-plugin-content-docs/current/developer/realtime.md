@@ -1,5 +1,6 @@
 ---
 title: "Architecture en temps réel"
+description: "Couche WebSocket de ChurchApps : chat en direct, présence et notifications, connexion, abonnements aux salles et primitives côté client."
 ---
 
 # Architecture en temps réel
@@ -226,8 +227,8 @@ La diffusion en direct est le plus grand consommateur anonyme du cadre. Il utili
 
 ## Pages connexes
 
-- [Architecture des notifications](./architecture/notifications) -- L'entonnoir d'escalade in-app/push/e-mail sur lequel ce transport se nourrit
-- [Points de terminaison de messagerie](./api/endpoints/messaging) -- Surface REST complète pour les messages, conversations, connexions, appareils
-- [Notifications Web Push](./web-push) -- Push du navigateur, séparé de la livraison de socket dans la page
-- [AppHelper](./shared-libraries/app-helper) -- Le package npm qui envoie les primitives client
-- [Structure du module](./api/module-structure) -- Comment le module de messagerie est organisé côté serveur
+- [Architecture des notifications](./architecture/notifications.md) -- L'entonnoir d'escalade in-app/push/e-mail sur lequel ce transport se nourrit
+- [Points de terminaison de messagerie](./api/endpoints/messaging.md) -- Surface REST complète pour les messages, conversations, connexions, appareils
+- [Notifications Web Push](./web-push.md) -- Push du navigateur, séparé de la livraison de socket dans la page
+- [AppHelper](./shared-libraries/app-helper.md) -- Le package npm qui envoie les primitives client
+- [Structure du module](./api/module-structure.md) -- Comment le module de messagerie est organisé côté serveur

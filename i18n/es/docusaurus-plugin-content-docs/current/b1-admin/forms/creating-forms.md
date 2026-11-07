@@ -1,5 +1,6 @@
 ---
 title: "Creación de formularios"
+description: "Crea formularios personalizados en B1 Admin para inscripciones, encuestas y tarjetas de visitante, y compártelos por enlace, código QR o impresos."
 ---
 
 # Creación de formularios

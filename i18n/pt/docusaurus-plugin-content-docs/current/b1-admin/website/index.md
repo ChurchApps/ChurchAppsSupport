@@ -1,5 +1,6 @@
 ---
 title: "Website"
+description: "Visão geral do construtor de sites do B1 Admin: páginas, blog, blocos, aparência, arquivos e calendários, com links para guias de configuração e edição."
 ---
 
 # Website
@@ -22,7 +23,7 @@ Seus links de navegação são exibidos em uma estrutura de árvore. Você pode 
 
 ### Blog {#blog}
 
-Publique notícias, atualizações e devocionais como posts de blog em `/blog` no seu site, com um feed RSS. Consulte o guia [Blog](blog).
+Publique notícias, atualizações e devocionais como posts de blog em `/blog` no seu site, com um feed RSS. Consulte o guia [Blog](./blog.md).
 
 ### Blocos
 
@@ -30,24 +31,24 @@ Crie componentes de conteúdo reutilizáveis que você pode colocar em várias p
 
 ### Aparência
 
-Personalize o tema, cores, fontes, logotipo e espaçamento de seu website. Você pode aplicar temas de estilo pré-construídos para um início rápido ou ajustar cada detalhe com o editor de paleta de cores, configurações de tipografia e CSS personalizado. Consulte o guia [Aparência](appearance) para detalhes completos.
+Personalize o tema, cores, fontes, logotipo e espaçamento de seu website. Você pode aplicar temas de estilo pré-construídos para um início rápido ou ajustar cada detalhe com o editor de paleta de cores, configurações de tipografia e CSS personalizado. Consulte o guia [Aparência](./appearance.md) para detalhes completos.
 
 ### Arquivos
 
-Carregue e gerencie todos os seus ativos de mídia -- imagens, documentos e outros arquivos -- em um local central, e copie links de arquivos para uso em qualquer lugar do seu site. Consulte [Arquivos](files) para mais informações.
+Carregue e gerencie todos os seus ativos de mídia -- imagens, documentos e outros arquivos -- em um local central, e copie links de arquivos para uso em qualquer lugar do seu site. Consulte [Arquivos](./files.md) para mais informações.
 
 ### Calendários
 
 Publique calendários de eventos em seu website para que os visitantes possam ver o que está acontecendo em sua igreja. Crie calendários curados que extraem eventos de vários grupos em uma única visualização. Os calendários têm seu próprio item **Calendars** no menu do B1 Admin, separado de **Website**.
 
 :::tip
-Comece com [Configuração Inicial](initial-setup) se você estiver configurando seu website pela primeira vez. Ele o orienta através da configuração do domínio, criação de sua primeira página e configuração da aparência de seu site.
+Comece com [Configuração Inicial](./initial-setup.md) se você estiver configurando seu website pela primeira vez. Ele o orienta através da configuração do domínio, criação de sua primeira página e configuração da aparência de seu site.
 :::
 
 ## Próximas Etapas
 
-- [Configuração Inicial](initial-setup) -- Coloque seu website em funcionamento pela primeira vez
-- [Gerenciando Páginas](managing-pages) -- Aprenda como criar e organizar suas páginas
-- [Usando o Editor de Página](page-editor) -- Construa e estilize o conteúdo de sua página com o editor visual
-- [Aparência](appearance) -- Personalize a aparência e experiência de seu site
-- [Arquivos](files) -- Carregue e gerencie arquivos de mídia
+- [Configuração Inicial](./initial-setup.md) -- Coloque seu website em funcionamento pela primeira vez
+- [Gerenciando Páginas](./managing-pages.md) -- Aprenda como criar e organizar suas páginas
+- [Usando o Editor de Página](./page-editor.md) -- Construa e estilize o conteúdo de sua página com o editor visual
+- [Aparência](./appearance.md) -- Personalize a aparência e experiência de seu site
+- [Arquivos](./files.md) -- Carregue e gerencie arquivos de mídia

@@ -1,5 +1,6 @@
 ---
 title: "Asistencia"
+description: "Revisa la asistencia semanal, salas e invitados en B1 Admin, y configura campus, horarios, totales y quiosco desde la página de Asistencia."
 ---
 
 # Asistencia

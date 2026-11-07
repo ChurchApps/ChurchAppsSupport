@@ -1,5 +1,7 @@
 ---
-title: "Groupes"
+title: "Groupes d’église dans le portail des membres B1.church"
+sidebar_label: "Groupes"
+description: "Parcourez et rejoignez les groupes de votre site B1.church, puis consultez réunions, événements, membres et ressources, et discutez avec votre groupe."
 ---
 
 # Groupes

@@ -1,5 +1,6 @@
 ---
 title: "Mine tilmeldinger"
+description: "Tjek tilmeldingsstatus, betal et restbeløb, redigér deltagere eller tilvalg, eller annullér en begivenhedstilmelding i B1 Churchs medlemsportal."
 ---
 
 # Mine tilmeldinger
@@ -14,7 +15,7 @@ title: "Mine tilmeldinger"
 <h4>Før du begynder</h4>
 
 - Du skal være [logget ind](../getting-started/logging-in.md) — gæstetilmeldinger vises ikke her
-- Du skal have mindst én begivenhedstilmelding. Se [Tilmelding til begivenheder](./registering).
+- Du skal have mindst én begivenhedstilmelding. Se [Tilmelding til begivenheder](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Din plads frigives øjeblikkeligt. Hvis begivenheden har en venteliste, forfremm
 
 ## Relaterede artikler
 
-- [Tilmelding til begivenheder](./registering) -- Tilmeldingsprocessen, inklusive betaling og ventelister
+- [Tilmelding til begivenheder](./registering.md) -- Tilmeldingsprocessen, inklusive betaling og ventelister
 - [Begivenhedsoversigt](./index.md) -- Gennemse kommende begivenheder

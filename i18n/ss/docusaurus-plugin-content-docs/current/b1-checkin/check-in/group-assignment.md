@@ -1,5 +1,6 @@
 ---
 title: "Kwabela Emacembu"
+description: "Khetsa liqembu noma likilasi lelilungu lemndeni lelitawuya kulo ngesikhatsi ngasinye sekukhonta ku-B1 Checkin, usebentisa tigaba, tiyeluleko temidzala nemagreyidi, nenketho ye-None."
 ---
 
 # Kwabela Emacembu
@@ -13,7 +14,7 @@ Nawucindzetela inkinobho yesikhatsi senkhonzo eskrinini sekubuyeketa umndeni, i-
 <div class="prereqs">
 <h4>Ngembi Kwekucala</h4>
 
-- [Buyeketa umndeni wakho](./household-review) eskrinini sekubuyeketa umndeni
+- [Buyeketa umndeni wakho](./household-review.md) eskrinini sekubuyeketa umndeni
 - Vula lilunga lofuna kulabela bese ucindzetela inkinobho yesikhatsi senkhonzo
 - Cinisekisa kutsi umlawuli webandla lakho [usewakhile emacembu](../../b1-admin/groups/creating-groups.md) futsi awahlanganisile netikhatsi tenkhonzo ku-B1 Admin
 
@@ -34,7 +35,7 @@ Cindzetela likhadi lesigaba kute usivule bese ubona emacembu lawodwa langekhatsi
 2. Buyeketa luhlu lwemacembu langekhatsi kwalesigaba. Licembu ngalinye likhombisa ligama lalo kanye neluphawu lwekukhetsa ngasesandleni sesekudla.
 3. Cindzetela **ligama lelicembu** lofuna kulabela.
 
-I-app iyagcina kukhetsa kwakho bese ikubuyisela [kuskrini sekubuyeketa umndeni](./household-review). Inkinobho yesikhatsi senkhonzo yalelo lunga itawukhombisa manje ligama lelicembu lokulikhetsile.
+I-app iyagcina kukhetsa kwakho bese ikubuyisela [kuskrini sekubuyeketa umndeni](./household-review.md). Inkinobho yesikhatsi senkhonzo yalelo lunga itawukhombisa manje ligama lelicembu lokulikhetsile.
 
 ## Umyalo Wemaminyaka Netibanga
 
@@ -52,7 +53,7 @@ Sebentisa kukhetsa **None** kubantfu labadzala labaya enkhonzweni lenkhulu laban
 
 Kute ushintje kwabelwa lokusewentiwe:
 
-1. Buyela [eskrinini sekubuyeketa umndeni](./household-review).
+1. Buyela [eskrinini sekubuyeketa umndeni](./household-review.md).
 2. Vula lilunga lofuna kushintja licembu lalo.
 3. Cindzetela inkinobho yesikhatsi senkhonzo (lekhombisa manje ligama lelicembu lelabelwe kwamanje).
 4. Khetsa lelinye licembu nobe ucindzetele **None**.
@@ -63,8 +64,8 @@ Emacembu netigaba tihlelwa ngumlawuli webandla lakho ku-B1 Admin. Nangabe licemb
 
 ## Tinyatselo Letilandzelako
 
-Ngemuva kwekwabela emacembu, buyela [eskrinini sekubuyeketa umndeni](./household-review) kute:
+Ngemuva kwekwabela emacembu, buyela [eskrinini sekubuyeketa umndeni](./household-review.md) kute:
 
 - Wabele emacembu kumalunga lamanye emndeni
-- [Wengete sivakashi](./adding-guests) nangabe kukhona lophindzelako nemndeni wakho
-- [Ucedze kubhalisa](./completing-checkin) nase konkhe kwabelwa kulungile
+- [Wengete sivakashi](./adding-guests.md) nangabe kukhona lophindzelako nemndeni wakho
+- [Ucedze kubhalisa](./completing-checkin.md) nase konkhe kwabelwa kulungile

@@ -1,5 +1,6 @@
 ---
 title: "小组日历"
+description: "在 B1 Admin 和 B1.church 的小组日历上规划聚会和定期活动，支持批量排程、回应（RSVP）和日历订阅。"
 ---
 
 # 小组日历

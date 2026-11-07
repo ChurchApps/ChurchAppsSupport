@@ -1,5 +1,7 @@
 ---
-title: "Detalii despre grup"
+title: "Detaliile grupului în portalul membrilor B1.church"
+sidebar_label: "Detalii despre grup"
+description: "Găsiți, deschideți și gestionați pagina de detalii a unui grup din vizualizarea B1.church a B1 Admin: vedeți evenimentele, întâlnirile, formularele și membrii și alăturați-vă sau solicitați aderarea."
 ---
 
 # Detalii despre grup

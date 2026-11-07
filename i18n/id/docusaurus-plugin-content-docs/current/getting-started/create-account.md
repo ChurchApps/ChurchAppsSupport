@@ -1,5 +1,6 @@
 ---
 title: "Membuat Akun Anda"
+description: "Daftar akun ChurchApps di B1.church, verifikasi email, lalu buat atau bergabung dengan gereja agar Anda bisa mulai menyiapkan B1 Admin."
 ---
 
 # Membuat Akun Anda

@@ -1,5 +1,7 @@
 ---
-title: "Poradie bohoslužby"
+title: "Poradie bohoslužby v B1 Admin"
+sidebar_label: "Poradie bohoslužby"
+description: "Nastavte poradie bohoslužby v B1 Admin: pridajte piesne, lekcie a vlastné položky, zoraďte ich do sekcií a vytlačte prevádzkový harmonogram."
 ---
 
 # Poradie bohoslužby

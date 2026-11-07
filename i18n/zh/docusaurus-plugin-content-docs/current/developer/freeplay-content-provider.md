@@ -1,5 +1,6 @@
 ---
 title: "FreePlay 内容提供商"
+description: "内容提供方要将课程库连接到 FreePlay 所需提供的内容：徽标、登录方式、目录和播放列表端点，以及媒体格式。"
 ---
 
 # FreePlay 内容提供商

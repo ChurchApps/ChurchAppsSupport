@@ -1,5 +1,6 @@
 ---
 title: "Hodnotenie rizík prenosu"
+description: "Záznam ChurchApps o zhode pre prenosy údajov cirkvi z UK/EHP do USA v B1 Admin, vrátane záruk, subdodávateľov a kontrol prístupu."
 ---
 
 # Hodnotenie rizík prenosu

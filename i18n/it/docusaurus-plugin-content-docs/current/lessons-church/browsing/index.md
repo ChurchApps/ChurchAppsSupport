@@ -1,5 +1,6 @@
 ---
 title: "Navigazione dei contenuti"
+description: "Sfogliare la biblioteca gratuita di Lessons.church senza account: home, navigazione per programma, ricerca e provider esterni."
 ---
 
 # Navigazione dei contenuti

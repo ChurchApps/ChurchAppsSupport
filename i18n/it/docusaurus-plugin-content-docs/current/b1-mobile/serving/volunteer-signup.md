@@ -1,5 +1,7 @@
 ---
-title: "Iscrizione dei volontari"
+title: "Iscrizione al volontariato nell'app B1 Mobile"
+sidebar_label: "Iscrizione dei volontari"
+description: "Trova le posizioni di volontariato aperte per i prossimi servizi, iscriviti o rimuovi un'iscrizione nell'app B1 Mobile. Include scadenze e limiti di posti."
 ---
 
 # Iscrizione dei volontari
@@ -13,7 +15,7 @@ Sfoglia i posti di volontariato disponibili e iscriviti ai prossimi culti dirett
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- [Installa B1 Mobile](../getting-started/installing) e [accedi](../getting-started/logging-in) al tuo account
+- [Installa B1 Mobile](../getting-started/installing.md) e [accedi](../getting-started/logging-in.md) al tuo account
 - L'amministratore della chiesa deve aver abilitato l'iscrizione autonoma per almeno un posto
 
 </div>
@@ -60,5 +62,5 @@ Attiva le [notifiche push](../community/notifications.md) per restare informato 
 
 ## Articoli correlati
 
-- [Visualizzare i piani](./viewing-plans) -- Consulta i tuoi piani assegnati e gli ordini di culto
+- [Visualizzare i piani](./viewing-plans.md) -- Consulta i tuoi piani assegnati e gli ordini di culto
 - [Notifiche](../community/notifications.md) -- Resta aggiornato sugli incarichi di servizio

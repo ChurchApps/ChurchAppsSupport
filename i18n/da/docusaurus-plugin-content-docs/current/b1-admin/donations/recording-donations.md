@@ -1,5 +1,6 @@
 ---
 title: "Registrering af donationer"
+description: "Registrér kirkens donationer i B1 Admin ved at oprette en batch, indtaste gaver enkeltvis, importere en CSV-fil eller logge én gave fra en donorprofil."
 ---
 
 # Registrering af donationer

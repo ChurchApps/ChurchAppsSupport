@@ -1,5 +1,6 @@
 ---
 title: "Klassenzimmer"
+description: "Nastavte a spravujte třídy, které organizují výukový rozvrh církve v Lessons.church: od místností a věkových skupin po zobrazení pro dobrovolníky."
 ---
 
 # Klassenzimmer

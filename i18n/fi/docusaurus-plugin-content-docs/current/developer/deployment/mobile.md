@@ -1,5 +1,6 @@
 ---
 title: "Mobiilijulkaisu"
+description: "Ohjeet Android- ja iOS-julkaisujen rakentamiseen B1 Mobile -sovelluksesta Expo EAS:lla, niiden lähettämiseen sovelluskauppoihin ja OTA-päivitysten julkaisuun."
 ---
 
 # Mobiilijulkaisu
@@ -13,7 +14,7 @@ ChurchAppsin mobiilisovellukset rakennetaan ja julkaistaan **Expo EAS Build** -p
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Ota mobiilisovellus käyttöön paikallisesti -- katso [B1 Mobile](../mobile/b1-mobile)
+- Ota mobiilisovellus käyttöön paikallisesti -- katso [B1 Mobile](../mobile/b1-mobile.md)
 - Asenna ja määritä [EAS CLI](https://docs.expo.dev/eas/)
 - Varmista, että sinulla on pääsy Google Play Console -palveluun (Android) ja/tai Apple App Store Connect -palveluun (iOS)
 
@@ -77,6 +78,6 @@ Jos versionumeroita ei päivitetä kaikkiin tiedostoihin, rakennukset epäonnist
 
 ## Aiheeseen liittyvät artikkelit
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- Paikallinen käyttöönotto ja kehitysopas
-- **[API-julkaisu](./apis)** -- Taustapalveluiden julkaisu
-- **[Web-sovellusten julkaisu](./web-apps)** -- Käyttöliittymäsovellusten julkaisu
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- Paikallinen käyttöönotto ja kehitysopas
+- **[API-julkaisu](./apis.md)** -- Taustapalveluiden julkaisu
+- **[Web-sovellusten julkaisu](./web-apps.md)** -- Käyttöliittymäsovellusten julkaisu

@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "Koppla ChatGPT till kyrkans B1-data med en API-nyckel så att du kan ställa frågor på vanlig svenska om personer, givande och närvaro i B1 Admin."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Anslut ChatGPT till din kyrkas B1-data och ställ frågor på vanlig svenska. De
 </div>
 
 :::tip Rekommenderat: prova Claude först, det är gratis
-[Claude](./claude) ansluts till B1 i **gratisplanen** och är klart på under 3 minuter. Lägg bara till B1 som en koppling och logga in med ditt B1-konto. Ingen nyckel behövs. Det är det enklaste sättet för din kyrka att prova AI tillsammans med B1 innan ni betalar för något.
+[Claude](./claude.md) ansluts till B1 i **gratisplanen** och är klart på under 3 minuter. Lägg bara till B1 som en koppling och logga in med ditt B1-konto. Ingen nyckel behövs. Det är det enklaste sättet för din kyrka att prova AI tillsammans med B1 innan ni betalar för något.
 :::
 
 ## Så här ställer du in det
@@ -254,5 +255,5 @@ Vem som helst med länken kan ställa frågor på vanligt språk. Nyckelns behö
 
 - [API-nycklar](/docs/developer/api/api-keys): fullständig referens för behörigheter
 - [MCP-server (utvecklarreferens)](/docs/developer/api/mcp): protokolldetaljer och verktygsscheman
-- [Claude](./claude): samma idé, för Anthropics modeller
+- [Claude](./claude.md): samma idé, för Anthropics modeller
 - [REST API-referens](/docs/developer/api/endpoints): alla endpoints som en anpassad GPT-action kan anropa

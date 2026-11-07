@@ -1,5 +1,6 @@
 ---
 title: "Validação de Planos e Notificações"
+description: "Verifique planos no B1 Admin quanto a posições vagas, conflitos de agenda e voluntários indisponíveis, e notifique toda a equipe com um clique."
 ---
 
 # Validação de Planos e Notificação de Voluntários

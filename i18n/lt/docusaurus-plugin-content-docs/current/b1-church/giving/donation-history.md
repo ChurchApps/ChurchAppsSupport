@@ -1,5 +1,7 @@
 ---
-title: "Aukų istorija"
+title: "Aukų istorija ir pažymos B1.church"
+sidebar_label: "Aukų istorija"
+description: "Peržiūrėkite ankstesnes aukas, filtruokite pagal metus ir spausdinkite pažymas mokesčiams iš Aukojimo puslapio B1.church narių portale."
 ---
 
 # Aukų istorija

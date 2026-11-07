@@ -1,5 +1,6 @@
 ---
 title: "메시징 엔드포인트"
+description: "ChurchApps 메시징 API 엔드포인트 참조: 대화, 메모 접근 규칙, 문자 메시지, 이메일 템플릿, 알림, 기기를 다룹니다."
 ---
 
 # 메시징 엔드포인트
@@ -190,7 +191,7 @@ Authorization: Bearer <token>
 
 기본 경로: `/messaging/connections`
 
-채팅, 그룹 대화, 개인 메시지, 라이브 스트리밍을 위한 WebSocket/실시간 연결을 관리합니다. 전체 프로토콜은 [실시간 아키텍처](../../realtime)를 참고하세요.
+채팅, 그룹 대화, 개인 메시지, 라이브 스트리밍을 위한 WebSocket/실시간 연결을 관리합니다. 전체 프로토콜은 [실시간 아키텍처](../../realtime.md)를 참고하세요.
 
 | 메서드 | 경로 | 인증 | 권한 | 설명 |
 |--------|------|------|------|------|
@@ -367,9 +368,9 @@ Authorization: Bearer <token>
 
 ## 관련 페이지
 
-- [실시간 아키텍처](../../realtime) -- WebSocket 프로토콜, 룸 구독, 통합 전달 프레임워크
-- [웹 푸시 알림](../../web-push) -- 브라우저 푸시 등록 및 전달
-- [멤버십 엔드포인트](./membership) -- 사람, 그룹, 역할, 핵심 신원
-- [출석 엔드포인트](./attendance) -- 예배 및 방문 추적
-- [인증 및 권한](./authentication) -- 로그인 흐름, JWT, OAuth, 권한 모델
-- [모듈 구조](../module-structure) -- 코드 구성 패턴
+- [실시간 아키텍처](../../realtime.md) -- WebSocket 프로토콜, 룸 구독, 통합 전달 프레임워크
+- [웹 푸시 알림](../../web-push.md) -- 브라우저 푸시 등록 및 전달
+- [멤버십 엔드포인트](./membership.md) -- 사람, 그룹, 역할, 핵심 신원
+- [출석 엔드포인트](./attendance.md) -- 예배 및 방문 추적
+- [인증 및 권한](./authentication.md) -- 로그인 흐름, JWT, OAuth, 권한 모델
+- [모듈 구조](../module-structure.md) -- 코드 구성 패턴

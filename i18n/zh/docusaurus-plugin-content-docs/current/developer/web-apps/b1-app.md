@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "使用 Next.js 22+ 在本地设置 B1App 会员网页应用，在 .env 中配置其 API 端点，并在 3301 端口运行开发服务器。"
 ---
 
 # B1App
@@ -13,8 +14,8 @@ B1App 是使用 Next.js 构建的面向公众的教会会员应用程序。它�
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 安装 **Node.js 22+** 和 **Git** -- 请参阅[前提条件](../setup/prerequisites)
-- 配置您的 API 目标（演示环境或本地环境）-- 请参阅[环境变量](../setup/environment-variables)
+- 安装 **Node.js 22+** 和 **Git** -- 请参阅[前提条件](../setup/prerequisites.md)
+- 配置您的 API 目标（演示环境或本地环境）-- 请参阅[环境变量](../setup/environment-variables.md)
 
 </div>
 
@@ -89,5 +90,5 @@ Next.js 开发服务器将在 [http://localhost:3301](http://localhost:3301) 启
 3. 触发 CloudFront 失效操作，以提供新版本
 
 :::tip
-如需详细的部署说明，请参阅 [Web 应用部署](../deployment/web-apps)指南。
+如需详细的部署说明，请参阅 [Web 应用部署](../deployment/web-apps.md)指南。
 :::

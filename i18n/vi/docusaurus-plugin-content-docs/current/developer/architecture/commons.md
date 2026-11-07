@@ -1,5 +1,6 @@
 ---
 title: "Kho nội dung chung"
+description: "Cách bài hát, bài học và mẫu do người dùng gửi đi qua hàng đợi kiểm duyệt chung trong Server Admin của B1 Admin, từ lúc gửi đến khi xuất bản."
 ---
 
 # Kho nội dung chung — Thư viện tài nguyên dùng chung & kiểm duyệt

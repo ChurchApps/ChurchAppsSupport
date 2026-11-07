@@ -1,5 +1,7 @@
 ---
-title: "Bibliya"
+title: "Pagbabasa ng Bibliya sa B1.church"
+sidebar_label: "Bibliya"
+description: "Magbasa ng Kasulatan sa B1.church Bible reader, may kontrol sa aklat, kabanata, at salin, at Bible page para sa pang-araw-araw na pagbasa."
 ---
 
 # Bibliya

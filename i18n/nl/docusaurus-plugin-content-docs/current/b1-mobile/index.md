@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobiel"
+description: "De native B1 Mobile-app is verouderd. Leden en beheerders gebruiken de B1.church-PWA; oudere pagina's blijven als naslag beschikbaar."
 ---
 
 # B1 Mobiel
@@ -30,16 +31,16 @@ B1 Mobile ondersteunt push-meldingen, zodat u geen belangrijk update van uw kerk
 
 ## Meer informatie
 
-- [Aan de slag](./getting-started/) -- Installeer de app, maak een account aan en selecteer uw kerk.
-- [Dashboard](./dashboard/) -- Begrijp uw gepersonaliseerde startscherm.
-- [Groepen](./groups/) -- Blijf verbonden met uw kerkgroepen.
-- [Geven](./giving/) -- Geef donaties van uw telefoon.
-- [Gebeurtenissen](./events/) -- Blader en registreer u voor komende kerkgebeurtenissen.
-- [Inchecking](./checkin/) -- Check in voor diensten en gebeurtenissen.
-- [Dienst](./serving/) -- Bekijk uw dienstplannen, toewijzingen en vrijwilligersmogelijkheden.
-- [Community](./community/) -- Blader door de ledenlijst en stuur berichten.
-- [Inhoud](./content/) -- Preken, Bijbel, vers van de dag en lessen.
-- [Profiel](./profile/) -- Beheer uw profiel en accountinstellingen.
+- [Aan de slag](./getting-started/index.md) -- Installeer de app, maak een account aan en selecteer uw kerk.
+- [Dashboard](./dashboard/index.md) -- Begrijp uw gepersonaliseerde startscherm.
+- [Groepen](./groups/index.md) -- Blijf verbonden met uw kerkgroepen.
+- [Geven](./giving/index.md) -- Geef donaties van uw telefoon.
+- [Gebeurtenissen](./events/index.md) -- Blader en registreer u voor komende kerkgebeurtenissen.
+- [Inchecking](./checkin/index.md) -- Check in voor diensten en gebeurtenissen.
+- [Dienst](./serving/index.md) -- Bekijk uw dienstplannen, toewijzingen en vrijwilligersmogelijkheden.
+- [Community](./community/index.md) -- Blader door de ledenlijst en stuur berichten.
+- [Inhoud](./content/index.md) -- Preken, Bijbel, vers van de dag en lessen.
+- [Profiel](./profile/index.md) -- Beheer uw profiel en accountinstellingen.
 
 :::info
 B1 Mobile kan gratis worden gedownload en gebruikt. Uw kerkbeheerder configureert welke functies beschikbaar zijn via [B1 Admin](/docs/b1-admin/). U downloadt eenvoudig de app en meldt u aan om aan de slag te gaan.

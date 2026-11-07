@@ -1,5 +1,6 @@
 ---
 title: "Tinhlelo Tenkonzo"
+description: "Setela kuhlela kwebasebenti ku-B1 Admin: dala tihlelo tetinkhonzo ngalokubhalwe, kopha kusuka kuvikhi lemandla, gadzela ilungu lelicala ekuhlaleni, uphatse tinsuku lekugcina lekucela netikhumbuto."
 ---
 
 # Tinhlelo Tenkonzo

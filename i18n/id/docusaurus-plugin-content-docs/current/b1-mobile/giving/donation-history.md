@@ -1,5 +1,7 @@
 ---
-title: "Riwayat Donasi"
+title: "Melihat Riwayat Donasi di B1 Mobile"
+sidebar_label: "Riwayat Donasi"
+description: "Lihat persembahan tahun berjalan, pemberian terakhir, dan riwayat donasi di B1 Mobile, serta ulangi pemberian sebelumnya dengan satu ketukan di tab Ikhtisar."
 ---
 
 # Riwayat Donasi
@@ -13,8 +15,8 @@ B1 Mobile memberi Anda gambaran yang jelas tentang kontribusi Anda melalui dua t
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- [Pasang B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
-- [Lakukan setidaknya satu donasi](./making-donations) untuk melihat riwayat Anda
+- [Pasang B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
+- [Lakukan setidaknya satu donasi](./making-donations.md) untuk melihat riwayat Anda
 
 </div>
 
@@ -45,5 +47,5 @@ Periksa tab **Ringkasan** secara berkala untuk tetap memantau target pemberian A
 
 ## Artikel Terkait
 
-- [Membuat Donasi](./making-donations) -- Lakukan pemberian baru dari aplikasi
-- [Mengelola Metode Pembayaran](./managing-payments) -- Tambahkan atau hapus metode pembayaran yang tersimpan
+- [Membuat Donasi](./making-donations.md) -- Lakukan pemberian baru dari aplikasi
+- [Mengelola Metode Pembayaran](./managing-payments.md) -- Tambahkan atau hapus metode pembayaran yang tersimpan

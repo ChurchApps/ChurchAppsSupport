@@ -1,5 +1,6 @@
 ---
 title: "Jurnal de audit și loturi reversibile"
+description: "Descrie jurnalul de audit al API-ului, care înregistrează fiecare modificare a utilizatorilor din toate modulele, și modul în care loturile de import pot fi anulate rând cu rând în B1 Admin."
 ---
 
 # Jurnal de audit și loturi reversibile
@@ -155,6 +156,6 @@ Ambele suprafețe de administrare sunt **în lucru**. Intenția:
 
 ## Pagini conexe
 
-- [Structura modulelor](../api/module-structure): cum ajunge un controller din afara modulului membership la repository-urile membership prin `RepoManager`
-- [Donații](./giving): căile de scriere pentru donații, auditate ca `sensitive` chiar și când sunt anonime
-- [Endpoint-uri Membership](../api/endpoints/membership): API-ul REST care transportă `X-Batch-Id` și expune `/auditlogs` și `/batches`
+- [Structura modulelor](../api/module-structure.md): cum ajunge un controller din afara modulului membership la repository-urile membership prin `RepoManager`
+- [Donații](./giving.md): căile de scriere pentru donații, auditate ca `sensitive` chiar și când sunt anonime
+- [Endpoint-uri Membership](../api/endpoints/membership.md): API-ul REST care transportă `X-Batch-Id` și expune `/auditlogs` și `/batches`

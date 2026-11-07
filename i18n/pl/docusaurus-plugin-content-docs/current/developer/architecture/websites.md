@@ -1,12 +1,13 @@
 ---
 title: "Routing witryn i wiele witryn"
+description: "Jak B1.church mapuje subdomeny i domeny własne na właściwy kościół lub witrynę pomocniczą, oraz brzeg Caddy obsługujący TLS dla domen własnych."
 ---
 
 # Routing witryn i wiele witryn
 
 <div class="article-intro">
 
-Jeden kościół może teraz obsługiwać więcej niż jedną witrynę, a każda z nich może działać pod subdomeną `*.b1.church` lub pod w pełni własną domeną należącą do kościoła. Ta strona opisuje warstwę routingu działającą *pod* kreatorem: jak przychodzące żądanie trafia do kościoła **i** do konkretnej witryny, model danych dla wielu witryn (wartość `siteId` jako znacznik, dzięki któremu wszystkie wcześniej istniejące witryny działają bez zmian) oraz brzeg sieci dla własnych domen, czyli samodzielnie zarządzany serwer proxy Caddy na EC2, który kończy połączenia TLS i przekierowuje każdą domenę kościoła na jej upstream `*.b1.church`. Informacje o tym, co faktycznie jest renderowane po rozwiązaniu żądania (drzewo stron, sekcji i elementów), znajdziesz w artykule [Kreator stron](./website-builder).
+Jeden kościół może teraz obsługiwać więcej niż jedną witrynę, a każda z nich może działać pod subdomeną `*.b1.church` lub pod w pełni własną domeną należącą do kościoła. Ta strona opisuje warstwę routingu działającą *pod* kreatorem: jak przychodzące żądanie trafia do kościoła **i** do konkretnej witryny, model danych dla wielu witryn (wartość `siteId` jako znacznik, dzięki któremu wszystkie wcześniej istniejące witryny działają bez zmian) oraz brzeg sieci dla własnych domen, czyli samodzielnie zarządzany serwer proxy Caddy na EC2, który kończy połączenia TLS i przekierowuje każdą domenę kościoła na jej upstream `*.b1.church`. Informacje o tym, co faktycznie jest renderowane po rozwiązaniu żądania (drzewo stron, sekcji i elementów), znajdziesz w artykule [Kreator stron](./website-builder.md).
 
 </div>
 
@@ -92,7 +93,7 @@ Dwa szczegóły operacyjne dotyczące middleware:
 
 - **Pamięć podręczna.** Wynik dla każdego hosta (trafienie *lub* potwierdzony brak, nigdy błąd sieci) jest przechowywany przez **10 minut** w pamięci, w obiekcie `Map`, w każdej izolacji serverless.
 - **Dopasowanie ścieżek (matcher).** Matcher celowo ponownie uwzględnia `/sitemap.xml`, `/robots.txt` i `/manifest.webmanifest`. Jego pierwszy wzorzec wyklucza ścieżki z kropką, co mogłoby pominąć te pliki. Dodano je z powrotem, dzięki czemu pliki SEO/PWA poszczególnych kościołów na własnych domenach również otrzymują nagłówek `x-site`.
-- **Nagłówek kanoniczny.** Dla stron kościołów middleware dołącza do odpowiedzi nagłówek `Link: <{proto}://{host}{path}>; rel="canonical"`, który wskazuje host, z którego strona faktycznie została zwrócona: subdomenę lub własną domenę (`helpers/canonicalLink.ts`). Gdy własna domena trafia do B1App przez [proxy Caddy](../deployment/caddy-proxy), host żądania to subdomena `{sub}.b1.church`, więc middleware zamiast tego używa domeny odwiedzającego z `X-Church-Host`, ale dopiero po tym, jak `/domains/public/lookup/{host}` potwierdzi, że domena wskazuje na tę samą subdomenę (`ownsSubdomain()`). Link kanoniczny, `robots.txt` i `sitemap.xml` wskazują wtedy własną domenę, a nie subdomenę `b1.church`. Na hostach niekościelnych (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) oraz na ścieżkach `/mobile`, `/login`, `/logout` i wygenerowanych plikach robots/sitemap/manifest ten nagłówek jest pomijany.
+- **Nagłówek kanoniczny.** Dla stron kościołów middleware dołącza do odpowiedzi nagłówek `Link: <{proto}://{host}{path}>; rel="canonical"`, który wskazuje host, z którego strona faktycznie została zwrócona: subdomenę lub własną domenę (`helpers/canonicalLink.ts`). Gdy własna domena trafia do B1App przez [proxy Caddy](../deployment/caddy-proxy.md), host żądania to subdomena `{sub}.b1.church`, więc middleware zamiast tego używa domeny odwiedzającego z `X-Church-Host`, ale dopiero po tym, jak `/domains/public/lookup/{host}` potwierdzi, że domena wskazuje na tę samą subdomenę (`ownsSubdomain()`). Link kanoniczny, `robots.txt` i `sitemap.xml` wskazują wtedy własną domenę, a nie subdomenę `b1.church`. Na hostach niekościelnych (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) oraz na ścieżkach `/mobile`, `/login`, `/logout` i wygenerowanych plikach robots/sitemap/manifest ten nagłówek jest pomijany.
 
 ### Wyłączona strona publiczna
 
@@ -201,7 +202,7 @@ Wiersze `www.*` są wykluczone z mapy. Caddy obsługuje `www.{host}` przekierowa
 
 ### Obecny stan: konfiguracja statyczna, bez stanu w czasie działania
 
-Serwer (maszyna EC2 z Windows i stałym adresem Elastic IP) uruchamia Caddy z **statycznego pliku Caddyfile**. Zawiera on TLS na żądanie, którego `ask` wskazuje na `/membership/domains/authorize`, oraz plik mapy host→upstream, odświeżany co 5 minut z `/membership/domains/hostmap` przez zaplanowane zadanie, które kończy się łagodnym `caddy reload`. Konfiguracja przetrwa restarty bez żadnego stanu w czasie działania, bez konieczności ponownego „przygotowywania” usługi. Nieznany SNI jest **odrzucany na poziomie TLS** (certyfikat nie jest wystawiany dla hosta, który `authorize` odrzuca), a autoryzowany, ale jeszcze nieobecny w mapie host (nowa domena w oknie synchronizacji) dostaje czysty błąd 404. Nowe domeny stają się routowalne w ciągu około 5 minut od zapisu, a ich certyfikaty są wystawiane przy pierwszym żądaniu. Instalacja, obsługa i sprawdzone w praktyce pułapki: [Serwer proxy Caddy dla własnych domen](../deployment/caddy-proxy).
+Serwer (maszyna EC2 z Windows i stałym adresem Elastic IP) uruchamia Caddy z **statycznego pliku Caddyfile**. Zawiera on TLS na żądanie, którego `ask` wskazuje na `/membership/domains/authorize`, oraz plik mapy host→upstream, odświeżany co 5 minut z `/membership/domains/hostmap` przez zaplanowane zadanie, które kończy się łagodnym `caddy reload`. Konfiguracja przetrwa restarty bez żadnego stanu w czasie działania, bez konieczności ponownego „przygotowywania” usługi. Nieznany SNI jest **odrzucany na poziomie TLS** (certyfikat nie jest wystawiany dla hosta, który `authorize` odrzuca), a autoryzowany, ale jeszcze nieobecny w mapie host (nowa domena w oknie synchronizacji) dostaje czysty błąd 404. Nowe domeny stają się routowalne w ciągu około 5 minut od zapisu, a ich certyfikaty są wystawiane przy pierwszym żądaniu. Instalacja, obsługa i sprawdzone w praktyce pułapki: [Serwer proxy Caddy dla własnych domen](../deployment/caddy-proxy.md).
 
 ### Starszy wypychany tryb uruchomieniowy: ścieżka wycofania, oczekuje na usunięcie
 
@@ -209,8 +210,8 @@ Serwer (maszyna EC2 z Windows i stałym adresem Elastic IP) uruchamia Caddy z **
 
 ## Powiązane strony
 
-- [Serwer proxy Caddy dla własnych domen](../deployment/caddy-proxy) — sam serwer brzegowy: instalacja od zera, usługa WinSW, zadanie synchronizacji mapy i pułapki operacyjne
-- [Kreator stron](./website-builder) — drzewo stron, sekcji i elementów, renderery, blog, SEO i generowanie AI (to, co jest renderowane po rozwiązaniu żądania do kościoła i witryny)
-- [Endpointy treści](../api/endpoints/content) — REST API dla stron, bloków, linków i stylów globalnych, wszystkie obsługujące `?siteId=`
-- [B1App](../web-apps/b1-app) — aplikacja Next.js, w której działa middleware i routing `[sdSlug]`
-- [Wdrażanie aplikacji webowych](../deployment/web-apps) — jak B1App jest wdrażana w Vercel
+- [Serwer proxy Caddy dla własnych domen](../deployment/caddy-proxy.md) — sam serwer brzegowy: instalacja od zera, usługa WinSW, zadanie synchronizacji mapy i pułapki operacyjne
+- [Kreator stron](./website-builder.md) — drzewo stron, sekcji i elementów, renderery, blog, SEO i generowanie AI (to, co jest renderowane po rozwiązaniu żądania do kościoła i witryny)
+- [Endpointy treści](../api/endpoints/content.md) — REST API dla stron, bloków, linków i stylów globalnych, wszystkie obsługujące `?siteId=`
+- [B1App](../web-apps/b1-app.md) — aplikacja Next.js, w której działa middleware i routing `[sdSlug]`
+- [Wdrażanie aplikacji webowych](../deployment/web-apps.md) — jak B1App jest wdrażana w Vercel

@@ -1,5 +1,7 @@
 ---
-title: "Thiết lập ban đầu"
+title: "Thiết lập ban đầu nhà thờ trong B1 Admin"
+sidebar_label: "Thiết lập ban đầu"
+description: "Hướng dẫn cấu hình lần đầu cho nhà thờ mới trong B1 Admin: thông tin, thương hiệu, vai trò, và thứ tự nên làm cho người, nhóm, điểm danh, quyên góp."
 ---
 
 # Thiết lập ban đầu

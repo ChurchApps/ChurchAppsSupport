@@ -1,5 +1,6 @@
 ---
 title: "Ver lecciones"
+description: "Guía para abrir una lección en Lessons.church, leer sus secciones y acciones por rol, encontrar descargas y cambiar de lugar por grupo de edad antes de clase."
 ---
 
 # Ver lecciones

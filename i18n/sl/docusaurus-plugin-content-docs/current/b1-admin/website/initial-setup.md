@@ -1,5 +1,7 @@
 ---
-title: "Počætna nastavitev"
+title: "Začetek dela s spletno stranjo B1 Admin"
+sidebar_label: "Počætna nastavitev"
+description: "Nastavite spletno stran cerkve v B1 Admin: določite poddomeno ali domeno po meri, ustvarite domačo stran, izberite barve in logotip ter zgradite navigacijo."
 ---
 
 # Počætna nastavitev
@@ -45,7 +47,7 @@ Vaša cerkev samodejno prejme poddomeno na B1.church (na primer `vasacerkev.b1.c
 6. Po dodajanju razdelka ponovno kliknite **Add Content**, da vstavite besedilo, slike, videoposnetke, kartice, obrazce in več, tako da jih povlečete v svoj razdelek.
 
 :::info
-Podrobna navodila za delo s stranmi in navigacijo najdete v razdelku [Upravljanje strani](managing-pages). Celoten vodnik po vizualnem urejevalniku najdete v razdelku [Uporaba urejevalnika strani](page-editor).
+Podrobna navodila za delo s stranmi in navigacijo najdete v razdelku [Upravljanje strani](./managing-pages.md). Celoten vodnik po vizualnem urejevalniku najdete v razdelku [Uporaba urejevalnika strani](./page-editor.md).
 :::
 
 ## Konfiguracija videza spletnega mesta
@@ -57,7 +59,7 @@ Podrobna navodila za delo s stranmi in navigacijo najdete v razdelku [Upravljanj
 5. Konfigurirajte **Site Footer** s kontaktnimi podatki in povezavami vaše cerkve.
 
 :::info
-Spremembe, ki jih naredite v Appearance, veljajo za celotno vaše spletno mesto. Podrobna navodila za vsako nastavitev najdete na strani [Appearance](appearance).
+Spremembe, ki jih naredite v Appearance, veljajo za celotno vaše spletno mesto. Podrobna navodila za vsako nastavitev najdete na strani [Appearance](./appearance.md).
 :::
 
 ## Nastavitev navigacije
@@ -70,6 +72,6 @@ Vaše navigacijske povezave so prikazane v pogledu Website Pages. Za njihovo org
 
 ## Naslednji koraki
 
-- [Upravljanje strani](managing-pages) -- Podrobno se naučite delati s stranmi in navigacijo
-- [Appearance](appearance) -- Natančno prilagodite barve, pisave in postavitev spletnega mesta
-- [Datoteke](files) -- Naložite slike in dokumente za svoje spletno mesto
+- [Upravljanje strani](./managing-pages.md) -- Podrobno se naučite delati s stranmi in navigacijo
+- [Appearance](./appearance.md) -- Natančno prilagodite barve, pisave in postavitev spletnega mesta
+- [Datoteke](./files.md) -- Naložite slike in dokumente za svoje spletno mesto

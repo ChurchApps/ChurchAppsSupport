@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "Conecte o B1 Admin ao Google Sheets com o complemento B1 Export para trazer Pessoas, Doações, Grupos e Presença para abas da planilha sob demanda."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ A exportação é executada em background sob sua conta Google. Se a chave de AP
 - **"B1 rejeitou a chave de API (401)"** — a chave foi revogada ou está errada. Re-crie e re-cole.
 - **"Esta chave de API carece de permissão para /giving/donations (403)"** — a chave não tem `donations:read`. Atualize os escopos da chave em B1Admin.
 - **Planilha não se atualiza** após executar — certifique-se de que você está olhando para a aba correta (`B1 People` etc.). A exportação cria a aba se ela não existisse.
-- **"Cota excedida"** — Apps Script impõe cotas diárias por usuário em `UrlFetchApp` (geralmente milhares de chamadas por dia). Uma grande igreja com muitos registros pode precisar dividir exportações em vários dias ou usar [Make](./make) / uma integração personalizada para sincronização em grande volume.
+- **"Cota excedida"** — Apps Script impõe cotas diárias por usuário em `UrlFetchApp` (geralmente milhares de chamadas por dia). Uma grande igreja com muitos registros pode precisar dividir exportações em vários dias ou usar [Make](./make.md) / uma integração personalizada para sincronização em grande volume.
 
 ## Personalizar o Complemento
 
@@ -108,6 +109,6 @@ O complemento é de código aberto — o projeto Apps Script vive no repositóri
 
 ## Veja Também
 
-- [Zapier](./zapier) — para sincronização em tempo real em vez de exportação sob demanda
-- [Make](./make) — para sincronização com transformações mais complexas
+- [Zapier](./zapier.md) — para sincronização em tempo real em vez de exportação sob demanda
+- [Make](./make.md) — para sincronização com transformações mais complexas
 - [Chaves de API (referência de desenvolvedor)](/docs/developer/api/api-keys)

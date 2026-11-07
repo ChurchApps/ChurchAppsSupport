@@ -1,5 +1,7 @@
 ---
-title: "Vers des Tages"
+title: "Tagesvers auf der B1.church-Website und im Portal"
+sidebar_label: "Vers des Tages"
+description: "Das Bild-Bibelvers des Tages und frühere Verse ansehen, dann auf jedem Bildschirm auf der B1.church-Website oder im Portal teilen oder herunterladen."
 ---
 
 # Vers des Tages

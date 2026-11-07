@@ -1,5 +1,6 @@
 ---
 title: "ऑनलाइन giving सेटअप"
+description: "Stripe, PayPal, Kingdom Funding या Paystack को B1 Admin से जोड़ें, ताकि सदस्य B1.church साइट के माध्यम से ऑनलाइन दान कर सकें और उपहार आपके रिकॉर्ड में सिंक हों।"
 ---
 
 # ऑनलाइन giving सेटअप

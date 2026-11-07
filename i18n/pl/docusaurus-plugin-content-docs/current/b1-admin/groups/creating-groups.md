@@ -1,5 +1,6 @@
 ---
 title: "Tworzenie grup"
+description: "Załóż nową grupę w B1 Admin: od wyboru kategorii i nazwy po ustawienia zasad dołączania, etykiet, komunikacji i frekwencji."
 ---
 
 # Tworzenie grup

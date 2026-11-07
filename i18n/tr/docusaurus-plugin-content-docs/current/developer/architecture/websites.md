@@ -1,12 +1,13 @@
 ---
 title: "Web Sitesi Yönlendirme ve Çoklu Site"
+description: "B1.church'ün alt alan adlarını ve özel alan adlarını doğru kilise veya ikincil siteye nasıl eşlediğini; özel alan adlarında TLS'yi yöneten Caddy uç katmanını açıklar."
 ---
 
 # Web Sitesi Yönlendirme ve Çoklu Site
 
 <div class="article-intro">
 
-Tek bir kilise artık birden fazla ayrı web sitesi sunabilir. Her site `*.b1.church` alt alan adında ya da tamamen özel, kiliseye ait bir alan adında yayınlanabilir. Bu sayfa, oluşturucunun *altındaki* yönlendirme katmanını açıklar: gelen bir isteğin hangi kiliseye ve hangi siteye çözümlendiği, çoklu site veri modeli (önceden var olan her sitenin değişmeden görüntülenmesini sağlayan `siteId` nöbetçi değeri) ve özel alan adı uç katmanı. Bu uç katman, EC2 üzerinde çalışan, kendi yönettiğimiz bir Caddy vekil sunucusudur. TLS'yi sonlandırır ve her kilise alan adını kendi `*.b1.church` üst kaynağına yeniden yazar. Bir istek çözümlendikten sonra neyin görüntülendiğini, yani sayfa/bölüm/öğe ağacını öğrenmek için [Web Sitesi Oluşturucu](./website-builder) sayfasına bakın.
+Tek bir kilise artık birden fazla ayrı web sitesi sunabilir. Her site `*.b1.church` alt alan adında ya da tamamen özel, kiliseye ait bir alan adında yayınlanabilir. Bu sayfa, oluşturucunun *altındaki* yönlendirme katmanını açıklar: gelen bir isteğin hangi kiliseye ve hangi siteye çözümlendiği, çoklu site veri modeli (önceden var olan her sitenin değişmeden görüntülenmesini sağlayan `siteId` nöbetçi değeri) ve özel alan adı uç katmanı. Bu uç katman, EC2 üzerinde çalışan, kendi yönettiğimiz bir Caddy vekil sunucusudur. TLS'yi sonlandırır ve her kilise alan adını kendi `*.b1.church` üst kaynağına yeniden yazar. Bir istek çözümlendikten sonra neyin görüntülendiğini, yani sayfa/bölüm/öğe ağacını öğrenmek için [Web Sitesi Oluşturucu](./website-builder.md) sayfasına bakın.
 
 </div>
 
@@ -204,7 +205,7 @@ WHERE d.domainName NOT LIKE '%www.%'
 
 ### Mevcut durum: statik yapılandırma, çalışma zamanı durumu yok
 
-Makine (kalıcı Elastic IP arkasındaki Windows EC2), Caddy'yi **statik bir Caddyfile** ile çalıştırır. Bu dosya, `ask` değeri `/membership/domains/authorize` adresine işaret eden isteğe bağlı TLS yapılandırmasını ve host→üst kaynak eşleme dosyasını içerir. Bu eşleme dosyası, zamanlanmış bir görev tarafından her 5 dakikada bir `/membership/domains/hostmap` adresinden yenilenir. Görev, sorunsuz bir `caddy reload` komutuyla biter. Yapılandırma, sıfır çalışma zamanı durumuyla yeniden başlatmalara dayanır. Yeniden ısıtma gerekmez. Bilinmeyen bir SNI **TLS ile reddedilir** (`authorize` komutunun reddettiği bir host için sertifika üretilmez). Yetkilendirilmiş ama henüz eşlenmemiş bir host (senkronizasyon penceresi içindeki yeni bir alan adı) ise temiz bir 404 alır. Yeni alan adları, kaydedildikten yaklaşık 5 dakika içinde yönlendirilebilir hale gelir. Sertifikaları ilk erişimde üretilir. Kurulum/yapılandırma, işletim ve sahada test edilmiş tuzaklar: [Caddy Özel Alan Adı Vekili](../deployment/caddy-proxy).
+Makine (kalıcı Elastic IP arkasındaki Windows EC2), Caddy'yi **statik bir Caddyfile** ile çalıştırır. Bu dosya, `ask` değeri `/membership/domains/authorize` adresine işaret eden isteğe bağlı TLS yapılandırmasını ve host→üst kaynak eşleme dosyasını içerir. Bu eşleme dosyası, zamanlanmış bir görev tarafından her 5 dakikada bir `/membership/domains/hostmap` adresinden yenilenir. Görev, sorunsuz bir `caddy reload` komutuyla biter. Yapılandırma, sıfır çalışma zamanı durumuyla yeniden başlatmalara dayanır. Yeniden ısıtma gerekmez. Bilinmeyen bir SNI **TLS ile reddedilir** (`authorize` komutunun reddettiği bir host için sertifika üretilmez). Yetkilendirilmiş ama henüz eşlenmemiş bir host (senkronizasyon penceresi içindeki yeni bir alan adı) ise temiz bir 404 alır. Yeni alan adları, kaydedildikten yaklaşık 5 dakika içinde yönlendirilebilir hale gelir. Sertifikaları ilk erişimde üretilir. Kurulum/yapılandırma, işletim ve sahada test edilmiş tuzaklar: [Caddy Özel Alan Adı Vekili](../deployment/caddy-proxy.md).
 
 ### Eski çalışma zamanı itmesi: geri alma yolu, silinmesi bekliyor
 
@@ -212,8 +213,8 @@ Makine (kalıcı Elastic IP arkasındaki Windows EC2), Caddy'yi **statik bir Cad
 
 ## İlgili sayfalar
 
-- [Caddy Özel Alan Adı Vekili](../deployment/caddy-proxy): Uç katman makinesinin kendisi. Sıfırdan kurulum, WinSW hizmeti, eşleme senkronizasyon görevi ve işletimsel tuzaklar
-- [Web Sitesi Oluşturucu](./website-builder): Sayfa/bölüm/öğe ağacı, işleyiciler, blog, SEO ve yapay zekâ ile üretim (bir istek bir kilise/siteye çözümlendikten sonra neyin görüntülendiği)
-- [İçerik Uç Noktaları](../api/endpoints/content): Sayfalar, bloklar, bağlantılar ve genel stiller için REST yüzeyi. Hepsi artık `?siteId=` değerini tanır
-- [B1App](../web-apps/b1-app): Ara katmanı ve `[sdSlug]` yönlendirmesini barındıran Next.js uygulaması
-- [Web Uygulaması Dağıtımı](../deployment/web-apps): B1App'in Vercel'e nasıl dağıtıldığı
+- [Caddy Özel Alan Adı Vekili](../deployment/caddy-proxy.md): Uç katman makinesinin kendisi. Sıfırdan kurulum, WinSW hizmeti, eşleme senkronizasyon görevi ve işletimsel tuzaklar
+- [Web Sitesi Oluşturucu](./website-builder.md): Sayfa/bölüm/öğe ağacı, işleyiciler, blog, SEO ve yapay zekâ ile üretim (bir istek bir kilise/siteye çözümlendikten sonra neyin görüntülendiği)
+- [İçerik Uç Noktaları](../api/endpoints/content.md): Sayfalar, bloklar, bağlantılar ve genel stiller için REST yüzeyi. Hepsi artık `?siteId=` değerini tanır
+- [B1App](../web-apps/b1-app.md): Ara katmanı ve `[sdSlug]` yönlendirmesini barındıran Next.js uygulaması
+- [Web Uygulaması Dağıtımı](../deployment/web-apps.md): B1App'in Vercel'e nasıl dağıtıldığı

@@ -1,5 +1,6 @@
 ---
 title: "Dostosowywanie lekcji"
+description: "Usuwanie, ukrywanie i zmiana kolejności sekcji oraz ról w lekcji Lessons.church, z wyborem: zmiana dla jednej sali czy wszystkich."
 ---
 
 # Dostosowywanie lekcji

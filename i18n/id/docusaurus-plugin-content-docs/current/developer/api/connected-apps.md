@@ -1,12 +1,13 @@
 ---
 title: "Aplikasi Terhubung & OAuth"
+description: "Hubungkan aplikasi pihak ketiga ke data B1 gereja lewat persetujuan OAuth 2.0 tanpa berbagi kata sandi atau kunci API, dan cabut akses kapan saja di B1 Admin."
 ---
 
 # Aplikasi Terhubung & OAuth
 
 <div class="article-intro">
 
-API B1 mendukung OAuth 2.0 sehingga aplikasi pihak ketiga dapat meminta izin dari setiap admin gereja untuk mengakses data mereka, tanpa gereja pernah membagikan kata sandi atau kunci API. **Aplikasi Terhubung** adalah token OAuth yang telah disetujui oleh admin gereja; mencabutnya akan memutus akses aplikasi pihak ketiga tersebut hanya dengan satu klik. Gunakan jalur ini untuk konektor SaaS multi-penyewa. Untuk integrasi satu gereja, lebih baik gunakan [Kunci API](./api-keys).
+API B1 mendukung OAuth 2.0 sehingga aplikasi pihak ketiga dapat meminta izin dari setiap admin gereja untuk mengakses data mereka, tanpa gereja pernah membagikan kata sandi atau kunci API. **Aplikasi Terhubung** adalah token OAuth yang telah disetujui oleh admin gereja; mencabutnya akan memutus akses aplikasi pihak ketiga tersebut hanya dengan satu klik. Gunakan jalur ini untuk konektor SaaS multi-penyewa. Untuk integrasi satu gereja, lebih baik gunakan [Kunci API](./api-keys.md).
 
 </div>
 
@@ -27,7 +28,7 @@ API B1 mendukung OAuth 2.0 sehingga aplikasi pihak ketiga dapat meminta izin dar
 | **Connected App** | Pasangan `(client, admin-gereja)` tertentu di mana admin telah memberikan akses kepada klien. Setiap Connected App didukung oleh refresh token OAuth. |
 | **Access token** | JWT berumur pendek (≈ 7 hari) yang digunakan klien untuk panggilan API. Bentuknya sama dengan JWT pengguna: `Authorization: Bearer <jwt>`. |
 | **Refresh token** | String opaque berumur panjang (≈ 90 hari) yang digunakan klien untuk membuat access token baru. |
-| **Scope** | Membatasi apa saja yang dapat dilakukan access token. Lihat [katalog scope](./api-keys#scopes). |
+| **Scope** | Membatasi apa saja yang dapat dilakukan access token. Lihat [katalog scope](./api-keys.md#scopes). |
 
 ## Alur Pemberian Akses
 
@@ -162,7 +163,7 @@ Daftar ini secara otomatis mengecualikan token yang sudah kedaluwarsa.
 
 ## Scope & Persetujuan
 
-String scope menggunakan katalog yang sama dengan [kunci API](./api-keys#scopes). Praktik terbaik untuk klien:
+String scope menggunakan katalog yang sama dengan [kunci API](./api-keys.md#scopes). Praktik terbaik untuk klien:
 
 - **Minta scope yang paling sempit namun tetap berfungsi.** Gereja akan memperhatikan jika Anda meminta `donations:write` padahal Anda hanya perlu membaca data orang.
 - **Gunakan refresh token bersama access token berumur pendek.** Access token berumur panjang lebih sulit dicabut dengan cepat.
@@ -183,7 +184,7 @@ Redirect URI yang terdaftar harus sama persis dengan `redirect_uri` pada permint
 
 ### Pendaftaran Klien Dinamis
 
-`POST /membership/oauth/register` (publik, RFC 7591) memungkinkan klien seperti konektor MCP claude.ai untuk mendaftarkan dirinya sendiri. Endpoint ini diiklankan oleh dokumen `/.well-known/oauth-authorization-server` pada API. Lihat [Server MCP → Penemuan OAuth](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (publik, RFC 7591) memungkinkan klien seperti konektor MCP claude.ai untuk mendaftarkan dirinya sendiri. Endpoint ini diiklankan oleh dokumen `/.well-known/oauth-authorization-server` pada API. Lihat [Server MCP → Penemuan OAuth](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ Pada halaman persetujuan B1Admin, klien yang mendaftarkan dirinya sendiri akan m
 
 ## Dukungan SDK
 
-Paket `@churchapps/integration-sdk` membungkus setiap alur OAuth dengan helper bertipe, yaitu `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, dan `.awaitDeviceToken()`. Lihat README paket dan [Webhook](./webhooks#sdk-support) untuk contoh end-to-end.
+Paket `@churchapps/integration-sdk` membungkus setiap alur OAuth dengan helper bertipe, yaitu `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, dan `.awaitDeviceToken()`. Lihat README paket dan [Webhook](./webhooks.md#sdk-support) untuk contoh end-to-end.

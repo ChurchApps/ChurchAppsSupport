@@ -1,5 +1,7 @@
 ---
-title: "Orden de servicio"
+title: "Orden del servicio en B1 Admin"
+sidebar_label: "Orden de servicio"
+description: "Configura un orden de servicio en B1 Admin para un plan de adoración: agrega canciones, lecciones y elementos personalizados, organízalos en secciones e imprime la hoja de ejecución."
 ---
 
 # Orden de servicio

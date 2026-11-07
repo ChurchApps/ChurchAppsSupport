@@ -1,5 +1,6 @@
 ---
 title: "Gezinme Stilleri"
+description: "B1 Admin'de kilise siteniz için katı ve saydam web sitesi gezinme çubuklarının renklerini özelleştirin; bağlantı, üzerine gelme ve etkin durumlarını da kapsar."
 ---
 
 # Gezinme Stilleri

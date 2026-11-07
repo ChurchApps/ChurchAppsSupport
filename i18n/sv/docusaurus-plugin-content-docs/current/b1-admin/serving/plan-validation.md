@@ -1,5 +1,6 @@
 ---
 title: "Planvalidering och aviseringar"
+description: "Kontrollera gudstjänstplaner i B1 Admin efter obesatta positioner, schemakrockar och blockerade volontärer, och push-avisera hela teamet med ett klick."
 ---
 
 # Planvalidering och aviseringar till volontärer

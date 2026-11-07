@@ -1,5 +1,7 @@
 ---
-title: "Inhalte"
+title: "Inhaltsfunktionen im B1.church-Mitgliederportal"
+sidebar_label: "Inhalte"
+description: "Sehen, welche Inhalte Ihre Gemeinde im B1.church-Mitgliederportal aktiviert hat, und dann Predigten, Live-Streams, Bibellesen und Lektionen durchstöbern."
 ---
 
 # Inhalte

@@ -1,5 +1,6 @@
 ---
 title: "Señalización digital"
+description: "Envía el contenido de las lecciones a un televisor del vestíbulo o pasillo en B1 Admin con una URL de feed de señalización digital que siempre muestra el plan actual, o usa los televisores de FreePlay."
 ---
 
 # Señalización digital
@@ -14,7 +15,7 @@ Envía el contenido de tus lecciones a un televisor del vestíbulo o del pasillo
 <h4>Antes de comenzar</h4>
 
 - Configura un [tipo de plan](./plans.md) con [Lessons.church](../../b1-church/content/lessons.md) o con otro contenido de lecciones programado
-- Ten una cuenta de [SignPresenter](https://www.signpresenter.com) y un dispositivo configurado para mostrarla, o un televisor con [FreePlay](../../freeplay/)
+- Ten una cuenta de [SignPresenter](https://www.signpresenter.com) y un dispositivo configurado para mostrarla, o un televisor con [FreePlay](../../freeplay/index.md)
 
 </div>
 
@@ -36,14 +37,14 @@ Para ver los pasos de configuración dentro de SignPresenter, consulta la [guía
 
 ## Usar televisores de FreePlay en su lugar
 
-Si tus pantallas usan [FreePlay](../../freeplay/), no necesitas la URL de la fuente. El cuadro de diálogo **Fuente de señalización digital** enlaza a **admin.freeplay.church/calendar**, donde puedes programar este tipo de plan en tus televisores de FreePlay:
+Si tus pantallas usan [FreePlay](../../freeplay/index.md), no necesitas la URL de la fuente. El cuadro de diálogo **Fuente de señalización digital** enlaza a **admin.freeplay.church/calendar**, donde puedes programar este tipo de plan en tus televisores de FreePlay:
 
 1. Haz clic en el enlace **admin.freeplay.church/calendar** del cuadro de diálogo. FreePlay Admin usa el mismo inicio de sesión que B1 Admin.
 2. Elige el grupo de pantallas de tus televisores y haz clic en **Añadir programación**.
 3. En **Reproducir**, elige tu tipo de plan en **Planes de servicio**. Estará marcado como **(plan actual)**.
 4. Define los días y las horas, y luego haz clic en **Guardar**.
 
-Los televisores reproducen cada semana el plan que sea actual para ese tipo de plan, en las horas que definas. Esto también funciona con las lecciones de Go Curriculum, incluidos los planes que hayas personalizado. FreePlay inicia sesión con la cuenta de Go Curriculum vinculada al ministerio en **Proveedores de contenido** (consulta [Programar lecciones](./scheduling-lessons.md)), o con la conexión de Go Curriculum de la iglesia si el ministerio no tiene una. Consulta [Programar el calendario](../../freeplay/scheduled-mode/scheduling-the-calendar) para ver todas las opciones, y [Vincular una pantalla](../../freeplay/scheduled-mode/pairing-a-screen) para añadir un televisor.
+Los televisores reproducen cada semana el plan que sea actual para ese tipo de plan, en las horas que definas. Esto también funciona con las lecciones de Go Curriculum, incluidos los planes que hayas personalizado. FreePlay inicia sesión con la cuenta de Go Curriculum vinculada al ministerio en **Proveedores de contenido** (consulta [Programar lecciones](./scheduling-lessons.md)), o con la conexión de Go Curriculum de la iglesia si el ministerio no tiene una. Consulta [Programar el calendario](../../freeplay/scheduled-mode/scheduling-the-calendar.md) para ver todas las opciones, y [Vincular una pantalla](../../freeplay/scheduled-mode/pairing-a-screen.md) para añadir un televisor.
 
 :::note
 La URL de la fuente no incluye el contenido multimedia de Go Curriculum, porque ese contenido requiere el inicio de sesión de Go Curriculum de tu iglesia. Para mostrar una lección de Go Curriculum en un televisor del vestíbulo o de un aula, usa FreePlay.
@@ -53,4 +54,4 @@ La URL de la fuente no incluye el contenido multimedia de Go Curriculum, porque 
 
 - Gestiona los planes que alimentan esta pantalla de señalización en la página de [Planes](./plans.md)
 - Programa el contenido con [Lessons.church](./scheduling-lessons.md)
-- Coloca los televisores de FreePlay en un calendario con [Modo programado](../../freeplay/scheduled-mode/)
+- Coloca los televisores de FreePlay en un calendario con [Modo programado](../../freeplay/scheduled-mode/index.md)

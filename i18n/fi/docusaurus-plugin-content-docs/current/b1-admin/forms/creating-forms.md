@@ -1,5 +1,6 @@
 ---
 title: "Lomakkeiden luominen"
+description: "Rakenna B1 Adminissa lomakkeita tapahtumailmoittautumisiin, kyselyihin ja vierailijakortteihin ja jaa ne linkillä, QR-koodilla tai paperilla."
 ---
 
 # Lomakkeiden luominen

@@ -1,5 +1,6 @@
 ---
 title: "Manejar Lecciones"
+description: "Arma la estructura de una lección en Lessons.church: lugares, secciones y acciones por rol (Decir, Hacer, Notar, Reproducir), con copia para casa y recursos."
 ---
 
 # Manejar Lecciones

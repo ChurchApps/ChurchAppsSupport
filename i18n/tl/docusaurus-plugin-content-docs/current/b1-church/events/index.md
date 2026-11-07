@@ -1,5 +1,7 @@
 ---
-title: "Mga Event"
+title: "Mga Event ng Simbahan sa B1.church: Mag-browse at Magparehistro"
+sidebar_label: "Mga Event"
+description: "I-browse ang darating na event ng simbahan sa B1.church, tingnan ang status ng registration, at magparehistro o idagdag ang event sa iyong calendar."
 ---
 
 # Mga Event
@@ -43,7 +45,7 @@ Kung puno ang isang event, maaari ka pa ring sumali sa **waitlist** kapag pinaga
 
 ## Matuto Pa
 
-- [Registering for Events](./registering) -- Hakbang-hakbang na gabay sa pagpapatala para sa event
-- [My Registrations](./my-registrations) -- Tingnan ang mga pagpapatala mo, magbayad ng balanse, mag-edit, o magkansela
-- [Requesting Events & Rooms](./requesting-events) -- Humiling ng event kasama ang mga kuwarto at resource na kailangan nito
-- [Self Check-In](../checkin/self-checkin) -- Mag-check in pagdating mo sa event
+- [Registering for Events](./registering.md) -- Hakbang-hakbang na gabay sa pagpapatala para sa event
+- [My Registrations](./my-registrations.md) -- Tingnan ang mga pagpapatala mo, magbayad ng balanse, mag-edit, o magkansela
+- [Requesting Events & Rooms](./requesting-events.md) -- Humiling ng event kasama ang mga kuwarto at resource na kailangan nito
+- [Self Check-In](../checkin/self-checkin.md) -- Mag-check in pagdating mo sa event

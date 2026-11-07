@@ -1,5 +1,6 @@
 ---
 title: "Panduan: Menyiapkan Check-In Pelayanan Anak"
+description: "Atur check-in anak di B1 Admin: hubungkan keluarga, buat grup berdasarkan usia, atur layanan, dan cetak label nama untuk kios B1 Checkin."
 ---
 
 # Menyiapkan Check-In Pelayanan Anak

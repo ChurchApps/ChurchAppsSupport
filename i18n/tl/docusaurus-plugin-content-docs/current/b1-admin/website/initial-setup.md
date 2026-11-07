@@ -1,5 +1,7 @@
 ---
-title: "Paunang Setup"
+title: "Pagsisimula sa Website mo sa B1 Admin"
+sidebar_label: "Paunang Setup"
+description: "I-set up ang website ng simbahan sa B1 Admin: ituro ang subdomain o custom domain, gawin ang home page, pumili ng kulay at logo, at buuin ang navigation."
 ---
 
 # Paunang Setup
@@ -45,7 +47,7 @@ Kung hindi mo makita ang opsyong Settings, hilingin sa taong nag-setup ng accoun
 6. Pagkatapos magdagdag ng section, i-click muli ang **Add Content** para maglagay ng text, mga larawan, video, card, form, at iba pa sa pamamagitan ng pag-drag sa mga ito papasok sa iyong section.
 
 :::info
-Para sa detalyadong tagubilin sa pagtatrabaho sa mga pahina at navigation, tingnan ang [Pamamahala ng mga Pahina](managing-pages). Para sa kumpletong gabay sa visual editor, tingnan ang [Paggamit ng Page Editor](page-editor).
+Para sa detalyadong tagubilin sa pagtatrabaho sa mga pahina at navigation, tingnan ang [Pamamahala ng mga Pahina](./managing-pages.md). Para sa kumpletong gabay sa visual editor, tingnan ang [Paggamit ng Page Editor](./page-editor.md).
 :::
 
 ## Pag-configure ng Hitsura ng Site
@@ -57,7 +59,7 @@ Para sa detalyadong tagubilin sa pagtatrabaho sa mga pahina at navigation, tingn
 5. I-configure ang iyong **Site Footer** gamit ang contact information at mga link ng inyong simbahan.
 
 :::info
-Ang mga pagbabagong gagawin mo sa Appearance ay umiiral sa buong website mo. Tingnan ang pahinang [Appearance](appearance) para sa detalyadong tagubilin sa bawat setting.
+Ang mga pagbabagong gagawin mo sa Appearance ay umiiral sa buong website mo. Tingnan ang pahinang [Appearance](./appearance.md) para sa detalyadong tagubilin sa bawat setting.
 :::
 
 ## Pag-setup ng Navigation
@@ -70,6 +72,6 @@ Lumalabas ang iyong mga navigation link sa Website Pages view. Para ayusin ang m
 
 ## Mga Susunod na Hakbang
 
-- [Pamamahala ng mga Pahina](managing-pages) -- Alamin nang detalyado kung paano magtrabaho sa mga pahina at navigation
-- [Appearance](appearance) -- Pinuhin ang mga kulay, font, at layout ng iyong site
-- [Files](files) -- Mag-upload ng mga larawan at dokumento para sa iyong website
+- [Pamamahala ng mga Pahina](./managing-pages.md) -- Alamin nang detalyado kung paano magtrabaho sa mga pahina at navigation
+- [Appearance](./appearance.md) -- Pinuhin ang mga kulay, font, at layout ng iyong site
+- [Files](./files.md) -- Mag-upload ng mga larawan at dokumento para sa iyong website

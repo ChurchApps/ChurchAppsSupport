@@ -1,5 +1,7 @@
 ---
-title: "시작하기"
+title: "ChurchApps 시작하기: 처음 15분"
+sidebar_label: "시작하기"
+description: "몇 단계로 새 ChurchApps 계정 설정: 교회 정보 추가, B1 Admin에 사람 가져오기, 팀 초대, 첫 프로젝트 선택."
 ---
 
 # 시작하기

@@ -1,5 +1,6 @@
 ---
 title: "Autentifikácia a oprávnenia"
+description: "Referencia prihlasovania API ChurchApps pomocou JWT, dvojfaktorového prihlasovania, tokov OAuth 2.0 a modelu oprávnení pre vývojárov budujúcich integrácie."
 ---
 
 # Autentifikácia a oprávnenia
@@ -244,7 +245,7 @@ Pre zariadenia bez prehliadača (aplikácie pre TV, kiosky):
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Získanie klienta podľa ID klienta (tajný kľúč je skrytý) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Vytvorenie alebo aktualizácia klienta |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Odstránenie klienta |
-| POST | `/membership/oauth/register` | Verejný | — | Dynamická registrácia klienta (RFC 7591) pre verejných klientov, napríklad konektory MCP. Pozri [Prepojené aplikácie](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Verejný | — | Dynamická registrácia klienta (RFC 7591) pre verejných klientov, napríklad konektory MCP. Pozri [Prepojené aplikácie](../connected-apps.md#dynamic-client-registration) |
 
 ### Endpointy na schvaľovanie zariadení
 
@@ -265,5 +266,5 @@ V tabuľkách endpointov v tejto dokumentácii sú tieto typy v stĺpci Autentif
 
 ## Súvisiace stránky
 
-- [Štruktúra modulov](../module-structure) — Ako sú usporiadané kontroléry, repozitáre a modely
-- [Lokálne nastavenie](../local-setup) — Spustenie API lokálne na vývoj
+- [Štruktúra modulov](../module-structure.md) — Ako sú usporiadané kontroléry, repozitáre a modely
+- [Lokálne nastavenie](../local-setup.md) — Spustenie API lokálne na vývoj

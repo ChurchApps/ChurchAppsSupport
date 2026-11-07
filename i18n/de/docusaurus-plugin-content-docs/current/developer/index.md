@@ -1,5 +1,6 @@
 ---
 title: "Entwicklerdokumentation"
+description: "Überblick über die ChurchApps-Entwicklerdokumentation: Einrichtung, API- und Web-App-Anleitungen, Bibliotheken, Mobile-Builds und Deployment."
 ---
 
 # Entwicklerdokumentation
@@ -24,16 +25,16 @@ Wichtige Merkmale:
 
 ## Was dieser Bereich behandelt
 
-- **[Einrichtung](setup/)**: Lokale Entwicklungsumgebung, Voraussetzungen und Konfiguration
-  - [Voraussetzungen](setup/prerequisites): Benötigte Werkzeuge und Software
-  - [Projektübersicht](setup/project-overview): Alle Projekte auf einen Blick
-  - [Umgebungsvariablen](setup/environment-variables): Konfiguration der `.env`-Dateien
-- **[API](api/)**: Lokale Einrichtung der Kern-API, Initialisierung der Datenbank und Modulstruktur
-- **[Web-Apps](web-apps/)**: B1Admin, B1App und LessonsApp lokal ausführen
-- **[Mobile Apps](mobile/)**: B1Mobile und andere Expo-Apps erstellen
-- **[Gemeinsame Bibliotheken](shared-libraries/)**: Mit Helpers, ApiHelper und AppHelper arbeiten
-- **[Bereitstellung](deployment/)**: APIs, Web-Apps und mobile Apps bereitstellen
-- **[FreePlay-Inhaltsanbieter](freeplay-content-provider)**: Ihre Lektionsbibliothek in FreePlay einbinden
+- **[Einrichtung](./setup/index.md)**: Lokale Entwicklungsumgebung, Voraussetzungen und Konfiguration
+  - [Voraussetzungen](./setup/prerequisites.md): Benötigte Werkzeuge und Software
+  - [Projektübersicht](./setup/project-overview.md): Alle Projekte auf einen Blick
+  - [Umgebungsvariablen](./setup/environment-variables.md): Konfiguration der `.env`-Dateien
+- **[API](./api/index.md)**: Lokale Einrichtung der Kern-API, Initialisierung der Datenbank und Modulstruktur
+- **[Web-Apps](./web-apps/index.md)**: B1Admin, B1App und LessonsApp lokal ausführen
+- **[Mobile Apps](./mobile/index.md)**: B1Mobile und andere Expo-Apps erstellen
+- **[Gemeinsame Bibliotheken](./shared-libraries/index.md)**: Mit Helpers, ApiHelper und AppHelper arbeiten
+- **[Bereitstellung](./deployment/index.md)**: APIs, Web-Apps und mobile Apps bereitstellen
+- **[FreePlay-Inhaltsanbieter](./freeplay-content-provider.md)**: Ihre Lektionsbibliothek in FreePlay einbinden
 
 ## Community und Ressourcen
 

@@ -1,5 +1,6 @@
 ---
 title: "Gerenciando Planos Anuais"
+description: "Crie um plano anual de lições semanais no Lessons.church, ancore semanas na Páscoa ou no Natal e publique para que as igrejas o apliquem no B1 Admin."
 ---
 
 # Gerenciando Planos Anuais

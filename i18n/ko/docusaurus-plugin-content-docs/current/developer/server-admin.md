@@ -1,5 +1,6 @@
 ---
 title: "서버 관리"
+description: "Server.Admin 사용자 전용: B1 Admin에서 2단계 인증 재설정, 계정 대리 로그인, Commons 검토, 교회 이메일 승인."
 ---
 
 # 서버 관리

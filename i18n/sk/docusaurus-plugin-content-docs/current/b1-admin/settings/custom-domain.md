@@ -1,5 +1,6 @@
 ---
 title: "Vlastná doména"
+description: "Nasmerujte vlastnú doménu, napríklad www.vasacirkev.sk, na vašu stránku B1 v B1 Admin nastavením DNS záznamov a pridaním domény v Nastaveniach."
 ---
 
 # Vlastná doména

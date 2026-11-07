@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Довідник пакета @churchapps/apihelper для Express API ChurchApps: локальна збірка, тестування через Yarn portal та публікація через changesets."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ title: "ApiHelper"
 <div class="prereqs">
 <h4>Перш ніж почати</h4>
 
-- Встановіть **Node.js** та **Git** -- див. [Передумови](../setup/prerequisites)
+- Встановіть **Node.js** та **Git** -- див. [Передумови](../setup/prerequisites.md)
 - Ознайомтеся з налаштуванням [робочого простору Packages](./index.md) та процесом випуску
-- Цей пакет залежить від [`@churchapps/helpers`](./helpers) (як peer-залежність) і повторно його експортує
+- Цей пакет залежить від [`@churchapps/helpers`](./helpers.md) (як peer-залежність) і повторно його експортує
 
 </div>
 
@@ -65,6 +66,6 @@ title: "ApiHelper"
 
 ## Пов'язані статті
 
-- **[Helpers](./helpers)** -- базовий пакет утиліт, від якого залежить цей пакет
-- **[Структура модулів](../api/module-structure)** -- як контролери та middleware автентифікації використовуються в модулях API
-- **[Локальне налаштування API](../api/local-setup)** -- налаштування API для локальної розробки
+- **[Helpers](./helpers.md)** -- базовий пакет утиліт, від якого залежить цей пакет
+- **[Структура модулів](../api/module-structure.md)** -- як контролери та middleware автентифікації використовуються в модулях API
+- **[Локальне налаштування API](../api/local-setup.md)** -- налаштування API для локальної розробки

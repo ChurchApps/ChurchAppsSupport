@@ -13,7 +13,7 @@ B1 Church Checkin peut imprimer des étiquettes nominatives et des bordereaux de
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Connectez-vous](./logging-in) à l'application B1 Church Checkin et sélectionnez votre église
+- [Connectez-vous](./logging-in.md) à l'application B1 Church Checkin et sélectionnez votre église
 - Connectez une imprimante d'étiquettes réseau compatible au même réseau Wi-Fi que la tablette
 
 </div>
@@ -87,4 +87,4 @@ Si vous déplacez le kiosque à un autre endroit ou changez votre configuration 
 
 ## Prochaines étapes
 
-Avec votre imprimante configurée, vous êtes prêt à commencer l'enregistrement. Consultez le [flux de travail de l'enregistrement](../check-in/) pour apprendre comment fonctionne le processus complet, en commençant par [la sélection d'un service](../check-in/selecting-service).
+Avec votre imprimante configurée, vous êtes prêt à commencer l'enregistrement. Consultez le [flux de travail de l'enregistrement](../check-in/index.md) pour apprendre comment fonctionne le processus complet, en commençant par [la sélection d'un service](../check-in/selecting-service.md).

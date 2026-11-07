@@ -1,5 +1,6 @@
 ---
 title: "Calendarul grupului"
+description: "Planificați întâlniri și evenimente recurente într-un calendar de grup în B1 Admin și B1.church, cu programare în masă, confirmări RSVP și abonamente."
 ---
 
 # Calendarul grupului

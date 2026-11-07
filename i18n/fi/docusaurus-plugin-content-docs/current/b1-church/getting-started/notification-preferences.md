@@ -1,5 +1,6 @@
 ---
 title: "Ilmoitusasetukset"
+description: "Aseta ilmoituskanavat, sähköpostin tiheys, hiljaiset tunnit ja tekstiviestien poisto kullekin ilmoitustyypille B1 Adminissa ja B1-sovelluksessa."
 ---
 
 # Ilmoitusasetukset
@@ -60,6 +61,6 @@ Aikaherkät ilmoitukset, kuten turvahälytys tai lapsen sisäänkirjautumisen tu
 
 ## Aiheeseen liittyvää
 
-- [Vapaaehtoiseksi ilmoittautuminen](../serving/volunteer-signup) -- Palvelumuistutukset ja vastaaminen aikataulupyyntöihin
-- [Tapahtumiin ilmoittautuminen](../events/registering) -- Ilmoittaudu tapahtumiin, jotka lähettävät muistutuksia
-- [Sovelluksen asentaminen](installing-pwa) -- Lisää B1 laitteeseesi, jotta voit vastaanottaa push-ilmoituksia
+- [Vapaaehtoiseksi ilmoittautuminen](../serving/volunteer-signup.md) -- Palvelumuistutukset ja vastaaminen aikataulupyyntöihin
+- [Tapahtumiin ilmoittautuminen](../events/registering.md) -- Ilmoittaudu tapahtumiin, jotka lähettävät muistutuksia
+- [Sovelluksen asentaminen](./installing-pwa.md) -- Lisää B1 laitteeseesi, jotta voit vastaanottaa push-ilmoituksia

@@ -1,5 +1,7 @@
 ---
-title: "レッスン（非推奨）"
+title: "B1 Mobile のレッスン画面（廃止済み）"
+sidebar_label: "レッスン（非推奨）"
+description: "レッスン（非推奨）ページです。B1 Mobile のアプリ内レッスン画面が廃止された理由と、現在のカリキュラムの入手先（FreePlay または Lessons.church）を説明します。"
 ---
 
 # レッスン（非推奨）
@@ -19,7 +21,7 @@ title: "レッスン（非推奨）"
 <div class="prereqs">
 <h4>開始前の準備</h4>
 
-- [B1 Mobile をインストール](../getting-started/installing)し、アカウントに[ログイン](../getting-started/logging-in)してください
+- [B1 Mobile をインストール](../getting-started/installing.md)し、アカウントに[ログイン](../getting-started/logging-in.md)してください
 - 教会でLessons.churchを通じてカリキュラムが設定されている必要があります
 
 </div>
@@ -54,5 +56,5 @@ Lessons.churchは、B1 Mobileと連携する別のChurchAppsプラットフォ�
 
 - [FreePlay の概要](/docs/freeplay/) -- 教室でのレッスン再生に使用する後継のテレビアプリ
 - [Lessons.church](/docs/lessons-church/) -- カリキュラムコンテンツを直接閲覧・管理
-- [聖書](./bible) -- レッスンと併せて聖書を読む
-- [説教](./sermons) -- 学びを補完する説教を視聴
+- [聖書](./bible.md) -- レッスンと併せて聖書を読む
+- [説教](./sermons.md) -- 学びを補完する説教を視聴

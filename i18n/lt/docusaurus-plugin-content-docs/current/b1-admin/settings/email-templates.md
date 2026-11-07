@@ -1,5 +1,6 @@
 ---
 title: "El. pašto šablonai"
+description: "Nustatykite el. laiškų ir SMS šablonus B1 Admin su laukais, teksto parinktimis ir peržiūromis masinei komunikacijai."
 ---
 
 # El. pašto šablonai

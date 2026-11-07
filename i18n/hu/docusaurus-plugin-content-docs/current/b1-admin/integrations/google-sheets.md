@@ -1,5 +1,6 @@
 ---
 title: "Google Táblázatok"
+description: "B1 Admin csatlakoztatása Google Táblázatokhoz a B1 Export bővítménnyel: személyek, adományok, csoportok, részvétel igény szerinti lehúzása."
 ---
 
 # Google Táblázatok
@@ -100,7 +101,7 @@ Az exportálás a háttérben fut a Google-fiókja alatt. Ha az API-kulcsot cser
 - **„B1 rejected the API key (401)”** – a kulcsot visszavonták, vagy hibás. Hozzon létre újat, és illessze be.
 - **„This API key lacks permission for /giving/donations (403)”** – a kulcsnak nincs `donations:read` hatóköre. Módosítsa a kulcs hatóköreit a B1Admin felületen.
 - **A lap nem frissül** a futtatás után – ellenőrizze, hogy a *helyes* lapnevet nézi (`B1 People` stb.). Az exportálás létrehozza a lapot, ha az még nem létezett.
-- **„Quota exceeded”** – az Apps Script felhasználónkénti napi kvótát szab a `UrlFetchApp` hívásokra (jellemzően több ezer hívás naponta). Nagy gyülekezetek sok rekorddal több napra oszthatják el az exportokat, vagy a nagy mennyiségű szinkronizációhoz használhatnak [Make](./make) integrációt vagy egyedi megoldást.
+- **„Quota exceeded”** – az Apps Script felhasználónkénti napi kvótát szab a `UrlFetchApp` hívásokra (jellemzően több ezer hívás naponta). Nagy gyülekezetek sok rekorddal több napra oszthatják el az exportokat, vagy a nagy mennyiségű szinkronizációhoz használhatnak [Make](./make.md) integrációt vagy egyedi megoldást.
 
 ## Testreszabás
 
@@ -108,6 +109,6 @@ A kiegészítő nyílt forráskódú – az Apps Script projekt a `B1Integration
 
 ## Lásd még
 
-- [Zapier](./zapier) – valós idejű szinkronizációhoz, nem igény szerinti exporthoz
-- [Make](./make) – összetettebb átalakításokkal járó szinkronizációhoz
+- [Zapier](./zapier.md) – valós idejű szinkronizációhoz, nem igény szerinti exporthoz
+- [Make](./make.md) – összetettebb átalakításokkal járó szinkronizációhoz
 - [API-kulcsok (fejlesztői referencia)](/docs/developer/api/api-keys)

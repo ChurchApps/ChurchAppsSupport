@@ -1,5 +1,6 @@
 ---
 title: "Listas de Reproducción"
+description: "Agrupa tus sermones en series en B1 Admin para que los visitantes de tu sitio web de B1.church puedan explorar y seguir cada serie de sermones en orden."
 ---
 
 # Listas de Reproducción
@@ -39,10 +40,10 @@ Crea tus listas de reproducción primero antes de añadir sermones. De esta mane
 
 ## Añadir Sermones a una Lista de Reproducción
 
-Cuando [añadas o edites un sermón](managing-sermons), asignas a una lista de reproducción usando el menú desplegable **Lista de Reproducción**. Todos los sermones asignados a la misma lista de reproducción se agrupan juntos y se muestran en orden en tu sitio web.
+Cuando [añadas o edites un sermón](./managing-sermons.md), asignas a una lista de reproducción usando el menú desplegable **Lista de Reproducción**. Todos los sermones asignados a la misma lista de reproducción se agrupan juntos y se muestran en orden en tu sitio web.
 
 :::info
-También puedes asignar sermones a listas de reproducción durante [Importación Masiva](bulk-import). Cuando importas desde YouTube o Vimeo, selecciona una lista de reproducción del menú desplegable **Importar en Lista de Reproducción** antes de hacer clic en **Importar**.
+También puedes asignar sermones a listas de reproducción durante [Importación Masiva](./bulk-import.md). Cuando importas desde YouTube o Vimeo, selecciona una lista de reproducción del menú desplegable **Importar en Lista de Reproducción** antes de hacer clic en **Importar**.
 :::
 
 ## Cómo Aparecen las Listas de Reproducción en Tu Sitio Web
@@ -55,5 +56,5 @@ Las listas de reproducción se muestran en tu sitio web de B1.church como colecc
 
 ## Próximos Pasos
 
-- [Gestionar Sermones](managing-sermons) -- Añade sermones individuales a tus listas de reproducción
-- [Importación Masiva](bulk-import) -- Importa múltiples sermones y asígnalos a listas de reproducción
+- [Gestionar Sermones](./managing-sermons.md) -- Añade sermones individuales a tus listas de reproducción
+- [Importación Masiva](./bulk-import.md) -- Importa múltiples sermones y asígnalos a listas de reproducción

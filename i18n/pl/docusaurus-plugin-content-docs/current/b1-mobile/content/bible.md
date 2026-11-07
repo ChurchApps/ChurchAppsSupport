@@ -1,5 +1,7 @@
 ---
-title: "Biblia"
+title: "Czytanie Biblii w B1 Mobile"
+sidebar_label: "Biblia"
+description: "Otwieraj Pismo w czytniku Biblii B1 Mobile z menu bocznego, poruszaj się po księgach, rozdziałach i wersetach oraz znajdź opcję Biblii swojego kościoła."
 ---
 
 # Biblia
@@ -13,7 +15,7 @@ B1 Mobile zawiera wbudowany czytnik Biblii, dzięki któremu możesz czytać Pis
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) na swoje konto
+- [Zainstaluj B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) na swoje konto
 - Twój kościół musi mieć włączoną funkcję Biblii
 
 </div>
@@ -37,7 +39,7 @@ Osadzony czytnik udostępnia elementy sterujące do przeglądania Pisma Święte
 Czytnik wypełnia cały ekran, dając dużo miejsca na wygodne czytanie na Twoim urządzeniu.
 
 :::tip
-Uczyń ekran Biblii częścią swojej codziennej rutyny -- to szybki sposób na czytanie Pisma Świętego, gdziekolwiek jesteś. Połącz go z [Werset dnia](./verse-of-the-day), aby znaleźć codzienną inspirację.
+Uczyń ekran Biblii częścią swojej codziennej rutyny -- to szybki sposób na czytanie Pisma Świętego, gdziekolwiek jesteś. Połącz go z [Werset dnia](./verse-of-the-day.md), aby znaleźć codzienną inspirację.
 :::
 
 ## Dostępność
@@ -46,6 +48,6 @@ Ekran Biblii jest dostępny, gdy Twój kościół włączy tę funkcję. Jeśli 
 
 ## Powiązane artykuły
 
-- [Werset dnia](./verse-of-the-day) -- Zobacz codzienny werset biblijny
-- [Kazania](./sermons) -- Oglądaj kazania uzupełniające czytanie Biblii
+- [Werset dnia](./verse-of-the-day.md) -- Zobacz codzienny werset biblijny
+- [Kazania](./sermons.md) -- Oglądaj kazania uzupełniające czytanie Biblii
 - [FreePlay](/docs/freeplay/) -- Prowadź ustrukturyzowany program nauczania na telewizorach w klasach (zastępuje wycofany ekran Lekcji w aplikacji)

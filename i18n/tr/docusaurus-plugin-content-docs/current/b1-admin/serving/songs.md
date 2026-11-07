@@ -1,5 +1,6 @@
 ---
 title: "Şarkılar"
+description: "B1 Admin'de ibadet şarkısı kitaplığınızı yönetin: şarkı arayın ve ekleyin, ayrıntıları düzenleyin, ChordPro sözleri ve düzenlemeleri ekleyin, prova ses kayıtlarını yükleyin."
 ---
 
 # Şarkılar

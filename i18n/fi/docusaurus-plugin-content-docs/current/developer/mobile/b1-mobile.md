@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "Asenna B1 Mobile (React Native/Expo) paikallisesti, määritä API-päätepisteet ja rakenna Android- tai iOS-versio. Huom.: B1 Mobile on vanhentunut."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobile on ChurchApps-yhteisön jäsenille suunnattu pääasiallinen mobiiliso
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Asenna **Node.js** ja **Expo CLI** -- katso [Esivaatimukset](../setup/prerequisites)
+- Asenna **Node.js** ja **Expo CLI** -- katso [Esivaatimukset](../setup/prerequisites.md)
 - Asenna **Android Studio** (Android-emulaattoria varten) tai **Xcode** (iOS-simulaattoria varten)
-- Määritä API-kohde (demo tai paikallinen) -- katso [Ympäristömuuttujat](../setup/environment-variables)
+- Määritä API-kohde (demo tai paikallinen) -- katso [Ympäristömuuttujat](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ OTA-päivitykset soveltuvat parhaiten pelkkiin JavaScript-muutoksiin. Jos muokka
 
 ## Liittyvät artikkelit
 
-- **[Mobiilijulkaisu](../deployment/mobile)** -- Kattava opas mobiilisovellusten rakentamiseen, lähettämiseen ja julkaisuun
-- **[Ympäristömuuttujat](../setup/environment-variables)** -- Täydellinen viite mobiilisovelluksen ympäristön määrityksiin
+- **[Mobiilijulkaisu](../deployment/mobile.md)** -- Kattava opas mobiilisovellusten rakentamiseen, lähettämiseen ja julkaisuun
+- **[Ympäristömuuttujat](../setup/environment-variables.md)** -- Täydellinen viite mobiilisovelluksen ympäristön määrityksiin

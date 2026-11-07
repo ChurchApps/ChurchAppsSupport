@@ -1,5 +1,6 @@
 ---
 title: "Webアプリのデプロイ"
+description: "B1 Admin などの ChurchApps Web アプリを Amazon S3 と CloudFront にデプロイする手順。マージ時の GitHub Actions による自動デプロイと、手動コマンドによるデプロイを説明します。"
 ---
 
 # Webアプリのデプロイ
@@ -13,7 +14,7 @@ ChurchAppsのWebアプリケーションは、静的サイトとして **Amazon 
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- Webアプリをローカルにセットアップし、ビルドが通ることを確認してください -- [Webアプリ](../web-apps/) を参照
+- Webアプリをローカルにセットアップし、ビルドが通ることを確認してください -- [Webアプリ](../web-apps/index.md) を参照
 - S3 と CloudFront にアクセスできる AWS 認証情報を設定してください
 - 対象の S3 バケット名と CloudFront ディストリビューション ID を確認してください
 
@@ -53,6 +54,6 @@ ChurchAppsのWebアプリケーションは、静的サイトとして **Amazon 
 
 ## 関連記事
 
-- **[Webアプリ](../web-apps/)** -- B1Admin、B1App、LessonsApp のセットアップガイド
-- **[APIのデプロイ](./apis)** -- バックエンド API のデプロイ
-- **[モバイルアプリのデプロイ](./mobile)** -- モバイルアプリをアプリストアにデプロイする方法
+- **[Webアプリ](../web-apps/index.md)** -- B1Admin、B1App、LessonsApp のセットアップガイド
+- **[APIのデプロイ](./apis.md)** -- バックエンド API のデプロイ
+- **[モバイルアプリのデプロイ](./mobile.md)** -- モバイルアプリをアプリストアにデプロイする方法

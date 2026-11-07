@@ -1,5 +1,7 @@
 ---
-title: "Udalosti"
+title: "Cirkevné udalosti a registrácia v B1 Mobile"
+sidebar_label: "Udalosti"
+description: "Prehliadajte nadchádzajúce cirkevné udalosti v B1 Mobile a prihláste seba a členov rodiny na tie, pri ktorých je registrácia otvorená."
 ---
 
 # Udalosti
@@ -23,10 +25,10 @@ Udalosti môžu mať rôzne stavy:
 
 ## Čo potrebujete
 
-- [Nainštalovanú aplikáciu B1 Mobile](../getting-started/installing) a [prihlásenie](../getting-started/logging-in)
+- [Nainštalovanú aplikáciu B1 Mobile](../getting-started/installing.md) a [prihlásenie](../getting-started/logging-in.md)
 - Vaša cirkev musí mať pre danú udalosť povolenú registráciu
 
 ## Ďalšie informácie
 
-- [Registrácia na udalosti](./registering) -- Podrobný postup prihlásenia sa na udalosť z mobilu
-- [Samoprihlásenie](../checkin/self-checkin) -- Prihláste sa po príchode na udalosť
+- [Registrácia na udalosti](./registering.md) -- Podrobný postup prihlásenia sa na udalosť z mobilu
+- [Samoprihlásenie](../checkin/self-checkin.md) -- Prihláste sa po príchode na udalosť

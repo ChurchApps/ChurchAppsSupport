@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Profil in dodeljene kartice v B1 Mobile"
+sidebar_label: "Profil"
+description: "Upravljajte ime, kontaktne podatke, gospodinjstvo in zasebnost v profilu B1 Mobile ter obdelujte delovne kartice in naloge, dodeljene vam."
 ---
 
 # Profil
@@ -20,7 +22,7 @@ Zavihek **Profil** vam omogoča ogled in urejanje osebnih podatkov, vključno z 
 
 ### Gospodinjstvo
 
-Zavihek **Gospodinjstvo** prikazuje družinske člane in njihove vloge v vašem gospodinjstvu. Ti podatki se uporabljajo za funkcije, kot je [prijava](../checkin/), kjer lahko prijavite celotno družino naenkrat.
+Zavihek **Gospodinjstvo** prikazuje družinske člane in njihove vloge v vašem gospodinjstvu. Ti podatki se uporabljajo za funkcije, kot je [prijava](../checkin/index.md), kjer lahko prijavite celotno družino naenkrat.
 
 ### Vidnost
 
@@ -55,6 +57,6 @@ Tapnite navadno opravilo, da vidite, od koga je, na koga se nanaša in njegove o
 
 ## Naslednji koraki
 
-- [Urejanje profila](./editing-profile) -- Posodobite svoje ime, kontaktne podatke in fotografijo
-- [Gospodinjstvo](./household) -- Ogled in upravljanje družinskih članov
-- [Nastavitve zasebnosti](./privacy-settings) -- Nadzorujte, kaj lahko drugi vidijo o vas
+- [Urejanje profila](./editing-profile.md) -- Posodobite svoje ime, kontaktne podatke in fotografijo
+- [Gospodinjstvo](./household.md) -- Ogled in upravljanje družinskih članov
+- [Nastavitve zasebnosti](./privacy-settings.md) -- Nadzorujte, kaj lahko drugi vidijo o vas

@@ -1,5 +1,6 @@
 ---
 title: "MCP 服务器"
+description: "设置 B1 API 的 MCP 访问，使 Claude Code、Cursor 或 Claude Desktop 等 AI 客户端能够使用 API 密钥或 OAuth 登录调用教会数据端点。"
 ---
 
 # MCP 服务器
@@ -13,7 +14,7 @@ B1 API 在 `/mcp` 提供一个 [MCP（Model Context Protocol，模型上下文�
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 一个具有客户端所需权限范围的 [B1 API 密钥](./api-keys)（`cak_…`），或者一个可以通过 OAuth 登录的 MCP 客户端（参见 [OAuth 发现](#oauth-discovery)）
+- 一个具有客户端所需权限范围的 [B1 API 密钥](./api-keys.md)（`cak_…`），或者一个可以通过 OAuth 登录的 MCP 客户端（参见 [OAuth 发现](#oauth-discovery)）
 - 一个可访问的 B1 API 主机——托管教会使用 `https://api.churchapps.org`，或使用你自己的部署
 - 一个 MCP 客户端。终端用户设置请参见 [Claude](/docs/b1-admin/integrations/claude) 和 [ChatGPT](/docs/b1-admin/integrations/chatgpt)
 
@@ -119,7 +120,7 @@ Authorization: Bearer cak_<prefix>.<secret>
 
 ### `describe_page_builder`
 
-这是唯一的非通用工具：一份静态的、自包含的指南，说明如何通过 `/content/*` 端点构建网站页面——包括页面 → 区块 → 元素的数据模型、创建流程、每种 `elementType` 及其 `answersJSON` 结构、区块级设置（例如 `dividerTop`/`dividerBottom` 形状分隔线），以及一个完整的端到端示例。它不需要任何输入，并与 B1Admin 编辑器中维护的元素目录保持一致（参见 [网站构建器架构](../architecture/website-builder)）。在创建或编辑页面内容之前，代理应先调用一次该工具，然后通过 `api_call` 执行操作。
+这是唯一的非通用工具：一份静态的、自包含的指南，说明如何通过 `/content/*` 端点构建网站页面——包括页面 → 区块 → 元素的数据模型、创建流程、每种 `elementType` 及其 `answersJSON` 结构、区块级设置（例如 `dividerTop`/`dividerBottom` 形状分隔线），以及一个完整的端到端示例。它不需要任何输入，并与 B1Admin 编辑器中维护的元素目录保持一致（参见 [网站构建器架构](../architecture/website-builder.md)）。在创建或编辑页面内容之前，代理应先调用一次该工具，然后通过 `api_call` 执行操作。
 
 ## 鉴权模型
 
@@ -153,11 +154,11 @@ MCP 请求本身通过 `CustomAuthProvider.getUser()` 处理——这与每个�
 
 ## OAuth 发现 {#oauth-discovery}
 
-MCP 服务器会公布 OAuth 2.1 元数据，因此只连接到通过 OAuth 发现的服务器的客户端——尤其是 Claude.ai 的 "Add custom connector" 界面——无需粘贴密钥即可为用户登录。`/mcp` 是受保护资源，位于 `/membership/oauth` 下的现有 [OAuth 提供方](./connected-apps) 是其授权服务器，而 B1Admin 的 `/oauth` 页面则是同意页面。
+MCP 服务器会公布 OAuth 2.1 元数据，因此只连接到通过 OAuth 发现的服务器的客户端——尤其是 Claude.ai 的 "Add custom connector" 界面——无需粘贴密钥即可为用户登录。`/mcp` 是受保护资源，位于 `/membership/oauth` 下的现有 [OAuth 提供方](./connected-apps.md) 是其授权服务器，而 B1Admin 的 `/oauth` 页面则是同意页面。
 
 | 端点 | 用途 |
 |---|---|
-| `GET /.well-known/oauth-protected-resource`（也包括 `/.well-known/oauth-protected-resource/mcp`） | 受保护资源元数据（RFC 9728）：`resource` 为 `<api>/mcp`，`authorization_servers` 为 API 根地址，`scopes_supported` 列出所有 [API 密钥权限范围](./api-keys#scopes) |
+| `GET /.well-known/oauth-protected-resource`（也包括 `/.well-known/oauth-protected-resource/mcp`） | 受保护资源元数据（RFC 9728）：`resource` 为 `<api>/mcp`，`authorization_servers` 为 API 根地址，`scopes_supported` 列出所有 [API 密钥权限范围](./api-keys.md#scopes) |
 | `GET /.well-known/oauth-authorization-server` | 授权服务器元数据（RFC 8414）：`authorization_endpoint` 为 B1Admin 的 `/oauth`，`token_endpoint` 为 `/membership/oauth/token`，`registration_endpoint` 为 `/membership/oauth/register` |
 | `POST /membership/oauth/register` | 动态客户端注册（RFC 7591） |
 
@@ -209,8 +210,8 @@ MCP 服务器位于 Api 仓库的 `src/modules/mcp/` 目录中。主要文件如
 
 ## 相关内容
 
-- [API 密钥](./api-keys)
-- [Webhooks](./webhooks)
-- [已连接应用（OAuth）](./connected-apps)
+- [API 密钥](./api-keys.md)
+- [Webhooks](./webhooks.md)
+- [已连接应用（OAuth）](./connected-apps.md)
 - [Claude — 终端用户设置](/docs/b1-admin/integrations/claude)
 - [ChatGPT — 终端用户设置](/docs/b1-admin/integrations/chatgpt)

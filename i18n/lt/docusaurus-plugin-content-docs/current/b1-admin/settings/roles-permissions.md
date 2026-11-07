@@ -1,5 +1,6 @@
 ---
 title: "Vaidmenys ir leidimai"
+description: "Nustatykite B1 Admin vaidmenis, kad valdytumėte, ką darbuotojai ir savanoriai mato bei gali keisti: nuo aukų ir lankomumo iki asmenų ir grupių."
 ---
 
 # Vaidmenys ir leidimai

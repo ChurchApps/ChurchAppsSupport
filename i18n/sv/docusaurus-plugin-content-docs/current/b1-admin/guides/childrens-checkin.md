@@ -1,5 +1,6 @@
 ---
 title: "Guide: Konfigurera barnkontroll i barnverksamheten"
+description: "Ställ in barnincheckning i B1 Admin: koppla familjer, skapa åldersgrupper, konfigurera gudstjänster och skriv ut namnskyltar till B1 Checkin-kiosken."
 ---
 
 # Konfigurera barnkontroll i barnverksamheten

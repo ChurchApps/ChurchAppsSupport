@@ -1,5 +1,6 @@
 ---
 title: "Henkilöiden lisääminen"
+description: "Lisää henkilö seurakuntasi tietokantaan B1 Adminissa, täytä tiedot ja yhdistä perheenjäsenet talouksiksi sisäänkirjautumista ja raportointia varten."
 ---
 
 # Henkilöiden lisääminen

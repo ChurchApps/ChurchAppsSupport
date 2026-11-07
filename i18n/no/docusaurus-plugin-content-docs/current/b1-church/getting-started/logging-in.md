@@ -1,5 +1,7 @@
 ---
-title: "Logge inn"
+title: "Logge inn i B1.church og medlemsportalen"
+sidebar_label: "Logge inn"
+description: "Logg inn i B1.church-medlemsportalen med tofaktorkoder eller single sign-on, tilbakestill et glemt passord og logg ut via kontomenyen."
 ---
 
 # Logge inn
@@ -13,7 +15,7 @@ title: "Logge inn"
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger en ChurchApps-konto. Se [Komme i gang](../getting-started/) for å opprette en.
+- Du trenger en ChurchApps-konto. Se [Komme i gang](./index.md) for å opprette en.
 - Du trenger kirkens B1.church-URL (for eksempel `https://dinkirkenavn.b1.church`).
 
 </div>
@@ -35,7 +37,7 @@ Du forblir innlogget i samme nettleser eller installerte app til du logger ut, s
 
 ## Gå til medlemsportalen
 
-Når du er logget inn, kan du åpne medlemsportalen ved å klikke på **navnet** ditt øverst til høyre på siden og velge **Medlemsportal** fra menyen. Medlemsportalen er der alle dine personlige kirkeverktøy ligger, inkludert [hjemmeoversikten](./navigating.md), [Meg-siden](./me-page.md), [grupper](../groups/), [gaver](../giving/) og mer.
+Når du er logget inn, kan du åpne medlemsportalen ved å klikke på **navnet** ditt øverst til høyre på siden og velge **Medlemsportal** fra menyen. Medlemsportalen er der alle dine personlige kirkeverktøy ligger, inkludert [hjemmeoversikten](./navigating.md), [Meg-siden](./me-page.md), [grupper](../groups/index.md), [gaver](../giving/index.md) og mer.
 
 ## Brukermenyen din
 

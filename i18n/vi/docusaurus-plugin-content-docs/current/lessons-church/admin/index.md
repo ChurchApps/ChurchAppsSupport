@@ -1,5 +1,6 @@
 ---
 title: "Quản trị"
+description: "Tổng quan khu vực quản trị Lessons.church trong ChurchApps: quản lý chương trình, khóa học, bài học, tài nguyên, thống kê và nhà cung cấp giáo trình bên ngoài."
 ---
 
 # Quản trị

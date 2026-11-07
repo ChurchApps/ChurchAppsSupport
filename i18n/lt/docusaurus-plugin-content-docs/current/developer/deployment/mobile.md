@@ -1,5 +1,6 @@
 ---
 title: "Mobiliosios programėlės diegimas"
+description: "Vadovas, kaip sukurti B1 Mobile programėlės Android ir iOS versijas su Expo EAS, pateikti jas programėlių parduotuvėms ir skelbti OTA atnaujinimus."
 ---
 
 # Mobiliosios programėlės diegimas
@@ -13,7 +14,7 @@ ChurchApps mobiliosios programėlės kuriamos ir diegiamos naudojant **Expo EAS 
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Nustatykite mobiliąją programėlę vietiniame kompiuteryje -- žr. [B1 Mobile](../mobile/b1-mobile)
+- Nustatykite mobiliąją programėlę vietiniame kompiuteryje -- žr. [B1 Mobile](../mobile/b1-mobile.md)
 - Įdiekite ir sukonfigūruokite [EAS CLI](https://docs.expo.dev/eas/)
 - Turėkite prieigą prie Google Play Console (Android) ir (arba) Apple App Store Connect (iOS)
 
@@ -77,6 +78,6 @@ Jei neatnaujinsite versijų numerių visuose failuose, kūrimas nepavyks arba pr
 
 ## Susiję straipsniai
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- Vietinio nustatymo ir kūrimo vadovas
-- **[API diegimas](./apis)** -- Backend API diegimas
-- **[Žiniatinklio programėlių diegimas](./web-apps)** -- Frontend žiniatinklio programėlių diegimas
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- Vietinio nustatymo ir kūrimo vadovas
+- **[API diegimas](./apis.md)** -- Backend API diegimas
+- **[Žiniatinklio programėlių diegimas](./web-apps.md)** -- Frontend žiniatinklio programėlių diegimas

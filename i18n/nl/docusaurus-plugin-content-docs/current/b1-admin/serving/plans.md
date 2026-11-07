@@ -1,5 +1,6 @@
 ---
 title: "Service Plans"
+description: "Stel vrijwilligersplanning in B1 Admin in: maak dienstplannen per datum, kopieer eerdere weken, wijs teamleden toe en beheer aanmeldtermijnen."
 ---
 
 # Service Plans

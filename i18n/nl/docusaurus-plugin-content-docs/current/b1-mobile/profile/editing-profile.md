@@ -1,5 +1,7 @@
 ---
-title: "Je profiel bewerken"
+title: "Je profiel bewerken in de B1 Mobile-app"
+sidebar_label: "Je profiel bewerken"
+description: "Werk je naam, e-mail, telefoonnummer, adres en profielfoto bij in de B1 Mobile-app, zodat de gegevens van je kerk en de ledengids actueel blijven."
 ---
 
 # Je profiel bewerken
@@ -13,7 +15,7 @@ Het tabblad **Profiel** laat je je persoonlijke gegevens bijwerken zodat je kerk
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [log in](../getting-started/logging-in) op je account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [log in](../getting-started/logging-in.md) op je account
 
 </div>
 
@@ -34,7 +36,7 @@ Je profiel bevat de volgende persoonlijke gegevens:
 3. Tik op het veld dat je wilt bijwerken en maak je wijzigingen.
 4. Sla je wijzigingen op wanneer je klaar bent.
 
-Je bijgewerkte gegevens worden automatisch gesynchroniseerd. Iedereen die je profiel bekijkt (afhankelijk van je [privacyinstellingen](./privacy-settings)) ziet de nieuwe gegevens meteen.
+Je bijgewerkte gegevens worden automatisch gesynchroniseerd. Iedereen die je profiel bekijkt (afhankelijk van je [privacyinstellingen](./privacy-settings.md)) ziet de nieuwe gegevens meteen.
 
 :::tip
 Houd je e-mailadres en telefoonnummer actueel. Je kerk gebruikt deze informatie om je belangrijke updates en herinneringen te sturen.
@@ -46,7 +48,7 @@ Je kunt je profielfoto toevoegen of wijzigen vanuit het tabblad **Profiel**. Je 
 
 ## Wijzigingen in ChurchApps
 
-Omdat alle ChurchApps-services hetzelfde accountsysteem delen, is een wijziging die je in B1 Mobile aanbrengt, onmiddellijk zichtbaar in [B1.church](../../b1-church/), de beheergereedschappen van je kerk en alle andere verbonden services. Je hoeft je gegevens niet afzonderlijk op elke plaats bij te werken.
+Omdat alle ChurchApps-services hetzelfde accountsysteem delen, is een wijziging die je in B1 Mobile aanbrengt, onmiddellijk zichtbaar in [B1.church](../../b1-church/index.md), de beheergereedschappen van je kerk en alle andere verbonden services. Je hoeft je gegevens niet afzonderlijk op elke plaats bij te werken.
 
 :::info
 Sommige kerken vereisen beheerdergoedkeuring voor bepaalde profielwijzigingen. Als uw update niet onmiddellijk wordt weergegeven, controleert u het tabblad **In behandeling** op uw profielscherm voor de status.
@@ -54,5 +56,5 @@ Sommige kerken vereisen beheerdergoedkeuring voor bepaalde profielwijzigingen. A
 
 ## Gerelateerde artikelen
 
-- [Huishouden](./household) -- Bekijk en beheer je gezinsleden
-- [Privacyinstellingen](./privacy-settings) -- Bepaal wat anderen over je kunnen zien
+- [Huishouden](./household.md) -- Bekijk en beheer je gezinsleden
+- [Privacyinstellingen](./privacy-settings.md) -- Bepaal wat anderen over je kunnen zien

@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Prehliadanie blogu B1.church a RSS kanálov"
+sidebar_label: "Blog"
+description: "Prehliadajte a filtrujte blog vášho zboru na B1.church podľa kategórie alebo značky, prechádzajte staršie príspevky alebo sledujte nové cez RSS kanály."
 ---
 
 # Blog

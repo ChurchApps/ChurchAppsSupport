@@ -1,5 +1,6 @@
 ---
 title: "B1 Church Checkin 概览"
+description: "在 iPad 或 Android 平板上设置 B1 Church Checkin 登记机应用，让家庭可以自助登记，为儿童分配小组，并打印标签和接送单。"
 ---
 
 # B1 Church Checkin 概览
@@ -24,7 +25,7 @@ B1 Church Checkin 是一款适用于 iPad 和 Android 平板的自助签到应�
 - **家庭信息核对** —— 一目了然地查看所有家庭成员的照片和当前的小组分配。
 - **小组分配** —— 为所选礼拜时间，将每位家庭成员分配到合适的班级或小组。
 - **访客签到** —— 当场输入访客的名和姓，将其添加到家庭中。
-- **二维码访客登记** —— 显示一个二维码，访客可以在签到前用自己的手机扫码[完成登记](../b1-church/checkin/guest-registration)，或者让他们点击 **Register here**（在此登记），在自助机上填写同一份表单。
+- **二维码访客登记** —— 显示一个二维码，访客可以在签到前用自己的手机扫码[完成登记](../b1-church/checkin/guest-registration.md)，或者让他们点击 **Register here**（在此登记），在自助机上填写同一份表单。
 - **打印标签** —— 为儿童打印名牌，并打印带有唯一安全码的家长接送单。
 - **网络打印机支持** —— 直接从应用中发现并配置网络打印机。
 - **自动登录** —— 首次登录后，应用会记住你的凭据，之后每次启动都会直接进入礼拜选择屏幕。
@@ -33,8 +34,8 @@ B1 Church Checkin 是一款适用于 iPad 和 Android 平板的自助签到应�
 
 ## 文档章节
 
-- **[入门指南](./getting-started/)** —— 安装应用、登录以及设置打印机。
-- **[签到流程](./check-in/)** —— 从选择礼拜到打印标签的完整签到流程。
+- **[入门指南](./getting-started/index.md)** —— 安装应用、登录以及设置打印机。
+- **[签到流程](./check-in/index.md)** —— 从选择礼拜到打印标签的完整签到流程。
 
 :::tip
 B1 Church Checkin 在安装于横向方向、家庭易于触及的 10 英寸平板（iPad 或 Android）上效果最佳。你可以从 [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)、[Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) 或 [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/) 获取该应用。

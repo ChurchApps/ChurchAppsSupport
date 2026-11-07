@@ -1,5 +1,6 @@
 ---
 title: "Paieška"
+description: "Raskite programas, mokymus ir pamokas Lessons.church pagal raktinį žodį ar Biblijos istoriją ir sužinokite, kaip rezultatai rikiuojami bei žymimi."
 ---
 
 # Paieška

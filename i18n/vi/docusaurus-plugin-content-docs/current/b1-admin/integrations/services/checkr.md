@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Kết nối đăng ký tình nguyện viên trong B1 Admin với kiểm tra lý lịch Checkr qua Make.com, có thông báo trạng thái báo cáo cho điều phối viên an toàn mục vụ."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Nếu hội thánh của bạn dùng tư cách thành viên nhóm B1 để giớ
 
 ## Xem thêm
 
-- [Make (tổng quan)](../make): phía B1 của mọi kịch bản Make
-- [Tin nhắn di động](./mobile-message): dành cho các nhà cung cấp SMS không có ứng dụng Zapier, dùng cùng mô hình Webhooks/HTTP như kết nối Checkr với Make
+- [Make (tổng quan)](../make.md): phía B1 của mọi kịch bản Make
+- [Tin nhắn di động](./mobile-message.md): dành cho các nhà cung cấp SMS không có ứng dụng Zapier, dùng cùng mô hình Webhooks/HTTP như kết nối Checkr với Make
 - [Tài liệu API Checkr](https://docs.checkr.com/)

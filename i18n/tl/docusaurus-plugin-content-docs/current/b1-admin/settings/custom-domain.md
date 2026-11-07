@@ -1,5 +1,6 @@
 ---
 title: "Custom Domain"
+description: "Ituro ang sarili mong domain, gaya ng www.yourchurch.org, sa iyong B1 site sa B1 Admin sa pamamagitan ng DNS record at pagdagdag ng domain sa Settings."
 ---
 
 # Custom Domain

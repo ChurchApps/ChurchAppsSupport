@@ -1,5 +1,6 @@
 ---
 title: "Prijímanie návštevníkov"
+description: "Ako funguje prihlasovanie naprieč B1Checkin, B1App a B1 Admin: dátový model účasti, skupiny ako miestnosti, limity kapacity a pravidlá bezpečného vyzdvihnutia detí."
 ---
 
 # Prijímanie návštevníkov
@@ -216,7 +217,7 @@ Registrácia cez QR sa riadi nastaveniami cirkvi uloženými z karty **QR regist
 
 ## Súvisiace stránky
 
-- [Koncové body účasti](../api/endpoints/attendance) -- Úplné REST rozhranie pre lokality, služby, relácie, návštevy a položky návštev
-- [Koncové body členstva](../api/endpoints/membership) -- Osoby, domácnosti a skupiny
-- [Webhooky](../api/webhooks) -- Udalosti `session.created`, `attendance.recorded` a `attendance.checkout`
-- [Štruktúra modulu](../api/module-structure) -- Ako je modul účasti organizovaný na strane servera
+- [Koncové body účasti](../api/endpoints/attendance.md) -- Úplné REST rozhranie pre lokality, služby, relácie, návštevy a položky návštev
+- [Koncové body členstva](../api/endpoints/membership.md) -- Osoby, domácnosti a skupiny
+- [Webhooky](../api/webhooks.md) -- Udalosti `session.created`, `attendance.recorded` a `attendance.checkout`
+- [Štruktúra modulu](../api/module-structure.md) -- Ako je modul účasti organizovaný na strane servera

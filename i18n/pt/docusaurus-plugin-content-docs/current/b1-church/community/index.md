@@ -1,5 +1,7 @@
 ---
-title: "Comunidade"
+title: "Diretório Comunitário de Membros no B1.church"
+sidebar_label: "Comunidade"
+description: "Pesquise o diretório de membros da sua igreja no B1.church por nome ou grupo, veja perfis e descubra onde estão as atualizações da antiga Timeline."
 ---
 
 # Comunidade
@@ -26,5 +28,5 @@ Os membros e informações visíveis para você no diretório dependem das confi
 :::
 
 :::tip
-Use as funcionalidades da comunidade junto com os [Grupos](../groups/) para se manter engajado com sua igreja durante toda a semana.
+Use as funcionalidades da comunidade junto com os [Grupos](../groups/index.md) para se manter engajado com sua igreja durante toda a semana.
 :::

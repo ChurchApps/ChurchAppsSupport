@@ -1,5 +1,6 @@
 ---
 title: "Ikhalenda Lelihlelwe"
+description: "Setfula ikhalendari yebandla lonkhe ku-B1 Admin levela emaqembu lamaningi, bese uyabelana ngayo ewebhusayitini, nge-ICS, noma njengefayili lekulanda."
 ---
 
 # Ikhalenda Lelihlelwe
@@ -15,7 +16,7 @@ Ikhalenda lelihlelwe libutsa imicimbi lesuka emacenjini lamanyenti liyifake kuku
 
 - Hlela [emacembu](../groups/creating-groups.md) lofuna imicimbi yawo ifakwe
 - Cinisekisa kutsi baholi bemacembu bafake imicimbi emacenjini abo
-- Tijwayeze netisekelo teku[Dala Emakhalenda](creating-calendars)
+- Tijwayeze netisekelo teku[Dala Emakhalenda](./creating-calendars.md)
 
 </div>
 
@@ -54,5 +55,5 @@ Nabaholi bemacembu bengeta imicimbi lemisha [emacembu](../groups/creating-groups
 
 ## Tinyatselo Letilandzelako
 
-- [Dala Emakhalenda](creating-calendars) -- Fundza tisekelo tekudala ikhalenda
-- [Kubuka Konkhe Emakhalenda](./) -- Buyela ekubukeni konkhe kwemakhalenda
+- [Dala Emakhalenda](./creating-calendars.md) -- Fundza tisekelo tekudala ikhalenda
+- [Kubuka Konkhe Emakhalenda](./index.md) -- Buyela ekubukeni konkhe kwemakhalenda

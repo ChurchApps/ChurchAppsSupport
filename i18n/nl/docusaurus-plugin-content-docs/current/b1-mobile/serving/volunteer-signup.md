@@ -1,5 +1,7 @@
 ---
-title: "Vrijwilligensinschrijving"
+title: "Aanmelden als vrijwilliger in de B1 Mobile-app"
+sidebar_label: "Vrijwilligensinschrijving"
+description: "Zoek open vrijwilligersposities voor komende diensten, meld je aan of verwijder een aanmelding in de B1 Mobile-app, inclusief deadlines en plaatslimieten."
 ---
 
 # Vrijwilligensinschrijving
@@ -13,7 +15,7 @@ Blader door beschikbare vrijwilligersposities en schrijf je in voor komende dien
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [log in](../getting-started/logging-in) op je account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [log in](../getting-started/logging-in.md) op je account
 - Je kerkbeheerder moet zelfregistratie hebben ingeschakeld op minstens één positie
 
 </div>
@@ -60,5 +62,5 @@ Zet [pushberichten](../community/notifications.md) aan om op de hoogte te blijve
 
 ## Gerelateerde artikelen
 
-- [Plannen bekijken](./viewing-plans) -- Bekijk je toegewezen plannen en dienstvolgorde
+- [Plannen bekijken](./viewing-plans.md) -- Bekijk je toegewezen plannen en dienstvolgorde
 - [Meldingen](../community/notifications.md) -- Blijf op de hoogte van diens toewijzingen

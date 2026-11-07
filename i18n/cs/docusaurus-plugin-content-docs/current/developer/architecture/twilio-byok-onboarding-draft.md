@@ -6,7 +6,7 @@ description: "Návrh nastavení Twilio ve vlastnictví církve v B1, pokyny pro 
 # Zavedení církve do Twilio (koncept)
 
 :::caution Návrh pro plánovanou integraci
-Toto je navrhovaný postup. B1 nyní nabízí základní volbu **Twilio** v části **Nastavení > Textové zprávy** (Account SID, Auth Token, From Number a webhook pro příchozí STOP) – viz [Nastavení církve: Textové zprávy](../../b1-admin/settings/church-settings.md#texting). Další nastavení B1, mapování souhlasu a kroky ověření níže jsou požadavky pro budoucí verzi, nikoli pokyny, jak najít existující nastavení. Rozsah a závislosti si přečtěte v [technickém návrhu](./twilio-byok-proposal). Zdroje Twilio byly ověřeny 22. října 2026; před odesláním kampaně ověřte aktuální požadavky.
+Toto je navrhovaný postup. B1 nyní nabízí základní volbu **Twilio** v části **Nastavení > Textové zprávy** (Account SID, Auth Token, From Number a webhook pro příchozí STOP) – viz [Nastavení církve: Textové zprávy](../../b1-admin/settings/church-settings.md#texting). Další nastavení B1, mapování souhlasu a kroky ověření níže jsou požadavky pro budoucí verzi, nikoli pokyny, jak najít existující nastavení. Rozsah a závislosti si přečtěte v [technickém návrhu](./twilio-byok-proposal.md). Zdroje Twilio byly ověřeny 22. října 2026; před odesláním kampaně ověřte aktuální požadavky.
 :::
 
 ## Doporučené uspořádání
@@ -34,7 +34,7 @@ Pro navrhovaný registrační formulář SMS:
 | Stávající automatizace | Nezapisujte každého odesílatele formuláře nebo člena skupiny do pracovního postupu s textovými zprávami. Pouze navrhované ověřené mapování souhlasu může takový program autorizovat. |
 | Poděkování v textové zprávě | Potvrďte, že byl formulář přijat, a nepište, že došlo k zápisu do SMS, pokud bylo políčko odmítnuto nebo potvrzení či kontrola ještě probíhá. |
 
-Stávající zaškrtávací otázka může sloužit jako ilustrace formuláře, B1 však stále potřebuje evidenci souhlasů a kontrolní brány pro odesílání. Sdílený vykreslovač formulářů dnes zobrazuje popisy jako prostý text; zápis Markdownu nebo adresy URL tam nezaručí, že odkazy na zásady budou klikatelné. Implementace musí poskytnout přístupný ovládací prvek souhlasu se skutečnými odkazy. Viz [vytváření formulářů v B1](../../b1-admin/forms/creating-forms) a [technický návrh](./twilio-byok-proposal#consent-and-suppression-are-required-release-work).
+Stávající zaškrtávací otázka může sloužit jako ilustrace formuláře, B1 však stále potřebuje evidenci souhlasů a kontrolní brány pro odesílání. Sdílený vykreslovač formulářů dnes zobrazuje popisy jako prostý text; zápis Markdownu nebo adresy URL tam nezaručí, že odkazy na zásady budou klikatelné. Implementace musí poskytnout přístupný ovládací prvek souhlasu se skutečnými odkazy. Viz [vytváření formulářů v B1](../../b1-admin/forms/creating-forms.md) a [technický návrh](./twilio-byok-proposal.md#consent-and-suppression-are-required-release-work).
 
 Twilio vyžaduje dobrovolný a ověřitelný souhlas (opt-in). Nespojujte SMS s povinnými členskými podmínkami, souhlasy s e-mailem nebo telefonem, souhlasem s darováním ani registrací na akci. Mobilní číslo na návštěvnické kartě samo o sobě není souhlasem s SMS. Viz Twilio [požadavky na dobrovolný souhlas](https://www.twilio.com/docs/api/errors/30923) a [doporučení pro kampaně](https://help.twilio.com/hc/en-us/articles/26149060902555-A2P-10DLC-Campaign-Registration-Recommendations).
 

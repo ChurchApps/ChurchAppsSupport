@@ -1,5 +1,6 @@
 ---
 title: "Groep Gesprekken"
+description: "Leer berichten plaatsen, bewerken en erop reageren in een groepschat op B1.church, inclusief aankondigingen en moderatiehulpmiddelen voor leiders."
 ---
 
 # Groep Gesprekken

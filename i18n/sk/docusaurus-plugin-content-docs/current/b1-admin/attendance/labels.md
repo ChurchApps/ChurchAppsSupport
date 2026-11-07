@@ -1,5 +1,6 @@
 ---
 title: "Návrhár štítkov pri prihlasovaní"
+description: "Prispôsobte šablóny menoviek a lístkov na vyzdvihnutie pri check-ine v B1 Admin: polia, umiestnenie a podmienky pre narodeniny alebo poznámky."
 ---
 
 # Návrhár štítkov pri prihlasovaní
@@ -13,8 +14,8 @@ Návrhár štítkov vám umožňuje vytvárať a prispôsobovať šablóny menov
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Nastavte [Dochádzku](setup) a nakonfigurujte aspoň jeden čas služby s povoleným prihlasovaním
-- Nastavte [Prihlasovanie](check-in), aby sa štítky tlačili
+- Nastavte [Dochádzku](./setup.md) a nakonfigurujte aspoň jeden čas služby s povoleným prihlasovaním
+- Nastavte [Prihlasovanie](./check-in.md), aby sa štítky tlačili
 - Potrebujete administrátorský prístup k sekcii Dochádzka
 
 </div>
@@ -85,6 +86,6 @@ Po úprave šablóny urobte skúšobnú tlač, aby ste pred ďalšou bohoslužbo
 
 ## Súvisiace články
 
-- [Nastavenie prihlasovania](setup) — konfigurácia služieb a skupín pre prihlasovanie
-- [Dokončenie prihlasovania](check-in) — postup prihlasovania pre rodiny
-- [Úvod do B1 Checkin](../../b1-checkin/getting-started/) — aplikácia kiosku Checkin
+- [Nastavenie prihlasovania](./setup.md) — konfigurácia služieb a skupín pre prihlasovanie
+- [Dokončenie prihlasovania](./check-in.md) — postup prihlasovania pre rodiny
+- [Úvod do B1 Checkin](../../b1-checkin/getting-started/index.md) — aplikácia kiosku Checkin

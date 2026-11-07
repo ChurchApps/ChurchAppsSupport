@@ -1,5 +1,6 @@
 ---
 title: "Statistici"
+description: "Aflați numărul de descărcări pe studiu, ce biserici vă folosesc resursele și unde se află, în statisticile Lessons.church, cu filtrare pe interval de date."
 ---
 
 # Statistici

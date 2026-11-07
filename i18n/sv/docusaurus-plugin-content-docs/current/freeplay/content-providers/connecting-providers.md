@@ -1,5 +1,6 @@
 ---
 title: "Conexión con proveedores"
+description: "Anslut FreePlay till en innehållsleverantör med QR-kod, e-postinloggning eller direktåtkomst med ett klick, och hantera eller koppla bort anslutningen under Inställningar."
 ---
 
 Eso es español, pero el usuario pidió sueco. Let me correct that: the output must be Swedish.
@@ -19,7 +20,7 @@ Innan du kan bläddra bland innehåll från en leverantör behöver du ansluta t
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Installera och starta FreePlay -- se [Komma igång](../getting-started/)
+- Installera och starta FreePlay -- se [Komma igång](../getting-started/index.md)
 - Ha din TV-fjärrkontroll redo för navigering
 - För leverantörer som kräver inloggning, ha dina kontouppgifter tillgängliga
 
@@ -86,7 +87,7 @@ När du väljer ett leverantörskort som visar märkningen **Ansluten** öppnas 
 
 - **Bläddra i biblioteket** -- Visa eller dölj denna leverantörs innehållsbibliotek i sidofältet
 - **Hämta dagens lektion automatiskt** -- Använd denna leverantör som källa för dagens lektion och ladda ned dess filer i förväg (visas endast för leverantörer som erbjuder en aktuell lektion)
-- **Använd för tillkännagivanden** -- Välj en mapp från denna leverantör som ska loopas under objektet **Tillkännagivanden** i sidofältet. Se [Tillkännagivanden](./announcements)
+- **Använd för tillkännagivanden** -- Välj en mapp från denna leverantör som ska loopas under objektet **Tillkännagivanden** i sidofältet. Se [Tillkännagivanden](./announcements.md)
 - **Sök efter uppdateringar av tillkännagivanden** -- Visas när en mapp för tillkännagivanden har valts; hämtar nya bilder och tar bort borttagna
 - **Koppla från** -- Tar bort anslutningen
 
@@ -106,6 +107,6 @@ Att koppla från tar bort den sparade autentiseringen från din enhet. Du måste
 
 ## Relaterade artiklar
 
-- **[Bläddra bland och ladda ned innehåll](./browsing-content)** - Navigera i mappar och spela upp innehåll efter anslutning
-- **[Tillkännagivanden](./announcements)** - Loopa en mapp med bilder från en ansluten leverantör
+- **[Bläddra bland och ladda ned innehåll](./browsing-content.md)** - Navigera i mappar och spela upp innehåll efter anslutning
+- **[Tillkännagivanden](./announcements.md)** - Loopa en mapp med bilder från en ansluten leverantör
 - **[Översikt över innehållsleverantörer](./index.md)** - Se alla tillgängliga leverantörer

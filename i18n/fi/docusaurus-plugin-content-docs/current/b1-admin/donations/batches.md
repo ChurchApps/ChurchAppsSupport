@@ -1,5 +1,6 @@
 ---
 title: "Lahjoituserät"
+description: "Ryhmitä lahjat B1 Adminissa lahjoituserille, sulje, tulosta tai vie jokainen erä, jotta yhteissummat täsmäävät pankkitalletuksiin."
 ---
 
 # Lahjoituserät

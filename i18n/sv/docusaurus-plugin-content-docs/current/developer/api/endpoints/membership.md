@@ -1,5 +1,6 @@
 ---
 title: "Slutpunkter för medlemskap"
+description: "Endpoint-referens för ChurchApps Membership API: personer, hushåll, grupper, roller, formulär och inställningar, med autentisering och behörighetsregler."
 ---
 
 # Slutpunkter för medlemskap
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Basväg: `/membership/users`
 
-Se [Autentisering och behörigheter](./authentication) för slutpunkter för inloggning, registrering och lösenordshantering.
+Se [Autentisering och behörigheter](./authentication.md) för slutpunkter för inloggning, registrering och lösenordshantering.
 
 | Metod | Sökväg | Autentisering | Behörighet | Beskrivning |
 |--------|------|------|------------|-------------|
@@ -342,6 +343,6 @@ Basväg: `/membership/clientErrors`
 
 ## Relaterade sidor
 
-- [Autentisering och behörigheter](./authentication) — Inloggningsflöde, JWT, OAuth, behörighetsmodell
-- [Slutpunkter för närvaro](./attendance) — Spårning av gudstjänster och besök
-- [Modulstruktur](../module-structure) — Mönster för kodorganisation
+- [Autentisering och behörigheter](./authentication.md) — Inloggningsflöde, JWT, OAuth, behörighetsmodell
+- [Slutpunkter för närvaro](./attendance.md) — Spårning av gudstjänster och besök
+- [Modulstruktur](../module-structure.md) — Mönster för kodorganisation

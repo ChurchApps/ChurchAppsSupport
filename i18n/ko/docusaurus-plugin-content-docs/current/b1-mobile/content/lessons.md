@@ -1,5 +1,7 @@
 ---
-title: "공과"
+title: "B1 Mobile의 레슨 화면(지원 종료)"
+sidebar_label: "공과"
+description: "레슨(지원 종료) 페이지: B1 Mobile 앱의 레슨 화면이 중단된 이유와 지금 커리큘럼을 찾을 수 있는 곳(FreePlay 또는 Lessons.church)을 안내합니다."
 ---
 
 # 공과
@@ -13,7 +15,7 @@ title: "공과"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [B1 모바일 설치](../getting-started/installing) 및 계정으로 [로그인](../getting-started/logging-in)
+- [B1 모바일 설치](../getting-started/installing.md) 및 계정으로 [로그인](../getting-started/logging-in.md)
 - 교회에서 Lessons.church를 통해 교육과정이 설정되어 있어야 합니다
 
 </div>
@@ -46,5 +48,5 @@ Lessons.church는 B1 모바일과 통합되는 별도의 ChurchApps 플랫폼입
 
 ## 관련 문서
 
-- [성경](./bible) -- 공과와 함께 말씀 읽기
-- [설교](./sermons) -- 학습을 보완하는 설교 시청
+- [성경](./bible.md) -- 공과와 함께 말씀 읽기
+- [설교](./sermons.md) -- 학습을 보완하는 설교 시청

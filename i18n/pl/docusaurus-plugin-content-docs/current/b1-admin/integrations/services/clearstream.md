@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Połącz Clearstream SMS z B1 Admin przez Zapier: wysyłaj SMS-y o nowych darowiznach lub zgłoszeniach i importuj odpowiedzi z powrotem jako osoby."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Włącz Zap. B1 rejestruje webhook darowizn po aktywacji; w **Settings → Devel
 
 ## Zobacz także
 
-- [Text In Church](./text-in-church) — alternatywna platforma SMS o podobnym sposobie konfiguracji
-- [Mobile Message](./mobile-message) — dla kościołów spoza USA
-- [Zapier (przegląd)](../zapier) — strona B1 wszystkich przepisów Zapier
+- [Text In Church](./text-in-church.md) — alternatywna platforma SMS o podobnym sposobie konfiguracji
+- [Mobile Message](./mobile-message.md) — dla kościołów spoza USA
+- [Zapier (przegląd)](../zapier.md) — strona B1 wszystkich przepisów Zapier
 - [Dokumentacja API Clearstream](https://api-docs.clearstream.io/) — dla własnych integracji wykraczających poza aplikację Zapier

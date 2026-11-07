@@ -1,12 +1,13 @@
 ---
 title: "Docker でのセルフホスティング"
+description: "Docker を使って、自分のマシンにプライベートな B1 Admin、メンバーポータル、API、MySQL のスタックをインストールし、b1 コマンドでアップグレードとバックアップを行います。"
 ---
 
 # Docker でのセルフホスティング
 
 <div class="article-intro">
 
-Docker が動作する任意のマシン（ホームサーバー、小規模な VPS、オンプレミスの機器など）で、B1 Admin、B1 の会員ポータルとウェブサイト、API、MySQL データベースを含む、ご自身専用のインスタンスを実行できます。インストールも、アップグレードも、コマンドを 1 つ実行するだけで完了します。アップグレードのたびに、事前にバックアップが自動で取られます。サーバーを自分で管理したくない場合は、マネージド版の代替手段である [Railway でのセルフホスティング](./railway-template) をご覧ください。
+Docker が動作する任意のマシン（ホームサーバー、小規模な VPS、オンプレミスの機器など）で、B1 Admin、B1 の会員ポータルとウェブサイト、API、MySQL データベースを含む、ご自身専用のインスタンスを実行できます。インストールも、アップグレードも、コマンドを 1 つ実行するだけで完了します。アップグレードのたびに、事前にバックアップが自動で取られます。サーバーを自分で管理したくない場合は、マネージド版の代替手段である [Railway でのセルフホスティング](./railway-template.md) をご覧ください。
 
 </div>
 
@@ -94,10 +95,10 @@ SUPPORT_EMAIL=noreply@church.example.org
 
 これらの機能は、Railway と完全に同じように動作します。同じ環境変数を使用しますが、Railway のダッシュボードではなく `.env` に設定します。
 
-- **[メール / SMTP](./railway-template#1-email-highly-recommended)**: Resend、Brevo、Gmail の設定手順を掲載しています
-- **[マルチサイト](./railway-template#3-multi-site-multiple-churches-on-one-instance)**: 1 つのインスタンスで教会の数に制限はありません。`/` では `DEFAULT_CHURCH_SLUG` のスラッグを持つ教会が表示されます（最初の教会のスラッグは `church` です）。追加のドメインはマシンに向け、B1Admin の **Settings → Domains** で割り当ててください
-- **[オンライン献金](./railway-template#4-online-giving-stripe--paypal)**: 教会ごとに管理画面で設定します
-- **[任意の外部連携](./railway-template#6-optional-feature-integrations)**: `OPENAI_API_KEY`、`YOUTUBE_API_KEY`、`PEXELS_KEY`、`VIMEO_TOKEN`、`API_BIBLE_KEY`、`GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[メール / SMTP](./railway-template.md#1-email-highly-recommended)**: Resend、Brevo、Gmail の設定手順を掲載しています
+- **[マルチサイト](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)**: 1 つのインスタンスで教会の数に制限はありません。`/` では `DEFAULT_CHURCH_SLUG` のスラッグを持つ教会が表示されます（最初の教会のスラッグは `church` です）。追加のドメインはマシンに向け、B1Admin の **Settings → Domains** で割り当ててください
+- **[オンライン献金](./railway-template.md#4-online-giving-stripe--paypal)**: 教会ごとに管理画面で設定します
+- **[任意の外部連携](./railway-template.md#6-optional-feature-integrations)**: `OPENAI_API_KEY`、`YOUTUBE_API_KEY`、`PEXELS_KEY`、`VIMEO_TOKEN`、`API_BIBLE_KEY`、`GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[プッシュ通知](#push-notifications)**: `WEB_PUSH_*` の項目です。インストーラーはこれらを空欄のままにするため、追加するまでプッシュ通知は無効です
 
 セルフホスト環境では、教会から送信される招待メールやその他のメールが自動的に有効になります。（マネージドサービスでは、送信元の評判を守るため、これらは手動審査を経てから有効になります。）
@@ -148,7 +149,7 @@ SUPPORT_EMAIL=noreply@church.example.org
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-大容量のメディアライブラリを扱う場合は、ファイルストレージを S3 に切り替えられます。`FILE_STORE=S3` と、[Railway ガイドのファイルストレージのセクション](./railway-template#5-file-storage) で説明している `AWS_*` 変数を設定してください。データベースのバックアップには S3 のオブジェクトが含まれないため、バケットのバージョニングを有効にしてください。
+大容量のメディアライブラリを扱う場合は、ファイルストレージを S3 に切り替えられます。`FILE_STORE=S3` と、[Railway ガイドのファイルストレージのセクション](./railway-template.md#5-file-storage) で説明している `AWS_*` 変数を設定してください。データベースのバックアップには S3 のオブジェクトが含まれないため、バケットのバージョニングを有効にしてください。
 
 ## 更新
 
@@ -187,6 +188,6 @@ docker compose -f docker-compose.yml -f docker-compose.build.yml up -d --build
 
 ## 関連記事
 
-- **[Railway でのセルフホスティング](./railway-template)**: マネージドホスティングの代替手段と、デプロイ後の共通設定ガイド
-- **[初期設定](../../getting-started/initial-setup)**: 教会の作成後に最初に行う手順
-- **[ローカル API のセットアップ](../api/local-setup)**: 開発用にスタックを直接実行する方法
+- **[Railway でのセルフホスティング](./railway-template.md)**: マネージドホスティングの代替手段と、デプロイ後の共通設定ガイド
+- **[初期設定](../../getting-started/initial-setup.md)**: 教会の作成後に最初に行う手順
+- **[ローカル API のセットアップ](../api/local-setup.md)**: 開発用にスタックを直接実行する方法

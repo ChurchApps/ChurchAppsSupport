@@ -1,5 +1,6 @@
 ---
 title: "모듈 구조"
+description: "API 모듈의 구조를 설명합니다. 컨트롤러, 리포지토리, 게이트웨이, 인증 검사, B1 개발 환경에서 코드를 실행하는 여섯 개의 Lambda 함수를 다룹니다."
 ---
 
 # 모듈 구조
@@ -13,8 +14,8 @@ title: "모듈 구조"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- API를 로컬로 설정합니다 -- [로컬 API 설정](./local-setup) 참조
-- 데이터 접근 계층을 이해하기 위해 [데이터베이스](./database) 아키텍처를 검토합니다
+- API를 로컬로 설정합니다 -- [로컬 API 설정](./local-setup.md) 참조
+- 데이터 접근 계층을 이해하기 위해 [데이터베이스](./database.md) 아키텍처를 검토합니다
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## 모듈 간 통신
 
-각 모듈은 자체 데이터베이스를 소유하며(([데이터베이스](./database) 참조), 모듈이 다른 모듈의 테이블을 직접 쿼리하는 일은 없습니다. 한 모듈이 다른 모듈이 소유한 데이터를 필요로 할 때 -- 예를 들어 doing 모듈이 membership에서 사람을 조회할 때 -- 는 소유 모듈의 `src/shared/modules/`에 있는 **게이트웨이**를 거칩니다.
+각 모듈은 자체 데이터베이스를 소유하며(([데이터베이스](./database.md) 참조), 모듈이 다른 모듈의 테이블을 직접 쿼리하는 일은 없습니다. 한 모듈이 다른 모듈이 소유한 데이터를 필요로 할 때 -- 예를 들어 doing 모듈이 membership에서 사람을 조회할 때 -- 는 소유 모듈의 `src/shared/modules/`에 있는 **게이트웨이**를 거칩니다.
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ AWS에 배포되면 API는 6개의 Lambda 함수로 실행됩니다.
 
 ## 관련 문서
 
-- **[데이터베이스](./database)** -- 연결 문자열, 스키마 스크립트, 데이터 접근 패턴
-- **[로컬 API 설정](./local-setup)** -- 전체 단계별 설정 가이드
-- **[ApiHelper](../shared-libraries/api-helper)** -- `CustomBaseController`와 인증 미들웨어를 제공하는 공유 라이브러리
+- **[데이터베이스](./database.md)** -- 연결 문자열, 스키마 스크립트, 데이터 접근 패턴
+- **[로컬 API 설정](./local-setup.md)** -- 전체 단계별 설정 가이드
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- `CustomBaseController`와 인증 미들웨어를 제공하는 공유 라이브러리

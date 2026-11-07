@@ -1,5 +1,7 @@
 ---
-title: "Başlarken"
+title: "B1.church Üye Portalı ile Başlarken"
+sidebar_label: "Başlarken"
+description: "Kilisenizin B1.church sitesini bulun, üye hesabınızı oluşturun ve gruplardan bağışlara, check-in'den planlara kadar portalın sunduklarını görün."
 ---
 
 # B1.church ile Başlarken

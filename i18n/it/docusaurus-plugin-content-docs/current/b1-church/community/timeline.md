@@ -1,5 +1,6 @@
 ---
 title: "Cronologia"
+description: "La scheda Timeline del portale membri B1.church è stata dismessa. Trova chat, eventi, attività e avvisi nella pagina Me, nell'icona campanella e in ogni gruppo."
 ---
 
 # Cronologia
@@ -16,13 +17,13 @@ La scheda autonoma **Cronologia** è stata dismessa. Il portale membri ora si ap
 | --- | --- |
 | Conversazioni e annunci di gruppo | La chat all'interno di ogni [gruppo](../groups/conversations.md) (**Apri chat**) |
 | Eventi in programma per te e per i tuoi gruppi | La pagina **Me** (`/mobile/me`) e la sezione **Prossimo evento** di ogni gruppo |
-| Attività e incarichi di servizio | La pagina **Me** e [Piani](../plans/) |
+| Attività e incarichi di servizio | La pagina **Me** e [Piani](../plans/index.md) |
 | Nuove predicazioni | La sezione **Ultima predicazione** nella Home e la scheda [Predicazioni](../content/sermons.md) |
 | Tutto ciò che ti ha inviato un avviso | L'icona **campanella** nella barra superiore dell'app, oppure `/mobile/notifications` |
 
 ## La pagina Me
 
-[La pagina Me](../getting-started/me-page) è la sostituta più vicina al vecchio feed. Elenca ciò che ti attende (incarichi di servizio, iscrizioni agli eventi ed eventi di gruppo), insieme ai moduli che hai inviato, alla tua cronologia delle presenze e alle notifiche più recenti, e ti collega direttamente al tuo profilo, alle preferenze di notifica, ai messaggi, alle offerte e alle iscrizioni.
+[La pagina Me](../getting-started/me-page.md) è la sostituta più vicina al vecchio feed. Elenca ciò che ti attende (incarichi di servizio, iscrizioni agli eventi ed eventi di gruppo), insieme ai moduli che hai inviato, alla tua cronologia delle presenze e alle notifiche più recenti, e ti collega direttamente al tuo profilo, alle preferenze di notifica, ai messaggi, alle offerte e alle iscrizioni.
 
 ## Notifiche
 

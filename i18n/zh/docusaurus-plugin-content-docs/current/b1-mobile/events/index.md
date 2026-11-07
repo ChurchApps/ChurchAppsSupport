@@ -1,5 +1,7 @@
 ---
-title: "活动"
+title: "B1 Mobile 中的教会活动与报名"
+sidebar_label: "活动"
+description: "在 B1 Mobile 中浏览即将举行的教会活动，并为自己和家人报名开放报名的活动。"
 ---
 
 # 活动
@@ -23,10 +25,10 @@ B1 Mobile 中的活动功能让您可以浏览即将举行的教会活动，并�
 
 ## 您需要什么
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in)
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md)
 - 您的教会必须为该活动启用活动注册
 
 ## 了解更多
 
-- [活动注册](./registering) -- 在移动设备上注册活动的分步指南
-- [自助签到](../checkin/self-checkin) -- 当您到达活动时签到
+- [活动注册](./registering.md) -- 在移动设备上注册活动的分步指南
+- [自助签到](../checkin/self-checkin.md) -- 当您到达活动时签到

@@ -1,5 +1,7 @@
 ---
-title: "Komma igång"
+title: "Komma igång med Lessons.church"
+sidebar_label: "Komma igång"
+description: "Skapa ditt gratis Lessons.church-konto, koppla kyrkan, ställ in klassrum och schemalägg dina första lektioner. Ingen prenumeration eller provperiod krävs."
 ---
 
 # Komma igång

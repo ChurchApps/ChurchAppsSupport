@@ -1,5 +1,6 @@
 ---
 title: "Registro de Salida y Seguridad Infantil"
+description: "Registra la salida de los niños en una estación de B1 Checkin atendida, con códigos de seguridad, personas de recogida verificadas, avisos a padres, reimpresión de etiquetas y difusiones de emergencia."
 ---
 
 # Registro de Salida y Seguridad Infantil
@@ -14,7 +15,7 @@ El registro de salida cierra el círculo del registro de entrada de niños: un p
 <h4>Antes de Comenzar</h4>
 
 - El registro de salida está disponible en estaciones configuradas en modo **manned** en la configuración de administración del quiosco
-- Los niños deben haber sido [registrados](./completing-checkin) con una etiqueta de recogida impresa que lleve el código de seguridad
+- Los niños deben haber sido [registrados](./completing-checkin.md) con una etiqueta de recogida impresa que lleve el código de seguridad
 - Los avisos y las transmisiones de emergencia requieren que tu iglesia tenga un proveedor de mensajes de texto conectado en B1 Admin
 
 </div>
@@ -39,7 +40,7 @@ Si un nombre escrito coincide con alguien marcado **Not Authorized** para ese ho
 Una vez que el recolector se confirma, toca el registro de salida. El nombre de la persona de recogida se almacena con el registro de asistencia.
 
 :::info
-Las personas de recogida confiables y no autorizadas son administradas por el personal de la iglesia en la página de cada persona en B1 Admin -- consulta [Seguridad de Registro de Entrada](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Las personas de recogida confiables y no autorizadas son administradas por el personal de la iglesia en la página de cada persona en B1 Admin -- consulta [Seguridad de Registro de Entrada](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Aviso de Padres
@@ -65,6 +66,6 @@ La transmisión va a cada hogar registrado para el servicio seleccionado. Úsalo
 
 ## Artículos Relacionados
 
-- [Completar el Registro de Entrada](./completing-checkin) -- de dónde provienen los códigos de seguridad y las etiquetas de recogida
-- [Seguridad de Registro de Entrada](../../b1-admin/attendance/checkin-safety) -- configuración de capacidades, proporciones, personas de recogida y requisito de proveedor de mensajes de texto
-- [Configuración de Impresora](../getting-started/printer-setup) -- configuración de impresora de etiquetas
+- [Completar el Registro de Entrada](./completing-checkin.md) -- de dónde provienen los códigos de seguridad y las etiquetas de recogida
+- [Seguridad de Registro de Entrada](../../b1-admin/attendance/checkin-safety.md) -- configuración de capacidades, proporciones, personas de recogida y requisito de proveedor de mensajes de texto
+- [Configuración de Impresora](../getting-started/printer-setup.md) -- configuración de impresora de etiquetas

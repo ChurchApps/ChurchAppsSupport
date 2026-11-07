@@ -1,5 +1,6 @@
 ---
 title: "Hantera lektioner"
+description: "Bygg lektionens struktur i Lessons.church-admin: varianter, sektioner, rollbaserade åtgärder (Säg, Gör, Anteckna, Spela) samt föräldrakopia och resurser."
 ---
 
 # Hantera lektioner

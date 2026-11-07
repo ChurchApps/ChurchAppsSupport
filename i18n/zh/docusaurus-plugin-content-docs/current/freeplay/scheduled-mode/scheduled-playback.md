@@ -1,5 +1,6 @@
 ---
 title: "电视上的定时播放"
+description: "已配对的 FreePlay 电视会预先下载未来一周的内容，并按时钟自动播放，即使离线也可以。内容包括信息面板、遥控器按键和固定播放列表。"
 ---
 
 # 电视上的定时播放
@@ -13,8 +14,8 @@ title: "电视上的定时播放"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [将电视与日历配对](./pairing-a-screen)
-- [在日历中安排内容](./scheduling-the-calendar)，或为该屏幕所在的组设置默认循环播放
+- [将电视与日历配对](./pairing-a-screen.md)
+- [在日历中安排内容](./scheduling-the-calendar.md)，或为该屏幕所在的组设置默认循环播放
 
 </div>
 
@@ -40,7 +41,7 @@ title: "电视上的定时播放"
 
 - **Pin This Playlist**（固定此播放列表）—— 让当前内容循环播放，并忽略日历。选择 **Unpin Playlist**（取消固定播放列表）即可恢复按日程播放
 - **Browse Content**（浏览内容）—— 离开定时播放器，去浏览已连接的内容服务商
-- **Settings**（设置）—— 打开 FreePlay 设置，你可以在那里[取消配对或与其他日历配对](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Settings**（设置）—— 打开 FreePlay 设置，你可以在那里[取消配对或与其他日历配对](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 浏览内容之后，若要返回日程，可在 **Content Providers**（内容服务商）屏幕上按遥控器的**返回**键；或打开**设置**，选择**配对到日历**，然后选择**返回日程**。已配对的电视在 FreePlay 回到前台时也会返回定时播放器，而且每次启动都会直接进入定时播放器。
@@ -77,6 +78,6 @@ title: "电视上的定时播放"
 
 ## 相关文章
 
-- **[安排日历](./scheduling-the-calendar)** —— 设置播放内容，以及内容提前结束时的处理方式
-- **[管理屏幕与屏幕组](./managing-screens)** —— 在 FreePlay Admin 中查看每个屏幕的下载情况
-- **[播放内容](../content-providers/playing-content)** —— 你自己手动播放内容时的播放器控制
+- **[安排日历](./scheduling-the-calendar.md)** —— 设置播放内容，以及内容提前结束时的处理方式
+- **[管理屏幕与屏幕组](./managing-screens.md)** —— 在 FreePlay Admin 中查看每个屏幕的下载情况
+- **[播放内容](../content-providers/playing-content.md)** —— 你自己手动播放内容时的播放器控制

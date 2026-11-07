@@ -1,5 +1,6 @@
 ---
 title: "Oznámení"
+description: "Přehrávání složky snímků na FreePlay TV jako smyčky pro oznámení v hale nebo před hodinou: vyberte složku poskytovatele a po skončení ji vypněte."
 ---
 
 # Oznámení
@@ -13,7 +14,7 @@ FreePlay dokáže v cyklu přehrávat složku snímků s oznámeními na vaší 
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Připojte poskytovatele obsahu](./connecting-providers), který obsahuje vaše snímky s oznámeními, například Dropbox nebo OneDrive
+- [Připojte poskytovatele obsahu](./connecting-providers.md), který obsahuje vaše snímky s oznámeními, například Dropbox nebo OneDrive
 - Umístěte obrázky nebo videa, která chcete přehrávat v cyklu, do jedné složky u tohoto poskytovatele
 
 </div>
@@ -37,7 +38,7 @@ Jakmile jsou snímky staženy, objeví se položka **Oznámení** blízko horní
 - Po posledním snímku cyklus začne znovu od prvního
 - Pokud složka obsahuje jediné video, opakuje se na místě
 
-Cyklus se přehrává ze souborů uložených v zařízení, takže běží i bez připojení k internetu. Můžete použít stejné ovládání dálkovým ovladačem jako u jakéhokoli jiného obsahu – viz [Přehrávání obsahu](./playing-content).
+Cyklus se přehrává ze souborů uložených v zařízení, takže běží i bez připojení k internetu. Můžete použít stejné ovládání dálkovým ovladačem jako u jakéhokoli jiného obsahu – viz [Přehrávání obsahu](./playing-content.md).
 
 ## Aktualizace snímků
 
@@ -61,6 +62,6 @@ Odpojení poskytovatele také vypne oznámení, která od něj pocházela.
 
 ## Související články
 
-- **[Připojení k poskytovatelům](./connecting-providers)** – Připojte poskytovatele, který obsahuje vaše snímky
-- **[Procházení a stahování obsahu](./browsing-content)** – Procházejte složky poskytovatele a přehrávejte obsah na vyžádání
-- **[Přehrávání obsahu](./playing-content)** – Ovládání přehrávače pomocí dálkového ovladače televize
+- **[Připojení k poskytovatelům](./connecting-providers.md)** – Připojte poskytovatele, který obsahuje vaše snímky
+- **[Procházení a stahování obsahu](./browsing-content.md)** – Procházejte složky poskytovatele a přehrávejte obsah na vyžádání
+- **[Přehrávání obsahu](./playing-content.md)** – Ovládání přehrávače pomocí dálkového ovladače televize

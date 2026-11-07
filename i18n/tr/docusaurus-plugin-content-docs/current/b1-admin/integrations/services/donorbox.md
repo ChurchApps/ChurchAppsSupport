@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Donorbox'ı Zapier ile B1 Admin'e bağlayın; çevrimiçi bağışlar otomatik olarak bağış kayıtları ve bağışçı profilleri oluştursun, manuel dışa aktarım gerekmesin."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Donorbox'ın *New or Updated Donation* tetikleyicisi, düzenlemelerde de tetikle
 
 ## Ayrıca Bakınız
 
-- [Zapier (genel bakış)](../zapier) — her Zapier tarifinin B1 tarafı
-- [Subsplash](./subsplash) — Zapier uygulaması olan başka bir bağış platformu
-- [Mailchimp](./mailchimp) — "yeni bağış" olayını bir e-posta etiketine bağlayın
+- [Zapier (genel bakış)](../zapier.md) — her Zapier tarifinin B1 tarafı
+- [Subsplash](./subsplash.md) — Zapier uygulaması olan başka bir bağış platformu
+- [Mailchimp](./mailchimp.md) — "yeni bağış" olayını bir e-posta etiketine bağlayın

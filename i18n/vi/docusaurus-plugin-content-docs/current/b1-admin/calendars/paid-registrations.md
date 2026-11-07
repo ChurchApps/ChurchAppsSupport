@@ -1,5 +1,6 @@
 ---
 title: "Đăng ký có phí"
+description: "Thiết lập đăng ký sự kiện có phí trong B1 Admin: loại người tham dự có giá, tiện ích bổ sung, mã giảm giá, danh sách chờ và thu thanh toán qua nhà cung cấp dịch vụ quyên góp."
 ---
 
 # Đăng ký có phí
@@ -17,7 +18,7 @@ title: "Đăng ký có phí"
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Bật đăng ký cho sự kiện trước — xem [Tạo lịch](creating-calendars#enabling-event-registration)
+- Bật đăng ký cho sự kiện trước — xem [Tạo lịch](./creating-calendars.md#enabling-event-registration)
 - Để thu thanh toán trực tuyến, nhà thờ của bạn cần [thiết lập dâng hiến trực tuyến](../donations/online-giving-setup.md) (Stripe, PayPal, hoặc Kingdom Funding). Sự kiện miễn phí không cần thiết lập dâng hiến. Không có dâng hiến trực tuyến, đăng ký có phí vẫn hoạt động, nhưng người tham dự sẽ trả tiền trực tiếp cho nhà thờ — xem [Nhà thờ không có dâng hiến trực tuyến](#churches-without-online-giving).
 
 </div>
@@ -66,7 +67,7 @@ Mỗi mã hiển thị số **Lượt dùng** để bạn biết mã đã đư�
 Bật **Bật danh sách chờ** trong thẻ Cài đặt đăng ký. Khi sự kiện đạt đến sức chứa:
 
 - Người đăng ký mới được cung cấp một chỗ trong danh sách chờ thay vì bị từ chối. Họ hoàn thành cùng quy trình đăng ký (bỏ qua thanh toán khi đang ở danh sách chờ).
-- Khi có người hủy, đăng ký trong danh sách chờ lâu nhất sẽ được **tự động đưa vào** và nhận email thông báo đã có chỗ trống. Nếu họ còn nợ số tiền, email sẽ liên kết họ đến [Đăng ký của tôi](../../b1-church/events/my-registrations) trên trang B1 của nhà thờ bạn, nơi họ có thể hoàn tất thanh toán.
+- Khi có người hủy, đăng ký trong danh sách chờ lâu nhất sẽ được **tự động đưa vào** và nhận email thông báo đã có chỗ trống. Nếu họ còn nợ số tiền, email sẽ liên kết họ đến [Đăng ký của tôi](../../b1-church/events/my-registrations.md) trên trang B1 của nhà thờ bạn, nơi họ có thể hoàn tất thanh toán.
 - Bạn có thể đưa ai đó vào thủ công bất cứ lúc nào bằng hành động **Đưa vào** trên hàng trong danh sách chờ — hữu ích sau khi tăng sức chứa sự kiện.
 
 :::info
@@ -79,7 +80,7 @@ Mở một sự kiện từ trang Đăng ký để xem mọi đăng ký. Tiêu �
 
 - Nhấp biểu tượng chi tiết của một hàng để mở hộp thoại **Chi tiết đăng ký** — thành viên, lựa chọn, đã trả/số dư, và bảng **Thanh toán** liệt kê mọi khoản phí (số tiền, phương thức, ngày).
 - **Xuất CSV** tải xuống toàn bộ danh sách với các cột cho thành viên, loại người tham dự, lựa chọn, đã trả/tổng/số dư, trạng thái, và một cột cho mỗi câu hỏi đăng ký.
-- **Thêm người tham dự** ghi nhận đăng ký ngoại tuyến hoặc qua điện thoại cho bất kỳ ai trong nhà thờ của bạn. Chọn người đó và, với sự kiện có phí, loại người tham dự của họ. Thẻ của họ sẽ không bị tính phí: một đăng ký có phí được lưu ở trạng thái **chờ xử lý** với toàn bộ số tiền là số dư còn nợ. Nếu nhà thờ của bạn có dâng hiến trực tuyến, người đó có thể thanh toán từ [Đăng ký của tôi](../../b1-church/events/my-registrations); nếu không, hãy thu tiền trực tiếp. Bạn cần quyền Chỉnh sửa Đăng ký để thêm người tham dự.
+- **Thêm người tham dự** ghi nhận đăng ký ngoại tuyến hoặc qua điện thoại cho bất kỳ ai trong nhà thờ của bạn. Chọn người đó và, với sự kiện có phí, loại người tham dự của họ. Thẻ của họ sẽ không bị tính phí: một đăng ký có phí được lưu ở trạng thái **chờ xử lý** với toàn bộ số tiền là số dư còn nợ. Nếu nhà thờ của bạn có dâng hiến trực tuyến, người đó có thể thanh toán từ [Đăng ký của tôi](../../b1-church/events/my-registrations.md); nếu không, hãy thu tiền trực tiếp. Bạn cần quyền Chỉnh sửa Đăng ký để thêm người tham dự.
 
 :::info
 Việc hoàn tiền không được xử lý trong B1. Nếu bạn cần hoàn tiền cho một đăng ký có phí đã hủy, hãy thực hiện hoàn tiền từ bảng điều khiển của nhà cung cấp dâng hiến (ví dụ: Stripe).
@@ -94,12 +95,12 @@ Thanh toán được thực hiện qua cùng cổng dâng hiến mà nhà thờ 
 Nếu nhà thờ của bạn chưa thiết lập nhà cung cấp dâng hiến, các sự kiện có phí vẫn có thể nhận đăng ký. Bước thanh toán sẽ thông báo cho người đăng ký rằng thanh toán trực tuyến không khả dụng và họ có thể thanh toán trực tiếp cho nhà thờ, đồng thời nút **Đăng ký và thanh toán sau** sẽ lưu đăng ký. Đăng ký được lưu ở trạng thái **chờ xử lý** với toàn bộ số tiền là số dư còn nợ, và nó xuất hiện trong danh sách với cảnh báo số dư. Hãy thu tiền theo cách nhà thờ bạn thường làm.
 
 :::info
-B1 không có cách nào để đánh dấu một khoản thanh toán ngoại tuyến là đã nhận. Số dư còn nợ vẫn hiển thị trong danh sách và trên thẻ [Đăng ký của tôi](../../b1-church/events/my-registrations) của người đăng ký sau khi bạn thu tiền, vì vậy hãy giữ bản ghi riêng về những ai đã thanh toán.
+B1 không có cách nào để đánh dấu một khoản thanh toán ngoại tuyến là đã nhận. Số dư còn nợ vẫn hiển thị trong danh sách và trên thẻ [Đăng ký của tôi](../../b1-church/events/my-registrations.md) của người đăng ký sau khi bạn thu tiền, vì vậy hãy giữ bản ghi riêng về những ai đã thanh toán.
 :::
 
 ## Bài viết liên quan
 
-- [Tạo lịch](creating-calendars#enabling-event-registration) — bật đăng ký và các cài đặt cơ bản
+- [Tạo lịch](./creating-calendars.md#enabling-event-registration) — bật đăng ký và các cài đặt cơ bản
 - [Thiết lập dâng hiến trực tuyến](../donations/online-giving-setup.md) — cấu hình cổng thanh toán được dùng khi thanh toán
-- [Đăng ký sự kiện](../../b1-church/events/registering) — những gì thành viên thấy khi đăng ký
-- [Đăng ký của tôi](../../b1-church/events/my-registrations) — cách thành viên thanh toán số dư và chỉnh sửa đăng ký
+- [Đăng ký sự kiện](../../b1-church/events/registering.md) — những gì thành viên thấy khi đăng ký
+- [Đăng ký của tôi](../../b1-church/events/my-registrations.md) — cách thành viên thanh toán số dư và chỉnh sửa đăng ký

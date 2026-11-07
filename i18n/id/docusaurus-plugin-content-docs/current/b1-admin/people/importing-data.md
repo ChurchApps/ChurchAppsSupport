@@ -1,5 +1,6 @@
 ---
 title: "Mengimpor Data"
+description: "Bawa data orang, grup, kehadiran, dan pemberian yang sudah ada ke B1 Admin dengan alat B1 Transfer, atau ekspor cadangan data kapan saja."
 ---
 
 # Mengimpor Data

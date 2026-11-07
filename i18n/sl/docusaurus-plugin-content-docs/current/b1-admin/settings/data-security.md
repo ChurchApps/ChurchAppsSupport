@@ -1,5 +1,6 @@
 ---
 title: "Varnost podatkov"
+description: "Spoznajte, kako ChurchApps varuje podatke vaše cerkve v B1 Admin, od zgoščenih gesel in HTTPS do ločenih baz podatkov in orodij za podatke po GDPR."
 ---
 
 # Varnost podatkov

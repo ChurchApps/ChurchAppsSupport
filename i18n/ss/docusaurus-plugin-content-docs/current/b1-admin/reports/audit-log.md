@@ -1,5 +1,6 @@
 ---
 title: "Irekhodi Lekuhlolwa"
+description: "Hlola i-audit log ku-B1 Admin ukubona labangene ngemvume, labahlele tirekhodi tabantfu, nalabashintse timvume, bese ukhipha tinkhondvo letihlungiwe ku-CSV."
 ---
 
 # Irekhodi Lekuhlolwa
@@ -78,6 +79,6 @@ Buyeketa irekhodi lekuhlolwa njalonjalo, ikakhulu ngemva kwekwemukela emalunga l
 
 ## Tihloko Letihlobene
 
-- [Tindzima Netimvumo](../settings/roles-permissions) -- Phatsa kutsi ngubani lonekufinyelela kutini
-- [Kuphepha Kwemininingwane](../settings/data-security) -- Condza kutsi mininingwane yakho ivikelwa njani
+- [Tindzima Netimvumo](../settings/roles-permissions.md) -- Phatsa kutsi ngubani lonekufinyelela kutini
+- [Kuphepha Kwemininingwane](../settings/data-security.md) -- Condza kutsi mininingwane yakho ivikelwa njani
 - [Kubuka Konkhe Imibiko](./index.md) -- Bona yonkhe imibiko lekhona

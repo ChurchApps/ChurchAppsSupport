@@ -1,5 +1,6 @@
 ---
 title: "Anleitung: Ihre Predigtbibliothek und Live-Stream aufbauen"
+description: "Importieren Sie Ihre YouTube- oder Vimeo-Predigten, ordnen Sie sie in Playlists und richten Sie in B1 Admin wiederkehrende Live-Streams mit Chat für Ihre Gemeinde-Website ein."
 ---
 
 # Ihre Predigtbibliothek und Live-Stream aufbauen

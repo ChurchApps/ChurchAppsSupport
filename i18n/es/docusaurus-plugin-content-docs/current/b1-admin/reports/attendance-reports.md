@@ -1,5 +1,6 @@
 ---
 title: "Informes de asistencia"
+description: "Consulta los tres informes de asistencia de B1 Admin (Tendencia de asistencia, Asistencia de grupos y Asistencia diaria de grupos), qué muestra cada uno, y cómo ejecutarlos y exportarlos."
 ---
 
 # Informes de asistencia

@@ -1,5 +1,6 @@
 ---
 title: "Fióktörlési kérelmek áttekintése"
+description: "Fióktörlési kérelmek jóváhagyása vagy elutasítása a B1 Admin-ban a Directory Approval Group csoporton át, 30 napos GDPR-határidővel."
 ---
 
 # Fióktörlési kérelmek áttekintése

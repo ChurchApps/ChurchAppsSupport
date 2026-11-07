@@ -1,5 +1,6 @@
 ---
 title: "Zobrazení lekcí"
+description: "Otevření lekce na Lessons.church krok za krokem: čtení sekcí a akcí podle rolí, hledání stažení a přepínání věkových skupin míst před hodinou."
 ---
 
 # Zobrazení lekcí

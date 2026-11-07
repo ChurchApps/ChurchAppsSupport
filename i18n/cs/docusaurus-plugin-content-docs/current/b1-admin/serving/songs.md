@@ -1,5 +1,6 @@
 ---
 title: "Písně"
+description: "Spravujte knihovnu písní v B1 Admin: vyhledávejte a přidávejte písně, upravujte údaje, připojujte texty ChordPro a aranžmá a nahrávky ke zkoušce."
 ---
 
 # Písně

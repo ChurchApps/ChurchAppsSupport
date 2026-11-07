@@ -1,5 +1,6 @@
 ---
 title: "Crearea contului tău"
+description: "Înregistrați un cont ChurchApps pe B1.church, verificați e-mailul și creați sau alăturați-vă unei biserici, ca să începeți configurarea B1 Admin."
 ---
 
 # Crearea contului tău

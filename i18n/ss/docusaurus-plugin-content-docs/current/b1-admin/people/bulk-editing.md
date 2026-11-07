@@ -1,5 +1,6 @@
 ---
 title: "Kuhlela Bantfu Ngebuningi"
+description: "Buyekeza simo sobulungu, simo semshado, ubulili, kukhetsa kwekuphuma, emasimu e-Yes/No, noma bulungu beqembu kubantfu labanyenti ngasikhatsi sinye ku-B1 Admin."
 ---
 
 # Kuhlela Bantfu Ngebuningi

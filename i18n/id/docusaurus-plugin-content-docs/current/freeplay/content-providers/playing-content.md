@@ -1,5 +1,6 @@
 ---
 title: "Memutar Konten"
+description: "Kendalikan FreePlay dengan remote TV: jeda, lewati slide dan video, lompat ke pesan tertentu, dan keluar dari pemutar."
 ---
 
 # Memutar Konten
@@ -13,13 +14,13 @@ Pemutar FreePlay mengisi seluruh layar dan dirancang untuk remote TV. Pemutar in
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- Pilih sesuatu untuk diputar. Lihat [Menjelajah dan Mengunduh Konten](./browsing-content), [Mode Rencana](../plan-mode/), atau [Pengumuman](./announcements)
+- Pilih sesuatu untuk diputar. Lihat [Menjelajah dan Mengunduh Konten](./browsing-content.md), [Mode Rencana](../plan-mode/index.md), atau [Pengumuman](./announcements.md)
 - Tekan **Start** untuk membuka pemutar
 
 </div>
 
 :::info
-Layar yang dipasangkan dengan kalender menggunakan pemutar terjadwal terpisah dengan kontrol yang sedikit berbeda. Lihat [Pemutaran Terjadwal di TV](../scheduled-mode/scheduled-playback).
+Layar yang dipasangkan dengan kalender menggunakan pemutar terjadwal terpisah dengan kontrol yang sedikit berbeda. Lihat [Pemutaran Terjadwal di TV](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Kontrol Pemutar
@@ -57,7 +58,7 @@ Tekan **Up** selama pemutaran untuk membuka **Pilih Pesan**. Layar ini menampilk
 Tekan **Down** atau **Back** pada remote Anda untuk keluar dari pemutar. Tujuan berikutnya bergantung pada apa yang sedang Anda putar:
 
 - **Konten penyedia** - Kembali ke penjelajah konten
-- **Sebuah rencana** - Kembali ke layar unduhan rencana. Lihat [Mode Rencana](../plan-mode/)
+- **Sebuah rencana** - Kembali ke layar unduhan rencana. Lihat [Mode Rencana](../plan-mode/index.md)
 - **Sebuah unduhan** - Kembali ke layar **Unduhan**
 
 :::info
@@ -66,5 +67,5 @@ Layar tetap menyala selama pemutar terbuka, sehingga TV tidak akan masuk mode ti
 
 ## Artikel Terkait
 
-- **[Menjelajah dan Mengunduh Konten](./browsing-content)** - Temukan konten dan unduh untuk diputar secara offline
-- **[Pemutaran Terjadwal di TV](../scheduled-mode/scheduled-playback)** - Kontrol remote untuk layar yang mengikuti kalender
+- **[Menjelajah dan Mengunduh Konten](./browsing-content.md)** - Temukan konten dan unduh untuk diputar secara offline
+- **[Pemutaran Terjadwal di TV](../scheduled-mode/scheduled-playback.md)** - Kontrol remote untuk layar yang mengikuti kalender

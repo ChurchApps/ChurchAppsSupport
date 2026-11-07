@@ -1,5 +1,6 @@
 ---
 title: "Menggunakan Editor Halaman"
+description: "Atur editor halaman di B1 Admin: tambahkan bagian dan elemen, beri gaya, pratinjau di seluler, dan terbitkan draf. Termasuk undo dan riwayat versi."
 ---
 
 # Menggunakan Editor Halaman
@@ -17,8 +18,8 @@ Editor halaman B1 adalah pembuat visual dengan fitur seret-dan-lepas yang memung
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Selesaikan [Pengaturan Awal](initial-setup) untuk mengonfigurasi website Anda
-- Buat setidaknya satu halaman di [Mengelola Halaman](managing-pages)
+- Selesaikan [Pengaturan Awal](./initial-setup.md) untuk mengonfigurasi website Anda
+- Buat setidaknya satu halaman di [Mengelola Halaman](./managing-pages.md)
 - Anda memerlukan izin **content.edit** untuk mengakses editor
 
 </div>
@@ -31,7 +32,7 @@ Editor halaman B1 adalah pembuat visual dengan fitur seret-dan-lepas yang memung
 Editor terbuka dalam mode layar penuh. Panel kiri menampilkan struktur halaman dan elemen konten yang tersedia; area tengah menampilkan pratinjau langsung halaman Anda.
 
 :::info
-Editor selalu ditampilkan dalam mode terang, terlepas dari pengaturan tema B1 Admin Anda, dan menggunakan font heading serta font isi yang Anda pilih di [Tampilan](appearance). Ini memastikan pratinjau akurat sesuai dengan tampilan halaman Anda bagi pengunjung website.
+Editor selalu ditampilkan dalam mode terang, terlepas dari pengaturan tema B1 Admin Anda, dan menggunakan font heading serta font isi yang Anda pilih di [Tampilan](./appearance.md). Ini memastikan pratinjau akurat sesuai dengan tampilan halaman Anda bagi pengunjung website.
 :::
 
 ## Struktur Halaman: Bagian dan Elemen
@@ -61,7 +62,7 @@ Sudah membangun sebuah bagian tetapi ingin struktur yang berbeda? Gunakan pengga
    - **Image** -- Unggah atau tautkan ke foto
    - **Button** -- Tautan ajakan bertindak yang dapat diklik
    - **Card** -- Gambar dengan judul dan deskripsi
-   - **Form** -- Sematkan [formulir](../forms/creating-forms) langsung di halaman. Jika formulir memiliki [foto header](../forms/creating-forms.md#adding-a-header-photo), foto tersebut akan muncul di atas pertanyaan
+   - **Form** -- Sematkan [formulir](../forms/creating-forms.md) langsung di halaman. Jika formulir memiliki [foto header](../forms/creating-forms.md#adding-a-header-photo), foto tersebut akan muncul di atas pertanyaan
    - **Calendar** -- Menampilkan kalender acara
    - **FAQ** -- Blok pertanyaan dan jawaban gaya akordion
    - **Video** -- Sematkan video berdasarkan URL
@@ -79,7 +80,7 @@ Sudah membangun sebuah bagian tetapi ingin struktur yang berbeda? Gunakan pengga
    - **Map** -- Peta tersemat yang berpusat pada alamat gereja Anda
    - **Table** -- Kisi sederhana berisi baris dan kolom untuk konten tabular
    - **Text with Photo** -- Teks dan gambar berdampingan
-   - **Logo** -- Logo gereja Anda, diambil dari [Tampilan](appearance)
+   - **Logo** -- Logo gereja Anda, diambil dari [Tampilan](./appearance.md)
    - **Live Stream** -- Pemutar siaran langsung Anda, tersemat langsung di halaman
    - **Podcast** -- Daftar episode yang diambil dari URL feed RSS podcast eksternal yang Anda berikan, dengan pengaturan untuk jumlah episode yang ditampilkan dan apakah tanggal serta deskripsi ditampilkan. Setiap episode di situs langsung memiliki pemutar audio dan tautan **Download** yang menyimpan file audio episode dengan judul episode. Fitur ini untuk menampilkan feed podcast apa pun di situs Anda; untuk mempublikasikan khotbah Anda sendiri sebagai podcast, lihat [Mengelola Khotbah](../sermons/managing-sermons.md#your-podcast-feed) sebagai gantinya
    - **Donation** -- Tombol pemberian atau formulir donasi yang disematkan
@@ -100,7 +101,7 @@ Jika Anda hanya menempelkan alamat web (seperti tautan gambar) ke kotak JavaScri
 
 Elemen **Calendar** menampilkan acara dari salah satu kalender Anda:
 
-1. Di bawah **Select**, pilih **Group Calendar** (acara satu grup -- daftar menampilkan grup yang Anda ikuti) atau **Curated Calendar** (kalender yang Anda buat di bawah **Calendars**; lihat [Curated Calendar](../calendars/curated-calendar)).
+1. Di bawah **Select**, pilih **Group Calendar** (acara satu grup -- daftar menampilkan grup yang Anda ikuti) atau **Curated Calendar** (kalender yang Anda buat di bawah **Calendars**; lihat [Curated Calendar](../calendars/curated-calendar.md)).
 2. Di bawah **Select Calendar**, pilih grup atau kalender.
 3. Di bawah **Display**, pilih cara menampilkannya:
    - **Month calendar** -- Kisi bulanan yang dapat dijelajahi pengunjung halaman per halaman.
@@ -133,7 +134,7 @@ Klik elemen mana pun untuk membuka panel gayanya. Opsi umum mencakup ukuran font
 Untuk penataan lanjutan, setiap bagian dan elemen memiliki kolom **Custom CSS** tempat Anda dapat menulis aturan CSS sendiri. Aturan ini dibatasi hanya pada elemen tersebut, sehingga tidak akan secara tidak sengaja memengaruhi bagian lain dari halaman.
 
 :::tip
-Jika Anda perlu menerapkan gaya ke seluruh situs Anda -- seperti font kustom atau warna global -- gunakan pengaturan [Tampilan](appearance) alih-alih CSS kustom pada halaman individual.
+Jika Anda perlu menerapkan gaya ke seluruh situs Anda -- seperti font kustom atau warna global -- gunakan pengaturan [Tampilan](./appearance.md) alih-alih CSS kustom pada halaman individual.
 :::
 
 ## Melihat Pratinjau Halaman Anda
@@ -188,7 +189,7 @@ Gunakan alur draf/terbit saat Anda ingin menyiapkan halaman -- misalnya, untuk a
 
 ## Artikel Terkait
 
-- [Mengelola Halaman](managing-pages) -- Membuat halaman, mengatur URL, dan mengelola navigasi situs
-- [Tampilan](appearance) -- Mengatur warna, font, dan branding untuk seluruh situs
-- [Berkas](files) -- Mengunggah gambar dan dokumen untuk digunakan di editor
-- [Membuat Formulir](../forms/creating-forms) -- Membangun formulir yang dapat disematkan di halaman
+- [Mengelola Halaman](./managing-pages.md) -- Membuat halaman, mengatur URL, dan mengelola navigasi situs
+- [Tampilan](./appearance.md) -- Mengatur warna, font, dan branding untuk seluruh situs
+- [Berkas](./files.md) -- Mengunggah gambar dan dokumen untuk digunakan di editor
+- [Membuat Formulir](../forms/creating-forms.md) -- Membangun formulir yang dapat disematkan di halaman

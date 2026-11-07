@@ -1,5 +1,6 @@
 ---
 title: "Самостоятельное развёртывание на Railway"
+description: "Разверните приватный ChurchApps на Railway примерно за 15 минут, затем настройте email, домены, маршрутизацию церквей, пожертвования и хранилище файлов."
 ---
 
 # Самостоятельное развёртывание на Railway
@@ -195,7 +196,7 @@ AWS_REGION=us-east-2
 | `VIMEO_TOKEN` | Поддержка проповедей с Vimeo |
 | `API_BIBLE_KEY` | Поиск стихов Библии в уроках и контенте |
 | `YOUVERSION_API_KEY` | Интеграция с YouVersion Bible |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Push-уведомления в браузере ([создайте пару ключей VAPID](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Push-уведомления в браузере ([создайте пару ключей VAPID](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Необязательная синхронизация с CRM для новых регистраций |
 
 ## Обновление
@@ -234,9 +235,9 @@ AWS_REGION=us-east-2
 
 ## Связанные статьи
 
-- **[Самостоятельное развёртывание через Docker](./docker)** — тот же стек на собственном железе или VPS
-- **[Первоначальная настройка](../../getting-started/initial-setup)** — первые шаги после создания церкви
-- **[Первоначальная настройка сайта](../../b1-admin/website/initial-setup)** — настройка публичного сайта церкви
-- **[Настройки пожертвований](../../b1-admin/donations/online-giving-setup)** — подключение Stripe или PayPal
-- **[Локальная настройка API](../api/local-setup)** — запуск стека локально для разработки
-- **[Развёртывание API (AWS)](./apis)** — как развёртывается официальный SaaS ChurchApps
+- **[Самостоятельное развёртывание через Docker](./docker.md)** — тот же стек на собственном железе или VPS
+- **[Первоначальная настройка](../../getting-started/initial-setup.md)** — первые шаги после создания церкви
+- **[Первоначальная настройка сайта](../../b1-admin/website/initial-setup.md)** — настройка публичного сайта церкви
+- **[Настройки пожертвований](../../b1-admin/donations/online-giving-setup.md)** — подключение Stripe или PayPal
+- **[Локальная настройка API](../api/local-setup.md)** — запуск стека локально для разработки
+- **[Развёртывание API (AWS)](./apis.md)** — как развёртывается официальный SaaS ChurchApps

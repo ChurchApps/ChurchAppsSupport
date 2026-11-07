@@ -1,5 +1,7 @@
 ---
-title: "Serving"
+title: "Pangkalahatang-tanaw ng Serving sa B1 Admin"
+sidebar_label: "Serving"
+description: "Ayusin ang mga boluntaryo at planuhin ang serbisyo sa Serving area ng B1 Admin, mula sa ministry tab at team hanggang sa service plan, kanta, at gawain."
 ---
 
 # Serving

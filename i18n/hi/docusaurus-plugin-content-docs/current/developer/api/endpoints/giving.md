@@ -1,5 +1,6 @@
 ---
 title: "Giving Endpoints"
+description: "ChurchApps में Giving API एंडपॉइंट का संदर्भ: दान, बैच, गेटवे, सदस्यताएँ और भुगतान तरीके, B1 Admin से एकीकृत करने वाले डेवलपर्स के लिए प्रमाणीकरण और अनुमति नियमों सहित।"
 ---
 
 # Giving Endpoints
@@ -284,6 +285,6 @@ Base path: `/giving/eventLog`
 
 ## संबंधित पृष्ठ
 
-- [Membership Endpoints](./membership) — लोग, चर्च, समूह, भूमिकाएँ और अनुमतियाँ
-- [Authentication & Permissions](./authentication) — लॉगिन प्रवाह, JWT, OAuth, अनुमति मॉडल
-- [Module Structure](../module-structure) — कोड संगठन के पैटर्न
+- [Membership Endpoints](./membership.md) — लोग, चर्च, समूह, भूमिकाएँ और अनुमतियाँ
+- [Authentication & Permissions](./authentication.md) — लॉगिन प्रवाह, JWT, OAuth, अनुमति मॉडल
+- [Module Structure](../module-structure.md) — कोड संगठन के पैटर्न

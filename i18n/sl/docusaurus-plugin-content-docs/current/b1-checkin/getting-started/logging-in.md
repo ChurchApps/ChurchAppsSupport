@@ -1,5 +1,7 @@
 ---
-title: "Prijava"
+title: "Prijava v B1 Church Checkin"
+sidebar_label: "Prijava"
+description: "Prijavite se v aplikacijo kioska B1 Church Checkin, izberite svojo cerkev ter razumite samodejno prijavo, skrbniške nastavitve in odjavo na tablici za prijavo."
 ---
 
 # Prijava
@@ -63,7 +65,7 @@ Nastavitve skrbnika so namenoma skrite, da člani cerkve, ki uporabljajo kiosk, 
 2. Če je nastavljena PIN koda kioska, jo vnesite, ko vas aplikacija pozove.
 3. Odpre se zaslon **Admin Settings** z naslednjimi možnostmi:
    - **Change Service** — preklop na izbrani čas storitve
-   - **Change Printer** — odpre [nastavitve tiskalnika](./printer-setup), kjer poiščete in izberete tiskalnik
+   - **Change Printer** — odpre [nastavitve tiskalnika](./printer-setup.md), kjer poiščete in izberete tiskalnik
    - **Set/Change PIN** — nastavi ali posodobi PIN kod kioska, ki ščiti dostop skrbnika
    - **Logout** — odjavi vas in vrne na zaslon za prijavo
 
@@ -73,4 +75,4 @@ Odjava izbriše vse shranjene podatke za prijavo in izbiro cerkve. Če želite k
 
 ## Naslednji koraki
 
-Ko se prijavite, lahko [nastavite tiskalnik](./printer-setup) ali pa neposredno preidete na [potek prijave](../check-in/).
+Ko se prijavite, lahko [nastavite tiskalnik](./printer-setup.md) ali pa neposredno preidete na [potek prijave](../check-in/index.md).

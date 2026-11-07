@@ -1,5 +1,6 @@
 ---
 title: "Helpers"
+description: "Guia do @churchapps/helpers: o que oferece, quais apps o usam, build local no workspace Packages e o fluxo de publicação com changesets."
 ---
 
 # Helpers
@@ -13,14 +14,14 @@ O pacote `@churchapps/helpers` fornece utilitários básicos usados por todos os
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Instale o **Node.js** e o **Git** -- veja [Pré-requisitos](../setup/prerequisites)
+- Instale o **Node.js** e o **Git** -- veja [Pré-requisitos](../setup/prerequisites.md)
 - Familiarize-se com a configuração do [workspace Packages](./index.md) e com o fluxo de publicação
 
 </div>
 
 ## Quem Consome Este Pacote
 
-Todas as APIs da ChurchApps (a Api principal, a AskApi e a LessonsApi) e todos os frontends web (B1Admin, B1App, B1Transfer e LessonsApp) dependem diretamente deste pacote. Os frontends também recebem muitas de suas exportações (`ApiHelper`, `DateHelper`, `UserHelper` e outras interfaces) reexportadas por meio do [`@churchapps/apphelper`](./app-helper). Os demais pacotes compartilhados declaram este pacote como dependência de peer, para que cada aplicativo use exatamente uma cópia.
+Todas as APIs da ChurchApps (a Api principal, a AskApi e a LessonsApi) e todos os frontends web (B1Admin, B1App, B1Transfer e LessonsApp) dependem diretamente deste pacote. Os frontends também recebem muitas de suas exportações (`ApiHelper`, `DateHelper`, `UserHelper` e outras interfaces) reexportadas por meio do [`@churchapps/apphelper`](./app-helper.md). Os demais pacotes compartilhados declaram este pacote como dependência de peer, para que cada aplicativo use exatamente uma cópia.
 
 ## Configuração para Desenvolvimento Local
 
@@ -55,7 +56,7 @@ As versões são publicadas com changesets, e não com incrementos manuais de ve
 1. Execute `yarn changeset` na raiz do workspace, selecione `@churchapps/helpers` com o tipo de incremento apropriado e faça commit do arquivo de changeset gerado junto com a sua alteração.
 2. Quando estiver pronto para publicar, execute `yarn publish-all` na raiz -- ele incrementa as versões, gera os CHANGELOGs, compila na ordem de dependência e publica no npm.
 
-Novas interfaces compartilhadas devem ir em `helpers/src/interfaces/` e ser reexportadas pelo barrel do pacote. O catálogo de tipos de elementos do criador de sites (`ElementTypes.ts` -- 35 tipos com seus esquemas de respostas) também fica aqui. Ele é o contrato compartilhado pelos renderizadores do apphelper, pelos formulários de edição do B1Admin e pelos prompts de geração com IA (veja [Arquitetura do Criador de Sites](../architecture/website-builder)).
+Novas interfaces compartilhadas devem ir em `helpers/src/interfaces/` e ser reexportadas pelo barrel do pacote. O catálogo de tipos de elementos do criador de sites (`ElementTypes.ts` -- 35 tipos com seus esquemas de respostas) também fica aqui. Ele é o contrato compartilhado pelos renderizadores do apphelper, pelos formulários de edição do B1Admin e pelos prompts de geração com IA (veja [Arquitetura do Criador de Sites](../architecture/website-builder.md)).
 
 :::warning
 Como este pacote é usado por todos os projetos da ChurchApps, alterações aqui têm grande impacto. Uma publicação do `helpers` incrementa automaticamente o `apihelper` e o `apphelper` para que suas faixas de dependência permaneçam atualizadas. Teste com um portal do Yarn em pelo menos uma API consumidora e um aplicativo web consumidor antes de publicar.
@@ -63,6 +64,6 @@ Como este pacote é usado por todos os projetos da ChurchApps, alterações aqui
 
 ## Artigos Relacionados
 
-- **[ApiHelper](./api-helper)** -- Utilitários do lado do servidor que dependem deste pacote
-- **[AppHelper](./app-helper)** -- Componentes React que dependem deste pacote
+- **[ApiHelper](./api-helper.md)** -- Utilitários do lado do servidor que dependem deste pacote
+- **[AppHelper](./app-helper.md)** -- Componentes React que dependem deste pacote
 - **[Visão Geral das Bibliotecas Compartilhadas](./index.md)** -- Configuração do workspace, fluxo de publicação e fluxo de links locais

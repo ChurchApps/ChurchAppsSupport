@@ -1,5 +1,7 @@
 ---
-title: "Wydarzenia"
+title: "Wydarzenia kościelne w B1.church: przeglądanie i zapisy"
+sidebar_label: "Wydarzenia"
+description: "Przeglądaj nadchodzące wydarzenia kościelne w B1.church, sprawdzaj status rejestracji i zapisuj się lub dodawaj wydarzenia do swojego kalendarza."
 ---
 
 # Wydarzenia
@@ -43,7 +45,7 @@ Jeśli wydarzenie nie ma wolnych miejsc, możesz nadal dołączyć do **listy re
 
 ## Dowiedz się więcej
 
-- [Zapisywanie się na wydarzenia](./registering) -- Przewodnik krok po kroku, jak zapisać się na wydarzenie
-- [Moje rejestracje](./my-registrations) -- Przeglądaj swoje rejestracje, opłacaj zaległości, edytuj lub anuluj
-- [Zgłaszanie wydarzeń i sal](./requesting-events) -- Zgłoś wydarzenie wraz z salami i zasobami, których potrzebuje
-- [Samodzielne zameldowanie](../checkin/self-checkin) -- Zamelduj się po przybyciu na wydarzenie
+- [Zapisywanie się na wydarzenia](./registering.md) -- Przewodnik krok po kroku, jak zapisać się na wydarzenie
+- [Moje rejestracje](./my-registrations.md) -- Przeglądaj swoje rejestracje, opłacaj zaległości, edytuj lub anuluj
+- [Zgłaszanie wydarzeń i sal](./requesting-events.md) -- Zgłoś wydarzenie wraz z salami i zasobami, których potrzebuje
+- [Samodzielne zameldowanie](../checkin/self-checkin.md) -- Zamelduj się po przybyciu na wydarzenie

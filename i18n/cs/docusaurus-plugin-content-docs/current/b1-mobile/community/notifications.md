@@ -1,5 +1,6 @@
 ---
 title: "Oznámení"
+description: "Nastavte push upozornění pro aplikaci B1 Mobile a poté zobrazujte, otevírejte a mažte oznámení od církve pro zprávy, skupiny a službu."
 ---
 
 # Oznámení
@@ -13,7 +14,7 @@ Aplikace B1 Mobile využívá push oznámení, aby vás informovala o dění ve 
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing) a [přihlaste se](../getting-started/logging-in) ke svému účtu
+- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing.md) a [přihlaste se](../getting-started/logging-in.md) ke svému účtu
 - V nastavení zařízení povolte oznámení pro B1 Mobile
 
 </div>
@@ -22,8 +23,8 @@ Aplikace B1 Mobile využívá push oznámení, aby vás informovala o dění ve 
 
 Oznámení se mohou týkat řady aktivit, včetně:
 
-- **Zprávy** -- Když vám někdo pošle [soukromou zprávu](./messaging).
-- **Aktivita ve skupinách** -- Aktualizace, příspěvky a konverzace ze [skupin](../groups/), jejichž jste členem.
+- **Zprávy** -- Když vám někdo pošle [soukromou zprávu](./messaging.md).
+- **Aktivita ve skupinách** -- Aktualizace, příspěvky a konverzace ze [skupin](../groups/index.md), jejichž jste členem.
 - **Služební úkoly** -- Když jste přiřazeni k [plánu](../serving/viewing-plans.md) nebo když se změní stav vašeho úkolu.
 - **Další aktualizace** -- Obecná oznámení a aktivity, které se vás týkají.
 

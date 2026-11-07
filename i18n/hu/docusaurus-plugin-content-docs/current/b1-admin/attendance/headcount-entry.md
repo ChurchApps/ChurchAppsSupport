@@ -1,5 +1,6 @@
 ---
 title: "Létszámbejegyzés és trend"
+description: "Összlétszám rögzítése szolgálathoz vagy csoporthoz a B1 Admin-ban névsor nélkül, és a heti összesítések követése a Headcount Trend jelentésben."
 ---
 
 # Létszámbejegyzés és trend

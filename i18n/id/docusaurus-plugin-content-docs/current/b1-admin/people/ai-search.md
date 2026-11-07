@@ -1,5 +1,6 @@
 ---
 title: "Pencarian AI"
+description: "Cari di direktori orang B1 Admin dengan pertanyaan bahasa sehari-hari, misalnya anggota mana yang belum hadir selama tiga bulan, tanpa perlu membuat filter."
 ---
 
 # Pencarian AI

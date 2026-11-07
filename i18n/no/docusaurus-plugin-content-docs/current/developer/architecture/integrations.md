@@ -1,5 +1,6 @@
 ---
 title: "Integrasjons- og utvidelsesflate"
+description: "Oversikt over alle måter å koble seg til ChurchApps B1: REST API, API-nøkler, OAuth, webhooks, MCP og innholdsleverandører, med lenker til hver referanse."
 ---
 
 # Integrasjons- og utvidelsesflate
@@ -14,12 +15,12 @@ Alt en tredjepart kan koble seg til, går gjennom ett API og én autorisasjonsmo
 
 Det finnes seks måter inn eller ut på, og de deler alle samme autorisasjonslag:
 
-- **[REST API](../api/api-keys)** — hele produktflaten, kan kalles med et bearer-token fra hvilket som helst språk.
-- **[API-nøkler](../api/api-keys)** — den enkleste legitimasjonen: et `cak_…`-token knyttet til én person i én menighet.
-- **[OAuth 2.0 og tilkoblede apper](../api/connected-apps)** — samtykke per menighet for flerleietakerapper; utsteder samme JWT som en bruker får.
-- **[Webhooks](../api/webhooks)** — signerte, holdbart leverte utgående hendelser.
-- **[MCP-server](../api/mcp)** — en AI-vendt innpakning over REST API-et på `/mcp`.
-- **[Innholdsleverandører](../freeplay-content-provider)** — den innkommende veien for eksterne mediebiblioteker inn i FreePlay og B1-appene.
+- **[REST API](../api/api-keys.md)** — hele produktflaten, kan kalles med et bearer-token fra hvilket som helst språk.
+- **[API-nøkler](../api/api-keys.md)** — den enkleste legitimasjonen: et `cak_…`-token knyttet til én person i én menighet.
+- **[OAuth 2.0 og tilkoblede apper](../api/connected-apps.md)** — samtykke per menighet for flerleietakerapper; utsteder samme JWT som en bruker får.
+- **[Webhooks](../api/webhooks.md)** — signerte, holdbart leverte utgående hendelser.
+- **[MCP-server](../api/mcp.md)** — en AI-vendt innpakning over REST API-et på `/mcp`.
+- **[Innholdsleverandører](../freeplay-content-provider.md)** — den innkommende veien for eksterne mediebiblioteker inn i FreePlay og B1-appene.
 
 Alt unntatt innholdsleverandører betjenes av ett samlet API (repositoriet [Api](https://github.com/ChurchApps/Api)) der modulene monteres under faste basisstier — `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting` og `/mcp`.
 
@@ -80,7 +81,7 @@ Kontrollere begrenser handlinger med `au.checkAccess(contentType, action)` mot t
 - Et scope kan bare *fjerne* tillatelser, så en avgrenset legitimasjon kan aldri heve seg til server- eller domeneadministrasjon (disse tillatelsene er bevisst ikke koblet til noe scope).
 - API-nøkler har prefikset `cak_`; `CustomAuthProvider.getUser()` forgrener på det, hasher hemmeligheten og løser opp eierens levende RBAC på nytt ved hvert kall.
 
-Se [API-nøkler → Scopes](../api/api-keys#scopes) for hele katalogen.
+Se [API-nøkler → Scopes](../api/api-keys.md#scopes) for hele katalogen.
 
 ## Referanse for flatene
 
@@ -90,7 +91,7 @@ Hele produktflaten. Ethvert autentisert endepunkt godtar enten en JWT eller en `
 
 ### API-nøkler
 
-Et personlig tilgangstoken `cak_<prefix>.<secret>`, opprettet i **B1Admin → Settings → Developer → API Keys**. Det lagres kun en SHA-256-hash; den rå nøkkelen vises én gang. Administreres på `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Best for en enkelt menighets egne skript og for koblinger som Zapier, Make og Google Sheets. → **[API-nøkler](../api/api-keys)**
+Et personlig tilgangstoken `cak_<prefix>.<secret>`, opprettet i **B1Admin → Settings → Developer → API Keys**. Det lagres kun en SHA-256-hash; den rå nøkkelen vises én gang. Administreres på `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Best for en enkelt menighets egne skript og for koblinger som Zapier, Make og Google Sheets. → **[API-nøkler](../api/api-keys.md)**
 
 ### OAuth 2.0 og tilkoblede apper
 
@@ -102,19 +103,19 @@ For flerleietakerapper som trenger samtykke fra hver menighet. Implementert i `A
 
 Offentlige klienter kan også registrere seg selv med `POST /oauth/register` (RFC 7591 dynamisk klientregistrering); de får en `client_id` og ingen hemmelighet, og redirect-URI-ene deres må være `https` eller loopback.
 
-En **tilkoblet app** er menighetsadministratorens visning av et gitt token, som listes og kan trekkes tilbake på `/membership/oauth/connections`. Kontrolleren er også vert for en OAuth-**relay-session**-bro (`/oauth/relay/*`) som lar en enhet uten nettleser fullføre innlogging mot en *ekstern* leverandør. → **[Tilkoblede apper og OAuth](../api/connected-apps)**
+En **tilkoblet app** er menighetsadministratorens visning av et gitt token, som listes og kan trekkes tilbake på `/membership/oauth/connections`. Kontrolleren er også vert for en OAuth-**relay-session**-bro (`/oauth/relay/*`) som lar en enhet uten nettleser fullføre innlogging mot en *ekstern* leverandør. → **[Tilkoblede apper og OAuth](../api/connected-apps.md)**
 
 ### Webhooks
 
-Den eneste utgående flaten. En menighet abonnerer et offentlig HTTPS-endepunkt på hendelser; når en tilsvarende endring skjer, beriker `WebhookDispatcher.emit(churchId, event, payload)` nyttelaster som bare har ID-er med visningsnavn (`personName`, `groupName`, `formName` — oppslagene kjøres kun når et abonnement matcher), registrerer en leveranse, og en bakgrunnsprosess sender en signert JSON-konvolutt med retry/backoff og ny levering. Motoren ligger i `Api/src/shared/webhooks/`, og CRUD per menighet under `/membership/webhooks` (`WebhookController.ts`). Et `connectorType`-felt omformer innholdet for Slack / Discord; `mailchimp`-koblingen går lenger og eier hele HTTP-utvekslingen selv (per hendelse metode/URL/autentisering mot Mailchimps API, legitimasjon kryptert i `webhooks.connectorConfig`). → **[Webhooks](../api/webhooks)**
+Den eneste utgående flaten. En menighet abonnerer et offentlig HTTPS-endepunkt på hendelser; når en tilsvarende endring skjer, beriker `WebhookDispatcher.emit(churchId, event, payload)` nyttelaster som bare har ID-er med visningsnavn (`personName`, `groupName`, `formName` — oppslagene kjøres kun når et abonnement matcher), registrerer en leveranse, og en bakgrunnsprosess sender en signert JSON-konvolutt med retry/backoff og ny levering. Motoren ligger i `Api/src/shared/webhooks/`, og CRUD per menighet under `/membership/webhooks` (`WebhookController.ts`). Et `connectorType`-felt omformer innholdet for Slack / Discord; `mailchimp`-koblingen går lenger og eier hele HTTP-utvekslingen selv (per hendelse metode/URL/autentisering mot Mailchimps API, legitimasjon kryptert i `webhooks.connectorConfig`). → **[Webhooks](../api/webhooks.md)**
 
 ### MCP-server
 
-En AI-vendt innpakning på `/mcp` (`Api/src/modules/mcp/`). Tre generiske verktøy — `list_endpoints`, `describe_endpoint` og `api_call` — eksponerer hele REST-flaten dynamisk for enhver MCP-klient. Autentiseringen er samme bearer-token som alt annet. For klienter som logger inn med OAuth (egne connectorer i claude.ai) inneholder et 401-svar fra `/mcp` en `WWW-Authenticate`-header som peker til `/.well-known/oauth-protected-resource`, og `/.well-known/oauth-authorization-server` annonserer `/membership/oauth`-endepunktene, dynamisk registrering, PKCE og samtykkesiden `/oauth` i B1Admin (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` går inn i Express-stakken på nytt i samme prosess, slik at alle tillatelses- og menighetsavgrensningsregler fortsatt gjelder. → **[MCP-server](../api/mcp)**
+En AI-vendt innpakning på `/mcp` (`Api/src/modules/mcp/`). Tre generiske verktøy — `list_endpoints`, `describe_endpoint` og `api_call` — eksponerer hele REST-flaten dynamisk for enhver MCP-klient. Autentiseringen er samme bearer-token som alt annet. For klienter som logger inn med OAuth (egne connectorer i claude.ai) inneholder et 401-svar fra `/mcp` en `WWW-Authenticate`-header som peker til `/.well-known/oauth-protected-resource`, og `/.well-known/oauth-authorization-server` annonserer `/membership/oauth`-endepunktene, dynamisk registrering, PKCE og samtykkesiden `/oauth` i B1Admin (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` går inn i Express-stakken på nytt i samme prosess, slik at alle tillatelses- og menighetsavgrensningsregler fortsatt gjelder. → **[MCP-server](../api/mcp.md)**
 
 ### Innholdsleverandører
 
-Den innkommende innholdsveien, i den egne pakken `Packages/content-providers` (`@churchapps/content-providers`) i stedet for i API-et. Hver leverandør implementerer grensesnittet `IProvider` (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions` og autentiseringshooks — og registrerer seg selv i et `Map`-register (`src/providers/registry.ts`). Her er **B1 OAuth-klienten**: en leverandør deklarerer en `AuthType` som er `none`, `oauth_pkce`, `device_flow` eller `form_login`, og de delte hjelperne (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) kjører PKCE- eller device-flyten på klientsiden mot den eksterne kilden. Elleve leverandører leveres i dag — blant annet Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church og B1.church — og de mater FreePlay og B1-appene. → **[FreePlay-innholdsleverandør](../freeplay-content-provider)**
+Den innkommende innholdsveien, i den egne pakken `Packages/content-providers` (`@churchapps/content-providers`) i stedet for i API-et. Hver leverandør implementerer grensesnittet `IProvider` (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions` og autentiseringshooks — og registrerer seg selv i et `Map`-register (`src/providers/registry.ts`). Her er **B1 OAuth-klienten**: en leverandør deklarerer en `AuthType` som er `none`, `oauth_pkce`, `device_flow` eller `form_login`, og de delte hjelperne (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) kjører PKCE- eller device-flyten på klientsiden mot den eksterne kilden. Elleve leverandører leveres i dag — blant annet Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church og B1.church — og de mater FreePlay og B1-appene. → **[FreePlay-innholdsleverandør](../freeplay-content-provider.md)**
 
 **Årsplaner** går over denne veien. En læreplanutgiver (med `lessons.edit`) vedlikeholder ordnede sekvenser for uke 1/2/3 i administrasjonen til Lessons.church (tabellene `yearPlans` / `yearPlanWeeks` i `LessonsApi`, med valgfri `startMonth` og en `anchor` per uke som kan være `easter` / `christmas`); `GET /yearPlans/public` i LessonsApi serverer levende planer anonymt og fyller inn programmet, studiet og stedet for hver uke fra leksjonstreet. B1Admin under **Serving → Plans → Schedule Lesson → Apply Year Plan** bruker dette endepunktet og skriver én DoingApi-plan per inkludert uke (`providerId=lessonschurch`, `providerPlanId=/lessons/{programId}/{studyId}/{lessonId}/{venueId}`). Planer med `startMonth` løser forankrede uker mot det valgte året (påske etter gregoriansk computus, jul som søndagen på eller før 25. desember) og fyller periodene mellom dem; planer uten `startMonth` kartlegger fortsatt uke N til `startDate + (N−1)×7` dager. Uker fra eksterne OLF-leverandører, eller med en ufullstendig sti, hoppes over ved anvendelse; menigheter redigerer de resulterende planene som alle andre, og FreePlay spiller det som står i planen.
 
@@ -122,12 +123,12 @@ Den innkommende innholdsveien, i den egne pakken `Packages/content-providers` (`
 
 | Flate | Autentiseringsmekanisme | Retning | Hvor den implementeres | Referanse |
 |---|---|---|---|---|
-| REST API | `Bearer` JWT eller `cak_…`-nøkkel | Inn | `Api/src/modules/*` | [API-nøkler](../api/api-keys) |
-| API-nøkler | SHA-256-hashet `cak_`-token | Legitimasjon | `Api/.../membership/controllers/ApiKeyController.ts` | [API-nøkler](../api/api-keys) |
-| OAuth 2.0 / tilkoblede apper | Auth code (PKCE) · device · refresh → JWT; dynamisk klientregistrering | Inn | `Api/.../membership/controllers/OAuthController.ts` | [Tilkoblede apper](../api/connected-apps) |
-| Webhooks | Hemmelighet per hook, HMAC-SHA256-signatur | Ut | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks) |
-| MCP-server | `Bearer` JWT, OAuth-JWT (oppdaget via `/.well-known`), eller `cak_…`-nøkkel | Inn (AI) | `Api/src/modules/mcp/` | [MCP-server](../api/mcp) |
-| Innholdsleverandører | Per leverandør: ingen / OAuth PKCE / device / skjema | Innkommende innhold | `Packages/content-providers/` | [Innholdsleverandør](../freeplay-content-provider) |
+| REST API | `Bearer` JWT eller `cak_…`-nøkkel | Inn | `Api/src/modules/*` | [API-nøkler](../api/api-keys.md) |
+| API-nøkler | SHA-256-hashet `cak_`-token | Legitimasjon | `Api/.../membership/controllers/ApiKeyController.ts` | [API-nøkler](../api/api-keys.md) |
+| OAuth 2.0 / tilkoblede apper | Auth code (PKCE) · device · refresh → JWT; dynamisk klientregistrering | Inn | `Api/.../membership/controllers/OAuthController.ts` | [Tilkoblede apper](../api/connected-apps.md) |
+| Webhooks | Hemmelighet per hook, HMAC-SHA256-signatur | Ut | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks.md) |
+| MCP-server | `Bearer` JWT, OAuth-JWT (oppdaget via `/.well-known`), eller `cak_…`-nøkkel | Inn (AI) | `Api/src/modules/mcp/` | [MCP-server](../api/mcp.md) |
+| Innholdsleverandører | Per leverandør: ingen / OAuth PKCE / device / skjema | Innkommende innhold | `Packages/content-providers/` | [Innholdsleverandør](../freeplay-content-provider.md) |
 
 ## Ferdigbygde koblinger
 
@@ -143,9 +144,9 @@ For din egen kode pakker **[`@churchapps/integration-sdk`](https://www.npmjs.com
 
 ## Relaterte sider
 
-- [API-nøkler](../api/api-keys) — den enkleste legitimasjonen og scope-katalogen
-- [Tilkoblede apper og OAuth](../api/connected-apps) — samtykkeflyter for flere leietakere
-- [Webhooks](../api/webhooks) — systemet for utgående hendelser
-- [MCP-server](../api/mcp) — AI-integrasjonens innpakning
-- [FreePlay-innholdsleverandør](../freeplay-content-provider) — å bli en innkommende innholdskilde
+- [API-nøkler](../api/api-keys.md) — den enkleste legitimasjonen og scope-katalogen
+- [Tilkoblede apper og OAuth](../api/connected-apps.md) — samtykkeflyter for flere leietakere
+- [Webhooks](../api/webhooks.md) — systemet for utgående hendelser
+- [MCP-server](../api/mcp.md) — AI-integrasjonens innpakning
+- [FreePlay-innholdsleverandør](../freeplay-content-provider.md) — å bli en innkommende innholdskilde
 - [Integrasjoner (sluttbruker)](/docs/b1-admin/integrations/) — oppsettguider for ferdigbygde koblinger

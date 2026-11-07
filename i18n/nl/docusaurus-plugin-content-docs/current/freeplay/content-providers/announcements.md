@@ -1,5 +1,6 @@
 ---
 title: "Aankondigingen"
+description: "Laat een dia-map in een lus draaien op FreePlay TV voor lobby- of lesaankondigingen: kies de providermap, houd deze gesynchroniseerd en stop als je klaar bent."
 ---
 
 # Aankondigingen
@@ -13,7 +14,7 @@ FreePlay kan een map met aankondigingsdia's op je tv in een lus afspelen, bijvoo
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- [Verbind met een contentprovider](./connecting-providers) waarin je aankondigingsdia's staan, zoals Dropbox of OneDrive
+- [Verbind met een contentprovider](./connecting-providers.md) waarin je aankondigingsdia's staan, zoals Dropbox of OneDrive
 - Zet de afbeeldingen of video's die je in een lus wilt afspelen samen in één map bij die provider
 
 </div>
@@ -37,7 +38,7 @@ Zodra de dia's zijn gedownload, verschijnt er een item **Aankondigingen** bovena
 - Na de laatste dia begint de lus opnieuw bij de eerste
 - Als de map één video bevat, wordt die steeds opnieuw afgespeeld
 
-De lus speelt de bestanden af die op het apparaat zijn opgeslagen, dus hij blijft werken zonder internetverbinding. Je kunt dezelfde afstandsbedieningsknoppen gebruiken als bij elke andere content -- zie [Content afspelen](./playing-content).
+De lus speelt de bestanden af die op het apparaat zijn opgeslagen, dus hij blijft werken zonder internetverbinding. Je kunt dezelfde afstandsbedieningsknoppen gebruiken als bij elke andere content -- zie [Content afspelen](./playing-content.md).
 
 ## De dia's bijwerken
 
@@ -61,6 +62,6 @@ Als je de provider loskoppelt, worden ook de aankondigingen die daarvandaan kwam
 
 ## Gerelateerde artikelen
 
-- **[Verbinden met providers](./connecting-providers)** - Verbind de provider waarin je dia's staan
-- **[Mappen bladeren en content downloaden](./browsing-content)** - Blader door de mappen van een provider en speel content op verzoek af
-- **[Content afspelen](./playing-content)** - Bedieningselementen van de speler op je tv-afstandsbediening
+- **[Verbinden met providers](./connecting-providers.md)** - Verbind de provider waarin je dia's staan
+- **[Mappen bladeren en content downloaden](./browsing-content.md)** - Blader door de mappen van een provider en speel content op verzoek af
+- **[Content afspelen](./playing-content.md)** - Bedieningselementen van de speler op je tv-afstandsbediening

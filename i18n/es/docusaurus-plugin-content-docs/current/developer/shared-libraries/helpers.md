@@ -1,5 +1,6 @@
 ---
 title: "Helpers"
+description: "Qué ofrece @churchapps/helpers, qué apps lo usan, cómo compilarlo en el workspace Packages y su flujo de publicación con changesets."
 ---
 
 # Helpers
@@ -13,14 +14,14 @@ El paquete `@churchapps/helpers` proporciona utilidades base usadas por todos lo
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Instala **Node.js** y **Git** -- consulta [Requisitos Previos](../setup/prerequisites)
+- Instala **Node.js** y **Git** -- consulta [Requisitos Previos](../setup/prerequisites.md)
 - Familiarízate con la configuración del [espacio de trabajo Packages](./index.md) y el flujo de lanzamiento
 
 </div>
 
 ## Quién Consume Esto
 
-Cada API de ChurchApps (la Api principal, AskApi, y LessonsApi) y cada frontend web (B1Admin, B1App, B1Transfer, LessonsApp) depende de este paquete directamente. Los frontends también obtienen muchas de sus exportaciones (`ApiHelper`, `DateHelper`, `UserHelper`, y otras interfaces) re-exportadas a través de [`@churchapps/apphelper`](./app-helper). Los otros paquetes compartidos lo declaran como una dependencia par para que cada aplicación resuelva exactamente una copia.
+Cada API de ChurchApps (la Api principal, AskApi, y LessonsApi) y cada frontend web (B1Admin, B1App, B1Transfer, LessonsApp) depende de este paquete directamente. Los frontends también obtienen muchas de sus exportaciones (`ApiHelper`, `DateHelper`, `UserHelper`, y otras interfaces) re-exportadas a través de [`@churchapps/apphelper`](./app-helper.md). Los otros paquetes compartidos lo declaran como una dependencia par para que cada aplicación resuelva exactamente una copia.
 
 ## Configuración para Desarrollo Local
 
@@ -55,7 +56,7 @@ Los lanzamientos pasan por changesets en lugar de incrementos de versión manual
 1. Ejecuta `yarn changeset` en la raíz del espacio de trabajo y selecciona `@churchapps/helpers` con el tipo de incremento apropiado; confirma el archivo changeset generado con tu cambio.
 2. Cuando estés listo para lanzar, ejecuta `yarn publish-all` en la raíz -- incrementa versiones, escribe CHANGELOGs, compila en orden de dependencia, y publica en npm.
 
-Las nuevas interfaces compartidas van en `helpers/src/interfaces/` y se re-exportan a través del barril del paquete. El catálogo de tipos de elemento del generador de sitios web (`ElementTypes.ts` — 35 tipos con sus esquemas de respuestas) también vive aquí; es el contrato compartido por los renderizadores de apphelper, los formularios del editor de B1Admin, y los prompts de generación de IA (consulta [Arquitectura del Generador de Sitios Web](../architecture/website-builder)).
+Las nuevas interfaces compartidas van en `helpers/src/interfaces/` y se re-exportan a través del barril del paquete. El catálogo de tipos de elemento del generador de sitios web (`ElementTypes.ts` — 35 tipos con sus esquemas de respuestas) también vive aquí; es el contrato compartido por los renderizadores de apphelper, los formularios del editor de B1Admin, y los prompts de generación de IA (consulta [Arquitectura del Generador de Sitios Web](../architecture/website-builder.md)).
 
 :::warning
 Dado que este paquete es usado por cada proyecto de ChurchApps, los cambios aquí tienen un amplio impacto. Un lanzamiento de `helpers` incrementa automáticamente `apihelper` y `apphelper` para que sus rangos de dependencia se mantengan actualizados. Prueba con un portal Yarn en al menos una API consumidora y una aplicación web consumidora antes de publicar.
@@ -63,6 +64,6 @@ Dado que este paquete es usado por cada proyecto de ChurchApps, los cambios aqu�
 
 ## Artículos Relacionados
 
-- **[ApiHelper](./api-helper)** -- Utilidades del lado del servidor que dependen de este paquete
-- **[AppHelper](./app-helper)** -- Componentes React que dependen de este paquete
+- **[ApiHelper](./api-helper.md)** -- Utilidades del lado del servidor que dependen de este paquete
+- **[AppHelper](./app-helper.md)** -- Componentes React que dependen de este paquete
 - **[Descripción General de Bibliotecas Compartidas](./index.md)** -- Configuración del espacio de trabajo, flujo de lanzamiento, y flujo de trabajo de enlace local

@@ -1,5 +1,6 @@
 ---
 title: "Özel Alan Adı"
+description: "B1 Admin'de DNS kayıtlarını ayarlayıp Ayarlar'a alan adı ekleyerek www.yourchurch.org gibi kendi alan adınızı B1 sitenize yönlendirin."
 ---
 
 # Özel Alan Adı

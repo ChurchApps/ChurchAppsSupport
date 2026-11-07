@@ -1,5 +1,6 @@
 ---
 title: "Estados de cuenta de donaciones"
+description: "Genera extractos anuales de donaciones para cada donante en B1 Admin y descárgalos en CSV o imprímelos para enviarlos por correo con totales deducibles."
 ---
 
 # Estados de cuenta de donaciones

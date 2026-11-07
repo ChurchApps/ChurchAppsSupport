@@ -1,5 +1,6 @@
 ---
 title: "Entri Jumlah Kehadiran & Tren"
+description: "Masukkan total jumlah hadir untuk layanan atau grup di B1 Admin tanpa daftar nama, lalu pantau total mingguan di laporan Tren Jumlah Hadir."
 ---
 
 # Entri Jumlah Kehadiran & Tren

@@ -1,5 +1,6 @@
 ---
 title: "Jelenlét"
+description: "Heti részvétel, termek és vendégek áttekintése a B1 Admin-ban; campusok, szolgálati idők, létszámok és kioszkos bejelentkezés beállítása az Attendance oldalon."
 ---
 
 # Jelenlét

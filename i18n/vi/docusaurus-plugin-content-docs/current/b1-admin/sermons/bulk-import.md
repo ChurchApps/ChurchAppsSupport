@@ -1,5 +1,6 @@
 ---
 title: "Nhập hàng loạt"
+description: "Nhập hàng loạt video bài giảng từ kênh YouTube hoặc tài khoản Vimeo vào B1 Admin, rồi sắp xếp chúng vào danh sách phát."
 ---
 
 # Nhập hàng loạt
@@ -14,7 +15,7 @@ Trang Nhập hàng loạt giúp bạn nhanh chóng bổ sung thư viện bài gi
 <h4>Trước khi bắt đầu</h4>
 
 - Bạn cần quyền **contentApi.streamingServices.edit**. Xem [Vai trò và quyền hạn](../settings/roles-permissions.md) nếu bạn chưa có quyền truy cập.
-- Tạo ít nhất một [danh sách phát](playlists) để nhập bài giảng vào
+- Tạo ít nhất một [danh sách phát](./playlists.md) để nhập bài giảng vào
 - Chuẩn bị sẵn ID kênh YouTube hoặc thông tin tài khoản Vimeo của bạn
 
 </div>
@@ -39,7 +40,7 @@ Trước khi nhập video, bạn cần ít nhất một danh sách phát để s
 2. Nhấp **Create First Playlist** và điền tên, mô tả, ngày xuất bản và ảnh thu nhỏ.
 3. Nhấp **Save**, sau đó quay lại Bulk Import bằng cách nhấp **Add Sermon** và chọn **Bulk Import**.
 
-Xem [Danh sách phát](playlists) để biết hướng dẫn chi tiết về cách tạo và quản lý danh sách phát.
+Xem [Danh sách phát](./playlists.md) để biết hướng dẫn chi tiết về cách tạo và quản lý danh sách phát.
 
 ## Nhập video
 
@@ -54,11 +55,11 @@ Xem [Danh sách phát](playlists) để biết hướng dẫn chi tiết về c�
 Video sẽ được nhập kèm đầy đủ thông tin, bao gồm tiêu đề, mô tả, ngày tháng và ảnh thu nhỏ. Các ký tự đặc biệt trong tiêu đề và mô tả YouTube, chẳng hạn như `&`, dấu nháy đơn và dấu ngoặc kép, sẽ được giữ nguyên như đã viết thay vì hiển thị dưới dạng mã như `&amp;`.
 
 :::info
-Nhập hàng loạt là lựa chọn lý tưởng để bắt đầu khi bạn chuyển từ nền tảng khác. Để thêm từng bài giảng riêng lẻ về sau, hãy dùng trang [Quản lý bài giảng](managing-sermons).
+Nhập hàng loạt là lựa chọn lý tưởng để bắt đầu khi bạn chuyển từ nền tảng khác. Để thêm từng bài giảng riêng lẻ về sau, hãy dùng trang [Quản lý bài giảng](./managing-sermons.md).
 :::
 
 ## Bước tiếp theo
 
-- [Quản lý bài giảng](managing-sermons) -- Chỉnh sửa thông tin bài giảng đã nhập
-- [Danh sách phát](playlists) -- Tạo và quản lý chuỗi bài giảng
-- [Phát trực tiếp](live-streaming) -- Thiết lập phát trực tiếp cho các buổi thờ phượng
+- [Quản lý bài giảng](./managing-sermons.md) -- Chỉnh sửa thông tin bài giảng đã nhập
+- [Danh sách phát](./playlists.md) -- Tạo và quản lý chuỗi bài giảng
+- [Phát trực tiếp](./live-streaming.md) -- Thiết lập phát trực tiếp cho các buổi thờ phượng

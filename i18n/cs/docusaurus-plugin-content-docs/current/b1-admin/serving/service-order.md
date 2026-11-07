@@ -1,5 +1,7 @@
 ---
-title: "Program bohoslužby"
+title: "Pořadí bohoslužby v B1 Admin"
+sidebar_label: "Program bohoslužby"
+description: "Nastavte pořadí bohoslužby v B1 Admin: přidejte písně, lekce a vlastní položky, uspořádejte je do sekcí a vytiskněte rozpis."
 ---
 
 # Program bohoslužby

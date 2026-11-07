@@ -1,5 +1,6 @@
 ---
 title: "Sfogliare i Gruppi"
+description: "Sfoglia i gruppi pubblici della tua chiesa su B1.church per categoria, poi controlla orari, luoghi e descrizioni su ogni scheda per trovare quello giusto."
 ---
 
 # Sfogliare i Gruppi

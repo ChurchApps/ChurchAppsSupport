@@ -1,5 +1,6 @@
 ---
 title: "Nastavení docházky"
+description: "Nastavte pobočky, bohoslužby, časy a přiřazení skupin v B1 Admin, aby sledování docházky a rozvrhy odbavení fungovaly napříč celým sborem."
 ---
 
 # Nastavení docházky

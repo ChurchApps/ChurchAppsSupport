@@ -1,5 +1,6 @@
 ---
 title: "Zapytania o dołączenie do grupy"
+description: "Przeglądaj, zatwierdzaj lub odrzucaj prośby o dołączenie do grupy w B1 Admin, znajdź oczekujące wnioski jako lider lub administrator i podaj powód odrzucenia."
 ---
 
 # Zapytania o dołączenie do grupy

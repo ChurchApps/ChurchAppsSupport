@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "LessonsApp Next.js ders düzenleyicisini Node.js 22+ üzerinde yerel olarak kurun, yerel bir LessonsApi'ye yönlendirin ve derleme ile S3/CloudFront dağıtımını anlayın."
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ LessonsApp, [Lessons.church](https://lessons.church) için geliştirilmiş ders 
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- **Node.js 22+** ve **Git** yükleyin -- bkz. [Ön Koşullar](../setup/prerequisites)
-- API hedefinizi yapılandırın (yerel LessonsApi) -- bkz. [Ortam Değişkenleri](../setup/environment-variables)
+- **Node.js 22+** ve **Git** yükleyin -- bkz. [Ön Koşullar](../setup/prerequisites.md)
+- API hedefinizi yapılandırın (yerel LessonsApi) -- bkz. [Ortam Değişkenleri](../setup/environment-variables.md)
 
 </div>
 
@@ -81,5 +82,5 @@ LessonsApp, ana ChurchApps Api'den ayrı bir API olan **LessonsApi** arka ucuyla
 3. Yeni sürümü sunmak için CloudFront önbellek geçersizleştirmesi tetiklenir
 
 :::tip
-Ayrıntılı dağıtım talimatları için [Web Uygulaması Dağıtımı](../deployment/web-apps) kılavuzuna bakın.
+Ayrıntılı dağıtım talimatları için [Web Uygulaması Dağıtımı](../deployment/web-apps.md) kılavuzuna bakın.
 :::

@@ -1,5 +1,6 @@
 ---
 title: "Bezpieczeństwo zameldowania"
+description: "Skonfiguruj zabezpieczenia dzieci w B1 Admin: pojemność sal, proporcje wolontariuszy, listy zaufanych odbiorców i SMS-y do rodziców przy meldowaniu."
 ---
 
 # Bezpieczeństwo zameldowania
@@ -15,7 +16,7 @@ B1 zawiera zestaw zabezpieczeń dla dzieci podczas zameldowania: limity pojemno�
 
 - Skonfiguruj [strukturę frekwencji](setup.md) i [kioski zameldowania](check-in.md)
 - Sale to [grupy](../groups/creating-groups.md) powiązane z godzinami nabożeństw — poniższe ustawienia bezpieczeństwa znajdują się w grupie
-- Powiadamianie rodziców i alarm awaryjny wymagają podłączonego dostawcy wiadomości tekstowych ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream) lub Mutual Ministry)
+- Powiadamianie rodziców i alarm awaryjny wymagają podłączonego dostawcy wiadomości tekstowych ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md) lub Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Obie funkcje wysyłają wiadomości tekstowe przez podłączonego dostawcę wiad
 
 Osoby, które zrezygnowały z wiadomości tekstowych lub nie mają zapisanego numeru komórkowego, są pomijane automatycznie — kiosk podaje, ile wiadomości zostało wysłanych, a ile pominięto.
 
-Opis tego procesu od strony kiosku znajdziesz w [Wymeldowanie i bezpieczeństwo dzieci](../../b1-checkin/check-in/checking-out).
+Opis tego procesu od strony kiosku znajdziesz w [Wymeldowanie i bezpieczeństwo dzieci](../../b1-checkin/check-in/checking-out.md).
 
 ## Powiązane artykuły
 
 - [Zameldowanie](check-in.md) — konfiguracja kiosku i sprzęt
-- [Wymeldowanie i bezpieczeństwo dzieci](../../b1-checkin/check-in/checking-out) — wymeldowanie na kiosku, weryfikacja odbioru i przepływy powiadamiania
+- [Wymeldowanie i bezpieczeństwo dzieci](../../b1-checkin/check-in/checking-out.md) — wymeldowanie na kiosku, weryfikacja odbioru i przepływy powiadamiania
 - [Tworzenie grup](../groups/creating-groups.md) — gdzie znajdują się ustawienia sal
 - [Konfiguracja frekwencji](setup.md) — nabożeństwa, godziny nabożeństw i przypisania sal
 - [Minimalny wiek dla wiadomości prywatnych](../settings/mobile-app.md#member-directory--messaging-settings) — blokuje nowe prywatne rozmowy z dziećmi, zachowując ich obecność w katalogu

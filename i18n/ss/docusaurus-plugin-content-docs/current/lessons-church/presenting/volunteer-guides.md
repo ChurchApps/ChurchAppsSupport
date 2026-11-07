@@ -1,5 +1,6 @@
 ---
 title: "Imihlahlandlela Yemavolontiya"
+description: "Setfa tiphatsi letiphathelene netindzima ku-Lessons.church kutsi umvolontiya ngamunye abone kuphela tinyatelo takhe, bese ushicilela noma wabelane ngato ngaphambi kwekilasi."
 ---
 
 # Imihlahlandlela Yemavolontiya

@@ -1,5 +1,7 @@
 ---
-title: "Servizio"
+title: "Volontariato e iscrizioni su B1.church"
+sidebar_label: "Servizio"
+description: "Sfoglia le opportunità di volontariato su B1.church, iscriviti alle posizioni aperte, consulta i tuoi incarichi e annulla le iscrizioni prima della scadenza."
 ---
 
 # Servizio
@@ -14,8 +16,8 @@ La sezione Servizio di B1.church ti permette di sfogliare le opportunità di vol
 
 - **Sfogliare le opportunità di volontariato** -- Consulta i prossimi piani di culto con posti aperti che richiedono volontari.
 - **Iscriverti ai posti** -- Scegli un posto e iscriviti con un solo clic.
-- **Visualizzare i tuoi piani** -- Consulta i tuoi [incarichi di servizio](../plans/viewing-plans) imminenti e passati.
-- **Rispondere agli incarichi** -- Accetta o rifiuta i posti per cui sei stato programmato, dalla pagina Piani o dalla sezione **Stai servendo** della Home. Se i tuoi impegni cambiano dopo aver accettato, puoi [rifiutare un incarico accettato](../plans/viewing-plans#declining-an-accepted-assignment) fino al termine del culto.
+- **Visualizzare i tuoi piani** -- Consulta i tuoi [incarichi di servizio](../plans/viewing-plans.md) imminenti e passati.
+- **Rispondere agli incarichi** -- Accetta o rifiuta i posti per cui sei stato programmato, dalla pagina Piani o dalla sezione **Stai servendo** della Home. Se i tuoi impegni cambiano dopo aver accettato, puoi [rifiutare un incarico accettato](../plans/viewing-plans.md#declining-an-accepted-assignment) fino al termine del culto.
 - **Rimuovere le iscrizioni** -- Annulla un'iscrizione autonoma se i tuoi impegni cambiano (prima della scadenza).
 
 ## Come funziona
@@ -28,5 +30,5 @@ Nella pagina dei volontari compaiono solo i posti che l'amministratore della chi
 
 ## Per saperne di più
 
-- [Iscrizione dei volontari](./volunteer-signup) -- Guida passo-passo per sfogliare e iscriverti ai posti di volontariato
-- [Visualizzare i piani](../plans/viewing-plans) -- Consulta i tuoi piani di culto assegnati e gli ordini di culto
+- [Iscrizione dei volontari](./volunteer-signup.md) -- Guida passo-passo per sfogliare e iscriverti ai posti di volontariato
+- [Visualizzare i piani](../plans/viewing-plans.md) -- Consulta i tuoi piani di culto assegnati e gli ordini di culto

@@ -1,5 +1,6 @@
 ---
 title: "Mga Endpoint ng Content"
+description: "Sanggunian ng endpoint para sa ChurchApps Content API: website page, blog post, redirect, sermon, event, file, Bible lookup, at kanta sa B1 Admin."
 ---
 
 # Mga Endpoint ng Content
@@ -133,7 +134,7 @@ Batayang path: `/content/pageHistory`
 
 Batayang path: `/content/posts`
 
-Ang mga blog post ay mga hiwalay na row: `title`, `slug` (natatangi bawat simbahan), `excerpt`, `content` (markdown na katawan), `authorId`, `photoUrl`, `publishDate`, `category`, at `tags`. Ang post ay nai-publish kapag nakatakda na ang `publishDate` at nasa nakaraan na. Dinadagdagan ng mga read endpoint ang bawat post ng `authorName` na kinuha mula sa `authorId`. Tingnan ang [Arkitektura ng Website Builder](../../architecture/website-builder#blog).
+Ang mga blog post ay mga hiwalay na row: `title`, `slug` (natatangi bawat simbahan), `excerpt`, `content` (markdown na katawan), `authorId`, `photoUrl`, `publishDate`, `category`, at `tags`. Ang post ay nai-publish kapag nakatakda na ang `publishDate` at nasa nakaraan na. Dinadagdagan ng mga read endpoint ang bawat post ng `authorName` na kinuha mula sa `authorId`. Tingnan ang [Arkitektura ng Website Builder](../../architecture/website-builder.md#blog).
 
 | Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|-------------|
@@ -458,8 +459,8 @@ Batayang path: `/content/support`
 
 ## Mga Kaugnay na Pahina
 
-- [Arkitektura ng Website Builder](../../architecture/website-builder) -- Paano nagkakaugnay ang mga pahina, seksyon, elemento, post, at redirect sa iba't ibang app
-- [Mga Endpoint ng Membership](./membership) -- Mga tao, simbahan, grupo, tungkulin, pahintulot
-- [Mga Endpoint ng Attendance](./attendance) -- Pagsubaybay sa serbisyo at pagbisita
-- [Authentication at Mga Pahintulot](./authentication) -- Daloy ng login, JWT, modelo ng pahintulot
-- [Module Structure](../module-structure) -- Mga pattern ng organisasyon ng code
+- [Arkitektura ng Website Builder](../../architecture/website-builder.md) -- Paano nagkakaugnay ang mga pahina, seksyon, elemento, post, at redirect sa iba't ibang app
+- [Mga Endpoint ng Membership](./membership.md) -- Mga tao, simbahan, grupo, tungkulin, pahintulot
+- [Mga Endpoint ng Attendance](./attendance.md) -- Pagsubaybay sa serbisyo at pagbisita
+- [Authentication at Mga Pahintulot](./authentication.md) -- Daloy ng login, JWT, modelo ng pahintulot
+- [Module Structure](../module-structure.md) -- Mga pattern ng organisasyon ng code

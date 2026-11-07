@@ -1,5 +1,6 @@
 ---
 title: "Descărcări și materiale"
+description: "Găsiți și descărcați fișe de activități, ghiduri pentru lideri și PDF-uri atașate lecțiilor, studiilor sau programelor Lessons.church pentru clasa dvs."
 ---
 
 # Descărcări și materiale

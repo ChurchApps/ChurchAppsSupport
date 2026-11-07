@@ -1,5 +1,6 @@
 ---
 title: B1.church 简介
+description: "引导您登录 B1 Admin、熟悉仪表板和跳转菜单，并在探索其他工具前设置教会信息。"
 ---
 
 # 欢迎使用 B1.church Admin！
@@ -30,7 +31,7 @@ title: B1.church 简介
 10. 您现在可以通过**会员门户**或**管理门户**进入 B1.church。会员门户可让您查看会员眼中的 B1.church 界面、查看您的小组，以及管理个人奉献。
 
 :::tip
-请先前往 [Settings](./settings/) 页面，配置教会名称、品牌形象和团队权限。这样可以确保您之后设置的所有内容都能正确显示。
+请先前往 [Settings](./settings/index.md) 页面，配置教会名称、品牌形象和团队权限。这样可以确保您之后设置的所有内容都能正确显示。
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -77,9 +78,9 @@ Jump 菜单的最后一组是 **Quick Actions**（快速操作），即以前显
 
 观看本介绍后，您可以进一步了解以下核心功能：
 
-- [添加人员](./people/adding-people)：了解如何将会员添加到您的数据库
-- [小组](./groups/)：设置和管理教会小组
-- [服事计划](./serving/plans)：组织您的服事事工
-- [考勤](./attendance/)：记录考勤和签到
-- [网站](./website/)：构建并自定义您的教会网站
-- [设置](./settings/)：配置您的教会信息和权限
+- [添加人员](./people/adding-people.md)：了解如何将会员添加到您的数据库
+- [小组](./groups/index.md)：设置和管理教会小组
+- [服事计划](./serving/plans.md)：组织您的服事事工
+- [考勤](./attendance/index.md)：记录考勤和签到
+- [网站](./website/index.md)：构建并自定义您的教会网站
+- [设置](./settings/index.md)：配置您的教会信息和权限

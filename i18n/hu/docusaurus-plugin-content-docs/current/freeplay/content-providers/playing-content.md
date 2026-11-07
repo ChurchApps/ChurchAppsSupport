@@ -1,5 +1,6 @@
 ---
 title: "Tartalom lejátszása"
+description: "FreePlay vezérlése TV-távirányítóval: szünet, diák- és videóváltás, ugrás bármely üzenetre, kilépés a lejátszóból (szolgáltató, terv vagy letöltés)."
 ---
 
 # Tartalom lejátszása
@@ -13,13 +14,13 @@ A FreePlay lejátszó teljes képernyőt tölt ki, és TV-távirányítóhoz ké
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Válasszon ki valamit a lejátszáshoz. Lásd: [Tartalom böngészése és letöltése](./browsing-content), [Tervmód](../plan-mode/) vagy [Hirdetések](./announcements)
+- Válasszon ki valamit a lejátszáshoz. Lásd: [Tartalom böngészése és letöltése](./browsing-content.md), [Tervmód](../plan-mode/index.md) vagy [Hirdetések](./announcements.md)
 - Nyomja meg a **Start** gombot a lejátszó megnyitásához
 
 </div>
 
 :::info
-A naptárhoz párosított képernyők egy külön, ütemezett lejátszót használnak, kissé eltérő vezérlőkkel. Lásd: [Ütemezett lejátszás a TV-n](../scheduled-mode/scheduled-playback).
+A naptárhoz párosított képernyők egy külön, ütemezett lejátszót használnak, kissé eltérő vezérlőkkel. Lásd: [Ütemezett lejátszás a TV-n](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Lejátszó vezérlése
@@ -57,7 +58,7 @@ Lejátszás közben nyomja meg a **Fel** gombot az **Üzenet kiválasztása** me
 A távirányítón nyomja meg a **Le** vagy a **Vissza** gombot a lejátszóból való kilépéshez. Hogy hova jut, az attól függ, mit játszott le:
 
 - **Szolgáltatói tartalom** - Vissza a tartalomböngészőbe
-- **Egy terv** - Vissza a tervletöltési képernyőre. Lásd: [Tervmód](../plan-mode/)
+- **Egy terv** - Vissza a tervletöltési képernyőre. Lásd: [Tervmód](../plan-mode/index.md)
 - **Egy letöltés** - Vissza a **Letöltések** képernyőre
 
 :::info
@@ -66,5 +67,5 @@ A képernyő ébren marad, amíg a lejátszó nyitva van, így a TV nem alszik e
 
 ## Kapcsolódó cikkek
 
-- **[Tartalom böngészése és letöltése](./browsing-content)** - Tartalom keresése és letöltése offline lejátszáshoz
-- **[Ütemezett lejátszás a TV-n](../scheduled-mode/scheduled-playback)** - Távirányító a naptárat követő képernyőkhöz
+- **[Tartalom böngészése és letöltése](./browsing-content.md)** - Tartalom keresése és letöltése offline lejátszáshoz
+- **[Ütemezett lejátszás a TV-n](../scheduled-mode/scheduled-playback.md)** - Távirányító a naptárat követő képernyőkhöz

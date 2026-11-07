@@ -1,5 +1,6 @@
 ---
 title: "Gids: Online geven instellen"
+description: "Stel online geven in B1 Admin in door donatiefondsen aan te maken, Stripe te koppelen en een Donate-pagina aan je B1.church-website toe te voegen."
 ---
 
 # Online geven instellen
@@ -70,7 +71,7 @@ Gebruik Stripe's testmodus eerst als u wilt verifiëren zonder werkelijke kosten
 Verspreid het woord zodat leden weten dat zij online kunnen geven.
 
 1. Deel de geef-URL via uw website, e-mailnieuwsbrieven, bulletins en social media
-2. Leden kunnen ook geven via de [B1 Mobiele app](../../b1-mobile/giving/) -- de geeffunctie is ingebouwd
+2. Leden kunnen ook geven via de [B1 Mobiele app](../../b1-mobile/giving/index.md) -- de geeffunctie is ingebouwd
 
 :::info
 Leden die inloggen, kunnen betaalmethoden opslaan, terugkerende donaties instellen en hun gifthistorie bekijken. Anoniem geven werkt ook -- geen inloggegevens nodig.

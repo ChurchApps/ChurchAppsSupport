@@ -1,12 +1,13 @@
 ---
 title: "Website-Routing und Multi-Site"
+description: "Wie B1.church Subdomains und eigene Domains der richtigen Gemeinde oder Zweitseite zuordnet, plus der Caddy-Edge, der TLS für eigene Domains übernimmt."
 ---
 
 # Website-Routing und Multi-Site
 
 <div class="article-intro">
 
-Eine einzelne Gemeinde kann nun mehr als eine eigenständige Website betreiben, und jede davon kann auf einer Subdomain `*.b1.church` oder auf einer vollständig eigenen, der Gemeinde gehörenden Domain liegen. Diese Seite beschreibt die Routing-Schicht unterhalb des Builders: wie eine eingehende Anfrage sowohl einer Gemeinde als auch einer bestimmten Website zugeordnet wird, das Datenmodell für Multi-Site (der Platzhalter `siteId`, der alle bestehenden Websites unverändert weiter ausliefert) sowie den Edge für eigene Domains — ein selbstverwalteter Caddy-Proxy auf EC2, der TLS beendet und jede Domain der Gemeinde auf ihren Upstream `*.b1.church` umschreibt. Was nach der Auflösung einer Anfrage tatsächlich gerendert wird — der Baum aus Seiten, Abschnitten und Elementen —, beschreibt [Website-Builder](./website-builder).
+Eine einzelne Gemeinde kann nun mehr als eine eigenständige Website betreiben, und jede davon kann auf einer Subdomain `*.b1.church` oder auf einer vollständig eigenen, der Gemeinde gehörenden Domain liegen. Diese Seite beschreibt die Routing-Schicht unterhalb des Builders: wie eine eingehende Anfrage sowohl einer Gemeinde als auch einer bestimmten Website zugeordnet wird, das Datenmodell für Multi-Site (der Platzhalter `siteId`, der alle bestehenden Websites unverändert weiter ausliefert) sowie den Edge für eigene Domains — ein selbstverwalteter Caddy-Proxy auf EC2, der TLS beendet und jede Domain der Gemeinde auf ihren Upstream `*.b1.church` umschreibt. Was nach der Auflösung einer Anfrage tatsächlich gerendert wird — der Baum aus Seiten, Abschnitten und Elementen —, beschreibt [Website-Builder](./website-builder.md).
 
 </div>
 
@@ -92,7 +93,7 @@ Zwei betriebliche Details der Middleware:
 
 - **Cache.** Das Ergebnis jedes Hosts (ein Treffer *oder* ein bestätigter Fehlschlag — nie ein Netzwerkfehler) wird **10 Minuten** lang in einer `Map` im Speicher gehalten, je Serverless-Isolate.
 - **Matcher.** Der Matcher nimmt `/sitemap.xml`, `/robots.txt` und `/manifest.webmanifest` bewusst wieder auf. Sein erstes Muster schließt Pfade mit Punkt aus, was diese Dateien sonst herausfiltern würde; sie werden daher wieder aufgenommen, damit eine eigene Domain ihre SEO-/PWA-Dateien der Gemeinde ebenfalls mit dem Header `x-site` erhält.
-- **Kanonischer Header.** Für Seiten der Gemeinde hängt die Middleware eine Antwort-Header `Link: <{proto}://{host}{path}>; rel="canonical"` an, der den Host nennt, von dem die Seite tatsächlich ausgeliefert wurde — Subdomain oder eigene Domain (`helpers/canonicalLink.ts`). Erreicht eine eigene Domain B1App über den [Caddy-Proxy](../deployment/caddy-proxy), ist der Host der Anfrage die Subdomain `{sub}.b1.church`; daher verwendet die Middleware stattdessen die Domain des Besuchers aus `X-Church-Host` — jedoch erst, nachdem `/domains/public/lookup/{host}` bestätigt hat, dass diese Domain auf dieselbe Subdomain zeigt (`ownsSubdomain()`). Der kanonische Link, `robots.txt` und `sitemap.xml` nennen dann die eigene Domain statt der Subdomain `b1.church`. Auf Nicht-Gemeinde-Hosts (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) sowie bei `/mobile`, `/login`, `/logout` und den erzeugten Dateien robots/sitemap/manifest wird er übersprungen.
+- **Kanonischer Header.** Für Seiten der Gemeinde hängt die Middleware eine Antwort-Header `Link: <{proto}://{host}{path}>; rel="canonical"` an, der den Host nennt, von dem die Seite tatsächlich ausgeliefert wurde — Subdomain oder eigene Domain (`helpers/canonicalLink.ts`). Erreicht eine eigene Domain B1App über den [Caddy-Proxy](../deployment/caddy-proxy.md), ist der Host der Anfrage die Subdomain `{sub}.b1.church`; daher verwendet die Middleware stattdessen die Domain des Besuchers aus `X-Church-Host` — jedoch erst, nachdem `/domains/public/lookup/{host}` bestätigt hat, dass diese Domain auf dieselbe Subdomain zeigt (`ownsSubdomain()`). Der kanonische Link, `robots.txt` und `sitemap.xml` nennen dann die eigene Domain statt der Subdomain `b1.church`. Auf Nicht-Gemeinde-Hosts (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) sowie bei `/mobile`, `/login`, `/logout` und den erzeugten Dateien robots/sitemap/manifest wird er übersprungen.
 
 ### Deaktivierte öffentliche Website
 
@@ -201,7 +202,7 @@ Zeilen `www.*` sind aus der Zuordnung ausgeschlossen; Caddy bedient `www.{host}`
 
 ### Aktueller Stand — statische Konfiguration, kein Laufzeitzustand
 
-Die Maschine (eine Windows-EC2 hinter der dauerhaften Elastic IP) betreibt Caddy mit einer **statischen Caddyfile**: On-Demand-TLS, dessen `ask` auf `/membership/domains/authorize` zeigt, plus eine Datei der Zuordnung Host → Upstream, die alle 5 Minuten von `/membership/domains/hostmap` aktualisiert wird — durch eine geplante Aufgabe, die mit einem geordneten `caddy reload` endet. Die Konfiguration übersteht Neustarts ohne jeden Laufzeitzustand — kein erneutes Vorbereiten nötig — und ein unbekannter SNI wird **per TLS abgelehnt** (für einen Host, den `authorize` ablehnt, wird kein Zertifikat erzeugt), während ein autorisierter, aber noch nicht zugeordneter Host (eine brandneue Domain innerhalb des Synchronisierungsfensters) eine saubere 404 erhält. Neue Domains sind innerhalb von etwa 5 Minuten nach dem Speichern routbar; ihre Zertifikate werden beim ersten Aufruf ausgestellt. Aufbau, Betrieb und praxiserprobte Stolperfallen: [Caddy-Proxy für eigene Domains](../deployment/caddy-proxy).
+Die Maschine (eine Windows-EC2 hinter der dauerhaften Elastic IP) betreibt Caddy mit einer **statischen Caddyfile**: On-Demand-TLS, dessen `ask` auf `/membership/domains/authorize` zeigt, plus eine Datei der Zuordnung Host → Upstream, die alle 5 Minuten von `/membership/domains/hostmap` aktualisiert wird — durch eine geplante Aufgabe, die mit einem geordneten `caddy reload` endet. Die Konfiguration übersteht Neustarts ohne jeden Laufzeitzustand — kein erneutes Vorbereiten nötig — und ein unbekannter SNI wird **per TLS abgelehnt** (für einen Host, den `authorize` ablehnt, wird kein Zertifikat erzeugt), während ein autorisierter, aber noch nicht zugeordneter Host (eine brandneue Domain innerhalb des Synchronisierungsfensters) eine saubere 404 erhält. Neue Domains sind innerhalb von etwa 5 Minuten nach dem Speichern routbar; ihre Zertifikate werden beim ersten Aufruf ausgestellt. Aufbau, Betrieb und praxiserprobte Stolperfallen: [Caddy-Proxy für eigene Domains](../deployment/caddy-proxy.md).
 
 ### Älterer Laufzeit-Push — Rückfallpfad, zur Löschung vorgesehen
 
@@ -209,8 +210,8 @@ Die Maschine (eine Windows-EC2 hinter der dauerhaften Elastic IP) betreibt Caddy
 
 ## Verwandte Seiten
 
-- [Caddy-Proxy für eigene Domains](../deployment/caddy-proxy) — die Edge-Maschine selbst: Einrichtung auf einer frischen Maschine, WinSW-Dienst, Synchronisierungsaufgabe für die Zuordnung und betriebliche Stolperfallen
-- [Website-Builder](./website-builder) — der Baum aus Seiten, Abschnitten und Elementen, die Renderer, der Blog, SEO und die KI-Erzeugung (was gerendert wird, sobald eine Anfrage einer Gemeinde/Website zugeordnet ist)
-- [Content-Endpunkte](../api/endpoints/content) — die REST-Schnittstelle für Seiten, Blöcke, Links und globale Stile, jetzt mit Unterstützung für `?siteId=`
-- [B1App](../web-apps/b1-app) — die Next.js-App, die die Middleware und das Routing `[sdSlug]` beherbergt
-- [Bereitstellung der Web-Apps](../deployment/web-apps) — wie B1App auf Vercel bereitgestellt wird
+- [Caddy-Proxy für eigene Domains](../deployment/caddy-proxy.md) — die Edge-Maschine selbst: Einrichtung auf einer frischen Maschine, WinSW-Dienst, Synchronisierungsaufgabe für die Zuordnung und betriebliche Stolperfallen
+- [Website-Builder](./website-builder.md) — der Baum aus Seiten, Abschnitten und Elementen, die Renderer, der Blog, SEO und die KI-Erzeugung (was gerendert wird, sobald eine Anfrage einer Gemeinde/Website zugeordnet ist)
+- [Content-Endpunkte](../api/endpoints/content.md) — die REST-Schnittstelle für Seiten, Blöcke, Links und globale Stile, jetzt mit Unterstützung für `?siteId=`
+- [B1App](../web-apps/b1-app.md) — die Next.js-App, die die Middleware und das Routing `[sdSlug]` beherbergt
+- [Bereitstellung der Web-Apps](../deployment/web-apps.md) — wie B1App auf Vercel bereitgestellt wird

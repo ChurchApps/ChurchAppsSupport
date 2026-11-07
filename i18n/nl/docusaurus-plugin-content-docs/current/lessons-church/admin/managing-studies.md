@@ -1,5 +1,6 @@
 ---
 title: "Managing Studies"
+description: "Maak, bewerk en categoriseer studies binnen een programma in Lessons.church, en koppel serie-overzichten of nieuwsbriefsjablonen aan elke studie."
 ---
 
 # Managing Studies

@@ -1,5 +1,7 @@
 ---
-title: "Eventos"
+title: "Eventos de la iglesia e inscripciones en B1 Mobile"
+sidebar_label: "Eventos"
+description: "Explore los próximos eventos de la iglesia en B1 Mobile y regístrese usted y sus familiares en los que tengan la inscripción abierta."
 ---
 
 # Eventos
@@ -23,10 +25,10 @@ Los eventos pueden mostrar diferentes estados:
 
 ## Lo que Necesitas
 
-- [B1 Mobile instalado](../getting-started/installing) e [iniciado sesión](../getting-started/logging-in)
+- [B1 Mobile instalado](../getting-started/installing.md) e [iniciado sesión](../getting-started/logging-in.md)
 - Tu iglesia debe tener el registro de eventos habilitado para el evento
 
 ## Más Información
 
-- [Registrarse para Eventos](./registering) -- Guía paso a paso para inscribirse en un evento en móvil
-- [Auto Registro de Asistencia](../checkin/self-checkin) -- Registra tu asistencia cuando llegas al evento
+- [Registrarse para Eventos](./registering.md) -- Guía paso a paso para inscribirse en un evento en móvil
+- [Auto Registro de Asistencia](../checkin/self-checkin.md) -- Registra tu asistencia cuando llegas al evento

@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Povežite prijave prostovoljcev VOMO in prijave na kiosku z osebami in skupinami v B1 Admin prek Zapier, vključno z API dovoljenji in koraki nastavitve."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ Ko se projekt VOMO konča, ročno izpraznite skupino B1 (ali to združite s spro
 
 ### Pošiljanje SMS-sporočila »hvala za prijavo«
 
-V istem Zapu povežite VOMO Participation → Clearstream Send Text ali Text In Church Send Message. Oba imata namenska Zapier dejanja. Glejte [Clearstream](./clearstream) in [Text In Church](./text-in-church).
+V istem Zapu povežite VOMO Participation → Clearstream Send Text ali Text In Church Send Message. Oba imata namenska Zapier dejanja. Glejte [Clearstream](./clearstream.md) in [Text In Church](./text-in-church.md).
 
 ### Zaznavanje odpadanja
 
@@ -91,6 +92,6 @@ Vsak dan zaženite Zapier sprožilec *Schedule*, ki v VOMO pokliče Find Organiz
 
 ## Glej tudi
 
-- [Zapier (pregled)](../zapier) — stran B1 za vse recepte Zapier
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — povežite prijave prostovoljcev s SMS-potrditvami
+- [Zapier (pregled)](../zapier.md) — stran B1 za vse recepte Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — povežite prijave prostovoljcev s SMS-potrditvami
 - [Webhooks (referenca za razvijalce)](/docs/developer/api/webhooks) — dogodki, ob katerih lahko VOMO sproži akcije

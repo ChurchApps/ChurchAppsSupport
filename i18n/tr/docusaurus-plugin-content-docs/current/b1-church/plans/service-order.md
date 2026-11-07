@@ -1,5 +1,7 @@
 ---
-title: "Hizmet Sırası"
+title: "B1.church Uygulamasında İbadet Sırası Detayları"
+sidebar_label: "Hizmet Sırası"
+description: "B1.church uygulamasında bir planın ibadet sırasını görün: kümülatif zamanlama, şarkı sözleri, tonalite değişimi ve ekibiniz için ders önizlemeleri."
 ---
 
 # Hizmet Sırası

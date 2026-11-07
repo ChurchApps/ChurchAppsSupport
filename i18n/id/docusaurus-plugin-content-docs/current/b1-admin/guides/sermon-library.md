@@ -1,5 +1,6 @@
 ---
 title: "Panduan: Membangun Perpustakaan Khotbah & Siaran Langsung"
+description: "Impor khotbah dari YouTube atau Vimeo, atur ke dalam daftar putar, dan siapkan siaran langsung berulang dengan obrolan di B1 Admin untuk situs gereja Anda."
 ---
 
 # Membangun Perpustakaan Khotbah & Siaran Langsung

@@ -1,5 +1,7 @@
 ---
-title: "Gruppendetails"
+title: "Gruppendetails in der B1 Mobile App"
+sidebar_label: "Gruppendetails"
+description: "Die Gruppen-Detailseite in B1 Mobile zeigt Infos, Beiträge und Mitglieder. So öffnen Sie sie über den Gruppenbildschirm."
 ---
 
 # Gruppendetails
@@ -13,7 +15,7 @@ Wenn du in der Gruppen-Ansicht auf eine Gruppe tippst, gelangst du zur Detailsei
 <div class="prereqs">
 <h4>Bevor du beginnst</h4>
 
-- [B1 Mobile installieren](../getting-started/installing) und [in dein Konto einloggen](../getting-started/logging-in)
+- [B1 Mobile installieren](../getting-started/installing.md) und [in dein Konto einloggen](../getting-started/logging-in.md)
 - Öffne den Bildschirm [Gruppen](./index.md)
 
 </div>
@@ -46,5 +48,5 @@ Deine meistbesuchte Gruppe erscheint als Hauptkarte oben im Gruppen-Bildschirm. 
 
 ## Verwandte Artikel
 
-- [Gruppen-Zeitleiste](./group-timeline) -- Erfahre mehr über den gemeinsamen Aktivitätsfeed aller deiner Gruppen
+- [Gruppen-Zeitleiste](./group-timeline.md) -- Erfahre mehr über den gemeinsamen Aktivitätsfeed aller deiner Gruppen
 - [Nachrichten](../community/messaging.md) -- Sende private Nachrichten an Gruppenmitglieder

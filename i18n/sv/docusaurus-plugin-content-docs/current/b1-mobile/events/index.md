@@ -1,5 +1,7 @@
 ---
-title: "Evenemang"
+title: "Församlingsevenemang och anmälan i B1 Mobile"
+sidebar_label: "Evenemang"
+description: "Bläddra bland kommande församlingsevenemang i B1 Mobile och anmäl dig själv och din familj till de som har öppen anmälan."
 ---
 
 # Evenemang
@@ -23,10 +25,10 @@ Evenemang kan visa olika statusar:
 
 ## Vad du behöver
 
-- [B1 Mobile installerad](../getting-started/installing) och [inloggad](../getting-started/logging-in)
+- [B1 Mobile installerad](../getting-started/installing.md) och [inloggad](../getting-started/logging-in.md)
 - Din kyrka måste ha evenemangsregistrering aktiverad för evenemanget
 
 ## Läs mer
 
-- [Anmäla dig till evenemang](./registering) -- Steg-för-steg-guide för att anmäla dig till ett evenemang i mobilen
-- [Självincheckning](../checkin/self-checkin) -- Checka in när du kommer till evenemanget
+- [Anmäla dig till evenemang](./registering.md) -- Steg-för-steg-guide för att anmäla dig till ett evenemang i mobilen
+- [Självincheckning](../checkin/self-checkin.md) -- Checka in när du kommer till evenemanget

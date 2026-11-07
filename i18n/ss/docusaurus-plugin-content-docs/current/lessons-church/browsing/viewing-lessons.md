@@ -1,5 +1,6 @@
 ---
 title: "Kubuka Tifundzo"
+description: "Hamba ngekuvula lifundziso ku-Lessons.church, ufunde tingcenye netindzima temisebenti, uphenye tilandzelo, bese ushintsha tindzawo temaqembu eminyaka ngaphambi kwesifundvo."
 ---
 
 # Kubuka Tifundzo

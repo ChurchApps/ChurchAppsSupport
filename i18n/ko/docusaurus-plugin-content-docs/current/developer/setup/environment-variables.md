@@ -1,5 +1,6 @@
 ---
 title: "환경 변수"
+description: "ChurchApps 프로젝트의 .env 파일 설정, 공유 데모 API와 로컬 API 중 선택, B1 Admin, B1.church, B1 Mobile, Lessons.church 등의 변수 입력 방법."
 ---
 
 # 환경 변수
@@ -13,9 +14,9 @@ title: "환경 변수"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- 프로젝트에 필요한 [사전 요구 사항](./prerequisites)을 설치하십시오
+- 프로젝트에 필요한 [사전 요구 사항](./prerequisites.md)을 설치하십시오
 - 작업하려는 프로젝트 저장소를 클론하십시오
-- [프로젝트 개요](./project-overview)를 검토하여 프로젝트에 필요한 API 모듈을 확인하십시오
+- [프로젝트 개요](./project-overview.md)를 검토하여 프로젝트에 필요한 API 모듈을 확인하십시오
 
 </div>
 
@@ -64,7 +65,7 @@ https://api.demo.churchapps.org/doing
 
 ### 옵션 2: 로컬 API
 
-자신의 컴퓨터에서 Api 프로젝트를 실행하십시오. 각 모듈용 데이터베이스가 생성된 MySQL 8.0 이상이 필요합니다. [API 로컬 설정](../api/local-setup) 가이드를 참조하십시오.
+자신의 컴퓨터에서 Api 프로젝트를 실행하십시오. 각 모듈용 데이터베이스가 생성된 MySQL 8.0 이상이 필요합니다. [API 로컬 설정](../api/local-setup.md) 가이드를 참조하십시오.
 
 ```bash
 # Base URL pattern

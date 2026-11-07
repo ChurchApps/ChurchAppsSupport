@@ -1,5 +1,7 @@
 ---
-title: "Registracija"
+title: "Registracija į bažnyčią B1 Mobile programėle"
+sidebar_label: "Registracija"
+description: "Registruokite save ir savo namų ūkį į bažnyčios pamaldas telefonu B1 Mobile programėlėje, prieš atvykdami pasirinkdami pamaldas ir grupes."
 ---
 
 # Registracija
@@ -16,7 +18,7 @@ Registracijos procesas – tai greitas, kelių žingsnių procesas, kuris padeda
 
 ## Pradžia
 
-Norėdami pasiekti registraciją, B1 Mobile atidarykite skyrių **Registracija**. Turite būti prisijungę, kad galėtumėte naudotis šia funkcija. Jei nesate prisijungę, jūsų bus paprašyta pirmiausia [prisijungti](../getting-started/logging-in).
+Norėdami pasiekti registraciją, B1 Mobile atidarykite skyrių **Registracija**. Turite būti prisijungę, kad galėtumėte naudotis šia funkcija. Jei nesate prisijungę, jūsų bus paprašyta pirmiausia [prisijungti](../getting-started/logging-in.md).
 
 :::info
 Registracijos funkcija reikalauja, kad jūsų bažnyčia būtų nustačiusi pamaldas ir dalyvavimo grupes administravimo nustatymuose. Jei atidarius registracijos ekraną nerodomos jokios pamaldos, jūsų bažnyčia gali dar nebūti sukonfigūravusi šios funkcijos. Pagalbos kreipkitės į bažnyčios administratorių.
@@ -30,4 +32,4 @@ Registracijos funkcija reikalauja, kad jūsų bažnyčia būtų nustačiusi pama
 
 ## Kiti žingsniai
 
-- [Savitarnos registracija](./self-checkin) -- Žingsnis po žingsnio vadovas, kaip registruotis iš savo telefono
+- [Savitarnos registracija](./self-checkin.md) -- Žingsnis po žingsnio vadovas, kaip registruotis iš savo telefono

@@ -1,5 +1,7 @@
 ---
-title: "Egy adomány megtétele"
+title: "Adományozás a B1.church tagi portálon"
+sidebar_label: "Egy adomány megtétele"
+description: "Adakozzon egyszeri vagy ismétlődő adományt a B1.church oldalon keresztül, fiók nélkül vagy fiókkal, majd később megtekintheted adományaid előzményeit."
 ---
 
 # Egy adomány megtétele

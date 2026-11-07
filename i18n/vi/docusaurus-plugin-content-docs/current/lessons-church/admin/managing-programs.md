@@ -1,5 +1,6 @@
 ---
 title: "Quản lý chương trình"
+description: "Tạo và sửa chương trình giáo trình trong Lessons.church, thiết lập slug và ảnh thu nhỏ, nhóm khóa học theo danh mục và gắn tài nguyên cấp chương trình."
 ---
 
 # Quản lý chương trình

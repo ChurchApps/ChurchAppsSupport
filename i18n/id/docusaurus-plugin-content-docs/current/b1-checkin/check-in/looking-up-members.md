@@ -1,5 +1,6 @@
 ---
 title: "Mencari Anggota"
+description: "Temukan keluarga Anda di kiosk B1 Checkin dengan mencari digit telepon atau nama, dan daftar sebagai tamu jika Anda pengunjung pertama kali."
 ---
 
 # Mencari Anggota
@@ -13,7 +14,7 @@ Setelah memilih layanan, Anda akan tiba di layar pencarian anggota. Di sinilah A
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- [Pilih layanan](./selecting-service) dari layar layanan
+- [Pilih layanan](./selecting-service.md) dari layar layanan
 - Pastikan rumah tangga Anda sudah [ditambahkan ke sistem](../../b1-admin/people/adding-people.md) oleh administrator gereja
 
 </div>
@@ -45,7 +46,7 @@ Aplikasi akan mencari anggota yang namanya cocok dengan yang Anda ketik.
 
 Hasil pencarian muncul sebagai kartu di bawah kolom pencarian. Setiap kartu menampilkan **nama** dan **foto** orang tersebut (jika ada di data).
 
-Ketuk kartu seseorang untuk memilihnya. Aplikasi akan memuat seluruh anggota rumah tangga orang tersebut dan membawa Anda ke [layar tinjauan rumah tangga](./household-review).
+Ketuk kartu seseorang untuk memilihnya. Aplikasi akan memuat seluruh anggota rumah tangga orang tersebut dan membawa Anda ke [layar tinjauan rumah tangga](./household-review.md).
 
 :::tip
 Mencari dengan 4 digit terakhir nomor telepon adalah cara tercepat untuk menemukan keluarga Anda. Ajak anggota untuk menggunakan cara ini agar check-in terasa lebih cepat.
@@ -60,7 +61,7 @@ Jika tidak ada hasil yang ditemukan, aplikasi akan menampilkan pesan pemberitahu
 Jika gereja Anda mengaktifkan pendaftaran tamu melalui QR code, tautan **Daftar sebagai tamu** akan muncul di bawah kolom pencarian pada layar pencarian. Pengunjung pertama kali dapat menggunakannya untuk menambahkan keluarga mereka ke sistem gereja sebelum melakukan check-in.
 
 1. Ketuk **Daftar sebagai tamu**. Sebuah jendela akan terbuka dengan QR code dan pesan "Pindai untuk mendaftar sebagai tamu."
-2. Pilih cara mengisi [formulir pendaftaran tamu](../../b1-church/checkin/guest-registration):
+2. Pilih cara mengisi [formulir pendaftaran tamu](../../b1-church/checkin/guest-registration.md):
    - **Di ponsel Anda** -- Pindai QR code, isi formulir di ponsel Anda, lalu ketuk **OK** untuk menutup jendela.
    - **Di kiosk** -- Ketuk **Daftar di sini** untuk membuka formulir yang sama langsung di tablet. Isi formulir lalu ketuk **Daftar**, kemudian ketuk **Selesai** (atau panah kembali) untuk kembali ke layar pencarian.
 3. Setelah terdaftar, cari keluarga Anda berdasarkan nama atau nomor telepon untuk melakukan check-in.
@@ -71,7 +72,7 @@ Formulir yang dibuka melalui **Daftar di sini** tetap berada di halaman pendafta
 
 ## Mencetak Label untuk Check-In melalui Ponsel
 
-Keluarga yang sudah melakukan check-in di ponsel mereka melalui [check-in mandiri B1 Church](../../b1-church/checkin/self-checkin) dapat mencetak label nama di kiosk tanpa perlu mencari data mereka sendiri.
+Keluarga yang sudah melakukan check-in di ponsel mereka melalui [check-in mandiri B1 Church](../../b1-church/checkin/self-checkin.md) dapat mencetak label nama di kiosk tanpa perlu mencari data mereka sendiri.
 
 1. Pada layar pencarian, ketuk tombol **Pindai kode** (ikon QR code).
 2. Arahkan QR code dari ponsel Anda ke kamera. Jika aplikasi meminta akses kamera, ketuk **Izinkan Kamera**. Kamera depan digunakan secara bawaan; ketuk tombol balik untuk beralih.
@@ -81,4 +82,4 @@ Memindai hanya mencetak label -- kehadiran sudah tercatat ketika keluarga melaku
 
 ## Langkah Selanjutnya
 
-Setelah memilih seseorang, Anda akan [meninjau rumah tangga Anda](./household-review) dan mengelola penugasan grup.
+Setelah memilih seseorang, Anda akan [meninjau rumah tangga Anda](./household-review.md) dan mengelola penugasan grup.

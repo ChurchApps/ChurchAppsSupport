@@ -1,5 +1,6 @@
 ---
 title: "Gestionarea ecranelor și a grupurilor"
+description: "Verificați ce TV-uri FreePlay sunt online și pregătite pentru duminică, editați setările ecranelor și creați grupuri cu un calendar comun în FreePlay Admin."
 ---
 
 # Gestionarea ecranelor și a grupurilor
@@ -14,7 +15,7 @@ Pagina **Ecrane** din FreePlay Admin listează fiecare televizor asociat biseric
 <h4>Înainte de a începe</h4>
 
 - Autentifică-te în FreePlay Admin la [admin.freeplay.church](https://admin.freeplay.church)
-- [Asociază cel puțin un ecran](./pairing-a-screen)
+- [Asociază cel puțin un ecran](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Folosește **Prezintă** pentru a reda calendarul ecranului în browser sau **Ed
 
 Fă clic pe eticheta unui ecran pentru a deschide pagina lui. În stânga, vei găsi:
 
-- **Prezintă în browser** - Redă calendarul acestui ecran pe tot ecranul în browser, așa cum ar arăta pe televizor. Vezi [Prezentarea dintr-un browser](./scheduled-playback#presenting-from-a-browser)
+- **Prezintă în browser** - Redă calendarul acestui ecran pe tot ecranul în browser, așa cum ar arăta pe televizor. Vezi [Prezentarea dintr-un browser](./scheduled-playback.md#presenting-from-a-browser)
 - **Editează** - Modifică eticheta, grupul sau modul
 - **Mai multe** > **Deconectează** - Deconectează televizorul. Acesta revine la afișarea unui cod de asociere
 
@@ -93,6 +94,6 @@ Poți crea un grup și în timp ce asociezi un ecran, alegând **＋ Grup nou…
 
 ## Articole înrudite
 
-- **[Asocierea unui ecran](./pairing-a-screen)** - Adaugă un televizor nou
-- **[Programarea calendarului](./scheduling-the-calendar)** - Stabilește ce redă fiecare grup și bucla lui implicită
-- **[Redarea programată pe televizor](./scheduled-playback)** - Ce înseamnă data „Pregătit până la” chiar pe televizor
+- **[Asocierea unui ecran](./pairing-a-screen.md)** - Adaugă un televizor nou
+- **[Programarea calendarului](./scheduling-the-calendar.md)** - Stabilește ce redă fiecare grup și bucla lui implicită
+- **[Redarea programată pe televizor](./scheduled-playback.md)** - Ce înseamnă data „Pregătit până la” chiar pe televizor

@@ -1,5 +1,6 @@
 ---
 title: "Parowanie urządzenia"
+description: "Paruj telewizor FreePlay z typem planu w B1 Admin czteroliterowym kodem z ekranu, potem pobierz media planu do trybu planu."
 ---
 
 # Parowanie urządzenia
@@ -13,7 +14,7 @@ Aby korzystać z trybu planu, sparuj swój telewizor z typem planu w B1 Admin. F
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Zainstaluj i uruchom FreePlay. Zobacz [Pierwsze kroki](../getting-started/)
+- Zainstaluj i uruchom FreePlay. Zobacz [Pierwsze kroki](../getting-started/index.md)
 - Miej dostęp do **B1 Admin** na komputerze lub telefonie, aby ukończyć parowanie
 
 </div>
@@ -25,7 +26,7 @@ Aby korzystać z trybu planu, sparuj swój telewizor z typem planu w B1 Admin. F
 3. FreePlay wyświetla czteroliterowy kod parowania dużymi literami, obok kodu QR.
 4. Pod kodem migający wskaźnik **Oczekiwanie na potwierdzenie** pokazuje, że FreePlay czeka, aż zakończysz parowanie.
 
-Ten sam kod działa w [trybie zaplanowanym](../scheduled-mode/) w FreePlay Admin oraz w trybie planu w B1 Admin. Kod QR i adres **freeplay.church/pair** widoczne na ekranie otwierają FreePlay Admin. W przypadku trybu planu zignoruj je i wpisz kod w B1 Admin, zgodnie z opisem poniżej.
+Ten sam kod działa w [trybie zaplanowanym](../scheduled-mode/index.md) w FreePlay Admin oraz w trybie planu w B1 Admin. Kod QR i adres **freeplay.church/pair** widoczne na ekranie otwierają FreePlay Admin. W przypadku trybu planu zignoruj je i wpisz kod w B1 Admin, zgodnie z opisem poniżej.
 
 ## Wpisywanie kodu w B1 Admin
 
@@ -61,5 +62,5 @@ Kody parowania wygasają po 15 minutach. Gdy stary kod straci ważność, FreePl
 ## Powiązane artykuły
 
 - **[Przegląd trybu planu](./index.md)** - Czym tryb planu różni się od trybu zaplanowanego
-- **[Parowanie ekranu](../scheduled-mode/pairing-a-screen)** - Zamiast tego sparuj ten sam telewizor z kalendarzem w FreePlay Admin
-- **[Odtwarzanie zawartości](../content-providers/playing-content)** - Elementy sterowania odtwarzaczem podczas odtwarzania planu
+- **[Parowanie ekranu](../scheduled-mode/pairing-a-screen.md)** - Zamiast tego sparuj ten sam telewizor z kalendarzem w FreePlay Admin
+- **[Odtwarzanie zawartości](../content-providers/playing-content.md)** - Elementy sterowania odtwarzaczem podczas odtwarzania planu

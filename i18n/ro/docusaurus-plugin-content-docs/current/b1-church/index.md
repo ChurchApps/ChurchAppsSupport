@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Aflați ce oferă site-ul B1.church al bisericii dvs membrilor, de la portalul membrilor și grupuri până la donații, evenimente, servire și check-in."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ Când membrii vizitează site-ul tău B1.church, văd site-ul public al biserici
 
 ## Află mai multe
 
-- [Începerea utilizării](./getting-started/) -- Creează-ți contul, autentifică-te și află cum să navighezi pe B1.church.
-- [Grupuri](./groups/) -- Alătură-te grupurilor bisericii tale și participă la ele.
-- [Donații](./giving/) -- Fă donații și gestionează-ți contribuțiile.
-- [Evenimente](./events/) -- Răsfoiește și înregistrează-te la evenimentele bisericii viitoare.
-- [Slujire](./serving/) -- Vezi planurile și înscrie-te pentru pozițiile de voluntar.
-- [Planuri](./plans/) -- Vezi planurile de slujire și pozițiile tale de voluntar.
-- [Check-In](./checkin/) -- Fă check-in la slujbe, evenimente și înregistrarea oaspeților.
-- [Director comunitar](./community/) -- Găsește și conectează-te cu alți membri.
-- [Conținut](./content/) -- Predici, Biblia, versetul zilei și transmisiuni live. (Redarea lecțiilor s-a mutat în [FreePlay](/docs/freeplay/).)
+- [Începerea utilizării](./getting-started/index.md) -- Creează-ți contul, autentifică-te și află cum să navighezi pe B1.church.
+- [Grupuri](./groups/index.md) -- Alătură-te grupurilor bisericii tale și participă la ele.
+- [Donații](./giving/index.md) -- Fă donații și gestionează-ți contribuțiile.
+- [Evenimente](./events/index.md) -- Răsfoiește și înregistrează-te la evenimentele bisericii viitoare.
+- [Slujire](./serving/index.md) -- Vezi planurile și înscrie-te pentru pozițiile de voluntar.
+- [Planuri](./plans/index.md) -- Vezi planurile de slujire și pozițiile tale de voluntar.
+- [Check-In](./checkin/index.md) -- Fă check-in la slujbe, evenimente și înregistrarea oaspeților.
+- [Director comunitar](./community/index.md) -- Găsește și conectează-te cu alți membri.
+- [Conținut](./content/index.md) -- Predici, Biblia, versetul zilei și transmisiuni live. (Redarea lecțiilor s-a mutat în [FreePlay](/docs/freeplay/).)
 
 :::info
 B1.church este complet gratuit pentru biserici și membri. Administratorul bisericii configurează și personalizează site-ul prin B1 Admin. Ca membru, pur și simplu vizitezi URL-ul B1.church al bisericii tale pentru a începe.

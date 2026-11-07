@@ -1,5 +1,6 @@
 ---
 title: "Suivi de la Présence"
+description: "Consultez les tendances de présence, filtrez les rapports par campus, service ou groupe, et exportez la présence des groupes depuis la page Présence dans B1 Admin."
 ---
 
 # Suivi de la Présence

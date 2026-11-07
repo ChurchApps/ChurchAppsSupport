@@ -1,5 +1,7 @@
 ---
-title: "直播"
+title: "在 B1.church 上观看直播"
+sidebar_label: "直播"
+description: "在 B1.church 的直播页面观看您教会的现场崇拜，并与直播同步参与聊天，无需登录。"
 ---
 
 # 直播

@@ -1,5 +1,7 @@
 ---
-title: "Slujire"
+title: "Slujire voluntară și înscriere în B1.church"
+sidebar_label: "Slujire"
+description: "Explorați oportunitățile de voluntariat pe B1.church, înscrieți-vă pentru pozițiile libere, vizualizați alocările dvs. de slujire și anulați înscrierile înainte de termen."
 ---
 
 # Slujire
@@ -14,8 +16,8 @@ Secțiunea Slujire de pe B1.church vă permite să parcurgeți oportunitățile 
 
 - **Parcurgeți oportunitățile de voluntariat** -- Vedeți planurile de slujire viitoare cu posturi libere care au nevoie de voluntari.
 - **Înscrieți-vă pe posturi** -- Alegeți un post și înscrieți-vă singur printr-un singur clic.
-- **Vizualizați planurile dumneavoastră** -- Vedeți [atribuirile de slujire](../plans/viewing-plans) viitoare și trecute.
-- **Răspundeți la atribuiri** -- Acceptați sau refuzați posturile la care ați fost programat, din pagina Planuri sau din secțiunea **Slujiți** de pe Acasă. Dacă planurile dumneavoastră se schimbă după ce ați acceptat, puteți [refuza o atribuire acceptată](../plans/viewing-plans#declining-an-accepted-assignment) până când serviciul se termină.
+- **Vizualizați planurile dumneavoastră** -- Vedeți [atribuirile de slujire](../plans/viewing-plans.md) viitoare și trecute.
+- **Răspundeți la atribuiri** -- Acceptați sau refuzați posturile la care ați fost programat, din pagina Planuri sau din secțiunea **Slujiți** de pe Acasă. Dacă planurile dumneavoastră se schimbă după ce ați acceptat, puteți [refuza o atribuire acceptată](../plans/viewing-plans.md#declining-an-accepted-assignment) până când serviciul se termină.
 - **Eliminați înscrierile** -- Anulați o înscriere proprie dacă planurile dumneavoastră se schimbă (înainte de termen).
 
 ## Cum funcționează
@@ -28,5 +30,5 @@ Doar posturile pe care administratorul bisericii dumneavoastră le-a activat pen
 
 ## Aflați mai multe
 
-- [Înscrierea voluntarilor](./volunteer-signup) -- Ghid pas cu pas pentru parcurgerea și înscrierea pe posturile de voluntariat
-- [Vizualizarea planurilor](../plans/viewing-plans) -- Vedeți planurile de slujire și ordinele de slujire care vă sunt atribuite
+- [Înscrierea voluntarilor](./volunteer-signup.md) -- Ghid pas cu pas pentru parcurgerea și înscrierea pe posturile de voluntariat
+- [Vizualizarea planurilor](../plans/viewing-plans.md) -- Vedeți planurile de slujire și ordinele de slujire care vă sunt atribuite

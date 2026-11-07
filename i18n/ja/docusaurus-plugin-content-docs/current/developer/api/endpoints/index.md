@@ -1,5 +1,6 @@
 ---
 title: "エンドポイントリファレンス"
+description: "モジュール別に ChurchApps API のすべてのエンドポイントを確認し、各ルートの HTTP メソッド、パス、認証、権限を把握できます。API を呼び出す前に、一括保存とエラーの規則も学べます。"
 ---
 
 # エンドポイントリファレンス
@@ -89,10 +90,10 @@ Authorization: Bearer <token>
 
 | モジュール | ベースパス | 説明 |
 |--------|-----------|-------------|
-| [認証](./authentication) | `/membership/users`, `/membership/oauth` | ログイン、登録、JWT トークン、OAuth、権限 |
-| [メンバーシップ](./membership) | `/membership/*` | 人、教会、グループ、世帯、役割、フォーム、設定 |
-| [出欠](./attendance) | `/attendance/*` | キャンパス、礼拝、セッション、来館記録、チェックイン記録 |
-| [コンテンツ](./content) | `/content/*` | ページ、説教、イベント、ファイル、ギャラリー、聖書、配信 |
-| [献金](./giving) | `/giving/*` | 献金、ファンド、決済ゲートウェイ、定期支払い |
-| [メッセージング](./messaging) | `/messaging/*` | 会話、通知、デバイス、SMS |
-| [Doing](./doing) | `/doing/*` | プラン、タスク、担当割り当て、自動化、スケジューリング |
+| [認証](./authentication.md) | `/membership/users`, `/membership/oauth` | ログイン、登録、JWT トークン、OAuth、権限 |
+| [メンバーシップ](./membership.md) | `/membership/*` | 人、教会、グループ、世帯、役割、フォーム、設定 |
+| [出欠](./attendance.md) | `/attendance/*` | キャンパス、礼拝、セッション、来館記録、チェックイン記録 |
+| [コンテンツ](./content.md) | `/content/*` | ページ、説教、イベント、ファイル、ギャラリー、聖書、配信 |
+| [献金](./giving.md) | `/giving/*` | 献金、ファンド、決済ゲートウェイ、定期支払い |
+| [メッセージング](./messaging.md) | `/messaging/*` | 会話、通知、デバイス、SMS |
+| [Doing](./doing.md) | `/doing/*` | プラン、タスク、担当割り当て、自動化、スケジューリング |

@@ -1,5 +1,6 @@
 ---
 title: "Indholdsudbydere"
+description: "Gennemse og download lektionsmateriale, videoer og billeder fra Lessons.church, Dropbox, OneDrive og andre udbydere i FreePlay TV-appen."
 ---
 
 # Indholdsudbydere
@@ -14,7 +15,7 @@ Indholdsudbydere er eksterne tjenester, der leverer lektionsmaterialer, videoer 
 
 FreePlay inkluderer i øjeblikket følgende udbydere:
 
-- **[Lessons.church](../../lessons-church/)** - Gratis, open-source børneminister læreplan
+- **[Lessons.church](../../lessons-church/index.md)** - Gratis, open-source børneminister læreplan
 - **Bible Project** - Videoer og ressourcer om Bibelen
 - **SignPresenter** - Præsentations- og signage indhold til kirker
 - **B1.church** - Indhold fra din egen B1 kirkeopsætning
@@ -31,5 +32,5 @@ Forbundne udbydere vises i sidelinjen på venstre side af skærmen. Du kan skift
 
 ## I dette afsnit
 
-- **[Forbindelse til udbydere](./connecting-providers)** - Hvordan man godkender og forbinder
-- **[Browsing og download af indhold](./browsing-content)** - Naviger mapper, download filer og afspil indhold
+- **[Forbindelse til udbydere](./connecting-providers.md)** - Hvordan man godkender og forbinder
+- **[Browsing og download af indhold](./browsing-content.md)** - Naviger mapper, download filer og afspil indhold

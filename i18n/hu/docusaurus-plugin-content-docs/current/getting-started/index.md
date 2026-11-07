@@ -1,5 +1,7 @@
 ---
-title: "Első lépések"
+title: "Első lépések a ChurchApps-szal: az első 15 perc"
+sidebar_label: "Első lépések"
+description: "Új ChurchApps-fiók beállítása néhány lépésben: egyházi adatok megadása, személyek importálása a B1 Adminba, csapat meghívása és első projekt kiválasztása."
 ---
 
 # Első lépések

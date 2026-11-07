@@ -1,12 +1,13 @@
 ---
 title: "Applications connectées et OAuth"
+description: "Connectez des applications tierces aux données B1 via OAuth 2.0, sans mot de passe ni clé partagés ; révoquez l’accès à tout moment dans B1 Admin."
 ---
 
 # Applications connectées et OAuth
 
 <div class="article-intro">
 
-L'API B1 prend en charge OAuth 2.0 afin qu'une application tierce puisse demander à chaque administrateur d'église l'autorisation d'accéder à ses données -- sans que l'église ne partage jamais un mot de passe ou une clé d'API. Une **application connectée** est un jeton OAuth approuvé par un administrateur d'église ; le révoquer coupe l'accès de l'application tierce en un clic. Utilisez cette voie pour les connecteurs SaaS multi-locataires. Pour une intégration mono-église, privilégiez les [clés d'API](./api-keys).
+L'API B1 prend en charge OAuth 2.0 afin qu'une application tierce puisse demander à chaque administrateur d'église l'autorisation d'accéder à ses données -- sans que l'église ne partage jamais un mot de passe ou une clé d'API. Une **application connectée** est un jeton OAuth approuvé par un administrateur d'église ; le révoquer coupe l'accès de l'application tierce en un clic. Utilisez cette voie pour les connecteurs SaaS multi-locataires. Pour une intégration mono-église, privilégiez les [clés d'API](./api-keys.md).
 
 </div>
 
@@ -27,7 +28,7 @@ L'API B1 prend en charge OAuth 2.0 afin qu'une application tierce puisse demande
 | **Application connectée** | Une paire `(client, administrateur d'église)` spécifique pour laquelle l'administrateur a accordé l'accès au client. Chaque application connectée est adossée à un jeton de rafraîchissement OAuth. |
 | **Jeton d'accès** | Un JWT à courte durée de vie (≈ 7 jours) que le client utilise pour les appels API. Même forme qu'un JWT utilisateur -- `Authorization: Bearer <jwt>`. |
 | **Jeton de rafraîchissement** | Une chaîne opaque de longue durée (≈ 90 jours) que le client utilise pour générer de nouveaux jetons d'accès. |
-| **Portée** | Restreint ce que le jeton d'accès peut faire -- voir le [catalogue des portées](./api-keys#scopes). |
+| **Portée** | Restreint ce que le jeton d'accès peut faire -- voir le [catalogue des portées](./api-keys.md#scopes). |
 
 ## Types de flux
 
@@ -162,7 +163,7 @@ La liste exclut automatiquement les jetons expirés.
 
 ## Portées et consentement
 
-Les chaînes de portées sont le même catalogue que pour les [clés d'API](./api-keys#scopes). Bonnes pratiques pour les clients :
+Les chaînes de portées sont le même catalogue que pour les [clés d'API](./api-keys.md#scopes). Bonnes pratiques pour les clients :
 
 - **Demandez les portées les plus restreintes qui fonctionnent.** Les églises remarquent si vous demandez `donations:write` alors que vous n'avez besoin que de lire les personnes.
 - **Utilisez un jeton de rafraîchissement accompagné de jetons d'accès à courte durée de vie.** Les jetons d'accès de longue durée sont plus difficiles à révoquer rapidement.
@@ -183,7 +184,7 @@ Les URI de redirection enregistrés doivent correspondre exactement au `redirect
 
 ### Enregistrement dynamique de client
 
-`POST /membership/oauth/register` (public, RFC 7591) permet à un client, comme le connecteur MCP de claude.ai, de s'enregistrer lui-même. Il est annoncé dans le document `/.well-known/oauth-authorization-server` de l'API -- voir [Serveur MCP → Découverte OAuth](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (public, RFC 7591) permet à un client, comme le connecteur MCP de claude.ai, de s'enregistrer lui-même. Il est annoncé dans le document `/.well-known/oauth-authorization-server` de l'API -- voir [Serveur MCP → Découverte OAuth](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ Sur la page de consentement de B1Admin, un client qui s'est enregistré lui-mêm
 
 ## Prise en charge par le SDK
 
-Le paquet `@churchapps/integration-sdk` encapsule chaque flux OAuth avec des fonctions d'aide typées -- `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Consultez le README du paquet et [Webhooks](./webhooks#sdk-support) pour un exemple de bout en bout.
+Le paquet `@churchapps/integration-sdk` encapsule chaque flux OAuth avec des fonctions d'aide typées -- `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Consultez le README du paquet et [Webhooks](./webhooks.md#sdk-support) pour un exemple de bout en bout.

@@ -1,5 +1,6 @@
 ---
 title: "Přehled plánů"
+description: "Přehled přiřazení dobrovolníků na mnoho termínů v B1 Admin: najděte neobsazené pozice a z jedné mřížky doplňte nebo e-mailem oslovte tým."
 ---
 
 # Přehled plánů

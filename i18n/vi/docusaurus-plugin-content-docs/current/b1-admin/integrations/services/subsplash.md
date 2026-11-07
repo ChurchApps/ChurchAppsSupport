@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Kết nối quyên góp, người mới và phản hồi biểu mẫu từ Subsplash với B1 qua Zapier, để khoản dâng và hồ sơ tự động vào B1 Admin."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Bật Zap. Các khoản quyên góp Subsplash mới sau đó sẽ xuất hiện 
 
 ## Xem thêm
 
-- [Donorbox](./donorbox) — cùng dạng công thức, nhưng dùng nền tảng quyên góp khác
-- [Zapier (tổng quan)](../zapier) — phần B1 của mọi công thức Zapier
+- [Donorbox](./donorbox.md) — cùng dạng công thức, nhưng dùng nền tảng quyên góp khác
+- [Zapier (tổng quan)](../zapier.md) — phần B1 của mọi công thức Zapier
 - [Hướng dẫn tích hợp Zapier của Subsplash](https://support.subsplash.com/en/articles/9825926-zapier-integration) (tài liệu của Subsplash)

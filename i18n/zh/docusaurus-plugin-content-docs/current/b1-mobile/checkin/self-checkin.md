@@ -1,5 +1,7 @@
 ---
-title: "自助签到"
+title: "通过 B1 Mobile 应用自助签到"
+sidebar_label: "自助签到"
+description: "通过 B1 Mobile 应用为自己和家人办理礼拜签到，包括选择礼拜时间并为每个人分配小组。"
 ---
 
 # 自助签到
@@ -13,7 +15,7 @@ title: "自助签到"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in)您的账户
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md)您的账户
 - 确保您的[家庭成员](../profile/household.md)已在个人资料中设置
 
 </div>

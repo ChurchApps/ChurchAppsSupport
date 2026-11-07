@@ -1,5 +1,7 @@
 ---
-title: "Contenido"
+title: "Funciones de contenido en la aplicación B1 Mobile"
+sidebar_label: "Contenido"
+description: "Encuentre sermones, transmisiones en vivo, lectura bíblica y el Versículo del día en la aplicación B1 Mobile, y vea qué funciones de contenido ha activado su iglesia."
 ---
 
 # Contenido
@@ -37,13 +39,13 @@ Accede al currículo y materiales de aprendizaje de tu iglesia a través de la p
 Las funciones de contenido están disponibles a través del menú lateral de la aplicación. El administrador de tu iglesia decide qué funciones de contenido están habilitadas, por lo que puede que no veas todas las opciones listadas arriba. Si falta una función en particular, es posible que tu iglesia aún no la tenga configurada.
 
 :::info
-Las funciones de contenido son configuradas por el administrador de tu iglesia a través de [B1 Admin](../../b1-admin/). Si no ves una función que esperas, contacta a la oficina de tu iglesia.
+Las funciones de contenido son configuradas por el administrador de tu iglesia a través de [B1 Admin](../../b1-admin/index.md). Si no ves una función que esperas, contacta a la oficina de tu iglesia.
 :::
 
 ## Próximos Pasos
 
-- [Sermones](./sermons) -- Explora y mira sermones grabados
-- [Transmisión en Vivo](./live-streaming) -- Mira transmisiones en vivo
-- [Biblia](./bible) -- Lee las Escrituras en el lector integrado
-- [Versículo del Día](./verse-of-the-day) -- Ve el versículo diario de hoy
-- [Lecciones](./lessons) -- Accede al currículo y materiales de aprendizaje
+- [Sermones](./sermons.md) -- Explora y mira sermones grabados
+- [Transmisión en Vivo](./live-streaming.md) -- Mira transmisiones en vivo
+- [Biblia](./bible.md) -- Lee las Escrituras en el lector integrado
+- [Versículo del Día](./verse-of-the-day.md) -- Ve el versículo diario de hoy
+- [Lecciones](./lessons.md) -- Accede al currículo y materiales de aprendizaje

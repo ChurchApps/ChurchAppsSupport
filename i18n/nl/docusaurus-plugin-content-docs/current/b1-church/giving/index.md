@@ -1,5 +1,7 @@
 ---
-title: "Geven"
+title: "Online geven en donaties in B1.church"
+sidebar_label: "Geven"
+description: "Doe online een gift aan je kerk in B1.church zonder account, of log in om terugkerende giften, betaalmethoden en giftenoverzichten te beheren."
 ---
 
 # Geven

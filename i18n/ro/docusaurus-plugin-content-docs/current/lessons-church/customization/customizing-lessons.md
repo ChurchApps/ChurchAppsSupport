@@ -1,5 +1,6 @@
 ---
 title: "Personalizarea lecțiilor"
+description: "Eliminați, ascundeți sau reordonați secțiuni și roluri dintr-o lecție Lessons.church și alegeți dacă modificările se aplică unei clase sau tuturor."
 ---
 
 # Personalizarea lecțiilor

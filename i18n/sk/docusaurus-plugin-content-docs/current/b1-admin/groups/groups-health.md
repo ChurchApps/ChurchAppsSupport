@@ -1,5 +1,6 @@
 ---
 title: "Kontrola stavu skupín"
+description: "Kontrolujte zdravie skupín v B1 Admin: 90-dňová tabuľka členov, pripojení, odchodov, odlivu a priemernej účasti pomôže nájsť skupiny vyžadujúce pozornosť."
 ---
 
 # Kontrola stavu skupín
@@ -13,8 +14,8 @@ Panel Kontrola stavu skupín vám poskytuje prehľad o tom, ako sa darí všetk�
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- Na zobrazenie zmysluplných údajov potrebujete aspoň niekoľko skupín s členmi. Pozri [Vytváranie skupín](creating-groups).
-- Údaje o účasti sa čerpajú zo zaznamenaných stretnutí. Pozri sekciu [Účasť](../attendance/).
+- Na zobrazenie zmysluplných údajov potrebujete aspoň niekoľko skupín s členmi. Pozri [Vytváranie skupín](./creating-groups.md).
+- Údaje o účasti sa čerpajú zo zaznamenaných stretnutí. Pozri sekciu [Účasť](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Kliknutím na názov skupiny sa dostanete priamo na stránku s jej detailmi, kde
 
 ## Súvisiace články
 
-- [Vytváranie skupín](creating-groups) — nastavenie skupín
-- [Členovia skupiny](group-members) — správa členstva v skupine
-- [Zaznamenávanie účasti](../attendance/tracking-attendance) — záznam stretnutí, ktoré sa premietajú do tohto panela
+- [Vytváranie skupín](./creating-groups.md) — nastavenie skupín
+- [Členovia skupiny](./group-members.md) — správa členstva v skupine
+- [Zaznamenávanie účasti](../attendance/tracking-attendance.md) — záznam stretnutí, ktoré sa premietajú do tohto panela

@@ -1,5 +1,7 @@
 ---
-title: "Khotbah"
+title: "Menelusuri Khotbah di Situs B1.church Anda"
+sidebar_label: "Khotbah"
+description: "Telusuri dan tonton khotbah yang direkam dari pustaka gereja Anda di situs B1.church, dikelompokkan menurut seri atau daftar putar. Tanpa perlu masuk."
 ---
 
 # Khotbah

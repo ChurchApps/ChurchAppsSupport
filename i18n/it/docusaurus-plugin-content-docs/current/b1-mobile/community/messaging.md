@@ -1,5 +1,6 @@
 ---
 title: "Messaggi"
+description: "Avvia, leggi, modifica ed elimina conversazioni private uno a uno con i membri della chiesa in B1 Mobile, e trova le persone nella rubrica."
 ---
 
 # Messaggi
@@ -13,7 +14,7 @@ B1 Mobile include messaggi privati in modo da poter avere conversazioni uno a un
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- [Installa B1 Mobile](../getting-started/installing) e [accedi](../getting-started/logging-in) al tuo account
+- [Installa B1 Mobile](../getting-started/installing.md) e [accedi](../getting-started/logging-in.md) al tuo account
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile include messaggi privati in modo da poter avere conversazioni uno a un
 ## Avvio di una nuova conversazione
 
 1. Dalla schermata di messaggistica, tocca l'opzione per avviare una nuova conversazione.
-2. Usa il campo di ricerca per trovare il membro che desideri messaggiare. Puoi anche trovare membri attraverso la [Member Directory](./member-directory).
+2. Usa il campo di ricerca per trovare il membro che desideri messaggiare. Puoi anche trovare membri attraverso la [Member Directory](./member-directory.md).
 3. Seleziona il membro dai risultati di ricerca.
 4. Digita il tuo messaggio e tocca **Send**.
 
@@ -52,11 +53,11 @@ Usa la messaggistica per coordinare con i tuoi colleghi volontari, seguire qualc
 :::
 
 :::info
-Abilita [push notifications](./notifications) per ricevere un avviso quando qualcuno ti invia un nuovo messaggio, anche quando l'app non è aperta.
+Abilita [push notifications](./notifications.md) per ricevere un avviso quando qualcuno ti invia un nuovo messaggio, anche quando l'app non è aperta.
 :::
 
 ## Articoli correlati
 
-- [Member Directory](./member-directory) -- Trova membri per messaggiare
-- [Notifications](./notifications) -- Ricevi notifiche sui nuovi messaggi
-- [Groups](../groups/) -- Partecipa alle conversazioni di gruppo
+- [Member Directory](./member-directory.md) -- Trova membri per messaggiare
+- [Notifications](./notifications.md) -- Ricevi notifiche sui nuovi messaggi
+- [Groups](../groups/index.md) -- Partecipa alle conversazioni di gruppo

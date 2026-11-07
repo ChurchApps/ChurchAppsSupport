@@ -1,5 +1,6 @@
 ---
 title: "Vytváření skupin"
+description: "Založte v B1 Admin novou skupinu: od výběru kategorie a názvu po nastavení způsobu přihlašování, štítků, zpráv a docházky."
 ---
 
 # Vytváření skupin

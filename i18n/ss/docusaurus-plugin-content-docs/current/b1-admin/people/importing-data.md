@@ -1,5 +1,6 @@
 ---
 title: "Kungenisa Imininingwane"
+description: "Ngenisa bantfu, emaqembu, kutfola netiminikelo letikhona ku-B1 Admin ngetulusi le-B1 Transfer, noma khipha sigcino sedatha yakho nanoma nini."
 ---
 
 # Kungenisa Imininingwane

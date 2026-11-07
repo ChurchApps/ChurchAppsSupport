@@ -1,5 +1,6 @@
 ---
 title: "Donation Reports"
+description: "Prehliadajte súhrny darov, stratu darcov a údaje na úrovni dávok v B1 Admin pomocou prehľadu Donations Summary, zobrazenia Lapsed Givers a exportov CSV."
 ---
 
 # Donation Reports

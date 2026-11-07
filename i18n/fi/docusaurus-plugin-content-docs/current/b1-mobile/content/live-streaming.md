@@ -1,5 +1,7 @@
 ---
-title: "Suora lähetys"
+title: "Suorien lähetysten katsominen B1 Mobile -sovelluksessa"
+sidebar_label: "Suora lähetys"
+description: "Seuraa seurakuntasi suoraa lähetystä B1 Mobile -sovelluksessa, avaa Stream-näkymä valikosta tai saarnojen laskurista ja katso, milloin jumalanpalvelukset alkavat."
 ---
 
 # Suora lähetys
@@ -13,14 +15,14 @@ B1 Mobile -sovelluksen avulla voit katsoa seurakuntasi suoran lähetyksen suoraa
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu sisään](../getting-started/logging-in) tilillesi
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu sisään](../getting-started/logging-in.md) tilillesi
 - Seurakunnassasi on oltava määritettynä suoran lähetyksen aikataulu
 
 </div>
 
 ## Suoran lähetyksen katseleminen
 
-1. Avaa **Lähetys**-näkymä valikosta tai napauta laskuria [Saarnat](./sermons)-näkymässä, kun suora lähetys on alkamassa.
+1. Avaa **Lähetys**-näkymä valikosta tai napauta laskuria [Saarnat](./sermons.md)-näkymässä, kun suora lähetys on alkamassa.
 2. Jos jumalanpalvelus lähetetään parhaillaan, videosoitin latautuu automaattisesti ja lähetys alkaa toistua.
 3. Katso lähetys suoraan sovelluksessa.
 
@@ -31,7 +33,7 @@ Kun suora lähetys ei ole käynnissä, näkymä voi näyttää offline-sisältö
 Suoraan lähetykseen pääsee kahdella tavalla:
 
 - **Valikko** -- Avaa valikko ja napauta **Lähetys**, jolloin pääset suoraan suoran lähetyksen näkymään.
-- **Saarnat-näkymä** -- Kun suora lähetys on ajastettu seuraavien 24 tunnin sisään, [Saarnat](./sermons)-näkymässä näkyy laskuri. Kun lähetys alkaa, voit siirtyä siihen sieltä.
+- **Saarnat-näkymä** -- Kun suora lähetys on ajastettu seuraavien 24 tunnin sisään, [Saarnat](./sermons.md)-näkymässä näkyy laskuri. Kun lähetys alkaa, voit siirtyä siihen sieltä.
 
 ## Ennen jumalanpalvelusta ja sen jälkeen
 
@@ -46,5 +48,5 @@ Jos lähetysnäkymässä näkyy laskuri tai offline-viesti, seuraava ajastettu j
 Suora lähetysnäkymä on käytettävissä, kun seurakuntasi on määrittänyt lähetyksen aikataulun. Jos sovelluksen valikossa ei näy **Lähetys**-vaihtoehtoa, seurakunnassasi ei ehkä ole otettu suoraa lähetystä käyttöön. Pyydä lisätietoja seurakuntasi ylläpitäjältä.
 
 :::tip
-Tarkista [Saarnat](./sermons)-näkymästä laskuri, joka näyttää, milloin seuraava suora lähetys alkaa.
+Tarkista [Saarnat](./sermons.md)-näkymästä laskuri, joka näyttää, milloin seuraava suora lähetys alkaa.
 :::

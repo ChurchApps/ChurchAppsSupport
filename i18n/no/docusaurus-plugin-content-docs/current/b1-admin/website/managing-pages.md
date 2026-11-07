@@ -1,5 +1,6 @@
 ---
 title: "Administrere sider"
+description: "Lag, rediger og organiser sider og navigasjon i visningen for nettstedsider i B1 Admin, inkludert sideinnstillinger, omdirigeringer og nettstedmaler."
 ---
 
 # Administrere sider
@@ -13,13 +14,13 @@ Visningen Nettstedssider er det sentrale stedet for å opprette, redigere og org
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Fullfør [førstegangsoppsettet](initial-setup) for å konfigurere domenet og de grunnleggende nettstedsinnstillingene
-- Ha innhold og bilder klare. Last opp mediefilene først i [Filer](files)-behandleren.
+- Fullfør [førstegangsoppsettet](./initial-setup.md) for å konfigurere domenet og de grunnleggende nettstedsinnstillingene
+- Ha innhold og bilder klare. Last opp mediefilene først i [Filer](./files.md)-behandleren.
 
 </div>
 
 :::info
-Hvis kirken har mer enn ett nettsted (for eksempel egne nettsteder for hver menighet), bruker du nettstedsvelgeren øverst i visningen Nettstedssider for å bytte mellom dem. Hvert nettsted har sine egne sider, sin egen navigasjon og egne [utseende](appearance)-innstillinger.
+Hvis kirken har mer enn ett nettsted (for eksempel egne nettsteder for hver menighet), bruker du nettstedsvelgeren øverst i visningen Nettstedssider for å bytte mellom dem. Hvert nettsted har sine egne sider, sin egen navigasjon og egne [utseende](./appearance.md)-innstillinger.
 :::
 
 ## Forstå sidetyper
@@ -35,7 +36,7 @@ Du kan gjøre om en hvilken som helst automatisk generert side til en egendefine
 
 1. Klikk på knappen **Legg til side** øverst til høyre i visningen Nettstedssider.
 2. Velg en sidetype (tom eller en mal) og gi siden et navn.
-3. Klikk på **Rediger innhold** ved siden av en side for å åpne [sideredigeringen](page-editor), der du kan legge til seksjoner, tekst, bilder og andre elementer.
+3. Klikk på **Rediger innhold** ved siden av en side for å åpne [sideredigeringen](./page-editor.md), der du kan legge til seksjoner, tekst, bilder og andre elementer.
 4. Klikk på **Sideinnstillinger** ved siden av en side for å oppdatere sidetittel, URL-bane og andre metadata.
 5. Klikk på sidens bane i kolonnen **Bane** for å åpne den levende siden i en ny fane og se nøyaktig hvordan den ser ut for besøkende.
 
@@ -112,10 +113,10 @@ Hvis du bygger nettstedet fra grunnen av, kan du komme raskt i gang med en **net
 3. Når du har funnet en du liker, klikker du på **Bruk mal**.
 4. Sider som ikke finnes fra før, opprettes og legges til i navigasjonen. Eksisterende sider blir stående som de er.
 
-Etter at du har brukt en mal, åpner du hver side i [sideredigeringen](page-editor) og erstatter plassholdertekst og -bilder med kirkens egentlige innhold.
+Etter at du har brukt en mal, åpner du hver side i [sideredigeringen](./page-editor.md) og erstatter plassholdertekst og -bilder med kirkens egentlige innhold.
 
 :::info
-Nettstedsmaler oppretter sidestruktur og navigasjon. De overstyrer ikke nettstedets fargevalg eller skrifttyper -- de styres av [Utseende](appearance).
+Nettstedsmaler oppretter sidestruktur og navigasjon. De overstyrer ikke nettstedets fargevalg eller skrifttyper -- de styres av [Utseende](./appearance.md).
 :::
 
 ## Bildelysboks
@@ -124,7 +125,7 @@ Når besøkende klikker på et bilde på nettstedet, åpnes det i en lysboks ove
 
 ## Neste steg
 
-- [Førstegangsoppsett](initial-setup) -- Veiledning for første gangs oppsett
-- [Bruke sideredigeringen](page-editor) -- Lær hvordan du bygger og stiler sideinnhold
-- [Utseende](appearance) -- Tilpass nettstedets visuelle tema
-- [Filer](files) -- Last opp og administrer mediefiler til sidene
+- [Førstegangsoppsett](./initial-setup.md) -- Veiledning for første gangs oppsett
+- [Bruke sideredigeringen](./page-editor.md) -- Lær hvordan du bygger og stiler sideinnhold
+- [Utseende](./appearance.md) -- Tilpass nettstedets visuelle tema
+- [Filer](./files.md) -- Last opp og administrer mediefiler til sidene

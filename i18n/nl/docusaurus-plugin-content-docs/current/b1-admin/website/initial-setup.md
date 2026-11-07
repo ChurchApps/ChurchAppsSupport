@@ -1,5 +1,7 @@
 ---
-title: "Initiële installatie"
+title: "Aan de slag met je B1 Admin-website"
+sidebar_label: "Initiële installatie"
+description: "Stel je B1 Admin-kerkwebsite in: koppel een subdomein of eigen domein, maak je startpagina, kies huiskleuren en logo en bouw de navigatie."
 ---
 
 # Initiële installatie
@@ -45,7 +47,7 @@ Vraag de persoon die uw kerkrekening hebt ingesteld om u de machtiging "Kerkinst
 6. Nadat u een sectie hebt toegevoegd, klikt u opnieuw op **Inhoud toevoegen** om tekst, afbeeldingen, video's, kaarten, formulieren en meer in te voegen door deze in uw sectie te slepen.
 
 :::info
-Voor gedetailleerde instructies over het werken met pagina's, navigatie en paginatypen, raadpleegt u [Pagina's beheren](managing-pages).
+Voor gedetailleerde instructies over het werken met pagina's, navigatie en paginatypen, raadpleegt u [Pagina's beheren](./managing-pages.md).
 :::
 
 ## Site-weergave configureren
@@ -57,7 +59,7 @@ Voor gedetailleerde instructies over het werken met pagina's, navigatie en pagin
 5. Configureer uw **Site Footer** met de contactgegevens en koppelingen van uw kerk.
 
 :::info
-Wijzigingen die u in Weergave aanbrengt, zijn van toepassing op uw hele website. Zie de pagina [Weergave](appearance) voor gedetailleerde instructies voor elke instelling.
+Wijzigingen die u in Weergave aanbrengt, zijn van toepassing op uw hele website. Zie de pagina [Weergave](./appearance.md) voor gedetailleerde instructies voor elke instelling.
 :::
 
 ## Navigatie instellen
@@ -70,6 +72,6 @@ Uw navigatiekoppen verschijnen in de linkerzijbalk van de weergave Website Pages
 
 ## Volgende stappen
 
-- [Pagina's beheren](managing-pages) -- Leer hoe u in detail met pagina's en navigatie werkt
-- [Weergave](appearance) -- Verfijn de kleuren, lettertypen en indeling van uw site
-- [Bestanden](files) -- Upload afbeeldingen en documenten voor uw website
+- [Pagina's beheren](./managing-pages.md) -- Leer hoe u in detail met pagina's en navigatie werkt
+- [Weergave](./appearance.md) -- Verfijn de kleuren, lettertypen en indeling van uw site
+- [Bestanden](./files.md) -- Upload afbeeldingen en documenten voor uw website

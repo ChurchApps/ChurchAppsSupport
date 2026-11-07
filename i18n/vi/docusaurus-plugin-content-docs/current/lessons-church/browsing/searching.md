@@ -1,5 +1,6 @@
 ---
 title: "Tìm kiếm"
+description: "Tìm chương trình, khóa học và bài học trong thư viện Lessons.church theo từ khóa hoặc câu chuyện Kinh Thánh, và cách kết quả được xếp hạng và gắn nhãn."
 ---
 
 # Tìm kiếm

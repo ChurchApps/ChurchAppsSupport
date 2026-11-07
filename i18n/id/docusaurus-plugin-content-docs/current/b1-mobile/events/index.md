@@ -1,5 +1,7 @@
 ---
-title: "Acara"
+title: "Acara Gereja dan Pendaftaran di B1 Mobile"
+sidebar_label: "Acara"
+description: "Jelajahi acara gereja mendatang di B1 Mobile dan daftarkan diri Anda serta anggota keluarga untuk acara yang pendaftarannya dibuka."
 ---
 
 # Acara
@@ -23,10 +25,10 @@ Acara dapat menampilkan status yang berbeda:
 
 ## Yang Perlu Anda Siapkan
 
-- [B1 Mobile terpasang](../getting-started/installing) dan [sudah masuk](../getting-started/logging-in)
+- [B1 Mobile terpasang](../getting-started/installing.md) dan [sudah masuk](../getting-started/logging-in.md)
 - Gereja Anda harus mengaktifkan pendaftaran acara untuk acara tersebut
 
 ## Pelajari Selengkapnya
 
-- [Mendaftar untuk Acara](./registering) -- Panduan langkah demi langkah untuk mendaftar acara melalui ponsel
-- [Self Check-In](../checkin/self-checkin) -- Lakukan check-in saat Anda tiba di acara
+- [Mendaftar untuk Acara](./registering.md) -- Panduan langkah demi langkah untuk mendaftar acara melalui ponsel
+- [Self Check-In](../checkin/self-checkin.md) -- Lakukan check-in saat Anda tiba di acara

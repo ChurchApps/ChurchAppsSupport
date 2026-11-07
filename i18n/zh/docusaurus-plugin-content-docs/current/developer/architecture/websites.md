@@ -1,12 +1,13 @@
 ---
 title: "网站路由与多站点"
+description: "B1.church 如何将子域名和自定义域名映射到对应的教会或次要网站，以及处理自定义域名 TLS 的 Caddy 边缘节点。"
 ---
 
 # 网站路由与多站点
 
 <div class="article-intro">
 
-一个教会现在可以提供多个不同的网站，每个网站都可以位于 `*.b1.church` 子域名上，也可以位于完全自定义的、归教会所有的域名上。本页梳理的是位于构建器*下层*的路由层：传入请求如何同时解析到某个教会**以及**某个具体站点，多站点的数据模型（即保证所有既有站点渲染不变的 `siteId` 哨兵值），以及自定义域名的边缘层——即在 EC2 上自行管理的 Caddy 代理，它负责终止 TLS，并将每个教会域名重写到其 `*.b1.church` 上游。关于请求解析完成后实际渲染的内容（页面/区块/元素树），请参阅[网站构建器](./website-builder)。
+一个教会现在可以提供多个不同的网站，每个网站都可以位于 `*.b1.church` 子域名上，也可以位于完全自定义的、归教会所有的域名上。本页梳理的是位于构建器*下层*的路由层：传入请求如何同时解析到某个教会**以及**某个具体站点，多站点的数据模型（即保证所有既有站点渲染不变的 `siteId` 哨兵值），以及自定义域名的边缘层——即在 EC2 上自行管理的 Caddy 代理，它负责终止 TLS，并将每个教会域名重写到其 `*.b1.church` 上游。关于请求解析完成后实际渲染的内容（页面/区块/元素树），请参阅[网站构建器](./website-builder.md)。
 
 </div>
 
@@ -201,7 +202,7 @@ WHERE d.domainName NOT LIKE '%www.%'
 
 ### 当前状态——静态配置，无运行时状态
 
-该主机（位于永久弹性 IP 之后的 Windows EC2）从一份**静态的 Caddyfile**运行 Caddy：按需 TLS，其 `ask` 指向 `/membership/domains/authorize`；另外还有一个主机→上游映射文件，由计划任务每 5 分钟从 `/membership/domains/hostmap` 刷新一次，并以优雅的 `caddy reload` 结束。配置在重启后依然有效，无需任何运行时状态，也无需重新"预热"——未知的 SNI 会被 **TLS 拒绝**（对 `authorize` 拒绝的主机不会签发证书），而已授权但尚未映射的主机（同步窗口内的全新域名）则会收到干净的 404。新域名在保存后约 5 分钟内即可路由；其证书会在首次访问时签发。构建/设置、运维以及经过实践检验的注意事项：参见 [Caddy 自定义域名代理](../deployment/caddy-proxy)。
+该主机（位于永久弹性 IP 之后的 Windows EC2）从一份**静态的 Caddyfile**运行 Caddy：按需 TLS，其 `ask` 指向 `/membership/domains/authorize`；另外还有一个主机→上游映射文件，由计划任务每 5 分钟从 `/membership/domains/hostmap` 刷新一次，并以优雅的 `caddy reload` 结束。配置在重启后依然有效，无需任何运行时状态，也无需重新"预热"——未知的 SNI 会被 **TLS 拒绝**（对 `authorize` 拒绝的主机不会签发证书），而已授权但尚未映射的主机（同步窗口内的全新域名）则会收到干净的 404。新域名在保存后约 5 分钟内即可路由；其证书会在首次访问时签发。构建/设置、运维以及经过实践检验的注意事项：参见 [Caddy 自定义域名代理](../deployment/caddy-proxy.md)。
 
 ### 旧版运行时推送——回滚路径，待删除
 
@@ -209,8 +210,8 @@ WHERE d.domainName NOT LIKE '%www.%'
 
 ## 相关页面
 
-- [Caddy 自定义域名代理](../deployment/caddy-proxy) —— 边缘主机本身：全新主机的设置、WinSW 服务、映射同步任务以及运维注意事项
-- [网站构建器](./website-builder) —— 页面/区块/元素树、渲染器、博客、SEO 和 AI 生成（请求解析到某个教会/站点之后渲染的内容）
-- [内容端点](../api/endpoints/content) —— 页面、区块、链接和全局样式的 REST 接口，现均支持 `?siteId=`
-- [B1App](../web-apps/b1-app) —— 承载中间件和 `[sdSlug]` 路由的 Next.js 应用
-- [Web 应用部署](../deployment/web-apps) —— B1App 如何部署到 Vercel
+- [Caddy 自定义域名代理](../deployment/caddy-proxy.md) —— 边缘主机本身：全新主机的设置、WinSW 服务、映射同步任务以及运维注意事项
+- [网站构建器](./website-builder.md) —— 页面/区块/元素树、渲染器、博客、SEO 和 AI 生成（请求解析到某个教会/站点之后渲染的内容）
+- [内容端点](../api/endpoints/content.md) —— 页面、区块、链接和全局样式的 REST 接口，现均支持 `?siteId=`
+- [B1App](../web-apps/b1-app.md) —— 承载中间件和 `[sdSlug]` 路由的 Next.js 应用
+- [Web 应用部署](../deployment/web-apps.md) —— B1App 如何部署到 Vercel

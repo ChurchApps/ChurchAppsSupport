@@ -1,5 +1,6 @@
 ---
 title: "FreePlay-contentprovider"
+description: "Wat een contentprovider moet leveren om een lessenbibliotheek aan FreePlay te koppelen: logo, aanmeldmodel, catalogus- en playlist-endpoints en mediaformaten."
 ---
 
 # FreePlay-contentprovider

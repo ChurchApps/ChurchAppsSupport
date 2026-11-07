@@ -1,5 +1,6 @@
 ---
 title: "Guide : Suivi de la présence à l'église"
+description: "Suivez la présence à l'église dans B1 Admin en configurant les campus et les horaires de services, en l'enregistrant manuellement ou par enregistrement autonome, puis consultez les rapports."
 ---
 
 # Suivi de la présence à l'église

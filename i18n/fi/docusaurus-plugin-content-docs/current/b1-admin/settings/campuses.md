@@ -1,5 +1,6 @@
 ---
 title: "Kampukset"
+description: "Määritä B1 Adminissa kampukset, jotta voit seurata henkilöiden ja ryhmien toimipistettä ja suodattaa henkilöt, osallistumiset ja demografian sijainnin mukaan."
 ---
 
 # Kampukset

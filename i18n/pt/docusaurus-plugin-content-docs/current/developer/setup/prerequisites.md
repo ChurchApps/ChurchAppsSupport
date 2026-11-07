@@ -1,5 +1,6 @@
 ---
 title: "Pré-requisitos"
+description: "Instale Node.js, npm, Git e os toolchains de plataforma antes de trabalhar nos projetos ChurchApps, como B1 Admin, Lessons.church, FreePlay ou a API."
 ---
 
 # Pré-requisitos
@@ -13,7 +14,7 @@ As ferramentas de que você precisa dependem dos projetos em que pretende trabal
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- Revise a [Visão geral do projeto](./project-overview) para decidir em quais projetos você quer trabalhar
+- Revise a [Visão geral do projeto](./project-overview.md) para decidir em quais projetos você quer trabalhar
 - Tenha acesso de administrador no seu computador de desenvolvimento para instalar software
 
 </div>
@@ -40,7 +41,7 @@ Se você pretende executar a API localmente (em vez de apontar para as APIs de d
 |------------|--------|-------------|
 | **MySQL** | 8.0+ | Cada módulo da API usa o seu próprio banco de dados |
 
-Você vai precisar de seis bancos de dados para a API principal: `membership`, `attendance`, `content`, `giving`, `messaging` e `doing`. A API inclui scripts para inicializar o esquema — veja o guia de [configuração local da API](../api/local-setup).
+Você vai precisar de seis bancos de dados para a API principal: `membership`, `attendance`, `content`, `giving`, `messaging` e `doing`. A API inclui scripts para inicializar o esquema — veja o guia de [configuração local da API](../api/local-setup.md).
 
 ## Desenvolvimento de aplicativos móveis
 
@@ -110,5 +111,5 @@ mysql --version   # Only needed for local API development
 
 ## Próximos passos
 
-- **[Visão geral do projeto](./project-overview)** -- Veja todos os projetos e o que cada um faz
-- **[Variáveis de ambiente](./environment-variables)** -- Configure os seus arquivos `.env`
+- **[Visão geral do projeto](./project-overview.md)** -- Veja todos os projetos e o que cada um faz
+- **[Variáveis de ambiente](./environment-variables.md)** -- Configure os seus arquivos `.env`

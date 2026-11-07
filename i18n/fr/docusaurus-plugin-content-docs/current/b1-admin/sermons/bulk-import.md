@@ -1,5 +1,6 @@
 ---
 title: "Importation en masse"
+description: "Importez en masse des vidéos de prédications depuis une chaîne YouTube ou un compte Vimeo dans B1 Admin, puis classez-les dans une liste de lecture."
 ---
 
 # Importation en masse
@@ -14,7 +15,7 @@ La page Importation en masse vous permet de remplir rapidement votre bibliothèq
 <h4>Avant de commencer</h4>
 
 - Vous devez disposer de l'autorisation **contentApi.streamingServices.edit**. Consultez [Rôles et autorisations](../settings/roles-permissions.md) si vous n'y avez pas accès.
-- Créez au moins une [liste de lecture](playlists) dans laquelle importer vos sermons
+- Créez au moins une [liste de lecture](./playlists.md) dans laquelle importer vos sermons
 - Ayez à portée de main l'identifiant de votre chaîne YouTube ou les informations de votre compte Vimeo
 
 </div>
@@ -39,7 +40,7 @@ Avant d'importer des vidéos, vous devez disposer d'au moins une liste de lectur
 2. Cliquez sur **Créer la première liste de lecture** et renseignez le nom, la description, la date de publication et la miniature.
 3. Cliquez sur **Enregistrer**, puis revenez à l'importation en masse en cliquant sur **Ajouter un sermon** et en choisissant **Importation en masse**.
 
-Consultez [Listes de lecture](playlists) pour des instructions détaillées sur la création et la gestion des listes de lecture.
+Consultez [Listes de lecture](./playlists.md) pour des instructions détaillées sur la création et la gestion des listes de lecture.
 
 ## Importer les vidéos
 
@@ -54,11 +55,11 @@ Consultez [Listes de lecture](playlists) pour des instructions détaillées sur 
 Vos vidéos seront importées avec tous leurs détails, notamment les titres, les descriptions, les dates et les miniatures. Les caractères spéciaux présents dans les titres et descriptions YouTube, tels que `&`, les apostrophes et les guillemets, sont conservés tels quels, et non remplacés par des codes comme `&amp;`.
 
 :::info
-L'importation en masse est idéale pour démarrer lorsque vous migrez depuis une autre plateforme. Pour ajouter ensuite des sermons individuels, utilisez plutôt la page [Gérer les sermons](managing-sermons).
+L'importation en masse est idéale pour démarrer lorsque vous migrez depuis une autre plateforme. Pour ajouter ensuite des sermons individuels, utilisez plutôt la page [Gérer les sermons](./managing-sermons.md).
 :::
 
 ## Étapes suivantes
 
-- [Gérer les sermons](managing-sermons) : modifier les détails des sermons importés
-- [Listes de lecture](playlists) : créer et gérer les séries de sermons
-- [Diffusion en direct](live-streaming) : configurer la diffusion en direct de vos services
+- [Gérer les sermons](./managing-sermons.md) : modifier les détails des sermons importés
+- [Listes de lecture](./playlists.md) : créer et gérer les séries de sermons
+- [Diffusion en direct](./live-streaming.md) : configurer la diffusion en direct de vos services

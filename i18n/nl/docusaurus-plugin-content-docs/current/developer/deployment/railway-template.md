@@ -1,5 +1,6 @@
 ---
 title: "Zelf hosten op Railway"
+description: "Deploy een privé ChurchApps-instantie op Railway in ca. 15 minuten en configureer e-mail, eigen domeinen, meerdere kerken, geven en opslag."
 ---
 
 # Zelf hosten op Railway
@@ -195,7 +196,7 @@ Deze activeren specifieke functies en kunnen later allemaal via het Railway-dash
 | `VIMEO_TOKEN` | Ondersteuning voor preken op Vimeo |
 | `API_BIBLE_KEY` | Opzoeken van bijbelverzen in lessen en content |
 | `YOUVERSION_API_KEY` | Integratie met YouVersion-bijbel |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Pushmeldingen in de browser ([genereer een VAPID-sleutelpaar](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Pushmeldingen in de browser ([genereer een VAPID-sleutelpaar](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Optionele CRM-synchronisatie voor nieuwe registraties |
 
 ## Bijwerken
@@ -234,9 +235,9 @@ Staat je probleem niet in deze lijst? Open dan een issue op [github.com/ChurchAp
 
 ## Gerelateerde artikelen
 
-- **[Zelf hosten met Docker](./docker)**: dezelfde stack op je eigen hardware of VPS
-- **[Eerste instellingen](../../getting-started/initial-setup)**: eerste stappen nadat je kerk is aangemaakt
-- **[Eerste websiteconfiguratie](../../b1-admin/website/initial-setup)**: je openbare site van de kerk instellen
-- **[Giving-instellingen](../../b1-admin/donations/online-giving-setup)**: Stripe of PayPal koppelen
-- **[Lokale API-installatie](../api/local-setup)**: de stack lokaal draaien voor ontwikkeling
-- **[API-deployment (AWS)](./apis)**: hoe de officiële ChurchApps-SaaS wordt gedeployd
+- **[Zelf hosten met Docker](./docker.md)**: dezelfde stack op je eigen hardware of VPS
+- **[Eerste instellingen](../../getting-started/initial-setup.md)**: eerste stappen nadat je kerk is aangemaakt
+- **[Eerste websiteconfiguratie](../../b1-admin/website/initial-setup.md)**: je openbare site van de kerk instellen
+- **[Giving-instellingen](../../b1-admin/donations/online-giving-setup.md)**: Stripe of PayPal koppelen
+- **[Lokale API-installatie](../api/local-setup.md)**: de stack lokaal draaien voor ontwikkeling
+- **[API-deployment (AWS)](./apis.md)**: hoe de officiële ChurchApps-SaaS wordt gedeployd

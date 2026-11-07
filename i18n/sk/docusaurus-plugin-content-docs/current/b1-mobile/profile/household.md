@@ -1,5 +1,6 @@
 ---
 title: "Domácnosť"
+description: "Zistite, kto je vo vašej domácnosti a ako sú členovia prepojení na karte Profil v B1 Mobile, na ktorej sa spolieha prihlasovanie a ďalšie funkcie."
 ---
 
 # Domácnosť
@@ -13,7 +14,7 @@ Karta **Domácnosť** na obrazovke Profil zobrazuje členov vašej rodiny. Tu vi
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- [Nainštalujte B1 Mobile](../getting-started/installing) a [sa prihláste](../getting-started/logging-in) do svojho účtu
+- [Nainštalujte B1 Mobile](../getting-started/installing.md) a [sa prihláste](../getting-started/logging-in.md) do svojho účtu
 
 </div>
 
@@ -33,7 +34,7 @@ Vaša domácnosť je spoločná skupina, ktorá v systéme cirkvi spája členov
 
 - **Check-in** -- Keď sa [prihlásite](../checkin/self-checkin.md) na bohoslužbu alebo podujatie, môžete prihlásiť celú svoju domácnosť naraz namiesto každej osoby zvlášť.
 - **Cirkevné záznamy** -- Vaša cirkev používa údaje o domácnosti na udržiavanie prehľadných rodinných záznamov a na komunikáciu s vašou rodinou ako celkom.
-- **Adresár** -- Ostatní členovia môžu vidieť údaje o vašej domácnosti v [cirkevnom adresári](../community/member-directory.md), v závislosti od vašich [nastavení súkromia](./privacy-settings).
+- **Adresár** -- Ostatní členovia môžu vidieť údaje o vašej domácnosti v [cirkevnom adresári](../community/member-directory.md), v závislosti od vašich [nastavení súkromia](./privacy-settings.md).
 
 ## Zobrazenie vašej domácnosti
 
@@ -47,10 +48,10 @@ Vaša domácnosť je spoločná skupina, ktorá v systéme cirkvi spája členov
 
 ## Udržiavanie údajov aktuálnych
 
-Ak si údaje člena rodiny vyžadujú aktualizáciu, môže [upraviť svoj vlastný profil](./editing-profile), alebo sa môžete obrátiť na správcu cirkvi so žiadosťou o zmeny. Aktuálne údaje o domácnosti zabezpečia, že funkcie ako [check-in](../checkin/) budú fungovať bez problémov pre celú vašu rodinu.
+Ak si údaje člena rodiny vyžadujú aktualizáciu, môže [upraviť svoj vlastný profil](./editing-profile.md), alebo sa môžete obrátiť na správcu cirkvi so žiadosťou o zmeny. Aktuálne údaje o domácnosti zabezpečia, že funkcie ako [check-in](../checkin/index.md) budú fungovať bez problémov pre celú vašu rodinu.
 
 ## Súvisiace články
 
 - [Samoprihlásenie na bohoslužbu](../checkin/self-checkin.md) -- Prihláste členov svojej domácnosti na bohoslužby
-- [Úprava profilu](./editing-profile) -- Aktualizujte svoje osobné údaje
-- [Nastavenia súkromia](./privacy-settings) -- Ovládajte, čo môžu ostatní vidieť o vašej domácnosti
+- [Úprava profilu](./editing-profile.md) -- Aktualizujte svoje osobné údaje
+- [Nastavenia súkromia](./privacy-settings.md) -- Ovládajte, čo môžu ostatní vidieť o vašej domácnosti

@@ -1,5 +1,6 @@
 ---
 title: "Meddelelser"
+description: "Lad en mappe med slides køre i løkke på FreePlay TV til meddelelser i foyeren eller før undervisningen: vælg udbyderens mappe, hold den synkroniseret og slå den fra bagefter."
 ---
 
 # Meddelelser
@@ -13,7 +14,7 @@ FreePlay kan lade en mappe med meddelelsesslides køre i loop på dit TV -- for 
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Forbind til en indholdsudbyder](./connecting-providers), der indeholder dine meddelelsesslides, f.eks. Dropbox eller OneDrive
+- [Forbind til en indholdsudbyder](./connecting-providers.md), der indeholder dine meddelelsesslides, f.eks. Dropbox eller OneDrive
 - Placer de billeder eller videoer, du vil have i loop, samlet i én mappe hos udbyderen
 
 </div>
@@ -37,7 +38,7 @@ Når slides er downloadet, vises et **Meddelelser**-punkt nær toppen af sidepan
 - Efter den sidste slide starter loopet forfra fra den første
 - Hvis mappen kun indeholder én video, gentages den på stedet
 
-Loopet afspilles fra filerne gemt på enheden, så det kører uden internetforbindelse. Du kan bruge de samme fjernbetjeningsknapper som til alt andet indhold -- se [Afspilning af indhold](./playing-content).
+Loopet afspilles fra filerne gemt på enheden, så det kører uden internetforbindelse. Du kan bruge de samme fjernbetjeningsknapper som til alt andet indhold -- se [Afspilning af indhold](./playing-content.md).
 
 ## Opdatering af slides
 
@@ -61,6 +62,6 @@ Hvis du frakobler udbyderen, slås meddelelser fra den også fra.
 
 ## Relaterede artikler
 
-- **[Tilslutning til udbydere](./connecting-providers)** - Forbind den udbyder, der indeholder dine slides
-- **[Gennemse og download af indhold](./browsing-content)** - Gennemse en udbyders mapper og afspil indhold efter behov
-- **[Afspilning af indhold](./playing-content)** - Afspilningskontroller til din tv-fjernbetjening
+- **[Tilslutning til udbydere](./connecting-providers.md)** - Forbind den udbyder, der indeholder dine slides
+- **[Gennemse og download af indhold](./browsing-content.md)** - Gennemse en udbyders mapper og afspil indhold efter behov
+- **[Afspilning af indhold](./playing-content.md)** - Afspilningskontroller til din tv-fjernbetjening

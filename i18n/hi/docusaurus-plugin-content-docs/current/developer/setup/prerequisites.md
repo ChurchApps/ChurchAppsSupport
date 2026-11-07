@@ -1,5 +1,6 @@
 ---
 title: "पूर्वापेक्षाएँ"
+description: "B1 Admin, Lessons.church, FreePlay या API जैसे ChurchApps प्रोजेक्ट्स पर लोकल रूप से काम करने से पहले Node.js, npm, Git और प्लेटफ़ॉर्म टूलचेन सेट करें।"
 ---
 
 # पूर्वापेक्षाएँ
@@ -13,7 +14,7 @@ title: "पूर्वापेक्षाएँ"
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- [Project Overview](./project-overview) की समीक्षा करें ताकि तय हो सके कि आप किन प्रोजेक्ट्स पर काम करना चाहते हैं
+- [Project Overview](./project-overview.md) की समीक्षा करें ताकि तय हो सके कि आप किन प्रोजेक्ट्स पर काम करना चाहते हैं
 - सॉफ़्टवेयर इंस्टॉल करने के लिए अपनी विकास मशीन पर एडमिनिस्ट्रेटर पहुँच हो
 
 </div>
@@ -40,7 +41,7 @@ Node के संस्करण आसानी से बदलने के 
 |------|---------|-------|
 | **MySQL** | 8.0+ | हर API मॉड्यूल अपना डेटाबेस उपयोग करता है |
 
-मुख्य API के लिए आपको छह डेटाबेस चाहिए: `membership`, `attendance`, `content`, `giving`, `messaging`, और `doing`। API में schema आरंभ करने के लिए स्क्रिप्ट शामिल हैं -- देखें [API local setup](../api/local-setup) गाइड।
+मुख्य API के लिए आपको छह डेटाबेस चाहिए: `membership`, `attendance`, `content`, `giving`, `messaging`, और `doing`। API में schema आरंभ करने के लिए स्क्रिप्ट शामिल हैं -- देखें [API local setup](../api/local-setup.md) गाइड।
 
 ## मोबाइल ऐप विकास
 
@@ -110,5 +111,5 @@ mysql --version   # केवल स्थानीय API विकास क�
 
 ## अगले चरण
 
-- **[Project Overview](./project-overview)** -- सभी प्रोजेक्ट्स और वे क्या करते हैं, देखें
-- **[Environment Variables](./environment-variables)** -- अपनी `.env` फ़ाइलें कॉन्फ़िगर करें
+- **[Project Overview](./project-overview.md)** -- सभी प्रोजेक्ट्स और वे क्या करते हैं, देखें
+- **[Environment Variables](./environment-variables.md)** -- अपनी `.env` फ़ाइलें कॉन्फ़िगर करें

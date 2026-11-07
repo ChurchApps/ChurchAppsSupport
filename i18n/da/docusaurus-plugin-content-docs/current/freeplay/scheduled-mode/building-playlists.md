@@ -1,5 +1,6 @@
 ---
 title: "Tilslutning af udbydere og opbygning af afspilningslister"
+description: "Opsæt forbundne indholdsudbydere i FreePlay Admin, og byg, arrangér og forhåndsvis playlister til planlagte tv-skærme."
 ---
 
 # Tilslutning af udbydere og opbygning af afspilningslister
@@ -107,6 +108,6 @@ Klik på **Præsenter** for at afspille afspilningslisten på fuld skærm i din 
 
 ## Relaterede artikler
 
-- **[Planlægning af kalenderen](./scheduling-the-calendar)** - Sæt din afspilningsliste i kalenderen for en skærmgruppe
-- **[Administration af skærme og grupper](./managing-screens)** - Sæt en afspilningsliste som en gruppes standardløkke
-- **[Indholdsudbydere](../content-providers/)** - Udbydere, du kan forbinde direkte på tv'et
+- **[Planlægning af kalenderen](./scheduling-the-calendar.md)** - Sæt din afspilningsliste i kalenderen for en skærmgruppe
+- **[Administration af skærme og grupper](./managing-screens.md)** - Sæt en afspilningsliste som en gruppes standardløkke
+- **[Indholdsudbydere](../content-providers/index.md)** - Udbydere, du kan forbinde direkte på tv'et

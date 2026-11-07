@@ -1,5 +1,7 @@
 ---
-title: "入门指南"
+title: "B1.church 会友门户入门"
+sidebar_label: "入门指南"
+description: "找到您教会的 B1.church 网站，创建会友账户，并了解门户提供的功能，包括小组、奉献、登记和计划。"
 ---
 
 # B1.church 入门指南

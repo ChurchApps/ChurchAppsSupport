@@ -1,5 +1,6 @@
 ---
 title: "모바일 앱"
+description: "ChurchApps의 Expo 및 React Native 모바일 앱(B1 Mobile, B1 Checkin, LessonsScreen) 개요와 공유 도구 체인 설정 가이드 링크입니다."
 ---
 
 # 모바일 앱
@@ -14,13 +15,13 @@ ChurchApps 모바일 앱은 **React Native**과 **Expo**로 빌드되어 Android
 
 | 앱 | 목적 | 플랫폼 |
 |-----|---------|----------|
-| [B1 Mobile](./b1-mobile) | 교회 회원을 위한 기본 회원 대면 앱 | Android, iOS |
+| [B1 Mobile](./b1-mobile.md) | 교회 회원을 위한 기본 회원 대면 앱 | Android, iOS |
 | B1 Checkin | 체크인 스테이션용 키오스크 앱 | Android, iOS |
 | LessonsScreen | 교실의 수업 표시용 Android TV 앱 | Android TV |
 
 ### B1 Mobile
 
-주요 교회 회원 앱. 회원은 디렉토리 보기, 헌금 접근, 참석 확인, 알림 수신, 교회 커뮤니티 상호 작용을 할 수 있습니다. 자세한 내용은 [B1 Mobile 설정 가이드](./b1-mobile)를 참조하세요.
+주요 교회 회원 앱. 회원은 디렉토리 보기, 헌금 접근, 참석 확인, 알림 수신, 교회 커뮤니티 상호 작용을 할 수 있습니다. 자세한 내용은 [B1 Mobile 설정 가이드](./b1-mobile.md)를 참조하세요.
 
 ### B1 Checkin
 
@@ -31,5 +32,5 @@ ChurchApps 모바일 앱은 **React Native**과 **Expo**로 빌드되어 Android
 교실에서 수업 컨텐츠를 표시하는 Android TV 애플리케이션입니다. 교사는 수업 슬라이드, 비디오, 활동을 TV 화면에 푸시할 수 있어 교실 중에 교과 과정 자료를 제시하기 쉬워집니다.
 
 :::info
-모든 모바일 앱은 동일한 Expo 기반 도구 체인을 공유하고 비슷한 설정 패턴을 따릅니다. [B1 Mobile](./b1-mobile) 가이드는 모든 모바일 프로젝트에 걸친 일반적인 설정 프로세스를 위한 참조로 사용됩니다.
+모든 모바일 앱은 동일한 Expo 기반 도구 체인을 공유하고 비슷한 설정 패턴을 따릅니다. [B1 Mobile](./b1-mobile.md) 가이드는 모든 모바일 프로젝트에 걸친 일반적인 설정 프로세스를 위한 참조로 사용됩니다.
 :::

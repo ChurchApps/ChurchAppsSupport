@@ -1,5 +1,7 @@
 ---
-title: "Gruppdetaljer"
+title: "Gruppdetaljer i B1.church medlemsportal"
+sidebar_label: "Gruppdetaljer"
+description: "Hitta, öppna och hantera en grupps detaljsida i B1 Admins medlemsvy för B1.church: se evenemang, möten, formulär och medlemmar, och gå med eller begär att få gå med."
 ---
 
 # Gruppdetaljer

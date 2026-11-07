@@ -1,5 +1,6 @@
 ---
 title: "Aprobación de Cambios de Perfil"
+description: "Revisa y aprueba en B1 Admin las solicitudes de cambio de perfil de los miembros, y configura el Grupo de Aprobación del Directorio que las recibe."
 ---
 
 # Aprobación de Cambios de Perfil

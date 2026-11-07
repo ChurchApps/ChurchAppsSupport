@@ -1,5 +1,7 @@
 ---
-title: "Selvtjek ind"
+title: "Selv-check-in i B1 Mobile-appen"
+sidebar_label: "Selvtjek ind"
+description: "Check dig selv og din husstand ind til en gudstjeneste i B1 Mobile-appen, inklusive valg af gudstjenestetid og tildeling af hver persons gruppe."
 ---
 
 # Selvtjek ind
@@ -13,7 +15,7 @@ Tjekindsat fra B1 Mobile er en ligetil, flertrins proces. Med blot et par tryk k
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [log ind](../getting-started/logging-in) på din konto
+- [Installer B1 Mobile](../getting-started/installing.md) og [log ind](../getting-started/logging-in.md) på din konto
 - Sørg for at dine [husholdsmedlemmer](../profile/household.md) er opsat i din profil
 
 </div>

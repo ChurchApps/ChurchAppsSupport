@@ -1,5 +1,6 @@
 ---
 title: "Kılavuz: Çocuk Hizmeti Check-In Kurulumu"
+description: "B1 Admin'de çocuk check-in'i kurun: aileleri bağlayın, yaşa göre gruplar oluşturun, hizmetleri yapılandırın ve B1 Checkin kiosku için isim etiketleri yazdırın."
 ---
 
 # Çocuk Hizmeti Check-In Kurulumu

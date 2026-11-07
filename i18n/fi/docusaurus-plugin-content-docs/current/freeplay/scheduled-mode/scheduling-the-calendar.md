@@ -1,5 +1,6 @@
 ---
 title: "Kalenterin ajastaminen"
+description: "Luo viikko- tai kertaluonteinen aikataulu FreePlay Adminin kalenteriin: soittolistat, palvelusuunnitelmat ja kansiot näyttöryhmille, oletuslooppi varalla."
 ---
 
 # Kalenterin ajastaminen
@@ -13,8 +14,8 @@ FreePlay Adminin **Kalenteri**-sivulla määritetään, mitä kukin näyttöryhm
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Luo vähintään yksi näyttöryhmä. Katso [Näyttöjen ja ryhmien hallinta](./managing-screens#screen-groups)
-- [Rakenna soittolista](./building-playlists) tai varmista, että B1 Adminissa on määritetty suunnitelmatyyppi
+- Luo vähintään yksi näyttöryhmä. Katso [Näyttöjen ja ryhmien hallinta](./managing-screens.md#screen-groups)
+- [Rakenna soittolista](./building-playlists.md) tai varmista, että B1 Adminissa on määritetty suunnitelmatyyppi
 
 </div>
 
@@ -82,11 +83,11 @@ Jos kaksi aikataulua menee päällekkäin, lomakkeessa näkyy varoitus: **Menee 
 
 ## Miten näytöt noutavat muutokset
 
-Paritetut näytöt lataavat kaiken seuraavan 7 päivän aikana ajastetun sisällön ja tarkistavat muutokset itsenäisesti. Kalenterin muokkaamisen jälkeen TV:tä ei tarvitse koskea. Nähdäksesi, milloin näytöllä on kaikki tarvittava, katso **Valmis asti** [Näytöt-sivulta](./managing-screens).
+Paritetut näytöt lataavat kaiken seuraavan 7 päivän aikana ajastetun sisällön ja tarkistavat muutokset itsenäisesti. Kalenterin muokkaamisen jälkeen TV:tä ei tarvitse koskea. Nähdäksesi, milloin näytöllä on kaikki tarvittava, katso **Valmis asti** [Näytöt-sivulta](./managing-screens.md).
 
 ## Aiheeseen liittyvät artikkelit
 
-- **[Soittolistojen rakentaminen](./building-playlists)** - Luo ajastettavat soittolistat
-- **[Ajastettu toisto TV:llä](./scheduled-playback)** - Miten opettajan tahdissa toistuvat oppitunnit ja kaukosäädin toimivat TV:llä
-- **[Näyttöjen ja ryhmien hallinta](./managing-screens)** - Lisää ryhmiä ja tarkista kunkin näytön lataukset
+- **[Soittolistojen rakentaminen](./building-playlists.md)** - Luo ajastettavat soittolistat
+- **[Ajastettu toisto TV:llä](./scheduled-playback.md)** - Miten opettajan tahdissa toistuvat oppitunnit ja kaukosäädin toimivat TV:llä
+- **[Näyttöjen ja ryhmien hallinta](./managing-screens.md)** - Lisää ryhmiä ja tarkista kunkin näytön lataukset
 - **[Vain osan jokaisesta oppitunnista säilyttäminen](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Rajaa jokainen ajastettu oppitunti suunnitelmatyypissä niihin osiin, jotka huoneesi toistaa

@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile（已弃用）"
+description: "说明原生 B1 Mobile 应用已弃用，会员和管理员应改用 B1.church PWA，旧页面保留供参考。"
 ---
 
 # B1 Mobile（已弃用）
@@ -40,16 +41,16 @@ B1 Mobile 支持推送通知，因此您不会错过来自您的教会或小组�
 
 ## 了解更多
 
-- [入门](./getting-started/)——安装应用、创建账户并选择您的教会。
-- [仪表板](./dashboard/)——了解您的个性化主屏幕。
-- [小组](./groups/)——与您的教会小组保持联系。
-- [捐赠](./giving/)——从您的手机进行捐赠。
-- [事件](./events/)——浏览并注册即将到来的教会事件。
-- [签到](./checkin/)——为服务和事件签到。
-- [服侍](./serving/)——查看您的服侍计划、分配和志愿机会。
-- [社区](./community/)——浏览成员目录并发送消息。
-- [内容](./content/)——讲道、圣经、每日经文和课程（课程屏幕已弃用——参阅 [FreePlay](/docs/freeplay/)）。
-- [资料](./profile/)——管理您的资料和账户设置。
+- [入门](./getting-started/index.md)——安装应用、创建账户并选择您的教会。
+- [仪表板](./dashboard/index.md)——了解您的个性化主屏幕。
+- [小组](./groups/index.md)——与您的教会小组保持联系。
+- [捐赠](./giving/index.md)——从您的手机进行捐赠。
+- [事件](./events/index.md)——浏览并注册即将到来的教会事件。
+- [签到](./checkin/index.md)——为服务和事件签到。
+- [服侍](./serving/index.md)——查看您的服侍计划、分配和志愿机会。
+- [社区](./community/index.md)——浏览成员目录并发送消息。
+- [内容](./content/index.md)——讲道、圣经、每日经文和课程（课程屏幕已弃用——参阅 [FreePlay](/docs/freeplay/)）。
+- [资料](./profile/index.md)——管理您的资料和账户设置。
 
 :::info
 B1 Mobile 已被 [B1.church PWA](../b1-church/getting-started/installing-pwa.md) 取代。新部署应该使用 PWA——原生应用不再被更新。

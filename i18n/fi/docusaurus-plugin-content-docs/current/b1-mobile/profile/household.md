@@ -1,5 +1,6 @@
 ---
 title: "Kotitalous"
+description: "Katso, keitä kotitalouteesi kuuluu ja miten jäsenet ovat yhteydessä toisiinsa B1 Mobilen Profiili-välilehdellä, johon sisäänkirjautuminen ja muut ominaisuudet perustuvat."
 ---
 
 # Kotitalous
@@ -13,7 +14,7 @@ Profiilinäkymäsi **Kotitalous**-välilehti näyttää perheenjäsenesi. Tääl
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu](../getting-started/logging-in) tilillesi
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu](../getting-started/logging-in.md) tilillesi
 
 </div>
 
@@ -33,7 +34,7 @@ Kotitalouden tietoja käyttävät useat B1 Mobilen ja ChurchAppsin toiminnot:
 
 - **Sisäänkirjautuminen** -- Kun [kirjaudut sisään](../checkin/self-checkin.md) jumalanpalvelukseen tai tapahtumaan, voit kirjata koko taloutesi kerralla sen sijaan, että kirjaisit jokaisen erikseen.
 - **Seurakunnan tiedot** -- Seurakuntasi käyttää kotitaloustietoja perhetietojen järjestämiseen ja perheen viestintään yhtenä kokonaisuutena.
-- **Hakemisto** -- Muut jäsenet voivat nähdä kotitaloustietosi [seurakunnan hakemistossa](../community/member-directory.md) riippuen [tietosuoja-asetuksistasi](./privacy-settings).
+- **Hakemisto** -- Muut jäsenet voivat nähdä kotitaloustietosi [seurakunnan hakemistossa](../community/member-directory.md) riippuen [tietosuoja-asetuksistasi](./privacy-settings.md).
 
 ## Oman kotitalouden tarkasteleminen
 
@@ -47,10 +48,10 @@ Kotitalouden jäsenyyttä hallinnoi yleensä seurakuntasi ylläpitäjä. Jos hal
 
 ## Tietojen ajan tasalla pitäminen
 
-Jos perheenjäsenen tiedot täytyy päivittää, hän voi [muokata omaa profiiliaan](./editing-profile), tai voit ottaa yhteyttä seurakuntasi ylläpitäjään muutosten tekemiseksi. Kotitaloustietojen ajantasaisuus varmistaa, että toiminnot, kuten [sisäänkirjautuminen](../checkin/), toimivat sujuvasti koko perheellesi.
+Jos perheenjäsenen tiedot täytyy päivittää, hän voi [muokata omaa profiiliaan](./editing-profile.md), tai voit ottaa yhteyttä seurakuntasi ylläpitäjään muutosten tekemiseksi. Kotitaloustietojen ajantasaisuus varmistaa, että toiminnot, kuten [sisäänkirjautuminen](../checkin/index.md), toimivat sujuvasti koko perheellesi.
 
 ## Liittyvät artikkelit
 
 - [Itsepalvelu-sisäänkirjautuminen](../checkin/self-checkin.md) -- Kirjaa talouden jäsenet jumalanpalveluksiin
-- [Profiilin muokkaaminen](./editing-profile) -- Päivitä omat henkilötietosi
-- [Tietosuoja-asetukset](./privacy-settings) -- Hallitse, mitä muut näkevät kotitaloudestasi
+- [Profiilin muokkaaminen](./editing-profile.md) -- Päivitä omat henkilötietosi
+- [Tietosuoja-asetukset](./privacy-settings.md) -- Hallitse, mitä muut näkevät kotitaloudestasi

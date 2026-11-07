@@ -1,5 +1,6 @@
 ---
 title: "Przeglądanie grup"
+description: "Przeglądaj publiczne grupy kościoła w B1.church według kategorii i porównuj terminy spotkań, lokalizacje oraz opisy na kartach, by znaleźć dobre dopasowanie."
 ---
 
 # Przeglądanie grup

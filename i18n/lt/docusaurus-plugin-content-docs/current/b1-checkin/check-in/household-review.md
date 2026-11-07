@@ -1,5 +1,6 @@
 ---
 title: "Jūsų namų ūkio peržiūra"
+description: "Peržiūrėkite namų ūkį B1 Checkin, priskirkite grupes kiekvienam pamaldų laikui ir pažymėkite svečius ar savanorius prieš registruodamiesi."
 ---
 
 # Jūsų namų ūkio peržiūra
@@ -13,8 +14,8 @@ Pasirinkus asmenį iš paieškos rezultatų, programa įkelia visą jūsų namų
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Pasirinkite pamaldas](./selecting-service) pamaldų ekrane
-- [Raskite narį](./looking-up-members) ir pasirinkite jį iš paieškos rezultatų
+- [Pasirinkite pamaldas](./selecting-service.md) pamaldų ekrane
+- [Raskite narį](./looking-up-members.md) ir pasirinkite jį iš paieškos rezultatų
 
 </div>
 
@@ -35,9 +36,9 @@ Bakstelėkite nario kortelę, kad ją išskleistumėte. Išskleidus matysite eil
 - **Grupės**, siūlomos tuo pamaldų laiku, rodomos po pavadinimu (pavyzdžiui, „Darželis, Ikimokyklinis, Suaugusiųjų Biblijos klasė“), kad prieš pasirinkdami galėtumėte matyti, kokios klasės yra prieinamos
 - **Mygtukas**, rodantis šiuo metu priskirtą grupę, arba „Pasirinkti grupę“, jei grupė dar nepriskirta
 
-Jei pamaldų laikui nustatytas [registracijos tvarkaraštis](../../b1-admin/attendance/setup#setting-a-check-in-schedule) ir jo langas šiuo metu uždarytas, eilutėje vietoj mygtuko rodoma **Uždaryta** – kartu su kitu atidarymo laiku, jei jis yra, pavyzdžiui, **Uždaryta · atsidaro Sek. 9:30 AM**. Jei asmuo jau užregistruotas tam pamaldų laikui, eilutėje vietoj to rodoma jo grupė su varnele (pavyzdžiui, **Vaikų kambarys 1 · Užregistruota**), kad matytumėte, kur jis yra, net jei langas jau uždarytas.
+Jei pamaldų laikui nustatytas [registracijos tvarkaraštis](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) ir jo langas šiuo metu uždarytas, eilutėje vietoj mygtuko rodoma **Uždaryta** – kartu su kitu atidarymo laiku, jei jis yra, pavyzdžiui, **Uždaryta · atsidaro Sek. 9:30 AM**. Jei asmuo jau užregistruotas tam pamaldų laikui, eilutėje vietoj to rodoma jo grupė su varnele (pavyzdžiui, **Vaikų kambarys 1 · Užregistruota**), kad matytumėte, kur jis yra, net jei langas jau uždarytas.
 
-Bakstelėkite grupės mygtuką, kad patektumėte į [grupės pasirinkimo ekraną](./group-assignment), kur galite pasirinkti arba pakeisti tam asmeniui ir pamaldų laikui skirtą grupę.
+Bakstelėkite grupės mygtuką, kad patektumėte į [grupės pasirinkimo ekraną](./group-assignment.md), kur galite pasirinkti arba pakeisti tam asmeniui ir pamaldų laikui skirtą grupę.
 
 Išskleistoje kortelėje taip pat rodomi žymekliai **Narys**, **Svečias** ir **Savanoris**. Bakstelėkite vieną iš jų, kad nustatytumėte, kaip šis asmuo registruojasi – numatytasis yra **Narys**. Tipas svarbus vaikų kambariams: savanoriai įskaičiuojami į kambario savanorių ir vaikų santykį, o svečiai – į bet kokį svečių pajėgumo limitą, kurį nustatė jūsų bažnyčia.
 
@@ -51,9 +52,9 @@ Nebūtina priskirti kiekvieno šeimos nario grupei. Suaugusiems, kurie dalyvauja
 
 Iš namų ūkio peržiūros ekrano turite tris galimybes:
 
-- **Išskleiskite narį** ir bakstelėkite pamaldų laiko mygtuką, kad [priskirtumėte ar pakeistumėte grupę](./group-assignment).
-- **Bakstelėkite mygtuką „Pridėti svečią“** po narių sąrašu, kad [pridėtumėte svečią](./adding-guests) į savo namų ūkį.
-- **Bakstelėkite registracijos mygtuką** ekrano apačioje, kad [užbaigtumėte registraciją](./completing-checkin) visiems namų ūkio nariams.
+- **Išskleiskite narį** ir bakstelėkite pamaldų laiko mygtuką, kad [priskirtumėte ar pakeistumėte grupę](./group-assignment.md).
+- **Bakstelėkite mygtuką „Pridėti svečią“** po narių sąrašu, kad [pridėtumėte svečią](./adding-guests.md) į savo namų ūkį.
+- **Bakstelėkite registracijos mygtuką** ekrano apačioje, kad [užbaigtumėte registraciją](./completing-checkin.md) visiems namų ūkio nariams.
 
 :::info
 Visi ankstesnės registracijos į tas pačias pamaldas grupių priskyrimai įkeliami automatiškai. Jei jūsų vaikai kiekvieną savaitę lanko tas pačias grupes, gali nereikėti nieko keisti – tiesiog peržiūrėkite ir užsiregistruokite.
@@ -61,6 +62,6 @@ Visi ankstesnės registracijos į tas pačias pamaldas grupių priskyrimai įkel
 
 ## Kiti žingsniai
 
-- [Priskirkite grupes](./group-assignment) šeimos nariams, kuriems reikia užsiregistruoti į konkrečią klasę ar programą.
-- [Pridėkite svečią](./adding-guests), jei su šeima atvyksta kas nors kitas.
-- [Užbaikite registraciją](./completing-checkin), kai visi priskyrimai atrodo teisingi.
+- [Priskirkite grupes](./group-assignment.md) šeimos nariams, kuriems reikia užsiregistruoti į konkrečią klasę ar programą.
+- [Pridėkite svečią](./adding-guests.md), jei su šeima atvyksta kas nors kitas.
+- [Užbaikite registraciją](./completing-checkin.md), kai visi priskyrimai atrodo teisingi.

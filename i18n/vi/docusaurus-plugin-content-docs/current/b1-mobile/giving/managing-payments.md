@@ -1,5 +1,6 @@
 ---
 title: "Quản lý phương thức thanh toán"
+description: "Thêm, xem và xóa thẻ đã lưu trong tab Quản lý của mục quyên góp B1 Mobile, để các khoản quyên góp lặp lại nhanh hơn mà không phải nhập lại thông tin thẻ."
 ---
 
 # Quản lý phương thức thanh toán
@@ -13,7 +14,7 @@ Tab **Quản lý** trong mục quyên góp cho phép bạn xem và quản lý c�
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
 
 </div>
 
@@ -31,7 +32,7 @@ Khi mở tab **Quản lý**, bạn sẽ thấy danh sách tất cả các phươ
 4. Nhập thông tin thẻ của bạn. Thông tin sẽ được gửi an toàn đến **Stripe** để xử lý.
 5. Sau khi lưu, thẻ mới sẽ xuất hiện trong danh sách phương thức thanh toán của bạn.
 
-Thẻ đã lưu sau đó sẽ có sẵn như một tùy chọn thanh toán lần tới khi bạn [quyên góp](./making-donations) từ tab **Quyên góp**.
+Thẻ đã lưu sau đó sẽ có sẵn như một tùy chọn thanh toán lần tới khi bạn [quyên góp](./making-donations.md) từ tab **Quyên góp**.
 
 ## Xóa phương thức thanh toán
 
@@ -44,7 +45,7 @@ Nếu bạn không muốn giữ thẻ đã lưu nữa, bạn có thể xóa th�
 Thẻ sẽ không còn xuất hiện như một tùy chọn thanh toán khi bạn quyên góp.
 
 :::info
-Việc xóa phương thức thanh toán không ảnh hưởng đến các khoản quyên góp trước đó. [Lịch sử quyên góp](./donation-history) của bạn vẫn được giữ nguyên.
+Việc xóa phương thức thanh toán không ảnh hưởng đến các khoản quyên góp trước đó. [Lịch sử quyên góp](./donation-history.md) của bạn vẫn được giữ nguyên.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Hãy giữ ít nhất một phương thức thanh toán đã lưu để quyên g
 
 ## Bài viết liên quan
 
-- [Quyên góp](./making-donations) -- Tìm hiểu cách quyên góp bằng phương thức thanh toán đã lưu
-- [Lịch sử quyên góp](./donation-history) -- Xem tóm tắt quyên góp và các khoản đã đóng góp trước đây
+- [Quyên góp](./making-donations.md) -- Tìm hiểu cách quyên góp bằng phương thức thanh toán đã lưu
+- [Lịch sử quyên góp](./donation-history.md) -- Xem tóm tắt quyên góp và các khoản đã đóng góp trước đây

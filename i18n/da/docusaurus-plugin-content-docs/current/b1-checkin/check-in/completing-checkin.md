@@ -1,5 +1,6 @@
 ---
 title: "Fuldførelse af check-in"
+description: "Afslut en families check-in på kiosken i B1 Checkin, herunder gruppegrænser, udskrivning af labels, sikkerhedskoder til afhentning og hvad appen gør næste."
 ---
 
 # Fuldførelse af check-in
@@ -13,9 +14,9 @@ Når du har gennemgået din husstand og foretaget nødvendige gruppe tildelinger
 <div class="prereqs">
 <h4>Før du starter</h4>
 
-- [Gennemgå din husstand](./household-review) på husstands oversigten
-- [Tildel grupper](./group-assignment) til ethvert familiemedlem, som skal checke ind i en bestemt klasse eller program
-- Du kan eventuelt [tilføje gæster](./adding-guests), som besøger med din familie
+- [Gennemgå din husstand](./household-review.md) på husstands oversigten
+- [Tildel grupper](./group-assignment.md) til ethvert familiemedlem, som skal checke ind i en bestemt klasse eller program
+- Du kan eventuelt [tilføje gæster](./adding-guests.md), som besøger med din familie
 
 </div>
 
@@ -40,7 +41,7 @@ Den samme sikkerhedskode vises på både barnets navneskilt og forælderens afhe
 Sikkerhedskoden genereres frisk for hver check-in og bruger kun konsonanter og cifre (vokaler er udelukket for at undgå at danne upassende ord).
 
 :::warning
-Hvis labels ikke udskrives, skal du åbne Admin indstillinger ved at trykke på **kirke logoet** syv gange, og derefter skal du trykke på **Skift printer** for at verificere printer forbindelsen. Se [Printer opsætning](../getting-started/printer-setup) for fejlfinding trin.
+Hvis labels ikke udskrives, skal du åbne Admin indstillinger ved at trykke på **kirke logoet** syv gange, og derefter skal du trykke på **Skift printer** for at verificere printer forbindelsen. Se [Printer opsætning](../getting-started/printer-setup.md) for fejlfinding trin.
 :::
 
 ## Hvad sker der efter check-in

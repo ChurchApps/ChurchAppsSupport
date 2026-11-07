@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Повежите пријаве волонтера у B1 Admin са Checkr провером преко Make.com, уз обавештења о статусу за координатора безбедног служења."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Ako vaša crkva koristi članstvo u B1 grupama za kontrolu pristupa (npr. samo �
 
 ## Pogledajte i
 
-- [Make (pregled)](../make): B1 strana svakog Make scenarija
-- [Mobile Message](./mobile-message): za SMS provajdere bez Zapier aplikacija, isti obrazac Webhooks/HTTP kao kod Checkr povezivanja u Make-u
+- [Make (pregled)](../make.md): B1 strana svakog Make scenarija
+- [Mobile Message](./mobile-message.md): za SMS provajdere bez Zapier aplikacija, isti obrazac Webhooks/HTTP kao kod Checkr povezivanja u Make-u
 - [Checkr API dokumentacija](https://docs.checkr.com/)

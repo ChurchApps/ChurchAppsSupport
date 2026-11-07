@@ -1,5 +1,7 @@
 ---
-title: "Directorio de miembros"
+title: "Directorio de miembros en el portal de miembros de B1.church"
+sidebar_label: "Directorio de miembros"
+description: "Busca y explora los miembros de la iglesia en el directorio de B1.church, consulta sus perfiles y los miembros de su hogar, y mira quién puede acceder al directorio."
 ---
 
 # Directorio de miembros

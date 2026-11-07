@@ -1,5 +1,7 @@
 ---
-title: "Lekcje (wycofane)"
+title: "Wycofana zakładka Lekcje w B1.church"
+sidebar_label: "Lekcje (wycofane)"
+description: "Zakładka Lekcje w B1.church jest przestarzała. Program lekcji znajdziesz na Lessons.church, a odtwarzać go na telewizorach w klasach możesz dzięki FreePlay."
 ---
 
 # Lekcje (wycofane)
@@ -9,7 +11,7 @@ Osadzona zakładka **Lekcje** w B1.church została wycofana. Odtwarzanie materia
 
 Aby przeglądać, planować lub edytować materiały programowe bezpośrednio, zaloguj się w przeglądarce na stronie [Lessons.church](https://lessons.church). Aby odtwarzać lekcje na telewizorze w sali, zainstaluj [FreePlay](/docs/freeplay/getting-started/) na swoim urządzeniu telewizyjnym.
 
-Rodzice w grupach powiązanych z typem planu lekcji w B1Admin zobaczą **lekcję z bieżącego tygodnia** na stronie [szczegółów grupy](/docs/b1-church/groups/group-details.md) — a nie na tej wycofanej zakładce.
+Rodzice w grupach powiązanych z typem planu lekcji w B1Admin zobaczą **lekcję z bieżącego tygodnia** na stronie [szczegółów grupy](../groups/group-details.md) — a nie na tej wycofanej zakładce.
 :::
 
 <div class="article-intro">

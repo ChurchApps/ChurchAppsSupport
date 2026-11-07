@@ -1,5 +1,6 @@
 ---
 title: "De pagina-editor gebruiken"
+description: "Werk met de paginaeditor in B1 Admin: voeg secties en elementen toe, stijl ze, bekijk de mobiele weergave en publiceer concepten, met versiegeschiedenis."
 ---
 
 # De pagina-editor gebruiken
@@ -13,8 +14,8 @@ De B1-pagina-editor is een visuele sleep-en-neerzet-bouwer waarmee je de pagina'
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- Voltooi [Eerste instellingen](initial-setup) om je website te configureren
-- Maak minstens één pagina aan in [Pagina's beheren](managing-pages)
+- Voltooi [Eerste instellingen](./initial-setup.md) om je website te configureren
+- Maak minstens één pagina aan in [Pagina's beheren](./managing-pages.md)
 - Je hebt de **content.edit**-rechten nodig om toegang te krijgen tot de editor
 
 </div>
@@ -53,7 +54,7 @@ Elke pagina is opgebouwd uit twee niveaus:
    - **Afbeelding** -- Upload of link naar een foto
    - **Knop** -- Een klikbare call-to-action-link
    - **Kaart** -- Een afbeelding met een titel en beschrijving
-   - **Formulier** -- Sluit een [formulier](../forms/creating-forms) rechtstreeks in op de pagina
+   - **Formulier** -- Sluit een [formulier](../forms/creating-forms.md) rechtstreeks in op de pagina
    - **Kalender** -- Toon een evenementenkalender
    - **FAQ** -- Accordeonstijl vraag-en-antwoordblokken
    - **Video** -- Sluit een video in via URL
@@ -94,7 +95,7 @@ Klik op een element om het stijlpaneel te openen. Veelvoorkomende opties zijn le
 Voor geavanceerde styling heeft elke sectie en elk element een veld **Aangepaste CSS** waar je je eigen CSS-regels kunt schrijven. Deze zijn beperkt tot dat element, zodat ze de rest van de pagina niet onbedoeld beïnvloeden.
 
 :::tip
-Als je stijlen op je hele site wilt toepassen -- zoals een aangepast lettertype of globale kleur -- gebruik dan de instellingen onder [Uiterlijk](appearance) in plaats van aangepaste CSS op individuele pagina's.
+Als je stijlen op je hele site wilt toepassen -- zoals een aangepast lettertype of globale kleur -- gebruik dan de instellingen onder [Uiterlijk](./appearance.md) in plaats van aangepaste CSS op individuele pagina's.
 :::
 
 ## Je pagina voorvertonen
@@ -143,7 +144,7 @@ Gebruik de concept/publicatie-workflow wanneer je een pagina wilt voorbereiden -
 
 ## Gerelateerde artikelen
 
-- [Pagina's beheren](managing-pages) -- Maak pagina's aan, stel URL's in en beheer sitenavigatie
-- [Uiterlijk](appearance) -- Stel site-brede kleuren, lettertypen en branding in
-- [Bestanden](files) -- Upload afbeeldingen en documenten om in de editor te gebruiken
-- [Formulieren maken](../forms/creating-forms) -- Bouw formulieren die je op pagina's kunt insluiten
+- [Pagina's beheren](./managing-pages.md) -- Maak pagina's aan, stel URL's in en beheer sitenavigatie
+- [Uiterlijk](./appearance.md) -- Stel site-brede kleuren, lettertypen en branding in
+- [Bestanden](./files.md) -- Upload afbeeldingen en documenten om in de editor te gebruiken
+- [Formulieren maken](../forms/creating-forms.md) -- Bouw formulieren die je op pagina's kunt insluiten

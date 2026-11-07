@@ -1,5 +1,6 @@
 ---
 title: "Thiết lập điểm danh"
+description: "Thiết lập cơ sở, buổi lễ, giờ lễ và phân công nhóm trong B1 Admin để theo dõi điểm danh và lịch check-in hoạt động trên toàn hội thánh."
 ---
 
 # Thiết lập điểm danh

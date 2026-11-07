@@ -1,5 +1,6 @@
 ---
 title: "Slogi navigacije"
+description: "V B1 Admin prilagodite barve neprozornih in prosojnih navigacijskih vrstic spletne strani, vključno s stanji povezav, lebdenja in aktivnega stanja za vašo cerkveno stran."
 ---
 
 # Slogi navigacije

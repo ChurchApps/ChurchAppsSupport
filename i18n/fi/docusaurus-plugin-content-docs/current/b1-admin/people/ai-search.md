@@ -1,5 +1,6 @@
 ---
 title: "Tekoälyhaku"
+description: "Etsi B1 Adminin henkilöitä luonnollisella kielellä, esim. ”ketkä eivät ole käyneet kolmeen kuukauteen”, ilman suodattimien rakentamista."
 ---
 
 # Tekoälyhaku

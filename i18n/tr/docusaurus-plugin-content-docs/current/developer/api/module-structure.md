@@ -1,5 +1,6 @@
 ---
 title: "Modül Yapısı"
+description: "API modüllerinin düzenini açıklar: denetleyiciler, depolar, ağ geçitleri, yetki kontrolleri ve B1 geliştirme ortamlarında kodu çalıştıran altı Lambda işlevi."
 ---
 
 # Modül Yapısı
@@ -13,8 +14,8 @@ Her API modülü; denetleyiciler (controllers), depolar (repositories), modeller
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- API'yi yerel olarak kurun -- bkz. [Yerel API Kurulumu](./local-setup)
-- Veri erişim katmanını anlamak için [Veritabanı](./database) mimarisini inceleyin
+- API'yi yerel olarak kurun -- bkz. [Yerel API Kurulumu](./local-setup.md)
+- Veri erişim katmanını anlamak için [Veritabanı](./database.md) mimarisini inceleyin
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Modüller Arası İletişim
 
-Her modül kendi veritabanına sahiptir (bkz. [Veritabanı](./database)) ve hiçbir modül başka bir modülün tablolarını doğrudan sorgulamaz. Bir modül, başka bir modülün sahip olduğu veriye ihtiyaç duyduğunda -- örneğin doing modülünün membership modülünden kişileri çözümlemesi gerektiğinde -- `src/shared/modules/` içindeki sahip modülün **geçidi (gateway)** üzerinden çalışır:
+Her modül kendi veritabanına sahiptir (bkz. [Veritabanı](./database.md)) ve hiçbir modül başka bir modülün tablolarını doğrudan sorgulamaz. Bir modül, başka bir modülün sahip olduğu veriye ihtiyaç duyduğunda -- örneğin doing modülünün membership modülünden kişileri çözümlemesi gerektiğinde -- `src/shared/modules/` içindeki sahip modülün **geçidi (gateway)** üzerinden çalışır:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Yerelde `web` fonksiyonu 8084 portunda, `socket` fonksiyonu ise 8087 portunda ç
 
 ## İlgili Makaleler
 
-- **[Veritabanı](./database)** -- Bağlantı dizeleri, şema betikleri ve veri erişim desenleri
-- **[Yerel API Kurulumu](./local-setup)** -- Adım adım tam kurulum kılavuzu
-- **[ApiHelper](../shared-libraries/api-helper)** -- `CustomBaseController` ve kimlik doğrulama ara katmanını sağlayan paylaşılan kütüphane
+- **[Veritabanı](./database.md)** -- Bağlantı dizeleri, şema betikleri ve veri erişim desenleri
+- **[Yerel API Kurulumu](./local-setup.md)** -- Adım adım tam kurulum kılavuzu
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- `CustomBaseController` ve kimlik doğrulama ara katmanını sağlayan paylaşılan kütüphane

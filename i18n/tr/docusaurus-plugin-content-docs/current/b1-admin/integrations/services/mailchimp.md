@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "B1 Admin kişilerini ve grup ya da kayıtlı liste üyeliklerini etiket olarak Mailchimp kitlesiyle senkronize edin; kurulum, ilk içe aktarma ve sorun giderme adımlarıyla."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Bağlayıcı, açıldığı andan itibaren *değişiklikleri* eşitler. Mevcut r
 
 ## Diğer Tarifler (Zapier / Make)
 
-Kitle eşitlemesinin ötesindeki işlemler (örneğin `donation.created` olayında bağışçılara etiket eklemek, Mailchimp'ten B1'e ters yönde veri aktarmak veya tamamen farklı bir e-posta platformuna, örneğin Constant Contact veya Brevo'ya eşitleme yapmak) hâlâ [Zapier](../zapier) veya [Make](../make) üzerinden yapılabilir. Bu araçlar aynı webhook olaylarını tetikler:
+Kitle eşitlemesinin ötesindeki işlemler (örneğin `donation.created` olayında bağışçılara etiket eklemek, Mailchimp'ten B1'e ters yönde veri aktarmak veya tamamen farklı bir e-posta platformuna, örneğin Constant Contact veya Brevo'ya eşitleme yapmak) hâlâ [Zapier](../zapier.md) veya [Make](../make.md) üzerinden yapılabilir. Bu araçlar aynı webhook olaylarını tetikler:
 
 - **Bağışçılara etiket ekleme:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **İki yönlü:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ Kişi ve grup eşitlemesini daha önce Zapier üzerinden kurduysanız, yerleşik
 
 - [Webhooks (geliştirici başvuru kılavuzu)](/docs/developer/api/webhooks): altyapı, olay kataloğu, teslimat ve yeniden deneme davranışı
 - [Kayıtlı Listeler](/docs/b1-admin/people/lists): Mailchimp etiketleriyle doğal olarak eşleşen, kurallara dayalı kitleler
-- [Zapier (genel bakış)](../zapier): kitle eşitlemesinin ötesindeki tarifler için
+- [Zapier (genel bakış)](../zapier.md): kitle eşitlemesinin ötesindeki tarifler için

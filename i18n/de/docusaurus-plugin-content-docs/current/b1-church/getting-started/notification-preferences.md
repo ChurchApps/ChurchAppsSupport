@@ -1,5 +1,6 @@
 ---
 title: "Benachrichtigungseinstellungen"
+description: "Kanäle, E-Mail-Häufigkeit, Ruhezeiten und SMS-Abmeldung je Benachrichtigungstyp in B1 Admin und der B1-App auf einem Bildschirm festlegen."
 ---
 
 # Benachrichtigungseinstellungen
@@ -60,6 +61,6 @@ Zeitkritische Benachrichtigungen -- etwa eine Sicherheitswarnung oder eine Siche
 
 ## Verwandte Artikel
 
-- [Freiwilligen-Anmeldung](../serving/volunteer-signup) -- Dienst-Erinnerungen und Antworten auf Anfragen zum Dienstplan
-- [Anmeldung zu Veranstaltungen](../events/registering) -- Melden Sie sich für Veranstaltungen an, die Erinnerungen versenden
-- [App installieren](installing-pwa) -- Fügen Sie B1 Ihrem Gerät hinzu, damit Sie Push-Benachrichtigungen erhalten können
+- [Freiwilligen-Anmeldung](../serving/volunteer-signup.md) -- Dienst-Erinnerungen und Antworten auf Anfragen zum Dienstplan
+- [Anmeldung zu Veranstaltungen](../events/registering.md) -- Melden Sie sich für Veranstaltungen an, die Erinnerungen versenden
+- [App installieren](./installing-pwa.md) -- Fügen Sie B1 Ihrem Gerät hinzu, damit Sie Push-Benachrichtigungen erhalten können

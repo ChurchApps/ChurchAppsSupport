@@ -1,5 +1,6 @@
 ---
 title: "사용자 지정 도메인"
+description: "B1 Admin에서 DNS 레코드를 설정하고 Settings에서 도메인을 추가하여, www.yourchurch.org 같은 자체 도메인을 B1 사이트에 연결하세요."
 ---
 
 # 사용자 지정 도메인

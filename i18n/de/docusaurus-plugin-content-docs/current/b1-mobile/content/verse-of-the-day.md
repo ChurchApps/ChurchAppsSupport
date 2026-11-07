@@ -1,5 +1,7 @@
 ---
-title: "Tagesvers"
+title: "Vers des Tages in B1 Mobile"
+sidebar_label: "Tagesvers"
+description: "Der Bildschirm „Vers des Tages“ in B1 Mobile zeigt den Bibelvers von heute als Bild, passend zu Telefon- oder Tablet-Ausrichtung, täglich aktualisiert."
 ---
 
 # Tagesvers
@@ -13,7 +15,7 @@ Der Bildschirm „Tagesvers" zeigt einen täglichen Bibelvers als ansprechend ge
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [B1 Mobile installieren](../getting-started/installing) und sich [anmelden](../getting-started/logging-in)
+- [B1 Mobile installieren](../getting-started/installing.md) und sich [anmelden](../getting-started/logging-in.md)
 - Ihre Gemeinde muss die Funktion „Tagesvers" aktiviert haben
 
 </div>
@@ -46,5 +48,5 @@ Der Tagesvers ist eine integrierte Inhaltsfunktion von B1 Mobile. Wenn Sie ihn i
 
 ## Verwandte Artikel
 
-- [Bibel](./bible) -- Vollständige Bibeltexte im integrierten Leser lesen
-- [Predigten](./sermons) -- Aufgezeichnete Predigten Ihrer Gemeinde ansehen
+- [Bibel](./bible.md) -- Vollständige Bibeltexte im integrierten Leser lesen
+- [Predigten](./sermons.md) -- Aufgezeichnete Predigten Ihrer Gemeinde ansehen

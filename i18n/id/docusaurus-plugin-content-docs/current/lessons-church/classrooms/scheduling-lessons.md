@@ -1,5 +1,7 @@
 ---
-title: "Menjadwalkan Pelajaran"
+title: "Menjadwalkan Pelajaran Kelas di Portal"
+sidebar_label: "Menjadwalkan Pelajaran"
+description: "Jadwalkan pelajaran Lessons.church di kalender kelas pada portal B1 Admin dengan memilih program, studi, pelajaran, dan venue sesuai usia untuk tiap tanggal."
 ---
 
 # Menjadwalkan Pelajaran

@@ -1,5 +1,6 @@
 ---
 title: "Zahtevki za pridružitev skupini"
+description: "Pregledujte, odobravajte ali zavračajte zahteve za pridružitev skupini v B1 Admin, poiščite čakajoče zahteve in ob zavrnitvi navedite razlog."
 ---
 
 # Zahtevki za pridružitev skupini

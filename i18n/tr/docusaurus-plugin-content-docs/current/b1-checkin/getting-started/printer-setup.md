@@ -1,5 +1,6 @@
 ---
 title: "Yazıcı Kurulumu"
+description: "B1 Checkin kiosk'ları için ağ etiket yazıcısı kurun: Wi-Fi'nizde bulun, seçin, test baskısı yapın ve seçimi kaydedin."
 ---
 
 # Yazıcı Kurulumu
@@ -13,7 +14,7 @@ B1 Church Checkin, ağ üzerinden bağlı bir etiket yazıcısına isim etiketle
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- B1 Church Checkin uygulamasına [giriş yapın](./logging-in) ve kilisenizi seçin
+- B1 Church Checkin uygulamasına [giriş yapın](./logging-in.md) ve kilisenizi seçin
 - Uyumlu bir ağ etiket yazıcısını tablet ile aynı Wi-Fi ağına bağlayın
 
 </div>
@@ -87,4 +88,4 @@ Kiosku farklı bir konuma taşırsanız veya ağ yapılandırmanızı değiştir
 
 ## Sonraki Adımlar
 
-Yazıcınız yapılandırıldıktan sonra katılım kaydına başlamaya hazırsınız. Tüm sürecin nasıl işlediğini öğrenmek için [katılım iş akışına](../check-in/) bakın; [ibadet seçimiyle](../check-in/selecting-service) başlayın.
+Yazıcınız yapılandırıldıktan sonra katılım kaydına başlamaya hazırsınız. Tüm sürecin nasıl işlediğini öğrenmek için [katılım iş akışına](../check-in/index.md) bakın; [ibadet seçimiyle](../check-in/selecting-service.md) başlayın.

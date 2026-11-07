@@ -1,5 +1,6 @@
 ---
 title: "Pagkonekta ng FreePlay sa B1 Admin"
+description: "Ikonekta ang classroom TV na may FreePlay sa mga naka-iskedyul na lesson sa B1 Admin, para mapatugtog ng mga guro ang mga ito sa screen habang may klase."
 ---
 
 # Pagkonekta ng Classroom TV sa Inyong B1 Admin Lessons

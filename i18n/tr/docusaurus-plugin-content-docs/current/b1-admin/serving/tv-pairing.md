@@ -1,5 +1,6 @@
 ---
 title: "FreePlay'i B1 Admin'e Bağlama"
+description: "FreePlay çalıştıran bir sınıf televizyonunu B1 Admin'deki planlanmış derslerinize bağlayın; böylece öğretmenler sınıf sırasında dersleri ekranda oynatabilir."
 ---
 
 # Sınıf TV'nizi B1 Admin Derslerinize Bağlama

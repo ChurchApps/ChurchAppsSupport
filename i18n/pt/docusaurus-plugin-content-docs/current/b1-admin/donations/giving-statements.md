@@ -1,5 +1,6 @@
 ---
 title: "Recibos de doação"
+description: "Gere extratos anuais de contribuição de cada doador no B1 Admin e baixe-os em CSV ou imprima para envio, com totais dedutíveis de impostos."
 ---
 
 # Recibos de doação

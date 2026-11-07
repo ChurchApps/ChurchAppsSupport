@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Skrivning af blogindlæg til din hjemmeside i B1 Admin"
+sidebar_label: "Blog"
+description: "Opret, planlæg og publicér blogindlæg på din kirkes hjemmeside i B1 Admin, inklusive uddrag, kategorier, tags, headerbilleder og kommentarindlejringer."
 ---
 
 # Blog
@@ -13,8 +15,8 @@ Siden Blog giver dig mulighed for at udgive nyheder, opdateringer og andagter p�
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Gennemfør [Indledende opsætning](initial-setup) for din hjemmeside
-- Tilføj et navigationslink til `/blog` fra [Administrer sider](managing-pages), hvis besøgende skal kunne finde din blog via menuen
+- Gennemfør [Indledende opsætning](./initial-setup.md) for din hjemmeside
+- Tilføj et navigationslink til `/blog` fra [Administrer sider](./managing-pages.md), hvis besøgende skal kunne finde din blog via menuen
 
 </div>
 
@@ -31,7 +33,7 @@ Siden Blog giver dig mulighed for at udgive nyheder, opdateringer og andagter p�
 3. Tilføj et **Uddrag**, en kort opsummering, der vises i indlægslisten, i metabeskrivelser og i RSS-feedet. Hvis du lader feltet stå tomt, genereres der automatisk et uddrag ud fra begyndelsen af indlæggets indhold.
 4. Skriv indlæggets brødtekst i editoren **Indhold** ved hjælp af Markdown. Klik på **Forhåndsvisning** for at se, hvordan det formaterede indlæg vil se ud.
 5. Vælg en **Kategori** (vælg en eksisterende eller skriv en ny) og eventuelle **Tags** adskilt af kommaer.
-6. Klik på **Vælg billede** for at vælge et foto fra dit [Filer](files)-galleri, eller upload et nyt. Uploadede fotos åbnes i et indbygget beskæringsværktøj, låst til et 16:9-format, så du kan tilpasse ethvert foto til indlæggets header og kortene i oversigten.
+6. Klik på **Vælg billede** for at vælge et foto fra dit [Filer](./files.md)-galleri, eller upload et nyt. Uploadede fotos åbnes i et indbygget beskæringsværktøj, låst til et 16:9-format, så du kan tilpasse ethvert foto til indlæggets header og kortene i oversigten.
 7. Angiv **Forfatter**. Den er som standard dig, men du kan søge efter og vælge enhver person i din database.
 8. Slå **Udgivet** til og angiv en **Udgivelsesdato**, når du er klar til at gøre indlægget offentligt. Lad den være slået fra for at gemme indlægget som kladde.
 
@@ -58,7 +60,7 @@ Hvert indlæg på listen viser en af tre statusser:
 Udgivne indlæg vises på `{yoursite}/blog`, 10 pr. side, med links til **Ældre**/**Nyere** for at bladre gennem dit arkiv. Der er også et kategorifilter, og hvert indlægs forfatter og billede vises. Tags vises som klikbare mærker, så besøgende kan filtrere listen efter tag på samme måde. Enkelte indlæg findes på `{yoursite}/blog/{slug}` og inkluderer relaterede indlæg fra samme kategori. Blogsiden udgiver også et RSS-feed, som feedlæsere og automatiseringsværktøjer som Zapier automatisk kan finde.
 
 :::info
-Blogindlæg er en separat indholdstype fra almindelige websider. De bygges ikke i [sideeditoren](page-editor) og vises ikke på listen over sider. Dette holder bloggen hurtig at skrive i og fokuseret på selve skrivningen.
+Blogindlæg er en separat indholdstype fra almindelige websider. De bygges ikke i [sideeditoren](./page-editor.md) og vises ikke på listen over sider. Dette holder bloggen hurtig at skrive i og fokuseret på selve skrivningen.
 :::
 
 ## Tilføjelse af kommentarer under indlæg
@@ -77,6 +79,6 @@ Ryd feltet, og klik på **Gem** for at fjerne koden fra alle indlæg. Kun person
 
 ## Næste trin
 
-- [Administrer sider](managing-pages) -- Tilføj et navigationslink til din blog
-- [Filer](files) -- Upload fotos, du vil bruge i dine indlæg
+- [Administrer sider](./managing-pages.md) -- Tilføj et navigationslink til din blog
+- [Filer](./files.md) -- Upload fotos, du vil bruge i dine indlæg
 - [Zapier-integration](../integrations/zapier.md) -- Udløs automatiseringer, når nye indlæg udgives

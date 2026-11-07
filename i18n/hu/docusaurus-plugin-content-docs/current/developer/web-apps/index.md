@@ -1,5 +1,6 @@
 ---
 title: "Webalkalmazások"
+description: "A három ChurchApps webalkalmazás (B1 Admin, B1.church, Lessons.church) áttekintése: közös React/MUI-stack, apphelper-csomagok és buildeszközök."
 ---
 
 # Webalkalmazások
@@ -41,7 +42,7 @@ Az alkalmazások a `@churchapps/apphelper*` csomagcsalád révén osztoznak a fe
 | `@churchapps/apphelper-website` | Weboldal- és CMS-komponensek |
 
 :::tip
-A megosztott csomagok helyi fejlesztésével kapcsolatos részletekért lásd az [AppHelper](../shared-libraries/app-helper) dokumentációt.
+A megosztott csomagok helyi fejlesztésével kapcsolatos részletekért lásd az [AppHelper](../shared-libraries/app-helper.md) dokumentációt.
 :::
 
 ## Telepítés utáni szkript

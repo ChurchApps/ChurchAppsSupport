@@ -1,5 +1,7 @@
 ---
-title: "Fazendo Login"
+title: "Entrando no B1 Mobile"
+sidebar_label: "Fazendo Login"
+description: "Entre no app B1 Mobile com sua conta ChurchApps, registre uma nova conta ou recupere uma senha esquecida com um código de 6 dígitos."
 ---
 
 # Fazendo Login
@@ -13,7 +15,7 @@ B1 Mobile usa a mesma conta ChurchApps que você usa em B1.church e outros produ
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Instale B1 Mobile](./installing) em seu dispositivo iOS ou Android
+- [Instale B1 Mobile](./installing.md) em seu dispositivo iOS ou Android
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile usa a mesma conta ChurchApps que você usa em B1.church e outros produ
 3. Digite seu **endereço de e-mail** e **senha**.
 4. Toque em **Sign In**.
 
-Após fazer login, você será levado para o [dashboard](../dashboard/). Se você ainda não selecionou uma igreja, você será solicitado a procurar e selecionar uma.
+Após fazer login, você será levado para o [dashboard](../dashboard/index.md). Se você ainda não selecionou uma igreja, você será solicitado a procurar e selecionar uma.
 
 ## Criando uma Nova Conta
 

@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (Descontinuado)"
+description: "Explica que o app nativo B1 Mobile está descontinuado e que membros e administradores devem usar o PWA do B1.church; páginas antigas ficam para referência."
 ---
 
 # B1 Mobile (Descontinuado)
@@ -40,16 +41,16 @@ B1 Mobile suportava notificações push para que você não perdesse uma atualiz
 
 ## Saiba Mais
 
-- [Getting Started](./getting-started/) -- Instale o aplicativo, crie uma conta e selecione sua igreja.
-- [Dashboard](./dashboard/) -- Entenda sua tela inicial personalizada.
-- [Groups](./groups/) -- Mantenha-se conectado com seus grupos de igreja.
-- [Giving](./giving/) -- Faça doações do seu telefone.
-- [Events](./events/) -- Navegue e registre-se para próximos eventos da igreja.
-- [Check-In](./checkin/) -- Faça check-in para serviços e eventos.
-- [Serving](./serving/) -- Visualize seus planos de serviço, atribuições e oportunidades de voluntariado.
-- [Community](./community/) -- Navegue pelo diretório de membros e envie mensagens.
-- [Content](./content/) -- Sermões, Bíblia, versículo do dia e aulas (tela de aulas descontinuada — consulte [FreePlay](/docs/freeplay/)).
-- [Profile](./profile/) -- Gerencie seu perfil e configurações de conta.
+- [Getting Started](./getting-started/index.md) -- Instale o aplicativo, crie uma conta e selecione sua igreja.
+- [Dashboard](./dashboard/index.md) -- Entenda sua tela inicial personalizada.
+- [Groups](./groups/index.md) -- Mantenha-se conectado com seus grupos de igreja.
+- [Giving](./giving/index.md) -- Faça doações do seu telefone.
+- [Events](./events/index.md) -- Navegue e registre-se para próximos eventos da igreja.
+- [Check-In](./checkin/index.md) -- Faça check-in para serviços e eventos.
+- [Serving](./serving/index.md) -- Visualize seus planos de serviço, atribuições e oportunidades de voluntariado.
+- [Community](./community/index.md) -- Navegue pelo diretório de membros e envie mensagens.
+- [Content](./content/index.md) -- Sermões, Bíblia, versículo do dia e aulas (tela de aulas descontinuada — consulte [FreePlay](/docs/freeplay/)).
+- [Profile](./profile/index.md) -- Gerencie seu perfil e configurações de conta.
 
 :::info
 B1 Mobile foi substituído pelo [PWA B1.church](../b1-church/getting-started/installing-pwa.md). Novas implantações devem usar o PWA — o aplicativo nativo não está mais sendo atualizado.

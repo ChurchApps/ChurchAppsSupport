@@ -1,5 +1,6 @@
 ---
 title: "Plans"
+description: "Alamin ang mga service plan na nakatalaga sa iyo sa B1.church, tingnan ang posisyon at petsa, at tanggapin o tanggihan ang mga takda."
 ---
 
 # Plans

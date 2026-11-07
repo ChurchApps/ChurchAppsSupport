@@ -1,5 +1,6 @@
 ---
 title: "그룹 건강 상태"
+description: "B1 Admin의 그룹 건강도에서 90일 동안의 구성원, 가입, 이탈, 이탈률, 평균 출석 표를 확인해 후속 관리가 필요한 그룹을 찾습니다."
 ---
 
 # 그룹 건강 상태
@@ -13,8 +14,8 @@ title: "그룹 건강 상태"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- 의미 있는 데이터를 보려면 회원이 있는 그룹이 최소 몇 개 필요합니다. [그룹 만들기](creating-groups)를 참조하세요.
-- 출석 데이터는 기록된 세션에서 가져옵니다. [출석](../attendance/) 섹션을 참조하세요.
+- 의미 있는 데이터를 보려면 회원이 있는 그룹이 최소 몇 개 필요합니다. [그룹 만들기](./creating-groups.md)를 참조하세요.
+- 출석 데이터는 기록된 세션에서 가져옵니다. [출석](../attendance/index.md) 섹션을 참조하세요.
 
 </div>
 
@@ -48,6 +49,6 @@ B1 Admin에서 [Jump 메뉴](../introduction.md#getting-around-with-the-jump-men
 
 ## 관련 문서
 
-- [그룹 만들기](creating-groups) — 그룹 설정
-- [그룹 회원](group-members) — 그룹 회원 관리
-- [출석 추적](../attendance/tracking-attendance) — 이 대시보드에 데이터를 제공하는 출석 세션 기록
+- [그룹 만들기](./creating-groups.md) — 그룹 설정
+- [그룹 회원](./group-members.md) — 그룹 회원 관리
+- [출석 추적](../attendance/tracking-attendance.md) — 이 대시보드에 데이터를 제공하는 출석 세션 기록

@@ -1,5 +1,6 @@
 ---
 title: "Szerver-adminisztráció"
+description: "Csak Server.Admin-felhasználóknak: kétfaktoros bejelentkezés visszaállítása, fiókok átvétele, Commons moderálása és egyházi e-mail jóváhagyása a B1 Adminban."
 ---
 
 # Szerver-adminisztráció

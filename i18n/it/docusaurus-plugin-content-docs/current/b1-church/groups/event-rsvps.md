@@ -1,5 +1,6 @@
 ---
 title: "Conferme di partecipazione agli eventi"
+description: "Rispondi a «Ci sarò», «Forse» o «Non posso» per gli eventi di gruppo nel portale B1.church e vedi quante persone partecipano. I leader vedono le risposte."
 ---
 
 # Conferme di partecipazione agli eventi
@@ -30,14 +31,14 @@ La tua conferma vale per quella specifica occorrenza -- per un incontro settiman
 ## Per i leader del gruppo
 
 - **Visualizzare le risposte** -- I leader vedono un collegamento **Vedi risposte** su ogni evento nel calendario del gruppo (**Tutti gli eventi**). Apre il foglio **Risposte** con l'elenco di tutti raggruppati per risposta -- Ci sarò, Forse e Non posso. Se nessuno ha ancora risposto, mostra "Nessuna risposta ancora."
-- **Attivare o disattivare le conferme** -- Quando crei o modifichi un evento, usa l'interruttore **Consenti conferme**. Gli eventi con le conferme disattivate non mostrano i pulsanti di risposta. Anche il personale che crea eventi in blocco da B1 Admin ha la stessa opzione -- consulta [Calendario del gruppo](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Attivare o disattivare le conferme** -- Quando crei o modifichi un evento, usa l'interruttore **Consenti conferme**. Gli eventi con le conferme disattivate non mostrano i pulsanti di risposta. Anche il personale che crea eventi in blocco da B1 Admin ha la stessa opzione -- consulta [Calendario del gruppo](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-Le conferme sono un conteggio rapido e leggero. Se il tuo evento richiede dati di iscrizione, gestione dei posti o pagamento, usa invece le [iscrizioni agli eventi](../events/registering).
+Le conferme sono un conteggio rapido e leggero. Se il tuo evento richiede dati di iscrizione, gestione dei posti o pagamento, usa invece le [iscrizioni agli eventi](../events/registering.md).
 :::
 
 ## Articoli correlati
 
 - [Dettagli del gruppo](./group-details.md) -- Tutto ciò che c'è nella pagina di dettaglio del gruppo
-- [Calendario del gruppo (B1 Admin)](../../b1-admin/groups/group-calendar) -- Come lo staff e i leader gestiscono gli eventi di gruppo e le conferme
-- [Iscriversi agli eventi](../events/registering) -- Iscrizione completa agli eventi con posti e pagamenti
+- [Calendario del gruppo (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Come lo staff e i leader gestiscono gli eventi di gruppo e le conferme
+- [Iscriversi agli eventi](../events/registering.md) -- Iscrizione completa agli eventi con posti e pagamenti

@@ -1,5 +1,6 @@
 ---
 title: "数据安全"
+description: "了解 ChurchApps 如何在 B1 Admin 中保护您教会的数据，包括哈希处理的密码、HTTPS、独立数据库以及 GDPR 数据工具。"
 ---
 
 # 数据安全

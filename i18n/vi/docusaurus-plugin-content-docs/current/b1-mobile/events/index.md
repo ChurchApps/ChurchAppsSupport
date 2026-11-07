@@ -1,5 +1,7 @@
 ---
-title: "Sự kiện"
+title: "Sự kiện và đăng ký nhà thờ trong B1 Mobile"
+sidebar_label: "Sự kiện"
+description: "Duyệt các sự kiện sắp tới của nhà thờ trong B1 Mobile và đăng ký cho bản thân và gia đình với các sự kiện đang mở đăng ký."
 ---
 
 # Sự kiện
@@ -23,10 +25,10 @@ Sự kiện có thể hiển thị các trạng thái khác nhau:
 
 ## Những gì bạn cần
 
-- [Đã cài đặt B1 Mobile](../getting-started/installing) và [đã đăng nhập](../getting-started/logging-in)
+- [Đã cài đặt B1 Mobile](../getting-started/installing.md) và [đã đăng nhập](../getting-started/logging-in.md)
 - Nhà thờ của bạn phải bật tính năng đăng ký sự kiện cho sự kiện đó
 
 ## Tìm hiểu thêm
 
-- [Đăng ký tham gia sự kiện](./registering) -- Hướng dẫn từng bước đăng ký sự kiện trên điện thoại
-- [Tự check-in](../checkin/self-checkin) -- Check in khi bạn đến sự kiện
+- [Đăng ký tham gia sự kiện](./registering.md) -- Hướng dẫn từng bước đăng ký sự kiện trên điện thoại
+- [Tự check-in](../checkin/self-checkin.md) -- Check in khi bạn đến sự kiện

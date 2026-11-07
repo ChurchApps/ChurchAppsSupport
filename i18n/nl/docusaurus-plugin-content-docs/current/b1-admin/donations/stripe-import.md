@@ -1,5 +1,6 @@
 ---
 title: "Stripe Import"
+description: "Haal Stripe-donaties op in B1 Admin met een import die eerst een voorvertoning toont en elke betaling als nieuw, al geïmporteerd of overgeslagen markeert."
 ---
 
 # Stripe Import

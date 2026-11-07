@@ -1,5 +1,6 @@
 ---
 title: "Dalok"
+description: "Dalkönyvtár kezelése a B1 Adminban: dalok keresése, hozzáadása, szerkesztése, ChordPro-szöveg és hangszerelés csatolása, próbafelvételek feltöltése."
 ---
 
 # Dalok

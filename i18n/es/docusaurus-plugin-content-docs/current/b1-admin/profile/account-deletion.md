@@ -1,5 +1,6 @@
 ---
 title: "Revisión de Solicitudes de Eliminación de Cuenta"
+description: "Aprueba o rechaza solicitudes de eliminación de cuentas en B1 Admin, envíalas al Grupo de Aprobación del Directorio y cumple el plazo RGPD de 30 días."
 ---
 
 # Revisión de Solicitudes de Eliminación de Cuenta

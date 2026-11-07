@@ -1,5 +1,7 @@
 ---
-title: "Istoricul donațiilor"
+title: "Istoric donații și extrase în B1.church"
+sidebar_label: "Istoricul donațiilor"
+description: "Vezi donațiile trecute, filtrează pe an și tipărește extrase de donații pentru taxe din pagina Giving din portalul de membri B1.church."
 ---
 
 # Istoricul donațiilor

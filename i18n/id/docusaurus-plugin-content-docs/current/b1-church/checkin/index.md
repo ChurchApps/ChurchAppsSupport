@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Check-In di Portal Anggota B1.church"
+sidebar_label: "Check-In"
+description: "Check-in diri dan anggota rumah tangga ke ibadah gereja dari portal anggota B1.church, tanpa kiosk, sambil menetapkan grup."
 ---
 
 # Check-In

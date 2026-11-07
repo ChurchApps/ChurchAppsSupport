@@ -1,5 +1,6 @@
 ---
 title: "Calendário de Disponibilidade"
+description: "Cadastre salas e equipamentos reserváveis no B1 Admin, reserve-os no calendário, defina intervalos de montagem e desmontagem e trate reservas recorrentes."
 ---
 
 # Calendário de Disponibilidade
@@ -13,7 +14,7 @@ O Calendário de Disponibilidade oferece uma visão de pássaro de todas as rese
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Configure pelo menos uma [sala ou recurso](rooms-resources) na seção Salas & Recursos
+- Configure pelo menos uma [sala ou recurso](./rooms-resources.md) na seção Salas & Recursos
 - Você precisa de acesso de edição à seção Calendários no B1 Admin
 
 </div>
@@ -58,7 +59,7 @@ Use o menu suspenso **Sala / Recurso** no canto superior esquerdo para estreitar
 6. Clique em **Salvar** para submeter a reserva.
 
 :::info
-Se a sala ou recurso tem um **Grupo de Aprovação** configurado, a reserva aparecerá como **Pendente** até que um líder daquele grupo a aprove. Veja [Aprovações de Calendário](approvals) para o fluxo de trabalho de aprovação.
+Se a sala ou recurso tem um **Grupo de Aprovação** configurado, a reserva aparecerá como **Pendente** até que um líder daquele grupo a aprove. Veja [Aprovações de Calendário](./approvals.md) para o fluxo de trabalho de aprovação.
 :::
 
 :::tip
@@ -67,6 +68,6 @@ O calendário destacará qualquer conflito antes de você salvar. Se você vê u
 
 ## Artigos Relacionados
 
-- [Salas, Recursos & Agendamento](rooms-resources) — configure espaços e equipamentos reserváveis
-- [Aprovações de Calendário](approvals) — aprove ou negue solicitações de reserva
-- [Criando Calendários](creating-calendars) — gerencie calendários de eventos
+- [Salas, Recursos & Agendamento](./rooms-resources.md) — configure espaços e equipamentos reserváveis
+- [Aprovações de Calendário](./approvals.md) — aprove ou negue solicitações de reserva
+- [Criando Calendários](./creating-calendars.md) — gerencie calendários de eventos

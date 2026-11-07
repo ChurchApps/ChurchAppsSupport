@@ -1,5 +1,6 @@
 ---
 title: "Arsitektur Notifikasi & Pengingat"
+description: "Cara API B1 Admin merutekan notifikasi, pengingat terjadwal, batas email gereja, dan opt-out SMS lewat satu saluran pengiriman dan gerbang preferensi."
 ---
 
 # Arsitektur Notifikasi & Pengingat
@@ -185,6 +186,6 @@ Secara lokal, logika yang sama dapat dipicu sesuai permintaan dengan `npm run ti
 
 ## Halaman terkait
 
-- [Arsitektur Real-time](../realtime): protokol WebSocket dan primitif klien (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) yang digunakan oleh level pengiriman dalam aplikasi
-- [Notifikasi Web Push](../web-push): pengaturan VAPID dan jalur Push API peramban yang digunakan oleh level eskalasi push
-- [Endpoint Messaging](../api/endpoints/messaging): permukaan REST lengkap untuk pesan, percakapan, koneksi, serta rute notifikasi dan pengingat
+- [Arsitektur Real-time](../realtime.md): protokol WebSocket dan primitif klien (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) yang digunakan oleh level pengiriman dalam aplikasi
+- [Notifikasi Web Push](../web-push.md): pengaturan VAPID dan jalur Push API peramban yang digunakan oleh level eskalasi push
+- [Endpoint Messaging](../api/endpoints/messaging.md): permukaan REST lengkap untuk pesan, percakapan, koneksi, serta rute notifikasi dan pengingat

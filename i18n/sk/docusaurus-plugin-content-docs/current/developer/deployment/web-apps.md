@@ -1,5 +1,6 @@
 ---
 title: "Nasadenie webovej aplikácie"
+description: "Nasadenie webových aplikácií ChurchApps (napr. B1 Admin) na Amazon S3 a CloudFront: automatické nasadenie cez GitHub Actions alebo manuálne príkazy."
 ---
 
 # Nasadenie webovej aplikácie
@@ -13,7 +14,7 @@ Webové aplikácie ChurchApps sa nasadzujú ako statické weby do **Amazon S3** 
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- Nastavte webovú aplikáciu lokálne a overte, že sa úspešne zostaví -- pozrite si [Webové aplikácie](../web-apps/)
+- Nastavte webovú aplikáciu lokálne a overte, že sa úspešne zostaví -- pozrite si [Webové aplikácie](../web-apps/index.md)
 - Nakonfigurujte prihlasovacie údaje AWS s prístupom k S3 a CloudFront
 - Zistite názov cieľového bucketu S3 a ID distribúcie CloudFront
 
@@ -53,6 +54,6 @@ Ak potrebujete pred nasadením overiť zostavenie lokálne, spustite `npm run bu
 
 ## Súvisiace články
 
-- **[Webové aplikácie](../web-apps/)** -- Sprievodcovia nastavením pre B1Admin, B1App a LessonsApp
-- **[Nasadenie API](./apis)** -- Nasadenie backendových API
-- **[Nasadenie mobilnej aplikácie](./mobile)** -- Nasadenie mobilných aplikácií do obchodov s aplikáciami
+- **[Webové aplikácie](../web-apps/index.md)** -- Sprievodcovia nastavením pre B1Admin, B1App a LessonsApp
+- **[Nasadenie API](./apis.md)** -- Nasadenie backendových API
+- **[Nasadenie mobilnej aplikácie](./mobile.md)** -- Nasadenie mobilných aplikácií do obchodov s aplikáciami

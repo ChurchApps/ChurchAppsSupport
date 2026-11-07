@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Xhuma i-B1 Admin ku-Zapier kuze uqalise kuzenta ngalokuzenzakalelako ebantfwini labasha, timinikelweni nemalungwini, uphindze ubhale emarekhodi ku-B1."
 ---
 
 # Zapier
@@ -67,7 +68,7 @@ Khetsa i-trigger, bese ungeta sinyatselo lesinye nome letinyenti te-action. Tibo
 ### Tfumela iminikelo kusigceme se-Slack ngeekhadi lenetintfo letinyenti kunaleletsakhelwe ngekhatsi
 
 - **Trigger** — B1: New Donation
-- **Action** — Slack: Send Channel Message. Yakha nome nguluphi luhlelo — tinkhinobho, tinamatselo, njalonjalo — lokungakwatiwa yi-[Slack connector](./slack-discord) leyakhelwe ngekhatsi.
+- **Action** — Slack: Send Channel Message. Yakha nome nguluphi luhlelo — tinkhinobho, tinamatselo, njalonjalo — lokungakwatiwa yi-[Slack connector](./slack-discord.md) leyakhelwe ngekhatsi.
 
 ### Ngeta emalungu lamasha ecembu ku-Google Group
 
@@ -102,6 +103,6 @@ Loku kusho kutsi i-trigger ivela kuphela kumicimbi leyenteka **ngemuva** kwekuvu
 
 ## Bona Nako
 
-- [Make](./make) — indlela lefanako, inkhundla lehlukile
-- [Slack & Discord](./slack-discord) — sati senkulumo-mpendvulwano lelula ngaphandle kwe-Zapier
+- [Make](./make.md) — indlela lefanako, inkhundla lehlukile
+- [Slack & Discord](./slack-discord.md) — sati senkulumo-mpendvulwano lelula ngaphandle kwe-Zapier
 - [Webhooks (developer reference)](/docs/developer/api/webhooks)

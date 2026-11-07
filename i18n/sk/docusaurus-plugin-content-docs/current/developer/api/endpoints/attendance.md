@@ -1,5 +1,6 @@
 ---
 title: "Koncové body dochádzky"
+description: "Referencia API účasti v B1 Admin a B1 Checkin: kampusy, bohoslužby, časy bohoslužieb, relácie, návštevy, pravidlá prihlasovania a koncové body exportu."
 ---
 
 # Koncové body dochádzky
@@ -270,6 +271,6 @@ Sleduje série účasti jednotlivcov, teda po sebe idúce týždne, počas ktor�
 
 ## Súvisiace stránky
 
-- [Koncové body členstva](./membership) — Osoby, skupiny, roly a správa cirkvi
-- [Autentifikácia a oprávnenia](./authentication) — Postup prihlásenia, JWT, model oprávnení
-- [Štruktúra modulov](../module-structure) — Vzory organizácie kódu
+- [Koncové body členstva](./membership.md) — Osoby, skupiny, roly a správa cirkvi
+- [Autentifikácia a oprávnenia](./authentication.md) — Postup prihlásenia, JWT, model oprávnení
+- [Štruktúra modulov](../module-structure.md) — Vzory organizácie kódu

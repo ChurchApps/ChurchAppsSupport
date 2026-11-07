@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "通过 Zapier 将 VOMO 志愿者报名和自助终端签到连接到 B1 Admin 的人员和小组，包括 API 密钥权限范围和设置步骤。"
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ VOMO 操作仅限于 **起草项目** 和 **查找** 现有组织者/项目 — 
 
 ### 通过短信发送"感谢注册"文本
 
-在同一 Zap 中链接 VOMO 参与 → Clearstream 发送文本或 Text In Church 发送消息。两者都有一流的 Zapier 操作 — 查看 [Clearstream](./clearstream) 和 [Text In Church](./text-in-church)。
+在同一 Zap 中链接 VOMO 参与 → Clearstream 发送文本或 Text In Church 发送消息。两者都有一流的 Zapier 操作 — 查看 [Clearstream](./clearstream.md) 和 [Text In Church](./text-in-church.md)。
 
 ### 检测掉队
 
@@ -91,6 +92,6 @@ VOMO 操作仅限于 **起草项目** 和 **查找** 现有组织者/项目 — 
 
 ## 另请参阅
 
-- [Zapier（概览）](../zapier) — 每个 Zapier 方案的 B1 侧
-- [Clearstream](./clearstream)、[Text In Church](./text-in-church) — 配对志愿者注册与短信确认
+- [Zapier（概览）](../zapier.md) — 每个 Zapier 方案的 B1 侧
+- [Clearstream](./clearstream.md)、[Text In Church](./text-in-church.md) — 配对志愿者注册与短信确认
 - [Webhooks（开发者参考）](/docs/developer/api/webhooks) — VOMO 可以触发的事件

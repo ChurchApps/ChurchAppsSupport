@@ -1,5 +1,6 @@
 ---
 title: "Statistikker"
+description: "Find downloadtal pr. studie, se hvilke kirker der henter dine ressourcer, og kortlæg deres placering i Lessons.church-statistikken med filtrering efter datointerval."
 ---
 
 # Statistikker

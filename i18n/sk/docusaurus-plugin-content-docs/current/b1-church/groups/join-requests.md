@@ -1,5 +1,6 @@
 ---
 title: "Pripojenie sa ku skupine"
+description: "Požiadajte o členstvo v skupine, ktorá vyžaduje schválenie, na B1.church, pridajte voliteľnú poznámku pre vedúceho a sledujte alebo zrušte svoju čakajúcu žiadosť."
 ---
 
 # Pripojenie sa ku skupine

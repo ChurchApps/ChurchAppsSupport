@@ -1,5 +1,6 @@
 ---
 title: Glaubensbekenntnis
+description: "Was ChurchApps über Gott, Jesus, den Heiligen Geist, die Schrift, Erlösung und Kirche glaubt, als Maßstab für die Prüfung von Lessons.church-Lehrplänen."
 ---
 
 # Glaubensbekenntnis

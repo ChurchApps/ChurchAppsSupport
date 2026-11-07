@@ -1,5 +1,6 @@
 ---
 title: "Hantera din profil"
+description: "Uppdatera ditt ChurchApps-konto i B1 Admin: ändra namn, e-post och lösenord, aktivera tvåfaktorsinloggning, välj tema eller radera ditt konto."
 ---
 
 # Hantera din profil

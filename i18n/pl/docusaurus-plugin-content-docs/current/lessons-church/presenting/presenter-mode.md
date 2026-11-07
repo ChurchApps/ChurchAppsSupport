@@ -1,5 +1,6 @@
 ---
 title: "Tryb prezentacji"
+description: "Uruchamianie lekcji na pełnym ekranie projektora lub telewizora w trybie prezentacji Lessons.church i przechodzenie przez sekcje w trakcie zajęć."
 ---
 
 # Tryb prezentacji

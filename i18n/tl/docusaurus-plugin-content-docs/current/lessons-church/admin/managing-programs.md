@@ -1,5 +1,6 @@
 ---
 title: "Pamamahala ng mga Programa"
+description: "Gumawa at mag-edit ng curriculum programs sa Lessons.church, mag-set up ng slugs at thumbnails, i-group ang studies sa kategorya, at magdagdag ng resources."
 ---
 
 # Pamamahala ng mga Programa

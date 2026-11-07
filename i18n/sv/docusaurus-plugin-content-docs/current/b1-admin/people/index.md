@@ -1,5 +1,6 @@
 ---
 title: "Personer"
+description: "Sök, lägg till och redigera kyrkans medlemmar i avsnittet People i B1 Admin, med hushållsspårning, massuppdateringar och utskrift och export av katalog."
 ---
 
 # Personer

@@ -1,5 +1,6 @@
 ---
 title: "Endpoints de Conteúdo"
+description: "Referência de endpoints da API de Conteúdo da ChurchApps: páginas, posts de blog, redirecionamentos, sermões, eventos, arquivos, Bíblia e músicas no B1 Admin."
 ---
 
 # Endpoints de Conteúdo
@@ -133,7 +134,7 @@ Caminho base: `/content/pageHistory`
 
 Caminho base: `/content/posts`
 
-Os posts do blog são registros independentes: `title`, `slug` (único por igreja), `excerpt`, `content` (corpo em markdown), `authorId`, `photoUrl`, `publishDate`, `category` e `tags`. Um post é publicado assim que `publishDate` estiver definida e no passado. Os endpoints de leitura enriquecem cada post com `authorName`, resolvido a partir de `authorId`. Veja [Arquitetura do Construtor de Sites](../../architecture/website-builder#blog).
+Os posts do blog são registros independentes: `title`, `slug` (único por igreja), `excerpt`, `content` (corpo em markdown), `authorId`, `photoUrl`, `publishDate`, `category` e `tags`. Um post é publicado assim que `publishDate` estiver definida e no passado. Os endpoints de leitura enriquecem cada post com `authorName`, resolvido a partir de `authorId`. Veja [Arquitetura do Construtor de Sites](../../architecture/website-builder.md#blog).
 
 | Método | Caminho | Autenticação | Permissão | Descrição |
 |--------|---------|--------------|-----------|-----------|
@@ -458,8 +459,8 @@ Caminho base: `/content/support`
 
 ## Páginas Relacionadas
 
-- [Arquitetura do Construtor de Sites](../../architecture/website-builder) -- Como páginas, seções, elementos, posts e redirecionamentos se conectam entre os aplicativos
-- [Endpoints de Membresia](./membership) -- Pessoas, igrejas, grupos, funções, permissões
-- [Endpoints de Frequência](./attendance) -- Registro de serviços e visitas
-- [Autenticação e Permissões](./authentication) -- Fluxo de login, JWT, modelo de permissões
-- [Estrutura de Módulos](../module-structure) -- Padrões de organização do código
+- [Arquitetura do Construtor de Sites](../../architecture/website-builder.md) -- Como páginas, seções, elementos, posts e redirecionamentos se conectam entre os aplicativos
+- [Endpoints de Membresia](./membership.md) -- Pessoas, igrejas, grupos, funções, permissões
+- [Endpoints de Frequência](./attendance.md) -- Registro de serviços e visitas
+- [Autenticação e Permissões](./authentication.md) -- Fluxo de login, JWT, modelo de permissões
+- [Estrutura de Módulos](../module-structure.md) -- Padrões de organização do código

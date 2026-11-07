@@ -1,5 +1,6 @@
 ---
 title: "Nhập dữ liệu"
+description: "Đưa dữ liệu người, nhóm, điểm danh và dâng hiến hiện có vào B1 Admin bằng công cụ B1 Transfer, hoặc xuất bản sao lưu dữ liệu bất cứ lúc nào."
 ---
 
 # Nhập dữ liệu

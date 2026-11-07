@@ -1,5 +1,6 @@
 ---
 title: "Calendarul de disponibilitate"
+description: "Configurați în B1 Admin săli și echipamente rezervabile, adăugați pauze de pregătire și curățenie și gestionați rezervările recurente sau cu aprobare."
 ---
 
 # Calendarul de disponibilitate
@@ -13,7 +14,7 @@ Calendarul de disponibilitate vă oferă o imagine de ansamblu asupra tuturor re
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Configurați cel puțin o [sală sau resursă](rooms-resources) în secțiunea Săli și resurse
+- Configurați cel puțin o [sală sau resursă](./rooms-resources.md) în secțiunea Săli și resurse
 - Aveți nevoie de acces de editare la secțiunea Calendare din B1 Admin
 
 </div>
@@ -58,7 +59,7 @@ Folosiți lista derulantă **Sală / Resursă** din partea stângă sus pentru a
 6. Faceți clic pe **Salvează** pentru a trimite rezervarea.
 
 :::info
-Dacă sala sau resursa are configurat un **Grup de aprobare**, rezervarea va apărea ca **În așteptare** până când un lider al acelui grup o aprobă. Consultați [Aprobările din calendar](approvals) pentru fluxul de aprobare.
+Dacă sala sau resursa are configurat un **Grup de aprobare**, rezervarea va apărea ca **În așteptare** până când un lider al acelui grup o aprobă. Consultați [Aprobările din calendar](./approvals.md) pentru fluxul de aprobare.
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Calendarul va evidenția orice conflict înainte de a salva. Dacă vedeți un av
 
 ## Articole conexe
 
-- [Săli, resurse și programare](rooms-resources) — configurarea spațiilor și echipamentelor care pot fi rezervate
-- [Aprobările din calendar](approvals) — aprobarea sau refuzarea cererilor de rezervare
-- [Crearea calendarelor](creating-calendars) — gestionarea calendarelor de evenimente
+- [Săli, resurse și programare](./rooms-resources.md) — configurarea spațiilor și echipamentelor care pot fi rezervate
+- [Aprobările din calendar](./approvals.md) — aprobarea sau refuzarea cererilor de rezervare
+- [Crearea calendarelor](./creating-calendars.md) — gestionarea calendarelor de evenimente

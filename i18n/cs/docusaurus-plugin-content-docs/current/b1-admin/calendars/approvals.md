@@ -1,5 +1,6 @@
 ---
 title: "Schvalování kalendáře"
+description: "Projděte čekající žádosti o rezervaci místností a zdrojů v B1 Admin, zkontrolujte kolize a schvalte nebo zamítněte, případně akci zveřejněte."
 ---
 
 # Schvalování kalendáře
@@ -13,7 +14,7 @@ Stránka Schválení slouží administrátorům k prohlížení a vyřizování 
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Nastavte místnostem nebo zdrojům **skupinu schválení** (Approval Group) v sekci [Místnosti a zdroje](rooms-resources)
+- Nastavte místnostem nebo zdrojům **skupinu schválení** (Approval Group) v sekci [Místnosti a zdroje](./rooms-resources.md)
 - Potřebujete oprávnění **Správce kalendářů** (Calendars Admin) nebo oprávnění **content.edit**
 
 </div>
@@ -41,7 +42,7 @@ Klikněte na **Schválit** nebo **Zamítnout** u libovolné žádosti o rezervac
 Když kliknete na **Schválit**, otevře se dialog **Schválit rezervaci**, ve kterém můžete událost zároveň zveřejnit:
 
 1. Zaškrtněte **Zveřejnit v kalendáři pro veřejnost**, aby se událost zobrazila v kalendáři její skupiny veřejně. Pokud ji nezaškrtnete, rezervace se schválí bez změny viditelnosti události.
-2. Jakmile je zaškrtnuto **Zveřejnit v kalendáři pro veřejnost**, můžete volitelně v nabídce **Také přidat do kalendáře** vybrat [kurátorský kalendář](curated-calendar) a přidat do něj událost také. Ponecháte-li možnost **Žádný**, tento krok se přeskočí. (Tato volba se zobrazí jen u oprávnění **content.edit**.)
+2. Jakmile je zaškrtnuto **Zveřejnit v kalendáři pro veřejnost**, můžete volitelně v nabídce **Také přidat do kalendáře** vybrat [kurátorský kalendář](./curated-calendar.md) a přidat do něj událost také. Ponecháte-li možnost **Žádný**, tento krok se přeskočí. (Tato volba se zobrazí jen u oprávnění **content.edit**.)
 3. Klikněte na **Schválit**.
 
 ## Čekající události
@@ -49,10 +50,10 @@ Když kliknete na **Schválit**, otevře se dialog **Schválit rezervaci**, ve k
 Pokud váš pracovní postup vyžaduje, aby byly události před zveřejněním pro veřejnost schváleny, čekající události se zobrazí v sekci **Žádosti o události**. Kliknutím na **Schválit** zveřejníte událost v kalendáři; kliknutím na **Zamítnout** odesílatele upozorníte, že je potřeba provést změny.
 
 :::tip
-Nastavte skupinu schválení u místnosti v sekci [Místnosti a zdroje](rooms-resources), aby pro tuto místnost bylo vyžadováno schválení. Skupiny s přístupem pak mohou místnost žádat při vytváření událostí a tyto žádosti se objeví na této stránce.
+Nastavte skupinu schválení u místnosti v sekci [Místnosti a zdroje](./rooms-resources.md), aby pro tuto místnost bylo vyžadováno schválení. Skupiny s přístupem pak mohou místnost žádat při vytváření událostí a tyto žádosti se objeví na této stránce.
 :::
 
 ## Související články
 
-- [Místnosti, zdroje a plánování](rooms-resources) — nastavení rezervovatelných místností a zdrojů
-- [Vytváření kalendářů](creating-calendars) — správa kalendářů a událostí
+- [Místnosti, zdroje a plánování](./rooms-resources.md) — nastavení rezervovatelných místností a zdrojů
+- [Vytváření kalendářů](./creating-calendars.md) — správa kalendářů a událostí

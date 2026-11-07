@@ -1,5 +1,6 @@
 ---
 title: "Endpointreferens"
+description: "Hitta varje ChurchApps API-endpoint per modul, se HTTP-metod, sökväg, autentisering och behörighet för varje rutt, och lär dig konventionerna för batchsparning och fel innan du anropar API:et."
 ---
 
 # Endpointreferens
@@ -89,10 +90,10 @@ Rapportparametrar skickas som värden i frågesträngen (t.ex. `?startDate=2024-
 
 | Modul | Bassökväg | Beskrivning |
 |--------|-----------|-------------|
-| [Autentisering](./authentication) | `/membership/users`, `/membership/oauth` | Inloggning, registrering, JWT-token, OAuth, behörigheter |
-| [Medlemskap](./membership) | `/membership/*` | Personer, kyrkor, grupper, hushåll, roller, formulär, inställningar |
-| [Närvaro](./attendance) | `/attendance/*` | Campus, gudstjänster, sessioner, besök, incheckningsposter |
-| [Innehåll](./content) | `/content/*` | Sidor, predikningar, evenemang, filer, gallerier, Bibel, strömning |
-| [Gåvor](./giving) | `/giving/*` | Gåvor, fonder, betalningsgateways, prenumerationer |
-| [Meddelanden](./messaging) | `/messaging/*` | Konversationer, notiser, enheter, sms |
-| [Doing](./doing) | `/doing/*` | Planer, uppgifter, tilldelningar, automatiseringar, schemaläggning |
+| [Autentisering](./authentication.md) | `/membership/users`, `/membership/oauth` | Inloggning, registrering, JWT-token, OAuth, behörigheter |
+| [Medlemskap](./membership.md) | `/membership/*` | Personer, kyrkor, grupper, hushåll, roller, formulär, inställningar |
+| [Närvaro](./attendance.md) | `/attendance/*` | Campus, gudstjänster, sessioner, besök, incheckningsposter |
+| [Innehåll](./content.md) | `/content/*` | Sidor, predikningar, evenemang, filer, gallerier, Bibel, strömning |
+| [Gåvor](./giving.md) | `/giving/*` | Gåvor, fonder, betalningsgateways, prenumerationer |
+| [Meddelanden](./messaging.md) | `/messaging/*` | Konversationer, notiser, enheter, sms |
+| [Doing](./doing.md) | `/doing/*` | Planer, uppgifter, tilldelningar, automatiseringar, schemaläggning |

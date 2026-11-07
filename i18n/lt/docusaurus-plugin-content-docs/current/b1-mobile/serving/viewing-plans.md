@@ -1,5 +1,7 @@
 ---
-title: "Planų peržiūra"
+title: "Tarnystės planų peržiūra B1 Mobile"
+sidebar_label: "Planų peržiūra"
+description: "Tikrinkite artėjantį ir ankstesnį tarnystės tvarkaraštį B1 Mobile, skaitykite plano detales ir tvarką bei spausdinkite planus repeticijoms."
 ---
 
 # Planų peržiūra
@@ -13,7 +15,7 @@ Planų ekranas B1 Mobile programėlėje suteikia išsamų jūsų tarnystės tvar
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiegite B1 Mobile](../getting-started/installing) ir [prisijunkite](../getting-started/logging-in) prie savo paskyros
+- [Įdiegite B1 Mobile](../getting-started/installing.md) ir [prisijunkite](../getting-started/logging-in.md) prie savo paskyros
 - Jūsų bažnyčios administratorius turi priskirti jus bent prie vieno tarnystės plano
 
 </div>
@@ -61,4 +63,4 @@ Gausite [pranešimus](../community/notifications.md), kai būsite priskirti prie
 
 ## Susiję straipsniai
 
-- [Savanorių registracija](./volunteer-signup) -- Naršykite ir registruokitės laisvoms savanorių pareigoms
+- [Savanorių registracija](./volunteer-signup.md) -- Naršykite ir registruokitės laisvoms savanorių pareigoms

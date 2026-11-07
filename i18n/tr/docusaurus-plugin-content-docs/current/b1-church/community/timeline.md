@@ -1,5 +1,6 @@
 ---
 title: "Zaman Çizelgesi"
+description: "B1.church üye portalındaki Zaman Çizelgesi sekmesi kaldırılmıştır. Grup sohbetlerini, etkinlikleri, görevleri ve uyarıları Ben sayfasında, zil simgesinde ve her grupta bulun."
 ---
 
 # Zaman Çizelgesi
@@ -16,13 +17,13 @@ Ayrı **Zaman Çizelgesi** sekmesi kaldırıldı. Üye portalı artık [Ana Sayf
 | --- | --- |
 | Grup sohbetleri ve duyurular | Her [grubun](../groups/conversations.md) içindeki sohbet (**Sohbeti aç**) |
 | Sizin ve gruplarınız için yaklaşan etkinlikler | **Ben** sayfası (`/mobile/me`) ve her grubun **Sonraki etkinlik** bölümü |
-| Görevler ve hizmet atamaları | **Ben** sayfası ve [Planlar](../plans/) |
+| Görevler ve hizmet atamaları | **Ben** sayfası ve [Planlar](../plans/index.md) |
 | Yeni vaazlar | Ana Sayfa'daki **Son vaaz** bölümü ve [Vaazlar](../content/sermons.md) sekmesi |
 | Sizi bilgilendiren her şey | Uygulama çubuğundaki **zil** simgesi veya `/mobile/notifications` |
 
 ## Ben Sayfası
 
-[Ben sayfası](../getting-started/me-page), eski akışın en yakın karşılığıdır. Sizin için yaklaşan işleri listeler: hizmet atamalarını, etkinlik kayıtlarını ve grup etkinliklerini. Ayrıca gönderdiğiniz formları, devam geçmişinizi ve en son bildirimlerinizi gösterir. Profilinize, bildirim tercihlerinize, mesajlarınıza, bağışlarınıza ve kayıtlarınıza doğrudan bağlantılar da içerir.
+[Ben sayfası](../getting-started/me-page.md), eski akışın en yakın karşılığıdır. Sizin için yaklaşan işleri listeler: hizmet atamalarını, etkinlik kayıtlarını ve grup etkinliklerini. Ayrıca gönderdiğiniz formları, devam geçmişinizi ve en son bildirimlerinizi gösterir. Profilinize, bildirim tercihlerinize, mesajlarınıza, bağışlarınıza ve kayıtlarınıza doğrudan bağlantılar da içerir.
 
 ## Bildirimler
 

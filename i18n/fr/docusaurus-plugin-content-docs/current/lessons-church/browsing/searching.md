@@ -1,5 +1,6 @@
 ---
 title: "Recherche"
+description: "Trouver programmes, études et leçons par mot-clé ou récit biblique dans Lessons.church, et comprendre le classement des résultats."
 ---
 
 # Recherche

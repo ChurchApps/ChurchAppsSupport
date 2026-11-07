@@ -1,5 +1,6 @@
 ---
 title: "Tạo biểu mẫu"
+description: "Tạo biểu mẫu tùy chỉnh trong B1 Admin cho đăng ký sự kiện, khảo sát và thẻ khách viếng thăm, rồi chia sẻ qua liên kết, mã QR hoặc bản in."
 ---
 
 # Tạo biểu mẫu

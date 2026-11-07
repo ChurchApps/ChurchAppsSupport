@@ -29,7 +29,7 @@ Bir kilisenin sağlayıcı kaydı (`content.storageProviders`, B1Admin → Ayarl
 
 Kapsam notu: Sağlayıcı seçimi, içerik **dosya ve kaynakları** akışını kapsar (toplu medyanın bulunduğu yer). Galeri, logo ve fotoğraf yüklemeleri varsayılan sağlayıcıda kalır. Bu yüklemeler depolamadaki anahtarları listeleyip URL'leri istemci tarafında oluşturduğu için kilise bazlı yönlendirme henüz uygulanmaz.
 
-Aynı arayüz, [Kendi Depolamanızı Getirin](./byos-storage) özelliğini de destekler: Kiliseler, MinistryStuff planı yerine Google Drive, Dropbox, OneDrive veya kendi S3 uyumlu bucket'larını bağlayabilir.
+Aynı arayüz, [Kendi Depolamanızı Getirin](./byos-storage.md) özelliğini de destekler: Kiliseler, MinistryStuff planı yerine Google Drive, Dropbox, OneDrive veya kendi S3 uyumlu bucket'larını bağlayabilir.
 
 ## Faturalandırma
 

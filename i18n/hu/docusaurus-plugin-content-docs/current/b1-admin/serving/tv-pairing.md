@@ -1,5 +1,6 @@
 ---
 title: "A FreePlay csatlakoztatása a B1 Adminhoz"
+description: "Csatlakoztasson egy FreePlay-t futtató osztályterem TV-t a B1 Adminban ütemezett leckéihez, hogy a tanárok órán a képernyőn játszhassák le őket."
 ---
 
 # Osztályteremben lévő TV csatlakoztatása a B1 Admin leckéihez

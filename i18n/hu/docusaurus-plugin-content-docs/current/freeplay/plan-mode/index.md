@@ -1,5 +1,6 @@
 ---
 title: "Tervmód"
+description: "FreePlay TV csatlakoztatása a B1 Admin egyházi istentiszteleti tervéhez, hogy a heti leckéket, előadásokat és médiát sorrendben mutassa."
 ---
 
 # Tervmód
@@ -12,13 +13,13 @@ A Tervmód a TV-t egy istentiszteleti tervhez csatlakoztatja. Ahelyett, hogy egy
 
 ## Miben különbözik a többi módtól
 
-- **[Ütemezett mód](../scheduled-mode/)**: a FreePlay Adminban a megadott időpontokban, a naptárból játssza le a lejátszási listákat, anélkül hogy valakinek el kellene indítania
+- **[Ütemezett mód](../scheduled-mode/index.md)**: a FreePlay Adminban a megadott időpontokban, a naptárból játssza le a lejátszási listákat, anélkül hogy valakinek el kellene indítania
 - **Tervmód**: a tervtípushoz kapcsolódó tartalmat tölti be, amely lehet tanfolyam, szolgáltatói prezentáció, kiegészítő és egyéb média, egyedi sorrendben elrendezve
 
 A Tervmód különösen hasznos, ha az istentiszteleti terv különböző forrásokból származó tartalmak keverékét tartalmazza, amelyek mind egyetlen sorrendbe vannak rendezve.
 
 :::tip
-Azt szeretnéd, hogy az aktuális terv önállóan, meghatározott időpontban induljon el? A FreePlay Adminban adj hozzá egy naptárbejegyzést, és a **Istentiszteleti tervek** alatt válaszd ki a tervtípust. Lásd: [A naptár ütemezése](../scheduled-mode/scheduling-the-calendar).
+Azt szeretnéd, hogy az aktuális terv önállóan, meghatározott időpontban induljon el? A FreePlay Adminban adj hozzá egy naptárbejegyzést, és a **Istentiszteleti tervek** alatt válaszd ki a tervtípust. Lásd: [A naptár ütemezése](../scheduled-mode/scheduling-the-calendar.md).
 :::
 
 ## Hogyan működik
@@ -32,4 +33,4 @@ A TV a tervtípushoz marad párosítva. Minden héten automatikusan átveszi a l
 
 ## Ebben a szakaszban
 
-- **[Eszköz párosítása](./device-pairing)**: hogyan hozhatod létre és adhatod meg a párosítási kódot
+- **[Eszköz párosítása](./device-pairing.md)**: hogyan hozhatod létre és adhatod meg a párosítási kódot

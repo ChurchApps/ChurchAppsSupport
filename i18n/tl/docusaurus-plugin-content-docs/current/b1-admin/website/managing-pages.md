@@ -1,5 +1,6 @@
 ---
 title: "Pamamahala ng mga Pahina"
+description: "Gumawa, mag-edit, at ayusin ang pages at navigation sa Website Pages view ng B1 Admin, kasama ang page setting, redirect, at site template."
 ---
 
 # Pamamahala ng mga Pahina
@@ -13,13 +14,13 @@ Ang Website Pages view ang sentro mo para sa paggawa, pag-edit, at pag-oorganisa
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- Kumpletuhin ang [Initial Setup](initial-setup) para i-configure ang iyong domain at mga pangunahing setting ng site
-- Ihanda ang iyong nilalaman at mga larawan. Gamitin muna ang [Files](files) manager para i-upload ang mga media asset.
+- Kumpletuhin ang [Initial Setup](./initial-setup.md) para i-configure ang iyong domain at mga pangunahing setting ng site
+- Ihanda ang iyong nilalaman at mga larawan. Gamitin muna ang [Files](./files.md) manager para i-upload ang mga media asset.
 
 </div>
 
 :::info
-Kung may higit sa isang website ang inyong simbahan (halimbawa, magkakahiwalay na site para sa bawat campus), gamitin ang site switcher sa itaas ng Website Pages view para lumipat sa pagitan ng mga ito. Bawat site ay may sariling mga pahina, navigation, at mga setting ng [appearance](appearance).
+Kung may higit sa isang website ang inyong simbahan (halimbawa, magkakahiwalay na site para sa bawat campus), gamitin ang site switcher sa itaas ng Website Pages view para lumipat sa pagitan ng mga ito. Bawat site ay may sariling mga pahina, navigation, at mga setting ng [appearance](./appearance.md).
 :::
 
 ## Pag-unawa sa mga Uri ng Pahina
@@ -35,7 +36,7 @@ Maaari mong gawing custom na pahina ang anumang auto-generated na pahina kung gu
 
 1. I-click ang **Add Page** na button sa kanang itaas ng Website Pages view.
 2. Pumili ng uri ng pahina (blank o isang template) at bigyan ito ng pangalan.
-3. I-click ang **Edit Content** sa tabi ng anumang pahina para buksan ang [page editor](page-editor), kung saan maaari kang magdagdag ng mga section, text, larawan, at iba pang element.
+3. I-click ang **Edit Content** sa tabi ng anumang pahina para buksan ang [page editor](./page-editor.md), kung saan maaari kang magdagdag ng mga section, text, larawan, at iba pang element.
 4. I-click ang **Page Settings** sa tabi ng isang pahina para i-update ang pamagat ng pahina, URL path, at iba pang metadata.
 5. I-click ang path ng pahina sa **Path** column para buksan ang live na pahina sa bagong tab at makita nang eksakto kung ano ang itsura nito sa mga bisita.
 
@@ -112,10 +113,10 @@ Kung bumubuo ka ng iyong site mula sa simula, maaari mo itong simulan gamit ang 
 3. Kapag nakakita ka ng gusto mo, i-click ang **Apply Template**.
 4. Ang mga pahinang wala pa ay gagawin at idaragdag sa iyong navigation. Hindi gagalawin ang mga umiiral nang pahina.
 
-Pagkatapos mag-apply ng template, buksan ang bawat pahina sa [page editor](page-editor) para palitan ang placeholder na text at mga larawan ng totoong nilalaman ng inyong simbahan.
+Pagkatapos mag-apply ng template, buksan ang bawat pahina sa [page editor](./page-editor.md) para palitan ang placeholder na text at mga larawan ng totoong nilalaman ng inyong simbahan.
 
 :::info
-Gumagawa ang mga site template ng istruktura ng pahina at navigation. Hindi nila ino-override ang color scheme o mga font ng iyong site — kinokontrol ang mga iyon ng [Appearance](appearance).
+Gumagawa ang mga site template ng istruktura ng pahina at navigation. Hindi nila ino-override ang color scheme o mga font ng iyong site — kinokontrol ang mga iyon ng [Appearance](./appearance.md).
 :::
 
 ## Image Lightbox
@@ -124,7 +125,7 @@ Kapag nag-click ang mga bisita sa isang larawan sa iyong website, bumubukas ito 
 
 ## Mga Susunod na Hakbang
 
-- [Initial Setup](initial-setup) -- Mga tagubilin sa unang beses na setup
-- [Paggamit ng Page Editor](page-editor) -- Alamin kung paano buuin at i-style ang nilalaman ng pahina
-- [Appearance](appearance) -- I-customize ang visual theme ng iyong site
-- [Files](files) -- Mag-upload at mamahala ng mga media asset para sa iyong mga pahina
+- [Initial Setup](./initial-setup.md) -- Mga tagubilin sa unang beses na setup
+- [Paggamit ng Page Editor](./page-editor.md) -- Alamin kung paano buuin at i-style ang nilalaman ng pahina
+- [Appearance](./appearance.md) -- I-customize ang visual theme ng iyong site
+- [Files](./files.md) -- Mag-upload at mamahala ng mga media asset para sa iyong mga pahina

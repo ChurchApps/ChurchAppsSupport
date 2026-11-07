@@ -1,5 +1,6 @@
 ---
 title: "Tạo tài khoản"
+description: "Đăng ký tài khoản ChurchApps trên Lessons.church, rồi kết nối với hồ sơ nhà thờ mới hoặc có sẵn để quản lý lớp học và lịch."
 ---
 
 # Tạo tài khoản

@@ -1,5 +1,7 @@
 ---
-title: "Pour commencer"
+title: "Premiers pas avec ChurchApps : les 15 premières minutes"
+sidebar_label: "Pour commencer"
+description: "Créer un compte ChurchApps en quelques étapes : infos de l'église, import des personnes dans B1 Admin, invitation de l'équipe, premier projet."
 ---
 
 # Pour commencer

@@ -1,5 +1,6 @@
 ---
 title: "Open Lesson Format"
+description: "Lessons.church의 제3자 교육과정 제공자를 위한 형식 사양: 제공자 트리와 장소 피드의 JSON 필드, 동작, 미디어 파일."
 ---
 # Open Lesson Format
 <div class="article-intro">

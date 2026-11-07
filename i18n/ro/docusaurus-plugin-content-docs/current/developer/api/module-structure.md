@@ -1,5 +1,6 @@
 ---
 title: "Struktura modulului"
+description: "Explică structura modulelor API-ului, cu controllere, repository-uri, gateway-uri, verificări de autentificare și cele șase funcții Lambda care rulează codul în mediile de dezvoltare B1."
 ---
 
 # Struktura modulului
@@ -13,8 +14,8 @@ Fiecare modul API urmează o structură internă consecventă, cu controlere, de
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Configurați API-ul local -- consultați [Configurarea locală a API-ului](./local-setup)
-- Parcurgeți arhitectura [Bazei de date](./database) pentru a înțelege stratul de acces la date
+- Configurați API-ul local -- consultați [Configurarea locală a API-ului](./local-setup.md)
+- Parcurgeți arhitectura [Bazei de date](./database.md) pentru a înțelege stratul de acces la date
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Comunicarea între module
 
-Fiecare modul își deține propria bază de date (consultați [Baza de date](./database)), iar un modul nu interoghează niciodată direct tabelele altui modul. Atunci când un modul are nevoie de date deținute de alt modul -- de exemplu, modulul doing care preia persoane din membership -- apelează **gateway-ul** modulului proprietar din `src/shared/modules/`:
+Fiecare modul își deține propria bază de date (consultați [Baza de date](./database.md)), iar un modul nu interoghează niciodată direct tabelele altui modul. Atunci când un modul are nevoie de date deținute de alt modul -- de exemplu, modulul doing care preia persoane din membership -- apelează **gateway-ul** modulului proprietar din `src/shared/modules/`:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Local, funcția `web` rulează pe portul 8084, iar funcția `socket` pe portul 8
 
 ## Articole conexe
 
-- **[Baza de date](./database)** -- Șiruri de conectare, scripturi de schemă și modele de acces la date
-- **[Configurarea locală a API-ului](./local-setup)** -- Ghid complet, pas cu pas, de configurare
-- **[ApiHelper](../shared-libraries/api-helper)** -- Biblioteca partajată care oferă `CustomBaseController` și middleware-ul de autentificare
+- **[Baza de date](./database.md)** -- Șiruri de conectare, scripturi de schemă și modele de acces la date
+- **[Configurarea locală a API-ului](./local-setup.md)** -- Ghid complet, pas cu pas, de configurare
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- Biblioteca partajată care oferă `CustomBaseController` și middleware-ul de autentificare

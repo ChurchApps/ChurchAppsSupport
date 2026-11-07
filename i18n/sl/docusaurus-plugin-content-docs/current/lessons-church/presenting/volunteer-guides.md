@@ -1,5 +1,6 @@
 ---
 title: "Dobrovoljski vodniki"
+description: "Nastavi vodnike za določene vloge v Lessons.church, da vsak prostovoljec vidi le svoje korake, ter jih natisni ali deli pred uro."
 ---
 
 # Dobrovoljski vodniki

@@ -1,5 +1,6 @@
 ---
 title: Hitvallás
+description: "Mit hisz a ChurchApps Istenről, Jézusról, a Szentlélekről, a Szentírásról, az üdvösségről és az egyházról: a Lessons.church tantervének mércéje."
 ---
 
 # Hitvallás

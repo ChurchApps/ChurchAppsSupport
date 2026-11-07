@@ -1,5 +1,7 @@
 ---
-title: "Umlandvo Wemnikelo"
+title: "Umlandvo Wekuniketa Nemibiko ku-B1.church"
+sidebar_label: "Umlandvo Wemnikelo"
+description: "Bona tinkhomba temalambo wekuniketa, hlunga ngemnyaka, bese uphrinta tibiko tekuniketa tetimali kutsi kube lula etindzaweni ze-Giving kuportal yelilungu le-B1.church."
 ---
 
 # Umlandvo Wemnikelo

@@ -1,5 +1,6 @@
 ---
 title: "Thông báo"
+description: "Thiết lập thông báo đẩy cho ứng dụng B1 Mobile, rồi xem, mở và xóa thông báo của nhà thờ về tin nhắn, nhóm và phục vụ."
 ---
 
 # Thông báo
@@ -13,7 +14,7 @@ B1 Mobile sử dụng thông báo đẩy (push notification) để giúp bạn l
 <div class="prereqs">
 <h4>Trước Khi Bắt Đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
 - Cho phép thông báo cho B1 Mobile trong cài đặt thiết bị của bạn
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile sử dụng thông báo đẩy (push notification) để giúp bạn l
 
 Thông báo có thể bao gồm nhiều hoạt động khác nhau, bao gồm:
 
-- **Tin nhắn** -- Khi có ai đó gửi cho bạn một [tin nhắn riêng](./messaging).
-- **Hoạt động nhóm** -- Cập nhật, bài đăng và các cuộc trò chuyện từ các [nhóm](../groups/) mà bạn tham gia.
+- **Tin nhắn** -- Khi có ai đó gửi cho bạn một [tin nhắn riêng](./messaging.md).
+- **Hoạt động nhóm** -- Cập nhật, bài đăng và các cuộc trò chuyện từ các [nhóm](../groups/index.md) mà bạn tham gia.
 - **Phân công phục vụ** -- Khi bạn được phân công vào một [kế hoạch](../serving/viewing-plans.md) hoặc khi trạng thái phân công của bạn thay đổi.
 - **Cập nhật khác** -- Các thông báo chung và hoạt động liên quan đến bạn.
 

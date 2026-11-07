@@ -1,5 +1,6 @@
 ---
 title: "Pagpresenta"
+description: "Ipakita ang aralin sa projector gamit ang Presenter Mode ng Lessons.church, magbahagi ng gabay sa volunteers, at mag-print ng materyales bago ang klase."
 ---
 
 # Pagpresenta

@@ -1,5 +1,6 @@
 ---
 title: "Linimasa"
+description: "Tab Timeline di portal anggota B1.church sudah dipensiunkan. Temukan obrolan grup, acara, tugas, dan peringatan di halaman Me, ikon lonceng, dan tiap grup."
 ---
 
 # Linimasa
@@ -16,13 +17,13 @@ Tab **Linimasa** yang berdiri sendiri sudah dihapus. Portal anggota sekarang dib
 | --- | --- |
 | Percakapan dan pengumuman grup | Obrolan di dalam setiap [grup](../groups/conversations.md) (**Buka obrolan**) |
 | Acara mendatang untuk Anda dan grup Anda | Halaman **Me** (`/mobile/me`) dan bagian **Acara berikutnya** di setiap grup |
-| Tugas dan penugasan pelayanan | Halaman **Me** dan [Rencana](../plans/) |
+| Tugas dan penugasan pelayanan | Halaman **Me** dan [Rencana](../plans/index.md) |
 | Khotbah baru | Bagian **Khotbah terbaru** di Beranda dan tab [Khotbah](../content/sermons.md) |
 | Apa pun yang mengirimi Anda pemberitahuan | Ikon **lonceng** di bilah aplikasi, atau `/mobile/notifications` |
 
 ## Halaman Me
 
-[Halaman Me](../getting-started/me-page) adalah pengganti terdekat untuk umpan lama. Halaman ini menampilkan hal-hal yang akan datang untuk Anda -- penugasan pelayanan, pendaftaran acara, dan acara grup -- beserta formulir yang sudah Anda kirim, riwayat kehadiran, dan notifikasi terbaru Anda, serta tautan langsung ke profil, preferensi notifikasi, pesan, pemberian, dan pendaftaran Anda.
+[Halaman Me](../getting-started/me-page.md) adalah pengganti terdekat untuk umpan lama. Halaman ini menampilkan hal-hal yang akan datang untuk Anda -- penugasan pelayanan, pendaftaran acara, dan acara grup -- beserta formulir yang sudah Anda kirim, riwayat kehadiran, dan notifikasi terbaru Anda, serta tautan langsung ke profil, preferensi notifikasi, pesan, pemberian, dan pendaftaran Anda.
 
 ## Notifikasi
 

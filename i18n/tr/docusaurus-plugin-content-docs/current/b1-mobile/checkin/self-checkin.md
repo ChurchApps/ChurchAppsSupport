@@ -1,5 +1,7 @@
 ---
-title: "Kendi Check-In'iniz"
+title: "B1 Mobile'dan Kendi Check-In'iniz"
+sidebar_label: "Kendi Check-In'iniz"
+description: "B1 Mobile uygulamasından bir ibadete kendinizi ve hanenizi check-in yapın; ibadet saatini seçin ve her kişinin grubunu atayın."
 ---
 
 # Kendi Check-In'iniz
@@ -13,7 +15,7 @@ B1 Mobile üzerinden giriş yapmak basit, birkaç adımdan oluşan bir süreçti
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
 - Profilinizde [hane üyelerinizin](../profile/household.md) kurulu olduğundan emin olun
 
 </div>

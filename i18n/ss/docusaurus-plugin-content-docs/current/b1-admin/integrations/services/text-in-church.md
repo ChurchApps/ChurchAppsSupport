@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "Xhuma i-B1 Admin ne-Text In Church nge-Zapier: enta khiyi ye-API, akha i-Zap yekhadi lekuxhuma kwi-B1, bese uvumelanisa ubulungu bemaqembu."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Vula i-Zap. I-connect card lelandzelako letfunyelwe nge-TIC ingena ku **B1Admin 
 
 ## Buka Nalokunye
 
-- [Clearstream](./clearstream) — inkundla lengashintjaniswa ye-SMS lenesakhiwo lesifananako se-Zapier
-- [Zapier (kubuka konkhe)](../zapier) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Zapier
+- [Clearstream](./clearstream.md) — inkundla lengashintjaniswa ye-SMS lenesakhiwo lesifananako se-Zapier
+- [Zapier (kubuka konkhe)](../zapier.md) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Zapier
 - [Umhlahlandlela we-Zapier we-Text In Church](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (emaphepha e-TIC)

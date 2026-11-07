@@ -1,5 +1,6 @@
 ---
 title: "Prezență"
+description: "Revizuiți prezența săptămânală, sălile și oaspeții în B1 Admin, apoi configurați campusurile, orele serviciilor și check-in-ul din pagina Attendance."
 ---
 
 # Prezență

@@ -1,5 +1,6 @@
 ---
 title: "Regisztrációim"
+description: "Regisztráció állapotának ellenőrzése, fennálló összeg kifizetése, résztvevők vagy kiegészítők szerkesztése és eseményjelentkezés lemondása a B1 Church portálon."
 ---
 
 # Regisztrációim
@@ -14,7 +15,7 @@ A tagi portál **Regisztrációk** oldala az összes olyan eseményed kezelőfel
 <h4>Mielőtt elkezdenéd</h4>
 
 - Be kell [jelentkezned](../getting-started/logging-in.md) — a vendégregisztrációk itt nem jelennek meg
-- Legalább egy eseményregisztrációra van szükséged. Lásd: [Regisztráció eseményekre](./registering).
+- Legalább egy eseményregisztrációra van szükséged. Lásd: [Regisztráció eseményekre](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ A helyed azonnal felszabadul. Ha az eseményhez tartozik várólista, a sorban k
 
 ## Kapcsolódó cikkek
 
-- [Regisztráció eseményekre](./registering) -- A jelentkezési folyamat, beleértve a fizetést és a várólistákat
+- [Regisztráció eseményekre](./registering.md) -- A jelentkezési folyamat, beleértve a fizetést és a várólistákat
 - [Események áttekintése](./index.md) -- Közelgő események böngészése

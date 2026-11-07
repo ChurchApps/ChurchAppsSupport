@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Синхронизируйте людей и членство в группах или сохранённых списках B1 Admin с аудиторией Mailchimp в виде тегов: настройка, первичный импорт и устранение неполадок."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ title: "Mailchimp"
 
 ## Другие рецепты (Zapier / Make)
 
-Все, что выходит за пределы синхронизации аудитории -- маркировка жертвователей на `donation.created`, обратное направление Mailchimp → B1, или синхронизация с другой платформой электронной почты полностью (Constant Contact, Brevo и т.д.) -- все еще доступно через [Zapier](../zapier) или [Make](../make), которые срабатывают на тех же событиях веб-хука:
+Все, что выходит за пределы синхронизации аудитории -- маркировка жертвователей на `donation.created`, обратное направление Mailchimp → B1, или синхронизация с другой платформой электронной почты полностью (Constant Contact, Brevo и т.д.) -- все еще доступно через [Zapier](../zapier.md) или [Make](../make.md), которые срабатывают на тех же событиях веб-хука:
 
 - **Tag givers:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Two-way:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ title: "Mailchimp"
 
 - [Webhooks (developer reference)](/docs/developer/api/webhooks) -- двигатель под капотом, каталог событий, семантика доставки/повторной попытки
 - [Saved Lists](/docs/b1-admin/people/lists) -- аудитории на основе правил, которые естественно отображаются на теги Mailchimp
-- [Zapier (overview)](../zapier) -- для рецептов за пределами синхронизации аудитории
+- [Zapier (overview)](../zapier.md) -- для рецептов за пределами синхронизации аудитории

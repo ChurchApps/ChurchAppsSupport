@@ -1,5 +1,6 @@
 ---
 title: "Ruangan, Sumber Daya & Penjadwalan"
+description: "Atur ruangan, peralatan, pemblokiran, dan templat acara di B1 Admin agar grup bisa mengajukan pemesanan dan Anda menyetujuinya untuk mencegah jadwal ganda."
 ---
 
 # Ruangan, Sumber Daya & Penjadwalan
@@ -14,7 +15,7 @@ Ruangan dan Sumber Daya memungkinkan Anda melacak ruang dan peralatan gereja yan
 <h4>Sebelum Anda Mulai</h4>
 
 - Anda memerlukan akses administratif ke bagian Kalender di B1 Admin
-- Siapkan [grup](../groups/creating-groups) yang anggotanya akan mengirimkan permintaan pemesanan
+- Siapkan [grup](../groups/creating-groups.md) yang anggotanya akan mengirimkan permintaan pemesanan
 
 </div>
 
@@ -76,7 +77,7 @@ Saat membuat acara baru, staf dapat memilih templat yang sudah ada untuk mengisi
 
 ## Artikel Terkait
 
-- [Kalender Ketersediaan](availability) — lihat semua pemesanan sekaligus dan pesan ruangan atau sumber daya secara langsung
-- [Persetujuan Kalender](approvals) — setujui atau tolak permintaan pemesanan ruangan dan sumber daya
-- [Membuat Kalender](creating-calendars) — siapkan kalender acara
-- [Membuat Grup](../groups/creating-groups) — siapkan grup yang dapat memesan ruangan dan sumber daya
+- [Kalender Ketersediaan](./availability.md) — lihat semua pemesanan sekaligus dan pesan ruangan atau sumber daya secara langsung
+- [Persetujuan Kalender](./approvals.md) — setujui atau tolak permintaan pemesanan ruangan dan sumber daya
+- [Membuat Kalender](./creating-calendars.md) — siapkan kalender acara
+- [Membuat Grup](../groups/creating-groups.md) — siapkan grup yang dapat memesan ruangan dan sumber daya

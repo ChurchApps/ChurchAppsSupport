@@ -1,5 +1,7 @@
 ---
-title: "登录"
+title: "登录 B1 Church Checkin"
+sidebar_label: "登录"
+description: "登录 B1 Church Checkin 登记机应用，选择您的教会，并了解登记平板上的自动登录、管理员设置和退出登录。"
 ---
 
 # 登录
@@ -63,7 +65,7 @@ title: "登录"
 2. 如果设置了自助机 PIN 码，系统提示时请输入 PIN 码。
 3. **Admin Settings**（管理员设置）屏幕会打开，并提供以下选项：
    - **Change Service**（更改礼拜）—— 切换所选的礼拜时间
-   - **Change Printer**（更改打印机）—— 打开[打印机设置](./printer-setup)，搜索并选择打印机
+   - **Change Printer**（更改打印机）—— 打开[打印机设置](./printer-setup.md)，搜索并选择打印机
    - **Set/Change PIN**（设置/更改 PIN）—— 设置或更新用于保护管理员访问的自助机 PIN 码
    - **Logout**（退出登录）—— 退出登录并返回登录屏幕
 
@@ -73,4 +75,4 @@ title: "登录"
 
 ## 下一步
 
-登录后，你可以[设置打印机](./printer-setup)，或直接进入[签到流程](../check-in/)。
+登录后，你可以[设置打印机](./printer-setup.md)，或直接进入[签到流程](../check-in/index.md)。

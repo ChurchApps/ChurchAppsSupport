@@ -1,5 +1,6 @@
 ---
 title: "Furnizori de conținut"
+description: "Răsfoiți și descărcați materiale de lecții, videoclipuri și imagini din Lessons.church, Dropbox, OneDrive și alți furnizori, în aplicația TV FreePlay."
 ---
 
 # Furnizori de conținut
@@ -14,7 +15,7 @@ Furnizorii de conținut sunt servicii externe care oferă materiale didactice, v
 
 FreePlay include în prezent următorii furnizori:
 
-- **[Lessons.church](../../lessons-church/)** - Curriculum gratuit, cu cod sursă deschis, pentru lucrul cu copiii
+- **[Lessons.church](../../lessons-church/index.md)** - Curriculum gratuit, cu cod sursă deschis, pentru lucrul cu copiii
 - **Bible Project** - Videoclipuri și resurse care explorează Biblia
 - **SignPresenter** - Conținut de prezentare și afișaj pentru biserici
 - **B1.church** - Conținut din configurarea B1 proprie a bisericii dumneavoastră
@@ -24,7 +25,7 @@ FreePlay include în prezent următorii furnizori:
 - **OneDrive** - Răsfoiți și redați imagini, videoclipuri și fișiere audio din propriul Microsoft OneDrive
 
 :::note
-Google Drive și FreeShow nu mai sunt afișate în aplicația FreePlay TV. Pentru a folosi conținutul din Google Drive pe televizoare, conectați-l în [FreePlay Admin](../scheduled-mode/building-playlists#connecting-providers), adăugați fișierele într-o listă de redare și programați lista respectivă.
+Google Drive și FreeShow nu mai sunt afișate în aplicația FreePlay TV. Pentru a folosi conținutul din Google Drive pe televizoare, conectați-l în [FreePlay Admin](../scheduled-mode/building-playlists.md#connecting-providers), adăugați fișierele într-o listă de redare și programați lista respectivă.
 :::
 
 :::info
@@ -37,14 +38,14 @@ Fiecare furnizor are propria bibliotecă de conținut, organizată în foldere �
 
 Furnizorii conectați apar în bara laterală din stânga ecranului, sub titlul **Browse**. Puteți comuta între furnizori selectându-i în bara laterală, ceea ce facilitează trecerea de la o sursă de conținut la alta în timpul configurării.
 
-Puteți, de asemenea, să alegeți un folder de la orice furnizor conectat pentru a-l reda în buclă ca [anunțuri](./announcements) pe televizor.
+Puteți, de asemenea, să alegeți un folder de la orice furnizor conectat pentru a-l reda în buclă ca [anunțuri](./announcements.md) pe televizor.
 
 :::tip
-Furnizorii pe care îi conectați pe televizor sunt valabili doar pentru acel televizor. Dacă folosiți [Modul programat](../scheduled-mode/), conectați furnizorii o singură dată în FreePlay Admin, iar fiecare ecran programat poate reda conținut din aceștia.
+Furnizorii pe care îi conectați pe televizor sunt valabili doar pentru acel televizor. Dacă folosiți [Modul programat](../scheduled-mode/index.md), conectați furnizorii o singură dată în FreePlay Admin, iar fiecare ecran programat poate reda conținut din aceștia.
 :::
 
 ## În această secțiune
 
-- **[Conectarea la furnizori](./connecting-providers)** - Cum să vă autentificați și să vă conectați
-- **[Răsfoirea și descărcarea conținutului](./browsing-content)** - Navigați prin foldere, descărcați fișiere și redați conținut
-- **[Anunțuri](./announcements)** - Redați în buclă un folder de diapozitive de la un furnizor
+- **[Conectarea la furnizori](./connecting-providers.md)** - Cum să vă autentificați și să vă conectați
+- **[Răsfoirea și descărcarea conținutului](./browsing-content.md)** - Navigați prin foldere, descărcați fișiere și redați conținut
+- **[Anunțuri](./announcements.md)** - Redați în buclă un folder de diapozitive de la un furnizor

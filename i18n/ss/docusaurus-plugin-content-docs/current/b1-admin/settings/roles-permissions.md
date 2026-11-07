@@ -1,5 +1,6 @@
 ---
 title: "Tikhundla & Timvumo"
+description: "Setela tindzima ku-B1 Admin ukulawula kutsi basebenti nabaphe bangakubona futsi batshintje kuphi, kusukela ekuniketeni nekuba khona kuya kubantfu namaqembu."
 ---
 
 # Tikhundla & Timvumo

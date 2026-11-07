@@ -1,5 +1,6 @@
 ---
 title: "Web 应用部署"
+description: "介绍如何将 B1 Admin 等 ChurchApps 网页应用部署到 Amazon S3 和 CloudFront，可通过合并后自动触发的 GitHub Actions 部署，或使用手动命令部署。"
 ---
 
 # Web 应用部署
@@ -13,7 +14,7 @@ ChurchApps Web 应用作为静态站点部署到 **Amazon S3**，使用 **CloudF
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 在本地配置好 Web 应用并验证构建正常 -- 参见 [Web 应用](../web-apps/)
+- 在本地配置好 Web 应用并验证构建正常 -- 参见 [Web 应用](../web-apps/index.md)
 - 配置具有 S3 和 CloudFront 访问权限的 AWS 凭据
 - 了解目标 S3 存储桶名称和 CloudFront 分配 ID
 
@@ -53,6 +54,6 @@ GitHub Actions 工作流在推送到 `main` 分支时自动处理部署。工作
 
 ## 相关文章
 
-- **[Web 应用](../web-apps/)** -- B1Admin、B1App 和 LessonsApp 的配置指南
-- **[API 部署](./apis)** -- 部署后端 API
-- **[移动应用部署](./mobile)** -- 将移动应用部署到应用商店
+- **[Web 应用](../web-apps/index.md)** -- B1Admin、B1App 和 LessonsApp 的配置指南
+- **[API 部署](./apis.md)** -- 部署后端 API
+- **[移动应用部署](./mobile.md)** -- 将移动应用部署到应用商店

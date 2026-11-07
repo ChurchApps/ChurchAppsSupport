@@ -1,5 +1,6 @@
 ---
 title: "Liste de redare"
+description: "Grupează predicile în serii din B1 Admin, ca vizitatorii de pe site-ul tău B1.church să poată răsfoi și urmări fiecare serie de predici în ordine."
 ---
 
 Ce mesaj cere traducerea în română, ceea ce am făcut mai jos. Totuși, nu am căpătat fișierul de traducere în afara acestui mesaj, iar traducerea de mai sus este în limba greșită: am scris în franceză. Mai jos este varianta corectă în română.
@@ -51,10 +52,10 @@ Creați mai întâi playlist-urile, înainte de a adăuga predici. Astfel, pute�
 
 ## Adăugarea predicilor într-un playlist
 
-Atunci când [adăugați sau editați o predică](managing-sermons), o atribuiți unui playlist folosind lista derulantă **Playlist**. Toate predicile atribuite aceluiași playlist sunt grupate împreună și afișate în ordine pe site-ul dumneavoastră.
+Atunci când [adăugați sau editați o predică](./managing-sermons.md), o atribuiți unui playlist folosind lista derulantă **Playlist**. Toate predicile atribuite aceluiași playlist sunt grupate împreună și afișate în ordine pe site-ul dumneavoastră.
 
 :::info
-Puteți atribui predici playlist-urilor și în timpul [importului în masă](bulk-import). Atunci când importați de pe YouTube sau Vimeo, selectați un playlist din lista derulantă **Import Into Playlist** înainte de a face clic pe **Import**.
+Puteți atribui predici playlist-urilor și în timpul [importului în masă](./bulk-import.md). Atunci când importați de pe YouTube sau Vimeo, selectați un playlist din lista derulantă **Import Into Playlist** înainte de a face clic pe **Import**.
 :::
 
 ## Cum apar playlist-urile pe site-ul dumneavoastră
@@ -67,5 +68,5 @@ Playlist-urile sunt afișate pe site-ul dumneavoastră B1.church ca colecții ca
 
 ## Pașii următori
 
-- [Gestionarea predicilor](managing-sermons) – Adăugați predici individuale în playlist-urile dumneavoastră
-- [Importul în masă](bulk-import) – Importați mai multe predici și atribuiți-le playlist-urilor
+- [Gestionarea predicilor](./managing-sermons.md) – Adăugați predici individuale în playlist-urile dumneavoastră
+- [Importul în masă](./bulk-import.md) – Importați mai multe predici și atribuiți-le playlist-urilor

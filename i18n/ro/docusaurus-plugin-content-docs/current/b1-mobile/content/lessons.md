@@ -1,5 +1,7 @@
 ---
-title: "Lecții (Depreciat)"
+title: "Ecranul Lecții în B1 Mobile (Retras)"
+sidebar_label: "Lecții (Depreciat)"
+description: "Pagina Lecții (Depreciată): de ce a fost retrasă ecranul Lecții din B1 Mobile și unde găsiți acum materialele de curs (FreePlay sau Lessons.church)."
 ---
 
 # Lecții (Depreciat)
@@ -19,7 +21,7 @@ Ecranul Lecții vă oferea acces la curriculumul și materialele de învățare 
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalați B1 Mobile](../getting-started/installing) și [conectați-vă](../getting-started/logging-in) la contul dvs.
+- [Instalați B1 Mobile](../getting-started/installing.md) și [conectați-vă](../getting-started/logging-in.md) la contul dvs.
 - Biserica dvs. trebuie să aibă configurat curriculumul prin Lessons.church
 
 </div>
@@ -54,5 +56,5 @@ Ecranul Lecții apare atunci când biserica dvs. a configurat curriculumul prin 
 
 - [Prezentare generală FreePlay](/docs/freeplay/) -- Aplicația TV care înlocuiește redarea lecțiilor
 - [Lessons.church](/docs/lessons-church/) -- Răsfoiți și gestionați direct conținutul de curriculum
-- [Biblia](./bible) -- Citiți Scriptura împreună cu lecțiile dvs.
-- [Predici](./sermons) -- Urmăriți predicile care completează studiile dvs.
+- [Biblia](./bible.md) -- Citiți Scriptura împreună cu lecțiile dvs.
+- [Predici](./sermons.md) -- Urmăriți predicile care completează studiile dvs.

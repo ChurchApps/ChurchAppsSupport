@@ -1,5 +1,6 @@
 ---
 title: "Calendario del gruppo"
+description: "Pianifica incontri ed eventi ricorrenti nel calendario di gruppo in B1 Admin e B1.church, con pianificazione in blocco, RSVP e iscrizioni ai calendari."
 ---
 
 # Calendario del gruppo

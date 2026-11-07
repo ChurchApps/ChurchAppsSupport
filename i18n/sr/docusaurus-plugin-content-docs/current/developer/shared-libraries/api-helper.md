@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Референца за @churchapps/apihelper пакет, који користе сви ChurchApps Express API-ји: локални build, тестирање преко Yarn портала и објављивање changesets."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ title: "ApiHelper"
 <div class="prereqs">
 <h4>Пре почетка</h4>
 
-- Инсталирајте **Node.js** и **Git** -- погледајте [預requisites](../setup/prerequisites)
+- Инсталирајте **Node.js** и **Git** -- погледајте [預requisites](../setup/prerequisites.md)
 - Упознајте се са подешавањем [радног простора за пакете](./index.md) и процесом објаве
-- Овај пакет зависи од [`@churchapps/helpers`](./helpers) (као peer зависност) и реекспортује га
+- Овај пакет зависи од [`@churchapps/helpers`](./helpers.md) (као peer зависност) и реекспортује га
 
 </div>
 
@@ -65,6 +66,6 @@ title: "ApiHelper"
 
 ## Повезани чланци
 
-- **[Helpers](./helpers)** -- Основни пакет са помоћним алаткама од којег зависи овај пакет
-- **[Структура модула](../api/module-structure)** -- Како се контролери и auth middleware користе у API модулима
-- **[Локално подешавање API-ја](../api/local-setup)** -- Подешавање API-ја за локални развој
+- **[Helpers](./helpers.md)** -- Основни пакет са помоћним алаткама од којег зависи овај пакет
+- **[Структура модула](../api/module-structure.md)** -- Како се контролери и auth middleware користе у API модулима
+- **[Локално подешавање API-ја](../api/local-setup.md)** -- Подешавање API-ја за локални развој

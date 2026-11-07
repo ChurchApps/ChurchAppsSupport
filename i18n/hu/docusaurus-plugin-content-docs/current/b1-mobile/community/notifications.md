@@ -1,5 +1,6 @@
 ---
 title: "Értesítések"
+description: "Állíts be push-riasztásokat a B1 Mobile alkalmazáshoz, majd tekintsd meg, nyisd meg és töröld gyülekezeted üzenetekre, csoportokra és szolgálatra vonatkozó értesítéseit."
 ---
 
 # Értesítések
@@ -13,7 +14,7 @@ A B1 Mobile push-értesítéseket használ, hogy tájékoztassa Önt arról, mi 
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- [Telepítse a B1 Mobile alkalmazást](../getting-started/installing), és [jelentkezzen be](../getting-started/logging-in) fiókjába
+- [Telepítse a B1 Mobile alkalmazást](../getting-started/installing.md), és [jelentkezzen be](../getting-started/logging-in.md) fiókjába
 - Engedélyezze az értesítéseket a B1 Mobile számára az eszköz beállításaiban
 
 </div>
@@ -22,8 +23,8 @@ A B1 Mobile push-értesítéseket használ, hogy tájékoztassa Önt arról, mi 
 
 Az értesítések a tevékenységek széles körére vonatkozhatnak, többek között:
 
-- **Üzenetek** -- Amikor valaki [privát üzenetet](./messaging) küld Önnek.
-- **Csoporttevékenység** -- Frissítések, bejegyzések és beszélgetések azokból a [csoportokból](../groups/), amelyeknek tagja.
+- **Üzenetek** -- Amikor valaki [privát üzenetet](./messaging.md) küld Önnek.
+- **Csoporttevékenység** -- Frissítések, bejegyzések és beszélgetések azokból a [csoportokból](../groups/index.md), amelyeknek tagja.
 - **Szolgálati beosztások** -- Amikor egy [tervhez](../serving/viewing-plans.md) rendelik, vagy amikor a beosztásának állapota megváltozik.
 - **Egyéb frissítések** -- Általános közlemények és Önt érintő tevékenységek.
 

@@ -1,5 +1,7 @@
 ---
-title: "Tartalom"
+title: "Tartalmi funkciók a B1.church tagi portálon"
+sidebar_label: "Tartalom"
+description: "Nézze meg, mely tartalmakat engedélyezi egyháza a B1.church tagi portálon, majd böngésszen igehirdetések, élő közvetítések, bibliaolvasás és leckék között."
 ---
 
 # Tartalom

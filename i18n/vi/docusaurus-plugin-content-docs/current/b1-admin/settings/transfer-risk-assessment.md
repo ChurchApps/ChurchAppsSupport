@@ -1,5 +1,6 @@
 ---
 title: "Đánh giá rủi ro chuyển dữ liệu"
+description: "Hồ sơ tuân thủ của ChurchApps cho việc chuyển dữ liệu hội thánh từ Anh/EEA sang Mỹ trong B1 Admin, bao gồm biện pháp bảo vệ, bên xử lý phụ và kiểm soát truy cập."
 ---
 
 # Đánh giá rủi ro chuyển dữ liệu

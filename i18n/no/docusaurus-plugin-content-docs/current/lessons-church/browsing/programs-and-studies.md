@@ -1,5 +1,6 @@
 ---
 title: "Programmer og studier"
+description: "Lær hvordan programmer, studier, leksjoner og steder i Lessons.church henger sammen, slik at du finner riktig læreplan og kan gå mellom relaterte leksjoner."
 ---
 
 # Programmer og studier

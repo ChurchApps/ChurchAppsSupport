@@ -1,5 +1,7 @@
 ---
-title: "Lekce (zastaralé)"
+title: "Obrazovka Lessons v B1 Mobile (vyřazena)"
+sidebar_label: "Lekce (zastaralé)"
+description: "Stránka Lessons (vyřazeno): proč byla obrazovka Lessons v aplikaci B1 Mobile vyřazena a kde najdete kurikulum nyní (FreePlay nebo Lessons.church)."
 ---
 
 # Lekce (zastaralé)
@@ -19,7 +21,7 @@ Obrazovka Lekce vám poskytovala přístup ke kurikulu a výukovým materiálům
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Nainstalujte B1 Mobile](../getting-started/installing) a [se přihlaste](../getting-started/logging-in) ke svému účtu
+- [Nainstalujte B1 Mobile](../getting-started/installing.md) a [se přihlaste](../getting-started/logging-in.md) ke svému účtu
 - Vaše církev musí mít nakonfigurované kurikulum prostřednictvím Lessons.church
 
 </div>
@@ -54,5 +56,5 @@ Obrazovka Lekce se zobrazí, když vaše církev nakonfigurovala kurikulum prost
 
 - [Přehled FreePlay](/docs/freeplay/) -- Náhradní TV aplikace pro přehrávání lekcí ve třídě
 - [Lessons.church](/docs/lessons-church/) -- Procházení a správa kurikula přímo
-- [Bible](./bible) -- Čtěte Písmo spolu se svými lekcemi
-- [Kázání](./sermons) -- Sledujte kázání, která doplňují vaše studium
+- [Bible](./bible.md) -- Čtěte Písmo spolu se svými lekcemi
+- [Kázání](./sermons.md) -- Sledujte kázání, která doplňují vaše studium

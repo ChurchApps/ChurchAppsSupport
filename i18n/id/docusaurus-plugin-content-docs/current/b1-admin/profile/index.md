@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Pengaturan Profil dan Perangkat di B1 Admin"
+sidebar_label: "Profil"
+description: "Perbarui nama, email, kata sandi, verifikasi dua langkah, tema, dan perangkat terhubung di profil B1 Admin Anda, serta setujui perubahan profil anggota."
 ---
 
 # Profil

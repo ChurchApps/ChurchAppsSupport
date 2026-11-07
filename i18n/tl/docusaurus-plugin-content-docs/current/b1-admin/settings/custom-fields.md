@@ -1,5 +1,6 @@
 ---
 title: "Mga Custom Field"
+description: "Gumawa ng custom field sa B1 Admin para subaybayan ang dagdag na detalye ng tao, gaya ng expiration ng background check o laki ng shirt, saka maghanap at mag-filter dito."
 ---
 
 # Mga Custom Field

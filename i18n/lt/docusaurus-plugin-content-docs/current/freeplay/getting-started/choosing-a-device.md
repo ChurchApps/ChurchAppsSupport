@@ -1,5 +1,6 @@
 ---
 title: "Įrenginio pasirinkimas"
+description: "Pasirinkite tinkamą įrenginį FreePlay klasės televizoriams: nuo Fire TV lazdelių ir Onn dėžių iki Apple TV, ir kurių vengti."
 ---
 
 # Įrenginio pasirinkimas FreePlay programėlei

@@ -1,5 +1,6 @@
 ---
 title: "E-mailskabeloner"
+description: "Opsæt e-mail- og sms-skabeloner i B1 Admin med flettefelter, sms-valgmuligheder og forhåndsvisninger til masse-kommunikation."
 ---
 
 # E-mailskabeloner

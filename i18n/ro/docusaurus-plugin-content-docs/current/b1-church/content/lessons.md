@@ -1,5 +1,7 @@
 ---
-title: "Lecții (Învechit)"
+title: "Fila Lessons depreciată din B1.church"
+sidebar_label: "Lecții (Învechit)"
+description: "Fila Lessons din B1.church este depreciată. Materialele sunt acum pe Lessons.church, iar pe televizoarele din clasă le redai cu FreePlay."
 ---
 
 # Lecții (Învechit)
@@ -9,7 +11,7 @@ Fila încorporată **Lecții** de pe B1.church a fost învechită. Redarea mater
 
 Pentru a răsfoi, programa sau edita direct materialele, conectați-vă la [Lessons.church](https://lessons.church) din browser. Pentru a reda lecțiile pe televizorul din clasă, instalați [FreePlay](/docs/freeplay/getting-started/) pe dispozitivul TV.
 
-Părinții grupurilor asociate unui tip de plan de lecție din B1Admin văd **lecția din această săptămână** pe pagina [detalii grup](/docs/b1-church/groups/group-details.md) — nu pe această filă învechită.
+Părinții grupurilor asociate unui tip de plan de lecție din B1Admin văd **lecția din această săptămână** pe pagina [detalii grup](../groups/group-details.md) — nu pe această filă învechită.
 :::
 
 <div class="article-intro">

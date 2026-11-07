@@ -1,5 +1,7 @@
 ---
-title: "Blogg"
+title: "Skrive blogginnlegg for nettstedet ditt i B1 Admin"
+sidebar_label: "Blogg"
+description: "Lag, planlegg og publiser blogginnlegg i B1 Admin, med ingresser, kategorier, emneord, topptekstbilder og innbygde kommentarer."
 ---
 
 # Blogg
@@ -13,8 +15,8 @@ Bloggsiden lar deg publisere nyheter, oppdateringer og andakter på kirkens nett
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Fullfør [førstegangsoppsettet](initial-setup) for nettstedet ditt
-- Legg til en navigasjonslenke til `/blog` fra [Administrere sider](managing-pages) hvis du vil at besøkende skal finne bloggen fra menyen
+- Fullfør [førstegangsoppsettet](./initial-setup.md) for nettstedet ditt
+- Legg til en navigasjonslenke til `/blog` fra [Administrere sider](./managing-pages.md) hvis du vil at besøkende skal finne bloggen fra menyen
 
 </div>
 
@@ -31,7 +33,7 @@ Bloggsiden lar deg publisere nyheter, oppdateringer og andakter på kirkens nett
 3. Legg til et **utdrag** -- et kort sammendrag som vises i listen over innlegg, i metabeskrivelser og i RSS-feeden. Hvis du lar det stå tomt, genereres et automatisk fra begynnelsen av innleggets innhold.
 4. Skriv innholdet i innlegget i editoren for **Innhold** ved hjelp av Markdown. Klikk **Forhåndsvis** for å se hvordan det formaterte innlegget vil se ut.
 5. Velg en **kategori** (velg en eksisterende eller skriv inn en ny) og eventuelle **emneord**, atskilt med komma.
-6. Klikk **Velg bilde** for å velge et bilde fra [Filer](files)-galleriet ditt, eller last opp et nytt. Opplastede bilder åpnes i et innebygd beskjæringsverktøy låst til et 16:9-format, slik at du kan tilpasse ethvert bilde til toppteksten i innlegget og kortene i listen.
+6. Klikk **Velg bilde** for å velge et bilde fra [Filer](./files.md)-galleriet ditt, eller last opp et nytt. Opplastede bilder åpnes i et innebygd beskjæringsverktøy låst til et 16:9-format, slik at du kan tilpasse ethvert bilde til toppteksten i innlegget og kortene i listen.
 7. Sett **Forfatter** -- den er som standard deg, men du kan søke etter og velge hvilken som helst person i databasen din.
 8. Slå på **Publisert** og angi en **publiseringsdato** når du er klar til å gjøre innlegget offentlig. La den være av for å lagre innlegget som et utkast.
 
@@ -58,7 +60,7 @@ Hvert innlegg i listen viser en av tre statuser:
 Publiserte innlegg vises på `{dittnettsted}/blog`, 10 per side med lenkene **Eldre**/**Nyere** for å bla gjennom arkivet, sammen med et kategorifilter og hvert innleggs signatur og bilde. Emneord vises også som klikkbare brikker, slik at besøkende kan filtrere listen etter emneord på samme måte. Enkeltinnlegg ligger på `{dittnettsted}/blog/{slug}` og inkluderer relaterte innlegg fra samme kategori. Bloggsiden publiserer også en RSS-feed, som leses automatisk av feedlesere og automatiseringsverktøy som Zapier.
 
 :::info
-Bloggangsinnlegg er en egen innholdstype, separat fra vanlige nettstedssider -- de bygges ikke i [sideditoren](page-editor) og vises ikke i listen over sider. Dette gjør bloggskriving rask og fokusert på selve teksten.
+Bloggangsinnlegg er en egen innholdstype, separat fra vanlige nettstedssider -- de bygges ikke i [sideditoren](./page-editor.md) og vises ikke i listen over sider. Dette gjør bloggskriving rask og fokusert på selve teksten.
 :::
 
 ## Legge til kommentarer under innlegg
@@ -77,6 +79,6 @@ Tøm boksen og klikk **Lagre** for å fjerne koden fra hvert innlegg. Bare perso
 
 ## Neste steg
 
-- [Administrere sider](managing-pages) -- Legg til en navigasjonslenke til bloggen din
-- [Filer](files) -- Last opp bilder du kan bruke i innleggene dine
+- [Administrere sider](./managing-pages.md) -- Legg til en navigasjonslenke til bloggen din
+- [Filer](./files.md) -- Last opp bilder du kan bruke i innleggene dine
 - [Zapier-integrasjon](../integrations/zapier.md) -- Utløs automatiseringer når nye innlegg publiseres

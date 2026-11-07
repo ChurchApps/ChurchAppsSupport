@@ -1,5 +1,6 @@
 ---
 title: "Pregled portala"
+description: "Ogled portala Lessons.church: najdi učilnice, preglej načrtovane ure, nastavi povezave do virov ter dostopaj do zunanjih ponudnikov in orodij za upravo."
 ---
 
 # Pregled portala

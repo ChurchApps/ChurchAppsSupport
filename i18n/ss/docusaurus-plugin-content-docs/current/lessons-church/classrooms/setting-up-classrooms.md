@@ -1,5 +1,6 @@
 ---
 title: "Kusungula Emakilasi"
+description: "Dala, tetfula, futsi ususe emakilasi ku-portal ye-Lessons.church ukuze ikilasi ngalinye noma iqembu leminyaka lilungele kuhlelwa kwetifundziso temasonto."
 ---
 
 # Kusungula Emakilasi

@@ -1,5 +1,6 @@
 ---
 title: "Aperçu des plans"
+description: "Vue d'ensemble des affectations de bénévoles sur plusieurs dates dans B1 Admin : repérez les postes vacants et complétez ou écrivez à l'équipe."
 ---
 
 # Aperçu des plans

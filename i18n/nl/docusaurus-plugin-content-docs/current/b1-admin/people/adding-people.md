@@ -1,5 +1,6 @@
 ---
 title: "Personen toevoegen"
+description: "Voeg een persoon toe aan je kerkdatabase in B1 Admin, vul de gegevens in en koppel gezinsleden aan huishoudens voor check-in en rapportage."
 ---
 
 # Personen toevoegen

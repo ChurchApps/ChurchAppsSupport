@@ -1,5 +1,6 @@
 ---
 title: "الخدمات المتصلة"
+description: "اربط B1 Admin بـ Mailchimp وDonorbox وSubsplash وVOMO وClearstream وأدوات أخرى باستخدام وصفات Zapier أو Make، مع أدلة إعداد لكل منها."
 ---
 
 # الخدمات المتصلة
@@ -14,14 +15,14 @@ title: "الخدمات المتصلة"
 
 | الخدمة | الفئة | الجسر | ما يمكنك ربطه |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | البريد الإلكتروني | Zapier أو Make | مزامنة أشخاص ومتبرعين جدد من B1 إلى جمهور Mailchimp |
-| [Donorbox](./donorbox) | التبرعات | Zapier | إرسال تبرعات Donorbox والمتبرعين إلى B1 |
-| [Subsplash](./subsplash) | التطبيقات / التبرعات | Zapier | سحب تبرعات Subsplash وأشخاصها إلى B1 |
-| [VOMO](./vomo) | التطوع | Zapier | مزامنة تسجيلات المتطوعين بين مجموعات B1 ومشاريع VOMO |
-| [Clearstream](./clearstream) | الرسائل النصية | Zapier | تشغيل رسالة Clearstream نصية من أحداث B1، وإدخال الردود كسجلات في B1 |
-| [Text In Church](./text-in-church) | الرسائل النصية / سير العمل | Zapier | تشغيل سير عمل Text In Church من B1، واستقبال بيانات بطاقة التواصل |
-| [Mobile Message](./mobile-message) | الرسائل النصية (أستراليا) | Webhooks by Zapier أو Make | إرسال رسائل نصية من أي حدث في B1 |
-| [Checkr](./checkr) | فحوص الخلفية | Make | بدء فحص خلفية عند انضمام شخص إلى فريق خدمة |
+| [Mailchimp](./mailchimp.md) | البريد الإلكتروني | Zapier أو Make | مزامنة أشخاص ومتبرعين جدد من B1 إلى جمهور Mailchimp |
+| [Donorbox](./donorbox.md) | التبرعات | Zapier | إرسال تبرعات Donorbox والمتبرعين إلى B1 |
+| [Subsplash](./subsplash.md) | التطبيقات / التبرعات | Zapier | سحب تبرعات Subsplash وأشخاصها إلى B1 |
+| [VOMO](./vomo.md) | التطوع | Zapier | مزامنة تسجيلات المتطوعين بين مجموعات B1 ومشاريع VOMO |
+| [Clearstream](./clearstream.md) | الرسائل النصية | Zapier | تشغيل رسالة Clearstream نصية من أحداث B1، وإدخال الردود كسجلات في B1 |
+| [Text In Church](./text-in-church.md) | الرسائل النصية / سير العمل | Zapier | تشغيل سير عمل Text In Church من B1، واستقبال بيانات بطاقة التواصل |
+| [Mobile Message](./mobile-message.md) | الرسائل النصية (أستراليا) | Webhooks by Zapier أو Make | إرسال رسائل نصية من أي حدث في B1 |
+| [Checkr](./checkr.md) | فحوص الخلفية | Make | بدء فحص خلفية عند انضمام شخص إلى فريق خدمة |
 
 ## ما تشترك فيه جميعها
 
@@ -45,8 +46,8 @@ title: "الخدمات المتصلة"
 
 ## انظر أيضًا
 
-- [Zapier (نظرة عامة)](../zapier): الجانب الخاص بـ B1 في كل وصفة Zapier واحد، وتغطيه هذه الوثيقة مرة واحدة
-- [Make (نظرة عامة)](../make): الأمر نفسه بالنسبة لسيناريوهات Make
-- [Slack وDiscord](../slack-discord): إشعارات الدردشة دون أي جسر
-- [Google Sheets](../google-sheets): تصديرات عند الطلب
+- [Zapier (نظرة عامة)](../zapier.md): الجانب الخاص بـ B1 في كل وصفة Zapier واحد، وتغطيه هذه الوثيقة مرة واحدة
+- [Make (نظرة عامة)](../make.md): الأمر نفسه بالنسبة لسيناريوهات Make
+- [Slack وDiscord](../slack-discord.md): إشعارات الدردشة دون أي جسر
+- [Google Sheets](../google-sheets.md): تصديرات عند الطلب
 - [Webhooks (مرجع المطورين)](/docs/developer/api/webhooks): كتالوج الأحداث الذي تعتمد عليه كل وصفة

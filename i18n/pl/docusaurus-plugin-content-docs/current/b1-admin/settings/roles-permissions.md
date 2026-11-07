@@ -1,5 +1,6 @@
 ---
 title: "Role i uprawnienia"
+description: "Skonfiguruj role w B1 Admin, by kontrolować, co personel i wolontariusze mogą widzieć i zmieniać: od darowizn i frekwencji po osoby i grupy."
 ---
 
 # Role i uprawnienia

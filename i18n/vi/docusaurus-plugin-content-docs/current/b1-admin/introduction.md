@@ -1,5 +1,6 @@
 ---
 title: Giới thiệu về B1.church
+description: "Hướng dẫn bạn đăng nhập B1 Admin, tìm đường trong Bảng điều khiển và menu Jump, rồi thiết lập thông tin hội thánh trước khi khám phá các công cụ khác."
 ---
 
 # Chào mừng bạn đến với B1.church Admin!
@@ -34,7 +35,7 @@ Cảm ơn bạn đã chọn B1.church! Phần giới thiệu này sẽ hướng 
 10. Bây giờ bạn có thể vào B1.church qua **cổng thành viên** hoặc **cổng quản trị**. Cổng thành viên cho phép bạn xem B1.church trông như thế nào đối với thành viên, xem các nhóm của bạn và quản lý các khoản quyên góp cá nhân.
 
 :::tip
-Hãy bắt đầu với trang [Cài đặt](./settings/) để cấu hình tên hội thánh, thương hiệu và quyền của nhóm. Điều này đảm bảo mọi thứ khác bạn thiết lập sẽ hiển thị đúng cách.
+Hãy bắt đầu với trang [Cài đặt](./settings/index.md) để cấu hình tên hội thánh, thương hiệu và quyền của nhóm. Điều này đảm bảo mọi thứ khác bạn thiết lập sẽ hiển thị đúng cách.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -81,9 +82,9 @@ Tìm kiếm thường là cách nhanh nhất để đến một trang — hãy g
 
 Sau khi xem phần giới thiệu này, hãy khám phá các tính năng chính sau:
 
-- [Thêm người](./people/adding-people) -- Tìm hiểu cách thêm thành viên vào cơ sở dữ liệu
-- [Nhóm](./groups/) -- Thiết lập và quản lý các nhóm của hội thánh
-- [Kế hoạch phục vụ](./serving/plans) -- Tổ chức chương trình phục vụ của bạn
-- [Điểm danh](./attendance/) -- Theo dõi điểm danh và check-in
-- [Website](./website/) -- Xây dựng và tùy chỉnh website hội thánh của bạn
-- [Cài đặt](./settings/) -- Cấu hình thông tin hội thánh và quyền
+- [Thêm người](./people/adding-people.md) -- Tìm hiểu cách thêm thành viên vào cơ sở dữ liệu
+- [Nhóm](./groups/index.md) -- Thiết lập và quản lý các nhóm của hội thánh
+- [Kế hoạch phục vụ](./serving/plans.md) -- Tổ chức chương trình phục vụ của bạn
+- [Điểm danh](./attendance/index.md) -- Theo dõi điểm danh và check-in
+- [Website](./website/index.md) -- Xây dựng và tùy chỉnh website hội thánh của bạn
+- [Cài đặt](./settings/index.md) -- Cấu hình thông tin hội thánh và quyền

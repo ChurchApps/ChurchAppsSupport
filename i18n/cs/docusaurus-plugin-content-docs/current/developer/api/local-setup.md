@@ -1,5 +1,6 @@
 ---
 title: "Nastavení lokálního API"
+description: "Lokální nastavení API ChurchApps: klonování repozitáře, šest databází MySQL pro moduly, inicializace schématu a vývojový server s automatickým obnovením."
 ---
 
 # Nastavení lokálního API
@@ -13,9 +14,9 @@ Tento průvodce vás provede nastavením API ChurchApps pro lokální vývoj. Na
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Nainstalujte **Node.js 24+**, **Git** a **MySQL 8.0+** -- viz [Požadavky](../setup/prerequisites)
+- Nainstalujte **Node.js 24+**, **Git** a **MySQL 8.0+** -- viz [Požadavky](../setup/prerequisites.md)
 - Vytvořte uživatele MySQL s oprávněním vytvářet databáze
-- Prostudujte si referenci [Proměnné prostředí](../setup/environment-variables) pro konfiguraci API
+- Prostudujte si referenci [Proměnné prostředí](../setup/environment-variables.md) pro konfiguraci API
 
 </div>
 
@@ -82,7 +83,7 @@ API se spustí s automatickým obnovením na adrese [http://localhost:8084](http
 
 ## Nasazení
 
-Prostředí staging bylo vyřazeno z provozu. API se nasazuje do demo prostředí při každém nahrání změn do větve `main` a do produkce ručním spuštěním pracovního postupu **Deploy Prod**, který zároveň aplikuje čekající migrace databáze. Podrobnosti najdete v článku [Nasazení API](../deployment/apis).
+Prostředí staging bylo vyřazeno z provozu. API se nasazuje do demo prostředí při každém nahrání změn do větve `main` a do produkce ručním spuštěním pracovního postupu **Deploy Prod**, který zároveň aplikuje čekající migrace databáze. Podrobnosti najdete v článku [Nasazení API](../deployment/apis.md).
 
 ## Vývoj lokálních knihoven
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Tímto způsobem můžete otestovat změny knihovny v API bez publikování na npm. Podrobnosti najdete v článku [Sdílené knihovny](../shared-libraries/#local-development-against-a-consuming-app) -- a nikdy nepotvrzujte (necommitujte) do `package.json` přesměrování, které příkaz link zapíše.
+Tímto způsobem můžete otestovat změny knihovny v API bez publikování na npm. Podrobnosti najdete v článku [Sdílené knihovny](../shared-libraries/index.md#local-development-against-a-consuming-app) -- a nikdy nepotvrzujte (necommitujte) do `package.json` přesměrování, které příkaz link zapíše.
 
 ## Související články
 
-- **[Databáze](./database)** -- Pochopení architektury s databází pro každý modul
-- **[Struktura modulů](./module-structure)** -- Jak jsou uspořádány kontrolery, repozitáře a modely
-- **[Sdílené knihovny](../shared-libraries/)** -- Práce s `@churchapps/helpers` a `@churchapps/apihelper`
+- **[Databáze](./database.md)** -- Pochopení architektury s databází pro každý modul
+- **[Struktura modulů](./module-structure.md)** -- Jak jsou uspořádány kontrolery, repozitáře a modely
+- **[Sdílené knihovny](../shared-libraries/index.md)** -- Práce s `@churchapps/helpers` a `@churchapps/apihelper`

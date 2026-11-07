@@ -1,5 +1,7 @@
 ---
-title: "Înregistrarea la evenimente"
+title: "Înscrierea la evenimente în B1 Mobile"
+sidebar_label: "Înregistrarea la evenimente"
+description: "Înscrieți-vă pe dvs. și pe membrii familiei la evenimentele bisericii din aplicația B1 Mobile, verificați capacitatea rămasă și confirmați înscrierea în trei pași."
 ---
 
 # Înregistrarea la evenimente
@@ -13,7 +15,7 @@ title: "Înregistrarea la evenimente"
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalați B1 Mobile](../getting-started/installing) și [autentificați-vă](../getting-started/logging-in) în contul dvs.
+- [Instalați B1 Mobile](../getting-started/installing.md) și [autentificați-vă](../getting-started/logging-in.md) în contul dvs.
 - Evenimentul trebuie să aibă înregistrarea activată, iar perioada de înregistrare trebuie să fie deschisă
 
 </div>
@@ -50,4 +52,4 @@ Dacă aveți nevoie să anulați, contactați administratorul bisericii. Acesta 
 ## Articole conexe
 
 - [Prezentarea generală a evenimentelor](./index.md) -- Răsfoiți evenimentele cu înregistrare de pe mobil
-- [Vizualizarea planurilor](../serving/viewing-plans) -- Consultați programul dvs. de servire
+- [Vizualizarea planurilor](../serving/viewing-plans.md) -- Consultați programul dvs. de servire

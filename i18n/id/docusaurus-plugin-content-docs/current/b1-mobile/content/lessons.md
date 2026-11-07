@@ -1,5 +1,7 @@
 ---
-title: "Pelajaran (Tidak Digunakan Lagi)"
+title: "Layar Pelajaran di B1 Mobile (Dihentikan)"
+sidebar_label: "Pelajaran (Tidak Digunakan Lagi)"
+description: "Halaman Pelajaran (Tidak Digunakan Lagi): alasan layar Pelajaran di B1 Mobile dihentikan, dan kini kurikulum ada di FreePlay atau Lessons.church."
 ---
 
 # Pelajaran (Tidak Digunakan Lagi)
@@ -19,7 +21,7 @@ Layar Lessons memberi Anda akses ke kurikulum dan materi pembelajaran gereja And
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- [Pasang B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Pasang B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 - Gereja Anda harus sudah mengatur kurikulum melalui Lessons.church
 
 </div>
@@ -54,5 +56,5 @@ Layar Lessons muncul ketika gereja Anda telah mengatur kurikulum melalui Lessons
 
 - [Ikhtisar FreePlay](/docs/freeplay/) -- Aplikasi TV pengganti untuk pemutaran pelajaran di ruang kelas
 - [Lessons.church](/docs/lessons-church/) -- Menelusuri dan mengelola konten kurikulum secara langsung
-- [Alkitab](./bible) -- Membaca Kitab Suci bersama pelajaran Anda
-- [Khotbah](./sermons) -- Menonton khotbah yang melengkapi studi Anda
+- [Alkitab](./bible.md) -- Membaca Kitab Suci bersama pelajaran Anda
+- [Khotbah](./sermons.md) -- Menonton khotbah yang melengkapi studi Anda

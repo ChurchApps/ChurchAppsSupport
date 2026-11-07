@@ -1,5 +1,6 @@
 ---
 title: "Pamokų valdymas"
+description: "Kurkite pamokos struktūrą Lessons.church: vietos, skyriai, vaidmenų veiksmai (Say, Do, Note, Play), tėvų namų kopija ir ištekliai."
 ---
 
 # Pamokų valdymas

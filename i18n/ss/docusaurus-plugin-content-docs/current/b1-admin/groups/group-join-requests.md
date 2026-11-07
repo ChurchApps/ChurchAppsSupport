@@ -1,5 +1,6 @@
 ---
 title: "Tesicelo Tekungenela Eliqenjini"
+description: "Bheka, vumela, noma wenqabe ticelo tekujoyina liqembu ku-B1 Admin, ufumane ticelo letilindzele njengomholi noma umphathi, bese ufaka sizatfu lapho wenqaba."
 ---
 
 # Tesicelo Tekungenela Eliqenjini

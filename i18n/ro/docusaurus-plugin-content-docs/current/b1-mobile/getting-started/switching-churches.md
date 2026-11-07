@@ -1,5 +1,6 @@
 ---
 title: "Schimbarea bisericilor"
+description: "Comutați între biserici în aplicația B1 Mobile alegând o biserică recentă sau căutând după nume, toate cu un singur login ChurchApps."
 ---
 
 # Schimbarea bisericilor
@@ -13,7 +14,7 @@ Dacă sunteți membru al mai multor biserici, B1 Mobile vă facilitează trecere
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalați B1 Mobile](./installing) și [conectați-vă](./logging-in) la contul dvs.
+- [Instalați B1 Mobile](./installing.md) și [conectați-vă](./logging-in.md) la contul dvs.
 
 </div>
 
@@ -24,7 +25,7 @@ Dacă sunteți membru al mai multor biserici, B1 Mobile vă facilitează trecere
 3. Apare ecranul **Căutare biserică**. Bisericile vizitate recent sunt afișate în partea de sus, pentru acces rapid.
 4. Atingeți o biserică recentă pentru a comuta la ea sau scrieți în câmpul de căutare pentru a găsi o altă biserică.
 
-Când schimbați biserica, aplicația se reîncarcă cu brandingul, linkurile de navigare și conținutul acelei biserici. [Panoul de bord](../dashboard/), [grupurile](../groups/) și celelalte date vor reflecta biserica nou selectată.
+Când schimbați biserica, aplicația se reîncarcă cu brandingul, linkurile de navigare și conținutul acelei biserici. [Panoul de bord](../dashboard/index.md), [grupurile](../groups/index.md) și celelalte date vor reflecta biserica nou selectată.
 
 ## Căutarea unei biserici
 

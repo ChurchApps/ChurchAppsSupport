@@ -1,5 +1,6 @@
 ---
 title: "Extrase de donații"
+description: "Creați în B1 Admin extrase anuale de donații pentru fiecare donator, apoi descărcați-le ca CSV sau tipăriți-le pentru expediere, cu totaluri deductibile fiscal."
 ---
 
 # Extrase de donații

@@ -1,5 +1,6 @@
 ---
 title: "Nawigacja po B1App"
+description: "Poruszaj się po portalu członka B1.church na telefonie lub komputerze: pulpit Strona główna, dolny pasek zakładek, strona Więcej i strona Ja."
 ---
 
 # Nawigacja po B1App
@@ -92,7 +93,7 @@ Strony szczegółów -- grupa, plan, twoja strona Ja, ekrany Planów i Darów --
 
 ## Strona Ja
 
-**Ja** (`/mobile/me`) to twoje osobiste centrum. Pokazuje twoje imię i zdjęcie wraz z przyciskami **Edytuj profil** i **Ustawienia** ([preferencje powiadomień](./notification-preferences.md)), a następnie to, co nadchodzi: przydziały służby, rejestracje na wydarzenia i wydarzenia grup. Dalej znajdują się twoje gospodarstwo domowe, grupy, [dary](../giving/) w tym roku, przesłane formularze, historia obecności, [rejestracje](../events/my-registrations.md) oraz ostatnie powiadomienia i wiadomości. Szczegóły znajdziesz w artykule [Strona Ja](./me-page).
+**Ja** (`/mobile/me`) to twoje osobiste centrum. Pokazuje twoje imię i zdjęcie wraz z przyciskami **Edytuj profil** i **Ustawienia** ([preferencje powiadomień](./notification-preferences.md)), a następnie to, co nadchodzi: przydziały służby, rejestracje na wydarzenia i wydarzenia grup. Dalej znajdują się twoje gospodarstwo domowe, grupy, [dary](../giving/index.md) w tym roku, przesłane formularze, historia obecności, [rejestracje](../events/my-registrations.md) oraz ostatnie powiadomienia i wiadomości. Szczegóły znajdziesz w artykule [Strona Ja](./me-page.md).
 
 Jeśli nie jesteś zalogowany, zamiast tego strona Ja pokazuje przycisk **Zaloguj się**.
 

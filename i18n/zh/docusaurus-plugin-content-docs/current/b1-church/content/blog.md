@@ -1,5 +1,7 @@
 ---
-title: "博客"
+title: "浏览 B1.church 博客与 RSS 订阅源"
+sidebar_label: "博客"
+description: "按类别或标签浏览和筛选您教会的 B1.church 博客，翻阅较早的文章，或通过 RSS 订阅源关注新文章。"
 ---
 
 # 博客

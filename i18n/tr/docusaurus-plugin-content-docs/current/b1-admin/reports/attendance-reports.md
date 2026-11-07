@@ -1,5 +1,6 @@
 ---
 title: "Yoklama Raporları"
+description: "B1 Admin'in üç katılım raporunu (Katılım Eğilimi, Grup Katılımı, Günlük Grup Katılımı) ve her birinin gösterdiklerini; çalıştırma ve dışa aktarma adımlarıyla öğrenin."
 ---
 
 # Yoklama Raporları

@@ -1,5 +1,7 @@
 ---
-title: "Logowanie"
+title: "Logowanie do B1.church i portalu członka"
+sidebar_label: "Logowanie"
+description: "Zaloguj się do portalu członka B1.church, użyj kodów dwuetapowych lub logowania jednokrotnego, zresetuj hasło i wyloguj się z menu konta."
 ---
 
 # Logowanie
@@ -17,7 +19,7 @@ Logowanie się do B1.church daje dostęp do portalu członka, w którym możesz 
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Potrzebujesz konta ChurchApps. Aby je utworzyć, zobacz [Pierwsze kroki](../getting-started/).
+- Potrzebujesz konta ChurchApps. Aby je utworzyć, zobacz [Pierwsze kroki](./index.md).
 - Potrzebujesz adresu URL B1.church swojego kościoła (na przykład `https://yourchurchname.b1.church`).
 
 </div>
@@ -39,7 +41,7 @@ Pozostajesz zalogowany w tej samej przeglądarce lub zainstalowanej aplikacji, d
 
 ## Dostęp do portalu członka
 
-Po zalogowaniu możesz przejść do portalu członka, klikając swoje **imię** w prawym górnym rogu strony i wybierając z menu **Portal członka**. Portal członka to miejsce, w którym znajdują się wszystkie twoje osobiste narzędzia kościelne, w tym [panel główny](./navigating.md), [strona Ja](./me-page.md), [grupy](../groups/), [dary](../giving/) i inne.
+Po zalogowaniu możesz przejść do portalu członka, klikając swoje **imię** w prawym górnym rogu strony i wybierając z menu **Portal członka**. Portal członka to miejsce, w którym znajdują się wszystkie twoje osobiste narzędzia kościelne, w tym [panel główny](./navigating.md), [strona Ja](./me-page.md), [grupy](../groups/index.md), [dary](../giving/index.md) i inne.
 
 ## Menu użytkownika
 

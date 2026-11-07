@@ -1,5 +1,6 @@
 ---
 title: "Mga Silid-aralan"
+description: "I-set up ang mga classroom ng simbahan sa Lessons.church, mula kuwarto at age group hanggang volunteer views, para sa iskedyul ng pagtuturo."
 ---
 
 # Mga Silid-aralan

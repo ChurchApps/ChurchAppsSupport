@@ -1,5 +1,7 @@
 ---
-title: "Incheckning"
+title: "Självincheckning med B1 Checkin och B1 Admin"
+sidebar_label: "Incheckning"
+description: "Ställ in självincheckning för gudstjänster med appen B1 Checkin i B1 Admin: enheter, kioskkonton, scheman, varumärkesprofil och QR-registrering för gäster."
 ---
 
 # Incheckning
@@ -99,7 +101,7 @@ Använd vilskärmen för att visa information, kommande evenemang eller välkoms
 
 Incheckningskiosken kan visa en QR-kod som besökare skannar för att registrera sig själva och sin familj på sin egen telefon. Detta snabbar upp incheckningen för förstagångsgäster.
 
-När en gäst skannar QR-koden kommer de till en [registreringssida för gäster](../../b1-church/checkin/guest-registration), där de anger sin families namn och andra uppgifter som du väljer att fråga efter. En volontär kan sedan slå upp dem på kiosken och checka in dem.
+När en gäst skannar QR-koden kommer de till en [registreringssida för gäster](../../b1-church/checkin/guest-registration.md), där de anger sin families namn och andra uppgifter som du väljer att fråga efter. En volontär kan sedan slå upp dem på kiosken och checka in dem.
 
 ### Aktivera QR-gästregistrering
 

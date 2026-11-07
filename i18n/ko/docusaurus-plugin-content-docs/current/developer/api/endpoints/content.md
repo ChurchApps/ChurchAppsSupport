@@ -1,5 +1,6 @@
 ---
 title: "콘텐츠 엔드포인트"
+description: "ChurchApps Content API 엔드포인트 참조: 웹사이트 페이지, 블로그 게시물, 리디렉션, 설교, 행사, 파일, 성경 조회, B1 Admin의 찬양 데이터를 다룹니다."
 ---
 
 # 콘텐츠 엔드포인트
@@ -133,7 +134,7 @@ GET /content/pages/abc-church-id/tree?url=/about
 
 기본 경로: `/content/posts`
 
-블로그 게시물은 독립된 행으로 저장됩니다. `title`, `slug`(교회별 고유), `excerpt`, `content`(마크다운 본문), `authorId`, `photoUrl`, `publishDate`, `category`, `tags`로 구성됩니다. `publishDate`가 설정되고 과거 시점이면 게시물이 공개됩니다. 조회 엔드포인트는 각 게시물에 `authorId`로부터 확인한 `authorName`을 추가합니다. [웹사이트 빌더 아키텍처](../../architecture/website-builder#blog)를 참조하세요.
+블로그 게시물은 독립된 행으로 저장됩니다. `title`, `slug`(교회별 고유), `excerpt`, `content`(마크다운 본문), `authorId`, `photoUrl`, `publishDate`, `category`, `tags`로 구성됩니다. `publishDate`가 설정되고 과거 시점이면 게시물이 공개됩니다. 조회 엔드포인트는 각 게시물에 `authorId`로부터 확인한 `authorName`을 추가합니다. [웹사이트 빌더 아키텍처](../../architecture/website-builder.md#blog)를 참조하세요.
 
 | 메서드 | 경로 | 인증 | 권한 | 설명 |
 |--------|------|------|------------|-------------|
@@ -458,8 +459,8 @@ GET /content/bibles/de4e12af7f28f599-02/verses/GEN.1.1-GEN.1.3
 
 ## 관련 페이지
 
-- [웹사이트 빌더 아키텍처](../../architecture/website-builder) -- 페이지, 섹션, 요소, 게시물, 리디렉션이 여러 앱에서 어떻게 연결되는지
-- [멤버십 엔드포인트](./membership) -- 사람, 교회, 그룹, 역할, 권한
-- [출석 엔드포인트](./attendance) -- 예배 및 방문 추적
-- [인증 및 권한](./authentication) -- 로그인 흐름, JWT, 권한 모델
-- [모듈 구조](../module-structure) -- 코드 구성 패턴
+- [웹사이트 빌더 아키텍처](../../architecture/website-builder.md) -- 페이지, 섹션, 요소, 게시물, 리디렉션이 여러 앱에서 어떻게 연결되는지
+- [멤버십 엔드포인트](./membership.md) -- 사람, 교회, 그룹, 역할, 권한
+- [출석 엔드포인트](./attendance.md) -- 예배 및 방문 추적
+- [인증 및 권한](./authentication.md) -- 로그인 흐름, JWT, 권한 모델
+- [모듈 구조](../module-structure.md) -- 코드 구성 패턴

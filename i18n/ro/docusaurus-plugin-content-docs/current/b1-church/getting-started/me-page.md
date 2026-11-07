@@ -1,5 +1,6 @@
 ---
 title: "Pagina Mea"
+description: "Ce arată pagina Me din portalul B1App pe un ecran: slujbe, evenimente și înscrieri viitoare, plus gospodăria, grupele, donațiile, formularele și prezența."
 ---
 
 # Pagina Mea
@@ -31,7 +32,7 @@ Dacă ești deconectat, vei vedea în schimb mesajul „Sign in to see your week
 Secțiunea **Upcoming** listează următoarele trei elemente în ordinea datei, fiecare cu o etichetă de tip. Dacă ai mai multe, atinge **All upcoming** pentru a vedea lista completă și **Back to Me** pentru a reveni.
 
 - **Serving** -- Pozițiile tale de voluntar în planurile de serviciu viitoare, cu data și ora de începere a serviciului la care participi (ora la care este nevoie de echipa ta, atunci când planul are mai multe ore de serviciu, sau doar data, dacă planul nu are ore). Atinge una pentru a deschide planul.
-- **Registration** -- Evenimentele la care te-ai [înscris](../events/registering). Atinge pentru a ajunge la [înscrierile tale](../events/my-registrations).
+- **Registration** -- Evenimentele la care te-ai [înscris](../events/registering.md). Atinge pentru a ajunge la [înscrierile tale](../events/my-registrations.md).
 - **Event** -- Evenimente viitoare ale grupurilor din care faci parte. Atinge unul pentru a deschide evenimentele grupului.
 
 Dacă un eveniment sau o înscriere are o fotografie, o miniatură mică a acesteia apare la începutul rândului.
@@ -66,7 +67,7 @@ Secțiunea **Requests & registrations** arată câte înscrieri la evenimente ai
 
 Dacă biserica ta are săli sau resurse care pot fi rezervate, apar două linkuri suplimentare:
 
-- **Request an Event** -- Solicită organizarea unui eveniment cu sălile și echipamentele de care ai nevoie. Vezi [Solicitarea evenimentelor și a sălilor](../events/requesting-events).
+- **Request an Event** -- Solicită organizarea unui eveniment cu sălile și echipamentele de care ai nevoie. Vezi [Solicitarea evenimentelor și a sălilor](../events/requesting-events.md).
 - **My Requests** -- Urmărește starea cererilor tale și anulează cele în așteptare.
 
 Dacă biserica ta nu a configurat săli sau resurse, aceste linkuri sunt ascunse.
@@ -77,8 +78,8 @@ Secțiunea **Inbox** arată cele mai recente două notificări ale tale, ca să 
 
 ## Articole conexe
 
-- [Navigarea în B1App](./navigating) -- Structura portalului membrilor
-- [Solicitarea evenimentelor și a sălilor](../events/requesting-events) -- Trimite și urmărește cererile pentru săli/resurse
-- [Înscrierile mele](../events/my-registrations) -- Gestionează-ți înscrierile la evenimente
-- [Înscrierea voluntarilor](../serving/volunteer-signup) -- Cum funcționează sarcinile de serviciu
-- [Check-in automat](../checkin/self-checkin) -- Cum sunt înregistrate prezențele tale
+- [Navigarea în B1App](./navigating.md) -- Structura portalului membrilor
+- [Solicitarea evenimentelor și a sălilor](../events/requesting-events.md) -- Trimite și urmărește cererile pentru săli/resurse
+- [Înscrierile mele](../events/my-registrations.md) -- Gestionează-ți înscrierile la evenimente
+- [Înscrierea voluntarilor](../serving/volunteer-signup.md) -- Cum funcționează sarcinile de serviciu
+- [Check-in automat](../checkin/self-checkin.md) -- Cum sunt înregistrate prezențele tale

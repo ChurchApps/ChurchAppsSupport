@@ -1,5 +1,6 @@
 ---
 title: "Tilien hyväksyntä­pyyntöjen käsittely"
+description: "Hyväksy tai hylkää jäsenten tilin poistopyynnöt B1 Adminissa, ohjaa ne hakemistohyväksyntäryhmälle ja noudata 30 päivän GDPR-määräaikaa."
 ---
 
 # Tilien poistopyyntöjen käsittely

@@ -1,5 +1,6 @@
 ---
 title: "Jahrespläne verwalten"
+description: "Jahresplan mit Wochenlektionen in Lessons.church erstellen, Wochen an Ostern oder Weihnachten ausrichten und für B1 Admin veröffentlichen."
 ---
 
 # Jahrespläne verwalten

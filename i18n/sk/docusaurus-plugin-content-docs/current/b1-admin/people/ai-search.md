@@ -1,5 +1,6 @@
 ---
 title: "AI vyhľadávanie"
+description: "Hľadajte v adresári ľudí v B1 Admin otázkami v prirodzenom jazyku, napríklad ktorí členovia neboli tri mesiace na bohoslužbe, namiesto zostavovania filtrov."
 ---
 
 # AI vyhľadávanie

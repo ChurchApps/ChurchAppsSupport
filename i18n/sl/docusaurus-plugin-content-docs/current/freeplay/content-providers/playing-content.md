@@ -1,5 +1,6 @@
 ---
 title: "Predvajanje vsebine"
+description: "Upravljaj FreePlay z daljincem: premor, preskoki diapozitivov in videov, skok na poljubno sporočilo ter izhod iz predvajalnika iz vsebine ponudnika ali načrta."
 ---
 
 # Predvajanje vsebine
@@ -13,13 +14,13 @@ Predvajalnik FreePlay zapolni celoten zaslon in je narejen za daljince televizor
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Izberite, kaj želite predvajati. Oglejte si [Brskanje in prenos vsebine](./browsing-content), [Način načrta](../plan-mode/) ali [Obvestila](./announcements)
+- Izberite, kaj želite predvajati. Oglejte si [Brskanje in prenos vsebine](./browsing-content.md), [Način načrta](../plan-mode/index.md) ali [Obvestila](./announcements.md)
 - Pritisnite **Start**, da odprete predvajalnik
 
 </div>
 
 :::info
-Zasloni, povezani s koledarjem, uporabljajo ločen predvajalnik po urniku z nekoliko drugačnimi kontrolami. Oglejte si [Predvajanje po urniku na televizorju](../scheduled-mode/scheduled-playback).
+Zasloni, povezani s koledarjem, uporabljajo ločen predvajalnik po urniku z nekoliko drugačnimi kontrolami. Oglejte si [Predvajanje po urniku na televizorju](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Kontrole predvajalnika
@@ -57,7 +58,7 @@ Med predvajanjem pritisnite **Gor**, da odprete **Izberi sporočilo**. Prikaže 
 Na daljincu pritisnite **Dol** ali **Nazaj**, da zapustite predvajalnik. Kam se vrnete, je odvisno od tega, kaj ste predvajali:
 
 - **Vsebina ponudnika** - nazaj na brskalnik vsebine
-- **Načrt** - nazaj na zaslon za prenos načrta. Oglejte si [Način načrta](../plan-mode/)
+- **Načrt** - nazaj na zaslon za prenos načrta. Oglejte si [Način načrta](../plan-mode/index.md)
 - **Prenos** - nazaj na zaslon **Prenosi**
 
 :::info
@@ -66,5 +67,5 @@ Zaslon ostane aktiven, medtem ko je predvajalnik odprt, zato televizor med lekci
 
 ## Sorodni članki
 
-- **[Brskanje in prenos vsebine](./browsing-content)** - poiščite vsebino in jo prenesite za predvajanje brez povezave
-- **[Predvajanje po urniku na televizorju](../scheduled-mode/scheduled-playback)** - kontrole daljinca za zaslone, ki sledijo koledarju
+- **[Brskanje in prenos vsebine](./browsing-content.md)** - poiščite vsebino in jo prenesite za predvajanje brez povezave
+- **[Predvajanje po urniku na televizorju](../scheduled-mode/scheduled-playback.md)** - kontrole daljinca za zaslone, ki sledijo koledarju

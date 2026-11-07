@@ -1,5 +1,7 @@
 ---
-title: "Igehirdetések"
+title: "Igehirdetések böngészése a B1.church webhelyén"
+sidebar_label: "Igehirdetések"
+description: "Igehirdetések böngészése és nézése a B1.church webhelyén, sorozatok vagy lejátszási listák szerint. Bejelentkezés nem szükséges."
 ---
 
 # Igehirdetések

@@ -1,5 +1,7 @@
 ---
-title: "Profiilisi muokkaaminen"
+title: "Profiilin muokkaaminen B1.church-jäsenportaalissa"
+sidebar_label: "Profiilisi muokkaaminen"
+description: "Päivitä yhteystietosi, talouden jäsenet, kirjautumissähköposti ja salasana sekä yksityisyysasetukset B1.church-jäsenportaalissa."
 ---
 
 # Profiilisi muokkaaminen

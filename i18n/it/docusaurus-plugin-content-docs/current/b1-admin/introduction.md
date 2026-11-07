@@ -1,5 +1,6 @@
 ---
 title: Introduzione a B1.church
+description: "Guida all'accesso a B1 Admin, alla Dashboard e al menu Jump, e alla configurazione delle informazioni della chiesa prima di esplorare gli altri strumenti."
 ---
 
 # Benvenuto in B1.church Admin!
@@ -30,7 +31,7 @@ Per ulteriore supporto, scrivi a [support@churchapps.org](mailto:support@churcha
 10. Ora puoi entrare in B1.church tramite il **portale dei membri** o il **portale di amministrazione**. Il portale dei membri ti permette di vedere come appare B1.church ai tuoi membri, consultare i tuoi gruppi e gestire le tue donazioni personali.
 
 :::tip
-Inizia dalla pagina [Impostazioni](./settings/) per configurare il nome della chiesa, il branding e i permessi del team. In questo modo tutto ciò che configuri in seguito verrà visualizzato correttamente.
+Inizia dalla pagina [Impostazioni](./settings/index.md) per configurare il nome della chiesa, il branding e i permessi del team. In questo modo tutto ciò che configuri in seguito verrà visualizzato correttamente.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -77,9 +78,9 @@ La ricerca è spesso il modo più veloce per raggiungere una pagina — digita u
 
 Dopo aver guardato questa introduzione, esplora queste funzionalità principali:
 
-- [Aggiungere persone](./people/adding-people) — scopri come aggiungere membri al tuo database
-- [Gruppi](./groups/) — configura e gestisci i gruppi della chiesa
-- [Piani di servizio](./serving/plans) — organizza il tuo ministero di servizio
-- [Presenze](./attendance/) — registra le presenze e il check-in
-- [Sito web](./website/) — crea e personalizza il sito web della tua chiesa
-- [Impostazioni](./settings/) — configura le informazioni della chiesa e i permessi
+- [Aggiungere persone](./people/adding-people.md) — scopri come aggiungere membri al tuo database
+- [Gruppi](./groups/index.md) — configura e gestisci i gruppi della chiesa
+- [Piani di servizio](./serving/plans.md) — organizza il tuo ministero di servizio
+- [Presenze](./attendance/index.md) — registra le presenze e il check-in
+- [Sito web](./website/index.md) — crea e personalizza il sito web della tua chiesa
+- [Impostazioni](./settings/index.md) — configura le informazioni della chiesa e i permessi

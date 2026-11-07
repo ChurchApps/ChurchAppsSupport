@@ -1,5 +1,6 @@
 ---
 title: "Mensajería"
+description: "Inicie, lea, edite y elimine conversaciones privadas uno a uno con miembros de la iglesia en B1 Mobile, y encuentre personas a través del Directorio de miembros."
 ---
 
 # Mensajería
@@ -13,7 +14,7 @@ B1 Mobile incluye mensajería privada para que puedas tener conversaciones uno a
 <div class="prereqs">
 <h4>Antes de Empezar</h4>
 
-- [Instala B1 Mobile](../getting-started/installing) e [inicia sesión](../getting-started/logging-in) en tu cuenta
+- [Instala B1 Mobile](../getting-started/installing.md) e [inicia sesión](../getting-started/logging-in.md) en tu cuenta
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile incluye mensajería privada para que puedas tener conversaciones uno a
 ## Iniciando una Nueva Conversación
 
 1. Desde la pantalla de mensajería, toca la opción para iniciar una nueva conversación.
-2. Usa el campo de búsqueda para encontrar el miembro al que deseas enviar un mensaje. También puedes encontrar miembros a través del [Member Directory](./member-directory).
+2. Usa el campo de búsqueda para encontrar el miembro al que deseas enviar un mensaje. También puedes encontrar miembros a través del [Member Directory](./member-directory.md).
 3. Selecciona el miembro de los resultados de búsqueda.
 4. Escribe tu mensaje y toca **Send**.
 
@@ -52,11 +53,11 @@ Usa la mensajería para coordinar con voluntarios compañeros, hacer un seguimie
 :::
 
 :::info
-Habilita [notificaciones push](./notifications) para recibir alertas cuando alguien te envíe un nuevo mensaje, incluso cuando la aplicación no está abierta.
+Habilita [notificaciones push](./notifications.md) para recibir alertas cuando alguien te envíe un nuevo mensaje, incluso cuando la aplicación no está abierta.
 :::
 
 ## Artículos Relacionados
 
-- [Member Directory](./member-directory) -- Encuentra miembros para enviar mensajes
-- [Notifications](./notifications) -- Recibe notificaciones sobre nuevos mensajes
-- [Groups](../groups/) -- Participa en conversaciones de grupo
+- [Member Directory](./member-directory.md) -- Encuentra miembros para enviar mensajes
+- [Notifications](./notifications.md) -- Recibe notificaciones sobre nuevos mensajes
+- [Groups](../groups/index.md) -- Participa en conversaciones de grupo

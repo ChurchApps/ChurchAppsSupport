@@ -1,5 +1,6 @@
 ---
 title: "Calendriers"
+description: "Configurez les calendriers dans B1 Admin, gérez les événements qui y figurent et publiez-les sur votre site B1.church pour que votre communauté puisse voir les prochains événements de l'église."
 ---
 
 # Calendriers
@@ -18,20 +19,20 @@ La section Calendriers dans B1 Admin vous permet de créer des calendriers organ
 
 ## Ce que vous pouvez faire
 
-- **Ajouter un nouveau calendrier** – Cliquez sur **Ajouter un calendrier** en haut de la page pour créer un calendrier pour un ministère, un type d'événement ou un objectif spécifique. Voir [Créer des calendriers](creating-calendars) pour des instructions étape par étape.
+- **Ajouter un nouveau calendrier** – Cliquez sur **Ajouter un calendrier** en haut de la page pour créer un calendrier pour un ministère, un type d'événement ou un objectif spécifique. Voir [Créer des calendriers](./creating-calendars.md) pour des instructions étape par étape.
 - **Modifier un calendrier** – Cliquez sur **Gérer les événements** pour n'importe quel calendrier afin de l'ouvrir et gérer les groupes qui y sont inclus.
 - **Publier des calendriers** – Les calendriers peuvent être affichés sur votre site Web B1.church afin que les visiteurs puissent voir les événements à venir de votre église.
-- **Créer des calendriers organisés** – Regroupez les événements de plusieurs groupes en une seule vue de calendrier pour une vue d'ensemble complète de tout ce qui se passe dans votre église. Voir [Calendrier organisé](curated-calendar) pour plus de détails.
-- **Gérer les salles et les ressources** – Suivi des espaces réservables et des équipements et gestion des demandes d'approbation. Voir [Salles et ressources](rooms-resources) pour plus de détails.
-- **Afficher la disponibilité** – Voir toutes les réservations de salles et de ressources sur un seul calendrier et réserver des espaces pour les événements à venir. Voir [Calendrier de disponibilité](availability) pour plus de détails.
+- **Créer des calendriers organisés** – Regroupez les événements de plusieurs groupes en une seule vue de calendrier pour une vue d'ensemble complète de tout ce qui se passe dans votre église. Voir [Calendrier organisé](./curated-calendar.md) pour plus de détails.
+- **Gérer les salles et les ressources** – Suivi des espaces réservables et des équipements et gestion des demandes d'approbation. Voir [Salles et ressources](./rooms-resources.md) pour plus de détails.
+- **Afficher la disponibilité** – Voir toutes les réservations de salles et de ressources sur un seul calendrier et réserver des espaces pour les événements à venir. Voir [Calendrier de disponibilité](./availability.md) pour plus de détails.
 
 :::info
-Les calendriers fonctionnent étroitement avec les [Groupes](../groups/creating-groups.md). Lorsque les groupes ont des événements programmés, ces événements peuvent être intégrés à vos calendriers. Consultez la page [Créer des calendriers](creating-calendars) pour apprendre à connecter les groupes aux calendriers.
+Les calendriers fonctionnent étroitement avec les [Groupes](../groups/creating-groups.md). Lorsque les groupes ont des événements programmés, ces événements peuvent être intégrés à vos calendriers. Consultez la page [Créer des calendriers](./creating-calendars.md) pour apprendre à connecter les groupes aux calendriers.
 :::
 
 ## Étapes suivantes
 
-- [Créer des calendriers](creating-calendars) – Configurer un nouveau calendrier et connecter les groupes
-- [Calendrier organisé](curated-calendar) – Regrouper les événements de plusieurs groupes en une seule vue
-- [Salles et ressources](rooms-resources) – Gérer les espaces réservables et les équipements
-- [Calendrier de disponibilité](availability) – Afficher et gérer les réservations de salles/ressources
+- [Créer des calendriers](./creating-calendars.md) – Configurer un nouveau calendrier et connecter les groupes
+- [Calendrier organisé](./curated-calendar.md) – Regrouper les événements de plusieurs groupes en une seule vue
+- [Salles et ressources](./rooms-resources.md) – Gérer les espaces réservables et les équipements
+- [Calendrier de disponibilité](./availability.md) – Afficher et gérer les réservations de salles/ressources

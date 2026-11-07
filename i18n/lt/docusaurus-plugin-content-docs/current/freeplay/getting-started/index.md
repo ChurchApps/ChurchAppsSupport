@@ -1,5 +1,7 @@
 ---
-title: "Pradžia"
+title: "Pradžia su FreePlay TV programa"
+sidebar_label: "Pradžia"
+description: "Nustatykite FreePlay Android TV, Fire TV ar Apple TV: įdiekite programą, pirmą kartą atidarykite ją ir susipažinkite su pultu bei šoniniu meniu."
 ---
 
 # Pradžia naudojantis FreePlay
@@ -42,7 +44,7 @@ FreePlay veikia su Fire TV (įskaitant naujesnius Vega OS lazdelės tipo įrengi
 
 Pirmą kartą atidarę FreePlay, pamatysite animuotą pradinį ekraną su FreePlay logotipu. Programėlė patikrina, ar anksčiau nebuvo prijungtų turinio teikėjų. Jei teikėjas jau prijungtas, ji iš karto atvers to teikėjo turinio naršyklę. Priešingu atveju bus atidarytas ekranas **Turinio teikėjai**, kuriame galėsite prijungti pirmąjį turinio šaltinį.
 
-Jei TV susietas su kalendoriumi [Tvarkaraščio režimu](../scheduled-mode/), FreePlay praleidžia visus šiuos žingsnius ir iš karto atidaro tvarkaraščio grotuvą.
+Jei TV susietas su kalendoriumi [Tvarkaraščio režimu](../scheduled-mode/index.md), FreePlay praleidžia visus šiuos žingsnius ir iš karto atidaro tvarkaraščio grotuvą.
 
 ## Naršymas su TV pultu
 
@@ -62,13 +64,13 @@ Naršant turinį šoninė juosta sutrumpėja iki siauros piktogramų juostelės.
 
 Šoninėje juostoje, iš viršaus į apačią, yra:
 
-- **Šiandienos planas** -- Rodoma, kai TV susietas su planu. Žr. [Plano režimas](../plan-mode/)
-- **Skelbimai** -- Rodoma, kai pasirinkote skelbimų aplanką. Žr. [Skelbimai](../content-providers/announcements)
-- **Naršyti** -- Kiekvienas prijungtas turinio teikėjas, kurį galite naršyti. Žr. [Turinio naršymas ir atsisiuntimas](../content-providers/browsing-content)
-- **Nustatymai** -- Šoninės juostos apačioje. Atidaro **Susieti su kalendoriumi** (susiekite šį TV su kalendoriumi ar planu – žr. [Susiejimo režimo pasirinkimas](./pairing-modes)), **Atsisiuntimai** (leiskite arba ištrinkite šiame įrenginyje išsaugotą turinį) ir **Teikėjai** (prijunkite turinio teikėjus ir pasirinkite skelbimų aplanką)
+- **Šiandienos planas** -- Rodoma, kai TV susietas su planu. Žr. [Plano režimas](../plan-mode/index.md)
+- **Skelbimai** -- Rodoma, kai pasirinkote skelbimų aplanką. Žr. [Skelbimai](../content-providers/announcements.md)
+- **Naršyti** -- Kiekvienas prijungtas turinio teikėjas, kurį galite naršyti. Žr. [Turinio naršymas ir atsisiuntimas](../content-providers/browsing-content.md)
+- **Nustatymai** -- Šoninės juostos apačioje. Atidaro **Susieti su kalendoriumi** (susiekite šį TV su kalendoriumi ar planu – žr. [Susiejimo režimo pasirinkimas](./pairing-modes.md)), **Atsisiuntimai** (leiskite arba ištrinkite šiame įrenginyje išsaugotą turinį) ir **Teikėjai** (prijunkite turinio teikėjus ir pasirinkite skelbimų aplanką)
 
 ## Kas toliau
 
-- **[Susiejimo režimo pasirinkimas](./pairing-modes)** - Sužinokite apie skirtingus būdus, kaip prijungti TV
-- **[Tvarkaraščio režimas](../scheduled-mode/)** - Įtraukite savo TV į kalendorių naudodami FreePlay Admin
-- **[Turinio teikėjai](../content-providers/)** - Prisijunkite prie Lessons.church, Bible Project ir kitų
+- **[Susiejimo režimo pasirinkimas](./pairing-modes.md)** - Sužinokite apie skirtingus būdus, kaip prijungti TV
+- **[Tvarkaraščio režimas](../scheduled-mode/index.md)** - Įtraukite savo TV į kalendorių naudodami FreePlay Admin
+- **[Turinio teikėjai](../content-providers/index.md)** - Prisijunkite prie Lessons.church, Bible Project ir kitų

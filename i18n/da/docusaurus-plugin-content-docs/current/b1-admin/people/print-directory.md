@@ -1,5 +1,6 @@
 ---
 title: "Udskriv katalog"
+description: "Generér en udskrivbar medlemsfortegnelse grupperet efter husstand fra B1 Admin med fotos, kontaktoplysninger og fødselsdage, tilpasset Letter-format."
 ---
 
 # Udskriv katalog

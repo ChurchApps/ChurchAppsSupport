@@ -1,5 +1,6 @@
 ---
 title: "Instalacija kot aplikacija (PWA)"
+description: "Namestite B1.church kot aplikacijo na iPhone ali Android prek portala članov, tako da ikono dodate na začetni zaslon v brskalniku Safari ali Chrome."
 ---
 
 # Instalacija kot aplikacija (PWA)

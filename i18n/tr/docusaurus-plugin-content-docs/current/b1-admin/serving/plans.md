@@ -1,5 +1,6 @@
 ---
 title: "Hizmet Planları"
+description: "B1 Admin'de gönüllü planlamasını kurun: tarihe göre hizmet planları oluşturun, önceki haftalardan kopyalayın, ekip üyelerini pozisyonlara atayın ve son tarihleri ve hatırlatmaları yönetin."
 ---
 
 # Hizmet Planları

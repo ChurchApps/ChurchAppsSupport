@@ -1,5 +1,7 @@
 ---
-title: "Prijava obiskovalcev"
+title: "Nastavitev samostojne prijave z B1 Checkin in B1 Admin"
+sidebar_label: "Prijava obiskovalcev"
+description: "Nastavite samostojno prijavo na bogoslužja z aplikacijo B1 Checkin v B1 Admin: naprave, računi za kiosk, urniki, videz in prijava gostov prek QR kode."
 ---
 
 # Prijava obiskovalcev
@@ -99,7 +101,7 @@ Zaslon v mirovanju uporabite za prikaz napovedi, prihajajočih dogodkov ali pozd
 
 Kiosk za prijavo lahko prikaže QR kodo, ki jo obiskovalci optično preberejo in se nato sami registrirajo s svojo družino na lastnem telefonu. To pospeši prijavo za goste, ki so prvič tukaj.
 
-Ko gost optično prebere QR kodo, ga stran odpre na [strani za registracijo gostov](../../b1-church/checkin/guest-registration), kjer vnese imena svoje družine in druge podatke, ki jih želite zbirati. Prostovoljec ga nato lahko poišče na kiosku in ga prijavi.
+Ko gost optično prebere QR kodo, ga stran odpre na [strani za registracijo gostov](../../b1-church/checkin/guest-registration.md), kjer vnese imena svoje družine in druge podatke, ki jih želite zbirati. Prostovoljec ga nato lahko poišče na kiosku in ga prijavi.
 
 ### Omogočanje registracije gostov prek QR kode
 

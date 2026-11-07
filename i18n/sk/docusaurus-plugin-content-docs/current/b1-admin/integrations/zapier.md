@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Pripojte B1 Admin k Zapier a spúšťajte automatizácie pri nových ľuďoch, darech a členoch skupín a zapisujte záznamy späť do B1 bez programovania."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Vyberte spúšťač a potom pridajte jeden alebo viac krokov akcií. Príklady s
 ### Odosielať dary do kanála Slack s bohatšou kartou, než ponúka vstavaný konektor
 
 - **Spúšťač** — B1: Nový dar
-- **Akcia** — Slack: Odoslať správu do kanála. Zostavte ľubovoľné rozloženie, napríklad tlačidlá, prílohy a podobne, ktoré [konektor Slack](./slack-discord) nedokáže vytvoriť.
+- **Akcia** — Slack: Odoslať správu do kanála. Zostavte ľubovoľné rozloženie, napríklad tlačidlá, prílohy a podobne, ktoré [konektor Slack](./slack-discord.md) nedokáže vytvoriť.
 
 ### Pridávať nových členov skupiny do Google Group
 
@@ -106,6 +107,6 @@ To znamená, že spúšťač reaguje iba na udalosti, ktoré nastanú **po** zap
 
 ## Pozri tiež
 
-- [Make](./make) — rovnaký postup, iná platforma
-- [Slack a Discord](./slack-discord) — jednoduchšie upozornenia v chate bez Zapier
+- [Make](./make.md) — rovnaký postup, iná platforma
+- [Slack a Discord](./slack-discord.md) — jednoduchšie upozornenia v chate bez Zapier
 - [Webhooky (referencia pre vývojárov)](/docs/developer/api/webhooks)

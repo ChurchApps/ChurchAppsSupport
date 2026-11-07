@@ -1,5 +1,6 @@
 ---
 title: "Ukudlala Lesihlelwe Ku-TV"
+description: "I-FreePlay TV elihlanganisiwe lilanda sonto lelilandzelako futsi lidlala ngekhloko, nanoma nguliphi sikhatsi, nalapho ngaphandle kwe-inthanethi. Kubandakanya lipaneli lemininingwane, tinkinobho te-remote, nekubopha umlayeto."
 ---
 
 # Ukudlala Lesihlelwe Ku-TV
@@ -13,8 +14,8 @@ Nxa i-TV isihlanganiswe nekhalenda, i-FreePlay iyiphatsa ngawe. Iyalanda sonkhe 
 <div class="prereqs">
 <h4>Ngaphambi Kokuqala</h4>
 
-- [Hlanganisa i-TV nekhalenda](./pairing-a-screen)
-- [Faka lokuthile kukhalenda](./scheduling-the-calendar), noma usete iloophu yokuzenzakalela yeqembu lesikrini
+- [Hlanganisa i-TV nekhalenda](./pairing-a-screen.md)
+- [Faka lokuthile kukhalenda](./scheduling-the-calendar.md), noma usete iloophu yokuzenzakalela yeqembu lesikrini
 
 </div>
 
@@ -40,7 +41,7 @@ Ipanele futsi linemacuba lamatsatfu:
 
 - **Phina Le Playlist** - Gcina lokuqukethwe lokwamanje kudlala kuloophu, ungayinaki ikhalenda. Cindzetela **Khipha Playlist** ukubuyela kushedyuli
 - **Hlola Lokuqukethwe** - Shiya i-player lehlelwe ukuze uhlole bahlinzeki lababhalisiwe
-- **Tilungiselelo** - Vula tilungiselelo te-FreePlay, lapho ungakhipha khona noma uhlanganise nekhalenda lehlukile [](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Tilungiselelo** - Vula tilungiselelo te-FreePlay, lapho ungakhipha khona noma uhlanganise nekhalenda lehlukile [](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 Ukuze ubuyele kushedyuli emva kokuhlola, cindzetela **Emuva** ku-remote usuka kusikrini se-**Bahlinzeki Balokuqukethwe**, noma vula **Tilungiselelo**, khetsa **Hlanganisa nekhalenda**, bese ukhetsa **Buyela kushedyuli**. I-TV ehlanganisiwe iphindze ibuyele kuplayer lehlelwe nxa i-FreePlay ibuya ekubonakaleni, futsi njalo ivula kuplayer lehlelwe.
@@ -77,6 +78,6 @@ Ungadlala futsi ikhalenda lesikrini ku-web browser. Ku-FreePlay Admin, vula sikr
 
 ## Tihloko Letihlobene
 
-- **[Kuhlela Ikhalenda](./scheduling-the-calendar)** - Setela lokudlalwako nalokwentekako nxa kuphela ngekushesha
-- **[Kuphatha Tikrini Namaqembu](./managing-screens)** - Hlola ukulandza kwesikrini ngasinye ku-FreePlay Admin
-- **[Kudlala Lokuqukethwe](../content-providers/playing-content)** - Tilawuli te-player nxa udlala lokuqukethwe ngekwakho
+- **[Kuhlela Ikhalenda](./scheduling-the-calendar.md)** - Setela lokudlalwako nalokwentekako nxa kuphela ngekushesha
+- **[Kuphatha Tikrini Namaqembu](./managing-screens.md)** - Hlola ukulandza kwesikrini ngasinye ku-FreePlay Admin
+- **[Kudlala Lokuqukethwe](../content-providers/playing-content.md)** - Tilawuli te-player nxa udlala lokuqukethwe ngekwakho

@@ -1,5 +1,6 @@
 ---
 title: "Endpoints de Giving"
+description: "Referência da API de Doações da ChurchApps (doações, lotes, gateways, assinaturas e pagamentos), com regras de autenticação e permissão para o B1 Admin."
 ---
 
 # Endpoints de Giving
@@ -284,6 +285,6 @@ Estende `GenericCrudController` com as rotas CRUD: `getById`, `getAll`, `post`, 
 
 ## Páginas relacionadas
 
-- [Endpoints de Membership](./membership) — Pessoas, igrejas, grupos, funções e permissões
-- [Autenticação e permissões](./authentication) — Fluxo de login, JWT, OAuth, modelo de permissões
-- [Estrutura do módulo](../module-structure) — Padrões de organização do código
+- [Endpoints de Membership](./membership.md) — Pessoas, igrejas, grupos, funções e permissões
+- [Autenticação e permissões](./authentication.md) — Fluxo de login, JWT, OAuth, modelo de permissões
+- [Estrutura do módulo](../module-structure.md) — Padrões de organização do código

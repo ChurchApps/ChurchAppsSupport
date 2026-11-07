@@ -1,5 +1,7 @@
 ---
-title: "Pianificare le lezioni"
+title: "Programmare le lezioni delle aule nel portale"
+sidebar_label: "Pianificare le lezioni"
+description: "Programmare lezioni di Lessons.church nel calendario delle aule di B1 Admin: scegli programma, studio, lezione e sede per fascia d'età per ogni data."
 ---
 
 # Pianificare le lezioni

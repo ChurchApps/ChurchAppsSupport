@@ -1,5 +1,7 @@
 ---
-title: "Grupper"
+title: "Församlingsgrupper i B1.church medlemsportal"
+sidebar_label: "Grupper"
+description: "Bläddra bland och gå med i församlingsgrupper på din B1.church-webbplats, och använd sedan gruppsidor för att kontrollera möten, evenemang, medlemmar och resurser samt chatta med din grupp."
 ---
 
 # Grupper

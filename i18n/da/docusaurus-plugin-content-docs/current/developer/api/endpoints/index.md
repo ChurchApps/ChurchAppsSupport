@@ -1,5 +1,6 @@
 ---
 title: "Endpoint-reference"
+description: "Find alle ChurchApps API-endpoints efter modul, se HTTP-metoden, stien, autorisationen og tilladelsen for hver rute, og lær batch-save- og fejlkonventionerne."
 ---
 
 # Endpoint-reference
@@ -89,10 +90,10 @@ Rapportparameters sendes som query string-værdier (f.eks. `?startDate=2024-01-0
 
 | Module | Base Path | Description |
 |--------|-----------|-------------|
-| [Authentication](./authentication) | `/membership/users`, `/membership/oauth` | Login, registrering, JWT-tokens, OAuth, tilladelser |
-| [Membership](./membership) | `/membership/*` | Mennesker, kirker, grupper, husstande, roller, formularer, indstillinger |
-| [Attendance](./attendance) | `/attendance/*` | Campus, tjenester, sessioner, besøg, check-in-poster |
-| [Content](./content) | `/content/*` | Sider, prædikener, begivenheder, filer, gallerier, Bibel, streaming |
-| [Giving](./giving) | `/giving/*` | Donationer, fonde, betalings-gateways, abonnementer |
-| [Messaging](./messaging) | `/messaging/*` | Samtaler, notifikationer, enheder, SMS |
-| [Doing](./doing) | `/doing/*` | Planer, opgaver, opgaver, automatisering, planlægning |
+| [Authentication](./authentication.md) | `/membership/users`, `/membership/oauth` | Login, registrering, JWT-tokens, OAuth, tilladelser |
+| [Membership](./membership.md) | `/membership/*` | Mennesker, kirker, grupper, husstande, roller, formularer, indstillinger |
+| [Attendance](./attendance.md) | `/attendance/*` | Campus, tjenester, sessioner, besøg, check-in-poster |
+| [Content](./content.md) | `/content/*` | Sider, prædikener, begivenheder, filer, gallerier, Bibel, streaming |
+| [Giving](./giving.md) | `/giving/*` | Donationer, fonde, betalings-gateways, abonnementer |
+| [Messaging](./messaging.md) | `/messaging/*` | Samtaler, notifikationer, enheder, SMS |
+| [Doing](./doing.md) | `/doing/*` | Planer, opgaver, opgaver, automatisering, planlægning |

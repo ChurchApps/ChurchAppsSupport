@@ -1,5 +1,6 @@
 ---
 title: "Skapa ditt konto"
+description: "Registrera ett ChurchApps-konto på B1.church, verifiera din e-post och skapa eller gå med i en kyrka så att du kan börja ställa in B1 Admin."
 ---
 
 # Skapa ditt konto

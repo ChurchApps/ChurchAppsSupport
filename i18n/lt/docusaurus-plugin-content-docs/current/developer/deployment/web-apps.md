@@ -1,5 +1,6 @@
 ---
 title: "Žiniatinklio programos diegimas"
+description: "Kaip diegti ChurchApps žiniatinklio programas (pvz., B1 Admin) į Amazon S3 ir CloudFront: automatinis GitHub Actions diegimas arba rankinės komandos."
 ---
 
 # Žiniatinklio programos diegimas
@@ -13,7 +14,7 @@ ChurchApps žiniatinklio programos diegiamos kaip statinės svetainės į **Amaz
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Nustatykite žiniatinklio programą lokaliai ir įsitikinkite, kad ji sukompiliuojama -- žr. [Žiniatinklio programos](../web-apps/)
+- Nustatykite žiniatinklio programą lokaliai ir įsitikinkite, kad ji sukompiliuojama -- žr. [Žiniatinklio programos](../web-apps/index.md)
 - Sukonfigūruokite AWS prisijungimo duomenis su S3 ir CloudFront prieigos teisėmis
 - Žinokite tikslinio S3 bucket pavadinimą ir CloudFront distribucijos ID
 
@@ -53,6 +54,6 @@ Jei prieš diegimą norite lokaliai patikrinti kompiliavimą, paleiskite `npm ru
 
 ## Susiję straipsniai
 
-- **[Žiniatinklio programos](../web-apps/)** -- Sąrankos vadovai, skirti B1Admin, B1App ir LessonsApp
-- **[API diegimas](./apis)** -- Backend API diegimas
-- **[Mobiliųjų programų diegimas](./mobile)** -- Mobiliųjų programų diegimas į programėlių parduotuves
+- **[Žiniatinklio programos](../web-apps/index.md)** -- Sąrankos vadovai, skirti B1Admin, B1App ir LessonsApp
+- **[API diegimas](./apis.md)** -- Backend API diegimas
+- **[Mobiliųjų programų diegimas](./mobile.md)** -- Mobiliųjų programų diegimas į programėlių parduotuves

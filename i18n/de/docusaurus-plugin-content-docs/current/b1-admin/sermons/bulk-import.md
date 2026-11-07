@@ -1,5 +1,6 @@
 ---
 title: "Massenimport"
+description: "Predigtvideos gesammelt aus einem YouTube-Kanal oder Vimeo-Konto in B1 Admin importieren und anschließend in Playlists sortieren."
 ---
 
 # Massenimport
@@ -14,7 +15,7 @@ Auf der Seite Massenimport können Sie Ihre Predigtbibliothek schnell füllen, i
 <h4>Bevor Sie beginnen</h4>
 
 - Sie benötigen die Berechtigung **contentApi.streamingServices.edit**. Siehe [Rollen & Berechtigungen](../settings/roles-permissions.md), wenn Sie keinen Zugriff haben.
-- Legen Sie mindestens eine [Playlist](playlists) an, in die Sie Ihre Predigten importieren können
+- Legen Sie mindestens eine [Playlist](./playlists.md) an, in die Sie Ihre Predigten importieren können
 - Halten Sie Ihre YouTube-Kanal-ID bzw. Ihre Vimeo-Kontodaten bereit
 
 </div>
@@ -39,7 +40,7 @@ Bevor Sie Videos importieren, benötigen Sie mindestens eine Playlist, in die Si
 2. Klicken Sie auf **Erste Playlist erstellen** und tragen Sie Name, Beschreibung, Veröffentlichungsdatum und Vorschaubild ein.
 3. Klicken Sie auf **Speichern** und kehren Sie dann zum Massenimport zurück, indem Sie auf **Predigt hinzufügen** klicken und **Massenimport** wählen.
 
-Ausführliche Anleitungen zum Anlegen und Verwalten von Playlists finden Sie unter [Playlists](playlists).
+Ausführliche Anleitungen zum Anlegen und Verwalten von Playlists finden Sie unter [Playlists](./playlists.md).
 
 ## Videos importieren
 
@@ -54,11 +55,11 @@ Ausführliche Anleitungen zum Anlegen und Verwalten von Playlists finden Sie unt
 Ihre Videos werden mit allen Angaben übernommen, einschließlich Titeln, Beschreibungen, Datumsangaben und Vorschaubildern. Sonderzeichen in YouTube-Titeln und -Beschreibungen wie `&`, Apostrophe und Anführungszeichen werden so übernommen, wie sie geschrieben sind, und nicht als Codes wie `&amp;`.
 
 :::info
-Der Massenimport eignet sich ideal für den Start, wenn Sie von einer anderen Plattform umziehen. Um künftig einzelne Predigten hinzuzufügen, verwenden Sie stattdessen die Seite [Predigten verwalten](managing-sermons).
+Der Massenimport eignet sich ideal für den Start, wenn Sie von einer anderen Plattform umziehen. Um künftig einzelne Predigten hinzuzufügen, verwenden Sie stattdessen die Seite [Predigten verwalten](./managing-sermons.md).
 :::
 
 ## Nächste Schritte
 
-- [Predigten verwalten](managing-sermons) -- Angaben zu importierten Predigten bearbeiten
-- [Playlists](playlists) -- Predigtreihen anlegen und verwalten
-- [Live-Streaming](live-streaming) -- Live-Übertragung für Ihre Gottesdienste einrichten
+- [Predigten verwalten](./managing-sermons.md) -- Angaben zu importierten Predigten bearbeiten
+- [Playlists](./playlists.md) -- Predigtreihen anlegen und verwalten
+- [Live-Streaming](./live-streaming.md) -- Live-Übertragung für Ihre Gottesdienste einrichten

@@ -1,5 +1,6 @@
 ---
 title: "Sdílené knihovny"
+description: "Dokumentace npm balíčků @churchapps sdílených aplikacemi B1 Admin, B1.church a API, včetně nastavení pracovního prostoru Packages a vydávání přes changesets."
 ---
 
 # Sdílené knihovny
@@ -14,9 +15,9 @@ Sdílený kód ChurchApps se publikuje na npm pod oborem `@churchapps/*`. Všech
 
 | Balíček | Popis | Používá |
 |---------|-------|---------|
-| [`@churchapps/helpers`](./helpers) | Základní vrstva: pomocné funkce nezávislé na frameworku a sdílená rozhraní TypeScript, která tvoří společný datový kontrakt mezi aplikacemi | Všechny projekty |
-| [`@churchapps/apihelper`](./api-helper) | Serverové pomocné nástroje pro Express: autentizace, základní kontroléry, přístup k databázi, integrace AWS a e-mailu | Všechna API |
-| [`@churchapps/apphelper`](./app-helper) | Sdílené komponenty React a funkční moduly (přihlášení, dary, formuláře, markdown, webové stránky) | Všechny webové aplikace |
+| [`@churchapps/helpers`](./helpers.md) | Základní vrstva: pomocné funkce nezávislé na frameworku a sdílená rozhraní TypeScript, která tvoří společný datový kontrakt mezi aplikacemi | Všechny projekty |
+| [`@churchapps/apihelper`](./api-helper.md) | Serverové pomocné nástroje pro Express: autentizace, základní kontroléry, přístup k databázi, integrace AWS a e-mailu | Všechna API |
+| [`@churchapps/apphelper`](./app-helper.md) | Sdílené komponenty React a funkční moduly (přihlášení, dary, formuláře, markdown, webové stránky) | Všechny webové aplikace |
 | `@churchapps/content-providers` | Abstrakce nad poskytovateli obsahu třetích stran (Lessons.church, Planning Center, Dropbox a další) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Sada nástrojů pro vytváření integrací B1.church: ověřování webhooků, typovaný klient REST, pomocné funkce pro OAuth | Vývojáři externích integrací |
 | `@churchapps/texting` | Abstrakce poskytovatelů SMS (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

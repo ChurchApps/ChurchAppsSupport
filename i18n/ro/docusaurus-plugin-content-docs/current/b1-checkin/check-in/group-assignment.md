@@ -1,5 +1,6 @@
 ---
 title: "Atribuirea grupurilor"
+description: "Alege grupa sau clasa fiecărui membru al familiei pentru fiecare oră de slujbă în B1 Checkin, folosind categorii, ghiduri de vârstă și opțiunea None."
 ---
 
 # Atribuirea grupurilor
@@ -13,7 +14,7 @@ Când atingeți un buton de oră de serviciu de pe ecranul de revizuire a gospod
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Revizuiți gospodăria](./household-review) pe ecranul de revizuire a gospodăriei
+- [Revizuiți gospodăria](./household-review.md) pe ecranul de revizuire a gospodăriei
 - Extindeți membrul pe care doriți să îl atribuiți și atingeți un buton de oră de serviciu
 - Asigurați-vă că administratorul bisericii dumneavoastră a [creat grupuri](../../b1-admin/groups/creating-groups.md) și le-a asociat cu orele de serviciu în B1 Admin
 
@@ -34,7 +35,7 @@ Atingeți un card de categorie pentru a-l extinde și a vedea grupurile individu
 2. Verificați lista grupurilor din categoria respectivă. Fiecare grup afișează numele său, cu o pictogramă de selectare în dreapta.
 3. Atingeți **numele grupului** pe care doriți să îl atribuiți.
 
-Aplicația salvează selecția dumneavoastră și vă readuce la [ecranul de revizuire a gospodăriei](./household-review). Butonul de oră de serviciu pentru acel membru va afișa acum numele grupului selectat.
+Aplicația salvează selecția dumneavoastră și vă readuce la [ecranul de revizuire a gospodăriei](./household-review.md). Butonul de oră de serviciu pentru acel membru va afișa acum numele grupului selectat.
 
 ## Orientare după vârstă și clasă
 
@@ -52,7 +53,7 @@ Folosiți opțiunea **Niciunul** pentru adulții care participă la serviciul pr
 
 Pentru a schimba o atribuire de grup deja făcută:
 
-1. Reveniți la [ecranul de revizuire a gospodăriei](./household-review).
+1. Reveniți la [ecranul de revizuire a gospodăriei](./household-review.md).
 2. Extindeți membrul al cărui grup doriți să îl schimbați.
 3. Atingeți butonul de oră de serviciu (care afișează acum numele grupului atribuit în prezent).
 4. Selectați un alt grup sau atingeți **Niciunul**.
@@ -63,8 +64,8 @@ Grupurile și categoriile sunt configurate de administratorul bisericii dumneavo
 
 ## Pașii următori
 
-După atribuirea grupurilor, reveniți la [ecranul de revizuire a gospodăriei](./household-review) pentru a:
+După atribuirea grupurilor, reveniți la [ecranul de revizuire a gospodăriei](./household-review.md) pentru a:
 
 - Atribui grupuri unor membri suplimentari ai familiei
-- [Adăugați un oaspete](./adding-guests) dacă cineva vă vizitează împreună cu familia
-- [Finalizați înregistrarea](./completing-checkin) atunci când toate atribuirile sunt gata
+- [Adăugați un oaspete](./adding-guests.md) dacă cineva vă vizitează împreună cu familia
+- [Finalizați înregistrarea](./completing-checkin.md) atunci când toate atribuirile sunt gata

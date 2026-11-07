@@ -1,5 +1,6 @@
 ---
 title: Introduktion til B1.church
+description: "Guider dig gennem login til B1 Admin, rundt i Dashboard og Jump-menuen, og opsætning af kirkens oplysninger, før du udforsker de øvrige værktøjer."
 ---
 
 # Velkommen til B1.church Admin!
@@ -33,16 +34,16 @@ For yderligere support, email [support@churchapps.org](mailto:support@churchapps
 10. Du kan nu godkende B1.church gennem **medlems portal** eller **admin portal**. Medlemsportalen giver dig mulighed for at se hvordan B1.church ser ud for dine medlemmer, se dine grupper og administrer dine personlige donationer.
 
 :::tip
-Start med siden [Indstillinger](./settings/) for at konfigurere dit kirkenavn, branding og holdtilladelser. Dette sikrer at alt andet du opsætter vil blive vist korrekt.
+Start med siden [Indstillinger](./settings/index.md) for at konfigurere dit kirkenavn, branding og holdtilladelser. Dette sikrer at alt andet du opsætter vil blive vist korrekt.
 :::
 
 ## Næste trin
 
 Efter at have set denne introduktion, udforsker disse nøgle funktioner:
 
-- [Tilføj folk](./people/adding-people) -- Lær hvordan du tilføjer medlemmer til din database
-- [Grupper](./groups/) -- Opsætning og administrer kirkegrupper
-- [Tjenesteplaner](./serving/plans) -- Organiser dit tjeneste ministerium
-- [Tilstedeværelse](./attendance/) -- Spor tilstedeværelse og check-in
-- [Websted](./website/) -- Byg og tilpas dit kirkewebsted
-- [Indstillinger](./settings/) -- Konfigurer dine kirkeoplysninger og tilladelser
+- [Tilføj folk](./people/adding-people.md) -- Lær hvordan du tilføjer medlemmer til din database
+- [Grupper](./groups/index.md) -- Opsætning og administrer kirkegrupper
+- [Tjenesteplaner](./serving/plans.md) -- Organiser dit tjeneste ministerium
+- [Tilstedeværelse](./attendance/index.md) -- Spor tilstedeværelse og check-in
+- [Websted](./website/index.md) -- Byg og tilpas dit kirkewebsted
+- [Indstillinger](./settings/index.md) -- Konfigurer dine kirkeoplysninger og tilladelser

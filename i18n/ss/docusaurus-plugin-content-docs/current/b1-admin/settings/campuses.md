@@ -1,5 +1,6 @@
 ---
 title: "Emakhampasi"
+description: "Setela emakamu ku-B1 Admin kulandzela ngumuntfu ngamunye nelicembu ngalinye lendawo yalo, bese uhlunga bantfu, kuba khona, nemacembu ngendzawo."
 ---
 
 # Emakhampasi

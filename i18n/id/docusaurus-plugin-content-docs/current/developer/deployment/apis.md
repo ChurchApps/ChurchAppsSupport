@@ -1,5 +1,6 @@
 ---
 title: "Deployment API"
+description: "Deploy API ChurchApps ke AWS Lambda dengan Serverless, mencakup build, alur kerja demo dan produksi, migrasi basis data, dan konfigurasi SSM."
 ---
 
 # Deployment API
@@ -13,7 +14,7 @@ API ChurchApps di-deploy sebagai fungsi AWS Lambda menggunakan Serverless Framew
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Siapkan API secara lokal -- lihat [Penyiapan API Lokal](../api/local-setup)
+- Siapkan API secara lokal -- lihat [Penyiapan API Lokal](../api/local-setup.md)
 - Konfigurasikan kredensial AWS di mesin Anda
 - Pastikan Anda memiliki akses ke akun AWS tujuan
 
@@ -47,7 +48,7 @@ Dalam praktiknya, API di-deploy oleh GitHub Actions: **Deploy Demo** berjalan se
 
 ## Migrasi Database
 
-**Deploy Prod** menerapkan migrasi database yang tertunda sebagai bagian dari proses deploy. Database produksi hanya menerima koneksi dari dalam VPC, sehingga segera setelah `serverless deploy`, workflow memanggil Lambda `migrate` (`api-Prod-migrate`), yang menjalankan semua migrasi tertunda dari setiap modul dan mengembalikan `{ ok, environment, modules }`. Jika ada modul yang gagal atau ditolak (misalnya database tanpa riwayat migrasi), job akan gagal sehingga skema tidak pernah tertinggal di belakang kode. **Rollback Prod** hanya mengembalikan kode Lambda; migrasi tetap diterapkan, jadi pastikan migrasi bersifat aditif. Lihat [Server Admin -- Migrasi Database](../server-admin#database-migrations) untuk memeriksa status atau menjalankan migrasi secara manual.
+**Deploy Prod** menerapkan migrasi database yang tertunda sebagai bagian dari proses deploy. Database produksi hanya menerima koneksi dari dalam VPC, sehingga segera setelah `serverless deploy`, workflow memanggil Lambda `migrate` (`api-Prod-migrate`), yang menjalankan semua migrasi tertunda dari setiap modul dan mengembalikan `{ ok, environment, modules }`. Jika ada modul yang gagal atau ditolak (misalnya database tanpa riwayat migrasi), job akan gagal sehingga skema tidak pernah tertinggal di belakang kode. **Rollback Prod** hanya mengembalikan kode Lambda; migrasi tetap diterapkan, jadi pastikan migrasi bersifat aditif. Lihat [Server Admin -- Migrasi Database](../server-admin.md#database-migrations) untuk memeriksa status atau menjalankan migrasi secara manual.
 
 ## Apa yang Dibuat
 
@@ -75,6 +76,6 @@ Setiap merge ke `main` akan di-deploy ke lingkungan demo terlebih dahulu. Periks
 
 ## Artikel Terkait
 
-- **[Penyiapan API Lokal](../api/local-setup)** -- Menyiapkan API untuk pengembangan
-- **[Struktur Modul](../api/module-structure)** -- Memahami arsitektur fungsi Lambda
-- **[Deployment Aplikasi Web](./web-apps)** -- Men-deploy aplikasi frontend
+- **[Penyiapan API Lokal](../api/local-setup.md)** -- Menyiapkan API untuk pengembangan
+- **[Struktur Modul](../api/module-structure.md)** -- Memahami arsitektur fungsi Lambda
+- **[Deployment Aplikasi Web](./web-apps.md)** -- Men-deploy aplikasi frontend

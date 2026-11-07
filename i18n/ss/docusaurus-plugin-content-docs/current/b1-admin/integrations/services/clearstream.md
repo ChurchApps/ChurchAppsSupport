@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Xhuma i-Clearstream SMS ku-B1 Admin nge-Zapier: tfumela imilayezo ngetinikelo letintsha nemafomu, bese ubuyisa timphendvulo tebantfu ebantfwini."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Vula i-Zap. B1 ibhalisa i-webhook yemnikelo nayivulwa; utawubona `Zapier — don
 
 ## Buka Nalokunye
 
-- [Text In Church](./text-in-church) — inkundla lengashintjaniswa ye-SMS, sakhiwo lesifananako sekuchumanisa
-- [Mobile Message](./mobile-message) — yemabandla langaphandle kwe-US
-- [Zapier (kubuka konkhe)](../zapier) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Zapier
+- [Text In Church](./text-in-church.md) — inkundla lengashintjaniswa ye-SMS, sakhiwo lesifananako sekuchumanisa
+- [Mobile Message](./mobile-message.md) — yemabandla langaphandle kwe-US
+- [Zapier (kubuka konkhe)](../zapier.md) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Zapier
 - [Emaphepha e-API e-Clearstream](https://api-docs.clearstream.io/) — yekuchumanisa lokwakhelwe ngesibopho ngaphandle kwe-app ye-Zapier

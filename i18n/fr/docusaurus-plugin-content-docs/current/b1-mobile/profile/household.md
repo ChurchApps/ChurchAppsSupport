@@ -1,5 +1,6 @@
 ---
 title: "Foyer"
+description: "Voyez qui fait partie de votre foyer et comment les membres sont liés dans l’onglet Profil de B1 Mobile, dont dépendent l’enregistrement et d’autres fonctions."
 ---
 
 # Foyer
@@ -13,7 +14,7 @@ L'onglet **Foyer** sur votre écran Profil affiche les membres de votre famille.
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Installez B1 Mobile](../getting-started/installing) et [connectez-vous](../getting-started/logging-in) à votre compte
+- [Installez B1 Mobile](../getting-started/installing.md) et [connectez-vous](../getting-started/logging-in.md) à votre compte
 
 </div>
 
@@ -33,7 +34,7 @@ Les informations de votre foyer sont utilisées par plusieurs fonctionnalités d
 
 - **Enregistrement** -- Lorsque vous vous [enregistrez](../checkin/self-checkin.md) pour un culte ou un événement, vous pouvez enregistrer tout votre foyer en une seule fois au lieu d'enregistrer chaque personne individuellement.
 - **Dossiers de l'église** -- Votre église utilise les données du foyer pour organiser les dossiers familiaux et communiquer avec votre famille en tant qu'unité.
-- **Annuaire** -- D'autres membres peuvent voir les informations de votre foyer dans l'[annuaire de l'église](../community/member-directory.md), selon vos [paramètres de confidentialité](./privacy-settings).
+- **Annuaire** -- D'autres membres peuvent voir les informations de votre foyer dans l'[annuaire de l'église](../community/member-directory.md), selon vos [paramètres de confidentialité](./privacy-settings.md).
 
 ## Consulter votre foyer
 
@@ -47,10 +48,10 @@ L'appartenance au foyer est généralement gérée par l'administrateur de votre
 
 ## Garder les informations à jour
 
-Si les informations d'un membre de la famille doivent être mises à jour, il peut [modifier son propre profil](./editing-profile), ou vous pouvez contacter l'administrateur de votre église pour effectuer les modifications. Garder les informations du foyer à jour garantit que des fonctionnalités comme l'[enregistrement](../checkin/) fonctionnent correctement pour toute votre famille.
+Si les informations d'un membre de la famille doivent être mises à jour, il peut [modifier son propre profil](./editing-profile.md), ou vous pouvez contacter l'administrateur de votre église pour effectuer les modifications. Garder les informations du foyer à jour garantit que des fonctionnalités comme l'[enregistrement](../checkin/index.md) fonctionnent correctement pour toute votre famille.
 
 ## Articles connexes
 
 - [Enregistrement personnel](../checkin/self-checkin.md) -- Enregistrez les membres de votre foyer pour les cultes
-- [Modifier votre profil](./editing-profile) -- Mettez à jour vos propres informations personnelles
-- [Paramètres de confidentialité](./privacy-settings) -- Contrôlez ce que les autres peuvent voir de votre foyer
+- [Modifier votre profil](./editing-profile.md) -- Mettez à jour vos propres informations personnelles
+- [Paramètres de confidentialité](./privacy-settings.md) -- Contrôlez ce que les autres peuvent voir de votre foyer

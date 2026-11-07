@@ -1,5 +1,6 @@
 ---
 title: "Guida: Iniziare con B1 per la Tua Chiesa"
+description: "Guida alla configurazione di una nuova chiesa in B1 Admin: crea l'account, imposta le opzioni, aggiungi ruoli, importa i membri e avvia le funzioni base."
 ---
 
 # Iniziare con B1 per la Tua Chiesa

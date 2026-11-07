@@ -1,5 +1,6 @@
 ---
 title: "Guía: configurar el registro de entrada del ministerio infantil"
+description: "Configura el registro infantil en B1 Admin: vincula familias, crea grupos por edad, configura servicios e imprime etiquetas para el quiosco de B1 Checkin."
 ---
 
 # Configurar el registro de entrada del ministerio infantil

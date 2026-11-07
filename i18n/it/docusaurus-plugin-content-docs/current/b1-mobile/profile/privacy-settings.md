@@ -1,5 +1,6 @@
 ---
 title: "Impostazioni Privacy"
+description: "Scegli quali dati del profilo (telefono, email, indirizzo) gli altri membri vedono nella rubrica di B1 Mobile e controlla le modifiche in sospeso."
 ---
 
 # Impostazioni Privacy
@@ -13,7 +14,7 @@ La scheda **Visibilità** nella schermata del Profilo ti permette di controllare
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- [Installa B1 Mobile](../getting-started/installing) e [accedi](../getting-started/logging-in) al tuo account
+- [Installa B1 Mobile](../getting-started/installing.md) e [accedi](../getting-started/logging-in.md) al tuo account
 
 </div>
 
@@ -52,8 +53,8 @@ La scheda **Account** fornisce accesso alle impostazioni di sicurezza. Usa quest
 
 | Scheda | Scopo |
 |---|---|
-| **Profilo** | [Modifica le tue informazioni personali](./editing-profile) e la foto |
-| **Famiglia** | [Visualizza i membri della tua famiglia](./household) |
+| **Profilo** | [Modifica le tue informazioni personali](./editing-profile.md) e la foto |
+| **Famiglia** | [Visualizza i membri della tua famiglia](./household.md) |
 | **Visibilità** | Controlla ciò che gli altri vedono nell'elenco |
 | **In Attesa** | Rivedi le modifiche al profilo in attesa di approvazione |
 | **Account** | Gestisci le impostazioni di sicurezza |
@@ -62,6 +63,6 @@ Queste schede lavorano insieme per darti il pieno controllo sulle tue informazio
 
 ## Articoli Correlati
 
-- [Modifica del Profilo](./editing-profile) -- Aggiorna le tue informazioni personali
-- [Famiglia](./household) -- Visualizza e gestisci i membri della tua famiglia
+- [Modifica del Profilo](./editing-profile.md) -- Aggiorna le tue informazioni personali
+- [Famiglia](./household.md) -- Visualizza e gestisci i membri della tua famiglia
 - [Elenco Membri](../community/member-directory.md) -- Vedi come appare il tuo profilo agli altri

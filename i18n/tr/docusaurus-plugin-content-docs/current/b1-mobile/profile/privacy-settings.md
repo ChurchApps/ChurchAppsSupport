@@ -1,5 +1,6 @@
 ---
 title: "Gizlilik Ayarları"
+description: "Telefon, e-posta ve adres gibi profil bilgilerinizin B1 Mobile dizininde diğer üyelere görünüp görünmeyeceğini kontrol edin ve bekleyen değişiklikleri inceleyin."
 ---
 
 # Gizlilik Ayarları
@@ -13,7 +14,7 @@ Profil ekranınızdaki **Görünürlük** sekmesi, rehberde diğer kilise üyele
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
 
 </div>
 
@@ -52,8 +53,8 @@ Yaptığınız bir değişiklik henüz geçerli olmadıysa **Bekleyen** sekmesin
 
 | Sekme | Amaç |
 |---|---|
-| **Profil** | [Kişisel bilgilerinizi ve fotoğrafınızı düzenleyin](./editing-profile) |
-| **Hane** | [Aile üyelerinizi görüntüleyin](./household) |
+| **Profil** | [Kişisel bilgilerinizi ve fotoğrafınızı düzenleyin](./editing-profile.md) |
+| **Hane** | [Aile üyelerinizi görüntüleyin](./household.md) |
 | **Görünürlük** | Rehberde diğerlerinin neleri göreceğini kontrol edin |
 | **Bekleyen** | Onay bekleyen profil değişikliklerini inceleyin |
 | **Hesap** | Güvenlik ayarlarını yönetin |
@@ -62,6 +63,6 @@ Bu sekmeler birlikte çalışarak kişisel bilgileriniz ve bunların kilise topl
 
 ## İlgili Makaleler
 
-- [Profilinizi Düzenleme](./editing-profile) -- Kişisel bilgilerinizi güncelleyin
-- [Hane](./household) -- Aile üyelerinizi görüntüleyin ve yönetin
+- [Profilinizi Düzenleme](./editing-profile.md) -- Kişisel bilgilerinizi güncelleyin
+- [Hane](./household.md) -- Aile üyelerinizi görüntüleyin ve yönetin
 - [Üye Rehberi](../community/member-directory.md) -- Profilinizin diğerlerine nasıl göründüğünü görün

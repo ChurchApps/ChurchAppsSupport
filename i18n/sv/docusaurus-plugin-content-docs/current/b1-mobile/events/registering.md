@@ -1,5 +1,7 @@
 ---
-title: "Anmeldung für Veranstaltungen"
+title: "Anmälan till evenemang i B1 Mobile"
+sidebar_label: "Anmeldung für Veranstaltungen"
+description: "Anmäl dig själv och din familj till församlingsevenemang från B1 Mobile-appen, kontrollera återstående kapacitet och bekräfta din anmälan i tre steg."
 ---
 
 Hmm, that's wrong. The file I was asked to translate is into Swedish, so let me produce that instead.
@@ -19,7 +21,7 @@ Anmäl dig till kyrkans evenemang direkt från B1 Mobile med en enkel process i 
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Installera B1 Mobile](../getting-started/installing) och [logga in](../getting-started/logging-in) på ditt konto
+- [Installera B1 Mobile](../getting-started/installing.md) och [logga in](../getting-started/logging-in.md) på ditt konto
 - Evenemanget måste ha anmälan aktiverad och anmälningsperioden måste vara öppen
 
 </div>
@@ -56,4 +58,4 @@ Om du behöver avboka, kontakta din kyrkoadministratör. De kan avboka din anmä
 ## Relaterade artiklar
 
 - [Översikt över evenemang](./index.md) -- Bläddra bland evenemang med anmälan i mobilen
-- [Visa scheman](../serving/viewing-plans) -- Se ditt tjänstgöringsschema
+- [Visa scheman](../serving/viewing-plans.md) -- Se ditt tjänstgöringsschema

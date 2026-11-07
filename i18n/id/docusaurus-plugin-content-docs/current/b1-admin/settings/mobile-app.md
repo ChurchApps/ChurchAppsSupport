@@ -1,5 +1,6 @@
 ---
 title: "Pengaturan Aplikasi Seluler"
+description: "Atur tab navigasi, ubin Beranda, perintah masuk, dan privasi direktori anggota untuk aplikasi member B1.church di B1 Admin."
 ---
 
 # Pengaturan Aplikasi Seluler

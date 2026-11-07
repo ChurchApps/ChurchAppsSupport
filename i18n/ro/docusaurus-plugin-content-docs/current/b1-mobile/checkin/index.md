@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Check-in la biserică folosind aplicația B1 Mobile"
+sidebar_label: "Check-In"
+description: "Efectuați check-in pentru dvs. și gospodăria dvs. la slujbele bisericii de pe telefon, în B1 Mobile, alegând slujbele și grupurile înainte de sosire."
 ---
 
 # Check-In
@@ -16,7 +18,7 @@ Procesul de check-in este un flux rapid, în mai mulți pași, care vă ghideaz�
 
 ## Primii pași
 
-Pentru a accesa check-in-ul, deschideți secțiunea **Check-In** din B1 Mobile. Trebuie să fiți autentificat pentru a folosi această funcție. Dacă nu sunteți conectat, vi se va cere mai întâi să vă [autentificați](../getting-started/logging-in).
+Pentru a accesa check-in-ul, deschideți secțiunea **Check-In** din B1 Mobile. Trebuie să fiți autentificat pentru a folosi această funcție. Dacă nu sunteți conectat, vi se va cere mai întâi să vă [autentificați](../getting-started/logging-in.md).
 
 :::info
 Funcția de check-in necesită ca biserica dumneavoastră să fi configurat serviciile și grupurile de prezență din setările de administrare. Dacă nu apare niciun serviciu când deschideți ecranul de check-in, este posibil ca biserica să nu fi configurat încă această funcție. Contactați administratorul bisericii pentru ajutor.
@@ -30,4 +32,4 @@ Funcția de check-in necesită ca biserica dumneavoastră să fi configurat serv
 
 ## Pașii următori
 
-- [Check-in-ul personal](./self-checkin) -- Ghid pas cu pas pentru a vă face check-in de pe telefon
+- [Check-in-ul personal](./self-checkin.md) -- Ghid pas cu pas pentru a vă face check-in de pe telefon

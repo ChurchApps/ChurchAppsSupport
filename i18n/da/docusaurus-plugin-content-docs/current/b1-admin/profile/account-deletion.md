@@ -1,5 +1,6 @@
 ---
 title: "Gennemgang af anmodninger om sletning af konto"
+description: "Godkend eller afvis medlemmers anmodninger om kontosletning i B1 Admin, send dem via Directory Approval Group og overhold GDPR-fristen på 30 dage."
 ---
 
 # Gennemgang af anmodninger om sletning af konto

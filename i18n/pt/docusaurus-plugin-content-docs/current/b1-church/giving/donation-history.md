@@ -1,5 +1,7 @@
 ---
-title: "Histórico de doações"
+title: "Histórico de Doações e Extratos no B1.church"
+sidebar_label: "Histórico de doações"
+description: "Veja suas doações anteriores, filtre por ano e imprima extratos de contribuições para o imposto de renda na página Giving do portal do B1.church."
 ---
 
 # Histórico de doações

@@ -1,5 +1,6 @@
 ---
 title: "Caddy-proxy til egne domæner"
+description: "Byg og kør Caddy-reverse-proxyen, der serverer egne kirkedomæner til B1.church-sites, med TLS-certifikater, værtsmapping og kendte faldgruber."
 ---
 
 # Caddy-proxy til egne domæner
@@ -10,7 +11,7 @@ Kirkers egne domæner (`mychurch.org` → kirkens B1-hjemmeside) afsluttes på e
 
 </div>
 
-Se [Websiteroutning og multi-site](../architecture/websites), for hvordan en anmodning finder frem til kirke og side i B1App, når den først er nået frem dertil.
+Se [Websiteroutning og multi-site](../architecture/websites.md), for hvordan en anmodning finder frem til kirke og side i B1App, når den først er nået frem dertil.
 
 ## Komponenter
 
@@ -88,5 +89,5 @@ Admin-API'et binder kun til `localhost:2019`. Den ældre runtime-tilstand ekspon
 
 ## Relaterede sider
 
-- [Websiteroutning og multi-site](../architecture/websites). Hvordan den proxiede anmodning finder frem til kirke og side i B1App
-- [API-udrulning](./apis). Udrulning af Membership API'et, der leverer `authorize`/`hostmap`
+- [Websiteroutning og multi-site](../architecture/websites.md). Hvordan den proxiede anmodning finder frem til kirke og side i B1App
+- [API-udrulning](./apis.md). Udrulning af Membership API'et, der leverer `authorize`/`hostmap`

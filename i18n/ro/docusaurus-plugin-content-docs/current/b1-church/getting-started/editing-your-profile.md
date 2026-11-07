@@ -1,5 +1,7 @@
 ---
-title: "Editarea profilului tău"
+title: "Editarea profilului în portalul B1.church"
+sidebar_label: "Editarea profilului tău"
+description: "Actualizează datele de contact, membrii gospodăriei, emailul și parola de conectare și setările de confidențialitate în portalul de membri B1.church."
 ---
 
 # Editarea profilului tău

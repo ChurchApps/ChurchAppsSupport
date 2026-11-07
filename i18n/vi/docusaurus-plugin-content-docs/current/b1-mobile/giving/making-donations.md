@@ -1,5 +1,7 @@
 ---
-title: "Thanh toán tiền quyên góp"
+title: "Quyên góp trong B1 Mobile"
+sidebar_label: "Thanh toán tiền quyên góp"
+description: "Quyên góp cho nhà thờ từ tab Quyên góp trong B1 Mobile: chọn quỹ, nhập số tiền, thanh toán qua Stripe, và lặp lại khoản cũ nhanh chóng."
 ---
 
 # Thanh toán tiền quyên góp
@@ -13,8 +15,8 @@ Quyên góp qua B1 Mobile nhanh chóng và đơn giản. Tab **Donate** trong m�
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
-- Chuẩn bị sẵn thẻ tín dụng hoặc thẻ ghi nợ, hoặc [lưu phương thức thanh toán](./managing-payments) trước
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
+- Chuẩn bị sẵn thẻ tín dụng hoặc thẻ ghi nợ, hoặc [lưu phương thức thanh toán](./managing-payments.md) trước
 
 </div>
 
@@ -42,10 +44,10 @@ Hãy kiểm tra kỹ số tiền và quỹ trước khi gửi. Các khoản quy�
 Nếu bạn muốn quyên góp cùng số tiền với lần quyên góp gần nhất, bạn không cần phải đi qua toàn bộ quy trình. Tab **Overview** hiển thị khoản quyên góp gần nhất của bạn cùng với nút **Repeat**. Nhấn vào nút này để nhanh chóng gửi lại cùng khoản quyên góp.
 
 :::tip
-Nếu bạn dự định quyên góp thường xuyên, hãy lưu phương thức thanh toán trong tab **Manage** để lần sau bạn có thể quyên góp nhanh hơn nữa. Xem [Quản lý phương thức thanh toán](./managing-payments) để biết chi tiết.
+Nếu bạn dự định quyên góp thường xuyên, hãy lưu phương thức thanh toán trong tab **Manage** để lần sau bạn có thể quyên góp nhanh hơn nữa. Xem [Quản lý phương thức thanh toán](./managing-payments.md) để biết chi tiết.
 :::
 
 ## Bài viết liên quan
 
-- [Quản lý phương thức thanh toán](./managing-payments) -- Lưu thẻ để quyên góp nhanh hơn trong tương lai
-- [Lịch sử quyên góp](./donation-history) -- Xem tổng quan và các khoản quyên góp đã thực hiện
+- [Quản lý phương thức thanh toán](./managing-payments.md) -- Lưu thẻ để quyên góp nhanh hơn trong tương lai
+- [Lịch sử quyên góp](./donation-history.md) -- Xem tổng quan và các khoản quyên góp đã thực hiện

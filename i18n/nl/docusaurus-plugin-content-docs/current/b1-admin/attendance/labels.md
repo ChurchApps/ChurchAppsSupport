@@ -1,5 +1,6 @@
 ---
 title: "Labelontwerper voor check-in"
+description: "Pas de sjablonen voor naamstickers en ophaalbonnen aan in B1 Admin, met velden, positionering en voorwaarden voor verjaardag of notities."
 ---
 
 # Labelontwerper voor check-in
@@ -13,8 +14,8 @@ Met de Labelontwerper maak en pas je de naamlabels en ophaalbonnetjes aan die wo
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- Stel [Aanwezigheid](setup) in en configureer minstens één dienst met ingeschakelde check-in
-- Stel [Check-in](check-in) in zodat er labels worden afgedrukt
+- Stel [Aanwezigheid](./setup.md) in en configureer minstens één dienst met ingeschakelde check-in
+- Stel [Check-in](./check-in.md) in zodat er labels worden afgedrukt
 - Je hebt beheerderstoegang nodig tot het gedeelte Aanwezigheid
 
 </div>
@@ -85,6 +86,6 @@ Maak na het bewerken van een sjabloon een testafdruk om te controleren of de lay
 
 ## Gerelateerde artikelen
 
-- [Check-in instellen](setup) — diensten en groepen voor check-in configureren
-- [Check-in afronden](check-in) — de check-inprocedure voor gezinnen
-- [B1 Checkin aan de slag](../../b1-checkin/getting-started/) — de Checkin-kioskapp
+- [Check-in instellen](./setup.md) — diensten en groepen voor check-in configureren
+- [Check-in afronden](./check-in.md) — de check-inprocedure voor gezinnen
+- [B1 Checkin aan de slag](../../b1-checkin/getting-started/index.md) — de Checkin-kioskapp

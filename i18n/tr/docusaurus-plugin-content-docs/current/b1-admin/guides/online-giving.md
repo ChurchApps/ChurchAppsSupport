@@ -1,5 +1,6 @@
 ---
 title: "Kılavuz: Çevrimiçi Bağış Ayarlama"
+description: "B1 Admin'de çevrimiçi bağış kurun: bağış fonları oluşturun, Stripe'ı bağlayın ve üyeler için B1.church web sitenize Bağış sayfası ekleyin."
 ---
 
 # Çevrimiçi Bağış Ayarlama
@@ -70,7 +71,7 @@ Gerçek ücret almadan doğrulamak istiyorsanız önce Stripe'ın test modunu ku
 Üyelerin çevrimiçi bağış yapabileceğini bilmeleri için duyurun.
 
 1. Bağış adresini web siteniz, e-posta bültenleriniz, ibadet bültenleriniz ve sosyal medya hesaplarınız üzerinden paylaşın
-2. Üyeler ayrıca [B1 Mobile uygulaması](../../b1-mobile/giving/) üzerinden bağış yapabilir — bağış özelliği uygulamaya dahildir
+2. Üyeler ayrıca [B1 Mobile uygulaması](../../b1-mobile/giving/index.md) üzerinden bağış yapabilir — bağış özelliği uygulamaya dahildir
 
 :::info
 Giriş yapan üyeler ödeme yöntemlerini kaydedebilir, düzenli bağışlar ayarlayabilir ve bağış geçmişlerini görüntüleyebilir. Anonim bağış da yapılabilir — giriş yapmak gerekmez.

@@ -1,5 +1,6 @@
 ---
 title: "Moje registrácie"
+description: "Skontrolujte stav registrácie, zaplaťte nedoplatok, upravte účastníkov alebo doplnky, či zrušte prihlásenie na udalosť v členskom portáli B1 Church."
 ---
 
 # Moje registrácie
@@ -14,7 +15,7 @@ Stránka **Registrácie** v členskom portáli je vaším centrom pre všetky po
 <h4>Predtým, ako začnete</h4>
 
 - Musíte byť [prihlásení](../getting-started/logging-in.md) — registrácie hostí sa tu nezobrazujú
-- Potrebujete aspoň jednu registráciu na podujatie. Pozrite si [Registrácia na podujatia](./registering).
+- Potrebujete aspoň jednu registráciu na podujatie. Pozrite si [Registrácia na podujatia](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Vaše miesto sa okamžite uvoľní. Ak má podujatie čakaciu listinu, ďalšia 
 
 ## Súvisiace články
 
-- [Registrácia na podujatia](./registering) -- Proces prihlásenia vrátane platby a čakacích listín
+- [Registrácia na podujatia](./registering.md) -- Proces prihlásenia vrátane platby a čakacích listín
 - [Prehľad podujatí](./index.md) -- Prehliadnite si nadchádzajúce podujatia

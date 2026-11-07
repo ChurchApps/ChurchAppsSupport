@@ -1,5 +1,6 @@
 ---
 title: "Download e materiali"
+description: "Trovare e scaricare schede attività stampabili, guide per i leader e PDF allegati alle lezioni, agli studi o ai programmi di Lessons.church per la tua classe."
 ---
 
 # Download e materiali

@@ -1,5 +1,6 @@
 ---
 title: "Formulare"
+description: "Găsiți, filtrați, editați, arhivați și restaurați formularele personalizate în B1 Admin, plus unde setați membrii formularului și revizuiți trimiterile."
 ---
 
 # Formulare

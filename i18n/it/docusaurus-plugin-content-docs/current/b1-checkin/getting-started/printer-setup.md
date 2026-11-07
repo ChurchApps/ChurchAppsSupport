@@ -1,5 +1,6 @@
 ---
 title: "Configurazione della stampante"
+description: "Configura una stampante di etichette di rete per i chioschi B1 Checkin: trovala sulla tua Wi-Fi, selezionala, esegui una stampa di prova e salva la scelta."
 ---
 
 # Configurazione della stampante
@@ -13,7 +14,7 @@ B1 Church Checkin può stampare etichette con i nomi e tagliandi di ritiro per i
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- [Accedi](./logging-in) all'app B1 Church Checkin e seleziona la tua chiesa
+- [Accedi](./logging-in.md) all'app B1 Church Checkin e seleziona la tua chiesa
 - Collega una stampante di etichette di rete compatibile alla stessa rete Wi-Fi del tablet
 
 </div>
@@ -87,4 +88,4 @@ Se sposti il chiosco in un'altra posizione o modifichi la configurazione della r
 
 ## Passaggi successivi
 
-Con la stampante configurata, sei pronto a iniziare con i check-in. Consulta il [flusso di lavoro del check-in](../check-in/) per capire come funziona l'intero processo, a partire da [selezione di un culto](../check-in/selecting-service).
+Con la stampante configurata, sei pronto a iniziare con i check-in. Consulta il [flusso di lavoro del check-in](../check-in/index.md) per capire come funziona l'intero processo, a partire da [selezione di un culto](../check-in/selecting-service.md).

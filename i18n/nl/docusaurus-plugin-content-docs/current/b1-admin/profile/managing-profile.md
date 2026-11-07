@@ -1,5 +1,6 @@
 ---
 title: "Uw profiel beheren"
+description: "Werk je ChurchApps-account bij in B1 Admin: wijzig naam, e-mail en wachtwoord, schakel tweefactorauthenticatie in, kies een thema of verwijder je account."
 ---
 
 # Uw profiel beheren

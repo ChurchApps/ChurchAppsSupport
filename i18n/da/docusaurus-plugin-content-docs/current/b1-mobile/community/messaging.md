@@ -1,5 +1,6 @@
 ---
 title: "Messaging"
+description: "Start, læs, rediger og slet private en-til-en-samtaler med kirkens medlemmer i B1 Mobile, og find personer via medlemskataloget."
 ---
 
 # Messaging
@@ -13,7 +14,7 @@ B1 Mobile omfatter private meddelelser, så du kan have en-til-en samtaler med a
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [log ind](../getting-started/logging-in) på din konto
+- [Installer B1 Mobile](../getting-started/installing.md) og [log ind](../getting-started/logging-in.md) på din konto
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile omfatter private meddelelser, så du kan have en-til-en samtaler med a
 ## Start en ny samtale
 
 1. Fra messaging-skærmen skal du trykke på muligheden for at starte en ny samtale.
-2. Brug søgefeltet til at finde medlemmet, du vil beskedte til. Du kan også finde medlemmer gennem [medlemsmappen](./member-directory).
+2. Brug søgefeltet til at finde medlemmet, du vil beskedte til. Du kan også finde medlemmer gennem [medlemsmappen](./member-directory.md).
 3. Vælg medlemmet fra søgeresultaterne.
 4. Skriv din meddelelse, og tryk **Send**.
 
@@ -48,11 +49,11 @@ Brug messaging til at koordinere med medfrevillige, følg op med nogen du mødte
 :::
 
 :::info
-Aktivér [push-meddelelser](./notifications) for at blive gjort opmærksom på, når nogen sender dig en ny meddelelse, selv når appen ikke er åben.
+Aktivér [push-meddelelser](./notifications.md) for at blive gjort opmærksom på, når nogen sender dig en ny meddelelse, selv når appen ikke er åben.
 :::
 
 ## Relaterede artikler
 
-- [Medlemsmappe](./member-directory) -- Find medlemmer at beskedte til
-- [Meddelelser](./notifications) -- Få besked om nye meddelelser
-- [Grupper](../groups/) -- Deltag i gruppediskussioner
+- [Medlemsmappe](./member-directory.md) -- Find medlemmer at beskedte til
+- [Meddelelser](./notifications.md) -- Få besked om nye meddelelser
+- [Grupper](../groups/index.md) -- Deltag i gruppediskussioner

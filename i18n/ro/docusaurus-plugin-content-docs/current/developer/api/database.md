@@ -1,5 +1,6 @@
 ---
 title: "Baza de date"
+description: "Aflați cum API-ul ChurchApps împarte datele între șase baze de date MySQL, câte una pentru fiecare modul, și cum să configurați și să inițializați conexiunile."
 ---
 
 # Baza de date
@@ -13,8 +14,8 @@ API-ul ChurchApps folosește o arhitectură **o bază de date per modul**. Fieca
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Instalați **MySQL 8.0+** -- vezi [Cerințe preliminare](../setup/prerequisites)
-- Configurați șirurile de conexiune la baza de date în fișierul `.env` -- vezi [Variabile de mediu](../setup/environment-variables)
+- Instalați **MySQL 8.0+** -- vezi [Cerințe preliminare](../setup/prerequisites.md)
+- Configurați șirurile de conexiune la baza de date în fișierul `.env` -- vezi [Variabile de mediu](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Decizii cheie de proiectare
 
 - **O bază de date per modul** -- Fiecare modul își gestionează propria bază de date MySQL, cu un pool de conexiuni dedicat (administrat de `KyselyPool`). Acest lucru menține modulele decuplate și permite evoluția independentă a schemei.
-- **Proprietate exclusivă** -- Tabelele unui modul sunt citite și scrise doar de codul acelui modul. Atunci când un alt modul are nevoie de date, apelează gateway-ul modulului proprietar, în loc să interogheze direct tabelele -- vezi [Comunicarea între module](./module-structure#cross-module-communication).
+- **Proprietate exclusivă** -- Tabelele unui modul sunt citite și scrise doar de codul acelui modul. Atunci când un alt modul are nevoie de date, apelează gateway-ul modulului proprietar, în loc să interogheze direct tabelele -- vezi [Comunicarea între module](./module-structure.md#cross-module-communication).
 - **Modelul repository fără ORM** -- Tot accesul la date trece prin clase repository care construiesc interogări SQL tipizate, folosind constructorul de interogări Kysely, pe schema modulului. Acest lucru oferă control deplin asupra performanței și comportamentului interogărilor.
 - **Multi-tenant prin design** -- Fiecare interogare este limitată la `churchId`. Toate tabelele includ o coloană `churchId`, iar stratul de repository impune automat izolarea între tenanți.
 
@@ -129,5 +130,5 @@ Această constrângere face ca limitele modulelor să fie reale: fiecare schemă
 
 ## Articole conexe
 
-- **[Structura modulelor](./module-structure)** -- Cum sunt organizate controllerele și repository-urile în fiecare modul
-- **[Configurarea locală a API-ului](./local-setup)** -- Ghid complet, pas cu pas, de configurare
+- **[Structura modulelor](./module-structure.md)** -- Cum sunt organizate controllerele și repository-urile în fiecare modul
+- **[Configurarea locală a API-ului](./local-setup.md)** -- Ghid complet, pas cu pas, de configurare

@@ -1,5 +1,6 @@
 ---
 title: "Saída e Segurança da Criança"
+description: "Faça o check-out de crianças em uma estação do B1 Checkin com códigos de segurança, responsáveis verificados e reimpressão de etiquetas."
 ---
 
 # Saída e Segurança da Criança
@@ -14,7 +15,7 @@ Check-out fecha o ciclo de check-in infantil: um pai apresenta o código de segu
 <h4>Antes de Começar</h4>
 
 - Check-out está disponível em estações definidas para modo **manned** nas configurações de admin do quiosque
-- As crianças devem ter sido [checked in](./completing-checkin) com um rótulo de retirada impresso carregando o código de segurança
+- As crianças devem ter sido [checked in](./completing-checkin.md) com um rótulo de retirada impresso carregando o código de segurança
 - Paging e transmissões de emergência requerem que sua igreja tenha um provedor de textos conectado no B1 Admin
 
 </div>
@@ -39,7 +40,7 @@ Se um nome digitado corresponder a alguém marcado como **Not Authorized** para 
 Uma vez que o quem está retirando é confirmado, toque em check out. O nome da pessoa de retirada é armazenado com o registro de comparecimento.
 
 :::info
-Pessoas confiáveis de retirada e não autorizadas são gerenciadas pela equipe da igreja na página de cada pessoa no B1 Admin -- consulte [Check-In Safety](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Pessoas confiáveis de retirada e não autorizadas são gerenciadas pela equipe da igreja na página de cada pessoa no B1 Admin -- consulte [Check-In Safety](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Paging de um Pai
@@ -65,6 +66,6 @@ A transmissão vai para toda família de check-in para o serviço selecionado. U
 
 ## Artigos Relacionados
 
-- [Completing Check-In](./completing-checkin) — de onde códigos de segurança e rótulos de retirada vêm
-- [Check-In Safety](../../b1-admin/attendance/checkin-safety) -- configurando capacidades, proporções, pessoas de retirada e o requisito de provedor de textos
-- [Printer Setup](../getting-started/printer-setup) -- configuração de impressora de rótulo
+- [Completing Check-In](./completing-checkin.md) — de onde códigos de segurança e rótulos de retirada vêm
+- [Check-In Safety](../../b1-admin/attendance/checkin-safety.md) -- configurando capacidades, proporções, pessoas de retirada e o requisito de provedor de textos
+- [Printer Setup](../getting-started/printer-setup.md) -- configuração de impressora de rótulo

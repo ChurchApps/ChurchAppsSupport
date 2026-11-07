@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "Thiết lập trình soạn bài học LessonsApp (Next.js) cục bộ với Node.js 22+, trỏ tới LessonsApi cục bộ, và tìm hiểu build cùng triển khai S3/CloudFront."
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ LessonsApp là ứng dụng quản lý nội dung bài học cho [Lessons.church
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Cài đặt **Node.js 22+** và **Git** -- xem [Yêu cầu tiên quyết](../setup/prerequisites)
-- Cấu hình đích API của bạn (LessonsApi cục bộ) -- xem [Biến môi trường](../setup/environment-variables)
+- Cài đặt **Node.js 22+** và **Git** -- xem [Yêu cầu tiên quyết](../setup/prerequisites.md)
+- Cấu hình đích API của bạn (LessonsApi cục bộ) -- xem [Biến môi trường](../setup/environment-variables.md)
 
 </div>
 
@@ -81,5 +82,5 @@ Các bản build production được triển khai lên **S3 + CloudFront**:
 3. Kích hoạt invalidation CloudFront để phục vụ phiên bản mới
 
 :::tip
-Để xem hướng dẫn triển khai chi tiết, hãy xem hướng dẫn [Triển khai ứng dụng web](../deployment/web-apps).
+Để xem hướng dẫn triển khai chi tiết, hãy xem hướng dẫn [Triển khai ứng dụng web](../deployment/web-apps.md).
 :::

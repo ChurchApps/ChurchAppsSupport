@@ -1,5 +1,6 @@
 ---
 title: "Namestitev aplikacije"
+description: "Namestite aplikacijo B1 Mobile iz App Store ali Google Play, vendar upoštevajte, da je opuščena in je zdaj priporočen spletni PWA B1.church."
 ---
 
 # Namestitev aplikacije
@@ -25,7 +26,7 @@ B1 Mobile je na voljo za naprave iOS in Android. Aplikacija je brezplačna za pr
 
 ## Po namestitvi
 
-Ko je aplikacija nameščena, jo odprite z začetnega zaslona. Prikaže se zaslon za iskanje cerkve, kjer lahko poiščete in izberete svojo cerkev. Če že imate račun ChurchApps, se lahko takoj [prijavite](./logging-in). Če računa še nimate, ga lahko ustvarite na prijavnem zaslonu.
+Ko je aplikacija nameščena, jo odprite z začetnega zaslona. Prikaže se zaslon za iskanje cerkve, kjer lahko poiščete in izberete svojo cerkev. Če že imate račun ChurchApps, se lahko takoj [prijavite](./logging-in.md). Če računa še nimate, ga lahko ustvarite na prijavnem zaslonu.
 
 Aplikacija bo zahtevala dovoljenje za pošiljanje potisnih obvestil. Priporočamo, da jih dovolite, da boste lahko prejemali posodobitve od cerkve in skupin.
 

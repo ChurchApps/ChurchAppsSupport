@@ -1,5 +1,6 @@
 ---
 title: "Sicurezza del Check-In"
+description: "Configura in B1 Admin i controlli di sicurezza per i minori: capienza delle sale, rapporto volontari, elenchi di ritiro autorizzati e SMS ai genitori."
 ---
 
 # Sicurezza del Check-In
@@ -15,7 +16,7 @@ B1 include una serie di controlli di sicurezza per i bambini per il check-in: li
 
 - Configurate la vostra [struttura di presenze](setup.md) e i vostri [chioschi di check-in](check-in.md)
 - Le stanze sono [gruppi](../groups/creating-groups.md) collegati agli orari dei servizi — le impostazioni di sicurezza di seguito si trovano sul gruppo
-- Page-a-parent e emergency broadcast richiedono un provider di messaggistica connesso ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), o Mutual Ministry)
+- Page-a-parent e emergency broadcast richiedono un provider di messaggistica connesso ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md), o Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Entrambe le funzioni inviano messaggi di testo attraverso il provider di messagg
 
 Le persone che hanno rinunciato ai messaggi di testo, o che non hanno un numero di cellulare in archivio, vengono saltate automaticamente -- il chiosco segnala quanti messaggi sono stati inviati e quanti sono stati saltati.
 
-Vedere la procedura dettagliata dal lato del chiosco in [Check-Out e sicurezza dei bambini](../../b1-checkin/check-in/checking-out).
+Vedere la procedura dettagliata dal lato del chiosco in [Check-Out e sicurezza dei bambini](../../b1-checkin/check-in/checking-out.md).
 
 ## Articoli correlati
 
 - [Check-In](check-in.md) — configurazione del chiosco e hardware
-- [Check-Out e sicurezza dei bambini](../../b1-checkin/check-in/checking-out) — il check-out del chiosco, verifica del ritiro, e flussi di paging
+- [Check-Out e sicurezza dei bambini](../../b1-checkin/check-in/checking-out.md) — il check-out del chiosco, verifica del ritiro, e flussi di paging
 - [Creazione di gruppi](../groups/creating-groups.md) — dove si trovano le impostazioni della stanza
 - [Configurazione delle presenze](setup.md) — servizi, orari dei servizi, e assegnazioni della stanza
 - [Età minima per messaggi privati](../settings/mobile-app.md#member-directory--messaging-settings) — blocca le nuove conversazioni di messaggi privati con i bambini mantenendoli nella directory

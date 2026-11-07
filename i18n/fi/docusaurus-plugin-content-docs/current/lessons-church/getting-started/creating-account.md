@@ -1,5 +1,6 @@
 ---
 title: "Tilin luominen"
+description: "Rekisteröi ChurchApps-tili Lessons.churchissa ja yhdistä se uuteen tai olemassa olevaan seurakuntaprofiiliin, jotta voit hallita luokkahuoneita ja aikatauluja."
 ---
 
 # Tilin luominen

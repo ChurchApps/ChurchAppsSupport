@@ -1,5 +1,7 @@
 ---
-title: "Enregistrement"
+title: "Enregistrement à l’église avec l’application B1 Mobile"
+sidebar_label: "Enregistrement"
+description: "Enregistrez-vous, vous et votre foyer, aux services de l’église depuis votre téléphone dans B1 Mobile, en choisissant services et groupes avant d’arriver."
 ---
 
 # Enregistrement
@@ -16,7 +18,7 @@ Le processus d'enregistrement est un flux rapide en plusieurs étapes qui vous g
 
 ## Pour commencer
 
-Pour accéder à l'enregistrement, ouvrez la section **Enregistrement** dans B1 Mobile. Vous devez être connecté pour utiliser cette fonctionnalité. Si vous n'êtes pas connecté, vous serez invité à vous [connecter](../getting-started/logging-in) au préalable.
+Pour accéder à l'enregistrement, ouvrez la section **Enregistrement** dans B1 Mobile. Vous devez être connecté pour utiliser cette fonctionnalité. Si vous n'êtes pas connecté, vous serez invité à vous [connecter](../getting-started/logging-in.md) au préalable.
 
 :::info
 La fonctionnalité d'enregistrement nécessite que votre église ait configuré des cultes et des groupes de présence dans ses paramètres d'administration. Si aucun culte n'apparaît lorsque vous ouvrez l'écran d'enregistrement, il se peut que votre église n'ait pas encore configuré cette fonctionnalité. Contactez l'administrateur de votre église pour obtenir de l'aide.
@@ -30,4 +32,4 @@ La fonctionnalité d'enregistrement nécessite que votre église ait configuré 
 
 ## Prochaines étapes
 
-- [Enregistrement personnel](./self-checkin) -- Guide étape par étape pour vous enregistrer depuis votre téléphone
+- [Enregistrement personnel](./self-checkin.md) -- Guide étape par étape pour vous enregistrer depuis votre téléphone

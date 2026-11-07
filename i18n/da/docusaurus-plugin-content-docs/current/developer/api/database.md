@@ -1,5 +1,6 @@
 ---
 title: "Database"
+description: "Lær hvordan ChurchApps API fordeler data på seks MySQL-databaser, én pr. modul, og hvordan du konfigurerer og initialiserer forbindelserne."
 ---
 
 # Database
@@ -13,8 +14,8 @@ ChurchApps API'en bruger en **database-pr-modul** arkitektur. Hver af de seks mo
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Installer **MySQL 8.0+** -- se [Forudsætninger](../setup/prerequisites)
-- Konfigurer database forbindelsesstrenge i din `.env` fil -- se [Miljøvariabler](../setup/environment-variables)
+- Installer **MySQL 8.0+** -- se [Forudsætninger](../setup/prerequisites.md)
+- Konfigurer database forbindelsesstrenge i din `.env` fil -- se [Miljøvariabler](../setup/environment-variables.md)
 
 </div>
 
@@ -123,5 +124,5 @@ Medtag altid `churchId` i dine forespørgsler for at opretholde multi-tenant iso
 
 ## Relaterede artikler
 
-- **[Modul struktur](./module-structure)** -- Hvordan kontrollere og lagere er organiseret inden for hvert modul
-- **[Lokal API opsætning](./local-setup)** -- Kør API'en lokalt til udvikling
+- **[Modul struktur](./module-structure.md)** -- Hvordan kontrollere og lagere er organiseret inden for hvert modul
+- **[Lokal API opsætning](./local-setup.md)** -- Kør API'en lokalt til udvikling

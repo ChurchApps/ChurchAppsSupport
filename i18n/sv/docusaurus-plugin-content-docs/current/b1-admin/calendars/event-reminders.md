@@ -1,21 +1,22 @@
 ---
 title: "Påminnelser om evenemang"
+description: "Ställ in påminnelser om händelser i B1 Admin via push, e-post och sms. Välj tidpunkt, mottagare och eget meddelande så att folk får besked i tid."
 ---
 
 # Påminnelser om evenemang
 
 <div class="article-intro">
 
-Påminnelser om evenemang skickar automatiskt ut meddelanden till rätt personer innan ett evenemang börjar, till exempel "Missa inte! Hälsoworkshopen börjar imorgon kl. 09:00." Du ställer in en påminnelse en gång på evenemanget, och B1 skickar ut den enligt schema via pushnotiser, e-post och, om din kyrka har sms konfigurerat, textmeddelanden. Medlemmar kan själva styra vilka påminnelser de får via sina egna [Aviseringsinställningar](../../b1-church/getting-started/notification-preferences).
+Påminnelser om evenemang skickar automatiskt ut meddelanden till rätt personer innan ett evenemang börjar, till exempel "Missa inte! Hälsoworkshopen börjar imorgon kl. 09:00." Du ställer in en påminnelse en gång på evenemanget, och B1 skickar ut den enligt schema via pushnotiser, e-post och, om din kyrka har sms konfigurerat, textmeddelanden. Medlemmar kan själva styra vilka påminnelser de får via sina egna [Aviseringsinställningar](../../b1-church/getting-started/notification-preferences.md).
 
 </div>
 
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Skapa evenemanget du vill påminna om (se [Skapa kalendrar](creating-calendars))
-- För att nå registrerade deltagare, [aktivera registrering](creating-calendars) för evenemanget
-- För att nå en hel grupp, se till att evenemanget tillhör en [grupp](../groups/creating-groups) med medlemmar
+- Skapa evenemanget du vill påminna om (se [Skapa kalendrar](./creating-calendars.md))
+- För att nå registrerade deltagare, [aktivera registrering](./creating-calendars.md) för evenemanget
+- För att nå en hel grupp, se till att evenemanget tillhör en [grupp](../groups/creating-groups.md) med medlemmar
 
 </div>
 
@@ -57,21 +58,21 @@ Gäster som bara har lagts till med namn (utan kopplad personpost) kan inte få 
 - Återkommande evenemang hanteras automatiskt: varje kommande tillfälle får en egen påminnelse.
 
 :::tip
-Påminnelser skickas **först som push, med e-post som reserv**. Om en medlem har pushnotiser aktiverade får de en push. Om inte får de ett e-postmeddelande i stället. Medlemmar väljer vilka kanaler de vill ha per typ av avisering i sina [Aviseringsinställningar](../../b1-church/getting-started/notification-preferences).
+Påminnelser skickas **först som push, med e-post som reserv**. Om en medlem har pushnotiser aktiverade får de en push. Om inte får de ett e-postmeddelande i stället. Medlemmar väljer vilka kanaler de vill ha per typ av avisering i sina [Aviseringsinställningar](../../b1-church/getting-started/notification-preferences.md).
 :::
 
 ## Textpåminnelser
 
 Kanalen **Textmeddelande** visas bara när din kyrka har en sms-leverantör ansluten. Textmeddelanden skickas via din kyrkas sms-leverantör, och varje textmeddelande kan kosta din kyrka pengar. De skickas utöver eventuella push- eller e-postpåminnelser, och endast till personer som:
 
-- Har aktiverat **Textmeddelanden** i sina [Aviseringsinställningar](../../b1-church/getting-started/notification-preferences), och
+- Har aktiverat **Textmeddelanden** i sina [Aviseringsinställningar](../../b1-church/getting-started/notification-preferences.md), och
 - Har ett mobilnummer i sin profil.
 
 Varje textmeddelande börjar med din kyrkas namn, hålls till ett enda sms och slutar med "Svara STOP för att avregistrera dig." Den som svarar STOP slutar att få textmeddelanden från din kyrka. För att STOP-svar ska nå B1 måste du klistra in **webbadressen för inkommande STOP-webhook** från dina [sms-inställningar](../settings/church-settings.md#texting) i din leverantörs webhook för inkommande meddelanden.
 
 ## Vad medlemmar kan styra
 
-Påminnelser respekterar alltid varje medlems [Aviseringsinställningar](../../b1-church/getting-started/notification-preferences). En medlem kan:
+Påminnelser respekterar alltid varje medlems [Aviseringsinställningar](../../b1-church/getting-started/notification-preferences.md). En medlem kan:
 
 - Stänga av **Påminnelser om evenemang** för push, e-post eller textmeddelanden och samtidigt behålla andra aviseringar.
 - Slå på eller av textpåminnelser med **Textmeddelanden**.
@@ -81,10 +82,10 @@ Du kan inte åsidosätta en medlems val att avregistrera sig från påminnelser 
 
 ## Påminnelser för tjänstgöring
 
-Volontärer som är schemalagda för en plan får en separat **tjänstgöringspåminnelse** med planens detaljer och, om de ännu inte har svarat, knapparna **Acceptera / Avböj** direkt i e-postmeddelandet. Dessa påminnelser ställs in på plantypen i stället för på ett kalenderevenemang, och kan också skickas som textmeddelanden. Se [Volontärpåminnelser](../serving/plans#volunteer-reminders) och [Söndagsvolontärer](../guides/sunday-volunteers) för hur schemaläggning och påminnelser för volontärer fungerar.
+Volontärer som är schemalagda för en plan får en separat **tjänstgöringspåminnelse** med planens detaljer och, om de ännu inte har svarat, knapparna **Acceptera / Avböj** direkt i e-postmeddelandet. Dessa påminnelser ställs in på plantypen i stället för på ett kalenderevenemang, och kan också skickas som textmeddelanden. Se [Volontärpåminnelser](../serving/plans.md#volunteer-reminders) och [Söndagsvolontärer](../guides/sunday-volunteers.md) för hur schemaläggning och påminnelser för volontärer fungerar.
 
 ## Nästa steg
 
-- [Aviseringsinställningar](../../b1-church/getting-started/notification-preferences) -- Vad medlemmar kan styra
-- [Guide för evenemangsregistrering](../guides/event-registration) -- Ställ in registrering så att påminnelser kan nå deltagarna
-- [Skapa kalendrar](creating-calendars) -- Tillbaka till kalenderinställningar
+- [Aviseringsinställningar](../../b1-church/getting-started/notification-preferences.md) -- Vad medlemmar kan styra
+- [Guide för evenemangsregistrering](../guides/event-registration.md) -- Ställ in registrering så att påminnelser kan nå deltagarna
+- [Skapa kalendrar](./creating-calendars.md) -- Tillbaka till kalenderinställningar

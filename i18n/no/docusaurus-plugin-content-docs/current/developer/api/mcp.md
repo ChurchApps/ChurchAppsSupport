@@ -1,5 +1,6 @@
 ---
 title: "MCP-server"
+description: "Sett opp MCP-tilgang til B1 API-et, slik at Claude Code, Cursor eller Claude Desktop kan kalle endepunkter med API-nøkler eller OAuth-innlogging."
 ---
 
 # MCP-server
@@ -13,7 +14,7 @@ B1 API leveres med en [MCP-server (Model Context Protocol)](https://modelcontext
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- En [B1 API-nøkkel](./api-keys) (`cak_…`) med de omfangene klienten skal ha, eller en MCP-klient som kan logge inn med OAuth (se [OAuth-oppdagelse](#oauth-discovery))
+- En [B1 API-nøkkel](./api-keys.md) (`cak_…`) med de omfangene klienten skal ha, eller en MCP-klient som kan logge inn med OAuth (se [OAuth-oppdagelse](#oauth-discovery))
 - En tilgjengelig B1 API-vert: `https://api.churchapps.org` for hostede kirker, eller din egen distribusjon
 - En MCP-klient. Se [Claude](/docs/b1-admin/integrations/claude) og [ChatGPT](/docs/b1-admin/integrations/chatgpt) for oppsett for sluttbrukere
 
@@ -119,7 +120,7 @@ Verktøyresultatet er merket `isError: true` for ethvert svar med status ≥ 400
 
 ### `describe_page_builder`
 
-Det eneste ikke-generiske verktøyet: en statisk, selvstendig guide for å bygge nettsider gjennom `/content/*`-endepunktene -- datamodellen Page → Section → Element, opprettelsesflyten, hver `elementType` med formen på `answersJSON`, innstillinger på seksjonsnivå som formskilletegnene `dividerTop`/`dividerBottom`, og et utfylt eksempel fra start til slutt. Det tar ingen input og speiler elementkatalogen som vedlikeholdes i redigeringsprogrammet i B1Admin (se [Arkitektur for nettsidebyggeren](../architecture/website-builder)). Agenter forventes å kalle det én gang før de oppretter eller redigerer sideinnhold, og deretter handle via `api_call`.
+Det eneste ikke-generiske verktøyet: en statisk, selvstendig guide for å bygge nettsider gjennom `/content/*`-endepunktene -- datamodellen Page → Section → Element, opprettelsesflyten, hver `elementType` med formen på `answersJSON`, innstillinger på seksjonsnivå som formskilletegnene `dividerTop`/`dividerBottom`, og et utfylt eksempel fra start til slutt. Det tar ingen input og speiler elementkatalogen som vedlikeholdes i redigeringsprogrammet i B1Admin (se [Arkitektur for nettsidebyggeren](../architecture/website-builder.md)). Agenter forventes å kalle det én gang før de oppretter eller redigerer sideinnhold, og deretter handle via `api_call`.
 
 ## Autentiseringsmodell
 
@@ -153,11 +154,11 @@ Det finnes ingen hastighetsbegrensning på applikasjonsnivå for `/mcp`. Begrens
 
 ## OAuth-oppdagelse {#oauth-discovery}
 
-MCP-serveren annonserer OAuth 2.1-metadata, slik at klienter som bare kobler til OAuth-oppdagede servere -- særlig dialogen «Add custom connector» i Claude.ai -- kan logge en bruker inn uten en innlimt nøkkel. `/mcp` er den beskyttede ressursen, den eksisterende [OAuth-leverandøren](./connected-apps) under `/membership/oauth` er autorisasjonsserveren, og siden `/oauth` i B1Admin er samtykkeskjermen.
+MCP-serveren annonserer OAuth 2.1-metadata, slik at klienter som bare kobler til OAuth-oppdagede servere -- særlig dialogen «Add custom connector» i Claude.ai -- kan logge en bruker inn uten en innlimt nøkkel. `/mcp` er den beskyttede ressursen, den eksisterende [OAuth-leverandøren](./connected-apps.md) under `/membership/oauth` er autorisasjonsserveren, og siden `/oauth` i B1Admin er samtykkeskjermen.
 
 | Endepunkt | Formål |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (også `/.well-known/oauth-protected-resource/mcp`) | Metadata for beskyttet ressurs (RFC 9728): `resource` er `<api>/mcp`, `authorization_servers` er API-roten, `scopes_supported` lister alle [API-nøkkelomfang](./api-keys#scopes) |
+| `GET /.well-known/oauth-protected-resource` (også `/.well-known/oauth-protected-resource/mcp`) | Metadata for beskyttet ressurs (RFC 9728): `resource` er `<api>/mcp`, `authorization_servers` er API-roten, `scopes_supported` lister alle [API-nøkkelomfang](./api-keys.md#scopes) |
 | `GET /.well-known/oauth-authorization-server` | Metadata for autorisasjonsserver (RFC 8414): `authorization_endpoint` er B1Admin `/oauth`, `token_endpoint` er `/membership/oauth/token`, `registration_endpoint` er `/membership/oauth/register` |
 | `POST /membership/oauth/register` | Dynamisk klientregistrering (RFC 7591) |
 
@@ -209,8 +210,8 @@ MCP-serveren ligger i `src/modules/mcp/` i Api-repoet. Sentrale filer:
 
 ## Relatert
 
-- [API-nøkler](./api-keys)
-- [Webhooks](./webhooks)
-- [Tilkoblede apper (OAuth)](./connected-apps)
+- [API-nøkler](./api-keys.md)
+- [Webhooks](./webhooks.md)
+- [Tilkoblede apper (OAuth)](./connected-apps.md)
 - [Claude — oppsett for sluttbrukere](/docs/b1-admin/integrations/claude)
 - [ChatGPT — oppsett for sluttbrukere](/docs/b1-admin/integrations/chatgpt)

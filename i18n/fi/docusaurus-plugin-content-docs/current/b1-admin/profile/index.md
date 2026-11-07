@@ -1,5 +1,7 @@
 ---
-title: "Profiili"
+title: "Profiiliasetukset ja laitteet B1 Adminissa"
+sidebar_label: "Profiili"
+description: "Päivitä B1 Adminin profiilissa nimi, sähköposti, salasana, kaksivaiheinen kirjautuminen, teema ja laitteet sekä hyväksy jäsenten profiilimuutokset."
 ---
 
 # Profiili

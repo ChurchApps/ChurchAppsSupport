@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Profilindstillinger og enheder i B1 Admin"
+sidebar_label: "Profil"
+description: "Opdatér dit navn, e-mail, adgangskode, tofaktorlogin, tema og tilsluttede enheder i din B1 Admin-profil, og godkend medlemmers profilændringer."
 ---
 
 # Profil

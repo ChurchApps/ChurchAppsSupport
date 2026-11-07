@@ -1,5 +1,6 @@
 ---
 title: "API ključi"
+description: "Ustvarjajte, omejujte in preklicujte API ključe B1 v B1 Admin za strežniške skripte in konektorje Zapier, Make ali Google Sheets brez toka OAuth."
 ---
 
 # API ključi
@@ -104,7 +105,7 @@ Preklicani ključ takoj neha delovati — ni nobenega obdobja milosti.
 
 ## Razlika od OAuth
 
-Ključi API so primerni, kadar je **vaša cerkev edina, ki uporablja integracijo**. Za povezavo, ki mora dostopati do mnogih cerkva z izrecnim soglasjem vsake — na primer aplikacijo SaaS, deljeno v skupnosti B1 — raje uporabite [OAuth in povezane aplikacije](./connected-apps).
+Ključi API so primerni, kadar je **vaša cerkev edina, ki uporablja integracijo**. Za povezavo, ki mora dostopati do mnogih cerkva z izrecnim soglasjem vsake — na primer aplikacijo SaaS, deljeno v skupnosti B1 — raje uporabite [OAuth in povezane aplikacije](./connected-apps.md).
 
 | | Ključ API | OAuth |
 |---|---|---|

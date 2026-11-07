@@ -1,5 +1,6 @@
 ---
 title: "Presentør-modus"
+description: "Kjør en leksjon i fullskjerm på en klasseromsprojektor eller TV med presentasjonsmodus i Lessons.church, og gå gjennom hver seksjon under timen."
 ---
 
 # Presentør-modus

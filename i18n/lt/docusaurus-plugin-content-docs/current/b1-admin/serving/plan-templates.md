@@ -1,5 +1,6 @@
 ---
 title: "Planų šablonai"
+description: "Išsaugokite pamaldų planą kaip šabloną B1 Admin su pamaldų tvarka ir pareigomis, tada vienu paspaudimu pritaikykite būsimiems planams."
 ---
 
 # Planų šablonai

@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "Naršykite, planuokite ir rodykite nemokamas pamokas pagal amžių iš 12+ teikėjų Lessons.church: su klasėmis, vietomis, FreePlay ar B1 integracijomis."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church veikia kartu su kitais ChurchApps įrankiais, padedančiais patei
 
 ## Dokumentacijos skyriai
 
-- [Pradžia](./getting-started/) -- Sukurkite paskyrą ir susipažinkite su pagrindais
-- [Turinio naršymas](./browsing/) -- Raskite programas, studijas ir pamokas
-- [Klasės](./classrooms/) -- Sukurkite klases ir suplanuokite pamokas
-- [Pritaikymas](./customization/) -- Pritaikykite pamokas savo bažnyčiai
-- [Pristatymas](./presenting/) -- Vesti pamokas klasėje naudojant pristatymo režimą
-- [Administravimas](./admin/) -- Tvarkyti programas, studijas ir pamokas kaip administratorius
+- [Pradžia](./getting-started/index.md) -- Sukurkite paskyrą ir susipažinkite su pagrindais
+- [Turinio naršymas](./browsing/index.md) -- Raskite programas, studijas ir pamokas
+- [Klasės](./classrooms/index.md) -- Sukurkite klases ir suplanuokite pamokas
+- [Pritaikymas](./customization/index.md) -- Pritaikykite pamokas savo bažnyčiai
+- [Pristatymas](./presenting/index.md) -- Vesti pamokas klasėje naudojant pristatymo režimą
+- [Administravimas](./admin/index.md) -- Tvarkyti programas, studijas ir pamokas kaip administratorius
 - [Tikėjimo išpažinimas](./statement-of-faith.md) -- Pagrindiniai įsitikinimai ir mokymo programos gairės
 
 Pagalbai rašykite el. paštu [support@churchapps.org](mailto:support@churchapps.org).

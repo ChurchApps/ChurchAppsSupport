@@ -1,5 +1,6 @@
 ---
 title: "Open Lesson Format"
+description: "Sakhiwo sefomethi yetifundziso letivulekile bahlinzeki bemakharikhulamu bangaphandle ku-Lessons.church: sakhiwo sabahlinzeki, tinkambu te-JSON tevenue feed, tinsita, nemafayela emidiya."
 ---
 
 # Open Lesson Format

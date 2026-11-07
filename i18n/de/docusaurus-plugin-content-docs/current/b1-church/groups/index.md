@@ -1,5 +1,7 @@
 ---
-title: "Gruppen"
+title: "Gemeindegruppen im Mitgliederportal von B1.church"
+sidebar_label: "Gruppen"
+description: "Finden Sie Gemeindegruppen auf B1.church und treten Sie bei. Prüfen Sie Treffen, Termine, Mitglieder und Materialien und chatten Sie mit Ihrer Gruppe."
 ---
 
 # Gruppen

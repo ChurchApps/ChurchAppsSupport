@@ -1,21 +1,22 @@
 ---
 title: "Lembretes de eventos"
+description: "Configure lembretes de eventos no B1 Admin por push, e-mail e mensagem de texto, escolhendo o horário, os destinatários e uma mensagem personalizada."
 ---
 
 # Lembretes de eventos
 
 <div class="article-intro">
 
-Os lembretes de eventos notificam automaticamente as pessoas certas antes de um evento acontecer -- por exemplo, "Não perca! A oficina de saúde começa amanhã às 9h00." Você configura um lembrete uma única vez no evento, e o B1 o envia no horário programado por notificações push, e-mail e, se a sua igreja tiver mensagens de texto configuradas, SMS. Os membros podem controlar quais lembretes recebem nas suas próprias [Preferências de notificação](../../b1-church/getting-started/notification-preferences).
+Os lembretes de eventos notificam automaticamente as pessoas certas antes de um evento acontecer -- por exemplo, "Não perca! A oficina de saúde começa amanhã às 9h00." Você configura um lembrete uma única vez no evento, e o B1 o envia no horário programado por notificações push, e-mail e, se a sua igreja tiver mensagens de texto configuradas, SMS. Os membros podem controlar quais lembretes recebem nas suas próprias [Preferências de notificação](../../b1-church/getting-started/notification-preferences.md).
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- Crie o evento sobre o qual você quer lembrar as pessoas (consulte [Criando calendários](creating-calendars))
-- Para alcançar os inscritos, [ative a inscrição](creating-calendars) no evento
-- Para alcançar um grupo inteiro, certifique-se de que o evento pertence a um [grupo](../groups/creating-groups) com membros
+- Crie o evento sobre o qual você quer lembrar as pessoas (consulte [Criando calendários](./creating-calendars.md))
+- Para alcançar os inscritos, [ative a inscrição](./creating-calendars.md) no evento
+- Para alcançar um grupo inteiro, certifique-se de que o evento pertence a um [grupo](../groups/creating-groups.md) com membros
 
 </div>
 
@@ -57,21 +58,21 @@ Convidados adicionados apenas pelo nome (sem um registro de pessoa vinculado) n�
 - Eventos recorrentes são tratados automaticamente: cada ocorrência futura recebe o seu próprio lembrete.
 
 :::tip
-Os lembretes são enviados **primeiro por push, com e-mail como alternativa**. Se um membro tiver as notificações push ativadas, ele receberá um push; se não, receberá um e-mail. Os membros escolhem quais canais querem para cada tipo de notificação em suas [Preferências de notificação](../../b1-church/getting-started/notification-preferences).
+Os lembretes são enviados **primeiro por push, com e-mail como alternativa**. Se um membro tiver as notificações push ativadas, ele receberá um push; se não, receberá um e-mail. Os membros escolhem quais canais querem para cada tipo de notificação em suas [Preferências de notificação](../../b1-church/getting-started/notification-preferences.md).
 :::
 
 ## Lembretes por SMS
 
 O canal **SMS** só aparece quando a sua igreja tem um provedor de mensagens de texto conectado. Os SMS são enviados pelo provedor de mensagens de texto da sua igreja, e cada mensagem pode custar algo para a igreja. Eles são enviados além de qualquer lembrete push ou por e-mail, e somente para pessoas que:
 
-- Ativaram **Mensagens de texto** nas suas [Preferências de notificação](../../b1-church/getting-started/notification-preferences), e
+- Ativaram **Mensagens de texto** nas suas [Preferências de notificação](../../b1-church/getting-started/notification-preferences.md), e
 - Têm um número de celular no seu perfil.
 
 Cada SMS começa com o nome da sua igreja, é mantido em uma única mensagem de texto e termina com "Responda STOP para cancelar." Quem responder STOP deixa de receber mensagens de texto da sua igreja. Para que as respostas STOP cheguem ao B1, cole a **URL do webhook de STOP (entrada)** das suas [configurações de mensagens de texto](../settings/church-settings.md#texting) no webhook de mensagens recebidas do seu provedor.
 
 ## O que os membros podem controlar
 
-Os lembretes sempre respeitam as [Preferências de notificação](../../b1-church/getting-started/notification-preferences) de cada membro. Um membro pode:
+Os lembretes sempre respeitam as [Preferências de notificação](../../b1-church/getting-started/notification-preferences.md) de cada membro. Um membro pode:
 
 - Desativar os **Lembretes de eventos** para push, e-mail ou SMS, mantendo as demais notificações ativas.
 - Ativar ou desativar os lembretes por SMS com **Mensagens de texto**.
@@ -81,10 +82,10 @@ Você não pode sobrepor a escolha de um membro de não receber lembretes de eve
 
 ## Lembretes de voluntariado
 
-Voluntários escalados em um plano recebem um **lembrete de escala** separado, com os detalhes do plano e, quando ainda não responderam, os botões **Aceitar / Recusar** diretamente no e-mail. Esses lembretes são configurados no tipo de plano, e não em um evento do calendário, e também podem ser enviados por SMS -- consulte [Lembretes para voluntários](../serving/plans#volunteer-reminders) e [Voluntários de domingo](../guides/sunday-volunteers) para saber como funcionam a escala de voluntários e os lembretes.
+Voluntários escalados em um plano recebem um **lembrete de escala** separado, com os detalhes do plano e, quando ainda não responderam, os botões **Aceitar / Recusar** diretamente no e-mail. Esses lembretes são configurados no tipo de plano, e não em um evento do calendário, e também podem ser enviados por SMS -- consulte [Lembretes para voluntários](../serving/plans.md#volunteer-reminders) e [Voluntários de domingo](../guides/sunday-volunteers.md) para saber como funcionam a escala de voluntários e os lembretes.
 
 ## Próximos passos
 
-- [Preferências de notificação](../../b1-church/getting-started/notification-preferences) -- O que os membros podem controlar
-- [Guia de inscrição em eventos](../guides/event-registration) -- Configure as inscrições para que os lembretes possam alcançar os inscritos
-- [Criando calendários](creating-calendars) -- Voltar à configuração de calendários
+- [Preferências de notificação](../../b1-church/getting-started/notification-preferences.md) -- O que os membros podem controlar
+- [Guia de inscrição em eventos](../guides/event-registration.md) -- Configure as inscrições para que os lembretes possam alcançar os inscritos
+- [Criando calendários](./creating-calendars.md) -- Voltar à configuração de calendários

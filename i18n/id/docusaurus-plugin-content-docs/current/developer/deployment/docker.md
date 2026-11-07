@@ -1,12 +1,13 @@
 ---
 title: "Self-Hosting dengan Docker"
+description: "Pasang stack pribadi B1 Admin, portal anggota, API, dan MySQL di komputer Anda dengan Docker, lalu tingkatkan dan cadangkan dengan perintah b1."
 ---
 
 # Self-Hosting dengan Docker
 
 <div class="article-intro">
 
-Jalankan instans pribadi Anda sendiri dari B1 Admin, portal anggota dan situs web B1, API, serta database MySQL di mesin apa pun yang menjalankan Docker, seperti server rumah, VPS kecil, atau perangkat on-prem. Satu perintah untuk memasang, satu perintah untuk memperbarui, dan setiap pembaruan membuat cadangan terlebih dahulu. Jika Anda tidak ingin mengelola server sama sekali, lihat [Self-Hosting di Railway](./railway-template) sebagai alternatif terkelola.
+Jalankan instans pribadi Anda sendiri dari B1 Admin, portal anggota dan situs web B1, API, serta database MySQL di mesin apa pun yang menjalankan Docker, seperti server rumah, VPS kecil, atau perangkat on-prem. Satu perintah untuk memasang, satu perintah untuk memperbarui, dan setiap pembaruan membuat cadangan terlebih dahulu. Jika Anda tidak ingin mengelola server sama sekali, lihat [Self-Hosting di Railway](./railway-template.md) sebagai alternatif terkelola.
 
 </div>
 
@@ -94,10 +95,10 @@ Jika Anda menginstal di `localhost` dan kemudian ingin membuatnya publik: arahka
 
 Semuanya bekerja persis seperti di Railway, dengan variabel lingkungan yang sama, hanya diatur di `.env` alih-alih dasbor Railway:
 
-- **[Email / SMTP](./railway-template#1-email-highly-recommended)** — panduan penyedia untuk Resend, Brevo, dan Gmail
-- **[Multi-situs](./railway-template#3-multi-site-multiple-churches-on-one-instance)** — gereja tanpa batas per instans. `/` menyajikan gereja yang slug-nya adalah `DEFAULT_CHURCH_SLUG` (gereja pertama adalah `church`); arahkan domain tambahan ke server dan petakan di **Settings → Domains** di B1Admin
-- **[Donasi online](./railway-template#4-online-giving-stripe--paypal)** — dikonfigurasi per gereja di antarmuka admin
-- **[Integrasi opsional](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[Email / SMTP](./railway-template.md#1-email-highly-recommended)** — panduan penyedia untuk Resend, Brevo, dan Gmail
+- **[Multi-situs](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** — gereja tanpa batas per instans. `/` menyajikan gereja yang slug-nya adalah `DEFAULT_CHURCH_SLUG` (gereja pertama adalah `church`); arahkan domain tambahan ke server dan petakan di **Settings → Domains** di B1Admin
+- **[Donasi online](./railway-template.md#4-online-giving-stripe--paypal)** — dikonfigurasi per gereja di antarmuka admin
+- **[Integrasi opsional](./railway-template.md#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Notifikasi push](#notifikasi-push)** — `WEB_PUSH_*`; installer membiarkan ini kosong, sehingga push nonaktif sampai Anda menambahkannya
 
 Undangan dan email lain yang dikirim gereja diaktifkan otomatis pada instans self-hosted (layanan hosted menahan fitur ini di balik tinjauan manual untuk melindungi reputasi pengirim).
@@ -148,7 +149,7 @@ Tiga volume Docker bernama menyimpan seluruh status:
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-Untuk pustaka media yang besar, Anda dapat beralih penyimpanan file ke S3 — atur `FILE_STORE=S3` beserta variabel `AWS_*` yang dijelaskan di [bagian Penyimpanan File pada panduan Railway](./railway-template#5-file-storage). Cadangan database tidak menyertakan objek S3; aktifkan versioning bucket di sana.
+Untuk pustaka media yang besar, Anda dapat beralih penyimpanan file ke S3 — atur `FILE_STORE=S3` beserta variabel `AWS_*` yang dijelaskan di [bagian Penyimpanan File pada panduan Railway](./railway-template.md#5-file-storage). Cadangan database tidak menyertakan objek S3; aktifkan versioning bucket di sana.
 
 ## Memperbarui
 
@@ -187,6 +188,6 @@ Masih mengalami kendala? Buka isu di [github.com/ChurchApps/ChurchAppsSupport/is
 
 ## Artikel Terkait
 
-- **[Self-Hosting di Railway](./railway-template)** — alternatif hosting terkelola, beserta panduan konfigurasi pascadeploy bersama
-- **[Pengaturan Awal](../../getting-started/initial-setup)** — langkah pertama setelah gereja Anda dibuat
-- **[Pengaturan API Lokal](../api/local-setup)** — menjalankan seluruh stack secara langsung untuk pengembangan
+- **[Self-Hosting di Railway](./railway-template.md)** — alternatif hosting terkelola, beserta panduan konfigurasi pascadeploy bersama
+- **[Pengaturan Awal](../../getting-started/initial-setup.md)** — langkah pertama setelah gereja Anda dibuat
+- **[Pengaturan API Lokal](../api/local-setup.md)** — menjalankan seluruh stack secara langsung untuk pengembangan

@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "Koppel B1 Admin aan Google Sheets met de B1 Export-add-on om People, Donations, Groups en Attendance op verzoek in spreadsheet-tabbladen te halen."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ De export draait op de achtergrond onder jouw Google-account. Als de API-sleutel
 - **"B1 rejected the API key (401)"**: de sleutel is ingetrokken of onjuist. Maak een nieuwe aan en plak die.
 - **"This API key lacks permission for /giving/donations (403)"**: de sleutel heeft geen `donations:read`. Pas de scopes van de sleutel aan in B1Admin.
 - **Het tabblad wordt niet ververst** na het uitvoeren: controleer of je naar de *juiste* tabbladnaam kijkt (`B1 People` enzovoort). De export maakt het tabblad aan als het nog niet bestond.
-- **"Quota exceeded"**: Apps Script legt per gebruiker dagelijkse limieten op aan `UrlFetchApp` (meestal duizenden aanroepen per dag). Een grote kerk met veel records moet de exports mogelijk over meerdere dagen verdelen, of gebruikt [Make](./make) of een maatwerkintegratie voor synchronisatie met veel gegevens.
+- **"Quota exceeded"**: Apps Script legt per gebruiker dagelijkse limieten op aan `UrlFetchApp` (meestal duizenden aanroepen per dag). Een grote kerk met veel records moet de exports mogelijk over meerdere dagen verdelen, of gebruikt [Make](./make.md) of een maatwerkintegratie voor synchronisatie met veel gegevens.
 
 ## De add-on aanpassen
 
@@ -108,6 +109,6 @@ De add-on is open source. Het Apps Script-project staat in de repository `B1Inte
 
 ## Zie ook
 
-- [Zapier](./zapier): voor synchronisatie in realtime in plaats van een export op verzoek
-- [Make](./make): voor synchronisatie met complexere transformaties
+- [Zapier](./zapier.md): voor synchronisatie in realtime in plaats van een export op verzoek
+- [Make](./make.md): voor synchronisatie met complexere transformaties
 - [API-sleutels (ontwikkelaarsreferentie)](/docs/developer/api/api-keys)

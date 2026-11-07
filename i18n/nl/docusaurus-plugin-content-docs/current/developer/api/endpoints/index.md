@@ -1,5 +1,6 @@
 ---
 title: "Endpoint Reference"
+description: "Vind elk ChurchApps API-eindpunt per module, bekijk de HTTP-methode, het pad, de auth en het recht per route, en leer de batch-save- en foutconventies."
 ---
 
 # Endpoint Reference
@@ -89,10 +90,10 @@ Rapportparameters worden als querystring-waarden doorgegeven (bijv. `?startDate=
 
 | Module | Base Path | Description |
 |--------|-----------|-------------|
-| [Authentication](./authentication) | `/membership/users`, `/membership/oauth` | Login, registratie, JWT-tokens, OAuth, machtigingen |
-| [Membership](./membership) | `/membership/*` | Personen, kerken, groepen, huishoudens, rollen, formulieren, instellingen |
-| [Attendance](./attendance) | `/attendance/*` | Campussen, diensten, sessies, bezoeken, check-in-records |
-| [Content](./content) | `/content/*` | Pagina's, preken, evenementen, bestanden, galerijen, Bijbel, streaming |
-| [Giving](./giving) | `/giving/*` | Donaties, fondsen, betalingsgateways, abonnementen |
-| [Messaging](./messaging) | `/messaging/*` | Gesprekken, meldingen, apparaten, SMS |
-| [Doing](./doing) | `/doing/*` | Plannen, taken, toewijzingen, automatiseringen, planning |
+| [Authentication](./authentication.md) | `/membership/users`, `/membership/oauth` | Login, registratie, JWT-tokens, OAuth, machtigingen |
+| [Membership](./membership.md) | `/membership/*` | Personen, kerken, groepen, huishoudens, rollen, formulieren, instellingen |
+| [Attendance](./attendance.md) | `/attendance/*` | Campussen, diensten, sessies, bezoeken, check-in-records |
+| [Content](./content.md) | `/content/*` | Pagina's, preken, evenementen, bestanden, galerijen, Bijbel, streaming |
+| [Giving](./giving.md) | `/giving/*` | Donaties, fondsen, betalingsgateways, abonnementen |
+| [Messaging](./messaging.md) | `/messaging/*` | Gesprekken, meldingen, apparaten, SMS |
+| [Doing](./doing.md) | `/doing/*` | Plannen, taken, toewijzingen, automatiseringen, planning |

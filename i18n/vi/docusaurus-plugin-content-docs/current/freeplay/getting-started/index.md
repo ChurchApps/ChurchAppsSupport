@@ -1,5 +1,7 @@
 ---
-title: "Bắt đầu"
+title: "Bắt đầu với ứng dụng FreePlay TV"
+sidebar_label: "Bắt đầu"
+description: "Thiết lập FreePlay trên Android TV, Fire TV hoặc Apple TV: cài đặt ứng dụng, mở lần đầu và làm quen điều khiển từ xa cùng thanh bên."
 ---
 
 # Bắt đầu với FreePlay
@@ -42,7 +44,7 @@ FreePlay chạy trên Fire TV (bao gồm các thiết bị stick mới chạy Ve
 
 Khi mở FreePlay lần đầu tiên, bạn sẽ thấy màn hình chào có hoạt ảnh với logo FreePlay. Ứng dụng sẽ kiểm tra xem có nhà cung cấp nội dung nào đã được kết nối trước đó không. Nếu bạn đã kết nối một nhà cung cấp, ứng dụng sẽ đưa bạn thẳng đến trình duyệt nội dung của nhà cung cấp đó. Nếu chưa, ứng dụng sẽ mở màn hình **Nhà cung cấp nội dung**, nơi bạn có thể kết nối với nguồn nội dung đầu tiên.
 
-Nếu TV được ghép với một lịch trong [Chế độ theo lịch](../scheduled-mode/), FreePlay sẽ bỏ qua tất cả các bước trên và mở thẳng trình phát theo lịch.
+Nếu TV được ghép với một lịch trong [Chế độ theo lịch](../scheduled-mode/index.md), FreePlay sẽ bỏ qua tất cả các bước trên và mở thẳng trình phát theo lịch.
 
 ## Điều hướng bằng remote TV
 
@@ -62,13 +64,13 @@ Thanh bên sẽ thu gọn thành một dải biểu tượng hẹp khi bạn đa
 
 Thanh bên liệt kê, từ trên xuống dưới:
 
-- **Kế hoạch hôm nay** -- Hiển thị khi TV được ghép với một kế hoạch. Xem [Chế độ kế hoạch](../plan-mode/)
-- **Thông báo** -- Hiển thị sau khi bạn chọn một thư mục thông báo. Xem [Thông báo](../content-providers/announcements)
-- **Duyệt** -- Mỗi nhà cung cấp nội dung đã kết nối mà bạn có thể duyệt. Xem [Duyệt và tải nội dung](../content-providers/browsing-content)
-- **Cài đặt** -- Ở cuối thanh bên. Mở **Ghép với lịch** (ghép TV này với một lịch hoặc kế hoạch -- xem [Chọn chế độ ghép](./pairing-modes)), **Tải xuống** (phát hoặc xóa nội dung đã lưu trên thiết bị này), và **Nhà cung cấp** (kết nối nhà cung cấp nội dung và chọn thư mục thông báo)
+- **Kế hoạch hôm nay** -- Hiển thị khi TV được ghép với một kế hoạch. Xem [Chế độ kế hoạch](../plan-mode/index.md)
+- **Thông báo** -- Hiển thị sau khi bạn chọn một thư mục thông báo. Xem [Thông báo](../content-providers/announcements.md)
+- **Duyệt** -- Mỗi nhà cung cấp nội dung đã kết nối mà bạn có thể duyệt. Xem [Duyệt và tải nội dung](../content-providers/browsing-content.md)
+- **Cài đặt** -- Ở cuối thanh bên. Mở **Ghép với lịch** (ghép TV này với một lịch hoặc kế hoạch -- xem [Chọn chế độ ghép](./pairing-modes.md)), **Tải xuống** (phát hoặc xóa nội dung đã lưu trên thiết bị này), và **Nhà cung cấp** (kết nối nhà cung cấp nội dung và chọn thư mục thông báo)
 
 ## Bước tiếp theo
 
-- **[Chọn chế độ ghép](./pairing-modes)** - Tìm hiểu các cách khác nhau để kết nối TV của bạn
-- **[Chế độ theo lịch](../scheduled-mode/)** - Đưa các TV của bạn vào lịch với FreePlay Admin
-- **[Nhà cung cấp nội dung](../content-providers/)** - Kết nối với Lessons.church, Bible Project và nhiều nguồn khác
+- **[Chọn chế độ ghép](./pairing-modes.md)** - Tìm hiểu các cách khác nhau để kết nối TV của bạn
+- **[Chế độ theo lịch](../scheduled-mode/index.md)** - Đưa các TV của bạn vào lịch với FreePlay Admin
+- **[Nhà cung cấp nội dung](../content-providers/index.md)** - Kết nối với Lessons.church, Bible Project và nhiều nguồn khác

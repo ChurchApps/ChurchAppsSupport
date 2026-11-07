@@ -1,5 +1,7 @@
 ---
-title: "Mitgliederverzeichnis"
+title: "Mitgliederverzeichnis in der B1 Mobile App"
+sidebar_label: "Mitgliederverzeichnis"
+description: "Finden Sie Gemeindemitglieder im Verzeichnis der B1 Mobile App: alphabetisch durchblättern, nach Namen suchen und Profile sowie Haushalte öffnen."
 ---
 
 # Mitgliederverzeichnis
@@ -13,7 +15,7 @@ Das Mitgliederverzeichnis in B1 Mobile ermöglicht es dir, Personen in deiner Ge
 <div class="prereqs">
 <h4>Bevor du beginnst</h4>
 
-- [B1 Mobile installieren](../getting-started/installing) und dich in deinem Konto [anmelden](../getting-started/logging-in)
+- [B1 Mobile installieren](../getting-started/installing.md) und dich in deinem Konto [anmelden](../getting-started/logging-in.md)
 
 </div>
 
@@ -51,5 +53,5 @@ Welche Informationen in einem Profil sichtbar sind, hängt von den Datenschutz- 
 
 ## Verwandte Artikel
 
-- [Nachrichten](./messaging) -- Sende einer Person, die du im Verzeichnis findest, eine private Nachricht
+- [Nachrichten](./messaging.md) -- Sende einer Person, die du im Verzeichnis findest, eine private Nachricht
 - [Datenschutzeinstellungen](../profile/privacy-settings.md) -- Lege fest, was andere im Verzeichnis über dich sehen können

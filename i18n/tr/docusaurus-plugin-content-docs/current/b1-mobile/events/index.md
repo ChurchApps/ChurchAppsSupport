@@ -1,5 +1,7 @@
 ---
-title: "Etkinlikler"
+title: "B1 Mobile'da Kilise Etkinlikleri ve Kayıt"
+sidebar_label: "Etkinlikler"
+description: "B1 Mobile'da yaklaşan kilise etkinliklerine göz atın ve kayıt açık olanlara kendinizi ve aile üyelerinizi kaydedin."
 ---
 
 # Etkinlikler
@@ -23,10 +25,10 @@ Etkinlikler farklı durumlar gösterebilir:
 
 ## Gerekenler
 
-- [B1 Mobile yüklü](../getting-started/installing) ve [oturum açmış](../getting-started/logging-in) olmalısınız
+- [B1 Mobile yüklü](../getting-started/installing.md) ve [oturum açmış](../getting-started/logging-in.md) olmalısınız
 - Kilisenizin ilgili etkinlik için etkinlik kaydını etkinleştirmiş olması gerekir
 
 ## Daha Fazla Bilgi
 
-- [Etkinliklere Kaydolma](./registering) -- Mobilde bir etkinliğe kaydolma adım adım kılavuzu
-- [Self Check-In](../checkin/self-checkin) -- Etkinliğe vardığınızda giriş yapın
+- [Etkinliklere Kaydolma](./registering.md) -- Mobilde bir etkinliğe kaydolma adım adım kılavuzu
+- [Self Check-In](../checkin/self-checkin.md) -- Etkinliğe vardığınızda giriş yapın

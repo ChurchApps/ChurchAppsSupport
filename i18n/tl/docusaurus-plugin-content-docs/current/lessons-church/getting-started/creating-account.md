@@ -1,5 +1,6 @@
 ---
 title: "Paglikha ng Account"
+description: "Magparehistro ng ChurchApps account sa Lessons.church, pagkatapos ikonekta sa bago o umiiral na church profile para mapamahalaan ang classrooms at iskedyul."
 ---
 
 # Paglikha ng Account

@@ -1,5 +1,7 @@
 ---
-title: "Prijímanie na službu"
+title: "Prihlásenie do kostola pomocou aplikácie B1 Mobile"
+sidebar_label: "Prijímanie na službu"
+description: "Prihláste seba a svoju domácnosť na cirkevné bohoslužby z telefónu v aplikácii B1 Mobile, pričom si pred príchodom vyberiete bohoslužby a skupiny."
 ---
 
 # Prijímanie na službu
@@ -16,7 +18,7 @@ Proces prijímania na službu je rýchly, viackrokový postup, ktorý vás preve
 
 ## Ako začať
 
-Na prijatie na službu otvorte sekciu **Prijímanie na službu** v aplikácii B1 Mobile. Na použitie tejto funkcie musíte byť prihlásení. Ak nie ste prihlásení, budete najprv vyzvaní, aby ste sa [prihlásili](../getting-started/logging-in).
+Na prijatie na službu otvorte sekciu **Prijímanie na službu** v aplikácii B1 Mobile. Na použitie tejto funkcie musíte byť prihlásení. Ak nie ste prihlásení, budete najprv vyzvaní, aby ste sa [prihlásili](../getting-started/logging-in.md).
 
 :::info
 Funkcia prijímania na službu vyžaduje, aby vaša cirkev nastavila bohoslužby a skupiny účasti vo svojich administračných nastaveniach. Ak sa po otvorení obrazovky prijímania nezobrazia žiadne služby, vaša cirkev túto funkciu pravdepodobne ešte nemá nakonfigurovanú. Pomoc vám poskytne správca vašej cirkvi.
@@ -30,4 +32,4 @@ Funkcia prijímania na službu vyžaduje, aby vaša cirkev nastavila bohoslužby
 
 ## Ďalšie kroky
 
-- [Samoprijímanie na službu](./self-checkin) -- Podrobný návod, ako sa prihlásiť na službu zo svojho telefónu
+- [Samoprijímanie na službu](./self-checkin.md) -- Podrobný návod, ako sa prihlásiť na službu zo svojho telefónu

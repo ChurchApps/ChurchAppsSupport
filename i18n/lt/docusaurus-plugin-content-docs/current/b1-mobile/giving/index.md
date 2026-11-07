@@ -1,5 +1,7 @@
 ---
-title: "Dāvanos"
+title: "Aukojimas B1 Mobile programėlėje"
+sidebar_label: "Dāvanos"
+description: "Aukokite B1 Mobile programėlėje, tikrinkite metines aukas ir tvarkykite mokėjimo būdus. Skirtukai: Apžvalga, Aukoti, Tvarkyti ir Istorija."
 ---
 
 # Dāvanos
@@ -24,7 +26,7 @@ Dāvanų skyrius suskirstytas į keturis skirtukus:
 Visos per B1 Mobile atliktos aukos saugiai apdorojamos per **Stripe**. Jūsų mokėjimo informaciją tvarko Stripe saugi infrastruktūra, ir ji niekada nesaugoma ChurchApps serveriuose. Galite aukoti drąsiai, žinodami, kad jūsų finansiniai duomenys yra apsaugoti.
 
 :::info
-Jūsų bažnyčios administratorius nustato galimus fondus ir mokėjimų apdorojimą per [B1 Admin](../../b1-admin/). Jei programėlėje nematote dāvanų galimybės, gali būti, kad jūsų bažnyčia dar nesukonfigūravo šios funkcijos.
+Jūsų bažnyčios administratorius nustato galimus fondus ir mokėjimų apdorojimą per [B1 Admin](../../b1-admin/index.md). Jei programėlėje nematote dāvanų galimybės, gali būti, kad jūsų bažnyčia dar nesukonfigūravo šios funkcijos.
 :::
 
 ## Ką galite daryti
@@ -38,6 +40,6 @@ Jūsų bažnyčios administratorius nustato galimus fondus ir mokėjimų apdoroj
 
 ## Kiti žingsniai
 
-- [Aukos atlikimas](./making-donations) -- Sužinokite, kaip atlikti auką iš programėlės
-- [Mokėjimo būdų tvarkymas](./managing-payments) -- Pridėkite arba pašalinkite išsaugotus mokėjimo būdus
-- [Aukų istorija](./donation-history) -- Peržiūrėkite savo dāvanų suvestinę ir ankstesnes aukas
+- [Aukos atlikimas](./making-donations.md) -- Sužinokite, kaip atlikti auką iš programėlės
+- [Mokėjimo būdų tvarkymas](./managing-payments.md) -- Pridėkite arba pašalinkite išsaugotus mokėjimo būdus
+- [Aukų istorija](./donation-history.md) -- Peržiūrėkite savo dāvanų suvestinę ir ankstesnes aukas

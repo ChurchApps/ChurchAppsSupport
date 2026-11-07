@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "Verbinden Sie B1 Admin und Text In Church über Zapier: API-Schlüssel erstellen, einen Zap von der Kontaktkarte zu B1 bauen und Gruppenmitgliedschaften spiegeln."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Schalten Sie den Zap ein. Die nächste Connect Card, die über TIC eingereicht w
 
 ## Siehe auch
 
-- [Clearstream](./clearstream) – alternative SMS-Plattform mit ähnlichem Zapier-Form
-- [Zapier (Übersicht)](../zapier) – B1-Seite jedes Zapier-Rezepts
+- [Clearstream](./clearstream.md) – alternative SMS-Plattform mit ähnlichem Zapier-Form
+- [Zapier (Übersicht)](../zapier.md) – B1-Seite jedes Zapier-Rezepts
 - [Text In Church Zapier-Handbuch](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (TICs Dokumente)

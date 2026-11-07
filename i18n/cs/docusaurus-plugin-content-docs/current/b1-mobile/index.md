@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (zastaralé)"
+description: "Vysvětluje, že nativní aplikace B1 Mobile je zastaralá a členové i správci mají místo ní používat PWA B1.church. Starší stránky jsou ponechány jako reference."
 ---
 
 # B1 Mobile (zastaralé)
@@ -40,16 +41,16 @@ B1 Mobile podporovala push oznámení, abyste nepřehlédli důležitou zprávu 
 
 ## Další informace
 
-- [Začínáme](./getting-started/) -- Nainstalujte aplikaci, vytvořte účet a vyberte svůj sbor.
-- [Přehled](./dashboard/) -- Seznamte se s personalizovanou domovskou obrazovkou.
-- [Skupiny](./groups/) -- Zůstaňte ve spojení se skupinami svého sboru.
-- [Dary](./giving/) -- Přispívejte z telefonu.
-- [Události](./events/) -- Procházejte nadcházející akce sboru a registrujte se na ně.
-- [Prezence](./checkin/) -- Přihlaste se na bohoslužby a akce.
-- [Služba](./serving/) -- Zobrazte si své plány služeb, přidělené úkoly a příležitosti k dobrovolnictví.
-- [Komunita](./community/) -- Procházejte adresář členů a posílejte zprávy.
-- [Obsah](./content/) -- Kázání, Bible, verš dne a lekce (obrazovka lekcí je zastaralá — viz [FreePlay](/docs/freeplay/)).
-- [Profil](./profile/) -- Spravujte svůj profil a nastavení účtu.
+- [Začínáme](./getting-started/index.md) -- Nainstalujte aplikaci, vytvořte účet a vyberte svůj sbor.
+- [Přehled](./dashboard/index.md) -- Seznamte se s personalizovanou domovskou obrazovkou.
+- [Skupiny](./groups/index.md) -- Zůstaňte ve spojení se skupinami svého sboru.
+- [Dary](./giving/index.md) -- Přispívejte z telefonu.
+- [Události](./events/index.md) -- Procházejte nadcházející akce sboru a registrujte se na ně.
+- [Prezence](./checkin/index.md) -- Přihlaste se na bohoslužby a akce.
+- [Služba](./serving/index.md) -- Zobrazte si své plány služeb, přidělené úkoly a příležitosti k dobrovolnictví.
+- [Komunita](./community/index.md) -- Procházejte adresář členů a posílejte zprávy.
+- [Obsah](./content/index.md) -- Kázání, Bible, verš dne a lekce (obrazovka lekcí je zastaralá — viz [FreePlay](/docs/freeplay/)).
+- [Profil](./profile/index.md) -- Spravujte svůj profil a nastavení účtu.
 
 :::info
 Aplikaci B1 Mobile nahradila [PWA B1.church](../b1-church/getting-started/installing-pwa.md). Nové nasazení by mělo používat PWA -- nativní aplikace se již neaktualizuje.

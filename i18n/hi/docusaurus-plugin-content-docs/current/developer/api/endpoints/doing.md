@@ -1,5 +1,6 @@
 ---
 title: "Doing Endpoints"
+description: "सेवा योजनाओं, स्वयंसेवा नियुक्तियों, कार्यों और स्वचालन के पीछे Doing API का एंडपॉइंट संदर्भ, B1 Admin के लिए पथ, प्रमाणीकरण और अनुमतियों सहित।"
 ---
 
 # Doing Endpoints
@@ -278,6 +279,6 @@ Base path: `/doing/providerProxy`
 
 ## संबंधित पृष्ठ
 
-- [Membership Endpoints](./membership) — लोग, समूह, भूमिकाएँ और अनुमतियाँ
-- [Attendance Endpoints](./attendance) — सेवा और विज़िट ट्रैकिंग
-- [Module Structure](../module-structure) — कोड संगठन के पैटर्न
+- [Membership Endpoints](./membership.md) — लोग, समूह, भूमिकाएँ और अनुमतियाँ
+- [Attendance Endpoints](./attendance.md) — सेवा और विज़िट ट्रैकिंग
+- [Module Structure](../module-structure.md) — कोड संगठन के पैटर्न

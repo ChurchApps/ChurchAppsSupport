@@ -1,5 +1,6 @@
 ---
 title: "Prezentare generală a proiectului"
+description: "Harta depozitelor ChurchApps pe categorii, cu framework-uri, porturi de dezvoltare, baze de date și legăturile dintre pachetele comune @churchapps."
 ---
 
 # Prezentare generală a proiectului
@@ -13,7 +14,7 @@ ChurchApps cuprinde aproximativ 20 de depozite independente, fiecare publicat su
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Instalați [cerințele preliminare](./prerequisites) pentru categoria de proiecte la care doriți să lucrați
+- Instalați [cerințele preliminare](./prerequisites.md) pentru categoria de proiecte la care doriți să lucrați
 
 </div>
 
@@ -72,7 +73,7 @@ Codul partajat este publicat pe npm sub domeniul `@churchapps` și este utilizat
 | `@churchapps/integration-sdk` | Set de instrumente pentru integrarea cu B1.church: webhook-uri, client REST, OAuth | Dezvoltatorii externi de integrări |
 | `@churchapps/texting` | Abstractizare pentru furnizorii de SMS | Api |
 
-Consultați [Biblioteci partajate](../shared-libraries/) pentru configurarea spațiului de lucru și fluxul de lansare.
+Consultați [Biblioteci partajate](../shared-libraries/index.md) pentru configurarea spațiului de lucru și fluxul de lansare.
 
 ## Relațiile dintre proiecte
 
@@ -90,5 +91,5 @@ Toate aplicațiile frontend depind de `@churchapps/helpers`. Aplicațiile web de
 
 ## Pașii următori
 
-- **[Variabile de mediu](./environment-variables)** -- Configurați fișierele `.env` pentru a conecta aplicațiile la API-uri
-- **[Configurarea locală a API-ului](../api/local-setup)** -- Configurați local API-ul backend
+- **[Variabile de mediu](./environment-variables.md)** -- Configurați fișierele `.env` pentru a conecta aplicațiile la API-uri
+- **[Configurarea locală a API-ului](../api/local-setup.md)** -- Configurați local API-ul backend

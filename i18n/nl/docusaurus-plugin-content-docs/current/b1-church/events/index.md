@@ -1,5 +1,7 @@
 ---
-title: "Evenementen"
+title: "Kerkevenementen op B1.church: bekijken en inschrijven"
+sidebar_label: "Evenementen"
+description: "Blader door aankomende kerkevenementen op B1.church, controleer de inschrijfstatus en meld je aan of voeg evenementen toe aan je agenda."
 ---
 
 # Evenementen
@@ -40,5 +42,5 @@ Als een evenement vol is, kom je later terug -- plaatsen kunnen openvallen als i
 
 ## Meer weten
 
-- [Aanmelden voor evenementen](./registering) -- Stap-voor-stap handleiding voor aanmeldingsgebruiker
-- [Zelf Check-In](../checkin/self-checkin) -- Check in wanneer je bij het evenement aankomt
+- [Aanmelden voor evenementen](./registering.md) -- Stap-voor-stap handleiding voor aanmeldingsgebruiker
+- [Zelf Check-In](../checkin/self-checkin.md) -- Check in wanneer je bij het evenement aankomt

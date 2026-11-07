@@ -1,5 +1,7 @@
 ---
-title: "Tifundvo (Kwesula)"
+title: "Sikrini Setifundo Ku-B1 Mobile (Sekuphelile)"
+sidebar_label: "Tifundvo (Kwesula)"
+description: "Likhasi Lemifundo (Alisasebenti): kungani sikrini semifundo ku-B1 Mobile sacedvwa, nekutsi ungatfola kuphi tifundo tamanje (FreePlay noma Lessons.church)."
 ---
 
 # Tifundvo (Kwesula)
@@ -19,7 +21,7 @@ Sikrini se-Tifundvo besikunika kufinyelela etifundvweni netintfweni tekufundza t
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- [Faka i-B1 Mobile](../getting-started/installing) bese [ungena](../getting-started/logging-in) ku-akhawundi yakho
+- [Faka i-B1 Mobile](../getting-started/installing.md) bese [ungena](../getting-started/logging-in.md) ku-akhawundi yakho
 - Libandla lakho kufanele libe nekucuketfwe kwetifundvo lokulungiselelwe nge-Lessons.church
 
 </div>
@@ -54,5 +56,5 @@ Sikrini se-Tifundvo sivela nakuba libandla lakho lilungiselele tifundvo nge-Less
 
 - [Sifingqo se-FreePlay](/docs/freeplay/) -- I-app yeligagasi lesetsatsela indzawo yekudlala tifundvo ekilasini
 - [Lessons.church](/docs/lessons-church/) -- Cwaninga futsi uphatse kucuketfwe kwetifundvo ngco
-- [LiBhayibheli](./bible) -- Fundza imiBhalo ehlanganisiwe netifundvo takho
-- [Tintshumayelo](./sermons) -- Bukela tintshumayelo letihlanganisa nekufundza kwakho
+- [LiBhayibheli](./bible.md) -- Fundza imiBhalo ehlanganisiwe netifundvo takho
+- [Tintshumayelo](./sermons.md) -- Bukela tintshumayelo letihlanganisa nekufundza kwakho

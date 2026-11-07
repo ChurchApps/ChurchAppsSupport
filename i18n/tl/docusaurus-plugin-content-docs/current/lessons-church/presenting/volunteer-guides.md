@@ -1,5 +1,6 @@
 ---
 title: "Mga Gabay para sa Boluntaryo"
+description: "Mag-set up ng role-specific na gabay sa Lessons.church para bawat volunteer ay makita lang ang sarili nilang hakbang, at i-print o ibahagi bago ang klase."
 ---
 
 # Mga Gabay para sa Boluntaryo

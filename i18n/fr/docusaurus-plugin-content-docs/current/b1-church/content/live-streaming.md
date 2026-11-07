@@ -1,5 +1,7 @@
 ---
-title: "Diffusion en direct"
+title: "Regarder les diffusions en direct sur B1.church"
+sidebar_label: "Diffusion en direct"
+description: "Regardez les cultes en direct sur la page Stream de B1.church et rejoignez le chat pendant la diffusion, sans connexion."
 ---
 
 # Diffusion en direct

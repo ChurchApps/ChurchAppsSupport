@@ -1,5 +1,6 @@
 ---
 title: "Lista rocznic"
+description: "Wyświetl w B1 Admin listę osób z rocznicą ślubu w wybranym miesiącu. Daty są widoczne w wynikach i można je wyeksportować do arkusza, np. do biuletynu."
 ---
 
 # Lista rocznic

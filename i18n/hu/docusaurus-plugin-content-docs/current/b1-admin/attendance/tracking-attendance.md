@@ -1,5 +1,6 @@
 ---
 title: "Részvétel követése"
+description: "Részvételi trendek áttekintése, jelentések szűrése campus, szolgálat vagy csoport szerint, csoportos részvétel exportálása a B1 Admin Attendance oldalán."
 ---
 
 # Részvétel követése

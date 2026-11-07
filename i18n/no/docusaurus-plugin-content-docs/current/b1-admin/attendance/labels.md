@@ -1,5 +1,6 @@
 ---
 title: "Etikettdesigner for innsjekking"
+description: "Tilpass merkelapp- og hentelappmaler som skrives ut ved innsjekk i B1 Admin, med felt, plassering og vilkår for bursdag eller notater."
 ---
 
 # Etikettdesigner for innsjekking
@@ -13,8 +14,8 @@ Etikettdesigneren lar deg lage og tilpasse malene for navnelapper og hentelapper
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sett opp [Oppmøte](setup) og konfigurer minst ett samlingstidspunkt med innsjekking aktivert
-- Sett opp [Innsjekking](check-in) slik at etiketter skrives ut
+- Sett opp [Oppmøte](./setup.md) og konfigurer minst ett samlingstidspunkt med innsjekking aktivert
+- Sett opp [Innsjekking](./check-in.md) slik at etiketter skrives ut
 - Du trenger administratortilgang til Oppmøte-seksjonen
 
 </div>
@@ -85,6 +86,6 @@ Ta en prøveutskrift etter at du har redigert en mal, for å være sikker på at
 
 ## Relaterte artikler
 
-- [Oppsett av innsjekking](setup) — sett opp gudstjenester og grupper for innsjekking
-- [Fullføre innsjekking](check-in) — innsjekkingsforløpet for familier
-- [Kom i gang med B1 Checkin](../../b1-checkin/getting-started/) — Checkin-kioskappen
+- [Oppsett av innsjekking](./setup.md) — sett opp gudstjenester og grupper for innsjekking
+- [Fullføre innsjekking](./check-in.md) — innsjekkingsforløpet for familier
+- [Kom i gang med B1 Checkin](../../b1-checkin/getting-started/index.md) — Checkin-kioskappen

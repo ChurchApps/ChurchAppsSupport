@@ -1,5 +1,6 @@
 ---
 title: "Palveluntarjoajien yhdistäminen ja soittolistojen luominen"
+description: "Yhdistä sisällöntarjoajat FreePlay Adminissa, luo, järjestä ja esikatsele soittolistat aikataulutettuja TV-näyttöjä varten."
 ---
 
 # Palveluntarjoajien yhdistäminen ja soittolistojen luominen
@@ -107,6 +108,6 @@ Valitse **Esitä**, jos haluat toistaa soittolistan koko näytöllä selaimessas
 
 ## Aiheeseen liittyvät artikkelit
 
-- **[Kalenterin ajoittaminen](./scheduling-the-calendar)** - Lisää soittolistasi näytöryhmän kalenteriin
-- **[Näyttöjen ja ryhmien hallinta](./managing-screens)** - Aseta soittolista ryhmän oletussilmukaksi
-- **[Sisältöpalveluntarjoajat](../content-providers/)** - Palveluntarjoajat, jotka voit yhdistää suoraan televisiolla
+- **[Kalenterin ajoittaminen](./scheduling-the-calendar.md)** - Lisää soittolistasi näytöryhmän kalenteriin
+- **[Näyttöjen ja ryhmien hallinta](./managing-screens.md)** - Aseta soittolista ryhmän oletussilmukaksi
+- **[Sisältöpalveluntarjoajat](../content-providers/index.md)** - Palveluntarjoajat, jotka voit yhdistää suoraan televisiolla

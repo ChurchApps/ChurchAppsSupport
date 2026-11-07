@@ -1,5 +1,6 @@
 ---
 title: "Kampaně a přísliby"
+description: "Vytvořte v B1 Admin kampaně na sbírky, zaznamenejte přísliby členů a sledujte postup k cíli podle skutečných darů do každého fondu."
 ---
 
 # Kampaně a přísliby
@@ -13,7 +14,7 @@ Kampaně vám umožní vést sbírku směřující ke konkrétnímu cíli, např
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Nastavte si [fondy darů](funds) — každá kampaň je spojena s fondem
+- Nastavte si [fondy darů](./funds.md) — každá kampaň je spojena s fondem
 - Potřebujete přístup k sekci Dary v B1 Admin
 
 </div>
@@ -66,6 +67,6 @@ Kliknutím na **Upravit** u libovolného řádku kampaně (nebo na **Upravit kam
 
 ## Související články
 
-- [Zaznamenávání darů](recording-donations) — zaznamenejte skutečné dary, které splňují přísliby
-- [Fondy](funds) — nastavte fond, který bude s kampaní spojen
-- [Přehledy darů](donation-reports) — přehledy darů podle fondu
+- [Zaznamenávání darů](./recording-donations.md) — zaznamenejte skutečné dary, které splňují přísliby
+- [Fondy](./funds.md) — nastavte fond, který bude s kampaní spojen
+- [Přehledy darů](./donation-reports.md) — přehledy darů podle fondu

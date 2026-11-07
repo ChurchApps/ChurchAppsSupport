@@ -1,5 +1,6 @@
 ---
 title: "Panduan Relawan"
+description: "Atur panduan khusus peran di Lessons.church agar setiap relawan hanya melihat langkahnya sendiri, lalu cetak atau bagikan sebelum kelas."
 ---
 
 # Panduan Relawan

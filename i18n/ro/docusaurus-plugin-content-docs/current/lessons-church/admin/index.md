@@ -1,5 +1,6 @@
 ---
 title: "Administrare"
+description: "Prezentare a administrării Lessons.church: programe, studii, lecții, resurse, statistici și furnizori externi de curriculum."
 ---
 
 # Administrare

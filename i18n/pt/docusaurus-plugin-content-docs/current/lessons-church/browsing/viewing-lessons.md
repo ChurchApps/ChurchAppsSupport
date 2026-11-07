@@ -1,5 +1,6 @@
 ---
 title: "Visualizando Lições"
+description: "Abra uma lição no Lessons.church, leia suas seções e ações por função, encontre downloads e troque de local por faixa etária antes da aula."
 ---
 
 # Visualizando Lições

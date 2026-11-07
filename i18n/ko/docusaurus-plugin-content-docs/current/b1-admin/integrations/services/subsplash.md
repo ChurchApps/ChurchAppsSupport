@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Zapier로 Subsplash 헌금, 새 사람, 양식 응답을 B1에 연결해 헌금과 프로필이 B1 Admin에 자동으로 들어오도록 합니다."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Zap을 켜세요. 이후 Subsplash 기부는 몇 초 안에 **B1Admin → Donati
 
 ## 함께 보기
 
-- [Donorbox](./donorbox) — 같은 레시피 형태, 다른 기부 플랫폼
-- [Zapier (개요)](../zapier) — 모든 Zapier 레시피의 B1 쪽 설명
+- [Donorbox](./donorbox.md) — 같은 레시피 형태, 다른 기부 플랫폼
+- [Zapier (개요)](../zapier.md) — 모든 Zapier 레시피의 B1 쪽 설명
 - [Subsplash Zapier 연동 가이드](https://support.subsplash.com/en/articles/9825926-zapier-integration) (Subsplash 문서)

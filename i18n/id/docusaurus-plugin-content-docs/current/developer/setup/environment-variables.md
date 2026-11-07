@@ -1,5 +1,6 @@
 ---
 title: "Variabel Lingkungan"
+description: "Atur file .env proyek ChurchApps, pilih API demo bersama atau API lokal, dan isi variabel untuk B1 Admin, B1.church, B1 Mobile, Lessons.church, dan lainnya."
 ---
 
 # Variabel Lingkungan
@@ -13,9 +14,9 @@ Setiap proyek ChurchApps menggunakan file `.env` untuk konfigurasi lokal. Setiap
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Pasang [prasyarat](./prerequisites) untuk proyek Anda
+- Pasang [prasyarat](./prerequisites.md) untuk proyek Anda
 - Kloning repositori proyek yang ingin Anda kerjakan
-- Tinjau [Ikhtisar Proyek](./project-overview) untuk memahami modul API mana yang dibutuhkan proyek Anda
+- Tinjau [Ikhtisar Proyek](./project-overview.md) untuk memahami modul API mana yang dibutuhkan proyek Anda
 
 </div>
 
@@ -64,7 +65,7 @@ Lingkungan staging (`api.staging.churchapps.org`, `api.staging.lessons.church`, 
 
 ### Opsi 2: API Lokal
 
-Jalankan proyek Api di komputer Anda. Membutuhkan MySQL 8.0+ dengan database yang sudah dibuat untuk setiap modul. Lihat panduan [penyiapan lokal API](../api/local-setup).
+Jalankan proyek Api di komputer Anda. Membutuhkan MySQL 8.0+ dengan database yang sudah dibuat untuk setiap modul. Lihat panduan [penyiapan lokal API](../api/local-setup.md).
 
 ```bash
 # Pola URL dasar

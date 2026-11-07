@@ -1,5 +1,6 @@
 ---
 title: "Chiến dịch & Cam kết"
+description: "Tạo chiến dịch gây quỹ trong B1 Admin, ghi nhận cam kết của thành viên và theo dõi tiến độ đạt mục tiêu so với số tiền dâng thực tế cho từng quỹ."
 ---
 
 # Chiến dịch & Cam kết
@@ -13,7 +14,7 @@ Chiến dịch cho phép bạn tổ chức một đợt gây quỹ hướng tớ
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Thiết lập [các quỹ quyên góp](funds) của bạn. Mỗi chiến dịch được gắn với một quỹ.
+- Thiết lập [các quỹ quyên góp](./funds.md) của bạn. Mỗi chiến dịch được gắn với một quỹ.
 - Bạn cần quyền truy cập vào mục Donations trong B1 Admin.
 
 </div>
@@ -66,6 +67,6 @@ Nhấp **Edit** trên bất kỳ dòng chiến dịch nào (hoặc **Edit Campai
 
 ## Bài viết liên quan
 
-- [Ghi nhận quyên góp](recording-donations): ghi lại các món quà thực tế để hoàn thành cam kết
-- [Quỹ](funds): thiết lập quỹ để liên kết với một chiến dịch
-- [Báo cáo quyên góp](donation-reports): báo cáo về các khoản quyên góp theo quỹ
+- [Ghi nhận quyên góp](./recording-donations.md): ghi lại các món quà thực tế để hoàn thành cam kết
+- [Quỹ](./funds.md): thiết lập quỹ để liên kết với một chiến dịch
+- [Báo cáo quyên góp](./donation-reports.md): báo cáo về các khoản quyên góp theo quỹ

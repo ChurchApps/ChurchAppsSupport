@@ -1,5 +1,6 @@
 ---
 title: "Giving 端点"
+description: "ChurchApps 奉献 API 端点参考：捐款、批次、网关、订阅和支付方式，并为与 B1 Admin 集成的开发者提供认证和权限规则。"
 ---
 
 # Giving 端点
@@ -284,6 +285,6 @@ GET /giving/gateways/configured/church-123
 
 ## 相关页面
 
-- [会员端点](./membership) —— 人员、教会、小组、角色和权限
-- [身份验证与权限](./authentication) —— 登录流程、JWT、OAuth、权限模型
-- [模块结构](../module-structure) —— 代码组织模式
+- [会员端点](./membership.md) —— 人员、教会、小组、角色和权限
+- [身份验证与权限](./authentication.md) —— 登录流程、JWT、OAuth、权限模型
+- [模块结构](../module-structure.md) —— 代码组织模式

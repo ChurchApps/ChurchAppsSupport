@@ -1,5 +1,6 @@
 ---
 title: "Importera data"
+description: "Importera befintliga personer, grupper, närvaro- och gåvoregister till B1 Admin med verktyget B1 Transfer eller exportera en säkerhetskopia när som helst."
 ---
 
 # Importera data

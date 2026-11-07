@@ -1,5 +1,6 @@
 ---
 title: "MCP-palvelin"
+description: "Ota MCP-yhteys B1-API:in käyttöön, jotta tekoälyasiakkaat, kuten Claude Code, Cursor tai Claude Desktop, voivat kutsua seurakunnan tietopäätepisteitä API-avaimilla tai OAuth-kirjautumisella."
 ---
 
 # MCP-palvelin
@@ -13,7 +14,7 @@ B1 API tarjoaa MCP-palvelimen (Model Context Protocol) osoitteessa `/mcp`. [MCP]
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [B1 API -avain](./api-keys) (`cak_…`) asianmukaisilla oikeuksilla (scopes) tai MCP-asiakas, joka voi kirjautua OAuthilla (katso [OAuth-löytäminen](#oauth-discovery))
+- [B1 API -avain](./api-keys.md) (`cak_…`) asianmukaisilla oikeuksilla (scopes) tai MCP-asiakas, joka voi kirjautua OAuthilla (katso [OAuth-löytäminen](#oauth-discovery))
 - Tavoitettavissa oleva B1 API -isäntä: `https://api.churchapps.org` isännöidyille seurakunnille tai oma käyttöönottosi
 - MCP-asiakas. Katso loppukäyttäjän asetukset: [Claude](/docs/b1-admin/integrations/claude) ja [ChatGPT](/docs/b1-admin/integrations/chatgpt)
 
@@ -119,7 +120,7 @@ Tuloksen `isError` on `true`, jos vastauksen tila on vähintään 400.
 
 ### `describe_page_builder`
 
-Ainoa ei-yleinen työkalu: staattinen, itsenäinen opas verkkosivujen rakentamiseen `/content/*`-päätepisteiden kautta. Siinä kuvataan Page → Section → Element -tietomalli, luontityönkulku, jokainen `elementType` ja sen `answersJSON`-rakenne sekä osiokohtaiset asetukset, kuten `dividerTop`- ja `dividerBottom`-muotojakajat. Mukana on myös täydellinen esimerkki alusta loppuun. Työkalu ei vaadi syötettä, ja se peilaa B1Admin-editorin elementtiluetteloa (katso [Verkkosivustojen rakentajan arkkitehtuuri](../architecture/website-builder)). Agenttien odotetaan kutsuvan sitä kerran ennen sivusisällön luomista tai muokkaamista ja toimivan sen jälkeen `api_call`-työkalulla.
+Ainoa ei-yleinen työkalu: staattinen, itsenäinen opas verkkosivujen rakentamiseen `/content/*`-päätepisteiden kautta. Siinä kuvataan Page → Section → Element -tietomalli, luontityönkulku, jokainen `elementType` ja sen `answersJSON`-rakenne sekä osiokohtaiset asetukset, kuten `dividerTop`- ja `dividerBottom`-muotojakajat. Mukana on myös täydellinen esimerkki alusta loppuun. Työkalu ei vaadi syötettä, ja se peilaa B1Admin-editorin elementtiluetteloa (katso [Verkkosivustojen rakentajan arkkitehtuuri](../architecture/website-builder.md)). Agenttien odotetaan kutsuvan sitä kerran ennen sivusisällön luomista tai muokkaamista ja toimivan sen jälkeen `api_call`-työkalulla.
 
 ## Todennusmalli
 
@@ -153,11 +154,11 @@ Jokaisen `api_call`-vastauksen runko rajataan **64 KB:iin** tallennettua tuloste
 
 ## OAuth-löytäminen
 
-MCP-palvelin ilmoittaa OAuth 2.1 -metatiedot. Näin asiakkaat, jotka muodostavat yhteyden vain OAuthilla löydettäviin palvelimiin, kuten Claude.ain "Add custom connector" -käyttöliittymä, voivat kirjata käyttäjän sisään ilman liitettyä avainta. `/mcp` on suojattu resurssi. Sen valtuutuspalvelin on olemassa oleva [OAuth-palveluntarjoaja](./connected-apps) polun `/membership/oauth` alla. B1Adminin `/oauth`-sivu on suostumusnäyttö.
+MCP-palvelin ilmoittaa OAuth 2.1 -metatiedot. Näin asiakkaat, jotka muodostavat yhteyden vain OAuthilla löydettäviin palvelimiin, kuten Claude.ain "Add custom connector" -käyttöliittymä, voivat kirjata käyttäjän sisään ilman liitettyä avainta. `/mcp` on suojattu resurssi. Sen valtuutuspalvelin on olemassa oleva [OAuth-palveluntarjoaja](./connected-apps.md) polun `/membership/oauth` alla. B1Adminin `/oauth`-sivu on suostumusnäyttö.
 
 | Päätepiste | Tarkoitus |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (sekä `/.well-known/oauth-protected-resource/mcp`) | Suojatun resurssin metatiedot (RFC 9728): `resource` on `<api>/mcp`, `authorization_servers` on API:n juuri, `scopes_supported` listaa kaikki [API-avainten oikeudet](./api-keys#scopes) |
+| `GET /.well-known/oauth-protected-resource` (sekä `/.well-known/oauth-protected-resource/mcp`) | Suojatun resurssin metatiedot (RFC 9728): `resource` on `<api>/mcp`, `authorization_servers` on API:n juuri, `scopes_supported` listaa kaikki [API-avainten oikeudet](./api-keys.md#scopes) |
 | `GET /.well-known/oauth-authorization-server` | Valtuutuspalvelimen metatiedot (RFC 8414): `authorization_endpoint` on B1Adminin `/oauth`, `token_endpoint` on `/membership/oauth/token` ja `registration_endpoint` on `/membership/oauth/register` |
 | `POST /membership/oauth/register` | Dynaaminen asiakasrekisteröinti (RFC 7591) |
 
@@ -209,8 +210,8 @@ MCP-palvelin sijaitsee Api-repon hakemistossa `src/modules/mcp/`. Tärkeimmät t
 
 ## Aiheeseen liittyvää
 
-- [API-avaimet](./api-keys)
-- [Webhookit](./webhooks)
-- [Yhdistetyt sovellukset (OAuth)](./connected-apps)
+- [API-avaimet](./api-keys.md)
+- [Webhookit](./webhooks.md)
+- [Yhdistetyt sovellukset (OAuth)](./connected-apps.md)
 - [Claude: loppukäyttäjän asetukset](/docs/b1-admin/integrations/claude)
 - [ChatGPT: loppukäyttäjän asetukset](/docs/b1-admin/integrations/chatgpt)

@@ -1,5 +1,6 @@
 ---
 title: "房间、资源和日程"
+description: "在 B1 Admin 中设置房间、设备、预订屏蔽和活动模板，使小组可以申请预订，由您批准以避免重复预订。"
 ---
 
 # 房间、资源和日程
@@ -14,7 +15,7 @@ title: "房间、资源和日程"
 <h4>开始之前</h4>
 
 - 您需要对B1 Admin中的日历部分拥有管理权限
-- 设置[小组](../groups/creating-groups)，其成员将提交预订请求
+- 设置[小组](../groups/creating-groups.md)，其成员将提交预订请求
 
 </div>
 
@@ -76,7 +77,7 @@ title: "房间、资源和日程"
 
 ## 相关文章
 
-- [可用性日历](availability) -- 一目了然地查看所有预订，直接预订房间或资源
-- [日历批准](approvals) -- 批准或拒绝房间和资源预订请求
-- [创建日历](creating-calendars) -- 设置事件日历
-- [创建小组](../groups/creating-groups) -- 设置可以预订房间和资源的小组
+- [可用性日历](./availability.md) -- 一目了然地查看所有预订，直接预订房间或资源
+- [日历批准](./approvals.md) -- 批准或拒绝房间和资源预订请求
+- [创建日历](./creating-calendars.md) -- 设置事件日历
+- [创建小组](../groups/creating-groups.md) -- 设置可以预订房间和资源的小组

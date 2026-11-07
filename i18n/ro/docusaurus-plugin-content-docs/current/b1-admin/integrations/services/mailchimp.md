@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Sincronizați persoanele și apartenența la grupuri sau liste salvate din B1 Admin cu un public Mailchimp, ca etichete, cu configurare, import inițial și depanare."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Făcând încărcarea inițială prin importatorul Mailchimp, rămâi în contro
 
 ## Alte rețete (Zapier / Make)
 
-Tot ce depășește sincronizarea audienței — etichetarea donatorilor la `donation.created`, direcția inversă Mailchimp → B1 sau sincronizarea cu o altă platformă de e-mail (Constant Contact, Brevo etc.) — este disponibil în continuare prin [Zapier](../zapier) sau [Make](../make), care se declanșează la aceleași evenimente webhook:
+Tot ce depășește sincronizarea audienței — etichetarea donatorilor la `donation.created`, direcția inversă Mailchimp → B1 sau sincronizarea cu o altă platformă de e-mail (Constant Contact, Brevo etc.) — este disponibil în continuare prin [Zapier](../zapier.md) sau [Make](../make.md), care se declanșează la aceleași evenimente webhook:
 
 - **Etichetarea donatorilor:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Bidirecțional:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ Dacă ai configurat anterior sincronizarea persoanelor și a grupurilor prin Zap
 
 - [Webhooks (referință pentru dezvoltatori)](/docs/developer/api/webhooks) — motorul de dedesubt, catalogul de evenimente, semantica livrărilor și a reîncercărilor
 - [Saved Lists](/docs/b1-admin/people/lists) — audiențe bazate pe reguli, care se mapează firesc pe etichetele Mailchimp
-- [Zapier (prezentare generală)](../zapier) — pentru rețete care depășesc sincronizarea audienței
+- [Zapier (prezentare generală)](../zapier.md) — pentru rețete care depășesc sincronizarea audienței

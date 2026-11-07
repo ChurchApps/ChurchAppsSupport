@@ -1,5 +1,7 @@
 ---
-title: "Bắt đầu"
+title: "Bắt đầu với Lessons.church"
+sidebar_label: "Bắt đầu"
+description: "Tạo tài khoản Lessons.church miễn phí, kết nối nhà thờ, thiết lập lớp học và lên lịch bài học đầu tiên. Không cần đăng ký thuê bao hay dùng thử."
 ---
 
 # Bắt đầu

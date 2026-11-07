@@ -1,5 +1,6 @@
 ---
 title: "Kushintja Emabandla"
+description: "Shintja emacaweni ku-app ye-B1 Mobile ngekukhetsa lacawe lelisetjentiswe kakhulu noma ngekufuna ngemabito, konkhe ngelokungena lunye lwe-ChurchApps."
 ---
 
 # Kushintja Emabandla
@@ -13,7 +14,7 @@ Nangabe uyilunga lelibandla lelingaphezu kwakunye, i-B1 Mobile yenta kube lula k
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- [Faka B1 Mobile](./installing) futsi [ungene](./logging-in) ku-akhawundi yakho
+- [Faka B1 Mobile](./installing.md) futsi [ungene](./logging-in.md) ku-akhawundi yakho
 
 </div>
 
@@ -24,7 +25,7 @@ Nangabe uyilunga lelibandla lelingaphezu kwakunye, i-B1 Mobile yenta kube lula k
 3. Sikrini se-**Church Search** siyavela. Emabandla lowakavakashela kamuva akhonjiswa engetulu kute ukhone kufinyelela ngekushesha.
 4. Cindzetela libandla lakamuva kute ushintjele kulo, nome bhala esikhaleni sekusesha kute utfole lelinye libandla.
 
-Nawushintja emabandla, i-app iyalayisha kabusha ngeluphawu lwalelo bandla, tixhumanisi tekuhamba, kanye nekucuketfwe. [Likhasi lakho lasekhaya](../dashboard/), [emacembu](../groups/), kanye naletinye imininingwane utakukhombisa libandla lelisha lelikhetsiwe.
+Nawushintja emabandla, i-app iyalayisha kabusha ngeluphawu lwalelo bandla, tixhumanisi tekuhamba, kanye nekucuketfwe. [Likhasi lakho lasekhaya](../dashboard/index.md), [emacembu](../groups/index.md), kanye naletinye imininingwane utakukhombisa libandla lelisha lelikhetsiwe.
 
 ## Kusesha Libandla
 

@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Yhdistä B1 Admin Claudeen ja kysy läsnäolosta, lahjoituksista ja ryhmistä selkokielellä. Mukana kirjautuminen ja rajatun oikeuden API-avain."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ Tämä on sama `/membership/people`-, `/giving/donations`- ja `/attendance/visit
 
 - [API-avaimet](/docs/developer/api/api-keys): täydellinen oikeusalueiden viite
 - [MCP-palvelin (kehittäjäviite)](/docs/developer/api/mcp): protokollan yksityiskohdat ja työkalujen skeemat
-- [ChatGPT](./chatgpt): sama idea OpenAI:n malleille
+- [ChatGPT](./chatgpt.md): sama idea OpenAI:n malleille

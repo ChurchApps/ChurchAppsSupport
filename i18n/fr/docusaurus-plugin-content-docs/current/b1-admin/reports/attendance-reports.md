@@ -1,5 +1,6 @@
 ---
 title: "Rapports de présence"
+description: "Découvrez les trois rapports de présence de B1 Admin, leur contenu, et comment les lancer et les exporter."
 ---
 
 # Rapports de présence

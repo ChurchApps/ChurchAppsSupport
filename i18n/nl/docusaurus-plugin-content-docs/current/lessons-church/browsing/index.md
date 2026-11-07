@@ -1,5 +1,6 @@
 ---
 title: "Browsing Content"
+description: "Blader zonder account door de gratis curriculumbibliotheek van Lessons.church: startpagina, bladeren per programma, zoeken en externe providers."
 ---
 
 # Browsing Content

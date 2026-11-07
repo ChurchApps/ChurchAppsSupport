@@ -1,5 +1,7 @@
 ---
-title: "Gåvor"
+title: "Givande i B1 Mobile-appen"
+sidebar_label: "Gåvor"
+description: "Ge en gåva i B1 Mobile-appen, kontrollera din gåvosumma i år och hantera sparade betalningsmetoder. Omfattar flikarna Översikt, Donera, Hantera och Historik."
 ---
 
 # Gåvor
@@ -24,7 +26,7 @@ Avsnittet för gåvor är indelat i fyra flikar:
 Alla gåvor som görs via B1 Mobile behandlas säkert genom **Stripe**. Dina betalningsuppgifter hanteras av Stripes säkra infrastruktur och lagras aldrig på ChurchApps servrar. Du kan ge med trygghet, eftersom dina ekonomiska uppgifter är skyddade.
 
 :::info
-Din församlings administratör ställer in vilka fonder och vilken betalningshantering som finns tillgängliga via [B1 Admin](../../b1-admin/). Om du inte ser något alternativ för gåvor i appen kanske din församling ännu inte har aktiverat den här funktionen.
+Din församlings administratör ställer in vilka fonder och vilken betalningshantering som finns tillgängliga via [B1 Admin](../../b1-admin/index.md). Om du inte ser något alternativ för gåvor i appen kanske din församling ännu inte har aktiverat den här funktionen.
 :::
 
 ## Vad du kan göra
@@ -38,6 +40,6 @@ Här är vad du kan göra i avsnittet för gåvor:
 
 ## Nästa steg
 
-- [Att göra en gåva](./making-donations) -- Lär dig hur du ger en gåva från appen
-- [Hantera betalningsmetoder](./managing-payments) -- Lägg till eller ta bort sparade betalningsmetoder
-- [Gåvohistorik](./donation-history) -- Visa din givandesammanfattning och tidigare gåvor
+- [Att göra en gåva](./making-donations.md) -- Lär dig hur du ger en gåva från appen
+- [Hantera betalningsmetoder](./managing-payments.md) -- Lägg till eller ta bort sparade betalningsmetoder
+- [Gåvohistorik](./donation-history.md) -- Visa din givandesammanfattning och tidigare gåvor

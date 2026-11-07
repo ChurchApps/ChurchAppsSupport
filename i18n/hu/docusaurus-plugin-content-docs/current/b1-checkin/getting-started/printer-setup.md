@@ -1,5 +1,6 @@
 ---
 title: "Nyomtató beállítása"
+description: "Hálózati címkenyomtató beállítása B1 Checkin kioszkokhoz: keresse meg a Wi-Fi-hálózaton, válassza ki, nyomtasson próbát, és mentse a beállítást."
 ---
 
 # Nyomtató beállítása
@@ -13,7 +14,7 @@ A B1 Church Checkin hálózati címkenyomtatóra tud névcímkéket és szülői
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- [Jelentkezzen be](./logging-in) a B1 Church Checkin alkalmazásba, és válassza ki a gyülekezetét
+- [Jelentkezzen be](./logging-in.md) a B1 Church Checkin alkalmazásba, és válassza ki a gyülekezetét
 - Csatlakoztasson egy kompatibilis hálózati címkenyomtatót ugyanahhoz a Wi-Fi hálózathoz, mint a táblagép
 
 </div>
@@ -87,4 +88,4 @@ Ha a kioszkot másik helyre viszi, vagy megváltoztatja a hálózati beállítá
 
 ## Következő lépések
 
-A nyomtató beállítása után készen áll a bejelentkeztetésre. A teljes folyamatról a [bejelentkeztetési folyamat](../check-in/) oldalon olvashat, a [szolgálat kiválasztásával](../check-in/selecting-service) kezdve.
+A nyomtató beállítása után készen áll a bejelentkeztetésre. A teljes folyamatról a [bejelentkeztetési folyamat](../check-in/index.md) oldalon olvashat, a [szolgálat kiválasztásával](../check-in/selecting-service.md) kezdve.

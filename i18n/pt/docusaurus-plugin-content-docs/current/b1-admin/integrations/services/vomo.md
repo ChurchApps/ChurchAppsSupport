@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Conecte inscrições de voluntários e check-ins de quiosque da VOMO a pessoas e grupos do B1 Admin com o Zapier, incluindo escopos da chave de API e passos."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ Quando o projeto VOMO termina, limpe manualmente o grupo B1 (ou emparelhe isso c
 
 ### Enviar um "obrigado por se inscrever" texto via SMS
 
-Cadeia VOMO Participação → Clearstream Enviar Texto ou Text In Church Enviar Mensagem no mesmo Zap. Ambos têm ações Zapier de primeira classe — veja [Clearstream](./clearstream) e [Text In Church](./text-in-church).
+Cadeia VOMO Participação → Clearstream Enviar Texto ou Text In Church Enviar Mensagem no mesmo Zap. Ambos têm ações Zapier de primeira classe — veja [Clearstream](./clearstream.md) e [Text In Church](./text-in-church.md).
 
 ### Detectar desistência
 
@@ -91,6 +92,6 @@ Execute um gatilho Zapier diário de *Cronograma* que chama Procurar Organizador
 
 ## Veja Também
 
-- [Zapier (visão geral)](../zapier) — lado B1 de cada receita Zapier
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — emparelhe inscrições de voluntários com confirmações de SMS
+- [Zapier (visão geral)](../zapier.md) — lado B1 de cada receita Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — emparelhe inscrições de voluntários com confirmações de SMS
 - [Webhooks (referência de desenvolvedor)](/docs/developer/api/webhooks) — os eventos em que VOMO pode disparar

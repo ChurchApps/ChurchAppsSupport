@@ -1,5 +1,6 @@
 ---
 title: "Schermen en groepen beheren"
+description: "Zie welke FreePlay-tv's online en klaar zijn voor zondag, pas schermen aan en maak groepen die één agenda delen in FreePlay Admin."
 ---
 
 # Schermen en groepen beheren
@@ -14,7 +15,7 @@ De pagina **Schermen** in FreePlay Admin toont elke tv die aan uw kerk is gekopp
 <h4>Voordat u begint</h4>
 
 - Meld u aan bij FreePlay Admin op [admin.freeplay.church](https://admin.freeplay.church)
-- [Koppel minstens één scherm](./pairing-a-screen)
+- [Koppel minstens één scherm](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Gebruik **Presenteren** om de kalender van het scherm in uw browser af te spelen
 
 Klik op het label van een scherm om de pagina te openen. Links staat:
 
-- **Presenteren in browser** - Speel de kalender van dit scherm op volledig scherm af in uw browser, zoals het op de tv zou eruitzien. Zie [Presenteren vanuit een browser](./scheduled-playback#presenting-from-a-browser)
+- **Presenteren in browser** - Speel de kalender van dit scherm op volledig scherm af in uw browser, zoals het op de tv zou eruitzien. Zie [Presenteren vanuit een browser](./scheduled-playback.md#presenting-from-a-browser)
 - **Bewerken** - Wijzig het label, de groep of de modus
 - **Meer** > **Ontkoppelen** - Koppel de tv los. Hij toont dan weer een koppelcode
 
@@ -93,6 +94,6 @@ Het verwijderen van een groep verwijdert ook de planning ervan. Schermen in die 
 
 ## Gerelateerde artikelen
 
-- **[Een scherm koppelen](./pairing-a-screen)** - Een nieuwe tv toevoegen
-- **[De kalender plannen](./scheduling-the-calendar)** - Instellen wat elke groep afspeelt en de standaardlus
-- **[Geplande weergave op de tv](./scheduled-playback)** - Wat de datum "Klaar tot" op de tv zelf betekent
+- **[Een scherm koppelen](./pairing-a-screen.md)** - Een nieuwe tv toevoegen
+- **[De kalender plannen](./scheduling-the-calendar.md)** - Instellen wat elke groep afspeelt en de standaardlus
+- **[Geplande weergave op de tv](./scheduled-playback.md)** - Wat de datum "Klaar tot" op de tv zelf betekent

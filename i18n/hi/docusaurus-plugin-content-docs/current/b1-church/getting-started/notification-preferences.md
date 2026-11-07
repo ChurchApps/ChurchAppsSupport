@@ -1,5 +1,6 @@
 ---
 title: "Notification Preferences"
+description: "B1 Admin और B1 ऐप में एक ही स्क्रीन से हर सूचना प्रकार के लिए सूचना चैनल, ईमेल आवृत्ति, शांत घंटे और टेक्स्ट से बाहर निकलने के विकल्प सेट करें।"
 ---
 
 # Notification Preferences
@@ -60,6 +61,6 @@ texts मिलना बंद करने के लिए **Text messages** 
 
 ## संबंधित
 
-- [Volunteer Sign-Up](../serving/volunteer-signup) -- serving reminders और schedule अनुरोधों का जवाब देना
-- [Registering for Events](../events/registering) -- ऐसे events के लिए साइन अप करें जो reminders भेजते हैं
-- [Installing the App](installing-pwa) -- push notifications प्राप्त करने के लिए अपने device पर B1 जोड़ें
+- [Volunteer Sign-Up](../serving/volunteer-signup.md) -- serving reminders और schedule अनुरोधों का जवाब देना
+- [Registering for Events](../events/registering.md) -- ऐसे events के लिए साइन अप करें जो reminders भेजते हैं
+- [Installing the App](./installing-pwa.md) -- push notifications प्राप्त करने के लिए अपने device पर B1 जोड़ें

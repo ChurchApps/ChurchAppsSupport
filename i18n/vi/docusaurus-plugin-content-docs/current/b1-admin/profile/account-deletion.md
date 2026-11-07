@@ -1,5 +1,6 @@
 ---
 title: "Xem xét yêu cầu xóa tài khoản"
+description: "Duyệt hoặc từ chối yêu cầu xóa tài khoản của thành viên trong B1 Admin, chuyển qua Nhóm duyệt danh bạ và đáp ứng thời hạn 30 ngày theo GDPR."
 ---
 
 # Xem xét yêu cầu xóa tài khoản

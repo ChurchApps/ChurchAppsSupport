@@ -1,5 +1,6 @@
 ---
 title: "Aprovando Alterações de Perfil"
+description: "Revise e aprove pedidos de alteração de perfil de membros no B1 Admin e configure o Grupo de Aprovação do Diretório que os recebe."
 ---
 
 # Aprovando Alterações de Perfil

@@ -1,5 +1,6 @@
 ---
 title: "Stripe 가져오기"
+description: "B1 Admin으로 Stripe 헌금을 가져옵니다. 미리보기 방식으로 각 결제를 신규, 이미 가져옴, 건너뜀으로 표시한 뒤 확정할 수 있습니다."
 ---
 
 # Stripe 가져오기

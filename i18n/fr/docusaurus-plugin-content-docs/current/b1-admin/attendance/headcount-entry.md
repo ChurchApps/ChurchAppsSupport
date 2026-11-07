@@ -1,5 +1,6 @@
 ---
 title: "Entrée et tendance du décompte"
+description: "Saisissez un nombre total de participants pour un service ou un groupe dans B1 Admin sans liste nominative, puis suivez ces totaux semaine après semaine dans le rapport Tendance des effectifs."
 ---
 
 # Entrée et tendance du décompte

@@ -1,5 +1,6 @@
 ---
 title: "Quản lý hồ sơ của bạn"
+description: "Cập nhật tài khoản ChurchApps trong B1 Admin: sửa tên, email và mật khẩu, bật đăng nhập hai bước, chọn giao diện hoặc xóa tài khoản."
 ---
 
 # Quản lý hồ sơ của bạn

@@ -1,5 +1,7 @@
 ---
-title: "Aanmelden"
+title: "Inloggen bij B1.church en het ledenportaal"
+sidebar_label: "Aanmelden"
+description: "Log in op je B1.church-ledenportaal met tweestapscodes of single sign-on, herstel een vergeten wachtwoord en log uit via je accountmenu."
 ---
 
 # Aanmelden
@@ -13,7 +15,7 @@ Door je bij B1.church aan te melden, krijg je toegang tot het lidmaatschapsporta
 <div class="prereqs">
 <h4>Voorbepaling</h4>
 
-- Je hebt een ChurchApps-account nodig. Zie [Aan de slag](../getting-started/) om een account aan te maken.
+- Je hebt een ChurchApps-account nodig. Zie [Aan de slag](./index.md) om een account aan te maken.
 - Je hebt de B1.church URL van je kerk nodig (bijvoorbeeld `https://yourchurchname.b1.church`).
 
 </div>
@@ -29,7 +31,7 @@ Na aanmelden word je teruggebracht naar de pagina die je was bezig. Als je recht
 
 ## Het lidmaatschapsportaal openen
 
-Nadat je bent ingelogd, kun je het lidmaatschapsportaal openen door op je **naam** in de rechterbovenhoek van de pagina te klikken en **Lidmaatschapsportaal** in het menu te selecteren. Het lidmaatschapsportaal is waar al je persoonlijke kerkgereedschappen zich bevinden, inclusief je [tijdlijn](../community/timeline.md), [groepen](../groups/), [geven](../giving/) en meer.
+Nadat je bent ingelogd, kun je het lidmaatschapsportaal openen door op je **naam** in de rechterbovenhoek van de pagina te klikken en **Lidmaatschapsportaal** in het menu te selecteren. Het lidmaatschapsportaal is waar al je persoonlijke kerkgereedschappen zich bevinden, inclusief je [tijdlijn](../community/timeline.md), [groepen](../groups/index.md), [geven](../giving/index.md) en meer.
 
 ## Je gebruikersmenu
 

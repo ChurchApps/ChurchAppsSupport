@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "I-set up nang lokal ang LessonsApp na Next.js lesson editor sa Node.js 22+, ituro sa lokal na LessonsApi, at unawain ang build at S3/CloudFront deployment."
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ Ang LessonsApp ang application sa pamamahala ng nilalaman ng aralin para sa [Les
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-install ang **Node.js 22+** at **Git** -- tingnan ang [Prerequisites](../setup/prerequisites)
-- I-configure ang iyong API target (lokal na LessonsApi) -- tingnan ang [Environment Variables](../setup/environment-variables)
+- I-install ang **Node.js 22+** at **Git** -- tingnan ang [Prerequisites](../setup/prerequisites.md)
+- I-configure ang iyong API target (lokal na LessonsApi) -- tingnan ang [Environment Variables](../setup/environment-variables.md)
 
 </div>
 
@@ -81,5 +82,5 @@ Ang mga production build ay dine-deploy sa **S3 + CloudFront**:
 3. Pinapatakbo ang CloudFront invalidation para maihain ang bagong bersyon
 
 :::tip
-Para sa detalyadong tagubilin sa deployment, tingnan ang gabay na [Web App Deployment](../deployment/web-apps).
+Para sa detalyadong tagubilin sa deployment, tingnan ang gabay na [Web App Deployment](../deployment/web-apps.md).
 :::

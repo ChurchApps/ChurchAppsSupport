@@ -1,5 +1,6 @@
 ---
 title: "Integrasjoner"
+description: "Koble B1 Admin til Slack, Discord, Zapier, Make, Google Sheets og KI-assistenter som Claude, med oppsettstegene og API-nøkkeltillatelsene hver trenger."
 ---
 
 # Integrasjoner
@@ -14,21 +15,21 @@ B1 kobler seg til verktøyene teamet ditt allerede bruker. Koble til Slack eller
 
 | Integrasjon | Hva den gjør | Retning | Innsats for oppsett |
 |---|---|---|---|
-| **[Slack](./slack-discord)** | Sender lesbare varsler (nye personer, gaver, påmeldinger, …) til en Slack-kanal | B1 → Slack | 2 minutter |
-| **[Discord](./slack-discord)** | Samme, i en Discord-kanal | B1 → Discord | 2 minutter |
-| **[Zapier](./zapier)** | Bruk B1-hendelser som utløsere og B1-handlinger i en av Zapiers over 7 000 apper | Begge veier | 5–10 min per Zap |
-| **[Make](./make)** | Samme idé som Zapier, i Makes visuelle scenariobygger | Begge veier | 5–10 min per scenario |
-| **[Google Sheets](./google-sheets)** | Eksporter personer / gaver / grupper / oppmøte til et regneark etter behov | B1 → regneark | 5 minutter |
-| **[Claude](./claude)** | Still Anthropics Claude spørsmål om menighetsdataene dine, avgrenset til tillatelsene dine — gratis å prøve, anbefalt | Begge veier | Under 3 minutter |
-| **[ChatGPT](./chatgpt)** | Samme idé med OpenAIs ChatGPT (krever et betalt ChatGPT-abonnement) | Begge veier | 10 minutter |
-| **[Tilkoblede tjenester](./services/)** | Utvalgte oppskrifter for Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Varierer | 5–10 min hver |
+| **[Slack](./slack-discord.md)** | Sender lesbare varsler (nye personer, gaver, påmeldinger, …) til en Slack-kanal | B1 → Slack | 2 minutter |
+| **[Discord](./slack-discord.md)** | Samme, i en Discord-kanal | B1 → Discord | 2 minutter |
+| **[Zapier](./zapier.md)** | Bruk B1-hendelser som utløsere og B1-handlinger i en av Zapiers over 7 000 apper | Begge veier | 5–10 min per Zap |
+| **[Make](./make.md)** | Samme idé som Zapier, i Makes visuelle scenariobygger | Begge veier | 5–10 min per scenario |
+| **[Google Sheets](./google-sheets.md)** | Eksporter personer / gaver / grupper / oppmøte til et regneark etter behov | B1 → regneark | 5 minutter |
+| **[Claude](./claude.md)** | Still Anthropics Claude spørsmål om menighetsdataene dine, avgrenset til tillatelsene dine — gratis å prøve, anbefalt | Begge veier | Under 3 minutter |
+| **[ChatGPT](./chatgpt.md)** | Samme idé med OpenAIs ChatGPT (krever et betalt ChatGPT-abonnement) | Begge veier | 10 minutter |
+| **[Tilkoblede tjenester](./services/index.md)** | Utvalgte oppskrifter for Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Varierer | 5–10 min hver |
 
 ## Hvordan velge
 
 - **Vil du bare ha et varsel i chatten?** Bruk **Slack** eller **Discord** — ingen konto hos tredjepart, ingen Zap å vedlikeholde. Konfigureres helt i B1Admin.
 - **Vil du automatisere noe på tvers av apper** (f.eks. «når noen gir, legg dem til i Mailchimp-listen min og i Slack #donations»)? Bruk **Zapier** eller **Make**. Zapier er vennligere; Make er billigere i stor skala og har mer fleksibel logikk.
 - **Trenger du et engangsuttrekk av data eller en planlagt rapport?** Bruk **Google Sheets** — lim inn en API-nøkkel i sidepanelet til tillegget og klikk på Eksporter.
-- **Vil du stille spørsmål i vanlig språk** («hvor mange førstegangsbesøkende kom sist søndag?», «oppsummer gavene denne måneden»)? Start med **[Claude](./claude)** — det er gratis å prøve og settes opp på under 3 minutter. **[ChatGPT](./chatgpt)** fungerer også med et betalt abonnement. Claude kobles til ved å logge inn med B1-kontoen din; ChatGPT bruker en B1 API-nøkkel.
+- **Vil du stille spørsmål i vanlig språk** («hvor mange førstegangsbesøkende kom sist søndag?», «oppsummer gavene denne måneden»)? Start med **[Claude](./claude.md)** — det er gratis å prøve og settes opp på under 3 minutter. **[ChatGPT](./chatgpt.md)** fungerer også med et betalt abonnement. Claude kobles til ved å logge inn med B1-kontoen din; ChatGPT bruker en B1 API-nøkkel.
 - **Bygger du en egen integrasjon?** Ingen av de over — snakk med [REST-API-et](/docs/developer/api) direkte med en [API-nøkkel](/docs/developer/api/api-keys), eller abonner en server du kontrollerer på [webhooks](/docs/developer/api/webhooks).
 
 ## Det de har felles
@@ -59,10 +60,10 @@ Hvis ingenting av det over passer, er hver B1-flate åpen:
 
 ## Neste steg
 
-- [Slack og Discord](./slack-discord) — send chatvarsler
-- [Zapier](./zapier) — koble til over 7 000 apper
-- [Make](./make) — visuell arbeidsflytautomatisering
-- [Google Sheets](./google-sheets) — eksporter til regneark
-- [Claude](./claude) — still Claude spørsmål om menighetsdataene dine
-- [ChatGPT](./chatgpt) — still ChatGPT spørsmål om menighetsdataene dine
-- [Tilkoblede tjenester](./services/) — oppskrifter per tjeneste (Mailchimp, Donorbox, Clearstream, …)
+- [Slack og Discord](./slack-discord.md) — send chatvarsler
+- [Zapier](./zapier.md) — koble til over 7 000 apper
+- [Make](./make.md) — visuell arbeidsflytautomatisering
+- [Google Sheets](./google-sheets.md) — eksporter til regneark
+- [Claude](./claude.md) — still Claude spørsmål om menighetsdataene dine
+- [ChatGPT](./chatgpt.md) — still ChatGPT spørsmål om menighetsdataene dine
+- [Tilkoblede tjenester](./services/index.md) — oppskrifter per tjeneste (Mailchimp, Donorbox, Clearstream, …)

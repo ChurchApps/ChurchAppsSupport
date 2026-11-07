@@ -1,5 +1,6 @@
 ---
 title: "Vytvoření účtu"
+description: "Zaregistrujte si účet ChurchApps na B1.church, ověřte e-mail a vytvořte nebo se připojte ke církvi, abyste mohli začít s nastavením B1 Admin."
 ---
 
 # Vytvoření účtu

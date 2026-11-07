@@ -1,5 +1,7 @@
 ---
-title: "Načrtovanje lekcij"
+title: "Načrtovanje ur v učilnicah v portalu"
+sidebar_label: "Načrtovanje lekcij"
+description: "Načrtuj ure Lessons.church v koledarju učilnice v portalu B1 Admin: za vsak datum izberi program, študijo, uro in prostor za določeno starost."
 ---
 
 # Načrtovanje lekcij

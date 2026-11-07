@@ -1,12 +1,13 @@
 ---
 title: "Evenemangsregistreringar"
+description: "Så fungerar evenemangsanmälningar i B1 Admin och B1App: deltagartyper, betalda tillval, rabattkoder, betalningar via givar-gatewayen och befordran från väntelistan."
 ---
 
 # Evenemangsregistreringar
 
 <div class="article-intro">
 
-Inbyggd evenemangsregistrering finns i innehållsmodulen och har sedan betalda registreringar-vågen en komplett handelsmodell: prissatta deltagartyper, prissatta tilläggsval, rabattkoder, betalningar via kyrkans befintliga givandegateway samt en statusstyrd väntelista. Betalningsvägen återanvänder avsiktligt givandestacken. Registreringskontrollern debiterar via samma `GatewayService` / `IGatewayProvider`-abstraktion som beskrivs i [Givande](./giving), så varken kortdata eller kunskap om gateway-SDK:er finns i innehållsmodulen. Den här sidan beskriver datamodellen, reglerna för priser och kapacitet samt flödena för registrering, betalning och väntelista.
+Inbyggd evenemangsregistrering finns i innehållsmodulen och har sedan betalda registreringar-vågen en komplett handelsmodell: prissatta deltagartyper, prissatta tilläggsval, rabattkoder, betalningar via kyrkans befintliga givandegateway samt en statusstyrd väntelista. Betalningsvägen återanvänder avsiktligt givandestacken. Registreringskontrollern debiterar via samma `GatewayService` / `IGatewayProvider`-abstraktion som beskrivs i [Givande](./giving.md), så varken kortdata eller kunskap om gateway-SDK:er finns i innehållsmodulen. Den här sidan beskriver datamodellen, reglerna för priser och kapacitet samt flödena för registrering, betalning och väntelista.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Tokenisering sker i webbläsaren precis som för donationer (se [Givande](./giving)). Guiden återanvänder apphelper-registret för betalningsleverantörer, så inloggade medlemmar kan betala med sparade kort och gäster tokeniserar ett nytt kort. Kontrollern speglar `DonateController`:s särdrag för leverantörer (Kingdom Funding-betalmetods-id:n `pm-{id}` samt Stripe SCA-svar `requires_action`, som returneras till klienten utan att någon betalning registreras). En lyckad debitering skriver en rad i `registrationPayments`, ökar `amountPaid` och bekräftar registreringen. **Återbetalningar är inte implementerade.** En avbruten betald registrering behåller sina betalningsrader, och eventuella återbetalningar hanteras utanför systemet i gatewayns instrumentpanel.
+Tokenisering sker i webbläsaren precis som för donationer (se [Givande](./giving.md)). Guiden återanvänder apphelper-registret för betalningsleverantörer, så inloggade medlemmar kan betala med sparade kort och gäster tokeniserar ett nytt kort. Kontrollern speglar `DonateController`:s särdrag för leverantörer (Kingdom Funding-betalmetods-id:n `pm-{id}` samt Stripe SCA-svar `requires_action`, som returneras till klienten utan att någon betalning registreras). En lyckad debitering skriver en rad i `registrationPayments`, ökar `amountPaid` och bekräftar registreringen. **Återbetalningar är inte implementerade.** En avbruten betald registrering behåller sina betalningsrader, och eventuella återbetalningar hanteras utanför systemet i gatewayns instrumentpanel.
 
 Båda ingångspunkterna använder samma kodväg: `register` (betalning vid anmälan) och `pay` (betalning av restbelopp eller slutförande från väntelistan).
 
@@ -147,7 +148,7 @@ Uppslag över moduler (att hitta eller skapa gästens person och hämta kyrkan f
 
 ## Relaterade sidor
 
-- [Givande](./giving): gateway-abstraktionen, leverantörsregistret och tokeniseringsmodellen som den här funktionen återanvänder
-- [Content-endpoints](../api/endpoints/content): innehållsmodulens REST-gränssnitt
-- [Webhooks](../api/webhooks): händelsen `registration.created`
-- [Modulstruktur](../api/module-structure): hur innehållsmodulen är organiserad på serversidan
+- [Givande](./giving.md): gateway-abstraktionen, leverantörsregistret och tokeniseringsmodellen som den här funktionen återanvänder
+- [Content-endpoints](../api/endpoints/content.md): innehållsmodulens REST-gränssnitt
+- [Webhooks](../api/webhooks.md): händelsen `registration.created`
+- [Modulstruktur](../api/module-structure.md): hur innehållsmodulen är organiserad på serversidan

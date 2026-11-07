@@ -1,5 +1,7 @@
 ---
-title: "Adomány küldése"
+title: "Adomány küldése a B1 Mobile alkalmazásban"
+sidebar_label: "Adomány küldése"
+description: "Adakozz gyülekezetednek a B1 Mobile Adakozás fülről: válassz alapot, add meg az összeget, fizess Stripe-pal, és gyorsan ismételd meg a korábbi adományokat."
 ---
 
 # Adomány küldése
@@ -13,8 +15,8 @@ Az adományozás a B1 Mobile alkalmazáson keresztül gyors és egyszerű. Az ad
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- [Telepítse a B1 Mobile alkalmazást](../getting-started/installing), és [jelentkezzen be](../getting-started/logging-in) fiókjába
-- Legyen kész hitel- vagy bankkártyája, vagy [mentsen el egy fizetési módot](./managing-payments) előre
+- [Telepítse a B1 Mobile alkalmazást](../getting-started/installing.md), és [jelentkezzen be](../getting-started/logging-in.md) fiókjába
+- Legyen kész hitel- vagy bankkártyája, vagy [mentsen el egy fizetési módot](./managing-payments.md) előre
 
 </div>
 
@@ -42,10 +44,10 @@ Az elküldés előtt ellenőrizze újra az adomány összegét és alapját. Az 
 Ha ugyanazt az összeget szeretné adni, mint legutóbbi adománya, nem kell végigmennie a teljes adományozási folyamaton. Az **Áttekintés** lapon látható legutóbbi adománya, mellette egy **Ismétlés** gombbal. Koppintson rá, és a sors azonos adományt gyorsan újra elküldi.
 
 :::tip
-Ha rendszeresen szeretne adakozni, mentse el fizetési módját a **Kezelés** lapon, hogy legközelebb még gyorsabban adhasson. Részletekért lásd: [Fizetési módok kezelése](./managing-payments).
+Ha rendszeresen szeretne adakozni, mentse el fizetési módját a **Kezelés** lapon, hogy legközelebb még gyorsabban adhasson. Részletekért lásd: [Fizetési módok kezelése](./managing-payments.md).
 :::
 
 ## Kapcsolódó cikkek
 
-- [Fizetési módok kezelése](./managing-payments) -- Kártya mentése a gyorsabb jövőbeli adakozáshoz
-- [Adománytörténet](./donation-history) -- Adakozási összesítő és korábbi adományok megtekintése
+- [Fizetési módok kezelése](./managing-payments.md) -- Kártya mentése a gyorsabb jövőbeli adakozáshoz
+- [Adománytörténet](./donation-history.md) -- Adakozási összesítő és korábbi adományok megtekintése

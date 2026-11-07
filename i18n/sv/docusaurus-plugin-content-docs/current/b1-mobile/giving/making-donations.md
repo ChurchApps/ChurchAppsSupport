@@ -1,5 +1,7 @@
 ---
-title: "Gör en gåva"
+title: "Göra en donation i B1 Mobile"
+sidebar_label: "Gör en gåva"
+description: "Ge till din församling från fliken Donera i B1 Mobile: välj en fond, ange ett belopp, betala med Stripe och upprepa tidigare gåvor snabbt."
 ---
 
 # Gör en gåva
@@ -13,8 +15,8 @@ Att ge via B1 Mobile är snabbt och enkelt. Fliken **Donera** i avsnittet för g
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Installera B1 Mobile](../getting-started/installing) och [logga in](../getting-started/logging-in) på ditt konto
-- Ha ett kredit- eller bankkort till hands, eller [spara en betalningsmetod](./managing-payments) i förväg
+- [Installera B1 Mobile](../getting-started/installing.md) och [logga in](../getting-started/logging-in.md) på ditt konto
+- Ha ett kredit- eller bankkort till hands, eller [spara en betalningsmetod](./managing-payments.md) i förväg
 
 </div>
 
@@ -42,10 +44,10 @@ Dubbelkontrollera donationsbeloppet och fonden innan du skickar in. Donationer b
 Om du vill ge samma belopp som din senaste donation behöver du inte gå igenom hela donationsflödet. Fliken **Översikt** visar din senaste gåva tillsammans med en knapp för **Upprepa**. Tryck på den för att snabbt skicka samma donation igen.
 
 :::tip
-Om du planerar att ge regelbundet kan du spara din betalningsmetod i fliken **Hantera** så att du kan donera ännu snabbare nästa gång. Se [Hantera betalningsmetoder](./managing-payments) för mer information.
+Om du planerar att ge regelbundet kan du spara din betalningsmetod i fliken **Hantera** så att du kan donera ännu snabbare nästa gång. Se [Hantera betalningsmetoder](./managing-payments.md) för mer information.
 :::
 
 ## Relaterade artiklar
 
-- [Hantera betalningsmetoder](./managing-payments) -- Spara ett kort för snabbare framtida givande
-- [Donationshistorik](./donation-history) -- Visa din gåvosammanfattning och tidigare donationer
+- [Hantera betalningsmetoder](./managing-payments.md) -- Spara ett kort för snabbare framtida givande
+- [Donationshistorik](./donation-history.md) -- Visa din gåvosammanfattning och tidigare donationer

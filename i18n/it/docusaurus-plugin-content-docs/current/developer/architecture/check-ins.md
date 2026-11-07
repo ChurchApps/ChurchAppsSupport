@@ -1,5 +1,6 @@
 ---
 title: "Check-in"
+description: "Come funziona il check-in tra B1Checkin, B1App e B1 Admin: modello delle presenze, gruppi come stanze, limiti di capienza e regole di sicurezza."
 ---
 
 # Check-in
@@ -216,7 +217,7 @@ L'iscrizione tramite QR è guidata dalle impostazioni della chiesa salvate dalla
 
 ## Pagine correlate
 
-- [Endpoint Presenze](../api/endpoints/attendance) -- Superficie REST completa per sedi, culti, sessioni, visite e visitSessions
-- [Endpoint Membership](../api/endpoints/membership) -- Persone, nuclei familiari e gruppi
-- [Webhook](../api/webhooks) -- Gli eventi `session.created`, `attendance.recorded` e `attendance.checkout`
-- [Struttura del modulo](../api/module-structure) -- Come è organizzato lato server il modulo presenze
+- [Endpoint Presenze](../api/endpoints/attendance.md) -- Superficie REST completa per sedi, culti, sessioni, visite e visitSessions
+- [Endpoint Membership](../api/endpoints/membership.md) -- Persone, nuclei familiari e gruppi
+- [Webhook](../api/webhooks.md) -- Gli eventi `session.created`, `attendance.recorded` e `attendance.checkout`
+- [Struttura del modulo](../api/module-structure.md) -- Come è organizzato lato server il modulo presenze

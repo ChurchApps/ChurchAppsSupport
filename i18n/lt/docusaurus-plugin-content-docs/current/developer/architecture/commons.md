@@ -1,5 +1,6 @@
 ---
 title: "Content Commons"
+description: "Kaip vartotojų pateiktos dainos, pamokos ir šablonai eina per bendrą moderavimo eilę B1 Admin Serverio administravime – nuo pateikimo iki paskelbimo."
 ---
 
 # Content Commons — bendroji medžiagų biblioteka ir moderavimas

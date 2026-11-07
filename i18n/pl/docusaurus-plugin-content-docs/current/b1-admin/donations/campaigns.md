@@ -1,5 +1,6 @@
 ---
 title: "Kampanie i zobowiązania"
+description: "Twórz kampanie zbiórek w B1 Admin, zapisuj zobowiązania członków i śledź postęp do celu na tle faktycznych darowizn na każdy fundusz."
 ---
 
 # Kampanie i zobowiązania
@@ -13,7 +14,7 @@ Kampanie pozwalają prowadzić zbiórkę na konkretny cel, na przykład fundusz 
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Skonfiguruj [fundusze darowizn](funds). Każda kampania jest powiązana z jednym funduszem.
+- Skonfiguruj [fundusze darowizn](./funds.md). Każda kampania jest powiązana z jednym funduszem.
 - Potrzebujesz dostępu do sekcji Darowizny w B1 Admin.
 
 </div>
@@ -66,6 +67,6 @@ Kliknij **Edytuj** w wierszu dowolnej kampanii (lub **Edytuj kampanię** u góry
 
 ## Powiązane artykuły
 
-- [Rejestrowanie darowizn](recording-donations) — zapisywanie rzeczywistych wpłat, które realizują zobowiązania
-- [Fundusze](funds) — konfigurowanie funduszu powiązanego z kampanią
-- [Raporty darowizn](donation-reports) — raporty darowizn według funduszy
+- [Rejestrowanie darowizn](./recording-donations.md) — zapisywanie rzeczywistych wpłat, które realizują zobowiązania
+- [Fundusze](./funds.md) — konfigurowanie funduszu powiązanego z kampanią
+- [Raporty darowizn](./donation-reports.md) — raporty darowizn według funduszy

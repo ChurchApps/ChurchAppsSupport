@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Conecta B1 Admin con Zapier para iniciar automatizaciones con nuevas personas, donaciones y miembros de grupos, y escribir registros en B1 sin programar."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Elija un disparador y luego agregue uno o más pasos de acción. Ejemplos a cont
 ### Publicar donativos en un canal de Slack con una tarjeta más completa que el conector integrado
 
 - **Disparador**: B1: Nuevo donativo
-- **Acción**: Slack: Enviar mensaje a canal. Arme cualquier diseño (botones, adjuntos, etc.) que el [conector de Slack](./slack-discord) integrado no permite.
+- **Acción**: Slack: Enviar mensaje a canal. Arme cualquier diseño (botones, adjuntos, etc.) que el [conector de Slack](./slack-discord.md) integrado no permite.
 
 ### Agregar nuevos miembros de grupo a un Grupo de Google
 
@@ -106,6 +107,6 @@ Esto significa que el disparador solo se activa con eventos que ocurren **despu�
 
 ## Consulte también
 
-- [Make](./make): el mismo patrón, en otra plataforma
-- [Slack y Discord](./slack-discord): notificaciones de chat más simples sin Zapier
+- [Make](./make.md): el mismo patrón, en otra plataforma
+- [Slack y Discord](./slack-discord.md): notificaciones de chat más simples sin Zapier
 - [Webhooks (referencia para desarrolladores)](/docs/developer/api/webhooks)

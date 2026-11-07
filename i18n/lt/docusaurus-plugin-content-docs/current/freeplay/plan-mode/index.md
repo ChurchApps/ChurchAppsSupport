@@ -1,5 +1,6 @@
 ---
 title: "Plan Mode"
+description: "Prijunkite FreePlay televizorių prie bažnyčios pamaldų plano iš B1 Admin, kad jis rodytų einamosios savaitės pamokas, pristatymus ir mediją tvarka."
 ---
 
 # Plan Mode
@@ -12,13 +13,13 @@ Plan Mode povezuje vaš televizor su bažnyčios tarnystės planu. Užuot rodęs
 
 ## Kuo skiriasi nuo kitų režimų
 
-- **[Tvarkaraščio režimas](../scheduled-mode/)** paleidžia grojaraščius iš FreePlay Admin kalendoriaus nustatytu laiku, be to, kad kas nors paspaustų Start
+- **[Tvarkaraščio režimas](../scheduled-mode/index.md)** paleidžia grojaraščius iš FreePlay Admin kalendoriaus nustatytu laiku, be to, kad kas nors paspaustų Start
 - **Plano režimas** įkelia turinį, susijusį su plano tipu, kuris gali apimti pamokas, tiekėjų pristatymus, papildinius ir kitą mediją, surikiuotą pagal pasirinktą tvarką
 
 Plano režimas ypač naudingas, kai jūsų tarnystės plane yra įvairių šaltinių turinio, sudėto į vieną seką.
 
 :::tip
-Norite, kad dabartinis planas paleistų automatiškai nustatytu laiku? FreePlay Admin programoje pridėkite kalendoriaus įrašą ir skiltyje **Service plans** pasirinkite plano tipą. Žr. [Kalendoriaus planavimas](../scheduled-mode/scheduling-the-calendar).
+Norite, kad dabartinis planas paleistų automatiškai nustatytu laiku? FreePlay Admin programoje pridėkite kalendoriaus įrašą ir skiltyje **Service plans** pasirinkite plano tipą. Žr. [Kalendoriaus planavimas](../scheduled-mode/scheduling-the-calendar.md).
 :::
 
 ## Kaip tai veikia
@@ -32,4 +33,4 @@ Televizorius lieka susietas su plano tipu. Kiekvieną savaitę jis automatiškai
 
 ## Šiame skyriuje
 
-- **[Įrenginio susiejimas](./device-pairing)** - Kaip sugeneruoti susiejimo kodą ir jį įvesti
+- **[Įrenginio susiejimas](./device-pairing.md)** - Kaip sugeneruoti susiejimo kodą ir jį įvesti

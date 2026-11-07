@@ -1,5 +1,6 @@
 ---
 title: "Vyhledávání"
+description: "Hledání programů, studií a lekcí v knihovně Lessons.church podle klíčového slova nebo biblického příběhu a jak jsou výsledky řazeny a označeny."
 ---
 
 # Vyhledávání

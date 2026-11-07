@@ -1,5 +1,7 @@
 ---
-title: "Đăng ký tình nguyện"
+title: "Đăng ký tình nguyện trong ứng dụng B1 Mobile"
+sidebar_label: "Đăng ký tình nguyện"
+description: "Tìm vị trí tình nguyện còn trống cho các buổi lễ sắp tới, đăng ký, hoặc gỡ đăng ký trong ứng dụng B1 Mobile. Bao gồm thời hạn và cách giới hạn số chỗ."
 ---
 
 # Đăng ký tình nguyện
@@ -13,7 +15,7 @@ Xem các vị trí tình nguyện còn trống và đăng ký tham gia các bu�
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
 - Quản trị viên của hội thánh phải bật tính năng tự đăng ký cho ít nhất một vị trí
 
 </div>
@@ -60,5 +62,5 @@ Bật [thông báo đẩy](../community/notifications.md) để luôn cập nh�
 
 ## Bài viết liên quan
 
-- [Xem kế hoạch](./viewing-plans) -- Xem các kế hoạch và thứ tự phục vụ được phân công cho bạn
+- [Xem kế hoạch](./viewing-plans.md) -- Xem các kế hoạch và thứ tự phục vụ được phân công cho bạn
 - [Thông báo](../community/notifications.md) -- Luôn cập nhật về các nhiệm vụ phục vụ

@@ -1,5 +1,7 @@
 ---
-title: "Service"
+title: "Vue d'ensemble du service dans B1 Admin"
+sidebar_label: "Service"
+description: "Coordonnez les bénévoles et planifiez les cultes dans l'espace Service de B1 Admin, des onglets de ministère aux équipes, plans, chants et tâches."
 ---
 
 # Service

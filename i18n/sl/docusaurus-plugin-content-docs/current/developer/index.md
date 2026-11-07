@@ -1,5 +1,6 @@
 ---
 title: "Dokumentacija za razvijalce"
+description: "Pregled razvijalske dokumentacije ChurchApps: lokalna namestitev, vodniki za API in spletne aplikacije, skupne knjižnice, mobilne aplikacije in namestitev."
 ---
 
 # Dokumentacija za razvijalce
@@ -24,16 +25,16 @@ Ključne značilnosti:
 
 ## Kaj zajema ta razdelek
 
-- **[Namestitev](setup/)** -- lokalno razvojno okolje, predpogoji in konfiguracija
-  - [Predpogoji](setup/prerequisites) -- zahtevana orodja in programska oprema
-  - [Pregled projektov](setup/project-overview) -- vsi projekti na enem mestu
-  - [Spremenljivke okolja](setup/environment-variables) -- konfiguriranje datotek `.env`
-- **[API](api/)** -- lokalna namestitev jedrnega API-ja, inicializacija podatkovne baze in struktura modulov
-- **[Spletne aplikacije](web-apps/)** -- zagon B1Admin, B1App in LessonsApp lokalno
-- **[Mobilne aplikacije](mobile/)** -- gradnja B1Mobile in drugih aplikacij Expo
-- **[Skupne knjižnice](shared-libraries/)** -- delo s Helpers, ApiHelper in AppHelper
-- **[Objava](deployment/)** -- objava API-jev, spletnih aplikacij in mobilnih aplikacij
-- **[Ponudnik vsebine FreePlay](freeplay-content-provider)** -- povezava vaše knjižnice lekcij s FreePlayjem
+- **[Namestitev](./setup/index.md)** -- lokalno razvojno okolje, predpogoji in konfiguracija
+  - [Predpogoji](./setup/prerequisites.md) -- zahtevana orodja in programska oprema
+  - [Pregled projektov](./setup/project-overview.md) -- vsi projekti na enem mestu
+  - [Spremenljivke okolja](./setup/environment-variables.md) -- konfiguriranje datotek `.env`
+- **[API](./api/index.md)** -- lokalna namestitev jedrnega API-ja, inicializacija podatkovne baze in struktura modulov
+- **[Spletne aplikacije](./web-apps/index.md)** -- zagon B1Admin, B1App in LessonsApp lokalno
+- **[Mobilne aplikacije](./mobile/index.md)** -- gradnja B1Mobile in drugih aplikacij Expo
+- **[Skupne knjižnice](./shared-libraries/index.md)** -- delo s Helpers, ApiHelper in AppHelper
+- **[Objava](./deployment/index.md)** -- objava API-jev, spletnih aplikacij in mobilnih aplikacij
+- **[Ponudnik vsebine FreePlay](./freeplay-content-provider.md)** -- povezava vaše knjižnice lekcij s FreePlayjem
 
 ## Skupnost in viri
 

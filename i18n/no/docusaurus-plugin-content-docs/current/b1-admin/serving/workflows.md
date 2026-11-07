@@ -1,5 +1,6 @@
 ---
 title: "Arbeidsflyter"
+description: "Bygg Kanban-tavler i B1 Admin for oppfølging, med automatiske e-poster, SMS og utløsere som legger til personer automatisk."
 ---
 
 # Arbeidsflyter

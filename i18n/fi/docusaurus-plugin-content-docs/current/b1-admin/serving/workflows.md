@@ -1,5 +1,6 @@
 ---
 title: "Työnkulut"
+description: "Rakenna B1 Adminissa Kanban-tyyppisiä tauluja seuraamaan ihmisiä jatkotoimenpiteissä automaattisilla sähköposteilla, tekstiviesteillä ja laukaisimilla."
 ---
 
 # Työnkulut

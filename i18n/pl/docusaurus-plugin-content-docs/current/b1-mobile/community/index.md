@@ -1,5 +1,7 @@
 ---
-title: "Społeczność"
+title: "Funkcje społecznościowe w aplikacji B1 Mobile"
+sidebar_label: "Społeczność"
+description: "Przeszukuj katalog członków, wysyłaj prywatne wiadomości do innych członków i przeglądaj powiadomienia push ze swojego kościoła w aplikacji B1 Mobile."
 ---
 
 # Społeczność
@@ -12,13 +14,13 @@ Funkcje **Społeczność** w aplikacji B1 Mobile pomagają być na bieżąco z r
 
 ## Co tu znajdziesz
 
-- **[Katalog członków](./member-directory)** -- Przeglądaj i przeszukuj katalog członków swojej parafii. Wyszukuj osoby po imieniu i dotknij członka, aby zobaczyć jego profil z danymi kontaktowymi i powiązaniami rodzinnymi.
-- **[Wiadomości](./messaging)** -- Wysyłaj i odbieraj prywatne wiadomości od innych członków parafii. Rozpocznij nową rozmowę albo wróć do istniejącej, w miejscu, w którym skończyłeś.
-- **[Powiadomienia](./notifications)** -- Bądź na bieżąco dzięki powiadomieniom push o aktywności grup, wiadomościach, przydziałach do służby i innych ważnych informacjach od twojej parafii.
+- **[Katalog członków](./member-directory.md)** -- Przeglądaj i przeszukuj katalog członków swojej parafii. Wyszukuj osoby po imieniu i dotknij członka, aby zobaczyć jego profil z danymi kontaktowymi i powiązaniami rodzinnymi.
+- **[Wiadomości](./messaging.md)** -- Wysyłaj i odbieraj prywatne wiadomości od innych członków parafii. Rozpocznij nową rozmowę albo wróć do istniejącej, w miejscu, w którym skończyłeś.
+- **[Powiadomienia](./notifications.md)** -- Bądź na bieżąco dzięki powiadomieniom push o aktywności grup, wiadomościach, przydziałach do służby i innych ważnych informacjach od twojej parafii.
 
 ## Pierwsze kroki
 
-Aby korzystać z funkcji społeczności, musisz być zalogowany. Jeśli nie jesteś zalogowany, zostaniesz poproszony o [zalogowanie się](../getting-started/logging-in), gdy spróbujesz użyć którejkolwiek z tych sekcji.
+Aby korzystać z funkcji społeczności, musisz być zalogowany. Jeśli nie jesteś zalogowany, zostaniesz poproszony o [zalogowanie się](../getting-started/logging-in.md), gdy spróbujesz użyć którejkolwiek z tych sekcji.
 
 Katalog członków, wiadomości i powiadomienia są dostępne z nawigacji aplikacji. Razem dają proste sposoby na znajdowanie osób, prywatną komunikację i bycie na bieżąco z tym, co dzieje się w twojej parafii.
 

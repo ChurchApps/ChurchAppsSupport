@@ -1,5 +1,6 @@
 ---
 title: "개인정보 설정"
+description: "다른 회원이 B1 Mobile 디렉터리에서 전화, 이메일, 주소 같은 프로필 정보를 볼 수 있는지 설정하고, 대기 중인 변경 사항을 확인하세요."
 ---
 
 # 개인정보 설정
@@ -13,7 +14,7 @@ title: "개인정보 설정"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [B1 모바일 설치](../getting-started/installing) 및 계정으로 [로그인](../getting-started/logging-in)
+- [B1 모바일 설치](../getting-started/installing.md) 및 계정으로 [로그인](../getting-started/logging-in.md)
 
 </div>
 
@@ -52,8 +53,8 @@ title: "개인정보 설정"
 
 | 탭 | 용도 |
 |---|---|
-| **프로필** | [개인 정보](./editing-profile)와 사진 편집 |
-| **가족** | [가족 구성원](./household) 조회 |
+| **프로필** | [개인 정보](./editing-profile.md)와 사진 편집 |
+| **가족** | [가족 구성원](./household.md) 조회 |
 | **공개 설정** | 명부에서 다른 사람이 볼 수 있는 정보 제어 |
 | **보류 중** | 승인 대기 중인 프로필 변경사항 확인 |
 | **계정** | 보안 설정 관리 |
@@ -62,6 +63,6 @@ title: "개인정보 설정"
 
 ## 관련 문서
 
-- [프로필 편집](./editing-profile) -- 개인 정보 업데이트
-- [가족](./household) -- 가족 구성원 조회 및 관리
+- [프로필 편집](./editing-profile.md) -- 개인 정보 업데이트
+- [가족](./household.md) -- 가족 구성원 조회 및 관리
 - [교인 명부](../community/member-directory.md) -- 다른 사람에게 프로필이 어떻게 보이는지 확인

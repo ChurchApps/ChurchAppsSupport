@@ -1,5 +1,6 @@
 ---
 title: "本地 API 设置"
+description: "在本地设置 ChurchApps API：克隆代码库，配置六个 MySQL 模块数据库，初始化数据库架构，并启动热重载开发服务器。"
 ---
 
 # 本地 API 设置
@@ -13,9 +14,9 @@ title: "本地 API 设置"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 安装 **Node.js 24+**、**Git** 和 **MySQL 8.0+**——参见[前置条件](../setup/prerequisites)
+- 安装 **Node.js 24+**、**Git** 和 **MySQL 8.0+**——参见[前置条件](../setup/prerequisites.md)
 - 创建一个具有创建数据库权限的 MySQL 用户
-- 查阅 [环境变量](../setup/environment-variables) 参考文档，了解 API 的配置项
+- 查阅 [环境变量](../setup/environment-variables.md) 参考文档，了解 API 的配置项
 
 </div>
 
@@ -82,7 +83,7 @@ API 将以热重载模式启动，地址为 [http://localhost:8084](http://local
 
 ## 部署
 
-预发布（staging）环境已经停用。每次推送到 `main` 时，API 会部署到演示环境；而通过手动触发的 **Deploy Prod** 工作流部署到生产环境，该工作流还会应用待执行的数据库迁移。详情参见 [API 部署](../deployment/apis)。
+预发布（staging）环境已经停用。每次推送到 `main` 时，API 会部署到演示环境；而通过手动触发的 **Deploy Prod** 工作流部署到生产环境，该工作流还会应用待执行的数据库迁移。详情参见 [API 部署](../deployment/apis.md)。
 
 ## 本地库开发
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-这样你就可以在不发布到 npm 的情况下，用 API 测试库的修改。详情参见[共享库](../shared-libraries/#local-development-against-a-consuming-app)——并且切勿提交 link 命令写入 `package.json` 的 portal 解析结果。
+这样你就可以在不发布到 npm 的情况下，用 API 测试库的修改。详情参见[共享库](../shared-libraries/index.md#local-development-against-a-consuming-app)——并且切勿提交 link 命令写入 `package.json` 的 portal 解析结果。
 
 ## 相关文章
 
-- **[数据库](./database)** —— 了解每个模块一个数据库的架构
-- **[模块结构](./module-structure)** —— 控制器、仓储和模型的组织方式
-- **[共享库](../shared-libraries/)** —— 使用 `@churchapps/helpers` 和 `@churchapps/apihelper`
+- **[数据库](./database.md)** —— 了解每个模块一个数据库的架构
+- **[模块结构](./module-structure.md)** —— 控制器、仓储和模型的组织方式
+- **[共享库](../shared-libraries/index.md)** —— 使用 `@churchapps/helpers` 和 `@churchapps/apihelper`

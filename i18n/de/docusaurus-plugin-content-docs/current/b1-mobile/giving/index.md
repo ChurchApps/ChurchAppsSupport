@@ -1,5 +1,7 @@
 ---
-title: "Spenden"
+title: "Spenden in der B1 Mobile App"
+sidebar_label: "Spenden"
+description: "Spenden Sie in der B1 Mobile App, prüfen Sie Ihre Spenden dieses Jahr und verwalten Sie Zahlungsarten. Registerkarten: Übersicht, Spenden, Verwalten, Verlauf."
 ---
 
 # Spenden
@@ -24,7 +26,7 @@ Der Spendenbereich ist in vier Reiter gegliedert:
 Alle über B1 Mobile getätigten Spenden werden sicher über **Stripe** abgewickelt. Ihre Zahlungsinformationen werden von der sicheren Infrastruktur von Stripe verarbeitet und niemals auf Servern von ChurchApps gespeichert. Sie können mit Vertrauen geben, da Ihre Finanzdaten geschützt sind.
 
 :::info
-Ihr Kirchenadministrator richtet die verfügbaren Fonds und die Zahlungsabwicklung über [B1 Admin](../../b1-admin/) ein. Wenn Sie in der App keine Spendenoption sehen, ist diese Funktion in Ihrer Kirche möglicherweise noch nicht eingerichtet.
+Ihr Kirchenadministrator richtet die verfügbaren Fonds und die Zahlungsabwicklung über [B1 Admin](../../b1-admin/index.md) ein. Wenn Sie in der App keine Spendenoption sehen, ist diese Funktion in Ihrer Kirche möglicherweise noch nicht eingerichtet.
 :::
 
 ## Was Sie tun können
@@ -38,6 +40,6 @@ Hier sehen Sie, was Sie im Spendenbereich tun können:
 
 ## Nächste Schritte
 
-- [Eine Spende tätigen](./making-donations) -- Erfahren Sie, wie Sie eine Gabe über die App geben
-- [Zahlungsmethoden verwalten](./managing-payments) -- Gespeicherte Zahlungsmethoden hinzufügen oder entfernen
-- [Spendenverlauf](./donation-history) -- Ihre Spendenübersicht und frühere Spenden einsehen
+- [Eine Spende tätigen](./making-donations.md) -- Erfahren Sie, wie Sie eine Gabe über die App geben
+- [Zahlungsmethoden verwalten](./managing-payments.md) -- Gespeicherte Zahlungsmethoden hinzufügen oder entfernen
+- [Spendenverlauf](./donation-history.md) -- Ihre Spendenübersicht und frühere Spenden einsehen

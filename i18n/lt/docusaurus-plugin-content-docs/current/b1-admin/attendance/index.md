@@ -1,5 +1,6 @@
 ---
 title: "Lankomumas"
+description: "Peržiūrėkite savaitės lankomumą, kambarius ir svečius B1 Admin, o lankomumo puslapyje nustatykite filialus, pamaldų laikus ir savitarnos registraciją."
 ---
 
 # Lankomumas

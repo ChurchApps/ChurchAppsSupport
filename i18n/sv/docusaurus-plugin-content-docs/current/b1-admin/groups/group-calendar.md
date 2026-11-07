@@ -1,5 +1,6 @@
 ---
 title: "Gruppkalender"
+description: "Planera möten och återkommande händelser i en gruppkalender i B1 Admin och B1.church, med massschemaläggning, svar på inbjudningar och kalenderprenumerationer."
 ---
 
 # Gruppkalender

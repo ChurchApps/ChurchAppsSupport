@@ -1,5 +1,7 @@
 ---
-title: "Đăng nhập"
+title: "Đăng nhập vào B1 Church Checkin"
+sidebar_label: "Đăng nhập"
+description: "Đăng nhập vào ứng dụng kiosk B1 Church Checkin, chọn hội thánh và hiểu về tự động đăng nhập, cài đặt quản trị và đăng xuất trên máy tính bảng điểm danh."
 ---
 
 # Đăng nhập
@@ -63,7 +65,7 @@ Cài đặt quản trị được ẩn có chủ ý để các thành viên nhà
 2. Nếu đã đặt mã PIN kiosk, hãy nhập mã PIN khi được yêu cầu.
 3. Màn hình **Cài đặt quản trị** sẽ mở ra với các tùy chọn sau:
    - **Đổi dịch vụ** — chuyển sang giờ dịch vụ đã chọn khác
-   - **Đổi máy in** — mở [cài đặt máy in](./printer-setup) để quét và chọn máy in
+   - **Đổi máy in** — mở [cài đặt máy in](./printer-setup.md) để quét và chọn máy in
    - **Đặt/Đổi mã PIN** — đặt hoặc cập nhật mã PIN kiosk dùng để bảo vệ quyền truy cập quản trị
    - **Đăng xuất** — đăng xuất và quay về màn hình đăng nhập
 
@@ -73,4 +75,4 @@ Cài đặt quản trị được ẩn có chủ ý để các thành viên nhà
 
 ## Bước tiếp theo
 
-Sau khi đăng nhập, bạn có thể [thiết lập máy in](./printer-setup) hoặc chuyển thẳng đến [quy trình điểm danh](../check-in/).
+Sau khi đăng nhập, bạn có thể [thiết lập máy in](./printer-setup.md) hoặc chuyển thẳng đến [quy trình điểm danh](../check-in/index.md).

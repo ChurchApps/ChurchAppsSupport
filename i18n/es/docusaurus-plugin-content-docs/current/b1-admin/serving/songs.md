@@ -1,5 +1,6 @@
 ---
 title: "Canciones"
+description: "Administra tu biblioteca de canciones de adoración en B1 Admin: busca y agrega canciones, edita los detalles, adjunta letras y arreglos en ChordPro, y sube audios para ensayo."
 ---
 
 # Canciones

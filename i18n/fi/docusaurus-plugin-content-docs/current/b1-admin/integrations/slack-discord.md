@@ -1,5 +1,6 @@
 ---
 title: "Slack ja Discord"
+description: "Julkaise B1 Adminin tapahtumat, kuten uudet henkilöt, lahjoitukset ja lomakevastaukset, Slack- tai Discord-kanavalle saapuvan webhookin avulla ilman Zapieriä."
 ---
 
 # Slack ja Discord
@@ -114,7 +115,7 @@ Jos jokin epäonnistui (punainen merkki `failed` tai `exhausted`), ikkuna näytt
 
 - **Viestiä ei näy ja toimituksen tila on `400`**: yleensä Yhdistimen tyypiksi on valittu **Tavallinen**, vaikka osoite on Slackin tai Discordin. Slack ja Discord hylkäävät raakan kuoren. Vaihda valikko arvoon **Slack** tai **Discord** ja lähetä testi uudelleen.
 - **Webhook poistettiin käytöstä automaattisesti**: kun kolme toimitusta epäonnistuu peräkkäin, B1 sammuttaa webhookin. Korjaa osoite (tai luo se uudelleen Slackissa tai Discordissa) ja kytke **Aktiivinen** takaisin päälle.
-- **Viesti saapui, mutta siitä puuttuu tietoa**: jokainen chat-alusta rajoittaa viestin kokoa. B1:n viestit on suunniteltu yhdellä rivillä. Rikkaampia ilmoituksia varten käytä [Zapieria](./zapier) tai [Makea](./make), jotka voivat koota laajemman Slack-viestin Slack-toimintojensa avulla.
+- **Viesti saapui, mutta siitä puuttuu tietoa**: jokainen chat-alusta rajoittaa viestin kokoa. B1:n viestit on suunniteltu yhdellä rivillä. Rikkaampia ilmoituksia varten käytä [Zapieria](./zapier.md) tai [Makea](./make.md), jotka voivat koota laajemman Slack-viestin Slack-toimintojensa avulla.
 
 ## Yhdistimen tyypin vaihtaminen myöhemmin
 
@@ -122,6 +123,6 @@ Voit vaihtaa olemassa olevan webhookin yhdistimen tyypin. Muutos tulee voimaan s
 
 ## Katso myös
 
-- [Zapier](./zapier): monivaiheisiin työnkulkuihin, joita B1-tapahtumat käynnistävät
-- [Make](./make): visuaalinen skenaariorakentaja
+- [Zapier](./zapier.md): monivaiheisiin työnkulkuihin, joita B1-tapahtumat käynnistävät
+- [Make](./make.md): visuaalinen skenaariorakentaja
 - [Webhookit (kehittäjän viite)](/docs/developer/api/webhooks): täydet hyötykuorma- ja allekirjoitusmuodot, jos osoitat webhookin joskus omalle palvelimellesi

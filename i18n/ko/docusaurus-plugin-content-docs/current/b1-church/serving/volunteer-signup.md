@@ -1,5 +1,7 @@
 ---
-title: "봉사 신청"
+title: "B1.church 회원 포털의 봉사 신청"
+sidebar_label: "봉사 신청"
+description: "카테고리별로 모집 중인 봉사 자리를 둘러보고, B1.church에서 다가오는 예배에 신청하거나 마감 전에 신청을 취소하세요."
 ---
 
 # 봉사 신청
@@ -74,4 +76,4 @@ title: "봉사 신청"
 ## 관련 문서
 
 - [봉사 개요](./index.md) -- B1.church의 봉사 기능 개요
-- [플랜 보기](../plans/viewing-plans) -- 배정된 플랜과 예배 순서 보기
+- [플랜 보기](../plans/viewing-plans.md) -- 배정된 플랜과 예배 순서 보기

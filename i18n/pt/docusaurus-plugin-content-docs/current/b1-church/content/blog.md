@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Navegando no Blog do B1.church e nos Feeds RSS"
+sidebar_label: "Blog"
+description: "Navegue e filtre o blog da sua igreja no B1.church por categoria ou tag, veja posts antigos ou acompanhe novos pelos feeds RSS."
 ---
 
 # Blog

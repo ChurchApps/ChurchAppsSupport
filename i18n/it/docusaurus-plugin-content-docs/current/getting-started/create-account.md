@@ -1,5 +1,6 @@
 ---
 title: "Creare il tuo account"
+description: "Registrarsi a ChurchApps su B1.church, verificare l'email e creare o unirsi a una chiesa per iniziare a configurare B1 Admin."
 ---
 
 # Creare il tuo account

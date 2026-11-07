@@ -1,5 +1,6 @@
 ---
 title: "Verbindung zu Anbietern herstellen"
+description: "FreePlay per QR-Code, E-Mail-Anmeldung oder Ein-Klick-Zugang mit einem Inhaltsanbieter verbinden; Verbindung in den Einstellungen verwalten oder trennen."
 ---
 
 # Verbindung zu Anbietern herstellen
@@ -13,7 +14,7 @@ Bevor Sie Inhalte eines Anbieters durchsuchen können, müssen Sie sich mit ihm 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Installieren und starten Sie FreePlay. Siehe [Erste Schritte](../getting-started/)
+- Installieren und starten Sie FreePlay. Siehe [Erste Schritte](../getting-started/index.md)
 - Halten Sie Ihre TV-Fernbedienung für die Navigation bereit
 - Für Anbieter mit Anmeldung benötigen Sie Ihre Zugangsdaten
 
@@ -80,7 +81,7 @@ Wenn Sie eine Anbieterkarte mit dem Abzeichen **Verbunden** auswählen, öffnet 
 
 - **Bibliothek durchsuchen**: Blendet die Inhaltsbibliothek dieses Anbieters in der Seitenleiste ein oder aus.
 - **Heutige Lektion automatisch herunterladen**: Verwendet diesen Anbieter als Quelle der heutigen Lektion und lädt deren Dateien vorab herunter. Wird nur für Anbieter angezeigt, die eine aktuelle Lektion anbieten.
-- **Für Ankündigungen verwenden**: Wählen Sie einen Ordner dieses Anbieters, der über den Eintrag **Ankündigungen** in der Seitenleiste in einer Schleife abgespielt wird. Siehe [Ankündigungen](./announcements)
+- **Für Ankündigungen verwenden**: Wählen Sie einen Ordner dieses Anbieters, der über den Eintrag **Ankündigungen** in der Seitenleiste in einer Schleife abgespielt wird. Siehe [Ankündigungen](./announcements.md)
 - **Auf Aktualisierungen der Ankündigungen prüfen**: Wird angezeigt, sobald ein Ankündigungsordner gewählt ist. Lädt neue Folien herunter und entfernt gelöschte.
 - **Trennen**: Entfernt die Verbindung.
 
@@ -100,6 +101,6 @@ Beim Trennen wird die gespeicherte Anmeldung von Ihrem Gerät entfernt. Wenn Sie
 
 ## Verwandte Artikel
 
-- **[Inhalte durchsuchen und herunterladen](./browsing-content)**: Ordner durchsuchen und Inhalte nach der Verbindung abspielen
-- **[Ankündigungen](./announcements)**: Einen Ordner mit Folien eines verbundenen Anbieters in einer Schleife abspielen
+- **[Inhalte durchsuchen und herunterladen](./browsing-content.md)**: Ordner durchsuchen und Inhalte nach der Verbindung abspielen
+- **[Ankündigungen](./announcements.md)**: Einen Ordner mit Folien eines verbundenen Anbieters in einer Schleife abspielen
 - **[Übersicht über Inhaltsanbieter](./index.md)**: Alle verfügbaren Anbieter anzeigen

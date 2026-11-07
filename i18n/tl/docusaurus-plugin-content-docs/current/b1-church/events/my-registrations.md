@@ -1,5 +1,6 @@
 ---
 title: "My Registrations"
+description: "Tingnan ang status ng registration, magbayad ng balanse, mag-edit ng attendee o add-on, o kanselahin ang registration sa event sa member portal ng B1 Church."
 ---
 
 # My Registrations

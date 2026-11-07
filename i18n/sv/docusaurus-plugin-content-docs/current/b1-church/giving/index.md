@@ -1,5 +1,7 @@
 ---
-title: "Gåvor"
+title: "Onlinegåvor och donationer i B1.church"
+sidebar_label: "Gåvor"
+description: "Ge till din kyrka online i B1.church utan konto, eller logga in för att hantera återkommande gåvor, betalningsmetoder och gåvokvitton."
 ---
 
 # Gåvor

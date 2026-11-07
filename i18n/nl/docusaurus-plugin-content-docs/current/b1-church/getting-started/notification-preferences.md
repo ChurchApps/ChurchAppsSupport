@@ -1,5 +1,6 @@
 ---
 title: "Meldingsvoorkeuren"
+description: "Stel per meldingstype kanalen, e-mailfrequentie, stille uren en sms-afmeldingen in via B1 Admin en de B1-app, vanaf één scherm."
 ---
 
 # Meldingsvoorkeuren
@@ -60,6 +61,6 @@ Tijdgevoelige meldingen, zoals een beveiligingswaarschuwing of een veiligheidsbe
 
 ## Gerelateerd
 
-- [Aanmelden als vrijwilliger](../serving/volunteer-signup) -- Herinneringen voor diensten en reageren op roosterverzoeken
-- [Registreren voor evenementen](../events/registering) -- Meld u aan voor evenementen die herinneringen versturen
-- [De app installeren](installing-pwa) -- Voeg B1 toe aan uw apparaat zodat u pushmeldingen kunt ontvangen
+- [Aanmelden als vrijwilliger](../serving/volunteer-signup.md) -- Herinneringen voor diensten en reageren op roosterverzoeken
+- [Registreren voor evenementen](../events/registering.md) -- Meld u aan voor evenementen die herinneringen versturen
+- [De app installeren](./installing-pwa.md) -- Voeg B1 toe aan uw apparaat zodat u pushmeldingen kunt ontvangen

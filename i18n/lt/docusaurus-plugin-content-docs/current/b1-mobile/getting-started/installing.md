@@ -1,5 +1,6 @@
 ---
 title: "Programos įdiegimas"
+description: "Įdiekite B1 Mobile programėlę iš App Store ar Google Play, tačiau atkreipkite dėmesį: ji nebenaudojama, todėl rekomenduojama B1.church PWA."
 ---
 
 # Programos įdiegimas
@@ -25,7 +26,7 @@ Jei pirmoji paieška rezultatų nepateikia, galite ieškoti ir „B1 Mobile“.
 
 ## Įdiegus
 
-Įdiegę programą, atidarykite ją iš pagrindinio ekrano. Pamatysite bažnyčios paieškos ekraną, kuriame galite rasti ir pasirinkti savo bažnyčią. Jei jau turite ChurchApps paskyrą, galite iš karto [prisijungti](./logging-in). Jei neturite, paskyrą galite sukurti prisijungimo ekrane.
+Įdiegę programą, atidarykite ją iš pagrindinio ekrano. Pamatysite bažnyčios paieškos ekraną, kuriame galite rasti ir pasirinkti savo bažnyčią. Jei jau turite ChurchApps paskyrą, galite iš karto [prisijungti](./logging-in.md). Jei neturite, paskyrą galite sukurti prisijungimo ekrane.
 
 Programa paprašys leidimo siųsti push pranešimus. Rekomenduojame leisti pranešimus, kad galėtumėte gauti naujienas iš savo bažnyčios ir grupių.
 

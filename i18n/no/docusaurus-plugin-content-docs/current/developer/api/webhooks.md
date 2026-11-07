@@ -1,5 +1,6 @@
 ---
 title: "Webhooks"
+description: "Sett opp sanntidswebhooks fra B1 Admin: registrer endepunkter, velg hendelser, verifiser HMAC-signaturer, håndter gjenforsøk og send feilede data på nytt."
 ---
 
 # Webhooks

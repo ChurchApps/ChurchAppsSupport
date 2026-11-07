@@ -1,5 +1,6 @@
 ---
 title: "Beschikbaarheidskalender"
+description: "Stel boekbare ruimtes en apparatuur in B1 Admin in, plan ze in de agenda, voeg opbouw- en afbouwbuffers toe en beheer terugkerende of goed te keuren boekingen."
 ---
 
 # Beschikbaarheidskalender
@@ -13,7 +14,7 @@ Met de Beschikbaarheidskalender heb je een overzicht van alle reserveringen van 
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- Maak minstens één [ruimte of middel](rooms-resources) aan in het gedeelte Ruimten en middelen
+- Maak minstens één [ruimte of middel](./rooms-resources.md) aan in het gedeelte Ruimten en middelen
 - Je hebt bewerkingsrechten nodig voor het gedeelte Kalenders in B1 Admin
 
 </div>
@@ -58,7 +59,7 @@ Gebruik de vervolgkeuzelijst **Ruimte / Middel** linksboven om de kalender te be
 6. Klik op **Opslaan** om de reservering in te dienen.
 
 :::info
-Als voor de ruimte of het middel een **Goedkeuringsgroep** is ingesteld, verschijnt de reservering als **In behandeling** totdat een leider van die groep deze goedkeurt. Zie [Kalendergoedkeuringen](approvals) voor de goedkeuringsprocedure.
+Als voor de ruimte of het middel een **Goedkeuringsgroep** is ingesteld, verschijnt de reservering als **In behandeling** totdat een leider van die groep deze goedkeurt. Zie [Kalendergoedkeuringen](./approvals.md) voor de goedkeuringsprocedure.
 :::
 
 :::tip
@@ -67,6 +68,6 @@ De kalender markeert conflicten al voordat je opslaat. Als je een waarschuwing o
 
 ## Gerelateerde artikelen
 
-- [Ruimten, middelen en planning](rooms-resources) — reserveerbare ruimten en apparatuur instellen
-- [Kalendergoedkeuringen](approvals) — reserveringsverzoeken goedkeuren of afwijzen
-- [Kalenders aanmaken](creating-calendars) — gebeurteniskalenders beheren
+- [Ruimten, middelen en planning](./rooms-resources.md) — reserveerbare ruimten en apparatuur instellen
+- [Kalendergoedkeuringen](./approvals.md) — reserveringsverzoeken goedkeuren of afwijzen
+- [Kalenders aanmaken](./creating-calendars.md) — gebeurteniskalenders beheren

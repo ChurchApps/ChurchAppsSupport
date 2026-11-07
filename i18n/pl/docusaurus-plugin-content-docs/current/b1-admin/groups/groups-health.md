@@ -1,5 +1,6 @@
 ---
 title: "Stanie grup"
+description: "Sprawdź kondycję grupy w B1 Admin dzięki 90-dniowej tabeli członków, dołączeń, odejść, odpływu i średniej frekwencji, by wyłapać grupy wymagające wsparcia."
 ---
 
 # Stanie grup
@@ -13,8 +14,8 @@ Panel Stanu grup daje szeroki przegląd tego, jak radzą sobie wszystkie Twoje g
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Potrzebujesz przynajmniej kilku grup z członkami, aby zobaczyć znaczące dane. Zobacz [Tworzenie grup](creating-groups).
-- Dane o frekwencji pochodzą z zapisanych spotkań. Zobacz sekcję [Frekwencja](../attendance/).
+- Potrzebujesz przynajmniej kilku grup z członkami, aby zobaczyć znaczące dane. Zobacz [Tworzenie grup](./creating-groups.md).
+- Dane o frekwencji pochodzą z zapisanych spotkań. Zobacz sekcję [Frekwencja](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Kliknięcie nazwy grupy przenosi bezpośrednio na stronę szczegółów grupy, g
 
 ## Powiązane artykuły
 
-- [Tworzenie grup](creating-groups) — konfigurowanie grup
-- [Członkowie grupy](group-members) — zarządzanie członkostwem w grupie
-- [Śledzenie frekwencji](../attendance/tracking-attendance) — rejestrowanie spotkań, które zasilają ten panel
+- [Tworzenie grup](./creating-groups.md) — konfigurowanie grup
+- [Członkowie grupy](./group-members.md) — zarządzanie członkostwem w grupie
+- [Śledzenie frekwencji](../attendance/tracking-attendance.md) — rejestrowanie spotkań, które zasilają ten panel

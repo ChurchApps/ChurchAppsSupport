@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Check-In no Portal de Membros B1.church"
+sidebar_label: "Check-In"
+description: "Faça check-in de você e dos membros da família em um culto pelo portal de membros do B1.church, sem usar o quiosque, e atribua grupos."
 ---
 
 # Check-In

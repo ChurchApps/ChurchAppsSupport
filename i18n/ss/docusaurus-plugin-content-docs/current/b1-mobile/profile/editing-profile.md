@@ -1,5 +1,7 @@
 ---
-title: "Kuhlela Iphrofayela Yakho"
+title: "Kuhlela Iphrofayili Yakho Ku-App ye-B1 Mobile"
+sidebar_label: "Kuhlela Iphrofayela Yakho"
+description: "Buyekeza ligama lakho, i-imeyili, kucingo, likheli, nesithombe seprofayili ku-app ye-B1 Mobile, kuze emarekhodi elicawe nelisheja lemalungu libe lisha."
 ---
 
 # Kuhlela Iphrofayela Yakho
@@ -13,7 +15,7 @@ Ithebhu ye-**Iphrofayela** ikuvumela kubuyeketa imininingwane yakho yebumunye ku
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- [Faka B1 Mobile](../getting-started/installing) futsi [ungene](../getting-started/logging-in) ku-akhawunti yakho
+- [Faka B1 Mobile](../getting-started/installing.md) futsi [ungene](../getting-started/logging-in.md) ku-akhawunti yakho
 
 </div>
 
@@ -34,7 +36,7 @@ Iphrofayela yakho ifaka lemininingwane yebumunye lelandzelako:
 3. Cindzetela ensimini lofuna kuyibuyeketa futsi wente tinguquko takho.
 4. Gcina tinguquko takho nawucedzile.
 
-Imininingwane yakho lebuyeketiwe ivumelanisa ngekutenteka. Nome ngubani lobuka iphrofayela yakho (kuya ngetilungiselelo takho [tekubukwa](./privacy-settings)) utawubona imininingwane lensha ngekushesha.
+Imininingwane yakho lebuyeketiwe ivumelanisa ngekutenteka. Nome ngubani lobuka iphrofayela yakho (kuya ngetilungiselelo takho [tekubukwa](./privacy-settings.md)) utawubona imininingwane lensha ngekushesha.
 
 :::tip
 Gcina likheli lakho le-imeyili nenambala yakho yelucingo tihlale tilungile. Libandla lakho lisebentisa lemininingwane kukutfumelela tatiso netikhumbuto letibalulekile.
@@ -46,7 +48,7 @@ Ungakwati kwengeta nome kutjintja sitfombe sakho seliphrofayela kusuka ethebhini
 
 ## Tinguquko Kuto Tonkhe Te-ChurchApps
 
-Ngobe tonkhe tinsita te-ChurchApps tabelana ngasinye sekusebentisa i-akhawunti, inguquko loyentako ku-B1 Mobile ibonakala ngekushesha ku-[B1.church](../../b1-church/), tinsimba tekuphatsa telibandla lakho, nanome nguluphi lolunye luhlelo loluhlanganisiwe. Awudzingi kubuyeketa imininingwane yakho ngekwehlukana endzaweni ngayinye.
+Ngobe tonkhe tinsita te-ChurchApps tabelana ngasinye sekusebentisa i-akhawunti, inguquko loyentako ku-B1 Mobile ibonakala ngekushesha ku-[B1.church](../../b1-church/index.md), tinsimba tekuphatsa telibandla lakho, nanome nguluphi lolunye luhlelo loluhlanganisiwe. Awudzingi kubuyeketa imininingwane yakho ngekwehlukana endzaweni ngayinye.
 
 :::info
 Emanye emabandla adzinga kuvunywa ngumphatsi kutinguquko letitsite teliphrofayela. Nangabe inguquko yakho ingaboniseki ngekushesha, hlola ithebhu ye-**Kulindzelwe** esikrinini sakho seliphrofayela kute ubone simo saso.
@@ -54,5 +56,5 @@ Emanye emabandla adzinga kuvunywa ngumphatsi kutinguquko letitsite teliphrofayel
 
 ## Timibhalo Lehambelanako
 
-- [Umndeni](./household) -- Buka futsi uphatse emalunga emndeni wakho
-- [Tilungiselelo Tekubukwa](./privacy-settings) -- Lawula loko labanye labangakubona ngawe
+- [Umndeni](./household.md) -- Buka futsi uphatse emalunga emndeni wakho
+- [Tilungiselelo Tekubukwa](./privacy-settings.md) -- Lawula loko labanye labangakubona ngawe

@@ -1,5 +1,6 @@
 ---
 title: "Yapay Zeka ile Arama"
+description: "B1 Admin kişi dizininizi, filtre oluşturmak yerine üç aydır katılmayan üyeler gibi sade dilde sorularla arayın."
 ---
 
 # Yapay Zeka ile Arama

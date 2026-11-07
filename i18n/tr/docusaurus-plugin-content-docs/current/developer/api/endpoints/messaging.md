@@ -1,5 +1,6 @@
 ---
 title: "Mesajlaşma Uç Noktaları"
+description: "ChurchApps mesajlaşma API uç noktaları için başvuru: konuşmalar, not erişim kuralları, kısa mesaj, e-posta şablonları, bildirimler ve cihazlar."
 ---
 
 # Mesajlaşma Uç Noktaları
@@ -190,7 +191,7 @@ Temel yol: `/messaging/notificationpreferences`
 
 Temel yol: `/messaging/connections`
 
-Sohbet, grup görüşmeleri, özel mesajlar ve canlı yayın için WebSocket/gerçek zamanlı bağlantılarını yönetir. Uçtan uca protokol için bkz. [Gerçek Zamanlı Mimari](../../realtime).
+Sohbet, grup görüşmeleri, özel mesajlar ve canlı yayın için WebSocket/gerçek zamanlı bağlantılarını yönetir. Uçtan uca protokol için bkz. [Gerçek Zamanlı Mimari](../../realtime.md).
 
 | Yöntem | Yol | Yetkilendirme | İzin | Açıklama |
 |--------|------|------|------|----------|
@@ -367,9 +368,9 @@ Gönderilen mesajların (SMS, anlık bildirim, e-posta) teslimat durumunu izler.
 
 ## İlgili Sayfalar
 
-- [Gerçek Zamanlı Mimari](../../realtime) -- WebSocket protokolü, oda abonelikleri ve birleşik teslimat çerçevesi
-- [Web Anlık Bildirimleri](../../web-push) -- Tarayıcı anlık bildirim kaydı ve teslimatı
-- [Üyelik Uç Noktaları](./membership) -- Kişiler, gruplar, roller ve temel kimlik
-- [Katılım Uç Noktaları](./attendance) -- Hizmet ve ziyaret takibi
-- [Kimlik Doğrulama ve İzinler](./authentication) -- Oturum açma akışı, JWT, OAuth, izin modeli
-- [Modül Yapısı](../module-structure) -- Kod organizasyon kalıpları
+- [Gerçek Zamanlı Mimari](../../realtime.md) -- WebSocket protokolü, oda abonelikleri ve birleşik teslimat çerçevesi
+- [Web Anlık Bildirimleri](../../web-push.md) -- Tarayıcı anlık bildirim kaydı ve teslimatı
+- [Üyelik Uç Noktaları](./membership.md) -- Kişiler, gruplar, roller ve temel kimlik
+- [Katılım Uç Noktaları](./attendance.md) -- Hizmet ve ziyaret takibi
+- [Kimlik Doğrulama ve İzinler](./authentication.md) -- Oturum açma akışı, JWT, OAuth, izin modeli
+- [Modül Yapısı](../module-structure.md) -- Kod organizasyon kalıpları

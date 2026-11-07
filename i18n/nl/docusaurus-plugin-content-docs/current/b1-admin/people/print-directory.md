@@ -1,5 +1,6 @@
 ---
 title: "Directory afdrukken"
+description: "Maak in B1 Admin een afdrukbare ledengids gegroepeerd per huishouden, met foto's, contactgegevens en verjaardagen, in Letter-formaat."
 ---
 
 # Directory afdrukken

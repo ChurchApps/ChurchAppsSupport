@@ -1,5 +1,6 @@
 ---
 title: "Endpoint-uri pentru prezențe"
+description: "Referință pentru API-ul de prezență din B1 Admin și B1 Checkin: campusuri, slujbe, ore ale slujbelor, sesiuni, vizite, reguli de check-in și endpoint-uri de export."
 ---
 
 # Endpoint-uri pentru prezențe
@@ -270,6 +271,6 @@ Urmărește seriile de prezență ale persoanelor -- numărul de săptămâni co
 
 ## Pagini conexe
 
-- [Endpoint-uri pentru membri](./membership) — Persoane, grupuri, roluri și administrarea bisericii
-- [Autentificare și permisiuni](./authentication) — Fluxul de autentificare, JWT, modelul de permisiuni
-- [Structura modulelor](../module-structure) — Modele de organizare a codului
+- [Endpoint-uri pentru membri](./membership.md) — Persoane, grupuri, roluri și administrarea bisericii
+- [Autentificare și permisiuni](./authentication.md) — Fluxul de autentificare, JWT, modelul de permisiuni
+- [Structura modulelor](../module-structure.md) — Modele de organizare a codului

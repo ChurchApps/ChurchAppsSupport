@@ -1,5 +1,7 @@
 ---
-title: "Førstegangsoppsett"
+title: "Komme i gang med nettstedet ditt i B1 Admin"
+sidebar_label: "Førstegangsoppsett"
+description: "Sett opp menighetens B1 Admin-nettsted: pek et subdomene eller eget domene, lag hjemmesiden, velg merkefarger og logo, og bygg navigasjonen."
 ---
 
 # Førstegangsoppsett
@@ -45,7 +47,7 @@ Hvis du ikke ser alternativet Innstillinger, ber du personen som opprettet kirke
 6. Når du har lagt til en seksjon, klikker du på **Legg til innhold** igjen for å sette inn tekst, bilder, videoer, kort, skjemaer og mer ved å dra dem inn i seksjonen.
 
 :::info
-Du finner en detaljert veiledning om sider og navigasjon under [Administrere sider](managing-pages). En full gjennomgang av den visuelle redigeringen finner du under [Bruke sideredigeringen](page-editor).
+Du finner en detaljert veiledning om sider og navigasjon under [Administrere sider](./managing-pages.md). En full gjennomgang av den visuelle redigeringen finner du under [Bruke sideredigeringen](./page-editor.md).
 :::
 
 ## Konfigurere utseendet på nettstedet
@@ -57,7 +59,7 @@ Du finner en detaljert veiledning om sider og navigasjon under [Administrere sid
 5. Sett opp **Nettstedets bunntekst** med kirkens kontaktinformasjon og lenker.
 
 :::info
-Endringer du gjør under Utseende, gjelder hele nettstedet. Se siden [Utseende](appearance) for en detaljert veiledning til hver innstilling.
+Endringer du gjør under Utseende, gjelder hele nettstedet. Se siden [Utseende](./appearance.md) for en detaljert veiledning til hver innstilling.
 :::
 
 ## Sette opp navigasjon
@@ -70,6 +72,6 @@ Navigasjonslenkene dine vises i visningen Nettstedssider. Slik organiserer du de
 
 ## Neste steg
 
-- [Administrere sider](managing-pages) -- Lær mer om sider og navigasjon
-- [Utseende](appearance) -- Finjuster farger, skrifttyper og oppsett
-- [Filer](files) -- Last opp bilder og dokumenter til nettstedet
+- [Administrere sider](./managing-pages.md) -- Lær mer om sider og navigasjon
+- [Utseende](./appearance.md) -- Finjuster farger, skrifttyper og oppsett
+- [Filer](./files.md) -- Last opp bilder og dokumenter til nettstedet

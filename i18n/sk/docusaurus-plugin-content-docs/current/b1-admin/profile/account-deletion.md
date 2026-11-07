@@ -1,5 +1,6 @@
 ---
 title: "Kontrola žiadostí o vymazanie účtu"
+description: "Schvaľujte alebo zamietajte žiadosti členov o zmazanie účtu v B1 Admin, smerujte ich cez Directory Approval Group a dodržte 30-dňovú lehotu GDPR."
 ---
 
 # Kontrola žiadostí o vymazanie účtu

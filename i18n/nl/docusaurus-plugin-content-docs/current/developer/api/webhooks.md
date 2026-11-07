@@ -1,5 +1,6 @@
 ---
 title: "Webhooks"
+description: "Stel realtime webhooks in via B1 Admin: registreer endpoints, kies gebeurtenissen, verifieer HMAC-handtekeningen en lever mislukte payloads opnieuw."
 ---
 
 # Webhooks
@@ -33,7 +34,7 @@ Ga naar **Instellingen → Ontwikkelaar → Webhooks → Nieuwe webhook**. Voer 
 
 ### Via de API
 
-Alle endpoints staan onder het basispad van de Membership-module `/membership/webhooks`. Ze vereisen een JWT van een kerkbeheerder met de `Settings / Edit`-rechten, **of een [API-sleutel](./api-keys) met de scope `settings:write`**. Dezelfde routes accepteren beide. Hierdoor kunnen Zapier en Make webhooks namens de kerk registreren wanneer een Zap of scenario wordt ingeschakeld.
+Alle endpoints staan onder het basispad van de Membership-module `/membership/webhooks`. Ze vereisen een JWT van een kerkbeheerder met de `Settings / Edit`-rechten, **of een [API-sleutel](./api-keys.md) met de scope `settings:write`**. Dezelfde routes accepteren beide. Hierdoor kunnen Zapier en Make webhooks namens de kerk registreren wanneer een Zap of scenario wordt ingeschakeld.
 
 ```http
 POST /membership/webhooks

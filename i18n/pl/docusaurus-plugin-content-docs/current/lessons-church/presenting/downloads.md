@@ -1,5 +1,6 @@
 ---
 title: "Pliki do pobrania i materiały"
+description: "Znajdowanie i pobieranie do druku kart aktywności, przewodników dla prowadzących i plików PDF dołączonych do lekcji, studiów lub programów."
 ---
 
 # Pliki do pobrania i materiały

@@ -1,5 +1,6 @@
 ---
 title: "Přepínání kostelů"
+description: "Přepínejte mezi církvemi v aplikaci B1 Mobile výběrem nedávné církve nebo vyhledáním podle názvu, vše s jedním přihlášením ChurchApps."
 ---
 
 # Přepínání kostelů
@@ -13,7 +14,7 @@ Pokud jste členem více než jednoho kostela, B1 Mobile vám umožní snadno p�
 <div class="prereqs">
 <h4>Před zahájením</h4>
 
-- [Nainstalujte aplikaci B1 Mobile](./installing) a [se přihlaste](./logging-in) ke svému účtu
+- [Nainstalujte aplikaci B1 Mobile](./installing.md) a [se přihlaste](./logging-in.md) ke svému účtu
 
 </div>
 
@@ -24,7 +25,7 @@ Pokud jste členem více než jednoho kostela, B1 Mobile vám umožní snadno p�
 3. Zobrazí se obrazovka **Vyhledávání kostela**. Nedávno navštívené kostely jsou pro rychlý přístup zobrazeny nahoře.
 4. Klepnutím na nedávný kostel na něj přepnete, nebo zadejte text do vyhledávacího pole a najděte jiný kostel.
 
-Když přepnete kostel, aplikace se znovu načte s brandingem, navigačními odkazy a obsahem daného kostela. Vaše [přehled](../dashboard/), [skupiny](../groups/) a další údaje budou odpovídat nově vybranému kostelu.
+Když přepnete kostel, aplikace se znovu načte s brandingem, navigačními odkazy a obsahem daného kostela. Vaše [přehled](../dashboard/index.md), [skupiny](../groups/index.md) a další údaje budou odpovídat nově vybranému kostelu.
 
 ## Vyhledávání kostela
 

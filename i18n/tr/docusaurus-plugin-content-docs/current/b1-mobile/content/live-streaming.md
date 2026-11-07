@@ -1,5 +1,7 @@
 ---
-title: "Canlı Yayın"
+title: "B1 Mobile Uygulamasında Canlı Yayın İzleme"
+sidebar_label: "Canlı Yayın"
+description: "B1 Mobile'da kilisenizin canlı yayınına katılın; çekmeceden veya Vaazlar geri sayımından Yayın ekranına gidin ve ibadetin başlama saatini görün."
 ---
 
 # Canlı Yayın
@@ -13,14 +15,14 @@ B1 Mobile ile kilisenizin canlı yayınını doğrudan telefonunuzdan izleyebili
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [oturum açın](../getting-started/logging-in)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [oturum açın](../getting-started/logging-in.md)
 - Kilisenizde bir yayın programının ayarlanmış olması gerekir
 
 </div>
 
 ## Canlı Yayını İzlemek
 
-1. Çekmece menüsünden **Yayın** ekranını açın veya canlı yayın başlamak üzereyken [Vaazlar](./sermons) ekranındaki geri sayıma dokunun.
+1. Çekmece menüsünden **Yayın** ekranını açın veya canlı yayın başlamak üzereyken [Vaazlar](./sermons.md) ekranındaki geri sayıma dokunun.
 2. Şu anda bir ibadet canlı yayındaysa video oynatıcı otomatik olarak yüklenir ve yayın oynatılmaya başlar.
 3. Yayını doğrudan uygulamada izleyin.
 
@@ -31,7 +33,7 @@ B1 Mobile ile kilisenizin canlı yayınını doğrudan telefonunuzdan izleyebili
 Canlı yayına iki şekilde erişebilirsiniz:
 
 - **Çekmece menüsü** -- Çekmece menüsünü açın ve doğrudan canlı yayın ekranına gitmek için **Yayın** öğesine dokunun.
-- **Vaazlar ekranı** -- Önümüzdeki 24 saat içinde bir canlı yayın planlanmışsa [Vaazlar](./sermons) ekranında bir geri sayım belirir. Yayın başladığında oradan yayın ekranına geçebilirsiniz.
+- **Vaazlar ekranı** -- Önümüzdeki 24 saat içinde bir canlı yayın planlanmışsa [Vaazlar](./sermons.md) ekranında bir geri sayım belirir. Yayın başladığında oradan yayın ekranına geçebilirsiniz.
 
 ## İbadetten Önce ve Sonra
 
@@ -46,5 +48,5 @@ Yayın ekranında bir geri sayım veya çevrimdışı mesajı görüyorsanız, b
 Canlı yayın ekranı, kilisenizin bir yayın programı ayarlamış olması durumunda kullanılabilir. Uygulamanızın çekmece menüsünde **Yayın** seçeneğini görmüyorsanız kiliseniz canlı yayını kurmamış olabilir. Ayrıntılar için kilise yöneticinizle iletişime geçin.
 
 :::tip
-Bir sonraki canlı yayının ne zaman başlayacağını gösteren geri sayım için [Vaazlar](./sermons) ekranını kontrol edin.
+Bir sonraki canlı yayının ne zaman başlayacağını gösteren geri sayım için [Vaazlar](./sermons.md) ekranını kontrol edin.
 :::

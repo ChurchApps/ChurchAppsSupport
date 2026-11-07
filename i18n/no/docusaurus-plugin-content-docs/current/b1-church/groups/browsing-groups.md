@@ -1,5 +1,6 @@
 ---
 title: "Bla Gjennom Grupper"
+description: "Bla gjennom menighetens åpne grupper på B1.church etter kategori, og se møtetider, steder og beskrivelser på hvert kort for å finne riktig gruppe."
 ---
 
 # Bla Gjennom Grupper

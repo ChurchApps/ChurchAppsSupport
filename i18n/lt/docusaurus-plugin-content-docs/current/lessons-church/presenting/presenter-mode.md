@@ -1,5 +1,6 @@
 ---
 title: "Prezentavimo režimas"
+description: "Paleiskite pamoką visame ekrane klasės projektoriuje ar televizoriuje su Lessons.church pristatymo režimu ir žingsniuokite per kiekvieną skyrių pamokos metu."
 ---
 
 # Prezentavimo režimas

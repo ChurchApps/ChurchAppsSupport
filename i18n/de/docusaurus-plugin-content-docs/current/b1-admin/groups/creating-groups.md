@@ -1,5 +1,6 @@
 ---
 title: "Gruppen erstellen"
+description: "Richten Sie in B1 Admin eine neue Gruppe ein, von der Wahl der Kategorie und dem Namen bis zur Konfiguration von Beitrittsregeln, Labels, Nachrichten und Anwesenheitseinstellungen."
 ---
 
 # Gruppen erstellen

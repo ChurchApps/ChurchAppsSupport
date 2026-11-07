@@ -1,5 +1,6 @@
 ---
 title: "Membros de Busca"
+description: "Keresse meg családját a B1 Checkin kioszkon telefonszám-számjegyekkel vagy névvel, és regisztráljon vendégként, ha első alkalommal látogat."
 ---
 
 Vou manter a tradução em húngaro conforme solicitado. Segue o arquivo traduzido:
@@ -19,7 +20,7 @@ A szolgálat kiválasztása után a tagkereső képernyőre jut. Itt keresheti m
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- [Válassza ki a szolgálatot](./selecting-service) a szolgálatok képernyőjén
+- [Válassza ki a szolgálatot](./selecting-service.md) a szolgálatok képernyőjén
 - Gondoskodjon arról, hogy a háztartását egy gyülekezeti adminisztrátor [felvette a rendszerbe](../../b1-admin/people/adding-people.md)
 
 </div>
@@ -51,7 +52,7 @@ Az alkalmazás azokat a tagokat keresi, akiknek a neve egyezik a beírtakkal.
 
 A keresési találatok kártyákként jelennek meg a keresőmező alatt. Minden kártya a személy **nevét** és – ha van feltöltve – **fényképét** mutatja.
 
-Koppintson a személy kártyájára a kiválasztásához. Az alkalmazás betölti az adott személy háztartásának összes tagját, és a [háztartás-áttekintő képernyőre](./household-review) navigál.
+Koppintson a személy kártyájára a kiválasztásához. Az alkalmazás betölti az adott személy háztartásának összes tagját, és a [háztartás-áttekintő képernyőre](./household-review.md) navigál.
 
 :::tip
 A telefonszám utolsó 4 számjegye alapján történő keresés a leggyorsabb módja a családja megkeresésének. Bátorítsa a tagokat, hogy ezt a módszert használják a gyorsabb bejelentkezés érdekében.
@@ -66,7 +67,7 @@ Ha nincs találat, az alkalmazás erről üzenetet jelenít meg. Ellenőrizze ú
 Ha a gyülekezetében be van kapcsolva a QR-kódos vendégregisztráció, a bejelentkező képernyőn a keresés alatt megjelenik a **Regisztráció vendégként** hivatkozás. Az első alkalommal látogatók ezzel vehetik fel családjukat a gyülekezet rendszerébe a bejelentkezés előtt.
 
 1. Koppintson a **Regisztráció vendégként** gombra. Megnyílik egy ablak QR-kóddal és a „Szkennelje be a vendégregisztrációhoz” üzenettel.
-2. Válassza ki, hogyan tölti ki a [vendégregisztrációs űrlapot](../../b1-church/checkin/guest-registration):
+2. Válassza ki, hogyan tölti ki a [vendégregisztrációs űrlapot](../../b1-church/checkin/guest-registration.md):
    - **Saját telefonján** -- Szkennelje be a QR-kódot, töltse ki az űrlapot telefonján, majd koppintson az **OK** gombra az ablak bezárásához.
    - **A kioszkon** -- Koppintson a **Regisztrálás itt** gombra, hogy ugyanez az űrlap megnyíljon közvetlenül a táblagépen. Töltse ki, majd koppintson a **Regisztráció** gombra, végül a **Kész** (vagy a vissza nyíl) gombra a bejelentkező képernyőre való visszatéréshez.
 3. A regisztráció után keresse meg családját név vagy telefonszám alapján a bejelentkezéshez.
@@ -77,7 +78,7 @@ A **Regisztrálás itt** gombbal megnyitott űrlap a vendégregisztrációs olda
 
 ## Címkék nyomtatása telefonos bejelentkezéshez
 
-Azok a családok, akik már bejelentkeztek telefonjukon a [B1 Church önbejelentkezés](../../b1-church/checkin/self-checkin) segítségével, a kioszknál kinyomtathatják névcímkéiket anélkül, hogy maguk keresnének rá.
+Azok a családok, akik már bejelentkeztek telefonjukon a [B1 Church önbejelentkezés](../../b1-church/checkin/self-checkin.md) segítségével, a kioszknál kinyomtathatják névcímkéiket anélkül, hogy maguk keresnének rá.
 
 1. A bejelentkező képernyőn koppintson a **Kód beolvasása** gombra (a QR-kód ikon).
 2. Tartsa telefonjáról a QR-kódot a kamera elé. Ha az alkalmazás kamerahozzáférést kér, koppintson az **Kamera engedélyezése** gombra. Alapértelmezés szerint az elülső kamera használatos; a váltógombra koppintva válthat.
@@ -87,4 +88,4 @@ A beolvasás csak címkéket nyomtat – a jelenlétet már rögzítették, amik
 
 ## Következő lépés
 
-A személy kiválasztása után [áttekintheti háztartását](./household-review), és kezelheti a csoportbeosztásokat.
+A személy kiválasztása után [áttekintheti háztartását](./household-review.md), és kezelheti a csoportbeosztásokat.

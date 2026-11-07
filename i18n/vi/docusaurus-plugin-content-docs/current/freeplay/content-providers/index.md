@@ -1,5 +1,6 @@
 ---
 title: "Nhà cung cấp nội dung"
+description: "Duyệt và tải tài liệu bài học, video và hình ảnh từ Lessons.church, Dropbox, OneDrive và các nhà cung cấp khác trong ứng dụng FreePlay TV."
 ---
 
 # Nhà cung cấp nội dung
@@ -14,7 +15,7 @@ Nhà cung cấp nội dung là các dịch vụ bên ngoài, cung cấp tài li�
 
 FreePlay hiện bao gồm các nhà cung cấp sau:
 
-- **[Lessons.church](../../lessons-church/)** - Chương trình giáo dục thiếu nhi miễn phí, mã nguồn mở
+- **[Lessons.church](../../lessons-church/index.md)** - Chương trình giáo dục thiếu nhi miễn phí, mã nguồn mở
 - **Bible Project** - Video và tài nguyên khám phá Kinh Thánh
 - **SignPresenter** - Nội dung trình chiếu và biển báo dành cho hội thánh
 - **B1.church** - Nội dung từ thiết lập B1 church của riêng bạn
@@ -24,7 +25,7 @@ FreePlay hiện bao gồm các nhà cung cấp sau:
 - **OneDrive** - Duyệt và phát hình ảnh, video, âm thanh từ Microsoft OneDrive của riêng bạn
 
 :::note
-Google Drive và FreeShow không còn hiển thị trong ứng dụng FreePlay TV. Để dùng nội dung Google Drive trên TV, hãy kết nối trong [FreePlay Admin](../scheduled-mode/building-playlists#connecting-providers), thêm các tệp vào danh sách phát, rồi lên lịch phát danh sách đó.
+Google Drive và FreeShow không còn hiển thị trong ứng dụng FreePlay TV. Để dùng nội dung Google Drive trên TV, hãy kết nối trong [FreePlay Admin](../scheduled-mode/building-playlists.md#connecting-providers), thêm các tệp vào danh sách phát, rồi lên lịch phát danh sách đó.
 :::
 
 :::info
@@ -37,14 +38,14 @@ Mỗi nhà cung cấp có thư viện nội dung riêng, được sắp xếp th
 
 Các nhà cung cấp đã kết nối sẽ xuất hiện trong thanh bên trái màn hình, dưới tiêu đề **Browse**. Bạn có thể chuyển đổi giữa các nhà cung cấp bằng cách chọn trong thanh bên, giúp dễ dàng chuyển qua lại giữa các nguồn nội dung trong lúc thiết lập.
 
-Bạn cũng có thể chọn một thư mục từ bất kỳ nhà cung cấp đã kết nối nào để lặp lại trên TV dưới dạng [thông báo](./announcements).
+Bạn cũng có thể chọn một thư mục từ bất kỳ nhà cung cấp đã kết nối nào để lặp lại trên TV dưới dạng [thông báo](./announcements.md).
 
 :::tip
-Các nhà cung cấp bạn kết nối trên TV chỉ dành riêng cho TV đó. Nếu bạn dùng [Scheduled Mode](../scheduled-mode/), hãy kết nối nhà cung cấp một lần trong FreePlay Admin thay vì trên TV, khi đó mọi màn hình được lên lịch đều có thể phát nội dung từ họ.
+Các nhà cung cấp bạn kết nối trên TV chỉ dành riêng cho TV đó. Nếu bạn dùng [Scheduled Mode](../scheduled-mode/index.md), hãy kết nối nhà cung cấp một lần trong FreePlay Admin thay vì trên TV, khi đó mọi màn hình được lên lịch đều có thể phát nội dung từ họ.
 :::
 
 ## Trong phần này
 
-- **[Kết nối với nhà cung cấp](./connecting-providers)** - Cách xác thực và kết nối
-- **[Duyệt và tải nội dung](./browsing-content)** - Điều hướng thư mục, tải tệp và phát nội dung
-- **[Thông báo](./announcements)** - Lặp lại một thư mục slide từ nhà cung cấp
+- **[Kết nối với nhà cung cấp](./connecting-providers.md)** - Cách xác thực và kết nối
+- **[Duyệt và tải nội dung](./browsing-content.md)** - Điều hướng thư mục, tải tệp và phát nội dung
+- **[Thông báo](./announcements.md)** - Lặp lại một thư mục slide từ nhà cung cấp

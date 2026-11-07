@@ -1,5 +1,6 @@
 ---
 title: "Portal oversigt"
+description: "Tag en rundtur i Lessons.church-portalen for at finde klasseværelser, gennemse planlagte lektioner, opsæt feedlinks og komme til eksterne udbydere og admin-værktøjer."
 ---
 
 # Portal oversigt

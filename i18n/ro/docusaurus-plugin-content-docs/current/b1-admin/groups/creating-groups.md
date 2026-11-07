@@ -1,5 +1,6 @@
 ---
 title: "Crearea grupurilor"
+description: "Configurați un grup nou în B1 Admin, de la alegerea categoriei și numire până la politica de înscriere, etichete, mesagerie și setările de prezență."
 ---
 
 # Crearea grupurilor

@@ -1,5 +1,6 @@
 ---
 title: "Hakemiston tulostaminen"
+description: "Luo B1 Administa tulostettava jäsenhakemisto talouksittain: kuvat, yhteystiedot ja syntymäpäivät, Letter-kokoiselle paperille."
 ---
 
 # Hakemiston tulostaminen

@@ -1,5 +1,6 @@
 ---
 title: "Nadzorna plošča"
+description: "Spoznajte domači zaslon aplikacije B1 Mobile, kjer so vaše najbolj uporabljene funkcije prikazane kot velike kartice, ostale pa so v Hitrih dejanjih."
 ---
 
 # Nadzorna plošča
@@ -28,7 +29,7 @@ Pod glavno kartico boste videli do dve **izpostavljeni kartici** drug ob drugi. 
 
 ## Hitra dejanja
 
-Preostale funkcije so prikazane v mreži **Hitra dejanja** pod izpostavljenimi karticami. Vsak element prikazuje ikono in oznako. To so vse ostale navigacijske povezave, ki jih je nastavila vaša cerkev, in omogočajo dostop do vsega, od [skupin](../groups/) in [darovanj](../giving/) do [prijave](../checkin/), [pridig](../content/sermons.md) in še več.
+Preostale funkcije so prikazane v mreži **Hitra dejanja** pod izpostavljenimi karticami. Vsak element prikazuje ikono in oznako. To so vse ostale navigacijske povezave, ki jih je nastavila vaša cerkev, in omogočajo dostop do vsega, od [skupin](../groups/index.md) in [darovanj](../giving/index.md) do [prijave](../checkin/index.md), [pridig](../content/sermons.md) in še več.
 
 ## Kako se postavitev prilagaja
 
@@ -41,7 +42,7 @@ Postavitev nadzorne plošče je prilagojena glede na vaše navade uporabe. Vsaki
 Če aplikacije še niste uporabljali, so funkcije prikazane v privzetem vrstnem redu, ki ga je nastavila vaša cerkev. Sčasoma se nadzorna plošča preuredi, da se ujema z vašimi navadami.
 
 :::info
-Funkcije, ki so na voljo na vaši nadzorni plošči, nastavi skrbnik vaše cerkve prek [B1 Admin](../../b1-admin/). Če ne vidite funkcije, ki jo pričakujete, se obrnite na cerkveno pisarno.
+Funkcije, ki so na voljo na vaši nadzorni plošči, nastavi skrbnik vaše cerkve prek [B1 Admin](../../b1-admin/index.md). Če ne vidite funkcije, ki jo pričakujete, se obrnite na cerkveno pisarno.
 :::
 
 ## Osveževanje nadzorne plošče

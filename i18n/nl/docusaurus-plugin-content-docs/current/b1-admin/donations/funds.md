@@ -1,5 +1,6 @@
 ---
 title: "Fondsen beheren"
+description: "Maak donatiefondsen aan in B1 Admin, stel fiscale aftrekbaarheid en donorzichtbaarheid in en bekijk fondstotalen en giftenhistorie."
 ---
 
 # Fondsen beheren

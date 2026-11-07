@@ -1,5 +1,6 @@
 ---
 title: "Rahastojen hallinta"
+description: "Luo ja järjestä lahjoitusrahastoja B1 Adminissa, määritä verovähennyskelpoisuus ja lahjoittajien näkyvyys sekä tarkastele rahastojen summia ja lahjahistoriaa."
 ---
 
 # Rahastojen hallinta

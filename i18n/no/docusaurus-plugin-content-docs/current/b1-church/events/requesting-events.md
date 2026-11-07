@@ -1,5 +1,6 @@
 ---
 title: "Be om arrangementer og rom"
+description: "Be om rombooking eller utstyr til et arrangement fra B1.church-medlemsportalen, følg status under My Requests, og avbryt det mens det venter."
 ---
 
 # Be om arrangementer og rom
@@ -42,11 +43,11 @@ Etter innsending viser et sammendrag **Forespørsel sendt** statusen for hvert r
 Mens en forespørsel fortsatt venter, kan du trekke den tilbake med **Avbryt forespørsel** (du blir bedt om å bekrefte – avbestilling kan ikke angres).
 
 :::info
-Forespørsler gjennomgås av kirkens ansatte på siden [Godkjenninger](../../b1-admin/calendars/approvals) i B1 Admin. Hvilke rom og ressurser som krever godkjenning, bestemmes av kirken din – se [Rom og ressurser](../../b1-admin/calendars/rooms-resources).
+Forespørsler gjennomgås av kirkens ansatte på siden [Godkjenninger](../../b1-admin/calendars/approvals.md) i B1 Admin. Hvilke rom og ressurser som krever godkjenning, bestemmes av kirken din – se [Rom og ressurser](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Relaterte artikler
 
-- [Siden Meg](../getting-started/me-page) – Der lenkene til forespørslene finnes
-- [Kalendergodkjenninger (B1 Admin)](../../b1-admin/calendars/approvals) – Slik gjennomgår ansatte forespørsler
-- [Rom og ressurser (B1 Admin)](../../b1-admin/calendars/rooms-resources) – Slik konfigurerer kirker rom som kan bookes
+- [Siden Meg](../getting-started/me-page.md) – Der lenkene til forespørslene finnes
+- [Kalendergodkjenninger (B1 Admin)](../../b1-admin/calendars/approvals.md) – Slik gjennomgår ansatte forespørsler
+- [Rom og ressurser (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) – Slik konfigurerer kirker rom som kan bookes

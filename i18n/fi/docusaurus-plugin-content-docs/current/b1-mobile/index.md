@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (vanhentunut)"
+description: "Selittää, että B1 Mobile -natiivisovellus on vanhentunut ja että jäsenten ja ylläpitäjien tulisi käyttää sen sijaan B1.church PWA:ta, vanhat sivut on säilytetty viitteeksi."
 ---
 
 # B1 Mobile (vanhentunut)
@@ -40,16 +41,16 @@ B1 Mobile tuki push-ilmoituksia, joten et jäisi paitsi tärkeistä seurakunnan 
 
 ## Lue lisää
 
-- [Aloittaminen](./getting-started/) -- Asenna sovellus, luo tili ja valitse seurakuntasi.
-- [Kojelauta](./dashboard/) -- Tutustu henkilökohtaiseen etusivuusi.
-- [Ryhmät](./groups/) -- Pysy yhteydessä seurakuntasi ryhmiin.
-- [Lahjoitukset](./giving/) -- Tee lahjoituksia puhelimellasi.
-- [Tapahtumat](./events/) -- Selaa seurakunnan tulevia tapahtumia ja ilmoittaudu niihin.
-- [Sisäänkirjaus](./checkin/) -- Kirjaudu sisään jumalanpalveluksiin ja tapahtumiin.
-- [Palveleminen](./serving/) -- Katso palvelusuunnitelmasi, tehtäväsi ja vapaaehtoismahdollisuudet.
-- [Yhteisö](./community/) -- Selaa jäsenhakemistoa ja lähetä viestejä.
-- [Sisältö](./content/) -- Saarnat, Raamattu, päivän jae ja oppitunnit (oppituntinäkymä vanhentunut — katso [FreePlay](/docs/freeplay/)).
-- [Profiili](./profile/) -- Hallitse profiiliasi ja tilisi asetuksia.
+- [Aloittaminen](./getting-started/index.md) -- Asenna sovellus, luo tili ja valitse seurakuntasi.
+- [Kojelauta](./dashboard/index.md) -- Tutustu henkilökohtaiseen etusivuusi.
+- [Ryhmät](./groups/index.md) -- Pysy yhteydessä seurakuntasi ryhmiin.
+- [Lahjoitukset](./giving/index.md) -- Tee lahjoituksia puhelimellasi.
+- [Tapahtumat](./events/index.md) -- Selaa seurakunnan tulevia tapahtumia ja ilmoittaudu niihin.
+- [Sisäänkirjaus](./checkin/index.md) -- Kirjaudu sisään jumalanpalveluksiin ja tapahtumiin.
+- [Palveleminen](./serving/index.md) -- Katso palvelusuunnitelmasi, tehtäväsi ja vapaaehtoismahdollisuudet.
+- [Yhteisö](./community/index.md) -- Selaa jäsenhakemistoa ja lähetä viestejä.
+- [Sisältö](./content/index.md) -- Saarnat, Raamattu, päivän jae ja oppitunnit (oppituntinäkymä vanhentunut — katso [FreePlay](/docs/freeplay/)).
+- [Profiili](./profile/index.md) -- Hallitse profiiliasi ja tilisi asetuksia.
 
 :::info
 B1 Mobilen on korvannut [B1.church PWA](../b1-church/getting-started/installing-pwa.md). Uusien käyttöönottojen tulisi käyttää PWA-sovellusta, sillä natiivisovellusta ei enää päivitetä.

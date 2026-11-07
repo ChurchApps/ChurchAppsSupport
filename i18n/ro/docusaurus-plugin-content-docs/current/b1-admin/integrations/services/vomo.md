@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Conectați înscrierile de voluntari VOMO și check-in-urile de la chioșc la persoanele și grupurile din B1 Admin prin Zapier, cu scopurile cheii API și pașii."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ Când proiectul din VOMO se încheie, golește manual grupul din B1 (sau asociaz
 
 ### Trimite un SMS de mulțumire pentru înscriere
 
-Înlănțuiește în același Zap pașii VOMO Participation → Clearstream Send Text sau Text In Church Send Message. Ambele au acțiuni native în Zapier. Vezi [Clearstream](./clearstream) și [Text In Church](./text-in-church).
+Înlănțuiește în același Zap pașii VOMO Participation → Clearstream Send Text sau Text In Church Send Message. Ambele au acțiuni native în Zapier. Vezi [Clearstream](./clearstream.md) și [Text In Church](./text-in-church.md).
 
 ### Detectează abandonul
 
@@ -91,6 +92,6 @@ Rulează zilnic un declanșator *Schedule* din Zapier, care apelează Find Organ
 
 ## Vezi și
 
-- [Zapier (prezentare generală)](../zapier): partea B1 a fiecărei rețete Zapier
-- [Clearstream](./clearstream), [Text In Church](./text-in-church): asociază înscrierile voluntarilor cu confirmări prin SMS
+- [Zapier (prezentare generală)](../zapier.md): partea B1 a fiecărei rețete Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md): asociază înscrierile voluntarilor cu confirmări prin SMS
 - [Webhooks (referință pentru dezvoltatori)](/docs/developer/api/webhooks): evenimentele pe care le poate declanșa VOMO

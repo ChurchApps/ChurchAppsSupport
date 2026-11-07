@@ -1,5 +1,6 @@
 ---
 title: "Reprodução agendada na TV"
+description: "Uma TV pareada baixa a semana seguinte e toca pelo relógio, mesmo offline. Aborda o painel de informações, os botões do controle e como fixar uma playlist."
 ---
 
 # Reprodução agendada na TV
@@ -13,8 +14,8 @@ Quando uma TV está pareada a um calendário, o FreePlay a executa para você. E
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- [Pareie a TV a um calendário](./pairing-a-screen)
-- [Coloque algo no calendário](./scheduling-the-calendar), ou defina um loop padrão para o grupo da tela
+- [Pareie a TV a um calendário](./pairing-a-screen.md)
+- [Coloque algo no calendário](./scheduling-the-calendar.md), ou defina um loop padrão para o grupo da tela
 
 </div>
 
@@ -40,7 +41,7 @@ O painel também tem três botões:
 
 - **Fixar esta lista** - Mantém o conteúdo atual tocando em loop e ignora o calendário. Selecione **Desafixar lista** para voltar à programação
 - **Navegar pelo conteúdo** - Sai do player agendado para navegar pelos seus provedores conectados
-- **Configurações** - Abre as configurações do FreePlay, onde você pode [desfazer o pareamento ou parear com outro calendário](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Configurações** - Abre as configurações do FreePlay, onde você pode [desfazer o pareamento ou parear com outro calendário](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 Para voltar à programação depois de navegar, pressione **Voltar** no controle remoto a partir da tela **Provedores de conteúdo**, ou abra **Configurações**, selecione **Parear com um calendário** e escolha **Voltar à programação**. Uma TV pareada também volta ao player agendado sempre que o FreePlay volta ao primeiro plano, e sempre abre no player agendado.
@@ -77,6 +78,6 @@ Você também pode reproduzir o calendário de uma tela em um navegador web. No 
 
 ## Artigos relacionados
 
-- **[Agendando o calendário](./scheduling-the-calendar)** - Defina o que é reproduzido e o que acontece quando termina mais cedo
-- **[Gerenciando telas e grupos](./managing-screens)** - Veja os downloads de cada tela no FreePlay Admin
-- **[Reproduzindo conteúdo](../content-providers/playing-content)** - Controles do player quando você mesmo reproduz um conteúdo
+- **[Agendando o calendário](./scheduling-the-calendar.md)** - Defina o que é reproduzido e o que acontece quando termina mais cedo
+- **[Gerenciando telas e grupos](./managing-screens.md)** - Veja os downloads de cada tela no FreePlay Admin
+- **[Reproduzindo conteúdo](../content-providers/playing-content.md)** - Controles do player quando você mesmo reproduz um conteúdo

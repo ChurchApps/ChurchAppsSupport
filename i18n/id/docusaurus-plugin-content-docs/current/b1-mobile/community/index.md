@@ -1,5 +1,7 @@
 ---
-title: "Komunitas"
+title: "Fitur Komunitas di Aplikasi B1 Mobile"
+sidebar_label: "Komunitas"
+description: "Gunakan aplikasi B1 Mobile untuk mencari direktori anggota, mengirim pesan pribadi ke sesama anggota, dan meninjau notifikasi push dari gereja Anda."
 ---
 
 # Komunitas
@@ -12,13 +14,13 @@ Fitur **Komunitas** di B1 Mobile membantu Anda tetap terhubung dengan keluarga g
 
 ## Yang Akan Anda Temukan
 
-- **[Member Directory](./member-directory)** -- Jelajahi dan cari direktori anggota gereja Anda. Cari orang berdasarkan nama dan ketuk anggota untuk melihat profilnya beserta informasi kontak dan hubungan keluarga.
-- **[Messaging](./messaging)** -- Kirim dan terima pesan pribadi dengan sesama anggota gereja. Mulai percakapan baru atau lanjutkan percakapan yang sudah ada.
-- **[Notifications](./notifications)** -- Tetap mendapatkan informasi terbaru melalui notifikasi push tentang aktivitas kelompok, pesan, penugasan pelayanan, dan pembaruan penting lainnya dari gereja Anda.
+- **[Member Directory](./member-directory.md)** -- Jelajahi dan cari direktori anggota gereja Anda. Cari orang berdasarkan nama dan ketuk anggota untuk melihat profilnya beserta informasi kontak dan hubungan keluarga.
+- **[Messaging](./messaging.md)** -- Kirim dan terima pesan pribadi dengan sesama anggota gereja. Mulai percakapan baru atau lanjutkan percakapan yang sudah ada.
+- **[Notifications](./notifications.md)** -- Tetap mendapatkan informasi terbaru melalui notifikasi push tentang aktivitas kelompok, pesan, penugasan pelayanan, dan pembaruan penting lainnya dari gereja Anda.
 
 ## Memulai
 
-Anda harus masuk untuk mengakses fitur komunitas. Jika Anda belum masuk, Anda akan diminta untuk [masuk](../getting-started/logging-in) saat mencoba menggunakan bagian mana pun.
+Anda harus masuk untuk mengakses fitur komunitas. Jika Anda belum masuk, Anda akan diminta untuk [masuk](../getting-started/logging-in.md) saat mencoba menggunakan bagian mana pun.
 
 Direktori anggota, pesan, dan notifikasi masing-masing dapat diakses dari navigasi aplikasi. Bersama-sama, fitur ini memberi Anda cara sederhana untuk menemukan orang, berkomunikasi secara pribadi, dan tetap mengikuti perkembangan di gereja Anda.
 

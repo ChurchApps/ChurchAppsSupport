@@ -1,5 +1,6 @@
 ---
 title: "De kalender plannen"
+description: "Plan in FreePlay Admin's Agenda wekelijkse of eenmalige afspeelmomenten voor playlists, serviceplannen of providermappen, met standaardlussen als reserve."
 ---
 
 # De kalender plannen
@@ -13,8 +14,8 @@ De pagina **Kalender** in FreePlay Admin bepaalt wat elke schermgroep afspeelt e
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- Maak minstens één schermgroep aan. Zie [Schermen en groepen beheren](./managing-screens#screen-groups)
-- [Bouw een afspeellijst](./building-playlists), of zorg dat er in B1 Admin een plantype is ingesteld
+- Maak minstens één schermgroep aan. Zie [Schermen en groepen beheren](./managing-screens.md#screen-groups)
+- [Bouw een afspeellijst](./building-playlists.md), of zorg dat er in B1 Admin een plantype is ingesteld
 
 </div>
 
@@ -82,11 +83,11 @@ Als twee planningen elkaar overlappen, toont het formulier een waarschuwing: **O
 
 ## Hoe schermen wijzigingen oppikken
 
-Gekoppelde schermen downloaden alles wat voor de komende 7 dagen is gepland, en ze controleren zelf op wijzigingen. Je hoeft de tv niet aan te raken nadat je de kalender hebt bewerkt. Om te zien wanneer een scherm alles heeft wat het nodig heeft, bekijk je **Gereed tot en met** op de [pagina Schermen](./managing-screens).
+Gekoppelde schermen downloaden alles wat voor de komende 7 dagen is gepland, en ze controleren zelf op wijzigingen. Je hoeft de tv niet aan te raken nadat je de kalender hebt bewerkt. Om te zien wanneer een scherm alles heeft wat het nodig heeft, bekijk je **Gereed tot en met** op de [pagina Schermen](./managing-screens.md).
 
 ## Gerelateerde artikelen
 
-- **[Afspeellijsten bouwen](./building-playlists)** - Maak de afspeellijsten die je plant
-- **[Gepland afspelen op de tv](./scheduled-playback)** - Hoe lessen op tempo van de leraar en de afstandsbediening op de tv werken
-- **[Schermen en groepen beheren](./managing-screens)** - Groepen toevoegen en de downloads van elk scherm controleren
+- **[Afspeellijsten bouwen](./building-playlists.md)** - Maak de afspeellijsten die je plant
+- **[Gepland afspelen op de tv](./scheduled-playback.md)** - Hoe lessen op tempo van de leraar en de afstandsbediening op de tv werken
+- **[Schermen en groepen beheren](./managing-screens.md)** - Groepen toevoegen en de downloads van elk scherm controleren
 - **[Alleen een deel van elke les behouden](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Beperk elke geplande les in een plantype tot de onderdelen die je ruimte afspeelt

@@ -1,5 +1,6 @@
 ---
 title: "Minhas Inscrições"
+description: "Confira o status das inscrições, pague saldo pendente, edite participantes ou adicionais ou cancele uma inscrição no portal do B1 Church."
 ---
 
 # Minhas Inscrições
@@ -14,7 +15,7 @@ A página **Inscrições** no portal do membro é o seu ponto de partida para to
 <h4>Antes de começar</h4>
 
 - Você precisa estar [conectado](../getting-started/logging-in.md). Inscrições de convidados não aparecem aqui
-- Você precisa de pelo menos uma inscrição em evento. Veja [Inscrição em eventos](./registering).
+- Você precisa de pelo menos uma inscrição em evento. Veja [Inscrição em eventos](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Sua vaga é liberada imediatamente. Se o evento tiver lista de espera, a próxim
 
 ## Artigos relacionados
 
-- [Inscrição em eventos](./registering) -- O processo de inscrição, incluindo pagamento e listas de espera
+- [Inscrição em eventos](./registering.md) -- O processo de inscrição, incluindo pagamento e listas de espera
 - [Visão geral dos eventos](./index.md) -- Veja os próximos eventos

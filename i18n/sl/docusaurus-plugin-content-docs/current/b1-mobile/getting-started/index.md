@@ -1,5 +1,7 @@
 ---
-title: "Začetek"
+title: "Začetek uporabe B1 Mobile (opuščeno)"
+sidebar_label: "Začetek"
+description: "Nastavite B1 Mobile na telefonu: poiščite aplikacijo, se prijavite z računom ChurchApps in izberite cerkev. Aplikacija B1 Mobile je opuščena v korist PWA."
 ---
 
 # Začetek
@@ -25,10 +27,10 @@ To je vse. Ko izberete svojo cerkev, aplikacija naloži njeno blagovno znamko, n
 
 ## V tem razdelku
 
-- [Namestitev aplikacije](./installing) -- Kje prenesti B1 Mobile in zahteve naprave.
-- [Prijava](./logging-in) -- Kako se prijaviti ali ustvariti nov račun.
-- [Preklapljanje cerkva](./switching-churches) -- Kako preklopiti med cerkvami, če pripadate več kot eni.
+- [Namestitev aplikacije](./installing.md) -- Kje prenesti B1 Mobile in zahteve naprave.
+- [Prijava](./logging-in.md) -- Kako se prijaviti ali ustvariti nov račun.
+- [Preklapljanje cerkva](./switching-churches.md) -- Kako preklopiti med cerkvami, če pripadate več kot eni.
 
 :::tip
-B1 Mobile uporablja isti račun ChurchApps kot vsi drugi izdelki ChurchApps. Če že imate račun na [B1.church](../../b1-church/), B1 Admin ali Lessons.church, se lahko prijavite s temi istimi poverilnicami.
+B1 Mobile uporablja isti račun ChurchApps kot vsi drugi izdelki ChurchApps. Če že imate račun na [B1.church](../../b1-church/index.md), B1 Admin ali Lessons.church, se lahko prijavite s temi istimi poverilnicami.
 :::

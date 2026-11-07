@@ -1,5 +1,6 @@
 ---
 title: "Slack & Discord"
+description: "Publique no canal do Slack ou Discord eventos do B1 Admin, como novas pessoas, doações e formulários, com um webhook de entrada, sem precisar do Zapier."
 ---
 
 # Slack & Discord
@@ -114,7 +115,7 @@ Se algo falhou (badge `failed` ou `exhausted` vermelho), o diálogo mostra o sta
 
 - **Nenhuma mensagem aparece + status de entrega `400`** — geralmente o Tipo de Conector está definido para **Standard** mas a URL é uma Slack/Discord. Slack/Discord rejeitam o envelope bruto. Mude a dropdown para **Slack** ou **Discord** e resends o teste.
 - **Webhook auto-desabilitado** — após 3 entregas falhas consecutivas B1 desliga o webhook. Corrija a URL (ou rotacione-a em Slack/Discord) e alterne **Active** de volta.
-- **Mensagem chegou mas está faltando detalhe** — cada plataforma de chat limita tamanho de mensagem. As mensagens B1 são uma linha por design; para notificações mais ricas use [Zapier](./zapier) ou [Make](./make) para compor uma mensagem Slack mais completa via suas ações Slack.
+- **Mensagem chegou mas está faltando detalhe** — cada plataforma de chat limita tamanho de mensagem. As mensagens B1 são uma linha por design; para notificações mais ricas use [Zapier](./zapier.md) ou [Make](./make.md) para compor uma mensagem Slack mais completa via suas ações Slack.
 
 ## Trocar Tipos de Conector Depois
 
@@ -122,6 +123,6 @@ Você pode trocar o Tipo de Conector em um webhook existente — entra em efeito
 
 ## Veja Também
 
-- [Zapier](./zapier) — para fluxos de trabalho de multi-passo disparados por eventos B1
-- [Make](./make) — construtor de cenário visual
+- [Zapier](./zapier.md) — para fluxos de trabalho de multi-passo disparados por eventos B1
+- [Make](./make.md) — construtor de cenário visual
 - [Webhooks (referência de desenvolvedor)](/docs/developer/api/webhooks) — o payload completo + formato de assinatura se você alguma vez apontar um webhook no seu próprio servidor

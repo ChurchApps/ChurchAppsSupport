@@ -1,5 +1,6 @@
 ---
 title: "Procházení a stahování obsahu"
+description: "Procházejte knihovnu připojeného poskytovatele dálkovým ovladačem TV ve FreePlay, poté stáhněte nebo streamujte lekce a videa k přehrání."
 ---
 
 # Procházení a stahování obsahu
@@ -13,7 +14,7 @@ Jakmile se připojíte k poskytovateli obsahu, můžete procházet jeho knihovnu
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Připojte alespoň jednoho poskytovatele obsahu -- viz [Připojení k poskytovatelům](./connecting-providers)
+- Připojte alespoň jednoho poskytovatele obsahu -- viz [Připojení k poskytovatelům](./connecting-providers.md)
 - Mějte připravený dálkový ovladač televizoru
 
 </div>
@@ -38,7 +39,7 @@ Můžete procházet tak hluboko, jak to dovoluje struktura obsahu poskytovatele.
 
 ## Procházení Lessons.church
 
-Knihovna [Lessons.church](../../lessons-church/) je uspořádána stejně jako její webové stránky. Na nejvyšší úrovni uvidíte dvě složky:
+Knihovna [Lessons.church](../../lessons-church/index.md) je uspořádána stejně jako její webové stránky. Na nejvyšší úrovni uvidíte dvě složky:
 
 - **Lekce** - Procházejte podle **programu**, poté **studie** a potom **lekce**. Každá lekce pak zobrazí své **varianty**, tedy verze lekce pro konkrétní věkovou skupinu nebo prostředí, například Předškoláci nebo Školní děti. Výběrem varianty otevřete obrazovku stahování pro danou verzi lekce
 - **Doplňky** - Další videa a materiály seskupené podle kategorií
@@ -78,7 +79,7 @@ Během přehrávání použijte tyto ovládací prvky:
 Když přehrávač ukončíte, vrátíte se do prohlížeče obsahu na nejvyšší úrovni aktuálního poskytovatele.
 
 :::info
-Úplný přehled všech ovládacích prvků přehrávače najdete v části [Přehrávání obsahu](./playing-content).
+Úplný přehled všech ovládacích prvků přehrávače najdete v části [Přehrávání obsahu](./playing-content.md).
 :::
 
 ## Přepínání mezi poskytovateli

@@ -1,5 +1,6 @@
 ---
 title: "Ustvarjanje koledarjev"
+description: "Ustvarite koledar v B1 Admin, povežite skupine ali uvozite datoteke .ics ter upravljajte dogodke, prijave in opombe na enem mestu."
 ---
 
 # Ustvarjanje koledarjev
@@ -61,7 +62,7 @@ Povezovanje skupin z vašim koledarjem je zmogljiv način za samodejno združeva
 :::
 
 :::info
-Če želite ustvariti en sam koledar, ki povlači dogodke iz številnih skupin v vaši cerkvi, si oglejte [Kurirani koledar](curated-calendar), kjer je opisan poenostavljen pristop.
+Če želite ustvariti en sam koledar, ki povlači dogodke iz številnih skupin v vaši cerkvi, si oglejte [Kurirani koledar](./curated-calendar.md), kjer je opisan poenostavljen pristop.
 :::
 
 ## Dodajanje in urejanje dogodkov {#adding-and-editing-events}
@@ -75,7 +76,7 @@ Na strani s podrobnostmi koledarja kliknite **New Event**, da dodate dogodek, al
 - **Start** in **End**, **Repeats** ter **Visibility** (**Public** ali **Private**).
 - **Tags** -- Oznake, ločene z vejicami, na primer `youth, students`. Element Calendar na vaši spletni strani lahko nastavite tako, da prikazuje samo dogodke z določeno oznako. To je isto polje **Tags**, ki je prikazano v nastavitvah prijav na dogodek.
 - **Who can view notes** in **Who can post notes** -- Kdo lahko bere in dodaja zapiske dogodka (glejte [Zapiski dogodka](#event-notes)). Izberite **Staff only** (privzeto), **Group leaders** (vodje skupine dogodka) ali **Group members** (vsi v skupini dogodka, vključno z njenimi vodji).
-- **Rooms** in **Resources** -- Rezervirajte prostor in opremo za dogodek. Glejte [Prostori, viri in razporejanje](rooms-resources).
+- **Rooms** in **Resources** -- Rezervirajte prostor in opremo za dogodek. Glejte [Prostori, viri in razporejanje](./rooms-resources.md).
 
 Kliknite **Save**. Če se dogodek ponavlja, vas B1 prosi za potrditev, saj shranjevanje posodobi vsako ponovitev v seriji.
 
@@ -101,12 +102,12 @@ Prijave lahko omogočite za katerega koli dogodek v koledarju, da se člani lahk
    - **Registration Closes** -- Datum in čas, ko se prijave zaprejo.
    - **Tags** -- Oznake, ločene z vejicami (npr. „youth, retreat, vbs“), ki pomagajo razvrščati dogodke, na katere se je mogoče prijaviti.
    - **Registration Questions** -- Po želji priložite [obrazec](../forms/creating-forms.md), da prijavljenci med prijavo odgovorijo na dodatna vprašanja (prehranske omejitve, velikost majice, kontakt za nujne primere itd.). Izberite **None**, če želite vprašanja preskočiti.
-   - **Enable Waitlist** -- Ko je dogodek poln, lahko dodatni prijavljenci vstopijo na čakalni seznam namesto da bi jih zavrnili. Glejte [Plačljive prijave](paid-registrations#waitlist).
+   - **Enable Waitlist** -- Ko je dogodek poln, lahko dodatni prijavljenci vstopijo na čakalni seznam namesto da bi jih zavrnili. Glejte [Plačljive prijave](./paid-registrations.md#waitlist).
 4. Shranite dogodek.
 
-Pri plačljivih dogodkih na isti strani z nastavitvami določite cenovne vrste udeležencev (**Attendee Types**), izbirne dodatke (**Selections**) in popustne kode (**Discount Codes**), plačila pa se zbirajo prek ponudnika darovanj vaše cerkve. Celoten postopek je opisan v [Plačljive prijave](paid-registrations).
+Pri plačljivih dogodkih na isti strani z nastavitvami določite cenovne vrste udeležencev (**Attendee Types**), izbirne dodatke (**Selections**) in popustne kode (**Discount Codes**), plačila pa se zbirajo prek ponudnika darovanj vaše cerkve. Celoten postopek je opisan v [Plačljive prijave](./paid-registrations.md).
 
-Ko so prijave omogočene, bodo člani ob ogledu dogodka na [spletni strani B1](../../b1-church/events/registering) ali v [mobilni aplikaciji B1](../../b1-mobile/events/registering) videli gumb **Register for this Event**. Če ste priložili obrazec, bodo prijavljenci med prijavo videli korak **Questions**, njihovi odgovori pa bodo shranjeni skupaj s prijavo.
+Ko so prijave omogočene, bodo člani ob ogledu dogodka na [spletni strani B1](../../b1-church/events/registering.md) ali v [mobilni aplikaciji B1](../../b1-mobile/events/registering.md) videli gumb **Register for this Event**. Če ste priložili obrazec, bodo prijavljenci med prijavo videli korak **Questions**, njihovi odgovori pa bodo shranjeni skupaj s prijavo.
 
 :::info
 Vprašanja ob prijavi delujejo samo z obrazci, ki **niso** označeni kot Restricted. Omejen obrazec se med prijavo samodejno preskoči in ni prikazan, zato za vprašanja pri dogodku uporabite neomejen obrazec.
@@ -126,7 +127,7 @@ Za ogled in upravljanje prijav na vaše dogodke:
    - **Promote** prijave s čakalnega seznama, ko se sprosti mesto
    - **Export CSV** -- prenesete vse prijave, vključno z vrstami udeležencev, izbirnimi dodatki, zneski plačil in odgovori na vprašanja
 
-Če so pri dogodku priložena vprašanja ob prijavi, stran s podrobnostmi prikazuje tudi filter **Unanswered questions only**, s katerim hitro najdete prijavljence, ki še niso oddali odgovorov, ter gumb **View Answers** pri vsaki odgovorjeni prijavi, s katerim si ogledate njihove odgovore. Plačljivi dogodki dodajo stolpec **Type**, stolpec **Paid / Total**, števce po vrstah in pogovorno okno s podrobnostmi plačil. Glejte [Plačljive prijave](paid-registrations#the-registration-roster).
+Če so pri dogodku priložena vprašanja ob prijavi, stran s podrobnostmi prikazuje tudi filter **Unanswered questions only**, s katerim hitro najdete prijavljence, ki še niso oddali odgovorov, ter gumb **View Answers** pri vsaki odgovorjeni prijavi, s katerim si ogledate njihove odgovore. Plačljivi dogodki dodajo stolpec **Type**, stolpec **Paid / Total**, števce po vrstah in pogovorno okno s podrobnostmi plačil. Glejte [Plačljive prijave](./paid-registrations.md#the-registration-roster).
 
 :::tip
 Z vrstico napredka kapacitete spremljajte, kako hitro se dogodki polnijo. Vrstica postane rdeča, ko je dogodek dosegel ali presegel kapaciteto.
@@ -134,7 +135,7 @@ Z vrstico napredka kapacitete spremljajte, kako hitro se dogodki polnijo. Vrstic
 
 ## Naslednji koraki
 
-- [Kurirani koledar](curated-calendar) -- ustvarite koledar, ki povlači dogodke iz več skupin
-- [Plačljive prijave](paid-registrations) -- vrste udeležencev, izbirni dodatki, popustne kode, plačila in čakalni seznami
-- [Vodnik za prijave na dogodke](../guides/event-registration) -- postopen vodnik za nastavitev prijav na dogodke
-- [Pregled koledarjev](./) -- vrnitev na pregled koledarjev
+- [Kurirani koledar](./curated-calendar.md) -- ustvarite koledar, ki povlači dogodke iz več skupin
+- [Plačljive prijave](./paid-registrations.md) -- vrste udeležencev, izbirni dodatki, popustne kode, plačila in čakalni seznami
+- [Vodnik za prijave na dogodke](../guides/event-registration.md) -- postopen vodnik za nastavitev prijav na dogodke
+- [Pregled koledarjev](./index.md) -- vrnitev na pregled koledarjev

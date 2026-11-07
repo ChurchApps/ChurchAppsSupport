@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Packages çalışma alanında tüm ChurchApps Express API'lerinin kullandığı @churchapps/apihelper paketinin başvuru kılavuzu: yerel derleme, Yarn portalı ile test etme ve changeset ile yayımlama."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ title: "ApiHelper"
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- **Node.js** ve **Git** kurun -- bkz. [Ön Koşullar](../setup/prerequisites)
+- **Node.js** ve **Git** kurun -- bkz. [Ön Koşullar](../setup/prerequisites.md)
 - [Packages çalışma alanı](./index.md) kurulumunu ve sürüm yayınlama akışını inceleyin
-- Bu paket, [`@churchapps/helpers`](./helpers) paketine eş bağımlılık (peer dependency) olarak bağlıdır ve onu yeniden dışa aktarır
+- Bu paket, [`@churchapps/helpers`](./helpers.md) paketine eş bağımlılık (peer dependency) olarak bağlıdır ve onu yeniden dışa aktarır
 
 </div>
 
@@ -65,6 +66,6 @@ Bu paket, her ChurchApps API'sinin -- temel Api, AskApi ve LessonsApi -- bağım
 
 ## İlgili Makaleler
 
-- **[Helpers](./helpers)** -- Bu paketin bağımlı olduğu temel yardımcı paket
-- **[Modül Yapısı](../api/module-structure)** -- Denetleyicilerin ve kimlik doğrulama ara katmanlarının API modüllerinde nasıl kullanıldığı
-- **[Yerel API Kurulumu](../api/local-setup)** -- API'yi yerel geliştirme için kurma
+- **[Helpers](./helpers.md)** -- Bu paketin bağımlı olduğu temel yardımcı paket
+- **[Modül Yapısı](../api/module-structure.md)** -- Denetleyicilerin ve kimlik doğrulama ara katmanlarının API modüllerinde nasıl kullanıldığı
+- **[Yerel API Kurulumu](../api/local-setup.md)** -- API'yi yerel geliştirme için kurma

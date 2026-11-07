@@ -1,5 +1,7 @@
 ---
-title: "Phục vụ"
+title: "Tình nguyện và đăng ký phục vụ trên B1.church"
+sidebar_label: "Phục vụ"
+description: "Duyệt các cơ hội tình nguyện trên B1.church, đăng ký vị trí còn trống, xem phân công phục vụ và hủy đăng ký trước thời hạn."
 ---
 
 # Phục vụ
@@ -14,8 +16,8 @@ Mục Phục vụ trên B1.church cho phép bạn xem các cơ hội tình nguy�
 
 - **Xem cơ hội tình nguyện** -- Xem các kế hoạch phục vụ sắp tới còn vị trí trống cần tình nguyện viên.
 - **Đăng ký vị trí** -- Chọn một vị trí và tự đăng ký chỉ với một cú nhấp chuột.
-- **Xem kế hoạch của bạn** -- Xem các [phân công phục vụ](../plans/viewing-plans) sắp tới và đã qua của bạn.
-- **Phản hồi phân công** -- Chấp nhận hoặc từ chối các vị trí mà bạn được xếp lịch, từ trang Kế hoạch hoặc phần **Bạn đang phục vụ** trên trang Trang chủ. Nếu kế hoạch của bạn thay đổi sau khi bạn đã chấp nhận, bạn có thể [từ chối một phân công đã chấp nhận](../plans/viewing-plans#declining-an-accepted-assignment) cho đến khi buổi phục vụ kết thúc.
+- **Xem kế hoạch của bạn** -- Xem các [phân công phục vụ](../plans/viewing-plans.md) sắp tới và đã qua của bạn.
+- **Phản hồi phân công** -- Chấp nhận hoặc từ chối các vị trí mà bạn được xếp lịch, từ trang Kế hoạch hoặc phần **Bạn đang phục vụ** trên trang Trang chủ. Nếu kế hoạch của bạn thay đổi sau khi bạn đã chấp nhận, bạn có thể [từ chối một phân công đã chấp nhận](../plans/viewing-plans.md#declining-an-accepted-assignment) cho đến khi buổi phục vụ kết thúc.
 - **Hủy đăng ký** -- Hủy đăng ký tự đăng ký nếu kế hoạch của bạn thay đổi (trước thời hạn).
 
 ## Cách hoạt động
@@ -28,5 +30,5 @@ Chỉ những vị trí mà quản trị viên hội thánh đã bật chức n�
 
 ## Tìm hiểu thêm
 
-- [Đăng ký tình nguyện](./volunteer-signup) -- Hướng dẫn từng bước để xem và đăng ký các vị trí tình nguyện
-- [Xem kế hoạch](../plans/viewing-plans) -- Xem các kế hoạch phục vụ và thứ tự phục vụ được phân công cho bạn
+- [Đăng ký tình nguyện](./volunteer-signup.md) -- Hướng dẫn từng bước để xem và đăng ký các vị trí tình nguyện
+- [Xem kế hoạch](../plans/viewing-plans.md) -- Xem các kế hoạch phục vụ và thứ tự phục vụ được phân công cho bạn

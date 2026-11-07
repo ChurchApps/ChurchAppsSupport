@@ -1,5 +1,6 @@
 ---
 title: "Připojení k poskytovatelům"
+description: "Připojte FreePlay k poskytovateli obsahu přes QR kód, přihlášení e-mailem nebo jedním kliknutím; připojení spravujte nebo odpojte v Nastavení."
 ---
 
 # Připojení k poskytovatelům
@@ -13,7 +14,7 @@ Než budete moci procházet obsah od poskytovatele, je potřeba se k němu přip
 <div class="prereqs">
 <h4>Před začátkem</h4>
 
-- Nainstalujte a spusťte FreePlay – viz [Začínáme](../getting-started/)
+- Nainstalujte a spusťte FreePlay – viz [Začínáme](../getting-started/index.md)
 - Připravte si dálkový ovladač televize pro navigaci
 - U poskytovatelů, kteří vyžadují přihlášení, mějte po ruce přihlašovací údaje ke svému účtu
 
@@ -80,7 +81,7 @@ Když vyberete kartu poskytovatele se štítkem **Připojeno**, otevře se obraz
 
 - **Procházet knihovnu** – Zobrazit nebo skrýt knihovnu obsahu tohoto poskytovatele v postranním panelu
 - **Automaticky stáhnout dnešní lekci** – Použít tohoto poskytovatele jako zdroj dnešní lekce a předem stáhnout jeho soubory (zobrazuje se jen u poskytovatelů, kteří nabízejí aktuální lekci)
-- **Použít pro oznámení** – Vyberte složku od tohoto poskytovatele, která se bude přehrávat v položce **Oznámení** v postranním panelu. Viz [Oznámení](./announcements)
+- **Použít pro oznámení** – Vyberte složku od tohoto poskytovatele, která se bude přehrávat v položce **Oznámení** v postranním panelu. Viz [Oznámení](./announcements.md)
 - **Zkontrolovat aktualizace oznámení** – Zobrazí se, jakmile je vybrána složka oznámení; stáhne nové snímky a odstraní smazané
 - **Odpojit** – Zrušit připojení
 
@@ -100,6 +101,6 @@ Odpojením se z vašeho zařízení odstraní uložené přihlašovací údaje. 
 
 ## Související články
 
-- **[Procházení a stahování obsahu](./browsing-content)** – Procházení složek a přehrávání obsahu po připojení
-- **[Oznámení](./announcements)** – Přehrávání složky snímků od připojeného poskytovatele
+- **[Procházení a stahování obsahu](./browsing-content.md)** – Procházení složek a přehrávání obsahu po připojení
+- **[Oznámení](./announcements.md)** – Přehrávání složky snímků od připojeného poskytovatele
 - **[Přehled poskytovatelů obsahu](./index.md)** – Všichni dostupní poskytovatelé

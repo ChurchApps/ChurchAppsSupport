@@ -1,5 +1,7 @@
 ---
-title: "Vesi Lwelilanga"
+title: "Livesi Lelilanga Ku-B1 Mobile"
+sidebar_label: "Vesi Lwelilanga"
+description: "Vula sikrini se-Livesi Lelilanga ku-B1 Mobile kuze ubone livesi lelibhayibheli lelilanga njengesithombe lesilingene ngendlela lefanele lifoni noma lithebhulethi yakho, livuselelwa nsuku nsuku."
 ---
 
 # Vesi Lwelilanga
@@ -13,7 +15,7 @@ Sikrini se-Vesi Lwelilanga sikhombisa vesi leliBhayibheli lemihla ngemihla njeng
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- [Faka i-B1 Mobile](../getting-started/installing) bese [ungena](../getting-started/logging-in) ku-akhawundi yakho
+- [Faka i-B1 Mobile](../getting-started/installing.md) bese [ungena](../getting-started/logging-in.md) ku-akhawundi yakho
 - Libandla lakho kufanele libe nesisici se-Vesi Lwelilanga sivuliwe
 
 </div>
@@ -46,5 +48,5 @@ Vesi Lwelilanga sisici lesakhelwe ngekhatsi se-B1 Mobile. Uma ungasiboni endzawe
 
 ## Tibhalo Letihlobene
 
-- [LiBhayibheli](./bible) -- Fundza tigaba letigcwele temiBhalo emfundzini lowakhelwe ngekhatsi
-- [Tintshumayelo](./sermons) -- Bukela tintshumayelo letibhaliwe tivela elibandleni lakho
+- [LiBhayibheli](./bible.md) -- Fundza tigaba letigcwele temiBhalo emfundzini lowakhelwe ngekhatsi
+- [Tintshumayelo](./sermons.md) -- Bukela tintshumayelo letibhaliwe tivela elibandleni lakho

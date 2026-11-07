@@ -1,5 +1,6 @@
 ---
 title: "Cài đặt quyền riêng tư"
+description: "Chọn thông tin như điện thoại, email, địa chỉ mà thành viên khác thấy trong danh bạ B1 Mobile, và xem các thay đổi đang chờ duyệt."
 ---
 
 # Cài đặt quyền riêng tư
@@ -13,7 +14,7 @@ Tab **Hiển thị** trên màn hình Hồ sơ cho phép bạn kiểm soát nh�
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
 
 </div>
 
@@ -52,8 +53,8 @@ Tab **Tài khoản** cung cấp quyền truy cập vào các cài đặt bảo m
 
 | Tab | Mục đích |
 |---|---|
-| **Hồ sơ** | [Chỉnh sửa thông tin cá nhân](./editing-profile) và ảnh của bạn |
-| **Hộ gia đình** | [Xem các thành viên trong gia đình](./household) |
+| **Hồ sơ** | [Chỉnh sửa thông tin cá nhân](./editing-profile.md) và ảnh của bạn |
+| **Hộ gia đình** | [Xem các thành viên trong gia đình](./household.md) |
 | **Hiển thị** | Kiểm soát những gì người khác thấy trong danh bạ |
 | **Đang chờ** | Xem các thay đổi hồ sơ đang chờ phê duyệt |
 | **Tài khoản** | Quản lý cài đặt bảo mật |
@@ -62,6 +63,6 @@ Các tab này phối hợp với nhau để giúp bạn kiểm soát đầy đ�
 
 ## Bài viết liên quan
 
-- [Chỉnh sửa hồ sơ của bạn](./editing-profile) -- Cập nhật thông tin cá nhân
-- [Hộ gia đình](./household) -- Xem và quản lý các thành viên trong gia đình
+- [Chỉnh sửa hồ sơ của bạn](./editing-profile.md) -- Cập nhật thông tin cá nhân
+- [Hộ gia đình](./household.md) -- Xem và quản lý các thành viên trong gia đình
 - [Danh bạ thành viên](../community/member-directory.md) -- Xem hồ sơ của bạn hiển thị với người khác như thế nào

@@ -1,5 +1,6 @@
 ---
 title: "API Deployment"
+description: "Deploy de ChurchApps API naar AWS Lambda met Serverless: builds, de demo- en productieworkflows, databasemigraties en SSM-configuratie."
 ---
 
 # API Deployment
@@ -13,7 +14,7 @@ ChurchApps API's worden geïmplementeerd als AWS Lambda-functies met behulp van 
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Stel de API lokaal in -- zie [Local API Setup](../api/local-setup)
+- Stel de API lokaal in -- zie [Local API Setup](../api/local-setup.md)
 - Configureer AWS-gegevens op uw machine
 - Zorg ervoor dat u toegang hebt tot het doel-AWS-account
 
@@ -68,6 +69,6 @@ Implementeer altijd eerst naar staging met behulp van `npm run deploy-staging` o
 
 ## Gerelateerde Artikelen
 
-- **[Local API Setup](../api/local-setup)** -- De API instellen voor ontwikkeling
-- **[Module Structure](../api/module-structure)** -- De Lambda-functie-architectuur begrijpen
-- **[Web App Deployment](./web-apps)** -- De frontend-applicaties implementeren
+- **[Local API Setup](../api/local-setup.md)** -- De API instellen voor ontwikkeling
+- **[Module Structure](../api/module-structure.md)** -- De Lambda-functie-architectuur begrijpen
+- **[Web App Deployment](./web-apps.md)** -- De frontend-applicaties implementeren

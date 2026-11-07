@@ -1,5 +1,6 @@
 ---
 title: "Server MCP"
+description: "Configurați accesul MCP la API-ul B1 pentru ca clienții AI precum Claude Code, Cursor sau Claude Desktop să poată apela endpoint-urile de date ale bisericii, folosind chei API sau autentificare OAuth."
 ---
 
 # Server MCP
@@ -13,7 +14,7 @@ API-ul B1 include un server [MCP (Model Context Protocol)](https://modelcontextp
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- O [cheie API B1](./api-keys) (`cak_…`) cu permisiunile (scopes) pe care trebuie să le aibă clientul, sau un client MCP care se poate autentifica prin OAuth (vezi [Descoperirea OAuth](#oauth-discovery))
+- O [cheie API B1](./api-keys.md) (`cak_…`) cu permisiunile (scopes) pe care trebuie să le aibă clientul, sau un client MCP care se poate autentifica prin OAuth (vezi [Descoperirea OAuth](#oauth-discovery))
 - O gazdă API B1 accesibilă: `https://api.churchapps.org` pentru bisericile găzduite sau propria ta instalare
 - Un client MCP. Consultă [Claude](/docs/b1-admin/integrations/claude) și [ChatGPT](/docs/b1-admin/integrations/chatgpt) pentru configurarea pentru utilizatorii finali
 
@@ -119,7 +120,7 @@ Rezultatul instrumentului este marcat cu `isError: true` pentru orice răspuns c
 
 ### `describe_page_builder`
 
-Singurul instrument non-generic: un ghid static, autonom, pentru construirea paginilor de site prin endpoint-urile `/content/*`. Acesta acoperă modelul de date Pagină → Secțiune → Element, fluxul de creare, fiecare `elementType` cu forma `answersJSON` a sa, setările la nivel de secțiune precum separatoarele de formă `dividerTop`/`dividerBottom` și un exemplu complet, pas cu pas. Nu primește niciun input și reflectă catalogul de elemente întreținut în editorul B1Admin (vezi [Arhitectura constructorului de site-uri](../architecture/website-builder)). Agenții trebuie să îl apeleze o singură dată înainte de a crea sau edita conținutul paginilor, apoi să acționeze prin `api_call`.
+Singurul instrument non-generic: un ghid static, autonom, pentru construirea paginilor de site prin endpoint-urile `/content/*`. Acesta acoperă modelul de date Pagină → Secțiune → Element, fluxul de creare, fiecare `elementType` cu forma `answersJSON` a sa, setările la nivel de secțiune precum separatoarele de formă `dividerTop`/`dividerBottom` și un exemplu complet, pas cu pas. Nu primește niciun input și reflectă catalogul de elemente întreținut în editorul B1Admin (vezi [Arhitectura constructorului de site-uri](../architecture/website-builder.md)). Agenții trebuie să îl apeleze o singură dată înainte de a crea sau edita conținutul paginilor, apoi să acționeze prin `api_call`.
 
 ## Modelul de autentificare
 
@@ -153,11 +154,11 @@ Nu există o limită de rată la nivel de aplicație pe `/mcp`. Limitarea este l
 
 ## Descoperirea OAuth
 
-Serverul MCP publică metadatele OAuth 2.1, astfel încât clienții care se conectează doar la servere descoperite prin OAuth, în special interfața „Add custom connector” din Claude.ai, pot autentifica un utilizator fără o cheie lipită. `/mcp` este resursa protejată, [furnizorul OAuth](./connected-apps) existent de sub `/membership/oauth` este serverul de autorizare, iar pagina `/oauth` din B1Admin este ecranul de consimțământ.
+Serverul MCP publică metadatele OAuth 2.1, astfel încât clienții care se conectează doar la servere descoperite prin OAuth, în special interfața „Add custom connector” din Claude.ai, pot autentifica un utilizator fără o cheie lipită. `/mcp` este resursa protejată, [furnizorul OAuth](./connected-apps.md) existent de sub `/membership/oauth` este serverul de autorizare, iar pagina `/oauth` din B1Admin este ecranul de consimțământ.
 
 | Endpoint | Scop |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (también `/.well-known/oauth-protected-resource/mcp`) | Metadatele resursei protejate (RFC 9728): `resource` este `<api>/mcp`, `authorization_servers` este rădăcina API-ului, iar `scopes_supported` listează fiecare [scop al cheii API](./api-keys#scopes) |
+| `GET /.well-known/oauth-protected-resource` (también `/.well-known/oauth-protected-resource/mcp`) | Metadatele resursei protejate (RFC 9728): `resource` este `<api>/mcp`, `authorization_servers` este rădăcina API-ului, iar `scopes_supported` listează fiecare [scop al cheii API](./api-keys.md#scopes) |
 | `GET /.well-known/oauth-authorization-server` | Metadatele serverului de autorizare (RFC 8414): `authorization_endpoint` este `/oauth` din B1Admin, `token_endpoint` este `/membership/oauth/token`, iar `registration_endpoint` este `/membership/oauth/register` |
 | `POST /membership/oauth/register` | Înregistrare dinamică a clientului (RFC 7591) |
 
@@ -209,8 +210,8 @@ Serverul MCP se află în `src/modules/mcp/` din repo-ul Api. Fișiere important
 
 ## Înrudite
 
-- [Chei API](./api-keys)
-- [Webhook-uri](./webhooks)
-- [Aplicații conectate (OAuth)](./connected-apps)
+- [Chei API](./api-keys.md)
+- [Webhook-uri](./webhooks.md)
+- [Aplicații conectate (OAuth)](./connected-apps.md)
 - [Claude: configurare pentru utilizatorii finali](/docs/b1-admin/integrations/claude)
 - [ChatGPT: configurare pentru utilizatorii finali](/docs/b1-admin/integrations/chatgpt)

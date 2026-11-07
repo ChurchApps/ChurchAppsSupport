@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Sinkronkan orang dan keanggotaan grup atau daftar tersimpan di B1 Admin ke audiens Mailchimp sebagai tag, dengan langkah pengaturan, impor awal, dan pemecahan masalah."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Memuat data awal melalui importer Mailchimp membuat Anda tetap memegang kendali 
 
 ## Resep Lainnya (Zapier / Make)
 
-Hal di luar sinkronisasi audiens, seperti memberi tag pada pemberi dana saat `donation.created`, arah balik dari Mailchimp ke B1, atau sinkronisasi ke platform email lain (Constant Contact, Brevo, dll.), tetap tersedia melalui [Zapier](../zapier) atau [Make](../make). Keduanya dipicu oleh event webhook yang sama:
+Hal di luar sinkronisasi audiens, seperti memberi tag pada pemberi dana saat `donation.created`, arah balik dari Mailchimp ke B1, atau sinkronisasi ke platform email lain (Constant Contact, Brevo, dll.), tetap tersedia melalui [Zapier](../zapier.md) atau [Make](../make.md). Keduanya dipicu oleh event webhook yang sama:
 
 - **Beri tag pada pemberi dana:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Dua arah:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ Jika sebelumnya Anda menghubungkan sinkronisasi person/grup melalui Zapier, mati
 
 - [Webhooks (referensi pengembang)](/docs/developer/api/webhooks): mesin di baliknya, katalog event, serta semantik pengiriman dan percobaan ulang
 - [Daftar Tersimpan](/docs/b1-admin/people/lists): audiens berbasis aturan yang cocok dengan tag Mailchimp
-- [Zapier (ikhtisar)](../zapier): untuk resep di luar sinkronisasi audiens
+- [Zapier (ikhtisar)](../zapier.md): untuk resep di luar sinkronisasi audiens

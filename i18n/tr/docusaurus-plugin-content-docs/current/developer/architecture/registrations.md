@@ -1,12 +1,13 @@
 ---
 title: "Etkinlik Kayıtları"
+description: "Etkinlik kayıtlarının B1 Admin ve B1App'te işleyişi: katılımcı türleri, ücretli eklentiler, indirim kodları, ödemeler ve bekleme listesi terfileri."
 ---
 
 # Etkinlik Kayıtları
 
 <div class="article-intro">
 
-Yerel etkinlik kaydı içerik modülünde bulunur ve ücretli kayıt dalgasından bu yana tam bir ticaret modeline sahiptir: fiyatlandırılmış katılımcı türleri, fiyatlandırılmış ek seçimler, indirim kodları, kilisenin mevcut bağış ağ geçidi üzerinden ödemeler ve duruma dayalı bir bekleme listesi. Ödeme akışı bilerek bağış altyapısını yeniden kullanır. Kayıt denetleyicisi, [Bağış](./giving) sayfasında belgelenen aynı `GatewayService` / `IGatewayProvider` soyutlamasını kullanarak ücret alır; bu nedenle içerik modülünde hiçbir kart verisi veya ağ geçidi SDK bilgisi bulunmaz. Bu sayfa veri modelini, fiyatlandırma ve kapasite kurallarını ile kayıt, ödeme ve bekleme listesi akışlarını açıklar.
+Yerel etkinlik kaydı içerik modülünde bulunur ve ücretli kayıt dalgasından bu yana tam bir ticaret modeline sahiptir: fiyatlandırılmış katılımcı türleri, fiyatlandırılmış ek seçimler, indirim kodları, kilisenin mevcut bağış ağ geçidi üzerinden ödemeler ve duruma dayalı bir bekleme listesi. Ödeme akışı bilerek bağış altyapısını yeniden kullanır. Kayıt denetleyicisi, [Bağış](./giving.md) sayfasında belgelenen aynı `GatewayService` / `IGatewayProvider` soyutlamasını kullanarak ücret alır; bu nedenle içerik modülünde hiçbir kart verisi veya ağ geçidi SDK bilgisi bulunmaz. Bu sayfa veri modelini, fiyatlandırma ve kapasite kurallarını ile kayıt, ödeme ve bekleme listesi akışlarını açıklar.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Belirteçleme, bağışlarda olduğu gibi tarayıcıda gerçekleşir (bkz. [Bağış](./giving)). Sihirbaz, apphelper ödeme sağlayıcı kaydını yeniden kullanır; böylece giriş yapmış üyeler kayıtlı kartlarıyla ödeme yapabilir, misafirler ise yeni bir kartı belirteçleyebilir. Denetleyici, `DonateController`'ın sağlayıcıya özgü tuhaflıklarını yansıtır: Kingdom Funding `pm-{id}` ödeme yöntemi kimlikleri ve ödemeyi kaydetmeden istemciye döndürülen Stripe SCA `requires_action` yanıtları. Başarılı bir ücret bir `registrationPayments` satırı yazar, `amountPaid` değerini artırır ve kaydı onaylar. **İadeler uygulanmamıştır.** İptal edilmiş ücretli bir kayıt ödeme satırlarını korur ve herhangi bir iade, ağ geçidi panelinde ayrıca yapılır.
+Belirteçleme, bağışlarda olduğu gibi tarayıcıda gerçekleşir (bkz. [Bağış](./giving.md)). Sihirbaz, apphelper ödeme sağlayıcı kaydını yeniden kullanır; böylece giriş yapmış üyeler kayıtlı kartlarıyla ödeme yapabilir, misafirler ise yeni bir kartı belirteçleyebilir. Denetleyici, `DonateController`'ın sağlayıcıya özgü tuhaflıklarını yansıtır: Kingdom Funding `pm-{id}` ödeme yöntemi kimlikleri ve ödemeyi kaydetmeden istemciye döndürülen Stripe SCA `requires_action` yanıtları. Başarılı bir ücret bir `registrationPayments` satırı yazar, `amountPaid` değerini artırır ve kaydı onaylar. **İadeler uygulanmamıştır.** İptal edilmiş ücretli bir kayıt ödeme satırlarını korur ve herhangi bir iade, ağ geçidi panelinde ayrıca yapılır.
 
 Her iki giriş noktası da aynı kod yolunu kullanır: `register` (kayıt sırasında ödeme) ve `pay` (bakiye ödemesi / bekleme listesi tamamlama).
 
@@ -147,7 +148,7 @@ Modüller arası aramalar (misafir kişiyi çözme veya oluşturma, e-postalar i
 
 ## İlgili Sayfalar
 
-- [Bağış](./giving): Bu özelliğin yeniden kullandığı ağ geçidi soyutlaması, sağlayıcı kaydı ve belirteçleme modeli
-- [İçerik Uç Noktaları](../api/endpoints/content): İçerik modülünün REST yüzeyi
-- [Webhook'lar](../api/webhooks): `registration.created` olayı
-- [Modül Yapısı](../api/module-structure): İçerik modülünün sunucu tarafında nasıl düzenlendiği
+- [Bağış](./giving.md): Bu özelliğin yeniden kullandığı ağ geçidi soyutlaması, sağlayıcı kaydı ve belirteçleme modeli
+- [İçerik Uç Noktaları](../api/endpoints/content.md): İçerik modülünün REST yüzeyi
+- [Webhook'lar](../api/webhooks.md): `registration.created` olayı
+- [Modül Yapısı](../api/module-structure.md): İçerik modülünün sunucu tarafında nasıl düzenlendiği

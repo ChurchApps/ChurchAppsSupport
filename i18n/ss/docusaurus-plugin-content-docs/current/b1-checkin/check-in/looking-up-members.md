@@ -1,5 +1,6 @@
 ---
 title: "Kufuna Emalunga"
+description: "Fumana umndeni wakho ku-kiosk ye-B1 Checkin ngekusesha tinombolo zelucingo noma ligama, bese uziqoka njengomvakashi lomusha uma ungakavakashi kulelisonto ngaphambili."
 ---
 
 # Kufuna Emalunga
@@ -13,7 +14,7 @@ Ngemuva kwekukhetsa inkhonzo, ufika kuskrini sekufuna lilunga. Lapha ufuna khona
 <div class="prereqs">
 <h4>Ngembi Kwekucala</h4>
 
-- [Khetsa inkhonzo](./selecting-service) kuskrini setinkhonzo
+- [Khetsa inkhonzo](./selecting-service.md) kuskrini setinkhonzo
 - Cinisekisa kutsi umndeni wakho [usewengetiwe kusistimu](../../b1-admin/people/adding-people.md) ngumlawuli webandla
 
 </div>
@@ -45,7 +46,7 @@ I-app iyafuna emalunga lamagama awo afanana naloko lokubhalile.
 
 Timphumela tekufuna tivela njengemakhadi ngephansi kwensimu yekufuna. Likhadi ngalinye likhombisa **ligama** kanye **nesitfombe** semuntfu (nangabe sikhona).
 
-Cindzetela likhadi lemuntfu kute umkhetse. I-app iyalayisha onkhe emalunga emndeni waloo muntfu bese ikuyisa [kuskrini sekubuyeketa umndeni](./household-review).
+Cindzetela likhadi lemuntfu kute umkhetse. I-app iyalayisha onkhe emalunga emndeni waloo muntfu bese ikuyisa [kuskrini sekubuyeketa umndeni](./household-review.md).
 
 :::tip
 Kufuna ngetinombolo letine tekugcina tenombolo yelucingo yindlela lesheshako kakhulu yekufuna umndeni wakho. Khutsata emalunga kutsi asebentise lendlela kute abhalise ngekushesha.
@@ -57,4 +58,4 @@ Nangabe kute timphumela letitfolakele, i-app iyakhombisa umlayeto lokwatisako. P
 
 ## Sinyatselo Lesilandzelako
 
-Ngemuva kwekukhetsa umuntfu, [utawubuyeketa umndeni wakho](./household-review) bese ulawula kwabelwa kwemacembu.
+Ngemuva kwekukhetsa umuntfu, [utawubuyeketa umndeni wakho](./household-review.md) bese ulawula kwabelwa kwemacembu.

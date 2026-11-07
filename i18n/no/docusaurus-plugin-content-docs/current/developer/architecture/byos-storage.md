@@ -1,5 +1,6 @@
 ---
 title: "Bring Your Own Storage"
+description: "Koble til egen Google Drive, Dropbox, OneDrive eller S3-kompatibel bøtte i B1 Admin, slik at menighetens filopplastinger slipper plattformens 100 MB-grense."
 ---
 
 # Bring Your Own Storage (BYOS)

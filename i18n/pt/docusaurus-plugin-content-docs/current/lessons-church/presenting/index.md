@@ -1,5 +1,6 @@
 ---
 title: "Apresentando"
+description: "Exiba lições no projetor com o Presenter Mode do Lessons.church, compartilhe guias por função com voluntários e imprima materiais antes da aula."
 ---
 
 # Apresentando

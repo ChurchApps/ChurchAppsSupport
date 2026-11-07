@@ -1,5 +1,6 @@
 ---
 title: "Lataukset ja materiaalit"
+description: "Etsi ja lataa tulostettavat toimintalomakkeet, ohjaajan oppaat ja PDF-tiedostot, jotka liittyvät Lessons.church-oppitunteihin, opintoihin tai ohjelmiin."
 ---
 
 # Lataukset ja materiaalit

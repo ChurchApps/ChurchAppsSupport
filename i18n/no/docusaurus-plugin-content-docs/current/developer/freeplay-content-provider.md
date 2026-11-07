@@ -1,5 +1,6 @@
 ---
 title: "FreePlay innholdsleverandør"
+description: "Hva en innholdsleverandør må levere for å koble et leksjonsbibliotek til FreePlay: logo, innloggingsmodell, katalog- og spilleliste-endepunkter og medieformater."
 ---
 
 # FreePlay innholdsleverandør

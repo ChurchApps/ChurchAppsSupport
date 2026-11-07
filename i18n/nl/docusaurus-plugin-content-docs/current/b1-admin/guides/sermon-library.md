@@ -1,5 +1,6 @@
 ---
 title: "Gids: Uw prekenbibliotheek en live streaming bouwen"
+description: "Importeer je YouTube- of Vimeo-preken, zet ze in afspeellijsten en stel terugkerende livestreams met chat in B1 Admin in voor je website."
 ---
 
 # Uw prekenbibliotheek en live streaming bouwen

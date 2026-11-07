@@ -1,5 +1,6 @@
 ---
 title: "Kiến trúc thông báo & nhắc nhở"
+description: "Cách API B1 Admin định tuyến thông báo, nhắc nhở theo lịch, giới hạn email nhà thờ và từ chối nhận tin nhắn qua một luồng gửi và cổng ưu tiên duy nhất."
 ---
 
 # Kiến trúc thông báo & nhắc nhở
@@ -185,6 +186,6 @@ Cả bộ máy nhắc nhở lẫn bản tóm tắt thông báo đều chạy tr�
 
 ## Trang liên quan
 
-- [Kiến trúc thời gian thực](../realtime) — giao thức WebSocket và các thành phần client (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) mà mức gửi trong ứng dụng dựa vào
-- [Thông báo đẩy trên web](../web-push) — thiết lập VAPID và đường dẫn Push API của trình duyệt được dùng cho mức leo thang push
-- [Điểm cuối tin nhắn](../api/endpoints/messaging) — toàn bộ REST API cho tin nhắn, cuộc trò chuyện, kết nối và các tuyến thông báo/nhắc nhở
+- [Kiến trúc thời gian thực](../realtime.md) — giao thức WebSocket và các thành phần client (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) mà mức gửi trong ứng dụng dựa vào
+- [Thông báo đẩy trên web](../web-push.md) — thiết lập VAPID và đường dẫn Push API của trình duyệt được dùng cho mức leo thang push
+- [Điểm cuối tin nhắn](../api/endpoints/messaging.md) — toàn bộ REST API cho tin nhắn, cuộc trò chuyện, kết nối và các tuyến thông báo/nhắc nhở

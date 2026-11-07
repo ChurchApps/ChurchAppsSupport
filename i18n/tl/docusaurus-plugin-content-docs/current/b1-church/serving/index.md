@@ -1,5 +1,7 @@
 ---
-title: "Serving"
+title: "Paglilingkod at Pagpapatala sa B1.church"
+sidebar_label: "Serving"
+description: "Tumingin ng oportunidad sa pagboboluntaryo sa B1.church, magpatala sa bakanteng posisyon, tingnan ang takda, at kanselahin bago ang deadline."
 ---
 
 # Serving
@@ -14,8 +16,8 @@ Hinahayaan ka ng seksyong Serving sa B1.church na mag-browse ng mga oportunidad 
 
 - **Mag-browse ng mga oportunidad sa pagboboluntaryo** -- Tingnan ang mga paparating na service plan na may bukas na posisyon na nangangailangan ng volunteer.
 - **Mag-sign up para sa mga posisyon** -- Pumili ng posisyon at isali ang sarili mo sa isang click lamang.
-- **Tingnan ang iyong mga plano** -- Tingnan ang iyong mga paparating at nakaraang [serving assignment](../plans/viewing-plans).
-- **Tumugon sa mga assignment** -- Tanggapin o tanggihan ang mga posisyong naka-iskedyul sa iyo, mula sa pahina ng Plans o sa seksyong **You're serving** sa Home. Kung magbago ang iyong mga plano pagkatapos mong mag-accept, maaari mong [tanggihan ang isang naka-accept na assignment](../plans/viewing-plans#declining-an-accepted-assignment) hanggang matapos ang serbisyo.
+- **Tingnan ang iyong mga plano** -- Tingnan ang iyong mga paparating at nakaraang [serving assignment](../plans/viewing-plans.md).
+- **Tumugon sa mga assignment** -- Tanggapin o tanggihan ang mga posisyong naka-iskedyul sa iyo, mula sa pahina ng Plans o sa seksyong **You're serving** sa Home. Kung magbago ang iyong mga plano pagkatapos mong mag-accept, maaari mong [tanggihan ang isang naka-accept na assignment](../plans/viewing-plans.md#declining-an-accepted-assignment) hanggang matapos ang serbisyo.
 - **Mag-alis ng signup** -- Kanselahin ang iyong self-signup kung magbago ang iyong mga plano (bago ang deadline).
 
 ## Paano Ito Gumagana
@@ -28,5 +30,5 @@ Tanging ang mga posisyong in-enable ng administrator ng iyong simbahan para sa s
 
 ## Alamin Pa
 
-- [Volunteer Signup](./volunteer-signup) -- Hakbang-hakbang na gabay sa pag-browse at pag-sign up para sa mga posisyon sa pagboboluntaryo
-- [Viewing Plans](../plans/viewing-plans) -- Tingnan ang iyong mga naka-assign na service plan at order of service
+- [Volunteer Signup](./volunteer-signup.md) -- Hakbang-hakbang na gabay sa pag-browse at pag-sign up para sa mga posisyon sa pagboboluntaryo
+- [Viewing Plans](../plans/viewing-plans.md) -- Tingnan ang iyong mga naka-assign na service plan at order of service

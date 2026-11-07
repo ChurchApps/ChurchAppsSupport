@@ -1,5 +1,6 @@
 ---
 title: "Conectarea furnizorilor și crearea listelor de redare"
+description: "Configurați furnizorii de conținut conectați în FreePlay Admin, apoi construiți, aranjați și previzualizați playlisturi pentru ecranele programate."
 ---
 
 # Conectarea furnizorilor și crearea listelor de redare
@@ -107,6 +108,6 @@ Fă clic pe **Prezintă** pentru a reda lista de redare pe tot ecranul, în brow
 
 ## Articole înrudite
 
-- **[Programarea calendarului](./scheduling-the-calendar)** - Pune lista de redare în calendarul unui grup de ecrane
-- **[Gestionarea ecranelor și a grupurilor](./managing-screens)** - Setează o listă de redare ca buclă implicită a unui grup
-- **[Furnizori de conținut](../content-providers/)** - Furnizorii pe care îi poți conecta direct pe televizor
+- **[Programarea calendarului](./scheduling-the-calendar.md)** - Pune lista de redare în calendarul unui grup de ecrane
+- **[Gestionarea ecranelor și a grupurilor](./managing-screens.md)** - Setează o listă de redare ca buclă implicită a unui grup
+- **[Furnizori de conținut](../content-providers/index.md)** - Furnizorii pe care îi poți conecta direct pe televizor

@@ -1,5 +1,6 @@
 ---
 title: "Anleitung: Starten Sie Ihre Kirchenwebseite"
+description: "Richten Sie in B1 Admin eine Gemeinde-Website ein: Startseite gestalten, Farben und Logo abstimmen, wichtige Seiten hinzufügen, eine eigene Domain verbinden und Spendenformulare einbinden."
 ---
 
 # Starten Sie Ihre Kirchenwebseite

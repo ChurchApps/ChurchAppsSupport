@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Find ud af, hvad din kirkes B1.church-site tilbyder medlemmer, fra medlemsportalen og grupper til gaver, begivenheder, frivilligt arbejde og check-in."
 ---
 
 # B1.church
@@ -26,15 +27,15 @@ Når medlemmer besøger din B1.church-side, ser de din kirkes offentlige website
 
 ## Læs mere
 
-- [Kom i gang](./getting-started/) -- Opret din konto, log ind og lær hvordan du navigerer B1.church.
-- [Grupper](./groups/) -- Tilslut dig og deltag i din kirkes grupper.
-- [Giver](./giving/) -- Donér og administrer din giver.
-- [Arrangementer](./events/) -- Gennemse og tilmeld dig kommende kirkearrangementer.
-- [Tjening](./serving/) -- Se planer og tilmeld dig frivillige positioner.
-- [Planer](./plans/) -- Se serviceplaner og dine frivilligpositioner.
-- [Tjek ind](./checkin/) -- Tjek ind til gudstjenester, arrangementer og gæsteregistrering.
-- [Fællesskabsmappe](./community/) -- Find og forbind med andre medlemmer.
-- [Indhold](./content/) -- Prædikener, Bibelen, lektioner og live streaming.
+- [Kom i gang](./getting-started/index.md) -- Opret din konto, log ind og lær hvordan du navigerer B1.church.
+- [Grupper](./groups/index.md) -- Tilslut dig og deltag i din kirkes grupper.
+- [Giver](./giving/index.md) -- Donér og administrer din giver.
+- [Arrangementer](./events/index.md) -- Gennemse og tilmeld dig kommende kirkearrangementer.
+- [Tjening](./serving/index.md) -- Se planer og tilmeld dig frivillige positioner.
+- [Planer](./plans/index.md) -- Se serviceplaner og dine frivilligpositioner.
+- [Tjek ind](./checkin/index.md) -- Tjek ind til gudstjenester, arrangementer og gæsteregistrering.
+- [Fællesskabsmappe](./community/index.md) -- Find og forbind med andre medlemmer.
+- [Indhold](./content/index.md) -- Prædikener, Bibelen, lektioner og live streaming.
 
 :::info
 B1.church er helt gratis for kirker og medlemmer. Din kirkes administrator opsætter og tilpasser siden gennem B1 Admin. Som medlem besøger du blot din kirkes B1.church URL for at komme i gang.

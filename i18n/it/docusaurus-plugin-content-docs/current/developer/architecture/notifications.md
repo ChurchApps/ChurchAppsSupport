@@ -1,5 +1,6 @@
 ---
 title: "Architettura di notifiche e promemoria"
+description: "Come l'API di B1 Admin instrada notifiche, promemoria programmati, limiti email e disiscrizioni SMS attraverso un unico canale con filtro preferenze."
 ---
 
 # Architettura di notifiche e promemoria
@@ -185,6 +186,6 @@ In locale, la stessa logica può essere avviata su richiesta con `npm run timer:
 
 ## Pagine correlate
 
-- [Architettura in tempo reale](../realtime) — il protocollo WebSocket e le primitive lato client (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) su cui si appoggia il livello di consegna in-app
-- [Notifiche Web Push](../web-push) — configurazione VAPID e il percorso dell'API Push del browser usato dal livello di escalation push
-- [Endpoint di messaggistica](../api/endpoints/messaging) — l'intera superficie REST per messaggi, conversazioni, connessioni e route di notifica/promemoria
+- [Architettura in tempo reale](../realtime.md) — il protocollo WebSocket e le primitive lato client (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) su cui si appoggia il livello di consegna in-app
+- [Notifiche Web Push](../web-push.md) — configurazione VAPID e il percorso dell'API Push del browser usato dal livello di escalation push
+- [Endpoint di messaggistica](../api/endpoints/messaging.md) — l'intera superficie REST per messaggi, conversazioni, connessioni e route di notifica/promemoria

@@ -1,5 +1,6 @@
 ---
 title: "Quản lý Chuỗi bài học"
+description: "Tạo, sửa và phân loại khóa học trong một chương trình ở khu quản trị Lessons.church, đồng thời gắn tổng quan loạt bài hoặc mẫu bản tin cho từng khóa."
 ---
 
 # Quản lý Chuỗi bài học

@@ -1,5 +1,6 @@
 ---
 title: "Sử dụng trình chỉnh sửa trang"
+description: "Thiết lập trình chỉnh sửa trang trong B1 Admin bằng cách thêm phần và thành phần, định dạng, xem trước trên điện thoại và xuất bản bản nháp. Cũng có hoàn tác và lịch sử phiên bản."
 ---
 
 # Sử dụng trình chỉnh sửa trang
@@ -17,8 +18,8 @@ Trình chỉnh sửa trang B1 là công cụ xây dựng kéo-và-thả trực q
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Hoàn tất [Thiết lập ban đầu](initial-setup) để cấu hình trang web của bạn
-- Tạo ít nhất một trang trong [Quản lý trang](managing-pages)
+- Hoàn tất [Thiết lập ban đầu](./initial-setup.md) để cấu hình trang web của bạn
+- Tạo ít nhất một trang trong [Quản lý trang](./managing-pages.md)
 - Bạn cần quyền **content.edit** để truy cập trình chỉnh sửa
 
 </div>
@@ -31,7 +32,7 @@ Trình chỉnh sửa trang B1 là công cụ xây dựng kéo-và-thả trực q
 Trình chỉnh sửa sẽ mở ở chế độ toàn màn hình. Khung bên trái hiển thị cấu trúc trang và các thành phần nội dung có sẵn; khu vực giữa hiển thị bản xem trước trực tiếp của trang.
 
 :::info
-Trình chỉnh sửa luôn hiển thị ở chế độ sáng, bất kể cài đặt giao diện B1 Admin của bạn, và sử dụng phông chữ tiêu đề và nội dung mà bạn đã chọn trong [Giao diện](appearance). Điều này đảm bảo bản xem trước khớp chính xác với cách trang sẽ hiển thị cho khách truy cập website.
+Trình chỉnh sửa luôn hiển thị ở chế độ sáng, bất kể cài đặt giao diện B1 Admin của bạn, và sử dụng phông chữ tiêu đề và nội dung mà bạn đã chọn trong [Giao diện](./appearance.md). Điều này đảm bảo bản xem trước khớp chính xác với cách trang sẽ hiển thị cho khách truy cập website.
 :::
 
 ## Cấu trúc trang: Phần và thành phần
@@ -61,7 +62,7 @@ Mỗi trang được xây dựng từ hai cấp:
    - **Image** -- Tải lên hoặc liên kết đến một bức ảnh
    - **Button** -- Liên kết nút kêu gọi hành động
    - **Card** -- Một hình ảnh kèm tiêu đề và mô tả
-   - **Form** -- Nhúng [biểu mẫu](../forms/creating-forms) trực tiếp vào trang. Nếu biểu mẫu có [ảnh tiêu đề](../forms/creating-forms.md#adding-a-header-photo), ảnh sẽ hiển thị phía trên các câu hỏi
+   - **Form** -- Nhúng [biểu mẫu](../forms/creating-forms.md) trực tiếp vào trang. Nếu biểu mẫu có [ảnh tiêu đề](../forms/creating-forms.md#adding-a-header-photo), ảnh sẽ hiển thị phía trên các câu hỏi
    - **Calendar** -- Hiển thị lịch sự kiện
    - **FAQ** -- Các khối câu hỏi và trả lời dạng accordion
    - **Video** -- Nhúng video theo URL
@@ -79,7 +80,7 @@ Mỗi trang được xây dựng từ hai cấp:
    - **Map** -- Bản đồ nhúng được căn giữa theo địa chỉ nhà thờ của bạn
    - **Table** -- Lưới đơn giản gồm các hàng và cột cho nội dung dạng bảng
    - **Text with Photo** -- Văn bản và hình ảnh đặt cạnh nhau
-   - **Logo** -- Logo nhà thờ của bạn, lấy từ [Giao diện](appearance)
+   - **Logo** -- Logo nhà thờ của bạn, lấy từ [Giao diện](./appearance.md)
    - **Live Stream** -- Trình phát truyền trực tiếp của bạn, được nhúng trực tiếp trên trang
    - **Podcast** -- Danh sách các tập lấy từ một URL nguồn RSS podcast bên ngoài mà bạn cung cấp, với các cài đặt về số tập hiển thị và việc có hiển thị ngày và mô tả hay không. Mỗi tập trên trang trực tiếp có trình phát âm thanh và liên kết **Download** để lưu tệp âm thanh của tập dưới tên tiêu đề tập. Thành phần này dùng để giới thiệu bất kỳ nguồn podcast nào trên trang của bạn; để xuất bản các bài giảng của riêng mình thành podcast, hãy xem [Quản lý bài giảng](../sermons/managing-sermons.md#your-podcast-feed)
    - **Donation** -- Nút quyên góp hoặc biểu mẫu quyên góp được nhúng
@@ -100,7 +101,7 @@ Nếu bạn chỉ dán một địa chỉ web (chẳng hạn liên kết hình �
 
 Thành phần **Calendar** hiển thị sự kiện từ một trong các lịch của bạn:
 
-1. Trong mục **Select**, chọn **Group Calendar** (sự kiện của một nhóm -- danh sách hiển thị các nhóm bạn tham gia) hoặc **Curated Calendar** (lịch bạn đã tạo trong mục **Calendars**; xem [Lịch được tuyển chọn](../calendars/curated-calendar)).
+1. Trong mục **Select**, chọn **Group Calendar** (sự kiện của một nhóm -- danh sách hiển thị các nhóm bạn tham gia) hoặc **Curated Calendar** (lịch bạn đã tạo trong mục **Calendars**; xem [Lịch được tuyển chọn](../calendars/curated-calendar.md)).
 2. Trong mục **Select Calendar**, chọn nhóm hoặc lịch.
 3. Trong mục **Display**, chọn cách hiển thị:
    - **Month calendar** -- Lưới theo tháng mà khách truy cập có thể chuyển trang.
@@ -133,7 +134,7 @@ Nhấp vào bất kỳ thành phần nào để mở bảng kiểu. Các tùy ch
 Để định kiểu nâng cao, mỗi phần và thành phần đều có ô **Custom CSS** nơi bạn có thể viết các quy tắc CSS riêng. Các quy tắc này chỉ áp dụng cho thành phần đó, nên sẽ không vô tình ảnh hưởng đến phần còn lại của trang.
 
 :::tip
-Nếu bạn cần áp dụng kiểu cho toàn bộ website -- chẳng hạn phông chữ tùy chỉnh hoặc màu chung -- hãy dùng các cài đặt trong [Giao diện](appearance) thay vì CSS tùy chỉnh trên từng trang.
+Nếu bạn cần áp dụng kiểu cho toàn bộ website -- chẳng hạn phông chữ tùy chỉnh hoặc màu chung -- hãy dùng các cài đặt trong [Giao diện](./appearance.md) thay vì CSS tùy chỉnh trên từng trang.
 :::
 
 ## Xem trước trang
@@ -188,7 +189,7 @@ Hãy dùng quy trình nháp/xuất bản khi bạn muốn chuẩn bị một tra
 
 ## Bài viết liên quan
 
-- [Quản lý trang](managing-pages) -- Tạo trang, đặt URL và quản lý điều hướng website
-- [Giao diện](appearance) -- Thiết lập màu sắc, phông chữ và thương hiệu cho toàn bộ website
-- [Tệp](files) -- Tải lên hình ảnh và tài liệu để sử dụng trong trình chỉnh sửa
-- [Tạo biểu mẫu](../forms/creating-forms) -- Xây dựng biểu mẫu để nhúng trên các trang
+- [Quản lý trang](./managing-pages.md) -- Tạo trang, đặt URL và quản lý điều hướng website
+- [Giao diện](./appearance.md) -- Thiết lập màu sắc, phông chữ và thương hiệu cho toàn bộ website
+- [Tệp](./files.md) -- Tải lên hình ảnh và tài liệu để sử dụng trong trình chỉnh sửa
+- [Tạo biểu mẫu](../forms/creating-forms.md) -- Xây dựng biểu mẫu để nhúng trên các trang

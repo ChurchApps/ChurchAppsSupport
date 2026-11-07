@@ -1,5 +1,6 @@
 ---
 title: "Registrando presença"
+description: "Registre a presença de cada reunião de grupo no B1 Admin: crie a sessão, marque os presentes, salve observações e imprima ou exporte para planilha."
 ---
 
 # Registrando presença

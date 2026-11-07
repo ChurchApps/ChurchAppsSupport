@@ -1,5 +1,6 @@
 ---
 title: "Seguridad del Registro de Entrada"
+description: "Configura la seguridad infantil en B1 Admin: aforo de salas, ratio de voluntarios, listas de personas autorizadas a recoger y SMS para avisar a los padres."
 ---
 
 # Seguridad del Registro de Entrada
@@ -15,7 +16,7 @@ B1 incluye un conjunto de controles de seguridad infantil para el registro de en
 
 - Configure su [estructura de asistencia](setup.md) y [quioscos de registro](check-in.md)
 - Las salas son [grupos](../groups/creating-groups.md) vinculados a horarios de servicio — la configuración de seguridad a continuación se encuentra en el grupo
-- Página a padre y transmisión de emergencia requieren un proveedor de mensajes de texto conectado ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), o Mutual Ministry)
+- Página a padre y transmisión de emergencia requieren un proveedor de mensajes de texto conectado ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md), o Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Ambas funciones envían mensajes de texto a través del proveedor de mensajes de
 
 Las personas que han optado por no recibir textos, o que no tienen un número móvil registrado, se omiten automáticamente — el quiosco reporta cuántos mensajes se enviaron y cuántos se omitieron.
 
-Ver el tutorial del lado del quiosco en [Salida y Seguridad Infantil](../../b1-checkin/check-in/checking-out).
+Ver el tutorial del lado del quiosco en [Salida y Seguridad Infantil](../../b1-checkin/check-in/checking-out.md).
 
 ## Artículos Relacionados
 
 - [Registro de Entrada](check-in.md) — configuración del quiosco y hardware
-- [Salida y Seguridad Infantil](../../b1-checkin/check-in/checking-out) — la salida del quiosco, verificación de recogida y flujos de paging
+- [Salida y Seguridad Infantil](../../b1-checkin/check-in/checking-out.md) — la salida del quiosco, verificación de recogida y flujos de paging
 - [Creación de Grupos](../groups/creating-groups.md) — donde se encuentran los parámetros de la sala
 - [Configuración de Asistencia](setup.md) — servicios, horarios de servicios y asignaciones de sala
 - [Edad Mínima para Mensajes Privados](../settings/mobile-app.md#member-directory--messaging-settings) — bloquea nuevas conversaciones de mensajes privados con niños mientras los mantiene en el directorio

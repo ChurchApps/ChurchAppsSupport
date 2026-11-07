@@ -1,5 +1,6 @@
 ---
 title: "Szerepkörök és jogosultságok"
+description: "Szerepkörök a B1 Adminban: szabályozza, mit láthatnak és módosíthatnak munkatársak és önkéntesek, az adományoktól a személyekig és csoportokig."
 ---
 
 # Szerepkörök és jogosultságok

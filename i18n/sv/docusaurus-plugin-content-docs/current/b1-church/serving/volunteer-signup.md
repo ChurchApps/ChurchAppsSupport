@@ -1,5 +1,7 @@
 ---
-title: "Anmälan som volontär"
+title: "Volontäranmälan i B1.church medlemsportal"
+sidebar_label: "Anmälan som volontär"
+description: "Bläddra bland lediga volontärpositioner efter kategori och anmäl dig till kommande gudstjänster eller ta bort din anmälan i B1.church före tidsfristen."
 ---
 
 # Anmälan som volontär
@@ -74,4 +76,4 @@ Kontrollera volontärsidan regelbundet, särskilt tidigt i veckan. Populära pos
 ## Relaterade artiklar
 
 - [Översikt över tjänstgöring](./index.md) -- Översikt över tjänstgöringsfunktionerna på B1.church
-- [Visa planeringar](../plans/viewing-plans) -- Visa dina tilldelade planeringar och gudstjänstordningar
+- [Visa planeringar](../plans/viewing-plans.md) -- Visa dina tilldelade planeringar och gudstjänstordningar

@@ -1,5 +1,6 @@
 ---
 title: "Säkerhet vid incheckning"
+description: "Konfigurera barnsäkerhet i B1 Admin: rumskapacitet, volontärbemanning, listor över betrodda hämtare och sms som kallar på föräldrar vid incheckning."
 ---
 
 # Säkerhet vid incheckning
@@ -15,7 +16,7 @@ B1 innehåller en uppsättning barnsäkerhetsfunktioner för incheckning: kapaci
 
 - Konfigurera din [närvarostruktur](setup.md) och dina [incheckningskiosker](check-in.md)
 - Rum är [grupper](../groups/creating-groups.md) kopplade till gudstjänsttider. Säkerhetsinställningarna nedan finns på gruppen.
-- Att meddela en förälder och sändningar av nödmeddelanden kräver en ansluten leverantör för sms, till exempel [Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream) eller Mutual Ministry
+- Att meddela en förälder och sändningar av nödmeddelanden kräver en ansluten leverantör för sms, till exempel [Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md) eller Mutual Ministry
 
 </div>
 
@@ -90,12 +91,12 @@ Båda funktionerna skickar textmeddelanden via församlingens anslutna leverant�
 
 Personer som har avstått från sms, eller som saknar registrerat mobilnummer, hoppas över automatiskt. Kiosken visar hur många meddelanden som skickades och hur många som hoppades över.
 
-Se genomgången från kioskens sida i [Utcheckning och barnsäkerhet](../../b1-checkin/check-in/checking-out).
+Se genomgången från kioskens sida i [Utcheckning och barnsäkerhet](../../b1-checkin/check-in/checking-out.md).
 
 ## Relaterade artiklar
 
 - [Incheckning](check-in.md) — konfiguration av kiosk och hårdvara
-- [Utcheckning och barnsäkerhet](../../b1-checkin/check-in/checking-out) — utcheckning vid kiosken, verifiering av upphämtning och flöden för att meddela
+- [Utcheckning och barnsäkerhet](../../b1-checkin/check-in/checking-out.md) — utcheckning vid kiosken, verifiering av upphämtning och flöden för att meddela
 - [Skapa grupper](../groups/creating-groups.md) — där rumsinställningarna finns
 - [Installation av närvaro](setup.md) — gudstjänster, gudstjänsttider och rumstilldelning
 - [Lägsta ålder för privata meddelanden](../settings/mobile-app.md#member-directory--messaging-settings) — blockerar nya privata meddelandekonversationer med barn samtidigt som de finns kvar i katalogen

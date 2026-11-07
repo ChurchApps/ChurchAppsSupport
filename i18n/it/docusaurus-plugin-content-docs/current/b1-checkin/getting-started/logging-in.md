@@ -1,5 +1,7 @@
 ---
-title: "Accesso"
+title: "Accesso a B1 Church Checkin"
+sidebar_label: "Accesso"
+description: "Accedi all'app chiosco B1 Church Checkin, scegli la tua chiesa e scopri accesso automatico, impostazioni amministratore e disconnessione sul tablet."
 ---
 
 # Accesso
@@ -63,7 +65,7 @@ Le impostazioni amministratore sono volutamente nascoste, così i membri della c
 2. Se è stato impostato un PIN del chiosco, inseriscilo quando richiesto.
 3. Si apre la schermata **Impostazioni amministratore** con le seguenti opzioni:
    - **Cambia culto** — cambia l'orario del culto selezionato
-   - **Cambia stampante** — apri le [impostazioni della stampante](./printer-setup) per cercare e selezionare una stampante
+   - **Cambia stampante** — apri le [impostazioni della stampante](./printer-setup.md) per cercare e selezionare una stampante
    - **Imposta/Cambia PIN** — imposta o aggiorna il PIN del chiosco che protegge l'accesso amministratore
    - **Esci** — disconnettiti e torna alla schermata di accesso
 
@@ -73,4 +75,4 @@ Disconnettersi cancella tutte le credenziali salvate e la selezione della chiesa
 
 ## Passi successivi
 
-Una volta effettuato l'accesso, puoi [configurare una stampante](./printer-setup) oppure andare direttamente al [flusso di check-in](../check-in/).
+Una volta effettuato l'accesso, puoi [configurare una stampante](./printer-setup.md) oppure andare direttamente al [flusso di check-in](../check-in/index.md).

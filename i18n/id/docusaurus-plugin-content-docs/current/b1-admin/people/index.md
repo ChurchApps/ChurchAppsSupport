@@ -1,5 +1,6 @@
 ---
 title: "Jemaat"
+description: "Cari, tambahkan, dan edit anggota gereja di bagian Orang B1 Admin, termasuk pelacakan rumah tangga, pembaruan massal, serta cetak dan ekspor direktori."
 ---
 
 # Jemaat

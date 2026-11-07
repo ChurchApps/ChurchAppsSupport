@@ -1,5 +1,6 @@
 ---
 title: "Lokalt API Setup"
+description: "Opsæt ChurchApps API lokalt: klon repoet, konfigurer seks MySQL-moduldatabaser, initialiser skemaet og start udviklingsserveren med hot reload."
 ---
 
 # Lokalt API Setup
@@ -13,9 +14,9 @@ Denne vejledning guider dig gennem opsætning af ChurchApps API til lokal udvikl
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Installer **Node.js 22+**, **Git** og **MySQL 8.0+** -- se [Forudsætninger](../setup/prerequisites)
+- Installer **Node.js 22+**, **Git** og **MySQL 8.0+** -- se [Forudsætninger](../setup/prerequisites.md)
 - Opret en MySQL-bruger med databaseoprettelsesprivilegier
-- Gennemgå [Miljøvariabler](../setup/environment-variables) for API-konfiguration
+- Gennemgå [Miljøvariabler](../setup/environment-variables.md) for API-konfiguration
 
 </div>
 
@@ -111,6 +112,6 @@ Dette giver dig mulighed for at teste biblioteksændringer mod API'en uden at pu
 
 ## Relaterede artikler
 
-- **[Database](./database)** -- Forståelse af database-per-modul arkitektur
-- **[Modulstruktur](./module-structure)** -- Sådan organiseres controllere, repositories og modeller
-- **[Delte biblioteker](../shared-libraries/)** -- Arbejde med `@churchapps/helpers` og `@churchapps/apihelper`
+- **[Database](./database.md)** -- Forståelse af database-per-modul arkitektur
+- **[Modulstruktur](./module-structure.md)** -- Sådan organiseres controllere, repositories og modeller
+- **[Delte biblioteker](../shared-libraries/index.md)** -- Arbejde med `@churchapps/helpers` og `@churchapps/apihelper`

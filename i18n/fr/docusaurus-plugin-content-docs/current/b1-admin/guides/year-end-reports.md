@@ -1,5 +1,6 @@
 ---
 title: "Guide : générer les rapports de dons de fin d'année"
+description: "Dans B1 Admin, finalisez les dossiers de dons de l'année, vérifiez les paramètres fiscaux des fonds et générez les relevés de dons déductibles d'impôt pour chaque donateur."
 ---
 
 # Générer les rapports de dons de fin d'année

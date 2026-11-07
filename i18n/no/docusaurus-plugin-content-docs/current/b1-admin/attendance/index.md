@@ -1,5 +1,6 @@
 ---
 title: "Frammøte"
+description: "Se ukentlig oppmøte, rom og gjester i B1 Admin, og sett opp campuser, gudstjenestetider, deltakertall og kioskinnsjekk fra Attendance-siden."
 ---
 
 # Frammøte

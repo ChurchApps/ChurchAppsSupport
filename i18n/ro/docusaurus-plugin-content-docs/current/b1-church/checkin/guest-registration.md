@@ -1,5 +1,6 @@
 ---
 title: "Înregistrarea oaspeților"
+description: "Înregistrează-te pe tine și familia ca vizitatori noi cu formularul QR din B1 Checkin, ca voluntarii să te poată înregistra când ajungi."
 ---
 
 # Înregistrarea oaspeților
@@ -22,7 +23,7 @@ Dacă vizitați o biserică pentru prima dată, vă puteți înregistra pe dumne
 
 Înregistrarea oaspeților este concepută pentru vizitatorii care nu au încă un cont. Pe terminalul de check-in al bisericii, apăsați **Înregistrați-vă ca oaspete** pentru a afișa un cod QR care duce la pagina de înregistrare. Puteți primi și linkul de la un voluntar sau de la persoana care vă întâmpină, sau îl puteți găsi pe un flyer ori pe site-ul bisericii.
 
-Nu aveți telefonul la îndemână? În aceeași fereastră cu codul QR de pe terminal, apăsați **Înregistrați-vă aici** pentru a completa formularul direct pe terminal. Consultați [Înregistrarea ca oaspete](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest) pentru detalii despre cum funcționează acest lucru pe terminal.
+Nu aveți telefonul la îndemână? În aceeași fereastră cu codul QR de pe terminal, apăsați **Înregistrați-vă aici** pentru a completa formularul direct pe terminal. Consultați [Înregistrarea ca oaspete](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) pentru detalii despre cum funcționează acest lucru pe terminal.
 
 Pagina se deschide cu titlul **Înregistrarea oaspeților**. Dacă biserica a adăugat o fotografie de antet, aceasta apare în partea de sus a paginii; altfel, veți vedea o pictogramă mică.
 
@@ -51,7 +52,7 @@ Odată ce trimiteți formularul, apare un ecran de confirmare cu mesajul: „În
 - Se creează **înregistrări de persoane** pentru fiecare membru al familiei, cu statutul de membru „Vizitator”.
 - Comentariile pe care le-ați introdus sunt salvate ca notă în înregistrarea persoanei de contact principale, pentru ca membrii personalului bisericii să le poată citi.
 - Dacă biserica a ales un grup pentru oaspeții noi, familia dumneavoastră este adăugată în acel grup. Biserica poate, de asemenea, să vă înregistreze automat prezența dacă vă înregistrați în timpul unuia dintre programele programate ale grupului respectiv.
-- Un voluntar sau un administrator al bisericii poate apoi să vă facă check-in familia folosind terminalul [B1 Checkin](../../b1-checkin/check-in/looking-up-members).
+- Un voluntar sau un administrator al bisericii poate apoi să vă facă check-in familia folosind terminalul [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md).
 
 :::info
 Dacă vă înregistrați din nou cu același prenume și același e-mail sau același număr de telefon, evidențele bisericii vă recunosc și reutilizează profilul existent, în loc să adauge un duplicat. Orice altă persoană este adăugată ca nouă. Dacă v-ați înregistrat deja, puteți, de asemenea, să vă căutați pur și simplu numele sau numărul de telefon pe terminal.
@@ -63,6 +64,6 @@ Dacă formularul vă solicită adresa de e-mail, furnizarea acesteia îi ajută 
 
 ## Articole conexe
 
-- [Check-in automat](./self-checkin) -- Faceți check-in singur după înregistrare
-- [Adăugarea oaspeților (terminal)](../../b1-checkin/check-in/adding-guests) -- Cum adaugă voluntarii oaspeți la terminal
-- [Check-in](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- Cum configurează administratorii bisericii înregistrarea oaspeților prin cod QR
+- [Check-in automat](./self-checkin.md) -- Faceți check-in singur după înregistrare
+- [Adăugarea oaspeților (terminal)](../../b1-checkin/check-in/adding-guests.md) -- Cum adaugă voluntarii oaspeți la terminal
+- [Check-in](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Cum configurează administratorii bisericii înregistrarea oaspeților prin cod QR

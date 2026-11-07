@@ -1,5 +1,7 @@
 ---
-title: "Első lépések"
+title: "Első lépések a FreePlay TV alkalmazással"
+sidebar_label: "Első lépések"
+description: "FreePlay telepítése Android TV-re, Fire TV-re vagy Apple TV-re: az alkalmazás telepítése, első megnyitása, a távirányító és az oldalsáv megismerése."
 ---
 
 # Az első lépések a FreePlay használatával
@@ -42,7 +44,7 @@ A FreePlay fut a Fire TV-n (beleértve az újabb Vega OS-es sticket is), az onn-
 
 Amikor először nyitja meg a FreePlay-t, egy animált indítóképernyőt lát a FreePlay logóval. Az alkalmazás ellenőrzi, hogy vannak-e korábban csatlakoztatott tartalomszolgáltatók. Ha már csatlakoztatott egy szolgáltatót, közvetlenül annak tartalomböngészőjéhez viszi. Ellenkező esetben a **Tartalomszolgáltatók** képernyőt nyitja meg, ahol csatlakozhat az első tartalomforrásához.
 
-Ha a TV egy naptárhoz van párosítva az [Ütemezett módban](../scheduled-mode/), a FreePlay mindezt kihagyja, és azonnal az ütemezett lejátszóban nyílik meg.
+Ha a TV egy naptárhoz van párosítva az [Ütemezett módban](../scheduled-mode/index.md), a FreePlay mindezt kihagyja, és azonnal az ütemezett lejátszóban nyílik meg.
 
 ## Navigálás a TV-távirányítóval
 
@@ -62,13 +64,13 @@ Tartalmak böngészésekor az oldalsáv az ikonok keskeny sávjára csukódik. N
 
 Az oldalsáv felülről lefelé a következőket tartalmazza:
 
-- **Mai terv** -- Akkor jelenik meg, ha a TV egy tervhez van párosítva. Lásd: [Tervmód](../plan-mode/)
-- **Közlemények** -- Akkor jelenik meg, ha már kiválasztott egy közlemények mappát. Lásd: [Közlemények](../content-providers/announcements)
-- **Böngészés** -- Minden csatlakoztatott tartalomszolgáltató, amelyben böngészhet. Lásd: [Tartalmak böngészése és letöltése](../content-providers/browsing-content)
-- **Beállítások** -- Az oldalsáv alján. Megnyitja a **Párosítás naptárral** (ezzel a TV-t naptárhoz vagy tervhez párosíthatja — lásd: [Párosítási mód kiválasztása](./pairing-modes)), a **Letöltések** (a készülékre mentett tartalmak lejátszása vagy törlése) és a **Szolgáltatók** (tartalomszolgáltatók csatlakoztatása és a közlemények mappájának kiválasztása) lehetőségeket
+- **Mai terv** -- Akkor jelenik meg, ha a TV egy tervhez van párosítva. Lásd: [Tervmód](../plan-mode/index.md)
+- **Közlemények** -- Akkor jelenik meg, ha már kiválasztott egy közlemények mappát. Lásd: [Közlemények](../content-providers/announcements.md)
+- **Böngészés** -- Minden csatlakoztatott tartalomszolgáltató, amelyben böngészhet. Lásd: [Tartalmak böngészése és letöltése](../content-providers/browsing-content.md)
+- **Beállítások** -- Az oldalsáv alján. Megnyitja a **Párosítás naptárral** (ezzel a TV-t naptárhoz vagy tervhez párosíthatja — lásd: [Párosítási mód kiválasztása](./pairing-modes.md)), a **Letöltések** (a készülékre mentett tartalmak lejátszása vagy törlése) és a **Szolgáltatók** (tartalomszolgáltatók csatlakoztatása és a közlemények mappájának kiválasztása) lehetőségeket
 
 ## Mi a következő lépés?
 
-- **[Párosítási mód kiválasztása](./pairing-modes)** - Ismerje meg a TV csatlakoztatásának különböző módjait
-- **[Ütemezett mód](../scheduled-mode/)** - Állítsa be a TV-it naptár szerint a FreePlay Adminnal
-- **[Tartalomszolgáltatók](../content-providers/)** - Csatlakozzon a Lessons.church, a Bible Project és további szolgáltatásokhoz
+- **[Párosítási mód kiválasztása](./pairing-modes.md)** - Ismerje meg a TV csatlakoztatásának különböző módjait
+- **[Ütemezett mód](../scheduled-mode/index.md)** - Állítsa be a TV-it naptár szerint a FreePlay Adminnal
+- **[Tartalomszolgáltatók](../content-providers/index.md)** - Csatlakozzon a Lessons.church, a Bible Project és további szolgáltatásokhoz

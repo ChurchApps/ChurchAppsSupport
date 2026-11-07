@@ -1,5 +1,6 @@
 ---
 title: "Web"
+description: "Přehled tvůrce webu B1 Admin: stránky, blog, bloky, vzhled, soubory a kalendáře s odkazy na návody k nastavení a úpravám."
 ---
 
 # Web
@@ -22,7 +23,7 @@ Odkazy v navigaci se zobrazují ve stromové struktuře. Pořadí odkazů může
 
 ### Blog
 
-Publikujte novinky, aktuality a zamyšlení jako příspěvky na blogu na adrese `/blog` vašeho webu, včetně kanálu RSS. Viz příručka [Blog](blog).
+Publikujte novinky, aktuality a zamyšlení jako příspěvky na blogu na adrese `/blog` vašeho webu, včetně kanálu RSS. Viz příručka [Blog](./blog.md).
 
 ### Bloky
 
@@ -30,24 +31,24 @@ Vytvářejte znovupoužitelné obsahové komponenty, které můžete umístit na
 
 ### Vzhled
 
-Přizpůsobte motiv, barvy, písma, logo a rozestupy svého webu. Pro rychlý začátek můžete použít předpřipravené styly, nebo jednotlivé detaily doladit pomocí editoru barevné palety, nastavení typografie a vlastního CSS. Podrobnosti najdete v příručce [Vzhled](appearance).
+Přizpůsobte motiv, barvy, písma, logo a rozestupy svého webu. Pro rychlý začátek můžete použít předpřipravené styly, nebo jednotlivé detaily doladit pomocí editoru barevné palety, nastavení typografie a vlastního CSS. Podrobnosti najdete v příručce [Vzhled](./appearance.md).
 
 ### Soubory
 
-Nahrávejte a spravujte všechna svá mediální data, tedy obrázky, dokumenty a další soubory, na jednom centrálním místě a kopírujte odkazy na soubory pro použití kdekoli na svém webu. Další informace najdete v části [Soubory](files).
+Nahrávejte a spravujte všechna svá mediální data, tedy obrázky, dokumenty a další soubory, na jednom centrálním místě a kopírujte odkazy na soubory pro použití kdekoli na svém webu. Další informace najdete v části [Soubory](./files.md).
 
 ### Kalendáře
 
 Publikujte na svém webu kalendáře akcí, aby návštěvníci viděli, co se ve vaší církvi děje. Vytvářejte kurátorované kalendáře, které sdružují akce z více skupin do jednoho zobrazení. Kalendáře mají v nabídce B1 Admin vlastní položku **Calendars**, oddělenou od položky **Website**.
 
 :::tip
-Pokud web nastavujete poprvé, začněte s [Počátečním nastavením](initial-setup). Provede vás nastavením domény, vytvořením první stránky a konfigurací vzhledu webu.
+Pokud web nastavujete poprvé, začněte s [Počátečním nastavením](./initial-setup.md). Provede vás nastavením domény, vytvořením první stránky a konfigurací vzhledu webu.
 :::
 
 ## Další kroky
 
-- [Počáteční nastavení](initial-setup) -- Spusťte svůj web poprvé
-- [Správa stránek](managing-pages) -- Naučte se vytvářet stránky a organizovat je
-- [Použití editoru stránek](page-editor) -- Vytvářejte a upravujte obsah stránky ve vizuálním editoru
-- [Vzhled](appearance) -- Přizpůsobte vzhled a dojem svého webu
-- [Soubory](files) -- Nahrávejte a spravujte mediální soubory
+- [Počáteční nastavení](./initial-setup.md) -- Spusťte svůj web poprvé
+- [Správa stránek](./managing-pages.md) -- Naučte se vytvářet stránky a organizovat je
+- [Použití editoru stránek](./page-editor.md) -- Vytvářejte a upravujte obsah stránky ve vizuálním editoru
+- [Vzhled](./appearance.md) -- Přizpůsobte vzhled a dojem svého webu
+- [Soubory](./files.md) -- Nahrávejte a spravujte mediální soubory

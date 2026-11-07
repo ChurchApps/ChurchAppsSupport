@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Připojte B1 Admin ke Claude a ptejte se běžným jazykem na docházku, dary a skupiny, s možností přihlášení a klíčem s omezenými oprávněními."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ Jde o stejnou sadu endpointů `/membership/people`, `/giving/donations`, `/atten
 
 - [API Keys](/docs/developer/api/api-keys) — úplný přehled oprávnění
 - [MCP Server (developer reference)](/docs/developer/api/mcp) — podrobnosti o protokolu a schémata nástrojů
-- [ChatGPT](./chatgpt) — stejná myšlenka pro modely OpenAI
+- [ChatGPT](./chatgpt.md) — stejná myšlenka pro modely OpenAI

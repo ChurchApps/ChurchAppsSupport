@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Zapier로 Donorbox를 B1 Admin에 연결해, 온라인 헌금이 수동 내보내기 없이 헌금 기록과 헌금자 프로필을 자동으로 만들도록 합니다."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Donorbox의 *새 또는 업데이트된 기부*는 편집 시에도 실행됩니
 
 ## 참고도 보기
 
-- [Zapier(개요)](../zapier) — 모든 Zapier 레시피의 B1 측
-- [Subsplash](./subsplash) — 다른 기부 플랫폼, Zapier 앱 사용
-- [Mailchimp](./mailchimp) — "새 선물"을 이메일 태그로 연결
+- [Zapier(개요)](../zapier.md) — 모든 Zapier 레시피의 B1 측
+- [Subsplash](./subsplash.md) — 다른 기부 플랫폼, Zapier 앱 사용
+- [Mailchimp](./mailchimp.md) — "새 선물"을 이메일 태그로 연결

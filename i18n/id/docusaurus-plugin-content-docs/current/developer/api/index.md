@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Jelaskan desain monolit modular API ChurchApps, enam modul data, teknologi, port, dan fungsi Lambda, dengan tautan ke panduan pengaturan dan endpoint."
 ---
 
 # API
@@ -52,8 +53,8 @@ Saat diterapkan ke AWS, API berjalan sebagai enam fungsi Lambda:
 
 API bergantung pada dua pustaka bersama ChurchApps:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Utilitas dasar (DateHelper, ApiHelper, dll.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Utilitas server Express, termasuk autentikasi, helper database, dan integrasi AWS
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Utilitas dasar (DateHelper, ApiHelper, dll.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Utilitas server Express, termasuk autentikasi, helper database, dan integrasi AWS
 
 :::info
 API menggunakan modul ES (`"type": "module"` di `package.json`). Pastikan impor Anda menggunakan sintaks modul ES.
@@ -61,11 +62,11 @@ API menggunakan modul ES (`"type": "module"` di `package.json`). Pastikan impor 
 
 ## Dalam Bagian Ini
 
-- **[Pengaturan Lokal](./local-setup)** -- Kloning, konfigurasi, dan jalankan API secara lokal
-- **[Database](./database)** -- Arsitektur database per modul, skrip skema, dan pola akses data
-- **[Struktur Modul](./module-structure)** -- Controller, repository, model, dan autentikasi
-- **[Kunci API](./api-keys)** -- Token akses pribadi untuk skrip dan konektor
-- **[Aplikasi Terhubung (OAuth)](./connected-apps)** -- Alur OAuth multi-tenant untuk aplikasi pihak ketiga
-- **[Webhook](./webhooks)** -- Mengirim notifikasi peristiwa ke sistem eksternal
-- **[Server MCP](./mcp)** -- Endpoint Model Context Protocol yang mengekspos API ke asisten AI
-- **[Referensi Endpoint](./endpoints/)** -- Dokumentasi REST API lengkap untuk semua modul
+- **[Pengaturan Lokal](./local-setup.md)** -- Kloning, konfigurasi, dan jalankan API secara lokal
+- **[Database](./database.md)** -- Arsitektur database per modul, skrip skema, dan pola akses data
+- **[Struktur Modul](./module-structure.md)** -- Controller, repository, model, dan autentikasi
+- **[Kunci API](./api-keys.md)** -- Token akses pribadi untuk skrip dan konektor
+- **[Aplikasi Terhubung (OAuth)](./connected-apps.md)** -- Alur OAuth multi-tenant untuk aplikasi pihak ketiga
+- **[Webhook](./webhooks.md)** -- Mengirim notifikasi peristiwa ke sistem eksternal
+- **[Server MCP](./mcp.md)** -- Endpoint Model Context Protocol yang mengekspos API ke asisten AI
+- **[Referensi Endpoint](./endpoints/index.md)** -- Dokumentasi REST API lengkap untuk semua modul

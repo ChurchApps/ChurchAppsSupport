@@ -1,5 +1,7 @@
 ---
-title: "Bibliya"
+title: "Pagbabasa ng Bibliya sa B1 Mobile"
+sidebar_label: "Bibliya"
+description: "Buksan ang Kasulatan gamit ang Bible reader ng B1 Mobile app mula sa drawer menu, mag-navigate sa aklat, kabanata, at talata."
 ---
 
 # Bibliya
@@ -13,7 +15,7 @@ Kasama sa B1 Mobile ang built-in na Bible reader para maaari mong basahin ang Ba
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [I-install ang B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
 - Kailangang naka-enable ang feature ng Bibliya sa iyong simbahan
 
 </div>
@@ -37,7 +39,7 @@ Ang naka-embed na reader ay nagbibigay ng mga kontrol para sa paglipat-lipat sa 
 Pinupuno ng reader ang screen, na nagbibigay sa iyo ng sapat na espasyo para magbasa nang komportable sa iyong device.
 
 :::tip
-Gawin ang Bible screen na bahagi ng iyong pang-araw-araw na gawain -- ito ay isang mabilis na paraan para basahin ang Banal na Kasulatan saan ka man naroroon. Ipares ito sa [Bersikulo ng Araw](./verse-of-the-day) para sa pang-araw-araw na inspirasyon.
+Gawin ang Bible screen na bahagi ng iyong pang-araw-araw na gawain -- ito ay isang mabilis na paraan para basahin ang Banal na Kasulatan saan ka man naroroon. Ipares ito sa [Bersikulo ng Araw](./verse-of-the-day.md) para sa pang-araw-araw na inspirasyon.
 :::
 
 ## Availability
@@ -46,6 +48,6 @@ Ang Bible screen ay available kapag na-enable ng iyong simbahan ang feature na i
 
 ## Mga Kaugnay na Artikulo
 
-- [Bersikulo ng Araw](./verse-of-the-day) -- Tingnan ang pang-araw-araw na bersikulo sa Bibliya
-- [Mga Sermon](./sermons) -- Manood ng mga sermon na umaakma sa iyong pagbabasa ng Bibliya
-- [Mga Aralin](./lessons) -- I-access ang mga structured na kurikulum at materyal sa pag-aaral
+- [Bersikulo ng Araw](./verse-of-the-day.md) -- Tingnan ang pang-araw-araw na bersikulo sa Bibliya
+- [Mga Sermon](./sermons.md) -- Manood ng mga sermon na umaakma sa iyong pagbabasa ng Bibliya
+- [Mga Aralin](./lessons.md) -- I-access ang mga structured na kurikulum at materyal sa pag-aaral

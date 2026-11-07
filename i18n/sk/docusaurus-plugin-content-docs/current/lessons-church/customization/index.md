@@ -1,5 +1,6 @@
 ---
 title: "Prilagodenie"
+description: "Ako skryť sekcie, roly alebo akcie v lekcii Lessons.church a zmeniť poradie obsahu, buď pre jednu triedu alebo pre všetky triedy vo vašej cirkvi."
 ---
 
 # Prilagodenie

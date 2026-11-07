@@ -1,5 +1,6 @@
 ---
 title: "Připojení FreePlay k B1 Admin"
+description: "Připojte TV s FreePlay ve třídě k naplánovaným lekcím v B1 Admin, aby je učitelé mohli během hodiny přehrát na obrazovce."
 ---
 
 # Připojení televize ve třídě k lekcím v B1 Admin

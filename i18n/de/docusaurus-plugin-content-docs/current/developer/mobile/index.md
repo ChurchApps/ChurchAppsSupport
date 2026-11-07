@@ -1,5 +1,6 @@
 ---
 title: "Mobile-Apps"
+description: "Überblick über die Expo- und React-Native-Apps von ChurchApps (B1 Mobile, B1 Checkin, LessonsScreen) mit Link zur Einrichtung der gemeinsamen Toolchain."
 ---
 
 # Mobile-Apps
@@ -14,13 +15,13 @@ ChurchApps Mobile-Apps werden mit **React Native** und **Expo** gebaut, was nati
 
 | App | Zweck | Plattform |
 |-----|---------|----------|
-| [B1 Mobile](./b1-mobile) | Primäre Mitglieder-seitige App für Gemeindeglieder | Android, iOS |
+| [B1 Mobile](./b1-mobile.md) | Primäre Mitglieder-seitige App für Gemeindeglieder | Android, iOS |
 | B1 Checkin | Kiosk-App für Check-in-Stationen | Android, iOS |
 | LessonsScreen | Android TV-App zum Anzeigen von Lessons in Klassenzimmern | Android TV |
 
 ### B1 Mobile
 
-Die Haupt-Gemeinde-Mitglieder-App. Mitglieder können Verzeichnisse anzeigen, auf Spenden zugreifen, Anwesenheit überprüfen, Benachrichtigungen empfangen und mit ihrer Gemeinde-Gemeinschaft interagieren. Siehe [B1 Mobile-Setup-Leitfaden](./b1-mobile) für Details.
+Die Haupt-Gemeinde-Mitglieder-App. Mitglieder können Verzeichnisse anzeigen, auf Spenden zugreifen, Anwesenheit überprüfen, Benachrichtigungen empfangen und mit ihrer Gemeinde-Gemeinschaft interagieren. Siehe [B1 Mobile-Setup-Leitfaden](./b1-mobile.md) für Details.
 
 ### B1 Checkin
 
@@ -31,5 +32,5 @@ Eine zweckgebundene Kiosk-Anwendung, die für Check-in-Stationen in Kirchen entw
 Eine Android TV-Anwendung, die Lesson-Content in Klassenzimmern anzeigt. Lehrer können Lesson-Folien, Videos und Aktivitäten auf einen TV-Bildschirm pushen, was es einfach macht, Lehrplan-Material während Klassen zu präsentieren.
 
 :::info
-Alle Mobile-Apps teilen sich die gleiche Expo-basierte Toolchain und folgen ähnlichen Setup-Patterns. Der [B1 Mobile](./b1-mobile)-Leitfaden dient als Referenz für den allgemeinen Setup-Prozess über alle Mobile-Projekte.
+Alle Mobile-Apps teilen sich die gleiche Expo-basierte Toolchain und folgen ähnlichen Setup-Patterns. Der [B1 Mobile](./b1-mobile.md)-Leitfaden dient als Referenz für den allgemeinen Setup-Prozess über alle Mobile-Projekte.
 :::

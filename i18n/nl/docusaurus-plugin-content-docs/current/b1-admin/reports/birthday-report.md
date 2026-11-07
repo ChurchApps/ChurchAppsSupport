@@ -1,5 +1,6 @@
 ---
 title: "Verjaardagsrapport"
+description: "Maak met zoekfilters bij Personen in B1 Admin een lijst van verjaardagen en jubilea in een bepaalde maand, en bekijk of exporteer de datums."
 ---
 
 # Verjaardagsrapport

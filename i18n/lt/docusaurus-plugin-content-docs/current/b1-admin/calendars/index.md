@@ -1,5 +1,6 @@
 ---
 title: "Kalendoriai"
+description: "Nustatykite kalendorius B1 Admin, tvarkykite juose rodomus renginius ir skelbkite B1.church svetainėje, kad bendruomenė matytų artėjančius renginius."
 ---
 
 # Kalendoriai
@@ -18,20 +19,20 @@ Skiltis Kalendoriai programoje B1 Admin leidžia sukurti jūsų bažnyčiai atri
 
 ## Ką galite daryti
 
-- **Pridėti naują kalendorių** -- Puslapio viršuje spustelėkite **Pridėti kalendorių**, kad sukurtumėte kalendorių konkrečiai tarnystei, renginio tipui ar paskirčiai. Žingsnis po žingsnio instrukcijas rasite skyriuje [Kalendorių kūrimas](creating-calendars).
+- **Pridėti naują kalendorių** -- Puslapio viršuje spustelėkite **Pridėti kalendorių**, kad sukurtumėte kalendorių konkrečiai tarnystei, renginio tipui ar paskirčiai. Žingsnis po žingsnio instrukcijas rasite skyriuje [Kalendorių kūrimas](./creating-calendars.md).
 - **Redaguoti kalendorių** -- Spustelėkite **Tvarkyti renginius** ties bet kuriuo kalendoriumi, kad jį atidarytumėte ir nustatytumėte, kurios grupės jame įtrauktos.
 - **Skelbti kalendorius** -- Kalendoriai gali būti rodomi jūsų B1.church svetainėje, kad lankytojai galėtų matyti artėjančius bažnyčios renginius.
-- **Kurti atrinktus kalendorius** -- Sujunkite renginius iš kelių grupių į vieną kalendoriaus rodinį, kad matytumėte visą bažnyčioje vykstančią veiklą. Išsamesnės informacijos rasite skyriuje [Atrinktas kalendorius](curated-calendar).
-- **Tvarkyti patalpas ir išteklius** -- Sekite rezervuojamas erdves ir įrangą bei tvarkykite patvirtinimo prašymus. Išsamesnės informacijos rasite skyriuje [Patalpos ir ištekliai](rooms-resources).
-- **Peržiūrėti užimtumą** -- Matykite visas patalpų ir išteklių rezervacijas viename kalendoriuje ir rezervuokite erdves artėjantiems renginiams. Išsamesnės informacijos rasite skyriuje [Užimtumo kalendorius](availability).
+- **Kurti atrinktus kalendorius** -- Sujunkite renginius iš kelių grupių į vieną kalendoriaus rodinį, kad matytumėte visą bažnyčioje vykstančią veiklą. Išsamesnės informacijos rasite skyriuje [Atrinktas kalendorius](./curated-calendar.md).
+- **Tvarkyti patalpas ir išteklius** -- Sekite rezervuojamas erdves ir įrangą bei tvarkykite patvirtinimo prašymus. Išsamesnės informacijos rasite skyriuje [Patalpos ir ištekliai](./rooms-resources.md).
+- **Peržiūrėti užimtumą** -- Matykite visas patalpų ir išteklių rezervacijas viename kalendoriuje ir rezervuokite erdves artėjantiems renginiams. Išsamesnės informacijos rasite skyriuje [Užimtumo kalendorius](./availability.md).
 
 :::info
-Kalendoriai glaudžiai susiję su [Grupėmis](../groups/creating-groups.md). Kai grupėse suplanuoti renginiai, juos galima įtraukti į jūsų kalendorius. Kaip susieti grupes su kalendoriais, sužinosite puslapyje [Kalendorių kūrimas](creating-calendars).
+Kalendoriai glaudžiai susiję su [Grupėmis](../groups/creating-groups.md). Kai grupėse suplanuoti renginiai, juos galima įtraukti į jūsų kalendorius. Kaip susieti grupes su kalendoriais, sužinosite puslapyje [Kalendorių kūrimas](./creating-calendars.md).
 :::
 
 ## Kiti žingsniai
 
-- [Kalendorių kūrimas](creating-calendars) -- Nustatykite naują kalendorių ir susiekite grupes
-- [Atrinktas kalendorius](curated-calendar) -- Sujunkite kelių grupių renginius į vieną rodinį
-- [Patalpos ir ištekliai](rooms-resources) -- Tvarkykite rezervuojamas erdves ir įrangą
-- [Užimtumo kalendorius](availability) -- Peržiūrėkite ir tvarkykite patalpų bei išteklių rezervacijas
+- [Kalendorių kūrimas](./creating-calendars.md) -- Nustatykite naują kalendorių ir susiekite grupes
+- [Atrinktas kalendorius](./curated-calendar.md) -- Sujunkite kelių grupių renginius į vieną rodinį
+- [Patalpos ir ištekliai](./rooms-resources.md) -- Tvarkykite rezervuojamas erdves ir įrangą
+- [Užimtumo kalendorius](./availability.md) -- Peržiūrėkite ir tvarkykite patalpų bei išteklių rezervacijas

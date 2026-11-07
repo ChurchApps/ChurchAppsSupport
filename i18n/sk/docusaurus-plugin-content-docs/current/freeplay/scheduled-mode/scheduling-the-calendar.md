@@ -1,5 +1,6 @@
 ---
 title: "Plánovanie kalendára"
+description: "Rozvrh týždenný či jednorazový v Kalendári FreePlay Admin: playlisty, servisné plány alebo priečinky poskytovateľov na skupinách obrazoviek, so zálohou predvolených slučiek."
 ---
 
 # Plánovanie kalendára
@@ -13,8 +14,8 @@ Stránka **Kalendár** vo FreePlay Admin určuje, čo každá skupina obrazoviek
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Vytvorte aspoň jednu skupinu obrazoviek. Pozri [Správa obrazoviek a skupín](./managing-screens#screen-groups)
-- [Vytvorte playlist](./building-playlists) alebo mať nastavený typ plánu v B1 Admin
+- Vytvorte aspoň jednu skupinu obrazoviek. Pozri [Správa obrazoviek a skupín](./managing-screens.md#screen-groups)
+- [Vytvorte playlist](./building-playlists.md) alebo mať nastavený typ plánu v B1 Admin
 
 </div>
 
@@ -82,11 +83,11 @@ Ak sa dva plány prekrývajú, formulár zobrazí upozornenie: **Prekrýva sa s 
 
 ## Ako obrazovky preberajú zmeny
 
-Spárované obrazovky stiahnu všetko naplánované na nasledujúcich 7 dní a samy kontrolujú zmeny. Po úprave kalendára sa k televízoru nemusíte dotýkať. Aby ste zistili, kedy má obrazovka všetko potrebné, pozrite si **Pripravené do** na [stránke Obrazovky](./managing-screens).
+Spárované obrazovky stiahnu všetko naplánované na nasledujúcich 7 dní a samy kontrolujú zmeny. Po úprave kalendára sa k televízoru nemusíte dotýkať. Aby ste zistili, kedy má obrazovka všetko potrebné, pozrite si **Pripravené do** na [stránke Obrazovky](./managing-screens.md).
 
 ## Súvisiace články
 
-- **[Vytváranie playlistov](./building-playlists)** - Vytvorte playlisty, ktoré plánujete
-- **[Plánované prehrávanie v televízore](./scheduled-playback)** - Ako na televízore fungujú lekcie s tempom určeným lektorom a diaľkové ovládanie
-- **[Správa obrazoviek a skupín](./managing-screens)** - Pridávanie skupín a kontrola sťahovania na každej obrazovke
+- **[Vytváranie playlistov](./building-playlists.md)** - Vytvorte playlisty, ktoré plánujete
+- **[Plánované prehrávanie v televízore](./scheduled-playback.md)** - Ako na televízore fungujú lekcie s tempom určeným lektorom a diaľkové ovládanie
+- **[Správa obrazoviek a skupín](./managing-screens.md)** - Pridávanie skupín a kontrola sťahovania na každej obrazovke
 - **[Ponechanie iba časti každej lekcie](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Skráťte každú naplánovanú lekciu v type plánu na časti, ktoré prehráva vaša miestnosť

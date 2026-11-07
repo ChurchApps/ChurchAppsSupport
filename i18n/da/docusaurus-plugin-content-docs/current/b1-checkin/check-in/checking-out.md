@@ -1,5 +1,6 @@
 ---
 title: "Udtjekning og børnesikkerhed"
+description: "Check børn ud på en bemandet B1 Checkin-station med sikkerhedskoder, godkendte afhentere, forældrepaging, genprint af labels og nødbeskeder."
 ---
 
 # Udtjekning og børnesikkerhed
@@ -14,7 +15,7 @@ Udtjekning afslutter indtjekningen af børn: en forælder viser sikkerhedskoden 
 <h4>Før du begynder</h4>
 
 - Udtjekning er tilgængelig på stationer, der er sat til **bemandet** tilstand i kioskens admin-indstillinger
-- Børn skal være [indtjekket](./completing-checkin) med en udskrevet afhentningsetiket, der indeholder sikkerhedskoden
+- Børn skal være [indtjekket](./completing-checkin.md) med en udskrevet afhentningsetiket, der indeholder sikkerhedskoden
 - Oprop og nødudsendelser kræver, at din kirke har en sms-udbyder tilsluttet i B1 Admin
 
 </div>
@@ -39,7 +40,7 @@ Hvis et indtastet navn matcher en person, der er markeret som **Ikke autoriseret
 Når afhenteren er bekræftet, trykker du på udtjek. Afhenterens navn gemmes på fremmødeposten.
 
 :::info
-Betroede personer og ikke-autoriserede afhentere administreres af kirkens medarbejdere på hver persons side i B1 Admin. Se [Indtjekningssikkerhed](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Betroede personer og ikke-autoriserede afhentere administreres af kirkens medarbejdere på hver persons side i B1 Admin. Se [Indtjekningssikkerhed](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Oprop en forælder
@@ -65,6 +66,6 @@ Udsendelsen går til alle indtjekkede husstande for den valgte gudstjeneste. Bru
 
 ## Relaterede artikler
 
-- [Gennemførelse af indtjekning](./completing-checkin): hvor sikkerhedskoder og afhentningsetiketter kommer fra
-- [Indtjekningssikkerhed](../../b1-admin/attendance/checkin-safety): konfiguration af kapacitet, forhold, afhentere og krav til sms-udbyder
-- [Printeropsætning](../getting-started/printer-setup): konfiguration af etiketprinter
+- [Gennemførelse af indtjekning](./completing-checkin.md): hvor sikkerhedskoder og afhentningsetiketter kommer fra
+- [Indtjekningssikkerhed](../../b1-admin/attendance/checkin-safety.md): konfiguration af kapacitet, forhold, afhentere og krav til sms-udbyder
+- [Printeropsætning](../getting-started/printer-setup.md): konfiguration af etiketprinter

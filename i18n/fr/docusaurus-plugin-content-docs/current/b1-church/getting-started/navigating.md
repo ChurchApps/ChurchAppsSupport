@@ -1,5 +1,6 @@
 ---
 title: "Navigation dans B1App"
+description: "Repérez-vous dans le portail membre B1.church sur téléphone ou ordinateur : tableau de bord Accueil, barre d'onglets, page Plus et page Me."
 ---
 
 # Navigation dans B1App
@@ -92,7 +93,7 @@ Les pages de détail -- un groupe, un planning, votre page Moi, les écrans Plan
 
 ## La page Moi
 
-**Moi** (`/mobile/me`) est votre espace personnel. Il affiche votre nom et votre photo avec les boutons **Modifier le profil** et **Paramètres** ([préférences de notification](./notification-preferences.md)), puis ce qui est prévu pour vous -- affectations de service, inscriptions aux événements et événements de groupe -- suivi de votre foyer, de vos groupes, de vos [dons](../giving/) pour l'année, des formulaires que vous avez soumis, de votre historique de présence, de vos [inscriptions](../events/my-registrations.md), ainsi que de vos notifications et messages récents. Voir [La page Moi](./me-page) pour plus de détails.
+**Moi** (`/mobile/me`) est votre espace personnel. Il affiche votre nom et votre photo avec les boutons **Modifier le profil** et **Paramètres** ([préférences de notification](./notification-preferences.md)), puis ce qui est prévu pour vous -- affectations de service, inscriptions aux événements et événements de groupe -- suivi de votre foyer, de vos groupes, de vos [dons](../giving/index.md) pour l'année, des formulaires que vous avez soumis, de votre historique de présence, de vos [inscriptions](../events/my-registrations.md), ainsi que de vos notifications et messages récents. Voir [La page Moi](./me-page.md) pour plus de détails.
 
 Si vous êtes déconnecté, la page Moi affiche un bouton **Se connecter** à la place.
 

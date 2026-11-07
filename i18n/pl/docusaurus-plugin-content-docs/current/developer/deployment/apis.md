@@ -1,5 +1,6 @@
 ---
 title: "Wdrażanie API"
+description: "Wdróż API ChurchApps na AWS Lambda za pomocą Serverless: budowanie, przepływy demo i prod, migracje baz danych i konfiguracja SSM."
 ---
 
 # Wdrażanie API
@@ -13,7 +14,7 @@ Interfejsy API ChurchApps są wdrażane jako funkcje AWS Lambda przy użyciu Ser
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Skonfiguruj API lokalnie -- zobacz [Lokalna konfiguracja API](../api/local-setup)
+- Skonfiguruj API lokalnie -- zobacz [Lokalna konfiguracja API](../api/local-setup.md)
 - Skonfiguruj poświadczenia AWS na swoim komputerze
 - Upewnij się, że masz dostęp do docelowego konta AWS
 
@@ -47,7 +48,7 @@ W praktyce API jest wdrażane przez GitHub Actions: **Deploy Demo** uruchamia si
 
 ## Migracje bazy danych
 
-**Deploy Prod** stosuje oczekujące migracje bazy danych w ramach wdrożenia. Bazy danych produkcyjne akceptują połączenia tylko z wnętrza VPC, dlatego zaraz po `serverless deploy` workflow wywołuje funkcję Lambda `migrate` (`api-Prod-migrate`), która uruchamia oczekujące migracje każdego modułu i zwraca `{ ok, environment, modules }`. Jeśli którykolwiek moduł zakończy się niepowodzeniem lub zostanie odrzucony (na przykład baza danych bez historii migracji), zadanie kończy się błędem, aby schemat nigdy nie pozostał w tyle za kodem. **Rollback Prod** cofa wyłącznie kod funkcji Lambda; migracje pozostają zastosowane, dlatego pisz je w sposób addytywny. Informacje o sprawdzaniu stanu lub ręcznym uruchamianiu migracji znajdziesz w artykule [Server Admin -- Database Migrations](../server-admin#database-migrations).
+**Deploy Prod** stosuje oczekujące migracje bazy danych w ramach wdrożenia. Bazy danych produkcyjne akceptują połączenia tylko z wnętrza VPC, dlatego zaraz po `serverless deploy` workflow wywołuje funkcję Lambda `migrate` (`api-Prod-migrate`), która uruchamia oczekujące migracje każdego modułu i zwraca `{ ok, environment, modules }`. Jeśli którykolwiek moduł zakończy się niepowodzeniem lub zostanie odrzucony (na przykład baza danych bez historii migracji), zadanie kończy się błędem, aby schemat nigdy nie pozostał w tyle za kodem. **Rollback Prod** cofa wyłącznie kod funkcji Lambda; migracje pozostają zastosowane, dlatego pisz je w sposób addytywny. Informacje o sprawdzaniu stanu lub ręcznym uruchamianiu migracji znajdziesz w artykule [Server Admin -- Database Migrations](../server-admin.md#database-migrations).
 
 ## Co zostaje utworzone
 
@@ -75,6 +76,6 @@ Każde scalenie zmian do `main` najpierw wdraża kod do środowiska demo. Przed 
 
 ## Powiązane artykuły
 
-- **[Lokalna konfiguracja API](../api/local-setup)** -- Konfiguracja API na potrzeby programowania
-- **[Struktura modułów](../api/module-structure)** -- Zrozumienie architektury funkcji Lambda
-- **[Wdrażanie aplikacji webowych](./web-apps)** -- Wdrażanie aplikacji frontendowych
+- **[Lokalna konfiguracja API](../api/local-setup.md)** -- Konfiguracja API na potrzeby programowania
+- **[Struktura modułów](../api/module-structure.md)** -- Zrozumienie architektury funkcji Lambda
+- **[Wdrażanie aplikacji webowych](./web-apps.md)** -- Wdrażanie aplikacji frontendowych

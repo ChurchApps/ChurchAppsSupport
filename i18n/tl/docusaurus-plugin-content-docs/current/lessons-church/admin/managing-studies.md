@@ -1,5 +1,6 @@
 ---
 title: "Pamamahala ng mga Pag-aaral"
+description: "Gumawa, mag-edit, at mag-kategorya ng studies sa loob ng program sa Lessons.church admin, at maglakip ng series overview o newsletter template sa bawat isa."
 ---
 
 # Pamamahala ng mga Pag-aaral

@@ -1,5 +1,6 @@
 ---
 title: "Esitystila"
+description: "Esitä oppitunti koko näytöllä luokkahuoneen projektorilla tai TV:llä Lessons.churchin esitystilassa ja siirry jokaisen osion läpi tunnin aikana."
 ---
 
 # Esitystila

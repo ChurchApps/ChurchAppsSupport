@@ -1,5 +1,6 @@
 ---
 title: "Groups Health"
+description: "Tikrinkite grupių būklę B1 Admin 90 dienų lentelėje: nariai, prisijungimai, išėjimai, kaita ir vidutinis lankomumas, kad matytumėte, kur reikia dėmesio."
 ---
 
 # Groups Health
@@ -13,8 +14,8 @@ Groups Health ekranas suteikia bendrą vaizdą apie visų jūsų grupių būklę
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Jums reikia bent kelių grupių su nariais, kad matytumėte prasmingus duomenis. Žr. [Grupių kūrimas](creating-groups).
-- Lankomumo duomenys imami iš įrašytų susitikimų. Žr. skyrių [Lankomumas](../attendance/).
+- Jums reikia bent kelių grupių su nariais, kad matytumėte prasmingus duomenis. Žr. [Grupių kūrimas](./creating-groups.md).
+- Lankomumo duomenys imami iš įrašytų susitikimų. Žr. skyrių [Lankomumas](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Spustelėję grupės pavadinimą, iškart pateksite į grupės informacijos pusl
 
 ## Susiję straipsniai
 
-- [Grupių kūrimas](creating-groups) — grupių sukūrimas
-- [Grupių nariai](group-members) — grupės narystės valdymas
-- [Lankomumo fiksavimas](../attendance/tracking-attendance) — lankomumo susitikimų įrašymas, kurie maitina šį ekraną
+- [Grupių kūrimas](./creating-groups.md) — grupių sukūrimas
+- [Grupių nariai](./group-members.md) — grupės narystės valdymas
+- [Lankomumo fiksavimas](../attendance/tracking-attendance.md) — lankomumo susitikimų įrašymas, kurie maitina šį ekraną

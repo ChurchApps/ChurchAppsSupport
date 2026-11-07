@@ -1,5 +1,6 @@
 ---
 title: "Ghid: Pornește-ți biserica pe B1"
+description: "Parcurgeți configurarea unei biserici noi în B1 Admin: creați contul, setați opțiunile, adăugați roluri, importați membri și lansați funcțiile principale."
 ---
 
 # Pornește-ți biserica pe B1

@@ -1,5 +1,6 @@
 ---
 title: "Henkilöt"
+description: "Hae, lisää ja muokkaa seurakuntajäseniä B1 Adminin Henkilöt-osiossa, mukana taloustiedot, joukkomuokkaus sekä hakemiston tulostus ja vienti."
 ---
 
 # Henkilöt

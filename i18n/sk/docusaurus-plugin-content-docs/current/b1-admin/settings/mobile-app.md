@@ -1,5 +1,6 @@
 ---
 title: "Nastavenia mobilnej aplikácie"
+description: "Nastavte karty navigácie, dlaždice domovskej obrazovky, výzvu na prihlásenie a súkromie adresára členov pre aplikáciu členov B1.church v B1 Admin."
 ---
 
 # Nastavenia mobilnej aplikácie

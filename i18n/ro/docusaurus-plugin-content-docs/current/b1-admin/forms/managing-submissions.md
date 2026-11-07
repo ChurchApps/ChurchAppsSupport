@@ -1,5 +1,6 @@
 ---
 title: "Gestionarea trimiterilor"
+description: "Revizuiți, tipăriți și reatribuiți trimiterile de formulare în B1 Admin, trimițând răspunsurile persoanei potrivite și urmărind cererile de rugăciune."
 ---
 
 # Gestionarea trimiterilor

@@ -1,5 +1,7 @@
 ---
-title: "小组详情"
+title: "B1.church 会员门户中的小组详情"
+sidebar_label: "小组详情"
+description: "在 B1 Admin 面向会员的 B1.church 视图中查找、打开和管理小组详情页：查看活动、聚会、表单和成员，并加入或申请加入小组。"
 ---
 
 # 小组详情

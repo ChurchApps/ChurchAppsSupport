@@ -1,5 +1,6 @@
 ---
 title: "Web Push oznámení"
+description: "Nastavení klíčů VAPID, klienta WebPushHelper a obsluhy service workeru, aby B1.church a B1 Admin mohly členům doručovat push oznámení v prohlížeči."
 ---
 
 # Web Push oznámení
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Související stránky
 
-- [Architektura oznámení](./architecture/notifications): úplný model eskalace v aplikaci, push a e-mail a engine připomenutí
-- [Architektura v reálném čase](./realtime): doručení přes WebSocket. Push se nyní spouští ze stejného funnelu v aplikaci spolu s doručením přes socket ve stejném průchodu, ne jen jako záloha pro případ, že se doručení přes socket nepovede
-- [Koncové body zpráv](./api/endpoints/messaging): oznámení, zařízení a zbytek rozhraní zpráv
-- [AppHelper](./shared-libraries/app-helper): balíček npm, který obsahuje `WebPushHelper`
+- [Architektura oznámení](./architecture/notifications.md): úplný model eskalace v aplikaci, push a e-mail a engine připomenutí
+- [Architektura v reálném čase](./realtime.md): doručení přes WebSocket. Push se nyní spouští ze stejného funnelu v aplikaci spolu s doručením přes socket ve stejném průchodu, ne jen jako záloha pro případ, že se doručení přes socket nepovede
+- [Koncové body zpráv](./api/endpoints/messaging.md): oznámení, zařízení a zbytek rozhraní zpráv
+- [AppHelper](./shared-libraries/app-helper.md): balíček npm, který obsahuje `WebPushHelper`

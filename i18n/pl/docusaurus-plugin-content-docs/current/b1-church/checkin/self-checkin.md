@@ -1,5 +1,7 @@
 ---
-title: "Samodzielne zameldowanie"
+title: "Samodzielne meldowanie w portalu B1.church"
+sidebar_label: "Samodzielne zameldowanie"
+description: "Zamelduj siebie i swoje gospodarstwo domowe na nabożeństwie z portalu członka B1.church, wybierając godziny i grupy w kilku szybkich krokach."
 ---
 
 # Samodzielne zameldowanie
@@ -45,7 +47,7 @@ Gdy wybierzesz grupy dla wszystkich uczestniczących osób, dotknij przycisku na
 
 Zobaczysz potwierdzenie, że zameldowanie zostało ukończone, a Twoja obecność została zapisana. Po chwili strona wróci do listy nabożeństw, gotowa na kolejne zameldowanie.
 
-Jeśli Twój kościół drukuje naklejki z imionami przy stanowisku zameldowania, zamiast tego zobaczysz komunikat **Jesteś zameldowany!** wraz z kodem QR i kodem bezpieczeństwa. Pokaż kod na stanowisku zameldowania, aby wydrukować naklejki z imionami, a następnie dotknij **Gotowe**. Na kiosku B1 Checkin dotknij **Skanuj kod** i przytrzymaj kod QR przed kamerą -- zobacz [Drukowanie etykiet przy zameldowaniu telefonicznym](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Jeśli Twój kościół drukuje naklejki z imionami przy stanowisku zameldowania, zamiast tego zobaczysz komunikat **Jesteś zameldowany!** wraz z kodem QR i kodem bezpieczeństwa. Pokaż kod na stanowisku zameldowania, aby wydrukować naklejki z imionami, a następnie dotknij **Gotowe**. Na kiosku B1 Checkin dotknij **Skanuj kod** i przytrzymaj kod QR przed kamerą -- zobacz [Drukowanie etykiet przy zameldowaniu telefonicznym](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Jeśli Twoje gospodarstwo domowe jest już zameldowane na wybrane nabożeństwo, obok nagłówka **Kto jest tutaj** pojawi się link **Pokaż kod zameldowania**. Dotknij go, aby ponownie wyświetlić kod QR i kod bezpieczeństwa -- na przykład wtedy, gdy zamknąłeś stronę przed dotarciem do stanowiska zameldowania.
 

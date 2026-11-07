@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "Setfa i-LessonsApp, umhleli wetifundziso we-Next.js, endzaweni ku-Node.js 22+, uyibeke ku-LessonsApi yendzawo, bese uyati kwakhiwa kwayo nekufakwa ku-S3/CloudFront."
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ LessonsApp luhlelo lwekuphatsa loko lokucuketfwe kwetifundvo lwe-[Lessons.church
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- Faka i-**Node.js 22+** kanye ne-**Git** -- bona [Tidzingo Letandzulelo](../setup/prerequisites)
-- Hlela indzawo yakho ye-API lohlosiwe (staging nome yasekhaya) -- bona [Tintfo Tesimo Sekusebenta](../setup/environment-variables)
+- Faka i-**Node.js 22+** kanye ne-**Git** -- bona [Tidzingo Letandzulelo](../setup/prerequisites.md)
+- Hlela indzawo yakho ye-API lohlosiwe (staging nome yasekhaya) -- bona [Tintfo Tesimo Sekusebenta](../setup/environment-variables.md)
 
 </div>
 
@@ -81,5 +82,5 @@ Kwakhiwa kwe-production kutfunyelwa ku-**S3 + CloudFront**:
 3. Kususa lokusesikhwameni kwe-CloudFront kuyacaliswa kuze kunikelwe lomniniko lomusha
 
 :::tip
-Kuze utfole imiyalo lengephetseli yekutfunyelwa, bona sicwayiso se-[Kutfunyelwa Kwetinhlelo TeWebhu](../deployment/web-apps).
+Kuze utfole imiyalo lengephetseli yekutfunyelwa, bona sicwayiso se-[Kutfunyelwa Kwetinhlelo TeWebhu](../deployment/web-apps.md).
 :::

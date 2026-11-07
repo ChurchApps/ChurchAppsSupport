@@ -1,5 +1,6 @@
 ---
 title: "Commons"
+description: "Paano dumadaan ang kantang, aralin, at template na isinumite ng user sa moderation queue ng Server Admin sa B1 Admin, mula isumite hanggang mailathala."
 ---
 
 # Commons

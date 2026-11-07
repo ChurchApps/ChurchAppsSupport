@@ -1,5 +1,6 @@
 ---
 title: "Check-in"
+description: "Hvordan check-in virker på tværs af B1Checkin, B1App og B1 Admin: deltagelsesmodellen, grupper som rum, kapacitetsgrænser og afhentningsregler."
 ---
 
 # Check-in
@@ -216,7 +217,7 @@ B1Apps `src/components/checkin/GuestRegister.tsx` henter tjeklisten fra det anon
 
 ## Relaterede sider
 
-- [Tilstedeværelses-endpoints](../api/endpoints/attendance) -- Den fulde REST-flade for campusser, tjenester, sessioner, besøg og besøgssessioner
-- [Medlemsendpoints](../api/endpoints/membership) -- Personer, husstande og grupper
-- [Webhooks](../api/webhooks) -- Hændelserne `session.created`, `attendance.recorded` og `attendance.checkout`
-- [Modulstruktur](../api/module-structure) -- Hvordan tilstedeværelsesmodulet er organiseret på serversiden
+- [Tilstedeværelses-endpoints](../api/endpoints/attendance.md) -- Den fulde REST-flade for campusser, tjenester, sessioner, besøg og besøgssessioner
+- [Medlemsendpoints](../api/endpoints/membership.md) -- Personer, husstande og grupper
+- [Webhooks](../api/webhooks.md) -- Hændelserne `session.created`, `attendance.recorded` og `attendance.checkout`
+- [Modulstruktur](../api/module-structure.md) -- Hvordan tilstedeværelsesmodulet er organiseret på serversiden

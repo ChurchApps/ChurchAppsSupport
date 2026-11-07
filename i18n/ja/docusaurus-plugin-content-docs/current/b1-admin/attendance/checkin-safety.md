@@ -1,5 +1,6 @@
 ---
 title: "チェックインの安全対策"
+description: "B1 Admin で子どもの安全管理を設定します。ルームの定員、ボランティアの配置比率、信頼できるお迎えリスト、チェックイン時の保護者へのテキスト通知について説明します。"
 ---
 
 # チェックインの安全対策
@@ -15,7 +16,7 @@ B1には、チェックインのための子どもの安全管理機能が備わ
 
 - [出席の構成](setup.md)と[チェックインキオスク](check-in.md)を設定しておいてください
 - 部屋は、礼拝時間に紐づいた[グループ](../groups/creating-groups.md)です。以下の安全設定はグループ上にあります
-- 保護者への呼び出しと緊急一斉連絡には、接続済みのテキストメッセージサービス（[Text In Church](../integrations/services/text-in-church)、[Clearstream](../integrations/services/clearstream)、またはMutual Ministry）が必要です
+- 保護者への呼び出しと緊急一斉連絡には、接続済みのテキストメッセージサービス（[Text In Church](../integrations/services/text-in-church.md)、[Clearstream](../integrations/services/clearstream.md)、またはMutual Ministry）が必要です
 
 </div>
 
@@ -90,12 +91,12 @@ B1には、チェックインのための子どもの安全管理機能が備わ
 
 テキストメッセージの受信を停止している人や、携帯電話番号が登録されていない人は自動的にスキップされます。キオスクには、送信された件数とスキップされた件数が表示されます。
 
-キオスク側の手順は、[チェックアウトと子どもの安全](../../b1-checkin/check-in/checking-out)を参照してください。
+キオスク側の手順は、[チェックアウトと子どもの安全](../../b1-checkin/check-in/checking-out.md)を参照してください。
 
 ## 関連記事
 
 - [チェックイン](check-in.md) — キオスクの設定とハードウェア
-- [チェックアウトと子どもの安全](../../b1-checkin/check-in/checking-out) — キオスクでのチェックアウト、送迎の確認、呼び出しの流れ
+- [チェックアウトと子どもの安全](../../b1-checkin/check-in/checking-out.md) — キオスクでのチェックアウト、送迎の確認、呼び出しの流れ
 - [グループの作成](../groups/creating-groups.md) — 部屋の設定がある場所
 - [出席の設定](setup.md) — 礼拝、礼拝時間、部屋の割り当て
 - [プライベートメッセージの最低年齢](../settings/mobile-app.md#member-directory--messaging-settings) — 子どもが名簿に残ったまま、新しいプライベートメッセージの会話を子どもと始めることをブロックします

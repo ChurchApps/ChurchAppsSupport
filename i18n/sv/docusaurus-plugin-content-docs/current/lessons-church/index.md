@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "Bläddra, schemalägg och presentera gratis åldersanpassade lektioner från 12+ leverantörer i Lessons.church med klassrum och FreePlay- eller B1-integrationer."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church fungerar tillsammans med andra ChurchApps-verktyg för att hjälp
 
 ## Dokumentationsavsnitt
 
-- [Komma igång](./getting-started/) -- Skapa ditt konto och lär dig grunderna
-- [Bläddra i innehåll](./browsing/) -- Hitta program, studier och lektioner
-- [Klassrum](./classrooms/) -- Skapa klassrum och schemalägg lektioner
-- [Anpassning](./customization/) -- Skräddarsy lektioner för din kyrka
-- [Presentera](./presenting/) -- Genomför lektioner i klassen med presentatörsläget
-- [Administration](./admin/) -- Hantera program, studier och lektioner som administratör
+- [Komma igång](./getting-started/index.md) -- Skapa ditt konto och lär dig grunderna
+- [Bläddra i innehåll](./browsing/index.md) -- Hitta program, studier och lektioner
+- [Klassrum](./classrooms/index.md) -- Skapa klassrum och schemalägg lektioner
+- [Anpassning](./customization/index.md) -- Skräddarsy lektioner för din kyrka
+- [Presentera](./presenting/index.md) -- Genomför lektioner i klassen med presentatörsläget
+- [Administration](./admin/index.md) -- Hantera program, studier och lektioner som administratör
 - [Trosbekännelse](./statement-of-faith.md) -- Kärnläror och riktlinjer för läroplanen
 
 För support, skicka e-post till [support@churchapps.org](mailto:support@churchapps.org).

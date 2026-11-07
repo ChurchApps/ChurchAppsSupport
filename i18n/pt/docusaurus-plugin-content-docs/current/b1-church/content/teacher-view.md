@@ -1,5 +1,6 @@
 ---
 title: "Visualização do professor para lições"
+description: "Abra uma lição em tela cheia com o Teacher View a partir de um plano no B1.church, depois alterne entre seções, reproduza mídias e baixe recursos da aula."
 ---
 
 # Visualização do professor para lições

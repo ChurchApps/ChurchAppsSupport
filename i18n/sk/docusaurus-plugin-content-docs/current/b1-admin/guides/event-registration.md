@@ -1,5 +1,6 @@
 ---
 title: "Návod: Nastavenie registrácie na podujatie"
+description: "Nastavte formulár registrácie na udalosť v B1 Admin na zber údajov účastníkov a voliteľných platieb, vložte ho na web zboru a sledujte prihlášky."
 ---
 
 # Nastavenie registrácie na podujatie
@@ -11,7 +12,7 @@ Vytvorte formulár na registráciu na podujatie, zbierajte údaje o účastníko
 </div>
 
 :::info
-**Dva spôsoby, ako riešiť registráciu na podujatie:** Tento návod popisuje **registráciu pomocou formulárov**, ktorá vám dáva úplnú kontrolu nad vlastnými poľami a zberom platieb. Pre jednoduchšie podujatia, kde potrebujete len sledovať, kto príde, použite **natívnu registráciu na podujatie**, ktorá je súčasťou kalendára -- pokyny na nastavenie nájdete v časti [Vytváranie kalendárov](../calendars/creating-calendars.md#enabling-event-registration). Natívna registrácia umožňuje členom prihlásiť sa priamo z [webovej stránky B1](../../b1-church/events/registering) a [mobilnej aplikácie](../../b1-mobile/events/registering) s evidenciou kapacity, časovými oknami a potvrdzovacími e-mailami.
+**Dva spôsoby, ako riešiť registráciu na podujatie:** Tento návod popisuje **registráciu pomocou formulárov**, ktorá vám dáva úplnú kontrolu nad vlastnými poľami a zberom platieb. Pre jednoduchšie podujatia, kde potrebujete len sledovať, kto príde, použite **natívnu registráciu na podujatie**, ktorá je súčasťou kalendára -- pokyny na nastavenie nájdete v časti [Vytváranie kalendárov](../calendars/creating-calendars.md#enabling-event-registration). Natívna registrácia umožňuje členom prihlásiť sa priamo z [webovej stránky B1](../../b1-church/events/registering.md) a [mobilnej aplikácie](../../b1-mobile/events/registering.md) s evidenciou kapacity, časovými oknami a potvrdzovacími e-mailami.
 :::
 
 <div class="prereqs">

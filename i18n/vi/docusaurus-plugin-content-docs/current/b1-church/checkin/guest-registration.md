@@ -1,5 +1,6 @@
 ---
 title: "Đăng ký khách"
+description: "Đăng ký bản thân và gia đình là khách lần đầu bằng biểu mẫu QR trong B1 Checkin để tình nguyện viên có thể điểm danh cho bạn khi bạn đến."
 ---
 
 # Đăng ký khách
@@ -22,7 +23,7 @@ Nếu bạn đến thăm một nhà thờ lần đầu, bạn có thể tự đ�
 
 Đăng ký khách được thiết kế dành cho những người khách chưa có tài khoản. Trên màn hình check-in của nhà thờ, chạm vào **Register as guest** để hiển thị mã QR dẫn đến trang đăng ký. Bạn cũng có thể nhận liên kết từ tình nguyện viên hoặc người đón tiếp, hoặc tìm thấy liên kết trên tờ rơi hay trang web của nhà thờ.
 
-Không có điện thoại trong tay? Trong cùng cửa sổ mã QR trên màn hình, chạm vào **Register here** để điền biểu mẫu ngay trên màn hình. Xem [Registering as a Guest](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest) để biết cách thức này hoạt động trên màn hình.
+Không có điện thoại trong tay? Trong cùng cửa sổ mã QR trên màn hình, chạm vào **Register here** để điền biểu mẫu ngay trên màn hình. Xem [Registering as a Guest](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) để biết cách thức này hoạt động trên màn hình.
 
 Trang sẽ mở ra với tiêu đề **Guest Registration**. Nếu nhà thờ đã thêm ảnh tiêu đề, ảnh sẽ xuất hiện ở đầu trang; nếu không, bạn sẽ thấy một biểu tượng nhỏ.
 
@@ -51,7 +52,7 @@ Việc đăng ký của bạn sẽ tạo các hồ sơ trong cơ sở dữ liệ
 - **Person records** được tạo cho từng thành viên gia đình với trạng thái thành viên "Visitor".
 - Mọi ý kiến bạn nhập sẽ được lưu dưới dạng ghi chú trên hồ sơ của người liên hệ chính để nhân viên nhà thờ đọc.
 - Nếu nhà thờ đã chọn một nhóm dành cho khách mới, gia đình bạn sẽ được thêm vào nhóm đó. Nhà thờ cũng có thể tự động ghi nhận sự tham dự của bạn nếu bạn đăng ký trong một trong các giờ sinh hoạt đã lên lịch của nhóm.
-- Một tình nguyện viên hoặc quản trị viên của nhà thờ sau đó có thể check-in gia đình bạn bằng màn hình [B1 Checkin](../../b1-checkin/check-in/looking-up-members).
+- Một tình nguyện viên hoặc quản trị viên của nhà thờ sau đó có thể check-in gia đình bạn bằng màn hình [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md).
 
 :::info
 Nếu bạn đăng ký lại với cùng tên và cùng email hoặc số điện thoại, hệ thống của nhà thờ sẽ nhận ra bạn và dùng lại hồ sơ hiện có thay vì tạo bản sao trùng lặp. Người khác sẽ được thêm mới. Nếu bạn đã đăng ký trước đó, bạn cũng có thể chỉ cần tìm kiếm tên hoặc số điện thoại của mình trên màn hình.
@@ -63,6 +64,6 @@ Nếu biểu mẫu yêu cầu địa chỉ email của bạn, việc cung cấp 
 
 ## Bài viết liên quan
 
-- [Self Check-In](./self-checkin) -- Tự check-in sau khi đã đăng ký
-- [Adding Guests (Kiosk)](../../b1-checkin/check-in/adding-guests) -- Cách tình nguyện viên thêm khách tại màn hình
-- [Check-In](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- Cách quản trị viên nhà thờ thiết lập đăng ký khách bằng mã QR
+- [Self Check-In](./self-checkin.md) -- Tự check-in sau khi đã đăng ký
+- [Adding Guests (Kiosk)](../../b1-checkin/check-in/adding-guests.md) -- Cách tình nguyện viên thêm khách tại màn hình
+- [Check-In](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Cách quản trị viên nhà thờ thiết lập đăng ký khách bằng mã QR

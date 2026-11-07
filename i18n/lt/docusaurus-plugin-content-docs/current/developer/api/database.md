@@ -1,5 +1,6 @@
 ---
 title: "Duomenų bazė"
+description: "Sužinokite, kaip ChurchApps API paskirsto duomenis tarp šešių MySQL duomenų bazių (po vieną kiekvienam moduliui) ir kaip jas sukonfigūruoti bei inicializuoti."
 ---
 
 # Duomenų bazė
@@ -13,8 +14,8 @@ ChurchApps API naudoja **architektūrą „viena duomenų bazė kiekvienam modul
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Įdiekite **MySQL 8.0+** -- žr. [Reikalavimai](../setup/prerequisites)
-- Nustatykite duomenų bazės ryšio eilutes `.env` faile -- žr. [Aplinkos kintamieji](../setup/environment-variables)
+- Įdiekite **MySQL 8.0+** -- žr. [Reikalavimai](../setup/prerequisites.md)
+- Nustatykite duomenų bazės ryšio eilutes `.env` faile -- žr. [Aplinkos kintamieji](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Pagrindiniai projektiniai sprendimai
 
 - **Viena duomenų bazė kiekvienam moduliui** -- Kiekvienas modulis turi savo MySQL duomenų bazę su atskiru ryšių baseinu (valdomu `KyselyPool`). Tai leidžia moduliams būti nepriklausomiems ir keistis schemai savarankiškai.
-- **Išimtinė nuosavybė** -- Modulio lenteles skaito ir rašo tik to modulio kodas. Kai kitam moduliui reikia šių duomenų, jis kreipiasi į savininko modulio šliuzą, o ne pats užklausia lenteles -- žr. [Tarpmodulinė komunikacija](./module-structure#cross-module-communication).
+- **Išimtinė nuosavybė** -- Modulio lenteles skaito ir rašo tik to modulio kodas. Kai kitam moduliui reikia šių duomenų, jis kreipiasi į savininko modulio šliuzą, o ne pats užklausia lenteles -- žr. [Tarpmodulinė komunikacija](./module-structure.md#cross-module-communication).
 - **Repozitorijų šablonas be ORM** -- Visa duomenų prieiga vyksta per repozitorijų klases, kurios su Kysely užklausų kūrėju sukuria tipizuotas SQL užklausas pagal modulio schemą. Tai suteikia pilną kontrolę nad užklausų našumu ir elgsena.
 - **Sukurta kaip daugianuomininkė sistema** -- Kiekviena užklausa apribojama `churchId`. Visos lentelės turi `churchId` stulpelį, o repozitorijų sluoksnis automatiškai užtikrina nuomininkų izoliaciją.
 
@@ -129,5 +130,5 @@ Kadangi kiekvieno modulio duomenys yra atskirose duomenų bazėse, tarp modulių
 
 ## Susiję straipsniai
 
-- **[Modulio struktūra](./module-structure)** -- Kaip valdikliai ir repozitorijos organizuojami kiekviename modulyje
-- **[Vietinė API sąranka](./local-setup)** -- Išsamus žingsnis po žingsnio diegimo vadovas
+- **[Modulio struktūra](./module-structure.md)** -- Kaip valdikliai ir repozitorijos organizuojami kiekviename modulyje
+- **[Vietinė API sąranka](./local-setup.md)** -- Išsamus žingsnis po žingsnio diegimo vadovas

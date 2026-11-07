@@ -1,5 +1,6 @@
 ---
 title: "Asetukset"
+description: "Opastus B1 Adminin asetuksiin: seurakunnan tiedot, brändäys, kampukset, omat kentät, käyttäjäroolit ja B1.church-sovelluksen navigointi."
 ---
 
 # Asetukset

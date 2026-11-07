@@ -1,5 +1,6 @@
 ---
 title: "Gestion de votre profil"
+description: "Zaktualizuj konto ChurchApps w B1 Admin: zmień imię, e-mail i hasło, włącz logowanie dwuskładnikowe, wybierz motyw lub usuń konto."
 ---
 
 Ce passage ne peut pas être traduit ici : le contenu que vous m'avez transmis est en anglais, et la cible est le polonais (`pl`). Voici la traduction polonaise du fichier complet :

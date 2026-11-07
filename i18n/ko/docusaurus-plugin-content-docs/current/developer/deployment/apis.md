@@ -1,5 +1,6 @@
 ---
 title: "API 배포"
+description: "Serverless로 ChurchApps API를 AWS Lambda에 배포합니다. 빌드, 데모 및 프로덕션 워크플로, 데이터베이스 마이그레이션, SSM 설정을 다룹니다."
 ---
 
 # API 배포
@@ -13,7 +14,7 @@ ChurchApps API는 Serverless Framework를 사용하여 AWS Lambda 함수로 배�
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- API를 로컬에 설정합니다 -- [로컬 API 설정](../api/local-setup)을 참조하세요
+- API를 로컬에 설정합니다 -- [로컬 API 설정](../api/local-setup.md)을 참조하세요
 - 컴퓨터에 AWS 자격 증명을 구성합니다
 - 대상 AWS 계정에 접근할 수 있는지 확인합니다
 
@@ -47,7 +48,7 @@ npm run deploy-prod
 
 ## 데이터베이스 마이그레이션
 
-**Deploy Prod**는 배포의 일부로 대기 중인 데이터베이스 마이그레이션을 적용합니다. 프로덕션 데이터베이스는 VPC 내부의 연결만 허용하므로, `serverless deploy` 직후 워크플로는 `migrate` Lambda(`api-Prod-migrate`)를 호출합니다. 이 Lambda는 모든 모듈의 대기 중인 마이그레이션을 실행하고 `{ ok, environment, modules }`를 반환합니다. 모듈이 실패하거나 거부되면(예를 들어 마이그레이션 기록이 없는 데이터베이스), 작업이 실패하므로 스키마가 코드보다 뒤처지는 상태로 남지 않습니다. **Rollback Prod**는 Lambda 코드만 되돌리며, 마이그레이션은 적용된 상태로 남으므로 마이그레이션은 추가만 하는 방식으로 유지하세요. 상태를 확인하거나 수동으로 마이그레이션을 실행하는 방법은 [서버 관리자 -- 데이터베이스 마이그레이션](../server-admin#database-migrations)을 참조하세요.
+**Deploy Prod**는 배포의 일부로 대기 중인 데이터베이스 마이그레이션을 적용합니다. 프로덕션 데이터베이스는 VPC 내부의 연결만 허용하므로, `serverless deploy` 직후 워크플로는 `migrate` Lambda(`api-Prod-migrate`)를 호출합니다. 이 Lambda는 모든 모듈의 대기 중인 마이그레이션을 실행하고 `{ ok, environment, modules }`를 반환합니다. 모듈이 실패하거나 거부되면(예를 들어 마이그레이션 기록이 없는 데이터베이스), 작업이 실패하므로 스키마가 코드보다 뒤처지는 상태로 남지 않습니다. **Rollback Prod**는 Lambda 코드만 되돌리며, 마이그레이션은 적용된 상태로 남으므로 마이그레이션은 추가만 하는 방식으로 유지하세요. 상태를 확인하거나 수동으로 마이그레이션을 실행하는 방법은 [서버 관리자 -- 데이터베이스 마이그레이션](../server-admin.md#database-migrations)을 참조하세요.
 
 ## 생성되는 항목
 
@@ -75,6 +76,6 @@ API를 배포할 때마다 다음 AWS Lambda 함수가 생성되거나 업데이
 
 ## 관련 문서
 
-- **[로컬 API 설정](../api/local-setup)** -- 개발을 위한 API 설정
-- **[모듈 구조](../api/module-structure)** -- Lambda 함수 아키텍처 이해하기
-- **[웹 앱 배포](./web-apps)** -- 프론트엔드 애플리케이션 배포하기
+- **[로컬 API 설정](../api/local-setup.md)** -- 개발을 위한 API 설정
+- **[모듈 구조](../api/module-structure.md)** -- Lambda 함수 아키텍처 이해하기
+- **[웹 앱 배포](./web-apps.md)** -- 프론트엔드 애플리케이션 배포하기

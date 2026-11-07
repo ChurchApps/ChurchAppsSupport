@@ -1,5 +1,6 @@
 ---
 title: "Wyszukiwanie osób"
+description: "Szukaj osób w katalogu B1 Admin po nazwisku, sortuj i wybieraj kolumny w widoku tabeli, buduj filtry w Advanced Search i eksportuj wyniki do CSV."
 ---
 
 # Wyszukiwanie osób

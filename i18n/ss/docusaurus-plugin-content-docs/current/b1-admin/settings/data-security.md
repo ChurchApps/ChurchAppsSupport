@@ -1,5 +1,6 @@
 ---
 title: "Kuphepha Kwemininingwane"
+description: "Bona indlela ChurchApps evikela ngayo kuhlola kwesonto lakho ku-B1 Admin, kusukela emaphasiwedi lafihliwe nakuHTTPS kuya ekwahlukaniseni kwemabhezi nemavi kwelulawulo lwedatha ye-GDPR."
 ---
 
 # Kuphepha Kwemininingwane

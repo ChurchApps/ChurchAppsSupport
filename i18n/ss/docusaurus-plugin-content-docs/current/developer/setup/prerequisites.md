@@ -1,5 +1,6 @@
 ---
 title: "Tidzingo Tekucala"
+description: "Setfa i-Node.js, i-npm, i-Git, nemathuluzi wetinhlelo letisebenta kulomkhakha ngaphambi kwekusebenta kumaprojekthi e-ChurchApps njenge-B1 Admin, Lessons.church, FreePlay, noma i-API endzaweni."
 ---
 
 # Tidzingo Tekucala
@@ -13,7 +14,7 @@ Tinsimbi lotidzingako kuya ngekutsi ngumaphi emaphrojekthi lohlose kuwasebentela
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- Bukisisa [Simo Sonkhe Semaphrojekthi](./project-overview) kute ukhombe kutsi ngimaphi emaphrojekthi lofuna kuwasebentela
+- Bukisisa [Simo Sonkhe Semaphrojekthi](./project-overview.md) kute ukhombe kutsi ngimaphi emaphrojekthi lofuna kuwasebentela
 - Yiba nemvumo yebaphatsi (administrator access) kumshini wakho wekutfutfukisa kute ukwati kufaka i-software
 
 </div>
@@ -40,7 +41,7 @@ Nangabe uhlose kugijimisa i-API ngasekhaya (esikhundleni sekukhomba ku-staging):
 |------|---------|-------|
 | **MySQL** | 8.0+ | Ngamunye we-module ye-API isebentisa i-database yayo |
 
-Utodzinga tidatabase letisitfupha kuma-core API: `membership`, `attendance`, `content`, `giving`, `messaging`, ne-`doing`. I-API ihlanganisa ema-script ekucalisa i-schema -- bona umhlahlandlela we-[API local setup](../api/local-setup).
+Utodzinga tidatabase letisitfupha kuma-core API: `membership`, `attendance`, `content`, `giving`, `messaging`, ne-`doing`. I-API ihlanganisa ema-script ekucalisa i-schema -- bona umhlahlandlela we-[API local setup](../api/local-setup.md).
 
 ## Kutfutfukiswa Kwetinhlelo Teselula
 
@@ -110,5 +111,5 @@ mysql --version   # Kudzingeka kuphela ekutfutfukisweni kwe-API yasekhaya
 
 ## Tinyatselo Letilandzelako
 
-- **[Simo Sonkhe Semaphrojekthi](./project-overview)** -- Bona onkhe emaphrojekthi nekutsi enta ini
-- **[Emavariyebuli Endzawo](./environment-variables)** -- Hlela emafayela akho e-`.env`
+- **[Simo Sonkhe Semaphrojekthi](./project-overview.md)** -- Bona onkhe emaphrojekthi nekutsi enta ini
+- **[Emavariyebuli Endzawo](./environment-variables.md)** -- Hlela emafayela akho e-`.env`

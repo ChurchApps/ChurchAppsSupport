@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "I-set up nang lokal ang B1 Admin: i-clone ang React/Vite dashboard, i-configure ang API endpoints sa .env, at simulan ang dev server."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ Ang B1Admin ay ang dashboard ng pangangasiwa ng simbahan -- isang React single-p
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-install ang **Node.js 22+** at **Git** -- tingnan ang [Prerequisites](../setup/prerequisites)
-- I-configure ang iyong API target (demo o lokal) -- tingnan ang [Environment Variables](../setup/environment-variables)
+- I-install ang **Node.js 22+** at **Git** -- tingnan ang [Prerequisites](../setup/prerequisites.md)
+- I-configure ang iyong API target (demo o lokal) -- tingnan ang [Environment Variables](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Ang mga production build ay idine-deploy sa **S3 + CloudFront**:
 3. Ang CloudFront invalidation ay ina-trigger para maihatid ang bagong bersyon
 
 :::tip
-Para sa detalyadong instruksyon sa deployment, tingnan ang gabay na [Web App Deployment](../deployment/web-apps).
+Para sa detalyadong instruksyon sa deployment, tingnan ang gabay na [Web App Deployment](../deployment/web-apps.md).
 :::

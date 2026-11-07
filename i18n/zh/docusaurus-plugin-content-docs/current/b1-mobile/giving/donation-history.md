@@ -1,5 +1,7 @@
 ---
-title: "奉献历史"
+title: "在 B1 Mobile 中查看捐款记录"
+sidebar_label: "奉献历史"
+description: "在 B1 Mobile 中查看您的年度累计奉献、最近一次奉献和完整捐款记录，并可在“概览”标签页中一键重复过去的捐款。"
 ---
 
 # 奉献历史
@@ -13,8 +15,8 @@ B1 Mobile 通过两个标签让您清楚了解自己的奉献情况：**概览**
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in)您的账户
-- [至少进行一次奉献](./making-donations)才能查看历史记录
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md)您的账户
+- [至少进行一次奉献](./making-donations.md)才能查看历史记录
 
 </div>
 
@@ -45,5 +47,5 @@ B1 Mobile 通过两个标签让您清楚了解自己的奉献情况：**概览**
 
 ## 相关文章
 
-- [进行奉献](./making-donations) -- 从应用程序进行新的奉献
-- [管理支付方式](./managing-payments) -- 添加或删除已保存的支付方式
+- [进行奉献](./making-donations.md) -- 从应用程序进行新的奉献
+- [管理支付方式](./managing-payments.md) -- 添加或删除已保存的支付方式

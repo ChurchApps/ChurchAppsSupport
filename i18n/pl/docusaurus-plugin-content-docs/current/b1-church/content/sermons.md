@@ -1,5 +1,7 @@
 ---
-title: "Sermony"
+title: "Przeglądanie kazań na stronie B1.church"
+sidebar_label: "Sermony"
+description: "Przeglądaj i oglądaj nagrane kazania z biblioteki swojego kościoła na stronie B1.church, pogrupowane w serie lub playlisty. Bez logowania."
 ---
 
 # Sermony

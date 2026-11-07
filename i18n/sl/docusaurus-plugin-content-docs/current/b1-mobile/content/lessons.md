@@ -1,5 +1,7 @@
 ---
-title: "Lekcije (opuščeno)"
+title: "Zaslon Lekcije v B1 Mobile (ukinjen)"
+sidebar_label: "Lekcije (opuščeno)"
+description: "Stran Lekcije (opuščeno): zakaj je bil zaslon za lekcije v aplikaciji B1 Mobile ukinjen in kje zdaj najdete učni načrt (FreePlay ali Lessons.church)."
 ---
 
 # Lekcije (opuščeno)
@@ -19,7 +21,7 @@ Zaslon Lekcije vam je omogočal dostop do kurikuluma in učnega gradiva vaše ce
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite B1 Mobile](../getting-started/installing) in [se prijavite](../getting-started/logging-in) v svoj račun
+- [Namestite B1 Mobile](../getting-started/installing.md) in [se prijavite](../getting-started/logging-in.md) v svoj račun
 - Vaša cerkev mora imeti kurikul, nastavljen prek Lessons.church
 
 </div>
@@ -54,5 +56,5 @@ Zaslon Lekcije se prikaže, ko vaša cerkev nastavi kurikul prek Lessons.church.
 
 - [Pregled FreePlay](/docs/freeplay/) -- Nadomestna TV aplikacija za predvajanje lekcij v razredu
 - [Lessons.church](/docs/lessons-church/) -- Neposredno brskanje in upravljanje vsebine kurikula
-- [Biblija](./bible) -- Preberite Sveto pismo ob svojih lekcijah
-- [Pridige](./sermons) -- Oglejte si pridige, ki dopolnjujejo vaše študijsko gradivo
+- [Biblija](./bible.md) -- Preberite Sveto pismo ob svojih lekcijah
+- [Pridige](./sermons.md) -- Oglejte si pridige, ki dopolnjujejo vaše študijsko gradivo

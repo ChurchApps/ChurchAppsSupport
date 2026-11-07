@@ -1,5 +1,6 @@
 ---
 title: "Điểm cuối Membership"
+description: "Tài liệu endpoint của Membership API ChurchApps: người, hộ gia đình, nhóm, vai trò, biểu mẫu và cài đặt, kèm quy tắc xác thực và phân quyền."
 ---
 
 # Điểm cuối Membership
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Đường dẫn gốc: `/membership/users`
 
-Xem [Xác thực & Quyền](./authentication) để biết các điểm cuối đăng nhập, đăng ký và quản lý mật khẩu.
+Xem [Xác thực & Quyền](./authentication.md) để biết các điểm cuối đăng nhập, đăng ký và quản lý mật khẩu.
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
@@ -342,6 +343,6 @@ Quản lý mối liên kết giữa người dùng và nhà thờ.
 
 ## Trang liên quan
 
-- [Xác thực & Quyền](./authentication) — Luồng đăng nhập, JWT, OAuth, mô hình quyền
-- [Điểm cuối Attendance](./attendance) — Theo dõi buổi phục vụ và lượt viếng thăm
-- [Cấu trúc module](../module-structure) — Các mẫu tổ chức mã nguồn
+- [Xác thực & Quyền](./authentication.md) — Luồng đăng nhập, JWT, OAuth, mô hình quyền
+- [Điểm cuối Attendance](./attendance.md) — Theo dõi buổi phục vụ và lượt viếng thăm
+- [Cấu trúc module](../module-structure.md) — Các mẫu tổ chức mã nguồn

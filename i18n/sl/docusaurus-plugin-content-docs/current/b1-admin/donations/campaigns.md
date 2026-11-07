@@ -1,5 +1,6 @@
 ---
 title: "Kampanje in obljube"
+description: "Ustvarite dobrodelne kampanje v B1 Admin, zabeležite zaveze članov in spremljajte napredek proti cilju glede na dejanske darove za vsak sklad."
 ---
 
 # Kampanje in obljube
@@ -13,7 +14,7 @@ Kampanje omogočajo vodenje zbiralne akcije za določen cilj, na primer za sklad
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Nastavite [sklade za darovanja](funds). Vsaka kampanja je povezana s skladom.
+- Nastavite [sklade za darovanja](./funds.md). Vsaka kampanja je povezana s skladom.
 - Potrebujete dostop do razdelka Darovanja v B1 Admin.
 
 </div>
@@ -66,6 +67,6 @@ Kliknite **Uredi** v vrstici katere koli kampanje (ali **Uredi kampanjo** na vrh
 
 ## Sorodni članki
 
-- [Vnašanje darovanj](recording-donations) — zabeležite dejanske darove, s katerimi se izpolnjujejo obljube
-- [Skladi](funds) — nastavite sklad, ki ga želite povezati s kampanjo
-- [Poročila o darovanjih](donation-reports) — poročila o darovanjih po skladih
+- [Vnašanje darovanj](./recording-donations.md) — zabeležite dejanske darove, s katerimi se izpolnjujejo obljube
+- [Skladi](./funds.md) — nastavite sklad, ki ga želite povezati s kampanjo
+- [Poročila o darovanjih](./donation-reports.md) — poročila o darovanjih po skladih

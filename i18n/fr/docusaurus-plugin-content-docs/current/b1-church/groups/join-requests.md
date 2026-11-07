@@ -1,5 +1,6 @@
 ---
 title: "Demander à rejoindre un groupe"
+description: "Demandez à rejoindre un groupe soumis à approbation sur B1.church, ajoutez une note facultative pour le responsable et suivez ou annulez la demande."
 ---
 
 # Demander à rejoindre un groupe

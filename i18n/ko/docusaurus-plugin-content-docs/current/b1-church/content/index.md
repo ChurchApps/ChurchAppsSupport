@@ -1,5 +1,7 @@
 ---
-title: "콘텐츠"
+title: "B1.church 교인 포털의 콘텐츠 기능"
+sidebar_label: "콘텐츠"
+description: "교회가 B1.church 교인 포털에서 활성화한 콘텐츠를 확인한 뒤 설교, 라이브 스트림, 성경 읽기, 레슨을 둘러보세요."
 ---
 
 # 콘텐츠

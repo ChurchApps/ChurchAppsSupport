@@ -1,5 +1,7 @@
 ---
-title: "Innsjekk"
+title: "Innsjekking i kirken med B1 Mobile-appen"
+sidebar_label: "Innsjekk"
+description: "Sjekk deg selv og husstanden din inn på menighetens gudstjenester fra telefonen i B1 Mobile, og velg gudstjenester og grupper før du kommer."
 ---
 
 # Innsjekk
@@ -16,7 +18,7 @@ Innsjekkingsprosessen er en rask flertrinnsflyt som veileder deg gjennom å velg
 
 ## Komme i gang
 
-For å få tilgang til innsjekk, åpne **Innsjekk**-seksjonen i B1 Mobile. Du må være logget inn for å bruke denne funksjonen. Hvis du ikke er logget inn, blir du bedt om å [logge inn](../getting-started/logging-in) først.
+For å få tilgang til innsjekk, åpne **Innsjekk**-seksjonen i B1 Mobile. Du må være logget inn for å bruke denne funksjonen. Hvis du ikke er logget inn, blir du bedt om å [logge inn](../getting-started/logging-in.md) først.
 
 :::info
 Innsjekkfunksjonen krever at kirken din har satt opp gudstjenester og oppmøtegrupper i administrasjonsinnstillingene. Hvis ingen gudstjenester vises når du åpner innsjekkskjermen, er kanskje ikke denne funksjonen konfigurert ennå hos kirken din. Kontakt kirkeadministratoren din for hjelp.
@@ -30,4 +32,4 @@ Innsjekkfunksjonen krever at kirken din har satt opp gudstjenester og oppmøtegr
 
 ## Neste steg
 
-- [Selvinnsjekk](./self-checkin) -- Trinn-for-trinn-veiledning for å sjekke inn fra telefonen
+- [Selvinnsjekk](./self-checkin.md) -- Trinn-for-trinn-veiledning for å sjekke inn fra telefonen

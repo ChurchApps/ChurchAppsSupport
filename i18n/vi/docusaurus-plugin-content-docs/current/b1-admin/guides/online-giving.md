@@ -1,5 +1,6 @@
 ---
 title: "Hướng dẫn: Thiết lập quyên góp trực tuyến"
+description: "Thiết lập dâng trực tuyến trong B1 Admin bằng cách tạo quỹ, kết nối Stripe và thêm trang Quyên góp vào website B1.church cho thành viên."
 ---
 
 # Thiết lập quyên góp trực tuyến
@@ -70,7 +71,7 @@ Hãy dùng chế độ thử nghiệm (test mode) của Stripe trước nếu b�
 Hãy cho mọi người biết để họ biết rằng họ có thể quyên góp trực tuyến.
 
 1. Chia sẻ địa chỉ quyên góp qua website, bản tin email, tờ thông báo và mạng xã hội
-2. Thành viên cũng có thể quyên góp qua [ứng dụng B1 Mobile](../../b1-mobile/giving/) — tính năng quyên góp đã được tích hợp sẵn
+2. Thành viên cũng có thể quyên góp qua [ứng dụng B1 Mobile](../../b1-mobile/giving/index.md) — tính năng quyên góp đã được tích hợp sẵn
 
 :::info
 Thành viên đã đăng nhập có thể lưu phương thức thanh toán, thiết lập quyên góp định kỳ và xem lịch sử quyên góp. Quyên góp ẩn danh cũng được hỗ trợ — không cần đăng nhập.

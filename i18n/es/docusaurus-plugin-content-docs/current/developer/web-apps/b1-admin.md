@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "Configura B1 Admin en local: clona el panel React/Vite, define los endpoints de API en .env e inicia el servidor de desarrollo."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin es el panel de administración de la iglesia: una aplicación de una sol
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Instala **Node.js 22+** y **Git**; consulta [Requisitos previos](../setup/prerequisites)
-- Configura el destino de tu API (demo o local); consulta [Variables de entorno](../setup/environment-variables)
+- Instala **Node.js 22+** y **Git**; consulta [Requisitos previos](../setup/prerequisites.md)
+- Configura el destino de tu API (demo o local); consulta [Variables de entorno](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Las compilaciones de producción se despliegan en **S3 + CloudFront**:
 3. Se activa la invalidación de CloudFront para servir la nueva versión
 
 :::tip
-Para instrucciones de despliegue más detalladas, consulta la guía [Despliegue de aplicaciones web](../deployment/web-apps).
+Para instrucciones de despliegue más detalladas, consulta la guía [Despliegue de aplicaciones web](../deployment/web-apps.md).
 :::

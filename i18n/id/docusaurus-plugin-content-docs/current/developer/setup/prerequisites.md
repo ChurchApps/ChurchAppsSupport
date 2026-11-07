@@ -1,5 +1,6 @@
 ---
 title: "Prasyarat"
+description: "Siapkan Node.js, npm, Git, dan toolchain platform sebelum mengerjakan proyek ChurchApps seperti B1 Admin, Lessons.church, FreePlay, atau API secara lokal."
 ---
 
 # Prasyarat
@@ -13,7 +14,7 @@ Alat yang Anda perlukan bergantung pada proyek mana yang ingin Anda kerjakan. Ha
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- Tinjau [Ikhtisar Proyek](./project-overview) untuk menentukan proyek mana yang ingin Anda kerjakan
+- Tinjau [Ikhtisar Proyek](./project-overview.md) untuk menentukan proyek mana yang ingin Anda kerjakan
 - Pastikan Anda memiliki akses administrator di komputer pengembangan Anda untuk menginstal perangkat lunak
 
 </div>
@@ -40,7 +41,7 @@ Jika Anda berencana menjalankan API secara lokal (alih-alih mengarahkan ke API d
 |------|---------|-------|
 | **MySQL** | 8.0+ | Setiap modul API menggunakan database-nya sendiri |
 
-Anda memerlukan enam database untuk API inti: `membership`, `attendance`, `content`, `giving`, `messaging`, dan `doing`. API menyertakan skrip untuk menginisialisasi skema -- lihat panduan [pengaturan lokal API](../api/local-setup).
+Anda memerlukan enam database untuk API inti: `membership`, `attendance`, `content`, `giving`, `messaging`, dan `doing`. API menyertakan skrip untuk menginisialisasi skema -- lihat panduan [pengaturan lokal API](../api/local-setup.md).
 
 ## Pengembangan Aplikasi Seluler
 
@@ -110,5 +111,5 @@ mysql --version   # Hanya diperlukan untuk pengembangan API lokal
 
 ## Langkah Berikutnya
 
-- **[Ikhtisar Proyek](./project-overview)** -- Lihat semua proyek dan fungsinya
-- **[Variabel Lingkungan](./environment-variables)** -- Konfigurasikan file `.env` Anda
+- **[Ikhtisar Proyek](./project-overview.md)** -- Lihat semua proyek dan fungsinya
+- **[Variabel Lingkungan](./environment-variables.md)** -- Konfigurasikan file `.env` Anda

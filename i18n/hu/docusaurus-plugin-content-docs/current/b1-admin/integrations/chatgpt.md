@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "ChatGPT csatlakoztatása a B1 Admin-hoz API-kulccsal, hogy egyszerű nyelven kérdezhessen személyekről, adományokról és részvételről."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Csatlakoztassa a ChatGPT-t egyházának B1-adataihoz, és egyszerű magyar nyelv
 </div>
 
 :::tip Ajánlott: próbálja ki előbb a Claude-ot — ingyenes
-A [Claude](./claude) a **ingyenes csomagjával** is csatlakozik a B1-hez, és kevesebb mint 3 perc alatt beállítható: csak adja hozzá a B1-et összekötőként, és jelentkezzen be B1-fiókjával. Kulcsra nincs szükség. Ez a legegyszerűbb módja annak, hogy egyháza a B1-gyel mesterséges intelligenciát próbálhasson ki, mielőtt bármiért fizetne.
+A [Claude](./claude.md) a **ingyenes csomagjával** is csatlakozik a B1-hez, és kevesebb mint 3 perc alatt beállítható: csak adja hozzá a B1-et összekötőként, és jelentkezzen be B1-fiókjával. Kulcsra nincs szükség. Ez a legegyszerűbb módja annak, hogy egyháza a B1-gyel mesterséges intelligenciát próbálhasson ki, mielőtt bármiért fizetne.
 :::
 
 ## Beállítás
@@ -254,5 +255,5 @@ Bárki, akinek megvan a hivatkozás, természetes nyelvű kérdéseket tehet fel
 
 - [API-kulcsok](/docs/developer/api/api-keys) — a hatókörök teljes listája
 - [MCP-kiszolgáló (fejlesztői referencia)](/docs/developer/api/mcp) — protokollrészletek és eszközsémák
-- [Claude](./claude) — ugyanez az elv, az Anthropic modelljeihez
+- [Claude](./claude.md) — ugyanez az elv, az Anthropic modelljeihez
 - [REST API-referencia](/docs/developer/api/endpoints) — minden végpont, amelyet egy egyéni GPT-művelet meghívhat

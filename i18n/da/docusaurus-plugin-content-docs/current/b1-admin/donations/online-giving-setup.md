@@ -1,5 +1,6 @@
 ---
 title: "Online Giving Setup"
+description: "Forbind Stripe, PayPal, Kingdom Funding eller Paystack til B1 Admin, så medlemmer kan give online via dit B1.church-website, og gaverne synkroniseres."
 ---
 
 # Online Giving Setup

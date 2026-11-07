@@ -1,5 +1,7 @@
 ---
-title: "Samoprijava"
+title: "Samostojna prijava iz aplikacije B1 Mobile"
+sidebar_label: "Samoprijava"
+description: "Prijavite sebe in gospodinjstvo na bogoslužje iz aplikacije B1 Mobile, vključno z izbiro termina bogoslužja in dodelitvijo skupine vsaki osebi."
 ---
 
 # Samoprijava
@@ -13,7 +15,7 @@ Prijava prek aplikacije B1 Mobile je preprost postopek v več korakih. V nekaj d
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite aplikacijo B1 Mobile](../getting-started/installing) in [se prijavite](../getting-started/logging-in) v svoj račun
+- [Namestite aplikacijo B1 Mobile](../getting-started/installing.md) in [se prijavite](../getting-started/logging-in.md) v svoj račun
 - Poskrbite, da so vaši [člani gospodinjstva](../profile/household.md) nastavljeni v vašem profilu
 
 </div>

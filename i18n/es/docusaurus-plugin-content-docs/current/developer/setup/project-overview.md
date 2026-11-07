@@ -1,5 +1,6 @@
 ---
 title: "Descripción del Proyecto"
+description: "Mapa de los repositorios de ChurchApps por categoría: frameworks, puertos de desarrollo, bases de datos y cómo se conectan los paquetes @churchapps."
 ---
 
 # Descripción del Proyecto
@@ -13,7 +14,7 @@ ChurchApps consta de aproximadamente 20 repositorios independientes, cada uno pu
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Instala los [requisitos previos](./prerequisites) para la categoría de proyecto en la que deseas trabajar
+- Instala los [requisitos previos](./prerequisites.md) para la categoría de proyecto en la que deseas trabajar
 
 </div>
 
@@ -72,7 +73,7 @@ El código compartido se publica en npm bajo el alcance `@churchapps` y se consu
 | `@churchapps/integration-sdk` | Kit de herramientas de integración de B1.church: webhooks, cliente REST, OAuth | Desarrolladores de integración externos |
 | `@churchapps/texting` | Abstracción de proveedor SMS | Api |
 
-Consulta [Bibliotecas Compartidas](../shared-libraries/) para la configuración del espacio de trabajo y el flujo de trabajo de lanzamiento.
+Consulta [Bibliotecas Compartidas](../shared-libraries/index.md) para la configuración del espacio de trabajo y el flujo de trabajo de lanzamiento.
 
 ## Relaciones de Proyecto
 
@@ -90,5 +91,5 @@ Todas las aplicaciones frontend dependen de `@churchapps/helpers`. Las aplicacio
 
 ## Próximos Pasos
 
-- **[Variables de Entorno](./environment-variables)** -- Configura tus archivos `.env` para conectarte a las APIs
-- **[Configuración Local de API](../api/local-setup)** -- Configura la API de backend localmente
+- **[Variables de Entorno](./environment-variables.md)** -- Configura tus archivos `.env` para conectarte a las APIs
+- **[Configuración Local de API](../api/local-setup.md)** -- Configura la API de backend localmente

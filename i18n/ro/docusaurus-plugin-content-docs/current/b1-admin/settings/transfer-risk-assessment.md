@@ -1,5 +1,6 @@
 ---
 title: "Evaluarea riscurilor transferului"
+description: "Fișa de conformitate ChurchApps privind transferurile din UK/SEE către SUA ale datelor bisericii din B1 Admin: garanții, subprocesatori și controale de acces."
 ---
 
 # Evaluarea riscurilor transferului

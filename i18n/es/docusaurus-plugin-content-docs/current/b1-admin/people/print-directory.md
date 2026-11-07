@@ -1,5 +1,6 @@
 ---
 title: "Imprimir Directorio"
+description: "Genera un directorio de miembros imprimible agrupado por hogares desde B1 Admin, con fotos, datos de contacto y cumpleaños, en tamaño carta."
 ---
 
 # Imprimir Directorio

@@ -1,5 +1,6 @@
 ---
 title: "Geplanter Modus"
+description: "FreePlay-TVs nach Kalender Playlists abspielen lassen: Bildschirme starten und stoppen selbstständig und laufen auch bei WLAN-Abbrüchen weiter."
 ---
 
 # Geplanter Modus
@@ -18,16 +19,16 @@ FreePlay Admin verwendet Ihren ChurchApps-Login, denselben, den Sie auch für B1
 
 FreePlay Admin hat vier Hauptseiten, die oben auf der Website aufgelistet sind:
 
-- **[Bildschirme](./managing-screens)** – Die TVs, die Sie gekoppelt haben, ihr Status und die **Bildschirmgruppen**, zu denen sie gehören. Bildschirme in einer Gruppe teilen sich einen Kalender und eine Standard-Schleife
-- **[Playlists](./building-playlists)** – Schleifen aus Bildern und Videos, die Sie aus Ihren Inhaltsanbietern auswählen
-- **[Kalender](./scheduling-the-calendar)** – Was jede Bildschirmgruppe wann abspielt
-- **[Anbieter](./building-playlists#connecting-providers)** – Die Inhaltsquellen, aus denen Ihre Playlists schöpfen. Sie verbinden jeden Anbieter einmal für die gesamte Gemeinde
+- **[Bildschirme](./managing-screens.md)** – Die TVs, die Sie gekoppelt haben, ihr Status und die **Bildschirmgruppen**, zu denen sie gehören. Bildschirme in einer Gruppe teilen sich einen Kalender und eine Standard-Schleife
+- **[Playlists](./building-playlists.md)** – Schleifen aus Bildern und Videos, die Sie aus Ihren Inhaltsanbietern auswählen
+- **[Kalender](./scheduling-the-calendar.md)** – Was jede Bildschirmgruppe wann abspielt
+- **[Anbieter](./building-playlists.md#connecting-providers)** – Die Inhaltsquellen, aus denen Ihre Playlists schöpfen. Sie verbinden jeden Anbieter einmal für die gesamte Gemeinde
 
 Wenn nichts geplant ist, spielen die Bildschirme einer Gruppe ihre **Standard-Schleife** ab. Hat die Gruppe keine Standard-Schleife, bleiben die Bildschirme dunkel.
 
 ## Unterschied zum Planmodus
 
-- **[Planmodus](../plan-mode/)** folgt einem Gottesdienstplantyp aus B1 Admin. Jemand drückt auf dem TV auf **Start Plan**, und die Lektion beginnt, sobald diese Person es tut
+- **[Planmodus](../plan-mode/index.md)** folgt einem Gottesdienstplantyp aus B1 Admin. Jemand drückt auf dem TV auf **Start Plan**, und die Lektion beginnt, sobald diese Person es tut
 - **Geplanter Modus** folgt einem Kalender. Inhalte beginnen und enden zu den von Ihnen festgelegten Zeiten, daher eignet er sich gut für Eingangsbereich-Beschilderung, Ansage-Schleifen und Klassenräume, in denen die Lektion schon laufen soll, bevor jemand hereinkommt
 
 Ein Kalendereintrag kann trotzdem einen Gottesdienstplan abspielen. Wählen Sie beim Hinzufügen eines Termins unter **Service plans** den Plantyp aus, und der Bildschirm spielt den Plan ab, der in B1 Admin in dieser Woche aktuell ist. Dazu gehören auch Go-Curriculum-Lektionen, selbst wenn Sie sie im Plan angepasst haben. Der Bildschirm verwendet den Go-Curriculum-Login, der dem Dienstbereich des Plantyps in B1 Admin zugeordnet ist, oder die Go-Curriculum-Verbindung der Gemeinde, falls der Dienstbereich keine hat.
@@ -49,8 +50,8 @@ Drücken Sie **Strg+K** (**⌘K** auf dem Mac) oder klicken Sie auf das Suchfeld
 
 ## In diesem Bereich
 
-- **[Bildschirm koppeln](./pairing-a-screen)** – Den Code auf dem TV anzeigen und in FreePlay Admin koppeln
-- **[Bildschirme und Gruppen verwalten](./managing-screens)** – Status und Downloads prüfen sowie Bildschirme in Gruppen organisieren
-- **[Anbieter verbinden und Playlists erstellen](./building-playlists)** – Inhaltsquellen verknüpfen und Schleifen aus Bildern und Videos aufbauen
-- **[Den Kalender planen](./scheduling-the-calendar)** – Festlegen, was wann läuft und was passiert, wenn ein Inhalt früher endet
-- **[Geplante Wiedergabe auf dem TV](./scheduled-playback)** – Was der TV selbstständig tut und wie Sie die Fernbedienung während der Wiedergabe verwenden
+- **[Bildschirm koppeln](./pairing-a-screen.md)** – Den Code auf dem TV anzeigen und in FreePlay Admin koppeln
+- **[Bildschirme und Gruppen verwalten](./managing-screens.md)** – Status und Downloads prüfen sowie Bildschirme in Gruppen organisieren
+- **[Anbieter verbinden und Playlists erstellen](./building-playlists.md)** – Inhaltsquellen verknüpfen und Schleifen aus Bildern und Videos aufbauen
+- **[Den Kalender planen](./scheduling-the-calendar.md)** – Festlegen, was wann läuft und was passiert, wenn ein Inhalt früher endet
+- **[Geplante Wiedergabe auf dem TV](./scheduled-playback.md)** – Was der TV selbstständig tut und wie Sie die Fernbedienung während der Wiedergabe verwenden

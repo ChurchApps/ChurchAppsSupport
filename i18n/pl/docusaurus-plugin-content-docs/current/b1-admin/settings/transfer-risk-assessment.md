@@ -1,5 +1,6 @@
 ---
 title: "Ocena ryzyka transferu danych"
+description: "Dokument zgodności ChurchApps dla transferów danych kościoła z UK/EOG do USA w B1 Admin: zabezpieczenia, podprocesorzy i kontrola dostępu."
 ---
 
 # Ocena ryzyka transferu danych

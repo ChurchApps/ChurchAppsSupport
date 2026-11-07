@@ -1,5 +1,6 @@
 ---
 title: "Fullføre innsjekking"
+description: "Fullfør innsjekking ved kiosk for en familie i B1 Checkin, med romgrenser, utskrift av etiketter, sikkerhetskoder for henting og hva appen gjør videre."
 ---
 
 # Fullføre innsjekking
@@ -13,9 +14,9 @@ Når du har gått gjennom husstanden din og gjort eventuelle nødvendige gruppet
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Gå gjennom husstanden din](./household-review) på skjermbildet for gjennomgang av husstanden
-- [Tilordne grupper](./group-assignment) til familiemedlemmer som skal sjekkes inn i en bestemt klasse eller et bestemt program
-- Eventuelt [legg til gjester](./adding-guests) som besøker sammen med familien din
+- [Gå gjennom husstanden din](./household-review.md) på skjermbildet for gjennomgang av husstanden
+- [Tilordne grupper](./group-assignment.md) til familiemedlemmer som skal sjekkes inn i en bestemt klasse eller et bestemt program
+- Eventuelt [legg til gjester](./adding-guests.md) som besøker sammen med familien din
 
 </div>
 
@@ -28,10 +29,10 @@ Det er alt du trenger å gjøre. Familiens oppmøte er registrert.
 
 ## Fulle rom og bemanningsforhold
 
-Hvis menigheten din har konfigurert [sikkerhetsgrenser](../../b1-admin/attendance/checkin-safety) for rommene sine, sjekker serveren dem før lagring:
+Hvis menigheten din har konfigurert [sikkerhetsgrenser](../../b1-admin/attendance/checkin-safety.md) for rommene sine, sjekker serveren dem før lagring:
 
 - Hvis et valgt rom er **fullt eller stengt**, går ikke innsjekkingen gjennom, og appen navngir rommet slik at du kan velge et annet.
-- Hvis gudstjenestetiden har en [innsjekkingsplan](../../b1-admin/attendance/setup#setting-a-check-in-schedule) og innsjekkingsvinduet ikke er åpent akkurat nå, blir innsjekking til rommene for den gudstjenestetiden også avvist. Skjermbildet **Kan ikke sjekke inn ennå** viser rommet med begrunnelsen «innsjekking er ikke åpen akkurat nå»; trykk på **Endre rom** for å velge en annen gudstjenestetid eller gruppe. (Gudstjenestetider som allerede er stengt, vises som **Stengt** på [husstandsskjermbildet](./household-review) og kan ikke velges, så du vil vanligvis bare se dette hvis et vindu lukkes midt i en innsjekking.)
+- Hvis gudstjenestetiden har en [innsjekkingsplan](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) og innsjekkingsvinduet ikke er åpent akkurat nå, blir innsjekking til rommene for den gudstjenestetiden også avvist. Skjermbildet **Kan ikke sjekke inn ennå** viser rommet med begrunnelsen «innsjekking er ikke åpen akkurat nå»; trykk på **Endre rom** for å velge en annen gudstjenestetid eller gruppe. (Gudstjenestetider som allerede er stengt, vises som **Stengt** på [husstandsskjermbildet](./household-review.md) og kan ikke velges, så du vil vanligvis bare se dette hvis et vindu lukkes midt i en innsjekking.)
 - En husstand som sjekket inn til en tidligere gudstjenestetid, kan komme tilbake senere og legge til en åpen gudstjenestetid, selv etter at det tidligere vinduet er lukket. Deres eksisterende innsjekkinger beholdes og fører ikke til at den nye innsjekkingen avvises.
 - Hvis et barnerom har **for få frivillige** i forhold til kravet, viser appen enten en advarsel som en ansatt kan bekrefte for å fortsette, eller blokkerer innsjekkingen helt -- avhengig av hvordan menigheten din har konfigurert håndhevelsen av bemanningsforholdet.
 
@@ -49,7 +50,7 @@ Den samme sikkerhetskoden vises på både barnets navneetikett og foreldrenes he
 Sikkerhetskoden genereres på nytt for hver innsjekking og bruker bare konsonanter og sifre (vokaler utelates for å unngå at det dannes upassende ord).
 
 :::warning
-Hvis etiketter ikke skrives ut, åpner du administratorinnstillingene ved å trykke på **menighetens logo** sju ganger, og deretter trykker du på **Endre skriver** for å bekrefte tilkoblingen til skriveren. Se [Oppsett av skriver](../getting-started/printer-setup) for feilsøkingstrinn.
+Hvis etiketter ikke skrives ut, åpner du administratorinnstillingene ved å trykke på **menighetens logo** sju ganger, og deretter trykker du på **Endre skriver** for å bekrefte tilkoblingen til skriveren. Se [Oppsett av skriver](../getting-started/printer-setup.md) for feilsøkingstrinn.
 :::
 
 ## Hva skjer etter innsjekking

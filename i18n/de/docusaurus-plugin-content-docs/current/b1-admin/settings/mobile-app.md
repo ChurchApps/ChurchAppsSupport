@@ -1,5 +1,6 @@
 ---
 title: "Einstellungen der mobilen App"
+description: "Reiter der Navigation, Startbildschirm-Kacheln, Anmeldehinweis und Verzeichnis-Datenschutz für die B1.church-Mitglieder-App in B1 Admin einstellen."
 ---
 
 # Einstellungen der mobilen App

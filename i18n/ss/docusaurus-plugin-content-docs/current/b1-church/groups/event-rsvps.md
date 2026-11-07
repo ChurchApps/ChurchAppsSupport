@@ -1,5 +1,6 @@
 ---
 title: "Kuvuma Kuya Emicimbini"
+description: "Phendvula ngeNgiyeza, Mhlawumbe, noma Angeyi emicimbini yeliqembu ku-Iphothali Yelilungu le-B1.church, bese ubona kutsi bangaki labayeta. Bahholi nabo bangabuka timphendvulo."
 ---
 
 # Kuvuma Kuya Emicimbini
@@ -30,14 +31,14 @@ Impendvulo yakho isebenta kulomcimbi lotsite kuphela — kumhlangano wangeviki, 
 ## Kubaholi Belicembu
 
 - **Kubuka Timphendvulo** -- Baholi babona inkhinobho yeka **Buka timphendvulo** ekhadini lomcimbi ngamunye. Iyavula liphepha lelithi **Timphendvulo** lelibala bonkhe ngeimpendvulo — Ngiyeta, Mhlawumbe, kanye ne-Angeke. Nangabe kute lophendvule, kubonakala "Akukabi khona timphendvulo."
-- **Kuvula nobe Kuvala Kuphendvula** -- Nawakha nobe uhlela umcimbi, sebentisa insimbi yeka **Vumela Kuphendvula**. Imicimbi lengavumeli kuphendvula ayikhombisi tinkhinobho tekuphendvula. Sitafu lesakha imicimbi ngebunyenti kusuka ku-B1 Admin sinalo lelikhetfo lelifananako — buka [Khalendari Yelicembu](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Kuvula nobe Kuvala Kuphendvula** -- Nawakha nobe uhlela umcimbi, sebentisa insimbi yeka **Vumela Kuphendvula**. Imicimbi lengavumeli kuphendvula ayikhombisi tinkhinobho tekuphendvula. Sitafu lesakha imicimbi ngebunyenti kusuka ku-B1 Admin sinalo lelikhetfo lelifananako — buka [Khalendari Yelicembu](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-Kuphendvula kuyindlela lelula yekubala bantfu. Nangabe umcimbi wakho udzinga imininingwane yekubhalisa, kuphatsa buningi, nobe kukhokha, sebentisa [kubhalisela imicimbi](../events/registering) kunaloko.
+Kuphendvula kuyindlela lelula yekubala bantfu. Nangabe umcimbi wakho udzinga imininingwane yekubhalisa, kuphatsa buningi, nobe kukhokha, sebentisa [kubhalisela imicimbi](../events/registering.md) kunaloko.
 :::
 
 ## Tihloko Letihlobene
 
 - [Imininingwane Yelicembu](./group-details.md) -- Konkhe lokusekhasini lelinemininingwane yelicembu
-- [Khalendari Yelicembu (B1 Admin)](../../b1-admin/groups/group-calendar) -- Indlela sitafu nebaholi labaphatsa ngayo imicimbi yemacembu netimphendvulo
-- [Kubhalisela Imicimbi](../events/registering) -- Kubhalisela imicimbi lokuphelele kanye nebuningi netinkhokhelo
+- [Khalendari Yelicembu (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Indlela sitafu nebaholi labaphatsa ngayo imicimbi yemacembu netimphendvulo
+- [Kubhalisela Imicimbi](../events/registering.md) -- Kubhalisela imicimbi lokuphelele kanye nebuningi netinkhokhelo

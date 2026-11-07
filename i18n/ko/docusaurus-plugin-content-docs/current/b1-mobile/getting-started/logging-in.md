@@ -1,5 +1,7 @@
 ---
-title: "로그인"
+title: "B1 Mobile에 로그인하기"
+sidebar_label: "로그인"
+description: "ChurchApps 계정으로 B1 Mobile 앱에 로그인하거나, 새 계정을 만들거나, 6자리 코드로 잊어버린 비밀번호를 복구하세요."
 ---
 
 # 로그인
@@ -13,7 +15,7 @@ B1 Mobile은 B1.church 및 기타 ChurchApps 제품에서 사용하는 동일한
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- iOS 또는 Android 기기에 [B1 Mobile을 설치하세요](./installing)
+- iOS 또는 Android 기기에 [B1 Mobile을 설치하세요](./installing.md)
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile은 B1.church 및 기타 ChurchApps 제품에서 사용하는 동일한
 3. **이메일 주소**와 **비밀번호**를 입력하세요.
 4. **Sign In**을 탭하세요.
 
-로그인하면 [대시보드](../dashboard/)로 이동합니다. 아직 교회를 선택하지 않았으면 교회를 검색하고 선택하도록 요청받을 것입니다.
+로그인하면 [대시보드](../dashboard/index.md)로 이동합니다. 아직 교회를 선택하지 않았으면 교회를 검색하고 선택하도록 요청받을 것입니다.
 
 ## 새 계정 만들기
 

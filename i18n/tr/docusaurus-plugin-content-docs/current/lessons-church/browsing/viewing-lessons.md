@@ -1,5 +1,6 @@
 ---
 title: "Derslerin Görüntülenmesi"
+description: "Lessons.church'te bir dersi açma, bölümlerini ve rol eylemlerini okuma, indirmeleri bulma ve sınıftan önce yaş grubu mekânları arasında geçiş yapmayı adım adım öğrenin."
 ---
 
 # Derslerin Görüntülenmesi

@@ -1,5 +1,6 @@
 ---
 title: "Kudawunilodwa Nemitfombo"
+description: "Thola futsi ulande tincwadzi letitimele, tinhlelo temhlinzeki, nemafayela e-PDF lahlanganiswe netifundziso, tifundvo, noma tinhlelo tekilasi lakho."
 ---
 
 # Kudawunilodwa Nemitfombo

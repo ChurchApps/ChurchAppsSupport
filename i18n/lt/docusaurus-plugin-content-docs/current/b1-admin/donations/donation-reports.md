@@ -1,5 +1,6 @@
 ---
 title: "Aukų ataskaitos"
+description: "Peržiūrėkite aukų sumas, nustojusius aukoti asmenis ir partijų detales B1 Admin: aukų suvestinės skydelis, nustojusių aukoti rodinys, CSV eksportai."
 ---
 
 # Aukų ataskaitos

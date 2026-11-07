@@ -1,5 +1,6 @@
 ---
 title: "Timeline ng Grupo"
+description: "Alamin kung paano pinagsasama ng group timeline ng B1 Mobile ang lahat ng post at usapan sa iisang feed, at ano ang gagawin kapag naka-pause."
 ---
 
 # Timeline ng Grupo
@@ -13,7 +14,7 @@ Ang Groups screen sa B1 Mobile ay may kasamang timeline feed na pinagsasama-sama
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [I-install ang B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
 - Maging miyembro ng kahit isang grupo sa iyong simbahan
 
 </div>
@@ -37,7 +38,7 @@ Ang bawat item sa timeline ay nagpapakita kung saang grupo ito nanggaling, para 
 Ang timeline ay isang magandang paraan para manatiling konektado sa iyong komunidad sa simbahan sa isang tingin. Narito ang ilang tip para masulit ito:
 
 - **Regular na mag-check in** -- Buksan ang Groups screen at mag-scroll sa timeline para makahabol sa kamakailang aktibidad.
-- **I-tap para sa higit pa** -- Kung may post na nakakuha ng iyong pansin, i-tap ito o i-tap ang pangalan ng grupo para pumunta sa buong [detail page ng grupo](./group-details) para sa higit pang konteksto.
+- **I-tap para sa higit pa** -- Kung may post na nakakuha ng iyong pansin, i-tap ito o i-tap ang pangalan ng grupo para pumunta sa buong [detail page ng grupo](./group-details.md) para sa higit pang konteksto.
 - **Lahat sa isang lugar** -- Hindi mo na kailangang bisitahin ang bawat grupo nang hiwalay. Dinadala ng timeline ang lahat ng aktibidad sa iyo.
 
 :::info
@@ -50,5 +51,5 @@ I-enable ang [mga push notification](../community/notifications.md) para ma-aler
 
 ## Mga Kaugnay na Artikulo
 
-- [Mga Detalye ng Grupo](./group-details) -- Tingnan ang buong profile at mga post ng isang grupo
+- [Mga Detalye ng Grupo](./group-details.md) -- Tingnan ang buong profile at mga post ng isang grupo
 - [Mga Notification](../community/notifications.md) -- Makatanggap ng notification tungkol sa aktibidad ng grupo

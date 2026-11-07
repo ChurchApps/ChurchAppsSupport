@@ -1,5 +1,6 @@
 ---
 title: "Kuratoriškas kalendorius"
+description: "Nustatykite bažnyčios kuruojamą kalendorių B1 Admin, rodantį kelių grupių renginius, ir bendrinkite jį svetainėje, ICS prenumerata ar atsisiuntimu."
 ---
 
 # Kuratoriškas kalendorius
@@ -15,7 +16,7 @@ Kuratoriškas kalendorius sujungia renginius iš kelių grupių į vieną bendr�
 
 - Sukurkite [grupes](../groups/creating-groups.md), kurių renginius norite įtraukti
 - Įsitikinkite, kad grupių vadovai yra pridėję renginius į savo grupes
-- Susipažinkite su [kalendorių kūrimo](creating-calendars) pagrindais
+- Susipažinkite su [kalendorių kūrimo](./creating-calendars.md) pagrindais
 
 </div>
 
@@ -61,5 +62,5 @@ Svetainėje ir jos ICS prenumeratoje kuratoriškame kalendoriuje rodomi tik **vi
 
 ## Kiti žingsniai
 
-- [Kalendorių kūrimas](creating-calendars) – sužinokite kalendoriaus kūrimo pagrindus
-- [Kalendorių apžvalga](./) – grįžkite į kalendorių apžvalgą
+- [Kalendorių kūrimas](./creating-calendars.md) – sužinokite kalendoriaus kūrimo pagrindus
+- [Kalendorių apžvalga](./index.md) – grįžkite į kalendorių apžvalgą

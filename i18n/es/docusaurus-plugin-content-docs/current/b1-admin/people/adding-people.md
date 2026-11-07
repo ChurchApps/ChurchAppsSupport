@@ -1,5 +1,6 @@
 ---
 title: "Agregar personas"
+description: "Añade una persona a la base de datos de tu iglesia en B1 Admin, completa sus datos y vincula a los familiares en hogares para registro e informes."
 ---
 
 # Agregar personas

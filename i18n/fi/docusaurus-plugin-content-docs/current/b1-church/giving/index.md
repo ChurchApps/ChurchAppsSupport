@@ -1,5 +1,7 @@
 ---
-title: "Lahjoittaminen"
+title: "Verkkolahjoitukset ja lahjoitukset B1.churchissa"
+sidebar_label: "Lahjoittaminen"
+description: "Lahjoita seurakunnallesi verkossa B1.churchissa ilman tiliä tai kirjaudu hallitsemaan säännöllisiä lahjoituksia, maksutapoja ja lahjoitustodistuksia."
 ---
 
 # Lahjoittaminen

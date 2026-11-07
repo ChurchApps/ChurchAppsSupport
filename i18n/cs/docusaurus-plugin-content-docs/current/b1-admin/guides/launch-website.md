@@ -1,5 +1,6 @@
 ---
 title: "Průvodce: Spusťte webové stránky svého sboru"
+description: "Nastavte web sboru v B1 Admin: vytvořte domovskou stránku, sladěte barvy a logo, přidejte klíčové stránky, připojte vlastní doménu a přidejte formuláře darů."
 ---
 
 # Spusťte webové stránky svého sboru

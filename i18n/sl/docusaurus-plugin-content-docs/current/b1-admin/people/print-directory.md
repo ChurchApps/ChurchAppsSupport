@@ -1,5 +1,6 @@
 ---
 title: "Tiskanje imenika"
+description: "Ustvarite tiskljiv imenik članov po gospodinjstvih iz B1 Admin s fotografijami, kontakti in rojstnimi dnevi, prilagojen za papir velikosti Letter."
 ---
 
 # Tiskanje imenika

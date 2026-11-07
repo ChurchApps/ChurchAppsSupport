@@ -1,5 +1,7 @@
 ---
-title: "Evenementen"
+title: "Kerkevenementen en inschrijven in B1 Mobile"
+sidebar_label: "Evenementen"
+description: "Blader door aankomende kerkevenementen in B1 Mobile en meld jezelf en je gezin aan voor evenementen waarvoor inschrijving openstaat."
 ---
 
 # Evenementen
@@ -23,10 +25,10 @@ Evenementen kunnen verschillende statussen weergeven:
 
 ## Wat u nodig hebt
 
-- [B1 Mobile geïnstalleerd](../getting-started/installing) en [ingelogd](../getting-started/logging-in)
+- [B1 Mobile geïnstalleerd](../getting-started/installing.md) en [ingelogd](../getting-started/logging-in.md)
 - Uw kerk moet evenementregistratie ingeschakeld hebben voor het evenement
 
 ## Meer informatie
 
-- [Registratie voor evenementen](./registering) -- Stap-voor-stap gids voor aanmelding voor een evenement op mobiel
-- [Zelf aanmelden](../checkin/self-checkin) -- Meld jezelf aan wanneer u aankomt op het evenement
+- [Registratie voor evenementen](./registering.md) -- Stap-voor-stap gids voor aanmelding voor een evenement op mobiel
+- [Zelf aanmelden](../checkin/self-checkin.md) -- Meld jezelf aan wanneer u aankomt op het evenement

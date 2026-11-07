@@ -1,5 +1,6 @@
 ---
 title: "Helpers"
+description: "Het @churchapps/helpers-pakket voor developers: functies, gebruikende apps, lokale buildsetup in de Packages-workspace en publiceren via changesets."
 ---
 
 # Helpers
@@ -13,7 +14,7 @@ Het `@churchapps/helpers`-pakket biedt basisutilities die door alle ChurchApps-p
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Installeer **Node.js** en **Git** -- zie [Prerequisites](../setup/prerequisites)
+- Installeer **Node.js** en **Git** -- zie [Prerequisites](../setup/prerequisites.md)
 - Maak jezelf vertrouwd met de [npm link workflow](./index.md) voor lokale ontwikkeling
 
 </div>
@@ -67,6 +68,6 @@ Aangezien dit pakket door elk ChurchApps-project wordt gebruikt, hebben wijzigin
 
 ## Gerelateerde Artikelen
 
-- **[ApiHelper](./api-helper)** -- Serverutilities die afhankelijk zijn van dit pakket
-- **[AppHelper](./app-helper)** -- React-onderdelen die afhankelijk zijn van dit pakket
+- **[ApiHelper](./api-helper.md)** -- Serverutilities die afhankelijk zijn van dit pakket
+- **[AppHelper](./app-helper.md)** -- React-onderdelen die afhankelijk zijn van dit pakket
 - **[Shared Libraries Overview](./index.md)** -- `npm link` workflow en pakketoverzicht

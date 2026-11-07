@@ -1,5 +1,6 @@
 ---
 title: "Misafir Ekleme"
+description: "B1 Checkin kiosk'unda ziyaret eden bir çocuğu, akrabayı veya arkadaşı haneye ekleyin, ardından gruplarını atayın ve check-in işlemini tamamlayın."
 ---
 
 # Misafir Ekleme
@@ -13,8 +14,8 @@ Ailenizi ziyaret eden ve hanenizle birlikte check-in yapması gereken biri varsa
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [Ailenizi arayın](./looking-up-members) ve arama sonuçlarından bir üye seçin
-- Aile üyelerinizi görebileceğiniz [hane inceleme ekranında](./household-review) olun
+- [Ailenizi arayın](./looking-up-members.md) ve arama sonuçlarından bir üye seçin
+- Aile üyelerinizi görebileceğiniz [hane inceleme ekranında](./household-review.md) olun
 
 </div>
 
@@ -36,8 +37,8 @@ Misafirin adı, sistemde zaten kayıtlı ancak üye olmayan birisiyle eşleşirs
 
 Misafir hane listenizde göründükten sonra şunları yapabilirsiniz:
 
-- **Kartını genişletin** ve diğer aile üyeleri gibi [bir gruba atayın](./group-assignment).
-- Misafir dahil tüm haneyi [check-in yapın](./completing-checkin).
+- **Kartını genişletin** ve diğer aile üyeleri gibi [bir gruba atayın](./group-assignment.md).
+- Misafir dahil tüm haneyi [check-in yapın](./completing-checkin.md).
 
 ## İptal Etme
 
@@ -49,4 +50,4 @@ Kiosktan misafir eklemek, kilisenizin veritabanında bir kişi kaydı oluşturur
 
 ## Sonraki Adım
 
-Misafirleri ekleyip gerektiğinde [grupları atadıktan](./group-assignment) sonra, [check-in işlemini tamamlamaya](./completing-checkin) hazırsınız.
+Misafirleri ekleyip gerektiğinde [grupları atadıktan](./group-assignment.md) sonra, [check-in işlemini tamamlamaya](./completing-checkin.md) hazırsınız.

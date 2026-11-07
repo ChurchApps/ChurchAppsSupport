@@ -1,5 +1,6 @@
 ---
 title: "内容接口"
+description: "ChurchApps 内容 API 的端点参考：B1 Admin 中的网站页面、博客文章、重定向、讲道、活动、文件、圣经查询和诗歌。"
 ---
 
 # 内容接口
@@ -133,7 +134,7 @@ GET /content/pages/abc-church-id/tree?url=/about
 
 基础路径：`/content/posts`
 
-博客文章是独立的记录：`title`、`slug`（每个教会内唯一）、`excerpt`、`content`（Markdown 正文）、`authorId`、`photoUrl`、`publishDate`、`category` 和 `tags`。当设置了 `publishDate` 且该时间已过时，文章即为已发布。读取接口会根据 `authorId` 为每篇文章补充 `authorName`。参见 [网站构建器架构](../../architecture/website-builder#blog)。
+博客文章是独立的记录：`title`、`slug`（每个教会内唯一）、`excerpt`、`content`（Markdown 正文）、`authorId`、`photoUrl`、`publishDate`、`category` 和 `tags`。当设置了 `publishDate` 且该时间已过时，文章即为已发布。读取接口会根据 `authorId` 为每篇文章补充 `authorName`。参见 [网站构建器架构](../../architecture/website-builder.md#blog)。
 
 | 方法 | 路径 | 认证 | 权限 | 说明 |
 |--------|------|------|------------|-------------|
@@ -458,8 +459,8 @@ GET /content/bibles/de4e12af7f28f599-02/verses/GEN.1.1-GEN.1.3
 
 ## 相关页面
 
-- [网站构建器架构](../../architecture/website-builder) —— 页面、板块、元素、文章和重定向在各应用之间如何协同工作
-- [成员接口](./membership) —— 人员、教会、小组、角色、权限
-- [考勤接口](./attendance) —— 服务和访问记录追踪
-- [身份验证与权限](./authentication) —— 登录流程、JWT、权限模型
-- [模块结构](../module-structure) —— 代码组织模式
+- [网站构建器架构](../../architecture/website-builder.md) —— 页面、板块、元素、文章和重定向在各应用之间如何协同工作
+- [成员接口](./membership.md) —— 人员、教会、小组、角色、权限
+- [考勤接口](./attendance.md) —— 服务和访问记录追踪
+- [身份验证与权限](./authentication.md) —— 登录流程、JWT、权限模型
+- [模块结构](../module-structure.md) —— 代码组织模式

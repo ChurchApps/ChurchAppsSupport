@@ -1,5 +1,7 @@
 ---
-title: "Talata ng Araw"
+title: "Talata ng Araw sa Website at Portal ng B1.church"
+sidebar_label: "Talata ng Araw"
+description: "Tingnan ang larawan ng talata ng araw at mga nakaraang talata, saka ibahagi o i-download mula sa website o portal ng B1.church sa anumang laki ng screen."
 ---
 
 # Talata ng Araw

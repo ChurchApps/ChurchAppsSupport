@@ -1,5 +1,6 @@
 ---
 title: "Registracijos saugumas"
+description: "Nustatykite vaikų saugos valdiklius B1 Admin: kambarių talpą, savanorių santykį, patikimų asmenų sąrašus ir pranešimus tėvams registracijos metu."
 ---
 
 # Registracijos saugumas
@@ -15,7 +16,7 @@ B1 apima vaikų saugumo valdymo priemonių rinkinį registracijai: patalpų talp
 
 - Nustatykite savo [lankomumo struktūrą](setup.md) ir [registracijos terminalus](check-in.md)
 - Kambariai yra [grupės](../groups/creating-groups.md), susietos su pamaldų laikais – toliau nurodytos saugumo nuostatos taikomos grupei
-- Tėvų iškvietimui ir skubiam pranešimui transliuoti reikia prijungto SMS paslaugos teikėjo ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream) arba Mutual Ministry)
+- Tėvų iškvietimui ir skubiam pranešimui transliuoti reikia prijungto SMS paslaugos teikėjo ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md) arba Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Abi funkcijos siunčia tekstines žinutes per jūsų bažnyčios prijungtą SMS 
 
 Asmenys, atsisakę žinučių gavimo arba neturintys įrašyto mobiliojo numerio, praleidžiami automatiškai – terminale rodoma, kiek žinučių išsiųsta ir kiek praleista.
 
-Žr. terminalo pusės vadovą: [Išregistravimas ir vaikų saugumas](../../b1-checkin/check-in/checking-out).
+Žr. terminalo pusės vadovą: [Išregistravimas ir vaikų saugumas](../../b1-checkin/check-in/checking-out.md).
 
 ## Susiję straipsniai
 
 - [Registracija](check-in.md) — terminalo nustatymas ir įranga
-- [Išregistravimas ir vaikų saugumas](../../b1-checkin/check-in/checking-out) — terminalo išregistravimas, atsiėmimo patvirtinimas ir iškvietimo eiga
+- [Išregistravimas ir vaikų saugumas](../../b1-checkin/check-in/checking-out.md) — terminalo išregistravimas, atsiėmimo patvirtinimas ir iškvietimo eiga
 - [Grupių kūrimas](../groups/creating-groups.md) — kur saugomi patalpų nustatymai
 - [Lankomumo nustatymas](setup.md) — pamaldos, pamaldų laikai ir patalpų priskyrimas
 - [Mažiausias amžius privačioms žinutėms](../settings/mobile-app.md#member-directory--messaging-settings) — blokuoja naujus privačių žinučių pokalbius su vaikais, tačiau palieka juos kataloge

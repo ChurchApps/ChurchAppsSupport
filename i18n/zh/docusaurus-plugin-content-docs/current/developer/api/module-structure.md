@@ -1,5 +1,6 @@
 ---
 title: "模块结构"
+description: "说明 API 模块的组织方式，包括控制器、仓储、网关、认证检查，以及在 B1 开发环境中运行代码的六个 Lambda 函数。"
 ---
 
 # 模块结构
@@ -13,8 +14,8 @@ title: "模块结构"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 在本地设置 API——请参阅 [本地 API 设置](./local-setup)
-- 查看 [数据库](./database) 架构以了解数据访问层
+- 在本地设置 API——请参阅 [本地 API 设置](./local-setup.md)
+- 查看 [数据库](./database.md) 架构以了解数据访问层
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## 跨模块通信
 
-每个模块拥有自己的数据库（参见 [数据库](./database)），模块永远不会直接查询另一个模块的表。当一个模块需要另一个模块拥有的数据时——例如，doing 模块从 membership 解析人员——它通过拥有模块的 **gateway** 在 `src/shared/modules/` 中进行：
+每个模块拥有自己的数据库（参见 [数据库](./database.md)），模块永远不会直接查询另一个模块的表。当一个模块需要另一个模块拥有的数据时——例如，doing 模块从 membership 解析人员——它通过拥有模块的 **gateway** 在 `src/shared/modules/` 中进行：
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ const corsOrigin = Environment.corsOrigin;
 
 ## 相关文章
 
-- **[数据库](./database)** ——连接字符串、模式脚本和数据访问模式
-- **[本地 API 设置](./local-setup)** ——完整的分步设置指南
-- **[ApiHelper](../shared-libraries/api-helper)** ——提供 `CustomBaseController` 和认证中间件的共享库
+- **[数据库](./database.md)** ——连接字符串、模式脚本和数据访问模式
+- **[本地 API 设置](./local-setup.md)** ——完整的分步设置指南
+- **[ApiHelper](../shared-libraries/api-helper.md)** ——提供 `CustomBaseController` 和认证中间件的共享库

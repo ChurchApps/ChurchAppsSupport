@@ -1,5 +1,7 @@
 ---
-title: "Luhlu Lwenkhonzo"
+title: "Imininingwane Yelunkhonzo Ku-App ye-B1.church"
+sidebar_label: "Luhlu Lwenkhonzo"
+description: "Bona kulandzelana kwelunkhonzo ku-app ye-B1.church, kuhlanganisa sikhatsi sekuhamba, emagama emahubo, kuguculwa kwetikhiye, nemabukeliswa emifundo lelungiselelwe itimiso takho."
 ---
 
 # Luhlu Lwenkhonzo

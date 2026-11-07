@@ -1,5 +1,6 @@
 ---
 title: "Plan Mode"
+description: "Ikonekta ang TV sa FreePlay sa service plan ng simbahan mula sa B1 Admin para ipakita ang lingguhang aralin, presentasyon, at media nang maayos."
 ---
 
 # Plan Mode
@@ -12,13 +13,13 @@ Ikinokonekta ng Plan Mode ang TV mo sa isang service plan ng simbahan. Sa halip 
 
 ## Paano Ito Naiiba sa Ibang Mode
 
-- **[Scheduled Mode](../scheduled-mode/)** ay nagpe-play ng mga playlist mula sa kalendaryo sa FreePlay Admin sa mga oras na itinakda mo, nang walang pumipindot ng Start
+- **[Scheduled Mode](../scheduled-mode/index.md)** ay nagpe-play ng mga playlist mula sa kalendaryo sa FreePlay Admin sa mga oras na itinakda mo, nang walang pumipindot ng Start
 - **Plan Mode** ay kumukuha ng content na nakatali sa isang uri ng plan, na maaaring maglaman ng mga lesson, presentasyon ng provider, add-on, at iba pang media na nakaayos sa sariling pagkakasunod-sunod
 
 Lalong kapaki-pakinabang ang Plan Mode kapag ang service plan mo ay may halo ng content mula sa iba't ibang pinagmulan, na lahat ay nakaayos sa iisang sunod-sunod na daloy.
 
 :::tip
-Gusto mo bang awtomatikong ma-play ang kasalukuyang plan sa itinakdang oras? Sa FreePlay Admin, magdagdag ng calendar entry at piliin ang uri ng plan sa ilalim ng **Mga service plan**. Tingnan ang [Scheduling the Calendar](../scheduled-mode/scheduling-the-calendar).
+Gusto mo bang awtomatikong ma-play ang kasalukuyang plan sa itinakdang oras? Sa FreePlay Admin, magdagdag ng calendar entry at piliin ang uri ng plan sa ilalim ng **Mga service plan**. Tingnan ang [Scheduling the Calendar](../scheduled-mode/scheduling-the-calendar.md).
 :::
 
 ## Paano Ito Gumagana
@@ -32,4 +33,4 @@ Nananatiling naka-pair ang TV sa uri ng plan. Kada linggo, awtomatiko nitong kuk
 
 ## Sa Seksyong Ito
 
-- **[Pairing Your Device](./device-pairing)** -- Paano bumuo at maglagay ng pairing code
+- **[Pairing Your Device](./device-pairing.md)** -- Paano bumuo at maglagay ng pairing code

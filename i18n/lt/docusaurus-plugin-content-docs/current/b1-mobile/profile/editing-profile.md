@@ -1,5 +1,7 @@
 ---
-title: "Profilinio duomenų redagavimas"
+title: "Profilio redagavimas B1 Mobile programėlėje"
+sidebar_label: "Profilinio duomenų redagavimas"
+description: "Atnaujinkite vardą, el. paštą, telefoną, adresą ir profilio nuotrauką B1 Mobile programėlėje, kad bažnyčios įrašai ir katalogas būtų aktualūs."
 ---
 
 # Profilinio duomenų redagavimas
@@ -13,7 +15,7 @@ Skirtuke **Profile** galite atnaujinti savo asmeninę informaciją, kad bažnyč
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiekite B1 Mobile](../getting-started/installing) ir [prisijunkite](../getting-started/logging-in) prie savo paskyros
+- [Įdiekite B1 Mobile](../getting-started/installing.md) ir [prisijunkite](../getting-started/logging-in.md) prie savo paskyros
 
 </div>
 
@@ -34,7 +36,7 @@ Jūsų profilį sudaro šie asmeniniai duomenys:
 3. Palieskite lauką, kurį norite atnaujinti, ir atlikite pakeitimus.
 4. Baigę išsaugokite pakeitimus.
 
-Jūsų atnaujinta informacija sinchronizuojama automatiškai. Kiekvienas, kuris peržiūri jūsų profilį (atsižvelgiant į jūsų [privatumo nustatymus](./privacy-settings)), iš karto matys naujus duomenis.
+Jūsų atnaujinta informacija sinchronizuojama automatiškai. Kiekvienas, kuris peržiūri jūsų profilį (atsižvelgiant į jūsų [privatumo nustatymus](./privacy-settings.md)), iš karto matys naujus duomenis.
 
 :::tip
 Laikykite savo el. pašto adresą ir telefono numerį aktualius. Bažnyčia naudoja šią informaciją, kad siųstų jums svarbius atnaujinimus ir priminimus.
@@ -46,7 +48,7 @@ Profilio nuotrauką galite pridėti arba pakeisti skirtuke **Profile**. Jūsų n
 
 ## Pakeitimai visose ChurchApps programose
 
-Kadangi visos ChurchApps paslaugos naudoja tą pačią paskyros sistemą, B1 Mobile atliktas pakeitimas iš karto matomas [B1.church](../../b1-church/), jūsų bažnyčios administravimo įrankiuose ir visose kitose susietose paslaugose. Jums nereikia atskirai atnaujinti informacijos kiekvienoje vietoje.
+Kadangi visos ChurchApps paslaugos naudoja tą pačią paskyros sistemą, B1 Mobile atliktas pakeitimas iš karto matomas [B1.church](../../b1-church/index.md), jūsų bažnyčios administravimo įrankiuose ir visose kitose susietose paslaugose. Jums nereikia atskirai atnaujinti informacijos kiekvienoje vietoje.
 
 :::info
 Kai kurios bažnyčios reikalauja administratoriaus patvirtinimo tam tikriems profilio pakeitimams. Jei jūsų atnaujinimas iš karto nepasirodo, patikrinkite savo profilio ekrano skirtuką **Pending**, kad sužinotumėte jo būseną.
@@ -54,5 +56,5 @@ Kai kurios bažnyčios reikalauja administratoriaus patvirtinimo tam tikriems pr
 
 ## Susiję straipsniai
 
-- [Namų ūkis](./household) -- Peržiūrėkite ir tvarkykite savo šeimos narius
-- [Privatumo nustatymai](./privacy-settings) -- Valdykite, ką kiti mato apie jus
+- [Namų ūkis](./household.md) -- Peržiūrėkite ir tvarkykite savo šeimos narius
+- [Privatumo nustatymai](./privacy-settings.md) -- Valdykite, ką kiti mato apie jus

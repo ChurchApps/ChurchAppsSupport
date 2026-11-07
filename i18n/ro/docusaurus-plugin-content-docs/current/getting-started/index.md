@@ -1,5 +1,7 @@
 ---
-title: "Noțiuni de bază"
+title: "Primele 15 minute cu ChurchApps"
+sidebar_label: "Noțiuni de bază"
+description: "Configurați un cont ChurchApps nou în câțiva pași: adăugați detaliile bisericii, importați persoane în B1 Admin, invitați echipa și alegeți un prim proiect."
 ---
 
 # Noțiuni de bază

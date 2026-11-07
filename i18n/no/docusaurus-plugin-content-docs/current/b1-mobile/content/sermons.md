@@ -1,5 +1,7 @@
 ---
-title: "Prekener"
+title: "Se preken i B1 Mobile"
+sidebar_label: "Prekener"
+description: "Bla gjennom, søk i og se opptatte preken og serier i B1 Mobile-appen, inkludert hvordan du får med deg nedtellingen til en direktesending."
 ---
 
 # Prekener
@@ -13,7 +15,7 @@ Skjermbildet for prekener lar deg bla gjennom og se opptak av prekener fra menig
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- [Installer B1 Mobile](../getting-started/installing.md) og [logg inn](../getting-started/logging-in.md) på kontoen din
 - Menigheten din må ha prekeninnhold satt opp i administrasjonsportalen
 
 </div>
@@ -29,7 +31,7 @@ Skjermbildet for prekener er organisert i en fanevisning med to hovedseksjoner:
 
 ## Nedtelling til direktesending
 
-Når en [direktesending](./live-streaming) starter innen de neste 24 timene, vises en nedtellingsklokke på skjermbildet for prekener. Dette viser når neste gudstjeneste sendes direkte, slik at du kan planlegge å se den live.
+Når en [direktesending](./live-streaming.md) starter innen de neste 24 timene, vises en nedtellingsklokke på skjermbildet for prekener. Dette viser når neste gudstjeneste sendes direkte, slik at du kan planlegge å se den live.
 
 ## Slik ser du en preken
 
@@ -51,7 +53,7 @@ Hvert prekenoppføring kan vise:
 - **Miniatyrbilde** -- Et forhåndsvisningsbilde for prekenen
 
 :::tip
-Hvis du ser en nedtelling på skjermbildet for prekener, trykk på den for å gå rett til [direktesendingen](./live-streaming) når den starter.
+Hvis du ser en nedtelling på skjermbildet for prekener, trykk på den for å gå rett til [direktesendingen](./live-streaming.md) når den starter.
 :::
 
 ## Tilgjengelighet

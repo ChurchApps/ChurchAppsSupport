@@ -1,5 +1,7 @@
 ---
-title: "Raamattu"
+title: "Raamatun lukeminen B1 Mobilessa"
+sidebar_label: "Raamattu"
+description: "Avaa Raamattu B1 Mobile -sovelluksen sisäänrakennetulla lukijalla valikosta, selaa kirjoja, lukuja ja jakeita sekä löydä seurakuntasi Raamattu-vaihtoehto."
 ---
 
 # Raamattu
@@ -13,7 +15,7 @@ B1 Mobile sisältää sisäänrakennetun Raamatun lukijan, jolla voit lukea Pyhi
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu sisään](../getting-started/logging-in) tilillesi
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu sisään](../getting-started/logging-in.md) tilillesi
 - Seurakuntasi on otettava Raamattu-ominaisuus käyttöön
 
 </div>
@@ -37,7 +39,7 @@ Upotettu lukija tarjoaa säätimet Pyhien kirjoitusten läpi liikkumiseen. Voit:
 Lukija täyttää koko näytön, joten sinulla on laitteellasi runsaasti tilaa mukavaan lukemiseen.
 
 :::tip
-Tee Raamattu-näkymästä osa päivittäistä rutiiniasi, sillä se on nopea tapa lukea Pyhiä kirjoituksia missä tahansa oletkin. Yhdistä se [Päivän jae](./verse-of-the-day) -toimintoon saadaksesi päivittäistä inspiraatiota.
+Tee Raamattu-näkymästä osa päivittäistä rutiiniasi, sillä se on nopea tapa lukea Pyhiä kirjoituksia missä tahansa oletkin. Yhdistä se [Päivän jae](./verse-of-the-day.md) -toimintoon saadaksesi päivittäistä inspiraatiota.
 :::
 
 ## Saatavuus
@@ -46,6 +48,6 @@ Raamattu-näkymä on käytettävissä, kun seurakuntasi on ottanut tämän omina
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Päivän jae](./verse-of-the-day) -- Lue päivittäinen Raamatun jae
-- [Saarnat](./sermons) -- Katso saarnoja, jotka täydentävät Raamatun lukemistasi
+- [Päivän jae](./verse-of-the-day.md) -- Lue päivittäinen Raamatun jae
+- [Saarnat](./sermons.md) -- Katso saarnoja, jotka täydentävät Raamatun lukemistasi
 - [FreePlay](/docs/freeplay/) -- Pelaa jäsennelty opetussuunnitelma luokkahuoneen televisioilla (korvaa sovelluksen sisäisen, vanhentuneen Lessons-näkymän)

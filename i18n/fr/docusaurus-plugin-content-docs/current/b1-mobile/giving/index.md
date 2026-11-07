@@ -1,5 +1,7 @@
 ---
-title: "Dons"
+title: "Dons dans l’application B1 Mobile"
+sidebar_label: "Dons"
+description: "Faites un don dans B1 Mobile, consultez vos dons de l’année et gérez vos moyens de paiement. Onglets : Aperçu, Donner, Gérer et Historique."
 ---
 
 # Dons
@@ -24,7 +26,7 @@ La section des dons est organisée en quatre onglets :
 Tous les dons effectués via B1 Mobile sont traités de manière sécurisée par **Stripe**. Vos informations de paiement sont gérées par l'infrastructure sécurisée de Stripe et ne sont jamais stockées sur les serveurs de ChurchApps. Vous pouvez donner en toute confiance, sachant que vos informations financières sont protégées.
 
 :::info
-L'administrateur de votre église configure les fonds disponibles et le traitement des paiements via [B1 Admin](../../b1-admin/). Si vous ne voyez pas d'option de don dans l'application, il se peut que votre église n'ait pas encore configuré cette fonctionnalité.
+L'administrateur de votre église configure les fonds disponibles et le traitement des paiements via [B1 Admin](../../b1-admin/index.md). Si vous ne voyez pas d'option de don dans l'application, il se peut que votre église n'ait pas encore configuré cette fonctionnalité.
 :::
 
 ## Ce que vous pouvez faire
@@ -38,6 +40,6 @@ Voici ce que vous pouvez faire depuis la section des dons :
 
 ## Prochaines étapes
 
-- [Effectuer un don](./making-donations) -- Apprenez à faire un don depuis l'application
-- [Gérer les moyens de paiement](./managing-payments) -- Ajoutez ou supprimez des moyens de paiement enregistrés
-- [Historique des dons](./donation-history) -- Consultez votre résumé de dons et vos dons passés
+- [Effectuer un don](./making-donations.md) -- Apprenez à faire un don depuis l'application
+- [Gérer les moyens de paiement](./managing-payments.md) -- Ajoutez ou supprimez des moyens de paiement enregistrés
+- [Historique des dons](./donation-history.md) -- Consultez votre résumé de dons et vos dons passés

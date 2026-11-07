@@ -1,5 +1,7 @@
 ---
-title: "Direktori Anggota"
+title: "Direktori Anggota di Aplikasi B1 Mobile"
+sidebar_label: "Direktori Anggota"
+description: "Temukan orang di gereja Anda dengan direktori anggota B1 Mobile: jelajahi menurut abjad, cari berdasarkan nama, dan buka profil serta tautan keluarga."
 ---
 
 # Direktori Anggota
@@ -13,7 +15,7 @@ Direktori anggota di B1 Mobile memungkinkan Anda menelusuri dan mencari orang-or
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- [Pasang B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Pasang B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 
 </div>
 
@@ -51,5 +53,5 @@ Informasi yang terlihat di setiap profil bergantung pada pengaturan privasi dan 
 
 ## Artikel Terkait
 
-- [Perpesanan](./messaging) -- Kirim pesan pribadi kepada seseorang yang Anda temukan di direktori
+- [Perpesanan](./messaging.md) -- Kirim pesan pribadi kepada seseorang yang Anda temukan di direktori
 - [Pengaturan Privasi](../profile/privacy-settings.md) -- Atur apa yang dapat dilihat orang lain tentang Anda di direktori

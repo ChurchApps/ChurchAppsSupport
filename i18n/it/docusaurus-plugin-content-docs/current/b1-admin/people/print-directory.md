@@ -1,5 +1,6 @@
 ---
 title: "Stampa Directory"
+description: "Genera dalla directory di B1 Admin un elenco stampabile dei membri raggruppato per nucleo, con foto, contatti e compleanni, in formato Letter."
 ---
 
 # Stampa Directory

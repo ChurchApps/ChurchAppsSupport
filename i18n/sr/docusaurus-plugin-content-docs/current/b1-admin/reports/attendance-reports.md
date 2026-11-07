@@ -1,5 +1,6 @@
 ---
 title: "Извештаји о присуству"
+description: "Погледајте три извештаја о присуству у B1 Admin (Attendance Trend, Group Attendance, Daily Group Attendance), њихов садржај и кораке за покретање и извоз."
 ---
 
 # Извештаји о присуству

@@ -1,5 +1,6 @@
 ---
 title: "Mga Giving Endpoint"
+description: "Sanggunian ng Giving API endpoints sa ChurchApps: donasyon, batch, gateway, subscription, at paraan ng bayad, kasama ang auth at permission rules."
 ---
 
 # Mga Giving Endpoint
@@ -284,6 +285,6 @@ Nagmamana mula sa `GenericCrudController` na may mga CRUD route: `getById`, `get
 
 ## Mga Kaugnay na Pahina
 
-- [Membership Endpoints](./membership) — Mga tao, simbahan, grupo, role, at permiso
-- [Authentication at Permissions](./authentication) — Daloy ng login, JWT, OAuth, modelo ng permiso
-- [Module Structure](../module-structure) — Mga pattern ng organisasyon ng code
+- [Membership Endpoints](./membership.md) — Mga tao, simbahan, grupo, role, at permiso
+- [Authentication at Permissions](./authentication.md) — Daloy ng login, JWT, OAuth, modelo ng permiso
+- [Module Structure](../module-structure.md) — Mga pattern ng organisasyon ng code

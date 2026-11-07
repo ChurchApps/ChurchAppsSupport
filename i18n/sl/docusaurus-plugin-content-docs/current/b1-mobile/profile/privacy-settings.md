@@ -1,5 +1,6 @@
 ---
 title: "Nastavitve zasebnosti"
+description: "Določite, kateri podatki profila, kot so telefon, e-pošta in naslov, so vidni drugim članom v imeniku B1 Mobile, ter preglejte čakajoče spremembe."
 ---
 
 # Nastavitve zasebnosti
@@ -13,7 +14,7 @@ Zavihek **Vidnost** na zaslonu Profil vam omogoča, da nadzirate, kaj lahko drug
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite B1 Mobile](../getting-started/installing) in se [prijavite](../getting-started/logging-in) v svoj račun
+- [Namestite B1 Mobile](../getting-started/installing.md) in se [prijavite](../getting-started/logging-in.md) v svoj račun
 
 </div>
 
@@ -52,8 +53,8 @@ Zavihek **Račun** omogoča dostop do varnostnih nastavitev. Uporabite ta zavihe
 
 | Zavihek | Namen |
 |---|---|
-| **Profil** | [Uredite svoje osebne podatke](./editing-profile) in fotografijo |
-| **Gospodinjstvo** | [Oglejte si člane svoje družine](./household) |
+| **Profil** | [Uredite svoje osebne podatke](./editing-profile.md) in fotografijo |
+| **Gospodinjstvo** | [Oglejte si člane svoje družine](./household.md) |
 | **Vidnost** | Nadzirajte, kaj drugi vidijo v imeniku |
 | **Čakajoče** | Pregled sprememb profila, ki čakajo na odobritev |
 | **Račun** | Upravljanje varnostnih nastavitev |
@@ -62,6 +63,6 @@ Ti zavihki skupaj vam omogočajo popoln nadzor nad vašimi osebnimi podatki in n
 
 ## Sorodni članki
 
-- [Urejanje profila](./editing-profile) -- Posodobite svoje osebne podatke
-- [Gospodinjstvo](./household) -- Ogled in upravljanje članov vaše družine
+- [Urejanje profila](./editing-profile.md) -- Posodobite svoje osebne podatke
+- [Gospodinjstvo](./household.md) -- Ogled in upravljanje članov vaše družine
 - [Imenik članov](../community/member-directory.md) -- Oglejte si, kako se vaš profil prikazuje drugim

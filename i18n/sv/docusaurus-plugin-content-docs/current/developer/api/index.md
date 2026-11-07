@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Förklarar ChurchApps API:ets modulära monolitdesign, dess sex datamoduler, teknikstack, portar och Lambda-funktioner, med länkar till installations-, databas-, autentiserings- och endpoint-dokumentation för utvecklare."
 ---
 
 # API
@@ -52,8 +53,8 @@ När API:et distribueras till AWS körs det som sex Lambda-funktioner:
 
 API:et är beroende av två delade ChurchApps-paket:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Grundläggande verktyg (DateHelper, ApiHelper m.fl.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Verktyg för Express-servern, inklusive autentisering, databashjälpare och AWS-integrationer
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Grundläggande verktyg (DateHelper, ApiHelper m.fl.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Verktyg för Express-servern, inklusive autentisering, databashjälpare och AWS-integrationer
 
 :::info
 API:et använder ES-moduler (`"type": "module"` i `package.json`). Se till att dina importer använder ES-modulsyntax.
@@ -61,11 +62,11 @@ API:et använder ES-moduler (`"type": "module"` i `package.json`). Se till att d
 
 ## I det här avsnittet
 
-- **[Lokal installation](./local-setup)** -- Klona, konfigurera och kör API:et lokalt
-- **[Databas](./database)** -- Arkitektur med en databas per modul, schemaskript och mönster för dataåtkomst
-- **[Modulstruktur](./module-structure)** -- Controllers, repositories, modeller och autentisering
-- **[API-nycklar](./api-keys)** -- Personliga åtkomsttokens för skript och kopplingar
-- **[Anslutna appar (OAuth)](./connected-apps)** -- Flöde för OAuth med flera klienter för appar från tredje part
-- **[Webhooks](./webhooks)** -- Skicka händelseaviseringar till externa system
-- **[MCP-server](./mcp)** -- Model Context Protocol-slutpunkt som exponerar API:et för AI-assistenter
-- **[Slutpunktsreferens](./endpoints/)** -- Fullständig REST API-dokumentation för alla moduler
+- **[Lokal installation](./local-setup.md)** -- Klona, konfigurera och kör API:et lokalt
+- **[Databas](./database.md)** -- Arkitektur med en databas per modul, schemaskript och mönster för dataåtkomst
+- **[Modulstruktur](./module-structure.md)** -- Controllers, repositories, modeller och autentisering
+- **[API-nycklar](./api-keys.md)** -- Personliga åtkomsttokens för skript och kopplingar
+- **[Anslutna appar (OAuth)](./connected-apps.md)** -- Flöde för OAuth med flera klienter för appar från tredje part
+- **[Webhooks](./webhooks.md)** -- Skicka händelseaviseringar till externa system
+- **[MCP-server](./mcp.md)** -- Model Context Protocol-slutpunkt som exponerar API:et för AI-assistenter
+- **[Slutpunktsreferens](./endpoints/index.md)** -- Fullständig REST API-dokumentation för alla moduler

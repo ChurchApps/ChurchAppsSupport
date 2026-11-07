@@ -1,5 +1,6 @@
 ---
 title: "Správa obrazoviek a skupín"
+description: "Kontrola online TV FreePlay pripravených na nedeľu, úprava nastavení obrazoviek a skupiny zdieľajúce jeden kalendár vo FreePlay Admin."
 ---
 
 # Správa obrazoviek a skupín
@@ -14,7 +15,7 @@ Na stránke **Obrazovky** v FreePlay Admin nájdete všetky televízory spárova
 <h4>Pred začatím</h4>
 
 - Prihláste sa do FreePlay Admin na adrese [admin.freeplay.church](https://admin.freeplay.church)
-- [Spárujte aspoň jednu obrazovku](./pairing-a-screen)
+- [Spárujte aspoň jednu obrazovku](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Použite **Prezentovať** na prehratie kalendára obrazovky vo vašom prehliada�
 
 Kliknutím na názov obrazovky otvoríte jej stránku. Na ľavej strane:
 
-- **Prezentovať v prehliadači** - Prehrá kalendár tejto obrazovky na celú obrazovku vo vašom prehliadači tak, ako by vyzeral na televízore. Pozri [Prezentovanie z prehliadača](./scheduled-playback#presenting-from-a-browser)
+- **Prezentovať v prehliadači** - Prehrá kalendár tejto obrazovky na celú obrazovku vo vašom prehliadači tak, ako by vyzeral na televízore. Pozri [Prezentovanie z prehliadača](./scheduled-playback.md#presenting-from-a-browser)
 - **Upraviť** - Zmení názov, skupinu alebo režim
 - **Viac** > **Zrušiť spárovanie** - Odpojí televízor. Ten sa vráti k zobrazovaniu párovacieho kódu
 
@@ -93,6 +94,6 @@ Odstránením skupiny odstránite aj jej plán. Obrazovky v tejto skupine sa vyp
 
 ## Súvisiace články
 
-- **[Párovanie obrazovky](./pairing-a-screen)** - Pridanie nového televízora
-- **[Plánovanie kalendára](./scheduling-the-calendar)** - Nastavenie, čo každá skupina prehráva, a jej predvolenej slučky
-- **[Naplánované prehrávanie na televízore](./scheduled-playback)** - Čo znamená dátum „Pripravená do“ priamo na televízore
+- **[Párovanie obrazovky](./pairing-a-screen.md)** - Pridanie nového televízora
+- **[Plánovanie kalendára](./scheduling-the-calendar.md)** - Nastavenie, čo každá skupina prehráva, a jej predvolenej slučky
+- **[Naplánované prehrávanie na televízore](./scheduled-playback.md)** - Čo znamená dátum „Pripravená do“ priamo na televízore

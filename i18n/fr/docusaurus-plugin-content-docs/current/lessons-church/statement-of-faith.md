@@ -1,5 +1,6 @@
 ---
 title: Déclaration de foi
+description: "Ce que ChurchApps croit de Dieu, Jésus, du Saint-Esprit, des Écritures, du salut et de l'Église, norme de relecture des leçons Lessons.church."
 ---
 
 # Déclaration de foi

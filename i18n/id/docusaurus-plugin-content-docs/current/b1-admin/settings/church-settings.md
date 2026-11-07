@@ -1,5 +1,6 @@
 ---
 title: "Pengaturan Gereja"
+description: "Atur nama, alamat, subdomain, zona waktu, format wilayah, penyedia SMS, dan penyimpanan file gereja Anda di halaman Pengaturan Gereja di B1 Admin."
 ---
 
 # Pengaturan Gereja

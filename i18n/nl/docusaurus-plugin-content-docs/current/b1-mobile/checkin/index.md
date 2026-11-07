@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Inchecken bij de kerk via de B1 Mobile-app"
+sidebar_label: "Check-In"
+description: "Meld jezelf en je gezin via je telefoon aan bij kerkdiensten in B1 Mobile en kies diensten en groepen voordat je aankomt."
 ---
 
 # Check-In
@@ -16,7 +18,7 @@ Het check-in proces is een snelle multistap stroom die je door het selecteren va
 
 ## Aan de Slag
 
-Voeg het gedeelte **Check-In** in B1 Mobile toe. Je moet zijn ingelogd om deze functie te gebruiken. Als je niet bent aangemeld, word je gevraagd [in te loggen](../getting-started/logging-in).
+Voeg het gedeelte **Check-In** in B1 Mobile toe. Je moet zijn ingelogd om deze functie te gebruiken. Als je niet bent aangemeld, word je gevraagd [in te loggen](../getting-started/logging-in.md).
 
 :::info
 De check-in functie vereist dat je kerk diensten en aanwezigheidsgroepen in hun beheersettings heeft ingesteld. Als geen diensten verschijnen wanneer je het check-in scherm opent, heeft je kerk deze functie mogelijk nog niet geconfigureerd. Neem contact op met je kerkbeheerder voor hulp.
@@ -30,4 +32,4 @@ De check-in functie vereist dat je kerk diensten en aanwezigheidsgroepen in hun 
 
 ## Volgende Stappen
 
-- [Zelf Check-In](./self-checkin) -- Stap-voor-stap gids voor check-in vanuit je telefoon
+- [Zelf Check-In](./self-checkin.md) -- Stap-voor-stap gids voor check-in vanuit je telefoon

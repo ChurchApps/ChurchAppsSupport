@@ -1,5 +1,6 @@
 ---
 title: "Solicitarea evenimentelor și a sălilor"
+description: "Cere o rezervare de sală sau echipament pentru un eveniment din portalul B1.church, urmărește starea în My Requests și anulează-o cât e în așteptare."
 ---
 
 # Solicitarea evenimentelor și a sălilor
@@ -42,11 +43,11 @@ Deschideți **Cererile mele** din pagina Eu. Fiecare solicitare afișează eveni
 Cât timp o solicitare este încă în așteptare, o puteți retrage cu **Anulează solicitarea** (vi se va cere confirmarea — anularea nu poate fi anulată).
 
 :::info
-Solicitările sunt analizate de personalul bisericii în pagina [Aprobări](../../b1-admin/calendars/approvals) din B1 Admin. Ce săli și resurse necesită aprobare depinde de biserica dumneavoastră — consultați [Săli și resurse](../../b1-admin/calendars/rooms-resources).
+Solicitările sunt analizate de personalul bisericii în pagina [Aprobări](../../b1-admin/calendars/approvals.md) din B1 Admin. Ce săli și resurse necesită aprobare depinde de biserica dumneavoastră — consultați [Săli și resurse](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Articole conexe
 
-- [Pagina Eu](../getting-started/me-page) -- Unde se află linkurile către solicitări
-- [Aprobările calendarului (B1 Admin)](../../b1-admin/calendars/approvals) -- Cum analizează personalul solicitările
-- [Săli și resurse (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Cum configurează bisericile spațiile care pot fi rezervate
+- [Pagina Eu](../getting-started/me-page.md) -- Unde se află linkurile către solicitări
+- [Aprobările calendarului (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Cum analizează personalul solicitările
+- [Săli și resurse (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Cum configurează bisericile spațiile care pot fi rezervate

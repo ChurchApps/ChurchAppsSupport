@@ -1,5 +1,6 @@
 ---
 title: "Tạo tài khoản"
+description: "Registruokite ChurchApps paskyrą Lessons.church, tada susiekite ją su nauju ar esamu bažnyčios profiliu, kad galėtumėte valdyti klases ir tvarkaraščius."
 ---
 
 Hmm, wait — I need to correct that. The target language is Lithuanian, not Vietnamese. Here is the correct translation:

@@ -1,5 +1,7 @@
 ---
-title: "Inchecking"
+title: "Zelfcheck-in instellen met B1 Checkin en B1 Admin"
+sidebar_label: "Inchecking"
+description: "Stel zelfcheck-in voor diensten in met de B1 Checkin-app in B1 Admin: apparaten, kioskaccounts, planning, huisstijl en QR-aanmelding voor gasten."
 ---
 
 # Inchecking
@@ -99,7 +101,7 @@ Gebruik het inactieve scherm voor het weergeven van mededelingen, komende ereign
 
 De incheckingskiosk kan een QR-code weergeven die bezoekers scannen om zichzelf en hun familie op hun eigen telefoon te registreren. Dit versnelt het incheckingsproces voor eerstmaals gasten.
 
-Wanneer een gast de QR-code scant, worden zij naar een [gastregistratiepagina](../../b1-church/checkin/guest-registration) gebracht, waar zij hun naam, e-mail en familieleden invoeren. Een vrijwilliger kan hen vervolgens op de kiosk opzoeken en ze inchecken.
+Wanneer een gast de QR-code scant, worden zij naar een [gastregistratiepagina](../../b1-church/checkin/guest-registration.md) gebracht, waar zij hun naam, e-mail en familieleden invoeren. Een vrijwilliger kan hen vervolgens op de kiosk opzoeken en ze inchecken.
 
 ### Gastregistratie via QR inschakelen
 

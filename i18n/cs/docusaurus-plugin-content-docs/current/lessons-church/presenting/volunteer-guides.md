@@ -1,5 +1,6 @@
 ---
 title: "Průvodci pro dobrovolníky"
+description: "Nastavte průvodce pro konkrétní role v Lessons.church, aby každý dobrovolník viděl jen své kroky, a před hodinou je vytiskněte nebo sdílejte."
 ---
 
 # Průvodci pro dobrovolníky

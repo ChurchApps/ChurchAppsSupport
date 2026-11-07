@@ -1,5 +1,6 @@
 ---
 title: "Overenie plánu a upozornenia"
+description: "Kontrolujte plány služieb v B1 Admin na neobsadené miesta, konflikty v rozvrhu a nedostupných dobrovoľníkov. Jedným kliknutím upozornite celý tím push správou."
 ---
 
 # Overenie plánu a upozornenia pre dobrovoľníkov

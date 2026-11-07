@@ -1,5 +1,6 @@
 ---
 title: "Umumo We-Module"
+description: "Chaza kutsi timodyuli te-API tihlelwe kanjani, netilawuli, emarepository, ematheway, tihlolo temvume, nemisebenti lesitfupha ye-Lambda."
 ---
 
 # Umumo We-Module
@@ -13,8 +14,8 @@ I-module ngayinye ye-API ilandzela umumo longekhatsi lohlala njalo ofaka ema-con
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- Hlela i-API endzaweni yakho -- buka [Local API Setup](./local-setup)
-- Buyeketa umumo we-[Database](./database) kuze ucondzisise umcabango wekufinyelela idatha
+- Hlela i-API endzaweni yakho -- buka [Local API Setup](./local-setup.md)
+- Buyeketa umumo we-[Database](./database.md) kuze ucondzisise umcabango wekufinyelela idatha
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Kukhulumisana Emkhatsini Wema-Module
 
-I-module ngayinye inayo i-database yayo (buka [Database](./database)), futsi i-module ayikaze ibute emathebula eminye i-module ngco. Nangabe module linye lidzinga idatha lenikatiwe leminye -- sibonelo, i-module ye-doing isombulula bantfu kusuka ku-membership -- iyachubeka nge-**gateway** ye-module lenikatiwe ku-`src/shared/modules/`:
+I-module ngayinye inayo i-database yayo (buka [Database](./database.md)), futsi i-module ayikaze ibute emathebula eminye i-module ngco. Nangabe module linye lidzinga idatha lenikatiwe leminye -- sibonelo, i-module ye-doing isombulula bantfu kusuka ku-membership -- iyachubeka nge-**gateway** ye-module lenikatiwe ku-`src/shared/modules/`:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Endzaweni yakho, function ye-`web` isebenta ku-port 8084 kanti function ye-`sock
 
 ## Emahlandla Lahlobene
 
-- **[Database](./database)** -- Emastringi ekuxhumana, ema-script e-schema, kanye netindlela tekufinyelela idatha
-- **[Local API Setup](./local-setup)** -- Umhlahlandlela logcwele wesinyatselo ngesinyatselo
-- **[ApiHelper](../shared-libraries/api-helper)** -- Liphakheji lelihlanganyelwako leliniketa i-`CustomBaseController` kanye ne-auth middleware
+- **[Database](./database.md)** -- Emastringi ekuxhumana, ema-script e-schema, kanye netindlela tekufinyelela idatha
+- **[Local API Setup](./local-setup.md)** -- Umhlahlandlela logcwele wesinyatselo ngesinyatselo
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- Liphakheji lelihlanganyelwako leliniketa i-`CustomBaseController` kanye ne-auth middleware

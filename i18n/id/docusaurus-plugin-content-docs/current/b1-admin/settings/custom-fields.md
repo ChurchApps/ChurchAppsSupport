@@ -1,5 +1,6 @@
 ---
 title: "Bidang Kustom"
+description: "Buat bidang kustom di B1 Admin untuk mencatat detail tambahan orang, seperti masa berlaku pemeriksaan latar belakang atau ukuran kaus, lalu cari dan saring."
 ---
 
 # Bidang Kustom

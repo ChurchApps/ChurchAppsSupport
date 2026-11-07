@@ -1,5 +1,6 @@
 ---
 title: "配对您的设备"
+description: "在 B1 Admin 中使用屏幕上显示的四位代码，将 FreePlay TV 与某种计划类型配对，然后下载该计划的媒体，以便在计划模式下播放。"
 ---
 
 # 配对您的设备
@@ -13,7 +14,7 @@ title: "配对您的设备"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 安装并启动 FreePlay。参见[入门指南](../getting-started/)
+- 安装并启动 FreePlay。参见[入门指南](../getting-started/index.md)
 - 需要使用电脑或手机访问 **B1 Admin** 以完成配对
 
 </div>
@@ -25,7 +26,7 @@ title: "配对您的设备"
 3. FreePlay 会以大字显示一个四个字母的配对码，旁边是一个二维码。
 4. 在配对码下方，一个闪烁的 **等待确认** 指示器表示 FreePlay 正在等待您完成配对。
 
-同一配对码既可用于 FreePlay Admin 中的[定时模式](../scheduled-mode/)，也可用于 B1 Admin 中的礼拜计划模式。屏幕上的二维码和 **freeplay.church/pair** 地址会打开 FreePlay Admin。若使用礼拜计划模式，请忽略它们，并按下文所述在 B1 Admin 中输入配对码。
+同一配对码既可用于 FreePlay Admin 中的[定时模式](../scheduled-mode/index.md)，也可用于 B1 Admin 中的礼拜计划模式。屏幕上的二维码和 **freeplay.church/pair** 地址会打开 FreePlay Admin。若使用礼拜计划模式，请忽略它们，并按下文所述在 B1 Admin 中输入配对码。
 
 ## 在 B1 Admin 中输入配对码
 
@@ -61,5 +62,5 @@ FreePlay 每隔几秒钟检查一次配对是否完成。B1 Admin 确认配对�
 ## 相关文章
 
 - **[礼拜计划模式概览](./index.md)** - 礼拜计划模式与定时模式的区别
-- **[配对屏幕](../scheduled-mode/pairing-a-screen)** - 改为在 FreePlay Admin 中将同一台电视配对到日历
-- **[播放内容](../content-providers/playing-content)** - 礼拜计划播放的播放器控制
+- **[配对屏幕](../scheduled-mode/pairing-a-screen.md)** - 改为在 FreePlay Admin 中将同一台电视配对到日历
+- **[播放内容](../content-providers/playing-content.md)** - 礼拜计划播放的播放器控制

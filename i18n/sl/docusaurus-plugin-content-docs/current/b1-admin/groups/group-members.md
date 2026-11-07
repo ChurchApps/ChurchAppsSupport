@@ -1,5 +1,6 @@
 ---
 title: "Člani skupine"
+description: "Dodajajte, odstranjujte in določajte vodje članov skupine v B1 Admin, nato pošljite e-pošto, SMS, natisnite ali izvozite seznam članov s strani skupine."
 ---
 
 # Člani skupine

@@ -1,5 +1,7 @@
 ---
-title: "Consultare i piani"
+title: "I tuoi piani di culto nel portale membri di B1.church"
+sidebar_label: "Consultare i piani"
+description: "Controlla i tuoi incarichi nei piani di culto su B1.church, accetta o rifiuta le richieste, imposta le date di indisponibilità e rivedi lo storico dei servizi."
 ---
 
 # Consultare i piani

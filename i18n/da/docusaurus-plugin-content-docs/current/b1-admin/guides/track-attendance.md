@@ -1,5 +1,6 @@
 ---
 title: "Guide: Spor kirkemøde"
+description: "Registrér kirkens fremmøde i B1 Admin ved at opsætte campusser og gudstjenestetider, indtaste det manuelt eller via selvbetjent check-in og læse rapporterne."
 ---
 
 # Spor kirkemøde

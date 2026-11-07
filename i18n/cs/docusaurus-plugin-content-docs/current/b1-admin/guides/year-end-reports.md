@@ -1,5 +1,6 @@
 ---
 title: "Průvodce: Vygenerování výročních přehledů darů"
+description: "V B1 Admin dokončete roční záznamy darů, zkontrolujte daňová nastavení fondů a vygenerujte daňově odpočitatelná potvrzení o darech pro každého dárce."
 ---
 
 # Vygenerování výročních přehledů darů

@@ -1,5 +1,6 @@
 ---
 title: "Flujo de Registro"
+description: "Recorre paso a paso el flujo del quiosco de B1 Church Checkin, desde elegir un servicio hasta registrar la salida, y configura primero los servicios, grupos y personas en B1 Admin."
 ---
 
 # Flujo de Registro
@@ -12,13 +13,13 @@ El proceso de registro en B1 Church Checkin sigue un flujo simple, paso a paso. 
 
 ## El Flujo de Registro de un Vistazo
 
-1. **[Seleccionar un servicio](./selecting-service)** -- Elige a qué servicio estás asistiendo (por ejemplo, domingo AM, domingo PM, entre semana).
-2. **[Buscar a tu familia](./looking-up-members)** -- Busca por número de teléfono o apellido para encontrarte en el sistema.
-3. **[Revisar tu hogar](./household-review)** -- Ve a todos los miembros de la familia y sus asignaciones de grupo actuales.
-4. **[Asignar grupos](./group-assignment)** -- Elige qué clase o grupo debe asistir cada miembro de la familia para cada horario de servicio.
-5. **[Agregar invitados](./adding-guests)** (opcional) -- Agrega a un visitante a tu hogar si te está acompañando.
-6. **[Completar el registro](./completing-checkin)** -- Toca el botón de registro para enviar la asistencia e imprimir etiquetas.
-7. **[Registrar salida](./checking-out)** (estaciones atendidas) -- Al momento de la recogida, verifica el código de seguridad y la persona que recoge, con listas de recogida de confianza, aviso a los padres y reimpresión de etiquetas.
+1. **[Seleccionar un servicio](./selecting-service.md)** -- Elige a qué servicio estás asistiendo (por ejemplo, domingo AM, domingo PM, entre semana).
+2. **[Buscar a tu familia](./looking-up-members.md)** -- Busca por número de teléfono o apellido para encontrarte en el sistema.
+3. **[Revisar tu hogar](./household-review.md)** -- Ve a todos los miembros de la familia y sus asignaciones de grupo actuales.
+4. **[Asignar grupos](./group-assignment.md)** -- Elige qué clase o grupo debe asistir cada miembro de la familia para cada horario de servicio.
+5. **[Agregar invitados](./adding-guests.md)** (opcional) -- Agrega a un visitante a tu hogar si te está acompañando.
+6. **[Completar el registro](./completing-checkin.md)** -- Toca el botón de registro para enviar la asistencia e imprimir etiquetas.
+7. **[Registrar salida](./checking-out.md)** (estaciones atendidas) -- Al momento de la recogida, verifica el código de seguridad y la persona que recoge, con listas de recogida de confianza, aviso a los padres y reimpresión de etiquetas.
 
 Una vez completado el registro, la aplicación muestra una pantalla de éxito y regresa automáticamente a la pantalla de búsqueda, lista para la siguiente familia.
 
@@ -36,5 +37,5 @@ Asegúrate de que lo siguiente esté configurado en B1 Admin antes de usar el ki
 - Las **personas** están agregadas al sistema con asociaciones de hogar. Consulta [agregar personas](../../b1-admin/people/adding-people.md).
 
 :::info
-Si aún no has configurado el kiosco en sí, consulta [Primeros Pasos](../getting-started/) para obtener instrucciones de instalación, inicio de sesión y configuración de impresora.
+Si aún no has configurado el kiosco en sí, consulta [Primeros Pasos](../getting-started/index.md) para obtener instrucciones de instalación, inicio de sesión y configuración de impresora.
 :::

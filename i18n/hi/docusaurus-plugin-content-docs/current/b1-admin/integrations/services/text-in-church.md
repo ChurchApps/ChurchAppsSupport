@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "Zapier के साथ B1 Admin और Text In Church को जोड़ें: API कुंजी बनाएँ, कनेक्ट-कार्ड-से-B1 Zap बनाएँ, और समूह सदस्यता को मिरर करें।"
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Zap चालू करें। TIC के माध्यम से जमा 
 
 ## इसे भी देखें
 
-- [Clearstream](./clearstream): मिलते-जुलते Zapier ढाँचे वाला वैकल्पिक SMS प्लेटफ़ॉर्म
-- [Zapier (सामान्य जानकारी)](../zapier): हर Zapier रेसिपी का B1 पक्ष
+- [Clearstream](./clearstream.md): मिलते-जुलते Zapier ढाँचे वाला वैकल्पिक SMS प्लेटफ़ॉर्म
+- [Zapier (सामान्य जानकारी)](../zapier.md): हर Zapier रेसिपी का B1 पक्ष
 - [Text In Church Zapier गाइड](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (TIC के दस्तावेज़)

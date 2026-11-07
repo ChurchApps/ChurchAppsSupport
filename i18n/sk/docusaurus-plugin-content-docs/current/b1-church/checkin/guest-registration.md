@@ -1,5 +1,6 @@
 ---
 title: "Registrácia hostí"
+description: "Zaregistrujte seba a svoju rodinu ako prvých hostí cez QR formulár v B1 Checkin, aby vás dobrovoľníci mohli prihlásiť pri príchode."
 ---
 
 # Registrácia hostí
@@ -22,7 +23,7 @@ Ak navštevujete cirkev prvýkrát, môžete sa sami a svoju rodinu zaregistrova
 
 Registrácia hostí je určená pre návštevníkov, ktorí ešte nemajú účet. Na odbavovacom termináli cirkvi klepnite na **Registrovať sa ako hosť**, čím sa zobrazí QR kód odkazujúci na registračnú stránku. Odkaz môžete dostať aj od dobrovoľníka alebo uvádzača, prípadne ho nájdete na letáku alebo na webovej stránke cirkvi.
 
-Nemáte po ruke telefón? V tom istom okne s QR kódom na termináli klepnite na **Registrovať tu** a vyplňte formulár priamo na termináli. Ako to funguje na termináli, si pozrite v časti [Registrácia ako hosť](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest).
+Nemáte po ruke telefón? V tom istom okne s QR kódom na termináli klepnite na **Registrovať tu** a vyplňte formulár priamo na termináli. Ako to funguje na termináli, si pozrite v časti [Registrácia ako hosť](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest).
 
 Stránka sa otvorí s nadpisom **Registrácia hostí**. Ak cirkev pridala hlavičkový obrázok, zobrazí sa v hornej časti stránky; inak uvidíte malú ikonu.
 
@@ -51,7 +52,7 @@ Vaša registrácia vytvorí záznamy v databáze cirkvi:
 - Pre každého člena rodiny sa vytvoria **záznamy osôb** so stavom členstva „Návštevník“.
 - Všetky komentáre, ktoré ste zadali, sa uložia ako poznámka k záznamu hlavného kontaktu, aby ju mohol prečítať personál cirkvi.
 - Ak cirkev vybrala skupinu pre nových hostí, vaša rodina sa do nej pridá. Cirkev môže tiež automaticky zaznamenať vašu účasť, ak sa zaregistrujete počas jedného z plánovaných časov bohoslužieb tejto skupiny.
-- Dobrovoľník alebo správca cirkvi potom môže vašu rodinu odbaviť na termináli [B1 Checkin](../../b1-checkin/check-in/looking-up-members).
+- Dobrovoľník alebo správca cirkvi potom môže vašu rodinu odbaviť na termináli [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md).
 
 :::info
 Ak sa znova zaregistrujete s rovnakým menom a rovnakým e-mailom alebo telefónnym číslom, záznamy cirkvi vás rozpoznajú a použijú váš existujúci profil namiesto vytvorenia duplicitného. Každá iná osoba sa pridá ako nová. Ak ste sa už zaregistrovali, na termináli môžete jednoducho vyhľadať svoje meno alebo telefónne číslo.
@@ -63,6 +64,6 @@ Ak formulár žiada vašu e-mailovú adresu, jej uvedenie pomôže cirkvi kontak
 
 ## Súvisiace články
 
-- [Samoodbavenie](./self-checkin) -- Odbavte sa sami po registrácii
-- [Pridávanie hostí (terminál)](../../b1-checkin/check-in/adding-guests) -- Ako dobrovoľníci pridávajú hostí na termináli
-- [Odbavenie](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- Ako správcovia cirkvi nastavujú registráciu hostí cez QR kód
+- [Samoodbavenie](./self-checkin.md) -- Odbavte sa sami po registrácii
+- [Pridávanie hostí (terminál)](../../b1-checkin/check-in/adding-guests.md) -- Ako dobrovoľníci pridávajú hostí na termináli
+- [Odbavenie](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Ako správcovia cirkvi nastavujú registráciu hostí cez QR kód

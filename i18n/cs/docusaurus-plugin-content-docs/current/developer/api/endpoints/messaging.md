@@ -1,5 +1,6 @@
 ---
 title: "Koncové body zpráv"
+description: "Referenční přehled endpointů messaging API ChurchApps: konverzace, pravidla přístupu k poznámkám, SMS, šablony e-mailů, oznámení a zařízení."
 ---
 
 # Koncové body zpráv
@@ -190,7 +191,7 @@ Základní cesta: `/messaging/notificationpreferences`
 
 Základní cesta: `/messaging/connections`
 
-Spravuje připojení WebSocket/v reálném čase pro chat, skupinové konverzace, soukromé zprávy a živé přenosy. Celý průběh protokolu je popsán v [Architektuře v reálném čase](../../realtime).
+Spravuje připojení WebSocket/v reálném čase pro chat, skupinové konverzace, soukromé zprávy a živé přenosy. Celý průběh protokolu je popsán v [Architektuře v reálném čase](../../realtime.md).
 
 | Metoda | Cesta | Autentizace | Oprávnění | Popis |
 |--------|-------|-------------|-----------|-------|
@@ -367,9 +368,9 @@ Sleduje stav doručení odeslaných zpráv (SMS, push oznámení, e-mail).
 
 ## Související stránky
 
-- [Architektura v reálném čase](../../realtime) -- protokol WebSocket, odběr místností a jednotný rámec doručování
-- [Webová push oznámení](../../web-push) -- registrace a doručování push oznámení v prohlížeči
-- [Koncové body členství](./membership) -- osoby, skupiny, role a základní identita
-- [Koncové body docházky](./attendance) -- sledování bohoslužeb a návštěv
-- [Ověřování a oprávnění](./authentication) -- přihlašovací tok, JWT, OAuth, model oprávnění
-- [Struktura modulu](../module-structure) -- vzory organizace kódu
+- [Architektura v reálném čase](../../realtime.md) -- protokol WebSocket, odběr místností a jednotný rámec doručování
+- [Webová push oznámení](../../web-push.md) -- registrace a doručování push oznámení v prohlížeči
+- [Koncové body členství](./membership.md) -- osoby, skupiny, role a základní identita
+- [Koncové body docházky](./attendance.md) -- sledování bohoslužeb a návštěv
+- [Ověřování a oprávnění](./authentication.md) -- přihlašovací tok, JWT, OAuth, model oprávnění
+- [Struktura modulu](../module-structure.md) -- vzory organizace kódu

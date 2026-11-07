@@ -1,5 +1,6 @@
 ---
 title: "Slack & Discord"
+description: "Send B1 Admin-hendelser som nye personer, gaver og skjemainnsendinger til en Slack- eller Discord-kanal med en innkommende webhook, uten Zapier."
 ---
 
 # Slack & Discord
@@ -114,7 +115,7 @@ Hvis noe mislyktes (rødt `mislyktes` eller `uttømt` badge), viser dialogen HTT
 
 - **Ingen melding vises + leveranses status `400`** — vanligvis koblertypen er satt til **standard** men URL-en er en Slack/Discord-en. Slack/Discord avviser rå konvolutten. Bytt dropdown til **Slack** eller **Discord** og generer testen på nytt.
 - **webhook auto-deaktivert** — etter 3 påfølgende mislykkede leveranser B1 slår webhoken av. Fikser URL-en (eller roter den på Slack/Discord) og veksle **aktiv** tilbake på.
-- **melding ankom men mangler detalj** — hver chat-plattform begrenser meldingsstørrelse. B1s meldinger er en-linjer ved design; for rikere meldinger bruk [Zapier](./zapier) eller [Make](./make) for å komponere en fullere Slack-melding via deres Slack-handlinger.
+- **melding ankom men mangler detalj** — hver chat-plattform begrenser meldingsstørrelse. B1s meldinger er en-linjer ved design; for rikere meldinger bruk [Zapier](./zapier.md) eller [Make](./make.md) for å komponere en fullere Slack-melding via deres Slack-handlinger.
 
 ## bytte koblertyper senere
 
@@ -122,6 +123,6 @@ Du kan endre koblertypen på en eksisterende webhook — den tar virkning ved ne
 
 ## Se også
 
-- [Zapier](./zapier) — for multi-trinns arbeidsflyter utløst av B1-hendelser
-- [Make](./make) — visuell scenario-bygger
+- [Zapier](./zapier.md) — for multi-trinns arbeidsflyter utløst av B1-hendelser
+- [Make](./make.md) — visuell scenario-bygger
 - [webhooks (utviklerreferanse)](/docs/developer/api/webhooks) — hele nyttelast + signaturformat hvis du noen gang peker en webhook på din egen server

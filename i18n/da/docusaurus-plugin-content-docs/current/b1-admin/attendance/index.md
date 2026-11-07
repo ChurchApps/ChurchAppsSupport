@@ -1,5 +1,6 @@
 ---
 title: "Fremmøde"
+description: "Gennemgå ugentligt fremmøde, rum og gæster i B1 Admin, og opsæt campusser, gudstjenestetider, deltagertal og kioskcheck-in fra siden Attendance."
 ---
 
 # Fremmøde

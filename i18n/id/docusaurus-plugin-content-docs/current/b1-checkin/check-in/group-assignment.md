@@ -1,5 +1,6 @@
 ---
 title: "Menetapkan Kelompok"
+description: "Pilih grup atau kelas yang dihadiri anggota keluarga untuk tiap waktu ibadah di B1 Checkin, dengan kategori, panduan usia dan kelas, serta opsi None."
 ---
 
 # Menetapkan Kelompok
@@ -13,7 +14,7 @@ Saat Anda mengetuk tombol waktu ibadah pada layar tinjauan rumah tangga, aplikas
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- [Tinjau rumah tangga Anda](./household-review) di layar tinjauan rumah tangga
+- [Tinjau rumah tangga Anda](./household-review.md) di layar tinjauan rumah tangga
 - Perluas anggota yang ingin Anda tetapkan, lalu ketuk tombol waktu ibadah
 - Pastikan administrator gereja Anda telah [membuat kelompok](../../b1-admin/groups/creating-groups.md) dan menautkannya ke waktu ibadah di B1 Admin
 
@@ -34,7 +35,7 @@ Ketuk kartu kategori untuk memperluasnya dan melihat kelompok-kelompok di dalamn
 2. Tinjau daftar kelompok dalam kategori tersebut. Setiap kelompok menampilkan namanya dengan ikon pilihan di sebelah kanan.
 3. Ketuk **nama kelompok** yang ingin Anda tetapkan.
 
-Aplikasi menyimpan pilihan Anda dan mengembalikan Anda ke [layar tinjauan rumah tangga](./household-review). Tombol waktu ibadah untuk anggota tersebut kini akan menampilkan nama kelompok yang Anda pilih.
+Aplikasi menyimpan pilihan Anda dan mengembalikan Anda ke [layar tinjauan rumah tangga](./household-review.md). Tombol waktu ibadah untuk anggota tersebut kini akan menampilkan nama kelompok yang Anda pilih.
 
 ## Panduan Usia dan Kelas
 
@@ -52,7 +53,7 @@ Gunakan opsi **Tidak Ada** untuk orang dewasa yang menghadiri ibadah utama dan t
 
 Untuk mengubah penetapan kelompok yang sudah dibuat:
 
-1. Kembali ke [layar tinjauan rumah tangga](./household-review).
+1. Kembali ke [layar tinjauan rumah tangga](./household-review.md).
 2. Perluas anggota yang kelompoknya ingin Anda ubah.
 3. Ketuk tombol waktu ibadah (yang kini menampilkan nama kelompok yang ditetapkan saat ini).
 4. Pilih kelompok lain atau ketuk **Tidak Ada**.
@@ -63,8 +64,8 @@ Kelompok dan kategori dikonfigurasi oleh administrator gereja Anda di B1 Admin. 
 
 ## Langkah Selanjutnya
 
-Setelah menetapkan kelompok, kembali ke [layar tinjauan rumah tangga](./household-review) untuk:
+Setelah menetapkan kelompok, kembali ke [layar tinjauan rumah tangga](./household-review.md) untuk:
 
 - Menetapkan kelompok bagi anggota keluarga lainnya
-- [Menambahkan tamu](./adding-guests) jika ada yang berkunjung bersama keluarga Anda
-- [Menyelesaikan check-in](./completing-checkin) saat semua penetapan sudah siap
+- [Menambahkan tamu](./adding-guests.md) jika ada yang berkunjung bersama keluarga Anda
+- [Menyelesaikan check-in](./completing-checkin.md) saat semua penetapan sudah siap

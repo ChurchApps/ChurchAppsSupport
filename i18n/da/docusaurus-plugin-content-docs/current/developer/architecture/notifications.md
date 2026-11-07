@@ -1,5 +1,6 @@
 ---
 title: "Arkitektur for notifikationer og påmindelser"
+description: "Hvordan B1 Admin API'et router notifikationer, planlagte påmindelser, kirkens e-mailgrænser og sms-fravalg via én leveringskanal og præferencefilter."
 ---
 
 # Arkitektur for notifikationer og påmindelser
@@ -185,6 +186,6 @@ Lokalt kan den samme logik udløses efter behov med `npm run timer:30min` og `np
 
 ## Relaterede sider
 
-- [Realtidsarkitektur](../realtime) — WebSocket-protokollen og klientprimitiverne (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), som leveringsniveauet i appen bygger på
-- [Web Push-notifikationer](../web-push) — VAPID-opsætning og browserens Push API-sti, der bruges af push-eskaleringsniveauet
-- [Messaging-endpoints](../api/endpoints/messaging) — den fulde REST-overflade for beskeder, samtaler, forbindelser og notifikations- og påmindelsesruter
+- [Realtidsarkitektur](../realtime.md) — WebSocket-protokollen og klientprimitiverne (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), som leveringsniveauet i appen bygger på
+- [Web Push-notifikationer](../web-push.md) — VAPID-opsætning og browserens Push API-sti, der bruges af push-eskaleringsniveauet
+- [Messaging-endpoints](../api/endpoints/messaging.md) — den fulde REST-overflade for beskeder, samtaler, forbindelser og notifikations- og påmindelsesruter

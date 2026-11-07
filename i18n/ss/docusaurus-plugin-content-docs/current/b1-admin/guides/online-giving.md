@@ -1,5 +1,6 @@
 ---
 title: "Umhlahlandlela: Setinga Imnikelo Ye-Inthanethi"
+description: "Setfula kunikela ngaleyo ndlela ku-B1 Admin ngekudala tigaba temalunga, uxhume i-Stripe, bese wengeta likhasi lekunikela ku-B1.church lelitfunyelwa emalungwini."
 ---
 
 # Setinga Imnikelo Ye-Inthanethi
@@ -70,7 +71,7 @@ Sebentisa simo sekuhlola se-Stripe kucala nangabe ufuna kucinisekisa ngaphandle 
 Sakata indzaba kute emalunga atati kutsi angakwati kunikela nge-inthanethi.
 
 1. Yabelana nge-URL yemnikelo nge-website, ema-imeyili, ticwatibho, kanye ne-social media
-2. Emalunga angakwati futsi kunikela nge-[app ye-B1 Mobile](../../b1-mobile/giving/) — sici semnikelo sakhiwe ngekhatsi
+2. Emalunga angakwati futsi kunikela nge-[app ye-B1 Mobile](../../b1-mobile/giving/index.md) — sici semnikelo sakhiwe ngekhatsi
 
 :::info
 Emalunga langena angagcina tindlela tekukhokha, ahlele imnikelo lephindaphindakako, futsi abuke umlandvo wawo wemnikelo. Kunikela ngaphandle kwelibito nako kuyasebenta — akudzingeki kungena.

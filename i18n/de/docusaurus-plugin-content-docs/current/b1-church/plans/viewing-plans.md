@@ -1,5 +1,7 @@
 ---
-title: "Pläne anzeigen"
+title: "Ihre Dienstpläne im Mitgliederportal von B1.church"
+sidebar_label: "Pläne anzeigen"
+description: "Prüfen Sie Ihre Dienstzuteilungen in B1.church, nehmen Anfragen an oder lehnen sie ab, setzen Sperrtermine und sehen Ihre frühere Dienstübersicht."
 ---
 
 # Pläne anzeigen

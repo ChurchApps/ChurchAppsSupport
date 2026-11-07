@@ -1,5 +1,7 @@
 ---
-title: "Pamokslai"
+title: "Pamokslų žiūrėjimas B1 Mobile"
+sidebar_label: "Pamokslai"
+description: "Naršykite, ieškokite ir žiūrėkite įrašytus pamokslus bei serijas B1 Mobile programėlėje, įskaitant tiesioginės transliacijos atgalinę skaityklę."
 ---
 
 # Pamokslai
@@ -13,7 +15,7 @@ Pamokslų ekranas leidžia naršyti ir žiūrėti įrašytus jūsų bažnyčios 
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiekite B1 Mobile](../getting-started/installing) ir [prisijunkite](../getting-started/logging-in) prie savo paskyros
+- [Įdiekite B1 Mobile](../getting-started/installing.md) ir [prisijunkite](../getting-started/logging-in.md) prie savo paskyros
 - Jūsų bažnyčia turi būti sukonfigūravusi pamokslų turinį savo administravimo portale
 
 </div>
@@ -29,7 +31,7 @@ Ekrano viršuje naujausias pamokslas rodomas kaip išskirtinė kortelė, suteiki
 
 ## Tiesioginės transliacijos atgalinis skaičiavimas
 
-Kai [tiesioginė transliacija](./live-streaming) prasidės per artimiausias 24 valandas, pamokslų ekrane pasirodo atgalinio skaičiavimo laikmatis. Tai praneša, kada bus transliuojama kita pamaldų dalis, kad galėtumėte suplanuoti žiūrėjimą tiesiogiai.
+Kai [tiesioginė transliacija](./live-streaming.md) prasidės per artimiausias 24 valandas, pamokslų ekrane pasirodo atgalinio skaičiavimo laikmatis. Tai praneša, kada bus transliuojama kita pamaldų dalis, kad galėtumėte suplanuoti žiūrėjimą tiesiogiai.
 
 ## Pamokslo žiūrėjimas
 
@@ -51,7 +53,7 @@ Kiekvienas pamokslo įrašas gali rodyti:
 - **Miniatiūra** -- Pamokslo peržiūros paveikslėlis
 
 :::tip
-Jei matote atgalinį skaičiavimą pamokslų ekrane, palieskite jį, kad iš karto pereitumėte prie [tiesioginės transliacijos](./live-streaming), kai ji prasidės.
+Jei matote atgalinį skaičiavimą pamokslų ekrane, palieskite jį, kad iš karto pereitumėte prie [tiesioginės transliacijos](./live-streaming.md), kai ji prasidės.
 :::
 
 ## Prieinamumas

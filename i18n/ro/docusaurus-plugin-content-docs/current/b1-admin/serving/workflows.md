@@ -1,5 +1,6 @@
 ---
 title: "Fluxuri de lucru"
+description: "Construiește table tip Kanban în B1 Admin pentru pași de urmărire, cu emailuri, SMS-uri automate și declanșatori care adaugă persoane automat."
 ---
 
 # Fluxuri de lucru

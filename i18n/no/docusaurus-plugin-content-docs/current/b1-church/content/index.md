@@ -1,5 +1,7 @@
 ---
-title: "Innhold"
+title: "Innholdsfunksjoner i B1.church-medlemsportalen"
+sidebar_label: "Innhold"
+description: "Se hvilket innhold menigheten din aktiverer i B1.church-medlemsportalen, og bla deretter i preken, direktesendinger, bibellesing og leksjoner."
 ---
 
 # Innhold

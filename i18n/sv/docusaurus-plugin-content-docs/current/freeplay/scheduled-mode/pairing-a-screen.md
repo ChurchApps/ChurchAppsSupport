@@ -1,5 +1,6 @@
 ---
 title: "Att koppla en skärm"
+description: "Koppla en FreePlay-TV till en skärmgrupps kalender i FreePlay Admin med fyrabokstavskoden på TV:n så att den spelar schemalagt innehåll av sig själv."
 ---
 
 # Att koppla en skärm
@@ -13,9 +14,9 @@ För att lägga en TV på en kalender kopplar du den till **FreePlay Admin**. TV
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Installera och starta FreePlay på TV:n. Se [Komma igång](../getting-started/)
+- Installera och starta FreePlay på TV:n. Se [Komma igång](../getting-started/index.md)
 - Ha ett ChurchApps-konto för din församling så att du kan logga in i FreePlay Admin
-- Valfritt: [skapa en spellista](./building-playlists) och [schemalägg den](./scheduling-the-calendar) först, så att TV:n har något att spela direkt
+- Valfritt: [skapa en spellista](./building-playlists.md) och [schemalägg den](./scheduling-the-calendar.md) först, så att TV:n har något att spela direkt
 
 </div>
 
@@ -38,7 +39,7 @@ Koden gäller i 15 minuter, och en nedräkning under den visar hur mycket tid so
 5. Under **Läge** lämnar du **Schemalagt** valt. TV:n spelar då upp enligt gruppens kalender av sig själv.
 6. Klicka på **Koppla**.
 
-TV:n visar **Ansluten!** och därefter **Läser in ditt schema...**. Den laddar ner det som är schemalagt och börjar spela upp. Se [Schemalagd uppspelning på TV:n](./scheduled-playback).
+TV:n visar **Ansluten!** och därefter **Läser in ditt schema...**. Den laddar ner det som är schemalagt och börjar spela upp. Se [Schemalagd uppspelning på TV:n](./scheduled-playback.md).
 
 :::info
 Om FreePlay Admin säger **Den koden matchade ingen TV**, kontrollera koden på skärmen. Om den har gått ut, använd den nya kod som TV:n visar just nu.
@@ -51,11 +52,11 @@ Inställningen **Läge** har två alternativ:
 - **Schemalagt** - Spelar upp enligt gruppens kalender av sig själv. Ingen behöver trycka på Start.
 - **Manuellt** - Någon väljer innehåll med fjärrkontrollen. En manuell skärm visas fortfarande i din lista över **Skärmar**, men den följer ingen kalender, så fältet **Grupp** är inaktiverat.
 
-Du kan ändra en skärms läge senare via **Redigera** på [sidan Skärmar](./managing-screens).
+Du kan ändra en skärms läge senare via **Redigera** på [sidan Skärmar](./managing-screens.md).
 
 ## Koppla till en tjänsteplan i stället
 
-Koden på skärmen **Koppla den här skärmen** fungerar även i B1 Admin. Om du anger den där och väljer en plantyp under **Visa planer för**, följer TV:n den plantypen i [Planläge](../plan-mode/) i stället för en kalender. Se [Koppla din enhet](../plan-mode/device-pairing).
+Koden på skärmen **Koppla den här skärmen** fungerar även i B1 Admin. Om du anger den där och väljer en plantyp under **Visa planer för**, följer TV:n den plantypen i [Planläge](../plan-mode/index.md) i stället för en kalender. Se [Koppla din enhet](../plan-mode/device-pairing.md).
 
 ## Ändra eller koppla bort från TV:n
 
@@ -79,6 +80,6 @@ TV:n går tillbaka till att visa en kopplingskod. Koppla den igen när du vill a
 
 ## Relaterade artiklar
 
-- **[Hantera skärmar och grupper](./managing-screens)** - Byt namn på en skärm, flytta den till en annan grupp eller kontrollera dess nedladdningar
-- **[Schemalägga kalendern](./scheduling-the-calendar)** - Bestäm vad gruppens skärmar spelar upp
-- **[Välja ett kopplingsläge](../getting-started/pairing-modes)** - Jämför schemalagt läge med planläge och bläddra i leverantörer själv
+- **[Hantera skärmar och grupper](./managing-screens.md)** - Byt namn på en skärm, flytta den till en annan grupp eller kontrollera dess nedladdningar
+- **[Schemalägga kalendern](./scheduling-the-calendar.md)** - Bestäm vad gruppens skärmar spelar upp
+- **[Välja ett kopplingsläge](../getting-started/pairing-modes.md)** - Jämför schemalagt läge med planläge och bläddra i leverantörer själv

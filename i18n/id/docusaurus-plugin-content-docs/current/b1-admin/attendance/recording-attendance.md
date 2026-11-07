@@ -1,5 +1,6 @@
 ---
 title: "Mencatat Kehadiran"
+description: "Catat kehadiran setiap pertemuan grup di B1 Admin: buat sesi, tandai yang hadir, simpan catatan, lalu cetak daftar hadir atau ekspor ke spreadsheet."
 ---
 
 # Mencatat Kehadiran

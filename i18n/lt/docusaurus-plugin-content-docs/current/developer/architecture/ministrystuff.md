@@ -29,7 +29,7 @@ Bažnyčios tiekėjo įrašas (`content.storageProviders`, valdomas B1Admin → 
 
 Taikymo apimtis: tiekėjo pasirinkimas apima tik turinio **failų ir išteklių** srautą, kuriame laikoma didelės apimties medija. Galerijos, logotipų ir nuotraukų įkėlimai lieka numatytajame tiekėjuje, nes jie išvardija raktus iš saugyklos ir URL sudaro kliento pusėje. Todėl bažnyčiai priskirta šaknis dar netaikoma.
 
-Ta pati sąsaja taip pat palaiko [Naudok savo saugyklą](./byos-storage) funkciją: bažnyčios gali susieti Google Drive, Dropbox, OneDrive arba savo S3 suderinamą saugyklą vietoj MinistryStuff plano.
+Ta pati sąsaja taip pat palaiko [Naudok savo saugyklą](./byos-storage.md) funkciją: bažnyčios gali susieti Google Drive, Dropbox, OneDrive arba savo S3 suderinamą saugyklą vietoj MinistryStuff plano.
 
 ## Atsiskaitymas
 

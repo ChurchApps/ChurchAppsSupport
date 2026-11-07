@@ -1,5 +1,6 @@
 ---
 title: "Kunikeza Tikhundla"
+description: "Nika tindzima ku-B1 Admin kuze tisebenti netisebenti letingenelela kuphela tindzawo tebantfu, timinikelo, kutfola nemaqembu letidzingekako."
 ---
 
 # Kunikeza Tikhundla

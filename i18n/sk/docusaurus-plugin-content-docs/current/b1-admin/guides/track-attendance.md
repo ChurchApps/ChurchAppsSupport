@@ -1,5 +1,6 @@
 ---
 title: "Vodítko: Sledovanie účasti v cirkvi"
+description: "Sledujte účasť v zbore v B1 Admin: nastavte kampusy a časy bohoslužieb, zaznamenávajte ju ručne alebo cez samoobslužný check-in a čítajte správy."
 ---
 
 # Sledovanie účasti v cirkvi

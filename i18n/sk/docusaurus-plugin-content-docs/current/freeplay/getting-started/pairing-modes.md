@@ -1,5 +1,6 @@
 ---
 title: "Výber režimu párovania"
+description: "Výber spôsobu párovania FreePlay TV: kalendár z FreePlay Admin, servisný plán z B1 Admin alebo žiadne párovanie."
 ---
 
 # Výber režimu párovania
@@ -32,7 +33,7 @@ Zadajte kód vo **FreePlay Admin** na adrese [admin.freeplay.church](https://adm
 
 **Najvhodnejšie pre:** Značenie v predsálí a na chodbách, slučky oznamov a triedy, kde má lekcia bežať ešte predtým, než ľudia vstúpia.
 
-Úplný návod nájdete v časti **[Režim podľa plánu](../scheduled-mode/)**.
+Úplný návod nájdete v časti **[Režim podľa plánu](../scheduled-mode/index.md)**.
 
 ## Režim plánu (B1 Admin)
 
@@ -42,7 +43,7 @@ Zadajte kód vo **B1 Admin**, keď chcete, aby TV sledovalo typ plánu bohosluž
 
 **Najvhodnejšie pre:** TV, ktoré zobrazujú obsah spätý s týždenným plánom bohoslužby, a kde niekto spustí prehrávanie vo chvíli, keď je na to čas.
 
-Úplný návod nájdete v časti **[Režim plánu](../plan-mode/)**.
+Úplný návod nájdete v časti **[Režim plánu](../plan-mode/index.md)**.
 
 :::tip
 Aktuálny plán bohoslužby môžete prehrávať aj podľa rozvrhu. Vo FreePlay Admin pridajte záznam do kalendára a v časti **Plány bohoslužieb** vyberte typ plánu.
@@ -50,7 +51,7 @@ Aktuálny plán bohoslužby môžete prehrávať aj podľa rozvrhu. Vo FreePlay 
 
 ## Poskytovatelia obsahu (bez párovania)
 
-Ak TV vôbec nepotrebujete párovať, môžete prechádzať poskytovateľov obsahu priamo. Poskytovatelia ako [Lessons.church](../../lessons-church/) a Bible Project majú obsah, ktorý si môžete stiahnuť a prehrať kedykoľvek.
+Ak TV vôbec nepotrebujete párovať, môžete prechádzať poskytovateľov obsahu priamo. Poskytovatelia ako [Lessons.church](../../lessons-church/index.md) a Bible Project majú obsah, ktorý si môžete stiahnuť a prehrať kedykoľvek.
 
 **Najvhodnejšie pre:** TV, na ktorých dobrovoľníci vyberajú, čo sa bude každý týždeň prehrávať, alebo keď chcete zistiť, čo je k dispozícii.
 
@@ -60,6 +61,6 @@ Obrazovku **Poskytovatelia** môžete kedykoľvek otvoriť cez **Nastavenia** v 
 
 ## Súvisiace články
 
-- **[Režim podľa plánu](../scheduled-mode/)** - Naplánujte TV do kalendára pomocou FreePlay Admin
-- **[Režim plánu](../plan-mode/)** - Úplný návod na párovanie s plánom bohoslužby
-- **[Poskytovatelia obsahu](../content-providers/)** - Prechádzanie a sťahovanie obsahu z externých zdrojov
+- **[Režim podľa plánu](../scheduled-mode/index.md)** - Naplánujte TV do kalendára pomocou FreePlay Admin
+- **[Režim plánu](../plan-mode/index.md)** - Úplný návod na párovanie s plánom bohoslužby
+- **[Poskytovatelia obsahu](../content-providers/index.md)** - Prechádzanie a sťahovanie obsahu z externých zdrojov

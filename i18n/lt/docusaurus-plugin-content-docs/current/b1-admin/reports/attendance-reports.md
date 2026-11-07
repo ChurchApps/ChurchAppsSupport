@@ -1,5 +1,6 @@
 ---
 title: "Attendance Reports"
+description: "Trys B1 Admin lankomumo ataskaitos: Lankomumo tendencija, Grupių lankomumas ir Kasdienis grupių lankomumas, su paleidimo ir eksporto žingsniais."
 ---
 
 # Attendance Reports

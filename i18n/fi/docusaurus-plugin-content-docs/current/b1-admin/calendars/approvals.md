@@ -1,5 +1,6 @@
 ---
 title: "Kalenterin hyväksynnät"
+description: "Käsittele B1 Adminissa odottavat huone- ja resurssivaraukset: tarkista päällekkäisyydet, hyväksy tai hylkää ja julkaise tapahtuma tarvittaessa."
 ---
 
 # Kalenterin hyväksynnät
@@ -13,7 +14,7 @@ Hyväksynnät-sivulla ylläpitäjät tarkastelevat ja käsittelevät odottavat h
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Määritä huoneille tai resursseille **Hyväksyntäryhmä** kohdassa [Huoneet ja resurssit](rooms-resources)
+- Määritä huoneille tai resursseille **Hyväksyntäryhmä** kohdassa [Huoneet ja resurssit](./rooms-resources.md)
 - Tarvitset **Calendars Admin** -oikeuden tai **content.edit**-oikeuden
 
 </div>
@@ -41,7 +42,7 @@ Napsauta minkä tahansa varauspyynnön kohdalla **Hyväksy** tai **Hylkää** (h
 Kun napsautat **Hyväksy**, avautuu **Hyväksy varaus** -ikkuna, jossa voit julkaista tapahtuman samalla kertaa:
 
 1. Valitse **Julkaise julkiselle kalenterille**, jos haluat tehdä tapahtumasta julkisen ryhmänsä kalenterissa. Jos jätät valinnan pois, varaus hyväksytään muuttamatta tapahtuman näkyvyyttä.
-2. Kun **Julkaise julkiselle kalenterille** on valittu, voit halutessasi valita **Lisää myös kalenteriin** -valikosta kuratoidun kalenterin ja lisätä tapahtuman myös [kuratoituun kalenteriin](curated-calendar). Jätä arvoksi **Ei mitään**, jos et halua lisätä. (Tämä vaihtoehto näkyy vain, jos sinulla on **content.edit**-oikeus.)
+2. Kun **Julkaise julkiselle kalenterille** on valittu, voit halutessasi valita **Lisää myös kalenteriin** -valikosta kuratoidun kalenterin ja lisätä tapahtuman myös [kuratoituun kalenteriin](./curated-calendar.md). Jätä arvoksi **Ei mitään**, jos et halua lisätä. (Tämä vaihtoehto näkyy vain, jos sinulla on **content.edit**-oikeus.)
 3. Napsauta **Hyväksy**.
 
 ## Odottavat tapahtumat
@@ -49,10 +50,10 @@ Kun napsautat **Hyväksy**, avautuu **Hyväksy varaus** -ikkuna, jossa voit julk
 Jos kalenterisi työnkulkuun kuuluu tapahtumien hyväksyminen ennen kuin ne näkyvät yleisölle, odottavat tapahtumat näkyvät osiossa **Tapahtumapyynnöt**. Napsauta **Hyväksy** julkaistaksesi tapahtuman kalenteriin tai **Hylkää** ilmoittaaksesi lähettäjälle, että muutoksia tarvitaan.
 
 :::tip
-Jos haluat vaatia hyväksynnän tietylle huoneelle, määritä sille hyväksyntäryhmä kohdassa [Huoneet ja resurssit](rooms-resources). Oikeudet omaavat ryhmät voivat sitten pyytää huonetta tapahtumia luodessaan, ja nämä pyynnöt siirtyvät tälle sivulle.
+Jos haluat vaatia hyväksynnän tietylle huoneelle, määritä sille hyväksyntäryhmä kohdassa [Huoneet ja resurssit](./rooms-resources.md). Oikeudet omaavat ryhmät voivat sitten pyytää huonetta tapahtumia luodessaan, ja nämä pyynnöt siirtyvät tälle sivulle.
 :::
 
 ## Liittyvät artikkelit
 
-- [Huoneet, resurssit ja ajoitus](rooms-resources) — määritä varattavat huoneet ja resurssit
-- [Kalenterien luominen](creating-calendars) — hallitse kalentereita ja tapahtumia
+- [Huoneet, resurssit ja ajoitus](./rooms-resources.md) — määritä varattavat huoneet ja resurssit
+- [Kalenterien luominen](./creating-calendars.md) — hallitse kalentereita ja tapahtumia

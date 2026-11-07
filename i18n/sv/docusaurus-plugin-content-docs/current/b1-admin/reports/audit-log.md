@@ -1,5 +1,6 @@
 ---
 title: "Granskningslogg"
+description: "Granska loggen i B1 Admin för att se vem som loggat in, redigerat personposter eller ändrat behörigheter, och exportera filtrerade poster till CSV."
 ---
 
 # Granskningslogg
@@ -78,6 +79,6 @@ Granska granskningsloggen regelbundet, särskilt efter att du har introducerat n
 
 ## Relaterade artiklar
 
-- [Roller och behörigheter](../settings/roles-permissions) -- Hantera vem som har åtkomst till vad
-- [Datasäkerhet](../settings/data-security) -- Läs om hur dina data skyddas
+- [Roller och behörigheter](../settings/roles-permissions.md) -- Hantera vem som har åtkomst till vad
+- [Datasäkerhet](../settings/data-security.md) -- Läs om hur dina data skyddas
 - [Översikt över rapporter](./index.md) -- Se alla tillgängliga rapporter

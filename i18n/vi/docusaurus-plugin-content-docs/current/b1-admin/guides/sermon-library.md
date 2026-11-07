@@ -1,5 +1,6 @@
 ---
 title: "Hướng dẫn: Xây dựng thư viện bài giảng và phát trực tiếp"
+description: "Nhập bài giảng từ YouTube hoặc Vimeo, sắp xếp vào danh sách phát và thiết lập phát trực tiếp định kỳ kèm trò chuyện trong B1 Admin cho website hội thánh."
 ---
 
 # Xây dựng thư viện bài giảng và phát trực tiếp

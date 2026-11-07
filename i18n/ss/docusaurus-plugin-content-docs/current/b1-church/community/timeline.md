@@ -1,5 +1,6 @@
 ---
 title: "Layini Yesikhatsi"
+description: "Ithabhu ye-Timeline ku-portal yelilungu le-B1.church isisusiwe. Tfola emaqembu wekuxoxisana, emicimbi, timisebenti netisexwayiso ekhasini le-Me, ku-icon yesibhelu, nakuliqembu ngalinye."
 ---
 
 # Layini Yesikhatsi
@@ -21,7 +22,7 @@ title: "Layini Yesikhatsi"
 
 Layini Yesikhatsi ikhombisa i-feed yetigcivi kanye netibuyekezo, letingahlanganisa:
 
-- **Tingcoco Temacembu** -- Imilayeto kanye netingcoco tetive [temacembu](../groups/) longowawo.
+- **Tingcoco Temacembu** -- Imilayeto kanye netingcoco tetive [temacembu](../groups/index.md) longowawo.
 - **Imisebenti** -- Imisebenti leyabelwe wena nome emacembu akho.
 - **Imicimbi** -- Imicimbi letako lehlobene nawe nemacembu akho.
 - **Tifundvo** -- Kharikhulamu ne[kwati kwetifundvo](../content/lessons.md) lokwabiwe nemacembu akho.

@@ -1,5 +1,6 @@
 ---
 title: "Quản lý trang"
+description: "Tạo, chỉnh sửa và sắp xếp trang và điều hướng trong chế độ xem Trang web của B1 Admin, bao gồm cài đặt trang, chuyển hướng và mẫu trang."
 ---
 
 # Quản lý trang
@@ -13,13 +14,13 @@ Chế độ xem Trang web là trung tâm để bạn tạo, chỉnh sửa và s�
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Hoàn tất [Thiết lập ban đầu](initial-setup) để cấu hình tên miền và các cài đặt cơ bản của website
-- Chuẩn bị sẵn nội dung và hình ảnh. Hãy dùng trình quản lý [Tệp](files) để tải lên các tài nguyên đa phương tiện trước.
+- Hoàn tất [Thiết lập ban đầu](./initial-setup.md) để cấu hình tên miền và các cài đặt cơ bản của website
+- Chuẩn bị sẵn nội dung và hình ảnh. Hãy dùng trình quản lý [Tệp](./files.md) để tải lên các tài nguyên đa phương tiện trước.
 
 </div>
 
 :::info
-Nếu nhà thờ của bạn có nhiều hơn một website (ví dụ, mỗi chi nhánh có một website riêng), hãy dùng công cụ chuyển đổi website ở đầu chế độ xem Trang web để chuyển qua lại giữa các website. Mỗi website có trang, điều hướng và cài đặt [giao diện](appearance) riêng.
+Nếu nhà thờ của bạn có nhiều hơn một website (ví dụ, mỗi chi nhánh có một website riêng), hãy dùng công cụ chuyển đổi website ở đầu chế độ xem Trang web để chuyển qua lại giữa các website. Mỗi website có trang, điều hướng và cài đặt [giao diện](./appearance.md) riêng.
 :::
 
 ## Hiểu các loại trang
@@ -35,7 +36,7 @@ Bạn có thể chuyển bất kỳ trang tự động tạo nào thành trang t
 
 1. Nhấp nút **Thêm trang** ở góc trên bên phải của chế độ xem Trang web.
 2. Chọn loại trang (trang trống hoặc một mẫu) và đặt tên cho trang.
-3. Nhấp **Chỉnh sửa nội dung** bên cạnh bất kỳ trang nào để mở [trình chỉnh sửa trang](page-editor), nơi bạn có thể thêm phần, văn bản, hình ảnh và các thành phần khác.
+3. Nhấp **Chỉnh sửa nội dung** bên cạnh bất kỳ trang nào để mở [trình chỉnh sửa trang](./page-editor.md), nơi bạn có thể thêm phần, văn bản, hình ảnh và các thành phần khác.
 4. Nhấp **Cài đặt trang** bên cạnh một trang để cập nhật tiêu đề, đường dẫn URL và các siêu dữ liệu khác.
 5. Nhấp đường dẫn của trang trong cột **Đường dẫn** để mở trang trực tiếp trong tab mới và xem chính xác cách khách truy cập sẽ thấy.
 
@@ -112,10 +113,10 @@ Nếu bạn đang xây dựng website từ đầu, bạn có thể khởi tạo 
 3. Khi tìm thấy mẫu ưng ý, nhấp **Áp dụng mẫu**.
 4. Các trang chưa tồn tại sẽ được tạo và thêm vào điều hướng của bạn. Các trang đã có sẵn sẽ được giữ nguyên.
 
-Sau khi áp dụng mẫu, hãy mở từng trang trong [trình chỉnh sửa trang](page-editor) để thay thế văn bản và hình ảnh giữ chỗ bằng nội dung thật của nhà thờ bạn.
+Sau khi áp dụng mẫu, hãy mở từng trang trong [trình chỉnh sửa trang](./page-editor.md) để thay thế văn bản và hình ảnh giữ chỗ bằng nội dung thật của nhà thờ bạn.
 
 :::info
-Mẫu website chỉ tạo cấu trúc trang và điều hướng. Chúng không ghi đè bảng màu hoặc phông chữ của website -- các thứ này do [Giao diện](appearance) kiểm soát.
+Mẫu website chỉ tạo cấu trúc trang và điều hướng. Chúng không ghi đè bảng màu hoặc phông chữ của website -- các thứ này do [Giao diện](./appearance.md) kiểm soát.
 :::
 
 ## Hộp xem ảnh (Lightbox)
@@ -124,7 +125,7 @@ Khi khách truy cập nhấp vào một hình ảnh trên website của bạn, h
 
 ## Bước tiếp theo
 
-- [Thiết lập ban đầu](initial-setup) -- Hướng dẫn thiết lập lần đầu
-- [Sử dụng trình chỉnh sửa trang](page-editor) -- Tìm hiểu cách xây dựng và tạo kiểu cho nội dung trang
-- [Giao diện](appearance) -- Tùy chỉnh chủ đề hình ảnh của website
-- [Tệp](files) -- Tải lên và quản lý tài nguyên đa phương tiện cho các trang của bạn
+- [Thiết lập ban đầu](./initial-setup.md) -- Hướng dẫn thiết lập lần đầu
+- [Sử dụng trình chỉnh sửa trang](./page-editor.md) -- Tìm hiểu cách xây dựng và tạo kiểu cho nội dung trang
+- [Giao diện](./appearance.md) -- Tùy chỉnh chủ đề hình ảnh của website
+- [Tệp](./files.md) -- Tải lên và quản lý tài nguyên đa phương tiện cho các trang của bạn

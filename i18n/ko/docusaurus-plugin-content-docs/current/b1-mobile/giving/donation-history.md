@@ -1,5 +1,7 @@
 ---
-title: "헌금 내역"
+title: "B1 Mobile에서 헌금 내역 보기"
+sidebar_label: "헌금 내역"
+description: "B1 Mobile에서 올해 누적 헌금, 최근 헌금, 전체 헌금 기록을 확인하고, 개요 탭에서 한 번의 탭으로 과거 헌금을 반복할 수 있습니다."
 ---
 
 # 헌금 내역
@@ -13,8 +15,8 @@ B1 모바일은 두 개의 탭을 통해 헌금의 전체적인 모습을 보여
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [B1 모바일 설치](../getting-started/installing) 및 계정으로 [로그인](../getting-started/logging-in)
-- 내역을 보려면 [최소 한 번의 헌금](./making-donations)이 필요합니다
+- [B1 모바일 설치](../getting-started/installing.md) 및 계정으로 [로그인](../getting-started/logging-in.md)
+- 내역을 보려면 [최소 한 번의 헌금](./making-donations.md)이 필요합니다
 
 </div>
 
@@ -45,5 +47,5 @@ B1 모바일은 두 개의 탭을 통해 헌금의 전체적인 모습을 보여
 
 ## 관련 문서
 
-- [헌금하기](./making-donations) -- 앱에서 새로운 헌금하기
-- [결제 수단 관리](./managing-payments) -- 저장된 결제 수단 추가 또는 삭제
+- [헌금하기](./making-donations.md) -- 앱에서 새로운 헌금하기
+- [결제 수단 관리](./managing-payments.md) -- 저장된 결제 수단 추가 또는 삭제

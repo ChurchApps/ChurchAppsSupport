@@ -1,5 +1,7 @@
 ---
-title: "Mendaftar untuk Acara"
+title: "Pendaftaran Acara di B1.church"
+sidebar_label: "Mendaftar untuk Acara"
+description: "Daftar ke acara gereja di B1.church: isi detail Anda, tambahkan anggota keluarga, pilih opsi, gunakan kode diskon, lalu bayar atau masuk daftar tunggu."
 ---
 
 # Mendaftar untuk Acara
@@ -79,14 +81,14 @@ Pesan konfirmasi akan muncul dengan detail acara dan daftar semua orang yang And
 
 ## Bergabung dalam Daftar Tunggu
 
-Jika acara sudah penuh dan gereja Anda mengaktifkan daftar tunggu, langkah pertama menampilkan: *"Acara ini sudah penuh. Anda dapat bergabung dalam daftar tunggu dan kami akan memberi tahu Anda jika ada tempat yang tersedia."* Selesaikan pendaftaran seperti biasa — pembayaran dilewati selama Anda berada dalam daftar tunggu. Ketika ada tempat yang tersedia, Anda akan menerima email; jika ada pembayaran yang harus dilakukan, email tersebut menyertakan tautan untuk menyelesaikannya. Anda juga dapat memeriksa status dan membayar dari [Pendaftaran Saya](./my-registrations).
+Jika acara sudah penuh dan gereja Anda mengaktifkan daftar tunggu, langkah pertama menampilkan: *"Acara ini sudah penuh. Anda dapat bergabung dalam daftar tunggu dan kami akan memberi tahu Anda jika ada tempat yang tersedia."* Selesaikan pendaftaran seperti biasa — pembayaran dilewati selama Anda berada dalam daftar tunggu. Ketika ada tempat yang tersedia, Anda akan menerima email; jika ada pembayaran yang harus dilakukan, email tersebut menyertakan tautan untuk menyelesaikannya. Anda juga dapat memeriksa status dan membayar dari [Pendaftaran Saya](./my-registrations.md).
 
 ## Mengubah atau Membatalkan Pendaftaran
 
-Jika Anda sudah masuk, Anda dapat mengedit atau membatalkan pendaftaran Anda sendiri dari halaman **Pendaftaran** di portal anggota — lihat [Pendaftaran Saya](./my-registrations). Tamu sebaiknya menghubungi kantor gereja, dan staf dapat melakukan perubahan dari halaman pendaftaran B1 Admin.
+Jika Anda sudah masuk, Anda dapat mengedit atau membatalkan pendaftaran Anda sendiri dari halaman **Pendaftaran** di portal anggota — lihat [Pendaftaran Saya](./my-registrations.md). Tamu sebaiknya menghubungi kantor gereja, dan staf dapat melakukan perubahan dari halaman pendaftaran B1 Admin.
 
 ## Artikel Terkait
 
 - [Ikhtisar Acara](./index.md) -- Jelajahi acara mendatang yang menerima pendaftaran
-- [Pendaftaran Saya](./my-registrations) -- Lihat, edit, bayar saldo, dan batalkan pendaftaran Anda
-- [Memberikan Donasi](../giving/making-donations) -- Berikan donasi bersamaan dengan partisipasi acara
+- [Pendaftaran Saya](./my-registrations.md) -- Lihat, edit, bayar saldo, dan batalkan pendaftaran Anda
+- [Memberikan Donasi](../giving/making-donations.md) -- Berikan donasi bersamaan dengan partisipasi acara

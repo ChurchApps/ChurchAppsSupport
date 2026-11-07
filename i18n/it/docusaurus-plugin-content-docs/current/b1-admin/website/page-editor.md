@@ -1,5 +1,6 @@
 ---
 title: "Usare l'editor di pagine"
+description: "Usa l'editor di pagine di B1 Admin per aggiungere sezioni ed elementi, applicare stili, vedere l'anteprima mobile e pubblicare le bozze, con annulla e cronologia."
 ---
 
 # Usare l'editor di pagine
@@ -13,8 +14,8 @@ L'editor di pagine di B1 è un costruttore visivo con trascinamento che ti perme
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Completa la [Configurazione iniziale](initial-setup) per configurare il tuo sito web
-- Crea almeno una pagina in [Gestire le pagine](managing-pages)
+- Completa la [Configurazione iniziale](./initial-setup.md) per configurare il tuo sito web
+- Crea almeno una pagina in [Gestire le pagine](./managing-pages.md)
 - Ti serve il permesso **content.edit** per accedere all'editor
 
 </div>
@@ -27,7 +28,7 @@ L'editor di pagine di B1 è un costruttore visivo con trascinamento che ti perme
 L'editor si apre a schermo intero. Il pannello di sinistra mostra la struttura della pagina e gli elementi di contenuto disponibili; l'area centrale mostra un'anteprima in tempo reale della pagina.
 
 :::info
-L'editor viene sempre visualizzato in modalità chiara, indipendentemente dal tema di B1 Admin, e usa i caratteri per i titoli e per il testo che hai scelto in [Aspetto](appearance). Questo garantisce che l'anteprima corrisponda fedelmente a come apparirà la pagina ai visitatori del sito.
+L'editor viene sempre visualizzato in modalità chiara, indipendentemente dal tema di B1 Admin, e usa i caratteri per i titoli e per il testo che hai scelto in [Aspetto](./appearance.md). Questo garantisce che l'anteprima corrisponda fedelmente a come apparirà la pagina ai visitatori del sito.
 :::
 
 ## Struttura della pagina: sezioni ed elementi
@@ -57,7 +58,7 @@ Hai già costruito una sezione ma vuoi una struttura diversa? Usa il selettore d
    - **Immagine** -- Carica o collega una foto
    - **Pulsante** -- Un link cliccabile per un'azione
    - **Scheda** -- Un'immagine con un titolo e una descrizione
-   - **Modulo** -- Incorpora un [modulo](../forms/creating-forms) direttamente nella pagina. Se il modulo ha una [foto di intestazione](../forms/creating-forms.md#adding-a-header-photo), questa compare sopra le domande
+   - **Modulo** -- Incorpora un [modulo](../forms/creating-forms.md) direttamente nella pagina. Se il modulo ha una [foto di intestazione](../forms/creating-forms.md#adding-a-header-photo), questa compare sopra le domande
    - **Calendario** -- Mostra un calendario degli eventi
    - **FAQ** -- Blocchi di domande e risposte in stile fisarmonica
    - **Video** -- Incorpora un video tramite URL
@@ -75,7 +76,7 @@ Hai già costruito una sezione ma vuoi una struttura diversa? Usa il selettore d
    - **Mappa** -- Una mappa incorporata centrata sull'indirizzo della chiesa
    - **Tabella** -- Una semplice griglia di righe e colonne per contenuti tabellari
    - **Testo con foto** -- Testo e un'immagine affiancati
-   - **Logo** -- Il logo della tua chiesa, ricavato da [Aspetto](appearance)
+   - **Logo** -- Il logo della tua chiesa, ricavato da [Aspetto](./appearance.md)
    - **Diretta streaming** -- Il lettore della tua diretta, incorporato direttamente nella pagina
    - **Podcast** -- Un elenco di episodi ricavato dall'URL di un feed RSS di podcast esterno che fornisci, con impostazioni per decidere quanti episodi mostrare e se visualizzare date e descrizioni. Ogni episodio sul sito online ha un lettore audio e un link **Scarica** che salva il file audio dell'episodio con il titolo dell'episodio. Serve per mettere in evidenza un qualsiasi feed di podcast sul tuo sito; per pubblicare i tuoi sermoni come podcast, vedi invece [Gestire i sermoni](../sermons/managing-sermons.md#your-podcast-feed)
    - **Donazione** -- Un pulsante per le offerte oppure un modulo di donazione incorporato
@@ -96,7 +97,7 @@ Se incolli nella casella JavaScript solo un indirizzo web (come il link di un'im
 
 L'elemento **Calendario** mostra gli eventi di uno dei tuoi calendari:
 
-1. Sotto **Seleziona**, scegli **Calendario di gruppo** (gli eventi di un solo gruppo -- l'elenco mostra i gruppi di cui fai parte) oppure **Calendario curato** (un calendario che hai creato in **Calendari**; vedi [Calendario curato](../calendars/curated-calendar)).
+1. Sotto **Seleziona**, scegli **Calendario di gruppo** (gli eventi di un solo gruppo -- l'elenco mostra i gruppi di cui fai parte) oppure **Calendario curato** (un calendario che hai creato in **Calendari**; vedi [Calendario curato](../calendars/curated-calendar.md)).
 2. Sotto **Seleziona calendario**, scegli il gruppo o il calendario.
 3. Sotto **Visualizzazione**, scegli come mostrarlo:
    - **Calendario mensile** -- Una griglia mensile che i visitatori possono sfogliare.
@@ -129,7 +130,7 @@ Clicca su un elemento qualsiasi per aprire il suo pannello di stile. Tra le opzi
 Per uno stile avanzato, ogni sezione ed elemento ha un campo **CSS personalizzato** in cui puoi scrivere regole CSS proprie. Sono limitate a quell'elemento, quindi non influenzano involontariamente il resto della pagina.
 
 :::tip
-Se ti serve applicare degli stili a tutto il sito -- come un carattere personalizzato o un colore globale -- usa le impostazioni di [Aspetto](appearance) invece del CSS personalizzato sulle singole pagine.
+Se ti serve applicare degli stili a tutto il sito -- come un carattere personalizzato o un colore globale -- usa le impostazioni di [Aspetto](./appearance.md) invece del CSS personalizzato sulle singole pagine.
 :::
 
 ## Visualizzare in anteprima la pagina
@@ -184,7 +185,7 @@ Usa il flusso di bozza/pubblicazione quando vuoi preparare una pagina -- ad esem
 
 ## Articoli correlati
 
-- [Gestire le pagine](managing-pages) -- Crea pagine, imposta gli URL e gestisci la navigazione del sito
-- [Aspetto](appearance) -- Imposta colori, caratteri e identità visiva dell'intero sito
-- [File](files) -- Carica immagini e documenti da usare nell'editor
-- [Creare moduli](../forms/creating-forms) -- Crea moduli da incorporare nelle pagine
+- [Gestire le pagine](./managing-pages.md) -- Crea pagine, imposta gli URL e gestisci la navigazione del sito
+- [Aspetto](./appearance.md) -- Imposta colori, caratteri e identità visiva dell'intero sito
+- [File](./files.md) -- Carica immagini e documenti da usare nell'editor
+- [Creare moduli](../forms/creating-forms.md) -- Crea moduli da incorporare nelle pagine

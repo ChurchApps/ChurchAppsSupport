@@ -1,5 +1,6 @@
 ---
 title: "Prehľad plánov"
+description: "Získajte prehľad o priradeniach dobrovoľníkov na viacerých termínoch v B1 Admin, odhaľte neobsadené pozície a obsaďte alebo napíšte tímu z jednej mriežky."
 ---
 
 # Prehľad plánov

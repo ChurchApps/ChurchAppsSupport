@@ -1,5 +1,6 @@
 ---
 title: "Planlar"
+description: "B1.church'te atandığınız hizmet planlarını, görevlerinizi ve tarihlerinizi görün; üye portalınızdan atamaları kabul edin veya reddedin."
 ---
 
 # Planlar

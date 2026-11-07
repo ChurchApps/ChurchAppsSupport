@@ -1,5 +1,6 @@
 ---
 title: "Gabay: Buuin ang Iyong Sermon Library at Live Stream"
+description: "Mag-import ng sermon mula sa YouTube o Vimeo, ayusin sa playlist, at mag-set up ng paulit-ulit na live stream na may chat sa B1 Admin para sa website."
 ---
 
 # Buuin ang Iyong Sermon Library at Live Stream

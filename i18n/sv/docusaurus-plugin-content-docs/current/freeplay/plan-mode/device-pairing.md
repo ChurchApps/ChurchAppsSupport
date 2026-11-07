@@ -1,5 +1,6 @@
 ---
 title: "Parkoppla din enhet"
+description: "Koppla en FreePlay-TV till en plantyp i B1 Admin med en fyrabokstavskod på skärmen och ladda sedan ner planens media för uppspelning i Plan Mode."
 ---
 
 # Parkoppla din enhet
@@ -13,7 +14,7 @@ För att använda planeringsläget parkopplar du din TV med en plantyp i B1 Admi
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Installera och starta FreePlay. Se [Komma igång](../getting-started/)
+- Installera och starta FreePlay. Se [Komma igång](../getting-started/index.md)
 - Ha åtkomst till **B1 Admin** på en dator eller telefon för att slutföra parkopplingen
 
 </div>
@@ -25,7 +26,7 @@ För att använda planeringsläget parkopplar du din TV med en plantyp i B1 Admi
 3. FreePlay visar en parkopplingskod med fyra bokstäver i stor text, bredvid en QR-kod.
 4. Under koden visar en pulserande indikator **Väntar på bekräftelse** att FreePlay väntar på att du ska slutföra parkopplingen.
 
-Samma kod fungerar för [Schemalagt läge](../scheduled-mode/) i FreePlay Admin och för planeringsläget i B1 Admin. QR-koden och adressen **freeplay.church/pair** på skärmen öppnar FreePlay Admin. För planeringsläget ignorerar du dem och anger koden i B1 Admin enligt beskrivningen nedan.
+Samma kod fungerar för [Schemalagt läge](../scheduled-mode/index.md) i FreePlay Admin och för planeringsläget i B1 Admin. QR-koden och adressen **freeplay.church/pair** på skärmen öppnar FreePlay Admin. För planeringsläget ignorerar du dem och anger koden i B1 Admin enligt beskrivningen nedan.
 
 ## Ange koden i B1 Admin
 
@@ -61,5 +62,5 @@ Parkopplingskoder upphör att gälla efter 15 minuter. FreePlay visar en ny kod 
 ## Relaterade artiklar
 
 - **[Översikt över planeringsläget](./index.md)** - Hur planeringsläget skiljer sig från schemalagt läge
-- **[Parkoppla en skärm](../scheduled-mode/pairing-a-screen)** - Parkoppla samma TV till en kalender i FreePlay Admin i stället
-- **[Spela upp innehåll](../content-providers/playing-content)** - Reglage för uppspelning av plan
+- **[Parkoppla en skärm](../scheduled-mode/pairing-a-screen.md)** - Parkoppla samma TV till en kalender i FreePlay Admin i stället
+- **[Spela upp innehåll](../content-providers/playing-content.md)** - Reglage för uppspelning av plan

@@ -1,5 +1,6 @@
 ---
 title: "Hướng dẫn: Quản lý nhóm nhỏ"
+description: "Thiết lập nhóm nhỏ, nhóm học Kinh Thánh và nhóm phục vụ trong B1 Admin, rồi đăng lịch toàn hội thánh và mục nhóm lên website B1."
 ---
 
 # Quản lý nhóm nhỏ
@@ -78,7 +79,7 @@ Thành viên có thể tìm, tham gia và tham gia các hoạt động nhóm t�
 
 1. Thành viên xem và tham gia nhóm trên [B1.church](../../b1-church/groups/browsing-groups.md)
 2. Thành viên nhóm có thể xem chi tiết, lịch và đăng bài trong [trao đổi](../../b1-church/groups/conversations.md) của nhóm
-3. Mọi tính năng nhóm cũng có trên [ứng dụng B1 Mobile](../../b1-mobile/groups/)
+3. Mọi tính năng nhóm cũng có trên [ứng dụng B1 Mobile](../../b1-mobile/groups/index.md)
 
 :::info
 Thành viên thấy nhóm, sự kiện sắp tới và các trao đổi nhóm của mình trên cả web lẫn di động. Mọi thứ luôn được đồng bộ.
@@ -97,4 +98,4 @@ Các nhóm nhỏ của bạn đã được thiết lập và kết nối. Thành
 - [Lịch đã chọn lọc](../calendars/curated-calendar.md): xây dựng lịch thống nhất cho hội thánh
 - [Duyệt nhóm (Web)](../../b1-church/groups/browsing-groups.md): cách thành viên tìm nhóm
 - [Trao đổi nhóm (Web)](../../b1-church/groups/conversations.md): thảo luận trong nhóm
-- [Nhóm (Di động)](../../b1-mobile/groups/): nhóm trên ứng dụng di động
+- [Nhóm (Di động)](../../b1-mobile/groups/index.md): nhóm trên ứng dụng di động

@@ -1,5 +1,6 @@
 ---
 title: "Mobilinstallation"
+description: "Gennemgå opbygning af Android- og iOS-udgivelser af B1 Mobile-appen med Expo EAS, indsendelse til appbutikkerne og udrulning af OTA-opdateringer."
 ---
 
 # Mobilinstallation
@@ -13,7 +14,7 @@ ChurchApps mobilapps bygges og implementeres ved hjælp af **Expo EAS Build** og
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Opsætning af mobilapp lokalt -- se [B1 Mobile](../mobile/b1-mobile)
+- Opsætning af mobilapp lokalt -- se [B1 Mobile](../mobile/b1-mobile.md)
 - Installer og konfigurér [EAS CLI](https://docs.expo.dev/eas/)
 - Har adgang til Google Play Console (Android) og/eller Apple App Store Connect (iOS)
 
@@ -77,6 +78,6 @@ Hvis du glemmer at opdatere versionsnumre i alle filer, vil det forårsage bygne
 
 ## Relaterede artikler
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- Lokalt setup og udviklingsvejledning
-- **[API-installation](./apis)** -- Installation af backend-API'erne
-- **[Webapp-installation](./web-apps)** -- Installation af frontend-webapplikationer
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- Lokalt setup og udviklingsvejledning
+- **[API-installation](./apis.md)** -- Installation af backend-API'erne
+- **[Webapp-installation](./web-apps.md)** -- Installation af frontend-webapplikationer

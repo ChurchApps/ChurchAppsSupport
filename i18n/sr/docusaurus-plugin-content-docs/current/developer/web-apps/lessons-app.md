@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "Локално подешавање LessonsApp Next.js уређивача лекција на Node.js 22+, повезивање са локалним LessonsApi и S3/CloudFront постављање."
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ LessonsApp је апликација за управљање садржајем 
 <div class="prereqs">
 <h4>Пре почетка</h4>
 
-- Инсталирајте **Node.js 22+** и **Git** -- видите [Предуслови](../setup/prerequisites)
-- Конфигуришите адресу свог API-ја (локални LessonsApi) -- видите [Променљиве окружења](../setup/environment-variables)
+- Инсталирајте **Node.js 22+** и **Git** -- видите [Предуслови](../setup/prerequisites.md)
+- Конфигуришите адресу свог API-ја (локални LessonsApi) -- видите [Променљиве окружења](../setup/environment-variables.md)
 
 </div>
 
@@ -81,5 +82,5 @@ LessonsApp комуницира са позадинским сервисом **L
 3. Покреће се CloudFront инвалидација како би се послала нова верзија
 
 :::tip
-За детаљна упутства о постављању погледајте водич [Постављање веб апликација](../deployment/web-apps).
+За детаљна упутства о постављању погледајте водич [Постављање веб апликација](../deployment/web-apps.md).
 :::

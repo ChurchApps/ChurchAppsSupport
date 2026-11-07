@@ -1,5 +1,6 @@
 ---
 title: "Administrere programmer"
+description: "Opprett og rediger læreplanprogrammer i Lessons.church, sett opp slugs og miniatyrbilder, grupper studier i kategorier og legg til ressurser på programnivå."
 ---
 
 # Administrere programmer

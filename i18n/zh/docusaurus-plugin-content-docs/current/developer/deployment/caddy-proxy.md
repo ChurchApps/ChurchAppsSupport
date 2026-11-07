@@ -1,5 +1,6 @@
 ---
 title: "Caddy 自定义域名代理"
+description: "构建并运行为 B1.church 网站提供自定义教会域名服务的 Caddy 反向代理，涵盖 TLS 证书、主机映射和已知问题。"
 ---
 
 # Caddy 自定义域名代理
@@ -10,7 +11,7 @@ title: "Caddy 自定义域名代理"
 
 </div>
 
-关于请求到达 B1App 后如何解析到某个教会/站点，请参阅[网站路由与多站点](../architecture/websites)。
+关于请求到达 B1App 后如何解析到某个教会/站点，请参阅[网站路由与多站点](../architecture/websites.md)。
 
 ## 组件
 
@@ -88,5 +89,5 @@ API 中的 `CaddyHelper`（以及 `/membership/domains/caddy` + `/caddy/init` �
 
 ## 相关页面
 
-- [网站路由与多站点](../architecture/websites) —— 被代理的请求如何在 B1App 中解析到某个教会/站点
-- [API 部署](./apis) —— 提供 `authorize`/`hostmap` 的 Membership API 部署
+- [网站路由与多站点](../architecture/websites.md) —— 被代理的请求如何在 B1App 中解析到某个教会/站点
+- [API 部署](./apis.md) —— 提供 `authorize`/`hostmap` 的 Membership API 部署

@@ -1,5 +1,6 @@
 ---
 title: "Vyriausiųjų paslaugų pasirinkimas"
+description: "Pasirinkite pamaldas, kuriose dalyvaujate, B1 Checkin paslaugų ekrane; tai nustato pamaldų laikus ir grupes visai tolesnei registracijai."
 ---
 
 # Paslaugos pasirinkimas
@@ -13,7 +14,7 @@ Pirmasis kiekvieno registracijos žingsnis – pasirinkti, kurią pamaldų pasla
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Prisijunkite](../getting-started/logging-in) prie B1 Church Checkin programos ir pasirinkite savo bažnyčią
+- [Prisijunkite](../getting-started/logging-in.md) prie B1 Church Checkin programos ir pasirinkite savo bažnyčią
 - Įsitikinkite, kad jūsų bažnyčios administratorius B1 Admin sistemoje yra [sukonfigūravęs paslaugas ir paslaugų laikus](../../b1-admin/attendance/setup.md)
 
 </div>
@@ -24,11 +25,11 @@ Pirmasis kiekvieno registracijos žingsnis – pasirinkti, kurią pamaldų pasla
 2. Pamatysite visų jūsų bažnyčiai sukonfigūruotų paslaugų sąrašą. Kiekviena paslauga rodoma kaip kortelė, kurioje nurodomas paslaugos pavadinimas (pavyzdžiui, „Sekmadienio rytas“ arba „Trečiadienio vakaras“).
 3. Palieskite paslaugą, kurioje dalyvausite.
 
-Programa įkelia su ta paslauga susijusius paslaugų laikus ir grupes, o tada perkelia jus į [narių paieškos ekraną](./looking-up-members).
+Programa įkelia su ta paslauga susijusius paslaugų laikus ir grupes, o tada perkelia jus į [narių paieškos ekraną](./looking-up-members.md).
 
 ## Kai registracija neatidaryta
 
-Jei jūsų administratorius paslaugos laikui nustatė [registracijos tvarkaraštį](../../b1-admin/attendance/setup#setting-a-check-in-schedule), programa leidžia šeimoms pasirinkti tą paslaugos laiką tik tada, kai jo registracijos langas yra atviras. Paslaugų laikai, kurių langas šiuo metu uždarytas, vis dar rodomi [namų ūkio ekrane](./household-review), tačiau jie pažymėti **Uždaryta** (pavyzdžiui, **Uždaryta · atsidaro sekm. 9:30**), o ne rodomas grupės mygtukas.
+Jei jūsų administratorius paslaugos laikui nustatė [registracijos tvarkaraštį](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule), programa leidžia šeimoms pasirinkti tą paslaugos laiką tik tada, kai jo registracijos langas yra atviras. Paslaugų laikai, kurių langas šiuo metu uždarytas, vis dar rodomi [namų ūkio ekrane](./household-review.md), tačiau jie pažymėti **Uždaryta** (pavyzdžiui, **Uždaryta · atsidaro sekm. 9:30**), o ne rodomas grupės mygtukas.
 
 Jei visi paslaugos, kurią palietėte, laikai yra uždaryti, programa praneša, kada registracija atsidarys – pavyzdžiui, **„Registracija šiai paslaugai atsidaro sekm. 9:30“.** (Jei atidarymo laiko parodyti negalima, rodoma žinutė **„Šiai paslaugai registracija šiuo metu neatidaryta.“**) Palieskite **Atgal**, kad grįžtumėte į paslaugų sąrašą ir pasirinktumėte kitą paslaugą, arba palaukite, kol langas atsidarys, ir bandykite dar kartą.
 
@@ -56,4 +57,4 @@ Jei jūsų bažnyčioje sukonfigūruota tik viena paslauga, vis tiek turite ją 
 
 ## Kitas žingsnis
 
-Pasirinkę paslaugą, [surasite savo šeimą](./looking-up-members) pagal telefono numerį arba vardą.
+Pasirinkę paslaugą, [surasite savo šeimą](./looking-up-members.md) pagal telefono numerį arba vardą.

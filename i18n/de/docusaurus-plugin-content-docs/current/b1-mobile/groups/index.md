@@ -1,5 +1,7 @@
 ---
-title: "Gruppen"
+title: "Gruppenbildschirm in B1 Mobile"
+sidebar_label: "Gruppen"
+description: "Finden Sie Ihre Gruppen im Gruppenbildschirm von B1 Mobile, oben Ihre meistbesuchte Gruppe, darunter alle übrigen Gruppen Ihrer Gemeinde."
 ---
 
 # Gruppen
@@ -30,10 +32,10 @@ Dies kannst du im Bereich Gruppen tun:
 - **In Verbindung bleiben** -- Sieh, was deine Gruppenmitglieder teilen, verfolge Gespräche und beteilige dich an Gruppeninhalten.
 
 :::tip
-Der Bereich Gruppen passt sich deiner Nutzung an, genau wie das [Dashboard](../dashboard/). Die Gruppen, die du am häufigsten besuchst, werden für schnellen Zugriff nach oben gestellt.
+Der Bereich Gruppen passt sich deiner Nutzung an, genau wie das [Dashboard](../dashboard/index.md). Die Gruppen, die du am häufigsten besuchst, werden für schnellen Zugriff nach oben gestellt.
 :::
 
 ## Nächste Schritte
 
-- [Gruppendetails](./group-details) -- Was auf der Detailseite einer Gruppe zu sehen ist
-- [Gruppen-Zeitleiste](./group-timeline) -- Mehr über die gemeinsame Aktivitätsübersicht aller deiner Gruppen
+- [Gruppendetails](./group-details.md) -- Was auf der Detailseite einer Gruppe zu sehen ist
+- [Gruppen-Zeitleiste](./group-timeline.md) -- Mehr über die gemeinsame Aktivitätsübersicht aller deiner Gruppen

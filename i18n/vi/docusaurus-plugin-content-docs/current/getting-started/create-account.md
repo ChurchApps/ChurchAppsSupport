@@ -1,5 +1,6 @@
 ---
 title: "Tạo tài khoản của bạn"
+description: "Đăng ký tài khoản ChurchApps tại B1.church, xác minh email, và tạo hoặc tham gia nhà thờ để bắt đầu thiết lập B1 Admin."
 ---
 
 # Tạo tài khoản của bạn

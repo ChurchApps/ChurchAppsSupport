@@ -1,5 +1,6 @@
 ---
 title: "Kalender-Genehmigungen"
+description: "Prüfen Sie in B1 Admin ausstehende Buchungsanfragen für Räume und Ressourcen, kontrollieren Sie Überschneidungen und genehmigen oder lehnen Sie sie ab, optional mit Veröffentlichung des Termins."
 ---
 
 # Kalender-Genehmigungen
@@ -13,7 +14,7 @@ Die Seite "Genehmigungen" ist der Ort, an dem Administratoren ausstehende Raum- 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Konfigurieren Sie Räume oder Ressourcen mit einer **Genehmigungsgruppe** in [Räume & Ressourcen](rooms-resources)
+- Konfigurieren Sie Räume oder Ressourcen mit einer **Genehmigungsgruppe** in [Räume & Ressourcen](./rooms-resources.md)
 - Sie benötigen die Berechtigung **Kalender-Admin** oder die Berechtigung **content.edit**
 
 </div>
@@ -41,7 +42,7 @@ Klicken Sie bei einer Buchungsanfrage auf **Genehmigen** oder **Ablehnen** (beim
 Wenn Sie auf **Genehmigen** klicken, wird ein Dialog **Buchung genehmigen** geöffnet, sodass Sie das Ereignis auch im gleichen Schritt veröffentlichen können:
 
 1. Überprüfen Sie **Im öffentlichen Kalender veröffentlichen**, um das Ereignis im öffentlichen Kalender der Gruppe zu veröffentlichen. Lassen Sie es unchecked, um die Buchung zu genehmigen, ohne die Sichtbarkeit des Ereignisses zu ändern.
-2. Sobald **Im öffentlichen Kalender veröffentlichen** geprüft ist, können Sie optional einen kuratierten Kalender aus **Auch zu Kalender hinzufügen** auswählen, um das Ereignis auch zu einem Ihrer [kuratierten Kalender](curated-calendar) hinzuzufügen. Lassen Sie es auf **Keine** eingestellt, um dies zu überspringen. (Diese Option wird nur angezeigt, wenn Sie die Berechtigung **content.edit** haben.)
+2. Sobald **Im öffentlichen Kalender veröffentlichen** geprüft ist, können Sie optional einen kuratierten Kalender aus **Auch zu Kalender hinzufügen** auswählen, um das Ereignis auch zu einem Ihrer [kuratierten Kalender](./curated-calendar.md) hinzuzufügen. Lassen Sie es auf **Keine** eingestellt, um dies zu überspringen. (Diese Option wird nur angezeigt, wenn Sie die Berechtigung **content.edit** haben.)
 3. Klicken Sie auf **Genehmigen**.
 
 ## Ausstehende Ereignisse
@@ -49,10 +50,10 @@ Wenn Sie auf **Genehmigen** klicken, wird ein Dialog **Buchung genehmigen** geö
 Wenn Ihr Kalender-Workflow eine Ereignisgenehmigung vor der Sichtbarkeit des Ereignisses für die Öffentlichkeit erfordert, werden ausstehende Ereignisse im Abschnitt **Ereignisanfragen** angezeigt. Klicken Sie auf **Genehmigen**, um ein Ereignis im Kalender zu veröffentlichen, oder auf **Ablehnen**, um den Einreicher zu benachrichtigen, dass Änderungen erforderlich sind.
 
 :::tip
-Richten Sie eine Genehmigungsgruppe auf einem Raum in [Räume & Ressourcen](rooms-resources) ein, um eine Genehmigung für diesen Raum zu erfordern. Gruppen mit Zugriff können dann den Raum anfordern, wenn sie Ereignisse erstellen, und diese Anfragen fließen auf diese Seite.
+Richten Sie eine Genehmigungsgruppe auf einem Raum in [Räume & Ressourcen](./rooms-resources.md) ein, um eine Genehmigung für diesen Raum zu erfordern. Gruppen mit Zugriff können dann den Raum anfordern, wenn sie Ereignisse erstellen, und diese Anfragen fließen auf diese Seite.
 :::
 
 ## Verwandte Artikel
 
-- [Räume, Ressourcen & Zeitplanung](rooms-resources) – konfigurieren Sie buchbare Räume und Ressourcen
-- [Kalender erstellen](creating-calendars) – verwalten Sie Kalender und Ereignisse
+- [Räume, Ressourcen & Zeitplanung](./rooms-resources.md) – konfigurieren Sie buchbare Räume und Ressourcen
+- [Kalender erstellen](./creating-calendars.md) – verwalten Sie Kalender und Ereignisse

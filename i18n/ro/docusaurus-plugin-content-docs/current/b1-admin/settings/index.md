@@ -1,5 +1,6 @@
 ---
 title: "Setări"
+description: "Orientează-te în Settings din B1 Admin: date despre biserică, branding, campusuri, câmpuri personalizate, roluri și meniul aplicației B1.church."
 ---
 
 # Setări

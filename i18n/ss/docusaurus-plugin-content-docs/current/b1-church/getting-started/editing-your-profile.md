@@ -1,5 +1,7 @@
 ---
-title: "Kuhlela Iprofayili Yakho"
+title: "Kuhlela Iphrofayili Yakho ku-Portal Yelilungu le-B1.church"
+sidebar_label: "Kuhlela Iprofayili Yakho"
+description: "Buyekeza imininingwane yakho yekuxhumana, emalungu emndeni, i-imeyili yekungena nemaphasiwedi, nemalungiselelo ekuvikela ku-portal yelilungu le-B1.church."
 ---
 
 # Kuhlela Iprofayili Yakho

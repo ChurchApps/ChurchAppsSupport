@@ -1,5 +1,6 @@
 ---
 title: "Hesap Oluşturma"
+description: "Lessons.church'te bir ChurchApps hesabı kaydedin, ardından sınıfları ve programları yönetebilmek için onu yeni veya mevcut bir kilise profiline bağlayın."
 ---
 
 # Hesap Oluşturma

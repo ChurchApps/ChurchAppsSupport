@@ -1,5 +1,6 @@
 ---
 title: "Oś czasu grupy"
+description: "Zobacz, jak oś czasu grup w B1 Mobile łączy posty, rozmowy i aktualizacje ze wszystkich Twoich grup w jeden kanał oraz co zrobić, gdy jest wstrzymana."
 ---
 
 # Oś czasu grupy
@@ -17,7 +18,7 @@ Funkcja osi czasu grupy jest tymczasowo niedostępna, ponieważ trwają prace na
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) na swoje konto
+- [Zainstaluj B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) na swoje konto
 - Bądź członkiem co najmniej jednej grupy w swoim kościele
 
 </div>
@@ -41,7 +42,7 @@ Każdy element osi czasu pokazuje, z której grupy pochodzi, dzięki czemu zawsz
 Oś czasu to świetny sposób, by na bieżąco być w kontakcie ze wspólnotą kościelną. Oto kilka wskazówek, jak z niej najlepiej korzystać:
 
 - **Zaglądaj regularnie** -- Otwórz ekran Grupy i przewiń oś czasu, aby nadrobić ostatnią aktywność.
-- **Stuknij, aby zobaczyć więcej** -- Jeśli post Cię zainteresuje, stuknij go lub nazwę grupy, aby przejść do pełnej [strony szczegółów grupy](./group-details) i poznać więcej kontekstu.
+- **Stuknij, aby zobaczyć więcej** -- Jeśli post Cię zainteresuje, stuknij go lub nazwę grupy, aby przejść do pełnej [strony szczegółów grupy](./group-details.md) i poznać więcej kontekstu.
 - **Wszystko w jednym miejscu** -- Nie musisz odwiedzać każdej grupy osobno. Oś czasu przynosi Ci całą aktywność.
 
 :::info
@@ -54,5 +55,5 @@ Włącz [powiadomienia push](../community/notifications.md), aby otrzymywać ale
 
 ## Powiązane artykuły
 
-- [Szczegóły grupy](./group-details) -- Zobacz pełny profil grupy i jej posty
+- [Szczegóły grupy](./group-details.md) -- Zobacz pełny profil grupy i jej posty
 - [Powiadomienia](../community/notifications.md) -- Otrzymuj powiadomienia o aktywności w grupach

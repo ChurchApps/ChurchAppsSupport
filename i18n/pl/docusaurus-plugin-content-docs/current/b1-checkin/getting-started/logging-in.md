@@ -1,5 +1,7 @@
 ---
-title: "Logowanie"
+title: "Logowanie do B1 Church Checkin"
+sidebar_label: "Logowanie"
+description: "Zaloguj się do aplikacji kiosku B1 Church Checkin, wybierz kościół i poznaj automatyczne logowanie, ustawienia administratora oraz wylogowanie na tablecie."
 ---
 
 # Logowanie
@@ -63,7 +65,7 @@ Ustawienia administratora są celowo ukryte, aby członkowie kościoła korzysta
 2. Jeśli ustawiono PIN kiosku, wpisz go po wyświetleniu monitu.
 3. Otworzy się ekran **Ustawienia administratora** z następującymi opcjami:
    - **Zmień usługę** — przełącz wybraną porę usługi
-   - **Zmień drukarkę** — otwórz [ustawienia drukarki](./printer-setup), aby wyszukać i wybrać drukarkę
+   - **Zmień drukarkę** — otwórz [ustawienia drukarki](./printer-setup.md), aby wyszukać i wybrać drukarkę
    - **Ustaw/zmień PIN** — ustaw lub zaktualizuj PIN kiosku, który chroni dostęp administratora
    - **Wyloguj** — wyloguj się i wróć do ekranu logowania
 
@@ -73,4 +75,4 @@ Wylogowanie usuwa wszystkie zapisane dane logowania oraz wybór kościoła. Aby 
 
 ## Następne kroki
 
-Po zalogowaniu możesz [skonfigurować drukarkę](./printer-setup) lub przejść od razu do [procesu zameldowania](../check-in/).
+Po zalogowaniu możesz [skonfigurować drukarkę](./printer-setup.md) lub przejść od razu do [procesu zameldowania](../check-in/index.md).

@@ -1,5 +1,6 @@
 ---
 title: "Ortam Değişkenleri"
+description: ".env dosyasını ChurchApps projeleri için ayarlayın; paylaşılan demo API ile yerel API arasında seçim yapın ve B1 Admin, B1.church, B1 Mobile, Lessons.church ve diğerleri için değişkenleri doldurun."
 ---
 
 # Ortam Değişkenleri
@@ -13,9 +14,9 @@ Her ChurchApps projesi, yerel yapılandırma için bir `.env` dosyası kullanır
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Çalışmak istediğiniz proje için [ön koşulları](./prerequisites) yükleyin
+- Çalışmak istediğiniz proje için [ön koşulları](./prerequisites.md) yükleyin
 - Üzerinde çalışmak istediğiniz proje deposunu klonlayın
-- Projenizin hangi API modüllerine ihtiyaç duyduğunu anlamak için [Proje Genel Bakışı](./project-overview) sayfasını inceleyin
+- Projenizin hangi API modüllerine ihtiyaç duyduğunu anlamak için [Proje Genel Bakışı](./project-overview.md) sayfasını inceleyin
 
 </div>
 
@@ -64,7 +65,7 @@ Staging ortamı (`api.staging.churchapps.org`, `api.staging.lessons.church` ve i
 
 ### Seçenek 2: Yerel API
 
-Api projesini kendi bilgisayarınızda çalıştırın. Her modül için oluşturulmuş veritabanlarıyla birlikte MySQL 8.0+ gerektirir. Ayrıntılar için [API yerel kurulum](../api/local-setup) kılavuzuna bakın.
+Api projesini kendi bilgisayarınızda çalıştırın. Her modül için oluşturulmuş veritabanlarıyla birlikte MySQL 8.0+ gerektirir. Ayrıntılar için [API yerel kurulum](../api/local-setup.md) kılavuzuna bakın.
 
 ```bash
 # Temel URL yapısı

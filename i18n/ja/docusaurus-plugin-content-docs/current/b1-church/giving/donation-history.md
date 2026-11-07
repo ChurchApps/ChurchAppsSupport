@@ -1,5 +1,7 @@
 ---
-title: "寄付履歴"
+title: "B1.church の寄付履歴と明細"
+sidebar_label: "寄付履歴"
+description: "B1.church 会員ポータルの寄付ページで過去の寄付を表示し、年ごとに絞り込み、税務用の寄付明細を印刷します。"
 ---
 
 # 寄付履歴

@@ -1,5 +1,6 @@
 ---
 title: "Galutinių taškų nuoroda"
+description: "Raskite ChurchApps API galutinius taškus pagal modulį: HTTP metodą, kelią, autentifikaciją ir leidimus bei paketinio išsaugojimo ir klaidų taisykles."
 ---
 
 # Galutinių taškų nuoroda
@@ -89,10 +90,10 @@ Ataskaitų parametrai perduodami kaip užklausos eilutės reikšmės (pvz., `?st
 
 | Modulis | Bazinis kelias | Aprašymas |
 |---------|----------------|-----------|
-| [Autentifikavimas](./authentication) | `/membership/users`, `/membership/oauth` | Prisijungimas, registracija, JWT žetonai, OAuth, leidimai |
-| [Narystė](./membership) | `/membership/*` | Asmenys, bažnyčios, grupės, namų ūkiai, vaidmenys, formos, nustatymai |
-| [Lankomumas](./attendance) | `/attendance/*` | Filialai, pamaldos, sesijos, apsilankymai, registracijos įrašai |
-| [Turinys](./content) | `/content/*` | Puslapiai, pamokslai, renginiai, failai, galerijos, Biblija, transliacijos |
-| [Aukojimai](./giving) | `/giving/*` | Aukos, fondai, mokėjimų vartai, prenumeratos |
-| [Pranešimai](./messaging) | `/messaging/*` | Pokalbiai, pranešimai, įrenginiai, SMS |
-| [Doing](./doing) | `/doing/*` | Planai, užduotys, priskyrimai, automatizavimas, tvarkaraščiai |
+| [Autentifikavimas](./authentication.md) | `/membership/users`, `/membership/oauth` | Prisijungimas, registracija, JWT žetonai, OAuth, leidimai |
+| [Narystė](./membership.md) | `/membership/*` | Asmenys, bažnyčios, grupės, namų ūkiai, vaidmenys, formos, nustatymai |
+| [Lankomumas](./attendance.md) | `/attendance/*` | Filialai, pamaldos, sesijos, apsilankymai, registracijos įrašai |
+| [Turinys](./content.md) | `/content/*` | Puslapiai, pamokslai, renginiai, failai, galerijos, Biblija, transliacijos |
+| [Aukojimai](./giving.md) | `/giving/*` | Aukos, fondai, mokėjimų vartai, prenumeratos |
+| [Pranešimai](./messaging.md) | `/messaging/*` | Pokalbiai, pranešimai, įrenginiai, SMS |
+| [Doing](./doing.md) | `/doing/*` | Planai, užduotys, priskyrimai, automatizavimas, tvarkaraščiai |

@@ -1,5 +1,6 @@
 ---
 title: "Donacije"
+description: "Beležite, urejajte in poročajte o cerkvenih darovih v B1 Admin, od serij in skladov do letnih izjav ter spletnih darov prek Stripe ali PayPal."
 ---
 
 # Donacije

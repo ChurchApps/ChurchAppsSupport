@@ -1,5 +1,7 @@
 ---
-title: "Konten"
+title: "Fitur Konten di Aplikasi B1 Mobile"
+sidebar_label: "Konten"
+description: "Temukan khotbah, siaran langsung, pembacaan Alkitab, dan Ayat Hari Ini di aplikasi B1 Mobile, serta lihat fitur konten mana yang diaktifkan gereja Anda."
 ---
 
 # Konten
@@ -30,20 +32,20 @@ Lihat gambar ayat Alkitab yang ditata dengan indah dan berganti setiap hari. Gam
 
 ### Lessons (Tidak Digunakan Lagi)
 
-Layar Lessons bawaan aplikasi telah digantikan oleh **[FreePlay](/docs/freeplay/)** untuk pemutaran di ruang kelas, dan dengan mengunjungi [Lessons.church](https://lessons.church) secara langsung untuk menelusuri materi. Lihat [halaman referensi Lessons](./lessons) untuk detailnya.
+Layar Lessons bawaan aplikasi telah digantikan oleh **[FreePlay](/docs/freeplay/)** untuk pemutaran di ruang kelas, dan dengan mengunjungi [Lessons.church](https://lessons.church) secara langsung untuk menelusuri materi. Lihat [halaman referensi Lessons](./lessons.md) untuk detailnya.
 
 ## Mencari Konten
 
 Fitur konten tersedia melalui menu laci di aplikasi. Administrator gereja Anda yang menentukan fitur konten mana yang diaktifkan, sehingga Anda mungkin tidak melihat semua opsi di atas. Jika suatu fitur tidak tersedia, gereja Anda mungkin belum mengonfigurasinya.
 
 :::info
-Fitur konten dikonfigurasi oleh administrator gereja Anda melalui [B1 Admin](../../b1-admin/). Jika Anda tidak melihat fitur yang Anda harapkan, hubungi kantor gereja Anda.
+Fitur konten dikonfigurasi oleh administrator gereja Anda melalui [B1 Admin](../../b1-admin/index.md). Jika Anda tidak melihat fitur yang Anda harapkan, hubungi kantor gereja Anda.
 :::
 
 ## Langkah Selanjutnya
 
-- [Khotbah](./sermons) -- Telusuri dan tonton khotbah yang direkam
-- [Siaran Langsung](./live-streaming) -- Tonton siaran langsung
-- [Alkitab](./bible) -- Baca Kitab Suci di pembaca bawaan
-- [Ayat Harian](./verse-of-the-day) -- Lihat ayat harian hari ini
+- [Khotbah](./sermons.md) -- Telusuri dan tonton khotbah yang direkam
+- [Siaran Langsung](./live-streaming.md) -- Tonton siaran langsung
+- [Alkitab](./bible.md) -- Baca Kitab Suci di pembaca bawaan
+- [Ayat Harian](./verse-of-the-day.md) -- Lihat ayat harian hari ini
 - [FreePlay](/docs/freeplay/) -- Putar pelajaran di TV ruang kelas (menggantikan layar Lessons bawaan aplikasi yang sudah tidak digunakan)

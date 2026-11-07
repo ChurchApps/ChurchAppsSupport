@@ -1,5 +1,6 @@
 ---
 title: "Opas: Rakenna saarnakirjasto ja suoratoisto"
+description: "Tuo YouTube- tai Vimeo-saarnat, järjestä ne soittolistoiksi ja määritä toistuvat suoratoistot chatilla B1 Adminissa seurakunnan verkkosivustolle."
 ---
 
 # Rakenna saarnakirjasto ja suoratoisto

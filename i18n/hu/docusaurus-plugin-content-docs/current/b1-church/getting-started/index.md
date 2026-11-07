@@ -1,5 +1,7 @@
 ---
-title: "Első lépések"
+title: "Első lépések a B1.church tagi portállal"
+sidebar_label: "Első lépések"
+description: "Keresse meg egyháza B1.church webhelyét, hozzon létre tagi fiókot, és nézze meg, mit kínál a portál: csoportok, adakozás, bejelentkezés és tervek."
 ---
 
 # Első lépések a B1.church használatával

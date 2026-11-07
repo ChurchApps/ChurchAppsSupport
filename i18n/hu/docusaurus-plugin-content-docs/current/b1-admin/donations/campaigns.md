@@ -1,5 +1,6 @@
 ---
 title: "Kampányok és ígéretek"
+description: "Gyűjtési kampányok létrehozása a B1 Admin-ban, tagi ígéretek rögzítése, és a haladás követése célösszeg felé az alapokba érkező valós adományok alapján."
 ---
 
 # Kampányok és ígéretek
@@ -13,7 +14,7 @@ A kampányokkal adománygyűjtő akciót indíthat egy konkrét cél felé, pél
 <div class="prereqs">
 <h4>Mielőtt elkezdené</h4>
 
-- Hozza létre a [adományozási alapokat](funds) — minden kampány egy alaphoz kapcsolódik
+- Hozza létre a [adományozási alapokat](./funds.md) — minden kampány egy alaphoz kapcsolódik
 - Szüksége van hozzáférésre a B1 Admin Adományok részéhez
 
 </div>
@@ -66,6 +67,6 @@ Kattintson bármely kampány sorában a **Szerkesztés** gombra (vagy a kampány
 
 ## Kapcsolódó cikkek
 
-- [Adományok rögzítése](recording-donations) — a teljesítendő ígéreteket kielégítő tényleges adományok rögzítése
-- [Alapok](funds) — a kampányhoz társítandó alap beállítása
-- [Adományjelentések](donation-reports) — az alapok szerinti adományok jelentései
+- [Adományok rögzítése](./recording-donations.md) — a teljesítendő ígéreteket kielégítő tényleges adományok rögzítése
+- [Alapok](./funds.md) — a kampányhoz társítandó alap beállítása
+- [Adományjelentések](./donation-reports.md) — az alapok szerinti adományok jelentései

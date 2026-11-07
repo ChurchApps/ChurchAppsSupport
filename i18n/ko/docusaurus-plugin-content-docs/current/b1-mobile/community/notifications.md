@@ -1,5 +1,6 @@
 ---
 title: "알림"
+description: "B1 Mobile 앱의 푸시 알림을 설정한 뒤 메시지, 그룹, 봉사 관련 교회 알림을 확인하고, 열고, 지우세요."
 ---
 
 # 알림
@@ -13,7 +14,7 @@ B1 Mobile은 푸시 알림을 사용하여 교회에서 일어나는 일에 대�
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [B1 Mobile을 설치하고](../getting-started/installing) [로그인](../getting-started/logging-in)하세요
+- [B1 Mobile을 설치하고](../getting-started/installing.md) [로그인](../getting-started/logging-in.md)하세요
 - 기기 설정에서 B1 Mobile의 알림을 허용하세요
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile은 푸시 알림을 사용하여 교회에서 일어나는 일에 대�
 
 알림은 다음을 포함한 여러 활동을 다룰 수 있습니다:
 
-- **Messages** -- 누군가 [private message](./messaging)를 보낼 때.
-- **Group activity** -- 소속된 [groups](../groups/)의 업데이트, 게시물 및 대화.
+- **Messages** -- 누군가 [private message](./messaging.md)를 보낼 때.
+- **Group activity** -- 소속된 [groups](../groups/index.md)의 업데이트, 게시물 및 대화.
 - **Serving assignments** -- [계획](../serving/viewing-plans.md)에 배치되거나 배치 상태가 변경될 때.
 - **Other updates** -- 일반 공지사항 및 사용자와 관련된 활동.
 

@@ -1,5 +1,7 @@
 ---
-title: "Servisní pořadí"
+title: "Pamaldų tvarkos detalės B1.church programėlėje"
+sidebar_label: "Servisní pořadí"
+description: "Peržiūrėkite plano tvarkaraštį B1.church programėlėje: kumuliacinį laiką, dainų žodžius, tonacijos keitimą ir pamokų peržiūras jūsų komandai."
 ---
 
 # Servisní pořadí

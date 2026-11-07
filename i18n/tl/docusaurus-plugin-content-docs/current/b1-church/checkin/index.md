@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Check-In sa B1.church Member Portal"
+sidebar_label: "Check-In"
+description: "Mag-check in ang sarili at mga miyembro ng household sa serbisyo ng simbahan mula sa B1.church member portal, nang hindi na dumadaan sa kiosk, at pumili ng grupo."
 ---
 
 # Check-In

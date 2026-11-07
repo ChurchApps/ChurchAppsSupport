@@ -1,5 +1,6 @@
 ---
 title: "Entrada de Contagem de Presentes e Tendência"
+description: "Lance o total de presentes de um culto ou grupo no B1 Admin, sem lista nominal, e acompanhe os totais semanais no relatório Tendência de Presença."
 ---
 
 # Entrada de Contagem de Presentes e Tendência

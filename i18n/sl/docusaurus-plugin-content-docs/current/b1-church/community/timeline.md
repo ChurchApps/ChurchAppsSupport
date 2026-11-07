@@ -1,5 +1,6 @@
 ---
 title: "Časovnica"
+description: "Zavihek Časovnica v portalu članov B1.church je bil ukinjen. Skupinske klepete, dogodke, naloge in opozorila najdete na strani Jaz, pri ikoni zvonca in v vsaki skupini."
 ---
 
 # Časovnica
@@ -16,13 +17,13 @@ Samostojni zavihek **Časovnica** je bil ukinjen. Portal za člane se zdaj odpre
 | --- | --- |
 | Pogovori in objave skupin | Klepet znotraj vsake [skupine](../groups/conversations.md) (**Odpri klepet**) |
 | Prihajajoči dogodki za vas in vaše skupine | Stran **Jaz** (`/mobile/me`) in razdelek **Naslednji dogodek** v vsaki skupini |
-| Naloge in dodeljene službe | Stran **Jaz** in [Načrti](../plans/) |
+| Naloge in dodeljene službe | Stran **Jaz** in [Načrti](../plans/index.md) |
 | Nove pridige | Razdelek **Zadnja pridiga** na domači strani in zavihek [Pridige](../content/sermons.md) |
 | Vse, kar vas je opozorilo | Ikona **zvonca** v orodni vrstici aplikacije ali `/mobile/notifications` |
 
 ## Stran Jaz
 
-[Stran Jaz](../getting-started/me-page) je najbližja zamenjava za stari tok. Prikazuje, kaj je pred vami -- dodeljene službe, prijave na dogodke in dogodke skupin -- ter oddane obrazce, zgodovino udeležbe in vaša najnovejša obvestila. Neposredno vas povezuje na vaš profil, nastavitve obvestil, sporočila, darovanja in prijave.
+[Stran Jaz](../getting-started/me-page.md) je najbližja zamenjava za stari tok. Prikazuje, kaj je pred vami -- dodeljene službe, prijave na dogodke in dogodke skupin -- ter oddane obrazce, zgodovino udeležbe in vaša najnovejša obvestila. Neposredno vas povezuje na vaš profil, nastavitve obvestil, sporočila, darovanja in prijave.
 
 ## Obvestila
 

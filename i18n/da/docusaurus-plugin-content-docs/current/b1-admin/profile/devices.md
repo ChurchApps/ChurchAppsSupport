@@ -1,5 +1,6 @@
 ---
 title: "Administrer enheder"
+description: "Par, navngiv og fjern ChurchAppsPlayer- og FreePlay-skærme, der er forbundet til din konto i B1 Admin, så kirkens skærme er opdaterede og sikre."
 ---
 
 # Administrer enheder

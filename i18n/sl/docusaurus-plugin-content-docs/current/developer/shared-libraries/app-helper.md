@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "Referenca za paket @churchapps/apphelper: podpoti, aplikacije, ki uporabljajo posamezne izvoze, ter lokalni razvoj in objava v delovnem prostoru Packages."
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ Paket `@churchapps/apphelper` vsebuje skupne React komponente in pripomočke za 
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Namestite **Node.js** in **Git** -- glejte [Predpogoji](../setup/prerequisites)
+- Namestite **Node.js** in **Git** -- glejte [Predpogoji](../setup/prerequisites.md)
 - Seznanite se z nastavitvijo [delovnega prostora Packages](./index.md) in postopkom izdaje
 
 </div>
@@ -92,6 +93,6 @@ Izvoza ne odstranjujte in ne preimenujte, dokler zamenjava ni objavljena in vsi 
 
 ## Sorodni članki
 
-- **[Pripomočki](./helpers)** -- Osnovni pripomočki paket, ki se uporablja skupaj z AppHelper
-- **[Spletne aplikacije](../web-apps/)** -- Spletne aplikacije, ki uporabljajo ta paket
+- **[Pripomočki](./helpers.md)** -- Osnovni pripomočki paket, ki se uporablja skupaj z AppHelper
+- **[Spletne aplikacije](../web-apps/index.md)** -- Spletne aplikacije, ki uporabljajo ta paket
 - **[Pregled skupnih knjižnic](./index.md)** -- Nastavitev delovnega prostora, postopek izdaje in delovni tok lokalnih povezav

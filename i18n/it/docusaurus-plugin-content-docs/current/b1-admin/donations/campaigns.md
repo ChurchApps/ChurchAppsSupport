@@ -1,5 +1,6 @@
 ---
 title: "Campagne e impegni"
+description: "Crea campagne di raccolta fondi in B1 Admin, registra le promesse dei membri e monitora i progressi verso l'obiettivo rispetto alle donazioni ricevute."
 ---
 
 # Campagne e impegni
@@ -13,7 +14,7 @@ Le campagne vi permettono di organizzare una raccolta fondi verso un obiettivo s
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Configurate i vostri [fondi per le donazioni](funds) -- ogni campagna è collegata a un fondo
+- Configurate i vostri [fondi per le donazioni](./funds.md) -- ogni campagna è collegata a un fondo
 - Vi serve accesso alla sezione Donazioni di B1 Admin
 
 </div>
@@ -66,6 +67,6 @@ Fate clic su **Modifica** in qualsiasi riga di campagna (oppure su **Modifica ca
 
 ## Articoli correlati
 
-- [Registrare le donazioni](recording-donations) -- registrate le offerte effettive che rispettano gli impegni
-- [Fondi](funds) -- configurate il fondo da associare a una campagna
-- [Rapporti sulle donazioni](donation-reports) -- rapporti sulle donazioni per fondo
+- [Registrare le donazioni](./recording-donations.md) -- registrate le offerte effettive che rispettano gli impegni
+- [Fondi](./funds.md) -- configurate il fondo da associare a una campagna
+- [Rapporti sulle donazioni](./donation-reports.md) -- rapporti sulle donazioni per fondo

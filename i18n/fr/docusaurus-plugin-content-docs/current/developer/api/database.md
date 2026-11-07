@@ -1,5 +1,6 @@
 ---
 title: "Base de données"
+description: "Découvrez comment l’API ChurchApps répartit les données entre six bases MySQL, une par module, et comment configurer et initialiser les connexions."
 ---
 
 # Base de données
@@ -13,8 +14,8 @@ L'API ChurchApps utilise une architecture **base de données par module**. Chacu
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Installez **MySQL 8.0+** -- voir [Prérequis](../setup/prerequisites)
-- Configurez les chaînes de connexion à la base de données dans votre fichier `.env` -- voir [Variables d'environnement](../setup/environment-variables)
+- Installez **MySQL 8.0+** -- voir [Prérequis](../setup/prerequisites.md)
+- Configurez les chaînes de connexion à la base de données dans votre fichier `.env` -- voir [Variables d'environnement](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Décisions de conception clés
 
 - **Une base de données par module** -- Chaque module gère sa propre base de données MySQL avec un pool de connexions dédié (géré par `KyselyPool`). Cela garde les modules découplés et permet une évolution indépendante des schémas.
-- **Propriété exclusive** -- Les tables d'un module ne sont lues et écrites que par le code de ce module. Lorsqu'un autre module a besoin de ces données, il appelle la passerelle du module propriétaire plutôt que d'interroger directement les tables -- voir [Communication inter-modules](./module-structure#cross-module-communication).
+- **Propriété exclusive** -- Les tables d'un module ne sont lues et écrites que par le code de ce module. Lorsqu'un autre module a besoin de ces données, il appelle la passerelle du module propriétaire plutôt que d'interroger directement les tables -- voir [Communication inter-modules](./module-structure.md#cross-module-communication).
 - **Motif dépôt (repository) sans ORM** -- Tous les accès aux données passent par des classes de dépôt qui construisent du SQL typé avec le générateur de requêtes Kysely, contre le schéma du module. Cela offre un contrôle total sur la performance et le comportement des requêtes.
 - **Multi-tenant par conception** -- Chaque requête est délimitée par `churchId`. Toutes les tables incluent une colonne `churchId`, et la couche de dépôt applique automatiquement l'isolation des tenants.
 
@@ -129,5 +130,5 @@ Cette contrainte est ce qui rend les frontières de module réelles : chaque sch
 
 ## Articles connexes
 
-- **[Structure des modules](./module-structure)** -- Comment les contrôleurs et les dépôts sont organisés au sein de chaque module
-- **[Configuration locale de l'API](./local-setup)** -- Guide de configuration complet, étape par étape
+- **[Structure des modules](./module-structure.md)** -- Comment les contrôleurs et les dépôts sont organisés au sein de chaque module
+- **[Configuration locale de l'API](./local-setup.md)** -- Guide de configuration complet, étape par étape

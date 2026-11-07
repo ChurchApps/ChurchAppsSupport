@@ -1,5 +1,7 @@
 ---
-title: "Planificación de lecciones"
+title: "Schemalägga lektioner från Lessons.church i B1 Admin"
+sidebar_label: "Planificación de lecciones"
+description: "Koppla Lessons.church till B1 Admin och schemalägg sedan lektioner, schemalägg en serie i bulk eller tillämpa en årsplan på en verksamhets gudstjänstplaner."
 ---
 
 # Planificación de lecciones desde Lessons.church

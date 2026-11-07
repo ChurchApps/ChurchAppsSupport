@@ -1,5 +1,6 @@
 ---
 title: "Paikallisen API:n asennus"
+description: "Ota ChurchApps-API käyttöön paikallisesti: kloonaa repo, määritä kuusi MySQL-moduulitietokantaa, alusta skeema ja käynnistä kehityspalvelin uudelleenlatauksella."
 ---
 
 # Paikallisen API:n asennus
@@ -13,9 +14,9 @@ Tämä opas opastaa sinua ChurchApps API:n asentamisessa paikalliseen kehitysymp
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Asenna **Node.js 24+**, **Git** ja **MySQL 8.0+** -- katso [Esivaatimukset](../setup/prerequisites)
+- Asenna **Node.js 24+**, **Git** ja **MySQL 8.0+** -- katso [Esivaatimukset](../setup/prerequisites.md)
 - Luo MySQL-käyttäjä, jolla on oikeudet tietokantojen luomiseen
-- Tutustu [Ympäristömuuttujat](../setup/environment-variables) -viitteeseen API:n asetusten osalta
+- Tutustu [Ympäristömuuttujat](../setup/environment-variables.md) -viitteeseen API:n asetusten osalta
 
 </div>
 
@@ -82,7 +83,7 @@ API käynnistyy hot reload -toiminnolla osoitteessa [http://localhost:8084](http
 
 ## Julkaisu
 
-Staging-ympäristö on poistettu käytöstä. API julkaistaan demo-ympäristöön jokaisella `main`-haaraan tehdyllä pushilla ja tuotantoon manuaalisella **Deploy Prod** -työnkululla, joka myös soveltaa odottavat tietokantamigraatiot. Lisätietoja on sivulla [API-julkaisu](../deployment/apis).
+Staging-ympäristö on poistettu käytöstä. API julkaistaan demo-ympäristöön jokaisella `main`-haaraan tehdyllä pushilla ja tuotantoon manuaalisella **Deploy Prod** -työnkululla, joka myös soveltaa odottavat tietokantamigraatiot. Lisätietoja on sivulla [API-julkaisu](../deployment/apis.md).
 
 ## Paikallinen kirjastokehitys
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Näin voit testata kirjastomuutoksia API:a vastaan julkaisematta niitä npm:ään. Lisätietoja on sivulla [Jaetut kirjastot](../shared-libraries/#local-development-against-a-consuming-app) -- ja älä koskaan tee commit portaalin ratkaisua, jonka link kirjoittaa `package.json`-tiedostoon.
+Näin voit testata kirjastomuutoksia API:a vastaan julkaisematta niitä npm:ään. Lisätietoja on sivulla [Jaetut kirjastot](../shared-libraries/index.md#local-development-against-a-consuming-app) -- ja älä koskaan tee commit portaalin ratkaisua, jonka link kirjoittaa `package.json`-tiedostoon.
 
 ## Aiheeseen liittyvät artikkelit
 
-- **[Tietokanta](./database)** -- Moduulikohtaisen tietokantarakenteen ymmärtäminen
-- **[Moduulin rakenne](./module-structure)** -- Kontrollerien, repositorioiden ja mallien järjestely
-- **[Jaetut kirjastot](../shared-libraries/)** -- Työskentely `@churchapps/helpers`- ja `@churchapps/apihelper`-kirjastojen kanssa
+- **[Tietokanta](./database.md)** -- Moduulikohtaisen tietokantarakenteen ymmärtäminen
+- **[Moduulin rakenne](./module-structure.md)** -- Kontrollerien, repositorioiden ja mallien järjestely
+- **[Jaetut kirjastot](../shared-libraries/index.md)** -- Työskentely `@churchapps/helpers`- ja `@churchapps/apihelper`-kirjastojen kanssa

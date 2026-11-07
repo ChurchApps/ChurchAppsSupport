@@ -1,5 +1,6 @@
 ---
 title: "Membres du groupe"
+description: "Ajoutez, retirez et désignez les responsables des membres d'un groupe dans B1 Admin, puis envoyez la liste par courriel ou SMS, imprimez-la ou exportez-la depuis la page du groupe."
 ---
 
 # Membres du groupe

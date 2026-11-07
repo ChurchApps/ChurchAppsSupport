@@ -1,5 +1,6 @@
 ---
 title: "Campanii și promisiuni"
+description: "Creați campanii de strângere de fonduri în B1 Admin, înregistrați promisiunile membrilor și urmăriți progresul spre obiectiv față de donațiile reale pe fond."
 ---
 
 # Campanii și promisiuni
@@ -13,7 +14,7 @@ Campaniile vă permit să organizați o strângere de fonduri către un obiectiv
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Configurați [fondurile de donații](funds) — fiecare campanie este legată de un fond
+- Configurați [fondurile de donații](./funds.md) — fiecare campanie este legată de un fond
 - Aveți nevoie de acces la secțiunea Donații din B1 Admin
 
 </div>
@@ -66,6 +67,6 @@ Faceți clic pe **Edit** de pe orice rând de campanie (sau pe **Edit Campaign**
 
 ## Articole conexe
 
-- [Înregistrarea donațiilor](recording-donations) — înregistrați darurile efective care îndeplinesc promisiunile
-- [Fonduri](funds) — configurați fondul care se asociază cu o campanie
-- [Rapoarte de donații](donation-reports) — rapoarte despre donații pe fond
+- [Înregistrarea donațiilor](./recording-donations.md) — înregistrați darurile efective care îndeplinesc promisiunile
+- [Fonduri](./funds.md) — configurați fondul care se asociază cu o campanie
+- [Rapoarte de donații](./donation-reports.md) — rapoarte despre donații pe fond

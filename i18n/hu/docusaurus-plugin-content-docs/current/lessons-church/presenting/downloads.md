@@ -1,5 +1,6 @@
 ---
 title: "Letöltések és anyagok"
+description: "Nyomtatható feladatlapok, vezetői útmutatók és PDF-ek letöltése a Lessons.church leckéihez, tanulmányaihoz és programjaihoz."
 ---
 
 # Letöltések és anyagok

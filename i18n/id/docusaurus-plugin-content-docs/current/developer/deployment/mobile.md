@@ -1,5 +1,6 @@
 ---
 title: "Penerapan Aplikasi Seluler"
+description: "Panduan membangun rilis Android dan iOS aplikasi B1 Mobile dengan Expo EAS, mengirimkannya ke toko aplikasi, dan mendorong pembaruan OTA."
 ---
 
 # Penerapan Aplikasi Seluler
@@ -13,7 +14,7 @@ Aplikasi seluler ChurchApps dibangun dan diterapkan menggunakan **Expo EAS Build
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Siapkan aplikasi seluler secara lokal -- lihat [B1 Mobile](../mobile/b1-mobile)
+- Siapkan aplikasi seluler secara lokal -- lihat [B1 Mobile](../mobile/b1-mobile.md)
 - Pasang dan konfigurasikan [EAS CLI](https://docs.expo.dev/eas/)
 - Pastikan Anda memiliki akses ke Google Play Console (Android) dan/atau Apple App Store Connect (iOS)
 
@@ -77,6 +78,6 @@ Jika lupa memperbarui nomor versi di semua berkas, build akan gagal atau aplikas
 
 ## Artikel Terkait
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- Panduan penyiapan lokal dan pengembangan
-- **[Penerapan API](./apis)** -- Menerapkan layanan backend API
-- **[Penerapan Aplikasi Web](./web-apps)** -- Menerapkan aplikasi web frontend
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- Panduan penyiapan lokal dan pengembangan
+- **[Penerapan API](./apis.md)** -- Menerapkan layanan backend API
+- **[Penerapan Aplikasi Web](./web-apps.md)** -- Menerapkan aplikasi web frontend

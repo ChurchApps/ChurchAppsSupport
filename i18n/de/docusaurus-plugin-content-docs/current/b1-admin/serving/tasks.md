@@ -1,5 +1,6 @@
 ---
 title: "Aufgaben"
+description: "Aufgaben in B1 Admin erstellen, zuweisen und abschließen; zu finden unter Serving > My Work, mit Fälligkeitserinnerungen, damit nichts vergessen wird."
 ---
 
 # Aufgaben

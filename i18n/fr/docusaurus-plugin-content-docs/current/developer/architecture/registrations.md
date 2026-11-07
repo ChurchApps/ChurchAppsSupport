@@ -1,12 +1,13 @@
 ---
 title: "Inscriptions aux événements"
+description: "Inscriptions aux événements dans B1 Admin et B1App : types de participants, options payantes, codes promo, paiements via la passerelle et liste d’attente."
 ---
 
 # Inscriptions aux événements
 
 <div class="article-intro">
 
-L'inscription native aux événements réside dans le module content et, depuis la vague des inscriptions payantes, dispose d'un modèle commercial complet : types de participants à prix, sélections optionnelles à prix, codes de réduction, paiements par la passerelle de dons existante de l'église, et une liste d'attente pilotée par les statuts. Le circuit de l'argent réutilise volontairement la pile des dons — le contrôleur d'inscription débite par la même abstraction `GatewayService` / `IGatewayProvider` décrite dans [Dons](./giving), de sorte qu'aucune donnée de carte ni connaissance de SDK de passerelle ne réside dans le module content. Cette page décrit le modèle de données, les règles de tarification et de capacité, et les flux d'inscription, de paiement et de liste d'attente.
+L'inscription native aux événements réside dans le module content et, depuis la vague des inscriptions payantes, dispose d'un modèle commercial complet : types de participants à prix, sélections optionnelles à prix, codes de réduction, paiements par la passerelle de dons existante de l'église, et une liste d'attente pilotée par les statuts. Le circuit de l'argent réutilise volontairement la pile des dons — le contrôleur d'inscription débite par la même abstraction `GatewayService` / `IGatewayProvider` décrite dans [Dons](./giving.md), de sorte qu'aucune donnée de carte ni connaissance de SDK de passerelle ne réside dans le module content. Cette page décrit le modèle de données, les règles de tarification et de capacité, et les flux d'inscription, de paiement et de liste d'attente.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-La tokenisation se fait dans le navigateur exactement comme pour les dons (voir [Dons](./giving)) — l'assistant réutilise le registre des fournisseurs de paiement d'apphelper, de sorte que les membres connectés peuvent payer avec des cartes enregistrées et que les visiteurs tokenisent une nouvelle carte. Le contrôleur reprend les particularités des fournisseurs de `DonateController` (identifiants de moyens de paiement `pm-{id}` de Kingdom Funding, réponses SCA `requires_action` de Stripe renvoyées au client sans enregistrer de paiement). Un débit réussi écrit une ligne `registrationPayments`, incrémente `amountPaid`, et confirme l'inscription. **Les remboursements ne sont pas implémentés** — une inscription payante annulée conserve ses lignes de paiement, et tout remboursement se traite hors de la plateforme, dans le tableau de bord de la passerelle.
+La tokenisation se fait dans le navigateur exactement comme pour les dons (voir [Dons](./giving.md)) — l'assistant réutilise le registre des fournisseurs de paiement d'apphelper, de sorte que les membres connectés peuvent payer avec des cartes enregistrées et que les visiteurs tokenisent une nouvelle carte. Le contrôleur reprend les particularités des fournisseurs de `DonateController` (identifiants de moyens de paiement `pm-{id}` de Kingdom Funding, réponses SCA `requires_action` de Stripe renvoyées au client sans enregistrer de paiement). Un débit réussi écrit une ligne `registrationPayments`, incrémente `amountPaid`, et confirme l'inscription. **Les remboursements ne sont pas implémentés** — une inscription payante annulée conserve ses lignes de paiement, et tout remboursement se traite hors de la plateforme, dans le tableau de bord de la passerelle.
 
 Les deux points d'entrée passent par le même chemin de code : `register` (paiement à l'inscription) et `pay` (paiement du solde / finalisation d'une liste d'attente).
 
@@ -147,7 +148,7 @@ Les recherches entre modules (résolution ou création de la personne visiteuse,
 
 ## Pages connexes
 
-- [Dons](./giving) — l'abstraction de passerelle, le registre des fournisseurs et le modèle de tokenisation que cette fonction réutilise
-- [Points de terminaison Content](../api/endpoints/content) — la surface REST du module content
-- [Webhooks](../api/webhooks) — l'événement `registration.created`
-- [Structure des modules](../api/module-structure) — organisation côté serveur du module content
+- [Dons](./giving.md) — l'abstraction de passerelle, le registre des fournisseurs et le modèle de tokenisation que cette fonction réutilise
+- [Points de terminaison Content](../api/endpoints/content.md) — la surface REST du module content
+- [Webhooks](../api/webhooks.md) — l'événement `registration.created`
+- [Structure des modules](../api/module-structure.md) — organisation côté serveur du module content

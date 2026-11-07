@@ -1,5 +1,6 @@
 ---
 title: "Leden opzoeken"
+description: "Vind je gezin op de B1 Checkin-kiosk door op cijfers van het telefoonnummer of op naam te zoeken, en meld je aan als gast als je voor het eerst komt."
 ---
 
 # Leden opzoeken
@@ -13,7 +14,7 @@ Na het selecteren van een dienst belandt u op het scherm voor ledenzoeking. Dit 
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- [Selecteer een dienst](./selecting-service) op het dienstenscherm
+- [Selecteer een dienst](./selecting-service.md) op het dienstenscherm
 - Zorg ervoor dat uw huishouden door een kerkbeheerder [is toegevoegd aan het systeem](../../b1-admin/people/adding-people.md)
 
 </div>
@@ -45,7 +46,7 @@ De app zoekt naar leden wiens naam overeenkomt met wat u hebt getypt.
 
 Zoekresultaten verschijnen als kaarten onder het zoekveld. Elke kaart toont de **naam** van de persoon en **foto** (indien aanwezig).
 
-Tik op een kaart van een persoon om deze te selecteren. De app laadt alle leden van het huishouden van die persoon en neemt u mee naar het [scherm voor huishoudhoofddeling](./household-review).
+Tik op een kaart van een persoon om deze te selecteren. De app laadt alle leden van het huishouden van die persoon en neemt u mee naar het [scherm voor huishoudhoofddeling](./household-review.md).
 
 :::tip
 Zoeken naar de laatste 4 cijfers van een telefoonnummer is de snelste manier om uw familie op te zoeken. Moedig leden aan om deze methode te gebruiken voor een snellere aanmeldingservaring.
@@ -57,4 +58,4 @@ Als er geen resultaten zijn gevonden, geeft de app een bericht weer. Controleer 
 
 ## Volgende stap
 
-Na het selecteren van een persoon, zult u [uw huishouden beoordelen](./household-review) en groepstoewijzingen beheren.
+Na het selecteren van een persoon, zult u [uw huishouden beoordelen](./household-review.md) en groepstoewijzingen beheren.

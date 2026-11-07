@@ -1,5 +1,6 @@
 ---
 title: "Situs Web"
+description: "Ikhtisar pembuat situs B1 Admin: halaman, blog, blok, tampilan, file, dan kalender, dengan tautan ke panduan pengaturan dan penyuntingan."
 ---
 
 # Situs Web
@@ -22,7 +23,7 @@ Tautan navigasi Anda ditampilkan dalam struktur pohon. Anda dapat mengurutkan ul
 
 ### Blog
 
-Terbitkan berita, pembaruan, dan renungan sebagai postingan blog di `/blog` di situs Anda, lengkap dengan feed RSS. Lihat panduan [Blog](blog).
+Terbitkan berita, pembaruan, dan renungan sebagai postingan blog di `/blog` di situs Anda, lengkap dengan feed RSS. Lihat panduan [Blog](./blog.md).
 
 ### Blok
 
@@ -30,24 +31,24 @@ Buat komponen konten yang dapat digunakan kembali dan ditempatkan di beberapa ha
 
 ### Tampilan
 
-Sesuaikan tema, warna, font, logo, dan spasi situs web Anda. Anda dapat menerapkan tema gaya yang sudah dibuat sebelumnya untuk memulai dengan cepat, atau menyempurnakan setiap detail dengan editor palet warna, pengaturan tipografi, dan CSS kustom. Lihat panduan [Tampilan](appearance) untuk detail lengkapnya.
+Sesuaikan tema, warna, font, logo, dan spasi situs web Anda. Anda dapat menerapkan tema gaya yang sudah dibuat sebelumnya untuk memulai dengan cepat, atau menyempurnakan setiap detail dengan editor palet warna, pengaturan tipografi, dan CSS kustom. Lihat panduan [Tampilan](./appearance.md) untuk detail lengkapnya.
 
 ### File
 
-Unggah dan kelola semua aset media Anda -- gambar, dokumen, dan file lainnya -- di satu lokasi terpusat, lalu salin tautan file untuk digunakan di mana pun di situs Anda. Lihat [File](files) untuk informasi selengkapnya.
+Unggah dan kelola semua aset media Anda -- gambar, dokumen, dan file lainnya -- di satu lokasi terpusat, lalu salin tautan file untuk digunakan di mana pun di situs Anda. Lihat [File](./files.md) untuk informasi selengkapnya.
 
 ### Kalender
 
 Terbitkan kalender acara di situs web Anda agar pengunjung dapat melihat apa yang sedang berlangsung di gereja Anda. Buat kalender terkurasi yang menggabungkan acara dari beberapa grup ke dalam satu tampilan. Kalender memiliki item **Calendars** tersendiri di menu B1 Admin, terpisah dari **Website**.
 
 :::tip
-Mulailah dengan [Pengaturan Awal](initial-setup) jika Anda mengonfigurasi situs web untuk pertama kali. Panduan ini akan memandu Anda melalui pengaturan domain, pembuatan halaman pertama, dan konfigurasi tampilan situs Anda.
+Mulailah dengan [Pengaturan Awal](./initial-setup.md) jika Anda mengonfigurasi situs web untuk pertama kali. Panduan ini akan memandu Anda melalui pengaturan domain, pembuatan halaman pertama, dan konfigurasi tampilan situs Anda.
 :::
 
 ## Langkah Selanjutnya
 
-- [Pengaturan Awal](initial-setup) -- Jalankan situs web Anda untuk pertama kali
-- [Mengelola Halaman](managing-pages) -- Pelajari cara membuat dan mengatur halaman Anda
-- [Menggunakan Editor Halaman](page-editor) -- Bangun dan atur gaya konten halaman Anda dengan editor visual
-- [Tampilan](appearance) -- Sesuaikan tampilan dan nuansa situs Anda
-- [File](files) -- Unggah dan kelola file media
+- [Pengaturan Awal](./initial-setup.md) -- Jalankan situs web Anda untuk pertama kali
+- [Mengelola Halaman](./managing-pages.md) -- Pelajari cara membuat dan mengatur halaman Anda
+- [Menggunakan Editor Halaman](./page-editor.md) -- Bangun dan atur gaya konten halaman Anda dengan editor visual
+- [Tampilan](./appearance.md) -- Sesuaikan tampilan dan nuansa situs Anda
+- [File](./files.md) -- Unggah dan kelola file media

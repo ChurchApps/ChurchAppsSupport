@@ -1,5 +1,7 @@
 ---
-title: "Sermonlar"
+title: "B1.church Web Sitenizde Vaazlara Göz Atma"
+sidebar_label: "Sermonlar"
+description: "B1.church sitesinde kilise kitaplığınızdaki kayıtlı vaazlara göz atın ve izleyin; seriler veya oynatma listeleri halinde gruplanmıştır. Oturum açmanız gerekmez."
 ---
 
 # Sermonlar

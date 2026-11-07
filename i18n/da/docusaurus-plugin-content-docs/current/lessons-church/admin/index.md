@@ -1,5 +1,6 @@
 ---
 title: "Administration"
+description: "Oversigt over Lessons.church-adminområdet i ChurchApps, med hvordan du administrerer programmer, studier, lektioner, ressourcer, statistik og eksterne curriculum-udbydere."
 ---
 
 # Administration

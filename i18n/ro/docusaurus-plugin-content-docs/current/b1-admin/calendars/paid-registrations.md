@@ -1,5 +1,6 @@
 ---
 title: "Înregistrări cu plată"
+description: "Configurați în B1 Admin înscrieri plătite: tipuri de participanți cu preț, extra-opțiuni, coduri de reducere, liste de așteptare și plăți online."
 ---
 
 # Înregistrări cu plată
@@ -17,7 +18,7 @@ title: "Înregistrări cu plată"
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Activează mai întâi înregistrarea pentru eveniment — vezi [Crearea calendarelor](creating-calendars#enabling-event-registration)
+- Activează mai întâi înregistrarea pentru eveniment — vezi [Crearea calendarelor](./creating-calendars.md#enabling-event-registration)
 - Pentru a colecta plăți online, biserica ta trebuie să aibă [donațiile online configurate](../donations/online-giving-setup.md) (Stripe, PayPal sau Kingdom Funding). Evenimentele gratuite nu necesită configurarea donațiilor. Fără donații online, înregistrările cu plată funcționează în continuare, dar oamenii plătesc direct bisericii — vezi [Biserici fără donații online](#churches-without-online-giving).
 
 </div>
@@ -66,7 +67,7 @@ Fiecare cod afișează un contor **Uses**, ca să vezi de câte ori a fost folos
 Activează **Enable Waitlist** în cardul Registration Settings. Când evenimentul ajunge la capacitate:
 
 - Persoanelor care se înscriu li se oferă un loc pe lista de așteptare în loc să fie refuzate. Ele completează aceeași înregistrare (plata este omisă cât timp sunt pe lista de așteptare).
-- Când cineva anulează, înregistrarea cea mai veche de pe lista de așteptare este **promovată automat** și primește un e-mail care anunță că s-a eliberat un loc. Dacă datorează un sold, e-mailul le oferă un link către [Înregistrările mele](../../b1-church/events/my-registrations) de pe site-ul B1 al bisericii, unde pot finaliza plata.
+- Când cineva anulează, înregistrarea cea mai veche de pe lista de așteptare este **promovată automat** și primește un e-mail care anunță că s-a eliberat un loc. Dacă datorează un sold, e-mailul le oferă un link către [Înregistrările mele](../../b1-church/events/my-registrations.md) de pe site-ul B1 al bisericii, unde pot finaliza plata.
 - Poți promova manual pe cineva oricând, cu acțiunea **Promote** de pe rândul de pe lista de așteptare — util după ce mărești capacitatea evenimentului.
 
 :::info
@@ -79,7 +80,7 @@ Deschide un eveniment din pagina Registrations pentru a vedea toate înregistră
 
 - Apasă iconița de detalii de pe un rând pentru a deschide dialogul **Registration Details** — membri, selecții, plătit/sold și un tabel **Payments** cu fiecare plată (sumă, metodă, dată).
 - **Export CSV** descarcă lista completă, cu coloane pentru membri, tipuri de participanți, selecții, plătit/total/sold, status și câte o coloană pentru fiecare întrebare de înregistrare.
-- **Add Attendee** înregistrează o persoană înscrisă offline sau telefonic, pentru orice persoană din biserica ta. Alege persoana și, la un eveniment cu plată, tipul ei de participant. Cardul ei nu este debitat: o înregistrare cu plată se salvează ca **pending**, cu suma integrală ca sold de plată. Dacă biserica ta are donații online, persoana poate plăti din [Înregistrările mele](../../b1-church/events/my-registrations); altfel, încasează suma personal. Pentru a adăuga participanți ai nevoie de permisiunea Registrations Edit.
+- **Add Attendee** înregistrează o persoană înscrisă offline sau telefonic, pentru orice persoană din biserica ta. Alege persoana și, la un eveniment cu plată, tipul ei de participant. Cardul ei nu este debitat: o înregistrare cu plată se salvează ca **pending**, cu suma integrală ca sold de plată. Dacă biserica ta are donații online, persoana poate plăti din [Înregistrările mele](../../b1-church/events/my-registrations.md); altfel, încasează suma personal. Pentru a adăuga participanți ai nevoie de permisiunea Registrations Edit.
 
 :::info
 Rambursările nu se procesează în B1. Dacă trebuie să rambursezi o înregistrare cu plată anulată, emite rambursarea din panoul furnizorului tău de donații (de exemplu, Stripe).
@@ -94,12 +95,12 @@ Plățile trec prin același gateway de donații pe care biserica ta îl folose�
 Dacă biserica ta nu are configurat un furnizor de donații, evenimentele cu plată pot primi în continuare înregistrări. Pasul de plată le spune persoanelor înscrise că plata online nu este disponibilă și că pot plăti direct bisericii, iar un buton **Register and Pay Later** salvează înregistrarea. Aceasta se salvează ca **pending**, cu suma integrală ca sold de plată, și apare pe listă cu un avertisment de sold. Încasează banii în modul obișnuit al bisericii tale.
 
 :::info
-B1 nu are o modalitate de a marca o plată offline ca fiind primită. Soldul rămâne pe listă și pe cardul [Înregistrările mele](../../b1-church/events/my-registrations) al persoanei înscrise și după ce îl încasezi, așa că ține propria evidență a celor care au plătit.
+B1 nu are o modalitate de a marca o plată offline ca fiind primită. Soldul rămâne pe listă și pe cardul [Înregistrările mele](../../b1-church/events/my-registrations.md) al persoanei înscrise și după ce îl încasezi, așa că ține propria evidență a celor care au plătit.
 :::
 
 ## Articole conexe
 
-- [Crearea calendarelor](creating-calendars#enabling-event-registration) — activează înregistrarea și setările de bază
+- [Crearea calendarelor](./creating-calendars.md#enabling-event-registration) — activează înregistrarea și setările de bază
 - [Configurarea donațiilor online](../donations/online-giving-setup.md) — configurează gateway-ul de plată folosit la finalizarea comenzii
-- [Înscrierea la evenimente](../../b1-church/events/registering) — ce văd membrii când se înscriu
-- [Înregistrările mele](../../b1-church/events/my-registrations) — cum plătesc membrii soldurile și își modifică înregistrările
+- [Înscrierea la evenimente](../../b1-church/events/registering.md) — ce văd membrii când se înscriu
+- [Înregistrările mele](../../b1-church/events/my-registrations.md) — cum plătesc membrii soldurile și își modifică înregistrările

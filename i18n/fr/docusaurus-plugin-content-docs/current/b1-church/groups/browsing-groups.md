@@ -1,5 +1,6 @@
 ---
 title: "Parcourir les groupes"
+description: "Parcourez les groupes publics de votre église sur B1.church par catégorie, puis comparez horaires, lieux et descriptions sur chaque fiche."
 ---
 
 # Parcourir les groupes

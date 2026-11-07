@@ -1,5 +1,6 @@
 ---
 title: "Predpoklady"
+description: "Inštalácia Node.js, npm, Gitu a nástrojov pre platformu pred prácou na projektoch ChurchApps ako B1 Admin, Lessons.church, FreePlay alebo lokálne API."
 ---
 
 # Predpoklady
@@ -13,7 +14,7 @@ Nástroje, ktoré potrebujete, závisia od toho, na ktorých projektoch plánuje
 <div class="prereqs">
 <h4>Skôr než začnete</h4>
 
-- Prečítajte si [Prehľad projektov](./project-overview) a rozhodnite sa, na ktorých projektoch chcete pracovať
+- Prečítajte si [Prehľad projektov](./project-overview.md) a rozhodnite sa, na ktorých projektoch chcete pracovať
 - Na inštaláciu softvéru potrebujete na svojom vývojovom počítači správcovský (administrátorský) prístup
 
 </div>
@@ -40,7 +41,7 @@ Ak plánujete spúšťať API lokálne (namiesto pripojenia k demo API):
 |------|---------|-------|
 | **MySQL** | 8.0+ | Každý modul API používa vlastnú databázu |
 
-Pre základné API budete potrebovať šesť databáz: `membership`, `attendance`, `content`, `giving`, `messaging` a `doing`. API obsahuje skripty na inicializáciu schémy -- pozrite si návod [Lokálne nastavenie API](../api/local-setup).
+Pre základné API budete potrebovať šesť databáz: `membership`, `attendance`, `content`, `giving`, `messaging` a `doing`. API obsahuje skripty na inicializáciu schémy -- pozrite si návod [Lokálne nastavenie API](../api/local-setup.md).
 
 ## Vývoj mobilnej aplikácie
 
@@ -110,5 +111,5 @@ mysql --version   # Potrebné iba pre lokálny vývoj API
 
 ## Ďalšie kroky
 
-- **[Prehľad projektov](./project-overview)** -- Pozrite si všetky projekty a to, čo robia
-- **[Premenné prostredia](./environment-variables)** -- Nastavte svoje súbory `.env`
+- **[Prehľad projektov](./project-overview.md)** -- Pozrite si všetky projekty a to, čo robia
+- **[Premenné prostredia](./environment-variables.md)** -- Nastavte svoje súbory `.env`

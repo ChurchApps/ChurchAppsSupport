@@ -1,5 +1,6 @@
 ---
 title: "Installera som app (PWA)"
+description: "Installera B1.church som app på iPhone eller Android från medlemsportalen och lägg till ikonen på hemskärmen i Safari eller Chrome."
 ---
 
 # Installera som app (PWA)

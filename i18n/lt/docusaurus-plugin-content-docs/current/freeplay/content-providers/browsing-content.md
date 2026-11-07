@@ -1,5 +1,6 @@
 ---
 title: "Turinio naršymas ir atsisiuntimas"
+description: "Naršykite prijungto teikėjo biblioteką FreePlay su TV pultu, tada atsisiųskite arba transliuokite pamokas ir vaizdo įrašus atkūrimui."
 ---
 
 # Turinio naršymas ir atsisiuntimas
@@ -13,7 +14,7 @@ Prisijungę prie turinio teikėjo, galite naršyti jo biblioteką, atsisiųsti f
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Prisijunkite bent prie vieno turinio teikėjo – žr. [Prisijungimas prie teikėjų](./connecting-providers)
+- Prisijunkite bent prie vieno turinio teikėjo – žr. [Prisijungimas prie teikėjų](./connecting-providers.md)
 - Turėkite televizoriaus pultą navigacijai
 
 </div>
@@ -38,7 +39,7 @@ Galite gilintis tiek, kiek leidžia teikėjo turinio struktūra. Naršyklė seka
 
 ## Lessons.church naršymas
 
-[Lessons.church](../../lessons-church/) biblioteka yra sudaryta taip pat, kaip ir jos svetainė. Viršutiniame lygmenyje matysite du aplankus:
+[Lessons.church](../../lessons-church/index.md) biblioteka yra sudaryta taip pat, kaip ir jos svetainė. Viršutiniame lygmenyje matysite du aplankus:
 
 - **Lessons** – Gilinkitės pagal **programą**, tada **studiją**, tada **pamoką**. Kiekviena pamoka išvardija savo **vietas** – pamokos versijas konkrečiai amžiaus grupei ar aplinkai, pvz., Preschool arba Elementary. Pasirinkite vietą, kad atidarytumėte tos pamokos versijos atsisiuntimo ekraną
 - **Add-Ons** – Papildomi vaizdo įrašai ir ištekliai, sugrupuoti pagal kategoriją
@@ -78,7 +79,7 @@ Grojimo metu naudokite šiuos valdymo mygtukus:
 Kai išeinate iš grotuvo, grįžtate į turinio naršyklę dabartinio teikėjo šakniniame lygmenyje.
 
 :::info
-Visą grotuvo valdymo mygtukų žinyną rasite [Turinio grojimas](./playing-content).
+Visą grotuvo valdymo mygtukų žinyną rasite [Turinio grojimas](./playing-content.md).
 :::
 
 ## Perjungimas tarp teikėjų

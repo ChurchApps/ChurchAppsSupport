@@ -1,5 +1,6 @@
 ---
 title: "Anúncios"
+description: "Exiba em loop uma pasta de slides na TV FreePlay para avisos no saguão ou antes da aula: escolha a pasta, mantenha-a sincronizada e desative ao terminar."
 ---
 
 # Anúncios
@@ -13,7 +14,7 @@ O FreePlay pode reproduzir em loop uma pasta de slides de anúncios na sua TV �
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Conecte-se a um provedor de conteúdo](./connecting-providers) que tenha os seus slides de anúncios, como Dropbox ou OneDrive
+- [Conecte-se a um provedor de conteúdo](./connecting-providers.md) que tenha os seus slides de anúncios, como Dropbox ou OneDrive
 - Coloque as imagens ou vídeos que você quer reproduzir em loop em uma única pasta nesse provedor
 
 </div>
@@ -37,7 +38,7 @@ Depois que os slides forem baixados, um item **Announcements** aparece perto do 
 - Após o último slide, o loop recomeça pelo primeiro
 - Se a pasta tiver um único vídeo, ele se repete continuamente
 
-O loop é reproduzido a partir dos arquivos salvos no dispositivo, então continua funcionando sem conexão com a internet. Você pode usar os mesmos controles remotos de qualquer outro conteúdo — consulte [Reproduzindo Conteúdo](./playing-content).
+O loop é reproduzido a partir dos arquivos salvos no dispositivo, então continua funcionando sem conexão com a internet. Você pode usar os mesmos controles remotos de qualquer outro conteúdo — consulte [Reproduzindo Conteúdo](./playing-content.md).
 
 ## Atualizando os Slides
 
@@ -61,6 +62,6 @@ Desconectar o provedor também desativa os anúncios que vieram dele.
 
 ## Artigos Relacionados
 
-- **[Conectando a Provedores](./connecting-providers)** — Conecte o provedor que contém os seus slides
-- **[Navegando e Baixando Conteúdo](./browsing-content)** — Navegue pelas pastas de um provedor e reproduza conteúdo sob demanda
-- **[Reproduzindo Conteúdo](./playing-content)** — Controles do player com o controle remoto da TV
+- **[Conectando a Provedores](./connecting-providers.md)** — Conecte o provedor que contém os seus slides
+- **[Navegando e Baixando Conteúdo](./browsing-content.md)** — Navegue pelas pastas de um provedor e reproduza conteúdo sob demanda
+- **[Reproduzindo Conteúdo](./playing-content.md)** — Controles do player com o controle remoto da TV

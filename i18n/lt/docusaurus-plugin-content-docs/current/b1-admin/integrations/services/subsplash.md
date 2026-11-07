@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Prijunkite Subsplash aukas, naujus asmenis ir formų atsakymus prie B1 per Zapier, kad dovanos ir profiliai automatiškai patektų į B1 Admin."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Vadovaukitės [Subsplash Zapier integracijos vadovu](https://support.subsplash.c
 
 ## Taip pat žr.
 
-- [Donorbox](./donorbox) — tokio paties tipo receptai, tik kita aukų platforma
-- [Zapier (apžvalga)](../zapier) — B1 pusė kiekvienam Zapier receptui
+- [Donorbox](./donorbox.md) — tokio paties tipo receptai, tik kita aukų platforma
+- [Zapier (apžvalga)](../zapier.md) — B1 pusė kiekvienam Zapier receptui
 - [Subsplash Zapier integracijos vadovas](https://support.subsplash.com/en/articles/9825926-zapier-integration) (Subsplash dokumentacija)

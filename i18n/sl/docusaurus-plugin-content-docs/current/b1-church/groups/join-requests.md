@@ -1,5 +1,6 @@
 ---
 title: "Pridružitev skupini na zahtevo"
+description: "Zaprosite za pridružitev skupini, ki zahteva odobritev, na B1.church. Dodajte neobvezno sporočilo za vodjo ter spremljajte ali prekličite prošnjo."
 ---
 
 # Pridružitev skupini na zahtevo

@@ -1,5 +1,6 @@
 ---
 title: "Import masowy"
+description: "Zaimportuj zbiorczo filmy z kazaniami z kanału YouTube lub konta Vimeo do B1 Admin, a następnie uporządkuj je w playlistę."
 ---
 
 # Import masowy
@@ -14,7 +15,7 @@ Strona Import masowy pozwala szybko wypełnić bibliotekę kazań, importując f
 <h4>Zanim zaczniesz</h4>
 
 - Potrzebujesz uprawnienia **contentApi.streamingServices.edit**. Jeśli nie masz dostępu, zobacz [Role i uprawnienia](../settings/roles-permissions.md).
-- Utwórz co najmniej jedną [playlistę](playlists), do której zaimportujesz kazania
+- Utwórz co najmniej jedną [playlistę](./playlists.md), do której zaimportujesz kazania
 - Przygotuj identyfikator kanału YouTube lub dane konta Vimeo
 
 </div>
@@ -39,7 +40,7 @@ Zanim zaimportujesz filmy, potrzebujesz co najmniej jednej playlisty, do której
 2. Kliknij **Utwórz pierwszą playlistę** i wypełnij nazwę, opis, datę publikacji oraz miniaturę.
 3. Kliknij **Zapisz**, a następnie wróć do importu masowego, klikając **Dodaj kazanie** i wybierając **Import masowy**.
 
-Szczegółowe instrukcje dotyczące tworzenia i zarządzania playlistami znajdziesz na stronie [Playlisty](playlists).
+Szczegółowe instrukcje dotyczące tworzenia i zarządzania playlistami znajdziesz na stronie [Playlisty](./playlists.md).
 
 ## Importowanie filmów
 
@@ -54,11 +55,11 @@ Szczegółowe instrukcje dotyczące tworzenia i zarządzania playlistami znajdzi
 Filmy zostaną zaimportowane wraz ze wszystkimi szczegółami, w tym tytułami, opisami, datami i miniaturami. Znaki specjalne w tytułach i opisach z YouTube, takie jak `&`, apostrofy i cudzysłowy, zostaną zachowane w oryginalnej postaci, a nie zamienione na kody typu `&amp;`.
 
 :::info
-Import masowy sprawdza się najlepiej przy rozpoczynaniu pracy, gdy przenosisz treści z innej platformy. Aby w przyszłości dodawać pojedyncze kazania, skorzystaj ze strony [Zarządzanie kazaniami](managing-sermons).
+Import masowy sprawdza się najlepiej przy rozpoczynaniu pracy, gdy przenosisz treści z innej platformy. Aby w przyszłości dodawać pojedyncze kazania, skorzystaj ze strony [Zarządzanie kazaniami](./managing-sermons.md).
 :::
 
 ## Następne kroki
 
-- [Zarządzanie kazaniami](managing-sermons) -- edycja szczegółów zaimportowanych kazań
-- [Playlisty](playlists) -- tworzenie i zarządzanie seriami kazań
-- [Transmisje na żywo](live-streaming) -- konfiguracja transmisji na żywo dla Twoich nabożeństw
+- [Zarządzanie kazaniami](./managing-sermons.md) -- edycja szczegółów zaimportowanych kazań
+- [Playlisty](./playlists.md) -- tworzenie i zarządzanie seriami kazań
+- [Transmisje na żywo](./live-streaming.md) -- konfiguracja transmisji na żywo dla Twoich nabożeństw

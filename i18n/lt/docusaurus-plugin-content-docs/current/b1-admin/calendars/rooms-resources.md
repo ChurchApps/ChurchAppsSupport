@@ -1,5 +1,6 @@
 ---
 title: "Patalpos, ištekliai ir planavimas"
+description: "Nustatykite kambarius, įrangą, blokavimus ir renginių šablonus B1 Admin, kad grupės galėtų siųsti rezervavimo užklausas, o jūs jas tvirtintumėte."
 ---
 
 # Patalpos, ištekliai ir planavimas
@@ -14,7 +15,7 @@ Patalpos ir ištekliai leidžia sekti jūsų bažnyčios rezervuojamas erdves ir
 <h4>Prieš pradedant</h4>
 
 - Jums reikia administracinės prieigos prie skyriaus Kalendoriai programoje B1 Admin
-- Nustatykite [grupes](../groups/creating-groups), kurių nariai teiks rezervavimo prašymus
+- Nustatykite [grupes](../groups/creating-groups.md), kurių nariai teiks rezervavimo prašymus
 
 </div>
 
@@ -76,7 +77,7 @@ Kurdami naują renginį, darbuotojai gali pasirinkti esamą šabloną, kad iš a
 
 ## Susiję straipsniai
 
-- [Kalendoriaus užimtumas](availability) — peržiūrėkite visus rezervavimus vienu žvilgsniu ir rezervuokite patalpas ar išteklius tiesiogiai
-- [Kalendoriaus patvirtinimai](approvals) — patvirtinkite arba atmeskite patalpų ir išteklių rezervavimo prašymus
-- [Kalendorių kūrimas](creating-calendars) — nustatykite renginių kalendorius
-- [Grupių kūrimas](../groups/creating-groups) — nustatykite grupes, kurios gali rezervuoti patalpas ir išteklius
+- [Kalendoriaus užimtumas](./availability.md) — peržiūrėkite visus rezervavimus vienu žvilgsniu ir rezervuokite patalpas ar išteklius tiesiogiai
+- [Kalendoriaus patvirtinimai](./approvals.md) — patvirtinkite arba atmeskite patalpų ir išteklių rezervavimo prašymus
+- [Kalendorių kūrimas](./creating-calendars.md) — nustatykite renginių kalendorius
+- [Grupių kūrimas](../groups/creating-groups.md) — nustatykite grupes, kurios gali rezervuoti patalpas ir išteklius

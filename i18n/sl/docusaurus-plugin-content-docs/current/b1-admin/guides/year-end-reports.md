@@ -1,5 +1,6 @@
 ---
 title: "Vodnik: Ustvarjanje letnih poročil o darovih"
+description: "V B1 Admin dokončajte letne evidence darov, preverite davčne nastavitve skladov in ustvarite davčno odbitne izjave o darovanju za vse darovalce."
 ---
 
 # Ustvarjanje letnih poročil o darovih

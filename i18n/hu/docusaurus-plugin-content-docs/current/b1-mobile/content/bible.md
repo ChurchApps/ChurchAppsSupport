@@ -1,5 +1,7 @@
 ---
-title: "Biblia"
+title: "Bibliaolvasás a B1 Mobile alkalmazásban"
+sidebar_label: "Biblia"
+description: "Használd a B1 Mobile alkalmazás beépített Biblia-olvasóját: nyisd meg a Szentírást az oldalsó menüből, navigálj könyvek, fejezetek és versek között, és keresd meg gyülekezeted Biblia-lehetőségét."
 ---
 
 # Biblia
@@ -13,7 +15,7 @@ A B1 Mobile beépített bibliaolvasót tartalmaz, így közvetlenül az alkalmaz
 <div class="prereqs">
 <h4>Mielőtt elkezdenéd</h4>
 
-- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing), és [jelentkezz be](../getting-started/logging-in) a fiókodba
+- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing.md), és [jelentkezz be](../getting-started/logging-in.md) a fiókodba
 - A gyülekezetednek engedélyeznie kell a Biblia funkciót
 
 </div>
@@ -37,7 +39,7 @@ A beágyazott olvasó vezérlőket biztosít a Szentírásban való mozgáshoz. 
 Az olvasó kitölti a képernyőt, így eszközön kényelmesen olvasható méretben jelenik meg.
 
 :::tip
-Tedd a Biblia képernyőt a napi rutinod részévé – gyors módja annak, hogy bárhol olvashasd a Szentírást. Párosítsd a [Vers a napra](./verse-of-the-day) funkcióval a napi inspirációért.
+Tedd a Biblia képernyőt a napi rutinod részévé – gyors módja annak, hogy bárhol olvashasd a Szentírást. Párosítsd a [Vers a napra](./verse-of-the-day.md) funkcióval a napi inspirációért.
 :::
 
 ## Elérhetőség
@@ -46,6 +48,6 @@ A Biblia képernyő akkor érhető el, ha a gyülekezeted engedélyezte ezt a fu
 
 ## Kapcsolódó cikkek
 
-- [Vers a napra](./verse-of-the-day) -- Napi bibliai vers megtekintése
-- [Igehirdetések](./sermons) -- Igehirdetések nézése, amelyek kiegészítik a bibliaolvasást
+- [Vers a napra](./verse-of-the-day.md) -- Napi bibliai vers megtekintése
+- [Igehirdetések](./sermons.md) -- Igehirdetések nézése, amelyek kiegészítik a bibliaolvasást
 - [FreePlay](/docs/freeplay/) -- Strukturált tananyag lejátszása osztálytermi TV-kon (a elavult alkalmazon belüli Leckék képernyő helyett)

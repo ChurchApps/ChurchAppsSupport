@@ -1,5 +1,6 @@
 ---
 title: "Authentication at Permissions"
+description: "Sanggunian para sa JWT login, two-factor sign-in, OAuth 2.0 flow, at permission model ng ChurchApps API para sa mga developer na gumagawa ng integrasyon."
 ---
 
 # Authentication at Permissions
@@ -244,7 +245,7 @@ Para sa mga device na walang browser (TV app, kiosk):
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Kunin ang client ayon sa client ID (natatakpan ang secret) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Gumawa o mag-update ng client |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Burahin ang client |
-| POST | `/membership/oauth/register` | Public | — | Dynamic client registration (RFC 7591) para sa mga public client gaya ng MCP connector. Tingnan ang [Connected Apps](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Public | — | Dynamic client registration (RFC 7591) para sa mga public client gaya ng MCP connector. Tingnan ang [Connected Apps](../connected-apps.md#dynamic-client-registration) |
 
 ### Mga Endpoint ng Pag-apruba ng Device
 
@@ -265,5 +266,5 @@ Sa mga endpoint table sa buong dokumentasyong ito, ipinapahiwatig ang mga ito bi
 
 ## Mga Kaugnay na Pahina
 
-- [Module Structure](../module-structure) — Paano inaayos ang mga controller, repository, at model
-- [Local Setup](../local-setup) — Pagpapatakbo ng API nang lokal para sa development
+- [Module Structure](../module-structure.md) — Paano inaayos ang mga controller, repository, at model
+- [Local Setup](../local-setup.md) — Pagpapatakbo ng API nang lokal para sa development

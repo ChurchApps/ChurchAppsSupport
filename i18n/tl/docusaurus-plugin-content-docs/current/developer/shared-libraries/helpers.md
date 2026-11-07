@@ -1,5 +1,6 @@
 ---
 title: "Helpers"
+description: "Sakop ng @churchapps/helpers package: ang inaalok nito, aling app ang gumagamit, lokal na build setup sa Packages workspace, at changesets-based na publishing."
 ---
 
 # Helpers

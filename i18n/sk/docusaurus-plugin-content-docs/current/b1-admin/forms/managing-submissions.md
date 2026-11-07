@@ -1,5 +1,6 @@
 ---
 title: "Správa odoslaní"
+description: "Prezerajte, tlačte a presúvajte odpovede formulárov v B1 Admin k správnej osobe a sledujte návštevnícke karty a modlitebné prosby."
 ---
 
 # Správa odoslaní

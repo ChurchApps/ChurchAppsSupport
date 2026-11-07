@@ -1,5 +1,6 @@
 ---
 title: "Skupinový kalendář"
+description: "Plánujte schůzky a opakované akce v kalendáři skupiny v B1 Admin a B1.church, s hromadným plánováním, potvrzováním účasti a odběrem kalendáře."
 ---
 
 # Skupinový kalendář

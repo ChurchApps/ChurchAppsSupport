@@ -1,5 +1,6 @@
 ---
 title: "Exportarea datelor"
+description: "Exportați persoanele în CSV, listele de membri ai grupurilor sau o copie completă a bazei de date B1 din B1 Admin și vedeți ce conține arhiva B1 Export."
 ---
 
 # Exportarea datelor

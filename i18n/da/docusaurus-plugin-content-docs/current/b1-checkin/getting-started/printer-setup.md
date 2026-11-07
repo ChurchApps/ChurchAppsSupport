@@ -1,5 +1,6 @@
 ---
 title: "Printer opsætning"
+description: "Opsæt en netværkslabelprinter til B1 Checkin-kiosker: find den på dit wifi, vælg den, kør en testudskrift og gem valget."
 ---
 
 # Printer opsætning
@@ -13,7 +14,7 @@ B1 Church Checkin kan udskrive navne labels og forælder afhentning slips til en
 <div class="prereqs">
 <h4>Før du starter</h4>
 
-- [Log ind](./logging-in) på B1 Church Checkin appen og vælg din kirke
+- [Log ind](./logging-in.md) på B1 Church Checkin appen og vælg din kirke
 - Forbind en kompatibel netværks label printer til samme Wi-Fi netværk som tabletten
 
 </div>
@@ -77,4 +78,4 @@ Hvis du flytter kiosken til et andet sted eller skifter dit netværks opsætning
 
 ## Næste trin
 
-Med din printer konfigureret, er du klar til at begynde at checke ind. Se [check-in arbejdsgangen](../check-in/) for at lære hvordan hele processen fungerer, startende med [valg af en servin](../check-in/selecting-service).
+Med din printer konfigureret, er du klar til at begynde at checke ind. Se [check-in arbejdsgangen](../check-in/index.md) for at lære hvordan hele processen fungerer, startende med [valg af en servin](../check-in/selecting-service.md).

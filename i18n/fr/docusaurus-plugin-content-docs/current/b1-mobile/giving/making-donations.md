@@ -1,5 +1,7 @@
 ---
-title: "Effectuer un don"
+title: "Faire un don dans B1 Mobile"
+sidebar_label: "Effectuer un don"
+description: "Donnez à votre église depuis l’onglet Donner de B1 Mobile : choisissez un fonds, saisissez un montant, payez avec Stripe et répétez rapidement vos dons."
 ---
 
 # Effectuer un don
@@ -13,8 +15,8 @@ Donner via B1 Mobile est rapide et simple. L'onglet **Donner** dans la section d
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Installez B1 Mobile](../getting-started/installing) et [connectez-vous](../getting-started/logging-in) à votre compte
-- Ayez une carte de crédit ou de débit à portée de main, ou [enregistrez un moyen de paiement](./managing-payments) au préalable
+- [Installez B1 Mobile](../getting-started/installing.md) et [connectez-vous](../getting-started/logging-in.md) à votre compte
+- Ayez une carte de crédit ou de débit à portée de main, ou [enregistrez un moyen de paiement](./managing-payments.md) au préalable
 
 </div>
 
@@ -42,10 +44,10 @@ Vérifiez le montant du don et le fonds avant de valider. Les dons sont traités
 Si vous souhaitez donner le même montant que votre dernier don, vous n'avez pas besoin de suivre tout le processus de don. L'onglet **Aperçu** affiche votre don le plus récent avec un bouton **Répéter**. Appuyez dessus pour soumettre rapidement le même don à nouveau.
 
 :::tip
-Si vous prévoyez de donner régulièrement, enregistrez votre moyen de paiement dans l'onglet **Gérer** pour donner encore plus rapidement la prochaine fois. Consultez [Gérer les moyens de paiement](./managing-payments) pour plus de détails.
+Si vous prévoyez de donner régulièrement, enregistrez votre moyen de paiement dans l'onglet **Gérer** pour donner encore plus rapidement la prochaine fois. Consultez [Gérer les moyens de paiement](./managing-payments.md) pour plus de détails.
 :::
 
 ## Articles connexes
 
-- [Gérer les moyens de paiement](./managing-payments) -- Enregistrez une carte pour des dons plus rapides
-- [Historique des dons](./donation-history) -- Consultez votre résumé de dons et vos dons passés
+- [Gérer les moyens de paiement](./managing-payments.md) -- Enregistrez une carte pour des dons plus rapides
+- [Historique des dons](./donation-history.md) -- Consultez votre résumé de dons et vos dons passés

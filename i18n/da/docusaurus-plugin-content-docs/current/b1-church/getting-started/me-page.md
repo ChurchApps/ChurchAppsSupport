@@ -1,5 +1,6 @@
 ---
 title: "Mig-siden"
+description: "Viser hvad Mig-siden i B1App-medlemsportalen samler på én skærm: kommende tjeneste, begivenheder, tilmeldinger, husstand, grupper og indbakke."
 ---
 
 # Mig-siden
@@ -26,7 +27,7 @@ title: "Mig-siden"
 Sektionen **Kommende** viser alt, hvad der ligger foran dig, i datoorden, hvert element mærket med en type-chip:
 
 - **Tjeneste** -- Dine frivilligpositioner på kommende tjenesteplaner. Tryk på en for at åbne planen.
-- **Tilmelding** -- Begivenheder, du har [tilmeldt dig](../events/registering). Tryk igennem til dine [tilmeldinger](../events/my-registrations).
+- **Tilmelding** -- Begivenheder, du har [tilmeldt dig](../events/registering.md). Tryk igennem til dine [tilmeldinger](../events/my-registrations.md).
 - **Begivenhed** -- Kommende begivenheder fra grupper, du er medlem af. Tryk på en for at åbne gruppens begivenheder.
 
 Hvis intet er planlagt, ser du "Intet planlagt lige nu" — dine tjenestetider, begivenheder og tilmeldinger vises her, efterhånden som de bliver planlagt.
@@ -39,14 +40,14 @@ Under Kommende viser sektionen **Seneste notifikationer** dine seneste notifikat
 
 Når din kirke har bookbare lokaler eller ressourcer, viser Mig-siden også en sektion **Genveje**:
 
-- **Anmod om en begivenhed** -- Bed om at reservere en begivenhed med de lokaler og det udstyr, du har brug for. Se [Anmode om begivenheder & lokaler](../events/requesting-events).
+- **Anmod om en begivenhed** -- Bed om at reservere en begivenhed med de lokaler og det udstyr, du har brug for. Se [Anmode om begivenheder & lokaler](../events/requesting-events.md).
 - **Mine anmodninger** -- Spor status for dine anmodninger, og annuller ventende anmodninger.
 
 Hvis din kirke ikke har opsat lokaler eller ressourcer, er disse genveje skjulte.
 
 ## Relaterede artikler
 
-- [Navigere i B1App](./navigating) -- Layoutet af medlemsportalen
-- [Anmode om begivenheder & lokaler](../events/requesting-events) -- Indsend og spor lokale-/ressourceanmodninger
-- [Mine tilmeldinger](../events/my-registrations) -- Administrer dine begivenhedstilmeldinger
-- [Frivilligtilmelding](../serving/volunteer-signup) -- Hvordan tjenesteopgaver fungerer
+- [Navigere i B1App](./navigating.md) -- Layoutet af medlemsportalen
+- [Anmode om begivenheder & lokaler](../events/requesting-events.md) -- Indsend og spor lokale-/ressourceanmodninger
+- [Mine tilmeldinger](../events/my-registrations.md) -- Administrer dine begivenhedstilmeldinger
+- [Frivilligtilmelding](../serving/volunteer-signup.md) -- Hvordan tjenesteopgaver fungerer

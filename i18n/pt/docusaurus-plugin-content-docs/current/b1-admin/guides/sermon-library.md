@@ -1,5 +1,6 @@
 ---
 title: "Guia: Crie sua biblioteca de sermões e transmissão ao vivo"
+description: "Importe seus sermões do YouTube ou Vimeo, organize-os em playlists e configure transmissões ao vivo recorrentes com chat no B1 Admin para o site da igreja."
 ---
 
 # Crie sua biblioteca de sermões e transmissão ao vivo

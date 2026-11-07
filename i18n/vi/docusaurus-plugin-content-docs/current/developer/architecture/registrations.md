@@ -1,12 +1,13 @@
 ---
 title: "Đăng ký sự kiện"
+description: "Cách đăng ký sự kiện trong B1 Admin và B1App: loại người tham dự, tiện ích trả phí, mã giảm giá, thanh toán qua cổng quyên góp và chuyển từ danh sách chờ."
 ---
 
 # Đăng ký sự kiện
 
 <div class="article-intro">
 
-Chức năng đăng ký sự kiện gốc nằm trong module nội dung. Kể từ đợt đăng ký có phí, chức năng này còn có một mô hình thương mại đầy đủ: loại người tham dự có giá, lựa chọn bổ sung có giá, mã giảm giá, thanh toán qua cổng quyên góp hiện có của hội thánh, và danh sách chờ theo trạng thái. Luồng thanh toán cố ý tái sử dụng hệ thống quyên góp. Controller đăng ký tính phí thông qua cùng lớp trừu tượng `GatewayService` / `IGatewayProvider` được mô tả trong [Quyên góp](./giving), nên không có dữ liệu thẻ hay SDK cổng thanh toán nào nằm trong module nội dung. Trang này trình bày mô hình dữ liệu, quy tắc giá và sức chứa, cùng các luồng đăng ký, thanh toán và danh sách chờ.
+Chức năng đăng ký sự kiện gốc nằm trong module nội dung. Kể từ đợt đăng ký có phí, chức năng này còn có một mô hình thương mại đầy đủ: loại người tham dự có giá, lựa chọn bổ sung có giá, mã giảm giá, thanh toán qua cổng quyên góp hiện có của hội thánh, và danh sách chờ theo trạng thái. Luồng thanh toán cố ý tái sử dụng hệ thống quyên góp. Controller đăng ký tính phí thông qua cùng lớp trừu tượng `GatewayService` / `IGatewayProvider` được mô tả trong [Quyên góp](./giving.md), nên không có dữ liệu thẻ hay SDK cổng thanh toán nào nằm trong module nội dung. Trang này trình bày mô hình dữ liệu, quy tắc giá và sức chứa, cùng các luồng đăng ký, thanh toán và danh sách chờ.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Việc tokenization diễn ra trên trình duyệt, giống hệt như với quyên góp (xem [Quyên góp](./giving)). Wizard tái sử dụng registry provider thanh toán của apphelper, nên thành viên đã đăng nhập có thể thanh toán bằng thẻ đã lưu, còn khách thì tokenize một thẻ mới. Controller phản chiếu các điểm đặc thù của provider trong `DonateController`: id phương thức thanh toán `pm-{id}` của Kingdom Funding, và phản hồi `requires_action` của Stripe SCA được trả về client mà không ghi nhận giao dịch nào. Khi thu tiền thành công, hệ thống ghi một dòng `registrationPayments`, cộng dồn `amountPaid` và xác nhận lượt đăng ký. **Chưa triển khai hoàn tiền.** Một lượt đăng ký đã trả tiền rồi bị hủy sẽ giữ lại các dòng thanh toán, và việc hoàn tiền (nếu có) được xử lý ngoài hệ thống, trên bảng điều khiển của cổng thanh toán.
+Việc tokenization diễn ra trên trình duyệt, giống hệt như với quyên góp (xem [Quyên góp](./giving.md)). Wizard tái sử dụng registry provider thanh toán của apphelper, nên thành viên đã đăng nhập có thể thanh toán bằng thẻ đã lưu, còn khách thì tokenize một thẻ mới. Controller phản chiếu các điểm đặc thù của provider trong `DonateController`: id phương thức thanh toán `pm-{id}` của Kingdom Funding, và phản hồi `requires_action` của Stripe SCA được trả về client mà không ghi nhận giao dịch nào. Khi thu tiền thành công, hệ thống ghi một dòng `registrationPayments`, cộng dồn `amountPaid` và xác nhận lượt đăng ký. **Chưa triển khai hoàn tiền.** Một lượt đăng ký đã trả tiền rồi bị hủy sẽ giữ lại các dòng thanh toán, và việc hoàn tiền (nếu có) được xử lý ngoài hệ thống, trên bảng điều khiển của cổng thanh toán.
 
 Cả hai điểm vào đều đi qua cùng một đường xử lý: `register` (trả tiền khi đăng ký) và `pay` (thanh toán số dư còn lại / hoàn tất khi được đưa từ danh sách chờ lên).
 
@@ -147,7 +148,7 @@ Các tra cứu giữa các module (tìm hoặc tạo người khách, tải thô
 
 ## Trang liên quan
 
-- [Quyên góp](./giving): lớp trừu tượng cổng thanh toán, registry provider và mô hình tokenization mà tính năng này tái sử dụng
-- [Endpoint nội dung](../api/endpoints/content): bề mặt REST của module nội dung
-- [Webhook](../api/webhooks): sự kiện `registration.created`
-- [Cấu trúc module](../api/module-structure): cách tổ chức module nội dung phía máy chủ
+- [Quyên góp](./giving.md): lớp trừu tượng cổng thanh toán, registry provider và mô hình tokenization mà tính năng này tái sử dụng
+- [Endpoint nội dung](../api/endpoints/content.md): bề mặt REST của module nội dung
+- [Webhook](../api/webhooks.md): sự kiện `registration.created`
+- [Cấu trúc module](../api/module-structure.md): cách tổ chức module nội dung phía máy chủ

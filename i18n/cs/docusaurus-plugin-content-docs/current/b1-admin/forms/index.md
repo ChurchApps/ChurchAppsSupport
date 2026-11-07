@@ -1,5 +1,6 @@
 ---
 title: "Formuláře"
+description: "Najděte, filtrujte, upravujte, archivujte a obnovujte vlastní formuláře v B1 Admin a zjistěte, kde nastavit členy formuláře a prohlížet odpovědi."
 ---
 
 # Formuláře

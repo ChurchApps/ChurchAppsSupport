@@ -1,5 +1,6 @@
 ---
 title: "Utiliser l'éditeur de pages"
+description: "Utilisez l'éditeur de pages de B1 Admin : sections, éléments, mise en forme, aperçu mobile et publication des brouillons, avec annulation et historique."
 ---
 
 # Utiliser l'éditeur de pages
@@ -13,8 +14,8 @@ L'éditeur de pages de B1 est un constructeur visuel par glisser-déposer qui vo
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Effectuez la [configuration initiale](initial-setup) pour configurer votre site web
-- Créez au moins une page dans [Gérer les pages](managing-pages)
+- Effectuez la [configuration initiale](./initial-setup.md) pour configurer votre site web
+- Créez au moins une page dans [Gérer les pages](./managing-pages.md)
 - Vous avez besoin de l'autorisation **content.edit** pour accéder à l'éditeur
 
 </div>
@@ -27,7 +28,7 @@ L'éditeur de pages de B1 est un constructeur visuel par glisser-déposer qui vo
 L'éditeur s'ouvre en plein écran. Le panneau de gauche affiche la structure de votre page et les éléments de contenu disponibles ; la zone centrale affiche un aperçu en direct de votre page.
 
 :::info
-L'éditeur s'affiche toujours en mode clair, quel que soit le thème de B1 Admin choisi, et utilise les polices de titre et de texte que vous avez choisies dans [Apparence](appearance). Cela garantit que l'aperçu correspond fidèlement à l'apparence de votre page pour les visiteurs du site.
+L'éditeur s'affiche toujours en mode clair, quel que soit le thème de B1 Admin choisi, et utilise les polices de titre et de texte que vous avez choisies dans [Apparence](./appearance.md). Cela garantit que l'aperçu correspond fidèlement à l'apparence de votre page pour les visiteurs du site.
 :::
 
 ## Structure de la page : sections et éléments
@@ -57,7 +58,7 @@ Vous avez déjà construit une section mais voulez une autre structure ? Utilise
    - **Image** -- Téléverser une photo ou la lier
    - **Bouton** -- Un lien d'appel à l'action cliquable
    - **Carte** -- Une image avec un titre et une description
-   - **Formulaire** -- Intégrer un [formulaire](../forms/creating-forms) directement sur la page. Si le formulaire a une [photo d'en-tête](../forms/creating-forms.md#adding-a-header-photo), elle s'affiche au-dessus des questions
+   - **Formulaire** -- Intégrer un [formulaire](../forms/creating-forms.md) directement sur la page. Si le formulaire a une [photo d'en-tête](../forms/creating-forms.md#adding-a-header-photo), elle s'affiche au-dessus des questions
    - **Calendrier** -- Afficher un calendrier d'événements
    - **FAQ** -- Blocs de questions et réponses en accordéon
    - **Vidéo** -- Intégrer une vidéo par URL
@@ -75,7 +76,7 @@ Vous avez déjà construit une section mais voulez une autre structure ? Utilise
    - **Carte** -- Une carte intégrée centrée sur l'adresse de votre église
    - **Tableau** -- Une simple grille de lignes et de colonnes pour du contenu tabulaire
    - **Texte avec photo** -- Du texte et une image côte à côte
-   - **Logo** -- Le logo de votre église, extrait d'[Apparence](appearance)
+   - **Logo** -- Le logo de votre église, extrait d'[Apparence](./appearance.md)
    - **Diffusion en direct** -- Votre lecteur de diffusion en direct, intégré directement sur la page
    - **Balado** -- Une liste d'épisodes extraite d'une URL de flux RSS de balado externe que vous fournissez, avec des paramètres pour le nombre d'épisodes à afficher et pour afficher ou non les dates et les descriptions. Chaque épisode sur le site en ligne comporte un lecteur audio et un lien **Télécharger** qui enregistre le fichier audio de l'épisode sous le titre de l'épisode. Cet élément sert à mettre en valeur n'importe quel flux de balado sur votre site ; pour publier vos propres sermons sous forme de balado, consultez plutôt [Gérer les sermons](../sermons/managing-sermons.md#your-podcast-feed)
    - **Don** -- Un bouton de dons ou un formulaire de dons intégré
@@ -96,7 +97,7 @@ Si vous collez seulement une adresse web (comme un lien d'image) dans la zone Ja
 
 L'élément **Calendrier** affiche les événements de l'un de vos calendriers :
 
-1. Sous **Sélectionner**, choisissez **Calendrier de groupe** (les événements d'un seul groupe -- la liste affiche les groupes dont vous faites partie) ou **Calendrier organisé** (un calendrier que vous avez créé sous **Calendriers** ; voir [Calendrier organisé](../calendars/curated-calendar)).
+1. Sous **Sélectionner**, choisissez **Calendrier de groupe** (les événements d'un seul groupe -- la liste affiche les groupes dont vous faites partie) ou **Calendrier organisé** (un calendrier que vous avez créé sous **Calendriers** ; voir [Calendrier organisé](../calendars/curated-calendar.md)).
 2. Sous **Sélectionner un calendrier**, choisissez le groupe ou le calendrier.
 3. Sous **Affichage**, choisissez le mode d'affichage :
    - **Calendrier mensuel** -- Une grille mensuelle que les visiteurs peuvent parcourir.
@@ -129,7 +130,7 @@ Cliquez sur un élément pour ouvrir son panneau de style. Les options courantes
 Pour un style avancé, chaque section et chaque élément dispose d'un champ **CSS personnalisé** dans lequel vous pouvez écrire vos propres règles CSS. Elles sont limitées à cet élément et n'affectent donc pas involontairement le reste de la page.
 
 :::tip
-Si vous devez appliquer des styles à l'ensemble de votre site -- comme une police personnalisée ou une couleur globale -- utilisez plutôt les paramètres d'[Apparence](appearance) au lieu du CSS personnalisé sur des pages individuelles.
+Si vous devez appliquer des styles à l'ensemble de votre site -- comme une police personnalisée ou une couleur globale -- utilisez plutôt les paramètres d'[Apparence](./appearance.md) au lieu du CSS personnalisé sur des pages individuelles.
 :::
 
 ## Prévisualiser votre page
@@ -184,7 +185,7 @@ Utilisez le flux brouillon/publication lorsque vous voulez préparer une page --
 
 ## Articles connexes
 
-- [Gérer les pages](managing-pages) -- Créer des pages, définir les URL et gérer la navigation du site
-- [Apparence](appearance) -- Définir les couleurs, les polices et l'image de marque à l'échelle du site
-- [Fichiers](files) -- Téléverser des images et des documents à utiliser dans l'éditeur
-- [Créer des formulaires](../forms/creating-forms) -- Créer des formulaires que vous pouvez intégrer aux pages
+- [Gérer les pages](./managing-pages.md) -- Créer des pages, définir les URL et gérer la navigation du site
+- [Apparence](./appearance.md) -- Définir les couleurs, les polices et l'image de marque à l'échelle du site
+- [Fichiers](./files.md) -- Téléverser des images et des documents à utiliser dans l'éditeur
+- [Créer des formulaires](../forms/creating-forms.md) -- Créer des formulaires que vous pouvez intégrer aux pages

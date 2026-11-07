@@ -1,5 +1,6 @@
 ---
 title: "Hantera enheter"
+description: "Koppla ihop, namnge och ta bort ChurchAppsPlayer- och FreePlay-skärmar som är anslutna till ditt konto i B1 Admin, så att kyrkans skärmar hålls aktuella och säkra."
 ---
 
 # Hantera enheter

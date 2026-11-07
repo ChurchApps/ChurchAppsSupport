@@ -1,5 +1,6 @@
 ---
 title: "Guide : Configuration de l'enregistrement aux événements"
+description: "Configurez un formulaire d'inscription à un événement dans B1 Admin pour recueillir les coordonnées des participants et les paiements facultatifs, l'intégrer à votre site web et suivre les inscriptions."
 ---
 
 # Configuration de l'enregistrement aux événements
@@ -11,7 +12,7 @@ Créez un formulaire d'enregistrement aux événements, collectez les informatio
 </div>
 
 :::info
-**Deux façons de gérer l'enregistrement aux événements :** Ce guide couvre **l'enregistrement basé sur les formulaires**, qui vous donne un contrôle total sur les champs personnalisés et la collecte de paiements. Pour les événements plus simples où vous avez juste besoin de savoir qui vient, utilisez **l'enregistrement aux événements natif** intégré au calendrier -- voir [Création de calendriers](../calendars/creating-calendars.md#enabling-event-registration) pour les instructions de configuration. L'enregistrement natif permet aux membres de s'inscrire directement sur le [site web B1](../../b1-church/events/registering) et l'[application mobile](../../b1-mobile/events/registering) avec suivi de la capacité, fenêtres de dates et confirmations par e-mail.
+**Deux façons de gérer l'enregistrement aux événements :** Ce guide couvre **l'enregistrement basé sur les formulaires**, qui vous donne un contrôle total sur les champs personnalisés et la collecte de paiements. Pour les événements plus simples où vous avez juste besoin de savoir qui vient, utilisez **l'enregistrement aux événements natif** intégré au calendrier -- voir [Création de calendriers](../calendars/creating-calendars.md#enabling-event-registration) pour les instructions de configuration. L'enregistrement natif permet aux membres de s'inscrire directement sur le [site web B1](../../b1-church/events/registering.md) et l'[application mobile](../../b1-mobile/events/registering.md) avec suivi de la capacité, fenêtres de dates et confirmations par e-mail.
 :::
 
 <div class="prereqs">

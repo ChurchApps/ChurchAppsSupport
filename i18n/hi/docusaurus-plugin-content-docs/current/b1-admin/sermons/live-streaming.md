@@ -1,5 +1,7 @@
 ---
-title: "लाइव स्ट्रीमिंग"
+title: "B1 Admin में लाइव स्ट्रीम समय और सेटअप"
+sidebar_label: "लाइव स्ट्रीमिंग"
+description: "B1 Admin में साप्ताहिक या एक बार की लाइव स्ट्रीम सेवाएँ शेड्यूल करें, चैट और शुरुआती वीडियो का समय सेट करें, YouTube चैनल जोड़ें और एम्बेड की समस्याएँ सुलझाएँ।"
 ---
 
 # लाइव स्ट्रीमिंग
@@ -15,7 +17,7 @@ Live Stream Times पृष्ठ आपको अपने चर्च का 
 
 - आपको **contentApi.streamingServices.edit** अनुमति चाहिए। यदि आपके पास पहुँच नहीं है, तो [Roles & Permissions](../settings/roles-permissions.md) देखें।
 - यदि आप स्वचालित लाइव स्ट्रीमिंग का उपयोग करने की योजना बना रहे हैं, तो अपना YouTube Channel ID तैयार रखें
-- अपने स्ट्रीम स्रोत के रूप में उपयोग करने के लिए कम से कम एक [उपदेश](managing-sermons) या स्थायी लाइव URL जोड़ें
+- अपने स्ट्रीम स्रोत के रूप में उपयोग करने के लिए कम से कम एक [उपदेश](./managing-sermons.md) या स्थायी लाइव URL जोड़ें
 
 </div>
 
@@ -76,13 +78,13 @@ Live Stream Times पृष्ठ आपको अपने चर्च का 
 
 ## रंग और लोगो अनुकूलित करना
 
-आपका लाइव स्ट्रीम पृष्ठ आपकी वेबसाइट की [Appearance](../website/appearance) सेटिंग्स का उपयोग करता है:
+आपका लाइव स्ट्रीम पृष्ठ आपकी वेबसाइट की [Appearance](../website/appearance.md) सेटिंग्स का उपयोग करता है:
 
 - **हल्के एक्सेंट रंग** के साथ गहरा टेक्स्ट हेडर के लिए उपयोग होता है।
 - **गहरे एक्सेंट रंग** के साथ हल्का टेक्स्ट साइडबार के लिए उपयोग होता है।
 - आपका **Light Background Logo** स्ट्रीमिंग पृष्ठ पर दिखता है। पारदर्शी पृष्ठभूमि और 4:1 आस्पेक्ट अनुपात वाली इमेज का उपयोग करें।
 
-इन्हें बदलने के लिए, **Website** फिर **Appearance** पर जाएँ और अपनी [Color Palette](../website/appearance#color-palette) और [Logo](../website/appearance#logo-and-branding) सेटिंग्स अपडेट करें।
+इन्हें बदलने के लिए, **Website** फिर **Appearance** पर जाएँ और अपनी [Color Palette](../website/appearance.md#color-palette) और [Logo](../website/appearance.md#logo-and-branding) सेटिंग्स अपडेट करें।
 
 ## स्ट्रीमिंग होस्ट जोड़ना
 
@@ -129,5 +131,5 @@ Live Stream Times पृष्ठ आपको अपने चर्च का 
 
 ## अगले चरण
 
-- [Managing Sermons](managing-sermons) -- अपनी लाइब्रेरी में उपदेश जोड़ें
-- [Playlists](playlists) -- उपदेशों को श्रृंखलाओं में व्यवस्थित करें
+- [Managing Sermons](./managing-sermons.md) -- अपनी लाइब्रेरी में उपदेश जोड़ें
+- [Playlists](./playlists.md) -- उपदेशों को श्रृंखलाओं में व्यवस्थित करें

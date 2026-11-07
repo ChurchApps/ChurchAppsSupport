@@ -1,5 +1,6 @@
 ---
 title: "Регистрация (Check-Ins)"
+description: "Как работает регистрация в B1Checkin, B1App и B1 Admin: модель посещаемости, группы как комнаты, лимиты вместимости и правила безопасности."
 ---
 
 # Регистрация (Check-Ins)
@@ -217,7 +218,7 @@ index (загрузка/автовход) → selectChurch → services ──�
 
 ## Связанные страницы
 
-- [Эндпоинты Attendance](../api/endpoints/attendance) — полный REST-интерфейс для кампусов, служб, занятий, визитов и визитов-занятий
-- [Эндпоинты Membership](../api/endpoints/membership) — люди, домохозяйства и группы
-- [Вебхуки](../api/webhooks) — события `session.created`, `attendance.recorded` и `attendance.checkout`
-- [Структура модулей](../api/module-structure) — как организован модуль посещаемости на стороне сервера
+- [Эндпоинты Attendance](../api/endpoints/attendance.md) — полный REST-интерфейс для кампусов, служб, занятий, визитов и визитов-занятий
+- [Эндпоинты Membership](../api/endpoints/membership.md) — люди, домохозяйства и группы
+- [Вебхуки](../api/webhooks.md) — события `session.created`, `attendance.recorded` и `attendance.checkout`
+- [Структура модулей](../api/module-structure.md) — как организован модуль посещаемости на стороне сервера

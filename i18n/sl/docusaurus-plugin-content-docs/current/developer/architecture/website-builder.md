@@ -1,5 +1,6 @@
 ---
 title: "Arhitektura graditelja spletnih strani"
+description: "Razvijalski zemljevid gradnika spletnih strani B1: drevo vsebin, katalog elementov, cevovod upodabljanja in ustvarjanje strani z AI v B1 Admin in B1.church."
 ---
 
 # Arhitektura graditelja spletnih strani
@@ -84,7 +85,7 @@ Upodabljalniki živijo v `Packages/apphelper/src/website/components/elementTypes
 
 ### Obrazci urejevalnika (B1Admin)
 
-Obrazci za nastavitve posameznega tipa v urejevalniku živijo v `B1Admin/src/site/admin/elements/` — `ElementEdit.tsx` pošlje zahtevo namenski komponenti (`GalleryEdit`, `TestimonialEdit`, `StatsEdit` …) ali vgrajenemu graditelju polj za vsak tip. Zrcalo tega kataloga, namenjeno umetni inteligenci, je orodje API-ja MCP `describe_page_builder` (glejte [MCP strežnik](../api/mcp)).
+Obrazci za nastavitve posameznega tipa v urejevalniku živijo v `B1Admin/src/site/admin/elements/` — `ElementEdit.tsx` pošlje zahtevo namenski komponenti (`GalleryEdit`, `TestimonialEdit`, `StatsEdit` …) ali vgrajenemu graditelju polj za vsak tip. Zrcalo tega kataloga, namenjeno umetni inteligenci, je orodje API-ja MCP `describe_page_builder` (glejte [MCP strežnik](../api/mcp.md)).
 
 Predogled urejevalnika priklopi isto `Theme` kot živo spletno mesto, ki nastavi spremenljivki CSS `--headingFont` / `--bodyFont` iz globalnih slogov cerkve. B1App uporablja te spremenljivke prek `pages.css`, kar B1Admin ne more uvoziti, zato `ContentEditor.tsx` vbrizga `EDITOR_PAGE_FONT_CSS` (`src/site/admin/editorCss.ts`), da jih uporabi za besedilo v `.page` in naslove `h1`–`h6`. Brez tega je predogled prikazoval naslove v pisavi skrbniškega vmesnika.
 
@@ -153,7 +154,7 @@ Vse to je upodabljanje na strani B1App nad podatki ContentApi — API shranjuje,
 |-------|-------------|
 | Opisi meta | `pages.metaDescription` (≤300 znakov) prek `MetaHelper.getMetaData()` teče v Next.js `Metadata` (description + Open Graph) na vsaki poti, ki jo upodablja graditelj. Nastavitve strani v B1Admin vključujejo gumb AI **Generate** (glejte spodaj) |
 | Preusmeritve | Vrstice `redirects` za posamezno cerkev, upravljane na `/content/redirects` (`content.edit`, omejitev 200 vrstic, normalizirane poti). Ob morebitnem 404 pot strani B1App razreši proti `GET /content/redirects/public/:churchId` in izda HTTP 308 prek `permanentRedirect` iz Next; neujemajoče poti padejo na `notFound()` |
-| 404 z blagovno znamko | `not-found.tsx` prikaže `BrandedNotFound` z logotipom cerkve, imenom in temo namesto splošne napake. Neznane poti `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` in `/volunteer/[planId]` vrnejo pravi 404, enako neznane poddomene in neveljavni slugi strani (glejte [Usmerjanje spletnih mest in več mest](./websites)) |
+| 404 z blagovno znamko | `not-found.tsx` prikaže `BrandedNotFound` z logotipom cerkve, imenom in temo namesto splošne napake. Neznane poti `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` in `/volunteer/[planId]` vrnejo pravi 404, enako neznane poddomene in neveljavni slugi strani (glejte [Usmerjanje spletnih mest in več mest](./websites.md)) |
 | Strukturirani podatki | JSON-LD `BlogPosting` na objavah bloga; `VideoObject` na straneh posameznih pridig (`/{sdSlug}/sermons/[sermonId]`) in na straneh z elementom `sermons`; `Event` iz koledarskih/dogodkovnih elementov na straneh graditelja in na vsaki strani `/{sdSlug}/events/[eventId]` (naslednji pojav, s fotografijo dogodka kot `image`); schema.org `Event` iz elementa `serviceTimes` |
 | Strani pridig | Vsaka javna pridiga dobi indeksirljivo stran na `/sermons/[sermonId]` s polnimi metapodatki — pridige niso več zaklenjene znotraj odjemalskega brskalnega elementa |
 | Analitika | Javni ključ nastavitve `ga4MeasurementId` (upravljan ob preusmeritvah v B1Admin) vbrizga gtag GA4 za posamezno cerkev prek `next/script`. Aplikacija B1 (`/{sdSlug}/mobile`) svoje oglede strani pošilja tudi na ta ID poleg oznake ChurchApps, kadar je veljaven ID `G-` (ID-ji vsebnikov GTM ostanejo samo za spletno mesto). Vsak `gtag('config')` nosi `display_mode` z vrednostjo `installed` ali `browser`, glede na `navigator.standalone` ali poizvedbo medija `(display-mode: standalone)` (`B1App/src/helpers/mobileAnalytics.ts`) |
@@ -201,7 +202,7 @@ Gumb za prepisovanje v `SectionToolbar` in gumb „Generate Site“ na seznamu s
 | `POST /website/generateAltText` | Vizualni klic za do 20 URL-jev slik; vrne jedrnato nadomestno besedilo (≤125 znakov, predpone „photo of“ odstranjene) |
 | `POST /website/generateMetaDescription` | En opis meta za SEO (≤155 znakov) iz besedila strani — povezan z gumbom Generate v nastavitvah strani B1Admin |
 
-Pozivi za te končne točke so datoteke markdown v `AskApi/config/instructions/`, vključno s katalogom elementov, iz katerega model ustvarja. Dve zasnovni točki ohranjata katalog poštenega: odjemalec pošlje `availableElementTypes` pri vsaki zahtevi (poziv sme uporabljati samo tipe s tega seznama — strežnik nikoli ne vdela celotnega nabora), orodje MCP `describe_page_builder` pa nosi isti vodnik za agente umetne inteligence, ki delajo prek [MCP](../api/mcp). Modeli so Anthropic Claude prek OpenRouter — 3.5 Haiku za vsebino razdelkov (zakasnitev), 3.5 Sonnet za orise, načrte spletnih mest in vid — z rezervo OpenAI, kadar ključ OpenRouter ni nastavljen.
+Pozivi za te končne točke so datoteke markdown v `AskApi/config/instructions/`, vključno s katalogom elementov, iz katerega model ustvarja. Dve zasnovni točki ohranjata katalog poštenega: odjemalec pošlje `availableElementTypes` pri vsaki zahtevi (poziv sme uporabljati samo tipe s tega seznama — strežnik nikoli ne vdela celotnega nabora), orodje MCP `describe_page_builder` pa nosi isti vodnik za agente umetne inteligence, ki delajo prek [MCP](../api/mcp.md). Modeli so Anthropic Claude prek OpenRouter — 3.5 Haiku za vsebino razdelkov (zakasnitev), 3.5 Sonnet za orise, načrte spletnih mest in vid — z rezervo OpenAI, kadar ključ OpenRouter ni nastavljen.
 
 ## Pogovorni obrazci
 
@@ -226,8 +227,8 @@ Krmilniki, ki sprožijo osvežitev: strani (shrani, izbriši, podvoji, objavi, z
 
 ## Sorodne strani
 
-- [Usmerjanje spletnih mest in več mest](./websites) — kako zahteva preide do cerkve/spletnega mesta in kako se usmerjajo domene po meri
-- [Končne točke vsebine](../api/endpoints/content) — celotna površina REST za strani, razdelke, elemente, bloke, objave, preusmeritve in nastavitve
-- [AppHelper](../shared-libraries/app-helper) — paket npm, ki prinaša upodabljalnike, register, ločilnike in vtičnike
-- [MCP strežnik](../api/mcp) — vključno z orodjem vodnika `describe_page_builder`
+- [Usmerjanje spletnih mest in več mest](./websites.md) — kako zahteva preide do cerkve/spletnega mesta in kako se usmerjajo domene po meri
+- [Končne točke vsebine](../api/endpoints/content.md) — celotna površina REST za strani, razdelke, elemente, bloke, objave, preusmeritve in nastavitve
+- [AppHelper](../shared-libraries/app-helper.md) — paket npm, ki prinaša upodabljalnike, register, ločilnike in vtičnike
+- [MCP strežnik](../api/mcp.md) — vključno z orodjem vodnika `describe_page_builder`
 - [Urejevalnik strani (za končne uporabnike)](/docs/b1-admin/website/page-editor) — dokumentacija urejevalnika za osebje

@@ -1,5 +1,6 @@
 ---
 title: "Környezeti változók"
+description: "A .env fájl beállítása ChurchApps-projektekhez: közös demó API vagy helyi API választása, a változók kitöltése (B1 Admin, B1.church, Lessons.church stb.)."
 ---
 
 # Környezeti változók
@@ -13,9 +14,9 @@ Minden ChurchApps-projekt helyi konfigurációhoz `.env` fájlt használ. Minden
 <div class="prereqs">
 <h4>Mielőtt elkezdené</h4>
 
-- Telepítse a projekthez szükséges [előfeltételeket](./prerequisites)
+- Telepítse a projekthez szükséges [előfeltételeket](./prerequisites.md)
 - Klónozza le a projekt tárolóját, amellyel dolgozni szeretne
-- Tekintse át a [Projekt áttekintést](./project-overview), hogy megértse, mely API-modulokra van szüksége a projektnek
+- Tekintse át a [Projekt áttekintést](./project-overview.md), hogy megértse, mely API-modulokra van szüksége a projektnek
 
 </div>
 
@@ -64,7 +65,7 @@ A staging környezet (`api.staging.churchapps.org`, `api.staging.lessons.church`
 
 ### 2. lehetőség: Helyi API
 
-Futtassa az Api projektet a saját gépén. MySQL 8.0+ szükséges, minden modulhoz létrehozott adatbázisokkal. Lásd az [API helyi beállítása](../api/local-setup) útmutatót.
+Futtassa az Api projektet a saját gépén. MySQL 8.0+ szükséges, minden modulhoz létrehozott adatbázisokkal. Lásd az [API helyi beállítása](../api/local-setup.md) útmutatót.
 
 ```bash
 # Alap URL-minta

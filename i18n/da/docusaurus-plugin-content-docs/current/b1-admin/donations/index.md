@@ -1,5 +1,6 @@
 ---
 title: "Donationer"
+description: "Registrér, organisér og rapportér kirkens gaver i B1 Admin, fra batches og fonde til årsopgørelser og online donationer via Stripe eller PayPal."
 ---
 
 # Donationer

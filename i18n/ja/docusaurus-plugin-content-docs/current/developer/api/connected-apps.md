@@ -1,12 +1,13 @@
 ---
 title: "接続済みアプリ & OAuth"
+description: "OAuth 2.0 の同意により、サードパーティアプリを教会の B1 データに接続します。共有パスワードや API キーは不要で、B1 Admin の設定からいつでもアクセスを取り消せます。"
 ---
 
 # 接続済みアプリ & OAuth
 
 <div class="article-intro">
 
-B1 APIは OAuth 2.0 に対応しており、サードパーティのアプリケーションが各教会の管理者にデータへのアクセス許可を求めることができます。この仕組みでは、教会がパスワードや API キーを共有することはありません。**接続済みアプリ**とは、教会の管理者が承認した OAuth トークンのことです。接続を取り消すと、サードパーティアプリのアクセスは1クリックで停止します。マルチテナントの SaaS コネクタにはこの方法を使用してください。単一の教会との連携には、[APIキー](./api-keys)を推奨します。
+B1 APIは OAuth 2.0 に対応しており、サードパーティのアプリケーションが各教会の管理者にデータへのアクセス許可を求めることができます。この仕組みでは、教会がパスワードや API キーを共有することはありません。**接続済みアプリ**とは、教会の管理者が承認した OAuth トークンのことです。接続を取り消すと、サードパーティアプリのアクセスは1クリックで停止します。マルチテナントの SaaS コネクタにはこの方法を使用してください。単一の教会との連携には、[APIキー](./api-keys.md)を推奨します。
 
 </div>
 
@@ -27,7 +28,7 @@ B1 APIは OAuth 2.0 に対応しており、サードパーティのアプリケ
 | **接続済みアプリ** | 教会の管理者がクライアントにアクセスを許可した、特定の `(クライアント, 教会管理者)` の組み合わせです。各接続済みアプリは OAuth のリフレッシュトークンに紐づいています。 |
 | **アクセストークン** | クライアントが API 呼び出しに使用する、有効期間の短い JWT です（約7日間）。ユーザーの JWT と同じ形式で、`Authorization: Bearer <jwt>` の形で送信します。 |
 | **リフレッシュトークン** | クライアントが新しいアクセストークンを発行するために使用する、有効期間の長い不透明な文字列です（約90日間）。 |
-| **スコープ** | アクセストークンで実行できる操作の範囲を絞り込みます。[スコープ一覧](./api-keys#scopes)を参照してください。 |
+| **スコープ** | アクセストークンで実行できる操作の範囲を絞り込みます。[スコープ一覧](./api-keys.md#scopes)を参照してください。 |
 
 ## 認可フロー
 
@@ -162,7 +163,7 @@ B1Admin では、**Settings → Developer → Connected Apps** に次の情報�
 
 ## スコープと同意
 
-スコープの文字列は、[APIキー](./api-keys#scopes)と同じ一覧を使用します。クライアントの推奨事項は次のとおりです。
+スコープの文字列は、[APIキー](./api-keys.md#scopes)と同じ一覧を使用します。クライアントの推奨事項は次のとおりです。
 
 - **動作する中で最も狭いスコープをリクエストしてください。** 人の情報を読み取るだけなのに `donations:write` を要求すると、教会はそれに気づきます。
 - **リフレッシュトークンと有効期間の短いアクセストークンを併用してください。** 有効期間の長いアクセストークンは、迅速に取り消すことが難しくなります。
@@ -183,7 +184,7 @@ OAuth クライアント（サードパーティアプリそのもの）はグ�
 
 ### 動的クライアント登録
 
-`POST /membership/oauth/register`（公開、RFC 7591）を使うと、claude.ai の MCP コネクタなどのクライアントが自己登録できます。この機能は、API の `/.well-known/oauth-authorization-server` ドキュメントで公開されています。詳しくは [MCPサーバー → OAuth ディスカバリー](./mcp#oauth-discovery)を参照してください。
+`POST /membership/oauth/register`（公開、RFC 7591）を使うと、claude.ai の MCP コネクタなどのクライアントが自己登録できます。この機能は、API の `/.well-known/oauth-authorization-server` ドキュメントで公開されています。詳しくは [MCPサーバー → OAuth ディスカバリー](./mcp.md#oauth-discovery)を参照してください。
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ B1Admin の同意ページでは、自己登録されたクライアントに対
 
 ## SDK のサポート
 
-`@churchapps/integration-sdk` パッケージは、すべての OAuth フローを型付きのヘルパーでラップしています。`B1OAuthClient.exchangeCode()`、`.refresh()`、`.startDeviceFlow()`、`.pollDeviceToken()`、`.awaitDeviceToken()` などがあります。パッケージの README と、エンドツーエンドの例については [Webhook](./webhooks#sdk-support) を参照してください。
+`@churchapps/integration-sdk` パッケージは、すべての OAuth フローを型付きのヘルパーでラップしています。`B1OAuthClient.exchangeCode()`、`.refresh()`、`.startDeviceFlow()`、`.pollDeviceToken()`、`.awaitDeviceToken()` などがあります。パッケージの README と、エンドツーエンドの例については [Webhook](./webhooks.md#sdk-support) を参照してください。

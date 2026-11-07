@@ -1,5 +1,6 @@
 ---
 title: "Vrijwilligersgidsen"
+description: "Stel rolspecifieke gidsen in Lessons.church in, zodat elke vrijwilliger alleen zijn eigen stappen ziet, en print of deel ze vóór de les."
 ---
 
 # Vrijwilligersgidsen

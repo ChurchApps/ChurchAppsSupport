@@ -1,5 +1,7 @@
 ---
-title: "はじめに"
+title: "Lessons.church の始め方"
+sidebar_label: "はじめに"
+description: "無料の Lessons.church アカウントを作成し、教会を接続して、教室を設定し、最初のレッスンをスケジュールします。購読も試用期間も不要です。"
 ---
 
 # はじめに

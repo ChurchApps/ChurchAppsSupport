@@ -1,5 +1,6 @@
 ---
 title: "Planer"
+description: "Finn ut hvilke gudstjenesteplaner du er satt opp på i B1.church, sjekk posisjonene og datoene dine, og godta eller avslå oppdrag fra medlemsportalen."
 ---
 
 # Planer

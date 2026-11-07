@@ -1,5 +1,6 @@
 ---
 title: "Dziennik audytu i cofalne partie"
+description: "Opisuje dziennik audytu API, który zapisuje każdą zmianę użytkownika we wszystkich modułach, oraz cofanie partii importu wiersz po wierszu w B1 Admin."
 ---
 
 # Dziennik audytu i cofalne partie
@@ -155,6 +156,6 @@ Obie powierzchnie administracyjne są **w trakcie realizacji**. Zamierzenia są 
 
 ## Powiązane strony
 
-- [Struktura modułów](../api/module-structure) — jak kontroler spoza modułu członkostwa dociera do repozytoriów członkostwa przez `RepoManager`
-- [Dary](./giving) — ścieżki zapisu darów, które są audytowane jako `sensitive`, nawet gdy są anonimowe
-- [Endpointy członkostwa](../api/endpoints/membership) — interfejs REST, który przenosi `X-Batch-Id` i udostępnia `/auditlogs` oraz `/batches`
+- [Struktura modułów](../api/module-structure.md) — jak kontroler spoza modułu członkostwa dociera do repozytoriów członkostwa przez `RepoManager`
+- [Dary](./giving.md) — ścieżki zapisu darów, które są audytowane jako `sensitive`, nawet gdy są anonimowe
+- [Endpointy członkostwa](../api/endpoints/membership.md) — interfejs REST, który przenosi `X-Batch-Id` i udostępnia `/auditlogs` oraz `/batches`

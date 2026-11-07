@@ -1,5 +1,6 @@
 ---
 title: "Grupės pokalbiai"
+description: "Sužinokite, kaip rašyti, redaguoti, reaguoti į žinutes ir jas tvarkyti B1.church grupės pokalbyje, įskaitant skelbimus ir vadovų moderavimo įrankius."
 ---
 
 # Grupės pokalbiai

@@ -1,5 +1,6 @@
 ---
 title: "Self-Hosting on Railway"
+description: "Wdróż prywatną instancję ChurchApps na Railway w około 15 minut, potem skonfiguruj e-mail, domeny, routing wielu kościołów, dary i pliki w B1 Admin i B1App."
 ---
 
 # Self-Hosting on Railway
@@ -195,7 +196,7 @@ Odblokowują one konkretne funkcje i można je dodać później w panelu Railway
 | `VIMEO_TOKEN` | Obsługa kazań z Vimeo |
 | `API_BIBLE_KEY` | Wyszukiwanie wersetów Biblii w lekcjach i treściach |
 | `YOUVERSION_API_KEY` | Integracja z YouVersion Bible |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Powiadomienia push w przeglądarce ([wygeneruj parę kluczy VAPID](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Powiadomienia push w przeglądarce ([wygeneruj parę kluczy VAPID](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Opcjonalna synchronizacja z CRM dla nowych rejestracji |
 
 ## Aktualizacje
@@ -234,9 +235,9 @@ Jeśli napotkasz coś, czego nie ma na tej liście, zgłoś problem na stronie [
 
 ## Powiązane artykuły
 
-- **[Self-Hosting with Docker](./docker)** — Ten sam stos na własnym sprzęcie lub VPS
-- **[Initial Setup](../../getting-started/initial-setup)** — Pierwsze kroki po utworzeniu kościoła
-- **[Website Initial Setup](../../b1-admin/website/initial-setup)** — Konfiguracja publicznej witryny kościoła
-- **[Giving Settings](../../b1-admin/donations/online-giving-setup)** — Podłączenie Stripe lub PayPal
-- **[Local API Setup](../api/local-setup)** — Uruchamianie stosu lokalnie do rozwoju
-- **[API Deployment (AWS)](./apis)** — Jak wdrażany jest oficjalny SaaS ChurchApps
+- **[Self-Hosting with Docker](./docker.md)** — Ten sam stos na własnym sprzęcie lub VPS
+- **[Initial Setup](../../getting-started/initial-setup.md)** — Pierwsze kroki po utworzeniu kościoła
+- **[Website Initial Setup](../../b1-admin/website/initial-setup.md)** — Konfiguracja publicznej witryny kościoła
+- **[Giving Settings](../../b1-admin/donations/online-giving-setup.md)** — Podłączenie Stripe lub PayPal
+- **[Local API Setup](../api/local-setup.md)** — Uruchamianie stosu lokalnie do rozwoju
+- **[API Deployment (AWS)](./apis.md)** — Jak wdrażany jest oficjalny SaaS ChurchApps

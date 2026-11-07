@@ -1,5 +1,7 @@
 ---
-title: "Pagsisimula"
+title: "Pagsisimula sa B1.church Member Portal"
+sidebar_label: "Pagsisimula"
+description: "Hanapin ang site ng B1.church ng simbahan mo, gumawa ng member account, at tingnan ang iniaalok ng portal, mula groups at giving hanggang check-in at plans."
 ---
 
 # Pagsisimula sa B1.church

@@ -1,5 +1,6 @@
 ---
 title: "Forespørsler om å bli med i grupper"
+description: "Behandle forespørsler om å bli med i grupper i B1 Admin: godkjenn eller avslå, finn ventende forespørsler som leder eller admin, og oppgi grunn ved avslag."
 ---
 
 # Forespørsler om å bli med i grupper

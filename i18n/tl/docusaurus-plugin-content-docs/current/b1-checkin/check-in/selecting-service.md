@@ -1,5 +1,6 @@
 ---
 title: "Pagpili ng Serbisyo"
+description: "Piliin ang serbisyong dadaluhan sa services screen ng B1 Checkin. Ito ang magtatakda ng oras at grupo para sa natitirang check-in."
 ---
 
 # Pagpili ng Serbisyo
@@ -13,7 +14,7 @@ Ang unang hakbang sa bawat check-in ay ang pagpili kung aling serbisyo ang iyong
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [Mag-log in](../getting-started/logging-in) sa B1 Church Checkin app at piliin ang iyong simbahan
+- [Mag-log in](../getting-started/logging-in.md) sa B1 Church Checkin app at piliin ang iyong simbahan
 - Tiyaking [na-configure na ng administrator ng iyong simbahan ang mga serbisyo at service time](../../b1-admin/attendance/setup.md) sa B1 Admin
 
 </div>
@@ -24,11 +25,11 @@ Ang unang hakbang sa bawat check-in ay ang pagpili kung aling serbisyo ang iyong
 2. Makikita mo ang listahan ng lahat ng serbisyong na-configure para sa iyong simbahan. Bawat serbisyo ay lumalabas bilang card na nagpapakita ng pangalan ng serbisyo (halimbawa, "Sunday Morning" o "Wednesday Evening").
 3. I-tap ang serbisyong dinadaluhan mo.
 
-Kinukuha ng app ang mga service time at grupong nauugnay sa serbisyong iyon, at dinadala ka sa [member lookup screen](./looking-up-members).
+Kinukuha ng app ang mga service time at grupong nauugnay sa serbisyong iyon, at dinadala ka sa [member lookup screen](./looking-up-members.md).
 
 ## Kapag Hindi Bukas ang Check-In
 
-Kung binigyan ng iyong administrator ng service time ng [check-in schedule](../../b1-admin/attendance/setup#setting-a-check-in-schedule), papayagan lamang ng app ang mga pamilyang pumili ng service time na iyon habang bukas ang check-in window nito. Ang mga service time na sarado ang window sa ngayon ay lumalabas pa rin sa [household screen](./household-review), ngunit may markang **Closed** (halimbawa, **Closed · opens Sun 9:30 AM**) sa halip na nag-aalok ng group button.
+Kung binigyan ng iyong administrator ng service time ng [check-in schedule](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule), papayagan lamang ng app ang mga pamilyang pumili ng service time na iyon habang bukas ang check-in window nito. Ang mga service time na sarado ang window sa ngayon ay lumalabas pa rin sa [household screen](./household-review.md), ngunit may markang **Closed** (halimbawa, **Closed · opens Sun 9:30 AM**) sa halip na nag-aalok ng group button.
 
 Kung sarado ang lahat ng service time ng serbisyong na-tap mo, sasabihin sa iyo ng app kung kailan magbubukas ang check-in -- halimbawa, **"Check-in for this service opens Sun 9:30 AM."** (Kung walang maipapakitang oras ng pagbubukas, sasabihin nito ang **"Check-in isn't open for this service right now."**) I-tap ang **Back** para bumalik sa listahan ng mga serbisyo at pumili ng ibang serbisyo, o maghintay hanggang magbukas ang window at subukang muli.
 
@@ -56,4 +57,4 @@ Kung isa lamang ang serbisyong naka-configure sa iyong simbahan, kailangan mo pa
 
 ## Susunod na Hakbang
 
-Pagkatapos pumili ng serbisyo, [hahanapin mo ang iyong pamilya](./looking-up-members) sa pamamagitan ng numero ng telepono o pangalan.
+Pagkatapos pumili ng serbisyo, [hahanapin mo ang iyong pamilya](./looking-up-members.md) sa pamamagitan ng numero ng telepono o pangalan.

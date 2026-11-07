@@ -1,5 +1,6 @@
 ---
 title: "Kubhalisa Lokukhokhelwako"
+description: "Setfula kubhalisa lokukhokhelwa ku-B1 Admin: tinhlobo letikhokhelwako, tingeziwo, tikhodi tesaka, lubhalo lwekulinda nekukhokhela ngemhlinzeki."
 ---
 
 # Kubhalisa Lokukhokhelwako
@@ -13,7 +14,7 @@ Kubhalisela umcimbi kungadlula kubala tinhloko lokulula. Ungachaza tinhlobo tala
 <div class="prereqs">
 <h4>Ngembikwe Kucala</h4>
 
-- Vula kubhalisa kumcimbi kucala — buka [Dala Emakhalenda](creating-calendars#enabling-event-registration)
+- Vula kubhalisa kumcimbi kucala — buka [Dala Emakhalenda](./creating-calendars.md#enabling-event-registration)
 - Kubutsa imali yekukhokha, libandla lakho lidzinga [imnikelo we-online lohleliwe](../donations/online-giving-setup.md) (Stripe, PayPal, nome Kingdom Funding). Imicimbi lemahhala ayidzingi kuhlelwa kwemnikelo.
 
 </div>
@@ -87,7 +88,7 @@ Kukhokha kucutjwa ngesango lemnikelo lelifanako lelisebentiswa nguleli bandla la
 
 ## Tihloko Letihlobene
 
-- [Dala Emakhalenda](creating-calendars#enabling-event-registration) — vula kubhalisa kanye netinhlelo letisekelo
+- [Dala Emakhalenda](./creating-calendars.md#enabling-event-registration) — vula kubhalisa kanye netinhlelo letisekelo
 - [Kuhlela Umnikelo We-Online](../donations/online-giving-setup.md) — hlela sango lekukhokha lelisetjentiswa ekukhokheni
-- [Kubhalisela Imicimbi](../../b1-church/events/registering) — loko emalunga labakubonako nabagcwalisa
-- [Kubhalisa Kwami](../../b1-church/events/my-registrations) — kutsi emalunga akhokha njani lokusele futsi ahlele kubhalisa
+- [Kubhalisela Imicimbi](../../b1-church/events/registering.md) — loko emalunga labakubonako nabagcwalisa
+- [Kubhalisa Kwami](../../b1-church/events/my-registrations.md) — kutsi emalunga akhokha njani lokusele futsi ahlele kubhalisa

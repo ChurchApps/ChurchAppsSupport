@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "Povežite ChatGPT s cerkvenimi podatki B1 z API ključem in postavljajte vprašanja o ljudeh, darovih in prisotnosti v B1 Admin v preprostem jeziku."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Povežite ChatGPT s podatki svoje cerkve v B1 in ga vprašajte v običajnem jezi
 </div>
 
 :::tip Priporočilo: najprej poskusite Claude — je brezplačen
-[Claude](./claude) se z B1 poveže v **brezplačnem paketu** in se nastavi v manj kot 3 minutah — samo dodajte B1 kot konektor in se prijavite s svojim računom B1. Ključ ni potreben. To je najlažji način, da vaša cerkev preizkusi umetno inteligenco z B1, preden za kar koli plača.
+[Claude](./claude.md) se z B1 poveže v **brezplačnem paketu** in se nastavi v manj kot 3 minutah — samo dodajte B1 kot konektor in se prijavite s svojim računom B1. Ključ ni potreben. To je najlažji način, da vaša cerkev preizkusi umetno inteligenco z B1, preden za kar koli plača.
 :::
 
 ## Nastavitev
@@ -254,5 +255,5 @@ Kdor koli s povezavo lahko zastavlja vprašanja v naravnem jeziku. Obsegi ključ
 
 - [API ključi](/docs/developer/api/api-keys) — celoten seznam obsegov
 - [Strežnik MCP (referenca za razvijalce)](/docs/developer/api/mcp) — podrobnosti protokola in sheme orodij
-- [Claude](./claude) — isti koncept, za modele podjetja Anthropic
+- [Claude](./claude.md) — isti koncept, za modele podjetja Anthropic
 - [Referenca REST API](/docs/developer/api/endpoints) — vse končne točke, ki jih lahko kliče Custom GPT akcija

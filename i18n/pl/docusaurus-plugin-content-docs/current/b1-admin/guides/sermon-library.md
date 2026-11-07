@@ -1,5 +1,6 @@
 ---
 title: "Przewodnik: Zbuduj bibliotekę kazań i transmisję na żywo"
+description: "Importuj kazania z YouTube lub Vimeo, porządkuj je w playlistach i skonfiguruj cykliczne transmisje na żywo z czatem w B1 Admin dla strony kościoła."
 ---
 
 # Zbuduj bibliotekę kazań i transmisję na żywo

@@ -1,5 +1,6 @@
 ---
 title: "Aanwezigenaantal invoeren & trend"
+description: "Voer in B1 Admin een totaal aantal aanwezigen in voor een dienst of groep zonder naamlijst en volg die totalen week voor week in het Headcount Trend-rapport."
 ---
 
 # Aanwezigenaantal invoeren & trend

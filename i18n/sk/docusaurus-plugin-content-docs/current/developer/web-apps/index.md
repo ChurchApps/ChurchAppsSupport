@@ -1,5 +1,6 @@
 ---
 title: "Webové aplikácie"
+description: "Prehľad troch webových aplikácií ChurchApps (B1 Admin, B1.church, Lessons.church), ich spoločného stacku React a MUI, balíkov apphelper a nástrojov na zostavenie."
 ---
 
 # Webové aplikácie
@@ -41,7 +42,7 @@ Aplikácie zdieľajú komponenty používateľského rozhrania a pomocné nástr
 | `@churchapps/apphelper-website` | Komponenty webu a CMS |
 
 :::tip
-Podrobnosti o lokálnom vývoji týchto zdieľaných balíkov nájdete v dokumentácii [AppHelper](../shared-libraries/app-helper).
+Podrobnosti o lokálnom vývoji týchto zdieľaných balíkov nájdete v dokumentácii [AppHelper](../shared-libraries/app-helper.md).
 :::
 
 ## Skript postinstall

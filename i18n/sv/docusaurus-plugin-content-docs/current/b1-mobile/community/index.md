@@ -1,5 +1,7 @@
 ---
-title: "Gemenskap"
+title: "Gemenskapsfunktioner i B1 Mobile-appen"
+sidebar_label: "Gemenskap"
+description: "Använd B1 Mobile-appen för att söka i medlemskatalogen, skicka privata meddelanden till andra medlemmar och granska pushnotiser från din församling."
 ---
 
 # Gemenskap
@@ -12,13 +14,13 @@ Funktionerna **Gemenskap** i B1 Mobile hjälper dig att hålla kontakten med din
 
 ## Vad du hittar här
 
-- **[Medlemskatalog](./member-directory)** -- Bläddra och sök i din församlings medlemskatalog. Slå upp personer med namn och tryck på en medlem för att se deras profil med kontaktuppgifter och familjeband.
-- **[Meddelanden](./messaging)** -- Skicka och ta emot privata meddelanden till andra medlemmar i församlingen. Starta nya konversationer eller fortsätt där du slutade med befintliga.
-- **[Notifieringar](./notifications)** -- Håll dig uppdaterad med pushnotiser om gruppaktivitet, meddelanden, tjänstgöringsuppdrag och andra viktiga uppdateringar från din församling.
+- **[Medlemskatalog](./member-directory.md)** -- Bläddra och sök i din församlings medlemskatalog. Slå upp personer med namn och tryck på en medlem för att se deras profil med kontaktuppgifter och familjeband.
+- **[Meddelanden](./messaging.md)** -- Skicka och ta emot privata meddelanden till andra medlemmar i församlingen. Starta nya konversationer eller fortsätt där du slutade med befintliga.
+- **[Notifieringar](./notifications.md)** -- Håll dig uppdaterad med pushnotiser om gruppaktivitet, meddelanden, tjänstgöringsuppdrag och andra viktiga uppdateringar från din församling.
 
 ## Komma igång
 
-Du måste vara inloggad för att använda gemenskapsfunktionerna. Om du inte är inloggad uppmanas du att [logga in](../getting-started/logging-in) när du försöker använda någon av dessa sektioner.
+Du måste vara inloggad för att använda gemenskapsfunktionerna. Om du inte är inloggad uppmanas du att [logga in](../getting-started/logging-in.md) när du försöker använda någon av dessa sektioner.
 
 Medlemskatalogen, meddelandena och notifieringarna nås var och en från appens navigering. Tillsammans ger de dig ett enkelt sätt att hitta personer, kommunicera privat och hålla dig informerad om vad som händer i din församling.
 

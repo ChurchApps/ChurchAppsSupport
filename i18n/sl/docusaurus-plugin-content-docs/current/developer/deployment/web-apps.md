@@ -1,5 +1,6 @@
 ---
 title: "Razmestitev spletne aplikacije"
+description: "Kako namestiti spletne aplikacije ChurchApps, npr. B1 Admin, v Amazon S3 in CloudFront: samodejno prek GitHub Actions ob združitvi ali ročno z ukazi."
 ---
 
 # Razmestitev spletne aplikacije
@@ -13,7 +14,7 @@ Spletne aplikacije ChurchApps se razmeščajo kot statična spletna mesta v **Am
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Nastavite spletno aplikacijo lokalno in preverite, ali se gradi -- glejte [Spletne aplikacije](../web-apps/)
+- Nastavite spletno aplikacijo lokalno in preverite, ali se gradi -- glejte [Spletne aplikacije](../web-apps/index.md)
 - Nastavite poverilnice AWS z dostopom do S3 in CloudFront
 - Poznajte ime ciljnega paketa S3 in ID distribucije CloudFront
 
@@ -53,6 +54,6 @@ Te ukaze običajno ni treba izvajati ročno. Združitev zahteve za vlečenje v `
 
 ## Sorodni članki
 
-- **[Spletne aplikacije](../web-apps/)** -- Vodniki za nastavitev za B1Admin, B1App in LessonsApp
-- **[Razmestitev API-jev](./apis)** -- Razmestitev zaledne programske opreme API
-- **[Razmestitev mobilnih aplikacij](./mobile)** -- Razmestitev mobilnih aplikacij v trgovine z aplikacijami
+- **[Spletne aplikacije](../web-apps/index.md)** -- Vodniki za nastavitev za B1Admin, B1App in LessonsApp
+- **[Razmestitev API-jev](./apis.md)** -- Razmestitev zaledne programske opreme API
+- **[Razmestitev mobilnih aplikacij](./mobile.md)** -- Razmestitev mobilnih aplikacij v trgovine z aplikacijami

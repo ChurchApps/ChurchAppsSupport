@@ -1,5 +1,6 @@
 ---
 title: "Tillgänglighetskalender"
+description: "Ställ in bokningsbara lokaler och utrustning i B1 Admin, boka i kalendern, lägg till buffert för uppsättning och städning och hantera återkommande bokningar."
 ---
 
 # Tillgänglighetskalender
@@ -13,7 +14,7 @@ Tillgänglighetskalendern ger dig en överblick över alla bokningar av rum och 
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Skapa minst ett [rum eller en resurs](rooms-resources) i avsnittet Rum och resurser
+- Skapa minst ett [rum eller en resurs](./rooms-resources.md) i avsnittet Rum och resurser
 - Du behöver redigeringsbehörighet för avsnittet Kalendrar i B1 Admin
 
 </div>
@@ -58,7 +59,7 @@ Använd rullgardinsmenyn **Rum / Resurs** längst upp till vänster för att beg
 6. Klicka på **Spara** för att skicka bokningen.
 
 :::info
-Om rummet eller resursen har en **Godkännandegrupp** konfigurerad visas bokningen som **Väntar** tills en ledare i den gruppen godkänner den. Se [Kalendergodkännanden](approvals) för godkännandeprocessen.
+Om rummet eller resursen har en **Godkännandegrupp** konfigurerad visas bokningen som **Väntar** tills en ledare i den gruppen godkänner den. Se [Kalendergodkännanden](./approvals.md) för godkännandeprocessen.
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Kalendern markerar eventuella konflikter innan du sparar. Om du ser en konfliktv
 
 ## Relaterade artiklar
 
-- [Rum, resurser och schemaläggning](rooms-resources) — skapa bokningsbara utrymmen och utrustning
-- [Kalendergodkännanden](approvals) — godkänn eller neka bokningsförfrågningar
-- [Skapa kalendrar](creating-calendars) — hantera händelsekalendrar
+- [Rum, resurser och schemaläggning](./rooms-resources.md) — skapa bokningsbara utrymmen och utrustning
+- [Kalendergodkännanden](./approvals.md) — godkänn eller neka bokningsförfrågningar
+- [Skapa kalendrar](./creating-calendars.md) — hantera händelsekalendrar

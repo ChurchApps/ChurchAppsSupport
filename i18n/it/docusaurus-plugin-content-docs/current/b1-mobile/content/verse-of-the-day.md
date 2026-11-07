@@ -1,5 +1,7 @@
 ---
-title: "Versetto del Giorno"
+title: "Versetto del giorno in B1 Mobile"
+sidebar_label: "Versetto del Giorno"
+description: "Apri la schermata Versetto del giorno in B1 Mobile per vedere il versetto di oggi come immagine adatta a telefono o tablet, aggiornata ogni giorno."
 ---
 
 # Versetto del Giorno
@@ -13,7 +15,7 @@ La schermata Versetto del Giorno visualizza un versetto biblico quotidiano come 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- [Installa B1 Mobile](../getting-started/installing) e [accedi](../getting-started/logging-in) al tuo account
+- [Installa B1 Mobile](../getting-started/installing.md) e [accedi](../getting-started/logging-in.md) al tuo account
 - La tua chiesa deve avere la funzionalità Versetto del Giorno abilitata
 
 </div>
@@ -46,5 +48,5 @@ Il Versetto del Giorno è una funzionalità di contenuto integrata in B1 Mobile.
 
 ## Articoli Correlati
 
-- [Bibbia](./bible) -- Leggi passaggi completi delle Scritture nel lettore integrato
-- [Sermoni](./sermons) -- Guarda i sermoni registrati dalla tua chiesa
+- [Bibbia](./bible.md) -- Leggi passaggi completi delle Scritture nel lettore integrato
+- [Sermoni](./sermons.md) -- Guarda i sermoni registrati dalla tua chiesa

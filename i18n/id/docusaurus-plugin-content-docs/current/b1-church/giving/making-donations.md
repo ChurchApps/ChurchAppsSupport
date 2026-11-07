@@ -1,5 +1,7 @@
 ---
-title: "Membuat Donasi"
+title: "Memberi Persembahan di Portal Anggota B1.church"
+sidebar_label: "Membuat Donasi"
+description: "Berikan persembahan satu kali atau berulang ke gereja Anda melalui B1.church, dengan atau tanpa akun, lalu tinjau riwayat pemberian Anda setelahnya."
 ---
 
 # Membuat Donasi

@@ -1,5 +1,6 @@
 ---
 title: "Format Pelajaran Terbuka"
+description: "Spesifikasi format untuk penyedia kurikulum pihak ketiga di Lessons.church: struktur penyedia, field JSON feed venue, aksi, dan file media."
 ---
 
 # Format Pelajaran Terbuka

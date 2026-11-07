@@ -1,5 +1,6 @@
 ---
 title: "웹 푸시 알림"
+description: "VAPID 키, WebPushHelper 클라이언트, 서비스 워커 처리를 설정하여 B1.church와 B1 Admin이 회원에게 브라우저 푸시 알림을 보낼 수 있도록 합니다."
 ---
 
 # 웹 푸시 알림
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## 관련 문서
 
-- [알림 아키텍처](./architecture/notifications) -- 앱 내, 푸시, 이메일로 이어지는 전체 에스컬레이션 흐름과 알림 엔진
-- [실시간 아키텍처](./realtime) -- WebSocket 전달. 이제 푸시는 소켓 전달이 실패했을 때만 쓰는 대체 수단이 아니라, 같은 과정에서 소켓 전달과 함께 앱 내 흐름에서 발송됨
-- [메시징 엔드포인트](./api/endpoints/messaging) -- 알림, 기기, 나머지 메시징 기능
-- [AppHelper](./shared-libraries/app-helper) -- `WebPushHelper`를 제공하는 npm 패키지
+- [알림 아키텍처](./architecture/notifications.md) -- 앱 내, 푸시, 이메일로 이어지는 전체 에스컬레이션 흐름과 알림 엔진
+- [실시간 아키텍처](./realtime.md) -- WebSocket 전달. 이제 푸시는 소켓 전달이 실패했을 때만 쓰는 대체 수단이 아니라, 같은 과정에서 소켓 전달과 함께 앱 내 흐름에서 발송됨
+- [메시징 엔드포인트](./api/endpoints/messaging.md) -- 알림, 기기, 나머지 메시징 기능
+- [AppHelper](./shared-libraries/app-helper.md) -- `WebPushHelper`를 제공하는 npm 패키지

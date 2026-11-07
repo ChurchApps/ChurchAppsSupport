@@ -1,5 +1,6 @@
 ---
 title: "Gerenciando Telas e Grupos"
+description: "Veja quais TVs FreePlay estão online e prontas para o domingo, edite configurações e crie grupos de telas com um calendário em comum no FreePlay Admin."
 ---
 
 # Gerenciando Telas e Grupos
@@ -14,7 +15,7 @@ A página **Telas** no FreePlay Admin lista todas as TVs pareadas à sua igreja,
 <h4>Antes de Começar</h4>
 
 - Faça login no FreePlay Admin em [admin.freeplay.church](https://admin.freeplay.church)
-- [Pareie pelo menos uma tela](./pairing-a-screen)
+- [Pareie pelo menos uma tela](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Use **Apresentar** para reproduzir o calendário da tela no seu navegador, ou **
 
 Clique no rótulo de uma tela para abrir a página dela. À esquerda, você encontra:
 
-- **Apresentar no navegador** - Reproduz o calendário desta tela em tela cheia no seu navegador, como apareceria na TV. Veja [Apresentando a partir de um Navegador](./scheduled-playback#presenting-from-a-browser)
+- **Apresentar no navegador** - Reproduz o calendário desta tela em tela cheia no seu navegador, como apareceria na TV. Veja [Apresentando a partir de um Navegador](./scheduled-playback.md#presenting-from-a-browser)
 - **Editar** - Altera o rótulo, o grupo ou o modo
 - **Mais** > **Desparear** - Desconecta a TV. Ela volta a exibir um código de pareamento
 
@@ -93,6 +94,6 @@ Excluir um grupo também exclui a programação dele. As telas desse grupo ficam
 
 ## Artigos Relacionados
 
-- **[Pareando uma Tela](./pairing-a-screen)** - Adicione uma nova TV
-- **[Agendando o Calendário](./scheduling-the-calendar)** - Defina o que cada grupo reproduz e seu loop padrão
-- **[Reprodução Agendada na TV](./scheduled-playback)** - O que a data "Pronta até" significa na própria TV
+- **[Pareando uma Tela](./pairing-a-screen.md)** - Adicione uma nova TV
+- **[Agendando o Calendário](./scheduling-the-calendar.md)** - Defina o que cada grupo reproduz e seu loop padrão
+- **[Reprodução Agendada na TV](./scheduled-playback.md)** - O que a data "Pronta até" significa na própria TV

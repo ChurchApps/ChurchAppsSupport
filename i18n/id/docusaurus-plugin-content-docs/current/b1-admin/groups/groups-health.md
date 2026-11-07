@@ -1,5 +1,6 @@
 ---
 title: "Kesehatan Grup"
+description: "Periksa kesehatan grup di B1 Admin dengan tabel 90 hari: anggota, bergabung, keluar, churn, dan rata-rata kehadiran untuk menemukan grup yang perlu tindak lanjut."
 ---
 
 # Kesehatan Grup
@@ -13,8 +14,8 @@ Dasbor Kesehatan Grup memberi Anda gambaran menyeluruh tentang kondisi semua gru
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Anda memerlukan setidaknya beberapa grup dengan anggota agar dapat melihat data yang bermakna. Lihat [Membuat Grup](creating-groups).
-- Data kehadiran diambil dari sesi yang telah dicatat. Lihat bagian [Kehadiran](../attendance/).
+- Anda memerlukan setidaknya beberapa grup dengan anggota agar dapat melihat data yang bermakna. Lihat [Membuat Grup](./creating-groups.md).
+- Data kehadiran diambil dari sesi yang telah dicatat. Lihat bagian [Kehadiran](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Mengklik nama grup akan membawa Anda langsung ke halaman detail grup, tempat And
 
 ## Artikel Terkait
 
-- [Membuat Grup](creating-groups) — menyiapkan grup
-- [Anggota Grup](group-members) — mengelola keanggotaan grup
-- [Mencatat Kehadiran](../attendance/tracking-attendance) — mencatat sesi kehadiran yang menjadi sumber dasbor ini
+- [Membuat Grup](./creating-groups.md) — menyiapkan grup
+- [Anggota Grup](./group-members.md) — mengelola keanggotaan grup
+- [Mencatat Kehadiran](../attendance/tracking-attendance.md) — mencatat sesi kehadiran yang menjadi sumber dasbor ini

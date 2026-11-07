@@ -1,5 +1,6 @@
 ---
 title: "Railway ile Kendi Sunucunuzda Barındırma"
+description: "Railway'de yaklaşık 15 dakikada özel bir ChurchApps kurun; B1 Admin ve B1App için e-posta, özel alan adı, bağış ve dosya depolamayı yapılandırın."
 ---
 
 # Railway ile Kendi Sunucunuzda Barındırma
@@ -195,7 +196,7 @@ Bunlar belirli özellikleri açar ve istediğiniz zaman Railway kontrol panelind
 | `VIMEO_TOKEN` | Vimeo vaaz desteği |
 | `API_BIBLE_KEY` | Dersler ve içeriklerde İncil ayeti aramaları |
 | `YOUVERSION_API_KEY` | YouVersion İncil entegrasyonu |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Tarayıcı push bildirimleri ([bir VAPID anahtar çifti oluşturun](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Tarayıcı push bildirimleri ([bir VAPID anahtar çifti oluşturun](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Yeni kayıtlar için isteğe bağlı CRM senkronizasyonu |
 
 ## Güncelleme
@@ -234,9 +235,9 @@ Bu listede olmayan bir sorunla karşılaşırsanız, dağıtım günlüklerini e
 
 ## İlgili Makaleler
 
-- **[Docker ile Kendi Sunucunuzda Barındırma](./docker)** — Aynı yığın kendi donanımınızda veya VPS'nizde
-- **[İlk Kurulum](../../getting-started/initial-setup)** — Kilisenizi oluşturduktan sonraki ilk adımlar
-- **[Web Sitesi İlk Kurulum](../../b1-admin/website/initial-setup)** — Kilisenizin herkese açık sitesini yapılandırın
-- **[Bağış Ayarları](../../b1-admin/donations/online-giving-setup)** — Stripe veya PayPal'ı bağlayın
-- **[Yerel API Kurulumu](../api/local-setup)** — Geliştirme için yığını yerel olarak çalıştırma
-- **[API Dağıtımı (AWS)](./apis)** — Resmi ChurchApps SaaS'ın nasıl dağıtıldığı
+- **[Docker ile Kendi Sunucunuzda Barındırma](./docker.md)** — Aynı yığın kendi donanımınızda veya VPS'nizde
+- **[İlk Kurulum](../../getting-started/initial-setup.md)** — Kilisenizi oluşturduktan sonraki ilk adımlar
+- **[Web Sitesi İlk Kurulum](../../b1-admin/website/initial-setup.md)** — Kilisenizin herkese açık sitesini yapılandırın
+- **[Bağış Ayarları](../../b1-admin/donations/online-giving-setup.md)** — Stripe veya PayPal'ı bağlayın
+- **[Yerel API Kurulumu](../api/local-setup.md)** — Geliştirme için yığını yerel olarak çalıştırma
+- **[API Dağıtımı (AWS)](./apis.md)** — Resmi ChurchApps SaaS'ın nasıl dağıtıldığı

@@ -1,5 +1,6 @@
 ---
 title: "Pendaftaran Saya"
+description: "Cek status pendaftaran, bayar saldo yang jatuh tempo, edit peserta atau tambahan, atau batalkan pendaftaran acara di portal anggota B1 Church."
 ---
 
 # Pendaftaran Saya
@@ -14,7 +15,7 @@ Halaman **Pendaftaran** di portal anggota adalah pusat untuk semua acara yang An
 <h4>Sebelum Memulai</h4>
 
 - Anda harus [masuk](../getting-started/logging-in.md) — pendaftaran tamu tidak muncul di sini
-- Anda memerlukan setidaknya satu pendaftaran acara. Lihat [Mendaftar untuk Acara](./registering).
+- Anda memerlukan setidaknya satu pendaftaran acara. Lihat [Mendaftar untuk Acara](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Tempat Anda langsung dilepaskan. Jika acara memiliki daftar tunggu, orang beriku
 
 ## Artikel Terkait
 
-- [Mendaftar untuk Acara](./registering) -- Proses pendaftaran, termasuk pembayaran dan daftar tunggu
+- [Mendaftar untuk Acara](./registering.md) -- Proses pendaftaran, termasuk pembayaran dan daftar tunggu
 - [Ringkasan Acara](./index.md) -- Telusuri acara yang akan datang

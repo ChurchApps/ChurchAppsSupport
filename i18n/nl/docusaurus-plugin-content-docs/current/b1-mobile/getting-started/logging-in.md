@@ -1,5 +1,7 @@
 ---
-title: "Aanmelden"
+title: "Inloggen op B1 Mobile"
+sidebar_label: "Aanmelden"
+description: "Log in op de B1 Mobile-app met je ChurchApps-account, registreer een nieuw account of herstel een vergeten wachtwoord met een 6-cijferige code."
 ---
 
 # Aanmelden
@@ -13,7 +15,7 @@ B1 Mobile gebruikt dezelfde ChurchApps-account die u op B1.church en andere Chur
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- [Installeer B1 Mobile](./installing) op uw iOS- of Android-apparaat
+- [Installeer B1 Mobile](./installing.md) op uw iOS- of Android-apparaat
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile gebruikt dezelfde ChurchApps-account die u op B1.church en andere Chur
 3. Voer uw **e-mailadres** en **wachtwoord** in.
 4. Tik op **Aanmelden**.
 
-Na aanmelding wordt u naar het [dashboard](../dashboard/) gebracht. Als u nog geen kerk hebt geselecteerd, wordt u gevraagd naar een zoekopdracht uit te voeren en een zoekopdracht uit te voeren.
+Na aanmelding wordt u naar het [dashboard](../dashboard/index.md) gebracht. Als u nog geen kerk hebt geselecteerd, wordt u gevraagd naar een zoekopdracht uit te voeren en een zoekopdracht uit te voeren.
 
 ## Een nieuw account aanmaken
 

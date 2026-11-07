@@ -1,5 +1,6 @@
 ---
 title: "Integrasi & Permukaan Ekstensi"
+description: "Peta semua cara terhubung ke B1 ChurchApps: REST API, kunci API, OAuth, webhook, MCP, dan penyedia konten, dengan tautan ke setiap referensi."
 ---
 
 # Integrasi & Permukaan Ekstensi
@@ -14,12 +15,12 @@ Semua yang dapat dihubungkan oleh pihak ketiga berjalan melalui satu API dan sat
 
 Ada enam cara masuk dan keluar, dan semuanya berbagi lapisan autentikasi yang sama:
 
-- **[REST API](../api/api-keys)** — seluruh permukaan produk, dapat dipanggil dengan bearer token dari bahasa pemrograman apa pun.
-- **[API keys](../api/api-keys)** — kredensial paling sederhana: token `cak_…` yang terikat pada satu orang di satu gereja.
-- **[OAuth 2.0 & Connected Apps](../api/connected-apps)** — persetujuan per gereja untuk aplikasi multi-tenant; menerbitkan JWT yang sama dengan yang diterima pengguna.
-- **[Webhooks](../api/webhooks)** — peristiwa keluar yang ditandatangani dan dikirim secara andal.
-- **[MCP server](../api/mcp)** — pembungkus untuk AI di atas REST API, di `/mcp`.
-- **[Content providers](../freeplay-content-provider)** — jalur masuk untuk pustaka media eksternal ke FreePlay dan aplikasi B1.
+- **[REST API](../api/api-keys.md)** — seluruh permukaan produk, dapat dipanggil dengan bearer token dari bahasa pemrograman apa pun.
+- **[API keys](../api/api-keys.md)** — kredensial paling sederhana: token `cak_…` yang terikat pada satu orang di satu gereja.
+- **[OAuth 2.0 & Connected Apps](../api/connected-apps.md)** — persetujuan per gereja untuk aplikasi multi-tenant; menerbitkan JWT yang sama dengan yang diterima pengguna.
+- **[Webhooks](../api/webhooks.md)** — peristiwa keluar yang ditandatangani dan dikirim secara andal.
+- **[MCP server](../api/mcp.md)** — pembungkus untuk AI di atas REST API, di `/mcp`.
+- **[Content providers](../freeplay-content-provider.md)** — jalur masuk untuk pustaka media eksternal ke FreePlay dan aplikasi B1.
 
 Semua kecuali content providers dilayani oleh satu API monolitik (repositori [Api](https://github.com/ChurchApps/Api)) yang modul-modulnya dipasang di bawah path dasar yang stabil — `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting`, dan `/mcp`.
 
@@ -80,7 +81,7 @@ Controller membatasi tindakan dengan `au.checkAccess(contentType, action)` terha
 - Lingkup hanya dapat *menghapus* izin, sehingga kredensial yang dibatasi lingkupnya tidak pernah dapat naik menjadi administrator server / domain (izin tersebut sengaja tidak dipetakan ke lingkup mana pun).
 - API key membawa awalan `cak_`; `CustomAuthProvider.getUser()` bercabang berdasarkan awalan itu, melakukan hash pada secret, dan menyelesaikan ulang RBAC aktif milik pemilik setiap kali dipanggil.
 
-Lihat [API Keys → Scopes](../api/api-keys#scopes) untuk katalog lengkapnya.
+Lihat [API Keys → Scopes](../api/api-keys.md#scopes) untuk katalog lengkapnya.
 
 ## Referensi Permukaan
 
@@ -90,7 +91,7 @@ Seluruh permukaan produk. Setiap endpoint yang terautentikasi menerima JWT atau 
 
 ### API keys
 
-Personal access token `cak_<prefix>.<secret>`, dibuat di **B1Admin → Settings → Developer → API Keys**. Hanya hash SHA-256 yang disimpan; kunci mentah hanya ditampilkan sekali. Dikelola di `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Paling cocok untuk skrip milik satu gereja dan untuk konektor seperti Zapier, Make, dan Google Sheets. → **[API Keys](../api/api-keys)**
+Personal access token `cak_<prefix>.<secret>`, dibuat di **B1Admin → Settings → Developer → API Keys**. Hanya hash SHA-256 yang disimpan; kunci mentah hanya ditampilkan sekali. Dikelola di `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Paling cocok untuk skrip milik satu gereja dan untuk konektor seperti Zapier, Make, dan Google Sheets. → **[API Keys](../api/api-keys.md)**
 
 ### OAuth 2.0 & Connected Apps
 
@@ -102,19 +103,19 @@ Untuk aplikasi multi-tenant yang membutuhkan persetujuan dari setiap gereja. Dii
 
 Klien publik juga dapat mendaftarkan diri sendiri dengan `POST /oauth/register` (dynamic client registration RFC 7591); mereka mendapatkan `client_id` tanpa secret, dan redirect URI mereka harus `https` atau loopback.
 
-**Connected App** adalah tampilan token yang diberikan dari sisi administrator gereja, yang dapat dilihat dan dicabut di `/membership/oauth/connections`. Controller juga menjadi tuan rumah bagi jembatan **relay-session** OAuth (`/oauth/relay/*`) yang memungkinkan perangkat tanpa browser menyelesaikan proses masuk ke penyedia *eksternal*. → **[Connected Apps & OAuth](../api/connected-apps)**
+**Connected App** adalah tampilan token yang diberikan dari sisi administrator gereja, yang dapat dilihat dan dicabut di `/membership/oauth/connections`. Controller juga menjadi tuan rumah bagi jembatan **relay-session** OAuth (`/oauth/relay/*`) yang memungkinkan perangkat tanpa browser menyelesaikan proses masuk ke penyedia *eksternal*. → **[Connected Apps & OAuth](../api/connected-apps.md)**
 
 ### Webhooks
 
-Satu-satunya permukaan keluar. Sebuah gereja berlangganan endpoint HTTPS publik ke peristiwa tertentu; ketika perubahan yang cocok terjadi, `WebhookDispatcher.emit(churchId, event, payload)` memperkaya payload yang hanya berisi id dengan nama tampilan (`personName`, `groupName`, `formName` — pencarian hanya dijalankan setelah sebuah langganan cocok), mencatat pengiriman, dan worker latar belakang mengirimkan envelope JSON yang ditandatangani dengan retry/backoff dan pengiriman ulang. Engine berada di `Api/src/shared/webhooks/`, CRUD per gereja di bawah `/membership/webhooks` (`WebhookController.ts`). Field `connectorType` membentuk ulang body untuk Slack / Discord; konektor `mailchimp` melangkah lebih jauh dan mengelola seluruh pertukaran HTTP (metode/URL/autentikasi per peristiwa terhadap API Mailchimp, kredensial dienkripsi di `webhooks.connectorConfig`). → **[Webhooks](../api/webhooks)**
+Satu-satunya permukaan keluar. Sebuah gereja berlangganan endpoint HTTPS publik ke peristiwa tertentu; ketika perubahan yang cocok terjadi, `WebhookDispatcher.emit(churchId, event, payload)` memperkaya payload yang hanya berisi id dengan nama tampilan (`personName`, `groupName`, `formName` — pencarian hanya dijalankan setelah sebuah langganan cocok), mencatat pengiriman, dan worker latar belakang mengirimkan envelope JSON yang ditandatangani dengan retry/backoff dan pengiriman ulang. Engine berada di `Api/src/shared/webhooks/`, CRUD per gereja di bawah `/membership/webhooks` (`WebhookController.ts`). Field `connectorType` membentuk ulang body untuk Slack / Discord; konektor `mailchimp` melangkah lebih jauh dan mengelola seluruh pertukaran HTTP (metode/URL/autentikasi per peristiwa terhadap API Mailchimp, kredensial dienkripsi di `webhooks.connectorConfig`). → **[Webhooks](../api/webhooks.md)**
 
 ### MCP server
 
-Pembungkus untuk AI di `/mcp` (`Api/src/modules/mcp/`). Tiga alat generik — `list_endpoints`, `describe_endpoint`, `api_call` — mengekspos seluruh REST API secara dinamis ke klien MCP mana pun. Autentikasinya sama dengan bearer token lainnya. Untuk klien yang masuk dengan OAuth (custom connector claude.ai), respons 401 dari `/mcp` membawa header `WWW-Authenticate` yang mengarah ke `/.well-known/oauth-protected-resource`, dan `/.well-known/oauth-authorization-server` mengiklankan endpoint `/membership/oauth`, dynamic registration, PKCE, dan halaman persetujuan `/oauth` di B1Admin (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` masuk kembali ke stack Express di dalam proses yang sama sehingga setiap aturan izin dan pembatasan gereja tetap berlaku. → **[MCP Server](../api/mcp)**
+Pembungkus untuk AI di `/mcp` (`Api/src/modules/mcp/`). Tiga alat generik — `list_endpoints`, `describe_endpoint`, `api_call` — mengekspos seluruh REST API secara dinamis ke klien MCP mana pun. Autentikasinya sama dengan bearer token lainnya. Untuk klien yang masuk dengan OAuth (custom connector claude.ai), respons 401 dari `/mcp` membawa header `WWW-Authenticate` yang mengarah ke `/.well-known/oauth-protected-resource`, dan `/.well-known/oauth-authorization-server` mengiklankan endpoint `/membership/oauth`, dynamic registration, PKCE, dan halaman persetujuan `/oauth` di B1Admin (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` masuk kembali ke stack Express di dalam proses yang sama sehingga setiap aturan izin dan pembatasan gereja tetap berlaku. → **[MCP Server](../api/mcp.md)**
 
 ### Content providers
 
-Jalur konten masuk, berada di paket terpisah `Packages/content-providers` (`@churchapps/content-providers`), bukan di API. Setiap provider mengimplementasikan antarmuka `IProvider` (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions`, plus hook autentikasi — dan mendaftarkan dirinya sendiri ke registri `Map` (`src/providers/registry.ts`). Di sini **B1 adalah klien OAuth**: provider mendeklarasikan `AuthType` berupa `none`, `oauth_pkce`, `device_flow`, atau `form_login`, dan helper bersama (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) menjalankan alur PKCE / device di sisi klien terhadap sumber eksternal. Saat ini ada sebelas provider — termasuk Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church, dan B1.church — yang menyuplai FreePlay dan aplikasi B1. → **[FreePlay Content Provider](../freeplay-content-provider)**
+Jalur konten masuk, berada di paket terpisah `Packages/content-providers` (`@churchapps/content-providers`), bukan di API. Setiap provider mengimplementasikan antarmuka `IProvider` (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions`, plus hook autentikasi — dan mendaftarkan dirinya sendiri ke registri `Map` (`src/providers/registry.ts`). Di sini **B1 adalah klien OAuth**: provider mendeklarasikan `AuthType` berupa `none`, `oauth_pkce`, `device_flow`, atau `form_login`, dan helper bersama (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) menjalankan alur PKCE / device di sisi klien terhadap sumber eksternal. Saat ini ada sebelas provider — termasuk Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church, dan B1.church — yang menyuplai FreePlay dan aplikasi B1. → **[FreePlay Content Provider](../freeplay-content-provider.md)**
 
 **Year plans** berjalan melalui jalur ini. Penerbit kurikulum (dengan `lessons.edit`) memelihara urutan berurutan minggu-1/2/3 di admin Lessons.church (tabel `LessonsApi` `yearPlans` / `yearPlanWeeks`, dengan `startMonth` opsional dan `anchor` per minggu berupa `easter` / `christmas`); `GET /yearPlans/public` di LessonsApi menyajikan rencana aktif secara anonim, dengan mengisi program/studi/tempat setiap minggu dari pohon pelajaran. **Serving → Plans → Schedule Lesson → Apply Year Plan** di B1Admin menggunakan endpoint tersebut dan menulis satu rencana DoingApi untuk setiap minggu yang disertakan (`providerId=lessonschurch`, `providerPlanId=/lessons/{programId}/{studyId}/{lessonId}/{venueId}`). Rencana dengan `startMonth` menyelesaikan minggu yang terikat (anchor) terhadap tahun yang dipilih (Paskah melalui komputus Gregorian, Natal sebagai hari Minggu pada atau sebelum 25 Desember) dan mengisi rentang di antaranya; rencana tanpa `startMonth` tetap memetakan minggu ke-N ke `startDate + (N−1)×7` hari. Minggu dari provider OLF eksternal atau dengan path yang tidak lengkap dilewati saat penerapan; gereja mengedit rencana yang dihasilkan seperti rencana lainnya, dan FreePlay memutar apa pun yang ada di rencana tersebut.
 
@@ -122,12 +123,12 @@ Jalur konten masuk, berada di paket terpisah `Packages/content-providers` (`@chu
 
 | Permukaan | Mekanisme autentikasi | Arah | Tempat diimplementasikan | Referensi |
 |---|---|---|---|---|
-| REST API | JWT `Bearer` atau key `cak_…` | Masuk | `Api/src/modules/*` | [API Keys](../api/api-keys) |
-| API keys | Token `cak_` yang di-hash SHA-256 | Kredensial | `Api/.../membership/controllers/ApiKeyController.ts` | [API Keys](../api/api-keys) |
-| OAuth 2.0 / Connected Apps | Auth code (PKCE) · device · refresh → JWT; dynamic client registration | Masuk | `Api/.../membership/controllers/OAuthController.ts` | [Connected Apps](../api/connected-apps) |
-| Webhooks | Secret per hook, tanda tangan HMAC-SHA256 | Keluar | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks) |
-| MCP server | JWT `Bearer`, JWT OAuth (ditemukan melalui `/.well-known`), atau key `cak_…` | Masuk (AI) | `Api/src/modules/mcp/` | [MCP Server](../api/mcp) |
-| Content providers | Per provider: none / OAuth PKCE / device / form | Masuk (konten) | `Packages/content-providers/` | [Content Provider](../freeplay-content-provider) |
+| REST API | JWT `Bearer` atau key `cak_…` | Masuk | `Api/src/modules/*` | [API Keys](../api/api-keys.md) |
+| API keys | Token `cak_` yang di-hash SHA-256 | Kredensial | `Api/.../membership/controllers/ApiKeyController.ts` | [API Keys](../api/api-keys.md) |
+| OAuth 2.0 / Connected Apps | Auth code (PKCE) · device · refresh → JWT; dynamic client registration | Masuk | `Api/.../membership/controllers/OAuthController.ts` | [Connected Apps](../api/connected-apps.md) |
+| Webhooks | Secret per hook, tanda tangan HMAC-SHA256 | Keluar | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks.md) |
+| MCP server | JWT `Bearer`, JWT OAuth (ditemukan melalui `/.well-known`), atau key `cak_…` | Masuk (AI) | `Api/src/modules/mcp/` | [MCP Server](../api/mcp.md) |
+| Content providers | Per provider: none / OAuth PKCE / device / form | Masuk (konten) | `Packages/content-providers/` | [Content Provider](../freeplay-content-provider.md) |
 
 ## Konektor Siap Pakai
 
@@ -143,9 +144,9 @@ Untuk kode Anda sendiri, **[`@churchapps/integration-sdk`](https://www.npmjs.com
 
 ## Halaman Terkait
 
-- [API Keys](../api/api-keys) — kredensial paling sederhana dan katalog lingkup
-- [Connected Apps & OAuth](../api/connected-apps) — alur persetujuan multi-tenant
-- [Webhooks](../api/webhooks) — sistem peristiwa keluar
-- [MCP Server](../api/mcp) — pembungkus integrasi AI
-- [FreePlay Content Provider](../freeplay-content-provider) — menjadi sumber konten masuk
+- [API Keys](../api/api-keys.md) — kredensial paling sederhana dan katalog lingkup
+- [Connected Apps & OAuth](../api/connected-apps.md) — alur persetujuan multi-tenant
+- [Webhooks](../api/webhooks.md) — sistem peristiwa keluar
+- [MCP Server](../api/mcp.md) — pembungkus integrasi AI
+- [FreePlay Content Provider](../freeplay-content-provider.md) — menjadi sumber konten masuk
 - [Integrasi (pengguna akhir)](/docs/b1-admin/integrations/) — panduan penyiapan konektor siap pakai

@@ -6,7 +6,7 @@ description: "拟议的教会自有 Twilio 集成、同意模型、实施范围�
 # Twilio BYOK 集成提案
 
 :::caution 提案——并非可用的集成
-这是供维护者审阅的设计方案，基于 2026 年 10 月 22 日审阅的公开源代码和 Twilio 文档。此后，一个基础的 Twilio 提供方已经发布（`@churchapps/texting` 0.6.0 以及 B1 Admin 的 **Settings > Texting**）：教会输入其 Account SID、Auth Token 和发件号码（该提供方也接受以 `MG` 开头的 Messaging Service SID，但 `fromNumber` 列仍为 `varchar(20)`，对于 34 个字符的 SID 来说太短），短信通过 Twilio 的 Messages API 逐个收件人单独发送，STOP 回复通过现有的入站 Webhook 回到 B1。请参见 [教会设置：短信](../../b1-admin/settings/church-settings.md#texting)。下文中的同意模型、高级退订处理、投递状态以及设置就绪检查仍是提案，尚非已发布的功能。配套的[教会入门草案](./twilio-byok-onboarding-draft)包含拟议的设置指南和针对教会的示例。
+这是供维护者审阅的设计方案，基于 2026 年 10 月 22 日审阅的公开源代码和 Twilio 文档。此后，一个基础的 Twilio 提供方已经发布（`@churchapps/texting` 0.6.0 以及 B1 Admin 的 **Settings > Texting**）：教会输入其 Account SID、Auth Token 和发件号码（该提供方也接受以 `MG` 开头的 Messaging Service SID，但 `fromNumber` 列仍为 `varchar(20)`，对于 34 个字符的 SID 来说太短），短信通过 Twilio 的 Messages API 逐个收件人单独发送，STOP 回复通过现有的入站 Webhook 回到 B1。请参见 [教会设置：短信](../../b1-admin/settings/church-settings.md#texting)。下文中的同意模型、高级退订处理、投递状态以及设置就绪检查仍是提案，尚非已发布的功能。配套的[教会入门草案](./twilio-byok-onboarding-draft.md)包含拟议的设置指南和针对教会的示例。
 :::
 
 ## 推荐方案
@@ -38,7 +38,7 @@ description: "拟议的教会自有 Twilio 集成、同意模型、实施范围�
 | [消息模式](https://github.com/ChurchApps/Api/blob/82eda28b6803754548ce007bd52177a21700f118/tools/migrations/messaging/2026-04-03_initial_schema.ts) | 存储 `apiKey`、`apiSecret` 和 20 个字符的 `fromNumber`；投递日志仅记录即时的成功/错误，不记录提供方 ID 或最终投递状态。 | E.164 发件号码可以适配；34 个字符的 Messaging Service SID 需要单独的字段。需要添加持久化的提供方消息/状态存储。 |
 | [公开表单页面](https://github.com/ChurchApps/B1App/blob/5ca19ee4ef947235b8ffba9fbb35af42d0dcb41d/src/app/%5BsdSlug%5D/%28public%29/%5BpageSlug%5D/%5Bid%5D/components/FormPage.tsx)、[共享表单渲染器](https://github.com/ChurchApps/Packages/blob/68c93d610031d3ed56d3582055413e851c5cb2ee/apphelper/src/forms/components/QuestionEdit.tsx)以及[提交控制器](https://github.com/ChurchApps/Api/blob/82eda28b6803754548ce007bd52177a21700f118/src/modules/membership/controllers/FormSubmissionController.ts) | 已存在非受限表单和可选复选框。描述仅为纯文本。提交会保留答案，但短信路径没有针对特定活动的同意记录。 | 添加已配置的短信同意控件，包含真实的政策链接，并在服务器端记录证据；通用复选框或群组成员身份不得自动授权发送短信。 |
 
-[教会设置文档](../../b1-admin/settings/church-settings#texting)（面向用户）还说明了，当前的退订标记与目录隐私共用同一个标志。这种耦合是一个发布层面的问题：回复 START 绝不能改变目录可见性。
+[教会设置文档](../../b1-admin/settings/church-settings.md#texting)（面向用户）还说明了，当前的退订标记与目录隐私共用同一个标志。这种耦合是一个发布层面的问题：回复 START 绝不能改变目录可见性。
 
 ## 配置与凭据设计
 

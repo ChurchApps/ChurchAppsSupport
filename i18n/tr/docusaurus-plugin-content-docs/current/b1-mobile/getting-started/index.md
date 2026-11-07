@@ -1,5 +1,7 @@
 ---
-title: "Başlarken"
+title: "B1 Mobile'a Başlarken (Kullanımdan Kaldırıldı)"
+sidebar_label: "Başlarken"
+description: "B1 Mobile'ı telefonunuza kurun: uygulamayı bulun, ChurchApps hesabınızla giriş yapın ve kilisenizi seçin. B1 Mobile'ın yerine PWA önerildiğini unutmayın."
 ---
 
 # Başlarken
@@ -25,10 +27,10 @@ Bu kadar. Kilisenizi seçtikten sonra uygulama, kilisenizin markasını, gezinme
 
 ## Bu Bölümde
 
-- [Uygulamayı Yükleme](./installing) -- B1 Mobile'ı nereden indireceğiniz ve cihaz gereksinimleri.
-- [Oturum Açma](./logging-in) -- Nasıl oturum açacağınız veya yeni bir hesap oluşturacağınız.
-- [Kilise Değiştirme](./switching-churches) -- Birden fazla kiliseye üyeyseniz aralarında nasıl geçiş yapacağınız.
+- [Uygulamayı Yükleme](./installing.md) -- B1 Mobile'ı nereden indireceğiniz ve cihaz gereksinimleri.
+- [Oturum Açma](./logging-in.md) -- Nasıl oturum açacağınız veya yeni bir hesap oluşturacağınız.
+- [Kilise Değiştirme](./switching-churches.md) -- Birden fazla kiliseye üyeyseniz aralarında nasıl geçiş yapacağınız.
 
 :::tip
-B1 Mobile, diğer tüm ChurchApps ürünleriyle aynı ChurchApps hesabını kullanır. Zaten [B1.church](../../b1-church/), B1 Admin veya Lessons.church hesabınız varsa, aynı kimlik bilgilerini kullanarak oturum açabilirsiniz.
+B1 Mobile, diğer tüm ChurchApps ürünleriyle aynı ChurchApps hesabını kullanır. Zaten [B1.church](../../b1-church/index.md), B1 Admin veya Lessons.church hesabınız varsa, aynı kimlik bilgilerini kullanarak oturum açabilirsiniz.
 :::

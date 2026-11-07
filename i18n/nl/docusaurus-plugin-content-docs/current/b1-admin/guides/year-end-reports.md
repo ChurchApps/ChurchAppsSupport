@@ -1,5 +1,6 @@
 ---
 title: "Gids: Jaar-eindgifrapporten genereren"
+description: "Rond in B1 Admin de giftenadministratie van het jaar af, controleer fiscale fondsinstellingen en maak fiscaal aftrekbare overzichten voor elke donor."
 ---
 
 # Jaar-eindgifrapporten genereren

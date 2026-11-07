@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "B1 Admin の人物と、グループや保存リストのメンバーシップを、タグとして Mailchimp のオーディエンスに同期します。設定、初回インポート、トラブルシューティングの手順を説明します。"
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ B1 の人物情報と Mailchimp のオーディエンスを自動で同期しま
 
 ## その他のレシピ（Zapier / Make）
 
-オーディエンスの同期以外の処理、例えば `donation.created` をきっかけに寄付者にタグを付ける処理、Mailchimp → B1 の逆方向の同期、あるいは Constant Contact や Brevo などの別のメールプラットフォームへの同期は、[Zapier](../zapier) または [Make](../make) を通じて引き続き行えます。どちらも同じウェブフックのイベントをトリガーにできます。
+オーディエンスの同期以外の処理、例えば `donation.created` をきっかけに寄付者にタグを付ける処理、Mailchimp → B1 の逆方向の同期、あるいは Constant Contact や Brevo などの別のメールプラットフォームへの同期は、[Zapier](../zapier.md) または [Make](../make.md) を通じて引き続き行えます。どちらも同じウェブフックのイベントをトリガーにできます。
 
 - **寄付者へのタグ付け:** B1 の *New Donation* → B1 の *Find Person* → Mailchimp の *Add Subscriber to Tag*（`Gave-2026`）
 - **双方向:** Mailchimp の *New Subscriber* → B1 の *Create Person*
@@ -83,4 +84,4 @@ B1 の人物情報と Mailchimp のオーディエンスを自動で同期しま
 
 - [ウェブフック（開発者向けリファレンス）](/docs/developer/api/webhooks) — 基盤となるエンジン、イベントの一覧、配信と再試行の仕組み
 - [保存済みリスト](/docs/b1-admin/people/lists) — Mailchimp のタグに自然に対応する、ルールに基づくオーディエンス
-- [Zapier（概要）](../zapier) — オーディエンスの同期以外のレシピを扱う場合
+- [Zapier（概要）](../zapier.md) — オーディエンスの同期以外のレシピを扱う場合

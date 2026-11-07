@@ -1,5 +1,6 @@
 ---
 title: "Aukų paketai"
+description: "Sugrupuokite aukas į aukojimų partijas B1 Admin, tada uždarykite, atspausdinkite ar eksportuokite kiekvieną, kad sumos sutaptų su banko įnašais."
 ---
 
 # Aukų paketai

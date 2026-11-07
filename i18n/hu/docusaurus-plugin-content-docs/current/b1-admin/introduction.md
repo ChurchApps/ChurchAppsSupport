@@ -1,5 +1,6 @@
 ---
 title: Bevezetés a B1.church használatába
+description: "Végigvezet a B1 Admin bejelentkezésén, a Dashboard és a Jump menu használatán, valamint a gyülekezeti adatok beállításán."
 ---
 
 # Üdvözöljük a B1.church Adminban!
@@ -34,7 +35,7 @@ További segítségért írjon a következő címre: [support@churchapps.org](ma
 10. Most már beléphet a B1.church-be a **tagi portálon** vagy az **adminisztrátori portálon** keresztül. A tagi portál lehetővé teszi, hogy lássa, hogyan jelenik meg a B1.church a tagjai számára, megtekinthesse a csoportjait, és kezelhesse a saját adományait.
 
 :::tip
-Kezdje a [Beállítások](./settings/) oldallal, ahol beállíthatja a gyülekezet nevét, arculatát és a csapattagok jogosultságait. Ez biztosítja, hogy minden más, amit beállít, helyesen jelenjen meg.
+Kezdje a [Beállítások](./settings/index.md) oldallal, ahol beállíthatja a gyülekezet nevét, arculatát és a csapattagok jogosultságait. Ez biztosítja, hogy minden más, amit beállít, helyesen jelenjen meg.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -81,9 +82,9 @@ A keresés gyakran a leggyorsabb módja egy oldal elérésének: írja be az old
 
 A bevezető megtekintése után fedezze fel ezeket a fontos funkciókat:
 
-- [Személyek hozzáadása](./people/adding-people) – Tudja meg, hogyan vehet fel tagokat az adatbázisba
-- [Csoportok](./groups/) – Gyülekezeti csoportok beállítása és kezelése
-- [Szolgálati tervek](./serving/plans) – Szervezze meg szolgálati munkáját
-- [Jelenlét](./attendance/) – Jelenlét és bejelentkezés nyomon követése
-- [Weboldal](./website/) – Gyülekezete weboldalának létrehozása és testreszabása
-- [Beállítások](./settings/) – Gyülekezeti adatok és jogosultságok beállítása
+- [Személyek hozzáadása](./people/adding-people.md) – Tudja meg, hogyan vehet fel tagokat az adatbázisba
+- [Csoportok](./groups/index.md) – Gyülekezeti csoportok beállítása és kezelése
+- [Szolgálati tervek](./serving/plans.md) – Szervezze meg szolgálati munkáját
+- [Jelenlét](./attendance/index.md) – Jelenlét és bejelentkezés nyomon követése
+- [Weboldal](./website/index.md) – Gyülekezete weboldalának létrehozása és testreszabása
+- [Beállítások](./settings/index.md) – Gyülekezeti adatok és jogosultságok beállítása

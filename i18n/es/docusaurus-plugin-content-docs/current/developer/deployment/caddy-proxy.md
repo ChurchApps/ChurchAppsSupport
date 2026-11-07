@@ -1,5 +1,6 @@
 ---
 title: "Proxy de dominio personalizado con Caddy"
+description: "Compile y ejecute el proxy inverso Caddy que sirve dominios personalizados de iglesias para los sitios de B1.church, con certificados TLS, asignación de hosts y problemas conocidos."
 ---
 
 # Proxy de dominio personalizado con Caddy
@@ -10,7 +11,7 @@ Los dominios personalizados de las iglesias (`miiglesia.org` → el sitio web de
 
 </div>
 
-Para saber cómo una solicitud se resuelve en una iglesia o sitio una vez que llega a B1App, consulte [Enrutamiento de sitios web y multisitio](../architecture/websites).
+Para saber cómo una solicitud se resuelve en una iglesia o sitio una vez que llega a B1App, consulte [Enrutamiento de sitios web y multisitio](../architecture/websites.md).
 
 ## Componentes
 
@@ -88,5 +89,5 @@ La API de administración solo escucha en `localhost:2019`. El modo de ejecució
 
 ## Páginas relacionadas
 
-- [Enrutamiento de sitios web y multisitio](../architecture/websites): cómo la solicitud con proxy se resuelve en una iglesia o sitio dentro de B1App
-- [Despliegue de la API](./apis): despliegue de la API de Membership que atiende `authorize`/`hostmap`
+- [Enrutamiento de sitios web y multisitio](../architecture/websites.md): cómo la solicitud con proxy se resuelve en una iglesia o sitio dentro de B1App
+- [Despliegue de la API](./apis.md): despliegue de la API de Membership que atiende `authorize`/`hostmap`

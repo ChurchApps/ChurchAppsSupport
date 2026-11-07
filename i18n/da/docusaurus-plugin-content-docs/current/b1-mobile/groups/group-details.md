@@ -1,5 +1,7 @@
 ---
-title: "Gruppedetaljer"
+title: "Gruppedetaljer i B1 Mobile-appen"
+sidebar_label: "Gruppedetaljer"
+description: "Se hvad gruppedetaljesiden i B1 Mobile viser, herunder gruppeinfo, opslag og medlemmer, og hvordan du åbner den fra skærmen Grupper."
 ---
 
 # Gruppedetaljer
@@ -13,7 +15,7 @@ Når du trykker på en gruppe fra gruppeskærmen, bliver du taget til den gruppe
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [log ind](../getting-started/logging-in) på din konto
+- [Installer B1 Mobile](../getting-started/installing.md) og [log ind](../getting-started/logging-in.md) på din konto
 - Åbn skærmen [Grupper](./index.md)
 
 </div>
@@ -46,5 +48,5 @@ Din mest-besøgt gruppe vises som heltekort øverst på gruppeskærmen, så at k
 
 ## Relaterede artikler
 
-- [Gruppetidslinje](./group-timeline) -- Lær om det samlede aktivitetsfeed på tværs af alle dine grupper
+- [Gruppetidslinje](./group-timeline.md) -- Lær om det samlede aktivitetsfeed på tværs af alle dine grupper
 - [Messaging](../community/messaging.md) -- Send private meddelelser til gruppemedlemmer

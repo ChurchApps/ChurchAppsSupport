@@ -1,5 +1,6 @@
 ---
 title: "기기 고르기"
+description: "ChurchApps 지원 문서 기준, FreePlay 교실 TV에 적합한 기기 선택: Fire TV 스틱과 Onn 박스부터 Apple TV까지, 그리고 피해야 할 기기."
 ---
 
 # FreePlay용 기기 고르기

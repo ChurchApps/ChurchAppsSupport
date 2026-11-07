@@ -1,5 +1,7 @@
 ---
-title: "S'inscrire aux événements"
+title: "Inscription aux événements dans B1.church"
+sidebar_label: "S'inscrire aux événements"
+description: "Inscrivez-vous à un événement B1.church : coordonnées, membres de la famille, options, codes de réduction, paiement ou liste d'attente."
 ---
 
 # S'inscrire aux événements
@@ -79,14 +81,14 @@ Un message de confirmation apparaît avec les détails de l'événement et la li
 
 ## Se joindre à une liste d'attente {#joining-a-waitlist}
 
-Si l'événement est complet et que votre église a activé la liste d'attente, la première étape affiche : *« Cet événement est complet. Vous pouvez vous joindre à la liste d'attente et nous vous avertirons si une place se libère. »* Complétez l'inscription normalement -- le paiement est ignoré tant que vous êtes sur la liste d'attente. Lorsqu'une place se libère, vous recevez un courriel ; si un paiement est dû, il comprend un lien pour le régler. Vous pouvez aussi vérifier votre état et payer depuis [Mes inscriptions](./my-registrations).
+Si l'événement est complet et que votre église a activé la liste d'attente, la première étape affiche : *« Cet événement est complet. Vous pouvez vous joindre à la liste d'attente et nous vous avertirons si une place se libère. »* Complétez l'inscription normalement -- le paiement est ignoré tant que vous êtes sur la liste d'attente. Lorsqu'une place se libère, vous recevez un courriel ; si un paiement est dû, il comprend un lien pour le régler. Vous pouvez aussi vérifier votre état et payer depuis [Mes inscriptions](./my-registrations.md).
 
 ## Modifier ou annuler une inscription
 
-Si vous êtes connecté, vous pouvez modifier ou annuler vous-même votre inscription depuis la page **Inscriptions** du portail des membres -- voir [Mes inscriptions](./my-registrations). Les visiteurs doivent communiquer avec le bureau de l'église, et le personnel peut apporter la modification depuis la page des inscriptions de B1 Admin.
+Si vous êtes connecté, vous pouvez modifier ou annuler vous-même votre inscription depuis la page **Inscriptions** du portail des membres -- voir [Mes inscriptions](./my-registrations.md). Les visiteurs doivent communiquer avec le bureau de l'église, et le personnel peut apporter la modification depuis la page des inscriptions de B1 Admin.
 
 ## Articles connexes
 
 - [Vue d'ensemble des événements](./index.md) -- Parcourir les événements à venir avec inscription
-- [Mes inscriptions](./my-registrations) -- Consulter, modifier, payer les soldes et annuler vos inscriptions
-- [Faire un don](../giving/making-donations) -- Faire un don en parallèle de votre participation à un événement
+- [Mes inscriptions](./my-registrations.md) -- Consulter, modifier, payer les soldes et annuler vos inscriptions
+- [Faire un don](../giving/making-donations.md) -- Faire un don en parallèle de votre participation à un événement

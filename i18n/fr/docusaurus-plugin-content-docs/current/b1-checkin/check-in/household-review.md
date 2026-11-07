@@ -1,5 +1,6 @@
 ---
 title: "Vérifier votre foyer"
+description: "Vérifiez votre foyer dans B1 Checkin après avoir choisi une personne, puis attribuez les groupes pour chaque horaire et marquez invités ou bénévoles."
 ---
 
 # Vérifier votre foyer
@@ -13,8 +14,8 @@ Après avoir sélectionné une personne dans les résultats de recherche, l'appl
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Sélectionnez un service](./selecting-service) depuis l'écran des services
-- [Recherchez un membre](./looking-up-members) et sélectionnez-le dans les résultats de recherche
+- [Sélectionnez un service](./selecting-service.md) depuis l'écran des services
+- [Recherchez un membre](./looking-up-members.md) et sélectionnez-le dans les résultats de recherche
 
 </div>
 
@@ -35,9 +36,9 @@ Appuyez sur la carte d'un membre pour la développer. Une fois développée, vou
 - les **groupes proposés** à ce créneau, listés sous le nom (par exemple « Crèche, Maternelle, Classe biblique adulte »), afin que vous puissiez voir quelles classes sont disponibles avant de choisir ;
 - un **bouton** indiquant le groupe actuellement affecté, ou « Choisir un groupe » si aucun groupe n'a encore été affecté.
 
-Si un créneau de culte dispose d'un [calendrier d'enregistrement](../../b1-admin/attendance/setup#setting-a-check-in-schedule) et que sa fenêtre est fermée actuellement, la ligne affiche **Fermé** à la place du bouton, accompagné de la prochaine heure d'ouverture lorsqu'elle est connue, par exemple **Fermé · ouvre dim. 9:30**. Si la personne est déjà enregistrée à ce créneau, la ligne affiche son groupe accompagné d'une coche au lieu du bouton (par exemple **Salle enfants 1 · Enregistré**), afin que vous puissiez voir où elle se trouve même si la fenêtre est fermée.
+Si un créneau de culte dispose d'un [calendrier d'enregistrement](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) et que sa fenêtre est fermée actuellement, la ligne affiche **Fermé** à la place du bouton, accompagné de la prochaine heure d'ouverture lorsqu'elle est connue, par exemple **Fermé · ouvre dim. 9:30**. Si la personne est déjà enregistrée à ce créneau, la ligne affiche son groupe accompagné d'une coche au lieu du bouton (par exemple **Salle enfants 1 · Enregistré**), afin que vous puissiez voir où elle se trouve même si la fenêtre est fermée.
 
-Appuyez sur le bouton du groupe pour accéder à l'[écran de sélection du groupe](./group-assignment), où vous pouvez choisir ou modifier le groupe de cette personne pour ce créneau.
+Appuyez sur le bouton du groupe pour accéder à l'[écran de sélection du groupe](./group-assignment.md), où vous pouvez choisir ou modifier le groupe de cette personne pour ce créneau.
 
 La carte développée affiche aussi les étiquettes **Membre**, **Invité** et **Bénévole**. Appuyez sur l'une d'elles pour définir le mode d'enregistrement de cette personne : Membre est la valeur par défaut. Le type compte pour les salles des enfants : les bénévoles sont comptabilisés dans le ratio bénévoles/enfants de la salle, et les invités sont comptés dans la capacité réservée aux invités éventuellement définie par votre église.
 
@@ -51,9 +52,9 @@ Vous n'avez pas besoin d'affecter chaque membre de la famille à un groupe. Les 
 
 Depuis l'écran de vérification du foyer, vous disposez de trois options :
 
-- **Développer un membre** et appuyer sur le bouton d'un créneau de culte pour [affecter ou modifier un groupe](./group-assignment).
-- **Appuyer sur le bouton Ajouter un invité** sous la liste des membres pour [ajouter un invité](./adding-guests) à votre foyer.
-- **Appuyer sur le bouton Enregistrement** en bas de l'écran pour [finaliser l'enregistrement](./completing-checkin) de tous les membres du foyer.
+- **Développer un membre** et appuyer sur le bouton d'un créneau de culte pour [affecter ou modifier un groupe](./group-assignment.md).
+- **Appuyer sur le bouton Ajouter un invité** sous la liste des membres pour [ajouter un invité](./adding-guests.md) à votre foyer.
+- **Appuyer sur le bouton Enregistrement** en bas de l'écran pour [finaliser l'enregistrement](./completing-checkin.md) de tous les membres du foyer.
 
 :::info
 Les affectations de groupes d'un enregistrement précédent pour le même service sont préchargées automatiquement. Si vos enfants fréquentent les mêmes groupes chaque semaine, vous n'aurez peut-être rien à modifier : il suffit de vérifier et d'enregistrer.
@@ -61,6 +62,6 @@ Les affectations de groupes d'un enregistrement précédent pour le même servic
 
 ## Étapes suivantes
 
-- [Affecter des groupes](./group-assignment) aux membres de la famille qui doivent s'inscrire à une classe ou un programme précis.
-- [Ajouter un invité](./adding-guests) si quelqu'un accompagne votre famille.
-- [Finaliser l'enregistrement](./completing-checkin) lorsque les affectations de chacun vous semblent correctes.
+- [Affecter des groupes](./group-assignment.md) aux membres de la famille qui doivent s'inscrire à une classe ou un programme précis.
+- [Ajouter un invité](./adding-guests.md) si quelqu'un accompagne votre famille.
+- [Finaliser l'enregistrement](./completing-checkin.md) lorsque les affectations de chacun vous semblent correctes.

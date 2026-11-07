@@ -1,5 +1,6 @@
 ---
 title: "Website"
+description: "Pangkalahatang-tanaw ng B1 Admin Website builder: pages, blog, blocks, appearance, files, at calendars, kasama ang mga link sa setup at gabay sa pag-edit."
 ---
 
 # Website
@@ -22,7 +23,7 @@ Ang iyong mga link sa navigation ay ipinapakita sa isang tree structure. Maaari 
 
 ### Blog {#blog}
 
-Maglathala ng balita, update, at devotional bilang mga blog post sa `/blog` ng iyong site, kasama ang RSS feed. Tingnan ang [Blog](blog) guide.
+Maglathala ng balita, update, at devotional bilang mga blog post sa `/blog` ng iyong site, kasama ang RSS feed. Tingnan ang [Blog](./blog.md) guide.
 
 ### Mga Bloke
 
@@ -30,24 +31,24 @@ Bumuo ng mga mabagong component ng nilalaman na maaari mong ilagay sa maraming p
 
 ### Hitsura
 
-I-customize ang tema, kulay, font, logo, at spacing ng iyong website. Maaari kang maglapat ng pre-built na mga tema ng istilo para sa isang mabilis na pagsisimula o mahusay na ayusin ang bawat detalye gamit ang color palette editor, typography settings, at custom CSS. Tingnan ang [Hitsura](appearance) guide para sa buong detalye.
+I-customize ang tema, kulay, font, logo, at spacing ng iyong website. Maaari kang maglapat ng pre-built na mga tema ng istilo para sa isang mabilis na pagsisimula o mahusay na ayusin ang bawat detalye gamit ang color palette editor, typography settings, at custom CSS. Tingnan ang [Hitsura](./appearance.md) guide para sa buong detalye.
 
 ### Mga File
 
-I-upload at pamahalaan ang lahat ng iyong mga asset ng media -- mga larawan, dokumento, at iba pang mga file -- sa isang sentral na lokasyon, at kopyahin ang mga link ng file para sa paggamit saanman sa iyong site. Tingnan ang [Mga File](files) para sa higit pang impormasyon.
+I-upload at pamahalaan ang lahat ng iyong mga asset ng media -- mga larawan, dokumento, at iba pang mga file -- sa isang sentral na lokasyon, at kopyahin ang mga link ng file para sa paggamit saanman sa iyong site. Tingnan ang [Mga File](./files.md) para sa higit pang impormasyon.
 
 ### Mga Kalendaryo
 
 Maglathala ng mga kalendaryo ng event sa iyong website upang ang mga bisita ay makita kung ano ang nangyayari sa iyong simbahan. Lumikha ng mga curated na kalendaryo na nagsasaad ng mga event mula sa maraming mga grupo sa isang solong view. Ang mga kalendaryo ay may sarili nilang **Calendars** item sa B1 Admin menu, hiwalay sa **Website**.
 
 :::tip
-Magsimula sa [Paunang Setup](initial-setup) kung ikaw ay nag-configure ng iyong website sa unang pagkakataon. Ito ay gagabay sa iyo sa setup ng domain, paglikha ng iyong unang pahina, at pag-configure ng hitsura ng iyong site.
+Magsimula sa [Paunang Setup](./initial-setup.md) kung ikaw ay nag-configure ng iyong website sa unang pagkakataon. Ito ay gagabay sa iyo sa setup ng domain, paglikha ng iyong unang pahina, at pag-configure ng hitsura ng iyong site.
 :::
 
 ## Mga Susunod na Hakbang
 
-- [Paunang Setup](initial-setup) -- Pagsisimula ng iyong website at pagpapatakbo sa unang pagkakataon
-- [Pag-manage ng Mga Pahina](managing-pages) -- Matuto kung paano lumikha at ayusin ang iyong mga pahina
-- [Paggamit ng Page Editor](page-editor) -- Bumuo at istilo ang iyong nilalaman ng pahina gamit ang visual editor
-- [Hitsura](appearance) -- I-customize ang hitsura at pakiramdam ng iyong site
-- [Mga File](files) -- I-upload at pamahalaan ang mga file ng media
+- [Paunang Setup](./initial-setup.md) -- Pagsisimula ng iyong website at pagpapatakbo sa unang pagkakataon
+- [Pag-manage ng Mga Pahina](./managing-pages.md) -- Matuto kung paano lumikha at ayusin ang iyong mga pahina
+- [Paggamit ng Page Editor](./page-editor.md) -- Bumuo at istilo ang iyong nilalaman ng pahina gamit ang visual editor
+- [Hitsura](./appearance.md) -- I-customize ang hitsura at pakiramdam ng iyong site
+- [Mga File](./files.md) -- I-upload at pamahalaan ang mga file ng media

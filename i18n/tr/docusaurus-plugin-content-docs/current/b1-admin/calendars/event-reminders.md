@@ -1,21 +1,22 @@
 ---
 title: "Etkinlik Hatırlatmaları"
+description: "B1 Admin'de push, e-posta ve SMS için etkinlik hatırlatmaları kurun; zamanlama, alıcılar ve özel mesaj seçerek insanların zamanında bilgilendirilmesini sağlayın."
 ---
 
 # Etkinlik Hatırlatmaları
 
 <div class="article-intro">
 
-Etkinlik hatırlatmaları, bir etkinlik gerçekleşmeden önce doğru kişileri otomatik olarak bilgilendirir. Örneğin: "Kaçırmayın! Sağlık atölyesi yarın saat 09:00'da başlıyor." Hatırlatmayı etkinlik üzerinde bir kez yapılandırırsınız; B1, anlık bildirim, e-posta ve kilisenizde kısa mesaj (SMS) hizmeti kuruluysa metin mesajı yoluyla hatırlatmayı zamanında gönderir. Üyeler, hangi hatırlatmaları alacaklarını kendi [Bildirim Tercihleri](../../b1-church/getting-started/notification-preferences) sayfalarından kontrol edebilir.
+Etkinlik hatırlatmaları, bir etkinlik gerçekleşmeden önce doğru kişileri otomatik olarak bilgilendirir. Örneğin: "Kaçırmayın! Sağlık atölyesi yarın saat 09:00'da başlıyor." Hatırlatmayı etkinlik üzerinde bir kez yapılandırırsınız; B1, anlık bildirim, e-posta ve kilisenizde kısa mesaj (SMS) hizmeti kuruluysa metin mesajı yoluyla hatırlatmayı zamanında gönderir. Üyeler, hangi hatırlatmaları alacaklarını kendi [Bildirim Tercihleri](../../b1-church/getting-started/notification-preferences.md) sayfalarından kontrol edebilir.
 
 </div>
 
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Hatırlatma göndermek istediğiniz etkinliği oluşturun (bkz. [Takvim Oluşturma](creating-calendars))
-- Kayıtlı katılımcılara ulaşmak için etkinlikte [kaydı etkinleştirin](creating-calendars)
-- Bütün bir gruba ulaşmak için etkinliğin üyeleri olan bir [gruba](../groups/creating-groups) ait olduğundan emin olun
+- Hatırlatma göndermek istediğiniz etkinliği oluşturun (bkz. [Takvim Oluşturma](./creating-calendars.md))
+- Kayıtlı katılımcılara ulaşmak için etkinlikte [kaydı etkinleştirin](./creating-calendars.md)
+- Bütün bir gruba ulaşmak için etkinliğin üyeleri olan bir [gruba](../groups/creating-groups.md) ait olduğundan emin olun
 
 </div>
 
@@ -57,21 +58,21 @@ Yalnızca ad olarak eklenen misafirler (bağlı bir kişi kaydı olmadan) hatır
 - Yinelenen etkinlikler otomatik olarak işlenir: yaklaşan her tekrar kendi hatırlatmasını alır.
 
 :::tip
-Hatırlatmalar önce **anlık bildirim** olarak gönderilir, e-posta ise yedek olarak kullanılır. Bir üyenin anlık bildirimleri açıksa anlık bildirim alır; açık değilse bunun yerine e-posta alır. Üyeler, hangi kanalları ve bildirim türlerini istediklerini [Bildirim Tercihleri](../../b1-church/getting-started/notification-preferences) sayfalarından seçebilir.
+Hatırlatmalar önce **anlık bildirim** olarak gönderilir, e-posta ise yedek olarak kullanılır. Bir üyenin anlık bildirimleri açıksa anlık bildirim alır; açık değilse bunun yerine e-posta alır. Üyeler, hangi kanalları ve bildirim türlerini istediklerini [Bildirim Tercihleri](../../b1-church/getting-started/notification-preferences.md) sayfalarından seçebilir.
 :::
 
 ## Metin Mesajı Hatırlatmaları
 
 **Metin mesajı** kanalı yalnızca kilisenizin bir SMS sağlayıcısı bağlıysa görünür. Metinler kilisenizin SMS sağlayıcısı üzerinden gönderilir ve her metin kilisenize maliyet getirebilir. Metinler, anlık bildirim veya e-posta hatırlatmasına ek olarak yalnızca şu koşulları sağlayan kişilere gönderilir:
 
-- [Bildirim Tercihleri](../../b1-church/getting-started/notification-preferences) sayfalarında **Metin mesajları** seçeneğini açmış olmak ve
+- [Bildirim Tercihleri](../../b1-church/getting-started/notification-preferences.md) sayfalarında **Metin mesajları** seçeneğini açmış olmak ve
 - Profillerinde bir cep telefonu numarası bulunmak.
 
 Her metin kilisenizin adıyla başlar, tek bir metin mesajı olarak tutulur ve "Çıkmak için STOP yazın." ifadesiyle biter. STOP yanıtı veren kişiler kilisenizden metin almayı bırakır. STOP yanıtlarının B1'e ulaşması için, [SMS ayarlarınızdan](../settings/church-settings.md#texting) **Gelen (STOP) webhook URL'sini** kopyalayıp sağlayıcınızın gelen mesaj webhook alanına yapıştırın.
 
 ## Üyelerin Kontrol Edebilecekleri
 
-Hatırlatmalar her zaman üyelerin [Bildirim Tercihlerine](../../b1-church/getting-started/notification-preferences) uyar. Bir üye şunları yapabilir:
+Hatırlatmalar her zaman üyelerin [Bildirim Tercihlerine](../../b1-church/getting-started/notification-preferences.md) uyar. Bir üye şunları yapabilir:
 
 - Diğer bildirimleri açık tutarken **Etkinlik Hatırlatmalarını** anlık bildirim, e-posta veya metin için kapatmak.
 - **Metin mesajları** seçeneğiyle metin hatırlatmalarını açıp kapatmak.
@@ -81,10 +82,10 @@ Bir üyenin etkinlik hatırlatmalarından çıkma tercihini geçersiz kılamazs�
 
 ## Hizmet Hatırlatmaları
 
-Bir plana atanmış gönüllüler, plan ayrıntılarını içeren ayrı bir **hizmet hatırlatması** alır. Henüz yanıt vermemişlerse e-postanın içinde doğrudan **Kabul Et / Reddet** düğmeleri de bulunur. Bu hatırlatmalar bir takvim etkinliğinde değil, plan türünde yapılandırılır ve metin mesajıyla da gönderilebilir. Gönüllü planlama ve hatırlatmaların nasıl çalıştığı için bkz. [Gönüllü Hatırlatmaları](../serving/plans#volunteer-reminders) ve [Pazar Gönüllüleri](../guides/sunday-volunteers).
+Bir plana atanmış gönüllüler, plan ayrıntılarını içeren ayrı bir **hizmet hatırlatması** alır. Henüz yanıt vermemişlerse e-postanın içinde doğrudan **Kabul Et / Reddet** düğmeleri de bulunur. Bu hatırlatmalar bir takvim etkinliğinde değil, plan türünde yapılandırılır ve metin mesajıyla da gönderilebilir. Gönüllü planlama ve hatırlatmaların nasıl çalıştığı için bkz. [Gönüllü Hatırlatmaları](../serving/plans.md#volunteer-reminders) ve [Pazar Gönüllüleri](../guides/sunday-volunteers.md).
 
 ## Sonraki Adımlar
 
-- [Bildirim Tercihleri](../../b1-church/getting-started/notification-preferences) -- Üyelerin neleri kontrol edebileceği
-- [Etkinlik Kaydı Kılavuzu](../guides/event-registration) -- Hatırlatmaların katılımcılara ulaşabilmesi için kaydı ayarlama
-- [Takvim Oluşturma](creating-calendars) -- Takvim kurulumuna dönün
+- [Bildirim Tercihleri](../../b1-church/getting-started/notification-preferences.md) -- Üyelerin neleri kontrol edebileceği
+- [Etkinlik Kaydı Kılavuzu](../guides/event-registration.md) -- Hatırlatmaların katılımcılara ulaşabilmesi için kaydı ayarlama
+- [Takvim Oluşturma](./creating-calendars.md) -- Takvim kurulumuna dönün

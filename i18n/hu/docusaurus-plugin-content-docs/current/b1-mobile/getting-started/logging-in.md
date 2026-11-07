@@ -1,5 +1,7 @@
 ---
-title: "Bejelentkezés"
+title: "Bejelentkezés a B1 Mobile alkalmazásba"
+sidebar_label: "Bejelentkezés"
+description: "Jelentkezz be a B1 Mobile alkalmazásba ChurchApps-fiókoddal, regisztrálj új fiókot, vagy állíts vissza egy elfelejtett jelszót 6 jegyű kóddal."
 ---
 
 # Bejelentkezés
@@ -13,7 +15,7 @@ A B1 Mobile ugyanazt a ChurchApps-fiókot használja, mint a B1.church és a tö
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- [A B1 Mobile telepítése](./installing) iOS vagy Android eszközére
+- [A B1 Mobile telepítése](./installing.md) iOS vagy Android eszközére
 
 </div>
 
@@ -24,7 +26,7 @@ A B1 Mobile ugyanazt a ChurchApps-fiókot használja, mint a B1.church és a tö
 3. Adja meg **e-mail-címét** és **jelszavát**.
 4. Koppintson a **Bejelentkezés** gombra.
 
-Bejelentkezés után a [főoldalra](../dashboard/) kerül. Ha még nem választott gyülekezetet, a rendszer felkéri, hogy keressen rá és válasszon egyet.
+Bejelentkezés után a [főoldalra](../dashboard/index.md) kerül. Ha még nem választott gyülekezetet, a rendszer felkéri, hogy keressen rá és válasszon egyet.
 
 ## Új fiók létrehozása
 

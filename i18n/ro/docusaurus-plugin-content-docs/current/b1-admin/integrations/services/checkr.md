@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Conectați înscrierile voluntarilor din B1 Admin la verificările de fond Checkr prin Make.com, cu alerte opționale pentru coordonatorul de siguranță."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Dacă biserica dumneavoastră folosește apartenența la grupurile B1 pentru a c
 
 ## Vezi și
 
-- [Make (prezentare generală)](../make): partea B1 a fiecărui scenariu Make
-- [Mobile Message](./mobile-message): pentru furnizorii de SMS fără aplicații Zapier, cu același model Webhooks/HTTP ca la conectarea Checkr prin Make
+- [Make (prezentare generală)](../make.md): partea B1 a fiecărui scenariu Make
+- [Mobile Message](./mobile-message.md): pentru furnizorii de SMS fără aplicații Zapier, cu același model Webhooks/HTTP ca la conectarea Checkr prin Make
 - [Documentația API Checkr](https://docs.checkr.com/)

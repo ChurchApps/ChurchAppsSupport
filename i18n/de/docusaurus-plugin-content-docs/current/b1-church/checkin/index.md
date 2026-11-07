@@ -1,5 +1,7 @@
 ---
-title: "Check-in"
+title: "Check-in im B1.church-Mitgliederportal"
+sidebar_label: "Check-in"
+description: "Sich und Haushaltsmitglieder über das Mitgliederportal von B1.church für einen Gottesdienst einchecken, ohne Kiosk, und Gruppen zuweisen."
 ---
 
 # Check-in

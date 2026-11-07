@@ -1,5 +1,6 @@
 ---
 title: "Riferimento Endpoint"
+description: "Trova ogni endpoint dell'API ChurchApps per modulo, con metodo, percorso, autenticazione e permessi, e le convenzioni per batch ed errori."
 ---
 
 # Riferimento Endpoint
@@ -89,10 +90,10 @@ I parametri del report vengono passati come valori nella query string (es. `?sta
 
 | Modulo | Percorso Base | Descrizione |
 |--------|---------------|-------------|
-| [Autenticazione](./authentication) | `/membership/users`, `/membership/oauth` | Login, registrazione, token JWT, OAuth, permessi |
-| [Membership](./membership) | `/membership/*` | Persone, chiese, gruppi, nuclei familiari, ruoli, moduli, impostazioni |
-| [Attendance](./attendance) | `/attendance/*` | Sedi, servizi, sessioni, visite, registrazioni presenze |
-| [Content](./content) | `/content/*` | Pagine, sermoni, eventi, file, gallerie, Bibbia, streaming |
-| [Giving](./giving) | `/giving/*` | Donazioni, fondi, gateway di pagamento, abbonamenti |
-| [Messaging](./messaging) | `/messaging/*` | Conversazioni, notifiche, dispositivi, SMS |
-| [Doing](./doing) | `/doing/*` | Piani, attività, assegnazioni, automazioni, pianificazione |
+| [Autenticazione](./authentication.md) | `/membership/users`, `/membership/oauth` | Login, registrazione, token JWT, OAuth, permessi |
+| [Membership](./membership.md) | `/membership/*` | Persone, chiese, gruppi, nuclei familiari, ruoli, moduli, impostazioni |
+| [Attendance](./attendance.md) | `/attendance/*` | Sedi, servizi, sessioni, visite, registrazioni presenze |
+| [Content](./content.md) | `/content/*` | Pagine, sermoni, eventi, file, gallerie, Bibbia, streaming |
+| [Giving](./giving.md) | `/giving/*` | Donazioni, fondi, gateway di pagamento, abbonamenti |
+| [Messaging](./messaging.md) | `/messaging/*` | Conversazioni, notifiche, dispositivi, SMS |
+| [Doing](./doing.md) | `/doing/*` | Piani, attività, assegnazioni, automazioni, pianificazione |

@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "Siapkan B1 Admin secara lokal: clone dashboard React/Vite, atur endpoint API di .env, dan jalankan dev server untuk pekerjaan manajemen gereja."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin adalah dasbor administrasi gereja -- aplikasi halaman tunggal (SPA) berb
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- Pasang **Node.js 22+** dan **Git** -- lihat [Prasyarat](../setup/prerequisites)
-- Atur target API Anda (demo atau lokal) -- lihat [Variabel Lingkungan](../setup/environment-variables)
+- Pasang **Node.js 22+** dan **Git** -- lihat [Prasyarat](../setup/prerequisites.md)
+- Atur target API Anda (demo atau lokal) -- lihat [Variabel Lingkungan](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Build produksi di-deploy ke **S3 + CloudFront**:
 3. Invalidasi CloudFront dipicu agar versi baru disajikan
 
 :::tip
-Untuk instruksi deployment yang lebih rinci, lihat panduan [Deployment Aplikasi Web](../deployment/web-apps).
+Untuk instruksi deployment yang lebih rinci, lihat panduan [Deployment Aplikasi Web](../deployment/web-apps.md).
 :::

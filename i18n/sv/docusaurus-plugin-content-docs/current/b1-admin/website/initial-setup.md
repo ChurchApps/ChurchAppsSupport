@@ -1,5 +1,7 @@
 ---
-title: "Första installationen"
+title: "Komma igång med din webbplats i B1 Admin"
+sidebar_label: "Första installationen"
+description: "Ställ in din kyrkowebbplats i B1 Admin: peka en subdomän eller egen domän, skapa startsidan, välj varumärkesfärger och logotyp och bygg navigeringen."
 ---
 
 # Första installationen
@@ -45,7 +47,7 @@ Om du inte ser alternativet Inställningar ber du den person som konfigurerade d
 6. När du har lagt till en sektion klickar du på **Lägg till innehåll** igen för att infoga text, bilder, videor, kort, formulär och mycket mer genom att dra dem till din sektion.
 
 :::info
-För detaljerade instruktioner om att arbeta med sidor och navigering, se [Hantera sidor](managing-pages). För en fullständig guide till den visuella editorn, se [Använda sidredigeraren](page-editor).
+För detaljerade instruktioner om att arbeta med sidor och navigering, se [Hantera sidor](./managing-pages.md). För en fullständig guide till den visuella editorn, se [Använda sidredigeraren](./page-editor.md).
 :::
 
 ## Konfigurera webbplatsens utseende
@@ -57,7 +59,7 @@ För detaljerade instruktioner om att arbeta med sidor och navigering, se [Hante
 5. Konfigurera din **Sidfot** med din kyrkas kontaktuppgifter och länkar.
 
 :::info
-Ändringar du gör under Utseende gäller för hela din webbplats. Se sidan [Utseende](appearance) för detaljerade instruktioner om varje inställning.
+Ändringar du gör under Utseende gäller för hela din webbplats. Se sidan [Utseende](./appearance.md) för detaljerade instruktioner om varje inställning.
 :::
 
 ## Konfigurera navigeringen
@@ -70,6 +72,6 @@ Dina navigeringslänkar visas i vyn Webbplatssidor. Så här organiserar du dem:
 
 ## Nästa steg
 
-- [Hantera sidor](managing-pages) -- Lär dig mer om hur du arbetar med sidor och navigering
-- [Utseende](appearance) -- Finjustera din webbplats färger, typsnitt och layout
-- [Filer](files) -- Ladda upp bilder och dokument till din webbplats
+- [Hantera sidor](./managing-pages.md) -- Lär dig mer om hur du arbetar med sidor och navigering
+- [Utseende](./appearance.md) -- Finjustera din webbplats färger, typsnitt och layout
+- [Filer](./files.md) -- Ladda upp bilder och dokument till din webbplats

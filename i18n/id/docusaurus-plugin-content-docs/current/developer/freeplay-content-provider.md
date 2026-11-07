@@ -1,5 +1,6 @@
 ---
 title: "Penyedia Konten FreePlay"
+description: "Yang harus disediakan penyedia konten untuk menghubungkan pustaka pelajaran ke FreePlay: logo, model masuk, endpoint katalog dan playlist, serta format media."
 ---
 
 # Penyedia Konten FreePlay

@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "Kết nối ChatGPT với dữ liệu B1 của hội thánh bằng khóa API để hỏi bằng ngôn ngữ đời thường về người, dâng hiến và điểm danh trong B1 Admin."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Kết nối ChatGPT với dữ liệu B1 của hội thánh bạn và đặt câ
 </div>
 
 :::tip Khuyến nghị: hãy thử Claude trước — miễn phí
-[Claude](./claude) kết nối với B1 trên **gói miễn phí** và thiết lập chỉ trong chưa đến 3 phút — chỉ cần thêm B1 làm connector và đăng nhập bằng tài khoản B1 của bạn. Không cần khóa. Đây là cách dễ nhất để hội thánh bạn thử AI với B1 trước khi trả tiền cho bất kỳ dịch vụ nào.
+[Claude](./claude.md) kết nối với B1 trên **gói miễn phí** và thiết lập chỉ trong chưa đến 3 phút — chỉ cần thêm B1 làm connector và đăng nhập bằng tài khoản B1 của bạn. Không cần khóa. Đây là cách dễ nhất để hội thánh bạn thử AI với B1 trước khi trả tiền cho bất kỳ dịch vụ nào.
 :::
 
 ## Thiết lập
@@ -254,5 +255,5 @@ Bất kỳ ai có liên kết đều có thể đặt câu hỏi bằng ngôn ng
 
 - [API Keys](/docs/developer/api/api-keys) — tài liệu đầy đủ về phạm vi
 - [MCP Server (tài liệu tham khảo cho nhà phát triển)](/docs/developer/api/mcp) — chi tiết giao thức và lược đồ công cụ
-- [Claude](./claude) — tương tự, dành cho các mô hình của Anthropic
+- [Claude](./claude.md) — tương tự, dành cho các mô hình của Anthropic
 - [Tài liệu tham khảo REST API](/docs/developer/api/endpoints) — mọi endpoint mà một Custom GPT action có thể gọi

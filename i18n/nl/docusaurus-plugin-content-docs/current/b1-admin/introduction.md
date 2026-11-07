@@ -1,5 +1,6 @@
 ---
 title: Inleiding tot B1.church
+description: "Begeleidt je bij het inloggen op B1 Admin, het Dashboard en het Jump-menu, en het instellen van kerkgegevens voordat je andere tools verkent."
 ---
 
 # Welkom bij B1.church Admin!
@@ -33,16 +34,16 @@ Voor verdere ondersteuning, e-mail [support@churchapps.org](mailto:support@churc
 10. U kunt nu B1.church openen via het **ledenportaal** of het **beheerderportaal**. Met het ledenportaal kunt u zien hoe B1.church er voor uw leden uitziet, uw groepen bekijken en uw persoonlijke donaties beheren.
 
 :::tip
-Begin met de pagina [Instellingen](./settings/) om uw kerknaam, branding en teampermissies te configureren. Dit zorgt ervoor dat alles wat u instelt correct wordt weergegeven.
+Begin met de pagina [Instellingen](./settings/index.md) om uw kerknaam, branding en teampermissies te configureren. Dit zorgt ervoor dat alles wat u instelt correct wordt weergegeven.
 :::
 
 ## Volgende stappen
 
 Na het bekijken van deze inleiding, verken deze belangrijkste functies:
 
-- [Personen toevoegen](./people/adding-people) -- Leer hoe u leden aan uw database toevoegt
-- [Groepen](./groups/) -- Stel en beheer kerkgroepen in
-- [Dienstplannen](./serving/plans) -- Organiseer uw dienstministerium
-- [Aanwezigheid](./attendance/) -- Volg aanwezigheid en checkin
-- [Website](./website/) -- Bouw en personaliseer uw kerkwebsite
-- [Instellingen](./settings/) -- Configureer uw kerkinformatie en machtigingen
+- [Personen toevoegen](./people/adding-people.md) -- Leer hoe u leden aan uw database toevoegt
+- [Groepen](./groups/index.md) -- Stel en beheer kerkgroepen in
+- [Dienstplannen](./serving/plans.md) -- Organiseer uw dienstministerium
+- [Aanwezigheid](./attendance/index.md) -- Volg aanwezigheid en checkin
+- [Website](./website/index.md) -- Bouw en personaliseer uw kerkwebsite
+- [Instellingen](./settings/index.md) -- Configureer uw kerkinformatie en machtigingen

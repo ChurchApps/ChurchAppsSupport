@@ -1,5 +1,7 @@
 ---
-title: "Csoport részletei"
+title: "Csoport részletei a B1.church tagi portálon"
+sidebar_label: "Csoport részletei"
+description: "Keresd meg és nyisd meg a csoport részletes oldalát a B1 Admin tagok számára látható B1.church nézetében: események, találkozók, űrlapok és tagok megtekintése, csatlakozás vagy csatlakozási kérelem."
 ---
 
 # Csoport részletei

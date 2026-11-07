@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "Ikonekta ang ChatGPT sa datos ng simbahan gamit ang API key para makapagtanong sa simpleng wika tungkol sa mga tao, handog, at attendance sa B1 Admin."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Ikonekta ang ChatGPT sa datos ng B1 ng iyong simbahan at magtanong dito sa simpl
 </div>
 
 :::tip Inirerekomenda: subukan muna ang Claude -- libre ito
-[Claude](./claude) ay nakakakonekta sa B1 sa **libreng plan** nito at naitatakda sa wala pang 3 minuto -- idagdag lang ang B1 bilang connector at mag-sign in gamit ang iyong B1 account. Walang kailangang key. Ito ang pinakamadaling paraan para masubukan ng iyong simbahan ang AI kasama ang B1 bago magbayad para sa anuman.
+[Claude](./claude.md) ay nakakakonekta sa B1 sa **libreng plan** nito at naitatakda sa wala pang 3 minuto -- idagdag lang ang B1 bilang connector at mag-sign in gamit ang iyong B1 account. Walang kailangang key. Ito ang pinakamadaling paraan para masubukan ng iyong simbahan ang AI kasama ang B1 bago magbayad para sa anuman.
 :::
 
 ## I-set Up Ito
@@ -254,5 +255,5 @@ Maaaring magtanong sa natural na wika ang sinumang may link. Ipinapatupad pa rin
 
 - [API Keys](/docs/developer/api/api-keys) — buong reference ng scope
 - [MCP Server (developer reference)](/docs/developer/api/mcp) — mga detalye ng protocol at schema ng tool
-- [Claude](./claude) — parehong ideya, para sa mga modelo ng Anthropic
+- [Claude](./claude.md) — parehong ideya, para sa mga modelo ng Anthropic
 - [REST API reference](/docs/developer/api/endpoints) — bawat endpoint na maaaring tawagin ng Custom GPT action

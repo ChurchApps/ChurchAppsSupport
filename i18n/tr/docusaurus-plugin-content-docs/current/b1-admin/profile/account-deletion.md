@@ -1,5 +1,6 @@
 ---
 title: "Hesap Silme Taleplerini İnceleme"
+description: "B1 Admin'de üye hesap silme taleplerini onaylayın veya reddedin; bunları Dizin Onay Grubu üzerinden yönlendirin ve 30 günlük GDPR süresine uyun."
 ---
 
 # Hesap Silme Taleplerini İnceleme

@@ -1,5 +1,6 @@
 ---
 title: "Digitalna tablica"
+description: "Wyświetlaj treści lekcji na telewizorze w holu dzięki adresowi URL kanału w B1 Admin, który zawsze pokazuje aktualny plan, lub użyj telewizorów FreePlay."
 ---
 
 # Digitalna tablica
@@ -14,7 +15,7 @@ Wyświetlaj treści lekcji na telewizorze w holu lub na korytarzu, korzystając 
 <h4>Zanim zaczniesz</h4>
 
 - Utwórz [typ planu](./plans.md) z [Lessons.church](../../b1-church/content/lessons.md) lub inne treści lekcji zaplanowane w kalendarzu
-- Miej konto w [SignPresenter](https://www.signpresenter.com) oraz urządzenie skonfigurowane do jego wyświetlania albo telewizor z [FreePlay](../../freeplay/)
+- Miej konto w [SignPresenter](https://www.signpresenter.com) oraz urządzenie skonfigurowane do jego wyświetlania albo telewizor z [FreePlay](../../freeplay/index.md)
 
 </div>
 
@@ -36,14 +37,14 @@ Szczegółowe instrukcje konfiguracji w SignPresenter znajdziesz w [przewodniku 
 
 ## Korzystanie zamiast tego z telewizorów FreePlay
 
-Jeśli Twoje ekrany działają z [FreePlay](../../freeplay/), nie potrzebujesz adresu URL kanału. Okno dialogowe **Kanał digitalnej tablicy** zawiera link do **admin.freeplay.church/calendar**, gdzie możesz zaplanować ten typ planu na telewizorach FreePlay:
+Jeśli Twoje ekrany działają z [FreePlay](../../freeplay/index.md), nie potrzebujesz adresu URL kanału. Okno dialogowe **Kanał digitalnej tablicy** zawiera link do **admin.freeplay.church/calendar**, gdzie możesz zaplanować ten typ planu na telewizorach FreePlay:
 
 1. Kliknij link **admin.freeplay.church/calendar** w oknie dialogowym. FreePlay Admin używa tego samego logowania co B1 Admin.
 2. Wybierz grupę ekranów dla swoich telewizorów i kliknij **Dodaj harmonogram**.
 3. W sekcji **Odtwarzaj** wybierz swój typ planu z listy **Plany nabożeństw**. Jest oznaczony jako **(bieżący plan)**.
 4. Ustaw dni i godziny, a następnie kliknij **Zapisz**.
 
-Telewizory będą odtwarzać bieżący plan dla danego typu planu każdego tygodnia, o ustawionych przez Ciebie porach. Działa to również z lekcjami Go Curriculum, w tym z planami, które dostosowałeś. FreePlay loguje się na konto Go Curriculum połączone z służbą w sekcji **Dostawcy treści** (zobacz [Planowanie lekcji](./scheduling-lessons.md)) lub, jeśli służba takiego nie ma, na połączenie Go Curriculum kościoła. Wszystkie opcje znajdziesz w [Planowanie kalendarza](../../freeplay/scheduled-mode/scheduling-the-calendar), a aby dodać telewizor, zobacz [Parowanie ekranu](../../freeplay/scheduled-mode/pairing-a-screen).
+Telewizory będą odtwarzać bieżący plan dla danego typu planu każdego tygodnia, o ustawionych przez Ciebie porach. Działa to również z lekcjami Go Curriculum, w tym z planami, które dostosowałeś. FreePlay loguje się na konto Go Curriculum połączone z służbą w sekcji **Dostawcy treści** (zobacz [Planowanie lekcji](./scheduling-lessons.md)) lub, jeśli służba takiego nie ma, na połączenie Go Curriculum kościoła. Wszystkie opcje znajdziesz w [Planowanie kalendarza](../../freeplay/scheduled-mode/scheduling-the-calendar.md), a aby dodać telewizor, zobacz [Parowanie ekranu](../../freeplay/scheduled-mode/pairing-a-screen.md).
 
 :::note
 Adres URL kanału nie zawiera multimediów Go Curriculum, ponieważ te treści wymagają loginu Go Curriculum Twojego kościoła. Aby wyświetlić lekcję Go Curriculum na telewizorze w holu lub w sali, użyj FreePlay.
@@ -53,4 +54,4 @@ Adres URL kanału nie zawiera multimediów Go Curriculum, ponieważ te treści w
 
 - Zarządzaj planami zasilającymi tę digitalną tablicę na stronie [Plany](./plans.md)
 - Planuj treści w [Lessons.church](./scheduling-lessons.md)
-- Ustaw telewizory FreePlay według kalendarza za pomocą [Trybu zaplanowanego](../../freeplay/scheduled-mode/)
+- Ustaw telewizory FreePlay według kalendarza za pomocą [Trybu zaplanowanego](../../freeplay/scheduled-mode/index.md)

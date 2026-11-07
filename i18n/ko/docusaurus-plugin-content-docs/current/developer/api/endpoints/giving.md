@@ -1,5 +1,6 @@
 ---
 title: "헌금 엔드포인트"
+description: "ChurchApps의 Giving API 엔드포인트 참조: 헌금, 배치, 게이트웨이, 정기 헌금, 결제 수단을 다루며, B1 Admin과 연동하는 개발자를 위한 인증 및 권한 규칙을 포함합니다."
 ---
 
 # 헌금 엔드포인트
@@ -284,6 +285,6 @@ GET /giving/gateways/configured/church-123
 
 ## 관련 문서
 
-- [Membership 엔드포인트](./membership) — 교인, 교회, 그룹, 역할, 권한
-- [인증 및 권한](./authentication) — 로그인 흐름, JWT, OAuth, 권한 모델
-- [모듈 구조](../module-structure) — 코드 구성 패턴
+- [Membership 엔드포인트](./membership.md) — 교인, 교회, 그룹, 역할, 권한
+- [인증 및 권한](./authentication.md) — 로그인 흐름, JWT, OAuth, 권한 모델
+- [모듈 구조](../module-structure.md) — 코드 구성 패턴

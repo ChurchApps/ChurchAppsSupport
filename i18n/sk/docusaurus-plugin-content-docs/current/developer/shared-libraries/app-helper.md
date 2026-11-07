@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "Referencia k balíku @churchapps/apphelper vo workspace Packages: vstupné body podcestí, aplikácie, ktoré ich používajú, a lokálny vývoj a publikovanie."
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ Balík `@churchapps/apphelper` poskytuje zdieľané React komponenty a pomocné 
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- Nainštalujte **Node.js** a **Git** -- pozri [Požiadavky](../setup/prerequisites)
+- Nainštalujte **Node.js** a **Git** -- pozri [Požiadavky](../setup/prerequisites.md)
 - Oboznámte sa s nastavením [pracovného priestoru Packages](./index.md) a postupom vydávania
 
 </div>
@@ -92,6 +93,6 @@ Nikdy neodstraňujte ani nepremenúvajte export, kým nebude publikovaná náhra
 
 ## Súvisiace články
 
-- **[Helpers](./helpers)** -- Základný balík pomocných funkcií používaný spolu s AppHelper
-- **[Webové aplikácie](../web-apps/)** -- Webové aplikácie, ktoré tento balík používajú
+- **[Helpers](./helpers.md)** -- Základný balík pomocných funkcií používaný spolu s AppHelper
+- **[Webové aplikácie](../web-apps/index.md)** -- Webové aplikácie, ktoré tento balík používajú
 - **[Prehľad zdieľaných knižníc](./index.md)** -- Nastavenie pracovného priestoru, postup vydávania a workflow lokálneho prepojenia

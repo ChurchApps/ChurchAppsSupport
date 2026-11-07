@@ -1,5 +1,6 @@
 ---
 title: "Arsitektur Real-time"
+description: "Cara lapisan WebSocket ChurchApps mengirim obrolan langsung, presence, dan notifikasi: handshake socket, langganan room, dan primitif klien bagi developer."
 ---
 
 # Arsitektur Real-time
@@ -226,8 +227,8 @@ Siaran langsung adalah konsumen anonim terbesar dari kerangka ini. Ada dua `cont
 
 ## Halaman terkait
 
-- [Arsitektur Notifikasi](./architecture/notifications) -- Alur eskalasi in-app/push/email yang menerima data dari transport ini
-- [Endpoint Messaging](./api/endpoints/messaging) -- Daftar lengkap endpoint REST untuk pesan, percakapan, koneksi, dan perangkat
-- [Notifikasi Push Web](./web-push) -- Push browser, terpisah dari pengiriman socket di dalam halaman
-- [AppHelper](./shared-libraries/app-helper) -- Paket npm yang berisi primitif klien
-- [Struktur Modul](./api/module-structure) -- Cara modul messaging diatur di sisi server
+- [Arsitektur Notifikasi](./architecture/notifications.md) -- Alur eskalasi in-app/push/email yang menerima data dari transport ini
+- [Endpoint Messaging](./api/endpoints/messaging.md) -- Daftar lengkap endpoint REST untuk pesan, percakapan, koneksi, dan perangkat
+- [Notifikasi Push Web](./web-push.md) -- Push browser, terpisah dari pengiriman socket di dalam halaman
+- [AppHelper](./shared-libraries/app-helper.md) -- Paket npm yang berisi primitif klien
+- [Struktur Modul](./api/module-structure.md) -- Cara modul messaging diatur di sisi server

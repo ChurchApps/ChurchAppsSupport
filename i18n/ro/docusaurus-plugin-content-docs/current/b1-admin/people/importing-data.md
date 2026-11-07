@@ -1,5 +1,6 @@
 ---
 title: "Importarea datelor"
+description: "Aduceți persoane, grupuri, prezență și donații existente în B1 Admin cu instrumentul B1 Transfer sau exportați oricând o copie de rezervă a datelor."
 ---
 
 # Importarea datelor

@@ -1,5 +1,6 @@
 ---
 title: "Odjava a bezpečnost dětí"
+description: "Odhlašujte děti na obsluhované stanici B1 Checkin pomocí bezpečnostních kódů, ověřených vyzvedávajících, vyvolání rodičů, dotisku štítků a nouzových hlášení."
 ---
 
 # Odjava a bezpečnost dětí
@@ -14,7 +15,7 @@ Odhlášení uzavírá proces přihlašování dětí: rodič předloží bezpe�
 <h4>Než začnete</h4>
 
 - Odhlášení je dostupné na stanicích nastavených do režimu **obsazeno** v nastavení kiosku pro správce
-- Děti musí být [přihlášeny](./completing-checkin) s vytištěnou visačkou pro vyzvednutí, na které je bezpečnostní kód
+- Děti musí být [přihlášeny](./completing-checkin.md) s vytištěnou visačkou pro vyzvednutí, na které je bezpečnostní kód
 - Upozornění pomocí zpráv a nouzová hromadná vysílání vyžadují, aby vaše církev měla v B1 Admin připojeného poskytovatele SMS zpráv
 
 </div>
@@ -39,7 +40,7 @@ Pokud napsané jméno odpovídá osobě označené jako **Nepovoleno** pro danou
 Jakmile je osoba vyzvedávající potvrzena, klepněte na odhlásit. Jméno osoby vyzvedávající se uloží k záznamu docházky.
 
 :::info
-Důvěryhodné osoby pro vyzvednutí a osoby s označením Nepovoleno spravuje personál církve na stránce každé osoby v B1 Admin — viz [Bezpečnost přihlašování](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Důvěryhodné osoby pro vyzvednutí a osoby s označením Nepovoleno spravuje personál církve na stránce každé osoby v B1 Admin — viz [Bezpečnost přihlašování](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Přivolání rodiče
@@ -65,6 +66,6 @@ Vysílání směřuje ke každé přihlášené domácnosti na vybranou bohoslu�
 
 ## Související články
 
-- [Dokončení přihlášení](./completing-checkin) — odkud pocházejí bezpečnostní kódy a visačky pro vyzvednutí
-- [Bezpečnost přihlašování](../../b1-admin/attendance/checkin-safety) — nastavení kapacit, poměrů, osob pro vyzvednutí a požadavku na poskytovatele SMS zpráv
-- [Nastavení tiskárny](../getting-started/printer-setup) — konfigurace tiskárny štítků
+- [Dokončení přihlášení](./completing-checkin.md) — odkud pocházejí bezpečnostní kódy a visačky pro vyzvednutí
+- [Bezpečnost přihlašování](../../b1-admin/attendance/checkin-safety.md) — nastavení kapacit, poměrů, osob pro vyzvednutí a požadavku na poskytovatele SMS zpráv
+- [Nastavení tiskárny](../getting-started/printer-setup.md) — konfigurace tiskárny štítků

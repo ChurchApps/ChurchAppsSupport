@@ -1,5 +1,7 @@
 ---
-title: "Kubhalisela Kutivolontiya"
+title: "Kubhalisa Kuvolontiya Ku-App ye-B1 Mobile"
+sidebar_label: "Kubhalisela Kutivolontiya"
+description: "Funa tikhundla letivulekile tebavolontiya tinkhonzo letizayo, bhalisa, noma susa kubhalisa ku-app ye-B1 Mobile. Ihlanganisa tikhatsi tekugcina nekutsi tindzawo letikhawulelwe tisebenta kanjani."
 ---
 
 # Kubhalisela Kutivolontiya
@@ -13,7 +15,7 @@ Hlola tikhundla letivulekile tekutivolontiya futsi ubhalisele tinkonzo letitako 
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- [Faka B1 Mobile](../getting-started/installing) futsi [ungene](../getting-started/logging-in) ku-akhawunti yakho
+- [Faka B1 Mobile](../getting-started/installing.md) futsi [ungene](../getting-started/logging-in.md) ku-akhawunti yakho
 - Mphatsi welibandla lakho kufanele abe avumele kutibhalisela ngekwakhe okungenani sikhundla lesinye
 
 </div>
@@ -60,5 +62,5 @@ Vumela [titfunyiselwa letihlwatjelwako](../community/notifications.md) kute uhla
 
 ## Timibhalo Lehambelanako
 
-- [Kubuka Tinhlelo](./viewing-plans) -- Bona tinhlelo lonikwe wona neluhlu lwenkonzo
+- [Kubuka Tinhlelo](./viewing-plans.md) -- Bona tinhlelo lonikwe wona neluhlu lwenkonzo
 - [Titfunyiselwa](../community/notifications.md) -- Hlala welele etabelweni tekukhonta

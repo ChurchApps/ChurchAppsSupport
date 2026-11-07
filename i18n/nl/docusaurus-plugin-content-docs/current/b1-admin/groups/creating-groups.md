@@ -1,5 +1,6 @@
 ---
 title: "Groepen maken"
+description: "Stel in B1 Admin een nieuwe groep in, van categorie kiezen en benoemen tot aanmeldbeleid, labels, berichten en aanwezigheidsinstellingen."
 ---
 
 # Groepen maken

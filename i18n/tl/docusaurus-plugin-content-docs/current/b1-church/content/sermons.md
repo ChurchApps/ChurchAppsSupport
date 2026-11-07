@@ -1,5 +1,7 @@
 ---
-title: "Mga Sermon"
+title: "Pag-browse ng Sermon sa Website ng B1.church"
+sidebar_label: "Mga Sermon"
+description: "I-browse at panoorin ang mga naitalang sermon mula sa library ng simbahan sa website ng B1.church, nakapangkat sa series o playlist. Hindi kailangang mag-login."
 ---
 
 # Mga Sermon

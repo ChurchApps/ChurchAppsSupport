@@ -1,5 +1,7 @@
 ---
-title: "Bejelentkezés"
+title: "Bejelentkezés a B1 Church Checkinbe"
+sidebar_label: "Bejelentkezés"
+description: "Bejelentkezés a B1 Church Checkin kioszk alkalmazásba, egyház kiválasztása, automatikus bejelentkezés, adminbeállítások és kijelentkezés a táblagépen."
 ---
 
 # Bejelentkezés
@@ -63,7 +65,7 @@ Az adminisztrátori beállítások szándékosan rejtve vannak, hogy a kioszkot 
 2. Ha van beállítva kioszk PIN-kód, a kérésre adja meg a PIN-kódot.
 3. Megnyílik az **Adminisztrátori beállítások** képernyő a következő lehetőségekkel:
    - **Szolgálat módosítása** — a kiválasztott szolgálati időpont megváltoztatása
-   - **Nyomtató módosítása** — megnyitja a [nyomtatóbeállításokat](./printer-setup), ahol nyomtatót kereshet és választhat
+   - **Nyomtató módosítása** — megnyitja a [nyomtatóbeállításokat](./printer-setup.md), ahol nyomtatót kereshet és választhat
    - **PIN-kód beállítása/módosítása** — az adminisztrátori hozzáférést védő kioszk PIN-kód beállítása vagy frissítése
    - **Kijelentkezés** — kijelentkezés és visszatérés a bejelentkező képernyőre
 
@@ -73,4 +75,4 @@ A kijelentkezés törli az összes mentett hitelesítő adatot és a gyülekezet
 
 ## Következő lépések
 
-Miután bejelentkezett, [nyomtatót állíthat be](./printer-setup), vagy közvetlenül a [bejelentkezési folyamathoz](../check-in/) léphet.
+Miután bejelentkezett, [nyomtatót állíthat be](./printer-setup.md), vagy közvetlenül a [bejelentkezési folyamathoz](../check-in/index.md) léphet.

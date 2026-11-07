@@ -1,5 +1,6 @@
 ---
 title: "Oppsett"
+description: "Velg en lokal utviklingsvei for ChurchApps-prosjekter: pek frontend-arbeid mot de delte demo-API-ene, eller kjør hele stacken lokalt med MySQL for backend-endringer."
 ---
 
 # Oppsett
@@ -40,15 +41,15 @@ Denne tilnærmingen lar deg begynne å gjøre frontend-endringer på få minutte
 
 ### 2. Kjør alt lokalt
 
-Hvis du må endre API-kode eller jobbe offline, kan du kjøre hele stacken lokalt. Dette krever MySQL 8.0+ og ekstra konfigurasjon. Se guiden [API-oppsett lokalt](../api/local-setup) for detaljerte instruksjoner.
+Hvis du må endre API-kode eller jobbe offline, kan du kjøre hele stacken lokalt. Dette krever MySQL 8.0+ og ekstra konfigurasjon. Se guiden [API-oppsett lokalt](../api/local-setup.md) for detaljerte instruksjoner.
 
 ## Komme i gang
 
 Følg disse sidene i rekkefølge:
 
-1. **[Forutsetninger](prerequisites)** – installer de nødvendige verktøyene (Node.js, Git, MySQL osv.)
-2. **[Prosjektoversikt](project-overview)** – forstå hvilke prosjekter som finnes og hva de gjør
-3. **[Miljøvariabler](environment-variables)** – konfigurer `.env`-filene dine for å koble alt sammen
+1. **[Forutsetninger](./prerequisites.md)** – installer de nødvendige verktøyene (Node.js, Git, MySQL osv.)
+2. **[Prosjektoversikt](./project-overview.md)** – forstå hvilke prosjekter som finnes og hva de gjør
+3. **[Miljøvariabler](./environment-variables.md)** – konfigurer `.env`-filene dine for å koble alt sammen
 
 :::info
 Hvert ChurchApps-prosjekt er et uavhengig Git-repositorium. Du trenger bare å klone de spesifikke prosjektene du vil jobbe med.

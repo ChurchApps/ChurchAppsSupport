@@ -1,5 +1,6 @@
 ---
 title: "Liste de zile de naștere și aniversări"
+description: "Creează o listă cu zilele de naștere și aniversările dintr-o lună, folosind filtrele Persoane din B1 Admin, apoi vezi sau exportă datele."
 ---
 
 # Liste de zile de naștere și aniversări

@@ -1,5 +1,6 @@
 ---
 title: "Paggawa ng Mga Grupo"
+description: "Mag-set up ng bagong grupo sa B1 Admin, mula sa pagpili ng kategorya at pangalan hanggang sa join policy, label, mensahe, at attendance settings."
 ---
 
 # Paggawa ng Mga Grupo

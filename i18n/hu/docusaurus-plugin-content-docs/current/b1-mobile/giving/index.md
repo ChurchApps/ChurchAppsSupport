@@ -1,5 +1,7 @@
 ---
-title: "Adományozás"
+title: "Adakozás a B1 Mobile alkalmazásban"
+sidebar_label: "Adományozás"
+description: "Adakozz a B1 Mobile alkalmazásban, nézd meg az idei adakozásaidat, és kezeld a mentett fizetési módokat. Az Áttekintés, Adakozás, Kezelés és Előzmények füleket ismerteti."
 ---
 
 # Adományozás
@@ -24,7 +26,7 @@ Az adományozási szakasz négy lapra oszlik:
 A B1 Mobile-on keresztül küldött összes adományt a **Stripe** biztonságosan dolgozza fel. Az Ön fizetési adatait a Stripe biztonságos infrastruktúrája kezeli, és azokat a ChurchApps szerverei soha nem tárolják. Nyugodtan adakozhat, tudva, hogy pénzügyi adatai védettek.
 
 :::info
-A gyülekezet adminisztrátora állítja be az elérhető alapokat és a fizetésfeldolgozást a [B1 Admin](../../b1-admin/) felületen keresztül. Ha az alkalmazásban nem lát adományozási lehetőséget, lehetséges, hogy a gyülekezetében ez a funkció még nincs beállítva.
+A gyülekezet adminisztrátora állítja be az elérhető alapokat és a fizetésfeldolgozást a [B1 Admin](../../b1-admin/index.md) felületen keresztül. Ha az alkalmazásban nem lát adományozási lehetőséget, lehetséges, hogy a gyülekezetében ez a funkció még nincs beállítva.
 :::
 
 ## Mit tehet
@@ -38,6 +40,6 @@ Az adományozási szakaszból a következőket teheti:
 
 ## Következő lépések
 
-- [Adomány küldése](./making-donations) -- Megtudhatja, hogyan küldhet adományt az alkalmazásból
-- [Fizetési módok kezelése](./managing-payments) -- Mentett fizetési módok hozzáadása vagy eltávolítása
-- [Adománytörténet](./donation-history) -- Adakozási összefoglalójának és korábbi adományainak megtekintése
+- [Adomány küldése](./making-donations.md) -- Megtudhatja, hogyan küldhet adományt az alkalmazásból
+- [Fizetési módok kezelése](./managing-payments.md) -- Mentett fizetési módok hozzáadása vagy eltávolítása
+- [Adománytörténet](./donation-history.md) -- Adakozási összefoglalójának és korábbi adományainak megtekintése

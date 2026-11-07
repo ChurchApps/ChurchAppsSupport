@@ -1,5 +1,6 @@
 ---
 title: "Massimport"
+description: "Importera predikningsvideor i bulk från en YouTube-kanal eller ett Vimeo-konto till B1 Admin och sortera dem sedan i en spellista."
 ---
 
 # Massimport
@@ -14,7 +15,7 @@ Sidan Massimport låter dig snabbt fylla på ditt predikningsbibliotek genom att
 <h4>Innan du börjar</h4>
 
 - Du behöver behörigheten **contentApi.streamingServices.edit**. Se [Roller och behörigheter](../settings/roles-permissions.md) om du saknar åtkomst.
-- Skapa minst en [spellista](playlists) att importera dina predikningar till
+- Skapa minst en [spellista](./playlists.md) att importera dina predikningar till
 - Ha ditt YouTube-kanal-ID eller din Vimeo-kontoinformation redo
 
 </div>
@@ -39,7 +40,7 @@ Innan du importerar videor behöver du minst en spellista att sortera dem i. Om 
 2. Klicka på **Skapa första spellistan** och fyll i namn, beskrivning, publiceringsdatum och miniatyrbild.
 3. Klicka på **Spara** och gå sedan tillbaka till Massimport genom att klicka på **Lägg till predikning** och välja **Massimport**.
 
-Se [Spellistor](playlists) för detaljerade instruktioner om hur du skapar och hanterar spellistor.
+Se [Spellistor](./playlists.md) för detaljerade instruktioner om hur du skapar och hanterar spellistor.
 
 ## Importera videor
 
@@ -54,11 +55,11 @@ Se [Spellistor](playlists) för detaljerade instruktioner om hur du skapar och h
 Dina videor importeras med alla sina uppgifter, inklusive titlar, beskrivningar, datum och miniatyrbilder. Specialtecken i YouTube-titlar och -beskrivningar, till exempel `&`, apostrofer och citattecken, överförs så som de skrivits i stället för som koder som `&amp;`.
 
 :::info
-Massimport är idealiskt för att komma igång när du flyttar från en annan plattform. För att lägga till enskilda predikningar framöver använder du i stället sidan [Hantera predikningar](managing-sermons).
+Massimport är idealiskt för att komma igång när du flyttar från en annan plattform. För att lägga till enskilda predikningar framöver använder du i stället sidan [Hantera predikningar](./managing-sermons.md).
 :::
 
 ## Nästa steg
 
-- [Hantera predikningar](managing-sermons) -- Redigera uppgifter för importerade predikningar
-- [Spellistor](playlists) -- Skapa och hantera predikningsserier
-- [Livestreaming](live-streaming) -- Ställ in livestreaming för dina gudstjänster
+- [Hantera predikningar](./managing-sermons.md) -- Redigera uppgifter för importerade predikningar
+- [Spellistor](./playlists.md) -- Skapa och hantera predikningsserier
+- [Livestreaming](./live-streaming.md) -- Ställ in livestreaming för dina gudstjänster

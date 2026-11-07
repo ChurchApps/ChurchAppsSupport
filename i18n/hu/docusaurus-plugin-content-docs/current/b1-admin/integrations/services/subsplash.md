@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Subsplash-adományok, új személyek és űrlapválaszok összekötése a B1-gyel Zapier-rel, hogy automatikusan a B1 Admin-ba kerüljenek."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Kapcsold be a Zapot. A későbbi Subsplash-adományok másodperceken belül megj
 
 ## Lásd még
 
-- [Donorbox](./donorbox) – ugyanaz a receptfelépítés, más adományozási platformmal
-- [Zapier (áttekintés)](../zapier) – minden Zapier-recept B1-oldala
+- [Donorbox](./donorbox.md) – ugyanaz a receptfelépítés, más adományozási platformmal
+- [Zapier (áttekintés)](../zapier.md) – minden Zapier-recept B1-oldala
 - [Subsplash Zapier-integrációs útmutató](https://support.subsplash.com/en/articles/9825926-zapier-integration) (a Subsplash dokumentációja)

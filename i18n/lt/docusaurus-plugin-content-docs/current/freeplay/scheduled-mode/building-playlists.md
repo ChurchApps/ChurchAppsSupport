@@ -1,5 +1,6 @@
 ---
 title: "Teikėjų prijungimas ir grojaraščių kūrimas"
+description: "Nustatykite prijungtus turinio teikėjus FreePlay Admin, tada sukurkite, sutvarkykite ir peržiūrėkite grojaraščius planuojamiems TV ekranams."
 ---
 
 # Teikėjų prijungimas ir grojaraščių kūrimas
@@ -107,6 +108,6 @@ Spustelėkite **Rodyti**, kad grojaraštis būtų paleistas visame ekrane naršy
 
 ## Susiję straipsniai
 
-- **[Kalendoriaus planavimas](./scheduling-the-calendar)** – įtraukite grojaraštį į ekranų grupės kalendorių
-- **[Ekranų ir grupių tvarkymas](./managing-screens)** – nustatykite grojaraštį kaip grupės numatytąjį ciklą
-- **[Turinio teikėjai](../content-providers/)** – teikėjai, kuriuos galima prijungti tiesiai televizoriuje
+- **[Kalendoriaus planavimas](./scheduling-the-calendar.md)** – įtraukite grojaraštį į ekranų grupės kalendorių
+- **[Ekranų ir grupių tvarkymas](./managing-screens.md)** – nustatykite grojaraštį kaip grupės numatytąjį ciklą
+- **[Turinio teikėjai](../content-providers/index.md)** – teikėjai, kuriuos galima prijungti tiesiai televizoriuje

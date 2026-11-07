@@ -1,5 +1,7 @@
 ---
-title: "Aanmelden"
+title: "Inchecken in het ledenportaal van B1.church"
+sidebar_label: "Aanmelden"
+description: "Check jezelf en je huishouden in bij een kerkdienst via het ledenportaal van B1.church, zonder kiosk, en kies groepen."
 ---
 
 # Aanmelden

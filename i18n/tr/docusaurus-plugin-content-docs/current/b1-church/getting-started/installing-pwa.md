@@ -1,5 +1,6 @@
 ---
 title: "PWA olarak uygulama yükleme"
+description: "B1.church'ü üye portalından iPhone veya Android'e uygulama olarak yükleyin; Safari veya Chrome'da simgesini ana ekranınıza ekleyin."
 ---
 
 # PWA olarak uygulama yükleme

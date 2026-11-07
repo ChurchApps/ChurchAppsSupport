@@ -1,5 +1,6 @@
 ---
 title: "Webappdistribusjon"
+description: "Trinnene for å distribuere ChurchApps-webapper, som B1 Admin, til Amazon S3 og CloudFront, med automatisk distribusjon via GitHub Actions ved sammenslåing eller manuelle kommandoer."
 ---
 
 # Webappdistribusjon
@@ -13,7 +14,7 @@ ChurchApps webapplikasjoner distribueres som statiske nettsteder til **Amazon S3
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sett opp webappen lokalt og verifiser at den bygger -- se [Webapper](../web-apps/)
+- Sett opp webappen lokalt og verifiser at den bygger -- se [Webapper](../web-apps/index.md)
 - Konfigurer AWS-legitimasjon med S3- og CloudFront-tilgang
 - Kjenn til mål-S3-bøttenavnet og CloudFront-distribusjons-ID-en
 
@@ -53,6 +54,6 @@ Hvis du trenger å verifisere en bygging lokalt før distribusjon, kjør `npm ru
 
 ## Relaterte artikler
 
-- **[Webapper](../web-apps/)** -- Oppsettsguider for B1Admin, B1App og LessonsApp
-- **[API-distribusjon](./apis)** -- Distribuere backend-API-ene
-- **[Mobildistribusjon](./mobile)** -- Distribuere mobilapper til appbutikker
+- **[Webapper](../web-apps/index.md)** -- Oppsettsguider for B1Admin, B1App og LessonsApp
+- **[API-distribusjon](./apis.md)** -- Distribuere backend-API-ene
+- **[Mobildistribusjon](./mobile.md)** -- Distribuere mobilapper til appbutikker

@@ -1,5 +1,6 @@
 ---
 title: "Programs and Studies"
+description: "Hoe programma's, studies, lessen en locaties in Lessons.church samenhangen, zodat je het juiste curriculum vindt en tussen verwante lessen wisselt."
 ---
 
 # Programs and Studies

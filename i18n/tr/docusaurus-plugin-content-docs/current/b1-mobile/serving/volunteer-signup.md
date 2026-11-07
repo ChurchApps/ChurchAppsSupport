@@ -1,5 +1,7 @@
 ---
-title: "Gönüllü Kaydı"
+title: "B1 Mobile Uygulamasında Gönüllü Kaydı"
+sidebar_label: "Gönüllü Kaydı"
+description: "B1 Mobile uygulamasında yaklaşan ibadetler için açık gönüllü pozisyonlarını bulun, kaydolun veya kaydınızı kaldırın. Son tarihleri ve kontenjan sınırlarının nasıl işlediğini kapsar."
 ---
 
 # Gönüllü Kaydı
@@ -13,7 +15,7 @@ B1 Mobile uygulamasından doğrudan mevcut gönüllü pozisyonlarına göz atabi
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
 - Kilise yöneticiniz, en az bir pozisyonda kendi kendine kayda izin vermiş olmalıdır
 
 </div>
@@ -60,5 +62,5 @@ Yeni gönüllü fırsatları ve atamalarınızdaki değişikliklerden haberdar o
 
 ## İlgili Makaleler
 
-- [Planları Görüntüleme](./viewing-plans) -- Size atanmış planları ve ibadet sıralarını görün
+- [Planları Görüntüleme](./viewing-plans.md) -- Size atanmış planları ve ibadet sıralarını görün
 - [Bildirimler](../community/notifications.md) -- Hizmet atamalarınızla ilgili güncel kalın

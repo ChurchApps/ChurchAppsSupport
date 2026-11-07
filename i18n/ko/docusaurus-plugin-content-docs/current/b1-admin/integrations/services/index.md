@@ -1,5 +1,6 @@
 ---
 title: "연결된 서비스"
+description: "Zapier 또는 Make 레시피로 B1 Admin을 Mailchimp, Donorbox, Subsplash, VOMO, Clearstream 등 다른 도구와 연결합니다. 각 도구별 설정 안내가 있습니다."
 ---
 
 # 연결된 서비스
@@ -14,14 +15,14 @@ B1을 다른 교회 기술 도구에 연결하는 가장 빠른 방법은 일반
 
 | 서비스 | 카테고리 | 연결 | 연결할 수 있는 것 |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | 이메일 | Zapier 또는 Make | 새 B1 사람 / 기부자를 Mailchimp 오디언스로 동기화 |
-| [Donorbox](./donorbox) | 기부 | Zapier | Donorbox 기부 및 기부자를 B1로 다시 푸시 |
-| [Subsplash](./subsplash) | 앱 / 기부 | Zapier | Subsplash 기부 및 사람을 B1로 끌어오기 |
-| [VOMO](./vomo) | 자원봉사 | Zapier | B1 그룹과 VOMO 프로젝트 간 자원봉사 가입 동기화 |
-| [Clearstream](./clearstream) | SMS | Zapier | B1 이벤트에서 Clearstream 텍스트 트리거; 회신을 B1 기록으로 수집 |
-| [Text In Church](./text-in-church) | SMS / 워크플로우 | Zapier | B1 이벤트에서 Text In Church 워크플로우 트리거; 연결 카드 데이터 수신 |
-| [Mobile Message](./mobile-message) | SMS(호주) | Zapier 웹훅 또는 Make | 모든 B1 이벤트에서 SMS 전송 |
-| [Checkr](./checkr) | 배경 검사 | Make | 누군가 예배 팀에 가입할 때 배경 검사 시작 |
+| [Mailchimp](./mailchimp.md) | 이메일 | Zapier 또는 Make | 새 B1 사람 / 기부자를 Mailchimp 오디언스로 동기화 |
+| [Donorbox](./donorbox.md) | 기부 | Zapier | Donorbox 기부 및 기부자를 B1로 다시 푸시 |
+| [Subsplash](./subsplash.md) | 앱 / 기부 | Zapier | Subsplash 기부 및 사람을 B1로 끌어오기 |
+| [VOMO](./vomo.md) | 자원봉사 | Zapier | B1 그룹과 VOMO 프로젝트 간 자원봉사 가입 동기화 |
+| [Clearstream](./clearstream.md) | SMS | Zapier | B1 이벤트에서 Clearstream 텍스트 트리거; 회신을 B1 기록으로 수집 |
+| [Text In Church](./text-in-church.md) | SMS / 워크플로우 | Zapier | B1 이벤트에서 Text In Church 워크플로우 트리거; 연결 카드 데이터 수신 |
+| [Mobile Message](./mobile-message.md) | SMS(호주) | Zapier 웹훅 또는 Make | 모든 B1 이벤트에서 SMS 전송 |
+| [Checkr](./checkr.md) | 배경 검사 | Make | 누군가 예배 팀에 가입할 때 배경 검사 시작 |
 
 ## 모두 공통점이 있는 것
 
@@ -45,8 +46,8 @@ B1을 다른 교회 기술 도구에 연결하는 가장 빠른 방법은 일반
 
 ## 참고도 보기
 
-- [Zapier(개요)](../zapier) — 모든 Zapier 레시피의 B1 측은 동일합니다. 이 문서는 한 번 다룹니다
-- [Make(개요)](../make) — 동일한 Make 시나리오
-- [Slack & Discord](../slack-discord) — 연결 없는 채팅 알림
-- [Google Sheets](../google-sheets) — 온디맨드 내보내기
+- [Zapier(개요)](../zapier.md) — 모든 Zapier 레시피의 B1 측은 동일합니다. 이 문서는 한 번 다룹니다
+- [Make(개요)](../make.md) — 동일한 Make 시나리오
+- [Slack & Discord](../slack-discord.md) — 연결 없는 채팅 알림
+- [Google Sheets](../google-sheets.md) — 온디맨드 내보내기
 - [웹훅(개발자 참조)](/docs/developer/api/webhooks) — 모든 레시피가 의존하는 이벤트 카탈로그

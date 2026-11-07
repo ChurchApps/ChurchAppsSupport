@@ -1,5 +1,7 @@
 ---
-title: "Erste Schritte"
+title: "Erste Schritte mit der FreePlay-TV-App"
+sidebar_label: "Erste Schritte"
+description: "FreePlay auf Android TV, Fire TV oder Apple TV einrichten: App installieren, beim ersten Start öffnen und Fernbedienung sowie Seitenleiste kennenlernen."
 ---
 
 # Erste Schritte mit FreePlay
@@ -42,7 +44,7 @@ FreePlay läuft auf Fire TV (einschließlich der neueren Sticks mit Vega OS), An
 
 Wenn Sie FreePlay zum ersten Mal öffnen, sehen Sie einen animierten Startbildschirm mit dem FreePlay-Logo. Die App prüft, ob zuvor Inhaltsanbieter verbunden wurden. Wenn Sie bereits einen Anbieter verbunden haben, öffnet sich direkt dessen Inhaltsbrowser. Andernfalls öffnet sich der Bildschirm **Inhaltsanbieter**, auf dem Sie Ihre erste Inhaltsquelle verbinden können.
 
-Wenn der Fernseher über den [geplanten Modus](../scheduled-mode/) mit einem Kalender gekoppelt ist, überspringt FreePlay all dies und öffnet direkt den geplanten Player.
+Wenn der Fernseher über den [geplanten Modus](../scheduled-mode/index.md) mit einem Kalender gekoppelt ist, überspringt FreePlay all dies und öffnet direkt den geplanten Player.
 
 ## Mit der Fernbedienung des Fernsehers navigieren
 
@@ -62,13 +64,13 @@ Die Seitenleiste reduziert sich beim Durchsuchen von Inhalten auf einen schmalen
 
 Die Seitenleiste enthält von oben nach unten:
 
-- **Heutiger Plan** — Wird angezeigt, wenn der Fernseher mit einem Plan gekoppelt ist. Siehe [Plan-Modus](../plan-mode/)
-- **Ankündigungen** — Wird angezeigt, sobald Sie einen Ankündigungsordner ausgewählt haben. Siehe [Ankündigungen](../content-providers/announcements)
-- **Durchsuchen** — Jeder verbundene Inhaltsanbieter, den Sie durchsuchen können. Siehe [Inhalte durchsuchen und herunterladen](../content-providers/browsing-content)
-- **Einstellungen** — Unten in der Seitenleiste. Öffnet **Mit einem Kalender koppeln** (diesen Fernseher mit einem Kalender oder Plan koppeln — siehe [Einen Kopplungsmodus auswählen](./pairing-modes)), **Downloads** (auf diesem Gerät gespeicherte Inhalte abspielen oder löschen) und **Anbieter** (Inhaltsanbieter verbinden und den Ankündigungsordner auswählen)
+- **Heutiger Plan** — Wird angezeigt, wenn der Fernseher mit einem Plan gekoppelt ist. Siehe [Plan-Modus](../plan-mode/index.md)
+- **Ankündigungen** — Wird angezeigt, sobald Sie einen Ankündigungsordner ausgewählt haben. Siehe [Ankündigungen](../content-providers/announcements.md)
+- **Durchsuchen** — Jeder verbundene Inhaltsanbieter, den Sie durchsuchen können. Siehe [Inhalte durchsuchen und herunterladen](../content-providers/browsing-content.md)
+- **Einstellungen** — Unten in der Seitenleiste. Öffnet **Mit einem Kalender koppeln** (diesen Fernseher mit einem Kalender oder Plan koppeln — siehe [Einen Kopplungsmodus auswählen](./pairing-modes.md)), **Downloads** (auf diesem Gerät gespeicherte Inhalte abspielen oder löschen) und **Anbieter** (Inhaltsanbieter verbinden und den Ankündigungsordner auswählen)
 
 ## Wie geht es weiter?
 
-- **[Einen Kopplungsmodus auswählen](./pairing-modes)** — Erfahren Sie mehr über die verschiedenen Möglichkeiten, Ihren Fernseher zu verbinden
-- **[Geplanter Modus](../scheduled-mode/)** — Stellen Sie Ihre Fernseher mit FreePlay Admin auf einen Kalender ein
-- **[Inhaltsanbieter](../content-providers/)** — Verbinden Sie sich mit Lessons.church, Bible Project und mehr
+- **[Einen Kopplungsmodus auswählen](./pairing-modes.md)** — Erfahren Sie mehr über die verschiedenen Möglichkeiten, Ihren Fernseher zu verbinden
+- **[Geplanter Modus](../scheduled-mode/index.md)** — Stellen Sie Ihre Fernseher mit FreePlay Admin auf einen Kalender ein
+- **[Inhaltsanbieter](../content-providers/index.md)** — Verbinden Sie sich mit Lessons.church, Bible Project und mehr

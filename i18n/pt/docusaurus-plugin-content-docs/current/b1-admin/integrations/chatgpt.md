@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "Conecte o ChatGPT aos dados da sua igreja no B1 com uma chave de API e faça perguntas em linguagem natural sobre pessoas, doações e presença no B1 Admin."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Conecte o ChatGPT aos dados da sua igreja no B1 e faça perguntas em linguagem s
 </div>
 
 :::tip Recomendado: experimente o Claude primeiro — é gratuito
-[Claude](./claude) se conecta ao B1 no **plano gratuito** e leva menos de 3 minutos para configurar — basta adicionar o B1 como conector e entrar com sua conta do B1. Não é preciso chave. É a forma mais fácil de sua igreja experimentar a IA com o B1 antes de pagar por qualquer coisa.
+[Claude](./claude.md) se conecta ao B1 no **plano gratuito** e leva menos de 3 minutos para configurar — basta adicionar o B1 como conector e entrar com sua conta do B1. Não é preciso chave. É a forma mais fácil de sua igreja experimentar a IA com o B1 antes de pagar por qualquer coisa.
 :::
 
 ## Configurando
@@ -254,5 +255,5 @@ Qualquer pessoa com o link pode fazer perguntas em linguagem natural. Os escopos
 
 - [Chaves de API](/docs/developer/api/api-keys) — referência completa de escopos
 - [Servidor MCP (referência para desenvolvedores)](/docs/developer/api/mcp) — detalhes do protocolo e esquemas das ferramentas
-- [Claude](./claude) — a mesma ideia, para os modelos da Anthropic
+- [Claude](./claude.md) — a mesma ideia, para os modelos da Anthropic
 - [Referência da API REST](/docs/developer/api/endpoints) — todos os endpoints que uma action de GPT personalizado pode chamar

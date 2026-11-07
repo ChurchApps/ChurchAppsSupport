@@ -1,5 +1,7 @@
 ---
-title: "Vsebina"
+title: "Vsebinske zmožnosti v portalu članov B1.church"
+sidebar_label: "Vsebina"
+description: "Preverite, katero vsebino vaša cerkev omogoča v portalu članov B1.church, nato brskajte po pridigah, prenosih v živo, branju Svetega pisma in lekcijah."
 ---
 
 # Vsebina

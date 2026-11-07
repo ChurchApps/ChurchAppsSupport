@@ -1,5 +1,6 @@
 ---
 title: "Ustvarjanje računa"
+description: "Registriraj račun ChurchApps na Lessons.church, nato ga poveži z novim ali obstoječim profilom cerkve, da lahko upravljaš učilnice in urnike."
 ---
 
 # Ustvarjanje računa

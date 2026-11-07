@@ -1,5 +1,7 @@
 ---
-title: "Gudstjenesteorden"
+title: "Gudstjenesteorden i B1 Admin"
+sidebar_label: "Gudstjenesteorden"
+description: "Sett opp gudstjenesteorden i B1 Admin: legg til sanger, leksjoner og egne elementer, ordne dem i seksjoner og skriv ut kjøreplanen."
 ---
 
 # Gudstjenesteorden

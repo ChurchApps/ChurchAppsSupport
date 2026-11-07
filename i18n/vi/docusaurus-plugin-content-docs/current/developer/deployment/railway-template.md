@@ -1,5 +1,6 @@
 ---
 title: "Tự lưu trữ trên Railway"
+description: "Triển khai ChurchApps riêng trên Railway trong khoảng 15 phút, rồi cấu hình email, tên miền riêng, định tuyến đa nhà thờ, quyên góp và lưu trữ tệp."
 ---
 
 # Tự lưu trữ trên Railway
@@ -195,7 +196,7 @@ Các biến này mở khóa những tính năng cụ thể và đều có thể 
 | `VIMEO_TOKEN` | Hỗ trợ bài giảng Vimeo |
 | `API_BIBLE_KEY` | Tra cứu câu Kinh Thánh trong bài học và nội dung |
 | `YOUVERSION_API_KEY` | Tích hợp Kinh Thánh YouVersion |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Thông báo đẩy trên trình duyệt ([tạo cặp khóa VAPID](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Thông báo đẩy trên trình duyệt ([tạo cặp khóa VAPID](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Đồng bộ CRM tùy chọn cho các đăng ký mới |
 
 ## Cập nhật
@@ -234,9 +235,9 @@ Nếu bạn gặp vấn đề không có trong danh sách này, hãy mở một 
 
 ## Bài viết liên quan
 
-- **[Tự lưu trữ với Docker](./docker)** — Cùng hệ thống trên phần cứng hoặc VPS của riêng bạn
-- **[Thiết lập ban đầu](../../getting-started/initial-setup)** — Các bước đầu tiên sau khi nhà thờ của bạn được tạo
-- **[Thiết lập website ban đầu](../../b1-admin/website/initial-setup)** — Cấu hình trang công khai của nhà thờ bạn
-- **[Cài đặt quyên góp](../../b1-admin/donations/online-giving-setup)** — Kết nối Stripe hoặc PayPal
-- **[Thiết lập API cục bộ](../api/local-setup)** — Chạy hệ thống trên máy cục bộ để phát triển
-- **[Triển khai API (AWS)](./apis)** — Cách dịch vụ SaaS chính thức của ChurchApps được triển khai
+- **[Tự lưu trữ với Docker](./docker.md)** — Cùng hệ thống trên phần cứng hoặc VPS của riêng bạn
+- **[Thiết lập ban đầu](../../getting-started/initial-setup.md)** — Các bước đầu tiên sau khi nhà thờ của bạn được tạo
+- **[Thiết lập website ban đầu](../../b1-admin/website/initial-setup.md)** — Cấu hình trang công khai của nhà thờ bạn
+- **[Cài đặt quyên góp](../../b1-admin/donations/online-giving-setup.md)** — Kết nối Stripe hoặc PayPal
+- **[Thiết lập API cục bộ](../api/local-setup.md)** — Chạy hệ thống trên máy cục bộ để phát triển
+- **[Triển khai API (AWS)](./apis.md)** — Cách dịch vụ SaaS chính thức của ChurchApps được triển khai

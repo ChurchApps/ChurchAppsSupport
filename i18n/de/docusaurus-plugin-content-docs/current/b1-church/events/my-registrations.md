@@ -1,5 +1,6 @@
 ---
 title: "Meine Registrierungen"
+description: "Anmeldestatus prüfen, offenen Betrag zahlen, Teilnehmende oder Optionen ändern oder eine Veranstaltungsanmeldung im B1-Church-Portal stornieren."
 ---
 
 # Meine Registrierungen
@@ -14,7 +15,7 @@ Die Seite **Registrierungen** im Mitgliedsportal ist Ihre Zentrale für alle Ver
 <h4>Bevor Sie beginnen</h4>
 
 - Sie müssen [angemeldet sein](../getting-started/logging-in.md) – Gastregistrierungen werden hier nicht angezeigt
-- Sie benötigen mindestens eine Veranstaltungsregistrierung. Siehe [Anmeldung zu Veranstaltungen](./registering).
+- Sie benötigen mindestens eine Veranstaltungsregistrierung. Siehe [Anmeldung zu Veranstaltungen](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Ihr Platz wird sofort freigegeben. Wenn die Veranstaltung eine Warteliste hat, w
 
 ## Verwandte Artikel
 
-- [Anmeldung zu Veranstaltungen](./registering) – Der Anmeldeprozess, einschließlich Zahlung und Wartelisten
+- [Anmeldung zu Veranstaltungen](./registering.md) – Der Anmeldeprozess, einschließlich Zahlung und Wartelisten
 - [Veranstaltungsübersicht](./index.md) – Kommende Veranstaltungen durchsuchen

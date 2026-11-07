@@ -1,5 +1,6 @@
 ---
 title: "Planvalidering og varsler"
+description: "Sjekk gudstjenesteplaner i B1 Admin for ledige posisjoner, planleggingskonflikter og utilgjengelige frivillige, og varsle hele teamet med ett klikk."
 ---
 
 # Planvalidering og varsling av frivillige

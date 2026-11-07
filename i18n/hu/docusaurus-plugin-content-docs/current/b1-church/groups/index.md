@@ -1,5 +1,7 @@
 ---
-title: "Csoportok"
+title: "Gyülekezeti csoportok a B1.church tagi portálon"
+sidebar_label: "Csoportok"
+description: "Böngészd és csatlakozz gyülekezeti csoportokhoz a B1.church oldaladon, majd a csoportoldalakon nézd meg a találkozókat, eseményeket, tagokat és forrásokat, és csevegj csoportoddal."
 ---
 
 # Csoportok

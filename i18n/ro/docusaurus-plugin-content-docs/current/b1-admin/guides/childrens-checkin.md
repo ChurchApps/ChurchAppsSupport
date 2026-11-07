@@ -1,5 +1,6 @@
 ---
 title: "Ghid: Configurarea check-in-ului pentru ministerul copiilor"
+description: "Configurați check-in-ul pentru copii în B1 Admin: legați familiile, creați grupuri pe vârste, setați serviciile și tipăriți etichete pentru chioșcul B1 Checkin."
 ---
 
 # Configurarea check-in-ului pentru ministerul copiilor

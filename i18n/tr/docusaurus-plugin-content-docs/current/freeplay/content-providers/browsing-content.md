@@ -1,5 +1,6 @@
 ---
 title: "İçerik Gözatma ve İndirme"
+description: "FreePlay'de TV kumandanızla bağlı bir sağlayıcının kütüphanesinde gezinin; ardından oynatma için dersleri ve videoları indirin veya akışla izleyin."
 ---
 
 # İçerik Gözatma ve İndirme
@@ -13,7 +14,7 @@ Bir içerik sağlayıcısına bağlandıktan sonra kütüphanesine göz atabilir
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- En az bir içerik sağlayıcısına bağlanın -- bkz. [Sağlayıcılara Bağlanma](./connecting-providers)
+- En az bir içerik sağlayıcısına bağlanın -- bkz. [Sağlayıcılara Bağlanma](./connecting-providers.md)
 - TV kumandanızın gezinme için hazır olduğundan emin olun
 
 </div>
@@ -38,7 +39,7 @@ Sağlayıcının içerik yapısının izin verdiği kadar derine inebilirsiniz. 
 
 ## Lessons.church'te Gezinme
 
-[Lessons.church](../../lessons-church/) kütüphanesi, web sitesiyle aynı şekilde düzenlenmiştir. En üst düzeyde iki klasör görürsünüz:
+[Lessons.church](../../lessons-church/index.md) kütüphanesi, web sitesiyle aynı şekilde düzenlenmiştir. En üst düzeyde iki klasör görürsünüz:
 
 - **Lessons** - **program**, ardından **çalışma** ve sonra **ders** düzeyinde ilerleyin. Her ders, **mekanlarını** listeler; bunlar dersin belirli bir yaş grubu veya ortam için sürümleridir, örneğin Okul Öncesi veya İlkokul. Dersin o sürümü için indirme ekranını açmak üzere bir mekan seçin.
 - **Add-Ons** - Kategorilere göre gruplandırılmış ek videolar ve kaynaklar
@@ -78,7 +79,7 @@ Oynatma sırasında şu denetimleri kullanın:
 Oynatıcıdan çıktığınızda, geçerli sağlayıcının kök düzeyindeki içerik tarayıcısına dönersiniz.
 
 :::info
-Tüm oynatıcı denetimlerinin tam listesi için bkz. [İçerik Oynatma](./playing-content).
+Tüm oynatıcı denetimlerinin tam listesi için bkz. [İçerik Oynatma](./playing-content.md).
 :::
 
 ## Sağlayıcılar Arasında Geçiş

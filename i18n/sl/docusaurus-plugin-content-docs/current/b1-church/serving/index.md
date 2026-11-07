@@ -1,5 +1,7 @@
 ---
-title: "Služenje"
+title: "Prostovoljno služenje in prijave na B1.church"
+sidebar_label: "Služenje"
+description: "Brskajte po prostovoljskih priložnostih na B1.church, se prijavite na proste položaje, si oglejte svoje naloge služenja in prijave preklicite pred rokom."
 ---
 
 # Služenje
@@ -14,8 +16,8 @@ Razdelek Služenje na B1.church vam omogoča pregledovanje priložnosti za prost
 
 - **Brskanje po priložnostih za prostovoljstvo** -- Oglejte si prihajajoče načrte služb z odprtimi mesti, ki potrebujejo prostovoljce.
 - **Prijava na mesta** -- Izberite mesto in se z enim klikom prijavite.
-- **Ogled vaših načrtov** -- Oglejte si svoje prihajajoča in pretekla [dodeljena služenja](../plans/viewing-plans).
-- **Odziv na dodelitve** -- Sprejmete ali zavrnete mesta, za katera ste bili razporejeni, na strani Načrti ali v razdelku **Služite** na domači strani. Če se vaši načrti spremenijo po sprejemu, lahko do konca službe [zavrnete sprejeto dodelitev](../plans/viewing-plans#declining-an-accepted-assignment).
+- **Ogled vaših načrtov** -- Oglejte si svoje prihajajoča in pretekla [dodeljena služenja](../plans/viewing-plans.md).
+- **Odziv na dodelitve** -- Sprejmete ali zavrnete mesta, za katera ste bili razporejeni, na strani Načrti ali v razdelku **Služite** na domači strani. Če se vaši načrti spremenijo po sprejemu, lahko do konca službe [zavrnete sprejeto dodelitev](../plans/viewing-plans.md#declining-an-accepted-assignment).
 - **Odstranitev prijav** -- Preklicem samoprijavo, če se vaši načrti spremenijo (pred rokom).
 
 ## Kako deluje
@@ -28,5 +30,5 @@ Na strani za prostovoljce se prikažejo samo mesta, za katera je vaš cerkveni u
 
 ## Več informacij
 
-- [Prijava prostovoljcev](./volunteer-signup) -- Vodnik po korakih za brskanje in prijavo na mesta prostovoljcev
-- [Ogled načrtov](../plans/viewing-plans) -- Oglejte si svoje dodeljene načrte služb in bogoslužne rede
+- [Prijava prostovoljcev](./volunteer-signup.md) -- Vodnik po korakih za brskanje in prijavo na mesta prostovoljcev
+- [Ogled načrtov](../plans/viewing-plans.md) -- Oglejte si svoje dodeljene načrte služb in bogoslužne rede

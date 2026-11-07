@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Wyjaśnia modułową architekturę API ChurchApps, sześć modułów danych, stos technologiczny, porty i funkcje Lambda, z linkami do dokumentacji dla deweloperów."
 ---
 
 # API
@@ -52,8 +53,8 @@ Po wdrożeniu w AWS API działa jako sześć funkcji Lambda:
 
 API korzysta z dwóch współdzielonych pakietów ChurchApps:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- podstawowe narzędzia (DateHelper, ApiHelper itp.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- narzędzia serwera Express, w tym uwierzytelnianie, pomocnicze funkcje bazy danych i integracje z AWS
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- podstawowe narzędzia (DateHelper, ApiHelper itp.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- narzędzia serwera Express, w tym uwierzytelnianie, pomocnicze funkcje bazy danych i integracje z AWS
 
 :::info
 API korzysta z modułów ES (`"type": "module"` w `package.json`). Upewnij się, że importy używają składni modułów ES.
@@ -61,11 +62,11 @@ API korzysta z modułów ES (`"type": "module"` w `package.json`). Upewnij się,
 
 ## W tej sekcji
 
-- **[Lokalna konfiguracja](./local-setup)** -- sklonuj, skonfiguruj i uruchom API lokalnie
-- **[Baza danych](./database)** -- architektura bazy na moduł, skrypty schematu i wzorce dostępu do danych
-- **[Struktura modułów](./module-structure)** -- kontrolery, repozytoria, modele i uwierzytelnianie
-- **[Klucze API](./api-keys)** -- osobiste tokeny dostępu do skryptów i konektorów
-- **[Połączone aplikacje (OAuth)](./connected-apps)** -- wielonajemcowy przepływ OAuth dla aplikacji zewnętrznych
-- **[Webhooki](./webhooks)** -- wysyłanie powiadomień o zdarzeniach do systemów zewnętrznych
-- **[Serwer MCP](./mcp)** -- punkt końcowy Model Context Protocol udostępniający API asystentom AI
-- **[Dokumentacja punktów końcowych](./endpoints/)** -- pełna dokumentacja REST API dla wszystkich modułów
+- **[Lokalna konfiguracja](./local-setup.md)** -- sklonuj, skonfiguruj i uruchom API lokalnie
+- **[Baza danych](./database.md)** -- architektura bazy na moduł, skrypty schematu i wzorce dostępu do danych
+- **[Struktura modułów](./module-structure.md)** -- kontrolery, repozytoria, modele i uwierzytelnianie
+- **[Klucze API](./api-keys.md)** -- osobiste tokeny dostępu do skryptów i konektorów
+- **[Połączone aplikacje (OAuth)](./connected-apps.md)** -- wielonajemcowy przepływ OAuth dla aplikacji zewnętrznych
+- **[Webhooki](./webhooks.md)** -- wysyłanie powiadomień o zdarzeniach do systemów zewnętrznych
+- **[Serwer MCP](./mcp.md)** -- punkt końcowy Model Context Protocol udostępniający API asystentom AI
+- **[Dokumentacja punktów końcowych](./endpoints/index.md)** -- pełna dokumentacja REST API dla wszystkich modułów

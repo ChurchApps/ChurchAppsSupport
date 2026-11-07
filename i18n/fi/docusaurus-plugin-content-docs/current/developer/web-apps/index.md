@@ -1,5 +1,6 @@
 ---
 title: "Verkkosovellukset"
+description: "Yleiskatsaus ChurchAppsin verkkosovelluksiin (B1 Admin, B1.church, Lessons.church), React- ja MUI-pinoon, apphelper-paketteihin ja työkaluihin."
 ---
 
 # Verkkosovellukset
@@ -41,7 +42,7 @@ Sovellukset jakavat käyttöliittymäkomponentit ja apuohjelmat `@churchapps/app
 | `@churchapps/apphelper-website` | Verkkosivu- ja CMS-komponentit |
 
 :::tip
-Näiden jaettujen pakettien paikalliseen kehittämiseen liittyvät tiedot löydät [AppHelper](../shared-libraries/app-helper)-dokumentaatiosta.
+Näiden jaettujen pakettien paikalliseen kehittämiseen liittyvät tiedot löydät [AppHelper](../shared-libraries/app-helper.md)-dokumentaatiosta.
 :::
 
 ## Postinstall-skripti

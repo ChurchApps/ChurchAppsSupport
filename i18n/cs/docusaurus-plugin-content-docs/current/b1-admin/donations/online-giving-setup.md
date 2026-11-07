@@ -1,5 +1,6 @@
 ---
 title: "Nastavení online darování"
+description: "Připojte Stripe, PayPal, Kingdom Funding nebo Paystack k B1 Admin, aby členové mohli darovat online přes web B1.church a dary se synchronizovaly."
 ---
 
 # Nastavení online darování

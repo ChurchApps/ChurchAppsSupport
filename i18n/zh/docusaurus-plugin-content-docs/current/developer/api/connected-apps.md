@@ -1,12 +1,13 @@
 ---
 title: "已连接应用与 OAuth"
+description: "通过 OAuth 2.0 授权将第三方应用连接到教会的 B1 数据，无需共享密码或 API 密钥，并可随时在 B1 Admin 设置中撤销访问权限。"
 ---
 
 # 已连接应用与 OAuth
 
 <div class="article-intro">
 
-B1 API 支持 OAuth 2.0，因此第三方应用可以向每位教会管理员请求访问其数据的许可——教会无需分享密码或 API 密钥。**已连接应用**是教会管理员已批准的 OAuth 令牌；撤销它只需单击一次即可切断第三方应用的访问权限。多租户 SaaS 连接器应使用此方式。对于单个教会的集成，建议优先使用 [API 密钥](./api-keys)。
+B1 API 支持 OAuth 2.0，因此第三方应用可以向每位教会管理员请求访问其数据的许可——教会无需分享密码或 API 密钥。**已连接应用**是教会管理员已批准的 OAuth 令牌；撤销它只需单击一次即可切断第三方应用的访问权限。多租户 SaaS 连接器应使用此方式。对于单个教会的集成，建议优先使用 [API 密钥](./api-keys.md)。
 
 </div>
 
@@ -27,7 +28,7 @@ B1 API 支持 OAuth 2.0，因此第三方应用可以向每位教会管理员请
 | **已连接应用** | 特定的 `(客户端, 教会管理员)` 组合，即管理员已授予该客户端访问权限。每个已连接应用都由一个 OAuth 刷新令牌支撑。 |
 | **访问令牌** | 客户端用于调用 API 的短期 JWT（约 7 天）。其结构与用户 JWT 相同——`Authorization: Bearer <jwt>`。 |
 | **刷新令牌** | 客户端用于获取新访问令牌的长期不透明字符串（约 90 天）。 |
-| **权限范围（Scope）** | 限制访问令牌的能力范围——参见[权限范围目录](./api-keys#scopes)。 |
+| **权限范围（Scope）** | 限制访问令牌的能力范围——参见[权限范围目录](./api-keys.md#scopes)。 |
 
 ## 授权流程
 
@@ -162,7 +163,7 @@ POST /membership/oauth/token
 
 ## 权限范围与同意
 
-权限范围字符串与 [API 密钥](./api-keys#scopes)的目录相同。客户端的最佳实践如下：
+权限范围字符串与 [API 密钥](./api-keys.md#scopes)的目录相同。客户端的最佳实践如下：
 
 - **请求满足需求的最小权限范围。** 如果您只需要读取人员信息，却请求 `donations:write`，教会会注意到这一点。
 - **使用刷新令牌加短期访问令牌。** 长期有效的访问令牌更难以快速撤销。
@@ -183,7 +184,7 @@ OAuth 客户端（即第三方应用本身）是全局注册的。带有 `client
 
 ### 动态客户端注册
 
-`POST /membership/oauth/register`（公开，RFC 7591）允许 claude.ai 的 MCP 连接器等客户端自行注册。该端点通过 API 的 `/.well-known/oauth-authorization-server` 文档进行公布——参见 [MCP 服务器 → OAuth 发现](./mcp#oauth-discovery)。
+`POST /membership/oauth/register`（公开，RFC 7591）允许 claude.ai 的 MCP 连接器等客户端自行注册。该端点通过 API 的 `/.well-known/oauth-authorization-server` 文档进行公布——参见 [MCP 服务器 → OAuth 发现](./mcp.md#oauth-discovery)。
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ Content-Type: application/json
 
 ## SDK 支持
 
-`@churchapps/integration-sdk` 包为每个 OAuth 流程提供了类型化的辅助方法——`B1OAuthClient.exchangeCode()`、`.refresh()`、`.startDeviceFlow()`、`.pollDeviceToken()`、`.awaitDeviceToken()`。端到端示例请参见该包的 README 以及 [Webhooks](./webhooks#sdk-support)。
+`@churchapps/integration-sdk` 包为每个 OAuth 流程提供了类型化的辅助方法——`B1OAuthClient.exchangeCode()`、`.refresh()`、`.startDeviceFlow()`、`.pollDeviceToken()`、`.awaitDeviceToken()`。端到端示例请参见该包的 README 以及 [Webhooks](./webhooks.md#sdk-support)。

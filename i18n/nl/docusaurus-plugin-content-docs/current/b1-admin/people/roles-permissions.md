@@ -1,5 +1,6 @@
 ---
 title: "Rollen toewijzen"
+description: "Wijs in B1 Admin rollen toe, zodat medewerkers en vrijwilligers alleen toegang krijgen tot personen, giften, aanwezigheid en groepen die ze nodig hebben."
 ---
 
 # Rollen toewijzen

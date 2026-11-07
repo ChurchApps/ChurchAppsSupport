@@ -1,5 +1,6 @@
 ---
 title: "Obiskovanost"
+description: "Pregledujte tedensko prisotnost, sobe in goste v B1 Admin, nato na strani Prisotnost nastavite kampuse, čase bogoslužij in prijavo na kiosku."
 ---
 
 # Obiskovanost

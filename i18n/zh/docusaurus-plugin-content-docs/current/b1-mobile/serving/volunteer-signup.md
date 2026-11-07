@@ -1,5 +1,7 @@
 ---
-title: "志愿者报名"
+title: "B1 Mobile 应用中的志愿者报名"
+sidebar_label: "志愿者报名"
+description: "在 B1 Mobile 应用中查找即将举行礼拜的开放志愿者岗位，报名或取消报名，并了解报名截止日期和名额限制的规则。"
 ---
 
 # 志愿者报名
@@ -13,7 +15,7 @@ title: "志愿者报名"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing)，并[登录](../getting-started/logging-in)您的账户
+- [安装 B1 Mobile](../getting-started/installing.md)，并[登录](../getting-started/logging-in.md)您的账户
 - 教会管理员必须至少为一个职位开启自主报名
 
 </div>
@@ -60,5 +62,5 @@ title: "志愿者报名"
 
 ## 相关文章
 
-- [查看计划](./viewing-plans) -- 查看您被分配的计划和礼拜程序
+- [查看计划](./viewing-plans.md) -- 查看您被分配的计划和礼拜程序
 - [通知](../community/notifications.md) -- 随时了解服事安排的最新动态

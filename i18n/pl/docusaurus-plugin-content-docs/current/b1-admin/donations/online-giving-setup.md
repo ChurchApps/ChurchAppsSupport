@@ -1,5 +1,6 @@
 ---
 title: "Konfiguracja darowizn online"
+description: "Połącz Stripe, PayPal, Kingdom Funding lub Paystack z B1 Admin, aby członkowie dawali online na stronie B1.church, a wpłaty trafiały do rekordów."
 ---
 
 # Konfiguracja darowizn online

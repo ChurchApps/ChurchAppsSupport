@@ -1,5 +1,7 @@
 ---
-title: "Predigten"
+title: "Predigten in B1 Mobile ansehen"
+sidebar_label: "Predigten"
+description: "Durchsuchen, suchen und sehen Sie aufgezeichnete Predigten und Reihen in der B1 Mobile App, inklusive Countdown zu einem Livestream."
 ---
 
 # Predigten
@@ -13,7 +15,7 @@ Der Bereich Predigten ermöglicht es dir, aufgezeichnete Predigten aus deiner Ge
 <div class="prereqs">
 <h4>Bevor du beginnst</h4>
 
-- [Installiere B1 Mobile](../getting-started/installing) und [melde dich](../getting-started/logging-in) bei deinem Konto an
+- [Installiere B1 Mobile](../getting-started/installing.md) und [melde dich](../getting-started/logging-in.md) bei deinem Konto an
 - Deine Gemeinde muss Predigtinhalte in ihrem Admin-Portal eingerichtet haben
 
 </div>
@@ -29,7 +31,7 @@ Oben im Bereich wird die neueste Predigt als hervorgehobene Karte angezeigt, sod
 
 ## Countdown zum Live-Stream
 
-Wenn in den nächsten 24 Stunden ein [Live-Stream](./live-streaming) beginnt, erscheint im Bereich Predigten ein Countdown-Timer. So weißt du, wann der nächste Gottesdienst übertragen wird, und kannst planen, live dabei zu sein.
+Wenn in den nächsten 24 Stunden ein [Live-Stream](./live-streaming.md) beginnt, erscheint im Bereich Predigten ein Countdown-Timer. So weißt du, wann der nächste Gottesdienst übertragen wird, und kannst planen, live dabei zu sein.
 
 ## Eine Predigt ansehen
 
@@ -51,7 +53,7 @@ Jeder Predigteintrag kann Folgendes anzeigen:
 - **Vorschaubild** -- Ein Vorschaubild für die Predigt
 
 :::tip
-Wenn du einen Countdown im Bereich Predigten siehst, tippe darauf, um direkt zum [Live-Stream](./live-streaming) zu gelangen, sobald er beginnt.
+Wenn du einen Countdown im Bereich Predigten siehst, tippe darauf, um direkt zum [Live-Stream](./live-streaming.md) zu gelangen, sobald er beginnt.
 :::
 
 ## Verfügbarkeit

@@ -1,5 +1,6 @@
 ---
 title: "Ogled lekcij"
+description: "Vodič za odpiranje ure v Lessons.church: branje sklopov in dejanj po vlogah, iskanje prenosov ter preklapljanje med prostori za starostne skupine pred uro."
 ---
 
 # Ogled lekcij

@@ -10,7 +10,7 @@ Eigene Domains der Gemeinden (`mychurch.org` → die B1-Website der Gemeinde) en
 
 </div>
 
-Für die Frage, wie eine Anfrage nach dem Erreichen von B1App einer Gemeinde bzw. Website zugeordnet wird, siehe [Website-Routing und Multi-Site](../architecture/websites).
+Für die Frage, wie eine Anfrage nach dem Erreichen von B1App einer Gemeinde bzw. Website zugeordnet wird, siehe [Website-Routing und Multi-Site](../architecture/websites.md).
 
 ## Komponenten
 
@@ -88,5 +88,5 @@ Die Admin-API bindet nur an `localhost:2019`. Der ältere Laufzeitmodus machte s
 
 ## Verwandte Seiten
 
-- [Website-Routing und Multi-Site](../architecture/websites) — wie die weitergeleitete Anfrage in B1App einer Gemeinde bzw. Website zugeordnet wird
-- [API-Bereitstellung](./apis) — Bereitstellung der Membership-API, die `authorize`/`hostmap` liefert
+- [Website-Routing und Multi-Site](../architecture/websites.md) — wie die weitergeleitete Anfrage in B1App einer Gemeinde bzw. Website zugeordnet wird
+- [API-Bereitstellung](./apis.md) — Bereitstellung der Membership-API, die `authorize`/`hostmap` liefert

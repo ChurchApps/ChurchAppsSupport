@@ -1,5 +1,6 @@
 ---
 title: "알림 설정"
+description: "B1 Admin과 B1 앱의 한 화면에서 알림 유형별로 알림 채널, 이메일 빈도, 방해 금지 시간, 문자 수신 거부를 설정하세요."
 ---
 
 # 알림 설정
@@ -60,6 +61,6 @@ title: "알림 설정"
 
 ## 관련 문서
 
-- [봉사자 신청](../serving/volunteer-signup) -- 봉사 알림과 일정 요청에 응답하기
-- [이벤트 등록하기](../events/registering) -- 알림을 보내는 이벤트에 등록하기
-- [앱 설치하기](installing-pwa) -- 푸시 알림을 받을 수 있도록 B1을 기기에 추가하기
+- [봉사자 신청](../serving/volunteer-signup.md) -- 봉사 알림과 일정 요청에 응답하기
+- [이벤트 등록하기](../events/registering.md) -- 알림을 보내는 이벤트에 등록하기
+- [앱 설치하기](./installing-pwa.md) -- 푸시 알림을 받을 수 있도록 B1을 기기에 추가하기

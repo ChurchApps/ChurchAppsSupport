@@ -1,5 +1,6 @@
 ---
 title: "Check-In"
+description: "Cara kerja check-in di B1Checkin, B1App, dan B1 Admin: model data kehadiran, grup sebagai ruangan, batas kapasitas, dan aturan keamanan penjemputan."
 ---
 
 # Check-In
@@ -216,7 +217,7 @@ Pendaftaran QR digerakkan oleh pengaturan gereja yang disimpan dari kartu **QR G
 
 ## Halaman terkait
 
-- [Endpoint Attendance](../api/endpoints/attendance) -- REST API lengkap untuk kampus, layanan, sesi, kunjungan, dan visit session
-- [Endpoint Membership](../api/endpoints/membership) -- Orang, rumah tangga, dan grup
-- [Webhook](../api/webhooks) -- Event `session.created`, `attendance.recorded`, dan `attendance.checkout`
-- [Struktur Modul](../api/module-structure) -- Cara modul attendance diorganisasi di sisi server
+- [Endpoint Attendance](../api/endpoints/attendance.md) -- REST API lengkap untuk kampus, layanan, sesi, kunjungan, dan visit session
+- [Endpoint Membership](../api/endpoints/membership.md) -- Orang, rumah tangga, dan grup
+- [Webhook](../api/webhooks.md) -- Event `session.created`, `attendance.recorded`, dan `attendance.checkout`
+- [Struktur Modul](../api/module-structure.md) -- Cara modul attendance diorganisasi di sisi server

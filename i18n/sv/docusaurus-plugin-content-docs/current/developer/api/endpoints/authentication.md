@@ -1,5 +1,6 @@
 ---
 title: "Autentisering och behörigheter"
+description: "Referens för ChurchApps API:ets JWT-inloggning, tvåfaktorsinloggning, OAuth 2.0-flöden och behörighetsmodell för utvecklare som bygger integrationer."
 ---
 
 # Autentisering och behörigheter
@@ -244,7 +245,7 @@ För enheter utan webbläsare (TV-appar, kiosker):
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Hämta klient med klient-ID (hemligheten dold) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Skapa eller uppdatera en klient |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Ta bort en klient |
-| POST | `/membership/oauth/register` | Public | — | Dynamisk klientregistrering (RFC 7591) för publika klienter, till exempel MCP-kopplingar. Se [Anslutna appar](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Public | — | Dynamisk klientregistrering (RFC 7591) för publika klienter, till exempel MCP-kopplingar. Se [Anslutna appar](../connected-apps.md#dynamic-client-registration) |
 
 ### Endpoints för godkännande av enheter
 
@@ -265,5 +266,5 @@ I endpoint-tabellerna i den här dokumentationen anges dessa som **JWT** respekt
 
 ## Relaterade sidor
 
-- [Modulstruktur](../module-structure) — Hur controllers, repositories och modeller är organiserade
-- [Lokal installation](../local-setup) — Köra API:et lokalt för utveckling
+- [Modulstruktur](../module-structure.md) — Hur controllers, repositories och modeller är organiserade
+- [Lokal installation](../local-setup.md) — Köra API:et lokalt för utveckling

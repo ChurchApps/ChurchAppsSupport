@@ -1,5 +1,6 @@
 ---
 title: "Guide: Ställ in onlinegivande"
+description: "Ställ in onlinegivande i B1 Admin genom att skapa gåvofonder, koppla Stripe och lägga till en sida för gåvor på din B1.church-webbplats för medlemmarna."
 ---
 
 # Ställ in onlinegivande
@@ -70,7 +71,7 @@ Använd Stripes testläge först om du vill kontrollera utan riktiga betalningar
 Sprid budskapet så att medlemmarna vet att de kan ge online.
 
 1. Dela givar-URL:en via din webbplats, e-postnyhetsbrev, programblad och sociala medier
-2. Medlemmar kan också ge via [B1 Mobile-appen](../../b1-mobile/giving/). Funktionen för givande finns redan inbyggd.
+2. Medlemmar kan också ge via [B1 Mobile-appen](../../b1-mobile/giving/index.md). Funktionen för givande finns redan inbyggd.
 
 :::info
 Medlemmar som loggar in kan spara betalningsmetoder, ställa in återkommande donationer och se sin givarhistorik. Anonymt givande fungerar också, utan att man behöver logga in.

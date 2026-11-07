@@ -1,5 +1,6 @@
 ---
 title: "API raktai"
+description: "Kurkite, ribokite ir panaikinkite B1 API raktus B1 Admin serverio skriptams bei Zapier, Make ar Google Sheets jungtims be pilno OAuth srauto."
 ---
 
 # API raktai
@@ -104,7 +105,7 @@ Panaikintas raktas iškart nebegalioja – jokio papildomo laikotarpio nėra.
 
 ## Kuo skiriasi nuo OAuth
 
-API raktai tinka, kai **jūsų bažnyčia yra vienintelė, naudojanti integraciją**. Jungčiai, kuriai reikia prieigos prie daugelio bažnyčių, kiekvienai aiškiai sutikus – pavyzdžiui, SaaS programai, bendrinamai B1 bendruomenėje – vietoj to naudokite [OAuth ir prijungtos programos](./connected-apps).
+API raktai tinka, kai **jūsų bažnyčia yra vienintelė, naudojanti integraciją**. Jungčiai, kuriai reikia prieigos prie daugelio bažnyčių, kiekvienai aiškiai sutikus – pavyzdžiui, SaaS programai, bendrinamai B1 bendruomenėje – vietoj to naudokite [OAuth ir prijungtos programos](./connected-apps.md).
 
 | | API raktas | OAuth |
 |---|---|---|

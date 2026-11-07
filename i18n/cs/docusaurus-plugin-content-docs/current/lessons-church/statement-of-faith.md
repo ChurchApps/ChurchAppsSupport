@@ -1,5 +1,6 @@
 ---
 title: Vyznání víry
+description: "Co ChurchApps věří o Bohu, Ježíši, Duchu svatém, Písmu, spáse a církvi: měřítko, podle kterého se posuzuje kurikulum Lessons.church."
 ---
 
 # Vyznání víry

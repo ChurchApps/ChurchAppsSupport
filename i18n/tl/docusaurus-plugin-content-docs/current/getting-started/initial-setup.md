@@ -1,5 +1,7 @@
 ---
-title: "Paunang Pag-set Up"
+title: "Paunang Setup ng Simbahan sa B1 Admin"
+sidebar_label: "Paunang Pag-set Up"
+description: "Gabay sa unang configuration ng simbahan sa B1 Admin: impormasyon, branding, roles, at inirerekomendang ayos ng tao, grupo, attendance, at giving."
 ---
 
 # Paunang Pag-set Up

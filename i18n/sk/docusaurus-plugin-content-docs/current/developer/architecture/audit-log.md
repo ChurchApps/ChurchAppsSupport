@@ -1,5 +1,6 @@
 ---
 title: "Denník auditu a dávky s možnosťou vrátenia"
+description: "Popisuje denník auditu API, ktorý zaznamenáva každú zmenu používateľa naprieč modulmi, a ako je možné importné dávky vrátiť späť riadok po riadku v B1 Admin."
 ---
 
 # Denník auditu a dávky s možnosťou vrátenia
@@ -155,6 +156,6 @@ Obe administrátorské rozhrania sú **vo vývoji**; zámer je tento:
 
 ## Súvisiace stránky
 
-- [Štruktúra modulov](../api/module-structure) – ako sa kontrolér mimo modulu členstva dostane k repozitárom členstva cez `RepoManager`
-- [Dary](./giving) – zápisy darov, ktoré sú auditované ako `sensitive` aj v anonymnom režime
-- [Koncové body členstva](../api/endpoints/membership) – REST rozhranie, ktoré prenáša `X-Batch-Id` a sprístupňuje `/auditlogs` a `/batches`
+- [Štruktúra modulov](../api/module-structure.md) – ako sa kontrolér mimo modulu členstva dostane k repozitárom členstva cez `RepoManager`
+- [Dary](./giving.md) – zápisy darov, ktoré sú auditované ako `sensitive` aj v anonymnom režime
+- [Koncové body členstva](../api/endpoints/membership.md) – REST rozhranie, ktoré prenáša `X-Batch-Id` a sprístupňuje `/auditlogs` a `/batches`

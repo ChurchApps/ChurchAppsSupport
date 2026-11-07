@@ -1,5 +1,6 @@
 ---
 title: "Calendário do Grupo"
+description: "Planeje reuniões e eventos recorrentes no calendário do grupo no B1 Admin e B1.church, com agendamento em lote, confirmações e assinaturas de calendário."
 ---
 
 # Calendário do Grupo

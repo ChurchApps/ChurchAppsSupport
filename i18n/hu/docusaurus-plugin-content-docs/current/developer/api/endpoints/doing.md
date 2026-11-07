@@ -1,5 +1,6 @@
 ---
 title: "Doing végpontok"
+description: "Végpontreferencia a Doing API-hoz, amely a szolgálati terveket, önkéntes kiosztásokat, feladatokat és automatizálásokat kezeli a B1 Adminban, elérési utakkal, hitelesítéssel és jogosultságokkal."
 ---
 
 # Doing végpontok
@@ -278,6 +279,6 @@ Kéréseket továbbít külső tartalomszolgáltatóknak (például ProPresenter
 
 ## Kapcsolódó oldalak
 
-- [Tagsági végpontok](./membership) — Személyek, csoportok, szerepkörök és jogosultságok
-- [Részvételi végpontok](./attendance) — Istentiszteletek és látogatások nyilvántartása
-- [Modulszerkezet](../module-structure) — Kódszervezési minták
+- [Tagsági végpontok](./membership.md) — Személyek, csoportok, szerepkörök és jogosultságok
+- [Részvételi végpontok](./attendance.md) — Istentiszteletek és látogatások nyilvántartása
+- [Modulszerkezet](../module-structure.md) — Kódszervezési minták

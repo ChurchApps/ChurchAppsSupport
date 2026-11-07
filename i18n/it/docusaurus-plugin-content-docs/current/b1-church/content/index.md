@@ -1,5 +1,7 @@
 ---
-title: "Contenuti"
+title: "Funzionalità dei contenuti nel portale membri B1.church"
+sidebar_label: "Contenuti"
+description: "Vedi quali contenuti la tua chiesa attiva nel portale membri B1.church, poi sfoglia sermoni, dirette, lettura biblica e lezioni."
 ---
 
 # Contenuti

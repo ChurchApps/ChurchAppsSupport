@@ -1,5 +1,6 @@
 ---
 title: "Presenze"
+description: "Consulta in B1 Admin presenze settimanali, sale e ospiti, poi configura sedi, orari dei culti, conteggi e check-in kiosk dalla pagina Presenze."
 ---
 
 # Presenze

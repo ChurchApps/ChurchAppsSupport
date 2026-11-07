@@ -1,5 +1,6 @@
 ---
 title: "Einrichtung der Online-Spenden"
+description: "Verbinden Sie Stripe, PayPal, Kingdom Funding oder Paystack mit B1 Admin, damit Mitglieder über Ihre B1.church-Website online spenden können und Gaben mit Ihren Daten synchronisiert werden."
 ---
 
 # Einrichtung der Online-Spenden

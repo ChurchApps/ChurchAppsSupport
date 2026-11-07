@@ -1,12 +1,13 @@
 ---
 title: "Verbundene Apps & OAuth"
+description: "Drittanbieter-Apps per OAuth 2.0 mit B1-Daten einer Gemeinde verbinden, ohne geteilte Passwörter oder Schlüssel. Zugriff jederzeit in B1 Admin widerrufen."
 ---
 
 # Verbundene Apps & OAuth
 
 <div class="article-intro">
 
-Die B1-API unterstützt OAuth 2.0, sodass eine Drittanwendung von jedem Gemeindeadministrator die Erlaubnis einholen kann, auf dessen Daten zuzugreifen – ohne dass die Gemeinde jemals ein Passwort oder einen API-Schlüssel weitergibt. Eine **verbundene App** ist ein OAuth-Token, das ein Gemeindeadministrator genehmigt hat; wird es widerrufen, wird der Zugriff der Drittanwendung mit einem Klick beendet. Diesen Weg nutzen Sie für mandantenfähige SaaS-Connectors. Für eine Integration mit nur einer Gemeinde ist [API-Schlüssel](./api-keys) vorzuziehen.
+Die B1-API unterstützt OAuth 2.0, sodass eine Drittanwendung von jedem Gemeindeadministrator die Erlaubnis einholen kann, auf dessen Daten zuzugreifen – ohne dass die Gemeinde jemals ein Passwort oder einen API-Schlüssel weitergibt. Eine **verbundene App** ist ein OAuth-Token, das ein Gemeindeadministrator genehmigt hat; wird es widerrufen, wird der Zugriff der Drittanwendung mit einem Klick beendet. Diesen Weg nutzen Sie für mandantenfähige SaaS-Connectors. Für eine Integration mit nur einer Gemeinde ist [API-Schlüssel](./api-keys.md) vorzuziehen.
 
 </div>
 
@@ -27,7 +28,7 @@ Die B1-API unterstützt OAuth 2.0, sodass eine Drittanwendung von jedem Gemeinde
 | **Verbundene App** | Ein bestimmtes Paar aus `(Client, Gemeindeadministrator)`, bei dem der Administrator dem Client Zugriff gewährt hat. Jede verbundene App wird durch ein OAuth-Refresh-Token gestützt. |
 | **Zugriffstoken** | Ein kurzlebiges JWT (ca. 7 Tage), das der Client für API-Aufrufe verwendet. Gleiche Form wie ein Benutzer-JWT – `Authorization: Bearer <jwt>`. |
 | **Refresh-Token** | Eine langlebige undurchsichtige Zeichenkette (ca. 90 Tage), mit der der Client neue Zugriffstoken erzeugt. |
-| **Bereich (Scope)** | Schränkt ein, was das Zugriffstoken tun kann – siehe den [Bereichskatalog](./api-keys#scopes). |
+| **Bereich (Scope)** | Schränkt ein, was das Zugriffstoken tun kann – siehe den [Bereichskatalog](./api-keys.md#scopes). |
 
 ## Autorisierungsabläufe
 
@@ -162,7 +163,7 @@ Die Liste schließt abgelaufene Token automatisch aus.
 
 ## Bereiche und Zustimmung
 
-Die Bereichszeichenfolgen entsprechen demselben Katalog wie bei [API-Schlüsseln](./api-keys#scopes). Bewährte Vorgehensweisen für Clients:
+Die Bereichszeichenfolgen entsprechen demselben Katalog wie bei [API-Schlüsseln](./api-keys.md#scopes). Bewährte Vorgehensweisen für Clients:
 
 - **Fordern Sie möglichst eingeschränkte Bereiche an.** Gemeinden fallen auf, wenn Sie `donations:write` anfordern, obwohl Sie nur Personen lesen müssen.
 - **Verwenden Sie ein Refresh-Token zusammen mit kurzlebigen Zugriffstoken.** Langlebige Zugriffstoken lassen sich schwerer schnell widerrufen.
@@ -183,7 +184,7 @@ Registrierte Redirect-URIs müssen mit dem `redirect_uri` der Anfrage exakt übe
 
 ### Dynamische Client-Registrierung
 
-`POST /membership/oauth/register` (öffentlich, RFC 7591) erlaubt es einem Client wie dem MCP-Connector von claude.ai, sich selbst zu registrieren. Er wird im Dokument `/.well-known/oauth-authorization-server` der API angekündigt – siehe [MCP-Server → OAuth-Erkennung](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (öffentlich, RFC 7591) erlaubt es einem Client wie dem MCP-Connector von claude.ai, sich selbst zu registrieren. Er wird im Dokument `/.well-known/oauth-authorization-server` der API angekündigt – siehe [MCP-Server → OAuth-Erkennung](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ Auf der Zustimmungsseite von B1Admin erhält ein selbst registrierter Client ein
 
 ## SDK-Unterstützung
 
-Das Paket `@churchapps/integration-sdk` umhüllt jeden OAuth-Ablauf mit typisierten Hilfsfunktionen – `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Siehe das README des Pakets und [Webhooks](./webhooks#sdk-support) für ein durchgängiges Beispiel.
+Das Paket `@churchapps/integration-sdk` umhüllt jeden OAuth-Ablauf mit typisierten Hilfsfunktionen – `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Siehe das README des Pakets und [Webhooks](./webhooks.md#sdk-support) für ein durchgängiges Beispiel.

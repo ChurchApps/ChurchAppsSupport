@@ -1,5 +1,6 @@
 ---
 title: "Klasserom"
+description: "Sett opp og administrer klasserommene som organiserer kirkens undervisningsplan i Lessons.church, fra rom og aldersgrupper til visninger for frivillige."
 ---
 
 # Klasserom

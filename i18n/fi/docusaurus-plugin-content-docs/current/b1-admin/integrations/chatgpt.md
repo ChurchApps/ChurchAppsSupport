@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "Yhdistä ChatGPT seurakuntasi B1-tietoihin API-avaimella, jotta voit esittää selkokielisiä kysymyksiä ihmisistä, lahjoituksista ja läsnäolosta B1 Adminissa."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Yhdistä ChatGPT seurakuntasi B1-tietoihin ja kysy siltä asioita tavallisella k
 </div>
 
 :::tip Suositus: kokeile ensin Claudea, se on ilmainen
-[Claude](./claude) yhdistyy B1:een **ilmaisella tilauksella**, ja käyttöönotto kestää alle 3 minuuttia. Lisää B1 yhdistimeksi ja kirjaudu B1-tililläsi. Avainta ei tarvita. Se on helpoin tapa, jolla seurakuntasi voi kokeilla tekoälyä B1:n kanssa ennen maksamista.
+[Claude](./claude.md) yhdistyy B1:een **ilmaisella tilauksella**, ja käyttöönotto kestää alle 3 minuuttia. Lisää B1 yhdistimeksi ja kirjaudu B1-tililläsi. Avainta ei tarvita. Se on helpoin tapa, jolla seurakuntasi voi kokeilla tekoälyä B1:n kanssa ennen maksamista.
 :::
 
 ## Asennus
@@ -254,5 +255,5 @@ Kuka tahansa linkin omistava voi esittää kysymyksiä luonnollisella kielellä.
 
 - [API-avaimet](/docs/developer/api/api-keys): kaikkien oikeuksien luettelo
 - [MCP Server (kehittäjäohje)](/docs/developer/api/mcp): protokollan tiedot ja työkalujen skeemat
-- [Claude](./claude): sama idea Anthropicin malleille
+- [Claude](./claude.md): sama idea Anthropicin malleille
 - [REST API -viiteohje](/docs/developer/api/endpoints): kaikki päätepisteet, joita mukautettu GPT-toiminto voi kutsua

@@ -1,5 +1,6 @@
 ---
 title: "Meldingsendepunkter"
+description: "Referanse for ChurchApps meldings-API-endepunkter: samtaler, tilgangsregler for notater, tekstmeldinger, e-postmaler, varsler og enheter."
 ---
 
 # Meldingsendepunkter
@@ -190,7 +191,7 @@ Basissti: `/messaging/notificationpreferences`
 
 Basissti: `/messaging/connections`
 
-Håndterer WebSocket-/sanntidstilkoblinger for chat, gruppesamtaler, private meldinger og direktestrømming. Se [Sanntidsarkitektur](../../realtime) for hele protokollen.
+Håndterer WebSocket-/sanntidstilkoblinger for chat, gruppesamtaler, private meldinger og direktestrømming. Se [Sanntidsarkitektur](../../realtime.md) for hele protokollen.
 
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|-----|---------------|------------|-------------|
@@ -367,9 +368,9 @@ Sporer leveringsstatus for sendte meldinger (SMS, push-varsler, e-post).
 
 ## Relaterte sider
 
-- [Sanntidsarkitektur](../../realtime) -- WebSocket-protokoll, rombetaling og det samlede leveringsrammeverket
-- [Web-push-varsler](../../web-push) -- Registrering og levering av push i nettleser
-- [Medlemskapsendepunkter](./membership) -- Personer, grupper, roller og kjernens identitet
-- [Endepunkter for oppmøte](./attendance) -- Sporing av gudstjenester og besøk
-- [Autentisering og tillatelser](./authentication) -- Innloggingsflyt, JWT, OAuth, tillatelsesmodell
-- [Modulstruktur](../module-structure) -- Mønstre for kodeorganisering
+- [Sanntidsarkitektur](../../realtime.md) -- WebSocket-protokoll, rombetaling og det samlede leveringsrammeverket
+- [Web-push-varsler](../../web-push.md) -- Registrering og levering av push i nettleser
+- [Medlemskapsendepunkter](./membership.md) -- Personer, grupper, roller og kjernens identitet
+- [Endepunkter for oppmøte](./attendance.md) -- Sporing av gudstjenester og besøk
+- [Autentisering og tillatelser](./authentication.md) -- Innloggingsflyt, JWT, OAuth, tillatelsesmodell
+- [Modulstruktur](../module-structure.md) -- Mønstre for kodeorganisering

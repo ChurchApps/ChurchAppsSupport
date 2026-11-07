@@ -1,5 +1,6 @@
 ---
 title: "Anwesenheitsberichte"
+description: "Die drei Anwesenheitsberichte in B1 Admin (Anwesenheitstrend, Gruppenanwesenheit, tägliche Gruppenanwesenheit) mit Anleitung zum Ausführen und Exportieren."
 ---
 
 # Anwesenheitsberichte

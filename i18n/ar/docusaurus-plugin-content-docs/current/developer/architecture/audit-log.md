@@ -1,5 +1,6 @@
 ---
 title: "سجل التدقيق والدفعات القابلة للتراجع"
+description: "يغطي سجل التدقيق في واجهة API الذي يسجّل كل تغيير يجريه المستخدمون عبر الوحدات، وكيفية التراجع عن دفعات الاستيراد صفاً صفاً في B1 Admin."
 ---
 
 # سجل التدقيق والدفعات القابلة للتراجع
@@ -155,6 +156,6 @@ BaseController.actionWrapper ──▶ derive {module, entityType, category, act
 
 ## صفحات ذات صلة
 
-- [هيكل الوحدات](../api/module-structure): كيف تصل وحدة تحكم ليست تابعة للعضوية إلى مستودعات العضوية عبر `RepoManager`
-- [التبرعات](./giving): مسارات كتابة التبرعات التي تُدقَّق كـ `sensitive` حتى عندما تكون مجهولة
-- [نقاط نهاية العضوية](../api/endpoints/membership): واجهة REST التي تحمل `X-Batch-Id` وتكشف `/auditlogs` و`/batches`
+- [هيكل الوحدات](../api/module-structure.md): كيف تصل وحدة تحكم ليست تابعة للعضوية إلى مستودعات العضوية عبر `RepoManager`
+- [التبرعات](./giving.md): مسارات كتابة التبرعات التي تُدقَّق كـ `sensitive` حتى عندما تكون مجهولة
+- [نقاط نهاية العضوية](../api/endpoints/membership.md): واجهة REST التي تحمل `X-Batch-Id` وتكشف `/auditlogs` و`/batches`

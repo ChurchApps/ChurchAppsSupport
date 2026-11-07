@@ -1,5 +1,6 @@
 ---
 title: "Sanggunian ng Endpoint"
+description: "Hanapin ang bawat ChurchApps API endpoint ayon sa module, tingnan ang HTTP method, path, auth, at permission, at alamin ang batch-save at error convention."
 ---
 
 # Sanggunian ng Endpoint
@@ -89,10 +90,10 @@ Ang mga parameter ng ulat ay ipinasa bilang mga halaga ng query string (hal. `?s
 
 | Module | Base Path | Paglalarawan |
 |--------|-----------|-------------|
-| [Authentication](./authentication) | `/membership/users`, `/membership/oauth` | Pag-login, pagpaparehistro, mga JWT token, OAuth, mga pahintulot |
-| [Membership](./membership) | `/membership/*` | Mga tao, simbahan, grupo, sambahayan, tungkulin, form, setting |
-| [Attendance](./attendance) | `/attendance/*` | Mga campus, serbisyo, sesyon, pagbisita, mga talaan ng check-in |
-| [Content](./content) | `/content/*` | Mga pahina, sermon, event, file, gallery, Bibliya, streaming |
-| [Giving](./giving) | `/giving/*` | Mga donasyon, pondo, payment gateway, subscription |
-| [Messaging](./messaging) | `/messaging/*` | Mga pag-uusap, abiso, device, SMS |
-| [Doing](./doing) | `/doing/*` | Mga plano, gawain, takdang-aralin, automation, pag-iiskedyul |
+| [Authentication](./authentication.md) | `/membership/users`, `/membership/oauth` | Pag-login, pagpaparehistro, mga JWT token, OAuth, mga pahintulot |
+| [Membership](./membership.md) | `/membership/*` | Mga tao, simbahan, grupo, sambahayan, tungkulin, form, setting |
+| [Attendance](./attendance.md) | `/attendance/*` | Mga campus, serbisyo, sesyon, pagbisita, mga talaan ng check-in |
+| [Content](./content.md) | `/content/*` | Mga pahina, sermon, event, file, gallery, Bibliya, streaming |
+| [Giving](./giving.md) | `/giving/*` | Mga donasyon, pondo, payment gateway, subscription |
+| [Messaging](./messaging.md) | `/messaging/*` | Mga pag-uusap, abiso, device, SMS |
+| [Doing](./doing.md) | `/doing/*` | Mga plano, gawain, takdang-aralin, automation, pag-iiskedyul |

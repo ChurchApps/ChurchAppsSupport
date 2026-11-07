@@ -1,5 +1,6 @@
 ---
 title: "Custom Domain"
+description: "Chumba idomeyini yakho, njenge-www.yourchurch.org, ku-webhusayithi yakho ye-B1 ku-B1 Admin ngekusetela ema-DNS records nekungeta idomeyini kuTilungiselelo."
 ---
 
 # Custom Domain

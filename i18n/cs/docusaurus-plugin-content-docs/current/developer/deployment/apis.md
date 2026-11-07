@@ -1,5 +1,6 @@
 ---
 title: "Nasazení API"
+description: "Nasazení API ChurchApps na AWS Lambda pomocí Serverless: sestavení, workflow demo a produkce, migrace databáze a konfigurace SSM."
 ---
 
 # Nasazení API
@@ -13,7 +14,7 @@ ChurchApps API se nasazují jako funkce AWS Lambda pomocí Serverless Frameworku
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Nastavte API lokálně – viz [Lokální nastavení API](../api/local-setup)
+- Nastavte API lokálně – viz [Lokální nastavení API](../api/local-setup.md)
 - Nakonfigurujte přihlašovací údaje AWS na svém počítači
 - Ujistěte se, že máte přístup k cílovému účtu AWS
 
@@ -47,7 +48,7 @@ V praxi API nasazuje GitHub Actions: **Deploy Demo** se spouští při každém 
 
 ## Migrace databáze
 
-**Deploy Prod** aplikuje čekající migrace databáze jako součást nasazení. Produkční databáze přijímají připojení pouze zevnitř VPC, takže ihned po `serverless deploy` workflow zavolá funkci Lambda `migrate` (`api-Prod-migrate`). Ta spustí čekající migrace všech modulů a vrátí `{ ok, environment, modules }`. Pokud některý modul selže nebo je odmítnut (například databáze bez historie migrací), úloha selže, aby schéma nikdy nezůstalo pozadu za kódem. **Rollback Prod** vrací zpět pouze kód funkcí Lambda; migrace zůstávají aplikované, proto je udržujte aditivní. Informace o kontrole stavu nebo ručním spuštění migrací najdete v článku [Správa serveru -- Migrace databáze](../server-admin#database-migrations).
+**Deploy Prod** aplikuje čekající migrace databáze jako součást nasazení. Produkční databáze přijímají připojení pouze zevnitř VPC, takže ihned po `serverless deploy` workflow zavolá funkci Lambda `migrate` (`api-Prod-migrate`). Ta spustí čekající migrace všech modulů a vrátí `{ ok, environment, modules }`. Pokud některý modul selže nebo je odmítnut (například databáze bez historie migrací), úloha selže, aby schéma nikdy nezůstalo pozadu za kódem. **Rollback Prod** vrací zpět pouze kód funkcí Lambda; migrace zůstávají aplikované, proto je udržujte aditivní. Informace o kontrole stavu nebo ručním spuštění migrací najdete v článku [Správa serveru -- Migrace databáze](../server-admin.md#database-migrations).
 
 ## Co se vytvoří
 
@@ -75,6 +76,6 @@ Každé sloučení do `main` nejprve nasadí změny do demo prostředí. Před s
 
 ## Související články
 
-- **[Lokální nastavení API](../api/local-setup)** -- Nastavení API pro vývoj
-- **[Struktura modulů](../api/module-structure)** -- Pochopení architektury funkcí Lambda
-- **[Nasazení webových aplikací](./web-apps)** -- Nasazení frontendových aplikací
+- **[Lokální nastavení API](../api/local-setup.md)** -- Nastavení API pro vývoj
+- **[Struktura modulů](../api/module-structure.md)** -- Pochopení architektury funkcí Lambda
+- **[Nasazení webových aplikací](./web-apps.md)** -- Nasazení frontendových aplikací

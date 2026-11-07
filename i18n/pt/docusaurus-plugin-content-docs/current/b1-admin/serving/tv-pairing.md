@@ -1,5 +1,6 @@
 ---
 title: "Conectando FreePlay ao B1 Admin"
+description: "Conecte uma TV de sala de aula com FreePlay às suas lições agendadas no B1 Admin para que os professores as exibam na tela durante a aula."
 ---
 
 # Conectando uma TV de Sala de Aula aos Seus Aulas B1 Admin

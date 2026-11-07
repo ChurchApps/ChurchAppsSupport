@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Incwadzi yesisetfo ye-@churchapps/apihelper esetjentiswa yi-API ye-Express yeChurchApps kuPackages workspace: kwakhiwa endzaweni, kuhlolwa nge-Yarn portal, nekushicilelwa nge-changeset."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ Iphakheji `@churchapps/apihelper` ihlinzeka ngetisebenti tase-server kuwo onkhe 
 <div class="prereqs">
 <h4>Ngembi Kwekucala</h4>
 
-- Faka **Node.js** ne-**Git** -- bona [Tidzingo Tekucala](../setup/prerequisites)
+- Faka **Node.js** ne-**Git** -- bona [Tidzingo Tekucala](../setup/prerequisites.md)
 - Tijwayeze [Kulungiselela kwe-Packages workspace](./index.md) kanye netindlela tekushicilela
-- Lephakheji itsembela ku-[`@churchapps/helpers`](./helpers) (njenge-peer dependency) futsi iyayikhipha kabusha
+- Lephakheji itsembela ku-[`@churchapps/helpers`](./helpers.md) (njenge-peer dependency) futsi iyayikhipha kabusha
 
 </div>
 
@@ -65,6 +66,6 @@ Lephakheji ingulokutsembelako kuwo onkhe ema-API e-ChurchApps -- i-core Api, Ask
 
 ## Tincwadzi Letihambelanako
 
-- **[Helpers](./helpers)** -- Iphakheji yesisekelo yetisebenti letincwadzi itsembela kuyo
-- **[Sakhiwo se-Module](../api/module-structure)** -- Indlela ema-controller kanye ne-auth middleware asetjentiswa ngayo kuma-module e-API
-- **[Kulungiselela kwe-API Yendzawo](../api/local-setup)** -- Kulungiselela i-API yekusebenta endzaweni yakho
+- **[Helpers](./helpers.md)** -- Iphakheji yesisekelo yetisebenti letincwadzi itsembela kuyo
+- **[Sakhiwo se-Module](../api/module-structure.md)** -- Indlela ema-controller kanye ne-auth middleware asetjentiswa ngayo kuma-module e-API
+- **[Kulungiselela kwe-API Yendzawo](../api/local-setup.md)** -- Kulungiselela i-API yekusebenta endzaweni yakho

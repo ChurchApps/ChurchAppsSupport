@@ -1,5 +1,7 @@
 ---
-title: "Zameldowanie"
+title: "Meldowanie w portalu członka B1.church"
+sidebar_label: "Zameldowanie"
+description: "Zamelduj siebie i członków gospodarstwa domowego na nabożeństwo z portalu członka B1.church, omijając kiosk i przypisując grupy."
 ---
 
 # Zameldowanie

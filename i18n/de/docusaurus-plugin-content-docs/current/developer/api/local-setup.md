@@ -1,5 +1,6 @@
 ---
 title: "Lokale API-Einrichtung"
+description: "ChurchApps-API lokal einrichten: Repo klonen, sechs MySQL-Modul-Datenbanken konfigurieren, Schema initialisieren und Dev-Server mit Hot-Reload starten."
 ---
 
 # Lokale API-Einrichtung
@@ -13,9 +14,9 @@ Diese Anleitung führt Sie durch die lokale Einrichtung der ChurchApps-API für 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Installieren Sie **Node.js 24+**, **Git** und **MySQL 8.0+** -- siehe [Voraussetzungen](../setup/prerequisites)
+- Installieren Sie **Node.js 24+**, **Git** und **MySQL 8.0+** -- siehe [Voraussetzungen](../setup/prerequisites.md)
 - Erstellen Sie einen MySQL-Benutzer mit der Berechtigung, Datenbanken anzulegen
-- Lesen Sie die Referenz [Umgebungsvariablen](../setup/environment-variables) für die API-Konfiguration
+- Lesen Sie die Referenz [Umgebungsvariablen](../setup/environment-variables.md) für die API-Konfiguration
 
 </div>
 
@@ -82,7 +83,7 @@ Die API startet mit Hot Reload unter [http://localhost:8084](http://localhost:80
 
 ## Bereitstellung
 
-Die Staging-Umgebung wurde außer Betrieb genommen. Die API wird bei jedem Push auf `main` in die Demo-Umgebung bereitgestellt und über den manuell auszulösenden Workflow **Deploy Prod** in die Produktion, der außerdem ausstehende Datenbankmigrationen anwendet. Details finden Sie unter [API-Bereitstellung](../deployment/apis).
+Die Staging-Umgebung wurde außer Betrieb genommen. Die API wird bei jedem Push auf `main` in die Demo-Umgebung bereitgestellt und über den manuell auszulösenden Workflow **Deploy Prod** in die Produktion, der außerdem ausstehende Datenbankmigrationen anwendet. Details finden Sie unter [API-Bereitstellung](../deployment/apis.md).
 
 ## Lokale Bibliotheksentwicklung
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-So können Sie Änderungen an der Bibliothek testen, ohne sie auf npm zu veröffentlichen. Weitere Informationen finden Sie unter [Gemeinsam genutzte Bibliotheken](../shared-libraries/#local-development-against-a-consuming-app) -- und committen Sie niemals die Portal-Auflösung, die der Link in `package.json` schreibt.
+So können Sie Änderungen an der Bibliothek testen, ohne sie auf npm zu veröffentlichen. Weitere Informationen finden Sie unter [Gemeinsam genutzte Bibliotheken](../shared-libraries/index.md#local-development-against-a-consuming-app) -- und committen Sie niemals die Portal-Auflösung, die der Link in `package.json` schreibt.
 
 ## Verwandte Artikel
 
-- **[Datenbank](./database)** -- Die Architektur mit einer Datenbank pro Modul verstehen
-- **[Modulstruktur](./module-structure)** -- Wie Controller, Repositories und Modelle organisiert sind
-- **[Gemeinsam genutzte Bibliotheken](../shared-libraries/)** -- Arbeiten mit `@churchapps/helpers` und `@churchapps/apihelper`
+- **[Datenbank](./database.md)** -- Die Architektur mit einer Datenbank pro Modul verstehen
+- **[Modulstruktur](./module-structure.md)** -- Wie Controller, Repositories und Modelle organisiert sind
+- **[Gemeinsam genutzte Bibliotheken](../shared-libraries/index.md)** -- Arbeiten mit `@churchapps/helpers` und `@churchapps/apihelper`

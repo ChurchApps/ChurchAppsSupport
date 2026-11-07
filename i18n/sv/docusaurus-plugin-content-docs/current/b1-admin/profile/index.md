@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Profilinställningar och enheter i B1 Admin"
+sidebar_label: "Profil"
+description: "Uppdatera ditt namn, din e-post, ditt lösenord, tvåfaktorsinloggning, tema och anslutna enheter i din B1 Admin-profil samt godkänn medlemmarnas profiländringar."
 ---
 
 # Profil

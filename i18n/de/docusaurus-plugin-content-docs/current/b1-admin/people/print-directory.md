@@ -1,5 +1,6 @@
 ---
 title: "Verzeichnis drucken"
+description: "Erstellen Sie in B1 Admin ein druckbares, nach Haushalten gegliedertes Mitgliederverzeichnis mit Fotos, Kontaktdaten und Geburtstagen, im Format für Briefpapier."
 ---
 
 # Verzeichnis drucken

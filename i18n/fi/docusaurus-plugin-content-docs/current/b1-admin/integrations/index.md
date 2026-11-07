@@ -1,5 +1,6 @@
 ---
 title: "Integraatiot"
+description: "Yhdistä B1 Admin Slackiin, Discordiin, Zapieriin, Makeen, Google Sheetsiin ja tekoälyavustajiin kuten Claudeen. Ohjeet ja kunkin API-avainoikeudet."
 ---
 
 # Integraatiot
@@ -14,21 +15,21 @@ B1 liittyy yhteen tiimisi jo käyttämien työkalujen kanssa. Yhdistä Slack tai
 
 | Integraatio | Mitä se tekee | Suunta | Asennukseen kuluva aika |
 |---|---|---|---|
-| **[Slack](./slack-discord)** | Lähettää luettavia ilmoituksia (uudet henkilöt, lahjoitukset, ilmoittautumiset, …) Slack-kanavalle | B1 → Slack | 2 minuuttia |
-| **[Discord](./slack-discord)** | Sama Discord-kanavalle | B1 → Discord | 2 minuuttia |
-| **[Zapier](./zapier)** | Käytä B1:n tapahtumia käynnistimina ja B1:n toimintoja missä tahansa Zapierin yli 7 000 sovelluksesta | Molemmat | 5–10 min per Zap |
-| **[Make](./make)** | Sama idea kuin Zapierissa, Maken visuaalisessa skenaariorakentajassa | Molemmat | 5–10 min per skenaario |
-| **[Google Sheets](./google-sheets)** | Vie Henkilöt / Lahjoitukset / Ryhmät / Läsnäolo laskentataulukkoon pyynnöstä | B1 → Taulukko | 5 minuuttia |
-| **[Claude](./claude)** | Kysy Anthropicin Claudelta kysymyksiä seurakuntasi tiedoista, rajattuna oikeuksiisi. Kokeilu on ilmainen ja suositeltava | Molemmat | Alle 3 minuuttia |
-| **[ChatGPT](./chatgpt)** | Sama idea OpenAI:n ChatGPT:n kanssa (vaatii maksullisen ChatGPT-tilauksen) | Molemmat | 10 minuuttia |
-| **[Yhdistetyt palvelut](./services/)** | Valitut reseptit palveluille Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message ja Checkr | Vaihtelee | 5–10 min kukin |
+| **[Slack](./slack-discord.md)** | Lähettää luettavia ilmoituksia (uudet henkilöt, lahjoitukset, ilmoittautumiset, …) Slack-kanavalle | B1 → Slack | 2 minuuttia |
+| **[Discord](./slack-discord.md)** | Sama Discord-kanavalle | B1 → Discord | 2 minuuttia |
+| **[Zapier](./zapier.md)** | Käytä B1:n tapahtumia käynnistimina ja B1:n toimintoja missä tahansa Zapierin yli 7 000 sovelluksesta | Molemmat | 5–10 min per Zap |
+| **[Make](./make.md)** | Sama idea kuin Zapierissa, Maken visuaalisessa skenaariorakentajassa | Molemmat | 5–10 min per skenaario |
+| **[Google Sheets](./google-sheets.md)** | Vie Henkilöt / Lahjoitukset / Ryhmät / Läsnäolo laskentataulukkoon pyynnöstä | B1 → Taulukko | 5 minuuttia |
+| **[Claude](./claude.md)** | Kysy Anthropicin Claudelta kysymyksiä seurakuntasi tiedoista, rajattuna oikeuksiisi. Kokeilu on ilmainen ja suositeltava | Molemmat | Alle 3 minuuttia |
+| **[ChatGPT](./chatgpt.md)** | Sama idea OpenAI:n ChatGPT:n kanssa (vaatii maksullisen ChatGPT-tilauksen) | Molemmat | 10 minuuttia |
+| **[Yhdistetyt palvelut](./services/index.md)** | Valitut reseptit palveluille Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message ja Checkr | Vaihtelee | 5–10 min kukin |
 
 ## Miten valita
 
 - **Haluatko vain ilmoituksen chatiin?** Käytä **Slackia** tai **Discordia**. Et tarvitse kolmannen osapuolen tiliä etkä ylläpidettävää Zapia. Määritys tehdään kokonaan B1Adminin sisällä.
 - **Haluatko automatisoida jotain eri sovellusten välillä** (esim. "kun joku lahjoittaa, lisää hänet Mailchimp-listalleni ja Slackin #lahjoitukset-kanavalle")? Käytä **Zapieria** tai **Makea**. Zapier on helpompi käyttää, ja Make on halvempi suuressa mittakaavassa sekä joustavampi logiikaltaan.
 - **Tarvitsetko kertaluonteisen tietovedon tai ajastetun raportin?** Käytä **Google Sheetsiä**. Liitä API-avain lisäosan sivupalkkiin ja napsauta Vie.
-- **Haluatko kysyä kysymyksiä tavallisella kielellä** ("montako ensikertalaista kävi viime sunnuntaina?", "tiivistä tämän kuukauden lahjoitukset")? Aloita **[Claudella](./claude)**. Kokeilu on ilmainen ja asennus kestää alle 3 minuuttia. **[ChatGPT](./chatgpt)** toimii myös maksullisella tilauksella. Claude yhdistyy kirjautumalla B1-tilillesi, ChatGPT käyttää B1 API -avainta.
+- **Haluatko kysyä kysymyksiä tavallisella kielellä** ("montako ensikertalaista kävi viime sunnuntaina?", "tiivistä tämän kuukauden lahjoitukset")? Aloita **[Claudella](./claude.md)**. Kokeilu on ilmainen ja asennus kestää alle 3 minuuttia. **[ChatGPT](./chatgpt.md)** toimii myös maksullisella tilauksella. Claude yhdistyy kirjautumalla B1-tilillesi, ChatGPT käyttää B1 API -avainta.
 - **Rakennatko oman mukautetun integraation?** Mikään yllä olevista ei sovi. Puhu suoraan [REST API:lle](/docs/developer/api) [API-avaimella](/docs/developer/api/api-keys) tai tilaa oma palvelimesi [webhookeihin](/docs/developer/api/webhooks).
 
 ## Mitä niillä on yhteistä
@@ -59,10 +60,10 @@ Jos mikään yllä olevista ei sovi, jokainen B1-pinta on avoin:
 
 ## Seuraavat askeleet
 
-- [Slack ja Discord](./slack-discord): lähetä chat-ilmoituksia
-- [Zapier](./zapier): yhdistä yli 7 000 sovellukseen
-- [Make](./make): visuaalinen työnkulkujen automaatio
-- [Google Sheets](./google-sheets): vie laskentataulukoihin
-- [Claude](./claude): kysy Anthropicin Claudelta seurakuntasi tiedoista
-- [ChatGPT](./chatgpt): kysy OpenAI:n ChatGPT:ltä seurakuntasi tiedoista
-- [Yhdistetyt palvelut](./services/): palvelukohtaiset reseptit (Mailchimp, Donorbox, Clearstream jne.)
+- [Slack ja Discord](./slack-discord.md): lähetä chat-ilmoituksia
+- [Zapier](./zapier.md): yhdistä yli 7 000 sovellukseen
+- [Make](./make.md): visuaalinen työnkulkujen automaatio
+- [Google Sheets](./google-sheets.md): vie laskentataulukoihin
+- [Claude](./claude.md): kysy Anthropicin Claudelta seurakuntasi tiedoista
+- [ChatGPT](./chatgpt.md): kysy OpenAI:n ChatGPT:ltä seurakuntasi tiedoista
+- [Yhdistetyt palvelut](./services/index.md): palvelukohtaiset reseptit (Mailchimp, Donorbox, Clearstream jne.)

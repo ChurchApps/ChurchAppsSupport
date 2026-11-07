@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Templomi bejelentkezés a B1 Mobile alkalmazással"
+sidebar_label: "Check-In"
+description: "Jelentkeztesd be magadat és háztartásodat az istentiszteletekre telefonodról a B1 Mobile alkalmazásban, az érkezés előtt kiválasztva az időpontot és a csoportokat."
 ---
 
 # Check-In
@@ -16,7 +18,7 @@ A check-in folyamata gyors, többlépéses művelet, amely végigvezeti Önt az 
 
 ## Első lépések
 
-A check-in eléréséhez nyissa meg a **Check-In** részt a B1 Mobile alkalmazásban. Ehhez a funkcióhoz be kell jelentkeznie. Ha nincs bejelentkezve, először a [bejelentkezés](../getting-started/logging-in) lépésre lesz irányítva.
+A check-in eléréséhez nyissa meg a **Check-In** részt a B1 Mobile alkalmazásban. Ehhez a funkcióhoz be kell jelentkeznie. Ha nincs bejelentkezve, először a [bejelentkezés](../getting-started/logging-in.md) lépésre lesz irányítva.
 
 :::info
 A check-in funkció megköveteli, hogy egyházközössége beállította az istentiszteleteket és a részvételi csoportokat az adminisztrációs beállításokban. Ha a check-in képernyő megnyitásakor nem jelennek meg istentiszteletek, lehet, hogy egyházközössége még nem konfigurálta ezt a funkciót. Segítségért forduljon egyházközössége adminisztrátorához.
@@ -30,4 +32,4 @@ A check-in funkció megköveteli, hogy egyházközössége beállította az iste
 
 ## Következő lépések
 
-- [Önálló check-in](./self-checkin) -- Lépésről lépésre útmutató a bejelentkezéshez telefonjáról
+- [Önálló check-in](./self-checkin.md) -- Lépésről lépésre útmutató a bejelentkezéshez telefonjáról

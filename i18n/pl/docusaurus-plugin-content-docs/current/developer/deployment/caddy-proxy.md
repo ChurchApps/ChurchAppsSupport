@@ -1,5 +1,6 @@
 ---
 title: "Proxy domen niestandardowych Caddy"
+description: "Zbuduj i uruchom reverse proxy Caddy obsługujące własne domeny kościołów w B1.church: certyfikaty TLS, mapowanie hostów i znane pułapki."
 ---
 
 # Proxy domen niestandardowych Caddy
@@ -10,7 +11,7 @@ Niestandardowe domeny kościołów (`mychurch.org` → witryna B1 kościoła) ko
 
 </div>
 
-Informacje o tym, jak żądanie trafia do kościoła i witryny po dotarciu do B1App, znajdziesz w artykule [Routing witryn i wiele witryn](../architecture/websites).
+Informacje o tym, jak żądanie trafia do kościoła i witryny po dotarciu do B1App, znajdziesz w artykule [Routing witryn i wiele witryn](../architecture/websites.md).
 
 ## Komponenty
 
@@ -88,5 +89,5 @@ Panel administracyjny API wiąże się wyłącznie z `localhost:2019`. Starszy t
 
 ## Powiązane strony
 
-- [Routing witryn i wiele witryn](../architecture/websites) — jak przekazane żądanie trafia do kościoła i witryny w B1App
-- [Wdrażanie API](./apis) — wdrażanie API Membership, które obsługuje `authorize`/`hostmap`
+- [Routing witryn i wiele witryn](../architecture/websites.md) — jak przekazane żądanie trafia do kościoła i witryny w B1App
+- [Wdrażanie API](./apis.md) — wdrażanie API Membership, które obsługuje `authorize`/`hostmap`

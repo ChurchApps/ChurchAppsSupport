@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "Sett opp LessonsApp Next.js-leksjonseditoren lokalt på Node.js 22+, pek den mot et lokalt LessonsApi, og forstå bygging og S3/CloudFront-distribusjon."
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ LessonsApp er applikasjonen for administrasjon av leksjonsinnhold for [Lessons.c
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Installer **Node.js 22+** og **Git**. Se [Forutsetninger](../setup/prerequisites)
-- Konfigurer API-målet ditt (lokal LessonsApi). Se [miljøvariabler](../setup/environment-variables)
+- Installer **Node.js 22+** og **Git**. Se [Forutsetninger](../setup/prerequisites.md)
+- Konfigurer API-målet ditt (lokal LessonsApi). Se [miljøvariabler](../setup/environment-variables.md)
 
 </div>
 
@@ -81,5 +82,5 @@ Produksjonsbygg distribueres til **S3 + CloudFront**:
 3. En CloudFront-invalidering utløses for å servere den nye versjonen
 
 :::tip
-For detaljerte distribusjonsinstruksjoner, se veiledningen [Distribusjon av webapper](../deployment/web-apps).
+For detaljerte distribusjonsinstruksjoner, se veiledningen [Distribusjon av webapper](../deployment/web-apps.md).
 :::

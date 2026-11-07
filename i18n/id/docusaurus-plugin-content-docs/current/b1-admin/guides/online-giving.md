@@ -1,5 +1,6 @@
 ---
 title: "Panduan: Mengatur Donasi Online"
+description: "Atur pemberian online di B1 Admin dengan membuat dana donasi, menghubungkan Stripe, dan menambahkan halaman Donasi ke situs B1.church untuk anggota."
 ---
 
 # Mengatur Donasi Online
@@ -70,7 +71,7 @@ Gunakan mode uji Stripe terlebih dahulu jika Anda ingin memverifikasi tanpa peng
 Sebarkan informasinya agar anggota tahu bahwa mereka dapat memberi secara online.
 
 1. Bagikan URL pemberian melalui situs web, buletin email, warta jemaat, dan media sosial
-2. Anggota juga dapat memberi melalui [aplikasi B1 Mobile](../../b1-mobile/giving/) — fitur pemberian sudah tersedia di dalamnya
+2. Anggota juga dapat memberi melalui [aplikasi B1 Mobile](../../b1-mobile/giving/index.md) — fitur pemberian sudah tersedia di dalamnya
 
 :::info
 Anggota yang masuk dapat menyimpan metode pembayaran, mengatur donasi berulang, dan melihat riwayat pemberian mereka. Pemberian anonim juga tersedia — tidak perlu masuk.

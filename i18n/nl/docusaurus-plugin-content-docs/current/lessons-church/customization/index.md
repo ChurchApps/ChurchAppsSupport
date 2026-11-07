@@ -1,5 +1,6 @@
 ---
 title: "Customization"
+description: "Leer onderdelen, rollen of acties in een Lessons.church-les verbergen en de inhoud herschikken, voor één klaslokaal of voor alle klaslokalen van je kerk."
 ---
 
 # Customization

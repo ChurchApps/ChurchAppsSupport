@@ -1,5 +1,7 @@
 ---
-title: "Bibelen"
+title: "Lese Bibelen på B1.church"
+sidebar_label: "Bibelen"
+description: "Les Skriften i B1.churchs bibelleser, med kontroller for bok, kapittel og oversettelse, og en bibelside for daglig lesning."
 ---
 
 # Bibelen

@@ -1,5 +1,7 @@
 ---
-title: "Profile"
+title: "Mga Setting ng Profile at Device sa B1 Admin"
+sidebar_label: "Profile"
+description: "I-update ang pangalan, email, password, two-factor sign-in, theme, at device sa iyong B1 Admin profile, at aprubahan ang pagbabago sa profile ng miyembro."
 ---
 
 # Profile

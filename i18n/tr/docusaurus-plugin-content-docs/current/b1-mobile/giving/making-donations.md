@@ -1,5 +1,7 @@
 ---
-title: "Bağış Yapma"
+title: "B1 Mobile'da Bağış Yapma"
+sidebar_label: "Bağış Yapma"
+description: "B1 Mobile'ın Bağış Yap sekmesinden kiliseniz için bağış yapın: bir fon seçin, tutar girin, Stripe ile ödeyin ve geçmiş bağışları hızlıca tekrarlayın."
 ---
 
 # Bağış Yapma
@@ -13,8 +15,8 @@ B1 Mobile üzerinden bağış yapmak hızlı ve kolaydır. Bağışlar bölümü
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
-- Kredi veya banka kartınızı hazır bulundurun ya da önceden bir [ödeme yöntemi kaydedin](./managing-payments)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
+- Kredi veya banka kartınızı hazır bulundurun ya da önceden bir [ödeme yöntemi kaydedin](./managing-payments.md)
 
 </div>
 
@@ -42,10 +44,10 @@ Göndermeden önce bağış tutarını ve fonu iki kez kontrol edin. Bağışlar
 Son bağışınızla aynı tutarı vermek istiyorsanız tüm bağış akışını baştan yapmanız gerekmez. **Genel Bakış** sekmesinde en son bağışınız ve bir **Tekrarla** düğmesi görünür. Aynı bağışı hızlıca yeniden göndermek için bu düğmeye dokunun.
 
 :::tip
-Düzenli bağış yapmayı planlıyorsanız, ödeme yönteminizi **Yönet** sekmesinde kaydedin; böylece bir dahaki sefere daha da hızlı bağış yapabilirsiniz. Ayrıntılar için [Ödeme Yöntemlerini Yönetme](./managing-payments) bölümüne bakın.
+Düzenli bağış yapmayı planlıyorsanız, ödeme yönteminizi **Yönet** sekmesinde kaydedin; böylece bir dahaki sefere daha da hızlı bağış yapabilirsiniz. Ayrıntılar için [Ödeme Yöntemlerini Yönetme](./managing-payments.md) bölümüne bakın.
 :::
 
 ## İlgili Makaleler
 
-- [Ödeme Yöntemlerini Yönetme](./managing-payments) -- Gelecekteki bağışlarınızı hızlandırmak için bir kart kaydedin
-- [Bağış Geçmişi](./donation-history) -- Bağış özetinizi ve geçmiş bağışlarınızı görüntüleyin
+- [Ödeme Yöntemlerini Yönetme](./managing-payments.md) -- Gelecekteki bağışlarınızı hızlandırmak için bir kart kaydedin
+- [Bağış Geçmişi](./donation-history.md) -- Bağış özetinizi ve geçmiş bağışlarınızı görüntüleyin

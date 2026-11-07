@@ -1,5 +1,6 @@
 ---
 title: "申请活动与房间"
+description: "通过 B1.church 会友门户为活动申请房间或设备预订，在“我的申请”中跟踪其状态，并在待处理时取消。"
 ---
 
 # 申请活动与房间
@@ -42,11 +43,11 @@ title: "申请活动与房间"
 在申请仍处于待处理状态时，您可以点击 **Cancel request**（取消申请）撤回申请（系统会要求您确认——取消后无法撤销）。
 
 :::info
-申请由教会工作人员在 B1 Admin 的[审批页面](../../b1-admin/calendars/approvals)中审核。哪些房间和资源需要审批由您的教会决定——请参阅[房间与资源](../../b1-admin/calendars/rooms-resources)。
+申请由教会工作人员在 B1 Admin 的[审批页面](../../b1-admin/calendars/approvals.md)中审核。哪些房间和资源需要审批由您的教会决定——请参阅[房间与资源](../../b1-admin/calendars/rooms-resources.md)。
 :::
 
 ## 相关文章
 
-- [“我的”页面](../getting-started/me-page) -- 申请链接所在的位置
-- [日历审批（B1 Admin）](../../b1-admin/calendars/approvals) -- 工作人员如何审核申请
-- [房间与资源（B1 Admin）](../../b1-admin/calendars/rooms-resources) -- 教会如何配置可预订的场所
+- [“我的”页面](../getting-started/me-page.md) -- 申请链接所在的位置
+- [日历审批（B1 Admin）](../../b1-admin/calendars/approvals.md) -- 工作人员如何审核申请
+- [房间与资源（B1 Admin）](../../b1-admin/calendars/rooms-resources.md) -- 教会如何配置可预订的场所

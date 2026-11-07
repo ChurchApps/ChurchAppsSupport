@@ -1,5 +1,7 @@
 ---
-title: "Uređivanje vašeg profila"
+title: "Urejanje profila v portalu članov B1.church"
+sidebar_label: "Uređivanje vašeg profila"
+description: "V portalu članov B1.church posodobite svoje kontaktne podatke, člane gospodinjstva, e-poštni naslov za prijavo, geslo in nastavitve zasebnosti."
 ---
 
 # Uređivanje vašeg profila

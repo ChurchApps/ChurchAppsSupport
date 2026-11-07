@@ -1,5 +1,6 @@
 ---
 title: "Adományozási végpontok"
+description: "Referencia a ChurchApps Giving API-végpontjaihoz: adományok, kötegek, átjárók, előfizetések és fizetési módok, hitelesítési és jogosultsági szabályokkal a B1 Adminhoz integrálódó fejlesztők számára."
 ---
 
 # Adományozási végpontok
@@ -284,6 +285,6 @@ A `GenericCrudController` osztályt bővíti a következő CRUD útvonalakkal: `
 
 ## Kapcsolódó oldalak
 
-- [Tagsági végpontok](./membership) — Személyek, egyházak, csoportok, szerepkörök és jogosultságok
-- [Hitelesítés és jogosultságok](./authentication) — Bejelentkezési folyamat, JWT, OAuth, jogosultsági modell
-- [Modulszerkezet](../module-structure) — Kódszervezési minták
+- [Tagsági végpontok](./membership.md) — Személyek, egyházak, csoportok, szerepkörök és jogosultságok
+- [Hitelesítés és jogosultságok](./authentication.md) — Bejelentkezési folyamat, JWT, OAuth, jogosultsági modell
+- [Modulszerkezet](../module-structure.md) — Kódszervezési minták

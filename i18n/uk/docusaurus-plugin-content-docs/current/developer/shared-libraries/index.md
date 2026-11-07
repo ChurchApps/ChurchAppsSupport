@@ -1,5 +1,6 @@
 ---
 title: "Спільні бібліотеки"
+description: "Документація npm-пакетів @churchapps, спільних для B1 Admin, B1.church і API, а також налаштування робочої області Packages та випуск через changesets."
 ---
 
 # Спільні бібліотеки
@@ -14,9 +15,9 @@ title: "Спільні бібліотеки"
 
 | Пакет | Опис | Використовується |
 |-------|------|------------------|
-| [`@churchapps/helpers`](./helpers) | Базовий рівень: допоміжні функції без прив'язки до фреймворку та спільні інтерфейси TypeScript, що формують міжзастосунковий контракт даних | Усі проєкти |
-| [`@churchapps/apihelper`](./api-helper) | Серверні утиліти Express: автентифікація, базові контролери, доступ до бази даних, інтеграції з AWS і електронною поштою | Усі API |
-| [`@churchapps/apphelper`](./app-helper) | Спільні компоненти React і модулі функцій (вхід, пожертви, форми, markdown, веб-сайт) | Усі веб-застосунки |
+| [`@churchapps/helpers`](./helpers.md) | Базовий рівень: допоміжні функції без прив'язки до фреймворку та спільні інтерфейси TypeScript, що формують міжзастосунковий контракт даних | Усі проєкти |
+| [`@churchapps/apihelper`](./api-helper.md) | Серверні утиліти Express: автентифікація, базові контролери, доступ до бази даних, інтеграції з AWS і електронною поштою | Усі API |
+| [`@churchapps/apphelper`](./app-helper.md) | Спільні компоненти React і модулі функцій (вхід, пожертви, форми, markdown, веб-сайт) | Усі веб-застосунки |
 | `@churchapps/content-providers` | Абстракція над сторонніми постачальниками контенту (Lessons.church, Planning Center, Dropbox та інші) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Набір інструментів для створення інтеграцій B1.church: перевірка webhook, типізований REST-клієнт, допоміжні засоби OAuth | Зовнішні розробники інтеграцій |
 | `@churchapps/texting` | Абстракція провайдерів SMS (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

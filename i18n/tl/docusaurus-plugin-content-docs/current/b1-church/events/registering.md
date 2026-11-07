@@ -1,5 +1,7 @@
 ---
-title: "Pagpapatala sa Mga Event"
+title: "Pagpaparehistro sa Event sa B1.church"
+sidebar_label: "Pagpapatala sa Mga Event"
+description: "Magparehistro sa event sa B1.church: ilagay ang detalye, magdagdag ng pamilya, pumili ng opsyon, maglagay ng discount code, at magbayad o sumali sa waitlist."
 ---
 
 # Pagpapatala sa Mga Event
@@ -79,14 +81,14 @@ Lumilitaw ang mensahe ng kumpirmasyon kasama ang mga detalye ng event at listaha
 
 ## Pagsali sa Waitlist {#joining-a-waitlist}
 
-Kung puno na ang event at naka-enable ang waitlist ng iyong simbahan, ipapakita ng unang hakbang: *"This event is full. You can join the waitlist and we will notify you if a spot opens."* Kumpletuhin ang sign-up gaya ng karaniwan -- nilalaktawan ang bayad habang nasa waitlist ka. Kapag may nagbukas na puwesto, makakatanggap ka ng email; kung may bayad na dapat gawin, may kasamang link ito para makumpleto ito. Maaari mo ring tingnan ang iyong status at magbayad mula sa [My Registrations](./my-registrations).
+Kung puno na ang event at naka-enable ang waitlist ng iyong simbahan, ipapakita ng unang hakbang: *"This event is full. You can join the waitlist and we will notify you if a spot opens."* Kumpletuhin ang sign-up gaya ng karaniwan -- nilalaktawan ang bayad habang nasa waitlist ka. Kapag may nagbukas na puwesto, makakatanggap ka ng email; kung may bayad na dapat gawin, may kasamang link ito para makumpleto ito. Maaari mo ring tingnan ang iyong status at magbayad mula sa [My Registrations](./my-registrations.md).
 
 ## Pagbabago o Pagkansela ng Registration
 
-Kung naka-log in ka, maaari mong i-edit o kanselahin ang iyong registration nang mag-isa mula sa pahinang **Registrations** sa member portal -- tingnan ang [My Registrations](./my-registrations). Ang mga bisita ay dapat makipag-ugnayan sa opisina ng simbahan, at maaaring gawin ng staff ang pagbabago mula sa pahina ng registrations ng B1 Admin.
+Kung naka-log in ka, maaari mong i-edit o kanselahin ang iyong registration nang mag-isa mula sa pahinang **Registrations** sa member portal -- tingnan ang [My Registrations](./my-registrations.md). Ang mga bisita ay dapat makipag-ugnayan sa opisina ng simbahan, at maaaring gawin ng staff ang pagbabago mula sa pahina ng registrations ng B1 Admin.
 
 ## Mga Kaugnay na Artikulo
 
 - [Events Overview](./index.md) -- Mag-browse ng paparating na event na may registration
-- [My Registrations](./my-registrations) -- Tingnan, i-edit, bayaran ang balanse, at kanselahin ang iyong mga registration
-- [Making Donations](../giving/making-donations) -- Magbigay kasabay ng pakikilahok sa event
+- [My Registrations](./my-registrations.md) -- Tingnan, i-edit, bayaran ang balanse, at kanselahin ang iyong mga registration
+- [Making Donations](../giving/making-donations.md) -- Magbigay kasabay ng pakikilahok sa event

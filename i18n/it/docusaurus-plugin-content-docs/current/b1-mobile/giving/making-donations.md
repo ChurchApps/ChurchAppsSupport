@@ -1,5 +1,7 @@
 ---
-title: "Effettuare una Donazione"
+title: "Fare un'offerta in B1 Mobile"
+sidebar_label: "Effettuare una Donazione"
+description: "Dona alla tua chiesa dalla scheda Dona in B1 Mobile: scegli un fondo, inserisci un importo, paga con Stripe e ripeti rapidamente le offerte passate."
 ---
 
 # Effettuare una Donazione
@@ -13,8 +15,8 @@ Donare tramite B1 Mobile è rapido e semplice. La scheda **Dona** nella sezione 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- [Installa B1 Mobile](../getting-started/installing) e [accedi](../getting-started/logging-in) al tuo account
-- Tieni pronta una carta di credito o debito, oppure [salva un metodo di pagamento](./managing-payments) in anticipo
+- [Installa B1 Mobile](../getting-started/installing.md) e [accedi](../getting-started/logging-in.md) al tuo account
+- Tieni pronta una carta di credito o debito, oppure [salva un metodo di pagamento](./managing-payments.md) in anticipo
 
 </div>
 
@@ -42,10 +44,10 @@ Verifica l'importo della donazione e il fondo prima di inviare. Le donazioni ven
 Se desideri donare lo stesso importo dell'ultima donazione, non è necessario ripetere l'intero processo. La scheda **Panoramica** mostra la tua offerta più recente insieme a un pulsante **Ripeti**. Toccalo per inviare rapidamente la stessa donazione di nuovo.
 
 :::tip
-Se prevedi di donare regolarmente, salva il tuo metodo di pagamento nella scheda **Gestisci** per donare ancora più velocemente la prossima volta. Consulta [Gestione dei Metodi di Pagamento](./managing-payments) per i dettagli.
+Se prevedi di donare regolarmente, salva il tuo metodo di pagamento nella scheda **Gestisci** per donare ancora più velocemente la prossima volta. Consulta [Gestione dei Metodi di Pagamento](./managing-payments.md) per i dettagli.
 :::
 
 ## Articoli Correlati
 
-- [Gestione dei Metodi di Pagamento](./managing-payments) -- Salva una carta per donazioni future più veloci
-- [Cronologia Donazioni](./donation-history) -- Visualizza il riepilogo delle offerte e le donazioni passate
+- [Gestione dei Metodi di Pagamento](./managing-payments.md) -- Salva una carta per donazioni future più veloci
+- [Cronologia Donazioni](./donation-history.md) -- Visualizza il riepilogo delle offerte e le donazioni passate

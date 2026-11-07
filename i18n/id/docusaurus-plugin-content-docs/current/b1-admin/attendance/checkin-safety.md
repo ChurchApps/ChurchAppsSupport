@@ -1,5 +1,6 @@
 ---
 title: "Keamanan Check-In"
+description: "Atur kontrol keamanan anak di B1 Admin: kapasitas ruangan, rasio relawan, daftar penjemputan terpercaya, dan pesan SMS ke orang tua untuk check-in."
 ---
 
 # Keamanan Check-In
@@ -15,7 +16,7 @@ B1 menyediakan sejumlah kontrol keamanan anak untuk check-in: batas kapasitas ru
 
 - Siapkan [struktur kehadiran](setup.md) dan [kiosk check-in](check-in.md) Anda
 - Ruangan adalah [grup](../groups/creating-groups.md) yang terhubung dengan jadwal ibadah. Pengaturan keamanan di bawah ini terdapat pada grup
-- Fitur memanggil orang tua dan siaran darurat memerlukan penyedia layanan pesan teks yang terhubung ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), atau Mutual Ministry)
+- Fitur memanggil orang tua dan siaran darurat memerlukan penyedia layanan pesan teks yang terhubung ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md), atau Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Kedua fitur ini mengirim pesan teks melalui penyedia layanan pesan teks gereja A
 
 Orang yang telah berhenti berlangganan pesan teks, atau yang tidak memiliki nomor ponsel tercatat, akan dilewati secara otomatis. Kiosk akan melaporkan berapa pesan yang terkirim dan berapa yang dilewati.
 
-Lihat panduan dari sisi kiosk di [Check-Out & Keamanan Anak](../../b1-checkin/check-in/checking-out).
+Lihat panduan dari sisi kiosk di [Check-Out & Keamanan Anak](../../b1-checkin/check-in/checking-out.md).
 
 ## Artikel Terkait
 
 - [Check-In](check-in.md) — pengaturan kiosk dan perangkat keras
-- [Check-Out & Keamanan Anak](../../b1-checkin/check-in/checking-out) — alur check-out kiosk, verifikasi penjemputan, dan pemanggilan
+- [Check-Out & Keamanan Anak](../../b1-checkin/check-in/checking-out.md) — alur check-out kiosk, verifikasi penjemputan, dan pemanggilan
 - [Membuat Grup](../groups/creating-groups.md) — tempat pengaturan ruangan berada
 - [Pengaturan Kehadiran](setup.md) — layanan, jadwal ibadah, dan penugasan ruangan
 - [Usia Minimum untuk Pesan Pribadi](../settings/mobile-app.md#member-directory--messaging-settings) — memblokir percakapan pesan pribadi baru dengan anak-anak sambil tetap mempertahankan mereka di direktori

@@ -1,5 +1,6 @@
 ---
 title: "Przeglądanie treści"
+description: "Przeglądanie bezpłatnej biblioteki Lessons.church bez konta: strona główna, przeglądanie wg programu, wyszukiwanie i zewnętrzni dostawcy."
 ---
 
 # Przeglądanie treści

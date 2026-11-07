@@ -1,5 +1,6 @@
 ---
 title: "Granskningslogg och ångringsbara batcher"
+description: "Beskriver API:ets granskningslogg som registrerar varje användarändring över moduler, och hur importbatchar kan ångras rad för rad i B1 Admin."
 ---
 
 # Granskningslogg och ångringsbara batcher
@@ -155,6 +156,6 @@ Båda administrationsytorna är **under utveckling**. Avsikten:
 
 ## Relaterade sidor
 
-- [Modulstruktur](../api/module-structure): hur en controller utanför medlemsmodulen når medlemsrepona via `RepoManager`
-- [Givande](./giving): de donationsskrivvägar som granskas som `sensitive` även när de är anonyma
-- [Membership-endpoints](../api/endpoints/membership): REST-ytan som bär `X-Batch-Id` och exponerar `/auditlogs` och `/batches`
+- [Modulstruktur](../api/module-structure.md): hur en controller utanför medlemsmodulen når medlemsrepona via `RepoManager`
+- [Givande](./giving.md): de donationsskrivvägar som granskas som `sensitive` även när de är anonyma
+- [Membership-endpoints](../api/endpoints/membership.md): REST-ytan som bär `X-Batch-Id` och exponerar `/auditlogs` och `/batches`

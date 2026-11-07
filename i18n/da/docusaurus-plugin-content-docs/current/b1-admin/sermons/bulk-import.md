@@ -1,5 +1,6 @@
 ---
 title: "masseimport"
+description: "Importér prædikenvideoer i bulk fra en YouTube-kanal eller Vimeo-konto til B1 Admin, og sortér dem derefter i en afspilningsliste."
 ---
 
 # masseimport
@@ -14,7 +15,7 @@ Masseimport siden lader dig hurtigt befolke dit prædikenbibliotek ved at import
 <h4>Før du begynder</h4>
 
 - Du har brug for **contentApi.streamingServices.edit** tilladelse. Se [roller og tilladelser](../settings/roles-permissions.md) hvis du ikke har adgang.
-- Opret mindst en [playliste](playlists) for at importere dine prædikener ind i
+- Opret mindst en [playliste](./playlists.md) for at importere dine prædikener ind i
 - Har din YouTube kanal ID eller Vimeo konto oplysninger klar
 
 </div>
@@ -39,7 +40,7 @@ Før import af videoer, du har brug for mindst en playliste for at organisere de
 2. Klik **opret første playliste** og udfyld navn, beskrivelse, udgiv dato og thumbnail.
 3. Klik **gem**, derefter vend tilbage til **masseimport** fane.
 
-Se [playlister](playlists) til detaljerede instruktioner på opbygning og ledelse af playlister.
+Se [playlister](./playlists.md) til detaljerede instruktioner på opbygning og ledelse af playlister.
 
 ## import videoer
 
@@ -54,11 +55,11 @@ Se [playlister](playlists) til detaljerede instruktioner på opbygning og ledels
 Dine videoer vil blive importeret med alle deres detaljer, inkluderet titler, beskrivelser, datoer og thumbnails.
 
 :::info
-Masseimport er idealt til at komme i gang når du migrerer fra en anden platform. Til at tilføje individuelle prædikener gå til, brug [administrering af prædikener](managing-sermons) siden i stedet.
+Masseimport er idealt til at komme i gang når du migrerer fra en anden platform. Til at tilføje individuelle prædikener gå til, brug [administrering af prædikener](./managing-sermons.md) siden i stedet.
 :::
 
 ## Næste trin
 
-- [administrering af prædikener](managing-sermons) -- rediger importeret prædikendetaljer
-- [playlister](playlists) -- opbygning og administrer prædikenslider
-- [live streaming](live-streaming) -- opsætning af live streaming til dine tjenester
+- [administrering af prædikener](./managing-sermons.md) -- rediger importeret prædikendetaljer
+- [playlister](./playlists.md) -- opbygning og administrer prædikenslider
+- [live streaming](./live-streaming.md) -- opsætning af live streaming til dine tjenester

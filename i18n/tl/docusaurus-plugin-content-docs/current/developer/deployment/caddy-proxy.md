@@ -1,5 +1,6 @@
 ---
 title: "Caddy Custom-Domain Proxy"
+description: "I-build at patakbuhin ang Caddy reverse proxy para sa custom domain ng B1.church site, sakop ang TLS certificate, host mapping, at mga pitfall."
 ---
 
 # Caddy Custom-Domain Proxy
@@ -10,7 +11,7 @@ Ang mga custom na domain ng simbahan (`mychurch.org` → ang B1 website ng simba
 
 </div>
 
-Para sa kung paano nireresolba ang request sa isang simbahan/site kapag nakarating na ito sa B1App, tingnan ang [Website Routing & Multi-Site](../architecture/websites).
+Para sa kung paano nireresolba ang request sa isang simbahan/site kapag nakarating na ito sa B1App, tingnan ang [Website Routing & Multi-Site](../architecture/websites.md).
 
 ## Mga bahagi
 
@@ -88,5 +89,5 @@ Nananatili ang `CaddyHelper` sa API (at ang mga endpoint na `/membership/domains
 
 ## Mga Kaugnay na Pahina
 
-- [Website Routing & Multi-Site](../architecture/websites) -- kung paano nireresolba ang na-proxy na request sa isang simbahan/site sa B1App
-- [API Deployment](./apis) -- pag-deploy ng Membership API na naghahain ng `authorize`/`hostmap`
+- [Website Routing & Multi-Site](../architecture/websites.md) -- kung paano nireresolba ang na-proxy na request sa isang simbahan/site sa B1App
+- [API Deployment](./apis.md) -- pag-deploy ng Membership API na naghahain ng `authorize`/`hostmap`

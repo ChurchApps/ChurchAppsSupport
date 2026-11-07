@@ -1,5 +1,7 @@
 ---
-title: "Riwayat Donasi"
+title: "Riwayat dan Laporan Pemberian di B1.church"
+sidebar_label: "Riwayat Donasi"
+description: "Lihat donasi Anda sebelumnya, saring per tahun, dan cetak laporan pemberian untuk pajak dari halaman Giving di portal anggota B1.church."
 ---
 
 # Riwayat Donasi

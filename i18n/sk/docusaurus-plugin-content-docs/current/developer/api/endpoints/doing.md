@@ -1,5 +1,6 @@
 ---
 title: "Koncové body modulu Doing"
+description: "Referencia koncových bodov Doing API, ktoré stoja za servisnými plánmi, dobrovoľníckymi priradeniami, úlohami a automatizáciami v B1 Admin, s cestami, autentifikáciou a oprávneniami."
 ---
 
 # Koncové body modulu Doing
@@ -278,6 +279,6 @@ Preposiela požiadavky externým poskytovateľom obsahu (napr. ProPresenter, Eas
 
 ## Súvisiace stránky
 
-- [Koncové body členstva](./membership) — Ľudia, skupiny, roly a oprávnenia
-- [Koncové body návštevnosti](./attendance) — Sledovanie služieb a návštev
-- [Štruktúra modulu](../module-structure) — Vzory organizácie kódu
+- [Koncové body členstva](./membership.md) — Ľudia, skupiny, roly a oprávnenia
+- [Koncové body návštevnosti](./attendance.md) — Sledovanie služieb a návštev
+- [Štruktúra modulu](../module-structure.md) — Vzory organizácie kódu

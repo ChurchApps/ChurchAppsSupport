@@ -1,5 +1,6 @@
 ---
 title: "Inhalte durchsuchen und herunterladen"
+description: "Bibliothek eines verbundenen Anbieters in FreePlay mit der TV-Fernbedienung durchsuchen und Lektionen oder Videos zum Abspielen laden oder streamen."
 ---
 
 # Inhalte durchsuchen und herunterladen
@@ -13,7 +14,7 @@ Sobald Sie mit einem Inhaltsanbieter verbunden sind, können Sie dessen Biblioth
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Verbinden Sie sich mit mindestens einem Inhaltsanbieter. Siehe [Verbindung zu Anbietern herstellen](./connecting-providers)
+- Verbinden Sie sich mit mindestens einem Inhaltsanbieter. Siehe [Verbindung zu Anbietern herstellen](./connecting-providers.md)
 - Halten Sie Ihre Fernbedienung für die Navigation bereit
 
 </div>
@@ -38,7 +39,7 @@ Sie können so tief navigieren, wie es die Struktur der Inhalte des Anbieters zu
 
 ## Lessons.church durchsuchen
 
-Die Bibliothek von [Lessons.church](../../lessons-church/) ist genauso aufgebaut wie die Website. Auf der obersten Ebene finden Sie zwei Ordner:
+Die Bibliothek von [Lessons.church](../../lessons-church/index.md) ist genauso aufgebaut wie die Website. Auf der obersten Ebene finden Sie zwei Ordner:
 
 - **Lessons**: Gehen Sie nach **Programm**, dann **Studie**, dann **Lektion**. Jede Lektion listet anschließend ihre **Varianten** auf. Das sind Fassungen der Lektion für eine bestimmte Altersgruppe oder einen bestimmten Rahmen, zum Beispiel Vorschule oder Grundschule. Wählen Sie eine Variante, um den Download-Bildschirm für diese Fassung der Lektion zu öffnen.
 - **Add-Ons**: Zusätzliche Videos und Materialien, nach Kategorien geordnet.
@@ -78,7 +79,7 @@ Diese Steuerelemente sind während der Wiedergabe verfügbar:
 Wenn Sie den Player verlassen, kehren Sie zum Inhaltsbrowser auf der obersten Ebene des aktuellen Anbieters zurück.
 
 :::info
-Eine vollständige Übersicht aller Player-Steuerelemente finden Sie unter [Inhalte abspielen](./playing-content).
+Eine vollständige Übersicht aller Player-Steuerelemente finden Sie unter [Inhalte abspielen](./playing-content.md).
 :::
 
 ## Zwischen Anbietern wechseln

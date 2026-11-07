@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Blog van B1.church bekijken en RSS-feeds"
+sidebar_label: "Blog"
+description: "Blader door de blog van je kerk op B1.church en filter op categorie of tag, blader door oudere berichten of volg nieuwe via RSS-feeds."
 ---
 
 # Blog

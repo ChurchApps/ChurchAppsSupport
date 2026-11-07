@@ -1,5 +1,6 @@
 ---
 title: "Odjava a bezpečnosť detí"
+description: "Odhlasujte deti na obsluhovanej stanici B1 Checkin pomocou bezpečnostných kódov, overených vyzdvihovateľov, vyvolania rodičov a núdzových hlásení."
 ---
 
 # Odjava a bezpečnosť detí
@@ -14,7 +15,7 @@ Odhlásenie uzatvára proces prihlasovania detí: rodič predloží bezpečnostn
 <h4>Predtým, ako začnete</h4>
 
 - Odhlásenie je dostupné na staniciach nastavených do režimu **obsadená** v nastaveniach kiosku pre správcov
-- Deti musia byť [prihlásené](./completing-checkin) s vytlačeným štítkom na vyzdvihnutie, ktorý obsahuje bezpečnostný kód
+- Deti musia byť [prihlásené](./completing-checkin.md) s vytlačeným štítkom na vyzdvihnutie, ktorý obsahuje bezpečnostný kód
 - Privolávanie a núdzové hromadné oznámenia vyžadujú, aby vaša cirkev mala v B1 Admin pripojeného poskytovateľa textových správ
 
 </div>
@@ -39,7 +40,7 @@ Ak zadané meno zodpovedá osobe označenej ako **Neoprávnená** pre danú dom�
 Keď je preberajúca osoba potvrdená, klepnite na odhlásiť. Meno osoby, ktorá dieťa prevzala, sa uloží do záznamu o účasti.
 
 :::info
-Dôveryhodné osoby na vyzdvihnutie a neoprávnené osoby spravujú zamestnanci cirkvi na stránke každej osoby v B1 Admin — pozri [Bezpečnosť pri prihlasovaní](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Dôveryhodné osoby na vyzdvihnutie a neoprávnené osoby spravujú zamestnanci cirkvi na stránke každej osoby v B1 Admin — pozri [Bezpečnosť pri prihlasovaní](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Privolanie rodiča
@@ -65,6 +66,6 @@ Oznámenie sa odošle každej prihlásenej domácnosti pre zvolenú bohoslužbu.
 
 ## Súvisiace články
 
-- [Dokončenie prihlásenia](./completing-checkin) — odkiaľ pochádzajú bezpečnostné kódy a štítky na vyzdvihnutie
-- [Bezpečnosť pri prihlasovaní](../../b1-admin/attendance/checkin-safety) — nastavenie kapacít, pomerov, osôb na vyzdvihnutie a požiadavky na poskytovateľa textových správ
-- [Nastavenie tlačiarne](../getting-started/printer-setup) — konfigurácia tlačiarne štítkov
+- [Dokončenie prihlásenia](./completing-checkin.md) — odkiaľ pochádzajú bezpečnostné kódy a štítky na vyzdvihnutie
+- [Bezpečnosť pri prihlasovaní](../../b1-admin/attendance/checkin-safety.md) — nastavenie kapacít, pomerov, osôb na vyzdvihnutie a požiadavky na poskytovateľa textových správ
+- [Nastavenie tlačiarne](../getting-started/printer-setup.md) — konfigurácia tlačiarne štítkov

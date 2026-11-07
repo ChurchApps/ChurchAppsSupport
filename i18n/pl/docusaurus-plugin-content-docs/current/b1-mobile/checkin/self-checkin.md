@@ -1,5 +1,7 @@
 ---
-title: "Samodzielne zameldowanie"
+title: "Samodzielne zameldowanie w aplikacji B1 Mobile"
+sidebar_label: "Samodzielne zameldowanie"
+description: "Zamelduj siebie i swoje gospodarstwo domowe na nabożeństwie w aplikacji B1 Mobile, wybierając godzinę i przypisując każdą osobę do grupy."
 ---
 
 # Samodzielne zameldowanie
@@ -13,7 +15,7 @@ Zameldowanie się w aplikacji B1 Mobile to prosty, wieloetapowy proces. W kilku 
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj aplikację B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) na swoje konto
+- [Zainstaluj aplikację B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) na swoje konto
 - Upewnij się, że [członkowie gospodarstwa domowego](../profile/household.md) są dodani do Twojego profilu
 
 </div>

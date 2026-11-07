@@ -1,5 +1,7 @@
 ---
-title: "Registro Personal"
+title: "Registro de asistencia propio desde la aplicación B1 Mobile"
+sidebar_label: "Registro Personal"
+description: "Registre su asistencia usted y su hogar a un servicio desde la aplicación B1 Mobile, incluida la selección del horario del servicio y la asignación del grupo de cada persona."
 ---
 
 # Registro Personal
@@ -13,7 +15,7 @@ Registrar tu asistencia desde B1 Mobile es un proceso sencillo de varios pasos. 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instala B1 Mobile](../getting-started/installing) e [inicia sesión](../getting-started/logging-in) en tu cuenta
+- [Instala B1 Mobile](../getting-started/installing.md) e [inicia sesión](../getting-started/logging-in.md) en tu cuenta
 - Asegúrate de que los [miembros de tu hogar](../profile/household.md) estén configurados en tu perfil
 
 </div>

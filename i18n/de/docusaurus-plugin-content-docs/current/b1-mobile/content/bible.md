@@ -1,5 +1,7 @@
 ---
-title: "Bibel"
+title: "Bibel lesen in B1 Mobile"
+sidebar_label: "Bibel"
+description: "Lesen Sie die Bibel im integrierten Leser der B1 Mobile App: Bücher, Kapitel und Verse wählen und die Bibeloption Ihrer Gemeinde im Menü finden."
 ---
 
 # Bibel
@@ -13,7 +15,7 @@ B1 Mobile enthält einen integrierten Bibelleser, mit dem du die Heilige Schrift
 <div class="prereqs">
 <h4>Bevor du beginnst</h4>
 
-- [B1 Mobile installieren](../getting-started/installing) und dich [anmelden](../getting-started/logging-in)
+- [B1 Mobile installieren](../getting-started/installing.md) und dich [anmelden](../getting-started/logging-in.md)
 - Deine Kirche muss die Bibelfunktion aktiviert haben
 
 </div>
@@ -37,7 +39,7 @@ Der eingebettete Leser bietet Bedienelemente, um in der Schrift zu navigieren. D
 Der Leser füllt den Bildschirm aus und bietet dir so viel Platz, um auf deinem Gerät bequem zu lesen.
 
 :::tip
-Mach den Bildschirm „Bibel" zu einem festen Bestandteil deines Alltags. So kannst du jederzeit und überall schnell in der Schrift lesen. Kombiniere ihn mit dem [Vers des Tages](./verse-of-the-day) für tägliche Inspiration.
+Mach den Bildschirm „Bibel" zu einem festen Bestandteil deines Alltags. So kannst du jederzeit und überall schnell in der Schrift lesen. Kombiniere ihn mit dem [Vers des Tages](./verse-of-the-day.md) für tägliche Inspiration.
 :::
 
 ## Verfügbarkeit
@@ -46,6 +48,6 @@ Der Bildschirm „Bibel" steht zur Verfügung, wenn deine Kirche diese Funktion 
 
 ## Verwandte Artikel
 
-- [Vers des Tages](./verse-of-the-day) -- Ein tägliches Bibelwort sehen
-- [Predigten](./sermons) -- Predigten ansehen, die dein Bibellesen ergänzen
+- [Vers des Tages](./verse-of-the-day.md) -- Ein tägliches Bibelwort sehen
+- [Predigten](./sermons.md) -- Predigten ansehen, die dein Bibellesen ergänzen
 - [FreePlay](/docs/freeplay/) -- Strukturierte Lehrpläne auf Fernsehern im Klassenzimmer abspielen (ersetzt den veralteten Lessons-Bildschirm in der App)

@@ -1,5 +1,6 @@
 ---
 title: "Modelli di email"
+description: "Configura modelli di email e SMS in B1 Admin con campi unione, opzioni per i messaggi di testo e anteprime per le comunicazioni di massa."
 ---
 
 # Modelli di email

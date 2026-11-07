@@ -1,5 +1,7 @@
 ---
-title: "Self Check-In"
+title: "Self Check-In mula sa B1 Mobile App"
+sidebar_label: "Self Check-In"
+description: "I-check in ang sarili at sambahayan sa serbisyo gamit ang B1 Mobile app, pumili ng oras ng serbisyo at grupo ng bawat tao."
 ---
 
 # Self Check-In
@@ -13,7 +15,7 @@ Ang pag-check in mula sa B1 Mobile ay isang direkta at multi-step na proseso. Sa
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [I-install ang B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
 - Siguraduhing naka-set up na ang iyong [mga miyembro ng sambahayan](../profile/household.md) sa iyong profile
 
 </div>

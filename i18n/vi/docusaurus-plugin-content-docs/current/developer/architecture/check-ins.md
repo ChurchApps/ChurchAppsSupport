@@ -1,5 +1,6 @@
 ---
 title: "Check-Ins"
+description: "Cách điểm danh hoạt động giữa B1Checkin, B1App và B1 Admin: mô hình dữ liệu điểm danh, nhóm như phòng, giới hạn sức chứa và quy tắc an toàn khi đón trẻ."
 ---
 
 # Check-Ins
@@ -216,7 +217,7 @@ Có hai cách tạo người giữa lúc điểm danh:
 
 ## Trang liên quan
 
-- [Attendance Endpoints](../api/endpoints/attendance) -- Toàn bộ REST cho campus, dịch vụ, buổi họp, lượt đến và lượt đến theo buổi
-- [Membership Endpoints](../api/endpoints/membership) -- Người, hộ gia đình và nhóm
-- [Webhooks](../api/webhooks) -- Các sự kiện `session.created`, `attendance.recorded` và `attendance.checkout`
-- [Module Structure](../api/module-structure) -- Cách module điểm danh được tổ chức phía máy chủ
+- [Attendance Endpoints](../api/endpoints/attendance.md) -- Toàn bộ REST cho campus, dịch vụ, buổi họp, lượt đến và lượt đến theo buổi
+- [Membership Endpoints](../api/endpoints/membership.md) -- Người, hộ gia đình và nhóm
+- [Webhooks](../api/webhooks.md) -- Các sự kiện `session.created`, `attendance.recorded` và `attendance.checkout`
+- [Module Structure](../api/module-structure.md) -- Cách module điểm danh được tổ chức phía máy chủ

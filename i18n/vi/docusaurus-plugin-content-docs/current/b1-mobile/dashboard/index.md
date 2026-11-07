@@ -1,5 +1,6 @@
 ---
 title: "Bảng điều khiển"
+description: "Tìm hiểu màn hình chính của B1 Mobile, nơi các tính năng dùng nhiều nhất hiển thị thành thẻ lớn, còn lại nằm trong Thao tác nhanh."
 ---
 
 # Bảng điều khiển
@@ -28,7 +29,7 @@ Bên dưới thẻ chính, bạn sẽ thấy tối đa hai **thẻ nổi bật**
 
 ## Thao tác nhanh
 
-Các tính năng còn lại xuất hiện trong lưới **Thao tác nhanh** bên dưới các thẻ nổi bật. Mỗi mục hiển thị một biểu tượng và nhãn. Đây là tất cả các liên kết điều hướng khác mà nhà thờ đã cấu hình, giúp bạn truy cập mọi thứ từ [nhóm](../groups/) và [quyên góp](../giving/) đến [check-in](../checkin/), [bài giảng](../content/sermons.md) và nhiều mục khác.
+Các tính năng còn lại xuất hiện trong lưới **Thao tác nhanh** bên dưới các thẻ nổi bật. Mỗi mục hiển thị một biểu tượng và nhãn. Đây là tất cả các liên kết điều hướng khác mà nhà thờ đã cấu hình, giúp bạn truy cập mọi thứ từ [nhóm](../groups/index.md) và [quyên góp](../giving/index.md) đến [check-in](../checkin/index.md), [bài giảng](../content/sermons.md) và nhiều mục khác.
 
 ## Cách bố cục thích ứng
 
@@ -41,7 +42,7 @@ Bố cục bảng điều khiển được cá nhân hóa dựa trên thói quen
 Nếu bạn chưa sử dụng ứng dụng, các tính năng sẽ hiển thị theo thứ tự mặc định mà nhà thờ đã cấu hình. Theo thời gian, bảng điều khiển sẽ sắp xếp lại để phù hợp với thói quen của bạn.
 
 :::info
-Các tính năng có trên bảng điều khiển của bạn do quản trị viên nhà thờ cấu hình thông qua [B1 Admin](../../b1-admin/). Nếu bạn không thấy tính năng mong đợi, hãy liên hệ với văn phòng nhà thờ.
+Các tính năng có trên bảng điều khiển của bạn do quản trị viên nhà thờ cấu hình thông qua [B1 Admin](../../b1-admin/index.md). Nếu bạn không thấy tính năng mong đợi, hãy liên hệ với văn phòng nhà thờ.
 :::
 
 ## Làm mới bảng điều khiển

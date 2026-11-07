@@ -1,5 +1,6 @@
 ---
 title: "Endepunktreferanse"
+description: "Finn ChurchApps API-endepunkter etter modul, med HTTP-metode, sti, autentisering og tillatelse for hver rute, samt batchlagring og feilkonvensjoner."
 ---
 
 # Endepunktreferanse
@@ -89,10 +90,10 @@ Rapportparametere sendes som spørringsstrengverdier (f.eks. `?startDate=2024-01
 
 | Modul | Basissti | Beskrivelse |
 |-------|----------|-------------|
-| [Authentication](./authentication) | `/membership/users`, `/membership/oauth` | Innlogging, registrering, JWT-tokens, OAuth, tillatelser |
-| [Membership](./membership) | `/membership/*` | Personer, kirker, grupper, husstander, roller, skjemaer, innstillinger |
-| [Attendance](./attendance) | `/attendance/*` | Campus, gudstjenester, økter, besøk, innsjekkingsregistreringer |
-| [Content](./content) | `/content/*` | Sider, prekener, hendelser, filer, gallerier, Bibel, strømming |
-| [Giving](./giving) | `/giving/*` | Gaver, fond, betalingsportaler, abonnementer |
-| [Messaging](./messaging) | `/messaging/*` | Samtaler, varsler, enheter, SMS |
-| [Doing](./doing) | `/doing/*` | Planer, oppgaver, tildelinger, automatiseringer, planlegging |
+| [Authentication](./authentication.md) | `/membership/users`, `/membership/oauth` | Innlogging, registrering, JWT-tokens, OAuth, tillatelser |
+| [Membership](./membership.md) | `/membership/*` | Personer, kirker, grupper, husstander, roller, skjemaer, innstillinger |
+| [Attendance](./attendance.md) | `/attendance/*` | Campus, gudstjenester, økter, besøk, innsjekkingsregistreringer |
+| [Content](./content.md) | `/content/*` | Sider, prekener, hendelser, filer, gallerier, Bibel, strømming |
+| [Giving](./giving.md) | `/giving/*` | Gaver, fond, betalingsportaler, abonnementer |
+| [Messaging](./messaging.md) | `/messaging/*` | Samtaler, varsler, enheter, SMS |
+| [Doing](./doing.md) | `/doing/*` | Planer, oppgaver, tildelinger, automatiseringer, planlegging |

@@ -1,5 +1,6 @@
 ---
 title: "Tredjeparts-leverandører"
+description: "Legg til en ekstern læreplanfeed i Lessons.church fra siden for tredjepartsleverandører, og vis, oppdater eller fjern leverandørtilkoblinger etter behov."
 ---
 
 # Tredjeparts-leverandører

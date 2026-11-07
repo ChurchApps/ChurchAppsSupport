@@ -1,5 +1,6 @@
 ---
 title: "Kişiler"
+description: "B1 Admin'deki Kişiler bölümünde kilise üyelerini arayın, ekleyin ve düzenleyin; hane takibi, toplu güncellemeler ve dizin yazdırma ile dışa aktarma dahil."
 ---
 
 # Kişiler

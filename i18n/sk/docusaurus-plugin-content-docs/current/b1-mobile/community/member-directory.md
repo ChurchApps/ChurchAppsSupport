@@ -1,5 +1,7 @@
 ---
-title: "Členský adresár"
+title: "Adresár členov v aplikácii B1 Mobile"
+sidebar_label: "Členský adresár"
+description: "Nájdite ľudí vo svojej cirkvi pomocou adresára členov B1 Mobile: prehliadajte abecedne, vyhľadávajte podľa mena a otvárajte profily a odkazy na domácnosti."
 ---
 
 # Členský adresár
@@ -13,7 +15,7 @@ title: "Členský adresár"
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- [Nainštalujte aplikáciu B1 Mobile](../getting-started/installing) a [sa prihláste](../getting-started/logging-in) do svojho účtu
+- [Nainštalujte aplikáciu B1 Mobile](../getting-started/installing.md) a [sa prihláste](../getting-started/logging-in.md) do svojho účtu
 
 </div>
 
@@ -51,5 +53,5 @@ Toto je obzvlášť užitočné voväčších zboroch, kde by rolovanie celým z
 
 ## Súvisiace články
 
-- [Správy](./messaging) -- Pošlite súkromnú správu osobe, ktorú nájdete v adresári
+- [Správy](./messaging.md) -- Pošlite súkromnú správu osobe, ktorú nájdete v adresári
 - [Nastavenia súkromia](../profile/privacy-settings.md) -- Ovládajte, čo môžu ostatní vidieť o vás v adresári

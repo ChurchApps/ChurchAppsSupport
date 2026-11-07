@@ -1,5 +1,6 @@
 ---
 title: "Shared Libraries"
+description: "Documentatie voor de @churchapps npm-pakketten die B1 Admin, B1.church en de API's delen, en hoe je de Packages-workspace instelt en releaset met changesets."
 ---
 
 # Shared Libraries
@@ -14,9 +15,9 @@ ChurchApps gedeelde code wordt naar npm gepubliceerd onder het `@churchapps/*`-b
 
 | Package | Beschrijving | Used By |
 |---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | Basisutilities (DateHelper, ApiHelper, enz.) | Alle projecten |
-| [`@churchapps/apihelper`](./api-helper) | Express.js-serverutilities | Alle API's |
-| [`@churchapps/apphelper`](./app-helper) | Gedeelde React-onderdelen en utilities | Alle web-apps |
+| [`@churchapps/helpers`](./helpers.md) | Basisutilities (DateHelper, ApiHelper, enz.) | Alle projecten |
+| [`@churchapps/apihelper`](./api-helper.md) | Express.js-serverutilities | Alle API's |
+| [`@churchapps/apphelper`](./app-helper.md) | Gedeelde React-onderdelen en utilities | Alle web-apps |
 
 ## Lokale Ontwikkeling met `npm link`
 

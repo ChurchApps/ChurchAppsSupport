@@ -1,5 +1,6 @@
 ---
 title: "Skapa formulär"
+description: "Skapa egna formulär i B1 Admin för eventanmälningar, enkäter och besökskort och dela dem via länk, QR-kod eller utskrift."
 ---
 
 # Skapa formulär

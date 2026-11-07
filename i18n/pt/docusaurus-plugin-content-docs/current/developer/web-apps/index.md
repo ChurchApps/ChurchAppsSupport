@@ -1,5 +1,6 @@
 ---
 title: "Aplicações Web"
+description: "Visão geral dos três apps web da ChurchApps (B1 Admin, B1.church, Lessons.church), com a stack React e MUI compartilhada, pacotes apphelper e build."
 ---
 
 # Aplicações Web
@@ -41,7 +42,7 @@ As aplicações compartilham componentes de UI e utilitários através da famíl
 | `@churchapps/apphelper-website` | Componentes de website/CMS |
 
 :::tip
-Para detalhes sobre o desenvolvimento desses pacotes compartilhados localmente, veja a documentação do [AppHelper](../shared-libraries/app-helper).
+Para detalhes sobre o desenvolvimento desses pacotes compartilhados localmente, veja a documentação do [AppHelper](../shared-libraries/app-helper.md).
 :::
 
 ## Script Postinstall

@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "Référence du paquet @churchapps/apphelper (espace Packages) : points d'entrée, applications consommatrices de chaque export, dev local et publication."
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ Le paquet `@churchapps/apphelper` fournit des composants React partagés et des 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Installez **Node.js** et **Git** -- voir [Conditions préalables](../setup/prerequisites)
+- Installez **Node.js** et **Git** -- voir [Conditions préalables](../setup/prerequisites.md)
 - Familiarisez-vous avec la configuration de l'espace de travail [Packages](./index.md) et le flux de libération
 
 </div>
@@ -92,6 +93,6 @@ Ne supprimez ou renommez jamais une exportation jusqu'à ce que le remplacement 
 
 ## Articles connexes
 
-- **[Helpers](./helpers)** -- Le paquet d'utilitaires de base utilisé aux côtés d'AppHelper
-- **[Applications web](../web-apps/)** -- Les applications web qui consomment ce paquet
+- **[Helpers](./helpers.md)** -- Le paquet d'utilitaires de base utilisé aux côtés d'AppHelper
+- **[Applications web](../web-apps/index.md)** -- Les applications web qui consomment ce paquet
 - **[Aperçu des bibliothèques partagées](./index.md)** -- Configuration de l'espace de travail, flux de libération et flux de liaison locale

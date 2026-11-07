@@ -1,5 +1,6 @@
 ---
 title: "Adăugarea oaspeților"
+description: "Adaugă un copil în vizită, o rudă sau un prieten la o gospodărie la chioșcul B1 Checkin, apoi alocă grupe și finalizează check-in-ul."
 ---
 
 # Adăugarea oaspeților
@@ -13,8 +14,8 @@ Dacă cineva vizitează familia dumneavoastră și trebuie să se înregistreze 
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Căutați familia dumneavoastră](./looking-up-members) și selectați un membru din rezultatele căutării
-- Aflați-vă pe [ecranul de verificare a gospodăriei](./household-review), unde puteți vedea membrii familiei dumneavoastră
+- [Căutați familia dumneavoastră](./looking-up-members.md) și selectați un membru din rezultatele căutării
+- Aflați-vă pe [ecranul de verificare a gospodăriei](./household-review.md), unde puteți vedea membrii familiei dumneavoastră
 
 </div>
 
@@ -36,8 +37,8 @@ Dacă numele oaspetelui corespunde unei persoane deja existente în sistem, care
 
 Odată ce oaspetele apare în lista gospodăriei, puteți:
 
-- **Extindeți cardul său** și [atribuiți-l unui grup](./group-assignment), exact ca pe orice alt membru al familiei.
-- **[Înregistrați](./completing-checkin)** întreaga gospodărie, inclusiv oaspetele.
+- **Extindeți cardul său** și [atribuiți-l unui grup](./group-assignment.md), exact ca pe orice alt membru al familiei.
+- **[Înregistrați](./completing-checkin.md)** întreaga gospodărie, inclusiv oaspetele.
 
 ## Anularea
 
@@ -49,4 +50,4 @@ Adăugarea unui oaspete de la chioșc creează o înregistrare de persoană în 
 
 ## Pasul următor
 
-După ce ați adăugat oaspeții și ați [atribuit grupurile](./group-assignment) necesare, sunteți pregătit să [finalizați înregistrarea](./completing-checkin).
+După ce ați adăugat oaspeții și ați [atribuit grupurile](./group-assignment.md) necesare, sunteți pregătit să [finalizați înregistrarea](./completing-checkin.md).

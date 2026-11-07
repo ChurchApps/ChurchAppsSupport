@@ -1,5 +1,6 @@
 ---
 title: "Plan Validation & Notifications"
+description: "Suriin ang service plan sa B1 Admin para sa bakanteng posisyon, banggaan ng iskedyul, at boluntaryong hindi available, saka abisuhan ang buong team sa isang click."
 ---
 
 # Plan Validation & Volunteer Notifications

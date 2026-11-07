@@ -1,5 +1,6 @@
 ---
 title: "Lehreransicht für Lektionen"
+description: "Lektion in der Vollbild-Lehreransicht aus einem Plan auf B1.church öffnen, zwischen Abschnitten springen, Medien abspielen und Material herunterladen."
 ---
 
 # Lehreransicht für Lektionen

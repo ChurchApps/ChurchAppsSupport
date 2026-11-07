@@ -1,5 +1,6 @@
 ---
 title: "Bildirim Tercihleri"
+description: "B1 Admin ve B1 uygulamasında her bildirim türü için bildirim kanallarını, e-posta sıklığını, sessiz saatleri ve metin mesajı aboneliğini tek ekrandan ayarlayın."
 ---
 
 # Bildirim Tercihleri
@@ -60,6 +61,6 @@ Güvenlik uyarısı veya çocuk check-in güvenlik mesajı gibi zamana duyarlı 
 
 ## İlgili Konular
 
-- [Gönüllü Kaydı](../serving/volunteer-signup) -- Hizmet hatırlatmaları ve program taleplerine yanıt verme
-- [Etkinliklere Kayıt Olma](../events/registering) -- Hatırlatma gönderen etkinliklere kaydolun
-- [Uygulamayı Yükleme](installing-pwa) -- Anlık bildirim alabilmeniz için B1'i cihazınıza ekleyin
+- [Gönüllü Kaydı](../serving/volunteer-signup.md) -- Hizmet hatırlatmaları ve program taleplerine yanıt verme
+- [Etkinliklere Kayıt Olma](../events/registering.md) -- Hatırlatma gönderen etkinliklere kaydolun
+- [Uygulamayı Yükleme](./installing-pwa.md) -- Anlık bildirim alabilmeniz için B1'i cihazınıza ekleyin

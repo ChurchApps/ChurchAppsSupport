@@ -1,5 +1,6 @@
 ---
 title: "Visão Geral de Planos"
+description: "Veja as escalas de voluntários de várias datas no B1 Admin, identifique vagas e preencha ou envie e-mails à equipe a partir de uma única grade."
 ---
 
 # Visão Geral de Planos

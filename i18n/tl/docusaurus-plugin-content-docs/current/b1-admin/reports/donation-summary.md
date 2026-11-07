@@ -1,5 +1,6 @@
 ---
 title: "Donation Summary"
+description: "Patakbuhin ang Donation Summary sa B1 Admin para makita ang kabuuang handog, bilang ng natatanging donor, at halaga kada fund sa napiling petsa."
 ---
 
 # Donation Summary

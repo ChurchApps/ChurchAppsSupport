@@ -1,5 +1,6 @@
 ---
 title: "Validazione dei piani e notifiche"
+description: "Verifica in B1 Admin i piani di culto per posizioni scoperte, conflitti di orario e volontari non disponibili, poi notifica l'intero team con un clic."
 ---
 
 # Validazione dei piani e notifiche ai volontari

@@ -1,5 +1,7 @@
 ---
-title: "Jäsenhakemisto"
+title: "Jäsenluettelo B1.church-jäsenportaalissa"
+sidebar_label: "Jäsenhakemisto"
+description: "Hae ja selaa seurakunnan jäseniä B1.church-luettelosta, katso heidän profiilejaan ja talouden jäseniä sekä se, kuka pääsee luetteloon."
 ---
 
 # Jäsenhakemisto

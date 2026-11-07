@@ -1,5 +1,6 @@
 ---
 title: "Pranešimų ir priminimų architektūra"
+description: "Kaip B1 Admin API nukreipia pranešimus, planuojamus priminimus, bažnyčios el. laiškų limitus ir SMS atsisakymus per vieną pristatymo kanalą."
 ---
 
 # Pranešimų ir priminimų architektūra
@@ -185,6 +186,6 @@ Vietoje tą pačią logiką galima paleisti pagal poreikį su `npm run timer:30m
 
 ## Susiję puslapiai
 
-- [Realaus laiko architektūra](../realtime) — WebSocket protokolas ir kliento primityvai (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), ant kurių remiasi programos viduje pristatymo lygis
-- [Web Push pranešimai](../web-push) — VAPID nustatymas ir naršyklės Push API kelias, naudojamas push eskalacijos lygyje
-- [Messaging galutiniai taškai](../api/endpoints/messaging) — pilnas REST paviršius žinutėms, pokalbiams, ryšiams ir pranešimų / priminimų maršrutams
+- [Realaus laiko architektūra](../realtime.md) — WebSocket protokolas ir kliento primityvai (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), ant kurių remiasi programos viduje pristatymo lygis
+- [Web Push pranešimai](../web-push.md) — VAPID nustatymas ir naršyklės Push API kelias, naudojamas push eskalacijos lygyje
+- [Messaging galutiniai taškai](../api/endpoints/messaging.md) — pilnas REST paviršius žinutėms, pokalbiams, ryšiams ir pranešimų / priminimų maršrutams

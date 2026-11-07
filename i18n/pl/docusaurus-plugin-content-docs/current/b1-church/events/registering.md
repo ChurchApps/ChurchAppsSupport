@@ -1,5 +1,7 @@
 ---
-title: "Rejestracja na wydarzenia"
+title: "Rejestracja na wydarzenie w B1.church"
+sidebar_label: "Rejestracja na wydarzenia"
+description: "Zapisz się na wydarzenie w B1.church: podaj dane, dodaj członków rodziny, wybierz opcje, zastosuj kod rabatowy i zapłać lub dołącz do listy oczekujących."
 ---
 
 # Rejestracja na wydarzenia
@@ -79,14 +81,14 @@ Pojawi się komunikat potwierdzający z danymi wydarzenia i listą wszystkich za
 
 ## Dołączanie do listy oczekujących
 
-Jeśli wydarzenie jest pełne, a Twój kościół włączył listę oczekujących, pierwszy krok pokaże komunikat: *„To wydarzenie jest pełne. Możesz dołączyć do listy oczekujących, a my powiadomimy Cię, gdy zwolni się miejsce."* Dokończ zapisy jak zwykle — płatność zostanie pominięta, dopóki jesteś na liście oczekujących. Gdy zwolni się miejsce, otrzymasz e-mail; jeśli wymagana jest płatność, zawiera on link do jej dokonania. Swój status i płatność możesz też sprawdzić w sekcji [Moje rejestracje](./my-registrations).
+Jeśli wydarzenie jest pełne, a Twój kościół włączył listę oczekujących, pierwszy krok pokaże komunikat: *„To wydarzenie jest pełne. Możesz dołączyć do listy oczekujących, a my powiadomimy Cię, gdy zwolni się miejsce."* Dokończ zapisy jak zwykle — płatność zostanie pominięta, dopóki jesteś na liście oczekujących. Gdy zwolni się miejsce, otrzymasz e-mail; jeśli wymagana jest płatność, zawiera on link do jej dokonania. Swój status i płatność możesz też sprawdzić w sekcji [Moje rejestracje](./my-registrations.md).
 
 ## Zmiana lub anulowanie rejestracji
 
-Jeśli jesteś zalogowany, możesz samodzielnie edytować lub anulować swoją rejestrację na stronie **Rejestracje** w portalu członka — zobacz [Moje rejestracje](./my-registrations). Goście powinni skontaktować się z biurem kościoła, a pracownicy mogą wprowadzić zmianę na stronie rejestracji w B1 Admin.
+Jeśli jesteś zalogowany, możesz samodzielnie edytować lub anulować swoją rejestrację na stronie **Rejestracje** w portalu członka — zobacz [Moje rejestracje](./my-registrations.md). Goście powinni skontaktować się z biurem kościoła, a pracownicy mogą wprowadzić zmianę na stronie rejestracji w B1 Admin.
 
 ## Powiązane artykuły
 
 - [Przegląd wydarzeń](./index.md) — przeglądaj nadchodzące wydarzenia z rejestracją
-- [Moje rejestracje](./my-registrations) — przeglądaj, edytuj, opłacaj salda i anuluj swoje rejestracje
-- [Składanie darowizn](../giving/making-donations) — składaj darowiznę podczas udziału w wydarzeniu
+- [Moje rejestracje](./my-registrations.md) — przeglądaj, edytuj, opłacaj salda i anuluj swoje rejestracje
+- [Składanie darowizn](../giving/making-donations.md) — składaj darowiznę podczas udziału w wydarzeniu

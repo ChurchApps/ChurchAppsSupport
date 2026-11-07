@@ -1,5 +1,6 @@
 ---
 title: "B1 Church Checkin -yleiskatsaus"
+description: "Määritä B1 Church Checkin -kioskisovellus iPad- tai Android-tableteille: perheet kirjautuvat itse sisään, lapset ryhmiin ja tulostetaan tarrat ja noutolaput."
 ---
 
 # B1 Church Checkin -yleiskatsaus
@@ -24,7 +25,7 @@ Aseta iPad tai Android-tabletti aulaan tai tervetuloaalueelle. Jäsenet kävelev
 - **Talouden tarkistus** -- Näet kaikki perheenjäsenet kuvineen ja nykyisine ryhmätehtävineen yhdellä silmäyksellä.
 - **Ryhmätehtävien määrittäminen** -- Määritä jokainen perheenjäsen oikeaan luokkaan tai ryhmään valitun palveluajan mukaan.
 - **Vieraiden sisäänkirjaus** -- Lisää vieras talouteesi paikan päällä etu- ja sukunimellä.
-- **QR-koodilla tapahtuva vierasrekisteröinti** -- Näytä QR-koodi, jonka vierailijat voivat skannata ja [rekisteröityä](../b1-church/checkin/guest-registration) omalla puhelimellaan ennen sisäänkirjautumista. Vaihtoehtoisesti he voivat napauttaa **Register here** -painiketta ja täyttää saman lomakkeen kioskilla.
+- **QR-koodilla tapahtuva vierasrekisteröinti** -- Näytä QR-koodi, jonka vierailijat voivat skannata ja [rekisteröityä](../b1-church/checkin/guest-registration.md) omalla puhelimellaan ennen sisäänkirjautumista. Vaihtoehtoisesti he voivat napauttaa **Register here** -painiketta ja täyttää saman lomakkeen kioskilla.
 - **Tarrojen tulostus** -- Tulosta lasten nimilaput ja vanhempien noutolaput, joissa on yksilölliset turvakoodit.
 - **Verkkotulostimien tuki** -- Etsi ja määritä verkkotulostimia suoraan sovelluksesta.
 - **Automaattinen kirjautuminen** -- Ensimmäisen kirjautumisen jälkeen sovellus muistaa tunnuksesi ja avautuu seuraavilla käynnistyskerroilla suoraan palveluruutuun.
@@ -33,8 +34,8 @@ Aseta iPad tai Android-tabletti aulaan tai tervetuloaalueelle. Jäsenet kävelev
 
 ## Dokumentaation osiot
 
-- **[Aloittaminen](./getting-started/)** -- Sovelluksen asentaminen, kirjautuminen ja tulostimen määrittäminen.
-- **[Sisäänkirjautumisprosessi](./check-in/)** -- Koko sisäänkirjautumisprosessi palvelun valinnasta tarrojen tulostukseen.
+- **[Aloittaminen](./getting-started/index.md)** -- Sovelluksen asentaminen, kirjautuminen ja tulostimen määrittäminen.
+- **[Sisäänkirjautumisprosessi](./check-in/index.md)** -- Koko sisäänkirjautumisprosessi palvelun valinnasta tarrojen tulostukseen.
 
 :::tip
 B1 Church Checkin toimii parhaiten 10 tuuman tabletilla (iPad tai Android), joka on kiinnitetty vaakasuuntaan niin, että perheet yltävät siihen helposti. Lataa sovellus [Apple App Storesta](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Kaupasta](https://play.google.com/store/apps/details?id=church.b1.checkin) tai [Amazon App Storesta](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).

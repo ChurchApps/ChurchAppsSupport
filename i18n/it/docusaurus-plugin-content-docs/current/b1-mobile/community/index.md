@@ -1,5 +1,7 @@
 ---
-title: "Comunità"
+title: "Funzioni della community nell'app B1 Mobile"
+sidebar_label: "Comunità"
+description: "Usa l'app B1 Mobile per cercare nella rubrica dei membri, inviare messaggi privati agli altri membri e leggere le notifiche push della tua chiesa."
 ---
 
 # Comunità
@@ -12,13 +14,13 @@ Le funzionalità di **Comunità** in B1 Mobile ti aiutano a restare connesso con
 
 ## Cosa Troverai
 
-- **[Elenco Membri](./member-directory)** -- Sfoglia e cerca nell'elenco dei membri della tua chiesa. Cerca le persone per nome e tocca un membro per visualizzare il suo profilo con informazioni di contatto e connessioni familiari.
-- **[Messaggistica](./messaging)** -- Invia e ricevi messaggi privati con altri membri della chiesa. Inizia nuove conversazioni o riprendi da dove avevi lasciato con quelle esistenti.
-- **[Notifiche](./notifications)** -- Resta aggiornato con notifiche push sull'attività dei gruppi, messaggi, assegnazioni di servizio e altri aggiornamenti importanti dalla tua chiesa.
+- **[Elenco Membri](./member-directory.md)** -- Sfoglia e cerca nell'elenco dei membri della tua chiesa. Cerca le persone per nome e tocca un membro per visualizzare il suo profilo con informazioni di contatto e connessioni familiari.
+- **[Messaggistica](./messaging.md)** -- Invia e ricevi messaggi privati con altri membri della chiesa. Inizia nuove conversazioni o riprendi da dove avevi lasciato con quelle esistenti.
+- **[Notifiche](./notifications.md)** -- Resta aggiornato con notifiche push sull'attività dei gruppi, messaggi, assegnazioni di servizio e altri aggiornamenti importanti dalla tua chiesa.
 
 ## Per Iniziare
 
-Devi essere connesso per accedere alle funzionalità della comunità. Se non hai effettuato l'accesso, ti verrà chiesto di [accedere](../getting-started/logging-in) quando provi a usare una di queste sezioni.
+Devi essere connesso per accedere alle funzionalità della comunità. Se non hai effettuato l'accesso, ti verrà chiesto di [accedere](../getting-started/logging-in.md) quando provi a usare una di queste sezioni.
 
 L'elenco dei membri, la messaggistica e le notifiche sono accessibili dalla navigazione dell'app. Insieme, ti offrono un modo semplice per trovare persone, comunicare privatamente e restare aggiornato su ciò che accade nella tua chiesa.
 

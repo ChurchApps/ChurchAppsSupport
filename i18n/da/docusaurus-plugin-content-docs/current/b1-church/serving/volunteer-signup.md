@@ -1,5 +1,7 @@
 ---
-title: "Frivilligtilmelding"
+title: "Frivillig tilmelding i B1.church-medlemsportalen"
+sidebar_label: "Frivilligtilmelding"
+description: "Gennemse ledige frivillige positioner efter kategori og tilmeld dig kommende gudstjenester, eller fjern din tilmelding på B1.church inden fristen."
 ---
 
 # Frivilligtilmelding
@@ -73,4 +75,4 @@ Tjek frivilligsiden regelmæssigt, især tidligt på ugen. Populære positioner 
 ## Relaterede artikler
 
 - [Oversigtover tjening](./index.md) -- Oversigt over tjeneste funktioner på B1.church
-- [Se planer](../plans/viewing-plans) -- Se dine tildelte planer og serviceordrer
+- [Se planer](../plans/viewing-plans.md) -- Se dine tildelte planer og serviceordrer

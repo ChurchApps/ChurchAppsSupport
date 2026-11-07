@@ -1,5 +1,6 @@
 ---
 title: "Configurando Salas de Aula"
+description: "Crie, renomeie e remova salas no portal do Lessons.church para que cada sala ou faixa etária esteja pronta para o agendamento semanal de lições."
 ---
 
 # Configurando Salas de Aula

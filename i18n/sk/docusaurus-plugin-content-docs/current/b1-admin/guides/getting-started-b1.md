@@ -1,5 +1,6 @@
 ---
 title: "Sprievodca: Ako začať s B1 vo vašej cirkvi"
+description: "Prejdite nastavením nového zboru v B1 Admin: vytvorte účet, nakonfigurujte nastavenia, pridajte roly, importujte členov a spustite hlavné funkcie."
 ---
 
 # Ako začať s B1 vo vašej cirkvi

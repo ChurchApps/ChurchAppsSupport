@@ -1,5 +1,6 @@
 ---
 title: "Kampanye & Janji Dana"
+description: "Buat kampanye penggalangan dana di B1 Admin, catat janji donasi anggota, dan pantau kemajuan menuju target dibandingkan donasi aktual ke setiap dana."
 ---
 
 # Kampanye & Janji Dana
@@ -13,7 +14,7 @@ Kampanye memungkinkan Anda menjalankan penggalangan dana menuju tujuan tertentu,
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- Siapkan [dana donasi](funds) Anda terlebih dahulu, karena setiap kampanye terhubung dengan satu dana
+- Siapkan [dana donasi](./funds.md) Anda terlebih dahulu, karena setiap kampanye terhubung dengan satu dana
 - Anda memerlukan akses ke bagian Donasi di B1 Admin
 
 </div>
@@ -66,6 +67,6 @@ Klik **Edit** pada baris kampanye mana pun (atau **Edit Kampanye** di bagian ata
 
 ## Artikel Terkait
 
-- [Mencatat Donasi](recording-donations): mencatat pemberian sebenarnya yang memenuhi janji dana
-- [Dana](funds): menyiapkan dana yang akan dikaitkan dengan kampanye
-- [Laporan Donasi](donation-reports): pelaporan donasi berdasarkan dana
+- [Mencatat Donasi](./recording-donations.md): mencatat pemberian sebenarnya yang memenuhi janji dana
+- [Dana](./funds.md): menyiapkan dana yang akan dikaitkan dengan kampanye
+- [Laporan Donasi](./donation-reports.md): pelaporan donasi berdasarkan dana

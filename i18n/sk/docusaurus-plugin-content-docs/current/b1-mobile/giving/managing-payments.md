@@ -1,5 +1,6 @@
 ---
 title: "Správa platobných metód"
+description: "Pridávajte, kontrolujte a odstraňujte uložené karty na karte Spravovať v sekcii darov B1 Mobile, aby sa opakované dary robili rýchlejšie bez opätovného zadávania údajov karty."
 ---
 
 # Správa platobných metód
@@ -13,7 +14,7 @@ Karta **Spravovať** v sekcii darovania vám umožňuje zobraziť a spravovať u
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- [Nainštalujte aplikáciu B1 Mobile](../getting-started/installing) a [sa prihláste](../getting-started/logging-in) do svojho účtu
+- [Nainštalujte aplikáciu B1 Mobile](../getting-started/installing.md) a [sa prihláste](../getting-started/logging-in.md) do svojho účtu
 
 </div>
 
@@ -31,7 +32,7 @@ Ak chcete pridať novú kartu:
 4. Zadajte údaje o karte. Informácie sa bezpečne odošlú spoločnosti **Stripe** na spracovanie.
 5. Po uložení sa nová karta zobrazí vo vašom zozname platobných metód.
 
-Vaša uložená karta bude potom k dispozícii ako možnosť platby pri ďalšom [darovaní](./making-donations) z karty **Darovať**.
+Vaša uložená karta bude potom k dispozícii ako možnosť platby pri ďalšom [darovaní](./making-donations.md) z karty **Darovať**.
 
 ## Odstránenie platobnej metódy
 
@@ -44,7 +45,7 @@ Ak už nechcete mať kartu uloženú, môžete ju odstrániť na karte **Spravov
 Karta sa už nebude zobrazovať ako možnosť platby pri darovaní.
 
 :::info
-Odstránenie platobnej metódy neovplyvní žiadne minulé dary. Vaša [história darov](./donation-history) zostane nezmenená.
+Odstránenie platobnej metódy neovplyvní žiadne minulé dary. Vaša [história darov](./donation-history.md) zostane nezmenená.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Ponechajte si aspoň jednu uloženú platobnú metódu pre rýchle darovanie. Po
 
 ## Súvisiace články
 
-- [Darovanie](./making-donations) -- Naučte sa, ako darovať pomocou uloženej platobnej metódy
-- [História darov](./donation-history) -- Zobrazte si prehľad darovania a minulé dary
+- [Darovanie](./making-donations.md) -- Naučte sa, ako darovať pomocou uloženej platobnej metódy
+- [História darov](./donation-history.md) -- Zobrazte si prehľad darovania a minulé dary

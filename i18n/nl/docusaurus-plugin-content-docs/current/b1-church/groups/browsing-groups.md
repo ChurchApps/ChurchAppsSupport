@@ -1,5 +1,6 @@
 ---
 title: "Groepen Zoeken"
+description: "Blader op categorie door de openbare groepen van je kerk op B1.church. Bekijk per kaart tijden, locaties en beschrijvingen en vind een passende groep."
 ---
 
 # Groepen Zoeken

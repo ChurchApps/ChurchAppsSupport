@@ -1,5 +1,6 @@
 ---
 title: "Mobile Message"
+description: "اربط فعاليات B1 Admin بـ Mobile Message، وهي واجهة برمجة رسائل SMS أسترالية، عبر ويب هوك Zapier أو Make لإرسال رسائل الترحيب والتبرع والتذكير."
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ title: "Mobile Message"
 
 ### بديل Make
 
-إذا كنت تفضّل Make، أضف وحدة **HTTP — Make a request** بعد مشغّل B1 Watch Events، واضبطها بالطريقة نفسها (POST، وBasic Auth، وجسم JSON). راجع [نظرة عامة على Make](../make) لمعرفة الجانب المتعلق بـ B1.
+إذا كنت تفضّل Make، أضف وحدة **HTTP — Make a request** بعد مشغّل B1 Watch Events، واضبطها بالطريقة نفسها (POST، وBasic Auth، وجسم JSON). راجع [نظرة عامة على Make](../make.md) لمعرفة الجانب المتعلق بـ B1.
 
 ## القيود والملاحظات
 
@@ -102,6 +103,6 @@ title: "Mobile Message"
 
 ## انظر أيضًا
 
-- [Clearstream](./clearstream)، [Text In Church](./text-in-church) — مزوّدان بديلان للرسائل القصيرة لهما تطبيقات Zapier أصلية (لا تحتاج إلى خطوة Webhooks by Zapier)
-- [Zapier (نظرة عامة)](../zapier) — الجانب المتعلق بـ B1 في كل وصفات Zapier
+- [Clearstream](./clearstream.md)، [Text In Church](./text-in-church.md) — مزوّدان بديلان للرسائل القصيرة لهما تطبيقات Zapier أصلية (لا تحتاج إلى خطوة Webhooks by Zapier)
+- [Zapier (نظرة عامة)](../zapier.md) — الجانب المتعلق بـ B1 في كل وصفات Zapier
 - [توثيق API الخاص بـ Mobile Message](https://mobilemessage.com.au/api-documentation)

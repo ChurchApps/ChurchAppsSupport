@@ -1,12 +1,13 @@
 ---
 title: "Kutingenisela nge-Docker"
+description: "Faka i-B1 Admin, iphothali yelilungu, i-API, ne-MySQL stack endzaweni yakho nge-Docker, bese uyandzisa futsi usekele ngemuva ngemyalo wa-b1."
 ---
 
 # Kutingenisela nge-Docker
 
 <div class="article-intro">
 
-Gijimisa i-instance yakho yangasese ye-B1 Admin, i-B1 member portal, i-API, kanye ne-database ye-MySQL kunoma ngumuphi umshini une-Docker -- iseva yasekhaya, i-VPS ye-$5, kumbe ibhokisi le-on-prem. Umyalo munye we-`docker compose up` uyakha futsi ucalisa konkhe. Nangabe ungatsandzi kuphatsa iseva nakukanjani, bona [Kutingenisela ku-Railway](./railway-template) kutfola lokunye lokuphatfwako.
+Gijimisa i-instance yakho yangasese ye-B1 Admin, i-B1 member portal, i-API, kanye ne-database ye-MySQL kunoma ngumuphi umshini une-Docker -- iseva yasekhaya, i-VPS ye-$5, kumbe ibhokisi le-on-prem. Umyalo munye we-`docker compose up` uyakha futsi ucalisa konkhe. Nangabe ungatsandzi kuphatsa iseva nakukanjani, bona [Kutingenisela ku-Railway](./railway-template.md) kutfola lokunye lokuphatfwako.
 
 </div>
 
@@ -110,10 +111,10 @@ I-WebSocket lesetjentiswa yekukhulumisana kanye netatiso letiphilako yabelana ne
 
 Loku kusebenta ngendlela lefanako nekufakwa kwe-Railway -- emavariyebuli endzawo lafanako, ahlelwa ku-fayela lakho le-`.env` esikhundleni se-dashboard ye-Railway (i-compose file iwadlulisela ku-API):
 
-- **[I-Email / SMTP](./railway-template#1-email-highly-recommended)** -- kuncocedwa kakhulu; ngaphandle kwako emalungu akakwati kubuyisela emaphasiwedi
-- **[Emasayithi Lamanyenti](./railway-template#3-multi-site-multiple-churches-on-one-instance)** -- emabandla langenamkhawulo ku-instance yinye, aphatfwa ku-admin UI
-- **[Kunikela ngco](./railway-template#4-online-giving-stripe--paypal)** -- kuhlelwa ngalinye libandla ku-admin UI, hhayi ngemavariyebuli endzawo
-- **[Kuhlanganiswa lokungakhetsakala](./railway-template#6-optional-feature-integrations)** -- `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `WEB_PUSH_PUBLIC_KEY`/`WEB_PUSH_PRIVATE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[I-Email / SMTP](./railway-template.md#1-email-highly-recommended)** -- kuncocedwa kakhulu; ngaphandle kwako emalungu akakwati kubuyisela emaphasiwedi
+- **[Emasayithi Lamanyenti](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** -- emabandla langenamkhawulo ku-instance yinye, aphatfwa ku-admin UI
+- **[Kunikela ngco](./railway-template.md#4-online-giving-stripe--paypal)** -- kuhlelwa ngalinye libandla ku-admin UI, hhayi ngemavariyebuli endzawo
+- **[Kuhlanganiswa lokungakhetsakala](./railway-template.md#6-optional-feature-integrations)** -- `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `WEB_PUSH_PUBLIC_KEY`/`WEB_PUSH_PRIVATE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 
 ## Imininingwane, Kugcinwa Kwesipeya (Backups), Kanye Nekugcinwa Kwemafayela
 
@@ -136,7 +137,7 @@ Gcina sipeya semafayela lalayishiwe ngekukopisha i-volume:
 docker run --rm -v b1admin_api-content:/data -v "$PWD":/backup alpine tar czf /backup/content-$(date +%F).tgz -C /data .
 ```
 
-Emalybhulari lamakhulu emidvwebo, ungashintjela kugcinwa kwemafayela ku-S3 esikhundleni se-volume yasekhaya -- hlela i-`FILE_STORE=S3` kanye nemavariyebuli la-`AWS_*` lachaziwe [sigabeni sekugcinwa kwemafayela semhlahlandlela we-Railway](./railway-template#5-file-storage).
+Emalybhulari lamakhulu emidvwebo, ungashintjela kugcinwa kwemafayela ku-S3 esikhundleni se-volume yasekhaya -- hlela i-`FILE_STORE=S3` kanye nemavariyebuli la-`AWS_*` lachaziwe [sigabeni sekugcinwa kwemafayela semhlahlandlela we-Railway](./railway-template.md#5-file-storage).
 
 ## Kubuyeketa
 
@@ -174,6 +175,6 @@ Usasibambekile? Vula i-issue ku-[github.com/ChurchApps/ChurchAppsSupport/issues]
 
 ## Emahloko Lahlobene
 
-- **[Kutingenisela ku-Railway](./railway-template)** -- lokunye lokuphatfwako, kanye nemihlahlandlela yekuhlelwa lokulandzela kufakwa lesabelwanako
-- **[Kuhlelwa Kwekucala](../../getting-started/initial-setup)** -- tinyatselo tekucala ngemuva kwekutsi libandla lakho likhiwe
-- **[API Local Setup](../api/local-setup)** -- kugijimisa situlo ngco ekutfutfukiseni
+- **[Kutingenisela ku-Railway](./railway-template.md)** -- lokunye lokuphatfwako, kanye nemihlahlandlela yekuhlelwa lokulandzela kufakwa lesabelwanako
+- **[Kuhlelwa Kwekucala](../../getting-started/initial-setup.md)** -- tinyatselo tekucala ngemuva kwekutsi libandla lakho likhiwe
+- **[API Local Setup](../api/local-setup.md)** -- kugijimisa situlo ngco ekutfutfukiseni

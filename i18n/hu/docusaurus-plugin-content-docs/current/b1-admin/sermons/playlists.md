@@ -1,5 +1,6 @@
 ---
 title: "Lejátszási listák"
+description: "Csoportosítsa igehirdetéseit sorozatokba a B1 Adminban, hogy a B1.church weboldal látogatói sorrendben böngészhessék és követhessék az egyes sorozatokat."
 ---
 
 # Lejátszási listák
@@ -39,10 +40,10 @@ Először hozza létre a lejátszási listáit, mielőtt igehirdetéseket adna h
 
 ## Igehirdetések hozzáadása lejátszási listához
 
-Amikor [igehirdetést ad hozzá vagy szerkeszt](managing-sermons), a **Lejátszási lista** legördülő menü segítségével rendelheti hozzá a lejátszási listához. Az ugyanahhoz a lejátszási listához rendelt összes igehirdetés csoportosítva, sorrendben jelenik meg a weboldalán.
+Amikor [igehirdetést ad hozzá vagy szerkeszt](./managing-sermons.md), a **Lejátszási lista** legördülő menü segítségével rendelheti hozzá a lejátszási listához. Az ugyanahhoz a lejátszási listához rendelt összes igehirdetés csoportosítva, sorrendben jelenik meg a weboldalán.
 
 :::info
-Igehirdetéseket a [Tömeges importálás](bulk-import) során is hozzárendelhet lejátszási listákhoz. YouTube-ról vagy Vimeóról történő importálásnál válasszon egy lejátszási listát az **Importálás lejátszási listába** legördülő menüben, mielőtt rákattint az **Importálás** gombra.
+Igehirdetéseket a [Tömeges importálás](./bulk-import.md) során is hozzárendelhet lejátszási listákhoz. YouTube-ról vagy Vimeóról történő importálásnál válasszon egy lejátszási listát az **Importálás lejátszási listába** legördülő menüben, mielőtt rákattint az **Importálás** gombra.
 :::
 
 ## Hogyan jelennek meg a lejátszási listák a weboldalán
@@ -55,5 +56,5 @@ A lejátszási listák a B1.church weboldalán böngészhető gyűjteményekkén
 
 ## Következő lépések
 
-- [Igehirdetések kezelése](managing-sermons) -- Egyes igehirdetések hozzáadása a lejátszási listákhoz
-- [Tömeges importálás](bulk-import) -- Több igehirdetés importálása és lejátszási listákhoz rendelése
+- [Igehirdetések kezelése](./managing-sermons.md) -- Egyes igehirdetések hozzáadása a lejátszási listákhoz
+- [Tömeges importálás](./bulk-import.md) -- Több igehirdetés importálása és lejátszási listákhoz rendelése

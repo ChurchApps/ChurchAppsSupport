@@ -1,5 +1,6 @@
 ---
 title: "Pengaturan"
+description: "Pilih jalur dev lokal: arahkan frontend ke API demo bersama, atau jalankan seluruh stack lokal dengan MySQL untuk perubahan backend."
 ---
 
 # Pengaturan
@@ -40,15 +41,15 @@ Pendekatan ini memungkinkan Anda mulai membuat perubahan frontend dalam hitungan
 
 ### 2. Jalankan Semuanya Secara Lokal
 
-Jika Anda perlu mengubah kode API atau bekerja tanpa internet, Anda dapat menjalankan seluruh tumpukan secara lokal. Ini memerlukan MySQL 8.0+ dan konfigurasi tambahan. Lihat panduan [penyiapan lokal API](../api/local-setup) untuk instruksi terperinci.
+Jika Anda perlu mengubah kode API atau bekerja tanpa internet, Anda dapat menjalankan seluruh tumpukan secara lokal. Ini memerlukan MySQL 8.0+ dan konfigurasi tambahan. Lihat panduan [penyiapan lokal API](../api/local-setup.md) untuk instruksi terperinci.
 
 ## Memulai
 
 Ikuti halaman-halaman ini secara berurutan:
 
-1. **[Prasyarat](prerequisites)** -- Pasang alat-alat yang diperlukan (Node.js, Git, MySQL, dan lainnya)
-2. **[Ikhtisar Proyek](project-overview)** -- Pahami proyek-proyek yang ada dan fungsinya masing-masing
-3. **[Variabel Lingkungan](environment-variables)** -- Atur file `.env` Anda agar semuanya terhubung
+1. **[Prasyarat](./prerequisites.md)** -- Pasang alat-alat yang diperlukan (Node.js, Git, MySQL, dan lainnya)
+2. **[Ikhtisar Proyek](./project-overview.md)** -- Pahami proyek-proyek yang ada dan fungsinya masing-masing
+3. **[Variabel Lingkungan](./environment-variables.md)** -- Atur file `.env` Anda agar semuanya terhubung
 
 :::info
 Setiap proyek ChurchApps adalah repositori Git yang berdiri sendiri. Anda hanya perlu mengkloning proyek tertentu yang ingin Anda kerjakan.

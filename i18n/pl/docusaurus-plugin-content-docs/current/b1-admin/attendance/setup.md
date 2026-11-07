@@ -1,5 +1,6 @@
 ---
 title: "Konfiguracja frekwencji"
+description: "Skonfiguruj kampusy, nabożeństwa, godziny i przypisania do grup w B1 Admin, aby śledzenie frekwencji i harmonogramy meldowania działały w całym kościele."
 ---
 
 # Konfiguracja frekwencji

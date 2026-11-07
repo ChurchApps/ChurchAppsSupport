@@ -1,5 +1,6 @@
 ---
 title: "De app installeren"
+description: "Installeer de B1 Mobile-app via de App Store of Google Play. Let op: de app is verouderd en de B1.church-PWA wordt nu aanbevolen."
 ---
 
 # De app installeren
@@ -19,7 +20,7 @@ U kunt ook zoeken naar "B1 Mobile" als de eerste zoekopdracht geen resultaten op
 
 ## Na installatie
 
-Nadat de app is geïnstalleerd, opent u deze vanuit uw startscherm. U ziet het zoekscherm van de kerk waar u uw kerk kunt vinden en selecteren. Als u al een ChurchApps-account hebt, kunt u [zich direct aanmelden](./logging-in). Zo niet, dan kunt u een account via het aanmeldingsscherm aanmaken.
+Nadat de app is geïnstalleerd, opent u deze vanuit uw startscherm. U ziet het zoekscherm van de kerk waar u uw kerk kunt vinden en selecteren. Als u al een ChurchApps-account hebt, kunt u [zich direct aanmelden](./logging-in.md). Zo niet, dan kunt u een account via het aanmeldingsscherm aanmaken.
 
 De app vraagt toestemming om pushberichten te sturen. We bevelen aan om meldingen toe te staan zodat u updates van uw kerk en groepen kunt ontvangen.
 

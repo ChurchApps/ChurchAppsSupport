@@ -1,5 +1,6 @@
 ---
 title: "Personen"
+description: "Suchen, ergänzen und bearbeiten Sie Gemeindemitglieder im Bereich Personen von B1 Admin, inklusive Haushaltsverwaltung, Massenaktualisierungen sowie Druck und Export des Verzeichnisses."
 ---
 
 # Personen

@@ -1,5 +1,6 @@
 ---
 title: "Realtidsarkitektur"
+description: "Sådan leverer ChurchApps' WebSocket-lag live chat, tilstedeværelse og notifikationer: socket-håndtryk, rumabonnementer og klientprimitiver til udviklere."
 ---
 
 # Realtidsarkitektur
@@ -226,8 +227,8 @@ Live-streamen er det største anonyme forbrugerled i rammeværket. Den bruger to
 
 ## Relaterede sider
 
-- [Notifikationsarkitektur](./architecture/notifications) -- Eskaleringstragten for notifikationer i appen, push og e-mail, som dette transportlag leverer til
-- [Beskeds-endpoints](./api/endpoints/messaging) -- Den fulde REST-overflade for beskeder, samtaler, forbindelser og enheder
-- [Web-push-notifikationer](./web-push) -- Browserpush, adskilt fra levering via socket på siden
-- [AppHelper](./shared-libraries/app-helper) -- npm-pakken, der leverer klientprimitiverne
-- [Modulstruktur](./api/module-structure) -- Hvordan beskedmodulet er organiseret på serversiden
+- [Notifikationsarkitektur](./architecture/notifications.md) -- Eskaleringstragten for notifikationer i appen, push og e-mail, som dette transportlag leverer til
+- [Beskeds-endpoints](./api/endpoints/messaging.md) -- Den fulde REST-overflade for beskeder, samtaler, forbindelser og enheder
+- [Web-push-notifikationer](./web-push.md) -- Browserpush, adskilt fra levering via socket på siden
+- [AppHelper](./shared-libraries/app-helper.md) -- npm-pakken, der leverer klientprimitiverne
+- [Modulstruktur](./api/module-structure.md) -- Hvordan beskedmodulet er organiseret på serversiden

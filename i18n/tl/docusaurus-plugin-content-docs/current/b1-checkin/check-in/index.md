@@ -1,5 +1,6 @@
 ---
 title: "Daloy ng Check-In"
+description: "Sundan hakbang-hakbang ang daloy ng B1 Church Checkin kiosk, mula pagpili ng serbisyo hanggang check-out. I-set up muna ang serbisyo, grupo, at tao sa B1 Admin."
 ---
 
 # Daloy ng Check-In
@@ -12,13 +13,13 @@ Sinusunod ng proseso ng check-in sa B1 Church Checkin ang isang simpleng, hakban
 
 ## Ang Daloy ng Check-In sa Isang Tingin
 
-1. **[Pumili ng serbisyo](./selecting-service)** -- Piliin kung aling serbisyo ang iyong dinadaluhan (hal., Sunday AM, Sunday PM, Midweek).
-2. **[Hanapin ang iyong pamilya](./looking-up-members)** -- Maghanap gamit ang numero ng telepono o apelyido upang mahanap ang iyong sarili sa sistema.
-3. **[Suriin ang iyong sambahayan](./household-review)** -- Makita ang lahat ng miyembro ng pamilya at ang kanilang kasalukuyang mga pagtatalaga ng grupo.
-4. **[Magtalaga ng mga grupo](./group-assignment)** -- Piliin kung aling klase o grupo ang dapat daluhan ng bawat miyembro ng pamilya para sa bawat oras ng serbisyo.
-5. **[Magdagdag ng mga bisita](./adding-guests)** (opsyonal) -- Magdagdag ng isang bisita sa iyong sambahayan kung kasali sila sa iyo.
-6. **[Kumpletuhin ang check-in](./completing-checkin)** -- I-tap ang pindutang check-in upang isumite ang attendance at mag-print ng mga label.
-7. **[Mag-check out](./checking-out)** (mga istasyong may tauhan) -- Sa oras ng pagkuha, i-verify ang security code at ang taong kukuha, na may mga listahan ng pinagkakatiwalaang tagakuha, page-a-parent, at muling pag-print ng label.
+1. **[Pumili ng serbisyo](./selecting-service.md)** -- Piliin kung aling serbisyo ang iyong dinadaluhan (hal., Sunday AM, Sunday PM, Midweek).
+2. **[Hanapin ang iyong pamilya](./looking-up-members.md)** -- Maghanap gamit ang numero ng telepono o apelyido upang mahanap ang iyong sarili sa sistema.
+3. **[Suriin ang iyong sambahayan](./household-review.md)** -- Makita ang lahat ng miyembro ng pamilya at ang kanilang kasalukuyang mga pagtatalaga ng grupo.
+4. **[Magtalaga ng mga grupo](./group-assignment.md)** -- Piliin kung aling klase o grupo ang dapat daluhan ng bawat miyembro ng pamilya para sa bawat oras ng serbisyo.
+5. **[Magdagdag ng mga bisita](./adding-guests.md)** (opsyonal) -- Magdagdag ng isang bisita sa iyong sambahayan kung kasali sila sa iyo.
+6. **[Kumpletuhin ang check-in](./completing-checkin.md)** -- I-tap ang pindutang check-in upang isumite ang attendance at mag-print ng mga label.
+7. **[Mag-check out](./checking-out.md)** (mga istasyong may tauhan) -- Sa oras ng pagkuha, i-verify ang security code at ang taong kukuha, na may mga listahan ng pinagkakatiwalaang tagakuha, page-a-parent, at muling pag-print ng label.
 
 Matapos makumpleto ang check-in, ipinapakita ng app ang isang success screen at awtomatikong bumabalik sa screen ng lookup, handa para sa susunod na pamilya.
 
@@ -36,5 +37,5 @@ Tiyaking nakonpigura ang mga sumusunod sa B1 Admin bago gamitin ang kiosk ng che
 - Naidagdag ang **mga tao** sa sistema na may mga asosasyon sa sambahayan. Tingnan ang [pagdaragdag ng mga tao](../../b1-admin/people/adding-people.md).
 
 :::info
-Kung hindi mo pa nase-set up ang kiosk mismo, tingnan ang [Getting Started](../getting-started/) para sa mga tagubilin sa pag-install, pag-log in, at pagkonpigura ng printer.
+Kung hindi mo pa nase-set up ang kiosk mismo, tingnan ang [Getting Started](../getting-started/index.md) para sa mga tagubilin sa pag-install, pag-log in, at pagkonpigura ng printer.
 :::

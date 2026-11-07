@@ -1,5 +1,6 @@
 ---
 title: "Mobilní aplikace – nastavení"
+description: "A B1.church tagi alkalmazás füleinek, kezdőképernyő-csempéinek, bejelentkezési kérésének és tagjegyzék-adatvédelmének beállítása a B1 Adminban."
 ---
 
 # Mobilní aplikace – nastavení

@@ -1,5 +1,6 @@
 ---
 title: "Savarankiškas diegimas Railway platformoje"
+description: "Diekite privatų ChurchApps egzempliorių Railway per ~15 min., tada sukonfigūruokite el. paštą, domenus, aukas ir failų saugyklą B1 Admin ir B1App."
 ---
 
 # Savarankiškas diegimas Railway platformoje
@@ -195,7 +196,7 @@ Esami failai tome automatiškai nekeliauja. Prieš pakeisdami kintamąjį, nukop
 | `VIMEO_TOKEN` | Vimeo pamokslų palaikymas |
 | `API_BIBLE_KEY` | Biblijos eilučių paieška pamokose ir turinyje |
 | `YOUVERSION_API_KEY` | YouVersion Biblijos integracija |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Naršyklės push pranešimai ([sugeneruokite VAPID raktų porą](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Naršyklės push pranešimai ([sugeneruokite VAPID raktų porą](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Neprivaloma CRM sinchronizacija naujoms registracijoms |
 
 ## Atnaujinimas
@@ -234,9 +235,9 @@ Jei susidūrėte su kažkuo, ko nėra šiame sąraše, atidarykite problemą adr
 
 ## Susiję straipsniai
 
-- **[Savarankiškas diegimas su Docker](./docker)** — Tas pats rinkinys jūsų pačių įrangoje ar VPS serveryje
-- **[Pradinis nustatymas](../../getting-started/initial-setup)** — Pirmieji žingsniai po bažnyčios sukūrimo
-- **[Svetainės pradinis nustatymas](../../b1-admin/website/initial-setup)** — Bažnyčios viešosios svetainės konfigūravimas
-- **[Aukų nustatymai](../../b1-admin/donations/online-giving-setup)** — Stripe arba PayPal prijungimas
-- **[Vietinis API nustatymas](../api/local-setup)** — Rinkinio paleidimas vietoje kūrimui
-- **[API diegimas (AWS)](./apis)** — Kaip diegiama oficiali ChurchApps SaaS paslauga
+- **[Savarankiškas diegimas su Docker](./docker.md)** — Tas pats rinkinys jūsų pačių įrangoje ar VPS serveryje
+- **[Pradinis nustatymas](../../getting-started/initial-setup.md)** — Pirmieji žingsniai po bažnyčios sukūrimo
+- **[Svetainės pradinis nustatymas](../../b1-admin/website/initial-setup.md)** — Bažnyčios viešosios svetainės konfigūravimas
+- **[Aukų nustatymai](../../b1-admin/donations/online-giving-setup.md)** — Stripe arba PayPal prijungimas
+- **[Vietinis API nustatymas](../api/local-setup.md)** — Rinkinio paleidimas vietoje kūrimui
+- **[API diegimas (AWS)](./apis.md)** — Kaip diegiama oficiali ChurchApps SaaS paslauga

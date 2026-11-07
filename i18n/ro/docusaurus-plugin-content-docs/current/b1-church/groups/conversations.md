@@ -1,5 +1,6 @@
 ---
 title: "Conversații de grup"
+description: "Aflați cum să postați, să editați, să reacționați la mesaje și să gestionați conversațiile din grupul B1.church, inclusiv anunțurile și instrumentele de moderare ale liderilor."
 ---
 
 # Conversații de grup

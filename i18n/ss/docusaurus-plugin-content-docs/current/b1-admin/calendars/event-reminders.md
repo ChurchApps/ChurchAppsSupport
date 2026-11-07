@@ -1,21 +1,22 @@
 ---
 title: "Tikhumbuto Temicimbi"
+description: "Setfula tikhumbuzo temcimbi ku-B1 Admin ngekuphusha, nge-imeyili nangemilayezo, ukhetse sikhatsi, labemukelako nemilayezo yakho."
 ---
 
 # Tikhumbuto Temicimbi
 
 <div class="article-intro">
 
-Tikhumbuto temicimbi tiyaziswa ngalokutentekelako bantfu labafanele ngembikwe umcimbi wente -- sibonelo, "Ungakulahleki! I-workshop yemphilo iyacala kusasa nga-9:00 ekuseni." Uhlela sikhumbuto kanye kumcimbi, futsi B1 iyasithumela ngesikhatsi lesihleliwe ngekusebentisa tatiso te-push kanye ne-imeyili. Emalunga angalawula kutsi ngutuphi tikhumbuto labatitfola kusuka ku-[Tincamelo Tetatiso](../../b1-church/getting-started/notification-preferences) tabo.
+Tikhumbuto temicimbi tiyaziswa ngalokutentekelako bantfu labafanele ngembikwe umcimbi wente -- sibonelo, "Ungakulahleki! I-workshop yemphilo iyacala kusasa nga-9:00 ekuseni." Uhlela sikhumbuto kanye kumcimbi, futsi B1 iyasithumela ngesikhatsi lesihleliwe ngekusebentisa tatiso te-push kanye ne-imeyili. Emalunga angalawula kutsi ngutuphi tikhumbuto labatitfola kusuka ku-[Tincamelo Tetatiso](../../b1-church/getting-started/notification-preferences.md) tabo.
 
 </div>
 
 <div class="prereqs">
 <h4>Ngembikwe Kucala</h4>
 
-- Dala umcimbi lofuna kukhumbuta bantfu ngawo (buka [Dala Emakhalenda](creating-calendars))
-- Kufinyelela kubantfu labhalisile, [vula kubhalisa](creating-calendars) kumcimbi
-- Kufinyelela licembu lonkhe, cinisekisa kutsi umcimbi ungewe [licembu](../groups/creating-groups) lelinemalunga
+- Dala umcimbi lofuna kukhumbuta bantfu ngawo (buka [Dala Emakhalenda](./creating-calendars.md))
+- Kufinyelela kubantfu labhalisile, [vula kubhalisa](./creating-calendars.md) kumcimbi
+- Kufinyelela licembu lonkhe, cinisekisa kutsi umcimbi ungewe [licembu](../groups/creating-groups.md) lelinemalunga
 
 </div>
 
@@ -57,12 +58,12 @@ Titamu letingenwe ngeligama kuphela (ngaphandle kwerekhodi lemuntfu lelihlobene)
 - Imicimbi lephindzaphindzako iphatfwa ngalokutentekelako: sento ngasinye lesetako sitfola sikhumbuto saso.
 
 :::tip
-Tikhumbuto titfunywa **nge-push kucala, ne-imeyili njengendlela yekugcina**. Nangabe lilunga line-push notification lisebenta, litawutfola i-push; nangabe kute, litawutfola imeyili endzaweni yaleyo. Emalunga akhetsa kutsi ngutuphi tindlela lafuna kutona kuluhlobo ngalunye lwesatiso ku-[Tincamelo Tetatiso](../../b1-church/getting-started/notification-preferences) tabo.
+Tikhumbuto titfunywa **nge-push kucala, ne-imeyili njengendlela yekugcina**. Nangabe lilunga line-push notification lisebenta, litawutfola i-push; nangabe kute, litawutfola imeyili endzaweni yaleyo. Emalunga akhetsa kutsi ngutuphi tindlela lafuna kutona kuluhlobo ngalunye lwesatiso ku-[Tincamelo Tetatiso](../../b1-church/getting-started/notification-preferences.md) tabo.
 :::
 
 ## Loko Emalunga Langakulawula
 
-Tikhumbuto tihlala tihlonipha [Tincamelo Tetatiso](../../b1-church/getting-started/notification-preferences) talilunga ngalinye. Lilunga lingakwati:
+Tikhumbuto tihlala tihlonipha [Tincamelo Tetatiso](../../b1-church/getting-started/notification-preferences.md) talilunga ngalinye. Lilunga lingakwati:
 
 - Kuvala **Tikhumbuto Temicimbi** ku-push nome ku-imeyili nasagcina letinye tatiso tivuliwe.
 - Kuhlela **emahora ekuthula** kuze tatiso letingasiphutfumele tilinde kufika sikhatsi lesifanele.
@@ -71,10 +72,10 @@ Awukwati kudlula sincumo selunga sekungafuni kutfola tikhumbuto temicimbi -- lok
 
 ## Tikhumbuto Tekukhonta
 
-Tivolontiya letihleliwe ku-plan titfola **sikhumbuto sekukhonta** lesihlukene lesinemininingwane ye-plan futsi, nangabe bangakaphenduli, tinkinobho te-**Accept / Decline** ngalokucondzile ku-imeyili. Letokhumbuto tihlelwa ku-plan type kunekutsi tibe kumcimbi wekhalenda -- buka [Tivolontiya TeSonto](../guides/sunday-volunteers) kutsi kusebenta njani kuhlelwa kwetivolontiya nemtikhumbuto.
+Tivolontiya letihleliwe ku-plan titfola **sikhumbuto sekukhonta** lesihlukene lesinemininingwane ye-plan futsi, nangabe bangakaphenduli, tinkinobho te-**Accept / Decline** ngalokucondzile ku-imeyili. Letokhumbuto tihlelwa ku-plan type kunekutsi tibe kumcimbi wekhalenda -- buka [Tivolontiya TeSonto](../guides/sunday-volunteers.md) kutsi kusebenta njani kuhlelwa kwetivolontiya nemtikhumbuto.
 
 ## Tinyatselo Letilandzelako
 
-- [Tincamelo Tetatiso](../../b1-church/getting-started/notification-preferences) -- Loko emalunga langakulawula
-- [Umhlahlandlela Wekubhalisela Umcimbi](../guides/event-registration) -- Hlela kubhalisa kuze tikhumbuto tikwati kufinyelela labazakubhalisile
-- [Dala Emakhalenda](creating-calendars) -- Buyela ekuhleleni kwekhalenda
+- [Tincamelo Tetatiso](../../b1-church/getting-started/notification-preferences.md) -- Loko emalunga langakulawula
+- [Umhlahlandlela Wekubhalisela Umcimbi](../guides/event-registration.md) -- Hlela kubhalisa kuze tikhumbuto tikwati kufinyelela labazakubhalisile
+- [Dala Emakhalenda](./creating-calendars.md) -- Buyela ekuhleleni kwekhalenda

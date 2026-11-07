@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Viết bài blog cho trang web trong B1 Admin"
+sidebar_label: "Blog"
+description: "Tạo, lên lịch và xuất bản bài viết blog trên trang web hội thánh trong B1 Admin, bao gồm đoạn trích, danh mục, thẻ, ảnh tiêu đề và nhúng bình luận."
 ---
 
 # Blog
@@ -13,8 +15,8 @@ Trang Blog cho phép bạn đăng tin tức, cập nhật và bài suy niệm l�
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Hoàn tất [Thiết lập ban đầu](initial-setup) cho website của bạn
-- Thêm liên kết điều hướng đến `/blog` từ [Quản lý trang](managing-pages) nếu bạn muốn khách truy cập tìm thấy blog từ menu
+- Hoàn tất [Thiết lập ban đầu](./initial-setup.md) cho website của bạn
+- Thêm liên kết điều hướng đến `/blog` từ [Quản lý trang](./managing-pages.md) nếu bạn muốn khách truy cập tìm thấy blog từ menu
 
 </div>
 
@@ -31,7 +33,7 @@ Trang Blog cho phép bạn đăng tin tức, cập nhật và bài suy niệm l�
 3. Thêm **Tóm tắt** -- một đoạn tóm tắt ngắn hiển thị trong danh sách bài đăng, mô tả meta và nguồn RSS. Nếu bạn để trống, hệ thống sẽ tự động tạo tóm tắt từ phần đầu nội dung bài đăng.
 4. Viết nội dung bài trong trình soạn thảo **Nội dung** bằng Markdown. Nhấp **Xem trước** để xem bài đăng đã định dạng sẽ trông như thế nào.
 5. Chọn **Danh mục** (chọn danh mục có sẵn hoặc nhập danh mục mới) và tùy chọn **Thẻ** phân cách bằng dấu phẩy.
-6. Nhấp **Chọn ảnh** để chọn ảnh từ thư viện [Tệp](files) của bạn, hoặc tải ảnh mới lên. Ảnh tải lên sẽ mở trong công cụ cắt tích hợp được khóa ở tỷ lệ 16:9, để bạn có thể căn khung bất kỳ ảnh nào cho vừa với đầu trang bài đăng và thẻ danh sách.
+6. Nhấp **Chọn ảnh** để chọn ảnh từ thư viện [Tệp](./files.md) của bạn, hoặc tải ảnh mới lên. Ảnh tải lên sẽ mở trong công cụ cắt tích hợp được khóa ở tỷ lệ 16:9, để bạn có thể căn khung bất kỳ ảnh nào cho vừa với đầu trang bài đăng và thẻ danh sách.
 7. Đặt **Tác giả** -- mặc định là bạn, nhưng bạn có thể tìm và chọn bất kỳ người nào trong cơ sở dữ liệu.
 8. Bật **Đã xuất bản** và đặt **Ngày xuất bản** khi bạn sẵn sàng công khai bài đăng. Để tắt nếu muốn lưu bài dưới dạng bản nháp.
 
@@ -58,7 +60,7 @@ Mỗi bài đăng trong danh sách hiển thị một trong ba trạng thái:
 Các bài đã xuất bản xuất hiện tại `{yoursite}/blog`, mỗi trang 10 bài, với liên kết **Cũ hơn**/**Mới hơn** để lật qua kho lưu trữ, cùng bộ lọc danh mục và tên tác giả, ảnh của mỗi bài. Thẻ cũng hiển thị dưới dạng nhãn có thể nhấp, cho phép khách lọc danh sách theo thẻ tương tự. Từng bài đăng nằm tại `{yoursite}/blog/{slug}` và bao gồm các bài liên quan cùng danh mục. Trang blog cũng xuất bản nguồn RSS, có thể được trình đọc nguồn và công cụ tự động hóa như Zapier tự động phát hiện.
 
 :::info
-Bài blog là một loại nội dung riêng biệt so với trang web thông thường -- chúng không được tạo trong [trình soạn thảo trang](page-editor) và không xuất hiện trong danh sách Trang. Điều này giúp việc viết blog nhanh hơn và tập trung vào nội dung.
+Bài blog là một loại nội dung riêng biệt so với trang web thông thường -- chúng không được tạo trong [trình soạn thảo trang](./page-editor.md) và không xuất hiện trong danh sách Trang. Điều này giúp việc viết blog nhanh hơn và tập trung vào nội dung.
 :::
 
 ## Thêm bình luận dưới bài đăng
@@ -77,6 +79,6 @@ Xóa nội dung trong ô và nhấp **Lưu** để gỡ mã khỏi mọi bài đ
 
 ## Bước tiếp theo
 
-- [Quản lý trang](managing-pages) -- Thêm liên kết điều hướng đến blog của bạn
-- [Tệp](files) -- Tải ảnh lên để dùng trong bài đăng
+- [Quản lý trang](./managing-pages.md) -- Thêm liên kết điều hướng đến blog của bạn
+- [Tệp](./files.md) -- Tải ảnh lên để dùng trong bài đăng
 - [Tích hợp Zapier](../integrations/zapier.md) -- Kích hoạt tự động hóa khi bài đăng mới được xuất bản

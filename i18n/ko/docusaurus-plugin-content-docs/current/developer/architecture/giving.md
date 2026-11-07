@@ -1,5 +1,6 @@
 ---
 title: "헌금 아키텍처"
+description: "ChurchApps 헌금 개발자 가이드: B1 Admin과 B1.church가 Stripe, PayPal, Kingdom Funding, Paystack 게이트웨이를 통해 헌금을 처리하는 방식을 설명합니다."
 ---
 
 # 헌금 아키텍처
@@ -134,7 +135,7 @@ giving 스키마(`Api/src/modules/giving/db/DatabaseTypes.ts`, 모델은 `models
 
 ### 손님 / 익명 헌금
 
-공개 헌금 페이지(`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`)와 "지금 헌금하기" 패널은 `@churchapps/apphelper/website`의 `NonAuthDonationWrapper`를 렌더링합니다. 이 래퍼는 reCAPTCHA와 게이트웨이 Elements 컨텍스트를 제공자의 `GuestForm` 주변에 주입합니다. 손님은 로그인, 저장된 결제 수단, 이력이 없습니다. 흐름은 `GET /giving/funds/churchId/:id`와 `GET /giving/donate/gateways/:churchId`(공개 키만)를 가져오고, `POST /giving/donate/captcha-verify`로 방문자를 확인하고, 브라우저에서 토큰화한 뒤 `/giving/donate/charge`(또는 `/subscribe`)로 보냅니다. 확인 호출은 10분짜리 HMAC 서명 `captchaPass`(`Api/src/modules/giving/helpers/CaptchaPass.ts`)를 반환하며, 양식은 손님의 모든 금전 호출에 이것을 함께 보냅니다. `CAPTCHA_ENFORCE=true`이면 Api는 해당 교회에 대해 유효한 통과 값이 없는 손님의 `create-order`, `charge`, `subscribe`, `addcard`, `ach-setup-intent-anon` 호출을 거부합니다. 손님의 유료 행사 등록(`POST /content/registrations/register`)도 결제 직전에 같은 통과 값을 확인합니다([행사 등록](./registrations#payment-flow) 참고). 손님의 ACH는 익명 `POST /giving/paymentmethods/ach-setup-intent-anon`을 사용하며, 이는 즉시 확인(Financial Connections)만 허용합니다. 소액 입금 확인은 며칠 뒤에 끝나는데, 그때는 손님이 이미 페이지를 떠났으므로 헌금을 완료할 수 없기 때문입니다. 양식은 확인되지 않은 SetupIntent로 결제하기를 거부하고, 헌금자에게 카드 또는 로그인한 상태의 은행 설정을 사용하도록 안내합니다.
+공개 헌금 페이지(`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`)와 "지금 헌금하기" 패널은 `@churchapps/apphelper/website`의 `NonAuthDonationWrapper`를 렌더링합니다. 이 래퍼는 reCAPTCHA와 게이트웨이 Elements 컨텍스트를 제공자의 `GuestForm` 주변에 주입합니다. 손님은 로그인, 저장된 결제 수단, 이력이 없습니다. 흐름은 `GET /giving/funds/churchId/:id`와 `GET /giving/donate/gateways/:churchId`(공개 키만)를 가져오고, `POST /giving/donate/captcha-verify`로 방문자를 확인하고, 브라우저에서 토큰화한 뒤 `/giving/donate/charge`(또는 `/subscribe`)로 보냅니다. 확인 호출은 10분짜리 HMAC 서명 `captchaPass`(`Api/src/modules/giving/helpers/CaptchaPass.ts`)를 반환하며, 양식은 손님의 모든 금전 호출에 이것을 함께 보냅니다. `CAPTCHA_ENFORCE=true`이면 Api는 해당 교회에 대해 유효한 통과 값이 없는 손님의 `create-order`, `charge`, `subscribe`, `addcard`, `ach-setup-intent-anon` 호출을 거부합니다. 손님의 유료 행사 등록(`POST /content/registrations/register`)도 결제 직전에 같은 통과 값을 확인합니다([행사 등록](./registrations.md#payment-flow) 참고). 손님의 ACH는 익명 `POST /giving/paymentmethods/ach-setup-intent-anon`을 사용하며, 이는 즉시 확인(Financial Connections)만 허용합니다. 소액 입금 확인은 며칠 뒤에 끝나는데, 그때는 손님이 이미 페이지를 떠났으므로 헌금을 완료할 수 없기 때문입니다. 양식은 확인되지 않은 SetupIntent로 결제하기를 거부하고, 헌금자에게 카드 또는 로그인한 상태의 은행 설정을 사용하도록 안내합니다.
 
 같은 결제 호출에 세 가지 손님 양식 옵션이 함께 쓰입니다. 헌금 URL의 `?fundId=`와 `?amount=`는 펀드 분할을 미리 선택합니다(각 제공자의 손님 양식이 마운트될 때 읽으며, 일반 펀드 변경 처리기를 거쳐 합계와 수수료가 갱신됨). `anonymous: true`이면 `DonateController.charge`가 클라이언트가 보낸 사람을 모두 버리고 `personId = null`로 헌금을 기록합니다. 손님 양식은 `/people/loadOrCreate`와 고객/보관소 단계를 건너뛰며, 즉시 기록하는 세 제공자는 게이트웨이 고객에서 사람을 찾지 않습니다. Apple Pay는 페이지의 도메인이 Stripe에 등록되어 있어야 하므로, Stripe 손님 양식은 세션당 한 번 공개되고 속도 제한이 있는 `POST /giving/donate/register-domain`에 요청합니다. 이 엔드포인트는 교회 소유의 도메인(`<subDomain>.b1.church`, 콘텐츠 모듈의 domains 테이블에 있는 행, 또는 로컬 호스트)만 받아들인 뒤 Stripe의 payment-method-domains API를 호출합니다.
 
@@ -175,6 +176,6 @@ Stripe 가져오기(`B1Admin/src/donations/StripeImportPage.tsx`)는 B1 밖에�
 
 ## 관련 문서
 
-- [헌금 엔드포인트](../api/endpoints/giving) -- 헌금, 펀드, 묶음, 게이트웨이, 구독, 결제 수단, 웹훅의 전체 REST 인터페이스
-- [AppHelper](../shared-libraries/app-helper) -- 결제 제공자 레지스트리와 헌금 컴포넌트를 제공하는 npm 패키지
-- [모듈 구조](../api/module-structure) -- GivingApi 모듈이 서버 측에서 구성되는 방식
+- [헌금 엔드포인트](../api/endpoints/giving.md) -- 헌금, 펀드, 묶음, 게이트웨이, 구독, 결제 수단, 웹훅의 전체 REST 인터페이스
+- [AppHelper](../shared-libraries/app-helper.md) -- 결제 제공자 레지스트리와 헌금 컴포넌트를 제공하는 npm 패키지
+- [모듈 구조](../api/module-structure.md) -- GivingApi 모듈이 서버 측에서 구성되는 방식

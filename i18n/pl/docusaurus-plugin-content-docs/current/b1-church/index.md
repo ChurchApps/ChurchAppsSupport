@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Dowiedz się, co strona B1.church oferuje członkom: od portalu i grup po dary, wydarzenia, służbę i zameldowanie."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ Gdy członkowie odwiedzają Twoją witrynę B1.church, widzą publiczną stronę
 
 ## Dowiedz się więcej
 
-- [Pierwsze kroki](./getting-started/) -- Utwórz konto, zaloguj się i dowiedz się, jak poruszać się po B1.church.
-- [Grupy](./groups/) -- Dołączaj do grup kościelnych i uczestnicz w nich.
-- [Darowizny](./giving/) -- Wspieraj kościół i zarządzaj swoimi darowiznami.
-- [Wydarzenia](./events/) -- Przeglądaj nadchodzące wydarzenia kościelne i zapisuj się na nie.
-- [Służba](./serving/) -- Przeglądaj plany i zapisuj się na stanowiska wolontariackie.
-- [Plany](./plans/) -- Przeglądaj plany nabożeństw i swoje stanowiska wolontariackie.
-- [Zameldowanie](./checkin/) -- Zamelduj się na nabożeństwach i wydarzeniach oraz zarejestruj gościa.
-- [Katalog społeczności](./community/) -- Znajduj innych członków i nawiązuj z nimi kontakt.
-- [Treści](./content/) -- Kazania, Biblia, werset dnia i transmisje na żywo. (Odtwarzanie lekcji przeniesiono do [FreePlay](/docs/freeplay/).)
+- [Pierwsze kroki](./getting-started/index.md) -- Utwórz konto, zaloguj się i dowiedz się, jak poruszać się po B1.church.
+- [Grupy](./groups/index.md) -- Dołączaj do grup kościelnych i uczestnicz w nich.
+- [Darowizny](./giving/index.md) -- Wspieraj kościół i zarządzaj swoimi darowiznami.
+- [Wydarzenia](./events/index.md) -- Przeglądaj nadchodzące wydarzenia kościelne i zapisuj się na nie.
+- [Służba](./serving/index.md) -- Przeglądaj plany i zapisuj się na stanowiska wolontariackie.
+- [Plany](./plans/index.md) -- Przeglądaj plany nabożeństw i swoje stanowiska wolontariackie.
+- [Zameldowanie](./checkin/index.md) -- Zamelduj się na nabożeństwach i wydarzeniach oraz zarejestruj gościa.
+- [Katalog społeczności](./community/index.md) -- Znajduj innych członków i nawiązuj z nimi kontakt.
+- [Treści](./content/index.md) -- Kazania, Biblia, werset dnia i transmisje na żywo. (Odtwarzanie lekcji przeniesiono do [FreePlay](/docs/freeplay/).)
 
 :::info
 B1.church jest całkowicie bezpłatny dla kościołów i członków. Administrator kościoła konfiguruje i dostosowuje witrynę za pomocą B1 Admin. Jako członek wystarczy, że odwiedzisz adres B1.church swojego kościoła, aby zacząć.

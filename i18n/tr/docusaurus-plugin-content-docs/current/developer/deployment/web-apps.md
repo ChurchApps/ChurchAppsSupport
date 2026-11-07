@@ -1,5 +1,6 @@
 ---
 title: "Web App Dağıtımı"
+description: "B1 Admin gibi ChurchApps web uygulamalarını Amazon S3 ve CloudFront'a dağıtma adımları; birleştirmede GitHub Actions ile otomatik dağıtım veya manuel komutlar."
 ---
 
 # Web App Dağıtımı
@@ -13,7 +14,7 @@ ChurchApps web uygulamaları, CDN olarak **CloudFront** kullanılarak **Amazon S
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Web uygulamasını yerel olarak kurun ve derlendiğini doğrulayın -- bkz. [Web Uygulamaları](../web-apps/)
+- Web uygulamasını yerel olarak kurun ve derlendiğini doğrulayın -- bkz. [Web Uygulamaları](../web-apps/index.md)
 - S3 ve CloudFront erişimine sahip AWS kimlik bilgilerini yapılandırın
 - Hedef S3 bucket adını ve CloudFront dağıtım kimliğini bilin
 
@@ -53,6 +54,6 @@ Dağıtımdan önce bir derlemeyi yerel olarak doğrulamanız gerekiyorsa, `npm 
 
 ## İlgili Makaleler
 
-- **[Web Uygulamaları](../web-apps/)** -- B1Admin, B1App ve LessonsApp için kurulum kılavuzları
-- **[API Dağıtımı](./apis)** -- Arka uç API'lerinin dağıtımı
-- **[Mobil Dağıtım](./mobile)** -- Mobil uygulamaların uygulama mağazalarına dağıtımı
+- **[Web Uygulamaları](../web-apps/index.md)** -- B1Admin, B1App ve LessonsApp için kurulum kılavuzları
+- **[API Dağıtımı](./apis.md)** -- Arka uç API'lerinin dağıtımı
+- **[Mobil Dağıtım](./mobile.md)** -- Mobil uygulamaların uygulama mağazalarına dağıtımı

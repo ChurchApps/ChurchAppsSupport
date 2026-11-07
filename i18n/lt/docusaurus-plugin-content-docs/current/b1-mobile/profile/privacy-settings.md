@@ -1,5 +1,6 @@
 ---
 title: "Pagaliau privatumo nustatymai"
+description: "Nustatykite, kuriuos profilio duomenis – telefoną, el. paštą, adresą – kiti nariai mato B1 Mobile kataloge, ir peržiūrėkite laukiančius pakeitimus."
 ---
 
 # Privatumo nustatymai
@@ -13,7 +14,7 @@ Skirtuke **Matomumas** savo profilio ekrane galite valdyti, ką kiti bažnyčios
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiekite B1 Mobile](../getting-started/installing) ir [prisijunkite](../getting-started/logging-in) prie savo paskyros
+- [Įdiekite B1 Mobile](../getting-started/installing.md) ir [prisijunkite](../getting-started/logging-in.md) prie savo paskyros
 
 </div>
 
@@ -52,8 +53,8 @@ Skirtuke **Paskyra** pateikiama prieiga prie saugumo nustatymų. Naudokite šį 
 
 | Skirtukas | Paskirtis |
 |---|---|
-| **Profilis** | [Redaguokite asmeninę informaciją](./editing-profile) ir nuotrauką |
-| **Namų ūkis** | [Peržiūrėkite savo šeimos narius](./household) |
+| **Profilis** | [Redaguokite asmeninę informaciją](./editing-profile.md) ir nuotrauką |
+| **Namų ūkis** | [Peržiūrėkite savo šeimos narius](./household.md) |
 | **Matomumas** | Valdykite, ką kiti mato kataloge |
 | **Laukiantys** | Peržiūrėkite profilio pakeitimus, laukiančius patvirtinimo |
 | **Paskyra** | Tvarkykite saugumo nustatymus |
@@ -62,6 +63,6 @@ Skirtuke **Paskyra** pateikiama prieiga prie saugumo nustatymų. Naudokite šį 
 
 ## Susiję straipsniai
 
-- [Profilio redagavimas](./editing-profile) -- Atnaujinkite asmeninę informaciją
-- [Namų ūkis](./household) -- Peržiūrėkite ir tvarkykite savo šeimos narius
+- [Profilio redagavimas](./editing-profile.md) -- Atnaujinkite asmeninę informaciją
+- [Namų ūkis](./household.md) -- Peržiūrėkite ir tvarkykite savo šeimos narius
 - [Narių katalogas](../community/member-directory.md) -- Sužinokite, kaip jūsų profilis matomas kitiems

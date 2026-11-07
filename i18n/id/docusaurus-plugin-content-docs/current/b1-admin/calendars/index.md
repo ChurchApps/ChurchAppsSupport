@@ -1,5 +1,6 @@
 ---
 title: "Kalender"
+description: "Atur kalender di B1 Admin, kelola acara yang tampil di dalamnya, dan terbitkan ke situs B1.church agar jemaat dapat melihat acara gereja mendatang."
 ---
 
 # Kalender
@@ -18,20 +19,20 @@ Bagian Kalender di B1 Admin memungkinkan Anda membuat kalender pilihan untuk ger
 
 ## Yang Dapat Anda Lakukan
 
-- **Menambah kalender baru** -- Klik **Tambah Kalender** di bagian atas halaman untuk membuat kalender untuk pelayanan, jenis acara, atau tujuan tertentu. Lihat [Membuat Kalender](creating-calendars) untuk petunjuk langkah demi langkah.
+- **Menambah kalender baru** -- Klik **Tambah Kalender** di bagian atas halaman untuk membuat kalender untuk pelayanan, jenis acara, atau tujuan tertentu. Lihat [Membuat Kalender](./creating-calendars.md) untuk petunjuk langkah demi langkah.
 - **Mengedit kalender** -- Klik **Kelola Acara** pada kalender mana pun untuk membukanya dan mengelola kelompok mana saja yang disertakan di dalamnya.
 - **Menerbitkan kalender** -- Kalender dapat ditampilkan di situs web B1.church Anda sehingga pengunjung dapat melihat acara mendatang di gereja Anda.
-- **Membuat kalender pilihan** -- Ambil acara dari beberapa kelompok ke dalam satu tampilan kalender untuk melihat secara menyeluruh semua kegiatan di gereja Anda. Lihat [Kalender Pilihan](curated-calendar) untuk detailnya.
-- **Mengelola ruangan dan sumber daya** -- Lacak ruang dan peralatan yang dapat dipesan serta tangani permintaan persetujuan. Lihat [Ruangan & Sumber Daya](rooms-resources) untuk detailnya.
-- **Melihat ketersediaan** -- Lihat semua pemesanan ruangan dan sumber daya dalam satu kalender serta pesan ruang untuk acara mendatang. Lihat [Kalender Ketersediaan](availability) untuk detailnya.
+- **Membuat kalender pilihan** -- Ambil acara dari beberapa kelompok ke dalam satu tampilan kalender untuk melihat secara menyeluruh semua kegiatan di gereja Anda. Lihat [Kalender Pilihan](./curated-calendar.md) untuk detailnya.
+- **Mengelola ruangan dan sumber daya** -- Lacak ruang dan peralatan yang dapat dipesan serta tangani permintaan persetujuan. Lihat [Ruangan & Sumber Daya](./rooms-resources.md) untuk detailnya.
+- **Melihat ketersediaan** -- Lihat semua pemesanan ruangan dan sumber daya dalam satu kalender serta pesan ruang untuk acara mendatang. Lihat [Kalender Ketersediaan](./availability.md) untuk detailnya.
 
 :::info
-Kalender bekerja erat dengan [Kelompok](../groups/creating-groups.md). Ketika kelompok memiliki acara yang dijadwalkan, acara tersebut dapat diambil ke dalam kalender Anda. Lihat halaman [Membuat Kalender](creating-calendars) untuk mempelajari cara menghubungkan kelompok ke kalender.
+Kalender bekerja erat dengan [Kelompok](../groups/creating-groups.md). Ketika kelompok memiliki acara yang dijadwalkan, acara tersebut dapat diambil ke dalam kalender Anda. Lihat halaman [Membuat Kalender](./creating-calendars.md) untuk mempelajari cara menghubungkan kelompok ke kalender.
 :::
 
 ## Langkah Selanjutnya
 
-- [Membuat Kalender](creating-calendars) -- Menyiapkan kalender baru dan menghubungkan kelompok
-- [Kalender Pilihan](curated-calendar) -- Menggabungkan acara dari beberapa kelompok ke dalam satu tampilan
-- [Ruangan & Sumber Daya](rooms-resources) -- Mengelola ruang dan peralatan yang dapat dipesan
-- [Kalender Ketersediaan](availability) -- Melihat dan mengelola pemesanan ruangan/sumber daya
+- [Membuat Kalender](./creating-calendars.md) -- Menyiapkan kalender baru dan menghubungkan kelompok
+- [Kalender Pilihan](./curated-calendar.md) -- Menggabungkan acara dari beberapa kelompok ke dalam satu tampilan
+- [Ruangan & Sumber Daya](./rooms-resources.md) -- Mengelola ruang dan peralatan yang dapat dipesan
+- [Kalender Ketersediaan](./availability.md) -- Melihat dan mengelola pemesanan ruangan/sumber daya

@@ -1,5 +1,6 @@
 ---
 title: "Svar på evenemang"
+description: "Svara Kommer, Kanske eller Kommer inte på gruppevenemang i B1.church medlemsportal, och se hur många andra som kommer. Ledare kan också granska svaren."
 ---
 
 # Svar på evenemang
@@ -30,14 +31,14 @@ Ditt svar gäller just det specifika tillfället. För ett veckomöte svarar du 
 ## För gruppledare
 
 - **Visa svar** -- Ledare ser en länk **Visa svar** på varje evenemang i gruppens kalender (**Alla händelser**). Den öppnar bladet **Svar** som listar alla efter svar: Kommer, Kanske och Kan inte komma. Om ingen har svarat ännu visas ”Inga svar än.”
-- **Slå på eller av svar** -- När du skapar eller redigerar ett evenemang använder du reglaget **Tillåt svar**. Evenemang där svar är avstängda visar inga svarsknappar. Personal som skapar evenemang i bulk från B1 Admin har samma inställning. Se [Gruppkalender](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Slå på eller av svar** -- När du skapar eller redigerar ett evenemang använder du reglaget **Tillåt svar**. Evenemang där svar är avstängda visar inga svarsknappar. Personal som skapar evenemang i bulk från B1 Admin har samma inställning. Se [Gruppkalender](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-Svar är en enkel deltagarräkning. Om ditt evenemang behöver anmälningsuppgifter, kapacitetshantering eller betalning, använd i stället [evenemangsanmälan](../events/registering).
+Svar är en enkel deltagarräkning. Om ditt evenemang behöver anmälningsuppgifter, kapacitetshantering eller betalning, använd i stället [evenemangsanmälan](../events/registering.md).
 :::
 
 ## Relaterade artiklar
 
 - [Gruppdetaljer](./group-details.md) -- Allt på gruppens detaljsida
-- [Gruppkalender (B1 Admin)](../../b1-admin/groups/group-calendar) -- Hur personal och ledare hanterar gruppevenemang och svar
-- [Anmälan till evenemang](../events/registering) -- Fullständig evenemangsanmälan med kapacitet och betalningar
+- [Gruppkalender (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Hur personal och ledare hanterar gruppevenemang och svar
+- [Anmälan till evenemang](../events/registering.md) -- Fullständig evenemangsanmälan med kapacitet och betalningar

@@ -1,5 +1,6 @@
 ---
 title: "Diseñador de Etiquetas de Registro"
+description: "Personaliza las plantillas de etiquetas y comprobantes de recogida de B1 Admin: campos, posición y condiciones de cumpleaños o notas."
 ---
 
 # Diseñador de Etiquetas de Registro
@@ -13,8 +14,8 @@ El Diseñador de Etiquetas le permite crear y personalizar las plantillas de eti
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Configure [Attendance](setup) y configure al menos un horario de servicio con registro habilitado
-- Configure [Check-In](check-in) para que se impriman las etiquetas
+- Configure [Attendance](./setup.md) y configure al menos un horario de servicio con registro habilitado
+- Configure [Check-In](./check-in.md) para que se impriman las etiquetas
 - Necesita acceso administrativo a la sección Attendance
 
 </div>
@@ -85,6 +86,6 @@ Haga una impresión de prueba después de editar una plantilla para confirmar qu
 
 ## Artículos Relacionados
 
-- [Configuración de Registro](setup) — configure servicios y grupos para registro
-- [Completando Registro](check-in) — el flujo de registro para familias
-- [Iniciando B1 Checkin](../../b1-checkin/getting-started/) — la aplicación de quiosco Checkin
+- [Configuración de Registro](./setup.md) — configure servicios y grupos para registro
+- [Completando Registro](./check-in.md) — el flujo de registro para familias
+- [Iniciando B1 Checkin](../../b1-checkin/getting-started/index.md) — la aplicación de quiosco Checkin

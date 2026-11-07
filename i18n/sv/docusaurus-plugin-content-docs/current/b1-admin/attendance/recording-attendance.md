@@ -1,5 +1,6 @@
 ---
 title: "Registrera närvaro"
+description: "Registrera närvaro vid varje gruppmöte i B1 Admin: skapa ett tillfälle, markera vem som deltog, spara anteckningar och skriv ut närvarolistor eller exportera till kalkylblad."
 ---
 
 # Registrera närvaro

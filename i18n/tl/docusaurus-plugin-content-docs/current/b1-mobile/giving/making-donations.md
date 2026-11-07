@@ -1,5 +1,7 @@
 ---
-title: "Pagbibigay ng Donasyon"
+title: "Pagbibigay ng Donasyon sa B1 Mobile"
+sidebar_label: "Pagbibigay ng Donasyon"
+description: "Magbigay mula sa Donate tab ng B1 Mobile: pumili ng pondo, maglagay ng halaga, magbayad gamit ang Stripe, at mabilis na ulitin ang nakaraang handog."
 ---
 
 # Pagbibigay ng Donasyon
@@ -13,8 +15,8 @@ Ang pagbibigay sa pamamagitan ng B1 Mobile ay mabilis at diretso. Ang **Donate**
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
-- Maghanda ng credit o debit card, o [mag-save ng paraan ng pagbabayad](./managing-payments) nang maaga
+- [I-install ang B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
+- Maghanda ng credit o debit card, o [mag-save ng paraan ng pagbabayad](./managing-payments.md) nang maaga
 
 </div>
 
@@ -42,10 +44,10 @@ I-double check ang halaga ng donasyon at fund bago i-submit. Ang mga donasyon ay
 Kung gusto mong magbigay ng parehong halaga gaya ng iyong huling donasyon, hindi mo na kailangang dumaan sa buong daloy ng donasyon. Ipinapakita ng **Overview** tab ang iyong pinakahuling regalo kasama ang isang **Repeat** button. I-tap ito para mabilis na i-submit ulit ang parehong donasyon.
 
 :::tip
-Kung plano mong regular na magbigay, i-save ang iyong paraan ng pagbabayad sa **Manage** tab para mas mabilis kang makapag-donate sa susunod. Tingnan ang [Pamamahala ng mga Paraan ng Pagbabayad](./managing-payments) para sa mga detalye.
+Kung plano mong regular na magbigay, i-save ang iyong paraan ng pagbabayad sa **Manage** tab para mas mabilis kang makapag-donate sa susunod. Tingnan ang [Pamamahala ng mga Paraan ng Pagbabayad](./managing-payments.md) para sa mga detalye.
 :::
 
 ## Mga Kaugnay na Artikulo
 
-- [Pamamahala ng mga Paraan ng Pagbabayad](./managing-payments) -- Mag-save ng card para sa mas mabilis na pagbibigay sa hinaharap
-- [Kasaysayan ng Donasyon](./donation-history) -- Tingnan ang iyong buod ng pagbibigay at mga nakaraang donasyon
+- [Pamamahala ng mga Paraan ng Pagbabayad](./managing-payments.md) -- Mag-save ng card para sa mas mabilis na pagbibigay sa hinaharap
+- [Kasaysayan ng Donasyon](./donation-history.md) -- Tingnan ang iyong buod ng pagbibigay at mga nakaraang donasyon

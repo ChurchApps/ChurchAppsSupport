@@ -1,5 +1,7 @@
 ---
-title: "Příchod"
+title: "Samoobslužné odbavení: nastavení B1 Checkin a B1 Admin"
+sidebar_label: "Příchod"
+description: "Nastavte samoobslužné odbavení na bohoslužby s aplikací B1 Checkin v B1 Admin: zařízení, kiosky, rozvrhy, vzhled a registraci hostů přes QR kód."
 ---
 
 # Příchod
@@ -99,7 +101,7 @@ Nastavte spořič, který se spustí po určité době nečinnosti:
 
 Kiosek pro příchod může zobrazit QR kód, který návštěvníci naskenují a sami se na svém telefonu zaregistrují i se svou rodinou. Tím se urychlí příchod nových hostů.
 
-Když host naskenuje QR kód, otevře se mu [stránka registrace hosta](../../b1-church/checkin/guest-registration), kde zadá jména své rodiny a další údaje, na které se rozhodnete zeptat. Dobrovolník je pak může na kiosku vyhledat a přihlásit.
+Když host naskenuje QR kód, otevře se mu [stránka registrace hosta](../../b1-church/checkin/guest-registration.md), kde zadá jména své rodiny a další údaje, na které se rozhodnete zeptat. Dobrovolník je pak může na kiosku vyhledat a přihlásit.
 
 ### Zapnutí registrace hostů pomocí QR kódu
 

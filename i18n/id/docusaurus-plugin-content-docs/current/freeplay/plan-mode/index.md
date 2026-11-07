@@ -1,5 +1,6 @@
 ---
 title: "Mode Rencana"
+description: "Hubungkan TV di FreePlay ke rencana ibadah gereja dari B1 Admin agar menampilkan pelajaran, presentasi, dan media minggu ini secara berurutan."
 ---
 
 # Mode Rencana
@@ -12,13 +13,13 @@ Mode Rencana menghubungkan TV Anda dengan rencana ibadah gereja. Alih-alih menam
 
 ## Perbedaan dengan Mode Lain
 
-- **[Mode Terjadwal](../scheduled-mode/)** memutar daftar putar dari kalender di FreePlay Admin pada waktu yang Anda tentukan, tanpa perlu ada yang menekan Mulai
+- **[Mode Terjadwal](../scheduled-mode/index.md)** memutar daftar putar dari kalender di FreePlay Admin pada waktu yang Anda tentukan, tanpa perlu ada yang menekan Mulai
 - **Mode Rencana** mengambil konten yang terkait dengan jenis rencana, yang dapat mencakup pelajaran, presentasi dari penyedia, add-on, dan media lain yang disusun dalam urutan khusus
 
 Mode Rencana sangat berguna jika rencana ibadah Anda mencakup campuran konten dari berbagai sumber yang semuanya diatur dalam satu urutan.
 
 :::tip
-Ingin rencana saat ini diputar sendiri pada waktu tertentu? Di FreePlay Admin, tambahkan entri kalender dan pilih jenis rencana di bawah **Rencana ibadah**. Lihat [Menjadwalkan Kalender](../scheduled-mode/scheduling-the-calendar).
+Ingin rencana saat ini diputar sendiri pada waktu tertentu? Di FreePlay Admin, tambahkan entri kalender dan pilih jenis rencana di bawah **Rencana ibadah**. Lihat [Menjadwalkan Kalender](../scheduled-mode/scheduling-the-calendar.md).
 :::
 
 ## Cara Kerjanya
@@ -32,4 +33,4 @@ TV tetap terhubung ke jenis rencana tersebut. Setiap minggu, TV secara otomatis 
 
 ## Dalam Bagian Ini
 
-- **[Menghubungkan Perangkat Anda](./device-pairing)** - Cara membuat dan memasukkan kode pemasangan
+- **[Menghubungkan Perangkat Anda](./device-pairing.md)** - Cara membuat dan memasukkan kode pemasangan

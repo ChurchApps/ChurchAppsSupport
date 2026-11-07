@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Ikonekta ang Donorbox sa B1 Admin gamit ang Zapier para awtomatikong gumawa ng donation record at profile ng donor, nang walang manual na export."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Ang Donorbox's *New or Updated Donation* ay nag-fire sa mga edit din. Gamitin an
 
 ## Makita Din
 
-- [Zapier (overview)](../zapier) — ang B1 side ng bawat Zapier recipe
-- [Subsplash](./subsplash) — ibang donation platform na may Zapier app
-- [Mailchimp](./mailchimp) — chain "new gift" sa isang email tag
+- [Zapier (overview)](../zapier.md) — ang B1 side ng bawat Zapier recipe
+- [Subsplash](./subsplash.md) — ibang donation platform na may Zapier app
+- [Mailchimp](./mailchimp.md) — chain "new gift" sa isang email tag

@@ -1,5 +1,6 @@
 ---
 title: "Phân công vai trò"
+description: "Gán vai trò trong B1 Admin để nhân viên và tình nguyện viên chỉ truy cập được các khu vực người, dâng hiến, điểm danh và nhóm họ cần."
 ---
 
 # Phân công vai trò

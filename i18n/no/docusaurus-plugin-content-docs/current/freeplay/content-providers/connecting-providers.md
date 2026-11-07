@@ -1,5 +1,6 @@
 ---
 title: "Koble til leverandører"
+description: "Koble FreePlay til en innholdsleverandør med QR-kode, e-postinnlogging eller tilgang med ett klikk, og administrer eller koble fra tilkoblingen under Innstillinger."
 ---
 
 # Koble til leverandører
@@ -13,7 +14,7 @@ Før du kan bla i innhold fra en leverandør, må du koble til den. Noen leveran
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Installer og start FreePlay – se [Kom i gang](../getting-started/)
+- Installer og start FreePlay – se [Kom i gang](../getting-started/index.md)
 - Ha TV-fjernkontrollen klar for navigering
 - For leverandører som krever innlogging, ha kontolegitimasjonen din tilgjengelig
 
@@ -80,7 +81,7 @@ Når du velger et leverandørkort som viser merket **Tilkoblet**, åpnes skjerme
 
 - **Bla i biblioteket** – Vis eller skjul dette leverandørens innholdsbibliotek i sidemenyen
 - **Last ned dagens leksjon automatisk** – Bruk denne leverandøren som kilde for dagens leksjon, og forhåndslast filene (vises kun for leverandører som tilbyr en aktuell leksjon)
-- **Bruk til kunngjøringer** – Velg en mappe fra denne leverandøren som skal gå i loop fra **Kunngjøringer**-elementet i sidemenyen. Se [Kunngjøringer](./announcements)
+- **Bruk til kunngjøringer** – Velg en mappe fra denne leverandøren som skal gå i loop fra **Kunngjøringer**-elementet i sidemenyen. Se [Kunngjøringer](./announcements.md)
 - **Se etter oppdateringer til kunngjøringer** – Vises når en kunngjøringsmappe er valgt; laster ned nye lysbilder og fjerner slettede
 - **Koble fra** – Fjern tilkoblingen
 
@@ -100,6 +101,6 @@ Frakobling fjerner den lagrede autentiseringen fra enheten din. Du må logge inn
 
 ## Relaterte artikler
 
-- **[Bla gjennom og last ned innhold](./browsing-content)** - Naviger i mapper og spill av innhold etter tilkobling
-- **[Kunngjøringer](./announcements)** - Gå i loop med en mappe med lysbilder fra en tilkoblet leverandør
+- **[Bla gjennom og last ned innhold](./browsing-content.md)** - Naviger i mapper og spill av innhold etter tilkobling
+- **[Kunngjøringer](./announcements.md)** - Gå i loop med en mappe med lysbilder fra en tilkoblet leverandør
 - **[Oversikt over innholdsleverandører](./index.md)** - Se alle tilgjengelige leverandører

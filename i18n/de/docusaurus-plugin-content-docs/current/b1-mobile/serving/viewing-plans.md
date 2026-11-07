@@ -1,5 +1,7 @@
 ---
-title: "Pläne anzeigen"
+title: "Dienstpläne in B1 Mobile ansehen"
+sidebar_label: "Pläne anzeigen"
+description: "Kommende und vergangene Dienste in B1 Mobile prüfen, Plandetails und Ablauf lesen und Pläne für Proben oder Backstage ausdrucken."
 ---
 
 # Pläne anzeigen
@@ -13,7 +15,7 @@ Der Bildschirm "Pläne" in B1 Mobile bietet Ihnen einen vollständigen Überblic
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich an](../getting-started/logging-in) bei Ihrem Konto
+- [Installieren Sie B1 Mobile](../getting-started/installing.md) und [melden Sie sich an](../getting-started/logging-in.md) bei Ihrem Konto
 - Seien Sie mindestens einem Service-Plan von Ihrem Kirchenadministrator zugewiesen
 
 </div>
@@ -61,5 +63,5 @@ Sie erhalten [Push-Benachrichtigungen](../community/notifications.md), wenn Sie 
 
 ## Verwandte Artikel
 
-- [Freiwilligenanmeldung](./volunteer-signup) -- Durchsuchen und melden Sie sich für offene Freiwilligenposonen an
+- [Freiwilligenanmeldung](./volunteer-signup.md) -- Durchsuchen und melden Sie sich für offene Freiwilligenposonen an
 

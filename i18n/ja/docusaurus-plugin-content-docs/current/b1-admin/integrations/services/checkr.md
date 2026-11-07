@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Make.com を使い、B1 Admin の奉仕者の申し込みを Checkr の身元調査に接続します。セーフミニストリー担当者向けに、レポート状況の通知を任意で設定できます。"
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ B1のグループ所属で利用権限を管理している場合（例：「審
 
 ## 関連項目
 
-- [Make（概要）](../make) — Makeのすべてのシナリオにおける、B1側の設定
-- [モバイルメッセージ](./mobile-message) — Zapier のアプリがないSMSプロバイダー向け。CheckrのMake連携と同じWebhook / HTTPの方式です
+- [Make（概要）](../make.md) — Makeのすべてのシナリオにおける、B1側の設定
+- [モバイルメッセージ](./mobile-message.md) — Zapier のアプリがないSMSプロバイダー向け。CheckrのMake連携と同じWebhook / HTTPの方式です
 - [Checkr APIドキュメント](https://docs.checkr.com/)

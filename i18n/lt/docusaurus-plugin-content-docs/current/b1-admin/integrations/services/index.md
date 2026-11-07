@@ -1,5 +1,6 @@
 ---
 title: "Prijungtos paslaugos"
+description: "Prijunkite B1 Admin prie Mailchimp, Donorbox, Subsplash, VOMO, Clearstream ir kitų įrankių naudodami Zapier ar Make receptus, su kiekvieno sąrankos vadovais."
 ---
 
 # Prijungtos paslaugos
@@ -14,14 +15,14 @@ Greičiausias būdas prijungti B1 prie kito bažnytinių technologijų įrankio 
 
 | Paslauga | Kategorija | Tarpinė grandis | Ką galite sujungti |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | El. paštas | Zapier arba Make | Sinchronizuoti naujus B1 narius ar aukotojus į Mailchimp auditoriją |
-| [Donorbox](./donorbox) | Aukos | Zapier | Perduoti Donorbox aukas ir aukotojus atgal į B1 |
-| [Subsplash](./subsplash) | Programėlė / aukos | Zapier | Perkelti Subsplash aukas ir narius į B1 |
-| [VOMO](./vomo) | Savanorystė | Zapier | Sinchronizuoti savanorių registracijas tarp B1 grupių ir VOMO projektų |
-| [Clearstream](./clearstream) | SMS | Zapier | Paleisti Clearstream žinutę iš B1 įvykių; įrašyti atsakymus kaip B1 įrašus |
-| [Text In Church](./text-in-church) | SMS / darbo eigos | Zapier | Paleisti Text In Church darbo eigas iš B1; gauti Connect Card duomenis |
-| [Mobile Message](./mobile-message) | SMS (AU) | Webhooks by Zapier arba Make | Siųsti SMS iš bet kurio B1 įvykio |
-| [Checkr](./checkr) | Patikrinimai apie teistumą | Make | Pradėti foninį patikrinimą, kai asmuo prisijungia prie tarnystės komandos |
+| [Mailchimp](./mailchimp.md) | El. paštas | Zapier arba Make | Sinchronizuoti naujus B1 narius ar aukotojus į Mailchimp auditoriją |
+| [Donorbox](./donorbox.md) | Aukos | Zapier | Perduoti Donorbox aukas ir aukotojus atgal į B1 |
+| [Subsplash](./subsplash.md) | Programėlė / aukos | Zapier | Perkelti Subsplash aukas ir narius į B1 |
+| [VOMO](./vomo.md) | Savanorystė | Zapier | Sinchronizuoti savanorių registracijas tarp B1 grupių ir VOMO projektų |
+| [Clearstream](./clearstream.md) | SMS | Zapier | Paleisti Clearstream žinutę iš B1 įvykių; įrašyti atsakymus kaip B1 įrašus |
+| [Text In Church](./text-in-church.md) | SMS / darbo eigos | Zapier | Paleisti Text In Church darbo eigas iš B1; gauti Connect Card duomenis |
+| [Mobile Message](./mobile-message.md) | SMS (AU) | Webhooks by Zapier arba Make | Siųsti SMS iš bet kurio B1 įvykio |
+| [Checkr](./checkr.md) | Patikrinimai apie teistumą | Make | Pradėti foninį patikrinimą, kai asmuo prisijungia prie tarnystės komandos |
 
 ## Kas visiems jiems bendra
 
@@ -45,8 +46,8 @@ Taip pat sąmoningai praleidome Planning Center Services specifinius įrankius (
 
 ## Taip pat žr.
 
-- [Zapier (apžvalga)](../zapier): B1 pusė kiekvieno Zapier recepto yra identiška, todėl šis dokumentas ją aprašo vieną kartą
-- [Make (apžvalga)](../make): tas pats galioja Make scenarijams
-- [Slack ir Discord](../slack-discord): pokalbių pranešimai be jokios tarpinės grandies
-- [Google Sheets](../google-sheets): eksportai pagal poreikį
+- [Zapier (apžvalga)](../zapier.md): B1 pusė kiekvieno Zapier recepto yra identiška, todėl šis dokumentas ją aprašo vieną kartą
+- [Make (apžvalga)](../make.md): tas pats galioja Make scenarijams
+- [Slack ir Discord](../slack-discord.md): pokalbių pranešimai be jokios tarpinės grandies
+- [Google Sheets](../google-sheets.md): eksportai pagal poreikį
 - [Webhooks (kūrėjo žinynas)](/docs/developer/api/webhooks): įvykių katalogas, kuriuo remiasi visi receptai

@@ -1,5 +1,6 @@
 ---
 title: "Integrácie"
+description: "Pripojte B1 Admin k Slack, Discord, Zapier, Make, Google Sheets a AI asistentom ako Claude, s krokmi nastavenia a rozsahmi API kľúčov pre každý."
 ---
 
 # Integrácie
@@ -14,21 +15,21 @@ B1 sa prepája s nástrojmi, ktoré váš tím už používa. Pripojte Slack ale
 
 | Integrácia | Čo robí | Smer | Úsilie na nastavenie |
 |---|---|---|---|
-| **[Slack](./slack-discord)** | Posiela čitateľné upozornenia (nové osoby, dary, registrácie, …) do kanála Slack | B1 → Slack | 2 minúty |
-| **[Discord](./slack-discord)** | To isté, v kanáli Discord | B1 → Discord | 2 minúty |
-| **[Zapier](./zapier)** | Použite udalosti B1 ako spúšťače a akcie B1 v ktorejkoľvek z 7 000+ aplikácií Zapier | Obe | 5–10 min na Zap |
-| **[Make](./make)** | Rovnaká myšlienka ako Zapier, v vizuálnom tvorcovi scenárov Make | Obe | 5–10 min na scenár |
-| **[Google Sheets](./google-sheets)** | Na požiadanie exportujte Ľudí / Dary / Skupiny / Účasť do tabuľky | B1 → Tabuľka | 5 minút |
-| **[Claude](./claude)** | Kladte otázky Claude od Anthropic o údajoch vášho kostola, obmedzené na vaše oprávnenia — vyskúšajte zadarmo, odporúčané | Obe | Menej ako 3 minúty |
-| **[ChatGPT](./chatgpt)** | Rovnaká myšlienka s ChatGPT od OpenAI (vyžaduje platený plán ChatGPT) | Obe | 10 minút |
-| **[Pripojené služby](./services/)** | Overené postupy pre Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Podľa služby | 5–10 min každá |
+| **[Slack](./slack-discord.md)** | Posiela čitateľné upozornenia (nové osoby, dary, registrácie, …) do kanála Slack | B1 → Slack | 2 minúty |
+| **[Discord](./slack-discord.md)** | To isté, v kanáli Discord | B1 → Discord | 2 minúty |
+| **[Zapier](./zapier.md)** | Použite udalosti B1 ako spúšťače a akcie B1 v ktorejkoľvek z 7 000+ aplikácií Zapier | Obe | 5–10 min na Zap |
+| **[Make](./make.md)** | Rovnaká myšlienka ako Zapier, v vizuálnom tvorcovi scenárov Make | Obe | 5–10 min na scenár |
+| **[Google Sheets](./google-sheets.md)** | Na požiadanie exportujte Ľudí / Dary / Skupiny / Účasť do tabuľky | B1 → Tabuľka | 5 minút |
+| **[Claude](./claude.md)** | Kladte otázky Claude od Anthropic o údajoch vášho kostola, obmedzené na vaše oprávnenia — vyskúšajte zadarmo, odporúčané | Obe | Menej ako 3 minúty |
+| **[ChatGPT](./chatgpt.md)** | Rovnaká myšlienka s ChatGPT od OpenAI (vyžaduje platený plán ChatGPT) | Obe | 10 minút |
+| **[Pripojené služby](./services/index.md)** | Overené postupy pre Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Podľa služby | 5–10 min každá |
 
 ## Ako vybrať
 
 - **Chcete len upozornenie v chate?** Použite **Slack** alebo **Discord** — nepotrebujete účet tretej strany ani Zap na údržbu. Nastavuje sa úplne v B1Admin.
 - **Chcete niečo automatizovať naprieč aplikáciami** (napr. „keď niekto daruje, pridaj ho do môjho zoznamu Mailchimp a do Slack #dary“)? Použite **Zapier** alebo **Make**. Zapier je prívetivejší; Make je lacnejší vo veľkom meradle a má flexibilnejšiu logiku.
 - **Potrebujete jednorazový výber údajov alebo naplánovaný report?** Použite **Google Sheets** — vložte API kľúč do bočného panela doplnku a kliknite na Export.
-- **Chcete klásť otázky jednoduchou slovenčinou** („koľko prvonávštevníkov bolo minulú nedeľu?“, „zhrň dary za tento mesiac“)? Začnite s **[Claude](./claude)** — vyskúšať ho môžete zadarmo a nastavenie trvá menej ako 3 minúty. **[ChatGPT](./chatgpt)** funguje tiež s plateným plánom. Claude sa pripája prihlásením s vaším účtom B1; ChatGPT používa API kľúč B1.
+- **Chcete klásť otázky jednoduchou slovenčinou** („koľko prvonávštevníkov bolo minulú nedeľu?“, „zhrň dary za tento mesiac“)? Začnite s **[Claude](./claude.md)** — vyskúšať ho môžete zadarmo a nastavenie trvá menej ako 3 minúty. **[ChatGPT](./chatgpt.md)** funguje tiež s plateným plánom. Claude sa pripája prihlásením s vaším účtom B1; ChatGPT používa API kľúč B1.
 - **Vytvárate vlastnú integráciu?** Nič z vyššie uvedeného — komunikujte priamo s [REST API](/docs/developer/api) pomocou [API kľúča](/docs/developer/api/api-keys), alebo prihláste server, ktorý ovládate, na [webhooky](/docs/developer/api/webhooks).
 
 ## Čo majú spoločné
@@ -59,10 +60,10 @@ Ak nič z vyššie uvedeného nevyhovuje, je otvorený každý povrch B1:
 
 ## Ďalšie kroky
 
-- [Slack a Discord](./slack-discord) — posielanie upozornení do chatu
-- [Zapier](./zapier) — pripojenie k 7 000+ aplikáciám
-- [Make](./make) — vizuálna automatizácia pracovných postupov
-- [Google Sheets](./google-sheets) — export do tabuliek
-- [Claude](./claude) — pýtajte sa Claude od Anthropic na údaje vášho kostola
-- [ChatGPT](./chatgpt) — pýtajte sa ChatGPT od OpenAI na údaje vášho kostola
-- [Pripojené služby](./services/) — postupy pre jednotlivé služby (Mailchimp, Donorbox, Clearstream, …)
+- [Slack a Discord](./slack-discord.md) — posielanie upozornení do chatu
+- [Zapier](./zapier.md) — pripojenie k 7 000+ aplikáciám
+- [Make](./make.md) — vizuálna automatizácia pracovných postupov
+- [Google Sheets](./google-sheets.md) — export do tabuliek
+- [Claude](./claude.md) — pýtajte sa Claude od Anthropic na údaje vášho kostola
+- [ChatGPT](./chatgpt.md) — pýtajte sa ChatGPT od OpenAI na údaje vášho kostola
+- [Pripojené služby](./services/index.md) — postupy pre jednotlivé služby (Mailchimp, Donorbox, Clearstream, …)

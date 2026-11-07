@@ -1,5 +1,6 @@
 ---
 title: "개발자 문서"
+description: "ChurchApps 개발자 문서 둘러보기: 로컬 설정, API 및 웹 앱 가이드, 공유 라이브러리, 모바일 빌드, 오픈소스 프로젝트의 배포 방법."
 ---
 
 # 개발자 문서
@@ -24,16 +25,16 @@ ChurchApps는 완전한 교회 관리 플랫폼을 함께 제공하는 약 20개
 
 ## 이 섹션의 내용
 
-- **[설정](setup/)** -- 로컬 개발 환경, 사전 요구 사항 및 구성
-  - [사전 요구 사항](setup/prerequisites) -- 필요한 도구 및 소프트웨어
-  - [프로젝트 개요](setup/project-overview) -- 모든 프로젝트 한눈에 보기
-  - [환경 변수](setup/environment-variables) -- `.env` 파일 구성하기
-- **[API](api/)** -- 핵심 API 로컬 설정, 데이터베이스 초기화 및 모듈 구조
-- **[웹 앱](web-apps/)** -- B1Admin, B1App 및 LessonsApp을 로컬에서 실행하기
-- **[모바일 앱](mobile/)** -- B1Mobile 및 기타 Expo 앱 빌드하기
-- **[공유 라이브러리](shared-libraries/)** -- Helpers, ApiHelper 및 AppHelper 사용하기
-- **[배포](deployment/)** -- API, 웹 앱 및 모바일 앱 배포하기
-- **[FreePlay 콘텐츠 제공자](freeplay-content-provider)** -- 레슨 라이브러리를 FreePlay에 통합하기
+- **[설정](./setup/index.md)** -- 로컬 개발 환경, 사전 요구 사항 및 구성
+  - [사전 요구 사항](./setup/prerequisites.md) -- 필요한 도구 및 소프트웨어
+  - [프로젝트 개요](./setup/project-overview.md) -- 모든 프로젝트 한눈에 보기
+  - [환경 변수](./setup/environment-variables.md) -- `.env` 파일 구성하기
+- **[API](./api/index.md)** -- 핵심 API 로컬 설정, 데이터베이스 초기화 및 모듈 구조
+- **[웹 앱](./web-apps/index.md)** -- B1Admin, B1App 및 LessonsApp을 로컬에서 실행하기
+- **[모바일 앱](./mobile/index.md)** -- B1Mobile 및 기타 Expo 앱 빌드하기
+- **[공유 라이브러리](./shared-libraries/index.md)** -- Helpers, ApiHelper 및 AppHelper 사용하기
+- **[배포](./deployment/index.md)** -- API, 웹 앱 및 모바일 앱 배포하기
+- **[FreePlay 콘텐츠 제공자](./freeplay-content-provider.md)** -- 레슨 라이브러리를 FreePlay에 통합하기
 
 ## 커뮤니티 및 리소스
 

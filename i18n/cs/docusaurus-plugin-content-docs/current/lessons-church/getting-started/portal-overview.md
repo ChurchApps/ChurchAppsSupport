@@ -1,5 +1,6 @@
 ---
 title: "Přehled portálu"
+description: "Přehled portálu Lessons.church: třídy, naplánované lekce, odkazy na kanály a přístup k externím poskytovatelům a nástrojům správy."
 ---
 
 # Přehled portálu

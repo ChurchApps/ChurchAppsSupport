@@ -1,5 +1,6 @@
 ---
 title: "Mukautettu verkkotunnus"
+description: "Ohjaa oma verkkotunnuksesi, kuten www.seurakuntasi.fi, B1-sivustollesi B1 Adminissa asettamalla DNS-tietueet ja lisäämällä verkkotunnus asetuksiin."
 ---
 
 # Mukautettu verkkotunnus

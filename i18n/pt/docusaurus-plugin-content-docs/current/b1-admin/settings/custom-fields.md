@@ -1,5 +1,6 @@
 ---
 title: "Campos personalizados"
+description: "Defina campos personalizados no B1 Admin para registrar dados extras, como validade de antecedentes ou tamanho de camiseta, e pesquise por eles."
 ---
 
 # Campos personalizados

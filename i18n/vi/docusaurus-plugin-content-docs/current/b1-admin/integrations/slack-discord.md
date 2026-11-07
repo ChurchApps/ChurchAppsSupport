@@ -1,5 +1,6 @@
 ---
 title: "Slack & Discord"
+description: "Đăng sự kiện B1 Admin như người mới, khoản dâng và phản hồi biểu mẫu lên kênh Slack hoặc Discord qua webhook đến, không cần Zapier."
 ---
 
 # Slack & Discord
@@ -114,7 +115,7 @@ Nếu có lỗi (huy hiệu đỏ `failed` hoặc `exhausted`), hộp thoại s�
 
 - **Không có tin nhắn xuất hiện và trạng thái gửi là `400`**: thường là Connector Type đang đặt là **Standard** trong khi URL là của Slack hoặc Discord. Slack và Discord từ chối phong bì gốc. Hãy chuyển danh sách thả xuống sang **Slack** hoặc **Discord** rồi gửi lại thử nghiệm.
 - **Webhook tự động bị tắt**: sau 3 lần gửi thất bại liên tiếp, B1 sẽ tắt webhook. Hãy sửa URL (hoặc tạo lại URL trên Slack hoặc Discord) rồi bật lại **Active**.
-- **Tin nhắn đến nhưng thiếu chi tiết**: mọi nền tảng chat đều giới hạn kích thước tin nhắn. Tin nhắn của B1 được thiết kế ngắn gọn có chủ đích. Để có thông báo phong phú hơn, hãy dùng [Zapier](./zapier) hoặc [Make](./make) để soạn tin nhắn Slack đầy đủ hơn thông qua các hành động Slack của chúng.
+- **Tin nhắn đến nhưng thiếu chi tiết**: mọi nền tảng chat đều giới hạn kích thước tin nhắn. Tin nhắn của B1 được thiết kế ngắn gọn có chủ đích. Để có thông báo phong phú hơn, hãy dùng [Zapier](./zapier.md) hoặc [Make](./make.md) để soạn tin nhắn Slack đầy đủ hơn thông qua các hành động Slack của chúng.
 
 ## Đổi Connector Type sau này
 
@@ -122,6 +123,6 @@ Bạn có thể đổi Connector Type của một webhook hiện có. Thay đổ
 
 ## Xem thêm
 
-- [Zapier](./zapier): cho các quy trình nhiều bước được kích hoạt bởi sự kiện B1
-- [Make](./make): trình xây dựng kịch bản trực quan
+- [Zapier](./zapier.md): cho các quy trình nhiều bước được kích hoạt bởi sự kiện B1
+- [Make](./make.md): trình xây dựng kịch bản trực quan
 - [Webhooks (tài liệu dành cho nhà phát triển)](/docs/developer/api/webhooks): định dạng payload và chữ ký đầy đủ nếu bạn muốn trỏ webhook đến máy chủ riêng

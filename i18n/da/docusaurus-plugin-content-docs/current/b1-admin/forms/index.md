@@ -1,5 +1,6 @@
 ---
 title: "Formularer"
+description: "Find, filtrér, redigér, arkivér og gendan tilpassede formularer i B1 Admin, samt hvor du angiver formularmedlemmer og gennemgår indsendelser."
 ---
 
 # Formularer

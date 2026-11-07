@@ -1,5 +1,6 @@
 ---
 title: "Guía: Rastrear Asistencia de la Iglesia"
+description: "Registra la asistencia en B1 Admin configurando campus y horarios, anotándola manualmente o con autorregistro, y consulta los informes."
 ---
 
 # Rastrear Asistencia de la Iglesia

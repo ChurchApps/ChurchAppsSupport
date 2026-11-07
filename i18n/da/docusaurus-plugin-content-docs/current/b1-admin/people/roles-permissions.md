@@ -1,5 +1,6 @@
 ---
 title: "Tildel roller"
+description: "Tildel roller i B1 Admin, så medarbejdere og frivillige kun får adgang til de områder for personer, donationer, fremmøde og grupper, de har brug for."
 ---
 
 # Tildel roller

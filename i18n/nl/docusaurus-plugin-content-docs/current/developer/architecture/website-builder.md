@@ -1,5 +1,6 @@
 ---
 title: "Architectuur van de websitebouwer"
+description: "Ontwikkelaarsoverzicht van de B1-websitebouwer: contentboom, gedeelde elementcatalogus, renderpijplijn en AI-paginagenerinin B1 Admin en B1.church."
 ---
 
 # Architectuur van de websitebouwer
@@ -82,7 +83,7 @@ Renderers staan in `Packages/apphelper/src/website/components/elementTypes/`, me
 
 ### Bewerkingsformulieren (B1Admin)
 
-De instellingenformulieren per type in de editor staan in `B1Admin/src/site/admin/elements/`. `ElementEdit.tsx` stuurt door naar een eigen component (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) of naar een inline veldbouwer per type. De AI-variant van deze catalogus is de MCP-tool `describe_page_builder` van de API (zie [MCP Server](../api/mcp)).
+De instellingenformulieren per type in de editor staan in `B1Admin/src/site/admin/elements/`. `ElementEdit.tsx` stuurt door naar een eigen component (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) of naar een inline veldbouwer per type. De AI-variant van deze catalogus is de MCP-tool `describe_page_builder` van de API (zie [MCP Server](../api/mcp.md)).
 
 De voorvertoning in de editor gebruikt hetzelfde `Theme` als de live site. Dat stelt de CSS-variabelen `--headingFont` en `--bodyFont` in op basis van de globale stijlen van de kerk. B1App past die variabelen toe via `pages.css`, wat B1Admin niet kan importeren. Daarom injecteert `ContentEditor.tsx` `EDITOR_PAGE_FONT_CSS` (`src/site/admin/editorCss.ts`) om ze toe te passen op de broodtekst van `.page` en op `h1`–`h6`. Zonder dit toonde de voorvertoning koppen in het lettertype van de beheerder.
 
@@ -153,7 +154,7 @@ Dit alles wordt aan de kant van B1App weergegeven op basis van gegevens van Cont
 |-----------|---------|
 | Metabeschrijvingen | `pages.metaDescription` (≤300 tekens) gaat via `MetaHelper.getMetaData()` naar de Next.js `Metadata` (description en Open Graph) op elke route die door de bouwer wordt weergegeven. De paginainstellingen van B1Admin bevatten een AI-knop "Genereren" (zie hieronder) |
 | Redirects | Rijen `redirects` per kerk, beheerd op `/content/redirects` (`content.edit`, limiet van 200 rijen, genormaliseerde paden). Bij een pad dat anders een 404 zou geven, zoekt de paginaroute van B1App het pad op via `GET /content/redirects/public/:churchId` en geeft een HTTP 308 via `permanentRedirect` van Next. Paden zonder treffer vallen door naar `notFound()` |
-| 404 in huisstijl | `not-found.tsx` rendert `BrandedNotFound` met het logo, de naam en het thema van de kerk, in plaats van een generieke fout. Onbekende paden `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` en `/volunteer/[planId]` geven een echte 404. Dat geldt ook voor onbekende subdomeinen en ongeldige paginaslugs (zie [Websiterouting & meerdere sites](./websites)) |
+| 404 in huisstijl | `not-found.tsx` rendert `BrandedNotFound` met het logo, de naam en het thema van de kerk, in plaats van een generieke fout. Onbekende paden `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` en `/volunteer/[planId]` geven een echte 404. Dat geldt ook voor onbekende subdomeinen en ongeldige paginaslugs (zie [Websiterouting & meerdere sites](./websites.md)) |
 | Gestructureerde gegevens | `BlogPosting` JSON-LD op blogberichten. `VideoObject` op de pagina's per preek (`/{sdSlug}/sermons/[sermonId]`) en op pagina's met een element `sermons`. `Event` uit agenda- en evenementelementen op pagina's van de bouwer en op elke pagina `/{sdSlug}/events/[eventId]` (volgende voorkomen, met de evenementfoto als `image`). schema.org `Event` uit het element `serviceTimes` |
 | Preekpagina's | Elke openbare preek krijgt een pagina die zoekmachines kunnen indexeren op `/sermons/[sermonId]`, met volledige metadata. Preken zitten niet langer vast in de browser aan de clientzijde |
 | Analytics | De openbare instellingssleutel `ga4MeasurementId` (beheerd naast redirects in B1Admin) voegt een gtag van GA4 per kerk in via `next/script`. De B1-app (`/{sdSlug}/mobile`) stuurt ook zijn paginaweergaven naar dat ID, naast de eigen tag van ChurchApps, zolang het een geldig `G-`-ID is (GTM-containerID's blijven beperkt tot de website). Elke `gtag('config')` bevat een `display_mode` met de waarde `installed` of `browser`, op basis van `navigator.standalone` of de mediaquery `(display-mode: standalone)` (`B1App/src/helpers/mobileAnalytics.ts`) |
@@ -201,7 +202,7 @@ De herschrijfknop `SectionToolbar` en de knop "Site genereren" in de paginalijst
 | `POST /website/generateAltText` | Visuele aanroep over maximaal 20 afbeeldings-URL's. Geeft beknopte alternatieve tekst terug (≤125 tekens, voorvoegsels als "photo of" verwijderd) |
 | `POST /website/generateMetaDescription` | Eén SEO-metabeschrijving (≤155 tekens) op basis van de tekstinhoud van de pagina. Gekoppeld aan de knop Genereren in de paginainstellingen van B1Admin |
 
-De prompts voor deze endpoints zijn markdownbestanden onder `AskApi/config/instructions/`. Daarbij hoort ook de elementcatalogus waaruit het model genereert. Twee ontwerpkeuzes houden die catalogus eerlijk. De client stuurt bij elk verzoek `availableElementTypes` mee. De prompt mag alleen typen uit die lijst gebruiken. De server bevat de volledige set nooit hardcoded. En de MCP-tool `describe_page_builder` van de API bevat dezelfde gids voor AI-agents die via [MCP](../api/mcp) werken. De modellen zijn Anthropic Claude via OpenRouter: 3.5 Haiku voor de inhoud van secties (latentie) en 3.5 Sonnet voor overzichten, sitemplannen en beeldanalyse. Er is een terugvalmodel van OpenAI wanneer er geen OpenRouter-sleutel is geconfigureerd.
+De prompts voor deze endpoints zijn markdownbestanden onder `AskApi/config/instructions/`. Daarbij hoort ook de elementcatalogus waaruit het model genereert. Twee ontwerpkeuzes houden die catalogus eerlijk. De client stuurt bij elk verzoek `availableElementTypes` mee. De prompt mag alleen typen uit die lijst gebruiken. De server bevat de volledige set nooit hardcoded. En de MCP-tool `describe_page_builder` van de API bevat dezelfde gids voor AI-agents die via [MCP](../api/mcp.md) werken. De modellen zijn Anthropic Claude via OpenRouter: 3.5 Haiku voor de inhoud van secties (latentie) en 3.5 Sonnet voor overzichten, sitemplannen en beeldanalyse. Er is een terugvalmodel van OpenAI wanneer er geen OpenRouter-sleutel is geconfigureerd.
 
 ## Conversatieformulieren
 
@@ -226,8 +227,8 @@ De controllers die `bump` aanroepen: pagina's (opslaan, verwijderen, dupliceren,
 
 ## Gerelateerde pagina's
 
-- [Websiterouting & meerdere sites](./websites): hoe een verzoek wordt omgezet naar een kerk/site en hoe eigen domeinen worden doorgestuurd
-- [Content-endpoints](../api/endpoints/content): de volledige REST-interface voor pagina's, secties, elementen, blokken, berichten, redirects en instellingen
-- [AppHelper](../shared-libraries/app-helper): het npm-pakket dat de renderers, het register, de scheiders en de widgets levert
-- [MCP Server](../api/mcp): inclusief de gids-tool `describe_page_builder`
+- [Websiterouting & meerdere sites](./websites.md): hoe een verzoek wordt omgezet naar een kerk/site en hoe eigen domeinen worden doorgestuurd
+- [Content-endpoints](../api/endpoints/content.md): de volledige REST-interface voor pagina's, secties, elementen, blokken, berichten, redirects en instellingen
+- [AppHelper](../shared-libraries/app-helper.md): het npm-pakket dat de renderers, het register, de scheiders en de widgets levert
+- [MCP Server](../api/mcp.md): inclusief de gids-tool `describe_page_builder`
 - [Paginaeditor (eindgebruiker)](/docs/b1-admin/website/page-editor): de documentatie van de editor voor medewerkers

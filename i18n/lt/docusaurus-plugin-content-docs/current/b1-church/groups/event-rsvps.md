@@ -1,5 +1,6 @@
 ---
 title: "Įvykių atsakymai (RSVP)"
+description: "Atsakykite į grupių renginius B1.church narių portale: Dalyvausiu, Galbūt arba Negaliu. Matykite, kiek kitų dalyvaus. Vadovai gali peržiūrėti atsakymus."
 ---
 
 # Įvykių atsakymai (RSVP)
@@ -30,14 +31,14 @@ Jūsų atsakymas galioja tam konkrečiam renginio pasikartojimui: pavyzdžiui, s
 ## Grupių vadovams
 
 - **Atsakymų peržiūra** -- Vadovai kiekvieno renginio grupės kalendoriuje (**Visi renginiai**) mato nuorodą **Peržiūrėti atsakymus**. Ji atveria lapą **Atsakymai**, kuriame visi sugrupuoti pagal atsakymą: Dalyvausiu, Galbūt ir Negalėsiu. Jei dar niekas neatsakė, rodoma žinutė „Atsakymų dar nėra“.
-- **Atsakymų įjungimas ar išjungimas** -- Kuriant arba redaguojant renginį naudokite jungiklį **Leisti atsakymus**. Renginiuose, kuriems atsakymai išjungti, atsakymo mygtukai nerodomi. Darbuotojai, kurie kuria renginius masiškai iš B1 Admin, turi tą pačią parinktį — žr. [Grupių kalendorius](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Atsakymų įjungimas ar išjungimas** -- Kuriant arba redaguojant renginį naudokite jungiklį **Leisti atsakymus**. Renginiuose, kuriems atsakymai išjungti, atsakymo mygtukai nerodomi. Darbuotojai, kurie kuria renginius masiškai iš B1 Admin, turi tą pačią parinktį — žr. [Grupių kalendorius](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-Atsakymai yra paprastas dalyvių skaičiavimas. Jei jūsų renginiui reikia registracijos duomenų, vietų valdymo ar mokėjimo, vietoj to naudokite [renginių registraciją](../events/registering).
+Atsakymai yra paprastas dalyvių skaičiavimas. Jei jūsų renginiui reikia registracijos duomenų, vietų valdymo ar mokėjimo, vietoj to naudokite [renginių registraciją](../events/registering.md).
 :::
 
 ## Susiję straipsniai
 
 - [Grupės informacija](./group-details.md) -- Viskas grupės informacijos puslapyje
-- [Grupių kalendorius (B1 Admin)](../../b1-admin/groups/group-calendar) -- Kaip darbuotojai ir vadovai valdo grupių renginius ir atsakymus
-- [Registracija į renginius](../events/registering) -- Pilna renginių registracija su vietomis ir mokėjimais
+- [Grupių kalendorius (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Kaip darbuotojai ir vadovai valdo grupių renginius ir atsakymus
+- [Registracija į renginius](../events/registering.md) -- Pilna renginių registracija su vietomis ir mokėjimais

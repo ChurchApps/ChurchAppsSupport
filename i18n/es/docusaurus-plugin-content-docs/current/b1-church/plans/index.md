@@ -1,5 +1,6 @@
 ---
 title: "Planes"
+description: "Descubra a qué planes de servicio está asignado en B1.church, revise sus puestos y fechas, y acepte o rechace asignaciones desde su portal de miembros."
 ---
 
 # Planes

@@ -1,5 +1,6 @@
 ---
 title: "Amministrazione del server"
+description: "Solo per gli utenti Server.Admin: reimpostare l'accesso a due fattori, impersonare account, moderare Commons e approvare l'email della chiesa in B1 Admin."
 ---
 
 # Amministrazione del server

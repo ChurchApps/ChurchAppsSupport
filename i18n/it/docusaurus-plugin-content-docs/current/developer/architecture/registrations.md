@@ -1,12 +1,13 @@
 ---
 title: "Iscrizioni agli eventi"
+description: "Come funzionano le iscrizioni agli eventi in B1 Admin e B1App: tipi di partecipanti, extra a pagamento, sconti, pagamenti e promozione dalla lista d'attesa."
 ---
 
 # Iscrizioni agli eventi
 
 <div class="article-intro">
 
-L'iscrizione nativa agli eventi risiede nel modulo content e, dalla release delle iscrizioni a pagamento, include un modello commerciale completo: tipi di partecipante con prezzo, selezioni extra con prezzo, codici sconto, pagamenti tramite il gateway di donazioni già in uso dalla chiesa e una lista d'attesa basata sullo stato. Il percorso del denaro riutilizza deliberatamente lo stack delle donazioni -- il controller delle iscrizioni addebita tramite la stessa astrazione `GatewayService` / `IGatewayProvider` documentata in [Donazioni](./giving), quindi nel modulo content non esiste alcuna conoscenza dei dati delle carte né degli SDK dei gateway. Questa pagina mappa il modello dei dati, le regole di prezzo e di capienza, e i flussi di iscrizione, pagamento e lista d'attesa.
+L'iscrizione nativa agli eventi risiede nel modulo content e, dalla release delle iscrizioni a pagamento, include un modello commerciale completo: tipi di partecipante con prezzo, selezioni extra con prezzo, codici sconto, pagamenti tramite il gateway di donazioni già in uso dalla chiesa e una lista d'attesa basata sullo stato. Il percorso del denaro riutilizza deliberatamente lo stack delle donazioni -- il controller delle iscrizioni addebita tramite la stessa astrazione `GatewayService` / `IGatewayProvider` documentata in [Donazioni](./giving.md), quindi nel modulo content non esiste alcuna conoscenza dei dati delle carte né degli SDK dei gateway. Questa pagina mappa il modello dei dati, le regole di prezzo e di capienza, e i flussi di iscrizione, pagamento e lista d'attesa.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-La tokenizzazione avviene nel browser esattamente come per le donazioni (vedi [Donazioni](./giving)) -- la procedura guidata riutilizza il registro dei provider di pagamento di apphelper, quindi i membri connessi possono pagare con le carte salvate e gli ospiti tokenizzano una nuova carta. Il controller replica le particolarità dei provider di `DonateController` (id dei metodi di pagamento Kingdom Funding `pm-{id}`, risposte SCA `requires_action` di Stripe restituite al client senza registrare un pagamento). Un addebito riuscito scrive una riga in `registrationPayments`, incrementa `amountPaid` e conferma l'iscrizione. **I rimborsi non sono implementati** -- un'iscrizione a pagamento annullata conserva le righe di pagamento, e l'eventuale rimborso viene gestito fuori banda nella dashboard del gateway.
+La tokenizzazione avviene nel browser esattamente come per le donazioni (vedi [Donazioni](./giving.md)) -- la procedura guidata riutilizza il registro dei provider di pagamento di apphelper, quindi i membri connessi possono pagare con le carte salvate e gli ospiti tokenizzano una nuova carta. Il controller replica le particolarità dei provider di `DonateController` (id dei metodi di pagamento Kingdom Funding `pm-{id}`, risposte SCA `requires_action` di Stripe restituite al client senza registrare un pagamento). Un addebito riuscito scrive una riga in `registrationPayments`, incrementa `amountPaid` e conferma l'iscrizione. **I rimborsi non sono implementati** -- un'iscrizione a pagamento annullata conserva le righe di pagamento, e l'eventuale rimborso viene gestito fuori banda nella dashboard del gateway.
 
 Entrambi i punti di ingresso passano dallo stesso percorso di codice: `register` (pagamento alla registrazione) e `pay` (pagamento del saldo / completamento della lista d'attesa).
 
@@ -147,7 +148,7 @@ Le ricerche tra moduli (risoluzione o creazione della persona ospite, caricament
 
 ## Pagine correlate
 
-- [Donazioni](./giving) — l'astrazione del gateway, il registro dei provider e il modello di tokenizzazione che questa funzione riutilizza
-- [Endpoint Content](../api/endpoints/content) — la superficie REST del modulo content
-- [Webhook](../api/webhooks) — l'evento `registration.created`
-- [Struttura del modulo](../api/module-structure) — come è organizzato lato server il modulo content
+- [Donazioni](./giving.md) — l'astrazione del gateway, il registro dei provider e il modello di tokenizzazione che questa funzione riutilizza
+- [Endpoint Content](../api/endpoints/content.md) — la superficie REST del modulo content
+- [Webhook](../api/webhooks.md) — l'evento `registration.created`
+- [Struttura del modulo](../api/module-structure.md) — come è organizzato lato server il modulo content

@@ -1,12 +1,13 @@
 ---
 title: "Rejestracje na wydarzenia"
+description: "Jak działają zapisy na wydarzenia w B1 Admin i B1App: typy uczestników, płatne dodatki, kody rabatowe, płatności przez bramkę i listę oczekujących."
 ---
 
 # Rejestracje na wydarzenia
 
 <div class="article-intro">
 
-Natywna rejestracja na wydarzenia znajduje się w module treści i od czasu wdrożenia płatnych rejestracji obejmuje pełny model handlowy: typy uczestników z cenami, opcjonalne dodatki z cenami, kody rabatowe, płatności przez istniejącą bramkę płatności kościoła oraz listę oczekujących sterowaną statusami. Ścieżka płatności celowo korzysta z istniejącego stosu darowizn: kontroler rejestracji obciąża kartę przez tę samą abstrakcję `GatewayService` / `IGatewayProvider`, opisaną na stronie [Dawanie](./giving), więc w module treści nie ma żadnych danych kart ani wiedzy o SDK bramki. Ta strona opisuje model danych, zasady cen i pojemności oraz przepływy rejestracji, płatności i listy oczekujących.
+Natywna rejestracja na wydarzenia znajduje się w module treści i od czasu wdrożenia płatnych rejestracji obejmuje pełny model handlowy: typy uczestników z cenami, opcjonalne dodatki z cenami, kody rabatowe, płatności przez istniejącą bramkę płatności kościoła oraz listę oczekujących sterowaną statusami. Ścieżka płatności celowo korzysta z istniejącego stosu darowizn: kontroler rejestracji obciąża kartę przez tę samą abstrakcję `GatewayService` / `IGatewayProvider`, opisaną na stronie [Dawanie](./giving.md), więc w module treści nie ma żadnych danych kart ani wiedzy o SDK bramki. Ta strona opisuje model danych, zasady cen i pojemności oraz przepływy rejestracji, płatności i listy oczekujących.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Tokenizacja odbywa się w przeglądarce dokładnie tak jak przy darowiznach (zob. [Dawanie](./giving)) — kreator korzysta z rejestru dostawców płatności apphelper, więc zalogowani członkowie mogą płacić zapisanymi kartami, a goście tokenizują nową kartę. Kontroler odzwierciedla niestandardowe zachowania dostawców z `DonateController` (identyfikatory metod płatności `pm-{id}` w Kingdom Funding, odpowiedzi `requires_action` ze Stripe SCA zwracane klientowi bez zapisywania płatności). Udane obciążenie zapisuje wiersz w `registrationPayments`, zwiększa `amountPaid` i potwierdza rejestrację. **Zwroty nie są zaimplementowane** — anulowana płatna rejestracja zachowuje wiersze płatności, a ewentualny zwrot realizowany jest poza systemem, w panelu bramki.
+Tokenizacja odbywa się w przeglądarce dokładnie tak jak przy darowiznach (zob. [Dawanie](./giving.md)) — kreator korzysta z rejestru dostawców płatności apphelper, więc zalogowani członkowie mogą płacić zapisanymi kartami, a goście tokenizują nową kartę. Kontroler odzwierciedla niestandardowe zachowania dostawców z `DonateController` (identyfikatory metod płatności `pm-{id}` w Kingdom Funding, odpowiedzi `requires_action` ze Stripe SCA zwracane klientowi bez zapisywania płatności). Udane obciążenie zapisuje wiersz w `registrationPayments`, zwiększa `amountPaid` i potwierdza rejestrację. **Zwroty nie są zaimplementowane** — anulowana płatna rejestracja zachowuje wiersze płatności, a ewentualny zwrot realizowany jest poza systemem, w panelu bramki.
 
 Oba punkty wejścia przechodzą przez tę samą ścieżkę kodu: `register` (płatność przy zapisie) oraz `pay` (płatność reszty / dokończenie z listy oczekujących).
 
@@ -147,7 +148,7 @@ Wyszukiwania między modułami (ustalanie lub tworzenie osoby-gościa, pobierani
 
 ## Powiązane strony
 
-- [Dawanie](./giving) — abstrakcja bramki, rejestr dostawców i model tokenizacji, które wykorzystuje ta funkcja
-- [Punkty końcowe treści](../api/endpoints/content) — interfejs REST modułu treści
-- [Webhooki](../api/webhooks) — zdarzenie `registration.created`
-- [Struktura modułów](../api/module-structure) — organizacja modułu treści po stronie serwera
+- [Dawanie](./giving.md) — abstrakcja bramki, rejestr dostawców i model tokenizacji, które wykorzystuje ta funkcja
+- [Punkty końcowe treści](../api/endpoints/content.md) — interfejs REST modułu treści
+- [Webhooki](../api/webhooks.md) — zdarzenie `registration.created`
+- [Struktura modułów](../api/module-structure.md) — organizacja modułu treści po stronie serwera

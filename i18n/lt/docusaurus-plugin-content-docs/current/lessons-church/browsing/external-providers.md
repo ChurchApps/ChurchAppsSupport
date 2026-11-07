@@ -1,5 +1,6 @@
 ---
 title: "Externe anbieter"
+description: "Sužinokite, kaip trečiųjų šalių mokymo teikėjai pateikia turinį Lessons.church pagal Open Lesson Format, ir kaip prijungti teikėją per portalą."
 ---
 
 # Externe anbieter

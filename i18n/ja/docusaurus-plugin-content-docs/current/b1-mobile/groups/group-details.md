@@ -1,5 +1,7 @@
 ---
-title: "グループの詳細"
+title: "B1 Mobile アプリのグループの詳細"
+sidebar_label: "グループの詳細"
+description: "B1 Mobile のグループ詳細ページに表示される内容（グループ情報、投稿、メンバー）と、グループ画面から開く方法を確認できます。"
 ---
 
 # グループの詳細
@@ -13,7 +15,7 @@ title: "グループの詳細"
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- [B1 Mobile をインストール](../getting-started/installing)し、アカウントに[ログイン](../getting-started/logging-in)してください
+- [B1 Mobile をインストール](../getting-started/installing.md)し、アカウントに[ログイン](../getting-started/logging-in.md)してください
 - [グループ](./index.md)画面を開いてください
 
 </div>
@@ -46,5 +48,5 @@ title: "グループの詳細"
 
 ## 関連記事
 
-- [グループタイムライン](./group-timeline) -- すべてのグループの活動を一覧できる統合フィードについて説明します
+- [グループタイムライン](./group-timeline.md) -- すべてのグループの活動を一覧できる統合フィードについて説明します
 - [メッセージ](../community/messaging.md) -- グループのメンバーに個別のメッセージを送信する方法を説明します

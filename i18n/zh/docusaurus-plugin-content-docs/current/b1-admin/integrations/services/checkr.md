@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "使用 Make.com 将 B1 Admin 的志愿者报名连接到 Checkr 背景调查，并可为安全事工协调员提供可选的报告状态提醒。"
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Make 的 Checkr 操作包括：创建候选人、创建背景审查邀请、获�
 
 ## 另请参阅
 
-- [Make（概览）](../make) — 每个 Make 场景的 B1 侧配置
-- [Mobile Message](./mobile-message) — 适用于没有 Zapier 应用的短信服务商，与 Checkr 的 Make 连接采用相同的 Webhooks/HTTP 模式
+- [Make（概览）](../make.md) — 每个 Make 场景的 B1 侧配置
+- [Mobile Message](./mobile-message.md) — 适用于没有 Zapier 应用的短信服务商，与 Checkr 的 Make 连接采用相同的 Webhooks/HTTP 模式
 - [Checkr API 文档](https://docs.checkr.com/)

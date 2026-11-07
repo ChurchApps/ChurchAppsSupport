@@ -1,5 +1,6 @@
 ---
 title: "Edição em Massa de Pessoas"
+description: "Atualize situação de membro, estado civil, gênero, opt-out, campos Sim/Não ou grupos de muitas pessoas de uma só vez no B1 Admin."
 ---
 
 # Edição em Massa de Pessoas

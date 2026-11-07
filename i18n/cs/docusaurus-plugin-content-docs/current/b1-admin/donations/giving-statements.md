@@ -1,5 +1,6 @@
 ---
 title: "Potvrzení o darech"
+description: "Vytvořte v B1 Admin roční potvrzení o darech pro každého dárce a stáhněte je jako CSV nebo je vytiskněte k odeslání s daňově odpočitatelnými částkami."
 ---
 
 # Potvrzení o darech

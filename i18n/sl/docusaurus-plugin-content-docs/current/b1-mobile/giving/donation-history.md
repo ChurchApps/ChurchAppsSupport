@@ -1,5 +1,7 @@
 ---
-title: "Povzetek darovanj"
+title: "Ogled zgodovine darovanja v B1 Mobile"
+sidebar_label: "Povzetek darovanj"
+description: "Preverite letošnje darove, zadnji dar in celotno evidenco darovanja v aplikaciji B1 Mobile ter z enim dotikom ponovite pretekli dar na zavihku Pregled."
 ---
 
 # Povzetek darovanj
@@ -13,8 +15,8 @@ B1 Mobile vam prek dveh zavihkov omogoča jasen pregled nad vašimi darovanji: *
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite B1 Mobile](../getting-started/installing) in se [prijavite](../getting-started/logging-in) v svoj račun
-- [Opravite vsaj eno darovanje](./making-donations), da si lahko ogledate svojo zgodovino
+- [Namestite B1 Mobile](../getting-started/installing.md) in se [prijavite](../getting-started/logging-in.md) v svoj račun
+- [Opravite vsaj eno darovanje](./making-donations.md), da si lahko ogledate svojo zgodovino
 
 </div>
 
@@ -45,5 +47,5 @@ Redno preverjajte zavihek **Pregled**, da boste na tekočem s svojimi cilji daro
 
 ## Sorodni članki
 
-- [Darovanje](./making-donations) -- Novo darovanje prek aplikacije
-- [Upravljanje načinov plačila](./managing-payments) -- Dodajanje ali odstranjevanje shranjenih načinov plačila
+- [Darovanje](./making-donations.md) -- Novo darovanje prek aplikacije
+- [Upravljanje načinov plačila](./managing-payments.md) -- Dodajanje ali odstranjevanje shranjenih načinov plačila

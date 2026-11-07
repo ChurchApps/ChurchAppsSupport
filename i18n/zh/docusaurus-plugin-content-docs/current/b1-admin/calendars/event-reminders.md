@@ -1,21 +1,22 @@
 ---
 title: "活动提醒"
+description: "在 B1 Admin 中设置活动提醒，可选择推送、电子邮件和短信方式，并设定提醒时间、接收人和自定义信息，确保人们及时收到通知。"
 ---
 
 # 活动提醒
 
 <div class="article-intro">
 
-活动提醒会在活动开始前自动通知合适的人员——例如，“别错过了！医疗保健研讨会明天上午 9:00 开始。”你只需在活动上配置一次提醒，B1 就会按计划通过推送通知、电子邮件发送；如果你的教会已设置短信服务，还会发送短信。成员可以在各自的[通知偏好设置](../../b1-church/getting-started/notification-preferences)中控制要接收哪些提醒。
+活动提醒会在活动开始前自动通知合适的人员——例如，“别错过了！医疗保健研讨会明天上午 9:00 开始。”你只需在活动上配置一次提醒，B1 就会按计划通过推送通知、电子邮件发送；如果你的教会已设置短信服务，还会发送短信。成员可以在各自的[通知偏好设置](../../b1-church/getting-started/notification-preferences.md)中控制要接收哪些提醒。
 
 </div>
 
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 创建你想要提醒人员的活动（参见[创建日历](creating-calendars)）
-- 若要提醒已报名的参加者，请先在活动上[开启报名](creating-calendars)
-- 若要提醒整个小组，请确保活动隶属于一个有成员的[小组](../groups/creating-groups)
+- 创建你想要提醒人员的活动（参见[创建日历](./creating-calendars.md)）
+- 若要提醒已报名的参加者，请先在活动上[开启报名](./creating-calendars.md)
+- 若要提醒整个小组，请确保活动隶属于一个有成员的[小组](../groups/creating-groups.md)
 
 </div>
 
@@ -57,21 +58,21 @@ title: "活动提醒"
 - 重复活动会自动处理：每个即将到来的场次都会有各自的提醒。
 
 :::tip
-提醒**优先推送，电子邮件作为备用**。如果成员已开启推送通知，他们会收到推送；否则将改为收到电子邮件。成员可以在各自的[通知偏好设置](../../b1-church/getting-started/notification-preferences)中，按通知类型选择希望接收的渠道。
+提醒**优先推送，电子邮件作为备用**。如果成员已开启推送通知，他们会收到推送；否则将改为收到电子邮件。成员可以在各自的[通知偏好设置](../../b1-church/getting-started/notification-preferences.md)中，按通知类型选择希望接收的渠道。
 :::
 
 ## 短信提醒
 
 只有当你的教会已连接短信服务商时，**Text** 渠道才会出现。短信通过你教会的短信服务商发送，每条短信都可能产生费用。短信会与推送或电子邮件提醒一并发送，且仅发送给同时满足以下条件的人：
 
-- 在其[通知偏好设置](../../b1-church/getting-started/notification-preferences)中开启了**短信（Text messages）**，并且
+- 在其[通知偏好设置](../../b1-church/getting-started/notification-preferences.md)中开启了**短信（Text messages）**，并且
 - 其个人资料中有手机号码。
 
 每条短信都以教会名称开头，内容保持在单条短信之内，并以“Reply STOP to opt out.”（回复 STOP 即可退订）结尾。回复 STOP 的人将不再收到教会发送的短信。要使 STOP 回复能够传送到 B1，请将[短信设置](../settings/church-settings.md#texting)中的 **Inbound (STOP) webhook URL**（入站 STOP 回调网址）粘贴到你服务商的入站消息回调设置中。
 
 ## 成员可控制的内容
 
-提醒始终遵循每位成员的[通知偏好设置](../../b1-church/getting-started/notification-preferences)。成员可以：
+提醒始终遵循每位成员的[通知偏好设置](../../b1-church/getting-started/notification-preferences.md)。成员可以：
 
 - 关闭推送、电子邮件或短信的**活动提醒（Event Reminders）**，同时保持其他通知开启。
 - 通过 **Text messages** 开启或关闭短信提醒。
@@ -81,10 +82,10 @@ title: "活动提醒"
 
 ## 服务提醒
 
-被排入计划的志愿者会收到一封单独的**服务提醒（serving reminder）**，其中包含计划详情；如果他们尚未回复，邮件中会直接显示**Accept / Decline**（接受/拒绝）按钮。这些提醒是在计划类型上配置的，而不是在日历活动上配置，同样也可以通过短信发送——参见[志愿者提醒](../serving/plans#volunteer-reminders)，以及[周日志愿者](../guides/sunday-volunteers)，了解志愿者排班与提醒的工作方式。
+被排入计划的志愿者会收到一封单独的**服务提醒（serving reminder）**，其中包含计划详情；如果他们尚未回复，邮件中会直接显示**Accept / Decline**（接受/拒绝）按钮。这些提醒是在计划类型上配置的，而不是在日历活动上配置，同样也可以通过短信发送——参见[志愿者提醒](../serving/plans.md#volunteer-reminders)，以及[周日志愿者](../guides/sunday-volunteers.md)，了解志愿者排班与提醒的工作方式。
 
 ## 下一步
 
-- [通知偏好设置](../../b1-church/getting-started/notification-preferences) —— 成员可以控制的内容
-- [活动报名指南](../guides/event-registration) —— 设置报名，使提醒能够送达参加者
-- [创建日历](creating-calendars) —— 返回日历设置页面
+- [通知偏好设置](../../b1-church/getting-started/notification-preferences.md) —— 成员可以控制的内容
+- [活动报名指南](../guides/event-registration.md) —— 设置报名，使提醒能够送达参加者
+- [创建日历](./creating-calendars.md) —— 返回日历设置页面

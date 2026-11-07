@@ -1,5 +1,6 @@
 ---
 title: "Hantera betalningsmetoder"
+description: "Lägg till, granska och ta bort sparade kort i fliken Hantera i B1 Mobiles givardel, så att upprepade donationer går snabbare utan att du behöver ange kortuppgifterna igen."
 ---
 
 # Hantera betalningsmetoder
@@ -13,7 +14,7 @@ Fliken **Hantera** i avsnittet för gåvor låter dig visa och hantera dina spar
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Installera B1 Mobile](../getting-started/installing) och [logga in](../getting-started/logging-in) på ditt konto
+- [Installera B1 Mobile](../getting-started/installing.md) och [logga in](../getting-started/logging-in.md) på ditt konto
 
 </div>
 
@@ -31,7 +32,7 @@ För att lägga till ett nytt kort:
 4. Ange dina kortuppgifter. Uppgifterna skickas säkert till **Stripe** för behandling.
 5. När kortet har sparats visas det nya kortet i din lista över betalningsmetoder.
 
-Ditt sparade kort blir sedan tillgängligt som betalningsalternativ nästa gång du [gör en gåva](./making-donations) från fliken **Donera**.
+Ditt sparade kort blir sedan tillgängligt som betalningsalternativ nästa gång du [gör en gåva](./making-donations.md) från fliken **Donera**.
 
 ## Ta bort en betalningsmetod
 
@@ -44,7 +45,7 @@ Om du inte längre vill ha ett kort sparat kan du ta bort det från fliken **Han
 Kortet visas inte längre som betalningsalternativ när du gör en gåva.
 
 :::info
-Att ta bort en betalningsmetod påverkar inte tidigare gåvor. Din [gåvohistorik](./donation-history) förblir oförändrad.
+Att ta bort en betalningsmetod påverkar inte tidigare gåvor. Din [gåvohistorik](./donation-history.md) förblir oförändrad.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Behåll minst en betalningsmetod sparad för snabb givning. På så sätt kan du
 
 ## Relaterade artiklar
 
-- [Att göra en gåva](./making-donations) -- Lär dig hur du ger en gåva med en sparad betalningsmetod
-- [Gåvohistorik](./donation-history) -- Visa din gåvosammanfattning och tidigare gåvor
+- [Att göra en gåva](./making-donations.md) -- Lär dig hur du ger en gåva med en sparad betalningsmetod
+- [Gåvohistorik](./donation-history.md) -- Visa din gåvosammanfattning och tidigare gåvor

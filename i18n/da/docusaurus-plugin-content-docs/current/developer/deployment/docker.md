@@ -1,12 +1,13 @@
 ---
 title: "Self-Hosting med Docker"
+description: "Installer en privat B1 Admin, medlemsportal, API og MySQL-stak på din egen maskine med Docker, og opgrader og sikkerhedskopier med b1-kommandoen."
 ---
 
 # Self-Hosting med Docker
 
 <div class="article-intro">
 
-Kør din egen private instans af B1 Admin, B1-medlemsportalen og hjemmesiden, API'et og en MySQL-database på enhver maskine med Docker — en hjemmeserver, en lille VPS eller en boks on-prem. Én kommando installerer det, én kommando opgraderer det, og hver opgradering tager først en backup. Hvis du helst slet ikke vil administrere en server, se [Self-Hosting på Railway](./railway-template) for det administrerede alternativ.
+Kør din egen private instans af B1 Admin, B1-medlemsportalen og hjemmesiden, API'et og en MySQL-database på enhver maskine med Docker — en hjemmeserver, en lille VPS eller en boks on-prem. Én kommando installerer det, én kommando opgraderer det, og hver opgradering tager først en backup. Hvis du helst slet ikke vil administrere en server, se [Self-Hosting på Railway](./railway-template.md) for det administrerede alternativ.
 
 </div>
 
@@ -94,10 +95,10 @@ Hvis du installerede på `localhost` og senere vil gøre den offentlig: peg DNS 
 
 Disse fungerer præcis som på Railway — de samme miljøvariabler, men sat i `.env` i stedet for i Railway-dashboardet:
 
-- **[E-mail / SMTP](./railway-template#1-email-highly-recommended)** — vejledninger for Resend, Brevo og Gmail
-- **[Flere websteder](./railway-template#3-multi-site-multiple-churches-on-one-instance)** — ubegrænset antal kirker pr. instans. `/` viser den kirke, hvis slug er `DEFAULT_CHURCH_SLUG` (den første kirke hedder `church`); peg yderligere domæner mod boksen og tilknyt dem under **Settings → Domains** i B1Admin
-- **[Online donationer](./railway-template#4-online-giving-stripe--paypal)** — konfigureres pr. kirke i admin-grænsefladen
-- **[Valgfrie integrationer](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[E-mail / SMTP](./railway-template.md#1-email-highly-recommended)** — vejledninger for Resend, Brevo og Gmail
+- **[Flere websteder](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** — ubegrænset antal kirker pr. instans. `/` viser den kirke, hvis slug er `DEFAULT_CHURCH_SLUG` (den første kirke hedder `church`); peg yderligere domæner mod boksen og tilknyt dem under **Settings → Domains** i B1Admin
+- **[Online donationer](./railway-template.md#4-online-giving-stripe--paypal)** — konfigureres pr. kirke i admin-grænsefladen
+- **[Valgfrie integrationer](./railway-template.md#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Push-notifikationer](#push-notifikationer)** — `WEB_PUSH_*`; installationsprogrammet lader disse være tomme, så push er slået fra, indtil du tilføjer dem
 
 Invitationer og anden e-mail, som kirken sender, aktiveres automatisk på en selvhostet instans. (Den hostede tjeneste kræver manuel gennemgang af disse for at beskytte afsenderens omdømme.)
@@ -148,7 +149,7 @@ Tre navngivne Docker-volumener indeholder al tilstand:
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-Ved store mediebiblioteker kan du skifte fillagringen til S3 — sæt `FILE_STORE=S3` samt de `AWS_*`-variabler, der beskrives i [afsnittet om fillagring i Railway-vejledningen](./railway-template#5-file-storage). Databasebackups indeholder ikke S3-objekter; aktiver versionering på bucket'en dér.
+Ved store mediebiblioteker kan du skifte fillagringen til S3 — sæt `FILE_STORE=S3` samt de `AWS_*`-variabler, der beskrives i [afsnittet om fillagring i Railway-vejledningen](./railway-template.md#5-file-storage). Databasebackups indeholder ikke S3-objekter; aktiver versionering på bucket'en dér.
 
 ## Opdatering
 
@@ -187,6 +188,6 @@ Stadig kørt fast? Opret en issue på [github.com/ChurchApps/ChurchAppsSupport/i
 
 ## Relaterede artikler
 
-- **[Self-Hosting på Railway](./railway-template)** — alternativ administreret hosting samt de fælles vejledninger til konfiguration efter udrulning
-- **[Indledende opsætning](../../getting-started/initial-setup)** — første skridt, efter din kirke er oprettet
-- **[Lokal API-opsætning](../api/local-setup)** — kørsel af stakken direkte til udvikling
+- **[Self-Hosting på Railway](./railway-template.md)** — alternativ administreret hosting samt de fælles vejledninger til konfiguration efter udrulning
+- **[Indledende opsætning](../../getting-started/initial-setup.md)** — første skridt, efter din kirke er oprettet
+- **[Lokal API-opsætning](../api/local-setup.md)** — kørsel af stakken direkte til udvikling

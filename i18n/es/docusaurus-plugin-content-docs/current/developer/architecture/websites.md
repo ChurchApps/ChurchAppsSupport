@@ -1,12 +1,13 @@
 ---
 title: "Enrutamiento de sitios web y multisitio"
+description: "Cómo B1.church asigna subdominios y dominios personalizados a la iglesia o al sitio secundario correcto, además del proxy Caddy en el borde que gestiona TLS para dominios personalizados."
 ---
 
 # Enrutamiento de sitios web y multisitio
 
 <div class="article-intro">
 
-Una sola iglesia ahora puede servir más de un sitio web distinto, y cada uno puede vivir en un subdominio `*.b1.church` o en un dominio personalizado totalmente propio de la iglesia. Esta página describe la capa de enrutamiento que está *debajo* del creador: cómo una solicitud entrante se resuelve en una iglesia **y** en un sitio específico, el modelo de datos multisitio (el centinela `siteId` que mantiene funcionando sin cambios todos los sitios preexistentes) y el borde de dominios personalizados: un proxy Caddy administrado por la propia iglesia en EC2 que termina TLS y reescribe cada dominio de la iglesia hacia su upstream `*.b1.church`. Para lo que realmente se muestra una vez que una solicitud se ha resuelto (el árbol de páginas, secciones y elementos), consulte [Creador de sitios web](./website-builder).
+Una sola iglesia ahora puede servir más de un sitio web distinto, y cada uno puede vivir en un subdominio `*.b1.church` o en un dominio personalizado totalmente propio de la iglesia. Esta página describe la capa de enrutamiento que está *debajo* del creador: cómo una solicitud entrante se resuelve en una iglesia **y** en un sitio específico, el modelo de datos multisitio (el centinela `siteId` que mantiene funcionando sin cambios todos los sitios preexistentes) y el borde de dominios personalizados: un proxy Caddy administrado por la propia iglesia en EC2 que termina TLS y reescribe cada dominio de la iglesia hacia su upstream `*.b1.church`. Para lo que realmente se muestra una vez que una solicitud se ha resuelto (el árbol de páginas, secciones y elementos), consulte [Creador de sitios web](./website-builder.md).
 
 </div>
 
@@ -202,7 +203,7 @@ Las filas `www.*` se excluyen del mapa; Caddy sirve `www.{host}` mediante una re
 
 ### Estado actual: configuración estática, sin estado en ejecución
 
-La máquina (un EC2 de Windows detrás de la IP elástica permanente) ejecuta Caddy con un **Caddyfile estático**: TLS bajo demanda cuyo `ask` apunta a `/membership/domains/authorize`, más un archivo de mapa host→upstream que una tarea programada actualiza cada 5 minutos desde `/membership/domains/hostmap`, y que termina con un `caddy reload` controlado. La configuración sobrevive a los reinicios sin ningún estado en ejecución (sin el proceso de volver a cargarla manualmente), y un SNI desconocido recibe un **rechazo de TLS** (no se emite ningún certificado para un host que `authorize` rechaza), mientras que un host autorizado pero aún no mapeado (un dominio recién creado dentro de la ventana de sincronización) recibe un 404 limpio. Los dominios nuevos se vuelven enrutables en unos 5 minutos después de guardarlos; sus certificados se emiten en la primera visita. Construcción y configuración, operación y trampas probadas en la práctica: [Proxy de dominio personalizado con Caddy](../deployment/caddy-proxy).
+La máquina (un EC2 de Windows detrás de la IP elástica permanente) ejecuta Caddy con un **Caddyfile estático**: TLS bajo demanda cuyo `ask` apunta a `/membership/domains/authorize`, más un archivo de mapa host→upstream que una tarea programada actualiza cada 5 minutos desde `/membership/domains/hostmap`, y que termina con un `caddy reload` controlado. La configuración sobrevive a los reinicios sin ningún estado en ejecución (sin el proceso de volver a cargarla manualmente), y un SNI desconocido recibe un **rechazo de TLS** (no se emite ningún certificado para un host que `authorize` rechaza), mientras que un host autorizado pero aún no mapeado (un dominio recién creado dentro de la ventana de sincronización) recibe un 404 limpio. Los dominios nuevos se vuelven enrutables en unos 5 minutos después de guardarlos; sus certificados se emiten en la primera visita. Construcción y configuración, operación y trampas probadas en la práctica: [Proxy de dominio personalizado con Caddy](../deployment/caddy-proxy.md).
 
 ### Envío heredado en tiempo de ejecución: ruta de reversión, eliminación pendiente
 
@@ -210,8 +211,8 @@ La máquina (un EC2 de Windows detrás de la IP elástica permanente) ejecuta Ca
 
 ## Páginas relacionadas
 
-- [Proxy de dominio personalizado con Caddy](../deployment/caddy-proxy): la máquina del borde en sí: configuración desde cero, servicio WinSW, tarea de sincronización del mapa y trampas operativas
-- [Creador de sitios web](./website-builder): el árbol de páginas/secciones/elementos, los renderizadores, el blog, el SEO y la generación con IA (lo que se muestra una vez que una solicitud se ha resuelto a una iglesia/sitio)
-- [Endpoints de Content](../api/endpoints/content): la superficie REST para páginas, bloques, enlaces y estilos globales, todos ahora sensibles a `?siteId=`
-- [B1App](../web-apps/b1-app): la aplicación Next.js que aloja el middleware y el enrutamiento `[sdSlug]`
-- [Despliegue de aplicaciones web](../deployment/web-apps): cómo se despliega B1App en Vercel
+- [Proxy de dominio personalizado con Caddy](../deployment/caddy-proxy.md): la máquina del borde en sí: configuración desde cero, servicio WinSW, tarea de sincronización del mapa y trampas operativas
+- [Creador de sitios web](./website-builder.md): el árbol de páginas/secciones/elementos, los renderizadores, el blog, el SEO y la generación con IA (lo que se muestra una vez que una solicitud se ha resuelto a una iglesia/sitio)
+- [Endpoints de Content](../api/endpoints/content.md): la superficie REST para páginas, bloques, enlaces y estilos globales, todos ahora sensibles a `?siteId=`
+- [B1App](../web-apps/b1-app.md): la aplicación Next.js que aloja el middleware y el enrutamiento `[sdSlug]`
+- [Despliegue de aplicaciones web](../deployment/web-apps.md): cómo se despliega B1App en Vercel

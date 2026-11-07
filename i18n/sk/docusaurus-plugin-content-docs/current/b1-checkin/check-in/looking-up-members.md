@@ -1,5 +1,6 @@
 ---
 title: "Vyhľadávanie členov"
+description: "Nájdite svoju rodinu na kiosku B1 Checkin vyhľadaním číslic telefónu alebo mena. Ak ste prvýkrát na návšteve, zaregistrujte sa ako hosť."
 ---
 
 # Vyhľadávanie členov
@@ -13,7 +14,7 @@ Po výbere bohoslužby sa dostanete na obrazovku vyhľadávania členov. Tu vyh�
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Vyberte bohoslužbu](./selecting-service) na obrazovke bohoslužieb
+- [Vyberte bohoslužbu](./selecting-service.md) na obrazovke bohoslužieb
 - Uistite sa, že správca cirkvi pridal vašu domácnosť [do systému](../../b1-admin/people/adding-people.md)
 
 </div>
@@ -45,7 +46,7 @@ Aplikácia vyhľadá členov, ktorých meno zodpovedá tomu, čo ste zadali.
 
 Výsledky vyhľadávania sa zobrazia ako karty pod vyhľadávacím poľom. Každá karta zobrazuje **meno** osoby a jej **fotografiu** (ak je v systéme uložená).
 
-Klepnutím na kartu osoby ju vyberiete. Aplikácia načíta všetkých členov domácnosti danej osoby a presmeruje vás na [obrazovku kontroly domácnosti](./household-review).
+Klepnutím na kartu osoby ju vyberiete. Aplikácia načíta všetkých členov domácnosti danej osoby a presmeruje vás na [obrazovku kontroly domácnosti](./household-review.md).
 
 :::tip
 Vyhľadávanie podľa posledných 4 číslic telefónneho čísla je najrýchlejší spôsob, ako nájsť svoju rodinu. Povzbudzujte členov, aby používali túto metódu pre rýchlejšie prihlásenie.
@@ -60,7 +61,7 @@ Ak sa nenájdu žiadne výsledky, aplikácia zobrazí správu, ktorá vás o tom
 Ak vaša cirkev má zapnutú registráciu hostí cez QR kód, pod vyhľadávaním na obrazovke vyhľadávania sa zobrazí odkaz **Registrovať sa ako hosť**. Prví návštevníci ho môžu použiť na pridanie svojej rodiny do systému cirkvi pred prihlásením.
 
 1. Klepnite na **Registrovať sa ako hosť**. Otvorí sa okno s QR kódom a správou „Naskenujte pre registráciu ako hosť."
-2. Vyberte si, ako vyplniť [formulár registrácie hostí](../../b1-church/checkin/guest-registration):
+2. Vyberte si, ako vyplniť [formulár registrácie hostí](../../b1-church/checkin/guest-registration.md):
    - **Na vašom telefóne** -- Naskenujte QR kód, vyplňte formulár na telefóne a klepnutím na **OK** zatvorte okno.
    - **Na kiosku** -- Klepnutím na **Registrovať tu** otvorte rovnaký formulár priamo na tablete. Vyplňte ho a klepnite na **Registrovať**, potom klepnite na **Hotovo** (alebo šípku späť), aby ste sa vrátili na obrazovku vyhľadávania.
 3. Po registrácii vyhľadajte svoju rodinu podľa mena alebo telefónneho čísla a prihláste sa.
@@ -71,7 +72,7 @@ Formulár otvorený tlačidlom **Registrovať tu** zostáva na stránke registr�
 
 ## Tlač štítkov pri prihlásení z telefónu
 
-Rodiny, ktoré sa už prihlásili na telefóne cez [samoprihlásenie v B1 Church](../../b1-church/checkin/self-checkin), môžu vytlačiť svoje menovky na kiosku bez toho, aby sa sami vyhľadávali.
+Rodiny, ktoré sa už prihlásili na telefóne cez [samoprihlásenie v B1 Church](../../b1-church/checkin/self-checkin.md), môžu vytlačiť svoje menovky na kiosku bez toho, aby sa sami vyhľadávali.
 
 1. Na obrazovke vyhľadávania klepnite na tlačidlo **Naskenovať kód** (ikona QR kódu).
 2. Podržte QR kód zo svojho telefónu pred kamerou. Ak aplikácia požiada o prístup ku kamere, klepnite na **Povoliť kameru**. Predvolene sa používa predná kamera; na prepnutie klepnite na tlačidlo otočenia.
@@ -81,4 +82,4 @@ Skenovanie iba tlačí štítky -- účasť bola zaznamenaná už vtedy, keď sa
 
 ## Ďalší krok
 
-Po výbere osoby [skontrolujete svoju domácnosť](./household-review) a spravujete priradenie skupín.
+Po výbere osoby [skontrolujete svoju domácnosť](./household-review.md) a spravujete priradenie skupín.

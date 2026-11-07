@@ -1,5 +1,7 @@
 ---
-title: "Giriş Yapma"
+title: "B1 Church Checkin'e Giriş Yapma"
+sidebar_label: "Giriş Yapma"
+description: "B1 Church Checkin kiosk uygulamasında oturum açın, kilisenizi seçin ve check-in tabletindeki otomatik oturum açma, yönetici ayarları ve oturum kapatmayı öğrenin."
 ---
 
 # Giriş Yapma
@@ -63,7 +65,7 @@ Yönetici ayarları, kiosku kullanan üyelerin yapılandırmayı yanlışlıkla 
 2. Kiosk PIN'i ayarlanmışsa, istendiğinde PIN'i girin.
 3. **Admin Settings** ekranı aşağıdaki seçeneklerle açılır:
    - **Change Service** — seçili hizmet saatini değiştirin
-   - **Change Printer** — yazıcı aramak ve seçmek için [yazıcı ayarlarını](./printer-setup) açın
+   - **Change Printer** — yazıcı aramak ve seçmek için [yazıcı ayarlarını](./printer-setup.md) açın
    - **Set/Change PIN** — yönetici erişimini koruyan kiosk PIN'ini ayarlayın veya güncelleyin
    - **Logout** — oturumu kapatıp giriş ekranına dönün
 
@@ -73,4 +75,4 @@ Oturumu kapatmak, kayıtlı tüm kimlik bilgilerini ve kilise seçimini siler. K
 
 ## Sonraki Adımlar
 
-Oturum açtıktan sonra [yazıcıyı ayarlayabilir](./printer-setup) veya doğrudan [check-in iş akışına](../check-in/) geçebilirsiniz.
+Oturum açtıktan sonra [yazıcıyı ayarlayabilir](./printer-setup.md) veya doğrudan [check-in iş akışına](../check-in/index.md) geçebilirsiniz.

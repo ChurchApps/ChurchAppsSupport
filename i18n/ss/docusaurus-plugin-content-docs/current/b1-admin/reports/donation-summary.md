@@ -1,5 +1,6 @@
 ---
 title: "Sifinyeto Semnikelo"
+description: "Sebentisa umbiko i-Donation Summary ku-B1 Admin ukubona yonkhe imali yekuniketa, inani labaniketi labehlukile, netimali ngesikhwama ngasinye ngesikhatsi osikhetsile."
 ---
 
 # Sifinyeto Semnikelo

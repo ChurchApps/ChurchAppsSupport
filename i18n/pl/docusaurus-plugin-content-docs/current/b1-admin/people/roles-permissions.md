@@ -1,5 +1,6 @@
 ---
 title: "Przypisywanie ról"
+description: "Przypisz role w B1 Admin, aby dać pracownikom i wolontariuszom dostęp tylko do osób, darowizn, frekwencji i grup, których potrzebują."
 ---
 
 # Przypisywanie ról

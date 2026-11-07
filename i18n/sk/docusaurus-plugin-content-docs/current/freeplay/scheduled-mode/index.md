@@ -1,5 +1,6 @@
 ---
 title: "Plánovaný režim"
+description: "Nastavenie TV FreePlay na prehrávanie playlistov podľa kalendára vo FreePlay Admin: obrazovky sa samy spúšťajú a zastavujú a pokračujú aj pri výpadku Wi-Fi."
 ---
 
 # Plánovaný režim
@@ -18,16 +19,16 @@ FreePlay Admin používa vaše prihlasovacie údaje ChurchApps, rovnaké, aké p
 
 FreePlay Admin má štyri hlavné stránky, ktoré sú uvedené v hornej časti stránky:
 
-- **[Obrazovky](./managing-screens)** - Televízory, ktoré ste spárovali, ich stav a **skupiny obrazoviek**, do ktorých patria. Obrazovky v jednej skupine zdieľajú jeden kalendár a jednu predvolenú slučku
-- **[Playlisty](./building-playlists)** - Slučky obrázkov a videí, ktoré vyberiete od svojich poskytovateľov obsahu
-- **[Kalendár](./scheduling-the-calendar)** - Čo a kedy prehráva každá skupina obrazoviek
-- **[Poskytovatelia](./building-playlists#connecting-providers)** - Zdroje obsahu, z ktorých čerpajú vaše playlisty. Každého z nich pripojíte raz pre celú cirkev
+- **[Obrazovky](./managing-screens.md)** - Televízory, ktoré ste spárovali, ich stav a **skupiny obrazoviek**, do ktorých patria. Obrazovky v jednej skupine zdieľajú jeden kalendár a jednu predvolenú slučku
+- **[Playlisty](./building-playlists.md)** - Slučky obrázkov a videí, ktoré vyberiete od svojich poskytovateľov obsahu
+- **[Kalendár](./scheduling-the-calendar.md)** - Čo a kedy prehráva každá skupina obrazoviek
+- **[Poskytovatelia](./building-playlists.md#connecting-providers)** - Zdroje obsahu, z ktorých čerpajú vaše playlisty. Každého z nich pripojíte raz pre celú cirkev
 
 Keď nie je nič naplánované, obrazovky skupiny prehrávajú jej **predvolenú slučku**. Ak skupina nemá predvolenú slučku, obrazovky zhasnú.
 
 ## Čím sa líši od režimu plánu
 
-- **[Režim plánu](../plan-mode/)** sleduje jeden typ služobného plánu z B1 Admin. Niekto stlačí na televízore **Spustiť plán** a lekcia sa prehrá, keď tak urobí
+- **[Režim plánu](../plan-mode/index.md)** sleduje jeden typ služobného plánu z B1 Admin. Niekto stlačí na televízore **Spustiť plán** a lekcia sa prehrá, keď tak urobí
 - **Plánovaný režim** sleduje kalendár. Obsah sa spúšťa a zastavuje v časoch, ktoré nastavíte, takže sa dobre hodí na označenia vo vestibule, slučky s oznámeniami a triedy, kde má byť lekcia zobrazená ešte predtým, ako niekto vojde
 
 Položka v kalendári môže prehrávať aj služobný plán. Pri pridávaní plánu vyberte typ plánu v časti **Služobné plány** a obrazovka prehrá ten plán, ktorý je v B1 Admin aktuálny v danom týždni. Patria sem aj lekcie Go Curriculum, a to aj tie, ktoré ste v pláne upravili. Obrazovka používa prihlasovacie údaje Go Curriculum prepojené s ministerstvom daného typu plánu v B1 Admin, alebo pripojenie cirkvi ku Go Curriculum, ak ministerstvo žiadne nemá.
@@ -49,8 +50,8 @@ Stlačte **Ctrl+K** (**⌘K** na počítači Mac) alebo kliknite na vyhľadávac
 
 ## V tejto sekcii
 
-- **[Párovanie obrazovky](./pairing-a-screen)** - Zobrazte kód na televízore a spárujte ho vo FreePlay Admin
-- **[Správa obrazoviek a skupín](./managing-screens)** - Kontrola stavu a sťahovania a usporiadanie obrazoviek do skupín
-- **[Pripájanie poskytovateľov a tvorba playlistov](./building-playlists)** - Prepojenie zdrojov obsahu a tvorba slučiek obrázkov a videí
-- **[Plánovanie kalendára](./scheduling-the-calendar)** - Určenie, čo a kedy sa prehráva, a čo sa stane, keď sa obsah skončí skôr
-- **[Plánované prehrávanie na televízore](./scheduled-playback)** - Čo televízor robí sám od seba a ako použiť diaľkový ovládač počas prehrávania
+- **[Párovanie obrazovky](./pairing-a-screen.md)** - Zobrazte kód na televízore a spárujte ho vo FreePlay Admin
+- **[Správa obrazoviek a skupín](./managing-screens.md)** - Kontrola stavu a sťahovania a usporiadanie obrazoviek do skupín
+- **[Pripájanie poskytovateľov a tvorba playlistov](./building-playlists.md)** - Prepojenie zdrojov obsahu a tvorba slučiek obrázkov a videí
+- **[Plánovanie kalendára](./scheduling-the-calendar.md)** - Určenie, čo a kedy sa prehráva, a čo sa stane, keď sa obsah skončí skôr
+- **[Plánované prehrávanie na televízore](./scheduled-playback.md)** - Čo televízor robí sám od seba a ako použiť diaľkový ovládač počas prehrávania

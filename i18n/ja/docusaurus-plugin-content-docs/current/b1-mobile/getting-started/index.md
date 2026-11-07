@@ -1,5 +1,7 @@
 ---
-title: "はじめに"
+title: "B1 Mobile の使い始め（非推奨）"
+sidebar_label: "はじめに"
+description: "スマートフォンに B1 Mobile を設定します。アプリを見つけ、ChurchApps アカウントでログインして教会を選択します。B1 Mobile は PWA に置き換えられ非推奨になったことにご注意ください。"
 ---
 
 # はじめに
@@ -25,10 +27,10 @@ B1 Mobile の利用開始には数分しかかかりません。アプリをダ�
 
 ## このセクションの内容
 
-- [アプリのインストール](./installing) -- B1 Mobile のダウンロード先と端末の要件。
-- [ログイン](./logging-in) -- サインインや新規アカウントの作成方法。
-- [教会の切り替え](./switching-churches) -- 複数の教会に所属している場合の切り替え方法。
+- [アプリのインストール](./installing.md) -- B1 Mobile のダウンロード先と端末の要件。
+- [ログイン](./logging-in.md) -- サインインや新規アカウントの作成方法。
+- [教会の切り替え](./switching-churches.md) -- 複数の教会に所属している場合の切り替え方法。
 
 :::tip
-B1 Mobile は、他のすべての ChurchApps 製品と同じ ChurchApps アカウントを使用します。[B1.church](../../b1-church/)、B1 Admin、Lessons.church のアカウントをお持ちであれば、同じ認証情報でログインできます。
+B1 Mobile は、他のすべての ChurchApps 製品と同じ ChurchApps アカウントを使用します。[B1.church](../../b1-church/index.md)、B1 Admin、Lessons.church のアカウントをお持ちであれば、同じ認証情報でログインできます。
 :::

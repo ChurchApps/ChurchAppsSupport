@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "B1 Admin को लोकल रूप से सेट अप करें: React/Vite डैशबोर्ड क्लोन करें, .env में API एंडपॉइंट कॉन्फ़िगर करें, और चर्च प्रबंधन कार्य के लिए डेव सर्वर शुरू करें।"
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin चर्च प्रशासन डैशबोर्ड है -- Vi
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- **Node.js 22+** और **Git** इंस्टॉल करें -- देखें [आवश्यकताएं](../setup/prerequisites)
-- अपना API लक्ष्य कॉन्फ़िगर करें (डेमो या लोकल) -- देखें [पर्यावरण चर](../setup/environment-variables)
+- **Node.js 22+** और **Git** इंस्टॉल करें -- देखें [आवश्यकताएं](../setup/prerequisites.md)
+- अपना API लक्ष्य कॉन्फ़िगर करें (डेमो या लोकल) -- देखें [पर्यावरण चर](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ npm start
 3. नया संस्करण परोसने के लिए CloudFront invalidation ट्रिगर होता है
 
 :::tip
-विस्तृत डिप्लॉयमेंट निर्देशों के लिए [Web App Deployment](../deployment/web-apps) गाइड देखें।
+विस्तृत डिप्लॉयमेंट निर्देशों के लिए [Web App Deployment](../deployment/web-apps.md) गाइड देखें।
 :::

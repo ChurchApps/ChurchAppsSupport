@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Synkronisér B1 Admin-personer og gruppe- eller gemte lister til et Mailchimp-publikum som tags, med opsætning, første import og fejlfinding."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Når du laver den første indlæsning via Mailchimps importværktøj, bevarer du
 
 ## Andre opskrifter (Zapier / Make)
 
-Alt ud over synkronisering af målgrupper, fx tagging af givere ved `donation.created`, en omvendt retning fra Mailchimp til B1, eller synkronisering til en helt anden e-mailplatform (Constant Contact, Brevo osv.), kan stadig gøres med [Zapier](../zapier) eller [Make](../make). De udløses af de samme webhook-hændelser:
+Alt ud over synkronisering af målgrupper, fx tagging af givere ved `donation.created`, en omvendt retning fra Mailchimp til B1, eller synkronisering til en helt anden e-mailplatform (Constant Contact, Brevo osv.), kan stadig gøres med [Zapier](../zapier.md) eller [Make](../make.md). De udløses af de samme webhook-hændelser:
 
 - **Tag givere:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Begge retninger:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ Hvis du tidligere har sat person- og gruppesynkronisering op via Zapier, skal du
 
 - [Webhooks (udviklerreference)](/docs/developer/api/webhooks): motoren bag, hændelseskataloget og reglerne for levering og genforsøg
 - [Gemte lister](/docs/b1-admin/people/lists): regelbaserede målgrupper, der passer naturligt til Mailchimp-tags
-- [Zapier (oversigt)](../zapier): til opskrifter ud over synkronisering af målgrupper
+- [Zapier (oversigt)](../zapier.md): til opskrifter ud over synkronisering af målgrupper

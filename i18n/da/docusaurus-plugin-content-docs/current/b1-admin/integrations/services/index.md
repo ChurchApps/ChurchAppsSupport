@@ -1,5 +1,6 @@
 ---
 title: "Tilsluttede tjenester"
+description: "Forbind B1 Admin til Mailchimp, Donorbox, Subsplash, VOMO, Clearstream og andre værktøjer med Zapier- eller Make-opskrifter og opsætningsvejledning til hver."
 ---
 
 # Tilsluttede tjenester
@@ -14,14 +15,14 @@ Den hurtigste måde at forbinde B1 med et andet kirketeknologisk værktøj er no
 
 | Tjeneste | Kategori | Bro | Hvad du kan forbinde |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | E-mail | Zapier eller Make | Synkroniser nye B1-personer og givere til et Mailchimp-publikum |
-| [Donorbox](./donorbox) | Donationer | Zapier | Send Donorbox-donationer og donorer tilbage til B1 |
-| [Subsplash](./subsplash) | App / Donationer | Zapier | Hent Subsplash-gaver og personer ind i B1 |
-| [VOMO](./vomo) | Frivilligt arbejde | Zapier | Synkroniser frivillige tilmeldinger mellem B1-grupper og VOMO-projekter |
-| [Clearstream](./clearstream) | SMS | Zapier | Udløs en Clearstream-sms fra B1-hændelser; modtag svar som B1-poster |
-| [Text In Church](./text-in-church) | SMS / Workflows | Zapier | Udløs Text In Church-workflows fra B1; modtag Connect Card-data |
-| [Mobile Message](./mobile-message) | SMS (AU) | Webhooks by Zapier eller Make | Send sms fra enhver B1-hændelse |
-| [Checkr](./checkr) | Baggrundstjek | Make | Start et baggrundstjek, når nogen tilslutter sig et tjenesteteam |
+| [Mailchimp](./mailchimp.md) | E-mail | Zapier eller Make | Synkroniser nye B1-personer og givere til et Mailchimp-publikum |
+| [Donorbox](./donorbox.md) | Donationer | Zapier | Send Donorbox-donationer og donorer tilbage til B1 |
+| [Subsplash](./subsplash.md) | App / Donationer | Zapier | Hent Subsplash-gaver og personer ind i B1 |
+| [VOMO](./vomo.md) | Frivilligt arbejde | Zapier | Synkroniser frivillige tilmeldinger mellem B1-grupper og VOMO-projekter |
+| [Clearstream](./clearstream.md) | SMS | Zapier | Udløs en Clearstream-sms fra B1-hændelser; modtag svar som B1-poster |
+| [Text In Church](./text-in-church.md) | SMS / Workflows | Zapier | Udløs Text In Church-workflows fra B1; modtag Connect Card-data |
+| [Mobile Message](./mobile-message.md) | SMS (AU) | Webhooks by Zapier eller Make | Send sms fra enhver B1-hændelse |
+| [Checkr](./checkr.md) | Baggrundstjek | Make | Start et baggrundstjek, når nogen tilslutter sig et tjenesteteam |
 
 ## Hvad de alle har til fælles
 
@@ -45,8 +46,8 @@ Vi har også bevidst udeladt Planning Center-Services-specifikke værktøjer (mu
 
 ## Se også
 
-- [Zapier (oversigt)](../zapier): B1-siden af enhver Zapier-opskrift er identisk, og denne dokumentation dækker den én gang
-- [Make (oversigt)](../make): samme for Make-scenarier
-- [Slack & Discord](../slack-discord): chatnotifikationer uden nogen bro
-- [Google Sheets](../google-sheets): eksporter efter behov
+- [Zapier (oversigt)](../zapier.md): B1-siden af enhver Zapier-opskrift er identisk, og denne dokumentation dækker den én gang
+- [Make (oversigt)](../make.md): samme for Make-scenarier
+- [Slack & Discord](../slack-discord.md): chatnotifikationer uden nogen bro
+- [Google Sheets](../google-sheets.md): eksporter efter behov
 - [Webhooks (udviklerreference)](/docs/developer/api/webhooks): hændelseskataloget, som alle opskrifter er afhængige af

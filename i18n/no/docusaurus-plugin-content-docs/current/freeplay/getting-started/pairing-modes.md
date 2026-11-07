@@ -1,5 +1,6 @@
 ---
 title: "Velge en paringsmodus"
+description: "Velg riktig måte å koble til en FreePlay TV på: en kalender fra FreePlay Admin, en gudstjenesteplan fra B1 Admin, eller ingen tilkobling i det hele tatt."
 ---
 
 # Velge en paringsmodus
@@ -32,7 +33,7 @@ Skriv inn koden i **FreePlay Admin** på [admin.freeplay.church](https://admin.f
 
 **Best egnet til:** Skilting i lobby og gang, kunngjøringsløkker, og klasserom der leksjonen allerede skal spille når folk kommer inn.
 
-Se **[Planlagt modus](../scheduled-mode/)** for hele veiledningen.
+Se **[Planlagt modus](../scheduled-mode/index.md)** for hele veiledningen.
 
 ## Planmodus (B1 Admin)
 
@@ -42,7 +43,7 @@ Skriv inn koden i **B1 Admin** når du vil at TV-en skal følge en plantype for 
 
 **Best egnet til:** TV-er som viser innhold knyttet til gudstjenesteplanen din for uken, der noen starter avspillingen når det er tid for det.
 
-Se **[Planmodus](../plan-mode/)** for hele veiledningen.
+Se **[Planmodus](../plan-mode/index.md)** for hele veiledningen.
 
 :::tip
 Du kan også spille den gjeldende gudstjenesteplanen etter en plan. I FreePlay Admin legger du til en kalenderoppføring og velger plantypen under **Gudstjenesteplaner**.
@@ -50,7 +51,7 @@ Du kan også spille den gjeldende gudstjenesteplanen etter en plan. I FreePlay A
 
 ## Innholdsleverandører (uten paring)
 
-Hvis du ikke trenger å pare TV-en i det hele tatt, kan du bla gjennom innholdsleverandører direkte. Leverandører som [Lessons.church](../../lessons-church/) og Bible Project har innhold du kan laste ned og spille når du vil.
+Hvis du ikke trenger å pare TV-en i det hele tatt, kan du bla gjennom innholdsleverandører direkte. Leverandører som [Lessons.church](../../lessons-church/index.md) og Bible Project har innhold du kan laste ned og spille når du vil.
 
 **Best egnet til:** TV-er der frivillige velger hva som skal spilles hver uke, eller når du vil utforske hva som finnes.
 
@@ -60,6 +61,6 @@ Du kan åpne siden **Leverandører** når som helst fra **Innstillinger** neders
 
 ## Relaterte artikler
 
-- **[Planlagt modus](../scheduled-mode/)** - Sett TV-er på en kalender med FreePlay Admin
-- **[Planmodus](../plan-mode/)** - Fullstendig veiledning for paring med en gudstjenesteplan
-- **[Innholdsleverandører](../content-providers/)** - Bla gjennom og last ned innhold fra eksterne kilder
+- **[Planlagt modus](../scheduled-mode/index.md)** - Sett TV-er på en kalender med FreePlay Admin
+- **[Planmodus](../plan-mode/index.md)** - Fullstendig veiledning for paring med en gudstjenesteplan
+- **[Innholdsleverandører](../content-providers/index.md)** - Bla gjennom og last ned innhold fra eksterne kilder

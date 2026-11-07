@@ -1,5 +1,6 @@
 ---
 title: "Cài đặt máy in"
+description: "Thiết lập máy in nhãn mạng cho kiosk B1 Checkin: tìm máy trên Wi-Fi, chọn máy, in thử và lưu lựa chọn."
 ---
 
 # Cài đặt máy in
@@ -13,7 +14,7 @@ B1 Church Checkin có thể in nhãn tên và phiếu nhận con ra máy in nhã
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Đăng nhập](./logging-in) vào ứng dụng B1 Church Checkin và chọn nhà thờ của bạn
+- [Đăng nhập](./logging-in.md) vào ứng dụng B1 Church Checkin và chọn nhà thờ của bạn
 - Kết nối một máy in nhãn mạng tương thích vào cùng mạng Wi-Fi với máy tính bảng
 
 </div>
@@ -87,4 +88,4 @@ Nếu bạn chuyển kiosk sang vị trí khác hoặc thay đổi cấu hình m
 
 ## Bước tiếp theo
 
-Sau khi đã cấu hình máy in, bạn đã sẵn sàng bắt đầu điểm danh. Xem [quy trình điểm danh](../check-in/) để tìm hiểu toàn bộ quy trình, bắt đầu từ [chọn buổi nhóm](../check-in/selecting-service).
+Sau khi đã cấu hình máy in, bạn đã sẵn sàng bắt đầu điểm danh. Xem [quy trình điểm danh](../check-in/index.md) để tìm hiểu toàn bộ quy trình, bắt đầu từ [chọn buổi nhóm](../check-in/selecting-service.md).

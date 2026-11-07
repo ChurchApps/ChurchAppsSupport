@@ -1,5 +1,7 @@
 ---
-title: "Darovanje"
+title: "Darovanje v portalu za člane B1.church"
+sidebar_label: "Darovanje"
+description: "Podarite enkratni ali ponavljajoči se dar svoji cerkvi prek B1.church, z računom ali brez njega, in si nato oglejte zgodovino darovanja."
 ---
 
 # Darovanje

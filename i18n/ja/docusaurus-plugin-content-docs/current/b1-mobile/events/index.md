@@ -1,5 +1,7 @@
 ---
-title: "イベント"
+title: "B1 Mobile の教会イベントと登録"
+sidebar_label: "イベント"
+description: "B1 Mobile で教会の今後のイベントを閲覧し、申し込みを受け付けているものに自分と家族を登録できます。"
 ---
 
 # イベント
@@ -23,10 +25,10 @@ B1 Mobile のイベント機能では、教会の今後のイベントを閲覧�
 
 ## 必要なもの
 
-- [B1 Mobile をインストール](../getting-started/installing)し、[ログイン](../getting-started/logging-in)していること
+- [B1 Mobile をインストール](../getting-started/installing.md)し、[ログイン](../getting-started/logging-in.md)していること
 - 対象のイベントで、教会がイベント登録を有効にしていること
 
 ## さらに詳しく
 
-- [イベントへの登録](./registering) -- スマートフォンからイベントに申し込む手順の解説
-- [セルフチェックイン](../checkin/self-checkin) -- イベント会場に到着したときのチェックイン
+- [イベントへの登録](./registering.md) -- スマートフォンからイベントに申し込む手順の解説
+- [セルフチェックイン](../checkin/self-checkin.md) -- イベント会場に到着したときのチェックイン

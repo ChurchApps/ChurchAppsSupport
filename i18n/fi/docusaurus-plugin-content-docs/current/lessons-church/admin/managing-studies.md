@@ -1,5 +1,6 @@
 ---
 title: "Opintojaksojen hallinta"
+description: "Luo, muokkaa ja luokittele opintoja ohjelman sisällä Lessons.churchin ylläpidossa ja liitä sarjakuvaukset tai uutiskirjapohjat kuhunkin."
 ---
 
 # Opintojaksojen hallinta

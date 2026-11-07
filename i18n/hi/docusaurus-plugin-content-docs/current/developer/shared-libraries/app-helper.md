@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "Packages वर्कस्पेस में @churchapps/apphelper साझा पैकेज का संदर्भ: इसके subpath एंट्री पॉइंट, हर एक्सपोर्ट का उपयोग कौन सा ऐप करता है, और लोकल डेव व प्रकाशन के चरण।"
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ title: "AppHelper"
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- **Node.js** और **Git** इंस्टॉल करें -- देखें [पूर्वापेक्षाएँ](../setup/prerequisites)
+- **Node.js** और **Git** इंस्टॉल करें -- देखें [पूर्वापेक्षाएँ](../setup/prerequisites.md)
 - [Packages वर्कस्पेस](./index.md) सेटअप और release flow से परिचित हो जाएँ
 
 </div>
@@ -92,6 +93,6 @@ Releases changesets के ज़रिए होते हैं: हर बद
 
 ## संबंधित लेख
 
-- **[Helpers](./helpers)** -- AppHelper के साथ उपयोग होने वाला आधार utility पैकेज
-- **[वेब ऐप्स](../web-apps/)** -- वे वेब एप्लिकेशन जो इस पैकेज का उपयोग करते हैं
+- **[Helpers](./helpers.md)** -- AppHelper के साथ उपयोग होने वाला आधार utility पैकेज
+- **[वेब ऐप्स](../web-apps/index.md)** -- वे वेब एप्लिकेशन जो इस पैकेज का उपयोग करते हैं
 - **[साझा लाइब्रेरी अवलोकन](./index.md)** -- वर्कस्पेस सेटअप, release flow, और local-link workflow

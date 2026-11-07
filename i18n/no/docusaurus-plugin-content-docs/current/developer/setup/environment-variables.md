@@ -1,5 +1,6 @@
 ---
 title: "Miljøvariabler"
+description: "Sett opp .env-filen for ChurchApps-prosjekter, velg mellom det delte demo-API-et og et lokalt API, og fyll inn variabler for B1 Admin, B1.church, B1 Mobile, Lessons.church med flere."
 ---
 
 # Miljøvariabler
@@ -13,9 +14,9 @@ Alle ChurchApps-prosjekter bruker en `.env`-fil for lokal konfigurasjon. Hvert p
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Installer [forutsetningene](./prerequisites) for prosjektet du vil jobbe med
+- Installer [forutsetningene](./prerequisites.md) for prosjektet du vil jobbe med
 - Klon prosjektrepositoryet du vil jobbe med
-- Se gjennom [prosjektoversikten](./project-overview) for å forstå hvilke API-moduler prosjektet ditt trenger
+- Se gjennom [prosjektoversikten](./project-overview.md) for å forstå hvilke API-moduler prosjektet ditt trenger
 
 </div>
 
@@ -64,7 +65,7 @@ Staging-miljøet (`api.staging.churchapps.org`, `api.staging.lessons.church` og 
 
 ### Alternativ 2: Lokal API
 
-Kjør Api-prosjektet på maskinen din. Krever MySQL 8.0+ med databaser opprettet for hver modul. Se veiledningen for [lokalt API-oppsett](../api/local-setup).
+Kjør Api-prosjektet på maskinen din. Krever MySQL 8.0+ med databaser opprettet for hver modul. Se veiledningen for [lokalt API-oppsett](../api/local-setup.md).
 
 ```bash
 # Base URL pattern

@@ -1,5 +1,6 @@
 ---
 title: "Import Stripe"
+description: "Importați donațiile Stripe în B1 Admin printr-o previzualizare care marchează fiecare plată ca nouă, deja importată sau omisă, înainte de confirmare."
 ---
 
 # Import Stripe

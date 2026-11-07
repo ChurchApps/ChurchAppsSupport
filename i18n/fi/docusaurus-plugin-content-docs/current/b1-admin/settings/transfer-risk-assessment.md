@@ -1,5 +1,6 @@
 ---
 title: "Siirtoriskin arviointi"
+description: "ChurchAppsin vaatimustenmukaisuusasiakirja UK/ETA-US-siirroista seurakuntatietojen osalta B1 Adminissa: suojatoimet, alihankkijat ja käyttöoikeudet."
 ---
 
 # Siirtoriskin arviointi

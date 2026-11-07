@@ -29,7 +29,7 @@ Church's provider row (`content.storageProviders`, managed в B1Admin → Settin
 
 Scope note: provider selection covers **files/resources** flow (где bulk media lives). Gallery/logo/photo uploads stay на default provider — they list keys из storage и build URLs client-side, поэтому per-church rooting не applies yet.
 
-Same seam также powers [Bring-Your-Own Storage](./byos-storage): churches могут link Google Drive, Dropbox, OneDrive, или their own S3-compatible bucket вместо MinistryStuff plan.
+Same seam также powers [Bring-Your-Own Storage](./byos-storage.md): churches могут link Google Drive, Dropbox, OneDrive, или their own S3-compatible bucket вместо MinistryStuff plan.
 
 ## Billing
 

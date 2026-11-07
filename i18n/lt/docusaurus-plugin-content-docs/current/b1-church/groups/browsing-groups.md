@@ -1,5 +1,6 @@
 ---
 title: "Grupių naršymas"
+description: "Naršykite savo bažnyčios viešas grupes B1.church pagal kategorijas, tada peržiūrėkite susirinkimų laikus, vietas ir aprašymus, kad rastumėte tinkamą."
 ---
 
 # Grupių naršymas

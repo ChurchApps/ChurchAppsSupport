@@ -1,5 +1,6 @@
 ---
 title: "Formát otevřené lekce"
+description: "Specifikace formátu pro externí poskytovatele kurikula v Lessons.church: strom poskytovatele a pole JSON venue feedu, akce a mediální soubory."
 ---
 
 # Formát otevřené lekce

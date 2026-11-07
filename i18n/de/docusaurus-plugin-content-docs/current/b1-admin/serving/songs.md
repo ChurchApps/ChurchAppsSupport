@@ -1,5 +1,6 @@
 ---
 title: "Lieder"
+description: "Liedbibliothek in B1 Admin pflegen: Lieder suchen und hinzufügen, Details ändern, ChordPro-Texte und Arrangements anhängen, Probenaudio hochladen."
 ---
 
 # Lieder

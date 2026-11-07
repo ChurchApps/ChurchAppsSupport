@@ -1,5 +1,6 @@
 ---
 title: "Yönetim"
+description: "ChurchApps'teki Lessons.church yönetim alanına genel bakış: programları, çalışmaları, dersleri, kaynakları, istatistikleri ve harici müfredat sağlayıcılarını yönetme."
 ---
 
 # Yönetim

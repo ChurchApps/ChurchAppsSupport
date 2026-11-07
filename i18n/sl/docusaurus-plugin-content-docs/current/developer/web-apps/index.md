@@ -1,5 +1,6 @@
 ---
 title: "Spletne aplikacije"
+description: "Pregled treh spletnih aplikacij ChurchApps (B1 Admin, B1.church, Lessons.church), njihovega skupnega sklada React in MUI, paketov apphelper in gradnih orodij."
 ---
 
 # Spletne aplikacije
@@ -41,7 +42,7 @@ Aplikacije delijo UI komponente in pripomočke prek družine paketov `@churchapp
 | `@churchapps/apphelper-website` | Komponente spletne strani/CMS |
 
 :::tip
-Za podrobnosti o lokalnem razvoju teh skupnih paketov glejte dokumentacijo [AppHelper](../shared-libraries/app-helper).
+Za podrobnosti o lokalnem razvoju teh skupnih paketov glejte dokumentacijo [AppHelper](../shared-libraries/app-helper.md).
 :::
 
 ## Skript postinstall

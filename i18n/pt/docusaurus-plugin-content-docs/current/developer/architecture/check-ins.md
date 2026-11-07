@@ -1,5 +1,6 @@
 ---
 title: "Check-ins"
+description: "Como o check-in funciona no B1Checkin, B1App e B1 Admin: modelo de presença, grupos como salas, limites de capacidade e regras de segurança na retirada."
 ---
 
 # Check-ins
@@ -216,7 +217,7 @@ O cadastro por QR é controlado pelas configurações da igreja salvas no cartã
 
 ## Páginas relacionadas
 
-- [Endpoints de Attendance](../api/endpoints/attendance) -- Superfície REST completa de campi, cultos, sessões, visitas e visitSessions
-- [Endpoints de Membership](../api/endpoints/membership) -- Pessoas, domicílios e grupos
-- [Webhooks](../api/webhooks) -- Os eventos `session.created`, `attendance.recorded` e `attendance.checkout`
-- [Estrutura do módulo](../api/module-structure) -- Como o módulo de presença é organizado no servidor
+- [Endpoints de Attendance](../api/endpoints/attendance.md) -- Superfície REST completa de campi, cultos, sessões, visitas e visitSessions
+- [Endpoints de Membership](../api/endpoints/membership.md) -- Pessoas, domicílios e grupos
+- [Webhooks](../api/webhooks.md) -- Os eventos `session.created`, `attendance.recorded` e `attendance.checkout`
+- [Estrutura do módulo](../api/module-structure.md) -- Como o módulo de presença é organizado no servidor

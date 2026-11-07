@@ -1,5 +1,6 @@
 ---
 title: "Uvoz iz Stripe"
+description: "Uvozite darove iz Stripe v B1 Admin s predogledom, ki označi vsako plačilo kot novo, že uvoženo ali preskočeno, preden potrdite uvoz."
 ---
 
 # Uvoz iz Stripe

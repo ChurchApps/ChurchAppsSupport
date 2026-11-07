@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Forbind Donorbox til B1 Admin med Zapier, så online donationer automatisk opretter donationsposter og donorprofiler uden manuel eksport."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Donorbox' *New or Updated Donation* aktiveres også ved redigeringer. Brug et Za
 
 ## Se også
 
-- [Zapier (overblik)](../zapier) — B1-siden af alle Zapier-opskrifter
-- [Subsplash](./subsplash) — en anden donationsplatform med en Zapier-app
-- [Mailchimp](./mailchimp) — kæd "ny gave" til et e-mail-tag
+- [Zapier (overblik)](../zapier.md) — B1-siden af alle Zapier-opskrifter
+- [Subsplash](./subsplash.md) — en anden donationsplatform med en Zapier-app
+- [Mailchimp](./mailchimp.md) — kæd "ny gave" til et e-mail-tag

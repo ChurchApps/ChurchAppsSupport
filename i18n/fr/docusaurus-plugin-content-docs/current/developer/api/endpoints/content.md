@@ -1,5 +1,6 @@
 ---
 title: "Points de terminaison de contenu"
+description: "Référence des points d’accès de l’API Content : pages, articles, redirections, sermons, événements, fichiers, recherches bibliques et chansons."
 ---
 
 # Points de terminaison de contenu
@@ -133,7 +134,7 @@ Chemin de base : `/content/pageHistory`
 
 Chemin de base : `/content/posts`
 
-Les articles de blog sont des lignes autonomes : `title`, `slug` (unique par église), `excerpt`, `content` (corps en markdown), `authorId`, `photoUrl`, `publishDate`, `category` et `tags`. Un article est publié dès que `publishDate` est définie et se situe dans le passé. Les endpoints de lecture enrichissent chaque article avec `authorName`, résolu à partir de `authorId`. Voir [Architecture du générateur de site web](../../architecture/website-builder#blog).
+Les articles de blog sont des lignes autonomes : `title`, `slug` (unique par église), `excerpt`, `content` (corps en markdown), `authorId`, `photoUrl`, `publishDate`, `category` et `tags`. Un article est publié dès que `publishDate` est définie et se situe dans le passé. Les endpoints de lecture enrichissent chaque article avec `authorName`, résolu à partir de `authorId`. Voir [Architecture du générateur de site web](../../architecture/website-builder.md#blog).
 
 | Méthode | Chemin | Authentification | Autorisation | Description |
 |--------|------|------|------------|-------------|
@@ -458,8 +459,8 @@ Chemin de base : `/content/support`
 
 ## Pages connexes
 
-- [Architecture du générateur de site web](../../architecture/website-builder) -- Comment les pages, sections, éléments, articles et redirections s'articulent entre les applications
-- [Points de terminaison Membership](./membership) -- Personnes, églises, groupes, rôles, autorisations
-- [Points de terminaison de présence](./attendance) -- Suivi des services et des visites
-- [Authentification et autorisations](./authentication) -- Flux de connexion, JWT, modèle d'autorisations
-- [Structure du module](../module-structure) -- Organisation du code
+- [Architecture du générateur de site web](../../architecture/website-builder.md) -- Comment les pages, sections, éléments, articles et redirections s'articulent entre les applications
+- [Points de terminaison Membership](./membership.md) -- Personnes, églises, groupes, rôles, autorisations
+- [Points de terminaison de présence](./attendance.md) -- Suivi des services et des visites
+- [Authentification et autorisations](./authentication.md) -- Flux de connexion, JWT, modèle d'autorisations
+- [Structure du module](../module-structure.md) -- Organisation du code

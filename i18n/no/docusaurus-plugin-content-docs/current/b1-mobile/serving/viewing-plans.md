@@ -1,5 +1,7 @@
 ---
-title: "Visning av planer"
+title: "Se tjenesteplaner i B1 Mobile"
+sidebar_label: "Visning av planer"
+description: "Sjekk din kommende og tidligere tjenesteplan i B1 Mobile, les plandetaljer og gudstjenesteorden, og skriv ut planer til øvelser eller backstage."
 ---
 
 # Visning av planer
@@ -13,7 +15,7 @@ Plansskjermen i B1 Mobil gir deg et fullstendig bilde av serviceschemaet ditt. D
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Installer B1 Mobil](../getting-started/installing) og [logg på](../getting-started/logging-in) kontoen din
+- [Installer B1 Mobil](../getting-started/installing.md) og [logg på](../getting-started/logging-in.md) kontoen din
 - Vær tilordnet minst en serviceplan av kirkens administrator
 
 </div>
@@ -61,4 +63,4 @@ Du vil motta [pushvarsler](../community/notifications.md) når du blir tilordnet
 
 ## Relaterte artikler
 
-- [Frivolligpåmelding](./volunteer-signup) -- Bla gjennom og meld deg på åpne frivolligposisjoner
+- [Frivolligpåmelding](./volunteer-signup.md) -- Bla gjennom og meld deg på åpne frivolligposisjoner

@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Bejelentkezés a B1.church tagi portálon"
+sidebar_label: "Check-In"
+description: "Jelentkezzen be magát és háztartási tagjait istentiszteletre a B1.church tagi portálon, kihagyva a kioszkot, és rendeljen csoportokat hozzájuk."
 ---
 
 # Check-In

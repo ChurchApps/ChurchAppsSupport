@@ -1,5 +1,6 @@
 ---
 title: "Arhitektura obvestil in opomnikov"
+description: "Kako API B1 Admin usmerja obvestila, načrtovane opomnike, omejitve e-pošte in odjave od SMS-ov prek enega dostavnega kanala z nadzorom nastavitev."
 ---
 
 # Arhitektura obvestil in opomnikov
@@ -185,6 +186,6 @@ Lokalno se ista logika lahko sproži na zahtevo z `npm run timer:30min` in `npm 
 
 ## Sorodne strani
 
-- [Arhitektura v realnem času](../realtime) — protokol WebSocket in odjemalski gradniki (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), na katere se opira raven dostave v aplikaciji
-- [Spletna potisna obvestila](../web-push) — nastavitev VAPID in pot brskalniškega Push API, ki jo uporablja raven potiska
-- [Končne točke sporočanja](../api/endpoints/messaging) — celoten REST vmesnik za sporočila, pogovore, povezave ter poti za obvestila in opomnike
+- [Arhitektura v realnem času](../realtime.md) — protokol WebSocket in odjemalski gradniki (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), na katere se opira raven dostave v aplikaciji
+- [Spletna potisna obvestila](../web-push.md) — nastavitev VAPID in pot brskalniškega Push API, ki jo uporablja raven potiska
+- [Končne točke sporočanja](../api/endpoints/messaging.md) — celoten REST vmesnik za sporočila, pogovore, povezave ter poti za obvestila in opomnike

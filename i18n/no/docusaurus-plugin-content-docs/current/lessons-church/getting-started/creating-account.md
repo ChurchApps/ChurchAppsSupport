@@ -1,5 +1,6 @@
 ---
 title: "Opprette en konto"
+description: "Registrer en ChurchApps-konto på Lessons.church, og koble den deretter til en ny eller eksisterende kirkeprofil slik at du kan administrere klasserom og planer."
 ---
 
 # Opprette en konto

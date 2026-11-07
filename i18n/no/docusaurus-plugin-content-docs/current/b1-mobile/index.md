@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobil"
+description: "Forklarer at den opprinnelige B1 Mobile-appen er avviklet, og at medlemmer og administratorer bør bruke B1.church-PWA-en. Eldre sider beholdes som referanse."
 ---
 
 # B1 Mobil
@@ -30,16 +31,16 @@ B1 Mobil støtter pushvarsler slik at du aldri mister en viktig oppdatering fra 
 
 ## Lær mer
 
-- [Kom i gang](./getting-started/) -- Installer appen, opprett en konto og velg kirken din.
-- [Instrumentbrett](./dashboard/) -- Forstå det personaliserte hjemmeskjermen.
-- [Grupper](./groups/) -- Bli forbundet med kirkegruppene dine.
-- [Giving](./giving/) -- Gjør donasjoner fra telefonen din.
-- [Hendelser](./events/) -- Bla gjennom og registrer deg for kommende kirkehendelser.
-- [Innsjekking](./checkin/) -- Sjekk inn for servicer og hendelser.
-- [Tjeneste](./serving/) -- Se serviceplaner, tilordninger og frivolligmuligheter.
-- [Fellesskap](./community/) -- Bla gjennom medlemsmappen og send meldinger.
-- [Innhold](./content/) -- Prekener, Bibelen, vers av dagen og leksjoner.
-- [Profil](./profile/) -- Administrer profilen og kontoinnstillingene.
+- [Kom i gang](./getting-started/index.md) -- Installer appen, opprett en konto og velg kirken din.
+- [Instrumentbrett](./dashboard/index.md) -- Forstå det personaliserte hjemmeskjermen.
+- [Grupper](./groups/index.md) -- Bli forbundet med kirkegruppene dine.
+- [Giving](./giving/index.md) -- Gjør donasjoner fra telefonen din.
+- [Hendelser](./events/index.md) -- Bla gjennom og registrer deg for kommende kirkehendelser.
+- [Innsjekking](./checkin/index.md) -- Sjekk inn for servicer og hendelser.
+- [Tjeneste](./serving/index.md) -- Se serviceplaner, tilordninger og frivolligmuligheter.
+- [Fellesskap](./community/index.md) -- Bla gjennom medlemsmappen og send meldinger.
+- [Innhold](./content/index.md) -- Prekener, Bibelen, vers av dagen og leksjoner.
+- [Profil](./profile/index.md) -- Administrer profilen og kontoinnstillingene.
 
 :::info
 B1 Mobil er gratis å laste ned og bruke. Kirkens administrator konfigurerer hvilke funksjoner som er tilgjengelige gjennom [B1 Admin](/docs/b1-admin/). Du laster ganske enkelt ned appen og logger på for å komme i gang.

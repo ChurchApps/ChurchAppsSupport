@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Referenca za paket @churchapps/apihelper v delovnem prostoru Packages: lokalna gradnja, testiranje z Yarn portalom in objava z changesets."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ Paket `@churchapps/apihelper` vsebuje strežniške pripomočke za vse ChurchApps
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Namestite **Node.js** in **Git** -- glejte [Predpogoji](../setup/prerequisites)
+- Namestite **Node.js** in **Git** -- glejte [Predpogoji](../setup/prerequisites.md)
 - Seznanite se z nastavitvijo in tokom objav [delovnega prostora Packages](./index.md)
-- Ta paket je odvisen od [`@churchapps/helpers`](./helpers) (kot vrstniška odvisnost) in ga ponovno izvaža
+- Ta paket je odvisen od [`@churchapps/helpers`](./helpers.md) (kot vrstniška odvisnost) in ga ponovno izvaža
 
 </div>
 
@@ -65,6 +66,6 @@ Ta paket je odvisnost vsakega ChurchApps API-ja -- glavnega Api, AskApi in Lesso
 
 ## Sorodni članki
 
-- **[Helpers](./helpers)** -- Osnovni pripomočkovni paket, od katerega je odvisen ta paket
-- **[Struktura modulov](../api/module-structure)** -- Kako se krmilniki in vmesna programska oprema za avtentikacijo uporabljata v modulih API-ja
-- **[Lokalna nastavitev API-ja](../api/local-setup)** -- Nastavitev API-ja za lokalni razvoj
+- **[Helpers](./helpers.md)** -- Osnovni pripomočkovni paket, od katerega je odvisen ta paket
+- **[Struktura modulov](../api/module-structure.md)** -- Kako se krmilniki in vmesna programska oprema za avtentikacijo uporabljata v modulih API-ja
+- **[Lokalna nastavitev API-ja](../api/local-setup.md)** -- Nastavitev API-ja za lokalni razvoj

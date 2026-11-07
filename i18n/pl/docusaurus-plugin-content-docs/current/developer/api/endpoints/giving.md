@@ -1,5 +1,6 @@
 ---
 title: "Punkty końcowe modułu Giving"
+description: "Dokumentacja API darowizn ChurchApps: dary, partie, bramki płatności, subskrypcje i metody płatności, z zasadami autoryzacji dla integracji z B1 Admin."
 ---
 
 # Punkty końcowe modułu Giving
@@ -284,6 +285,6 @@ Rozszerza `GenericCrudController` o trasy CRUD: `getById`, `getAll`, `post`, `de
 
 ## Powiązane strony
 
-- [Punkty końcowe członkostwa](./membership) — Osoby, kościoły, grupy, role i uprawnienia
-- [Uwierzytelnianie i uprawnienia](./authentication) — Przepływ logowania, JWT, OAuth, model uprawnień
-- [Struktura modułów](../module-structure) — Wzorce organizacji kodu
+- [Punkty końcowe członkostwa](./membership.md) — Osoby, kościoły, grupy, role i uprawnienia
+- [Uwierzytelnianie i uprawnienia](./authentication.md) — Przepływ logowania, JWT, OAuth, model uprawnień
+- [Struktura modułów](../module-structure.md) — Wzorce organizacji kodu

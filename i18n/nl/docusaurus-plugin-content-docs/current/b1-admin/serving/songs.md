@@ -1,5 +1,6 @@
 ---
 title: "Liederen"
+description: "Beheer je liedbibliotheek in B1 Admin: zoek en voeg liederen toe, bewerk gegevens, koppel ChordPro-teksten en arrangementen en upload repetitieaudio."
 ---
 
 # Liederen

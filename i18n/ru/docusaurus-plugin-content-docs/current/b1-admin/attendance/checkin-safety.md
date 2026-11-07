@@ -1,5 +1,6 @@
 ---
 title: "Безопасность при регистрации"
+description: "Настройте меры безопасности детей в B1 Admin: вместимость комнат, соотношение волонтёров, списки доверенных лиц для выдачи и SMS-уведомления родителям при регистрации."
 ---
 
 # Безопасность при регистрации
@@ -15,7 +16,7 @@ B1 включает набор элементов управления безо�
 
 - Установите вашу [структуру посещаемости](setup.md) и [киоски регистрации](check-in.md)
 - Комнаты — это [группы](../groups/creating-groups.md), связанные с временами богослужений — параметры безопасности ниже находятся в группе
-- Page-a-parent и emergency broadcast требуют подключенного поставщика текстовых сообщений ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), или Mutual Ministry)
+- Page-a-parent и emergency broadcast требуют подключенного поставщика текстовых сообщений ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md), или Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Capacity и Closed for Check-In всегда являются жёсткими �
 
 Люди, которые отказались от текстовых сообщений или у которых нет номера мобильного телефона в файле, автоматически пропускаются — киоск сообщает, сколько сообщений было отправлено и сколько было пропущено.
 
-См. пошаговое руководство на стороне киоска в разделе [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out).
+См. пошаговое руководство на стороне киоска в разделе [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out.md).
 
 ## Связанные статьи
 
 - [Регистрация](check-in.md) — настройка киоска и оборудование
-- [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out) — выход на киоске, проверка получения и потоки вызовов
+- [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out.md) — выход на киоске, проверка получения и потоки вызовов
 - [Creating Groups](../groups/creating-groups.md) — где находятся параметры комнаты
 - [Настройка посещаемости](setup.md) — богослужения, времена богослужений и назначения комнат
 - [Minimum Age for Private Messages](../settings/mobile-app.md#member-directory--messaging-settings) — блокирует новые разговоры с личными сообщениями с детьми, сохраняя их в каталоге

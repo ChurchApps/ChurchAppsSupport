@@ -1,5 +1,6 @@
 ---
 title: "Lokaler, ressourcer og planlægning"
+description: "Opsæt lokaler, udstyr, blokeringer og begivenhedsskabeloner i B1 Admin, så grupper kan anmode om bookinger, og du kan godkende dem uden dobbeltbookinger."
 ---
 
 # Lokaler, ressourcer og planlægning
@@ -14,7 +15,7 @@ Lokaler og ressourcer gør det muligt at holde styr på din menigheds rum og uds
 <h4>Før du begynder</h4>
 
 - Du skal have administrativ adgang til afsnittet Kalendere i B1 Admin
-- Opret [grupper](../groups/creating-groups), hvis medlemmer skal indsende bookinganmodninger
+- Opret [grupper](../groups/creating-groups.md), hvis medlemmer skal indsende bookinganmodninger
 
 </div>
 
@@ -76,7 +77,7 @@ Når medarbejdere opretter en ny begivenhed, kan de vælge en eksisterende skabe
 
 ## Relaterede artikler
 
-- [Tilgængelighedskalender](availability) — se alle bookinger samlet og book lokaler eller ressourcer direkte
-- [Kalendergodkendelser](approvals) — godkend eller afvis anmodninger om booking af lokaler og ressourcer
-- [Oprettelse af kalendere](creating-calendars) — opsæt begivenhedskalendere
-- [Oprettelse af grupper](../groups/creating-groups) — opsæt grupper, der kan booke lokaler og ressourcer
+- [Tilgængelighedskalender](./availability.md) — se alle bookinger samlet og book lokaler eller ressourcer direkte
+- [Kalendergodkendelser](./approvals.md) — godkend eller afvis anmodninger om booking af lokaler og ressourcer
+- [Oprettelse af kalendere](./creating-calendars.md) — opsæt begivenhedskalendere
+- [Oprettelse af grupper](../groups/creating-groups.md) — opsæt grupper, der kan booke lokaler og ressourcer

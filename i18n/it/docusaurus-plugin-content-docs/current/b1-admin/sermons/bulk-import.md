@@ -1,5 +1,6 @@
 ---
 title: "Importazione in blocco"
+description: "Importa in blocco i video dei sermoni da un canale YouTube o da un account Vimeo in B1 Admin, poi ordinali in una playlist."
 ---
 
 # Importazione in blocco
@@ -14,7 +15,7 @@ La pagina Importazione in blocco ti permette di popolare rapidamente la tua libr
 <h4>Prima di iniziare</h4>
 
 - Ti serve il permesso **contentApi.streamingServices.edit**. Consulta [Ruoli e permessi](../settings/roles-permissions.md) se non hai accesso.
-- Crea almeno una [playlist](playlists) in cui importare i sermoni
+- Crea almeno una [playlist](./playlists.md) in cui importare i sermoni
 - Tieni pronto l'ID del tuo canale YouTube oppure le informazioni del tuo account Vimeo
 
 </div>
@@ -39,7 +40,7 @@ Prima di importare dei video, ti serve almeno una playlist in cui organizzarli. 
 2. Clicca su **Crea la prima playlist** e compila il nome, la descrizione, la data di pubblicazione e la miniatura.
 3. Clicca su **Salva**, poi torna all'Importazione in blocco cliccando su **Aggiungi sermone** e scegliendo **Importazione in blocco**.
 
-Consulta [Playlist](playlists) per istruzioni dettagliate su come creare e gestire le playlist.
+Consulta [Playlist](./playlists.md) per istruzioni dettagliate su come creare e gestire le playlist.
 
 ## Importare i video
 
@@ -54,11 +55,11 @@ Consulta [Playlist](playlists) per istruzioni dettagliate su come creare e gesti
 I tuoi video verranno importati con tutti i loro dettagli, inclusi titoli, descrizioni, date e miniature. I caratteri speciali nei titoli e nelle descrizioni di YouTube, come `&`, gli apostrofi e le virgolette, vengono importati così come sono, e non come codici del tipo `&amp;`.
 
 :::info
-L'importazione in blocco è ideale per iniziare quando stai migrando da un'altra piattaforma. Per aggiungere singoli sermoni in futuro, usa invece la pagina [Gestire i sermoni](managing-sermons).
+L'importazione in blocco è ideale per iniziare quando stai migrando da un'altra piattaforma. Per aggiungere singoli sermoni in futuro, usa invece la pagina [Gestire i sermoni](./managing-sermons.md).
 :::
 
 ## Passi successivi
 
-- [Gestire i sermoni](managing-sermons) -- Modifica i dettagli dei sermoni importati
-- [Playlist](playlists) -- Crea e gestisci le serie di sermoni
-- [Streaming in diretta](live-streaming) -- Configura lo streaming in diretta per i tuoi servizi
+- [Gestire i sermoni](./managing-sermons.md) -- Modifica i dettagli dei sermoni importati
+- [Playlist](./playlists.md) -- Crea e gestisci le serie di sermoni
+- [Streaming in diretta](./live-streaming.md) -- Configura lo streaming in diretta per i tuoi servizi

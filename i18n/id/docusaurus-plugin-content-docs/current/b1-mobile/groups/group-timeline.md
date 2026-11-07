@@ -1,5 +1,6 @@
 ---
 title: "Grup Timeline"
+description: "Lihat bagaimana linimasa grup B1 Mobile menggabungkan postingan, percakapan, dan pembaruan dari semua grup Anda, serta apa yang harus dilakukan saat dijeda."
 ---
 
 # Grup Timeline
@@ -17,7 +18,7 @@ Fitur timeline grup sementara tidak tersedia selama peningkatan sedang dilakukan
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- [Pasang B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Pasang B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 - Menjadi anggota setidaknya satu grup di gereja Anda
 
 </div>
@@ -41,7 +42,7 @@ Setiap item di timeline menunjukkan grup asalnya, sehingga Anda selalu mengetahu
 Timeline adalah cara yang baik untuk tetap terhubung dengan komunitas gereja Anda sekilas pandang. Berikut beberapa tips untuk memanfaatkannya dengan maksimal:
 
 - **Periksa secara rutin** -- Buka layar Grup dan gulir timeline untuk mengetahui aktivitas terbaru.
-- **Ketuk untuk melihat lebih banyak** -- Jika ada postingan yang menarik perhatian, ketuk postingan tersebut atau ketuk nama grup untuk membuka [halaman detail grup](./group-details) lengkap guna mendapatkan konteks lebih lanjut.
+- **Ketuk untuk melihat lebih banyak** -- Jika ada postingan yang menarik perhatian, ketuk postingan tersebut atau ketuk nama grup untuk membuka [halaman detail grup](./group-details.md) lengkap guna mendapatkan konteks lebih lanjut.
 - **Semua ada di satu tempat** -- Anda tidak perlu mengunjungi setiap grup secara terpisah. Timeline menyajikan semua aktivitas kepada Anda.
 
 :::info
@@ -54,5 +55,5 @@ Aktifkan [notifikasi push](../community/notifications.md) untuk mendapatkan pemb
 
 ## Artikel Terkait
 
-- [Detail Grup](./group-details) -- Lihat profil lengkap dan postingan dari satu grup
+- [Detail Grup](./group-details.md) -- Lihat profil lengkap dan postingan dari satu grup
 - [Notifikasi](../community/notifications.md) -- Dapatkan pemberitahuan tentang aktivitas grup

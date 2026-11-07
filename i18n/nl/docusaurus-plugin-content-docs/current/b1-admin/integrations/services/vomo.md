@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Koppel VOMO-vrijwilligersaanmeldingen en kioskcheck-ins aan B1 Admin-personen en -groepen met Zapier, inclusief API-sleutelbereiken en installatiestappen."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ Wanneer het VOMO-project eindigt, maak je de B1-groep handmatig leeg (of koppel 
 
 ### Een sms met "bedankt voor je aanmelding" versturen
 
-Koppel in dezelfde Zap VOMO-deelname aan Clearstream: Sms verzenden of Text In Church: Bericht verzenden. Beide hebben eigen Zapier-acties. Zie [Clearstream](./clearstream) en [Text In Church](./text-in-church).
+Koppel in dezelfde Zap VOMO-deelname aan Clearstream: Sms verzenden of Text In Church: Bericht verzenden. Beide hebben eigen Zapier-acties. Zie [Clearstream](./clearstream.md) en [Text In Church](./text-in-church.md).
 
 ### Afhaken opsporen
 
@@ -91,6 +92,6 @@ Draai een dagelijkse Zapier-trigger *Planning* die in VOMO de functie Organisato
 
 ## Zie ook
 
-- [Zapier (overzicht)](../zapier): de B1-kant van elk Zapier-recept
-- [Clearstream](./clearstream), [Text In Church](./text-in-church): combineer aanmeldingen van vrijwilligers met sms-bevestigingen
+- [Zapier (overzicht)](../zapier.md): de B1-kant van elk Zapier-recept
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md): combineer aanmeldingen van vrijwilligers met sms-bevestigingen
 - [Webhooks (ontwikkelaarsreferentie)](/docs/developer/api/webhooks): de gebeurtenissen waarop VOMO triggers kan geven

@@ -1,5 +1,6 @@
 ---
 title: "Slack és Discord"
+description: "B1 Admin eseményeinek, például új személyek, adományok és űrlapbeküldések közzététele Slack- vagy Discord-csatornán bejövő webhookkal, Zapier nélkül."
 ---
 
 # Slack és Discord
@@ -114,7 +115,7 @@ Ha valami hibás volt (piros `failed` vagy `exhausted` jelvény), a párbeszéda
 
 - **Nem jelenik meg üzenet, a kézbesítés állapota `400`** — általában azért, mert a Kapcsolattípus **Standard**, de az URL Slack- vagy Discord-URL. A Slack és a Discord elutasítja a nyers borítékot. Állítsa a legördülő menüt **Slack** vagy **Discord** értékre, és küldje el újra a tesztet.
 - **A webhook automatikusan letiltódott** — 3 egymást követő sikertelen kézbesítés után a B1 kikapcsolja a webhookot. Javítsa az URL-t (vagy generáljon újat a Slackben/Discordban), majd kapcsolja vissza az **Aktív** opciót.
-- **Az üzenet megérkezett, de hiányzik belőle a részlet** — minden csevegőplatform korlátozza az üzenetek méretét. A B1 üzenetei szándékosan egysorosak. Gazdagabb értesítésekhez használja a [Zapier](./zapier) vagy a [Make](./make) szolgáltatást, amellyel a Slack-műveleteken keresztül összetettebb Slack-üzenet állítható össze.
+- **Az üzenet megérkezett, de hiányzik belőle a részlet** — minden csevegőplatform korlátozza az üzenetek méretét. A B1 üzenetei szándékosan egysorosak. Gazdagabb értesítésekhez használja a [Zapier](./zapier.md) vagy a [Make](./make.md) szolgáltatást, amellyel a Slack-műveleteken keresztül összetettebb Slack-üzenet állítható össze.
 
 ## Kapcsolattípus módosítása később
 
@@ -122,6 +123,6 @@ A meglévő webhook kapcsolattípusát később is megváltoztathatja. A módos�
 
 ## Lásd még
 
-- [Zapier](./zapier) — többlépéses munkafolyamatokhoz, amelyeket B1-események indítanak
-- [Make](./make) — vizuális forgatókönyv-szerkesztő
+- [Zapier](./zapier.md) — többlépéses munkafolyamatokhoz, amelyeket B1-események indítanak
+- [Make](./make.md) — vizuális forgatókönyv-szerkesztő
 - [Webhookok (fejlesztői referencia)](/docs/developer/api/webhooks) — a teljes adatformátum és aláírási formátum, ha valaha a saját szerveréhez szeretne webhookot csatlakoztatni

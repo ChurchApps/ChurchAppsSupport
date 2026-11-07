@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "Node.js 22+에서 LessonsApp Next.js 레슨 편집기를 로컬에 설정하고, 로컬 LessonsApi에 연결하며, 빌드 및 S3/CloudFront 배포 방식을 이해합니다."
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ LessonsApp은 [Lessons.church](https://lessons.church)의 레슨 콘텐츠 관�
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- **Node.js 22+**와 **Git**을 설치합니다 -- [사전 요구 사항](../setup/prerequisites)을 참조하세요
-- API 대상(로컬 LessonsApi)을 구성합니다 -- [환경 변수](../setup/environment-variables)를 참조하세요
+- **Node.js 22+**와 **Git**을 설치합니다 -- [사전 요구 사항](../setup/prerequisites.md)을 참조하세요
+- API 대상(로컬 LessonsApi)을 구성합니다 -- [환경 변수](../setup/environment-variables.md)를 참조하세요
 
 </div>
 
@@ -81,5 +82,5 @@ LessonsApp은 기본 ChurchApps Api와는 별개인 **LessonsApi** 백엔드와 
 3. 새 버전을 제공하도록 CloudFront 무효화가 실행됩니다
 
 :::tip
-자세한 배포 지침은 [웹 앱 배포](../deployment/web-apps) 가이드를 참조하세요.
+자세한 배포 지침은 [웹 앱 배포](../deployment/web-apps.md) 가이드를 참조하세요.
 :::

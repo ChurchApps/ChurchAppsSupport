@@ -1,5 +1,6 @@
 ---
 title: "Crearea unui cont"
+description: "Înregistrați un cont ChurchApps pe Lessons.church, apoi conectați-l la un profil de biserică nou sau existent, ca să gestionați clase și programe."
 ---
 
 # Crearea unui cont

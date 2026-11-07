@@ -1,5 +1,6 @@
 ---
 title: "Kişileri Arama"
+description: "B1 Admin Kişiler dizininde ada göre arayın, tablo görünümünde sıralayıp sütun seçin, Gelişmiş Arama ile filtre oluşturun ve sonuçları CSV'ye aktarın."
 ---
 
 # Kişileri Arama

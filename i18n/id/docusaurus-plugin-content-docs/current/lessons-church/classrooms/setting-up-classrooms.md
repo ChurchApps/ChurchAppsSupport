@@ -1,5 +1,6 @@
 ---
 title: "Menyiapkan Ruang Kelas"
+description: "Buat, ganti nama, dan hapus ruang kelas di portal Lessons.church agar setiap ruangan atau kelompok usia siap untuk penjadwalan pelajaran mingguan."
 ---
 
 # Menyiapkan Ruang Kelas

@@ -1,5 +1,6 @@
 ---
 title: "Ympäristömuuttujat"
+description: "Määritä .env ChurchAppsin projekteille: valitse jaettu demo-API tai paikallinen API ja täytä B1 Adminin, B1.churchin, B1 Mobilen ja Lessons.churchin muuttujat."
 ---
 
 # Ympäristömuuttujat
@@ -13,9 +14,9 @@ Jokainen ChurchApps-projekti käyttää paikallisiin asetuksiin `.env`-tiedostoa
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Asenna projektin [esivaatimukset](./prerequisites)
+- Asenna projektin [esivaatimukset](./prerequisites.md)
 - Kloonaa projektin repositorio, jonka parissa haluat työskennellä
-- Tutustu [Projektin yleiskatsaukseen](./project-overview), jotta ymmärrät, mitä API-moduuleja projektisi tarvitsee
+- Tutustu [Projektin yleiskatsaukseen](./project-overview.md), jotta ymmärrät, mitä API-moduuleja projektisi tarvitsee
 
 </div>
 
@@ -64,7 +65,7 @@ Staging-ympäristö (`api.staging.churchapps.org`, `api.staging.lessons.church` 
 
 ### Vaihtoehto 2: Paikallinen API
 
-Aja Api-projekti omalla koneellasi. Vaatii MySQL 8.0+ -version, ja jokaiselle moduulille on luotava tietokanta. Katso ohje [API:n paikallinen asennus](../api/local-setup).
+Aja Api-projekti omalla koneellasi. Vaatii MySQL 8.0+ -version, ja jokaiselle moduulille on luotava tietokanta. Katso ohje [API:n paikallinen asennus](../api/local-setup.md).
 
 ```bash
 # Perus-URL-malli

@@ -1,5 +1,6 @@
 ---
 title: "Self-hosting su Railway"
+description: "Distribuisci un'istanza privata di ChurchApps su Railway in circa 15 minuti, poi configura email, domini, offerte e file per B1 Admin e B1App."
 ---
 
 # Self-hosting su Railway
@@ -195,7 +196,7 @@ Queste sbloccano funzionalità specifiche e possono essere aggiunte in seguito d
 | `VIMEO_TOKEN` | Supporto dei sermoni su Vimeo |
 | `API_BIBLE_KEY` | Ricerca di versetti biblici nelle lezioni e nei contenuti |
 | `YOUVERSION_API_KEY` | Integrazione con YouVersion Bible |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Notifiche push nel browser ([genera una coppia di chiavi VAPID](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Notifiche push nel browser ([genera una coppia di chiavi VAPID](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Sincronizzazione CRM facoltativa per le nuove registrazioni |
 
 ## Aggiornamenti
@@ -234,9 +235,9 @@ Se incontri qualcosa che non compare in questo elenco, apri una segnalazione su 
 
 ## Articoli correlati
 
-- **[Self-hosting con Docker](./docker)** — lo stesso stack sul proprio hardware o VPS
-- **[Configurazione iniziale](../../getting-started/initial-setup)** — primi passi dopo la creazione della chiesa
-- **[Configurazione iniziale del sito web](../../b1-admin/website/initial-setup)** — configura il sito pubblico della chiesa
-- **[Impostazioni donazioni](../../b1-admin/donations/online-giving-setup)** — collega Stripe o PayPal
-- **[Setup locale dell'API](../api/local-setup)** — eseguire lo stack in locale per lo sviluppo
-- **[Deployment dell'API (AWS)](./apis)** — come viene distribuito il SaaS ufficiale di ChurchApps
+- **[Self-hosting con Docker](./docker.md)** — lo stesso stack sul proprio hardware o VPS
+- **[Configurazione iniziale](../../getting-started/initial-setup.md)** — primi passi dopo la creazione della chiesa
+- **[Configurazione iniziale del sito web](../../b1-admin/website/initial-setup.md)** — configura il sito pubblico della chiesa
+- **[Impostazioni donazioni](../../b1-admin/donations/online-giving-setup.md)** — collega Stripe o PayPal
+- **[Setup locale dell'API](../api/local-setup.md)** — eseguire lo stack in locale per lo sviluppo
+- **[Deployment dell'API (AWS)](./apis.md)** — come viene distribuito il SaaS ufficiale di ChurchApps

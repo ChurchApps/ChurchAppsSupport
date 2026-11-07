@@ -1,5 +1,6 @@
 ---
 title: "Tâches"
+description: "Créez, assignez et clôturez des tâches dans B1 Admin, retrouvez-les sous Service > Mon travail et définissez des rappels pour ne rien oublier."
 ---
 
 # Tâches

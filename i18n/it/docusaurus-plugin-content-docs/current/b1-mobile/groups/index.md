@@ -1,5 +1,7 @@
 ---
-title: "Gruppi"
+title: "Schermata Gruppi in B1 Mobile"
+sidebar_label: "Gruppi"
+description: "Trova i gruppi a cui appartieni nella schermata Gruppi di B1 Mobile, con il gruppo più visitato in alto e gli altri gruppi della chiesa sotto."
 ---
 
 # Gruppi
@@ -30,10 +32,10 @@ Ecco cosa puoi fare dalla schermata Gruppi:
 - **Resta connesso** -- Vedi cosa condividono i membri del tuo gruppo, tieniti al passo con le conversazioni e interagisci con i contenuti del gruppo.
 
 :::tip
-La schermata Gruppi si adatta al tuo utilizzo, proprio come la [dashboard](../dashboard/). I gruppi che visiti più spesso vengono promossi in alto per un accesso rapido.
+La schermata Gruppi si adatta al tuo utilizzo, proprio come la [dashboard](../dashboard/index.md). I gruppi che visiti più spesso vengono promossi in alto per un accesso rapido.
 :::
 
 ## Prossimi Passi
 
-- [Dettagli del Gruppo](./group-details) -- Vedi cosa c'è nella pagina dei dettagli di un gruppo
-- [Timeline del Gruppo](./group-timeline) -- Scopri il feed di attività unificato tra i tuoi gruppi
+- [Dettagli del Gruppo](./group-details.md) -- Vedi cosa c'è nella pagina dei dettagli di un gruppo
+- [Timeline del Gruppo](./group-timeline.md) -- Scopri il feed di attività unificato tra i tuoi gruppi

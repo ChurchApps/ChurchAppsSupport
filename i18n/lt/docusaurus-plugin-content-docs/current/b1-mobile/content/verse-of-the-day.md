@@ -1,5 +1,7 @@
 ---
-title: "Dienos eilutė"
+title: "Dienos eilutė B1 Mobile programėlėje"
+sidebar_label: "Dienos eilutė"
+description: "Atidarykite Dienos eilutės ekraną B1 Mobile ir pamatykite šiandienos Biblijos eilutę paveikslėliu, pritaikytu telefono ar planšetės orientacijai."
 ---
 
 # Dienos eilutė
@@ -13,7 +15,7 @@ Ekranas „Dienos eilutė" rodo kasdienę Biblijos eilutę kaip gražiai suforma
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiegite B1 Mobile](../getting-started/installing) ir [prisijunkite](../getting-started/logging-in) prie savo paskyros
+- [Įdiegite B1 Mobile](../getting-started/installing.md) ir [prisijunkite](../getting-started/logging-in.md) prie savo paskyros
 - Jūsų bažnyčioje turi būti įjungta funkcija „Dienos eilutė"
 
 </div>
@@ -46,5 +48,5 @@ Dienos eilutė yra įmontuota B1 Mobile turinio funkcija. Jei jos nematote šoni
 
 ## Susiję straipsniai
 
-- [Biblija](./bible) -- Skaitykite visus Šventojo Rašto skyrius įmontuotame skaitytuve
-- [Pamokslai](./sermons) -- Žiūrėkite įrašytus savo bažnyčios pamokslus
+- [Biblija](./bible.md) -- Skaitykite visus Šventojo Rašto skyrius įmontuotame skaitytuve
+- [Pamokslai](./sermons.md) -- Žiūrėkite įrašytus savo bažnyčios pamokslus

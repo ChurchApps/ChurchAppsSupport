@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Profil och tilldelade kort i B1 Mobile"
+sidebar_label: "Profil"
+description: "Hantera ditt namn, kontaktuppgifter, hushåll och synlighetsinställningar i B1 Mobiles profil, samt hantera arbetskort och uppgifter som tilldelats dig."
 ---
 
 # Profil
@@ -20,7 +22,7 @@ Fliken **Profil** låter dig visa och redigera dina personuppgifter, inklusive d
 
 ### Hushåll
 
-Fliken **Hushåll** visar dina familjemedlemmar och deras roller inom ditt hushåll. Informationen används för funktioner som [incheckning](../checkin/), där du kan checka in hela din familj samtidigt.
+Fliken **Hushåll** visar dina familjemedlemmar och deras roller inom ditt hushåll. Informationen används för funktioner som [incheckning](../checkin/index.md), där du kan checka in hela din familj samtidigt.
 
 ### Synlighet
 
@@ -55,6 +57,6 @@ Tryck på en vanlig uppgift för att se vem den kommer från, vem den gäller oc
 
 ## Nästa steg
 
-- [Redigera din profil](./editing-profile) -- Uppdatera ditt namn, dina kontaktuppgifter och din bild
-- [Hushåll](./household) -- Visa och hantera dina familjemedlemmar
-- [Integritetsinställningar](./privacy-settings) -- Styr vad andra kan se om dig
+- [Redigera din profil](./editing-profile.md) -- Uppdatera ditt namn, dina kontaktuppgifter och din bild
+- [Hushåll](./household.md) -- Visa och hantera dina familjemedlemmar
+- [Integritetsinställningar](./privacy-settings.md) -- Styr vad andra kan se om dig

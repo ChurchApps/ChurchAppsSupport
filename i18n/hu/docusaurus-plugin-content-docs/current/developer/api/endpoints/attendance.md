@@ -1,5 +1,6 @@
 ---
 title: "Jelenléti végpontok"
+description: "Referencia a jelenléti API-hoz a B1 Admin és a B1 Checkin számára: kampuszok, istentiszteletek, időpontok, munkamenetek, látogatások, bejelentkezési szabályok és exportvégpontok."
 ---
 
 # Jelenléti végpontok
@@ -270,6 +271,6 @@ Személyek jelenléti sorozatait követi nyomon — azt, hogy egy személy hány
 
 ## Kapcsolódó oldalak
 
-- [Tagsági végpontok](./membership) — Személyek, csoportok, szerepkörök és gyülekezetkezelés
-- [Hitelesítés és jogosultságok](./authentication) — Bejelentkezési folyamat, JWT, jogosultsági modell
-- [Modulok szerkezete](../module-structure) — Kódszervezési minták
+- [Tagsági végpontok](./membership.md) — Személyek, csoportok, szerepkörök és gyülekezetkezelés
+- [Hitelesítés és jogosultságok](./authentication.md) — Bejelentkezési folyamat, JWT, jogosultsági modell
+- [Modulok szerkezete](../module-structure.md) — Kódszervezési minták

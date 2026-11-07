@@ -1,5 +1,7 @@
 ---
-title: "Tekst dnia"
+title: "Werset dnia na stronie i w portalu B1.church"
+sidebar_label: "Tekst dnia"
+description: "Przeglądaj obrazek z wersetem dnia i wcześniejsze wersety, a następnie udostępniaj je lub pobieraj ze strony B1.church lub portalu na każdym ekranie."
 ---
 
 # Tekst dnia

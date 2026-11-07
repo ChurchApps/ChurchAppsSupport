@@ -1,5 +1,6 @@
 ---
 title: "Integracijos"
+description: "Prijunkite B1 Admin prie Slack, Discord, Zapier, Make, Google Sheets ir DI asistentų, pvz., Claude, su sąrankos žingsniais ir reikalingais API raktų leidimais."
 ---
 
 # Integracijos
@@ -14,21 +15,21 @@ B1 veikia kartu su įrankiais, kuriuos jūsų komanda jau naudoja. Prijunkite Sl
 
 | Integracija | Ką daro | Kryptis | Pastangos nustatymui |
 |---|---|---|---|
-| **[Slack](./slack-discord)** | Skelbia suprantamus pranešimus (nauji žmonės, aukos, registracijos, …) Slack kanale | B1 → Slack | 2 minutės |
-| **[Discord](./slack-discord)** | Tas pats, Discord kanale | B1 → Discord | 2 minutės |
-| **[Zapier](./zapier)** | Naudoja B1 įvykius kaip paleidiklius ir B1 veiksmus bet kurioje iš daugiau nei 7 000 Zapier programų | Abi kryptys | 5–10 min. vienam Zap |
-| **[Make](./make)** | Ta pati idėja kaip Zapier, vizualiame Make scenarijų kūrėjuje | Abi kryptys | 5–10 min. vienam scenarijui |
-| **[Google Sheets](./google-sheets)** | Eksportuoja Asmenis / Aukas / Grupes / Lankomumą į skaičiuoklę pagal poreikį | B1 → Skaičiuoklė | 5 minutės |
-| **[Claude](./claude)** | Užduokite Anthropic Claude klausimus apie savo bažnyčios duomenis, apribotus pagal jūsų leidimus. Galima išbandyti nemokamai, rekomenduojama | Abi kryptys | Mažiau nei 3 minutės |
-| **[ChatGPT](./chatgpt)** | Tas pats su OpenAI ChatGPT (reikia mokamo ChatGPT plano) | Abi kryptys | 10 minučių |
-| **[Prijungtos paslaugos](./services/)** | Atrinkti receptai: Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Įvairiai | 5–10 min. kiekvienai |
+| **[Slack](./slack-discord.md)** | Skelbia suprantamus pranešimus (nauji žmonės, aukos, registracijos, …) Slack kanale | B1 → Slack | 2 minutės |
+| **[Discord](./slack-discord.md)** | Tas pats, Discord kanale | B1 → Discord | 2 minutės |
+| **[Zapier](./zapier.md)** | Naudoja B1 įvykius kaip paleidiklius ir B1 veiksmus bet kurioje iš daugiau nei 7 000 Zapier programų | Abi kryptys | 5–10 min. vienam Zap |
+| **[Make](./make.md)** | Ta pati idėja kaip Zapier, vizualiame Make scenarijų kūrėjuje | Abi kryptys | 5–10 min. vienam scenarijui |
+| **[Google Sheets](./google-sheets.md)** | Eksportuoja Asmenis / Aukas / Grupes / Lankomumą į skaičiuoklę pagal poreikį | B1 → Skaičiuoklė | 5 minutės |
+| **[Claude](./claude.md)** | Užduokite Anthropic Claude klausimus apie savo bažnyčios duomenis, apribotus pagal jūsų leidimus. Galima išbandyti nemokamai, rekomenduojama | Abi kryptys | Mažiau nei 3 minutės |
+| **[ChatGPT](./chatgpt.md)** | Tas pats su OpenAI ChatGPT (reikia mokamo ChatGPT plano) | Abi kryptys | 10 minučių |
+| **[Prijungtos paslaugos](./services/index.md)** | Atrinkti receptai: Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Įvairiai | 5–10 min. kiekvienai |
 
 ## Kaip pasirinkti
 
 - **Tiesiog norite pranešimo pokalbyje?** Naudokite **Slack** arba **Discord**. Nereikia trečiosios šalies paskyros ir nereikia prižiūrėti Zap'o. Visa konfigūracija atliekama B1Admin.
 - **Norite automatizuoti kažką tarp programų** (pvz., „kai kas nors aukoja, įtraukti jį į mano Mailchimp sąrašą ir siųsti į Slack #aukos")? Naudokite **Zapier** arba **Make**. Zapier paprastesnis; Make pigesnis didesnei apimčiai ir turi lankstesnę logiką.
 - **Reikia vienkartinio duomenų išgavimo ar suplanuotos ataskaitos?** Naudokite **Google Sheets**: įklijuokite API raktą priedo šoninėje juostoje ir spustelėkite Export.
-- **Norite užduoti klausimus paprasta kalba** („kiek pirmą kartą atvykusių lankytojų buvo praeitą sekmadienį?", „apibendrink šio mėnesio aukas")? Pradėkite nuo **[Claude](./claude)**. Jį galima išbandyti nemokamai, o nustatymas trunka mažiau nei 3 minutes. **[ChatGPT](./chatgpt)** taip pat veikia su mokamu planu. Claude prisijungiate su B1 paskyra, o ChatGPT naudoja B1 API raktą.
+- **Norite užduoti klausimus paprasta kalba** („kiek pirmą kartą atvykusių lankytojų buvo praeitą sekmadienį?", „apibendrink šio mėnesio aukas")? Pradėkite nuo **[Claude](./claude.md)**. Jį galima išbandyti nemokamai, o nustatymas trunka mažiau nei 3 minutes. **[ChatGPT](./chatgpt.md)** taip pat veikia su mokamu planu. Claude prisijungiate su B1 paskyra, o ChatGPT naudoja B1 API raktą.
 - **Kuriate savo pasirinktinę integraciją?** Nė viena iš aukščiau išvardytų. Kreipkitės tiesiogiai į [REST API](/docs/developer/api) su [API raktu](/docs/developer/api/api-keys) arba užprenumeruokite savo kontroliuojamą serverį [webhook'ams](/docs/developer/api/webhooks).
 
 ## Kuo jos panašios
@@ -59,10 +60,10 @@ Jei nė vienas iš aukščiau išvardytų variantų netinka, kiekvienas B1 pavir
 
 ## Kiti žingsniai
 
-- [Slack ir Discord](./slack-discord): siųskite pokalbių pranešimus
-- [Zapier](./zapier): prisijunkite prie daugiau nei 7 000 programų
-- [Make](./make): vizuali darbo eigų automatizacija
-- [Google Sheets](./google-sheets): eksportuokite į skaičiuokles
-- [Claude](./claude): klauskite Anthropic Claude apie savo bažnyčios duomenis
-- [ChatGPT](./chatgpt): klauskite OpenAI ChatGPT apie savo bažnyčios duomenis
-- [Prijungtos paslaugos](./services/): paslaugų receptai (Mailchimp, Donorbox, Clearstream, …)
+- [Slack ir Discord](./slack-discord.md): siųskite pokalbių pranešimus
+- [Zapier](./zapier.md): prisijunkite prie daugiau nei 7 000 programų
+- [Make](./make.md): vizuali darbo eigų automatizacija
+- [Google Sheets](./google-sheets.md): eksportuokite į skaičiuokles
+- [Claude](./claude.md): klauskite Anthropic Claude apie savo bažnyčios duomenis
+- [ChatGPT](./chatgpt.md): klauskite OpenAI ChatGPT apie savo bažnyčios duomenis
+- [Prijungtos paslaugos](./services/index.md): paslaugų receptai (Mailchimp, Donorbox, Clearstream, …)

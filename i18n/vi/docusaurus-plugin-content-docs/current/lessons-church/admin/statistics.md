@@ -1,5 +1,6 @@
 ---
 title: "Thống kê"
+description: "Xem lượt tải theo khóa học, nhà thờ nào đang dùng tài nguyên và vị trí của họ trên bản đồ trong thống kê Lessons.church, lọc theo khoảng ngày."
 ---
 
 # Thống kê

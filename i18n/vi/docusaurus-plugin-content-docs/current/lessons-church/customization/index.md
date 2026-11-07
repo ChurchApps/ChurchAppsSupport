@@ -1,5 +1,6 @@
 ---
 title: "Tùy chỉnh"
+description: "Cách ẩn phần, vai trò hoặc hành động trong bài học Lessons.church và sắp xếp lại nội dung, cho một lớp học hoặc tất cả lớp học trong nhà thờ."
 ---
 
 # Tùy chỉnh

@@ -1,5 +1,6 @@
 ---
 title: "Revisjonslogg"
+description: "Se revisjonsloggen i B1 Admin: hvem som har logget inn, redigert personposter eller endret tilganger. Eksporter filtrerte oppføringer til CSV."
 ---
 
 # Revisjonslogg
@@ -78,6 +79,6 @@ Gå gjennom revisjonsloggen jevnlig, særlig etter at du har tatt imot nye teamm
 
 ## Relaterte artikler
 
-- [Roller og tillatelser](../settings/roles-permissions) -- Administrer hvem som har tilgang til hva
-- [Datasikkerhet](../settings/data-security) -- Forstå hvordan dataene dine beskyttes
+- [Roller og tillatelser](../settings/roles-permissions.md) -- Administrer hvem som har tilgang til hva
+- [Datasikkerhet](../settings/data-security.md) -- Forstå hvordan dataene dine beskyttes
 - [Rapportoversikt](./index.md) -- Se alle tilgjengelige rapporter

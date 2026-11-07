@@ -1,5 +1,6 @@
 ---
 title: "Підключені сервіси"
+description: "Підключайте B1 Admin до Mailchimp, Donorbox, Subsplash, VOMO, Clearstream та інших сервісів через рецепти Zapier або Make з інструкціями для кожного."
 ---
 
 # Підключені сервіси
@@ -14,14 +15,14 @@ title: "Підключені сервіси"
 
 | Сервіс | Категорія | Посередник | Що можна під'єднати |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | Електронна пошта | Zapier або Make | Синхронізувати нових людей і донорів B1 з аудиторією Mailchimp |
-| [Donorbox](./donorbox) | Пожертви | Zapier | Передавати пожертви й донорів із Donorbox назад у B1 |
-| [Subsplash](./subsplash) | Застосунок / Пожертви | Zapier | Імпортувати пожертви й людей із Subsplash у B1 |
-| [VOMO](./vomo) | Волонтерство | Zapier | Синхронізувати реєстрації волонтерів між групами B1 і проєктами VOMO |
-| [Clearstream](./clearstream) | SMS | Zapier | Запускати повідомлення Clearstream за подіями B1; зберігати відповіді як записи B1 |
-| [Text In Church](./text-in-church) | SMS / Робочі процеси | Zapier | Запускати робочі процеси Text In Church з B1; отримувати дані Connect Card |
-| [Mobile Message](./mobile-message) | SMS (Австралія) | Webhooks by Zapier або Make | Надсилати SMS за будь-якою подією B1 |
-| [Checkr](./checkr) | Фонові перевірки | Make | Запускати фонову перевірку, коли людина приєднується до служіннєвої команди |
+| [Mailchimp](./mailchimp.md) | Електронна пошта | Zapier або Make | Синхронізувати нових людей і донорів B1 з аудиторією Mailchimp |
+| [Donorbox](./donorbox.md) | Пожертви | Zapier | Передавати пожертви й донорів із Donorbox назад у B1 |
+| [Subsplash](./subsplash.md) | Застосунок / Пожертви | Zapier | Імпортувати пожертви й людей із Subsplash у B1 |
+| [VOMO](./vomo.md) | Волонтерство | Zapier | Синхронізувати реєстрації волонтерів між групами B1 і проєктами VOMO |
+| [Clearstream](./clearstream.md) | SMS | Zapier | Запускати повідомлення Clearstream за подіями B1; зберігати відповіді як записи B1 |
+| [Text In Church](./text-in-church.md) | SMS / Робочі процеси | Zapier | Запускати робочі процеси Text In Church з B1; отримувати дані Connect Card |
+| [Mobile Message](./mobile-message.md) | SMS (Австралія) | Webhooks by Zapier або Make | Надсилати SMS за будь-якою подією B1 |
+| [Checkr](./checkr.md) | Фонові перевірки | Make | Запускати фонову перевірку, коли людина приєднується до служіннєвої команди |
 
 ## Спільне для всіх цих інтеграцій
 
@@ -45,8 +46,8 @@ title: "Підключені сервіси"
 
 ## Дивіться також
 
-- [Zapier (огляд)](../zapier) — сторона B1 у кожному рецепті Zapier однакова; цей документ описує її один раз
-- [Make (огляд)](../make) — те саме для сценаріїв Make
-- [Slack & Discord](../slack-discord) — сповіщення в чатах без будь-якого посередника
-- [Google Sheets](../google-sheets) — експорти на вимогу
+- [Zapier (огляд)](../zapier.md) — сторона B1 у кожному рецепті Zapier однакова; цей документ описує її один раз
+- [Make (огляд)](../make.md) — те саме для сценаріїв Make
+- [Slack & Discord](../slack-discord.md) — сповіщення в чатах без будь-якого посередника
+- [Google Sheets](../google-sheets.md) — експорти на вимогу
 - [Вебхуки (довідка для розробників)](/docs/developer/api/webhooks) — каталог подій, на які спираються всі рецепти

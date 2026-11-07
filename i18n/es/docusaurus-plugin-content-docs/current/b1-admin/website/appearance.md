@@ -1,5 +1,6 @@
 ---
 title: "Apariencia"
+description: "Configura colores, tipografías, espaciado, logotipo y navegación para el sitio web de tu iglesia en B1 Admin, además de widgets, analítica GA4, redirecciones y CSS personalizado."
 ---
 
 # Apariencia
@@ -13,7 +14,7 @@ La página de Apariencia le permite personalizar el aspecto general de su sitio 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Complete la [Configuración inicial](initial-setup) de su sitio web
+- Complete la [Configuración inicial](./initial-setup.md) de su sitio web
 - Tenga listo el logotipo de su iglesia en formato PNG, con fondo transparente y una relación de aspecto de 4:1
 - Conozca los colores de marca de su iglesia (valores hexadecimales) si tiene una guía de estilo existente
 
@@ -98,7 +99,7 @@ El CSS personalizado es poderoso, pero puede romper el diseño de su sitio si se
 :::
 
 :::info
-Su sitio aplica una Política de seguridad de contenido que bloquea los scripts en línea provenientes de cualquier otra fuente. El campo **HTML personalizado** de aquí, y el [elemento HTML](page-editor#using-the-html-element) de páginas individuales, son las excepciones de confianza: el código que guarde allí se ejecuta tal cual, así que pegue solo scripts de fuentes en las que confíe (etiquetas de analítica, widgets de chat y similares).
+Su sitio aplica una Política de seguridad de contenido que bloquea los scripts en línea provenientes de cualquier otra fuente. El campo **HTML personalizado** de aquí, y el [elemento HTML](./page-editor.md#using-the-html-element) de páginas individuales, son las excepciones de confianza: el código que guarde allí se ejecuta tal cual, así que pegue solo scripts de fuentes en las que confíe (etiquetas de analítica, widgets de chat y similares).
 :::
 
 ## Temas de estilo
@@ -107,5 +108,5 @@ Si quiere un punto de partida rápido, las **Paletas sugeridas** de la sección 
 
 ## Próximos pasos
 
-- [Administrar páginas](managing-pages): cree y organice las páginas de su sitio web
-- [Archivos](files): suba recursos multimedia para su sitio
+- [Administrar páginas](./managing-pages.md): cree y organice las páginas de su sitio web
+- [Archivos](./files.md): suba recursos multimedia para su sitio

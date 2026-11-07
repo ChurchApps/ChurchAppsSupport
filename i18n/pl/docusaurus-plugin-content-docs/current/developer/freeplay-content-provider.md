@@ -1,5 +1,6 @@
 ---
 title: "Dostawca treści FreePlay"
+description: "Co dostawca treści musi zapewnić, aby połączyć bibliotekę lekcji z FreePlay: logo, logowanie, punkty końcowe katalogu i playlist oraz formaty mediów."
 ---
 
 # Dostawca treści FreePlay

@@ -1,5 +1,7 @@
 ---
-title: "Predicazioni"
+title: "Sfogliare i sermoni sul tuo sito B1.church"
+sidebar_label: "Predicazioni"
+description: "Sfoglia e guarda i sermoni registrati della biblioteca della tua chiesa sul sito B1.church, raggruppati in serie o playlist. Nessun accesso richiesto."
 ---
 
 # Predicazioni

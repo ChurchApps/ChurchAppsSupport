@@ -1,5 +1,6 @@
 ---
 title: "Opas: Julkaise seurakuntasi verkkosivusto"
+description: "Määritä seurakunnan verkkosivusto B1 Adminissa: etusivu, värit ja logo, keskeiset sivut, oma verkkotunnus ja lahjoituslomakkeet."
 ---
 
 # Julkaise seurakuntasi verkkosivusto

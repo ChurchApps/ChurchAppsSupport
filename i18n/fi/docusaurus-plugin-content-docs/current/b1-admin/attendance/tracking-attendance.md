@@ -1,5 +1,6 @@
 ---
 title: "Osallistumisen seuranta"
+description: "Tarkastele läsnäolotrendejä, suodata raportteja seurakunnan, palvelun tai ryhmän mukaan ja vie ryhmän läsnäolo Läsnäolo-sivulta B1 Adminissa."
 ---
 
 # Osallistumisen seuranta

@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Synchronisez les personnes de B1 Admin et l'appartenance aux groupes ou listes enregistrées vers un auditoire Mailchimp sous forme d'étiquettes, avec la configuration, l'importation initiale et le dépannage."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Faire le chargement initial avec l'importateur de Mailchimp vous garde maître d
 
 ## Autres recettes (Zapier / Make)
 
-Tout ce qui dépasse la synchronisation d'audience — étiqueter les donateurs sur `donation.created`, un sens inverse Mailchimp → B1, ou une synchronisation vers une autre plateforme d'e-mailing (Constant Contact, Brevo, etc.) — reste possible via [Zapier](../zapier) ou [Make](../make), qui se déclenchent sur les mêmes événements de webhook :
+Tout ce qui dépasse la synchronisation d'audience — étiqueter les donateurs sur `donation.created`, un sens inverse Mailchimp → B1, ou une synchronisation vers une autre plateforme d'e-mailing (Constant Contact, Brevo, etc.) — reste possible via [Zapier](../zapier.md) ou [Make](../make.md), qui se déclenchent sur les mêmes événements de webhook :
 
 - **Étiqueter les donateurs :** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Dans les deux sens :** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ Si vous avez déjà configuré la synchronisation des personnes et des groupes v
 
 - [Webhooks (référence développeur)](/docs/developer/api/webhooks) — le moteur sous-jacent, le catalogue d'événements, la sémantique des envois et des relances
 - [Listes enregistrées](/docs/b1-admin/people/lists) — audiences basées sur des règles qui correspondent naturellement aux étiquettes Mailchimp
-- [Zapier (présentation)](../zapier) — pour les recettes allant au-delà de la synchronisation d'audience
+- [Zapier (présentation)](../zapier.md) — pour les recettes allant au-delà de la synchronisation d'audience

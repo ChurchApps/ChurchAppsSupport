@@ -1,5 +1,6 @@
 ---
 title: "Stran »Jaz«"
+description: "Prikazuje, kaj stran Jaz v portalu članov B1App prikazuje na enem zaslonu: prihajajoče služenje, dogodke in prijave ter gospodinjstvo, skupine, darovanje, obrazce, udeležbo in nabiralnik."
 ---
 
 # Stran Jaz
@@ -31,7 +32,7 @@ Tapnite **Več** na vrstici z zavihki, nato tapnite **Jaz** pod **Račun**. Stra
 Razdelek **Prihajajoče** prikazuje vaše naslednje tri elemente po datumu, vsak z oznako vrste. Če jih je več, tapnite **Vse prihajajoče**, da vidite celoten seznam, in **Nazaj na Jaz**, da se vrnete.
 
 - **Služenje** -- Vaše prostovoljske naloge pri prihajajočih načrtih bogoslužij, z datumom in začetnim časom bogoslužja, pri katerem služite. Če ima načrt več časov bogoslužja, je prikazan čas, ko je vaša ekipa potrebna. Če načrt nima časov, je prikazan samo datum. Tapnite nalogo, da odprete načrt.
-- **Prijava** -- Dogodki, na katere ste se [prijavili](../events/registering). Tapnite naprej do svojih [prijav](../events/my-registrations).
+- **Prijava** -- Dogodki, na katere ste se [prijavili](../events/registering.md). Tapnite naprej do svojih [prijav](../events/my-registrations.md).
 - **Dogodek** -- Prihajajoči dogodki skupin, katerih član ste. Tapnite dogodek, da odprete dogodke skupine.
 
 Če ima dogodek ali prijava fotografijo, se na začetku vrstice prikaže majhna sličica.
@@ -66,7 +67,7 @@ Razdelek **Zahteve in prijave** prikazuje, koliko prijav na dogodke imate, s pov
 
 Če ima vaša cerkev sobe ali vire, ki jih je mogoče rezervirati, se prikažeta še dve povezavi:
 
-- **Zahtevaj dogodek** -- Zaprosite za izvedbo dogodka s sobami in opremo, ki jih potrebujete. Glejte [Zahtevanje dogodkov in sob](../events/requesting-events).
+- **Zahtevaj dogodek** -- Zaprosite za izvedbo dogodka s sobami in opremo, ki jih potrebujete. Glejte [Zahtevanje dogodkov in sob](../events/requesting-events.md).
 - **Moje zahteve** -- Spremljajte stanje svojih zahtev in preklicujte tiste, ki čakajo.
 
 Če vaša cerkev ni nastavila sob ali virov, so te povezave skrite.
@@ -77,8 +78,8 @@ Razdelek **Nabiralnik** prikazuje vaši dve najnovejši obvestili, da lahko nado
 
 ## Sorodni članki
 
-- [Krmarjenje po B1App](./navigating) -- Postavitev portala za člane
-- [Zahtevanje dogodkov in sob](../events/requesting-events) -- Oddajte in spremljajte zahteve za sobe in vire
-- [Moje prijave](../events/my-registrations) -- Upravljajte svoje prijave na dogodke
-- [Prijava za prostovoljstvo](../serving/volunteer-signup) -- Kako delujejo dodelitve služenja
-- [Samoprijava](../checkin/self-checkin) -- Kako se zabeleži vaša udeležba
+- [Krmarjenje po B1App](./navigating.md) -- Postavitev portala za člane
+- [Zahtevanje dogodkov in sob](../events/requesting-events.md) -- Oddajte in spremljajte zahteve za sobe in vire
+- [Moje prijave](../events/my-registrations.md) -- Upravljajte svoje prijave na dogodke
+- [Prijava za prostovoljstvo](../serving/volunteer-signup.md) -- Kako delujejo dodelitve služenja
+- [Samoprijava](../checkin/self-checkin.md) -- Kako se zabeleži vaša udeležba

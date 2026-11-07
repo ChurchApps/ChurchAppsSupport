@@ -1,5 +1,6 @@
 ---
 title: "AI-søk"
+description: "Søk i B1 Admins personkatalog med spørsmål i vanlig språk, for eksempel hvilke medlemmer som ikke har møtt på tre måneder, i stedet for å bygge filtre."
 ---
 
 # AI-søk

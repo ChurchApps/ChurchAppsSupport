@@ -1,5 +1,6 @@
 ---
 title: "B1 Church Checkin áttekintés"
+description: "B1 Church Checkin kioszk beállítása iPad vagy Android táblagépen: önálló bejelentkezés családoknak, csoportok, címkék és átvételi cédulák nyomtatása."
 ---
 
 # B1 Church Checkin áttekintés
@@ -24,7 +25,7 @@ Helyezzen el egy iPadet vagy Android táblagépet a gyülekezeti terem bejárat�
 - **Háztartás áttekintése** -- Az összes családtag fényképe és aktuális csoporthozzárendelése egy pillantásra látható.
 - **Csoporthozzárendelés** -- Rendelje minden családtagot a kiválasztott istentiszteleti időponthoz tartozó megfelelő osztályhoz vagy csoporthoz.
 - **Vendégek bejelentkezése** -- Adjon hozzá vendéget a háztartásához helyben, a keresztnevével és vezetéknevével.
-- **QR-kódos vendégregisztráció** -- Jelenítsen meg egy QR-kódot, amelyet a látogatók beolvashatnak, hogy még a bejelentkezés előtt [saját telefonjukon regisztrálhassák magukat](../b1-church/checkin/guest-registration), vagy megérinthetik a **Regisztráljon itt** gombot, hogy ugyanazt az űrlapot a kioszkon töltsék ki.
+- **QR-kódos vendégregisztráció** -- Jelenítsen meg egy QR-kódot, amelyet a látogatók beolvashatnak, hogy még a bejelentkezés előtt [saját telefonjukon regisztrálhassák magukat](../b1-church/checkin/guest-registration.md), vagy megérinthetik a **Regisztráljon itt** gombot, hogy ugyanazt az űrlapot a kioszkon töltsék ki.
 - **Címkenyomtatás** -- Névcímkék nyomtatása gyermekeknek, valamint szülői átvételi igazolások egyedi biztonsági kódokkal.
 - **Hálózati nyomtatótámogatás** -- Hálózati nyomtatók felderítése és beállítása közvetlenül az alkalmazásból.
 - **Automatikus bejelentkezés** -- Az első bejelentkezés után az alkalmazás megjegyzi a belépési adatokat, és a későbbi indításkor közvetlenül az istentiszteletek képernyőjére lép.
@@ -33,8 +34,8 @@ Helyezzen el egy iPadet vagy Android táblagépet a gyülekezeti terem bejárat�
 
 ## Dokumentációs szakaszok
 
-- **[Első lépések](./getting-started/)** -- Az alkalmazás telepítése, a bejelentkezés és a nyomtató beállítása.
-- **[Bejelentkezési folyamat](./check-in/)** -- A teljes bejelentkezési folyamat az istentisztelet kiválasztásától a címkék nyomtatásáig.
+- **[Első lépések](./getting-started/index.md)** -- Az alkalmazás telepítése, a bejelentkezés és a nyomtató beállítása.
+- **[Bejelentkezési folyamat](./check-in/index.md)** -- A teljes bejelentkezési folyamat az istentisztelet kiválasztásától a címkék nyomtatásáig.
 
 :::tip
 A B1 Church Checkin a legjobban 10 hüvelykes táblagépen működik (iPad vagy Android), fekvő tájolásban rögzítve, ahol a családok könnyen elérik. Az alkalmazást az [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), a [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) vagy az [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/) áruházból töltheti le.

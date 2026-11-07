@@ -1,5 +1,6 @@
 ---
 title: "Pamamahala ng mga Submission"
+description: "Suriin, i-print, at muling italaga ang mga form submission sa B1 Admin, ilipat ang sagot sa tamang tao at sundan ang visitor card at prayer request."
 ---
 
 # Pamamahala ng mga Submission

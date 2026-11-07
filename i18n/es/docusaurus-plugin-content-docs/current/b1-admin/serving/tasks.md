@@ -1,5 +1,6 @@
 ---
 title: "Tareas"
+description: "Crea, asigna y cierra tareas en B1 Admin, encuéntralas en Servicio > Mi trabajo y configura recordatorios de fecha límite para que los seguimientos nunca se pasen por alto."
 ---
 
 # Tareas

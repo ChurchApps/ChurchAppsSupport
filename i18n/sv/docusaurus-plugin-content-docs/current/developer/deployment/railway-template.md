@@ -1,5 +1,6 @@
 ---
 title: "Self-hosting på Railway"
+description: "Distribuera en privat ChurchApps-instans på Railway på ungefär 15 minuter, och konfigurera sedan e-post, egna domäner, routing för flera församlingar, givande och fillagring för B1 Admin och B1App."
 ---
 
 # Self-hosting på Railway
@@ -195,7 +196,7 @@ Dessa aktiverar särskilda funktioner och kan alla läggas till senare via Railw
 | `VIMEO_TOKEN` | Stöd för predikningar på Vimeo |
 | `API_BIBLE_KEY` | Uppslag av bibelverser i lektioner och innehåll |
 | `YOUVERSION_API_KEY` | Integration med YouVersion-bibeln |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Pushnotiser i webbläsaren ([generera ett VAPID-nyckelpar](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Pushnotiser i webbläsaren ([generera ett VAPID-nyckelpar](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Valfri CRM-synkronisering för nya registreringar |
 
 ## Uppdatera
@@ -234,9 +235,9 @@ Om du stöter på något som inte står på den här listan, öppna ett ärende 
 
 ## Relaterade artiklar
 
-- **[Self-hosting med Docker](./docker)**: Samma stack på egen hårdvara eller en VPS
-- **[Första konfigurationen](../../getting-started/initial-setup)**: Första stegen efter att din kyrka har skapats
-- **[Webbplatsens grundinställningar](../../b1-admin/website/initial-setup)**: Konfigurera kyrkans offentliga webbplats
-- **[Inställningar för givande](../../b1-admin/donations/online-giving-setup)**: Koppla upp Stripe eller PayPal
-- **[Lokal API-konfiguration](../api/local-setup)**: Köra stacken lokalt för utveckling
-- **[API-driftsättning (AWS)](./apis)**: Hur den officiella ChurchApps SaaS-tjänsten driftsätts
+- **[Self-hosting med Docker](./docker.md)**: Samma stack på egen hårdvara eller en VPS
+- **[Första konfigurationen](../../getting-started/initial-setup.md)**: Första stegen efter att din kyrka har skapats
+- **[Webbplatsens grundinställningar](../../b1-admin/website/initial-setup.md)**: Konfigurera kyrkans offentliga webbplats
+- **[Inställningar för givande](../../b1-admin/donations/online-giving-setup.md)**: Koppla upp Stripe eller PayPal
+- **[Lokal API-konfiguration](../api/local-setup.md)**: Köra stacken lokalt för utveckling
+- **[API-driftsättning (AWS)](./apis.md)**: Hur den officiella ChurchApps SaaS-tjänsten driftsätts

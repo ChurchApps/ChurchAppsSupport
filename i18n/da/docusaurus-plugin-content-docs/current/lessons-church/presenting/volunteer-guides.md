@@ -1,5 +1,6 @@
 ---
 title: "Frivillig-guides"
+description: "Opsæt rollespecifikke guider i Lessons.church, så hver frivillig kun ser sine egne trin, og print eller del dem inden undervisningen."
 ---
 
 # Frivillig-guides

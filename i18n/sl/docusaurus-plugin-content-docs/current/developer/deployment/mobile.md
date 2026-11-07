@@ -1,5 +1,6 @@
 ---
 title: "Mobilna namestitev"
+description: "Vodnik za gradnjo izdaj B1 Mobile za Android in iOS z Expo EAS, za oddajo v trgovine z aplikacijami in za potiskanje posodobitev OTA."
 ---
 
 # Mobilna namestitev
@@ -13,7 +14,7 @@ Mobilne aplikacije ChurchApps se gradijo in namestijo z uporabo **Expo EAS Build
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Lokalno nastavite mobilno aplikacijo -- glejte [B1 Mobile](../mobile/b1-mobile)
+- Lokalno nastavite mobilno aplikacijo -- glejte [B1 Mobile](../mobile/b1-mobile.md)
 - Namestite in nastavite [EAS CLI](https://docs.expo.dev/eas/)
 - Imejte dostop do Google Play Console (Android) in/ali Apple App Store Connect (iOS)
 
@@ -77,6 +78,6 @@ Pred ustvarjanjem gradnje za trgovino morate številke različic posodobiti v ve
 
 ## Sorodni članki
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- Lokalna nastavitev in vodnik za razvoj
-- **[API Deployment](./apis)** -- Namestitev zaledniških API-jev
-- **[Web App Deployment](./web-apps)** -- Namestitev spletnih aplikacij na sprednjem delu
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- Lokalna nastavitev in vodnik za razvoj
+- **[API Deployment](./apis.md)** -- Namestitev zaledniških API-jev
+- **[Web App Deployment](./web-apps.md)** -- Namestitev spletnih aplikacij na sprednjem delu

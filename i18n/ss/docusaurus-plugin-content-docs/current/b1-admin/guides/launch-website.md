@@ -1,5 +1,6 @@
 ---
 title: "Umhlahlandlela: Casisa Iwebhusayithi Yelibandla Lakho"
+description: "Setfula ibhusayithi lebandla ku-B1 Admin: akha likhasi lekucala, faka imibala nelogo, engeze emakhasi lebalulekile, xhuma idomeni, uengete tifomu tekunikela."
 ---
 
 # Casisa Iwebhusayithi Yelibandla Lakho

@@ -1,5 +1,6 @@
 ---
 title: "Vlastní hosting na Railway"
+description: "Nasaďte soukromou instanci ChurchApps na Railway za zhruba 15 minut, pak nastavte e-mail, vlastní domény, dary a úložiště souborů pro B1 Admin a B1App."
 ---
 
 # Vlastní hosting na Railway
@@ -195,7 +196,7 @@ Tyto proměnné odemknou konkrétní funkce a všechny je lze přidat později v
 | `VIMEO_TOKEN` | Podpora kázání na Vimeo |
 | `API_BIBLE_KEY` | Vyhledávání biblických veršů v lekcích a obsahu |
 | `YOUVERSION_API_KEY` | Integrace Bible YouVersion |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Push oznámení v prohlížeči ([vygenerujte pár klíčů VAPID](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Push oznámení v prohlížeči ([vygenerujte pár klíčů VAPID](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Volitelná synchronizace CRM pro nové registrace |
 
 ## Aktualizace
@@ -234,9 +235,9 @@ Pokud narazíte na něco, co v tomto seznamu není, otevřete issue na [github.c
 
 ## Související články
 
-- **[Vlastní hosting s Dockerem](./docker)** — Stejný stack na vlastním hardwaru nebo VPS
-- **[Počáteční nastavení](../../getting-started/initial-setup)** — První kroky po vytvoření církve
-- **[Počáteční nastavení webu](../../b1-admin/website/initial-setup)** — Nastavte veřejné webové stránky církve
-- **[Nastavení darů](../../b1-admin/donations/online-giving-setup)** — Propojte Stripe nebo PayPal
-- **[Místní nastavení API](../api/local-setup)** — Spuštění stacku lokálně pro vývoj
-- **[Nasazení API (AWS)](./apis)** — Jak je oficiální SaaS ChurchApps nasazen
+- **[Vlastní hosting s Dockerem](./docker.md)** — Stejný stack na vlastním hardwaru nebo VPS
+- **[Počáteční nastavení](../../getting-started/initial-setup.md)** — První kroky po vytvoření církve
+- **[Počáteční nastavení webu](../../b1-admin/website/initial-setup.md)** — Nastavte veřejné webové stránky církve
+- **[Nastavení darů](../../b1-admin/donations/online-giving-setup.md)** — Propojte Stripe nebo PayPal
+- **[Místní nastavení API](../api/local-setup.md)** — Spuštění stacku lokálně pro vývoj
+- **[Nasazení API (AWS)](./apis.md)** — Jak je oficiální SaaS ChurchApps nasazen

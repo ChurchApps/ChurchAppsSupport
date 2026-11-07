@@ -1,5 +1,6 @@
 ---
 title: "Registro di Audit"
+description: "Consulta il registro di controllo in B1 Admin per vedere chi ha effettuato l'accesso, modificato le anagrafiche o cambiato i permessi, ed esportare in CSV."
 ---
 
 # Registro di Audit
@@ -78,6 +79,6 @@ Rivedi il registro di audit regolarmente, soprattutto dopo l'onboarding di nuovi
 
 ## Articoli Correlati
 
-- [Ruoli e Autorizzazioni](../settings/roles-permissions) -- Gestisci chi ha accesso a cosa
-- [Sicurezza dei Dati](../settings/data-security) -- Capire come sono protetti i tuoi dati
+- [Ruoli e Autorizzazioni](../settings/roles-permissions.md) -- Gestisci chi ha accesso a cosa
+- [Sicurezza dei Dati](../settings/data-security.md) -- Capire come sono protetti i tuoi dati
 - [Panoramica dei Rapporti](./index.md) -- Vedi tutti i rapporti disponibili

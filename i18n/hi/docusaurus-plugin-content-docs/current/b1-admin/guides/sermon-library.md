@@ -1,5 +1,6 @@
 ---
 title: "गाइड: अपनी Sermon Library और Live Stream बनाएं"
+description: "B1 Admin में अपने YouTube या Vimeo उपदेश आयात करें, उन्हें प्लेलिस्ट में व्यवस्थित करें, और चर्च वेबसाइट के लिए चैट के साथ आवर्ती लाइव स्ट्रीम सेट करें।"
 ---
 
 # अपनी Sermon Library और Live Stream बनाएं

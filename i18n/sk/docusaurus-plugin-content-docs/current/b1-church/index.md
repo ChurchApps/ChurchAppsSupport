@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Zistite, čo ponúka web B1.church vašej cirkvi členom, od portálu a skupín až po dary, udalosti, službu a prihlasovanie."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ Keď členovia navštívia vašu stránku B1.church, uvidia verejné webové sí
 
 ## Zistiť viac
 
-- [Začíname](./getting-started/) -- Vytvorte si účet, prihláste sa a naučte sa orientovať na B1.church.
-- [Skupiny](./groups/) -- Pripojte sa k skupinám vašej cirkvi a zapájajte sa do nich.
-- [Dary](./giving/) -- Darujte a spravujte svoje dary.
-- [Udalosti](./events/) -- Prezerajte si a registrujte sa na nadchádzajúce cirkevné udalosti.
-- [Služba](./serving/) -- Zobrazte plány a prihláste sa na dobrovoľnícke pozície.
-- [Plány](./plans/) -- Zobrazte plány bohoslužieb a svoje dobrovoľnícke pozície.
-- [Check-In](./checkin/) -- Prihlasovanie na bohoslužby, udalosti a registrácia hostí.
-- [Komunitný adresár](./community/) -- Nájdite ostatných členov a spojte sa s nimi.
-- [Obsah](./content/) -- Kázne, Biblia, denný verš a prenosy naživo. (Prehrávanie lekcií sa presunulo do [FreePlay](/docs/freeplay/).)
+- [Začíname](./getting-started/index.md) -- Vytvorte si účet, prihláste sa a naučte sa orientovať na B1.church.
+- [Skupiny](./groups/index.md) -- Pripojte sa k skupinám vašej cirkvi a zapájajte sa do nich.
+- [Dary](./giving/index.md) -- Darujte a spravujte svoje dary.
+- [Udalosti](./events/index.md) -- Prezerajte si a registrujte sa na nadchádzajúce cirkevné udalosti.
+- [Služba](./serving/index.md) -- Zobrazte plány a prihláste sa na dobrovoľnícke pozície.
+- [Plány](./plans/index.md) -- Zobrazte plány bohoslužieb a svoje dobrovoľnícke pozície.
+- [Check-In](./checkin/index.md) -- Prihlasovanie na bohoslužby, udalosti a registrácia hostí.
+- [Komunitný adresár](./community/index.md) -- Nájdite ostatných členov a spojte sa s nimi.
+- [Obsah](./content/index.md) -- Kázne, Biblia, denný verš a prenosy naživo. (Prehrávanie lekcií sa presunulo do [FreePlay](/docs/freeplay/).)
 
 :::info
 B1.church je úplne zadarmo pre cirkvi aj členov. Správca vašej cirkvi nastavuje a prispôsobuje web v B1 Admin. Ako člen jednoducho navštívite URL adresu B1.church vašej cirkvi a môžete začať.

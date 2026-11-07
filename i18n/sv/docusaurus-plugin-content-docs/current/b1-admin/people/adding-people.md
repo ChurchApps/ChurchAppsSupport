@@ -1,5 +1,6 @@
 ---
 title: "Lägga till personer"
+description: "Lägg till en person i kyrkans databas i B1 Admin, fyll i uppgifterna och koppla familjemedlemmar till hushåll för incheckning och rapportering."
 ---
 
 # Lägga till personer

@@ -1,5 +1,6 @@
 ---
 title: "Tilpasse leksjoner"
+description: "Fjern, skjul eller endre rekkefølgen på seksjoner og roller i en Lessons.church-leksjon, og velg om endringene gjelder for ett klasserom eller alle."
 ---
 
 # Tilpasse leksjoner

@@ -1,5 +1,6 @@
 ---
 title: "Dịch vụ được kết nối"
+description: "Kết nối B1 Admin với Mailchimp, Donorbox, Subsplash, VOMO, Clearstream và các công cụ khác bằng công thức Zapier hoặc Make, kèm hướng dẫn cho từng công cụ."
 ---
 
 # Dịch vụ được kết nối
@@ -14,14 +15,14 @@ Cách nhanh nhất để kết nối B1 với một công cụ công nghệ nhà
 
 | Dịch vụ | Danh mục | Cầu nối | Bạn có thể kết nối những gì |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | Email | Zapier hoặc Make | Đồng bộ người và người quyên góp mới trong B1 sang một danh sách khán giả Mailchimp |
-| [Donorbox](./donorbox) | Quyên góp | Zapier | Đưa các khoản quyên góp và người quyên góp từ Donorbox trở lại B1 |
-| [Subsplash](./subsplash) | Ứng dụng / Quyên góp | Zapier | Kéo dữ liệu quyên góp và người từ Subsplash vào B1 |
-| [VOMO](./vomo) | Tình nguyện | Zapier | Đồng bộ đăng ký tình nguyện viên giữa các nhóm B1 và dự án VOMO |
-| [Clearstream](./clearstream) | SMS | Zapier | Kích hoạt tin nhắn Clearstream từ sự kiện B1; nhận phản hồi dưới dạng bản ghi B1 |
-| [Text In Church](./text-in-church) | SMS / Quy trình làm việc | Zapier | Kích hoạt quy trình Text In Church từ B1; nhận dữ liệu Connect Card |
-| [Mobile Message](./mobile-message) | SMS (Úc) | Webhooks by Zapier hoặc Make | Gửi SMS từ bất kỳ sự kiện B1 nào |
-| [Checkr](./checkr) | Kiểm tra lý lịch | Make | Bắt đầu kiểm tra lý lịch khi có người tham gia một nhóm phục vụ |
+| [Mailchimp](./mailchimp.md) | Email | Zapier hoặc Make | Đồng bộ người và người quyên góp mới trong B1 sang một danh sách khán giả Mailchimp |
+| [Donorbox](./donorbox.md) | Quyên góp | Zapier | Đưa các khoản quyên góp và người quyên góp từ Donorbox trở lại B1 |
+| [Subsplash](./subsplash.md) | Ứng dụng / Quyên góp | Zapier | Kéo dữ liệu quyên góp và người từ Subsplash vào B1 |
+| [VOMO](./vomo.md) | Tình nguyện | Zapier | Đồng bộ đăng ký tình nguyện viên giữa các nhóm B1 và dự án VOMO |
+| [Clearstream](./clearstream.md) | SMS | Zapier | Kích hoạt tin nhắn Clearstream từ sự kiện B1; nhận phản hồi dưới dạng bản ghi B1 |
+| [Text In Church](./text-in-church.md) | SMS / Quy trình làm việc | Zapier | Kích hoạt quy trình Text In Church từ B1; nhận dữ liệu Connect Card |
+| [Mobile Message](./mobile-message.md) | SMS (Úc) | Webhooks by Zapier hoặc Make | Gửi SMS từ bất kỳ sự kiện B1 nào |
+| [Checkr](./checkr.md) | Kiểm tra lý lịch | Make | Bắt đầu kiểm tra lý lịch khi có người tham gia một nhóm phục vụ |
 
 ## Điểm chung của tất cả các dịch vụ này
 
@@ -45,8 +46,8 @@ Chúng tôi cũng cố ý bỏ qua các công cụ dành riêng cho Planning Cen
 
 ## Xem thêm
 
-- [Zapier (tổng quan)](../zapier): phía B1 của mọi công thức Zapier đều giống nhau. Tài liệu này trình bày phần đó một lần.
-- [Make (tổng quan)](../make): tương tự với các kịch bản Make.
-- [Slack & Discord](../slack-discord): thông báo trò chuyện mà không cần cầu nối nào.
-- [Google Sheets](../google-sheets): xuất dữ liệu theo yêu cầu.
+- [Zapier (tổng quan)](../zapier.md): phía B1 của mọi công thức Zapier đều giống nhau. Tài liệu này trình bày phần đó một lần.
+- [Make (tổng quan)](../make.md): tương tự với các kịch bản Make.
+- [Slack & Discord](../slack-discord.md): thông báo trò chuyện mà không cần cầu nối nào.
+- [Google Sheets](../google-sheets.md): xuất dữ liệu theo yêu cầu.
 - [Webhooks (tài liệu tham khảo cho nhà phát triển)](/docs/developer/api/webhooks): danh mục sự kiện mà mọi công thức đều dựa vào.

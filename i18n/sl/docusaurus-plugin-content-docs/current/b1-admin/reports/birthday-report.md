@@ -1,5 +1,6 @@
 ---
 title: "Seznami rojstnih dni in obletnic"
+description: "Z iskalnimi filtri za osebe v B1 Admin sestavite seznam vseh, ki imajo v določenem mesecu rojstni dan ali obletnico, nato datume pregledajte ali izvozite."
 ---
 
 # Seznami rojstnih dni in obletnic

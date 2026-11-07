@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Conecte cadastros de voluntários do B1 Admin à Checkr via Make.com, com alertas opcionais de status ao coordenador de ministério seguro."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Se sua igreja usa a associação de grupo B1 para bloquear acesso (por exemplo, 
 
 ## Veja Também
 
-- [Make (visão geral)](../make) — lado B1 de cada cenário Make
-- [Mensagem Móvel](./mobile-message) — para provedores de SMS sem aplicativos Zapier, mesmo padrão Webhooks/HTTP que a conexão Make Checkr
+- [Make (visão geral)](../make.md) — lado B1 de cada cenário Make
+- [Mensagem Móvel](./mobile-message.md) — para provedores de SMS sem aplicativos Zapier, mesmo padrão Webhooks/HTTP que a conexão Make Checkr
 - [Documentação da API Checkr](https://docs.checkr.com/)

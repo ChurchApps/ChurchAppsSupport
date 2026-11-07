@@ -1,5 +1,7 @@
 ---
-title: "Dokonywanie darowizny"
+title: "Składanie daru w B1 Mobile"
+sidebar_label: "Dokonywanie darowizny"
+description: "Daruj swojemu kościołowi z karty Dar w B1 Mobile: wybierz fundusz, wpisz kwotę, zapłać przez Stripe i szybko powtórz dawne dary."
 ---
 
 # Dokonywanie darowizny
@@ -13,8 +15,8 @@ Przekazywanie darowizn przez B1 Mobile jest szybkie i proste. Zakładka **Przeka
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) do swojego konta
-- Przygotuj kartę kredytową lub debetową albo [zapisz metodę płatności](./managing-payments) wcześniej
+- [Zainstaluj B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) do swojego konta
+- Przygotuj kartę kredytową lub debetową albo [zapisz metodę płatności](./managing-payments.md) wcześniej
 
 </div>
 
@@ -42,10 +44,10 @@ Przed zatwierdzeniem sprawdź dokładnie kwotę darowizny i fundusz. Darowizny s
 Jeśli chcesz przekazać taką samą kwotę jak ostatnia darowizna, nie musisz przechodzić przez pełny proces. Zakładka **Przegląd** pokazuje Twój ostatni dar wraz z przyciskiem **Powtórz**. Dotknij go, aby szybko zatwierdzić tę samą darowiznę ponownie.
 
 :::tip
-Jeśli planujesz dawać regularnie, zapisz metodę płatności w zakładce **Zarządzaj**, aby następnym razem móc przekazać darowiznę jeszcze szybciej. Szczegóły znajdziesz w artykule [Zarządzanie metodami płatności](./managing-payments).
+Jeśli planujesz dawać regularnie, zapisz metodę płatności w zakładce **Zarządzaj**, aby następnym razem móc przekazać darowiznę jeszcze szybciej. Szczegóły znajdziesz w artykule [Zarządzanie metodami płatności](./managing-payments.md).
 :::
 
 ## Powiązane artykuły
 
-- [Zarządzanie metodami płatności](./managing-payments) -- Zapisz kartę, aby w przyszłości dawać szybciej
-- [Historia darowizn](./donation-history) -- Przeglądaj podsumowanie darów i wcześniejsze darowizny
+- [Zarządzanie metodami płatności](./managing-payments.md) -- Zapisz kartę, aby w przyszłości dawać szybciej
+- [Historia darowizn](./donation-history.md) -- Przeglądaj podsumowanie darów i wcześniejsze darowizny

@@ -1,5 +1,7 @@
 ---
-title: "Grupper"
+title: "Skärmen Grupper i B1 Mobile"
+sidebar_label: "Grupper"
+description: "Hitta de grupper du tillhör på skärmen Grupper i B1 Mobile, med din mest besökta grupp överst och resten av församlingens grupper nedanför."
 ---
 
 # Grupper
@@ -30,10 +32,10 @@ Här är vad du kan göra från skärmen Grupper:
 - **Håll kontakten** -- Se vad dina gruppmedlemmar delar, följ med i samtalen och engagera dig i gruppinnehållet.
 
 :::tip
-Skärmen Grupper anpassar sig efter hur du använder appen, precis som [instrumentpanelen](../dashboard/). De grupper du besöker oftast flyttas upp överst för snabb åtkomst.
+Skärmen Grupper anpassar sig efter hur du använder appen, precis som [instrumentpanelen](../dashboard/index.md). De grupper du besöker oftast flyttas upp överst för snabb åtkomst.
 :::
 
 ## Nästa steg
 
-- [Gruppdetaljer](./group-details) -- Se vad som finns på en grupps detaljsida
-- [Grupptidslinje](./group-timeline) -- Läs om det samlade aktivitetsflödet över dina grupper
+- [Gruppdetaljer](./group-details.md) -- Se vad som finns på en grupps detaljsida
+- [Grupptidslinje](./group-timeline.md) -- Läs om det samlade aktivitetsflödet över dina grupper

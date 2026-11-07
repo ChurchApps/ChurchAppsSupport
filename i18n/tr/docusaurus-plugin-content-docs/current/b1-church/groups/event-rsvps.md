@@ -1,5 +1,6 @@
 ---
 title: "Etkinlik Katılım Yanıtları"
+description: "B1.church üye portalında grup etkinliklerine Geliyorum, Belki veya Gelemem yanıtı verin; kaç kişinin geleceğini görün. Liderler de yanıtları inceleyebilir."
 ---
 
 # Etkinlik Katılım Yanıtları
@@ -30,14 +31,14 @@ Katılım yanıtınız yalnızca o belirli etkinlik tarihi için geçerlidir. Ö
 ## Grup Liderleri İçin
 
 - **Yanıtları görüntüleme** -- Liderler, grubun takviminde (**Tüm etkinlikler**) her etkinliğin yanında **Yanıtları görüntüle** bağlantısını görür. Bu bağlantı, herkesi yanıtına göre (Katılıyorum, Belki ve Katılamam) listeleyen **Yanıtlar** penceresini açar. Henüz kimse yanıt vermediyse "Henüz yanıt yok" yazısı görünür.
-- **Katılım yanıtlarını açma veya kapatma** -- Etkinlik oluştururken ya da düzenlerken **Katılım yanıtlarına izin ver** anahtarını kullanın. Katılım yanıtları kapalı olan etkinliklerde yanıt düğmeleri gösterilmez. B1 Admin'den toplu etkinlik oluşturan personel de aynı seçeneğe sahiptir; bkz. [Grup Takvimi](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Katılım yanıtlarını açma veya kapatma** -- Etkinlik oluştururken ya da düzenlerken **Katılım yanıtlarına izin ver** anahtarını kullanın. Katılım yanıtları kapalı olan etkinliklerde yanıt düğmeleri gösterilmez. B1 Admin'den toplu etkinlik oluşturan personel de aynı seçeneğe sahiptir; bkz. [Grup Takvimi](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-Katılım yanıtları hafif bir kişi sayımıdır. Etkinliğinizin kayıt bilgileri, kontenjan yönetimi ya da ödeme gerektiriyorsa, bunun yerine [etkinlik kaydını](../events/registering) kullanın.
+Katılım yanıtları hafif bir kişi sayımıdır. Etkinliğinizin kayıt bilgileri, kontenjan yönetimi ya da ödeme gerektiriyorsa, bunun yerine [etkinlik kaydını](../events/registering.md) kullanın.
 :::
 
 ## İlgili Makaleler
 
 - [Grup Ayrıntıları](./group-details.md) -- Grup ayrıntı sayfasındaki her şey
-- [Grup Takvimi (B1 Admin)](../../b1-admin/groups/group-calendar) -- Personel ve liderlerin grup etkinliklerini ve katılım yanıtlarını nasıl yönettiği
-- [Etkinliklere Kayıt Olma](../events/registering) -- Kontenjan ve ödemelerle birlikte tam etkinlik kaydı
+- [Grup Takvimi (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Personel ve liderlerin grup etkinliklerini ve katılım yanıtlarını nasıl yönettiği
+- [Etkinliklere Kayıt Olma](../events/registering.md) -- Kontenjan ve ödemelerle birlikte tam etkinlik kaydı

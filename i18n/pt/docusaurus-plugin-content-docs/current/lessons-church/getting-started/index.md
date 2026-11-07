@@ -1,5 +1,7 @@
 ---
-title: "Primeiros Passos"
+title: "Primeiros passos com o Lessons.church"
+sidebar_label: "Primeiros Passos"
+description: "Crie sua conta gratuita no Lessons.church, conecte sua igreja, configure as salas e agende suas primeiras lições. Sem assinatura nem período de teste."
 ---
 
 # Primeiros Passos

@@ -1,5 +1,6 @@
 ---
 title: "Completare il check-in"
+description: "Concludi il check-in di una famiglia al chiosco di B1 Checkin: limiti delle aule, stampa etichette, codici di sicurezza per il ritiro e i passaggi successivi."
 ---
 
 # Completare il check-in
@@ -13,9 +14,9 @@ Una volta verificato il nucleo familiare e assegnati eventuali gruppi, sei pront
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- [Verifica il tuo nucleo familiare](./household-review) nella schermata di verifica del nucleo familiare
-- [Assegna i gruppi](./group-assignment) ai membri della famiglia che devono registrarsi a una classe o a un programma specifico
-- Facoltativamente, [aggiungi gli ospiti](./adding-guests) che visitano la chiesa insieme alla tua famiglia
+- [Verifica il tuo nucleo familiare](./household-review.md) nella schermata di verifica del nucleo familiare
+- [Assegna i gruppi](./group-assignment.md) ai membri della famiglia che devono registrarsi a una classe o a un programma specifico
+- Facoltativamente, [aggiungi gli ospiti](./adding-guests.md) che visitano la chiesa insieme alla tua famiglia
 
 </div>
 
@@ -28,10 +29,10 @@ Non serve altro. Le presenze della tua famiglia sono state registrate.
 
 ## Sale piene e rapporti con i volontari
 
-Se la tua chiesa ha configurato [limiti di sicurezza](../../b1-admin/attendance/checkin-safety) per le sue sale, il server li verifica prima di salvare:
+Se la tua chiesa ha configurato [limiti di sicurezza](../../b1-admin/attendance/checkin-safety.md) per le sue sale, il server li verifica prima di salvare:
 
 - Se una sala selezionata è **piena o chiusa**, il check-in non va a buon fine e l'app indica il nome della sala, così puoi sceglierne un'altra.
-- Se l'orario di culto ha una [pianificazione del check-in](../../b1-admin/attendance/setup#setting-a-check-in-schedule) e la sua finestra di check-in in questo momento non è aperta, anche il check-in nelle sale di quell'orario di culto viene rifiutato. La schermata **Impossibile effettuare il check-in ora** elenca la sala con il motivo "il check-in non è aperto in questo momento"; tocca **Cambia sale** per scegliere un altro orario di culto o un altro gruppo. (Gli orari di culto già chiusi sono mostrati come **Chiuso** nella [schermata della famiglia](./household-review) e non possono essere scelti, quindi di solito vedrai questo messaggio solo se una finestra si chiude durante un check-in.)
+- Se l'orario di culto ha una [pianificazione del check-in](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) e la sua finestra di check-in in questo momento non è aperta, anche il check-in nelle sale di quell'orario di culto viene rifiutato. La schermata **Impossibile effettuare il check-in ora** elenca la sala con il motivo "il check-in non è aperto in questo momento"; tocca **Cambia sale** per scegliere un altro orario di culto o un altro gruppo. (Gli orari di culto già chiusi sono mostrati come **Chiuso** nella [schermata della famiglia](./household-review.md) e non possono essere scelti, quindi di solito vedrai questo messaggio solo se una finestra si chiude durante un check-in.)
 - Un nucleo familiare che ha fatto il check-in per un orario di culto precedente può tornare più tardi e aggiungere un orario di culto aperto, anche dopo la chiusura della finestra precedente. Le presenze già registrate vengono mantenute e non causano il rifiuto del nuovo check-in.
 - Se una sala per bambini ha **pochi volontari** rispetto al rapporto previsto, l'app mostra un avviso che un membro del personale può confermare per proseguire, oppure blocca del tutto il check-in, a seconda di come la tua chiesa ha configurato l'applicazione dei rapporti.
 
@@ -49,7 +50,7 @@ Lo stesso codice di sicurezza compare sia sull'etichetta del bambino sia sul fog
 Il codice di sicurezza viene generato ogni volta per ogni check-in e usa solo consonanti e cifre (le vocali sono escluse per evitare di formare parole inappropriate).
 
 :::warning
-Se le etichette non vengono stampate, apri le Impostazioni amministratore toccando **il logo della chiesa** sette volte, poi tocca **Cambia stampante** per verificare la connessione alla stampante. Vedi [Configurazione della stampante](../getting-started/printer-setup) per i passaggi di risoluzione dei problemi.
+Se le etichette non vengono stampate, apri le Impostazioni amministratore toccando **il logo della chiesa** sette volte, poi tocca **Cambia stampante** per verificare la connessione alla stampante. Vedi [Configurazione della stampante](../getting-started/printer-setup.md) per i passaggi di risoluzione dei problemi.
 :::
 
 ## Cosa succede dopo il check-in

@@ -1,5 +1,7 @@
 ---
-title: "Savanorių registracija"
+title: "Savanorių registracija B1.church narių portale"
+sidebar_label: "Savanorių registracija"
+description: "Naršykite laisvas savanorių pozicijas pagal kategorijas ir užsirašykite į artimiausias pamaldas ar pašalinkite savo registraciją B1.church iki termino."
 ---
 
 # Savanorių registracija
@@ -74,4 +76,4 @@ Reguliariai tikrinkite savanorių puslapį, ypač savaitės pradžioje. Populiar
 ## Susiję straipsniai
 
 - [Tarnystės apžvalga](./index.md) -- B1.church tarnystės funkcijų apžvalga
-- [Planų peržiūra](../plans/viewing-plans) -- peržiūrėkite jums priskirtus planus ir pamaldų tvarkas
+- [Planų peržiūra](../plans/viewing-plans.md) -- peržiūrėkite jums priskirtus planus ir pamaldų tvarkas

@@ -1,5 +1,6 @@
 ---
 title: "Danh sách kỷ niệm ngày cưới"
+description: "Lấy danh sách những người có ngày kỷ niệm kết hôn trong tháng đã chọn trên B1 Admin, hiển thị ngày trong kết quả và xuất ra bảng tính cho bản tin hoặc thiệp."
 ---
 
 # Danh sách kỷ niệm ngày cưới

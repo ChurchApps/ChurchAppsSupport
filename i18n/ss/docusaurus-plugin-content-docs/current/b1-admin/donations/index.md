@@ -1,5 +1,6 @@
 ---
 title: "Iminikelo"
+description: "Rekhoda, hlela, nebike ngetiminikelo ku-B1 Admin, kusukela ematinqwabeni nasetigabeni kuya etitatimendeni temnyaka netiminikelo yeStripe nePayPal."
 ---
 
 # Iminikelo

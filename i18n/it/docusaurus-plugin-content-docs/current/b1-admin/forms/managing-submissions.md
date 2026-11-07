@@ -1,5 +1,6 @@
 ---
 title: "Gestire le risposte"
+description: "Esamina, stampa e riassegna le risposte ai moduli in B1 Admin, inoltrandole alla persona giusta e seguendo schede visitatori e richieste di preghiera."
 ---
 
 # Gestire le risposte

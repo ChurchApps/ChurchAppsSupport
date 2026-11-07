@@ -1,5 +1,6 @@
 ---
 title: "Puncte finale pentru donații"
+description: "Referință pentru endpoint-urile API-ului de donații ChurchApps: donații, loturi, gateway-uri, abonamente și metode de plată, cu reguli de autentificare și permisiuni pentru dezvoltatorii care integrează cu B1 Admin."
 ---
 
 # Puncte finale pentru donații
@@ -284,6 +285,6 @@ Extinde `GenericCrudController` cu rutele CRUD: `getById`, `getAll`, `post`, `de
 
 ## Pagini conexe
 
-- [Puncte finale pentru membri](./membership) — Persoane, biserici, grupuri, roluri și permisiuni
-- [Autentificare și permisiuni](./authentication) — Fluxul de autentificare, JWT, OAuth, modelul de permisiuni
-- [Structura modulelor](../module-structure) — Modele de organizare a codului
+- [Puncte finale pentru membri](./membership.md) — Persoane, biserici, grupuri, roluri și permisiuni
+- [Autentificare și permisiuni](./authentication.md) — Fluxul de autentificare, JWT, OAuth, modelul de permisiuni
+- [Structura modulelor](../module-structure.md) — Modele de organizare a codului

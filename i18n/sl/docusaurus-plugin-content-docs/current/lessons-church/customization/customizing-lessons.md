@@ -1,5 +1,6 @@
 ---
 title: "Prilagajanje lekcij"
+description: "Odstrani, skrij ali preuredi sklope in vloge v uri Lessons.church ter izberi, ali spremembe veljajo za eno učilnico ali za vse."
 ---
 
 # Prilagajanje lekcij

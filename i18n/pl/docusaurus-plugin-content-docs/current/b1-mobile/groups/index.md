@@ -1,5 +1,7 @@
 ---
-title: "Grupy"
+title: "Ekran Grupy w B1 Mobile"
+sidebar_label: "Grupy"
+description: "Znajdź swoje grupy na ekranie Grupy w B1 Mobile: najczęściej odwiedzaną grupę na górze, a pozostałe grupy kościoła poniżej."
 ---
 
 # Grupy
@@ -30,10 +32,10 @@ Oto, co możesz zrobić na ekranie Grupy:
 - **Bycie na bieżąco** -- Zobacz, czym dzielą się członkowie Twojej grupy, śledź rozmowy i angażuj się w treści grupy.
 
 :::tip
-Ekran Grupy dostosowuje się do Twojego sposobu korzystania z aplikacji, podobnie jak [pulpit](../dashboard/). Grupy, które odwiedzasz najczęściej, są przenoszone na górę, aby zapewnić szybki dostęp.
+Ekran Grupy dostosowuje się do Twojego sposobu korzystania z aplikacji, podobnie jak [pulpit](../dashboard/index.md). Grupy, które odwiedzasz najczęściej, są przenoszone na górę, aby zapewnić szybki dostęp.
 :::
 
 ## Kolejne kroki
 
-- [Szczegóły grupy](./group-details) -- Co znajduje się na stronie szczegółów grupy
-- [Oś czasu grupy](./group-timeline) -- Dowiedz się więcej o wspólnym kanale aktywności ze wszystkich Twoich grup
+- [Szczegóły grupy](./group-details.md) -- Co znajduje się na stronie szczegółów grupy
+- [Oś czasu grupy](./group-timeline.md) -- Dowiedz się więcej o wspólnym kanale aktywności ze wszystkich Twoich grup

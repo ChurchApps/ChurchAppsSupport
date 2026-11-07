@@ -1,5 +1,6 @@
 ---
 title: "Forbindelse til udbydere"
+description: "Forbind FreePlay til en indholdsudbyder med en QR-kode, e-mail-login eller adgang med ét klik, og administrer eller afbryd forbindelsen under Indstillinger."
 ---
 
 # Forbindelse til udbydere
@@ -13,7 +14,7 @@ Før du kan gennemse indhold fra en udbyder, skal du forbinde til det. Nogle udb
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Installer og start FreePlay -- se [Kom i gang](../getting-started/)
+- Installer og start FreePlay -- se [Kom i gang](../getting-started/index.md)
 - Har din TV fjernbetjening klar til navigation
 - For udbydere, der kræver login, have dine kontolegitimationsoplysninger tilgængelige
 
@@ -80,5 +81,5 @@ Frakobling fjerner de gemte godkendelsesoplysninger fra din enhed. Du skal logge
 
 ## Relaterede artikler
 
-- **[Browsing og download af indhold](./browsing-content)** - Naviger mapper og afspil indhold efter forbindelse
+- **[Browsing og download af indhold](./browsing-content.md)** - Naviger mapper og afspil indhold efter forbindelse
 - **[Oversigt over indholdsudbydere](./index.md)** - Se alle tilgængelige udbydere

@@ -1,5 +1,6 @@
 ---
 title: "Denetim Günlüğü ve Geri Alınabilir Toplu İşlemler"
+description: "API denetim günlüğünü, yani modüller genelindeki her kullanıcı değişikliğini ve içe aktarma gruplarının B1 Admin'de satır satır geri alınmasını kapsar."
 ---
 
 # Denetim Günlüğü ve Geri Alınabilir Toplu İşlemler
@@ -155,6 +156,6 @@ Her iki yönetici yüzeyi de **devam etmektedir**. Amaç şudur:
 
 ## İlgili sayfalar
 
-- [Modül Yapısı](../api/module-structure): Membership olmayan bir denetleyicinin `RepoManager` aracılığıyla membership depolarına nasıl ulaştığı
-- [Bağışlar](./giving): Anonim olsa bile `sensitive` olarak denetlenen bağış yazma yolları
-- [Membership Uç Noktaları](../api/endpoints/membership): `X-Batch-Id` taşıyan ve `/auditlogs` ile `/batches` uç noktalarını sunan REST yüzeyi
+- [Modül Yapısı](../api/module-structure.md): Membership olmayan bir denetleyicinin `RepoManager` aracılığıyla membership depolarına nasıl ulaştığı
+- [Bağışlar](./giving.md): Anonim olsa bile `sensitive` olarak denetlenen bağış yazma yolları
+- [Membership Uç Noktaları](../api/endpoints/membership.md): `X-Batch-Id` taşıyan ve `/auditlogs` ile `/batches` uç noktalarını sunan REST yüzeyi

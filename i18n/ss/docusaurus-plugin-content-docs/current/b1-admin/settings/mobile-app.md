@@ -1,5 +1,6 @@
 ---
 title: "Tilungiselelo Te-App Yeselula"
+description: "Lungisa ematab ekuhamba, emathayili esikrini sekuqala, umyalo wekungena, nemalungiselelo ekuvikela lwati lwelilungu le-B1.church."
 ---
 
 # Tilungiselelo Te-App Yeselula

@@ -1,5 +1,7 @@
 ---
-title: "Bağışlar"
+title: "B1.church'te Çevrimiçi Bağış ve Bağışlar"
+sidebar_label: "Bağışlar"
+description: "B1.church'te hesap açmadan kilisenize çevrimiçi bağış yapın veya tekrarlayan bağışları, ödeme yöntemlerini ve bağış belgelerini yönetmek için oturum açın."
 ---
 
 # Bağışlar

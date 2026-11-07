@@ -1,5 +1,6 @@
 ---
 title: "Transfer Risk Assessment"
+description: "Compliance record ng ChurchApps para sa paglipat ng datos ng simbahan mula UK/EEA papuntang US sa B1 Admin: safeguards, sub-processors, at access controls."
 ---
 
 # Transfer Risk Assessment

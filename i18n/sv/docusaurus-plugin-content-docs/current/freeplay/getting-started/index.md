@@ -1,5 +1,7 @@
 ---
-title: "Kom igång"
+title: "Komma igång med FreePlay TV-appen"
+sidebar_label: "Kom igång"
+description: "Installera FreePlay på Android TV, Fire TV eller Apple TV: installera appen, öppna den första gången och lär dig fjärrkontrollen och sidopanelen."
 ---
 
 # Kom igång med FreePlay
@@ -42,7 +44,7 @@ FreePlay fungerar på Fire TV (inklusive de nyare Vega OS-sticksen), Android TV-
 
 När du öppnar FreePlay för första gången visas en animerad startskärm med FreePlays logotyp. Appen letar efter eventuella innehållsleverantörer som redan är anslutna. Om du redan har anslutit en leverantör går appen direkt till den leverantörens innehållsbläddrare. Annars öppnas skärmen **Innehållsleverantörer**, där du kan ansluta din första innehållskälla.
 
-Om TV:n är kopplad till en kalender i [schemalagt läge](../scheduled-mode/) hoppar FreePlay över allt det här och öppnar direkt den schemalagda spelaren.
+Om TV:n är kopplad till en kalender i [schemalagt läge](../scheduled-mode/index.md) hoppar FreePlay över allt det här och öppnar direkt den schemalagda spelaren.
 
 ## Navigera med din TV-fjärrkontroll
 
@@ -62,13 +64,13 @@ Sidofältet fälls ihop till en smal remsa med ikoner när du bläddrar bland in
 
 Sidofältet listar följande, uppifrån och ner:
 
-- **Dagens plan** – Visas när TV:n är kopplad till en plan. Se [Planläge](../plan-mode/)
-- **Meddelanden** – Visas när du har valt en mapp för meddelanden. Se [Meddelanden](../content-providers/announcements)
-- **Bläddra** – Varje ansluten innehållsleverantör du kan bläddra i. Se [Bläddra i och ladda ner innehåll](../content-providers/browsing-content)
-- **Inställningar** – Längst ned i sidofältet. Öppnar **Koppla till en kalender** (koppla den här TV:n till en kalender eller plan – se [Välj ett kopplingsläge](./pairing-modes)), **Nedladdningar** (spela upp eller ta bort innehåll som sparats på den här enheten) och **Leverantörer** (anslut innehållsleverantörer och välj mapp för meddelanden)
+- **Dagens plan** – Visas när TV:n är kopplad till en plan. Se [Planläge](../plan-mode/index.md)
+- **Meddelanden** – Visas när du har valt en mapp för meddelanden. Se [Meddelanden](../content-providers/announcements.md)
+- **Bläddra** – Varje ansluten innehållsleverantör du kan bläddra i. Se [Bläddra i och ladda ner innehåll](../content-providers/browsing-content.md)
+- **Inställningar** – Längst ned i sidofältet. Öppnar **Koppla till en kalender** (koppla den här TV:n till en kalender eller plan – se [Välj ett kopplingsläge](./pairing-modes.md)), **Nedladdningar** (spela upp eller ta bort innehåll som sparats på den här enheten) och **Leverantörer** (anslut innehållsleverantörer och välj mapp för meddelanden)
 
 ## Nästa steg
 
-- **[Välj ett kopplingsläge](./pairing-modes)** – Lär dig om de olika sätten att koppla din TV
-- **[Schemalagt läge](../scheduled-mode/)** – Lägg dina TV-apparater i en kalender med FreePlay Admin
-- **[Innehållsleverantörer](../content-providers/)** – Anslut till Lessons.church, Bible Project och fler
+- **[Välj ett kopplingsläge](./pairing-modes.md)** – Lär dig om de olika sätten att koppla din TV
+- **[Schemalagt läge](../scheduled-mode/index.md)** – Lägg dina TV-apparater i en kalender med FreePlay Admin
+- **[Innehållsleverantörer](../content-providers/index.md)** – Anslut till Lessons.church, Bible Project och fler

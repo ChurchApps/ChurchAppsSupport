@@ -1,5 +1,6 @@
 ---
 title: "Dukungan Multi-Mata Uang"
+description: "Catat dan laporkan donasi dalam berbagai mata uang di B1 Admin, termasuk input manual, pemberian online lewat Stripe, dan cara total gabungan dikonversi."
 ---
 
 # Dukungan Multi-Mata Uang

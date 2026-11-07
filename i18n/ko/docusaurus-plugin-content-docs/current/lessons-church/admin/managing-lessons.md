@@ -1,5 +1,6 @@
 ---
 title: "수업 관리"
+description: "Lessons.church 관리 화면에서 레슨 구조 만들기: 장소와 섹션 추가, 역할별 말하기·하기·메모·재생 동작 설정, 학부모용 가정 자료와 자원 추가."
 ---
 # 수업 관리
 <div class="article-intro">

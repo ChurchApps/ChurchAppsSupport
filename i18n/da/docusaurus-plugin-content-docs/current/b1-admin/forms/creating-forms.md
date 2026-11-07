@@ -1,5 +1,6 @@
 ---
 title: "Oprettelse af formularer"
+description: "Byg tilpassede formularer i B1 Admin til begivenhedstilmeldinger, spørgeskemaer og gæstekort, og del dem via link, QR-kode eller print."
 ---
 
 # Oprettelse af formularer

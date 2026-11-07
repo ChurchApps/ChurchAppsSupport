@@ -1,5 +1,6 @@
 ---
 title: "Implementarea aplicației web"
+description: "Pași pentru implementarea aplicațiilor web ChurchApps (ex. B1 Admin) pe Amazon S3 și CloudFront, prin GitHub Actions la îmbinare sau manual."
 ---
 
 # Implementarea aplicației web
@@ -13,7 +14,7 @@ Aplicațiile web ChurchApps sunt implementate ca site-uri statice pe **Amazon S3
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Configurați aplicația web local și verificați că se compilează corect -- consultați [Aplicații web](../web-apps/)
+- Configurați aplicația web local și verificați că se compilează corect -- consultați [Aplicații web](../web-apps/index.md)
 - Configurați credențialele AWS cu acces la S3 și CloudFront
 - Cunoașteți numele bucket-ului S3 țintă și ID-ul distribuției CloudFront
 
@@ -53,6 +54,6 @@ Dacă doriți să verificați o compilare local înainte de implementare, rulaț
 
 ## Articole înrudite
 
-- **[Aplicații web](../web-apps/)** -- Ghiduri de configurare pentru B1Admin, B1App și LessonsApp
-- **[Implementarea API-ului](./apis)** -- Implementarea API-urilor backend
-- **[Implementarea aplicațiilor mobile](./mobile)** -- Implementarea aplicațiilor mobile în magazinele de aplicații
+- **[Aplicații web](../web-apps/index.md)** -- Ghiduri de configurare pentru B1Admin, B1App și LessonsApp
+- **[Implementarea API-ului](./apis.md)** -- Implementarea API-urilor backend
+- **[Implementarea aplicațiilor mobile](./mobile.md)** -- Implementarea aplicațiilor mobile în magazinele de aplicații

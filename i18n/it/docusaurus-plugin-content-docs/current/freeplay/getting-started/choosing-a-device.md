@@ -1,5 +1,6 @@
 ---
 title: "Scegliere un dispositivo"
+description: "Scegliere il dispositivo giusto per le TV in aula con FreePlay: dai Fire TV Stick e Onn box ad Apple TV, e quali evitare."
 ---
 
 # Scegliere un dispositivo per FreePlay

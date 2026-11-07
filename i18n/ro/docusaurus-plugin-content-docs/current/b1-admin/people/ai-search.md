@@ -1,5 +1,6 @@
 ---
 title: "Căutare AI"
+description: "Căutați în directorul B1 Admin cu întrebări în limbaj natural, precum cine nu a participat de trei luni, în loc să construiți filtre manual."
 ---
 
 # Căutare AI

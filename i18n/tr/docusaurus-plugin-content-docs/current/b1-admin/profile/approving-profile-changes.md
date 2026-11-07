@@ -1,5 +1,6 @@
 ---
 title: "Profil Değişikliklerini Onaylama"
+description: "B1 Admin'de üye profil değişikliği taleplerini inceleyin ve onaylayın; bu talepleri alacak Dizin Onay Grubu'nu kurun."
 ---
 
 # Profil Değişikliklerini Onaylama

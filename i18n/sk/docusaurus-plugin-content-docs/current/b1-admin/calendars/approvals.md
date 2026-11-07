@@ -1,5 +1,6 @@
 ---
 title: "Schválenia kalendára"
+description: "Prehliadajte čakajúce žiadosti o rezerváciu miestností a zdrojov v B1 Admin, skontrolujte konflikty a schváľte či zamietnite, prípadne udalosť zverejnite."
 ---
 
 # Schválenia kalendára
@@ -13,7 +14,7 @@ Stránka Schválenia slúži na to, aby administrátori mohli prezerať a spraco
 <div class="prereqs">
 <h4>Pred začatím</h4>
 
-- Nastavte miestnosti alebo zdroje so **skupinou schválenia** v časti [Miestnosti a zdroje](rooms-resources)
+- Nastavte miestnosti alebo zdroje so **skupinou schválenia** v časti [Miestnosti a zdroje](./rooms-resources.md)
 - Potrebujete oprávnenie **Správca kalendárov** alebo oprávnenie **content.edit**
 
 </div>
@@ -41,7 +42,7 @@ Pri ľubovoľnej žiadosti o rezerváciu kliknite na **Schváliť** alebo **Zami
 Po kliknutí na **Schváliť** sa otvorí dialógové okno **Schváliť rezerváciu**, v ktorom môžete udalosť v tom istom kroku aj zverejniť:
 
 1. Začiarknite **Zverejniť vo verejnom kalendári**, aby bola udalosť viditeľná v kalendári jej skupiny. Ak ponecháte políčko nezačiarknuté, rezerváciu schválite bez zmeny viditeľnosti udalosti.
-2. Keď je začiarknuté **Zverejniť vo verejnom kalendári**, môžete voliteľne v položke **Pridať aj do kalendára** vybrať kurátorský kalendár, aby sa udalosť pridala aj do jedného z vašich [kurátorských kalendárov](curated-calendar). Ak chcete tento krok preskočiť, ponechajte možnosť na **Žiadny**. (Táto možnosť sa zobrazí iba vtedy, ak máte oprávnenie **content.edit**.)
+2. Keď je začiarknuté **Zverejniť vo verejnom kalendári**, môžete voliteľne v položke **Pridať aj do kalendára** vybrať kurátorský kalendár, aby sa udalosť pridala aj do jedného z vašich [kurátorských kalendárov](./curated-calendar.md). Ak chcete tento krok preskočiť, ponechajte možnosť na **Žiadny**. (Táto možnosť sa zobrazí iba vtedy, ak máte oprávnenie **content.edit**.)
 3. Kliknite na **Schváliť**.
 
 ## Čakajúce udalosti
@@ -49,10 +50,10 @@ Po kliknutí na **Schváliť** sa otvorí dialógové okno **Schváliť rezervá
 Ak váš pracovný postup v kalendári vyžaduje schválenie udalostí skôr, než budú pre verejnosť viditeľné, čakajúce udalosti sa zobrazia v sekcii **Žiadosti o udalosti**. Kliknutím na **Schváliť** zverejníte udalosť v kalendári alebo kliknutím na **Zamietnuť** upozorníte odosielateľa, že sú potrebné úpravy.
 
 :::tip
-Ak chcete, aby pre určitú miestnosť bolo potrebné schválenie, nastavte na nej skupinu schválenia v časti [Miestnosti a zdroje](rooms-resources). Skupiny s prístupom potom môžu o miestnosť žiadať pri vytváraní udalostí a tieto žiadosti sa zobrazia na tejto stránke.
+Ak chcete, aby pre určitú miestnosť bolo potrebné schválenie, nastavte na nej skupinu schválenia v časti [Miestnosti a zdroje](./rooms-resources.md). Skupiny s prístupom potom môžu o miestnosť žiadať pri vytváraní udalostí a tieto žiadosti sa zobrazia na tejto stránke.
 :::
 
 ## Súvisiace články
 
-- [Miestnosti, zdroje a plánovanie](rooms-resources) — nastavenie rezervovateľných miestností a zdrojov
-- [Vytváranie kalendárov](creating-calendars) — správa kalendárov a udalostí
+- [Miestnosti, zdroje a plánovanie](./rooms-resources.md) — nastavenie rezervovateľných miestností a zdrojov
+- [Vytváranie kalendárov](./creating-calendars.md) — správa kalendárov a udalostí

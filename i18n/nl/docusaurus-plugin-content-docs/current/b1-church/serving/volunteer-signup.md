@@ -1,5 +1,7 @@
 ---
-title: "Vrijwilligers Inschrijving"
+title: "Vrijwilligersaanmelding in het ledenportaal van B1.church"
+sidebar_label: "Vrijwilligers Inschrijving"
+description: "Blader per categorie door open vrijwilligersposities en meld je aan voor komende diensten, of verwijder je aanmelding op B1.church vóór de deadline."
 ---
 
 # Vrijwilligers Inschrijving
@@ -73,4 +75,4 @@ Controleer regelmatig de vrijwilliger pagina, vooral vroeg in de week. Populaire
 ## Gerelateerde Artikelen
 
 - [Dienen Overzicht](./index.md) -- Overzicht van dienst functies op B1.church
-- [Plannen Bekijken](../plans/viewing-plans) -- Bekijk je toegewezen plannen en service orders
+- [Plannen Bekijken](../plans/viewing-plans.md) -- Bekijk je toegewezen plannen en service orders

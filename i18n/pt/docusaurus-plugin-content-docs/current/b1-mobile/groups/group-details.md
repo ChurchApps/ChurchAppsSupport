@@ -1,5 +1,7 @@
 ---
-title: "Detalhes do Grupo"
+title: "Detalhes do Grupo no App B1 Mobile"
+sidebar_label: "Detalhes do Grupo"
+description: "Veja o que a página de detalhes do grupo no B1 Mobile mostra, como informações, publicações e membros, e como abri-la pela tela de Grupos."
 ---
 
 # Detalhes do Grupo
@@ -13,7 +15,7 @@ Ao tocar em um grupo na tela Grupos, você é levado à página de detalhes dess
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
+- [Instale o B1 Mobile](../getting-started/installing.md) e [faça login](../getting-started/logging-in.md) na sua conta
 - Abra a tela [Grupos](./index.md)
 
 </div>
@@ -46,5 +48,5 @@ O grupo que você mais acessa aparece como cartão principal no topo da tela Gru
 
 ## Artigos Relacionados
 
-- [Linha do Tempo do Grupo](./group-timeline) -- Saiba mais sobre o feed de atividades unificado de todos os seus grupos
+- [Linha do Tempo do Grupo](./group-timeline.md) -- Saiba mais sobre o feed de atividades unificado de todos os seus grupos
 - [Mensagens](../community/messaging.md) -- Envie mensagens privadas aos membros do grupo

@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Forbind Clearstream SMS til B1 Admin via Zapier: send sms ved nye gaver eller formularindsendelser, og hent indkomne svar tilbage som personer."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Slå Zap'en til. B1 registrerer gave-webhooken ved aktivering; du vil se `Zapier
 
 ## Se også
 
-- [Text In Church](./text-in-church) — alternativ sms-platform med lignende opsætning
-- [Mobile Message](./mobile-message) — til kirker uden for USA
-- [Zapier (oversigt)](../zapier) — B1-siden af alle Zapier-opskrifter
+- [Text In Church](./text-in-church.md) — alternativ sms-platform med lignende opsætning
+- [Mobile Message](./mobile-message.md) — til kirker uden for USA
+- [Zapier (oversigt)](../zapier.md) — B1-siden af alle Zapier-opskrifter
 - [Clearstream API-dokumentation](https://api-docs.clearstream.io/) — til tilpassede integrationer ud over Zapier-appen

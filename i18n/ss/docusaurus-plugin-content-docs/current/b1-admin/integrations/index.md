@@ -1,5 +1,6 @@
 ---
 title: "Integrations"
+description: "Xhuma i-B1 Admin ku-Slack, Discord, Zapier, Make, Google Sheets nemasistenti e-AI njenge-Claude, netinyatselo netimvumo tekhiyi ye-API ngayinye."
 ---
 
 # Integrations
@@ -14,21 +15,21 @@ I-B1 iyahlanganiswa nemathulusi lelicembu lakho selikade liwasebentisa. Xhuma i-
 
 | Kuhlanganiswa | Lokwentako | Indlela | Umzamo Wekulungiselela |
 |---|---|---|---|
-| **[Slack](./slack-discord)** | Tfumela sati lesifundzeka lula (bantfu labasha, iminikelo, kubhalisa, …) kusigceme se-Slack | B1 → Slack | Emaminithi lali-2 |
-| **[Discord](./slack-discord)** | Kufanako, kusigceme se-Discord | B1 → Discord | Emaminithi lali-2 |
-| **[Zapier](./zapier)** | Sebentisa imicimbi ye-B1 njengetento kanye netento te-B1 kunoma nguluphi lwaletinhlelo letingetulu kwa-7,000+ te-Zapier | Kokubili | Emaminithi lali-5–10 nge-Zap ngayinye |
-| **[Make](./make)** | Umbono lofanako ne-Zapier, kusakhi sesento lesibonakalako se-Make | Kokubili | Emaminithi lali-5–10 nge-scenario ngayinye |
-| **[Google Sheets](./google-sheets)** | Khipha Bantfu / Iminikelo / Emacembu / Kubakhona kuya kusipredishithi ngesikhatsi lesidzingekile | B1 → Sheet | Emaminithi lali-5 |
-| **[Claude](./claude)** | Buta i-Claude ye-Anthropic imibuto ngemininingwane welibandla lakho, ngekwemvumo yakho — kulinga kumahhala, kuyanconywa | Kokubili | Ngaphansi kwemaminithi lali-3 |
-| **[ChatGPT](./chatgpt)** | Umbono lofanako nge-ChatGPT ye-OpenAI (idzinga luhlelo lwe-ChatGPT lolukhokhelwako) | Kokubili | Emaminithi lali-10 |
-| **[Connected services](./services/)** | Tindlela letihlelekile te-Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Kuyehluka | Emaminithi lali-5–10 ngayinye |
+| **[Slack](./slack-discord.md)** | Tfumela sati lesifundzeka lula (bantfu labasha, iminikelo, kubhalisa, …) kusigceme se-Slack | B1 → Slack | Emaminithi lali-2 |
+| **[Discord](./slack-discord.md)** | Kufanako, kusigceme se-Discord | B1 → Discord | Emaminithi lali-2 |
+| **[Zapier](./zapier.md)** | Sebentisa imicimbi ye-B1 njengetento kanye netento te-B1 kunoma nguluphi lwaletinhlelo letingetulu kwa-7,000+ te-Zapier | Kokubili | Emaminithi lali-5–10 nge-Zap ngayinye |
+| **[Make](./make.md)** | Umbono lofanako ne-Zapier, kusakhi sesento lesibonakalako se-Make | Kokubili | Emaminithi lali-5–10 nge-scenario ngayinye |
+| **[Google Sheets](./google-sheets.md)** | Khipha Bantfu / Iminikelo / Emacembu / Kubakhona kuya kusipredishithi ngesikhatsi lesidzingekile | B1 → Sheet | Emaminithi lali-5 |
+| **[Claude](./claude.md)** | Buta i-Claude ye-Anthropic imibuto ngemininingwane welibandla lakho, ngekwemvumo yakho — kulinga kumahhala, kuyanconywa | Kokubili | Ngaphansi kwemaminithi lali-3 |
+| **[ChatGPT](./chatgpt.md)** | Umbono lofanako nge-ChatGPT ye-OpenAI (idzinga luhlelo lwe-ChatGPT lolukhokhelwako) | Kokubili | Emaminithi lali-10 |
+| **[Connected services](./services/index.md)** | Tindlela letihlelekile te-Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Kuyehluka | Emaminithi lali-5–10 ngayinye |
 
 ## Kutsi Ukhetsa Njani
 
 - **Ufuna kuphela sati kunkulumo-mpendvulwano?** Sebentisa i-**Slack** nome i-**Discord** — akukho akhawunti yephatsi lesitsatfu, akukho Zap lekumele uyigcine. Kulungiselelwa konkhe ngekhatsi kwe-B1Admin.
 - **Ufuna kwenta ngco intfo emaphakathi kwetinhlelo** (sibonelo "nangabe umuntfu anikela, ngeta kuluhlu lwami lwe-Mailchimp bese ngeta ku-Slack #donations")? Sebentisa i-**Zapier** nome i-**Make**. I-Zapier ilula kakhulu; i-Make iyashibhile nangabe kukhula futsi inelogic lenetintsandvo letinyenti.
 - **Udzinga kukhishwa kwemininingwane kanye nome umbiko lohleliwe?** Sebentisa i-**Google Sheets** — faka ikhiya ye-API ku-sidebar ye-add-on bese uchofota Export.
-- **Ufuna kubuta imibuto ngelulwimi loluvamile** ("bavakashi labangaki labeta kucala ngeSonto leledlule?", "hlanganisa iminikelo yalenyanga")? Cala nge-**[Claude](./claude)** — kulinga kumahhala futsi kulungiselelwa ngaphansi kwemaminithi lali-3. I-**[ChatGPT](./chatgpt)** nayo iyasebenta neluhlelo lolukhokhelwako. I-Claude ixhuma ngekungena nge-akhawunti yakho ye-B1; i-ChatGPT isebentisa ikhiya ye-API ye-B1.
+- **Ufuna kubuta imibuto ngelulwimi loluvamile** ("bavakashi labangaki labeta kucala ngeSonto leledlule?", "hlanganisa iminikelo yalenyanga")? Cala nge-**[Claude](./claude.md)** — kulinga kumahhala futsi kulungiselelwa ngaphansi kwemaminithi lali-3. I-**[ChatGPT](./chatgpt.md)** nayo iyasebenta neluhlelo lolukhokhelwako. I-Claude ixhuma ngekungena nge-akhawunti yakho ye-B1; i-ChatGPT isebentisa ikhiya ye-API ye-B1.
 - **Wakha kuhlanganiswa kwakho ngco?** Akukho lokungetulu — khuluma ne-[REST API](/docs/developer/api) ngco nge-[ikhiya ye-API](/docs/developer/api/api-keys), nome ubhalise seva loyilawulako ku-[ema-webhook](/docs/developer/api/webhooks).
 
 ## Loko Lokuhlanganyelwe
@@ -59,10 +60,10 @@ Nangabe akukho kulokungetulu lokufanele, sonkhe simo se-B1 sivulekile:
 
 ## Tinyatselo Letilandzelako
 
-- [Slack & Discord](./slack-discord) — tfumela sati senkulumo-mpendvulwano
-- [Zapier](./zapier) — xhuma kutinhlelo letingetulu kwa-7,000+
-- [Make](./make) — kwenta ngco umsebenti lobonakalako
-- [Google Sheets](./google-sheets) — khipha uye kusipredishithi
-- [Claude](./claude) — buta i-Claude ye-Anthropic ngemininingwane welibandla lakho
-- [ChatGPT](./chatgpt) — buta i-ChatGPT ye-OpenAI ngemininingwane welibandla lakho
-- [Connected services](./services/) — tindlela ngenkonzo ngayinye (Mailchimp, Donorbox, Clearstream, …)
+- [Slack & Discord](./slack-discord.md) — tfumela sati senkulumo-mpendvulwano
+- [Zapier](./zapier.md) — xhuma kutinhlelo letingetulu kwa-7,000+
+- [Make](./make.md) — kwenta ngco umsebenti lobonakalako
+- [Google Sheets](./google-sheets.md) — khipha uye kusipredishithi
+- [Claude](./claude.md) — buta i-Claude ye-Anthropic ngemininingwane welibandla lakho
+- [ChatGPT](./chatgpt.md) — buta i-ChatGPT ye-OpenAI ngemininingwane welibandla lakho
+- [Connected services](./services/index.md) — tindlela ngenkonzo ngayinye (Mailchimp, Donorbox, Clearstream, …)

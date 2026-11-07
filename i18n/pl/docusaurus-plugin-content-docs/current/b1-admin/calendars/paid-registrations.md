@@ -1,5 +1,6 @@
 ---
 title: "Płatne rejestracje"
+description: "Skonfiguruj płatne zapisy na wydarzenia w B1 Admin: typy uczestników z cenami, dodatki, kody rabatowe, listy rezerwowe i płatności przez dostawcę."
 ---
 
 # Płatne rejestracje
@@ -17,7 +18,7 @@ Rejestracja na wydarzenie może być czymś więcej niż prostym policzeniem ucz
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Najpierw włącz rejestrację na wydarzeniu — zobacz [Tworzenie kalendarzy](creating-calendars#enabling-event-registration)
+- Najpierw włącz rejestrację na wydarzeniu — zobacz [Tworzenie kalendarzy](./creating-calendars.md#enabling-event-registration)
 - Aby zbierać płatności online, Twój kościół musi mieć [skonfigurowane online datki](../donations/online-giving-setup.md) (Stripe, PayPal lub Kingdom Funding). Bezpłatne wydarzenia nie wymagają konfiguracji datków. Bez datków online płatne rejestracje nadal działają, ale osoby płacą bezpośrednio kościołowi — zobacz [Kościoły bez datków online](#churches-without-online-giving).
 
 </div>
@@ -66,7 +67,7 @@ Każdy kod pokazuje licznik **Użycia**, dzięki czemu widzisz, jak często zost
 Włącz opcję **Włącz listę oczekujących** w karcie Ustawienia rejestracji. Gdy wydarzenie osiągnie pojemność:
 
 - Nowe osoby rejestrujące się otrzymują miejsce na liście oczekujących zamiast odmowy. Wypełniają ten sam formularz (płatność jest pomijana, dopóki są na liście oczekujących).
-- Gdy ktoś zrezygnuje, najstarsza rejestracja z listy oczekujących jest **automatycznie awansowana** i otrzymuje e-mail informujący, że zwolniło się miejsce. Jeśli ma do zapłaty saldo, e-mail zawiera link do [Moich rejestracji](../../b1-church/events/my-registrations) na stronie B1 Twojego kościoła, gdzie może dokonać płatności.
+- Gdy ktoś zrezygnuje, najstarsza rejestracja z listy oczekujących jest **automatycznie awansowana** i otrzymuje e-mail informujący, że zwolniło się miejsce. Jeśli ma do zapłaty saldo, e-mail zawiera link do [Moich rejestracji](../../b1-church/events/my-registrations.md) na stronie B1 Twojego kościoła, gdzie może dokonać płatności.
 - Możesz ręcznie awansować osobę w dowolnym momencie, używając działania **Awansuj** w wierszu z listy oczekujących — przydatne po zwiększeniu pojemności wydarzenia.
 
 :::info
@@ -79,7 +80,7 @@ Otwórz wydarzenie ze strony Rejestracje, aby zobaczyć wszystkie rejestracje. T
 
 - Kliknij ikonę szczegółów w wierszu, aby otworzyć okno **Szczegóły rejestracji** — członkowie, wybory, opłacono/saldo oraz tabela **Płatności** z każdą wpłatą (kwota, metoda, data).
 - **Eksportuj CSV** pobiera pełną listę z kolumnami: członkowie, typy uczestników, wybory, opłacono/razem/saldo, status oraz jedna kolumna na każde pytanie rejestracyjne.
-- **Dodaj uczestnika** rejestruje zapis offline lub telefoniczny dla dowolnej osoby z Twojego kościoła. Wybierz osobę i, w przypadku płatnego wydarzenia, jej typ uczestnika. Jej karta nie zostaje obciążona: płatna rejestracja zapisuje się jako **oczekująca** z pełną kwotą jako saldem do zapłaty. Jeśli Twój kościół ma datki online, osoba może zapłacić z poziomu [Moich rejestracji](../../b1-church/events/my-registrations); w przeciwnym razie pobierz płatność osobiście. Aby dodawać uczestników, potrzebujesz uprawnienia Edycja rejestracji.
+- **Dodaj uczestnika** rejestruje zapis offline lub telefoniczny dla dowolnej osoby z Twojego kościoła. Wybierz osobę i, w przypadku płatnego wydarzenia, jej typ uczestnika. Jej karta nie zostaje obciążona: płatna rejestracja zapisuje się jako **oczekująca** z pełną kwotą jako saldem do zapłaty. Jeśli Twój kościół ma datki online, osoba może zapłacić z poziomu [Moich rejestracji](../../b1-church/events/my-registrations.md); w przeciwnym razie pobierz płatność osobiście. Aby dodawać uczestników, potrzebujesz uprawnienia Edycja rejestracji.
 
 :::info
 Zwroty nie są realizowane w B1. Jeśli musisz zwrócić pieniądze za anulowaną płatną rejestrację, wykonaj zwrot w panelu swojego dostawcy datków (np. Stripe).
@@ -94,12 +95,12 @@ Płatności przechodzą przez tę samą bramkę datków, której Twój kośció�
 Jeśli Twój kościół nie ma skonfigurowanego dostawcy datków, płatne wydarzenia nadal mogą przyjmować rejestracje. Krok płatności informuje osoby rejestrujące się, że płatność online nie jest dostępna i że mogą zapłacić bezpośrednio kościołowi, a przycisk **Zarejestruj i zapłać później** zapisuje rejestrację. Rejestracja zapisuje się jako **oczekująca** z pełną kwotą jako saldem do zapłaty i pojawia się na liście uczestników z ostrzeżeniem o saldzie. Pobierz pieniądze w taki sposób, w jaki Twój kościół zwykle to robi.
 
 :::info
-B1 nie ma sposobu, by oznaczyć płatność offline jako otrzymaną. Saldo do zapłaty pozostaje na liście uczestników i na karcie [Moich rejestracji](../../b1-church/events/my-registrations) osoby rejestrującej się także po pobraniu pieniędzy, dlatego prowadź własną ewidencję, kto zapłacił.
+B1 nie ma sposobu, by oznaczyć płatność offline jako otrzymaną. Saldo do zapłaty pozostaje na liście uczestników i na karcie [Moich rejestracji](../../b1-church/events/my-registrations.md) osoby rejestrującej się także po pobraniu pieniędzy, dlatego prowadź własną ewidencję, kto zapłacił.
 :::
 
 ## Powiązane artykuły
 
-- [Tworzenie kalendarzy](creating-calendars#enabling-event-registration) — włączanie rejestracji i podstawowych ustawień
+- [Tworzenie kalendarzy](./creating-calendars.md#enabling-event-registration) — włączanie rejestracji i podstawowych ustawień
 - [Konfiguracja datków online](../donations/online-giving-setup.md) — konfiguracja bramki płatniczej używanej przy płatnościach
-- [Rejestracja na wydarzenia](../../b1-church/events/registering) — co widzą członkowie podczas zapisu
-- [Moje rejestracje](../../b1-church/events/my-registrations) — jak członkowie płacą saldo i edytują rejestracje
+- [Rejestracja na wydarzenia](../../b1-church/events/registering.md) — co widzą członkowie podczas zapisu
+- [Moje rejestracje](../../b1-church/events/my-registrations.md) — jak członkowie płacą saldo i edytują rejestracje

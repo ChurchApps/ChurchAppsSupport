@@ -29,7 +29,7 @@ Ang provider row ng isang simbahan (`content.storageProviders`, pinamamahalaan s
 
 Tala sa saklaw: ang pagpili ng provider ay sumasaklaw sa daloy ng mga **file/resource** ng content (kung saan nakatira ang bulk na media). Ang mga upload ng gallery/logo/larawan ay nananatili sa default na provider -- naglilista sila ng mga key mula sa storage at bumubuo ng mga URL sa panig ng client, kaya hindi pa naaangkop ang per-church na rooting.
 
-Ang parehong seam ang nagpapagana rin sa [Bring-Your-Own Storage](./byos-storage): maaaring i-link ng mga simbahan ang Google Drive, Dropbox, OneDrive, o ang sarili nilang S3-compatible na bucket sa halip na plano ng MinistryStuff.
+Ang parehong seam ang nagpapagana rin sa [Bring-Your-Own Storage](./byos-storage.md): maaaring i-link ng mga simbahan ang Google Drive, Dropbox, OneDrive, o ang sarili nilang S3-compatible na bucket sa halip na plano ng MinistryStuff.
 
 ## Billing
 

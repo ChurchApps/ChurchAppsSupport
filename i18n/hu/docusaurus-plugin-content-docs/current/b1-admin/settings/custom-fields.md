@@ -1,5 +1,6 @@
 ---
 title: "Egyéni mezők"
+description: "Definiáljon egyéni mezőket a B1 Adminban további személyi adatokhoz, pl. háttérellenőrzés lejárata vagy pólóméret, majd keressen és szűrjön rájuk."
 ---
 
 # Egyéni mezők

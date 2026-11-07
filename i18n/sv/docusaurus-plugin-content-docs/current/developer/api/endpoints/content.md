@@ -1,5 +1,6 @@
 ---
 title: "Slutpunkter för Content"
+description: "Endpoint-referens för ChurchApps Content API: webbplatssidor, blogginlägg, omdirigeringar, predikningar, evenemang, filer, Bibelsökningar och sånger i B1 Admin."
 ---
 
 # Slutpunkter för Content
@@ -133,7 +134,7 @@ Bassökväg: `/content/pageHistory`
 
 Bassökväg: `/content/posts`
 
-Blogginlägg är fristående rader: `title`, `slug` (unik per kyrka), `excerpt`, `content` (markdown-brödtext), `authorId`, `photoUrl`, `publishDate`, `category` och `tags`. Ett inlägg publiceras när `publishDate` är satt och ligger i det förflutna. Läsanrop berikar varje inlägg med `authorName`, som slås upp från `authorId`. Se [Arkitektur för webbplatsbyggaren](../../architecture/website-builder#blog).
+Blogginlägg är fristående rader: `title`, `slug` (unik per kyrka), `excerpt`, `content` (markdown-brödtext), `authorId`, `photoUrl`, `publishDate`, `category` och `tags`. Ett inlägg publiceras när `publishDate` är satt och ligger i det förflutna. Läsanrop berikar varje inlägg med `authorName`, som slås upp från `authorId`. Se [Arkitektur för webbplatsbyggaren](../../architecture/website-builder.md#blog).
 
 | Metod | Sökväg | Autentisering | Behörighet | Beskrivning |
 |--------|------|------|------|------|
@@ -458,8 +459,8 @@ Bassökväg: `/content/support`
 
 ## Relaterade sidor
 
-- [Arkitektur för webbplatsbyggaren](../../architecture/website-builder) -- Hur sidor, sektioner, element, inlägg och omdirigeringar hänger ihop över apparna
-- [Slutpunkter för Membership](./membership) -- Personer, kyrkor, grupper, roller, behörigheter
-- [Slutpunkter för Attendance](./attendance) -- Spårning av gudstjänster och besök
-- [Autentisering och behörigheter](./authentication) -- Inloggningsflöde, JWT, behörighetsmodell
-- [Modulstruktur](../module-structure) -- Mönster för kodorganisation
+- [Arkitektur för webbplatsbyggaren](../../architecture/website-builder.md) -- Hur sidor, sektioner, element, inlägg och omdirigeringar hänger ihop över apparna
+- [Slutpunkter för Membership](./membership.md) -- Personer, kyrkor, grupper, roller, behörigheter
+- [Slutpunkter för Attendance](./attendance.md) -- Spårning av gudstjänster och besök
+- [Autentisering och behörigheter](./authentication.md) -- Inloggningsflöde, JWT, behörighetsmodell
+- [Modulstruktur](../module-structure.md) -- Mönster för kodorganisation

@@ -1,5 +1,6 @@
 ---
 title: "Kunci API"
+description: "Buat, atur cakupan, dan cabut kunci API B1 di B1 Admin untuk skrip server serta konektor Zapier, Make, atau Google Sheets, tanpa alur OAuth penuh."
 ---
 
 # Kunci API
@@ -104,7 +105,7 @@ Kunci yang dicabut langsung tidak berlaku — tidak ada masa tenggang.
 
 ## Perbedaannya dengan OAuth
 
-Kunci API cocok ketika **gereja Anda adalah satu-satunya yang menggunakan integrasi tersebut**. Untuk konektor yang perlu mengakses banyak gereja dengan persetujuan eksplisit dari masing-masing gereja — seperti aplikasi SaaS yang digunakan bersama di komunitas B1 — gunakan [OAuth dan Aplikasi Terhubung](./connected-apps) sebagai gantinya.
+Kunci API cocok ketika **gereja Anda adalah satu-satunya yang menggunakan integrasi tersebut**. Untuk konektor yang perlu mengakses banyak gereja dengan persetujuan eksplisit dari masing-masing gereja — seperti aplikasi SaaS yang digunakan bersama di komunitas B1 — gunakan [OAuth dan Aplikasi Terhubung](./connected-apps.md) sebagai gantinya.
 
 | | Kunci API | OAuth |
 |---|---|---|

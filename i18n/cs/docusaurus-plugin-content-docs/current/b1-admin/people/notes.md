@@ -1,5 +1,6 @@
 ---
 title: "Poznámky"
+description: "Projděte pastorační poznámky, navazující kroky a plánování od lidí, skupin, akcí a pracovních karet v jednom seznamu B1 Admin, od nejnovějších."
 ---
 
 # Poznámky

@@ -1,5 +1,6 @@
 ---
 title: "Klasės"
+description: "Nustatykite ir tvarkykite klases, kurios organizuoja bažnyčios mokymo tvarkaraštį Lessons.church: kambarius, amžiaus grupes ir savanoriams skirtus rodinius."
 ---
 
 # Klasės

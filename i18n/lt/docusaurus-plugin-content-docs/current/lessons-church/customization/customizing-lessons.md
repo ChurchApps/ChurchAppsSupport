@@ -1,5 +1,6 @@
 ---
 title: "Pamokų pritaikymas"
+description: "Šalinkite, slėpkite ar keiskite skyrių ir vaidmenų tvarką Lessons.church pamokoje ir pasirinkite, ar pakeitimai taikomi vienai klasei, ar visoms."
 ---
 
 # Pamokų pritaikymas

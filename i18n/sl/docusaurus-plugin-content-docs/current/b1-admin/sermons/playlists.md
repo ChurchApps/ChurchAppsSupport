@@ -1,5 +1,6 @@
 ---
 title: "Predvajalni seznami"
+description: "V B1 Admin razvrstite pridige v serije, da si obiskovalci vaše spletne strani B1.church lahko ogledajo in spremljajo vsako serijo po vrstnem redu."
 ---
 
 # Predvajalni seznami
@@ -39,10 +40,10 @@ Predvajalne sezname ustvarite najprej, preden dodajate pridige. Tako lahko vsako
 
 ## Dodajanje pridig v predvajalni seznam
 
-Ko [dodate ali uredite pridigo](managing-sermons), jo dodelite predvajalnemu seznamu s spustnim seznamom **Playlist**. Vse pridige, dodeljene istemu predvajalnemu seznamu, so združene in se na vaši spletni strani prikažejo v določenem vrstnem redu.
+Ko [dodate ali uredite pridigo](./managing-sermons.md), jo dodelite predvajalnemu seznamu s spustnim seznamom **Playlist**. Vse pridige, dodeljene istemu predvajalnemu seznamu, so združene in se na vaši spletni strani prikažejo v določenem vrstnem redu.
 
 :::info
-Pridige lahko predvajalnim seznamom dodelite tudi med [Množičnim uvozom](bulk-import). Ko uvažate z YouTube ali Vimea, v spustnem seznamu **Import Into Playlist** izberite predvajalni seznam, preden kliknete **Import**.
+Pridige lahko predvajalnim seznamom dodelite tudi med [Množičnim uvozom](./bulk-import.md). Ko uvažate z YouTube ali Vimea, v spustnem seznamu **Import Into Playlist** izberite predvajalni seznam, preden kliknete **Import**.
 :::
 
 ## Kako se predvajalni seznami prikazujejo na vaši spletni strani
@@ -55,5 +56,5 @@ Predvajalni seznami so na vaši spletni strani B1.church prikazani kot zbirke, p
 
 ## Naslednji koraki
 
-- [Upravljanje pridig](managing-sermons) -- dodajanje posameznih pridig v predvajalne sezname
-- [Množični uvoz](bulk-import) -- uvoz več pridig hkrati in njihova dodelitev predvajalnim seznamom
+- [Upravljanje pridig](./managing-sermons.md) -- dodajanje posameznih pridig v predvajalne sezname
+- [Množični uvoz](./bulk-import.md) -- uvoz več pridig hkrati in njihova dodelitev predvajalnim seznamom

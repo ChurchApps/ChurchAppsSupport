@@ -1,5 +1,6 @@
 ---
 title: "Sisällön selaaminen ja lataaminen"
+description: "Selaa yhdistetyn tarjoajan kirjastoa TV-kaukosäätimellä FreePlayssa ja lataa tai suoratoista opetusmateriaaleja ja videoita toistoa varten."
 ---
 
 # Sisällön selaaminen ja lataaminen
@@ -13,7 +14,7 @@ Kun olet yhdistänyt sisällön tarjoajan, voit selata sen kirjastoa, ladata tie
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Yhdistä vähintään yksi sisällön tarjoaja -- katso [Tarjoajien yhdistäminen](./connecting-providers)
+- Yhdistä vähintään yksi sisällön tarjoaja -- katso [Tarjoajien yhdistäminen](./connecting-providers.md)
 - Pidä television kaukosäädin valmiina navigointia varten
 
 </div>
@@ -38,7 +39,7 @@ Voit mennä niin syvälle kuin tarjoajan sisältörakenne sallii. Selain muistaa
 
 ## Lessons.church-sisällön selaaminen
 
-[Lessons.church](../../lessons-church/)-kirjasto on järjestetty samalla tavalla kuin sen verkkosivusto. Ylimmällä tasolla näet kaksi kansiota:
+[Lessons.church](../../lessons-church/index.md)-kirjasto on järjestetty samalla tavalla kuin sen verkkosivusto. Ylimmällä tasolla näet kaksi kansiota:
 
 - **Lessons** - Siirry **ohjelman**, sitten **opiskelun**, sitten **oppitunnin** kautta. Jokainen oppitunti listaa sitten omat **versionsa** eli oppitunnin versiot tietylle ikäryhmälle tai ympäristölle, kuten Esikoulu tai Ala-aste. Valitse versio avataksesi kyseisen oppitunnin latausnäytön
 - **Add-Ons** - Lisävideot ja -materiaalit ryhmiteltyinä kategorioittain
@@ -78,7 +79,7 @@ Käytä näitä ohjaimia toiston aikana:
 Kun poistut soittimesta, palaat nykyisen tarjoajan juuritason sisällön selaimeen.
 
 :::info
-Täydellinen luettelo kaikista soittimen ohjaimista on kohdassa [Sisällön toistaminen](./playing-content).
+Täydellinen luettelo kaikista soittimen ohjaimista on kohdassa [Sisällön toistaminen](./playing-content.md).
 :::
 
 ## Tarjoajien välillä vaihtaminen

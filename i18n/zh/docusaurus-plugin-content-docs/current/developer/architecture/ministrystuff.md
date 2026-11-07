@@ -29,7 +29,7 @@ B1Admin 发送短信 → Api `TextingController` → `@churchapps/texting` `getP
 
 范围注意：提供商选择涵盖内容**文件/资源**流（批量媒体位置的地方）。画廊/标志/照片上传保持在默认提供商 -- 它们列出来自存储的钥匙并在客户端构建 URL，所以每教会根未应用。
 
-相同接缝也为[自带存储](./byos-storage)提供动力：教会可以链接 Google Drive、Dropbox、OneDrive 或他们自己的 S3 兼容桶而不是 MinistryStuff 计划。
+相同接缝也为[自带存储](./byos-storage.md)提供动力：教会可以链接 Google Drive、Dropbox、OneDrive 或他们自己的 S3 兼容桶而不是 MinistryStuff 计划。
 
 ## 账单
 

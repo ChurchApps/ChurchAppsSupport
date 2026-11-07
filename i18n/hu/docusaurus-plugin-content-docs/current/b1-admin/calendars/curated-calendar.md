@@ -1,5 +1,6 @@
 ---
 title: "Összeállított naptár"
+description: "Gyülekezeti összesített naptár beállítása a B1 Admin-ban több csoport eseményeivel, megosztása weboldalon, ICS-feliratkozáson vagy letöltésen keresztül."
 ---
 
 # Összeállított naptár
@@ -15,7 +16,7 @@ Az összeállított naptár több csoport eseményeit egyetlen egységes naptár
 
 - Állítsa be azokat a [csoportokat](../groups/creating-groups.md), amelyek eseményeit szeretné felvenni
 - Győződjön meg róla, hogy a csoportvezetők hozzáadták eseményeiket a saját csoportjaikhoz
-- Ismerkedjen meg a [Naptárak létrehozása](creating-calendars) alapjaival
+- Ismerkedjen meg a [Naptárak létrehozása](./creating-calendars.md) alapjaival
 
 </div>
 
@@ -61,5 +62,5 @@ A weboldalán lévő összeállított naptárban és annak ICS-feliratkozásába
 
 ## Következő lépések
 
-- [Naptárak létrehozása](creating-calendars) -- Ismerje meg a naptárkészítés alapjait
-- [Naptárak áttekintése](./) -- Vissza a naptárak áttekintéséhez
+- [Naptárak létrehozása](./creating-calendars.md) -- Ismerje meg a naptárkészítés alapjait
+- [Naptárak áttekintése](./index.md) -- Vissza a naptárak áttekintéséhez

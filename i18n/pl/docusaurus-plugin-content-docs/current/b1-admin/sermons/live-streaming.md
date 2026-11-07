@@ -1,5 +1,7 @@
 ---
-title: "Transmisja na żywo"
+title: "Godziny transmisji na żywo i konfiguracja w B1 Admin"
+sidebar_label: "Transmisja na żywo"
+description: "Planuj cotygodniowe lub jednorazowe transmisje na żywo, ustaw czat i wczesny start wideo, połącz kanał YouTube i rozwiązuj problemy z osadzaniem w B1 Admin."
 ---
 
 # Transmisja na żywo
@@ -19,7 +21,7 @@ Strona Godziny transmisji na żywo pozwala skonfigurować harmonogram transmisji
 
 - Potrzebujesz uprawnienia **contentApi.streamingServices.edit**. Jeśli nie masz dostępu, zobacz [Role i uprawnienia](../settings/roles-permissions.md).
 - Przygotuj identyfikator swojego kanału YouTube, jeśli planujesz korzystać z automatycznej transmisji na żywo
-- Dodaj co najmniej jedno [kazanie](managing-sermons) lub stały adres URL transmisji na żywo, który będzie źródłem transmisji
+- Dodaj co najmniej jedno [kazanie](./managing-sermons.md) lub stały adres URL transmisji na żywo, który będzie źródłem transmisji
 
 </div>
 
@@ -80,13 +82,13 @@ Aby znaleźć identyfikator kanału YouTube, przejdź do zaawansowanych ustawie�
 
 ## Dostosowywanie kolorów i logo
 
-Strona transmisji na żywo korzysta z ustawień [wyglądu](../website/appearance) Twojej strony internetowej:
+Strona transmisji na żywo korzysta z ustawień [wyglądu](../website/appearance.md) Twojej strony internetowej:
 
 - **Jasny kolor akcentu** z ciemnym tekstem jest używany w nagłówku.
 - **Ciemny kolor akcentu** z jasnym tekstem jest używany w panelu bocznym.
 - Twoje **logo na jasnym tle** pojawia się na stronie transmisji. Użyj obrazu z przezroczystym tłem i proporcją 4:1.
 
-Aby zmienić te ustawienia, przejdź do **Strona internetowa**, a następnie **Wygląd** i zaktualizuj ustawienia [palety kolorów](../website/appearance#color-palette) oraz [logo](../website/appearance#logo-and-branding).
+Aby zmienić te ustawienia, przejdź do **Strona internetowa**, a następnie **Wygląd** i zaktualizuj ustawienia [palety kolorów](../website/appearance.md#color-palette) oraz [logo](../website/appearance.md#logo-and-branding).
 
 ## Dodawanie prowadzących transmisję
 
@@ -133,5 +135,5 @@ Automatyczne osadzenie transmisji z kanału YouTube może być zablokowane, gdy 
 
 ## Następne kroki
 
-- [Zarządzanie kazaniami](managing-sermons) -- Dodawanie kazań do biblioteki
-- [Playlisty](playlists) -- Organizowanie kazań w serie
+- [Zarządzanie kazaniami](./managing-sermons.md) -- Dodawanie kazań do biblioteki
+- [Playlisty](./playlists.md) -- Organizowanie kazań w serie

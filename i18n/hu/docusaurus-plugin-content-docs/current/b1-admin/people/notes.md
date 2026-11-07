@@ -1,5 +1,6 @@
 ---
 title: "Jegyzetek"
+description: "Lelkigondozási jegyzetek, nyomon követések és tervek áttekintése egy B1 Admin listában: személyek, csoportok, események és kártyák, legújabb elöl."
 ---
 
 # Jegyzetek

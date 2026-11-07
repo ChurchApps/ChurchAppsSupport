@@ -1,5 +1,6 @@
 ---
 title: "通知とリマインダーのアーキテクチャ"
+description: "B1 Admin API が通知、定期的なリマインダー、教会のメール上限、SMS の配信停止を、1 つの配信経路と設定の確認を通じてどのように処理するかを説明します。"
 ---
 
 # 通知とリマインダーのアーキテクチャ
@@ -185,6 +186,6 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 
 ## 関連ページ
 
-- [リアルタイムアーキテクチャ](../realtime)：アプリ内配信の段階が利用している WebSocket のプロトコルとクライアント側の基本機能（`SocketHelper`、`SubscriptionManager`、`ConversationStore`）
-- [Web プッシュ通知](../web-push)：VAPID の設定と、プッシュのエスカレーション段階で使われるブラウザーの Push API の経路
-- [メッセージング エンドポイント](../api/endpoints/messaging)：メッセージ、会話、つながり、通知・リマインダーのルートに関する REST API の全体
+- [リアルタイムアーキテクチャ](../realtime.md)：アプリ内配信の段階が利用している WebSocket のプロトコルとクライアント側の基本機能（`SocketHelper`、`SubscriptionManager`、`ConversationStore`）
+- [Web プッシュ通知](../web-push.md)：VAPID の設定と、プッシュのエスカレーション段階で使われるブラウザーの Push API の経路
+- [メッセージング エンドポイント](../api/endpoints/messaging.md)：メッセージ、会話、つながり、通知・リマインダーのルートに関する REST API の全体

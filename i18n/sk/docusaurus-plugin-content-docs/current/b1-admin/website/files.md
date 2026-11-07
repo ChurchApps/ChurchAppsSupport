@@ -1,5 +1,6 @@
 ---
 title: "Súbory"
+description: "Nahrávajte, prehliadajte a spravujte obrázky a dokumenty pre webstránku zboru v B1 Admin vrátane prepojenia externého úložiska pre viac miesta."
 ---
 
 # Súbory
@@ -13,7 +14,7 @@ Stránka Súbory je centrálnym úložiskom všetkých médií a dokumentov, kto
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- Dokončite [počiatočné nastavenie](initial-setup) pre váš web
+- Dokončite [počiatočné nastavenie](./initial-setup.md) pre váš web
 - Pred nahrávaním optimalizujte obrázky, aby sa stránky načítavali rýchlejšie
 - Pripravte si súbory v bežných webových formátoch (PNG, JPG, PDF a pod.)
 
@@ -42,7 +43,7 @@ Tabuľka súborov zobrazuje všetky nahrané súbory s ich **Name** a **Size**. 
 3. Súbory, ktoré sem nahráte, sú dostupné na použitie na všetkých stránkach webu a v obsahových blokoch.
 
 :::info
-Pri tvorbe stránok v [Správe stránok](managing-pages) môžete na ľubovoľný súbor nahraný sem odkázať pomocou jeho URL adresy. Vďaka tomu zostávajú všetky vaše médiá organizované na jednom centrálnom mieste.
+Pri tvorbe stránok v [Správe stránok](./managing-pages.md) môžete na ľubovoľný súbor nahraný sem odkázať pomocou jeho URL adresy. Vďaka tomu zostávajú všetky vaše médiá organizované na jednom centrálnom mieste.
 :::
 
 ## Mazanie súborov
@@ -57,5 +58,5 @@ Vymazané súbory nemožno obnoviť. Pred odstránením súboru dvakrát skontro
 
 ## Ďalšie kroky
 
-- [Správa stránok](managing-pages) -- Pridajte nahrané súbory na stránky webu
-- [Vzhľad](appearance) -- Prispôsobte vizuálny motív vášho webu
+- [Správa stránok](./managing-pages.md) -- Pridajte nahrané súbory na stránky webu
+- [Vzhľad](./appearance.md) -- Prispôsobte vizuálny motív vášho webu

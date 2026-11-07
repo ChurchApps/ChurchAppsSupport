@@ -1,5 +1,6 @@
 ---
 title: "Penyimpanan Milik Sendiri"
+description: "Hubungkan Google Drive, Dropbox, OneDrive, atau bucket kompatibel S3 Anda sendiri di B1 Admin agar unggahan berkas gereja melewati batas platform 100MB."
 ---
 
 # Penyimpanan Milik Sendiri (BYOS)
@@ -8,7 +9,7 @@ Gereja mendapatkan sekitar 100MB penyimpanan file yang dihosting secara gratis (
 
 ## Titik integrasi penyedia
 
-BYOS menggunakan kembali titik integrasi penyimpanan yang dibangun untuk [MinistryStuff](./ministrystuff): `IStorageProvider` (`Packages/apihelper`) yang di-resolve per gereja oleh `StorageResolver` dari tabel `content.storageProviders`. Berbeda dengan penyedia singleton `churchapps`/`ministrystuff`, penyedia BYOS menyimpan kredensial per gereja, sehingga `StorageResolver.forChurch` membuat instance per permintaan dari baris milik gereja. Implementasinya berada di samping resolver di `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, serta `ByosAuth` (pertukaran token OAuth + penyegaran single-flight. Dropbox memutar refresh token, sehingga penyegaran diduplikasi dengan cara yang sama seperti yang dilakukan `ProviderProxyController`).
+BYOS menggunakan kembali titik integrasi penyimpanan yang dibangun untuk [MinistryStuff](./ministrystuff.md): `IStorageProvider` (`Packages/apihelper`) yang di-resolve per gereja oleh `StorageResolver` dari tabel `content.storageProviders`. Berbeda dengan penyedia singleton `churchapps`/`ministrystuff`, penyedia BYOS menyimpan kredensial per gereja, sehingga `StorageResolver.forChurch` membuat instance per permintaan dari baris milik gereja. Implementasinya berada di samping resolver di `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, serta `ByosAuth` (pertukaran token OAuth + penyegaran single-flight. Dropbox memutar refresh token, sehingga penyegaran diduplikasi dengan cara yang sama seperti yang dilakukan `ProviderProxyController`).
 
 `storageProviders` menyimpan kredensial: `accessToken`/`refreshToken`/`tokenExpiresAt` (terenkripsi, trio OAuth) atau `apiKey`/`apiSecret` + JSON `settings` (`{endpoint, region, bucket, publicBase}`, S3). Token tidak pernah sampai ke klien. `GET /content/storage/providers` menyamarkan rahasia dan mengembalikan boolean `connected`.
 

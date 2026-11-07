@@ -1,5 +1,7 @@
 ---
-title: "Gudstjänstordning"
+title: "Gudstjänstordning i B1 Admin"
+sidebar_label: "Gudstjänstordning"
+description: "Ställ in en gudstjänstordning i B1 Admin för en lovsångsplan: lägg till sånger, lektioner och egna objekt, ordna dem i avsnitt och skriv ut körschemat."
 ---
 
 # Gudstjänstordning

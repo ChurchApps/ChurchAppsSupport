@@ -1,5 +1,6 @@
 ---
 title: "Rapoarte de prezență"
+description: "Rapoartele de prezență din B1 Admin (Tendința prezenței, Prezența pe grupe, Prezența zilnică pe grupe): ce arată fiecare și cum le rulezi și exporți."
 ---
 
 # Rapoarte de prezență

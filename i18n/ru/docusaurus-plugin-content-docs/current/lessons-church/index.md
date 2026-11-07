@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "Просмотр, планирование и показ бесплатных уроков для разных возрастов от 12+ поставщиков в Lessons.church: классы, локации, интеграции с FreePlay и B1."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church работает с другими инструментами Chu
 
 ## Разделы документации
 
-- [Getting Started](./getting-started/) -- Создание вашей учетной записи и изучение основ
-- [Browsing Content](./browsing/) -- Поиск программ, исследований и уроков
-- [Classrooms](./classrooms/) -- Установка классных комнат и расписание уроков
-- [Customization](./customization/) -- Адаптация уроков к вашей церкви
-- [Presenting](./presenting/) -- Проведение уроков в классе с использованием режима презентатора
-- [Administration](./admin/) -- Управление программами, исследованиями и уроками как администратор
+- [Getting Started](./getting-started/index.md) -- Создание вашей учетной записи и изучение основ
+- [Browsing Content](./browsing/index.md) -- Поиск программ, исследований и уроков
+- [Classrooms](./classrooms/index.md) -- Установка классных комнат и расписание уроков
+- [Customization](./customization/index.md) -- Адаптация уроков к вашей церкви
+- [Presenting](./presenting/index.md) -- Проведение уроков в классе с использованием режима презентатора
+- [Administration](./admin/index.md) -- Управление программами, исследованиями и уроками как администратор
 - [Statement of Faith](./statement-of-faith.md) -- Основные убеждения и рекомендации учебного плана
 
 Для поддержки напишите по адресу [support@churchapps.org](mailto:support@churchapps.org).

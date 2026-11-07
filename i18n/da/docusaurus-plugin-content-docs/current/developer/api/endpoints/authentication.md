@@ -1,5 +1,6 @@
 ---
 title: "Godkendelse & Tilladelser"
+description: "Reference for ChurchApps API's JWT-login, tofaktorlogin, OAuth 2.0-flows og tilladelsesmodel for udviklere, der bygger integrationer."
 ---
 
 # Godkendelse & Tilladelser
@@ -99,5 +100,5 @@ Tilladelser er organiseret efter modul og tildelt brugere gennem roller. Hver ti
 
 ## Relaterede sider
 
-- [Modul struktur](../module-structure) — Hvordan kontrollere, lagere og modeller er organiseret
-- [Lokal opsætning](../local-setup) — Kør API'en lokalt til udvikling
+- [Modul struktur](../module-structure.md) — Hvordan kontrollere, lagere og modeller er organiseret
+- [Lokal opsætning](../local-setup.md) — Kør API'en lokalt til udvikling

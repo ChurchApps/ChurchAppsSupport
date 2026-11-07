@@ -1,5 +1,7 @@
 ---
-title: "Foglalkozások ütemezése"
+title: "Osztályteremi leckék ütemezése a portálon"
+sidebar_label: "Foglalkozások ütemezése"
+description: "Lessons.church-leckék ütemezése osztálytermi naptárban a B1 Admin portálon: program, tanulmány, lecke és korspecifikus helyszín minden dátumhoz."
 ---
 
 # Foglalkozások ütemezése

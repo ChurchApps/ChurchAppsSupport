@@ -1,5 +1,6 @@
 ---
 title: "Doing 엔드포인트"
+description: "예배 계획, 봉사 배정, 작업, 자동화를 담당하는 B1 Admin의 Doing API 엔드포인트 참조입니다. 경로, 인증, 권한을 설명합니다."
 ---
 
 # Doing 엔드포인트
@@ -278,6 +279,6 @@ CRUD 기본 클래스를 확장합니다(GET `/`, GET `/:id`, POST `/`, DELETE `
 
 ## 관련 문서
 
-- [Membership 엔드포인트](./membership) — 교인, 그룹, 역할, 권한
-- [Attendance 엔드포인트](./attendance) — 예배 및 방문 기록
-- [모듈 구조](../module-structure) — 코드 구성 패턴
+- [Membership 엔드포인트](./membership.md) — 교인, 그룹, 역할, 권한
+- [Attendance 엔드포인트](./attendance.md) — 예배 및 방문 기록
+- [모듈 구조](../module-structure.md) — 코드 구성 패턴

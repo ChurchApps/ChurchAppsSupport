@@ -1,5 +1,6 @@
 ---
 title: "Messaging-Endpunkte"
+description: "Referenz der ChurchApps-Messaging-API: Konversationen, Zugriffsregeln für Notizen, Textnachrichten, E-Mail-Vorlagen, Benachrichtigungen und Geräte."
 ---
 
 # Messaging-Endpunkte
@@ -190,7 +191,7 @@ Basispfad: `/messaging/notificationpreferences`
 
 Basispfad: `/messaging/connections`
 
-Verwaltet WebSocket-/Echtzeitverbindungen für Chat, Gruppenunterhaltungen, private Nachrichten und Live-Streaming. Das durchgängige Protokoll ist unter [Echtzeit-Architektur](../../realtime) beschrieben.
+Verwaltet WebSocket-/Echtzeitverbindungen für Chat, Gruppenunterhaltungen, private Nachrichten und Live-Streaming. Das durchgängige Protokoll ist unter [Echtzeit-Architektur](../../realtime.md) beschrieben.
 
 | Methode | Pfad | Authentifizierung | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
@@ -367,9 +368,9 @@ Verfolgt den Zustellstatus gesendeter Nachrichten (SMS, Push-Benachrichtigungen,
 
 ## Verwandte Seiten
 
-- [Echtzeit-Architektur](../../realtime) -- WebSocket-Protokoll, Raum-Abonnements und das einheitliche Zustellungs-Framework
-- [Web-Push-Benachrichtigungen](../../web-push) -- Registrierung und Zustellung von Browser-Push
-- [Membership-Endpunkte](./membership) -- Personen, Gruppen, Rollen und zentrale Identität
-- [Anwesenheits-Endpunkte](./attendance) -- Erfassung von Gottesdiensten und Besuchen
-- [Authentifizierung und Berechtigungen](./authentication) -- Anmeldablauf, JWT, OAuth, Berechtigungsmodell
-- [Modulstruktur](../module-structure) -- Muster zur Code-Organisation
+- [Echtzeit-Architektur](../../realtime.md) -- WebSocket-Protokoll, Raum-Abonnements und das einheitliche Zustellungs-Framework
+- [Web-Push-Benachrichtigungen](../../web-push.md) -- Registrierung und Zustellung von Browser-Push
+- [Membership-Endpunkte](./membership.md) -- Personen, Gruppen, Rollen und zentrale Identität
+- [Anwesenheits-Endpunkte](./attendance.md) -- Erfassung von Gottesdiensten und Besuchen
+- [Authentifizierung und Berechtigungen](./authentication.md) -- Anmeldablauf, JWT, OAuth, Berechtigungsmodell
+- [Modulstruktur](../module-structure.md) -- Muster zur Code-Organisation

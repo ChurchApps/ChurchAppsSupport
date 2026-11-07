@@ -1,5 +1,6 @@
 ---
 title: "Nachrichtenversand"
+description: "Starten, lesen, bearbeiten und löschen Sie private Einzelgespräche mit Gemeindemitgliedern in B1 Mobile. Personen finden Sie im Mitgliederverzeichnis."
 ---
 
 # Nachrichtenversand
@@ -13,7 +14,7 @@ B1 Mobile beinhaltet privates Messaging, damit Sie Eins-zu-Eins-Gespräche direk
 <div class="prereqs">
 <h4>Bevor Sie Beginnen</h4>
 
-- [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich](../getting-started/logging-in) bei Ihrem Konto an
+- [Installieren Sie B1 Mobile](../getting-started/installing.md) und [melden Sie sich](../getting-started/logging-in.md) bei Ihrem Konto an
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile beinhaltet privates Messaging, damit Sie Eins-zu-Eins-Gespräche direk
 ## Starten eines Neuen Gesprächs
 
 1. Tippen Sie auf dem Messaging-Bildschirm auf die Option, um ein neues Gespräch zu starten.
-2. Verwenden Sie das Suchfeld, um das Kirchenmitglied zu finden, das Sie kontaktieren möchten. Sie können auch Mitglieder durch das [Member Directory](./member-directory) finden.
+2. Verwenden Sie das Suchfeld, um das Kirchenmitglied zu finden, das Sie kontaktieren möchten. Sie können auch Mitglieder durch das [Member Directory](./member-directory.md) finden.
 3. Wählen Sie das Mitglied aus den Suchergebnissen aus.
 4. Geben Sie Ihre Nachricht ein und tippen Sie auf **Send**.
 
@@ -52,11 +53,11 @@ Verwenden Sie Messaging, um mit Mitfreiwilligen zu koordinieren, sich bei jemand
 :::
 
 :::info
-Aktivieren Sie [Push-Benachrichtigungen](./notifications), um benachrichtigt zu werden, wenn jemand Ihnen eine neue Nachricht sendet, auch wenn die App nicht geöffnet ist.
+Aktivieren Sie [Push-Benachrichtigungen](./notifications.md), um benachrichtigt zu werden, wenn jemand Ihnen eine neue Nachricht sendet, auch wenn die App nicht geöffnet ist.
 :::
 
 ## Verwandte Artikel
 
-- [Member Directory](./member-directory) – Finden Sie Mitglieder zum Kontaktieren
-- [Notifications](./notifications) – Erhalten Sie Benachrichtigungen über neue Nachrichten
-- [Groups](../groups/) – Partizipieren Sie an Gruppengesprächen
+- [Member Directory](./member-directory.md) – Finden Sie Mitglieder zum Kontaktieren
+- [Notifications](./notifications.md) – Erhalten Sie Benachrichtigungen über neue Nachrichten
+- [Groups](../groups/index.md) – Partizipieren Sie an Gruppengesprächen

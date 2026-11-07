@@ -1,5 +1,7 @@
 ---
-title: "Live Streaming"
+title: "Se livestreams i B1 Mobile-appen"
+sidebar_label: "Live Streaming"
+description: "Se din kirkes live-udsendelse i B1 Mobile-appen, find Stream-skærmen via menuen eller nedtællingen til prædikener, og se hvornår gudstjenester starter."
 ---
 
 # Live Streaming
@@ -13,14 +15,14 @@ B1 Mobile lader dig se din kirkes live stream direkte fra din telefon. Når en g
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [log ind](../getting-started/logging-in) på din konto
+- [Installer B1 Mobile](../getting-started/installing.md) og [log ind](../getting-started/logging-in.md) på din konto
 - Din kirke skal have en streamingsplan konfigureret
 
 </div>
 
 ## Se en live stream
 
-1. Åbn skærmen **Stream** fra skuffelementet, eller tryk på nedtællingen på skærmen [Prædikener](./sermons) når en live stream er ved at begynde.
+1. Åbn skærmen **Stream** fra skuffelementet, eller tryk på nedtællingen på skærmen [Prædikener](./sermons.md) når en live stream er ved at begynde.
 2. Hvis en gudstjeneste i øjeblikket er live, indlæses videoafspilleren automatisk, og broadcast begynder at afspille.
 3. Se streamen direkte i appen.
 
@@ -31,7 +33,7 @@ Når der ikke er en aktiv live stream, kan skærmen vise offline-indhold eller o
 Der er to måder at få adgang til live streamen:
 
 - **Skuffelementet** -- Åbn skuffelementet, og tryk på **Stream** for at gå direkte til live stream-skærmen.
-- **Skærmen Prædikener** -- Når en live stream er planlagt inden for de næste 24 timer, vises en nedtælling på skærmen [Prædikener](./sermons). Når broadcast begynder, kan du navigere til streamen derfra.
+- **Skærmen Prædikener** -- Når en live stream er planlagt inden for de næste 24 timer, vises en nedtælling på skærmen [Prædikener](./sermons.md). Når broadcast begynder, kan du navigere til streamen derfra.
 
 ## Før og efter gudstjenesten
 
@@ -46,5 +48,5 @@ Hvis stream-skærmen viser en nedtælling eller offline besked, er næste planla
 Live stream-skærmen er tilgængelig, når din kirke har konfigureret en streamingsplan. Hvis du ikke ser en **Stream** mulighed i din apps skuffelementet, har din kirke muligvis ikke live streaming opsat. Kontakt din kirkes administrator for detaljer.
 
 :::tip
-Tjek skærmen [Prædikener](./sermons) for en nedtællings timer, der viser hvornår det næste live broadcast vil begynde.
+Tjek skærmen [Prædikener](./sermons.md) for en nedtællings timer, der viser hvornår det næste live broadcast vil begynde.
 :::

@@ -1,5 +1,6 @@
 ---
 title: "Guia: Lance Seu Site da Igreja"
+description: "Configure o site da igreja no B1 Admin: página inicial, cores e logo, páginas principais, domínio próprio e formulários de doação."
 ---
 
 # Lance Seu Site da Igreja

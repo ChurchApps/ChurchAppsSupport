@@ -1,5 +1,6 @@
 ---
 title: "기부금 요약"
+description: "B1 Admin에서 Donation Summary 보고서를 실행하여 원하는 기간 동안의 총 헌금액, 고유 헌금자 수, 헌금 항목별 금액을 확인하세요."
 ---
 
 # 기부금 요약

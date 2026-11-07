@@ -1,5 +1,6 @@
 ---
 title: "Prilagođavanje"
+description: "Jak ukrywać sekcje, role lub akcje w lekcji Lessons.church i zmieniać kolejność treści, dla jednej sali lub wszystkich sal w kościele."
 ---
 
 # Prilagođavanje

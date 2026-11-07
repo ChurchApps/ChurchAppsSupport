@@ -1,5 +1,7 @@
 ---
-title: "Počiatočné nastavenie"
+title: "Počiatočné nastavenie cirkvi v B1 Admin"
+sidebar_label: "Počiatočné nastavenie"
+description: "Prechod prvotným nastavením novej cirkvi v B1 Admin: údaje o cirkvi, vizuálna identita, roly a odporúčané poradie nastavenia ľudí, skupín, dochádzky a darov."
 ---
 
 # Počiatočné nastavenie

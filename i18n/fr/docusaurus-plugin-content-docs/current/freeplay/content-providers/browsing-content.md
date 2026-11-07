@@ -1,5 +1,6 @@
 ---
 title: "Parcourir et télécharger du contenu"
+description: "Parcourir la bibliothèque d'un fournisseur connecté avec la télécommande de FreePlay, puis télécharger ou diffuser leçons et vidéos pour la lecture."
 ---
 
 # Parcourir et télécharger du contenu
@@ -13,7 +14,7 @@ Une fois connecté à un fournisseur de contenu, vous pouvez parcourir sa biblio
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Connectez-vous à au moins un fournisseur de contenu -- voir [Connexion aux fournisseurs](./connecting-providers)
+- Connectez-vous à au moins un fournisseur de contenu -- voir [Connexion aux fournisseurs](./connecting-providers.md)
 - Ayez votre télécommande de téléviseur à portée de main pour la navigation
 
 </div>
@@ -38,7 +39,7 @@ Vous pouvez descendre aussi profondément que la structure de contenu du fournis
 
 ## Parcourir Lessons.church
 
-La bibliothèque [Lessons.church](../../lessons-church/) est organisée comme son site web. Au niveau supérieur, vous verrez deux dossiers :
+La bibliothèque [Lessons.church](../../lessons-church/index.md) est organisée comme son site web. Au niveau supérieur, vous verrez deux dossiers :
 
 - **Lessons** - Descendez par **programme**, puis **étude**, puis **leçon**. Chaque leçon liste ensuite ses **lieux**, c'est-à-dire les versions de la leçon pour une tranche d'âge ou un cadre particulier, comme Préscolaire ou Élémentaire. Sélectionnez un lieu pour ouvrir l'écran de téléchargement de cette version de la leçon
 - **Compléments** - Vidéos et ressources supplémentaires, regroupées par catégorie
@@ -78,7 +79,7 @@ Utilisez ces commandes pendant la lecture :
 Lorsque vous quittez le lecteur, vous revenez au navigateur de contenu, au niveau racine du fournisseur actuel.
 
 :::info
-Pour une référence complète de toutes les commandes du lecteur, voir [Lire le contenu](./playing-content).
+Pour une référence complète de toutes les commandes du lecteur, voir [Lire le contenu](./playing-content.md).
 :::
 
 ## Changer de fournisseur

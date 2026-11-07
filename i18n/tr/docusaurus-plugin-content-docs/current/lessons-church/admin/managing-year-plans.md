@@ -1,5 +1,6 @@
 ---
 title: "Yıllık Planları Yönetme"
+description: "Lessons.church'te haftalık derslerden oluşan bir yıl planı oluşturun, haftaları Paskalya veya Noel'e sabitleyin ve kiliselerin B1 Admin'de uygulaması için yayımlayın."
 ---
 
 # Yıllık Planları Yönetme

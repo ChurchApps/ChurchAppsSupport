@@ -1,5 +1,6 @@
 ---
 title: "Įrašymas ir tendencija"
+description: "Įveskite bendrą dalyvių skaičių pamaldoms ar grupei B1 Admin be vardinio sąrašo ir stebėkite savaitines sumas ataskaitoje „Dalyvių skaičiaus tendencijos“."
 ---
 
 # Įrašymas ir tendencija

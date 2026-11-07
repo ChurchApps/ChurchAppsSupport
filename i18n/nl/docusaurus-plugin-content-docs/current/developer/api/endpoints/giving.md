@@ -1,5 +1,6 @@
 ---
 title: "Giving Endpoints"
+description: "Referentie voor de Giving API van ChurchApps: donaties, batches, gateways, abonnementen en betaalmethoden, met auth- en rechtenregels."
 ---
 
 # Giving Endpoints
@@ -275,6 +276,6 @@ Breidt `GenericCrudController` uit met CRUD-routes: `getById`, `getAll`, `post`,
 
 ## Gerelateerde Pagina's
 
-- [Membership Endpoints](./membership) — Personen, kerken, groepen, rollen en machtigingen
-- [Authentication & Permissions](./authentication) — Loginflow, JWT, OAuth, machtigingsmodel
-- [Module Structure](../module-structure) — Codeorganisatiepatronen
+- [Membership Endpoints](./membership.md) — Personen, kerken, groepen, rollen en machtigingen
+- [Authentication & Permissions](./authentication.md) — Loginflow, JWT, OAuth, machtigingsmodel
+- [Module Structure](../module-structure.md) — Codeorganisatiepatronen

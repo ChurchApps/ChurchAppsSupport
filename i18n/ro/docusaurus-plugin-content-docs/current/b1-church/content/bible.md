@@ -1,5 +1,7 @@
 ---
-title: "Biblia"
+title: "Citirea Bibliei pe B1.church"
+sidebar_label: "Biblia"
+description: "Citește Scriptura în cititorul Biblie de pe B1.church, cu controale pentru carte, capitol și traducere și o pagină Biblie pentru lectura zilnică."
 ---
 
 # Biblia

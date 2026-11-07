@@ -29,7 +29,7 @@ Baris provider gereja (`content.storageProviders`, dikelola di B1Admin → Setti
 
 Catatan cakupan: pemilihan provider hanya mencakup alur **file/sumber daya** konten, yaitu tempat media berukuran besar disimpan. Unggahan galeri, logo, dan foto tetap menggunakan provider default. Fitur tersebut mendaftar kunci dari penyimpanan dan membangun URL di sisi klien, sehingga pengakaran per gereja belum berlaku.
 
-Seam yang sama juga mendukung [Penyimpanan Bring-Your-Own](./byos-storage): gereja dapat menautkan Google Drive, Dropbox, OneDrive, atau bucket S3-compatible milik mereka sendiri, alih-alih menggunakan paket MinistryStuff.
+Seam yang sama juga mendukung [Penyimpanan Bring-Your-Own](./byos-storage.md): gereja dapat menautkan Google Drive, Dropbox, OneDrive, atau bucket S3-compatible milik mereka sendiri, alih-alih menggunakan paket MinistryStuff.
 
 ## Penagihan
 

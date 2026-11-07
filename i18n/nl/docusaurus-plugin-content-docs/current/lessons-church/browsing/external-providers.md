@@ -1,5 +1,6 @@
 ---
 title: "External Providers"
+description: "Lees hoe externe curriculumproviders hun content aan Lessons.church toevoegen via het Open Lesson Format, en hoe je er een vanuit het portaal koppelt."
 ---
 
 # External Providers

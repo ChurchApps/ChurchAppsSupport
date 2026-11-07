@@ -1,5 +1,6 @@
 ---
 title: "Membership-päätepisteet"
+description: "Päätepisteiden viiteopas ChurchApps Membership API:lle: henkilöt, kotitaloudet, ryhmät, roolit, lomakkeet ja asetukset sekä todennus- ja käyttöoikeussäännöt."
 ---
 
 # Membership-päätepisteet
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Perusosoite: `/membership/users`
 
-Katso kirjautumista, rekisteröitymistä ja salasanojen hallintaa koskevat päätepisteet kohdasta [Todennus ja käyttöoikeudet](./authentication).
+Katso kirjautumista, rekisteröitymistä ja salasanojen hallintaa koskevat päätepisteet kohdasta [Todennus ja käyttöoikeudet](./authentication.md).
 
 | Menetelmä | Polku | Todennus | Oikeus | Kuvaus |
 |--------|------|------|------|------|
@@ -342,6 +343,6 @@ Perusosoite: `/membership/clientErrors`
 
 ## Aiheeseen liittyvät sivut
 
-- [Todennus ja käyttöoikeudet](./authentication): kirjautumisvirta, JWT, OAuth ja käyttöoikeusmalli
-- [Läsnäolon päätepisteet](./attendance): palvelu- ja vierailuseuranta
-- [Moduulin rakenne](../module-structure): koodin järjestämisen mallit
+- [Todennus ja käyttöoikeudet](./authentication.md): kirjautumisvirta, JWT, OAuth ja käyttöoikeusmalli
+- [Läsnäolon päätepisteet](./attendance.md): palvelu- ja vierailuseuranta
+- [Moduulin rakenne](../module-structure.md): koodin järjestämisen mallit

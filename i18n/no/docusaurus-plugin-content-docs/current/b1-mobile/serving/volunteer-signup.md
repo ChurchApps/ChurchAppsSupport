@@ -1,5 +1,7 @@
 ---
-title: "Frivillig påmelding"
+title: "Frivillig påmelding i B1 Mobile-appen"
+sidebar_label: "Frivillig påmelding"
+description: "Finn ledige frivillige posisjoner for kommende gudstjenester, og meld deg på eller fjern påmeldingen i B1 Mobile. Dekker frister og plassgrenser."
 ---
 
 # Frivillig påmelding
@@ -13,7 +15,7 @@ Bla gjennom ledige frivillige posisjoner og meld deg på kommende gudstjenester 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- [Installer B1 Mobile](../getting-started/installing.md) og [logg inn](../getting-started/logging-in.md) på kontoen din
 - Kirkeadministratoren din må ha aktivert selvpåmelding på minst én posisjon
 
 </div>
@@ -60,5 +62,5 @@ Aktiver [push-varsler](../community/notifications.md) for å holde deg oppdatert
 
 ## Relaterte artikler
 
-- [Vise planer](./viewing-plans) – Se planene du er satt opp på og gudstjenesteordenene
+- [Vise planer](./viewing-plans.md) – Se planene du er satt opp på og gudstjenesteordenene
 - [Varsler](../community/notifications.md) – Hold deg oppdatert om tjenesteoppdrag

@@ -1,5 +1,6 @@
 ---
 title: "メンバーシップのエンドポイント"
+description: "ChurchApps Membership API のエンドポイントリファレンスです。人物、世帯、グループ、役割、フォーム、設定を扱い、認証と権限のルールも記載しています。"
 ---
 
 # メンバーシップのエンドポイント
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 ベースパス: `/membership/users`
 
-ログイン、登録、パスワード管理のエンドポイントについては、[認証と権限](./authentication)を参照してください。
+ログイン、登録、パスワード管理のエンドポイントについては、[認証と権限](./authentication.md)を参照してください。
 
 | メソッド | パス | 認証 | 権限 | 説明 |
 |--------|------|------|------------|-------------|
@@ -342,6 +343,6 @@ Authorization: Bearer <token>
 
 ## 関連ページ
 
-- [認証と権限](./authentication): ログインの流れ、JWT、OAuth、権限モデル
-- [出席のエンドポイント](./attendance): 礼拝と訪問の記録
-- [モジュールの構造](../module-structure): コードの構成パターン
+- [認証と権限](./authentication.md): ログインの流れ、JWT、OAuth、権限モデル
+- [出席のエンドポイント](./attendance.md): 礼拝と訪問の記録
+- [モジュールの構造](../module-structure.md): コードの構成パターン

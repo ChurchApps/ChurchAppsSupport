@@ -1,5 +1,7 @@
 ---
-title: "Wyświetlanie planów"
+title: "Twoje plany służby w portalu członka B1.church"
+sidebar_label: "Wyświetlanie planów"
+description: "Sprawdzaj przydziały do planów służby w B1.church, przyjmuj lub odrzucaj zaproszenia, ustawiaj daty niedostępności i przeglądaj historię służby."
 ---
 
 # Wyświetlanie planów

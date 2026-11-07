@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Ikonekta ang volunteer sign-up sa B1 Admin sa Checkr background check gamit ang Make.com, may opsyonal na alerto sa status para sa safe-ministry coordinator."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Kung ginagamit ng iyong simbahan ang membership sa grupo ng B1 para i-gate ang a
 
 ## Tingnan Din
 
-- [Make (overview)](../make) — bahagi ng B1 sa bawat Make scenario
-- [Mobile Message](./mobile-message) — para sa mga SMS provider na walang Zapier app, kaparehong Webhooks/HTTP pattern gaya ng Checkr Make wiring
+- [Make (overview)](../make.md) — bahagi ng B1 sa bawat Make scenario
+- [Mobile Message](./mobile-message.md) — para sa mga SMS provider na walang Zapier app, kaparehong Webhooks/HTTP pattern gaya ng Checkr Make wiring
 - [Checkr API docs](https://docs.checkr.com/)

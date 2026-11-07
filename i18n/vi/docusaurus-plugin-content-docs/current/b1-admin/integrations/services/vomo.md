@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Kết nối đăng ký tình nguyện và check-in kiosk của VOMO với người và nhóm trong B1 Admin qua Zapier, gồm phạm vi khóa API và các bước thiết lập."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ Khi dự án VOMO kết thúc, hãy xóa nhóm B1 đó theo cách thủ công (h
 
 ### Gửi tin nhắn SMS cảm ơn khi đăng ký
 
-Nối VOMO Participation với Clearstream Send Text hoặc Text In Church Send Message trong cùng một Zap. Cả hai đều có action Zapier chính thức. Xem [Clearstream](./clearstream) và [Text In Church](./text-in-church).
+Nối VOMO Participation với Clearstream Send Text hoặc Text In Church Send Message trong cùng một Zap. Cả hai đều có action Zapier chính thức. Xem [Clearstream](./clearstream.md) và [Text In Church](./text-in-church.md).
 
 ### Phát hiện người không tiếp tục tham gia
 
@@ -91,6 +92,6 @@ Thiết lập một trigger *Schedule* của Zapier chạy hằng ngày, gọi F
 
 ## Xem thêm
 
-- [Zapier (tổng quan)](../zapier) — phía B1 của mọi kịch bản Zapier
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — kết hợp đăng ký tình nguyện với xác nhận qua SMS
+- [Zapier (tổng quan)](../zapier.md) — phía B1 của mọi kịch bản Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — kết hợp đăng ký tình nguyện với xác nhận qua SMS
 - [Webhooks (tài liệu dành cho nhà phát triển)](/docs/developer/api/webhooks) — các sự kiện mà VOMO có thể kích hoạt

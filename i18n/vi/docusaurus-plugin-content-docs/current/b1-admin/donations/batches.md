@@ -1,5 +1,6 @@
 ---
 title: "Các đợt quyên góp"
+description: "Gom các khoản dâng hiến thành đợt trong B1 Admin, rồi đóng, in hoặc xuất từng đợt để tổng số khớp với tiền gửi ngân hàng."
 ---
 
 # Các đợt quyên góp

@@ -1,5 +1,6 @@
 ---
 title: "Programi in študije"
+description: "Spoznaj, kako so programi, študije, ure in prostori v Lessons.church povezani, da najdeš pravi kurikul in se premikaš med sorodnimi urami."
 ---
 
 # Programi in študije

@@ -1,5 +1,6 @@
 ---
 title: "Nhà cung cấp nội dung FreePlay"
+description: "Nhà cung cấp nội dung cần cung cấp gì để kết nối thư viện bài học với FreePlay: logo, mô hình đăng nhập, endpoint danh mục và danh sách phát, định dạng media."
 ---
 
 # Nhà cung cấp nội dung FreePlay

@@ -1,5 +1,6 @@
 ---
 title: "Kutfumelana Imilayeto"
+description: "Qala, funda, hlela, bese ususe tinkhulumo letisemangcweni nemalungu elicawe ku-B1 Mobile, kanye nekutfola bantfu ngeLigcini Lemalungu."
 ---
 
 # Kutfumelana Imilayeto
@@ -13,7 +14,7 @@ B1 Mobile ifaka kutfumelana imilayeto yangasese kute ube nengcoco yemuntfu munye
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- [Faka i-B1 Mobile](../getting-started/installing) bese [ungena](../getting-started/logging-in) ku-akhawundi yakho
+- [Faka i-B1 Mobile](../getting-started/installing.md) bese [ungena](../getting-started/logging-in.md) ku-akhawundi yakho
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile ifaka kutfumelana imilayeto yangasese kute ube nengcoco yemuntfu munye
 ## Kucala Ingcoco Lensha
 
 1. Kusuka esikrinini sekutfumelana imilayeto, cindzetela sikhetso sekucala ingcoco lensha.
-2. Sebentisa lensimu yekusesha kute utfole lilunga lofuna kulitfumela umlayeto. Ungatewati kanjalo kufumana emalunga nge[Luhlu Lwemalunga](./member-directory).
+2. Sebentisa lensimu yekusesha kute utfole lilunga lofuna kulitfumela umlayeto. Ungatewati kanjalo kufumana emalunga nge[Luhlu Lwemalunga](./member-directory.md).
 3. Khetsa lilunga emiphumeleni yekusesha.
 4. Bhala umlayeto wakho bese ucindzetela **Tfumela**.
 
@@ -52,11 +53,11 @@ Sebentisa kutfumelana imilayeto kuhlanganisa netisebenti-ngemahhala bakho, kulan
 :::
 
 :::info
-Vula [tati](./notifications) kute utiswe nakukhona umuntfu lokutfumela umlayeto lomusha, ngisho nanome i-app ingavulekile.
+Vula [tati](./notifications.md) kute utiswe nakukhona umuntfu lokutfumela umlayeto lomusha, ngisho nanome i-app ingavulekile.
 :::
 
 ## Tibhalo Letihlobene
 
-- [Luhlu Lwemalunga](./member-directory) -- Fumana emalunga lawatfumela umlayeto
-- [Tati](./notifications) -- Tiswa ngemilayeto lemisha
-- [Emacembu](../groups/) -- Bamba licala engcocweni yemacembu
+- [Luhlu Lwemalunga](./member-directory.md) -- Fumana emalunga lawatfumela umlayeto
+- [Tati](./notifications.md) -- Tiswa ngemilayeto lemisha
+- [Emacembu](../groups/index.md) -- Bamba licala engcocweni yemacembu

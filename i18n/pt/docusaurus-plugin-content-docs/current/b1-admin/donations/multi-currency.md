@@ -1,5 +1,6 @@
 ---
 title: "Suporte Multi-Moeda"
+description: "Registre doações em diferentes moedas no B1 Admin, com lançamento manual, doações online pelo Stripe e a conversão dos totais combinados."
 ---
 
 # Suporte Multi-Moeda

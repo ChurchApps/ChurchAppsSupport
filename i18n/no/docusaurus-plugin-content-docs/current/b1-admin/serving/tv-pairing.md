@@ -1,5 +1,6 @@
 ---
 title: "Tilkobling av FreePlay til B1 Admin"
+description: "Koble en TV i klasserommet med FreePlay til planlagte leksjoner i B1 Admin, så lærere kan spille dem av på skjermen under timen."
 ---
 
 # Tilkobling av en klasserom-TV til B1 Admin-leksjonene

@@ -1,5 +1,7 @@
 ---
-title: "Ayet Günü"
+title: "B1 Mobile'da Günün Ayeti"
+sidebar_label: "Ayet Günü"
+description: "B1 Mobile'da Günün Ayeti ekranını açarak bugünün ayetini, telefon veya tablet yönünüze uygun boyutta bir görsel olarak görün; her gün güncellenir."
 ---
 
 # Ayet Günü
@@ -13,7 +15,7 @@ Ayet Günü ekranı, her gün bir Kutsal Kitap ayetini güzel biçimlendirilmiş
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
 - Kilisenizde Ayet Günü özelliğinin etkinleştirilmiş olması gerekir
 
 </div>
@@ -46,5 +48,5 @@ Ayet Günü, B1 Mobile'ın yerleşik bir içerik özelliğidir. Çekmece menüs�
 
 ## İlgili Makaleler
 
-- [Kutsal Kitap](./bible) -- Yerleşik okuyucuda Kutsal Yazıların tam bölümlerini okuyun
-- [Vaazlar](./sermons) -- Kilisenizin kaydedilmiş vaazlarını izleyin
+- [Kutsal Kitap](./bible.md) -- Yerleşik okuyucuda Kutsal Yazıların tam bölümlerini okuyun
+- [Vaazlar](./sermons.md) -- Kilisenizin kaydedilmiş vaazlarını izleyin

@@ -6,7 +6,7 @@ description: "B1 교회 소유 Twilio 설정, 공개 가입 안내, 캠페인 �
 # 교회 소유 Twilio 온보딩 초안
 
 :::caution 제안된 통합에 대한 초안
-이것은 제안된 워크플로입니다. B1에는 현재 **설정 > 문자**(Account SID, Auth Token, From Number, 수신 STOP 웹훅)에 기본 **Twilio** 선택지가 있습니다. [교회 설정: 문자](../../b1-admin/settings/church-settings.md#texting)를 참고하세요. 아래의 추가 B1 설정 항목, 동의 매핑, 검증 단계는 향후 릴리스의 요구 사항이며, 기존 설정을 찾으라는 안내가 아닙니다. 범위와 의존 관계는 [기술 제안서](./twilio-byok-proposal)를 읽어 주세요. Twilio 자료는 2026년 10월 22일에 확인했습니다. 캠페인을 제출하기 전에 현재 요구 사항을 다시 확인하세요.
+이것은 제안된 워크플로입니다. B1에는 현재 **설정 > 문자**(Account SID, Auth Token, From Number, 수신 STOP 웹훅)에 기본 **Twilio** 선택지가 있습니다. [교회 설정: 문자](../../b1-admin/settings/church-settings.md#texting)를 참고하세요. 아래의 추가 B1 설정 항목, 동의 매핑, 검증 단계는 향후 릴리스의 요구 사항이며, 기존 설정을 찾으라는 안내가 아닙니다. 범위와 의존 관계는 [기술 제안서](./twilio-byok-proposal.md)를 읽어 주세요. Twilio 자료는 2026년 10월 22일에 확인했습니다. 캠페인을 제출하기 전에 현재 요구 사항을 다시 확인하세요.
 :::
 
 ## 권장 구성
@@ -34,7 +34,7 @@ description: "B1 교회 소유 Twilio 설정, 공개 가입 안내, 캠페인 �
 | 기존 자동화 | 모든 양식 제출자나 그룹 구성원을 문자 워크플로에 등록하지 마세요. 제안된 검증 동의 매핑만이 해당 프로그램을 승인할 수 있습니다 |
 | 감사 문자 | 양식이 접수되었음을 확인하되, 체크박스를 거절했거나 확인/검토가 대기 중일 때는 SMS 등록이 완료된 것처럼 말하지 마세요 |
 
-기존 체크박스 질문으로 양식을 예시할 수는 있지만, B1에는 여전히 동의 원장과 발송 게이트가 필요합니다. 현재 공유 렌더러는 설명을 일반 텍스트로 표시합니다. 설명 칸에 Markdown이나 URL을 입력한다고 해서 정책 링크가 클릭 가능해진다고 보장할 수 없습니다. 구현에서는 실제 링크가 포함된 접근 가능한 동의 컨트롤을 제공해야 합니다. [B1 양식 만들기](../../b1-admin/forms/creating-forms)와 [기술 제안서](./twilio-byok-proposal#consent-and-suppression-are-required-release-work)를 참고하세요.
+기존 체크박스 질문으로 양식을 예시할 수는 있지만, B1에는 여전히 동의 원장과 발송 게이트가 필요합니다. 현재 공유 렌더러는 설명을 일반 텍스트로 표시합니다. 설명 칸에 Markdown이나 URL을 입력한다고 해서 정책 링크가 클릭 가능해진다고 보장할 수 없습니다. 구현에서는 실제 링크가 포함된 접근 가능한 동의 컨트롤을 제공해야 합니다. [B1 양식 만들기](../../b1-admin/forms/creating-forms.md)와 [기술 제안서](./twilio-byok-proposal.md#consent-and-suppression-are-required-release-work)를 참고하세요.
 
 Twilio는 자발적이고 검증 가능한 옵트인을 요구합니다. SMS를 필수 회원 약관, 이메일/전화 허용 여부, 기부 동의, 행사 등록과 묶지 마세요. 방문자 카드에 적힌 휴대전화 번호는 그 자체로 SMS 동의가 아닙니다. Twilio의 [자발적 동의 요구 사항](https://www.twilio.com/docs/api/errors/30923)과 [캠페인 권장 사항](https://help.twilio.com/hc/en-us/articles/26149060902555-A2P-10DLC-Campaign-Registration-Recommendations)을 참고하세요.
 

@@ -1,5 +1,7 @@
 ---
-title: "Élő közvetítés"
+title: "Élő közvetítések nézése a B1.church-en"
+sidebar_label: "Élő közvetítés"
+description: "Nézze egyháza élő istentiszteleteit a B1.church Közvetítés oldalán, és csatlakozzon a közvetítés melletti chathez, bejelentkezés nélkül."
 ---
 
 # Élő közvetítés

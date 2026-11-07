@@ -1,5 +1,7 @@
 ---
-title: "Začetek"
+title: "Začetek dela z B1 Checkin"
+sidebar_label: "Začetek"
+description: "Nastavite aplikacijo kioska B1 Checkin na tablici Android: namestite jo, se prijavite, izberite svojo cerkev in po želji povežite tiskalnik nalepk."
 ---
 
 # Začetek z aplikacijo B1 Church Checkin
@@ -27,9 +29,9 @@ Nastavitev aplikacije B1 Church Checkin traja le nekaj minut. Ta razdelek vas vo
 
 Ob prvem zagonu aplikacije boste opravili tri korake:
 
-1. **[Prijava](./logging-in)** -- Vnesite e-poštni naslov in geslo za overitev.
-2. **[Izbira cerkve](./logging-in)** -- Če je vaš račun povezan z več cerkvami, izberite tisto, ki jo bo ta samopostrežni terminal služil.
-3. **[Nastavitev tiskalnika](./printer-setup)** -- Nastavite omrežni tiskalnik za tiskanje nalepk ali ta korak preskočite, če nalepk ne potrebujete.
+1. **[Prijava](./logging-in.md)** -- Vnesite e-poštni naslov in geslo za overitev.
+2. **[Izbira cerkve](./logging-in.md)** -- Če je vaš račun povezan z več cerkvami, izberite tisto, ki jo bo ta samopostrežni terminal služil.
+3. **[Nastavitev tiskalnika](./printer-setup.md)** -- Nastavite omrežni tiskalnik za tiskanje nalepk ali ta korak preskočite, če nalepk ne potrebujete.
 
 Po prvi prijavi aplikacija shrani vaše poverilnice in izbrano cerkev. Ob naslednjih zagonih bo samodejno neposredno preskočila na zaslon storitev.
 
@@ -43,6 +45,6 @@ Preden nastavite samopostrežni terminal, poskrbite, da skrbnik vaše cerkve v a
 
 ## Naslednji koraki
 
-- [Prijava](./logging-in) -- Podrobna navodila za prijavo in izbiro cerkve.
-- [Nastavitev tiskalnika](./printer-setup) -- Kako odkriti, izbrati in preizkusiti tiskalnik za nalepke.
-- [Potek prijave](../check-in/) -- Spoznajte celoten potek prijave, ko je vaš terminal nastavljen.
+- [Prijava](./logging-in.md) -- Podrobna navodila za prijavo in izbiro cerkve.
+- [Nastavitev tiskalnika](./printer-setup.md) -- Kako odkriti, izbrati in preizkusiti tiskalnik za nalepke.
+- [Potek prijave](../check-in/index.md) -- Spoznajte celoten potek prijave, ko je vaš terminal nastavljen.

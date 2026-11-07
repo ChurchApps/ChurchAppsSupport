@@ -1,5 +1,6 @@
 ---
 title: "Quản lý bài giảng"
+description: "Quản lý thư viện bài giảng trong B1 Admin: thêm bài giảng từ YouTube, Vimeo hoặc Facebook, chỉnh sửa chi tiết và lấy nguồn cấp podcast cho hội thánh."
 ---
 
 # Quản lý bài giảng
@@ -14,7 +15,7 @@ Trang Bài giảng hiển thị toàn bộ thư viện bài giảng của bạn.
 <h4>Trước khi bắt đầu</h4>
 
 - Bạn cần có quyền **contentApi.streamingServices.edit**. Xem [Vai trò & Quyền](../settings/roles-permissions.md) nếu bạn chưa có quyền truy cập.
-- Tạo ít nhất một [danh sách phát](playlists) để sắp xếp bài giảng của bạn
+- Tạo ít nhất một [danh sách phát](./playlists.md) để sắp xếp bài giảng của bạn
 - Chuẩn bị sẵn ID video hoặc URL từ YouTube, Vimeo hoặc Facebook
 
 </div>
@@ -35,7 +36,7 @@ Trang Bài giảng hiển thị toàn bộ thư viện bài giảng của bạn.
 6. Thực hiện các thay đổi mong muốn và nhấp **Save**.
 
 :::tip
-Bạn cũng có thể thêm URL phát trực tiếp cố định bằng cách chọn **Add Permanent Live URL** trong danh sách thả xuống **Add Sermon**. Thao tác này tạo một kết nối lâu dài đến luồng phát trực tiếp trên kênh YouTube của bạn bằng Channel ID. Xem [Phát trực tiếp](live-streaming) để biết thêm chi tiết.
+Bạn cũng có thể thêm URL phát trực tiếp cố định bằng cách chọn **Add Permanent Live URL** trong danh sách thả xuống **Add Sermon**. Thao tác này tạo một kết nối lâu dài đến luồng phát trực tiếp trên kênh YouTube của bạn bằng Channel ID. Xem [Phát trực tiếp](./live-streaming.md) để biết thêm chi tiết.
 :::
 
 ## Chỉnh sửa bài giảng
@@ -73,11 +74,11 @@ Sau khi thêm bài giảng, bạn có thể lên lịch phát sóng trên trang 
 3. Bài giảng sẽ được phát vào thời điểm buổi lễ đã lên lịch.
 
 :::info
-Để nhập nhiều bài giảng cùng lúc thay vì thêm từng bài một, hãy sử dụng công cụ [Nhập hàng loạt](bulk-import) để kéo video trực tiếp từ tài khoản YouTube hoặc Vimeo của bạn.
+Để nhập nhiều bài giảng cùng lúc thay vì thêm từng bài một, hãy sử dụng công cụ [Nhập hàng loạt](./bulk-import.md) để kéo video trực tiếp từ tài khoản YouTube hoặc Vimeo của bạn.
 :::
 
 ## Bước tiếp theo
 
-- [Danh sách phát](playlists) -- Sắp xếp bài giảng thành chuỗi
-- [Phát trực tiếp](live-streaming) -- Cấu hình lịch phát trực tiếp của bạn
-- [Nhập hàng loạt](bulk-import) -- Nhập nhiều bài giảng cùng lúc
+- [Danh sách phát](./playlists.md) -- Sắp xếp bài giảng thành chuỗi
+- [Phát trực tiếp](./live-streaming.md) -- Cấu hình lịch phát trực tiếp của bạn
+- [Nhập hàng loạt](./bulk-import.md) -- Nhập nhiều bài giảng cùng lúc

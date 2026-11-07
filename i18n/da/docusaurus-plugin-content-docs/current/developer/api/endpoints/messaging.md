@@ -1,5 +1,6 @@
 ---
 title: "Messaging-endpoints"
+description: "Reference for ChurchApps messaging-API-endpoints: samtaler, adgangsregler for noter, sms, e-mailskabeloner, notifikationer og enheder."
 ---
 
 # Messaging-endpoints
@@ -334,7 +335,7 @@ Sporer leveringsstatus for sendte beskeder (SMS, push-meddelelser, e-mail).
 
 ## Relaterede sider
 
-- [Medlemskabsendpoints](./membership) -- Mennesker, grupper, roller og kernidentitet
-- [Deltagelsesendpoints](./attendance) -- Service- og besøgssporing
-- [Godkendelse og tilladelser](./authentication) — Login flow, JWT, OAuth, tilladelsesmodel
-- [Modulstruktur](../module-structure) -- Kodeorganiseringsmønstre
+- [Medlemskabsendpoints](./membership.md) -- Mennesker, grupper, roller og kernidentitet
+- [Deltagelsesendpoints](./attendance.md) -- Service- og besøgssporing
+- [Godkendelse og tilladelser](./authentication.md) — Login flow, JWT, OAuth, tilladelsesmodel
+- [Modulstruktur](../module-structure.md) -- Kodeorganiseringsmønstre

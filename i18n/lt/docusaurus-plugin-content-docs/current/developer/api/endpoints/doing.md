@@ -1,5 +1,6 @@
 ---
 title: "Doing galiniai taškai"
+description: "Doing API galutinių taškų nuoroda: tarnystės planai, savanorių paskyrimai, užduotys ir automatizavimai B1 Admin, su keliais ir teisėmis."
 ---
 
 # Doing galiniai taškai
@@ -278,6 +279,6 @@ Persiunčia užklausas išoriniams turinio teikėjams (pvz., ProPresenter, EasyW
 
 ## Susiję puslapiai
 
-- [Narių galiniai taškai](./membership) – Asmenys, grupės, vaidmenys ir leidimai
-- [Lankomumo galiniai taškai](./attendance) – Tarnystės ir apsilankymų sekimas
-- [Modulio struktūra](../module-structure) – Kodo organizavimo modeliai
+- [Narių galiniai taškai](./membership.md) – Asmenys, grupės, vaidmenys ir leidimai
+- [Lankomumo galiniai taškai](./attendance.md) – Tarnystės ir apsilankymų sekimas
+- [Modulio struktūra](../module-structure.md) – Kodo organizavimo modeliai

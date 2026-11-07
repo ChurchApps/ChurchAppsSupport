@@ -1,5 +1,6 @@
 ---
 title: "Setările bisericii"
+description: "Setează numele, adresa, subdomeniul, fusul orar, formatul regional, furnizorul de SMS și stocarea fișierelor în pagina Church Settings din B1 Admin."
 ---
 
 # Setările bisericii

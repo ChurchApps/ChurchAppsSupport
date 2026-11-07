@@ -1,5 +1,6 @@
 ---
 title: "Fonları Yönetme"
+description: "B1 Admin'de bağış fonları oluşturun, vergi indirimi durumu ve bağışçı görünürlüğünü ayarlayın, raporlama için fon toplamlarını ve bağış geçmişini inceleyin."
 ---
 
 # Fonları Yönetme

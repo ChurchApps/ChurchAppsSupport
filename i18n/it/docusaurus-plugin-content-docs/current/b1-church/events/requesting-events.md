@@ -1,5 +1,6 @@
 ---
 title: "Richiedere eventi e sale"
+description: "Richiedi una sala o un'attrezzatura per un evento dal portale membri B1.church, segui lo stato in Le mie richieste e annulla se è ancora in attesa."
 ---
 
 # Richiedere eventi e sale
@@ -42,11 +43,11 @@ Apri **Le mie richieste** dalla pagina Io. Ogni richiesta mostra l'evento, quand
 Finché una richiesta è ancora in attesa, puoi ritirarla con **Annulla richiesta** (ti verrà chiesta conferma -- l'annullamento non può essere annullato).
 
 :::info
-Le richieste vengono esaminate dal personale della chiesa nella [pagina Approvazioni](../../b1-admin/calendars/approvals) di B1 Admin. Quali sale e risorse richiedono un'approvazione dipende dalla tua chiesa -- consulta [Sale e risorse](../../b1-admin/calendars/rooms-resources).
+Le richieste vengono esaminate dal personale della chiesa nella [pagina Approvazioni](../../b1-admin/calendars/approvals.md) di B1 Admin. Quali sale e risorse richiedono un'approvazione dipende dalla tua chiesa -- consulta [Sale e risorse](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Articoli correlati
 
-- [La pagina Io](../getting-started/me-page) -- Dove si trovano i collegamenti alle richieste
-- [Approvazioni del calendario (B1 Admin)](../../b1-admin/calendars/approvals) -- Come lo staff esamina le richieste
-- [Sale e risorse (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Come le chiese configurano gli spazi prenotabili
+- [La pagina Io](../getting-started/me-page.md) -- Dove si trovano i collegamenti alle richieste
+- [Approvazioni del calendario (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Come lo staff esamina le richieste
+- [Sale e risorse (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Come le chiese configurano gli spazi prenotabili

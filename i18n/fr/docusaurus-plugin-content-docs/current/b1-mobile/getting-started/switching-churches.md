@@ -1,5 +1,6 @@
 ---
 title: "Changer d'église"
+description: "Changez d’église dans B1 Mobile en choisissant une église récente ou en la cherchant par nom, le tout avec une seule connexion ChurchApps."
 ---
 
 # Changer d'église
@@ -13,7 +14,7 @@ Si vous êtes membre de plusieurs églises, B1 Mobile facilite le passage de l'u
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Installez B1 Mobile](./installing) et [connectez-vous](./logging-in) à votre compte
+- [Installez B1 Mobile](./installing.md) et [connectez-vous](./logging-in.md) à votre compte
 
 </div>
 
@@ -24,7 +25,7 @@ Si vous êtes membre de plusieurs églises, B1 Mobile facilite le passage de l'u
 3. L'écran de **Recherche d'église** apparaît. Vos églises récemment visitées sont affichées en haut pour un accès rapide.
 4. Appuyez sur une église récente pour y basculer, ou tapez dans le champ de recherche pour trouver une autre église.
 
-Lorsque vous changez d'église, l'application se recharge avec l'identité visuelle, les liens de navigation et le contenu de cette église. Votre [tableau de bord](../dashboard/), vos [groupes](../groups/) et autres données refléteront l'église nouvellement sélectionnée.
+Lorsque vous changez d'église, l'application se recharge avec l'identité visuelle, les liens de navigation et le contenu de cette église. Votre [tableau de bord](../dashboard/index.md), vos [groupes](../groups/index.md) et autres données refléteront l'église nouvellement sélectionnée.
 
 ## Rechercher une église
 

@@ -1,5 +1,7 @@
 ---
-title: "Biblia"
+title: "Bibliaolvasás a B1.church-en"
+sidebar_label: "Biblia"
+description: "Olvassa a Szentírást a B1.church Biblia-olvasójában, könyv-, fejezet- és fordításválasztóval, valamint napi olvasmányokhoz szánt Biblia-oldallal."
 ---
 
 # Biblia

@@ -1,5 +1,7 @@
 ---
-title: "Groepen"
+title: "Scherm Groepen in B1 Mobile"
+sidebar_label: "Groepen"
+description: "Vind de groepen waarvan je lid bent op het scherm Groepen van B1 Mobile, met je meest bezochte groep bovenaan en de overige kerkgroepen eronder."
 ---
 
 # Groepen
@@ -30,10 +32,10 @@ Dit is wat je kunt doen vanuit het scherm Groepen:
 - **Met elkaar verbonden blijven** -- Zie wat je groepsleden delen, volg gesprekken bij en communiceer met groepsinhoud.
 
 :::tip
-Het scherm Groepen past zich aan uw gebruik aan, net zoals het [dashboard](../dashboard/). De groepen die je het vaakst bezoekt, worden naar de top bevorderd voor snelle toegang.
+Het scherm Groepen past zich aan uw gebruik aan, net zoals het [dashboard](../dashboard/index.md). De groepen die je het vaakst bezoekt, worden naar de top bevorderd voor snelle toegang.
 :::
 
 ## Volgende stappen
 
-- [Groepsdetails](./group-details) -- Zie wat er op de detailpagina van een groep staat
-- [Groepstijdlijn](./group-timeline) -- Leer over de geïntegreerde activiteitsfeed in je groepen
+- [Groepsdetails](./group-details.md) -- Zie wat er op de detailpagina van een groep staat
+- [Groepstijdlijn](./group-timeline.md) -- Leer over de geïntegreerde activiteitsfeed in je groepen

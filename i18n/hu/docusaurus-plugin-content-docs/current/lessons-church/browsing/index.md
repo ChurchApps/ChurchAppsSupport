@@ -1,5 +1,6 @@
 ---
 title: "Tartalmak böngészése"
+description: "Böngészés fiók nélkül a Lessons.church ingyenes tantervi könyvtárában: főoldal, böngészés programok szerint, keresés és külső szolgáltatók."
 ---
 
 # Tartalmak böngészése

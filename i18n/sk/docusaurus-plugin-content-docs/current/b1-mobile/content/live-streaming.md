@@ -1,5 +1,7 @@
 ---
-title: "Živý prenos"
+title: "Sledovanie živých prenosov v aplikácii B1 Mobile"
+sidebar_label: "Živý prenos"
+description: "Pripojte sa na živý prenos vašej cirkvi v aplikácii B1 Mobile, otvorte obrazovku Stream z bočnej ponuky alebo odpočítavania Kázní a pozrite si, kedy bohoslužby začínajú."
 ---
 
 # Živý prenos
@@ -13,14 +15,14 @@ B1 Mobile vám umožňuje sledovať živý prenos vašej cirkvi priamo z telefó
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- [Nainštalujte B1 Mobile](../getting-started/installing) a [sa prihláste](../getting-started/logging-in) do svojho účtu
+- [Nainštalujte B1 Mobile](../getting-started/installing.md) a [sa prihláste](../getting-started/logging-in.md) do svojho účtu
 - Vaša cirkev musí mať nakonfigurovaný harmonogram streamovania
 
 </div>
 
 ## Sledovanie živého prenosu
 
-1. Otvorte obrazovku **Stream** z bočného menu alebo klepnite na odpočítavanie na obrazovke [Kázne](./sermons), keď sa má živý prenos čoskoro začať.
+1. Otvorte obrazovku **Stream** z bočného menu alebo klepnite na odpočítavanie na obrazovke [Kázne](./sermons.md), keď sa má živý prenos čoskoro začať.
 2. Ak je služba práve živá, video prehrávač sa automaticky načíta a vysielanie sa začne prehrávať.
 3. Sledujte prenos priamo v aplikácii.
 
@@ -31,7 +33,7 @@ Keď momentálne nie je aktívny žiadny živý prenos, obrazovka môže zobrazo
 K živému prenosu sa môžete dostať dvoma spôsobmi:
 
 - **Bočné menu** -- Otvorte bočné menu a klepnite na **Stream**, čím sa priamo dostanete na obrazovku živého prenosu.
-- **Obrazovka Kázne** -- Ak je živý prenos naplánovaný na najbližších 24 hodín, na obrazovke [Kázne](./sermons) sa zobrazí odpočítavanie. Keď vysielanie začne, môžete sa odtiaľ dostať na prenos.
+- **Obrazovka Kázne** -- Ak je živý prenos naplánovaný na najbližších 24 hodín, na obrazovke [Kázne](./sermons.md) sa zobrazí odpočítavanie. Keď vysielanie začne, môžete sa odtiaľ dostať na prenos.
 
 ## Pred službou a po nej
 
@@ -46,5 +48,5 @@ Ak obrazovka prenosu zobrazuje odpočítavanie alebo správu o offline stave, na
 Obrazovka živého prenosu je dostupná, keď vaša cirkev nakonfigurovala harmonogram streamovania. Ak v bočnom menu aplikácie nevidíte možnosť **Stream**, vaša cirkev pravdepodobne nemá nastavené živé streamovanie. Podrobnosti vám poskytne správca vašej cirkvi.
 
 :::tip
-Pozrite sa na obrazovku [Kázne](./sermons), kde nájdete odpočítavanie, ktoré ukazuje, kedy sa začne ďalší živý prenos.
+Pozrite sa na obrazovku [Kázne](./sermons.md), kde nájdete odpočítavanie, ktoré ukazuje, kedy sa začne ďalší živý prenos.
 :::

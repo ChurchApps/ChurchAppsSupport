@@ -1,5 +1,7 @@
 ---
-title: "Kunikela"
+title: "Kunikela Nge-App ye-B1 Mobile"
+sidebar_label: "Kunikela"
+description: "Nikela nge-app ye-B1 Mobile, hlola tipho takho tegugu lamanje, futsi ulawule tindlela letigciniwe tekukhokha. Ihlanganisa tithebhu i-Overview, Donate, Manage, ne-History."
 ---
 
 # Kunikela
@@ -24,7 +26,7 @@ Ingcenye yekunikela ihlelwe kutimenyu letine:
 Yonkhe iminikelo lentiwa nge-B1 Mobile icutjwa ngekuphepha nge-**Stripe**. Imininingwane yakho yekukhokha iphatswa luhlelo lwaphephile lwe-Stripe futsi ayikaze igcinwe kumaseva e-ChurchApps. Ungakhona kunikela ungakhatsateki, wati kutsi imininingwane yakho yetimali ivikelekile.
 
 :::info
-Umphatsi welibandla lakho usungula tikhwama letitfolakalako kanye nekucutjwa kwetinkhokhelo nge-[B1 Admin](../../b1-admin/). Nangabe ungasiboni sinketho sekunikela ku-app, kungenteka libandla lakho lingakalihleli lesi sici.
+Umphatsi welibandla lakho usungula tikhwama letitfolakalako kanye nekucutjwa kwetinkhokhelo nge-[B1 Admin](../../b1-admin/index.md). Nangabe ungasiboni sinketho sekunikela ku-app, kungenteka libandla lakho lingakalihleli lesi sici.
 :::
 
 ## Loko Longakwenta
@@ -38,6 +40,6 @@ Nakuloko longakwenta kusuka engcenyeni yekunikela:
 
 ## Tinyatselo Letilandzelako
 
-- [Kwenta Umnikelo](./making-donations) -- Fundza indlela yekwenta umnikelo kusuka ku-app
-- [Kuphatsa Tindlela Tekukhokha](./managing-payments) -- Engeta nome ususe tindlela tekukhokha letigciniwe
-- [Umlandvo Wemnikelo](./donation-history) -- Buka sifingqo sakho sekunikela kanye neminikelo yangaphambilini
+- [Kwenta Umnikelo](./making-donations.md) -- Fundza indlela yekwenta umnikelo kusuka ku-app
+- [Kuphatsa Tindlela Tekukhokha](./managing-payments.md) -- Engeta nome ususe tindlela tekukhokha letigciniwe
+- [Umlandvo Wemnikelo](./donation-history.md) -- Buka sifingqo sakho sekunikela kanye neminikelo yangaphambilini

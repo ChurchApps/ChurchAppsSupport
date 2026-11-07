@@ -1,5 +1,7 @@
 ---
-title: "Ordem do culto"
+title: "Ordem do Culto no B1 Admin"
+sidebar_label: "Ordem do culto"
+description: "Configure a ordem do culto no B1 Admin: adicione músicas, lições e itens personalizados, organize-os em seções e imprima o roteiro de execução."
 ---
 
 # Ordem do culto

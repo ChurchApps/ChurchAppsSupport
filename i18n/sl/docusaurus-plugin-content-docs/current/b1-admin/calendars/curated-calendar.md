@@ -1,5 +1,6 @@
 ---
 title: "Kuriran koledar"
+description: "Nastavite splošni kurirani koledar v B1 Admin, ki zbira dogodke iz več skupin, nato ga delite na spletnem mestu, prek ICS naročnine ali kot prenos."
 ---
 
 # Kuriran koledar
@@ -15,7 +16,7 @@ Kuriran koledar združuje dogodke iz več skupin v en enoten koledarski pogled. 
 
 - Nastavite [skupine](../groups/creating-groups.md), katerih dogodke želite vključiti
 - Poskrbite, da so vodje skupin dodali dogodke v svoje skupine
-- Seznanite se z osnovami [ustvarjanja koledarjev](creating-calendars)
+- Seznanite se z osnovami [ustvarjanja koledarjev](./creating-calendars.md)
 
 </div>
 
@@ -61,5 +62,5 @@ Na kuriranem koledarju na vašem spletnem mestu in v njegovi naročnini ICS se p
 
 ## Naslednji koraki
 
-- [Ustvarjanje koledarjev](creating-calendars) -- Spoznajte osnove ustvarjanja koledarjev
-- [Pregled koledarjev](./) -- Vrnite se na pregled koledarjev
+- [Ustvarjanje koledarjev](./creating-calendars.md) -- Spoznajte osnove ustvarjanja koledarjev
+- [Pregled koledarjev](./index.md) -- Vrnite se na pregled koledarjev

@@ -1,5 +1,6 @@
 ---
 title: "Finaliser l'enregistrement"
+description: "Terminez l'enregistrement d'une famille sur la borne B1 Checkin : limites de salle, impression d'étiquettes, codes de sécurité et étape suivante."
 ---
 
 # Finaliser l'enregistrement
@@ -13,9 +14,9 @@ Une fois que vous avez vérifié votre foyer et effectué les affectations de gr
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Vérifiez votre foyer](./household-review) sur l'écran de vérification du foyer
-- [Affectez des groupes](./group-assignment) aux membres de la famille qui doivent s'inscrire à une classe ou un programme précis
-- Facultatif : [ajoutez les invités](./adding-guests) qui accompagnent votre famille
+- [Vérifiez votre foyer](./household-review.md) sur l'écran de vérification du foyer
+- [Affectez des groupes](./group-assignment.md) aux membres de la famille qui doivent s'inscrire à une classe ou un programme précis
+- Facultatif : [ajoutez les invités](./adding-guests.md) qui accompagnent votre famille
 
 </div>
 
@@ -28,10 +29,10 @@ Il suffit de cela. La présence de votre famille a été enregistrée.
 
 ## Salles complètes et ratios de bénévoles
 
-Si votre église a configuré des [limites de sécurité](../../b1-admin/attendance/checkin-safety) sur ses salles, le serveur les vérifie avant l'enregistrement :
+Si votre église a configuré des [limites de sécurité](../../b1-admin/attendance/checkin-safety.md) sur ses salles, le serveur les vérifie avant l'enregistrement :
 
 - Si une salle sélectionnée est **complète ou fermée**, l'enregistrement n'aboutit pas et l'application indique le nom de la salle afin que vous puissiez en choisir une autre.
-- Si le créneau de culte dispose d'un [calendrier d'enregistrement](../../b1-admin/attendance/setup#setting-a-check-in-schedule) et que sa fenêtre d'enregistrement n'est pas ouverte actuellement, l'enregistrement dans les salles de ce créneau est également refusé. L'écran **Impossible de s'enregistrer encore** affiche la salle avec la raison « l'enregistrement n'est pas ouvert actuellement » ; appuyez sur **Changer de salles** pour choisir un autre créneau de culte ou un autre groupe. (Les créneaux déjà clôturés sont affichés comme **Fermé** sur [l'écran du foyer](./household-review) et ne peuvent pas être sélectionnés ; vous ne verrez donc ce cas que si une fenêtre se ferme en cours d'enregistrement.)
+- Si le créneau de culte dispose d'un [calendrier d'enregistrement](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) et que sa fenêtre d'enregistrement n'est pas ouverte actuellement, l'enregistrement dans les salles de ce créneau est également refusé. L'écran **Impossible de s'enregistrer encore** affiche la salle avec la raison « l'enregistrement n'est pas ouvert actuellement » ; appuyez sur **Changer de salles** pour choisir un autre créneau de culte ou un autre groupe. (Les créneaux déjà clôturés sont affichés comme **Fermé** sur [l'écran du foyer](./household-review.md) et ne peuvent pas être sélectionnés ; vous ne verrez donc ce cas que si une fenêtre se ferme en cours d'enregistrement.)
 - Un foyer déjà enregistré pour un créneau de culte antérieur peut revenir plus tard et ajouter un créneau ouvert, même après la fermeture de la fenêtre précédente. Ses enregistrements existants sont conservés et n'empêchent pas le nouvel enregistrement.
 - Si une salle des enfants manque de **bénévoles** pour respecter son ratio, l'application affiche soit un avertissement qu'un membre du personnel peut confirmer pour continuer, soit bloque complètement l'enregistrement, selon la configuration de l'application des ratios par votre église.
 
@@ -49,7 +50,7 @@ Le même code de sécurité apparaît sur l'étiquette de nom de l'enfant et sur
 Le code de sécurité est généré à nouveau pour chaque enregistrement et n'utilise que des consonnes et des chiffres (les voyelles sont exclues pour éviter de former des mots inappropriés).
 
 :::warning
-Si les étiquettes ne s'impriment pas, ouvrez les paramètres d'administration en appuyant sept fois sur le **logo de l'église**, puis appuyez sur **Changer d'imprimante** pour vérifier la connexion de l'imprimante. Voir [Configuration de l'imprimante](../getting-started/printer-setup) pour les étapes de dépannage.
+Si les étiquettes ne s'impriment pas, ouvrez les paramètres d'administration en appuyant sept fois sur le **logo de l'église**, puis appuyez sur **Changer d'imprimante** pour vérifier la connexion de l'imprimante. Voir [Configuration de l'imprimante](../getting-started/printer-setup.md) pour les étapes de dépannage.
 :::
 
 ## Ce qui se passe après l'enregistrement

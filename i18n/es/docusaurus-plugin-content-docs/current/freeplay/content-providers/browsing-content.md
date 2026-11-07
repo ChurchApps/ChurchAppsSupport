@@ -1,5 +1,6 @@
 ---
 title: "Explorar y descargar contenido"
+description: "Navega por la biblioteca de un proveedor conectado con el control de tu TV en FreePlay y descarga o transmite lecciones y videos para reproducirlos."
 ---
 
 # Explorar y descargar contenido
@@ -13,7 +14,7 @@ Una vez que se ha conectado a un proveedor de contenido, puede explorar su bibli
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Conéctese al menos a un proveedor de contenido; consulte [Conectar con proveedores](./connecting-providers)
+- Conéctese al menos a un proveedor de contenido; consulte [Conectar con proveedores](./connecting-providers.md)
 - Tenga a mano el control remoto del televisor para navegar
 
 </div>
@@ -38,7 +39,7 @@ Puede profundizar tanto como lo permita la estructura de contenido del proveedor
 
 ## Explorar Lessons.church
 
-La biblioteca de [Lessons.church](../../lessons-church/) está organizada igual que su sitio web. En el nivel superior verá dos carpetas:
+La biblioteca de [Lessons.church](../../lessons-church/index.md) está organizada igual que su sitio web. En el nivel superior verá dos carpetas:
 
 - **Lessons**: profundice por **programa**, luego por **estudio** y después por **lección**. Cada lección muestra después sus **venues**, que son versiones de la lección para un grupo de edad o un entorno en particular, como Preescolar o Primaria. Seleccione un venue para abrir la pantalla de descarga de esa versión de la lección
 - **Add-Ons**: videos y recursos adicionales, agrupados por categoría
@@ -78,7 +79,7 @@ Use estos controles durante la reproducción:
 Cuando sale del reproductor, vuelve al explorador de contenido en el nivel raíz del proveedor actual.
 
 :::info
-Para ver una referencia completa de todos los controles del reproductor, consulte [Reproducir contenido](./playing-content).
+Para ver una referencia completa de todos los controles del reproductor, consulte [Reproducir contenido](./playing-content.md).
 :::
 
 ## Cambiar de proveedor

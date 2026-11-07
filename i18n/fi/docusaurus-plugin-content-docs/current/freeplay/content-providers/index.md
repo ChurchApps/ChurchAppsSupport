@@ -1,5 +1,6 @@
 ---
 title: "Sisältötarjoajat"
+description: "Selaa ja lataa opetusmateriaaleja, videoita ja kuvia Lessons.churchista, Dropboxista, OneDrivesta ja muista tarjoajista FreePlay TV -sovelluksessa."
 ---
 
 # Sisältötarjoajat
@@ -14,7 +15,7 @@ Sisältötarjoajat ovat ulkoisia palveluita, jotka toimittavat oppitunnin materi
 
 FreePlay sisältää tällä hetkellä seuraavat tarjoajat:
 
-- **[Lessons.church](../../lessons-church/)** - Ilmainen, avoimen lähdekoodin lastentyön opetussuunnitelma
+- **[Lessons.church](../../lessons-church/index.md)** - Ilmainen, avoimen lähdekoodin lastentyön opetussuunnitelma
 - **Bible Project** - Videoita ja materiaaleja, jotka tutkivat Raamattua
 - **SignPresenter** - Seurakuntien esitys- ja opastesisältöä
 - **B1.church** - Sisältöä omasta B1-seurakuntamäärityksestäsi
@@ -24,7 +25,7 @@ FreePlay sisältää tällä hetkellä seuraavat tarjoajat:
 - **OneDrive** - Selaa ja toista kuvia, videoita ja äänitiedostoja omasta Microsoft OneDrivestasi
 
 :::note
-Google Drive ja FreeShow eivät enää näy FreePlay TV -sovelluksessa. Jos haluat käyttää Google Driven sisältöä TV-laitteillasi, yhdistä se [FreePlay Adminissa](../scheduled-mode/building-playlists#connecting-providers), lisää tiedostot soittolistaan ja ajasta tuo soittolista.
+Google Drive ja FreeShow eivät enää näy FreePlay TV -sovelluksessa. Jos haluat käyttää Google Driven sisältöä TV-laitteillasi, yhdistä se [FreePlay Adminissa](../scheduled-mode/building-playlists.md#connecting-providers), lisää tiedostot soittolistaan ja ajasta tuo soittolista.
 :::
 
 :::info
@@ -37,14 +38,14 @@ Jokaisella tarjoajalla on oma sisältökirjastonsa, joka on järjestetty kansioi
 
 Yhdistetyt tarjoajat näkyvät ruudun vasemmassa reunassa sivupalkissa **Selaa**-otsikon alla. Voit vaihtaa tarjoajaa valitsemalla sen sivupalkista, mikä helpottaa siirtymistä sisältölähteiden välillä asennuksen aikana.
 
-Voit myös valita minkä tahansa yhdistetyn tarjoajan kansion, jonka haluat toistaa TV-laitteella silmukassa [ilmoituksina](./announcements).
+Voit myös valita minkä tahansa yhdistetyn tarjoajan kansion, jonka haluat toistaa TV-laitteella silmukassa [ilmoituksina](./announcements.md).
 
 :::tip
-TV-laitteelle yhdistämäsi tarjoajat koskevat vain kyseistä TV-laitetta. Jos käytät [Ajastettua tilaa](../scheduled-mode/), yhdistä tarjoajat kerran FreePlay Adminissa, jolloin jokainen ajastettu näyttö voi toistaa niiden sisältöä.
+TV-laitteelle yhdistämäsi tarjoajat koskevat vain kyseistä TV-laitetta. Jos käytät [Ajastettua tilaa](../scheduled-mode/index.md), yhdistä tarjoajat kerran FreePlay Adminissa, jolloin jokainen ajastettu näyttö voi toistaa niiden sisältöä.
 :::
 
 ## Tässä osiossa
 
-- **[Tarjoajiin yhdistäminen](./connecting-providers)** - Miten tunnistautua ja yhdistää
-- **[Sisällön selaaminen ja lataaminen](./browsing-content)** - Siirry kansioissa, lataa tiedostoja ja toista sisältöä
-- **[Ilmoitukset](./announcements)** - Toista tarjoajan diaesityskansiota silmukassa
+- **[Tarjoajiin yhdistäminen](./connecting-providers.md)** - Miten tunnistautua ja yhdistää
+- **[Sisällön selaaminen ja lataaminen](./browsing-content.md)** - Siirry kansioissa, lataa tiedostoja ja toista sisältöä
+- **[Ilmoitukset](./announcements.md)** - Toista tarjoajan diaesityskansiota silmukassa

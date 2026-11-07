@@ -1,5 +1,6 @@
 ---
 title: "Duomenų perdavimo rizikos vertinimas"
+description: "ChurchApps atitikties įrašas dėl bažnyčios duomenų perdavimų iš JK/EEE į JAV B1 Admin: apsaugos priemonės, subtvarkytojai ir prieigos kontrolė."
 ---
 
 # Duomenų perdavimo rizikos vertinimas

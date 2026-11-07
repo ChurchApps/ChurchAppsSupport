@@ -1,5 +1,6 @@
 ---
 title: "Administrering av betalingsmetoder"
+description: "Legg til, se gjennom og fjern lagrede kort i Administrer-fanen i B1 Mobile, så gjentatte gaver går raskere uten nye kortopplysninger."
 ---
 
 # Administrering av betalingsmetoder
@@ -13,7 +14,7 @@ Fanen **Administrer** i gaveseksjonen lar deg se og administrere de lagrede beta
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- [Installer B1 Mobile](../getting-started/installing.md) og [logg inn](../getting-started/logging-in.md) på kontoen din
 
 </div>
 
@@ -31,7 +32,7 @@ Slik legger du til et nytt kort:
 4. Skriv inn kortopplysningene dine. Opplysningene sendes sikkert til **Stripe** for behandling.
 5. Når kortet er lagret, vises det nye kortet i listen over betalingsmetoder.
 
-Det lagrede kortet ditt vil deretter være tilgjengelig som betalingsalternativ neste gang du [gir en gave](./making-donations) fra fanen **Gi**.
+Det lagrede kortet ditt vil deretter være tilgjengelig som betalingsalternativ neste gang du [gir en gave](./making-donations.md) fra fanen **Gi**.
 
 ## Fjerne en betalingsmetode
 
@@ -44,7 +45,7 @@ Hvis du ikke lenger vil ha et kort lagret, kan du fjerne det fra fanen **Adminis
 Kortet vises ikke lenger som betalingsalternativ når du gir en gave.
 
 :::info
-Å fjerne en betalingsmetode påvirker ikke tidligere gaver. [Gavehistorikken](./donation-history) din forblir uendret.
+Å fjerne en betalingsmetode påvirker ikke tidligere gaver. [Gavehistorikken](./donation-history.md) din forblir uendret.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Behold minst én lagret betalingsmetode for rask giving. Da kan du bruke knappen
 
 ## Relaterte artikler
 
-- [Gi en gave](./making-donations) -- Lær hvordan du gir en gave med en lagret betalingsmetode
-- [Gavehistorikk](./donation-history) -- Se gaveoversikten og tidligere gaver din
+- [Gi en gave](./making-donations.md) -- Lær hvordan du gir en gave med en lagret betalingsmetode
+- [Gavehistorikk](./donation-history.md) -- Se gaveoversikten og tidligere gaver din

@@ -1,5 +1,6 @@
 ---
 title: "Railway에서 자체 호스팅하기"
+description: "약 15분 만에 Railway에 개인용 ChurchApps 인스턴스를 배포한 뒤, B1 Admin과 B1App의 이메일, 커스텀 도메인, 다중 교회 라우팅, 헌금, 파일 저장소를 설정하세요."
 ---
 
 # Railway에서 자체 호스팅하기
@@ -195,7 +196,7 @@ AWS_REGION=us-east-2
 | `VIMEO_TOKEN` | Vimeo 설교 지원 |
 | `API_BIBLE_KEY` | 공과와 콘텐츠에서 성경 구절 조회 |
 | `YOUVERSION_API_KEY` | YouVersion 성경 연동 |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | 브라우저 푸시 알림([VAPID 키 쌍 만들기](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | 브라우저 푸시 알림([VAPID 키 쌍 만들기](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | 새 등록을 위한 선택적 CRM 동기화 |
 
 ## 업데이트
@@ -234,9 +235,9 @@ AWS_REGION=us-east-2
 
 ## 관련 문서
 
-- **[Docker로 자체 호스팅하기](./docker)** -- 같은 스택을 직접 가진 하드웨어나 VPS에서 실행
-- **[초기 설정](../../getting-started/initial-setup)** -- 교회를 만든 뒤 처음 할 일
-- **[웹사이트 초기 설정](../../b1-admin/website/initial-setup)** -- 교회의 공개 사이트 구성
-- **[헌금 설정](../../b1-admin/donations/online-giving-setup)** -- Stripe 또는 PayPal 연결
-- **[API 로컬 설정](../api/local-setup)** -- 개발을 위해 스택을 로컬에서 실행
-- **[API 배포(AWS)](./apis)** -- 공식 ChurchApps SaaS가 배포되는 방식
+- **[Docker로 자체 호스팅하기](./docker.md)** -- 같은 스택을 직접 가진 하드웨어나 VPS에서 실행
+- **[초기 설정](../../getting-started/initial-setup.md)** -- 교회를 만든 뒤 처음 할 일
+- **[웹사이트 초기 설정](../../b1-admin/website/initial-setup.md)** -- 교회의 공개 사이트 구성
+- **[헌금 설정](../../b1-admin/donations/online-giving-setup.md)** -- Stripe 또는 PayPal 연결
+- **[API 로컬 설정](../api/local-setup.md)** -- 개발을 위해 스택을 로컬에서 실행
+- **[API 배포(AWS)](./apis.md)** -- 공식 ChurchApps SaaS가 배포되는 방식

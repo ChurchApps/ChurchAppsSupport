@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Pripojte B1 Admin ku Claude a pýtajte sa na účasť, dary a skupiny jednoduchou rečou, s možnosťou prihlásenia a kľúčom s obmedzenými oprávneniami."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ Ide o rovnaký prístup `/membership/people`, `/giving/donations`, `/attendance/
 
 - [API Keys](/docs/developer/api/api-keys) — úplný prehľad rozsahov
 - [MCP Server (developer reference)](/docs/developer/api/mcp) — podrobnosti o protokole a schémy nástrojov
-- [ChatGPT](./chatgpt) — rovnaká myšlienka, pre modely OpenAI
+- [ChatGPT](./chatgpt.md) — rovnaká myšlienka, pre modely OpenAI

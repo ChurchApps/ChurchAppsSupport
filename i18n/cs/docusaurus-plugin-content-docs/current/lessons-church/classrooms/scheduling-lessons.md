@@ -1,5 +1,7 @@
 ---
-title: "Plánování lekcí"
+title: "Plánování lekcí třídy v portálu"
+sidebar_label: "Plánování lekcí"
+description: "Naplánujte lekce Lessons.church do kalendáře třídy v portálu B1 Admin: pro každé datum vyberte program, studium, lekci a místo pro konkrétní věk."
 ---
 
 # Plánování lekcí

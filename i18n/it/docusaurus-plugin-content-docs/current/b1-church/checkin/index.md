@@ -1,5 +1,7 @@
 ---
-title: "Check-in"
+title: "Check-in nel portale membri B1.church"
+sidebar_label: "Check-in"
+description: "Registra te e i membri del nucleo familiare a un culto dal portale membri B1.church, senza usare il chiosco, assegnando i gruppi."
 ---
 
 # Check-in

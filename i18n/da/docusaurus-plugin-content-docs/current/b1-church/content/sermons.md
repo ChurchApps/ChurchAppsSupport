@@ -1,5 +1,7 @@
 ---
-title: "Prædikener"
+title: "Gennemse prædikener på din B1.church-hjemmeside"
+sidebar_label: "Prædikener"
+description: "Gennemse og se optagede prædikener fra din kirkes bibliotek på B1.church-siden, grupperet i serier eller afspilningslister. Ingen login nødvendig."
 ---
 
 # Prædikener

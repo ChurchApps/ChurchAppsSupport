@@ -1,5 +1,6 @@
 ---
 title: "Webapper"
+description: "Oversikt over de tre ChurchApps-webappene (B1 Admin, B1.church, Lessons.church), deres delte React- og MUI-stack, apphelper-pakker og byggeverktøy."
 ---
 
 # Webapper
@@ -41,7 +42,7 @@ Appene deler UI-komponenter og verktøy gjennom `@churchapps/apphelper*`-pakkefa
 | `@churchapps/apphelper-website` | Nettsted-/CMS-komponenter |
 
 :::tip
-For detaljer om utvikling av disse delte pakkene lokalt, se [AppHelper](../shared-libraries/app-helper)-dokumentasjonen.
+For detaljer om utvikling av disse delte pakkene lokalt, se [AppHelper](../shared-libraries/app-helper.md)-dokumentasjonen.
 :::
 
 ## Postinstall-skript

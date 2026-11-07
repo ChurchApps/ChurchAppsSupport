@@ -1,5 +1,6 @@
 ---
 title: "Nastavenia cirkvi"
+description: "Nastavte názov, adresu, subdoménu, časové pásmo, formát regiónu, poskytovateľa SMS a úložisko súborov pre váš zbor na stránke Nastavenia cirkvi v B1 Admin."
 ---
 
 # Nastavenia cirkvi

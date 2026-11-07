@@ -1,5 +1,6 @@
 ---
 title: "Gestion des Plans Annuels"
+description: "Créer un plan annuel de leçons hebdomadaires dans Lessons.church, ancrer les semaines à Pâques ou Noël et le publier pour B1 Admin."
 ---
 
 # Gestion des Plans Annuels

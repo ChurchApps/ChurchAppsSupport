@@ -1,5 +1,6 @@
 ---
 title: "Legge til personer"
+description: "Legg til en person i menighetsdatabasen i B1 Admin, fyll ut detaljene, og knytt familiemedlemmer til husstander for innsjekk og rapportering."
 ---
 
 # Legge til personer

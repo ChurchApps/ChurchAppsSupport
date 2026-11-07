@@ -1,5 +1,6 @@
 ---
 title: "Mga Miyembro ng Grupo"
+description: "Magdagdag, mag-alis, at magtalaga ng leader ng grupo sa B1 Admin, saka mag-email, mag-text, mag-print, o mag-export ng listahan mula sa group page."
 ---
 
 # Mga Miyembro ng Grupo

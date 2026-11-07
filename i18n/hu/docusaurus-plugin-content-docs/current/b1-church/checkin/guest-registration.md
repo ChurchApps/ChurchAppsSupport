@@ -1,5 +1,6 @@
 ---
 title: "Vendégregisztráció"
+description: "Regisztrálja magát és családját első alkalommal érkező vendégként a B1 Checkin QR-űrlapján, hogy érkezéskor bejelentkeztethessék Önöket."
 ---
 
 # Vendégregisztráció
@@ -22,7 +23,7 @@ Ha először látogat el egy gyülekezetbe, a vendégregisztrációs oldalon mag
 
 A vendégregisztrációt olyan látogatóknak tervezték, akiknek még nincs fiókjuk. A gyülekezet bejelentkező kiosztóján koppintson a **Regisztráció vendégként** gombra, hogy megjelenjen egy QR-kód, amely a regisztrációs oldalra visz. A linket egy önkéntestől vagy üdvözlőtől is megkaphatja, illetve megtalálhatja egy szórólapon vagy a gyülekezet weboldalán.
 
-Nincs telefon a kezénél? A kiosztón ugyanebben a QR-kódos ablakban koppintson a **Regisztráció itt** gombra, és magán a kiosztón töltse ki az űrlapot. Ennek működéséről lásd: [Regisztráció vendégként](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest).
+Nincs telefon a kezénél? A kiosztón ugyanebben a QR-kódos ablakban koppintson a **Regisztráció itt** gombra, és magán a kiosztón töltse ki az űrlapot. Ennek működéséről lásd: [Regisztráció vendégként](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest).
 
 Az oldal a **Vendégregisztráció** címmel nyílik meg. Ha a gyülekezet fejlécképet adott hozzá, az az oldal tetején jelenik meg; ellenkező esetben egy kis ikon látható.
 
@@ -51,7 +52,7 @@ A regisztrációja bejegyzéseket hoz létre a gyülekezet adatbázisában:
 - Minden családtaghoz **személyi bejegyzés** készül "Látogató" tagsági státusszal.
 - A megadott megjegyzések az elsődleges kapcsolattartó bejegyzésében kerülnek mentésre, hogy a gyülekezeti munkatársak elolvashassák őket.
 - Ha a gyülekezet kiválasztott egy csoportot az új vendégek számára, a családja hozzáadásra kerül abba. Az is lehet, hogy a gyülekezet automatikusan rögzíti a részvételét, ha a csoport egyik ütemezett istentiszteleti időpontjában regisztrál.
-- Egy gyülekezeti önkéntes vagy adminisztrátor ezután a [B1 Checkin](../../b1-checkin/check-in/looking-up-members) kiosztón be tudja jelentkeztetni a családját.
+- Egy gyülekezeti önkéntes vagy adminisztrátor ezután a [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md) kiosztón be tudja jelentkeztetni a családját.
 
 :::info
 Ha ugyanazzal a keresztnévvel és ugyanazzal az e-mail-címmel vagy telefonszámmal regisztrál újra, a gyülekezet nyilvántartása felismeri, és a meglévő profilját használja, nem pedig duplikátumot hoz létre. Mindenki más új bejegyzésként kerül be. Ha már korábban regisztrált, a nevét vagy telefonszámát a kiosztón is kereshet.
@@ -63,6 +64,6 @@ Ha az űrlap kéri az e-mail-címét, annak megadása segít a gyülekezetnek a 
 
 ## Kapcsolódó cikkek
 
-- [Önbejelentkezés](./self-checkin) -- Bejelentkezés magának a regisztráció után
-- [Vendégek hozzáadása (kiosztó)](../../b1-checkin/check-in/adding-guests) -- Hogyan adnak hozzá vendégeket az önkéntesek a kiosztón
-- [Bejelentkezés](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- Hogyan állítják be a gyülekezeti adminisztrátorok a QR-kódos vendégregisztrációt
+- [Önbejelentkezés](./self-checkin.md) -- Bejelentkezés magának a regisztráció után
+- [Vendégek hozzáadása (kiosztó)](../../b1-checkin/check-in/adding-guests.md) -- Hogyan adnak hozzá vendégeket az önkéntesek a kiosztón
+- [Bejelentkezés](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Hogyan állítják be a gyülekezeti adminisztrátorok a QR-kódos vendégregisztrációt

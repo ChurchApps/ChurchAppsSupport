@@ -1,5 +1,6 @@
 ---
 title: "Audit Log e Batch Undoable"
+description: "Descrive il log di audit dell'API, che registra ogni modifica degli utenti nei moduli, e come annullare riga per riga i batch di importazione in B1 Admin."
 ---
 
 # Audit Log e Batch Undoable

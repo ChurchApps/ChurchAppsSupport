@@ -1,5 +1,6 @@
 ---
 title: "Sisällön toistaminen"
+description: "Ohjaa FreePlayta kaukosäätimellä: keskeytys, dioien ja videoiden ohitus, siirtyminen mihin tahansa osaan ja soittimesta poistuminen."
 ---
 
 # Sisällön toistaminen
@@ -13,13 +14,13 @@ FreePlay-soitin täyttää koko näytön ja on tehty TV-kaukosäätimelle sopiva
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Valitse toistettava sisältö. Katso [Sisällön selaaminen ja lataaminen](./browsing-content), [Suunnitelmatila](../plan-mode/) tai [Ilmoitukset](./announcements)
+- Valitse toistettava sisältö. Katso [Sisällön selaaminen ja lataaminen](./browsing-content.md), [Suunnitelmatila](../plan-mode/index.md) tai [Ilmoitukset](./announcements.md)
 - Avaa soitin painamalla **Käynnistä**
 
 </div>
 
 :::info
-Kalenteriin liitetyt näytöt käyttävät erillistä ajastettua soitinta, jossa on hieman erilaiset ohjaimet. Katso [Ajastettu toisto TV:llä](../scheduled-mode/scheduled-playback).
+Kalenteriin liitetyt näytöt käyttävät erillistä ajastettua soitinta, jossa on hieman erilaiset ohjaimet. Katso [Ajastettu toisto TV:llä](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Soittimen ohjaimet
@@ -57,7 +58,7 @@ Avaa **Valitse viesti** painamalla toiston aikana **Ylös**. Näkymässä näkyv
 Poistu soittimesta painamalla kaukosäätimen **Alas**- tai **Takaisin**-painiketta. Mihin päädyt, riippuu siitä, mitä toistit:
 
 - **Palveluntarjoajan sisältö** - Takaisin sisällönselaimeen
-- **Suunnitelma** - Takaisin suunnitelman latausnäkymään. Katso [Suunnitelmatila](../plan-mode/)
+- **Suunnitelma** - Takaisin suunnitelman latausnäkymään. Katso [Suunnitelmatila](../plan-mode/index.md)
 - **Lataus** - Takaisin **Lataukset**-näkymään
 
 :::info
@@ -66,5 +67,5 @@ Näyttö pysyy hereillä, kun soitin on auki, joten TV ei mene lepotilaan kesken
 
 ## Liittyvät artikkelit
 
-- **[Sisällön selaaminen ja lataaminen](./browsing-content)** - Etsi sisältöä ja lataa se toistettavaksi offline-tilassa
-- **[Ajastettu toisto TV:llä](../scheduled-mode/scheduled-playback)** - Kaukosäätimen ohjaimet kalenteria seuraaville näytöille
+- **[Sisällön selaaminen ja lataaminen](./browsing-content.md)** - Etsi sisältöä ja lataa se toistettavaksi offline-tilassa
+- **[Ajastettu toisto TV:llä](../scheduled-mode/scheduled-playback.md)** - Kaukosäätimen ohjaimet kalenteria seuraaville näytöille

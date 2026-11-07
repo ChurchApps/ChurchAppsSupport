@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "B1 Admin'i Claude'a bağlayın; katılım, bağışlar ve gruplar hakkında sade dille soru sorun. Oturum açma ve sınırlı izinli anahtar seçenekleri dahil."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ Bu, B1 Admin'in kullandığı `/membership/people`, `/giving/donations`, `/atten
 
 - [API Anahtarları](/docs/developer/api/api-keys) — kapsamların tam listesi
 - [MCP Sunucusu (geliştirici başvurusu)](/docs/developer/api/mcp) — protokol ayrıntıları ve araç şemaları
-- [ChatGPT](./chatgpt) — aynı fikir, OpenAI modelleri için
+- [ChatGPT](./chatgpt.md) — aynı fikir, OpenAI modelleri için

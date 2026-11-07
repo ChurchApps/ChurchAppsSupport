@@ -1,5 +1,6 @@
 ---
 title: "Navigation Styles"
+description: "I-customize ang kulay ng solid at transparent na navigation bar ng website sa B1 Admin, kasama ang link, hover, at active state para sa site ng simbahan."
 ---
 
 # Navigation Styles

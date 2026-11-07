@@ -1,5 +1,7 @@
 ---
-title: "Transmisiuni live"
+title: "Ore și configurare transmisiuni live în B1 Admin"
+sidebar_label: "Transmisiuni live"
+description: "Programează transmisiuni live săptămânale sau unice, setează timpii pentru chat și video, conectează un canal YouTube și rezolvă probleme de încorporare."
 ---
 
 # Transmisiuni live
@@ -19,7 +21,7 @@ Pagina Live Stream Times vă permite să configurați programul de transmisie al
 
 - Aveți nevoie de permisiunea **contentApi.streamingServices.edit**. Consultați [Roluri și permisiuni](../settings/roles-permissions.md) dacă nu aveți acces.
 - Pregătiți ID-ul canalului dvs. YouTube dacă intenționați să utilizați transmisiunea live automată
-- Adăugați cel puțin o [predică](managing-sermons) sau un URL live permanent pentru a folosi ca sursă a transmisiunii
+- Adăugați cel puțin o [predică](./managing-sermons.md) sau un URL live permanent pentru a folosi ca sursă a transmisiunii
 
 </div>
 
@@ -80,13 +82,13 @@ Pentru a găsi ID-ul canalului dvs. YouTube, accesați setările avansate ale ca
 
 ## Personalizarea culorilor și a logo-ului
 
-Pagina dvs. de transmisie live folosește setările [Appearance](../website/appearance) ale site-ului dvs. web:
+Pagina dvs. de transmisie live folosește setările [Appearance](../website/appearance.md) ale site-ului dvs. web:
 
 - **Culoarea accent deschisă** cu text închis este folosită pentru antet.
 - **Culoarea accent închisă** cu text deschis este folosită pentru bara laterală.
 - **Light Background Logo** apare pe pagina de transmisie. Folosiți o imagine cu fundal transparent și un raport de aspect de 4:1.
 
-Pentru a schimba aceste setări, accesați **Website**, apoi **Appearance**, și actualizați setările [Color Palette](../website/appearance#color-palette) și [Logo](../website/appearance#logo-and-branding).
+Pentru a schimba aceste setări, accesați **Website**, apoi **Appearance**, și actualizați setările [Color Palette](../website/appearance.md#color-palette) și [Logo](../website/appearance.md#logo-and-branding).
 
 ## Adăugarea gazdelor transmisiunii
 
@@ -133,5 +135,5 @@ Inserarea automată a transmisiunii live de pe canalul YouTube poate fi blocată
 
 ## Pașii următori
 
-- [Gestionarea predicilor](managing-sermons) -- Adăugați predici în biblioteca dvs.
-- [Liste de redare](playlists) -- Organizați predicile în serii
+- [Gestionarea predicilor](./managing-sermons.md) -- Adăugați predici în biblioteca dvs.
+- [Liste de redare](./playlists.md) -- Organizați predicile în serii

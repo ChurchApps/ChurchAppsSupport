@@ -1,5 +1,6 @@
 ---
 title: "Šablóny e-mailov"
+description: "Nastavte šablóny e-mailov a textových správ v B1 Admin so zlučovacími poľami, možnosťami SMS a náhľadmi pre hromadnú komunikáciu."
 ---
 
 # Šablóny e-mailov

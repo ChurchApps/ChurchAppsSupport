@@ -29,7 +29,7 @@ B1Admin Send Text → Api `TextingController` → `@churchapps/texting` `getProv
 
 범위 참고: 제공자 선택은 콘텐츠 **파일/리소스** 흐름(대량 미디어가 있는)을 커버합니다. 갤러리/로고/사진 업로드는 기본 제공자에 유지됩니다 — 그들은 저장소에서 키를 나열하고 클라이언트측에서 URL을 구성하므로 교회별 루팅이 아직 적용되지 않습니다.
 
-같은 솔기는 또한 [Bring-Your-Own Storage](./byos-storage)를 구동합니다: 교회는 MinistryStuff 계획 대신 Google Drive, Dropbox, OneDrive 또는 자신의 S3 호환 버킷을 연결할 수 있습니다.
+같은 솔기는 또한 [Bring-Your-Own Storage](./byos-storage.md)를 구동합니다: 교회는 MinistryStuff 계획 대신 Google Drive, Dropbox, OneDrive 또는 자신의 S3 호환 버킷을 연결할 수 있습니다.
 
 ## 청구
 

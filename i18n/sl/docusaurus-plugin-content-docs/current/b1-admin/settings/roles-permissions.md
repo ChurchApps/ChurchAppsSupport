@@ -1,5 +1,6 @@
 ---
 title: "Vloge in dovoljenja"
+description: "V B1 Admin nastavite vloge, s katerimi določite, kaj lahko osebje in prostovoljci vidijo in spreminjajo, od darov in udeležbe do oseb in skupin."
 ---
 
 # Vloge in dovoljenja

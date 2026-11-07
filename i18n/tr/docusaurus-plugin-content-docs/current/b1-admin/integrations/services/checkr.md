@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Gönüllü kayıtlarını Make.com ile Checkr arka plan kontrollerine bağlayın; güvenli hizmet koordinatörünüz için isteğe bağlı rapor durumu uyarıları."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Kiliseniz erişimi kontrol etmek için B1 grup üyeliğini kullanıyorsa (ör. h
 
 ## Ayrıca Bakınız
 
-- [Make (genel bakış)](../make): Her Make senaryosunun B1 tarafı
-- [Mobile Message](./mobile-message): Zapier uygulaması olmayan SMS sağlayıcıları için; Checkr Make bağlantısıyla aynı Webhook/HTTP yapısını kullanır
+- [Make (genel bakış)](../make.md): Her Make senaryosunun B1 tarafı
+- [Mobile Message](./mobile-message.md): Zapier uygulaması olmayan SMS sağlayıcıları için; Checkr Make bağlantısıyla aynı Webhook/HTTP yapısını kullanır
 - [Checkr API belgeleri](https://docs.checkr.com/)

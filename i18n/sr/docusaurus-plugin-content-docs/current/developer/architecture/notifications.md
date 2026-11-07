@@ -1,5 +1,6 @@
 ---
 title: "Архитектура обавештења и подсетника"
+description: "Како B1 Admin API преусмерава обавештења, заказане подсетнике, ограничења имејлова и одјаве од порука кроз један канал испоруке."
 ---
 
 # Архитектура обавештења и подсетника
@@ -185,6 +186,6 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
 
 ## Повезане странице
 
-- [Архитектура у реалном времену](../realtime): WebSocket протокол и клијентски примитиви (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) на којима почива ниво испоруке у апликацији
-- [Web Push обавештења](../web-push): VAPID подешавање и путања browser Push API-ја која се користи на нивоу push ескалације
-- [Крајње тачке за поруке](../api/endpoints/messaging): пун REST скуп за поруке, разговоре, везе и руте за обавештења и подсетнике
+- [Архитектура у реалном времену](../realtime.md): WebSocket протокол и клијентски примитиви (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) на којима почива ниво испоруке у апликацији
+- [Web Push обавештења](../web-push.md): VAPID подешавање и путања browser Push API-ја која се користи на нивоу push ескалације
+- [Крајње тачке за поруке](../api/endpoints/messaging.md): пун REST скуп за поруке, разговоре, везе и руте за обавештења и подсетнике

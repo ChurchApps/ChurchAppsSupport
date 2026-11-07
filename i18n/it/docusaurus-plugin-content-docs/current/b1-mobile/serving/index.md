@@ -1,5 +1,7 @@
 ---
-title: "Servizio"
+title: "Calendario dei servizi nell'app B1 Mobile"
+sidebar_label: "Servizio"
+description: "Visualizza il tuo calendario di servizio, i prossimi incarichi e lo stato delle posizioni in B1 Mobile, e scopri come iscriverti ai ruoli aperti."
 ---
 
 # Servizio
@@ -18,7 +20,7 @@ La sezione **Servizio** in B1 Mobile ti offre un modo rapido e semplice per tene
 
 ## Per Iniziare
 
-Per visualizzare il tuo programma di servizio, tocca **Servizio** nella navigazione in basso dell'app. Devi essere connesso per accedere alle tue assegnazioni. Se non hai effettuato l'accesso, ti verrà chiesto di [accedere](../getting-started/logging-in) prima.
+Per visualizzare il tuo programma di servizio, tocca **Servizio** nella navigazione in basso dell'app. Devi essere connesso per accedere alle tue assegnazioni. Se non hai effettuato l'accesso, ti verrà chiesto di [accedere](../getting-started/logging-in.md) prima.
 
 :::info
 Vedrai solo i piani a cui sei stato assegnato. Se non vedi nessuna assegnazione, significa che non sei stato ancora aggiunto a un team di servizio. Contatta l'amministratore della tua chiesa o il leader del ministero per essere coinvolto.
@@ -26,4 +28,4 @@ Vedrai solo i piani a cui sei stato assegnato. Se non vedi nessuna assegnazione,
 
 ## Prossimi Passi
 
-- [Visualizzazione dei Piani](./viewing-plans) -- Scopri come sfogliare i tuoi piani futuri e passati e visualizzare i dettagli completi di ciascuno
+- [Visualizzazione dei Piani](./viewing-plans.md) -- Scopri come sfogliare i tuoi piani futuri e passati e visualizzare i dettagli completi di ciascuno

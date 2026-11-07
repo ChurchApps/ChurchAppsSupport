@@ -1,5 +1,6 @@
 ---
 title: "Ödemе yöntemlerini yönetme"
+description: "Pridėkite, peržiūrėkite ir pašalinkite išsaugotas korteles B1 Mobile skirtuke Tvarkyti, kad kartotinės aukos vyktų greičiau be kortelės duomenų."
 ---
 
 Bu bölümde çevirinin Lithuanian olması gerekiyordu; yanlış dil çıktım. Doğru çeviriyi aşağıda veriyorum.
@@ -19,7 +20,7 @@ Skyriuje **Manage** (Tvarkyti) galite peržiūrėti ir tvarkyti išsaugotus mok�
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiegkite B1 Mobile](../getting-started/installing) ir [prisijunkite](../getting-started/logging-in) prie savo paskyros
+- [Įdiegkite B1 Mobile](../getting-started/installing.md) ir [prisijunkite](../getting-started/logging-in.md) prie savo paskyros
 
 </div>
 
@@ -37,7 +38,7 @@ Norėdami pridėti naują kortelę:
 4. Įveskite kortelės duomenis. Informacija saugiai perduodama apdoroti **Stripe** sistemai.
 5. Kai kortelė bus išsaugota, ji pasirodys jūsų mokėjimo būdų sąraše.
 
-Išsaugota kortelė bus prieinama kaip mokėjimo parinktis kitą kartą, kai [atliksite auką](./making-donations) skirtuke **Donate** (Aukoti).
+Išsaugota kortelė bus prieinama kaip mokėjimo parinktis kitą kartą, kai [atliksite auką](./making-donations.md) skirtuke **Donate** (Aukoti).
 
 ## Mokėjimo būdo pašalinimas
 
@@ -50,7 +51,7 @@ Jei nebenorite, kad kortelė būtų išsaugota, ją galite pašalinti skirtuke *
 Atlikdami auką, šios kortelės nebematysite kaip mokėjimo parinkties.
 
 :::info
-Mokėjimo būdo pašalinimas neturi įtakos ankstesnėms aukoms. Jūsų [aukų istorija](./donation-history) lieka nepakitusi.
+Mokėjimo būdo pašalinimas neturi įtakos ankstesnėms aukoms. Jūsų [aukų istorija](./donation-history.md) lieka nepakitusi.
 :::
 
 :::tip
@@ -59,5 +60,5 @@ Greitai aukoti patogu, kai bent vienas mokėjimo būdas yra išsaugotas. Tada sk
 
 ## Susiję straipsniai
 
-- [Aukos atlikimas](./making-donations) -- sužinokite, kaip paaukoti naudojant išsaugotą mokėjimo būdą
-- [Aukų istorija](./donation-history) -- peržiūrėkite savo aukojimo suvestinę ir ankstesnes aukas
+- [Aukos atlikimas](./making-donations.md) -- sužinokite, kaip paaukoti naudojant išsaugotą mokėjimo būdą
+- [Aukų istorija](./donation-history.md) -- peržiūrėkite savo aukojimo suvestinę ir ankstesnes aukas

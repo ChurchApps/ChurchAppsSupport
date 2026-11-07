@@ -1,5 +1,6 @@
 ---
 title: "Naptárjóváhagyások"
+description: "Függő terem- és eszközfoglalások átnézése a B1 Admin-ban, ütközések ellenőrzése, majd elfogadás vagy elutasítás, opcionálisan az esemény közzétételével."
 ---
 
 # Naptárjóváhagyások
@@ -13,7 +14,7 @@ A Jóváhagyások oldalon a rendszergazdák áttekinthetik és kezelhetik a füg
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Állítson be egy **jóváhagyási csoportot** a termekhez vagy erőforrásokhoz a [Termek és erőforrások](rooms-resources) oldalon
+- Állítson be egy **jóváhagyási csoportot** a termekhez vagy erőforrásokhoz a [Termek és erőforrások](./rooms-resources.md) oldalon
 - Szüksége van a **Naptárkezelő** jogosultságra vagy a **content.edit** jogosultságra
 
 </div>
@@ -41,7 +42,7 @@ Kattintson a **Jóváhagyás** vagy az **Elutasítás** gombra bármely foglalá
 Amikor a **Jóváhagyás** gombra kattint, megnyílik a **Foglalás jóváhagyása** párbeszédpanel, így ugyanebben a lépésben közzé is teheti az eseményt:
 
 1. Jelölje be a **Közzététel a nyilvános naptárban** opciót, hogy az esemény látható legyen a csoportja nyilvános naptárában. Ha nincs bejelölve, a foglalás jóváhagyásra kerül anélkül, hogy az esemény láthatóságát megváltoztatná.
-2. Ha a **Közzététel a nyilvános naptárban** be van jelölve, opcionálisan kiválaszthat egy szerkesztett naptárat a **Hozzáadás ehhez a naptárhoz is** listából, hogy az eseményt az egyik [szerkesztett naptárhoz](curated-calendar) is hozzáadja. Ha a **Nincs** értéken hagyja, ezt a lépést kihagyja. (Ez a lehetőség csak akkor jelenik meg, ha rendelkezik a **content.edit** jogosultsággal.)
+2. Ha a **Közzététel a nyilvános naptárban** be van jelölve, opcionálisan kiválaszthat egy szerkesztett naptárat a **Hozzáadás ehhez a naptárhoz is** listából, hogy az eseményt az egyik [szerkesztett naptárhoz](./curated-calendar.md) is hozzáadja. Ha a **Nincs** értéken hagyja, ezt a lépést kihagyja. (Ez a lehetőség csak akkor jelenik meg, ha rendelkezik a **content.edit** jogosultsággal.)
 3. Kattintson a **Jóváhagyás** gombra.
 
 ## Függőben lévő események
@@ -49,10 +50,10 @@ Amikor a **Jóváhagyás** gombra kattint, megnyílik a **Foglalás jóváhagyá
 Ha a naptár munkafolyamata előírja, hogy az események csak jóváhagyás után váljanak nyilvánossá, a függőben lévő események az **Eseménykérelmek** szakaszban jelennek meg. Kattintson a **Jóváhagyás** gombra, hogy az eseményt közzétegye a naptárban, vagy az **Elutasítás** gombra, hogy értesítse a beküldőt, hogy módosításokra van szükség.
 
 :::tip
-Állítson be jóváhagyási csoportot egy teremhez a [Termek és erőforrások](rooms-resources) oldalon, ha az adott teremhez jóváhagyás szükséges. Az arra jogosult csoportok az események létrehozásakor igényelhetik a termet, és ezek a kérelmek ide érkeznek.
+Állítson be jóváhagyási csoportot egy teremhez a [Termek és erőforrások](./rooms-resources.md) oldalon, ha az adott teremhez jóváhagyás szükséges. Az arra jogosult csoportok az események létrehozásakor igényelhetik a termet, és ezek a kérelmek ide érkeznek.
 :::
 
 ## Kapcsolódó cikkek
 
-- [Termek, erőforrások és ütemezés](rooms-resources) — foglalható termek és erőforrások beállítása
-- [Naptárak létrehozása](creating-calendars) — naptárak és események kezelése
+- [Termek, erőforrások és ütemezés](./rooms-resources.md) — foglalható termek és erőforrások beállítása
+- [Naptárak létrehozása](./creating-calendars.md) — naptárak és események kezelése

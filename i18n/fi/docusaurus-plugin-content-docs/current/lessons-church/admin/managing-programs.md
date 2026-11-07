@@ -1,5 +1,6 @@
 ---
 title: "Ohjelmien hallinta"
+description: "Luo ja muokkaa opetusohjelmia Lessons.churchissa: slugit, pikkukuvat, opintojen ryhmittely kategorioihin ja ohjelmatason resurssit."
 ---
 
 # Ohjelmien hallinta

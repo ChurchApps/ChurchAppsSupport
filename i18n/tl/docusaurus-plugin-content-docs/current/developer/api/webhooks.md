@@ -1,5 +1,6 @@
 ---
 title: "Webhooks"
+description: "I-set up ang real-time webhook sa B1 Admin: magrehistro ng endpoint, pumili ng event, i-verify ang HMAC signature, at i-redeliver ang pumalyang payload."
 ---
 
 # Webhooks

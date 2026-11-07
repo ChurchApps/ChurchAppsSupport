@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "Verbinden Sie B1 Admin mit Google Sheets über das Add-on B1 Export, um Personen, Spenden, Gruppen und Anwesenheit bei Bedarf in Tabellenreiter zu laden."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ Der Export läuft im Hintergrund unter Ihrem Google-Konto. Wenn der API-Schlüss
 - **„B1 hat den API-Schlüssel abgelehnt (401)"** – der Schlüssel wurde widerrufen oder ist falsch. Erstellen Sie ihn neu und fügen Sie ihn erneut ein.
 - **„Dieser API-Schlüssel hat keine Berechtigung für /giving/donations (403)"** – der Schlüssel hat nicht `donations:read`. Aktualisieren Sie die Geltungsbereiche des Schlüssels in B1Admin.
 - **Tabelle wird nach dem Ausführen nicht aktualisiert** – stellen Sie sicher, dass Sie den *richtigen* Reiternamen (`B1 People` usw.) ansehen. Der Export erstellt den Reiter, wenn er nicht existierte.
-- **„Kontingent überschritten"** – Apps Script legt tägliche Pro-Benutzer-Kontingente für `UrlFetchApp` auf (normalerweise tausende Aufrufe pro Tag). Eine große Gemeinde mit vielen Aufzeichnungen muss möglicherweise Exporte auf mehrere Tage verteilen oder [Make](./make) / eine benutzerdefinierte Integration für Hochvolumen-Sync verwenden.
+- **„Kontingent überschritten"** – Apps Script legt tägliche Pro-Benutzer-Kontingente für `UrlFetchApp` auf (normalerweise tausende Aufrufe pro Tag). Eine große Gemeinde mit vielen Aufzeichnungen muss möglicherweise Exporte auf mehrere Tage verteilen oder [Make](./make.md) / eine benutzerdefinierte Integration für Hochvolumen-Sync verwenden.
 
 ## Das Add-on anpassen
 
@@ -108,6 +109,6 @@ Das Add-on ist Open Source – das Apps Script-Projekt lebt im Repository `B1Int
 
 ## Siehe auch
 
-- [Zapier](./zapier) – für Echtzeitsyncs statt Abruf-Export
-- [Make](./make) – für Sync mit komplexeren Transformationen
+- [Zapier](./zapier.md) – für Echtzeitsyncs statt Abruf-Export
+- [Make](./make.md) – für Sync mit komplexeren Transformationen
 - [API-Schlüssel (Entwickler-Referenz)](/docs/developer/api/api-keys)

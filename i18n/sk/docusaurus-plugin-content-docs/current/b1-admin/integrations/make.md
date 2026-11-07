@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "Pripojte B1 Admin k Make a automatizujte pracovné postupy: vytvorte API kľúč, nastavte spúšťač a akcie B1.church a riešte bežné chyby."
 ---
 
 # Make
@@ -110,6 +111,6 @@ Aplikácia Make pre B1.church je open source. Definície JSON sa nachádzajú v 
 
 ## Pozri tiež
 
-- [Zapier](./zapier) — rovnaký vzor s jednoduchším rozhraním a väčším katalógom aplikácií
-- [Slack & Discord](./slack-discord) — vstavané upozornenia v chate bez použitia Make
+- [Zapier](./zapier.md) — rovnaký vzor s jednoduchším rozhraním a väčším katalógom aplikácií
+- [Slack & Discord](./slack-discord.md) — vstavané upozornenia v chate bez použitia Make
 - [Webhooky (referencia pre vývojárov)](/docs/developer/api/webhooks)

@@ -1,5 +1,7 @@
 ---
-title: "Napi vers"
+title: "Napi vers a B1.church webhelyén és portálján"
+sidebar_label: "Napi vers"
+description: "A napi bibliaversek képeinek és korábbi verseinek böngészése; megosztás vagy letöltés bármilyen képernyőn a B1.church webhelyről vagy portálról."
 ---
 
 # Napi vers

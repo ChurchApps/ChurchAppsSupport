@@ -1,5 +1,6 @@
 ---
 title: "Personen"
+description: "Zoek, voeg toe en bewerk kerkleden in de sectie People van B1 Admin, met huishoudens, bulkupdates en ledengids printen en exporteren."
 ---
 
 # Personen

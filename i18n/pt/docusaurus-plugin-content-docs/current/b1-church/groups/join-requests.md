@@ -1,5 +1,6 @@
 ---
 title: "Solicitando Participar de um Grupo"
+description: "Solicite entrada em um grupo que exige aprovação no B1.church, adicione uma nota opcional para o líder e acompanhe ou cancele seu pedido pendente."
 ---
 
 # Solicitando Participar de um Grupo

@@ -1,5 +1,6 @@
 ---
 title: "Endpoint Doing"
+description: "Riferimento endpoint dell'API Doing dietro piani di culto, incarichi di volontariato, attività e automazioni in B1 Admin, con percorsi, autenticazione e permessi."
 ---
 
 # Endpoint Doing
@@ -278,6 +279,6 @@ Inoltra le richieste ai fornitori di contenuti esterni (ad esempio ProPresenter,
 
 ## Pagine correlate
 
-- [Endpoint Membership](./membership) — Persone, gruppi, ruoli e permessi
-- [Endpoint Presenze](./attendance) — Tracciamento di culti e visite
-- [Struttura del modulo](../module-structure) — Schemi di organizzazione del codice
+- [Endpoint Membership](./membership.md) — Persone, gruppi, ruoli e permessi
+- [Endpoint Presenze](./attendance.md) — Tracciamento di culti e visite
+- [Struttura del modulo](../module-structure.md) — Schemi di organizzazione del codice

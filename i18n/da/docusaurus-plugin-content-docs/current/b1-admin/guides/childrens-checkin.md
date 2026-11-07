@@ -1,5 +1,6 @@
 ---
 title: "Vejledning: Opsætning af børneministeriums ind- og udchecking"
+description: "Opsæt børnecheck-in i B1 Admin: knyt familier sammen, opret aldersgrupper, konfigurér gudstjenester og udskriv navnebrikker til B1 Checkin-kiosken."
 ---
 
 # Opsætning af børneministeriums ind- og udchecking

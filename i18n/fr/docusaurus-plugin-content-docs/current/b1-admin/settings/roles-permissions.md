@@ -1,5 +1,6 @@
 ---
 title: "Rôles et autorisations"
+description: "Configurez des rôles dans B1 Admin pour définir ce que personnel et bénévoles voient et modifient : dons, présence, personnes et groupes."
 ---
 
 # Rôles et autorisations

@@ -1,5 +1,7 @@
 ---
-title: "Điểm danh"
+title: "Điểm danh nhà thờ bằng ứng dụng B1 Mobile"
+sidebar_label: "Điểm danh"
+description: "Tự điểm danh bản thân và gia đình vào các buổi lễ bằng điện thoại trong B1 Mobile, chọn buổi lễ và nhóm trước khi đến."
 ---
 
 # Điểm danh
@@ -16,7 +18,7 @@ Quy trình điểm danh là một chuỗi các bước nhanh, hướng dẫn b�
 
 ## Bắt đầu
 
-Để truy cập tính năng điểm danh, hãy mở mục **Điểm danh** trong B1 Mobile. Bạn phải đăng nhập để sử dụng tính năng này. Nếu chưa đăng nhập, bạn sẽ được yêu cầu [đăng nhập](../getting-started/logging-in) trước.
+Để truy cập tính năng điểm danh, hãy mở mục **Điểm danh** trong B1 Mobile. Bạn phải đăng nhập để sử dụng tính năng này. Nếu chưa đăng nhập, bạn sẽ được yêu cầu [đăng nhập](../getting-started/logging-in.md) trước.
 
 :::info
 Tính năng điểm danh yêu cầu nhà thờ của bạn đã thiết lập các buổi lễ và nhóm điểm danh trong phần cài đặt quản trị. Nếu không có buổi lễ nào hiển thị khi bạn mở màn hình điểm danh, nhà thờ có thể chưa cấu hình tính năng này. Hãy liên hệ quản trị viên nhà thờ để được hỗ trợ.
@@ -30,4 +32,4 @@ Tính năng điểm danh yêu cầu nhà thờ của bạn đã thiết lập c�
 
 ## Bước tiếp theo
 
-- [Tự điểm danh](./self-checkin) -- Hướng dẫn từng bước cách tự điểm danh từ điện thoại của bạn
+- [Tự điểm danh](./self-checkin.md) -- Hướng dẫn từng bước cách tự điểm danh từ điện thoại của bạn

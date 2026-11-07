@@ -1,5 +1,6 @@
 ---
 title: "オンライン献金の設定"
+description: "Stripe、PayPal、Kingdom Funding、Paystack を B1 Admin に接続します。会員は B1.church のサイトからオンラインで献金でき、その記録は自動的に同期されます。"
 ---
 
 # オンライン献金の設定

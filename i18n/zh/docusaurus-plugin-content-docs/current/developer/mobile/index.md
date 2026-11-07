@@ -1,5 +1,6 @@
 ---
 title: "移动应用"
+description: "ChurchApps Expo 和 React Native 移动应用概览，包括 B1 Mobile、B1 Checkin 和 LessonsScreen，并附有共享工具链的设置指南链接。"
 ---
 
 # 移动应用
@@ -14,13 +15,13 @@ ChurchApps 移动应用使用 **React Native** 和 **Expo** 构建，在 Android
 
 | 应用 | 用途 | 平台 |
 |-----|---------|----------|
-| [B1 Mobile](./b1-mobile) | 面向教会成员的主要应用 | Android、iOS |
+| [B1 Mobile](./b1-mobile.md) | 面向教会成员的主要应用 | Android、iOS |
 | B1 Checkin | 签到站的自助终端应用 | Android、iOS |
 | LessonsScreen | 在教室中展示课程的 Android TV 应用 | Android TV |
 
 ### B1 Mobile
 
-主要的教会成员应用。成员可以查看通讯录、访问捐赠、查看出席、接收通知并与教会社区互动。详见 [B1 Mobile 配置指南](./b1-mobile)。
+主要的教会成员应用。成员可以查看通讯录、访问捐赠、查看出席、接收通知并与教会社区互动。详见 [B1 Mobile 配置指南](./b1-mobile.md)。
 
 ### B1 Checkin
 
@@ -31,5 +32,5 @@ ChurchApps 移动应用使用 **React Native** 和 **Expo** 构建，在 Android
 在教室中展示课程内容的 Android TV 应用。教师可以将课程幻灯片、视频和活动推送到电视屏幕，便于在课堂上展示课程材料。
 
 :::info
-所有移动应用共享相同的基于 Expo 的工具链，并遵循类似的配置模式。[B1 Mobile](./b1-mobile) 指南可作为所有移动项目通用配置流程的参考。
+所有移动应用共享相同的基于 Expo 的工具链，并遵循类似的配置模式。[B1 Mobile](./b1-mobile.md) 指南可作为所有移动项目通用配置流程的参考。
 :::

@@ -1,5 +1,6 @@
 ---
 title: "Bağış Özeti"
+description: "B1 Admin'de Bağış Özeti raporunu çalıştırarak seçtiğiniz tarih aralığında toplam bağışı, benzersiz bağışçı sayısını ve fona göre tutarları görün."
 ---
 
 # Bağış Özeti

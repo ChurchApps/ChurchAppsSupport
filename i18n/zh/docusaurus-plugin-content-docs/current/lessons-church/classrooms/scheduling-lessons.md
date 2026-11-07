@@ -1,5 +1,7 @@
 ---
-title: "安排课程"
+title: "在门户中安排教室课程"
+sidebar_label: "安排课程"
+description: "在 B1 Admin 门户中，为每个日期选择项目、研读、课程和适合特定年龄段的场地，将 Lessons.church 课程安排到教室日历上。"
 ---
 
 # 安排课程

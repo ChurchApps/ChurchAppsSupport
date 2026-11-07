@@ -1,5 +1,6 @@
 ---
 title: "Relatórios de presença"
+description: "Veja os três relatórios de presença do B1 Admin (Attendance Trend, Group Attendance, Daily Group Attendance), o que mostram e como exportá-los."
 ---
 
 # Relatórios de presença

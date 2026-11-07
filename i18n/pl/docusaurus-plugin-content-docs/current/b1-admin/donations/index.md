@@ -1,5 +1,6 @@
 ---
 title: "Dary"
+description: "Rejestruj, porządkuj i raportuj ofiary w B1 Admin: od partii i funduszy po roczne zestawienia oraz darowizny online przez Stripe lub PayPal."
 ---
 
 # Dary

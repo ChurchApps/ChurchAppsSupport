@@ -1,5 +1,6 @@
 ---
 title: "Domeniu personalizat"
+description: "Îndreaptă propriul domeniu, de pildă www.yourchurch.org, spre site-ul tău B1 din B1 Admin, configurând înregistrările DNS și adăugând domeniul în Settings."
 ---
 
 # Domeniu personalizat

@@ -1,5 +1,6 @@
 ---
 title: "Modalità presentatore"
+description: "Avviare una lezione a schermo intero su proiettore o TV dell'aula con la Presenter Mode di Lessons.church e scorrere ogni sezione durante la lezione."
 ---
 
 # Modalità presentatore

@@ -1,5 +1,6 @@
 ---
 title: "Mobilalkalmazás telepítése"
+description: "Végigvezet a B1 Mobile alkalmazás Android- és iOS-kiadásainak elkészítésén az Expo EAS-szel, az áruházakba való beküldésen és az OTA-frissítések közzétételén."
 ---
 
 # Mobilalkalmazás telepítése
@@ -13,7 +14,7 @@ A ChurchApps mobilalkalmazásait az **Expo EAS Build** segítségével építjü
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Állítsa be a mobilalkalmazást helyileg – lásd: [B1 Mobile](../mobile/b1-mobile)
+- Állítsa be a mobilalkalmazást helyileg – lásd: [B1 Mobile](../mobile/b1-mobile.md)
 - Telepítse és állítsa be az [EAS CLI](https://docs.expo.dev/eas/) eszközt
 - Legyen hozzáférése a Google Play Console-hoz (Android) és/vagy az Apple App Store Connect-hez (iOS)
 
@@ -77,6 +78,6 @@ Ha nem frissíti a verziószámokat az összes fájlban, az építés hibára fu
 
 ## Kapcsolódó cikkek
 
-- **[B1 Mobile](../mobile/b1-mobile)** – Helyi beállítás és fejlesztési útmutató
-- **[API-telepítés](./apis)** – A háttérrendszeri API-k telepítése
-- **[Webalkalmazás-telepítés](./web-apps)** – A frontend webalkalmazások telepítése
+- **[B1 Mobile](../mobile/b1-mobile.md)** – Helyi beállítás és fejlesztési útmutató
+- **[API-telepítés](./apis.md)** – A háttérrendszeri API-k telepítése
+- **[Webalkalmazás-telepítés](./web-apps.md)** – A frontend webalkalmazások telepítése

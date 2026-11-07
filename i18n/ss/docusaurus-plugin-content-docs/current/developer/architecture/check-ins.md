@@ -1,5 +1,6 @@
 ---
 title: "Kungena/Kuphuma"
+description: "Indlela yekungena kuB1Checkin, B1App ne-B1 Admin: imodeli yedatha yekuvakashela, emaqembu njengemakamelo, emikhawulo yebantfu, nemitsetfo yekuphepha."
 ---
 
 # Kungena/Kuphuma
@@ -195,7 +196,7 @@ Tindlela letimbili tikhawakhe umuntfu ngekhatsi kwekungena:
 
 ## Emakhasi Lahambelanako
 
-- [Ema-Endpoint E-Attendance](../api/endpoints/attendance) -- Indzawo yonkhe ye-REST yema-campus, imisebenti, imihlangano, kungena, kanye netimihlangano yekungena
-- [Ema-Endpoint E-Membership](../api/endpoints/membership) -- Bantfu, emakhaya, kanye nemacembu
-- [Ema-Webhook](../api/webhooks) -- Tehlakalo te-`session.created`, `attendance.recorded`, kanye ne-`attendance.checkout`
-- [Sakhiwo Se-Module](../api/module-structure) -- Indlela module ye-attendance ihlelwe ngayo ecaleni le-server
+- [Ema-Endpoint E-Attendance](../api/endpoints/attendance.md) -- Indzawo yonkhe ye-REST yema-campus, imisebenti, imihlangano, kungena, kanye netimihlangano yekungena
+- [Ema-Endpoint E-Membership](../api/endpoints/membership.md) -- Bantfu, emakhaya, kanye nemacembu
+- [Ema-Webhook](../api/webhooks.md) -- Tehlakalo te-`session.created`, `attendance.recorded`, kanye ne-`attendance.checkout`
+- [Sakhiwo Se-Module](../api/module-structure.md) -- Indlela module ye-attendance ihlelwe ngayo ecaleni le-server

@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Koppel Donorbox aan B1 Admin met Zapier, zodat online donaties automatisch donatierecords en donorprofielen aanmaken, zonder handmatige export."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Donorbox' *Nieuwe of bijgewerkte donatie* wordt ook geactiveerd bij bewerkingen.
 
 ## Zie ook
 
-- [Zapier (overzicht)](../zapier): de B1-kant van elk Zapier-recept
-- [Subsplash](./subsplash): een ander donatieplatform met een Zapier-app
-- [Mailchimp](./mailchimp): koppel "nieuwe gift" aan een e-mailtag
+- [Zapier (overzicht)](../zapier.md): de B1-kant van elk Zapier-recept
+- [Subsplash](./subsplash.md): een ander donatieplatform met een Zapier-app
+- [Mailchimp](./mailchimp.md): koppel "nieuwe gift" aan een e-mailtag

@@ -1,5 +1,6 @@
 ---
 title: "Vizualizarea pentru profesori a lecțiilor"
+description: "Deschide o lecție în Teacher View pe ecran complet dintr-un plan de pe B1.church, apoi sari între secțiuni, redă media și descarcă resursele de clasă."
 ---
 
 # Vizualizarea pentru profesori a lecțiilor

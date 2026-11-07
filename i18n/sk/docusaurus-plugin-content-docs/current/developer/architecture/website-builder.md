@@ -1,5 +1,6 @@
 ---
 title: "Architektúra tvorby webových stránok"
+description: "Vývojárska mapa tvorcu webov B1: strom obsahu, spoločný katalóg prvkov, renderovací proces a generovanie stránok pomocou AI v B1 Admin a B1.church."
 ---
 
 # Architektúra tvorby webových stránok
@@ -82,7 +83,7 @@ Vykresľovače sa nachádzajú v `Packages/apphelper/src/website/components/elem
 
 ### Formuláre editora (B1Admin)
 
-Formuláre nastavení editora pre jednotlivé typy sa nachádzajú v `B1Admin/src/site/admin/elements/` — `ElementEdit.tsx` odošle požiadavku na vyhradený komponent (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) alebo na vložený zostavovač polí pre každý typ. Zrkadlo tohto katalógu určené pre AI je nástroj MCP `describe_page_builder` v API (pozri [MCP Server](../api/mcp)).
+Formuláre nastavení editora pre jednotlivé typy sa nachádzajú v `B1Admin/src/site/admin/elements/` — `ElementEdit.tsx` odošle požiadavku na vyhradený komponent (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) alebo na vložený zostavovač polí pre každý typ. Zrkadlo tohto katalógu určené pre AI je nástroj MCP `describe_page_builder` v API (pozri [MCP Server](../api/mcp.md)).
 
 Náhľad editora pripája rovnakú `Theme` ako živá stránka, ktorá nastavuje premenné CSS `--headingFont` / `--bodyFont` z globálnych štýlov cirkvi. B1App tieto premenné uplatňuje cez `pages.css`, ktorý B1Admin nemôže importovať, preto `ContentEditor.tsx` vkladá `EDITOR_PAGE_FONT_CSS` (`src/site/admin/editorCss.ts`), aby ich uplatnil na text `.page` a na `h1`–`h6`. Bez toho náhľad zobrazoval nadpisy písmom administrácie.
 
@@ -151,7 +152,7 @@ Všetko toto je vykresľovanie na strane B1App nad dátami ContentApi — API uk
 |---------|--------------|
 | Meta popisy | `pages.metaDescription` (≤300 znakov) prechádza cez `MetaHelper.getMetaData()` do `Metadata` Next.js (popis + Open Graph) na každej trase vykreslenej tvorcom stránok. Nastavenia stránky v B1Admin obsahujú tlačidlo AI „Generovať“ (pozri nižšie) |
 | Presmerovania | Riadky `redirects` pre každú cirkev spravované na `/content/redirects` (`content.edit`, limit 200 riadkov, normalizované cesty). Pri stave, ktorý by inak skončil chybou 404, trasa stránky B1App vyhľadá cestu v `GET /content/redirects/public/:churchId` a cez `permanentRedirect` z Next vydá HTTP 308; nezhodné cesty prejdú na `notFound()` |
-| Stránka 404 so značkou | `not-found.tsx` vykreslí `BrandedNotFound` s logom cirkvi, jej názvom a témou namiesto všeobecnej chyby. Neznáme cesty `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` a `/volunteer/[planId]` vracajú skutočnú chybu 404, rovnako ako neznáme subdomény a chybne utvorené slugy stránok (pozri [Smerovanie webových stránok a viac lokalít](./websites)) |
+| Stránka 404 so značkou | `not-found.tsx` vykreslí `BrandedNotFound` s logom cirkvi, jej názvom a témou namiesto všeobecnej chyby. Neznáme cesty `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` a `/volunteer/[planId]` vracajú skutočnú chybu 404, rovnako ako neznáme subdomény a chybne utvorené slugy stránok (pozri [Smerovanie webových stránok a viac lokalít](./websites.md)) |
 | Štruktúrované dáta | JSON-LD `BlogPosting` na blogových príspevkoch; `VideoObject` na stránkach jednotlivých kázní (`/{sdSlug}/sermons/[sermonId]`) a na stránkach obsahujúcich prvok `sermons`; `Event` z prvkov kalendára/udalostí na stránkach tvorcu a na každej stránke `/{sdSlug}/events/[eventId]` (najbližší výskyt, s fotografiou udalosti ako `image`); schema.org `Event` z prvku `serviceTimes` |
 | Stránky kázní | Každá verejná kázeň dostane prehľadávateľnú stránku na `/sermons/[sermonId]` s úplnými metaúdajmi — kázne už nie sú uzamknuté vo vnútri prehliadača na strane klienta |
 | Analytika | Verejné nastavenie `ga4MeasurementId` (spravované vedľa presmerovaní v B1Admin) vkladá gtag GA4 pre každú cirkev cez `next/script`. Aplikácia B1 (`/{sdSlug}/mobile`) posiela zobrazenia svojich stránok na toto ID spolu so značkou ChurchApps, ak ide o platné ID `G-` (ID kontajnerov GTM zostávajú len pre webové stránky). Každé `gtag('config')` nesie `display_mode` s hodnotou `installed` alebo `browser`, podľa `navigator.standalone` alebo mediálneho dotazu `(display-mode: standalone)` (`B1App/src/helpers/mobileAnalytics.ts`) |
@@ -199,7 +200,7 @@ Tlačidlo prepísania v `SectionToolbar` a tlačidlo „Generovať web“ v zozn
 | `POST /website/generateAltText` | Volanie s obrazovou analýzou nad až 20 URL obrázkov; vracia stručný alternatívny text (≤125 znakov, predpony „fotografia“ sa odstránia) |
 | `POST /website/generateMetaDescription` | Jeden SEO meta popis (≤155 znakov) z textového obsahu stránky — napojený na tlačidlo Generovať v nastaveniach stránky v B1Admin |
 
-Výzvy pre tieto koncové body sú súbory markdown v `AskApi/config/instructions/`, vrátane katalógu prvkov, z ktorého model generuje. Dva návrhové body udržujú katalóg poctivý: klient posiela `availableElementTypes` pri každej požiadavke (výzva smie používať len typy z tohto zoznamu — server nikdy nepevne nekóduje úplnú sadu) a nástroj MCP `describe_page_builder` v API nesie rovnaký sprievodca pre AI agentov pracujúcich cez [MCP](../api/mcp). Modely sú Anthropic Claude cez OpenRouter — 3.5 Haiku pre obsah sekcií (latencia), 3.5 Sonnet pre osnovy, plány webov a obrazovú analýzu — so záložným OpenAI, keď nie je nakonfigurovaný kľúč OpenRouter.
+Výzvy pre tieto koncové body sú súbory markdown v `AskApi/config/instructions/`, vrátane katalógu prvkov, z ktorého model generuje. Dva návrhové body udržujú katalóg poctivý: klient posiela `availableElementTypes` pri každej požiadavke (výzva smie používať len typy z tohto zoznamu — server nikdy nepevne nekóduje úplnú sadu) a nástroj MCP `describe_page_builder` v API nesie rovnaký sprievodca pre AI agentov pracujúcich cez [MCP](../api/mcp.md). Modely sú Anthropic Claude cez OpenRouter — 3.5 Haiku pre obsah sekcií (latencia), 3.5 Sonnet pre osnovy, plány webov a obrazovú analýzu — so záložným OpenAI, keď nie je nakonfigurovaný kľúč OpenRouter.
 
 ## Konverzačné formuláre
 
@@ -224,8 +225,8 @@ Kontroléry, ktoré vykonávajú bump: stránky (uloženie, vymazanie, duplikova
 
 ## Súvisiace stránky
 
-- [Smerovanie webových stránok a viac lokalít](./websites) — ako sa požiadavka prekladá na cirkev/lokalitu a ako sa smerujú vlastné domény
-- [Koncové body obsahu](../api/endpoints/content) — úplný REST povrch pre stránky, sekcie, prvky, bloky, príspevky, presmerovania a nastavenia
-- [AppHelper](../shared-libraries/app-helper) — balík npm, ktorý dodáva vykresľovače, register, oddeľovače a widgety
-- [MCP Server](../api/mcp) — vrátane nástroja-sprievodcu `describe_page_builder`
+- [Smerovanie webových stránok a viac lokalít](./websites.md) — ako sa požiadavka prekladá na cirkev/lokalitu a ako sa smerujú vlastné domény
+- [Koncové body obsahu](../api/endpoints/content.md) — úplný REST povrch pre stránky, sekcie, prvky, bloky, príspevky, presmerovania a nastavenia
+- [AppHelper](../shared-libraries/app-helper.md) — balík npm, ktorý dodáva vykresľovače, register, oddeľovače a widgety
+- [MCP Server](../api/mcp.md) — vrátane nástroja-sprievodcu `describe_page_builder`
 - [Editor stránok (pre koncových používateľov)](/docs/b1-admin/website/page-editor) — dokumentácia editora pre zamestnancov

@@ -1,5 +1,6 @@
 ---
 title: "Simo Semaqembu"
+description: "Hlola simo seliqembu ku-B1 Admin ngetabula lelilandzelela emalanga langu-90 emalungu, ekujoyineni, ekuhambeni, kushintja kwemalungu nekutfola kwemahambele."
 ---
 
 # Simo Semaqembu
@@ -13,8 +14,8 @@ Inkomba ye-Simo Semaqembu ikunika umbono lophakeme wendlela onkhe emaqembu akho 
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- Udzinga kungenani emaqembu lambalwa lanemalunga kute ubone imininingwane lenengcondzo. Bona [Kudala Emaqembu](creating-groups).
-- Imininingwane yekubakhona itsatfwa kutimhlangano letibhalisiwe. Bona sigaba se-[Kubakhona](../attendance/).
+- Udzinga kungenani emaqembu lambalwa lanemalunga kute ubone imininingwane lenengcondzo. Bona [Kudala Emaqembu](./creating-groups.md).
+- Imininingwane yekubakhona itsatfwa kutimhlangano letibhalisiwe. Bona sigaba se-[Kubakhona](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Kuchofota ligama leliqembu kukuyisa ngalokucondzile ekhasini lemininingwane yeli
 
 ## Timiba Letihambelanako
 
-- [Kudala Emaqembu](creating-groups) — kusungula emaqembu
-- [Emalunga Eliqembu](group-members) — kuphatsa bulunga beliqembu
-- [Kulandzelela Kubakhona](../attendance/tracking-attendance) — bhalisa timhlangano tekubakhona letinika lenkomba imininingwane
+- [Kudala Emaqembu](./creating-groups.md) — kusungula emaqembu
+- [Emalunga Eliqembu](./group-members.md) — kuphatsa bulunga beliqembu
+- [Kulandzelela Kubakhona](../attendance/tracking-attendance.md) — bhalisa timhlangano tekubakhona letinika lenkomba imininingwane

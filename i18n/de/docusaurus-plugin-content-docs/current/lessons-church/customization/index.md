@@ -1,5 +1,6 @@
 ---
 title: "Anpassung"
+description: "Abschnitte, Rollen oder Aktionen ausblenden und Inhalte umsortieren, für ein Klassenzimmer oder alle Klassenzimmer der Gemeinde."
 ---
 
 # Anpassung

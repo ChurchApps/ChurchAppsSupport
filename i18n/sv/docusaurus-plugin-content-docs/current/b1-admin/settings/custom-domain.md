@@ -1,5 +1,6 @@
 ---
 title: "Eigen domän"
+description: "Peka en egen domän, till exempel www.dinkyrka.se, mot din B1-webbplats i B1 Admin genom att ställa in DNS-poster och lägga till domänen under Settings."
 ---
 
 # Eigen domän

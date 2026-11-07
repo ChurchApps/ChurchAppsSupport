@@ -1,5 +1,6 @@
 ---
 title: "Database"
+description: "Alamin kung paano hinahati ng ChurchApps API ang datos sa anim na MySQL database (isa bawat module), at paano i-configure at i-initialize ang mga ito."
 ---
 
 # Database
@@ -13,8 +14,8 @@ Gumagamit ang ChurchApps API ng arkitekturang **database-per-module**. Ang bawat
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-install ang **MySQL 8.0+** -- tingnan ang [Prerequisites](../setup/prerequisites)
-- I-configure ang mga connection string ng database sa iyong `.env` file -- tingnan ang [Environment Variables](../setup/environment-variables)
+- I-install ang **MySQL 8.0+** -- tingnan ang [Prerequisites](../setup/prerequisites.md)
+- I-configure ang mga connection string ng database sa iyong `.env` file -- tingnan ang [Environment Variables](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Mga Pangunahing Desisyon sa Disenyo
 
 - **Isang database bawat module** -- Nagpapanatili ang bawat module ng sarili nitong MySQL database na may dedicated na connection pool (pinamamahalaan ng `KyselyPool`). Pinapanatili nitong hiwalay ang mga module at pinapayagan ang independiyenteng ebolusyon ng schema.
-- **Eksklusibong pagmamay-ari** -- Binabasa at isinusulat lamang ang mga table ng isang module ng sariling code ng module na iyon. Kapag kailangan ng ibang module ang data, tinatawagan nito ang gateway ng module na may-ari sa halip na direktang mag-query sa mga table nito -- tingnan ang [Cross-Module Communication](./module-structure#cross-module-communication).
+- **Eksklusibong pagmamay-ari** -- Binabasa at isinusulat lamang ang mga table ng isang module ng sariling code ng module na iyon. Kapag kailangan ng ibang module ang data, tinatawagan nito ang gateway ng module na may-ari sa halip na direktang mag-query sa mga table nito -- tingnan ang [Cross-Module Communication](./module-structure.md#cross-module-communication).
 - **Repository pattern nang walang ORM** -- Dumadaan ang lahat ng data access sa mga repository class na bumubuo ng typed SQL gamit ang Kysely query builder laban sa schema ng module. Nagbibigay ito ng buong kontrol sa performance at asal ng query.
 - **Multi-tenant sa disenyo** -- Naka-scope ang bawat query sa pamamagitan ng `churchId`. May kasamang column na `churchId` ang lahat ng table, at awtomatikong ipinapatupad ng repository layer ang tenant isolation.
 
@@ -129,5 +130,5 @@ Ito ang constraint na gumagawa sa mga hangganan ng module na totoo: maaaring mag
 
 ## Mga Kaugnay na Artikulo
 
-- **[Module Structure](./module-structure)** -- Kung paano nakaayos ang mga controller at repository sa loob ng bawat module
-- **[Local API Setup](./local-setup)** -- Kumpletong hakbang-hakbang na gabay sa setup
+- **[Module Structure](./module-structure.md)** -- Kung paano nakaayos ang mga controller at repository sa loob ng bawat module
+- **[Local API Setup](./local-setup.md)** -- Kumpletong hakbang-hakbang na gabay sa setup

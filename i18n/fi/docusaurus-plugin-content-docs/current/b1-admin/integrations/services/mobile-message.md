@@ -1,5 +1,6 @@
 ---
 title: "Mobile Message"
+description: "Yhdistä B1 Adminin tapahtumat Mobile Message -palveluun (australialainen SMS-rajapinta) Zapierilla tai Makella tervetulo-, lahjoitus- ja muistutusviesteihin."
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ Mobile Messagen `/v1/messages`-päätepiste hyväksyy enintään 10 000 viestiä
 
 ### Make-vaihtoehto
 
-Jos haluat käyttää Makea, lisää **HTTP — Make a request** -moduuli B1 Watch Events -laukaisimen jälkeen. Määritä se samalla tavalla (POST, Basic Auth, JSON-runko). B1-puolen ohjeet löydät [Make-yleiskatsauksesta](../make).
+Jos haluat käyttää Makea, lisää **HTTP — Make a request** -moduuli B1 Watch Events -laukaisimen jälkeen. Määritä se samalla tavalla (POST, Basic Auth, JSON-runko). B1-puolen ohjeet löydät [Make-yleiskatsauksesta](../make.md).
 
 ## Rajoitukset ja huomiot
 
@@ -102,6 +103,6 @@ Jos haluat käyttää Makea, lisää **HTTP — Make a request** -moduuli B1 Wat
 
 ## Katso myös
 
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — vaihtoehtoiset SMS-palveluntarjoajat, joilla on natiivi Zapier-sovellus (Webhooks by Zapier -vaihetta ei tarvita)
-- [Zapier (yleiskatsaus)](../zapier) — B1-puoli jokaiselle Zapier-reseptille
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — vaihtoehtoiset SMS-palveluntarjoajat, joilla on natiivi Zapier-sovellus (Webhooks by Zapier -vaihetta ei tarvita)
+- [Zapier (yleiskatsaus)](../zapier.md) — B1-puoli jokaiselle Zapier-reseptille
 - [Mobile Message API -dokumentaatio](https://mobilemessage.com.au/api-documentation)

@@ -1,5 +1,6 @@
 ---
 title: "공유 라이브러리"
+description: "B1 Admin, B1.church, API가 사용하는 @churchapps npm 패키지 문서, Packages 워크스페이스 설정 방법, changesets를 이용한 릴리스 방법."
 ---
 
 # 공유 라이브러리
@@ -14,9 +15,9 @@ ChurchApps의 공유 코드는 `@churchapps/*` 범위로 npm에 게시됩니다.
 
 | 패키지 | 설명 | 사용처 |
 |---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | 기반 계층입니다. 프레임워크에 의존하지 않는 헬퍼 함수와, 앱 간 데이터 계약을 이루는 공유 TypeScript 인터페이스를 제공합니다 | 모든 프로젝트 |
-| [`@churchapps/apihelper`](./api-helper) | 서버 측 Express 유틸리티입니다. 인증, 기본 컨트롤러, 데이터베이스 접근, AWS 및 이메일 연동을 제공합니다 | 모든 API |
-| [`@churchapps/apphelper`](./app-helper) | 공유 React 컴포넌트와 기능 모듈입니다(로그인, 기부, 양식, 마크다운, 웹사이트) | 모든 웹 앱 |
+| [`@churchapps/helpers`](./helpers.md) | 기반 계층입니다. 프레임워크에 의존하지 않는 헬퍼 함수와, 앱 간 데이터 계약을 이루는 공유 TypeScript 인터페이스를 제공합니다 | 모든 프로젝트 |
+| [`@churchapps/apihelper`](./api-helper.md) | 서버 측 Express 유틸리티입니다. 인증, 기본 컨트롤러, 데이터베이스 접근, AWS 및 이메일 연동을 제공합니다 | 모든 API |
+| [`@churchapps/apphelper`](./app-helper.md) | 공유 React 컴포넌트와 기능 모듈입니다(로그인, 기부, 양식, 마크다운, 웹사이트) | 모든 웹 앱 |
 | `@churchapps/content-providers` | 서드파티 콘텐츠 제공자(Lessons.church, Planning Center, Dropbox 등)를 추상화합니다 | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | B1.church 연동을 만들기 위한 도구 모음입니다. 웹훅 검증, 타입이 지정된 REST 클라이언트, OAuth 헬퍼를 제공합니다 | 외부 연동 개발자 |
 | `@churchapps/texting` | SMS 제공자 추상화입니다(Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

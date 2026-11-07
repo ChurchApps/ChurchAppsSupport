@@ -1,5 +1,6 @@
 ---
 title: "Plačljive prijave"
+description: "Nastavite plačljive prijave na dogodke v B1 Admin: cene za vrste udeležencev, dodatke, popustne kode, čakalne sezname in plačila prek ponudnika darovanj."
 ---
 
 # Plačljive prijave
@@ -17,7 +18,7 @@ Prijava na dogodek lahko presega preprosto štetje udeležencev. Določite lahko
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Najprej omogočite prijave za dogodek — glejte [Ustvarjanje koledarjev](creating-calendars#enabling-event-registration)
+- Najprej omogočite prijave za dogodek — glejte [Ustvarjanje koledarjev](./creating-calendars.md#enabling-event-registration)
 - Za spletno zbiranje plačil mora vaša cerkev imeti [nastavljeno spletno darovanje](../donations/online-giving-setup.md) (Stripe, PayPal ali Kingdom Funding). Brezplačni dogodki ne potrebujejo nastavitve darovanja. Brez spletnega darovanja plačljive prijave še vedno delujejo, vendar ljudje plačajo neposredno cerkvi — glejte [Cerkve brez spletnega darovanja](#churches-without-online-giving).
 
 </div>
@@ -66,7 +67,7 @@ Pri vsaki kodi je prikazano število **Uses** (Uporabe), tako da vidite, kako po
 V kartici Registration Settings (Nastavitve prijav) vklopite **Enable Waitlist** (Omogoči seznam čakanja). Ko dogodek doseže zmogljivost:
 
 - Novi prijavljeni dobijo mesto na seznamu čakanja namesto zavrnitve. Opravijo isto prijavo (plačilo med čakanjem preskočeno).
-- Ko nekdo odpove prijavo, se najstarejša prijava s seznama čakanja **samodejno uvrsti** in prejme e-poštno sporočilo, da se je sprostilo mesto. Če dolgujejo znesek, sporočilo povezuje na [Moje prijave](../../b1-church/events/my-registrations) na spletnem mestu B1 vaše cerkve, kjer lahko opravijo plačilo.
+- Ko nekdo odpove prijavo, se najstarejša prijava s seznama čakanja **samodejno uvrsti** in prejme e-poštno sporočilo, da se je sprostilo mesto. Če dolgujejo znesek, sporočilo povezuje na [Moje prijave](../../b1-church/events/my-registrations.md) na spletnem mestu B1 vaše cerkve, kjer lahko opravijo plačilo.
 - Osebo lahko kadarkoli ročno uvrstite z dejanjem **Promote** (Uvrsti) v vrstici s seznama čakanja — uporabno po povečanju zmogljivosti dogodka.
 
 :::info
@@ -79,7 +80,7 @@ Odprite dogodek na strani Registrations (Prijave), da vidite vse prijave. Naslov
 
 - Kliknite ikono podrobnosti v vrstici, da odprete pogovorno okno **Registration Details** (Podrobnosti prijave) — člani, izbire, plačano/dolg in tabelo **Payments** (Plačila), ki navaja vsak zaračun (znesek, način, datum).
 - **Export CSV** prenese celoten seznam prijavljenih s stolpci za člane, vrste udeležencev, izbire, plačano/skupaj/dolg, stanje in en stolpec za vsako vprašanje ob prijavi.
-- **Add Attendee** (Dodaj udeleženca) zabeleži prijavo brez spleta ali po telefonu za katero koli osebo v vaši cerkvi. Izberite osebo in pri plačljivem dogodku še njeno vrsto udeleženca. Njihova kartica ni zaračunana: plačljiva prijava se shrani kot **pending** (na čakanju) s celotnim zneskom kot neporavnanim dolgom. Če ima vaša cerkev spletno darovanje, lahko oseba plača prek [Moje prijave](../../b1-church/events/my-registrations); sicer znesek zberete osebno. Za dodajanje udeležencev potrebujete dovoljenje Registrations Edit (Urejanje prijav).
+- **Add Attendee** (Dodaj udeleženca) zabeleži prijavo brez spleta ali po telefonu za katero koli osebo v vaši cerkvi. Izberite osebo in pri plačljivem dogodku še njeno vrsto udeleženca. Njihova kartica ni zaračunana: plačljiva prijava se shrani kot **pending** (na čakanju) s celotnim zneskom kot neporavnanim dolgom. Če ima vaša cerkev spletno darovanje, lahko oseba plača prek [Moje prijave](../../b1-church/events/my-registrations.md); sicer znesek zberete osebno. Za dodajanje udeležencev potrebujete dovoljenje Registrations Edit (Urejanje prijav).
 
 :::info
 Vračil denarja v B1 ni mogoče obdelati. Če morate vrniti denar za odpovedano plačljivo prijavo, ga izvedite na nadzorni plošči vašega ponudnika darovanj (na primer Stripe).
@@ -94,12 +95,12 @@ Plačila potekajo prek istega prehoda za darovanja, ki ga vaša cerkev že upora
 Če vaša cerkev nima nastavljenega ponudnika darovanj, lahko plačljivi dogodki vseeno sprejemajo prijave. Korak plačila prijavljenim sporoči, da spletno plačilo ni na voljo in da lahko cerkvi plačajo neposredno, gumb **Register and Pay Later** (Prijavi se in plačaj kasneje) pa shrani prijavo. Shrani se kot **pending** (na čakanju) s celotnim zneskom kot neporavnanim dolgom in se prikaže na seznamu s opozorilom o dolgu. Denar zberite na način, ki ga vaša cerkev običajno uporablja.
 
 :::info
-B1 nima načina, da bi označil, da je bilo offline plačilo prejeto. Neporavnani dolg ostane na seznamu in na kartici [Moje prijave](../../b1-church/events/my-registrations) prijavljenega tudi potem, ko ga zberete, zato vodite lastno evidenco o tem, kdo je plačal.
+B1 nima načina, da bi označil, da je bilo offline plačilo prejeto. Neporavnani dolg ostane na seznamu in na kartici [Moje prijave](../../b1-church/events/my-registrations.md) prijavljenega tudi potem, ko ga zberete, zato vodite lastno evidenco o tem, kdo je plačal.
 :::
 
 ## Sorodni članki
 
-- [Ustvarjanje koledarjev](creating-calendars#enabling-event-registration) — omogočite prijave in osnovne nastavitve
+- [Ustvarjanje koledarjev](./creating-calendars.md#enabling-event-registration) — omogočite prijave in osnovne nastavitve
 - [Nastavitev spletnega darovanja](../donations/online-giving-setup.md) — nastavite prehod za plačila, ki se uporablja ob blagajni
-- [Prijava na dogodke](../../b1-church/events/registering) — kaj člani vidijo, ko se prijavijo
-- [Moje prijave](../../b1-church/events/my-registrations) — kako člani poravnajo dolgove in urejajo prijave
+- [Prijava na dogodke](../../b1-church/events/registering.md) — kaj člani vidijo, ko se prijavijo
+- [Moje prijave](../../b1-church/events/my-registrations.md) — kako člani poravnajo dolgove in urejajo prijave

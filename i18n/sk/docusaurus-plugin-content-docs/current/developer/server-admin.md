@@ -1,5 +1,6 @@
 ---
 title: "Správa servera"
+description: "Iba pre používateľov Server.Admin: obnovenie dvojfaktorového prihlásenia, impersonácia účtov, moderovanie Commons a schvaľovanie e-mailu cirkvi v B1 Admin."
 ---
 
 # Správa servera

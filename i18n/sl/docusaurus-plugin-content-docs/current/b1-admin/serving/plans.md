@@ -1,5 +1,6 @@
 ---
 title: "Načrti bogoslužij"
+description: "Nastavite načrtovanje prostovoljcev v B1 Admin: ustvarite načrte bogoslužij po datumih, kopirajte prejšnje tedne, dodelite člane ekipe položajem ter upravljajte roke za prijave in opomnike."
 ---
 
 # Načrti bogoslužij

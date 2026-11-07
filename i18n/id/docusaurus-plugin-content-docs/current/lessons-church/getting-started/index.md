@@ -1,5 +1,7 @@
 ---
-title: "Memulai"
+title: "Memulai dengan Lessons.church"
+sidebar_label: "Memulai"
+description: "Buat akun Lessons.church gratis, hubungkan gereja Anda, siapkan kelas, dan jadwalkan pelajaran pertama. Tanpa langganan atau uji coba."
 ---
 
 # Memulai

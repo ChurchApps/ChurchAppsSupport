@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "A B1 Admin és a Text In Church összekapcsolása Zapier-rel: API-kulcs létrehozása, kapcsolókártyából B1-be író Zap készítése, és csoporttagság tükrözése."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Kapcsolja be a Zapet. A következő, TIC-en keresztül beküldött connect card 
 
 ## Lásd még
 
-- [Clearstream](./clearstream) — alternatív SMS-platform hasonló Zapier-felépítéssel
-- [Zapier (áttekintés)](../zapier) — minden Zapier-recept B1-oldala
+- [Clearstream](./clearstream.md) — alternatív SMS-platform hasonló Zapier-felépítéssel
+- [Zapier (áttekintés)](../zapier.md) — minden Zapier-recept B1-oldala
 - [Text In Church Zapier-útmutató](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (a TIC dokumentációja)

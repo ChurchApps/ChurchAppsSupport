@@ -1,5 +1,6 @@
 ---
 title: "Gruppengespräche"
+description: "So schreiben, bearbeiten und reagieren Sie auf Nachrichten im Gruppenchat von B1.church, inklusive Ankündigungen und Moderationswerkzeugen für Leitende."
 ---
 
 # Gruppengespräche

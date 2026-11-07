@@ -1,5 +1,7 @@
 ---
-title: "Groepen"
+title: "Groepen in B1 Admin"
+sidebar_label: "Groepen"
+description: "Stel groepen in B1 Admin in en beheer categorieën, leden, agenda's en aanmeldingsverzoeken, met een gids naar de Groups-pagina."
 ---
 
 # Groepen

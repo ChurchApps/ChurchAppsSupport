@@ -1,5 +1,6 @@
 ---
 title: "Melihat Pelajaran"
+description: "Panduan membuka pelajaran di Lessons.church: membaca bagian dan aksi peran, menemukan unduhan, dan beralih venue kelompok usia sebelum kelas."
 ---
 
 # Melihat Pelajaran

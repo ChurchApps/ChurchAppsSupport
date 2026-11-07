@@ -1,5 +1,6 @@
 ---
 title: "Check-In abschließen"
+description: "Családi bejelentkezés befejezése a B1 Checkin kioszkon: létszámkorlátok, címkenyomtatás, átvételi biztonsági kódok és az alkalmazás következő lépése."
 ---
 
 Tut mir leid, das ist ein Übersetzungsauftrag, und ich habe eine Anweisung ignoriert: Die Ausgabe muss ausschließlich die übersetzte Datei auf Ungarisch sein. Hier ist die korrekte Antwort:
@@ -19,9 +20,9 @@ Miután átnézte a háztartását, és elvégezte a szükséges csoportbeosztá
 <div class="prereqs">
 <h4>Mielőtt elkezdené</h4>
 
-- [Tekintse át a háztartását](./household-review) a háztartás-áttekintő képernyőn
-- [Rendeljen csoportokat](./group-assignment) azoknak a családtagoknak, akiknek egy adott osztályba vagy programba kell bejelentkezniük
-- Opcionálisan [adjon hozzá vendégeket](./adding-guests), akik a családjával érkeznek
+- [Tekintse át a háztartását](./household-review.md) a háztartás-áttekintő képernyőn
+- [Rendeljen csoportokat](./group-assignment.md) azoknak a családtagoknak, akiknek egy adott osztályba vagy programba kell bejelentkezniük
+- Opcionálisan [adjon hozzá vendégeket](./adding-guests.md), akik a családjával érkeznek
 
 </div>
 
@@ -34,10 +35,10 @@ Ennyi az egész. A családja jelenléte rögzítésre került.
 
 ## Telt termek és önkéntes-arányok
 
-Ha egyházánk [biztonsági korlátokat](../../b1-admin/attendance/checkin-safety) állított be a termeihez, a szerver mentés előtt ellenőrzi azokat:
+Ha egyházánk [biztonsági korlátokat](../../b1-admin/attendance/checkin-safety.md) állított be a termeihez, a szerver mentés előtt ellenőrzi azokat:
 
 - Ha a kiválasztott terem **tele van vagy zárva**, a bejelentkezés nem valósul meg, és az alkalmazás megnevezi a termet, hogy másikat válasszon.
-- Ha a istentiszteleti időponthoz tartozik [bejelentkezési ütemezés](../../b1-admin/attendance/setup#setting-a-check-in-schedule), és annak bejelentkezési időablaka éppen nincs nyitva, akkor az adott időponthoz tartozó termekbe való bejelentkezés szintén elutasításra kerül. A **Még nem lehet bejelentkezni** képernyő felsorolja a termet, és megadja az okot: „a bejelentkezés jelenleg nem elérhető”. Koppintson a **Termek módosítása** gombra, ha másik istentiszteleti időpontot vagy csoportot szeretne választani. (A már lezárt istentiszteleti időpontok a [háztartás-képernyőn](./household-review) **Lezárva** felirattal jelennek meg, és nem választhatók ki. Ez általában csak akkor fordul elő, ha az időablak a bejelentkezés közben zárul be.)
+- Ha a istentiszteleti időponthoz tartozik [bejelentkezési ütemezés](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule), és annak bejelentkezési időablaka éppen nincs nyitva, akkor az adott időponthoz tartozó termekbe való bejelentkezés szintén elutasításra kerül. A **Még nem lehet bejelentkezni** képernyő felsorolja a termet, és megadja az okot: „a bejelentkezés jelenleg nem elérhető”. Koppintson a **Termek módosítása** gombra, ha másik istentiszteleti időpontot vagy csoportot szeretne választani. (A már lezárt istentiszteleti időpontok a [háztartás-képernyőn](./household-review.md) **Lezárva** felirattal jelennek meg, és nem választhatók ki. Ez általában csak akkor fordul elő, ha az időablak a bejelentkezés közben zárul be.)
 - Az a háztartás, amely egy korábbi istentiszteleti időpontra jelentkezett be, később is visszatérhet, és hozzáadhat egy nyitott istentiszteleti időpontot, még akkor is, ha a korábbi időablak már bezárult. A meglévő bejelentkezések megmaradnak, és nem okozzák az új bejelentkezés elutasítását.
 - Ha egy gyermekterem **kevés önkéntessel rendelkezik** a számára előírt arány szerint, az alkalmazás vagy figyelmeztetést jelenít meg, amelyet egy munkatárs megerősíthet a folytatáshoz, vagy teljesen blokkolja a bejelentkezést – attól függően, hogy egyháza hogyan állította be az arányok érvényesítését.
 
@@ -55,7 +56,7 @@ Ugyanez a biztonsági kód szerepel a gyermek névcímkéjén és a szülő átv
 A biztonsági kódot minden bejelentkezéskor újra generálja a rendszer, és csak mássalhangzókat és számjegyeket használ (a magánhangzókat kihagyjuk, hogy ne alakuljanak ki nem megfelelő szavak).
 
 :::warning
-Ha a címkék nem nyomtatódnak ki, nyissa meg az Adminisztrációs beállításokat úgy, hogy hétszer koppint az **egyházi logóra**, majd koppintson a **Nyomtató módosítása** gombra a nyomtatókapcsolat ellenőrzéséhez. A hibaelhárítási lépésekért lásd: [Nyomtató beállítása](../getting-started/printer-setup).
+Ha a címkék nem nyomtatódnak ki, nyissa meg az Adminisztrációs beállításokat úgy, hogy hétszer koppint az **egyházi logóra**, majd koppintson a **Nyomtató módosítása** gombra a nyomtatókapcsolat ellenőrzéséhez. A hibaelhárítási lépésekért lásd: [Nyomtató beállítása](../getting-started/printer-setup.md).
 :::
 
 ## Mi történik a bejelentkezés után

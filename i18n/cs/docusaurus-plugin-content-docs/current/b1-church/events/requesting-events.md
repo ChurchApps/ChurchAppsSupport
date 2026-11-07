@@ -1,5 +1,6 @@
 ---
 title: "Žádost o události a místnosti"
+description: "Požádejte o rezervaci místnosti nebo vybavení pro událost v členském portálu B1.church, sledujte stav v části My Requests a zrušte ji, dokud čeká."
 ---
 
 # Žádost o události a místnosti
@@ -42,11 +43,11 @@ Otevřete **Moje žádosti** ze stránky Já. U každé žádosti vidíte událo
 Dokud je žádost ve stavu čekání, můžete ji stáhnout tlačítkem **Zrušit žádost** (budete požádáni o potvrzení – zrušení nelze vrátit zpět).
 
 :::info
-Žádosti kontrolují zaměstnanci církve na stránce [Schvalování](../../b1-admin/calendars/approvals) v B1 Admin. Které místnosti a zdroje vyžadují schválení, určuje vaše církev – viz [Místnosti a zdroje](../../b1-admin/calendars/rooms-resources).
+Žádosti kontrolují zaměstnanci církve na stránce [Schvalování](../../b1-admin/calendars/approvals.md) v B1 Admin. Které místnosti a zdroje vyžadují schválení, určuje vaše církev – viz [Místnosti a zdroje](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Související články
 
-- [Stránka Já](../getting-started/me-page) -- Kde jsou odkazy na žádosti
-- [Schvalování kalendáře (B1 Admin)](../../b1-admin/calendars/approvals) -- Jak zaměstnanci žádosti kontrolují
-- [Místnosti a zdroje (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Jak církve nastavují rezervovatelné prostory
+- [Stránka Já](../getting-started/me-page.md) -- Kde jsou odkazy na žádosti
+- [Schvalování kalendáře (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Jak zaměstnanci žádosti kontrolují
+- [Místnosti a zdroje (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Jak církve nastavují rezervovatelné prostory

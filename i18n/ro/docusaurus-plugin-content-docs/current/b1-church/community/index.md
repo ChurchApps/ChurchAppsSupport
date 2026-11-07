@@ -1,5 +1,7 @@
 ---
-title: "Comunitate"
+title: "Director comunitar de membri în B1.church"
+sidebar_label: "Comunitate"
+description: "Caută în directorul de membri din B1.church după nume sau grupă, vezi profiluri și află unde sunt acum actualizările fostei file Timeline."
 ---
 
 # Comunitate
@@ -26,5 +28,5 @@ Membrii și informațiile pe care le vezi în director depind de setările de co
 :::
 
 :::tip
-Folosește funcțiile comunității împreună cu [Grupurile](../groups/) pentru a rămâne implicat în viața bisericii pe parcursul săptămânii.
+Folosește funcțiile comunității împreună cu [Grupurile](../groups/index.md) pentru a rămâne implicat în viața bisericii pe parcursul săptămânii.
 :::

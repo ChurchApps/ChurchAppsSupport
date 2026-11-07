@@ -1,5 +1,7 @@
 ---
-title: "Etkinlikler"
+title: "B1.church'te Kilise Etkinlikleri: Göz Atma ve Kayıt"
+sidebar_label: "Etkinlikler"
+description: "B1.church'te yaklaşan kilise etkinliklerine göz atın, kayıt durumunu kontrol edin ve kayıt olun veya etkinlikleri takviminize ekleyin."
 ---
 
 # Etkinlikler
@@ -43,7 +45,7 @@ Bir etkinlik doluysa, kiliseniz bekleme listesini etkinleştirdiyse yine de **be
 
 ## Daha Fazla Bilgi
 
-- [Etkinliklere Kayıt Olma](./registering) -- Bir etkinliğe kayıt olmak için adım adım kılavuz
-- [Kayıtlarım](./my-registrations) -- Kayıtlarınızı görüntüleyin, bakiye ödeyin, düzenleyin veya iptal edin
-- [Etkinlik ve Oda Talep Etme](./requesting-events) -- İhtiyaç duyduğu odalar ve kaynaklarla birlikte bir etkinlik talep edin
-- [Self Check-In](../checkin/self-checkin) -- Etkinliğe vardığınızda giriş yapın
+- [Etkinliklere Kayıt Olma](./registering.md) -- Bir etkinliğe kayıt olmak için adım adım kılavuz
+- [Kayıtlarım](./my-registrations.md) -- Kayıtlarınızı görüntüleyin, bakiye ödeyin, düzenleyin veya iptal edin
+- [Etkinlik ve Oda Talep Etme](./requesting-events.md) -- İhtiyaç duyduğu odalar ve kaynaklarla birlikte bir etkinlik talep edin
+- [Self Check-In](../checkin/self-checkin.md) -- Etkinliğe vardığınızda giriş yapın

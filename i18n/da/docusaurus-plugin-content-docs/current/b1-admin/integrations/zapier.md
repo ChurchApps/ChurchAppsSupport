@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Forbind B1 Admin til Zapier for at starte automatiseringer ved nye personer, donationer og gruppemedlemmer, og skriv poster tilbage til B1 uden kodning."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Vælg en udløser, og tilføj derefter et eller flere handlingstrin. Eksempler n
 ### Send donationer til en Slack-kanal med et rigere kort end den indbyggede connector
 
 - **Udløser** — B1: Ny donation
-- **Handling** — Slack: Send kanalbesked. Opbyg ethvert layout — knapper, vedhæftede filer osv. — som den indbyggede [Slack-connector](./slack-discord) ikke kan.
+- **Handling** — Slack: Send kanalbesked. Opbyg ethvert layout — knapper, vedhæftede filer osv. — som den indbyggede [Slack-connector](./slack-discord.md) ikke kan.
 
 ### Tilføj nye gruppemedlemmer til en Google-gruppe
 
@@ -106,6 +107,6 @@ Det betyder, at udløseren kun aktiveres for hændelser, der sker **efter**, at 
 
 ## Se også
 
-- [Make](./make) — samme mønster, en anden platform
-- [Slack & Discord](./slack-discord) — enklere chatnotifikationer uden Zapier
+- [Make](./make.md) — samme mønster, en anden platform
+- [Slack & Discord](./slack-discord.md) — enklere chatnotifikationer uden Zapier
 - [Webhooks (udviklerreference)](/docs/developer/api/webhooks)

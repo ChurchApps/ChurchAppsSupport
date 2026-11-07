@@ -1,5 +1,6 @@
 ---
 title: "Grup Katılma İstekleri"
+description: "B1 Admin'de grup katılım isteklerini inceleyin, onaylayın ya da reddedin; lider veya yönetici olarak bekleyen istekleri bulun ve reddederken neden ekleyin."
 ---
 
 # Grup Katılma İstekleri

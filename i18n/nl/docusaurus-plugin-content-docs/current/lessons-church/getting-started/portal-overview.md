@@ -1,5 +1,6 @@
 ---
 title: "Portaaloverzicht"
+description: "Verken het Lessons.church-portaal: klaslokalen vinden, geplande lessen bekijken, feedlinks instellen en naar External Providers en beheer."
 ---
 
 # Portaaloverzicht

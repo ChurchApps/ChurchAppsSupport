@@ -1,5 +1,6 @@
 ---
 title: "Tisk adresáře"
+description: "Vytvořte v B1 Admin tisknutelný adresář členů seskupený podle domácností s fotografiemi, kontakty a narozeninami ve formátu Letter."
 ---
 
 # Tisk adresáře

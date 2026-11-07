@@ -1,5 +1,6 @@
 ---
 title: "साझा लाइब्रेरी"
+description: "B1 Admin, B1.church और APIs द्वारा उपयोग किए जाने वाले @churchapps npm पैकेजों के दस्तावेज़, साथ ही Packages वर्कस्पेस सेट करने और changesets से रिलीज़ करने का तरीका।"
 ---
 
 # साझा लाइब्रेरी
@@ -14,9 +15,9 @@ ChurchApps का साझा कोड `@churchapps/*` स्कोप के 
 
 | पैकेज | विवरण | उपयोग करने वाले |
 |---------|-------------|-----------------|
-| [`@churchapps/helpers`](./helpers) | आधार परत: फ़्रेमवर्क-मुक्त हेल्पर फ़ंक्शन और साझा TypeScript इंटरफ़ेस जो ऐप्स के बीच डेटा अनुबंध बनाते हैं | सभी प्रोजेक्ट |
-| [`@churchapps/apihelper`](./api-helper) | सर्वर-साइड Express उपयोगिताएँ: auth, बेस कंट्रोलर, डेटाबेस एक्सेस, AWS और ईमेल एकीकरण | सभी APIs |
-| [`@churchapps/apphelper`](./app-helper) | साझा React कंपोनेंट और फ़ीचर मॉड्यूल (लॉगिन, दान, फ़ॉर्म, markdown, वेबसाइट) | सभी वेब ऐप्स |
+| [`@churchapps/helpers`](./helpers.md) | आधार परत: फ़्रेमवर्क-मुक्त हेल्पर फ़ंक्शन और साझा TypeScript इंटरफ़ेस जो ऐप्स के बीच डेटा अनुबंध बनाते हैं | सभी प्रोजेक्ट |
+| [`@churchapps/apihelper`](./api-helper.md) | सर्वर-साइड Express उपयोगिताएँ: auth, बेस कंट्रोलर, डेटाबेस एक्सेस, AWS और ईमेल एकीकरण | सभी APIs |
+| [`@churchapps/apphelper`](./app-helper.md) | साझा React कंपोनेंट और फ़ीचर मॉड्यूल (लॉगिन, दान, फ़ॉर्म, markdown, वेबसाइट) | सभी वेब ऐप्स |
 | `@churchapps/content-providers` | तृतीय-पक्ष कंटेंट प्रदाताओं (Lessons.church, Planning Center, Dropbox, और अन्य) के लिए एब्स्ट्रैक्शन | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | B1.church एकीकरण बनाने के लिए टूलकिट: webhook सत्यापन, टाइप्ड REST क्लाइंट, OAuth हेल्पर | बाहरी एकीकरण डेवलपर |
 | `@churchapps/texting` | SMS प्रदाता एब्स्ट्रैक्शन (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

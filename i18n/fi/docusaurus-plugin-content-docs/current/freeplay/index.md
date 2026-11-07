@@ -1,5 +1,6 @@
 ---
 title: "FreePlay-yleiskatsaus"
+description: "Yleiskatsaus FreePlayhin, luokkahuoneiden TV-sovellukseen offline-toistoon Android TV:llä, Fire TV:llä ja Apple TV:llä, ja linkit asennusohjeisiin."
 ---
 
 # FreePlay-yleiskatsaus
@@ -22,10 +23,10 @@ Katso **<a href="/guides/freeplay-quickstart" target="_blank">pikaopas-video</a>
 
 - **Toisto ilman yhteyttä** - Lataa videot ja kuvadiat etukäteen, jotta et ole koskaan riippuvainen Wi-Fi-yhteydestä jumalanpalvelusten aikana
 - **Latausten hallinta** - Näe ja hallitse kaikkia ladattuja sisältöjä kohdasta **Asetukset** > **Lataukset**
-- **Ajastettu tila** - Luo soittolistoja ja aseta ne kalenteriin osoitteessa [admin.freeplay.church](https://admin.freeplay.church). Yhdistetyt TV:t toistavat ne oikeaan aikaan, eikä kenenkään tarvitse painaa Käynnistä -- katso [Ajastettu tila](./scheduled-mode/)
+- **Ajastettu tila** - Luo soittolistoja ja aseta ne kalenteriin osoitteessa [admin.freeplay.church](https://admin.freeplay.church). Yhdistetyt TV:t toistavat ne oikeaan aikaan, eikä kenenkään tarvitse painaa Käynnistä -- katso [Ajastettu tila](./scheduled-mode/index.md)
 - **Suunnitelmaparitus** - Yhdistä laitteesi kirkon jumalanpalvelussuunnitelmaan, jotta sisältö on koordinoitu eri huoneissa
 - **Sisältötarjoajat** - Selaa ja lataa sisältöä ulkoisista lähteistä, kuten [Lessons.church](/docs/lessons-church/), Bible Project, Dropbox ja OneDrive
-- **Ilmoitukset** - Toista yhdistetyn tarjoajan kansion diat silmukassa -- katso [Ilmoitukset](./content-providers/announcements)
+- **Ilmoitukset** - Toista yhdistetyn tarjoajan kansion diat silmukassa -- katso [Ilmoitukset](./content-providers/announcements.md)
 - **Kaukosäätimelle sopiva** - Selaa koko sovellusta tavallisella TV-kaukosäätimellä suuntanäppäimillä ja valintapainikkeella
 - **Taitettava sivupalkki** - Kapea sivupalkki pitää navigoinnin helposti käytettävissä, eikä se sotke ruutua
 
@@ -35,10 +36,10 @@ Kun käynnistät FreePlayn, se yhdistyy sisältötarjoajiisi ja tarkistaa saatav
 
 ## Osiot
 
-- **[Aloittaminen](./getting-started/)** - Asenna sovellus, käynnistä se ja valitse yhteystapa
-- **[Ajastettu tila](./scheduled-mode/)** - Yhdistä TV:t kalenteriin ja hallitse niitä FreePlay Adminissa
-- **[Suunnitelmatila](./plan-mode/)** - Yhdistä kirkon jumalanpalvelussuunnitelmaan
-- **[Sisältötarjoajat](./content-providers/)** - Yhdistä ulkoisiin sisältölähteisiin
+- **[Aloittaminen](./getting-started/index.md)** - Asenna sovellus, käynnistä se ja valitse yhteystapa
+- **[Ajastettu tila](./scheduled-mode/index.md)** - Yhdistä TV:t kalenteriin ja hallitse niitä FreePlay Adminissa
+- **[Suunnitelmatila](./plan-mode/index.md)** - Yhdistä kirkon jumalanpalvelussuunnitelmaan
+- **[Sisältötarjoajat](./content-providers/index.md)** - Yhdistä ulkoisiin sisältölähteisiin
 
 :::info
 FreePlay kuuluu [ChurchApps](https://churchapps.org)-ohjelmistokokonaisuuteen, joka tarjoaa kirkoille ilmaisia, avoimen lähdekoodin työkaluja.

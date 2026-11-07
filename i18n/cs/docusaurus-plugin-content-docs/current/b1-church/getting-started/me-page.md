@@ -1,5 +1,6 @@
 ---
 title: "Stránka Já"
+description: "Přehled stránky Me v portálu B1App: služby, události, registrace, domácnost, skupiny, dary, formuláře, docházka a doručená pošta na jedné obrazovce."
 ---
 
 # Stránka Já
@@ -31,7 +32,7 @@ Pokud jste odhlášeni, uvidíte text „Přihlaste se a zobrazte svůj týden�
 Sekce **Nadcházející** zobrazuje vaše tři nejbližší položky seřazené podle data, každou s typovým štítkem. Pokud jich máte více, klepněte na **Všechny nadcházející** a zobrazí se úplný seznam; pro návrat slouží **Zpět na Já**.
 
 - **Služba** -- Vaše dobrovolnické pozice v nadcházejících plánech služeb, s datem a časem začátku služby, ve které sloužíte (čas, kdy je váš tým potřeba, pokud má plán více časů služeb, nebo jen datum, pokud plán žádné časy nemá). Klepnutím na položku otevřete plán.
-- **Registrace** -- Akce, na které jste se [zaregistrovali](../events/registering). Klepnutím přejdete na své [registrace](../events/my-registrations).
+- **Registrace** -- Akce, na které jste se [zaregistrovali](../events/registering.md). Klepnutím přejdete na své [registrace](../events/my-registrations.md).
 - **Akce** -- Nadcházející akce skupin, ke kterým patříte. Klepnutím na položku otevřete akce dané skupiny.
 
 Pokud má akce nebo registrace fotografii, na začátku řádku se zobrazí její malý náhled.
@@ -66,7 +67,7 @@ Sekce **Žádosti a registrace** zobrazuje, kolik registrací na akce máte, a o
 
 Pokud vaše církev má k dispozici rezervovatelné místnosti nebo zdroje, zobrazí se další dva odkazy:
 
-- **Požádat o akci** -- Požádejte o konání akce s místnostmi a vybavením, které potřebujete. Viz [Žádost o akce a místnosti](../events/requesting-events).
+- **Požádat o akci** -- Požádejte o konání akce s místnostmi a vybavením, které potřebujete. Viz [Žádost o akce a místnosti](../events/requesting-events.md).
 - **Moje žádosti** -- Sledujte stav svých žádostí a zrušte ty čekající.
 
 Pokud vaše církev místnosti nebo zdroje nenastavila, tyto odkazy jsou skryté.
@@ -77,8 +78,8 @@ Sekce **Doručená pošta** zobrazuje vaše dvě nejnovější oznámení, abyst
 
 ## Související články
 
-- [Orientace v B1App](./navigating) -- Rozvržení portálu pro členy
-- [Žádost o akce a místnosti](../events/requesting-events) -- Odeslání a sledování žádostí o místnosti a zdroje
-- [Moje registrace](../events/my-registrations) -- Správa vašich registrací na akce
-- [Registrace dobrovolníků](../serving/volunteer-signup) -- Jak fungují přidělené služby
-- [Samoobslužné přihlášení](../checkin/self-checkin) -- Jak se zaznamenává vaše docházka
+- [Orientace v B1App](./navigating.md) -- Rozvržení portálu pro členy
+- [Žádost o akce a místnosti](../events/requesting-events.md) -- Odeslání a sledování žádostí o místnosti a zdroje
+- [Moje registrace](../events/my-registrations.md) -- Správa vašich registrací na akce
+- [Registrace dobrovolníků](../serving/volunteer-signup.md) -- Jak fungují přidělené služby
+- [Samoobslužné přihlášení](../checkin/self-checkin.md) -- Jak se zaznamenává vaše docházka

@@ -1,5 +1,7 @@
 ---
-title: "Donatiegeschiedenis"
+title: "Donatiegeschiedenis bekijken in B1 Mobile"
+sidebar_label: "Donatiegeschiedenis"
+description: "Bekijk in B1 Mobile je giften van dit jaar, je laatste gift en je volledige geschiedenis, en herhaal een eerdere gift met één tik via Overzicht."
 ---
 
 # Donatiegeschiedenis
@@ -13,8 +15,8 @@ B1 Mobile geeft je een duidelijk beeld van je giften via twee tabbladen: **Overz
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [log in](../getting-started/logging-in) op je account
-- [Maak minstens één donatie](./making-donations) om je geschiedenis te zien
+- [Installeer B1 Mobile](../getting-started/installing.md) en [log in](../getting-started/logging-in.md) op je account
+- [Maak minstens één donatie](./making-donations.md) om je geschiedenis te zien
 
 </div>
 
@@ -45,5 +47,5 @@ Controleer het tabblad **Overzicht** regelmatig om bovenop je donatiedoelen te b
 
 ## Gerelateerde artikelen
 
-- [Een donatie doen](./making-donations) -- Maak een nieuw geschenk vanuit de app
-- [Betalingsmethoden beheren](./managing-payments) -- Voeg opgeslagen betalingsmethoden toe of verwijder deze
+- [Een donatie doen](./making-donations.md) -- Maak een nieuw geschenk vanuit de app
+- [Betalingsmethoden beheren](./managing-payments.md) -- Voeg opgeslagen betalingsmethoden toe of verwijder deze

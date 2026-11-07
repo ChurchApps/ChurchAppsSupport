@@ -1,5 +1,6 @@
 ---
 title: "Giving-endpoints"
+description: "Referens för ChurchApps Giving API-endpoints: donationer, batchar, gateways, prenumerationer och betalningsmetoder, med autentisering och behörighetsregler för utvecklare som integrerar med B1 Admin."
 ---
 
 # Giving-endpoints
@@ -284,6 +285,6 @@ Utökar `GenericCrudController` med CRUD-rutter: `getById`, `getAll`, `post`, `d
 
 ## Relaterade sidor
 
-- [Membership Endpoints](./membership) — Personer, församlingar, grupper, roller och behörigheter
-- [Authentication & Permissions](./authentication) — Inloggningsflöde, JWT, OAuth, behörighetsmodell
-- [Module Structure](../module-structure) — Mönster för kodorganisation
+- [Membership Endpoints](./membership.md) — Personer, församlingar, grupper, roller och behörigheter
+- [Authentication & Permissions](./authentication.md) — Inloggningsflöde, JWT, OAuth, behörighetsmodell
+- [Module Structure](../module-structure.md) — Mönster för kodorganisation

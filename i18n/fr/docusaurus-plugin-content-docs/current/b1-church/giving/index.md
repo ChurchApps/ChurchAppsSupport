@@ -1,5 +1,7 @@
 ---
-title: "Dons"
+title: "Dons en ligne sur B1.church"
+sidebar_label: "Dons"
+description: "Faites un don à votre église en ligne sur B1.church sans compte, ou connectez-vous pour gérer dons récurrents, moyens de paiement et relevés."
 ---
 
 # Dons

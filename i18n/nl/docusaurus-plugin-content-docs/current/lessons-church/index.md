@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "Blader, plan en presenteer gratis lessen per leeftijd van 12+ providers in Lessons.church, met klaslokalen, locaties en FreePlay- of B1-integraties."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church werkt samen met andere ChurchApps-tools om u te helpen inhoud af 
 
 ## Documentatiesecties
 
-- [Aan de slag](./getting-started/) -- Maak uw account aan en leer de basisprincipes
-- [Inhoud verkennen](./browsing/) -- Zoek programma's, studies en lessen
-- [Klaslokalen](./classrooms/) -- Stel klaslokalen in en plan lessen
-- [Aanpassing](./customization/) -- Pas lessen aan op uw kerk
-- [Presentatie](./presenting/) -- Voer lessen in de klas uit met presentatormodus
-- [Beheer](./admin/) -- Beheer programma's, studies en lessen als beheerder
+- [Aan de slag](./getting-started/index.md) -- Maak uw account aan en leer de basisprincipes
+- [Inhoud verkennen](./browsing/index.md) -- Zoek programma's, studies en lessen
+- [Klaslokalen](./classrooms/index.md) -- Stel klaslokalen in en plan lessen
+- [Aanpassing](./customization/index.md) -- Pas lessen aan op uw kerk
+- [Presentatie](./presenting/index.md) -- Voer lessen in de klas uit met presentatormodus
+- [Beheer](./admin/index.md) -- Beheer programma's, studies en lessen als beheerder
 - [Geloofsverklaring](./statement-of-faith.md) -- Kernovertuigingen en curriculumrichtlijnen
 
 Voor ondersteuning, e-mail [support@churchapps.org](mailto:support@churchapps.org).

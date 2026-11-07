@@ -1,5 +1,6 @@
 ---
 title: "Creazione di un account"
+description: "Registrare un account ChurchApps su Lessons.church, poi collegarlo a un profilo di chiesa nuovo o esistente per gestire aule e programmazioni."
 ---
 
 # Creazione di un account

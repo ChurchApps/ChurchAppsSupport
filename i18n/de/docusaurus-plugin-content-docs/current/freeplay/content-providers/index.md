@@ -1,5 +1,6 @@
 ---
 title: "Inhaltsanbieter"
+description: "Lektionsmaterial, Videos und Bilder von Lessons.church, Dropbox, OneDrive und anderen Anbietern in der FreePlay-TV-App durchsuchen und herunterladen."
 ---
 
 # Inhaltsanbieter
@@ -14,7 +15,7 @@ Inhaltsanbieter sind externe Dienste, die Unterrichtsmaterial, Videos und Bilder
 
 FreePlay enthält derzeit folgende Anbieter:
 
-- **[Lessons.church](../../lessons-church/)** – Kostenloser, quelloffener Lehrplan für die Kinderarbeit
+- **[Lessons.church](../../lessons-church/index.md)** – Kostenloser, quelloffener Lehrplan für die Kinderarbeit
 - **Bible Project** – Videos und Materialien, die die Bibel erschließen
 - **SignPresenter** – Präsentations- und Beschilderungsinhalte für Kirchen
 - **B1.church** – Inhalte aus Ihrer eigenen B1-Kircheneinrichtung
@@ -24,7 +25,7 @@ FreePlay enthält derzeit folgende Anbieter:
 - **OneDrive** – Bilder, Videos und Audiodateien aus Ihrem eigenen Microsoft OneDrive durchsuchen und abspielen
 
 :::note
-Google Drive und FreeShow werden in der FreePlay-TV-App nicht mehr angezeigt. Um Google-Drive-Inhalte auf Ihren Fernsehern zu verwenden, verbinden Sie es in [FreePlay Admin](../scheduled-mode/building-playlists#connecting-providers), fügen Sie die Dateien einer Playlist hinzu und planen Sie diese Playlist.
+Google Drive und FreeShow werden in der FreePlay-TV-App nicht mehr angezeigt. Um Google-Drive-Inhalte auf Ihren Fernsehern zu verwenden, verbinden Sie es in [FreePlay Admin](../scheduled-mode/building-playlists.md#connecting-providers), fügen Sie die Dateien einer Playlist hinzu und planen Sie diese Playlist.
 :::
 
 :::info
@@ -37,14 +38,14 @@ Jeder Anbieter hat seine eigene Inhaltsbibliothek, die in Ordnern und Dateien or
 
 Verbundene Anbieter erscheinen in der Seitenleiste links unter der Überschrift **Durchsuchen**. Sie können zwischen Anbietern wechseln, indem Sie sie in der Seitenleiste auswählen. So springen Sie während der Einrichtung leicht zwischen Inhaltsquellen hin und her.
 
-Sie können außerdem den Ordner eines verbundenen Anbieters auswählen, um ihn auf Ihrem Fernseher als [Ankündigungen](./announcements) in einer Schleife abzuspielen.
+Sie können außerdem den Ordner eines verbundenen Anbieters auswählen, um ihn auf Ihrem Fernseher als [Ankündigungen](./announcements.md) in einer Schleife abzuspielen.
 
 :::tip
-Anbieter, die Sie direkt am Fernseher verbinden, gelten nur für diesen Fernseher. Wenn Sie den [Geplanten Modus](../scheduled-mode/) verwenden, verbinden Sie Anbieter stattdessen einmal in FreePlay Admin. Dann kann jeder geplante Bildschirm Inhalte aus diesen Anbietern abspielen.
+Anbieter, die Sie direkt am Fernseher verbinden, gelten nur für diesen Fernseher. Wenn Sie den [Geplanten Modus](../scheduled-mode/index.md) verwenden, verbinden Sie Anbieter stattdessen einmal in FreePlay Admin. Dann kann jeder geplante Bildschirm Inhalte aus diesen Anbietern abspielen.
 :::
 
 ## Im Abschnitt enthalten
 
-- **[Mit Anbietern verbinden](./connecting-providers)** – Wie Sie sich authentifizieren und verbinden
-- **[Inhalte durchsuchen und herunterladen](./browsing-content)** – Ordner durchsuchen, Dateien herunterladen und Inhalte abspielen
-- **[Ankündigungen](./announcements)** – Einen Ordner mit Folien eines Anbieters in einer Schleife abspielen
+- **[Mit Anbietern verbinden](./connecting-providers.md)** – Wie Sie sich authentifizieren und verbinden
+- **[Inhalte durchsuchen und herunterladen](./browsing-content.md)** – Ordner durchsuchen, Dateien herunterladen und Inhalte abspielen
+- **[Ankündigungen](./announcements.md)** – Einen Ordner mit Folien eines Anbieters in einer Schleife abspielen

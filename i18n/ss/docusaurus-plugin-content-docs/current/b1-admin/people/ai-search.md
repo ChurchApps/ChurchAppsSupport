@@ -1,5 +1,6 @@
 ---
 title: "Kusesha nge-AI"
+description: "Sesha ku-B1 Admin ngemibuto ngelulwimi lolucacile, njengekutsi ngabani emalungu angakaze eze emasontweni langu-12, kunekwakha tihlungi."
 ---
 
 # Kusesha nge-AI

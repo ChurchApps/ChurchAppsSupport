@@ -1,5 +1,7 @@
 ---
-title: "Chi tiết nhóm"
+title: "Chi tiết nhóm trong Cổng thành viên B1.church"
+sidebar_label: "Chi tiết nhóm"
+description: "Xem và quản lý trang chi tiết nhóm trên B1.church (giao diện thành viên của B1 Admin): sự kiện, buổi họp, biểu mẫu, thành viên, tham gia hoặc xin tham gia."
 ---
 
 # Chi tiết nhóm

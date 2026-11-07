@@ -1,5 +1,7 @@
 ---
-title: "Sermones"
+title: "Sermones en B1 Admin"
+sidebar_label: "Sermones"
+description: "Configura y administra tu biblioteca de sermones en B1 Admin, las listas de reproducción, el calendario de transmisiones en vivo y las importaciones masivas desde YouTube o Vimeo."
 ---
 
 # Sermones
@@ -20,27 +22,27 @@ La sección de Sermones está organizada en cuatro áreas principales:
 
 ### Sermones
 
-Agregue y gestione entradas individuales de sermones en su biblioteca. Cada sermón puede incluir un título, predicador, fecha, descripción, miniatura y enlaces a contenido de video o audio. Puede vincular sermones a YouTube, Vimeo, Facebook o URLs de video personalizadas. Consulte [Gestión de Sermones](managing-sermons) para todos los detalles.
+Agregue y gestione entradas individuales de sermones en su biblioteca. Cada sermón puede incluir un título, predicador, fecha, descripción, miniatura y enlaces a contenido de video o audio. Puede vincular sermones a YouTube, Vimeo, Facebook o URLs de video personalizadas. Consulte [Gestión de Sermones](./managing-sermons.md) para todos los detalles.
 
 ### Listas de Reproducción
 
-Organice sus sermones en series o colecciones. Las listas de reproducción facilitan a su congregación la navegación por una serie de sermones en orden. Cada lista de reproducción tiene su propio nombre, descripción y miniatura. Consulte [Listas de Reproducción](playlists) para más información.
+Organice sus sermones en series o colecciones. Las listas de reproducción facilitan a su congregación la navegación por una serie de sermones en orden. Cada lista de reproducción tiene su propio nombre, descripción y miniatura. Consulte [Listas de Reproducción](./playlists.md) para más información.
 
 ### Horarios de Transmisión en Vivo
 
-Configure el horario de transmisión en vivo de su iglesia. Establezca servicios semanales recurrentes o eventos únicos, gestione la configuración de chat y video, y controle cuándo su transmisión sale al aire. Los visitantes verán el próximo horario de servicio programado en su página de transmisión. Una página **Settings** separada bajo **Sermones** controla las pestañas (chat, oración y enlaces personalizados) que se muestran junto a su transmisión en vivo. Consulte [Transmisión en Vivo](live-streaming) para instrucciones de configuración.
+Configure el horario de transmisión en vivo de su iglesia. Establezca servicios semanales recurrentes o eventos únicos, gestione la configuración de chat y video, y controle cuándo su transmisión sale al aire. Los visitantes verán el próximo horario de servicio programado en su página de transmisión. Una página **Settings** separada bajo **Sermones** controla las pestañas (chat, oración y enlaces personalizados) que se muestran junto a su transmisión en vivo. Consulte [Transmisión en Vivo](./live-streaming.md) para instrucciones de configuración.
 
 ### Importación Masiva
 
-Llene rápidamente su biblioteca de sermones importando videos en masa desde YouTube o Vimeo. Esta es la forma más rápida de migrar su contenido de sermones existente a B1. Consulte [Importación Masiva](bulk-import) para comenzar.
+Llene rápidamente su biblioteca de sermones importando videos en masa desde YouTube o Vimeo. Esta es la forma más rápida de migrar su contenido de sermones existente a B1. Consulte [Importación Masiva](./bulk-import.md) para comenzar.
 
 :::tip
-Si está configurando sermones por primera vez, comience creando una [lista de reproducción](playlists), luego [agregue sermones individualmente](managing-sermons) o [impórtelos en masa](bulk-import) desde YouTube o Vimeo.
+Si está configurando sermones por primera vez, comience creando una [lista de reproducción](./playlists.md), luego [agregue sermones individualmente](./managing-sermons.md) o [impórtelos en masa](./bulk-import.md) desde YouTube o Vimeo.
 :::
 
 ## Próximos Pasos
 
-- [Gestión de Sermones](managing-sermons) -- Agregue y edite sermones individuales
-- [Listas de Reproducción](playlists) -- Organice sermones en series
-- [Transmisión en Vivo](live-streaming) -- Configure su horario y configuraciones de transmisión en vivo
-- [Importación Masiva](bulk-import) -- Importe sermones desde YouTube o Vimeo
+- [Gestión de Sermones](./managing-sermons.md) -- Agregue y edite sermones individuales
+- [Listas de Reproducción](./playlists.md) -- Organice sermones en series
+- [Transmisión en Vivo](./live-streaming.md) -- Configure su horario y configuraciones de transmisión en vivo
+- [Importación Masiva](./bulk-import.md) -- Importe sermones desde YouTube o Vimeo

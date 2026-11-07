@@ -1,5 +1,6 @@
 ---
 title: "Medlemskapsendepunkter"
+description: "Endepunktreferanse for ChurchApps Membership API: personer, husstander, grupper, roller, skjemaer og innstillinger, med autentisering og tillatelsesregler."
 ---
 
 # Medlemskapsendepunkter
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Basisti: `/membership/users`
 
-Se [Autentisering og tillatelser](./authentication) for endepunkter for innlogging, registrering og passordhåndtering.
+Se [Autentisering og tillatelser](./authentication.md) for endepunkter for innlogging, registrering og passordhåndtering.
 
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
@@ -342,6 +343,6 @@ Basisti: `/membership/clientErrors`
 
 ## Relaterte sider
 
-- [Autentisering og tillatelser](./authentication) — Innloggingsflyt, JWT, OAuth, tillatelsesmodell
-- [Oppmøteendepunkter](./attendance) — Sporing av gudstjenester og besøk
-- [Modulstruktur](../module-structure) — Mønstre for kodeorganisering
+- [Autentisering og tillatelser](./authentication.md) — Innloggingsflyt, JWT, OAuth, tillatelsesmodell
+- [Oppmøteendepunkter](./attendance.md) — Sporing av gudstjenester og besøk
+- [Modulstruktur](../module-structure.md) — Mønstre for kodeorganisering

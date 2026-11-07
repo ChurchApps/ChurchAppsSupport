@@ -1,5 +1,6 @@
 ---
 title: "Déploiement"
+description: "Où déployer chaque projet ChurchApps : API AWS Lambda, applications web S3, builds mobiles Expo, et B1 Admin auto-hébergé sur Railway ou Docker."
 ---
 
 # Déploiement
@@ -14,12 +15,12 @@ ChurchApps utilise différentes stratégies de déploiement selon le type de pro
 
 | Type de projet | Cible de déploiement | Outillage |
 |-------------|-------------------|---------|
-| [API](./apis) | AWS Lambda | Serverless Framework v3 (environnement Node.js 24.x) |
-| [Applications web](./web-apps) | S3 + CloudFront | Compilation statique, synchronisation S3, invalidation CloudFront |
-| [Applications mobiles](./mobile) | Boutiques d'applications | Expo EAS Build + mises à jour OTA |
-| [Auto-hébergement (Railway)](./railway-template) | Railway | Modèle en un clic : MySQL + Api + B1Admin + B1App |
-| [Auto-hébergement (Docker)](./docker) | Tout hôte Docker | Installation en une ligne ; images GHCR précompilées + Caddy, mise à niveau/sauvegarde/retour arrière avec `./deploy/b1` |
-| [Proxy Caddy pour domaines personnalisés](./caddy-proxy) | EC2 Windows (IP élastique `3.23.251.61`) | `Caddyfile` statique + service WinSW + synchronisation planifiée de la map |
+| [API](./apis.md) | AWS Lambda | Serverless Framework v3 (environnement Node.js 24.x) |
+| [Applications web](./web-apps.md) | S3 + CloudFront | Compilation statique, synchronisation S3, invalidation CloudFront |
+| [Applications mobiles](./mobile.md) | Boutiques d'applications | Expo EAS Build + mises à jour OTA |
+| [Auto-hébergement (Railway)](./railway-template.md) | Railway | Modèle en un clic : MySQL + Api + B1Admin + B1App |
+| [Auto-hébergement (Docker)](./docker.md) | Tout hôte Docker | Installation en une ligne ; images GHCR précompilées + Caddy, mise à niveau/sauvegarde/retour arrière avec `./deploy/b1` |
+| [Proxy Caddy pour domaines personnalisés](./caddy-proxy.md) | EC2 Windows (IP élastique `3.23.251.61`) | `Caddyfile` statique + service WinSW + synchronisation planifiée de la map |
 | FreeShow | Téléchargement direct | Electron Builder (binaires multiplateformes) |
 
 ## Environnements

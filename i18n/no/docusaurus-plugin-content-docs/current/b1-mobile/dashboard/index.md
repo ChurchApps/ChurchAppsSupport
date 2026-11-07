@@ -1,5 +1,6 @@
 ---
 title: "Dashbord"
+description: "Finn fram på startskjermen i B1 Mobile, der de mest brukte funksjonene vises som store kort, og resten ligger under Hurtighandlinger."
 ---
 
 # Dashbord
@@ -28,7 +29,7 @@ Under heltekortet ser du opptil to **fremhevede kort** side om side. Disse repre
 
 ## Hurtighandlinger
 
-Resten av funksjonene vises i et rutenett for **Hurtighandlinger** under de fremhevede kortene. Hvert element viser et ikon og en etikett. Dette er alle de andre navigasjonslenkene menigheten din har konfigurert, og de gir deg tilgang til alt fra [grupper](../groups/) og [gaver](../giving/) til [innsjekking](../checkin/), [preker](../content/sermons.md) og mer.
+Resten av funksjonene vises i et rutenett for **Hurtighandlinger** under de fremhevede kortene. Hvert element viser et ikon og en etikett. Dette er alle de andre navigasjonslenkene menigheten din har konfigurert, og de gir deg tilgang til alt fra [grupper](../groups/index.md) og [gaver](../giving/index.md) til [innsjekking](../checkin/index.md), [preker](../content/sermons.md) og mer.
 
 ## Slik tilpasser oppsettet seg
 
@@ -41,7 +42,7 @@ Dashbordoppsettet tilpasses etter bruksmønsteret ditt. Hver gang du trykker på
 Hvis du ikke har brukt appen ennå, vises funksjonene i standardrekkefølgen menigheten din har konfigurert. Over tid stokker dashbordet om på seg selv for å passe til vanene dine.
 
 :::info
-Funksjonene som er tilgjengelige på dashbordet ditt, konfigureres av menighetens administrator via [B1 Admin](../../b1-admin/). Hvis du ikke ser en funksjon du forventer, kontakt menighetens kontor.
+Funksjonene som er tilgjengelige på dashbordet ditt, konfigureres av menighetens administrator via [B1 Admin](../../b1-admin/index.md). Hvis du ikke ser en funksjon du forventer, kontakt menighetens kontor.
 :::
 
 ## Oppdatere dashbordet

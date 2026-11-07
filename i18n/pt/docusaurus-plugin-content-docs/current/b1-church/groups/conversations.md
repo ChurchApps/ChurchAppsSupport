@@ -1,5 +1,6 @@
 ---
 title: "Conversas do Grupo"
+description: "Saiba como publicar, editar, reagir e gerenciar mensagens em um chat de grupo do B1.church, incluindo anúncios e ferramentas de moderação do líder."
 ---
 
 # Conversas do Grupo

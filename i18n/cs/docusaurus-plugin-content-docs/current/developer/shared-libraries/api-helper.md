@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Reference balíčku @churchapps/apihelper používaného API ChurchApps: lokální build, testování přes Yarn portal a publikování pomocí changesets."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ Balíček `@churchapps/apihelper` poskytuje pomocné nástroje na straně server
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Nainstalujte **Node.js** a **Git** -- viz [Požadavky](../setup/prerequisites)
+- Nainstalujte **Node.js** a **Git** -- viz [Požadavky](../setup/prerequisites.md)
 - Seznamte se s nastavením [pracovního prostoru balíčků](./index.md) a postupem vydávání
-- Tento balíček závisí na [`@churchapps/helpers`](./helpers) (jako peer dependency) a znovu jej exportuje
+- Tento balíček závisí na [`@churchapps/helpers`](./helpers.md) (jako peer dependency) a znovu jej exportuje
 
 </div>
 
@@ -65,6 +66,6 @@ Tento balíček je závislostí každého API ChurchApps -- základního Api, As
 
 ## Související články
 
-- **[Helpers](./helpers)** -- základní balíček nástrojů, na kterém tento balíček závisí
-- **[Struktura modulů](../api/module-structure)** -- jak se kontroléry a autentizační middleware používají v modulech API
-- **[Místní nastavení API](../api/local-setup)** -- nastavení API pro místní vývoj
+- **[Helpers](./helpers.md)** -- základní balíček nástrojů, na kterém tento balíček závisí
+- **[Struktura modulů](../api/module-structure.md)** -- jak se kontroléry a autentizační middleware používají v modulech API
+- **[Místní nastavení API](../api/local-setup.md)** -- nastavení API pro místní vývoj

@@ -1,5 +1,6 @@
 ---
 title: "Suprafața de integrare și extindere"
+description: "Harta tuturor modurilor de a vă conecta la ChurchApps B1: REST API, chei API, OAuth, webhook-uri, MCP și furnizori de conținut, cu linkuri către fiecare referință."
 ---
 
 # Suprafața de integrare și extindere
@@ -14,12 +15,12 @@ Orice poate fi conectat de o terță parte funcționează printr-o singură API 
 
 Există șase moduri de intrare sau ieșire, iar toate folosesc același strat de autentificare:
 
-- **[REST API](../api/api-keys)** — întreaga suprafață a produsului, accesibilă cu un token bearer din orice limbaj de programare.
-- **[Chei API](../api/api-keys)** — cea mai simplă credențială: un token `cak_…` legat de o persoană dintr-o singură biserică.
-- **[OAuth 2.0 și aplicații conectate](../api/connected-apps)** — consimțământ pe biserică pentru aplicații multi-tenant; emite același JWT pe care îl primește un utilizator.
-- **[Webhook-uri](../api/webhooks)** — evenimente de ieșire semnate, livrate durabil.
-- **[Server MCP](../api/mcp)** — un strat destinat inteligenței artificiale peste REST API, disponibil la `/mcp`.
-- **[Furnizori de conținut](../freeplay-content-provider)** — calea de intrare pentru bibliotecile media externe în FreePlay și în aplicațiile B1.
+- **[REST API](../api/api-keys.md)** — întreaga suprafață a produsului, accesibilă cu un token bearer din orice limbaj de programare.
+- **[Chei API](../api/api-keys.md)** — cea mai simplă credențială: un token `cak_…` legat de o persoană dintr-o singură biserică.
+- **[OAuth 2.0 și aplicații conectate](../api/connected-apps.md)** — consimțământ pe biserică pentru aplicații multi-tenant; emite același JWT pe care îl primește un utilizator.
+- **[Webhook-uri](../api/webhooks.md)** — evenimente de ieșire semnate, livrate durabil.
+- **[Server MCP](../api/mcp.md)** — un strat destinat inteligenței artificiale peste REST API, disponibil la `/mcp`.
+- **[Furnizori de conținut](../freeplay-content-provider.md)** — calea de intrare pentru bibliotecile media externe în FreePlay și în aplicațiile B1.
 
 Tot ce nu ține de furnizorii de conținut este servit de o singură API monolitică (repository-ul [Api](https://github.com/ChurchApps/Api)), ale cărei module sunt montate sub căi de bază stabile: `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting` și `/mcp`.
 
@@ -80,7 +81,7 @@ Controllerele restricționează acțiunile cu `au.checkAccess(contentType, actio
 - Un scop poate doar să *elimine* permisiuni, deci o credențială cu scopuri nu poate ajunge la administrarea serverului sau a domeniului (aceste permisiuni nu sunt asociate intenționat cu niciun scop).
 - Cheile API au prefixul `cak_`. `CustomAuthProvider.getUser()` verifică acest prefix, face hash pe secret și reface rezolvarea RBAC-ului live al persoanei proprietare la fiecare apel.
 
-Pentru catalogul complet de scopuri, vezi [Chei API → Scopuri](../api/api-keys#scopes).
+Pentru catalogul complet de scopuri, vezi [Chei API → Scopuri](../api/api-keys.md#scopes).
 
 ## Referința suprafețelor
 
@@ -90,7 +91,7 @@ Suprafața completă a produsului. Orice endpoint autentificat acceptă fie un J
 
 ### Chei API
 
-Un token personal de acces `cak_<prefix>.<secret>`, creat în **B1Admin → Settings → Developer → API Keys**. Se stochează doar un hash SHA-256; cheia brută se afișează o singură dată. Se gestionează la `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Este cel mai potrivit pentru scripturile unei singure biserici și pentru conectori precum Zapier, Make și Google Sheets. → **[Chei API](../api/api-keys)**
+Un token personal de acces `cak_<prefix>.<secret>`, creat în **B1Admin → Settings → Developer → API Keys**. Se stochează doar un hash SHA-256; cheia brută se afișează o singură dată. Se gestionează la `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Este cel mai potrivit pentru scripturile unei singure biserici și pentru conectori precum Zapier, Make și Google Sheets. → **[Chei API](../api/api-keys.md)**
 
 ### OAuth 2.0 și aplicații conectate
 
@@ -102,19 +103,19 @@ Pentru aplicații multi-tenant, care trebuie ca fiecare biserică să își dea 
 
 Clienții publici se pot înregistra singuri cu `POST /oauth/register` (înregistrare dinamică de client, RFC 7591). Primesc un `client_id` fără secret, iar URI-urile lor de redirecționare trebuie să fie `https` sau loopback.
 
-O **aplicație conectată** este vizualizarea tokenului acordat, din perspectiva administratorului bisericii. Aceasta este listată și poate fi revocată la `/membership/oauth/connections`. Controllerul găzduiește și puntea de sesiune de releu OAuth (`/oauth/relay/*`), care permite unui dispozitiv fără browser să finalizeze autentificarea la un furnizor *extern*. → **[Aplicații conectate și OAuth](../api/connected-apps)**
+O **aplicație conectată** este vizualizarea tokenului acordat, din perspectiva administratorului bisericii. Aceasta este listată și poate fi revocată la `/membership/oauth/connections`. Controllerul găzduiește și puntea de sesiune de releu OAuth (`/oauth/relay/*`), care permite unui dispozitiv fără browser să finalizeze autentificarea la un furnizor *extern*. → **[Aplicații conectate și OAuth](../api/connected-apps.md)**
 
 ### Webhook-uri
 
-Singura suprafață de ieșire. O biserică abonează un endpoint HTTPS public la evenimente. Când apare o modificare relevantă, `WebhookDispatcher.emit(churchId, event, payload)` completează payload-urile care conțin doar ID-uri cu nume afișabile (`personName`, `groupName`, `formName`; căutările se fac doar dacă există un abonament potrivit), înregistrează o livrare, iar un worker în fundal trimite prin POST un envelope JSON semnat, cu reîncercări, backoff și redeliverare. Motorul se află în `Api/src/shared/webhooks/`, iar operațiunile CRUD pentru fiecare biserică sunt sub `/membership/webhooks` (`WebhookController.ts`). Câmpul `connectorType` modifică structura corpului pentru Slack și Discord. Conectorul `mailchimp` merge mai departe și gestionează întreaga conversație HTTP (metodă, URL și autentificare pentru fiecare eveniment, prin API-ul Mailchimp; credențialele sunt criptate în `webhooks.connectorConfig`). → **[Webhook-uri](../api/webhooks)**
+Singura suprafață de ieșire. O biserică abonează un endpoint HTTPS public la evenimente. Când apare o modificare relevantă, `WebhookDispatcher.emit(churchId, event, payload)` completează payload-urile care conțin doar ID-uri cu nume afișabile (`personName`, `groupName`, `formName`; căutările se fac doar dacă există un abonament potrivit), înregistrează o livrare, iar un worker în fundal trimite prin POST un envelope JSON semnat, cu reîncercări, backoff și redeliverare. Motorul se află în `Api/src/shared/webhooks/`, iar operațiunile CRUD pentru fiecare biserică sunt sub `/membership/webhooks` (`WebhookController.ts`). Câmpul `connectorType` modifică structura corpului pentru Slack și Discord. Conectorul `mailchimp` merge mai departe și gestionează întreaga conversație HTTP (metodă, URL și autentificare pentru fiecare eveniment, prin API-ul Mailchimp; credențialele sunt criptate în `webhooks.connectorConfig`). → **[Webhook-uri](../api/webhooks.md)**
 
 ### Server MCP
 
-Un strat destinat inteligenței artificiale, disponibil la `/mcp` (`Api/src/modules/mcp/`). Trei instrumente generice (`list_endpoints`, `describe_endpoint`, `api_call`) expun dinamic întreaga suprafață REST oricărui client MCP. Autentificarea este același token bearer ca pentru orice altceva. Pentru clienții care se autentifică prin OAuth (conectori personalizați din claude.ai), un răspuns 401 de la `/mcp` include un antet `WWW-Authenticate` care indică spre `/.well-known/oauth-protected-resource`. Endpoint-ul `/.well-known/oauth-authorization-server` anunță endpoint-urile `/membership/oauth`, înregistrarea dinamică, PKCE și pagina de consimțământ `/oauth` din B1Admin (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` reintră în stack-ul Express în același proces, astfel încât fiecare regulă de permisiuni și de delimitare pe biserică rămâne aplicată. → **[Server MCP](../api/mcp)**
+Un strat destinat inteligenței artificiale, disponibil la `/mcp` (`Api/src/modules/mcp/`). Trei instrumente generice (`list_endpoints`, `describe_endpoint`, `api_call`) expun dinamic întreaga suprafață REST oricărui client MCP. Autentificarea este același token bearer ca pentru orice altceva. Pentru clienții care se autentifică prin OAuth (conectori personalizați din claude.ai), un răspuns 401 de la `/mcp` include un antet `WWW-Authenticate` care indică spre `/.well-known/oauth-protected-resource`. Endpoint-ul `/.well-known/oauth-authorization-server` anunță endpoint-urile `/membership/oauth`, înregistrarea dinamică, PKCE și pagina de consimțământ `/oauth` din B1Admin (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` reintră în stack-ul Express în același proces, astfel încât fiecare regulă de permisiuni și de delimitare pe biserică rămâne aplicată. → **[Server MCP](../api/mcp.md)**
 
 ### Furnizori de conținut
 
-Calea conținutului de intrare, în pachetul separat `Packages/content-providers` (`@churchapps/content-providers`), nu în API. Fiecare furnizor implementează interfața `IProvider` (`src/interfaces.ts`), adică `browse`, `getPlaylist`, `getInstructions` și hook-urile de autentificare, și se înregistrează singur într-un `Map` de registru (`src/providers/registry.ts`). Aici **B1 este clientul OAuth**: un furnizor declară un `AuthType` de `none`, `oauth_pkce`, `device_flow` sau `form_login`, iar helperele comune (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) rulează fluxurile PKCE și device flow pe partea de client față de sursa externă. Astăzi există unsprezece furnizori, inclusiv Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church și B1.church, care alimentează FreePlay și aplicațiile B1. → **[Furnizor de conținut FreePlay](../freeplay-content-provider)**
+Calea conținutului de intrare, în pachetul separat `Packages/content-providers` (`@churchapps/content-providers`), nu în API. Fiecare furnizor implementează interfața `IProvider` (`src/interfaces.ts`), adică `browse`, `getPlaylist`, `getInstructions` și hook-urile de autentificare, și se înregistrează singur într-un `Map` de registru (`src/providers/registry.ts`). Aici **B1 este clientul OAuth**: un furnizor declară un `AuthType` de `none`, `oauth_pkce`, `device_flow` sau `form_login`, iar helperele comune (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) rulează fluxurile PKCE și device flow pe partea de client față de sursa externă. Astăzi există unsprezece furnizori, inclusiv Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church și B1.church, care alimentează FreePlay și aplicațiile B1. → **[Furnizor de conținut FreePlay](../freeplay-content-provider.md)**
 
 **Planurile anuale** folosesc această cale. Un editor de curriculum (cu `lessons.edit`) menține secvențe ordonate de săptămâna 1, 2 și 3 în administrarea Lessons.church (tabelele `yearPlans` și `yearPlanWeeks` din `LessonsApi`, cu `startMonth` opțional și `anchor` pe săptămână, `easter` sau `christmas`). `GET /yearPlans/public` din LessonsApi servește anonim planurile active, completând programul, studiul și locul fiecărei săptămâni din arborele lecțiilor. **Serving → Plans → Schedule Lesson → Apply Year Plan** din B1Admin consumă acest endpoint și scrie câte un plan DoingApi pentru fiecare săptămână inclusă (`providerId=lessonschurch`, `providerPlanId=/lessons/{programId}/{studyId}/{lessonId}/{venueId}`). Planurile cu `startMonth` rezolvă săptămânile ancorate față de anul ales (Paștele prin calculul gregorian, Crăciunul ca duminica din ziua de 25 decembrie sau cea dinaintea acesteia) și completează intervalele dintre ele. Planurile fără `startMonth` asociază în continuare săptămâna N cu `startDate + (N−1)×7` zile. Săptămânile din furnizorii externi OLF sau cele cu o cale incompletă sunt omise la aplicare. Bisericile editează planurile rezultate ca pe orice alt plan, iar FreePlay redă ce se află în plan.
 
@@ -122,12 +123,12 @@ Calea conținutului de intrare, în pachetul separat `Packages/content-providers
 
 | Suprafață | Mecanism de autentificare | Direcție | Unde este implementat | Referință |
 |---|---|---|---|---|
-| REST API | JWT `Bearer` sau cheie `cak_…` | Intrare | `Api/src/modules/*` | [Chei API](../api/api-keys) |
-| Chei API | Token `cak_` cu hash SHA-256 | Credențial | `Api/.../membership/controllers/ApiKeyController.ts` | [Chei API](../api/api-keys) |
-| OAuth 2.0 / Aplicații conectate | Cod de autorizare (PKCE) · device · refresh → JWT; înregistrare dinamică de client | Intrare | `Api/.../membership/controllers/OAuthController.ts` | [Aplicații conectate](../api/connected-apps) |
-| Webhook-uri | Secret per hook, semnătură HMAC-SHA256 | Ieșire | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhook-uri](../api/webhooks) |
-| Server MCP | JWT `Bearer`, JWT OAuth (descoperit prin `/.well-known`) sau cheie `cak_…` | Intrare (AI) | `Api/src/modules/mcp/` | [Server MCP](../api/mcp) |
-| Furnizori de conținut | Per furnizor: fără autentificare / OAuth PKCE / device / formular | Conținut de intrare | `Packages/content-providers/` | [Furnizor de conținut](../freeplay-content-provider) |
+| REST API | JWT `Bearer` sau cheie `cak_…` | Intrare | `Api/src/modules/*` | [Chei API](../api/api-keys.md) |
+| Chei API | Token `cak_` cu hash SHA-256 | Credențial | `Api/.../membership/controllers/ApiKeyController.ts` | [Chei API](../api/api-keys.md) |
+| OAuth 2.0 / Aplicații conectate | Cod de autorizare (PKCE) · device · refresh → JWT; înregistrare dinamică de client | Intrare | `Api/.../membership/controllers/OAuthController.ts` | [Aplicații conectate](../api/connected-apps.md) |
+| Webhook-uri | Secret per hook, semnătură HMAC-SHA256 | Ieșire | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhook-uri](../api/webhooks.md) |
+| Server MCP | JWT `Bearer`, JWT OAuth (descoperit prin `/.well-known`) sau cheie `cak_…` | Intrare (AI) | `Api/src/modules/mcp/` | [Server MCP](../api/mcp.md) |
+| Furnizori de conținut | Per furnizor: fără autentificare / OAuth PKCE / device / formular | Conținut de intrare | `Packages/content-providers/` | [Furnizor de conținut](../freeplay-content-provider.md) |
 
 ## Conectori gata făcuți
 
@@ -143,9 +144,9 @@ Pentru propriul cod, **[`@churchapps/integration-sdk`](https://www.npmjs.com/pac
 
 ## Pagini conexe
 
-- [Chei API](../api/api-keys): cea mai simplă credențială și catalogul de scopuri
-- [Aplicații conectate și OAuth](../api/connected-apps): fluxuri de consimțământ multi-tenant
-- [Webhook-uri](../api/webhooks): sistemul de evenimente de ieșire
-- [Server MCP](../api/mcp): stratul de integrare cu inteligența artificială
-- [Furnizor de conținut FreePlay](../freeplay-content-provider): cum devii o sursă de conținut de intrare
+- [Chei API](../api/api-keys.md): cea mai simplă credențială și catalogul de scopuri
+- [Aplicații conectate și OAuth](../api/connected-apps.md): fluxuri de consimțământ multi-tenant
+- [Webhook-uri](../api/webhooks.md): sistemul de evenimente de ieșire
+- [Server MCP](../api/mcp.md): stratul de integrare cu inteligența artificială
+- [Furnizor de conținut FreePlay](../freeplay-content-provider.md): cum devii o sursă de conținut de intrare
 - [Integrări (pentru utilizatori finali)](/docs/b1-admin/integrations/): ghiduri de configurare a conectorilor gata făcuți

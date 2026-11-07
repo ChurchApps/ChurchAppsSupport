@@ -1,5 +1,6 @@
 ---
 title: "Edición masiva de personas"
+description: "Actualiza en B1 Admin estado de membresía, estado civil, género, exclusiones, campos Sí/No o pertenencia a grupos de muchas personas a la vez."
 ---
 
 # Edición masiva de personas

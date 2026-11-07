@@ -1,5 +1,6 @@
 ---
 title: "Bažnyčios nustatymai"
+description: "Nustatykite bažnyčios pavadinimą, adresą, subdomeną, laiko juostą, regiono formatą, SMS tiekėją ir failų saugyklą B1 Admin Bažnyčios nustatymų puslapyje."
 ---
 
 # Bažnyčios nustatymai

@@ -1,5 +1,7 @@
 ---
-title: "礼拜程序"
+title: "B1.church 应用中的礼拜程序详情"
+sidebar_label: "礼拜程序"
+description: "在 B1.church 应用中查看计划的礼拜程序，包括累计时间、诗歌歌词、调性转换以及为您的团队提供的课程预览。"
 ---
 
 # 礼拜程序

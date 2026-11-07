@@ -1,5 +1,6 @@
 ---
 title: "Guía: Configurar el registro de entrada para el ministerio infantil"
+description: "Skonfiguruj meldowanie dzieci w B1 Admin: połącz rodziny, utwórz grupy wiekowe, ustaw nabożeństwa i drukuj identyfikatory dla kiosku B1 Checkin."
 ---
 
 Esta guía no tiene la traducción solicitada. Lo siguiente sí corresponde a la tarea: el archivo en polaco.

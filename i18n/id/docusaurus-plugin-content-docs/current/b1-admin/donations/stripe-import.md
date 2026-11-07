@@ -1,5 +1,6 @@
 ---
 title: "Impor Stripe"
+description: "Tarik donasi Stripe ke B1 Admin dengan impor berbasis pratinjau yang menandai tiap transaksi sebagai baru, sudah diimpor, atau dilewati sebelum Anda simpan."
 ---
 
 # Impor Stripe

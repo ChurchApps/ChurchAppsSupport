@@ -1,5 +1,6 @@
 ---
 title: "Bemutatás"
+description: "Leckék vetítése projektoron a Lessons.church Presenter Mode-jával, szerepkör-alapú önkéntesi útmutatók megosztása, és anyagok nyomtatása óra előtt."
 ---
 
 # Bemutatás

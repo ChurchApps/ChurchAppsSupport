@@ -1,5 +1,6 @@
 ---
 title: "寄付エンドポイント"
+description: "ChurchApps の Giving API エンドポイントのリファレンスです。寄付、バッチ、ゲートウェイ、定期購読、支払い方法を扱い、B1 Admin と連携する開発者向けの認証と権限ルールを記載しています。"
 ---
 
 # 寄付エンドポイント
@@ -284,6 +285,6 @@ GET /giving/gateways/configured/church-123
 
 ## 関連ページ
 
-- [会員エンドポイント](./membership) — 人物、教会、グループ、ロール、権限
-- [認証と権限](./authentication) — ログインの流れ、JWT、OAuth、権限モデル
-- [モジュール構成](../module-structure) — コードの構成パターン
+- [会員エンドポイント](./membership.md) — 人物、教会、グループ、ロール、権限
+- [認証と権限](./authentication.md) — ログインの流れ、JWT、OAuth、権限モデル
+- [モジュール構成](../module-structure.md) — コードの構成パターン

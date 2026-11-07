@@ -1,5 +1,6 @@
 ---
 title: "Planssjablonen"
+description: "Bewaar de dienstvolgorde en posities van een dienstplan als herbruikbare sjabloon in B1 Admin en pas die met één klik toe op toekomstige plannen."
 ---
 
 # Planssjablonen

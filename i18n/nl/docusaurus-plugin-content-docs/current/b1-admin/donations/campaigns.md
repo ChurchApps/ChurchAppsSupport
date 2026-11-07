@@ -1,5 +1,6 @@
 ---
 title: "Campagnes & Toezeggingen"
+description: "Maak fondsenwervingscampagnes aan in B1 Admin, registreer toezeggingen van leden en volg de voortgang naar een doel tegen de werkelijke giften per fonds."
 ---
 
 # Campagnes & Toezeggingen
@@ -13,7 +14,7 @@ Met campagnes kunt u een fondsenwervingsactie opzetten gericht op een specifiek 
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Stel uw [donatiefondsen](funds) in — elke campagne is gekoppeld aan een fonds
+- Stel uw [donatiefondsen](./funds.md) in — elke campagne is gekoppeld aan een fonds
 - U hebt toegang nodig tot het gedeelte Donaties van B1 Admin
 
 </div>
@@ -66,6 +67,6 @@ Klik op **Bewerken** in een campagnerij (of op **Campagne bewerken** bovenaan de
 
 ## Gerelateerde artikelen
 
-- [Donaties registreren](recording-donations) — de daadwerkelijke giften registreren die toezeggingen inlossen
-- [Fondsen](funds) — het fonds instellen dat aan een campagne wordt gekoppeld
-- [Donatierapporten](donation-reports) — rapportage over donaties per fonds
+- [Donaties registreren](./recording-donations.md) — de daadwerkelijke giften registreren die toezeggingen inlossen
+- [Fondsen](./funds.md) — het fonds instellen dat aan een campagne wordt gekoppeld
+- [Donatierapporten](./donation-reports.md) — rapportage over donaties per fonds

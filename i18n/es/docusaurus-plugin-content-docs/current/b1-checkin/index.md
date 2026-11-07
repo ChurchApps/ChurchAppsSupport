@@ -1,5 +1,6 @@
 ---
 title: "Descripción general de B1 Church Checkin"
+description: "Configura la app del quiosco de B1 Church Checkin en tabletas iPad o Android para que las familias se registren solas, asignen a los niños a grupos e impriman etiquetas y comprobantes de recogida."
 ---
 
 # Descripción general de B1 Church Checkin
@@ -24,7 +25,7 @@ Coloque un iPad o una tableta Android en el vestíbulo o en el área de bienveni
 - **Revisión del hogar**: vea de un vistazo a todos los miembros de la familia con sus fotos y sus asignaciones de grupo actuales.
 - **Asignación de grupos**: asigne a cada miembro de la familia a la clase o grupo correcto para el horario de servicio seleccionado.
 - **Registro de invitados**: agregue a un invitado a su hogar en el momento, con nombre y apellido.
-- **Registro de invitados por código QR**: muestre un código QR que los visitantes pueden escanear para [registrarse por sí mismos](../b1-church/checkin/guest-registration) en su teléfono antes de registrar su entrada, o permita que toquen **Regístrese aquí** para llenar el mismo formulario en el quiosco.
+- **Registro de invitados por código QR**: muestre un código QR que los visitantes pueden escanear para [registrarse por sí mismos](../b1-church/checkin/guest-registration.md) en su teléfono antes de registrar su entrada, o permita que toquen **Regístrese aquí** para llenar el mismo formulario en el quiosco.
 - **Impresión de etiquetas**: imprima etiquetas con nombre para los niños y comprobantes de recogida para padres con códigos de seguridad únicos.
 - **Compatibilidad con impresoras de red**: detecte y configure impresoras de red directamente desde la aplicación.
 - **Inicio de sesión automático**: después del primer inicio de sesión, la aplicación recuerda sus credenciales y va directamente a la pantalla de servicios en los siguientes inicios.
@@ -33,8 +34,8 @@ Coloque un iPad o una tableta Android en el vestíbulo o en el área de bienveni
 
 ## Secciones de la documentación
 
-- **[Primeros pasos](./getting-started/)**: instalar la aplicación, iniciar sesión y configurar su impresora.
-- **[Flujo de registro de entrada](./check-in/)**: el flujo completo de registro de entrada, desde seleccionar un servicio hasta imprimir etiquetas.
+- **[Primeros pasos](./getting-started/index.md)**: instalar la aplicación, iniciar sesión y configurar su impresora.
+- **[Flujo de registro de entrada](./check-in/index.md)**: el flujo completo de registro de entrada, desde seleccionar un servicio hasta imprimir etiquetas.
 
 :::tip
 B1 Church Checkin funciona mejor en una tableta de 10 pulgadas (iPad o Android) montada en orientación horizontal, donde las familias puedan alcanzarla fácilmente. Descargue la aplicación desde la [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) o [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).

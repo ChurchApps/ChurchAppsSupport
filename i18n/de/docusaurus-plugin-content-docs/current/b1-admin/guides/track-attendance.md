@@ -1,5 +1,6 @@
 ---
 title: "Anleitung: Besucherzahlen im Blick behalten"
+description: "Erfassen Sie die Gottesdienstanwesenheit in B1 Admin, indem Sie Gemeinden und Gottesdienstzeiten einrichten, sie manuell oder per Selbst-Check-in erfassen und Berichte auswerten."
 ---
 
 # Besucherzahlen im Blick behalten

@@ -1,5 +1,6 @@
 ---
 title: "Digital Signage"
+description: "Gửi nội dung bài học đến TV ở sảnh hoặc hành lang trong B1 Admin bằng URL nguồn cấp biển báo kỹ thuật số luôn hiển thị chương trình hiện tại, hoặc dùng FreePlay TVs."
 ---
 
 # Digital Signage
@@ -14,7 +15,7 @@ Gửi nội dung bài học của bạn đến TV ở sảnh hoặc hành lang b
 <h4>Trước Khi Bắt Đầu</h4>
 
 - Thiết lập một [loại kế hoạch](./plans.md) với [Lessons.church](../../b1-church/content/lessons.md) hoặc nội dung bài học khác đã được lên lịch
-- Có tài khoản [SignPresenter](https://www.signpresenter.com) và thiết bị được thiết lập để hiển thị nó, hoặc một TV chạy [FreePlay](../../freeplay/)
+- Có tài khoản [SignPresenter](https://www.signpresenter.com) và thiết bị được thiết lập để hiển thị nó, hoặc một TV chạy [FreePlay](../../freeplay/index.md)
 
 </div>
 
@@ -36,14 +37,14 @@ Nguồn cấp được thiết kế để hoạt động với [SignPresenter](h
 
 ## Dùng TV FreePlay Thay Thế
 
-Nếu màn hình của bạn chạy [FreePlay](../../freeplay/), bạn không cần URL nguồn cấp. Hộp thoại **Digital Signage Feed** có liên kết đến **admin.freeplay.church/calendar**, nơi bạn có thể lên lịch loại kế hoạch này trên TV FreePlay:
+Nếu màn hình của bạn chạy [FreePlay](../../freeplay/index.md), bạn không cần URL nguồn cấp. Hộp thoại **Digital Signage Feed** có liên kết đến **admin.freeplay.church/calendar**, nơi bạn có thể lên lịch loại kế hoạch này trên TV FreePlay:
 
 1. Nhấp liên kết **admin.freeplay.church/calendar** trong hộp thoại. FreePlay Admin dùng cùng thông tin đăng nhập với B1 Admin.
 2. Chọn nhóm màn hình cho TV của bạn rồi nhấp **Add schedule**.
 3. Trong mục **Play**, chọn loại kế hoạch của bạn từ **Service plans**. Mục này được đánh dấu **(current plan)**.
 4. Đặt các ngày và giờ, rồi nhấp **Save**.
 
-Mỗi tuần, TV sẽ phát kế hoạch hiện tại của loại kế hoạch đó vào các giờ bạn đã đặt. Cách này cũng hoạt động với bài học Go Curriculum, kể cả các kế hoạch bạn đã tùy chỉnh. FreePlay đăng nhập bằng tài khoản Go Curriculum được liên kết với nhóm phục vụ trong **Content Providers** (xem [Lên Lịch Bài Học](./scheduling-lessons.md)), hoặc bằng kết nối Go Curriculum của nhà thờ nếu nhóm đó không có. Xem [Lên Lịch Lịch Trình](../../freeplay/scheduled-mode/scheduling-the-calendar) để biết tất cả các tùy chọn, và [Ghép Nối Màn Hình](../../freeplay/scheduled-mode/pairing-a-screen) để thêm TV.
+Mỗi tuần, TV sẽ phát kế hoạch hiện tại của loại kế hoạch đó vào các giờ bạn đã đặt. Cách này cũng hoạt động với bài học Go Curriculum, kể cả các kế hoạch bạn đã tùy chỉnh. FreePlay đăng nhập bằng tài khoản Go Curriculum được liên kết với nhóm phục vụ trong **Content Providers** (xem [Lên Lịch Bài Học](./scheduling-lessons.md)), hoặc bằng kết nối Go Curriculum của nhà thờ nếu nhóm đó không có. Xem [Lên Lịch Lịch Trình](../../freeplay/scheduled-mode/scheduling-the-calendar.md) để biết tất cả các tùy chọn, và [Ghép Nối Màn Hình](../../freeplay/scheduled-mode/pairing-a-screen.md) để thêm TV.
 
 :::note
 URL nguồn cấp không bao gồm phương tiện Go Curriculum, vì nội dung đó cần thông tin đăng nhập Go Curriculum của nhà thờ bạn. Để hiển thị bài học Go Curriculum trên TV ở sảnh hoặc lớp học, hãy dùng FreePlay.
@@ -53,4 +54,4 @@ URL nguồn cấp không bao gồm phương tiện Go Curriculum, vì nội dung
 
 - Quản lý các kế hoạch cung cấp nội dung cho màn hình này trên trang [Plans](./plans.md)
 - Lên lịch nội dung với [Lessons.church](./scheduling-lessons.md)
-- Đặt TV FreePlay vào lịch với [Scheduled Mode](../../freeplay/scheduled-mode/)
+- Đặt TV FreePlay vào lịch với [Scheduled Mode](../../freeplay/scheduled-mode/index.md)

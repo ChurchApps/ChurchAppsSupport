@@ -1,5 +1,6 @@
 ---
 title: "Membuat Akun"
+description: "Daftar akun ChurchApps di Lessons.church, lalu hubungkan ke profil gereja baru atau yang sudah ada agar bisa mengelola kelas dan jadwal."
 ---
 
 # Membuat Akun

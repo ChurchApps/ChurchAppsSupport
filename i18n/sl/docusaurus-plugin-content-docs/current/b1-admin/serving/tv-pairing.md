@@ -1,5 +1,6 @@
 ---
 title: "Povezava FreePlay z B1 Admin"
+description: "Povežite učilnični televizor s FreePlay z načrtovanimi lekcijami v B1 Admin, da jih lahko učitelji med poukom predvajajo na zaslonu."
 ---
 
 # Povezava učilniškega televizorja z vašimi lekcijami v B1 Admin

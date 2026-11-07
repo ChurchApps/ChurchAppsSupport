@@ -1,5 +1,6 @@
 ---
 title: "Útmutató: Eseményregisztráció beállítása"
+description: "Eseményregisztrációs űrlap beállítása a B1 Admin-ban résztvevői adatok és opcionális fizetés gyűjtésére, beágyazás a weboldalba, jelentkezések követése."
 ---
 
 # Eseményregisztráció beállítása
@@ -11,7 +12,7 @@ Hozzon létre eseményregisztrációs űrlapot, gyűjtse be a résztvevők adata
 </div>
 
 :::info
-**Kétféleképpen kezelheti az eseményregisztrációt:** Ez az útmutató az **űrlapalapú regisztrációt** ismerteti, amely teljes kontrollt ad az egyéni mezők és a fizetésgyűjtés felett. Egyszerűbb eseményekhez, ahol csak azt kell nyomon követnie, ki jön el, használja a **natív eseményregisztrációt**, amely a naptárba van beépítve -- a beállítási útmutatóért lásd: [Naptárak létrehozása](../calendars/creating-calendars.md#enabling-event-registration). A natív regisztráció lehetővé teszi, hogy a tagok közvetlenül a [B1 weboldalon](../../b1-church/events/registering) és a [mobilalkalmazásban](../../b1-mobile/events/registering) jelentkezzenek, kapacitáskövetéssel, dátumablakokkal és e-mailes visszaigazolásokkal.
+**Kétféleképpen kezelheti az eseményregisztrációt:** Ez az útmutató az **űrlapalapú regisztrációt** ismerteti, amely teljes kontrollt ad az egyéni mezők és a fizetésgyűjtés felett. Egyszerűbb eseményekhez, ahol csak azt kell nyomon követnie, ki jön el, használja a **natív eseményregisztrációt**, amely a naptárba van beépítve -- a beállítási útmutatóért lásd: [Naptárak létrehozása](../calendars/creating-calendars.md#enabling-event-registration). A natív regisztráció lehetővé teszi, hogy a tagok közvetlenül a [B1 weboldalon](../../b1-church/events/registering.md) és a [mobilalkalmazásban](../../b1-mobile/events/registering.md) jelentkezzenek, kapacitáskövetéssel, dátumablakokkal és e-mailes visszaigazolásokkal.
 :::
 
 <div class="prereqs">

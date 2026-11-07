@@ -1,5 +1,6 @@
 ---
 title: "Mga Note"
+description: "Suriin ang mga tala ng pastoral care, follow-up, at plano mula sa tao, grupo, event, at workflow card sa iisang listahan ng B1 Admin, pinakabago muna."
 ---
 
 # Mga Note

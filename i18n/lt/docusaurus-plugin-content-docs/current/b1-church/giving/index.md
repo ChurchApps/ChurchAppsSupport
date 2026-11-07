@@ -1,5 +1,7 @@
 ---
-title: "Dāvanos"
+title: "Internetinis aukojimas ir aukos B1.church"
+sidebar_label: "Dāvanos"
+description: "Aukokite bažnyčiai internetu B1.church be paskyros arba prisijunkite ir tvarkykite pasikartojančias aukas, mokėjimo būdus ir aukojimo pažymas."
 ---
 
 # Dāvanos

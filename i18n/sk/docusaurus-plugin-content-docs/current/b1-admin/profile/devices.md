@@ -1,5 +1,6 @@
 ---
 title: "Správa zariadení"
+description: "Párujte, označujte a odstraňujte obrazovky ChurchAppsPlayer a FreePlay pripojené k vášmu účtu v B1 Admin, aby cirkevné displeje boli aktuálne a bezpečné."
 ---
 
 # Správa zariadení

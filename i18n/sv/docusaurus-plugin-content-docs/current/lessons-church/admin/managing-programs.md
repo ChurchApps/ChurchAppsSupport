@@ -1,5 +1,6 @@
 ---
 title: "Hantera program"
+description: "Skapa och redigera läroplansprogram i Lessons.church, ställ in slugs och miniatyrbilder, gruppera studier i kategorier och bifoga resurser på programnivå."
 ---
 
 # Hantera program

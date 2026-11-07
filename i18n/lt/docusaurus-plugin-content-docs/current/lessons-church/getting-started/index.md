@@ -1,5 +1,7 @@
 ---
-title: "Pradžia"
+title: "Pradžia su Lessons.church"
+sidebar_label: "Pradžia"
+description: "Sukurkite nemokamą Lessons.church paskyrą, susiekite bažnyčią, nustatykite klases ir suplanuokite pirmąsias pamokas. Prenumerata nereikalinga."
 ---
 
 # Pradžia

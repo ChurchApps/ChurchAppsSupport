@@ -1,5 +1,6 @@
 ---
 title: "小组健康状况"
+description: "在 B1 Admin 中通过 90 天表格检查小组健康状况，包括成员数、加入人数、离开人数、流失率和平均出席率，以发现需要跟进的小组。"
 ---
 
 # 小组健康状况
@@ -13,8 +14,8 @@ title: "小组健康状况"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 您需要至少几个有成员的组来看到有意义的数据。请参阅[创建组](creating-groups)。
-- 参加数据从记录的会话中拉取。请参阅[参加](../attendance/)部分。
+- 您需要至少几个有成员的组来看到有意义的数据。请参阅[创建组](./creating-groups.md)。
+- 参加数据从记录的会话中拉取。请参阅[参加](../attendance/index.md)部分。
 
 </div>
 
@@ -48,6 +49,6 @@ title: "小组健康状况"
 
 ## 相关文章
 
-- [创建组](creating-groups) — 设置组
-- [组成员](group-members) — 管理组成员关系
-- [追踪参加](../attendance/tracking-attendance) — 记录参加会话，为此仪表板供电
+- [创建组](./creating-groups.md) — 设置组
+- [组成员](./group-members.md) — 管理组成员关系
+- [追踪参加](../attendance/tracking-attendance.md) — 记录参加会话，为此仪表板供电

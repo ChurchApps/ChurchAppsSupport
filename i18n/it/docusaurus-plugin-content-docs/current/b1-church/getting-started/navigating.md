@@ -1,5 +1,6 @@
 ---
 title: "Navigare in B1App"
+description: "Orientati nel portale membri B1.church da telefono o computer: la dashboard Home, la barra delle schede in basso, la pagina Altro e la pagina Me."
 ---
 
 # Navigare in B1App
@@ -92,7 +93,7 @@ Le pagine di dettaglio — un gruppo, un piano, la tua pagina Me, le schermate P
 
 ## La pagina Me
 
-**Me** (`/mobile/me`) è il tuo centro personale. Mostra il tuo nome e la tua foto con i pulsanti **Modifica profilo** e **Impostazioni** ([preferenze di notifica](./notification-preferences.md)), poi ciò che ti aspetta -- incarichi di servizio, iscrizioni agli eventi ed eventi di gruppo -- seguiti dal tuo nucleo familiare, dai tuoi gruppi, le tue [donazioni](../giving/) di quest'anno, i moduli che hai inviato, la cronologia delle presenze, le tue [iscrizioni](../events/my-registrations.md) e le notifiche e i messaggi recenti. Vedi [La pagina Me](./me-page) per i dettagli.
+**Me** (`/mobile/me`) è il tuo centro personale. Mostra il tuo nome e la tua foto con i pulsanti **Modifica profilo** e **Impostazioni** ([preferenze di notifica](./notification-preferences.md)), poi ciò che ti aspetta -- incarichi di servizio, iscrizioni agli eventi ed eventi di gruppo -- seguiti dal tuo nucleo familiare, dai tuoi gruppi, le tue [donazioni](../giving/index.md) di quest'anno, i moduli che hai inviato, la cronologia delle presenze, le tue [iscrizioni](../events/my-registrations.md) e le notifiche e i messaggi recenti. Vedi [La pagina Me](./me-page.md) per i dettagli.
 
 Se non hai effettuato l'accesso, la pagina Me mostra invece un pulsante **Accedi**.
 

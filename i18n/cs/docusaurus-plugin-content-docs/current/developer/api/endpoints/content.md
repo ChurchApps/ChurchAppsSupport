@@ -1,5 +1,6 @@
 ---
 title: "Koncové body obsahu"
+description: "Referenční přehled endpointů Content API ChurchApps: stránky webu, blogy, přesměrování, kázání, události, soubory, Bible a písně v B1 Admin."
 ---
 
 # Koncové body obsahu
@@ -133,7 +134,7 @@ Základní cesta: `/content/pageHistory`
 
 Základní cesta: `/content/posts`
 
-Blogové příspěvky jsou samostatné řádky: `title`, `slug` (jedinečný v rámci církve), `excerpt`, `content` (tělo v markdownu), `authorId`, `photoUrl`, `publishDate`, `category` a `tags`. Příspěvek je publikován, jakmile je nastaveno `publishDate` a je v minulosti. Čtecí koncové body obohacují každý příspěvek o `authorName` získané z `authorId`. Viz [Architektura tvorby webu](../../architecture/website-builder#blog).
+Blogové příspěvky jsou samostatné řádky: `title`, `slug` (jedinečný v rámci církve), `excerpt`, `content` (tělo v markdownu), `authorId`, `photoUrl`, `publishDate`, `category` a `tags`. Příspěvek je publikován, jakmile je nastaveno `publishDate` a je v minulosti. Čtecí koncové body obohacují každý příspěvek o `authorName` získané z `authorId`. Viz [Architektura tvorby webu](../../architecture/website-builder.md#blog).
 
 | Metoda | Cesta | Autentizace | Oprávnění | Popis |
 |--------|-------|-------------|-----------|-------|
@@ -458,8 +459,8 @@ Základní cesta: `/content/support`
 
 ## Související stránky
 
-- [Architektura tvorby webu](../../architecture/website-builder) -- Jak stránky, sekce, prvky, příspěvky a přesměrování do sebe zapadají napříč aplikacemi
-- [Koncové body členství](./membership) -- Lidé, církve, skupiny, role, oprávnění
-- [Koncové body docházky](./attendance) -- Sledování služeb a návštěv
-- [Ověřování a oprávnění](./authentication) -- Přihlašovací tok, JWT, model oprávnění
-- [Struktura modulu](../module-structure) -- Vzory organizace kódu
+- [Architektura tvorby webu](../../architecture/website-builder.md) -- Jak stránky, sekce, prvky, příspěvky a přesměrování do sebe zapadají napříč aplikacemi
+- [Koncové body členství](./membership.md) -- Lidé, církve, skupiny, role, oprávnění
+- [Koncové body docházky](./attendance.md) -- Sledování služeb a návštěv
+- [Ověřování a oprávnění](./authentication.md) -- Přihlašovací tok, JWT, model oprávnění
+- [Struktura modulu](../module-structure.md) -- Vzory organizace kódu

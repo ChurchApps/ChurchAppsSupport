@@ -1,5 +1,6 @@
 ---
 title: "Tilldela roller"
+description: "Tilldela roller i B1 Admin så att personal och volontärer får tillgång endast till de områden för personer, gåvor, närvaro och grupper som de behöver."
 ---
 
 # Tilldela roller

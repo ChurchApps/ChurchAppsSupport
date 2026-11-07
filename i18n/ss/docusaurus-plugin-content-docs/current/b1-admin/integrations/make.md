@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "Xhuma i-B1 Admin ku-Make kuze wenta imisebenti ngekisi: dala khiyi ye-API, setfula isitfuli se-B1.church netindlela, bese ulungisa emaphutsa lajwayelekile."
 ---
 
 # Make
@@ -110,6 +111,6 @@ I-app ye-B1.church ye-Make ivulekile emtfombeni — imininingwane ye-JSON ihlala
 
 ## Bona Nako
 
-- [Zapier](./zapier) — indlela lefanako nge-UI lelula kanye neluhlu lwetinhlelo lolukhulu
-- [Slack & Discord](./slack-discord) — sati senkulumo-mpendvulwano lesakhelwe ngekhatsi ngaphandle kwe-Make
+- [Zapier](./zapier.md) — indlela lefanako nge-UI lelula kanye neluhlu lwetinhlelo lolukhulu
+- [Slack & Discord](./slack-discord.md) — sati senkulumo-mpendvulwano lesakhelwe ngekhatsi ngaphandle kwe-Make
 - [Webhooks (developer reference)](/docs/developer/api/webhooks)

@@ -1,5 +1,7 @@
 ---
-title: "Pelajaran (Tidak Digunakan Lagi)"
+title: "Tab Lessons yang Tidak Digunakan di B1.church"
+sidebar_label: "Pelajaran (Tidak Digunakan Lagi)"
+description: "Tab Lessons di B1.church sudah tidak digunakan. Temukan kurikulum pelajaran sekarang: telusuri di Lessons.church dan putar di TV kelas dengan FreePlay."
 ---
 
 # Pelajaran (Tidak Digunakan Lagi)
@@ -9,7 +11,7 @@ Tab **Pelajaran** yang tertanam di B1.church sudah tidak digunakan lagi. Pemutar
 
 Untuk menelusuri, menjadwalkan, atau mengedit kurikulum secara langsung, masuk ke [Lessons.church](https://lessons.church) melalui peramban Anda. Untuk memutar pelajaran di TV ruang kelas, pasang [FreePlay](/docs/freeplay/getting-started/) di perangkat TV Anda.
 
-Orang tua dari grup yang terkait dengan jenis rencana pelajaran di B1Admin melihat **pelajaran minggu ini** di halaman [detail grup](/docs/b1-church/groups/group-details.md), bukan di tab yang sudah tidak digunakan lagi ini.
+Orang tua dari grup yang terkait dengan jenis rencana pelajaran di B1Admin melihat **pelajaran minggu ini** di halaman [detail grup](../groups/group-details.md), bukan di tab yang sudah tidak digunakan lagi ini.
 :::
 
 <div class="article-intro">

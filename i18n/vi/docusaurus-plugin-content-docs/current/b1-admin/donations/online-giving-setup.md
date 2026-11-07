@@ -1,5 +1,6 @@
 ---
 title: "Thiết lập dâng hiến trực tuyến"
+description: "Kết nối Stripe, PayPal, Kingdom Funding hoặc Paystack với B1 Admin để thành viên dâng trực tuyến qua website B1.church và khoản dâng đồng bộ vào hồ sơ."
 ---
 
 # Thiết lập dâng hiến trực tuyến

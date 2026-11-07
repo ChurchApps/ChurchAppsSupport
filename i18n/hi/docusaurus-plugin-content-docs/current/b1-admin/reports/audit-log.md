@@ -1,5 +1,6 @@
 ---
 title: "Audit Log"
+description: "B1 Admin में ऑडिट लॉग देखें कि किसने लॉग इन किया, लोगों के रिकॉर्ड बदले, या अनुमतियाँ बदलीं, और फ़िल्टर की गई प्रविष्टियाँ CSV में निर्यात करें।"
 ---
 
 # Audit Log
@@ -78,6 +79,6 @@ Audit log को regularly review करें, especially नए team members �
 
 ## संबंधित लेख
 
-- [Roles & Permissions](../settings/roles-permissions) -- किसे क्या access है यह manage करें
-- [Data Security](../settings/data-security) -- समझें कि आपका data कैसे protect है
+- [Roles & Permissions](../settings/roles-permissions.md) -- किसे क्या access है यह manage करें
+- [Data Security](../settings/data-security.md) -- समझें कि आपका data कैसे protect है
 - [Reports Overview](./index.md) -- सभी उपलब्ध reports देखें

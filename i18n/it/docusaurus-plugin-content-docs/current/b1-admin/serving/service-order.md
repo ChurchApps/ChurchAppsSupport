@@ -1,5 +1,7 @@
 ---
-title: "Ordine del culto"
+title: "Ordine del culto in B1 Admin"
+sidebar_label: "Ordine del culto"
+description: "Configura l'ordine del culto in B1 Admin: aggiungi brani, lezioni ed elementi personalizzati, organizzali in sezioni e stampa la scaletta."
 ---
 
 # Ordine del culto

@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "Povežite B1 Admin z Make in avtomatizirajte delovne tokove: ustvarite API ključ, nastavite sprožilec in dejanja B1.church ter odpravite pogoste napake."
 ---
 
 # Make
@@ -110,6 +111,6 @@ Aplikacija B1.church za Make je odprtokodna, njene definicije JSON pa so v repoz
 
 ## Glejte tudi
 
-- [Zapier](./zapier) — enak vzorec z enostavnejšim vmesnikom in večjim katalogom aplikacij
-- [Slack & Discord](./slack-discord) — vgrajena obvestila v klepetalnice brez Make
+- [Zapier](./zapier.md) — enak vzorec z enostavnejšim vmesnikom in večjim katalogom aplikacij
+- [Slack & Discord](./slack-discord.md) — vgrajena obvestila v klepetalnice brez Make
 - [Webhooks (developer reference)](/docs/developer/api/webhooks)

@@ -1,5 +1,6 @@
 ---
 title: "Ryhmien luominen"
+description: "Luo uusi ryhmä B1 Adminissa: valitse kategoria ja nimi sekä määritä liittymiskäytäntö, tunnisteet, viestintä ja läsnäoloasetukset."
 ---
 
 # Ryhmien luominen

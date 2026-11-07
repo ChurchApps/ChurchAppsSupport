@@ -1,5 +1,7 @@
 ---
-title: "Profilinizi Düzenleme"
+title: "B1.church Üye Portalında Profilinizi Düzenleme"
+sidebar_label: "Profilinizi Düzenleme"
+description: "B1.church üye portalında iletişim bilgilerinizi, hane üyelerinizi, giriş e-postanızı, şifrenizi ve gizlilik ayarlarınızı güncelleyin."
 ---
 
 # Profilinizi Düzenleme

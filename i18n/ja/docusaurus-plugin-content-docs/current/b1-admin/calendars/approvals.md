@@ -1,5 +1,6 @@
 ---
 title: "カレンダーの承認"
+description: "B1 Admin で保留中の部屋・備品の予約リクエストを確認し、重複がないかチェックしたうえで承認または却下します。必要に応じてイベントを公開することもできます。"
 ---
 
 # カレンダーの承認
@@ -13,7 +14,7 @@ title: "カレンダーの承認"
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- [Rooms & Resources](rooms-resources)で、部屋またはリソースに**Approval Group**を設定しておく
+- [Rooms & Resources](./rooms-resources.md)で、部屋またはリソースに**Approval Group**を設定しておく
 - **Calendars Admin**権限または**content.edit**権限が必要です
 
 </div>
@@ -41,7 +42,7 @@ B1 Adminで、[ジャンプメニュー](../introduction.md#getting-around-with-
 **Approve**をクリックすると**Approve booking**ダイアログが開きます。同じ操作でイベントを公開することもできます。
 
 1. **Publish to public calendar**にチェックを入れると、イベントがそのグループのカレンダーで公開されます。チェックを外したままにすると、イベントの公開設定は変えずに予約だけを承認します。
-2. **Publish to public calendar**にチェックを入れたら、必要に応じて**Also add to calendar**からキュレーションカレンダーを選び、イベントを[キュレーションカレンダー](curated-calendar)にも追加できます。追加しない場合は**None**のままにします。（このオプションは**content.edit**権限がある場合にのみ表示されます。）
+2. **Publish to public calendar**にチェックを入れたら、必要に応じて**Also add to calendar**からキュレーションカレンダーを選び、イベントを[キュレーションカレンダー](./curated-calendar.md)にも追加できます。追加しない場合は**None**のままにします。（このオプションは**content.edit**権限がある場合にのみ表示されます。）
 3. **Approve**をクリックします。
 
 ## 保留中のイベント
@@ -49,10 +50,10 @@ B1 Adminで、[ジャンプメニュー](../introduction.md#getting-around-with-
 カレンダーの運用で、イベントを一般公開する前に承認が必要な場合、保留中のイベントは**Event Requests**セクションに表示されます。**Approve**をクリックするとイベントがカレンダーに公開され、**Reject**をクリックすると投稿者に変更が必要であることを通知します。
 
 :::tip
-部屋に承認グループを設定すると、その部屋の利用に承認を必要とできます。[Rooms & Resources](rooms-resources)で設定してください。アクセス権のあるグループは、イベント作成時にその部屋を申請でき、そのリクエストがこのページに届きます。
+部屋に承認グループを設定すると、その部屋の利用に承認を必要とできます。[Rooms & Resources](./rooms-resources.md)で設定してください。アクセス権のあるグループは、イベント作成時にその部屋を申請でき、そのリクエストがこのページに届きます。
 :::
 
 ## 関連記事
 
-- [Rooms, Resources & Scheduling](rooms-resources) — 予約可能な部屋とリソースの設定
-- [Creating Calendars](creating-calendars) — カレンダーとイベントの管理
+- [Rooms, Resources & Scheduling](./rooms-resources.md) — 予約可能な部屋とリソースの設定
+- [Creating Calendars](./creating-calendars.md) — カレンダーとイベントの管理

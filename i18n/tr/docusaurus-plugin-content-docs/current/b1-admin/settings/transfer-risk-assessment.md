@@ -1,5 +1,6 @@
 ---
 title: "Aktarım Risk Değerlendirmesi"
+description: "ChurchApps'in kilise verilerinin Birleşik Krallık/AEA'dan ABD'ye aktarımlarına ilişkin B1 Admin uyumluluk kaydı; güvenceler, alt işleyiciler ve erişim denetimlerini kapsar."
 ---
 
 # Aktarım Risk Değerlendirmesi

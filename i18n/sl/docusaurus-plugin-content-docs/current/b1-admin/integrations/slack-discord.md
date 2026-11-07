@@ -1,5 +1,6 @@
 ---
 title: "Slack in Discord"
+description: "Objavljajte dogodke B1 Admin, kot so nove osebe, darovi in oddani obrazci, v kanal Slack ali Discord prek dohodnega webhooka, brez Zapier."
 ---
 
 # Slack in Discord
@@ -114,7 +115,7 @@ Tabela **Recent Deliveries** (Nedavne dostave) v urejevalniku webhookov prikazuj
 
 - **Sporočilo se ne prikaže, stanje dostave pa je `400`** – običajno je **Connector Type** nastavljen na **Standard**, URL pa je za Slack ali Discord. Slack in Discord surove ovojnice zavrneta. Preklopite spustni seznam na **Slack** ali **Discord** in ponovno pošljite preizkus.
 - **Webhook se samodejno onemogoči** – po treh zaporednih neuspešnih dostavah B1 webhook izklopi. Popravite URL (ali ga ponovno ustvarite v Slacku oz. Discordu) in ponovno vklopite **Active**.
-- **Sporočilo pride, vendar manjkajo podrobnosti** – vsaka klepetalna platforma omejuje velikost sporočila. Sporočila B1 so zaradi zasnove kratka. Za bogatejša obvestila uporabite [Zapier](./zapier) ali [Make](./make), ki prek svojih akcij za Slack sestavijo obsežnejše sporočilo.
+- **Sporočilo pride, vendar manjkajo podrobnosti** – vsaka klepetalna platforma omejuje velikost sporočila. Sporočila B1 so zaradi zasnove kratka. Za bogatejša obvestila uporabite [Zapier](./zapier.md) ali [Make](./make.md), ki prek svojih akcij za Slack sestavijo obsežnejše sporočilo.
 
 ## Kasnejša sprememba vrste povezave
 
@@ -122,6 +123,6 @@ Vrsto povezave **Connector Type** lahko spremenite pri obstoječem webhooku. Za�
 
 ## Glejte tudi
 
-- [Zapier](./zapier) – za večstopenjske delovne tokove, ki jih sprožijo dogodki B1
-- [Make](./make) – vizualni graditelj scenarijev
+- [Zapier](./zapier.md) – za večstopenjske delovne tokove, ki jih sprožijo dogodki B1
+- [Make](./make.md) – vizualni graditelj scenarijev
 - [Webhooks (razvijalska referenca)](/docs/developer/api/webhooks) – celotna oblika vsebine in podpisov, če nekoč usmerite webhook na svoj strežnik

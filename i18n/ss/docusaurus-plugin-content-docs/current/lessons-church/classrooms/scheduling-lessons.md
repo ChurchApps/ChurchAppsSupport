@@ -1,5 +1,7 @@
 ---
-title: "Kuhlela Tifundzo"
+title: "Kuhlela Tifundziso Temakilasi Ku-Portal"
+sidebar_label: "Kuhlela Tifundzo"
+description: "Hlela tifundziso te-Lessons.church ekhalendeni lelikilasi ku-B1 Admin portal ngekukhetha inhlelo, ifundvo, lifundziso, nendzawo lelungiselelwe iminyaka yalelilanga ngalinye."
 ---
 
 # Kuhlela Tifundzo

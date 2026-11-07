@@ -1,5 +1,6 @@
 ---
 title: "Monivaluuttatuki"
+description: "Kirjaa ja raportoi lahjoituksia eri valuutoissa B1 Adminissa: manuaalinen syöttö, Stripe-verkkolahjoitukset ja yhteissummien muuntaminen."
 ---
 
 # Monivaluuttatuki

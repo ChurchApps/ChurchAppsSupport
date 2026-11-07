@@ -1,5 +1,7 @@
 ---
-title: "Hồ sơ"
+title: "Hồ sơ và thẻ được giao trong B1 Mobile"
+sidebar_label: "Hồ sơ"
+description: "Quản lý tên, thông tin liên hệ, gia đình và mức hiển thị riêng tư trong hồ sơ B1 Mobile, cùng xử lý các thẻ quy trình và công việc được giao cho bạn."
 ---
 
 # Hồ sơ
@@ -20,7 +22,7 @@ Tab **Hồ sơ** cho phép bạn xem và chỉnh sửa thông tin cá nhân, bao
 
 ### Hộ gia đình
 
-Tab **Hộ gia đình** hiển thị các thành viên trong gia đình và vai trò của họ trong hộ. Thông tin này được dùng cho các tính năng như [điểm danh](../checkin/), nơi bạn có thể điểm danh cho cả gia đình cùng một lúc.
+Tab **Hộ gia đình** hiển thị các thành viên trong gia đình và vai trò của họ trong hộ. Thông tin này được dùng cho các tính năng như [điểm danh](../checkin/index.md), nơi bạn có thể điểm danh cho cả gia đình cùng một lúc.
 
 ### Hiển thị
 
@@ -55,6 +57,6 @@ Nhấn vào một công việc thông thường để xem công việc do ai gia
 
 ## Các bước tiếp theo
 
-- [Chỉnh sửa hồ sơ](./editing-profile) -- Cập nhật tên, thông tin liên hệ và ảnh đại diện
-- [Hộ gia đình](./household) -- Xem và quản lý các thành viên trong gia đình
-- [Cài đặt quyền riêng tư](./privacy-settings) -- Kiểm soát thông tin nào người khác có thể xem về bạn
+- [Chỉnh sửa hồ sơ](./editing-profile.md) -- Cập nhật tên, thông tin liên hệ và ảnh đại diện
+- [Hộ gia đình](./household.md) -- Xem và quản lý các thành viên trong gia đình
+- [Cài đặt quyền riêng tư](./privacy-settings.md) -- Kiểm soát thông tin nào người khác có thể xem về bạn

@@ -1,5 +1,7 @@
 ---
-title: "Member Directory"
+title: "Member Directory sa B1.church Member Portal"
+sidebar_label: "Member Directory"
+description: "Maghanap at mag-browse ng miyembro sa B1.church directory, tingnan ang profile at miyembro ng household, at alamin kung sino ang may access sa directory."
 ---
 
 # Member Directory

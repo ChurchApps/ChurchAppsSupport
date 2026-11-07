@@ -1,5 +1,6 @@
 ---
 title: "Predigten verwalten"
+description: "Predigtbibliothek in B1 Admin verwalten: Predigten von YouTube, Vimeo oder Facebook hinzufügen, bearbeiten und einen Podcast-Feed für die Gemeinde erstellen."
 ---
 
 # Predigten verwalten
@@ -14,7 +15,7 @@ Die Seite Predigten zeigt Ihre gesamte Predigtensammlung an. Von hier aus könne
 <h4>Bevor Sie beginnen</h4>
 
 - Sie benötigen die Berechtigung **contentApi.streamingServices.edit**. Siehe [Rollen & Berechtigungen](../settings/roles-permissions.md), wenn Sie keinen Zugriff haben.
-- Erstellen Sie mindestens eine [Playlist](playlists), um Ihre Predigten zu organisieren
+- Erstellen Sie mindestens eine [Playlist](./playlists.md), um Ihre Predigten zu organisieren
 - Halten Sie Ihre Video-IDs oder URLs von YouTube, Vimeo oder Facebook bereit
 
 </div>
@@ -35,7 +36,7 @@ Die Seite Predigten zeigt Ihre gesamte Predigtensammlung an. Von hier aus könne
 6. Nehmen Sie die gewünschten Änderungen vor und klicken Sie auf **Speichern**.
 
 :::tip
-Sie können auch eine permanente Live-Stream-URL hinzufügen, indem Sie im Dropdown-Menü **Predigt hinzufügen** die Option **Permanente Live-Stream-URL hinzufügen** auswählen. Dies erstellt eine dauerhafte Verbindung zum Live-Stream Ihres YouTube-Kanals unter Verwendung Ihrer Kanal-ID. Weitere Details finden Sie unter [Live Streaming](live-streaming).
+Sie können auch eine permanente Live-Stream-URL hinzufügen, indem Sie im Dropdown-Menü **Predigt hinzufügen** die Option **Permanente Live-Stream-URL hinzufügen** auswählen. Dies erstellt eine dauerhafte Verbindung zum Live-Stream Ihres YouTube-Kanals unter Verwendung Ihrer Kanal-ID. Weitere Details finden Sie unter [Live Streaming](./live-streaming.md).
 :::
 
 ## Eine Predigt bearbeiten
@@ -73,11 +74,11 @@ Nach dem Hinzufügen einer Predigt können Sie diese für die Ausstrahlung auf I
 3. Die Predigt wird zur geplanten Servicezeit abgespielt.
 
 :::info
-Um mehrere Predigten gleichzeitig zu importieren, anstatt sie einzeln hinzuzufügen, verwenden Sie das Tool [Massenimport](bulk-import), um Videos direkt von Ihrem YouTube- oder Vimeo-Konto zu ziehen.
+Um mehrere Predigten gleichzeitig zu importieren, anstatt sie einzeln hinzuzufügen, verwenden Sie das Tool [Massenimport](./bulk-import.md), um Videos direkt von Ihrem YouTube- oder Vimeo-Konto zu ziehen.
 :::
 
 ## Nächste Schritte
 
-- [Playlisten](playlists) -- Predigten in Serien organisieren
-- [Live Streaming](live-streaming) -- Konfigurieren Sie Ihren Streaming-Zeitplan
-- [Massenimport](bulk-import) -- Importieren Sie mehrere Predigten auf einmal
+- [Playlisten](./playlists.md) -- Predigten in Serien organisieren
+- [Live Streaming](./live-streaming.md) -- Konfigurieren Sie Ihren Streaming-Zeitplan
+- [Massenimport](./bulk-import.md) -- Importieren Sie mehrere Predigten auf einmal

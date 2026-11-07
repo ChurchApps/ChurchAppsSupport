@@ -1,5 +1,6 @@
 ---
 title: "Izbira naprave"
+description: "Izberi pravo napravo za razredne TV-je FreePlay v dokumentaciji ChurchApps: od palic Fire TV in škatel Onn do Apple TV ter katere raje preskoči."
 ---
 
 # Izbira naprave za FreePlay

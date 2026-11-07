@@ -1,5 +1,6 @@
 ---
 title: "Dashboard"
+description: "Alamin ang home screen ng B1 Mobile, kung saan nakalagay sa malalaking card ang pinakaginagamit mong tampok at ang iba ay nasa Quick Actions."
 ---
 
 # Dashboard
@@ -28,7 +29,7 @@ Sa ilalim ng hero card, makikita mo ang hanggang dalawang **featured card** na m
 
 ## Quick Actions
 
-Ang natitirang mga feature ay lumalabas sa isang grid na **Quick Actions** sa ilalim ng featured cards. Bawat item ay may icon at label. Ito ang lahat ng iba pang navigation link na inayos ng iyong simbahan, na nagbibigay sa iyo ng access sa lahat mula sa [mga grupo](../groups/) at [giving](../giving/) hanggang sa [check-in](../checkin/), [sermons](../content/sermons.md), at marami pa.
+Ang natitirang mga feature ay lumalabas sa isang grid na **Quick Actions** sa ilalim ng featured cards. Bawat item ay may icon at label. Ito ang lahat ng iba pang navigation link na inayos ng iyong simbahan, na nagbibigay sa iyo ng access sa lahat mula sa [mga grupo](../groups/index.md) at [giving](../giving/index.md) hanggang sa [check-in](../checkin/index.md), [sermons](../content/sermons.md), at marami pa.
 
 ## Paano Umaayon ang Layout
 
@@ -41,7 +42,7 @@ Batay sa paggamit mo ang pagkaayos ng dashboard. Sa bawat pag-tap mo sa isang fe
 Kung hindi mo pa nagagamit ang app, lalabas ang mga feature sa default na pagkakasunod na inayos ng iyong simbahan. Sa paglipas ng panahon, muling iaayos ang dashboard para tumugma sa mga gawi mo.
 
 :::info
-Ang mga feature na makikita sa iyong dashboard ay itinakda ng iyong church administrator sa pamamagitan ng [B1 Admin](../../b1-admin/). Kung may feature kang inaasahan pero hindi mo makita, makipag-ugnayan sa opisina ng iyong simbahan.
+Ang mga feature na makikita sa iyong dashboard ay itinakda ng iyong church administrator sa pamamagitan ng [B1 Admin](../../b1-admin/index.md). Kung may feature kang inaasahan pero hindi mo makita, makipag-ugnayan sa opisina ng iyong simbahan.
 :::
 
 ## Pag-refresh ng Dashboard

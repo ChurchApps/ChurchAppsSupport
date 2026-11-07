@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Povežite B1 Admin s Claude in v preprostem jeziku sprašujte o prisotnosti, darovih in skupinah, z možnostjo prijave ali ključa z omejenimi dovoljenji."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ To je isti nabor `/membership/people`, `/giving/donations`, `/attendance/visits`
 
 - [API ključi](/docs/developer/api/api-keys) — celoten referenčni seznam obsegov
 - [Strežnik MCP (referenca za razvijalce)](/docs/developer/api/mcp) — podrobnosti protokola in sheme orodij
-- [ChatGPT](./chatgpt) — enaka zamisel, za modele OpenAI
+- [ChatGPT](./chatgpt.md) — enaka zamisel, za modele OpenAI

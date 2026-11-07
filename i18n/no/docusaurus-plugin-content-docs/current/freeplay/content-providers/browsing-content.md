@@ -1,5 +1,6 @@
 ---
 title: "Bla gjennom og last ned innhold"
+description: "Naviger i biblioteket til en tilkoblet leverandør med TV-fjernkontrollen i FreePlay, og last ned eller strøm leksjoner og videoer for avspilling."
 ---
 
 # Bla gjennom og last ned innhold
@@ -13,7 +14,7 @@ Når du er koblet til en innholdsleverandør, kan du bla i biblioteket, laste ne
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Koble til minst én innholdsleverandør – se [Koble til leverandører](./connecting-providers)
+- Koble til minst én innholdsleverandør – se [Koble til leverandører](./connecting-providers.md)
 - Ha TV-fjernkontrollen klar for navigering
 
 </div>
@@ -38,7 +39,7 @@ Du kan gå så dypt som leverandørens innholdsstruktur tillater. Leseren holder
 
 ## Bla i Lessons.church
 
-[Lessons.church](../../lessons-church/)-biblioteket er organisert på samme måte som nettstedet. På toppnivå ser du to mapper:
+[Lessons.church](../../lessons-church/index.md)-biblioteket er organisert på samme måte som nettstedet. På toppnivå ser du to mapper:
 
 - **Lessons** – Gå inn etter **program**, deretter **studie**, deretter **leksjon**. Hver leksjon lister så sine **varianter**, som er versjoner av leksjonen for en bestemt aldersgruppe eller setting, for eksempel Førskole eller Barneskole. Velg en variant for å åpne nedlastingsskjermen for den versjonen av leksjonen
 - **Add-Ons** – Ekstra videoer og ressurser, gruppert etter kategori
@@ -78,7 +79,7 @@ Bruk disse kontrollene under avspilling:
 Når du forlater avspilleren, kommer du tilbake til innholdsleseren på rotnivå for den gjeldende leverandøren.
 
 :::info
-For en fullstendig oversikt over alle avspillerkontroller, se [Spille av innhold](./playing-content).
+For en fullstendig oversikt over alle avspillerkontroller, se [Spille av innhold](./playing-content.md).
 :::
 
 ## Bytte mellom leverandører

@@ -1,5 +1,7 @@
 ---
-title: "Jäsenhakemisto"
+title: "Jäsenhakemisto B1 Mobile -sovelluksessa"
+sidebar_label: "Jäsenhakemisto"
+description: "Etsi seurakuntasi ihmisiä B1 Mobile -jäsenhakemistosta: selaa aakkosjärjestyksessä, hae nimellä sekä avaa profiilit ja kotitalouslinkit."
 ---
 
 # Jäsenhakemisto
@@ -13,7 +15,7 @@ B1 Mobilen jäsenhakemiston avulla voit selata ja hakea seurakuntasi ihmisiä. O
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu sisään](../getting-started/logging-in) tilillesi
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu sisään](../getting-started/logging-in.md) tilillesi
 
 </div>
 
@@ -51,5 +53,5 @@ Kunkin profiilin näkyvät tiedot riippuvat seurakuntasi yksityisyys- ja hakemis
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Viestit](./messaging) -- Lähetä yksityisviesti hakemistosta löytämällesi henkilölle
+- [Viestit](./messaging.md) -- Lähetä yksityisviesti hakemistosta löytämällesi henkilölle
 - [Yksityisyysasetukset](../profile/privacy-settings.md) -- Hallitse, mitä muut näkevät sinusta hakemistossa

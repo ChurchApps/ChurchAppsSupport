@@ -1,5 +1,6 @@
 ---
 title: "Gestion des programmes"
+description: "Créer et modifier des programmes dans Lessons.church : slugs, vignettes, regroupement des études en catégories et ressources au niveau du programme."
 ---
 
 # Gestion des programmes

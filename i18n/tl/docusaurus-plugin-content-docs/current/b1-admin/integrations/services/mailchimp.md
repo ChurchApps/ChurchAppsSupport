@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "I-sync ang tao at membership ng grupo sa B1 Admin patungo sa Mailchimp audience bilang tag, kasama ang setup, unang import, at troubleshooting."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Ang paggawa ng paunang load sa pamamagitan ng importer ng Mailchimp ay nagpapana
 
 ## Iba Pang Mga Recipes (Zapier / Make)
 
-Kahit anong higit pa sa audience sync — tagging ng givers sa `donation.created`, isang Mailchimp → B1 reverse direction, o pag-sync sa isang iba't ibang email platform (Constant Contact, Brevo, atbp.) — ay patuloy na available sa pamamagitan ng [Zapier](../zapier) o [Make](../make), na nag-trigger sa parehong webhook events:
+Kahit anong higit pa sa audience sync — tagging ng givers sa `donation.created`, isang Mailchimp → B1 reverse direction, o pag-sync sa isang iba't ibang email platform (Constant Contact, Brevo, atbp.) — ay patuloy na available sa pamamagitan ng [Zapier](../zapier.md) o [Make](../make.md), na nag-trigger sa parehong webhook events:
 
 - **Tag givers:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Two-way:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ Kung nag-wire ka nang person/group sync sa pamamagitan ng Zapier, i-switch off a
 
 - [Webhooks (developer reference)](/docs/developer/api/webhooks) — ang engine sa ilalim, event catalog, delivery/retry semantics
 - [Saved Lists](/docs/b1-admin/people/lists) — rule-based na audience na natural na nag-map sa Mailchimp tags
-- [Zapier (overview)](../zapier) — para sa mga recipe na higit pa ang audience sync
+- [Zapier (overview)](../zapier.md) — para sa mga recipe na higit pa ang audience sync

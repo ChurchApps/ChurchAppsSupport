@@ -1,5 +1,6 @@
 ---
 title: "Kurátorský kalendár"
+description: "Nastavte celocírkevný kurátorský kalendár v B1 Admin z udalostí viacerých skupín a zdieľajte ho na webe, cez odber ICS alebo ako súbor na stiahnutie."
 ---
 
 # Kurátorský kalendár
@@ -15,7 +16,7 @@ Kurátorský kalendár spája udalosti z viacerých skupín do jedného spoločn
 
 - Nastavte [skupiny](../groups/creating-groups.md), ktorých udalosti chcete zahrnúť
 - Uistite sa, že vedúci skupín pridali udalosti do svojich skupín
-- Oboznámte sa so základmi [vytvárania kalendárov](creating-calendars)
+- Oboznámte sa so základmi [vytvárania kalendárov](./creating-calendars.md)
 
 </div>
 
@@ -61,5 +62,5 @@ Na webovom kurátorskom kalendári a v jeho odbere ICS sa zobrazujú iba **verej
 
 ## Ďalšie kroky
 
-- [Vytváranie kalendárov](creating-calendars) -- Naučte sa základy vytvárania kalendára
-- [Prehľad kalendárov](./) -- Návrat na prehľad kalendárov
+- [Vytváranie kalendárov](./creating-calendars.md) -- Naučte sa základy vytvárania kalendára
+- [Prehľad kalendárov](./index.md) -- Návrat na prehľad kalendárov

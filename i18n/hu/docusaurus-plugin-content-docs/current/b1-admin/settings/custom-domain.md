@@ -1,5 +1,6 @@
 ---
 title: "Egyéni domain"
+description: "Saját domain, például www.yourchurch.org, mutasson a B1 webhelyére: DNS-rekordok beállítása a B1 Adminban, majd a domain hozzáadása a Beállításokban."
 ---
 
 # Egyéni domain

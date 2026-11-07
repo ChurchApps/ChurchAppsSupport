@@ -1,5 +1,6 @@
 ---
 title: "Giverbekendtelser"
+description: "Opret årsopgørelser for alle givere i B1 Admin, og download dem som CSV-filer eller udskriv dem til udsendelse med skattefradragsberettigede beløb."
 ---
 
 # Giverbekendtelser

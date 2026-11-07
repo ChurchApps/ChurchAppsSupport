@@ -1,5 +1,6 @@
 ---
 title: "Dateien"
+description: "Bilder und Dokumente für Ihre Gemeindewebsite in B1 Admin hochladen, durchsuchen und verwalten, auch mit angebundenem externem Speicher für mehr Platz."
 ---
 
 # Dateien
@@ -13,7 +14,7 @@ Die Dateien-Seite ist das zentrale Repository für alle Medien und Dokumente, di
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Führen Sie die [Initiale Einrichtung](initial-setup) für Ihre Website durch
+- Führen Sie die [Initiale Einrichtung](./initial-setup.md) für Ihre Website durch
 - Optimieren Sie Bilder vor dem Hochladen für schnellere Seitenladungszeiten
 - Bereiten Sie Ihre Dateien in gängigen Web-Formaten vor (PNG, JPG, PDF, usw.)
 
@@ -42,7 +43,7 @@ Die Dateitabelle listet jede hochgeladene Datei mit ihrem **Name** und ihrer **S
 3. Dateien, die Sie hier hochladen, stehen für die Verwendung auf allen Ihren Website-Seiten und Inhaltsblöcken zur Verfügung.
 
 :::info
-Beim Erstellen von Seiten in [Managing Pages](managing-pages) können Sie jede hier hochgeladene Datei über ihre URL referenzieren. Dies hält alle Ihre Medien an einem zentralen Ort organisiert.
+Beim Erstellen von Seiten in [Managing Pages](./managing-pages.md) können Sie jede hier hochgeladene Datei über ihre URL referenzieren. Dies hält alle Ihre Medien an einem zentralen Ort organisiert.
 :::
 
 ## Dateien löschen
@@ -57,5 +58,5 @@ Gelöschte Dateien können nicht wiederhergestellt werden. Überprüfen Sie dopp
 
 ## Nächste Schritte
 
-- [Managing Pages](managing-pages) -- Fügen Sie Ihre hochgeladenen Dateien zu Website-Seiten hinzu
-- [Appearance](appearance) -- Passen Sie das visuelle Design Ihrer Website an
+- [Managing Pages](./managing-pages.md) -- Fügen Sie Ihre hochgeladenen Dateien zu Website-Seiten hinzu
+- [Appearance](./appearance.md) -- Passen Sie das visuelle Design Ihrer Website an

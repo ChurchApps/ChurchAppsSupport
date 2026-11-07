@@ -1,5 +1,6 @@
 ---
 title: "Connessione ai provider"
+description: "Collegare FreePlay a un content provider con codice QR, accesso via email o accesso con un clic, e gestire o scollegare la connessione dalle Impostazioni."
 ---
 
 # Connessione ai provider
@@ -13,7 +14,7 @@ Prima di sfogliare i contenuti di un provider, devi collegarti a esso. Alcuni pr
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Installa e avvia FreePlay: vedi [Per iniziare](../getting-started/)
+- Installa e avvia FreePlay: vedi [Per iniziare](../getting-started/index.md)
 - Tieni a portata di mano il telecomando della TV per la navigazione
 - Per i provider che richiedono l'accesso, tieni a portata di mano le credenziali del tuo account
 
@@ -80,7 +81,7 @@ Selezionando una scheda di provider con il badge **Collegato** si apre la sua sc
 
 - **Sfoglia la libreria**: mostra o nascondi la libreria di contenuti di questo provider nella barra laterale
 - **Scarica automaticamente la lezione di oggi**: usa questo provider come fonte della lezione di oggi e scarica in anticipo i suoi file (mostrato solo per i provider che offrono una lezione corrente)
-- **Usa per gli annunci**: scegli una cartella di questo provider da far scorrere in loop dalla voce **Annunci** nella barra laterale. Vedi [Annunci](./announcements)
+- **Usa per gli annunci**: scegli una cartella di questo provider da far scorrere in loop dalla voce **Annunci** nella barra laterale. Vedi [Annunci](./announcements.md)
 - **Controlla gli aggiornamenti degli annunci**: mostrato dopo aver scelto una cartella degli annunci; scarica le nuove diapositive e rimuove quelle eliminate
 - **Scollega**: rimuove il collegamento
 
@@ -100,6 +101,6 @@ Lo scollegamento elimina dal dispositivo l'autenticazione salvata. Se in seguito
 
 ## Articoli correlati
 
-- **[Sfogliare e scaricare i contenuti](./browsing-content)**: naviga tra le cartelle e riproduci i contenuti dopo il collegamento
-- **[Annunci](./announcements)**: fai scorrere in loop una cartella di diapositive da un provider collegato
+- **[Sfogliare e scaricare i contenuti](./browsing-content.md)**: naviga tra le cartelle e riproduci i contenuti dopo il collegamento
+- **[Annunci](./announcements.md)**: fai scorrere in loop una cartella di diapositive da un provider collegato
 - **[Panoramica dei provider di contenuti](./index.md)**: vedi tutti i provider disponibili

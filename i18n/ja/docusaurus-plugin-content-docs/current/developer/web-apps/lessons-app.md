@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "Node.js 22 以降で LessonsApp の Next.js レッスンエディターをローカルに設定し、ローカルの LessonsApi に接続します。ビルドと S3/CloudFront へのデプロイも説明します。"
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ LessonsApp は [Lessons.church](https://lessons.church) のレッスンコンテ
 <div class="prereqs">
 <h4>はじめに</h4>
 
-- **Node.js 22以降**と**Git**をインストールします。詳しくは [前提条件](../setup/prerequisites) を参照してください
-- API の接続先（ローカルの LessonsApi）を設定します。詳しくは [環境変数](../setup/environment-variables) を参照してください
+- **Node.js 22以降**と**Git**をインストールします。詳しくは [前提条件](../setup/prerequisites.md) を参照してください
+- API の接続先（ローカルの LessonsApi）を設定します。詳しくは [環境変数](../setup/environment-variables.md) を参照してください
 
 </div>
 
@@ -81,5 +82,5 @@ LessonsApp は、メインの ChurchApps Api とは別の API である **Lesson
 3. CloudFront のキャッシュを無効化し、新しいバージョンが配信されるようにします
 
 :::tip
-デプロイの詳しい手順は、[Web アプリのデプロイ](../deployment/web-apps) ガイドを参照してください。
+デプロイの詳しい手順は、[Web アプリのデプロイ](../deployment/web-apps.md) ガイドを参照してください。
 :::

@@ -1,5 +1,6 @@
 ---
 title: "デバイスの選び方"
+description: "ChurchApps のサポートドキュメントに基づき、FreePlay の教室用テレビに適した機器を選びます。Fire TV スティックや Onn ボックスから Apple TV まで、避けるべき機器も含めて説明します。"
 ---
 
 # FreePlay 用のデバイスの選び方

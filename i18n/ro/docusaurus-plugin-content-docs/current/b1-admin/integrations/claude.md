@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Conectați B1 Admin la Claude pentru a întreba în limbaj natural despre prezență, donații și grupuri, cu autentificare sau cheie cu permisiuni limitate."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ Acesta este același set de endpoint-uri `/membership/people`, `/giving/donation
 
 - [API Keys](/docs/developer/api/api-keys): referința completă pentru permisiuni
 - [MCP Server (referință pentru dezvoltatori)](/docs/developer/api/mcp): detalii despre protocol și schemele instrumentelor
-- [ChatGPT](./chatgpt): aceeași idee, pentru modelele OpenAI
+- [ChatGPT](./chatgpt.md): aceeași idee, pentru modelele OpenAI

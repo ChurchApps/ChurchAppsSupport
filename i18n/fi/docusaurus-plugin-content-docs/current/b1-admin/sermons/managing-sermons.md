@@ -1,5 +1,6 @@
 ---
 title: "Saarnojen hallinta"
+description: "Hallitse saarnakirjastoa B1 Adminissa: lisää saarnoja YouTubesta, Vimeosta tai Facebookista, muokkaa tietoja ja luo seurakunnallesi podcast-syöte."
 ---
 
 # Saarnojen hallinta
@@ -14,7 +15,7 @@ Saarnat-sivulla näkyy koko saarnakirjastosi. Täältä voit lisätä uusia saar
 <h4>Ennen aloittamista</h4>
 
 - Tarvitset oikeuden **contentApi.streamingServices.edit**. Jos sinulla ei ole pääsyä, katso [Roolit ja oikeudet](../settings/roles-permissions.md).
-- Luo vähintään yksi [soittolista](playlists), johon saarnat järjestetään
+- Luo vähintään yksi [soittolista](./playlists.md), johon saarnat järjestetään
 - Valmistele videotunnukset tai URL-osoitteet YouTubesta, Vimeosta tai Facebookista
 
 </div>
@@ -35,7 +36,7 @@ Saarnat-sivulla näkyy koko saarnakirjastosi. Täältä voit lisätä uusia saar
 6. Tee haluamasi muutokset ja napsauta **Tallenna**.
 
 :::tip
-Voit myös lisätä pysyvän suoratoiston URL-osoitteen valitsemalla **Lisää pysyvä suora URL** **Lisää saarna** -avattavasta valikosta. Tämä luo pysyvän yhteyden YouTube-kanavasi suoratoistoon kanavatunnuksesi avulla. Lisätietoja on kohdassa [Suoratoisto](live-streaming).
+Voit myös lisätä pysyvän suoratoiston URL-osoitteen valitsemalla **Lisää pysyvä suora URL** **Lisää saarna** -avattavasta valikosta. Tämä luo pysyvän yhteyden YouTube-kanavasi suoratoistoon kanavatunnuksesi avulla. Lisätietoja on kohdassa [Suoratoisto](./live-streaming.md).
 :::
 
 ## Saarnan muokkaaminen
@@ -73,11 +74,11 @@ Kun olet lisännyt saarnan, voit ajoittaa sen lähetettäväksi suoratoistosivul
 3. Saarna toistetaan ajoitetun jumalanpalveluksen aikana.
 
 :::info
-Kun haluat tuoda useita saarnoja kerralla lisäämisen sijaan, käytä [Massatuonti](bulk-import)-työkalua, joka hakee videot suoraan YouTube- tai Vimeo-tililtäsi.
+Kun haluat tuoda useita saarnoja kerralla lisäämisen sijaan, käytä [Massatuonti](./bulk-import.md)-työkalua, joka hakee videot suoraan YouTube- tai Vimeo-tililtäsi.
 :::
 
 ## Seuraavat vaiheet
 
-- [Soittolistat](playlists) -- Järjestä saarnat sarjoiksi
-- [Suoratoisto](live-streaming) -- Määritä suoratoistoaikataulusi
-- [Massatuonti](bulk-import) -- Tuo useita saarnoja kerralla
+- [Soittolistat](./playlists.md) -- Järjestä saarnat sarjoiksi
+- [Suoratoisto](./live-streaming.md) -- Määritä suoratoistoaikataulusi
+- [Massatuonti](./bulk-import.md) -- Tuo useita saarnoja kerralla

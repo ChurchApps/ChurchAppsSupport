@@ -1,5 +1,6 @@
 ---
 title: "Revizuirea cererilor de ștergere a contului"
+description: "Aprobați sau refuzați în B1 Admin cererile de ștergere a conturilor, trimise prin grupul Directory Approval Group, respectând termenul GDPR de 30 de zile."
 ---
 
 # Revizuirea cererilor de ștergere a contului

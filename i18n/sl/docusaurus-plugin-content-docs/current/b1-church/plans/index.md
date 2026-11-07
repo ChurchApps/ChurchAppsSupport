@@ -1,5 +1,6 @@
 ---
 title: "Načrti"
+description: "Preverite, na katerih servisnih načrtih ste na B1.church, si oglejte svoje položaje in datume ter sprejmite ali zavrnite dodelitve v portalu za člane."
 ---
 
 # Načrti

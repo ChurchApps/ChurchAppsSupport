@@ -1,5 +1,6 @@
 ---
 title: "Fichiers"
+description: "Importez, parcourez et gérez les images et documents de votre site dans B1 Admin, et reliez un stockage externe pour plus d'espace."
 ---
 
 # Fichiers
@@ -13,7 +14,7 @@ La page Fichiers est le référentiel central de tous les médias et documents u
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Complétez la [configuration initiale](initial-setup) de votre site web
+- Complétez la [configuration initiale](./initial-setup.md) de votre site web
 - Optimisez les images avant de les télécharger pour accélérer les temps de chargement des pages
 - Préparez vos fichiers dans les formats web courants (PNG, JPG, PDF, etc.)
 
@@ -42,7 +43,7 @@ Le tableau des fichiers répertorie chaque fichier téléchargé avec son **nom*
 3. Les fichiers que vous téléchargez ici sont disponibles pour utilisation sur tous vos pages et blocs de contenu de site web.
 
 :::info
-Lors de la création de pages dans [Gestion des pages](managing-pages), vous pouvez référencer n'importe quel fichier téléchargé ici par son URL. Cela garde tous vos médias organisés en un seul emplacement central.
+Lors de la création de pages dans [Gestion des pages](./managing-pages.md), vous pouvez référencer n'importe quel fichier téléchargé ici par son URL. Cela garde tous vos médias organisés en un seul emplacement central.
 :::
 
 ## Suppression de fichiers
@@ -57,5 +58,5 @@ Les fichiers supprimés ne peuvent pas être récupérés. Vérifiez bien qu'un 
 
 ## Étapes suivantes
 
-- [Gestion des pages](managing-pages) -- Ajoutez vos fichiers téléchargés aux pages de site web
-- [Apparence](appearance) -- Personnalisez le thème visuel de votre site
+- [Gestion des pages](./managing-pages.md) -- Ajoutez vos fichiers téléchargés aux pages de site web
+- [Apparence](./appearance.md) -- Personnalisez le thème visuel de votre site

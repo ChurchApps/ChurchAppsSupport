@@ -1,5 +1,6 @@
 ---
 title: "Byta kyrka"
+description: "Byt mellan församlingar i B1 Mobile-appen genom att välja en nyligen använd församling eller söka efter namn, allt med en och samma ChurchApps-inloggning."
 ---
 
 # Byta kyrka
@@ -13,7 +14,7 @@ Om du är medlem i fler än en kyrka gör B1 Mobile det enkelt att växla mellan
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Installera B1 Mobile](./installing) och [logga in](./logging-in) på ditt konto
+- [Installera B1 Mobile](./installing.md) och [logga in](./logging-in.md) på ditt konto
 
 </div>
 
@@ -24,7 +25,7 @@ Om du är medlem i fler än en kyrka gör B1 Mobile det enkelt att växla mellan
 3. Skärmen **Kyrkssökning** visas. Kyrkor du nyligen besökt visas överst för snabb åtkomst.
 4. Tryck på en nyligen besökt kyrka för att byta till den, eller skriv i sökfältet för att hitta en annan kyrka.
 
-När du byter kyrka laddas appen om med den kyrkans grafiska profil, navigeringslänkar och innehåll. Din [instrumentpanel](../dashboard/), dina [grupper](../groups/) och övriga data speglar den nyss valda kyrkan.
+När du byter kyrka laddas appen om med den kyrkans grafiska profil, navigeringslänkar och innehåll. Din [instrumentpanel](../dashboard/index.md), dina [grupper](../groups/index.md) och övriga data speglar den nyss valda kyrkan.
 
 ## Söka efter en kyrka
 

@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Das modulare Monolith-Design der ChurchApps-API erklärt: sechs Datenmodule, Tech-Stack, Ports und Lambda-Funktionen, mit Links zu den Entwicklerdokus."
 ---
 
 # API
@@ -52,8 +53,8 @@ Bei der Bereitstellung in AWS läuft die API als sechs Lambda-Funktionen:
 
 Die API hängt von zwei gemeinsamen ChurchApps-Paketen ab:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Grundlegende Hilfsfunktionen (DateHelper, ApiHelper usw.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Hilfsfunktionen für den Express-Server, einschließlich Authentifizierung, Datenbankhilfen und AWS-Integrationen
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Grundlegende Hilfsfunktionen (DateHelper, ApiHelper usw.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Hilfsfunktionen für den Express-Server, einschließlich Authentifizierung, Datenbankhilfen und AWS-Integrationen
 
 :::info
 Die API verwendet ES-Module (`"type": "module"` in `package.json`). Achten Sie darauf, dass Ihre Importe die ES-Modul-Syntax verwenden.
@@ -61,11 +62,11 @@ Die API verwendet ES-Module (`"type": "module"` in `package.json`). Achten Sie d
 
 ## In diesem Abschnitt
 
-- **[Lokale Einrichtung](./local-setup)** -- Klonen, konfigurieren und die API lokal ausführen
-- **[Datenbank](./database)** -- Architektur mit einer Datenbank pro Modul, Schema-Skripte und Muster für den Datenzugriff
-- **[Modulstruktur](./module-structure)** -- Controller, Repositories, Modelle und Authentifizierung
-- **[API-Schlüssel](./api-keys)** -- Persönliche Zugriffstoken für Skripte und Connectors
-- **[Connected Apps (OAuth)](./connected-apps)** -- Mandantenfähiger OAuth-Ablauf für Apps von Drittanbietern
-- **[Webhooks](./webhooks)** -- Ereignisbenachrichtigungen an externe Systeme senden
-- **[MCP-Server](./mcp)** -- Model-Context-Protocol-Endpunkt, der die API für KI-Assistenten bereitstellt
-- **[Endpunkt-Referenz](./endpoints/)** -- Vollständige REST-API-Dokumentation für alle Module
+- **[Lokale Einrichtung](./local-setup.md)** -- Klonen, konfigurieren und die API lokal ausführen
+- **[Datenbank](./database.md)** -- Architektur mit einer Datenbank pro Modul, Schema-Skripte und Muster für den Datenzugriff
+- **[Modulstruktur](./module-structure.md)** -- Controller, Repositories, Modelle und Authentifizierung
+- **[API-Schlüssel](./api-keys.md)** -- Persönliche Zugriffstoken für Skripte und Connectors
+- **[Connected Apps (OAuth)](./connected-apps.md)** -- Mandantenfähiger OAuth-Ablauf für Apps von Drittanbietern
+- **[Webhooks](./webhooks.md)** -- Ereignisbenachrichtigungen an externe Systeme senden
+- **[MCP-Server](./mcp.md)** -- Model-Context-Protocol-Endpunkt, der die API für KI-Assistenten bereitstellt
+- **[Endpunkt-Referenz](./endpoints/index.md)** -- Vollständige REST-API-Dokumentation für alle Module

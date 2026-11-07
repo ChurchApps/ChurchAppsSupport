@@ -1,5 +1,6 @@
 ---
 title: "Oynatma İçeriği"
+description: "FreePlay'i TV kumandasıyla kontrol edin: duraklatın, slayt ve videoları atlayın, herhangi bir mesaja geçin ve sağlayıcı, plan veya indirilen içerikten oynatıcıdan çıkın."
 ---
 
 # Oynatma İçeriği
@@ -13,13 +14,13 @@ FreePlay oynatıcısı ekranı kaplar ve TV kumandalarıyla kullanılmak üzere 
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Oynatılacak bir şey seçin. Bkz. [İçerike Göz Atma ve İndirme](./browsing-content), [Plan Modu](../plan-mode/) veya [Duyurular](./announcements)
+- Oynatılacak bir şey seçin. Bkz. [İçerike Göz Atma ve İndirme](./browsing-content.md), [Plan Modu](../plan-mode/index.md) veya [Duyurular](./announcements.md)
 - Oynatıcıyı açmak için **Başlat**'a basın
 
 </div>
 
 :::info
-Bir takvime bağlı ekranlar, biraz farklı denetimleri olan ayrı bir planlı oynatıcı kullanır. Bkz. [TV'de Planlı Oynatma](../scheduled-mode/scheduled-playback).
+Bir takvime bağlı ekranlar, biraz farklı denetimleri olan ayrı bir planlı oynatıcı kullanır. Bkz. [TV'de Planlı Oynatma](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Oynatıcı Denetimleri
@@ -57,7 +58,7 @@ Oynatma sırasında **Yukarı**'ya basarak **Bir Mesaj Seçin**'i açın. Her ö
 Oynatıcıdan çıkmak için kumandanızda **Aşağı** veya **Geri**'ye basın. Nereye döneceğiniz, neyi oynattığınıza bağlıdır:
 
 - **Sağlayıcı içeriği** - İçerik tarayıcısına döner
-- **Bir plan** - Plan indirme ekranına döner. Bkz. [Plan Modu](../plan-mode/)
+- **Bir plan** - Plan indirme ekranına döner. Bkz. [Plan Modu](../plan-mode/index.md)
 - **Bir indirme** - **İndirilenler** ekranına döner
 
 :::info
@@ -66,5 +67,5 @@ Oynatıcı açıkken ekran uyanık kalır; bu sayede bir ders sırasında TV uyk
 
 ## İlgili Makaleler
 
-- **[İçerike Göz Atma ve İndirme](./browsing-content)** - İçeriği bulun ve çevrimdışı oynatma için indirin
-- **[TV'de Planlı Oynatma](../scheduled-mode/scheduled-playback)** - Bir takvimi izleyen ekranlar için kumanda denetimleri
+- **[İçerike Göz Atma ve İndirme](./browsing-content.md)** - İçeriği bulun ve çevrimdışı oynatma için indirin
+- **[TV'de Planlı Oynatma](../scheduled-mode/scheduled-playback.md)** - Bir takvimi izleyen ekranlar için kumanda denetimleri

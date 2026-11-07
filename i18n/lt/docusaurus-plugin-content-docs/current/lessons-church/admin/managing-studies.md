@@ -1,5 +1,6 @@
 ---
 title: "Studijų valdymas"
+description: "Kurkite, redaguokite ir kategorizuokite mokymus programoje Lessons.church administravime, prie kiekvieno pridėdami serijos apžvalgas ar biuletenio šablonus."
 ---
 
 # Studijų valdymas

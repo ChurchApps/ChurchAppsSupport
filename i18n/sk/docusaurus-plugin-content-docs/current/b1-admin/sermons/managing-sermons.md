@@ -1,5 +1,6 @@
 ---
 title: "Správa kázní"
+description: "Spravujte knižnicu kázní v B1 Admin: pridávajte kázne z YouTube, Vimeo alebo Facebooku, upravujte údaje a získajte podcastový kanál pre váš zbor."
 ---
 
 # Správa kázní
@@ -14,7 +15,7 @@ Stránka Kázne zobrazuje celú vašu knižnicu kázní. Odtiaľto môžete prid
 <h4>Pred začatím</h4>
 
 - Potrebujete oprávnenie **contentApi.streamingServices.edit**. Ak nemáte prístup, pozrite si [Roly a oprávnenia](../settings/roles-permissions.md).
-- Vytvorte aspoň jeden [playlist](playlists), do ktorého budete kázne zaraďovať
+- Vytvorte aspoň jeden [playlist](./playlists.md), do ktorého budete kázne zaraďovať
 - Majte pripravené ID videí alebo URL adresy z YouTube, Vimeo alebo Facebooku
 
 </div>
@@ -35,7 +36,7 @@ Stránka Kázne zobrazuje celú vašu knižnicu kázní. Odtiaľto môžete prid
 6. Vykonajte požadované zmeny a kliknite na **Uložiť**.
 
 :::tip
-Trvalú URL adresu živého prenosu môžete pridať aj výberom možnosti **Pridať trvalú URL adresu živého prenosu** v rozbaľovacej ponuke **Pridať kázeň**. Tým sa vytvorí stále prepojenie na živý prenos vášho kanála YouTube pomocou ID vášho kanála. Podrobnosti nájdete v časti [Živý prenos](live-streaming).
+Trvalú URL adresu živého prenosu môžete pridať aj výberom možnosti **Pridať trvalú URL adresu živého prenosu** v rozbaľovacej ponuke **Pridať kázeň**. Tým sa vytvorí stále prepojenie na živý prenos vášho kanála YouTube pomocou ID vášho kanála. Podrobnosti nájdete v časti [Živý prenos](./live-streaming.md).
 :::
 
 ## Úprava kázne
@@ -73,11 +74,11 @@ Po pridaní kázne ju môžete naplánovať na vysielanie na stránke živého p
 3. Kázeň sa prehrá v naplánovanom čase bohoslužby.
 
 :::info
-Ak chcete naraz importovať viacero kázní namiesto ich pridávania po jednej, použite nástroj [Hromadný import](bulk-import), ktorý priamo stiahne videá z vášho účtu YouTube alebo Vimeo.
+Ak chcete naraz importovať viacero kázní namiesto ich pridávania po jednej, použite nástroj [Hromadný import](./bulk-import.md), ktorý priamo stiahne videá z vášho účtu YouTube alebo Vimeo.
 :::
 
 ## Ďalšie kroky
 
-- [Playlisty](playlists) – usporiadajte kázne do seriálov
-- [Živý prenos](live-streaming) – nastavte svoj harmonogram streamovania
-- [Hromadný import](bulk-import) – importujte naraz viacero kázní
+- [Playlisty](./playlists.md) – usporiadajte kázne do seriálov
+- [Živý prenos](./live-streaming.md) – nastavte svoj harmonogram streamovania
+- [Hromadný import](./bulk-import.md) – importujte naraz viacero kázní

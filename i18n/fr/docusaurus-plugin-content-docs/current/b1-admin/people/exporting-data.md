@@ -1,5 +1,6 @@
 ---
 title: "Exporter des données"
+description: "Exportez les personnes en CSV, les listes de membres de groupes ou une sauvegarde complète de la base de données B1 depuis B1 Admin, et voyez le contenu de l'archive ZIP d'exportation B1."
 ---
 
 # Exporter des données

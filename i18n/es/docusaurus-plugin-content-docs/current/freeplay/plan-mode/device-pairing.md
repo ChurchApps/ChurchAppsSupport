@@ -1,5 +1,6 @@
 ---
 title: "Emparejar tu dispositivo"
+description: "Vincula un TV FreePlay a un tipo de plan en B1 Admin con el código de cuatro letras de la pantalla y descarga los medios para el Modo Plan."
 ---
 
 # Emparejar tu dispositivo
@@ -13,7 +14,7 @@ Para usar el modo plan, empareja tu televisor con un tipo de plan en B1 Admin. F
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Instala y abre FreePlay. Consulta [Primeros pasos](../getting-started/)
+- Instala y abre FreePlay. Consulta [Primeros pasos](../getting-started/index.md)
 - Ten acceso a **B1 Admin** desde una computadora o un teléfono para completar el emparejamiento
 
 </div>
@@ -25,7 +26,7 @@ Para usar el modo plan, empareja tu televisor con un tipo de plan en B1 Admin. F
 3. FreePlay muestra un código de emparejamiento de cuatro letras en tamaño grande, junto a un código QR.
 4. Debajo del código, un indicador pulsante **Esperando confirmación** muestra que FreePlay está esperando a que termines el emparejamiento.
 
-El mismo código funciona para el [Modo programado](../scheduled-mode/) en FreePlay Admin y para el modo plan en B1 Admin. El código QR y la dirección **freeplay.church/pair** que aparecen en la pantalla llevan a FreePlay Admin. Para el modo plan, ignóralos e introduce el código en B1 Admin como se describe más abajo.
+El mismo código funciona para el [Modo programado](../scheduled-mode/index.md) en FreePlay Admin y para el modo plan en B1 Admin. El código QR y la dirección **freeplay.church/pair** que aparecen en la pantalla llevan a FreePlay Admin. Para el modo plan, ignóralos e introduce el código en B1 Admin como se describe más abajo.
 
 ## Introducir el código en B1 Admin
 
@@ -61,5 +62,5 @@ Los códigos de emparejamiento caducan a los 15 minutos. FreePlay muestra un có
 ## Artículos relacionados
 
 - **[Visión general del modo plan](./index.md)**: en qué se diferencia el modo plan del modo programado
-- **[Emparejar una pantalla](../scheduled-mode/pairing-a-screen)**: empareja el mismo televisor con un calendario en FreePlay Admin
-- **[Reproducir contenido](../content-providers/playing-content)**: controles del reproductor para la reproducción de planes
+- **[Emparejar una pantalla](../scheduled-mode/pairing-a-screen.md)**: empareja el mismo televisor con un calendario en FreePlay Admin
+- **[Reproducir contenido](../content-providers/playing-content.md)**: controles del reproductor para la reproducción de planes

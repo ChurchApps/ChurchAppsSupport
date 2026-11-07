@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Profil și carduri atribuite în B1 Mobile"
+sidebar_label: "Profil"
+description: "Gestionați numele, datele de contact, gospodăria și vizibilitatea confidențialității în profilul B1 Mobile, precum și cardurile de flux de lucru și sarcinile atribuite dvs."
 ---
 
 # Profil
@@ -20,7 +22,7 @@ Fila **Profil** îți permite să vezi și să editezi informațiile personale, 
 
 ### Gospodărie
 
-Fila **Gospodărie** arată membrii familiei tale și rolurile lor în cadrul gospodăriei. Aceste informații sunt folosite pentru funcții precum [check-in](../checkin/), unde îți poți înregistra întreaga familie deodată.
+Fila **Gospodărie** arată membrii familiei tale și rolurile lor în cadrul gospodăriei. Aceste informații sunt folosite pentru funcții precum [check-in](../checkin/index.md), unde îți poți înregistra întreaga familie deodată.
 
 ### Vizibilitate
 
@@ -55,6 +57,6 @@ Atinge o sarcină simplă pentru a vedea de la cine provine, la cine se referă 
 
 ## Pașii următori
 
-- [Editarea profilului](./editing-profile) -- Actualizează numele, datele de contact și fotografia
-- [Gospodărie](./household) -- Vezi și gestionează membrii familiei tale
-- [Setări de confidențialitate](./privacy-settings) -- Controlează ce pot vedea ceilalți despre tine
+- [Editarea profilului](./editing-profile.md) -- Actualizează numele, datele de contact și fotografia
+- [Gospodărie](./household.md) -- Vezi și gestionează membrii familiei tale
+- [Setări de confidențialitate](./privacy-settings.md) -- Controlează ce pot vedea ceilalți despre tine

@@ -1,5 +1,7 @@
 ---
-title: "Kungena"
+title: "Kungena ku-B1 Church Checkin"
+sidebar_label: "Kungena"
+description: "Ngena ku-app yekuzicelela ye-B1 Church Checkin, khetsa lesonto lakho, bese uqonda ngekungena ngekwayo, tilungiselelo tekuphatsa, nekuphuma ku-tablet yekungena."
 ---
 
 # Kungena
@@ -60,7 +62,7 @@ Kuhlela kwemlawuli kufihlwe ngephutsumo kute emalunga ebandla lasebentisa i-kios
 2. Nangabe kukhona i-PIN ye-kiosk lehleliwe, faka i-PIN nawucelwa.
 3. Skrini se-**Kuhlela Kwemlawuli** sitawuvula sinaleto tikhetso:
    - **Shintja Inkhonzo** — shintja sikhatsi senkhonzo lesikhetsiwe
-   - **Shintja Iprinta** — vula [kuhlelwa kweprinta](./printer-setup) kute uhlole bese ukhetsa iprinta
+   - **Shintja Iprinta** — vula [kuhlelwa kweprinta](./printer-setup.md) kute uhlole bese ukhetsa iprinta
    - **Hlela/Shintja i-PIN** — hlela nobe wentule i-PIN ye-kiosk levikela kufinyelela kwemlawuli
    - **Phuma** — phuma bese ubuyela eskrinini sekungena
 
@@ -70,4 +72,4 @@ Kuphuma kususa yonkhe imininingwane legciniwe kanye nekukhetsa kwebandla. Utawud
 
 ## Tinyatselo Letilandzelako
 
-Ngemuva kwekungena, ungahlela [iprinta](./printer-setup) nobe uye ngco [eluchungechungeni lwekubhalisa](../check-in/).
+Ngemuva kwekungena, ungahlela [iprinta](./printer-setup.md) nobe uye ngco [eluchungechungeni lwekubhalisa](../check-in/index.md).

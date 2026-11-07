@@ -1,5 +1,7 @@
 ---
-title: "Csoportok"
+title: "Csoportok képernyő a B1 Mobile alkalmazásban"
+sidebar_label: "Csoportok"
+description: "Keresd meg a B1 Mobile Csoportok képernyőjén azokat a csoportokat, amelyeknek tagja vagy, a leggyakrabban látogatott csoportodat a tetején, a gyülekezet többi csoportját alatta."
 ---
 
 # Csoportok
@@ -30,10 +32,10 @@ A Csoportok képernyőn az alábbiakat teheted:
 - **Kapcsolatban maradás** -- Lásd, mit osztanak meg a csoporttagjaid, kövesd a beszélgetéseket, és kapcsolódj be a csoporttartalmakba.
 
 :::tip
-A Csoportok képernyő alkalmazkodik a használatodhoz, akárcsak az [irányítópult](../dashboard/). A leggyakrabban látogatott csoportjaid gyors elérés érdekében a lista tetejére kerülnek.
+A Csoportok képernyő alkalmazkodik a használatodhoz, akárcsak az [irányítópult](../dashboard/index.md). A leggyakrabban látogatott csoportjaid gyors elérés érdekében a lista tetejére kerülnek.
 :::
 
 ## Következő lépések
 
-- [Csoport részletei](./group-details) -- Mit találsz a csoport részletes oldalán
-- [Csoport idővonal](./group-timeline) -- Ismerkedj meg a csoportjaid egységes tevékenységi hírfolyamával
+- [Csoport részletei](./group-details.md) -- Mit találsz a csoport részletes oldalán
+- [Csoport idővonal](./group-timeline.md) -- Ismerkedj meg a csoportjaid egységes tevékenységi hírfolyamával

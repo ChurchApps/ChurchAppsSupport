@@ -1,5 +1,6 @@
 ---
 title: "Administración"
+description: "نظرة عامة على منطقة إدارة Lessons.church في ChurchApps، وتشمل إدارة البرامج والدراسات والدروس والموارد والإحصائيات ومزودي المناهج الخارجيين."
 ---
 
 # Administración

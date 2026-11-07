@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Ikonekta ang B1 Admin sa Zapier para simulan ang automation sa bagong tao, donasyon, at miyembro ng grupo, at isulat pabalik sa B1 nang walang coding."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Pumili ng trigger, pagkatapos magdagdag ng isa o higit pang action step. Nasa ib
 ### Mag-post ng donasyon sa Slack channel na may mas mayamang card kaysa sa built-in na connector
 
 - **Trigger** -- B1: New Donation
-- **Action** -- Slack: Send Channel Message. Gumawa ng anumang layout -- mga button, attachment, atbp. -- na hindi kayang gawin ng built-in na [Slack connector](./slack-discord).
+- **Action** -- Slack: Send Channel Message. Gumawa ng anumang layout -- mga button, attachment, atbp. -- na hindi kayang gawin ng built-in na [Slack connector](./slack-discord.md).
 
 ### Idagdag ang bagong miyembro ng grupo sa isang Google Group
 
@@ -106,6 +107,6 @@ Ibig sabihin, tanging mga event na nangyari **pagkatapos** ma-on ang Zap ang mag
 
 ## Tingnan Din
 
-- [Make](./make) -- parehong pattern, ibang platform
-- [Slack & Discord](./slack-discord) -- mas simpleng notification sa chat nang walang Zapier
+- [Make](./make.md) -- parehong pattern, ibang platform
+- [Slack & Discord](./slack-discord.md) -- mas simpleng notification sa chat nang walang Zapier
 - [Webhooks (developer reference)](/docs/developer/api/webhooks)

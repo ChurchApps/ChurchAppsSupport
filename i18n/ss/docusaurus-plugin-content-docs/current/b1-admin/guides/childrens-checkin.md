@@ -1,5 +1,6 @@
 ---
 title: "Umhlahlandlela: Setinga Kungena Kwebantfwana Enkonzweni"
+description: "Setfula kuzibhalisa kwetingane ku-B1 Admin: xhuma tindlu, dala emaqembu ngeminyaka, setfula tinkonzo, uphrinte emagama ekhiyosiki ye-B1 Checkin."
 ---
 
 # Setinga Kungena Kwebantfwana Enkonzweni

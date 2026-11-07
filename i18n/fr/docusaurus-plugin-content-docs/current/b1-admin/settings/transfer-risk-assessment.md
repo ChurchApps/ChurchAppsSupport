@@ -1,5 +1,6 @@
 ---
 title: "Évaluation des Risques de Transfert"
+description: "Dossier de conformité ChurchApps pour les transferts de données UK/EEE vers les États-Unis dans B1 Admin : garanties, sous-traitants, contrôle d'accès."
 ---
 
 # Évaluation des Risques de Transfert

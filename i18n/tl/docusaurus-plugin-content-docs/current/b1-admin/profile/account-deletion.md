@@ -1,5 +1,6 @@
 ---
 title: "Sinusuri ang mga kahilingan sa pagtanggal ng account"
+description: "Aprubahan o tanggihan ang kahilingang burahin ang account ng miyembro sa B1 Admin, ipadaan sa Directory Approval Group, at tumupad sa 30-araw na deadline ng GDPR."
 ---
 
 # Sinusuri ang mga kahilingan sa pagtanggal ng account

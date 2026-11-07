@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Povežite darove, nove osebe in odgovore obrazcev Subsplash z B1 prek Zapier, da se darila in profili samodejno prenesejo v B1 Admin."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Vklopite Zap. Prihodnje donacije iz Subsplasha se bodo v nekaj sekundah prikazal
 
 ## Glejte tudi
 
-- [Donorbox](./donorbox) — enak način receptov, drugačna platforma za donacije
-- [Zapier (pregled)](../zapier) — stran B1 za vse recepte Zapier
+- [Donorbox](./donorbox.md) — enak način receptov, drugačna platforma za donacije
+- [Zapier (pregled)](../zapier.md) — stran B1 za vse recepte Zapier
 - [Subsplashov vodnik za integracijo z Zapier](https://support.subsplash.com/en/articles/9825926-zapier-integration) (dokumentacija Subsplash)

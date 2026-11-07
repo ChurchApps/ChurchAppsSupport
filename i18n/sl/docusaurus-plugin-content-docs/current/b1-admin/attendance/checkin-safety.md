@@ -1,5 +1,6 @@
 ---
 title: "Varnost pri prijavi"
+description: "Nastavite nadzor varnosti otrok v B1 Admin: kapaciteto sob, razmerje prostovoljcev, sezname zaupanja vrednih oseb za prevzem in sporočila staršem."
 ---
 
 # Varnost pri prijavi
@@ -15,7 +16,7 @@ B1 vključuje nabor nastavitev za varnost otrok pri prijavi: omejitve zmogljivos
 
 - Nastavite [strukturo udeležbe](setup.md) in [kiosk za prijavo](check-in.md)
 - Prostori so [skupine](../groups/creating-groups.md), povezane s časi bogoslužja. Spodnje varnostne nastavitve so shranjene na skupini.
-- Obveščanje staršev in nujna množična sporočila zahtevajo povezanega ponudnika SMS sporočil ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream) ali Mutual Ministry)
+- Obveščanje staršev in nujna množična sporočila zahtevajo povezanega ponudnika SMS sporočil ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md) ali Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Obe funkciji pošiljata besedilna sporočila prek povezanega ponudnika SMS sporo
 
 Osebe, ki so se odjavile od sporočil, ali osebe brez evidentirane mobilne številke, so samodejno preskočene. Kiosk poroča, koliko sporočil je bilo poslanih in koliko preskočenih.
 
-Za postopek na kiosku glejte [Odjava in varnost otrok](../../b1-checkin/check-in/checking-out).
+Za postopek na kiosku glejte [Odjava in varnost otrok](../../b1-checkin/check-in/checking-out.md).
 
 ## Povezani članki
 
 - [Prijava](check-in.md) — nastavitev kioska in strojne opreme
-- [Odjava in varnost otrok](../../b1-checkin/check-in/checking-out) — odjava na kiosku, preverjanje prevzema in postopki obveščanja
+- [Odjava in varnost otrok](../../b1-checkin/check-in/checking-out.md) — odjava na kiosku, preverjanje prevzema in postopki obveščanja
 - [Ustvarjanje skupin](../groups/creating-groups.md) — kje so nastavitve prostorov
 - [Nastavitev udeležbe](setup.md) — bogoslužja, časi bogoslužij in dodelitve prostorov
 - [Najnižja starost za zasebna sporočila](../settings/mobile-app.md#member-directory--messaging-settings) — blokira nove zasebne pogovore z otroki, medtem ko ostajajo v imeniku

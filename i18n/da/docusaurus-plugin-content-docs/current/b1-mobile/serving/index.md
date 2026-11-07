@@ -1,5 +1,7 @@
 ---
-title: "Se dine planer"
+title: "Tjenesteplaner i B1 Mobile-appen"
+sidebar_label: "Se dine planer"
+description: "Se din tjenesteplan, kommende opgaver og positionsstatus i B1 Mobile-appen, og find ud af, hvordan du tilmelder dig ledige frivillige roller."
 ---
 
 # Se dine planer
@@ -34,5 +36,5 @@ Hvis du har fået en ny tildeling:
 
 ## Læs mere
 
-- [Viewing Plans](./viewing-plans) -- Se dine serviceplaner og tjeneste detaljer
-- [Volunteer Signup](./volunteer-signup) -- Tilmeld dig åbne frivillige positioner
+- [Viewing Plans](./viewing-plans.md) -- Se dine serviceplaner og tjeneste detaljer
+- [Volunteer Signup](./volunteer-signup.md) -- Tilmeld dig åbne frivillige positioner

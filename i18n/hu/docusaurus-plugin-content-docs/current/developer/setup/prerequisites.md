@@ -1,5 +1,6 @@
 ---
 title: "Előfeltételek"
+description: "Node.js, npm, Git és platformeszközök beállítása a ChurchApps-projektek, például a B1 Admin, Lessons.church, FreePlay vagy az API helyi használata előtt."
 ---
 
 # Előfeltételek
@@ -13,7 +14,7 @@ A szükséges eszközök attól függnek, hogy mely projekteken szeretne dolgozn
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Tekintse át a [Projekt áttekintést](./project-overview), hogy eldöntse, mely projekteken szeretne dolgozni
+- Tekintse át a [Projekt áttekintést](./project-overview.md), hogy eldöntse, mely projekteken szeretne dolgozni
 - Legyen rendszergazdai hozzáférése a fejlesztői gépén a szoftverek telepítéséhez
 
 </div>
@@ -40,7 +41,7 @@ Ha az API-t helyben szeretné futtatni (ahelyett, hogy a demó API-kra mutatna):
 |------|---------|-------|
 | **MySQL** | 8.0+ | Minden API-modul saját adatbázist használ |
 
-Az alapvető API-hoz hat adatbázisra van szüksége: `membership`, `attendance`, `content`, `giving`, `messaging` és `doing`. Az API tartalmaz szkripteket a séma inicializálásához – lásd az [API helyi beállítása](../api/local-setup) útmutatót.
+Az alapvető API-hoz hat adatbázisra van szüksége: `membership`, `attendance`, `content`, `giving`, `messaging` és `doing`. Az API tartalmaz szkripteket a séma inicializálásához – lásd az [API helyi beállítása](../api/local-setup.md) útmutatót.
 
 ## Mobilalkalmazás fejlesztés
 
@@ -110,5 +111,5 @@ mysql --version   # Only needed for local API development
 
 ## Következő lépések
 
-- **[Projekt áttekintés](./project-overview)** -- Tekintse meg az összes projektet és azok funkcióit
-- **[Környezeti változók](./environment-variables)** -- Konfigurálja a `.env` fájljait
+- **[Projekt áttekintés](./project-overview.md)** -- Tekintse meg az összes projektet és azok funkcióit
+- **[Környezeti változók](./environment-variables.md)** -- Konfigurálja a `.env` fájljait

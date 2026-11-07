@@ -1,5 +1,6 @@
 ---
 title: "Den Seiteneditor verwenden"
+description: "Seiteneditor in B1 Admin nutzen: Abschnitte und Elemente hinzufügen, gestalten, mobil prüfen und Entwürfe veröffentlichen; auch Rückgängig und Verlauf."
 ---
 
 # Den Seiteneditor verwenden
@@ -13,8 +14,8 @@ Der Seiteneditor von B1 ist ein visueller Drag-and-Drop-Baukasten, mit dem Sie d
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Schließen Sie die [Erstkonfiguration](initial-setup) ab, um Ihre Website einzurichten
-- Legen Sie mindestens eine Seite unter [Seiten verwalten](managing-pages) an
+- Schließen Sie die [Erstkonfiguration](./initial-setup.md) ab, um Ihre Website einzurichten
+- Legen Sie mindestens eine Seite unter [Seiten verwalten](./managing-pages.md) an
 - Sie benötigen die Berechtigung **content.edit**, um auf den Editor zuzugreifen
 
 </div>
@@ -27,7 +28,7 @@ Der Seiteneditor von B1 ist ein visueller Drag-and-Drop-Baukasten, mit dem Sie d
 Der Editor öffnet sich im Vollbildmodus. Das linke Feld zeigt die Struktur Ihrer Seite und die verfügbaren Inhaltselemente; der mittlere Bereich zeigt eine Live-Vorschau Ihrer Seite.
 
 :::info
-Der Editor wird immer im hellen Modus angezeigt, unabhängig von der Designeinstellung Ihres B1-Admins, und verwendet die Schriften für Überschriften und Fließtext, die Sie unter [Erscheinungsbild](appearance) gewählt haben. So stimmt die Vorschau genau mit dem überein, wie Ihre Seite Besuchern erscheinen wird.
+Der Editor wird immer im hellen Modus angezeigt, unabhängig von der Designeinstellung Ihres B1-Admins, und verwendet die Schriften für Überschriften und Fließtext, die Sie unter [Erscheinungsbild](./appearance.md) gewählt haben. So stimmt die Vorschau genau mit dem überein, wie Ihre Seite Besuchern erscheinen wird.
 :::
 
 ## Seitenstruktur: Abschnitte und Elemente
@@ -57,7 +58,7 @@ Haben Sie einen Abschnitt bereits aufgebaut, möchten aber eine andere Struktur?
    - **Bild** – Ein Foto hochladen oder darauf verlinken
    - **Schaltfläche** – Ein anklickbarer Aufruf zum Handeln (Call-to-Action-Link)
    - **Karte** – Ein Bild mit Titel und Beschreibung
-   - **Formular** – Ein [Formular](../forms/creating-forms) direkt auf der Seite einbetten. Hat das Formular ein [Kopfbild](../forms/creating-forms.md#adding-a-header-photo), erscheint es oberhalb der Fragen
+   - **Formular** – Ein [Formular](../forms/creating-forms.md) direkt auf der Seite einbetten. Hat das Formular ein [Kopfbild](../forms/creating-forms.md#adding-a-header-photo), erscheint es oberhalb der Fragen
    - **Kalender** – Einen Veranstaltungskalender anzeigen
    - **FAQ** – Frage-und-Antwort-Blöcke im Akkordeon-Stil
    - **Video** – Ein Video über eine URL einbetten
@@ -75,7 +76,7 @@ Haben Sie einen Abschnitt bereits aufgebaut, möchten aber eine andere Struktur?
    - **Karte** – Eine eingebettete Karte, die auf die Adresse Ihrer Kirche zentriert ist
    - **Tabelle** – Ein einfaches Raster aus Zeilen und Spalten für tabellarische Inhalte
    - **Text mit Foto** – Text und ein Bild nebeneinander
-   - **Logo** – Das Logo Ihrer Kirche, übernommen aus [Erscheinungsbild](appearance)
+   - **Logo** – Das Logo Ihrer Kirche, übernommen aus [Erscheinungsbild](./appearance.md)
    - **Livestream** – Ihr Livestream-Player, direkt auf der Seite eingebettet
    - **Podcast** – Eine Liste von Episoden aus einer externen Podcast-RSS-Feed-URL, die Sie angeben, mit Einstellungen, wie viele Episoden angezeigt werden und ob Datum und Beschreibungen erscheinen. Jede Episode auf der Live-Seite hat einen Audioplayer und einen Link **Herunterladen**, der die Audiodatei der Episode unter dem Episodentitel speichert. Dies dient dazu, einen beliebigen Podcast-Feed auf Ihrer Seite hervorzuheben; um Ihre eigenen Predigten als Podcast zu veröffentlichen, lesen Sie stattdessen [Predigten verwalten](../sermons/managing-sermons.md#your-podcast-feed)
    - **Spende** – Eine Schaltfläche zum Geben oder ein eingebettetes Spendenformular
@@ -96,7 +97,7 @@ Fügen Sie nur eine Webadresse (etwa einen Bildlink) in das JavaScript-Feld ein,
 
 Das Element **Kalender** zeigt Veranstaltungen aus einem Ihrer Kalender:
 
-1. Wählen Sie unter **Auswahl** entweder **Gruppenkalender** (die Veranstaltungen einer Gruppe – die Liste zeigt die Gruppen, denen Sie angehören) oder **Kuratierter Kalender** (ein Kalender, den Sie unter **Kalender** erstellt haben; siehe [Kuratierter Kalender](../calendars/curated-calendar)).
+1. Wählen Sie unter **Auswahl** entweder **Gruppenkalender** (die Veranstaltungen einer Gruppe – die Liste zeigt die Gruppen, denen Sie angehören) oder **Kuratierter Kalender** (ein Kalender, den Sie unter **Kalender** erstellt haben; siehe [Kuratierter Kalender](../calendars/curated-calendar.md)).
 2. Wählen Sie unter **Kalender auswählen** die Gruppe oder den Kalender aus.
 3. Wählen Sie unter **Anzeige**, wie er dargestellt werden soll:
    - **Monatskalender** – Ein Monatsraster, durch das Besucher blättern können.
@@ -129,7 +130,7 @@ Klicken Sie auf ein beliebiges Element, um dessen Stilfeld zu öffnen. Häufige 
 Für fortgeschrittene Gestaltung hat jeder Abschnitt und jedes Element ein Feld **Eigenes CSS**, in das Sie eigene CSS-Regeln schreiben können. Diese gelten nur für das jeweilige Element und beeinflussen den Rest der Seite nicht ungewollt.
 
 :::tip
-Wenn Sie Stile über die gesamte Website anwenden möchten – etwa eine eigene Schrift oder eine globale Farbe –, verwenden Sie die Einstellungen unter [Erscheinungsbild](appearance) statt eigenem CSS auf einzelnen Seiten.
+Wenn Sie Stile über die gesamte Website anwenden möchten – etwa eine eigene Schrift oder eine globale Farbe –, verwenden Sie die Einstellungen unter [Erscheinungsbild](./appearance.md) statt eigenem CSS auf einzelnen Seiten.
 :::
 
 ## Ihre Seite vorab ansehen
@@ -184,7 +185,7 @@ Nutzen Sie den Entwurfs- und Veröffentlichungsablauf, wenn Sie eine Seite vorbe
 
 ## Verwandte Artikel
 
-- [Seiten verwalten](managing-pages) – Seiten anlegen, Adressen festlegen und die Navigation der Website verwalten
-- [Erscheinungsbild](appearance) – Farben, Schriften und Branding der gesamten Website festlegen
-- [Dateien](files) – Bilder und Dokumente hochladen, die Sie im Editor verwenden möchten
-- [Formulare erstellen](../forms/creating-forms) – Formulare bauen, die Sie auf Seiten einbetten können
+- [Seiten verwalten](./managing-pages.md) – Seiten anlegen, Adressen festlegen und die Navigation der Website verwalten
+- [Erscheinungsbild](./appearance.md) – Farben, Schriften und Branding der gesamten Website festlegen
+- [Dateien](./files.md) – Bilder und Dokumente hochladen, die Sie im Editor verwenden möchten
+- [Formulare erstellen](../forms/creating-forms.md) – Formulare bauen, die Sie auf Seiten einbetten können

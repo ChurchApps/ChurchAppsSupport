@@ -1,5 +1,6 @@
 ---
 title: "Administrasi"
+description: "Ikhtisar area admin Lessons.church di ChurchApps: cara mengelola program, studi, pelajaran, sumber daya, statistik, dan penyedia kurikulum eksternal."
 ---
 
 # Administrasi

@@ -1,5 +1,6 @@
 ---
 title: "La page Moi"
+description: "Contenu de la page Me du portail B1App : services, événements et inscriptions à venir, foyer, groupes, dons, formulaires, présence et messages."
 ---
 
 # La page Moi
@@ -31,7 +32,7 @@ Si vous êtes déconnecté, vous verrez « Connectez-vous pour voir votre semain
 La section **À venir** affiche vos trois prochains éléments par ordre de date, chacun accompagné d'un badge de type. Si vous en avez davantage, touchez **Tout ce qui est à venir** pour voir la liste complète, et **Retour à Moi** pour revenir.
 
 - **Service** -- Vos postes de bénévole sur les plannings de service à venir, avec la date et l'heure de début du service auquel vous participez (l'heure à laquelle votre équipe est attendue lorsque le planning comporte plusieurs horaires, ou simplement la date si le planning n'a pas d'horaire). Touchez-en un pour ouvrir le planning.
-- **Inscription** -- Événements auxquels vous êtes [inscrit](../events/registering). Touchez pour accéder à vos [inscriptions](../events/my-registrations).
+- **Inscription** -- Événements auxquels vous êtes [inscrit](../events/registering.md). Touchez pour accéder à vos [inscriptions](../events/my-registrations.md).
 - **Événement** -- Événements à venir des groupes auxquels vous appartenez. Touchez-en un pour ouvrir les événements du groupe.
 
 Si un événement ou une inscription comporte une photo, une petite miniature apparaît au début de la ligne.
@@ -66,7 +67,7 @@ La section **Demandes et inscriptions** indique le nombre d'inscriptions à des 
 
 Si votre église dispose de salles ou de ressources réservables, deux liens supplémentaires apparaissent :
 
-- **Demander un événement** -- Demandez à réserver les salles et le matériel dont vous avez besoin pour un événement. Voir [Demander des événements et des salles](../events/requesting-events).
+- **Demander un événement** -- Demandez à réserver les salles et le matériel dont vous avez besoin pour un événement. Voir [Demander des événements et des salles](../events/requesting-events.md).
 - **Mes demandes** -- Suivez l'état de vos demandes et annulez celles qui sont en attente.
 
 Si votre église n'a pas configuré de salles ou de ressources, ces liens sont masqués.
@@ -77,8 +78,8 @@ La section **Boîte de réception** affiche vos deux notifications les plus réc
 
 ## Articles connexes
 
-- [Navigation dans B1App](./navigating) -- La disposition du portail des membres
-- [Demander des événements et des salles](../events/requesting-events) -- Soumettre et suivre les demandes de salles et de ressources
-- [Mes inscriptions](../events/my-registrations) -- Gérer vos inscriptions aux événements
-- [Inscription comme bénévole](../serving/volunteer-signup) -- Le fonctionnement des affectations de service
-- [Pointage en libre-service](../checkin/self-checkin) -- Comment votre présence est enregistrée
+- [Navigation dans B1App](./navigating.md) -- La disposition du portail des membres
+- [Demander des événements et des salles](../events/requesting-events.md) -- Soumettre et suivre les demandes de salles et de ressources
+- [Mes inscriptions](../events/my-registrations.md) -- Gérer vos inscriptions aux événements
+- [Inscription comme bénévole](../serving/volunteer-signup.md) -- Le fonctionnement des affectations de service
+- [Pointage en libre-service](../checkin/self-checkin.md) -- Comment votre présence est enregistrée

@@ -1,5 +1,6 @@
 ---
 title: "Groepsgezondheid"
+description: "Controleer de groepsgezondheid in B1 Admin via een tabel van 90 dagen met leden, aanmeldingen, vertrekkers, verloop en gemiddelde aanwezigheid."
 ---
 
 # Groepsgezondheid
@@ -13,8 +14,8 @@ Het dashboard Groepsgezondheid geeft je een overzicht van hoe al je groepen het 
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- Je hebt minstens een paar groepen met leden nodig om zinvolle gegevens te zien. Zie [Groepen aanmaken](creating-groups).
-- Aanwezigheidsgegevens worden opgehaald uit geregistreerde sessies. Zie de sectie [Aanwezigheid](../attendance/).
+- Je hebt minstens een paar groepen met leden nodig om zinvolle gegevens te zien. Zie [Groepen aanmaken](./creating-groups.md).
+- Aanwezigheidsgegevens worden opgehaald uit geregistreerde sessies. Zie de sectie [Aanwezigheid](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Als je op een groepsnaam klikt, ga je direct naar de detailpagina van de groep, 
 
 ## Gerelateerde artikelen
 
-- [Groepen aanmaken](creating-groups) — groepen instellen
-- [Groepsleden](group-members) — groepslidmaatschap beheren
-- [Aanwezigheid bijhouden](../attendance/tracking-attendance) — aanwezigheidssessies registreren die dit dashboard voeden
+- [Groepen aanmaken](./creating-groups.md) — groepen instellen
+- [Groepsleden](./group-members.md) — groepslidmaatschap beheren
+- [Aanwezigheid bijhouden](../attendance/tracking-attendance.md) — aanwezigheidssessies registreren die dit dashboard voeden

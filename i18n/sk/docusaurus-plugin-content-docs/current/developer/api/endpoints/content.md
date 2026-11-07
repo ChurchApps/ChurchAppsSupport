@@ -1,5 +1,6 @@
 ---
 title: "Koncové body obsahu"
+description: "Referencia koncových bodov Content API ChurchApps: webové stránky, blogové príspevky, presmerovania, kázne, udalosti, súbory, vyhľadávanie v Biblii a piesne v B1 Admin."
 ---
 
 # Koncové body obsahu
@@ -133,7 +134,7 @@ Základná cesta: `/content/pageHistory`
 
 Základná cesta: `/content/posts`
 
-Blogové príspevky sú samostatné záznamy: `title`, `slug` (jedinečný v rámci cirkvi), `excerpt`, `content` (telo v Markdown), `authorId`, `photoUrl`, `publishDate`, `category` a `tags`. Príspevok je zverejnený, keď je nastavený `publishDate` a tento dátum je v minulosti. Čítacie koncové body obohacujú každý príspevok o `authorName`, ktoré sa získa z `authorId`. Pozri [Architektúra tvorby webstránok](../../architecture/website-builder#blog).
+Blogové príspevky sú samostatné záznamy: `title`, `slug` (jedinečný v rámci cirkvi), `excerpt`, `content` (telo v Markdown), `authorId`, `photoUrl`, `publishDate`, `category` a `tags`. Príspevok je zverejnený, keď je nastavený `publishDate` a tento dátum je v minulosti. Čítacie koncové body obohacujú každý príspevok o `authorName`, ktoré sa získa z `authorId`. Pozri [Architektúra tvorby webstránok](../../architecture/website-builder.md#blog).
 
 | Metóda | Cesta | Overenie | Oprávnenie | Popis |
 |--------|-------|----------|------------|-------|
@@ -458,8 +459,8 @@ Základná cesta: `/content/support`
 
 ## Súvisiace stránky
 
-- [Architektúra tvorby webstránok](../../architecture/website-builder) -- Ako stránky, sekcie, prvky, príspevky a presmerovania spolu súvisia naprieč aplikáciami
-- [Koncové body členstva](./membership) -- Ľudia, cirkvi, skupiny, roly, oprávnenia
-- [Koncové body dochádzky](./attendance) -- Sledovanie služieb a návštev
-- [Overenie a oprávnenia](./authentication) -- Tok prihlásenia, JWT, model oprávnení
-- [Štruktúra modulov](../module-structure) -- Vzory organizácie kódu
+- [Architektúra tvorby webstránok](../../architecture/website-builder.md) -- Ako stránky, sekcie, prvky, príspevky a presmerovania spolu súvisia naprieč aplikáciami
+- [Koncové body členstva](./membership.md) -- Ľudia, cirkvi, skupiny, roly, oprávnenia
+- [Koncové body dochádzky](./attendance.md) -- Sledovanie služieb a návštev
+- [Overenie a oprávnenia](./authentication.md) -- Tok prihlásenia, JWT, model oprávnení
+- [Štruktúra modulov](../module-structure.md) -- Vzory organizácie kódu

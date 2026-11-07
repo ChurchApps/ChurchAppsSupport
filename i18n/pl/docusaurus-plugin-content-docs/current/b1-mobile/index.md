@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (wycofana)"
+description: "Natywna aplikacja B1 Mobile jest wycofywana. Członkowie i administratorzy powinni używać PWA B1.church, a starsze strony zostały zachowane."
 ---
 
 # B1 Mobile (wycofana)
@@ -40,16 +41,16 @@ B1 Mobile obsługiwał powiadomienia push, dzięki czemu nie przegapisz ważnej 
 
 ## Więcej informacji
 
-- [Pierwsze kroki](./getting-started/) -- Zainstaluj aplikację, utwórz konto i wybierz swój kościół.
-- [Pulpit](./dashboard/) -- Dowiedz się więcej o swoim spersonalizowanym ekranie głównym.
-- [Grupy](./groups/) -- Pozostawaj w kontakcie z grupami kościelnymi.
-- [Darowizny](./giving/) -- Składaj darowizny z telefonu.
-- [Wydarzenia](./events/) -- Przeglądaj i zapisuj się na nadchodzące wydarzenia kościelne.
-- [Check-In](./checkin/) -- Melduj się na nabożeństwa i wydarzenia.
-- [Służba](./serving/) -- Przeglądaj swoje plany służby, przydziały i możliwości wolontariatu.
-- [Społeczność](./community/) -- Przeglądaj katalog członków i wysyłaj wiadomości.
-- [Treści](./content/) -- Kazania, Biblia, werset dnia i lekcje (ekran lekcji wycofany — zobacz [FreePlay](/docs/freeplay/)).
-- [Profil](./profile/) -- Zarządzaj swoim profilem i ustawieniami konta.
+- [Pierwsze kroki](./getting-started/index.md) -- Zainstaluj aplikację, utwórz konto i wybierz swój kościół.
+- [Pulpit](./dashboard/index.md) -- Dowiedz się więcej o swoim spersonalizowanym ekranie głównym.
+- [Grupy](./groups/index.md) -- Pozostawaj w kontakcie z grupami kościelnymi.
+- [Darowizny](./giving/index.md) -- Składaj darowizny z telefonu.
+- [Wydarzenia](./events/index.md) -- Przeglądaj i zapisuj się na nadchodzące wydarzenia kościelne.
+- [Check-In](./checkin/index.md) -- Melduj się na nabożeństwa i wydarzenia.
+- [Służba](./serving/index.md) -- Przeglądaj swoje plany służby, przydziały i możliwości wolontariatu.
+- [Społeczność](./community/index.md) -- Przeglądaj katalog członków i wysyłaj wiadomości.
+- [Treści](./content/index.md) -- Kazania, Biblia, werset dnia i lekcje (ekran lekcji wycofany — zobacz [FreePlay](/docs/freeplay/)).
+- [Profil](./profile/index.md) -- Zarządzaj swoim profilem i ustawieniami konta.
 
 :::info
 B1 Mobile został zastąpiony przez [PWA B1.church](../b1-church/getting-started/installing-pwa.md). Nowe wdrożenia powinny korzystać z PWA, ponieważ natywna aplikacja nie jest już aktualizowana.

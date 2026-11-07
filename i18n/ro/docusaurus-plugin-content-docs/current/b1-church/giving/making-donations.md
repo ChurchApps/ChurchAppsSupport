@@ -1,5 +1,7 @@
 ---
-title: "Efectuarea unei donații"
+title: "Efectuarea donațiilor în portalul membrilor B1.church"
+sidebar_label: "Efectuarea unei donații"
+description: "Faceți un dar unic sau recurent către biserica dvs. prin B1.church, cu sau fără cont, și consultați ulterior istoricul donațiilor."
 ---
 
 # Efectuarea unei donații

@@ -1,5 +1,7 @@
 ---
-title: "로그인하기"
+title: "B1.church 및 교인 포털에 로그인하기"
+sidebar_label: "로그인하기"
+description: "B1.church 교인 포털에 로그인하고, 2단계 인증 코드나 싱글 사인온을 사용하고, 잊은 비밀번호를 재설정하며, 계정 메뉴에서 로그아웃하세요."
 ---
 
 # 로그인하기
@@ -13,7 +15,7 @@ B1.church에 로그인하면 나에게 다가오는 일정을 확인하고, 그�
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- ChurchApps 계정이 필요합니다. 계정을 만들려면 [시작하기](../getting-started/)를 참고하세요.
+- ChurchApps 계정이 필요합니다. 계정을 만들려면 [시작하기](./index.md)를 참고하세요.
 - 교회의 B1.church 주소가 필요합니다(예: `https://yourchurchname.b1.church`).
 
 </div>
@@ -35,7 +37,7 @@ B1.church에 로그인하면 나에게 다가오는 일정을 확인하고, 그�
 
 ## 회원 포털 이용하기
 
-로그인한 뒤에는 페이지 오른쪽 위의 **이름**을 클릭하고 메뉴에서 **Member Portal**을 선택하면 회원 포털에 접근할 수 있습니다. 회원 포털에는 [Home 대시보드](./navigating.md), [Me 페이지](./me-page.md), [그룹](../groups/), [헌금](../giving/) 등 개인 교회 도구가 모두 모여 있습니다.
+로그인한 뒤에는 페이지 오른쪽 위의 **이름**을 클릭하고 메뉴에서 **Member Portal**을 선택하면 회원 포털에 접근할 수 있습니다. 회원 포털에는 [Home 대시보드](./navigating.md), [Me 페이지](./me-page.md), [그룹](../groups/index.md), [헌금](../giving/index.md) 등 개인 교회 도구가 모두 모여 있습니다.
 
 ## 사용자 메뉴
 

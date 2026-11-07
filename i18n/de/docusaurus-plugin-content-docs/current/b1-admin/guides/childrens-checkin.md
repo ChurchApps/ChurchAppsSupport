@@ -1,5 +1,6 @@
 ---
 title: "Anleitung: Check-in für die Kinderarbeit einrichten"
+description: "Richten Sie in B1 Admin den Kinder-Check-in ein: Familien verknüpfen, altersbezogene Gruppen anlegen, Gottesdienste konfigurieren und Namensschilder für den B1-Checkin-Kiosk drucken."
 ---
 
 # Check-in für die Kinderarbeit einrichten

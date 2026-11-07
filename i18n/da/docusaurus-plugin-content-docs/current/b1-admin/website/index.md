@@ -1,5 +1,6 @@
 ---
 title: "websted"
+description: "Få et overblik over B1 Admins hjemmesidebygger: sider, blog, blokke, udseende, filer og kalendere, med links til opsætnings- og redigeringsguides."
 ---
 
 # websted
@@ -26,23 +27,23 @@ byg genbrug af indhold komponenter som du kan placere på flere sider. blokke sp
 
 ### udseende
 
-tilpas dit websteds tema, farver, skrifttyper, logo og mellemrum. Du kan anvende forudbyggede stil temaer til hurtig start eller fine-tune ethvert detalje med farve palet redaktør, typografi indstillinger og brugerdefineret CSS. Se [udseende](appearance) vejledning til fulde detaljer.
+tilpas dit websteds tema, farver, skrifttyper, logo og mellemrum. Du kan anvende forudbyggede stil temaer til hurtig start eller fine-tune ethvert detalje med farve palet redaktør, typografi indstillinger og brugerdefineret CSS. Se [udseende](./appearance.md) vejledning til fulde detaljer.
 
 ### filer
 
-upload og organiser alle dine medie aktiver -- billeder, dokumenter og anden filer -- i ét centralt sted. Brug mapper for at holde ting ryddeligt og kopier fil URL'er til bruger overalt på dit websted. Se [filer](files) til mere information.
+upload og organiser alle dine medie aktiver -- billeder, dokumenter og anden filer -- i ét centralt sted. Brug mapper for at holde ting ryddeligt og kopier fil URL'er til bruger overalt på dit websted. Se [filer](./files.md) til mere information.
 
 ### kalendere
 
 udgiv event kalendere på dit websted så besøgende kan se hvad som sker på dit kirke. opbygge kurateret kalendere som trække arrangementer fra flere grupper ind i enkelt visning.
 
 :::tip
-start med [oprindelig opsætning](initial-setup) hvis du er konfigurering dit websted til første gang. Det går dig gennem domæne opsætning, opbygning af dit første side og konfigurering af dit websteds udseende.
+start med [oprindelig opsætning](./initial-setup.md) hvis du er konfigurering dit websted til første gang. Det går dig gennem domæne opsætning, opbygning af dit første side og konfigurering af dit websteds udseende.
 :::
 
 ## Næste trin
 
-- [oprindelig opsætning](initial-setup) -- få dit websted op og løben til første gang
-- [administrering af sider](managing-pages) -- lær hvordan til at opbygge og organisere dine sider
-- [udseende](appearance) -- tilpas dine websteds udsende og fornemmelse
-- [filer](files) -- upload og administrer medie filer
+- [oprindelig opsætning](./initial-setup.md) -- få dit websted op og løben til første gang
+- [administrering af sider](./managing-pages.md) -- lær hvordan til at opbygge og organisere dine sider
+- [udseende](./appearance.md) -- tilpas dine websteds udsende og fornemmelse
+- [filer](./files.md) -- upload og administrer medie filer

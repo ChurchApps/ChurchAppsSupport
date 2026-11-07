@@ -1,5 +1,6 @@
 ---
 title: "Çalma Listeleri"
+description: "B1 Admin'de vaazlarınızı serilere ayırın; böylece B1.church web sitenizdeki ziyaretçiler her vaaz serisine sırasıyla göz atıp takip edebilir."
 ---
 
 # Çalma Listeleri
@@ -39,10 +40,10 @@ Vaazları eklemeden önce çalma listelerinizi oluşturun. Böylece her vaazı i
 
 ## Çalma Listesine Vaaz Ekleme
 
-[Vaaz ekleyip düzenlediğinizde](managing-sermons), **Playlist** (Çalma Listesi) açılır menüsünü kullanarak vaazı bir çalma listesine atarsınız. Aynı çalma listesine atanan tüm vaazlar gruplanır ve web sitenizde sırayla görüntülenir.
+[Vaaz ekleyip düzenlediğinizde](./managing-sermons.md), **Playlist** (Çalma Listesi) açılır menüsünü kullanarak vaazı bir çalma listesine atarsınız. Aynı çalma listesine atanan tüm vaazlar gruplanır ve web sitenizde sırayla görüntülenir.
 
 :::info
-Vaazları [Toplu İçe Aktarma](bulk-import) sırasında da çalma listelerine atayabilirsiniz. YouTube veya Vimeo'dan içe aktarırken, **Import** (İçe Aktar) düğmesine tıklamadan önce **Import Into Playlist** (Çalma Listesine İçe Aktar) açılır menüsünden bir çalma listesi seçin.
+Vaazları [Toplu İçe Aktarma](./bulk-import.md) sırasında da çalma listelerine atayabilirsiniz. YouTube veya Vimeo'dan içe aktarırken, **Import** (İçe Aktar) düğmesine tıklamadan önce **Import Into Playlist** (Çalma Listesine İçe Aktar) açılır menüsünden bir çalma listesi seçin.
 :::
 
 ## Çalma Listeleri Web Sitenizde Nasıl Görünür
@@ -55,5 +56,5 @@ Vaazları [Toplu İçe Aktarma](bulk-import) sırasında da çalma listelerine a
 
 ## Sonraki Adımlar
 
-- [Vaazları Yönetme](managing-sermons) -- Tek tek vaazları çalma listelerinize ekleyin
-- [Toplu İçe Aktarma](bulk-import) -- Birden fazla vaazı içe aktarın ve bunları çalma listelerine atayın
+- [Vaazları Yönetme](./managing-sermons.md) -- Tek tek vaazları çalma listelerinize ekleyin
+- [Toplu İçe Aktarma](./bulk-import.md) -- Birden fazla vaazı içe aktarın ve bunları çalma listelerine atayın

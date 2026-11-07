@@ -1,5 +1,6 @@
 ---
 title: "Afspelen volgens schema op de tv"
+description: "Een gekoppelde FreePlay-tv downloadt de komende week en speelt op tijd af, ook offline. Met infopaneel, knoppen en het vastzetten van een playlist."
 ---
 
 # Afspelen volgens schema op de tv
@@ -13,8 +14,8 @@ Zodra een tv aan een agenda is gekoppeld, voert FreePlay het voor je uit. Het do
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- [Koppel de tv aan een agenda](./pairing-a-screen)
-- [Plaats iets in de agenda](./scheduling-the-calendar), of stel een standaardlus in voor de groep van het scherm
+- [Koppel de tv aan een agenda](./pairing-a-screen.md)
+- [Plaats iets in de agenda](./scheduling-the-calendar.md), of stel een standaardlus in voor de groep van het scherm
 
 </div>
 
@@ -40,7 +41,7 @@ Het paneel heeft ook drie knoppen:
 
 - **Deze playlist vastzetten** - Houd de huidige inhoud in een lus en negeer de agenda. Selecteer **Playlist losmaken** om terug te gaan naar het schema
 - **Inhoud bladeren** - Verlaat de geplande speler om door je verbonden providers te bladeren
-- **Instellingen** - Open de FreePlay-instellingen, waar je [de koppeling met een agenda kunt opheffen of met een andere agenda kunt koppelen](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Instellingen** - Open de FreePlay-instellingen, waar je [de koppeling met een agenda kunt opheffen of met een andere agenda kunt koppelen](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 Om na het bladeren terug te gaan naar het schema, druk je op het scherm **Inhoudproviders** op **Terug** op de afstandsbediening, of open je **Instellingen**, selecteer je **Koppelen aan een agenda** en kies je **Terug naar schema**. Een gekoppelde tv keert ook terug naar de geplande speler wanneer FreePlay weer op de voorgrond komt, en hij opent altijd de geplande speler.
@@ -77,6 +78,6 @@ Je kunt de agenda van een scherm ook in een webbrowser afspelen. Open in FreePla
 
 ## Gerelateerde artikelen
 
-- **[De agenda plannen](./scheduling-the-calendar)** - Bepaal wat er speelt en wat er gebeurt als het eerder eindigt
-- **[Schermen en groepen beheren](./managing-screens)** - Controleer de downloads van elk scherm in FreePlay Admin
-- **[Inhoud afspelen](../content-providers/playing-content)** - Afspeelbediening wanneer je zelf inhoud afspeelt
+- **[De agenda plannen](./scheduling-the-calendar.md)** - Bepaal wat er speelt en wat er gebeurt als het eerder eindigt
+- **[Schermen en groepen beheren](./managing-screens.md)** - Controleer de downloads van elk scherm in FreePlay Admin
+- **[Inhoud afspelen](../content-providers/playing-content.md)** - Afspeelbediening wanneer je zelf inhoud afspeelt

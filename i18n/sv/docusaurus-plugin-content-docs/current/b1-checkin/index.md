@@ -1,5 +1,6 @@
 ---
 title: "Översikt över B1 Church Checkin"
+description: "Ställ in B1 Church Checkin-kioskappen på iPad- eller Android-surfplattor så att familjer kan checka in själva, tilldela barn till grupper och skriva ut etiketter och hämtningslappar."
 ---
 
 # Översikt över B1 Church Checkin
@@ -24,7 +25,7 @@ Placera en iPad eller Android-surfplatta i entrén eller välkomstområdet. Medl
 - **Granskning av hushåll** -- Se alla familjemedlemmar med foton och aktuella gruppindelningar på en gång.
 - **Gruppindelning** -- Tilldela varje familjemedlem till rätt klass eller grupp för den valda gudstjänsttiden.
 - **Gästincheckning** -- Lägg till en gäst i ditt hushåll på plats med för- och efternamn.
-- **QR-registrering av gäster** -- Visa en QR-kod som besökare kan skanna för att [registrera sig själva](../b1-church/checkin/guest-registration) i sin egen telefon innan de checkar in, eller låta dem trycka på **Registrera här** för att fylla i samma formulär på kiosken.
+- **QR-registrering av gäster** -- Visa en QR-kod som besökare kan skanna för att [registrera sig själva](../b1-church/checkin/guest-registration.md) i sin egen telefon innan de checkar in, eller låta dem trycka på **Registrera här** för att fylla i samma formulär på kiosken.
 - **Utskrift av etiketter** -- Skriv ut namnetiketter för barn och utlämningskvitton för föräldrar med unika säkerhetskoder.
 - **Stöd för nätverksskrivare** -- Hitta och konfigurera nätverksskrivare direkt från appen.
 - **Automatisk inloggning** -- Efter första inloggningen kommer appen ihåg dina uppgifter och går direkt till gudstjänstskärmen vid framtida starter.
@@ -33,8 +34,8 @@ Placera en iPad eller Android-surfplatta i entrén eller välkomstområdet. Medl
 
 ## Dokumentationsavsnitt
 
-- **[Kom igång](./getting-started/)** -- Installera appen, logga in och konfigurera din skrivare.
-- **[Incheckningsflöde](./check-in/)** -- Hela incheckningsflödet, från att välja gudstjänst till att skriva ut etiketter.
+- **[Kom igång](./getting-started/index.md)** -- Installera appen, logga in och konfigurera din skrivare.
+- **[Incheckningsflöde](./check-in/index.md)** -- Hela incheckningsflödet, från att välja gudstjänst till att skriva ut etiketter.
 
 :::tip
 B1 Church Checkin fungerar bäst på en 10-tumsplatta (iPad eller Android) monterad i liggande läge där familjer lätt når den. Hämta appen från [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) eller [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).

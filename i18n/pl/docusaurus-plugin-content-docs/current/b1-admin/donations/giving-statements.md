@@ -1,5 +1,6 @@
 ---
 title: "Wyciągi z darowizn"
+description: "Twórz roczne zestawienia darowizn dla wszystkich darczyńców w B1 Admin i pobieraj je jako CSV lub drukuj do wysyłki z sumami odliczalnymi od podatku."
 ---
 
 # Wyciągi z darowizn

@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "Referenz für @churchapps/apphelper im Packages-Workspace: Subpfad-Einstiegspunkte, nutzende Apps, lokale Entwicklung und Veröffentlichung."
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ Das Paket `@churchapps/apphelper` bietet gemeinsame React-Komponenten und Dienst
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Installieren Sie **Node.js** und **Git** -- siehe [Voraussetzungen](../setup/prerequisites)
+- Installieren Sie **Node.js** und **Git** -- siehe [Voraussetzungen](../setup/prerequisites.md)
 - Machen Sie sich mit dem Setup und dem Release-Fluss des [Packages-Arbeitsbereichs](./index.md) vertraut
 
 </div>
@@ -92,6 +93,6 @@ Entfernen oder benennen Sie keinen Export um, bis der Ersatz veröffentlicht ist
 
 ## Verwandte Artikel
 
-- **[Helpers](./helpers)** – Das Basis-Utility-Paket, das zusammen mit AppHelper verwendet wird
-- **[Web-Apps](../web-apps/)** – Die Webanwendungen, die dieses Paket verbrauchen
+- **[Helpers](./helpers.md)** – Das Basis-Utility-Paket, das zusammen mit AppHelper verwendet wird
+- **[Web-Apps](../web-apps/index.md)** – Die Webanwendungen, die dieses Paket verbrauchen
 - **[Shared Libraries Overview](./index.md)** – Arbeitsbereich-Setup, Release-Fluss und lokales Link-Workflow

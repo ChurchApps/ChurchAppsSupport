@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Articole de blog pentru site-ul tău în B1 Admin"
+sidebar_label: "Blog"
+description: "Creează, programează și publică articole de blog pe site-ul bisericii în B1 Admin, cu rezumate, categorii, etichete, imagini de antet și comentarii."
 ---
 
 # Blog
@@ -13,8 +15,8 @@ Pagina Blog vă permite să publicați știri, actualizări și devoționale pe 
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Finalizați [Configurarea inițială](initial-setup) pentru site-ul dumneavoastră
-- Adăugați un link de navigare către `/blog` din [Gestionarea paginilor](managing-pages) dacă doriți ca vizitatorii să vă găsească blogul din meniu
+- Finalizați [Configurarea inițială](./initial-setup.md) pentru site-ul dumneavoastră
+- Adăugați un link de navigare către `/blog` din [Gestionarea paginilor](./managing-pages.md) dacă doriți ca vizitatorii să vă găsească blogul din meniu
 
 </div>
 
@@ -31,7 +33,7 @@ Pagina Blog vă permite să publicați știri, actualizări și devoționale pe 
 3. Adăugați un **Rezumat** -- o scurtă descriere afișată în lista de postări, în meta descrieri și în fluxul RSS. Dacă îl lăsați gol, unul este generat automat din începutul conținutului postării.
 4. Scrieți corpul postării în editorul **Conținut**, folosind Markdown. Faceți clic pe **Previzualizare** pentru a vedea cum va arăta postarea formatată.
 5. Alegeți o **Categorie** (selectați una existentă sau scrieți una nouă) și, opțional, **Etichete** separate prin virgulă.
-6. Faceți clic pe **Selectați imaginea** pentru a alege o fotografie din galeria dumneavoastră de [Fișiere](files) sau încărcați una nouă. Fotografiile încărcate se deschid într-un instrument integrat de decupare, blocat la raportul 16:9, astfel încât să puteți încadra orice fotografie pentru a se potrivi antetului postării și cardurilor din listă.
+6. Faceți clic pe **Selectați imaginea** pentru a alege o fotografie din galeria dumneavoastră de [Fișiere](./files.md) sau încărcați una nouă. Fotografiile încărcate se deschid într-un instrument integrat de decupare, blocat la raportul 16:9, astfel încât să puteți încadra orice fotografie pentru a se potrivi antetului postării și cardurilor din listă.
 7. Setați **Autorul** -- implicit este dumneavoastră, dar puteți căuta și selecta orice persoană din baza de date.
 8. Activați **Publicat** și setați o **Data publicării** atunci când sunteți gata să faceți postarea publică. Lăsați-l dezactivat pentru a salva postarea ca ciornă.
 
@@ -58,7 +60,7 @@ Fiecare postare din listă afișează una dintre cele trei stări:
 Postările publicate apar la `{yoursite}/blog`, câte 10 pe pagină, cu linkurile **Older**/**Newer** pentru a parcurge arhiva, împreună cu un filtru după categorie și cu semnătura și fotografia fiecărei postări. Etichetele se afișează și ele ca cipuri pe care se poate face clic, permițând vizitatorilor să filtreze lista după etichetă în același mod. Postările individuale se află la `{yoursite}/blog/{slug}` și includ postări conexe din aceeași categorie. Pagina blogului publică și un flux RSS, detectabil automat de cititoarele de fluxuri și de instrumentele de automatizare precum Zapier.
 
 :::info
-Postările de blog reprezintă un tip de conținut separat de paginile obișnuite ale site-ului -- ele nu se creează în [editorul de pagini](page-editor) și nu apar în lista Pagini. Acest lucru face ca redactarea blogului să fie rapidă și concentrată pe scriere.
+Postările de blog reprezintă un tip de conținut separat de paginile obișnuite ale site-ului -- ele nu se creează în [editorul de pagini](./page-editor.md) și nu apar în lista Pagini. Acest lucru face ca redactarea blogului să fie rapidă și concentrată pe scriere.
 :::
 
 ## Adăugarea comentariilor sub postări
@@ -77,6 +79,6 @@ Goliți caseta și faceți clic pe **Save** pentru a elimina codul din fiecare p
 
 ## Pașii următori
 
-- [Gestionarea paginilor](managing-pages) -- Adăugați un link de navigare către blogul dumneavoastră
-- [Fișiere](files) -- Încărcați fotografii pentru a le folosi în postările dumneavoastră
+- [Gestionarea paginilor](./managing-pages.md) -- Adăugați un link de navigare către blogul dumneavoastră
+- [Fișiere](./files.md) -- Încărcați fotografii pentru a le folosi în postările dumneavoastră
 - [Integrarea Zapier](../integrations/zapier.md) -- Declanșați automatizări atunci când sunt publicate postări noi

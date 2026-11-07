@@ -1,5 +1,7 @@
 ---
-title: "Kázne"
+title: "Sledovanie kázní v B1 Mobile"
+sidebar_label: "Kázne"
+description: "Prehliadajte, vyhľadávajte a sledujte nahraté kázne a série v aplikácii B1 Mobile vrátane toho, ako zachytiť odpočítavanie živého prenosu."
 ---
 
 # Kázne
@@ -13,7 +15,7 @@ Obrazovka Kázne vám umožňuje prezerať si a sledovať nahrané kázne z vá�
 <div class="prereqs">
 <h4>Skôr než začnete</h4>
 
-- [Nainštalujte aplikáciu B1 Mobile](../getting-started/installing) a [sa prihláste](../getting-started/logging-in) do svojho účtu
+- [Nainštalujte aplikáciu B1 Mobile](../getting-started/installing.md) a [sa prihláste](../getting-started/logging-in.md) do svojho účtu
 - Váš zbor musí mať v administračnom portáli nastavený obsah kázní
 
 </div>
@@ -29,7 +31,7 @@ V hornej časti obrazovky sa najnovšia kázeň zobrazuje ako zvýraznená karta
 
 ## Odpočítavanie živého prenosu
 
-Ak sa [živý prenos](./live-streaming) začína v priebehu nasledujúcich 24 hodín, na obrazovke Kázne sa zobrazí odpočítavací časovač. Vďaka nemu viete, kedy sa bude vysielať najbližšia bohoslužba, a môžete si naplánovať, že ju budete sledovať naživo.
+Ak sa [živý prenos](./live-streaming.md) začína v priebehu nasledujúcich 24 hodín, na obrazovke Kázne sa zobrazí odpočítavací časovač. Vďaka nemu viete, kedy sa bude vysielať najbližšia bohoslužba, a môžete si naplánovať, že ju budete sledovať naživo.
 
 ## Sledovanie kázne
 
@@ -51,7 +53,7 @@ Každý záznam kázne môže zobrazovať:
 - **Miniatúra** -- Náhľadový obrázok kázne
 
 :::tip
-Ak na obrazovke Kázne vidíte odpočítavanie, ťuknutím na neho sa po jeho začiatku okamžite presuniete na [živý prenos](./live-streaming).
+Ak na obrazovke Kázne vidíte odpočítavanie, ťuknutím na neho sa po jeho začiatku okamžite presuniete na [živý prenos](./live-streaming.md).
 :::
 
 ## Dostupnosť

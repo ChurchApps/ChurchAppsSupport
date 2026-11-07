@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "Installera B1 Admin lokalt: klona React/Vite-instrumentpanelen, ställ in API-slutpunkter i .env och starta utvecklingsservern för kyrkoadministration."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin är administrationspanelen för kyrkan -- en React-ensidesapplikation by
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Installera **Node.js 22+** och **Git** -- se [Förutsättningar](../setup/prerequisites)
-- Konfigurera ditt API-mål (demo eller lokalt) -- se [Miljövariabler](../setup/environment-variables)
+- Installera **Node.js 22+** och **Git** -- se [Förutsättningar](../setup/prerequisites.md)
+- Konfigurera ditt API-mål (demo eller lokalt) -- se [Miljövariabler](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Produktionsbyggen driftsätts till **S3 + CloudFront**:
 3. En CloudFront-invalidering startas så att den nya versionen levereras
 
 :::tip
-För detaljerade driftsättningsinstruktioner, se guiden [Driftsättning av webbappen](../deployment/web-apps).
+För detaljerade driftsättningsinstruktioner, se guiden [Driftsättning av webbappen](../deployment/web-apps.md).
 :::

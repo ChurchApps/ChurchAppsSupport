@@ -1,5 +1,6 @@
 ---
 title: "Formulär"
+description: "Hitta, filtrera, redigera, arkivera och återställa egna formulär i B1 Admin, samt var du anger formulärmedlemmar och granskar inlämningar."
 ---
 
 # Formulär

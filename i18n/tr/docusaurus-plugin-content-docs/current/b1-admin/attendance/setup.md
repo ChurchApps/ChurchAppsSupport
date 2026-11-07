@@ -1,5 +1,6 @@
 ---
 title: "Yoklama Kurulumu"
+description: "B1 Admin'de kampüsleri, hizmetleri, ibadet saatlerini ve grup atamalarını kurun; böylece katılım takibi ve check-in planları kilisenizin tamamında çalışsın."
 ---
 
 # Yoklama Kurulumu

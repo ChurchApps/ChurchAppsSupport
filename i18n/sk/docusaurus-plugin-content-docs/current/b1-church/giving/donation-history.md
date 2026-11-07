@@ -1,5 +1,7 @@
 ---
-title: "História darov"
+title: "História darov a výpisy v B1.church"
+sidebar_label: "História darov"
+description: "Prezerajte si minulé dary, filtrujte podľa roka a tlačte výpisy darov na daňové účely na stránke Dary v členskom portáli B1.church."
 ---
 
 # História darov

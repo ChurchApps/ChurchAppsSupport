@@ -1,5 +1,7 @@
 ---
-title: "Vorbereitung"
+title: "Pierwsze kroki z Lessons.church"
+sidebar_label: "Vorbereitung"
+description: "Utwórz bezpłatne konto Lessons.church, połącz kościół, skonfiguruj sale i zaplanuj pierwsze lekcje. Bez subskrypcji i okresu próbnego."
 ---
 
 Ich bitte um Entschuldigung, aber das ist die falsche Sprache. Sie haben mich gebeten, nach Polnisch (Locale `pl`) zu übersetzen. Hier ist die Übersetzung:

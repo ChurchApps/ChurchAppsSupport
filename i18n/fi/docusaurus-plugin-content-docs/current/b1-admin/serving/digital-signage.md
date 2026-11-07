@@ -1,5 +1,6 @@
 ---
 title: "Digitaalinen opastus"
+description: "Lähetä oppitunnin sisältö aulan tai käytävän TV:lle B1 Adminin digitaalisen kyltin syötteellä tai käytä FreePlay TV:tä."
 ---
 
 # Digitaalinen opastus
@@ -14,7 +15,7 @@ Lähetä lukusisältösi aulan tai käytävän televisioon digitaalisen opastuks
 <h4>Ennen aloittamista</h4>
 
 - Luo [suunnitelmatyyppi](./plans.md) ja ajoita sille [Lessons.church](../../b1-church/content/lessons.md):n tai muu lukusisältö
-- Varmista, että sinulla on [SignPresenter](https://www.signpresenter.com)-tili ja laite, jolla se näytetään, tai televisio, jossa on [FreePlay](../../freeplay/)
+- Varmista, että sinulla on [SignPresenter](https://www.signpresenter.com)-tili ja laite, jolla se näytetään, tai televisio, jossa on [FreePlay](../../freeplay/index.md)
 
 </div>
 
@@ -36,14 +37,14 @@ Vaiheittaiset asetusohjeet SignPresenterissä löydät [SignPresenterin Lessons.
 
 ## FreePlay-televisioiden käyttäminen sen sijaan
 
-Jos näytöilläsi on [FreePlay](../../freeplay/), et tarvitse syötteen URL-osoitetta. **Digitaalisen opastuksen syöte** -valintaikkuna sisältää linkin osoitteeseen **admin.freeplay.church/calendar**, josta voit ajoittaa tämän suunnitelmatyypin FreePlay-televisioillesi:
+Jos näytöilläsi on [FreePlay](../../freeplay/index.md), et tarvitse syötteen URL-osoitetta. **Digitaalisen opastuksen syöte** -valintaikkuna sisältää linkin osoitteeseen **admin.freeplay.church/calendar**, josta voit ajoittaa tämän suunnitelmatyypin FreePlay-televisioillesi:
 
 1. Napsauta valintaikkunan linkkiä **admin.freeplay.church/calendar**. FreePlay Admin käyttää samaa kirjautumista kuin B1 Admin.
 2. Valitse televisioittesi näyttöryhmä ja napsauta **Lisää aikataulu**.
 3. Valitse kohdassa **Toisto** **Palvelusuunnitelmat**-kohdasta suunnitelmatyyppisi. Se on merkitty **(nykyinen suunnitelma)**.
 4. Aseta päivät ja kellonajat ja napsauta sitten **Tallenna**.
 
-Televisiot toistavat viikoittain sen suunnitelman, joka on kyseiselle suunnitelmatyypille nykyinen, valitsemissasi ajoissa. Tämä toimii myös Go Curriculum -oppitunneilla, mukaan lukien mukautetut suunnitelmat. FreePlay kirjautuu sisään Go Curriculum -tilillä, joka on linkitetty seurakunnan palvelutehtävään kohdassa **Sisällöntarjoajat** (katso [Oppituntien ajoittaminen](./scheduling-lessons.md)), tai seurakunnan Go Curriculum -yhteydellä, jos palvelutehtävällä ei ole omaa. Katso kaikki vaihtoehdot kohdasta [Kalenterin ajoittaminen](../../freeplay/scheduled-mode/scheduling-the-calendar) ja lisää televisio kohdasta [Näytön yhdistäminen](../../freeplay/scheduled-mode/pairing-a-screen).
+Televisiot toistavat viikoittain sen suunnitelman, joka on kyseiselle suunnitelmatyypille nykyinen, valitsemissasi ajoissa. Tämä toimii myös Go Curriculum -oppitunneilla, mukaan lukien mukautetut suunnitelmat. FreePlay kirjautuu sisään Go Curriculum -tilillä, joka on linkitetty seurakunnan palvelutehtävään kohdassa **Sisällöntarjoajat** (katso [Oppituntien ajoittaminen](./scheduling-lessons.md)), tai seurakunnan Go Curriculum -yhteydellä, jos palvelutehtävällä ei ole omaa. Katso kaikki vaihtoehdot kohdasta [Kalenterin ajoittaminen](../../freeplay/scheduled-mode/scheduling-the-calendar.md) ja lisää televisio kohdasta [Näytön yhdistäminen](../../freeplay/scheduled-mode/pairing-a-screen.md).
 
 :::note
 Syötteen URL-osoite ei sisällä Go Curriculum -mediaa, koska se sisältö vaatii seurakuntasi Go Curriculum -kirjautumisen. Jos haluat näyttää Go Curriculum -oppitunnin aulan tai luokan televisiossa, käytä FreePlayta.
@@ -53,4 +54,4 @@ Syötteen URL-osoite ei sisällä Go Curriculum -mediaa, koska se sisältö vaat
 
 - Hallitse opastusnäyttöä syöttävät suunnitelmat [Suunnitelmat](./plans.md) -sivulla
 - Ajoita sisältö [Lessons.church](./scheduling-lessons.md):n avulla
-- Aseta FreePlay-televisiot kalenteriin [Ajoitetussa tilassa](../../freeplay/scheduled-mode/)
+- Aseta FreePlay-televisiot kalenteriin [Ajoitetussa tilassa](../../freeplay/scheduled-mode/index.md)

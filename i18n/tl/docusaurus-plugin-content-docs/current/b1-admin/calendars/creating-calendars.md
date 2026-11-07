@@ -1,5 +1,6 @@
 ---
 title: "Paggawa ng Calendar"
+description: "Gumawa ng calendar sa B1 Admin, ikonekta ang mga grupo o mag-import ng .ics file, at pamahalaan ang mga event, registration, at tala mula sa iisang lugar."
 ---
 
 # Paggawa ng Calendar
@@ -61,7 +62,7 @@ Ang pagkonekta ng mga grupo sa iyong calendar ay makapangyarihang paraan para aw
 :::
 
 :::info
-Kung gusto mong gumawa ng iisang calendar na kumukuha ng mga event mula sa maraming grupo sa buong simbahan, tingnan ang [Curated Calendar](curated-calendar) para sa mas simpleng paraan.
+Kung gusto mong gumawa ng iisang calendar na kumukuha ng mga event mula sa maraming grupo sa buong simbahan, tingnan ang [Curated Calendar](./curated-calendar.md) para sa mas simpleng paraan.
 :::
 
 ## Pagdaragdag at Pag-edit ng Mga Event {#adding-and-editing-events}
@@ -75,7 +76,7 @@ I-click ang **New Event** sa calendar detail page para magdagdag ng event, o i-c
 - **Start** at **End**, **Repeats**, at **Visibility** (**Public** o **Private**).
 - **Tags** -- Mga label na pinaghihiwalay ng kuwit, gaya ng `youth, students`. Maaaring itakda ang Calendar element sa iyong website na magpakita lang ng mga event na may partikular na tag. Ito ang parehong field na **Tags** na makikita sa mga setting ng registration ng event.
 - **Who can view notes** at **Who can post notes** -- Sino ang makakabasa at makakadagdag sa mga note ng event (tingnan ang [Event Notes](#event-notes)). Piliin ang **Staff only** (ang default), **Group leaders** (mga leader ng grupo ng event), o **Group members** (lahat ng nasa grupo ng event, kasama ang mga leader nito).
-- **Rooms** at **Resources** -- Magreserba ng espasyo at kagamitan para sa event. Tingnan ang [Rooms, Resources & Scheduling](rooms-resources).
+- **Rooms** at **Resources** -- Magreserba ng espasyo at kagamitan para sa event. Tingnan ang [Rooms, Resources & Scheduling](./rooms-resources.md).
 
 I-click ang **Save**. Kung umuulit ang event, hihingi ng kumpirmasyon ang B1, dahil ina-update ng pag-save ang bawat pag-ulit sa serye.
 
@@ -101,12 +102,12 @@ Maaari mong i-enable ang registration para sa anumang event sa calendar para mak
    - **Registration Closes** -- Ang petsa at oras kung kailan magsasara ang registration.
    - **Tags** -- Mga label na pinaghihiwalay ng kuwit (halimbawa, "youth, retreat, vbs") para matulungan ang pagkakategorya ng mga event na maaaring i-register.
    - **Registration Questions** -- Opsyonal na maglakip ng [form](../forms/creating-forms.md) para masagot ng mga magpaparehistro ang karagdagang tanong (dietary restrictions, laki ng T-shirt, emergency contact, atbp.) bilang bahagi ng pagpapatala. Piliin ang **None** para lumaktaw sa mga tanong.
-   - **Enable Waitlist** -- Kapag napuno na ang event, papayagan ang mga karagdagang magpaparehistro na sumali sa waitlist sa halip na tanggihan. Tingnan ang [Paid Registrations](paid-registrations#waitlist).
+   - **Enable Waitlist** -- Kapag napuno na ang event, papayagan ang mga karagdagang magpaparehistro na sumali sa waitlist sa halip na tanggihan. Tingnan ang [Paid Registrations](./paid-registrations.md#waitlist).
 4. I-save ang event.
 
-Para sa mga bayad na event, sa parehong settings page maaari mong tukuyin ang mga **Attendee Types** na may presyo, opsyonal na **Selections** (mga add-on), at **Discount Codes**, kung saan kokolektahin ang bayad sa pamamagitan ng giving provider ng iyong simbahan. Tingnan ang [Paid Registrations](paid-registrations) para sa kumpletong gabay.
+Para sa mga bayad na event, sa parehong settings page maaari mong tukuyin ang mga **Attendee Types** na may presyo, opsyonal na **Selections** (mga add-on), at **Discount Codes**, kung saan kokolektahin ang bayad sa pamamagitan ng giving provider ng iyong simbahan. Tingnan ang [Paid Registrations](./paid-registrations.md) para sa kumpletong gabay.
 
-Kapag na-enable na ang registration, makikita ng mga miyembro ang butones na **Register for this Event** kapag tiningnan nila ang event sa [B1 website](../../b1-church/events/registering) o [B1 Mobile app](../../b1-mobile/events/registering). Kung may nakalakip kang form, makikita ng mga magpaparehistro ang hakbang na **Questions** habang nagpaparehistro, at ise-save ang kanilang mga sagot kasama ng kanilang registration.
+Kapag na-enable na ang registration, makikita ng mga miyembro ang butones na **Register for this Event** kapag tiningnan nila ang event sa [B1 website](../../b1-church/events/registering.md) o [B1 Mobile app](../../b1-mobile/events/registering.md). Kung may nakalakip kang form, makikita ng mga magpaparehistro ang hakbang na **Questions** habang nagpaparehistro, at ise-save ang kanilang mga sagot kasama ng kanilang registration.
 
 :::info
 Ang Registration Questions ay gumagana lang sa mga form na **hindi** minarkahang Restricted. Awtomatikong nilalaktawan ang restricted na form habang nagpaparehistro sa halip na ipakita, kaya gumamit ng unrestricted na form kapag maglalakip ng mga tanong sa isang event.
@@ -126,7 +127,7 @@ Para tingnan at pamahalaan ang mga registration para sa iyong mga event:
    - **Promote** ang mga waitlisted na registration kapag may bakanteng puwesto
    - **Export CSV** -- I-download ang lahat ng registration, kasama ang attendee types, selections, halaga ng bayad, at mga sagot sa tanong
 
-Kung may nakalakip na Registration Questions ang event, nagpapakita rin ang detail page ng filter na **Unanswered questions only** para mabilis na mahanap ang mga magpaparehistrong hindi pa nagsusumite ng sagot, at butones na **View Answers** sa bawat naisagot na registration para makita ang kanilang mga tugon. Ang mga bayad na event ay nagdaragdag ng column na **Type**, column na **Paid / Total**, bilang bawat uri, at dialog ng detalye ng bayad -- tingnan ang [Paid Registrations](paid-registrations#the-registration-roster).
+Kung may nakalakip na Registration Questions ang event, nagpapakita rin ang detail page ng filter na **Unanswered questions only** para mabilis na mahanap ang mga magpaparehistrong hindi pa nagsusumite ng sagot, at butones na **View Answers** sa bawat naisagot na registration para makita ang kanilang mga tugon. Ang mga bayad na event ay nagdaragdag ng column na **Type**, column na **Paid / Total**, bilang bawat uri, at dialog ng detalye ng bayad -- tingnan ang [Paid Registrations](./paid-registrations.md#the-registration-roster).
 
 :::tip
 Gamitin ang progress bar ng capacity para subaybayan kung gaano kabilis napupuno ang mga event. Nagiging pula ang bar kapag nasa o lampas na sa capacity ang event.
@@ -134,7 +135,7 @@ Gamitin ang progress bar ng capacity para subaybayan kung gaano kabilis napupuno
 
 ## Mga Susunod na Hakbang
 
-- [Curated Calendar](curated-calendar) -- Gumawa ng calendar na kumukuha mula sa maraming grupo
-- [Paid Registrations](paid-registrations) -- Attendee types, add-on selections, discount codes, bayad, at waitlist
-- [Event Registration Guide](../guides/event-registration) -- Hakbang-hakbang na gabay sa pag-set up ng event registration
-- [Calendars Overview](./) -- Bumalik sa pangkalahatang-tanaw ng calendars
+- [Curated Calendar](./curated-calendar.md) -- Gumawa ng calendar na kumukuha mula sa maraming grupo
+- [Paid Registrations](./paid-registrations.md) -- Attendee types, add-on selections, discount codes, bayad, at waitlist
+- [Event Registration Guide](../guides/event-registration.md) -- Hakbang-hakbang na gabay sa pag-set up ng event registration
+- [Calendars Overview](./index.md) -- Bumalik sa pangkalahatang-tanaw ng calendars

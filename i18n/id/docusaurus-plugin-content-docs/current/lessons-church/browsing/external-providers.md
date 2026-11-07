@@ -1,5 +1,6 @@
 ---
 title: "Penyedia Eksternal"
+description: "Pelajari cara penyedia kurikulum pihak ketiga menambahkan konten mereka ke Lessons.church dengan Open Lesson Format, dan cara menghubungkan satu dari portal."
 ---
 
 # Penyedia Eksternal

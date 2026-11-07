@@ -1,5 +1,6 @@
 ---
 title: "Profilmódosítások jóváhagyása"
+description: "Tagok profilmódosítási kérelmeinek áttekintése és jóváhagyása a B1 Admin-ban, valamint a Directory Approval Group beállítása, amely ezeket fogadja."
 ---
 
 # Profilmódosítások jóváhagyása

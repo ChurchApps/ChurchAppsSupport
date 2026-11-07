@@ -1,5 +1,6 @@
 ---
 title: "デバイスの管理"
+description: "B1 Admin のアカウントに接続された ChurchAppsPlayer と FreePlay の画面をペアリング、ラベル付け、削除します。教会のディスプレイを最新かつ安全に保ちます。"
 ---
 
 # デバイスの管理

@@ -1,5 +1,6 @@
 ---
 title: "Créer des calendriers"
+description: "Créez un calendrier dans B1 Admin, reliez des groupes ou importez des fichiers .ics, et gérez ses événements, inscriptions et notes depuis un seul endroit."
 ---
 
 # Créer des calendriers
@@ -61,7 +62,7 @@ Relier des groupes à votre calendrier est un excellent moyen de regrouper autom
 :::
 
 :::info
-Si vous voulez créer un seul calendrier qui reprend les événements de nombreux groupes de votre église, consultez [Calendrier organisé](curated-calendar) pour une méthode simplifiée.
+Si vous voulez créer un seul calendrier qui reprend les événements de nombreux groupes de votre église, consultez [Calendrier organisé](./curated-calendar.md) pour une méthode simplifiée.
 :::
 
 ## Ajouter et modifier des événements {#adding-and-editing-events}
@@ -75,7 +76,7 @@ Cliquez sur **Nouvel événement** sur la page de détail du calendrier pour ajo
 - **Début** et **Fin**, **Répétition** et **Visibilité** (**Public** ou **Privé**).
 - **Étiquettes** -- Libellés séparés par des virgules, comme `jeunes, étudiants`. Un élément Calendrier de votre site web peut être configuré pour n'afficher que les événements portant une certaine étiquette. Il s'agit du même champ **Étiquettes** que celui des paramètres d'inscription de l'événement.
 - **Qui peut voir les notes** et **Qui peut publier des notes** -- Qui peut lire et ajouter des notes à l'événement (voir [Notes d'événement](#event-notes)). Choisissez **Personnel seulement** (par défaut), **Responsables de groupe** (responsables du groupe de l'événement) ou **Membres du groupe** (toutes les personnes du groupe de l'événement, y compris ses responsables).
-- **Salles** et **Ressources** -- Réservez l'espace et l'équipement nécessaires à l'événement. Voir [Salles, ressources et planification](rooms-resources).
+- **Salles** et **Ressources** -- Réservez l'espace et l'équipement nécessaires à l'événement. Voir [Salles, ressources et planification](./rooms-resources.md).
 
 Cliquez sur **Enregistrer**. Si l'événement se répète, B1 vous demande de confirmer, car l'enregistrement met à jour chaque occurrence de la série.
 
@@ -101,12 +102,12 @@ Vous pouvez activer l'inscription pour n'importe quel événement de calendrier 
    - **Fermeture des inscriptions** -- La date et l'heure où les inscriptions se terminent.
    - **Étiquettes** -- Libellés séparés par des virgules (par exemple « jeunes, retraite, VBS ») pour classer les événements auxquels on peut s'inscrire.
    - **Questions d'inscription** -- Vous pouvez facultativement joindre un [formulaire](../forms/creating-forms.md) pour que les inscrits répondent à des questions supplémentaires (restrictions alimentaires, taille de t-shirt, contact d'urgence, etc.) lors de leur inscription. Choisissez **Aucun** pour ne pas poser de questions.
-   - **Activer la liste d'attente** -- Lorsque l'événement se remplit, permet aux inscrits supplémentaires de rejoindre une liste d'attente au lieu d'être refusés. Voir [Inscriptions payantes](paid-registrations#waitlist).
+   - **Activer la liste d'attente** -- Lorsque l'événement se remplit, permet aux inscrits supplémentaires de rejoindre une liste d'attente au lieu d'être refusés. Voir [Inscriptions payantes](./paid-registrations.md#waitlist).
 4. Enregistrez l'événement.
 
-Pour les événements payants, la même page de paramètres vous permet de définir des **types de participants** avec prix, des **options** facultatives (suppléments) et des **codes de réduction**, avec un paiement encaissé via le fournisseur de dons de votre église. Consultez [Inscriptions payantes](paid-registrations) pour le guide complet.
+Pour les événements payants, la même page de paramètres vous permet de définir des **types de participants** avec prix, des **options** facultatives (suppléments) et des **codes de réduction**, avec un paiement encaissé via le fournisseur de dons de votre église. Consultez [Inscriptions payantes](./paid-registrations.md) pour le guide complet.
 
-Une fois l'inscription activée, les membres verront un bouton **S'inscrire à cet événement** lorsqu'ils consulteront l'événement sur le [site web B1](../../b1-church/events/registering) ou l'[application mobile B1](../../b1-mobile/events/registering). Si vous avez joint un formulaire, les inscrits voient une étape **Questions** pendant l'inscription, et leurs réponses sont enregistrées avec leur inscription.
+Une fois l'inscription activée, les membres verront un bouton **S'inscrire à cet événement** lorsqu'ils consulteront l'événement sur le [site web B1](../../b1-church/events/registering.md) ou l'[application mobile B1](../../b1-mobile/events/registering.md). Si vous avez joint un formulaire, les inscrits voient une étape **Questions** pendant l'inscription, et leurs réponses sont enregistrées avec leur inscription.
 
 :::info
 Les questions d'inscription ne fonctionnent qu'avec les formulaires qui **ne** sont **pas** marqués comme Restreints. Un formulaire restreint est automatiquement ignoré lors de l'inscription au lieu d'être affiché ; utilisez donc un formulaire non restreint lorsque vous joignez des questions à un événement.
@@ -126,7 +127,7 @@ Pour consulter et gérer les inscriptions à vos événements :
    - **Promouvoir** des inscriptions en liste d'attente lorsqu'une place se libère
    - **Exporter en CSV** -- Télécharger toutes les inscriptions, y compris les types de participants, les options, les montants payés et les réponses aux questions
 
-Si l'événement comporte des questions d'inscription, la page de détail affiche aussi un filtre **Questions sans réponse seulement** pour trouver rapidement les inscrits qui n'ont pas encore répondu, ainsi qu'un bouton **Voir les réponses** sur chaque inscription répondue pour consulter leurs réponses. Les événements payants ajoutent une colonne **Type**, une colonne **Payé / Total**, des compteurs par type et une boîte de dialogue de détail des paiements -- voir [Inscriptions payantes](paid-registrations#the-registration-roster).
+Si l'événement comporte des questions d'inscription, la page de détail affiche aussi un filtre **Questions sans réponse seulement** pour trouver rapidement les inscrits qui n'ont pas encore répondu, ainsi qu'un bouton **Voir les réponses** sur chaque inscription répondue pour consulter leurs réponses. Les événements payants ajoutent une colonne **Type**, une colonne **Payé / Total**, des compteurs par type et une boîte de dialogue de détail des paiements -- voir [Inscriptions payantes](./paid-registrations.md#the-registration-roster).
 
 :::tip
 Utilisez la barre de progression de la capacité pour suivre la vitesse de remplissage des événements. La barre devient rouge lorsqu'un événement atteint ou dépasse sa capacité.
@@ -134,7 +135,7 @@ Utilisez la barre de progression de la capacité pour suivre la vitesse de rempl
 
 ## Et ensuite
 
-- [Calendrier organisé](curated-calendar) -- Créer un calendrier qui puise dans plusieurs groupes
-- [Inscriptions payantes](paid-registrations) -- Types de participants, options supplémentaires, codes de réduction, paiements et listes d'attente
-- [Guide d'inscription aux événements](../guides/event-registration) -- Guide étape par étape pour configurer l'inscription aux événements
-- [Vue d'ensemble des calendriers](./) -- Retour à la vue d'ensemble des calendriers
+- [Calendrier organisé](./curated-calendar.md) -- Créer un calendrier qui puise dans plusieurs groupes
+- [Inscriptions payantes](./paid-registrations.md) -- Types de participants, options supplémentaires, codes de réduction, paiements et listes d'attente
+- [Guide d'inscription aux événements](../guides/event-registration.md) -- Guide étape par étape pour configurer l'inscription aux événements
+- [Vue d'ensemble des calendriers](./index.md) -- Retour à la vue d'ensemble des calendriers

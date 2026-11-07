@@ -1,12 +1,13 @@
 ---
 title: "Pendaftaran Acara"
+description: "Cara pendaftaran acara bekerja di B1 Admin dan B1App: jenis peserta, add-on berbayar, kode diskon, pembayaran lewat gateway, dan promosi daftar tunggu."
 ---
 
 # Pendaftaran Acara
 
 <div class="article-intro">
 
-Pendaftaran acara native berada di modul content dan, sejak gelombang paid-registrations, memiliki model komersial yang lengkap: jenis peserta dengan harga, pilihan tambahan berbayar, kode diskon, pembayaran melalui gateway giving yang sudah dimiliki gereja, serta daftar tunggu berbasis status. Jalur uang sengaja menggunakan kembali tumpukan giving. Controller pendaftaran melakukan penagihan melalui abstraksi yang sama, yaitu `GatewayService` / `IGatewayProvider`, yang didokumentasikan di [Persembahan](./giving). Dengan begitu, tidak ada data kartu atau pengetahuan SDK gateway di dalam modul content. Halaman ini memetakan model data, aturan harga dan kapasitas, serta alur pendaftaran, pembayaran, dan daftar tunggu.
+Pendaftaran acara native berada di modul content dan, sejak gelombang paid-registrations, memiliki model komersial yang lengkap: jenis peserta dengan harga, pilihan tambahan berbayar, kode diskon, pembayaran melalui gateway giving yang sudah dimiliki gereja, serta daftar tunggu berbasis status. Jalur uang sengaja menggunakan kembali tumpukan giving. Controller pendaftaran melakukan penagihan melalui abstraksi yang sama, yaitu `GatewayService` / `IGatewayProvider`, yang didokumentasikan di [Persembahan](./giving.md). Dengan begitu, tidak ada data kartu atau pengetahuan SDK gateway di dalam modul content. Halaman ini memetakan model data, aturan harga dan kapasitas, serta alur pendaftaran, pembayaran, dan daftar tunggu.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Tokenisasi terjadi di browser, sama persis seperti untuk donasi (lihat [Persembahan](./giving)). Wizard menggunakan ulang registri provider pembayaran apphelper, sehingga anggota yang sudah login dapat membayar dengan kartu tersimpan, dan tamu men-tokenisasi kartu baru. Controller mengikuti keunikan provider dari `DonateController` (id metode pembayaran `pm-{id}` dari Kingdom Funding, serta respons `requires_action` dari SCA Stripe yang dikembalikan ke klien tanpa mencatat pembayaran). Penagihan yang berhasil menulis baris `registrationPayments`, menambah `amountPaid`, dan mengonfirmasi pendaftaran. **Pengembalian dana belum diimplementasikan.** Pendaftaran berbayar yang dibatalkan tetap menyimpan baris pembayarannya, dan pengembalian dana ditangani di luar sistem melalui dasbor gateway.
+Tokenisasi terjadi di browser, sama persis seperti untuk donasi (lihat [Persembahan](./giving.md)). Wizard menggunakan ulang registri provider pembayaran apphelper, sehingga anggota yang sudah login dapat membayar dengan kartu tersimpan, dan tamu men-tokenisasi kartu baru. Controller mengikuti keunikan provider dari `DonateController` (id metode pembayaran `pm-{id}` dari Kingdom Funding, serta respons `requires_action` dari SCA Stripe yang dikembalikan ke klien tanpa mencatat pembayaran). Penagihan yang berhasil menulis baris `registrationPayments`, menambah `amountPaid`, dan mengonfirmasi pendaftaran. **Pengembalian dana belum diimplementasikan.** Pendaftaran berbayar yang dibatalkan tetap menyimpan baris pembayarannya, dan pengembalian dana ditangani di luar sistem melalui dasbor gateway.
 
 Kedua titik masuk menggunakan jalur kode yang sama: `register` (bayar saat mendaftar) dan `pay` (pembayaran sisa tagihan atau penyelesaian daftar tunggu).
 
@@ -147,7 +148,7 @@ Pencarian lintas modul (menemukan atau membuat orang tamu, memuat gereja untuk e
 
 ## Halaman terkait
 
-- [Persembahan](./giving): abstraksi gateway, registri provider, dan model tokenisasi yang digunakan kembali oleh fitur ini
-- [Endpoint Content](../api/endpoints/content): permukaan REST modul content
-- [Webhook](../api/webhooks): event `registration.created`
-- [Struktur Modul](../api/module-structure): cara modul content diorganisasi di sisi server
+- [Persembahan](./giving.md): abstraksi gateway, registri provider, dan model tokenisasi yang digunakan kembali oleh fitur ini
+- [Endpoint Content](../api/endpoints/content.md): permukaan REST modul content
+- [Webhook](../api/webhooks.md): event `registration.created`
+- [Struktur Modul](../api/module-structure.md): cara modul content diorganisasi di sisi server

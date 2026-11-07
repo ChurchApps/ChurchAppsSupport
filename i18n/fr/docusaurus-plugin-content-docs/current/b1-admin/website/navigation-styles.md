@@ -1,5 +1,6 @@
 ---
 title: "Styles de navigation"
+description: "Personnalisez les couleurs des barres de navigation pleines et transparentes de votre site dans B1 Admin, y compris les états lien, survol et actif."
 ---
 
 # Styles de navigation

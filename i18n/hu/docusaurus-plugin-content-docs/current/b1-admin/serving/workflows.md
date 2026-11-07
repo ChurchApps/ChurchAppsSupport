@@ -1,5 +1,6 @@
 ---
 title: "Munkafolyamatok"
+description: "Kanban-stílusú táblák a B1 Adminban: emberek követése lépésről lépésre automatikus e-mailekkel, SMS-ekkel és indítókkal, amelyek automatikusan felveszik őket."
 ---
 
 # Munkafolyamatok

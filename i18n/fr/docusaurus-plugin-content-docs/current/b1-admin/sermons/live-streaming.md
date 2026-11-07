@@ -1,5 +1,7 @@
 ---
-title: "Diffusion en direct"
+title: "Horaires et configuration du direct dans B1 Admin"
+sidebar_label: "Diffusion en direct"
+description: "Planifiez des diffusions ponctuelles ou hebdomadaires, réglez le chat et l'avance vidéo, connectez YouTube et dépannez les intégrations dans B1 Admin."
 ---
 
 # Diffusion en direct
@@ -15,7 +17,7 @@ La page Heures de diffusion en direct vous permet de configurer le calendrier de
 
 - Vous avez besoin de l'autorisation **contentApi.streamingServices.edit**. Voir [Rôles et autorisations](../settings/roles-permissions.md) si vous n'y avez pas accès.
 - Ayez à portée de main l'identifiant de votre chaîne YouTube si vous prévoyez utiliser la diffusion en direct automatisée
-- Ajoutez au moins un [sermon](managing-sermons) ou une URL de diffusion permanente à utiliser comme source de votre flux
+- Ajoutez au moins un [sermon](./managing-sermons.md) ou une URL de diffusion permanente à utiliser comme source de votre flux
 
 </div>
 
@@ -76,13 +78,13 @@ Pour trouver l'identifiant de votre chaîne YouTube, allez dans les paramètres 
 
 ## Personnaliser les couleurs et le logo
 
-Votre page de diffusion en direct utilise les paramètres d'[apparence](../website/appearance) de votre site web :
+Votre page de diffusion en direct utilise les paramètres d'[apparence](../website/appearance.md) de votre site web :
 
 - La **couleur d'accent claire** avec un texte foncé est utilisée pour l'en-tête.
 - La **couleur d'accent foncée** avec un texte clair est utilisée pour la barre latérale.
 - Votre **logo pour fond clair** apparaît sur la page de diffusion. Utilisez une image au fond transparent et au ratio 4:1.
 
-Pour modifier ces éléments, allez dans **Site web**, puis **Apparence**, et mettez à jour vos paramètres de [palette de couleurs](../website/appearance#color-palette) et de [logo](../website/appearance#logo-and-branding).
+Pour modifier ces éléments, allez dans **Site web**, puis **Apparence**, et mettez à jour vos paramètres de [palette de couleurs](../website/appearance.md#color-palette) et de [logo](../website/appearance.md#logo-and-branding).
 
 ## Ajouter des animateurs de diffusion
 
@@ -129,5 +131,5 @@ L'intégration automatisée du flux en direct de la chaîne YouTube peut être b
 
 ## Et ensuite
 
-- [Gérer les sermons](managing-sermons) -- Ajouter des sermons à votre bibliothèque
-- [Listes de lecture](playlists) -- Organiser les sermons en séries
+- [Gérer les sermons](./managing-sermons.md) -- Ajouter des sermons à votre bibliothèque
+- [Listes de lecture](./playlists.md) -- Organiser les sermons en séries

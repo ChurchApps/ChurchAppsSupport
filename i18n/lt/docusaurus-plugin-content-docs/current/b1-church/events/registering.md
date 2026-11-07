@@ -1,5 +1,7 @@
 ---
-title: "Registracija į renginius"
+title: "Renginio registracija B1.church"
+sidebar_label: "Registracija į renginius"
+description: "Registruokitės į renginį B1.church: įveskite duomenis, pridėkite šeimos narius, pasirinkite parinktis, pritaikykite nuolaidos kodą ir mokėkite."
 ---
 
 # Registracija į renginius
@@ -79,14 +81,14 @@ Pasirodo patvirtinimo pranešimas su renginio informacija ir visų registruotųj
 
 ## Prisijungimas prie laukiamųjų sąrašo
 
-Jei renginys pilnas, o jūsų bažnyčia įjungė laukiamųjų sąrašą, pirmame žingsnyje rodoma: *„Šis renginys pilnas. Galite prisijungti prie laukiamųjų sąrašo, ir mes jus informuosime, jei atsiras laisva vieta.“* Užbaikite registraciją įprastai — kol esate laukiamųjų sąraše, mokėjimas praleidžiamas. Atsiradus laisvai vietai, gausite el. laišką; jei reikia sumokėti, jame bus nuoroda tai padaryti. Savo būseną ir mokėjimus galite patikrinti ir iš [Mano registracijos](./my-registrations).
+Jei renginys pilnas, o jūsų bažnyčia įjungė laukiamųjų sąrašą, pirmame žingsnyje rodoma: *„Šis renginys pilnas. Galite prisijungti prie laukiamųjų sąrašo, ir mes jus informuosime, jei atsiras laisva vieta.“* Užbaikite registraciją įprastai — kol esate laukiamųjų sąraše, mokėjimas praleidžiamas. Atsiradus laisvai vietai, gausite el. laišką; jei reikia sumokėti, jame bus nuoroda tai padaryti. Savo būseną ir mokėjimus galite patikrinti ir iš [Mano registracijos](./my-registrations.md).
 
 ## Registracijos keitimas ar atšaukimas
 
-Jei esate prisijungęs, galite patys redaguoti ar atšaukti savo registraciją puslapyje **Registracijos** nario portale — žr. [Mano registracijos](./my-registrations). Svečiai turėtų kreiptis į bažnyčios raštinę, o darbuotojai pakeitimus gali atlikti B1 Admin registracijų puslapyje.
+Jei esate prisijungęs, galite patys redaguoti ar atšaukti savo registraciją puslapyje **Registracijos** nario portale — žr. [Mano registracijos](./my-registrations.md). Svečiai turėtų kreiptis į bažnyčios raštinę, o darbuotojai pakeitimus gali atlikti B1 Admin registracijų puslapyje.
 
 ## Susiję straipsniai
 
 - [Renginių apžvalga](./index.md) -- Naršykite artimiausius renginius su registracija
-- [Mano registracijos](./my-registrations) -- Peržiūrėkite, redaguokite, mokėkite likučius ir atšaukite savo registracijas
-- [Aukų teikimas](../giving/making-donations) -- Aukokite kartu su dalyvavimu renginyje
+- [Mano registracijos](./my-registrations.md) -- Peržiūrėkite, redaguokite, mokėkite likučius ir atšaukite savo registracijas
+- [Aukų teikimas](../giving/making-donations.md) -- Aukokite kartu su dalyvavimu renginyje

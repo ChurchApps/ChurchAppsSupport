@@ -1,5 +1,7 @@
 ---
-title: "Planificowanie lekcji"
+title: "Planowanie lekcji z Lessons.church w B1 Admin"
+sidebar_label: "Planificowanie lekcji"
+description: "Połącz Lessons.church z B1 Admin, a następnie planuj lekcje, zbiorczo zaplanuj serię lub zastosuj plan roczny do planów nabożeństw służby."
 ---
 
 # Planowanie lekcji z Lessons.church

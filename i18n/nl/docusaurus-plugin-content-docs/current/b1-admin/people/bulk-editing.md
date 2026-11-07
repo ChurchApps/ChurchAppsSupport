@@ -1,5 +1,6 @@
 ---
 title: "Personen in bulk bewerken"
+description: "Werk in B1 Admin in één keer lidmaatschap, burgerlijke staat, geslacht, afmelding, eigen ja/nee-velden of groepslidmaatschap voor veel personen bij."
 ---
 
 # Personen in bulk bewerken

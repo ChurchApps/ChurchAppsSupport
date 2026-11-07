@@ -1,5 +1,6 @@
 ---
 title: "Domínio personalizado"
+description: "Aponte seu domínio próprio, como www.suaigreja.org, para o seu site B1 no B1 Admin configurando registros DNS e adicionando o domínio em Settings."
 ---
 
 # Domínio personalizado

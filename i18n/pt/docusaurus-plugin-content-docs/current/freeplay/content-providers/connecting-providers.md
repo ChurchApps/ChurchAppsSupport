@@ -1,5 +1,6 @@
 ---
 title: "Conectando-se aos provedores"
+description: "Conecte o FreePlay a um provedor de conteúdo por QR code, login por e-mail ou acesso com um clique, e gerencie ou desconecte nas Configurações."
 ---
 
 # Conectando-se aos provedores
@@ -13,7 +14,7 @@ Antes de navegar pelo conteúdo de um provedor, você precisa se conectar a ele.
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- Instale e abra o FreePlay -- veja [Primeiros passos](../getting-started/)
+- Instale e abra o FreePlay -- veja [Primeiros passos](../getting-started/index.md)
 - Tenha o controle remoto da TV pronto para navegar
 - Para provedores que exigem login, tenha as credenciais da sua conta em mãos
 
@@ -80,7 +81,7 @@ Selecionar um cartão de provedor que exibe o selo **Conectado** abre a tela **C
 
 - **Navegar pela biblioteca** -- Mostra ou oculta a biblioteca de conteúdo deste provedor na barra lateral
 - **Baixar automaticamente a lição de hoje** -- Usa este provedor como fonte da lição de hoje e pré-baixa os arquivos dele (exibido somente para provedores que oferecem uma lição atual)
-- **Usar para avisos** -- Escolha uma pasta deste provedor para exibir em loop a partir do item **Avisos** na barra lateral. Veja [Avisos](./announcements)
+- **Usar para avisos** -- Escolha uma pasta deste provedor para exibir em loop a partir do item **Avisos** na barra lateral. Veja [Avisos](./announcements.md)
 - **Verificar atualizações de avisos** -- Exibido assim que uma pasta de avisos é escolhida; baixa os novos slides e remove os excluídos
 - **Desconectar** -- Remove a conexão
 
@@ -100,6 +101,6 @@ Desconectar remove a autenticação salva no seu dispositivo. Você precisará e
 
 ## Artigos relacionados
 
-- **[Navegando e baixando conteúdo](./browsing-content)** - Navegue pelas pastas e reproduza o conteúdo depois de se conectar
-- **[Avisos](./announcements)** - Exiba em loop uma pasta de slides de um provedor conectado
+- **[Navegando e baixando conteúdo](./browsing-content.md)** - Navegue pelas pastas e reproduza o conteúdo depois de se conectar
+- **[Avisos](./announcements.md)** - Exiba em loop uma pasta de slides de um provedor conectado
 - **[Visão geral dos provedores de conteúdo](./index.md)** - Veja todos os provedores disponíveis

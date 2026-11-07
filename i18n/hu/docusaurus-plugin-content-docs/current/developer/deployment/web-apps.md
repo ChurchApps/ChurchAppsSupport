@@ -1,5 +1,6 @@
 ---
 title: "Webalkalmazás telepítése"
+description: "Lépések a B1 Admin és más ChurchApps webalkalmazások telepítéséhez Amazon S3-ra és CloudFrontra: automatikus GitHub Actions-telepítés vagy kézi parancsok."
 ---
 
 # Webalkalmazás telepítése
@@ -13,7 +14,7 @@ A ChurchApps webalkalmazásai statikus webhelyekként kerülnek telepítésre az
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Állítsa be a webalkalmazást helyileg, és ellenőrizze, hogy sikeresen felépül-e -- lásd: [Webalkalmazások](../web-apps/)
+- Állítsa be a webalkalmazást helyileg, és ellenőrizze, hogy sikeresen felépül-e -- lásd: [Webalkalmazások](../web-apps/index.md)
 - Konfigurálja az AWS hitelesítő adatokat, amelyek S3 és CloudFront hozzáféréssel rendelkeznek
 - Ismerje a célzott S3 vödör (bucket) nevét és a CloudFront disztribúció azonosítóját
 
@@ -53,6 +54,6 @@ Ha a telepítés előtt helyileg szeretné ellenőrizni a buildet, futtassa az `
 
 ## Kapcsolódó cikkek
 
-- **[Webalkalmazások](../web-apps/)** -- Beállítási útmutatók a B1Admin, B1App és LessonsApp alkalmazásokhoz
-- **[API telepítés](./apis)** -- A háttérszolgáltatások (API-k) telepítése
-- **[Mobil telepítés](./mobile)** -- Mobilalkalmazások közzététele az alkalmazásboltokban
+- **[Webalkalmazások](../web-apps/index.md)** -- Beállítási útmutatók a B1Admin, B1App és LessonsApp alkalmazásokhoz
+- **[API telepítés](./apis.md)** -- A háttérszolgáltatások (API-k) telepítése
+- **[Mobil telepítés](./mobile.md)** -- Mobilalkalmazások közzététele az alkalmazásboltokban

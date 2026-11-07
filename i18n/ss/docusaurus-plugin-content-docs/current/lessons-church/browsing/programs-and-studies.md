@@ -1,5 +1,6 @@
 ---
 title: "Tinhlelo Netifundvo"
+description: "Funda kutsi tinhlelo, tifundvo, tifundziso, netindzawo ze-Lessons.church ihlangana kanjani, kutsi utfole makharikhulamu lafanele futsi uye kutifundziso letihlobene."
 ---
 
 # Tinhlelo Netifundvo

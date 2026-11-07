@@ -1,5 +1,6 @@
 ---
 title: "Stránka Ja"
+description: "Prehľad stránky Ja v členskom portáli B1App: nadchádzajúce služby, udalosti, registrácie, domácnosť, skupiny, dary, formuláre, účasť a správy."
 ---
 
 # Stránka Ja
@@ -31,7 +32,7 @@ Ak ste odhlásení, namiesto toho uvidíte „Prihláste sa, aby ste videli svoj
 Sekcia **Nadchádzajúce** zobrazuje vaše najbližšie tri položky v chronologickom poradí, pričom každá má označenie typu. Ak ich máte viac, klepnite na **Všetky nadchádzajúce**, aby ste videli úplný zoznam, a na **Späť na Ja**, aby ste sa vrátili.
 
 - **Služba** -- Vaše dobrovoľnícke pozície na nadchádzajúcich plánoch bohoslužieb, s dátumom a časom začiatku služby, pri ktorej slúžite (čas, kedy je váš tím potrebný, ak plán obsahuje viacero časov služieb, alebo iba dátum, ak plán nemá časy). Klepnutím na položku otvoríte plán.
-- **Registrácia** -- Podujatia, na ktoré ste sa [zaregistrovali](../events/registering). Klepnutím sa dostanete k svojim [registráciám](../events/my-registrations).
+- **Registrácia** -- Podujatia, na ktoré ste sa [zaregistrovali](../events/registering.md). Klepnutím sa dostanete k svojim [registráciám](../events/my-registrations.md).
 - **Podujatie** -- Nadchádzajúce podujatia zo skupín, ktorých ste členom. Klepnutím na položku otvoríte podujatia danej skupiny.
 
 Ak má podujatie alebo registrácia fotografiu, na začiatku riadku sa zobrazí jej malý náhľad.
@@ -66,7 +67,7 @@ Sekcia **Požiadavky a registrácie** zobrazuje, koľko registrácií na podujat
 
 Ak váš kostol má rezervovateľné miestnosti alebo zdroje, zobrazia sa ešte dva odkazy:
 
-- **Požiadať o podujatie** -- Požiadajte o konanie podujatia s miestnosťami a vybavením, ktoré potrebujete. Pozri [Žiadosti o podujatia a miestnosti](../events/requesting-events).
+- **Požiadať o podujatie** -- Požiadajte o konanie podujatia s miestnosťami a vybavením, ktoré potrebujete. Pozri [Žiadosti o podujatia a miestnosti](../events/requesting-events.md).
 - **Moje požiadavky** -- Sledujte stav svojich požiadaviek a zrušte čakajúce.
 
 Ak váš kostol nemá nastavené miestnosti ani zdroje, tieto odkazy sú skryté.
@@ -77,8 +78,8 @@ Sekcia **Doručená pošta** zobrazuje vaše dve najnovšie upozornenia, aby ste
 
 ## Súvisiace články
 
-- [Orientácia v B1App](./navigating) -- Rozloženie portálu pre členov
-- [Žiadosti o podujatia a miestnosti](../events/requesting-events) -- Odoslanie a sledovanie žiadostí o miestnosti/zdroje
-- [Moje registrácie](../events/my-registrations) -- Správa vašich registrácií na podujatia
-- [Prihlásenie sa na službu](../serving/volunteer-signup) -- Ako fungujú služobné úlohy
-- [Samoprihlásenie](../checkin/self-checkin) -- Ako sa zaznamenáva vaša účasť
+- [Orientácia v B1App](./navigating.md) -- Rozloženie portálu pre členov
+- [Žiadosti o podujatia a miestnosti](../events/requesting-events.md) -- Odoslanie a sledovanie žiadostí o miestnosti/zdroje
+- [Moje registrácie](../events/my-registrations.md) -- Správa vašich registrácií na podujatia
+- [Prihlásenie sa na službu](../serving/volunteer-signup.md) -- Ako fungujú služobné úlohy
+- [Samoprihlásenie](../checkin/self-checkin.md) -- Ako sa zaznamenáva vaša účasť

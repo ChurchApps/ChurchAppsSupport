@@ -1,5 +1,6 @@
 ---
 title: "Gruppen-Timeline"
+description: "So bündelt die Gruppen-Zeitleiste in B1 Mobile Beiträge, Gespräche und Updates aller Gruppen in einem Feed. Was tun, wenn sie pausiert ist?"
 ---
 
 # Gruppen-Timeline
@@ -17,7 +18,7 @@ Die Gruppen-Timeline-Funktion ist vorübergehend nicht verfügbar, während Verb
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich an](../getting-started/logging-in) bei Ihrem Konto
+- [Installieren Sie B1 Mobile](../getting-started/installing.md) und [melden Sie sich an](../getting-started/logging-in.md) bei Ihrem Konto
 - Seien Sie Mitglied mindestens einer Gruppe in Ihrer Kirche
 
 </div>
@@ -41,7 +42,7 @@ Jedes Element in der Timeline zeigt, aus welcher Gruppe es stammt, damit Sie imm
 Die Timeline ist eine großartige Möglichkeit, auf einen Blick mit Ihrer Kirchengemeinschaft verbunden zu bleiben. Hier sind ein paar Tipps, um das Beste daraus zu machen:
 
 - **Überprüfen Sie regelmäßig** -- Öffnen Sie den Abschnitt "Gruppen" und durchlesen Sie die Timeline, um über aktuelle Aktivitäten auf dem Laufenden zu bleiben.
-- **Tippen Sie für mehr** -- Wenn ein Beitrag Ihre Aufmerksamkeit erregt, tippen Sie darauf oder tippen Sie auf den Gruppennamen, um zur vollständigen [Gruppendetailseite](./group-details) zu gehen, um mehr Kontext zu erhalten.
+- **Tippen Sie für mehr** -- Wenn ein Beitrag Ihre Aufmerksamkeit erregt, tippen Sie darauf oder tippen Sie auf den Gruppennamen, um zur vollständigen [Gruppendetailseite](./group-details.md) zu gehen, um mehr Kontext zu erhalten.
 - **Alles an einem Ort** -- Sie müssen jede Gruppe nicht separat besuchen. Die Timeline bringt alle Aktivität zu Ihnen.
 
 :::info
@@ -54,6 +55,6 @@ Aktivieren Sie [Push-Benachrichtigungen](../community/notifications.md), um bena
 
 ## Verwandte Artikel
 
-- [Gruppendetails](./group-details) -- Zeigen Sie das vollständige Profil und die Beiträge einer einzelnen Gruppe an
+- [Gruppendetails](./group-details.md) -- Zeigen Sie das vollständige Profil und die Beiträge einer einzelnen Gruppe an
 - [Benachrichtigungen](../community/notifications.md) -- Erhalten Sie Benachrichtigungen über Gruppenaktivitäten
 

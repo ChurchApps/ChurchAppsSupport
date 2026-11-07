@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Propojte B1 Admin se Zapier a spouštějte automatizace u nových lidí, darů a členů skupin a zapisujte záznamy zpět do B1 bez programování."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Vyberte spouštěč a poté přidejte jeden nebo více kroků akce. Příklady j
 ### Odesílání darů do kanálu Slacku s bohatší kartou, než nabízí vestavěný konektor
 
 - **Spouštěč** — B1: Nový dar
-- **Akce** — Slack: Odeslat zprávu do kanálu. Sestavte libovolné rozvržení (tlačítka, přílohy apod.), které vestavěný [konektor Slack](./slack-discord) neumí.
+- **Akce** — Slack: Odeslat zprávu do kanálu. Sestavte libovolné rozvržení (tlačítka, přílohy apod.), které vestavěný [konektor Slack](./slack-discord.md) neumí.
 
 ### Přidání nových členů skupiny do Google Skupiny
 
@@ -106,6 +107,6 @@ To znamená, že spouštěč se aktivuje pouze pro události, které nastanou **
 
 ## Viz také
 
-- [Make](./make): stejný postup, jiná platforma
-- [Slack & Discord](./slack-discord): jednodušší chatová oznámení bez Zapieru
+- [Make](./make.md): stejný postup, jiná platforma
+- [Slack & Discord](./slack-discord.md): jednodušší chatová oznámení bez Zapieru
 - [Webhooky (referenční příručka pro vývojáře)](/docs/developer/api/webhooks)

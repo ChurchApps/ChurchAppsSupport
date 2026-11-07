@@ -1,5 +1,6 @@
 ---
 title: "Resumen de Donaciones"
+description: "Ejecuta el informe Resumen de donaciones en B1 Admin para ver el total de donativos, el número de donantes únicos y los importes por fondo en el rango de fechas que elijas."
 ---
 
 # Resumen de Donaciones

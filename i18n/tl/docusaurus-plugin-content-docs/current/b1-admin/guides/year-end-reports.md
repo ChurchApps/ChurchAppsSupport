@@ -1,5 +1,6 @@
 ---
 title: "Gabay: Lumikha ng Year-End Giving Reports"
+description: "Sa B1 Admin, tapusin ang mga tala ng donasyon ng taon, suriin ang tax setting ng pondo, at gumawa ng tax-deductible giving statement para sa bawat donor."
 ---
 
 # Lumikha ng Year-End Giving Reports

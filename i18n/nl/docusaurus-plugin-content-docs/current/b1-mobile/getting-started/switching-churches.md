@@ -1,5 +1,6 @@
 ---
 title: "Van kerk wisselen"
+description: "Wissel in de B1 Mobile-app van kerk door een recente kerk te kiezen of op naam te zoeken, allemaal met één ChurchApps-login."
 ---
 
 # Van kerk wisselen
@@ -13,7 +14,7 @@ Als u lid bent van meer dan één kerk, maakt B1 Mobile het gemakkelijk om daart
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- [Installeer B1 Mobile](./installing) en [meld u aan](./logging-in) op uw account
+- [Installeer B1 Mobile](./installing.md) en [meld u aan](./logging-in.md) op uw account
 
 </div>
 
@@ -24,7 +25,7 @@ Als u lid bent van meer dan één kerk, maakt B1 Mobile het gemakkelijk om daart
 3. Het scherm **Kerkzoeking** verschijnt. Uw onlangs bezochte kerken worden bovenaan weergegeven voor snelle toegang.
 4. Tik op een recente kerk om daarheen te gaan, of typ in het zoekveld om een ander kerk te vinden.
 
-Wanneer u van kerk wisselt, laadt de app opnieuw met de branding van die kerk, navigatiekoppelingen en inhoud. Uw [dashboard](../dashboard/), [groepen](../groups/) en andere gegevens zullen de nieuw geselecteerde kerk weerspiegelen.
+Wanneer u van kerk wisselt, laadt de app opnieuw met de branding van die kerk, navigatiekoppelingen en inhoud. Uw [dashboard](../dashboard/index.md), [groepen](../groups/index.md) en andere gegevens zullen de nieuw geselecteerde kerk weerspiegelen.
 
 ## Een kerk zoeken
 

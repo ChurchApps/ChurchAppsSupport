@@ -1,5 +1,6 @@
 ---
 title: "Kampusy"
+description: "Nastavte pobočky v B1 Admin, aby ste sledovali, ku ktorej lokalite patrí každý človek a skupina, a potom filtrujte ľudí, účasť a demografiu podľa miesta."
 ---
 
 # Kampusy

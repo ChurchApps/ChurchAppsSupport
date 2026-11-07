@@ -1,5 +1,7 @@
 ---
-title: "Danh bạ thành viên"
+title: "Danh bạ thành viên trong cổng thành viên B1.church"
+sidebar_label: "Danh bạ thành viên"
+description: "Tìm kiếm và duyệt thành viên hội thánh trong danh bạ B1.church, xem hồ sơ và thành viên trong hộ gia đình, và xem ai có quyền truy cập danh bạ."
 ---
 
 # Danh bạ thành viên

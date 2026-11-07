@@ -1,5 +1,7 @@
 ---
-title: "Membuat Donasi"
+title: "Memberi Donasi di B1 Mobile"
+sidebar_label: "Membuat Donasi"
+description: "Berikan persembahan dari tab Donasi di B1 Mobile: pilih dana, masukkan jumlah, bayar dengan Stripe, dan ulangi pemberian sebelumnya dengan cepat."
 ---
 
 # Membuat Donasi
@@ -13,8 +15,8 @@ Memberi melalui B1 Mobile itu cepat dan mudah. Tab **Donasi** di bagian persemba
 <div class="prereqs">
 <h4>Sebelum Anda Memulai</h4>
 
-- [Pasang B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
-- Siapkan kartu kredit atau kartu debit, atau [simpan metode pembayaran](./managing-payments) terlebih dahulu
+- [Pasang B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
+- Siapkan kartu kredit atau kartu debit, atau [simpan metode pembayaran](./managing-payments.md) terlebih dahulu
 
 </div>
 
@@ -42,10 +44,10 @@ Periksa kembali jumlah donasi dan dana sebelum mengirim. Donasi diproses secara 
 Jika Anda ingin memberikan jumlah yang sama dengan donasi terakhir Anda, Anda tidak perlu melalui seluruh alur donasi. Tab **Ringkasan** menampilkan persembahan terbaru Anda beserta tombol **Ulangi**. Ketuk tombol tersebut untuk mengirim donasi yang sama dengan cepat.
 
 :::tip
-Jika Anda berencana memberi secara rutin, simpan metode pembayaran Anda di tab **Kelola** agar Anda dapat berdonasi lebih cepat lain kali. Lihat [Mengelola Metode Pembayaran](./managing-payments) untuk detailnya.
+Jika Anda berencana memberi secara rutin, simpan metode pembayaran Anda di tab **Kelola** agar Anda dapat berdonasi lebih cepat lain kali. Lihat [Mengelola Metode Pembayaran](./managing-payments.md) untuk detailnya.
 :::
 
 ## Artikel Terkait
 
-- [Mengelola Metode Pembayaran](./managing-payments) -- Simpan kartu untuk persembahan yang lebih cepat di masa mendatang
-- [Riwayat Donasi](./donation-history) -- Lihat ringkasan persembahan dan donasi sebelumnya
+- [Mengelola Metode Pembayaran](./managing-payments.md) -- Simpan kartu untuk persembahan yang lebih cepat di masa mendatang
+- [Riwayat Donasi](./donation-history.md) -- Lihat ringkasan persembahan dan donasi sebelumnya

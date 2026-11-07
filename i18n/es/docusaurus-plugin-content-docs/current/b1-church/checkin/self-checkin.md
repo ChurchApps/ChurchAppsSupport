@@ -1,5 +1,7 @@
 ---
-title: "Autoregistro de entrada"
+title: "Registro de entrada propio en el portal de miembros de B1.church"
+sidebar_label: "Autoregistro de entrada"
+description: "Registra tu entrada y la de tu hogar en un servicio desde el portal de miembros de B1.church, eligiendo horarios y grupos en unos pocos pasos rápidos."
 ---
 
 # Autoregistro de entrada
@@ -45,7 +47,7 @@ Una vez que haya seleccionado grupos para todas las personas que asisten, toque 
 
 Verá una confirmación de que su registro de entrada se completó y su asistencia se guardó. Después de un momento, la página vuelve a la lista de servicios, lista para el siguiente registro.
 
-Si su iglesia imprime gafetes en una estación de registro, en su lugar verá **¡Ya registró su entrada!** con un código QR y un código de seguridad. Muestre el código en una estación de registro para imprimir sus gafetes y luego toque **Listo**. En un quiosco de B1 Checkin, toque **Escanear código** y acerque el código QR a la cámara; consulte [Imprimir etiquetas para un registro de entrada desde el teléfono](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Si su iglesia imprime gafetes en una estación de registro, en su lugar verá **¡Ya registró su entrada!** con un código QR y un código de seguridad. Muestre el código en una estación de registro para imprimir sus gafetes y luego toque **Listo**. En un quiosco de B1 Checkin, toque **Escanear código** y acerque el código QR a la cámara; consulte [Imprimir etiquetas para un registro de entrada desde el teléfono](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Si su hogar ya registró su entrada para el servicio que seleccionó, aparece un enlace **Mostrar código de registro** junto al encabezado **¿Quién está aquí?**. Tóquelo para volver a mostrar el código QR y el código de seguridad; por ejemplo, si cerró la página antes de llegar a una estación de registro.
 

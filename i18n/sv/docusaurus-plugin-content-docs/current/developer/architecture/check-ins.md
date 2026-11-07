@@ -1,5 +1,6 @@
 ---
 title: "Check-ins"
+description: "Så fungerar incheckning i B1Checkin, B1App och B1 Admin: datamodellen för närvaro, grupper som rum, kapacitetsspärrar och säkerhetsregler för avhämtning."
 ---
 
 # Check-ins
@@ -216,7 +217,7 @@ B1Apps `src/components/checkin/GuestRegister.tsx` hämtar checklistan från den 
 
 ## Relaterade sidor
 
-- [Endpoints för närvaro](../api/endpoints/attendance) -- Hela REST-ytan för campus, gudstjänster, sessioner, besök och besökssessioner
-- [Endpoints för medlemskap](../api/endpoints/membership) -- Personer, hushåll och grupper
-- [Webhooks](../api/webhooks) -- Händelserna `session.created`, `attendance.recorded` och `attendance.checkout`
-- [Modulstruktur](../api/module-structure) -- Hur närvaromodulen är organiserad på servern
+- [Endpoints för närvaro](../api/endpoints/attendance.md) -- Hela REST-ytan för campus, gudstjänster, sessioner, besök och besökssessioner
+- [Endpoints för medlemskap](../api/endpoints/membership.md) -- Personer, hushåll och grupper
+- [Webhooks](../api/webhooks.md) -- Händelserna `session.created`, `attendance.recorded` och `attendance.checkout`
+- [Modulstruktur](../api/module-structure.md) -- Hur närvaromodulen är organiserad på servern

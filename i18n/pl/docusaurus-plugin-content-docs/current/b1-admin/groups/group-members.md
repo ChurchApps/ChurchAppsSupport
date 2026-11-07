@@ -1,5 +1,6 @@
 ---
 title: "Członkowie grupy"
+description: "Dodawaj, usuwaj i wyznaczaj liderów członków grupy w B1 Admin, a następnie wysyłaj e-mail, SMS, drukuj lub eksportuj listę członków ze strony grupy."
 ---
 
 # Członkowie grupy

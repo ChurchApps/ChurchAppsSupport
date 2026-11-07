@@ -1,5 +1,6 @@
 ---
 title: "Udvikler-dokumentation"
+description: "Find rundt i ChurchApps' udviklerdokumentation: lokal opsætning, guides til API og webapps, delte biblioteker, mobilbygninger og udrulning af open source-projekterne."
 ---
 
 # Udvikler-dokumentation
@@ -24,15 +25,15 @@ Vigtige karakteristika:
 
 ## Hvad dette afsnit dækker
 
-- **[Setup](setup/)** -- Lokalt udvikling miljø, forudsætninger og konfiguration
-  - [Forudsætninger](setup/prerequisites) -- Påkrævet værktøj og software
-  - [Projektoversigt](setup/project-overview) -- Alle projekter på et øjeblik
-  - [Miljøvariabler](setup/environment-variables) -- Konfigurering af `.env`-filer
-- **[API](api/)** -- Kerne API lokalt setup, databaseinitialisering og modulstruktur
-- **[Webapps](web-apps/)** -- Kørsel af B1Admin, B1App og LessonsApp lokalt
-- **[Mobilapps](mobile/)** -- Byggeri af B1Mobile og andre Expo-apps
-- **[Delte biblioteker](shared-libraries/)** -- Arbejde med Helpers, ApiHelper og AppHelper
-- **[Installation](deployment/)** -- Installation af API'er, webapps og mobilapps
+- **[Setup](./setup/index.md)** -- Lokalt udvikling miljø, forudsætninger og konfiguration
+  - [Forudsætninger](./setup/prerequisites.md) -- Påkrævet værktøj og software
+  - [Projektoversigt](./setup/project-overview.md) -- Alle projekter på et øjeblik
+  - [Miljøvariabler](./setup/environment-variables.md) -- Konfigurering af `.env`-filer
+- **[API](./api/index.md)** -- Kerne API lokalt setup, databaseinitialisering og modulstruktur
+- **[Webapps](./web-apps/index.md)** -- Kørsel af B1Admin, B1App og LessonsApp lokalt
+- **[Mobilapps](./mobile/index.md)** -- Byggeri af B1Mobile og andre Expo-apps
+- **[Delte biblioteker](./shared-libraries/index.md)** -- Arbejde med Helpers, ApiHelper og AppHelper
+- **[Installation](./deployment/index.md)** -- Installation af API'er, webapps og mobilapps
 
 ## Fællesskab og ressourcer
 

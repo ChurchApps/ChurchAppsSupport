@@ -1,5 +1,6 @@
 ---
 title: "Webstránka"
+description: "Získajte prehľad o tvorcovi webu B1 Admin: stránky, blog, bloky, vzhľad, súbory a kalendáre, s odkazmi na návody na nastavenie a úpravy."
 ---
 
 # Webstránka
@@ -22,7 +23,7 @@ Vaše navigačné odkazy sú zobrazené v stromovej štruktúre. Odkazy môžete
 
 ### Blog
 
-Publikujte novinky, aktualizácie a devocionály ako blogové príspevky na adrese `/blog` vo vašej webovej stránke, s RSS kanálom. Pozrite si sprievodcu [Blog](blog).
+Publikujte novinky, aktualizácie a devocionály ako blogové príspevky na adrese `/blog` vo vašej webovej stránke, s RSS kanálom. Pozrite si sprievodcu [Blog](./blog.md).
 
 ### Bloky
 
@@ -30,24 +31,24 @@ Vytvárajte opakovane použiteľné obsahové komponenty, ktoré môžete umiest
 
 ### Vzhľad
 
-Prispôsobte motív, farby, písma, logo a medzery vašej webovej stránky. Môžete použiť vopred pripravené štýlové motívy pre rýchly štart, alebo doladiť každý detail pomocou editora farebnej palety, nastavení typografie a vlastného CSS. Podrobnosti nájdete v sprievodcovi [Vzhľad](appearance).
+Prispôsobte motív, farby, písma, logo a medzery vašej webovej stránky. Môžete použiť vopred pripravené štýlové motívy pre rýchly štart, alebo doladiť každý detail pomocou editora farebnej palety, nastavení typografie a vlastného CSS. Podrobnosti nájdete v sprievodcovi [Vzhľad](./appearance.md).
 
 ### Súbory
 
-Nahrávajte a spravujte všetky svoje mediálne súbory -- obrázky, dokumenty a iné súbory -- na jednom centrálnom mieste a kopírujte odkazy na súbory na použitie kdekoľvek na svojej webovej stránke. Viac informácií nájdete v časti [Súbory](files).
+Nahrávajte a spravujte všetky svoje mediálne súbory -- obrázky, dokumenty a iné súbory -- na jednom centrálnom mieste a kopírujte odkazy na súbory na použitie kdekoľvek na svojej webovej stránke. Viac informácií nájdete v časti [Súbory](./files.md).
 
 ### Kalendáre
 
 Publikujte kalendáre udalostí na svojej webovej stránke, aby návštevníci mohli vidieť, čo sa deje vo vašom kostole. Vytvárajte kurátorské kalendáre, ktoré zhromažďujú udalosti z viacerých skupín do jedného zobrazenia. Kalendáre majú vlastnú položku **Kalendáre** v ponuke B1 Admin, oddelenú od položky **Webstránka**.
 
 :::tip
-Ak nastavujete svoju webovú stránku prvýkrát, začnite s [Počiatočným nastavením](initial-setup). Prevedie vás nastavením domény, vytvorením prvej stránky a konfiguráciou vzhľadu vašej stránky.
+Ak nastavujete svoju webovú stránku prvýkrát, začnite s [Počiatočným nastavením](./initial-setup.md). Prevedie vás nastavením domény, vytvorením prvej stránky a konfiguráciou vzhľadu vašej stránky.
 :::
 
 ## Ďalšie kroky
 
-- [Počiatočné nastavenie](initial-setup) -- Spustite svoju webovú stránku prvýkrát
-- [Správa stránok](managing-pages) -- Naučte sa vytvárať a organizovať stránky
-- [Používanie editora stránok](page-editor) -- Vytvárajte a štylizujte obsah stránky pomocou vizuálneho editora
-- [Vzhľad](appearance) -- Prispôsobte vzhľad a dojem vašej stránky
-- [Súbory](files) -- Nahrávajte a spravujte mediálne súbory
+- [Počiatočné nastavenie](./initial-setup.md) -- Spustite svoju webovú stránku prvýkrát
+- [Správa stránok](./managing-pages.md) -- Naučte sa vytvárať a organizovať stránky
+- [Používanie editora stránok](./page-editor.md) -- Vytvárajte a štylizujte obsah stránky pomocou vizuálneho editora
+- [Vzhľad](./appearance.md) -- Prispôsobte vzhľad a dojem vašej stránky
+- [Súbory](./files.md) -- Nahrávajte a spravujte mediálne súbory

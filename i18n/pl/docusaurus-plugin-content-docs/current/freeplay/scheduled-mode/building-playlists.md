@@ -1,5 +1,6 @@
 ---
 title: "Łączenie dostawców i tworzenie list odtwarzania"
+description: "Konfiguracja podłączonych dostawców treści w FreePlay Admin, następnie budowanie, układanie i podgląd playlist dla telewizorów z harmonogramem."
 ---
 
 # Łączenie dostawców i tworzenie list odtwarzania
@@ -107,6 +108,6 @@ Kliknij **Prezentuj**, aby odtworzyć listę na pełnym ekranie w przeglądarce.
 
 ## Powiązane artykuły
 
-- **[Planowanie kalendarza](./scheduling-the-calendar)** – umieść swoją listę w kalendarzu grupy ekranów
-- **[Zarządzanie ekranami i grupami](./managing-screens)** – ustaw listę jako domyślną pętlę grupy
-- **[Dostawcy treści](../content-providers/)** – dostawcy, których możesz połączyć bezpośrednio na telewizorze
+- **[Planowanie kalendarza](./scheduling-the-calendar.md)** – umieść swoją listę w kalendarzu grupy ekranów
+- **[Zarządzanie ekranami i grupami](./managing-screens.md)** – ustaw listę jako domyślną pętlę grupy
+- **[Dostawcy treści](../content-providers/index.md)** – dostawcy, których możesz połączyć bezpośrednio na telewizorze

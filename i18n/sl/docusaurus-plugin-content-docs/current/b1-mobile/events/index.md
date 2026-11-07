@@ -1,5 +1,7 @@
 ---
-title: "Dogodki"
+title: "Cerkveni dogodki in prijave v B1 Mobile"
+sidebar_label: "Dogodki"
+description: "Brskajte po prihajajočih dogodkih v aplikaciji B1 Mobile in se prijavite sebe ter družinske člane na tiste, pri katerih je prijava odprta."
 ---
 
 # Dogodki
@@ -23,10 +25,10 @@ Dogodki so lahko prikazani z različnimi stanji:
 
 ## Kaj potrebujete
 
-- [Nameščen B1 Mobile](../getting-started/installing) in [prijava v aplikacijo](../getting-started/logging-in)
+- [Nameščen B1 Mobile](../getting-started/installing.md) in [prijava v aplikacijo](../getting-started/logging-in.md)
 - Vaša cerkev mora imeti omogočeno prijavo na dogodke za ta dogodek
 
 ## Več informacij
 
-- [Prijava na dogodke](./registering) -- Postopek po korakih za prijavo na dogodek prek telefona
-- [Samoprijava](../checkin/self-checkin) -- Prijavite se, ko prispete na dogodek
+- [Prijava na dogodke](./registering.md) -- Postopek po korakih za prijavo na dogodek prek telefona
+- [Samoprijava](../checkin/self-checkin.md) -- Prijavite se, ko prispete na dogodek

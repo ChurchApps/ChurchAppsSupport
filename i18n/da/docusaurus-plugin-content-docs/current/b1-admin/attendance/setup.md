@@ -1,5 +1,6 @@
 ---
 title: "Fremmøde-opsætning"
+description: "Opsæt campusser, gudstjenester, gudstjenestetider og gruppetilknytninger i B1 Admin, så fremmødesporing og check-in-planer fungerer for hele menigheden."
 ---
 
 # Fremmøde-opsætning

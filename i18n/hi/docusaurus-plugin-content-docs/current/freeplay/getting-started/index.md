@@ -1,5 +1,7 @@
 ---
-title: "शुरू करना"
+title: "FreePlay TV ऐप के साथ शुरुआत करें"
+sidebar_label: "शुरू करना"
+description: "Android TV, Fire TV या Apple TV पर FreePlay सेट करें: ऐप इंस्टॉल करें, पहली बार खोलें, और रिमोट कंट्रोल व साइडबार समझें।"
 ---
 
 # FreePlay के साथ शुरू करना
@@ -42,7 +44,7 @@ FreePlay Fire TV (नई Vega OS स्टिक्स सहित), onn जै
 
 जब आप FreePlay पहली बार खोलते हैं, तो आपको FreePlay लोगो के साथ एक एनिमेटेड स्प्लैश स्क्रीन दिखती है। ऐप पहले से जुड़े किसी भी कंटेंट प्रदाता की जाँच करता है। यदि आपने पहले ही कोई प्रदाता जोड़ा है, तो वह आपको सीधे उस प्रदाता के कंटेंट ब्राउज़र पर ले जाता है। अन्यथा, यह **Content Providers** स्क्रीन खोलता है जहाँ आप अपना पहला कंटेंट स्रोत जोड़ सकते हैं।
 
-यदि TV [Scheduled Mode](../scheduled-mode/) में किसी कैलेंडर से पेयर है, तो FreePlay यह सब छोड़ देता है और सीधे शेड्यूल्ड प्लेयर पर खुलता है।
+यदि TV [Scheduled Mode](../scheduled-mode/index.md) में किसी कैलेंडर से पेयर है, तो FreePlay यह सब छोड़ देता है और सीधे शेड्यूल्ड प्लेयर पर खुलता है।
 
 ## TV रिमोट से नेविगेट करना
 
@@ -62,13 +64,13 @@ FreePlay TV रिमोट के लिए बना है। पूरे �
 
 साइडबार ऊपर से नीचे ये सूचीबद्ध करता है:
 
-- **Today's Plan** -- जब TV किसी योजना से पेयर हो तब दिखता है। [Plan Mode](../plan-mode/) देखें
-- **Announcements** -- एक announcements फ़ोल्डर चुनने के बाद दिखता है। [Announcements](../content-providers/announcements) देखें
-- **Browse** -- जुड़ा हर कंटेंट प्रदाता जिसे आप ब्राउज़ कर सकते हैं। [कंटेंट ब्राउज़ और डाउनलोड करना](../content-providers/browsing-content) देखें
-- **Settings** -- साइडबार के नीचे। **Pair to a calendar** खोलता है (इस TV को किसी कैलेंडर या योजना से पेयर करें -- देखें [पेयरिंग मोड चुनना](./pairing-modes)), **Downloads** (इस डिवाइस पर सहेजी गई सामग्री चलाएँ या हटाएँ), और **Providers** (कंटेंट प्रदाता जोड़ें और announcements फ़ोल्डर चुनें)
+- **Today's Plan** -- जब TV किसी योजना से पेयर हो तब दिखता है। [Plan Mode](../plan-mode/index.md) देखें
+- **Announcements** -- एक announcements फ़ोल्डर चुनने के बाद दिखता है। [Announcements](../content-providers/announcements.md) देखें
+- **Browse** -- जुड़ा हर कंटेंट प्रदाता जिसे आप ब्राउज़ कर सकते हैं। [कंटेंट ब्राउज़ और डाउनलोड करना](../content-providers/browsing-content.md) देखें
+- **Settings** -- साइडबार के नीचे। **Pair to a calendar** खोलता है (इस TV को किसी कैलेंडर या योजना से पेयर करें -- देखें [पेयरिंग मोड चुनना](./pairing-modes.md)), **Downloads** (इस डिवाइस पर सहेजी गई सामग्री चलाएँ या हटाएँ), और **Providers** (कंटेंट प्रदाता जोड़ें और announcements फ़ोल्डर चुनें)
 
 ## आगे क्या है
 
-- **[पेयरिंग मोड चुनना](./pairing-modes)** - अपने TV को जोड़ने के विभिन्न तरीकों के बारे में जानें
-- **[Scheduled Mode](../scheduled-mode/)** - FreePlay Admin के साथ अपने TVs को कैलेंडर पर रखें
-- **[Content Providers](../content-providers/)** - Lessons.church, Bible Project, और अधिक से जुड़ें
+- **[पेयरिंग मोड चुनना](./pairing-modes.md)** - अपने TV को जोड़ने के विभिन्न तरीकों के बारे में जानें
+- **[Scheduled Mode](../scheduled-mode/index.md)** - FreePlay Admin के साथ अपने TVs को कैलेंडर पर रखें
+- **[Content Providers](../content-providers/index.md)** - Lessons.church, Bible Project, और अधिक से जुड़ें

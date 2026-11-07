@@ -1,5 +1,6 @@
 ---
 title: "Audit-Protokoll und Rückgängig-Batches"
+description: "Behandelt das API-Audit-Log, das jede Benutzeränderung über alle Module erfasst, und wie sich Importstapel in B1 Admin zeilenweise rückgängig machen lassen."
 ---
 
 # Audit-Protokoll und Rückgängig-Batches
@@ -155,6 +156,6 @@ Beide Admin-Oberflächen sind **im Fortschritt**; die Absicht:
 
 ## Verwandte Seiten
 
-- [Modulstruktur](../api/module-structure) – wie ein Nicht-Mitgliedschafts-Controller die Mitgliedschafts-Repos durch `RepoManager` erreicht
-- [Geben](./giving) – die Spenden-Schreibpfade, die als `sensitive` geprüft werden, auch wenn anonym
-- [Mitgliedschafts-Endpunkte](../api/endpoints/membership) – die REST-Oberfläche, die `X-Batch-Id` trägt und `/auditlogs` und `/batches` ausäußert
+- [Modulstruktur](../api/module-structure.md) – wie ein Nicht-Mitgliedschafts-Controller die Mitgliedschafts-Repos durch `RepoManager` erreicht
+- [Geben](./giving.md) – die Spenden-Schreibpfade, die als `sensitive` geprüft werden, auch wenn anonym
+- [Mitgliedschafts-Endpunkte](../api/endpoints/membership.md) – die REST-Oberfläche, die `X-Batch-Id` trägt und `/auditlogs` und `/batches` ausäußert

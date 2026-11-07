@@ -1,5 +1,6 @@
 ---
 title: "Raporty o účasti"
+description: "Prehľad troch správ o účasti v B1 Admin (Trend účasti, Účasť v skupinách, Denná účasť v skupinách), čo každá zobrazuje, a postup ich spustenia a exportu."
 ---
 
 # Raporty o účasti

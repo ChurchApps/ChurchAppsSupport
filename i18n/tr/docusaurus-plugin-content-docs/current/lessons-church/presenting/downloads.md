@@ -1,5 +1,6 @@
 ---
 title: "İndirmeler ve Materyaller"
+description: "Sınıfınız için Lessons.church derslerine, çalışmalara veya programlara eklenmiş yazdırılabilir etkinlik sayfalarını, lider rehberlerini ve PDF'leri bulun ve indirin."
 ---
 
 # İndirmeler ve Materyaller

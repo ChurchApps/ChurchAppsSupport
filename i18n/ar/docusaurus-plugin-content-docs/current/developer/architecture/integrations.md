@@ -1,5 +1,6 @@
 ---
 title: "نقاط التكامل والتوسيع"
+description: "خريطة كل طرق الربط بـ ChurchApps B1: REST API ومفاتيح API وOAuth وWebhooks وMCP ومزودو المحتوى، مع روابط لكل مرجع."
 ---
 
 # نقاط التكامل والتوسيع
@@ -14,12 +15,12 @@ title: "نقاط التكامل والتوسيع"
 
 هناك ستّ طرق للدخول أو الخروج، وتشترك جميعها في طبقة المصادقة نفسها:
 
-- **[واجهة REST API](../api/api-keys)** — سطح المنتج بأكمله، ويمكن استدعاؤها برمز Bearer من أي لغة برمجة.
-- **[مفاتيح API](../api/api-keys)** — أبسط بيانات اعتماد: رمز `cak_…` مرتبط بشخص واحد في كنيسة واحدة.
-- **[OAuth 2.0 والتطبيقات المتصلة](../api/connected-apps)** — موافقة لكل كنيسة للتطبيقات متعددة المستأجرين؛ ويُصدر JWT نفسه الذي يحصل عليه المستخدم.
-- **[Webhooks](../api/webhooks)** — أحداث صادرة موقّعة ومضمونة التسليم.
-- **[خادم MCP](../api/mcp)** — غلاف موجَّه للذكاء الاصطناعي فوق واجهة REST API عند المسار `/mcp`.
-- **[موفرو المحتوى](../freeplay-content-provider)** — مسار الدخول لمكتبات الوسائط الخارجية إلى FreePlay وتطبيقات B1.
+- **[واجهة REST API](../api/api-keys.md)** — سطح المنتج بأكمله، ويمكن استدعاؤها برمز Bearer من أي لغة برمجة.
+- **[مفاتيح API](../api/api-keys.md)** — أبسط بيانات اعتماد: رمز `cak_…` مرتبط بشخص واحد في كنيسة واحدة.
+- **[OAuth 2.0 والتطبيقات المتصلة](../api/connected-apps.md)** — موافقة لكل كنيسة للتطبيقات متعددة المستأجرين؛ ويُصدر JWT نفسه الذي يحصل عليه المستخدم.
+- **[Webhooks](../api/webhooks.md)** — أحداث صادرة موقّعة ومضمونة التسليم.
+- **[خادم MCP](../api/mcp.md)** — غلاف موجَّه للذكاء الاصطناعي فوق واجهة REST API عند المسار `/mcp`.
+- **[موفرو المحتوى](../freeplay-content-provider.md)** — مسار الدخول لمكتبات الوسائط الخارجية إلى FreePlay وتطبيقات B1.
 
 تُقدَّم جميع الخدمات باستثناء موفري المحتوى عبر واجهة برمجية واحدة متكاملة (مستودع [Api](https://github.com/ChurchApps/Api))، وتُركَّب وحداتها تحت مسارات أساسية ثابتة: `/membership` و`/giving` و`/attendance` و`/content` و`/messaging` و`/doing` و`/reporting` و`/mcp`.
 
@@ -80,7 +81,7 @@ title: "نقاط التكامل والتوسيع"
 - لا يمكن للنطاق إلا *إزالة* الصلاحيات، لذلك لا يمكن لبيانات اعتماد مقيّدة بنطاق أن ترتقي إلى إدارة الخادم أو النطاق (وهذه الصلاحيات غير مرتبطة عمدًا بأي نطاق).
 - تحمل مفاتيح API بادئة `cak_`؛ ويتفرع `CustomAuthProvider.getUser()` بناءً عليها، ويُجزّئ السر، ويعيد حل صلاحيات RBAC الحية للشخص المالك في كل استدعاء.
 
-راجع [API Keys → Scopes](../api/api-keys#scopes) للاطلاع على الكتالوج الكامل.
+راجع [API Keys → Scopes](../api/api-keys.md#scopes) للاطلاع على الكتالوج الكامل.
 
 ## مرجع نقاط التكامل
 
@@ -90,7 +91,7 @@ title: "نقاط التكامل والتوسيع"
 
 ### مفاتيح API
 
-رمز وصول شخصي من نوع `cak_<prefix>.<secret>`، يُنشأ في **B1Admin → Settings → Developer → API Keys**. لا يُخزَّن إلا تجزئة SHA-256، ويُعرض المفتاح الأصلي مرة واحدة فقط. تُدار عبر `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). وهو الأنسب للنصوص البرمجية الخاصة بكنيسة واحدة ولموصّلات مثل Zapier وMake وGoogle Sheets. → **[مفاتيح API](../api/api-keys)**
+رمز وصول شخصي من نوع `cak_<prefix>.<secret>`، يُنشأ في **B1Admin → Settings → Developer → API Keys**. لا يُخزَّن إلا تجزئة SHA-256، ويُعرض المفتاح الأصلي مرة واحدة فقط. تُدار عبر `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). وهو الأنسب للنصوص البرمجية الخاصة بكنيسة واحدة ولموصّلات مثل Zapier وMake وGoogle Sheets. → **[مفاتيح API](../api/api-keys.md)**
 
 ### OAuth 2.0 والتطبيقات المتصلة
 
@@ -102,19 +103,19 @@ title: "نقاط التكامل والتوسيع"
 
 يمكن للعملاء العامّين أيضًا تسجيل أنفسهم عبر `POST /oauth/register` (تسجيل العميل الديناميكي وفق RFC 7591)، فيحصلون على `client_id` دون سر، ويجب أن تكون عناوين إعادة التوجيه الخاصة بهم من نوع `https` أو loopback.
 
-**التطبيق المتصل (Connected App)** هو العرض الذي يراه مسؤول الكنيسة لرمز ممنوح، ويُدرج ويمكن إلغاؤه في `/membership/oauth/connections`. كما تستضيف وحدة التحكم جسر **جلسة الترحيل (relay-session)** عبر OAuth (`/oauth/relay/*`) الذي يتيح لجهاز بلا متصفح إتمام تسجيل الدخول لدى مزوّد *خارجي*. → **[التطبيقات المتصلة وOAuth](../api/connected-apps)**
+**التطبيق المتصل (Connected App)** هو العرض الذي يراه مسؤول الكنيسة لرمز ممنوح، ويُدرج ويمكن إلغاؤه في `/membership/oauth/connections`. كما تستضيف وحدة التحكم جسر **جلسة الترحيل (relay-session)** عبر OAuth (`/oauth/relay/*`) الذي يتيح لجهاز بلا متصفح إتمام تسجيل الدخول لدى مزوّد *خارجي*. → **[التطبيقات المتصلة وOAuth](../api/connected-apps.md)**
 
 ### Webhooks
 
-السطح الصادر الوحيد. تشترك الكنيسة في نقطة نهاية HTTPS عامة للأحداث؛ عند حدوث تغيير مطابق، يقوم `WebhookDispatcher.emit(churchId, event, payload)` بإثراء الحمولات التي تحتوي على المعرّفات فقط بأسماء العرض (`personName` و`groupName` و`formName`، ولا تُجرى عمليات البحث إلا بعد تطابق اشتراك)، ويسجّل عملية التسليم، ويقوم عامل في الخلفية بإرسال مغلّف JSON موقّع عبر POST مع إعادة المحاولة بتأخير متزايد وإعادة التسليم. المحرك في `Api/src/shared/webhooks/`، وإدارة الاشتراكات لكل كنيسة ضمن `/membership/webhooks` (`WebhookController.ts`). يعيد حقل `connectorType` تشكيل النص للخدمات مثل Slack وDiscord، ويذهب موصّل `mailchimp` أبعد من ذلك إذ يتولى تبادل HTTP بالكامل (الطريقة والرابط والمصادقة لكل حدث عبر واجهة Mailchimp البرمجية، مع تشفير بيانات الاعتماد في `webhooks.connectorConfig`). → **[Webhooks](../api/webhooks)**
+السطح الصادر الوحيد. تشترك الكنيسة في نقطة نهاية HTTPS عامة للأحداث؛ عند حدوث تغيير مطابق، يقوم `WebhookDispatcher.emit(churchId, event, payload)` بإثراء الحمولات التي تحتوي على المعرّفات فقط بأسماء العرض (`personName` و`groupName` و`formName`، ولا تُجرى عمليات البحث إلا بعد تطابق اشتراك)، ويسجّل عملية التسليم، ويقوم عامل في الخلفية بإرسال مغلّف JSON موقّع عبر POST مع إعادة المحاولة بتأخير متزايد وإعادة التسليم. المحرك في `Api/src/shared/webhooks/`، وإدارة الاشتراكات لكل كنيسة ضمن `/membership/webhooks` (`WebhookController.ts`). يعيد حقل `connectorType` تشكيل النص للخدمات مثل Slack وDiscord، ويذهب موصّل `mailchimp` أبعد من ذلك إذ يتولى تبادل HTTP بالكامل (الطريقة والرابط والمصادقة لكل حدث عبر واجهة Mailchimp البرمجية، مع تشفير بيانات الاعتماد في `webhooks.connectorConfig`). → **[Webhooks](../api/webhooks.md)**
 
 ### خادم MCP
 
-غلاف موجَّه للذكاء الاصطناعي عند `/mcp` (`Api/src/modules/mcp/`). ثلاث أدوات عامة (`list_endpoints` و`describe_endpoint` و`api_call`) تكشف واجهة REST بأكملها ديناميكيًا لأي عميل MCP. المصادقة هي رمز Bearer نفسه المستخدم في كل شيء آخر. بالنسبة للعملاء الذين يسجّلون الدخول عبر OAuth (موصّلات claude.ai المخصصة)، يحمل الرد 401 من `/mcp` ترويسة `WWW-Authenticate` تشير إلى `/.well-known/oauth-protected-resource`، ويعلن `/.well-known/oauth-authorization-server` عن نقاط نهاية `/membership/oauth` والتسجيل الديناميكي وPKCE وصفحة الموافقة `/oauth` في B1Admin (`WellKnownController.ts`، `OAuthMetadata.ts`). يعيد `api_call` الدخول إلى مكدس Express داخل العملية نفسها، بحيث تظل جميع قواعد الصلاحيات وتحديد نطاق الكنيسة سارية. → **[خادم MCP](../api/mcp)**
+غلاف موجَّه للذكاء الاصطناعي عند `/mcp` (`Api/src/modules/mcp/`). ثلاث أدوات عامة (`list_endpoints` و`describe_endpoint` و`api_call`) تكشف واجهة REST بأكملها ديناميكيًا لأي عميل MCP. المصادقة هي رمز Bearer نفسه المستخدم في كل شيء آخر. بالنسبة للعملاء الذين يسجّلون الدخول عبر OAuth (موصّلات claude.ai المخصصة)، يحمل الرد 401 من `/mcp` ترويسة `WWW-Authenticate` تشير إلى `/.well-known/oauth-protected-resource`، ويعلن `/.well-known/oauth-authorization-server` عن نقاط نهاية `/membership/oauth` والتسجيل الديناميكي وPKCE وصفحة الموافقة `/oauth` في B1Admin (`WellKnownController.ts`، `OAuthMetadata.ts`). يعيد `api_call` الدخول إلى مكدس Express داخل العملية نفسها، بحيث تظل جميع قواعد الصلاحيات وتحديد نطاق الكنيسة سارية. → **[خادم MCP](../api/mcp.md)**
 
 ### موفرو المحتوى
 
-مسار المحتوى الوارد، في الحزمة المنفصلة `Packages/content-providers` (`@churchapps/content-providers`) وليس في الواجهة البرمجية. ينفّذ كل موفر واجهة `IProvider` (`src/interfaces.ts`)، وتشمل `browse` و`getPlaylist` و`getInstructions`، إضافة إلى خطافات المصادقة، ويسجّل نفسه ذاتيًا في سجل `Map` (`src/providers/registry.ts`). هنا **يكون B1 عميل OAuth**: يُعلن الموفر عن `AuthType` من النوع `none` أو `oauth_pkce` أو `device_flow` أو `form_login`، وتتولى المساعدات المشتركة (`OAuthHelper` و`DeviceFlowHelper` و`TokenHelper` و`ApiHelper`) تنفيذ PKCE وتدفق الجهاز من جانب العميل مقابل المصدر الخارجي. يوجد اليوم أحد عشر موفرًا، من بينهم Planning Center وDropbox وLife.Church وCBN وBibleProject وJesus Film وLessons.church وB1.church، ويغذّون FreePlay وتطبيقات B1. → **[موفر محتوى FreePlay](../freeplay-content-provider)**
+مسار المحتوى الوارد، في الحزمة المنفصلة `Packages/content-providers` (`@churchapps/content-providers`) وليس في الواجهة البرمجية. ينفّذ كل موفر واجهة `IProvider` (`src/interfaces.ts`)، وتشمل `browse` و`getPlaylist` و`getInstructions`، إضافة إلى خطافات المصادقة، ويسجّل نفسه ذاتيًا في سجل `Map` (`src/providers/registry.ts`). هنا **يكون B1 عميل OAuth**: يُعلن الموفر عن `AuthType` من النوع `none` أو `oauth_pkce` أو `device_flow` أو `form_login`، وتتولى المساعدات المشتركة (`OAuthHelper` و`DeviceFlowHelper` و`TokenHelper` و`ApiHelper`) تنفيذ PKCE وتدفق الجهاز من جانب العميل مقابل المصدر الخارجي. يوجد اليوم أحد عشر موفرًا، من بينهم Planning Center وDropbox وLife.Church وCBN وBibleProject وJesus Film وLessons.church وB1.church، ويغذّون FreePlay وتطبيقات B1. → **[موفر محتوى FreePlay](../freeplay-content-provider.md)**
 
 **خطط السنة** تعتمد على هذا المسار. يقوم ناشر منهج (لديه صلاحية `lessons.edit`) بالحفاظ على تسلسلات مرتبة للأسابيع 1/2/3 في لوحة إدارة Lessons.church (جداول `LessonsApi` وهي `yearPlans` و`yearPlanWeeks`، مع `startMonth` اختياري و`anchor` لكل أسبوع بقيمة `easter` أو `christmas`). ويقدّم `GET /yearPlans/public` في LessonsApi الخطط المفعّلة بشكل مجهول، مع ملء البرنامج والدراسة والمكان لكل أسبوع من شجرة الدروس. يستهلك **Serving → Plans → Schedule Lesson → Apply Year Plan** في B1Admin نقطة النهاية هذه، ويكتب خطة DoingApi واحدة لكل أسبوع مُدرج (`providerId=lessonschurch`، و`providerPlanId=/lessons/{programId}/{studyId}/{lessonId}/{venueId}`). تحل الخطط ذات `startMonth` الأسابيع المرتبطة بتاريخ مقابل السنة المختارة (عيد الفصح بحساب Gregorian computus، وعيد الميلاد كأول أحد يسبقه أو يساوي 25 ديسمبر) وتملأ الفترات بينها. أما الخطط بدون `startMonth` فتربط الأسبوع N بـ `startDate + (N−1)×7` يومًا. تُتخطى الأسابيع القادمة من موفري OLF الخارجيين، أو التي يكون مسارها غير مكتمل، وقت التطبيق. تعدّل الكنائس الخطط الناتجة كأي خطط أخرى، ويعرض FreePlay ما هو موجود في الخطة.
 
@@ -122,12 +123,12 @@ title: "نقاط التكامل والتوسيع"
 
 | نقطة التكامل | آلية المصادقة | الاتجاه | مكان التنفيذ | المرجع |
 |---|---|---|---|---|
-| واجهة REST API | JWT من نوع `Bearer` أو مفتاح `cak_…` | وارد | `Api/src/modules/*` | [مفاتيح API](../api/api-keys) |
-| مفاتيح API | رمز `cak_` مُجزَّأ بـ SHA-256 | بيانات اعتماد | `Api/.../membership/controllers/ApiKeyController.ts` | [مفاتيح API](../api/api-keys) |
-| OAuth 2.0 / التطبيقات المتصلة | رمز التفويض (PKCE) · الجهاز · التحديث ← JWT؛ تسجيل العميل الديناميكي | وارد | `Api/.../membership/controllers/OAuthController.ts` | [التطبيقات المتصلة](../api/connected-apps) |
-| Webhooks | سر لكل خطاف، وتوقيع HMAC-SHA256 | صادر | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks) |
-| خادم MCP | JWT من نوع `Bearer` أو OAuth JWT (يُكتشف عبر `/.well-known`) أو مفتاح `cak_…` | وارد (الذكاء الاصطناعي) | `Api/src/modules/mcp/` | [خادم MCP](../api/mcp) |
-| موفرو المحتوى | حسب كل موفر: بدون / OAuth PKCE / الجهاز / نموذج | محتوى وارد | `Packages/content-providers/` | [موفر المحتوى](../freeplay-content-provider) |
+| واجهة REST API | JWT من نوع `Bearer` أو مفتاح `cak_…` | وارد | `Api/src/modules/*` | [مفاتيح API](../api/api-keys.md) |
+| مفاتيح API | رمز `cak_` مُجزَّأ بـ SHA-256 | بيانات اعتماد | `Api/.../membership/controllers/ApiKeyController.ts` | [مفاتيح API](../api/api-keys.md) |
+| OAuth 2.0 / التطبيقات المتصلة | رمز التفويض (PKCE) · الجهاز · التحديث ← JWT؛ تسجيل العميل الديناميكي | وارد | `Api/.../membership/controllers/OAuthController.ts` | [التطبيقات المتصلة](../api/connected-apps.md) |
+| Webhooks | سر لكل خطاف، وتوقيع HMAC-SHA256 | صادر | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks.md) |
+| خادم MCP | JWT من نوع `Bearer` أو OAuth JWT (يُكتشف عبر `/.well-known`) أو مفتاح `cak_…` | وارد (الذكاء الاصطناعي) | `Api/src/modules/mcp/` | [خادم MCP](../api/mcp.md) |
+| موفرو المحتوى | حسب كل موفر: بدون / OAuth PKCE / الجهاز / نموذج | محتوى وارد | `Packages/content-providers/` | [موفر المحتوى](../freeplay-content-provider.md) |
 
 ## الموصّلات الجاهزة
 
@@ -143,9 +144,9 @@ title: "نقاط التكامل والتوسيع"
 
 ## صفحات ذات صلة
 
-- [مفاتيح API](../api/api-keys): أبسط بيانات اعتماد وكتالوج النطاقات
-- [التطبيقات المتصلة وOAuth](../api/connected-apps): تدفقات الموافقة متعددة المستأجرين
-- [Webhooks](../api/webhooks): نظام الأحداث الصادرة
-- [خادم MCP](../api/mcp): غلاف تكامل الذكاء الاصطناعي
-- [موفر محتوى FreePlay](../freeplay-content-provider): أن تصبح مصدر محتوى وارد
+- [مفاتيح API](../api/api-keys.md): أبسط بيانات اعتماد وكتالوج النطاقات
+- [التطبيقات المتصلة وOAuth](../api/connected-apps.md): تدفقات الموافقة متعددة المستأجرين
+- [Webhooks](../api/webhooks.md): نظام الأحداث الصادرة
+- [خادم MCP](../api/mcp.md): غلاف تكامل الذكاء الاصطناعي
+- [موفر محتوى FreePlay](../freeplay-content-provider.md): أن تصبح مصدر محتوى وارد
 - [التكاملات (للمستخدم النهائي)](/docs/b1-admin/integrations/): أدلة إعداد الموصّلات الجاهزة

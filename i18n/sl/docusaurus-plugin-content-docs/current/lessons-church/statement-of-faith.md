@@ -1,5 +1,6 @@
 ---
 title: Izjava o veri
+description: "Kaj ChurchApps veruje o Bogu, Jezusu, Svetem Duhu, Svetem pismu, odrešenju in Cerkvi ter merilo za pregled kurikula Lessons.church."
 ---
 
 # Izjava o veri

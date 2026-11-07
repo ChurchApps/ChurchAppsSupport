@@ -1,5 +1,6 @@
 ---
 title: "Confirmations de présence aux événements"
+description: "Répondez Oui, Peut-être ou Non aux événements de groupe sur B1.church et voyez le nombre de participants. Les responsables consultent aussi les réponses."
 ---
 
 # Confirmations de présence aux événements
@@ -30,14 +31,14 @@ Votre confirmation s'applique à cette occurrence précise -- pour une réunion 
 ## Pour les responsables de groupe
 
 - **Consulter les réponses** -- Les responsables voient un lien **Voir les réponses** sur chaque événement du calendrier du groupe (**Tous les événements**). Il ouvre la fiche **Réponses**, qui liste toutes les personnes selon leur réponse -- Présent, Peut-être et Absent. Si personne n'a encore répondu, elle affiche « Aucune réponse pour le moment ».
-- **Activer ou désactiver les confirmations de présence** -- Lors de la création ou de la modification d'un événement, utilisez le commutateur **Autoriser les confirmations de présence**. Les événements pour lesquels les confirmations sont désactivées n'affichent aucun bouton de réponse. Le personnel qui crée des événements en masse depuis B1 Admin dispose de la même option -- voir [Calendrier du groupe](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Activer ou désactiver les confirmations de présence** -- Lors de la création ou de la modification d'un événement, utilisez le commutateur **Autoriser les confirmations de présence**. Les événements pour lesquels les confirmations sont désactivées n'affichent aucun bouton de réponse. Le personnel qui crée des événements en masse depuis B1 Admin dispose de la même option -- voir [Calendrier du groupe](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-Les confirmations de présence servent à faire un simple décompte. Si votre événement nécessite des détails d'inscription, une gestion de la capacité ou un paiement, utilisez plutôt l'[inscription à un événement](../events/registering).
+Les confirmations de présence servent à faire un simple décompte. Si votre événement nécessite des détails d'inscription, une gestion de la capacité ou un paiement, utilisez plutôt l'[inscription à un événement](../events/registering.md).
 :::
 
 ## Articles connexes
 
 - [Détails du groupe](./group-details.md) -- Tout ce qui se trouve sur la page de détails du groupe
-- [Calendrier du groupe (B1 Admin)](../../b1-admin/groups/group-calendar) -- Comment le personnel et les responsables gèrent les événements et les confirmations de présence du groupe
-- [Inscription aux événements](../events/registering) -- Inscription complète à un événement avec gestion de la capacité et des paiements
+- [Calendrier du groupe (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Comment le personnel et les responsables gèrent les événements et les confirmations de présence du groupe
+- [Inscription aux événements](../events/registering.md) -- Inscription complète à un événement avec gestion de la capacité et des paiements

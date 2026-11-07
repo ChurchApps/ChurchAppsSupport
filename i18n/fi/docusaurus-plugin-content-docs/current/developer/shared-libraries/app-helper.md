@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "Viite @churchapps/apphelper-paketille: alipolkujen sisääntulopisteet, sovellukset jotka käyttävät kutakin exportia sekä paikallinen kehitys ja julkaisu."
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ Paketti `@churchapps/apphelper` tarjoaa jaettuja React-komponentteja ja apuohjel
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Asenna **Node.js** ja **Git** -- katso [Esivaatimukset](../setup/prerequisites)
+- Asenna **Node.js** ja **Git** -- katso [Esivaatimukset](../setup/prerequisites.md)
 - Tutustu [Packages-työtilaan](./index.md) ja julkaisuprosessiin
 
 </div>
@@ -92,6 +93,6 @@ Julkaisut kulkevat changeset-työkalun kautta: aja `yarn changeset` työtilan ju
 
 ## Aiheeseen liittyvät artikkelit
 
-- **[Helpers](./helpers)** -- AppHelperin rinnalla käytettävä peruspaketti apufunktioille
-- **[Verkkosovellukset](../web-apps/)** -- Verkkosovellukset, jotka käyttävät tätä pakettia
+- **[Helpers](./helpers.md)** -- AppHelperin rinnalla käytettävä peruspaketti apufunktioille
+- **[Verkkosovellukset](../web-apps/index.md)** -- Verkkosovellukset, jotka käyttävät tätä pakettia
 - **[Jaettujen kirjastojen yleiskatsaus](./index.md)** -- Työtilan asennus, julkaisuprosessi ja paikallisen linkityksen työnkulku

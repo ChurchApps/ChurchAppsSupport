@@ -1,5 +1,7 @@
 ---
-title: "Pradžia"
+title: "Pradžia su B1 Checkin"
+sidebar_label: "Pradžia"
+description: "Nustatykite B1 Checkin programėlę Android planšetėje: įdiekite, prisijunkite, pasirinkite bažnyčią ir prijunkite etikečių spausdintuvą."
 ---
 
 # Pradžia su B1 Church Checkin
@@ -27,9 +29,9 @@ B1 Church Checkin įdiegti užtrunka vos kelias minutes. Šiame skyriuje paaišk
 
 Pirmą kartą paleidę programėlę, praeisite tris žingsnius:
 
-1. **[Prisijunkite](./logging-in)** -- Įveskite el. pašto adresą ir slaptažodį, kad patvirtintumėte tapatybę.
-2. **[Pasirinkite savo bažnyčią](./logging-in)** -- Jei jūsų paskyra susieta su kelioms bažnyčiomis, pasirinkite, kurią šis terminalas turėtų aptarnauti.
-3. **[Nustatykite spausdintuvą](./printer-setup)** -- Sukonfigūruokite tinklo spausdintuvą etiketėms spausdinti arba praleiskite šį žingsnį, jei etiketių jums nereikia.
+1. **[Prisijunkite](./logging-in.md)** -- Įveskite el. pašto adresą ir slaptažodį, kad patvirtintumėte tapatybę.
+2. **[Pasirinkite savo bažnyčią](./logging-in.md)** -- Jei jūsų paskyra susieta su kelioms bažnyčiomis, pasirinkite, kurią šis terminalas turėtų aptarnauti.
+3. **[Nustatykite spausdintuvą](./printer-setup.md)** -- Sukonfigūruokite tinklo spausdintuvą etiketėms spausdinti arba praleiskite šį žingsnį, jei etiketių jums nereikia.
 
 Po pirmojo prisijungimo programėlė išsaugo jūsų prisijungimo duomenis ir pasirinktą bažnyčią. Kitais paleidimais ji automatiškai pereis tiesiai į pamaldų ekraną.
 
@@ -43,6 +45,6 @@ Prieš nustatydami terminalą, įsitikinkite, kad bažnyčios administratorius B
 
 ## Kiti žingsniai
 
-- [Prisijungimas](./logging-in) -- Išsamios prisijungimo ir bažnyčios pasirinkimo instrukcijos.
-- [Spausdintuvo nustatymas](./printer-setup) -- Kaip aptikti, pasirinkti ir išbandyti etikečių spausdintuvą.
-- [Registracijos darbo eiga](../check-in/) -- Sužinokite visą registracijos eigą, kai terminalas bus nustatytas.
+- [Prisijungimas](./logging-in.md) -- Išsamios prisijungimo ir bažnyčios pasirinkimo instrukcijos.
+- [Spausdintuvo nustatymas](./printer-setup.md) -- Kaip aptikti, pasirinkti ir išbandyti etikečių spausdintuvą.
+- [Registracijos darbo eiga](../check-in/index.md) -- Sužinokite visą registracijos eigą, kai terminalas bus nustatytas.

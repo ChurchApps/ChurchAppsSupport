@@ -1,5 +1,6 @@
 ---
 title: "Danh sách phát"
+description: "Nhóm các bài giảng thành loạt bài trong B1 Admin để khách truy cập trang web B1.church của bạn có thể xem và theo dõi từng loạt bài theo thứ tự."
 ---
 
 # Danh sách phát
@@ -39,10 +40,10 @@ Hãy tạo danh sách phát trước khi thêm bài giảng. Như vậy, bạn c
 
 ## Thêm bài giảng vào danh sách phát
 
-Khi bạn [thêm hoặc chỉnh sửa một bài giảng](managing-sermons), hãy gán bài giảng đó vào danh sách phát bằng menu thả xuống **Playlist** (Danh sách phát). Tất cả các bài giảng được gán cho cùng một danh sách phát sẽ được nhóm lại và hiển thị theo thứ tự trên trang web của bạn.
+Khi bạn [thêm hoặc chỉnh sửa một bài giảng](./managing-sermons.md), hãy gán bài giảng đó vào danh sách phát bằng menu thả xuống **Playlist** (Danh sách phát). Tất cả các bài giảng được gán cho cùng một danh sách phát sẽ được nhóm lại và hiển thị theo thứ tự trên trang web của bạn.
 
 :::info
-Bạn cũng có thể gán bài giảng vào danh sách phát trong lúc [Nhập hàng loạt](bulk-import). Khi nhập từ YouTube hoặc Vimeo, hãy chọn một danh sách phát từ menu thả xuống **Import Into Playlist** (Nhập vào danh sách phát) trước khi nhấn **Import** (Nhập).
+Bạn cũng có thể gán bài giảng vào danh sách phát trong lúc [Nhập hàng loạt](./bulk-import.md). Khi nhập từ YouTube hoặc Vimeo, hãy chọn một danh sách phát từ menu thả xuống **Import Into Playlist** (Nhập vào danh sách phát) trước khi nhấn **Import** (Nhập).
 :::
 
 ## Cách danh sách phát hiển thị trên trang web của bạn
@@ -55,5 +56,5 @@ Danh sách phát được hiển thị trên trang web B1.church của bạn dư
 
 ## Các bước tiếp theo
 
-- [Quản lý bài giảng](managing-sermons) -- Thêm từng bài giảng vào danh sách phát của bạn
-- [Nhập hàng loạt](bulk-import) -- Nhập nhiều bài giảng cùng lúc và gán chúng vào danh sách phát
+- [Quản lý bài giảng](./managing-sermons.md) -- Thêm từng bài giảng vào danh sách phát của bạn
+- [Nhập hàng loạt](./bulk-import.md) -- Nhập nhiều bài giảng cùng lúc và gán chúng vào danh sách phát

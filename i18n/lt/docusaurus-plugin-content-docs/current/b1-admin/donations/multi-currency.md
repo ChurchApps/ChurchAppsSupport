@@ -1,5 +1,6 @@
 ---
 title: "Kelių valiutų palaikymas"
+description: "Registruokite aukas skirtingomis valiutomis B1 Admin: rankinis įvedimas, Stripe internetiniai aukojimai ir kaip sumuojamos bendros sumos."
 ---
 
 # Kelių valiutų palaikymas

@@ -1,12 +1,13 @@
 ---
 title: "Registrácie na udalosti"
+description: "Ako fungujú registrácie na udalosti v B1 Admin a B1App: typy účastníkov, platené doplnky, zľavové kódy, platby cez bránu darov a povyšovanie z čakacej listiny."
 ---
 
 # Registrácie na udalosti
 
 <div class="article-intro">
 
-Natívna registrácia na udalosti sa nachádza v module obsahu a od vlny platených registrácií obsahuje plný obchodný model: účastnícke typy s cenou, voliteľné doplnky s cenou, zľavové kódy, platby cez existujúcu platobnú bránu cirkvi pre dary a čakaciu listinu riadenú stavom. Platobná cesta zámerne využíva rovnaký systém ako dary. Registračný kontrolér účtuje cez zdieľanú abstrakciu `GatewayService` / `IGatewayProvider`, ktorá je popísaná na stránke [Dary](./giving), takže modul obsahu neobsahuje žiadne údaje o karte ani znalosti SDK platobnej brány. Táto stránka popisuje dátový model, pravidlá cien a kapacity a postupy registrácie, platby a čakacej listiny.
+Natívna registrácia na udalosti sa nachádza v module obsahu a od vlny platených registrácií obsahuje plný obchodný model: účastnícke typy s cenou, voliteľné doplnky s cenou, zľavové kódy, platby cez existujúcu platobnú bránu cirkvi pre dary a čakaciu listinu riadenú stavom. Platobná cesta zámerne využíva rovnaký systém ako dary. Registračný kontrolér účtuje cez zdieľanú abstrakciu `GatewayService` / `IGatewayProvider`, ktorá je popísaná na stránke [Dary](./giving.md), takže modul obsahu neobsahuje žiadne údaje o karte ani znalosti SDK platobnej brány. Táto stránka popisuje dátový model, pravidlá cien a kapacity a postupy registrácie, platby a čakacej listiny.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Tokenizácia prebieha v prehliadači rovnako ako pri darovaniach (pozri [Dary](./giving)). Sprievodca používa register platobných poskytovateľov apphelper, takže prihlásení členovia môžu platiť uloženými kartami a hostia zadávajú a tokenizujú novú kartu. Kontrolér zachováva špecifiká poskytovateľov z `DonateController` (ID platobných metód Kingdom Funding `pm-{id}` a odpovede Stripe SCA `requires_action`, ktoré sa vracajú klientovi bez zaznamenania platby). Úspešná platba zapíše riadok do `registrationPayments`, zvýši `amountPaid` a potvrdí registráciu. **Vrátenie peňazí nie je implementované.** Zrušená zaplatená registrácia si ponechá záznamy o platbách a prípadné vrátenie peňazí sa vykoná mimo systému v paneli platobnej brány.
+Tokenizácia prebieha v prehliadači rovnako ako pri darovaniach (pozri [Dary](./giving.md)). Sprievodca používa register platobných poskytovateľov apphelper, takže prihlásení členovia môžu platiť uloženými kartami a hostia zadávajú a tokenizujú novú kartu. Kontrolér zachováva špecifiká poskytovateľov z `DonateController` (ID platobných metód Kingdom Funding `pm-{id}` a odpovede Stripe SCA `requires_action`, ktoré sa vracajú klientovi bez zaznamenania platby). Úspešná platba zapíše riadok do `registrationPayments`, zvýši `amountPaid` a potvrdí registráciu. **Vrátenie peňazí nie je implementované.** Zrušená zaplatená registrácia si ponechá záznamy o platbách a prípadné vrátenie peňazí sa vykoná mimo systému v paneli platobnej brány.
 
 Obe vstupné body používajú rovnakú cestu v kóde: `register` (platba pri registrácii) a `pay` (doplatok alebo dokončenie registrácie z čakacej listiny).
 
@@ -147,7 +148,7 @@ Vyhľadávania naprieč modulmi (vyhľadanie alebo vytvorenie osoby hosťa, nač
 
 ## Súvisiace stránky
 
-- [Dary](./giving) — abstrakcia brány, register poskytovateľov a model tokenizácie, ktoré táto funkcia opätovne využíva
-- [Koncové body obsahu](../api/endpoints/content) — REST rozhranie modulu obsahu
-- [Webhooky](../api/webhooks) — udalosť `registration.created`
-- [Štruktúra modulov](../api/module-structure) — ako je modul obsahu organizovaný na strane servera
+- [Dary](./giving.md) — abstrakcia brány, register poskytovateľov a model tokenizácie, ktoré táto funkcia opätovne využíva
+- [Koncové body obsahu](../api/endpoints/content.md) — REST rozhranie modulu obsahu
+- [Webhooky](../api/webhooks.md) — udalosť `registration.created`
+- [Štruktúra modulov](../api/module-structure.md) — ako je modul obsahu organizovaný na strane servera

@@ -1,5 +1,7 @@
 ---
-title: "Profile"
+title: "Profile at mga Naitalagang Card sa B1 Mobile"
+sidebar_label: "Profile"
+description: "Pamahalaan ang pangalan, contact, sambahayan, at privacy sa B1 Mobile profile, at asikasuhin ang mga workflow card at gawaing itinalaga sa iyo."
 ---
 
 # Profile
@@ -20,7 +22,7 @@ Ang tab na **Profile** ay nagbibigay-daan sa iyong tingnan at i-edit ang iyong p
 
 ### Sambahayan
 
-Ang tab na **Household** ay nagpapakita ng iyong mga miyembro ng pamilya at kanilang mga papel sa loob ng iyong sambahayan. Ang impormasyong ito ay ginagamit para sa mga feature tulad ng [check-in](../checkin/), kung saan maaari mong i-check in ang buong pamilya mo nang sabay-sabay.
+Ang tab na **Household** ay nagpapakita ng iyong mga miyembro ng pamilya at kanilang mga papel sa loob ng iyong sambahayan. Ang impormasyong ito ay ginagamit para sa mga feature tulad ng [check-in](../checkin/index.md), kung saan maaari mong i-check in ang buong pamilya mo nang sabay-sabay.
 
 ### Visibility
 
@@ -42,6 +44,6 @@ Ang tab na **Account** ay nagbibigay ng access sa iyong mga setting ng seguridad
 
 ## Mga Susunod na Hakbang
 
-- [Pag-edit ng Iyong Profile](./editing-profile) -- I-update ang iyong pangalan, mga detalye ng pakikipag-ugnayan, at larawan
-- [Sambahayan](./household) -- Tingnan at pamahalaan ang iyong mga miyembro ng pamilya
-- [Mga Setting ng Privacy](./privacy-settings) -- Kontrolin kung ano ang makikita ng iba tungkol sa iyo
+- [Pag-edit ng Iyong Profile](./editing-profile.md) -- I-update ang iyong pangalan, mga detalye ng pakikipag-ugnayan, at larawan
+- [Sambahayan](./household.md) -- Tingnan at pamahalaan ang iyong mga miyembro ng pamilya
+- [Mga Setting ng Privacy](./privacy-settings.md) -- Kontrolin kung ano ang makikita ng iba tungkol sa iyo

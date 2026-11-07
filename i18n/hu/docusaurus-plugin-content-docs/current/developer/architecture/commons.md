@@ -1,5 +1,6 @@
 ---
 title: "Content Commons"
+description: "Hogyan kerülnek a felhasználók által beküldött énekek, leckék és sablonok a B1 Admin szerveradminisztrációjának közös moderációs sorába, a beküldéstől a közzétételig."
 ---
 
 # Content Commons — megosztott eszköztár és moderálás

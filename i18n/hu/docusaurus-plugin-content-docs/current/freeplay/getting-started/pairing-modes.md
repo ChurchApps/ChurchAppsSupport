@@ -1,5 +1,6 @@
 ---
 title: "Párosítási mód kiválasztása"
+description: "A megfelelő párosítási mód kiválasztása egy FreePlay TV-hez: naptár a FreePlay Adminból, szolgálati terv a B1 Adminból, vagy egyáltalán nincs párosítás."
 ---
 
 # Párosítási mód kiválasztása
@@ -32,7 +33,7 @@ Adja meg a kódot a **FreePlay Adminban** a [admin.freeplay.church](https://admi
 
 **Legjobb választás:** Előtéri és folyosói hirdetések, bejelentések körforgása, valamint osztálytermek, ahol az órának már az emberek belépésekor működnie kell.
 
-További részletekért lásd: **[Ütemezett mód](../scheduled-mode/)**.
+További részletekért lásd: **[Ütemezett mód](../scheduled-mode/index.md)**.
 
 ## Tervezési mód (B1 Admin)
 
@@ -42,7 +43,7 @@ Adja meg a kódot a **B1 Adminban**, ha azt szeretné, hogy a TV egy istentiszte
 
 **Legjobb választás:** TV-k, amelyek a heti istentiszteleti tervhez kapcsolódó tartalmat mutatnak, ahol valaki elindítja a lejátszást, amikor eljön az ideje.
 
-További részletekért lásd: **[Tervezési mód](../plan-mode/)**.
+További részletekért lásd: **[Tervezési mód](../plan-mode/index.md)**.
 
 :::tip
 Az aktuális istentiszteleti tervet ütemezetten is lejátszhatja. A FreePlay Adminban adjon hozzá egy naptárbejegyzést, és a **Istentiszteleti tervek** alatt válassza ki a tervtípust.
@@ -50,7 +51,7 @@ Az aktuális istentiszteleti tervet ütemezetten is lejátszhatja. A FreePlay Ad
 
 ## Tartalomszolgáltatók (párosítás nélkül)
 
-Ha egyáltalán nem kell párosítania a TV-t, közvetlenül böngészhet a tartalomszolgáltatók között. Az olyan szolgáltatóknál, mint a [Lessons.church](../../lessons-church/) és a Bible Project, letölthető és bármikor lejátszható tartalmak érhetők el.
+Ha egyáltalán nem kell párosítania a TV-t, közvetlenül böngészhet a tartalomszolgáltatók között. Az olyan szolgáltatóknál, mint a [Lessons.church](../../lessons-church/index.md) és a Bible Project, letölthető és bármikor lejátszható tartalmak érhetők el.
 
 **Legjobb választás:** TV-k, ahol az önkéntesek minden héten maguk döntenek a lejátszandó tartalomról, vagy ha szeretné felfedezni, mi érhető el.
 
@@ -60,6 +61,6 @@ A **Szolgáltatók** képernyőt bármikor megnyithatja az oldalsáv alján lév
 
 ## Kapcsolódó cikkek
 
-- **[Ütemezett mód](../scheduled-mode/)** - TV-k beütemezése a FreePlay Adminnal
-- **[Tervezési mód](../plan-mode/)** - Teljes útmutató az istentiszteleti tervvel való párosításhoz
-- **[Tartalomszolgáltatók](../content-providers/)** - Tartalmak böngészése és letöltése külső forrásokból
+- **[Ütemezett mód](../scheduled-mode/index.md)** - TV-k beütemezése a FreePlay Adminnal
+- **[Tervezési mód](../plan-mode/index.md)** - Teljes útmutató az istentiszteleti tervvel való párosításhoz
+- **[Tartalomszolgáltatók](../content-providers/index.md)** - Tartalmak böngészése és letöltése külső forrásokból

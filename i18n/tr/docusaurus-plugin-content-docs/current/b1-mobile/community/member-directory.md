@@ -1,5 +1,7 @@
 ---
-title: "Üye Dizini"
+title: "B1 Mobile Uygulamasında Üye Dizini"
+sidebar_label: "Üye Dizini"
+description: "B1 Mobile üye dizini ile kilisenizdeki kişileri bulun: alfabetik göz atın, isme göre arayın ve profilleri ile hane bağlantılarını açın."
 ---
 
 # Üye Dizini
@@ -13,7 +15,7 @@ B1 Mobile'daki üye dizini, kilisenizdeki kişilere göz atmanızı ve onları a
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
 
 </div>
 
@@ -51,5 +53,5 @@ Her profilde görünen bilgiler, kilisenizin gizlilik ve dizin ayarlarına bağl
 
 ## İlgili Makaleler
 
-- [Mesajlaşma](./messaging) -- Dizinde bulduğunuz biriyle özel mesaj yoluyla iletişime geçin
+- [Mesajlaşma](./messaging.md) -- Dizinde bulduğunuz biriyle özel mesaj yoluyla iletişime geçin
 - [Gizlilik Ayarları](../profile/privacy-settings.md) -- Dizinde başkalarının sizin hakkınızda neler görebileceğini kontrol edin

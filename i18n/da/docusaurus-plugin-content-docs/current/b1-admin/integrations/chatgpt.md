@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "Forbind ChatGPT til din kirkes B1-data med en API-nøgle, så du kan stille spørgsmål i almindeligt sprog om personer, gaver og fremmøde i B1 Admin."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Forbind ChatGPT til din kirkes B1-data, og stil spørgsmål til det på almindel
 </div>
 
 :::tip Anbefalet: prøv Claude først — det er gratis
-[Claude](./claude) forbinder til B1 på sin **gratis plan** og er klar på under 3 minutter — tilføj blot B1 som en connector og log ind med din B1-konto. Ingen nøgle er nødvendig. Det er den nemmeste måde for din kirke at prøve AI sammen med B1, før I betaler for noget.
+[Claude](./claude.md) forbinder til B1 på sin **gratis plan** og er klar på under 3 minutter — tilføj blot B1 som en connector og log ind med din B1-konto. Ingen nøgle er nødvendig. Det er den nemmeste måde for din kirke at prøve AI sammen med B1, før I betaler for noget.
 :::
 
 ## Sådan konfigurerer du det
@@ -254,5 +255,5 @@ Alle med linket kan stille spørgsmål i almindeligt sprog. Nøglens scopes gæl
 
 - [API Keys](/docs/developer/api/api-keys) — fuld scope-reference
 - [MCP Server (udviklerreference)](/docs/developer/api/mcp) — protokoldetaljer og værktøjsskemaer
-- [Claude](./claude) — samme idé, til Anthropics modeller
+- [Claude](./claude.md) — samme idé, til Anthropics modeller
 - [REST API-reference](/docs/developer/api/endpoints) — alle endpoints, en Custom GPT-action kan kalde

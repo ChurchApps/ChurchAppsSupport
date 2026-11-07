@@ -1,5 +1,6 @@
 ---
 title: "Slack i Discord"
+description: "Publikuj zdarzenia B1 Admin, takie jak nowe osoby, darowizny i zgłoszenia formularzy, na kanale Slack lub Discord przez webhook przychodzący, bez Zapier."
 ---
 
 # Slack i Discord
@@ -114,7 +115,7 @@ Jeśli coś się nie powiodło (czerwona odznaka `failed` lub `exhausted`), okno
 
 - **Wiadomość się nie pojawia, a status dostarczenia to `400`**: zwykle typ łącznika jest ustawiony na **Standard**, mimo że adres to adres Slacka lub Discorda. Slack i Discord odrzucają surową kopertę. Przełącz listę na **Slack** lub **Discord** i wyślij test ponownie.
 - **Webhook został automatycznie wyłączony**: po 3 kolejnych nieudanych dostarczeniach B1 wyłącza webhook. Popraw adres (lub wygeneruj go ponownie w Slacku lub Discordzie) i ponownie włącz **Aktywny**.
-- **Wiadomość dotarła, ale brakuje w niej szczegółów**: każda platforma czatu ogranicza rozmiar wiadomości. Wiadomości B1 są z założenia jednowierszowe. Jeśli potrzebujesz bogatszych powiadomień, użyj [Zapier](./zapier) lub [Make](./make), aby złożyć pełniejszą wiadomość Slack za pomocą ich akcji Slack.
+- **Wiadomość dotarła, ale brakuje w niej szczegółów**: każda platforma czatu ogranicza rozmiar wiadomości. Wiadomości B1 są z założenia jednowierszowe. Jeśli potrzebujesz bogatszych powiadomień, użyj [Zapier](./zapier.md) lub [Make](./make.md), aby złożyć pełniejszą wiadomość Slack za pomocą ich akcji Slack.
 
 ## Późniejsza zmiana typu łącznika
 
@@ -122,6 +123,6 @@ Typ łącznika możesz zmienić w istniejącym webhooku. Zmiana zadziała przy n
 
 ## Zobacz także
 
-- [Zapier](./zapier): wieloetapowe przepływy uruchamiane zdarzeniami B1
-- [Make](./make): wizualny kreator scenariuszy
+- [Zapier](./zapier.md): wieloetapowe przepływy uruchamiane zdarzeniami B1
+- [Make](./make.md): wizualny kreator scenariuszy
 - [Webhooki (dokumentacja dla deweloperów)](/docs/developer/api/webhooks): pełny format ładunku i podpisu, jeśli kiedykolwiek skierujesz webhook na własny serwer

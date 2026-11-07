@@ -1,5 +1,6 @@
 ---
 title: "Doing-päätepisteet"
+description: "Päätepisteiden viiteopas Doing-API:lle, joka kattaa palvelusuunnitelmat, vapaaehtoistehtävät, tehtävät ja automaatiot B1 Adminissa, sisältäen polut, todennuksen ja käyttöoikeudet."
 ---
 
 # Doing-päätepisteet
@@ -278,6 +279,6 @@ Välittää pyynnöt ulkoisille sisältöpalveluille (esim. ProPresenter, EasyWo
 
 ## Liittyvät sivut
 
-- [Jäsenpäätepisteet](./membership) — Henkilöt, ryhmät, roolit ja oikeudet
-- [Läsnäolopäätepisteet](./attendance) — Palvelu- ja vierailuseuranta
-- [Moduulin rakenne](../module-structure) — Koodin järjestelyn mallit
+- [Jäsenpäätepisteet](./membership.md) — Henkilöt, ryhmät, roolit ja oikeudet
+- [Läsnäolopäätepisteet](./attendance.md) — Palvelu- ja vierailuseuranta
+- [Moduulin rakenne](../module-structure.md) — Koodin järjestelyn mallit

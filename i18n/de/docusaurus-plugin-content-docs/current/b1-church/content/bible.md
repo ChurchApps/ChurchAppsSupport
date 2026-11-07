@@ -1,5 +1,7 @@
 ---
-title: "Bibel"
+title: "Die Bibel auf B1.church lesen"
+sidebar_label: "Bibel"
+description: "Die Bibel im B1.church-Bibelleser lesen, mit Steuerung für Buch, Kapitel und Übersetzung sowie einer Bibelseite für tägliches Lesen."
 ---
 
 # Bibel

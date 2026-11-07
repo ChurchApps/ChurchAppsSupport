@@ -1,5 +1,6 @@
 ---
 title: "체크인 안전"
+description: "B1 Admin에서 어린이 안전 설정을 구성합니다: 교실 정원, 봉사자 비율, 신뢰할 수 있는 픽업 목록, 체크인 시 학부모 호출 문자."
 ---
 
 # 체크인 안전
@@ -15,7 +16,7 @@ B1에는 체크인을 위한 자식 안전 컨트롤 세트가 포함되어 있�
 
 - [출석 구조](setup.md) 및 [체크인 키오스크](check-in.md) 설정
 - 객실은 서비스 시간에 연결된 [그룹](../groups/creating-groups.md)입니다 — 아래 안전 설정은 그룹에 존재합니다
-- 부모 호출 및 응급 공지는 연결된 문자 메시지 공급자([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream) 또는 Mutual Ministry)를 필요로 합니다
+- 부모 호출 및 응급 공지는 연결된 문자 메시지 공급자([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md) 또는 Mutual Ministry)를 필요로 합니다
 
 </div>
 
@@ -90,12 +91,12 @@ B1에는 체크인을 위한 자식 안전 컨트롤 세트가 포함되어 있�
 
 문자를 거부한 사람이나 파일에 모바일 번호가 없는 사람은 자동으로 건너뜁니다 — 키오스크는 몇 개의 메시지가 전송되었고 몇 개가 건너뛰어졌는지 보고합니다.
 
-[체크아웃 및 자식 안전](../../b1-checkin/check-in/checking-out)에서 키오스크 측 안내를 참조하세요.
+[체크아웃 및 자식 안전](../../b1-checkin/check-in/checking-out.md)에서 키오스크 측 안내를 참조하세요.
 
 ## 관련 기사
 
 - [체크인](check-in.md) — 키오스크 설정 및 하드웨어
-- [체크아웃 및 자식 안전](../../b1-checkin/check-in/checking-out) — 키오스크 체크아웃, 픽업 확인 및 호출 흐름
+- [체크아웃 및 자식 안전](../../b1-checkin/check-in/checking-out.md) — 키오스크 체크아웃, 픽업 확인 및 호출 흐름
 - [그룹 생성](../groups/creating-groups.md) — 객실 설정이 있는 곳
 - [출석 설정](setup.md) — 서비스, 서비스 시간 및 객실 할당
 - [비공개 메시지에 대한 최소 나이](../settings/mobile-app.md#member-directory--messaging-settings) — 디렉토리에 유지하면서 어린이와의 새 개인 메시지 대화를 차단합니다

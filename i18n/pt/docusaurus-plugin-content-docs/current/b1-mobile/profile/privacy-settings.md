@@ -1,5 +1,6 @@
 ---
 title: "Configurações de Privacidade"
+description: "Controle quais dados do perfil, como telefone, e-mail e endereço, outros membros veem no diretório do B1 Mobile, e revise alterações pendentes."
 ---
 
 # Configurações de Privacidade
@@ -13,7 +14,7 @@ A aba **Visibilidade** na tela do seu Perfil permite controlar quais informaçõ
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
+- [Instale o B1 Mobile](../getting-started/installing.md) e [faça login](../getting-started/logging-in.md) na sua conta
 
 </div>
 
@@ -52,8 +53,8 @@ A aba **Conta** oferece acesso às suas configurações de segurança. Use essa 
 
 | Aba | Finalidade |
 |---|---|
-| **Perfil** | [Edite suas informações pessoais](./editing-profile) e sua foto |
-| **Família** | [Veja os membros da sua família](./household) |
+| **Perfil** | [Edite suas informações pessoais](./editing-profile.md) e sua foto |
+| **Família** | [Veja os membros da sua família](./household.md) |
 | **Visibilidade** | Controle o que outros veem no diretório |
 | **Pendente** | Revise as alterações de perfil que aguardam aprovação |
 | **Conta** | Gerencie as configurações de segurança |
@@ -62,6 +63,6 @@ Essas abas trabalham em conjunto para dar a você controle total sobre suas info
 
 ## Artigos Relacionados
 
-- [Editando seu Perfil](./editing-profile) -- Atualize suas informações pessoais
-- [Família](./household) -- Veja e gerencie os membros da sua família
+- [Editando seu Perfil](./editing-profile.md) -- Atualize suas informações pessoais
+- [Família](./household.md) -- Veja e gerencie os membros da sua família
 - [Diretório de Membros](../community/member-directory.md) -- Veja como seu perfil aparece para os outros

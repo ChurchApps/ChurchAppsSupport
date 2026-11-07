@@ -1,5 +1,6 @@
 ---
 title: "Cihaz Seçimi"
+description: "FreePlay sınıf TV'leri için doğru cihazı seçin: Fire TV çubukları ve Onn kutularından Apple TV'ye kadar; hangilerinin atlanması gerektiği."
 ---
 
 # FreePlay için Cihaz Seçimi

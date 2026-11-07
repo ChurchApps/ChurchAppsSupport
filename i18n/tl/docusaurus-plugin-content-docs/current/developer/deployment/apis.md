@@ -1,5 +1,6 @@
 ---
 title: "API Deployment"
+description: "I-deploy ang ChurchApps API sa AWS Lambda gamit ang Serverless, sakop ang build, demo at prod workflow, database migration, at SSM configuration."
 ---
 
 # Pag-deploy ng API
@@ -13,7 +14,7 @@ Ang mga API ng ChurchApps ay dine-deploy bilang mga AWS Lambda function gamit an
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-set up ang API nang lokal -- tingnan ang [Local API Setup](../api/local-setup)
+- I-set up ang API nang lokal -- tingnan ang [Local API Setup](../api/local-setup.md)
 - I-configure ang AWS credentials sa iyong makina
 - Siguraduhing mayroon kang access sa target na AWS account
 
@@ -47,7 +48,7 @@ Sa aktwal na praktika, dine-deploy ang Api ng GitHub Actions: tumatakbo ang **De
 
 ## Mga Migration sa Database
 
-Inilalapat ng **Deploy Prod** ang mga nakabinbing migration sa database bilang bahagi ng deploy. Ang mga production database ay tumatanggap lamang ng koneksyon mula sa loob ng VPC, kaya pagkatapos ng `serverless deploy`, ia-invoke ng workflow ang `migrate` Lambda (`api-Prod-migrate`), na nagpapatakbo ng lahat ng nakabinbing migration ng bawat module at nagbabalik ng `{ ok, environment, modules }`. Kung may module na pumalya o tinanggihan (halimbawa isang database na walang kasaysayan ng migration), papalya ang job para hindi kailanman maiwan ang schema sa likod ng code. Ang **Rollback Prod** ay nagbabalik lamang ng code ng Lambda; nananatiling nakalapat ang mga migration, kaya panatilihing additive ang mga ito. Tingnan ang [Server Admin -- Database Migrations](../server-admin#database-migrations) para sa pagsuri ng status o pagpapatakbo ng mga migration nang manu-mano.
+Inilalapat ng **Deploy Prod** ang mga nakabinbing migration sa database bilang bahagi ng deploy. Ang mga production database ay tumatanggap lamang ng koneksyon mula sa loob ng VPC, kaya pagkatapos ng `serverless deploy`, ia-invoke ng workflow ang `migrate` Lambda (`api-Prod-migrate`), na nagpapatakbo ng lahat ng nakabinbing migration ng bawat module at nagbabalik ng `{ ok, environment, modules }`. Kung may module na pumalya o tinanggihan (halimbawa isang database na walang kasaysayan ng migration), papalya ang job para hindi kailanman maiwan ang schema sa likod ng code. Ang **Rollback Prod** ay nagbabalik lamang ng code ng Lambda; nananatiling nakalapat ang mga migration, kaya panatilihing additive ang mga ito. Tingnan ang [Server Admin -- Database Migrations](../server-admin.md#database-migrations) para sa pagsuri ng status o pagpapatakbo ng mga migration nang manu-mano.
 
 ## Ano ang Nagagawa
 
@@ -75,6 +76,6 @@ Bawat merge sa `main` ay nagde-deploy muna sa demo environment. Suriin ang iyong
 
 ## Mga Kaugnay na Artikulo
 
-- **[Local API Setup](../api/local-setup)** -- Pag-set up ng API para sa development
-- **[Module Structure](../api/module-structure)** -- Pag-unawa sa arkitektura ng Lambda function
-- **[Web App Deployment](./web-apps)** -- Pag-deploy ng mga frontend application
+- **[Local API Setup](../api/local-setup.md)** -- Pag-set up ng API para sa development
+- **[Module Structure](../api/module-structure.md)** -- Pag-unawa sa arkitektura ng Lambda function
+- **[Web App Deployment](./web-apps.md)** -- Pag-deploy ng mga frontend application

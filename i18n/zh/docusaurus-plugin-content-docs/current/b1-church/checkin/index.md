@@ -1,5 +1,7 @@
 ---
-title: "签到"
+title: "在 B1.church 会友门户中登记"
+sidebar_label: "签到"
+description: "在 B1.church 会友门户中为自己和家庭成员办理教会崇拜登记，跳过登记机并分配小组。"
 ---
 
 # 签到

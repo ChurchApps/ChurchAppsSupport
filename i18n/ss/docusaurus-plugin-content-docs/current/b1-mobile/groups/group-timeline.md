@@ -1,5 +1,6 @@
 ---
 title: "Sikhatsi Selicembu"
+description: "Bona kutsi sikhatsi seliqembu ku-B1 Mobile sihlanganisa kanjani tipositi, tinkhulumo, netivakalisi kusuka emaqembwini akho onkhe ibe yindlela yinye, nekutsi kufanele wentani nini lapho lesikhatsi simisiwe."
 ---
 
 # Sikhatsi Selicembu
@@ -17,7 +18,7 @@ Sici sesikhatsi selicembu asikho njengamanje ngesikhatsi kwentiwa tintfutfuko. N
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- [Faka B1 Mobile](../getting-started/installing) futsi [ungene](../getting-started/logging-in) ku-akhawunti yakho
+- [Faka B1 Mobile](../getting-started/installing.md) futsi [ungene](../getting-started/logging-in.md) ku-akhawunti yakho
 - Ube lilunga la-okungenani licembu lalinye elibandleni lakho
 
 </div>
@@ -41,7 +42,7 @@ Intfo yinye ngayinye esikhatsini ikhombisa kutsi ivela kuliphi licembu, kute uhl
 Sikhatsi yindlela lenhle yekuhlala uhlangene nemphakatsi welibandla lakho ngekubuka kanye. Naku kunye kwesikhombiso sekutfola lokunyenti kuso:
 
 - **Buyela njalo** -- Vula sikrini se-Emacembu futsi uskorole ulandzele sikhatsi kute ukhawulele nento lensha.
-- **Cindzetela kute utfole lokunyenti** -- Nangabe sibhalo sikubamba emehlo, sicindzetele nome ucindzetele ligama lelicembu kuze uye ekhasini leliphelele le-[imininingwane yelicembu](./group-details) kute utfole lokunyenti.
+- **Cindzetela kute utfole lokunyenti** -- Nangabe sibhalo sikubamba emehlo, sicindzetele nome ucindzetele ligama lelicembu kuze uye ekhasini leliphelele le-[imininingwane yelicembu](./group-details.md) kute utfole lokunyenti.
 - **Konkhe endzaweni yinye** -- Awudzingi kuvakashela licembu ngalinye ngekwehlukana. Sikhatsi sikuletsela tento tonkhe.
 
 :::info
@@ -54,5 +55,5 @@ Vumela [titfunyiselwa letihlwatjelwako](../community/notifications.md) kute went
 
 ## Timibhalo Lehambelanako
 
-- [Imininingwane Yelicembu](./group-details) -- Buka imininingwane leliphelele nemibhalo yelicembu lolinye
+- [Imininingwane Yelicembu](./group-details.md) -- Buka imininingwane leliphelele nemibhalo yelicembu lolinye
 - [Titfunyiselwa](../community/notifications.md) -- Yatiswa ngetento tasemacenjini

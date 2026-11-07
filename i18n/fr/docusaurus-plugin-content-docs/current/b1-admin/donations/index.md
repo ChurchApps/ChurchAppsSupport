@@ -1,5 +1,6 @@
 ---
 title: "Dons"
+description: "Enregistrez, organisez et analysez les dons à l'église dans B1 Admin, des lots et fonds jusqu'aux relevés de fin d'année et aux dons en ligne via Stripe ou PayPal."
 ---
 
 # Dons

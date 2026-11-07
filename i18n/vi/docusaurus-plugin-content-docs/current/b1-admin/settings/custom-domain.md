@@ -1,5 +1,6 @@
 ---
 title: "Tên miền tùy chỉnh"
+description: "Trỏ tên miền riêng, chẳng hạn www.yourchurch.org, đến trang B1 của bạn trong B1 Admin bằng cách thiết lập bản ghi DNS và thêm tên miền trong Cài đặt."
 ---
 
 # Tên miền tùy chỉnh

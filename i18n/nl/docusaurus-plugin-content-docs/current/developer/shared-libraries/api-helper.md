@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Referentie voor @churchapps/apihelper, gebruikt door alle Express-API's in de Packages-workspace: lokaal bouwen, testen met een Yarn-portal en publiceren met changesets."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ Het `@churchapps/apihelper`-pakket biedt serverutilities voor alle ChurchApps Ex
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Installeer **Node.js** en **Git** -- zie [Prerequisites](../setup/prerequisites)
+- Installeer **Node.js** en **Git** -- zie [Prerequisites](../setup/prerequisites.md)
 - Maak jezelf vertrouwd met de [npm link workflow](./index.md) voor lokale ontwikkeling
-- Dit pakket is afhankelijk van [`@churchapps/helpers`](./helpers)
+- Dit pakket is afhankelijk van [`@churchapps/helpers`](./helpers.md)
 
 </div>
 
@@ -68,6 +69,6 @@ Dit pakket is een afhankelijkheid van elke ChurchApps API. Gebruik `npm link` bi
 
 ## Gerelateerde Artikelen
 
-- **[Helpers](./helpers)** -- Het basisutiliteitspakket waarvan dit pakket afhankelijk is
-- **[Module Structure](../api/module-structure)** -- Hoe controllers en verificatiemiddleware in API-modules worden gebruikt
-- **[Local API Setup](../api/local-setup)** -- De API lokaal instellen voor ontwikkeling
+- **[Helpers](./helpers.md)** -- Het basisutiliteitspakket waarvan dit pakket afhankelijk is
+- **[Module Structure](../api/module-structure.md)** -- Hoe controllers en verificatiemiddleware in API-modules worden gebruikt
+- **[Local API Setup](../api/local-setup.md)** -- De API lokaal instellen voor ontwikkeling

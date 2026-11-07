@@ -1,5 +1,6 @@
 ---
 title: "Власне сховище (BYOS)"
+description: "Підключіть власні Google Drive, Dropbox, OneDrive або S3-сумісне сховище в B1 Admin, щоб завантаження файлів церкви обходили ліміт платформи 100 МБ."
 ---
 
 # Власне сховище (BYOS)
@@ -8,7 +9,7 @@ title: "Власне сховище (BYOS)"
 
 ## Точка підключення провайдерів
 
-BYOS використовує ту саму архітектуру сховища, що й [MinistryStuff](./ministrystuff): `IStorageProvider` (`Packages/apihelper`), який для кожної церкви визначає `StorageResolver` на основі таблиці `content.storageProviders`. На відміну від єдиних провайдерів `churchapps`/`ministrystuff`, провайдери BYOS зберігають облікові дані конкретної церкви, тому `StorageResolver.forChurch` створює екземпляр для кожного запиту на основі рядка церкви. Реалізації розташовані поруч із резолвером у `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, а також `ByosAuth` (обмін токенів OAuth + оновлення з єдиним польотом — Dropbox ротує refresh-токени, тому оновлення дедуплікуються так само, як це робить `ProviderProxyController`).
+BYOS використовує ту саму архітектуру сховища, що й [MinistryStuff](./ministrystuff.md): `IStorageProvider` (`Packages/apihelper`), який для кожної церкви визначає `StorageResolver` на основі таблиці `content.storageProviders`. На відміну від єдиних провайдерів `churchapps`/`ministrystuff`, провайдери BYOS зберігають облікові дані конкретної церкви, тому `StorageResolver.forChurch` створює екземпляр для кожного запиту на основі рядка церкви. Реалізації розташовані поруч із резолвером у `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, а також `ByosAuth` (обмін токенів OAuth + оновлення з єдиним польотом — Dropbox ротує refresh-токени, тому оновлення дедуплікуються так само, як це робить `ProviderProxyController`).
 
 `storageProviders` містить облікові дані: `accessToken`/`refreshToken`/`tokenExpiresAt` (зашифровані, трійка OAuth) або `apiKey`/`apiSecret` + JSON у `settings` (`{endpoint, region, bucket, publicBase}`, для S3). Токени ніколи не потрапляють до клієнта — `GET /content/storage/providers` маскує секрети та повертає булеве значення `connected`.
 

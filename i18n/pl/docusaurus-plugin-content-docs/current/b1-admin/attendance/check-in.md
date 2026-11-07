@@ -1,5 +1,7 @@
 ---
-title: "Zameldowanie"
+title: "Samodzielne meldowanie w B1 Checkin i B1 Admin"
+sidebar_label: "Zameldowanie"
+description: "Skonfiguruj samodzielne meldowanie na nabożeństwa w B1 Checkin: urządzenia, konta kiosków, harmonogramy, branding i rejestrację gości kodem QR."
 ---
 
 # Zameldowanie
@@ -99,7 +101,7 @@ Używaj ekranu bezczynności do wyświetlania ogłoszeń, nadchodzących wydarze
 
 Kiosk zameldowania może wyświetlać kod QR, który goście skanują, aby samodzielnie zarejestrować siebie i swoją rodzinę na własnym telefonie. Przyspiesza to proces zameldowania pierwszych gości.
 
-Gdy gość zeskanuje kod QR, trafia na [stronę rejestracji gości](../../b1-church/checkin/guest-registration), gdzie wpisuje imiona członków swojej rodziny i inne dane, o które zdecydujesz się poprosić. Wolontariusz może następnie wyszukać go na kiosku i go zameldować.
+Gdy gość zeskanuje kod QR, trafia na [stronę rejestracji gości](../../b1-church/checkin/guest-registration.md), gdzie wpisuje imiona członków swojej rodziny i inne dane, o które zdecydujesz się poprosić. Wolontariusz może następnie wyszukać go na kiosku i go zameldować.
 
 ### Włączanie rejestracji gości przez QR
 

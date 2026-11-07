@@ -1,5 +1,6 @@
 ---
 title: "Pogled za učitelje pri lekcijah"
+description: "Odprite lekcijo v celozaslonskem pogledu za učitelje iz načrta na B1.church, nato skočite med razdelki, predvajajte predstavnost in prenesite gradiva za pouk."
 ---
 
 # Pogled za učitelje pri lekcijah

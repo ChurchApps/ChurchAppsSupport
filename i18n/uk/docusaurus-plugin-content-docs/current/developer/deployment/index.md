@@ -1,5 +1,6 @@
 ---
 title: "Розгортання"
+description: "Де розгортається кожен проєкт ChurchApps: API на AWS Lambda, веб на S3, збірки Expo для мобільних і B1 Admin на Railway або Docker."
 ---
 
 # Розгортання
@@ -14,12 +15,12 @@ ChurchApps використовує різні стратегії розгорт
 
 | Тип проєкту | Ціль розгортання | Інструменти |
 |-------------|-------------------|---------|
-| [API](./apis) | AWS Lambda | Serverless Framework v3 (середовище виконання Node.js 24.x) |
-| [Вебзастосунки](./web-apps) | S3 + CloudFront | Статична збірка, синхронізація S3, інвалідація CloudFront |
-| [Мобільні застосунки](./mobile) | Магазини застосунків | Expo EAS Build + OTA-оновлення |
-| [Самостійне розгортання (Railway)](./railway-template) | Railway | Шаблон в один клік: MySQL + Api + B1Admin + B1App |
-| [Самостійне розгортання (Docker)](./docker) | Будь-який хост Docker | Інсталятор в один рядок; готові образи GHCR + Caddy, `./deploy/b1` для оновлення/резервного копіювання/відкату |
-| [Caddy-проксі для власних доменів](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Статичний Caddyfile + служба WinSW + планова синхронізація карти |
+| [API](./apis.md) | AWS Lambda | Serverless Framework v3 (середовище виконання Node.js 24.x) |
+| [Вебзастосунки](./web-apps.md) | S3 + CloudFront | Статична збірка, синхронізація S3, інвалідація CloudFront |
+| [Мобільні застосунки](./mobile.md) | Магазини застосунків | Expo EAS Build + OTA-оновлення |
+| [Самостійне розгортання (Railway)](./railway-template.md) | Railway | Шаблон в один клік: MySQL + Api + B1Admin + B1App |
+| [Самостійне розгортання (Docker)](./docker.md) | Будь-який хост Docker | Інсталятор в один рядок; готові образи GHCR + Caddy, `./deploy/b1` для оновлення/резервного копіювання/відкату |
+| [Caddy-проксі для власних доменів](./caddy-proxy.md) | Windows EC2 (Elastic IP `3.23.251.61`) | Статичний Caddyfile + служба WinSW + планова синхронізація карти |
 | FreeShow | Пряме завантаження | Electron Builder (бінарні файли для різних платформ) |
 
 ## Середовища

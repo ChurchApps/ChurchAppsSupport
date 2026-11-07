@@ -1,5 +1,6 @@
 ---
 title: Wyznanie wiary
+description: "Co ChurchApps wyznaje o Bogu, Jezusie, Duchu Świętym, Piśmie, zbawieniu i Kościele: standard przeglądu programów nauczania Lessons.church."
 ---
 
 # Wyznanie wiary

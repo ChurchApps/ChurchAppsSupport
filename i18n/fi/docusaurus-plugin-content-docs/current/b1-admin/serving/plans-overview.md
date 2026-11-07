@@ -1,5 +1,6 @@
 ---
 title: "Suunnitelmien yleiskatsaus"
+description: "Näe vapaaehtoisten tehtävät useille palvelupäiville B1 Adminissa, tunnista täyttämättömät paikat ja täytä tai lähetä viesti tiimille yhdestä ruudukosta."
 ---
 
 # Suunnitelmien yleiskatsaus

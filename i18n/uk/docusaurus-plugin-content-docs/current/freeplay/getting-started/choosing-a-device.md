@@ -1,5 +1,6 @@
 ---
 title: "Вибір пристрою"
+description: "Який пристрій обрати для класних TV з FreePlay: від Fire TV Stick і Onn до Apple TV, і які варіанти краще оминути."
 ---
 
 # Вибір пристрою для FreePlay

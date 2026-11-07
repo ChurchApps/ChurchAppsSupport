@@ -1,5 +1,6 @@
 ---
 title: "Referencia koncových bodov"
+description: "Nájdite každý koncový bod API ChurchApps podľa modulu, pozrite si HTTP metódu, cestu, autentifikáciu a oprávnenie pre každú trasu a naučte sa konvencie dávkového ukladania a chýb pred volaním API."
 ---
 
 # Referencia koncových bodov
@@ -89,10 +90,10 @@ Parametre reportu sa odovzdávajú ako hodnoty v reťazci dotazu (napr. `?startD
 
 | Modul | Základná cesta | Popis |
 |--------|-----------|-------------|
-| [Autentifikácia](./authentication) | `/membership/users`, `/membership/oauth` | Prihlásenie, registrácia, JWT tokeny, OAuth, oprávnenia |
-| [Členstvo](./membership) | `/membership/*` | Ľudia, cirkvi, skupiny, domácnosti, roly, formuláre, nastavenia |
-| [Účasť](./attendance) | `/attendance/*` | Kampusy, služby, relácie, návštevy, záznamy o prihlásení |
-| [Obsah](./content) | `/content/*` | Stránky, kázne, udalosti, súbory, galérie, Biblia, streamovanie |
-| [Dary](./giving) | `/giving/*` | Dary, fondy, platobné brány, predplatné |
-| [Správy](./messaging) | `/messaging/*` | Konverzácie, oznámenia, zariadenia, SMS |
-| [Doing](./doing) | `/doing/*` | Plány, úlohy, priradenia, automatizácie, plánovanie |
+| [Autentifikácia](./authentication.md) | `/membership/users`, `/membership/oauth` | Prihlásenie, registrácia, JWT tokeny, OAuth, oprávnenia |
+| [Členstvo](./membership.md) | `/membership/*` | Ľudia, cirkvi, skupiny, domácnosti, roly, formuláre, nastavenia |
+| [Účasť](./attendance.md) | `/attendance/*` | Kampusy, služby, relácie, návštevy, záznamy o prihlásení |
+| [Obsah](./content.md) | `/content/*` | Stránky, kázne, udalosti, súbory, galérie, Biblia, streamovanie |
+| [Dary](./giving.md) | `/giving/*` | Dary, fondy, platobné brány, predplatné |
+| [Správy](./messaging.md) | `/messaging/*` | Konverzácie, oznámenia, zariadenia, SMS |
+| [Doing](./doing.md) | `/doing/*` | Plány, úlohy, priradenia, automatizácie, plánovanie |

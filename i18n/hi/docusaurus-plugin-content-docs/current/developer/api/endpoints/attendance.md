@@ -1,5 +1,6 @@
 ---
 title: "उपस्थिति एंडपॉइंट्स"
+description: "B1 Admin और B1 Checkin के लिए उपस्थिति API संदर्भ: परिसर, सेवाएँ, सेवा समय, सत्र, विज़िट, चेक-इन नियम और निर्यात एंडपॉइंट।"
 ---
 
 # उपस्थिति एंडपॉइंट्स
@@ -270,6 +271,6 @@ Base path: `/attendance/streaks`
 
 ## Related Pages
 
-- [Membership Endpoints](./membership) — व्यक्ति, समूह, भूमिकाएँ और चर्च प्रबंधन
-- [Authentication & Permissions](./authentication) — लॉगिन प्रवाह, JWT, अनुमति मॉडल
-- [Module Structure](../module-structure) — कोड संगठन के पैटर्न
+- [Membership Endpoints](./membership.md) — व्यक्ति, समूह, भूमिकाएँ और चर्च प्रबंधन
+- [Authentication & Permissions](./authentication.md) — लॉगिन प्रवाह, JWT, अनुमति मॉडल
+- [Module Structure](../module-structure.md) — कोड संगठन के पैटर्न

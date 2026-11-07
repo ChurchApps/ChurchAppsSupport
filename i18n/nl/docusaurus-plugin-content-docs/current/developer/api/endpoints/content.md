@@ -1,5 +1,6 @@
 ---
 title: "Inhoudeindpunten"
+description: "Eindpuntreferentie voor de ChurchApps Content API: websitepagina's, blogs, redirects, preken, evenementen, bestanden, Bijbelzoekingen en liederen."
 ---
 
 # Inhoudeindpunten
@@ -421,7 +422,7 @@ Basispad: `/content/support`
 
 ## Gerelateerde pagina's
 
-- [Lidmaatschap Eindpunten](./membership) -- Mensen, kerken, groepen, rollen, toestemmingen
-- [Aanwezigheid Eindpunten](./attendance) -- Service en bezoek tracering
-- [Verificatie & Toestemmingen](./authentication) -- Inlogflow, JWT, toestemmingsmodel
-- [Modulestructuur](../module-structure) -- Codeorganisatiepatronen
+- [Lidmaatschap Eindpunten](./membership.md) -- Mensen, kerken, groepen, rollen, toestemmingen
+- [Aanwezigheid Eindpunten](./attendance.md) -- Service en bezoek tracering
+- [Verificatie & Toestemmingen](./authentication.md) -- Inlogflow, JWT, toestemmingsmodel
+- [Modulestructuur](../module-structure.md) -- Codeorganisatiepatronen

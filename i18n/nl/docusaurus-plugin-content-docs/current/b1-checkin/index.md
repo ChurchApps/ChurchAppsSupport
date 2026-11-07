@@ -1,5 +1,6 @@
 ---
 title: "Overzicht B1 Church Inchecking"
+description: "Stel de B1 Church Checkin-kioskapp in op iPad- of Android-tablets, zodat gezinnen zelf kunnen inchecken en labels en ophaalbriefjes kunnen printen."
 ---
 
 # Overzicht B1 Church Inchecking
@@ -20,7 +21,7 @@ Plaats een iPad of Android-tablet in uw lobby of welkomstgebied. Leden komen opd
 - **Huishoudencontrole** -- Bekijk alle familieleden met foto's en huidige groepstoewijzingen in een oogopslag.
 - **Groepstoewijzing** -- Wijs elk familielid aan de juiste klas of groep voor de geselecteerde servicetijd toe.
 - **Gastincheckservice** -- Voeg een gast ter plekke aan uw huishouden toe met voornaam en achternaam.
-- **QR gastregistratie** -- Geef een QR-code weer die bezoekers kunnen scannen om [zichzelf te registreren](../b1-church/checkin/guest-registration) op hun eigen telefoon voordat zij inchecken.
+- **QR gastregistratie** -- Geef een QR-code weer die bezoekers kunnen scannen om [zichzelf te registreren](../b1-church/checkin/guest-registration.md) op hun eigen telefoon voordat zij inchecken.
 - **Etikettenafdrukkingen** -- Druk naamlabels voor kinderen en voogdijslips af met unieke veiligheidscodes.
 - **Ondersteuning netwerkprinter** -- Ontdek en configureer netwerkprinters rechtstreeks vanuit de app.
 - **Automatische aanmelding** -- Na de eerste aanmelding onthoudt de app uw referenties en gaat rechtstreeks naar het servicescherm op toekomstige starts.
@@ -29,8 +30,8 @@ Plaats een iPad of Android-tablet in uw lobby of welkomstgebied. Leden komen opd
 
 ## Documentatiesecties
 
-- **[Aan de slag](./getting-started/)** -- De app installeren, aanmelden en de printer instellen.
-- **[Incheckingworkflow](./check-in/)** -- De volledige incheckflow van het selecteren van een service tot het afdrukken van etiketten.
+- **[Aan de slag](./getting-started/index.md)** -- De app installeren, aanmelden en de printer instellen.
+- **[Incheckingworkflow](./check-in/index.md)** -- De volledige incheckflow van het selecteren van een service tot het afdrukken van etiketten.
 
 :::tip
 B1 Church Inchecking werkt het best op een 10-inch tablet (iPad of Android) in liggend formaat, waarbij families deze gemakkelijk kunnen bereiken. Download de app via de [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) of [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).

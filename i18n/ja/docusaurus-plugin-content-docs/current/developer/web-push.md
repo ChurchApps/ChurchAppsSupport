@@ -1,5 +1,6 @@
 ---
 title: "Web プッシュ通知"
+description: "VAPID キー、WebPushHelper クライアント、Service Worker の処理を設定し、B1.church と B1 Admin がメンバーへブラウザのプッシュ通知を届けられるようにします。"
 ---
 
 # Web プッシュ通知
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## 関連ページ
 
-- [通知のアーキテクチャ](./architecture/notifications) -- アプリ内、プッシュ、メールのエスカレーションの全体像と、リマインダーエンジン
-- [リアルタイムのアーキテクチャ](./realtime) -- WebSocket による配信。プッシュは、ソケット配信が届かなかったときの予備ではなく、同じ処理の中でソケット配信と並行して、アプリ内の経路から送信されるようになりました
-- [メッセージングのエンドポイント](./api/endpoints/messaging) -- 通知、デバイス、その他のメッセージング機能
-- [AppHelper](./shared-libraries/app-helper) -- `WebPushHelper` を含む npm パッケージ
+- [通知のアーキテクチャ](./architecture/notifications.md) -- アプリ内、プッシュ、メールのエスカレーションの全体像と、リマインダーエンジン
+- [リアルタイムのアーキテクチャ](./realtime.md) -- WebSocket による配信。プッシュは、ソケット配信が届かなかったときの予備ではなく、同じ処理の中でソケット配信と並行して、アプリ内の経路から送信されるようになりました
+- [メッセージングのエンドポイント](./api/endpoints/messaging.md) -- 通知、デバイス、その他のメッセージング機能
+- [AppHelper](./shared-libraries/app-helper.md) -- `WebPushHelper` を含む npm パッケージ

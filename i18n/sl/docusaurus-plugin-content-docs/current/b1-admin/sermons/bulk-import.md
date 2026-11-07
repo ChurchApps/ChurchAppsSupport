@@ -1,5 +1,6 @@
 ---
 title: "Množinski uvoz"
+description: "V B1 Admin množično uvozite pridigarske videoposnetke iz kanala YouTube ali računa Vimeo ter jih nato razvrstite v seznam predvajanja."
 ---
 
 # Množinski uvoz
@@ -14,7 +15,7 @@ Stran Množinski uvoz vam omogoča, da hitro napolnite knjižnico pridig z uvozo
 <h4>Preden začnete</h4>
 
 - Potrebujete dovoljenje **contentApi.streamingServices.edit**. Če nimate dostopa, glejte [Vloge in dovoljenja](../settings/roles-permissions.md).
-- Ustvarite vsaj en [seznam predvajanja](playlists), v katerega boste uvozili pridige
+- Ustvarite vsaj en [seznam predvajanja](./playlists.md), v katerega boste uvozili pridige
 - Pripravite ID vašega kanala YouTube ali podatke o vašem računu Vimeo
 
 </div>
@@ -39,7 +40,7 @@ Preden uvozite videoposnetke, potrebujete vsaj en seznam predvajanja, v katerega
 2. Kliknite **Ustvari prvi seznam predvajanja** in vnesite ime, opis, datum objave in sličico.
 3. Kliknite **Shrani**, nato se vrnite na Množinski uvoz tako, da kliknete **Dodaj pridigo** in izberete **Množinski uvoz**.
 
-Podrobna navodila za ustvarjanje in upravljanje seznamov predvajanja najdete na strani [Seznami predvajanja](playlists).
+Podrobna navodila za ustvarjanje in upravljanje seznamov predvajanja najdete na strani [Seznami predvajanja](./playlists.md).
 
 ## Uvoz videoposnetkov
 
@@ -54,11 +55,11 @@ Podrobna navodila za ustvarjanje in upravljanje seznamov predvajanja najdete na 
 Vaši videoposnetki bodo uvoženi z vsemi podrobnostmi, vključno z naslovi, opisi, datumi in sličicami. Posebni znaki v naslovih in opisih na YouTubu, na primer `&`, apostrofi in narekovaji, se prikažejo tako, kot so napisani, ne pa kot kode, kot je `&amp;`.
 
 :::info
-Množinski uvoz je idealen za začetek, ko se selite z druge platforme. Za dodajanje posameznih pridig v prihodnosti uporabite stran [Upravljanje pridig](managing-sermons).
+Množinski uvoz je idealen za začetek, ko se selite z druge platforme. Za dodajanje posameznih pridig v prihodnosti uporabite stran [Upravljanje pridig](./managing-sermons.md).
 :::
 
 ## Naslednji koraki
 
-- [Upravljanje pridig](managing-sermons) -- urejanje podrobnosti uvoženih pridig
-- [Seznami predvajanja](playlists) -- ustvarjanje in upravljanje serij pridig
-- [Pretakanje v živo](live-streaming) -- nastavitev pretakanja v živo za vaša bogoslužja
+- [Upravljanje pridig](./managing-sermons.md) -- urejanje podrobnosti uvoženih pridig
+- [Seznami predvajanja](./playlists.md) -- ustvarjanje in upravljanje serij pridig
+- [Pretakanje v živo](./live-streaming.md) -- nastavitev pretakanja v živo za vaša bogoslužja

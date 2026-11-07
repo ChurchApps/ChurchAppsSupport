@@ -1,5 +1,6 @@
 ---
 title: "Plans Overview"
+description: "Tingnan ang atas ng mga boluntaryo sa maraming petsa ng serbisyo sa B1 Admin, hanapin ang bakanteng posisyon, at punan o i-email ang team mula sa isang grid."
 ---
 
 # Plans Overview

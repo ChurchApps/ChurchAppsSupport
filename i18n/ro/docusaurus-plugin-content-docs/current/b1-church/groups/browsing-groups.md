@@ -1,5 +1,6 @@
 ---
 title: "Răsfoirea grupurilor"
+description: "Explorați grupurile publice ale bisericii dvs. pe B1.church după categorie, apoi consultați orele, locațiile și descrierile de pe fiecare card pentru a găsi potrivirea ideală."
 ---
 
 # Răsfoirea grupurilor

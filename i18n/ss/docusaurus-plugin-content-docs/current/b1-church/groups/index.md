@@ -1,5 +1,7 @@
 ---
-title: "Emacembu"
+title: "Emaqembu Elicawe Ku-Iphothali Yelilungu le-B1.church"
+sidebar_label: "Emacembu"
+description: "Hlola ujoyine emaqembu elicawe lakho ku-sayithi ye-B1.church, bese usebentisa emakhasi eliqembu ukuhlola tikhatsi, imicimbi, emalungu, netinsita, futsi uxoxisane neliqembu lakho."
 ---
 
 # Emacembu

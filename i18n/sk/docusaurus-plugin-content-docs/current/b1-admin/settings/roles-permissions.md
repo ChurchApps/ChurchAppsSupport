@@ -1,5 +1,6 @@
 ---
 title: "Roly a oprávnenia"
+description: "Nastavte roly v B1 Admin a kontrolujte, čo môžu zamestnanci a dobrovoľníci vidieť a meniť, od darov a účasti po ľudí a skupiny."
 ---
 
 # Roly a oprávnenia

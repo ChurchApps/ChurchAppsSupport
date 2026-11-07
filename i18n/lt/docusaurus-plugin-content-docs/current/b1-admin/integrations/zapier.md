@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Prijunkite B1 Admin prie Zapier, kad automatizacijos prasidėtų dėl naujų asmenų, aukų ir grupės narių, ir įrašus grąžintumėte į B1 be programavimo."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Pasirinkite paleidiklį, tada pridėkite vieną ar daugiau veiksmo žingsnių. P
 ### Siųsti aukas į Slack kanalą su išsamesne kortele nei įmontuota jungtis
 
 - **Paleidiklis** — B1: New Donation
-- **Veiksmas** — Slack: Send Channel Message. Sudarykite bet kokį išdėstymą (mygtukus, priedus ir pan.), kurio negali įmontuota [Slack jungtis](./slack-discord).
+- **Veiksmas** — Slack: Send Channel Message. Sudarykite bet kokį išdėstymą (mygtukus, priedus ir pan.), kurio negali įmontuota [Slack jungtis](./slack-discord.md).
 
 ### Pridėti naujus grupės narius į Google grupę
 
@@ -106,6 +107,6 @@ Tai reiškia, kad paleidiklis suveikia tik įvykiams, įvykusiems **po** Zap'o �
 
 ## Taip pat žr.
 
-- [Make](./make) – tas pats modelis, kita platforma
-- [Slack & Discord](./slack-discord) – paprastesni pokalbių pranešimai be Zapier
+- [Make](./make.md) – tas pats modelis, kita platforma
+- [Slack & Discord](./slack-discord.md) – paprastesni pokalbių pranešimai be Zapier
 - [Webhook'ai (kūrėjo žinynas)](/docs/developer/api/webhooks)

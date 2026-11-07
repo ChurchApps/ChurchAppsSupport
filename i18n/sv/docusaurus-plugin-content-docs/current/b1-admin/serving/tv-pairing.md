@@ -1,5 +1,6 @@
 ---
 title: "Ansluta FreePlay till B1 Admin"
+description: "Anslut en klassrums-TV som kör FreePlay till dina schemalagda lektioner i B1 Admin, så att lärare kan spela upp dem på skärmen under lektionen."
 ---
 
 # Ansluta en klassrums-TV till dina lektioner i B1 Admin

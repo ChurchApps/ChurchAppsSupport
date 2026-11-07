@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "Phenya, hlela, futsi ukhombise tifundziso letimahhala letiphindvwe ngeminyaka kusuka kubahlinzeki labangetulu kwe-12 ku-Lessons.church, netimakilasi, tindzawo, nemahlanganiso ne-FreePlay noma B1."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church isebenta kanye netinye tinsita ta-ChurchApps kute ikusite ukhipha
 
 ## Tincenye Temibhalo
 
-- [Kucala](./getting-started/) -- Sungula i-akhawunti yakho futsi ufundze imisuka
-- [Kuhlolisisa Lokucuketfwe](./browsing/) -- Tfola tinhlelo, tifundvo, netifundzo
-- [Emakilasi](./classrooms/) -- Sungula emakilasi futsi uhlele tifundzo
-- [Kulungiselwa](./customization/) -- Lungisela tifundzo libandla lakho
-- [Kwetfula](./presenting/) -- Khipha tifundzo ekilasini usebentisa simo se-presenter
-- [Kuphatsa](./admin/) -- Phatsa tinhlelo, tifundvo, netifundzo njengemphatsi
+- [Kucala](./getting-started/index.md) -- Sungula i-akhawunti yakho futsi ufundze imisuka
+- [Kuhlolisisa Lokucuketfwe](./browsing/index.md) -- Tfola tinhlelo, tifundvo, netifundzo
+- [Emakilasi](./classrooms/index.md) -- Sungula emakilasi futsi uhlele tifundzo
+- [Kulungiselwa](./customization/index.md) -- Lungisela tifundzo libandla lakho
+- [Kwetfula](./presenting/index.md) -- Khipha tifundzo ekilasini usebentisa simo se-presenter
+- [Kuphatsa](./admin/index.md) -- Phatsa tinhlelo, tifundvo, netifundzo njengemphatsi
 - [Sitatimende Selukholo](./statement-of-faith.md) -- Tinkholelo letiyisisekelo neticiniso tetifundzo
 
 Ngekusita, tfumela imeyili ku- [support@churchapps.org](mailto:support@churchapps.org).

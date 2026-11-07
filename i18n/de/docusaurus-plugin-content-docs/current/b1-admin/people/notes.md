@@ -1,5 +1,6 @@
 ---
 title: "Notizen"
+description: "Prüfen Sie in einer Liste in B1 Admin, neueste zuerst, Seelsorgenotizen, Nachverfolgungen und Planungen zu Personen, Gruppen, Terminen und Workflow-Karten."
 ---
 
 # Notizen

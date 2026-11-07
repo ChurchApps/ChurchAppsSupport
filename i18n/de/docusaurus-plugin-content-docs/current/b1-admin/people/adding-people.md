@@ -1,5 +1,6 @@
 ---
 title: "Personen hinzufügen"
+description: "Fügen Sie in B1 Admin eine Person zu Ihrer Gemeindedatenbank hinzu, ergänzen Sie ihre Angaben und verknüpfen Sie Familienmitglieder zu Haushalten für Check-in und Berichte."
 ---
 
 # Personen hinzufügen

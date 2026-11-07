@@ -1,5 +1,7 @@
 ---
-title: "Membership Directory"
+title: "Narių katalogas B1 Mobile programėlėje"
+sidebar_label: "Membership Directory"
+description: "Raskite bažnyčios narius B1 Mobile kataloge: naršykite pagal abėcėlę, ieškokite pagal vardą ir atidarykite profilius bei namų ūkio nuorodas."
 ---
 
 # Membership Directory
@@ -13,7 +15,7 @@ The member directory in B1 Mobile lets you browse and search for people in your 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Įdiekite B1 Mobile](../getting-started/installing) ir [prisijunkite](../getting-started/logging-in) prie savo paskyros
+- [Įdiekite B1 Mobile](../getting-started/installing.md) ir [prisijunkite](../getting-started/logging-in.md) prie savo paskyros
 
 </div>
 
@@ -51,5 +53,5 @@ Tai, kas matoma kiekviename profilyje, priklauso nuo jūsų bažnyčios privatum
 
 ## Susiję straipsniai
 
-- [Žinutės](./messaging) -- Išsiųskite privačią žinutę asmeniui, kurį radote kataloge
+- [Žinutės](./messaging.md) -- Išsiųskite privačią žinutę asmeniui, kurį radote kataloge
 - [Privatumo nustatymai](../profile/privacy-settings.md) -- Valdykite, ką kiti mato apie jus kataloge

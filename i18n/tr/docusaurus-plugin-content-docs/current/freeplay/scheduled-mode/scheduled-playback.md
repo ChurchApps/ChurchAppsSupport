@@ -1,5 +1,6 @@
 ---
 title: "TV'de Zamanlanmış Oynatma"
+description: "Eşleştirilmiş bir FreePlay TV, önümüzdeki haftayı indirir ve saate göre oynatır; çevrimdışıyken bile. Bilgi paneli, kumanda tuşları ve oynatma listesini sabitlemeyi kapsar."
 ---
 
 # TV'de Zamanlanmış Oynatma
@@ -13,8 +14,8 @@ Bir TV bir takvime eşleştirildiğinde FreePlay onu sizin yerinize çalıştır
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [TV'yi bir takvime eşleştirin](./pairing-a-screen)
-- [Takvime bir şey ekleyin](./scheduling-the-calendar) veya ekranın grubu için varsayılan bir döngü ayarlayın
+- [TV'yi bir takvime eşleştirin](./pairing-a-screen.md)
+- [Takvime bir şey ekleyin](./scheduling-the-calendar.md) veya ekranın grubu için varsayılan bir döngü ayarlayın
 
 </div>
 
@@ -40,7 +41,7 @@ Panelde ayrıca üç düğme vardır:
 
 - **Bu Listeyi Sabitle** - Mevcut içeriği döngüde oynatmaya devam eder ve takvimi yok sayar. Programa geri dönmek için **Listenin Sabitlemesini Kaldır** seçeneğini seçin
 - **İçeriğe Göz At** - Bağlı sağlayıcılarınıza göz atmak için zamanlanmış oynatıcıdan çıkar
-- **Ayarlar** - FreePlay ayarlarını açar. Buradan [eşleştirmeyi kaldırabilir veya başka bir takvime eşleştirebilirsiniz](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Ayarlar** - FreePlay ayarlarını açar. Buradan [eşleştirmeyi kaldırabilir veya başka bir takvime eşleştirebilirsiniz](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 Göz atma işleminden sonra programa geri dönmek için **İçerik Sağlayıcıları** ekranındayken kumandadan **Geri** tuşuna basın veya **Ayarlar**'ı açıp **Bir takvime eşleştir** seçeneğini seçin ve **Programa dön** öğesini belirleyin. Eşleştirilmiş bir TV, FreePlay ön plana geldiğinde de zamanlanmış oynatıcıya döner ve her zaman zamanlanmış oynatıcıyla açılır.
@@ -77,6 +78,6 @@ Bir ekranın takvimini web tarayıcısında da oynatabilirsiniz. FreePlay Admin'
 
 ## İlgili Makaleler
 
-- **[Takvimi Planlama](./scheduling-the-calendar)** - Neyin oynatılacağını ve içerik erken bittiğinde ne olacağını ayarlayın
-- **[Ekranları ve Grupları Yönetme](./managing-screens)** - FreePlay Admin'den her ekranın indirmelerini kontrol edin
-- **[İçerik Oynatma](../content-providers/playing-content)** - İçeriği kendiniz oynattığınızda oynatıcı denetimleri
+- **[Takvimi Planlama](./scheduling-the-calendar.md)** - Neyin oynatılacağını ve içerik erken bittiğinde ne olacağını ayarlayın
+- **[Ekranları ve Grupları Yönetme](./managing-screens.md)** - FreePlay Admin'den her ekranın indirmelerini kontrol edin
+- **[İçerik Oynatma](../content-providers/playing-content.md)** - İçeriği kendiniz oynattığınızda oynatıcı denetimleri

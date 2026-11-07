@@ -1,5 +1,6 @@
 ---
 title: "E-mailsjablonen"
+description: "Stel e-mail- en sms-sjablonen in B1 Admin in, met samenvoegvelden, sms-opties en voorvertoningen voor massacommunicatie."
 ---
 
 # E-mailsjablonen

@@ -1,5 +1,6 @@
 ---
 title: "Gestionarea lecțiilor"
+description: "Construiți structura unei lecții în Lessons.church: locații, secțiuni, acțiuni Say, Do, Note sau Play pe roluri, plus textul pentru părinți și resurse."
 ---
 
 # Gestionarea lecțiilor

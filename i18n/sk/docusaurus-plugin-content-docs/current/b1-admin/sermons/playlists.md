@@ -1,5 +1,6 @@
 ---
 title: "Playlisty"
+description: "Zoskupte kázne do sérií v B1 Admin, aby návštevníci vašej webstránky B1.church mohli prechádzať a sledovať jednotlivé série kázní v správnom poradí."
 ---
 
 # Playlisty
@@ -39,10 +40,10 @@ Najprv si vytvorte playlisty a až potom pridávajte kázne. Takto môžete kaž
 
 ## Pridávanie káz do playlistu
 
-Keď [pridáte alebo upravíte kázeň](managing-sermons), priradíte ju k playlistu pomocou rozbaľovacieho zoznamu **Playlist**. Všetky kázne priradené k rovnakému playlistu sa zoskupia a na vašej webovej stránke sa zobrazia v správnom poradí.
+Keď [pridáte alebo upravíte kázeň](./managing-sermons.md), priradíte ju k playlistu pomocou rozbaľovacieho zoznamu **Playlist**. Všetky kázne priradené k rovnakému playlistu sa zoskupia a na vašej webovej stránke sa zobrazia v správnom poradí.
 
 :::info
-Kázne môžete priradiť k playlistom aj počas [hromadného importu](bulk-import). Pri importe z YouTube alebo Vimeo vyberte playlist v rozbaľovacom zozname **Importovať do playlistu** a potom kliknite na **Importovať**.
+Kázne môžete priradiť k playlistom aj počas [hromadného importu](./bulk-import.md). Pri importe z YouTube alebo Vimeo vyberte playlist v rozbaľovacom zozname **Importovať do playlistu** a potom kliknite na **Importovať**.
 :::
 
 ## Ako sa playlisty zobrazujú na vašej webovej stránke
@@ -55,5 +56,5 @@ Playlisty sa na vašej webovej stránke B1.church zobrazujú ako zbierky, ktoré
 
 ## Ďalšie kroky
 
-- [Správa káz](managing-sermons) – Pridávanie jednotlivých káz do playlistov
-- [Hromadný import](bulk-import) – Import viacerých káz a ich priradenie k playlistom
+- [Správa káz](./managing-sermons.md) – Pridávanie jednotlivých káz do playlistov
+- [Hromadný import](./bulk-import.md) – Import viacerých káz a ich priradenie k playlistom

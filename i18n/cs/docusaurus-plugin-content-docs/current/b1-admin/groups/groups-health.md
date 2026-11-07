@@ -1,5 +1,6 @@
 ---
 title: "Přehled zdraví skupin"
+description: "Zkontrolujte zdraví skupiny v B1 Admin pomocí 90denní tabulky členů, přihlášek, odchodů, odlivu a průměrné docházky a odhalte skupiny, které potřebují péči."
 ---
 
 # Přehled zdraví skupin
@@ -13,8 +14,8 @@ Přehled zdraví skupin vám poskytne souhrnný pohled na to, jak si všechny va
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Potřebujete alespoň několik skupin s členy, abyste viděli smysluplná data. Viz [Vytváření skupin](creating-groups).
-- Údaje o docházce se čerpají z zaznamenaných setkání. Viz sekce [Docházka](../attendance/).
+- Potřebujete alespoň několik skupin s členy, abyste viděli smysluplná data. Viz [Vytváření skupin](./creating-groups.md).
+- Údaje o docházce se čerpají z zaznamenaných setkání. Viz sekce [Docházka](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Kliknutím na název skupiny přejdete přímo na její detail, kde můžete zko
 
 ## Související články
 
-- [Vytváření skupin](creating-groups) – nastavení skupin
-- [Členové skupiny](group-members) – správa členství ve skupině
-- [Evidence docházky](../attendance/tracking-attendance) – zaznamenávání setkání, ze kterých tento přehled čerpá
+- [Vytváření skupin](./creating-groups.md) – nastavení skupin
+- [Členové skupiny](./group-members.md) – správa členství ve skupině
+- [Evidence docházky](../attendance/tracking-attendance.md) – zaznamenávání setkání, ze kterých tento přehled čerpá

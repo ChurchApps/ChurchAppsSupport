@@ -1,5 +1,7 @@
 ---
-title: "Connexion"
+title: "Connexion à B1.church et au portail membre"
+sidebar_label: "Connexion"
+description: "Connectez-vous au portail membre B1.church, avec codes à deux facteurs ou SSO, réinitialisez un mot de passe oublié, et déconnectez-vous."
 ---
 
 # Connexion
@@ -13,7 +15,7 @@ Se connecter à B1.church vous donne accès au portail des membres, où vous pou
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Vous avez besoin d'un compte ChurchApps. Voir [Pour commencer](../getting-started/) pour en créer un.
+- Vous avez besoin d'un compte ChurchApps. Voir [Pour commencer](./index.md) pour en créer un.
 - Vous avez besoin de l'adresse B1.church de votre église (par exemple `https://votreeglise.b1.church`).
 
 </div>
@@ -35,7 +37,7 @@ Vous restez connecté sur le même navigateur ou la même application installée
 
 ## Accéder au portail des membres
 
-Une fois connecté, vous pouvez accéder au portail des membres en cliquant sur votre **nom** dans le coin supérieur droit de la page, puis en sélectionnant **Portail des membres** dans le menu. Le portail des membres regroupe tous vos outils ecclésiaux personnels, y compris votre [tableau de bord d'accueil](./navigating.md), la [page Moi](./me-page.md), les [groupes](../groups/), les [dons](../giving/) et bien plus encore.
+Une fois connecté, vous pouvez accéder au portail des membres en cliquant sur votre **nom** dans le coin supérieur droit de la page, puis en sélectionnant **Portail des membres** dans le menu. Le portail des membres regroupe tous vos outils ecclésiaux personnels, y compris votre [tableau de bord d'accueil](./navigating.md), la [page Moi](./me-page.md), les [groupes](../groups/index.md), les [dons](../giving/index.md) et bien plus encore.
 
 ## Votre menu utilisateur
 

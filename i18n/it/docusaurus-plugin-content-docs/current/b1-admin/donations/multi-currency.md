@@ -1,5 +1,6 @@
 ---
 title: "Supporto Multi-Valuta"
+description: "Registra e rendiconta in B1 Admin le donazioni in valute diverse, con inserimento manuale, donazioni online Stripe e conversione dei totali combinati."
 ---
 
 # Supporto Multi-Valuta

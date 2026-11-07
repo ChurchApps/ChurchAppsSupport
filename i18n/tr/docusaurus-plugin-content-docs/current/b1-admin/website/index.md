@@ -1,5 +1,6 @@
 ---
 title: "Website"
+description: "B1 Admin Web Sitesi oluşturucusuna genel bakış: sayfalar, blog, bloklar, görünüm, dosyalar ve takvimler; kurulum ve düzenleme kılavuzlarına bağlantılar."
 ---
 
 # Website
@@ -22,7 +23,7 @@ Gezinme bağlantılarınız ağaç yapısında görüntülenir. Ziyaretçilerini
 
 ### Blog
 
-Haber, güncelleme ve günlük okuma yazılarını sitenizde `/blog` adresinde blog yazısı olarak yayımlayın; bir RSS akışı da bulunur. [Blog](blog) kılavuzuna bakın.
+Haber, güncelleme ve günlük okuma yazılarını sitenizde `/blog` adresinde blog yazısı olarak yayımlayın; bir RSS akışı da bulunur. [Blog](./blog.md) kılavuzuna bakın.
 
 ### Bloklar
 
@@ -30,24 +31,24 @@ Birden fazla sayfada kullanabileceğiniz yeniden kullanılabilir içerik bileşe
 
 ### Görünüm
 
-Web sitenizin temasını, renklerini, yazı tiplerini, logosunu ve boşluklarını özelleştirin. Hızlı başlangıç için hazır stil temalarını uygulayabilir veya renk paleti düzenleyicisi, tipografi ayarları ve özel CSS ile her ayrıntıyı ince ayarlayabilirsiniz. Tüm ayrıntılar için [Görünüm](appearance) kılavuzuna bakın.
+Web sitenizin temasını, renklerini, yazı tiplerini, logosunu ve boşluklarını özelleştirin. Hızlı başlangıç için hazır stil temalarını uygulayabilir veya renk paleti düzenleyicisi, tipografi ayarları ve özel CSS ile her ayrıntıyı ince ayarlayabilirsiniz. Tüm ayrıntılar için [Görünüm](./appearance.md) kılavuzuna bakın.
 
 ### Dosyalar
 
-Görseller, belgeler ve diğer tüm medya dosyalarınızı tek bir merkezi konumda yükleyin ve yönetin; dosya bağlantılarını sitenizde istediğiniz yerde kullanmak üzere kopyalayın. Daha fazla bilgi için [Dosyalar](files) bölümüne bakın.
+Görseller, belgeler ve diğer tüm medya dosyalarınızı tek bir merkezi konumda yükleyin ve yönetin; dosya bağlantılarını sitenizde istediğiniz yerde kullanmak üzere kopyalayın. Daha fazla bilgi için [Dosyalar](./files.md) bölümüne bakın.
 
 ### Takvimler
 
 Ziyaretçilerinizin kilisenizde neler olduğunu görebilmesi için web sitenizde etkinlik takvimleri yayımlayın. Birden fazla gruptan etkinlikleri tek bir görünümde toplayan özel takvimler oluşturabilirsiniz. Takvimler, B1 Admin menüsünde **Website**'den ayrı olarak kendi **Calendars** öğesine sahiptir.
 
 :::tip
-Web sitenizi ilk kez yapılandırıyorsanız [İlk Kurulum](initial-setup) ile başlayın. Alan adı kurulumunu, ilk sayfanızı oluşturmayı ve sitenizin görünümünü yapılandırmayı adım adım anlatır.
+Web sitenizi ilk kez yapılandırıyorsanız [İlk Kurulum](./initial-setup.md) ile başlayın. Alan adı kurulumunu, ilk sayfanızı oluşturmayı ve sitenizin görünümünü yapılandırmayı adım adım anlatır.
 :::
 
 ## Sonraki Adımlar
 
-- [İlk Kurulum](initial-setup) -- Web sitenizi ilk kez çalışır hale getirin
-- [Sayfaları Yönetme](managing-pages) -- Sayfalarınızı nasıl oluşturup düzenleyeceğinizi öğrenin
-- [Sayfa Düzenleyicisini Kullanma](page-editor) -- Görsel düzenleyiciyle sayfa içeriğinizi oluşturun ve biçimlendirin
-- [Görünüm](appearance) -- Sitenizin görünümünü ve hissini özelleştirin
-- [Dosyalar](files) -- Medya dosyalarını yükleyin ve yönetin
+- [İlk Kurulum](./initial-setup.md) -- Web sitenizi ilk kez çalışır hale getirin
+- [Sayfaları Yönetme](./managing-pages.md) -- Sayfalarınızı nasıl oluşturup düzenleyeceğinizi öğrenin
+- [Sayfa Düzenleyicisini Kullanma](./page-editor.md) -- Görsel düzenleyiciyle sayfa içeriğinizi oluşturun ve biçimlendirin
+- [Görünüm](./appearance.md) -- Sitenizin görünümünü ve hissini özelleştirin
+- [Dosyalar](./files.md) -- Medya dosyalarını yükleyin ve yönetin

@@ -1,5 +1,6 @@
 ---
 title: "Creating an Account"
+description: "Registreer een ChurchApps-account op Lessons.church en koppel het aan een nieuw of bestaand kerkprofiel, zodat je klaslokalen en roosters kunt beheren."
 ---
 
 # Creating an Account

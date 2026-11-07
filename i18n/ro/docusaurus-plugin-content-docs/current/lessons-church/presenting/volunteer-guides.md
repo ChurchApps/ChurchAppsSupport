@@ -1,5 +1,6 @@
 ---
 title: "Ghiduri pentru voluntari"
+description: "Configurați ghiduri specifice rolurilor în Lessons.church, ca fiecare voluntar să vadă doar pașii lui, și tipăriți sau partajați-le înainte de oră."
 ---
 
 # Ghiduri pentru voluntari

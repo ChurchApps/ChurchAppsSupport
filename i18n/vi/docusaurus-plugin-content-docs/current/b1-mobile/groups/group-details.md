@@ -1,5 +1,7 @@
 ---
-title: "Chi tiết nhóm"
+title: "Chi tiết nhóm trong ứng dụng B1 Mobile"
+sidebar_label: "Chi tiết nhóm"
+description: "Xem trang chi tiết nhóm trong B1 Mobile gồm thông tin nhóm, bài đăng và thành viên, và cách mở trang này từ màn hình Nhóm."
 ---
 
 # Chi tiết nhóm
@@ -13,7 +15,7 @@ Khi bạn chạm vào một nhóm trên màn hình Nhóm, bạn sẽ được đ
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
 - Mở màn hình [Nhóm](./index.md)
 
 </div>
@@ -46,5 +48,5 @@ Nhóm bạn truy cập nhiều nhất sẽ xuất hiện như thẻ nổi bật 
 
 ## Bài viết liên quan
 
-- [Dòng thời gian nhóm](./group-timeline) -- Tìm hiểu về nguồn cấp hoạt động thống nhất của tất cả các nhóm của bạn
+- [Dòng thời gian nhóm](./group-timeline.md) -- Tìm hiểu về nguồn cấp hoạt động thống nhất của tất cả các nhóm của bạn
 - [Nhắn tin](../community/messaging.md) -- Gửi tin nhắn riêng cho thành viên nhóm

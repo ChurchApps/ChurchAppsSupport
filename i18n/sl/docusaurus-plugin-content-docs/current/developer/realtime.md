@@ -1,5 +1,6 @@
 ---
 title: "Arhitektura v realnem času"
+description: "Kako WebSocket v ChurchApps dostavlja klepet, prisotnost in obvestila v živo: rokovanje, naročnine na sobe in gradniki odjemalca za razvijalce."
 ---
 
 # Arhitektura v realnem času
@@ -226,8 +227,8 @@ Anonimni tokovi (klepet v živem prenosu je glavni primer) preskočijo `Notifica
 
 ## Sorodne strani
 
-- [Arhitektura obvestil](./architecture/notifications) -- Lij za obvestila v aplikaciji/potisna/e-poštna obvestila, v katerega se stekajo ti podatki
-- [Končne točke sporočanja](./api/endpoints/messaging) -- Celotna REST površina za sporočila, pogovore, povezave, naprave
-- [Potisna obvestila v brskalniku](./web-push) -- Potisna obvestila v brskalniku, ločena od dostave prek vtičnice na strani
-- [AppHelper](./shared-libraries/app-helper) -- Paket npm, ki vsebuje odjemalske osnovne elemente
-- [Struktura modulov](./api/module-structure) -- Kako je modul sporočanja organiziran na strežniku
+- [Arhitektura obvestil](./architecture/notifications.md) -- Lij za obvestila v aplikaciji/potisna/e-poštna obvestila, v katerega se stekajo ti podatki
+- [Končne točke sporočanja](./api/endpoints/messaging.md) -- Celotna REST površina za sporočila, pogovore, povezave, naprave
+- [Potisna obvestila v brskalniku](./web-push.md) -- Potisna obvestila v brskalniku, ločena od dostave prek vtičnice na strani
+- [AppHelper](./shared-libraries/app-helper.md) -- Paket npm, ki vsebuje odjemalske osnovne elemente
+- [Struktura modulov](./api/module-structure.md) -- Kako je modul sporočanja organiziran na strežniku

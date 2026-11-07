@@ -1,5 +1,6 @@
 ---
 title: "Berpindah Gereja"
+description: "Ganti gereja di aplikasi B1 Mobile dengan memilih gereja terakhir atau mencari berdasarkan nama, semuanya dengan satu login ChurchApps."
 ---
 
 # Berpindah Gereja
@@ -13,7 +14,7 @@ Jika Anda adalah anggota lebih dari satu gereja, B1 Mobile memudahkan Anda untuk
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- [Instal B1 Mobile](./installing) dan [masuk](./logging-in) ke akun Anda
+- [Instal B1 Mobile](./installing.md) dan [masuk](./logging-in.md) ke akun Anda
 
 </div>
 
@@ -24,7 +25,7 @@ Jika Anda adalah anggota lebih dari satu gereja, B1 Mobile memudahkan Anda untuk
 3. Layar **Pencarian Gereja** muncul. Gereja yang baru-baru ini Anda kunjungi ditampilkan di bagian atas untuk akses cepat.
 4. Ketuk gereja terbaru untuk beralih ke sana, atau ketik di kolom pencarian untuk menemukan gereja lain.
 
-Saat Anda berpindah gereja, aplikasi dimuat ulang dengan identitas merek, tautan navigasi, dan konten gereja tersebut. [Dasbor](../dashboard/) Anda, [kelompok](../groups/), dan data lainnya akan mencerminkan gereja yang baru dipilih.
+Saat Anda berpindah gereja, aplikasi dimuat ulang dengan identitas merek, tautan navigasi, dan konten gereja tersebut. [Dasbor](../dashboard/index.md) Anda, [kelompok](../groups/index.md), dan data lainnya akan mencerminkan gereja yang baru dipilih.
 
 ## Mencari Gereja
 

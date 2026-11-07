@@ -1,5 +1,6 @@
 ---
 title: "Traga o seu próprio armazenamento"
+description: "Conecte seu Google Drive, Dropbox, OneDrive ou bucket S3 no B1 Admin para que uploads da igreja ignorem o limite de 100 MB da plataforma."
 ---
 
 # Traga o seu próprio armazenamento (BYOS)
@@ -8,7 +9,7 @@ As igrejas recebem cerca de 100MB de armazenamento gratuito de arquivos hospedad
 
 ## A camada de provedores
 
-O BYOS reutiliza a camada de armazenamento criada para o [MinistryStuff](./ministrystuff): `IStorageProvider` (`Packages/apihelper`), resolvido para cada igreja pelo `StorageResolver` a partir da tabela `content.storageProviders`. Diferentemente dos provedores singleton `churchapps` e `ministrystuff`, os provedores BYOS mantêm credenciais por igreja; por isso, `StorageResolver.forChurch` cria uma instância por requisição, a partir do registro da igreja. As implementações ficam ao lado do resolvedor, em `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, além de `ByosAuth` (troca de tokens OAuth e renovação com instância única, pois o Dropbox rotaciona os refresh tokens; por isso as renovações são deduplicadas da mesma forma que o `ProviderProxyController` faz).
+O BYOS reutiliza a camada de armazenamento criada para o [MinistryStuff](./ministrystuff.md): `IStorageProvider` (`Packages/apihelper`), resolvido para cada igreja pelo `StorageResolver` a partir da tabela `content.storageProviders`. Diferentemente dos provedores singleton `churchapps` e `ministrystuff`, os provedores BYOS mantêm credenciais por igreja; por isso, `StorageResolver.forChurch` cria uma instância por requisição, a partir do registro da igreja. As implementações ficam ao lado do resolvedor, em `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, além de `ByosAuth` (troca de tokens OAuth e renovação com instância única, pois o Dropbox rotaciona os refresh tokens; por isso as renovações são deduplicadas da mesma forma que o `ProviderProxyController` faz).
 
 `storageProviders` guarda as credenciais: `accessToken`/`refreshToken`/`tokenExpiresAt` (criptografados, o trio OAuth) ou `apiKey`/`apiSecret` + JSON em `settings` (`{endpoint, region, bucket, publicBase}`, para S3). Os tokens nunca chegam ao cliente: `GET /content/storage/providers` mascara os segredos e retorna um booleano `connected`.
 

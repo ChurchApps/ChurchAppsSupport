@@ -1,5 +1,6 @@
 ---
 title: "Support Multi-Devises"
+description: "Enregistrez et analysez les dons en différentes devises dans B1 Admin, y compris la saisie manuelle, les dons en ligne via Stripe et la conversion des totaux combinés."
 ---
 
 # Support Multi-Devises

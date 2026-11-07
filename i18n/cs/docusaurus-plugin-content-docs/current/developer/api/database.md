@@ -1,5 +1,6 @@
 ---
 title: "Databáze"
+description: "Zjistěte, jak API ChurchApps rozděluje data mezi šest databází MySQL, po jedné pro každý modul, a jak je nakonfigurovat a inicializovat."
 ---
 
 # Databáze
@@ -13,8 +14,8 @@ API ChurchApps používá architekturu **jedna databáze na modul**. Každý ze 
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Nainstalujte **MySQL 8.0+** -- viz [Požadavky](../setup/prerequisites)
-- Nastavte připojovací řetězce k databázi v souboru `.env` -- viz [Proměnné prostředí](../setup/environment-variables)
+- Nainstalujte **MySQL 8.0+** -- viz [Požadavky](../setup/prerequisites.md)
+- Nastavte připojovací řetězce k databázi v souboru `.env` -- viz [Proměnné prostředí](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Klíčová návrhová rozhodnutí
 
 - **Jedna databáze na modul** -- Každý modul spravuje vlastní databázi MySQL s vyhrazeným připojovacím fondem (spravovaným třídou `KyselyPool`). Moduly tak zůstávají oddělené a každé schéma se může vyvíjet nezávisle.
-- **Výhradní vlastnictví** -- Tabulky modulu čte a zapisuje pouze kód daného modulu. Když jiný modul potřebuje tato data, volá bránu (gateway) vlastnícího modulu, místo aby tabulky dotazoval přímo -- viz [Komunikace mezi moduly](./module-structure#cross-module-communication).
+- **Výhradní vlastnictví** -- Tabulky modulu čte a zapisuje pouze kód daného modulu. Když jiný modul potřebuje tato data, volá bránu (gateway) vlastnícího modulu, místo aby tabulky dotazoval přímo -- viz [Komunikace mezi moduly](./module-structure.md#cross-module-communication).
 - **Vzor repozitáře bez ORM** -- Veškerý přístup k datům probíhá přes třídy repozitářů, které pomocí query builderu Kysely sestavují typované SQL dotazy nad schématem modulu. To dává plnou kontrolu nad výkonem a chováním dotazů.
 - **Multi-tenant již od návrhu** -- Každý dotaz je omezen na `churchId`. Všechny tabulky obsahují sloupec `churchId` a vrstva repozitářů izolaci tenantů vynucuje automaticky.
 
@@ -129,5 +130,5 @@ Toto omezení činí hranice modulů skutečnými: každé schéma se může vyv
 
 ## Související články
 
-- **[Struktura modulu](./module-structure)** -- Jak jsou controllery a repozitáře uspořádány uvnitř každého modulu
-- **[Lokální nastavení API](./local-setup)** -- Kompletní průvodce nastavením krok za krokem
+- **[Struktura modulu](./module-structure.md)** -- Jak jsou controllery a repozitáře uspořádány uvnitř každého modulu
+- **[Lokální nastavení API](./local-setup.md)** -- Kompletní průvodce nastavením krok za krokem

@@ -1,5 +1,7 @@
 ---
-title: "Initiële instellingen"
+title: "Eerste kerkconfiguratie in B1 Admin"
+sidebar_label: "Initiële instellingen"
+description: "Eerste configuratie van een nieuwe kerk in B1 Admin: kerkgegevens, huisstijl, rollen en de aanbevolen volgorde voor personen, groepen, aanwezigheid en giften."
 ---
 
 # Initiële instellingen

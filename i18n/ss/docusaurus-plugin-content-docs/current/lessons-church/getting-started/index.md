@@ -1,5 +1,7 @@
 ---
-title: "Kucala"
+title: "Kuqala Nge-Lessons.church"
+sidebar_label: "Kucala"
+description: "Dala i-akhawunti yakho yemahhala ye-Lessons.church, xhuma libandla lakho, setfa emakilasi, bese uhlela tifundziso tekucala. Akudingeki kutsatfwa ngemalisidi noma kuvivinywa."
 ---
 
 # Kucala

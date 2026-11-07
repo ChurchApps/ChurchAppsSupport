@@ -1,5 +1,6 @@
 ---
 title: "تسجيل الوصول"
+description: "كيف يعمل تسجيل الحضور عبر B1Checkin وB1App وB1 Admin: نموذج بيانات الحضور، والمجموعات كغرف، وبوابات السعة، وقواعد أمان الاستلام."
 ---
 
 # تسجيل الوصول
@@ -216,7 +217,7 @@ index (الإقلاع/الدخول التلقائي) → selectChurch → servic
 
 ## صفحات ذات صلة
 
-- [نقاط نهاية الحضور](../api/endpoints/attendance) -- واجهة REST الكاملة للفروع والخدمات والجلسات والزيارات وزيارات الجلسات
-- [نقاط نهاية العضوية](../api/endpoints/membership) -- الأشخاص والعائلات والمجموعات
-- [Webhooks](../api/webhooks) -- أحداث `session.created` و`attendance.recorded` و`attendance.checkout`
-- [بنية الوحدات](../api/module-structure) -- كيفية تنظيم وحدة الحضور من جهة الخادم
+- [نقاط نهاية الحضور](../api/endpoints/attendance.md) -- واجهة REST الكاملة للفروع والخدمات والجلسات والزيارات وزيارات الجلسات
+- [نقاط نهاية العضوية](../api/endpoints/membership.md) -- الأشخاص والعائلات والمجموعات
+- [Webhooks](../api/webhooks.md) -- أحداث `session.created` و`attendance.recorded` و`attendance.checkout`
+- [بنية الوحدات](../api/module-structure.md) -- كيفية تنظيم وحدة الحضور من جهة الخادم

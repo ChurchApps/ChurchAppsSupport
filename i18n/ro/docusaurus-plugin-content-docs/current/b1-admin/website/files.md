@@ -1,5 +1,6 @@
 ---
 title: "Fișiere"
+description: "Încarcă, răsfoiește și gestionează imagini și documente pentru site-ul bisericii în B1 Admin, inclusiv conectarea unui stocare externă pentru mai mult spațiu."
 ---
 
 # Fișiere
@@ -13,7 +14,7 @@ Pagina Fișiere este depozitul central pentru toate fișierele media și documen
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Finalizați [Configurarea inițială](initial-setup) pentru site-ul dvs. web
+- Finalizați [Configurarea inițială](./initial-setup.md) pentru site-ul dvs. web
 - Optimizați imaginile înainte de încărcare pentru timpi de încărcare a paginilor mai rapizi
 - Pregătiți fișierele în formate web comune (PNG, JPG, PDF etc.)
 
@@ -42,7 +43,7 @@ Tabelul de fișiere listează fiecare fișier încărcat, cu **Name** și **Size
 3. Fișierele pe care le încărcați aici sunt disponibile pentru utilizare pe toate paginile site-ului dvs. web și în toate blocurile de conținut.
 
 :::info
-Când construiți pagini în [Gestionarea paginilor](managing-pages), puteți face referire la orice fișier încărcat aici prin adresa sa URL. Astfel, toate fișierele media rămân organizate într-o singură locație centrală.
+Când construiți pagini în [Gestionarea paginilor](./managing-pages.md), puteți face referire la orice fișier încărcat aici prin adresa sa URL. Astfel, toate fișierele media rămân organizate într-o singură locație centrală.
 :::
 
 ## Ștergerea fișierelor
@@ -57,5 +58,5 @@ Fișierele șterse nu pot fi recuperate. Verificați de două ori că un fișier
 
 ## Pașii următori
 
-- [Gestionarea paginilor](managing-pages) -- Adăugați fișierele încărcate pe paginile site-ului web
-- [Aspect](appearance) -- Personalizați tema vizuală a site-ului dvs.
+- [Gestionarea paginilor](./managing-pages.md) -- Adăugați fișierele încărcate pe paginile site-ului web
+- [Aspect](./appearance.md) -- Personalizați tema vizuală a site-ului dvs.

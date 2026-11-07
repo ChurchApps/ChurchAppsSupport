@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "Installer B1 Admin en local : cloner le tableau de bord React/Vite, configurer les points d'accès API dans .env et lancer le serveur de développement."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin est le tableau de bord d'administration de l'église -- une application 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Installez **Node.js 22+** et **Git** -- voir [Prérequis](../setup/prerequisites)
-- Configurez votre cible d'API (démo ou locale) -- voir [Variables d'environnement](../setup/environment-variables)
+- Installez **Node.js 22+** et **Git** -- voir [Prérequis](../setup/prerequisites.md)
+- Configurez votre cible d'API (démo ou locale) -- voir [Variables d'environnement](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Les builds de production sont déployés sur **S3 + CloudFront** :
 3. Une invalidation CloudFront est déclenchée pour servir la nouvelle version
 
 :::tip
-Pour des instructions de déploiement détaillées, consultez le guide [Déploiement de l'application web](../deployment/web-apps).
+Pour des instructions de déploiement détaillées, consultez le guide [Déploiement de l'application web](../deployment/web-apps.md).
 :::

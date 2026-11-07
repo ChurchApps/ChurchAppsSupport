@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "B1 Admin を Zapier に接続し、新しい人物、献金、グループメンバーをきっかけに自動化を開始します。コーディング不要で、B1 にレコードを書き戻すこともできます。"
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ B1.church アプリは構築済みで動作していますが、Zap エディタ
 ### 献金を Slack チャンネルに投稿する（標準のコネクターより詳細なカード形式）
 
 - **トリガー** — B1：New Donation
-- **アクション** — Slack：Send Channel Message。標準の [Slackコネクター](./slack-discord) ではできない、ボタンや添付ファイルなどを含む任意のレイアウトを作成できます。
+- **アクション** — Slack：Send Channel Message。標準の [Slackコネクター](./slack-discord.md) ではできない、ボタンや添付ファイルなどを含む任意のレイアウトを作成できます。
 
 ### 新しいグループメンバーを Google グループに追加する
 
@@ -106,6 +107,6 @@ B1.church アプリは構築済みで動作していますが、Zap エディタ
 
 ## 関連項目
 
-- [Make](./make) — 同じ仕組みを別のプラットフォームで実現する方法
-- [Slack & Discord](./slack-discord) — Zapier を使わない、よりシンプルなチャット通知
+- [Make](./make.md) — 同じ仕組みを別のプラットフォームで実現する方法
+- [Slack & Discord](./slack-discord.md) — Zapier を使わない、よりシンプルなチャット通知
 - [Webhooks（開発者向けリファレンス）](/docs/developer/api/webhooks)

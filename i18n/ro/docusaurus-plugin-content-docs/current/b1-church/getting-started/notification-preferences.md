@@ -1,5 +1,6 @@
 ---
 title: "Preferințele de notificare"
+description: "Setează canalele, frecvența emailurilor, orele de liniște și renunțările la SMS pentru fiecare tip de notificare, din B1 Admin și aplicația B1."
 ---
 
 # Preferințele de notificare
@@ -60,6 +61,6 @@ Notificările urgente -- cum ar fi o alertă de securitate sau un mesaj de sigur
 
 ## Vezi și
 
-- [Înscrierea voluntarilor](../serving/volunteer-signup) -- Memento-uri pentru servire și răspunsuri la solicitările de program
-- [Înscrierea la evenimente](../events/registering) -- Înscrie-te la evenimente care trimit memento-uri
-- [Instalarea aplicației](installing-pwa) -- Adaugă B1 pe dispozitivul tău pentru a primi notificări push
+- [Înscrierea voluntarilor](../serving/volunteer-signup.md) -- Memento-uri pentru servire și răspunsuri la solicitările de program
+- [Înscrierea la evenimente](../events/registering.md) -- Înscrie-te la evenimente care trimit memento-uri
+- [Instalarea aplicației](./installing-pwa.md) -- Adaugă B1 pe dispozitivul tău pentru a primi notificări push

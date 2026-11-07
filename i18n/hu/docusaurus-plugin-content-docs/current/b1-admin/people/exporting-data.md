@@ -1,5 +1,6 @@
 ---
 title: "Adatok exportálása"
+description: "Személyek exportálása CSV-be, csoporttaglisták vagy teljes B1-adatbázis-mentés a B1 Admin-ból, és annak megismerése, mit tartalmaz a B1 Export Zip."
 ---
 
 # Adatok exportálása

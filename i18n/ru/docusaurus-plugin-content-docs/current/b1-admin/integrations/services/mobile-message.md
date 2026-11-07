@@ -1,5 +1,6 @@
 ---
 title: "Mobile Message"
+description: "Подключите события B1 Admin к Mobile Message, австралийскому SMS API, через вебхуки Zapier или Make для отправки приветственных SMS, сообщений о пожертвованиях и напоминаний."
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ API Mobile Message имеет форму "send SMS" — нет триггеро�
 
 ### Альтернатива Make
 
-Если вы предпочитаете Make, поместите модуль **HTTP — Make a request** после триггера B1 Watch Events, настройте его так же (POST, Basic Auth, JSON body). См. [обзор Make](../make) для стороны B1.
+Если вы предпочитаете Make, поместите модуль **HTTP — Make a request** после триггера B1 Watch Events, настройте его так же (POST, Basic Auth, JSON body). См. [обзор Make](../make.md) для стороны B1.
 
 ## Ограничения и примечания
 
@@ -102,6 +103,6 @@ API Mobile Message имеет форму "send SMS" — нет триггеро�
 
 ## См. также
 
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — альтернативные SMS провайдеры с родными приложениями Zapier (не нужен шаг Webhooks-by-Zapier)
-- [Zapier (обзор)](../zapier) — B1 сторона каждого рецепта Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — альтернативные SMS провайдеры с родными приложениями Zapier (не нужен шаг Webhooks-by-Zapier)
+- [Zapier (обзор)](../zapier.md) — B1 сторона каждого рецепта Zapier
 - [Mobile Message API документы](https://mobilemessage.com.au/api-documentation)

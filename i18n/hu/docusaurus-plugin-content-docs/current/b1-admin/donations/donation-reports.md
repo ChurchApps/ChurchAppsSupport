@@ -1,5 +1,6 @@
 ---
 title: "Adományjelentések"
+description: "Adományösszegek, lemorzsolódó adakozók és tételek részletei a B1 Admin-ban: Donations Summary áttekintő, Lapsed Givers nézet, CSV-exportok."
 ---
 
 # Adományjelentések

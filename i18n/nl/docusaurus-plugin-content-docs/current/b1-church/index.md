@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Ontdek wat de B1.church-site van je kerk leden biedt, van het ledenportaal en groepen tot geven, evenementen, dienen en inchecken."
 ---
 
 # B1.church
@@ -26,15 +27,15 @@ Wanneer leden uw B1.church-site bezoeken, zien zij de openbare website van uw ke
 
 ## Meer informatie
 
-- [Aan de slag](./getting-started/) -- Maak uw account aan, meld u aan en leer hoe u B1.church navigeert.
-- [Groepen](./groups/) -- Sluit u aan bij groepen van uw kerk en neem eraan deel.
-- [Geven](./giving/) -- Geef donaties en beheer uw geven.
-- [Gebeurtenissen](./events/) -- Blader en registreer u voor komende kerkgebeurtenissen.
-- [Dienst](./serving/) -- Bekijk plannen en meld u aan voor vrijwilligerposities.
-- [Schema's](./plans/) -- Bekijk dienstplannen en uw vrijwilligersposities.
-- [Inchecking](./checkin/) -- Check in voor diensten, gebeurtenissen en gastregistratie.
-- [Community Directory](./community/) -- Zoek en verbind u met andere leden.
-- [Inhoud](./content/) -- Preken, Bijbel, lessen en livestreaming.
+- [Aan de slag](./getting-started/index.md) -- Maak uw account aan, meld u aan en leer hoe u B1.church navigeert.
+- [Groepen](./groups/index.md) -- Sluit u aan bij groepen van uw kerk en neem eraan deel.
+- [Geven](./giving/index.md) -- Geef donaties en beheer uw geven.
+- [Gebeurtenissen](./events/index.md) -- Blader en registreer u voor komende kerkgebeurtenissen.
+- [Dienst](./serving/index.md) -- Bekijk plannen en meld u aan voor vrijwilligerposities.
+- [Schema's](./plans/index.md) -- Bekijk dienstplannen en uw vrijwilligersposities.
+- [Inchecking](./checkin/index.md) -- Check in voor diensten, gebeurtenissen en gastregistratie.
+- [Community Directory](./community/index.md) -- Zoek en verbind u met andere leden.
+- [Inhoud](./content/index.md) -- Preken, Bijbel, lessen en livestreaming.
 
 :::info
 B1.church is volledig gratis voor kerken en leden. Uw kerkbeheerder stelt de site in en past deze aan via B1 Admin. Als lid gaat u eenvoudig naar de B1.church-URL van uw kerk om aan de slag te gaan.

@@ -1,5 +1,7 @@
 ---
-title: "Prihlásenie"
+title: "Nastavenie samoobslužného check-inu s B1 Checkin a B1 Admin"
+sidebar_label: "Prihlásenie"
+description: "Nastavte samoobslužný check-in pre bohoslužby s aplikáciou B1 Checkin v B1 Admin: zariadenia, kiosk účty, rozvrhy, branding a registrácia hostí cez QR kód."
 ---
 
 # Prihlásenie
@@ -99,7 +101,7 @@ Nečinnú obrazovku využite na zobrazovanie oznámení, nadchádzajúcich poduj
 
 Prihlasovací kiosk môže zobraziť QR kód, ktorý návštevníci naskenujú a zaregistrujú sa sami seba aj svoju rodinu vo vlastnom telefóne. Tým sa urýchli prihlasovanie pre hostí, ktorí prichádzajú prvýkrát.
 
-Keď hosť naskenuje QR kód, otvorí sa mu [stránka registrácie hostí](../../b1-church/checkin/guest-registration), kde zadá mená členov svojej rodiny a ďalšie údaje, o ktoré sa rozhodnete požiadať. Dobrovoľník ho potom môže vyhľadať na kiosku a prihlásiť.
+Keď hosť naskenuje QR kód, otvorí sa mu [stránka registrácie hostí](../../b1-church/checkin/guest-registration.md), kde zadá mená členov svojej rodiny a ďalšie údaje, o ktoré sa rozhodnete požiadať. Dobrovoľník ho potom môže vyhľadať na kiosku a prihlásiť.
 
 ### Zapnutie registrácie hostí cez QR kód
 

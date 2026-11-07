@@ -1,5 +1,6 @@
 ---
 title: "गाइड: स्मॉल ग्रुप चलाएं"
+description: "B1 Admin में छोटे समूह, बाइबल अध्ययन और सेवा टीमें सेट करें, फिर B1 वेबसाइट पर चर्च-व्यापी कैलेंडर और समूह अनुभाग प्रकाशित करें।"
 ---
 
 # स्मॉल ग्रुप चलाएं
@@ -78,7 +79,7 @@ curated calendar आपके द्वारा जोड़े गए सम�
 
 1. सदस्य [B1.church](../../b1-church/groups/browsing-groups.md) पर समूह ब्राउज़ और जॉइन करते हैं
 2. समूह सदस्य विवरण, कैलेंडर देख सकते हैं और [बातचीत](../../b1-church/groups/conversations.md) में पोस्ट कर सकते हैं
-3. सभी समूह सुविधाएं [B1 Mobile ऐप](../../b1-mobile/groups/) पर भी उपलब्ध हैं
+3. सभी समूह सुविधाएं [B1 Mobile ऐप](../../b1-mobile/groups/index.md) पर भी उपलब्ध हैं
 
 :::info
 सदस्य वेब और मोबाइल दोनों पर अपने समूह, आगामी इवेंट और समूह बातचीत देखते हैं -- सब कुछ सिंक में रहता है।
@@ -97,4 +98,4 @@ curated calendar आपके द्वारा जोड़े गए सम�
 - [Curated Calendar](../calendars/curated-calendar.md) -- एकीकृत चर्च कैलेंडर बनाएं
 - [Browsing Groups (Web)](../../b1-church/groups/browsing-groups.md) -- सदस्य समूह कैसे खोजते हैं
 - [Group Conversations (Web)](../../b1-church/groups/conversations.md) -- समूह चर्चा
-- [Groups (Mobile)](../../b1-mobile/groups/) -- मोबाइल ऐप पर समूह
+- [Groups (Mobile)](../../b1-mobile/groups/index.md) -- मोबाइल ऐप पर समूह

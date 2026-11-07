@@ -1,5 +1,6 @@
 ---
 title: Tikėjimo išpažinimas
+description: "Ką ChurchApps tiki apie Dievą, Jėzų, Šventąją Dvasią, Raštą, išganymą ir bažnyčią – standartas, pagal kurį peržiūrimas Lessons.church mokymo turinys."
 ---
 
 # Tikėjimo išpažinimas

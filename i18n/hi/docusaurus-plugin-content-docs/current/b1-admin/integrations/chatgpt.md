@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "B1 Admin में API कुंजी से अपने चर्च के B1 डेटा को ChatGPT से जोड़ें, ताकि लोगों, दान और उपस्थिति के बारे में सरल भाषा में प्रश्न पूछ सकें।"
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ ChatGPT को अपने church के B1 डेटा से जोड़े
 </div>
 
 :::tip सुझाव: पहले Claude आज़माएं -- यह मुफ़्त है
-[Claude](./claude) B1 से अपने **मुफ़्त plan** पर कनेक्ट होता है और 3 मिनट से कम में सेट हो जाता है -- बस B1 को connector के रूप में जोड़ें और अपने B1 account से sign in करें। किसी key की ज़रूरत नहीं। किसी भी चीज़ के लिए भुगतान करने से पहले आपके church के लिए AI को B1 के साथ आज़माने का यह सबसे आसान तरीका है।
+[Claude](./claude.md) B1 से अपने **मुफ़्त plan** पर कनेक्ट होता है और 3 मिनट से कम में सेट हो जाता है -- बस B1 को connector के रूप में जोड़ें और अपने B1 account से sign in करें। किसी key की ज़रूरत नहीं। किसी भी चीज़ के लिए भुगतान करने से पहले आपके church के लिए AI को B1 के साथ आज़माने का यह सबसे आसान तरीका है।
 :::
 
 ## सेट करें
@@ -254,5 +255,5 @@ Custom GPT से आप एक समर्पित assistant बना सक
 
 - [API Keys](/docs/developer/api/api-keys) — पूर्ण scope संदर्भ
 - [MCP Server (developer reference)](/docs/developer/api/mcp) — protocol विवरण और tool schemas
-- [Claude](./claude) — वही विचार, Anthropic के models के लिए
+- [Claude](./claude.md) — वही विचार, Anthropic के models के लिए
 - [REST API reference](/docs/developer/api/endpoints) — हर endpoint जिसे Custom GPT action कॉल कर सकता है

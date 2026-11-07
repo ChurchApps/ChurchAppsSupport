@@ -1,5 +1,6 @@
 ---
 title: "Pieśni"
+description: "Zarządzaj biblioteką pieśni w B1 Admin: wyszukuj i dodawaj utwory, edytuj szczegóły, dołączaj teksty ChordPro i aranżacje oraz wgrywaj nagrania do prób."
 ---
 
 # Pieśni

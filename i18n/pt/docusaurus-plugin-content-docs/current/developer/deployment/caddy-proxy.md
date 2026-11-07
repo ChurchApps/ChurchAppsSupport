@@ -1,5 +1,6 @@
 ---
 title: "Proxy de domínio personalizado com Caddy"
+description: "Construa e execute o proxy reverso Caddy que serve domínios de igrejas nos sites do B1.church, com certificados TLS, mapeamento de hosts e armadilhas."
 ---
 
 # Proxy de domínio personalizado com Caddy
@@ -10,7 +11,7 @@ Domínios personalizados de igrejas (`minhaigreja.org` → o site B1 da igreja) 
 
 </div>
 
-Para saber como uma requisição se resolve para uma igreja/site depois que chega ao B1App, veja [Roteamento de sites e multi-site](../architecture/websites).
+Para saber como uma requisição se resolve para uma igreja/site depois que chega ao B1App, veja [Roteamento de sites e multi-site](../architecture/websites.md).
 
 ## Componentes
 
@@ -88,5 +89,5 @@ O `CaddyHelper` da API (e os endpoints `/membership/domains/caddy` + `/caddy/ini
 
 ## Páginas relacionadas
 
-- [Roteamento de sites e multi-site](../architecture/websites) — como a requisição proxiada se resolve para uma igreja/site no B1App
-- [Implantação da API](./apis) — implantando a API de Membership que serve `authorize`/`hostmap`
+- [Roteamento de sites e multi-site](../architecture/websites.md) — como a requisição proxiada se resolve para uma igreja/site no B1App
+- [Implantação da API](./apis.md) — implantando a API de Membership que serve `authorize`/`hostmap`

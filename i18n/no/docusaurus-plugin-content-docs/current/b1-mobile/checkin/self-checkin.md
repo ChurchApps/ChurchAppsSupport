@@ -1,5 +1,7 @@
 ---
-title: "Selvinnsjekk"
+title: "Selvinnsjekking i B1 Mobile-appen"
+sidebar_label: "Selvinnsjekk"
+description: "Sjekk deg selv og husstanden din inn på en gudstjeneste i B1 Mobile-appen, inkludert valg av gudstjenestetid og tildeling av gruppe for hver person."
 ---
 
 # Selvinnsjekk
@@ -13,7 +15,7 @@ Innsjekking fra B1 Mobile er en enkel prosess i flere steg. Med noen få trykk k
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- [Installer B1 Mobile](../getting-started/installing.md) og [logg inn](../getting-started/logging-in.md) på kontoen din
 - Kontroller at [husstandsmedlemmene](../profile/household.md) dine er lagt inn i profilen din
 
 </div>

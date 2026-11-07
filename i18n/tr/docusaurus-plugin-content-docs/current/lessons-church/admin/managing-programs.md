@@ -1,5 +1,6 @@
 ---
 title: "Programları Yönetme"
+description: "Lessons.church'te müfredat programları oluşturun ve düzenleyin; slug ve küçük resimleri ayarlayın, çalışmaları kategorilere ayırın ve program düzeyindeki kaynakları ekleyin."
 ---
 
 # Programları Yönetme

@@ -1,12 +1,13 @@
 ---
 title: "Connected Apps at OAuth"
+description: "Ikonekta ang third-party na app sa datos ng B1 gamit ang OAuth 2.0, walang shared password o API key, at bawiin ang access sa B1 Admin anumang oras."
 ---
 
 # Connected Apps at OAuth
 
 <div class="article-intro">
 
-Sinusuportahan ng B1 API ang OAuth 2.0 para makahingi ang isang third-party na application ng pahintulot mula sa bawat church admin na ma-access ang kanilang data -- nang hindi kailanman nagbabahagi ng password o API key ang simbahan. Ang **Connected App** ay isang OAuth token na inaprubahan ng isang church admin; ang pagbawi nito ay pumuputol sa access ng third-party app sa isang click. Gamitin ang daang ito para sa multi-tenant na SaaS connector. Para sa integration ng iisang simbahan, mas mainam ang [API Keys](./api-keys).
+Sinusuportahan ng B1 API ang OAuth 2.0 para makahingi ang isang third-party na application ng pahintulot mula sa bawat church admin na ma-access ang kanilang data -- nang hindi kailanman nagbabahagi ng password o API key ang simbahan. Ang **Connected App** ay isang OAuth token na inaprubahan ng isang church admin; ang pagbawi nito ay pumuputol sa access ng third-party app sa isang click. Gamitin ang daang ito para sa multi-tenant na SaaS connector. Para sa integration ng iisang simbahan, mas mainam ang [API Keys](./api-keys.md).
 
 </div>
 
@@ -27,7 +28,7 @@ Sinusuportahan ng B1 API ang OAuth 2.0 para makahingi ang isang third-party na a
 | **Connected App** | Isang partikular na pares ng `(client, church-admin)` kung saan ipinagkaloob ng admin ang access sa client. Bawat Connected App ay sinusuportahan ng OAuth refresh token. |
 | **Access token** | Isang maikli ang buhay na JWT (≈ 7 araw) na ginagamit ng client para sa mga tawag sa API. Kapareho ng hugis ng user JWT -- `Authorization: Bearer <jwt>`. |
 | **Refresh token** | Isang mahabang buhay na opaque na string (≈ 90 araw) na ginagamit ng client para gumawa ng bagong access token. |
-| **Scope** | Nagpapaliit sa kayang gawin ng access token -- tingnan ang [scope catalog](./api-keys#scopes). |
+| **Scope** | Nagpapaliit sa kayang gawin ng access token -- tingnan ang [scope catalog](./api-keys.md#scopes). |
 
 ## Mga Grant Flow
 
@@ -162,7 +163,7 @@ Awtomatikong inaalis sa listahan ang mga nag-expire nang token.
 
 ## Mga Scope at Pagpayag
 
-Ang mga string ng scope ay kapareho ng catalog ng [API keys](./api-keys#scopes). Mga pinakamahusay na gawi para sa mga client:
+Ang mga string ng scope ay kapareho ng catalog ng [API keys](./api-keys.md#scopes). Mga pinakamahusay na gawi para sa mga client:
 
 - **Humiling ng pinakamakitid na scope na gagana.** Mapapansin ng mga simbahan kung humihingi ka ng `donations:write` gayong kailangan mo lamang magbasa ng tao.
 - **Gumamit ng refresh token kasama ang maikling buhay na access token.** Mahirap bawiin nang mabilis ang mahabang buhay na access token.
@@ -183,7 +184,7 @@ Dapat eksaktong tumugma ang mga nakarehistrong redirect URI sa `redirect_uri` ng
 
 ### Dynamic Client Registration
 
-Ang `POST /membership/oauth/register` (pampubliko, RFC 7591) ay nagpapahintulot sa isang client gaya ng MCP connector ng claude.ai na magrehistro ng sarili. Ina-advertise ito ng `/.well-known/oauth-authorization-server` document ng API -- tingnan ang [MCP Server → OAuth Discovery](./mcp#oauth-discovery).
+Ang `POST /membership/oauth/register` (pampubliko, RFC 7591) ay nagpapahintulot sa isang client gaya ng MCP connector ng claude.ai na magrehistro ng sarili. Ina-advertise ito ng `/.well-known/oauth-authorization-server` document ng API -- tingnan ang [MCP Server → OAuth Discovery](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ Sa consent page ng B1Admin, ang client na nagrehistro ng sarili ay makakakita ng
 
 ## Suporta sa SDK
 
-Binabalot ng package na `@churchapps/integration-sdk` ang bawat OAuth flow ng mga typed na helper -- `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Tingnan ang README ng package at ang [Webhooks](./webhooks#sdk-support) para sa end-to-end na halimbawa.
+Binabalot ng package na `@churchapps/integration-sdk` ang bawat OAuth flow ng mga typed na helper -- `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Tingnan ang README ng package at ang [Webhooks](./webhooks.md#sdk-support) para sa end-to-end na halimbawa.

@@ -1,5 +1,6 @@
 ---
 title: "Režim predstavitve"
+description: "Zaženi uro čez cel zaslon na projektorju ali TV-ju v učilnici s Presenter Mode v Lessons.church in se pomikaj po sklopih med uro."
 ---
 
 # Režim predstavitve

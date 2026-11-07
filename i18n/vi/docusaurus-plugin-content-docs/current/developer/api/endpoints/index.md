@@ -1,5 +1,6 @@
 ---
 title: "Tham chiếu endpoint"
+description: "Tìm mọi endpoint API ChurchApps theo module, xem phương thức HTTP, đường dẫn, xác thực và quyền từng route, cùng quy ước lưu hàng loạt và xử lý lỗi."
 ---
 
 # Tham chiếu endpoint
@@ -89,10 +90,10 @@ Tham số báo cáo được truyền dưới dạng giá trị chuỗi truy v�
 
 | Module | Đường dẫn gốc | Mô tả |
 |--------|-----------|-------------|
-| [Authentication](./authentication) | `/membership/users`, `/membership/oauth` | Đăng nhập, đăng ký, JWT token, OAuth, quyền |
-| [Membership](./membership) | `/membership/*` | Thành viên, nhà thờ, nhóm, hộ gia đình, vai trò, biểu mẫu, cài đặt |
-| [Attendance](./attendance) | `/attendance/*` | Cơ sở, buổi nhóm, phiên, lượt viếng thăm, bản ghi check-in |
-| [Content](./content) | `/content/*` | Trang, bài giảng, sự kiện, tệp, thư viện ảnh, Kinh Thánh, phát trực tuyến |
-| [Giving](./giving) | `/giving/*` | Quyên góp, quỹ, cổng thanh toán, đăng ký định kỳ |
-| [Messaging](./messaging) | `/messaging/*` | Cuộc trò chuyện, thông báo, thiết bị, SMS |
-| [Doing](./doing) | `/doing/*` | Kế hoạch, nhiệm vụ, phân công, tự động hóa, lên lịch |
+| [Authentication](./authentication.md) | `/membership/users`, `/membership/oauth` | Đăng nhập, đăng ký, JWT token, OAuth, quyền |
+| [Membership](./membership.md) | `/membership/*` | Thành viên, nhà thờ, nhóm, hộ gia đình, vai trò, biểu mẫu, cài đặt |
+| [Attendance](./attendance.md) | `/attendance/*` | Cơ sở, buổi nhóm, phiên, lượt viếng thăm, bản ghi check-in |
+| [Content](./content.md) | `/content/*` | Trang, bài giảng, sự kiện, tệp, thư viện ảnh, Kinh Thánh, phát trực tuyến |
+| [Giving](./giving.md) | `/giving/*` | Quyên góp, quỹ, cổng thanh toán, đăng ký định kỳ |
+| [Messaging](./messaging.md) | `/messaging/*` | Cuộc trò chuyện, thông báo, thiết bị, SMS |
+| [Doing](./doing.md) | `/doing/*` | Kế hoạch, nhiệm vụ, phân công, tự động hóa, lên lịch |

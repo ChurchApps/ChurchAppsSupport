@@ -1,5 +1,6 @@
 ---
 title: "Multi-Währungs-Unterstützung"
+description: "Erfassen und berichten Sie in B1 Admin Spenden in verschiedenen Währungen, einschließlich manueller Eingabe, Online-Spenden über Stripe und der Umrechnung kombinierter Summen."
 ---
 
 # Multi-Währungs-Unterstützung

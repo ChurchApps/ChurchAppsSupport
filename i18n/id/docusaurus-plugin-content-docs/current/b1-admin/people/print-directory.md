@@ -1,5 +1,6 @@
 ---
 title: "Cetak Direktori"
+description: "Buat direktori anggota yang dapat dicetak dan dikelompokkan per rumah tangga dari B1 Admin, dengan foto, info kontak, dan ulang tahun, berukuran kertas letter."
 ---
 
 # Cetak Direktori

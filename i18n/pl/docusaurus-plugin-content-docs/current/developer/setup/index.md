@@ -1,5 +1,6 @@
 ---
 title: "Konfiguracja"
+description: "Wybierz lokalną ścieżkę pracy z projektami ChurchApps: praca nad frontendem na wspólnych demo API lub pełny stos lokalnie z MySQL do zmian w backendzie."
 ---
 
 # Konfiguracja
@@ -40,15 +41,15 @@ To podejście pozwala zacząć wprowadzać zmiany we frontendzie w ciągu kilku 
 
 ### 2. Uruchom wszystko lokalnie
 
-Jeśli musisz zmodyfikować kod API lub pracować offline, możesz uruchomić pełny stos lokalnie. Wymaga to MySQL 8.0+ oraz dodatkowej konfiguracji. Szczegółowe instrukcje znajdziesz w przewodniku [lokalna konfiguracja API](../api/local-setup).
+Jeśli musisz zmodyfikować kod API lub pracować offline, możesz uruchomić pełny stos lokalnie. Wymaga to MySQL 8.0+ oraz dodatkowej konfiguracji. Szczegółowe instrukcje znajdziesz w przewodniku [lokalna konfiguracja API](../api/local-setup.md).
 
 ## Pierwsze kroki
 
 Wykonuj te strony w podanej kolejności:
 
-1. **[Wymagania wstępne](prerequisites)** -- Zainstaluj wymagane narzędzia (Node.js, Git, MySQL itd.)
-2. **[Przegląd projektów](project-overview)** -- Poznaj, jakie projekty istnieją i co robią
-3. **[Zmienne środowiskowe](environment-variables)** -- Skonfiguruj pliki `.env`, aby połączyć wszystko ze sobą
+1. **[Wymagania wstępne](./prerequisites.md)** -- Zainstaluj wymagane narzędzia (Node.js, Git, MySQL itd.)
+2. **[Przegląd projektów](./project-overview.md)** -- Poznaj, jakie projekty istnieją i co robią
+3. **[Zmienne środowiskowe](./environment-variables.md)** -- Skonfiguruj pliki `.env`, aby połączyć wszystko ze sobą
 
 :::info
 Każdy projekt ChurchApps to niezależne repozytorium Git. Musisz sklonować tylko te konkretne projekty, nad którymi chcesz pracować.

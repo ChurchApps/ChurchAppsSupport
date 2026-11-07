@@ -1,5 +1,6 @@
 ---
 title: "Simo Sonkhe Semaphrojekthi"
+description: "Hlola wonkhe emarepositori e-ChurchApps ngetigaba, nemarhabe, emaporti etindlu tedatha, nekutsi tincwadzi letisemagama @churchapps ticinisa kanjani kutinhlelo, kumadokhumenti wekusetfwa."
 ---
 
 # Simo Sonkhe Semaphrojekthi
@@ -13,7 +14,7 @@ I-ChurchApps yakheke nga-emaphrojekthi lacishe abe ngu-20 latimele, ngamunye ush
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- Faka [tidzingo tekucala](./prerequisites) tesigaba seliphrojekthi lofuna kusebenta kulo
+- Faka [tidzingo tekucala](./prerequisites.md) tesigaba seliphrojekthi lofuna kusebenta kulo
 
 </div>
 
@@ -72,7 +73,7 @@ I-code lesabelwanako ishicilelwa ku-npm ngaphansi kwe-scope ye-`@churchapps` fut
 | `@churchapps/integration-sdk` | Insimbi yekuhlanganisa ye-B1.church: ema-webhook, i-REST client, i-OAuth | Bantfu labatfutfukisa kuhlanganiswa kwangaphandle |
 | `@churchapps/texting` | Kucedvwa kweniketi we-SMS | Api |
 
-Bona [Emaraybhulari Lasabelwanako](../shared-libraries/) kute utfole kuhlelwa kwe-workspace kanye nendlela yekukhishwa (release workflow).
+Bona [Emaraybhulari Lasabelwanako](../shared-libraries/index.md) kute utfole kuhlelwa kwe-workspace kanye nendlela yekukhishwa (release workflow).
 
 ## Bubudlelwane Bemaphrojekthi
 
@@ -90,5 +91,5 @@ Tonkhe tinhlelo te-frontend titincike ku-`@churchapps/helpers`. Tinhlelo te-web 
 
 ## Tinyatselo Letilandzelako
 
-- **[Emavariyebuli Endzawo](./environment-variables)** -- Hlela emafayela akho e-`.env` kute uxhume ku-ema-API
-- **[API Local Setup](../api/local-setup)** -- Hlela i-backend API ngasekhaya
+- **[Emavariyebuli Endzawo](./environment-variables.md)** -- Hlela emafayela akho e-`.env` kute uxhume ku-ema-API
+- **[API Local Setup](../api/local-setup.md)** -- Hlela i-backend API ngasekhaya

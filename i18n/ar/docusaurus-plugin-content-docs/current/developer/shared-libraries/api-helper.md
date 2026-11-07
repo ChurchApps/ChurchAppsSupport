@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "مرجع لحزمة @churchapps/apihelper التي تستخدمها واجهات Express في ChurchApps ضمن مساحة عمل Packages، ويشمل البناء المحلي والاختبار عبر بوابة Yarn والنشر بـ changesets."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ title: "ApiHelper"
 <div class="prereqs">
 <h4>قبل أن تبدأ</h4>
 
-- ثبّت **Node.js** و**Git** -- راجع [المتطلبات الأساسية](../setup/prerequisites)
+- ثبّت **Node.js** و**Git** -- راجع [المتطلبات الأساسية](../setup/prerequisites.md)
 - تعرّف على إعداد [مساحة عمل الحزم](./index.md) وآلية الإصدار
-- تعتمد هذه الحزمة على [`@churchapps/helpers`](./helpers) كتبعية نظيرة (peer dependency) وتعيد تصديرها
+- تعتمد هذه الحزمة على [`@churchapps/helpers`](./helpers.md) كتبعية نظيرة (peer dependency) وتعيد تصديرها
 
 </div>
 
@@ -65,6 +66,6 @@ title: "ApiHelper"
 
 ## مقالات ذات صلة
 
-- **[Helpers](./helpers)** -- حزمة الأدوات الأساسية التي تعتمد عليها هذه الحزمة
-- **[بنية الوحدات](../api/module-structure)** -- كيفية استخدام المتحكمات ووسائط المصادقة في وحدات الواجهة البرمجية
-- **[إعداد الواجهة البرمجية محليًا](../api/local-setup)** -- إعداد الواجهة البرمجية للتطوير المحلي
+- **[Helpers](./helpers.md)** -- حزمة الأدوات الأساسية التي تعتمد عليها هذه الحزمة
+- **[بنية الوحدات](../api/module-structure.md)** -- كيفية استخدام المتحكمات ووسائط المصادقة في وحدات الواجهة البرمجية
+- **[إعداد الواجهة البرمجية محليًا](../api/local-setup.md)** -- إعداد الواجهة البرمجية للتطوير المحلي

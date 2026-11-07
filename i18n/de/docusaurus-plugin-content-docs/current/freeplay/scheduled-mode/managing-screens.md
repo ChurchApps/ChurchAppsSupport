@@ -1,5 +1,6 @@
 ---
 title: "Bildschirme und Gruppen verwalten"
+description: "Online-Status der FreePlay-TVs für Sonntag prüfen, Bildschirmeinstellungen ändern und Gruppen einrichten, die sich einen Kalender teilen."
 ---
 
 # Bildschirme und Gruppen verwalten
@@ -14,7 +15,7 @@ Auf der Seite **Bildschirme** in FreePlay Admin sehen Sie jeden Fernseher, der m
 <h4>Bevor Sie beginnen</h4>
 
 - Melden Sie sich bei FreePlay Admin unter [admin.freeplay.church](https://admin.freeplay.church) an
-- [Koppeln Sie mindestens einen Bildschirm](./pairing-a-screen)
+- [Koppeln Sie mindestens einen Bildschirm](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Mit **Präsentieren** spielen Sie den Kalender des Bildschirms in Ihrem Browser 
 
 Klicken Sie auf die Bezeichnung eines Bildschirms, um seine Seite zu öffnen. Links finden Sie:
 
-- **Im Browser präsentieren** - Spielt den Kalender dieses Bildschirms im Browser auf Vollbild ab, so wie er auf dem Fernseher aussehen würde. Siehe [Im Browser präsentieren](./scheduled-playback#presenting-from-a-browser)
+- **Im Browser präsentieren** - Spielt den Kalender dieses Bildschirms im Browser auf Vollbild ab, so wie er auf dem Fernseher aussehen würde. Siehe [Im Browser präsentieren](./scheduled-playback.md#presenting-from-a-browser)
 - **Bearbeiten** - Bezeichnung, Gruppe oder Modus ändern
 - **Mehr** > **Kopplung aufheben** - Trennt den Fernseher. Er zeigt wieder einen Kopplungscode an
 
@@ -93,6 +94,6 @@ Das Löschen einer Gruppe löscht auch ihren Zeitplan. Bildschirme in dieser Gru
 
 ## Verwandte Artikel
 
-- **[Einen Bildschirm koppeln](./pairing-a-screen)** - Einen neuen Fernseher hinzufügen
-- **[Den Kalender planen](./scheduling-the-calendar)** - Festlegen, was jede Gruppe abspielt, und ihre Standard-Schleife
-- **[Geplante Wiedergabe auf dem Fernseher](./scheduled-playback)** - Was das Datum „Bereit bis“ auf dem Fernseher selbst bedeutet
+- **[Einen Bildschirm koppeln](./pairing-a-screen.md)** - Einen neuen Fernseher hinzufügen
+- **[Den Kalender planen](./scheduling-the-calendar.md)** - Festlegen, was jede Gruppe abspielt, und ihre Standard-Schleife
+- **[Geplante Wiedergabe auf dem Fernseher](./scheduled-playback.md)** - Was das Datum „Bereit bis“ auf dem Fernseher selbst bedeutet

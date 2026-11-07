@@ -1,5 +1,6 @@
 ---
 title: "Gospodărie"
+description: "Vedeți cine face parte din gospodăria dvs. și cum sunt conectați membrii în fila Profil din B1 Mobile, de care depind check-in-ul și alte funcții."
 ---
 
 # Gospodărie
@@ -13,7 +14,7 @@ Fila **Gospodărie** de pe ecranul tău de profil afișează membrii familiei ta
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalează B1 Mobile](../getting-started/installing) și [autentifică-te](../getting-started/logging-in) în contul tău
+- [Instalează B1 Mobile](../getting-started/installing.md) și [autentifică-te](../getting-started/logging-in.md) în contul tău
 
 </div>
 
@@ -33,7 +34,7 @@ Informațiile despre gospodăria ta sunt folosite de mai multe funcții din B1 M
 
 - **Check-in** -- Când te [înregistrezi](../checkin/self-checkin.md) pentru un serviciu sau un eveniment, poți înregistra întreaga gospodărie deodată, în loc să înregistrezi fiecare persoană separat.
 - **Evidențele bisericii** -- Biserica ta folosește datele gospodăriei pentru a păstra evidențele familiilor organizate și pentru a comunica cu familia ta ca un întreg.
-- **Director** -- Alți membri pot vedea informațiile gospodăriei tale în [directorul bisericii](../community/member-directory.md), în funcție de [setările tale de confidențialitate](./privacy-settings).
+- **Director** -- Alți membri pot vedea informațiile gospodăriei tale în [directorul bisericii](../community/member-directory.md), în funcție de [setările tale de confidențialitate](./privacy-settings.md).
 
 ## Cum îți vizualizezi gospodăria
 
@@ -47,10 +48,10 @@ Apartenența la gospodărie este, de obicei, gestionată de administratorul bise
 
 ## Menținerea informațiilor actualizate
 
-Dacă datele unui membru al familiei trebuie actualizate, acesta își poate [edita propriul profil](./editing-profile), sau poți contacta administratorul bisericii pentru a face modificările. Menținerea corectă a informațiilor despre gospodărie asigură că funcții precum [check-in-ul](../checkin/) funcționează fără probleme pentru întreaga ta familie.
+Dacă datele unui membru al familiei trebuie actualizate, acesta își poate [edita propriul profil](./editing-profile.md), sau poți contacta administratorul bisericii pentru a face modificările. Menținerea corectă a informațiilor despre gospodărie asigură că funcții precum [check-in-ul](../checkin/index.md) funcționează fără probleme pentru întreaga ta familie.
 
 ## Articole înrudite
 
 - [Check-in automat](../checkin/self-checkin.md) -- Înregistrează membrii gospodăriei tale pentru servicii
-- [Editarea profilului tău](./editing-profile) -- Actualizează-ți informațiile personale
-- [Setări de confidențialitate](./privacy-settings) -- Controlează ce pot vedea alții despre gospodăria ta
+- [Editarea profilului tău](./editing-profile.md) -- Actualizează-ți informațiile personale
+- [Setări de confidențialitate](./privacy-settings.md) -- Controlează ce pot vedea alții despre gospodăria ta

@@ -1,5 +1,6 @@
 ---
 title: "Massatuonti"
+description: "Tuo saarnavideot massana YouTube-kanavalta tai Vimeo-tililtä B1 Adminiin ja lajittele ne soittolistaan."
 ---
 
 # Massatuonti
@@ -14,7 +15,7 @@ Massatuonti-sivun avulla voit nopeasti täyttää saarnakirjastosi tuomalla vide
 <h4>Ennen aloittamista</h4>
 
 - Tarvitset **contentApi.streamingServices.edit** -oikeuden. Katso [Roolit ja oikeudet](../settings/roles-permissions.md), jos sinulla ei ole pääsyä.
-- Luo vähintään yksi [soittolista](playlists), johon saarnat tuodaan
+- Luo vähintään yksi [soittolista](./playlists.md), johon saarnat tuodaan
 - Valmistele YouTube-kanavasi kanava-ID tai Vimeo-tilisi tiedot
 
 </div>
@@ -39,7 +40,7 @@ Ennen videoiden tuomista tarvitset vähintään yhden soittolistan, johon ne jä
 2. Napsauta **Luo ensimmäinen soittolista** ja täytä nimi, kuvaus, julkaisupäivä ja pikkukuva.
 3. Napsauta **Tallenna** ja palaa sitten massatuontiin napsauttamalla **Lisää saarna** ja valitsemalla **Massatuonti**.
 
-Katso [Soittolistat](playlists) yksityiskohtaiset ohjeet soittolistojen luomisesta ja hallinnasta.
+Katso [Soittolistat](./playlists.md) yksityiskohtaiset ohjeet soittolistojen luomisesta ja hallinnasta.
 
 ## Videoiden tuominen
 
@@ -54,11 +55,11 @@ Katso [Soittolistat](playlists) yksityiskohtaiset ohjeet soittolistojen luomises
 Videosi tuodaan kaikilla tiedoillaan, mukaan lukien otsikot, kuvaukset, päivämäärät ja pikkukuvat. YouTube-otsikoiden ja -kuvausten erikoismerkit, kuten `&`, heittomerkit ja lainausmerkit, säilyvät kirjoitetussa muodossaan eivätkä muutu koodeiksi kuten `&amp;`.
 
 :::info
-Massatuonti sopii erinomaisesti aloittamiseen, kun siirrät sisältöä toiselta alustalta. Yksittäisten saarnojen lisäämiseen jatkossa käytä [Saarnojen hallinta](managing-sermons) -sivua.
+Massatuonti sopii erinomaisesti aloittamiseen, kun siirrät sisältöä toiselta alustalta. Yksittäisten saarnojen lisäämiseen jatkossa käytä [Saarnojen hallinta](./managing-sermons.md) -sivua.
 :::
 
 ## Seuraavat vaiheet
 
-- [Saarnojen hallinta](managing-sermons) -- Muokkaa tuotujen saarnojen tietoja
-- [Soittolistat](playlists) -- Luo ja hallinnoi saarnasarjoja
-- [Suora lähetys](live-streaming) -- Ota suoratoisto käyttöön jumalanpalveluksillesi
+- [Saarnojen hallinta](./managing-sermons.md) -- Muokkaa tuotujen saarnojen tietoja
+- [Soittolistat](./playlists.md) -- Luo ja hallinnoi saarnasarjoja
+- [Suora lähetys](./live-streaming.md) -- Ota suoratoisto käyttöön jumalanpalveluksillesi

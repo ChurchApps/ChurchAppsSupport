@@ -1,5 +1,7 @@
 ---
-title: "Live Streaming"
+title: "Časy živých prenosov a nastavenie v B1 Admin"
+sidebar_label: "Live Streaming"
+description: "Naplánujte týždenné alebo jednorazové živé prenosy, nastavte čas chatu a videa, pripojte YouTube kanál a riešte vkladanie videa v B1 Admin."
 ---
 
 # Živé vysielanie
@@ -19,7 +21,7 @@ Stránka Časy živého vysielania vám umožňuje nastaviť harmonogram streamo
 
 - Potrebujete oprávnenie **contentApi.streamingServices.edit**. Ak nemáte prístup, pozrite si [Roly a oprávnenia](../settings/roles-permissions.md).
 - Ak plánujete používať automatizované živé vysielanie, pripravte si ID vášho kanála YouTube
-- Pridajte aspoň jedno [kázanie](managing-sermons) alebo trvalú živú URL adresu ako zdroj vysielania
+- Pridajte aspoň jedno [kázanie](./managing-sermons.md) alebo trvalú živú URL adresu ako zdroj vysielania
 
 </div>
 
@@ -80,13 +82,13 @@ ID vášho kanála YouTube nájdete tak, že prejdete do rozšírených nastaven
 
 ## Prispôsobenie farieb a loga
 
-Vaša stránka živého vysielania používa nastavenia [Vzhľadu](../website/appearance) vašej webovej stránky:
+Vaša stránka živého vysielania používa nastavenia [Vzhľadu](../website/appearance.md) vašej webovej stránky:
 
 - Pre hlavičku sa používa **svetlá zvýrazňujúca farba** s tmavým textom.
 - Pre bočný panel sa používa **tmavá zvýrazňujúca farba** so svetlým textom.
 - Na stránke vysielania sa zobrazuje vaše **logo pre svetlé pozadie**. Použite obrázok s priehľadným pozadím a pomerom strán 4:1.
 
-Ak chcete tieto nastavenia zmeniť, prejdite do **Webová stránka** a potom do **Vzhľad** a aktualizujte nastavenia [farebnej palety](../website/appearance#color-palette) a [loga](../website/appearance#logo-and-branding).
+Ak chcete tieto nastavenia zmeniť, prejdite do **Webová stránka** a potom do **Vzhľad** a aktualizujte nastavenia [farebnej palety](../website/appearance.md#color-palette) a [loga](../website/appearance.md#logo-and-branding).
 
 ## Pridávanie hostiteľov vysielania
 
@@ -133,5 +135,5 @@ Automatizované živé vysielanie kanála YouTube sa môže zablokovať, ak je v
 
 ## Ďalšie kroky
 
-- [Správa kázaní](managing-sermons) – Pridávanie kázaní do vašej knižnice
-- [Playlisty](playlists) – Usporiadanie kázaní do sérií
+- [Správa kázaní](./managing-sermons.md) – Pridávanie kázaní do vašej knižnice
+- [Playlisty](./playlists.md) – Usporiadanie kázaní do sérií

@@ -1,5 +1,6 @@
 ---
 title: Įvadas į B1.church
+description: "Padeda prisijungti prie B1 Admin, rasti kelią Valdymo skydelyje ir Peršokimo meniu bei nustatyti bažnyčios informaciją prieš naudojant kitus įrankius."
 ---
 
 # Sveiki atvykę į B1.church Admin!
@@ -34,7 +35,7 @@ Jei reikia papildomos pagalbos, rašykite el. paštu [support@churchapps.org](ma
 10. Dabar galite patekti į B1.church per **narių portalą** arba **administravimo portalą**. Narių portale matote, kaip B1.church atrodo jūsų nariams, peržiūrite savo grupes ir tvarkote asmines aukas.
 
 :::tip
-Pradėkite nuo puslapio [Settings](./settings/), kur galite nustatyti bažnyčios pavadinimą, prekinį ženklą ir komandos leidimus. Taip užtikrinsite, kad visa kita, ką nustatysite, bus rodoma teisingai.
+Pradėkite nuo puslapio [Settings](./settings/index.md), kur galite nustatyti bažnyčios pavadinimą, prekinį ženklą ir komandos leidimus. Taip užtikrinsite, kad visa kita, ką nustatysite, bus rodoma teisingai.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -81,9 +82,9 @@ Paieška dažnai yra greičiausias būdas pasiekti puslapį – įveskite dalį 
 
 Peržiūrėję šį įvadą, susipažinkite su šiomis pagrindinėmis funkcijomis:
 
-- [Adding People](./people/adding-people) – sužinokite, kaip pridėti narius į duomenų bazę
-- [Groups](./groups/) – nustatykite ir tvarkykite bažnyčios grupes
-- [Serving Plans](./serving/plans) – organizuokite savo tarnystės veiklą
-- [Attendance](./attendance/) – fiksuokite lankomumą ir registraciją
-- [Website](./website/) – kurkite ir tinkinkite bažnyčios svetainę
-- [Settings](./settings/) – nustatykite bažnyčios informaciją ir leidimus
+- [Adding People](./people/adding-people.md) – sužinokite, kaip pridėti narius į duomenų bazę
+- [Groups](./groups/index.md) – nustatykite ir tvarkykite bažnyčios grupes
+- [Serving Plans](./serving/plans.md) – organizuokite savo tarnystės veiklą
+- [Attendance](./attendance/index.md) – fiksuokite lankomumą ir registraciją
+- [Website](./website/index.md) – kurkite ir tinkinkite bažnyčios svetainę
+- [Settings](./settings/index.md) – nustatykite bažnyčios informaciją ir leidimus

@@ -1,5 +1,6 @@
 ---
 title: "Opsætning af klasseværelser"
+description: "Opret, omdøb og fjern klasseværelser i Lessons.church-portalen, så hvert lokale eller aldersgruppe er klar til ugentlig planlægning af lektioner."
 ---
 
 # Opsætning af klasseværelser

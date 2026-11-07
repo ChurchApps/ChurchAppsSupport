@@ -1,5 +1,6 @@
 ---
 title: "Project Overview"
+description: "Mapa ng bawat ChurchApps repository ayon sa kategorya: frameworks, dev ports, databases, at kung paano kumokonekta ang shared @churchapps packages."
 ---
 
 # Project Overview
@@ -13,7 +14,7 @@ Ang ChurchApps ay binubuo ng takrang 20 na independent repositories, bawat isa a
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-install ang [prerequisites](./prerequisites) para sa project category na nais mong magtrabaho
+- I-install ang [prerequisites](./prerequisites.md) para sa project category na nais mong magtrabaho
 
 </div>
 
@@ -72,7 +73,7 @@ Ang shared code ay nai-publish sa npm sa ilalim ng `@churchapps` scope at consum
 | `@churchapps/integration-sdk` | B1.church integration toolkit: webhooks, REST client, OAuth | External integration developers |
 | `@churchapps/texting` | SMS provider abstraction | Api |
 
-Tingnan ang [Shared Libraries](../shared-libraries/) para sa workspace setup at ang release workflow.
+Tingnan ang [Shared Libraries](../shared-libraries/index.md) para sa workspace setup at ang release workflow.
 
 ## Project Relationships
 
@@ -90,5 +91,5 @@ Ang lahat ng frontend apps ay nakadepende sa `@churchapps/helpers`. Ang web apps
 
 ## Next Steps
 
-- **[Environment Variables](./environment-variables)** -- I-configure ang iyong `.env` files upang kumonekta sa APIs
-- **[API Local Setup](../api/local-setup)** -- I-setup ang backend API nang lokal
+- **[Environment Variables](./environment-variables.md)** -- I-configure ang iyong `.env` files upang kumonekta sa APIs
+- **[API Local Setup](../api/local-setup.md)** -- I-setup ang backend API nang lokal

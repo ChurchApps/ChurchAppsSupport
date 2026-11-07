@@ -1,5 +1,6 @@
 ---
 title: "Deployment"
+description: "Waar elk ChurchApps-project wordt gedeployd, van AWS Lambda-API's en S3-webapps tot Expo-mobielbuilds en zelf gehoste B1 Admin op Railway of Docker."
 ---
 
 # Deployment
@@ -14,9 +15,9 @@ ChurchApps gebruikt verschillende implementatiestrategieën, afhankelijk van het
 
 | Projecttype | Implementatiedoel | Tooling |
 |-------------|-------------------|---------|
-| [APIs](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 22.x runtime) |
-| [Web Apps](./web-apps) | S3 + CloudFront | Statische build, S3 sync, CloudFront-invalidatie |
-| [Mobile Apps](./mobile) | App Stores | Expo EAS Build + OTA-updates |
+| [APIs](./apis.md) | AWS Lambda | Serverless Framework v3 (Node.js 22.x runtime) |
+| [Web Apps](./web-apps.md) | S3 + CloudFront | Statische build, S3 sync, CloudFront-invalidatie |
+| [Mobile Apps](./mobile.md) | App Stores | Expo EAS Build + OTA-updates |
 | FreeShow | Direct download | Electron Builder (cross-platform binaries) |
 
 ## Omgevingen

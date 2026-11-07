@@ -1,12 +1,13 @@
 ---
 title: "Websiteroutering & Multi-Site"
+description: "Hoe B1.church subdomeinen en eigen domeinen koppelt aan de juiste kerk of secundaire site, en de Caddy-edge die TLS voor eigen domeinen afhandelt."
 ---
 
 # Websiteroutering & Multi-Site
 
 <div class="article-intro">
 
-Een enkele kerk kan nu meer dan één afzonderlijke website hebben, en elk daarvan kan op een `*.b1.church`-subdomein staan of op een volledig eigen, door de kerk beheerd domein. Deze pagina beschrijft de routeringslaag die *onder* de builder ligt: hoe een binnenkomend verzoek wordt omgezet naar een kerk **en** naar een specifieke site, het multi-site datamodel (de `siteId`-sentinel die ervoor zorgt dat elke bestaande site ongewijzigd wordt weergegeven), en de edge voor eigen domeinen: een zelfbeheerde Caddy-proxy op EC2 die TLS beëindigt en elk kerkdomein herschrijft naar zijn `*.b1.church`-upstream. Voor wat er daadwerkelijk wordt weergegeven zodra een verzoek is omgezet, de pagina-, sectie- en elementstructuur, zie [Websitebouwer](./website-builder).
+Een enkele kerk kan nu meer dan één afzonderlijke website hebben, en elk daarvan kan op een `*.b1.church`-subdomein staan of op een volledig eigen, door de kerk beheerd domein. Deze pagina beschrijft de routeringslaag die *onder* de builder ligt: hoe een binnenkomend verzoek wordt omgezet naar een kerk **en** naar een specifieke site, het multi-site datamodel (de `siteId`-sentinel die ervoor zorgt dat elke bestaande site ongewijzigd wordt weergegeven), en de edge voor eigen domeinen: een zelfbeheerde Caddy-proxy op EC2 die TLS beëindigt en elk kerkdomein herschrijft naar zijn `*.b1.church`-upstream. Voor wat er daadwerkelijk wordt weergegeven zodra een verzoek is omgezet, de pagina-, sectie- en elementstructuur, zie [Websitebouwer](./website-builder.md).
 
 </div>
 
@@ -201,7 +202,7 @@ Rijen met `www.*` vallen buiten de kaart. Caddy bedient `www.{host}` met een `30
 
 ### Huidige stand: statische configuratie, geen runtime-status
 
-De server (een Windows-EC2 achter het permanente Elastic IP) draait Caddy met een **statisch Caddyfile**. Daarin staat on-demand TLS waarvan de `ask` naar `/membership/domains/authorize` wijst, plus een bestand met de host→upstream-kaart. Dat bestand wordt elke 5 minuten vernieuwd vanaf `/membership/domains/hostmap`, door een geplande taak die eindigt met een nette `caddy reload`. De configuratie overleeft herstarts zonder runtime-status, zonder het gedoe van opnieuw initialiseren. Een onbekende SNI wordt **TLS-geweigerd** (er wordt geen certificaat uitgegeven voor een host die `authorize` afwijst). Een geautoriseerde host die nog niet in de kaart staat (een nieuw domein binnen het synchronisatievenster) krijgt een schoon 404. Nieuwe domeinen zijn binnen ongeveer 5 minuten na opslaan routeerbaar, en hun certificaten worden bij het eerste bezoek uitgegeven. Installatie, beheer en in de praktijk ontdekte valkuilen: [Caddy-proxy voor eigen domeinen](../deployment/caddy-proxy).
+De server (een Windows-EC2 achter het permanente Elastic IP) draait Caddy met een **statisch Caddyfile**. Daarin staat on-demand TLS waarvan de `ask` naar `/membership/domains/authorize` wijst, plus een bestand met de host→upstream-kaart. Dat bestand wordt elke 5 minuten vernieuwd vanaf `/membership/domains/hostmap`, door een geplande taak die eindigt met een nette `caddy reload`. De configuratie overleeft herstarts zonder runtime-status, zonder het gedoe van opnieuw initialiseren. Een onbekende SNI wordt **TLS-geweigerd** (er wordt geen certificaat uitgegeven voor een host die `authorize` afwijst). Een geautoriseerde host die nog niet in de kaart staat (een nieuw domein binnen het synchronisatievenster) krijgt een schoon 404. Nieuwe domeinen zijn binnen ongeveer 5 minuten na opslaan routeerbaar, en hun certificaten worden bij het eerste bezoek uitgegeven. Installatie, beheer en in de praktijk ontdekte valkuilen: [Caddy-proxy voor eigen domeinen](../deployment/caddy-proxy.md).
 
 ### Oud runtime-pushmechanisme: terugvalpad, wordt verwijderd
 
@@ -209,8 +210,8 @@ De server (een Windows-EC2 achter het permanente Elastic IP) draait Caddy met ee
 
 ## Gerelateerde pagina's
 
-- [Caddy-proxy voor eigen domeinen](../deployment/caddy-proxy): de edge-server zelf: installatie van een nieuwe server, de WinSW-service, de synchronisatietaak voor de kaart en operationele valkuilen
-- [Websitebouwer](./website-builder): de boom van pagina's, secties en elementen, de renderers, de blog, SEO en AI-generatie (wat wordt weergegeven zodra een verzoek is omgezet naar een kerk of site)
-- [Content-endpoints](../api/endpoints/content): de REST-interface voor pagina's, blokken, links en globale stijlen, die nu allemaal `?siteId=` ondersteunen
-- [B1App](../web-apps/b1-app): de Next.js-app die de middleware en de `[sdSlug]`-routering bevat
-- [Deployment van webapps](../deployment/web-apps): hoe B1App naar Vercel wordt uitgerold
+- [Caddy-proxy voor eigen domeinen](../deployment/caddy-proxy.md): de edge-server zelf: installatie van een nieuwe server, de WinSW-service, de synchronisatietaak voor de kaart en operationele valkuilen
+- [Websitebouwer](./website-builder.md): de boom van pagina's, secties en elementen, de renderers, de blog, SEO en AI-generatie (wat wordt weergegeven zodra een verzoek is omgezet naar een kerk of site)
+- [Content-endpoints](../api/endpoints/content.md): de REST-interface voor pagina's, blokken, links en globale stijlen, die nu allemaal `?siteId=` ondersteunen
+- [B1App](../web-apps/b1-app.md): de Next.js-app die de middleware en de `[sdSlug]`-routering bevat
+- [Deployment van webapps](../deployment/web-apps.md): hoe B1App naar Vercel wordt uitgerold

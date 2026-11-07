@@ -1,5 +1,6 @@
 ---
 title: "Partie darowizn"
+description: "Grupuj ofiary w partie w B1 Admin, a następnie zamykaj, drukuj lub eksportuj każdą z nich, aby sumy zgadzały się z wpłatami na konto bankowe."
 ---
 
 # Partie darowizn

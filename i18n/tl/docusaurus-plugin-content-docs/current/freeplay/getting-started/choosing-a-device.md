@@ -1,5 +1,6 @@
 ---
 title: "Pagpili ng Device"
+description: "Piliin ang tamang device para sa FreePlay classroom TV, mula sa Fire TV stick at Onn box hanggang Apple TV, at alin ang dapat iwasan."
 ---
 
 # Pagpili ng Device para sa FreePlay

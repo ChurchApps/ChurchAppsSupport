@@ -1,5 +1,6 @@
 ---
 title: "Cihazları Yönetme"
+description: "B1 Admin hesabınıza bağlı ChurchAppsPlayer ve FreePlay ekranlarını eşleştirin, etiketleyin ve kaldırın; kilise ekranları güncel ve güvenli kalsın."
 ---
 
 # Cihazları Yönetme

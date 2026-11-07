@@ -1,5 +1,6 @@
 ---
 title: "स्थानीय API सेटअप"
+description: "ChurchApps API को स्थानीय रूप से सेट करें: रिपॉज़िटरी क्लोन करें, छह MySQL मॉड्यूल डेटाबेस कॉन्फ़िगर करें, स्कीमा आरंभ करें, और हॉट-रीलोड डेव सर्वर शुरू करें।"
 ---
 
 # स्थानीय API सेटअप
@@ -13,9 +14,9 @@ title: "स्थानीय API सेटअप"
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- **Node.js 24+**, **Git**, और **MySQL 8.0+** इंस्टॉल करें -- देखें [Prerequisites](../setup/prerequisites)
+- **Node.js 24+**, **Git**, और **MySQL 8.0+** इंस्टॉल करें -- देखें [Prerequisites](../setup/prerequisites.md)
 - डेटाबेस बनाने की अनुमति वाला एक MySQL उपयोगकर्ता बनाएँ
-- API कॉन्फ़िगरेशन के लिए [Environment Variables](../setup/environment-variables) संदर्भ देखें
+- API कॉन्फ़िगरेशन के लिए [Environment Variables](../setup/environment-variables.md) संदर्भ देखें
 
 </div>
 
@@ -82,7 +83,7 @@ API hot reload के साथ [http://localhost:8084](http://localhost:8084) �
 
 ## डिप्लॉयमेंट
 
-staging वातावरण हटा दिया गया है। API `main` पर हर push पर demo वातावरण में डिप्लॉय होता है, और मैन्युअल **Deploy Prod** workflow के माध्यम से production में, जो लंबित डेटाबेस माइग्रेशन भी लागू करता है। विवरण के लिए [API Deployment](../deployment/apis) देखें।
+staging वातावरण हटा दिया गया है। API `main` पर हर push पर demo वातावरण में डिप्लॉय होता है, और मैन्युअल **Deploy Prod** workflow के माध्यम से production में, जो लंबित डेटाबेस माइग्रेशन भी लागू करता है। विवरण के लिए [API Deployment](../deployment/apis.md) देखें।
 
 ## स्थानीय लाइब्रेरी विकास
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-इससे आप npm पर प्रकाशित किए बिना API के विरुद्ध लाइब्रेरी बदलावों का परीक्षण कर सकते हैं। विवरण के लिए [Shared Libraries](../shared-libraries/#local-development-against-a-consuming-app) देखें -- और link द्वारा `package.json` में लिखा गया portal resolution कभी commit न करें।
+इससे आप npm पर प्रकाशित किए बिना API के विरुद्ध लाइब्रेरी बदलावों का परीक्षण कर सकते हैं। विवरण के लिए [Shared Libraries](../shared-libraries/index.md#local-development-against-a-consuming-app) देखें -- और link द्वारा `package.json` में लिखा गया portal resolution कभी commit न करें।
 
 ## संबंधित लेख
 
-- **[Database](./database)** -- मॉड्यूल-प्रति-डेटाबेस आर्किटेक्चर को समझना
-- **[Module Structure](./module-structure)** -- कंट्रोलर, रिपॉज़िटरी और मॉडल कैसे व्यवस्थित हैं
-- **[Shared Libraries](../shared-libraries/)** -- `@churchapps/helpers` और `@churchapps/apihelper` के साथ काम करना
+- **[Database](./database.md)** -- मॉड्यूल-प्रति-डेटाबेस आर्किटेक्चर को समझना
+- **[Module Structure](./module-structure.md)** -- कंट्रोलर, रिपॉज़िटरी और मॉडल कैसे व्यवस्थित हैं
+- **[Shared Libraries](../shared-libraries/index.md)** -- `@churchapps/helpers` और `@churchapps/apihelper` के साथ काम करना

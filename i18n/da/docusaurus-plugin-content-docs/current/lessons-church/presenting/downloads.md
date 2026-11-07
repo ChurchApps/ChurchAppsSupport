@@ -1,5 +1,6 @@
 ---
 title: "Downloads og materialer"
+description: "Find og download printbare aktivitetsark, lederguider og PDF'er, der er knyttet til Lessons.church-lektioner, studier eller programmer til din klasse."
 ---
 
 # Downloads og materialer

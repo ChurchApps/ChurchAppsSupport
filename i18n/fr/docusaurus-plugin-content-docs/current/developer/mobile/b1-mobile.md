@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "Installer et lancer localement B1 Mobile (React Native/Expo), configurer ses points d'accès API et compiler pour Android ou iOS. Application dépréciée."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobile est l'application mobile principale destinée aux membres de ChurchApp
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Installez **Node.js** et **Expo CLI** -- voir [Prérequis](../setup/prerequisites)
+- Installez **Node.js** et **Expo CLI** -- voir [Prérequis](../setup/prerequisites.md)
 - Installez **Android Studio** (pour l'émulateur Android) ou **Xcode** (pour le simulateur iOS)
-- Configurez la cible de votre API (démo ou locale) -- voir [Variables d'environnement](../setup/environment-variables)
+- Configurez la cible de votre API (démo ou locale) -- voir [Variables d'environnement](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ Les mises à jour OTA conviennent parfaitement aux modifications uniquement en J
 
 ## Articles connexes
 
-- **[Déploiement mobile](../deployment/mobile)** -- Guide complet pour compiler, soumettre et déployer les applications mobiles
-- **[Variables d'environnement](../setup/environment-variables)** -- Référence complète de la configuration d'environnement mobile
+- **[Déploiement mobile](../deployment/mobile.md)** -- Guide complet pour compiler, soumettre et déployer les applications mobiles
+- **[Variables d'environnement](../setup/environment-variables.md)** -- Référence complète de la configuration d'environnement mobile

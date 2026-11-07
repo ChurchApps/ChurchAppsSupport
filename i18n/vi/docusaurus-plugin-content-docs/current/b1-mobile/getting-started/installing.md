@@ -1,5 +1,6 @@
 ---
 title: "Cài đặt ứng dụng"
+description: "Cài ứng dụng B1 Mobile từ App Store hoặc Google Play, nhưng lưu ý ứng dụng này đã ngừng hỗ trợ và nên dùng PWA B1.church thay thế."
 ---
 
 # Cài đặt ứng dụng
@@ -25,7 +26,7 @@ Bạn cũng có thể tìm kiếm "B1 Mobile" nếu lần tìm kiếm đầu ti�
 
 ## Sau khi cài đặt
 
-Khi ứng dụng đã được cài đặt, hãy mở ứng dụng từ màn hình chính. Bạn sẽ thấy màn hình tìm kiếm nhà thờ, nơi bạn có thể tìm và chọn nhà thờ của mình. Nếu bạn đã có tài khoản ChurchApps, bạn có thể [đăng nhập](./logging-in) ngay. Nếu chưa có, bạn có thể tạo tài khoản từ màn hình đăng nhập.
+Khi ứng dụng đã được cài đặt, hãy mở ứng dụng từ màn hình chính. Bạn sẽ thấy màn hình tìm kiếm nhà thờ, nơi bạn có thể tìm và chọn nhà thờ của mình. Nếu bạn đã có tài khoản ChurchApps, bạn có thể [đăng nhập](./logging-in.md) ngay. Nếu chưa có, bạn có thể tạo tài khoản từ màn hình đăng nhập.
 
 Ứng dụng sẽ yêu cầu quyền gửi thông báo đẩy. Chúng tôi khuyên bạn nên cho phép thông báo để nhận được cập nhật từ nhà thờ và các nhóm của bạn.
 

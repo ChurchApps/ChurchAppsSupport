@@ -1,5 +1,6 @@
 ---
 title: "Kungenisa kweStripe"
+description: "Tfola timinikelo ye-Stripe ku-B1 Admin ngekubuka kucala, lapho ilungu ngalinye livakale njengelisha, lesikhona kakade, noma lelishiyiwe."
 ---
 
 # Kungenisa kweStripe

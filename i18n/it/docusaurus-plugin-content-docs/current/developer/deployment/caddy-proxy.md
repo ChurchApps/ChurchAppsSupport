@@ -1,5 +1,6 @@
 ---
 title: "Proxy Caddy per domini personalizzati"
+description: "Costruisci ed esegui il reverse proxy Caddy che serve i domini personalizzati dei siti B1.church: certificati TLS, mappatura degli host e problemi noti."
 ---
 
 # Proxy Caddy per domini personalizzati
@@ -10,7 +11,7 @@ I domini personalizzati delle chiese (`mychurch.org` → il sito B1 della chiesa
 
 </div>
 
-Per capire come una richiesta si risolve in una chiesa/sito una volta arrivata a B1App, vedi [Routing del sito web e multi-sito](../architecture/websites).
+Per capire come una richiesta si risolve in una chiesa/sito una volta arrivata a B1App, vedi [Routing del sito web e multi-sito](../architecture/websites.md).
 
 ## Componenti
 
@@ -88,5 +89,5 @@ L'API di amministrazione è in ascolto solo su `localhost:2019`. La modalità ru
 
 ## Pagine correlate
 
-- [Routing del sito web e multi-sito](../architecture/websites) — come la richiesta proxata si risolve in una chiesa/sito in B1App
-- [Deployment dell'API](./apis) — distribuzione dell'API di Membership che serve `authorize`/`hostmap`
+- [Routing del sito web e multi-sito](../architecture/websites.md) — come la richiesta proxata si risolve in una chiesa/sito in B1App
+- [Deployment dell'API](./apis.md) — distribuzione dell'API di Membership che serve `authorize`/`hostmap`

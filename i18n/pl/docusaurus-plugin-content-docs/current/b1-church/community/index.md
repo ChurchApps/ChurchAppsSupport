@@ -1,5 +1,7 @@
 ---
-title: "Społeczność"
+title: "Katalog członków w B1.church"
+sidebar_label: "Społeczność"
+description: "Wyszukuj członków kościoła w katalogu B1.church po imieniu lub grupie, przeglądaj profile i sprawdź, gdzie znajdują się teraz aktualizacje dawnej osi czasu."
 ---
 
 # Społeczność
@@ -26,5 +28,5 @@ Członkowie i informacje widoczne dla Ciebie w katalogu zależą od ustawień pr
 :::
 
 :::tip
-Korzystaj z funkcji społeczności razem z [Grupami](../groups/), aby przez cały tydzień pozostawać zaangażowanym w życie kościoła.
+Korzystaj z funkcji społeczności razem z [Grupami](../groups/index.md), aby przez cały tydzień pozostawać zaangażowanym w życie kościoła.
 :::

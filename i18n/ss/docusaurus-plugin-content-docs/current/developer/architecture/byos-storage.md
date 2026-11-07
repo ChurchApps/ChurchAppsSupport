@@ -1,5 +1,6 @@
 ---
 title: "Sitoreji Sakho Lesiyisebentisa (BYOS)"
+description: "Xhuma i-Google Drive, Dropbox, OneDrive, noma i-S3 bucket yakho ku-B1 Admin, kutsi ekulayishweni kwemafayela kudlule umkhawulo we-100MB wenkhundla."
 ---
 
 # Sitoreji Sakho Lesiyisebentisa (BYOS)
@@ -8,7 +9,7 @@ Emabandla atfola cishe ~100MB wesitoreji sefayela lesingakhokhelwa lesigcinwa ku
 
 ## Isixhumi sephrovayidi
 
-I-BYOS isebentisa futsi sitoreji lesakhelwe i-[MinistryStuff](./ministrystuff): `IStorageProvider` (`Packages/apihelper`) lesitfolwa ngalibandla ngalibandla ngu-`StorageResolver` kusuka kutafula `content.storageProviders`. Ngetulu kwaloko kwamaphrovayidi aweminyaka `churchapps`/`ministrystuff` ayinguwo wodvwa, emaphrovayidi e-BYOS abamba tifakazelo telibandla ngalinye, ngako `StorageResolver.forChurch` yakha sibonelo ngasinye ngesicelo ngasinye kusuka emugceni welibandla. Ukusetfwa kwawo kutfolakala ngaseceleni kwe-resolver kuchudzela ku `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, kanye ne `ByosAuth` (kutfolwa kwethokheni ye-OAuth + kuvuselelwa kwesicelo kanye — i-Dropbox iguqula tikhiphi letivuselelako, ngako kuvuselelwa kwentela kubekwa kanye njengoba kwenta `ProviderProxyController`).
+I-BYOS isebentisa futsi sitoreji lesakhelwe i-[MinistryStuff](./ministrystuff.md): `IStorageProvider` (`Packages/apihelper`) lesitfolwa ngalibandla ngalibandla ngu-`StorageResolver` kusuka kutafula `content.storageProviders`. Ngetulu kwaloko kwamaphrovayidi aweminyaka `churchapps`/`ministrystuff` ayinguwo wodvwa, emaphrovayidi e-BYOS abamba tifakazelo telibandla ngalinye, ngako `StorageResolver.forChurch` yakha sibonelo ngasinye ngesicelo ngasinye kusuka emugceni welibandla. Ukusetfwa kwawo kutfolakala ngaseceleni kwe-resolver kuchudzela ku `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, kanye ne `ByosAuth` (kutfolwa kwethokheni ye-OAuth + kuvuselelwa kwesicelo kanye — i-Dropbox iguqula tikhiphi letivuselelako, ngako kuvuselelwa kwentela kubekwa kanye njengoba kwenta `ProviderProxyController`).
 
 `storageProviders` ibamba tifakazelo: `accessToken`/`refreshToken`/`tokenExpiresAt` (ifihliwe, kuhlanganisa ne-OAuth) noma `apiKey`/`apiSecret` + `settings` JSON (`{endpoint, region, bucket, publicBase}`, S3). Tithokheni akufiki kumsebenzisi — `GET /content/storage/providers` ifihla imfihlo futsi ibuyisa sigaba se `connected`.
 

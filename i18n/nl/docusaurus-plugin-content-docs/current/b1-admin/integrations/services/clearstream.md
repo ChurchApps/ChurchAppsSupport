@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Koppel Clearstream SMS aan B1 Admin via Zapier: verstuur sms'jes bij nieuwe giften of formulierinzendingen en haal inkomende antwoorden terug als personen."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Zet de Zap aan. B1 registreert de webhook voor giften bij activering; in **Inste
 
 ## Zie ook
 
-- [Text In Church](./text-in-church): een alternatief sms-platform met een vergelijkbare koppeling
-- [Mobile Message](./mobile-message): voor kerken buiten de Verenigde Staten
-- [Zapier (overzicht)](../zapier): de B1-kant van elk Zapier-recept
+- [Text In Church](./text-in-church.md): een alternatief sms-platform met een vergelijkbare koppeling
+- [Mobile Message](./mobile-message.md): voor kerken buiten de Verenigde Staten
+- [Zapier (overzicht)](../zapier.md): de B1-kant van elk Zapier-recept
 - [Clearstream API-documentatie](https://api-docs.clearstream.io/): voor maatwerkintegraties die verder gaan dan de Zapier-app

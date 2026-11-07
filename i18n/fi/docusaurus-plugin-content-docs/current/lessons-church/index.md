@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "Selaa, aikatauluta ja esitä ilmaisia ikäryhmäkohtaisia oppitunteja 12+ tarjoajalta Lessons.churchissa, mukana luokkahuoneet, paikat ja FreePlay- ja B1-integraatiot."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church toimii yhdessä muiden ChurchApps-työkalujen kanssa, jotta sisä
 
 ## Dokumentaatio-osiot
 
-- [Aloitus](./getting-started/) -- Luo tili ja opi perusteet
-- [Sisällön selaaminen](./browsing/) -- Etsi ohjelmia, opintokokonaisuuksia ja oppitunteja
-- [Luokat](./classrooms/) -- Perusta luokat ja ajoita oppitunteja
-- [Mukauttaminen](./customization/) -- Räätälöi oppitunnit seurakuntasi mukaan
-- [Esittäminen](./presenting/) -- Esitä oppitunnit luokassa esittäjätilan avulla
-- [Ylläpito](./admin/) -- Hallinnoi ohjelmia, opintokokonaisuuksia ja oppitunteja pääkäyttäjänä
+- [Aloitus](./getting-started/index.md) -- Luo tili ja opi perusteet
+- [Sisällön selaaminen](./browsing/index.md) -- Etsi ohjelmia, opintokokonaisuuksia ja oppitunteja
+- [Luokat](./classrooms/index.md) -- Perusta luokat ja ajoita oppitunteja
+- [Mukauttaminen](./customization/index.md) -- Räätälöi oppitunnit seurakuntasi mukaan
+- [Esittäminen](./presenting/index.md) -- Esitä oppitunnit luokassa esittäjätilan avulla
+- [Ylläpito](./admin/index.md) -- Hallinnoi ohjelmia, opintokokonaisuuksia ja oppitunteja pääkäyttäjänä
 - [Uskonkäsitys](./statement-of-faith.md) -- Keskeiset uskomukset ja opetussuunnitelman ohjeet
 
 Tukea saa osoitteesta [support@churchapps.org](mailto:support@churchapps.org).

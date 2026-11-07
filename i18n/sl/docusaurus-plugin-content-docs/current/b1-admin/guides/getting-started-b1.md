@@ -1,5 +1,6 @@
 ---
 title: "Vodnik: Zagon vaše cerkve v B1"
+description: "Vodnik za nastavitev nove cerkve v B1 Admin: ustvarite račun, nastavite možnosti, dodajte vloge, uvozite člane in zaženite osrednje funkcije."
 ---
 
 # Zaženite svojo cerkev v B1

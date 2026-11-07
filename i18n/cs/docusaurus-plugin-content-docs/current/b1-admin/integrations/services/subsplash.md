@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Propojte dary, nové lidi a odpovědi formulářů ze Subsplash s B1 přes Zapier, aby se dary a profily automaticky ukládaly do B1 Admin."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Zap zapněte. Budoucí dary ze Subsplash se pak během několika sekund objeví 
 
 ## Viz také
 
-- [Donorbox](./donorbox): stejný tvar receptu, jiná platforma pro dary
-- [Zapier (přehled)](../zapier): strana B1 u každého receptu pro Zapier
+- [Donorbox](./donorbox.md): stejný tvar receptu, jiná platforma pro dary
+- [Zapier (přehled)](../zapier.md): strana B1 u každého receptu pro Zapier
 - [Návod Subsplash pro integraci se Zapier](https://support.subsplash.com/en/articles/9825926-zapier-integration) (dokumentace Subsplash)

@@ -1,5 +1,6 @@
 ---
 title: B1.church'e Giriş
+description: "B1 Admin'de oturum açmayı, Dashboard ve Jump menüsünde gezinmeyi ve diğer araçları keşfetmeden önce kilise bilgilerini kurmayı adım adım öğrenin."
 ---
 
 # B1.church Admin'e Hoş Geldiniz!
@@ -34,7 +35,7 @@ Daha fazla destek için lütfen [support@churchapps.org](mailto:support@churchap
 10. Artık B1.church'e **üye portalı** veya **yönetici portalı** üzerinden girebilirsiniz. Üye portalı, B1.church'ün üyelerinize nasıl göründüğünü görmenizi, gruplarınızı incelemenizi ve kişisel bağışlarınızı yönetmenizi sağlar.
 
 :::tip
-Kilise adınızı, markanızı ve ekip izinlerinizi yapılandırmak için [Ayarlar](./settings/) sayfasıyla başlayın. Bu, ayarladığınız diğer her şeyin doğru görüntülenmesini sağlar.
+Kilise adınızı, markanızı ve ekip izinlerinizi yapılandırmak için [Ayarlar](./settings/index.md) sayfasıyla başlayın. Bu, ayarladığınız diğer her şeyin doğru görüntülenmesini sağlar.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -81,9 +82,9 @@ Sayfaya ulaşmanın en hızlı yolu genellikle aramadır -- Ayarlar, Hizmet veya
 
 Bu tanıtımı izledikten sonra şu temel özelliklere göz atın:
 
-- [Kişi Ekleme](./people/adding-people) -- Veritabanınıza üye eklemeyi öğrenin
-- [Gruplar](./groups/) -- Kilise gruplarını kurun ve yönetin
-- [Hizmet Planları](./serving/plans) -- Hizmet hizmetinizi düzenleyin
-- [Katılım](./attendance/) -- Katılımı ve girişi takip edin
-- [Web sitesi](./website/) -- Kilise web sitenizi oluşturun ve özelleştirin
-- [Ayarlar](./settings/) -- Kilise bilgilerinizi ve izinlerinizi yapılandırın
+- [Kişi Ekleme](./people/adding-people.md) -- Veritabanınıza üye eklemeyi öğrenin
+- [Gruplar](./groups/index.md) -- Kilise gruplarını kurun ve yönetin
+- [Hizmet Planları](./serving/plans.md) -- Hizmet hizmetinizi düzenleyin
+- [Katılım](./attendance/index.md) -- Katılımı ve girişi takip edin
+- [Web sitesi](./website/index.md) -- Kilise web sitenizi oluşturun ve özelleştirin
+- [Ayarlar](./settings/index.md) -- Kilise bilgilerinizi ve izinlerinizi yapılandırın

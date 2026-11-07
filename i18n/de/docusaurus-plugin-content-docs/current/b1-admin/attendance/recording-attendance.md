@@ -1,5 +1,6 @@
 ---
 title: "Anwesenheit erfassen"
+description: "Erfassen Sie in B1 Admin die Anwesenheit für jedes Gruppentreffen: Sitzung anlegen, Teilnehmende markieren, Notizen speichern und Anwesenheitslisten drucken oder als Tabelle exportieren."
 ---
 
 # Anwesenheit erfassen

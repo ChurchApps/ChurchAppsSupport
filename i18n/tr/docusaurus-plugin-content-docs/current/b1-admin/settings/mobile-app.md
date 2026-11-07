@@ -1,5 +1,6 @@
 ---
 title: "Ayarlar"
+description: "B1.church üye uygulaması için gezinme sekmelerini, Ana ekran kutucuklarını, oturum açma istemini ve üye dizini gizlilik ayarlarını B1 Admin'de yapılandırın."
 ---
 
 # Mobil Uygulama Ayarları

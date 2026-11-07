@@ -1,5 +1,6 @@
 ---
 title: "Thông báo"
+description: "Lặp chiếu thư mục slide trên FreePlay TV cho thông báo ở sảnh hoặc trước giờ học: chọn thư mục nhà cung cấp, giữ đồng bộ và tắt khi xong."
 ---
 
 # Thông báo
@@ -13,7 +14,7 @@ FreePlay có thể lặp lại một thư mục chứa các slide thông báo tr
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Kết nối với nhà cung cấp nội dung](./connecting-providers) có chứa các slide thông báo của bạn, chẳng hạn như Dropbox hoặc OneDrive
+- [Kết nối với nhà cung cấp nội dung](./connecting-providers.md) có chứa các slide thông báo của bạn, chẳng hạn như Dropbox hoặc OneDrive
 - Đặt các hình ảnh hoặc video bạn muốn lặp lại vào cùng một thư mục trong nhà cung cấp đó
 
 </div>
@@ -37,7 +38,7 @@ Sau khi các slide đã được tải xuống, mục **Thông báo** sẽ xuấ
 - Sau slide cuối cùng, vòng lặp bắt đầu lại từ slide đầu tiên
 - Nếu thư mục chỉ có một video, video đó sẽ lặp lại tại chỗ
 
-Vòng lặp phát từ các tệp được lưu trên thiết bị, nên vẫn tiếp tục chạy mà không cần kết nối internet. Bạn có thể dùng cùng các nút điều khiển từ xa như với mọi nội dung khác -- xem [Phát nội dung](./playing-content).
+Vòng lặp phát từ các tệp được lưu trên thiết bị, nên vẫn tiếp tục chạy mà không cần kết nối internet. Bạn có thể dùng cùng các nút điều khiển từ xa như với mọi nội dung khác -- xem [Phát nội dung](./playing-content.md).
 
 ## Cập nhật slide
 
@@ -61,6 +62,6 @@ Ngắt kết nối nhà cung cấp cũng sẽ tắt thông báo đến từ nhà
 
 ## Bài viết liên quan
 
-- **[Kết nối với nhà cung cấp](./connecting-providers)** - Kết nối nhà cung cấp chứa các slide của bạn
-- **[Duyệt và tải xuống nội dung](./browsing-content)** - Duyệt các thư mục của nhà cung cấp và phát nội dung theo yêu cầu
-- **[Phát nội dung](./playing-content)** - Các nút điều khiển trình phát bằng remote TV
+- **[Kết nối với nhà cung cấp](./connecting-providers.md)** - Kết nối nhà cung cấp chứa các slide của bạn
+- **[Duyệt và tải xuống nội dung](./browsing-content.md)** - Duyệt các thư mục của nhà cung cấp và phát nội dung theo yêu cầu
+- **[Phát nội dung](./playing-content.md)** - Các nút điều khiển trình phát bằng remote TV

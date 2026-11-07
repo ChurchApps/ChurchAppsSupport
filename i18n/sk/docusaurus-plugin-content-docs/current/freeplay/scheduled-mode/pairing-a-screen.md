@@ -1,5 +1,6 @@
 ---
 title: "Párovanie obrazovky"
+description: "Spárovanie TV FreePlay so skupinovým kalendárom obrazovky vo FreePlay Admin pomocou štvormiestneho kódu na TV, aby samostatne prehrávala naplánovaný obsah."
 ---
 
 # Párovanie obrazovky
@@ -13,9 +14,9 @@ Ak chcete televízor zaradiť do kalendára, spárujte ho s **FreePlay Admin**. 
 <div class="prereqs">
 <h4>Pred začatím</h4>
 
-- Nainštalujte a spustite FreePlay na televízore. Pozrite si [Začíname](../getting-started/)
+- Nainštalujte a spustite FreePlay na televízore. Pozrite si [Začíname](../getting-started/index.md)
 - Mať prihlasovacie údaje ChurchApps pre vašu cirkev, aby ste sa mohli prihlásiť do FreePlay Admin
-- Voliteľne najprv [vytvorte zoznam skladieb](./building-playlists) a [naplánujte ho](./scheduling-the-calendar), aby televízor mal hneď čo prehrávať
+- Voliteľne najprv [vytvorte zoznam skladieb](./building-playlists.md) a [naplánujte ho](./scheduling-the-calendar.md), aby televízor mal hneď čo prehrávať
 
 </div>
 
@@ -38,7 +39,7 @@ Kód platí 15 minút a odpočítavanie pod ním ukazuje, koľko času zostáva.
 5. V časti **Režim** ponechajte vybrané **Podľa plánu**. Televízor bude samostatne prehrávať podľa kalendára skupiny.
 6. Kliknite na **Spárovať**.
 
-Televízor zobrazí **Pripojené!** a potom **Načítavam váš plán...**. Stiahne naplánovaný obsah a začne prehrávať. Pozrite si [Prehrávanie podľa plánu na televízore](./scheduled-playback).
+Televízor zobrazí **Pripojené!** a potom **Načítavam váš plán...**. Stiahne naplánovaný obsah a začne prehrávať. Pozrite si [Prehrávanie podľa plánu na televízore](./scheduled-playback.md).
 
 :::info
 Ak FreePlay Admin hlási **Tento kód nezodpovedá žiadnemu televízoru**, skontrolujte kód na obrazovke. Ak vypršal, použite nový kód, ktorý televízor práve zobrazuje.
@@ -51,11 +52,11 @@ Nastavenie **Režim** má dve možnosti:
 - **Podľa plánu** - Prehráva podľa kalendára skupiny samostatne. Nikto nemusí stlačiť Štart.
 - **Manuálne** - Niekto vyberá obsah diaľkovým ovládačom. Manuálna obrazovka sa stále zobrazí v zozname **Obrazovky**, ale nenasleduje kalendár, preto je pole **Skupina** vypnuté.
 
-Režim obrazovky môžete neskôr zmeniť pomocou **Upraviť** na [stránke Obrazovky](./managing-screens).
+Režim obrazovky môžete neskôr zmeniť pomocou **Upraviť** na [stránke Obrazovky](./managing-screens.md).
 
 ## Párovanie s plánom bohoslužby
 
-Kód na obrazovke **Spárovať túto obrazovku** funguje aj v B1 Admin. Ak ho tam zadáte a v časti **Zobraziť plány pre** vyberiete typ plánu, televízor bude nasledovať tento typ plánu v [Režime plánu](../plan-mode/) namiesto kalendára. Pozrite si [Párovanie vášho zariadenia](../plan-mode/device-pairing).
+Kód na obrazovke **Spárovať túto obrazovku** funguje aj v B1 Admin. Ak ho tam zadáte a v časti **Zobraziť plány pre** vyberiete typ plánu, televízor bude nasledovať tento typ plánu v [Režime plánu](../plan-mode/index.md) namiesto kalendára. Pozrite si [Párovanie vášho zariadenia](../plan-mode/device-pairing.md).
 
 ## Zmena alebo zrušenie párovania na televízore
 
@@ -79,6 +80,6 @@ Televízor sa vráti k zobrazeniu párovacieho kódu. Kedykoľvek ho môžete zn
 
 ## Súvisiace články
 
-- **[Správa obrazoviek a skupín](./managing-screens)** - Premenujte obrazovku, presuňte ju do inej skupiny alebo skontrolujte jej stiahnuté súbory
-- **[Plánovanie kalendára](./scheduling-the-calendar)** - Rozhodnite, čo prehrávajú obrazovky skupiny
-- **[Výber režimu párovania](../getting-started/pairing-modes)** - Porovnajte režim podľa plánu s Režimom plánu a prehliadaním poskytovateľov obsahu
+- **[Správa obrazoviek a skupín](./managing-screens.md)** - Premenujte obrazovku, presuňte ju do inej skupiny alebo skontrolujte jej stiahnuté súbory
+- **[Plánovanie kalendára](./scheduling-the-calendar.md)** - Rozhodnite, čo prehrávajú obrazovky skupiny
+- **[Výber režimu párovania](../getting-started/pairing-modes.md)** - Porovnajte režim podľa plánu s Režimom plánu a prehliadaním poskytovateľov obsahu

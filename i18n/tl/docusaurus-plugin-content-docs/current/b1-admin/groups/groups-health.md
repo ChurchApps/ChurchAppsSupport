@@ -1,5 +1,6 @@
 ---
 title: "Groups Health"
+description: "Suriin ang kalusugan ng mga grupo sa B1 Admin gamit ang 90-araw na talaan ng miyembro, pagsali, pag-alis, churn, at attendance para sa follow-up."
 ---
 
 # Groups Health
@@ -13,8 +14,8 @@ Ang Groups Health dashboard ay nagbibigay sa inyo ng pangkalahatang tanaw kung k
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- Kailangan ninyo ng kahit ilang group na may mga miyembro para makita ang makabuluhang datos. Tingnan ang [Paggawa ng mga Group](creating-groups).
-- Kinukuha ang datos ng attendance mula sa mga naitalang session. Tingnan ang seksyong [Attendance](../attendance/).
+- Kailangan ninyo ng kahit ilang group na may mga miyembro para makita ang makabuluhang datos. Tingnan ang [Paggawa ng mga Group](./creating-groups.md).
+- Kinukuha ang datos ng attendance mula sa mga naitalang session. Tingnan ang seksyong [Attendance](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Ang pag-click sa pangalan ng group ay direktang magdadala sa inyo sa detail page
 
 ## Mga Kaugnay na Artikulo
 
-- [Paggawa ng mga Group](creating-groups) — mag-set up ng mga group
-- [Mga Miyembro ng Group](group-members) — pamahalaan ang pagiging miyembro ng group
-- [Pagsubaybay sa Attendance](../attendance/tracking-attendance) — magtala ng mga attendance session na nagpapakain sa dashboard na ito
+- [Paggawa ng mga Group](./creating-groups.md) — mag-set up ng mga group
+- [Mga Miyembro ng Group](./group-members.md) — pamahalaan ang pagiging miyembro ng group
+- [Pagsubaybay sa Attendance](../attendance/tracking-attendance.md) — magtala ng mga attendance session na nagpapakain sa dashboard na ito

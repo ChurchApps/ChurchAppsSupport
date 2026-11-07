@@ -1,5 +1,6 @@
 ---
 title: "Prosjektoversikt"
+description: "Kart over alle ChurchApps-repositorier etter kategori, med rammeverk, utviklingsporter, databaser og hvordan de delte @churchapps-pakkene kobler dem sammen, i oppsettsdokumentasjonen."
 ---
 
 # Prosjektoversikt
@@ -13,7 +14,7 @@ ChurchApps består av omtrent 20 uavhengige repositorier, hver publisert under [
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Installer [forutsetningene](./prerequisites) for prosjektkategorien du vil jobbe med
+- Installer [forutsetningene](./prerequisites.md) for prosjektkategorien du vil jobbe med
 
 </div>
 
@@ -72,7 +73,7 @@ Delt kode publiseres til npm under `@churchapps`-omfanget, og konsumeres som van
 | `@churchapps/integration-sdk` | B1.church-integrasjonsverktøy: webhooks, REST-klient, OAuth | Eksterne integrasjonsutviklere |
 | `@churchapps/texting` | Abstraksjon for SMS-leverandører | Api |
 
-Se [Delte biblioteker](../shared-libraries/) for arbeidsområdeoppsett og utgivelsesarbeidsflyt.
+Se [Delte biblioteker](../shared-libraries/index.md) for arbeidsområdeoppsett og utgivelsesarbeidsflyt.
 
 ## Prosjektrelasjoner
 
@@ -90,5 +91,5 @@ Alle frontend-apper avhenger av `@churchapps/helpers`. Nettapper avhenger i till
 
 ## Neste steg
 
-- **[Miljøvariabler](./environment-variables)** -- Konfigurer `.env`-filene dine for å koble til API-er
-- **[Lokalt API-oppsett](../api/local-setup)** -- Sett opp backend-API-et lokalt
+- **[Miljøvariabler](./environment-variables.md)** -- Konfigurer `.env`-filene dine for å koble til API-er
+- **[Lokalt API-oppsett](../api/local-setup.md)** -- Sett opp backend-API-et lokalt

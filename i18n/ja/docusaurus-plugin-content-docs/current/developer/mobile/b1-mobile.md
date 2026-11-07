@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "B1 Mobile の React Native/Expo アプリをローカルで設定・実行し、API エンドポイントを構成して、Android または iOS 向けにビルドする手順。B1 Mobile は非推奨です。"
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobileは、ChurchAppsの会員向けメインモバイルアプリです。R
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- **Node.js**と**Expo CLI**をインストールします -- [前提条件](../setup/prerequisites)を参照してください
+- **Node.js**と**Expo CLI**をインストールします -- [前提条件](../setup/prerequisites.md)を参照してください
 - **Android Studio**(Androidエミュレーター用)または**Xcode**(iOSシミュレーター用)をインストールします
-- APIの接続先(デモまたはローカル)を設定します -- [環境変数](../setup/environment-variables)を参照してください
+- APIの接続先(デモまたはローカル)を設定します -- [環境変数](../setup/environment-variables.md)を参照してください
 
 </div>
 
@@ -109,5 +110,5 @@ OTAアップデートは、JavaScriptのみの変更に最適です。ネイテ�
 
 ## 関連記事
 
-- **[モバイルのデプロイ](../deployment/mobile)** -- モバイルアプリのビルド、提出、デプロイに関する完全ガイド
-- **[環境変数](../setup/environment-variables)** -- モバイル環境設定の完全なリファレンス
+- **[モバイルのデプロイ](../deployment/mobile.md)** -- モバイルアプリのビルド、提出、デプロイに関する完全ガイド
+- **[環境変数](../setup/environment-variables.md)** -- モバイル環境設定の完全なリファレンス

@@ -1,5 +1,6 @@
 ---
 title: "Planskabeloner"
+description: "Gem en gudstjenesteplans liturgi og positioner som en genbrugelig skabelon i B1 Admin, og anvend den på kommende planer med ét klik."
 ---
 
 # Planskabeloner

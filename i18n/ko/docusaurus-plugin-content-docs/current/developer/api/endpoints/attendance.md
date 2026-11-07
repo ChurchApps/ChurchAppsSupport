@@ -1,5 +1,6 @@
 ---
 title: "출석 엔드포인트"
+description: "B1 Admin과 B1 Checkin의 출석 API 참조: 캠퍼스, 예배, 예배 시간, 세션, 방문, 체크인 규칙, 내보내기 엔드포인트를 다룹니다."
 ---
 
 # 출석 엔드포인트
@@ -270,6 +271,6 @@ Authorization: Bearer <token>
 
 ## 관련 페이지
 
-- [멤버십 엔드포인트](./membership) — 사람, 그룹, 역할, 교회 관리
-- [인증 및 권한](./authentication) — 로그인 흐름, JWT, 권한 모델
-- [모듈 구조](../module-structure) — 코드 구성 패턴
+- [멤버십 엔드포인트](./membership.md) — 사람, 그룹, 역할, 교회 관리
+- [인증 및 권한](./authentication.md) — 로그인 흐름, JWT, 권한 모델
+- [모듈 구조](../module-structure.md) — 코드 구성 패턴

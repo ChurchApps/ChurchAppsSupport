@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Conecte o B1 Admin ao Zapier para iniciar automações com novas pessoas, doações e membros de grupos, e gravar registros de volta no B1 sem programar."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Escolha um gatilho e depois adicione uma ou mais etapas de ação. Exemplos abai
 ### Publicar doações em um canal do Slack com um cartão mais rico que o conector nativo
 
 - **Gatilho** — B1: Nova doação
-- **Ação** — Slack: Enviar mensagem ao canal. Monte qualquer layout — botões, anexos etc. — que o [conector nativo do Slack](./slack-discord) não consegue fazer.
+- **Ação** — Slack: Enviar mensagem ao canal. Monte qualquer layout — botões, anexos etc. — que o [conector nativo do Slack](./slack-discord.md) não consegue fazer.
 
 ### Adicionar novos membros de grupo a um Google Group
 
@@ -106,6 +107,6 @@ Isso significa que o gatilho só dispara para eventos que acontecem **depois** d
 
 ## Veja também
 
-- [Make](./make) — o mesmo padrão, em outra plataforma
-- [Slack e Discord](./slack-discord) — notificações de chat mais simples, sem o Zapier
+- [Make](./make.md) — o mesmo padrão, em outra plataforma
+- [Slack e Discord](./slack-discord.md) — notificações de chat mais simples, sem o Zapier
 - [Webhooks (referência do desenvolvedor)](/docs/developer/api/webhooks)

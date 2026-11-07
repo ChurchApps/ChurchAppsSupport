@@ -1,5 +1,6 @@
 ---
 title: "Roller og tillatelser"
+description: "Sett opp roller i B1 Admin for å styre hva ansatte og frivillige kan se og endre, fra gaver og oppmøte til personer og grupper."
 ---
 
 # Roller og tillatelser

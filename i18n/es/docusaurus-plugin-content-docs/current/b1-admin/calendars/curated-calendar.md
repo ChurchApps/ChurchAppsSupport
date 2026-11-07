@@ -1,5 +1,6 @@
 ---
 title: "Calendario seleccionado"
+description: "Configura un calendario general curado en B1 Admin que reúne eventos de varios grupos y compártelo en tu web, por suscripción ICS o como descarga."
 ---
 
 # Calendario seleccionado
@@ -15,7 +16,7 @@ Un calendario seleccionado agrupa los eventos de varios grupos en una sola vista
 
 - Configure los [grupos](../groups/creating-groups.md) cuyos eventos desea incluir
 - Asegúrese de que los líderes de grupo hayan agregado eventos a sus respectivos grupos
-- Familiarícese con los conceptos básicos de [Creación de calendarios](creating-calendars)
+- Familiarícese con los conceptos básicos de [Creación de calendarios](./creating-calendars.md)
 
 </div>
 
@@ -61,5 +62,5 @@ Solo los eventos **públicos** aparecen en el calendario seleccionado de su siti
 
 ## Siguientes pasos
 
-- [Creación de calendarios](creating-calendars): aprenda los conceptos básicos de la creación de calendarios
-- [Descripción general de calendarios](./): regrese a la descripción general de calendarios
+- [Creación de calendarios](./creating-calendars.md): aprenda los conceptos básicos de la creación de calendarios
+- [Descripción general de calendarios](./index.md): regrese a la descripción general de calendarios

@@ -1,5 +1,6 @@
 ---
 title: "परियोजना अवलोकन"
+description: "श्रेणी के अनुसार हर ChurchApps रिपॉज़िटरी का नक्शा देखें: फ़्रेमवर्क, डेव पोर्ट, डेटाबेस, और साझा @churchapps पैकेज इन्हें कैसे जोड़ते हैं, डेवलपर सेटअप डॉक्स में।"
 ---
 
 # परियोजना अवलोकन
@@ -13,7 +14,7 @@ ChurchApps में लगभग 20 स्वतंत्र रिपॉज़
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- जिस परियोजना श्रेणी पर आप काम करना चाहते हैं, उसकी [आवश्यकताएँ](./prerequisites) इंस्टॉल करें
+- जिस परियोजना श्रेणी पर आप काम करना चाहते हैं, उसकी [आवश्यकताएँ](./prerequisites.md) इंस्टॉल करें
 
 </div>
 
@@ -72,7 +73,7 @@ ChurchApps में लगभग 20 स्वतंत्र रिपॉज़
 | `@churchapps/integration-sdk` | B1.church इंटीग्रेशन टूलकिट: webhooks, REST client, OAuth | बाहरी इंटीग्रेशन डेवलपर |
 | `@churchapps/texting` | SMS प्रदाता abstraction | Api |
 
-workspace सेटअप और release प्रक्रिया के लिए [Shared Libraries](../shared-libraries/) देखें।
+workspace सेटअप और release प्रक्रिया के लिए [Shared Libraries](../shared-libraries/index.md) देखें।
 
 ## परियोजनाओं के बीच संबंध
 
@@ -90,5 +91,5 @@ FreeShow     ──────┘       @churchapps/apihelper ◄────�
 
 ## अगले चरण
 
-- **[पर्यावरण चर](./environment-variables)** -- APIs से जुड़ने के लिए अपनी `.env` फ़ाइलें कॉन्फ़िगर करें
-- **[API स्थानीय सेटअप](../api/local-setup)** -- बैकएंड API को स्थानीय रूप से सेट करें
+- **[पर्यावरण चर](./environment-variables.md)** -- APIs से जुड़ने के लिए अपनी `.env` फ़ाइलें कॉन्फ़िगर करें
+- **[API स्थानीय सेटअप](../api/local-setup.md)** -- बैकएंड API को स्थानीय रूप से सेट करें

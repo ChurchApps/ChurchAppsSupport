@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "B1 Admin csatlakoztatása Claude-hoz: kérdések részvételről, adományokról és csoportokról egyszerű nyelven, bejelentkezéssel vagy korlátozott kulccsal."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ Ez ugyanaz a `/membership/people`, `/giving/donations`, `/attendance/visits` stb
 
 - [API-kulcsok](/docs/developer/api/api-keys) — a teljes hatókör-referencia
 - [MCP-szerver (fejlesztői referencia)](/docs/developer/api/mcp) — protokollrészletek és eszközsémák
-- [ChatGPT](./chatgpt) — ugyanez az elv, az OpenAI modelljeihez
+- [ChatGPT](./chatgpt.md) — ugyanez az elv, az OpenAI modelljeihez

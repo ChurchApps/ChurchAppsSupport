@@ -1,5 +1,6 @@
 ---
 title: "Daftar Ulang Tahun & Ulang Tahun Pernikahan"
+description: "Susun daftar orang yang berulang tahun atau ulang tahun pernikahan di bulan tertentu dengan filter pencarian Orang di B1 Admin, lalu lihat atau ekspor."
 ---
 
 # Daftar Ulang Tahun & Ulang Tahun Pernikahan

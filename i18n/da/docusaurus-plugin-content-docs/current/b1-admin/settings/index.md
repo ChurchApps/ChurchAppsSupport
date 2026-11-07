@@ -1,5 +1,6 @@
 ---
 title: "indstillinger"
+description: "Find rundt i B1 Admins indstillinger: kirkeinfo, branding, campusser, brugerdefinerede felter, brugerroller og navigation i B1.church-appen."
 ---
 
 # indstillinger

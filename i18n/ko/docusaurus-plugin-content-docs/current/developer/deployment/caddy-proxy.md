@@ -1,5 +1,6 @@
 ---
 title: "Caddy 사용자 지정 도메인 프록시"
+description: "B1.church 사이트의 커스텀 교회 도메인을 제공하는 Caddy 리버스 프록시를 빌드하고 실행하세요. TLS 인증서, 호스트 매핑, 알려진 문제점을 다룹니다."
 ---
 
 # Caddy 사용자 지정 도메인 프록시
@@ -10,7 +11,7 @@ title: "Caddy 사용자 지정 도메인 프록시"
 
 </div>
 
-요청이 B1App에 도착한 뒤 교회와 사이트로 어떻게 연결되는지는 [웹사이트 라우팅 및 다중 사이트](../architecture/websites)를 참고하세요.
+요청이 B1App에 도착한 뒤 교회와 사이트로 어떻게 연결되는지는 [웹사이트 라우팅 및 다중 사이트](../architecture/websites.md)를 참고하세요.
 
 ## 구성 요소
 
@@ -88,5 +89,5 @@ API의 `CaddyHelper`(그리고 `/membership/domains/caddy` + `/caddy/init` 엔�
 
 ## 관련 문서
 
-- [웹사이트 라우팅 및 다중 사이트](../architecture/websites) -- 프록시된 요청이 B1App에서 교회와 사이트로 연결되는 방식
-- [API 배포](./apis) -- `authorize`/`hostmap`을 제공하는 Membership API 배포
+- [웹사이트 라우팅 및 다중 사이트](../architecture/websites.md) -- 프록시된 요청이 B1App에서 교회와 사이트로 연결되는 방식
+- [API 배포](./apis.md) -- `authorize`/`hostmap`을 제공하는 Membership API 배포

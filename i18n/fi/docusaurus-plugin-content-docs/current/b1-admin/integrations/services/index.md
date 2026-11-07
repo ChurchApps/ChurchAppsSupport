@@ -1,5 +1,6 @@
 ---
 title: "Yhdistetyt palvelut"
+description: "Yhdistä B1 Admin Mailchimpiin, Donorboxiin, Subsplashiin, VOMOon, Clearstreamiin ja muihin Zapier- tai Make-reseptien avulla, ohjeineen."
 ---
 
 # Yhdistetyt palvelut
@@ -14,14 +15,14 @@ Nopein tapa yhdistää B1 toiseen kirkkoteknologiatyökaluun on yleensä Zapier-
 
 | Palvelu | Kategoria | Silta | Mitä voit yhdistää |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | Sähköposti | Zapier tai Make | Synkronoi uudet B1-henkilöt ja lahjoittajat Mailchimp-yleisöön |
-| [Donorbox](./donorbox) | Lahjoitukset | Zapier | Lähetä Donorboxin lahjoitukset ja lahjoittajat takaisin B1:een |
-| [Subsplash](./subsplash) | Sovellus / lahjoitukset | Zapier | Hae Subsplashin lahjoitukset ja henkilöt B1:een |
-| [VOMO](./vomo) | Vapaaehtoistyö | Zapier | Synkronoi vapaaehtoisilmoittautumiset B1-ryhmien ja VOMO-projektien välillä |
-| [Clearstream](./clearstream) | SMS | Zapier | Käynnistä Clearstream-tekstiviesti B1-tapahtumista ja tallenna vastaukset B1-tietueina |
-| [Text In Church](./text-in-church) | SMS / työnkulut | Zapier | Käynnistä Text In Church -työnkulkuja B1:stä ja vastaanota Connect Card -tiedot |
-| [Mobile Message](./mobile-message) | SMS (AU) | Webhookit: Zapier tai Make | Lähetä SMS mistä tahansa B1-tapahtumasta |
-| [Checkr](./checkr) | Taustatarkistukset | Make | Käynnistä taustatarkistus, kun henkilö liittyy palvelutiimiin |
+| [Mailchimp](./mailchimp.md) | Sähköposti | Zapier tai Make | Synkronoi uudet B1-henkilöt ja lahjoittajat Mailchimp-yleisöön |
+| [Donorbox](./donorbox.md) | Lahjoitukset | Zapier | Lähetä Donorboxin lahjoitukset ja lahjoittajat takaisin B1:een |
+| [Subsplash](./subsplash.md) | Sovellus / lahjoitukset | Zapier | Hae Subsplashin lahjoitukset ja henkilöt B1:een |
+| [VOMO](./vomo.md) | Vapaaehtoistyö | Zapier | Synkronoi vapaaehtoisilmoittautumiset B1-ryhmien ja VOMO-projektien välillä |
+| [Clearstream](./clearstream.md) | SMS | Zapier | Käynnistä Clearstream-tekstiviesti B1-tapahtumista ja tallenna vastaukset B1-tietueina |
+| [Text In Church](./text-in-church.md) | SMS / työnkulut | Zapier | Käynnistä Text In Church -työnkulkuja B1:stä ja vastaanota Connect Card -tiedot |
+| [Mobile Message](./mobile-message.md) | SMS (AU) | Webhookit: Zapier tai Make | Lähetä SMS mistä tahansa B1-tapahtumasta |
+| [Checkr](./checkr.md) | Taustatarkistukset | Make | Käynnistä taustatarkistus, kun henkilö liittyy palvelutiimiin |
 
 ## Mitä kaikilla näillä on yhteistä
 
@@ -45,8 +46,8 @@ Olemme myös tarkoituksella jättäneet pois Planning Center Services -kohtaiset
 
 ## Katso myös
 
-- [Zapier (yleiskatsaus)](../zapier): B1-puoli jokaisesta Zapier-reseptistä on sama, ja tämä ohje käsittelee sen kerran.
-- [Make (yleiskatsaus)](../make): sama koskee Make-skenaarioita.
-- [Slack ja Discord](../slack-discord): chat-ilmoitukset ilman siltaa.
-- [Google Sheets](../google-sheets): vaatimuksesta tehtävät viennit.
+- [Zapier (yleiskatsaus)](../zapier.md): B1-puoli jokaisesta Zapier-reseptistä on sama, ja tämä ohje käsittelee sen kerran.
+- [Make (yleiskatsaus)](../make.md): sama koskee Make-skenaarioita.
+- [Slack ja Discord](../slack-discord.md): chat-ilmoitukset ilman siltaa.
+- [Google Sheets](../google-sheets.md): vaatimuksesta tehtävät viennit.
 - [Webhookit (kehittäjän viitemateriaali)](/docs/developer/api/webhooks): tapahtumaluettelo, johon jokainen resepti nojaa.

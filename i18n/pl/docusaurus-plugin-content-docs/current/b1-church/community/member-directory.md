@@ -1,5 +1,7 @@
 ---
-title: "Katalog członków"
+title: "Katalog członków w portalu B1.church"
+sidebar_label: "Katalog członków"
+description: "Wyszukuj i przeglądaj członków kościoła w katalogu B1.church, oglądaj ich profile i członków gospodarstw domowych oraz sprawdź, kto ma dostęp do katalogu."
 ---
 
 # Katalog członków

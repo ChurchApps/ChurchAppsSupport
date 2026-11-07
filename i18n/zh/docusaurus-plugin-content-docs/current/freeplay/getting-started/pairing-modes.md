@@ -1,5 +1,6 @@
 ---
 title: "选择配对模式"
+description: "选择配对 FreePlay TV 的合适方式：使用 FreePlay Admin 中的日历、B1 Admin 中的服务计划，或不进行配对。"
 ---
 
 # 选择配对模式
@@ -32,7 +33,7 @@ FreePlay 可以通过三种方式运行电视：按照您在 FreePlay Admin 中�
 
 **最适合：** 大堂和走廊的标识牌、通知循环，以及希望人们走进教室时课程已经开始播放的教室。
 
-完整指南请参见 **[定时模式](../scheduled-mode/)**。
+完整指南请参见 **[定时模式](../scheduled-mode/index.md)**。
 
 ## 礼拜计划模式（B1 Admin）
 
@@ -42,7 +43,7 @@ FreePlay 可以通过三种方式运行电视：按照您在 FreePlay Admin 中�
 
 **最适合：** 显示与每周礼拜计划相关内容的电视，由专人在时间到时开始播放。
 
-完整指南请参见 **[礼拜计划模式](../plan-mode/)**。
+完整指南请参见 **[礼拜计划模式](../plan-mode/index.md)**。
 
 :::tip
 您也可以按计划定时播放当前的礼拜计划。在 FreePlay Admin 中，添加一个日历条目，并在 **礼拜计划** 下选择计划类型。
@@ -50,7 +51,7 @@ FreePlay 可以通过三种方式运行电视：按照您在 FreePlay Admin 中�
 
 ## 内容提供方（无需配对）
 
-如果您完全不需要配对电视，可以直接浏览内容提供方。[Lessons.church](../../lessons-church/) 和 Bible Project 等提供方提供可以下载并随时播放的内容。
+如果您完全不需要配对电视，可以直接浏览内容提供方。[Lessons.church](../../lessons-church/index.md) 和 Bible Project 等提供方提供可以下载并随时播放的内容。
 
 **最适合：** 志愿者每周自行选择播放内容的电视，或您希望了解有哪些可用内容的情况。
 
@@ -60,6 +61,6 @@ FreePlay 可以通过三种方式运行电视：按照您在 FreePlay Admin 中�
 
 ## 相关文章
 
-- **[定时模式](../scheduled-mode/)** - 使用 FreePlay Admin 将电视安排到日历上
-- **[礼拜计划模式](../plan-mode/)** - 与礼拜计划配对的完整指南
-- **[内容提供方](../content-providers/)** - 从外部来源浏览和下载内容
+- **[定时模式](../scheduled-mode/index.md)** - 使用 FreePlay Admin 将电视安排到日历上
+- **[礼拜计划模式](../plan-mode/index.md)** - 与礼拜计划配对的完整指南
+- **[内容提供方](../content-providers/index.md)** - 从外部来源浏览和下载内容

@@ -1,5 +1,6 @@
 ---
 title: "Domaćinstvo"
+description: "Sužinokite, kas yra jūsų namų ūkyje ir kaip nariai tarpusavyje susiję B1 Mobile Profilio skirtuke – nuo to priklauso registracija ir kitos funkcijos."
 ---
 
 # Domaćinstvo
@@ -13,7 +14,7 @@ Skirtukas **Domaćinstvo** jūsų profilio ekrane rodo jūsų šeimos narius. Č
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiekite B1 Mobile](../getting-started/installing) ir [prisijunkite](../getting-started/logging-in) prie savo paskyros
+- [Įdiekite B1 Mobile](../getting-started/installing.md) ir [prisijunkite](../getting-started/logging-in.md) prie savo paskyros
 
 </div>
 
@@ -33,7 +34,7 @@ Jūsų namų ūkio informacija naudojama keliose B1 Mobile ir visų ChurchApps f
 
 - **Registracija** -- kai [registruojatės](../checkin/self-checkin.md) į pamaldas ar renginį, galite iš karto užregistruoti visą savo namų ūkį, o ne kiekvieną asmenį atskirai.
 - **Bažnyčios įrašai** -- jūsų bažnyčia naudoja namų ūkio duomenis, kad šeimos įrašai būtų tvarkingi ir kad būtų galima bendrauti su šeima kaip vienetu.
-- **Katalogas** -- kiti nariai gali matyti jūsų namų ūkio informaciją [bažnyčios kataloge](../community/member-directory.md), priklausomai nuo jūsų [privatumo nustatymų](./privacy-settings).
+- **Katalogas** -- kiti nariai gali matyti jūsų namų ūkio informaciją [bažnyčios kataloge](../community/member-directory.md), priklausomai nuo jūsų [privatumo nustatymų](./privacy-settings.md).
 
 ## Namų ūkio peržiūra
 
@@ -47,10 +48,10 @@ Namų ūkio narystę paprastai tvarko jūsų bažnyčios administratorius. Jei n
 
 ## Informacijos atnaujinimas
 
-Jei šeimos nario duomenis reikia atnaujinti, jis gali [redaguoti savo profilį](./editing-profile) arba galite kreiptis į bažnyčios administratorių pakeitimams atlikti. Tikslios namų ūkio informacijos laikymas užtikrina, kad tokios funkcijos kaip [registracija](../checkin/) veiktų sklandžiai visai jūsų šeimai.
+Jei šeimos nario duomenis reikia atnaujinti, jis gali [redaguoti savo profilį](./editing-profile.md) arba galite kreiptis į bažnyčios administratorių pakeitimams atlikti. Tikslios namų ūkio informacijos laikymas užtikrina, kad tokios funkcijos kaip [registracija](../checkin/index.md) veiktų sklandžiai visai jūsų šeimai.
 
 ## Susiję straipsniai
 
 - [Savarankiška registracija](../checkin/self-checkin.md) -- užregistruokite savo namų ūkio narius į pamaldas
-- [Profilio redagavimas](./editing-profile) -- atnaujinkite savo asmeninę informaciją
-- [Privatumo nustatymai](./privacy-settings) -- kontroliuokite, ką kiti mato apie jūsų namų ūkį
+- [Profilio redagavimas](./editing-profile.md) -- atnaujinkite savo asmeninę informaciją
+- [Privatumo nustatymai](./privacy-settings.md) -- kontroliuokite, ką kiti mato apie jūsų namų ūkį

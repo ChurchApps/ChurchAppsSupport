@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "B1.church Blogunu İnceleme ve RSS Akışları"
+sidebar_label: "Blog"
+description: "Kilisenizin B1.church blogunu kategoriye veya etikete göre inceleyin ve filtreleyin, eski yazılarda gezinin veya RSS akışlarıyla yenileri takip edin."
 ---
 
 # Blog

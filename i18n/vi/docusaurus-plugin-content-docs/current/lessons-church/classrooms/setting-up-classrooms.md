@@ -1,5 +1,6 @@
 ---
 title: "Thiết lập lớp học"
+description: "Tạo, đổi tên và xóa lớp học trong cổng Lessons.church để mỗi phòng hoặc nhóm tuổi sẵn sàng cho việc lên lịch bài học hằng tuần."
 ---
 
 # Thiết lập lớp học

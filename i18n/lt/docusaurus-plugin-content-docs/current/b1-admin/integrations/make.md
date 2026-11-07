@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "Prijunkite B1 Admin prie Make automatizacijai: sukurkite API raktą, nustatykite B1.church paleidiklį ir veiksmus bei išspręskite dažniausias klaidas."
 ---
 
 # Make
@@ -110,6 +111,6 @@ B1.church Make programėlė yra atvirojo kodo – JSON aprašai yra `B1Integrati
 
 ## Taip pat žr.
 
-- [Zapier](./zapier) – tas pats modelis, paprastesnė sąsaja ir didesnis programėlių katalogas
-- [Slack ir Discord](./slack-discord) – įmontuoti pokalbių pranešimai be Make
+- [Zapier](./zapier.md) – tas pats modelis, paprastesnė sąsaja ir didesnis programėlių katalogas
+- [Slack ir Discord](./slack-discord.md) – įmontuoti pokalbių pranešimai be Make
 - [Webhook (kūrėjo žinynas)](/docs/developer/api/webhooks)

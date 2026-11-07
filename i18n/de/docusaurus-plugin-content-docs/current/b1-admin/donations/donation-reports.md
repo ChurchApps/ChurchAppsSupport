@@ -1,5 +1,6 @@
 ---
 title: "Spendenberichte"
+description: "Prüfen Sie in B1 Admin Spendensummen, abgewanderte Spender und Details auf Stapelebene mit dem Dashboard Spendenübersicht, der Ansicht Abgewanderte Geber und CSV-Exporten."
 ---
 
 # Spendenberichte

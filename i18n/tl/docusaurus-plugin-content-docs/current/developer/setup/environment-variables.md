@@ -1,5 +1,6 @@
 ---
 title: "Mga Environment Variable"
+description: "I-set up ang .env file ng mga proyekto ng ChurchApps: shared demo API o lokal na API, at mga variable para sa B1 Admin, B1.church, Lessons.church, at iba pa."
 ---
 
 # Mga Environment Variable
@@ -13,9 +14,9 @@ Gumagamit ang bawat proyekto ng ChurchApps ng `.env` file para sa lokal na confi
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-install ang [prerequisites](./prerequisites) para sa iyong proyekto
+- I-install ang [prerequisites](./prerequisites.md) para sa iyong proyekto
 - I-clone ang project repository na gusto mong pagtrabahuhan
-- Basahin ang [Project Overview](./project-overview) para maunawaan kung aling API module ang kailangan ng iyong proyekto
+- Basahin ang [Project Overview](./project-overview.md) para maunawaan kung aling API module ang kailangan ng iyong proyekto
 
 </div>
 
@@ -64,7 +65,7 @@ Retired na ang staging environment (`api.staging.churchapps.org`, `api.staging.l
 
 ### Opsyon 2: Local API
 
-Patakbuhin ang Api project sa iyong makina. Nangangailangan ng MySQL 8.0+ na may mga database na nagawa para sa bawat module. Tingnan ang gabay na [API local setup](../api/local-setup).
+Patakbuhin ang Api project sa iyong makina. Nangangailangan ng MySQL 8.0+ na may mga database na nagawa para sa bawat module. Tingnan ang gabay na [API local setup](../api/local-setup.md).
 
 ```bash
 # Base URL pattern

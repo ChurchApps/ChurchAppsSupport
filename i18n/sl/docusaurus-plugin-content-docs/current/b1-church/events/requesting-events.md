@@ -1,5 +1,6 @@
 ---
 title: "Zahteva za dogodke in prostore"
+description: "V portalu članov B1.church zahtevajte rezervacijo prostora ali opreme za dogodek, spremljajte stanje v Moje zahteve in jo med čakanjem prekličite."
 ---
 
 # Zahteva za dogodke in prostore
@@ -42,11 +43,11 @@ Na strani Me odprite **Moje zahteve**. Vsaka zahteva prikazuje dogodek, datum od
 Dokler je zahteva na čakanju, jo lahko umaknete z **Prekliči zahtevo** (potrditi boste morali preklic – preklica ni mogoče razveljaviti).
 
 :::info
-Zahteve pregleduje cerkveno osebje na [strani Odobritve](../../b1-admin/calendars/approvals) v B1 Admin. Katere prostore in vire je treba odobriti, je odvisno od vaše cerkve – glejte [Prostori in viri](../../b1-admin/calendars/rooms-resources).
+Zahteve pregleduje cerkveno osebje na [strani Odobritve](../../b1-admin/calendars/approvals.md) v B1 Admin. Katere prostore in vire je treba odobriti, je odvisno od vaše cerkve – glejte [Prostori in viri](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Sorodni članki
 
-- [Stran Me](../getting-started/me-page) -- Kje so povezave za zahteve
-- [Odobritve koledarja (B1 Admin)](../../b1-admin/calendars/approvals) -- Kako osebje pregleduje zahteve
-- [Prostori in viri (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Kako cerkve nastavljajo prostore za rezervacije
+- [Stran Me](../getting-started/me-page.md) -- Kje so povezave za zahteve
+- [Odobritve koledarja (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Kako osebje pregleduje zahteve
+- [Prostori in viri (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Kako cerkve nastavljajo prostore za rezervacije

@@ -1,5 +1,6 @@
 ---
 title: "Hộ gia đình"
+description: "Xem ai thuộc gia đình bạn và các thành viên được liên kết ra sao trong tab Hồ sơ của B1 Mobile, là dữ liệu mà điểm danh và các tính năng khác dựa vào."
 ---
 
 # Hộ gia đình
@@ -13,7 +14,7 @@ Tab **Hộ gia đình** trên màn hình Hồ sơ của bạn hiển thị các 
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
 
 </div>
 
@@ -33,7 +34,7 @@ Thông tin hộ gia đình của bạn được sử dụng bởi nhiều tính 
 
 - **Check-in** -- Khi bạn [check-in](../checkin/self-checkin.md) cho một buổi lễ hoặc sự kiện, bạn có thể check-in cả hộ gia đình cùng một lúc thay vì check-in từng người riêng lẻ.
 - **Hồ sơ nhà thờ** -- Nhà thờ của bạn sử dụng dữ liệu hộ gia đình để giữ hồ sơ gia đình được sắp xếp ngăn nắp và để liên lạc với gia đình bạn như một đơn vị.
-- **Danh bạ** -- Các thành viên khác có thể xem thông tin hộ gia đình của bạn trong [danh bạ nhà thờ](../community/member-directory.md), tùy thuộc vào [cài đặt quyền riêng tư](./privacy-settings) của bạn.
+- **Danh bạ** -- Các thành viên khác có thể xem thông tin hộ gia đình của bạn trong [danh bạ nhà thờ](../community/member-directory.md), tùy thuộc vào [cài đặt quyền riêng tư](./privacy-settings.md) của bạn.
 
 ## Xem hộ gia đình của bạn
 
@@ -47,10 +48,10 @@ Việc quản lý thành viên hộ gia đình thường do quản trị viên n
 
 ## Giữ thông tin luôn cập nhật
 
-Nếu thông tin của một thành viên trong gia đình cần được cập nhật, họ có thể [chỉnh sửa hồ sơ của chính mình](./editing-profile), hoặc bạn có thể liên hệ quản trị viên nhà thờ để thực hiện thay đổi. Giữ thông tin hộ gia đình chính xác giúp các tính năng như [check-in](../checkin/) hoạt động suôn sẻ cho cả gia đình bạn.
+Nếu thông tin của một thành viên trong gia đình cần được cập nhật, họ có thể [chỉnh sửa hồ sơ của chính mình](./editing-profile.md), hoặc bạn có thể liên hệ quản trị viên nhà thờ để thực hiện thay đổi. Giữ thông tin hộ gia đình chính xác giúp các tính năng như [check-in](../checkin/index.md) hoạt động suôn sẻ cho cả gia đình bạn.
 
 ## Bài viết liên quan
 
 - [Tự check-in](../checkin/self-checkin.md) -- Check-in các thành viên trong hộ gia đình của bạn để tham dự buổi lễ
-- [Chỉnh sửa hồ sơ của bạn](./editing-profile) -- Cập nhật thông tin cá nhân của bạn
-- [Cài đặt quyền riêng tư](./privacy-settings) -- Kiểm soát những gì người khác có thể thấy về hộ gia đình của bạn
+- [Chỉnh sửa hồ sơ của bạn](./editing-profile.md) -- Cập nhật thông tin cá nhân của bạn
+- [Cài đặt quyền riêng tư](./privacy-settings.md) -- Kiểm soát những gì người khác có thể thấy về hộ gia đình của bạn

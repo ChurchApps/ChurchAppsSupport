@@ -1,5 +1,6 @@
 ---
 title: "Personer"
+description: "Søk, legg til og rediger medlemmer i Personer-delen i B1 Admin, inkludert husstandsoversikt, masseoppdateringer, og utskrift og eksport av katalogen."
 ---
 
 # Personer

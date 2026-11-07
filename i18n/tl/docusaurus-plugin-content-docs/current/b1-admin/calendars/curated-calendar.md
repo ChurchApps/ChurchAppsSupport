@@ -1,5 +1,6 @@
 ---
 title: "Curated Calendar"
+description: "I-set up sa B1 Admin ang calendar ng buong simbahan na kumukuha ng event mula sa maraming grupo, at ibahagi ito sa website, ICS subscription, o download."
 ---
 
 # Curated Calendar
@@ -15,7 +16,7 @@ Pinagsasama ng curated calendar ang mga event mula sa maraming grupo sa iisang p
 
 - I-set up ang mga [grupo](../groups/creating-groups.md) na gusto mong isama ang mga event
 - Tiyaking nakapagdagdag na ang mga group leader ng mga event sa kani-kanilang grupo
-- Pamilyarin ang sarili mo sa mga batayan ng [Creating Calendars](creating-calendars)
+- Pamilyarin ang sarili mo sa mga batayan ng [Creating Calendars](./creating-calendars.md)
 
 </div>
 
@@ -61,5 +62,5 @@ Tanging **public** na event lang ang lumalabas sa curated calendar sa iyong webs
 
 ## Mga Susunod na Hakbang
 
-- [Creating Calendars](creating-calendars) -- Matutunan ang mga batayan ng paggawa ng calendar
-- [Calendars Overview](./) -- Bumalik sa pangkalahatang-tanaw ng mga calendar
+- [Creating Calendars](./creating-calendars.md) -- Matutunan ang mga batayan ng paggawa ng calendar
+- [Calendars Overview](./index.md) -- Bumalik sa pangkalahatang-tanaw ng mga calendar

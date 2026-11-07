@@ -1,5 +1,6 @@
 ---
 title: "Installer en tant qu'application (PWA)"
+description: "Installez B1.church comme application sur iPhone ou Android depuis le portail membre, en ajoutant son icône à l'écran d'accueil via Safari ou Chrome."
 ---
 
 # Installer en tant qu'application (PWA)

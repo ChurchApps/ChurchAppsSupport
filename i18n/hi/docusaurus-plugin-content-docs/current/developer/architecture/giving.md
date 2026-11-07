@@ -1,5 +1,6 @@
 ---
 title: "Giving आर्किटेक्चर"
+description: "ChurchApps दान के लिए डेवलपर गाइड: B1 Admin और B1.church Stripe, PayPal, Kingdom Funding या Paystack गेटवे के माध्यम से दान कैसे भेजते हैं।"
 ---
 
 # Giving आर्किटेक्चर
@@ -134,7 +135,7 @@ giving स्कीमा (`Api/src/modules/giving/db/DatabaseTypes.ts`, `models
 
 ### गुमनाम / अतिथि दान
 
-सार्वजनिक दान पृष्ठ (`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`) और "give now" पैनल `@churchapps/apphelper/website` से `NonAuthDonationWrapper` रेंडर करते हैं, जो प्रदाता के `GuestForm` के चारों ओर reCAPTCHA और gateway का Elements context इंजेक्ट करता है। अतिथियों को कोई लॉगिन, सहेजी विधियाँ या इतिहास नहीं मिलता। प्रवाह `GET /giving/funds/churchId/:id` और `GET /giving/donate/gateways/:churchId` (केवल सार्वजनिक keys) लाता है, `POST /giving/donate/captcha-verify` से visitor को सत्यापित करता है, ब्राउज़र में tokenize करता है, और `/giving/donate/charge` (या `/subscribe`) पर पोस्ट करता है। verify कॉल 10 मिनट का HMAC-हस्ताक्षरित `captchaPass` (`Api/src/modules/giving/helpers/CaptchaPass.ts`) लौटाता है जिसे फ़ॉर्म हर guest धन कॉल के साथ भेजता है; `CAPTCHA_ENFORCE=true` के साथ API उस चर्च के लिए वैध pass के बिना guest `create-order`, `charge`, `subscribe`, `addcard`, और `ach-setup-intent-anon` कॉल को अस्वीकार करता है। Guest भुगतान वाले इवेंट पंजीकरण (`POST /content/registrations/register`) अपने charge से ठीक पहले वही pass जाँचते हैं; देखें [Event Registrations](./registrations#payment-flow)। Guest ACH गुमनाम `POST /giving/paymentmethods/ach-setup-intent-anon` का उपयोग करता है, जो केवल तत्काल (Financial Connections) सत्यापन की अनुमति देता है: एक microdeposit जाँच दिनों बाद पूरी होती है, guest पृष्ठ के चले जाने के बाद, इसलिए वह उपहार कभी पूरा नहीं हो सकता। फ़ॉर्म एक असत्यापित SetupIntent पर charge करने से इनकार करता है और दानकर्ता को कार्ड या साइन-इन बैंक सेटअप की ओर इंगित करता है।
+सार्वजनिक दान पृष्ठ (`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`) और "give now" पैनल `@churchapps/apphelper/website` से `NonAuthDonationWrapper` रेंडर करते हैं, जो प्रदाता के `GuestForm` के चारों ओर reCAPTCHA और gateway का Elements context इंजेक्ट करता है। अतिथियों को कोई लॉगिन, सहेजी विधियाँ या इतिहास नहीं मिलता। प्रवाह `GET /giving/funds/churchId/:id` और `GET /giving/donate/gateways/:churchId` (केवल सार्वजनिक keys) लाता है, `POST /giving/donate/captcha-verify` से visitor को सत्यापित करता है, ब्राउज़र में tokenize करता है, और `/giving/donate/charge` (या `/subscribe`) पर पोस्ट करता है। verify कॉल 10 मिनट का HMAC-हस्ताक्षरित `captchaPass` (`Api/src/modules/giving/helpers/CaptchaPass.ts`) लौटाता है जिसे फ़ॉर्म हर guest धन कॉल के साथ भेजता है; `CAPTCHA_ENFORCE=true` के साथ API उस चर्च के लिए वैध pass के बिना guest `create-order`, `charge`, `subscribe`, `addcard`, और `ach-setup-intent-anon` कॉल को अस्वीकार करता है। Guest भुगतान वाले इवेंट पंजीकरण (`POST /content/registrations/register`) अपने charge से ठीक पहले वही pass जाँचते हैं; देखें [Event Registrations](./registrations.md#payment-flow)। Guest ACH गुमनाम `POST /giving/paymentmethods/ach-setup-intent-anon` का उपयोग करता है, जो केवल तत्काल (Financial Connections) सत्यापन की अनुमति देता है: एक microdeposit जाँच दिनों बाद पूरी होती है, guest पृष्ठ के चले जाने के बाद, इसलिए वह उपहार कभी पूरा नहीं हो सकता। फ़ॉर्म एक असत्यापित SetupIntent पर charge करने से इनकार करता है और दानकर्ता को कार्ड या साइन-इन बैंक सेटअप की ओर इंगित करता है।
 
 तीन guest-फ़ॉर्म विकल्प एक ही charge कॉल पर चलते हैं। दान URL पर `?fundId=` और `?amount=` फंड विभाजन पूर्व-चयन करते हैं (हर प्रदाता का guest फ़ॉर्म माउंट पर पढ़ता है, सामान्य fund-change handler के माध्यम से, ताकि कुल और शुल्क अपडेट हों)। `anonymous: true` `DonateController.charge` को क्लाइंट द्वारा भेजे गए किसी भी व्यक्ति को त्यागने और उपहार को `personId = null` के साथ लॉग करने के लिए बनाता है; guest फ़ॉर्म `/people/loadOrCreate` और customer/vault चरण को छोड़ता है, और तीन तुरंत-लॉग प्रदाता gateway customer से व्यक्ति हल करना बंद कर देते हैं। Apple Pay को पृष्ठ के डोमेन का Stripe के साथ पंजीकृत होना आवश्यक है, इसलिए Stripe guest फ़ॉर्म सत्र में एक बार सार्वजनिक, दर-सीमित `POST /giving/donate/register-domain` पर पोस्ट करता है, जो केवल वह डोमेन स्वीकार करता है जो चर्च का है (`<subDomain>.b1.church`, content मॉड्यूल की domains तालिका में एक पंक्ति, या एक स्थानीय होस्ट) इससे पहले कि Stripe के payment-method-domains API को कॉल करे।
 
@@ -175,6 +176,6 @@ charge और webhook पथ एक ही `donations` / `fundDonations` पं�
 
 ## संबंधित पृष्ठ
 
-- [Giving Endpoints](../api/endpoints/giving) -- दान, फंड, बैच, gateways, सब्सक्रिप्शन, भुगतान विधियों और webhooks के लिए पूर्ण REST सतह
-- [AppHelper](../shared-libraries/app-helper) -- npm पैकेज जो payment provider रजिस्ट्री और दान कंपोनेंट्स भेजता है
-- [Module Structure](../api/module-structure) -- GivingApi मॉड्यूल सर्वर-साइड पर कैसे व्यवस्थित है
+- [Giving Endpoints](../api/endpoints/giving.md) -- दान, फंड, बैच, gateways, सब्सक्रिप्शन, भुगतान विधियों और webhooks के लिए पूर्ण REST सतह
+- [AppHelper](../shared-libraries/app-helper.md) -- npm पैकेज जो payment provider रजिस्ट्री और दान कंपोनेंट्स भेजता है
+- [Module Structure](../api/module-structure.md) -- GivingApi मॉड्यूल सर्वर-साइड पर कैसे व्यवस्थित है

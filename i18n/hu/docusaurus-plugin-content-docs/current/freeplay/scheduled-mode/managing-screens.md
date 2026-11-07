@@ -1,5 +1,6 @@
 ---
 title: "Képernyők és csoportok kezelése"
+description: "Melyik FreePlay TV online és kész a vasárnapra; képernyőbeállítások szerkesztése, egy naptárat megosztó csoportok létrehozása a FreePlay Adminban."
 ---
 
 # Képernyők és csoportok kezelése
@@ -14,7 +15,7 @@ A FreePlay Adminban a **Képernyők** oldal felsorolja az egyházadhoz párosít
 <h4>Mielőtt elkezdenéd</h4>
 
 - Jelentkezz be a FreePlay Adminba itt: [admin.freeplay.church](https://admin.freeplay.church)
-- [Párosíts legalább egy képernyőt](./pairing-a-screen)
+- [Párosíts legalább egy képernyőt](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ A **Megjelenítés** gombbal a képernyő naptárát lejátszhatod a böngésző
 
 Kattints a képernyő címkéjére, hogy megnyisd az oldalát. A bal oldalon:
 
-- **Megjelenítés böngészőben** - A képernyő naptárának lejátszása teljes képernyőn a böngésződben, pontosan úgy, ahogy a TV-n megjelenne. Lásd: [Megjelenítés böngészőből](./scheduled-playback#presenting-from-a-browser)
+- **Megjelenítés böngészőben** - A képernyő naptárának lejátszása teljes képernyőn a böngésződben, pontosan úgy, ahogy a TV-n megjelenne. Lásd: [Megjelenítés böngészőből](./scheduled-playback.md#presenting-from-a-browser)
 - **Szerkesztés** - A címke, a csoport vagy a mód megváltoztatása
 - **Továbbiak** > **Párosítás megszüntetése** - Leválasztja a TV-t. Ezután ismét párosítókódot jelenít meg
 
@@ -93,6 +94,6 @@ A csoport törlésekor a hozzá tartozó ütemezés is törlődik. Az adott csop
 
 ## Kapcsolódó cikkek
 
-- **[Képernyő párosítása](./pairing-a-screen)** - Új TV hozzáadása
-- **[A naptár ütemezése](./scheduling-the-calendar)** - Beállítja, hogy mit játszik az egyes csoport, és annak alapértelmezett körlejátszását
-- **[Ütemezett lejátszás a TV-n](./scheduled-playback)** - Mit jelent a „Készen áll eddig” dátum magán a TV-n
+- **[Képernyő párosítása](./pairing-a-screen.md)** - Új TV hozzáadása
+- **[A naptár ütemezése](./scheduling-the-calendar.md)** - Beállítja, hogy mit játszik az egyes csoport, és annak alapértelmezett körlejátszását
+- **[Ütemezett lejátszás a TV-n](./scheduled-playback.md)** - Mit jelent a „Készen áll eddig” dátum magán a TV-n

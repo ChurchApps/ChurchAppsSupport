@@ -1,5 +1,6 @@
 ---
 title: "Keresés"
+description: "Programok, tanulmányok és leckék keresése a Lessons.church könyvtárában kulcsszóval vagy bibliai történettel; a találatok rangsorolása és címkéi."
 ---
 
 # Keresés

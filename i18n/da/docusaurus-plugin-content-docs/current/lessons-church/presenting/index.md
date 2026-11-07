@@ -1,5 +1,6 @@
 ---
 title: "Præsentation"
+description: "Vis lektioner på en projektor med Presenter Mode i Lessons.church, del rollebaserede guider til frivillige, og print materialer inden undervisningen."
 ---
 
 # Præsentation

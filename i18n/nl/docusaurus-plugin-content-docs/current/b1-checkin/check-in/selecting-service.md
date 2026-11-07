@@ -1,5 +1,6 @@
 ---
 title: "Een dienst selecteren"
+description: "Kies de dienst die je bijwoont in het diensten-scherm van B1 Checkin. Dit bepaalt de dienstijden en groepen voor de rest van het inchecken."
 ---
 
 # Een dienst selecteren
@@ -13,7 +14,7 @@ De eerste stap van elke aanmelding is het kiezen van welke dienst u bijwoon. Het
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- [Meld u aan](../getting-started/logging-in) bij de B1 Church Checkin-app en selecteer uw kerk
+- [Meld u aan](../getting-started/logging-in.md) bij de B1 Church Checkin-app en selecteer uw kerk
 - Zorg ervoor dat uw kerkbeheerder [diensten en diensttijden heeft geconfigureerd](../../b1-admin/attendance/setup.md) in B1 Admin
 
 </div>
@@ -24,7 +25,7 @@ De eerste stap van elke aanmelding is het kiezen van welke dienst u bijwoon. Het
 2. U ziet een lijst met alle diensten die voor uw kerk zijn geconfigureerd. Elke dienst verschijnt als een kaart met de dienstnaam (bijvoorbeeld "Zondagochtend" of "Woensdagavond").
 3. Tik op de dienst die u bijwoon.
 
-De app laadt de diensttijden en groepen die aan die dienst zijn gekoppeld en neemt u mee naar het [scherm voor ledenzoeking](./looking-up-members).
+De app laadt de diensttijden en groepen die aan die dienst zijn gekoppeld en neemt u mee naar het [scherm voor ledenzoeking](./looking-up-members.md).
 
 :::info
 Diensten worden door uw kerkbeheerder in B1 Admin geconfigureerd onder de sectie Aanwezigheid. Als u de dienst die u verwacht niet ziet, vraag uw beheerder of deze is gemaakt in de [aanwezigheidsinstallatie](../../b1-admin/attendance/setup.md).
@@ -46,4 +47,4 @@ Als uw kerk slechts één dienst heeft geconfigureerd, hoeft u er nog steeds op 
 
 ## Volgende stap
 
-Na het selecteren van een dienst zult u [uw familie opzoeken](./looking-up-members) op telefoonnummer of naam.
+Na het selecteren van een dienst zult u [uw familie opzoeken](./looking-up-members.md) op telefoonnummer of naam.

@@ -1,5 +1,6 @@
 ---
 title: "Kufaka i-App"
+description: "Faka i-app ye-B1 Mobile kusuka ku-App Store noma ku-Google Play, kodvwa qaphela kutsi iyaphelelwa sikhatsi, kuyatsandzwa i-B1.church PWA manje."
 ---
 
 # Kufaka i-App
@@ -25,7 +26,7 @@ Ungaphindze usesha "B1 Mobile" nangabe kusesha kwekucala akutfoli imiphumela.
 
 ## Ngemuva Kwekufaka
 
-Uma i-app seyifakiwe, uyivule esikrinini sakho sasekhaya. Utawubona sikrini sekusesha emabandla lapho ungakhona kutfola futsi ukhetse libandla lakho. Nangabe sewunayo i-akhawundi ye-ChurchApps, unga[ngena](./logging-in) khona manje. Nangabe ungakabi nayo, ungenta i-akhawundi kusuka esikrinini sekungena.
+Uma i-app seyifakiwe, uyivule esikrinini sakho sasekhaya. Utawubona sikrini sekusesha emabandla lapho ungakhona kutfola futsi ukhetse libandla lakho. Nangabe sewunayo i-akhawundi ye-ChurchApps, unga[ngena](./logging-in.md) khona manje. Nangabe ungakabi nayo, ungenta i-akhawundi kusuka esikrinini sekungena.
 
 I-app itakubuta imvumo yekutfumela tatiso te-push. Sincoma kuvumela tatiso kute ukhone kutfola imibiko yesikhatsi lesifanele kusuka elibandleni lakho nasemacembeni.
 

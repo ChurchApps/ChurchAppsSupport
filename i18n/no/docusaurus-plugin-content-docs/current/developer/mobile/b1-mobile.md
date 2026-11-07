@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "Sett opp og kjør B1 Mobile React Native/Expo-appen lokalt, konfigurer API-endepunktene og bygg for Android eller iOS. Merk at B1 Mobile er utfaset."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobile er den primære mobilappen for medlemmer i ChurchApps, bygget med Reac
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Installer **Node.js** og **Expo CLI** -- se [Forutsetninger](../setup/prerequisites)
+- Installer **Node.js** og **Expo CLI** -- se [Forutsetninger](../setup/prerequisites.md)
 - Installer **Android Studio** (for Android-emulatoren) eller **Xcode** (for iOS-simulatoren)
-- Konfigurer API-målet ditt (demo eller lokalt) -- se [Miljøvariabler](../setup/environment-variables)
+- Konfigurer API-målet ditt (demo eller lokalt) -- se [Miljøvariabler](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ OTA-oppdateringer er ideelle for endringer som kun gjelder JavaScript. Hvis du e
 
 ## Relaterte artikler
 
-- **[Mobildistribusjon](../deployment/mobile)** -- Full veiledning for bygging, innsending og distribusjon av mobilapper
-- **[Miljøvariabler](../setup/environment-variables)** -- Fullstendig referanse for mobilmiljøkonfigurasjon
+- **[Mobildistribusjon](../deployment/mobile.md)** -- Full veiledning for bygging, innsending og distribusjon av mobilapper
+- **[Miljøvariabler](../setup/environment-variables.md)** -- Fullstendig referanse for mobilmiljøkonfigurasjon

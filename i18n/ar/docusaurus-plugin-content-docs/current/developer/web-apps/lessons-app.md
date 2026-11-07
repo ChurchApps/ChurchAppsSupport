@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "إعداد محرر الدروس LessonsApp المبني بـ Next.js محلياً على Node.js 22+، وربطه بواجهة LessonsApi محلية، وفهم البناء والنشر عبر S3 وCloudFront."
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ LessonsApp هو تطبيق إدارة محتوى الدروس الخاص بمو�
 <div class="prereqs">
 <h4>قبل أن تبدأ</h4>
 
-- ثبّت **Node.js 22+** و**Git** -- راجع [المتطلبات الأساسية](../setup/prerequisites)
-- اضبط نقطة وصول واجهة برمجة التطبيقات (LessonsApi المحلية) -- راجع [متغيرات البيئة](../setup/environment-variables)
+- ثبّت **Node.js 22+** و**Git** -- راجع [المتطلبات الأساسية](../setup/prerequisites.md)
+- اضبط نقطة وصول واجهة برمجة التطبيقات (LessonsApi المحلية) -- راجع [متغيرات البيئة](../setup/environment-variables.md)
 
 </div>
 
@@ -81,5 +82,5 @@ npm run dev
 3. يُطلق إبطال CloudFront لتقديم النسخة الجديدة
 
 :::tip
-للاطلاع على تعليمات النشر التفصيلية، راجع دليل [نشر تطبيقات الويب](../deployment/web-apps).
+للاطلاع على تعليمات النشر التفصيلية، راجع دليل [نشر تطبيقات الويب](../deployment/web-apps.md).
 :::

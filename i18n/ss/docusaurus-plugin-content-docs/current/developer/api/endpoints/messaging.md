@@ -1,5 +1,6 @@
 ---
 title: "Ema-Endpoint E-Messaging"
+description: "Incwadzi yemaendpoint e-ChurchApps messaging: tinkhulumo, imitsetfo yekufinyelela kumanothi, imiyalezo yocingo, tifomu temaimeyili, tisaziso, nemadivayisi."
 ---
 
 # Ema-Endpoint E-Messaging
@@ -163,7 +164,7 @@ Yandzisa i-CRUD levamile. I-base class iniketa i-POST `/` (akha nobe buyeketa, a
 
 Umkhondvo losisekelo: `/messaging/connections`
 
-Iphatsa kuxhumana kwe-WebSocket/sikhatsi lesiphila kwe-chat, tinkhulumo temacembu, imilayeto lengasese, kanye nekusakaza lokuphila. Buka [Real-time Architecture](../../realtime) kuprotocol lephelele.
+Iphatsa kuxhumana kwe-WebSocket/sikhatsi lesiphila kwe-chat, tinkhulumo temacembu, imilayeto lengasese, kanye nekusakaza lokuphila. Buka [Real-time Architecture](../../realtime.md) kuprotocol lephelele.
 
 | Inchubo | Umkhondvo | Kutivakalisa | Imvumo | Incazelo |
 |--------|------|------|------------|-------------|
@@ -335,9 +336,9 @@ Ilandzelela simo sekuletfulwa kwemilayeto letfunyelwe (SMS, tatiso letiphushiwe,
 
 ## Emakhasi Lahlobene
 
-- [Real-time Architecture](../../realtime) -- Protocol ye-WebSocket, kubhaliswa kwemakamelo, kanye nesifanekiso lesihlangene sekuletfulwa
-- [Web Push Notifications](../../web-push) -- Kubhaliswa kwe-push yewebhu kanye nekuletfulwa
-- [Membership Endpoints](./membership) -- Bantfu, emacembu, ema-role, kanye nebunikati basisekelo
-- [Attendance Endpoints](./attendance) -- Kulandzelela service kanye nekuvakasha
-- [Authentication & Permissions](./authentication) -- Inchubo yekungena, JWT, OAuth, sifanekiso semvumo
-- [Module Structure](../module-structure) -- Sifanekiso sekuhlelwa kwekhodi
+- [Real-time Architecture](../../realtime.md) -- Protocol ye-WebSocket, kubhaliswa kwemakamelo, kanye nesifanekiso lesihlangene sekuletfulwa
+- [Web Push Notifications](../../web-push.md) -- Kubhaliswa kwe-push yewebhu kanye nekuletfulwa
+- [Membership Endpoints](./membership.md) -- Bantfu, emacembu, ema-role, kanye nebunikati basisekelo
+- [Attendance Endpoints](./attendance.md) -- Kulandzelela service kanye nekuvakasha
+- [Authentication & Permissions](./authentication.md) -- Inchubo yekungena, JWT, OAuth, sifanekiso semvumo
+- [Module Structure](../module-structure.md) -- Sifanekiso sekuhlelwa kwekhodi

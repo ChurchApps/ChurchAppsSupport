@@ -1,5 +1,6 @@
 ---
 title: "Administration af betalingsmetoder"
+description: "Tilføj, gennemgå og fjern gemte kort i fanen Administrer i B1 Mobiles givningssektion, så gentagne gaver går hurtigere uden at indtaste kortoplysninger igen."
 ---
 
 # Administration af betalingsmetoder
@@ -13,7 +14,7 @@ Fanen **Administrer** i giveldes afsnittet lader dig se og administrere dine gem
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [log ind](../getting-started/logging-in) på din konto
+- [Installer B1 Mobile](../getting-started/installing.md) og [log ind](../getting-started/logging-in.md) på din konto
 
 </div>
 
@@ -31,7 +32,7 @@ For at tilføje et nyt kort:
 4. Enter dine kortdetaljer. Oplysningerne sendes sikkert til **Stripe** til behandling.
 5. Når det er gemt, vil det nye kort vises på din liste over betalingsmetoder.
 
-Dit gemte kort vil derefter være tilgængelige som betalingsmulighed næste gang du [foretager en donation](./making-donations) fra fanen **Donér**.
+Dit gemte kort vil derefter være tilgængelige som betalingsmulighed næste gang du [foretager en donation](./making-donations.md) fra fanen **Donér**.
 
 ## Fjernelse af en betalingsmetode
 
@@ -44,7 +45,7 @@ Hvis du ikke længere ønsker et kort på fil, kan du fjerne det fra fanen **Adm
 Kortet vil ikke længere vises som betalingsmulighed når du foretager en donation.
 
 :::info
-Fjernelse af en betalingsmetode påvirker ikke eventuelle tidligere donationer. Din [donationshistorik](./donation-history) forbliver uændret.
+Fjernelse af en betalingsmetode påvirker ikke eventuelle tidligere donationer. Din [donationshistorik](./donation-history.md) forbliver uændret.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Bevar mindst en betalingsmetode gemt til hurtig giver. På denne måde kan du br
 
 ## Relaterede artikler
 
-- [Foretage en donation](./making-donations) -- Lær hvordan du foretager en gave ved hjælp af en gemt betalingsmetode
-- [Donationshistorik](./donation-history) -- Se din giveldes opsummering og tidligere donationer
+- [Foretage en donation](./making-donations.md) -- Lær hvordan du foretager en gave ved hjælp af en gemt betalingsmetode
+- [Donationshistorik](./donation-history.md) -- Se din giveldes opsummering og tidligere donationer

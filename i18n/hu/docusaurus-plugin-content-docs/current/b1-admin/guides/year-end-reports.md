@@ -1,5 +1,6 @@
 ---
 title: "Útmutató: Éves adományozási jelentések készítése"
+description: "Az év adományrekordjainak lezárása a B1 Admin-ban, alapok adóbeállításainak ellenőrzése, és adólevonható adománykimutatások készítése minden adakozónak."
 ---
 
 # Éves adományozási jelentések készítése

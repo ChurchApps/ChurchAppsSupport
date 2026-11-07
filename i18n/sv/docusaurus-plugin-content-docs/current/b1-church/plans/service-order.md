@@ -1,5 +1,7 @@
 ---
-title: "Tjänsteordning"
+title: "Gudstjänstordning i B1.church-appen"
+sidebar_label: "Tjänsteordning"
+description: "Visa en plans gudstjänstordning i B1.church-appen, med kumulativ tidsåtgång, sånglyriker, tonartsbyte och lektionsförhandsvisningar för ditt team."
 ---
 
 # Tjänsteordning

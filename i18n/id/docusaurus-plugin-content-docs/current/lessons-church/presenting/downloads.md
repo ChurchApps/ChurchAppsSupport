@@ -1,5 +1,6 @@
 ---
 title: "Unduhan dan Materi"
+description: "Temukan dan unduh lembar aktivitas, panduan pemimpin, dan PDF yang dilampirkan pada pelajaran, studi, atau program Lessons.church untuk kelas Anda."
 ---
 
 # Unduhan dan Materi

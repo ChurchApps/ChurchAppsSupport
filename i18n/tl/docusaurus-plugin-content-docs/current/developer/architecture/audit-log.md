@@ -1,5 +1,6 @@
 ---
 title: "Audit Log"
+description: "Sakop ang audit log ng API na nagtatala ng bawat pagbabago ng user sa lahat ng module, at kung paano maibabalik ang import batch row by row sa B1 Admin."
 ---
 
 # Audit Log

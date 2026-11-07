@@ -1,5 +1,6 @@
 ---
 title: "Meddelelser"
+description: "Opsæt push-advarsler til B1 Mobile-appen, og vis, åbn og ryd dine kirkenotifikationer for beskeder, grupper og frivilligt arbejde."
 ---
 
 # Meddelelser
@@ -13,7 +14,7 @@ B1 Mobile bruger push-meddelelser til at holde dig informeret om, hvad der sker 
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [log ind](../getting-started/logging-in) på din konto
+- [Installer B1 Mobile](../getting-started/installing.md) og [log ind](../getting-started/logging-in.md) på din konto
 - Tillad meddelelser for B1 Mobile i dine enhedsindstillinger
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile bruger push-meddelelser til at holde dig informeret om, hvad der sker 
 
 Meddelelser kan dække en række aktiviteter, herunder:
 
-- **Meddelelser** -- Når nogen sender dig en [privat meddelelse](./messaging).
-- **Gruppeaktivitet** -- Opdateringer, indlæg og samtaler fra [grupper](../groups/) du tilhører.
+- **Meddelelser** -- Når nogen sender dig en [privat meddelelse](./messaging.md).
+- **Gruppeaktivitet** -- Opdateringer, indlæg og samtaler fra [grupper](../groups/index.md) du tilhører.
 - **Tjeneste tildelte opgaver** -- Når du er tildelt en [plan](../serving/viewing-plans.md) eller når din tildeling status ændres.
 - **Andre opdateringer** -- Generelle bekendtgørelser og aktivitet, der er relevant for dig.
 

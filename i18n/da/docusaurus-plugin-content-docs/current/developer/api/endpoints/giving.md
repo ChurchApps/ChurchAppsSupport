@@ -1,5 +1,6 @@
 ---
 title: "Giveldes slutpunkter"
+description: "Reference for Giving-API-endpoints i ChurchApps: donationer, batches, gateways, abonnementer og betalingsmetoder, med godkendelses- og tilladelsesregler."
 ---
 
 # Giveldes slutpunkter
@@ -57,6 +58,6 @@ Administrerer betalings gateway konfigurationer (Stripe, PayPal osv). Ingen base
 
 ## Relaterede sider
 
-- [Medlemskab slutpunkter](./membership) — Mennesker, kirker, grupper, roller og tilladelser
-- [Godkendelse & Tilladelser](./authentication) -- Login flow, JWT, OAuth, tilladels model
-- [Modul struktur](../module-structure) -- Kode organiserings mønstre
+- [Medlemskab slutpunkter](./membership.md) — Mennesker, kirker, grupper, roller og tilladelser
+- [Godkendelse & Tilladelser](./authentication.md) -- Login flow, JWT, OAuth, tilladels model
+- [Modul struktur](../module-structure.md) -- Kode organiserings mønstre

@@ -1,5 +1,6 @@
 ---
 title: "Bläddra bland grupper"
+description: "Bläddra bland din församlings offentliga grupper på B1.church efter kategori, och granska mötestider, platser och beskrivningar på varje kort för att hitta en bra passform."
 ---
 
 # Bläddra bland grupper

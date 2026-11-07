@@ -1,5 +1,7 @@
 ---
-title: "Quyên góp"
+title: "Dâng hiến trực tuyến trong B1.church"
+sidebar_label: "Quyên góp"
+description: "Dâng hiến cho hội thánh trực tuyến trên B1.church mà không cần tài khoản, hoặc đăng nhập để quản lý khoản dâng định kỳ, phương thức thanh toán và sao kê."
 ---
 
 # Quyên góp

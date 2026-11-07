@@ -1,5 +1,6 @@
 ---
 title: "La página Mi página"
+description: "Muestra lo que la página Yo de la app B1 en el portal de miembros reúne en una sola pantalla: próximos servicios, eventos e inscripciones, además de hogar, grupos, donaciones, formularios, asistencia y bandeja de entrada."
 ---
 
 # La página Mi página
@@ -31,7 +32,7 @@ Si no has iniciado sesión, verás "Inicia sesión para ver tu semana" y un bot�
 La sección **Próximamente** muestra tus próximos tres elementos en orden de fecha, cada uno con una etiqueta de tipo. Si tienes más, toca **Todo lo próximo** para ver la lista completa, y **Volver a Me** para regresar.
 
 - **Servicio** -- Tus posiciones de voluntariado en los planes de servicio próximos, con la fecha y la hora de inicio del servicio en el que sirves (la hora en que se necesita a tu equipo cuando el plan tiene varios horarios de servicio, o solo la fecha si el plan no tiene horarios). Toca una para abrir el plan.
-- **Inscripción** -- Eventos en los que te has [inscrito](../events/registering). Toca para ir a tus [inscripciones](../events/my-registrations).
+- **Inscripción** -- Eventos en los que te has [inscrito](../events/registering.md). Toca para ir a tus [inscripciones](../events/my-registrations.md).
 - **Evento** -- Próximos eventos de los grupos a los que perteneces. Toca uno para abrir los eventos del grupo.
 
 Si un evento o una inscripción tiene una foto, aparece una pequeña miniatura al inicio de la fila.
@@ -66,7 +67,7 @@ La sección **Solicitudes e inscripciones** muestra cuántas inscripciones a eve
 
 Si tu iglesia tiene salones o recursos reservables, aparecen dos enlaces más:
 
-- **Solicitar un evento** -- Pide reservar un evento con los salones y el equipo que necesitas. Consulta [Solicitar eventos y salones](../events/requesting-events).
+- **Solicitar un evento** -- Pide reservar un evento con los salones y el equipo que necesitas. Consulta [Solicitar eventos y salones](../events/requesting-events.md).
 - **Mis solicitudes** -- Consulta el estado de tus solicitudes y cancela las pendientes.
 
 Si tu iglesia no ha configurado salones o recursos, estos enlaces están ocultos.
@@ -77,8 +78,8 @@ La sección **Bandeja de entrada** muestra tus dos notificaciones más recientes
 
 ## Artículos relacionados
 
-- [Navegar por B1App](./navigating) -- La estructura del portal de miembros
-- [Solicitar eventos y salones](../events/requesting-events) -- Envía y da seguimiento a las solicitudes de salones y recursos
-- [Mis inscripciones](../events/my-registrations) -- Administra tus inscripciones a eventos
-- [Inscripción de voluntarios](../serving/volunteer-signup) -- Cómo funcionan las asignaciones de servicio
-- [Registro de entrada propio](../checkin/self-checkin) -- Cómo se registra tu asistencia
+- [Navegar por B1App](./navigating.md) -- La estructura del portal de miembros
+- [Solicitar eventos y salones](../events/requesting-events.md) -- Envía y da seguimiento a las solicitudes de salones y recursos
+- [Mis inscripciones](../events/my-registrations.md) -- Administra tus inscripciones a eventos
+- [Inscripción de voluntarios](../serving/volunteer-signup.md) -- Cómo funcionan las asignaciones de servicio
+- [Registro de entrada propio](../checkin/self-checkin.md) -- Cómo se registra tu asistencia

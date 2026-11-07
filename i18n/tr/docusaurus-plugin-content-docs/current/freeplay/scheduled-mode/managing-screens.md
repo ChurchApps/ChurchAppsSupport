@@ -1,5 +1,6 @@
 ---
 title: "Ekranları ve Grupları Yönetme"
+description: "Hangi FreePlay TV'lerin çevrimiçi ve pazar için hazır olduğunu kontrol edin; ardından ekran ayarlarını düzenleyin ve FreePlay Admin'de tek takvimi paylaşan gruplar oluşturun."
 ---
 
 # Ekranları ve Grupları Yönetme
@@ -14,7 +15,7 @@ FreePlay Admin'deki **Ekranlar** sayfası, kilisenize eşleştirilmiş her TV'yi
 <h4>Başlamadan Önce</h4>
 
 - [admin.freeplay.church](https://admin.freeplay.church) adresinden FreePlay Admin'e oturum açın
-- [En az bir ekran eşleştirin](./pairing-a-screen)
+- [En az bir ekran eşleştirin](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Takvimini tarayıcınızda oynatmak için **Sun**'a, ayarlarını değiştirmek 
 
 Ekran sayfasını açmak için ekranın etiketine tıklayın. Sol tarafta şunlar bulunur:
 
-- **Tarayıcıda sun** - Bu ekranın takvimini tarayıcınızda tam ekran oynatır; TV'de göründüğü şekliyle. Bkz. [Tarayıcıdan Sunum](./scheduled-playback#presenting-from-a-browser)
+- **Tarayıcıda sun** - Bu ekranın takvimini tarayıcınızda tam ekran oynatır; TV'de göründüğü şekliyle. Bkz. [Tarayıcıdan Sunum](./scheduled-playback.md#presenting-from-a-browser)
 - **Düzenle** - Etiketi, grubu veya modu değiştirin
 - **Diğer** > **Eşleştirmeyi kaldır** - TV'nin bağlantısını kesin. TV yeniden bir eşleştirme kodu göstermeye başlar
 
@@ -93,6 +94,6 @@ Bir grubu sildiğinizde o grubun planı da silinir. Bu gruptaki ekranlar, siz on
 
 ## İlgili Makaleler
 
-- **[Bir Ekran Eşleştirme](./pairing-a-screen)** - Yeni bir TV ekleyin
-- **[Takvimi Planlama](./scheduling-the-calendar)** - Her grubun ne oynattığını ve varsayılan döngüsünü belirleyin
-- **[TV'de Planlı Oynatma](./scheduled-playback)** - "Şu tarihe kadar hazır" tarihinin TV'nin kendisinde ne anlama geldiğini öğrenin
+- **[Bir Ekran Eşleştirme](./pairing-a-screen.md)** - Yeni bir TV ekleyin
+- **[Takvimi Planlama](./scheduling-the-calendar.md)** - Her grubun ne oynattığını ve varsayılan döngüsünü belirleyin
+- **[TV'de Planlı Oynatma](./scheduled-playback.md)** - "Şu tarihe kadar hazır" tarihinin TV'nin kendisinde ne anlama geldiğini öğrenin

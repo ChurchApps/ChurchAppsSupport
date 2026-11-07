@@ -1,5 +1,6 @@
 ---
 title: "Sănătatea grupurilor"
+description: "Verificați sănătatea grupurilor în B1 Admin: tabel pe 90 de zile cu membri, înscrieri, plecări, fluctuație și prezență medie, pentru grupuri care cer atenție."
 ---
 
 # Sănătatea grupurilor
@@ -13,8 +14,8 @@ Tabloul de bord Sănătatea grupurilor vă oferă o imagine de ansamblu asupra m
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Aveți nevoie de cel puțin câteva grupuri cu membri pentru a vedea date relevante. Consultați [Crearea grupurilor](creating-groups).
-- Datele despre prezență sunt preluate din sesiunile înregistrate. Consultați secțiunea [Prezență](../attendance/).
+- Aveți nevoie de cel puțin câteva grupuri cu membri pentru a vedea date relevante. Consultați [Crearea grupurilor](./creating-groups.md).
+- Datele despre prezență sunt preluate din sesiunile înregistrate. Consultați secțiunea [Prezență](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Făcând clic pe numele unui grup, ajungeți direct la pagina de detalii a grupu
 
 ## Articole conexe
 
-- [Crearea grupurilor](creating-groups): configurarea grupurilor
-- [Membrii grupului](group-members): gestionarea apartenenței la grup
-- [Înregistrarea prezenței](../attendance/tracking-attendance): înregistrarea sesiunilor de prezență care alimentează acest tabel de bord
+- [Crearea grupurilor](./creating-groups.md): configurarea grupurilor
+- [Membrii grupului](./group-members.md): gestionarea apartenenței la grup
+- [Înregistrarea prezenței](../attendance/tracking-attendance.md): înregistrarea sesiunilor de prezență care alimentează acest tabel de bord

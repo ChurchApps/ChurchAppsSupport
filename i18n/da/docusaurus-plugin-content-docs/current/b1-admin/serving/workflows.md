@@ -1,5 +1,6 @@
 ---
 title: "Workflows"
+description: "Byg Kanban-tavler i B1 Admin til at guide personer gennem opfølgning med automatiske e-mails, sms'er og triggere, der tilføjer personer automatisk."
 ---
 
 # Workflows
@@ -200,7 +201,7 @@ Brug disse til at spotte flaskehalse -- for eksempel et trin, hvor kort hober si
 ## Relaterede artikler
 
 - [Opgaver](./tasks.md) -- de individuelle handlingspunkter, som workflow-kort er bygget på
-- [Automatiseringer](./automations.md) -- opret tilbagevendende opgaver på et skema
+- [Automatiseringer](./workflows.md) -- opret tilbagevendende opgaver på et skema
 - [Formularer](../forms/index.md) -- byg de formularer, der kan udløse workflows
 - [Grupper](../groups/index.md) -- de grupper, en "Tilføj til gruppe"-handling kan placere personer i
 - [Roller & tilladelser](../settings/roles-permissions.md) -- kontroller, hvem der kan se, redigere og administrere workflows

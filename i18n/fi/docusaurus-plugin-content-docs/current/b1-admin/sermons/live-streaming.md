@@ -1,5 +1,7 @@
 ---
-title: "Live Streaming"
+title: "Suoratoiston ajat ja asetukset B1 Adminissa"
+sidebar_label: "Live Streaming"
+description: "Ajasta viikoittaiset tai kertaluonteiset suoratoistot, aseta chatin ja videon aikaistus, yhdistä YouTube-kanava ja ratkaise upotusongelmat B1 Adminissa."
 ---
 
 # Live Streaming
@@ -19,7 +21,7 @@ Sivu Live Stream Times mahdollistaa kirkon striimausaikataulun määrittämisen,
 
 - Tarvitset käyttöoikeuden **contentApi.streamingServices.edit**. Katso [Roolit ja käyttöoikeudet](../settings/roles-permissions.md), jos sinulla ei ole pääsyä.
 - Pidä YouTube-kanavasi kanavatunnus valmiina, jos aiot käyttää automaattista live-striimausta
-- Lisää vähintään yksi [saarna](managing-sermons) tai pysyvä live-URL striimin lähteeksi
+- Lisää vähintään yksi [saarna](./managing-sermons.md) tai pysyvä live-URL striimin lähteeksi
 
 </div>
 
@@ -80,13 +82,13 @@ Löydät YouTube-kanavatunnuksesi siirtymällä YouTube-kanavasi lisäasetuksiin
 
 ## Värien ja logon mukauttaminen
 
-Live-striimisivusi käyttää verkkosivustosi [Ulkoasu](../website/appearance)-asetuksia:
+Live-striimisivusi käyttää verkkosivustosi [Ulkoasu](../website/appearance.md)-asetuksia:
 
 - Otsikossa käytetään **vaaleaa korostusväriä** tummalla tekstillä.
 - Sivupalkissa käytetään **tummaa korostusväriä** vaalealla tekstillä.
 - **Vaalean taustan logosi** näkyy striimaussivulla. Käytä kuvaa, jonka taustaa on läpinäkyvä ja kuvasuhde 4:1.
 
-Muuttaaksesi näitä siirry kohtaan **Website** ja sitten **Appearance** ja päivitä [Väripaletti](../website/appearance#color-palette) ja [Logo](../website/appearance#logo-and-branding) -asetuksesi.
+Muuttaaksesi näitä siirry kohtaan **Website** ja sitten **Appearance** ja päivitä [Väripaletti](../website/appearance.md#color-palette) ja [Logo](../website/appearance.md#logo-and-branding) -asetuksesi.
 
 ## Striimaajien lisääminen
 
@@ -133,5 +135,5 @@ YouTuben automaattinen kanavan live-striimin upotus voi estyä, jos kanavallasi 
 
 ## Seuraavat vaiheet
 
-- [Saarnojen hallinta](managing-sermons) -- Lisää saarnoja kirjastoosi
-- [Soittolistat](playlists) -- Järjestä saarnat sarjoiksi
+- [Saarnojen hallinta](./managing-sermons.md) -- Lisää saarnoja kirjastoosi
+- [Soittolistat](./playlists.md) -- Järjestä saarnat sarjoiksi

@@ -1,12 +1,13 @@
 ---
 title: "Svetainių maršrutizavimas ir kelios svetainės"
+description: "Kaip B1.church susieja subdomenus ir pasirinktinius domenus su bažnyčia ar antrine svetaine ir kaip Caddy tvarko TLS pasirinktiniams domenams."
 ---
 
 # Svetainių maršrutizavimas ir kelios svetainės
 
 <div class="article-intro">
 
-Viena bažnyčia dabar gali aptarnauti daugiau nei vieną atskirą svetainę, ir kiekviena jų gali veikti `*.b1.church` subdomenu arba visiškai pasirinktiniu, bažnyčios valdomu domenu. Šiame puslapyje aprašomas maršrutizavimo sluoksnis, esantis *po* kūrėju: kaip ateinanti užklausa susiejama su bažnyčia **ir** konkrečia svetaine, kelių svetainių duomenų modelis (`siteId` sentinelė, kuri užtikrina, kad visos anksčiau egzistavusios svetainės veiktų nepakitusios) bei pasirinktinių domenų kraštinė: savarankiškai valdomas Caddy tarpinis serveris EC2 serveryje, kuris nutraukia TLS ir perrašo kiekvieną bažnyčios domeną į jos `*.b1.church` šaltinį. Apie tai, kas atvaizduojama, kai užklausa jau susieta, t. y. puslapių, skyrių ir elementų medį, žr. [Svetainių kūrėjas](./website-builder).
+Viena bažnyčia dabar gali aptarnauti daugiau nei vieną atskirą svetainę, ir kiekviena jų gali veikti `*.b1.church` subdomenu arba visiškai pasirinktiniu, bažnyčios valdomu domenu. Šiame puslapyje aprašomas maršrutizavimo sluoksnis, esantis *po* kūrėju: kaip ateinanti užklausa susiejama su bažnyčia **ir** konkrečia svetaine, kelių svetainių duomenų modelis (`siteId` sentinelė, kuri užtikrina, kad visos anksčiau egzistavusios svetainės veiktų nepakitusios) bei pasirinktinių domenų kraštinė: savarankiškai valdomas Caddy tarpinis serveris EC2 serveryje, kuris nutraukia TLS ir perrašo kiekvieną bažnyčios domeną į jos `*.b1.church` šaltinį. Apie tai, kas atvaizduojama, kai užklausa jau susieta, t. y. puslapių, skyrių ir elementų medį, žr. [Svetainių kūrėjas](./website-builder.md).
 
 </div>
 
@@ -201,7 +202,7 @@ WHERE d.domainName NOT LIKE '%www.%'
 
 ### Dabartinė būsena: statinė konfigūracija, jokios veikimo metu būsenos
 
-Mašina (Windows EC2 už nuolatinio Elastic IP) paleidžia Caddy iš **statinio Caddyfile**. Jame yra on-demand TLS, kurio `ask` nukreiptas į `/membership/domains/authorize`, ir host→šaltinio žemėlapio failas. Jį kas 5 minutes atnaujina suplanuota užduotis iš `/membership/domains/hostmap`, o užduotis baigiasi švelniu `caddy reload`. Konfigūracija išlieka perkrovus be jokios veikimo metu būsenos, todėl nereikia pakartotinio „paruošimo". Nežinomas SNI yra **TLS atmetamas**: sertifikatas nėra išduodamas host'ui, kurį `authorize` atmeta. Autorizuotas, bet dar nesusietas host (naujas domenas sinchronizacijos lange) gauna švarų 404. Nauji domenai tampa maršrutizuojami per ~5 minutes po išsaugojimo, o jų sertifikatai išduodami pirmo kreipimosi metu. Sąranka, eksploatavimas ir praktikoje patikrintos klaidos: [Caddy pasirinktinio domeno tarpinis serveris](../deployment/caddy-proxy).
+Mašina (Windows EC2 už nuolatinio Elastic IP) paleidžia Caddy iš **statinio Caddyfile**. Jame yra on-demand TLS, kurio `ask` nukreiptas į `/membership/domains/authorize`, ir host→šaltinio žemėlapio failas. Jį kas 5 minutes atnaujina suplanuota užduotis iš `/membership/domains/hostmap`, o užduotis baigiasi švelniu `caddy reload`. Konfigūracija išlieka perkrovus be jokios veikimo metu būsenos, todėl nereikia pakartotinio „paruošimo". Nežinomas SNI yra **TLS atmetamas**: sertifikatas nėra išduodamas host'ui, kurį `authorize` atmeta. Autorizuotas, bet dar nesusietas host (naujas domenas sinchronizacijos lange) gauna švarų 404. Nauji domenai tampa maršrutizuojami per ~5 minutes po išsaugojimo, o jų sertifikatai išduodami pirmo kreipimosi metu. Sąranka, eksploatavimas ir praktikoje patikrintos klaidos: [Caddy pasirinktinio domeno tarpinis serveris](../deployment/caddy-proxy.md).
 
 ### Senasis veikimo metu stūmimas: atsarginis kelias, laukia ištrynimo
 
@@ -209,8 +210,8 @@ Mašina (Windows EC2 už nuolatinio Elastic IP) paleidžia Caddy iš **statinio 
 
 ## Susiję puslapiai
 
-- [Caddy pasirinktinio domeno tarpinis serveris](../deployment/caddy-proxy): pati kraštinės mašina, naujos mašinos sąranka, WinSW paslauga, žemėlapio sinchronizacijos užduotis ir eksploatavimo klaidos
-- [Svetainių kūrėjas](./website-builder): puslapių, skyrių ir elementų medis, atvaizdavikliai, tinklaraštis, SEO ir DI generavimas. Tai, kas atvaizduojama, kai užklausa jau susieta su bažnyčia ar svetaine
-- [Turinio galutiniai taškai](../api/endpoints/content): puslapių, blokų, nuorodų ir bendrų stilių REST sąsaja, dabar visa `?siteId=` jautri
-- [B1App](../web-apps/b1-app): Next.js programa, kurioje veikia tarpinė programinė įranga ir `[sdSlug]` maršrutizavimas
-- [Web App diegimas](../deployment/web-apps): kaip B1App diegiama į Vercel
+- [Caddy pasirinktinio domeno tarpinis serveris](../deployment/caddy-proxy.md): pati kraštinės mašina, naujos mašinos sąranka, WinSW paslauga, žemėlapio sinchronizacijos užduotis ir eksploatavimo klaidos
+- [Svetainių kūrėjas](./website-builder.md): puslapių, skyrių ir elementų medis, atvaizdavikliai, tinklaraštis, SEO ir DI generavimas. Tai, kas atvaizduojama, kai užklausa jau susieta su bažnyčia ar svetaine
+- [Turinio galutiniai taškai](../api/endpoints/content.md): puslapių, blokų, nuorodų ir bendrų stilių REST sąsaja, dabar visa `?siteId=` jautri
+- [B1App](../web-apps/b1-app.md): Next.js programa, kurioje veikia tarpinė programinė įranga ir `[sdSlug]` maršrutizavimas
+- [Web App diegimas](../deployment/web-apps.md): kaip B1App diegiama į Vercel

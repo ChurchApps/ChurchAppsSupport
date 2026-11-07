@@ -1,5 +1,7 @@
 ---
-title: "Per iniziare"
+title: "Guida introduttiva a Lessons.church"
+sidebar_label: "Per iniziare"
+description: "Crea il tuo account gratuito Lessons.church, collega la chiesa, configura le aule e programma le prime lezioni. Nessun abbonamento o prova richiesti."
 ---
 
 # Per iniziare

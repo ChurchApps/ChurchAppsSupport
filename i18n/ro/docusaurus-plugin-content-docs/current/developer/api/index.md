@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Explică designul modular monolitic al API-ului ChurchApps, cele șase module de date, stiva tehnologică, porturile și funcțiile Lambda, cu linkuri către documentația de configurare, baze de date, autentificare și endpoint-uri pentru dezvoltatori."
 ---
 
 # API
@@ -52,8 +53,8 @@ Când este implementat în AWS, API-ul rulează ca șase funcții Lambda:
 
 API-ul depinde de două pachete partajate ChurchApps:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Utilitare de bază (DateHelper, ApiHelper etc.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Utilitare pentru serverul Express, inclusiv autentificare, funcții ajutătoare pentru baze de date și integrări AWS
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Utilitare de bază (DateHelper, ApiHelper etc.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Utilitare pentru serverul Express, inclusiv autentificare, funcții ajutătoare pentru baze de date și integrări AWS
 
 :::info
 API-ul utilizează module ES (`"type": "module"` în `package.json`). Asigurați-vă că importurile folosesc sintaxa modulelor ES.
@@ -61,11 +62,11 @@ API-ul utilizează module ES (`"type": "module"` în `package.json`). Asigurați
 
 ## În această secțiune
 
-- **[Configurare locală](./local-setup)** -- Clonați, configurați și rulați API-ul local
-- **[Baza de date](./database)** -- Arhitectura cu o bază de date per modul, scripturi de schemă și modele de acces la date
-- **[Structura modulelor](./module-structure)** -- Controlere, repository-uri, modele și autentificare
-- **[Chei API](./api-keys)** -- Token-uri de acces personale pentru scripturi și conectori
-- **[Aplicații conectate (OAuth)](./connected-apps)** -- Fluxul OAuth multi-tenant pentru aplicații terțe
-- **[Webhook-uri](./webhooks)** -- Trimiterea notificărilor de evenimente către sisteme externe
-- **[Server MCP](./mcp)** -- Endpoint pentru Model Context Protocol, care expune API-ul asistenților AI
-- **[Referință endpoint-uri](./endpoints/)** -- Documentația completă a REST API-ului pentru toate modulele
+- **[Configurare locală](./local-setup.md)** -- Clonați, configurați și rulați API-ul local
+- **[Baza de date](./database.md)** -- Arhitectura cu o bază de date per modul, scripturi de schemă și modele de acces la date
+- **[Structura modulelor](./module-structure.md)** -- Controlere, repository-uri, modele și autentificare
+- **[Chei API](./api-keys.md)** -- Token-uri de acces personale pentru scripturi și conectori
+- **[Aplicații conectate (OAuth)](./connected-apps.md)** -- Fluxul OAuth multi-tenant pentru aplicații terțe
+- **[Webhook-uri](./webhooks.md)** -- Trimiterea notificărilor de evenimente către sisteme externe
+- **[Server MCP](./mcp.md)** -- Endpoint pentru Model Context Protocol, care expune API-ul asistenților AI
+- **[Referință endpoint-uri](./endpoints/index.md)** -- Documentația completă a REST API-ului pentru toate modulele

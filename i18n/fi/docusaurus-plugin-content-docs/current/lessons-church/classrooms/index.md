@@ -1,5 +1,6 @@
 ---
 title: "Luokkahuoneet"
+description: "Luokkahuoneiden määritys ja hallinta Lessons.churchissa: huoneet, ikäryhmät ja vapaaehtoisille suunnatut näkymät opetusaikataulun ylläpitoon."
 ---
 
 # Luokkahuoneet

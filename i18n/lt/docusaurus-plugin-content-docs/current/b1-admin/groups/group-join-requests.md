@@ -1,5 +1,6 @@
 ---
 title: "Grupių prisijungimo prašymai"
+description: "Peržiūrėkite ir tvirtinkite grupių prisijungimo užklausas B1 Admin, raskite laukiančias kaip vadovas ar administratorius ir nurodykite atmetimo priežastį."
 ---
 
 # Grupių prisijungimo prašymai

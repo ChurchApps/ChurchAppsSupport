@@ -1,5 +1,7 @@
 ---
-title: "Samfund"
+title: "Fællesskabets medlemsoversigt i B1.church"
+sidebar_label: "Samfund"
+description: "Søg i din kirkes medlemsoversigt i B1.church efter navn eller gruppe, se profiler og find, hvor de nu pensionerede Timeline-opdateringer er."
 ---
 
 # Samfund
@@ -26,5 +28,5 @@ De medlemmer og oplysninger, der er synlige for dig i registeret, afhænger af d
 :::
 
 :::tip
-Brug samfundsfunktionerne sammen med [Grupper](../groups/) for at blive involveret i din kirke hele ugen.
+Brug samfundsfunktionerne sammen med [Grupper](../groups/index.md) for at blive involveret i din kirke hele ugen.
 :::

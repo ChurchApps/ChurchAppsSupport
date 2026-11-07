@@ -1,5 +1,6 @@
 ---
 title: "Ajout de visiteurs"
+description: "Ajoutez un enfant en visite, un proche ou un ami à un foyer sur la borne B1 Checkin, puis attribuez des groupes et terminez l'enregistrement."
 ---
 
 # Ajout de visiteurs
@@ -13,8 +14,8 @@ Si quelqu'un accompagne votre famille en visite et doit s'enregistrer avec votre
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Recherchez votre famille](./looking-up-members) et sélectionnez un membre dans les résultats de recherche
-- Soyez sur l'[écran de vérification du foyer](./household-review) où vous pouvez voir les membres de votre famille
+- [Recherchez votre famille](./looking-up-members.md) et sélectionnez un membre dans les résultats de recherche
+- Soyez sur l'[écran de vérification du foyer](./household-review.md) où vous pouvez voir les membres de votre famille
 
 </div>
 
@@ -36,8 +37,8 @@ Si le nom du visiteur correspond à une personne déjà dans le système qui n'e
 
 Une fois le visiteur affiché dans la liste de votre foyer, vous pouvez :
 
-- **Déployer sa carte** et lui [assigner un groupe](./group-assignment), comme pour tout autre membre de la famille.
-- **[Enregistrer](./completing-checkin)** l'ensemble du foyer, visiteur compris.
+- **Déployer sa carte** et lui [assigner un groupe](./group-assignment.md), comme pour tout autre membre de la famille.
+- **[Enregistrer](./completing-checkin.md)** l'ensemble du foyer, visiteur compris.
 
 ## Annulation
 
@@ -49,4 +50,4 @@ L'ajout d'un visiteur au kiosque crée un enregistrement de personne dans la bas
 
 ## Prochaine étape
 
-Après avoir ajouté des visiteurs et [assigné des groupes](./group-assignment) selon les besoins, vous êtes prêt à [finaliser l'enregistrement](./completing-checkin).
+Après avoir ajouté des visiteurs et [assigné des groupes](./group-assignment.md) selon les besoins, vous êtes prêt à [finaliser l'enregistrement](./completing-checkin.md).

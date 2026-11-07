@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (elavult)"
+description: "Ismerteti, hogy a natív B1 Mobile alkalmazás elavult, és a tagoknak és adminisztrátoroknak a B1.church PWA-t kell használniuk helyette, a régi oldalak referenciaként megmaradtak."
 ---
 
 # B1 Mobile (elavult)
@@ -40,16 +41,16 @@ A B1 Mobile push-értesítéseket is támogatott, hogy ne maradjon le a gyüleke
 
 ## További információk
 
-- [Első lépések](./getting-started/) -- Az alkalmazás telepítése, fiók létrehozása és a gyülekezet kiválasztása.
-- [Irányítópult](./dashboard/) -- A személyre szabott kezdőképernyő megismerése.
-- [Csoportok](./groups/) -- Kapcsolatban maradás a gyülekezeti csoportjaival.
-- [Adakozás](./giving/) -- Adományozás a telefonjáról.
-- [Események](./events/) -- Böngészés a közelgő gyülekezeti események között és regisztráció rájuk.
-- [Bejelentkezés](./checkin/) -- Bejelentkezés istentiszteletekre és eseményekre.
-- [Szolgálat](./serving/) -- Szolgálati tervek, feladatok és önkéntes lehetőségek megtekintése.
-- [Közösség](./community/) -- Tagjegyzék böngészése és üzenetküldés.
-- [Tartalom](./content/) -- Igehirdetések, Biblia, napi ige és leckék (a leckék képernyője elavult — lásd [FreePlay](/docs/freeplay/)).
-- [Profil](./profile/) -- Profil és fiókbeállítások kezelése.
+- [Első lépések](./getting-started/index.md) -- Az alkalmazás telepítése, fiók létrehozása és a gyülekezet kiválasztása.
+- [Irányítópult](./dashboard/index.md) -- A személyre szabott kezdőképernyő megismerése.
+- [Csoportok](./groups/index.md) -- Kapcsolatban maradás a gyülekezeti csoportjaival.
+- [Adakozás](./giving/index.md) -- Adományozás a telefonjáról.
+- [Események](./events/index.md) -- Böngészés a közelgő gyülekezeti események között és regisztráció rájuk.
+- [Bejelentkezés](./checkin/index.md) -- Bejelentkezés istentiszteletekre és eseményekre.
+- [Szolgálat](./serving/index.md) -- Szolgálati tervek, feladatok és önkéntes lehetőségek megtekintése.
+- [Közösség](./community/index.md) -- Tagjegyzék böngészése és üzenetküldés.
+- [Tartalom](./content/index.md) -- Igehirdetések, Biblia, napi ige és leckék (a leckék képernyője elavult — lásd [FreePlay](/docs/freeplay/)).
+- [Profil](./profile/index.md) -- Profil és fiókbeállítások kezelése.
 
 :::info
 A B1 Mobile helyét a [B1.church PWA](../b1-church/getting-started/installing-pwa.md) vette át. Az új telepítéseknél a PWA-t kell használni, mert a natív alkalmazás már nem frissül.

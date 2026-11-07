@@ -1,5 +1,7 @@
 ---
-title: "Accesso"
+title: "Accesso a B1 Mobile"
+sidebar_label: "Accesso"
+description: "Accedi all'app B1 Mobile con il tuo account ChurchApps, registra un nuovo account o recupera una password dimenticata con un codice a 6 cifre."
 ---
 
 # Accesso
@@ -13,7 +15,7 @@ B1 Mobile utilizza lo stesso account ChurchApps che usi su B1.church e altri pro
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- [Installa B1 Mobile](./installing) sul tuo dispositivo iOS o Android
+- [Installa B1 Mobile](./installing.md) sul tuo dispositivo iOS o Android
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile utilizza lo stesso account ChurchApps che usi su B1.church e altri pro
 3. Inserisci il tuo **indirizzo email** e **password**.
 4. Tocca **Sign In**.
 
-Dopo l'accesso, verrai portato al [dashboard](../dashboard/). Se non hai ancora selezionato una chiesa, ti verrà chiesto di cercare e selezionarne una.
+Dopo l'accesso, verrai portato al [dashboard](../dashboard/index.md). Se non hai ancora selezionato una chiesa, ti verrà chiesto di cercare e selezionarne una.
 
 ## Creazione di un nuovo account
 

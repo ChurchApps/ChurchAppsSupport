@@ -1,5 +1,7 @@
 ---
-title: "Registrácia na udalosti"
+title: "Registrácia na udalosti v B1 Mobile"
+sidebar_label: "Registrácia na udalosti"
+description: "Prihláste seba a členov rodiny na cirkevné udalosti z aplikácie B1 Mobile, skontrolujte zostávajúcu kapacitu a potvrďte prihlásenie v troch krokoch."
 ---
 
 # Registrácia na udalosti
@@ -13,7 +15,7 @@ Zaregistrujte sa na cirkevné udalosti priamo v aplikácii B1 Mobile pomocou jed
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- [Nainštalujte B1 Mobile](../getting-started/installing) a [sa prihláste](../getting-started/logging-in) do svojho účtu
+- [Nainštalujte B1 Mobile](../getting-started/installing.md) a [sa prihláste](../getting-started/logging-in.md) do svojho účtu
 - Udalosť musí mať povolenú registráciu a registračné obdobie musí byť otvorené
 
 </div>
@@ -50,4 +52,4 @@ Ak potrebujete registráciu zrušiť, kontaktujte správcu vašej cirkvi. Ten m�
 ## Súvisiace články
 
 - [Prehľad udalostí](./index.md) -- Prehliadajte udalosti s registráciou na mobile
-- [Zobrazenie plánov](../serving/viewing-plans) -- Pozrite si svoj rozpis služieb
+- [Zobrazenie plánov](../serving/viewing-plans.md) -- Pozrite si svoj rozpis služieb

@@ -1,5 +1,6 @@
 ---
 title: "Catatan"
+description: "Tinjau catatan perawatan pastoral, tindak lanjut, dan perencanaan dari orang, grup, acara, dan kartu alur kerja dalam satu daftar B1 Admin, dari yang terbaru."
 ---
 
 # Catatan

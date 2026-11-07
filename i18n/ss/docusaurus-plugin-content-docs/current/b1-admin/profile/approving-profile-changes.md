@@ -1,5 +1,6 @@
 ---
 title: "Kuphasisa Tinguquko Temaprofayili"
+description: "Bheka uphinde uvume ticelo tekushintja iprofayili yelungu ku-B1 Admin, uphinde usethe iQembu Lekuvuma Imininingwane lelitfola tona."
 ---
 
 # Kuphasisa Tinguquko Temaprofayili

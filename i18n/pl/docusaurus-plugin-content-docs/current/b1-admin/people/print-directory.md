@@ -1,5 +1,6 @@
 ---
 title: "Drukuj katalog"
+description: "Wygeneruj do wydruku katalog członków pogrupowany według gospodarstw domowych z B1 Admin, ze zdjęciami, danymi kontaktowymi i urodzinami, w formacie Letter."
 ---
 
 # Drukuj katalog

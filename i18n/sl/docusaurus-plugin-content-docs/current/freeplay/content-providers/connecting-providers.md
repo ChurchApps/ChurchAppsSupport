@@ -1,5 +1,6 @@
 ---
 title: "Povezovanje s ponudniki"
+description: "Poveži FreePlay s ponudnikom vsebine prek QR kode, prijave z e-pošto ali dostopa z enim klikom ter upravljaj ali prekini povezavo v nastavitvah."
 ---
 
 # Povezovanje s ponudniki
@@ -13,7 +14,7 @@ Preden lahko brskate po vsebini ponudnika, se morate nanj povezati. Nekateri pon
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Namestite in zaženite FreePlay -- glejte [Začetek uporabe](../getting-started/)
+- Namestite in zaženite FreePlay -- glejte [Začetek uporabe](../getting-started/index.md)
 - Pripravite daljinski upravljalnik za televizor
 - Pri ponudnikih, ki zahtevajo prijavo, imejte pri roki podatke za prijavo v svoj račun
 
@@ -80,7 +81,7 @@ Za premikanje med poljem za e-poštni naslov, poljem za geslo in gumbom za prija
 
 - **Brskaj po knjižnici** -- Prikaže ali skrije knjižnico vsebine tega ponudnika v stranski vrstici
 - **Samodejno prenesi današnjo lekcijo** -- Uporabi tega ponudnika kot vir današnje lekcije in vnaprej prenese njegove datoteke (prikazano samo pri ponudnikih, ki imajo aktualno lekcijo)
-- **Uporabi za obvestila** -- Izberite mapo pri tem ponudniku, ki se predvaja v zanki pod elementom **Obvestila** v stranski vrstici. Glejte [Obvestila](./announcements)
+- **Uporabi za obvestila** -- Izberite mapo pri tem ponudniku, ki se predvaja v zanki pod elementom **Obvestila** v stranski vrstici. Glejte [Obvestila](./announcements.md)
 - **Preveri posodobitve obvestil** -- Prikaže se, ko je izbrana mapa za obvestila; prenese nove diapozitive in odstrani izbrisane
 - **Prekini povezavo** -- Odstrani povezavo
 
@@ -100,6 +101,6 @@ Prekinitev povezave odstrani shranjeno overitev z vaše naprave. Če se boste ka
 
 ## Sorodni članki
 
-- **[Brskanje in prenašanje vsebine](./browsing-content)** - Krmarjenje po mapah in predvajanje vsebine po povezavi
-- **[Obvestila](./announcements)** - Predvajanje mape diapozitivov v zanki iz povezanega ponudnika
+- **[Brskanje in prenašanje vsebine](./browsing-content.md)** - Krmarjenje po mapah in predvajanje vsebine po povezavi
+- **[Obvestila](./announcements.md)** - Predvajanje mape diapozitivov v zanki iz povezanega ponudnika
 - **[Pregled ponudnikov vsebine](./index.md)** - Ogled vseh razpoložljivih ponudnikov

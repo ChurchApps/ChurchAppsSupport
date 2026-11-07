@@ -1,5 +1,7 @@
 ---
-title: "시작하기"
+title: "B1.church 교인 포털 시작하기"
+sidebar_label: "시작하기"
+description: "교회의 B1.church 사이트를 찾고, 교인 계정을 만들고, 그룹과 헌금부터 체크인과 계획까지 포털에서 제공하는 기능을 확인하세요."
 ---
 
 # B1.church 시작하기

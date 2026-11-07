@@ -1,5 +1,6 @@
 ---
 title: "Revisionslog og fortrydelige batches"
+description: "Dækker API'ets revisionslog, der registrerer alle brugerændringer på tværs af moduler, og hvordan importbatches kan fortrydes række for række i B1 Admin."
 ---
 
 # Revisionslog og fortrydelige batches
@@ -155,6 +156,6 @@ Begge administrationsflader er **under udvikling**. Hensigten er:
 
 ## Relaterede sider
 
-- [Modulstruktur](../api/module-structure): hvordan en controller uden for membership når membership-repositories via `RepoManager`
-- [Donationer](./giving): de donationsskrivestier, der revideres som `sensitive`, selv når de er anonyme
-- [Membership-endepunkter](../api/endpoints/membership): REST-fladen, der bærer `X-Batch-Id` og eksponerer `/auditlogs` og `/batches`
+- [Modulstruktur](../api/module-structure.md): hvordan en controller uden for membership når membership-repositories via `RepoManager`
+- [Donationer](./giving.md): de donationsskrivestier, der revideres som `sensitive`, selv når de er anonyme
+- [Membership-endepunkter](../api/endpoints/membership.md): REST-fladen, der bærer `X-Batch-Id` og eksponerer `/auditlogs` og `/batches`

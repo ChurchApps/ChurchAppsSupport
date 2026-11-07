@@ -1,5 +1,7 @@
 ---
-title: "Doações"
+title: "Doações no App B1 Mobile"
+sidebar_label: "Doações"
+description: "Faça doações no app B1 Mobile, confira suas contribuições do ano e gerencie formas de pagamento salvas. Abas: Visão Geral, Doar, Gerenciar e Histórico."
 ---
 
 # Doações
@@ -24,7 +26,7 @@ A seção de doações está organizada em quatro abas:
 Todas as doações feitas pelo B1 Mobile são processadas com segurança pelo **Stripe**. Suas informações de pagamento são tratadas pela infraestrutura segura do Stripe e nunca são armazenadas nos servidores da ChurchApps. Você pode doar com tranquilidade, sabendo que seus dados financeiros estão protegidos.
 
 :::info
-O administrador da sua igreja configura os fundos disponíveis e o processamento de pagamentos pelo [B1 Admin](../../b1-admin/). Se você não vir uma opção de doação no aplicativo, sua igreja pode ainda não ter configurado este recurso.
+O administrador da sua igreja configura os fundos disponíveis e o processamento de pagamentos pelo [B1 Admin](../../b1-admin/index.md). Se você não vir uma opção de doação no aplicativo, sua igreja pode ainda não ter configurado este recurso.
 :::
 
 ## O Que Você Pode Fazer
@@ -38,6 +40,6 @@ Veja o que você pode fazer na seção de doações:
 
 ## Próximos Passos
 
-- [Fazendo uma Doação](./making-donations) -- Saiba como fazer uma oferta pelo aplicativo
-- [Gerenciando Métodos de Pagamento](./managing-payments) -- Adicione ou remova métodos de pagamento salvos
-- [Histórico de Doações](./donation-history) -- Veja o resumo das suas doações e contribuições anteriores
+- [Fazendo uma Doação](./making-donations.md) -- Saiba como fazer uma oferta pelo aplicativo
+- [Gerenciando Métodos de Pagamento](./managing-payments.md) -- Adicione ou remova métodos de pagamento salvos
+- [Histórico de Doações](./donation-history.md) -- Veja o resumo das suas doações e contribuições anteriores

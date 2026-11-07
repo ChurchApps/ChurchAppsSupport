@@ -1,5 +1,6 @@
 ---
 title: "Asennus"
+description: "Valitse paikallinen kehityspolku ChurchAppsin projekteille: etutyö jaettuihin demo-API:ihin tai koko pino paikallisesti MySQL:llä backend-muutoksiin."
 ---
 
 # Asennus
@@ -40,15 +41,15 @@ Tämän lähestymistavan avulla voit aloittaa frontend-muutokset minuuteissa. Se
 
 ### 2. Aja kaikki paikallisesti
 
-Jos sinun täytyy muokata API-koodia tai työskennellä offline-tilassa, voit ajaa koko pinon paikallisesti. Tämä vaatii MySQL 8.0+:n ja lisäasetuksia. Katso yksityiskohtaiset ohjeet oppaasta [API:n paikallinen asennus](../api/local-setup).
+Jos sinun täytyy muokata API-koodia tai työskennellä offline-tilassa, voit ajaa koko pinon paikallisesti. Tämä vaatii MySQL 8.0+:n ja lisäasetuksia. Katso yksityiskohtaiset ohjeet oppaasta [API:n paikallinen asennus](../api/local-setup.md).
 
 ## Aloittaminen
 
 Seuraa näitä sivuja järjestyksessä:
 
-1. **[Esivaatimukset](prerequisites)** -- Asenna tarvittavat työkalut (Node.js, Git, MySQL jne.)
-2. **[Projektin yleiskatsaus](project-overview)** -- Ymmärrä, mitä projekteja on olemassa ja mitä ne tekevät
-3. **[Ympäristömuuttujat](environment-variables)** -- Määritä `.env`-tiedostosi, jotta kaikki yhdistyy toisiinsa
+1. **[Esivaatimukset](./prerequisites.md)** -- Asenna tarvittavat työkalut (Node.js, Git, MySQL jne.)
+2. **[Projektin yleiskatsaus](./project-overview.md)** -- Ymmärrä, mitä projekteja on olemassa ja mitä ne tekevät
+3. **[Ympäristömuuttujat](./environment-variables.md)** -- Määritä `.env`-tiedostosi, jotta kaikki yhdistyy toisiinsa
 
 :::info
 Jokainen ChurchApps-projekti on itsenäinen Git-repositorio. Sinun tarvitsee kloonata vain ne projektit, joita haluat kehittää.

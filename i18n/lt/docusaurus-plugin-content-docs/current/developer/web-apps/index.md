@@ -1,5 +1,6 @@
 ---
 title: "Žiniatinklio programos"
+description: "Trijų ChurchApps žiniatinklio programų (B1 Admin, B1.church, Lessons.church) apžvalga: bendras React ir MUI pagrindas, apphelper paketai ir kūrimo įrankiai."
 ---
 
 # Žiniatinklio programos
@@ -41,7 +42,7 @@ Programos dalijasi vartotojo sąsajos komponentais ir pagalbinėmis funkcijomis 
 | `@churchapps/apphelper-website` | Svetainės / turinio valdymo sistemos komponentai |
 
 :::tip
-Norėdami sužinoti, kaip lokaliai kurti šiuos bendrinamus paketus, žr. [AppHelper](../shared-libraries/app-helper) dokumentaciją.
+Norėdami sužinoti, kaip lokaliai kurti šiuos bendrinamus paketus, žr. [AppHelper](../shared-libraries/app-helper.md) dokumentaciją.
 :::
 
 ## Postinstall skriptas

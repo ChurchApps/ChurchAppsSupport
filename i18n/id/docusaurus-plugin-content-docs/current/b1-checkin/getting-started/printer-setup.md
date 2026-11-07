@@ -1,5 +1,6 @@
 ---
 title: "Pengaturan Printer"
+description: "Atur printer label jaringan untuk kiosk B1 Checkin: temukan di Wi-Fi Anda, pilih, jalankan cetak uji, dan simpan pilihan."
 ---
 
 # Pengaturan Printer
@@ -13,7 +14,7 @@ B1 Church Checkin dapat mencetak label nama dan slip penjemputan orang tua ke pr
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- [Masuk](./logging-in) ke aplikasi B1 Church Checkin dan pilih gereja Anda
+- [Masuk](./logging-in.md) ke aplikasi B1 Church Checkin dan pilih gereja Anda
 - Hubungkan printer label jaringan yang kompatibel ke jaringan Wi-Fi yang sama dengan tablet
 
 </div>
@@ -87,4 +88,4 @@ Jika Anda memindahkan kiosk ke lokasi lain atau mengubah pengaturan jaringan, ke
 
 ## Langkah Selanjutnya
 
-Setelah printer dikonfigurasi, Anda siap untuk mulai melakukan check-in. Lihat [alur kerja check-in](../check-in/) untuk mempelajari seluruh prosesnya, dimulai dengan [memilih layanan](../check-in/selecting-service).
+Setelah printer dikonfigurasi, Anda siap untuk mulai melakukan check-in. Lihat [alur kerja check-in](../check-in/index.md) untuk mempelajari seluruh prosesnya, dimulai dengan [memilih layanan](../check-in/selecting-service.md).

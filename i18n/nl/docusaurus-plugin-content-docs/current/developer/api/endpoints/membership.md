@@ -1,5 +1,6 @@
 ---
 title: "Ledenschapseindpunten"
+description: "Eindpuntreferentie voor de ChurchApps Membership API: personen, gezinnen, groepen, rollen, formulieren en instellingen, met auth- en rechtenregels."
 ---
 
 # Ledenschapseindpunten
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Basispad: `/membership/users`
 
-Zie [Authenticatie en rechten](./authentication) voor eindpunten voor inloggen, registratie en wachtwoordbeheer.
+Zie [Authenticatie en rechten](./authentication.md) voor eindpunten voor inloggen, registratie en wachtwoordbeheer.
 
 | Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
@@ -342,6 +343,6 @@ Basispad: `/membership/clientErrors`
 
 ## Gerelateerde pagina's
 
-- [Authenticatie en rechten](./authentication) — Inlogproces, JWT, OAuth, rechtenmodel
-- [Aanwezigheidseindpunten](./attendance) — Registratie van diensten en bezoeken
-- [Modulestructuur](../module-structure) — Patronen voor de codeorganisatie
+- [Authenticatie en rechten](./authentication.md) — Inlogproces, JWT, OAuth, rechtenmodel
+- [Aanwezigheidseindpunten](./attendance.md) — Registratie van diensten en bezoeken
+- [Modulestructuur](../module-structure.md) — Patronen voor de codeorganisatie

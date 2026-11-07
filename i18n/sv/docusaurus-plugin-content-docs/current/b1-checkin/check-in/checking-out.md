@@ -1,5 +1,6 @@
 ---
 title: "Utcheckning och barnsäkerhet"
+description: "Checka ut barn vid en bemannad B1 Checkin-station med säkerhetskoder, verifierade hämtningspersoner, sökning efter föräldrar, nyutskrift av etiketter och nödutrop."
 ---
 
 # Utcheckning och barnsäkerhet
@@ -14,7 +15,7 @@ Utcheckningen avslutar incheckningen av barn: en förälder visar säkerhetskode
 <h4>Innan du börjar</h4>
 
 - Utcheckning finns på stationer som är inställda på **bemannat** läge i kioskens admininställningar
-- Barnen måste ha blivit [incheckade](./completing-checkin) med en utskriven upphämtningsetikett som innehåller säkerhetskoden
+- Barnen måste ha blivit [incheckade](./completing-checkin.md) med en utskriven upphämtningsetikett som innehåller säkerhetskoden
 - Sidning och nödutskick kräver att din kyrka har en sms-leverantör ansluten i B1 Admin
 
 </div>
@@ -39,7 +40,7 @@ Om ett inskrivet namn matchar någon som är markerad som **Ej godkänd** för h
 När hämtaren är bekräftad trycker du på checka ut. Hämtarens namn sparas i närvaroposten.
 
 :::info
-Betrodda hämtare och personer som inte är godkända hanteras av kyrkans personal på varje persons sida i B1 Admin. Se [Incheckningssäkerhet](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Betrodda hämtare och personer som inte är godkända hanteras av kyrkans personal på varje persons sida i B1 Admin. Se [Incheckningssäkerhet](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Sidning till förälder
@@ -65,6 +66,6 @@ Utskicket går till varje incheckat hushåll för den valda gudstjänsten. Anvä
 
 ## Relaterade artiklar
 
-- [Slutför incheckning](./completing-checkin): var säkerhetskoder och upphämtningsetiketter kommer ifrån
-- [Incheckningssäkerhet](../../b1-admin/attendance/checkin-safety): konfigurera kapacitet, förhållanden, hämtare och kravet på sms-leverantör
-- [Skrivarinställning](../getting-started/printer-setup): konfiguration av etikettskrivare
+- [Slutför incheckning](./completing-checkin.md): var säkerhetskoder och upphämtningsetiketter kommer ifrån
+- [Incheckningssäkerhet](../../b1-admin/attendance/checkin-safety.md): konfigurera kapacitet, förhållanden, hämtare och kravet på sms-leverantör
+- [Skrivarinställning](../getting-started/printer-setup.md): konfiguration av etikettskrivare

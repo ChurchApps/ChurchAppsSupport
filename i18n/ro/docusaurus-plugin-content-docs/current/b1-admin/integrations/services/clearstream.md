@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Conectați Clearstream SMS la B1 Admin prin Zapier: trimiteți SMS-uri la donații noi sau formulare și aduceți răspunsurile primite ca persoane în B1."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Activați Zap-ul. B1 înregistrează webhook-ul pentru donații la activare; ve�
 
 ## Vezi și
 
-- [Text In Church](./text-in-church) — platformă SMS alternativă, cu o structură de configurare similară
-- [Mobile Message](./mobile-message) — pentru bisericile din afara SUA
-- [Zapier (prezentare generală)](../zapier) — partea B1 din fiecare rețetă Zapier
+- [Text In Church](./text-in-church.md) — platformă SMS alternativă, cu o structură de configurare similară
+- [Mobile Message](./mobile-message.md) — pentru bisericile din afara SUA
+- [Zapier (prezentare generală)](../zapier.md) — partea B1 din fiecare rețetă Zapier
 - [Documentația API Clearstream](https://api-docs.clearstream.io/) — pentru integrări personalizate dincolo de aplicația Zapier

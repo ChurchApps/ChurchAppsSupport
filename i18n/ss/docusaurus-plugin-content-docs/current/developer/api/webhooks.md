@@ -1,5 +1,6 @@
 ---
 title: "Ema-Webhook"
+description: "Setha ma-webhook kusuka ku-B1 Admin: bhalisa tikhomba-ndlela, khetsa tiketfo, hlola tisayinelo ze-HMAC, phatsa kuphinda, bese uphindze idatha lehlulekile."
 ---
 
 # Ema-Webhook
@@ -33,7 +34,7 @@ Yendza ku **Settings → Webhooks → New Webhook**. Faka ligama, i-URL yekuya (
 
 ### Nge-API
 
-Tonkhe ema-endpoint asendleleni lesisekelo se-module ye-Membership `/membership/webhooks` futsi adzinga nome i-JWT lesuka kumphatsi welibandla lonemvumo ye-`Settings / Edit`, **nobe [sikhiya se-API](./api-keys) lesakhelwe i-scope ye-`settings:write`**. Tindlela letifanako tiyawemukela kokubili. Yilokhu lokuvumela i-Zapier ne-Make kubhalisa ema-webhook egameni lelibandla nangabe i-Zap nobe i-scenario ivuliwe.
+Tonkhe ema-endpoint asendleleni lesisekelo se-module ye-Membership `/membership/webhooks` futsi adzinga nome i-JWT lesuka kumphatsi welibandla lonemvumo ye-`Settings / Edit`, **nobe [sikhiya se-API](./api-keys.md) lesakhelwe i-scope ye-`settings:write`**. Tindlela letifanako tiyawemukela kokubili. Yilokhu lokuvumela i-Zapier ne-Make kubhalisa ema-webhook egameni lelibandla nangabe i-Zap nobe i-scenario ivuliwe.
 
 ```http
 POST /membership/webhooks

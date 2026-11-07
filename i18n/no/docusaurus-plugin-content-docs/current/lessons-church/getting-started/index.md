@@ -1,5 +1,7 @@
 ---
-title: "Kom i gang"
+title: "Kom i gang med Lessons.church"
+sidebar_label: "Kom i gang"
+description: "Opprett din gratis Lessons.church-konto, koble til kirken din, sett opp klasserom og planlegg de første leksjonene. Ingen abonnement eller prøveperiode kreves."
 ---
 
 # Kom i gang

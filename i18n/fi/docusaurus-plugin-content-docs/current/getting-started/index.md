@@ -1,5 +1,7 @@
 ---
-title: "Aloittaminen"
+title: "Aloittaminen ChurchAppsin kanssa: ensimmäiset 15 minuuttia"
+sidebar_label: "Aloittaminen"
+description: "Luo uusi ChurchApps-tili muutamassa vaiheessa: lisää seurakunnan tiedot, tuo henkilöt B1 Adminiin, kutsu tiimi ja valitse ensimmäinen projekti."
 ---
 
 # Aloittaminen

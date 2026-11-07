@@ -1,5 +1,6 @@
 ---
 title: "Spremljanje udeležbe"
+description: "Pregledujte trende prisotnosti, filtrirajte poročila po kampusu, bogoslužju ali skupini ter izvozite prisotnost skupin na strani Prisotnost v B1 Admin."
 ---
 
 # Spremljanje udeležbe

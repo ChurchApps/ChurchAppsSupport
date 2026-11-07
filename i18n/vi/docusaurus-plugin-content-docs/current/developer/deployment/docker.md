@@ -1,12 +1,13 @@
 ---
 title: "Tự lưu trữ bằng Docker"
+description: "Cài đặt riêng B1 Admin, cổng thành viên, API và stack MySQL trên máy của bạn bằng Docker, rồi nâng cấp và sao lưu bằng lệnh b1."
 ---
 
 # Tự lưu trữ bằng Docker
 
 <div class="article-intro">
 
-Chạy phiên bản B1 Admin, cổng thành viên và trang web B1, API, và cơ sở dữ liệu MySQL riêng của bạn trên bất kỳ máy nào có Docker — máy chủ tại nhà, VPS nhỏ, hoặc máy đặt tại chỗ. Một lệnh để cài đặt, một lệnh để nâng cấp, và mỗi lần nâng cấp đều sao lưu trước. Nếu bạn không muốn tự quản lý máy chủ, hãy xem [Tự lưu trữ trên Railway](./railway-template) để có giải pháp được quản lý sẵn.
+Chạy phiên bản B1 Admin, cổng thành viên và trang web B1, API, và cơ sở dữ liệu MySQL riêng của bạn trên bất kỳ máy nào có Docker — máy chủ tại nhà, VPS nhỏ, hoặc máy đặt tại chỗ. Một lệnh để cài đặt, một lệnh để nâng cấp, và mỗi lần nâng cấp đều sao lưu trước. Nếu bạn không muốn tự quản lý máy chủ, hãy xem [Tự lưu trữ trên Railway](./railway-template.md) để có giải pháp được quản lý sẵn.
 
 </div>
 
@@ -94,10 +95,10 @@ Nếu bạn đã cài đặt trên `localhost` và sau đó muốn đưa nó ra 
 
 Các tính năng này hoạt động giống hệt như trên Railway — cùng các biến môi trường, được đặt trong `.env` thay vì bảng điều khiển Railway:
 
-- **[Email / SMTP](./railway-template#1-email-highly-recommended)** — hướng dẫn từng bước cho Resend, Brevo và Gmail
-- **[Nhiều trang](./railway-template#3-multi-site-multiple-churches-on-one-instance)** — không giới hạn số nhà thờ trên một phiên bản. `/` phục vụ nhà thờ có slug là `DEFAULT_CHURCH_SLUG` (nhà thờ đầu tiên là `church`); trỏ các tên miền bổ sung về máy này và ánh xạ chúng trong **Settings → Domains** của B1Admin
-- **[Quyên góp trực tuyến](./railway-template#4-online-giving-stripe--paypal)** — được cấu hình cho từng nhà thờ trong giao diện quản trị
-- **[Tích hợp tùy chọn](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[Email / SMTP](./railway-template.md#1-email-highly-recommended)** — hướng dẫn từng bước cho Resend, Brevo và Gmail
+- **[Nhiều trang](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** — không giới hạn số nhà thờ trên một phiên bản. `/` phục vụ nhà thờ có slug là `DEFAULT_CHURCH_SLUG` (nhà thờ đầu tiên là `church`); trỏ các tên miền bổ sung về máy này và ánh xạ chúng trong **Settings → Domains** của B1Admin
+- **[Quyên góp trực tuyến](./railway-template.md#4-online-giving-stripe--paypal)** — được cấu hình cho từng nhà thờ trong giao diện quản trị
+- **[Tích hợp tùy chọn](./railway-template.md#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Thông báo đẩy](#push-notifications)** — `WEB_PUSH_*`; trình cài đặt để trống các mục này, nên thông báo đẩy sẽ tắt cho đến khi bạn thêm chúng
 
 Lời mời và các email khác do nhà thờ gửi được bật tự động trên phiên bản tự lưu trữ (dịch vụ được lưu trữ sẵn giới hạn các tính năng này qua bước kiểm duyệt thủ công để bảo vệ uy tín người gửi).
@@ -148,7 +149,7 @@ Ba volume Docker được đặt tên giữ toàn bộ dữ liệu:
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-Với thư viện đa phương tiện lớn, bạn có thể chuyển lưu trữ tệp sang S3 — đặt `FILE_STORE=S3` cùng các biến `AWS_*` được mô tả trong [phần Lưu trữ tệp của hướng dẫn Railway](./railway-template#5-file-storage). Bản sao lưu cơ sở dữ liệu không bao gồm các đối tượng S3; hãy bật tính năng versioning cho bucket đó.
+Với thư viện đa phương tiện lớn, bạn có thể chuyển lưu trữ tệp sang S3 — đặt `FILE_STORE=S3` cùng các biến `AWS_*` được mô tả trong [phần Lưu trữ tệp của hướng dẫn Railway](./railway-template.md#5-file-storage). Bản sao lưu cơ sở dữ liệu không bao gồm các đối tượng S3; hãy bật tính năng versioning cho bucket đó.
 
 ## Cập nhật
 
@@ -187,6 +188,6 @@ Vẫn gặp khó khăn? Hãy mở một issue tại [github.com/ChurchApps/Churc
 
 ## Bài viết liên quan
 
-- **[Tự lưu trữ trên Railway](./railway-template)** — phương án lưu trữ được quản lý sẵn, cùng các hướng dẫn cấu hình sau khi triển khai dùng chung
-- **[Thiết lập ban đầu](../../getting-started/initial-setup)** — các bước đầu tiên sau khi nhà thờ được tạo
-- **[Thiết lập API cục bộ](../api/local-setup)** — chạy toàn bộ hệ thống trực tiếp để phát triển
+- **[Tự lưu trữ trên Railway](./railway-template.md)** — phương án lưu trữ được quản lý sẵn, cùng các hướng dẫn cấu hình sau khi triển khai dùng chung
+- **[Thiết lập ban đầu](../../getting-started/initial-setup.md)** — các bước đầu tiên sau khi nhà thờ được tạo
+- **[Thiết lập API cục bộ](../api/local-setup.md)** — chạy toàn bộ hệ thống trực tiếp để phát triển

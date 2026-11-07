@@ -1,5 +1,6 @@
 ---
 title: "Imibiko Yeminikelo"
+description: "Bheka tinani tetiminikelo, labanganikelanga, nemininikelo yeqembu ku-B1 Admin ngedashibhodi yeDonations Summary, Lapsed Givers, nemafayili le-CSV."
 ---
 
 # Imibiko Yeminikelo

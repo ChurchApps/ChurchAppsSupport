@@ -1,5 +1,6 @@
 ---
 title: "Ilmoitusten ja muistutusten arkkitehtuuri"
+description: "Miten B1 Admin -API reitittää ilmoitukset, ajastetut muistutukset, seurakunnan sähköpostirajat ja tekstiviestien estot yhden toimitusputken ja asetustarkistuksen kautta."
 ---
 
 # Ilmoitusten ja muistutusten arkkitehtuuri
@@ -197,6 +198,6 @@ Paikallisesti saman logiikan voi käynnistää pyynnöstä komennoilla `npm run 
 
 ## Aiheeseen liittyvät sivut
 
-- [Reaaliaikainen arkkitehtuuri](../realtime): WebSocket-protokolla ja asiakaspuolen perusrakenteet (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), joiden päällä sisäinen toimitustaso toimii
-- [Web Push -ilmoitukset](../web-push): VAPID-asetukset ja selaimen Push API -polku, jota push-eskalaatiotaso käyttää
-- [Viestiliikenteen päätepisteet](../api/endpoints/messaging): täydellinen REST-rajapinta viesteille, keskusteluille, yhteyksille sekä ilmoitus- ja muistutusreiteille
+- [Reaaliaikainen arkkitehtuuri](../realtime.md): WebSocket-protokolla ja asiakaspuolen perusrakenteet (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), joiden päällä sisäinen toimitustaso toimii
+- [Web Push -ilmoitukset](../web-push.md): VAPID-asetukset ja selaimen Push API -polku, jota push-eskalaatiotaso käyttää
+- [Viestiliikenteen päätepisteet](../api/endpoints/messaging.md): täydellinen REST-rajapinta viesteille, keskusteluille, yhteyksille sekä ilmoitus- ja muistutusreiteille

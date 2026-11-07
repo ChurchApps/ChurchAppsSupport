@@ -1,5 +1,6 @@
 ---
 title: "Aanwezigheid bijhouden"
+description: "Bekijk aanwezigheidstrends, filter rapporten op campus, dienst of groep en exporteer groepsaanwezigheid vanaf de pagina Attendance in B1 Admin."
 ---
 
 # Aanwezigheid bijhouden

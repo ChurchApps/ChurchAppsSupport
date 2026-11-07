@@ -1,5 +1,6 @@
 ---
 title: "Űrlapbeküldések kezelése"
+description: "Űrlapbeküldések áttekintése, nyomtatása és átrendelése a B1 Admin-ban, a válaszok megfelelő személyhez juttatása, látogatói kártyák és imakérések követése."
 ---
 
 # Űrlapbeküldések kezelése

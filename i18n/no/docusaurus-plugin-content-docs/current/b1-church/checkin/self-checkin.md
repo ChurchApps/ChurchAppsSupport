@@ -1,5 +1,7 @@
 ---
-title: "Selvinnsjekking"
+title: "Selvinnsjekking i B1.church-medlemsportalen"
+sidebar_label: "Selvinnsjekking"
+description: "Sjekk deg selv og husstanden inn på en gudstjeneste fra B1.church-medlemsportalen. Velg tidspunkt og grupper i noen få raske steg."
 ---
 
 # Selvinnsjekking
@@ -45,7 +47,7 @@ Når du har valgt grupper for alle som deltar, trykker du på knappen nederst p�
 
 Du får en bekreftelse på at innsjekkingen er fullført og at oppmøtet ditt er lagret. Etter en liten stund går siden tilbake til gudstjenestelisten, klar for neste innsjekking.
 
-Hvis menigheten din skriver ut navneskilt på en innsjekkingsstasjon, ser du i stedet **Du er sjekket inn!** med en QR-kode og en sikkerhetskode. Vis koden på en innsjekkingsstasjon for å skrive ut navneskiltene dine, og trykk deretter på **Ferdig**. På en B1 Checkin-kiosk trykker du på **Skann kode** og holder QR-koden opp mot kameraet -- se [Skrive ut etiketter for innsjekking med telefon](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Hvis menigheten din skriver ut navneskilt på en innsjekkingsstasjon, ser du i stedet **Du er sjekket inn!** med en QR-kode og en sikkerhetskode. Vis koden på en innsjekkingsstasjon for å skrive ut navneskiltene dine, og trykk deretter på **Ferdig**. På en B1 Checkin-kiosk trykker du på **Skann kode** og holder QR-koden opp mot kameraet -- se [Skrive ut etiketter for innsjekking med telefon](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Hvis husstanden din allerede er sjekket inn til gudstjenesten du valgte, vises en lenke **Vis innsjekkingskode** ved siden av overskriften **Hvem er her**. Trykk på den for å hente frem QR-koden og sikkerhetskoden igjen -- for eksempel hvis du lukket siden før du nådde en innsjekkingsstasjon.
 

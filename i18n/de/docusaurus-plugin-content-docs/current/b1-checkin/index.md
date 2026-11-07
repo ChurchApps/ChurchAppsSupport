@@ -1,5 +1,6 @@
 ---
 title: "Überblick über B1 Church Checkin"
+description: "B1-Church-Checkin-Kiosk-App auf iPad oder Android-Tablets einrichten: Selbst-Check-in für Familien, Gruppenzuweisung, Etiketten und Abholzettel."
 ---
 
 # Überblick über B1 Church Checkin
@@ -24,7 +25,7 @@ Stellen Sie ein iPad oder Android-Tablet in Ihrem Foyer oder Empfangsbereich auf
 - **Überprüfung des Haushalts** — Alle Familienmitglieder mit Fotos und aktuellen Gruppenzuweisungen auf einen Blick sehen.
 - **Gruppenzuweisung** — Jedes Familienmitglied der passenden Klasse oder Gruppe für den ausgewählten Gottesdienstzeitpunkt zuweisen.
 - **Gast-Check-in** — Einen Gast spontan mit Vor- und Nachname zu Ihrem Haushalt hinzufügen.
-- **QR-Gastregistrierung** — Einen QR-Code anzeigen, den Besucher scannen können, um sich vor dem Check-in [selbst zu registrieren](../b1-church/checkin/guest-registration) — oder sie tippen auf **Hier registrieren**, um dasselbe Formular direkt am Kiosk auszufüllen.
+- **QR-Gastregistrierung** — Einen QR-Code anzeigen, den Besucher scannen können, um sich vor dem Check-in [selbst zu registrieren](../b1-church/checkin/guest-registration.md) — oder sie tippen auf **Hier registrieren**, um dasselbe Formular direkt am Kiosk auszufüllen.
 - **Etikettendruck** — Namensschilder für Kinder und Abholzettel für Eltern mit eindeutigen Sicherheitscodes drucken.
 - **Unterstützung für Netzwerkdrucker** — Netzwerkdrucker direkt aus der App heraus finden und konfigurieren.
 - **Automatische Anmeldung** — Nach der ersten Anmeldung merkt sich die App Ihre Zugangsdaten und öffnet bei späteren Starts direkt den Gottesdienst-Bildschirm.
@@ -33,8 +34,8 @@ Stellen Sie ein iPad oder Android-Tablet in Ihrem Foyer oder Empfangsbereich auf
 
 ## Dokumentationsbereiche
 
-- **[Erste Schritte](./getting-started/)** — Installation der App, Anmeldung und Einrichtung des Druckers.
-- **[Check-in-Ablauf](./check-in/)** — Der vollständige Check-in-Ablauf von der Auswahl eines Gottesdienstes bis zum Drucken der Etiketten.
+- **[Erste Schritte](./getting-started/index.md)** — Installation der App, Anmeldung und Einrichtung des Druckers.
+- **[Check-in-Ablauf](./check-in/index.md)** — Der vollständige Check-in-Ablauf von der Auswahl eines Gottesdienstes bis zum Drucken der Etiketten.
 
 :::tip
 B1 Church Checkin funktioniert am besten auf einem 10-Zoll-Tablet (iPad oder Android) im Querformat, das so montiert ist, dass Familien es bequem erreichen können. Die App erhalten Sie im [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), im [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) oder im [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).

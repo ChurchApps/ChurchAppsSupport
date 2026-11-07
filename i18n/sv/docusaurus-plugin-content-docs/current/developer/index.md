@@ -1,5 +1,6 @@
 ---
 title: "Utvecklardokumentation"
+description: "Navigera i ChurchApps utvecklardokumentation: lokal installation, guider för API och webbappar, delade bibliotek, mobilappar och driftsättning av öppen källkod."
 ---
 
 # Utvecklardokumentation
@@ -24,16 +25,16 @@ Viktiga egenskaper:
 
 ## Vad det här avsnittet omfattar
 
-- **[Installation](setup/)** -- Lokal utvecklingsmiljö, förutsättningar och konfiguration
-  - [Förutsättningar](setup/prerequisites) -- Nödvändiga verktyg och programvara
-  - [Projektöversikt](setup/project-overview) -- Alla projekt i korthet
-  - [Miljövariabler](setup/environment-variables) -- Konfigurera `.env`-filer
-- **[API](api/)** -- Lokal installation av kärn-API:et, databasinitiering och modulstruktur
-- **[Webbappar](web-apps/)** -- Köra B1Admin, B1App och LessonsApp lokalt
-- **[Mobilappar](mobile/)** -- Bygga B1Mobile och andra Expo-appar
-- **[Delade bibliotek](shared-libraries/)** -- Arbeta med Helpers, ApiHelper och AppHelper
-- **[Driftsättning](deployment/)** -- Driftsätta API:er, webbappar och mobilappar
-- **[FreePlay-innehållsleverantör](freeplay-content-provider)** -- Integrera ditt lektionsbibliotek med FreePlay
+- **[Installation](./setup/index.md)** -- Lokal utvecklingsmiljö, förutsättningar och konfiguration
+  - [Förutsättningar](./setup/prerequisites.md) -- Nödvändiga verktyg och programvara
+  - [Projektöversikt](./setup/project-overview.md) -- Alla projekt i korthet
+  - [Miljövariabler](./setup/environment-variables.md) -- Konfigurera `.env`-filer
+- **[API](./api/index.md)** -- Lokal installation av kärn-API:et, databasinitiering och modulstruktur
+- **[Webbappar](./web-apps/index.md)** -- Köra B1Admin, B1App och LessonsApp lokalt
+- **[Mobilappar](./mobile/index.md)** -- Bygga B1Mobile och andra Expo-appar
+- **[Delade bibliotek](./shared-libraries/index.md)** -- Arbeta med Helpers, ApiHelper och AppHelper
+- **[Driftsättning](./deployment/index.md)** -- Driftsätta API:er, webbappar och mobilappar
+- **[FreePlay-innehållsleverantör](./freeplay-content-provider.md)** -- Integrera ditt lektionsbibliotek med FreePlay
 
 ## Gemenskap och resurser
 

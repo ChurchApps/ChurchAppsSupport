@@ -1,5 +1,6 @@
 ---
 title: "Realtidsarkitektur"
+description: "Så levererar ChurchApps WebSocket-lager livechatt, närvaro och notiser: socket-handskakning, rumsprenumerationer och klientprimitiver för utvecklare."
 ---
 
 # Realtidsarkitektur
@@ -226,8 +227,8 @@ Livesändningen är den största anonyma användaren av ramverket. Den använder
 
 ## Relaterade sidor
 
-- [Arkitektur för aviseringar](./architecture/notifications) -- Tratten för meddelanden i appen, push och e-post som detta transportlager matar
-- [Slutpunkter för meddelanden](./api/endpoints/messaging) -- Det fullständiga REST-gränssnittet för meddelanden, konversationer, anslutningar och enheter
-- [Webbpush-aviseringar](./web-push) -- Push i webbläsaren, separat från leverans via socket i sidan
-- [AppHelper](./shared-libraries/app-helper) -- npm-paketet som levererar klientprimitiverna
-- [Modulstruktur](./api/module-structure) -- Hur meddelandemodulen är organiserad på servern
+- [Arkitektur för aviseringar](./architecture/notifications.md) -- Tratten för meddelanden i appen, push och e-post som detta transportlager matar
+- [Slutpunkter för meddelanden](./api/endpoints/messaging.md) -- Det fullständiga REST-gränssnittet för meddelanden, konversationer, anslutningar och enheter
+- [Webbpush-aviseringar](./web-push.md) -- Push i webbläsaren, separat från leverans via socket i sidan
+- [AppHelper](./shared-libraries/app-helper.md) -- npm-paketet som levererar klientprimitiverna
+- [Modulstruktur](./api/module-structure.md) -- Hur meddelandemodulen är organiserad på servern

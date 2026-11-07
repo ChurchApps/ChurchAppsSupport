@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "З’єднайте B1 Admin і Text In Church через Zapier: створіть ключ API, побудуйте Zap від картки контакту до B1 і синхронізуйте членство в групах."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ title: "Text In Church"
 
 ## Див. також
 
-- [Clearstream](./clearstream) — альтернативна платформа SMS з подібною схемою роботи із Zapier
-- [Zapier (огляд)](../zapier) — сторона B1 для кожного рецепта Zapier
+- [Clearstream](./clearstream.md) — альтернативна платформа SMS з подібною схемою роботи із Zapier
+- [Zapier (огляд)](../zapier.md) — сторона B1 для кожного рецепта Zapier
 - [Інструкція Text In Church для Zapier](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (документація TIC)

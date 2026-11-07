@@ -1,5 +1,7 @@
 ---
-title: "Počiatočné nastavenie"
+title: "Začíname s webstránkou B1 Admin"
+sidebar_label: "Počiatočné nastavenie"
+description: "Nastavte webstránku zboru v B1 Admin: priraďte subdoménu alebo vlastnú doménu, vytvorte domovskú stránku, vyberte farby značky a logo a zostavte navigáciu."
 ---
 
 # Počiatočné nastavenie
@@ -45,7 +47,7 @@ Ak nevidíte možnosť Settings, požiadajte osobu, ktorá nastavila účet vaš
 6. Po pridaní sekcie znova kliknite na **Add Content**, aby ste vložili text, obrázky, videá, karty, formuláre a ďalšie prvky presunutím do svojej sekcie.
 
 :::info
-Podrobné pokyny k práci so stránkami a navigáciou nájdete v časti [Správa stránok](managing-pages). Úplného sprievodcu vizuálnym editorom nájdete v časti [Použitie editora stránok](page-editor).
+Podrobné pokyny k práci so stránkami a navigáciou nájdete v časti [Správa stránok](./managing-pages.md). Úplného sprievodcu vizuálnym editorom nájdete v časti [Použitie editora stránok](./page-editor.md).
 :::
 
 ## Nastavenie vzhľadu stránky
@@ -57,7 +59,7 @@ Podrobné pokyny k práci so stránkami a navigáciou nájdete v časti [Správa
 5. Nakonfigurujte **Site Footer** s kontaktnými informáciami a odkazmi vašej cirkvi.
 
 :::info
-Zmeny, ktoré urobíte v sekcii Appearance, sa uplatnia na celú vašu webovú stránku. Podrobné pokyny k jednotlivým nastaveniam nájdete na stránke [Vzhľad](appearance).
+Zmeny, ktoré urobíte v sekcii Appearance, sa uplatnia na celú vašu webovú stránku. Podrobné pokyny k jednotlivým nastaveniam nájdete na stránke [Vzhľad](./appearance.md).
 :::
 
 ## Nastavenie navigácie
@@ -70,6 +72,6 @@ Vaše navigačné odkazy sa zobrazujú v zobrazení Website Pages. Ak ich chcete
 
 ## Ďalšie kroky
 
-- [Správa stránok](managing-pages) -- Podrobne sa naučte pracovať so stránkami a navigáciou
-- [Vzhľad](appearance) -- Doladte farby, písma a rozloženie svojej stránky
-- [Súbory](files) -- Nahrajte obrázky a dokumenty pre svoju webovú stránku
+- [Správa stránok](./managing-pages.md) -- Podrobne sa naučte pracovať so stránkami a navigáciou
+- [Vzhľad](./appearance.md) -- Doladte farby, písma a rozloženie svojej stránky
+- [Súbory](./files.md) -- Nahrajte obrázky a dokumenty pre svoju webovú stránku

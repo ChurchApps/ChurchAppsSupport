@@ -1,5 +1,6 @@
 ---
 title: "Kılavuz: Sermon Kitaplığınızı ve Canlı Yayınınızı Oluşturun"
+description: "YouTube veya Vimeo vaazlarınızı içe aktarın, oynatma listelerine düzenleyin ve B1 Admin'de sohbetli tekrarlayan canlı yayınlar kurun; web siteniz için."
 ---
 
 # Sermon Kitaplığınızı ve Canlı Yayınınızı Oluşturun

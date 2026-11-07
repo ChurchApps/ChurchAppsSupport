@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Önkéntes-jelentkezések összekötése a Checkr háttérellenőrzéssel Make.com-mal a B1 Admin-ban, riasztásokkal a biztonsági koordinátornak."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Ha az egyház a B1 csoporttagságot használja a hozzáférés szabályozására
 
 ## Lásd még
 
-- [Make (áttekintés)](../make): a B1 oldala minden Make-forgatókönyvnek
-- [Mobile Message](./mobile-message): olyan SMS-szolgáltatókhoz, amelyekhez nincs Zapier-alkalmazás; ugyanaz a Webhook/HTTP minta, mint a Checkr Make-beállítása
+- [Make (áttekintés)](../make.md): a B1 oldala minden Make-forgatókönyvnek
+- [Mobile Message](./mobile-message.md): olyan SMS-szolgáltatókhoz, amelyekhez nincs Zapier-alkalmazás; ugyanaz a Webhook/HTTP minta, mint a Checkr Make-beállítása
 - [Checkr API-dokumentáció](https://docs.checkr.com/)

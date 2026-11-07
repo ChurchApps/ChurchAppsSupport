@@ -1,5 +1,6 @@
 ---
 title: "Hromadný import"
+description: "Hromadně importujte videa kázání z kanálu YouTube nebo účtu Vimeo do B1 Admin a poté je roztřiďte do playlistu."
 ---
 
 # Hromadný import
@@ -14,7 +15,7 @@ Stránka Hromadný import vám umožní rychle naplnit knihovnu kázání import
 <h4>Než začnete</h4>
 
 - Potřebujete oprávnění **contentApi.streamingServices.edit**. Pokud k němu nemáte přístup, podívejte se na [Role a oprávnění](../settings/roles-permissions.md).
-- Vytvořte alespoň jeden [seznam přehrávání](playlists), do kterého budete kázání importovat
+- Vytvořte alespoň jeden [seznam přehrávání](./playlists.md), do kterého budete kázání importovat
 - Připravte si ID svého YouTube kanálu nebo údaje o svém účtu na Vimeo
 
 </div>
@@ -39,7 +40,7 @@ Před importem videí potřebujete alespoň jeden seznam přehrávání, do kter
 2. Klikněte na **Vytvořit první seznam přehrávání** a vyplňte název, popis, datum zveřejnění a miniaturu.
 3. Klikněte na **Uložit** a poté se vraťte k hromadnému importu kliknutím na **Přidat kázání** a výběrem **Hromadný import**.
 
-Podrobné pokyny k vytváření a správě seznamů přehrávání najdete na stránce [Seznamy přehrávání](playlists).
+Podrobné pokyny k vytváření a správě seznamů přehrávání najdete na stránce [Seznamy přehrávání](./playlists.md).
 
 ## Import videí
 
@@ -54,11 +55,11 @@ Podrobné pokyny k vytváření a správě seznamů přehrávání najdete na st
 Vaše videa budou importována se všemi podrobnostmi, včetně názvů, popisů, dat a miniatur. Speciální znaky v názvech a popisech na YouTube, například `&`, apostrofy a uvozovky, se zobrazí tak, jak jsou napsány, a nikoli jako kódy typu `&amp;`.
 
 :::info
-Hromadný import je ideální pro začátek, pokud přecházíte z jiné platformy. Pro přidávání jednotlivých kázání do budoucna použijte raději stránku [Správa kázání](managing-sermons).
+Hromadný import je ideální pro začátek, pokud přecházíte z jiné platformy. Pro přidávání jednotlivých kázání do budoucna použijte raději stránku [Správa kázání](./managing-sermons.md).
 :::
 
 ## Další kroky
 
-- [Správa kázání](managing-sermons) -- Úprava podrobností importovaných kázání
-- [Seznamy přehrávání](playlists) -- Vytváření a správa kázaní v sériích
-- [Živé streamování](live-streaming) -- Nastavení živého streamování vašich bohoslužeb
+- [Správa kázání](./managing-sermons.md) -- Úprava podrobností importovaných kázání
+- [Seznamy přehrávání](./playlists.md) -- Vytváření a správa kázaní v sériích
+- [Živé streamování](./live-streaming.md) -- Nastavení živého streamování vašich bohoslužeb

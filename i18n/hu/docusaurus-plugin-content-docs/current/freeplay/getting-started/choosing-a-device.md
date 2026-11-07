@@ -1,5 +1,6 @@
 ---
 title: "Eszköz kiválasztása"
+description: "Megfelelő eszköz a FreePlay osztálytermi TV-khez: Fire TV stickek, Onn-dobozok és Apple TV, valamint mit érdemes elkerülni."
 ---
 
 # Eszköz kiválasztása a FreePlayhez

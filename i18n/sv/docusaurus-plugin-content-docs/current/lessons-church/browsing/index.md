@@ -1,5 +1,6 @@
 ---
 title: "Bläddra i innehåll"
+description: "Så bläddrar du i Lessons.churchs kostnadsfria läroplansbibliotek utan konto: startsidans layout, bläddring per program, sök och externa leverantörer."
 ---
 
 # Bläddra i innehåll

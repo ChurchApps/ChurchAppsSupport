@@ -1,12 +1,13 @@
 ---
 title: "Self-Hosting with Docker"
+description: "Instalați pe propriul calculator un stack privat B1 Admin, portal pentru membri, API și MySQL cu Docker, apoi actualizați-l și faceți backup cu comanda b1."
 ---
 
 # Self-Hosting with Docker
 
 <div class="article-intro">
 
-Rulați propria instanță privată a B1 Admin, a portalului și site-ului web pentru membri B1, a API-ului și a unei baze de date MySQL pe orice mașină cu Docker — un server de acasă, un VPS mic sau un dispozitiv local. O singură comandă instalează totul, o singură comandă îl actualizează, iar fiecare actualizare face mai întâi o copie de rezervă. Dacă preferați să nu gestionați deloc un server, consultați [Self-Hosting on Railway](./railway-template) pentru varianta administrată.
+Rulați propria instanță privată a B1 Admin, a portalului și site-ului web pentru membri B1, a API-ului și a unei baze de date MySQL pe orice mașină cu Docker — un server de acasă, un VPS mic sau un dispozitiv local. O singură comandă instalează totul, o singură comandă îl actualizează, iar fiecare actualizare face mai întâi o copie de rezervă. Dacă preferați să nu gestionați deloc un server, consultați [Self-Hosting on Railway](./railway-template.md) pentru varianta administrată.
 
 </div>
 
@@ -94,10 +95,10 @@ Dacă ați instalat pe `localhost` și doriți ulterior să fie public: indicaț
 
 Acestea funcționează exact ca pe Railway — aceleași variabile de mediu, setate în `.env` în loc de panoul Railway:
 
-- **[E-mail / SMTP](./railway-template#1-email-highly-recommended)** — ghiduri pas cu pas pentru Resend, Brevo și Gmail
-- **[Mai multe site-uri](./railway-template#3-multi-site-multiple-churches-on-one-instance)** — biserici nelimitate pe o instanță. `/` servește biserica al cărei slug este `DEFAULT_CHURCH_SLUG` (prima biserică este `church`); indicați domeniile suplimentare spre mașină și mapați-le în **Settings → Domains** din B1Admin
-- **[Donații online](./railway-template#4-online-giving-stripe--paypal)** — configurate pentru fiecare biserică în interfața de administrare
-- **[Integrări opționale](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[E-mail / SMTP](./railway-template.md#1-email-highly-recommended)** — ghiduri pas cu pas pentru Resend, Brevo și Gmail
+- **[Mai multe site-uri](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** — biserici nelimitate pe o instanță. `/` servește biserica al cărei slug este `DEFAULT_CHURCH_SLUG` (prima biserică este `church`); indicați domeniile suplimentare spre mașină și mapați-le în **Settings → Domains** din B1Admin
+- **[Donații online](./railway-template.md#4-online-giving-stripe--paypal)** — configurate pentru fiecare biserică în interfața de administrare
+- **[Integrări opționale](./railway-template.md#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Notificări push](#push-notifications)** — `WEB_PUSH_*`; programul de instalare le lasă necompletate, deci notificările push sunt dezactivate până le adăugați
 
 Invitațiile și alte e-mailuri trimise de biserică sunt activate automat pe o instanță self-hosted (serviciul găzduit le condiționează de o verificare manuală, pentru a proteja reputația expeditorului).
@@ -148,7 +149,7 @@ Trei volume Docker denumite păstrează toată starea:
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-Pentru biblioteci mari de media puteți trece stocarea fișierelor la S3 — setați `FILE_STORE=S3` și variabilele `AWS_*` descrise în secțiunea [Railway guide's File Storage](./railway-template#5-file-storage). Copiile de rezervă ale bazei de date nu includ obiectele din S3; activați versionarea bucket-ului acolo.
+Pentru biblioteci mari de media puteți trece stocarea fișierelor la S3 — setați `FILE_STORE=S3` și variabilele `AWS_*` descrise în secțiunea [Railway guide's File Storage](./railway-template.md#5-file-storage). Copiile de rezervă ale bazei de date nu includ obiectele din S3; activați versionarea bucket-ului acolo.
 
 ## Actualizare
 
@@ -187,6 +188,6 @@ docker compose -f docker-compose.yml -f docker-compose.build.yml up -d --build
 
 ## Articole conexe
 
-- **[Self-Hosting on Railway](./railway-template)** — alternativa de găzduire administrată, plus ghidurile comune de configurare după implementare
-- **[Initial Setup](../../getting-started/initial-setup)** — primii pași după crearea bisericii
-- **[Local API Setup](../api/local-setup)** — rularea stivei direct pentru dezvoltare
+- **[Self-Hosting on Railway](./railway-template.md)** — alternativa de găzduire administrată, plus ghidurile comune de configurare după implementare
+- **[Initial Setup](../../getting-started/initial-setup.md)** — primii pași după crearea bisericii
+- **[Local API Setup](../api/local-setup.md)** — rularea stivei direct pentru dezvoltare

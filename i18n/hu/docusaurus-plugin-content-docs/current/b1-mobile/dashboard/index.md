@@ -1,5 +1,6 @@
 ---
 title: "Irányítópult"
+description: "Tájékozódj a B1 Mobile kezdőképernyőjén, ahol a leggyakrabban használt funkciók nagy kártyákon jelennek meg, a többi pedig a Gyorsműveletek alatt található."
 ---
 
 # Irányítópult
@@ -28,7 +29,7 @@ A főkártya alatt legfeljebb két **kiemelt kártya** látható egymás mellett
 
 ## Gyorsműveletek
 
-A többi funkció a kiemelt kártyák alatti **Gyorsműveletek** rácsban jelenik meg. Minden elem ikont és feliratot mutat. Ezek a gyülekezete által beállított összes többi navigációs hivatkozás, így a [csoportoktól](../groups/) és az [adakozástól](../giving/) kezdve a [bejelentkezésen](../checkin/), a [igehirdetéseken](../content/sermons.md) át mindenhez hozzáférhet.
+A többi funkció a kiemelt kártyák alatti **Gyorsműveletek** rácsban jelenik meg. Minden elem ikont és feliratot mutat. Ezek a gyülekezete által beállított összes többi navigációs hivatkozás, így a [csoportoktól](../groups/index.md) és az [adakozástól](../giving/index.md) kezdve a [bejelentkezésen](../checkin/index.md), a [igehirdetéseken](../content/sermons.md) át mindenhez hozzáférhet.
 
 ## Hogyan alakul az elrendezés
 
@@ -41,7 +42,7 @@ Az irányítópult elrendezése a használati szokásai alapján személyre szab
 Ha még nem használta az alkalmazást, a funkciók a gyülekezete által beállított alapértelmezett sorrendben jelennek meg. Idővel az irányítópult a szokásaihoz igazodva átrendeződik.
 
 :::info
-Az irányítópulton elérhető funkciókat a gyülekezet rendszergazdája állítja be a [B1 Admin](../../b1-admin/) segítségével. Ha nem látja a várt funkciót, forduljon a gyülekezeti irodához.
+Az irányítópulton elérhető funkciókat a gyülekezet rendszergazdája állítja be a [B1 Admin](../../b1-admin/index.md) segítségével. Ha nem látja a várt funkciót, forduljon a gyülekezeti irodához.
 :::
 
 ## Az irányítópult frissítése

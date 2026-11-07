@@ -1,5 +1,6 @@
 ---
 title: "Kurateret kalender"
+description: "Opsæt en menighedsdækkende udvalgt kalender i B1 Admin med begivenheder fra flere grupper, og del den på hjemmesiden, via ICS-abonnement eller som download."
 ---
 
 # Kurateret kalender
@@ -15,7 +16,7 @@ En kurateret kalender samler begivenheder fra flere grupper i en enhed kalenderv
 
 - Opsæt de [grupper](../groups/creating-groups.md), hvis begivenheder du vil inkludere
 - Sørg for, at gruppeleder har tilføjet begivenheder til deres respektive grupper
-- Blive fortrolig med grunderne for [Oprettelse af kalendere](creating-calendars)
+- Blive fortrolig med grunderne for [Oprettelse af kalendere](./creating-calendars.md)
 
 </div>
 
@@ -54,5 +55,5 @@ Når gruppeleder tilføjer nye begivenheder til deres [grupper](../groups/creati
 
 ## Næste trin
 
-- [Oprettelse af kalendere](creating-calendars) -- Lær det grundlæggende om kalenderoprettelse
-- [Kalenderoverssigt](./) -- Vend tilbage til kalenderoverssigten
+- [Oprettelse af kalendere](./creating-calendars.md) -- Lær det grundlæggende om kalenderoprettelse
+- [Kalenderoverssigt](./index.md) -- Vend tilbage til kalenderoverssigten

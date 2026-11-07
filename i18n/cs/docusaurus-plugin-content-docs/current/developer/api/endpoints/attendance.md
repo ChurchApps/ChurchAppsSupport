@@ -1,5 +1,6 @@
 ---
 title: "Endpointy docházky"
+description: "Referenční příručka k API docházky v B1 Admin a B1 Checkin: kampusy, bohoslužby, časy bohoslužeb, relace, návštěvy, pravidla check-inu a exportní endpointy."
 ---
 
 # Endpointy docházky
@@ -270,6 +271,6 @@ Sleduje série docházky jednotlivců, tedy počet po sobě jdoucích týdnů, k
 
 ## Související stránky
 
-- [Endpointy členství](./membership) — Lidé, skupiny, role a správa sboru
-- [Autentizace a oprávnění](./authentication) — Přihlášení, JWT, model oprávnění
-- [Struktura modulů](../module-structure) — Vzory organizace kódu
+- [Endpointy členství](./membership.md) — Lidé, skupiny, role a správa sboru
+- [Autentizace a oprávnění](./authentication.md) — Přihlášení, JWT, model oprávnění
+- [Struktura modulů](../module-structure.md) — Vzory organizace kódu

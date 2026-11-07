@@ -1,5 +1,6 @@
 ---
 title: "Zarządzanie stronami"
+description: "Twórz, edytuj i porządkuj strony oraz nawigację w widoku Strony witryny B1 Admin, w tym ustawienia stron, przekierowania i szablony witryn."
 ---
 
 # Zarządzanie stronami
@@ -13,13 +14,13 @@ Widok **Strony internetowej** to centralne miejsce do tworzenia, edytowania i po
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Wykonaj [wstępną konfigurację](initial-setup), aby ustawić domenę i podstawowe ustawienia witryny
-- Przygotuj treści i obrazy. Najpierw prześlij pliki multimedialne, korzystając z menedżera [Pliki](files).
+- Wykonaj [wstępną konfigurację](./initial-setup.md), aby ustawić domenę i podstawowe ustawienia witryny
+- Przygotuj treści i obrazy. Najpierw prześlij pliki multimedialne, korzystając z menedżera [Pliki](./files.md).
 
 </div>
 
 :::info
-Jeśli Twój kościół ma więcej niż jedną witrynę (na przykład oddzielne witryny dla poszczególnych zborów), użyj przełącznika witryn u góry widoku **Strony internetowej**, aby przełączać się między nimi. Każda witryna ma własne strony, nawigację i ustawienia [wyglądu](appearance).
+Jeśli Twój kościół ma więcej niż jedną witrynę (na przykład oddzielne witryny dla poszczególnych zborów), użyj przełącznika witryn u góry widoku **Strony internetowej**, aby przełączać się między nimi. Każda witryna ma własne strony, nawigację i ustawienia [wyglądu](./appearance.md).
 :::
 
 ## Rodzaje stron
@@ -35,7 +36,7 @@ Dowolną automatycznie wygenerowaną stronę możesz przekształcić w stronę n
 
 1. Kliknij przycisk **Dodaj stronę** w prawym górnym rogu widoku **Strony internetowej**.
 2. Wybierz rodzaj strony (pustą lub szablon) i nadaj jej nazwę.
-3. Kliknij **Edytuj treść** obok dowolnej strony, aby otworzyć [edytor stron](page-editor), w którym możesz dodawać sekcje, tekst, obrazy i inne elementy.
+3. Kliknij **Edytuj treść** obok dowolnej strony, aby otworzyć [edytor stron](./page-editor.md), w którym możesz dodawać sekcje, tekst, obrazy i inne elementy.
 4. Kliknij **Ustawienia strony** obok strony, aby zmienić jej tytuł, ścieżkę URL i inne metadane.
 5. Kliknij ścieżkę strony w kolumnie **Ścieżka**, aby otworzyć działającą stronę w nowej karcie i zobaczyć dokładnie, jak będzie wyglądać dla odwiedzających.
 
@@ -112,10 +113,10 @@ Jeśli budujesz witrynę od podstaw, możesz utworzyć jej szkielet przy użyciu
 3. Gdy znajdziesz odpowiedni, kliknij **Zastosuj szablon**.
 4. Strony, które jeszcze nie istnieją, zostaną utworzone i dodane do nawigacji. Istniejące strony pozostaną bez zmian.
 
-Po zastosowaniu szablonu otwórz każdą stronę w [edytorze stron](page-editor), aby zastąpić tekst zastępczy i obrazy prawdziwą treścią Twojego kościoła.
+Po zastosowaniu szablonu otwórz każdą stronę w [edytorze stron](./page-editor.md), aby zastąpić tekst zastępczy i obrazy prawdziwą treścią Twojego kościoła.
 
 :::info
-Szablony witryn tworzą strukturę stron i nawigację. Nie zmieniają schematu kolorów ani czcionek witryny -- te ustawienia kontroluje sekcja [Wygląd](appearance).
+Szablony witryn tworzą strukturę stron i nawigację. Nie zmieniają schematu kolorów ani czcionek witryny -- te ustawienia kontroluje sekcja [Wygląd](./appearance.md).
 :::
 
 ## Podgląd obrazu (lightbox)
@@ -124,7 +125,7 @@ Gdy odwiedzający kliknie obraz na Twojej witrynie, otwiera się on w pełnoekra
 
 ## Następne kroki
 
-- [Wstępna konfiguracja](initial-setup) -- Instrukcje konfiguracji przy pierwszym uruchomieniu
-- [Korzystanie z edytora stron](page-editor) -- Dowiedz się, jak tworzyć i stylizować treść stron
-- [Wygląd](appearance) -- Dostosuj motyw wizualny witryny
-- [Pliki](files) -- Prześlij i zarządzaj plikami multimedialnymi dla swoich stron
+- [Wstępna konfiguracja](./initial-setup.md) -- Instrukcje konfiguracji przy pierwszym uruchomieniu
+- [Korzystanie z edytora stron](./page-editor.md) -- Dowiedz się, jak tworzyć i stylizować treść stron
+- [Wygląd](./appearance.md) -- Dostosuj motyw wizualny witryny
+- [Pliki](./files.md) -- Prześlij i zarządzaj plikami multimedialnymi dla swoich stron

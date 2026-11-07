@@ -1,5 +1,6 @@
 ---
 title: "Web-Push-Benachrichtigungen"
+description: "VAPID-Schlüssel, WebPushHelper-Client und Service Worker einrichten, damit B1.church und B1 Admin Browser-Push-Nachrichten an Mitglieder senden können."
 ---
 
 # Web-Push-Benachrichtigungen
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Verwandte Seiten
 
-- [Benachrichtigungsarchitektur](./architecture/notifications) — die vollständige Eskalation In-App/Push/E-Mail und die Erinnerungs-Engine
-- [Echtzeit-Architektur](./realtime) — WebSocket-Zustellung; Push wird nun zusammen mit der Socket-Zustellung im selben Durchlauf des In-App-Ablaufs ausgelöst, nicht mehr nur als Ersatz, wenn eine Socket-Zustellung nicht ankommt
-- [Messaging-Endpunkte](./api/endpoints/messaging) -- Benachrichtigungen, Geräte und der übrige Messaging-Bereich
-- [AppHelper](./shared-libraries/app-helper) -- Das npm-Paket, das `WebPushHelper` enthält
+- [Benachrichtigungsarchitektur](./architecture/notifications.md) — die vollständige Eskalation In-App/Push/E-Mail und die Erinnerungs-Engine
+- [Echtzeit-Architektur](./realtime.md) — WebSocket-Zustellung; Push wird nun zusammen mit der Socket-Zustellung im selben Durchlauf des In-App-Ablaufs ausgelöst, nicht mehr nur als Ersatz, wenn eine Socket-Zustellung nicht ankommt
+- [Messaging-Endpunkte](./api/endpoints/messaging.md) -- Benachrichtigungen, Geräte und der übrige Messaging-Bereich
+- [AppHelper](./shared-libraries/app-helper.md) -- Das npm-Paket, das `WebPushHelper` enthält

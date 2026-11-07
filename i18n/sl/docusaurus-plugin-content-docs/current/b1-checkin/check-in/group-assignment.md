@@ -1,5 +1,6 @@
 ---
 title: "Dodeljevanje skupin"
+description: "V B1 Checkin izberite, katero skupino ali razred član družine obiskuje ob vsakem času bogoslužja, z uporabo kategorij, navodil glede starosti in razreda ter možnostjo Brez."
 ---
 
 # Dodeljevanje skupin
@@ -13,7 +14,7 @@ Ko se na zaslonu za pregled gospodinjstva dotaknete gumba za čas bogoslužja, a
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Preglejte svoje gospodinjstvo](./household-review) na zaslonu za pregled gospodinjstva
+- [Preglejte svoje gospodinjstvo](./household-review.md) na zaslonu za pregled gospodinjstva
 - Razširite člana, kateremu želite dodeliti skupino, in se dotaknite gumba za čas bogoslužja
 - Preverite, ali je vaš cerkveni skrbnik [ustvaril skupine](../../b1-admin/groups/creating-groups.md) in jih povezal s časi bogoslužja v B1 Admin
 
@@ -34,7 +35,7 @@ Dotaknite se kartice kategorije, da jo razširite in vidite posamezne skupine v 
 2. Preglejte seznam skupin v tej kategoriji. Vsaka skupina prikazuje svoje ime z ikono za izbiro na desni.
 3. Dotaknite se **imena skupine**, ki jo želite dodeliti.
 
-Aplikacija shrani vašo izbiro in vas vrne na [zaslon za pregled gospodinjstva](./household-review). Gumb za čas bogoslužja tega člana bo zdaj prikazoval ime izbrane skupine.
+Aplikacija shrani vašo izbiro in vas vrne na [zaslon za pregled gospodinjstva](./household-review.md). Gumb za čas bogoslužja tega člana bo zdaj prikazoval ime izbrane skupine.
 
 ## Smernice glede starosti in razreda
 
@@ -52,7 +53,7 @@ Možnost **Brez** uporabite za odrasle, ki obiskujejo glavno bogoslužje in se j
 
 Če želite spremeniti dodelitev skupine, ki je že bila izvedena:
 
-1. Vrnite se na [zaslon za pregled gospodinjstva](./household-review).
+1. Vrnite se na [zaslon za pregled gospodinjstva](./household-review.md).
 2. Razširite člana, čigar skupino želite spremeniti.
 3. Dotaknite se gumba za čas bogoslužja (ki zdaj prikazuje ime trenutno dodeljene skupine).
 4. Izberite drugo skupino ali se dotaknite **Brez**.
@@ -63,8 +64,8 @@ Skupine in kategorije nastavi vaš cerkveni skrbnik v B1 Admin. Če skupina manj
 
 ## Naslednji koraki
 
-Po dodelitvi skupin se vrnite na [zaslon za pregled gospodinjstva](./household-review), da:
+Po dodelitvi skupin se vrnite na [zaslon za pregled gospodinjstva](./household-review.md), da:
 
 - dodelite skupine dodatnim družinskim članom,
-- [dodate gosta](./adding-guests), če se vaši družini pridruži obiskovalec,
-- [zaključite prijavo](./completing-checkin), ko so vse dodelitve pripravljene.
+- [dodate gosta](./adding-guests.md), če se vaši družini pridruži obiskovalec,
+- [zaključite prijavo](./completing-checkin.md), ko so vse dodelitve pripravljene.

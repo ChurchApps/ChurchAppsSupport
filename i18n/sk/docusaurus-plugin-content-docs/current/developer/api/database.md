@@ -1,5 +1,6 @@
 ---
 title: "Databáza"
+description: "Naučte sa, ako API ChurchApps rozdeľuje údaje do šiestich databáz MySQL, jednej pre každý modul, a ako nastaviť pripojenia a ich inicializovať."
 ---
 
 # Databáza
@@ -13,8 +14,8 @@ ChurchApps API používa architektúru **databáza-na-modul**. Každý zo šiest
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- Nainštalujte **MySQL 8.0+** -- pozrite si [Požiadavky](../setup/prerequisites)
-- Nakonfigurujte reťazce pripojenia k databáze vo vašom súbore `.env` -- pozrite si [Premenné prostredia](../setup/environment-variables)
+- Nainštalujte **MySQL 8.0+** -- pozrite si [Požiadavky](../setup/prerequisites.md)
+- Nakonfigurujte reťazce pripojenia k databáze vo vašom súbore `.env` -- pozrite si [Premenné prostredia](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Kľúčové návrhové rozhodnutia
 
 - **Jedna databáza na modul** -- Každý modul spravuje vlastnú databázu MySQL s vyhradeným pool pripojení (spravovaným cez `KyselyPool`). To udržiava moduly oddelené a umožňuje nezávislý vývoj schémy.
-- **Výhradné vlastníctvo** -- Tabuľky modulu čítá a zapisuje iba kód daného modulu. Keď iný modul potrebuje tieto dáta, volá bránu vlastniaceho modulu namiesto toho, aby tabuľky dopytoval priamo -- pozrite si [Komunikácia medzi modulmi](./module-structure#cross-module-communication).
+- **Výhradné vlastníctvo** -- Tabuľky modulu čítá a zapisuje iba kód daného modulu. Keď iný modul potrebuje tieto dáta, volá bránu vlastniaceho modulu namiesto toho, aby tabuľky dopytoval priamo -- pozrite si [Komunikácia medzi modulmi](./module-structure.md#cross-module-communication).
 - **Vzor repozitára bez ORM** -- Všetok prístup k dátam prebieha cez triedy repozitárov, ktoré vytvárajú typované SQL dopyty pomocou staviteľa dopytov Kysely voči schéme modulu. To dáva plnú kontrolu nad výkonom a správaním dopytov.
 - **Multi-tenant od začiatku** -- Každý dopyt je obmedzený na `churchId`. Všetky tabuľky obsahujú stĺpec `churchId` a vrstva repozitárov automaticky vynucuje izoláciu tenantov.
 
@@ -129,5 +130,5 @@ Toto obmedzenie robí hranice modulov skutočnými: každá schéma sa môže vy
 
 ## Súvisiace články
 
-- **[Štruktúra modulu](./module-structure)** -- Ako sú controllery a repozitáre usporiadané v rámci každého modulu
-- **[Lokálne nastavenie API](./local-setup)** -- Úplný podrobný sprievodca nastavením
+- **[Štruktúra modulu](./module-structure.md)** -- Ako sú controllery a repozitáre usporiadané v rámci každého modulu
+- **[Lokálne nastavenie API](./local-setup.md)** -- Úplný podrobný sprievodca nastavením

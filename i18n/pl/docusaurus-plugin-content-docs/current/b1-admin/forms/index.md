@@ -1,5 +1,6 @@
 ---
 title: "Formularze"
+description: "Wyszukuj, filtruj, edytuj, archiwizuj i przywracaj formularze w B1 Admin oraz sprawdź, gdzie przypisać członków formularza i przeglądać zgłoszenia."
 ---
 
 # Formularze

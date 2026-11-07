@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Menelusuri Blog B1.church dan Feed RSS"
+sidebar_label: "Blog"
+description: "Telusuri dan saring blog B1.church gereja Anda berdasarkan kategori atau tag, buka postingan lama, atau ikuti yang baru lewat feed RSS."
 ---
 
 # Blog

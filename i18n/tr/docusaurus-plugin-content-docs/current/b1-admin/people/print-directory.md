@@ -1,5 +1,6 @@
 ---
 title: "Telefon Rehberi Yazdırma"
+description: "B1 Admin'den fotoğraflar, iletişim bilgileri ve doğum günleriyle, Letter kağıdı boyutunda, haneye göre gruplanmış yazdırılabilir üye dizini oluşturun."
 ---
 
 # Telefon Rehberi Yazdırma

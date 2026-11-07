@@ -1,5 +1,6 @@
 ---
 title: "Registracijos užbaigimas"
+description: "Baikite šeimos savitarnos registraciją B1 Checkin: kambarių ribos, etikečių spausdinimas, atsiėmimo apsaugos kodai ir kas toliau vyksta."
 ---
 
 # Registracijos užbaigimas
@@ -13,9 +14,9 @@ Kai peržiūrėsite savo šeimą ir priskirsite grupes, jei to reikia, galite u�
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Peržiūrėkite savo šeimą](./household-review) šeimos peržiūros ekrane
-- [Priskirkite grupes](./group-assignment) visiems šeimos nariams, kuriems reikia registruotis į konkrečią klasę ar programą
-- Pasirinktinai [pridėkite svečius](./adding-guests), kurie atvyko kartu su jūsų šeima
+- [Peržiūrėkite savo šeimą](./household-review.md) šeimos peržiūros ekrane
+- [Priskirkite grupes](./group-assignment.md) visiems šeimos nariams, kuriems reikia registruotis į konkrečią klasę ar programą
+- Pasirinktinai [pridėkite svečius](./adding-guests.md), kurie atvyko kartu su jūsų šeima
 
 </div>
 
@@ -28,10 +29,10 @@ Tiek ir reikia. Jūsų šeimos lankomumas užregistruotas.
 
 ## Pilni kambariai ir savanorių santykis
 
-Jei jūsų bažnyčia nustatė [saugos ribas](../../b1-admin/attendance/checkin-safety) kambariams, serveris jas patikrina prieš išsaugodamas duomenis:
+Jei jūsų bažnyčia nustatė [saugos ribas](../../b1-admin/attendance/checkin-safety.md) kambariams, serveris jas patikrina prieš išsaugodamas duomenis:
 
 - Jei pasirinktas kambarys yra **pilnas arba uždarytas**, registracija neįvyksta, o programa nurodo kambarį, kad galėtumėte pasirinkti kitą.
-- Jei pamaldų laikui yra nustatyta [registracijos tvarkaraštis](../../b1-admin/attendance/setup#setting-a-check-in-schedule), o jo registracijos langas šiuo metu neatidarytas, registracija į to pamaldų laiko kambarius taip pat atmetama. Ekrane **Negalima dar registruoti** nurodomas kambarys ir priežastis „registracija šiuo metu neatidaryta“; palieskite **Keisti kambarius**, kad pasirinktumėte kitą pamaldų laiką ar grupę. (Jau uždaryti pamaldų laikai [šeimos ekrane](./household-review) rodomi kaip **Uždaryta** ir negali būti pasirinkti, todėl šį pranešimą paprastai pamatysite tik tuo atveju, jei langas užsidaro registracijos metu.)
+- Jei pamaldų laikui yra nustatyta [registracijos tvarkaraštis](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule), o jo registracijos langas šiuo metu neatidarytas, registracija į to pamaldų laiko kambarius taip pat atmetama. Ekrane **Negalima dar registruoti** nurodomas kambarys ir priežastis „registracija šiuo metu neatidaryta“; palieskite **Keisti kambarius**, kad pasirinktumėte kitą pamaldų laiką ar grupę. (Jau uždaryti pamaldų laikai [šeimos ekrane](./household-review.md) rodomi kaip **Uždaryta** ir negali būti pasirinkti, todėl šį pranešimą paprastai pamatysite tik tuo atveju, jei langas užsidaro registracijos metu.)
 - Šeima, kuri jau registravosi ankstesniam pamaldų laikui, gali vėliau grįžti ir pridėti atidarytą pamaldų laiką, net jei ankstesnio laiko langas jau uždarytas. Jų esamos registracijos išlieka, ir jos nebus priežastis atmesti naujos registracijos.
 - Jei vaikų kambaryje trūksta savanorių pagal nustatytą santykį, programa arba parodo įspėjimą, kurį darbuotojas gali patvirtinti, kad tęstų, arba visiškai blokuoja registraciją – priklausomai nuo to, kaip jūsų bažnyčia nustatė santykio laikymosi taisykles.
 
@@ -49,7 +50,7 @@ Tas pats saugos kodas pateikiamas ir vaiko vardinėje etiketėje, ir tėvų atsi
 Saugos kodas kiekvienai registracijai generuojamas iš naujo ir naudoja tik priebalses bei skaitmenis (balsės neįtraukiamos, kad nesudarytų netinkamų žodžių).
 
 :::warning
-Jei etiketės nespausdinamas, atidarykite administratoriaus nustatymus palietę **bažnyčios logotipą** septynis kartus, tada palieskite **Keisti spausdintuvą**, kad patikrintumėte ryšį su spausdintuvu. Trikčių šalinimo žingsnius rasite skyriuje [Spausdintuvo nustatymas](../getting-started/printer-setup).
+Jei etiketės nespausdinamas, atidarykite administratoriaus nustatymus palietę **bažnyčios logotipą** septynis kartus, tada palieskite **Keisti spausdintuvą**, kad patikrintumėte ryšį su spausdintuvu. Trikčių šalinimo žingsnius rasite skyriuje [Spausdintuvo nustatymas](../getting-started/printer-setup.md).
 :::
 
 ## Kas vyksta po registracijos

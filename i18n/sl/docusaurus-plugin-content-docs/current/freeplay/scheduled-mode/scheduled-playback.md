@@ -1,5 +1,6 @@
 ---
 title: "Predvajanje po urniku na televizorju"
+description: "Povezan FreePlay TV prenese naslednji teden in predvaja po uri, tudi brez povezave. Zajema informacijsko ploščo, gumbe daljinca in pripenjanje seznama."
 ---
 
 # Predvajanje po urniku na televizorju
@@ -13,8 +14,8 @@ Ko je televizor povezan s koledarjem, ga FreePlay vodi namesto vas. Prenese vseb
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Povežite televizor s koledarjem](./pairing-a-screen)
-- [Dodajte vsebino v koledar](./scheduling-the-calendar) ali nastavite privzeto zanko za skupino zaslona
+- [Povežite televizor s koledarjem](./pairing-a-screen.md)
+- [Dodajte vsebino v koledar](./scheduling-the-calendar.md) ali nastavite privzeto zanko za skupino zaslona
 
 </div>
 
@@ -40,7 +41,7 @@ Plošča ima tudi tri gumbe:
 
 - **Pripni ta seznam predvajanja** - Ohrani trenutno vsebino v zanki in prezre koledar. Izberite **Odpni seznam predvajanja**, da se vrnete na urnik
 - **Prebrskaj vsebino** - Zapusti predvajalnik po urniku in prebrska vaše povezane ponudnike
-- **Nastavitve** - Odpre nastavitve FreePlay, kjer lahko [odstranite povezavo ali povežete drug koledar](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Nastavitve** - Odpre nastavitve FreePlay, kjer lahko [odstranite povezavo ali povežete drug koledar](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 Za vrnitev na urnik po brskanju pritisnite **Nazaj** na daljinskem upravljalniku na zaslonu **Ponudniki vsebine** ali odprite **Nastavitve**, izberite **Poveži s koledarjem** in nato **Nazaj na urnik**. Povezan televizor se vrne na predvajalnik po urniku tudi vedno, ko se FreePlay vrne v ospredje, in se vedno odpre na predvajalnik po urniku.
@@ -77,6 +78,6 @@ Koledar zaslona lahko predvajate tudi v spletnem brskalniku. V FreePlay Admin od
 
 ## Sorodni članki
 
-- **[Načrtovanje koledarja](./scheduling-the-calendar)** - Nastavite, kaj se predvaja in kaj se zgodi, ko se vsebina konča prej
-- **[Upravljanje zaslonov in skupin](./managing-screens)** - Preverite prenose vsakega zaslona v FreePlay Admin
-- **[Predvajanje vsebine](../content-providers/playing-content)** - Kontrole predvajalnika, kadar vsebino predvajate sami
+- **[Načrtovanje koledarja](./scheduling-the-calendar.md)** - Nastavite, kaj se predvaja in kaj se zgodi, ko se vsebina konča prej
+- **[Upravljanje zaslonov in skupin](./managing-screens.md)** - Preverite prenose vsakega zaslona v FreePlay Admin
+- **[Predvajanje vsebine](../content-providers/playing-content.md)** - Kontrole predvajalnika, kadar vsebino predvajate sami

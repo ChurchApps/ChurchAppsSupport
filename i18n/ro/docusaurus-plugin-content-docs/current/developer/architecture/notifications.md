@@ -1,5 +1,6 @@
 ---
 title: "Arhitectura notificărilor și a memento-urilor"
+description: "Cum direcționează API-ul B1 Admin notificările, reamintirile programate, limitele de e-mail ale bisericii și dezabonările de mesaje text printr-un singur canal de livrare și o poartă de preferințe."
 ---
 
 # Arhitectura notificărilor și a memento-urilor
@@ -185,6 +186,6 @@ Local, aceeași logică poate fi declanșată la cerere cu `npm run timer:30min`
 
 ## Pagini conexe
 
-- [Arhitectura în timp real](../realtime) — protocolul WebSocket și primitivele de client (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) pe care se bazează nivelul de livrare in-app
-- [Notificări Web Push](../web-push) — configurarea VAPID și calea API-ului Push din browser folosită de nivelul de escaladare push
-- [Endpoint-uri de mesagerie](../api/endpoints/messaging) — suprafața REST completă pentru mesaje, conversații, conexiuni și rutele de notificări/memento-uri
+- [Arhitectura în timp real](../realtime.md) — protocolul WebSocket și primitivele de client (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) pe care se bazează nivelul de livrare in-app
+- [Notificări Web Push](../web-push.md) — configurarea VAPID și calea API-ului Push din browser folosită de nivelul de escaladare push
+- [Endpoint-uri de mesagerie](../api/endpoints/messaging.md) — suprafața REST completă pentru mesaje, conversații, conexiuni și rutele de notificări/memento-uri

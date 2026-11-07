@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "اربط B1 Admin وText In Church معًا عبر Zapier: أنشئ مفتاح API، وابنِ Zap يربط بطاقة الاتصال بـ B1، وانسخ عضوية المجموعات."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ title: "Text In Church"
 
 ## انظر أيضًا
 
-- [Clearstream](./clearstream) — منصة SMS بديلة ذات بنية Zapier مشابهة
-- [Zapier (نظرة عامة)](../zapier) — الجانب B1 من كل وصفة Zapier
+- [Clearstream](./clearstream.md) — منصة SMS بديلة ذات بنية Zapier مشابهة
+- [Zapier (نظرة عامة)](../zapier.md) — الجانب B1 من كل وصفة Zapier
 - [دليل Zapier من Text In Church](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (وثائق TIC)

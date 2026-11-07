@@ -1,5 +1,6 @@
 ---
 title: "Mga Pag-apruba sa Kalendaryo"
+description: "Suriin ang nakabinbing booking ng kuwarto at resource sa B1 Admin, tingnan ang banggaan, at aprubahan o tanggihan ito; puwedeng i-publish ang event."
 ---
 
 # Mga Pag-apruba sa Kalendaryo
@@ -13,7 +14,7 @@ Ang pahinang Approvals ang lugar kung saan sinusuri at tinutugunan ng mga admini
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- Mag-configure ng mga silid o resource na may **Approval Group** sa [Rooms & Resources](rooms-resources)
+- Mag-configure ng mga silid o resource na may **Approval Group** sa [Rooms & Resources](./rooms-resources.md)
 - Kailangan ninyo ng pahintulot na **Calendars Admin** o ng pahintulot na **content.edit**
 
 </div>
@@ -41,7 +42,7 @@ I-click ang **Approve** o **Reject** sa anumang kahilingan sa pag-book (kailanga
 Kapag nag-click kayo ng **Approve**, magbubukas ang dialog na **Approve booking** para mailathala rin ninyo ang event sa parehong hakbang:
 
 1. Lagyan ng check ang **Publish to public calendar** para gawing pampubliko ang event sa kalendaryo ng grupo nito. Iwanang walang check para aprubahan ang booking nang hindi binabago ang visibility ng event.
-2. Kapag may check na ang **Publish to public calendar**, maaari kayong opsyonal na pumili ng curated calendar mula sa **Also add to calendar** para idagdag din ang event sa isa sa inyong [mga curated calendar](curated-calendar). Iwanang nakatakda sa **None** para laktawan ito. (Lumalabas lamang ang opsyong ito kung mayroon kayong pahintulot na **content.edit**.)
+2. Kapag may check na ang **Publish to public calendar**, maaari kayong opsyonal na pumili ng curated calendar mula sa **Also add to calendar** para idagdag din ang event sa isa sa inyong [mga curated calendar](./curated-calendar.md). Iwanang nakatakda sa **None** para laktawan ito. (Lumalabas lamang ang opsyong ito kung mayroon kayong pahintulot na **content.edit**.)
 3. I-click ang **Approve**.
 
 ## Mga Nakabinbing Event
@@ -49,10 +50,10 @@ Kapag nag-click kayo ng **Approve**, magbubukas ang dialog na **Approve booking*
 Kung nangangailangan ang workflow ng inyong kalendaryo ng pag-apruba sa event bago ito makita ng publiko, lalabas ang mga nakabinbing event sa seksyong **Event Requests**. I-click ang **Approve** para mailathala ang event sa kalendaryo, o ang **Reject** para ipaalam sa nagsumite na may mga pagbabagong kailangan.
 
 :::tip
-Mag-set up ng Approval Group sa isang silid sa [Rooms & Resources](rooms-resources) para mangailangan ng pag-apruba para sa silid na iyon. Maaari nang humiling ng silid ang mga grupong may access kapag lumilikha ng mga event, at mapupunta sa pahinang ito ang mga kahilingang iyon.
+Mag-set up ng Approval Group sa isang silid sa [Rooms & Resources](./rooms-resources.md) para mangailangan ng pag-apruba para sa silid na iyon. Maaari nang humiling ng silid ang mga grupong may access kapag lumilikha ng mga event, at mapupunta sa pahinang ito ang mga kahilingang iyon.
 :::
 
 ## Mga Kaugnay na Artikulo
 
-- [Mga Silid, Resource at Pag-iiskedyul](rooms-resources) — i-configure ang mga silid at resource na maaaring i-book
-- [Paglikha ng mga Kalendaryo](creating-calendars) — pamahalaan ang mga kalendaryo at event
+- [Mga Silid, Resource at Pag-iiskedyul](./rooms-resources.md) — i-configure ang mga silid at resource na maaaring i-book
+- [Paglikha ng mga Kalendaryo](./creating-calendars.md) — pamahalaan ang mga kalendaryo at event

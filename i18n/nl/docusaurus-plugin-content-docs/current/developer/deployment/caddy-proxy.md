@@ -1,5 +1,6 @@
 ---
 title: "Caddy-proxy voor eigen domeinen"
+description: "Bouw en draai de Caddy-reverse-proxy die eigen kerkdomeinen voor B1.church-sites bedient: TLS-certificaten, hostmapping en bekende valkuilen."
 ---
 
 # Caddy-proxy voor eigen domeinen
@@ -10,7 +11,7 @@ Eigen domeinen van kerken (`mychurch.org` → de B1-website van de kerk) komen b
 
 </div>
 
-Hoe een verzoek, zodra het bij B1App aankomt, wordt omgezet naar een kerk en site, staat beschreven in [Websiteroutering & meerdere sites](../architecture/websites).
+Hoe een verzoek, zodra het bij B1App aankomt, wordt omgezet naar een kerk en site, staat beschreven in [Websiteroutering & meerdere sites](../architecture/websites.md).
 
 ## Onderdelen
 
@@ -88,5 +89,5 @@ De admin-API luistert alleen op `localhost:2019`. De verouderde runtime-modus ma
 
 ## Gerelateerde pagina's
 
-- [Websiteroutering & meerdere sites](../architecture/websites): hoe het geproxied verzoek in B1App wordt omgezet naar een kerk en site
-- [API-implementatie](./apis): de implementatie van de Membership API die `authorize`/`hostmap` levert
+- [Websiteroutering & meerdere sites](../architecture/websites.md): hoe het geproxied verzoek in B1App wordt omgezet naar een kerk en site
+- [API-implementatie](./apis.md): de implementatie van de Membership API die `authorize`/`hostmap` levert

@@ -1,5 +1,6 @@
 ---
 title: "Pendaftaran Tamu"
+description: "Daftarkan diri dan keluarga Anda sebagai tamu pertama kali lewat formulir QR di B1 Checkin agar relawan dapat mengecek Anda saat tiba."
 ---
 
 # Pendaftaran Tamu
@@ -22,7 +23,7 @@ Jika Anda mengunjungi gereja untuk pertama kali, Anda dapat mendaftarkan diri da
 
 Pendaftaran tamu dirancang untuk pengunjung yang belum memiliki akun. Pada kiosk check-in gereja, ketuk **Daftar sebagai tamu** untuk menampilkan QR code yang mengarah ke halaman pendaftaran. Anda juga dapat menerima tautan dari relawan atau petugas penyambutan, atau menemukannya pada brosur atau situs web gereja.
 
-Tidak membawa ponsel? Pada jendela QR code yang sama di kiosk, ketuk **Daftar di sini** untuk mengisi formulir langsung di kiosk. Lihat [Mendaftar sebagai Tamu](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest) untuk mengetahui cara kerjanya di kiosk.
+Tidak membawa ponsel? Pada jendela QR code yang sama di kiosk, ketuk **Daftar di sini** untuk mengisi formulir langsung di kiosk. Lihat [Mendaftar sebagai Tamu](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) untuk mengetahui cara kerjanya di kiosk.
 
 Halaman akan terbuka dengan judul **Pendaftaran Tamu**. Jika gereja telah menambahkan foto header, foto tersebut akan muncul di bagian atas halaman; jika tidak, Anda akan melihat ikon kecil.
 
@@ -51,7 +52,7 @@ Pendaftaran Anda akan membuat catatan dalam basis data gereja:
 - **Catatan orang** dibuat untuk setiap anggota keluarga dengan status keanggotaan "Pengunjung".
 - Komentar yang Anda masukkan disimpan sebagai catatan pada data kontak utama agar dapat dibaca oleh staf gereja.
 - Jika gereja telah memilih kelompok untuk tamu baru, keluarga Anda akan ditambahkan ke kelompok tersebut. Gereja juga mungkin mencatat kehadiran Anda secara otomatis jika Anda mendaftar pada salah satu jadwal ibadah kelompok tersebut.
-- Relawan atau administrator gereja kemudian dapat melakukan check-in untuk keluarga Anda menggunakan kiosk [B1 Checkin](../../b1-checkin/check-in/looking-up-members).
+- Relawan atau administrator gereja kemudian dapat melakukan check-in untuk keluarga Anda menggunakan kiosk [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md).
 
 :::info
 Jika Anda mendaftar lagi dengan nama depan yang sama dan email atau nomor telepon yang sama, catatan gereja akan mengenali Anda dan menggunakan kembali profil yang sudah ada, alih-alih menambahkan duplikat. Orang lain akan ditambahkan sebagai data baru. Jika Anda sudah pernah mendaftar, Anda juga dapat langsung mencari nama atau nomor telepon Anda di kiosk.
@@ -63,6 +64,6 @@ Jika formulir meminta alamat email Anda, mencantumkannya akan membantu gereja me
 
 ## Artikel Terkait
 
-- [Self Check-In](./self-checkin) -- Lakukan check-in sendiri setelah mendaftar
-- [Menambahkan Tamu (Kiosk)](../../b1-checkin/check-in/adding-guests) -- Cara relawan menambahkan tamu di kiosk
-- [Check-In](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- Cara administrator gereja mengatur pendaftaran tamu melalui QR code
+- [Self Check-In](./self-checkin.md) -- Lakukan check-in sendiri setelah mendaftar
+- [Menambahkan Tamu (Kiosk)](../../b1-checkin/check-in/adding-guests.md) -- Cara relawan menambahkan tamu di kiosk
+- [Check-In](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Cara administrator gereja mengatur pendaftaran tamu melalui QR code

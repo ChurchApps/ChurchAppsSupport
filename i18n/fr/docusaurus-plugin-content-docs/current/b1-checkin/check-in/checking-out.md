@@ -1,5 +1,6 @@
 ---
 title: "Départ et sécurité des enfants"
+description: "Faites sortir les enfants sur un poste B1 Checkin : codes de sécurité, personnes autorisées vérifiées, appel des parents et diffusions d'urgence."
 ---
 
 # Départ et sécurité des enfants
@@ -14,7 +15,7 @@ Le départ ferme la boucle sur l'enregistrement des enfants : un parent présent
 <h4>Avant de commencer</h4>
 
 - Le départ est disponible sur les stations définies en mode **manned** dans les paramètres d'administration du kiosque
-- Les enfants doivent avoir été [enregistrés](./completing-checkin) avec une étiquette de retrait imprimée portant le code de sécurité
+- Les enfants doivent avoir été [enregistrés](./completing-checkin.md) avec une étiquette de retrait imprimée portant le code de sécurité
 - La pagination et les diffusions d'urgence nécessitent que votre église ait un fournisseur de texte connecté dans B1 Admin
 
 </div>
@@ -39,7 +40,7 @@ Si un nom tapé correspond à quelqu'un marqué comme **Non autorisé** pour ce 
 Une fois la personne qui prend en charge confirmée, appuyez sur le départ. Le nom de la personne qui reprend est stocké avec le dossier de participation.
 
 :::info
-Les personnes de prise en charge de confiance et non autorisées sont gérées par le personnel de l'église sur la page de chaque personne dans B1 Admin -- consultez [Sécurité de l'enregistrement](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Les personnes de prise en charge de confiance et non autorisées sont gérées par le personnel de l'église sur la page de chaque personne dans B1 Admin -- consultez [Sécurité de l'enregistrement](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Appel d'un parent
@@ -65,6 +66,6 @@ La diffusion va à chaque ménage enregistré pour le service sélectionné. Uti
 
 ## Articles connexes
 
-- [Fin de l'enregistrement](./completing-checkin) -- d'où proviennent les codes de sécurité et les étiquettes de retrait
-- [Sécurité de l'enregistrement](../../b1-admin/attendance/checkin-safety) -- configuration des capacités, ratios, personnes de prise en charge et exigence du fournisseur de texte
-- [Configuration de l'imprimante](../getting-started/printer-setup) -- configuration de l'imprimante d'étiquettes
+- [Fin de l'enregistrement](./completing-checkin.md) -- d'où proviennent les codes de sécurité et les étiquettes de retrait
+- [Sécurité de l'enregistrement](../../b1-admin/attendance/checkin-safety.md) -- configuration des capacités, ratios, personnes de prise en charge et exigence du fournisseur de texte
+- [Configuration de l'imprimante](../getting-started/printer-setup.md) -- configuration de l'imprimante d'étiquettes

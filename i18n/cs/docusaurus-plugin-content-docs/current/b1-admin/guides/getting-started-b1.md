@@ -1,5 +1,6 @@
 ---
 title: "Příručka: Spusťte svou církev s B1"
+description: "Projděte nastavení nového sboru v B1 Admin: vytvořte účet, nakonfigurujte nastavení, přidejte role, importujte členy a spusťte klíčové funkce."
 ---
 
 # Spusťte svou církev s B1

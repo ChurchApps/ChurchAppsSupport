@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "Lokální nastavení editoru lekcí LessonsApp (Next.js) na Node.js 22+, připojení k lokálnímu LessonsApi a popis sestavení a nasazení na S3/CloudFront."
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ LessonsApp je aplikace pro správu lekcí pro [Lessons.church](https://lessons.c
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Nainstalujte **Node.js 22+** a **Git** -- viz [Požadavky](../setup/prerequisites)
-- Nakonfigurujte cíl API (místní LessonsApi) -- viz [Proměnné prostředí](../setup/environment-variables)
+- Nainstalujte **Node.js 22+** a **Git** -- viz [Požadavky](../setup/prerequisites.md)
+- Nakonfigurujte cíl API (místní LessonsApi) -- viz [Proměnné prostředí](../setup/environment-variables.md)
 
 </div>
 
@@ -81,5 +82,5 @@ Produkční sestavení se nasazují do **S3 + CloudFront**:
 3. Spustí se invalidace CloudFront, aby se doručovala nová verze
 
 :::tip
-Podrobné pokyny k nasazení najdete v průvodci [Nasazení webových aplikací](../deployment/web-apps).
+Podrobné pokyny k nasazení najdete v průvodci [Nasazení webových aplikací](../deployment/web-apps.md).
 :::

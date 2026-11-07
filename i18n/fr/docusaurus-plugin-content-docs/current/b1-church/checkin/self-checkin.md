@@ -1,5 +1,7 @@
 ---
-title: "Enregistrement autonome"
+title: "Auto-enregistrement dans le portail membre B1.church"
+sidebar_label: "Enregistrement autonome"
+description: "Enregistrez-vous et votre foyer à un culte depuis le portail membre B1.church, en choisissant horaires et groupes en quelques étapes rapides."
 ---
 
 # Enregistrement autonome
@@ -45,7 +47,7 @@ Une fois les groupes sélectionnés pour toutes les personnes présentes, appuye
 
 Vous verrez une confirmation indiquant que votre enregistrement est terminé et que votre présence a été enregistrée. Après un instant, la page revient à la liste des services, prête pour le prochain enregistrement.
 
-Si votre église imprime des badges à une borne d'enregistrement, vous verrez plutôt **Vous êtes enregistré !** avec un QR code et un code de sécurité. Présentez ce code à une borne d'enregistrement pour imprimer vos badges, puis appuyez sur **Terminé**. Sur une borne B1 Checkin, appuyez sur **Scanner le code** et présentez le QR code devant la caméra ; voir [Imprimer les étiquettes pour un enregistrement par téléphone](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Si votre église imprime des badges à une borne d'enregistrement, vous verrez plutôt **Vous êtes enregistré !** avec un QR code et un code de sécurité. Présentez ce code à une borne d'enregistrement pour imprimer vos badges, puis appuyez sur **Terminé**. Sur une borne B1 Checkin, appuyez sur **Scanner le code** et présentez le QR code devant la caméra ; voir [Imprimer les étiquettes pour un enregistrement par téléphone](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Si votre foyer est déjà enregistré pour le service sélectionné, un lien **Afficher le code d'enregistrement** apparaît à côté du titre **Qui est là**. Appuyez dessus pour afficher à nouveau le QR code et le code de sécurité, par exemple si vous avez fermé la page avant d'arriver à une borne d'enregistrement.
 

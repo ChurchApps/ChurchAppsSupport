@@ -1,5 +1,6 @@
 ---
 title: "Mobile Message"
+description: "Повежите догађаје B1 Admin са Mobile Message SMS API-јем преко Zapier или Make webhook-ова за поруке добродошлице, донација и подсетника."
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ Mobile Message API је по природи „слање SMS-а“: нема о
 
 ### Make као алтернатива
 
-Ако радије користите Make, додајте модул **HTTP — Make a request** после окидача B1 Watch Events и подесите га на исти начин (POST, Basic Auth, JSON тело). За B1 страну погледајте [Преглед Make-а](../make).
+Ако радије користите Make, додајте модул **HTTP — Make a request** после окидача B1 Watch Events и подесите га на исти начин (POST, Basic Auth, JSON тело). За B1 страну погледајте [Преглед Make-а](../make.md).
 
 ## Ограничења и напомене
 
@@ -102,6 +103,6 @@ Mobile Message API је по природи „слање SMS-а“: нема о
 
 ## Погледајте такође
 
-- [Clearstream](./clearstream), [Text In Church](./text-in-church): алтернативни SMS провајдери са изворним Zapier апликацијама (не треба корак Webhooks by Zapier)
-- [Zapier (преглед)](../zapier): B1 страна сваког Zapier рецепта
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md): алтернативни SMS провајдери са изворним Zapier апликацијама (не треба корак Webhooks by Zapier)
+- [Zapier (преглед)](../zapier.md): B1 страна сваког Zapier рецепта
 - [Документација Mobile Message API-ја](https://mobilemessage.com.au/api-documentation)

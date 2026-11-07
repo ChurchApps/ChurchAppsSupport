@@ -1,5 +1,7 @@
 ---
-title: "Služby"
+title: "Přehled služby v B1 Admin"
+sidebar_label: "Služby"
+description: "Koordinujte dobrovolníky a plánujte bohoslužby v sekci Serving v B1 Admin, od záložek služeb a týmů po plány, písně a úkoly."
 ---
 
 # Služby

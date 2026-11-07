@@ -6,7 +6,7 @@ description: "Draf pengaturan Twilio milik gereja untuk B1, panduan pendaftaran 
 # Draf orientasi Twilio milik gereja
 
 :::caution Draf untuk integrasi yang diusulkan
-Ini adalah alur kerja yang diusulkan. B1 kini memiliki pilihan **Twilio** dasar di **Settings > Texting** (Account SID, Auth Token, From Number, dan webhook STOP masuk) -- lihat [Pengaturan Gereja: Texting](../../b1-admin/settings/church-settings.md#texting). Kontrol pengaturan B1 tambahan, pemetaan persetujuan, dan langkah validasi di bawah ini adalah persyaratan untuk rilis mendatang, bukan petunjuk untuk mencari pengaturan yang sudah ada. Baca [proposal teknis](./twilio-byok-proposal) untuk ruang lingkup dan ketergantungan. Sumber Twilio diperiksa pada 22 Oktober 2026; verifikasi persyaratan terkini sebelum mengirimkan kampanye.
+Ini adalah alur kerja yang diusulkan. B1 kini memiliki pilihan **Twilio** dasar di **Settings > Texting** (Account SID, Auth Token, From Number, dan webhook STOP masuk) -- lihat [Pengaturan Gereja: Texting](../../b1-admin/settings/church-settings.md#texting). Kontrol pengaturan B1 tambahan, pemetaan persetujuan, dan langkah validasi di bawah ini adalah persyaratan untuk rilis mendatang, bukan petunjuk untuk mencari pengaturan yang sudah ada. Baca [proposal teknis](./twilio-byok-proposal.md) untuk ruang lingkup dan ketergantungan. Sumber Twilio diperiksa pada 22 Oktober 2026; verifikasi persyaratan terkini sebelum mengirimkan kampanye.
 :::
 
 ## Susunan yang direkomendasikan
@@ -34,7 +34,7 @@ Untuk formulir pendaftaran SMS yang diusulkan:
 | Otomatisasi yang ada | Jangan mendaftarkan setiap pengirim formulir atau anggota grup ke alur kerja pesan teks. Hanya pemetaan persetujuan terverifikasi yang diusulkan yang dapat mengotorisasi program tersebut. |
 | Pesan terima kasih | Konfirmasi bahwa formulir telah diterima tanpa mengklaim pendaftaran SMS ketika kotak ditolak atau konfirmasi/peninjauan masih tertunda. |
 
-Formulir yang ada dapat dijadikan contoh tampilan, tetapi B1 tetap membutuhkan catatan persetujuan dan gerbang pengiriman. Renderer bersama yang berlaku saat ini menampilkan deskripsi sebagai teks biasa; menulis Markdown atau URL di sana tidak cukup untuk memastikan tautan kebijakan dapat diklik. Implementasi harus menyediakan kontrol persetujuan yang dapat diakses beserta tautan yang sebenarnya. Lihat [membuat formulir B1](../../b1-admin/forms/creating-forms) dan [proposal teknis](./twilio-byok-proposal#consent-and-suppression-are-required-release-work).
+Formulir yang ada dapat dijadikan contoh tampilan, tetapi B1 tetap membutuhkan catatan persetujuan dan gerbang pengiriman. Renderer bersama yang berlaku saat ini menampilkan deskripsi sebagai teks biasa; menulis Markdown atau URL di sana tidak cukup untuk memastikan tautan kebijakan dapat diklik. Implementasi harus menyediakan kontrol persetujuan yang dapat diakses beserta tautan yang sebenarnya. Lihat [membuat formulir B1](../../b1-admin/forms/creating-forms.md) dan [proposal teknis](./twilio-byok-proposal.md#consent-and-suppression-are-required-release-work).
 
 Twilio mensyaratkan opt-in sukarela yang dapat diverifikasi. Jangan gabungkan SMS dengan ketentuan keanggotaan wajib, izin email/telepon, persetujuan donasi, atau pendaftaran acara. Nomor seluler pada kartu pengunjung dengan sendirinya bukan persetujuan SMS. Lihat [persyaratan persetujuan sukarela](https://www.twilio.com/docs/api/errors/30923) dari Twilio dan [rekomendasi kampanye](https://help.twilio.com/hc/en-us/articles/26149060902555-A2P-10DLC-Campaign-Registration-Recommendations).
 

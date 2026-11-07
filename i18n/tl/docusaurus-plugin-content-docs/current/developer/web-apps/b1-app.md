@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "I-set up nang lokal ang B1App member web app gamit ang Next.js 22+, i-configure ang API endpoints sa .env, at patakbuhin ang dev server sa port 3301."
 ---
 
 # B1App
@@ -13,8 +14,8 @@ Ang B1App ay ang public-facing na church member application na binuo gamit ang N
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-install ang **Node.js 22+** at **Git** -- tingnan ang [Prerequisites](../setup/prerequisites)
-- I-configure ang iyong API target (demo o local) -- tingnan ang [Environment Variables](../setup/environment-variables)
+- I-install ang **Node.js 22+** at **Git** -- tingnan ang [Prerequisites](../setup/prerequisites.md)
+- I-configure ang iyong API target (demo o local) -- tingnan ang [Environment Variables](../setup/environment-variables.md)
 
 </div>
 
@@ -89,5 +90,5 @@ Ang mga production build ay idinedeploy sa **S3 + CloudFront**:
 3. Itinatrigger ang CloudFront invalidation para maihatid ang bagong bersyon
 
 :::tip
-Para sa detalyadong instruksyon sa deployment, tingnan ang gabay na [Web App Deployment](../deployment/web-apps).
+Para sa detalyadong instruksyon sa deployment, tingnan ang gabay na [Web App Deployment](../deployment/web-apps.md).
 :::

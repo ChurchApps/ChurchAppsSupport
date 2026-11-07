@@ -1,5 +1,6 @@
 ---
 title: "Gabay: Simulan ang Iyong Simbahan sa B1"
+description: "Gabay sa pag-set up ng bagong simbahan sa B1 Admin: account, settings, role, pag-import ng miyembro, at paglunsad ng mga pangunahing feature."
 ---
 
 # Simulan ang Iyong Simbahan sa B1

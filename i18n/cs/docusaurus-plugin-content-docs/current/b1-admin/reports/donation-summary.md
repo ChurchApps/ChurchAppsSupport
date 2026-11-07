@@ -1,5 +1,6 @@
 ---
 title: "Přehled darů"
+description: "Spusťte přehled darů v B1 Admin a zjistěte celkovou částku darů, počet jedinečných dárců a částky podle fondu za libovolné období."
 ---
 
 # Přehled darů

@@ -1,5 +1,7 @@
 ---
-title: "Phát trực tiếp"
+title: "Xem phát trực tiếp trong ứng dụng B1 Mobile"
+sidebar_label: "Phát trực tiếp"
+description: "Xem phát sóng trực tiếp của nhà thờ trong ứng dụng B1 Mobile, vào màn hình Stream từ ngăn kéo hoặc bộ đếm ngược Sermons, và xem giờ bắt đầu buổi lễ."
 ---
 
 # Phát trực tiếp
@@ -13,14 +15,14 @@ B1 Mobile cho phép bạn xem luồng phát trực tiếp của nhà thờ ngay 
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
 - Nhà thờ của bạn phải đã thiết lập lịch phát trực tiếp
 
 </div>
 
 ## Xem luồng phát trực tiếp
 
-1. Mở màn hình **Stream** từ menu ngăn kéo, hoặc nhấn vào bộ đếm ngược trên màn hình [Sermons](./sermons) khi luồng phát trực tiếp sắp bắt đầu.
+1. Mở màn hình **Stream** từ menu ngăn kéo, hoặc nhấn vào bộ đếm ngược trên màn hình [Sermons](./sermons.md) khi luồng phát trực tiếp sắp bắt đầu.
 2. Nếu một buổi lễ đang phát trực tiếp, trình phát video sẽ tự động tải và chương trình bắt đầu phát.
 3. Xem luồng phát trực tiếp ngay trong ứng dụng.
 
@@ -31,7 +33,7 @@ Khi không có luồng phát trực tiếp nào đang hoạt động, màn hình
 Có hai cách để truy cập luồng phát trực tiếp:
 
 - **Menu ngăn kéo** -- Mở menu ngăn kéo và nhấn **Stream** để chuyển thẳng đến màn hình phát trực tiếp.
-- **Màn hình Sermons** -- Khi một luồng phát trực tiếp được lên lịch trong vòng 24 giờ tới, một bộ đếm ngược sẽ xuất hiện trên màn hình [Sermons](./sermons). Khi chương trình bắt đầu phát, bạn có thể chuyển đến luồng từ đó.
+- **Màn hình Sermons** -- Khi một luồng phát trực tiếp được lên lịch trong vòng 24 giờ tới, một bộ đếm ngược sẽ xuất hiện trên màn hình [Sermons](./sermons.md). Khi chương trình bắt đầu phát, bạn có thể chuyển đến luồng từ đó.
 
 ## Trước và sau buổi lễ
 
@@ -46,5 +48,5 @@ Nếu màn hình luồng hiển thị bộ đếm ngược hoặc thông báo ng
 Màn hình phát trực tiếp chỉ khả dụng khi nhà thờ của bạn đã thiết lập lịch phát trực tiếp. Nếu bạn không thấy tùy chọn **Stream** trong menu ngăn kéo của ứng dụng, nhà thờ có thể chưa thiết lập tính năng phát trực tiếp. Hãy liên hệ quản trị viên nhà thờ để biết thêm chi tiết.
 
 :::tip
-Hãy xem màn hình [Sermons](./sermons) để biết bộ đếm ngược hiển thị thời gian buổi phát sóng tiếp theo sẽ bắt đầu.
+Hãy xem màn hình [Sermons](./sermons.md) để biết bộ đếm ngược hiển thị thời gian buổi phát sóng tiếp theo sẽ bắt đầu.
 :::

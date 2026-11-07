@@ -1,5 +1,6 @@
 ---
 title: "Mobilné aplikácie"
+description: "Prehľad mobilných aplikácií ChurchApps (Expo a React Native): B1 Mobile, B1 Checkin a LessonsScreen, s odkazom na návod k spoločnému nástrojovému prostrediu."
 ---
 
 # Mobilné aplikácie
@@ -14,13 +15,13 @@ Mobilné aplikácie ChurchApps sú postavené na **React Native** a **Expo** a p
 
 | Aplikácia | Účel | Platforma |
 |-----|---------|----------|
-| [B1 Mobile](./b1-mobile) | Hlavná aplikácia pre členov cirkvi | Android, iOS |
+| [B1 Mobile](./b1-mobile.md) | Hlavná aplikácia pre členov cirkvi | Android, iOS |
 | B1 Checkin | Kioskova aplikácia pre prihlasovacie stanice | Android, iOS |
 | LessonsScreen | Aplikácia pre Android TV na zobrazovanie lekcií v triedach | Android TV |
 
 ### B1 Mobile
 
-Hlavná aplikácia pre členov cirkvi. Členovia si môžu prezerať adresáre, pristupovať k darovaniu, zaznamenávať účasť, prijímať upozornenia a komunikovať so svojou cirkevnou komunitou. Podrobnosti nájdete v [sprievodcovi nastavením B1 Mobile](./b1-mobile).
+Hlavná aplikácia pre členov cirkvi. Členovia si môžu prezerať adresáre, pristupovať k darovaniu, zaznamenávať účasť, prijímať upozornenia a komunikovať so svojou cirkevnou komunitou. Podrobnosti nájdete v [sprievodcovi nastavením B1 Mobile](./b1-mobile.md).
 
 ### B1 Checkin
 
@@ -31,5 +32,5 @@ Kioskova aplikácia navrhnutá na prihlasovacie stanice v cirkvách. Poskytuje j
 Aplikácia pre Android TV, ktorá zobrazuje obsah lekcií v triedach. Učitelia môžu posielať snímky lekcií, videá a aktivity na obrazovku televízora, čo uľahčuje prezentovanie učebného materiálu počas hodín.
 
 :::info
-Všetky mobilné aplikácie zdieľajú rovnaký nástrojový reťazec založený na Expo a dodržiavajú podobné postupy nastavenia. Sprievodca [B1 Mobile](./b1-mobile) slúži ako referencia všeobecného postupu nastavenia vo všetkých mobilných projektoch.
+Všetky mobilné aplikácie zdieľajú rovnaký nástrojový reťazec založený na Expo a dodržiavajú podobné postupy nastavenia. Sprievodca [B1 Mobile](./b1-mobile.md) slúži ako referencia všeobecného postupu nastavenia vo všetkých mobilných projektoch.
 :::

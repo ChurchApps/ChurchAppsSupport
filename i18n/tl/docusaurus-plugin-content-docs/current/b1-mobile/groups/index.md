@@ -1,5 +1,7 @@
 ---
-title: "Mga Grupo"
+title: "Screen ng Groups sa B1 Mobile"
+sidebar_label: "Mga Grupo"
+description: "Hanapin ang mga grupong kinabibilangan mo sa Groups screen ng B1 Mobile, kasama ang pinakabisitang grupo sa itaas at iba pang grupo sa ibaba."
 ---
 
 # Mga Grupo
@@ -30,10 +32,10 @@ Narito ang maaari mong gawin mula sa Groups screen:
 - **Manatiling konektado** -- Tingnan kung ano ang ibinabahagi ng iyong mga miyembro ng grupo, sumabay sa mga pag-uusap, at makisali sa nilalaman ng grupo.
 
 :::tip
-Ang Groups screen ay umaangkop sa iyong paggamit, tulad ng [dashboard](../dashboard/). Ang mga grupo na pinakamadalas mong bisitahin ay inilalabas sa itaas para sa mabilis na access.
+Ang Groups screen ay umaangkop sa iyong paggamit, tulad ng [dashboard](../dashboard/index.md). Ang mga grupo na pinakamadalas mong bisitahin ay inilalabas sa itaas para sa mabilis na access.
 :::
 
 ## Mga Susunod na Hakbang
 
-- [Mga Detalye ng Grupo](./group-details) -- Tingnan kung ano ang nasa detail page ng grupo
-- [Timeline ng Grupo](./group-timeline) -- Alamin ang tungkol sa pinag-isang activity feed sa lahat ng iyong mga grupo
+- [Mga Detalye ng Grupo](./group-details.md) -- Tingnan kung ano ang nasa detail page ng grupo
+- [Timeline ng Grupo](./group-timeline.md) -- Alamin ang tungkol sa pinag-isang activity feed sa lahat ng iyong mga grupo

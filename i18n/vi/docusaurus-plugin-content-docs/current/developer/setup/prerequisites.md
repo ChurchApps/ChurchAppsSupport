@@ -1,5 +1,6 @@
 ---
 title: "Điều kiện tiên quyết"
+description: "Cài đặt Node.js, npm, Git và bộ công cụ theo nền tảng trước khi làm việc với dự án ChurchApps như B1 Admin, Lessons.church, FreePlay hoặc API cục bộ."
 ---
 
 # Điều kiện tiên quyết
@@ -13,7 +14,7 @@ Các công cụ bạn cần phụ thuộc vào những dự án bạn định l�
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Xem [Tổng quan dự án](./project-overview) để xác định những dự án bạn muốn làm việc
+- Xem [Tổng quan dự án](./project-overview.md) để xác định những dự án bạn muốn làm việc
 - Có quyền quản trị viên trên máy phát triển để cài đặt phần mềm
 
 </div>
@@ -40,7 +41,7 @@ Nếu bạn định chạy API cục bộ (thay vì trỏ đến các API demo):
 |------|---------|-------|
 | **MySQL** | 8.0+ | Mỗi mô-đun API dùng một cơ sở dữ liệu riêng |
 
-Bạn sẽ cần sáu cơ sở dữ liệu cho API cốt lõi: `membership`, `attendance`, `content`, `giving`, `messaging` và `doing`. API có kèm các script để khởi tạo lược đồ -- xem hướng dẫn [thiết lập API cục bộ](../api/local-setup).
+Bạn sẽ cần sáu cơ sở dữ liệu cho API cốt lõi: `membership`, `attendance`, `content`, `giving`, `messaging` và `doing`. API có kèm các script để khởi tạo lược đồ -- xem hướng dẫn [thiết lập API cục bộ](../api/local-setup.md).
 
 ## Phát triển ứng dụng di động
 
@@ -110,5 +111,5 @@ mysql --version   # Chỉ cần khi phát triển API cục bộ
 
 ## Bước tiếp theo
 
-- **[Tổng quan dự án](./project-overview)** -- Xem tất cả các dự án và chức năng của chúng
-- **[Biến môi trường](./environment-variables)** -- Cấu hình các tệp `.env` của bạn
+- **[Tổng quan dự án](./project-overview.md)** -- Xem tất cả các dự án và chức năng của chúng
+- **[Biến môi trường](./environment-variables.md)** -- Cấu hình các tệp `.env` của bạn

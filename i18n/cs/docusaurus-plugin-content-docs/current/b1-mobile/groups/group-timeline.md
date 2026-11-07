@@ -1,5 +1,6 @@
 ---
 title: "Skupina – časová osa"
+description: "Jak časová osa skupin v B1 Mobile slučuje příspěvky, konverzace a aktualizace ze všech vašich skupin do jednoho kanálu a co dělat, když je pozastavena."
 ---
 
 # Skupina – časová osa
@@ -17,7 +18,7 @@ Funkce časové osy skupiny je dočasně nedostupná, protože pracujeme na jej�
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing) a [se přihlaste](../getting-started/logging-in) ke svému účtu
+- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing.md) a [se přihlaste](../getting-started/logging-in.md) ke svému účtu
 - Buďte členem alespoň jedné skupiny ve svém sboru
 
 </div>
@@ -41,7 +42,7 @@ U každé položky na časové ose je uvedeno, z které skupiny pochází, takž
 Časová osa je skvělý způsob, jak být rychle v kontaktu se svou církevní komunitou. Zde je několik tipů, jak ji co nejlépe využít:
 
 - **Pravidelně se podívejte** -- Otevřete obrazovku Skupiny a procházejte časovou osu, abyste si přečetli nedávnou aktivitu.
-- **Klepněte pro další informace** -- Pokud vás některý příspěvek zaujme, klepněte na něj nebo na název skupiny a přejděte na celou [stránku s podrobnostmi o skupině](./group-details), kde najdete další souvislosti.
+- **Klepněte pro další informace** -- Pokud vás některý příspěvek zaujme, klepněte na něj nebo na název skupiny a přejděte na celou [stránku s podrobnostmi o skupině](./group-details.md), kde najdete další souvislosti.
 - **Vše na jednom místě** -- Nemusíte navštěvovat každou skupinu zvlášť. Časová osa vám přinese veškerou aktivitu.
 
 :::info
@@ -54,5 +55,5 @@ Zapněte [oznámení push](../community/notifications.md), abyste byli upozorně
 
 ## Související články
 
-- [Podrobnosti o skupině](./group-details) -- Zobrazení úplného profilu jedné skupiny a jejích příspěvků
+- [Podrobnosti o skupině](./group-details.md) -- Zobrazení úplného profilu jedné skupiny a jejích příspěvků
 - [Oznámení](../community/notifications.md) -- Upozornění na aktivitu ve skupinách

@@ -1,5 +1,7 @@
 ---
-title: "Kwenta Umnikelo"
+title: "Kwenta Sipho Ku-B1 Mobile"
+sidebar_label: "Kwenta Umnikelo"
+description: "Nikela licawe lakho kusuka kuthebhu ye-Donate ku-B1 Mobile: khetsa sikhwama, faka inani, khokha nge-Stripe, bese uphindze tipho letingaphambili ngekushesha."
 ---
 
 # Kwenta Umnikelo
@@ -13,8 +15,8 @@ Kunikela nge-B1 Mobile kusheshako futsi kulula. Ithebhu ye-**Nikela** engcenyeni
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- [Faka B1 Mobile](../getting-started/installing) futsi [ungene](../getting-started/logging-in) ku-akhawundi yakho
-- Yiba nelikhadi lesikweleti nome le-debit lelilungele, nome [ugcine indlela yekukhokha](./managing-payments) kusengaphambili
+- [Faka B1 Mobile](../getting-started/installing.md) futsi [ungene](../getting-started/logging-in.md) ku-akhawundi yakho
+- Yiba nelikhadi lesikweleti nome le-debit lelilungele, nome [ugcine indlela yekukhokha](./managing-payments.md) kusengaphambili
 
 </div>
 
@@ -42,10 +44,10 @@ Hlola kabili inani lemnikelo kanye nesikhwama ngaphambi kwekutfumela. Iminikelo 
 Nangabe ufuna kunikela ngalelo nani lomnikelo wakho wekugcina, awudzingi kuhamba yonkhe inchubo yekunikela. Ithebhu ye-**Simo Lesijikelele** ikhombisa umnikelo wakho wekamuva kanye nenkinombho ye-**Repeat**. Yicindzetele kute utfumele lomunye umnikelo lofananako ngekushesha.
 
 :::tip
-Nangabe uhlela kunikela njalonjalo, gcina indlela yakho yekukhokha ethebhini ye-**Phatsa** kute ukhone kunikela ngekushesha nakuvela sikhatsi lesitako. Bona [Kuphatsa Tindlela Tekukhokha](./managing-payments) kutfola imininingwane.
+Nangabe uhlela kunikela njalonjalo, gcina indlela yakho yekukhokha ethebhini ye-**Phatsa** kute ukhone kunikela ngekushesha nakuvela sikhatsi lesitako. Bona [Kuphatsa Tindlela Tekukhokha](./managing-payments.md) kutfola imininingwane.
 :::
 
 ## Emahloka Lahlobene
 
-- [Kuphatsa Tindlela Tekukhokha](./managing-payments) -- Gcina likhadi kute unikele ngekushesha ngesikhatsi lesitako
-- [Umlandvo Wemnikelo](./donation-history) -- Buka sifingqo sakho sekunikela kanye neminikelo yangaphambilini
+- [Kuphatsa Tindlela Tekukhokha](./managing-payments.md) -- Gcina likhadi kute unikele ngekushesha ngesikhatsi lesitako
+- [Umlandvo Wemnikelo](./donation-history.md) -- Buka sifingqo sakho sekunikela kanye neminikelo yangaphambilini

@@ -1,5 +1,7 @@
 ---
-title: "Prijava za prostovoljstvo"
+title: "Prijava za prostovoljstvo v aplikaciji B1 Mobile"
+sidebar_label: "Prijava za prostovoljstvo"
+description: "Poiščite proste prostovoljske položaje za prihajajoča bogoslužja, se prijavite ali odstranite prijavo v aplikaciji B1 Mobile. Zajema roke in omejitve mest."
 ---
 
 # Prijava za prostovoljstvo
@@ -13,7 +15,7 @@ Pregledujte razpoložljiva prostovoljska mesta in se prijavite na prihajajoča b
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite aplikacijo B1 Mobile](../getting-started/installing) in [se prijavite](../getting-started/logging-in) v svoj račun
+- [Namestite aplikacijo B1 Mobile](../getting-started/installing.md) in [se prijavite](../getting-started/logging-in.md) v svoj račun
 - Vaš cerkveni skrbnik mora omogočiti samoprijavo vsaj na enem mestu
 
 </div>
@@ -60,5 +62,5 @@ Omogočite [potisna obvestila](../community/notifications.md), da boste na teko�
 
 ## Sorodni članki
 
-- [Ogled načrtov](./viewing-plans) -- Oglejte si svoje dodeljene načrte in liturgične rede
+- [Ogled načrtov](./viewing-plans.md) -- Oglejte si svoje dodeljene načrte in liturgične rede
 - [Obvestila](../community/notifications.md) -- Ostanite na tekočem glede dodeljenih nalog pri služenju

@@ -1,5 +1,6 @@
 ---
 title: "Låtar"
+description: "Hantera ditt lovsångsbibliotek i B1 Admin: sök och lägg till sånger, redigera uppgifter, bifoga ChordPro-texter och arrangemang och ladda upp repetitionsljud."
 ---
 
 # Låtar

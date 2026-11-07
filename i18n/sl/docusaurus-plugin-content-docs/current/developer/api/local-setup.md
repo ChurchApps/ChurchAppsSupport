@@ -1,5 +1,6 @@
 ---
 title: "Lokalna nastavitev API-ja"
+description: "Lokalno nastavite API ChurchApps: klonirajte repozitorij, konfigurirajte šest modulnih baz MySQL, inicializirajte shemo in zaženite razvojni strežnik."
 ---
 
 # Lokalna nastavitev API-ja
@@ -13,9 +14,9 @@ Ta vodnik vas popelje skozi nastavitev ChurchApps API-ja za lokalni razvoj. Klon
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Namestite **Node.js 24+**, **Git** in **MySQL 8.0+** -- glejte [Predpogoji](../setup/prerequisites)
+- Namestite **Node.js 24+**, **Git** in **MySQL 8.0+** -- glejte [Predpogoji](../setup/prerequisites.md)
 - Ustvarite uporabnika MySQL s pravicami za ustvarjanje baz podatkov
-- Preglejte referenco [Okoljske spremenljivke](../setup/environment-variables) za nastavitve API-ja
+- Preglejte referenco [Okoljske spremenljivke](../setup/environment-variables.md) za nastavitve API-ja
 
 </div>
 
@@ -82,7 +83,7 @@ API se zažene s samodejnim ponovnim nalaganjem na [http://localhost:8084](http:
 
 ## Uvajanje
 
-Okolje za staging je bilo ukinjeno. API se ob vsakem pushu v `main` uvede v demo okolje, v produkcijo pa prek ročnega delovnega toka **Deploy Prod**, ki prav tako uporabi čakajoče migracije baze podatkov. Podrobnosti najdete v [Uvajanje API-ja](../deployment/apis).
+Okolje za staging je bilo ukinjeno. API se ob vsakem pushu v `main` uvede v demo okolje, v produkcijo pa prek ročnega delovnega toka **Deploy Prod**, ki prav tako uporabi čakajoče migracije baze podatkov. Podrobnosti najdete v [Uvajanje API-ja](../deployment/apis.md).
 
 ## Lokalni razvoj knjižnic
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Tako lahko preizkusite spremembe knjižnice z API-jem, ne da bi jih objavili na npm. Glejte [Skupne knjižnice](../shared-libraries/#local-development-against-a-consuming-app) za podrobnosti -- in nikoli ne zapišite portala, ki ga povezava vpiše v `package.json`.
+Tako lahko preizkusite spremembe knjižnice z API-jem, ne da bi jih objavili na npm. Glejte [Skupne knjižnice](../shared-libraries/index.md#local-development-against-a-consuming-app) za podrobnosti -- in nikoli ne zapišite portala, ki ga povezava vpiše v `package.json`.
 
 ## Sorodni članki
 
-- **[Baza podatkov](./database)** -- Razumevanje arhitekture z ločeno bazo za vsak modul
-- **[Struktura modulov](./module-structure)** -- Kako so organizirani kontrolerji, repozitoriji in modeli
-- **[Skupne knjižnice](../shared-libraries/)** -- Delo z `@churchapps/helpers` in `@churchapps/apihelper`
+- **[Baza podatkov](./database.md)** -- Razumevanje arhitekture z ločeno bazo za vsak modul
+- **[Struktura modulov](./module-structure.md)** -- Kako so organizirani kontrolerji, repozitoriji in modeli
+- **[Skupne knjižnice](../shared-libraries/index.md)** -- Delo z `@churchapps/helpers` in `@churchapps/apihelper`

@@ -1,5 +1,6 @@
 ---
 title: "Vlastní doména"
+description: "Nukreipkite savo domeną, pvz., www.yourchurch.org, į B1 svetainę B1 Admin: nustatykite DNS įrašus ir pridėkite domeną Nustatymuose."
 ---
 
 Hmm, that's wrong: the target language is Lithuanian, not Czech. Here is the correct translation:

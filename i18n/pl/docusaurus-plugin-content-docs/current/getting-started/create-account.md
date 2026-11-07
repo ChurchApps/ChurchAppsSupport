@@ -1,5 +1,6 @@
 ---
 title: "Tworzenie konta"
+description: "Zarejestruj konto ChurchApps na B1.church, potwierdź e-mail i utwórz lub dołącz do kościoła, by zacząć konfigurację B1 Admin."
 ---
 
 # Tworzenie konta

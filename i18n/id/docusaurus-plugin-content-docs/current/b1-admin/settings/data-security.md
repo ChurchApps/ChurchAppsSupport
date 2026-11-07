@@ -1,5 +1,6 @@
 ---
 title: "Keamanan Data"
+description: "Lihat cara ChurchApps melindungi data gereja Anda di B1 Admin, dari kata sandi ter-hash dan HTTPS hingga basis data terpisah dan alat data GDPR."
 ---
 
 # Keamanan Data

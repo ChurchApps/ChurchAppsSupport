@@ -1,5 +1,6 @@
 ---
 title: "Endpoint Membership"
+description: "Riferimento endpoint dell'API Membership di ChurchApps: persone, nuclei familiari, gruppi, ruoli, moduli e impostazioni, con autenticazione e permessi."
 ---
 
 # Endpoint Membership
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Percorso base: `/membership/users`
 
-Vedi [Autenticazione e permessi](./authentication) per gli endpoint di accesso, registrazione e gestione delle password.
+Vedi [Autenticazione e permessi](./authentication.md) per gli endpoint di accesso, registrazione e gestione delle password.
 
 | Metodo | Percorso | Autenticazione | Permesso | Descrizione |
 |--------|----------|----------------|----------|-------------|
@@ -342,6 +343,6 @@ Percorso base: `/membership/clientErrors`
 
 ## Pagine correlate
 
-- [Autenticazione e permessi](./authentication) — Flusso di accesso, JWT, OAuth, modello dei permessi
-- [Endpoint Presenze](./attendance) — Tracciamento di culti e visite
-- [Struttura del modulo](../module-structure) — Schemi di organizzazione del codice
+- [Autenticazione e permessi](./authentication.md) — Flusso di accesso, JWT, OAuth, modello dei permessi
+- [Endpoint Presenze](./attendance.md) — Tracciamento di culti e visite
+- [Struttura del modulo](../module-structure.md) — Schemi di organizzazione del codice

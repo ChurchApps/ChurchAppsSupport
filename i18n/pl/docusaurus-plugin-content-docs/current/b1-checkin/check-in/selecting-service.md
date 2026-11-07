@@ -1,5 +1,6 @@
 ---
 title: "Wybór usługi"
+description: "Wybierz nabożeństwo, w którym uczestniczysz, na ekranie usług w B1 Checkin. Wybór ustala godziny nabożeństw i grupy pokazywane w dalszej części zameldowania."
 ---
 
 # Wybór usługi
@@ -13,7 +14,7 @@ Pierwszym krokiem każdego zameldowania jest wybór usługi, w której uczestnic
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zaloguj się](../getting-started/logging-in) do aplikacji B1 Church Checkin i wybierz swój kościół
+- [Zaloguj się](../getting-started/logging-in.md) do aplikacji B1 Church Checkin i wybierz swój kościół
 - Upewnij się, że administrator kościoła [skonfigurował usługi i godziny usług](../../b1-admin/attendance/setup.md) w B1 Admin
 
 </div>
@@ -24,11 +25,11 @@ Pierwszym krokiem każdego zameldowania jest wybór usługi, w której uczestnic
 2. Zobaczysz listę wszystkich usług skonfigurowanych dla Twojego kościoła. Każda usługa jest wyświetlana jako karta z nazwą usługi (na przykład „Niedzielne nabożeństwo poranne” lub „Środowe nabożeństwo wieczorne”).
 3. Dotknij usługi, w której uczestniczysz.
 
-Aplikacja wczytuje godziny usług i grupy przypisane do tej usługi, a następnie przechodzi do [ekranu wyszukiwania członków](./looking-up-members).
+Aplikacja wczytuje godziny usług i grupy przypisane do tej usługi, a następnie przechodzi do [ekranu wyszukiwania członków](./looking-up-members.md).
 
 ## Gdy zameldowanie nie jest otwarte
 
-Jeśli administrator przypisał godzinie usługi [harmonogram zameldowania](../../b1-admin/attendance/setup#setting-a-check-in-schedule), aplikacja pozwala rodzinom wybrać tę godzinę usługi tylko wtedy, gdy jej okno zameldowania jest otwarte. Godziny usług, których okno jest obecnie zamknięte, nadal pojawiają się na [ekranie gospodarstwa domowego](./household-review), ale są oznaczone jako **Zamknięte** (na przykład **Zamknięte · otwiera się niedz. 9:30**) zamiast przycisku grupy.
+Jeśli administrator przypisał godzinie usługi [harmonogram zameldowania](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule), aplikacja pozwala rodzinom wybrać tę godzinę usługi tylko wtedy, gdy jej okno zameldowania jest otwarte. Godziny usług, których okno jest obecnie zamknięte, nadal pojawiają się na [ekranie gospodarstwa domowego](./household-review.md), ale są oznaczone jako **Zamknięte** (na przykład **Zamknięte · otwiera się niedz. 9:30**) zamiast przycisku grupy.
 
 Jeśli wszystkie godziny usługi, którą wybrałeś, są zamknięte, aplikacja informuje, kiedy zameldowanie zostanie otwarte – na przykład **„Zameldowanie na tę usługę otworzy się w niedzielę o 9:30.”** (Jeśli nie można pokazać godziny otwarcia, wyświetli się komunikat **„Zameldowanie na tę usługę nie jest obecnie otwarte.”**) Dotknij **Wstecz**, aby wrócić do listy usług i wybrać inną usługę, albo poczekaj, aż okno się otworzy, i spróbuj ponownie.
 
@@ -56,4 +57,4 @@ Jeśli Twój kościół ma skonfigurowaną tylko jedną usługę, nadal musisz j
 
 ## Następny krok
 
-Po wybraniu usługi [wyszukasz swoją rodzinę](./looking-up-members) według numeru telefonu lub nazwiska.
+Po wybraniu usługi [wyszukasz swoją rodzinę](./looking-up-members.md) według numeru telefonu lub nazwiska.

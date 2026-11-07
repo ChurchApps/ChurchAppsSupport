@@ -1,5 +1,6 @@
 ---
 title: "Conversations de groupe"
+description: "Apprenez à publier, modifier et réagir aux messages d’un groupe B1.church, et à utiliser les annonces et outils de modération des responsables."
 ---
 
 # Conversations de groupe

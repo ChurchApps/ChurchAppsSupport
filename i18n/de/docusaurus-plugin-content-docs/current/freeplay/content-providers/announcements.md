@@ -1,5 +1,6 @@
 ---
 title: "Ankündigungen"
+description: "Ankündigungs-Folien auf FreePlay TV in Schleife abspielen: Anbieterordner wählen, synchron halten und danach wieder ausschalten."
 ---
 
 # Ankündigungen
@@ -13,7 +14,7 @@ FreePlay kann einen Ordner mit Ankündigungsfolien auf Ihrem Fernseher in einer 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [Verbinden Sie einen Inhaltsanbieter](./connecting-providers), bei dem Ihre Ankündigungsfolien liegen, etwa Dropbox oder OneDrive
+- [Verbinden Sie einen Inhaltsanbieter](./connecting-providers.md), bei dem Ihre Ankündigungsfolien liegen, etwa Dropbox oder OneDrive
 - Legen Sie die Bilder oder Videos, die Sie in einer Schleife abspielen möchten, in einem gemeinsamen Ordner bei diesem Anbieter ab
 
 </div>
@@ -37,7 +38,7 @@ Sobald die Folien heruntergeladen sind, erscheint oben in der Seitenleiste ein E
 - Nach der letzten Folie beginnt die Schleife wieder mit der ersten
 - Besteht der Ordner aus einem einzigen Video, wird es an Ort und Stelle wiederholt
 
-Die Schleife wird aus den auf dem Gerät gespeicherten Dateien abgespielt, sodass sie auch ohne Internetverbindung weiterläuft. Sie können dieselben Fernbedienungsfunktionen wie bei allen anderen Inhalten verwenden — siehe [Inhalte abspielen](./playing-content).
+Die Schleife wird aus den auf dem Gerät gespeicherten Dateien abgespielt, sodass sie auch ohne Internetverbindung weiterläuft. Sie können dieselben Fernbedienungsfunktionen wie bei allen anderen Inhalten verwenden — siehe [Inhalte abspielen](./playing-content.md).
 
 ## Die Folien aktualisieren
 
@@ -61,6 +62,6 @@ Wenn Sie den Anbieter trennen, werden auch die Ankündigungen ausgeschaltet, die
 
 ## Verwandte Artikel
 
-- **[Verbindung zu Anbietern herstellen](./connecting-providers)** — Den Anbieter verbinden, bei dem Ihre Folien liegen
-- **[Inhalte durchsuchen und herunterladen](./browsing-content)** — Die Ordner eines Anbieters durchsuchen und Inhalte auf Abruf abspielen
-- **[Inhalte abspielen](./playing-content)** — Player-Steuerung mit Ihrer Fernbedienung
+- **[Verbindung zu Anbietern herstellen](./connecting-providers.md)** — Den Anbieter verbinden, bei dem Ihre Folien liegen
+- **[Inhalte durchsuchen und herunterladen](./browsing-content.md)** — Die Ordner eines Anbieters durchsuchen und Inhalte auf Abruf abspielen
+- **[Inhalte abspielen](./playing-content.md)** — Player-Steuerung mit Ihrer Fernbedienung

@@ -1,5 +1,7 @@
 ---
-title: "Sisältö"
+title: "Sisältöominaisuudet B1.church-jäsenportaalissa"
+sidebar_label: "Sisältö"
+description: "Katso, mitkä sisällöt seurakuntasi on ottanut käyttöön B1.church-jäsenportaalissa, ja selaa saarnoja, suoratoistoja, Raamatun lukemista ja oppitunteja."
 ---
 
 # Sisältö

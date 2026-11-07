@@ -1,5 +1,7 @@
 ---
-title: "Serving"
+title: "B1.church में स्वयंसेवा और साइनअप"
+sidebar_label: "Serving"
+description: "B1.church पर स्वयंसेवा के अवसर देखें, खुले पदों के लिए साइन अप करें, अपनी सेवा नियुक्तियाँ देखें, और समय सीमा से पहले साइनअप रद्द करें।"
 ---
 
 # Serving
@@ -14,8 +16,8 @@ B1.church का Serving section आपको volunteer अवसर ब्र�
 
 - **Volunteer अवसर ब्राउज़ करें** -- खुली positions वाले आने वाले service plans देखें जिनमें volunteers चाहिए।
 - **Positions के लिए sign up करें** -- एक position चुनें और एक click में अपना नाम दर्ज करें।
-- **अपने plans देखें** -- अपनी आने वाली और पिछली [serving assignments](../plans/viewing-plans) देखें।
-- **Assignments का जवाब दें** -- Plans page से या Home पर **You're serving** section से उन positions को स्वीकार या अस्वीकार करें जिनके लिए आपको schedule किया गया है। यदि स्वीकार करने के बाद आपकी योजनाएं बदलती हैं, तो service समाप्त होने तक आप [स्वीकृत assignment से हट सकते हैं](../plans/viewing-plans#declining-an-accepted-assignment)।
+- **अपने plans देखें** -- अपनी आने वाली और पिछली [serving assignments](../plans/viewing-plans.md) देखें।
+- **Assignments का जवाब दें** -- Plans page से या Home पर **You're serving** section से उन positions को स्वीकार या अस्वीकार करें जिनके लिए आपको schedule किया गया है। यदि स्वीकार करने के बाद आपकी योजनाएं बदलती हैं, तो service समाप्त होने तक आप [स्वीकृत assignment से हट सकते हैं](../plans/viewing-plans.md#declining-an-accepted-assignment)।
 - **Signups हटाएं** -- यदि आपकी योजनाएं बदलती हैं तो अपना self-signup रद्द करें (deadline से पहले)।
 
 ## यह कैसे काम करता है
@@ -28,5 +30,5 @@ volunteer page पर केवल वही positions दिखती हैं
 
 ## और जानें
 
-- [Volunteer Signup](./volunteer-signup) -- volunteer positions ब्राउज़ करने और उनके लिए sign up करने की चरण-दर-चरण guide
-- [Viewing Plans](../plans/viewing-plans) -- अपनी सौंपी गई service plans और service orders देखें
+- [Volunteer Signup](./volunteer-signup.md) -- volunteer positions ब्राउज़ करने और उनके लिए sign up करने की चरण-दर-चरण guide
+- [Viewing Plans](../plans/viewing-plans.md) -- अपनी सौंपी गई service plans और service orders देखें

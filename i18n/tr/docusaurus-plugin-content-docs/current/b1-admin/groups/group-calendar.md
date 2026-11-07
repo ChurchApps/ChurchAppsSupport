@@ -1,5 +1,6 @@
 ---
 title: "Grup Takvimi"
+description: "B1 Admin ve B1.church'te grup takvimi üzerinden toplantı ve tekrarlayan etkinlikleri planlayın; toplu planlama, RSVP ve takvim aboneliklerini kullanın."
 ---
 
 # Grup Takvimi

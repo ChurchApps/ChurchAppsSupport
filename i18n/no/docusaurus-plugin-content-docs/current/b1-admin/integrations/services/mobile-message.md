@@ -1,5 +1,6 @@
 ---
 title: "Mobile Message"
+description: "Koble B1 Admin-hendelser til Mobile Message, et australsk SMS-API, via Zapier- eller Make-webhooks for å sende velkomst-, gave- og påminnelsestekster."
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ Mobile Messages `/v1/messages`-endepunkt tar opp til 10 000 meldinger per anrop.
 
 ### Make alternativ
 
-Hvis du foretrekker Make, drar du **HTTP — gjør en forespørsel**-modulen etter B1 se hendelser-utløseren, konfigurerer det samme (POST, grunnleggende auth, JSON-kropp). Se [Make oversikt](../make) for B1-siden.
+Hvis du foretrekker Make, drar du **HTTP — gjør en forespørsel**-modulen etter B1 se hendelser-utløseren, konfigurerer det samme (POST, grunnleggende auth, JSON-kropp). Se [Make oversikt](../make.md) for B1-siden.
 
 ## Grenser og merknader
 
@@ -102,6 +103,6 @@ Hvis du foretrekker Make, drar du **HTTP — gjør en forespørsel**-modulen ett
 
 ## Se også
 
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — alternative SMS-leverandører med egen Zapier-apper (ingen webhooks-av-Zapier-trinn nødvendig)
-- [Zapier (oversikt)](../zapier) — B1-siden av hver Zapier-oppskrift
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — alternative SMS-leverandører med egen Zapier-apper (ingen webhooks-av-Zapier-trinn nødvendig)
+- [Zapier (oversikt)](../zapier.md) — B1-siden av hver Zapier-oppskrift
 - [Mobile Message API-dokumentasjon](https://mobilemessage.com.au/api-documentation)

@@ -1,5 +1,6 @@
 ---
 title: "Agregar invitados"
+description: "Agrega a un niño de visita, pariente o amigo a un hogar en el quiosco de B1 Checkin, luego asigna grupos y completa el registro de entrada."
 ---
 
 # Agregar invitados
@@ -13,8 +14,8 @@ Si alguien visita a su familia y necesita registrarse con su hogar, puede agrega
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- [Busque a su familia](./looking-up-members) y seleccione a un miembro de los resultados de la búsqueda
-- Esté en la [pantalla de revisión del hogar](./household-review), donde puede ver a los miembros de su familia
+- [Busque a su familia](./looking-up-members.md) y seleccione a un miembro de los resultados de la búsqueda
+- Esté en la [pantalla de revisión del hogar](./household-review.md), donde puede ver a los miembros de su familia
 
 </div>
 
@@ -36,8 +37,8 @@ Si el nombre del invitado coincide con el de alguien que ya está en el sistema 
 
 Una vez que el invitado aparezca en la lista de su hogar, puede:
 
-- **Expandir su tarjeta** y [asignarlo a un grupo](./group-assignment), igual que a cualquier otro miembro de la familia.
-- **[Registrar la entrada](./completing-checkin)** de todo el hogar, incluido el invitado.
+- **Expandir su tarjeta** y [asignarlo a un grupo](./group-assignment.md), igual que a cualquier otro miembro de la familia.
+- **[Registrar la entrada](./completing-checkin.md)** de todo el hogar, incluido el invitado.
 
 ## Cancelar
 
@@ -49,4 +50,4 @@ Agregar un invitado en el kiosco crea un registro de persona en la base de datos
 
 ## Siguiente paso
 
-Después de agregar los invitados y [asignar grupos](./group-assignment) según sea necesario, estará listo para [completar el registro de entrada](./completing-checkin).
+Después de agregar los invitados y [asignar grupos](./group-assignment.md) según sea necesario, estará listo para [completar el registro de entrada](./completing-checkin.md).

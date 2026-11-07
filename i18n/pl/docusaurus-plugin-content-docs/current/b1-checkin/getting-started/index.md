@@ -1,5 +1,7 @@
 ---
-title: "Pierwsze kroki"
+title: "Pierwsze kroki z B1 Checkin"
+sidebar_label: "Pierwsze kroki"
+description: "Skonfiguruj aplikację kiosku B1 Checkin na tablecie z Androidem: zainstaluj ją, zaloguj się, wybierz kościół i opcjonalnie podłącz drukarkę etykiet."
 ---
 
 # Pierwsze kroki z B1 Church Checkin
@@ -27,9 +29,9 @@ Konfiguracja B1 Church Checkin zajmuje tylko kilka minut. Ta sekcja przeprowadzi
 
 Przy pierwszym uruchomieniu aplikacji przejdziesz przez trzy kroki:
 
-1. **[Zaloguj się](./logging-in)** -- Wpisz adres e-mail i hasło, aby się uwierzytelnić.
-2. **[Wybierz swój kościół](./logging-in)** -- Jeśli Twoje konto jest powiązane z kilkoma kościołami, wybierz ten, który ma obsługiwać ten kiosk.
-3. **[Skonfiguruj drukarkę](./printer-setup)** -- Ustaw sieciową drukarkę do drukowania etykiet lub pomiń ten krok, jeśli etykiety nie są potrzebne.
+1. **[Zaloguj się](./logging-in.md)** -- Wpisz adres e-mail i hasło, aby się uwierzytelnić.
+2. **[Wybierz swój kościół](./logging-in.md)** -- Jeśli Twoje konto jest powiązane z kilkoma kościołami, wybierz ten, który ma obsługiwać ten kiosk.
+3. **[Skonfiguruj drukarkę](./printer-setup.md)** -- Ustaw sieciową drukarkę do drukowania etykiet lub pomiń ten krok, jeśli etykiety nie są potrzebne.
 
 Po pierwszym logowaniu aplikacja zapisuje Twoje dane logowania i wybór kościoła. Przy kolejnych uruchomieniach automatycznie przejdzie bezpośrednio do ekranu usług.
 
@@ -43,6 +45,6 @@ Przed konfiguracją kiosku upewnij się, że administrator kościoła skonfiguro
 
 ## Kolejne kroki
 
-- [Logowanie](./logging-in) -- Szczegółowe instrukcje logowania i wyboru kościoła.
-- [Konfiguracja drukarki](./printer-setup) -- Jak wykryć, wybrać i przetestować drukarkę etykiet.
-- [Przebieg zameldowania](../check-in/) -- Poznaj pełny przebieg zameldowania po skonfigurowaniu kiosku.
+- [Logowanie](./logging-in.md) -- Szczegółowe instrukcje logowania i wyboru kościoła.
+- [Konfiguracja drukarki](./printer-setup.md) -- Jak wykryć, wybrać i przetestować drukarkę etykiet.
+- [Przebieg zameldowania](../check-in/index.md) -- Poznaj pełny przebieg zameldowania po skonfigurowaniu kiosku.

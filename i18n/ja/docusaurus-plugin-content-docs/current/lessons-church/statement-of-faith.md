@@ -1,5 +1,6 @@
 ---
 title: 信仰告白
+description: "ChurchApps が神、イエス、聖霊、聖書、救い、教会について信じていること。Lessons.church のカリキュラムを審査する基準です。"
 ---
 
 # 信仰告白

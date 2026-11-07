@@ -1,5 +1,6 @@
 ---
 title: "Geburtstags- und Jubiläumslisten"
+description: "Liste aller Personen mit Geburtstag oder Hochzeitstag in einem Monat über die Personensuche in B1 Admin erstellen und die Daten anzeigen oder exportieren."
 ---
 
 # Geburtstags- und Jubiläumslisten

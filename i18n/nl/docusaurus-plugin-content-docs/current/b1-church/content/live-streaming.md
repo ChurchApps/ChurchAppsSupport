@@ -1,5 +1,7 @@
 ---
-title: "Live Streaming"
+title: "Livestreams bekijken op B1.church"
+sidebar_label: "Live Streaming"
+description: "Bekijk de livediensten van je kerk op de Stream-pagina van B1.church en doe mee aan de chat naast de uitzending, zonder inloggen."
 ---
 
 # Live Streaming

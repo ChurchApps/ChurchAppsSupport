@@ -1,5 +1,6 @@
 ---
 title: "Salles de classe"
+description: "Configurer les classes qui organisent l'enseignement de votre église dans Lessons.church, des salles aux vues destinées aux bénévoles."
 ---
 
 # Salles de classe

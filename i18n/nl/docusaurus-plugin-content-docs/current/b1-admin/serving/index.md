@@ -1,5 +1,7 @@
 ---
-title: "Dienst"
+title: "Serving-overzicht in B1 Admin"
+sidebar_label: "Dienst"
+description: "Coördineer vrijwilligers en plan kerkdiensten in het Serving-gedeelte van B1 Admin, van ministerietabbladen en teams tot dienstplannen, liederen en taken."
 ---
 
 # Dienst
@@ -26,7 +28,7 @@ De sectie Dienst bevat drie sleutelgebieden:
 
 - **[Plannen](./plans.md)** -- Maak dienstplannen voor specifieke data en wijs vrijwilligers aan teams toe. Plannen helpen u te organiseren wie wanneer dient, zodat iedereen hun rol van tevoren kent. Gebruik het **[Plannoverzicht](./plans-overview.md)** om alle komende toewijzingen in meerdere weken in één raster te zien.
 - **[Nummers](./songs.md)** -- Beheer uw aanbiddingsliedenbibliotheek met lyrics, arrangementen en externe koppelingen. Uw aanbiddingsteam kan dit gebruiken om zich voor te bereiden op komende diensten.
-- **[Taken](./tasks.md)** -- Wijs taken toe en volg deze voor uw teamleden. Stel [Automatiseringen](./automations.md) in om terugkerende taken automatisch aan te maken, zodat niets door het ijs zakt.
+- **[Taken](./tasks.md)** -- Wijs taken toe en volg deze voor uw teamleden. Stel [Automatiseringen](./workflows.md) in om terugkerende taken automatisch aan te maken, zodat niets door het ijs zakt.
 
 ## Aan de slag
 

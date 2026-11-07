@@ -1,5 +1,6 @@
 ---
 title: "Dominio personalizzato"
+description: "Collega il tuo dominio, ad esempio www.tuachiesa.org, al tuo sito B1 in B1 Admin configurando i record DNS e aggiungendo il dominio in Impostazioni."
 ---
 
 # Dominio personalizzato

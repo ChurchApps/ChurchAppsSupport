@@ -1,5 +1,6 @@
 ---
 title: "Benachrichtigungen"
+description: "Richten Sie Push-Benachrichtigungen für die B1 Mobile App ein, dann ansehen, öffnen und löschen Sie Ihre Mitteilungen zu Nachrichten, Gruppen und Dienst."
 ---
 
 # Benachrichtigungen
@@ -13,7 +14,7 @@ B1 Mobile verwendet Push-Benachrichtigungen, um Sie über das, was in Ihrer Kirc
 <div class="prereqs">
 <h4>Bevor Sie Beginnen</h4>
 
-- [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich](../getting-started/logging-in) bei Ihrem Konto an
+- [Installieren Sie B1 Mobile](../getting-started/installing.md) und [melden Sie sich](../getting-started/logging-in.md) bei Ihrem Konto an
 - Erlauben Sie Benachrichtigungen für B1 Mobile in Ihren Geräteeinstellungen
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile verwendet Push-Benachrichtigungen, um Sie über das, was in Ihrer Kirc
 
 Benachrichtigungen können eine Reihe von Aktivitäten abdecken, einschließlich:
 
-- **Nachrichten** – Wenn jemand Ihnen eine [private Nachricht](./messaging) sendet.
-- **Gruppenaktivität** – Updates, Posts und Gespräche aus [Gruppen](../groups/), denen Sie angehören.
+- **Nachrichten** – Wenn jemand Ihnen eine [private Nachricht](./messaging.md) sendet.
+- **Gruppenaktivität** – Updates, Posts und Gespräche aus [Gruppen](../groups/index.md), denen Sie angehören.
 - **Dienst-Zuweisungen** – Wenn Sie einem [Plan](../serving/viewing-plans.md) zugewiesen werden oder sich Ihr Zuweisungsstatus ändert.
 - **Andere Updates** – Allgemeine Ankündigungen und Aktivitäten, die für Sie relevant sind.
 

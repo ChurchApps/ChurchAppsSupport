@@ -1,5 +1,6 @@
 ---
 title: "Registrering av opptelling og trend"
+description: "Før inn samlet antall deltakere for en gudstjeneste eller gruppe i B1 Admin uten navneliste, og følg tallene uke for uke i rapporten Headcount Trend."
 ---
 
 # Registrering av opptelling og trend

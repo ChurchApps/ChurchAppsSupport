@@ -1,5 +1,7 @@
 ---
-title: "Grup"
+title: "Grup di B1 Admin"
+sidebar_label: "Grup"
+description: "Atur dan kelola grup di B1 Admin, termasuk kategori, anggota, kalender, dan permintaan bergabung, dengan panduan menemukan halaman Grup."
 ---
 
 # Grup

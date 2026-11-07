@@ -29,7 +29,7 @@ La riga del provider di una chiesa (`content.storageProviders`, gestita in B1Adm
 
 Nota di ambito: la selezione del provider copre il flusso di **file/risorse** di contenuto (dove vive il media bulk). I caricamenti di galleria/logo/foto rimangono sul provider predefinito — elencano chiavi dall'archiviazione e costruiscono URL lato client, in modo che l'accesso per chiesa non si applichi ancora.
 
-La stessa cucitura alimenta anche [Bring-Your-Own Storage](./byos-storage): le chiese possono collegare Google Drive, Dropbox, OneDrive o il loro bucket S3-compatibile anziché un piano MinistryStuff.
+La stessa cucitura alimenta anche [Bring-Your-Own Storage](./byos-storage.md): le chiese possono collegare Google Drive, Dropbox, OneDrive o il loro bucket S3-compatibile anziché un piano MinistryStuff.
 
 ## Fatturazione
 

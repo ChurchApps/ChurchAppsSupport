@@ -1,5 +1,6 @@
 ---
 title: "MCP serveris"
+description: "Nustatykite MCP prieigą prie B1 API, kad DI klientai (Claude Code, Cursor, Claude Desktop) galėtų kviesti duomenų galinius taškus su API raktais ar OAuth."
 ---
 
 # MCP serveris
@@ -13,7 +14,7 @@ B1 API pateikia [MCP (Model Context Protocol)](https://modelcontextprotocol.io) 
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [B1 API raktas](./api-keys) (`cak_…`) su leidimais (scopes), kuriuos klientas turėtų turėti, arba MCP klientas, galintis prisijungti per OAuth (žr. [OAuth aptikimas](#oauth-discovery))
+- [B1 API raktas](./api-keys.md) (`cak_…`) su leidimais (scopes), kuriuos klientas turėtų turėti, arba MCP klientas, galintis prisijungti per OAuth (žr. [OAuth aptikimas](#oauth-discovery))
 - Pasiekiamas B1 API serveris: `https://api.churchapps.org` bažnyčioms, naudojančioms talpinimą, arba jūsų pačių diegimas
 - MCP klientas. Galutinių vartotojų sąrankai žr. [Claude](/docs/b1-admin/integrations/claude) ir [ChatGPT](/docs/b1-admin/integrations/chatgpt)
 
@@ -119,7 +120,7 @@ Iškviečia pasirinktą REST galinį tašką vykdymo aplinkoje per tą patį Exp
 
 ### `describe_page_builder`
 
-Vienintelis neuniversalus įrankis. Tai statinis, savarankiškas vadovas, kaip kurti svetainės puslapius per `/content/*` galinius taškus: Puslapio → Skyriaus → Elemento duomenų modelis, kūrimo eiga, kiekvienas `elementType` su jo `answersJSON` forma, skyriaus lygio nustatymai, pvz., `dividerTop` / `dividerBottom` formos skirtukai, ir pilnas pavyzdys nuo pradžios iki galo. Įvesties jis neturi. Jis atitinka elementų katalogą, kurį palaiko B1Admin redaktorius (žr. [Svetainės kūrėjo architektūrą](../architecture/website-builder)). Tikimasi, kad agentai jį iškvies vieną kartą prieš kurdami ar redaguodami puslapio turinį, o vėliau veiks per `api_call`.
+Vienintelis neuniversalus įrankis. Tai statinis, savarankiškas vadovas, kaip kurti svetainės puslapius per `/content/*` galinius taškus: Puslapio → Skyriaus → Elemento duomenų modelis, kūrimo eiga, kiekvienas `elementType` su jo `answersJSON` forma, skyriaus lygio nustatymai, pvz., `dividerTop` / `dividerBottom` formos skirtukai, ir pilnas pavyzdys nuo pradžios iki galo. Įvesties jis neturi. Jis atitinka elementų katalogą, kurį palaiko B1Admin redaktorius (žr. [Svetainės kūrėjo architektūrą](../architecture/website-builder.md)). Tikimasi, kad agentai jį iškvies vieną kartą prieš kurdami ar redaguodami puslapio turinį, o vėliau veiks per `api_call`.
 
 ## Autentifikavimo modelis
 
@@ -153,11 +154,11 @@ Programos lygmens užklausų ribojimo `/mcp` nėra. Produkcijoje srauto valdymas
 
 ## OAuth aptikimas
 
-MCP serveris skelbia OAuth 2.1 metaduomenis, kad klientai, kurie jungiasi tik prie OAuth aptiktų serverių, visų pirma claude.ai vartotojo sąsajos „Add custom connector“, galėtų prisijungti vartotoją be įklijuoto rakto. `/mcp` yra apsaugotas išteklius, esamas [OAuth teikėjas](./connected-apps) kelyje `/membership/oauth` yra jo autorizacijos serveris, o B1Admin puslapis `/oauth` yra sutikimo ekranas.
+MCP serveris skelbia OAuth 2.1 metaduomenis, kad klientai, kurie jungiasi tik prie OAuth aptiktų serverių, visų pirma claude.ai vartotojo sąsajos „Add custom connector“, galėtų prisijungti vartotoją be įklijuoto rakto. `/mcp` yra apsaugotas išteklius, esamas [OAuth teikėjas](./connected-apps.md) kelyje `/membership/oauth` yra jo autorizacijos serveris, o B1Admin puslapis `/oauth` yra sutikimo ekranas.
 
 | Galinis taškas | Paskirtis |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (taip pat `/.well-known/oauth-protected-resource/mcp`) | Apsaugoto išteklių metaduomenys (RFC 9728): `resource` yra `<api>/mcp`, `authorization_servers` yra API šaknis, `scopes_supported` išvardija visus [API raktų leidimus](./api-keys#scopes) |
+| `GET /.well-known/oauth-protected-resource` (taip pat `/.well-known/oauth-protected-resource/mcp`) | Apsaugoto išteklių metaduomenys (RFC 9728): `resource` yra `<api>/mcp`, `authorization_servers` yra API šaknis, `scopes_supported` išvardija visus [API raktų leidimus](./api-keys.md#scopes) |
 | `GET /.well-known/oauth-authorization-server` | Autorizacijos serverio metaduomenys (RFC 8414): `authorization_endpoint` yra B1Admin `/oauth`, `token_endpoint` yra `/membership/oauth/token`, `registration_endpoint` yra `/membership/oauth/register` |
 | `POST /membership/oauth/register` | Dinaminė kliento registracija (RFC 7591) |
 
@@ -209,8 +210,8 @@ MCP serveris yra `src/modules/mcp/` kataloge Api saugykloje. Svarbiausi failai:
 
 ## Susiję
 
-- [API raktai](./api-keys)
-- [Webhook](./webhooks)
-- [Susietos programos (OAuth)](./connected-apps)
+- [API raktai](./api-keys.md)
+- [Webhook](./webhooks.md)
+- [Susietos programos (OAuth)](./connected-apps.md)
 - [Claude: galutinio vartotojo sąranka](/docs/b1-admin/integrations/claude)
 - [ChatGPT: galutinio vartotojo sąranka](/docs/b1-admin/integrations/chatgpt)

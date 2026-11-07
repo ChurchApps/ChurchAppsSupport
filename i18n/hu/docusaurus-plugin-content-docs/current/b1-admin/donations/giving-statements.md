@@ -1,5 +1,6 @@
 ---
 title: "Adománykimutatások"
+description: "Évvégi adománykimutatások készítése minden adakozónak a B1 Admin-ban, majd letöltés CSV-fájlként vagy nyomtatás postázáshoz, adólevonható összegekkel."
 ---
 
 # Adománykimutatások

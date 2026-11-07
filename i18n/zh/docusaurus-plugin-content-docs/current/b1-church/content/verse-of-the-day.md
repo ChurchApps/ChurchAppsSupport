@@ -1,5 +1,7 @@
 ---
-title: "每日经文"
+title: "B1.church 网站和门户中的每日经文"
+sidebar_label: "每日经文"
+description: "浏览每日经文图片和往期经文，然后在任何屏幕尺寸下从您的 B1.church 网站或会友门户分享或下载。"
 ---
 
 # 每日经文

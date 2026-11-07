@@ -1,5 +1,6 @@
 ---
 title: "Mọi người"
+description: "Tìm, thêm và chỉnh sửa thành viên hội thánh trong mục Người của B1 Admin, gồm theo dõi hộ gia đình, cập nhật hàng loạt và in, xuất danh bạ."
 ---
 
 # Mọi người

@@ -1,5 +1,6 @@
 ---
 title: "Programok kezelése"
+description: "Tantervi programok létrehozása és szerkesztése a Lessons.churchben: slugok, bélyegképek, tanulmányok kategóriákba sorolása, programszintű források."
 ---
 
 # Programok kezelése

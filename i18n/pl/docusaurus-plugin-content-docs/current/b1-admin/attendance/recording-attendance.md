@@ -1,5 +1,6 @@
 ---
 title: "Rejestrowanie obecności"
+description: "Zapisuj frekwencję na każdym spotkaniu grupy w B1 Admin: utwórz sesję, zaznacz obecnych, zapisz notatki i wydrukuj listy lub wyeksportuj do arkusza."
 ---
 
 # Rejestrowanie obecności

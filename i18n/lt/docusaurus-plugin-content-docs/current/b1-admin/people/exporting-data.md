@@ -1,5 +1,6 @@
 ---
 title: "Duomenų eksportavimas"
+description: "Eksportuokite asmenis į CSV, grupių narių sąrašus ar visą B1 duomenų bazės atsarginę kopiją iš B1 Admin ir sužinokite, kas yra B1 Export Zip archyve."
 ---
 
 # Duomenų eksportavimas

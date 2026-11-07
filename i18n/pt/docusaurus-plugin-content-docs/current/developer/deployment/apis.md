@@ -1,5 +1,6 @@
 ---
 title: "Implantação da API"
+description: "Implante a API ChurchApps no AWS Lambda com Serverless, cobrindo builds, fluxos de demo e produção, migrações de banco e configuração SSM."
 ---
 
 # Implantação da API
@@ -13,7 +14,7 @@ As APIs da ChurchApps são implantadas como funções AWS Lambda usando o Server
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- Configure a API localmente -- veja [Configuração Local da API](../api/local-setup)
+- Configure a API localmente -- veja [Configuração Local da API](../api/local-setup.md)
 - Configure as credenciais da AWS na sua máquina
 - Certifique-se de ter acesso à conta AWS de destino
 
@@ -47,7 +48,7 @@ Na prática, a Api é implantada pelo GitHub Actions: **Deploy Demo** roda a cad
 
 ## Migrações do banco de dados
 
-O **Deploy Prod** aplica as migrações pendentes do banco de dados como parte da implantação. Os bancos de dados de produção só aceitam conexões de dentro da VPC, então logo após o `serverless deploy` o workflow invoca a função Lambda `migrate` (`api-Prod-migrate`), que executa as migrações pendentes de cada módulo e retorna `{ ok, environment, modules }`. Se algum módulo falhar ou for recusado (por exemplo, um banco de dados sem histórico de migrações), o job falha, para que o esquema nunca fique para trás do código. O **Rollback Prod** reverte apenas o código da Lambda; as migrações permanecem aplicadas, então mantenha-as aditivas. Veja [Administração do Servidor -- Migrações do Banco de Dados](../server-admin#database-migrations) para verificar o status ou executar migrações manualmente.
+O **Deploy Prod** aplica as migrações pendentes do banco de dados como parte da implantação. Os bancos de dados de produção só aceitam conexões de dentro da VPC, então logo após o `serverless deploy` o workflow invoca a função Lambda `migrate` (`api-Prod-migrate`), que executa as migrações pendentes de cada módulo e retorna `{ ok, environment, modules }`. Se algum módulo falhar ou for recusado (por exemplo, um banco de dados sem histórico de migrações), o job falha, para que o esquema nunca fique para trás do código. O **Rollback Prod** reverte apenas o código da Lambda; as migrações permanecem aplicadas, então mantenha-as aditivas. Veja [Administração do Servidor -- Migrações do Banco de Dados](../server-admin.md#database-migrations) para verificar o status ou executar migrações manualmente.
 
 ## O que é criado
 
@@ -75,6 +76,6 @@ Todo merge em `main` é implantado primeiro no ambiente de demonstração. Teste
 
 ## Artigos relacionados
 
-- **[Configuração Local da API](../api/local-setup)** -- Como configurar a API para desenvolvimento
-- **[Estrutura dos Módulos](../api/module-structure)** -- Entendendo a arquitetura das funções Lambda
-- **[Implantação de Aplicativos Web](./web-apps)** -- Implantando as aplicações de frontend
+- **[Configuração Local da API](../api/local-setup.md)** -- Como configurar a API para desenvolvimento
+- **[Estrutura dos Módulos](../api/module-structure.md)** -- Entendendo a arquitetura das funções Lambda
+- **[Implantação de Aplicativos Web](./web-apps.md)** -- Implantando as aplicações de frontend

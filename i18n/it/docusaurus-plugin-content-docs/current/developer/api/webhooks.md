@@ -1,5 +1,6 @@
 ---
 title: "Webhook"
+description: "Configura webhook in tempo reale da B1 Admin: registra endpoint, scegli eventi, verifica le firme HMAC, gestisci i tentativi e ritrasmetti i payload."
 ---
 
 # Webhook
@@ -33,7 +34,7 @@ Vai a **Settings → Developer → Webhooks → New Webhook**. Immetti un nome, 
 
 ### Via l'API
 
-Tutti gli endpoint si trovano sotto il percorso base del modulo Membership `/membership/webhooks` e richiedono un JWT da un admin di chiesa con il permesso `Settings / Edit`, **o una [chiave API](./api-keys) coniata con l'ambito `settings:write`**. Le stesse route accettano entrambi.
+Tutti gli endpoint si trovano sotto il percorso base del modulo Membership `/membership/webhooks` e richiedono un JWT da un admin di chiesa con il permesso `Settings / Edit`, **o una [chiave API](./api-keys.md) coniata con l'ambito `settings:write`**. Le stesse route accettano entrambi.
 
 ## Evento Catalogo
 

@@ -1,5 +1,6 @@
 ---
 title: "Bağlı Hizmetler"
+description: "B1 Admin'i Zapier veya Make tarifleriyle Mailchimp, Donorbox, Subsplash, VOMO, Clearstream ve diğer araçlara bağlayın; her biri için kurulum rehberleri."
 ---
 
 # Bağlı Hizmetler
@@ -14,14 +15,14 @@ B1'i başka bir kilise teknolojisi aracına bağlamanın en hızlı yolu genelli
 
 | Hizmet | Kategori | Köprü | Neleri bağlayabilirsiniz |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | E-posta | Zapier veya Make | Yeni B1 kişilerini veya bağışçılarını bir Mailchimp kitlesine senkronize edin |
-| [Donorbox](./donorbox) | Bağışlar | Zapier | Donorbox bağışlarını ve bağışçılarını B1'e geri gönderin |
-| [Subsplash](./subsplash) | Uygulama / Bağışlar | Zapier | Subsplash bağışlarını ve kişilerini B1'e aktarın |
-| [VOMO](./vomo) | Gönüllülük | Zapier | B1 grupları ile VOMO projeleri arasında gönüllü kayıtlarını senkronize edin |
-| [Clearstream](./clearstream) | SMS | Zapier | B1 olaylarından bir Clearstream metni tetikleyin; yanıtları B1 kayıtları olarak alın |
-| [Text In Church](./text-in-church) | SMS / İş akışları | Zapier | B1'den Text In Church iş akışlarını tetikleyin; Connect Card verilerini alın |
-| [Mobile Message](./mobile-message) | SMS (AU) | Zapier veya Make ile webhook'lar | Herhangi bir B1 olayından SMS gönderin |
-| [Checkr](./checkr) | Arka plan kontrolleri | Make | Biri bir hizmet ekibine katıldığında arka plan kontrolü başlatın |
+| [Mailchimp](./mailchimp.md) | E-posta | Zapier veya Make | Yeni B1 kişilerini veya bağışçılarını bir Mailchimp kitlesine senkronize edin |
+| [Donorbox](./donorbox.md) | Bağışlar | Zapier | Donorbox bağışlarını ve bağışçılarını B1'e geri gönderin |
+| [Subsplash](./subsplash.md) | Uygulama / Bağışlar | Zapier | Subsplash bağışlarını ve kişilerini B1'e aktarın |
+| [VOMO](./vomo.md) | Gönüllülük | Zapier | B1 grupları ile VOMO projeleri arasında gönüllü kayıtlarını senkronize edin |
+| [Clearstream](./clearstream.md) | SMS | Zapier | B1 olaylarından bir Clearstream metni tetikleyin; yanıtları B1 kayıtları olarak alın |
+| [Text In Church](./text-in-church.md) | SMS / İş akışları | Zapier | B1'den Text In Church iş akışlarını tetikleyin; Connect Card verilerini alın |
+| [Mobile Message](./mobile-message.md) | SMS (AU) | Zapier veya Make ile webhook'lar | Herhangi bir B1 olayından SMS gönderin |
+| [Checkr](./checkr.md) | Arka plan kontrolleri | Make | Biri bir hizmet ekibine katıldığında arka plan kontrolü başlatın |
 
 ## Bunların Ortak Yönleri
 
@@ -45,8 +46,8 @@ Ayrıca Planning Center Services'a özgü araçları (müzik, sunum), rakip ChMS
 
 ## Ayrıca Bakınız
 
-- [Zapier (genel bakış)](../zapier): Her Zapier tarifinin B1 tarafı aynıdır. Bu belge bunu bir kez kapsar.
-- [Make (genel bakış)](../make): Make senaryoları için de aynı geçerlidir.
-- [Slack & Discord](../slack-discord): Herhangi bir köprü olmadan sohbet bildirimleri.
-- [Google Sheets](../google-sheets): İsteğe bağlı dışa aktarımlar.
+- [Zapier (genel bakış)](../zapier.md): Her Zapier tarifinin B1 tarafı aynıdır. Bu belge bunu bir kez kapsar.
+- [Make (genel bakış)](../make.md): Make senaryoları için de aynı geçerlidir.
+- [Slack & Discord](../slack-discord.md): Herhangi bir köprü olmadan sohbet bildirimleri.
+- [Google Sheets](../google-sheets.md): İsteğe bağlı dışa aktarımlar.
 - [Webhook'lar (geliştirici başvurusu)](/docs/developer/api/webhooks): Her tarifin dayandığı olay kataloğu.

@@ -1,5 +1,6 @@
 ---
 title: "Mga Endpoint ng Messaging"
+description: "Sanggunian ng ChurchApps messaging API endpoint: usapan, tuntunin sa access ng notes, texting, email template, notification, at device."
 ---
 
 # Mga Endpoint ng Messaging
@@ -190,7 +191,7 @@ Pangunahing path: `/messaging/notificationpreferences`
 
 Pangunahing path: `/messaging/connections`
 
-Pinamamahalaan ang mga WebSocket/real-time connection para sa chat, mga usapan ng grupo, pribadong mensahe, at live streaming. Tingnan ang [Arkitektura ng Real-time](../../realtime) para sa kumpletong protocol mula dulo hanggang dulo.
+Pinamamahalaan ang mga WebSocket/real-time connection para sa chat, mga usapan ng grupo, pribadong mensahe, at live streaming. Tingnan ang [Arkitektura ng Real-time](../../realtime.md) para sa kumpletong protocol mula dulo hanggang dulo.
 
 | Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
@@ -367,9 +368,9 @@ Sinusubaybayan ang delivery status ng mga naipadalang mensahe (SMS, push notific
 
 ## Mga Kaugnay na Pahina
 
-- [Arkitektura ng Real-time](../../realtime) -- WebSocket protocol, room subscription, at unified delivery framework
-- [Web Push Notifications](../../web-push) -- Browser push enrollment at paghahatid
-- [Mga Endpoint ng Membership](./membership) -- Mga tao, grupo, tungkulin, at core identity
-- [Mga Endpoint ng Attendance](./attendance) -- Pagsubaybay sa serbisyo at pagbisita
-- [Pagpapatunay at Mga Pahintulot](./authentication) -- Daloy ng login, JWT, OAuth, modelo ng pahintulot
-- [Istruktura ng Modyul](../module-structure) -- Mga pattern ng organisasyon ng code
+- [Arkitektura ng Real-time](../../realtime.md) -- WebSocket protocol, room subscription, at unified delivery framework
+- [Web Push Notifications](../../web-push.md) -- Browser push enrollment at paghahatid
+- [Mga Endpoint ng Membership](./membership.md) -- Mga tao, grupo, tungkulin, at core identity
+- [Mga Endpoint ng Attendance](./attendance.md) -- Pagsubaybay sa serbisyo at pagbisita
+- [Pagpapatunay at Mga Pahintulot](./authentication.md) -- Daloy ng login, JWT, OAuth, modelo ng pahintulot
+- [Istruktura ng Modyul](../module-structure.md) -- Mga pattern ng organisasyon ng code

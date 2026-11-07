@@ -1,5 +1,6 @@
 ---
 title: "인증 및 권한"
+description: "ChurchApps API의 JWT 로그인, 2단계 인증, OAuth 2.0 흐름, 권한 모델을 설명하는 참조 문서로, 연동을 개발하는 개발자를 위한 내용입니다."
 ---
 
 # 인증 및 권한
@@ -244,7 +245,7 @@ API는 제3자 연동을 위해 OAuth 2.0을 지원합니다. 두 가지 승인 
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | 클라이언트 ID로 클라이언트 가져오기(비밀 값은 가려짐) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | 클라이언트 생성 또는 업데이트 |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | 클라이언트 삭제 |
-| POST | `/membership/oauth/register` | 공개 | — | MCP 커넥터 같은 공개 클라이언트를 위한 동적 클라이언트 등록(RFC 7591). [연결된 앱](../connected-apps#dynamic-client-registration) 참고 |
+| POST | `/membership/oauth/register` | 공개 | — | MCP 커넥터 같은 공개 클라이언트를 위한 동적 클라이언트 등록(RFC 7591). [연결된 앱](../connected-apps.md#dynamic-client-registration) 참고 |
 
 ### 기기 승인 엔드포인트
 
@@ -265,5 +266,5 @@ API는 인증 요건을 결정하는 두 개의 래퍼 함수를 사용합니다
 
 ## 관련 문서
 
-- [모듈 구조](../module-structure) — 컨트롤러, 리포지토리, 모델의 구성 방식
-- [로컬 설정](../local-setup) — 개발을 위해 로컬에서 API 실행하기
+- [모듈 구조](../module-structure.md) — 컨트롤러, 리포지토리, 모델의 구성 방식
+- [로컬 설정](../local-setup.md) — 개발을 위해 로컬에서 API 실행하기

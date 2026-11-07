@@ -1,5 +1,7 @@
 ---
-title: "Kazania"
+title: "Oglądanie kazań w B1 Mobile"
+sidebar_label: "Kazania"
+description: "Przeglądaj, szukaj i oglądaj nagrane kazania i serie w aplikacji B1 Mobile, w tym jak dołączyć do odliczania przed transmisją na żywo."
 ---
 
 # Kazania
@@ -13,7 +15,7 @@ Ekran Kazania pozwala przeglądać i oglądać nagrane kazania z Twojego kościo
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) do swojego konta
+- [Zainstaluj B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) do swojego konta
 - Twój kościół musi mieć skonfigurowane treści kazań w panelu administracyjnym
 
 </div>
@@ -29,7 +31,7 @@ Na górze ekranu najnowsze kazanie wyświetlane jest jako wyróżniona karta, za
 
 ## Odliczanie do transmisji na żywo
 
-Gdy [transmisja na żywo](./live-streaming) zaplanowana jest w ciągu najbliższych 24 godzin, na ekranie Kazania pojawia się licznik czasu. Dzięki temu wiesz, kiedy rozpocznie się następne nabożeństwo, i możesz zaplanować oglądanie na żywo.
+Gdy [transmisja na żywo](./live-streaming.md) zaplanowana jest w ciągu najbliższych 24 godzin, na ekranie Kazania pojawia się licznik czasu. Dzięki temu wiesz, kiedy rozpocznie się następne nabożeństwo, i możesz zaplanować oglądanie na żywo.
 
 ## Oglądanie kazania
 
@@ -51,7 +53,7 @@ Każdy wpis kazania może wyświetlać:
 - **Miniatura** -- Podgląd obrazu dla kazania
 
 :::tip
-Jeśli na ekranie Kazania widzisz odliczanie, dotknij go, aby od razu przejść do [transmisji na żywo](./live-streaming) po jej rozpoczęciu.
+Jeśli na ekranie Kazania widzisz odliczanie, dotknij go, aby od razu przejść do [transmisji na żywo](./live-streaming.md) po jej rozpoczęciu.
 :::
 
 ## Dostępność

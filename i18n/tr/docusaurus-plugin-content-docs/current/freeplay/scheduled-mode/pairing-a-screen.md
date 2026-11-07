@@ -1,5 +1,6 @@
 ---
 title: "Ekran Eşleştirme"
+description: "FreePlay Admin'de bir FreePlay TV'yi, TV'deki dört harfli kodu kullanarak ekran grubu takvimine eşleştirin; böylece zamanlanmış içeriği kendiliğinden oynatır."
 ---
 
 # Ekran Eşleştirme
@@ -13,9 +14,9 @@ Bir televizyonu takvime eklemek için onu **FreePlay Admin** ile eşleştirin. T
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- FreePlay'i televizyona yükleyin ve başlatın. Bkz. [Başlarken](../getting-started/)
+- FreePlay'i televizyona yükleyin ve başlatın. Bkz. [Başlarken](../getting-started/index.md)
 - FreePlay Admin'e giriş yapabilmek için kilisenizin ChurchApps hesabına sahip olun
-- İsteğe bağlı olarak, televizyonun hemen oynatacak bir şeyi olması için önce [bir oynatma listesi oluşturun](./building-playlists) ve [bunu zamanlayın](./scheduling-the-calendar)
+- İsteğe bağlı olarak, televizyonun hemen oynatacak bir şeyi olması için önce [bir oynatma listesi oluşturun](./building-playlists.md) ve [bunu zamanlayın](./scheduling-the-calendar.md)
 
 </div>
 
@@ -38,7 +39,7 @@ Kodun geçerlilik süresi 15 dakikadır ve kodun altındaki geri sayım kalan s�
 5. **Mod** altında **Zamanlanmış** seçili kalsın. Televizyon, grubun takvimine göre kendiliğinden oynatma yapacaktır.
 6. **Eşleştir**'e tıklayın.
 
-Televizyonda önce **Bağlandı!**, ardından **Takviminiz yükleniyor...** yazısı görünür. Zamanlanmış içerikler indirilir ve oynatma başlar. Bkz. [TV'de Zamanlanmış Oynatma](./scheduled-playback).
+Televizyonda önce **Bağlandı!**, ardından **Takviminiz yükleniyor...** yazısı görünür. Zamanlanmış içerikler indirilir ve oynatma başlar. Bkz. [TV'de Zamanlanmış Oynatma](./scheduled-playback.md).
 
 :::info
 FreePlay Admin **Bu kod bir televizyonla eşleşmedi** uyarısı verirse ekrandaki kodu kontrol edin. Kodun süresi dolmuşsa televizyonda şu anda görünen yeni kodu kullanın.
@@ -51,11 +52,11 @@ FreePlay Admin **Bu kod bir televizyonla eşleşmedi** uyarısı verirse ekranda
 - **Zamanlanmış** - Kendiliğinden, grubun takvimine göre oynatma yapar. Kimsenin Başlat'a basması gerekmez.
 - **Manuel** - Birisi uzaktan kumandayla içerik seçer. Manuel bir ekran yine **Ekranlar** listenizde görünür, ancak bir takvimi takip etmez, bu nedenle **Grup** alanı kapalı olur.
 
-Ekranın modunu daha sonra [Ekranlar sayfasındaki](./managing-screens) **Düzenle** seçeneğinden değiştirebilirsiniz.
+Ekranın modunu daha sonra [Ekranlar sayfasındaki](./managing-screens.md) **Düzenle** seçeneğinden değiştirebilirsiniz.
 
 ## Bunun Yerine Bir Ayin Planına Eşleştirme
 
-**Ekranı eşleştir** ekranındaki kod B1 Admin'de de çalışır. Kodu orada girip **Planları Göster** altından bir plan türü seçerseniz televizyon, bir takvim yerine o plan türünü [Plan Modu](../plan-mode/) üzerinden takip eder. Bkz. [Cihazınızı Eşleştirme](../plan-mode/device-pairing).
+**Ekranı eşleştir** ekranındaki kod B1 Admin'de de çalışır. Kodu orada girip **Planları Göster** altından bir plan türü seçerseniz televizyon, bir takvim yerine o plan türünü [Plan Modu](../plan-mode/index.md) üzerinden takip eder. Bkz. [Cihazınızı Eşleştirme](../plan-mode/device-pairing.md).
 
 ## Televizyondan Değiştirme veya Eşleştirmeyi Kaldırma
 
@@ -79,6 +80,6 @@ Televizyon tekrar bir eşleştirme kodu gösterir. Televizyonu yeniden kullanmak
 
 ## İlgili Makaleler
 
-- **[Ekranları ve Grupları Yönetme](./managing-screens)** - Bir ekranın adını değiştirin, onu başka bir gruba taşıyın veya indirmelerini kontrol edin
-- **[Takvimi Planlama](./scheduling-the-calendar)** - Grubun ekranlarının ne oynatacağına karar verin
-- **[Eşleştirme Modunu Seçme](../getting-started/pairing-modes)** - Zamanlanmış Modu Plan Modu ve sağlayıcılara kendiniz göz atma ile karşılaştırın
+- **[Ekranları ve Grupları Yönetme](./managing-screens.md)** - Bir ekranın adını değiştirin, onu başka bir gruba taşıyın veya indirmelerini kontrol edin
+- **[Takvimi Planlama](./scheduling-the-calendar.md)** - Grubun ekranlarının ne oynatacağına karar verin
+- **[Eşleştirme Modunu Seçme](../getting-started/pairing-modes.md)** - Zamanlanmış Modu Plan Modu ve sağlayıcılara kendiniz göz atma ile karşılaştırın

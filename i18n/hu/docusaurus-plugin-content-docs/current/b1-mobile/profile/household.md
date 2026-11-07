@@ -1,5 +1,6 @@
 ---
 title: "Háztartás"
+description: "Tekintsd meg, kik tartoznak a háztartásodhoz, és hogyan kapcsolódnak a tagok a B1 Mobile Profil fülön, amelyre a bejelentkezés és más funkciók támaszkodnak."
 ---
 
 # Háztartás
@@ -13,7 +14,7 @@ A Profil képernyő **Háztartás** lapja a családtagjaidat mutatja. Itt látha
 <div class="prereqs">
 <h4>Mielőtt elkezdenéd</h4>
 
-- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing), majd [jelentkezz be](../getting-started/logging-in) a fiókodba
+- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing.md), majd [jelentkezz be](../getting-started/logging-in.md) a fiókodba
 
 </div>
 
@@ -33,7 +34,7 @@ A háztartási adataidat a B1 Mobile és a ChurchApps több funkciója is haszn�
 
 - **Bejelentkezés** -- Amikor [bejelentkezel](../checkin/self-checkin.md) egy istentiszteletre vagy eseményre, egyszerre az egész háztartásodat be tudod jelentkeztetni, nem pedig személyenként.
 - **Egyházi nyilvántartás** -- Az egyházad a háztartási adatokat használja a családi nyilvántartások rendezett vezetéséhez, és ahhoz, hogy családként tudjon kapcsolatot tartani veletek.
-- **Névjegyzék** -- Más tagok láthatják a háztartásod adatait az [egyházi névjegyzékben](../community/member-directory.md), a [adatvédelmi beállításaidtól](./privacy-settings) függően.
+- **Névjegyzék** -- Más tagok láthatják a háztartásod adatait az [egyházi névjegyzékben](../community/member-directory.md), a [adatvédelmi beállításaidtól](./privacy-settings.md) függően.
 
 ## A háztartásod megtekintése
 
@@ -47,10 +48,10 @@ A háztartás tagságát általában az egyház adminisztrátora kezeli. Ha vala
 
 ## Az adatok naprakészen tartása
 
-Ha egy családtag adatait frissíteni kell, [saját profilját](./editing-profile) szerkesztheti, vagy felveheted a kapcsolatot az egyházi adminisztrátorral a módosításokhoz. A háztartási adatok pontosan tartása biztosítja, hogy a [bejelentkezés](../checkin/) zökkenőmentesen működjön az egész családod számára.
+Ha egy családtag adatait frissíteni kell, [saját profilját](./editing-profile.md) szerkesztheti, vagy felveheted a kapcsolatot az egyházi adminisztrátorral a módosításokhoz. A háztartási adatok pontosan tartása biztosítja, hogy a [bejelentkezés](../checkin/index.md) zökkenőmentesen működjön az egész családod számára.
 
 ## Kapcsolódó cikkek
 
 - [Önálló bejelentkezés](../checkin/self-checkin.md) -- Jelentkeztesd be a háztartásod tagjait az istentiszteletekre
-- [Profilod szerkesztése](./editing-profile) -- Saját személyes adataid frissítése
-- [Adatvédelmi beállítások](./privacy-settings) -- Szabályozd, mit láthatnak mások a háztartásodról
+- [Profilod szerkesztése](./editing-profile.md) -- Saját személyes adataid frissítése
+- [Adatvédelmi beállítások](./privacy-settings.md) -- Szabályozd, mit láthatnak mások a háztartásodról

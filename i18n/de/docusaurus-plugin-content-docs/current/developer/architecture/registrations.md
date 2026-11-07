@@ -6,7 +6,7 @@ title: "Veranstaltungsanmeldungen"
 
 <div class="article-intro">
 
-Die native Anmeldung zu Veranstaltungen liegt im Content-Modul und umfasst seit der Welle der kostenpflichtigen Anmeldungen ein vollständiges Handelsmodell: Preise nach Teilnehmertyp, kostenpflichtige Zusatzoptionen, Rabattcodes, Zahlungen über das bestehende Giving-Gateway der Gemeinde und eine statusgesteuerte Warteliste. Der Zahlungsweg nutzt bewusst den Giving-Stack — der Anmeldecontroller belastet über dieselbe Abstraktion `GatewayService` / `IGatewayProvider`, die in [Giving](./giving) beschrieben ist. Dadurch liegen im Content-Modul weder Kartendaten noch Wissen über SDKs von Gateways. Diese Seite beschreibt das Datenmodell, die Regeln zu Preisen und Kapazität sowie die Abläufe für Anmeldung, Zahlung und Warteliste.
+Die native Anmeldung zu Veranstaltungen liegt im Content-Modul und umfasst seit der Welle der kostenpflichtigen Anmeldungen ein vollständiges Handelsmodell: Preise nach Teilnehmertyp, kostenpflichtige Zusatzoptionen, Rabattcodes, Zahlungen über das bestehende Giving-Gateway der Gemeinde und eine statusgesteuerte Warteliste. Der Zahlungsweg nutzt bewusst den Giving-Stack — der Anmeldecontroller belastet über dieselbe Abstraktion `GatewayService` / `IGatewayProvider`, die in [Giving](./giving.md) beschrieben ist. Dadurch liegen im Content-Modul weder Kartendaten noch Wissen über SDKs von Gateways. Diese Seite beschreibt das Datenmodell, die Regeln zu Preisen und Kapazität sowie die Abläufe für Anmeldung, Zahlung und Warteliste.
 
 </div>
 
@@ -110,7 +110,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Die Tokenisierung erfolgt im Browser genau wie bei Spenden (siehe [Giving](./giving)) — der Assistent nutzt die Registry der Zahlungsanbieter aus apphelper, sodass angemeldete Mitglieder gespeicherte Karten verwenden können und Gäste eine neue Karte tokenisieren. Der Controller übernimmt die Eigenheiten der Anbieter aus `DonateController` (Kennungen für Zahlungsmethoden bei Kingdom Funding `pm-{id}`, Antworten `requires_action` nach SCA bei Stripe, die an den Client zurückgegeben werden, ohne eine Zahlung zu erfassen). Eine erfolgreiche Belastung schreibt eine Zeile `registrationPayments`, erhöht `amountPaid` und bestätigt die Anmeldung. **Rückerstattungen sind nicht implementiert** — eine stornierte bezahlte Anmeldung behält ihre Zahlungszeilen, und eine Rückerstattung wird außerhalb des Systems im Dashboard des Gateways abgewickelt.
+Die Tokenisierung erfolgt im Browser genau wie bei Spenden (siehe [Giving](./giving.md)) — der Assistent nutzt die Registry der Zahlungsanbieter aus apphelper, sodass angemeldete Mitglieder gespeicherte Karten verwenden können und Gäste eine neue Karte tokenisieren. Der Controller übernimmt die Eigenheiten der Anbieter aus `DonateController` (Kennungen für Zahlungsmethoden bei Kingdom Funding `pm-{id}`, Antworten `requires_action` nach SCA bei Stripe, die an den Client zurückgegeben werden, ohne eine Zahlung zu erfassen). Eine erfolgreiche Belastung schreibt eine Zeile `registrationPayments`, erhöht `amountPaid` und bestätigt die Anmeldung. **Rückerstattungen sind nicht implementiert** — eine stornierte bezahlte Anmeldung behält ihre Zahlungszeilen, und eine Rückerstattung wird außerhalb des Systems im Dashboard des Gateways abgewickelt.
 
 Beide Einstiegspunkte laufen über denselben Codepfad: `register` (Zahlung bei der Anmeldung) und `pay` (Zahlung des Restbetrags bzw. Abschluss der Warteliste).
 
@@ -140,7 +140,7 @@ Abfragen über Modulgrenzen hinweg (Auflösen oder Anlegen der Gastperson, Laden
 
 ## Verwandte Seiten
 
-- [Giving](./giving) — die Gateway-Abstraktion, die Registry der Anbieter und das Tokenisierungsmodell, die diese Funktion wiederverwendet
-- [Content-Endpunkte](../api/endpoints/content) — die REST-Schnittstelle des Content-Moduls
-- [Webhooks](../api/webhooks) — das Ereignis `registration.created`
-- [Modulstruktur](../api/module-structure) — wie das Content-Modul serverseitig organisiert ist
+- [Giving](./giving.md) — die Gateway-Abstraktion, die Registry der Anbieter und das Tokenisierungsmodell, die diese Funktion wiederverwendet
+- [Content-Endpunkte](../api/endpoints/content.md) — die REST-Schnittstelle des Content-Moduls
+- [Webhooks](../api/webhooks.md) — das Ereignis `registration.created`
+- [Modulstruktur](../api/module-structure.md) — wie das Content-Modul serverseitig organisiert ist

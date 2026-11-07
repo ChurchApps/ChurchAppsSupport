@@ -1,5 +1,6 @@
 ---
 title: "Prezentacja"
+description: "Wyświetlanie lekcji na projektorze w trybie prezentacji Lessons.church, przewodniki dla wolontariuszy wg ról i druk materiałów przed zajęciami."
 ---
 
 # Prezentacja

@@ -1,5 +1,6 @@
 ---
 title: "Vlastné úložisko (BYOS)"
+description: "Pripojte si vlastný Google Drive, Dropbox, OneDrive alebo bucket kompatibilný s S3 v B1 Admin, aby nahrávanie súborov cirkvi obišlo platformový limit 100 MB."
 ---
 
 # Vlastné úložisko (BYOS)
@@ -8,7 +9,7 @@ Cirkvi dostávajú ~100 MB bezplatného hostovaného úložiska na súbory (povr
 
 ## Rozhranie poskytovateľa
 
-BYOS znovu používa rozhranie úložiska vytvorené pre [MinistryStuff](./ministrystuff): `IStorageProvider` (`Packages/apihelper`), ktoré pre každú cirkev rieši `StorageResolver` z tabuľky `content.storageProviders`. Na rozdiel od jednoinštančných poskytovateľov `churchapps`/`ministrystuff` majú poskytovatelia BYOS poverenia viazané na cirkev, preto `StorageResolver.forChurch` vytvorí inštanciu pre každú požiadavku z riadku danej cirkvi. Implementácie sú vedľa resolvera v `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, a tiež `ByosAuth` (výmena OAuth tokenov + jednoduché obnovenie — Dropbox rotuje obnovovacie tokeny, takže obnovenia sa deduplikujú rovnako ako v `ProviderProxyController`).
+BYOS znovu používa rozhranie úložiska vytvorené pre [MinistryStuff](./ministrystuff.md): `IStorageProvider` (`Packages/apihelper`), ktoré pre každú cirkev rieši `StorageResolver` z tabuľky `content.storageProviders`. Na rozdiel od jednoinštančných poskytovateľov `churchapps`/`ministrystuff` majú poskytovatelia BYOS poverenia viazané na cirkev, preto `StorageResolver.forChurch` vytvorí inštanciu pre každú požiadavku z riadku danej cirkvi. Implementácie sú vedľa resolvera v `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, a tiež `ByosAuth` (výmena OAuth tokenov + jednoduché obnovenie — Dropbox rotuje obnovovacie tokeny, takže obnovenia sa deduplikujú rovnako ako v `ProviderProxyController`).
 
 `storageProviders` obsahuje poverenia: `accessToken`/`refreshToken`/`tokenExpiresAt` (šifrované, trojica OAuth) alebo `apiKey`/`apiSecret` + JSON `settings` (`{endpoint, region, bucket, publicBase}`, S3). Tokeny sa nikdy nedostanú ku klientovi — `GET /content/storage/providers` maskuje tajomstvá a vracia booleovskú hodnotu `connected`.
 

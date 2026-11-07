@@ -1,5 +1,6 @@
 ---
 title: "Mga Programa at Pag-aaral"
+description: "Alamin kung paano nagkakaugnay ang programs, studies, lessons, at venues ng Lessons.church para mahanap ang tamang curriculum at magkakaugnay na aralin."
 ---
 
 # Mga Programa at Pag-aaral

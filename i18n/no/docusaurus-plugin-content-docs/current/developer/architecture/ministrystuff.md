@@ -29,7 +29,7 @@ En menighets leverandørrad (`content.storageProviders`, administrert i B1Admin 
 
 Merknad om omfang: valg av leverandør dekker flyten for innholdets **filer/ressurser** (der store mediefiler ligger). Opplastinger av galleri/logo/bilder blir værende hos standardleverandøren — de lister nøkler fra lagringen og bygger URL-er på klienten, så rotfordeling per menighet gjelder ikke ennå.
 
-Det samme grensesnittet driver også [Bring-Your-Own Storage](./byos-storage): menigheter kan koble til Google Drive, Dropbox, OneDrive eller sin egen S3-kompatible bøtte i stedet for et MinistryStuff-abonnement.
+Det samme grensesnittet driver også [Bring-Your-Own Storage](./byos-storage.md): menigheter kan koble til Google Drive, Dropbox, OneDrive eller sin egen S3-kompatible bøtte i stedet for et MinistryStuff-abonnement.
 
 ## Fakturering
 

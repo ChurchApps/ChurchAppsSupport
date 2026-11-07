@@ -1,5 +1,6 @@
 ---
 title: "Integrációk"
+description: "B1 Admin csatlakoztatása Slackhez, Discordhoz, Zapierhez, Make-hez, Google Táblázatokhoz és AI-asszisztensekhez, API-kulcs-hatókörökkel."
 ---
 
 # Integrációk
@@ -14,21 +15,21 @@ A B1 jól illeszkedik azokhoz az eszközökhöz, amelyeket a csapata már haszn�
 
 | Integráció | Mit csinál | Irány | Beállítás ideje |
 |---|---|---|---|
-| **[Slack](./slack-discord)** | Olvasható értesítéseket küld (új személyek, adományok, regisztrációk, …) egy Slack-csatornára | B1 → Slack | 2 perc |
-| **[Discord](./slack-discord)** | Ugyanez egy Discord-csatornára | B1 → Discord | 2 perc |
-| **[Zapier](./zapier)** | B1-eseményeket használhat indítóként, és B1-műveleteket futtathat a Zapier több mint 7000 alkalmazásának bármelyikében | Mindkettő | 5–10 perc Zapenként |
-| **[Make](./make)** | Ugyanaz az elv, mint a Zapier esetén, Make vizuális forgatókönyv-szerkesztőjében | Mindkettő | 5–10 perc forgatókönyvenként |
-| **[Google Sheets](./google-sheets)** | Igény szerint exportálja a Személyeket / Adományokat / Csoportokat / Részvételt táblázatba | B1 → Táblázat | 5 perc |
-| **[Claude](./claude)** | Kérdéseket tehet fel az Anthropic Claude-jának az egyház adatairól, a jogosultságainak megfelelően – ingyenesen kipróbálható, ajánlott | Mindkettő | 3 percen belül |
-| **[ChatGPT](./chatgpt)** | Ugyanez az OpenAI ChatGPT-jével (fizetős ChatGPT-csomag szükséges) | Mindkettő | 10 perc |
-| **[Csatlakoztatott szolgáltatások](./services/)** | Válogatott leírások a Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr szolgáltatásokhoz | Változó | 5–10 perc szolgáltatásonként |
+| **[Slack](./slack-discord.md)** | Olvasható értesítéseket küld (új személyek, adományok, regisztrációk, …) egy Slack-csatornára | B1 → Slack | 2 perc |
+| **[Discord](./slack-discord.md)** | Ugyanez egy Discord-csatornára | B1 → Discord | 2 perc |
+| **[Zapier](./zapier.md)** | B1-eseményeket használhat indítóként, és B1-műveleteket futtathat a Zapier több mint 7000 alkalmazásának bármelyikében | Mindkettő | 5–10 perc Zapenként |
+| **[Make](./make.md)** | Ugyanaz az elv, mint a Zapier esetén, Make vizuális forgatókönyv-szerkesztőjében | Mindkettő | 5–10 perc forgatókönyvenként |
+| **[Google Sheets](./google-sheets.md)** | Igény szerint exportálja a Személyeket / Adományokat / Csoportokat / Részvételt táblázatba | B1 → Táblázat | 5 perc |
+| **[Claude](./claude.md)** | Kérdéseket tehet fel az Anthropic Claude-jának az egyház adatairól, a jogosultságainak megfelelően – ingyenesen kipróbálható, ajánlott | Mindkettő | 3 percen belül |
+| **[ChatGPT](./chatgpt.md)** | Ugyanez az OpenAI ChatGPT-jével (fizetős ChatGPT-csomag szükséges) | Mindkettő | 10 perc |
+| **[Csatlakoztatott szolgáltatások](./services/index.md)** | Válogatott leírások a Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr szolgáltatásokhoz | Változó | 5–10 perc szolgáltatásonként |
 
 ## Melyiket válassza?
 
 - **Csak egy értesítést szeretne a csevegésben?** Használja a **Slacket** vagy a **Discordot** – nincs szükség külön harmadik féltől származó fiókra, és nem kell Zap-et karbantartani. Teljes egészében a B1Admin felületén állítható be.
 - **Több alkalmazás között szeretne automatizálni valamit** (pl. „ha valaki adakozik, adja hozzá a Mailchimp-listámhoz és küldje a Slack #donations csatornájába”)? Használja a **Zapiert** vagy a **Make-et**. A Zapier barátságosabb, a Make olcsóbb nagy méretben, és rugalmasabb logikát tesz lehetővé.
 - **Egyszeri adatlekérdezésre vagy ütemezett jelentésre van szüksége?** Használja a **Google Sheetset** – illessze be az API-kulcsot a kiegészítő oldalsávjába, majd kattintson az Exportálás gombra.
-- **Egyszerű magyar nyelven szeretne kérdezni** („hány első alkalommal érkező látogató volt az elmúlt vasárnap?”, „foglalja össze az adakozást ebben a hónapban”)? Kezdje a **[Claude](./claude)** integrációval – ingyenesen kipróbálható, és kevesebb mint 3 perc alatt beállítható. A **[ChatGPT](./chatgpt)** is működik fizetős csomaggal. A Claude a B1-fiókjával történő bejelentkezéssel csatlakozik, a ChatGPT pedig B1 API-kulcsot használ.
+- **Egyszerű magyar nyelven szeretne kérdezni** („hány első alkalommal érkező látogató volt az elmúlt vasárnap?”, „foglalja össze az adakozást ebben a hónapban”)? Kezdje a **[Claude](./claude.md)** integrációval – ingyenesen kipróbálható, és kevesebb mint 3 perc alatt beállítható. A **[ChatGPT](./chatgpt.md)** is működik fizetős csomaggal. A Claude a B1-fiókjával történő bejelentkezéssel csatlakozik, a ChatGPT pedig B1 API-kulcsot használ.
 - **Saját egyedi integrációt épít?** Egyik fent felsorolt sem megfelelő – közvetlenül a [REST API-val](/docs/developer/api) dolgozzon egy [API-kulccsal](/docs/developer/api/api-keys), vagy iratkoztasson fel egy Önük által üzemeltetett szervert a [webhookokra](/docs/developer/api/webhooks).
 
 ## Közös jellemzők
@@ -59,10 +60,10 @@ Ha a fentiek egyike sem megfelelő, a B1 minden felülete nyitott:
 
 ## Következő lépések
 
-- [Slack és Discord](./slack-discord) – csevegési értesítések küldése
-- [Zapier](./zapier) – csatlakozás több mint 7000 alkalmazáshoz
-- [Make](./make) – vizuális munkafolyamat-automatizálás
-- [Google Sheets](./google-sheets) – exportálás táblázatokba
-- [Claude](./claude) – kérdések az Anthropic Claude-jának az egyház adatairól
-- [ChatGPT](./chatgpt) – kérdések az OpenAI ChatGPT-jének az egyház adatairól
-- [Csatlakoztatott szolgáltatások](./services/) – szolgáltatásonkénti leírások (Mailchimp, Donorbox, Clearstream, …)
+- [Slack és Discord](./slack-discord.md) – csevegési értesítések küldése
+- [Zapier](./zapier.md) – csatlakozás több mint 7000 alkalmazáshoz
+- [Make](./make.md) – vizuális munkafolyamat-automatizálás
+- [Google Sheets](./google-sheets.md) – exportálás táblázatokba
+- [Claude](./claude.md) – kérdések az Anthropic Claude-jának az egyház adatairól
+- [ChatGPT](./chatgpt.md) – kérdések az OpenAI ChatGPT-jének az egyház adatairól
+- [Csatlakoztatott szolgáltatások](./services/index.md) – szolgáltatásonkénti leírások (Mailchimp, Donorbox, Clearstream, …)

@@ -1,5 +1,7 @@
 ---
-title: "Başlarken"
+title: "ChurchApps'e Başlarken: İlk 15 Dakika"
+sidebar_label: "Başlarken"
+description: "Birkaç adımda yeni bir ChurchApps hesabı kurun: kilise bilgilerinizi ekleyin, kişileri B1 Admin'e aktarın, ekibinizi davet edin ve ilk projenizi seçin."
 ---
 
 # Başlarken

@@ -1,5 +1,7 @@
 ---
-title: "讲道"
+title: "在 B1 Mobile 中观看讲道"
+sidebar_label: "讲道"
+description: "在 B1 Mobile 应用中浏览、搜索和观看已录制的讲道与系列讲道，包括如何看到直播倒计时。"
 ---
 
 # 讲道
@@ -13,7 +15,7 @@ title: "讲道"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in)您的账户
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md)您的账户
 - 您的教会必须在管理门户中配置了讲道内容
 
 </div>
@@ -29,7 +31,7 @@ title: "讲道"
 
 ## 直播倒计时
 
-当[直播](./live-streaming)即将在未来24小时内开始时，讲道界面上会出现倒计时计时器。这让您知道下一场礼拜将于何时播出，以便您计划观看直播。
+当[直播](./live-streaming.md)即将在未来24小时内开始时，讲道界面上会出现倒计时计时器。这让您知道下一场礼拜将于何时播出，以便您计划观看直播。
 
 ## 观看讲道
 
@@ -51,7 +53,7 @@ title: "讲道"
 - **缩略图** -- 讲道的预览图片
 
 :::tip
-如果您在讲道界面上看到倒计时，当直播开始时点击它即可直接跳转到[直播](./live-streaming)。
+如果您在讲道界面上看到倒计时，当直播开始时点击它即可直接跳转到[直播](./live-streaming.md)。
 :::
 
 ## 可用性

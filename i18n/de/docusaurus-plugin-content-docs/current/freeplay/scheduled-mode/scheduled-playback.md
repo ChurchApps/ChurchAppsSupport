@@ -1,5 +1,6 @@
 ---
 title: "Geplante Wiedergabe auf dem Fernseher"
+description: "Gekoppelter FreePlay-TV lädt die kommende Woche und spielt nach Uhrzeit ab, auch offline. Mit Infopanel, Fernbedienungstasten und angepinnter Playlist."
 ---
 
 # Geplante Wiedergabe auf dem Fernseher
@@ -13,8 +14,8 @@ Sobald ein Fernseher mit einem Kalender gekoppelt ist, betreibt FreePlay ihn fü
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [Den Fernseher mit einem Kalender koppeln](./pairing-a-screen)
-- [Etwas in den Kalender eintragen](./scheduling-the-calendar) oder eine Standard-Schleife für die Gruppe des Bildschirms festlegen
+- [Den Fernseher mit einem Kalender koppeln](./pairing-a-screen.md)
+- [Etwas in den Kalender eintragen](./scheduling-the-calendar.md) oder eine Standard-Schleife für die Gruppe des Bildschirms festlegen
 
 </div>
 
@@ -40,7 +41,7 @@ Die Leiste enthält außerdem drei Schaltflächen:
 
 - **Playlist anheften** — Den aktuellen Inhalt in einer Schleife weiter abspielen und den Kalender ignorieren. Wählen Sie **Anheften aufheben**, um zum Zeitplan zurückzukehren
 - **Inhalte durchsuchen** — Den geplanten Player verlassen, um Ihre verbundenen Anbieter zu durchsuchen
-- **Einstellungen** — FreePlay-Einstellungen öffnen, wo Sie [die Kopplung aufheben oder mit einem anderen Kalender koppeln](./pairing-a-screen#changing-or-unpairing-from-the-tv) können
+- **Einstellungen** — FreePlay-Einstellungen öffnen, wo Sie [die Kopplung aufheben oder mit einem anderen Kalender koppeln](./pairing-a-screen.md#changing-or-unpairing-from-the-tv) können
 
 :::tip
 Um nach dem Durchsuchen zum Zeitplan zurückzukehren, drücken Sie auf dem Bildschirm **Inhaltsanbieter** auf der Fernbedienung die Taste **Zurück**. Alternativ öffnen Sie die **Einstellungen**, wählen **Mit einem Kalender koppeln** und dann **Zurück zum Zeitplan**. Ein gekoppelter Fernseher kehrt außerdem immer dann zum geplanten Player zurück, wenn FreePlay wieder in den Vordergrund tritt, und öffnet sich immer direkt im geplanten Player.
@@ -77,6 +78,6 @@ Sie können den Kalender eines Bildschirms auch in einem Webbrowser abspielen. �
 
 ## Verwandte Artikel
 
-- **[Den Kalender planen](./scheduling-the-calendar)** — Festlegen, was abgespielt wird und was passiert, wenn eine Lektion früher endet
-- **[Bildschirme und Gruppen verwalten](./managing-screens)** — Die Downloads jedes Bildschirms in FreePlay Admin prüfen
-- **[Inhalte abspielen](../content-providers/playing-content)** — Player-Steuerung, wenn Sie Inhalte selbst abspielen
+- **[Den Kalender planen](./scheduling-the-calendar.md)** — Festlegen, was abgespielt wird und was passiert, wenn eine Lektion früher endet
+- **[Bildschirme und Gruppen verwalten](./managing-screens.md)** — Die Downloads jedes Bildschirms in FreePlay Admin prüfen
+- **[Inhalte abspielen](../content-providers/playing-content.md)** — Player-Steuerung, wenn Sie Inhalte selbst abspielen

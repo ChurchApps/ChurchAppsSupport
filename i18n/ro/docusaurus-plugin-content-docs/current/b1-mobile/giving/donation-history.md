@@ -1,5 +1,7 @@
 ---
-title: "Istoric donațiilor"
+title: "Vizualizarea istoricului donațiilor în B1 Mobile"
+sidebar_label: "Istoric donațiilor"
+description: "Consultați donațiile anului curent, ultimul dar și întregul istoric al donațiilor în B1 Mobile și repetați un dar anterior dintr-o singură atingere din fila Prezentare generală."
 ---
 
 # Istoric donațiilor
@@ -13,8 +15,8 @@ B1 Mobile îți oferă o imagine clară a donațiilor tale prin două file: **Pr
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalează B1 Mobile](../getting-started/installing) și [autentifică-te](../getting-started/logging-in) în contul tău
-- [Fă cel puțin o donație](./making-donations) pentru a vedea istoricul tău
+- [Instalează B1 Mobile](../getting-started/installing.md) și [autentifică-te](../getting-started/logging-in.md) în contul tău
+- [Fă cel puțin o donație](./making-donations.md) pentru a vedea istoricul tău
 
 </div>
 
@@ -45,5 +47,5 @@ Verifică regulat fila **Prezentare generală** pentru a-ți urmări obiectivele
 
 ## Articole conexe
 
-- [Efectuarea unei donații](./making-donations) -- Fă o donație nouă din aplicație
-- [Gestionarea metodelor de plată](./managing-payments) -- Adaugă sau elimină metode de plată salvate
+- [Efectuarea unei donații](./making-donations.md) -- Fă o donație nouă din aplicație
+- [Gestionarea metodelor de plată](./managing-payments.md) -- Adaugă sau elimină metode de plată salvate

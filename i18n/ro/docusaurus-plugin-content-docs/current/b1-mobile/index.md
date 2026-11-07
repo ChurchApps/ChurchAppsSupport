@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (Depreciat)"
+description: "Explică faptul că aplicația nativă B1 Mobile este depreciată și că membrii și administratorii ar trebui să folosească în schimb PWA B1.church, paginile vechi fiind păstrate ca referință."
 ---
 
 # B1 Mobile (Depreciat)
@@ -40,16 +41,16 @@ B1 Mobile accepta notificări push, astfel încât să nu ratați o actualizare 
 
 ## Aflați mai multe
 
-- [Primii pași](./getting-started/) -- Instalați aplicația, creați un cont și selectați biserica.
-- [Panou de control](./dashboard/) -- Aflați mai multe despre ecranul dumneavoastră principal personalizat.
-- [Grupuri](./groups/) -- Rămâneți în legătură cu grupurile bisericii.
-- [Donații](./giving/) -- Faceți donații de pe telefon.
-- [Evenimente](./events/) -- Consultați și înscrieți-vă la evenimentele viitoare ale bisericii.
-- [Check-In](./checkin/) -- Faceți check-in pentru servicii și evenimente.
-- [Servire](./serving/) -- Vizualizați planurile de servire, atribuirile și oportunitățile de voluntariat.
-- [Comunitate](./community/) -- Consultați directorul membrilor și trimiteți mesaje.
-- [Conținut](./content/) -- Predici, Biblie, versetul zilei și lecții (ecranul de lecții este depreciat — vedeți [FreePlay](/docs/freeplay/)).
-- [Profil](./profile/) -- Gestionați profilul și setările contului.
+- [Primii pași](./getting-started/index.md) -- Instalați aplicația, creați un cont și selectați biserica.
+- [Panou de control](./dashboard/index.md) -- Aflați mai multe despre ecranul dumneavoastră principal personalizat.
+- [Grupuri](./groups/index.md) -- Rămâneți în legătură cu grupurile bisericii.
+- [Donații](./giving/index.md) -- Faceți donații de pe telefon.
+- [Evenimente](./events/index.md) -- Consultați și înscrieți-vă la evenimentele viitoare ale bisericii.
+- [Check-In](./checkin/index.md) -- Faceți check-in pentru servicii și evenimente.
+- [Servire](./serving/index.md) -- Vizualizați planurile de servire, atribuirile și oportunitățile de voluntariat.
+- [Comunitate](./community/index.md) -- Consultați directorul membrilor și trimiteți mesaje.
+- [Conținut](./content/index.md) -- Predici, Biblie, versetul zilei și lecții (ecranul de lecții este depreciat — vedeți [FreePlay](/docs/freeplay/)).
+- [Profil](./profile/index.md) -- Gestionați profilul și setările contului.
 
 :::info
 B1 Mobile a fost înlocuit de [PWA-ul B1.church](../b1-church/getting-started/installing-pwa.md). Instalările noi ar trebui să folosească PWA-ul, deoarece aplicația nativă nu mai este actualizată.

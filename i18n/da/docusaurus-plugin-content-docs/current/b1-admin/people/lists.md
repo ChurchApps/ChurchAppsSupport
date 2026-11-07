@@ -1,5 +1,6 @@
 ---
 title: "Gemte lister"
+description: "Gem en People-søgning i B1 Admin som en navngivet liste, og genindlæs den med ét klik. Lister opdateres løbende, så nye matchende medlemmer vises automatisk."
 ---
 
 # Gemte lister

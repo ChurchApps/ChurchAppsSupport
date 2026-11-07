@@ -1,5 +1,6 @@
 ---
 title: "Statystyki"
+description: "Liczba pobrań według studium, kościoły pobierające Twoje zasoby i ich lokalizacje w statystykach panelu Lessons.church, z filtrowaniem po zakresie dat."
 ---
 
 # Statystyki

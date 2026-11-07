@@ -1,5 +1,6 @@
 ---
 title: "Kuraterad kalender"
+description: "Ställ in en gemensam kuraterad kalender i B1 Admin som samlar händelser från flera grupper och dela den på webbplatsen, via ICS-prenumeration eller som nedladdning."
 ---
 
 # Kuraterad kalender
@@ -15,7 +16,7 @@ En kuraterad kalender samlar händelser från flera grupper i en gemensam kalend
 
 - Skapa de [grupper](../groups/creating-groups.md) vars händelser du vill ta med
 - Se till att gruppledarna har lagt till händelser i sina respektive grupper
-- Sätt dig in i grunderna i [Skapa kalendrar](creating-calendars)
+- Sätt dig in i grunderna i [Skapa kalendrar](./creating-calendars.md)
 
 </div>
 
@@ -61,5 +62,5 @@ Endast **offentliga** händelser visas i den kuraterade kalendern på din webbpl
 
 ## Nästa steg
 
-- [Skapa kalendrar](creating-calendars) -- Lär dig grunderna i att skapa kalendrar
-- [Översikt över kalendrar](./) -- Gå tillbaka till översikten över kalendrar
+- [Skapa kalendrar](./creating-calendars.md) -- Lär dig grunderna i att skapa kalendrar
+- [Översikt över kalendrar](./index.md) -- Gå tillbaka till översikten över kalendrar

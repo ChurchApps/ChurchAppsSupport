@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Scrivere post del blog per il tuo sito in B1 Admin"
+sidebar_label: "Blog"
+description: "Crea, pianifica e pubblica post sul blog del sito della chiesa in B1 Admin, con estratti, categorie, tag, foto di intestazione e commenti incorporati."
 ---
 
 # Blog
@@ -13,8 +15,8 @@ La pagina Blog ti permette di pubblicare notizie, aggiornamenti e meditazioni su
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Completa la [Configurazione iniziale](initial-setup) per il tuo sito web
-- Aggiungi un link di navigazione a `/blog` da [Gestire le pagine](managing-pages) se vuoi che i visitatori trovino il blog dal menu
+- Completa la [Configurazione iniziale](./initial-setup.md) per il tuo sito web
+- Aggiungi un link di navigazione a `/blog` da [Gestire le pagine](./managing-pages.md) se vuoi che i visitatori trovino il blog dal menu
 
 </div>
 
@@ -31,7 +33,7 @@ La pagina Blog ti permette di pubblicare notizie, aggiornamenti e meditazioni su
 3. Aggiungi un **Estratto** -- un breve riassunto mostrato nell'elenco degli articoli, nelle meta descrizioni e nel feed RSS. Se lo lasci vuoto, viene generato automaticamente dall'inizio del contenuto dell'articolo.
 4. Scrivi il corpo dell'articolo nell'editor **Contenuto** usando Markdown. Clicca su **Anteprima** per vedere come apparirà l'articolo formattato.
 5. Scegli una **Categoria** (seleziona una esistente oppure digitane una nuova) e dei **Tag** facoltativi separati da virgole.
-6. Clicca su **Seleziona immagine** per scegliere una foto dalla tua galleria [File](files), oppure caricane una nuova. Le foto caricate si aprono in uno strumento di ritaglio integrato bloccato sul rapporto 16:9, così puoi inquadrare qualsiasi foto per adattarla all'intestazione dell'articolo e alle schede dell'elenco.
+6. Clicca su **Seleziona immagine** per scegliere una foto dalla tua galleria [File](./files.md), oppure caricane una nuova. Le foto caricate si aprono in uno strumento di ritaglio integrato bloccato sul rapporto 16:9, così puoi inquadrare qualsiasi foto per adattarla all'intestazione dell'articolo e alle schede dell'elenco.
 7. Imposta l'**Autore** -- per impostazione predefinita sei tu, ma puoi cercare e selezionare qualsiasi persona nel tuo database.
 8. Attiva **Pubblicato** e imposta una **Data di pubblicazione** quando sei pronto a rendere pubblico l'articolo. Lascialo disattivato per salvare l'articolo come bozza.
 
@@ -58,7 +60,7 @@ Ogni articolo nell'elenco mostra uno di tre stati:
 Gli articoli pubblicati compaiono su `{tuosito}/blog`, 10 per pagina con i link **Precedenti**/**Successivi** per scorrere l'archivio, insieme a un filtro per categoria e alla firma e alla foto di ciascun articolo. Anche i tag vengono mostrati come chip cliccabili, che permettono ai visitatori di filtrare l'elenco per tag allo stesso modo. I singoli articoli si trovano su `{tuosito}/blog/{slug}` e includono articoli correlati della stessa categoria. La pagina del blog pubblica anche un feed RSS, rilevabile automaticamente dai lettori di feed e dagli strumenti di automazione come Zapier.
 
 :::info
-Gli articoli del blog sono un tipo di contenuto separato dalle normali pagine del sito web -- non vengono creati nell'[editor di pagine](page-editor) e non compaiono nell'elenco delle Pagine. Questo mantiene la scrittura degli articoli rapida e concentrata sul testo.
+Gli articoli del blog sono un tipo di contenuto separato dalle normali pagine del sito web -- non vengono creati nell'[editor di pagine](./page-editor.md) e non compaiono nell'elenco delle Pagine. Questo mantiene la scrittura degli articoli rapida e concentrata sul testo.
 :::
 
 ## Aggiungere commenti sotto gli articoli
@@ -77,6 +79,6 @@ Svuota la casella e clicca su **Salva** per rimuovere il codice da tutti gli art
 
 ## Passi successivi
 
-- [Gestire le pagine](managing-pages) -- Aggiungi un link di navigazione al tuo blog
-- [File](files) -- Carica foto da usare nei tuoi articoli
+- [Gestire le pagine](./managing-pages.md) -- Aggiungi un link di navigazione al tuo blog
+- [File](./files.md) -- Carica foto da usare nei tuoi articoli
 - [Integrazione con Zapier](../integrations/zapier.md) -- Attiva automazioni quando vengono pubblicati nuovi articoli

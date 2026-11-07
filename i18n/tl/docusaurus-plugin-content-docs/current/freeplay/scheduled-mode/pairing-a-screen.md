@@ -1,5 +1,6 @@
 ---
 title: "Pagpapares ng Screen"
+description: "I-pair ang FreePlay TV sa kalendaryo ng screen group sa FreePlay Admin gamit ang apat-na-letrang code sa TV para mag-play ng iskedyul na content nang mag-isa."
 ---
 
 # Pagpapares ng Screen
@@ -13,9 +14,9 @@ Para ilagay ang isang TV sa calendar, ipares ito sa **FreePlay Admin**. Nagpapak
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-install at buksan ang FreePlay sa TV. Tingnan ang [Getting Started](../getting-started/)
+- I-install at buksan ang FreePlay sa TV. Tingnan ang [Getting Started](../getting-started/index.md)
 - Magkaroon ng ChurchApps login para sa iyong simbahan para makapag-sign in ka sa FreePlay Admin
-- Opsyonal, [gumawa ng playlist](./building-playlists) at [i-iskedyul ito](./scheduling-the-calendar) muna para may maipapatugtog agad ang TV
+- Opsyonal, [gumawa ng playlist](./building-playlists.md) at [i-iskedyul ito](./scheduling-the-calendar.md) muna para may maipapatugtog agad ang TV
 
 </div>
 
@@ -38,7 +39,7 @@ Tumatagal ng 15 minuto ang code, at may countdown sa ilalim nito na nagpapakita 
 5. Sa ilalim ng **Mode**, iwanang naka-piling **Scheduled**. Susundan ng TV ang calendar ng grupo nang kusa.
 6. I-click ang **Pair**.
 
-Ipapakita ng TV ang **Connected!** at pagkatapos ang **Loading your schedule...**. Dina-download nito ang nakaiskedyul at nagsisimulang magpatugtog. Tingnan ang [Scheduled Playback on the TV](./scheduled-playback).
+Ipapakita ng TV ang **Connected!** at pagkatapos ang **Loading your schedule...**. Dina-download nito ang nakaiskedyul at nagsisimulang magpatugtog. Tingnan ang [Scheduled Playback on the TV](./scheduled-playback.md).
 
 :::info
 Kung sinasabi ng FreePlay Admin na **That code didn't match a TV**, tingnan ang code sa screen. Kung nag-expire na ito, gamitin ang bagong code na ipinapakita na ngayon ng TV.
@@ -51,11 +52,11 @@ May dalawang opsyon ang setting na **Mode**:
 - **Scheduled** - Nagpapatugtog ayon sa calendar ng grupo nang kusa. Walang kailangang pindutin ang Start.
 - **Manual** - Pumipili ang isang tao ng nilalaman gamit ang remote. Lumalabas pa rin sa listahan mo ng **Screens** ang manual na screen, pero hindi ito sumusunod sa calendar, kaya naka-off ang field na **Group**.
 
-Maaari mong palitan ang mode ng screen sa bandang huli mula sa **Edit** sa [Screens page](./managing-screens).
+Maaari mong palitan ang mode ng screen sa bandang huli mula sa **Edit** sa [Screens page](./managing-screens.md).
 
 ## Pagpapares sa Service Plan sa Halip
 
-Gumagana rin sa B1 Admin ang code na nasa screen na **Pair this screen**. Kung ilalagay mo ito roon at pipili ka ng uri ng plan sa ilalim ng **Show Plans For**, susundan ng TV ang uri ng planong iyon sa [Plan Mode](../plan-mode/) sa halip na calendar. Tingnan ang [Pairing Your Device](../plan-mode/device-pairing).
+Gumagana rin sa B1 Admin ang code na nasa screen na **Pair this screen**. Kung ilalagay mo ito roon at pipili ka ng uri ng plan sa ilalim ng **Show Plans For**, susundan ng TV ang uri ng planong iyon sa [Plan Mode](../plan-mode/index.md) sa halip na calendar. Tingnan ang [Pairing Your Device](../plan-mode/device-pairing.md).
 
 ## Pagpapalit o Pag-alis ng Pares mula sa TV {#changing-or-unpairing-from-the-tv}
 
@@ -79,6 +80,6 @@ Babalik ang TV sa pagpapakita ng pairing code. Ipares muli ito kapag gusto mo na
 
 ## Mga Kaugnay na Artikulo
 
-- **[Managing Screens and Groups](./managing-screens)** - Palitan ang pangalan ng screen, ilipat ito sa ibang grupo, o tingnan ang mga download nito
-- **[Scheduling the Calendar](./scheduling-the-calendar)** - Magpasya kung ano ang ipatutugtog ng mga screen ng grupo
-- **[Choosing a Pairing Mode](../getting-started/pairing-modes)** - Ihambing ang Scheduled Mode sa Plan Mode at sa sariling pag-browse ng mga provider
+- **[Managing Screens and Groups](./managing-screens.md)** - Palitan ang pangalan ng screen, ilipat ito sa ibang grupo, o tingnan ang mga download nito
+- **[Scheduling the Calendar](./scheduling-the-calendar.md)** - Magpasya kung ano ang ipatutugtog ng mga screen ng grupo
+- **[Choosing a Pairing Mode](../getting-started/pairing-modes.md)** - Ihambing ang Scheduled Mode sa Plan Mode at sa sariling pag-browse ng mga provider

@@ -1,5 +1,6 @@
 ---
 title: "Nhân khẩu học"
+description: "Xem độ tuổi, giới tính, tư cách thành viên, tình trạng hôn nhân và cơ sở của hội chúng qua biểu đồ tương tác trong B1 Admin, và đi sâu vào từng nhóm."
 ---
 
 # Nhân khẩu học

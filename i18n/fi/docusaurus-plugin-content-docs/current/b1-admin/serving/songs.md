@@ -1,5 +1,6 @@
 ---
 title: "Laulut"
+description: "Hallitse laulukirjastoa B1 Adminissa: etsi ja lisää lauluja, muokkaa tietoja, liitä ChordPro-sanoitukset ja sovitukset sekä lataa harjoitusäänitteitä."
 ---
 
 # Laulut

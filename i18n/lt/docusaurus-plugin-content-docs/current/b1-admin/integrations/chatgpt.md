@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "Prijunkite ChatGPT prie savo bažnyčios B1 duomenų su API raktu, kad galėtumėte B1 Admin paprasta kalba klausti apie žmones, aukas ir lankomumą."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Prijunkite ChatGPT prie savo bažnyčios B1 duomenų ir klauskite jo paprastais 
 </div>
 
 :::tip Rekomenduojama: pirmiausia išbandykite Claude — jis nemokamas
-[Claude](./claude) prisijungia prie B1 **nemokamame plane** ir nusistato mažiau nei per 3 minutes — tiesiog pridėkite B1 kaip jungtį ir prisijunkite su savo B1 paskyra. Rakto nereikia. Tai lengviausias būdas jūsų bažnyčiai išbandyti DI su B1 prieš mokant už bet ką.
+[Claude](./claude.md) prisijungia prie B1 **nemokamame plane** ir nusistato mažiau nei per 3 minutes — tiesiog pridėkite B1 kaip jungtį ir prisijunkite su savo B1 paskyra. Rakto nereikia. Tai lengviausias būdas jūsų bažnyčiai išbandyti DI su B1 prieš mokant už bet ką.
 :::
 
 ## Nustatymas
@@ -254,5 +255,5 @@ Kiekvienas, turintis nuorodą, gali užduoti klausimus natūralia kalba. Rakto l
 
 - [API Keys](/docs/developer/api/api-keys) — visas leidimų sąrašas
 - [MCP Server (developer reference)](/docs/developer/api/mcp) — protokolo detalės ir įrankių schemos
-- [Claude](./claude) — tas pats principas, bet Anthropic modeliams
+- [Claude](./claude.md) — tas pats principas, bet Anthropic modeliams
 - [REST API reference](/docs/developer/api/endpoints) — visi galutiniai taškai, kuriuos gali kviesti Custom GPT veiksmas

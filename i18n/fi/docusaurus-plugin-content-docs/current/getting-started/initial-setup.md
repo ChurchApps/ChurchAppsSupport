@@ -1,5 +1,7 @@
 ---
-title: "Alkuasetukset"
+title: "Seurakunnan ensimääritys B1 Adminissa"
+sidebar_label: "Alkuasetukset"
+description: "Ensimääritys B1 Adminissa: seurakunnan tiedot, brändäys, roolit ja suositeltu järjestys henkilöille, ryhmille, läsnäololle ja lahjoituksille."
 ---
 
 # Alkuasetukset

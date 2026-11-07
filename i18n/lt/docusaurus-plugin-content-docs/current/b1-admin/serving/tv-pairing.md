@@ -1,5 +1,6 @@
 ---
 title: "FreePlay prijungimas prie B1 Admin"
+description: "Susiekite klasės televizorių su FreePlay ir planuojamomis pamokomis B1 Admin, kad mokytojai galėtų rodyti jas ekrane per pamoką."
 ---
 
 # Klasės televizoriaus prijungimas prie jūsų B1 Admin pamokų

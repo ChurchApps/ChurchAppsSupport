@@ -1,5 +1,6 @@
 ---
 title: "Planmodus"
+description: "Koble en TV i FreePlay til en kirkens gudstjenesteplan fra B1 Admin, slik at den viser ukens leksjoner, presentasjoner og medier i riktig rekkefølge."
 ---
 
 # Planmodus
@@ -12,13 +13,13 @@ Planmodus kobler TV-en din til en gudstjenesteplan for menigheten. I stedet for 
 
 ## Hvordan den skiller seg fra andre modi
 
-- **[Planlagt modus](../scheduled-mode/)** spiller spillelister fra en kalender i FreePlay Admin til tidene du angir, uten at noen trykker Start
+- **[Planlagt modus](../scheduled-mode/index.md)** spiller spillelister fra en kalender i FreePlay Admin til tidene du angir, uten at noen trykker Start
 - **Planmodus** henter innholdet knyttet til en plantype, som kan inkludere leksjoner, leverandørpresentasjoner, tilleggsinnhold og annen media i en egendefinert rekkefølge
 
 Planmodus er særlig nyttig når gudstjenesteplanen din inneholder en blanding av innhold fra ulike kilder, alt organisert i én sekvens.
 
 :::tip
-Vil du at gjeldende plan skal spilles av av seg selv til et fastsatt tidspunkt? I FreePlay Admin legger du til en kalenderoppføring og velger plantypen under **Gudstjenesteplaner**. Se [Planlegge kalenderen](../scheduled-mode/scheduling-the-calendar).
+Vil du at gjeldende plan skal spilles av av seg selv til et fastsatt tidspunkt? I FreePlay Admin legger du til en kalenderoppføring og velger plantypen under **Gudstjenesteplaner**. Se [Planlegge kalenderen](../scheduled-mode/scheduling-the-calendar.md).
 :::
 
 ## Hvordan det fungerer
@@ -32,4 +33,4 @@ TV-en forblir knyttet til plantypen. Hver uke henter den automatisk den nyeste p
 
 ## I denne delen
 
-- **[Pare enheten din](./device-pairing)** — hvordan du genererer paringskoden og skriver den inn
+- **[Pare enheten din](./device-pairing.md)** — hvordan du genererer paringskoden og skriver den inn

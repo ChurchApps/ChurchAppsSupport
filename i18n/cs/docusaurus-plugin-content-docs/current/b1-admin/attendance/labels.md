@@ -1,5 +1,6 @@
 ---
 title: "Návrhář štítků pro přihlašování"
+description: "Upravte šablony jmenovek a lístků k vyzvednutí, které se tisknou při odbavení v B1 Admin: pole, pozice a podmínky pro narozeniny nebo poznámky."
 ---
 
 # Návrhář štítků pro přihlašování
@@ -13,8 +14,8 @@ Návrhář štítků vám umožňuje vytvářet a upravovat šablony jmenovek a 
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Nastavte [Docházku](setup) a nakonfigurujte alespoň jeden čas bohoslužby s povoleným přihlašováním
-- Nastavte [Přihlašování](check-in), aby se štítky tiskly
+- Nastavte [Docházku](./setup.md) a nakonfigurujte alespoň jeden čas bohoslužby s povoleným přihlašováním
+- Nastavte [Přihlašování](./check-in.md), aby se štítky tiskly
 - Potřebujete administrátorský přístup do sekce Docházka
 
 </div>
@@ -85,6 +86,6 @@ Po úpravě šablony si vytiskněte zkušební štítek, abyste před další bo
 
 ## Související články
 
-- [Nastavení přihlašování](setup) — nastavení bohoslužeb a skupin pro přihlašování
-- [Dokončení přihlášení](check-in) — postup přihlašování pro rodiny
-- [Začínáme s B1 Checkin](../../b1-checkin/getting-started/) — aplikace kiosku Checkin
+- [Nastavení přihlašování](./setup.md) — nastavení bohoslužeb a skupin pro přihlašování
+- [Dokončení přihlášení](./check-in.md) — postup přihlašování pro rodiny
+- [Začínáme s B1 Checkin](../../b1-checkin/getting-started/index.md) — aplikace kiosku Checkin

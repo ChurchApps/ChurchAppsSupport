@@ -1,5 +1,7 @@
 ---
-title: "Grup Detayları"
+title: "B1.church Üye Portalında Grup Detayları"
+sidebar_label: "Grup Detayları"
+description: "B1 Admin'deki B1.church grup detay sayfasında etkinlikleri, toplantıları, formları ve üyeleri görün; gruba katılın veya talep gönderin."
 ---
 
 # Grup Detayları

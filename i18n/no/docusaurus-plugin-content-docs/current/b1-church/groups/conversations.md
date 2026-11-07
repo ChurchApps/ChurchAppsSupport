@@ -1,5 +1,6 @@
 ---
 title: "Gruppesamtaler"
+description: "Lær å skrive, redigere og reagere på meldinger i en B1.church-gruppechat, og bruke kunngjøringer og modereringsverktøy for ledere."
 ---
 
 # Gruppesamtaler

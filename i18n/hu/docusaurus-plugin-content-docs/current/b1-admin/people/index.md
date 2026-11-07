@@ -1,5 +1,6 @@
 ---
 title: "Személyek"
+description: "Gyülekezeti tagok keresése, hozzáadása és szerkesztése a B1 Admin Személyek részében, háztartáskövetéssel, tömeges frissítéssel és nyomtatással."
 ---
 
 # Személyek

@@ -1,5 +1,6 @@
 ---
 title: "Bezpečnosť pri prihlasovaní"
+description: "Nastavte ochranu detí v B1 Admin: kapacitu miestností, počet dobrovoľníkov, zoznam dôveryhodných osôb na vyzdvihnutie a správy pre rodičov pri check-ine."
 ---
 
 # Bezpečnosť pri prihlasovaní
@@ -15,7 +16,7 @@ B1 obsahuje súbor bezpečnostných nástrojov pre detí pri prihlasovaní: limi
 
 - Nastavte si [štruktúru dochádzky](setup.md) a [kiosky na prihlasovanie](check-in.md)
 - Miestnosti sú [skupiny](../groups/creating-groups.md) prepojené s časmi bohoslužieb – bezpečnostné nastavenia uvedené nižšie sa nachádzajú na skupine
-- Upozornenie rodičov a núdzové hromadné správy vyžadujú pripojeného poskytovateľa textových správ ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream) alebo Mutual Ministry)
+- Upozornenie rodičov a núdzové hromadné správy vyžadujú pripojeného poskytovateľa textových správ ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md) alebo Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Obe funkcie odosielajú textové správy cez pripojeného poskytovateľa textov�
 
 Osoby, ktoré sa odhlásili z odosielania správ alebo nemajú uložené mobilné číslo, sa automaticky preskočia – kiosk oznámi, koľko správ bolo odoslaných a koľko preskočených.
 
-Podrobný postup na strane kiosku nájdete v [Odhlasovanie a bezpečnosť detí](../../b1-checkin/check-in/checking-out).
+Podrobný postup na strane kiosku nájdete v [Odhlasovanie a bezpečnosť detí](../../b1-checkin/check-in/checking-out.md).
 
 ## Súvisiace články
 
 - [Prihlasovanie](check-in.md) — nastavenie kiosku a hardvéru
-- [Odhlasovanie a bezpečnosť detí](../../b1-checkin/check-in/checking-out) — odhlasovanie na kiosku, overenie vyzdvihnutia a postupy upozorňovania
+- [Odhlasovanie a bezpečnosť detí](../../b1-checkin/check-in/checking-out.md) — odhlasovanie na kiosku, overenie vyzdvihnutia a postupy upozorňovania
 - [Vytvorenie skupín](../groups/creating-groups.md) — kde sa nachádzajú nastavenia miestností
 - [Nastavenie dochádzky](setup.md) — bohoslužby, časy bohoslužieb a priradenie miestností
 - [Minimálny vek pre súkromné správy](../settings/mobile-app.md#member-directory--messaging-settings) — blokuje nové konverzácie so súkromnými správami s deťmi, pričom ich ponecháva v adresári

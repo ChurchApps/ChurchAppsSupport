@@ -1,5 +1,6 @@
 ---
 title: "Gids: Uw kerkwebsite lanceren"
+description: "Stel een kerkwebsite in B1 Admin in: bouw de homepagina, pas kleuren en logo aan, voeg kernpagina's toe, koppel een eigen domein en voeg geefformulieren toe."
 ---
 
 # Uw kerkwebsite lanceren

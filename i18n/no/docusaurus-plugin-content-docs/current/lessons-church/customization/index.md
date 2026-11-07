@@ -1,5 +1,6 @@
 ---
 title: "Tilpasning"
+description: "Lær hvordan du skjuler seksjoner, roller eller handlinger i en Lessons.church-leksjon og endrer rekkefølgen på innholdet, enten for ett klasserom eller for alle klasserommene i kirken din."
 ---
 
 # Tilpasning

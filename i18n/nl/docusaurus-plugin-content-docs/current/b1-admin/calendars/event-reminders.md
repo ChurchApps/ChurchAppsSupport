@@ -1,21 +1,22 @@
 ---
 title: "Evenementherinneringen"
+description: "Stel in B1 Admin evenementherinneringen in voor push, e-mail en sms, met timing, ontvangers en een eigen bericht zodat mensen op tijd op de hoogte zijn."
 ---
 
 # Evenementherinneringen
 
 <div class="article-intro">
 
-Evenementherinneringen informeren automatisch de juiste mensen voordat een evenement plaatsvindt -- bijvoorbeeld: "Niet vergeten! De workshop gezondheidszorg begint morgen om 9:00 uur." Je stelt een herinnering één keer in bij het evenement, en B1 verstuurt die op het geplande moment via pushmeldingen, e-mail en, als je kerk sms'en heeft ingesteld, tekstberichten. Leden kunnen zelf bepalen welke herinneringen ze ontvangen via hun [Meldingsvoorkeuren](../../b1-church/getting-started/notification-preferences).
+Evenementherinneringen informeren automatisch de juiste mensen voordat een evenement plaatsvindt -- bijvoorbeeld: "Niet vergeten! De workshop gezondheidszorg begint morgen om 9:00 uur." Je stelt een herinnering één keer in bij het evenement, en B1 verstuurt die op het geplande moment via pushmeldingen, e-mail en, als je kerk sms'en heeft ingesteld, tekstberichten. Leden kunnen zelf bepalen welke herinneringen ze ontvangen via hun [Meldingsvoorkeuren](../../b1-church/getting-started/notification-preferences.md).
 
 </div>
 
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- Maak het evenement aan waarvoor je mensen wilt herinneren (zie [Kalenders maken](creating-calendars))
-- Om geregistreerde deelnemers te bereiken, [schakel registratie in](creating-calendars) voor het evenement
-- Om een hele groep te bereiken, zorg dat het evenement bij een [groep](../groups/creating-groups) met leden hoort
+- Maak het evenement aan waarvoor je mensen wilt herinneren (zie [Kalenders maken](./creating-calendars.md))
+- Om geregistreerde deelnemers te bereiken, [schakel registratie in](./creating-calendars.md) voor het evenement
+- Om een hele groep te bereiken, zorg dat het evenement bij een [groep](../groups/creating-groups.md) met leden hoort
 
 </div>
 
@@ -57,21 +58,21 @@ Gasten die alleen met naam zijn toegevoegd (zonder gekoppeld persoonsrecord) kun
 - Terugkerende evenementen worden automatisch afgehandeld: elke komende afspraak krijgt een eigen herinnering.
 
 :::tip
-Herinneringen worden **eerst als pushmelding verzonden, met e-mail als reserve**. Als een lid pushmeldingen heeft ingeschakeld, krijgt het een pushmelding; zo niet, dan krijgt het in plaats daarvan een e-mail. Leden kiezen per soort melding welke kanalen ze willen in hun [Meldingsvoorkeuren](../../b1-church/getting-started/notification-preferences).
+Herinneringen worden **eerst als pushmelding verzonden, met e-mail als reserve**. Als een lid pushmeldingen heeft ingeschakeld, krijgt het een pushmelding; zo niet, dan krijgt het in plaats daarvan een e-mail. Leden kiezen per soort melding welke kanalen ze willen in hun [Meldingsvoorkeuren](../../b1-church/getting-started/notification-preferences.md).
 :::
 
 ## Tekstherinneringen
 
 Het kanaal **Tekstbericht** verschijnt alleen wanneer je kerk een sms-provider heeft gekoppeld. Tekstberichten worden verzonden via de sms-provider van je kerk, en elk tekstbericht kan je kerk geld kosten. Ze worden verzonden naast eventuele push- of e-mailherinneringen, en alleen naar mensen die:
 
-- **Tekstberichten** hebben ingeschakeld in hun [Meldingsvoorkeuren](../../b1-church/getting-started/notification-preferences), en
+- **Tekstberichten** hebben ingeschakeld in hun [Meldingsvoorkeuren](../../b1-church/getting-started/notification-preferences.md), en
 - een mobiel nummer op hun profiel hebben staan.
 
 Elk tekstbericht begint met de naam van je kerk, blijft beperkt tot één sms en eindigt met "Antwoord STOP om je af te melden." Wie STOP antwoordt, ontvangt geen tekstberichten meer van je kerk. Om STOP-antwoorden bij B1 te laten aankomen, plak je de **URL van de inkomende (STOP) webhook** uit je [sms-instellingen](../settings/church-settings.md#texting) in de webhook voor inkomende berichten van je provider.
 
 ## Wat leden kunnen regelen
 
-Herinneringen houden altijd rekening met de [Meldingsvoorkeuren](../../b1-church/getting-started/notification-preferences) van elk lid. Een lid kan:
+Herinneringen houden altijd rekening met de [Meldingsvoorkeuren](../../b1-church/getting-started/notification-preferences.md) van elk lid. Een lid kan:
 
 - **Evenementherinneringen** uitschakelen voor push, e-mail of tekstbericht, terwijl andere meldingen aan blijven.
 - Tekstherinneringen aan- of uitzetten met **Tekstberichten**.
@@ -81,10 +82,10 @@ Je kunt de keuze van een lid om zich af te melden voor evenementherinneringen ni
 
 ## Dienstherinneringen
 
-Vrijwilligers die op een plan zijn ingeroosterd, ontvangen een aparte **dienstherinnering** met de details van het plan en, als ze nog niet hebben gereageerd, knoppen **Accepteren / Afwijzen** direct in de e-mail. Deze herinneringen worden ingesteld op het plantype en niet op een agenda-evenement, en kunnen ook per tekstbericht worden verzonden. Zie [Vrijwilligersherinneringen](../serving/plans#volunteer-reminders) en [Zondagsvrijwilligers](../guides/sunday-volunteers) voor hoe vrijwilligersplanning en herinneringen werken.
+Vrijwilligers die op een plan zijn ingeroosterd, ontvangen een aparte **dienstherinnering** met de details van het plan en, als ze nog niet hebben gereageerd, knoppen **Accepteren / Afwijzen** direct in de e-mail. Deze herinneringen worden ingesteld op het plantype en niet op een agenda-evenement, en kunnen ook per tekstbericht worden verzonden. Zie [Vrijwilligersherinneringen](../serving/plans.md#volunteer-reminders) en [Zondagsvrijwilligers](../guides/sunday-volunteers.md) voor hoe vrijwilligersplanning en herinneringen werken.
 
 ## Volgende stappen
 
-- [Meldingsvoorkeuren](../../b1-church/getting-started/notification-preferences) -- Wat leden kunnen regelen
-- [Gids voor evenementregistratie](../guides/event-registration) -- Registratie instellen zodat herinneringen deelnemers kunnen bereiken
-- [Kalenders maken](creating-calendars) -- Terug naar het instellen van de agenda
+- [Meldingsvoorkeuren](../../b1-church/getting-started/notification-preferences.md) -- Wat leden kunnen regelen
+- [Gids voor evenementregistratie](../guides/event-registration.md) -- Registratie instellen zodat herinneringen deelnemers kunnen bereiken
+- [Kalenders maken](./creating-calendars.md) -- Terug naar het instellen van de agenda

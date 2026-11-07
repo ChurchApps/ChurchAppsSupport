@@ -1,5 +1,6 @@
 ---
 title: "Sprievodca: Spustenie webu vašej cirkvi"
+description: "Nastavte webovú stránku zboru v B1 Admin: domovskú stránku, farby a logo, kľúčové podstránky, vlastnú doménu a formuláre na dary."
 ---
 
 # Spustenie webu vašej cirkvi

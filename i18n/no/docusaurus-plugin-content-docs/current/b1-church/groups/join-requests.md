@@ -1,5 +1,6 @@
 ---
 title: "Be om å få bli med i en gruppe"
+description: "Be om å bli med i en gruppe som krever godkjenning på B1.church, legg til et valgfritt notat til lederen, og følg med på eller avbryt forespørselen din."
 ---
 
 # Be om å få bli med i en gruppe

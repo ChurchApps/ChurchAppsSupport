@@ -1,5 +1,7 @@
 ---
-title: "Komunita"
+title: "Adresár členov zboru v B1.church"
+sidebar_label: "Komunita"
+description: "Vyhľadávajte členov zboru v B1.church podľa mena alebo skupiny, zobrazujte profily a zistite, kde sú teraz aktualizácie zrušenej Časovej osi."
 ---
 
 # Komunita
@@ -26,5 +28,5 @@ Portál pre členov sa otvorí na [domovskom paneli](../getting-started/navigati
 :::
 
 :::tip
-Funkcie komunity využívajte spolu so [skupinami](../groups/), aby ste sa počas celého týždňa cítili zapojení do života vašej cirkvi.
+Funkcie komunity využívajte spolu so [skupinami](../groups/index.md), aby ste sa počas celého týždňa cítili zapojení do života vašej cirkvi.
 :::

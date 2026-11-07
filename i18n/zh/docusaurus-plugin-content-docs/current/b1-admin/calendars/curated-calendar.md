@@ -1,5 +1,6 @@
 ---
 title: "精选日历"
+description: "在 B1 Admin 中设置全教会精选日历，汇集多个小组的活动，然后通过网站、ICS 订阅或下载方式分享。"
 ---
 
 # 精选日历
@@ -15,7 +16,7 @@ title: "精选日历"
 
 - 设置好你希望纳入的[小组](../groups/creating-groups.md)
 - 确保小组负责人已将活动添加到各自的小组中
-- 熟悉[创建日历](creating-calendars)的基本操作
+- 熟悉[创建日历](./creating-calendars.md)的基本操作
 
 </div>
 
@@ -61,5 +62,5 @@ title: "精选日历"
 
 ## 下一步
 
-- [创建日历](creating-calendars) —— 了解日历创建的基础知识
-- [日历概览](./) —— 返回日历概览页面
+- [创建日历](./creating-calendars.md) —— 了解日历创建的基础知识
+- [日历概览](./index.md) —— 返回日历概览页面

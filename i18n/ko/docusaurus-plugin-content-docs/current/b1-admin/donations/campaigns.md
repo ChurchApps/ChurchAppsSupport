@@ -1,5 +1,6 @@
 ---
 title: "캠페인 및 약정"
+description: "B1 Admin에서 모금 캠페인을 만들고, 성도의 약정을 기록하며, 각 기금에 실제 헌금을 대조해 목표 대비 진행 상황을 추적합니다."
 ---
 
 # 캠페인 및 약정
@@ -13,7 +14,7 @@ title: "캠페인 및 약정"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [헌금 기금](funds)을 설정하십시오 -- 각 캠페인은 하나의 기금에 연결됩니다
+- [헌금 기금](./funds.md)을 설정하십시오 -- 각 캠페인은 하나의 기금에 연결됩니다
 - B1 Admin의 Donations 섹션에 접근할 수 있어야 합니다
 
 </div>
@@ -66,6 +67,6 @@ B1 Admin에서 [Jump 메뉴](../introduction.md#getting-around-with-the-jump-men
 
 ## 관련 문서
 
-- [헌금 기록하기](recording-donations) -- 약정을 이행하는 실제 헌금 기록하기
-- [기금](funds) -- 캠페인과 연결할 기금 설정하기
-- [헌금 보고서](donation-reports) -- 기금별 헌금 보고
+- [헌금 기록하기](./recording-donations.md) -- 약정을 이행하는 실제 헌금 기록하기
+- [기금](./funds.md) -- 캠페인과 연결할 기금 설정하기
+- [헌금 보고서](./donation-reports.md) -- 기금별 헌금 보고

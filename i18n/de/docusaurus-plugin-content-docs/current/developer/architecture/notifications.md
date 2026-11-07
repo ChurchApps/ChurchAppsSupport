@@ -1,5 +1,6 @@
 ---
 title: "Architektur für Benachrichtigungen und Erinnerungen"
+description: "Wie die B1-Admin-API Benachrichtigungen, Erinnerungen, E-Mail-Limits und SMS-Abmeldungen über einen Versandweg mit Präferenzprüfung steuert."
 ---
 
 # Architektur für Benachrichtigungen und Erinnerungen
@@ -185,6 +186,6 @@ Lokal kann dieselbe Logik bei Bedarf über `npm run timer:30min` und `npm run ti
 
 ## Verwandte Seiten
 
-- [Echtzeit-Architektur](../realtime) – das WebSocket-Protokoll und die Client-Bausteine (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), auf denen die Zustellung innerhalb der App aufsetzt
-- [Web-Push-Benachrichtigungen](../web-push) – VAPID-Einrichtung und der Browser-Push-API-Pfad, der für die Push-Eskalationsstufe verwendet wird
-- [Nachrichten-Endpunkte](../api/endpoints/messaging) – vollständige REST-Schnittstelle für Nachrichten, Unterhaltungen, Verbindungen sowie Benachrichtigungs- und Erinnerungsrouten
+- [Echtzeit-Architektur](../realtime.md) – das WebSocket-Protokoll und die Client-Bausteine (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), auf denen die Zustellung innerhalb der App aufsetzt
+- [Web-Push-Benachrichtigungen](../web-push.md) – VAPID-Einrichtung und der Browser-Push-API-Pfad, der für die Push-Eskalationsstufe verwendet wird
+- [Nachrichten-Endpunkte](../api/endpoints/messaging.md) – vollständige REST-Schnittstelle für Nachrichten, Unterhaltungen, Verbindungen sowie Benachrichtigungs- und Erinnerungsrouten

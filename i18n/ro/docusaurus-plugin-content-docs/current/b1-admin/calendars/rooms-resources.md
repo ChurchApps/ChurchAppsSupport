@@ -1,5 +1,6 @@
 ---
 title: "Camere, resurse și programare"
+description: "Configurați în B1 Admin săli, echipamente, blocaje și șabloane de evenimente, ca grupurile să ceară rezervări pe care le aprobați fără suprapuneri."
 ---
 
 # Camere, resurse și programare
@@ -14,7 +15,7 @@ Camerele și resursele vă permit să urmăriți spațiile și echipamentele bis
 <h4>Înainte de a începe</h4>
 
 - Aveți nevoie de acces de administrator la secțiunea Calendare din B1 Admin
-- Configurați [grupurile](../groups/creating-groups) ai căror membri vor trimite cereri de rezervare
+- Configurați [grupurile](../groups/creating-groups.md) ai căror membri vor trimite cereri de rezervare
 
 </div>
 
@@ -76,7 +77,7 @@ Când creează un eveniment nou, membrii personalului pot alege un șablon exist
 
 ## Articole conexe
 
-- [Calendarul disponibilității](availability) — vizualizați toate rezervările dintr-o privire și rezervați camere sau resurse direct
-- [Aprobările din calendar](approvals) — aprobați sau respingeți cererile de rezervare a camerelor și resurselor
-- [Crearea calendarelor](creating-calendars) — configurați calendarele evenimentelor
-- [Crearea grupurilor](../groups/creating-groups) — configurați grupurile care pot rezerva camere și resurse
+- [Calendarul disponibilității](./availability.md) — vizualizați toate rezervările dintr-o privire și rezervați camere sau resurse direct
+- [Aprobările din calendar](./approvals.md) — aprobați sau respingeți cererile de rezervare a camerelor și resurselor
+- [Crearea calendarelor](./creating-calendars.md) — configurați calendarele evenimentelor
+- [Crearea grupurilor](../groups/creating-groups.md) — configurați grupurile care pot rezerva camere și resurse

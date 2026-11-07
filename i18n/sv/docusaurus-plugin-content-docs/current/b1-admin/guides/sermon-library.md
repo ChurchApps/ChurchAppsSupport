@@ -1,5 +1,6 @@
 ---
 title: "Guide: Bygg ditt predikoarkiv och din livesändning"
+description: "Importera dina predikningar från YouTube eller Vimeo, ordna dem i spellistor och ställ in återkommande livesändningar med chatt i B1 Admin för kyrkans webbplats."
 ---
 
 # Bygg ditt predikoarkiv och din livesändning

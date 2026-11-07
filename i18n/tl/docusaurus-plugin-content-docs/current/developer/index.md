@@ -1,5 +1,6 @@
 ---
 title: "Dokumentasyon para sa Developer"
+description: "Gabay sa ChurchApps developer docs: lokal na setup, API at web app, shared libraries, mobile builds, at deployment ng mga open-source na proyekto."
 ---
 
 # Dokumentasyon para sa Developer
@@ -24,16 +25,16 @@ Mga pangunahing katangian:
 
 ## Saklaw ng Seksyong Ito
 
-- **[Setup](setup/)** -- Local development environment, prerequisites, at configuration
-  - [Prerequisites](setup/prerequisites) -- Mga kinakailangang tool at software
-  - [Project Overview](setup/project-overview) -- Lahat ng proyekto sa isang sulyap
-  - [Environment Variables](setup/environment-variables) -- Pag-configure ng mga `.env` file
-- **[API](api/)** -- Core API local setup, database initialization, at module structure
-- **[Web Apps](web-apps/)** -- Pagpapatakbo ng B1Admin, B1App, at LessonsApp nang local
-- **[Mobile Apps](mobile/)** -- Pag-build ng B1Mobile at iba pang Expo apps
-- **[Shared Libraries](shared-libraries/)** -- Pagtatrabaho sa Helpers, ApiHelper, at AppHelper
-- **[Deployment](deployment/)** -- Pag-deploy ng APIs, web apps, at mobile apps
-- **[FreePlay Content Provider](freeplay-content-provider)** -- Pag-integrate ng iyong lesson library sa FreePlay
+- **[Setup](./setup/index.md)** -- Local development environment, prerequisites, at configuration
+  - [Prerequisites](./setup/prerequisites.md) -- Mga kinakailangang tool at software
+  - [Project Overview](./setup/project-overview.md) -- Lahat ng proyekto sa isang sulyap
+  - [Environment Variables](./setup/environment-variables.md) -- Pag-configure ng mga `.env` file
+- **[API](./api/index.md)** -- Core API local setup, database initialization, at module structure
+- **[Web Apps](./web-apps/index.md)** -- Pagpapatakbo ng B1Admin, B1App, at LessonsApp nang local
+- **[Mobile Apps](./mobile/index.md)** -- Pag-build ng B1Mobile at iba pang Expo apps
+- **[Shared Libraries](./shared-libraries/index.md)** -- Pagtatrabaho sa Helpers, ApiHelper, at AppHelper
+- **[Deployment](./deployment/index.md)** -- Pag-deploy ng APIs, web apps, at mobile apps
+- **[FreePlay Content Provider](./freeplay-content-provider.md)** -- Pag-integrate ng iyong lesson library sa FreePlay
 
 ## Komunidad at Mga Mapagkukunan
 

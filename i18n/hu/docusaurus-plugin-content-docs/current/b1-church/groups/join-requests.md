@@ -1,5 +1,6 @@
 ---
 title: "Csatlakozási kérelem küldése csoporthoz"
+description: "Kérj csatlakozást jóváhagyáshoz kötött csoportba a B1.church oldalon, adj opcionális megjegyzést a vezetőnek, majd kövesd nyomon vagy vond vissza függőben lévő kérelmedet."
 ---
 
 # Csatlakozási kérelem küldése csoporthoz

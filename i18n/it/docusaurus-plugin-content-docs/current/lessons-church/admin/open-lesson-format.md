@@ -1,5 +1,6 @@
 ---
 title: "Formato Open Lesson"
+description: "Specifica del formato per i provider terzi su Lessons.church: albero dei provider, campi JSON del feed delle sedi, azioni e file multimediali."
 ---
 
 # Formato Open Lesson

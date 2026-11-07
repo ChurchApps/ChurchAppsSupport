@@ -1,5 +1,6 @@
 ---
 title: "Realtime-architectuur"
+description: "Hoe de WebSocket-laag van ChurchApps live chat, aanwezigheid en meldingen levert: de socket-handshake, roomabonnementen en client-primitives voor developers."
 ---
 
 # Realtime-architectuur
@@ -226,8 +227,8 @@ De livestream is de grootste anonieme gebruiker van het framework. Het gebruikt 
 
 ## Gerelateerde pagina's
 
-- [Notifications Architecture](./architecture/notifications) -- De funnel van in-app-, push- en e-mailmeldingen waarop dit transport aansluit
-- [Messaging Endpoints](./api/endpoints/messaging) -- Volledig REST-oppervlak voor berichten, gesprekken, verbindingen en apparaten
-- [Web Push Notifications](./web-push) -- Browserpushmeldingen, los van de levering via de socket binnen de pagina
-- [AppHelper](./shared-libraries/app-helper) -- Het npm-pakket dat de clientprimitieven bevat
-- [Module Structure](./api/module-structure) -- Hoe de messaging-module aan de serverkant is ingedeeld
+- [Notifications Architecture](./architecture/notifications.md) -- De funnel van in-app-, push- en e-mailmeldingen waarop dit transport aansluit
+- [Messaging Endpoints](./api/endpoints/messaging.md) -- Volledig REST-oppervlak voor berichten, gesprekken, verbindingen en apparaten
+- [Web Push Notifications](./web-push.md) -- Browserpushmeldingen, los van de levering via de socket binnen de pagina
+- [AppHelper](./shared-libraries/app-helper.md) -- Het npm-pakket dat de clientprimitieven bevat
+- [Module Structure](./api/module-structure.md) -- Hoe de messaging-module aan de serverkant is ingedeeld

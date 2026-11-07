@@ -1,5 +1,6 @@
 ---
 title: "Frequência"
+description: "Revise a frequência semanal, salas e visitantes no B1 Admin e configure campi, horários, contagens e check-in por quiosque pela página de Presença."
 ---
 
 # Frequência

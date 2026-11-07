@@ -1,5 +1,6 @@
 ---
 title: "Línea de Tiempo del Grupo"
+description: "Vea cómo la línea de tiempo de grupos de B1 Mobile combina publicaciones, conversaciones y actualizaciones de todos sus grupos en un solo feed, y qué hacer mientras está pausada."
 ---
 
 # Línea de Tiempo del Grupo
@@ -17,7 +18,7 @@ La función de línea de tiempo del grupo está temporalmente no disponible mien
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instale B1 Mobile](../getting-started/installing) e [inicie sesión](../getting-started/logging-in) en su cuenta
+- [Instale B1 Mobile](../getting-started/installing.md) e [inicie sesión](../getting-started/logging-in.md) en su cuenta
 - Sea miembro de al menos un grupo en su iglesia
 
 </div>
@@ -41,7 +42,7 @@ Cada elemento en la línea de tiempo muestra de qué grupo proviene, para que si
 La línea de tiempo es una excelente manera de mantenerse conectado con su comunidad de iglesia de un vistazo. Aquí hay algunos consejos para aprovechar al máximo:
 
 - **Revise regularmente** -- Abra la pantalla de Grupos y desplácese a través de la línea de tiempo para ponerse al día en la actividad reciente.
-- **Toque para más** -- Si una publicación le llama la atención, tóquela o toque el nombre del grupo para ir a la página de detalle completa del [grupo](./group-details) para más contexto.
+- **Toque para más** -- Si una publicación le llama la atención, tóquela o toque el nombre del grupo para ir a la página de detalle completa del [grupo](./group-details.md) para más contexto.
 - **Todo en un lugar** -- No necesita visitar cada grupo por separado. La línea de tiempo trae toda la actividad a usted.
 
 :::info
@@ -54,5 +55,5 @@ Habilite [notificaciones push](../community/notifications.md) para recibir alert
 
 ## Artículos Relacionados
 
-- [Detalles del Grupo](./group-details) -- Vea el perfil completo de un grupo e publicaciones
+- [Detalles del Grupo](./group-details.md) -- Vea el perfil completo de un grupo e publicaciones
 - [Notificaciones](../community/notifications.md) -- Reciba notificaciones sobre actividad del grupo

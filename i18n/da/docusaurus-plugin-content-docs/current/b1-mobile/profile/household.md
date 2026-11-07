@@ -1,5 +1,6 @@
 ---
 title: "Husstand"
+description: "Se hvem der er i din husstand, og hvordan medlemmer er forbundet i fanen Profil i B1 Mobile, som check-in og andre funktioner er afhængige af."
 ---
 
 # Husstand
@@ -13,7 +14,7 @@ Fanen **Husstand** på din profilskærm viser dine familiemedlemmer. Det er her 
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [log ind](../getting-started/logging-in) på din konto
+- [Installer B1 Mobile](../getting-started/installing.md) og [log ind](../getting-started/logging-in.md) på din konto
 
 </div>
 
@@ -33,7 +34,7 @@ Dine husstands oplysninger bruges af flere funktioner i B1 Mobile og på tværs 
 
 - **Tjek ind** -- Når du [tjekker ind](../checkin/self-checkin.md) til en gudstjeneste eller event, kan du tjekke din hele husstand ind på samme tid i stedet for at tjekke hver person ind individuelt.
 - **Kirkeposter** -- Din kirke bruger hustands data til at holde familierekorder organiseret og til at kommunikere med din familie som en enhed.
-- **Mappe** -- Andre medlemmer kan se dine husstands oplysninger i [kirkemappen](../community/member-directory.md), afhængigt af dine [privatlivsindstillinger](./privacy-settings).
+- **Mappe** -- Andre medlemmer kan se dine husstands oplysninger i [kirkemappen](../community/member-directory.md), afhængigt af dine [privatlivsindstillinger](./privacy-settings.md).
 
 ## Se din husstand
 
@@ -47,10 +48,10 @@ Husstands medlemskab administreres typisk af din kirkes administrator. Hvis du h
 
 ## Holdt oplysninger aktuelle
 
-Hvis en familiemedlems detaljer skal opdateres, kan de [redigere deres egen profil](./editing-profile) eller du kan kontakte din kirkes administrator for at foretage ændringer. At holde husstands oplysninger nøjagtige sikrer at funktioner som [tjek ind](../checkin/) fungerer problemfrit for hele din familie.
+Hvis en familiemedlems detaljer skal opdateres, kan de [redigere deres egen profil](./editing-profile.md) eller du kan kontakte din kirkes administrator for at foretage ændringer. At holde husstands oplysninger nøjagtige sikrer at funktioner som [tjek ind](../checkin/index.md) fungerer problemfrit for hele din familie.
 
 ## Relaterede artikler
 
 - [Selvtjek ind](../checkin/self-checkin.md) -- Tjek in dine husholdsmedlemmer til gudstjenester
-- [Redigering af din profil](./editing-profile) -- Opdater dine egne personlige oplysninger
-- [Privatlivsindstillinger](./privacy-settings) -- Kontroller hvad andre kan se omkring din husstand
+- [Redigering af din profil](./editing-profile.md) -- Opdater dine egne personlige oplysninger
+- [Privatlivsindstillinger](./privacy-settings.md) -- Kontroller hvad andre kan se omkring din husstand

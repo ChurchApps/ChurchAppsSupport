@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Synchronizuj osoby z B1 Admin i członkostwo w grupach lub listach do odbiorców Mailchimp jako tagi, z konfiguracją, importem i rozwiązywaniem problemów."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Wykonanie pierwszego załadowania przez narzędzie importu Mailchimp pozwala zac
 
 ## Inne scenariusze (Zapier / Make)
 
-Wszystko, co wykracza poza synchronizację listy odbiorców, np. tagowanie darczyńców po zdarzeniu `donation.created`, odwrotny kierunek synchronizacji Mailchimp → B1 lub synchronizacja z zupełnie inną platformą e-mailową (Constant Contact, Brevo itp.), nadal można zrealizować za pomocą [Zapier](../zapier) lub [Make](../make). Oba narzędzia reagują na te same zdarzenia webhooka:
+Wszystko, co wykracza poza synchronizację listy odbiorców, np. tagowanie darczyńców po zdarzeniu `donation.created`, odwrotny kierunek synchronizacji Mailchimp → B1 lub synchronizacja z zupełnie inną platformą e-mailową (Constant Contact, Brevo itp.), nadal można zrealizować za pomocą [Zapier](../zapier.md) lub [Make](../make.md). Oba narzędzia reagują na te same zdarzenia webhooka:
 
 - **Tagowanie darczyńców:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Dwukierunkowo:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ Jeśli wcześniej skonfigurowano synchronizację osób i grup przez Zapier, wył
 
 - [Webhooks (dokumentacja dla deweloperów)](/docs/developer/api/webhooks): silnik działający pod spodem, katalog zdarzeń, zasady dostarczania i ponawiania
 - [Zapisane listy](/docs/b1-admin/people/lists): grupy odbiorców oparte na regułach, które naturalnie odpowiadają tagom w Mailchimp
-- [Zapier (przegląd)](../zapier): scenariusze wykraczające poza synchronizację listy odbiorców
+- [Zapier (przegląd)](../zapier.md): scenariusze wykraczające poza synchronizację listy odbiorców

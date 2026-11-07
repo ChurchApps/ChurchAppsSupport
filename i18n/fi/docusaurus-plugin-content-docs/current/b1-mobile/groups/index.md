@@ -1,5 +1,7 @@
 ---
-title: "Ryhmät"
+title: "Ryhmät-näkymä B1 Mobilessa"
+sidebar_label: "Ryhmät"
+description: "Löydä B1 Mobilen Ryhmät-näkymästä kuuluvasi ryhmät, mukaan lukien eniten käyttämäsi ryhmä ylhäällä ja seurakuntasi muut ryhmät alla."
 ---
 
 # Ryhmät
@@ -30,10 +32,10 @@ Näin voit toimia Ryhmät-näkymästä:
 - **Pysy yhteydessä** -- Katso, mitä ryhmäsi jäsenet jakavat, seuraa keskusteluja ja osallistu ryhmän sisältöön.
 
 :::tip
-Ryhmät-näkymä mukautuu käyttötottumuksiisi, aivan kuten [etusivu](../dashboard/). Useimmin käyttämäsi ryhmät nostetaan ylimpään osaan nopeaa käyttöä varten.
+Ryhmät-näkymä mukautuu käyttötottumuksiisi, aivan kuten [etusivu](../dashboard/index.md). Useimmin käyttämäsi ryhmät nostetaan ylimpään osaan nopeaa käyttöä varten.
 :::
 
 ## Seuraavat vaiheet
 
-- [Ryhmän tiedot](./group-details) -- Tutustu ryhmän tietosivun sisältöön
-- [Ryhmän aikajana](./group-timeline) -- Lue lisää ryhmiesi yhdistetystä toimintasyötteestä
+- [Ryhmän tiedot](./group-details.md) -- Tutustu ryhmän tietosivun sisältöön
+- [Ryhmän aikajana](./group-timeline.md) -- Lue lisää ryhmiesi yhdistetystä toimintasyötteestä

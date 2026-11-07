@@ -1,5 +1,6 @@
 ---
 title: "Štatistiky"
+description: "Počty stiahnutí podľa štúdií, prehľad cirkví sťahujúcich vaše zdroje a ich mapa v štatistikách admin časti Lessons.church s filtrovaním podľa dátumového rozsahu."
 ---
 
 # Štatistiky

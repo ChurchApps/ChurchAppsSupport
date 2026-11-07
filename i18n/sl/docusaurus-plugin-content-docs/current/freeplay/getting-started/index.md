@@ -1,5 +1,7 @@
 ---
-title: "Začetek"
+title: "Začetek dela z aplikacijo FreePlay TV"
+sidebar_label: "Začetek"
+description: "Namesti FreePlay na Android TV, Fire TV ali Apple TV: namesti aplikacijo, jo prvič odpri ter spoznaj daljinske gumbe in stransko vrstico."
 ---
 
 # Začetek z FreePlay
@@ -42,7 +44,7 @@ FreePlay deluje na Fire TV (vključno z novejšimi palčkami Vega OS), Android T
 
 Ko prvič odprete FreePlay, se prikaže animiran začetni zaslon z logotipom FreePlay. Aplikacija preveri, ali so bili predhodno povezani kakšni ponudniki vsebine. Če ste ponudnika že povezali, vas bo neposredno odpeljala v brskalnik vsebin tega ponudnika. Sicer se odpre zaslon **Ponudniki vsebine**, kjer se lahko povežete z vašim prvim virom vsebine.
 
-Če je televizor združen s koledarjem v [načinu urnika](../scheduled-mode/), FreePlay preskoči vse to in se neposredno odpre v predvajalniku urnika.
+Če je televizor združen s koledarjem v [načinu urnika](../scheduled-mode/index.md), FreePlay preskoči vse to in se neposredno odpre v predvajalniku urnika.
 
 ## Krmarjenje z daljinskim upravljalnikom televizorja
 
@@ -62,13 +64,13 @@ Ko brskate po vsebini, se stranska vrstica strne v ozek pas ikon. Pritisnite pu�
 
 Stranska vrstica od zgoraj navzdol vsebuje:
 
-- **Današnji načrt** -- Prikazano, ko je televizor združen z načrtom. Glejte [Način načrta](../plan-mode/)
-- **Obvestila** -- Prikazano, ko izberete mapo z obvestili. Glejte [Obvestila](../content-providers/announcements)
-- **Brskanje** -- Vsak povezan ponudnik vsebine, ki ga lahko brskate. Glejte [Brskanje in prenos vsebine](../content-providers/browsing-content)
-- **Nastavitve** -- Na dnu stranske vrstice. Odpre **Združi s koledarjem** (združite ta televizor s koledarjem ali načrtom – glejte [Izbira načina združevanja](./pairing-modes)), **Prenosi** (predvajanje ali brisanje vsebine, shranjene na tej napravi) in **Ponudniki** (povezovanje ponudnikov vsebine in izbira mape z obvestili)
+- **Današnji načrt** -- Prikazano, ko je televizor združen z načrtom. Glejte [Način načrta](../plan-mode/index.md)
+- **Obvestila** -- Prikazano, ko izberete mapo z obvestili. Glejte [Obvestila](../content-providers/announcements.md)
+- **Brskanje** -- Vsak povezan ponudnik vsebine, ki ga lahko brskate. Glejte [Brskanje in prenos vsebine](../content-providers/browsing-content.md)
+- **Nastavitve** -- Na dnu stranske vrstice. Odpre **Združi s koledarjem** (združite ta televizor s koledarjem ali načrtom – glejte [Izbira načina združevanja](./pairing-modes.md)), **Prenosi** (predvajanje ali brisanje vsebine, shranjene na tej napravi) in **Ponudniki** (povezovanje ponudnikov vsebine in izbira mape z obvestili)
 
 ## Kaj sledi
 
-- **[Izbira načina združevanja](./pairing-modes)** - Spoznajte različne načine povezovanja televizorja
-- **[Način urnika](../scheduled-mode/)** - Postavite vaše televizorje na koledar s FreePlay Admin
-- **[Ponudniki vsebine](../content-providers/)** - Povežite se z Lessons.church, Bible Project in drugimi
+- **[Izbira načina združevanja](./pairing-modes.md)** - Spoznajte različne načine povezovanja televizorja
+- **[Način urnika](../scheduled-mode/index.md)** - Postavite vaše televizorje na koledar s FreePlay Admin
+- **[Ponudniki vsebine](../content-providers/index.md)** - Povežite se z Lessons.church, Bible Project in drugimi

@@ -1,5 +1,6 @@
 ---
 title: "Skupina – časová os"
+description: "Pozrite si, ako časová os skupín v B1 Mobile spája príspevky, konverzácie a aktualizácie zo všetkých vašich skupín do jedného kanála a čo robiť, keď je pozastavená."
 ---
 
 # Skupina – časová os
@@ -17,7 +18,7 @@ Funkcia časovej osi skupiny je dočasne nedostupná, kým prebiehajú vylepšen
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- [Nainštalujte aplikáciu B1 Mobile](../getting-started/installing) a [sa prihláste](../getting-started/logging-in) do svojho účtu
+- [Nainštalujte aplikáciu B1 Mobile](../getting-started/installing.md) a [sa prihláste](../getting-started/logging-in.md) do svojho účtu
 - Buďte členom aspoň jednej skupiny vo vašom kostole
 
 </div>
@@ -41,7 +42,7 @@ Každá položka na časovej osi uvádza, z ktorej skupiny pochádza, takže vž
 Časová os je skvelý spôsob, ako byť na očiach so svojou cirkevnou komunitou. Tu je niekoľko tipov, ako ju čo najlepšie využiť:
 
 - **Pravidelne kontrolujte** -- Otvorte obrazovku Skupiny a prejdite časovú os, aby ste sa dozvedeli o nedávnej aktivite.
-- **Ďalšie informácie** -- Ak vás príspevok zaujme, klepnite na neho alebo na názov skupiny a prejdite na úplnú [stránku podrobností skupiny](./group-details), kde získate viac kontextu.
+- **Ďalšie informácie** -- Ak vás príspevok zaujme, klepnite na neho alebo na názov skupiny a prejdite na úplnú [stránku podrobností skupiny](./group-details.md), kde získate viac kontextu.
 - **Všetko na jednom mieste** -- Nemusíte navštevovať každú skupinu zvlášť. Časová os vám prinesie všetku aktivitu.
 
 :::info
@@ -54,5 +55,5 @@ Zapnite [push notifikácie](../community/notifications.md), aby vás upozornili,
 
 ## Súvisiace články
 
-- [Podrobnosti skupiny](./group-details) -- Zobrazte úplný profil jednej skupiny a jej príspevky
+- [Podrobnosti skupiny](./group-details.md) -- Zobrazte úplný profil jednej skupiny a jej príspevky
 - [Notifikácie](../community/notifications.md) -- Dostávajte upozornenia o aktivite v skupinách

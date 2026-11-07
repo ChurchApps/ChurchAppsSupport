@@ -1,5 +1,6 @@
 ---
 title: "Tryb planu"
+description: "Połącz telewizor w FreePlay z planem nabożeństwa z B1 Admin, by wyświetlał lekcje, prezentacje i media bieżącego tygodnia we właściwej kolejności."
 ---
 
 # Tryb planu
@@ -12,13 +13,13 @@ Tryb planu łączy Twój telewizor z planem nabożeństwa kościoła. Zamiast po
 
 ## Czym różni się od innych trybów
 
-- **[Tryb zaplanowany](../scheduled-mode/)** odtwarza listy odtwarzania z kalendarza w FreePlay Admin o wyznaczonych przez Ciebie porach, bez konieczności naciskania przycisku Start
+- **[Tryb zaplanowany](../scheduled-mode/index.md)** odtwarza listy odtwarzania z kalendarza w FreePlay Admin o wyznaczonych przez Ciebie porach, bez konieczności naciskania przycisku Start
 - **Tryb planu** pobiera treści przypisane do typu planu, które mogą obejmować lekcje, prezentacje dostawców, dodatki i inne media ułożone we własnej kolejności
 
 Tryb planu jest szczególnie przydatny, gdy Twój plan nabożeństwa zawiera mieszankę treści z różnych źródeł, uporządkowanych w jedną sekwencję.
 
 :::tip
-Chcesz, aby bieżący plan odtwarzał się samodzielnie o określonej porze? W FreePlay Admin dodaj wpis do kalendarza i wybierz typ planu w sekcji **Plany nabożeństw**. Zobacz [Planowanie kalendarza](../scheduled-mode/scheduling-the-calendar).
+Chcesz, aby bieżący plan odtwarzał się samodzielnie o określonej porze? W FreePlay Admin dodaj wpis do kalendarza i wybierz typ planu w sekcji **Plany nabożeństw**. Zobacz [Planowanie kalendarza](../scheduled-mode/scheduling-the-calendar.md).
 :::
 
 ## Jak to działa
@@ -32,4 +33,4 @@ Telewizor pozostaje sparowany z typem planu. Każdego tygodnia automatycznie pob
 
 ## W tej sekcji
 
-- **[Parowanie urządzenia](./device-pairing)** - Jak wygenerować i wprowadzić kod parowania
+- **[Parowanie urządzenia](./device-pairing.md)** - Jak wygenerować i wprowadzić kod parowania

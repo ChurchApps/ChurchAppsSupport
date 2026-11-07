@@ -1,5 +1,6 @@
 ---
 title: "Biến môi trường"
+description: "Thiết lập tệp .env cho dự án ChurchApps, chọn API demo dùng chung hoặc API cục bộ, rồi điền biến cho B1 Admin, B1.church, B1 Mobile, Lessons.church và các dự án khác."
 ---
 
 # Biến môi trường
@@ -13,9 +14,9 @@ Mọi dự án ChurchApps đều sử dụng tệp `.env` để cấu hình cụ
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Cài đặt các [yêu cầu tiên quyết](./prerequisites) cho dự án của bạn
+- Cài đặt các [yêu cầu tiên quyết](./prerequisites.md) cho dự án của bạn
 - Sao chép kho mã nguồn của dự án bạn muốn làm việc
-- Xem [Tổng quan dự án](./project-overview) để hiểu dự án của bạn cần những mô-đun API nào
+- Xem [Tổng quan dự án](./project-overview.md) để hiểu dự án của bạn cần những mô-đun API nào
 
 </div>
 
@@ -64,7 +65,7 @@ Môi trường staging (`api.staging.churchapps.org`, `api.staging.lessons.churc
 
 ### Tùy chọn 2: API cục bộ
 
-Chạy dự án Api trên máy của bạn. Yêu cầu MySQL 8.0+ với các cơ sở dữ liệu được tạo cho từng mô-đun. Xem hướng dẫn [thiết lập API cục bộ](../api/local-setup).
+Chạy dự án Api trên máy của bạn. Yêu cầu MySQL 8.0+ với các cơ sở dữ liệu được tạo cho từng mô-đun. Xem hướng dẫn [thiết lập API cục bộ](../api/local-setup.md).
 
 ```bash
 # Mẫu URL cơ sở

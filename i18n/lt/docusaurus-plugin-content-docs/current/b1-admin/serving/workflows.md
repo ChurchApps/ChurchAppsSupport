@@ -1,5 +1,6 @@
 ---
 title: "Darbo eigos"
+description: "Kurkite Kanban lentas B1 Admin žmonėms vesti per tolesnius veiksmus su automatiniais el. laiškais, SMS ir trigeriais, kurie pridės žmones automatiškai."
 ---
 
 # Darbo eigos

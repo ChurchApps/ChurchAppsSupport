@@ -1,5 +1,7 @@
 ---
-title: "Ziedų istorija"
+title: "Aukų istorijos peržiūra B1 Mobile"
+sidebar_label: "Ziedų istorija"
+description: "Peržiūrėkite metines aukas, paskutinę auką ir visą aukų įrašą B1 Mobile, o ankstesnę auką pakartokite vienu bakstelėjimu Apžvalgos skirtuke."
 ---
 
 # Ziedų istorija
@@ -13,8 +15,8 @@ B1 Mobile suteikia aiškų jūsų aukojimų vaizdą per dvi skiltis: **Apžvalga
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiekite B1 Mobile](../getting-started/installing) ir [prisijunkite](../getting-started/logging-in) prie savo paskyros
-- [Atlikite bent vieną auką](./making-donations), kad matytumėte savo istoriją
+- [Įdiekite B1 Mobile](../getting-started/installing.md) ir [prisijunkite](../getting-started/logging-in.md) prie savo paskyros
+- [Atlikite bent vieną auką](./making-donations.md), kad matytumėte savo istoriją
 
 </div>
 
@@ -45,5 +47,5 @@ Reguliariai tikrinkite skiltį **Apžvalga**, kad žinotumėte, kaip sekasi siek
 
 ## Susiję straipsniai
 
-- [Aukos atlikimas](./making-donations) -- Atlikite naują auką programėlėje
-- [Mokėjimo būdų valdymas](./managing-payments) -- Pridėkite arba pašalinkite išsaugotus mokėjimo būdus
+- [Aukos atlikimas](./making-donations.md) -- Atlikite naują auką programėlėje
+- [Mokėjimo būdų valdymas](./managing-payments.md) -- Pridėkite arba pašalinkite išsaugotus mokėjimo būdus

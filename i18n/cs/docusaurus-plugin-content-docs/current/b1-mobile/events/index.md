@@ -1,5 +1,7 @@
 ---
-title: "Události"
+title: "Církevní akce a registrace v B1 Mobile"
+sidebar_label: "Události"
+description: "Procházejte nadcházející církevní akce v B1 Mobile a registrujte sebe i členy rodiny na ty, u kterých je otevřena registrace."
 ---
 
 # Události
@@ -23,10 +25,10 @@ Události mohou mít různé stavy:
 
 ## Co potřebujete
 
-- [Nainstalovanou aplikaci B1 Mobile](../getting-started/installing) a [přihlášení](../getting-started/logging-in)
+- [Nainstalovanou aplikaci B1 Mobile](../getting-started/installing.md) a [přihlášení](../getting-started/logging-in.md)
 - Váš sbor musí mít pro danou událost povolenou registraci
 
 ## Další informace
 
-- [Registrace na události](./registering) -- Podrobný postup, jak se přihlásit na událost v mobilní aplikaci
-- [Samoobslužné check-in](../checkin/self-checkin) -- Přihlášení při příchodu na událost
+- [Registrace na události](./registering.md) -- Podrobný postup, jak se přihlásit na událost v mobilní aplikaci
+- [Samoobslužné check-in](../checkin/self-checkin.md) -- Přihlášení při příchodu na událost

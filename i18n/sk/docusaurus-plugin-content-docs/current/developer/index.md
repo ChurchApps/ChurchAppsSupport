@@ -1,5 +1,6 @@
 ---
 title: "Dokumentácia pre vývojárov"
+description: "Vývojárska dokumentácia ChurchApps: lokálne nastavenie, API, webové aplikácie, zdieľané knižnice, mobilné zostavenia a nasadenie open-source projektov."
 ---
 
 # Dokumentácia pre vývojárov
@@ -24,16 +25,16 @@ Kľúčové vlastnosti:
 
 ## Čo táto sekcia obsahuje
 
-- **[Setup](setup/)** -- Lokálne vývojové prostredie, predpoklady a konfigurácia
-  - [Prerequisites](setup/prerequisites) -- Požadované nástroje a softvér
-  - [Project Overview](setup/project-overview) -- Prehľad všetkých projektov
-  - [Environment Variables](setup/environment-variables) -- Konfigurácia súborov `.env`
-- **[API](api/)** -- Lokálne nastavenie hlavného API, inicializácia databázy a štruktúra modulov
-- **[Web Apps](web-apps/)** -- Spustenie B1Admin, B1App a LessonsApp lokálne
-- **[Mobile Apps](mobile/)** -- Zostavovanie B1Mobile a ďalších aplikácií Expo
-- **[Shared Libraries](shared-libraries/)** -- Práca s Helpers, ApiHelper a AppHelper
-- **[Deployment](deployment/)** -- Nasadenie API, webových aplikácií a mobilných aplikácií
-- **[FreePlay Content Provider](freeplay-content-provider)** -- Integrácia vašej knižnice lekcií s FreePlay
+- **[Setup](./setup/index.md)** -- Lokálne vývojové prostredie, predpoklady a konfigurácia
+  - [Prerequisites](./setup/prerequisites.md) -- Požadované nástroje a softvér
+  - [Project Overview](./setup/project-overview.md) -- Prehľad všetkých projektov
+  - [Environment Variables](./setup/environment-variables.md) -- Konfigurácia súborov `.env`
+- **[API](./api/index.md)** -- Lokálne nastavenie hlavného API, inicializácia databázy a štruktúra modulov
+- **[Web Apps](./web-apps/index.md)** -- Spustenie B1Admin, B1App a LessonsApp lokálne
+- **[Mobile Apps](./mobile/index.md)** -- Zostavovanie B1Mobile a ďalších aplikácií Expo
+- **[Shared Libraries](./shared-libraries/index.md)** -- Práca s Helpers, ApiHelper a AppHelper
+- **[Deployment](./deployment/index.md)** -- Nasadenie API, webových aplikácií a mobilných aplikácií
+- **[FreePlay Content Provider](./freeplay-content-provider.md)** -- Integrácia vašej knižnice lekcií s FreePlay
 
 ## Komunita a zdroje
 

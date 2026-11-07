@@ -1,5 +1,6 @@
 ---
 title: "Upravljanje pridig"
+description: "Upravljajte knjižnico pridig v B1 Admin: dodajte pridige iz YouTube, Vimeo ali Facebooka, uredite podrobnosti in pridobite podcastni vir za vašo cerkev."
 ---
 
 # Upravljanje pridig
@@ -14,7 +15,7 @@ Stran Pridige prikazuje celotno zbirko vaših pridig. Tukaj lahko dodajate nove 
 <h4>Pred začetkom</h4>
 
 - Potrebujete dovoljenje **contentApi.streamingServices.edit**. Če nimate dostopa, glejte [Vloge in dovoljenja](../settings/roles-permissions.md).
-- Ustvarite vsaj en [seznam predvajanja](playlists), v katerega boste razvrstili pridige
+- Ustvarite vsaj en [seznam predvajanja](./playlists.md), v katerega boste razvrstili pridige
 - Pripravite ID-je videoposnetkov ali URL-je z YouTuba, Vimea ali Facebooka
 
 </div>
@@ -35,7 +36,7 @@ Stran Pridige prikazuje celotno zbirko vaših pridig. Tukaj lahko dodajate nove 
 6. Naredite želene spremembe in kliknite **Shrani**.
 
 :::tip
-Trajni URL za živi prenos lahko dodate tudi tako, da v spustnem meniju **Dodaj pridigo** izberete **Dodaj trajni URL za živi prenos**. To ustvari stalno povezavo z živim prenosom vašega YouTube kanala z uporabo vašega ID-ja kanala. Za več podrobnosti glejte [Živi prenos](live-streaming).
+Trajni URL za živi prenos lahko dodate tudi tako, da v spustnem meniju **Dodaj pridigo** izberete **Dodaj trajni URL za živi prenos**. To ustvari stalno povezavo z živim prenosom vašega YouTube kanala z uporabo vašega ID-ja kanala. Za več podrobnosti glejte [Živi prenos](./live-streaming.md).
 :::
 
 ## Urejanje pridige
@@ -73,11 +74,11 @@ Po dodajanju pridige jo lahko načrtujete za predvajanje na strani živega preno
 3. Pridiga se bo predvajala ob načrtovanem času bogoslužja.
 
 :::info
-Če želite več pridig uvoziti naenkrat namesto, da jih dodajate eno po eno, uporabite orodje [Množični uvoz](bulk-import), ki neposredno potegne videoposnetke iz vašega računa YouTube ali Vimeo.
+Če želite več pridig uvoziti naenkrat namesto, da jih dodajate eno po eno, uporabite orodje [Množični uvoz](./bulk-import.md), ki neposredno potegne videoposnetke iz vašega računa YouTube ali Vimeo.
 :::
 
 ## Naslednji koraki
 
-- [Seznami predvajanja](playlists) -- razvrstite pridige v serije
-- [Živi prenos](live-streaming) -- nastavite urnik prenosov
-- [Množični uvoz](bulk-import) -- uvozite več pridig naenkrat
+- [Seznami predvajanja](./playlists.md) -- razvrstite pridige v serije
+- [Živi prenos](./live-streaming.md) -- nastavite urnik prenosov
+- [Množični uvoz](./bulk-import.md) -- uvozite več pridig naenkrat

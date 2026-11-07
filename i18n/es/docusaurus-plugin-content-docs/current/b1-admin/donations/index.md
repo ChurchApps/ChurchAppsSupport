@@ -1,5 +1,6 @@
 ---
 title: "Donaciones"
+description: "Registra, organiza e informa de las donaciones en B1 Admin: lotes, fondos, extractos anuales y donaciones en línea con Stripe o PayPal."
 ---
 
 # Donaciones

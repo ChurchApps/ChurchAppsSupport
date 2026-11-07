@@ -1,5 +1,6 @@
 ---
 title: "उपस्थिति रिपोर्टें"
+description: "B1 Admin की तीन उपस्थिति रिपोर्ट (Attendance Trend, Group Attendance, Daily Group Attendance) और हर एक में क्या दिखता है, साथ ही उन्हें चलाने और निर्यात करने के चरण।"
 ---
 
 # उपस्थिति रिपोर्टें

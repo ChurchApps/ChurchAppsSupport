@@ -1,5 +1,6 @@
 ---
 title: "Estructura del Módulo"
+description: "Explica cómo están organizados los módulos de la API, con controladores, repositorios, pasarelas, verificaciones de autenticación y las seis funciones Lambda que ejecutan el código en los entornos de desarrollo de B1."
 ---
 
 # Estructura del Módulo
@@ -13,8 +14,8 @@ Cada módulo de la API sigue una estructura interna consistente con controladore
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Configura la API localmente -- consulta [Configuración Local de API](./local-setup)
-- Revisa la arquitectura de [Base de Datos](./database) para comprender la capa de acceso a datos
+- Configura la API localmente -- consulta [Configuración Local de API](./local-setup.md)
+- Revisa la arquitectura de [Base de Datos](./database.md) para comprender la capa de acceso a datos
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Comunicación entre Módulos
 
-Cada módulo posee su propia base de datos (consulta [Base de Datos](./database)), y un módulo nunca consulta las tablas de otro módulo directamente. Cuando un módulo necesita datos que posee otro -- por ejemplo, el módulo doing resolviendo personas desde membership -- pasa a través de la **puerta de enlace** del módulo propietario en `src/shared/modules/`:
+Cada módulo posee su propia base de datos (consulta [Base de Datos](./database.md)), y un módulo nunca consulta las tablas de otro módulo directamente. Cuando un módulo necesita datos que posee otro -- por ejemplo, el módulo doing resolviendo personas desde membership -- pasa a través de la **puerta de enlace** del módulo propietario en `src/shared/modules/`:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Localmente, la función `web` se ejecuta en el puerto 8084 y la función `socket
 
 ## Artículos Relacionados
 
-- **[Base de Datos](./database)** -- Cadenas de conexión, scripts de esquema, y patrones de acceso a datos
-- **[Configuración Local de API](./local-setup)** -- Guía completa paso a paso para la instalación
-- **[ApiHelper](../shared-libraries/api-helper)** -- La biblioteca compartida que proporciona `CustomBaseController` y middleware de auth
+- **[Base de Datos](./database.md)** -- Cadenas de conexión, scripts de esquema, y patrones de acceso a datos
+- **[Configuración Local de API](./local-setup.md)** -- Guía completa paso a paso para la instalación
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- La biblioteca compartida que proporciona `CustomBaseController` y middleware de auth

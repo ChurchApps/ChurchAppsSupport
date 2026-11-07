@@ -1,5 +1,6 @@
 ---
 title: "Filer"
+description: "Ladda upp, bläddra bland och hantera bilder och dokument för din kyrkowebbplats i B1 Admin, inklusive koppling till extern lagring för mer utrymme."
 ---
 
 # Filer
@@ -13,7 +14,7 @@ Sidan Filer är den centrala lagringsplatsen för all media och alla dokument so
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Slutför [Första inställningen](initial-setup) för din webbplats
+- Slutför [Första inställningen](./initial-setup.md) för din webbplats
 - Optimera bilder innan du laddar upp dem för snabbare sidladdningstider
 - Förbered dina filer i vanliga webbformat (PNG, JPG, PDF m.fl.)
 
@@ -42,7 +43,7 @@ Filtabellen listar alla uppladdade filer med deras **Namn** och **Storlek**. Kli
 3. Filer du laddar upp här är tillgängliga för användning på alla dina webbplatssidor och innehållsblock.
 
 :::info
-När du bygger sidor i [Hantera sidor](managing-pages) kan du referera till vilken fil som helst som laddats upp här med dess URL. Det håller all din media organiserad på ett och samma centrala ställe.
+När du bygger sidor i [Hantera sidor](./managing-pages.md) kan du referera till vilken fil som helst som laddats upp här med dess URL. Det håller all din media organiserad på ett och samma centrala ställe.
 :::
 
 ## Ta bort filer
@@ -57,5 +58,5 @@ Borttagna filer kan inte återställas. Kontrollera dubbelt att en fil inte län
 
 ## Nästa steg
 
-- [Hantera sidor](managing-pages) -- Lägg till dina uppladdade filer på webbplatssidor
-- [Utseende](appearance) -- Anpassa din webbplats visuella tema
+- [Hantera sidor](./managing-pages.md) -- Lägg till dina uppladdade filer på webbplatssidor
+- [Utseende](./appearance.md) -- Anpassa din webbplats visuella tema

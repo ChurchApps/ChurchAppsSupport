@@ -1,5 +1,6 @@
 ---
 title: "Doing Uç Noktaları"
+description: "Hizmet planları, gönüllü atamaları, görevler ve otomasyonları yöneten Doing API uç nokta başvurusu; yollar, kimlik doğrulama ve izinleriyle birlikte."
 ---
 
 # Doing Uç Noktaları
@@ -278,6 +279,6 @@ Temel yol: `/doing/providerProxy`
 
 ## İlgili Sayfalar
 
-- [Üyelik Uç Noktaları](./membership) — Kişiler, gruplar, roller ve izinler
-- [Katılım Uç Noktaları](./attendance) — Hizmet ve ziyaret takibi
-- [Modül Yapısı](../module-structure) — Kod organizasyon kalıpları
+- [Üyelik Uç Noktaları](./membership.md) — Kişiler, gruplar, roller ve izinler
+- [Katılım Uç Noktaları](./attendance.md) — Hizmet ve ziyaret takibi
+- [Modül Yapısı](../module-structure.md) — Kod organizasyon kalıpları

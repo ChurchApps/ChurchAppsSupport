@@ -1,5 +1,6 @@
 ---
 title: "Lekciöiden hallinta"
+description: "Rakenna oppitunti Lessons.churchin ylläpidossa: paikat, osiot ja roolikohtaiset Say-, Do-, Note- tai Play-toiminnot sekä kotiin vietävä teksti ja resurssit."
 ---
 
 # Lekciöiden hallinta

@@ -1,5 +1,6 @@
 ---
 title: "Posouzení rizik přenosu"
+description: "Záznam shody ChurchApps pro přenosy dat církví z UK/EHP do USA v B1 Admin, včetně záruk, subdodavatelů a řízení přístupu."
 ---
 
 # Posouzení rizik přenosu

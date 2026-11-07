@@ -1,5 +1,6 @@
 ---
 title: "Ghép nối thiết bị của bạn"
+description: "Ghép nối TV FreePlay với loại kế hoạch trong B1 Admin bằng mã bốn chữ cái hiển thị trên màn hình, rồi tải media của kế hoạch để phát ở Plan Mode."
 ---
 
 # Ghép nối thiết bị của bạn
@@ -13,7 +14,7 @@ title: "Ghép nối thiết bị của bạn"
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Cài đặt và mở FreePlay. Xem [Bắt đầu sử dụng](../getting-started/)
+- Cài đặt và mở FreePlay. Xem [Bắt đầu sử dụng](../getting-started/index.md)
 - Có quyền truy cập **B1 Admin** trên máy tính hoặc điện thoại để hoàn tất việc ghép nối
 
 </div>
@@ -25,7 +26,7 @@ title: "Ghép nối thiết bị của bạn"
 3. FreePlay hiển thị một mã ghép nối gồm bốn chữ cái bằng chữ lớn, bên cạnh một mã QR.
 4. Bên dưới mã, biểu tượng **Đang chờ xác nhận** nhấp nháy cho biết FreePlay đang chờ bạn hoàn tất việc ghép nối.
 
-Mã này cũng dùng được cho [Chế độ theo lịch](../scheduled-mode/) trong FreePlay Admin và Chế độ Kế hoạch trong B1 Admin. Mã QR và địa chỉ **freeplay.church/pair** hiển thị trên màn hình sẽ mở FreePlay Admin. Với Chế độ Kế hoạch, bạn có thể bỏ qua chúng và nhập mã trong B1 Admin như hướng dẫn bên dưới.
+Mã này cũng dùng được cho [Chế độ theo lịch](../scheduled-mode/index.md) trong FreePlay Admin và Chế độ Kế hoạch trong B1 Admin. Mã QR và địa chỉ **freeplay.church/pair** hiển thị trên màn hình sẽ mở FreePlay Admin. Với Chế độ Kế hoạch, bạn có thể bỏ qua chúng và nhập mã trong B1 Admin như hướng dẫn bên dưới.
 
 ## Nhập mã trong B1 Admin
 
@@ -61,5 +62,5 @@ Mã ghép nối hết hạn sau 15 phút. Khi mã cũ hết hạn, FreePlay tự
 ## Bài viết liên quan
 
 - **[Tổng quan Chế độ Kế hoạch](./index.md)** - Chế độ Kế hoạch khác với Chế độ theo lịch như thế nào
-- **[Ghép nối màn hình](../scheduled-mode/pairing-a-screen)** - Thay vào đó, ghép nối cùng TV này với một lịch trong FreePlay Admin
-- **[Phát nội dung](../content-providers/playing-content)** - Các điều khiển trình phát khi phát kế hoạch
+- **[Ghép nối màn hình](../scheduled-mode/pairing-a-screen.md)** - Thay vào đó, ghép nối cùng TV này với một lịch trong FreePlay Admin
+- **[Phát nội dung](../content-providers/playing-content.md)** - Các điều khiển trình phát khi phát kế hoạch

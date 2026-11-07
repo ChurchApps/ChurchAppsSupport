@@ -1,5 +1,7 @@
 ---
-title: "Contenuti"
+title: "Funzioni di contenuto nell'app B1 Mobile"
+sidebar_label: "Contenuti"
+description: "Trova predicazioni, dirette streaming, lettura biblica e Versetto del giorno nell'app B1 Mobile, e vedi quali funzioni sono attive per la tua chiesa."
 ---
 
 # Contenuti
@@ -37,13 +39,13 @@ Accedi al curriculum e ai materiali didattici della tua chiesa attraverso la pia
 Le funzionalità di contenuto sono disponibili tramite il menu laterale dell'app. L'amministratore della tua chiesa decide quali funzionalità di contenuto sono abilitate, quindi potresti non vedere tutte le opzioni elencate sopra. Se manca una funzionalità particolare, la tua chiesa potrebbe non averla ancora configurata.
 
 :::info
-Le funzionalità di contenuto sono configurate dall'amministratore della tua chiesa tramite [B1 Admin](../../b1-admin/). Se non vedi una funzionalità che ti aspetti, contatta la segreteria della tua chiesa.
+Le funzionalità di contenuto sono configurate dall'amministratore della tua chiesa tramite [B1 Admin](../../b1-admin/index.md). Se non vedi una funzionalità che ti aspetti, contatta la segreteria della tua chiesa.
 :::
 
 ## Prossimi Passi
 
-- [Sermoni](./sermons) -- Sfoglia e guarda i sermoni registrati
-- [Streaming in Diretta](./live-streaming) -- Guarda le trasmissioni in diretta
-- [Bibbia](./bible) -- Leggi le Scritture nel lettore integrato
-- [Versetto del Giorno](./verse-of-the-day) -- Vedi il versetto quotidiano di oggi
-- [Lezioni](./lessons) -- Accedi al curriculum e ai materiali didattici
+- [Sermoni](./sermons.md) -- Sfoglia e guarda i sermoni registrati
+- [Streaming in Diretta](./live-streaming.md) -- Guarda le trasmissioni in diretta
+- [Bibbia](./bible.md) -- Leggi le Scritture nel lettore integrato
+- [Versetto del Giorno](./verse-of-the-day.md) -- Vedi il versetto quotidiano di oggi
+- [Lezioni](./lessons.md) -- Accedi al curriculum e ai materiali didattici

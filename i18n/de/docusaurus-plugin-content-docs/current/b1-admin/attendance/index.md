@@ -1,5 +1,6 @@
 ---
 title: "Anwesenheit"
+description: "Prüfen Sie in B1 Admin die wöchentliche Anwesenheit, Räume und Gäste und richten Sie auf der Anwesenheitsseite Gemeinden, Gottesdienstzeiten, Besucherzahlen und Kiosk-Check-in ein."
 ---
 
 # Anwesenheit

@@ -1,5 +1,6 @@
 ---
 title: "Pogovori v skupini"
+description: "Naučite se objavljati, urejati in se odzivati na sporočila v klepetu skupine B1.church ter uporabljati obvestila in orodja vodij za moderiranje."
 ---
 
 # Pogovori v skupini

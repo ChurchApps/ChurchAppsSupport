@@ -1,5 +1,6 @@
 ---
 title: "Kalendergodkännanden"
+description: "Granska väntande bokningsförfrågningar för lokaler och resurser i B1 Admin, kontrollera krockar och godkänn eller avslå dem, med möjlighet att publicera händelsen."
 ---
 
 # Kalendergodkännanden
@@ -13,7 +14,7 @@ Sidan Godkännanden är där administratörer granskar och hanterar väntande bo
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Konfigurera rum eller resurser med en **godkännandegrupp** under [Rum och resurser](rooms-resources)
+- Konfigurera rum eller resurser med en **godkännandegrupp** under [Rum och resurser](./rooms-resources.md)
 - Du behöver behörigheten **Kalenderadministratör** eller behörigheten **content.edit**
 
 </div>
@@ -41,7 +42,7 @@ Klicka på **Godkänn** eller **Avvisa** på valfri bokningsförfrågan (vid avv
 När du klickar på **Godkänn** öppnas dialogrutan **Godkänn bokning**, där du också kan publicera händelsen i samma steg:
 
 1. Markera **Publicera i den offentliga kalendern** för att göra händelsen offentlig i gruppens kalender. Lämna den omarkerad för att godkänna bokningen utan att ändra händelsens synlighet.
-2. När **Publicera i den offentliga kalendern** är markerad kan du eventuellt välja en kuraterad kalender under **Lägg även till i kalender** för att även lägga till händelsen i en av dina [kuraterade kalendrar](curated-calendar). Lämna det inställt på **Ingen** för att hoppa över detta. (Alternativet visas endast om du har behörigheten **content.edit**.)
+2. När **Publicera i den offentliga kalendern** är markerad kan du eventuellt välja en kuraterad kalender under **Lägg även till i kalender** för att även lägga till händelsen i en av dina [kuraterade kalendrar](./curated-calendar.md). Lämna det inställt på **Ingen** för att hoppa över detta. (Alternativet visas endast om du har behörigheten **content.edit**.)
 3. Klicka på **Godkänn**.
 
 ## Väntande händelser
@@ -49,10 +50,10 @@ När du klickar på **Godkänn** öppnas dialogrutan **Godkänn bokning**, där 
 Om ditt kalenderarbetsflöde kräver godkännande av händelser innan de blir synliga för allmänheten visas väntande händelser i avsnittet **Händelseförfrågningar**. Klicka på **Godkänn** för att publicera en händelse i kalendern, eller på **Avvisa** för att meddela avsändaren att ändringar behövs.
 
 :::tip
-Ställ in en godkännandegrupp på ett rum under [Rum och resurser](rooms-resources) för att kräva godkännande för det rummet. Grupper med åtkomst kan sedan begära rummet när de skapar händelser, och dessa förfrågningar hamnar på den här sidan.
+Ställ in en godkännandegrupp på ett rum under [Rum och resurser](./rooms-resources.md) för att kräva godkännande för det rummet. Grupper med åtkomst kan sedan begära rummet när de skapar händelser, och dessa förfrågningar hamnar på den här sidan.
 :::
 
 ## Relaterade artiklar
 
-- [Rum, resurser och schemaläggning](rooms-resources) — konfigurera bokningsbara rum och resurser
-- [Skapa kalendrar](creating-calendars) — hantera kalendrar och händelser
+- [Rum, resurser och schemaläggning](./rooms-resources.md) — konfigurera bokningsbara rum och resurser
+- [Skapa kalendrar](./creating-calendars.md) — hantera kalendrar och händelser

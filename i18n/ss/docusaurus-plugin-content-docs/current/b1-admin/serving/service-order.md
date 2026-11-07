@@ -1,5 +1,7 @@
 ---
-title: "Kulandzelana Kwenkonzo"
+title: "Ihlelo Lenkhonzo ku-B1 Admin"
+sidebar_label: "Kulandzelana Kwenkonzo"
+description: "Setela ihlelo lenkhonzo ku-B1 Admin: engeta tingoma, tifundvo netintfo letilungiselelwe, uhlele tigaba, bese uphrinta incwadzi yekusebenta."
 ---
 
 # Kulandzelana Kwenkonzo

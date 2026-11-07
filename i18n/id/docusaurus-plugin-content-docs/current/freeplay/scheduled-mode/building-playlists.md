@@ -1,5 +1,6 @@
 ---
 title: "Menghubungkan Penyedia dan Membuat Daftar Putar"
+description: "Atur penyedia konten yang terhubung di FreePlay Admin, lalu buat, susun, dan pratinjau playlist untuk layar TV terjadwal."
 ---
 
 # Menghubungkan Penyedia dan Membuat Daftar Putar
@@ -107,6 +108,6 @@ Klik **Present** untuk memutar daftar putar layar penuh di browser Anda. Ini ber
 
 ## Artikel Terkait
 
-- **[Menjadwalkan Kalender](./scheduling-the-calendar)** - Tempatkan daftar putar Anda di kalender grup layar
-- **[Mengelola Layar dan Grup](./managing-screens)** - Tetapkan daftar putar sebagai loop default grup
-- **[Penyedia Konten](../content-providers/)** - Penyedia yang dapat Anda hubungkan langsung di TV
+- **[Menjadwalkan Kalender](./scheduling-the-calendar.md)** - Tempatkan daftar putar Anda di kalender grup layar
+- **[Mengelola Layar dan Grup](./managing-screens.md)** - Tetapkan daftar putar sebagai loop default grup
+- **[Penyedia Konten](../content-providers/index.md)** - Penyedia yang dapat Anda hubungkan langsung di TV

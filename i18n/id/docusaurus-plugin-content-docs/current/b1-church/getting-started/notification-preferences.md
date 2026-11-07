@@ -1,5 +1,6 @@
 ---
 title: "Pengaturan Notifikasi"
+description: "Atur saluran notifikasi, frekuensi email, jam tenang, dan opt-out SMS untuk tiap jenis notifikasi di B1 Admin dan aplikasi B1, dari satu layar."
 ---
 
 # Pengaturan Notifikasi
@@ -60,6 +61,6 @@ Notifikasi yang bersifat mendesak -- seperti peringatan keamanan atau pesan kese
 
 ## Terkait
 
-- [Volunteer Sign-Up](../serving/volunteer-signup) -- Pengingat pelayanan dan menanggapi permintaan jadwal
-- [Registering for Events](../events/registering) -- Mendaftar acara yang mengirim pengingat
-- [Installing the App](installing-pwa) -- Tambahkan B1 ke perangkat Anda agar dapat menerima notifikasi push
+- [Volunteer Sign-Up](../serving/volunteer-signup.md) -- Pengingat pelayanan dan menanggapi permintaan jadwal
+- [Registering for Events](../events/registering.md) -- Mendaftar acara yang mengirim pengingat
+- [Installing the App](./installing-pwa.md) -- Tambahkan B1 ke perangkat Anda agar dapat menerima notifikasi push

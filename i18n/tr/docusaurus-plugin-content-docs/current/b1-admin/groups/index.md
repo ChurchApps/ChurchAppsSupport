@@ -1,5 +1,7 @@
 ---
-title: "Gruplar"
+title: "B1 Admin'de Gruplar"
+sidebar_label: "Gruplar"
+description: "B1 Admin'de grupları kurun ve düzenleyin: kategoriler, üyeler, takvimler ve katılım istekleri; Groups sayfasını bulma rehberiyle birlikte."
 ---
 
 # Gruplar

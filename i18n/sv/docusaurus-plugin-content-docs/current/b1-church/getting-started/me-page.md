@@ -1,5 +1,6 @@
 ---
 title: "Mi-sidan"
+description: "Visar vad sidan Me i B1App-medlemsportalen visar på en skärm: kommande tjänster, händelser och anmälningar samt hushåll, grupper, gåvor, formulär, närvaro och inkorg."
 ---
 
 # Mi-sidan
@@ -31,7 +32,7 @@ Om du är utloggad ser du i stället "Logga in för att se din vecka" och en kna
 Avsnittet **Kommande** visar dina tre nästa objekt i datumordning, var och en märkt med en typbricka. Om du har fler trycker du på **Alla kommande** för att se hela listan, och på **Tillbaka till Mi-sidan** för att gå tillbaka.
 
 - **Tjänst** -- Dina volontärpositioner i kommande gudstjänstplaner, med datum och starttid för den gudstjänst du tjänstgör vid (tiden då ditt team behövs när planen har flera gudstjänsttider, eller bara datumet om planen saknar tider). Tryck på en för att öppna planen.
-- **Registrering** -- Evenemang du har [anmält dig till](../events/registering). Tryck för att gå vidare till dina [registreringar](../events/my-registrations).
+- **Registrering** -- Evenemang du har [anmält dig till](../events/registering.md). Tryck för att gå vidare till dina [registreringar](../events/my-registrations.md).
 - **Händelse** -- Kommande händelser från grupper du är medlem i. Tryck på en för att öppna gruppens händelser.
 
 Om en händelse eller registrering har ett foto visas en liten miniatyr av det i början av raden.
@@ -66,7 +67,7 @@ Avsnittet **Förfrågningar och registreringar** visar hur många evenemangsregi
 
 Om din kyrka har bokningsbara lokaler eller resurser visas ytterligare två länkar:
 
-- **Begär ett evenemang** -- Be om att få hålla ett evenemang med de lokaler och den utrustning du behöver. Se [Begära evenemang och lokaler](../events/requesting-events).
+- **Begär ett evenemang** -- Be om att få hålla ett evenemang med de lokaler och den utrustning du behöver. Se [Begära evenemang och lokaler](../events/requesting-events.md).
 - **Mina förfrågningar** -- Följ statusen för dina förfrågningar och avboka väntande sådana.
 
 Om din kyrka inte har lagt in några lokaler eller resurser är dessa länkar dolda.
@@ -77,8 +78,8 @@ Avsnittet **Inkorg** visar dina två senaste aviseringar så att du kan hålla d
 
 ## Relaterade artiklar
 
-- [Navigera i B1App](./navigating) -- Medlemsportalens layout
-- [Begära evenemang och lokaler](../events/requesting-events) -- Skicka in och följ upp förfrågningar om lokaler/resurser
-- [Mina registreringar](../events/my-registrations) -- Hantera dina evenemangsregistreringar
-- [Volontärsanmälan](../serving/volunteer-signup) -- Så fungerar tjänstetilldelningar
-- [Självincheckning](../checkin/self-checkin) -- Så registreras din närvaro
+- [Navigera i B1App](./navigating.md) -- Medlemsportalens layout
+- [Begära evenemang och lokaler](../events/requesting-events.md) -- Skicka in och följ upp förfrågningar om lokaler/resurser
+- [Mina registreringar](../events/my-registrations.md) -- Hantera dina evenemangsregistreringar
+- [Volontärsanmälan](../serving/volunteer-signup.md) -- Så fungerar tjänstetilldelningar
+- [Självincheckning](../checkin/self-checkin.md) -- Så registreras din närvaro

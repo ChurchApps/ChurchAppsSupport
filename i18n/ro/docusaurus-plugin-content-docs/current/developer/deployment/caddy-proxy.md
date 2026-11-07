@@ -1,5 +1,6 @@
 ---
 title: "Proxy Caddy pentru domenii personalizate"
+description: "Construiți și rulați proxy-ul invers Caddy care servește domeniile personalizate ale bisericilor pentru site-urile B1.church, acoperind certificatele TLS, maparea gazdelor și capcanele cunoscute."
 ---
 
 # Proxy Caddy pentru domenii personalizate
@@ -10,7 +11,7 @@ Domeniile personalizate ale bisericilor (`mychurch.org` → site-ul web B1 al bi
 
 </div>
 
-Pentru modul în care o cerere ajunge la o biserică/un site odată ce a ajuns în B1App, consultați [Rutarea site-urilor web și multi-site](../architecture/websites).
+Pentru modul în care o cerere ajunge la o biserică/un site odată ce a ajuns în B1App, consultați [Rutarea site-urilor web și multi-site](../architecture/websites.md).
 
 ## Componente
 
@@ -88,5 +89,5 @@ API-ul de administrare se leagă doar la `localhost:2019`. Modul legacy de rular
 
 ## Pagini conexe
 
-- [Rutarea site-urilor web și multi-site](../architecture/websites) — cum se asociază cererea proxiată cu o biserică/un site în B1App
-- [Implementarea API-urilor](./apis) — implementarea Membership API care servește `authorize`/`hostmap`
+- [Rutarea site-urilor web și multi-site](../architecture/websites.md) — cum se asociază cererea proxiată cu o biserică/un site în B1App
+- [Implementarea API-urilor](./apis.md) — implementarea Membership API care servește `authorize`/`hostmap`

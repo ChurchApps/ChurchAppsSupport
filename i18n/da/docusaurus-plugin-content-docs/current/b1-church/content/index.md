@@ -1,5 +1,7 @@
 ---
-title: "Indhold"
+title: "Indholdsfunktioner i B1.church medlemsportalen"
+sidebar_label: "Indhold"
+description: "Se hvilket indhold din kirke aktiverer i B1.church medlemsportalen, og gennemse derefter prædikener, livestreams, bibellæsning og lektioner."
 ---
 
 # Indhold

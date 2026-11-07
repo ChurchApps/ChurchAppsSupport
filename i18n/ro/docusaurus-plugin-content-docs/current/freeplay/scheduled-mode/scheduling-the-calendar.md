@@ -1,5 +1,6 @@
 ---
 title: "Programación del calendario"
+description: "Programați în Calendarul FreePlay Admin redări săptămânale sau unice de playlisturi, planuri sau dosare ale furnizorilor, cu bucle implicite ca rezervă."
 ---
 
 Nope, I need to stop here and re-check the task. The request is to translate into Romanian, not Spanish. Let me write the correct translation.
@@ -19,8 +20,8 @@ Pagina **Calendar** din FreePlay Admin controlează ce redă fiecare grup de ecr
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Creați cel puțin un grup de ecrane. Consultați [Gestionarea ecranelor și a grupurilor](./managing-screens#screen-groups)
-- [Creați o listă de redare](./building-playlists), sau aveți configurat un tip de plan în B1 Admin
+- Creați cel puțin un grup de ecrane. Consultați [Gestionarea ecranelor și a grupurilor](./managing-screens.md#screen-groups)
+- [Creați o listă de redare](./building-playlists.md), sau aveți configurat un tip de plan în B1 Admin
 
 </div>
 
@@ -88,11 +89,11 @@ Dacă două programe se suprapun, formularul afișează un avertisment: **Overla
 
 ## Cum preiau ecranele modificările
 
-Ecranele asociate descarcă tot ce este programat pentru următoarele 7 zile și verifică singure dacă există modificări. Nu trebuie să atingeți televizorul după ce editați calendarul. Pentru a vedea când un ecran are tot ce are nevoie, verificați **Ready through** pe [pagina Screens](./managing-screens).
+Ecranele asociate descarcă tot ce este programat pentru următoarele 7 zile și verifică singure dacă există modificări. Nu trebuie să atingeți televizorul după ce editați calendarul. Pentru a vedea când un ecran are tot ce are nevoie, verificați **Ready through** pe [pagina Screens](./managing-screens.md).
 
 ## Articole conexe
 
-- **[Building Playlists](./building-playlists)** - Creați listele de redare pe care le programați
-- **[Scheduled Playback on the TV](./scheduled-playback)** - Cum funcționează lecțiile teacher paced și telecomanda pe televizor
-- **[Managing Screens and Groups](./managing-screens)** - Adăugați grupuri și verificați descărcările fiecărui ecran
+- **[Building Playlists](./building-playlists.md)** - Creați listele de redare pe care le programați
+- **[Scheduled Playback on the TV](./scheduled-playback.md)** - Cum funcționează lecțiile teacher paced și telecomanda pe televizor
+- **[Managing Screens and Groups](./managing-screens.md)** - Adăugați grupuri și verificați descărcările fiecărui ecran
 - **[Keeping Only Part of Every Lesson](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Reduceți fiecare lecție programată dintr-un tip de plan la părțile pe care le redă sala dvs.

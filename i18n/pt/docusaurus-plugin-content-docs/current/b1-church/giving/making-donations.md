@@ -1,5 +1,7 @@
 ---
-title: "Fazendo uma Doação"
+title: "Como Fazer Doações no Portal de Membros do B1.church"
+sidebar_label: "Fazendo uma Doação"
+description: "Faça uma doação única ou recorrente à sua igreja pelo B1.church, com ou sem conta, e revise seu histórico de doações depois."
 ---
 
 # Fazendo uma Doação

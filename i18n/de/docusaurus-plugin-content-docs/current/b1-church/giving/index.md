@@ -1,5 +1,7 @@
 ---
-title: "Spenden"
+title: "Online-Spenden auf B1.church"
+sidebar_label: "Spenden"
+description: "Online bei Ihrer Gemeinde auf B1.church ohne Konto spenden oder sich anmelden, um Daueraufträge, Zahlungsmittel und Spendenbescheinigungen zu verwalten."
 ---
 
 # Spenden

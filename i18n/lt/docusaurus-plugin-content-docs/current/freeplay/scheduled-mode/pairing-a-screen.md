@@ -1,5 +1,6 @@
 ---
 title: "Uspořádání obrazovky"
+description: "Susiekite FreePlay TV su ekranų grupės kalendoriumi FreePlay Admin naudodami keturženklį kodą televizoriuje, kad jis savarankiškai rodytų planuojamą turinį."
 ---
 
 Oops, I need to correct myself: I've been asked to translate into Lithuanian, but I started writing Czech. Here is the Lithuanian translation:
@@ -19,9 +20,9 @@ Kad televizorius rodytų kalendorių, susiekite jį su **FreePlay Admin**. Telev
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Įdiekite ir paleiskite FreePlay televizoriuje. Žr. [Pradžia](../getting-started/)
+- Įdiekite ir paleiskite FreePlay televizoriuje. Žr. [Pradžia](../getting-started/index.md)
 - Turėkite savo bažnyčios ChurchApps prisijungimo duomenis, kad galėtumėte prisijungti prie FreePlay Admin
-- Pasirinktinai, pirmiausia [sukurkite grojaraštį](./building-playlists) ir [suplanuokite jį](./scheduling-the-calendar), kad televizorius iškart turėtų ką rodyti
+- Pasirinktinai, pirmiausia [sukurkite grojaraštį](./building-playlists.md) ir [suplanuokite jį](./scheduling-the-calendar.md), kad televizorius iškart turėtų ką rodyti
 
 </div>
 
@@ -44,7 +45,7 @@ Kodas galioja 15 minučių, o po juo rodomas skaitiklis, kiek laiko liko. Kai la
 5. Skiltyje **Mode** (Režimas) palikite pasirinktą **Scheduled** (Pagal tvarkaraštį). Televizorius savarankiškai groti pagal grupės kalendorių.
 6. Spustelėkite **Pair** (Susieti).
 
-Televizorius parodys **Connected!** (Prijungta!), o paskui **Loading your schedule...** (Įkeliamas jūsų tvarkaraštis...). Jis atsisiųs suplanuotą turinį ir pradės groti. Žr. [Tvarkaraštinis atkūrimas televizoriuje](./scheduled-playback).
+Televizorius parodys **Connected!** (Prijungta!), o paskui **Loading your schedule...** (Įkeliamas jūsų tvarkaraštis...). Jis atsisiųs suplanuotą turinį ir pradės groti. Žr. [Tvarkaraštinis atkūrimas televizoriuje](./scheduled-playback.md).
 
 :::info
 Jei FreePlay Admin rodo **That code didn't match a TV** (Šis kodas neatitinka jokio televizoriaus), patikrinkite kodą ekrane. Jei jis nebegalioja, naudokite naują kodą, kurį televizorius rodo dabar.
@@ -57,11 +58,11 @@ Nustatymas **Mode** (Režimas) turi dvi parinktis:
 - **Scheduled** (Pagal tvarkaraštį) - Groja pagal grupės kalendorių savarankiškai. Niekas neturi spausti Start.
 - **Manual** (Rankiniu būdu) - Turinį pasirenka žmogus nuotoliniu valdymo pultu. Rankinio režimo ekranas vis tiek rodomas jūsų sąraše **Screens**, bet jis nesekа kalendoriaus, todėl laukas **Group** išjungiamas.
 
-Vėliau režimą galite pakeisti spustelėdami **Edit** (Redaguoti) [Ekranų puslapyje](./managing-screens).
+Vėliau režimą galite pakeisti spustelėdami **Edit** (Redaguoti) [Ekranų puslapyje](./managing-screens.md).
 
 ## Susiejimas su bažnytinių pamaldų planu
 
-Kodas ekrane **Pair this screen** veikia ir B1 Admin. Jei įvesite jį ten ir pasirinksite plano tipą skiltyje **Show Plans For** (Rodyti planus), televizorius seks tą plano tipą [Plano režime](../plan-mode/) vietoj kalendoriaus. Žr. [Įrenginio susiejimas](../plan-mode/device-pairing).
+Kodas ekrane **Pair this screen** veikia ir B1 Admin. Jei įvesite jį ten ir pasirinksite plano tipą skiltyje **Show Plans For** (Rodyti planus), televizorius seks tą plano tipą [Plano režime](../plan-mode/index.md) vietoj kalendoriaus. Žr. [Įrenginio susiejimas](../plan-mode/device-pairing.md).
 
 ## Keitimas ar atsiejimas iš televizoriaus
 
@@ -85,6 +86,6 @@ Televizorius vėl rodys susiejimo kodą. Susiekite jį iš naujo, kai norėsite.
 
 ## Susijusieji straipsniai
 
-- **[Ekranų ir grupių tvarkymas](./managing-screens)** - Pervadinkite ekraną, perkelkite jį į kitą grupę arba patikrinkite jo atsisiuntimus
-- **[Kalendoriaus planavimas](./scheduling-the-calendar)** - Nuspręskite, ką rodo grupės ekranai
-- **[Susiejimo režimo pasirinkimas](../getting-started/pairing-modes)** - Palyginkite tvarkaraštio režimą su Plano režimu ir turinio teikėjų naršymu pačiam
+- **[Ekranų ir grupių tvarkymas](./managing-screens.md)** - Pervadinkite ekraną, perkelkite jį į kitą grupę arba patikrinkite jo atsisiuntimus
+- **[Kalendoriaus planavimas](./scheduling-the-calendar.md)** - Nuspręskite, ką rodo grupės ekranai
+- **[Susiejimo režimo pasirinkimas](../getting-started/pairing-modes.md)** - Palyginkite tvarkaraštio režimą su Plano režimu ir turinio teikėjų naršymu pačiam

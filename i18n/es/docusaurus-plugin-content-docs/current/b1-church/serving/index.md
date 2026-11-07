@@ -1,5 +1,7 @@
 ---
-title: "Servicio"
+title: "Servicio voluntario e inscripción en B1.church"
+sidebar_label: "Servicio"
+description: "Explore oportunidades de voluntariado en B1.church, inscríbase en puestos abiertos, vea sus asignaciones de servicio y cancele inscripciones antes de la fecha límite."
 ---
 
 # Servicio
@@ -14,8 +16,8 @@ La sección Serving de B1.church te permite explorar oportunidades de voluntaria
 
 - **Explorar oportunidades de voluntariado**: consulta los próximos planes de servicio con posiciones abiertas que necesitan voluntarios.
 - **Inscribirte en posiciones**: elige una posición e inscríbete con un solo clic.
-- **Ver tus planes**: consulta tus [asignaciones de servicio](../plans/viewing-plans) próximas y pasadas.
-- **Responder a las asignaciones**: acepta o rechaza las posiciones para las que te han programado, desde la página Plans o desde la sección **You're serving** de Home. Si tus planes cambian después de aceptar, puedes [rechazar una asignación aceptada](../plans/viewing-plans#declining-an-accepted-assignment) hasta que termine el servicio.
+- **Ver tus planes**: consulta tus [asignaciones de servicio](../plans/viewing-plans.md) próximas y pasadas.
+- **Responder a las asignaciones**: acepta o rechaza las posiciones para las que te han programado, desde la página Plans o desde la sección **You're serving** de Home. Si tus planes cambian después de aceptar, puedes [rechazar una asignación aceptada](../plans/viewing-plans.md#declining-an-accepted-assignment) hasta que termine el servicio.
 - **Cancelar inscripciones**: cancela tu propia inscripción si tus planes cambian (antes de la fecha límite).
 
 ## Cómo funciona
@@ -28,5 +30,5 @@ Solo aparecen en la página de voluntarios las posiciones que el administrador d
 
 ## Más información
 
-- [Inscripción de voluntarios](./volunteer-signup): guía paso a paso para explorar e inscribirte en posiciones de voluntariado
-- [Ver planes](../plans/viewing-plans): consulta tus planes de servicio asignados y sus órdenes de servicio
+- [Inscripción de voluntarios](./volunteer-signup.md): guía paso a paso para explorar e inscribirte en posiciones de voluntariado
+- [Ver planes](../plans/viewing-plans.md): consulta tus planes de servicio asignados y sus órdenes de servicio

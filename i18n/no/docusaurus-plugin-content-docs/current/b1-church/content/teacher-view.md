@@ -1,5 +1,6 @@
 ---
 title: "Lærervisning for leksjoner"
+description: "Åpne en leksjon i fullskjerm Teacher View fra en plan på B1.church, og hopp mellom seksjoner, spill av media og last ned klasseressurser."
 ---
 
 # Lærervisning for leksjoner

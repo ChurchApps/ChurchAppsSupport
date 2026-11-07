@@ -1,5 +1,7 @@
 ---
-title: "Savitarnos registracija"
+title: "Savarankiška registracija B1 Mobile programėlėje"
+sidebar_label: "Savitarnos registracija"
+description: "Registruokite save ir savo namų ūkį į pamaldas B1 Mobile programėlėje, įskaitant pamaldų laiko pasirinkimą ir kiekvieno asmens grupės priskyrimą."
 ---
 
 # Savitarnos registracija
@@ -13,7 +15,7 @@ Registracija iš B1 Mobile yra paprastas, kelių žingsnių procesas. Vos keliai
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiekite B1 Mobile](../getting-started/installing) ir [prisijunkite](../getting-started/logging-in) prie savo paskyros
+- [Įdiekite B1 Mobile](../getting-started/installing.md) ir [prisijunkite](../getting-started/logging-in.md) prie savo paskyros
 - Įsitikinkite, kad jūsų [šeimos nariai](../profile/household.md) yra nustatyti jūsų profilyje
 
 </div>

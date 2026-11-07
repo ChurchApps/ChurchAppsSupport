@@ -1,5 +1,6 @@
 ---
 title: "Harmadik féltől származó szolgáltatók"
+description: "Külső tantervi feed hozzáadása a Lessons.churchhez a harmadik féltől származó szolgáltatók oldalán; kapcsolatok megtekintése, frissítése, törlése."
 ---
 
 # Harmadik féltől származó szolgáltatók

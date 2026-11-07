@@ -1,5 +1,6 @@
 ---
 title: "Ayarlar"
+description: "B1 Admin Ayarlar bölümünde yolunuzu bulun: kilise bilgileri, marka, kampüsler, özel alanlar, kullanıcı rolleri ve B1.church uygulama gezinmesi."
 ---
 
 # Ayarlar

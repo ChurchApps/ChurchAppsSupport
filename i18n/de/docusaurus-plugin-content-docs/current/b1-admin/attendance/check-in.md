@@ -1,5 +1,7 @@
 ---
-title: "Check-in"
+title: "Selbst-Check-in einrichten mit B1 Checkin und B1 Admin"
+sidebar_label: "Check-in"
+description: "Richten Sie die Selbst-Check-in für Gottesdienste mit der B1-Checkin-App in B1 Admin ein: Geräte, Kiosk-Konten, Zeitpläne, Branding und QR-Gästeanmeldung."
 ---
 
 # Check-in
@@ -99,7 +101,7 @@ Nutzen Sie den Ruhebildschirm, um Ankündigungen, bevorstehende Veranstaltungen 
 
 Der Check-in-Kiosk kann einen QR-Code anzeigen, den Besucher scannen, um sich und ihre Familie selbst auf ihrem Telefon zu registrieren. Das beschleunigt den Check-in für Erstbesucher.
 
-Wenn ein Gast den QR-Code scannt, gelangt er zu einer [Seite zur Gästeregistrierung](../../b1-church/checkin/guest-registration), auf der er die Namen seiner Familie und weitere Angaben eingeben kann, die Sie abfragen möchten. Ein Ehrenamtlicher kann den Gast dann am Kiosk suchen und einchecken.
+Wenn ein Gast den QR-Code scannt, gelangt er zu einer [Seite zur Gästeregistrierung](../../b1-church/checkin/guest-registration.md), auf der er die Namen seiner Familie und weitere Angaben eingeben kann, die Sie abfragen möchten. Ein Ehrenamtlicher kann den Gast dann am Kiosk suchen und einchecken.
 
 ### QR-Gästeregistrierung aktivieren
 

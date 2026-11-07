@@ -1,5 +1,6 @@
 ---
 title: "Group Calendar"
+description: "B1 Admin और B1.church में समूह कैलेंडर पर बैठकों और दोहराए जाने वाले इवेंट की योजना बनाएँ, जिसमें बल्क शेड्यूलिंग, RSVP और कैलेंडर सदस्यता शामिल हैं।"
 ---
 
 # Group Calendar

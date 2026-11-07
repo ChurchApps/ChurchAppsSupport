@@ -1,5 +1,6 @@
 ---
 title: "Anleitung: Ihre Gemeinde mit B1 starten"
+description: "Begleitet Sie durch die Einrichtung einer neuen Gemeinde in B1 Admin: Konto erstellen, Einstellungen konfigurieren, Rollen hinzufügen, Mitglieder importieren und Kernfunktionen starten."
 ---
 
 # Ihre Gemeinde mit B1 starten

@@ -1,5 +1,6 @@
 ---
 title: "Vaazların Yönetimi"
+description: "B1 Admin'de vaaz kitaplığınızı yönetin: YouTube, Vimeo veya Facebook'tan vaaz ekleyin, ayrıntıları düzenleyin ve kiliseniz için bir podcast akışı alın."
 ---
 
 # Vaazların Yönetimi
@@ -14,7 +15,7 @@ Vaazlar sayfasında kilisenizin tüm vaaz kitaplığı görüntülenir. Bu sayfa
 <h4>Başlamadan Önce</h4>
 
 - **contentApi.streamingServices.edit** iznine ihtiyacınız var. Erişiminiz yoksa [Roller ve İzinler](../settings/roles-permissions.md) bölümüne bakın.
-- Vaazlarınızı düzenlemek için en az bir [oynatma listesi](playlists) oluşturun
+- Vaazlarınızı düzenlemek için en az bir [oynatma listesi](./playlists.md) oluşturun
 - YouTube, Vimeo veya Facebook'taki video kimliklerinizi ya da URL'lerinizi hazır bulundurun
 
 </div>
@@ -35,7 +36,7 @@ Vaazlar sayfasında kilisenizin tüm vaaz kitaplığı görüntülenir. Bu sayfa
 6. İstediğiniz değişiklikleri yapın ve **Kaydet**'e tıklayın.
 
 :::tip
-**Vaaz Ekle** açılır menüsünden **Kalıcı Canlı Yayın URL'si Ekle** seçeneğini seçerek de kalıcı bir canlı yayın URL'si ekleyebilirsiniz. Bu işlem, Kanal Kimliğinizi kullanarak YouTube kanalınızın canlı yayınıyla kalıcı bir bağlantı oluşturur. Daha fazla bilgi için [Canlı Yayın](live-streaming) bölümüne bakın.
+**Vaaz Ekle** açılır menüsünden **Kalıcı Canlı Yayın URL'si Ekle** seçeneğini seçerek de kalıcı bir canlı yayın URL'si ekleyebilirsiniz. Bu işlem, Kanal Kimliğinizi kullanarak YouTube kanalınızın canlı yayınıyla kalıcı bir bağlantı oluşturur. Daha fazla bilgi için [Canlı Yayın](./live-streaming.md) bölümüne bakın.
 :::
 
 ## Vaaz Düzenleme
@@ -73,11 +74,11 @@ Bir vaaz ekledikten sonra, onu canlı yayın sayfanızda yayınlanacak şekilde 
 3. Vaaz, planlanan ibadet saatinde oynatılacaktır.
 
 :::info
-Vaazları tek tek eklemek yerine toplu olarak içe aktarmak için, YouTube veya Vimeo hesabınızdaki videoları doğrudan çekmek üzere [Toplu İçe Aktarma](bulk-import) aracını kullanın.
+Vaazları tek tek eklemek yerine toplu olarak içe aktarmak için, YouTube veya Vimeo hesabınızdaki videoları doğrudan çekmek üzere [Toplu İçe Aktarma](./bulk-import.md) aracını kullanın.
 :::
 
 ## Sonraki Adımlar
 
-- [Oynatma Listeleri](playlists) -- Vaazları seriler halinde düzenleyin
-- [Canlı Yayın](live-streaming) -- Yayın programınızı yapılandırın
-- [Toplu İçe Aktarma](bulk-import) -- Birden fazla vaazı bir kerede içe aktarın
+- [Oynatma Listeleri](./playlists.md) -- Vaazları seriler halinde düzenleyin
+- [Canlı Yayın](./live-streaming.md) -- Yayın programınızı yapılandırın
+- [Toplu İçe Aktarma](./bulk-import.md) -- Birden fazla vaazı bir kerede içe aktarın

@@ -1,5 +1,6 @@
 ---
 title: "Gestionarea dispozitivelor"
+description: "Asociați, etichetați și eliminați ecranele ChurchAppsPlayer și FreePlay conectate la contul dvs. din B1 Admin, pentru afișaje actualizate și sigure."
 ---
 
 # Gestionarea dispozitivelor

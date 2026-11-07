@@ -1,5 +1,7 @@
 ---
-title: "Aan de slag"
+title: "Aan de slag met ChurchApps: de eerste 15 minuten"
+sidebar_label: "Aan de slag"
+description: "Stel in enkele stappen een ChurchApps-account in: kerkgegevens toevoegen, personen in B1 Admin importeren, je team uitnodigen en een eerste project kiezen."
 ---
 
 # Aan de slag

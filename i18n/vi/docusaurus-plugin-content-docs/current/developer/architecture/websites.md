@@ -1,12 +1,13 @@
 ---
 title: "Phân trang web & Nhiều trang web"
+description: "Cách B1.church ánh xạ subdomain và tên miền riêng tới đúng nhà thờ hoặc trang phụ, cùng lớp Caddy biên xử lý TLS cho tên miền riêng."
 ---
 
 # Phân trang web & Nhiều trang web
 
 <div class="article-intro">
 
-Một nhà thờ giờ đây có thể vận hành nhiều hơn một trang web riêng biệt, và mỗi trang có thể nằm trên tên miền phụ `*.b1.church` hoặc trên một tên miền tùy chỉnh hoàn toàn do nhà thờ sở hữu. Trang này mô tả lớp định tuyến nằm *bên dưới* trình xây dựng trang web: cách một yêu cầu đến được ánh xạ tới một nhà thờ **và** tới một trang web cụ thể, mô hình dữ liệu nhiều trang web (giá trị canh gác `siteId` giúp mọi trang web đã có từ trước vẫn hiển thị như cũ), và tầng tên miền tùy chỉnh — một proxy Caddy tự quản lý trên EC2, chịu trách nhiệm kết thúc TLS và viết lại từng tên miền của nhà thờ thành upstream `*.b1.church` tương ứng. Về những gì thực sự được hiển thị sau khi yêu cầu đã được phân giải — cây trang/phần/phần tử — xem [Trình xây dựng trang web](./website-builder).
+Một nhà thờ giờ đây có thể vận hành nhiều hơn một trang web riêng biệt, và mỗi trang có thể nằm trên tên miền phụ `*.b1.church` hoặc trên một tên miền tùy chỉnh hoàn toàn do nhà thờ sở hữu. Trang này mô tả lớp định tuyến nằm *bên dưới* trình xây dựng trang web: cách một yêu cầu đến được ánh xạ tới một nhà thờ **và** tới một trang web cụ thể, mô hình dữ liệu nhiều trang web (giá trị canh gác `siteId` giúp mọi trang web đã có từ trước vẫn hiển thị như cũ), và tầng tên miền tùy chỉnh — một proxy Caddy tự quản lý trên EC2, chịu trách nhiệm kết thúc TLS và viết lại từng tên miền của nhà thờ thành upstream `*.b1.church` tương ứng. Về những gì thực sự được hiển thị sau khi yêu cầu đã được phân giải — cây trang/phần/phần tử — xem [Trình xây dựng trang web](./website-builder.md).
 
 </div>
 
@@ -202,7 +203,7 @@ Các dòng `www.*` bị loại khỏi bản đồ; Caddy phục vụ `www.{host}
 
 ### Trạng thái hiện tại — cấu hình tĩnh, không có trạng thái runtime
 
-Máy (EC2 Windows đứng sau Elastic IP cố định) chạy Caddy từ một **Caddyfile tĩnh**: TLS theo yêu cầu với `ask` trỏ tới `/membership/domains/authorize`, cùng một tệp bản đồ host→upstream được làm mới mỗi 5 phút từ `/membership/domains/hostmap` bởi một tác vụ đã lên lịch kết thúc bằng `caddy reload` êm ái. Cấu hình tồn tại qua các lần khởi động lại mà không có trạng thái runtime — không cần thao tác khởi tạo lại — và một SNI không xác định bị **từ chối TLS** (không cấp chứng chỉ cho host mà `authorize` từ chối), trong khi một host đã được cấp quyền nhưng chưa có trong bản đồ (một tên miền mới hoàn toàn trong khoảng thời gian đồng bộ) nhận được lỗi 404 sạch. Tên miền mới có thể định tuyến trong vòng ~5 phút sau khi lưu; chứng chỉ của chúng được cấp ở lần truy cập đầu tiên. Thiết lập/build, vận hành và các lưu ý đã kiểm chứng thực tế: [Proxy tên miền tùy chỉnh Caddy](../deployment/caddy-proxy).
+Máy (EC2 Windows đứng sau Elastic IP cố định) chạy Caddy từ một **Caddyfile tĩnh**: TLS theo yêu cầu với `ask` trỏ tới `/membership/domains/authorize`, cùng một tệp bản đồ host→upstream được làm mới mỗi 5 phút từ `/membership/domains/hostmap` bởi một tác vụ đã lên lịch kết thúc bằng `caddy reload` êm ái. Cấu hình tồn tại qua các lần khởi động lại mà không có trạng thái runtime — không cần thao tác khởi tạo lại — và một SNI không xác định bị **từ chối TLS** (không cấp chứng chỉ cho host mà `authorize` từ chối), trong khi một host đã được cấp quyền nhưng chưa có trong bản đồ (một tên miền mới hoàn toàn trong khoảng thời gian đồng bộ) nhận được lỗi 404 sạch. Tên miền mới có thể định tuyến trong vòng ~5 phút sau khi lưu; chứng chỉ của chúng được cấp ở lần truy cập đầu tiên. Thiết lập/build, vận hành và các lưu ý đã kiểm chứng thực tế: [Proxy tên miền tùy chỉnh Caddy](../deployment/caddy-proxy.md).
 
 ### Đường đẩy runtime cũ — đường khôi phục, chờ xóa
 
@@ -210,8 +211,8 @@ Máy (EC2 Windows đứng sau Elastic IP cố định) chạy Caddy từ một *
 
 ## Trang liên quan
 
-- [Proxy tên miền tùy chỉnh Caddy](../deployment/caddy-proxy) — bản thân máy biên: thiết lập máy mới, dịch vụ WinSW, tác vụ đồng bộ bản đồ, và các lưu ý vận hành
-- [Trình xây dựng trang web](./website-builder) — cây trang/phần/phần tử, bộ hiển thị, blog, SEO và tạo bằng AI (những gì được hiển thị sau khi yêu cầu đã phân giải tới nhà thờ/trang web)
-- [Endpoint nội dung](../api/endpoints/content) — bề mặt REST cho trang, khối, liên kết và kiểu toàn cục, tất cả giờ đều nhận biết `?siteId=`
-- [B1App](../web-apps/b1-app) — ứng dụng Next.js chứa middleware và định tuyến `[sdSlug]`
-- [Triển khai ứng dụng web](../deployment/web-apps) — cách B1App được triển khai lên Vercel
+- [Proxy tên miền tùy chỉnh Caddy](../deployment/caddy-proxy.md) — bản thân máy biên: thiết lập máy mới, dịch vụ WinSW, tác vụ đồng bộ bản đồ, và các lưu ý vận hành
+- [Trình xây dựng trang web](./website-builder.md) — cây trang/phần/phần tử, bộ hiển thị, blog, SEO và tạo bằng AI (những gì được hiển thị sau khi yêu cầu đã phân giải tới nhà thờ/trang web)
+- [Endpoint nội dung](../api/endpoints/content.md) — bề mặt REST cho trang, khối, liên kết và kiểu toàn cục, tất cả giờ đều nhận biết `?siteId=`
+- [B1App](../web-apps/b1-app.md) — ứng dụng Next.js chứa middleware và định tuyến `[sdSlug]`
+- [Triển khai ứng dụng web](../deployment/web-apps.md) — cách B1App được triển khai lên Vercel

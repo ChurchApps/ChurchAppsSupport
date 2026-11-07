@@ -1,5 +1,6 @@
 ---
 title: "Įrašyti lankomumą"
+description: "Įrašykite grupės susitikimo lankomumą B1 Admin: sukurkite susitikimą, pažymėkite dalyvius, išsaugokite pastabas ir atspausdinkite sąrašą arba eksportuokite."
 ---
 
 # Įrašyti lankomumą

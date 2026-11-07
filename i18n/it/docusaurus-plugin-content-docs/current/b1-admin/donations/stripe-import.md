@@ -1,5 +1,6 @@
 ---
 title: "Importazione Stripe"
+description: "Importa in B1 Admin le donazioni da Stripe con anteprima prima del salvataggio: ogni addebito è segnato come nuovo, già importato o saltato."
 ---
 
 # Importazione Stripe

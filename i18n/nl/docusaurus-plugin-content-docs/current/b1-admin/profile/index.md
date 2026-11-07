@@ -1,5 +1,7 @@
 ---
-title: "Profiel"
+title: "Profielinstellingen en apparaten in B1 Admin"
+sidebar_label: "Profiel"
+description: "Werk je naam, e-mail, wachtwoord, tweefactorauthenticatie, thema en gekoppelde apparaten bij in je B1 Admin-profiel en keur ledenprofielwijzigingen goed."
 ---
 
 # Profiel

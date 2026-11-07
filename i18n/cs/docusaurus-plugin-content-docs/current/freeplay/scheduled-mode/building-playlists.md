@@ -1,5 +1,6 @@
 ---
 title: "Připojení poskytovatelů a vytváření playlistů"
+description: "Nastavte připojené poskytovatele obsahu ve FreePlay Admin, poté vytvořte, uspořádejte a zobrazte náhled playlistů pro naplánované TV obrazovky."
 ---
 
 # Připojení poskytovatelů a vytváření playlistů
@@ -107,6 +108,6 @@ Kliknutím na **Prezentovat** přehrajete playlist na celou obrazovku v prohlí�
 
 ## Související články
 
-- **[Plánování kalendáře](./scheduling-the-calendar)** - Zařaďte svůj playlist do kalendáře skupiny obrazovek
-- **[Správa obrazovek a skupin](./managing-screens)** - Nastavte playlist jako výchozí smyčku skupiny
-- **[Poskytovatelé obsahu](../content-providers/)** - Poskytovatelé, které můžete připojit přímo na televizi
+- **[Plánování kalendáře](./scheduling-the-calendar.md)** - Zařaďte svůj playlist do kalendáře skupiny obrazovek
+- **[Správa obrazovek a skupin](./managing-screens.md)** - Nastavte playlist jako výchozí smyčku skupiny
+- **[Poskytovatelé obsahu](../content-providers/index.md)** - Poskytovatelé, které můžete připojit přímo na televizi

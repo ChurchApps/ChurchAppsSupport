@@ -1,5 +1,6 @@
 ---
 title: "Tworzenie konta"
+description: "Zarejestruj konto ChurchApps w Lessons.church i połącz je z nowym lub istniejącym profilem kościoła, by zarządzać salami i harmonogramami."
 ---
 
 # Tworzenie konta

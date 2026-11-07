@@ -1,5 +1,6 @@
 ---
 title: Trosbekendelse
+description: "Hvad ChurchApps tror om Gud, Jesus, Helligånden, Skriften, frelsen og kirken: standarden for gennemgang af Lessons.church-curriculum."
 ---
 
 # Trosbekendelse

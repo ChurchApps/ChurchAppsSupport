@@ -1,5 +1,6 @@
 ---
 title: "ヘルパー"
+description: "開発者向けの @churchapps/helpers パッケージの解説。提供される機能、利用するアプリ、Packages ワークスペースでのローカルビルドの設定、changesets による公開の流れを扱います。"
 ---
 
 # ヘルパー
@@ -13,14 +14,14 @@ title: "ヘルパー"
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- **Node.js** と **Git** をインストールしてください -- [前提条件](../setup/prerequisites)を参照
+- **Node.js** と **Git** をインストールしてください -- [前提条件](../setup/prerequisites.md)を参照
 - [Packages ワークスペース](./index.md)のセットアップとリリースの流れに慣れておいてください
 
 </div>
 
 ## 利用先
 
-ChurchApps のすべての API（コアの Api、AskApi、LessonsApi）と、すべての Web フロントエンド（B1Admin、B1App、B1Transfer、LessonsApp）が、このパッケージに直接依存しています。フロントエンドでは、多くのエクスポート（`ApiHelper`、`DateHelper`、`UserHelper` などのインターフェース）も [`@churchapps/apphelper`](./app-helper) を通じて再エクスポートされて利用できます。他の共有パッケージはこれを peer dependency として宣言しているため、各アプリは必ず 1 つのコピーだけを読み込みます。
+ChurchApps のすべての API（コアの Api、AskApi、LessonsApi）と、すべての Web フロントエンド（B1Admin、B1App、B1Transfer、LessonsApp）が、このパッケージに直接依存しています。フロントエンドでは、多くのエクスポート（`ApiHelper`、`DateHelper`、`UserHelper` などのインターフェース）も [`@churchapps/apphelper`](./app-helper.md) を通じて再エクスポートされて利用できます。他の共有パッケージはこれを peer dependency として宣言しているため、各アプリは必ず 1 つのコピーだけを読み込みます。
 
 ## ローカル開発のセットアップ
 
@@ -55,7 +56,7 @@ ChurchApps のすべての API（コアの Api、AskApi、LessonsApi）と、す
 1. ワークスペースのルートで `yarn changeset` を実行し、`@churchapps/helpers` を選んで適切なバージョンアップの種類を指定します。生成された changeset ファイルは、変更と一緒にコミットしてください。
 2. リリースの準備ができたら、ルートで `yarn publish-all` を実行します。バージョンを上げ、CHANGELOG を書き、依存関係の順にビルドし、npm に公開します。
 
-新しい共有インターフェースは `helpers/src/interfaces/` に置き、パッケージのバレルファイルを通して再エクスポートします。ウェブサイトビルダーの要素タイプのカタログ（`ElementTypes.ts` -- 回答スキーマを持つ 35 種類）もここにあります。これは apphelper のレンダラー、B1Admin のエディターフォーム、AI 生成プロンプトに共通する契約です（[ウェブサイトビルダーのアーキテクチャ](../architecture/website-builder)を参照）。
+新しい共有インターフェースは `helpers/src/interfaces/` に置き、パッケージのバレルファイルを通して再エクスポートします。ウェブサイトビルダーの要素タイプのカタログ（`ElementTypes.ts` -- 回答スキーマを持つ 35 種類）もここにあります。これは apphelper のレンダラー、B1Admin のエディターフォーム、AI 生成プロンプトに共通する契約です（[ウェブサイトビルダーのアーキテクチャ](../architecture/website-builder.md)を参照）。
 
 :::warning
 このパッケージはすべての ChurchApps プロジェクトで使われているため、ここへの変更は広範囲に影響します。`helpers` をリリースすると、依存範囲を最新に保つために `apihelper` と `apphelper` も自動的にバージョンが上がります。公開する前に、少なくとも 1 つの利用先 API と 1 つの利用先 Web アプリで Yarn portal を使ってテストしてください。
@@ -63,6 +64,6 @@ ChurchApps のすべての API（コアの Api、AskApi、LessonsApi）と、す
 
 ## 関連記事
 
-- **[ApiHelper](./api-helper)** -- このパッケージに依存するサーバー側ユーティリティ
-- **[AppHelper](./app-helper)** -- このパッケージに依存する React コンポーネント
+- **[ApiHelper](./api-helper.md)** -- このパッケージに依存するサーバー側ユーティリティ
+- **[AppHelper](./app-helper.md)** -- このパッケージに依存する React コンポーネント
 - **[共有ライブラリの概要](./index.md)** -- ワークスペースのセットアップ、リリースの流れ、ローカルリンクの手順

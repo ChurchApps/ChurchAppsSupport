@@ -1,5 +1,7 @@
 ---
-title: "Mga Aralin"
+title: "Screen ng Lessons sa B1 Mobile (Retirado)"
+sidebar_label: "Mga Aralin"
+description: "Pahina ng Lessons (Deprecated): bakit inalis ang Lessons screen sa B1 Mobile, at saan makikita ngayon ang kurikulum (FreePlay o Lessons.church)."
 ---
 
 # Mga Aralin
@@ -13,7 +15,7 @@ Ang Lessons screen ay nagbibigay sa iyo ng access sa kurikulum at mga materyal s
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [I-install ang B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
 - Kailangang may na-configure na kurikulum ang iyong simbahan sa pamamagitan ng Lessons.church
 
 </div>
@@ -46,5 +48,5 @@ Ang Lessons screen ay lumalabas kapag na-configure ng iyong simbahan ang kurikul
 
 ## Mga Kaugnay na Artikulo
 
-- [Bibliya](./bible) -- Basahin ang Banal na Kasulatan kasabay ng iyong mga aralin
-- [Mga Sermon](./sermons) -- Manood ng mga sermon na umaakma sa iyong pag-aaral
+- [Bibliya](./bible.md) -- Basahin ang Banal na Kasulatan kasabay ng iyong mga aralin
+- [Mga Sermon](./sermons.md) -- Manood ng mga sermon na umaakma sa iyong pag-aaral

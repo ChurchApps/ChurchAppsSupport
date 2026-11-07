@@ -1,5 +1,6 @@
 ---
 title: "النشر"
+description: "اعرف مكان نشر كل مشروع من مشاريع ChurchApps، من واجهات AWS Lambda البرمجية وتطبيقات S3 الويب إلى بناءات Expo للهواتف وB1 Admin المستضاف ذاتياً على Railway أو Docker."
 ---
 
 # النشر
@@ -14,12 +15,12 @@ title: "النشر"
 
 | نوع المشروع | هدف النشر | الأدوات |
 |-------------|-------------------|---------|
-| [واجهات برمجة التطبيقات (APIs)](./apis) | AWS Lambda | Serverless Framework v3 (بيئة تشغيل Node.js 24.x) |
-| [تطبيقات الويب](./web-apps) | S3 + CloudFront | بناء ثابت، ومزامنة S3، وإبطال ذاكرة CloudFront المؤقتة |
-| [تطبيقات الجوال](./mobile) | متاجر التطبيقات | Expo EAS Build + تحديثات OTA |
-| [الاستضافة الذاتية (Railway)](./railway-template) | Railway | قالب بنقرة واحدة: MySQL + Api + B1Admin + B1App |
-| [الاستضافة الذاتية (Docker)](./docker) | أي مضيف Docker | مثبّت بسطر واحد؛ صور GHCR الجاهزة + Caddy، و`./deploy/b1` للترقية والنسخ الاحتياطي والاستعادة |
-| [وكيل Caddy للنطاقات المخصصة](./caddy-proxy) | خادم Windows EC2 (Elastic IP `3.23.251.61`) | ملف Caddyfile ثابت + خدمة WinSW + مزامنة الخرائط المجدولة |
+| [واجهات برمجة التطبيقات (APIs)](./apis.md) | AWS Lambda | Serverless Framework v3 (بيئة تشغيل Node.js 24.x) |
+| [تطبيقات الويب](./web-apps.md) | S3 + CloudFront | بناء ثابت، ومزامنة S3، وإبطال ذاكرة CloudFront المؤقتة |
+| [تطبيقات الجوال](./mobile.md) | متاجر التطبيقات | Expo EAS Build + تحديثات OTA |
+| [الاستضافة الذاتية (Railway)](./railway-template.md) | Railway | قالب بنقرة واحدة: MySQL + Api + B1Admin + B1App |
+| [الاستضافة الذاتية (Docker)](./docker.md) | أي مضيف Docker | مثبّت بسطر واحد؛ صور GHCR الجاهزة + Caddy، و`./deploy/b1` للترقية والنسخ الاحتياطي والاستعادة |
+| [وكيل Caddy للنطاقات المخصصة](./caddy-proxy.md) | خادم Windows EC2 (Elastic IP `3.23.251.61`) | ملف Caddyfile ثابت + خدمة WinSW + مزامنة الخرائط المجدولة |
 | FreeShow | تنزيل مباشر | Electron Builder (ملفات تنفيذية متعددة المنصات) |
 
 ## البيئات

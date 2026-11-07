@@ -1,5 +1,6 @@
 ---
 title: "Itseisännöinti Railwayssa"
+description: "Ota yksityinen ChurchApps-instanssi käyttöön Railwayssa noin 15 minuutissa ja määritä sen jälkeen sähköposti, mukautetut domainit, usean seurakunnan reititys, lahjoitukset ja tiedostotallennus B1 Adminille ja B1Appille."
 ---
 
 # Itseisännöinti Railwayssa
@@ -195,7 +196,7 @@ Nämä ottavat käyttöön tiettyjä ominaisuuksia, ja ne voi kaikki lisätä my
 | `VIMEO_TOKEN` | Vimeo-saarnatuki |
 | `API_BIBLE_KEY` | Raamatunjaehakut oppitunneissa ja sisällössä |
 | `YOUVERSION_API_KEY` | YouVersion-Raamattu-integraatio |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Selaimen push-ilmoitukset ([luo VAPID-avainpari](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Selaimen push-ilmoitukset ([luo VAPID-avainpari](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Valinnainen CRM-synkronointi uusille rekisteröitymisille |
 
 ## Päivittäminen
@@ -234,9 +235,9 @@ Jos kohtaat jotain, mitä ei ole tässä luettelossa, avaa ongelma-ilmoitus osoi
 
 ## Aiheeseen liittyvät artikkelit
 
-- **[Itseisännöinti Dockerilla](./docker)**: sama pino omalla laitteistolla tai VPS:llä
-- **[Alkuasetukset](../../getting-started/initial-setup)**: ensimmäiset vaiheet seurakunnan luomisen jälkeen
-- **[Verkkosivuston alkuasetukset](../../b1-admin/website/initial-setup)**: seurakunnan julkisen sivuston määrittäminen
-- **[Lahjoitusasetukset](../../b1-admin/donations/online-giving-setup)**: Stripen tai PayPalin liittäminen
-- **[Paikallinen API-asennus](../api/local-setup)**: pinon ajaminen paikallisesti kehitystä varten
-- **[API-julkaisu (AWS)](./apis)**: miten virallinen ChurchApps-SaaS on julkaistu
+- **[Itseisännöinti Dockerilla](./docker.md)**: sama pino omalla laitteistolla tai VPS:llä
+- **[Alkuasetukset](../../getting-started/initial-setup.md)**: ensimmäiset vaiheet seurakunnan luomisen jälkeen
+- **[Verkkosivuston alkuasetukset](../../b1-admin/website/initial-setup.md)**: seurakunnan julkisen sivuston määrittäminen
+- **[Lahjoitusasetukset](../../b1-admin/donations/online-giving-setup.md)**: Stripen tai PayPalin liittäminen
+- **[Paikallinen API-asennus](../api/local-setup.md)**: pinon ajaminen paikallisesti kehitystä varten
+- **[API-julkaisu (AWS)](./apis.md)**: miten virallinen ChurchApps-SaaS on julkaistu

@@ -1,5 +1,6 @@
 ---
 title: "Giving-Endpunkte"
+description: "Referenz der Giving-API: Spenden, Stapel, Gateways, Abos und Zahlungsmethoden mit Auth- und Rechteregeln für Integrationen mit B1 Admin."
 ---
 
 # Giving-Endpunkte
@@ -284,6 +285,6 @@ Erweitert `GenericCrudController` mit CRUD-Routen: `getById`, `getAll`, `post`, 
 
 ## Verwandte Seiten
 
-- [Membership-Endpunkte](./membership) — Personen, Gemeinden, Gruppen, Rollen und Berechtigungen
-- [Authentifizierung und Berechtigungen](./authentication) — Anmeldeablauf, JWT, OAuth, Berechtigungsmodell
-- [Modulstruktur](../module-structure) — Muster der Code-Organisation
+- [Membership-Endpunkte](./membership.md) — Personen, Gemeinden, Gruppen, Rollen und Berechtigungen
+- [Authentifizierung und Berechtigungen](./authentication.md) — Anmeldeablauf, JWT, OAuth, Berechtigungsmodell
+- [Modulstruktur](../module-structure.md) — Muster der Code-Organisation

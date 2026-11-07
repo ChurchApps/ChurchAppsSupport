@@ -1,5 +1,6 @@
 ---
 title: "Registrera gåvor"
+description: "Registrera kyrkans gåvor i B1 Admin genom att skapa en sats, ange gåvor en i taget, importera en CSV-fil eller logga en gåva från en givarprofil."
 ---
 
 # Registrera gåvor

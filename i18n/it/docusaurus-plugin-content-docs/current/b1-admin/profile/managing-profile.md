@@ -1,5 +1,6 @@
 ---
 title: "Gestire il tuo profilo"
+description: "Aggiorna l'account ChurchApps in B1 Admin: modifica nome, email e password, attiva l'accesso a due fattori, scegli un tema o elimina l'account."
 ---
 
 # Gestire il tuo profilo

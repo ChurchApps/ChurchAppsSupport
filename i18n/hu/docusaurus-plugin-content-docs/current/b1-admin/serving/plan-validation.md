@@ -1,5 +1,6 @@
 ---
 title: "Tervellenőrzés és értesítések"
+description: "Ellenőrizze a szolgálati terveket betöltetlen pozíciókra, ütemezési ütközésekre és nem elérhető önkéntesekre a B1 Adminban, majd egy kattintással értesítse csapatát."
 ---
 
 # Tervellenőrzés és önkéntesek értesítése

@@ -1,12 +1,13 @@
 ---
 title: "活动报名"
+description: "活动报名在 B1 Admin 和 B1App 中的工作方式：参与者类型、付费附加项、折扣码、通过奉献网关付款以及候补名单递补。"
 ---
 
 # 活动报名
 
 <div class="article-intro">
 
-原生活动报名功能位于内容模块中，并且自付费报名版本推出后，具备完整的商业功能：带价格的参与者类型、带价格的附加选项、折扣码、通过教会现有的奉献网关收款，以及由状态驱动的候补名单。资金通道有意复用奉献技术栈——报名控制器通过与[奉献](./giving)中描述的相同的 `GatewayService` / `IGatewayProvider` 抽象进行扣款，因此内容模块中不包含任何卡片数据或网关 SDK 相关的知识。本页梳理了数据模型、定价与容量规则，以及报名、付款和候补名单的流程。
+原生活动报名功能位于内容模块中，并且自付费报名版本推出后，具备完整的商业功能：带价格的参与者类型、带价格的附加选项、折扣码、通过教会现有的奉献网关收款，以及由状态驱动的候补名单。资金通道有意复用奉献技术栈——报名控制器通过与[奉献](./giving.md)中描述的相同的 `GatewayService` / `IGatewayProvider` 抽象进行扣款，因此内容模块中不包含任何卡片数据或网关 SDK 相关的知识。本页梳理了数据模型、定价与容量规则，以及报名、付款和候补名单的流程。
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  （Stripe / PayPal / Kingdom Funding）
 ```
 
-令牌化与奉献完全一致，发生在浏览器中（参见[奉献](./giving)）——向导复用了 apphelper 的支付 provider 注册表，因此已登录的会员可以使用已保存的银行卡付款，访客则令牌化一张新卡。控制器会镜像 `DonateController` 的服务商特殊处理（Kingdom Funding 的 `pm-{id}` 支付方式 ID，以及 Stripe 的 SCA `requires_action` 响应——这些响应会返回给客户端，且不记录付款）。扣款成功时，会写入一行 `registrationPayments`，增加 `amountPaid`，并确认报名。**退款功能尚未实现**——被取消的付费报名会保留其付款记录，任何退款都需在网关控制台中另行处理。
+令牌化与奉献完全一致，发生在浏览器中（参见[奉献](./giving.md)）——向导复用了 apphelper 的支付 provider 注册表，因此已登录的会员可以使用已保存的银行卡付款，访客则令牌化一张新卡。控制器会镜像 `DonateController` 的服务商特殊处理（Kingdom Funding 的 `pm-{id}` 支付方式 ID，以及 Stripe 的 SCA `requires_action` 响应——这些响应会返回给客户端，且不记录付款）。扣款成功时，会写入一行 `registrationPayments`，增加 `amountPaid`，并确认报名。**退款功能尚未实现**——被取消的付费报名会保留其付款记录，任何退款都需在网关控制台中另行处理。
 
 两个入口都走相同的代码路径：`register`（报名时付款）和 `pay`（支付余额 / 完成候补）。
 
@@ -147,7 +148,7 @@ UPDATE registrations SET status='pending', waitlistNotifiedDate=NOW()
 
 ## 相关页面
 
-- [奉献](./giving) —— 本功能复用的网关抽象、provider 注册表和令牌化模型
-- [内容端点](../api/endpoints/content) —— 内容模块的 REST 接口
-- [Webhooks](../api/webhooks) —— `registration.created` 事件
-- [模块结构](../api/module-structure) —— 内容模块在服务端的组织方式
+- [奉献](./giving.md) —— 本功能复用的网关抽象、provider 注册表和令牌化模型
+- [内容端点](../api/endpoints/content.md) —— 内容模块的 REST 接口
+- [Webhooks](../api/webhooks.md) —— `registration.created` 事件
+- [模块结构](../api/module-structure.md) —— 内容模块在服务端的组织方式

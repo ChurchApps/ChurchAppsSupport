@@ -1,5 +1,6 @@
 ---
 title: "Gérer les moyens de paiement"
+description: "Ajoutez, consultez et supprimez vos cartes enregistrées dans l’onglet Gérer de B1 Mobile, pour des dons répétés sans ressaisir les coordonnées bancaires."
 ---
 
 # Gérer les moyens de paiement
@@ -13,7 +14,7 @@ L'onglet **Gérer** dans la section des dons vous permet de consulter et de gér
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Installez B1 Mobile](../getting-started/installing) et [connectez-vous](../getting-started/logging-in) à votre compte
+- [Installez B1 Mobile](../getting-started/installing.md) et [connectez-vous](../getting-started/logging-in.md) à votre compte
 
 </div>
 
@@ -31,7 +32,7 @@ Pour ajouter une nouvelle carte :
 4. Saisissez les informations de votre carte. Les informations sont envoyées de manière sécurisée à **Stripe** pour traitement.
 5. Une fois enregistrée, la nouvelle carte apparaîtra dans votre liste de moyens de paiement.
 
-Votre carte enregistrée sera alors disponible comme option de paiement la prochaine fois que vous [effectuerez un don](./making-donations) depuis l'onglet **Donner**.
+Votre carte enregistrée sera alors disponible comme option de paiement la prochaine fois que vous [effectuerez un don](./making-donations.md) depuis l'onglet **Donner**.
 
 ## Supprimer un moyen de paiement
 
@@ -44,7 +45,7 @@ Si vous ne souhaitez plus conserver une carte enregistrée, vous pouvez la suppr
 La carte n'apparaîtra plus comme option de paiement lorsque vous effectuerez un don.
 
 :::info
-La suppression d'un moyen de paiement n'affecte pas les dons passés. Votre [historique des dons](./donation-history) reste inchangé.
+La suppression d'un moyen de paiement n'affecte pas les dons passés. Votre [historique des dons](./donation-history.md) reste inchangé.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Conservez au moins un moyen de paiement enregistré pour un don rapide. Ainsi, v
 
 ## Articles connexes
 
-- [Effectuer un don](./making-donations) -- Apprenez à faire un don avec un moyen de paiement enregistré
-- [Historique des dons](./donation-history) -- Consultez votre résumé de dons et vos dons passés
+- [Effectuer un don](./making-donations.md) -- Apprenez à faire un don avec un moyen de paiement enregistré
+- [Historique des dons](./donation-history.md) -- Consultez votre résumé de dons et vos dons passés

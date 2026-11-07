@@ -1,5 +1,6 @@
 ---
 title: "Pag-customize"
+description: "Itago ang sections, roles, o actions sa aralin ng Lessons.church at ayusin ang content, para sa isang classroom o lahat ng classroom ng simbahan."
 ---
 
 # Pag-customize

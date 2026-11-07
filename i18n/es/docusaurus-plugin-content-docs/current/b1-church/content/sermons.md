@@ -1,5 +1,7 @@
 ---
-title: "Sermones"
+title: "Cómo explorar sermones en tu sitio web de B1.church"
+sidebar_label: "Sermones"
+description: "Explora y mira sermones grabados de la biblioteca de tu iglesia en el sitio de B1.church, agrupados en series o listas de reproducción. No requiere inicio de sesión."
 ---
 
 # Sermones

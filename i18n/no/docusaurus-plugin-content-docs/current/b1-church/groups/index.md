@@ -1,5 +1,7 @@
 ---
-title: "Grupper"
+title: "Menighetsgrupper i B1.church-medlemsportalen"
+sidebar_label: "Grupper"
+description: "Finn og bli med i menighetsgrupper på B1.church, og bruk gruppesidene til å se møter, arrangementer, medlemmer og ressurser, og chatte med gruppen."
 ---
 
 # Grupper

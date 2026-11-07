@@ -1,5 +1,7 @@
 ---
-title: "Premiers pas"
+title: "Premiers pas avec le portail membre B1.church"
+sidebar_label: "Premiers pas"
+description: "Trouvez le site B1.church de votre église, créez votre compte membre et découvrez le portail : groupes, dons, enregistrement et plans."
 ---
 
 # Premiers pas avec B1.church

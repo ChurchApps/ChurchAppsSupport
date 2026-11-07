@@ -1,5 +1,6 @@
 ---
 title: "Journal d'audit et lots annulables"
+description: "Journal d’audit de l’API : chaque modification utilisateur par module, et annulation ligne par ligne des imports dans B1 Admin."
 ---
 
 # Journal d'audit et lots annulables
@@ -155,6 +156,6 @@ Les deux surfaces d'administration sont **en cours de réalisation** ; l'intenti
 
 ## Pages connexes
 
-- [Structure des modules](../api/module-structure) — comment un contrôleur hors-adhésion atteint les référentiels d'adhésion via `RepoManager`
-- [Dons](./giving) — les chemins d'écriture de dons qui sont audités comme `sensitive` même lorsqu'ils sont anonymes
-- [Points de terminaison d'adhésion](../api/endpoints/membership) — la surface REST qui porte `X-Batch-Id` et expose `/auditlogs` et `/batches`
+- [Structure des modules](../api/module-structure.md) — comment un contrôleur hors-adhésion atteint les référentiels d'adhésion via `RepoManager`
+- [Dons](./giving.md) — les chemins d'écriture de dons qui sont audités comme `sensitive` même lorsqu'ils sont anonymes
+- [Points de terminaison d'adhésion](../api/endpoints/membership.md) — la surface REST qui porte `X-Batch-Id` et expose `/auditlogs` et `/batches`

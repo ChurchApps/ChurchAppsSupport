@@ -1,5 +1,6 @@
 ---
 title: "Vejledning: Opsætning af online giving"
+description: "Opsæt online giving i B1 Admin ved at oprette donationsfonde, forbinde Stripe og tilføje en Donate-side til dit B1.church-website for medlemmer."
 ---
 
 # Opsætning af online giving
@@ -70,7 +71,7 @@ Brug Stripe's testilstand først, hvis du vil bekræfte uden rigtige gebyrer, sk
 Spred ordet, så medlemmer ved, at de kan give online.
 
 1. Del giving-URL'en via dit websted, e-mail-nyhedsbreve, bulletiner og sociale medier
-2. Medlemmer kan også give gennem [B1 Mobile-appen](../../b1-mobile/giving/) -- giving-funktionen er indbygget
+2. Medlemmer kan også give gennem [B1 Mobile-appen](../../b1-mobile/giving/index.md) -- giving-funktionen er indbygget
 
 :::info
 Medlemmer, der logger ind, kan gemme betalingsmetoder, opsætte tilbagevendende donationer og se deres donationshistorik. Anonym giving virker også -- ingen login påkrævet.

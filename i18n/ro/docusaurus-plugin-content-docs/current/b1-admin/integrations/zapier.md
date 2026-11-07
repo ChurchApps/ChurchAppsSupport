@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Conectați B1 Admin la Zapier pentru automatizări la persoane noi, donații și membri de grup și scrieți înapoi înregistrări în B1, fără cod."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Alegeți un declanșator, apoi adăugați unul sau mai mulți pași de acțiune.
 ### Publicați donațiile într-un canal Slack, cu un card mai bogat decât conectorul integrat
 
 - **Declanșator** — B1: Donație nouă
-- **Acțiune** — Slack: Send Channel Message. Compuneți orice layout (butoane, atașamente etc.) pe care nu îl poate realiza [conectorul Slack](./slack-discord) integrat.
+- **Acțiune** — Slack: Send Channel Message. Compuneți orice layout (butoane, atașamente etc.) pe care nu îl poate realiza [conectorul Slack](./slack-discord.md) integrat.
 
 ### Adăugați membrii noi ai grupurilor într-un Google Group
 
@@ -106,6 +107,6 @@ Aceasta înseamnă că declanșatorul se activează doar pentru evenimentele car
 
 ## Vezi și
 
-- [Make](./make) — același model, altă platformă
-- [Slack și Discord](./slack-discord) — notificări simple în chat, fără Zapier
+- [Make](./make.md) — același model, altă platformă
+- [Slack și Discord](./slack-discord.md) — notificări simple în chat, fără Zapier
 - [Webhooks (referință pentru dezvoltatori)](/docs/developer/api/webhooks)

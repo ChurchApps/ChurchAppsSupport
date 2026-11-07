@@ -1,5 +1,7 @@
 ---
-title: "Első lépések"
+title: "Első lépések a B1 Checkinnel"
+sidebar_label: "Első lépések"
+description: "Állítsa be a B1 Checkin kioszk alkalmazást Android-táblagépen: telepítés, bejelentkezés, egyháza kiválasztása és címkenyomtató opcionális csatlakoztatása."
 ---
 
 # Első lépések a B1 Church Checkin használatával
@@ -27,9 +29,9 @@ A B1 Church Checkin beállítása néhány percet vesz igénybe. Ez a szakasz v�
 
 Az alkalmazás első indításakor három lépésen fogsz végigmenni:
 
-1. **[Bejelentkezés](./logging-in)** -- Add meg az e-mail-címedet és jelszavadat a hitelesítéshez.
-2. **[Válaszd ki a gyülekezetedet](./logging-in)** -- Ha a fiókod több gyülekezethez is hozzá van rendelve, válaszd ki, hogy melyiket szolgálja ki ez a kioszk.
-3. **[Nyomtató beállítása](./printer-setup)** -- Állíts be egy hálózati nyomtatót a címkenyomtatáshoz, vagy hagyd ki ezt a lépést, ha nincs szükséged címkékre.
+1. **[Bejelentkezés](./logging-in.md)** -- Add meg az e-mail-címedet és jelszavadat a hitelesítéshez.
+2. **[Válaszd ki a gyülekezetedet](./logging-in.md)** -- Ha a fiókod több gyülekezethez is hozzá van rendelve, válaszd ki, hogy melyiket szolgálja ki ez a kioszk.
+3. **[Nyomtató beállítása](./printer-setup.md)** -- Állíts be egy hálózati nyomtatót a címkenyomtatáshoz, vagy hagyd ki ezt a lépést, ha nincs szükséged címkékre.
 
 Az első bejelentkezés után az alkalmazás elmenti a hitelesítő adataidat és a gyülekezet-kiválasztásodat. A későbbi indításoknál automatikusan közvetlenül a szolgálatok képernyőjére ugrik.
 
@@ -43,6 +45,6 @@ Mielőtt beállítanád a kioszkot, győződj meg róla, hogy a gyülekezeted ad
 
 ## Következő lépések
 
-- [Bejelentkezés](./logging-in) -- Részletes útmutató a bejelentkezéshez és a gyülekezet kiválasztásához.
-- [Nyomtató beállítása](./printer-setup) -- Hogyan találd meg, válaszd ki és teszteld a címkenyomtatódat.
-- [Bejelentkezési munkafolyamat](../check-in/) -- Ismerd meg a teljes bejelentkezési folyamatot, miután a kioszk beállítása kész.
+- [Bejelentkezés](./logging-in.md) -- Részletes útmutató a bejelentkezéshez és a gyülekezet kiválasztásához.
+- [Nyomtató beállítása](./printer-setup.md) -- Hogyan találd meg, válaszd ki és teszteld a címkenyomtatódat.
+- [Bejelentkezési munkafolyamat](../check-in/index.md) -- Ismerd meg a teljes bejelentkezési folyamatot, miután a kioszk beállítása kész.

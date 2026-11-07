@@ -1,5 +1,6 @@
 ---
 title: "Webhooky"
+description: "Nastavte webhooky v reálném čase z B1 Admin: registrujte endpointy, vyberte události, ověřujte podpisy HMAC, řešte opakování a znovu doručte chybná data."
 ---
 
 # Webhooky
@@ -33,7 +34,7 @@ Přejděte na **Settings → Developer → Webhooks → New Webhook**. Zadejte n
 
 ### Přes API
 
-Všechny endpointy jsou pod základní cestou modulu Membership `/membership/webhooks` a vyžadují buď JWT správce církve s oprávněním `Settings / Edit`, **nebo [API klíč](./api-keys) vytvořený s oprávněním `settings:write`**. Stejné trasy přijímají obojí. Díky tomu mohou Zapier a Make registrovat webhooky jménem církve, když se zap nebo scénář zapne.
+Všechny endpointy jsou pod základní cestou modulu Membership `/membership/webhooks` a vyžadují buď JWT správce církve s oprávněním `Settings / Edit`, **nebo [API klíč](./api-keys.md) vytvořený s oprávněním `settings:write`**. Stejné trasy přijímají obojí. Díky tomu mohou Zapier a Make registrovat webhooky jménem církve, když se zap nebo scénář zapne.
 
 ```http
 POST /membership/webhooks

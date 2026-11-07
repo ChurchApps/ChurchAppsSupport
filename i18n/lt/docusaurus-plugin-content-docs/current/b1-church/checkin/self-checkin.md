@@ -1,5 +1,7 @@
 ---
-title: "Savitarnos registracija"
+title: "Savitarnos registracija B1.church narių portale"
+sidebar_label: "Savitarnos registracija"
+description: "Registruokite save ir savo namų ūkį į pamaldas per B1.church narių portalą, keliais greitais žingsniais pasirinkdami pamaldų laikus ir grupes."
 ---
 
 # Savitarnos registracija
@@ -45,7 +47,7 @@ Kai pasirinksite grupes visiems dalyvaujantiems, bakstelėkite mygtuką puslapio
 
 Pamatysite patvirtinimą, kad registracija baigta ir jūsų dalyvavimas išsaugotas. Po akimirkos puslapis grįš į pamaldų sąrašą, paruoštas kitai registracijai.
 
-Jei jūsų bažnyčia spausdina vardo ženkliukus registracijos punkte, vietoj to pamatysite **Esate užregistruoti!** su QR kodu ir saugumo kodu. Parodykite kodą registracijos punkte, kad atspausdintumėte ženkliukus, tada bakstelėkite **Atlikta**. B1 Checkin terminale bakstelėkite **Nuskaityti kodą** ir laikykite QR kodą prieš kamerą -- žr. [Etikečių spausdinimas registracijai telefonu](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Jei jūsų bažnyčia spausdina vardo ženkliukus registracijos punkte, vietoj to pamatysite **Esate užregistruoti!** su QR kodu ir saugumo kodu. Parodykite kodą registracijos punkte, kad atspausdintumėte ženkliukus, tada bakstelėkite **Atlikta**. B1 Checkin terminale bakstelėkite **Nuskaityti kodą** ir laikykite QR kodą prieš kamerą -- žr. [Etikečių spausdinimas registracijai telefonu](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Jei jūsų namų ūkis jau užregistruotas pasirinktoms pamaldoms, šalia antraštės **Kas čia** pasirodo nuoroda **Rodyti registracijos kodą**. Bakstelėkite ją, kad vėl atsidarytų QR kodas ir saugumo kodas -- pavyzdžiui, jei uždarėte puslapį prieš pasiekdami registracijos punktą.
 

@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "API anahtarıyla ChatGPT'yi B1 verilerinize bağlayın; B1 Admin'de üyeler, bağışlar ve katılım hakkında sade bir dille soru sorun."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Bağlantı kurun ChatGPT'yi kilisenizin B1 verilerine ve sade bir dille sorular 
 </div>
 
 :::tip Önerilen: önce Claude'u deneyin — ücretsiz
-[Claude](./claude), B1'e **ücretsiz planında** bağlanır ve 3 dakikadan kısa sürede kurulur — yalnızca B1'i bir bağlayıcı olarak ekleyin ve B1 hesabınızla oturum açın. Anahtar gerekmez. Kilisenizin bir şeye para ödemeden önce B1 ile yapay zekâyı denemesinin en kolay yolu budur.
+[Claude](./claude.md), B1'e **ücretsiz planında** bağlanır ve 3 dakikadan kısa sürede kurulur — yalnızca B1'i bir bağlayıcı olarak ekleyin ve B1 hesabınızla oturum açın. Anahtar gerekmez. Kilisenizin bir şeye para ödemeden önce B1 ile yapay zekâyı denemesinin en kolay yolu budur.
 :::
 
 ## Kurulum
@@ -254,5 +255,5 @@ Bağlantıya sahip herkes doğal dille sorular sorabilir. Anahtarın kapsamları
 
 - [API Anahtarları](/docs/developer/api/api-keys) — tam kapsam başvurusu
 - [MCP Sunucusu (geliştirici başvurusu)](/docs/developer/api/mcp) — protokol ayrıntıları ve araç şemaları
-- [Claude](./claude) — Anthropic'in modelleri için aynı fikir
+- [Claude](./claude.md) — Anthropic'in modelleri için aynı fikir
 - [REST API başvurusu](/docs/developer/api/endpoints) — Özel GPT eyleminin çağırabileceği her uç nokta

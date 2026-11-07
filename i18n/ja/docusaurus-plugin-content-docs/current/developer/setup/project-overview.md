@@ -1,5 +1,6 @@
 ---
 title: "プロジェクト概要"
+description: "ChurchApps のすべてのリポジトリをカテゴリ別に整理します。フレームワーク、開発用ポート、データベースを示し、共有の @churchapps パッケージがそれらをどうつないでいるかを開発環境セットアップのドキュメントで説明します。"
 ---
 
 # プロジェクト概要
@@ -13,7 +14,7 @@ ChurchAppsは約20の独立したリポジトリで構成されており、そ�
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- 作業したいプロジェクトのカテゴリに必要な[前提条件](./prerequisites)をインストールしてください
+- 作業したいプロジェクトのカテゴリに必要な[前提条件](./prerequisites.md)をインストールしてください
 
 </div>
 
@@ -72,7 +73,7 @@ ChurchAppsは約20の独立したリポジトリで構成されており、そ�
 | `@churchapps/integration-sdk` | B1.church 連携ツールキット：Webhook、REST クライアント、OAuth | 外部連携の開発者 |
 | `@churchapps/texting` | SMS プロバイダーの抽象化 | Api |
 
-ワークスペースのセットアップとリリースの流れについては、[共有ライブラリ](../shared-libraries/)を参照してください。
+ワークスペースのセットアップとリリースの流れについては、[共有ライブラリ](../shared-libraries/index.md)を参照してください。
 
 ## プロジェクト間の関係
 
@@ -90,5 +91,5 @@ FreeShow     ──────┘       @churchapps/apihelper ◄────�
 
 ## 次のステップ
 
-- **[環境変数](./environment-variables)** — API に接続するために `.env` ファイルを設定します
-- **[API のローカルセットアップ](../api/local-setup)** — バックエンド API をローカルで設定します
+- **[環境変数](./environment-variables.md)** — API に接続するために `.env` ファイルを設定します
+- **[API のローカルセットアップ](../api/local-setup.md)** — バックエンド API をローカルで設定します

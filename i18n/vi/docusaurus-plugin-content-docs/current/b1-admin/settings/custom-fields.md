@@ -1,5 +1,6 @@
 ---
 title: "Trường tùy chỉnh"
+description: "Định nghĩa trường tùy chỉnh trong B1 Admin để theo dõi thông tin bổ sung của người, như ngày hết hạn kiểm tra lý lịch hoặc cỡ áo, rồi tìm kiếm và lọc theo chúng."
 ---
 
 # Trường tùy chỉnh

@@ -1,5 +1,6 @@
 ---
 title: "Gerenciando Métodos de Pagamento"
+description: "Adicione, revise e remova cartões salvos na aba Gerenciar da seção de doações do B1 Mobile, para doações recorrentes sem digitar os dados do cartão."
 ---
 
 # Gerenciando Métodos de Pagamento
@@ -13,7 +14,7 @@ A aba **Gerenciar** na seção de doações permite visualizar e administrar seu
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
+- [Instale o B1 Mobile](../getting-started/installing.md) e [faça login](../getting-started/logging-in.md) na sua conta
 
 </div>
 
@@ -31,7 +32,7 @@ Para adicionar um novo cartão:
 4. Digite os dados do seu cartão. As informações são enviadas com segurança para a **Stripe** para processamento.
 5. Após salvar, o novo cartão aparecerá na sua lista de métodos de pagamento.
 
-Seu cartão salvo ficará então disponível como opção de pagamento na próxima vez que você [fizer uma doação](./making-donations) pela aba **Doar**.
+Seu cartão salvo ficará então disponível como opção de pagamento na próxima vez que você [fizer uma doação](./making-donations.md) pela aba **Doar**.
 
 ## Removendo um Método de Pagamento
 
@@ -44,7 +45,7 @@ Se você não quiser mais um cartão salvo, pode removê-lo na aba **Gerenciar**
 O cartão não aparecerá mais como opção de pagamento ao fazer uma doação.
 
 :::info
-Remover um método de pagamento não afeta doações anteriores. Seu [histórico de doações](./donation-history) permanece inalterado.
+Remover um método de pagamento não afeta doações anteriores. Seu [histórico de doações](./donation-history.md) permanece inalterado.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Mantenha pelo menos um método de pagamento salvo para doações rápidas. Assim
 
 ## Artigos Relacionados
 
-- [Fazendo uma Doação](./making-donations) -- Saiba como fazer uma contribuição usando um método de pagamento salvo
-- [Histórico de Doações](./donation-history) -- Veja seu resumo de doações e doações anteriores
+- [Fazendo uma Doação](./making-donations.md) -- Saiba como fazer uma contribuição usando um método de pagamento salvo
+- [Histórico de Doações](./donation-history.md) -- Veja seu resumo de doações e doações anteriores

@@ -1,5 +1,7 @@
 ---
-title: "Programarea lecțiilor"
+title: "Programarea lecțiilor de clasă în portal"
+sidebar_label: "Programarea lecțiilor"
+description: "Programați lecții Lessons.church pe calendarul clasei în portalul B1 Admin: alegeți programul, studiul, lecția și locația pentru fiecare dată."
 ---
 
 # Programarea lecțiilor

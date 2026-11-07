@@ -1,5 +1,6 @@
 ---
 title: "Menyelesaikan Check-in"
+description: "Selesaikan check-in keluarga di kiosk B1 Checkin, mencakup batas ruangan, pencetakan label, kode keamanan penjemputan, dan langkah aplikasi berikutnya."
 ---
 
 # Menyelesaikan Check-in
@@ -13,9 +14,9 @@ Setelah Anda meninjau rumah tangga dan membuat penugasan grup yang diperlukan, A
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- [Tinjau rumah tangga Anda](./household-review) di layar tinjauan rumah tangga
-- [Tetapkan grup](./group-assignment) untuk anggota keluarga yang perlu check-in ke kelas atau program tertentu
-- Opsional, [tambahkan tamu](./adding-guests) yang berkunjung bersama keluarga Anda
+- [Tinjau rumah tangga Anda](./household-review.md) di layar tinjauan rumah tangga
+- [Tetapkan grup](./group-assignment.md) untuk anggota keluarga yang perlu check-in ke kelas atau program tertentu
+- Opsional, [tambahkan tamu](./adding-guests.md) yang berkunjung bersama keluarga Anda
 
 </div>
 
@@ -28,10 +29,10 @@ Hanya itu yang diperlukan. Kehadiran keluarga Anda sudah tercatat.
 
 ## Ruangan Penuh dan Rasio Relawan
 
-Jika gereja Anda telah mengonfigurasi [batas keamanan](../../b1-admin/attendance/checkin-safety) pada ruangannya, server akan memeriksanya sebelum menyimpan:
+Jika gereja Anda telah mengonfigurasi [batas keamanan](../../b1-admin/attendance/checkin-safety.md) pada ruangannya, server akan memeriksanya sebelum menyimpan:
 
 - Jika ruangan yang dipilih **penuh atau ditutup**, check-in tidak akan berhasil dan aplikasi akan menyebutkan nama ruangan tersebut agar Anda dapat memilih ruangan lain.
-- Jika waktu layanan memiliki [jadwal check-in](../../b1-admin/attendance/setup#setting-a-check-in-schedule) dan jendela check-in-nya tidak sedang terbuka, check-in ke ruangan-ruangan pada waktu layanan tersebut juga ditolak. Layar **Belum bisa check-in** menampilkan ruangan tersebut dengan alasan "check-in belum dibuka saat ini"; ketuk **Ubah Ruangan** untuk memilih waktu layanan atau grup lain. (Waktu layanan yang sudah ditutup ditampilkan sebagai **Ditutup** di [layar rumah tangga](./household-review) dan tidak dapat dipilih, jadi Anda biasanya hanya akan melihat ini jika jendela tertutup di tengah proses check-in.)
+- Jika waktu layanan memiliki [jadwal check-in](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) dan jendela check-in-nya tidak sedang terbuka, check-in ke ruangan-ruangan pada waktu layanan tersebut juga ditolak. Layar **Belum bisa check-in** menampilkan ruangan tersebut dengan alasan "check-in belum dibuka saat ini"; ketuk **Ubah Ruangan** untuk memilih waktu layanan atau grup lain. (Waktu layanan yang sudah ditutup ditampilkan sebagai **Ditutup** di [layar rumah tangga](./household-review.md) dan tidak dapat dipilih, jadi Anda biasanya hanya akan melihat ini jika jendela tertutup di tengah proses check-in.)
 - Rumah tangga yang sudah check-in untuk waktu layanan sebelumnya dapat kembali nanti dan menambahkan waktu layanan yang sedang terbuka, bahkan setelah jendela sebelumnya tertutup. Riwayat check-in yang sudah ada tetap disimpan dan tidak menyebabkan check-in baru ditolak.
 - Jika sebuah ruangan anak-anak **kekurangan relawan** sesuai rasionya, aplikasi akan menampilkan peringatan yang dapat dikonfirmasi oleh staf untuk melanjutkan, atau langsung memblokir check-in -- tergantung pada cara gereja Anda mengonfigurasi penegakan rasio.
 
@@ -49,7 +50,7 @@ Kode keamanan yang sama muncul pada label nama anak dan slip penjemputan orang t
 Kode keamanan dibuat baru untuk setiap check-in dan hanya menggunakan konsonan dan angka (huruf vokal dikecualikan agar tidak membentuk kata yang tidak pantas).
 
 :::warning
-Jika label tidak tercetak, buka Pengaturan Admin dengan mengetuk **logo gereja** tujuh kali, lalu ketuk **Ubah Printer** untuk memverifikasi koneksi printer. Lihat [Pengaturan Printer](../getting-started/printer-setup) untuk langkah pemecahan masalah.
+Jika label tidak tercetak, buka Pengaturan Admin dengan mengetuk **logo gereja** tujuh kali, lalu ketuk **Ubah Printer** untuk memverifikasi koneksi printer. Lihat [Pengaturan Printer](../getting-started/printer-setup.md) untuk langkah pemecahan masalah.
 :::
 
 ## Yang Terjadi Setelah Check-in

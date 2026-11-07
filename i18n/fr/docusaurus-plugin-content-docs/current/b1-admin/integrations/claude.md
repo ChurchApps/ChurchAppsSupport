@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Reliez B1 Admin à Claude pour poser des questions en langage courant sur la présence, les dons et les groupes, avec une option de connexion et une clé à permissions limitées."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ Il s'agit de la même surface `/membership/people`, `/giving/donations`, `/atten
 
 - [Clés API](/docs/developer/api/api-keys) -- référence complète des portées
 - [Serveur MCP (référence développeur)](/docs/developer/api/mcp) -- détails du protocole et schémas des outils
-- [ChatGPT](./chatgpt) -- la même idée, pour les modèles d'OpenAI
+- [ChatGPT](./chatgpt.md) -- la même idée, pour les modèles d'OpenAI

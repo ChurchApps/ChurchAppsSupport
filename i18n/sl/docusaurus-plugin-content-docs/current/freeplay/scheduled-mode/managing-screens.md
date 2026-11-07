@@ -1,5 +1,6 @@
 ---
 title: "Upravljanje zaslonov in skupin"
+description: "Preveri, kateri FreePlay TV-ji so na spletu in pripravljeni za nedeljo, nato uredi nastavitve zaslonov in skupine, ki delijo en koledar v FreePlay Admin."
 ---
 
 # Upravljanje zaslonov in skupin
@@ -14,7 +15,7 @@ Stran **Zasloni** v FreePlay Admin prikazuje vse televizorje, povezane z vašo c
 <h4>Preden začnete</h4>
 
 - Prijavite se v FreePlay Admin na [admin.freeplay.church](https://admin.freeplay.church)
-- [Seznanite vsaj en zaslon](./pairing-a-screen)
+- [Seznanite vsaj en zaslon](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Uporabite **Predstavi**, da koledar zaslona predvajate v brskalniku, ali **Uredi
 
 Kliknite oznako zaslona, da odprete njegovo stran. Na levi strani so na voljo:
 
-- **Predstavi v brskalniku** - Predvajajte koledar tega zaslona čez celoten zaslon v brskalniku, tako kot bi izgledal na televizorju. Glejte [Predstavljanje iz brskalnika](./scheduled-playback#presenting-from-a-browser)
+- **Predstavi v brskalniku** - Predvajajte koledar tega zaslona čez celoten zaslon v brskalniku, tako kot bi izgledal na televizorju. Glejte [Predstavljanje iz brskalnika](./scheduled-playback.md#presenting-from-a-browser)
 - **Uredi** - Spremenite oznako, skupino ali način
 - **Več** > **Prekini seznanitev** - Odklopite televizor. Ta se vrne na prikaz kode za seznanitev
 
@@ -93,6 +94,6 @@ Brisanje skupine izbriše tudi njen urnik. Zasloni v tej skupini ugasnejo, dokle
 
 ## Sorodni članki
 
-- **[Seznanjanje zaslona](./pairing-a-screen)** - Dodajte nov televizor
-- **[Načrtovanje koledarja](./scheduling-the-calendar)** - Nastavite, kaj vsaka skupina predvaja, in njeno privzeto zanko
-- **[Načrtovano predvajanje na televizorju](./scheduled-playback)** - Kaj pomeni datum „Pripravljen do“ na samem televizorju
+- **[Seznanjanje zaslona](./pairing-a-screen.md)** - Dodajte nov televizor
+- **[Načrtovanje koledarja](./scheduling-the-calendar.md)** - Nastavite, kaj vsaka skupina predvaja, in njeno privzeto zanko
+- **[Načrtovano predvajanje na televizorju](./scheduled-playback.md)** - Kaj pomeni datum „Pripravljen do“ na samem televizorju

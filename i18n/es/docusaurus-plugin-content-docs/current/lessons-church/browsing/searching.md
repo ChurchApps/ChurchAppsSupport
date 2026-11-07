@@ -1,5 +1,6 @@
 ---
 title: "Búsqueda"
+description: "Busca programas, estudios y lecciones en Lessons.church por palabra clave o historia bíblica, y cómo se ordenan y etiquetan los resultados."
 ---
 
 # Búsqueda

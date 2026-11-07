@@ -6,7 +6,7 @@ description: "Juodraštis: bažnyčiai priklausančios B1 Twilio sąrankos, vie�
 # Bažnyčiai priklausančio Twilio įdiegimo juodraštis
 
 :::caution Siūlomai integracijai skirtas juodraštis
-Tai siūlomas darbo eigos aprašas. Šiuo metu B1 turi pagrindinį **Twilio** pasirinkimą skyriuje **Nustatymai > Teksto žinutės** (Account SID, Auth Token, From Number ir gaunamų STOP žinučių webhook). Žr. [Bažnyčios nustatymai: Teksto žinutės](../../b1-admin/settings/church-settings.md#texting). Toliau aprašyti papildomi B1 sąrankos valdikliai, sutikimo susiejimas ir patikros žingsniai yra būsimos versijos reikalavimai, o ne nurodymai ieškoti esamų nustatymų. Apie apimtį ir priklausomybes skaitykite [techninį pasiūlymą](./twilio-byok-proposal). Twilio šaltiniai buvo patikrinti 2026 m. spalio 22 d.; prieš pateikiant kampaniją patikrinkite dabartinius reikalavimus.
+Tai siūlomas darbo eigos aprašas. Šiuo metu B1 turi pagrindinį **Twilio** pasirinkimą skyriuje **Nustatymai > Teksto žinutės** (Account SID, Auth Token, From Number ir gaunamų STOP žinučių webhook). Žr. [Bažnyčios nustatymai: Teksto žinutės](../../b1-admin/settings/church-settings.md#texting). Toliau aprašyti papildomi B1 sąrankos valdikliai, sutikimo susiejimas ir patikros žingsniai yra būsimos versijos reikalavimai, o ne nurodymai ieškoti esamų nustatymų. Apie apimtį ir priklausomybes skaitykite [techninį pasiūlymą](./twilio-byok-proposal.md). Twilio šaltiniai buvo patikrinti 2026 m. spalio 22 d.; prieš pateikiant kampaniją patikrinkite dabartinius reikalavimus.
 :::
 
 ## Rekomenduojamas modelis
@@ -34,7 +34,7 @@ Siūlomai SMS registracijos formai:
 | Esamos automatizacijos | Neregistruokite kiekvieno formos pateikėjo ar grupės nario į žinučių darbo eigą. Tai programai leidžia tik siūlomas patikrintas sutikimo susiejimas |
 | Padėkos žinutė | Patvirtinkite, kad forma gauta, neteigdami, jog registracija į SMS įvyko, kai langelis nepažymėtas arba patvirtinimas ar peržiūra dar nebaigta |
 
-Esamas žymimasis klausimas gali iliustruoti formą, tačiau B1 vis tiek reikia sutikimų įrašų ir siuntimo vartų. Dabartinis bendras atvaizdavimo įrankis aprašymus rodo kaip paprastą tekstą; vien Markdown ar URL įrašymas ten nepakankamai užtikrina, kad politikos nuorodos bus paspaudžiamos. Įgyvendinime turi būti pateiktas prieinamas sutikimo valdiklis su tikromis nuorodomis. Žr. [B1 formų kūrimas](../../b1-admin/forms/creating-forms) ir [techninį pasiūlymą](./twilio-byok-proposal#consent-and-suppression-are-required-release-work).
+Esamas žymimasis klausimas gali iliustruoti formą, tačiau B1 vis tiek reikia sutikimų įrašų ir siuntimo vartų. Dabartinis bendras atvaizdavimo įrankis aprašymus rodo kaip paprastą tekstą; vien Markdown ar URL įrašymas ten nepakankamai užtikrina, kad politikos nuorodos bus paspaudžiamos. Įgyvendinime turi būti pateiktas prieinamas sutikimo valdiklis su tikromis nuorodomis. Žr. [B1 formų kūrimas](../../b1-admin/forms/creating-forms.md) ir [techninį pasiūlymą](./twilio-byok-proposal.md#consent-and-suppression-are-required-release-work).
 
 Twilio reikalauja savanoriško, patikrinamo sutikimo. Nejunkite SMS su privalomomis narystės sąlygomis, el. pašto / telefono leidimais, aukojimo sutikimu ar renginio registracija. Mobilusis numeris lankytojo kortelėje savaime nėra SMS sutikimas. Žr. Twilio [savanoriško sutikimo reikalavimus](https://www.twilio.com/docs/api/errors/30923) ir [kampanijos rekomendacijas](https://help.twilio.com/hc/en-us/articles/26149060902555-A2P-10DLC-Campaign-Registration-Recommendations).
 

@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Parcourir le blog B1.church et les flux RSS"
+sidebar_label: "Blog"
+description: "Parcourez et filtrez le blog B1.church de votre église par catégorie ou étiquette, consultez les anciens articles ou suivez les nouveaux via les flux RSS."
 ---
 
 # Blog

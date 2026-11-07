@@ -1,5 +1,7 @@
 ---
-title: "Pagsisimula"
+title: "Pagsisimula sa ChurchApps: Unang 15 Minuto"
+sidebar_label: "Pagsisimula"
+description: "Mag-set up ng ChurchApps account sa ilang hakbang: detalye ng simbahan, pag-import ng tao sa B1 Admin, pag-imbita ng team, at unang proyekto."
 ---
 
 # Pagsisimula

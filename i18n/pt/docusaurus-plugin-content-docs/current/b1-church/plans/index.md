@@ -1,5 +1,6 @@
 ---
 title: "Planos"
+description: "Veja em quais escalas de culto você está designado no B1.church, confira suas funções e datas, e aceite ou recuse convites pelo portal de membros."
 ---
 
 # Planos

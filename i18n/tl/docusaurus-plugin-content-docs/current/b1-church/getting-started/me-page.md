@@ -1,5 +1,6 @@
 ---
 title: "Ang Me Page"
+description: "Nasa iisang screen sa Me page ng B1App ang paparating na serbisyo, event, registration, household, grupo, giving, form, attendance, at inbox."
 ---
 
 # Ang Me Page
@@ -31,7 +32,7 @@ Kung naka-sign out ka, makikita mo ang "Sign in to see your week" at ang button 
 Inililista ng seksyong **Upcoming** ang susunod mong tatlong item ayon sa petsa, na may type badge ang bawat isa. Kung may higit pa, i-tap ang **All upcoming** para makita ang buong listahan, at **Back to Me** para bumalik.
 
 - **Serving** -- Ang iyong mga posisyon sa serving sa mga paparating na service plan, kasama ang petsa at start time ng serbisyong pinaglilingkuran mo (ang oras na kailangan ang iyong team kapag maraming service time ang plan, o petsa lang kung walang oras ang plan). I-tap ang isa para buksan ang plan.
-- **Registration** -- Mga event na [pinag-registeran mo](../events/registering). I-tap para pumunta sa iyong [registrations](../events/my-registrations).
+- **Registration** -- Mga event na [pinag-registeran mo](../events/registering.md). I-tap para pumunta sa iyong [registrations](../events/my-registrations.md).
 - **Event** -- Mga paparating na event mula sa mga grupong kabilang ka. I-tap ang isa para buksan ang mga event ng grupo.
 
 Kung may larawan ang isang event o registration, may maliit na thumbnail nito sa simula ng row.
@@ -66,7 +67,7 @@ Ipinapakita ng seksyong **Requests & registrations** kung ilan ang event registr
 
 Kung may mga silid o resource na maaaring i-book ang iyong simbahan, may dalawa pang link na lumalabas:
 
-- **Request an Event** -- Humiling na mag-reserve ng event kasama ang mga silid at kagamitang kailangan mo. Tingnan ang [Requesting Events & Rooms](../events/requesting-events).
+- **Request an Event** -- Humiling na mag-reserve ng event kasama ang mga silid at kagamitang kailangan mo. Tingnan ang [Requesting Events & Rooms](../events/requesting-events.md).
 - **My Requests** -- Subaybayan ang status ng iyong mga request at kanselahin ang mga nakabinbin pa.
 
 Kung hindi nag-set up ang iyong simbahan ng mga silid o resource, nakatago ang mga link na ito.
@@ -77,8 +78,8 @@ Ipinapakita ng seksyong **Inbox** ang iyong dalawang pinakabagong notification p
 
 ## Mga Kaugnay na Artikulo
 
-- [Navigating B1App](./navigating) -- Ang layout ng member portal
-- [Requesting Events & Rooms](../events/requesting-events) -- Mag-submit at subaybayan ang mga request sa silid/resource
-- [My Registrations](../events/my-registrations) -- Pamahalaan ang iyong event registration
-- [Volunteer Signup](../serving/volunteer-signup) -- Paano gumagana ang mga assignment sa serving
-- [Self Check-In](../checkin/self-checkin) -- Paano naitatala ang iyong attendance
+- [Navigating B1App](./navigating.md) -- Ang layout ng member portal
+- [Requesting Events & Rooms](../events/requesting-events.md) -- Mag-submit at subaybayan ang mga request sa silid/resource
+- [My Registrations](../events/my-registrations.md) -- Pamahalaan ang iyong event registration
+- [Volunteer Signup](../serving/volunteer-signup.md) -- Paano gumagana ang mga assignment sa serving
+- [Self Check-In](../checkin/self-checkin.md) -- Paano naitatala ang iyong attendance

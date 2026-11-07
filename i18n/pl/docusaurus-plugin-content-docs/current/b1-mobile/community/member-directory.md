@@ -1,5 +1,7 @@
 ---
-title: "Lista członków"
+title: "Katalog członków w aplikacji B1 Mobile"
+sidebar_label: "Lista członków"
+description: "Znajdź osoby w swoim kościele w katalogu członków B1 Mobile: przeglądaj alfabetycznie, szukaj po imieniu i otwieraj profile oraz powiązania rodzinne."
 ---
 
 # Lista członków
@@ -13,7 +15,7 @@ Lista członków w aplikacji B1 Mobile pozwala przeglądać i wyszukiwać osoby 
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) do swojego konta
+- [Zainstaluj B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) do swojego konta
 
 </div>
 
@@ -51,5 +53,5 @@ Informacje widoczne w każdym profilu zależą od ustawień prywatności i katal
 
 ## Powiązane artykuły
 
-- [Wiadomości](./messaging) -- Wyślij prywatną wiadomość do osoby znalezionej na liście członków
+- [Wiadomości](./messaging.md) -- Wyślij prywatną wiadomość do osoby znalezionej na liście członków
 - [Ustawienia prywatności](../profile/privacy-settings.md) -- Kontroluj, co inni mogą zobaczyć o Tobie na liście członków

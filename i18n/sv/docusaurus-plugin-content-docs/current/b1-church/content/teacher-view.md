@@ -1,5 +1,6 @@
 ---
 title: "Lärarvy för lektioner"
+description: "Öppna en lektion i helskärmsvyn Teacher View från en plan på B1.church, hoppa mellan avsnitt, spela upp media och ladda ner klassresurser."
 ---
 
 # Lärarvy för lektioner

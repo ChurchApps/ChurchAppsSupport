@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "Stel B1 Admin lokaal in: kloon het React/Vite-dashboard, configureer API-endpoints in .env en start de dev-server voor kerkbeheer."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin is het kerkbeheerbereidingsdashboard -- een React single-page applicatio
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Installeer **Node.js 22+** en **Git** -- zie [Prerequisites](../setup/prerequisites)
-- Configureer uw API-doel (staging of lokaal) -- zie [Environment Variables](../setup/environment-variables)
+- Installeer **Node.js 22+** en **Git** -- zie [Prerequisites](../setup/prerequisites.md)
+- Configureer uw API-doel (staging of lokaal) -- zie [Environment Variables](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Productie-builds worden naar **S3 + CloudFront** geïmplementeerd:
 3. CloudFront-invalidatie wordt geactiveerd om de nieuwe versie te serveren
 
 :::tip
-Zie de [Web App Deployment](../deployment/web-apps)-gids voor gedetailleerde implementatie-instructies.
+Zie de [Web App Deployment](../deployment/web-apps.md)-gids voor gedetailleerde implementatie-instructies.
 :::

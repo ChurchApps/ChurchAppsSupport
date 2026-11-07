@@ -1,5 +1,6 @@
 ---
 title: "Choisir un appareil"
+description: "Choisir l'appareil adapté aux téléviseurs de classe FreePlay : des clés Fire TV et boîtiers Onn jusqu'à Apple TV, et ceux à éviter."
 ---
 
 # Choisir un appareil pour FreePlay

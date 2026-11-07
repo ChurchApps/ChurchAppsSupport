@@ -1,5 +1,6 @@
 ---
 title: "Desainer Label Check-In"
+description: "Sesuaikan templat label nama dan slip penjemputan yang dicetak saat check-in di B1 Admin, termasuk kolom, posisi, serta kondisi ulang tahun atau catatan."
 ---
 
 # Desainer Label Check-In
@@ -13,8 +14,8 @@ Desainer Label memungkinkan Anda membuat dan menyesuaikan templat tanda nama dan
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Siapkan [Kehadiran](setup) dan konfigurasikan setidaknya satu waktu layanan dengan check-in diaktifkan
-- Siapkan [Check-In](check-in) agar label dapat dicetak
+- Siapkan [Kehadiran](./setup.md) dan konfigurasikan setidaknya satu waktu layanan dengan check-in diaktifkan
+- Siapkan [Check-In](./check-in.md) agar label dapat dicetak
 - Anda memerlukan akses administratif ke bagian Kehadiran
 
 </div>
@@ -85,6 +86,6 @@ Lakukan percetakan uji setelah mengedit templat untuk memastikan tata letaknya s
 
 ## Artikel Terkait
 
-- [Pengaturan Check-In](setup) — konfigurasikan layanan dan grup untuk check-in
-- [Menyelesaikan Check-In](check-in) — alur check-in untuk keluarga
-- [Memulai B1 Checkin](../../b1-checkin/getting-started/) — aplikasi kiosk Checkin
+- [Pengaturan Check-In](./setup.md) — konfigurasikan layanan dan grup untuk check-in
+- [Menyelesaikan Check-In](./check-in.md) — alur check-in untuk keluarga
+- [Memulai B1 Checkin](../../b1-checkin/getting-started/index.md) — aplikasi kiosk Checkin

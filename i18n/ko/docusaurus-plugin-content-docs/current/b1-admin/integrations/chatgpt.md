@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "API 키로 ChatGPT를 교회의 B1 데이터에 연결해, B1 Admin의 사람, 헌금, 출석에 관해 평이한 말로 질문할 수 있습니다."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ ChatGPT를 교회의 B1 데이터에 연결하고 일상 언어로 질문하세�
 </div>
 
 :::tip 권장: 먼저 Claude를 사용해 보세요 — 무료입니다
-[Claude](./claude)는 **무료 요금제**로 B1에 연결되며, 3분 이내에 설정할 수 있습니다. B1을 커넥터로 추가하고 B1 계정으로 로그인하기만 하면 됩니다. 키는 필요하지 않습니다. 교회가 비용을 내기 전에 B1과 함께 AI를 시험해 보기에 가장 쉬운 방법입니다.
+[Claude](./claude.md)는 **무료 요금제**로 B1에 연결되며, 3분 이내에 설정할 수 있습니다. B1을 커넥터로 추가하고 B1 계정으로 로그인하기만 하면 됩니다. 키는 필요하지 않습니다. 교회가 비용을 내기 전에 B1과 함께 AI를 시험해 보기에 가장 쉬운 방법입니다.
 :::
 
 ## 설정하기
@@ -254,5 +255,5 @@ B1 연결은 무료입니다. ChatGPT는 연결하려면 유료 요금제(Plus �
 
 - [API Keys(API 키)](/docs/developer/api/api-keys) — 전체 범위 참고 자료
 - [MCP Server(개발자 참고 자료)](/docs/developer/api/mcp) — 프로토콜 세부 정보와 도구 스키마
-- [Claude](./claude) — 같은 개념을 Anthropic 모델에 적용
+- [Claude](./claude.md) — 같은 개념을 Anthropic 모델에 적용
 - [REST API 참고 자료](/docs/developer/api/endpoints) — 사용자 지정 GPT 액션이 호출할 수 있는 모든 엔드포인트

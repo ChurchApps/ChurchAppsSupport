@@ -1,5 +1,6 @@
 ---
 title: "Suchen"
+description: "Programme, Studien und Lektionen per Stichwort oder Bibelgeschichte finden und verstehen, wie Suchergebnisse sortiert und beschriftet werden."
 ---
 
 # Suchen

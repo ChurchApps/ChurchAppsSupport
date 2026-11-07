@@ -1,5 +1,6 @@
 ---
 title: "기기 페어링하기"
+description: "B1 Admin의 플랜 유형에 FreePlay TV를 페어링합니다. 화면에 표시된 네 글자 코드를 입력한 뒤, 플랜 모드 재생을 위해 플랜의 미디어를 다운로드합니다."
 ---
 
 # 기기 페어링하기
@@ -13,7 +14,7 @@ title: "기기 페어링하기"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- FreePlay를 설치하고 실행하세요. [시작하기](../getting-started/)를 참조하세요
+- FreePlay를 설치하고 실행하세요. [시작하기](../getting-started/index.md)를 참조하세요
 - 페어링을 완료하려면 컴퓨터나 휴대폰에서 **B1 Admin**에 접근할 수 있어야 합니다
 
 </div>
@@ -25,7 +26,7 @@ title: "기기 페어링하기"
 3. FreePlay에 큰 글씨로 네 글자 페어링 코드가 QR 코드 옆에 표시됩니다.
 4. 코드 아래에 깜박이는 **Waiting for confirmation**(확인 대기 중) 표시가 나타나며, FreePlay가 페어링을 마치기를 기다리고 있다는 뜻입니다.
 
-같은 코드는 FreePlay Admin의 [예약 모드](../scheduled-mode/)와 B1 Admin의 계획 모드 모두에 사용할 수 있습니다. 화면의 QR 코드와 **freeplay.church/pair** 주소는 FreePlay Admin을 엽니다. 계획 모드에서는 이를 무시하고 아래 설명대로 B1 Admin에 코드를 입력하세요.
+같은 코드는 FreePlay Admin의 [예약 모드](../scheduled-mode/index.md)와 B1 Admin의 계획 모드 모두에 사용할 수 있습니다. 화면의 QR 코드와 **freeplay.church/pair** 주소는 FreePlay Admin을 엽니다. 계획 모드에서는 이를 무시하고 아래 설명대로 B1 Admin에 코드를 입력하세요.
 
 ## B1 Admin에 코드 입력하기
 
@@ -61,5 +62,5 @@ FreePlay가 페어링 코드를 만들지 못하면(예: 네트워크 문제 때
 ## 관련 문서
 
 - **[계획 모드 개요](./index.md)** - 계획 모드가 예약 모드와 어떻게 다른지
-- **[화면 페어링](../scheduled-mode/pairing-a-screen)** - 같은 TV를 FreePlay Admin의 캘린더와 대신 페어링하기
-- **[콘텐츠 재생](../content-providers/playing-content)** - 계획 재생을 위한 플레이어 컨트롤
+- **[화면 페어링](../scheduled-mode/pairing-a-screen.md)** - 같은 TV를 FreePlay Admin의 캘린더와 대신 페어링하기
+- **[콘텐츠 재생](../content-providers/playing-content.md)** - 계획 재생을 위한 플레이어 컨트롤

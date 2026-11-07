@@ -1,5 +1,6 @@
 ---
 title: "Harici Sağlayıcılar"
+description: "Üçüncü taraf müfredat sağlayıcılarının Açık Ders Biçimi ile içeriklerini Lessons.church'e nasıl eklediğini ve portaldan birini nasıl bağlayacağınızı öğrenin."
 ---
 
 # Harici Sağlayıcılar

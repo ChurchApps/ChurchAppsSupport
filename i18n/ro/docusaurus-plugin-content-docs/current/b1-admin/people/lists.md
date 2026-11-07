@@ -1,5 +1,6 @@
 ---
 title: "Liste salvate"
+description: "Salvați o căutare People din B1 Admin ca listă cu nume și reîncărcați-o dintr-un clic. Listele rămân active, iar membrii noi potriviți apar automat."
 ---
 
 # Liste salvate

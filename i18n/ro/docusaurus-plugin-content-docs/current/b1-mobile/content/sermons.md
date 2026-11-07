@@ -1,5 +1,7 @@
 ---
-title: "Predici"
+title: "Urmărirea predicilor în B1 Mobile"
+sidebar_label: "Predici"
+description: "Răsfoiți, căutați și urmăriți predici și serii înregistrate în aplicația B1 Mobile, inclusiv cum să prindeți numărătoarea inversă a transmisiunii live."
 ---
 
 # Predici
@@ -13,7 +15,7 @@ Ecranul Predici îți permite să răsfoiești și să urmărești predicile în
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalează B1 Mobile](../getting-started/installing) și [autentifică-te](../getting-started/logging-in) în contul tău
+- [Instalează B1 Mobile](../getting-started/installing.md) și [autentifică-te](../getting-started/logging-in.md) în contul tău
 - Biserica ta trebuie să aibă conținut de predici configurat în portalul de administrare
 
 </div>
@@ -29,7 +31,7 @@ Ecranul Predici este organizat într-o vizualizare cu file, cu două secțiuni p
 
 ## Numărătoarea inversă a transmisiunii live
 
-Când o [transmisiune live](./live-streaming) urmează în următoarele 24 de ore, pe ecranul Predici apare un cronometru cu numărătoare inversă. Acesta te anunță când va fi transmis următorul serviciu, ca să poți planifica să urmărești în direct.
+Când o [transmisiune live](./live-streaming.md) urmează în următoarele 24 de ore, pe ecranul Predici apare un cronometru cu numărătoare inversă. Acesta te anunță când va fi transmis următorul serviciu, ca să poți planifica să urmărești în direct.
 
 ## Urmărirea unei predici
 
@@ -51,7 +53,7 @@ Fiecare înregistrare de predică poate afișa:
 - **Miniatură** -- O imagine de previzualizare a predicii
 
 :::tip
-Dacă vezi o numărătoare inversă pe ecranul Predici, atinge-o pentru a merge direct la [transmisiunea live](./live-streaming) când aceasta începe.
+Dacă vezi o numărătoare inversă pe ecranul Predici, atinge-o pentru a merge direct la [transmisiunea live](./live-streaming.md) când aceasta începe.
 :::
 
 ## Disponibilitate

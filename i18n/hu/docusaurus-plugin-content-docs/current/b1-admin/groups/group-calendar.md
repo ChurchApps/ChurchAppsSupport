@@ -1,5 +1,6 @@
 ---
 title: "Csoportnaptár"
+description: "Találkozók és ismétlődő események tervezése csoportnaptárban a B1 Admin-ban és B1.church-ön: tömeges ütemezés, RSVP és naptár-feliratkozás."
 ---
 
 # Csoportnaptár

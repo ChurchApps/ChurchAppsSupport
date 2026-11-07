@@ -1,5 +1,6 @@
 ---
 title: "Näytön yhdistäminen"
+description: "Yhdistä FreePlay-TV näyttöryhmän kalenteriin FreePlay Adminissa TV:n nelikirjaimisella koodilla, jotta se toistaa aikataulutettua sisältöä itsenäisesti."
 ---
 
 # Näytön yhdistäminen
@@ -13,9 +14,9 @@ Jotta TV voidaan lisätä kalenteriin, yhdistä se **FreePlay Adminiin**. TV nä
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Asenna ja käynnistä FreePlay TV:llä. Katso [Aloittaminen](../getting-started/)
+- Asenna ja käynnistä FreePlay TV:llä. Katso [Aloittaminen](../getting-started/index.md)
 - Ota seurakuntasi ChurchApps-kirjautuminen käyttöön, jotta voit kirjautua FreePlay Adminiin
-- Halutessasi, [luo soittolista](./building-playlists) ja [ajoita se](./scheduling-the-calendar) ensin, jotta TV:llä on heti jotain toistettavaa
+- Halutessasi, [luo soittolista](./building-playlists.md) ja [ajoita se](./scheduling-the-calendar.md) ensin, jotta TV:llä on heti jotain toistettavaa
 
 </div>
 
@@ -38,7 +39,7 @@ Koodi on voimassa 15 minuuttia, ja sen alla oleva laskuri näyttää jäljellä 
 5. Jätä kohdassa **Tila** valituksi **Ajoitettu**. TV toistaa sisältöä ryhmän kalenterin mukaan itsenäisesti.
 6. Napsauta **Yhdistä**.
 
-TV näyttää **Yhdistetty!** ja sen jälkeen **Ladataan aikataulua...**. Se lataa ajoitetun sisällön ja alkaa toistaa. Katso [Ajoitettu toisto TV:llä](./scheduled-playback).
+TV näyttää **Yhdistetty!** ja sen jälkeen **Ladataan aikataulua...**. Se lataa ajoitetun sisällön ja alkaa toistaa. Katso [Ajoitettu toisto TV:llä](./scheduled-playback.md).
 
 :::info
 Jos FreePlay Admin ilmoittaa **Tätä koodia ei tunnistettu TV:ksi**, tarkista koodi näytöltä. Jos se on vanhentunut, käytä TV:n nyt näyttämää uutta koodia.
@@ -51,11 +52,11 @@ Kohdan **Tila** asetuksessa on kaksi vaihtoehtoa:
 - **Ajoitettu** - Toistaa ryhmän kalenterin mukaan itsenäisesti. Kenenkään ei tarvitse painaa Käynnistä.
 - **Manuaalinen** - Joku valitsee sisällön kaukosäätimellä. Manuaalinen näyttö näkyy edelleen **Näytöt**-listallasi, mutta se ei seuraa kalenteria, joten kenttä **Ryhmä** on poistettu käytöstä.
 
-Voit vaihtaa näytön tilan myöhemmin valitsemalla **Muokkaa** [Näytöt-sivulta](./managing-screens).
+Voit vaihtaa näytön tilan myöhemmin valitsemalla **Muokkaa** [Näytöt-sivulta](./managing-screens.md).
 
 ## Yhdistäminen palvelusuunnitelmaan
 
-Koodi näytöltä **Yhdistä tämä näyttö** toimii myös B1 Adminissa. Jos syötät sen siellä ja valitset suunnitelmatyypin kohdasta **Näytä suunnitelmat**, TV seuraa sitä suunnitelmatyyppiä kalenterin sijaan [Suunnitelmatilassa](../plan-mode/). Katso [Laitteen yhdistäminen](../plan-mode/device-pairing).
+Koodi näytöltä **Yhdistä tämä näyttö** toimii myös B1 Adminissa. Jos syötät sen siellä ja valitset suunnitelmatyypin kohdasta **Näytä suunnitelmat**, TV seuraa sitä suunnitelmatyyppiä kalenterin sijaan [Suunnitelmatilassa](../plan-mode/index.md). Katso [Laitteen yhdistäminen](../plan-mode/device-pairing.md).
 
 ## Yhdistyksen muuttaminen tai purkaminen TV:ltä
 
@@ -79,6 +80,6 @@ TV palaa näyttämään yhdistämiskoodia. Yhdistä se uudelleen, kun haluat sen
 
 ## Aiheeseen liittyvät artikkelit
 
-- **[Näyttöjen ja ryhmien hallinta](./managing-screens)** - Nimeä näyttö uudelleen, siirrä se toiseen ryhmään tai tarkista sen lataukset
-- **[Kalenterin ajoittaminen](./scheduling-the-calendar)** - Päätä, mitä ryhmän näytöt toistavat
-- **[Yhdistämistilan valinta](../getting-started/pairing-modes)** - Vertaa Ajoitettua tilaa Suunnitelmatilaan ja sisällön tarjoajien selaamiseen itse
+- **[Näyttöjen ja ryhmien hallinta](./managing-screens.md)** - Nimeä näyttö uudelleen, siirrä se toiseen ryhmään tai tarkista sen lataukset
+- **[Kalenterin ajoittaminen](./scheduling-the-calendar.md)** - Päätä, mitä ryhmän näytöt toistavat
+- **[Yhdistämistilan valinta](../getting-started/pairing-modes.md)** - Vertaa Ajoitettua tilaa Suunnitelmatilaan ja sisällön tarjoajien selaamiseen itse

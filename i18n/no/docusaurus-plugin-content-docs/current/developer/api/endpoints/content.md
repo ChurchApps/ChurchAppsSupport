@@ -1,5 +1,6 @@
 ---
 title: "Innhold-endepunkter"
+description: "Endepunktreferanse for ChurchApps Content API: nettsidesider, blogginnlegg, omdirigeringer, preken, arrangementer, filer, bibelsøk og sanger i B1 Admin."
 ---
 
 # Innhold-endepunkter
@@ -133,7 +134,7 @@ Basissti: `/content/pageHistory`
 
 Basissti: `/content/posts`
 
-Blogginnlegg er frittstående rader: `title`, `slug` (unik per kirke), `excerpt`, `content` (markdown-innhold), `authorId`, `photoUrl`, `publishDate`, `category` og `tags`. Et innlegg publiseres når `publishDate` er satt og ligger i fortiden. Leseendepunkter beriker hvert innlegg med `authorName` hentet fra `authorId`. Se [Arkitektur for nettsidebyggeren](../../architecture/website-builder#blog).
+Blogginnlegg er frittstående rader: `title`, `slug` (unik per kirke), `excerpt`, `content` (markdown-innhold), `authorId`, `photoUrl`, `publishDate`, `category` og `tags`. Et innlegg publiseres når `publishDate` er satt og ligger i fortiden. Leseendepunkter beriker hvert innlegg med `authorName` hentet fra `authorId`. Se [Arkitektur for nettsidebyggeren](../../architecture/website-builder.md#blog).
 
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
@@ -458,8 +459,8 @@ Basissti: `/content/support`
 
 ## Relaterte sider
 
-- [Arkitektur for nettsidebyggeren](../../architecture/website-builder) -- Hvordan sider, seksjoner, elementer, innlegg og omdirigeringer henger sammen på tvers av applikasjonene
-- [Medlemskap-endepunkter](./membership) -- Personer, kirker, grupper, roller, tillatelser
-- [Oppmøte-endepunkter](./attendance) -- Sporing av tjenester og besøk
-- [Autentisering og tillatelser](./authentication) -- Innloggingsflyt, JWT, tillatelsesmodell
-- [Modulstruktur](../module-structure) -- Kodeorganiseringsmønstre
+- [Arkitektur for nettsidebyggeren](../../architecture/website-builder.md) -- Hvordan sider, seksjoner, elementer, innlegg og omdirigeringer henger sammen på tvers av applikasjonene
+- [Medlemskap-endepunkter](./membership.md) -- Personer, kirker, grupper, roller, tillatelser
+- [Oppmøte-endepunkter](./attendance.md) -- Sporing av tjenester og besøk
+- [Autentisering og tillatelser](./authentication.md) -- Innloggingsflyt, JWT, tillatelsesmodell
+- [Modulstruktur](../module-structure.md) -- Kodeorganiseringsmønstre

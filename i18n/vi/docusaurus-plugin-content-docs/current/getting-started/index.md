@@ -1,5 +1,7 @@
 ---
-title: "Bắt đầu"
+title: "Bắt đầu với ChurchApps: 15 phút đầu tiên"
+sidebar_label: "Bắt đầu"
+description: "Thiết lập tài khoản ChurchApps mới trong vài bước: thêm thông tin nhà thờ, nhập người vào B1 Admin, mời nhóm và chọn dự án đầu tiên."
 ---
 
 # Bắt đầu

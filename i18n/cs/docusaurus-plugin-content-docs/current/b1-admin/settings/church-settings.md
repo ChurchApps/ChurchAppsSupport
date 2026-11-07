@@ -1,5 +1,6 @@
 ---
 title: "Nastavení církve"
+description: "Nastavte název, adresu, subdoménu, časové pásmo, formát regionu, poskytovatele SMS a úložiště souborů vaší církve na stránce Church Settings v B1 Admin."
 ---
 
 # Nastavení církve

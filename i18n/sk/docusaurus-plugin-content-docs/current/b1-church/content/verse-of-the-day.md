@@ -1,5 +1,7 @@
 ---
-title: "Verš dňa"
+title: "Verš dňa na webe a portáli B1.church"
+sidebar_label: "Verš dňa"
+description: "Prezerajte obrázok denného biblického verša a minulé verše, zdieľajte ich alebo stiahnite z webu B1.church či portálu na ľubovoľnom zariadení."
 ---
 
 # Verš dňa

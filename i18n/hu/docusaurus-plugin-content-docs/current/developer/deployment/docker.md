@@ -1,12 +1,13 @@
 ---
 title: "Önálló üzemeltetés Dockerrel"
+description: "Telepíts saját gépedre privát B1 Admin, tagi portál, API és MySQL-veremet Dockerrel, majd frissítsd és készíts róla biztonsági mentést a b1 paranccsal."
 ---
 
 # Önálló üzemeltetés Dockerrel
 
 <div class="article-intro">
 
-Futtassa saját, privát példányát a B1 Adminból, a B1 tagi portálból és weboldalból, az API-ból és egy MySQL-adatbázisból bármely Dockert futtató gépen: otthoni szerveren, kis VPS-en vagy helyi szervergépen. Egy paranccsal telepítheti, egy paranccsal frissítheti, és minden frissítés előtt készül biztonsági mentés. Ha egyáltalán nem szeretne szervert kezelni, a felügyelt alternatívát a [Önálló üzemeltetés Railway-en](./railway-template) cikkben találja.
+Futtassa saját, privát példányát a B1 Adminból, a B1 tagi portálból és weboldalból, az API-ból és egy MySQL-adatbázisból bármely Dockert futtató gépen: otthoni szerveren, kis VPS-en vagy helyi szervergépen. Egy paranccsal telepítheti, egy paranccsal frissítheti, és minden frissítés előtt készül biztonsági mentés. Ha egyáltalán nem szeretne szervert kezelni, a felügyelt alternatívát a [Önálló üzemeltetés Railway-en](./railway-template.md) cikkben találja.
 
 </div>
 
@@ -94,10 +95,10 @@ Ha `localhostra` telepített, és később nyilvánossá szeretné tenni: mutass
 
 Ezek pontosan úgy működnek, mint a Railway-en: ugyanazok a környezeti változók, de a `.env` fájlban állítja be őket a Railway irányítópult helyett:
 
-- **[E-mail / SMTP](./railway-template#1-email-highly-recommended)** – részletes útmutatók a Resend, a Brevo és a Gmail szolgáltatókhoz
-- **[Több webhely](./railway-template#3-multi-site-multiple-churches-on-one-instance)** – példányonként korlátlan számú gyülekezet. A `/` a `DEFAULT_CHURCH_SLUG` azonosítójú gyülekezetet szolgálja ki (az első gyülekezet azonosítója `church`); a további domainek a géphez mutassanak, és a B1Adminban a **Beállítások → Domainek** menüpontban rendelje őket hozzá
-- **[Online adakozás](./railway-template#4-online-giving-stripe--paypal)** – gyülekezetenként, az adminisztrációs felületen állítható be
-- **[Opcionális integrációk](./railway-template#6-optional-feature-integrations)** – `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[E-mail / SMTP](./railway-template.md#1-email-highly-recommended)** – részletes útmutatók a Resend, a Brevo és a Gmail szolgáltatókhoz
+- **[Több webhely](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** – példányonként korlátlan számú gyülekezet. A `/` a `DEFAULT_CHURCH_SLUG` azonosítójú gyülekezetet szolgálja ki (az első gyülekezet azonosítója `church`); a további domainek a géphez mutassanak, és a B1Adminban a **Beállítások → Domainek** menüpontban rendelje őket hozzá
+- **[Online adakozás](./railway-template.md#4-online-giving-stripe--paypal)** – gyülekezetenként, az adminisztrációs felületen állítható be
+- **[Opcionális integrációk](./railway-template.md#6-optional-feature-integrations)** – `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Push-értesítések](#push-notifications)** – `WEB_PUSH_*`; a telepítő ezeket üresen hagyja, ezért a push-értesítések addig ki vannak kapcsolva, amíg hozzá nem adja őket
 
 A gyülekezet által küldött meghívók és egyéb e-mailek egy saját üzemeltetésű példányon automatikusan engedélyezve vannak. (A felügyelt szolgáltatás ezeket kézi felülvizsgálathoz köti, hogy védje a küldő hírnevét.)
@@ -148,7 +149,7 @@ A `./deploy/b1 backup` parancs az első kettőről, valamint a `.env` fájlról 
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-Nagy médiakönyvtárak esetén a fájltárolót S3-ra is átállíthatja: állítsa be a `FILE_STORE=S3` értéket, valamint a [Railway útmutató Fájltárolás szakaszában](./railway-template#5-file-storage) leírt `AWS_*` változókat. Az adatbázis-mentések nem tartalmazzák az S3-objektumokat; ehhez a bucketen kapcsolja be a verziókezelést.
+Nagy médiakönyvtárak esetén a fájltárolót S3-ra is átállíthatja: állítsa be a `FILE_STORE=S3` értéket, valamint a [Railway útmutató Fájltárolás szakaszában](./railway-template.md#5-file-storage) leírt `AWS_*` változókat. Az adatbázis-mentések nem tartalmazzák az S3-objektumokat; ehhez a bucketen kapcsolja be a verziókezelést.
 
 ## Frissítés
 
@@ -187,6 +188,6 @@ Még mindig elakadt? Nyisson egy hibajegyet itt: [github.com/ChurchApps/ChurchAp
 
 ## Kapcsolódó cikkek
 
-- **[Önálló üzemeltetés Railway-en](./railway-template)** – felügyelt tárhely-alternatíva, valamint a közös telepítés utáni konfigurációs útmutatók
-- **[Kezdeti beállítás](../../getting-started/initial-setup)** – az első lépések a gyülekezet létrehozása után
-- **[Helyi API-beállítás](../api/local-setup)** – a teljes környezet közvetlen futtatása fejlesztéshez
+- **[Önálló üzemeltetés Railway-en](./railway-template.md)** – felügyelt tárhely-alternatíva, valamint a közös telepítés utáni konfigurációs útmutatók
+- **[Kezdeti beállítás](../../getting-started/initial-setup.md)** – az első lépések a gyülekezet létrehozása után
+- **[Helyi API-beállítás](../api/local-setup.md)** – a teljes környezet közvetlen futtatása fejlesztéshez

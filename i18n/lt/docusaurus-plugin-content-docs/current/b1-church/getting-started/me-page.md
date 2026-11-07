@@ -1,5 +1,6 @@
 ---
 title: "Mano puslapis"
+description: "Me puslapis B1App narių portale: artėjančios tarnystės, renginiai ir registracijos, namų ūkis, grupės, aukos, formos, lankomumas ir gautieji."
 ---
 
 # Mano puslapis
@@ -31,7 +32,7 @@ Jei esate atsijungę, vietoj to matysite tekstą „Prisijunkite, kad pamatytum�
 Skyriuje **Artimiausi** pateikiami jūsų trys artimiausi elementai datos tvarka, kiekvienas su tipo žymeliu. Jei jų yra daugiau, bakstelėkite **Visi artimiausi**, kad pamatytumėte visą sąrašą, ir **Atgal į Mano**, kad grįžtumėte.
 
 - **Tarnystė** -- Jūsų savanorių pozicijos artimiausiuose tarnystės planuose, nurodant tos tarnystės datą ir pradžios laiką (laiką, kada jūsų komandai reikia žmonių, jei plane yra keli tarnystės laikai, arba tik datą, jei plane laikų nėra). Bakstelėkite vieną, kad atidarytumėte planą.
-- **Registracija** -- Renginiai, į kuriuos esate [užsiregistravę](../events/registering). Bakstelėkite, kad pereitumėte į savo [registracijas](../events/my-registrations).
+- **Registracija** -- Renginiai, į kuriuos esate [užsiregistravę](../events/registering.md). Bakstelėkite, kad pereitumėte į savo [registracijas](../events/my-registrations.md).
 - **Renginys** -- Artimiausi jūsų priklausomų grupių renginiai. Bakstelėkite vieną, kad atidarytumėte grupės renginius.
 
 Jei renginys ar registracija turi nuotrauką, eilutės pradžioje rodoma jos nedidelė miniatiūra.
@@ -66,7 +67,7 @@ Skyriuje **Užklausos ir registracijos** rodoma, kiek renginių registracijų tu
 
 Jei jūsų bažnyčia turi rezervuojamų patalpų ar išteklių, atsiranda dar dvi nuorodos:
 
-- **Prašyti renginio** -- Paprašykite surengti renginį su jums reikalingomis patalpomis ir įranga. Žr. [Renginių ir patalpų užklausos](../events/requesting-events).
+- **Prašyti renginio** -- Paprašykite surengti renginį su jums reikalingomis patalpomis ir įranga. Žr. [Renginių ir patalpų užklausos](../events/requesting-events.md).
 - **Mano užklausos** -- Stebėkite savo užklausų būseną ir atšaukite laukiančias.
 
 Jei jūsų bažnyčia nenustatė patalpų ar išteklių, šios nuorodos paslėptos.
@@ -77,8 +78,8 @@ Skyriuje **Gautieji** rodomi du naujausi pranešimai, kad galėtumėte būti inf
 
 ## Susiję straipsniai
 
-- [Naršymas B1App](./navigating) -- Nario portalo išdėstymas
-- [Renginių ir patalpų užklausos](../events/requesting-events) -- Pateikite ir stebėkite patalpų ir išteklių užklausas
-- [Mano registracijos](../events/my-registrations) -- Tvarkykite savo renginių registracijas
-- [Savanorių registracija](../serving/volunteer-signup) -- Kaip veikia tarnystės paskyrimai
-- [Savitarnos registracija](../checkin/self-checkin) -- Kaip įrašomas jūsų lankomumas
+- [Naršymas B1App](./navigating.md) -- Nario portalo išdėstymas
+- [Renginių ir patalpų užklausos](../events/requesting-events.md) -- Pateikite ir stebėkite patalpų ir išteklių užklausas
+- [Mano registracijos](../events/my-registrations.md) -- Tvarkykite savo renginių registracijas
+- [Savanorių registracija](../serving/volunteer-signup.md) -- Kaip veikia tarnystės paskyrimai
+- [Savitarnos registracija](../checkin/self-checkin.md) -- Kaip įrašomas jūsų lankomumas

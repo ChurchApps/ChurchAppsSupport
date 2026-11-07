@@ -1,5 +1,7 @@
 ---
-title: "Tjening"
+title: "Frivilligt arbejde og tilmelding i B1.church"
+sidebar_label: "Tjening"
+description: "Gennemse frivillige muligheder på B1.church, tilmeld dig ledige positioner, se dine tjenesteopgaver, og annuller tilmeldinger inden fristen."
 ---
 
 # Tjening
@@ -14,7 +16,7 @@ Afsnittet Tjening på B1.church lader dig gennemse frivillige muligheder og tilm
 
 - **Gennemse frivillige muligheder** -- Se kommende serviceplaner med åbne positioner, der har brug for frivillige.
 - **Tilmeld dig positioner** -- Vælg en position og tilmeld dig selv med et enkelt klik.
-- **Se dine planer** -- Se dine kommende og tidligere [tjeneste tildelte opgaver](../plans/viewing-plans).
+- **Se dine planer** -- Se dine kommende og tidligere [tjeneste tildelte opgaver](../plans/viewing-plans.md).
 - **Fjern tilmeldinger** -- Aflys en selvtilmelding, hvis dine planer ændres (før fristen).
 
 ## Hvordan det fungerer
@@ -27,5 +29,5 @@ Kun positioner, som din kirkes administrator har aktiveret til selvtilmelding, v
 
 ## Læs mere
 
-- [Frivilligtilmelding](./volunteer-signup) -- Trinvis vejledning til at gennemse og tilmelde sig frivillige positioner
-- [Se planer](../plans/viewing-plans) -- Se dine tildelte serviceplaner og serviceordrer
+- [Frivilligtilmelding](./volunteer-signup.md) -- Trinvis vejledning til at gennemse og tilmelde sig frivillige positioner
+- [Se planer](../plans/viewing-plans.md) -- Se dine tildelte serviceplaner og serviceordrer

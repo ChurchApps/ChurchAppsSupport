@@ -1,5 +1,6 @@
 ---
 title: "Mitglieder suchen"
+description: "Ihre Familie am B1-Checkin-Kiosk über Ziffern der Telefonnummer oder Namen finden und sich als Gast registrieren, wenn Sie zum ersten Mal da sind."
 ---
 
 # Mitglieder suchen
@@ -13,7 +14,7 @@ Nach Auswahl eines Gottesdienstes gelangen Sie zum Suchbildschirm für Mitgliede
 <div class="prereqs">
 <h4>Bevor Sie Beginnen</h4>
 
-- [Wählen Sie einen Gottesdienst](./selecting-service) aus dem Bildschirm mit den Gottesdiensten
+- [Wählen Sie einen Gottesdienst](./selecting-service.md) aus dem Bildschirm mit den Gottesdiensten
 - Stellen Sie sicher, dass Ihr Haushalt von einem Kirchenadministrator [dem System hinzugefügt wurde](../../b1-admin/people/adding-people.md)
 
 </div>
@@ -45,7 +46,7 @@ Die App durchsucht Mitglieder, deren Name dem Eingegebenen entspricht.
 
 Die Suchergebnisse werden als Karten unterhalb des Suchfelds angezeigt. Jede Karte zeigt den **Namen** und das **Foto** der Person (falls vorhanden).
 
-Tippen Sie auf die Karte einer Person, um diese auszuwählen. Die App lädt alle Mitglieder des Haushalts dieser Person und führt Sie zum [Bildschirm für die Haushaltsübersicht](./household-review).
+Tippen Sie auf die Karte einer Person, um diese auszuwählen. Die App lädt alle Mitglieder des Haushalts dieser Person und führt Sie zum [Bildschirm für die Haushaltsübersicht](./household-review.md).
 
 :::tip
 Die Suche nach den letzten 4 Ziffern einer Telefonnummer ist der schnellste Weg, um Ihre Familie zu finden. Ermutigen Sie die Mitglieder, diese Methode für ein schnelleres Anmeldeerlebnis zu verwenden.
@@ -60,7 +61,7 @@ Wenn keine Ergebnisse gefunden werden, zeigt die App eine Meldung an. Überprüf
 Wenn Ihre Kirche die QR-Gastregistrierung aktiviert hat, wird unter dem Suchfeld auf dem Suchbildschirm ein Link **Als Gast registrieren** angezeigt. Erstbesucher können damit ihre Familie dem Kirchensystem hinzufügen, bevor sie sich anmelden.
 
 1. Tippen Sie auf **Als Gast registrieren**. Ein Fenster öffnet sich mit einem QR-Code und der Meldung „QR-Code scannen, um sich als Gast zu registrieren".
-2. Wählen Sie, wie Sie das [Gastregistrierungsformular](../../b1-church/checkin/guest-registration) ausfüllen möchten:
+2. Wählen Sie, wie Sie das [Gastregistrierungsformular](../../b1-church/checkin/guest-registration.md) ausfüllen möchten:
    - **Auf Ihrem Telefon** – Scannen Sie den QR-Code, füllen Sie das Formular auf Ihrem Telefon aus und tippen Sie auf **OK**, um das Fenster zu schließen.
    - **Am Kiosk** – Tippen Sie auf **Hier registrieren**, um das gleiche Formular direkt auf dem Tablet zu öffnen. Füllen Sie es aus und tippen Sie auf **Registrieren**, dann tippen Sie auf **Fertig** (oder den Zurück-Pfeil), um zum Suchbildschirm zurückzukehren.
 3. Nach der Registrierung suchen Sie Ihre Familie nach Name oder Telefonnummer, um sich anzumelden.
@@ -71,7 +72,7 @@ Das Formular, das mit **Hier registrieren** geöffnet wurde, bleibt auf der Gast
 
 ## Name-Tags für eine Telefonanmeldung drucken
 
-Familien, die sich bereits über [B1 Church Selbstanmeldung](../../b1-church/checkin/self-checkin) auf ihrem Telefon angemeldet haben, können ihre Name-Tags am Kiosk drucken, ohne sich selbst zu suchen.
+Familien, die sich bereits über [B1 Church Selbstanmeldung](../../b1-church/checkin/self-checkin.md) auf ihrem Telefon angemeldet haben, können ihre Name-Tags am Kiosk drucken, ohne sich selbst zu suchen.
 
 1. Tippen Sie auf dem Suchbildschirm auf die Schaltfläche **Code scannen** (das QR-Code-Symbol).
 2. Halten Sie den QR-Code von Ihrem Telefon vor die Kamera. Wenn die App um Kamerazugriff fragt, tippen Sie auf **Kamera zulassen**. Die Frontkamera wird standardmäßig verwendet; tippen Sie auf die Flip-Schaltfläche, um zu wechseln.
@@ -81,4 +82,4 @@ Das Scannen druckt nur Etiketten – die Anwesenheit wurde bereits erfasst, als 
 
 ## Nächster Schritt
 
-Nach Auswahl einer Person werden Sie Ihren [Haushalt überprüfen](./household-review) und Gruppenzuweisungen verwalten.
+Nach Auswahl einer Person werden Sie Ihren [Haushalt überprüfen](./household-review.md) und Gruppenzuweisungen verwalten.

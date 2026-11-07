@@ -1,5 +1,6 @@
 ---
 title: "Kampüsler"
+description: "B1 Admin'de kampüsleri ayarlayarak her kişinin ve grubun hangi kampüse ait olduğunu takip edin; ardından kişileri, katılımı ve demografik verileri konuma göre filtreleyin."
 ---
 
 # Kampüsler

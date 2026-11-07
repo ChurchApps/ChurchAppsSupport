@@ -1,5 +1,6 @@
 ---
 title: "Grupų kūrimas"
+description: "Sukurkite naują grupę B1 Admin: nuo kategorijos ir pavadinimo iki prisijungimo taisyklių, žymų, žinučių ir lankomumo nustatymų."
 ---
 
 # Grupų kūrimas

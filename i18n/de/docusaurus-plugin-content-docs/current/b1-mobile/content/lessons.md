@@ -1,5 +1,7 @@
 ---
-title: "Lektionen (veraltet)"
+title: "Lektionsbereich in B1 Mobile (eingestellt)"
+sidebar_label: "Lektionen (veraltet)"
+description: "Lektionen (veraltet): Warum der Lektionsbereich in B1 Mobile eingestellt wurde und wo Sie Lehrmaterial heute finden, z. B. FreePlay oder Lessons.church."
 ---
 
 # Lektionen (veraltet)
@@ -19,7 +21,7 @@ Der Bereich Lektionen gab dir Zugriff auf den Lehrplan und die Lernmaterialien d
 <div class="prereqs">
 <h4>Bevor du beginnst</h4>
 
-- [B1 Mobile installieren](../getting-started/installing) und dich [in deinem Konto anmelden](../getting-started/logging-in)
+- [B1 Mobile installieren](../getting-started/installing.md) und dich [in deinem Konto anmelden](../getting-started/logging-in.md)
 - Deine Gemeinde muss den Lehrplan über Lessons.church eingerichtet haben
 
 </div>
@@ -54,5 +56,5 @@ Der Bereich Lektionen wird angezeigt, wenn deine Gemeinde einen Lehrplan über L
 
 - [FreePlay-Übersicht](/docs/freeplay/) -- Die TV-App, die den Bereich Lektionen ersetzt, zur Wiedergabe von Unterrichtsmaterialien
 - [Lessons.church](/docs/lessons-church/) -- Lehrplaninhalte direkt durchsuchen und verwalten
-- [Bibel](./bible) -- Die Schrift parallel zu deinen Lektionen lesen
-- [Predigten](./sermons) -- Predigten ansehen, die deine Studien ergänzen
+- [Bibel](./bible.md) -- Die Schrift parallel zu deinen Lektionen lesen
+- [Predigten](./sermons.md) -- Predigten ansehen, die deine Studien ergänzen

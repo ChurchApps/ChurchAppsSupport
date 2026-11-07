@@ -1,5 +1,7 @@
 ---
-title: "Grupės informacija"
+title: "Grupės informacija B1.church narių portale"
+sidebar_label: "Grupės informacija"
+description: "Peržiūrėkite grupės detalių puslapį B1.church: renginius, susirinkimus, formas ir narius, prisijunkite arba pateikite prašymą prisijungti."
 ---
 
 # Grupės informacija

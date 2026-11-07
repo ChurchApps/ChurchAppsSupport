@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Povežite B1 Admin z Zapier za začetek avtomatizacij ob novih osebah, darovih in članih skupin ter zapisovanje zapisov nazaj v B1 brez programiranja."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Izberite sprožilec, nato dodajte enega ali več korakov dejanj. Primeri so spod
 ### Objavljanje donacij v kanal Slack z bogatejšo kartico, kot jo omogoča vgrajeni konektor
 
 - **Sprožilec** — B1: New Donation
-- **Dejanje** — Slack: Send Channel Message. Sestavite poljubno postavitev (gumbe, priloge itd.), ki je vgrajeni [konektor za Slack](./slack-discord) ne omogoča.
+- **Dejanje** — Slack: Send Channel Message. Sestavite poljubno postavitev (gumbe, priloge itd.), ki je vgrajeni [konektor za Slack](./slack-discord.md) ne omogoča.
 
 ### Dodajanje novih članov skupine v Google skupino
 
@@ -106,6 +107,6 @@ To pomeni, da se sprožilec sproži samo za dogodke, ki se zgodijo **po** vklopu
 
 ## Glejte tudi
 
-- [Make](./make) — isti vzorec, druga platforma
-- [Slack & Discord](./slack-discord) — preprostejša klepetalna obvestila brez Zapiera
+- [Make](./make.md) — isti vzorec, druga platforma
+- [Slack & Discord](./slack-discord.md) — preprostejša klepetalna obvestila brez Zapiera
 - [Webhooks (referenca za razvijalce)](/docs/developer/api/webhooks)

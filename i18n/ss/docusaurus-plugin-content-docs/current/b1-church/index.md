@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Thola kutsi lisayithi le-B1.church lelicawe lakho linikela ngani emalungwini, kusukela ku-Iphothali Yelilungu kuya emaqembwini, kunikela ngetipho, emicimbini, kusebenta nekungena."
 ---
 
 # B1.church
@@ -26,15 +27,15 @@ Nangabe emalunga avakashela isayithi yakho ye-B1.church, abona sayithi yebandla 
 
 ## Fundza Kabanti
 
-- [Kucala (Getting Started)](./getting-started/) -- Dala i-akhawundi yakho, ngena, futsi ufundze kuhamba ku-B1.church.
-- [Emacembe (Groups)](./groups/) -- Joyina futsi uhlanganyele emacembeni ebandla lakho.
-- [Kunikela (Giving)](./giving/) -- Wenta iminikelo futsi uphatse kunikela kwakho.
-- [Imicimbi (Events)](./events/) -- Bhrawuza futsi ubhalise emicimbini letako yebandla.
-- [Kukhonta (Serving)](./serving/) -- Buka tinhlelo futsi ubhalise etikhundleni tebuvolontiya.
-- [Tinhlelo (Plans)](./plans/) -- Buka tinhlelo tenkhonzo netikhundla takho tebuvolontiya.
-- [Kungena (Check-In)](./checkin/) -- Bhalisa etinkhonzweni, emicimbini, nasekubhalisweni kwesivakashi.
-- [Luhlu Lwemphakatsi (Community Directory)](./community/) -- Tfola futsi uxhumane naletinye emalunga.
-- [Kucuketfwe (Content)](./content/) -- Tishumayelo, liBhayibheli, ivesi lemihla ngemihla, nekusakazwa lokuphilako. (Kudlala kwe-Lessons sekuye ku-[FreePlay](/docs/freeplay/).)
+- [Kucala (Getting Started)](./getting-started/index.md) -- Dala i-akhawundi yakho, ngena, futsi ufundze kuhamba ku-B1.church.
+- [Emacembe (Groups)](./groups/index.md) -- Joyina futsi uhlanganyele emacembeni ebandla lakho.
+- [Kunikela (Giving)](./giving/index.md) -- Wenta iminikelo futsi uphatse kunikela kwakho.
+- [Imicimbi (Events)](./events/index.md) -- Bhrawuza futsi ubhalise emicimbini letako yebandla.
+- [Kukhonta (Serving)](./serving/index.md) -- Buka tinhlelo futsi ubhalise etikhundleni tebuvolontiya.
+- [Tinhlelo (Plans)](./plans/index.md) -- Buka tinhlelo tenkhonzo netikhundla takho tebuvolontiya.
+- [Kungena (Check-In)](./checkin/index.md) -- Bhalisa etinkhonzweni, emicimbini, nasekubhalisweni kwesivakashi.
+- [Luhlu Lwemphakatsi (Community Directory)](./community/index.md) -- Tfola futsi uxhumane naletinye emalunga.
+- [Kucuketfwe (Content)](./content/index.md) -- Tishumayelo, liBhayibheli, ivesi lemihla ngemihla, nekusakazwa lokuphilako. (Kudlala kwe-Lessons sekuye ku-[FreePlay](/docs/freeplay/).)
 
 :::info
 I-B1.church yamahhala ngalokuphelele emabandleni nasemalungeni. Umphatsi webandla lakho ulungisa futsi uguqulela sayithi ngekusebentisa B1 Admin. Njengelilunga, uvakashela nje ku-URL yebandla lakho ye-B1.church kuze ucale.

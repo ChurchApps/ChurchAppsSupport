@@ -1,5 +1,6 @@
 ---
 title: "Conexión de TV de Aula a sus Lecciones de B1 Admin"
+description: "Conecta un televisor de aula con FreePlay a tus lecciones programadas en B1 Admin, para que los maestros puedan reproducirlas en pantalla durante la clase."
 ---
 
 # Conexión de TV de Aula a sus Lecciones de B1 Admin

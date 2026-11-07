@@ -1,5 +1,6 @@
 ---
 title: "Hoàn tất check-in"
+description: "Hoàn tất điểm danh tại kiosk cho gia đình trong B1 Checkin, bao gồm giới hạn phòng, in nhãn, mã bảo mật khi đón và ứng dụng sẽ làm gì tiếp theo."
 ---
 
 # Hoàn tất check-in
@@ -13,9 +14,9 @@ Sau khi bạn đã xem lại hộ gia đình và chỉ định nhóm cần thi�
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Xem lại hộ gia đình](./household-review) trên màn hình xem lại hộ gia đình
-- [Chỉ định nhóm](./group-assignment) cho các thành viên trong gia đình cần check-in vào một lớp hoặc chương trình cụ thể
-- Tùy chọn [thêm khách](./adding-guests) đi cùng gia đình bạn
+- [Xem lại hộ gia đình](./household-review.md) trên màn hình xem lại hộ gia đình
+- [Chỉ định nhóm](./group-assignment.md) cho các thành viên trong gia đình cần check-in vào một lớp hoặc chương trình cụ thể
+- Tùy chọn [thêm khách](./adding-guests.md) đi cùng gia đình bạn
 
 </div>
 
@@ -28,10 +29,10 @@ Vậy là xong. Việc điểm danh của gia đình bạn đã được ghi nh�
 
 ## Phòng đầy và tỷ lệ tình nguyện viên
 
-Nếu nhà thờ của bạn đã thiết lập [giới hạn an toàn](../../b1-admin/attendance/checkin-safety) cho các phòng, máy chủ sẽ kiểm tra trước khi lưu:
+Nếu nhà thờ của bạn đã thiết lập [giới hạn an toàn](../../b1-admin/attendance/checkin-safety.md) cho các phòng, máy chủ sẽ kiểm tra trước khi lưu:
 
 - Nếu phòng được chọn **đã đầy hoặc đã đóng**, check-in sẽ không thành công và ứng dụng sẽ nêu tên phòng để bạn chọn phòng khác.
-- Nếu giờ thờ phượng có [lịch check-in](../../b1-admin/attendance/setup#setting-a-check-in-schedule) và khung giờ check-in hiện chưa mở, việc check-in vào các phòng của giờ thờ phượng đó cũng sẽ bị từ chối. Màn hình **Chưa thể check-in** sẽ liệt kê phòng với lý do "check-in chưa mở lúc này"; nhấn **Đổi phòng** để chọn giờ thờ phượng hoặc nhóm khác. (Các giờ thờ phượng đã đóng sẽ hiển thị **Đã đóng** trên [màn hình hộ gia đình](./household-review) và không thể chọn, vì vậy bạn thường chỉ gặp trường hợp này khi khung giờ đóng lại giữa chừng lúc đang check-in.)
+- Nếu giờ thờ phượng có [lịch check-in](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) và khung giờ check-in hiện chưa mở, việc check-in vào các phòng của giờ thờ phượng đó cũng sẽ bị từ chối. Màn hình **Chưa thể check-in** sẽ liệt kê phòng với lý do "check-in chưa mở lúc này"; nhấn **Đổi phòng** để chọn giờ thờ phượng hoặc nhóm khác. (Các giờ thờ phượng đã đóng sẽ hiển thị **Đã đóng** trên [màn hình hộ gia đình](./household-review.md) và không thể chọn, vì vậy bạn thường chỉ gặp trường hợp này khi khung giờ đóng lại giữa chừng lúc đang check-in.)
 - Một hộ gia đình đã check-in cho giờ thờ phượng trước đó có thể quay lại sau và thêm một giờ thờ phượng đang mở, ngay cả khi khung giờ trước đã đóng. Các lượt check-in hiện có của họ vẫn được giữ nguyên và sẽ không khiến lượt check-in mới bị từ chối.
 - Nếu một phòng thiếu nhi **thiếu tình nguyện viên** so với tỷ lệ quy định, ứng dụng sẽ hoặc hiển thị cảnh báo để nhân viên xác nhận và tiếp tục, hoặc chặn check-in hoàn toàn -- tùy theo cách nhà thờ bạn cấu hình việc áp dụng tỷ lệ.
 
@@ -49,7 +50,7 @@ Cùng một mã bảo mật xuất hiện trên cả nhãn tên của trẻ và 
 Mã bảo mật được tạo mới cho mỗi lần check-in và chỉ sử dụng phụ âm và chữ số (không dùng nguyên âm để tránh tạo thành các từ không phù hợp).
 
 :::warning
-Nếu nhãn không in được, hãy mở Cài đặt quản trị bằng cách nhấn vào **logo nhà thờ** bảy lần, sau đó nhấn **Đổi máy in** để kiểm tra kết nối máy in. Xem [Thiết lập máy in](../getting-started/printer-setup) để biết các bước khắc phục sự cố.
+Nếu nhãn không in được, hãy mở Cài đặt quản trị bằng cách nhấn vào **logo nhà thờ** bảy lần, sau đó nhấn **Đổi máy in** để kiểm tra kết nối máy in. Xem [Thiết lập máy in](../getting-started/printer-setup.md) để biết các bước khắc phục sự cố.
 :::
 
 ## Sau khi check-in

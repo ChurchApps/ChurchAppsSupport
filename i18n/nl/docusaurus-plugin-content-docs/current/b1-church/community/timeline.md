@@ -1,5 +1,6 @@
 ---
 title: "Tijdlijn"
+description: "Het tabblad Tijdlijn van het ledenportaal van B1.church is uitgefaseerd. Vind groepschats, evenementen, taken en meldingen op de Me-pagina en bij elke groep."
 ---
 
 # Tijdlijn
@@ -21,7 +22,7 @@ De **Tijdlijn** is de standaard landingspagina van je B1.church-lidmaatschapspor
 
 De tijdlijn toont een voeding van berichten en updates, waaronder:
 
-- **Groepsgesprekken** -- Berichten en discussies uit [groepen](../groups/) waar je bij hoort.
+- **Groepsgesprekken** -- Berichten en discussies uit [groepen](../groups/index.md) waar je bij hoort.
 - **Taken** -- Taken die aan jou of je groepen zijn toegewezen.
 - **Evenementen** -- Aankomende evenementen die relevant zijn voor jou en je groepen.
 - **Lessen** -- Leerplan en [lesseninhoud](../content/lessons.md) die met je groepen wordt gedeeld.

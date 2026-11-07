@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Połącz B1 Admin z Zapier, aby uruchamiać automatyzacje dla nowych osób, darowizn i członków grup oraz zapisywać rekordy z powrotem w B1 bez programowania."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Wybierz wyzwalacz, a następnie dodaj jeden lub więcej kroków akcji. Przykład
 ### Publikowanie darowizn na kanale Slack z bogatszą kartą niż wbudowany łącznik
 
 - **Wyzwalacz** — B1: Nowa darowizna
-- **Akcja** — Slack: Wyślij wiadomość na kanał. Utwórz dowolny układ — przyciski, załączniki itp. — którego nie obsługuje wbudowany [łącznik Slack](./slack-discord).
+- **Akcja** — Slack: Wyślij wiadomość na kanał. Utwórz dowolny układ — przyciski, załączniki itp. — którego nie obsługuje wbudowany [łącznik Slack](./slack-discord.md).
 
 ### Dodawanie nowych członków grupy do grupy Google
 
@@ -106,6 +107,6 @@ Oznacza to, że wyzwalacz uruchamia się tylko dla zdarzeń, które zajdą **po*
 
 ## Zobacz także
 
-- [Make](./make) — ten sam schemat, inna platforma
-- [Slack i Discord](./slack-discord) — prostsze powiadomienia czatowe bez Zapier
+- [Make](./make.md) — ten sam schemat, inna platforma
+- [Slack i Discord](./slack-discord.md) — prostsze powiadomienia czatowe bez Zapier
 - [Webhooki (dokumentacja dla deweloperów)](/docs/developer/api/webhooks)

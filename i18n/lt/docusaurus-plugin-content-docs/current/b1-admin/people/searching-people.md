@@ -1,5 +1,6 @@
 ---
 title: "Žmonių paieška"
+description: "Ieškokite asmenų B1 Admin pagal vardą, rikiuokite lentelę, kurkite filtrus Išplėstine paieška ir eksportuokite rezultatus į CSV."
 ---
 
 # Žmonių paieška

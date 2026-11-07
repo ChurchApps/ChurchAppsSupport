@@ -1,5 +1,6 @@
 ---
 title: "Lomakkeet"
+description: "Etsi, suodata, muokkaa, arkistoi ja palauta mukautettuja lomakkeita B1 Adminissa sekä määritä lomakkeen jäsenet ja tarkastele vastauksia."
 ---
 
 # Lomakkeet

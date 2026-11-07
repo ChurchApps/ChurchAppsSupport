@@ -1,5 +1,6 @@
 ---
 title: "Gids: Aan de slag met B1 voor uw kerk"
+description: "Doorloop het instellen van een nieuwe kerk in B1 Admin: maak je account, configureer instellingen, voeg rollen toe, importeer leden en start kernfuncties."
 ---
 
 # Aan de slag met B1 voor uw kerk

@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Kết nối B1 Admin với Claude để hỏi về điểm danh, dâng hiến và nhóm bằng ngôn ngữ đời thường, với tùy chọn đăng nhập và khóa API quyền hạn giới hạn."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ API B1 cung cấp một endpoint MCP duy nhất tại `/mcp`. Claude kết nối
 
 - [API Keys](/docs/developer/api/api-keys) — tài liệu tham khảo đầy đủ về phạm vi
 - [MCP Server (developer reference)](/docs/developer/api/mcp) — chi tiết giao thức và schema công cụ
-- [ChatGPT](./chatgpt) — ý tưởng tương tự, dành cho các mô hình của OpenAI
+- [ChatGPT](./chatgpt.md) — ý tưởng tương tự, dành cho các mô hình của OpenAI

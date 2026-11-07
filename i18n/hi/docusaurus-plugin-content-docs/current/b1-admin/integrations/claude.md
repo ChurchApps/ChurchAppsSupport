@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "B1 Admin को Claude से जोड़ें ताकि उपस्थिति, दान और समूहों के बारे में सरल भाषा में पूछ सकें; इसमें साइन-इन विकल्प और सीमित-अनुमति API कुंजी शामिल है।"
 ---
 
 # Claude
@@ -199,4 +200,4 @@ B1 API एक एकल MCP endpoint `/mcp` पर उपलब्ध करा�
 
 - [API Keys](/docs/developer/api/api-keys) -- पूर्ण scope संदर्भ
 - [MCP Server (developer reference)](/docs/developer/api/mcp) -- प्रोटोकॉल विवरण और टूल स्कीमा
-- [ChatGPT](./chatgpt) -- वही विचार, OpenAI के मॉडलों के लिए
+- [ChatGPT](./chatgpt.md) -- वही विचार, OpenAI के मॉडलों के लिए

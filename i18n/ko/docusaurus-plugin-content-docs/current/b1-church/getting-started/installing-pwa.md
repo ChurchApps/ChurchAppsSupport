@@ -1,5 +1,6 @@
 ---
 title: "앱으로 설치하기 (PWA)"
+description: "교인 포털에서 B1.church를 iPhone이나 Android에 앱으로 설치하세요. Safari 또는 Chrome에서 홈 화면에 아이콘을 추가합니다."
 ---
 
 # 앱으로 설치하기 (PWA)

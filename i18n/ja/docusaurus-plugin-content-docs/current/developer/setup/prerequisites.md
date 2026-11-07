@@ -1,5 +1,6 @@
 ---
 title: "前提条件"
+description: "B1 Admin、Lessons.church、FreePlay、API をローカルで扱う前に、Node.js、npm、Git、プラットフォームごとのツールチェーンを準備します。"
 ---
 
 # 前提条件
@@ -13,7 +14,7 @@ title: "前提条件"
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- [プロジェクト概要](./project-overview)を確認し、作業したいプロジェクトを決めておいてください
+- [プロジェクト概要](./project-overview.md)を確認し、作業したいプロジェクトを決めておいてください
 - 開発用のマシンでソフトウェアをインストールするために、管理者権限があることを確認してください
 
 </div>
@@ -40,7 +41,7 @@ API をローカルで実行する場合(デモ API を参照するのではな�
 |------|---------|-------|
 | **MySQL** | 8.0以上 | API の各モジュールは、それぞれ独自のデータベースを使用します |
 
-コア API には 6 つのデータベースが必要です: `membership`、`attendance`、`content`、`giving`、`messaging`、`doing`。API にはスキーマを初期化するスクリプトが含まれています。詳しくは [API のローカルセットアップ](../api/local-setup)ガイドを参照してください。
+コア API には 6 つのデータベースが必要です: `membership`、`attendance`、`content`、`giving`、`messaging`、`doing`。API にはスキーマを初期化するスクリプトが含まれています。詳しくは [API のローカルセットアップ](../api/local-setup.md)ガイドを参照してください。
 
 ## モバイルアプリの開発
 
@@ -110,5 +111,5 @@ mysql --version   # Only needed for local API development
 
 ## 次のステップ
 
-- **[プロジェクト概要](./project-overview)** -- すべてのプロジェクトと、それぞれの役割を確認します
-- **[環境変数](./environment-variables)** -- `.env` ファイルを設定します
+- **[プロジェクト概要](./project-overview.md)** -- すべてのプロジェクトと、それぞれの役割を確認します
+- **[環境変数](./environment-variables.md)** -- `.env` ファイルを設定します

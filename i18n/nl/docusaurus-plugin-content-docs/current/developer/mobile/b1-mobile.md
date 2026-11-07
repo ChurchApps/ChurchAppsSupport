@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "Stel de B1 Mobile React Native/Expo-app lokaal in, configureer de API-endpoints en bouw voor Android of iOS. Let op: B1 Mobile is verouderd."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobile is de primaire mobiele app gericht op leden voor ChurchApps, gebouwd m
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Installeer **Node.js** en **Expo CLI** -- zie [Prerequisites](../setup/prerequisites)
+- Installeer **Node.js** en **Expo CLI** -- zie [Prerequisites](../setup/prerequisites.md)
 - Installeer **Android Studio** (voor Android-emulator) of **Xcode** (voor iOS-simulator)
-- Configureer uw API-doel (staging of lokaal) -- zie [Environment Variables](../setup/environment-variables)
+- Configureer uw API-doel (staging of lokaal) -- zie [Environment Variables](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ OTA-updates zijn ideaal voor JavaScript-only-wijzigingen. Als u native code of a
 
 ## Gerelateerde Artikelen
 
-- **[Mobile Deployment](../deployment/mobile)** -- Volledige gids voor het bouwen, indienen en implementeren van mobiele apps
-- **[Environment Variables](../setup/environment-variables)** -- Volledige referentie voor mobiele omgevingsconfiguratie
+- **[Mobile Deployment](../deployment/mobile.md)** -- Volledige gids voor het bouwen, indienen en implementeren van mobiele apps
+- **[Environment Variables](../setup/environment-variables.md)** -- Volledige referentie voor mobiele omgevingsconfiguratie

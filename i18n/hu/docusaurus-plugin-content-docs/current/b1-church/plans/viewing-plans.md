@@ -1,5 +1,7 @@
 ---
-title: "Szolgálati tervek megtekintése"
+title: "Szolgálati terveid a B1.church tagi portálon"
+sidebar_label: "Szolgálati tervek megtekintése"
+description: "Ellenőrizd szolgálati terv-kiosztásaidat a B1.church oldalon, fogadd el vagy utasítsd vissza a kéréseket, állíts be lefoglalt dátumokat, és tekintsd át korábbi szolgálati előzményeidet."
 ---
 
 # Szolgálati tervek megtekintése

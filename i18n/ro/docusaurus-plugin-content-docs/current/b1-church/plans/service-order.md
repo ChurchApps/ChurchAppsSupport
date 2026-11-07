@@ -1,5 +1,7 @@
 ---
-title: "Ordinea serviciului"
+title: "Ordinea slujbei în aplicația B1.church"
+sidebar_label: "Ordinea serviciului"
+description: "Vizualizați ordinea slujbei unui plan în aplicația B1.church, cu cronometrare cumulativă, versurile cântecelor, transpunerea tonalităților și previzualizările lecțiilor pentru echipa dvs."
 ---
 
 # Ordinea serviciului

@@ -1,5 +1,6 @@
 ---
 title: "Sekretessinställningar"
+description: "Styr vilka profiluppgifter som telefon, e-post och adress andra medlemmar kan se i B1 Mobiles katalog, och granska väntande ändringar."
 ---
 
 # Sekretessinställningar
@@ -13,7 +14,7 @@ Fliken **Synlighet** på skärmen Profil låter dig styra vad andra kyrkomedlemm
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Installera B1 Mobile](../getting-started/installing) och [logga in](../getting-started/logging-in) på ditt konto
+- [Installera B1 Mobile](../getting-started/installing.md) och [logga in](../getting-started/logging-in.md) på ditt konto
 
 </div>
 
@@ -52,8 +53,8 @@ Fliken **Konto** ger tillgång till dina säkerhetsinställningar. Använd den h
 
 | Flik | Syfte |
 |---|---|
-| **Profil** | [Redigera dina personuppgifter](./editing-profile) och foto |
-| **Hushåll** | [Visa dina familjemedlemmar](./household) |
+| **Profil** | [Redigera dina personuppgifter](./editing-profile.md) och foto |
+| **Hushåll** | [Visa dina familjemedlemmar](./household.md) |
 | **Synlighet** | Styr vad andra ser i katalogen |
 | **Väntande** | Granska profiländringar som väntar på godkännande |
 | **Konto** | Hantera säkerhetsinställningar |
@@ -62,6 +63,6 @@ Dessa flikar fungerar tillsammans för att ge dig full kontroll över dina perso
 
 ## Relaterade artiklar
 
-- [Redigera din profil](./editing-profile) -- Uppdatera dina personuppgifter
-- [Hushåll](./household) -- Visa och hantera dina familjemedlemmar
+- [Redigera din profil](./editing-profile.md) -- Uppdatera dina personuppgifter
+- [Hushåll](./household.md) -- Visa och hantera dina familjemedlemmar
 - [Medlemskatalog](../community/member-directory.md) -- Se hur din profil visas för andra

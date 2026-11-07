@@ -1,5 +1,6 @@
 ---
 title: "Guide: Spåra närvaro i kyrkan"
+description: "Följ kyrkans närvaro i B1 Admin genom att ställa in campus och gudstjänsttider, registrera den manuellt eller via självincheckning och läsa rapporter."
 ---
 
 # Spåra närvaro i kyrkan

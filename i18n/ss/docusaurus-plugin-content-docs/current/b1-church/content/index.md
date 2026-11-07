@@ -1,5 +1,7 @@
 ---
-title: "Kucuketfwe"
+title: "Tintfo Letiphefumulelako ku-Portal ye-B1.church"
+sidebar_label: "Kucuketfwe"
+description: "Bona tinhlobo tetinkhutsato letivumelekile senkhutsatweni ku-portal yelilungu le-B1.church, bese uphepha tinkhulumo, tisakazo ngqo, kufunda iBhayibheli netifundvo."
 ---
 
 # Kucuketfwe

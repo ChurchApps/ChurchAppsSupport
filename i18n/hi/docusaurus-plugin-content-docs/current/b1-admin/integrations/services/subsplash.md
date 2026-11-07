@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Zapier के साथ Subsplash दान, नए लोगों और फ़ॉर्म उत्तरों को B1 से जोड़ें, ताकि उपहार और प्रोफ़ाइल अपने-आप B1 Admin में पहुँचें।"
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Zap चालू करें। आगे के Subsplash donations कुछ 
 
 ## इसे भी देखें
 
-- [Donorbox](./donorbox) — वही रेसिपी ढाँचा, अलग donation प्लेटफ़ॉर्म के लिए
-- [Zapier (overview)](../zapier) — हर Zapier रेसिपी का B1 पक्ष
+- [Donorbox](./donorbox.md) — वही रेसिपी ढाँचा, अलग donation प्लेटफ़ॉर्म के लिए
+- [Zapier (overview)](../zapier.md) — हर Zapier रेसिपी का B1 पक्ष
 - [Subsplash Zapier integration guide](https://support.subsplash.com/en/articles/9825926-zapier-integration) (Subsplash के अपने दस्तावेज़)

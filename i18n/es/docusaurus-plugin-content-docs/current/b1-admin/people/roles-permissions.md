@@ -1,5 +1,6 @@
 ---
 title: "Asignar roles"
+description: "Asigna roles en B1 Admin para dar al personal y voluntarios acceso solo a las áreas de personas, donaciones, asistencia y grupos que necesitan."
 ---
 
 # Asignar roles

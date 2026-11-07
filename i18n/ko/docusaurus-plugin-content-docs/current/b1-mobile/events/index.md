@@ -1,5 +1,7 @@
 ---
-title: "행사"
+title: "B1 Mobile의 교회 행사 및 등록"
+sidebar_label: "행사"
+description: "B1 Mobile에서 다가오는 교회 행사를 둘러보고, 신청이 열려 있는 행사에 나와 가족을 등록하세요."
 ---
 
 # 행사
@@ -23,10 +25,10 @@ B1 Mobile의 행사 기능을 사용하면 예정된 교회 행사를 둘러보�
 
 ## 필요한 것
 
-- [B1 Mobile 설치](../getting-started/installing) 및 [로그인](../getting-started/logging-in)
+- [B1 Mobile 설치](../getting-started/installing.md) 및 [로그인](../getting-started/logging-in.md)
 - 교회에서 해당 행사에 대해 행사 등록을 활성화해야 합니다
 
 ## 자세히 알아보기
 
-- [행사 등록](./registering) -- 모바일에서 행사에 등록하는 단계별 가이드
-- [자동 체크인](../checkin/self-checkin) -- 행사에 도착했을 때 체크인
+- [행사 등록](./registering.md) -- 모바일에서 행사에 등록하는 단계별 가이드
+- [자동 체크인](../checkin/self-checkin.md) -- 행사에 도착했을 때 체크인

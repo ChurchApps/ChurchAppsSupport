@@ -1,5 +1,6 @@
 ---
 title: "Yoklama Kaydetme"
+description: "B1 Admin'de her grup toplantısının yoklamasını alın: oturum oluşturun, katılanları işaretleyin, not kaydedin ve yoklama listesini yazdırın ya da tabloya aktarın."
 ---
 
 # Yoklama Kaydetme

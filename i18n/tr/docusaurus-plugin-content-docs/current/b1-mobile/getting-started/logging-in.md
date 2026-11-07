@@ -1,5 +1,7 @@
 ---
-title: "Giriş Yapma"
+title: "B1 Mobile'a Giriş Yapma"
+sidebar_label: "Giriş Yapma"
+description: "B1 Mobile uygulamasına ChurchApps hesabınızla giriş yapın, yeni hesap oluşturun veya 6 haneli kodla unuttuğunuz şifreyi kurtarın."
 ---
 
 # Giriş Yapma
@@ -13,7 +15,7 @@ B1 Mobile, B1.church ve diğer ChurchApps ürünlerinde kullandığınız Church
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- iOS veya Android cihazınıza [B1 Mobile'ı yükleyin](./installing)
+- iOS veya Android cihazınıza [B1 Mobile'ı yükleyin](./installing.md)
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile, B1.church ve diğer ChurchApps ürünlerinde kullandığınız Church
 3. **E-posta adresinizi** ve **şifrenizi** girin.
 4. **Oturum Aç** düğmesine dokunun.
 
-Oturum açtıktan sonra [ana sayfaya](../dashboard/) yönlendirileceksiniz. Henüz bir kilise seçmediyseniz, bir kilise aramanız ve seçmeniz istenecektir.
+Oturum açtıktan sonra [ana sayfaya](../dashboard/index.md) yönlendirileceksiniz. Henüz bir kilise seçmediyseniz, bir kilise aramanız ve seçmeniz istenecektir.
 
 ## Yeni Hesap Oluşturma
 

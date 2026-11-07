@@ -1,5 +1,6 @@
 ---
 title: "Zahtevanje dogodkov in sob"
+description: "Prašykite kambario ar įrangos rezervacijos renginiui B1.church narių portale, sekite būseną skiltyje Mano prašymai ir atšaukite laukiant."
 ---
 
 # Zahtevanje dogodkov in sob
@@ -42,11 +43,11 @@ Odprite **Moje zahteve** na strani Me. Vsaka zahteva prikazuje dogodek, čas odd
 Dokler je zahteva še v čakanju, jo lahko umaknete z **Prekliči zahtevo** (potrditi boste morali preklic – preklica ni mogoče razveljaviti).
 
 :::info
-Zahteve pregledujejo zaposleni v cerkvi na strani [Odobritve](../../b1-admin/calendars/approvals) v B1 Admin. Katere sobe in viri potrebujejo odobritev, je odvisno od vaše cerkve – glejte [Sobe in viri](../../b1-admin/calendars/rooms-resources).
+Zahteve pregledujejo zaposleni v cerkvi na strani [Odobritve](../../b1-admin/calendars/approvals.md) v B1 Admin. Katere sobe in viri potrebujejo odobritev, je odvisno od vaše cerkve – glejte [Sobe in viri](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Sorodni članki
 
-- [Stran Me](../getting-started/me-page) -- Kje so povezave za zahteve
-- [Odobritve koledarjev (B1 Admin)](../../b1-admin/calendars/approvals) -- Kako zaposleni pregledujejo zahteve
-- [Sobe in viri (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Kako cerkve nastavljajo rezervacije prostorov
+- [Stran Me](../getting-started/me-page.md) -- Kje so povezave za zahteve
+- [Odobritve koledarjev (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Kako zaposleni pregledujejo zahteve
+- [Sobe in viri (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Kako cerkve nastavljajo rezervacije prostorov

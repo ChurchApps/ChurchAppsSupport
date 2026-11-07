@@ -1,5 +1,6 @@
 ---
 title: "Modulių struktūra"
+description: "Kaip išdėstyti API modulius: valdikliai, saugyklos, šliuzai, autentifikacijos tikrinimai ir šešios Lambda funkcijos B1 kūrėjų aplinkose."
 ---
 
 # Modulių struktūra
@@ -13,8 +14,8 @@ Kiekvienas API modulis seka nuoseklią vidinę struktūrą, kurią sudaro valdik
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Paruoškite API vietiniam naudojimui — žr. [Vietinis API paruošimas](./local-setup)
-- Peržiūrėkite [Duomenų bazės](./database) architektūrą, kad suprastumėte duomenų prieigos sluoksnį
+- Paruoškite API vietiniam naudojimui — žr. [Vietinis API paruošimas](./local-setup.md)
+- Peržiūrėkite [Duomenų bazės](./database.md) architektūrą, kad suprastumėte duomenų prieigos sluoksnį
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Komunikacija tarp modulių
 
-Kiekvienas modulis valdo savo duomenų bazę (žr. [Duomenų bazė](./database)), ir modulis niekada tiesiogiai neužklausia kito modulio lentelių. Kai vienam moduliui reikia kito modulio valdomų duomenų — pavyzdžiui, veiklos modulis nustato žmones iš narystės modulio — jis kreipiasi per atitinkamo modulio **šliuzą** kataloge `src/shared/modules/`:
+Kiekvienas modulis valdo savo duomenų bazę (žr. [Duomenų bazė](./database.md)), ir modulis niekada tiesiogiai neužklausia kito modulio lentelių. Kai vienam moduliui reikia kito modulio valdomų duomenų — pavyzdžiui, veiklos modulis nustato žmones iš narystės modulio — jis kreipiasi per atitinkamo modulio **šliuzą** kataloge `src/shared/modules/`:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Vietiniu režimu funkcija `web` veikia prievade 8084, o funkcija `socket` — pr
 
 ## Susiję straipsniai
 
-- **[Duomenų bazė](./database)** — Ryšio eilutės, schemos scenarijai ir duomenų prieigos modeliai
-- **[Vietinis API paruošimas](./local-setup)** — Išsamus žingsnis po žingsnio paruošimo vadovas
-- **[ApiHelper](../shared-libraries/api-helper)** — Bendra biblioteka, teikianti `CustomBaseController` ir autentifikavimo tarpinę programinę įrangą
+- **[Duomenų bazė](./database.md)** — Ryšio eilutės, schemos scenarijai ir duomenų prieigos modeliai
+- **[Vietinis API paruošimas](./local-setup.md)** — Išsamus žingsnis po žingsnio paruošimo vadovas
+- **[ApiHelper](../shared-libraries/api-helper.md)** — Bendra biblioteka, teikianti `CustomBaseController` ir autentifikavimo tarpinę programinę įrangą

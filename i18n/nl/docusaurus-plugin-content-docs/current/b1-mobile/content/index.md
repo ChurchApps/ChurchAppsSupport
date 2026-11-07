@@ -1,5 +1,7 @@
 ---
-title: "Inhoud"
+title: "Contentfuncties in de B1 Mobile-app"
+sidebar_label: "Inhoud"
+description: "Vind preken, livestreams, Bijbellezen en Vers van de dag in de B1 Mobile-app, en zie welke contentfuncties je kerk heeft ingeschakeld."
 ---
 
 # Inhoud
@@ -37,13 +39,13 @@ Toegang tot de curriculum en leermaterialen van uw kerk via het ingebouwde Lesso
 Inhoudsfuncties zijn beschikbaar via het draaiermenu in de app. Uw kerkbeheerder bepaalt welke inhoudsfuncties zijn ingeschakeld, dus u ziet mogelijk niet alle hierboven vermelde opties. Als een bepaalde functie ontbreekt, heeft uw kerk deze mogelijk nog niet geconfigureerd.
 
 :::info
-Inhoudsfuncties worden door uw kerkbeheerder geconfigureerd via [B1 Admin](../../b1-admin/). Als u een functie niet ziet die u verwacht, neem contact op met uw kerkkantoor.
+Inhoudsfuncties worden door uw kerkbeheerder geconfigureerd via [B1 Admin](../../b1-admin/index.md). Als u een functie niet ziet die u verwacht, neem contact op met uw kerkkantoor.
 :::
 
 ## Volgende stappen
 
-- [Preken](./sermons) -- Blader en bekijk opgenomen preken
-- [Live streaming](./live-streaming) -- Bekijk live uitzendingen
-- [Bijbel](./bible) -- Lees de Schrift in de ingebouwde lezer
-- [Vers van de dag](./verse-of-the-day) -- Zie het dagelijks vers van vandaag
-- [Lessen](./lessons) -- Toegang tot curriculum en leermaterialen
+- [Preken](./sermons.md) -- Blader en bekijk opgenomen preken
+- [Live streaming](./live-streaming.md) -- Bekijk live uitzendingen
+- [Bijbel](./bible.md) -- Lees de Schrift in de ingebouwde lezer
+- [Vers van de dag](./verse-of-the-day.md) -- Zie het dagelijks vers van vandaag
+- [Lessen](./lessons.md) -- Toegang tot curriculum en leermaterialen

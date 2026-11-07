@@ -1,5 +1,6 @@
 ---
 title: "디지털 사이니지"
+description: "B1 Admin에서 항상 현재 계획을 보여주는 디지털 사이니지 피드 URL로 로비나 복도 TV에 레슨 콘텐츠를 보내거나, FreePlay TV를 사용하세요."
 ---
 
 # 디지털 사이니지
@@ -14,7 +15,7 @@ title: "디지털 사이니지"
 <h4>시작하기 전에</h4>
 
 - [Lessons.church](../../b1-church/content/lessons.md)로 [계획 유형](./plans.md)을 설정하거나 다른 수업 콘텐츠를 예약하세요
-- [SignPresenter](https://www.signpresenter.com) 계정과 이를 표시할 기기를 준비하거나, [FreePlay](../../freeplay/)를 실행하는 TV를 준비하세요
+- [SignPresenter](https://www.signpresenter.com) 계정과 이를 표시할 기기를 준비하거나, [FreePlay](../../freeplay/index.md)를 실행하는 TV를 준비하세요
 
 </div>
 
@@ -36,14 +37,14 @@ SignPresenter 내부의 단계별 설정은 [SignPresenter의 Lessons.church 가
 
 ## 대신 FreePlay TV 사용하기
 
-화면에 [FreePlay](../../freeplay/)를 사용하는 경우에는 피드 URL이 필요하지 않습니다. **Digital Signage Feed** 대화 상자에는 **admin.freeplay.church/calendar**로 이동하는 링크가 있으며, 여기에서 FreePlay TV에 이 계획 유형을 예약할 수 있습니다.
+화면에 [FreePlay](../../freeplay/index.md)를 사용하는 경우에는 피드 URL이 필요하지 않습니다. **Digital Signage Feed** 대화 상자에는 **admin.freeplay.church/calendar**로 이동하는 링크가 있으며, 여기에서 FreePlay TV에 이 계획 유형을 예약할 수 있습니다.
 
 1. 대화 상자에서 **admin.freeplay.church/calendar** 링크를 클릭합니다. FreePlay Admin은 B1 Admin과 동일한 로그인 정보를 사용합니다.
 2. TV에 해당하는 화면 그룹을 선택하고 **Add schedule**을 클릭합니다.
 3. **Play** 아래에서 **Service plans**의 계획 유형을 선택합니다. 현재 계획에는 **(current plan)**이 표시됩니다.
 4. 요일과 시간을 설정한 다음 **Save**를 클릭합니다.
 
-TV는 설정한 시간에 따라 매주 해당 계획 유형의 현재 계획을 재생합니다. 이 방식은 사용자 지정한 계획을 포함하여 Go Curriculum 수업에서도 작동합니다. FreePlay는 **Content Providers**에서 사역에 연결된 Go Curriculum 계정(자세한 내용은 [수업 예약하기](./scheduling-lessons.md) 참고)으로 로그인하며, 사역에 연결된 계정이 없으면 교회의 Go Curriculum 연결을 사용합니다. 모든 옵션은 [캘린더 예약하기](../../freeplay/scheduled-mode/scheduling-the-calendar)에서 확인할 수 있으며, TV를 추가하려면 [화면 페어링하기](../../freeplay/scheduled-mode/pairing-a-screen)를 참고하세요.
+TV는 설정한 시간에 따라 매주 해당 계획 유형의 현재 계획을 재생합니다. 이 방식은 사용자 지정한 계획을 포함하여 Go Curriculum 수업에서도 작동합니다. FreePlay는 **Content Providers**에서 사역에 연결된 Go Curriculum 계정(자세한 내용은 [수업 예약하기](./scheduling-lessons.md) 참고)으로 로그인하며, 사역에 연결된 계정이 없으면 교회의 Go Curriculum 연결을 사용합니다. 모든 옵션은 [캘린더 예약하기](../../freeplay/scheduled-mode/scheduling-the-calendar.md)에서 확인할 수 있으며, TV를 추가하려면 [화면 페어링하기](../../freeplay/scheduled-mode/pairing-a-screen.md)를 참고하세요.
 
 :::note
 피드 URL에는 Go Curriculum 미디어가 포함되지 않습니다. 해당 콘텐츠에는 교회의 Go Curriculum 로그인 정보가 필요하기 때문입니다. 로비나 교실 TV에 Go Curriculum 수업을 표시하려면 FreePlay를 사용하세요.
@@ -53,4 +54,4 @@ TV는 설정한 시간에 따라 매주 해당 계획 유형의 현재 계획을
 
 - 이 사이니지 화면에 표시되는 계획을 [Plans](./plans.md) 페이지에서 관리하세요
 - [Lessons.church](./scheduling-lessons.md)로 콘텐츠를 예약하세요
-- [Scheduled Mode](../../freeplay/scheduled-mode/)로 FreePlay TV의 캘린더를 설정하세요
+- [Scheduled Mode](../../freeplay/scheduled-mode/index.md)로 FreePlay TV의 캘린더를 설정하세요

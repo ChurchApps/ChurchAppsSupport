@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "اربط B1 Admin بـ Make لأتمتة سير العمل: أنشئ مفتاح API، واضبط مُشغِّل B1.church والإجراءات، وحل الأخطاء الشائعة."
 ---
 
 # Make
@@ -110,6 +111,6 @@ title: "Make"
 
 ## انظر أيضًا
 
-- [Zapier](./zapier): النمط نفسه مع واجهة أبسط وكتالوج تطبيقات أكبر
-- [Slack & Discord](./slack-discord): إشعارات دردشة مدمجة دون الحاجة إلى Make
+- [Zapier](./zapier.md): النمط نفسه مع واجهة أبسط وكتالوج تطبيقات أكبر
+- [Slack & Discord](./slack-discord.md): إشعارات دردشة مدمجة دون الحاجة إلى Make
 - [Webhooks (مرجع المطوّر)](/docs/developer/api/webhooks)

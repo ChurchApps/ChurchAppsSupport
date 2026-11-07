@@ -1,5 +1,6 @@
 ---
 title: "Webbpush-notiser"
+description: "Ställ in VAPID-nycklar, WebPushHelper-klienten och service worker-hantering så att B1.church och B1 Admin kan skicka webbpush-notiser till medlemmar."
 ---
 
 # Webbpush-notiser
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Relaterade sidor
 
-- [Arkitektur för aviseringar](./architecture/notifications): hela tratten för eskalering via appen, push och e-post, samt påminnelsemotorn
-- [Realtidsarkitektur](./realtime): WebSocket-leverans. Push startar nu från samma tratt i appen tillsammans med socketleverans i samma omgång, inte bara som reserv när en socketleverans inte når fram
-- [Meddelandeslutpunkter](./api/endpoints/messaging): aviseringar, enheter och resten av meddelandeytan
-- [AppHelper](./shared-libraries/app-helper): npm-paketet som levererar `WebPushHelper`
+- [Arkitektur för aviseringar](./architecture/notifications.md): hela tratten för eskalering via appen, push och e-post, samt påminnelsemotorn
+- [Realtidsarkitektur](./realtime.md): WebSocket-leverans. Push startar nu från samma tratt i appen tillsammans med socketleverans i samma omgång, inte bara som reserv när en socketleverans inte når fram
+- [Meddelandeslutpunkter](./api/endpoints/messaging.md): aviseringar, enheter och resten av meddelandeytan
+- [AppHelper](./shared-libraries/app-helper.md): npm-paketet som levererar `WebPushHelper`

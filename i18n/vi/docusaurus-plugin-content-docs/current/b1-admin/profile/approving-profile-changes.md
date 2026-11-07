@@ -1,5 +1,6 @@
 ---
 title: "Phê duyệt thay đổi hồ sơ"
+description: "Xem và duyệt yêu cầu thay đổi hồ sơ của thành viên trong B1 Admin, và thiết lập Nhóm duyệt danh bạ để nhận các yêu cầu này."
 ---
 
 # Phê duyệt thay đổi hồ sơ

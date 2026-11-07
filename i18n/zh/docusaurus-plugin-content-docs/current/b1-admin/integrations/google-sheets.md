@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "通过 B1 Export 插件将 B1 Admin 连接到 Google Sheets，按需将人员、奉献、小组和考勤数据拉取到电子表格的各个工作表中。"
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ title: "Google Sheets"
 - **"B1 拒绝了 API 密钥 (401)"** — 密钥被撤销或错误。重新生成并重新粘贴它。
 - **"此 API 密钥缺少 /giving/donations 的权限 (403)"** — 密钥没有 `donations:read`。在 B1Admin 中更新密钥的 scopes。
 - **运行后工作表不刷新** — 确保您查看的是 *正确的* 选项卡名称（`B1 People` 等）。导出将创建该选项卡（如果它不存在）。
-- **"超过配额"** — Apps Script 对 `UrlFetchApp` 施加按用户日配额（通常每天数千次调用）。一个拥有许多记录的大教会可能需要在多天内拆分导出，或使用 [Make](./make) / 自定义集成进行高容量同步。
+- **"超过配额"** — Apps Script 对 `UrlFetchApp` 施加按用户日配额（通常每天数千次调用）。一个拥有许多记录的大教会可能需要在多天内拆分导出，或使用 [Make](./make.md) / 自定义集成进行高容量同步。
 
 ## 自定义附加组件
 
@@ -108,6 +109,6 @@ title: "Google Sheets"
 
 ## 另请参阅
 
-- [Zapier](./zapier) — 用于实时同步而不是按需导出
-- [Make](./make) — 用于具有更复杂变换的同步
+- [Zapier](./zapier.md) — 用于实时同步而不是按需导出
+- [Make](./make.md) — 用于具有更复杂变换的同步
 - [API 密钥（开发者参考）](/docs/developer/api/api-keys)

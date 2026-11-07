@@ -1,5 +1,6 @@
 ---
 title: "Vzhľad"
+description: "Nastavte farby, písma, medzery, logo a navigáciu pre webstránku vášho zboru v B1 Admin, plus widgety, analytiku GA4, presmerovania a vlastné CSS."
 ---
 
 # Vzhľad
@@ -13,7 +14,7 @@ Stránka Vzhľad vám umožňuje prispôsobiť celkový vzhľad vašej cirkevnej
 <div class="prereqs">
 <h4>Predtým, než začnete</h4>
 
-- Dokončite [počiatočné nastavenie](initial-setup) pre svoju webovú stránku
+- Dokončite [počiatočné nastavenie](./initial-setup.md) pre svoju webovú stránku
 - Pripravte si logo cirkvi vo formáte PNG s priehľadným pozadím a pomerom strán 4:1
 - Ak máte existujúcu štýlovú príručku, poznajte farby značky svojej cirkvi (hexadecimálne hodnoty)
 
@@ -98,7 +99,7 @@ Vlastné CSS je silný nástroj, ale pri nesprávnom použití môže rozbiť ro
 :::
 
 :::info
-Vaša stránka uplatňuje Zásady zabezpečenia obsahu (Content Security Policy), ktoré blokujú vložené skripty z akéhokoľvek iného zdroja. Pole **Custom HTML** tu a [prvok HTML](page-editor#using-the-html-element) na jednotlivých stránkach sú dôveryhodné výnimky. Kód, ktorý v nich uložíte, sa spustí tak, ako je, preto vkladajte iba skripty z dôveryhodných zdrojov (sledovacie kódy analytiky, widgety chatu a podobné vložené prvky).
+Vaša stránka uplatňuje Zásady zabezpečenia obsahu (Content Security Policy), ktoré blokujú vložené skripty z akéhokoľvek iného zdroja. Pole **Custom HTML** tu a [prvok HTML](./page-editor.md#using-the-html-element) na jednotlivých stránkach sú dôveryhodné výnimky. Kód, ktorý v nich uložíte, sa spustí tak, ako je, preto vkladajte iba skripty z dôveryhodných zdrojov (sledovacie kódy analytiky, widgety chatu a podobné vložené prvky).
 :::
 
 ## Štýlové témy
@@ -107,5 +108,5 @@ Ak potrebujete rýchly začiatok, položky **Suggested Palettes** v časti Fareb
 
 ## Ďalšie kroky
 
-- [Správa stránok](managing-pages) -- Vytvárajte a organizujte stránky svojej webovej stránky
-- [Súbory](files) -- Nahrajte mediálne súbory pre svoju stránku
+- [Správa stránok](./managing-pages.md) -- Vytvárajte a organizujte stránky svojej webovej stránky
+- [Súbory](./files.md) -- Nahrajte mediálne súbory pre svoju stránku

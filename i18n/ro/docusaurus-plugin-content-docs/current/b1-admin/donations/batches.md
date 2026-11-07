@@ -1,5 +1,6 @@
 ---
 title: "Loturile de donații"
+description: "Grupați ofrandele în loturi de donații în B1 Admin, apoi închideți, tipăriți sau exportați fiecare lot, ca totalurile să corespundă depozitelor bancare."
 ---
 
 # Loturile de donații

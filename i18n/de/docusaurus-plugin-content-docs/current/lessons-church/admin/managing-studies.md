@@ -1,5 +1,6 @@
 ---
 title: "Studienreihen verwalten"
+description: "Studien in einem Programm im Admin von Lessons.church erstellen, bearbeiten und kategorisieren, mit Serienübersichten oder Newsletter-Vorlagen."
 ---
 
 # Studienreihen verwalten

@@ -1,5 +1,6 @@
 ---
 title: "Donasi"
+description: "Catat, atur, dan laporkan pemberian gereja di B1 Admin, mulai dari batch dan dana hingga laporan akhir tahun serta donasi online lewat Stripe atau PayPal."
 ---
 
 # Donasi

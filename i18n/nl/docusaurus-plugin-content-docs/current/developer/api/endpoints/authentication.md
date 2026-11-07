@@ -1,5 +1,6 @@
 ---
 title: "Verificatie & Toestemmingen"
+description: "Referentie voor de JWT-login, tweefactorauthenticatie, OAuth 2.0-flows en het rechtenmodel van de ChurchApps API voor ontwikkelaars die integraties bouwen."
 ---
 
 # Verificatie & Toestemmingen
@@ -232,5 +233,5 @@ In de eindpunttabellen in deze documentatie worden deze aangeduid als **JWT** en
 
 ## Gerelateerde pagina's
 
-- [Modulestructuur](../module-structure) — Hoe controllers, opslagplaatsen en modellen zijn georganiseerd
-- [Lokale setup](../local-setup) — Voer de API lokaal uit voor ontwikkeling
+- [Modulestructuur](../module-structure.md) — Hoe controllers, opslagplaatsen en modellen zijn georganiseerd
+- [Lokale setup](../local-setup.md) — Voer de API lokaal uit voor ontwikkeling

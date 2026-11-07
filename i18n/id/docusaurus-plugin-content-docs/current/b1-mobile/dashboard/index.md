@@ -1,5 +1,6 @@
 ---
 title: "Dasbor"
+description: "Kenali layar beranda B1 Mobile, tempat fitur yang paling sering digunakan ditampilkan sebagai kartu besar dan lainnya ada di Tindakan Cepat."
 ---
 
 # Dasbor
@@ -28,7 +29,7 @@ Di bawah kartu utama, Anda akan melihat hingga dua **kartu unggulan** yang ditam
 
 ## Tindakan Cepat
 
-Fitur-fitur lainnya muncul dalam kisi **Tindakan Cepat** di bawah kartu unggulan. Setiap item menampilkan ikon dan label. Ini adalah semua tautan navigasi lain yang dikonfigurasi gereja Anda, mulai dari [grup](../groups/) dan [pemberian](../giving/) hingga [check-in](../checkin/), [khotbah](../content/sermons.md), dan lainnya.
+Fitur-fitur lainnya muncul dalam kisi **Tindakan Cepat** di bawah kartu unggulan. Setiap item menampilkan ikon dan label. Ini adalah semua tautan navigasi lain yang dikonfigurasi gereja Anda, mulai dari [grup](../groups/index.md) dan [pemberian](../giving/index.md) hingga [check-in](../checkin/index.md), [khotbah](../content/sermons.md), dan lainnya.
 
 ## Cara Tata Letak Menyesuaikan Diri
 
@@ -41,7 +42,7 @@ Tata letak dasbor dipersonalisasi berdasarkan pola penggunaan Anda. Setiap kali 
 Jika Anda belum pernah menggunakan aplikasi, fitur akan muncul sesuai urutan default yang dikonfigurasi gereja Anda. Seiring waktu, dasbor akan menyusun ulang diri sesuai kebiasaan Anda.
 
 :::info
-Fitur yang tersedia di dasbor Anda dikonfigurasi oleh administrator gereja melalui [B1 Admin](../../b1-admin/). Jika Anda tidak melihat fitur yang Anda harapkan, hubungi kantor gereja Anda.
+Fitur yang tersedia di dasbor Anda dikonfigurasi oleh administrator gereja melalui [B1 Admin](../../b1-admin/index.md). Jika Anda tidak melihat fitur yang Anda harapkan, hubungi kantor gereja Anda.
 :::
 
 ## Menyegarkan Dasbor

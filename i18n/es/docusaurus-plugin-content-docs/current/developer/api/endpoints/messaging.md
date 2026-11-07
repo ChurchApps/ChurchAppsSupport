@@ -1,5 +1,6 @@
 ---
 title: "Endpoints de Mensajería"
+description: "Referencia de los endpoints de mensajería de la API de ChurchApps: conversaciones, reglas de acceso a notas, mensajes de texto, plantillas de correo, notificaciones y dispositivos."
 ---
 
 # Endpoints de Mensajería
@@ -190,7 +191,7 @@ Ruta base: `/messaging/notificationpreferences`
 
 Ruta base: `/messaging/connections`
 
-Gestiona las conexiones WebSocket o en tiempo real para el chat, las conversaciones de grupo, los mensajes privados y las transmisiones en vivo. Consulte [Arquitectura en tiempo real](../../realtime) para ver el protocolo completo de extremo a extremo.
+Gestiona las conexiones WebSocket o en tiempo real para el chat, las conversaciones de grupo, los mensajes privados y las transmisiones en vivo. Consulte [Arquitectura en tiempo real](../../realtime.md) para ver el protocolo completo de extremo a extremo.
 
 | Método | Ruta | Autenticación | Permiso | Descripción |
 |--------|------|---------------|---------|-------------|
@@ -367,9 +368,9 @@ Registra el estado de entrega de los mensajes enviados (SMS, notificaciones push
 
 ## Páginas relacionadas
 
-- [Arquitectura en tiempo real](../../realtime) -- Protocolo WebSocket, suscripciones a salas y el marco de entrega unificado
-- [Notificaciones push web](../../web-push) -- Registro y entrega de notificaciones push en el navegador
-- [Endpoints de membresía](./membership) -- Personas, grupos, roles e identidad básica
-- [Endpoints de asistencia](./attendance) -- Seguimiento de servicios y visitas
-- [Autenticación y permisos](./authentication) -- Flujo de inicio de sesión, JWT, OAuth, modelo de permisos
-- [Estructura del módulo](../module-structure) -- Patrones de organización del código
+- [Arquitectura en tiempo real](../../realtime.md) -- Protocolo WebSocket, suscripciones a salas y el marco de entrega unificado
+- [Notificaciones push web](../../web-push.md) -- Registro y entrega de notificaciones push en el navegador
+- [Endpoints de membresía](./membership.md) -- Personas, grupos, roles e identidad básica
+- [Endpoints de asistencia](./attendance.md) -- Seguimiento de servicios y visitas
+- [Autenticación y permisos](./authentication.md) -- Flujo de inicio de sesión, JWT, OAuth, modelo de permisos
+- [Estructura del módulo](../module-structure.md) -- Patrones de organización del código

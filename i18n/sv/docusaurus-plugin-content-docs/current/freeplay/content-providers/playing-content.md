@@ -1,5 +1,6 @@
 ---
 title: "Spela upp innehåll"
+description: "Styr FreePlay med fjärrkontroll: pausa, hoppa mellan bilder och videor, gå till valfritt budskap och avsluta uppspelningen oavsett innehållskälla."
 ---
 
 # Spela upp innehåll
@@ -13,13 +14,13 @@ FreePlay-spelaren fyller skärmen och är gjord för TV-fjärrkontroller. Den sp
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Välj något att spela upp. Se [Bläddra i och ladda ner innehåll](./browsing-content), [Planläge](../plan-mode/) eller [Meddelanden](./announcements)
+- Välj något att spela upp. Se [Bläddra i och ladda ner innehåll](./browsing-content.md), [Planläge](../plan-mode/index.md) eller [Meddelanden](./announcements.md)
 - Tryck på **Start** för att öppna spelaren
 
 </div>
 
 :::info
-Skärmar som är kopplade till en kalender använder en separat schemalagd spelare med något andra kontroller. Se [Schemalagd uppspelning på TV:n](../scheduled-mode/scheduled-playback).
+Skärmar som är kopplade till en kalender använder en separat schemalagd spelare med något andra kontroller. Se [Schemalagd uppspelning på TV:n](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Spelarkontroller
@@ -57,7 +58,7 @@ Tryck på **Upp** under uppspelningen för att öppna **Välj ett meddelande**. 
 Tryck på **Nedåt** eller **Tillbaka** på fjärrkontrollen för att lämna spelaren. Var du hamnar beror på vad du spelade upp:
 
 - **Innehåll från leverantör** - Tillbaka till innehållsbläddraren
-- **En plan** - Tillbaka till nedladdningsskärmen för planen. Se [Planläge](../plan-mode/)
+- **En plan** - Tillbaka till nedladdningsskärmen för planen. Se [Planläge](../plan-mode/index.md)
 - **En nedladdning** - Tillbaka till skärmen **Nedladdningar**
 
 :::info
@@ -66,5 +67,5 @@ Skärmen förblir vaken medan spelaren är öppen, så TV:n somnar inte mitt i e
 
 ## Relaterade artiklar
 
-- **[Bläddra i och ladda ner innehåll](./browsing-content)** - Hitta innehåll och ladda ner det för uppspelning offline
-- **[Schemalagd uppspelning på TV:n](../scheduled-mode/scheduled-playback)** - Fjärrkontrollfunktioner för skärmar som följer en kalender
+- **[Bläddra i och ladda ner innehåll](./browsing-content.md)** - Hitta innehåll och ladda ner det för uppspelning offline
+- **[Schemalagd uppspelning på TV:n](../scheduled-mode/scheduled-playback.md)** - Fjärrkontrollfunktioner för skärmar som följer en kalender

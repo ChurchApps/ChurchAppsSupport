@@ -1,5 +1,6 @@
 ---
 title: "Anmode om at deltage i en gruppe"
+description: "Anmod om at deltage i en gruppe, der kræver godkendelse i B1.church, tilføj en valgfri note til lederen, og følg eller annuller din ventende anmodning."
 ---
 
 # Anmode om at deltage i en gruppe

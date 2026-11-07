@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "Xhuma i-B1 Admin ku-Google Sheets nge-add-on ye-B1 Export ukuze uhlanganise bantfu, timinikelo, emaqembu nekutfola kumatabhu tespredshithi."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ Inkhipho isebenta ngasemuva ngaphansi kwe-akhawunti yakho ye-Google. Nangabe ikh
 - **"B1 rejected the API key (401)"** — ikhiya isusiwe nome ayilungi. Yicalise kabusha uyifake.
 - **"This API key lacks permission for /giving/donations (403)"** — ikhiya ayinawo `donations:read`. Hlela emkhawulo weikhiya ku-B1Admin.
 - **Ishidi alibuyaphindzi** ngemuva kwekusebenta — cinisekisa kutsi ubuka ithebhu **lelifanele** (`B1 People` njalonjalo). Inkhipho iyakha ithebhu nangabe beyingekho.
-- **"Quota exceeded"** — i-Apps Script inemikhawulo yelanga yamsebentisi ngamunye ku-`UrlFetchApp` (ngalokuvamile tinkhulungwane tekubitwa ngelilanga). Libandla lelikhulu lelinemarekhodi lamanyenti kungadzingeka kuhlukanise inkhipho emalangeni lamanyenti nome usebentise [Make](./make) / kuhlanganiswa lokwakhiwe ngco kwekukhipha lokukhulu.
+- **"Quota exceeded"** — i-Apps Script inemikhawulo yelanga yamsebentisi ngamunye ku-`UrlFetchApp` (ngalokuvamile tinkhulungwane tekubitwa ngelilanga). Libandla lelikhulu lelinemarekhodi lamanyenti kungadzingeka kuhlukanise inkhipho emalangeni lamanyenti nome usebentise [Make](./make.md) / kuhlanganiswa lokwakhiwe ngco kwekukhipha lokukhulu.
 
 ## Kushintja i-Add-On
 
@@ -108,6 +109,6 @@ I-add-on ivulekile emtfombeni — luhlelo lwe-Apps Script luhlala ku-repo ye `B1
 
 ## Bona Nako
 
-- [Zapier](./zapier) — kukusinkroniza ngesikhatsi lesingiso esikhundleni sekukhipha ngesikhatsi lesidzingekile
-- [Make](./make) — kukusinkroniza ngekushintjwa lokunengiwe
+- [Zapier](./zapier.md) — kukusinkroniza ngesikhatsi lesingiso esikhundleni sekukhipha ngesikhatsi lesidzingekile
+- [Make](./make.md) — kukusinkroniza ngekushintjwa lokunengiwe
 - [API Keys (developer reference)](/docs/developer/api/api-keys)

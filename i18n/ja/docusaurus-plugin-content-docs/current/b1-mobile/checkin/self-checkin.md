@@ -1,5 +1,7 @@
 ---
-title: "セルフチェックイン"
+title: "B1 Mobile アプリからのセルフチェックイン"
+sidebar_label: "セルフチェックイン"
+description: "B1 Mobile アプリで礼拝時間を選び、各メンバーのグループを割り当てて、自分と家族を礼拝にチェックインさせます。"
 ---
 
 # セルフチェックイン
@@ -13,7 +15,7 @@ B1 Mobile からのチェックインは、数回の操作で完了するシン�
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- [B1 Mobile をインストール](../getting-started/installing)し、アカウントに[ログイン](../getting-started/logging-in)する
+- [B1 Mobile をインストール](../getting-started/installing.md)し、アカウントに[ログイン](../getting-started/logging-in.md)する
 - プロフィールに[世帯のメンバー](../profile/household.md)が登録されていることを確認する
 
 </div>

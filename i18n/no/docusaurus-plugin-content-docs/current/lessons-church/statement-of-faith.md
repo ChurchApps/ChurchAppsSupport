@@ -1,5 +1,6 @@
 ---
 title: Trosbekjennelse
+description: "Hva ChurchApps tror om Gud, Jesus, Den hellige ånd, Skriften, frelsen og kirken, og standarden for gjennomgang av Lessons.church-læreplaner."
 ---
 
 # Trosbekjennelse

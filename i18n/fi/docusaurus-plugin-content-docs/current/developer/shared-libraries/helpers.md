@@ -1,5 +1,6 @@
 ---
 title: "Kirjastot"
+description: "@churchapps/helpers-paketti: mitä se tarjoaa, mitkä sovellukset käyttävät sitä, paikallinen koonti Packages-työtilassa ja changesets-julkaisu."
 ---
 
 # Kirjastot
@@ -13,14 +14,14 @@ Paketti `@churchapps/helpers` tarjoaa perustyökaluja, joita kaikki ChurchApps-p
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Asenna **Node.js** ja **Git** -- katso [Esivaatimukset](../setup/prerequisites)
+- Asenna **Node.js** ja **Git** -- katso [Esivaatimukset](../setup/prerequisites.md)
 - Tutustu [Packages-työtilaan](./index.md) ja julkaisuprosessiin
 
 </div>
 
 ## Kuka tätä käyttää
 
-Jokainen ChurchApps-rajapinta (Api, AskApi ja LessonsApi) sekä jokainen web-frontend (B1Admin, B1App, B1Transfer ja LessonsApp) riippuu suoraan tästä paketista. Frontendit saavat myös monia sen vientejä (`ApiHelper`, `DateHelper`, `UserHelper` ja muut rajapinnat) uudelleen viennin kautta [`@churchapps/apphelper`](./app-helper)-paketista. Muut jaetut paketit ilmoittavat sen vertais-riippuvuutena, jotta jokainen sovellus käyttää täsmälleen yhtä kopiota.
+Jokainen ChurchApps-rajapinta (Api, AskApi ja LessonsApi) sekä jokainen web-frontend (B1Admin, B1App, B1Transfer ja LessonsApp) riippuu suoraan tästä paketista. Frontendit saavat myös monia sen vientejä (`ApiHelper`, `DateHelper`, `UserHelper` ja muut rajapinnat) uudelleen viennin kautta [`@churchapps/apphelper`](./app-helper.md)-paketista. Muut jaetut paketit ilmoittavat sen vertais-riippuvuutena, jotta jokainen sovellus käyttää täsmälleen yhtä kopiota.
 
 ## Paikallinen kehitysympäristö
 
@@ -55,7 +56,7 @@ Julkaisut kulkevat changesets-työkalun kautta, eikä versioita nosteta käsin:
 1. Aja `yarn changeset` työtilan juuressa, valitse `@churchapps/helpers` sopivalla version nostotyypillä ja tallenna syntynyt changeset-tiedosto muutoksesi mukana.
 2. Kun olet valmis julkaisemaan, aja `yarn publish-all` juuressa -- se nostaa versiot, kirjoittaa CHANGELOG-tiedostot, rakentaa riippuvuusjärjestyksessä ja julkaisee npm-rekisteriin.
 
-Uudet jaetut rajapinnat kuuluvat hakemistoon `helpers/src/interfaces/` ja ne viedään uudelleen paketin pääkooditiedoston kautta. Verkkosivunrakentajan elementtityyppiluettelo (`ElementTypes.ts` -- 35 tyyppiä vastausskeemoineen) sijaitsee myös täällä. Se on sopimus, jonka apphelper-renderöijät, B1Admin-muokkauslomakkeet ja tekoälyn sisällöntuotantokehotteet jakavat (katso [Verkkosivunrakentajan arkkitehtuuri](../architecture/website-builder)).
+Uudet jaetut rajapinnat kuuluvat hakemistoon `helpers/src/interfaces/` ja ne viedään uudelleen paketin pääkooditiedoston kautta. Verkkosivunrakentajan elementtityyppiluettelo (`ElementTypes.ts` -- 35 tyyppiä vastausskeemoineen) sijaitsee myös täällä. Se on sopimus, jonka apphelper-renderöijät, B1Admin-muokkauslomakkeet ja tekoälyn sisällöntuotantokehotteet jakavat (katso [Verkkosivunrakentajan arkkitehtuuri](../architecture/website-builder.md)).
 
 :::warning
 Koska tätä pakettia käyttää jokainen ChurchApps-projekti, tämän kirjaston muutoksilla on laaja vaikutus. `helpers`-paketin julkaisu nostaa automaattisesti myös `apihelper`- ja `apphelper`-paketit, jotta niiden riippuvuusrajat pysyvät ajan tasalla. Testaa Yarn-portaalilla vähintään yhdessä käyttävässä rajapinnassa ja yhdessä käyttävässä web-sovelluksessa ennen julkaisua.
@@ -63,6 +64,6 @@ Koska tätä pakettia käyttää jokainen ChurchApps-projekti, tämän kirjaston
 
 ## Aiheeseen liittyvät artikkelit
 
-- **[ApiHelper](./api-helper)** -- Palvelinpuolen apuluokat, jotka riippuvat tästä paketista
-- **[AppHelper](./app-helper)** -- React-komponentit, jotka riippuvat tästä paketista
+- **[ApiHelper](./api-helper.md)** -- Palvelinpuolen apuluokat, jotka riippuvat tästä paketista
+- **[AppHelper](./app-helper.md)** -- React-komponentit, jotka riippuvat tästä paketista
 - **[Jaettujen kirjastojen yleiskatsaus](./index.md)** -- Työtilan asennus, julkaisuprosessi ja paikallinen linkitystyönkulku

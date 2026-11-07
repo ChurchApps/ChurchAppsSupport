@@ -1,5 +1,6 @@
 ---
 title: "Pencarian"
+description: "Cari program, studi, dan pelajaran di pustaka Lessons.church dengan kata kunci atau kisah Alkitab, serta cara hasil pencarian diurutkan dan diberi label."
 ---
 
 # Pencarian

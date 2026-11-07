@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Zapier के साथ VOMO स्वयंसेवक साइन-अप और किओस्क चेक-इन को B1 Admin के लोगों और समूहों से जोड़ें, जिसमें API कुंजी स्कोप और सेटअप चरण शामिल हैं।"
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ VOMO के एक्शन फ़िलहाल केवल **परियो
 
 ### SMS के ज़रिए "साइन अप करने के लिए धन्यवाद" संदेश भेजें
 
-उसी Zap में VOMO Participation → Clearstream Send Text या Text In Church Send Message जोड़ें। दोनों के पास पहली-श्रेणी के Zapier एक्शन हैं। देखें [Clearstream](./clearstream) और [Text In Church](./text-in-church)।
+उसी Zap में VOMO Participation → Clearstream Send Text या Text In Church Send Message जोड़ें। दोनों के पास पहली-श्रेणी के Zapier एक्शन हैं। देखें [Clearstream](./clearstream.md) और [Text In Church](./text-in-church.md)।
 
 ### ड्रॉप-ऑफ़ का पता लगाएँ
 
@@ -91,6 +92,6 @@ VOMO के एक्शन फ़िलहाल केवल **परियो
 
 ## इन्हें भी देखें
 
-- [Zapier (ओवरव्यू)](../zapier): हर Zapier रेसिपी का B1 पक्ष
-- [Clearstream](./clearstream), [Text In Church](./text-in-church): स्वयंसेवक साइनअप को SMS पुष्टि से जोड़ें
+- [Zapier (ओवरव्यू)](../zapier.md): हर Zapier रेसिपी का B1 पक्ष
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md): स्वयंसेवक साइनअप को SMS पुष्टि से जोड़ें
 - [Webhooks (डेवलपर संदर्भ)](/docs/developer/api/webhooks): वे इवेंट जिन पर VOMO ट्रिगर हो सकता है

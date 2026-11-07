@@ -1,5 +1,6 @@
 ---
 title: "Mengelola Halaman"
+description: "Buat, sunting, dan atur halaman serta navigasi di tampilan Halaman Situs B1 Admin, termasuk pengaturan halaman, pengalihan, dan templat situs."
 ---
 
 # Mengelola Halaman
@@ -13,13 +14,13 @@ Tampilan Halaman Situs Web adalah pusat kendali Anda untuk membuat, mengedit, da
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Selesaikan [Pengaturan Awal](initial-setup) untuk mengonfigurasi domain dan pengaturan dasar situs Anda
-- Siapkan konten dan gambar Anda. Gunakan pengelola [Berkas](files) untuk mengunggah aset media terlebih dahulu.
+- Selesaikan [Pengaturan Awal](./initial-setup.md) untuk mengonfigurasi domain dan pengaturan dasar situs Anda
+- Siapkan konten dan gambar Anda. Gunakan pengelola [Berkas](./files.md) untuk mengunggah aset media terlebih dahulu.
 
 </div>
 
 :::info
-Jika gereja Anda memiliki lebih dari satu situs web (misalnya, situs terpisah untuk setiap kampus), gunakan pengalih situs di bagian atas tampilan Halaman Situs Web untuk berpindah di antara situs-situs tersebut. Setiap situs memiliki halaman, navigasi, dan pengaturan [tampilan](appearance) sendiri.
+Jika gereja Anda memiliki lebih dari satu situs web (misalnya, situs terpisah untuk setiap kampus), gunakan pengalih situs di bagian atas tampilan Halaman Situs Web untuk berpindah di antara situs-situs tersebut. Setiap situs memiliki halaman, navigasi, dan pengaturan [tampilan](./appearance.md) sendiri.
 :::
 
 ## Memahami Jenis Halaman
@@ -35,7 +36,7 @@ Anda dapat mengubah halaman yang dibuat otomatis menjadi halaman kustom jika ing
 
 1. Klik tombol **Tambah Halaman** di pojok kanan atas tampilan Halaman Situs Web.
 2. Pilih jenis halaman (kosong atau templat) dan beri nama.
-3. Klik **Edit Konten** di samping halaman mana pun untuk membuka [editor halaman](page-editor), tempat Anda dapat menambahkan bagian, teks, gambar, dan elemen lainnya.
+3. Klik **Edit Konten** di samping halaman mana pun untuk membuka [editor halaman](./page-editor.md), tempat Anda dapat menambahkan bagian, teks, gambar, dan elemen lainnya.
 4. Klik **Pengaturan Halaman** di samping halaman untuk memperbarui judul halaman, jalur URL, dan metadata lainnya.
 5. Klik jalur halaman di kolom **Jalur** untuk membuka halaman langsung di tab baru dan melihat tampilannya bagi pengunjung.
 
@@ -112,10 +113,10 @@ Jika Anda membangun situs dari awal, Anda dapat menggunakan **Templat Situs** un
 3. Saat menemukan yang Anda sukai, klik **Terapkan Templat**.
 4. Halaman yang belum ada akan dibuat dan ditambahkan ke navigasi Anda. Halaman yang sudah ada dibiarkan apa adanya.
 
-Setelah menerapkan templat, buka setiap halaman di [editor halaman](page-editor) untuk mengganti teks dan gambar contoh dengan konten asli gereja Anda.
+Setelah menerapkan templat, buka setiap halaman di [editor halaman](./page-editor.md) untuk mengganti teks dan gambar contoh dengan konten asli gereja Anda.
 
 :::info
-Templat situs membuat struktur halaman dan navigasi. Templat tidak menimpa skema warna atau font situs Anda -- itu dikendalikan oleh [Tampilan](appearance).
+Templat situs membuat struktur halaman dan navigasi. Templat tidak menimpa skema warna atau font situs Anda -- itu dikendalikan oleh [Tampilan](./appearance.md).
 :::
 
 ## Lightbox Gambar
@@ -124,7 +125,7 @@ Ketika pengunjung mengklik gambar di situs web Anda, gambar tersebut akan terbuk
 
 ## Langkah Selanjutnya
 
-- [Pengaturan Awal](initial-setup) -- Petunjuk pengaturan pertama kali
-- [Menggunakan Editor Halaman](page-editor) -- Pelajari cara membangun dan mendesain konten halaman
-- [Tampilan](appearance) -- Sesuaikan tema visual situs Anda
-- [Berkas](files) -- Unggah dan kelola aset media untuk halaman Anda
+- [Pengaturan Awal](./initial-setup.md) -- Petunjuk pengaturan pertama kali
+- [Menggunakan Editor Halaman](./page-editor.md) -- Pelajari cara membangun dan mendesain konten halaman
+- [Tampilan](./appearance.md) -- Sesuaikan tema visual situs Anda
+- [Berkas](./files.md) -- Unggah dan kelola aset media untuk halaman Anda

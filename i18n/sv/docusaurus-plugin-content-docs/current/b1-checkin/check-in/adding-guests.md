@@ -1,5 +1,6 @@
 ---
 title: "Lägga till gäster"
+description: "Lägg till ett besökande barn, släkting eller vän i ett hushåll i B1 Checkin-kiosken, tilldela sedan grupper och slutför incheckningen."
 ---
 
 # Lägga till gäster
@@ -13,8 +14,8 @@ Om någon besöker din familj och behöver checka in tillsammans med ditt hushå
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Sök upp din familj](./looking-up-members) och välj en medlem i sökresultaten
-- Var på [granskningsskärmen för hushållet](./household-review), där du kan se dina familjemedlemmar
+- [Sök upp din familj](./looking-up-members.md) och välj en medlem i sökresultaten
+- Var på [granskningsskärmen för hushållet](./household-review.md), där du kan se dina familjemedlemmar
 
 </div>
 
@@ -36,8 +37,8 @@ Om gästens namn matchar någon som redan finns i systemet men inte är medlem, 
 
 När gästen visas i hushållets lista kan du:
 
-- **Expandera deras kort** och [tilldela dem till en grupp](./group-assignment), precis som alla andra familjemedlemmar.
-- **[Checka in](./completing-checkin)** hela hushållet, inklusive gästen.
+- **Expandera deras kort** och [tilldela dem till en grupp](./group-assignment.md), precis som alla andra familjemedlemmar.
+- **[Checka in](./completing-checkin.md)** hela hushållet, inklusive gästen.
 
 ## Avbryta
 
@@ -49,4 +50,4 @@ Om du lägger till en gäst i kiosken skapas en personpost i kyrkans databas. Ky
 
 ## Nästa steg
 
-När du har lagt till gäster och [tilldelat grupper](./group-assignment) vid behov är du redo att [slutföra incheckningen](./completing-checkin).
+När du har lagt till gäster och [tilldelat grupper](./group-assignment.md) vid behov är du redo att [slutföra incheckningen](./completing-checkin.md).

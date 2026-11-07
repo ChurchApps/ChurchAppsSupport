@@ -1,5 +1,6 @@
 ---
 title: "Opas: Aloita seurakuntasi käyttö B1:ssä"
+description: "Käy läpi uuden seurakunnan perustaminen B1 Adminissa: luo tili, määritä asetukset, lisää roolit, tuo jäseniä ja ota käyttöön keskeiset ominaisuudet."
 ---
 
 # Aloita seurakuntasi käyttö B1:ssä

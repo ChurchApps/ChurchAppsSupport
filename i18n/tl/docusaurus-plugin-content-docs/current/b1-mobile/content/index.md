@@ -1,5 +1,7 @@
 ---
-title: "Nilalaman"
+title: "Mga Tampok ng Nilalaman sa B1 Mobile App"
+sidebar_label: "Nilalaman"
+description: "Hanapin ang sermon, live stream, pagbasa ng Bibliya, at Verse of the Day sa B1 Mobile app, at tingnan kung anong tampok ang naka-on sa simbahan."
 ---
 
 # Nilalaman
@@ -37,13 +39,13 @@ I-access ang kurikulum at mga materyal sa pag-aaral ng iyong simbahan sa pamamag
 Ang mga feature ng nilalaman ay available sa pamamagitan ng drawer menu sa app. Ang iyong church administrator ang nagpapasya kung aling mga feature ng nilalaman ang naka-enable, kaya maaaring hindi mo makita ang lahat ng opsyong nakalista sa itaas. Kung nawawala ang isang partikular na feature, maaaring hindi pa ito na-configure ng iyong simbahan.
 
 :::info
-Ang mga feature ng nilalaman ay na-configure ng iyong church administrator sa pamamagitan ng [B1 Admin](../../b1-admin/). Kung hindi mo makita ang isang feature na inaasahan mo, makipag-ugnayan sa opisina ng iyong simbahan.
+Ang mga feature ng nilalaman ay na-configure ng iyong church administrator sa pamamagitan ng [B1 Admin](../../b1-admin/index.md). Kung hindi mo makita ang isang feature na inaasahan mo, makipag-ugnayan sa opisina ng iyong simbahan.
 :::
 
 ## Mga Susunod na Hakbang
 
-- [Mga Sermon](./sermons) -- Mag-browse at manood ng mga naka-record na sermon
-- [Live Streaming](./live-streaming) -- Manood ng mga live broadcast
-- [Bibliya](./bible) -- Basahin ang Banal na Kasulatan sa built-in na reader
-- [Bersikulo ng Araw](./verse-of-the-day) -- Tingnan ang pang-araw-araw na bersikulo ngayon
-- [Mga Aralin](./lessons) -- I-access ang kurikulum at mga materyal sa pag-aaral
+- [Mga Sermon](./sermons.md) -- Mag-browse at manood ng mga naka-record na sermon
+- [Live Streaming](./live-streaming.md) -- Manood ng mga live broadcast
+- [Bibliya](./bible.md) -- Basahin ang Banal na Kasulatan sa built-in na reader
+- [Bersikulo ng Araw](./verse-of-the-day.md) -- Tingnan ang pang-araw-araw na bersikulo ngayon
+- [Mga Aralin](./lessons.md) -- I-access ang kurikulum at mga materyal sa pag-aaral

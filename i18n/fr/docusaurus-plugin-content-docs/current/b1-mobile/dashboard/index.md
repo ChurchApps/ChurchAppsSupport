@@ -1,5 +1,6 @@
 ---
 title: "Tableau de bord"
+description: "Repérez-vous dans l’écran d’accueil de B1 Mobile : vos fonctions les plus utilisées apparaissent en grandes cartes, les autres dans Actions rapides."
 ---
 
 # Tableau de bord
@@ -28,7 +29,7 @@ Sous la carte principale, vous verrez jusqu'à deux **cartes en vedette** côte 
 
 ## Actions rapides
 
-Les autres fonctionnalités apparaissent dans une grille **Actions rapides** sous les cartes en vedette. Chaque élément affiche une icône et un libellé. Il s'agit de tous les autres liens de navigation configurés par votre église, qui vous donnent accès à tout, des [groupes](../groups/) et [dons](../giving/) jusqu'au [pointage](../checkin/), aux [prédications](../content/sermons.md) et plus encore.
+Les autres fonctionnalités apparaissent dans une grille **Actions rapides** sous les cartes en vedette. Chaque élément affiche une icône et un libellé. Il s'agit de tous les autres liens de navigation configurés par votre église, qui vous donnent accès à tout, des [groupes](../groups/index.md) et [dons](../giving/index.md) jusqu'au [pointage](../checkin/index.md), aux [prédications](../content/sermons.md) et plus encore.
 
 ## Comment la disposition s'adapte
 
@@ -41,7 +42,7 @@ La disposition du tableau de bord est personnalisée selon vos habitudes d'utili
 Si vous n'avez pas encore utilisé l'application, les fonctionnalités apparaissent dans l'ordre par défaut configuré par votre église. Au fil du temps, le tableau de bord se réorganise pour correspondre à vos habitudes.
 
 :::info
-Les fonctionnalités disponibles sur votre tableau de bord sont configurées par l'administrateur de votre église via [B1 Admin](../../b1-admin/). Si vous ne voyez pas une fonctionnalité que vous attendez, contactez le secrétariat de votre église.
+Les fonctionnalités disponibles sur votre tableau de bord sont configurées par l'administrateur de votre église via [B1 Admin](../../b1-admin/index.md). Si vous ne voyez pas une fonctionnalité que vous attendez, contactez le secrétariat de votre église.
 :::
 
 ## Actualiser le tableau de bord

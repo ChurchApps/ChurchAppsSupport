@@ -1,5 +1,6 @@
 ---
 title: "Approuver les modifications de profil"
+description: "Examinez et approuvez les demandes de modification de profil des membres dans B1 Admin, et configurez le groupe d'approbation du répertoire qui les reçoit."
 ---
 
 # Approuver les modifications de profil

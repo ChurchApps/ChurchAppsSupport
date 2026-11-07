@@ -1,5 +1,7 @@
 ---
-title: "Direktori Anggota"
+title: "Direktori Anggota di Portal Anggota B1.church"
+sidebar_label: "Direktori Anggota"
+description: "Cari dan telusuri anggota gereja di direktori B1.church, lihat profil dan anggota rumah tangga, serta siapa yang dapat mengakses direktori."
 ---
 
 # Direktori Anggota

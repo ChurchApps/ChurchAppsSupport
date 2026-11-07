@@ -1,5 +1,7 @@
 ---
-title: "Primeros pasos"
+title: "Primeros pasos con B1 Checkin"
+sidebar_label: "Primeros pasos"
+description: "Configura la app del quiosco de B1 Checkin en una tableta Android: instálala, inicia sesión, elige tu iglesia y, opcionalmente, conecta una impresora de etiquetas."
 ---
 
 # Primeros pasos con B1 Church Checkin
@@ -27,9 +29,9 @@ Configurar B1 Church Checkin solo lleva unos minutos. Esta sección te guía par
 
 Cuando abras la aplicación por primera vez, seguirás tres pasos:
 
-1. **[Inicia sesión](./logging-in)** -- Introduce tu correo electrónico y contraseña para autenticarte.
-2. **[Selecciona tu iglesia](./logging-in)** -- Si tu cuenta está vinculada a varias iglesias, elige cuál debe atender este quiosco.
-3. **[Configura una impresora](./printer-setup)** -- Configura una impresora de red para imprimir etiquetas, o omite este paso si no necesitas etiquetas.
+1. **[Inicia sesión](./logging-in.md)** -- Introduce tu correo electrónico y contraseña para autenticarte.
+2. **[Selecciona tu iglesia](./logging-in.md)** -- Si tu cuenta está vinculada a varias iglesias, elige cuál debe atender este quiosco.
+3. **[Configura una impresora](./printer-setup.md)** -- Configura una impresora de red para imprimir etiquetas, o omite este paso si no necesitas etiquetas.
 
 Después del primer inicio de sesión, la aplicación guarda tus credenciales y la selección de iglesia. En los siguientes inicios, pasará directamente a la pantalla de servicios automáticamente.
 
@@ -43,6 +45,6 @@ Asegúrate de que el administrador de tu iglesia haya configurado los servicios,
 
 ## Próximos pasos
 
-- [Iniciar sesión](./logging-in) -- Instrucciones detalladas para iniciar sesión y seleccionar la iglesia.
-- [Configuración de la impresora](./printer-setup) -- Cómo encontrar, seleccionar y probar tu impresora de etiquetas.
-- [Flujo de registro](../check-in/) -- Aprende el proceso completo de registro una vez configurado el quiosco.
+- [Iniciar sesión](./logging-in.md) -- Instrucciones detalladas para iniciar sesión y seleccionar la iglesia.
+- [Configuración de la impresora](./printer-setup.md) -- Cómo encontrar, seleccionar y probar tu impresora de etiquetas.
+- [Flujo de registro](../check-in/index.md) -- Aprende el proceso completo de registro una vez configurado el quiosco.

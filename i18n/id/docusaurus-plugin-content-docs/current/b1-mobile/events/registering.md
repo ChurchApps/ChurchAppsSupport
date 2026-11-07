@@ -1,5 +1,7 @@
 ---
-title: "Mendaftar untuk Acara"
+title: "Mendaftar Acara di B1 Mobile"
+sidebar_label: "Mendaftar untuk Acara"
+description: "Daftarkan diri Anda dan anggota keluarga untuk acara gereja dari aplikasi B1 Mobile, periksa sisa kapasitas, dan konfirmasi pendaftaran dalam tiga langkah."
 ---
 
 # Mendaftar untuk Acara
@@ -13,7 +15,7 @@ Daftar ke acara gereja langsung dari B1 Mobile dengan proses tiga langkah yang s
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- [Pasang B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Pasang B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 - Acara harus sudah mengaktifkan pendaftaran dan periode pendaftarannya harus masih terbuka
 
 </div>
@@ -50,4 +52,4 @@ Jika Anda perlu membatalkan, hubungi administrator gereja Anda. Mereka dapat mem
 ## Artikel Terkait
 
 - [Ikhtisar Acara](./index.md) -- Telusuri acara dengan pendaftaran di ponsel
-- [Melihat Jadwal](../serving/viewing-plans) -- Lihat jadwal pelayanan Anda
+- [Melihat Jadwal](../serving/viewing-plans.md) -- Lihat jadwal pelayanan Anda

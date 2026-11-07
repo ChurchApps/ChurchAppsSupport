@@ -1,5 +1,6 @@
 ---
 title: "Самостално хостовање на Railway-у"
+description: "Распоредите приватну ChurchApps инстанцу на Railway-у за око 15 минута, па подесите имејл, домене, више цркава, давање и фајлове за B1 Admin и B1App."
 ---
 
 # Самостално хостовање на Railway-у
@@ -195,7 +196,7 @@ AWS_REGION=us-east-2
 | `VIMEO_TOKEN` | Подршка за Vimeo проповеди |
 | `API_BIBLE_KEY` | Претрага библијских стихова у лекцијама и садржају |
 | `YOUVERSION_API_KEY` | YouVersion интеграција за Библију |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Push обавештења у прегледачу ([генеришите VAPID пар кључева](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Push обавештења у прегледачу ([генеришите VAPID пар кључева](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Опциона CRM синхронизација за нове регистрације |
 
 ## Ажурирање
@@ -234,9 +235,9 @@ AWS_REGION=us-east-2
 
 ## Повезани чланци
 
-- **[Самостално хостовање помоћу Docker-а](./docker)** — Исти стек на вашем хардверу или VPS-у
-- **[Почетно подешавање](../../getting-started/initial-setup)** — Први кораци након што се црква креира
-- **[Подешавање веб-сајта](../../b1-admin/website/initial-setup)** — Конфигуришите јавни веб-сајт ваше цркве
-- **[Подешавања давања](../../b1-admin/donations/online-giving-setup)** — Повежите Stripe или PayPal
-- **[Локално подешавање API-ја](../api/local-setup)** — Покретање стека локално за развој
-- **[Постављање API-ја (AWS)](./apis)** — Како се званични ChurchApps SaaS поставља
+- **[Самостално хостовање помоћу Docker-а](./docker.md)** — Исти стек на вашем хардверу или VPS-у
+- **[Почетно подешавање](../../getting-started/initial-setup.md)** — Први кораци након што се црква креира
+- **[Подешавање веб-сајта](../../b1-admin/website/initial-setup.md)** — Конфигуришите јавни веб-сајт ваше цркве
+- **[Подешавања давања](../../b1-admin/donations/online-giving-setup.md)** — Повежите Stripe или PayPal
+- **[Локално подешавање API-ја](../api/local-setup.md)** — Покретање стека локално за развој
+- **[Постављање API-ја (AWS)](./apis.md)** — Како се званични ChurchApps SaaS поставља

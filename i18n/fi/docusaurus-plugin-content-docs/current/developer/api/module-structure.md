@@ -1,5 +1,6 @@
 ---
 title: "Moduulin rakenne"
+description: "Selittää API:n moduulien rakenteen: ohjaimet, tietovarastot, yhdyskäytävät, todennustarkistukset ja kuusi Lambda-funktiota, jotka ajavat koodin B1-kehitysympäristöissä."
 ---
 
 # Moduulin rakenne
@@ -13,8 +14,8 @@ Jokainen API-moduuli noudattaa yhtenäistä sisäistä rakennetta, jossa on kont
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Asenna API paikallisesti – katso [API:n paikallinen asennus](./local-setup)
-- Tutustu [tietokannan](./database) arkkitehtuuriin ymmärtääksesi tiedonkäyttökerroksen
+- Asenna API paikallisesti – katso [API:n paikallinen asennus](./local-setup.md)
+- Tutustu [tietokannan](./database.md) arkkitehtuuriin ymmärtääksesi tiedonkäyttökerroksen
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Moduulien välinen viestintä
 
-Jokaisella moduulilla on oma tietokantansa (katso [Tietokanta](./database)), eikä moduuli koskaan kysele suoraan toisen moduulin tauluja. Kun moduuli tarvitsee toisen omistamaa dataa – esimerkiksi doing-moduuli selvittää henkilöt membership-moduulista – se kulkee omistavan moduulin **yhdyskäytävän** (gateway) kautta hakemistossa `src/shared/modules/`:
+Jokaisella moduulilla on oma tietokantansa (katso [Tietokanta](./database.md)), eikä moduuli koskaan kysele suoraan toisen moduulin tauluja. Kun moduuli tarvitsee toisen omistamaa dataa – esimerkiksi doing-moduuli selvittää henkilöt membership-moduulista – se kulkee omistavan moduulin **yhdyskäytävän** (gateway) kautta hakemistossa `src/shared/modules/`:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Paikallisesti `web`-funktio toimii portissa 8084 ja `socket`-funktio portissa 80
 
 ## Aiheeseen liittyvät artikkelit
 
-- **[Tietokanta](./database)** – Yhteysmerkkijonot, skeemaskriptit ja tiedonkäyttömallit
-- **[API:n paikallinen asennus](./local-setup)** – Täydellinen vaiheittainen asennusopas
-- **[ApiHelper](../shared-libraries/api-helper)** – Jaettu kirjasto, joka tarjoaa `CustomBaseController`-luokan ja tunnistautumisen välikerroksen
+- **[Tietokanta](./database.md)** – Yhteysmerkkijonot, skeemaskriptit ja tiedonkäyttömallit
+- **[API:n paikallinen asennus](./local-setup.md)** – Täydellinen vaiheittainen asennusopas
+- **[ApiHelper](../shared-libraries/api-helper.md)** – Jaettu kirjasto, joka tarjoaa `CustomBaseController`-luokan ja tunnistautumisen välikerroksen

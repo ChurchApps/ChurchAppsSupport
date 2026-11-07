@@ -1,5 +1,6 @@
 ---
 title: "Menjadwalkan Kalender"
+description: "Atur jadwal mingguan atau sekali di Calendar FreePlay Admin untuk memutar playlist, rencana, atau folder penyedia, dengan loop default sebagai cadangan."
 ---
 
 # Menjadwalkan Kalender
@@ -13,8 +14,8 @@ Halaman **Kalender** di FreePlay Admin mengatur apa yang diputar oleh setiap gru
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Buat setidaknya satu grup layar. Lihat [Mengelola Layar dan Grup](./managing-screens#screen-groups)
-- [Buat daftar putar](./building-playlists), atau siapkan jenis rencana di B1 Admin
+- Buat setidaknya satu grup layar. Lihat [Mengelola Layar dan Grup](./managing-screens.md#screen-groups)
+- [Buat daftar putar](./building-playlists.md), atau siapkan jenis rencana di B1 Admin
 
 </div>
 
@@ -82,11 +83,11 @@ Jika dua jadwal tumpang tindih, formulir akan menampilkan peringatan: **Tumpang 
 
 ## Cara Layar Menerima Perubahan
 
-Layar yang sudah dipasangkan mengunduh semua yang dijadwalkan untuk 7 hari ke depan, dan memeriksa perubahan secara otomatis. Anda tidak perlu menyentuh TV setelah mengedit kalender. Untuk melihat kapan layar sudah memiliki semua yang dibutuhkan, periksa **Siap hingga** di [halaman Layar](./managing-screens).
+Layar yang sudah dipasangkan mengunduh semua yang dijadwalkan untuk 7 hari ke depan, dan memeriksa perubahan secara otomatis. Anda tidak perlu menyentuh TV setelah mengedit kalender. Untuk melihat kapan layar sudah memiliki semua yang dibutuhkan, periksa **Siap hingga** di [halaman Layar](./managing-screens.md).
 
 ## Artikel Terkait
 
-- **[Membuat Daftar Putar](./building-playlists)** - Buat daftar putar yang akan Anda jadwalkan
-- **[Pemutaran Terjadwal di TV](./scheduled-playback)** - Cara kerja pelajaran dipandu guru dan remote di TV
-- **[Mengelola Layar dan Grup](./managing-screens)** - Tambahkan grup dan periksa unduhan setiap layar
+- **[Membuat Daftar Putar](./building-playlists.md)** - Buat daftar putar yang akan Anda jadwalkan
+- **[Pemutaran Terjadwal di TV](./scheduled-playback.md)** - Cara kerja pelajaran dipandu guru dan remote di TV
+- **[Mengelola Layar dan Grup](./managing-screens.md)** - Tambahkan grup dan periksa unduhan setiap layar
 - **[Menyimpan Hanya Sebagian dari Setiap Pelajaran](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Pangkas setiap pelajaran yang dijadwalkan dalam jenis rencana menjadi bagian yang diputar di ruangan Anda

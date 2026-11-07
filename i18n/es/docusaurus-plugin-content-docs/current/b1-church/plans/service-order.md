@@ -1,5 +1,7 @@
 ---
-title: "Orden de servicio"
+title: "Detalles del orden del servicio en la aplicación B1.church"
+sidebar_label: "Orden de servicio"
+description: "Vea el orden del servicio de un plan en la aplicación B1.church, con tiempos acumulados, letras de canciones, transposición de tonalidad y vistas previas de lecciones para su equipo."
 ---
 
 # Orden de servicio

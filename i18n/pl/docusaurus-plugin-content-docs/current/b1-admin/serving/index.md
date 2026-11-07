@@ -1,5 +1,7 @@
 ---
-title: "Służba"
+title: "Przegląd sekcji Służba w B1 Admin"
+sidebar_label: "Służba"
+description: "Koordynuj wolontariuszy i planuj nabożeństwa w sekcji Służba w B1 Admin: od zakładek służb i zespołów po plany, pieśni i zadania."
 ---
 
 # Służba

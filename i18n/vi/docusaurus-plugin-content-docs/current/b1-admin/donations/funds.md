@@ -1,5 +1,6 @@
 ---
 title: "Quản lý quỹ"
+description: "Tạo và sắp xếp quỹ dâng hiến trong B1 Admin, thiết lập trạng thái được khấu trừ thuế và mức hiển thị với người dâng, xem tổng quỹ và lịch sử dâng để báo cáo."
 ---
 
 # Quản lý quỹ

@@ -1,5 +1,6 @@
 ---
 title: "E-mail sablonok"
+description: "E-mail- és SMS-sablonok beállítása a B1 Adminban: személyre szabó mezők, SMS-beállítások és előnézet tömeges kommunikációhoz."
 ---
 
 # E-mail sablonok

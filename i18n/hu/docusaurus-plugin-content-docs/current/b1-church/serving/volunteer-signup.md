@@ -1,5 +1,7 @@
 ---
-title: "Önkéntes jelentkezés"
+title: "Önkéntes jelentkezés a B1.church tagi portálon"
+sidebar_label: "Önkéntes jelentkezés"
+description: "Böngészd a nyitott önkéntes pozíciókat kategóriánként, és jelentkezz a közelgő istentiszteletekre, vagy a határidő előtt töröld jelentkezésedet a B1.church oldalon."
 ---
 
 # Önkéntes jelentkezés
@@ -74,4 +76,4 @@ Rendszeresen nézze meg az önkéntes oldalt, különösen a hét elején. A né
 ## Kapcsolódó cikkek
 
 - [Szolgálat áttekintése](./index.md) – A szolgálati funkciók áttekintése a B1.church oldalon
-- [Tervek megtekintése](../plans/viewing-plans) – Hozzárendelt terveinek és istentiszteleti sorrendjeinek megtekintése
+- [Tervek megtekintése](../plans/viewing-plans.md) – Hozzárendelt terveinek és istentiszteleti sorrendjeinek megtekintése

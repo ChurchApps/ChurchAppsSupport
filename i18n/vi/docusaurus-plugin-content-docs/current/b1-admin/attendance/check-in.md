@@ -1,5 +1,7 @@
 ---
-title: "Điểm danh Check-In"
+title: "Thiết lập tự check-in với B1 Checkin và B1 Admin"
+sidebar_label: "Điểm danh Check-In"
+description: "Thiết lập tự check-in cho buổi nhóm với ứng dụng B1 Checkin trong B1 Admin: thiết bị, tài khoản kiosk, lịch, thương hiệu và đăng ký khách qua mã QR."
 ---
 
 # Điểm danh Check-In
@@ -99,7 +101,7 @@ Sử dụng màn hình chờ để hiển thị thông báo, sự kiện sắp t
 
 Kiosk điểm danh có thể hiển thị một mã QR để khách tham dự quét và tự đăng ký cho bản thân cùng gia đình trên điện thoại của họ. Điều này giúp đẩy nhanh quy trình điểm danh cho khách lần đầu đến.
 
-Khi khách quét mã QR, họ sẽ được đưa đến [trang đăng ký khách](../../b1-church/checkin/guest-registration), nơi họ nhập tên các thành viên trong gia đình và bất kỳ thông tin bổ sung nào mà bạn chọn yêu cầu. Sau đó, một tình nguyện viên có thể tra cứu và điểm danh cho họ trên kiosk.
+Khi khách quét mã QR, họ sẽ được đưa đến [trang đăng ký khách](../../b1-church/checkin/guest-registration.md), nơi họ nhập tên các thành viên trong gia đình và bất kỳ thông tin bổ sung nào mà bạn chọn yêu cầu. Sau đó, một tình nguyện viên có thể tra cứu và điểm danh cho họ trên kiosk.
 
 ### Bật đăng ký khách qua mã QR
 

@@ -1,5 +1,6 @@
 ---
 title: "Formularios"
+description: "Busca, filtra, edita, archiva y restaura formularios personalizados en B1 Admin, y consulta dónde asignar miembros al formulario y revisar envíos."
 ---
 
 # Formularios

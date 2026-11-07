@@ -1,5 +1,6 @@
 ---
 title: "Classrooms"
+description: "Stel de klaslokalen in die het lesrooster van je kerk ordenen in Lessons.church, van lokalen en leeftijdsgroepen tot weergaven voor vrijwilligers."
 ---
 
 # Classrooms

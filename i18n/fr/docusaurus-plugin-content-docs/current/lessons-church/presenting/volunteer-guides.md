@@ -1,5 +1,6 @@
 ---
 title: "Guides des bénévoles"
+description: "Configurer des guides par rôle dans Lessons.church pour que chaque bénévole ne voie que ses propres étapes, et les imprimer ou partager avant le cours."
 ---
 
 # Guides des bénévoles

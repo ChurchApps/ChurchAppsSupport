@@ -1,5 +1,6 @@
 ---
 title: "Kutingenisela ku-Railway"
+description: "Faka sibonelo se-ChurchApps ku-Railway cishe ngemizuzu lengu-15, bese usetsa i-imeyili, emadomeyini, ukunikela, nesitoreji semafayela."
 ---
 
 # Kutingenisela ku-Railway
@@ -234,9 +235,9 @@ Nangabe uhlangabetane nalokungekho kuloluhla, vula i-issue ku-[github.com/Church
 
 ## Emahloko Lahlobene
 
-- **[Kutingenisela nge-Docker](./docker)** -- Lesitulo lesifanako kuhadwe lakho lwakho kumbe VPS
-- **[Kuhlelwa Kwekucala](../../getting-started/initial-setup)** -- Tinyatselo tekucala ngemuva kwekutsi libandla lakho likhiwe
-- **[Website Initial Setup](../../b1-admin/website/initial-setup)** -- Hlela sayithi yebandla lakho lebonwa ngumphakatsi
-- **[Giving Settings](../../b1-admin/donations/online-giving-setup)** -- Xhuma i-Stripe kumbe i-PayPal
-- **[API Local Setup](../api/local-setup)** -- Kugijimisa situlo ngasekhaya ekutfutfukiseni
-- **[API Deployment (AWS)](./apis)** -- Kutsi i-ChurchApps SaaS lesemtsetweni ifakwa njani
+- **[Kutingenisela nge-Docker](./docker.md)** -- Lesitulo lesifanako kuhadwe lakho lwakho kumbe VPS
+- **[Kuhlelwa Kwekucala](../../getting-started/initial-setup.md)** -- Tinyatselo tekucala ngemuva kwekutsi libandla lakho likhiwe
+- **[Website Initial Setup](../../b1-admin/website/initial-setup.md)** -- Hlela sayithi yebandla lakho lebonwa ngumphakatsi
+- **[Giving Settings](../../b1-admin/donations/online-giving-setup.md)** -- Xhuma i-Stripe kumbe i-PayPal
+- **[API Local Setup](../api/local-setup.md)** -- Kugijimisa situlo ngasekhaya ekutfutfukiseni
+- **[API Deployment (AWS)](./apis.md)** -- Kutsi i-ChurchApps SaaS lesemtsetweni ifakwa njani

@@ -29,7 +29,7 @@ Bản ghi provider của nhà thờ (`content.storageProviders`, được quản
 
 Lưu ý về phạm vi: việc chọn provider chỉ áp dụng cho luồng **tệp/tài nguyên** nội dung (nơi lưu trữ phương tiện dung lượng lớn). Việc tải lên thư viện ảnh, logo và ảnh vẫn dùng provider mặc định, vì các chức năng này liệt kê khóa từ kho lưu trữ và tự xây dựng URL ở phía client, nên việc gắn gốc theo từng nhà thờ chưa áp dụng được.
 
-Cùng seam này cũng hỗ trợ [Bring-Your-Own Storage](./byos-storage): nhà thờ có thể liên kết Google Drive, Dropbox, OneDrive hoặc bucket tương thích S3 của riêng mình thay vì đăng ký gói MinistryStuff.
+Cùng seam này cũng hỗ trợ [Bring-Your-Own Storage](./byos-storage.md): nhà thờ có thể liên kết Google Drive, Dropbox, OneDrive hoặc bucket tương thích S3 của riêng mình thay vì đăng ký gói MinistryStuff.
 
 ## Thanh toán
 

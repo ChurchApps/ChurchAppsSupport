@@ -1,5 +1,7 @@
 ---
-title: "Volunteer Signup"
+title: "Pagpapatala sa Pagboboluntaryo sa B1 Mobile App"
+sidebar_label: "Volunteer Signup"
+description: "Hanapin ang bakanteng posisyon sa pagboboluntaryo, magpatala, o alisin ang pagpapatala sa B1 Mobile app. Sakop ang deadline at limitasyon ng slot."
 ---
 
 # Volunteer Signup
@@ -13,7 +15,7 @@ Mag-browse ng mga available na posisyon sa pagboboluntaryo at mag-sign up para s
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [I-install ang B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
 - Dapat na naka-enable ng administrator ng iyong simbahan ang self-signup sa kahit isang posisyon
 
 </div>
@@ -60,5 +62,5 @@ I-enable ang [push notifications](../community/notifications.md) upang manatilin
 
 ## Mga Kaugnay na Artikulo
 
-- [Viewing Plans](./viewing-plans) -- Tingnan ang iyong mga naka-assign na plano at order of service
+- [Viewing Plans](./viewing-plans.md) -- Tingnan ang iyong mga naka-assign na plano at order of service
 - [Notifications](../community/notifications.md) -- Manatiling updated tungkol sa mga serving assignment

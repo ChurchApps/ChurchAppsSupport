@@ -1,5 +1,6 @@
 ---
 title: "Struktur Modul"
+description: "Jelaskan tata letak modul API: controller, repositori, gateway, pemeriksaan autentikasi, dan enam fungsi Lambda di lingkungan pengembang B1."
 ---
 
 # Struktur Modul
@@ -13,8 +14,8 @@ Setiap modul API mengikuti struktur internal yang konsisten, yaitu controller, r
 <div class="prereqs">
 <h4>Sebelum Anda Memulai</h4>
 
-- Siapkan API secara lokal -- lihat [Penyiapan API Lokal](./local-setup)
-- Tinjau arsitektur [Basis Data](./database) untuk memahami lapisan akses data
+- Siapkan API secara lokal -- lihat [Penyiapan API Lokal](./local-setup.md)
+- Tinjau arsitektur [Basis Data](./database.md) untuk memahami lapisan akses data
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Komunikasi Lintas Modul
 
-Setiap modul memiliki basis datanya sendiri (lihat [Basis Data](./database)), dan sebuah modul tidak pernah langsung mengkueri tabel milik modul lain. Ketika satu modul membutuhkan data milik modul lain -- misalnya, modul doing mencari orang dari membership -- ia melalui **gateway** milik modul pemilik di `src/shared/modules/`:
+Setiap modul memiliki basis datanya sendiri (lihat [Basis Data](./database.md)), dan sebuah modul tidak pernah langsung mengkueri tabel milik modul lain. Ketika satu modul membutuhkan data milik modul lain -- misalnya, modul doing mencari orang dari membership -- ia melalui **gateway** milik modul pemilik di `src/shared/modules/`:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Secara lokal, fungsi `web` berjalan di port 8084 dan fungsi `socket` berjalan di
 
 ## Artikel Terkait
 
-- **[Basis Data](./database)** -- String koneksi, skrip skema, dan pola akses data
-- **[Penyiapan API Lokal](./local-setup)** -- Panduan penyiapan lengkap langkah demi langkah
-- **[ApiHelper](../shared-libraries/api-helper)** -- Pustaka bersama yang menyediakan `CustomBaseController` dan middleware autentikasi
+- **[Basis Data](./database.md)** -- String koneksi, skrip skema, dan pola akses data
+- **[Penyiapan API Lokal](./local-setup.md)** -- Panduan penyiapan lengkap langkah demi langkah
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- Pustaka bersama yang menyediakan `CustomBaseController` dan middleware autentikasi

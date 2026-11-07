@@ -1,21 +1,22 @@
 ---
 title: "Renginių priminimai"
+description: "Nustatykite renginių priminimus B1 Admin: pranešimai programėlėje, el. paštu ar SMS, laikas, gavėjai ir tinkinta žinutė, kad žmonės laiku sužinotų."
 ---
 
 # Renginių priminimai
 
 <div class="article-intro">
 
-Renginių priminimai automatiškai informuoja tinkamus žmones prieš renginį -- pavyzdžiui, „Nepraleiskite! Sveikatos seminaras prasideda rytoj 9:00.“ Priminimą nustatote renginyje vieną kartą, o B1 jį išsiunčia laiku per push pranešimus, el. paštu ir, jei jūsų bažnyčia yra nustačiusi SMS žinučių siuntimą, tekstinėmis žinutėmis. Nariai gali valdyti, kokius priminimus gauna, savo [Pranešimų nuostatose](../../b1-church/getting-started/notification-preferences).
+Renginių priminimai automatiškai informuoja tinkamus žmones prieš renginį -- pavyzdžiui, „Nepraleiskite! Sveikatos seminaras prasideda rytoj 9:00.“ Priminimą nustatote renginyje vieną kartą, o B1 jį išsiunčia laiku per push pranešimus, el. paštu ir, jei jūsų bažnyčia yra nustačiusi SMS žinučių siuntimą, tekstinėmis žinutėmis. Nariai gali valdyti, kokius priminimus gauna, savo [Pranešimų nuostatose](../../b1-church/getting-started/notification-preferences.md).
 
 </div>
 
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Sukurkite renginį, apie kurį norite priminti žmonėms (žr. [Kalendorių kūrimas](creating-calendars))
-- Norėdami pasiekti registruotus dalyvius, įjunkite renginiui [registraciją](creating-calendars)
-- Norėdami pasiekti visą grupę, įsitikinkite, kad renginys priklauso [grupei](../groups/creating-groups), kurioje yra narių
+- Sukurkite renginį, apie kurį norite priminti žmonėms (žr. [Kalendorių kūrimas](./creating-calendars.md))
+- Norėdami pasiekti registruotus dalyvius, įjunkite renginiui [registraciją](./creating-calendars.md)
+- Norėdami pasiekti visą grupę, įsitikinkite, kad renginys priklauso [grupei](../groups/creating-groups.md), kurioje yra narių
 
 </div>
 
@@ -57,21 +58,21 @@ Dalyviai, pridėti tik vardu (be susieto asmens įrašo), negali gauti priminimo
 - Pasikartojantys renginiai tvarkomi automatiškai: kiekvienas artimiausias įvykis gauna savo priminimą.
 
 :::tip
-Priminimai siunčiami **pirmiausia push pranešimu, o el. paštu -- kaip atsarginiu variantu**. Jei nariui įjungti push pranešimai, jis gaus push pranešimą; jei ne, vietoj to gaus el. laišką. Nariai savo [Pranešimų nuostatose](../../b1-church/getting-started/notification-preferences) pasirenka, kuriais kanalais nori gauti kiekvieno tipo pranešimus.
+Priminimai siunčiami **pirmiausia push pranešimu, o el. paštu -- kaip atsarginiu variantu**. Jei nariui įjungti push pranešimai, jis gaus push pranešimą; jei ne, vietoj to gaus el. laišką. Nariai savo [Pranešimų nuostatose](../../b1-church/getting-started/notification-preferences.md) pasirenka, kuriais kanalais nori gauti kiekvieno tipo pranešimus.
 :::
 
 ## Tekstiniai priminimai
 
 Kanalas **Tekstinė žinutė** rodomas tik tada, kai jūsų bažnyčia yra prijungusi SMS paslaugų teikėją. Tekstinės žinutės siunčiamos per jūsų bažnyčios SMS paslaugų teikėją, o kiekviena žinutė gali kainuoti jūsų bažnyčiai. Jos siunčiamos kartu su bet kokiu push ar el. pašto priminimu ir tik asmenims, kurie:
 
-- savo [Pranešimų nuostatose](../../b1-church/getting-started/notification-preferences) įjungė **Tekstines žinutes**, ir
+- savo [Pranešimų nuostatose](../../b1-church/getting-started/notification-preferences.md) įjungė **Tekstines žinutes**, ir
 - profilyje nurodė mobiliojo telefono numerį.
 
 Kiekviena žinutė prasideda jūsų bažnyčios pavadinimu, telpa į vieną SMS žinutę ir baigiasi tekstu „Atsakykite STOP, kad atsisakytumėte.“ Kas atsako STOP, nebegaus tekstinių žinučių iš jūsų bažnyčios. Kad STOP atsakymai pasiektų B1, įklijuokite **Gaunamųjų (STOP) webhook URL** iš savo [SMS nustatymų](../settings/church-settings.md#texting) į savo paslaugų teikėjo gaunamų žinučių webhook nustatymą.
 
 ## Ką nariai gali valdyti
 
-Priminimai visada atsižvelgia į kiekvieno nario [Pranešimų nuostatas](../../b1-church/getting-started/notification-preferences). Narys gali:
+Priminimai visada atsižvelgia į kiekvieno nario [Pranešimų nuostatas](../../b1-church/getting-started/notification-preferences.md). Narys gali:
 
 - išjungti **Renginių priminimus** push, el. pašto ar tekstinėms žinutėms, paliekant įjungtus kitus pranešimus;
 - įjungti arba išjungti tekstinius priminimus su **Tekstinės žinutės**;
@@ -81,10 +82,10 @@ Negalite pakeisti nario sprendimo atsisakyti renginių priminimų -- taip B1 ati
 
 ## Tarnystės priminimai
 
-Savanoriai, paskirti į planą, gauna atskirą **tarnystės priminimą** su plano informacija ir, jei dar neatsakė, **Priimti / Atsisakyti** mygtukus tiesiai el. laiške. Šie priminimai nustatomi plano tipe, o ne kalendoriaus renginyje, ir taip pat gali būti siunčiami tekstine žinute -- žr. [Savanorių priminimai](../serving/plans#volunteer-reminders) ir [Sekmadienio savanoriai](../guides/sunday-volunteers), kur aprašyta, kaip veikia savanorių planavimas ir priminimai.
+Savanoriai, paskirti į planą, gauna atskirą **tarnystės priminimą** su plano informacija ir, jei dar neatsakė, **Priimti / Atsisakyti** mygtukus tiesiai el. laiške. Šie priminimai nustatomi plano tipe, o ne kalendoriaus renginyje, ir taip pat gali būti siunčiami tekstine žinute -- žr. [Savanorių priminimai](../serving/plans.md#volunteer-reminders) ir [Sekmadienio savanoriai](../guides/sunday-volunteers.md), kur aprašyta, kaip veikia savanorių planavimas ir priminimai.
 
 ## Kiti žingsniai
 
-- [Pranešimų nuostatos](../../b1-church/getting-started/notification-preferences) -- ką nariai gali valdyti
-- [Renginių registracijos vadovas](../guides/event-registration) -- nustatykite registraciją, kad priminimai pasiektų dalyvius
-- [Kalendorių kūrimas](creating-calendars) -- grįžti prie kalendoriaus nustatymo
+- [Pranešimų nuostatos](../../b1-church/getting-started/notification-preferences.md) -- ką nariai gali valdyti
+- [Renginių registracijos vadovas](../guides/event-registration.md) -- nustatykite registraciją, kad priminimai pasiektų dalyvius
+- [Kalendorių kūrimas](./creating-calendars.md) -- grįžti prie kalendoriaus nustatymo

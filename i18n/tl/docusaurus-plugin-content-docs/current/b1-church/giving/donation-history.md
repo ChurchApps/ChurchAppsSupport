@@ -1,5 +1,7 @@
 ---
-title: "Kasaysayan ng Donasyon"
+title: "Kasaysayan ng Giving at Statement sa B1.church"
+sidebar_label: "Kasaysayan ng Donasyon"
+description: "Tingnan ang nakaraang donasyon, i-filter ayon sa taon, at i-print ang giving statement para sa buwis mula sa Giving page ng B1.church member portal."
 ---
 
 # Kasaysayan ng Donasyon

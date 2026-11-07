@@ -1,5 +1,6 @@
 ---
 title: "Mobil alkalmazások"
+description: "A ChurchApps Expo és React Native mobilalkalmazásai: B1 Mobile, B1 Checkin, LessonsScreen, a közös eszközlánc beállítási útmutatójával."
 ---
 
 # Mobil alkalmazások
@@ -14,13 +15,13 @@ A ChurchApps mobil alkalmazásai **React Native** és **Expo** alapon készülne
 
 | Alkalmazás | Cél | Platform |
 |-----|---------|----------|
-| [B1 Mobile](./b1-mobile) | Az elsődleges, egyházi tagoknak szánt alkalmazás | Android, iOS |
+| [B1 Mobile](./b1-mobile.md) | Az elsődleges, egyházi tagoknak szánt alkalmazás | Android, iOS |
 | B1 Checkin | Bejelentkező állomásokon használt kioszk alkalmazás | Android, iOS |
 | LessonsScreen | Android TV alkalmazás, amellyel leckék jeleníthetők meg az osztálytermekben | Android TV |
 
 ### B1 Mobile
 
-Az egyház fő tagalkalmazása. A tagok megtekinthetik a névjegyzéket, hozzáférhetnek az adakozáshoz, rögzíthetik a részvételt, értesítéseket kaphatnak, és kapcsolatba léphetnek egyházi közösségükkel. A részletekért lásd a [B1 Mobile beállítási útmutatót](./b1-mobile).
+Az egyház fő tagalkalmazása. A tagok megtekinthetik a névjegyzéket, hozzáférhetnek az adakozáshoz, rögzíthetik a részvételt, értesítéseket kaphatnak, és kapcsolatba léphetnek egyházi közösségükkel. A részletekért lásd a [B1 Mobile beállítási útmutatót](./b1-mobile.md).
 
 ### B1 Checkin
 
@@ -31,5 +32,5 @@ Egyházi bejelentkező állomásokhoz készült, kifejezetten erre a célra terv
 Android TV alkalmazás, amely lecketartalmakat jelenít meg az osztálytermekben. A tanárok diákat, videókat és feladatokat küldhetnek a TV-képernyőre, így a tananyag könnyen bemutatható az órákon.
 
 :::info
-Minden mobil alkalmazás ugyanazt az Expo-alapú eszközláncot használja, és hasonló beállítási lépéseket követ. A [B1 Mobile](./b1-mobile) útmutató referenciaként szolgál az összes mobilprojekt általános beállítási folyamatához.
+Minden mobil alkalmazás ugyanazt az Expo-alapú eszközláncot használja, és hasonló beállítási lépéseket követ. A [B1 Mobile](./b1-mobile.md) útmutató referenciaként szolgál az összes mobilprojekt általános beállítási folyamatához.
 :::

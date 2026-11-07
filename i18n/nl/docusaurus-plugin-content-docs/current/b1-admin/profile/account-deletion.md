@@ -1,5 +1,6 @@
 ---
 title: "Verzoeken tot accountverwijdering beoordelen"
+description: "Keur accountverwijderingsverzoeken van leden in B1 Admin goed of af, via de Directory Approval Group, binnen de AVG-termijn van 30 dagen."
 ---
 
 # Verzoeken tot accountverwijdering beoordelen

@@ -1,5 +1,6 @@
 ---
 title: "Architektúra upozornení a pripomienok"
+description: "Ako API B1 Admin smeruje oznámenia, plánované pripomienky, limity cirkevných e-mailov a odhlásenia z textových správ cez jeden doručovací kanál a bránu predvolieb."
 ---
 
 # Architektúra upozornení a pripomienok
@@ -185,6 +186,6 @@ Lokálne možno rovnakú logiku spustiť na požiadanie príkazmi `npm run timer
 
 ## Súvisiace stránky
 
-- [Architektúra v reálnom čase](../realtime): protokol WebSocket a klientske primitíva (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), na ktorých beží úroveň doručenia in-app
-- [Webové push upozornenia](../web-push): nastavenie VAPID a cesta prehliadačového Push API, ktorú používa úroveň eskalácie push
-- [Koncové body správ](../api/endpoints/messaging): úplný REST povrch pre správy, konverzácie, spojenia a trasy upozornení a pripomienok
+- [Architektúra v reálnom čase](../realtime.md): protokol WebSocket a klientske primitíva (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), na ktorých beží úroveň doručenia in-app
+- [Webové push upozornenia](../web-push.md): nastavenie VAPID a cesta prehliadačového Push API, ktorú používa úroveň eskalácie push
+- [Koncové body správ](../api/endpoints/messaging.md): úplný REST povrch pre správy, konverzácie, spojenia a trasy upozornení a pripomienok

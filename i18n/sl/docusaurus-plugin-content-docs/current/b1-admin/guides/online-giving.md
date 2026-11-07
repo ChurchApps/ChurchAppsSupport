@@ -1,5 +1,6 @@
 ---
 title: "Vodnik: Nastavitev spletnega darovanja"
+description: "Nastavite spletno darovanje v B1 Admin: ustvarite sklade za darove, povežite Stripe in dodajte stran Doniraj na spletno mesto B1.church za člane."
 ---
 
 # Nastavitev spletnega darovanja
@@ -70,7 +71,7 @@ Preden o tem obvestite svojo skupnost, preverite, ali vse deluje.
 Sporočite članom, da lahko darujejo na spletu.
 
 1. Delite naslov URL za darovanje prek svoje spletne strani, e-poštnih glasil, biltenov in družbenih omrežij
-2. Člani lahko darujejo tudi prek [aplikacije B1 Mobile](../../b1-mobile/giving/); funkcija darovanja je vgrajena
+2. Člani lahko darujejo tudi prek [aplikacije B1 Mobile](../../b1-mobile/giving/index.md); funkcija darovanja je vgrajena
 
 :::info
 Člani, ki se prijavijo, lahko shranijo načine plačila, nastavijo ponavljajoče se donacije in si ogledajo zgodovino darovanja. Anonimno darovanje prav tako deluje, prijava ni potrebna.

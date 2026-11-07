@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "B1.church सदस्य पोर्टल में चेक-इन"
+sidebar_label: "Check-In"
+description: "B1.church सदस्य पोर्टल से सेवा में स्वयं और परिवार के सदस्यों का चेक-इन करें, किओस्क छोड़कर और समूह असाइन करते हुए।"
 ---
 
 # Check-In

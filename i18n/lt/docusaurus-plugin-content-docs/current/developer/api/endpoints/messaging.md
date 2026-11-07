@@ -1,5 +1,6 @@
 ---
 title: "Žinučių galutiniai taškai"
+description: "Nuoroda į ChurchApps žinučių API galutinius taškus: pokalbiai, užrašų prieigos taisyklės, SMS, el. laiškų šablonai, pranešimai ir įrenginiai."
 ---
 
 # Žinučių galutiniai taškai
@@ -190,7 +191,7 @@ Bazinis kelias: `/messaging/notificationpreferences`
 
 Bazinis kelias: `/messaging/connections`
 
-Valdo WebSocket / realaus laiko ryšius pokalbiams, grupių pokalbiams, privačioms žinutėms ir tiesioginei transliacijai. Visą protokolą žr. [Realaus laiko architektūra](../../realtime).
+Valdo WebSocket / realaus laiko ryšius pokalbiams, grupių pokalbiams, privačioms žinutėms ir tiesioginei transliacijai. Visą protokolą žr. [Realaus laiko architektūra](../../realtime.md).
 
 | Metodas | Kelias | Autentifikacija | Leidimas | Aprašymas |
 |--------|------|------|------|------|
@@ -367,9 +368,9 @@ Seka išsiųstų žinučių (SMS, įrenginių pranešimų, el. laiškų) pristat
 
 ## Susiję puslapiai
 
-- [Realaus laiko architektūra](../../realtime) -- WebSocket protokolas, kambarių prenumeratos ir vieningas pristatymo sistemos karkasas
-- [Web Push pranešimai](../../web-push) -- Naršyklės pranešimų registracija ir pristatymas
-- [Narystės galutiniai taškai](./membership) -- Asmenys, grupės, vaidmenys ir pagrindinė tapatybė
-- [Lankomumo galutiniai taškai](./attendance) -- Pamaldų ir apsilankymų sekimas
-- [Autentifikacija ir leidimai](./authentication) -- Prisijungimo srautas, JWT, OAuth, leidimų modelis
-- [Modulio struktūra](../module-structure) -- Kodo organizavimo modeliai
+- [Realaus laiko architektūra](../../realtime.md) -- WebSocket protokolas, kambarių prenumeratos ir vieningas pristatymo sistemos karkasas
+- [Web Push pranešimai](../../web-push.md) -- Naršyklės pranešimų registracija ir pristatymas
+- [Narystės galutiniai taškai](./membership.md) -- Asmenys, grupės, vaidmenys ir pagrindinė tapatybė
+- [Lankomumo galutiniai taškai](./attendance.md) -- Pamaldų ir apsilankymų sekimas
+- [Autentifikacija ir leidimai](./authentication.md) -- Prisijungimo srautas, JWT, OAuth, leidimų modelis
+- [Modulio struktūra](../module-structure.md) -- Kodo organizavimo modeliai

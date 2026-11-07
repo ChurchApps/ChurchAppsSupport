@@ -1,5 +1,7 @@
 ---
-title: "tjeneste"
+title: "Oversigt over tjeneste i B1 Admin"
+sidebar_label: "tjeneste"
+description: "Koordinér frivillige og planlæg gudstjenester i B1 Admins Tjeneste-område, fra fanerne for tjenester og teams til gudstjenesteplaner, sange og opgaver."
 ---
 
 # tjeneste
@@ -26,7 +28,7 @@ tjeneste sektionen inkluderer tre vigtige områder:
 
 - **[planer](./plans.md)** -- opbygning af tjenesteplaner til specifikke datoer og tildel frivillige til hold. Planer hjælpe dig med at organisere hvem der tjener hvornår, så alle ved deres rolle forhånd. Brug **[planer oversigt](./plans-overview.md)** for at se alle kommende opgaver på tværs af flere uger i ét gitter.
 - **[sange](./songs.md)** -- administrer dit lovsangsbibliotek med tekster, arrangementer og eksterne links. Dit lovsangshold kan bruge dette til at forberede til kommende tjenester.
-- **[opgaver](./tasks.md)** -- tildel og spor opgaver til dine holmedlemmer. opsæt [automatiseringer](./automations.md) for at opbygge tilbagevendende opgaver automatisk, så intet falder gennem sprækker.
+- **[opgaver](./tasks.md)** -- tildel og spor opgaver til dine holmedlemmer. opsæt [automatiseringer](./workflows.md) for at opbygge tilbagevendende opgaver automatisk, så intet falder gennem sprækker.
 
 ## kom i gang
 

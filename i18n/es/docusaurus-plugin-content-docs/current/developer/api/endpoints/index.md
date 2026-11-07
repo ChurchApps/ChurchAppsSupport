@@ -1,5 +1,6 @@
 ---
 title: "Referencia de Puntos de Conexión"
+description: "Encuentre todos los endpoints de la API de ChurchApps por módulo, vea el método HTTP, la ruta, la autenticación y el permiso de cada ruta, y conozca las convenciones de guardado por lotes y errores antes de llamar a la API."
 ---
 
 # Referencia de Puntos de Conexión
@@ -89,10 +90,10 @@ Los parámetros del informe se pasan como valores de cadena de consulta (p. ej. 
 
 | Módulo | Ruta Base | Descripción |
 |--------|-----------|-------------|
-| [Autenticación](./authentication) | `/membership/users`, `/membership/oauth` | Inicio de sesión, registro, tokens JWT, OAuth, permisos |
-| [Membresía](./membership) | `/membership/*` | Personas, iglesias, grupos, hogares, roles, formularios, configuración |
-| [Asistencia](./attendance) | `/attendance/*` | Ubicaciones, servicios, sesiones, visitas, registros de registro |
-| [Contenido](./content) | `/content/*` | Páginas, sermones, eventos, archivos, galerías, Biblia, transmisión en directo |
-| [Giving](./giving) | `/giving/*` | Donaciones, fondos, pasarelas de pago, suscripciones |
-| [Mensajería](./messaging) | `/messaging/*` | Conversaciones, notificaciones, dispositivos, SMS |
-| [Doing](./doing) | `/doing/*` | Planes, tareas, asignaciones, automatizaciones, programación |
+| [Autenticación](./authentication.md) | `/membership/users`, `/membership/oauth` | Inicio de sesión, registro, tokens JWT, OAuth, permisos |
+| [Membresía](./membership.md) | `/membership/*` | Personas, iglesias, grupos, hogares, roles, formularios, configuración |
+| [Asistencia](./attendance.md) | `/attendance/*` | Ubicaciones, servicios, sesiones, visitas, registros de registro |
+| [Contenido](./content.md) | `/content/*` | Páginas, sermones, eventos, archivos, galerías, Biblia, transmisión en directo |
+| [Giving](./giving.md) | `/giving/*` | Donaciones, fondos, pasarelas de pago, suscripciones |
+| [Mensajería](./messaging.md) | `/messaging/*` | Conversaciones, notificaciones, dispositivos, SMS |
+| [Doing](./doing.md) | `/doing/*` | Planes, tareas, asignaciones, automatizaciones, programación |

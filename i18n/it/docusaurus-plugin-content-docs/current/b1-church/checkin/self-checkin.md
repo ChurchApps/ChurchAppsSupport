@@ -1,5 +1,7 @@
 ---
-title: "Auto check-in"
+title: "Self check-in nel portale membri B1.church"
+sidebar_label: "Auto check-in"
+description: "Registra te e la tua famiglia a un culto dal portale membri B1.church, scegliendo orari e gruppi in pochi passaggi rapidi."
 ---
 
 # Auto check-in
@@ -45,7 +47,7 @@ Quando hai selezionato i gruppi per tutti i partecipanti, tocca il pulsante in f
 
 Vedrai una conferma che il tuo check-in è completato e che la tua presenza è stata salvata. Dopo un momento la pagina torna all'elenco dei servizi, pronta per il prossimo check-in.
 
-Se la tua chiesa stampa cartellini con il nome in una postazione di check-in, vedrai invece **Sei registrato!** con un codice QR e un codice di sicurezza. Mostra il codice a una postazione di check-in per stampare i cartellini, poi tocca **Fatto**. Su un chiosco B1 Checkin, tocca **Scansiona codice** e tieni il codice QR davanti alla fotocamera; vedi [Stampare le etichette per un check-in dal telefono](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Se la tua chiesa stampa cartellini con il nome in una postazione di check-in, vedrai invece **Sei registrato!** con un codice QR e un codice di sicurezza. Mostra il codice a una postazione di check-in per stampare i cartellini, poi tocca **Fatto**. Su un chiosco B1 Checkin, tocca **Scansiona codice** e tieni il codice QR davanti alla fotocamera; vedi [Stampare le etichette per un check-in dal telefono](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Se il tuo nucleo familiare è già registrato per il servizio selezionato, accanto al titolo **Chi è presente** compare un link **Mostra codice di check-in**. Tocca il link per far riapparire il codice QR e il codice di sicurezza, ad esempio se hai chiuso la pagina prima di arrivare a una postazione di check-in.
 

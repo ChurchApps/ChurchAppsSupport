@@ -1,5 +1,6 @@
 ---
 title: "Mine registreringer"
+description: "Sjekk påmeldingsstatus, betal utestående beløp, rediger deltakere eller tilleggsvalg, eller avbryt en påmelding til arrangement i B1 Churchs medlemsportal."
 ---
 
 # Mine registreringer

@@ -1,5 +1,6 @@
 ---
 title: "Arhitectura în timp real"
+description: "Cum transmite stratul WebSocket ChurchApps chatul live, prezența și notificările: handshake-ul socket-ului, abonările la canale și primitivele clientului."
 ---
 
 # Arhitectura în timp real
@@ -227,8 +228,8 @@ Transmisiunea live este cel mai mare consumator anonim al sistemului. Folosește
 
 ## Pagini conexe
 
-- [Arhitectura notificărilor](./architecture/notifications) -- Pâlnia de escaladare in-app/push/e-mail alimentată de acest transport
-- [Endpoint-urile de mesagerie](./api/endpoints/messaging) -- Suprafața REST completă pentru mesaje, conversații, conexiuni, dispozitive
-- [Notificări push web](./web-push) -- Push în browser, separat de livrarea prin socket în pagină
-- [AppHelper](./shared-libraries/app-helper) -- Pachetul npm care livrează primitivele clientului
-- [Structura modulelor](./api/module-structure) -- Cum este organizat modulul de mesagerie pe server
+- [Arhitectura notificărilor](./architecture/notifications.md) -- Pâlnia de escaladare in-app/push/e-mail alimentată de acest transport
+- [Endpoint-urile de mesagerie](./api/endpoints/messaging.md) -- Suprafața REST completă pentru mesaje, conversații, conexiuni, dispozitive
+- [Notificări push web](./web-push.md) -- Push în browser, separat de livrarea prin socket în pagină
+- [AppHelper](./shared-libraries/app-helper.md) -- Pachetul npm care livrează primitivele clientului
+- [Structura modulelor](./api/module-structure.md) -- Cum este organizat modulul de mesagerie pe server

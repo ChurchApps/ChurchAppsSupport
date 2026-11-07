@@ -1,5 +1,6 @@
 ---
 title: "Zunanji ponudniki"
+description: "Dodaj zunanji vir kurikula v Lessons.church na strani Third-Party v upravi, nato po potrebi ogledaj, posodobi ali odstrani povezave ponudnikov."
 ---
 
 # Zunanji ponudniki

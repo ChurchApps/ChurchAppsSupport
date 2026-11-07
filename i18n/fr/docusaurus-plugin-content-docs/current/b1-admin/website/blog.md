@@ -1,5 +1,7 @@
 ---
-title: "Blogue"
+title: "Rédiger des articles pour votre site dans B1 Admin"
+sidebar_label: "Blogue"
+description: "Créez, planifiez et publiez des articles sur votre site dans B1 Admin : extraits, catégories, étiquettes, photos d'en-tête et intégrations de commentaires."
 ---
 
 # Blogue
@@ -13,8 +15,8 @@ La page Blogue vous permet de publier des nouvelles, des mises à jour et des m�
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Effectuez la [configuration initiale](initial-setup) de votre site web
-- Ajoutez un lien de navigation vers `/blog` depuis [Gérer les pages](managing-pages) si vous voulez que les visiteurs trouvent votre blogue depuis le menu
+- Effectuez la [configuration initiale](./initial-setup.md) de votre site web
+- Ajoutez un lien de navigation vers `/blog` depuis [Gérer les pages](./managing-pages.md) si vous voulez que les visiteurs trouvent votre blogue depuis le menu
 
 </div>
 
@@ -31,7 +33,7 @@ La page Blogue vous permet de publier des nouvelles, des mises à jour et des m�
 3. Ajoutez un **extrait** -- un court résumé affiché dans la liste des articles, les métadonnées de description et le flux RSS. Si vous le laissez vide, il est généré automatiquement à partir du début du contenu de l'article.
 4. Rédigez le corps de l'article dans l'éditeur **Contenu** en utilisant Markdown. Cliquez sur **Aperçu** pour voir l'apparence de l'article mis en forme.
 5. Choisissez une **catégorie** (sélectionnez-en une existante ou tapez-en une nouvelle) et des **étiquettes** facultatives séparées par des virgules.
-6. Cliquez sur **Choisir une image** pour sélectionner une photo dans votre galerie de [Fichiers](files), ou téléversez-en une nouvelle. Les photos téléversées s'ouvrent dans un outil de recadrage intégré verrouillé au format 16:9, afin que vous puissiez cadrer n'importe quelle photo pour l'adapter à l'en-tête de l'article et aux cartes de la liste.
+6. Cliquez sur **Choisir une image** pour sélectionner une photo dans votre galerie de [Fichiers](./files.md), ou téléversez-en une nouvelle. Les photos téléversées s'ouvrent dans un outil de recadrage intégré verrouillé au format 16:9, afin que vous puissiez cadrer n'importe quelle photo pour l'adapter à l'en-tête de l'article et aux cartes de la liste.
 7. Définissez l'**auteur** -- il est réglé par défaut sur vous, mais vous pouvez rechercher et sélectionner n'importe quelle personne de votre base de données.
 8. Activez **Publié** et définissez une **date de publication** lorsque vous êtes prêt à rendre l'article public. Laissez-le désactivé pour enregistrer l'article comme brouillon.
 
@@ -58,7 +60,7 @@ Chaque article de la liste affiche l'un des trois états suivants :
 Les articles publiés apparaissent à `{votresite}/blog`, 10 par page avec des liens **Plus anciens** et **Plus récents** pour parcourir vos archives, ainsi qu'un filtre par catégorie et la signature et la photo de chaque auteur. Les étiquettes s'affichent aussi comme des pastilles cliquables, permettant aux visiteurs de filtrer la liste par étiquette de la même façon. Chaque article a sa propre adresse à `{votresite}/blog/{identifiant}` et affiche des articles connexes de la même catégorie. La page du blogue publie aussi un flux RSS, détectable automatiquement par les lecteurs de flux et les outils d'automatisation comme Zapier.
 
 :::info
-Les articles de blogue sont un type de contenu distinct des pages ordinaires du site web -- ils ne sont pas créés dans l'[éditeur de pages](page-editor) et n'apparaissent pas dans la liste des pages. Cela rend la rédaction des articles rapide et axée sur l'écriture.
+Les articles de blogue sont un type de contenu distinct des pages ordinaires du site web -- ils ne sont pas créés dans l'[éditeur de pages](./page-editor.md) et n'apparaissent pas dans la liste des pages. Cela rend la rédaction des articles rapide et axée sur l'écriture.
 :::
 
 ## Ajouter des commentaires sous les articles
@@ -77,6 +79,6 @@ Videz la zone et cliquez sur **Enregistrer** pour retirer le code de chaque arti
 
 ## Et ensuite
 
-- [Gérer les pages](managing-pages) -- Ajouter un lien de navigation vers votre blogue
-- [Fichiers](files) -- Téléverser des photos à utiliser dans vos articles
+- [Gérer les pages](./managing-pages.md) -- Ajouter un lien de navigation vers votre blogue
+- [Fichiers](./files.md) -- Téléverser des photos à utiliser dans vos articles
 - [Intégration Zapier](../integrations/zapier.md) -- Déclencher des automatisations lorsque de nouveaux articles sont publiés

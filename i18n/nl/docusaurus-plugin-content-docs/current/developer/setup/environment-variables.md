@@ -1,5 +1,6 @@
 ---
 title: "Environment Variables"
+description: "Stel het .env-bestand in voor ChurchApps-projecten: kies de gedeelde demo-API of een lokale API en vul de variabelen in voor B1 Admin, B1.church en meer."
 ---
 
 # Environment Variables
@@ -13,9 +14,9 @@ Elk ChurchApps-project gebruikt een `.env`-bestand voor lokale configuratie. Elk
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Installeer de [voorwaarden](./prerequisites) voor uw project
+- Installeer de [voorwaarden](./prerequisites.md) voor uw project
 - Kloon de projectrepository die u wilt gebruiken
-- Lees het [Project Overview](./project-overview) om te begrijpen welke API-modules uw project nodig heeft
+- Lees het [Project Overview](./project-overview.md) om te begrijpen welke API-modules uw project nodig heeft
 
 </div>
 
@@ -60,7 +61,7 @@ https://api.staging.churchapps.org/doing
 
 ### Optie 2: Lokale API
 
-Voer het Api-project op uw machine uit. Vereist MySQL 8.0+ met databases gemaakt voor elke module. Zie de [API lokale setup](../api/local-setup)-gids.
+Voer het Api-project op uw machine uit. Vereist MySQL 8.0+ met databases gemaakt voor elke module. Zie de [API lokale setup](../api/local-setup.md)-gids.
 
 ```bash
 # Base URL patroon

@@ -1,5 +1,6 @@
 ---
 title: "Masseimport"
+description: "Importer preken-videoer i bulk fra en YouTube-kanal eller Vimeo-konto til B1 Admin, og sorter dem deretter i en spilleliste."
 ---
 
 # Masseimport
@@ -14,7 +15,7 @@ Siden for masseimport lar deg raskt fylle opp preken-biblioteket ditt ved å imp
 <h4>Før du begynner</h4>
 
 - Du trenger tillatelsen **contentApi.streamingServices.edit**. Se [Roller og tillatelser](../settings/roles-permissions.md) hvis du ikke har tilgang.
-- Opprett minst én [spilleliste](playlists) å importere prekenene dine til
+- Opprett minst én [spilleliste](./playlists.md) å importere prekenene dine til
 - Ha YouTube-kanal-ID-en din eller Vimeo-kontoinformasjonen klar
 
 </div>
@@ -39,7 +40,7 @@ Før du importerer videoer, trenger du minst én spilleliste å organisere dem i
 2. Klikk på **Create First Playlist** og fyll inn navn, beskrivelse, publiseringsdato og miniatyrbilde.
 3. Klikk på **Save**, og gå deretter tilbake til masseimport ved å klikke på **Add Sermon** og velge **Bulk Import**.
 
-Se [Spillelister](playlists) for detaljerte instruksjoner om hvordan du lager og administrerer spillelister.
+Se [Spillelister](./playlists.md) for detaljerte instruksjoner om hvordan du lager og administrerer spillelister.
 
 ## Importere videoer
 
@@ -54,11 +55,11 @@ Se [Spillelister](playlists) for detaljerte instruksjoner om hvordan du lager og
 Videoene dine importeres med alle detaljene sine, inkludert titler, beskrivelser, datoer og miniatyrbilder. Spesialtegn i YouTube-titler og -beskrivelser, som `&`, apostrofer og anførselstegn, kommer over slik de er skrevet, i stedet for som koder som `&amp;`.
 
 :::info
-Masseimport er ideell når du kommer i gang og flytter fra en annen plattform. For å legge til enkeltpreken i fremtiden, bruk siden [Administrere prekener](managing-sermons) i stedet.
+Masseimport er ideell når du kommer i gang og flytter fra en annen plattform. For å legge til enkeltpreken i fremtiden, bruk siden [Administrere prekener](./managing-sermons.md) i stedet.
 :::
 
 ## Neste steg
 
-- [Administrere prekener](managing-sermons) -- Rediger detaljene for importerte prekener
-- [Spillelister](playlists) -- Lag og administrer prekenserier
-- [Direktesending](live-streaming) -- Sett opp direktesending for gudstjenestene dine
+- [Administrere prekener](./managing-sermons.md) -- Rediger detaljene for importerte prekener
+- [Spillelister](./playlists.md) -- Lag og administrer prekenserier
+- [Direktesending](./live-streaming.md) -- Sett opp direktesending for gudstjenestene dine

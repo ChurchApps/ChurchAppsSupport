@@ -1,5 +1,7 @@
 ---
-title: "Kasaysayan ng Donasyon"
+title: "Pagtingin sa Kasaysayan ng Donasyon sa B1 Mobile"
+sidebar_label: "Kasaysayan ng Donasyon"
+description: "Tingnan ang year-to-date na pagbibigay, huling handog, at buong talaan sa B1 Mobile, at ulitin ang nakaraang handog sa isang tap sa Overview."
 ---
 
 # Kasaysayan ng Donasyon
@@ -13,8 +15,8 @@ Binibigyan ka ng B1 Mobile ng malinaw na larawan ng iyong pagbibigay sa pamamagi
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
-- [Magbigay ng kahit isang donasyon](./making-donations) para makita ang iyong kasaysayan
+- [I-install ang B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
+- [Magbigay ng kahit isang donasyon](./making-donations.md) para makita ang iyong kasaysayan
 
 </div>
 
@@ -45,5 +47,5 @@ Regular na tingnan ang **Overview** tab para manatiling updated sa iyong mga lay
 
 ## Mga Kaugnay na Artikulo
 
-- [Pagbibigay ng Donasyon](./making-donations) -- Magbigay ng bagong regalo mula sa app
-- [Pamamahala ng mga Paraan ng Pagbabayad](./managing-payments) -- Magdagdag o mag-alis ng mga naka-save na paraan ng pagbabayad
+- [Pagbibigay ng Donasyon](./making-donations.md) -- Magbigay ng bagong regalo mula sa app
+- [Pamamahala ng mga Paraan ng Pagbabayad](./managing-payments.md) -- Magdagdag o mag-alis ng mga naka-save na paraan ng pagbabayad

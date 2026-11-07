@@ -1,5 +1,6 @@
 ---
 title: "Mga Content Provider"
+description: "I-browse at i-download ang mga materyal ng aralin, video, at larawan mula sa Lessons.church, Dropbox, OneDrive, at iba pang provider sa FreePlay TV app."
 ---
 
 # Mga Content Provider
@@ -14,7 +15,7 @@ Ang mga content provider ay mga panlabas na serbisyo na nagbibigay ng mga matery
 
 Kasalukuyang kasama sa FreePlay ang mga sumusunod na provider:
 
-- **[Lessons.church](../../lessons-church/)** - Libre, open-source na kurikulum para sa children's ministry
+- **[Lessons.church](../../lessons-church/index.md)** - Libre, open-source na kurikulum para sa children's ministry
 - **Bible Project** - Mga video at resource na tumutuklas sa Bibliya
 - **SignPresenter** - Content para sa presentasyon at signage para sa mga simbahan
 - **B1.church** - Content mula sa sarili mong B1 church setup
@@ -24,7 +25,7 @@ Kasalukuyang kasama sa FreePlay ang mga sumusunod na provider:
 - **OneDrive** - Mag-browse at magpatugtog ng mga larawan, video, at audio mula sa sarili mong Microsoft OneDrive
 
 :::note
-Hindi na ipinapakita sa FreePlay TV app ang Google Drive at FreeShow. Para magamit ang content ng Google Drive sa iyong mga TV, ikonekta ito sa [FreePlay Admin](../scheduled-mode/building-playlists#connecting-providers), idagdag ang mga file sa isang playlist, at i-iskedyul ang playlist na iyon.
+Hindi na ipinapakita sa FreePlay TV app ang Google Drive at FreeShow. Para magamit ang content ng Google Drive sa iyong mga TV, ikonekta ito sa [FreePlay Admin](../scheduled-mode/building-playlists.md#connecting-providers), idagdag ang mga file sa isang playlist, at i-iskedyul ang playlist na iyon.
 :::
 
 :::info
@@ -37,14 +38,14 @@ Bawat provider ay may sariling library ng content na nakaayos sa mga folder at f
 
 Lalabas ang mga naka-connect na provider sa sidebar sa kaliwa ng screen, sa ilalim ng heading na **Browse**. Maaari kang lumipat sa pagitan ng mga provider sa pamamagitan ng pagpili sa mga ito sa sidebar, kaya madali kang makakalipat sa pagitan ng mga pinagmumulan ng content habang nagse-setup.
 
-Maaari ka ring pumili ng folder mula sa anumang naka-connect na provider para i-loop bilang [mga anunsyo](./announcements) sa iyong TV.
+Maaari ka ring pumili ng folder mula sa anumang naka-connect na provider para i-loop bilang [mga anunsyo](./announcements.md) sa iyong TV.
 
 :::tip
-Ang mga provider na ikinonekta mo sa TV ay para lamang sa TV na iyon. Kung gumagamit ka ng [Scheduled Mode](../scheduled-mode/), ikonekta ang mga provider nang minsan sa FreePlay Admin, at makakapagpatugtog ang bawat naka-iskedyul na screen ng content mula sa kanila.
+Ang mga provider na ikinonekta mo sa TV ay para lamang sa TV na iyon. Kung gumagamit ka ng [Scheduled Mode](../scheduled-mode/index.md), ikonekta ang mga provider nang minsan sa FreePlay Admin, at makakapagpatugtog ang bawat naka-iskedyul na screen ng content mula sa kanila.
 :::
 
 ## Sa Seksyong Ito
 
-- **[Connecting to Providers](./connecting-providers)** - Paano mag-authenticate at kumonekta
-- **[Browsing and Downloading Content](./browsing-content)** - Mag-navigate sa mga folder, mag-download ng mga file, at magpatugtog ng content
-- **[Announcements](./announcements)** - I-loop ang isang folder ng mga slide mula sa provider
+- **[Connecting to Providers](./connecting-providers.md)** - Paano mag-authenticate at kumonekta
+- **[Browsing and Downloading Content](./browsing-content.md)** - Mag-navigate sa mga folder, mag-download ng mga file, at magpatugtog ng content
+- **[Announcements](./announcements.md)** - I-loop ang isang folder ng mga slide mula sa provider

@@ -1,5 +1,7 @@
 ---
-title: "Donationshistorik"
+title: "Giveroversigt og årsopgørelser på B1.church"
+sidebar_label: "Donationshistorik"
+description: "Se dine tidligere donationer, filtrér efter år og print årsopgørelser til skat fra siden Giving i B1.church medlemsportalen."
 ---
 
 # Donationshistorik

@@ -1,5 +1,6 @@
 ---
 title: "Tarnystės planai"
+description: "Nustatykite savanorių tvarkaraštį B1 Admin: kurkite planus pagal datas, kopijuokite ankstesnes savaites, skirkite narius ir valdykite registracijos terminus."
 ---
 
 # Tarnystės planai

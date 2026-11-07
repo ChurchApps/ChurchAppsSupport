@@ -1,5 +1,7 @@
 ---
-title: "Ryhmät"
+title: "Ryhmät B1 Adminissa"
+sidebar_label: "Ryhmät"
+description: "Määritä ja järjestä ryhmiä B1 Adminissa: kategoriat, jäsenet, kalenterit ja liittymispyynnöt, sekä ohje Ryhmät-sivun löytämiseen."
 ---
 
 # Ryhmät

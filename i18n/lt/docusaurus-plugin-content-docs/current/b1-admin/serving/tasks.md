@@ -1,5 +1,6 @@
 ---
 title: "Užduotys"
+description: "Kurkite, paskirstykite ir uždarykite užduotis B1 Admin, rasdami jas Tarnystė > Mano darbai, ir nustatykite priminimus, kad sekimo darbai nebūtų pamiršti."
 ---
 
 # Užduotys

@@ -1,5 +1,6 @@
 ---
 title: "Aanwezigheidsrapporten"
+description: "Overzicht van de drie aanwezigheidsrapporten in B1 Admin en wat ze tonen, met stappen om ze uit te voeren en te exporteren."
 ---
 
 # Aanwezigheidsrapporten

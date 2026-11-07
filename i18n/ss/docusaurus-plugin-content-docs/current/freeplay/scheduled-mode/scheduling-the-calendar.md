@@ -1,5 +1,6 @@
 ---
 title: "Kuhlela Ikhalenda"
+description: "Setfa sikhedulu lesivamile noma lesisisi ku-Calendar ye-FreePlay Admin kutsi kudlale tinhlelo, tinhlelo temasikhatsi, noma tikhwama temhlinzeki etiskrinini nasemaqembuneni, netilulamisi letizenta njengesikhatsi sekuphuma."
 ---
 
 # Kuhlela Ikhalenda
@@ -13,8 +14,8 @@ Likhasi le-**Calendar** ku-FreePlay Admin libusa ukuthi liqembu ngalinye lesikri
 <div class="prereqs">
 <h4>Ngaphambi Kokuqala</h4>
 
-- Dala liqembu lesikrini lesisodvwa. Bona [Kuphatha Tiskrini Namaqembu](./managing-screens#screen-groups)
-- [Akha upulelisi](./building-playlists), noma lukhetsa luhlobo lwesihlelo se-B1 Admin
+- Dala liqembu lesikrini lesisodvwa. Bona [Kuphatha Tiskrini Namaqembu](./managing-screens.md#screen-groups)
+- [Akha upulelisi](./building-playlists.md), noma lukhetsa luhlobo lwesihlelo se-B1 Admin
 
 </div>
 
@@ -82,11 +83,11 @@ Uma tishedule timbili tihlanganile, ifomu likhombisa sexwayiso: **Overlaps anoth
 
 ## Tiskrini Tisebenta Kanjani Ngetinguquko
 
-Tiskrini letibhangqiwe tiyalanda konkhe lekushedulelwe ematsatsi lalandzelako lasikhombisa-7, futsi tiyahlola tinguquko tiyedvwa. Awudzingi kuthinta i-TV ngemva kwekuhlela ikhalenda. Kuze ubone kutsi tiskrini tilungele, hlola i-**Ready through** ekhasini le-[Screens](./managing-screens).
+Tiskrini letibhangqiwe tiyalanda konkhe lekushedulelwe ematsatsi lalandzelako lasikhombisa-7, futsi tiyahlola tinguquko tiyedvwa. Awudzingi kuthinta i-TV ngemva kwekuhlela ikhalenda. Kuze ubone kutsi tiskrini tilungele, hlola i-**Ready through** ekhasini le-[Screens](./managing-screens.md).
 
 ## Tindzatfo Letihambisanako
 
-- **[Building Playlists](./building-playlists)** - Akha tipulelisi lotihlelela
-- **[Scheduled Playback on the TV](./scheduled-playback)** - Kutsi tisifundvo letibekwe ngemumo ye-teacher paced nelisilawuli sisebenta njani ku-TV
-- **[Managing Screens and Groups](./managing-screens)** - Engeza emaqembu nohlole kulandza kwesikrini ngasinye
+- **[Building Playlists](./building-playlists.md)** - Akha tipulelisi lotihlelela
+- **[Scheduled Playback on the TV](./scheduled-playback.md)** - Kutsi tisifundvo letibekwe ngemumo ye-teacher paced nelisilawuli sisebenta njani ku-TV
+- **[Managing Screens and Groups](./managing-screens.md)** - Engeza emaqembu nohlole kulandza kwesikrini ngasinye
 - **[Keeping Only Part of Every Lesson](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Nciphisa sifundvo ngasinye lesihlelelwe luhlobo lwesihlelo sibe tingcenye letidlalwa egumbini lakho

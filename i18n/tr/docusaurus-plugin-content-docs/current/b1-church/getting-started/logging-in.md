@@ -1,5 +1,7 @@
 ---
-title: "Giriş Yapma"
+title: "B1.church ve Üye Portalına Giriş Yapma"
+sidebar_label: "Giriş Yapma"
+description: "B1.church üye portalınıza giriş yapın; iki faktörlü kodları veya tek oturum açmayı kullanın, unutulan şifreyi sıfırlayın ve hesap menüsünden çıkış yapın."
 ---
 
 # Giriş Yapma
@@ -17,7 +19,7 @@ B1.church'e giriş yapmak, yaklaşan etkinliklerinizi görebileceğiniz, gruplar
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Bir ChurchApps hesabına ihtiyacınız var. Hesap oluşturmak için [Başlarken](../getting-started/) bölümüne bakın.
+- Bir ChurchApps hesabına ihtiyacınız var. Hesap oluşturmak için [Başlarken](./index.md) bölümüne bakın.
 - Kilisenizin B1.church URL'sine ihtiyacınız var (örneğin, `https://yourchurchname.b1.church`).
 
 </div>
@@ -39,7 +41,7 @@ Oturumunuzu kapatana kadar aynı tarayıcıda veya yüklü uygulamada oturum aç
 
 ## Üye Portalına Erişim
 
-Oturum açtıktan sonra, sayfanın sağ üst köşesindeki **adınıza** tıklayıp menüden **Üye Portalı**'nı seçerek üye portalına erişebilirsiniz. Üye portalı, [Ana Sayfa paneli](./navigating.md), [Ben sayfası](./me-page.md), [gruplar](../groups/), [bağışlar](../giving/) ve daha fazlası dahil tüm kişisel kilise araçlarınızın bulunduğu yerdir.
+Oturum açtıktan sonra, sayfanın sağ üst köşesindeki **adınıza** tıklayıp menüden **Üye Portalı**'nı seçerek üye portalına erişebilirsiniz. Üye portalı, [Ana Sayfa paneli](./navigating.md), [Ben sayfası](./me-page.md), [gruplar](../groups/index.md), [bağışlar](../giving/index.md) ve daha fazlası dahil tüm kişisel kilise araçlarınızın bulunduğu yerdir.
 
 ## Kullanıcı Menünüz
 

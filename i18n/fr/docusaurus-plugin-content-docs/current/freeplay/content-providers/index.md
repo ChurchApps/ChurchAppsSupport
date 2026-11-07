@@ -1,5 +1,6 @@
 ---
 title: "Fournisseurs de contenu"
+description: "Parcourir et télécharger supports de leçons, vidéos et images de Lessons.church, Dropbox, OneDrive et d'autres fournisseurs dans l'application FreePlay TV."
 ---
 
 # Fournisseurs de contenu
@@ -14,7 +15,7 @@ Les fournisseurs de contenu sont des services externes qui fournissent des suppo
 
 FreePlay comprend actuellement les fournisseurs suivants :
 
-- **[Lessons.church](../../lessons-church/)** - Programme de catéchèse pour enfants gratuit et open source
+- **[Lessons.church](../../lessons-church/index.md)** - Programme de catéchèse pour enfants gratuit et open source
 - **Bible Project** - Vidéos et ressources qui explorent la Bible
 - **SignPresenter** - Contenus de présentation et de signalétique pour les églises
 - **B1.church** - Contenu de la configuration B1 de votre propre église
@@ -24,7 +25,7 @@ FreePlay comprend actuellement les fournisseurs suivants :
 - **OneDrive** - Parcourez et diffusez les images, vidéos et fichiers audio de votre propre Microsoft OneDrive
 
 :::note
-Google Drive et FreeShow ne sont plus affichés dans l'application FreePlay pour téléviseurs. Pour utiliser du contenu Google Drive sur vos télévisions, connectez-le dans [FreePlay Admin](../scheduled-mode/building-playlists#connecting-providers), ajoutez les fichiers à une liste de lecture, puis planifiez cette liste de lecture.
+Google Drive et FreeShow ne sont plus affichés dans l'application FreePlay pour téléviseurs. Pour utiliser du contenu Google Drive sur vos télévisions, connectez-le dans [FreePlay Admin](../scheduled-mode/building-playlists.md#connecting-providers), ajoutez les fichiers à une liste de lecture, puis planifiez cette liste de lecture.
 :::
 
 :::info
@@ -37,14 +38,14 @@ Chaque fournisseur possède sa propre bibliothèque de contenu organisée en dos
 
 Les fournisseurs connectés apparaissent dans la barre latérale à gauche de l'écran, sous le titre **Parcourir**. Vous pouvez passer d'un fournisseur à l'autre en les sélectionnant dans la barre latérale, ce qui facilite les allers-retours entre les sources de contenu pendant la configuration.
 
-Vous pouvez aussi choisir un dossier de n'importe quel fournisseur connecté pour le faire tourner en boucle sous forme d'[annonces](./announcements) sur votre télévision.
+Vous pouvez aussi choisir un dossier de n'importe quel fournisseur connecté pour le faire tourner en boucle sous forme d'[annonces](./announcements.md) sur votre télévision.
 
 :::tip
-Les fournisseurs que vous connectez sur la télévision ne concernent que cette télévision. Si vous utilisez le [mode planifié](../scheduled-mode/), connectez plutôt les fournisseurs une seule fois dans FreePlay Admin : chaque écran planifié pourra alors diffuser leur contenu.
+Les fournisseurs que vous connectez sur la télévision ne concernent que cette télévision. Si vous utilisez le [mode planifié](../scheduled-mode/index.md), connectez plutôt les fournisseurs une seule fois dans FreePlay Admin : chaque écran planifié pourra alors diffuser leur contenu.
 :::
 
 ## Dans cette section
 
-- **[Connexion aux fournisseurs](./connecting-providers)** - Comment vous authentifier et vous connecter
-- **[Parcourir et télécharger du contenu](./browsing-content)** - Naviguer dans les dossiers, télécharger des fichiers et diffuser du contenu
-- **[Annonces](./announcements)** - Faire tourner en boucle un dossier de diapositives d'un fournisseur
+- **[Connexion aux fournisseurs](./connecting-providers.md)** - Comment vous authentifier et vous connecter
+- **[Parcourir et télécharger du contenu](./browsing-content.md)** - Naviguer dans les dossiers, télécharger des fichiers et diffuser du contenu
+- **[Annonces](./announcements.md)** - Faire tourner en boucle un dossier de diapositives d'un fournisseur

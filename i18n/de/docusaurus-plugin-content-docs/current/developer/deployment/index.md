@@ -1,5 +1,6 @@
 ---
 title: "Bereitstellung"
+description: "Wo jedes ChurchApps-Projekt läuft: AWS-Lambda-APIs, S3-Webapps, Expo-Mobile-Builds und selbst gehostetes B1 Admin auf Railway oder Docker."
 ---
 
 # Bereitstellung
@@ -14,12 +15,12 @@ ChurchApps verwendet je nach Projekttyp unterschiedliche Bereitstellungsstrategi
 
 | Projekttyp | Bereitstellungsziel | Werkzeuge |
 |-------------|-------------------|---------|
-| [APIs](./apis) | AWS Lambda | Serverless Framework v3 (Laufzeitumgebung Node.js 24.x) |
-| [Web-Apps](./web-apps) | S3 + CloudFront | Statischer Build, S3-Synchronisierung, Invalidierung von CloudFront |
-| [Mobile Apps](./mobile) | App-Stores | Expo EAS Build + OTA-Updates |
-| [Selbst-Hosting (Railway)](./railway-template) | Railway | Ein-Klick-Vorlage: MySQL + Api + B1Admin + B1App |
-| [Selbst-Hosting (Docker)](./docker) | Beliebiger Docker-Host | Installer mit einer Zeile; vorgefertigte GHCR-Images + Caddy, Aktualisierung/Sicherung/Zurücksetzen mit `./deploy/b1` |
-| [Caddy-Proxy für eigene Domains](./caddy-proxy) | Windows-EC2 (Elastic IP `3.23.251.61`) | Statische Caddyfile + WinSW-Dienst + geplante Synchronisierung der Zuordnung |
+| [APIs](./apis.md) | AWS Lambda | Serverless Framework v3 (Laufzeitumgebung Node.js 24.x) |
+| [Web-Apps](./web-apps.md) | S3 + CloudFront | Statischer Build, S3-Synchronisierung, Invalidierung von CloudFront |
+| [Mobile Apps](./mobile.md) | App-Stores | Expo EAS Build + OTA-Updates |
+| [Selbst-Hosting (Railway)](./railway-template.md) | Railway | Ein-Klick-Vorlage: MySQL + Api + B1Admin + B1App |
+| [Selbst-Hosting (Docker)](./docker.md) | Beliebiger Docker-Host | Installer mit einer Zeile; vorgefertigte GHCR-Images + Caddy, Aktualisierung/Sicherung/Zurücksetzen mit `./deploy/b1` |
+| [Caddy-Proxy für eigene Domains](./caddy-proxy.md) | Windows-EC2 (Elastic IP `3.23.251.61`) | Statische Caddyfile + WinSW-Dienst + geplante Synchronisierung der Zuordnung |
 | FreeShow | Direkter Download | Electron Builder (plattformübergreifende Binärdateien) |
 
 ## Umgebungen

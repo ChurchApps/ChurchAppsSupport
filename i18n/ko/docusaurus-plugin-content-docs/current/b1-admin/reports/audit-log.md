@@ -1,5 +1,6 @@
 ---
 title: "감사 로그"
+description: "B1 Admin의 감사 로그를 검토하여 누가 로그인했는지, 교인 기록을 수정했는지, 권한을 변경했는지 확인하고, 필터링한 항목을 CSV로 내보내세요."
 ---
 
 # 감사 로그
@@ -78,6 +79,6 @@ title: "감사 로그"
 
 ## 관련 문서
 
-- [Roles & Permissions](../settings/roles-permissions) -- 접근 권한 관리
-- [Data Security](../settings/data-security) -- 데이터가 어떻게 보호되는지 이해
+- [Roles & Permissions](../settings/roles-permissions.md) -- 접근 권한 관리
+- [Data Security](../settings/data-security.md) -- 데이터가 어떻게 보호되는지 이해
 - [Reports Overview](./index.md) -- 사용 가능한 모든 보고서 보기

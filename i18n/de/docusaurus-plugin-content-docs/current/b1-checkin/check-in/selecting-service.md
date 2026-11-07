@@ -1,5 +1,6 @@
 ---
 title: "Gottesdienst auswählen"
+description: "Im Gottesdienst-Auswahlbildschirm von B1 Checkin den Gottesdienst wählen, den Sie besuchen; das legt Zeiten und Gruppen für den restlichen Check-in fest."
 ---
 
 # Gottesdienst auswählen
@@ -13,7 +14,7 @@ Der erste Schritt jedes Check-ins ist die Auswahl des Gottesdienstes, den Sie be
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [Melden Sie sich an](../getting-started/logging-in) bei der App B1 Church Checkin an und wählen Sie Ihre Gemeinde aus.
+- [Melden Sie sich an](../getting-started/logging-in.md) bei der App B1 Church Checkin an und wählen Sie Ihre Gemeinde aus.
 - Stellen Sie sicher, dass Ihr Gemeindeadministrator [Gottesdienste und Gottesdienstzeiten konfiguriert](../../b1-admin/attendance/setup.md) hat, in B1 Admin.
 
 </div>
@@ -24,11 +25,11 @@ Der erste Schritt jedes Check-ins ist die Auswahl des Gottesdienstes, den Sie be
 2. Sie sehen eine Liste aller Gottesdienste, die für Ihre Gemeinde eingerichtet wurden. Jeder Gottesdienst erscheint als Karte mit dem Namen des Gottesdienstes (zum Beispiel „Sonntagmorgen“ oder „Mittwochabend“).
 3. Tippen Sie auf den Gottesdienst, den Sie besuchen.
 
-Die App lädt die Gottesdienstzeiten und Gruppen, die diesem Gottesdienst zugeordnet sind, und bringt Sie dann zum [Suchbildschirm für Gemeindemitglieder](./looking-up-members).
+Die App lädt die Gottesdienstzeiten und Gruppen, die diesem Gottesdienst zugeordnet sind, und bringt Sie dann zum [Suchbildschirm für Gemeindemitglieder](./looking-up-members.md).
 
 ## Wenn der Check-in nicht geöffnet ist
 
-Hat Ihr Administrator einer Gottesdienstzeit einen [Check-in-Zeitplan](../../b1-admin/attendance/setup#setting-a-check-in-schedule) zugewiesen, lässt die App Familien diese Gottesdienstzeit nur auswählen, während ihr Check-in-Fenster geöffnet ist. Gottesdienstzeiten, deren Fenster gerade geschlossen ist, werden weiterhin auf dem [Haushaltsbildschirm](./household-review) angezeigt. Sie sind jedoch als **Geschlossen** markiert (zum Beispiel **Geschlossen · öffnet So 9:30 Uhr**) und bieten keine Gruppenschaltfläche an.
+Hat Ihr Administrator einer Gottesdienstzeit einen [Check-in-Zeitplan](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) zugewiesen, lässt die App Familien diese Gottesdienstzeit nur auswählen, während ihr Check-in-Fenster geöffnet ist. Gottesdienstzeiten, deren Fenster gerade geschlossen ist, werden weiterhin auf dem [Haushaltsbildschirm](./household-review.md) angezeigt. Sie sind jedoch als **Geschlossen** markiert (zum Beispiel **Geschlossen · öffnet So 9:30 Uhr**) und bieten keine Gruppenschaltfläche an.
 
 Sind alle Gottesdienstzeiten des von Ihnen angetippten Gottesdienstes geschlossen, teilt Ihnen die App mit, wann der Check-in öffnet – zum Beispiel **„Der Check-in für diesen Gottesdienst öffnet So 9:30 Uhr.“**. (Kann kein Öffnungszeitpunkt angezeigt werden, lautet die Meldung **„Der Check-in für diesen Gottesdienst ist derzeit nicht geöffnet.“**) Tippen Sie auf **Zurück**, um zur Gottesdienstliste zurückzukehren und einen anderen Gottesdienst zu wählen, oder warten Sie, bis das Fenster öffnet, und versuchen Sie es erneut.
 
@@ -56,4 +57,4 @@ Ist für Ihre Gemeinde nur ein Gottesdienst eingerichtet, müssen Sie ihn trotzd
 
 ## Nächster Schritt
 
-Nach der Auswahl eines Gottesdienstes suchen Sie Ihre Familie [anhand der Telefonnummer oder des Namens](./looking-up-members).
+Nach der Auswahl eines Gottesdienstes suchen Sie Ihre Familie [anhand der Telefonnummer oder des Namens](./looking-up-members.md).

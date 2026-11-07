@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "Referentie voor @churchapps/apphelper: de subpath-ingangspunten, welke apps welke export gebruiken, en lokaal ontwikkelen en publiceren."
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ De `@churchapps/apphelper*`-pakketten bieden gedeelde React-onderdelen en utilit
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Installeer **Node.js** en **Git** -- zie [Prerequisites](../setup/prerequisites)
+- Installeer **Node.js** en **Git** -- zie [Prerequisites](../setup/prerequisites.md)
 - Maak jezelf vertrouwd met de [npm link workflow](./index.md) voor lokale ontwikkeling
 
 </div>
@@ -75,6 +76,6 @@ Zorg er bij publicatie voor dat u het versienummer in de relevante `package.json
 
 ## Gerelateerde Artikelen
 
-- **[Helpers](./helpers)** -- Het basisutiliteitspakket dat naast AppHelper wordt gebruikt
-- **[Web Apps](../web-apps/)** -- De web-applicaties die deze pakketten gebruiken
+- **[Helpers](./helpers.md)** -- Het basisutiliteitspakket dat naast AppHelper wordt gebruikt
+- **[Web Apps](../web-apps/index.md)** -- De web-applicaties die deze pakketten gebruiken
 - **[Shared Libraries Overview](./index.md)** -- `npm link` workflow en pakketoverzicht

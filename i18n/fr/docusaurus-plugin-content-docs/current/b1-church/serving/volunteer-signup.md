@@ -1,5 +1,7 @@
 ---
-title: "Inscription comme bénévole"
+title: "Inscription bénévole dans le portail des membres B1.church"
+sidebar_label: "Inscription comme bénévole"
+description: "Parcourez les postes bénévoles ouverts par catégorie, inscrivez-vous aux prochains services ou annulez avant la date limite sur B1.church."
 ---
 
 # Inscription comme bénévole
@@ -74,4 +76,4 @@ Consultez régulièrement la page Bénévolat, surtout en début de semaine. Les
 ## Articles connexes
 
 - [Présentation du service](./index.md) -- Vue d'ensemble des fonctionnalités de service sur B1.church
-- [Consulter les plannings](../plans/viewing-plans) -- Consultez vos plannings attribués et leurs ordres de service
+- [Consulter les plannings](../plans/viewing-plans.md) -- Consultez vos plannings attribués et leurs ordres de service

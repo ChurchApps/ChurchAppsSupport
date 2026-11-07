@@ -1,5 +1,7 @@
 ---
-title: "Topluluk"
+title: "B1.church'te Topluluk Üye Dizini"
+sidebar_label: "Topluluk"
+description: "B1.church'te kilise üye dizininde ada veya gruba göre arama yapın, profilleri görüntüleyin ve emekli olan Zaman Çizelgesi güncellemelerinin nerede olduğunu bulun."
 ---
 
 # Topluluk
@@ -26,5 +28,5 @@ Dizinde sizin görebildiğiniz üyeler ve bilgiler, kilisenizin gizlilik ayarlar
 :::
 
 :::tip
-Hafta boyunca kilisenize bağlı kalmak için topluluk özelliklerini [Gruplar](../groups/) ile birlikte kullanın.
+Hafta boyunca kilisenize bağlı kalmak için topluluk özelliklerini [Gruplar](../groups/index.md) ile birlikte kullanın.
 :::

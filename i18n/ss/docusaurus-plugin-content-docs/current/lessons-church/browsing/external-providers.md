@@ -1,5 +1,6 @@
 ---
 title: "Banikeli Bangaphandle"
+description: "Funda kutsi bahlinzeki bemakharikhulamu langaphandle bengeza kanjani lokuqukethwe kwabo ku-Lessons.church besebenticisa i-Open Lesson Format, nendlela yekuxhuma umhlinzeki kusuka ku-portal."
 ---
 
 # Banikeli Bangaphandle

@@ -1,5 +1,6 @@
 ---
 title: "Dary"
+description: "Zaznamenávajte, organizujte a vykazujte dary zboru v B1 Admin: od dávok a fondov cez ročné výpisy až po online dary cez Stripe alebo PayPal."
 ---
 
 # Dary

@@ -1,5 +1,7 @@
 ---
-title: "Obsah"
+title: "Obsahové funkce v aplikaci B1 Mobile"
+sidebar_label: "Obsah"
+description: "V aplikaci B1 Mobile najdete kázání, přímé přenosy, čtení Bible a Verš dne a zjistíte, které funkce obsahu má vaše církev zapnuté."
 ---
 
 # Obsah
@@ -30,20 +32,20 @@ Zobrazte krásně naformátovaný obrázek biblického verše, který se každý
 
 ### Lekce (zastaralé)
 
-Vestavěná obrazovka Lekce byla nahrazena aplikací **[FreePlay](/docs/freeplay/)** pro přehrávání ve třídě a návštěvou webu [Lessons.church](https://lessons.church) pro procházení materiálů. Podrobnosti najdete na [referenční stránce Lekce](./lessons).
+Vestavěná obrazovka Lekce byla nahrazena aplikací **[FreePlay](/docs/freeplay/)** pro přehrávání ve třídě a návštěvou webu [Lessons.church](https://lessons.church) pro procházení materiálů. Podrobnosti najdete na [referenční stránce Lekce](./lessons.md).
 
 ## Vyhledání obsahu
 
 Funkce obsahu jsou dostupné v postranním menu aplikace. Váš správce církve rozhoduje, které funkce obsahu jsou zapnuté, takže možná neuvidíte všechny výše uvedené možnosti. Pokud některá funkce chybí, vaše církev ji zatím nemusí mít nastavenou.
 
 :::info
-Funkce obsahu nastavuje váš správce církve prostřednictvím [B1 Admin](../../b1-admin/). Pokud nevidíte funkci, kterou očekáváte, kontaktujte kancelář své církve.
+Funkce obsahu nastavuje váš správce církve prostřednictvím [B1 Admin](../../b1-admin/index.md). Pokud nevidíte funkci, kterou očekáváte, kontaktujte kancelář své církve.
 :::
 
 ## Další kroky
 
-- [Kázání](./sermons) -- Procházení a přehrávání nahraných kázání
-- [Živý přenos](./live-streaming) -- Sledování živých přenosů
-- [Bible](./bible) -- Čtení Písma ve vestavěné čtečce
-- [Verš dne](./verse-of-the-day) -- Zobrazení dnešního denního verše
+- [Kázání](./sermons.md) -- Procházení a přehrávání nahraných kázání
+- [Živý přenos](./live-streaming.md) -- Sledování živých přenosů
+- [Bible](./bible.md) -- Čtení Písma ve vestavěné čtečce
+- [Verš dne](./verse-of-the-day.md) -- Zobrazení dnešního denního verše
 - [FreePlay](/docs/freeplay/) -- Přehrávání lekcí na televizorech ve třídě (nahrazuje zastaralou obrazovku Lekce v aplikaci)

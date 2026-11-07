@@ -1,5 +1,6 @@
 ---
 title: "Tidslinje"
+description: "Fanen Timeline i B1.church medlemsportalen er udgået. Find gruppechats, begivenheder, opgaver og advarsler på Mig-siden, klokkeikonet og i hver gruppe."
 ---
 
 # Tidslinje
@@ -21,7 +22,7 @@ title: "Tidslinje"
 
 Tidslinjen viser en strøm af indlæg og opdateringer, som kan omfatte:
 
-- **Gruppekonversationer** -- Meddelelser og diskussioner fra [grupper](../groups/) du tilhører.
+- **Gruppekonversationer** -- Meddelelser og diskussioner fra [grupper](../groups/index.md) du tilhører.
 - **Opgaver** -- Opgaver tildelt til dig eller dine grupper.
 - **Begivenheder** -- Kommende begivenheder relevant for dig og dine grupper.
 - **Lektioner** -- Læreplan og [lektionsindhold](../content/lessons.md) delt med dine grupper.

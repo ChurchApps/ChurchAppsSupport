@@ -1,5 +1,6 @@
 ---
 title: "교실 TV를 B1 Admin 레슨에 연결"
+description: "FreePlay를 실행하는 교실 TV를 B1 Admin의 예약된 레슨과 연결하여, 교사가 수업 중 화면에서 레슨을 재생할 수 있게 하세요."
 ---
 
 # 교실 TV를 B1 Admin 레슨에 연결

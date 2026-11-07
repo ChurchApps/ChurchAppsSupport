@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Viite @churchapps/apihelper-paketille, jota kaikki Express-API:t käyttävät: paikallinen koonti, testaus Yarn-portaalilla ja changeset-julkaisu."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ Paketti `@churchapps/apihelper` tarjoaa palvelinpuolen apuvälineitä kaikille C
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Asenna **Node.js** ja **Git** -- katso [Esivaatimukset](../setup/prerequisites)
+- Asenna **Node.js** ja **Git** -- katso [Esivaatimukset](../setup/prerequisites.md)
 - Tutustu [Packages-työtilaan](./index.md) ja julkaisuprosessiin
-- Tämä paketti riippuu [`@churchapps/helpers`](./helpers)-paketista (vertaisriippuvuutena) ja välittää sen eteenpäin
+- Tämä paketti riippuu [`@churchapps/helpers`](./helpers.md)-paketista (vertaisriippuvuutena) ja välittää sen eteenpäin
 
 </div>
 
@@ -65,6 +66,6 @@ Tämä paketti on riippuvuus jokaiselle ChurchApps-API:lle -- ytimelle Api, AskA
 
 ## Aiheeseen liittyvät artikkelit
 
-- **[Helpers](./helpers)** -- Perustason apupaketti, josta tämä paketti riippuu
-- **[Moduulien rakenne](../api/module-structure)** -- Miten controllereita ja auth-välikerroksia käytetään API-moduuleissa
-- **[Paikallinen API-asennus](../api/local-setup)** -- API:n asentaminen paikalliseen kehitykseen
+- **[Helpers](./helpers.md)** -- Perustason apupaketti, josta tämä paketti riippuu
+- **[Moduulien rakenne](../api/module-structure.md)** -- Miten controllereita ja auth-välikerroksia käytetään API-moduuleissa
+- **[Paikallinen API-asennus](../api/local-setup.md)** -- API:n asentaminen paikalliseen kehitykseen

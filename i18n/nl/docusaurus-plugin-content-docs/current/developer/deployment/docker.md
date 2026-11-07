@@ -1,12 +1,13 @@
 ---
 title: "Zelf hosten met Docker"
+description: "Installeer een privé B1 Admin-, ledenportaal-, API- en MySQL-stack met Docker, en werk die bij en maak er back-ups van met het b1-commando."
 ---
 
 # Zelf hosten met Docker
 
 <div class="article-intro">
 
-Draai je eigen privé-instantie van B1 Admin, de B1-ledenportal en -website, de API en een MySQL-database op elke machine met Docker: een thuisserver, een kleine VPS of een on-premises server. Eén commando installeert alles, één commando voert een upgrade uit, en elke upgrade maakt eerst een back-up. Wil je helemaal geen server beheren? Bekijk dan [Zelf hosten op Railway](./railway-template) voor het beheerde alternatief.
+Draai je eigen privé-instantie van B1 Admin, de B1-ledenportal en -website, de API en een MySQL-database op elke machine met Docker: een thuisserver, een kleine VPS of een on-premises server. Eén commando installeert alles, één commando voert een upgrade uit, en elke upgrade maakt eerst een back-up. Wil je helemaal geen server beheren? Bekijk dan [Zelf hosten op Railway](./railway-template.md) voor het beheerde alternatief.
 
 </div>
 
@@ -94,10 +95,10 @@ Heb je geïnstalleerd op `localhost` en wil je later publiek toegankelijk maken?
 
 Deze werken precies zoals op Railway: dezelfde omgevingsvariabelen, maar ingesteld in `.env` in plaats van in het Railway-dashboard:
 
-- **[E-mail / SMTP](./railway-template#1-email-highly-recommended)**: stappenplannen per provider voor Resend, Brevo en Gmail
-- **[Meerdere sites](./railway-template#3-multi-site-multiple-churches-on-one-instance)**: onbeperkt aantal kerken per instantie. `/` toont de kerk waarvan de slug `DEFAULT_CHURCH_SLUG` is (de eerste kerk is `church`). Wijs extra domeinen naar de machine en koppel ze onder **Settings → Domains** in B1Admin
-- **[Online geven](./railway-template#4-online-giving-stripe--paypal)**: per kerk ingesteld in de beheerinterface
-- **[Optionele integraties](./railway-template#6-optional-feature-integrations)**: `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[E-mail / SMTP](./railway-template.md#1-email-highly-recommended)**: stappenplannen per provider voor Resend, Brevo en Gmail
+- **[Meerdere sites](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)**: onbeperkt aantal kerken per instantie. `/` toont de kerk waarvan de slug `DEFAULT_CHURCH_SLUG` is (de eerste kerk is `church`). Wijs extra domeinen naar de machine en koppel ze onder **Settings → Domains** in B1Admin
+- **[Online geven](./railway-template.md#4-online-giving-stripe--paypal)**: per kerk ingesteld in de beheerinterface
+- **[Optionele integraties](./railway-template.md#6-optional-feature-integrations)**: `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Pushmeldingen](#push-notifications)**: `WEB_PUSH_*`; het installatieprogramma laat deze leeg, dus push staat uit totdat je ze toevoegt
 
 Uitnodigingen en andere e-mails van de kerk worden op een zelf gehoste instantie automatisch ingeschakeld. De gehoste service zet deze achter een handmatige controle om de reputatie van de afzender te beschermen.
@@ -148,7 +149,7 @@ Drie benoemde Docker-volumes bevatten alle gegevens:
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-Voor grote mediabibliotheken kun je de bestandsopslag overzetten naar S3. Stel `FILE_STORE=S3` in, plus de `AWS_*`-variabelen die worden beschreven in de sectie Bestandsopslag van de [Railway-gids](./railway-template#5-file-storage). Databaseback-ups bevatten geen S3-objecten; schakel daarvoor bucketversiebeheer in.
+Voor grote mediabibliotheken kun je de bestandsopslag overzetten naar S3. Stel `FILE_STORE=S3` in, plus de `AWS_*`-variabelen die worden beschreven in de sectie Bestandsopslag van de [Railway-gids](./railway-template.md#5-file-storage). Databaseback-ups bevatten geen S3-objecten; schakel daarvoor bucketversiebeheer in.
 
 ## Bijwerken
 
@@ -187,6 +188,6 @@ Nog steeds vastgelopen? Open een issue op [github.com/ChurchApps/ChurchAppsSuppo
 
 ## Gerelateerde artikelen
 
-- **[Zelf hosten op Railway](./railway-template)**: beheerd hostingalternatief, plus de gedeelde gidsen voor configuratie na de implementatie
-- **[Eerste instelling](../../getting-started/initial-setup)**: eerste stappen nadat je kerk is aangemaakt
-- **[Lokale API-instelling](../api/local-setup)**: de stack rechtstreeks draaien voor ontwikkeling
+- **[Zelf hosten op Railway](./railway-template.md)**: beheerd hostingalternatief, plus de gedeelde gidsen voor configuratie na de implementatie
+- **[Eerste instelling](../../getting-started/initial-setup.md)**: eerste stappen nadat je kerk is aangemaakt
+- **[Lokale API-instelling](../api/local-setup.md)**: de stack rechtstreeks draaien voor ontwikkeling

@@ -1,5 +1,6 @@
 ---
 title: "Trang web"
+description: "Tổng quan về trình tạo trang web B1 Admin: trang, blog, khối, giao diện, tệp và lịch, với liên kết đến hướng dẫn thiết lập và chỉnh sửa."
 ---
 
 # Trang web
@@ -22,7 +23,7 @@ Các liên kết điều hướng của bạn được hiển thị dưới dạ
 
 ### Blog
 
-Đăng tin tức, cập nhật và bài suy ngẫm dưới dạng bài viết blog tại `/blog` trên trang web của bạn, kèm nguồn cấp RSS. Xem hướng dẫn [Blog](blog).
+Đăng tin tức, cập nhật và bài suy ngẫm dưới dạng bài viết blog tại `/blog` trên trang web của bạn, kèm nguồn cấp RSS. Xem hướng dẫn [Blog](./blog.md).
 
 ### Khối
 
@@ -30,24 +31,24 @@ Xây dựng các thành phần nội dung có thể tái sử dụng và đặt 
 
 ### Giao diện
 
-Tùy chỉnh chủ đề, màu sắc, phông chữ, logo và khoảng cách của trang web. Bạn có thể áp dụng các chủ đề kiểu dáng có sẵn để bắt đầu nhanh hoặc tinh chỉnh từng chi tiết bằng trình chỉnh sửa bảng màu, cài đặt kiểu chữ và CSS tùy chỉnh. Xem hướng dẫn [Giao diện](appearance) để biết đầy đủ chi tiết.
+Tùy chỉnh chủ đề, màu sắc, phông chữ, logo và khoảng cách của trang web. Bạn có thể áp dụng các chủ đề kiểu dáng có sẵn để bắt đầu nhanh hoặc tinh chỉnh từng chi tiết bằng trình chỉnh sửa bảng màu, cài đặt kiểu chữ và CSS tùy chỉnh. Xem hướng dẫn [Giao diện](./appearance.md) để biết đầy đủ chi tiết.
 
 ### Tệp
 
-Tải lên và quản lý tất cả tài nguyên đa phương tiện của bạn -- hình ảnh, tài liệu và các tệp khác -- ở một vị trí tập trung, và sao chép liên kết tệp để sử dụng ở bất kỳ đâu trên trang web. Xem [Tệp](files) để biết thêm thông tin.
+Tải lên và quản lý tất cả tài nguyên đa phương tiện của bạn -- hình ảnh, tài liệu và các tệp khác -- ở một vị trí tập trung, và sao chép liên kết tệp để sử dụng ở bất kỳ đâu trên trang web. Xem [Tệp](./files.md) để biết thêm thông tin.
 
 ### Lịch
 
 Xuất bản lịch sự kiện trên trang web để khách truy cập có thể xem những gì đang diễn ra tại hội thánh bạn. Tạo các lịch được chọn lọc, gom sự kiện từ nhiều nhóm vào một khung xem duy nhất. Lịch có mục **Lịch** riêng trong menu B1 Admin, tách biệt với **Trang web**.
 
 :::tip
-Hãy bắt đầu với [Thiết lập ban đầu](initial-setup) nếu bạn đang cấu hình trang web lần đầu tiên. Hướng dẫn này sẽ dẫn bạn qua việc thiết lập tên miền, tạo trang đầu tiên và cấu hình diện mạo trang web.
+Hãy bắt đầu với [Thiết lập ban đầu](./initial-setup.md) nếu bạn đang cấu hình trang web lần đầu tiên. Hướng dẫn này sẽ dẫn bạn qua việc thiết lập tên miền, tạo trang đầu tiên và cấu hình diện mạo trang web.
 :::
 
 ## Các bước tiếp theo
 
-- [Thiết lập ban đầu](initial-setup) -- Đưa trang web của bạn hoạt động lần đầu tiên
-- [Quản lý trang](managing-pages) -- Tìm hiểu cách tạo và sắp xếp các trang
-- [Sử dụng trình chỉnh sửa trang](page-editor) -- Xây dựng và định dạng nội dung trang bằng trình chỉnh sửa trực quan
-- [Giao diện](appearance) -- Tùy chỉnh diện mạo của trang web
-- [Tệp](files) -- Tải lên và quản lý tệp đa phương tiện
+- [Thiết lập ban đầu](./initial-setup.md) -- Đưa trang web của bạn hoạt động lần đầu tiên
+- [Quản lý trang](./managing-pages.md) -- Tìm hiểu cách tạo và sắp xếp các trang
+- [Sử dụng trình chỉnh sửa trang](./page-editor.md) -- Xây dựng và định dạng nội dung trang bằng trình chỉnh sửa trực quan
+- [Giao diện](./appearance.md) -- Tùy chỉnh diện mạo của trang web
+- [Tệp](./files.md) -- Tải lên và quản lý tệp đa phương tiện

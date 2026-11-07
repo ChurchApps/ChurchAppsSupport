@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Pripojte Donorbox k B1 Admin cez Zapier, aby online dary automaticky vytvárali záznamy darov a profily darcov bez ručného exportu."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Spúšťač *New or Updated Donation* z Donorbox sa aktivuje aj pri úpravách. 
 
 ## Pozri tiež
 
-- [Zapier (prehľad)](../zapier) – strana B1 každého receptu pre Zapier
-- [Subsplash](./subsplash) – ďalšia platforma na dary s aplikáciou pre Zapier
-- [Mailchimp](./mailchimp) – prepojenie „nového daru“ s e-mailovým značkovaním
+- [Zapier (prehľad)](../zapier.md) – strana B1 každého receptu pre Zapier
+- [Subsplash](./subsplash.md) – ďalšia platforma na dary s aplikáciou pre Zapier
+- [Mailchimp](./mailchimp.md) – prepojenie „nového daru“ s e-mailovým značkovaním

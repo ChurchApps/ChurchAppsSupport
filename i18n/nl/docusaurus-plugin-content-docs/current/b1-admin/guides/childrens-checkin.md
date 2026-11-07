@@ -1,5 +1,6 @@
 ---
 title: "Gids: Incheck-systeem voor kinderministerie instellen"
+description: "Stel kinderen-check-in in B1 Admin in: koppel gezinnen, maak leeftijdsgroepen, configureer diensten en print naamlabels voor de B1 Checkin-kiosk."
 ---
 
 # Incheck-systeem voor kinderministerie instellen

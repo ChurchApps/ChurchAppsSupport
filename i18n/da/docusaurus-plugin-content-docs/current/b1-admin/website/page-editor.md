@@ -1,5 +1,6 @@
 ---
 title: "Brug af sideeditoren"
+description: "Opsæt sider i B1 Admins sideeditor: tilføj sektioner og elementer, style dem, forhåndsvis på mobil og publicér kladder. Også fortryd og versionshistorik."
 ---
 
 # Brug af sideeditoren
@@ -13,8 +14,8 @@ B1-sideeditoren er en visuel drag-and-drop-builder, der lader dig designe din ki
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Gennemfør [Indledende opsætning](initial-setup) for at få din hjemmeside konfigureret
-- Opret mindst én side i [Administrer sider](managing-pages)
+- Gennemfør [Indledende opsætning](./initial-setup.md) for at få din hjemmeside konfigureret
+- Opret mindst én side i [Administrer sider](./managing-pages.md)
 - Du skal have tilladelsen **content.edit** for at få adgang til editoren
 
 </div>
@@ -53,7 +54,7 @@ Hver side er bygget op af to niveauer:
    - **Billede** -- Upload eller link til et foto
    - **Knap** -- Et klikbart call-to-action-link
    - **Kort** -- Et billede med en titel og beskrivelse
-   - **Formular** -- Indlejr en [formular](../forms/creating-forms) direkte på siden
+   - **Formular** -- Indlejr en [formular](../forms/creating-forms.md) direkte på siden
    - **Kalender** -- Vis en begivenhedskalender
    - **FAQ** -- Harmonika-stil spørgsmål-og-svar-blokke
    - **Video** -- Indlejr en video via URL
@@ -94,7 +95,7 @@ Klik på et vilkårligt element for at åbne dets stylingpanel. Almindelige inds
 Til avanceret styling har hver sektion og hvert element et felt til **Brugerdefineret CSS**, hvor du kan skrive dine egne CSS-regler. Disse er afgrænset til det pågældende element, så de ikke utilsigtet påvirker resten af siden.
 
 :::tip
-Hvis du skal anvende typografier på tværs af hele dit websted -- som en brugerdefineret skrifttype eller en global farve -- skal du bruge indstillingerne under [Udseende](appearance) i stedet for brugerdefineret CSS på individuelle sider.
+Hvis du skal anvende typografier på tværs af hele dit websted -- som en brugerdefineret skrifttype eller en global farve -- skal du bruge indstillingerne under [Udseende](./appearance.md) i stedet for brugerdefineret CSS på individuelle sider.
 :::
 
 ## Forhåndsvise din side
@@ -143,7 +144,7 @@ Brug kladde-/publiceringsworkflowet, når du vil forberede en side -- for eksemp
 
 ## Relaterede artikler
 
-- [Administrer sider](managing-pages) -- Opret sider, angiv URL'er, og administrer webstedsnavigation
-- [Udseende](appearance) -- Angiv webstedsdækkende farver, skrifttyper og branding
-- [Filer](files) -- Upload billeder og dokumenter til brug i editoren
-- [Opret formularer](../forms/creating-forms) -- Byg formularer, du kan indlejre på sider
+- [Administrer sider](./managing-pages.md) -- Opret sider, angiv URL'er, og administrer webstedsnavigation
+- [Udseende](./appearance.md) -- Angiv webstedsdækkende farver, skrifttyper og branding
+- [Filer](./files.md) -- Upload billeder og dokumenter til brug i editoren
+- [Opret formularer](../forms/creating-forms.md) -- Byg formularer, du kan indlejre på sider

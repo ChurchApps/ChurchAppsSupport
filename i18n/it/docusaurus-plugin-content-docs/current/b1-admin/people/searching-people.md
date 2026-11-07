@@ -1,5 +1,6 @@
 ---
 title: "Cercare persone"
+description: "Cerca nella directory Persone di B1 Admin per nome, ordina e scegli le colonne nella vista tabella, crea filtri con Ricerca avanzata ed esporta in CSV."
 ---
 
 # Cercare persone

@@ -1,5 +1,7 @@
 ---
-title: "Imenik članov"
+title: "Imenik članov v portalu članov B1.church"
+sidebar_label: "Imenik članov"
+description: "V imeniku B1.church iščite in brskajte po članih cerkve, si oglejte njihove profile in člane gospodinjstva ter preverite, kdo lahko dostopa do imenika."
 ---
 
 # Imenik članov

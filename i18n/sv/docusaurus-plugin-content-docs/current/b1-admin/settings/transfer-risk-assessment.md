@@ -1,5 +1,6 @@
 ---
 title: "Överföringsriskbedömning"
+description: "ChurchApps efterlevnadsdokumentation för överföringar av kyrkdata från UK/EES till USA i B1 Admin, med skyddsåtgärder, underbiträden och åtkomstkontroller."
 ---
 
 # Överföringsriskbedömning

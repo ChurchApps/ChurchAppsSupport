@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "اربط تبرعات Subsplash والأشخاص الجدد وردود النماذج بـ B1 عبر Zapier، لتصل الهدايا والملفات إلى B1 Admin تلقائيًا."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ title: "Subsplash"
 
 ## انظر أيضًا
 
-- [Donorbox](./donorbox): الوصفات نفسها تقريبًا، ولكن مع منصة تبرعات مختلفة
-- [Zapier (نظرة عامة)](../zapier): الجانب الخاص بـ B1 في كل وصفات Zapier
+- [Donorbox](./donorbox.md): الوصفات نفسها تقريبًا، ولكن مع منصة تبرعات مختلفة
+- [Zapier (نظرة عامة)](../zapier.md): الجانب الخاص بـ B1 في كل وصفات Zapier
 - [دليل تكامل Subsplash مع Zapier](https://support.subsplash.com/en/articles/9825926-zapier-integration) (وثائق Subsplash)

@@ -1,5 +1,6 @@
 ---
 title: "Bildirimler"
+description: "B1 Mobile uygulaması için push uyarılarını ayarlayın; mesajlar, gruplar ve hizmetler için kilise bildirimlerinizi görün, açın ve temizleyin."
 ---
 
 # Bildirimler
@@ -13,7 +14,7 @@ B1 Mobile, kilisenizde olan biteni size bildirmek için anlık bildirimler kulla
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
 - Cihaz ayarlarınızda B1 Mobile için bildirimlere izin verin
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile, kilisenizde olan biteni size bildirmek için anlık bildirimler kulla
 
 Bildirimler, şunlar dahil olmak üzere çeşitli etkinlikleri kapsayabilir:
 
-- **Mesajlar** -- Biri size bir [özel mesaj](./messaging) gönderdiğinde.
-- **Grup etkinliği** -- Üyesi olduğunuz [gruplardan](../groups/) gelen güncellemeler, gönderiler ve sohbetler.
+- **Mesajlar** -- Biri size bir [özel mesaj](./messaging.md) gönderdiğinde.
+- **Grup etkinliği** -- Üyesi olduğunuz [gruplardan](../groups/index.md) gelen güncellemeler, gönderiler ve sohbetler.
 - **Hizmet görevleri** -- Bir [plana](../serving/viewing-plans.md) atandığınızda veya görev durumunuz değiştiğinde.
 - **Diğer güncellemeler** -- Genel duyurular ve sizi ilgilendiren diğer etkinlikler.
 

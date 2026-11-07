@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Brskanje po blogu B1.church in RSS-virih"
+sidebar_label: "Blog"
+description: "Brskajte in filtrirajte blog B1.church za svojo cerkev po kategorijah ali oznakah, listajte starejše objave ali spremljajte nove prek virov RSS."
 ---
 
 # Blog

@@ -1,5 +1,6 @@
 ---
 title: "Points de terminaison Messaging"
+description: "Référence des points d’accès de messagerie ChurchApps : conversations, règles d’accès aux notes, SMS, modèles d’e-mail, notifications et appareils."
 ---
 
 # Points de terminaison Messaging
@@ -190,7 +191,7 @@ Chemin de base : `/messaging/notificationpreferences`
 
 Chemin de base : `/messaging/connections`
 
-Gère les connexions WebSocket et en temps réel pour le chat, les conversations de groupe, les messages privés et la diffusion en direct. Voir [Architecture temps réel](../../realtime) pour le protocole de bout en bout.
+Gère les connexions WebSocket et en temps réel pour le chat, les conversations de groupe, les messages privés et la diffusion en direct. Voir [Architecture temps réel](../../realtime.md) pour le protocole de bout en bout.
 
 | Méthode | Chemin | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
@@ -367,9 +368,9 @@ Suit l'état de livraison des messages envoyés (SMS, notifications push, e-mail
 
 ## Pages connexes
 
-- [Architecture temps réel](../../realtime) -- Protocole WebSocket, abonnements aux salles et framework de diffusion unifié
-- [Notifications web push](../../web-push) -- Inscription et livraison des notifications push du navigateur
-- [Points de terminaison Membership](./membership) -- Personnes, groupes, rôles et identité de base
-- [Points de terminaison Attendance](./attendance) -- Suivi des services et des visites
-- [Authentification et permissions](./authentication) -- Flux de connexion, JWT, OAuth, modèle de permissions
-- [Structure des modules](../module-structure) -- Modèles d'organisation du code
+- [Architecture temps réel](../../realtime.md) -- Protocole WebSocket, abonnements aux salles et framework de diffusion unifié
+- [Notifications web push](../../web-push.md) -- Inscription et livraison des notifications push du navigateur
+- [Points de terminaison Membership](./membership.md) -- Personnes, groupes, rôles et identité de base
+- [Points de terminaison Attendance](./attendance.md) -- Suivi des services et des visites
+- [Authentification et permissions](./authentication.md) -- Flux de connexion, JWT, OAuth, modèle de permissions
+- [Structure des modules](../module-structure.md) -- Modèles d'organisation du code

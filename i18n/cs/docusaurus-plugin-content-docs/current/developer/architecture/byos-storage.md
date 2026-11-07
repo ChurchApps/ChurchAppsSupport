@@ -1,5 +1,6 @@
 ---
 title: "Vlastní úložiště"
+description: "Připojte vlastní Google Drive, Dropbox, OneDrive nebo bucket kompatibilní s S3 v B1 Admin, aby nahrávání souborů církve obešlo limit platformy 100 MB."
 ---
 
 # Vlastní úložiště (BYOS)
@@ -8,7 +9,7 @@ Sbory dostávají zhruba 100 MB bezplatného hostovaného úložiště souborů 
 
 ## Rozhraní poskytovatele
 
-BYOS znovu používá rozhraní úložiště vytvořené pro [MinistryStuff](./ministrystuff): `IStorageProvider` (`Packages/apihelper`), které pro každý sbor určuje `StorageResolver` na základě tabulky `content.storageProviders`. Na rozdíl od jednoinstančních poskytovatelů `churchapps` a `ministrystuff` drží poskytovatelé BYOS přihlašovací údaje konkrétního sboru, proto `StorageResolver.forChurch` vytváří instanci pro každý požadavek na základě řádku daného sboru. Implementace se nacházejí vedle resolveru v `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider` a dále `ByosAuth` (výměna tokenů OAuth a obnova v jediném průchodu – Dropbox obměňuje refresh tokeny, proto se obnovy deduplikují stejně jako v `ProviderProxyController`).
+BYOS znovu používá rozhraní úložiště vytvořené pro [MinistryStuff](./ministrystuff.md): `IStorageProvider` (`Packages/apihelper`), které pro každý sbor určuje `StorageResolver` na základě tabulky `content.storageProviders`. Na rozdíl od jednoinstančních poskytovatelů `churchapps` a `ministrystuff` drží poskytovatelé BYOS přihlašovací údaje konkrétního sboru, proto `StorageResolver.forChurch` vytváří instanci pro každý požadavek na základě řádku daného sboru. Implementace se nacházejí vedle resolveru v `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider` a dále `ByosAuth` (výměna tokenů OAuth a obnova v jediném průchodu – Dropbox obměňuje refresh tokeny, proto se obnovy deduplikují stejně jako v `ProviderProxyController`).
 
 Tabulka `storageProviders` obsahuje přihlašovací údaje: `accessToken`/`refreshToken`/`tokenExpiresAt` (šifrované, trojice OAuth) nebo `apiKey`/`apiSecret` a JSON `settings` (`{endpoint, region, bucket, publicBase}`, u S3). Tokeny se nikdy nedostanou ke klientovi – `GET /content/storage/providers` maskuje tajné údaje a vrací logickou hodnotu `connected`.
 

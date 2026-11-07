@@ -1,5 +1,6 @@
 ---
 title: "Az alkalmazás telepítése"
+description: "Telepítsd a B1 Mobile alkalmazást az App Store-ból vagy a Google Play-ből, de vedd figyelembe, hogy elavult, és helyette a B1.church PWA ajánlott."
 ---
 
 # Az alkalmazás telepítése
@@ -25,7 +26,7 @@ Ha az első keresés nem ad eredményt, a „B1 Mobile” kifejezésre is keresh
 
 ## Telepítés után
 
-A telepítés után nyissa meg az alkalmazást a kezdőképernyőjéről. Megjelenik a gyülekezetkereső képernyő, ahol megtalálhatja és kiválaszthatja a gyülekezetét. Ha már van ChurchApps-fiókja, azonnal [bejelentkezhet](./logging-in). Ha nincs, a bejelentkezési képernyőn hozhat létre fiókot.
+A telepítés után nyissa meg az alkalmazást a kezdőképernyőjéről. Megjelenik a gyülekezetkereső képernyő, ahol megtalálhatja és kiválaszthatja a gyülekezetét. Ha már van ChurchApps-fiókja, azonnal [bejelentkezhet](./logging-in.md). Ha nincs, a bejelentkezési képernyőn hozhat létre fiókot.
 
 Az alkalmazás engedélyt kér a push-értesítések küldéséhez. Javasoljuk, hogy engedélyezze az értesítéseket, hogy friss információkat kapjon a gyülekezetétől és a csoportjaitól.
 

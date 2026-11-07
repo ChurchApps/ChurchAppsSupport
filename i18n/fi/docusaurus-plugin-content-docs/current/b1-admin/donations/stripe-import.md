@@ -1,5 +1,6 @@
 ---
 title: "Stripe-tuonti"
+description: "Tuo Stripe-lahjoitukset B1 Adminiin esikatselun kautta, joka merkitsee veloitukset uusiksi, jo tuoduiksi tai ohitetuiksi ennen tuonnin vahvistamista."
 ---
 
 # Stripe-tuonti

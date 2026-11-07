@@ -1,5 +1,6 @@
 ---
 title: "Log Audit"
+description: "Tinjau log audit di B1 Admin untuk melihat siapa yang masuk, mengedit data orang, atau mengubah izin, lalu ekspor entri terfilter ke CSV."
 ---
 
 # Log Audit
@@ -78,6 +79,6 @@ Tinjau log audit secara rutin, terutama setelah memperkenalkan anggota tim baru 
 
 ## Artikel Terkait
 
-- [Roles & Permissions](../settings/roles-permissions) -- Kelola siapa yang memiliki akses ke apa
-- [Data Security](../settings/data-security) -- Pahami bagaimana data Anda dilindungi
+- [Roles & Permissions](../settings/roles-permissions.md) -- Kelola siapa yang memiliki akses ke apa
+- [Data Security](../settings/data-security.md) -- Pahami bagaimana data Anda dilindungi
 - [Reports Overview](./index.md) -- Lihat semua laporan yang tersedia

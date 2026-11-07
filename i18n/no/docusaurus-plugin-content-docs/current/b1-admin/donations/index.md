@@ -1,5 +1,6 @@
 ---
 title: "Gaver"
+description: "Før, organiser og rapporter kirkens gaver i B1 Admin, fra bunter og fond til årlige oversikter og gaver på nett via Stripe eller PayPal."
 ---
 
 # Gaver

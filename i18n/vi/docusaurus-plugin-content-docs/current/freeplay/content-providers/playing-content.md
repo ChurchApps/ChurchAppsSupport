@@ -1,5 +1,6 @@
 ---
 title: "Phát nội dung"
+description: "Điều khiển FreePlay bằng điều khiển TV: tạm dừng, bỏ qua slide và video, nhảy tới bất kỳ bài giảng nào, và thoát trình phát từ nội dung đã tải."
 ---
 
 # Phát nội dung
@@ -13,13 +14,13 @@ Trình phát FreePlay chiếm toàn màn hình và được thiết kế để �
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Chọn nội dung để phát. Xem [Duyệt và tải nội dung](./browsing-content), [Chế độ kế hoạch](../plan-mode/), hoặc [Thông báo](./announcements)
+- Chọn nội dung để phát. Xem [Duyệt và tải nội dung](./browsing-content.md), [Chế độ kế hoạch](../plan-mode/index.md), hoặc [Thông báo](./announcements.md)
 - Nhấn **Bắt đầu** để mở trình phát
 
 </div>
 
 :::info
-Các màn hình được ghép với lịch sử dụng một trình phát theo lịch riêng với các nút điều khiển hơi khác. Xem [Phát theo lịch trên TV](../scheduled-mode/scheduled-playback).
+Các màn hình được ghép với lịch sử dụng một trình phát theo lịch riêng với các nút điều khiển hơi khác. Xem [Phát theo lịch trên TV](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Các nút điều khiển trình phát
@@ -57,7 +58,7 @@ Nhấn **Lên** trong khi phát để mở **Chọn một thông điệp**. Màn
 Nhấn **Xuống** hoặc **Quay lại** trên remote để rời khỏi trình phát. Vị trí bạn quay về phụ thuộc vào nội dung đang phát:
 
 - **Nội dung từ nhà cung cấp** - Quay lại trình duyệt nội dung
-- **Một kế hoạch** - Quay lại màn hình tải kế hoạch. Xem [Chế độ kế hoạch](../plan-mode/)
+- **Một kế hoạch** - Quay lại màn hình tải kế hoạch. Xem [Chế độ kế hoạch](../plan-mode/index.md)
 - **Một nội dung đã tải xuống** - Quay lại màn hình **Tải xuống**
 
 :::info
@@ -66,5 +67,5 @@ Màn hình sẽ luôn sáng trong khi trình phát đang mở, nên TV sẽ khô
 
 ## Bài viết liên quan
 
-- **[Duyệt và tải nội dung](./browsing-content)** - Tìm nội dung và tải xuống để phát ngoại tuyến
-- **[Phát theo lịch trên TV](../scheduled-mode/scheduled-playback)** - Điều khiển từ xa cho các màn hình theo lịch
+- **[Duyệt và tải nội dung](./browsing-content.md)** - Tìm nội dung và tải xuống để phát ngoại tuyến
+- **[Phát theo lịch trên TV](../scheduled-mode/scheduled-playback.md)** - Điều khiển từ xa cho các màn hình theo lịch

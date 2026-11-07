@@ -1,5 +1,6 @@
 ---
 title: "Priradenie rolí"
+description: "Priraďujte roly v B1 Admin, aby zamestnanci a dobrovoľníci mali prístup len k oblastiam ľudí, darov, účasti a skupín, ktoré potrebujú."
 ---
 
 # Priradenie rolí

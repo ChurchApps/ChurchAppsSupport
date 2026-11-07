@@ -1,5 +1,6 @@
 ---
 title: "Endpoint Membership"
+description: "Referensi endpoint Membership API ChurchApps: orang, rumah tangga, grup, peran, formulir, dan pengaturan, dengan aturan autentikasi dan izin."
 ---
 
 # Endpoint Membership
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Jalur dasar: `/membership/users`
 
-Lihat [Autentikasi & Izin](./authentication) untuk endpoint login, pendaftaran, dan pengelolaan kata sandi.
+Lihat [Autentikasi & Izin](./authentication.md) untuk endpoint login, pendaftaran, dan pengelolaan kata sandi.
 
 | Metode | Jalur | Autentikasi | Izin | Deskripsi |
 |--------|------|------|------|-------------|
@@ -342,6 +343,6 @@ Jalur dasar: `/membership/clientErrors`
 
 ## Halaman Terkait
 
-- [Autentikasi & Izin](./authentication) — Alur login, JWT, OAuth, model izin
-- [Endpoint Kehadiran](./attendance) — Pelacakan layanan dan kunjungan
-- [Struktur Modul](../module-structure) — Pola organisasi kode
+- [Autentikasi & Izin](./authentication.md) — Alur login, JWT, OAuth, model izin
+- [Endpoint Kehadiran](./attendance.md) — Pelacakan layanan dan kunjungan
+- [Struktur Modul](../module-structure.md) — Pola organisasi kode

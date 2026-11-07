@@ -1,5 +1,6 @@
 ---
 title: "Množično urejanje oseb"
+description: "Hkrati posodobite status članstva, zakonski stan, spol, odjavo, polja Da/Ne ali članstvo v skupinah za veliko oseb v B1 Admin."
 ---
 
 # Množično urejanje oseb

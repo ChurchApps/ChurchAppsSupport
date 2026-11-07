@@ -1,5 +1,6 @@
 ---
 title: "I-Caddy Custom-Domain Proxy"
+description: "Akha futsi usebente i-Caddy reverse proxy lesebenta emadomeyini elicawe lakho, kuhlanganisa tisitifiketi te-TLS, kubhalwa kwetikhombandlela, netinkinga letivamile."
 ---
 
 # I-Caddy Custom-Domain Proxy
@@ -10,7 +11,7 @@ Emadomeni ebandla lakhetsekile (`mychurch.org` → sayithi ye-B1 yebandla) aphel
 
 </div>
 
-Kutsi sicelo (request) sisombulula njani kubandla/sayithi nasesifikile ku-B1App, bona [Website Routing & Multi-Site](../architecture/websites).
+Kutsi sicelo (request) sisombulula njani kubandla/sayithi nasesifikile ku-B1App, bona [Website Routing & Multi-Site](../architecture/websites.md).
 
 ## Tincumo (Components)
 
@@ -87,5 +88,5 @@ I-`CaddyHelper` ku-API (kanye nema-endpoint la-`/membership/domains/caddy` + `/c
 
 ## Emakhasi Lahlobene
 
-- [Website Routing & Multi-Site](../architecture/websites) -- kutsi sicelo lesiyi-proxy sisombulula njani kubandla/sayithi ku-B1App
-- [Kufakwa Kwe-API](./apis) -- kufaka i-Membership API lesebentisa i-`authorize`/`hostmap`
+- [Website Routing & Multi-Site](../architecture/websites.md) -- kutsi sicelo lesiyi-proxy sisombulula njani kubandla/sayithi ku-B1App
+- [Kufakwa Kwe-API](./apis.md) -- kufaka i-Membership API lesebentisa i-`authorize`/`hostmap`

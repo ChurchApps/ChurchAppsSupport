@@ -1,5 +1,7 @@
 ---
-title: "Imicimbi"
+title: "Imicimbi Yelicawe Nekubhalisa Ku-B1 Mobile"
+sidebar_label: "Imicimbi"
+description: "Hamba imicimbi yelicawe lakho lelizayo ku-B1 Mobile, uphindze ubhalise wena nemndeni wakho kulabo lelivulekele kubhalisa."
 ---
 
 # Imicimbi
@@ -23,10 +25,10 @@ Imicimbi ingakhombisa timo letahlukene:
 
 ## Loko Lokudzingekako
 
-- [B1 Mobile lifakiwe](../getting-started/installing) futsi [ungenile](../getting-started/logging-in)
+- [B1 Mobile lifakiwe](../getting-started/installing.md) futsi [ungenile](../getting-started/logging-in.md)
 - Libandla lakho kufanele libe nekubhalisa kwemcimbi lokuvuliwe kulomcimbi
 
 ## Fundza Kabanti
 
-- [Kubhalisela Imicimbi](./registering) -- Umculiso wekubhalisela umcimbi ngco efonini
-- [Kutingenisa Wena Matfupha](../checkin/self-checkin) -- Ngena nawufika emcimbini
+- [Kubhalisela Imicimbi](./registering.md) -- Umculiso wekubhalisela umcimbi ngco efonini
+- [Kutingenisa Wena Matfupha](../checkin/self-checkin.md) -- Ngena nawufika emcimbini

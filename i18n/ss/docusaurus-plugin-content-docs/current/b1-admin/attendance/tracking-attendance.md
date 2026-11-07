@@ -1,5 +1,6 @@
 ---
 title: "Kulandzelela Kubakhona"
+description: "Bheka tindlela tekutfola kwebantfu, hlunga imibiko ngemabandla, tinkonzo noma emaqembu, bese udlulisa kutfolwa kweliqembu ku-B1 Admin."
 ---
 
 # Kulandzelela Kubakhona

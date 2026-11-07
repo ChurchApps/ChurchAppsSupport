@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Prijunkite B1 Admin savanorių registracijas prie Checkr fono patikrų per Make.com, su pranešimais saugios tarnystės koordinatoriui."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Jei jūsų bažnyčia naudoja B1 grupių narystę prieigai valdyti (pvz., tarnys
 
 ## Taip pat žr.
 
-- [Make (apžvalga)](../make): B1 pusė kiekvienam Make scenarijui
-- [Mobile Message](./mobile-message): SMS paslaugoms be Zapier programėlių, naudojamas tas pats Webhooks/HTTP modelis kaip ir Checkr Make integracijoje
+- [Make (apžvalga)](../make.md): B1 pusė kiekvienam Make scenarijui
+- [Mobile Message](./mobile-message.md): SMS paslaugoms be Zapier programėlių, naudojamas tas pats Webhooks/HTTP modelis kaip ir Checkr Make integracijoje
 - [Checkr API dokumentacija](https://docs.checkr.com/)

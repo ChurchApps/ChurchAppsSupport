@@ -1,5 +1,6 @@
 ---
 title: "部署"
+description: "查看每个 ChurchApps 项目的部署位置，包括 AWS Lambda API、S3 网页应用、Expo 移动端构建，以及在 Railway 或 Docker 上自托管的 B1 Admin。"
 ---
 
 # 部署
@@ -14,12 +15,12 @@ ChurchApps 会根据项目类型采用不同的部署策略：API 部署到 AWS 
 
 | 项目类型 | 部署目标 | 工具 |
 |-------------|-------------------|---------|
-| [API](./apis) | AWS Lambda | Serverless Framework v3（Node.js 24.x 运行时） |
-| [网页应用](./web-apps) | S3 + CloudFront | 静态构建、S3 同步、CloudFront 缓存失效 |
-| [移动应用](./mobile) | 应用商店 | Expo EAS Build + OTA 更新 |
-| [自托管（Railway）](./railway-template) | Railway | 一键模板：MySQL + Api + B1Admin + B1App |
-| [自托管（Docker）](./docker) | 任何 Docker 主机 | 一行命令安装；预构建的 GHCR 镜像 + Caddy，`./deploy/b1` 升级/备份/回滚 |
-| [Caddy 自定义域名代理](./caddy-proxy) | Windows EC2（弹性 IP `3.23.251.61`） | 静态 Caddyfile + WinSW 服务 + 计划的映射同步 |
+| [API](./apis.md) | AWS Lambda | Serverless Framework v3（Node.js 24.x 运行时） |
+| [网页应用](./web-apps.md) | S3 + CloudFront | 静态构建、S3 同步、CloudFront 缓存失效 |
+| [移动应用](./mobile.md) | 应用商店 | Expo EAS Build + OTA 更新 |
+| [自托管（Railway）](./railway-template.md) | Railway | 一键模板：MySQL + Api + B1Admin + B1App |
+| [自托管（Docker）](./docker.md) | 任何 Docker 主机 | 一行命令安装；预构建的 GHCR 镜像 + Caddy，`./deploy/b1` 升级/备份/回滚 |
+| [Caddy 自定义域名代理](./caddy-proxy.md) | Windows EC2（弹性 IP `3.23.251.61`） | 静态 Caddyfile + WinSW 服务 + 计划的映射同步 |
 | FreeShow | 直接下载 | Electron Builder（跨平台二进制文件） |
 
 ## 环境

@@ -1,5 +1,6 @@
 ---
 title: "Availability Calendar"
+description: "I-set up ang kuwarto at kagamitan sa B1 Admin, i-book ang mga ito sa calendar, magdagdag ng buffer, at hawakan ang paulit-ulit o may-approval na booking."
 ---
 
 # Availability Calendar
@@ -13,7 +14,7 @@ Ang Availability Calendar ay nagbibigay sa inyo ng malawak na tanaw sa lahat ng 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- Mag-set up ng kahit isang [silid o resource](rooms-resources) sa seksyong Rooms & Resources
+- Mag-set up ng kahit isang [silid o resource](./rooms-resources.md) sa seksyong Rooms & Resources
 - Kailangan ninyo ng edit access sa seksyong Calendars sa B1 Admin
 
 </div>
@@ -58,7 +59,7 @@ Gamitin ang dropdown na **Room / Resource** sa kaliwang itaas para paliitin ang 
 6. I-click ang **Save** para isumite ang booking.
 
 :::info
-Kung may naka-configure na **Approval Group** ang silid o resource, lalabas ang booking bilang **Pending** hanggang maaprubahan ito ng isang lider ng grupong iyon. Tingnan ang [Mga Pag-apruba sa Kalendaryo](approvals) para sa workflow ng pag-apruba.
+Kung may naka-configure na **Approval Group** ang silid o resource, lalabas ang booking bilang **Pending** hanggang maaprubahan ito ng isang lider ng grupong iyon. Tingnan ang [Mga Pag-apruba sa Kalendaryo](./approvals.md) para sa workflow ng pag-apruba.
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Ihahighlight ng kalendaryo ang anumang conflict bago kayo mag-save. Kung makakit
 
 ## Mga Kaugnay na Artikulo
 
-- [Mga Silid, Resource at Pag-iiskedyul](rooms-resources) — mag-set up ng mga espasyo at kagamitang maaaring i-book
-- [Mga Pag-apruba sa Kalendaryo](approvals) — aprubahan o tanggihan ang mga kahilingan sa pag-book
-- [Paglikha ng mga Kalendaryo](creating-calendars) — pamahalaan ang mga kalendaryo ng event
+- [Mga Silid, Resource at Pag-iiskedyul](./rooms-resources.md) — mag-set up ng mga espasyo at kagamitang maaaring i-book
+- [Mga Pag-apruba sa Kalendaryo](./approvals.md) — aprubahan o tanggihan ang mga kahilingan sa pag-book
+- [Paglikha ng mga Kalendaryo](./creating-calendars.md) — pamahalaan ang mga kalendaryo ng event

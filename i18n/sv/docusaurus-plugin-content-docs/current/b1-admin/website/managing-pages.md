@@ -1,5 +1,6 @@
 ---
 title: "Hantera sidor"
+description: "Skapa, redigera och ordna sidor och navigering i B1 Admins vy för webbplatssidor, inklusive sidinställningar, omdirigeringar och webbplatsmallar."
 ---
 
 # Hantera sidor
@@ -13,13 +14,13 @@ Vyn Webbplatsens sidor är din centrala plats för att skapa, redigera och ordna
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Slutför [Första inställningen](initial-setup) för att konfigurera din domän och grundläggande webbplatsinställningar
-- Ha ditt innehåll och dina bilder redo. Använd [Filer](files) för att ladda upp mediefiler först.
+- Slutför [Första inställningen](./initial-setup.md) för att konfigurera din domän och grundläggande webbplatsinställningar
+- Ha ditt innehåll och dina bilder redo. Använd [Filer](./files.md) för att ladda upp mediefiler först.
 
 </div>
 
 :::info
-Om din kyrka har fler än en webbplats (till exempel separata webbplatser per församling) använder du webbplatsväxlaren överst i vyn Webbplatsens sidor för att växla mellan dem. Varje webbplats har egna sidor, navigering och [utseendeinställningar](appearance).
+Om din kyrka har fler än en webbplats (till exempel separata webbplatser per församling) använder du webbplatsväxlaren överst i vyn Webbplatsens sidor för att växla mellan dem. Varje webbplats har egna sidor, navigering och [utseendeinställningar](./appearance.md).
 :::
 
 ## Förstå sidtyper
@@ -35,7 +36,7 @@ Du kan omvandla vilken automatiskt genererad sida som helst till en anpassad sid
 
 1. Klicka på knappen **Lägg till sida** uppe till höger i vyn Webbplatsens sidor.
 2. Välj en sidtyp (tom sida eller en mall) och ge sidan ett namn.
-3. Klicka på **Redigera innehåll** bredvid valfri sida för att öppna [sidredigeraren](page-editor), där du kan lägga till sektioner, text, bilder och andra element.
+3. Klicka på **Redigera innehåll** bredvid valfri sida för att öppna [sidredigeraren](./page-editor.md), där du kan lägga till sektioner, text, bilder och andra element.
 4. Klicka på **Sidinställningar** bredvid en sida för att uppdatera sidans titel, URL-sökväg och andra metadata.
 5. Klicka på en sidas sökväg i kolumnen **Sökväg** för att öppna den publicerade sidan i en ny flik och se exakt hur den ser ut för besökare.
 
@@ -112,10 +113,10 @@ Om du bygger din webbplats från grunden kan du starta den med en **Webbplatsmal
 3. När du hittar en du gillar klickar du på **Tillämpa mall**.
 4. Sidor som inte redan finns skapas och läggs till i din navigering. Befintliga sidor lämnas orörda.
 
-När du har tillämpat en mall öppnar du varje sida i [sidredigeraren](page-editor) och ersätter platshållartexten och bilderna med din kyrkas riktiga innehåll.
+När du har tillämpat en mall öppnar du varje sida i [sidredigeraren](./page-editor.md) och ersätter platshållartexten och bilderna med din kyrkas riktiga innehåll.
 
 :::info
-Webbplatsmallar skapar sidstruktur och navigering. De ändrar inte din webbplats färgschema eller typsnitt -- de styrs av [Utseende](appearance).
+Webbplatsmallar skapar sidstruktur och navigering. De ändrar inte din webbplats färgschema eller typsnitt -- de styrs av [Utseende](./appearance.md).
 :::
 
 ## Bildförstoring
@@ -124,7 +125,7 @@ När besökare klickar på en bild på din webbplats öppnas den i en helskärms
 
 ## Nästa steg
 
-- [Första inställningen](initial-setup) -- Instruktioner för första gången du ställer in din webbplats
-- [Använda sidredigeraren](page-editor) -- Lär dig att bygga och formatera sidinnehåll
-- [Utseende](appearance) -- Anpassa din webbplats visuella tema
-- [Filer](files) -- Ladda upp och hantera mediefiler för dina sidor
+- [Första inställningen](./initial-setup.md) -- Instruktioner för första gången du ställer in din webbplats
+- [Använda sidredigeraren](./page-editor.md) -- Lär dig att bygga och formatera sidinnehåll
+- [Utseende](./appearance.md) -- Anpassa din webbplats visuella tema
+- [Filer](./files.md) -- Ladda upp och hantera mediefiler för dina sidor

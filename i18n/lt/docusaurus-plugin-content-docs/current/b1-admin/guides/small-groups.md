@@ -1,5 +1,6 @@
 ---
 title: "Vadovas: mažųjų grupių vedimas"
+description: "Nustatykite mažas grupes, Biblijos studijas ir tarnystės komandas B1 Admin, tada paskelbkite bendrą bažnyčios kalendorių ir grupių skyrių B1 svetainėje."
 ---
 
 # Mažųjų grupių vedimas
@@ -78,7 +79,7 @@ Nariai gali atrasti grupes, prisijungti prie jų ir dalyvauti telefonu ar kompiu
 
 1. Nariai naršo ir prisijungia prie grupių svetainėje [B1.church](../../b1-church/groups/browsing-groups.md)
 2. Grupių nariai gali peržiūrėti informaciją, kalendorius ir rašyti [pokalbiuose](../../b1-church/groups/conversations.md)
-3. Visos grupių funkcijos taip pat pasiekiamos [B1 Mobile programėlėje](../../b1-mobile/groups/)
+3. Visos grupių funkcijos taip pat pasiekiamos [B1 Mobile programėlėje](../../b1-mobile/groups/index.md)
 
 :::info
 Nariai mato savo grupes, artėjančius renginius ir grupių pokalbius tiek internete, tiek mobiliajame įrenginyje. Viskas visada sinchronizuojama.
@@ -97,4 +98,4 @@ Jūsų mažosios grupės sukurtos ir susietos. Nariai gali atrasti grupes, perž
 - [Kuruojamas kalendorius](../calendars/curated-calendar.md) – vieningo bažnyčios kalendoriaus sukūrimas
 - [Grupių naršymas (žiniatinklis)](../../b1-church/groups/browsing-groups.md) – kaip nariai randa grupes
 - [Grupių pokalbiai (žiniatinklis)](../../b1-church/groups/conversations.md) – grupių diskusijos
-- [Grupės (mobilioji programėlė)](../../b1-mobile/groups/) – grupės mobiliojoje programėlėje
+- [Grupės (mobilioji programėlė)](../../b1-mobile/groups/index.md) – grupės mobiliojoje programėlėje

@@ -1,5 +1,6 @@
 ---
 title: "Adatbiztonság"
+description: "Hogyan védi a ChurchApps egyháza adatait a B1 Admin: kivonatolt jelszavak, HTTPS, elkülönített adatbázisok és GDPR-eszközök."
 ---
 
 # Adatbiztonság

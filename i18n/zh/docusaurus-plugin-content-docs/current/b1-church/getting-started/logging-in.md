@@ -1,5 +1,7 @@
 ---
-title: "登录"
+title: "登录 B1.church 和会友门户"
+sidebar_label: "登录"
+description: "登录您的 B1.church 会友门户，使用两步验证码或单点登录，重置忘记的密码，并从账户菜单退出登录。"
 ---
 
 # 登录
@@ -13,7 +15,7 @@ title: "登录"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 你需要一个 ChurchApps 账号。如需创建，请参阅[入门指南](../getting-started/)。
+- 你需要一个 ChurchApps 账号。如需创建，请参阅[入门指南](./index.md)。
 - 你需要教会的 B1.church 网址（例如 `https://yourchurchname.b1.church`）。
 
 </div>
@@ -35,7 +37,7 @@ title: "登录"
 
 ## 访问成员门户
 
-登录后，点击页面右上角的**姓名**，然后在菜单中选择 **Member Portal**（成员门户），即可访问成员门户。成员门户是你所有个人教会工具的集中位置，包括你的[主页仪表板](./navigating.md)、[我的页面](./me-page.md)、[小组](../groups/)、[奉献](../giving/)等。
+登录后，点击页面右上角的**姓名**，然后在菜单中选择 **Member Portal**（成员门户），即可访问成员门户。成员门户是你所有个人教会工具的集中位置，包括你的[主页仪表板](./navigating.md)、[我的页面](./me-page.md)、[小组](../groups/index.md)、[奉献](../giving/index.md)等。
 
 ## 你的用户菜单
 

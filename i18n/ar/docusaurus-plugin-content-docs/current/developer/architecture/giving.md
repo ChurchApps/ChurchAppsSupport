@@ -1,5 +1,6 @@
 ---
 title: "بنية نظام التبرعات"
+description: "دليل المطورين للعطاء في ChurchApps: كيف يرسل B1 Admin وB1.church التبرعات عبر بوابات Stripe وPayPal وKingdom Funding وPaystack."
 ---
 
 # بنية نظام التبرعات
@@ -143,7 +144,7 @@ DonateController ─▶ GatewayService ─▶ GatewayFactory.getProvider(name) �
 
 ### تبرع الضيوف والمجهولين
 
-تعرض صفحة التبرع العامة (`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`) ولوحة "تبرّع الآن" المكوّن `NonAuthDonationWrapper` من `@churchapps/apphelper/website`، الذي يحقن reCAPTCHA وسياق Elements الخاص بالبوابة حول `GuestForm` الخاص بالمزود. ولا يحصل الضيوف على تسجيل دخول أو وسائل دفع محفوظة أو سجل. ويجلب التدفق `GET /giving/funds/churchId/:id` و`GET /giving/donate/gateways/:churchId` (المفاتيح العامة فقط)، ويتحقق من الزائر عبر `POST /giving/donate/captcha-verify`، ويحوّل البيانات إلى رمز داخل المتصفح، ثم يرسل الطلب إلى `/giving/donate/charge` (أو `/subscribe`). ويعيد طلب التحقق `captchaPass` موقَّعًا بـ HMAC صالحًا لمدة 10 دقائق (`Api/src/modules/giving/helpers/CaptchaPass.ts`)، ويرسله النموذج مع كل طلب مالي يصدر عن الضيف. وعند ضبط `CAPTCHA_ENFORCE=true` ترفض الواجهة البرمجية طلبات الضيوف `create-order` و`charge` و`subscribe` و`addcard` و`ach-setup-intent-anon` التي لا تحمل `captchaPass` صالحًا لتلك الكنيسة. وتتحقق تسجيلات الفعاليات المدفوعة للضيوف (`POST /content/registrations/register`) من التصريح نفسه قبل الخصم مباشرة؛ انظر [تسجيلات الفعاليات](./registrations#payment-flow). ويستخدم ACH للضيوف النقطة المجهولة `POST /giving/paymentmethods/ach-setup-intent-anon`، التي تسمح بالتحقق الفوري (Financial Connections) فقط، لأن التحقق عبر الإيداعات الصغيرة يستغرق أيامًا بعد أن تكون صفحة الضيف قد أُغلقت، فلا يمكن أن يكتمل التبرع أبدًا. ويرفض النموذج الخصم على SetupIntent غير مُتحقَّق منه، ويوجّه المتبرع إلى البطاقة أو إلى إعداد حساب بنكي بعد تسجيل الدخول.
+تعرض صفحة التبرع العامة (`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`) ولوحة "تبرّع الآن" المكوّن `NonAuthDonationWrapper` من `@churchapps/apphelper/website`، الذي يحقن reCAPTCHA وسياق Elements الخاص بالبوابة حول `GuestForm` الخاص بالمزود. ولا يحصل الضيوف على تسجيل دخول أو وسائل دفع محفوظة أو سجل. ويجلب التدفق `GET /giving/funds/churchId/:id` و`GET /giving/donate/gateways/:churchId` (المفاتيح العامة فقط)، ويتحقق من الزائر عبر `POST /giving/donate/captcha-verify`، ويحوّل البيانات إلى رمز داخل المتصفح، ثم يرسل الطلب إلى `/giving/donate/charge` (أو `/subscribe`). ويعيد طلب التحقق `captchaPass` موقَّعًا بـ HMAC صالحًا لمدة 10 دقائق (`Api/src/modules/giving/helpers/CaptchaPass.ts`)، ويرسله النموذج مع كل طلب مالي يصدر عن الضيف. وعند ضبط `CAPTCHA_ENFORCE=true` ترفض الواجهة البرمجية طلبات الضيوف `create-order` و`charge` و`subscribe` و`addcard` و`ach-setup-intent-anon` التي لا تحمل `captchaPass` صالحًا لتلك الكنيسة. وتتحقق تسجيلات الفعاليات المدفوعة للضيوف (`POST /content/registrations/register`) من التصريح نفسه قبل الخصم مباشرة؛ انظر [تسجيلات الفعاليات](./registrations.md#payment-flow). ويستخدم ACH للضيوف النقطة المجهولة `POST /giving/paymentmethods/ach-setup-intent-anon`، التي تسمح بالتحقق الفوري (Financial Connections) فقط، لأن التحقق عبر الإيداعات الصغيرة يستغرق أيامًا بعد أن تكون صفحة الضيف قد أُغلقت، فلا يمكن أن يكتمل التبرع أبدًا. ويرفض النموذج الخصم على SetupIntent غير مُتحقَّق منه، ويوجّه المتبرع إلى البطاقة أو إلى إعداد حساب بنكي بعد تسجيل الدخول.
 
 وتعتمد ثلاثة خيارات في نموذج الضيوف على استدعاء الخصم نفسه. يُحدد `?fundId=` و`?amount=` في رابط التبرع توزيع الصناديق مسبقًا (ويقرؤه `GuestForm` لكل مزود عند التحميل، ويمرره عبر معالج تغيير الصناديق المعتاد فتُحدَّث الإجماليات والرسوم). ويجعل `anonymous: true` المتحكم `DonateController.charge` يتجاهل أي شخص أرسله العميل، ويسجل التبرع بقيمة `personId = null`؛ ويتخطى نموذج الضيوف الاستدعاء `/people/loadOrCreate` وخطوة العميل/الخزنة، كما تتوقف المزودات الثلاثة ذات التسجيل الفوري عن استنتاج الشخص من عميل البوابة. ويحتاج Apple Pay إلى تسجيل نطاق الصفحة لدى Stripe، لذلك يرسل نموذج الضيوف في Stripe طلبًا واحدًا لكل جلسة إلى `POST /giving/donate/register-domain` العام والمحدود بمعدل، ولا يقبل إلا نطاقًا ينتمي إلى الكنيسة (`<subDomain>.b1.church`، أو صفًا في جدول النطاقات الخاص بوحدة المحتوى، أو مضيفًا محليًا)، ثم يستدعي واجهة Stripe لنطاقات طرق الدفع (payment-method-domains).
 
@@ -184,6 +185,6 @@ DonateController ─▶ GatewayService ─▶ GatewayFactory.getProvider(name) �
 
 ## صفحات ذات صلة
 
-- [نقاط نهاية التبرعات](../api/endpoints/giving): واجهة REST الكاملة للتبرعات والصناديق والدفعات والبوابات والاشتراكات ووسائل الدفع وwebhook
-- [AppHelper](../shared-libraries/app-helper): حزمة npm التي تحمل سجل مزودي الدفع ومكونات التبرع
-- [هيكلية الوحدات](../api/module-structure): كيفية تنظيم وحدة GivingApi في الخادم
+- [نقاط نهاية التبرعات](../api/endpoints/giving.md): واجهة REST الكاملة للتبرعات والصناديق والدفعات والبوابات والاشتراكات ووسائل الدفع وwebhook
+- [AppHelper](../shared-libraries/app-helper.md): حزمة npm التي تحمل سجل مزودي الدفع ومكونات التبرع
+- [هيكلية الوحدات](../api/module-structure.md): كيفية تنظيم وحدة GivingApi في الخادم

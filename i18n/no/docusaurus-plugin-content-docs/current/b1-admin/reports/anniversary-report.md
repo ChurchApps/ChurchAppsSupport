@@ -1,5 +1,6 @@
 ---
 title: "Bryllupsdagsliste"
+description: "Hent en liste over alle med bryllupsjubileum i en valgt måned i B1 Admin, med datoer i resultatene og eksport til regneark for menighetsbrev eller kort."
 ---
 
 # Bryllupsdagsliste

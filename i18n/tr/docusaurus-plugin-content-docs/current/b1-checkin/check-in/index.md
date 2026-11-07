@@ -1,5 +1,6 @@
 ---
 title: "Check-In İş Akışı"
+description: "B1 Church Checkin kiosk akışında hizmet seçiminden çıkışa kadar adım adım ilerleyin; önce B1 Admin'de hizmetleri, grupları ve kişileri ayarlayın."
 ---
 
 # Check-In İş Akışı
@@ -12,13 +13,13 @@ B1 Church Checkin'deki yoklama süreci basit, adım adım ilerleyen bir akışı
 
 ## Check-In Akışına Genel Bakış
 
-1. **[Bir hizmet seçin](./selecting-service)** -- Katıldığınız hizmeti seçin (ör. Pazar Sabahı, Pazar Öğleden Sonra, Ara Hafta).
-2. **[Ailenizi bulun](./looking-up-members)** -- Sistemde kendinizi bulmak için telefon numarası veya soyadınızla arama yapın.
-3. **[Hane halkınızı gözden geçirin](./household-review)** -- Tüm aile üyelerini ve mevcut grup atamalarını görün.
-4. **[Grupları atayın](./group-assignment)** -- Her hizmet saati için her aile üyesinin katılacağı sınıfı veya grubu seçin.
-5. **[Misafir ekleyin](./adding-guests)** (isteğe bağlı) -- Size katılan bir ziyaretçiyi hane halkınıza ekleyin.
-6. **[Yoklamayı tamamlayın](./completing-checkin)** -- Katılımı göndermek ve etiketleri yazdırmak için yoklama düğmesine dokunun.
-7. **[Çıkış yapın](./checking-out)** (görevli istasyonlar) -- Teslim zamanında güvenlik kodunu ve teslim alacak kişiyi doğrulayın; güvenilir teslim listeleri, ebeveyne sayfa çağırma ve etiket yeniden yazdırma seçenekleriyle.
+1. **[Bir hizmet seçin](./selecting-service.md)** -- Katıldığınız hizmeti seçin (ör. Pazar Sabahı, Pazar Öğleden Sonra, Ara Hafta).
+2. **[Ailenizi bulun](./looking-up-members.md)** -- Sistemde kendinizi bulmak için telefon numarası veya soyadınızla arama yapın.
+3. **[Hane halkınızı gözden geçirin](./household-review.md)** -- Tüm aile üyelerini ve mevcut grup atamalarını görün.
+4. **[Grupları atayın](./group-assignment.md)** -- Her hizmet saati için her aile üyesinin katılacağı sınıfı veya grubu seçin.
+5. **[Misafir ekleyin](./adding-guests.md)** (isteğe bağlı) -- Size katılan bir ziyaretçiyi hane halkınıza ekleyin.
+6. **[Yoklamayı tamamlayın](./completing-checkin.md)** -- Katılımı göndermek ve etiketleri yazdırmak için yoklama düğmesine dokunun.
+7. **[Çıkış yapın](./checking-out.md)** (görevli istasyonlar) -- Teslim zamanında güvenlik kodunu ve teslim alacak kişiyi doğrulayın; güvenilir teslim listeleri, ebeveyne sayfa çağırma ve etiket yeniden yazdırma seçenekleriyle.
 
 Yoklama tamamlandığında uygulama bir başarı ekranı gösterir ve bir sonraki aile için otomatik olarak arama ekranına döner.
 
@@ -36,5 +37,5 @@ Check-in kiosk'unu kullanmadan önce B1 Admin'de aşağıdakilerin yapılandır�
 - **Kişiler**, hane ilişkileriyle birlikte sisteme eklenmiş olmalıdır. Bkz. [kişi ekleme](../../b1-admin/people/adding-people.md).
 
 :::info
-Kiosk'un kendisini henüz kurmadıysanız, kurulum, giriş ve yazıcı yapılandırma talimatları için [Başlarken](../getting-started/) bölümüne bakın.
+Kiosk'un kendisini henüz kurmadıysanız, kurulum, giriş ve yazıcı yapılandırma talimatları için [Başlarken](../getting-started/index.md) bölümüne bakın.
 :::

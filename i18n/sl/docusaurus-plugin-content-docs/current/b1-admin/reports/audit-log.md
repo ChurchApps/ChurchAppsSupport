@@ -1,5 +1,6 @@
 ---
 title: "Revizijski dnevnik"
+description: "Preglejte dnevnik revizij v B1 Admin in preverite, kdo se je prijavil, uredil zapise o osebah ali spremenil dovoljenja, ter filtrirane vnose izvozite v CSV."
 ---
 
 # Revizijski dnevnik
@@ -78,6 +79,6 @@ Revizijski dnevnik redno pregledujte, zlasti po uvajanju novih članov ekipe ali
 
 ## Sorodni članki
 
-- [Vloge in dovoljenja](../settings/roles-permissions) -- Upravljanje, kdo ima dostop do česa
-- [Varnost podatkov](../settings/data-security) -- Razumevanje, kako so vaši podatki zaščiteni
+- [Vloge in dovoljenja](../settings/roles-permissions.md) -- Upravljanje, kdo ima dostop do česa
+- [Varnost podatkov](../settings/data-security.md) -- Razumevanje, kako so vaši podatki zaščiteni
 - [Pregled poročil](./index.md) -- Oglejte si vsa razpoložljiva poročila

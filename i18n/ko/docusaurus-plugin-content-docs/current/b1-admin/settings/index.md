@@ -1,5 +1,6 @@
 ---
 title: "설정"
+description: "B1 Admin의 Settings를 살펴보세요. 교회 정보, 브랜딩, 캠퍼스, 사용자 지정 필드, 사용자 역할, B1.church 앱 내비게이션을 다룹니다."
 ---
 
 # 설정

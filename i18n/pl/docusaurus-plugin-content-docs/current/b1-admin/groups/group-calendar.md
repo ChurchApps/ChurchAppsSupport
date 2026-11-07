@@ -1,5 +1,6 @@
 ---
 title: "Kalendarz grupy"
+description: "Planuj spotkania i wydarzenia cykliczne w kalendarzu grupy w B1 Admin i B1.church, z masowym planowaniem, potwierdzeniami obecności i subskrypcjami kalendarza."
 ---
 
 # Kalendarz grupy

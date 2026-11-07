@@ -1,5 +1,6 @@
 ---
 title: "Log de Auditoria e Lotes Reversíveis"
+description: "Descreve o log de auditoria da API, que registra alterações de usuários em todos os módulos, e como desfazer importações linha a linha no B1 Admin."
 ---
 
 # Log de Auditoria e Lotes Reversíveis
@@ -155,6 +156,6 @@ As duas interfaces administrativas estão **em andamento**; a intenção é:
 
 ## Páginas relacionadas
 
-- [Estrutura de módulos](../api/module-structure) — como um controller que não é de membros acessa os repositórios de membros por meio do `RepoManager`
-- [Doações](./giving) — os caminhos de escrita de doações que são auditados como `sensitive` mesmo quando anônimos
-- [Endpoints de membros](../api/endpoints/membership) — a superfície REST que carrega `X-Batch-Id` e expõe `/auditlogs` e `/batches`
+- [Estrutura de módulos](../api/module-structure.md) — como um controller que não é de membros acessa os repositórios de membros por meio do `RepoManager`
+- [Doações](./giving.md) — os caminhos de escrita de doações que são auditados como `sensitive` mesmo quando anônimos
+- [Endpoints de membros](../api/endpoints/membership.md) — a superfície REST que carrega `X-Batch-Id` e expõe `/auditlogs` e `/batches`

@@ -1,5 +1,6 @@
 ---
 title: "Designer de Etiquetas de Check-In"
+description: "Personalize os modelos de crachá e comprovante de retirada do check-in no B1 Admin: campos, posicionamento e condições como aniversário ou observações."
 ---
 
 # Designer de Etiquetas de Check-In
@@ -13,8 +14,8 @@ O Designer de Etiquetas permite que você crie e personalize os modelos de crach
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Configure [Presença](setup) e configure pelo menos um horário de serviço com check-in habilitado
-- Configure [Check-In](check-in) para que as etiquetas estejam imprimindo
+- Configure [Presença](./setup.md) e configure pelo menos um horário de serviço com check-in habilitado
+- Configure [Check-In](./check-in.md) para que as etiquetas estejam imprimindo
 - Você precisa de acesso administrativo à seção Presença
 
 </div>
@@ -85,6 +86,6 @@ Faça uma impressão de teste depois de editar um modelo para confirmar que o la
 
 ## Artigos Relacionados
 
-- [Configuração de Check-In](setup) — configure serviços e grupos para check-in
-- [Completando Check-In](check-in) — o fluxo de check-in para famílias
-- [B1 Checkin Introdução](../../b1-checkin/getting-started/) — o aplicativo de quiosque Checkin
+- [Configuração de Check-In](./setup.md) — configure serviços e grupos para check-in
+- [Completando Check-In](./check-in.md) — o fluxo de check-in para famílias
+- [B1 Checkin Introdução](../../b1-checkin/getting-started/index.md) — o aplicativo de quiosque Checkin

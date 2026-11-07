@@ -1,5 +1,7 @@
 ---
-title: "Memulai"
+title: "Memulai ChurchApps: 15 Menit Pertama"
+sidebar_label: "Memulai"
+description: "Siapkan akun ChurchApps baru dalam beberapa langkah: tambahkan detail gereja, impor jemaat ke B1 Admin, undang tim, dan pilih proyek pertama."
 ---
 
 # Memulai

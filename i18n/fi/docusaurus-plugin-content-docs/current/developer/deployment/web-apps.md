@@ -1,5 +1,6 @@
 ---
 title: "Verkkosovelluksen käyttöönotto"
+description: "Ohjeet ChurchApps-verkkosovellusten (esim. B1 Admin) julkaisuun Amazon S3:een ja CloudFrontiin: automaattiset GitHub Actions -julkaisut tai manuaaliset komennot."
 ---
 
 # Verkkosovelluksen käyttöönotto
@@ -13,7 +14,7 @@ ChurchAppsin verkkosovellukset otetaan käyttöön staattisina sivustoina **Amaz
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Määritä verkkosovellus paikallisesti ja varmista, että se käännetään onnistuneesti -- katso [Verkkosovellukset](../web-apps/)
+- Määritä verkkosovellus paikallisesti ja varmista, että se käännetään onnistuneesti -- katso [Verkkosovellukset](../web-apps/index.md)
 - Määritä AWS-tunnukset, joilla on S3- ja CloudFront-käyttöoikeudet
 - Tiedä kohde-S3-bucketin nimi ja CloudFront-jakelun tunnus
 
@@ -53,6 +54,6 @@ Jos haluat varmistaa käännöksen paikallisesti ennen käyttöönottoa, suorita
 
 ## Aiheeseen liittyvät artikkelit
 
-- **[Verkkosovellukset](../web-apps/)** -- Asennusohjeet B1Adminille, B1Appille ja LessonsAppille
-- **[API-käyttöönotto](./apis)** -- Taustajärjestelmän API-rajapintojen käyttöönotto
-- **[Mobiilin käyttöönotto](./mobile)** -- Mobiilisovellusten julkaiseminen sovelluskauppoihin
+- **[Verkkosovellukset](../web-apps/index.md)** -- Asennusohjeet B1Adminille, B1Appille ja LessonsAppille
+- **[API-käyttöönotto](./apis.md)** -- Taustajärjestelmän API-rajapintojen käyttöönotto
+- **[Mobiilin käyttöönotto](./mobile.md)** -- Mobiilisovellusten julkaiseminen sovelluskauppoihin

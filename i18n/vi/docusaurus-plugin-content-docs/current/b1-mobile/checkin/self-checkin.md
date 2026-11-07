@@ -1,5 +1,7 @@
 ---
-title: "Tự điểm danh"
+title: "Tự điểm danh từ ứng dụng B1 Mobile"
+sidebar_label: "Tự điểm danh"
+description: "Điểm danh bản thân và gia đình vào buổi lễ từ ứng dụng B1 Mobile, gồm chọn giờ lễ và phân nhóm cho từng người."
 ---
 
 # Tự điểm danh
@@ -13,7 +15,7 @@ title: "Tự điểm danh"
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
 - Đảm bảo [các thành viên trong gia đình](../profile/household.md) đã được thiết lập trong hồ sơ của bạn
 
 </div>

@@ -1,5 +1,7 @@
 ---
-title: "Pagbibigay"
+title: "Online Giving at Donasyon sa B1.church"
+sidebar_label: "Pagbibigay"
+description: "Mag-donate online sa simbahan mo sa B1.church nang walang account, o mag-log in para pamahalaan ang recurring gift, payment method, at giving statement."
 ---
 
 # Pagbibigay

@@ -1,5 +1,6 @@
 ---
 title: "Personverninnstillinger"
+description: "Bestem hvilke profilopplysninger som telefon, e-post og adresse andre medlemmer kan se i B1 Mobiles katalog, og gjennomgå ventende endringer."
 ---
 
 # Personverninnstillinger
@@ -13,7 +14,7 @@ Fanen **Synlighet** på profilskjermen lar deg styre hva andre kirkemedlemmer ka
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- [Installer B1 Mobile](../getting-started/installing.md) og [logg inn](../getting-started/logging-in.md) på kontoen din
 
 </div>
 
@@ -52,8 +53,8 @@ Fanen **Konto** gir tilgang til sikkerhetsinnstillingene dine. Bruk denne fanen 
 
 | Fane | Formål |
 |---|---|
-| **Profil** | [Rediger personopplysningene dine](./editing-profile) og bilde |
-| **Husstand** | [Se familiemedlemmene dine](./household) |
+| **Profil** | [Rediger personopplysningene dine](./editing-profile.md) og bilde |
+| **Husstand** | [Se familiemedlemmene dine](./household.md) |
 | **Synlighet** | Styr hva andre ser i katalogen |
 | **Venter** | Se profilendringer som venter på godkjenning |
 | **Konto** | Administrer sikkerhetsinnstillinger |
@@ -62,6 +63,6 @@ Disse fanene fungerer sammen for å gi deg full kontroll over personopplysningen
 
 ## Relaterte artikler
 
-- [Redigere profilen din](./editing-profile) -- Oppdater personopplysningene dine
-- [Husstand](./household) -- Se og administrer familiemedlemmene dine
+- [Redigere profilen din](./editing-profile.md) -- Oppdater personopplysningene dine
+- [Husstand](./household.md) -- Se og administrer familiemedlemmene dine
 - [Medlemskatalog](../community/member-directory.md) -- Se hvordan profilen din vises for andre

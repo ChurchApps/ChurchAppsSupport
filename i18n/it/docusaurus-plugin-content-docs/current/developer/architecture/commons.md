@@ -1,5 +1,6 @@
 ---
 title: "Commons"
+description: "Come canzoni, lezioni e modelli inviati dagli utenti passano dalla coda di moderazione condivisa nel Server Admin di B1 Admin, dall'invio alla pubblicazione."
 ---
 
 # Commons

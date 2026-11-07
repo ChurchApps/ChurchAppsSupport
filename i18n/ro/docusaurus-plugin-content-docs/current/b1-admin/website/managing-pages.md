@@ -1,5 +1,6 @@
 ---
 title: "Gestionarea paginilor"
+description: "Creează, editează și organizează paginile și navigarea în vizualizarea Pages din B1 Admin, inclusiv setările paginii, redirecționările și șabloanele de site."
 ---
 
 # Gestionarea paginilor
@@ -13,13 +14,13 @@ Vizualizarea Pagini web este centrul dvs. pentru crearea, editarea și organizar
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Finalizați [Configurarea inițială](initial-setup) pentru a vă configura domeniul și setările de bază ale site-ului
-- Pregătiți conținutul și imaginile. Folosiți mai întâi managerul [Fișiere](files) pentru a încărca resursele media.
+- Finalizați [Configurarea inițială](./initial-setup.md) pentru a vă configura domeniul și setările de bază ale site-ului
+- Pregătiți conținutul și imaginile. Folosiți mai întâi managerul [Fișiere](./files.md) pentru a încărca resursele media.
 
 </div>
 
 :::info
-Dacă biserica dvs. are mai mult de un site web (de exemplu, site-uri separate pentru fiecare campus), folosiți comutatorul de site din partea de sus a vizualizării Pagini web pentru a trece de la unul la altul. Fiecare site are propriile pagini, navigare și setări de [aspect](appearance).
+Dacă biserica dvs. are mai mult de un site web (de exemplu, site-uri separate pentru fiecare campus), folosiți comutatorul de site din partea de sus a vizualizării Pagini web pentru a trece de la unul la altul. Fiecare site are propriile pagini, navigare și setări de [aspect](./appearance.md).
 :::
 
 ## Înțelegerea tipurilor de pagini
@@ -35,7 +36,7 @@ Puteți converti orice pagină generată automat într-o pagină personalizată 
 
 1. Faceți clic pe butonul **Adaugă pagină** din dreapta sus a vizualizării Pagini web.
 2. Alegeți un tip de pagină (goală sau un șablon) și dați-i un nume.
-3. Faceți clic pe **Editează conținutul** lângă orice pagină pentru a deschide [editorul de pagini](page-editor), unde puteți adăuga secțiuni, text, imagini și alte elemente.
+3. Faceți clic pe **Editează conținutul** lângă orice pagină pentru a deschide [editorul de pagini](./page-editor.md), unde puteți adăuga secțiuni, text, imagini și alte elemente.
 4. Faceți clic pe **Setările paginii** lângă o pagină pentru a actualiza titlul paginii, calea URL și alte metadate.
 5. Faceți clic pe calea unei pagini din coloana **Cale** pentru a deschide pagina live într-un tab nou și a vedea exact cum va arăta pentru vizitatori.
 
@@ -112,10 +113,10 @@ Dacă vă construiți site-ul de la zero, îl puteți crea folosind un **Șablon
 3. Când găsiți unul care vă place, faceți clic pe **Aplică șablonul**.
 4. Paginile care nu există deja sunt create și adăugate în navigare. Paginile existente rămân neschimbate.
 
-După aplicarea unui șablon, deschideți fiecare pagină în [editorul de pagini](page-editor) pentru a înlocui textul și imaginile de exemplu cu conținutul real al bisericii dvs.
+După aplicarea unui șablon, deschideți fiecare pagină în [editorul de pagini](./page-editor.md) pentru a înlocui textul și imaginile de exemplu cu conținutul real al bisericii dvs.
 
 :::info
-Șabloanele de site creează structura paginilor și navigarea. Ele nu suprascriu schema de culori sau fonturile site-ului -- acestea sunt controlate de [Aspect](appearance).
+Șabloanele de site creează structura paginilor și navigarea. Ele nu suprascriu schema de culori sau fonturile site-ului -- acestea sunt controlate de [Aspect](./appearance.md).
 :::
 
 ## Lightbox pentru imagini
@@ -124,7 +125,7 @@ Când vizitatorii fac clic pe o imagine de pe site-ul dvs., aceasta se deschide 
 
 ## Pașii următori
 
-- [Configurarea inițială](initial-setup) -- Instrucțiuni de configurare pentru prima dată
-- [Utilizarea editorului de pagini](page-editor) -- Aflați cum să construiți și să stilizați conținutul paginilor
-- [Aspect](appearance) -- Personalizați tema vizuală a site-ului
-- [Fișiere](files) -- Încărcați și gestionați resursele media pentru paginile dvs.
+- [Configurarea inițială](./initial-setup.md) -- Instrucțiuni de configurare pentru prima dată
+- [Utilizarea editorului de pagini](./page-editor.md) -- Aflați cum să construiți și să stilizați conținutul paginilor
+- [Aspect](./appearance.md) -- Personalizați tema vizuală a site-ului
+- [Fișiere](./files.md) -- Încărcați și gestionați resursele media pentru paginile dvs.

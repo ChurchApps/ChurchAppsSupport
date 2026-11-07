@@ -1,5 +1,6 @@
 ---
 title: "Basis Data"
+description: "Pelajari cara API ChurchApps membagi data ke enam basis data MySQL, satu per modul, serta cara mengonfigurasi koneksi dan menginisialisasinya."
 ---
 
 # Basis Data
@@ -13,8 +14,8 @@ API ChurchApps menggunakan arsitektur **satu-basis-data-per-modul**. Setiap dari
 <div class="prereqs">
 <h4>Sebelum Anda Memulai</h4>
 
-- Instal **MySQL 8.0+** -- lihat [Prasyarat](../setup/prerequisites)
-- Konfigurasikan string koneksi basis data di berkas `.env` Anda -- lihat [Variabel Lingkungan](../setup/environment-variables)
+- Instal **MySQL 8.0+** -- lihat [Prasyarat](../setup/prerequisites.md)
+- Konfigurasikan string koneksi basis data di berkas `.env` Anda -- lihat [Variabel Lingkungan](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Keputusan Desain Utama
 
 - **Satu basis data per modul** -- Setiap modul memelihara basis data MySQL sendiri dengan connection pool khusus (dikelola oleh `KyselyPool`). Hal ini membuat modul-modul tetap terpisah dan memungkinkan evolusi skema yang independen.
-- **Kepemilikan eksklusif** -- Tabel milik sebuah modul hanya dibaca dan ditulis oleh kode modul itu sendiri. Ketika modul lain membutuhkan data tersebut, ia memanggil gateway modul pemilik, bukan langsung membaca tabelnya -- lihat [Komunikasi Lintas Modul](./module-structure#cross-module-communication).
+- **Kepemilikan eksklusif** -- Tabel milik sebuah modul hanya dibaca dan ditulis oleh kode modul itu sendiri. Ketika modul lain membutuhkan data tersebut, ia memanggil gateway modul pemilik, bukan langsung membaca tabelnya -- lihat [Komunikasi Lintas Modul](./module-structure.md#cross-module-communication).
 - **Pola repositori tanpa ORM** -- Semua akses data dilakukan melalui kelas repositori yang membangun SQL bertipe menggunakan Kysely query builder terhadap skema modul. Dengan cara ini, performa dan perilaku kueri dapat dikendalikan sepenuhnya.
 - **Multi-tenant sejak awal** -- Setiap kueri dibatasi oleh `churchId`. Semua tabel memiliki kolom `churchId`, dan lapisan repositori menerapkan isolasi tenant secara otomatis.
 
@@ -129,5 +130,5 @@ Batasan ini yang membuat batas modul benar-benar nyata: setiap skema dapat berke
 
 ## Artikel Terkait
 
-- **[Struktur Modul](./module-structure)** -- Cara controller dan repositori diorganisasi di dalam setiap modul
-- **[Pengaturan API Lokal](./local-setup)** -- Panduan pengaturan lengkap langkah demi langkah
+- **[Struktur Modul](./module-structure.md)** -- Cara controller dan repositori diorganisasi di dalam setiap modul
+- **[Pengaturan API Lokal](./local-setup.md)** -- Panduan pengaturan lengkap langkah demi langkah

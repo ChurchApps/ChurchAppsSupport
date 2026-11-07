@@ -1,5 +1,7 @@
 ---
-title: "Donation History"
+title: "Visa donationshistorik i B1 Mobile"
+sidebar_label: "Donation History"
+description: "Kontrollera din gåvosumma i år, din senaste gåva och hela donationsregistret i B1 Mobile, och upprepa en tidigare gåva med ett tryck från fliken Översikt."
 ---
 
 # Donation History
@@ -13,8 +15,8 @@ Med B1 Mobile får du en tydlig översikt över dina gåvor via två flikar: **�
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Installera B1 Mobile](../getting-started/installing) och [logga in](../getting-started/logging-in) på ditt konto
-- [Gör minst en gåva](./making-donations) för att se din historik
+- [Installera B1 Mobile](../getting-started/installing.md) och [logga in](../getting-started/logging-in.md) på ditt konto
+- [Gör minst en gåva](./making-donations.md) för att se din historik
 
 </div>
 
@@ -45,5 +47,5 @@ Kontrollera fliken **Översikt** regelbundet för att hålla koll på dina givar
 
 ## Relaterade artiklar
 
-- [Gör en gåva](./making-donations) -- Ge en ny gåva från appen
-- [Hantera betalningsmetoder](./managing-payments) -- Lägg till eller ta bort sparade betalningsmetoder
+- [Gör en gåva](./making-donations.md) -- Ge en ny gåva från appen
+- [Hantera betalningsmetoder](./managing-payments.md) -- Lägg till eller ta bort sparade betalningsmetoder

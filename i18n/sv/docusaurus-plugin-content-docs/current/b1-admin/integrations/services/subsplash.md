@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Koppla Subsplash-gåvor, nya personer och formulärsvar till B1 med Zapier, så att gåvor och profiler hamnar i B1 Admin automatiskt."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Aktivera Zapet. Framtida gåvor från Subsplash kommer in i **B1Admin → Gåvor
 
 ## Se även
 
-- [Donorbox](./donorbox) – samma receptstruktur, en annan plattform för gåvor
-- [Zapier (översikt)](../zapier) – B1-sidan för alla Zapier-recept
+- [Donorbox](./donorbox.md) – samma receptstruktur, en annan plattform för gåvor
+- [Zapier (översikt)](../zapier.md) – B1-sidan för alla Zapier-recept
 - [Subsplashs guide för Zapier-integrationen](https://support.subsplash.com/en/articles/9825926-zapier-integration) (Subsplashs dokumentation)

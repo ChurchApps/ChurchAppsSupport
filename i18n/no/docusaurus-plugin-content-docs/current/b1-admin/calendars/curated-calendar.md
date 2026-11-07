@@ -1,5 +1,6 @@
 ---
 title: "Utvalgt kalender"
+description: "Sett opp en kuratert menighetskalender i B1 Admin som henter arrangementer fra flere grupper, og del den på nettsiden, via ICS-abonnement eller som nedlasting."
 ---
 
 # Utvalgt kalender
@@ -15,7 +16,7 @@ En utvalgt kalender samler arrangementer fra flere grupper i én felles kalender
 
 - Sett opp [gruppene](../groups/creating-groups.md) som har arrangementene du vil ta med
 - Sørg for at gruppelederne har lagt til arrangementer i sine respektive grupper
-- Gjør deg kjent med det grunnleggende i [Opprette kalendere](creating-calendars)
+- Gjør deg kjent med det grunnleggende i [Opprette kalendere](./creating-calendars.md)
 
 </div>
 
@@ -61,5 +62,5 @@ Bare **offentlige** arrangementer vises i den utvalgte kalenderen på nettstedet
 
 ## Neste steg
 
-- [Opprette kalendere](creating-calendars) -- Lær det grunnleggende om å opprette kalendere
-- [Oversikt over kalendere](./) -- Gå tilbake til oversikten over kalendere
+- [Opprette kalendere](./creating-calendars.md) -- Lær det grunnleggende om å opprette kalendere
+- [Oversikt over kalendere](./index.md) -- Gå tilbake til oversikten over kalendere

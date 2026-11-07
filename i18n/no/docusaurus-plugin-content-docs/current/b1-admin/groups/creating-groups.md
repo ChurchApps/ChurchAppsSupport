@@ -1,5 +1,6 @@
 ---
 title: "Opprette grupper"
+description: "Opprett en ny gruppe i B1 Admin, fra valg av kategori og navn til påmeldingsregler, merkelapper, meldinger og innstillinger for oppmøte."
 ---
 
 # Opprette grupper

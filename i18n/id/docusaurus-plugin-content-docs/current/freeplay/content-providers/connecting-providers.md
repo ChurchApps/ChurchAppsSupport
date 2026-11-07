@@ -1,5 +1,6 @@
 ---
 title: "Menghubungkan ke Penyedia"
+description: "Hubungkan FreePlay ke penyedia konten lewat kode QR, login email, atau akses satu klik, lalu kelola atau putuskan koneksi dari Settings."
 ---
 
 # Menghubungkan ke Penyedia
@@ -13,7 +14,7 @@ Sebelum dapat menjelajahi konten dari penyedia, Anda perlu menghubungkannya terl
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Pasang dan jalankan FreePlay -- lihat [Memulai](../getting-started/)
+- Pasang dan jalankan FreePlay -- lihat [Memulai](../getting-started/index.md)
 - Siapkan remote TV Anda untuk navigasi
 - Untuk penyedia yang memerlukan login, siapkan kredensial akun Anda
 
@@ -80,7 +81,7 @@ Memilih kartu penyedia yang menampilkan lencana **Connected** akan membuka layar
 
 - **Browse Library** -- Tampilkan atau sembunyikan pustaka konten penyedia ini di sidebar
 - **Auto-Download Today's Lesson** -- Gunakan penyedia ini sebagai sumber pelajaran hari ini dan unduh file-filenya terlebih dahulu (hanya ditampilkan untuk penyedia yang menawarkan pelajaran terkini)
-- **Use for Announcements** -- Pilih folder dari penyedia ini untuk diputar dari item **Announcements** di sidebar. Lihat [Announcements](./announcements)
+- **Use for Announcements** -- Pilih folder dari penyedia ini untuk diputar dari item **Announcements** di sidebar. Lihat [Announcements](./announcements.md)
 - **Check for Announcement Updates** -- Ditampilkan setelah folder pengumuman dipilih; mengunduh slide baru dan menghapus slide yang sudah dihapus
 - **Disconnect** -- Hapus koneksi
 
@@ -100,6 +101,6 @@ Memutuskan koneksi akan menghapus autentikasi yang tersimpan dari perangkat Anda
 
 ## Artikel Terkait
 
-- **[Browsing and Downloading Content](./browsing-content)** - Menavigasi folder dan memutar konten setelah terhubung
-- **[Announcements](./announcements)** - Memutar folder slide dari penyedia yang terhubung
+- **[Browsing and Downloading Content](./browsing-content.md)** - Menavigasi folder dan memutar konten setelah terhubung
+- **[Announcements](./announcements.md)** - Memutar folder slide dari penyedia yang terhubung
 - **[Content Providers Overview](./index.md)** - Melihat semua penyedia yang tersedia

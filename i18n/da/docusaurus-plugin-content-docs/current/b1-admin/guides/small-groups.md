@@ -1,5 +1,6 @@
 ---
 title: "Vejledning: Kør smågrupper"
+description: "Opsæt smågrupper, bibelstudier og tjenesteteams i B1 Admin, og publicér derefter en menighedsdækkende kalender og gruppeafsnit på dit B1-website."
 ---
 
 # Kør smågrupper
@@ -78,7 +79,7 @@ Medlemmer kan opdage, slutte sig til og deltage i grupper fra deres telefon elle
 
 1. Medlemmer gennemser og tilslutter sig grupper på [B1.church](../../b1-church/groups/browsing-groups.md)
 2. Gruppemembers kan se detaljer, kalendere og indlæg i [samtaler](../../b1-church/groups/conversations.md)
-3. Alle gruppefunktioner er også tilgængelige på [B1 Mobile-appen](../../b1-mobile/groups/)
+3. Alle gruppefunktioner er også tilgængelige på [B1 Mobile-appen](../../b1-mobile/groups/index.md)
 
 :::info
 Medlemmer ser deres grupper, kommende begivenheder og gruppesamtaler på både web og mobil -- alt holdes synkroniseret.
@@ -97,4 +98,4 @@ Dine smågrupper er opsat og forbundne. Medlemmer kan opdage grupper, se begiven
 - [Kurateret kalender](../calendars/curated-calendar.md) -- byg en samlet kirkkalender
 - [Browsing-grupper (Web)](../../b1-church/groups/browsing-groups.md) -- hvordan medlemmer finder grupper
 - [Gruppesamtaler (Web)](../../b1-church/groups/conversations.md) -- gruppediskussioner
-- [Grupper (Mobil)](../../b1-mobile/groups/) -- grupper på mobilappen
+- [Grupper (Mobil)](../../b1-mobile/groups/index.md) -- grupper på mobilappen

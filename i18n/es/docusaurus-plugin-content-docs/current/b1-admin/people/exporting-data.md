@@ -1,5 +1,6 @@
 ---
 title: "Exportar datos"
+description: "Exporta personas a CSV, listas de miembros o una copia completa de la base de datos desde B1 Admin, y mira qué contiene el ZIP de exportación de B1."
 ---
 
 # Exportar datos

@@ -1,5 +1,6 @@
 ---
 title: "Editor delle etichette per il Check-In"
+description: "Personalizza i modelli di cartellini e ricevute di ritiro stampati al check-in in B1 Admin, inclusi campi, posizionamento e condizioni per compleanni o note."
 ---
 
 # Editor delle etichette per il Check-In
@@ -13,8 +14,8 @@ L'editor delle etichette vi consente di creare e personalizzare i modelli di tar
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Configurate [Presenze](setup) e configurate almeno un orario di servizio con check-in abilitato
-- Configurate [Check-In](check-in) in modo che le etichette stampino
+- Configurate [Presenze](./setup.md) e configurate almeno un orario di servizio con check-in abilitato
+- Configurate [Check-In](./check-in.md) in modo che le etichette stampino
 - Avete bisogno di accesso amministrativo alla sezione Presenze
 
 </div>
@@ -85,6 +86,6 @@ Eseguite una stampa di prova dopo la modifica di un modello per confermare che i
 
 ## Articoli correlati
 
-- [Configurazione del Check-In](setup) — configurate servizi e gruppi per il check-in
-- [Completamento del Check-In](check-in) — il flusso di check-in per le famiglie
-- [Guida introduttiva di B1 Checkin](../../b1-checkin/getting-started/) — l'app chiosco Checkin
+- [Configurazione del Check-In](./setup.md) — configurate servizi e gruppi per il check-in
+- [Completamento del Check-In](./check-in.md) — il flusso di check-in per le famiglie
+- [Guida introduttiva di B1 Checkin](../../b1-checkin/getting-started/index.md) — l'app chiosco Checkin

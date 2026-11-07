@@ -1,5 +1,7 @@
 ---
-title: "Bài giảng"
+title: "Duyệt bài giảng trên trang web B1.church của bạn"
+sidebar_label: "Bài giảng"
+description: "Duyệt và xem bài giảng đã ghi từ thư viện hội thánh trên trang B1.church, được nhóm thành loạt bài hoặc danh sách phát. Không cần đăng nhập."
 ---
 
 # Bài giảng

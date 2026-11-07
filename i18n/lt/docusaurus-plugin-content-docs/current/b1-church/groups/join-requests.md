@@ -1,5 +1,6 @@
 ---
 title: "Prijungimas prie grupės"
+description: "Prašykite prisijungti prie grupės, kuriai reikia patvirtinimo, B1.church, pridėkite pasirinktinę žinutę vadovui ir sekite arba atšaukite laukiantį prašymą."
 ---
 
 # Prijungimas prie grupės

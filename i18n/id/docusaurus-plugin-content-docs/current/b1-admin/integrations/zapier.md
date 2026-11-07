@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Hubungkan B1 Admin ke Zapier untuk memulai otomatisasi pada orang baru, donasi, dan anggota grup, serta menulis data kembali ke B1 tanpa perlu coding."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Pilih pemicu, lalu tambahkan satu atau beberapa langkah aksi. Contohnya ada di b
 ### Kirim donasi ke saluran Slack dengan kartu yang lebih kaya daripada konektor bawaan
 
 - **Pemicu**: B1: New Donation
-- **Aksi**: Slack: Send Channel Message. Susun tata letak apa pun, seperti tombol, lampiran, dan lainnya, yang tidak dapat dibuat oleh [konektor Slack](./slack-discord) bawaan.
+- **Aksi**: Slack: Send Channel Message. Susun tata letak apa pun, seperti tombol, lampiran, dan lainnya, yang tidak dapat dibuat oleh [konektor Slack](./slack-discord.md) bawaan.
 
 ### Tambahkan anggota grup baru ke Google Group
 
@@ -106,6 +107,6 @@ Artinya, pemicu hanya aktif untuk peristiwa yang terjadi **setelah** Zap diaktif
 
 ## Lihat Juga
 
-- [Make](./make): pola yang sama, platform berbeda
-- [Slack & Discord](./slack-discord): notifikasi chat yang lebih sederhana tanpa Zapier
+- [Make](./make.md): pola yang sama, platform berbeda
+- [Slack & Discord](./slack-discord.md): notifikasi chat yang lebih sederhana tanpa Zapier
 - [Webhooks (referensi developer)](/docs/developer/api/webhooks)

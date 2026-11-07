@@ -1,5 +1,7 @@
 ---
-title: "Medlemskatalog"
+title: "Medlemskatalog i B1 Mobile-appen"
+sidebar_label: "Medlemskatalog"
+description: "Finn folk i menigheten din med B1 Mobiles medlemskatalog: bla alfabetisk, søk etter navn, og åpne profiler og husstandslenker."
 ---
 
 # Medlemskatalog
@@ -13,7 +15,7 @@ Medlemskatalogen i B1 Mobile lar deg bla gjennom og søke etter personer i menig
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- [Installer B1 Mobile](../getting-started/installing.md) og [logg inn](../getting-started/logging-in.md) på kontoen din
 
 </div>
 
@@ -51,5 +53,5 @@ Informasjonen som vises i hver profil avhenger av menighetens personvern- og kat
 
 ## Relaterte artikler
 
-- [Meldinger](./messaging) -- Send en privat melding til noen du finner i katalogen
+- [Meldinger](./messaging.md) -- Send en privat melding til noen du finner i katalogen
 - [Personverninnstillinger](../profile/privacy-settings.md) -- Styr hva andre kan se om deg i katalogen

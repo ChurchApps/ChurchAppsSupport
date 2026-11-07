@@ -1,5 +1,6 @@
 ---
 title: "Apparence"
+description: "Réglez couleurs, polices, logo et navigation de votre site dans B1 Admin, plus widgets, GA4, redirections et CSS personnalisé."
 ---
 
 # Apparence
@@ -13,7 +14,7 @@ La page Apparence vous permet de personnaliser l'aspect général de votre site 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Effectuez la [configuration initiale](initial-setup) de votre site web
+- Effectuez la [configuration initiale](./initial-setup.md) de votre site web
 - Préparez le logo de votre église au format PNG, avec fond transparent et un rapport de 4:1
 - Connaissez les couleurs de marque de votre église (valeurs hexadécimales) si vous disposez d'une charte graphique
 
@@ -98,7 +99,7 @@ Le CSS personnalisé est puissant, mais il peut casser la mise en page de votre 
 :::
 
 :::info
-Votre site applique une politique de sécurité du contenu (Content Security Policy) qui bloque les scripts intégrés provenant de toute autre source. Le champ **HTML personnalisé** ici, ainsi que l'[élément HTML](page-editor#using-the-html-element) sur les pages individuelles, font exception : le code que vous enregistrez à cet endroit s'exécute tel quel. Ne collez donc que des scripts provenant de sources de confiance (balises d'analyse, widgets de chat et intégrations similaires).
+Votre site applique une politique de sécurité du contenu (Content Security Policy) qui bloque les scripts intégrés provenant de toute autre source. Le champ **HTML personnalisé** ici, ainsi que l'[élément HTML](./page-editor.md#using-the-html-element) sur les pages individuelles, font exception : le code que vous enregistrez à cet endroit s'exécute tel quel. Ne collez donc que des scripts provenant de sources de confiance (balises d'analyse, widgets de chat et intégrations similaires).
 :::
 
 ## Thèmes de style
@@ -107,5 +108,5 @@ Si vous souhaitez un point de départ rapide, les **Palettes suggérées** de la
 
 ## Étapes suivantes
 
-- [Gérer les pages](managing-pages) : créer et organiser les pages de votre site
-- [Fichiers](files) : importer les ressources multimédias de votre site
+- [Gérer les pages](./managing-pages.md) : créer et organiser les pages de votre site
+- [Fichiers](./files.md) : importer les ressources multimédias de votre site

@@ -1,5 +1,6 @@
 ---
 title: "Kiến trúc thời gian thực"
+description: "Cách lớp WebSocket của ChurchApps phát trực tiếp trò chuyện, trạng thái hiện diện và thông báo: bắt tay socket, đăng ký phòng và các thành phần phía client."
 ---
 
 # Kiến trúc thời gian thực
@@ -226,8 +227,8 @@ Luồng trực tiếp là ứng dụng ẩn danh lớn nhất sử dụng khung 
 
 ## Trang liên quan
 
-- [Kiến trúc thông báo](./architecture/notifications) -- Phễu chuyển tiếp thông báo trong ứng dụng, đẩy và email mà lớp truyền tải này cung cấp dữ liệu cho
-- [Endpoint nhắn tin](./api/endpoints/messaging) -- Toàn bộ REST API cho tin nhắn, cuộc trò chuyện, kết nối và thiết bị
-- [Thông báo đẩy trên web](./web-push) -- Thông báo đẩy trên trình duyệt, tách biệt với việc truyền dữ liệu socket trong trang
-- [AppHelper](./shared-libraries/app-helper) -- Gói npm chứa các thành phần nguyên thủy phía máy khách
-- [Cấu trúc module](./api/module-structure) -- Cách tổ chức module nhắn tin phía máy chủ
+- [Kiến trúc thông báo](./architecture/notifications.md) -- Phễu chuyển tiếp thông báo trong ứng dụng, đẩy và email mà lớp truyền tải này cung cấp dữ liệu cho
+- [Endpoint nhắn tin](./api/endpoints/messaging.md) -- Toàn bộ REST API cho tin nhắn, cuộc trò chuyện, kết nối và thiết bị
+- [Thông báo đẩy trên web](./web-push.md) -- Thông báo đẩy trên trình duyệt, tách biệt với việc truyền dữ liệu socket trong trang
+- [AppHelper](./shared-libraries/app-helper.md) -- Gói npm chứa các thành phần nguyên thủy phía máy khách
+- [Cấu trúc module](./api/module-structure.md) -- Cách tổ chức module nhắn tin phía máy chủ

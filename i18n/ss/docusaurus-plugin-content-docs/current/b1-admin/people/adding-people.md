@@ -1,5 +1,6 @@
 ---
 title: "Kwengeta Bantu"
+description: "Engeta umuntfu ku-database yebandla ku-B1 Admin, ugcwalise tinchazelo takhe, bese uhlanganisa emalungu emndeni etindlini kuze kusebente kuzibhalisa nekubika."
 ---
 
 # Kwengeta Bantu

@@ -1,5 +1,7 @@
 ---
-title: "Članski imenik"
+title: "Imenik članov v aplikaciji B1 Mobile"
+sidebar_label: "Članski imenik"
+description: "Poiščite ljudi v svoji cerkvi z imenikom članov B1 Mobile: brskajte po abecedi, iščite po imenu ter odprite profile in povezave do gospodinjstev."
 ---
 
 # Članski imenik
@@ -13,7 +15,7 @@ title: "Članski imenik"
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite aplikacijo B1 Mobile](../getting-started/installing) in se [prijavite](../getting-started/logging-in) v svoj račun
+- [Namestite aplikacijo B1 Mobile](../getting-started/installing.md) in se [prijavite](../getting-started/logging-in.md) v svoj račun
 
 </div>
 
@@ -51,5 +53,5 @@ Podatki, vidni v posameznem profilu, so odvisni od zasebnostnih in imeniških na
 
 ## Sorodni članki
 
-- [Sporočanje](./messaging) -- Pošljite zasebno sporočilo osebi, ki ste jo našli v imeniku
+- [Sporočanje](./messaging.md) -- Pošljite zasebno sporočilo osebi, ki ste jo našli v imeniku
 - [Nastavitve zasebnosti](../profile/privacy-settings.md) -- Nadzorujte, kaj lahko drugi vidijo o vas v imeniku

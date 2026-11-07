@@ -1,5 +1,6 @@
 ---
 title: "FreePlay áttekintés"
+description: "A FreePlay, az osztálytermi TV-alkalmazás offline leckelejátszáshoz Android TV-n, Fire TV-n és Apple TV-n, beállítási útmutatókkal."
 ---
 
 # FreePlay áttekintés
@@ -22,10 +23,10 @@ A **<a href="/guides/freeplay-b1admin" target="_blank">teljes beállítási útm
 
 - **Offline lejátszás** - Videók és képes diák előre letöltése, így az istentiszteletek alatt sosem kell Wi-Fi-re támaszkodni
 - **Letöltések kezelése** - Az összes letöltött tartalom megtekintése és kezelése a **Beállítások** > **Letöltések** menüpontban
-- **Ütemezett mód** - Lejátszási listák összeállítása és naptárba helyezése itt: [admin.freeplay.church](https://admin.freeplay.church). A párosított TV-k a megfelelő időpontokban játsszák le őket, senkinek sem kell megnyomnia az indítás gombot – lásd: [Ütemezett mód](./scheduled-mode/)
+- **Ütemezett mód** - Lejátszási listák összeállítása és naptárba helyezése itt: [admin.freeplay.church](https://admin.freeplay.church). A párosított TV-k a megfelelő időpontokban játsszák le őket, senkinek sem kell megnyomnia az indítás gombot – lásd: [Ütemezett mód](./scheduled-mode/index.md)
 - **Istentiszteleti terv párosítása** - Eszköz összekapcsolása egy egyházi istentiszteleti tervvel a termek közötti összehangolt tartalomhoz
 - **Tartalomszolgáltatók** - Tartalmak böngészése és letöltése külső forrásokból, például [Lessons.church](/docs/lessons-church/), Bible Project, Dropbox és OneDrive
-- **Hirdetések** - Egy csatlakoztatott szolgáltató mappájában lévő diák körbejátszása – lásd: [Hirdetések](./content-providers/announcements)
+- **Hirdetések** - Egy csatlakoztatott szolgáltató mappájában lévő diák körbejátszása – lásd: [Hirdetések](./content-providers/announcements.md)
 - **TV-távirányítóbarát** - Az egész alkalmazás navigálható egy szokásos TV-távirányítóval, az iránygombok és a kiválasztás gomb segítségével
 - **Összecsukható oldalsáv** - Egy keskeny oldalsáv tartja elérhetően a navigációt anélkül, hogy zsúfolná a képernyőt
 
@@ -35,10 +36,10 @@ Amikor elindítja a FreePlay-t, az csatlakozik a tartalomszolgáltatóihoz, és 
 
 ## Szakaszok
 
-- **[Első lépések](./getting-started/)** - Az alkalmazás telepítése, indítása és a csatlakozási mód kiválasztása
-- **[Ütemezett mód](./scheduled-mode/)** - TV-k párosítása naptárral és kezelésük a FreePlay Adminban
-- **[Istentiszteleti terv mód](./plan-mode/)** - Párosítás egy egyházi istentiszteleti tervhez
-- **[Tartalomszolgáltatók](./content-providers/)** - Csatlakozás külső tartalomforrásokhoz
+- **[Első lépések](./getting-started/index.md)** - Az alkalmazás telepítése, indítása és a csatlakozási mód kiválasztása
+- **[Ütemezett mód](./scheduled-mode/index.md)** - TV-k párosítása naptárral és kezelésük a FreePlay Adminban
+- **[Istentiszteleti terv mód](./plan-mode/index.md)** - Párosítás egy egyházi istentiszteleti tervhez
+- **[Tartalomszolgáltatók](./content-providers/index.md)** - Csatlakozás külső tartalomforrásokhoz
 
 :::info
 A FreePlay része a [ChurchApps](https://churchapps.org) egyházak számára készült, ingyenes, nyílt forráskódú eszközcsomagjának.

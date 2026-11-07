@@ -1,5 +1,6 @@
 ---
 title: "Sivujen hallinta"
+description: "Luo, muokkaa ja järjestä sivut ja navigointi B1 Adminin Website Pages -näkymässä, myös sivuasetukset, uudelleenohjaukset ja sivupohjat."
 ---
 
 # Sivujen hallinta
@@ -13,13 +14,13 @@ Verkkosivujen sivut -näkymä on keskuspaikkasi kaikkien kirkkosi verkkosivujen 
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Suorita [Alkuasetukset](initial-setup), jotta voit määrittää verkkotunnuksen ja sivuston perusasetukset
-- Valmistele sisältösi ja kuvasi. Lataa ensin mediatiedostot [Tiedostot](files)-hallinnan kautta.
+- Suorita [Alkuasetukset](./initial-setup.md), jotta voit määrittää verkkotunnuksen ja sivuston perusasetukset
+- Valmistele sisältösi ja kuvasi. Lataa ensin mediatiedostot [Tiedostot](./files.md)-hallinnan kautta.
 
 </div>
 
 :::info
-Jos seurakunnallasi on useampi kuin yksi verkkosivusto (esimerkiksi erilliset sivustot kampuksittain), käytä Verkkosivujen sivut -näkymän yläreunan sivustovaihtajaa siirtyäksesi sivustojen välillä. Jokaisella sivustolla on omat sivunsa, navigaationsa ja [ulkoasu](appearance)-asetuksensa.
+Jos seurakunnallasi on useampi kuin yksi verkkosivusto (esimerkiksi erilliset sivustot kampuksittain), käytä Verkkosivujen sivut -näkymän yläreunan sivustovaihtajaa siirtyäksesi sivustojen välillä. Jokaisella sivustolla on omat sivunsa, navigaationsa ja [ulkoasu](./appearance.md)-asetuksensa.
 :::
 
 ## Sivutyyppien ymmärtäminen
@@ -35,7 +36,7 @@ Voit muuttaa minkä tahansa automaattisesti generoidun sivun mukautetuksi sivuks
 
 1. Napsauta **Lisää sivu** -painiketta Verkkosivujen sivut -näkymän oikeassa yläkulmassa.
 2. Valitse sivutyyppi (tyhjä tai pohja) ja anna sivulle nimi.
-3. Avaa [sivueditori](page-editor) napsauttamalla minkä tahansa sivun vieressä **Muokkaa sisältöä**. Siellä voit lisätä osioita, tekstiä, kuvia ja muita elementtejä.
+3. Avaa [sivueditori](./page-editor.md) napsauttamalla minkä tahansa sivun vieressä **Muokkaa sisältöä**. Siellä voit lisätä osioita, tekstiä, kuvia ja muita elementtejä.
 4. Päivitä sivun otsikko, URL-polku ja muut metatiedot napsauttamalla sivun vieressä **Sivun asetukset**.
 5. Avaa julkaistu sivu uudessa välilehdessä napsauttamalla sivun polkua **Polku**-sarakkeessa. Näet silloin tarkalleen, miltä sivu näyttää kävijöille.
 
@@ -112,10 +113,10 @@ Jos rakennat sivustoasi alusta alkaen, voit käynnistää sen **Sivupohjan** avu
 3. Kun löydät mieluisesi, napsauta **Käytä pohjaa**.
 4. Sivut, joita ei vielä ole, luodaan ja lisätään navigaatioon. Olemassa olevat sivut jätetään ennalleen.
 
-Pohjan käyttämisen jälkeen avaa jokainen sivu [sivueditorissa](page-editor) ja korvaa paikkamerkkiteksti ja kuvat seurakuntasi todellisella sisällöllä.
+Pohjan käyttämisen jälkeen avaa jokainen sivu [sivueditorissa](./page-editor.md) ja korvaa paikkamerkkiteksti ja kuvat seurakuntasi todellisella sisällöllä.
 
 :::info
-Sivupohjat luovat sivurakenteen ja navigaation. Ne eivät ohita sivustosi väriteemaa tai fontteja. Niitä hallitaan [Ulkoasu](appearance)-osiossa.
+Sivupohjat luovat sivurakenteen ja navigaation. Ne eivät ohita sivustosi väriteemaa tai fontteja. Niitä hallitaan [Ulkoasu](./appearance.md)-osiossa.
 :::
 
 ## Kuvan lightbox
@@ -124,7 +125,7 @@ Kun kävijät napsauttavat kuvaa verkkosivustollasi, se avautuu koko näytön ko
 
 ## Seuraavat vaiheet
 
-- [Alkuasetukset](initial-setup) -- Ensimmäisen käyttökerran asennusohjeet
-- [Sivueditorin käyttäminen](page-editor) -- Opi rakentamaan ja tyylittelemään sivun sisältöä
-- [Ulkoasu](appearance) -- Mukauta sivustosi visuaalista teemaa
-- [Tiedostot](files) -- Lataa ja hallitse sivujesi mediatiedostoja
+- [Alkuasetukset](./initial-setup.md) -- Ensimmäisen käyttökerran asennusohjeet
+- [Sivueditorin käyttäminen](./page-editor.md) -- Opi rakentamaan ja tyylittelemään sivun sisältöä
+- [Ulkoasu](./appearance.md) -- Mukauta sivustosi visuaalista teemaa
+- [Tiedostot](./files.md) -- Lataa ja hallitse sivujesi mediatiedostoja

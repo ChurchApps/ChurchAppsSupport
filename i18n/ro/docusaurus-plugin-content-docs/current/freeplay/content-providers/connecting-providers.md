@@ -1,5 +1,6 @@
 ---
 title: "Conectarea la furnizori"
+description: "Conectați FreePlay la un furnizor de conținut prin cod QR, autentificare cu e-mail sau acces dintr-un clic, și gestionați sau deconectați din Setări."
 ---
 
 # Conectarea la furnizori
@@ -13,7 +14,7 @@ title: "Conectarea la furnizori"
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Instalează și pornește FreePlay -- vezi [Primii pași](../getting-started/)
+- Instalează și pornește FreePlay -- vezi [Primii pași](../getting-started/index.md)
 - Ai telecomanda TV pregătită pentru navigare
 - Pentru furnizorii care necesită autentificare, ai la îndemână datele de conectare ale contului
 
@@ -80,7 +81,7 @@ Selectarea unui card de furnizor care afișează insigna **Conectat** deschide e
 
 - **Răsfoiește biblioteca** -- Afișează sau ascunde biblioteca de conținut a acestui furnizor din bara laterală
 - **Descarcă automat lecția de azi** -- Folosește acest furnizor ca sursă a lecției de azi și descarcă în avans fișierele acesteia (afișat doar pentru furnizorii care oferă o lecție curentă)
-- **Folosește pentru anunțuri** -- Alege un dosar de la acest furnizor pentru a le derula din elementul **Anunțuri** din bara laterală. Vezi [Anunțuri](./announcements)
+- **Folosește pentru anunțuri** -- Alege un dosar de la acest furnizor pentru a le derula din elementul **Anunțuri** din bara laterală. Vezi [Anunțuri](./announcements.md)
 - **Verifică actualizările anunțurilor** -- Afișat după ce ai ales un dosar pentru anunțuri; descarcă diapozitivele noi și le elimină pe cele șterse
 - **Deconectare** -- Elimină conexiunea
 
@@ -100,6 +101,6 @@ Deconectarea elimină autentificarea salvată de pe dispozitivul tău. Va trebui
 
 ## Articole înrudite
 
-- **[Răsfoirea și descărcarea conținutului](./browsing-content)** - Navighează prin dosare și redă conținutul după conectare
-- **[Anunțuri](./announcements)** - Derulează un dosar de diapozitive de la un furnizor conectat
+- **[Răsfoirea și descărcarea conținutului](./browsing-content.md)** - Navighează prin dosare și redă conținutul după conectare
+- **[Anunțuri](./announcements.md)** - Derulează un dosar de diapozitive de la un furnizor conectat
 - **[Prezentare generală a furnizorilor de conținut](./index.md)** - Vezi toți furnizorii disponibili

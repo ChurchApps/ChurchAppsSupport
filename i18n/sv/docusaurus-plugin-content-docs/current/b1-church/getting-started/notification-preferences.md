@@ -1,5 +1,6 @@
 ---
 title: "Aviseringsinställningar"
+description: "Ställ in aviseringskanaler, e-postfrekvens, tysta timmar och sms-avregistrering för varje aviseringstyp i B1 Admin och B1-appen, från en skärm."
 ---
 
 # Aviseringsinställningar
@@ -60,6 +61,6 @@ Tidskänsliga aviseringar -- som en säkerhetsvarning eller ett säkerhetsmeddel
 
 ## Relaterat
 
-- [Volontärregistrering](../serving/volunteer-signup) -- Påminnelser om tjänstgöring och svar på schemaförfrågningar
-- [Anmäla sig till evenemang](../events/registering) -- Anmäl dig till evenemang som skickar påminnelser
-- [Installera appen](installing-pwa) -- Lägg till B1 på din enhet så att du kan ta emot pushaviseringar
+- [Volontärregistrering](../serving/volunteer-signup.md) -- Påminnelser om tjänstgöring och svar på schemaförfrågningar
+- [Anmäla sig till evenemang](../events/registering.md) -- Anmäl dig till evenemang som skickar påminnelser
+- [Installera appen](./installing-pwa.md) -- Lägg till B1 på din enhet så att du kan ta emot pushaviseringar

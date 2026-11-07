@@ -1,5 +1,6 @@
 ---
 title: "Alegerea unui dispozitiv"
+description: "Alegeți dispozitivul potrivit pentru televizoarele FreePlay din clasă, de la stick-uri Fire TV și cutii Onn până la Apple TV, și ce să evitați."
 ---
 
 # Alegerea unui dispozitiv pentru FreePlay

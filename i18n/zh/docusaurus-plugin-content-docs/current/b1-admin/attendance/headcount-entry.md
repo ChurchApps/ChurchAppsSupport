@@ -1,5 +1,6 @@
 ---
 title: "人数登记与趋势"
+description: "在 B1 Admin 中为某次聚会或小组输入总人数（无需具名名单），然后在“Headcount Trend”报告中按周查看这些总数。"
 ---
 
 # 人数登记与趋势

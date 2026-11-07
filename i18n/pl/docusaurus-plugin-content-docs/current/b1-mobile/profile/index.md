@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Profil i przypisane karty w B1 Mobile"
+sidebar_label: "Profil"
+description: "Zarządzaj imieniem, danymi kontaktowymi, gospodarstwem domowym i widocznością prywatności w profilu B1 Mobile oraz obsługuj karty przepływów i zadania."
 ---
 
 # Profil
@@ -20,7 +22,7 @@ Im Reiter **Profil** kannst du deine persönlichen Daten einsehen und bearbeiten
 
 ### Haushalt
 
-Im Reiter **Haushalt** siehst du deine Familienmitglieder und ihre Rollen innerhalb deines Haushalts. Diese Informationen werden für Funktionen wie den [Check-in](../checkin/) verwendet, mit dem du deine gesamte Familie auf einmal einchecken kannst.
+Im Reiter **Haushalt** siehst du deine Familienmitglieder und ihre Rollen innerhalb deines Haushalts. Diese Informationen werden für Funktionen wie den [Check-in](../checkin/index.md) verwendet, mit dem du deine gesamte Familie auf einmal einchecken kannst.
 
 ### Sichtbarkeit
 
@@ -55,6 +57,6 @@ Tippe auf eine einfache Aufgabe, um zu sehen, von wem sie stammt, wen sie betrif
 
 ## Nächste Schritte
 
-- [Profil bearbeiten](./editing-profile) -- Name, Kontaktdaten und Foto aktualisieren
-- [Haushalt](./household) -- Familienmitglieder anzeigen und verwalten
-- [Datenschutzeinstellungen](./privacy-settings) -- Festlegen, was andere über dich sehen können
+- [Profil bearbeiten](./editing-profile.md) -- Name, Kontaktdaten und Foto aktualisieren
+- [Haushalt](./household.md) -- Familienmitglieder anzeigen und verwalten
+- [Datenschutzeinstellungen](./privacy-settings.md) -- Festlegen, was andere über dich sehen können

@@ -1,5 +1,6 @@
 ---
 title: "Paglipat ng Simbahan"
+description: "Lumipat ng simbahan sa B1 Mobile app sa pamamagitan ng pagpili ng kamakailang simbahan o paghahanap ayon sa pangalan, gamit ang iisang ChurchApps login."
 ---
 
 # Paglipat ng Simbahan
@@ -13,7 +14,7 @@ Kung kasapi ka sa higit sa isang simbahan, pinapadali ng B1 Mobile ang paglipat 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](./installing) at [mag-log in](./logging-in) sa iyong account
+- [I-install ang B1 Mobile](./installing.md) at [mag-log in](./logging-in.md) sa iyong account
 
 </div>
 
@@ -24,7 +25,7 @@ Kung kasapi ka sa higit sa isang simbahan, pinapadali ng B1 Mobile ang paglipat 
 3. Lalabas ang screen na **Church Search**. Ang iyong kamakailang binisitang mga simbahan ay nasa itaas para sa mabilis na access.
 4. I-tap ang isang kamakailang simbahan para lumipat dito, o mag-type sa search field para maghanap ng ibang simbahan.
 
-Kapag lumipat ka ng simbahan, magre-reload ang app na may branding, navigation link, at nilalaman ng simbahang iyon. Ang iyong [dashboard](../dashboard/), [mga grupo](../groups/), at iba pang data ay magpapakita ng bagong napiling simbahan.
+Kapag lumipat ka ng simbahan, magre-reload ang app na may branding, navigation link, at nilalaman ng simbahang iyon. Ang iyong [dashboard](../dashboard/index.md), [mga grupo](../groups/index.md), at iba pang data ay magpapakita ng bagong napiling simbahan.
 
 ## Paghahanap ng Simbahan
 

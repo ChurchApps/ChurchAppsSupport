@@ -1,5 +1,6 @@
 ---
 title: "Seguimiento de Asistencia"
+description: "Revisa tendencias de asistencia, filtra informes por campus, servicio o grupo y exporta la asistencia de grupos desde Asistencia en B1 Admin."
 ---
 
 # Seguimiento de Asistencia

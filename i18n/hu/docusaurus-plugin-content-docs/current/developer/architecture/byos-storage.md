@@ -1,5 +1,6 @@
 ---
 title: "Saját tárhely (BYOS)"
+description: "Kösd össze saját Google Drive, Dropbox, OneDrive vagy S3-kompatibilis tárolódat a B1 Adminban, hogy a gyülekezeti fájlfeltöltések kikerüljék a platform 100 MB-os korlátját."
 ---
 
 # Saját tárhely (BYOS)
@@ -8,7 +9,7 @@ Az egyházak mintegy 100 MB ingyenes, platformon tárolt fájltárhelyet kapnak 
 
 ## A szolgáltatói illesztőpont
 
-A BYOS újrahasználja a [MinistryStuff](./ministrystuff) számára kialakított tárolási illesztőpontot: az `IStorageProvider` (`Packages/apihelper`) interfészt, amelyet a `StorageResolver` oldja fel egyházanként a `content.storageProviders` táblából. A `churchapps`/`ministrystuff` egyedi (singleton) szolgáltatókkal ellentétben a BYOS-szolgáltatók egyházanként tárolják a hitelesítő adataikat, ezért a `StorageResolver.forChurch` minden kéréshez az egyház sorából hoz létre új példányt. A megvalósítások a resolver mellett, az `Api/src/modules/content/helpers/` mappában találhatók: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, valamint a `ByosAuth` (OAuth-tokencsere és egyszeri frissítés — a Dropbox forgatja a frissítő tokeneket, ezért a frissítéseket ugyanúgy szűrjük ki duplikációként, mint a `ProviderProxyController`-ben).
+A BYOS újrahasználja a [MinistryStuff](./ministrystuff.md) számára kialakított tárolási illesztőpontot: az `IStorageProvider` (`Packages/apihelper`) interfészt, amelyet a `StorageResolver` oldja fel egyházanként a `content.storageProviders` táblából. A `churchapps`/`ministrystuff` egyedi (singleton) szolgáltatókkal ellentétben a BYOS-szolgáltatók egyházanként tárolják a hitelesítő adataikat, ezért a `StorageResolver.forChurch` minden kéréshez az egyház sorából hoz létre új példányt. A megvalósítások a resolver mellett, az `Api/src/modules/content/helpers/` mappában találhatók: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, valamint a `ByosAuth` (OAuth-tokencsere és egyszeri frissítés — a Dropbox forgatja a frissítő tokeneket, ezért a frissítéseket ugyanúgy szűrjük ki duplikációként, mint a `ProviderProxyController`-ben).
 
 A `storageProviders` tárolja a hitelesítő adatokat: `accessToken`/`refreshToken`/`tokenExpiresAt` (titkosítva, az OAuth-hármas), vagy `apiKey`/`apiSecret` + `settings` JSON (`{endpoint, region, bucket, publicBase}`, S3 esetén). A tokenek soha nem jutnak el a kliensig: a `GET /content/storage/providers` maszkolja a titkos adatokat, és egy `connected` logikai értéket ad vissza.
 

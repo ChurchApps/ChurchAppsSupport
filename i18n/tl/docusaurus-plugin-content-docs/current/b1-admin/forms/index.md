@@ -1,5 +1,6 @@
 ---
 title: "Mga Form"
+description: "Hanapin, i-filter, i-edit, i-archive, at ibalik ang custom na form sa B1 Admin, kasama kung saan itatakda ang miyembro ng form at tingnan ang mga submission."
 ---
 
 # Mga Form

@@ -1,5 +1,6 @@
 ---
 title: "E-poštne predloge"
+description: "V B1 Admin nastavite predloge e-pošte in SMS-ov s polji za združevanje, možnostmi besedilnih sporočil ter predogledi za množično komunikacijo."
 ---
 
 # E-poštne predloge

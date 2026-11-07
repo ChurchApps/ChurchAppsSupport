@@ -1,5 +1,6 @@
 ---
 title: "로컬 API 설정"
+description: "ChurchApps API를 로컬에서 설정하세요. 저장소를 클론하고, MySQL 모듈 데이터베이스 여섯 개를 구성하고, 스키마를 초기화한 뒤, 핫 리로드 개발 서버를 시작합니다."
 ---
 
 # 로컬 API 설정
@@ -13,9 +14,9 @@ title: "로컬 API 설정"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- **Node.js 24+**, **Git**, **MySQL 8.0+**를 설치하세요. [사전 요구 사항](../setup/prerequisites)을 참고하세요.
+- **Node.js 24+**, **Git**, **MySQL 8.0+**를 설치하세요. [사전 요구 사항](../setup/prerequisites.md)을 참고하세요.
 - 데이터베이스 생성 권한이 있는 MySQL 사용자를 만드세요.
-- API 구성을 위해 [환경 변수](../setup/environment-variables) 참고 문서를 확인하세요.
+- API 구성을 위해 [환경 변수](../setup/environment-variables.md) 참고 문서를 확인하세요.
 
 </div>
 
@@ -82,7 +83,7 @@ API가 핫 리로드와 함께 [http://localhost:8084](http://localhost:8084)에
 
 ## 배포
 
-스테이징 환경은 폐기되었습니다. API는 `main`에 푸시될 때마다 데모 환경에 배포되며, 수동 **Deploy Prod** 워크플로를 통해 운영 환경에 배포됩니다. 이 워크플로는 대기 중인 데이터베이스 마이그레이션도 함께 적용합니다. 자세한 내용은 [API 배포](../deployment/apis)를 참고하세요.
+스테이징 환경은 폐기되었습니다. API는 `main`에 푸시될 때마다 데모 환경에 배포되며, 수동 **Deploy Prod** 워크플로를 통해 운영 환경에 배포됩니다. 이 워크플로는 대기 중인 데이터베이스 마이그레이션도 함께 적용합니다. 자세한 내용은 [API 배포](../deployment/apis.md)를 참고하세요.
 
 ## 로컬 라이브러리 개발
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-이렇게 하면 npm에 배포하지 않고도 라이브러리 변경 사항을 API에서 테스트할 수 있습니다. 자세한 내용은 [공유 라이브러리](../shared-libraries/#local-development-against-a-consuming-app)를 참고하세요. 링크 작업이 `package.json`에 쓴 포털 설정은 절대로 커밋하지 마세요.
+이렇게 하면 npm에 배포하지 않고도 라이브러리 변경 사항을 API에서 테스트할 수 있습니다. 자세한 내용은 [공유 라이브러리](../shared-libraries/index.md#local-development-against-a-consuming-app)를 참고하세요. 링크 작업이 `package.json`에 쓴 포털 설정은 절대로 커밋하지 마세요.
 
 ## 관련 문서
 
-- **[데이터베이스](./database)** -- 모듈별 데이터베이스 구조 이해하기
-- **[모듈 구조](./module-structure)** -- 컨트롤러, 리포지토리, 모델의 구성 방식
-- **[공유 라이브러리](../shared-libraries/)** -- `@churchapps/helpers`와 `@churchapps/apihelper` 사용하기
+- **[데이터베이스](./database.md)** -- 모듈별 데이터베이스 구조 이해하기
+- **[모듈 구조](./module-structure.md)** -- 컨트롤러, 리포지토리, 모델의 구성 방식
+- **[공유 라이브러리](../shared-libraries/index.md)** -- `@churchapps/helpers`와 `@churchapps/apihelper` 사용하기

@@ -1,5 +1,7 @@
 ---
-title: "Dersler (Kullanımdan Kaldırıldı)"
+title: "B1 Mobile'da Dersler Ekranı (Kaldırıldı)"
+sidebar_label: "Dersler (Kullanımdan Kaldırıldı)"
+description: "Dersler (Kullanımdan Kaldırıldı) sayfası: B1 Mobile'daki uygulama içi Dersler ekranının neden kaldırıldığı ve müfredatın artık nerede bulunduğu (FreePlay veya Lessons.church)."
 ---
 
 # Dersler (Kullanımdan Kaldırıldı)
@@ -19,7 +21,7 @@ Dersler ekranı, kilisenizin müfredatına ve öğrenme materyallerine erişmeni
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
 - Kilisenizin Lessons.church üzerinden müfredat yapılandırılmış olmalıdır
 
 </div>
@@ -54,5 +56,5 @@ Dersler ekranı, kiliseniz Lessons.church üzerinden müfredat yapılandırdığ
 
 - [FreePlay Genel Bakış](/docs/freeplay/) -- Ders oynatma için yerini alan TV uygulaması
 - [Lessons.church](/docs/lessons-church/) -- Müfredat içeriğine doğrudan göz atın ve yönetin
-- [İncil](./bible) -- Derslerinizle birlikte Kutsal Yazı okuyun
-- [Vaazlar](./sermons) -- Çalışmalarınızı tamamlayan vaazları izleyin
+- [İncil](./bible.md) -- Derslerinizle birlikte Kutsal Yazı okuyun
+- [Vaazlar](./sermons.md) -- Çalışmalarınızı tamamlayan vaazları izleyin

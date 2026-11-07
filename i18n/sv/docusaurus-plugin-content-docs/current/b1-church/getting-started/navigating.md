@@ -1,5 +1,6 @@
 ---
 title: "Navigera i B1App"
+description: "Hitta rätt i B1.church medlemsportal på telefon eller dator: startsidan Home, den nedre flikraden, sidan More och sidan Me."
 ---
 
 # Navigera i B1App
@@ -92,7 +93,7 @@ Detaljsidor, som en grupp, en plan, din sida Jag eller skärmarna Planer och Giv
 
 ## Sidan Jag
 
-**Jag** (`/mobile/me`) är din personliga startpunkt. Den visar ditt namn och foto, med knapparna **Redigera profil** och **Inställningar** ([aviseringsinställningar](./notification-preferences.md)). Därefter visas vad som väntar på dig: tjänstgöringsuppdrag, eventanmälningar och gruppevenemang. Sedan följer ditt hushåll, dina grupper, ditt [givande](../giving/) i år, formulären du har skickat in, din närvarohistorik, dina [anmälningar](../events/my-registrations.md) samt dina senaste aviseringar och meddelanden. Se [Sidan Jag](./me-page) för detaljer.
+**Jag** (`/mobile/me`) är din personliga startpunkt. Den visar ditt namn och foto, med knapparna **Redigera profil** och **Inställningar** ([aviseringsinställningar](./notification-preferences.md)). Därefter visas vad som väntar på dig: tjänstgöringsuppdrag, eventanmälningar och gruppevenemang. Sedan följer ditt hushåll, dina grupper, ditt [givande](../giving/index.md) i år, formulären du har skickat in, din närvarohistorik, dina [anmälningar](../events/my-registrations.md) samt dina senaste aviseringar och meddelanden. Se [Sidan Jag](./me-page.md) för detaljer.
 
 Om du inte är inloggad visar sidan Jag i stället en knapp **Logga in**.
 

@@ -1,5 +1,6 @@
 ---
 title: "Konten Bersama"
+description: "Cara lagu, pelajaran, dan templat dari pengguna bergerak melalui antrean moderasi bersama di Server Admin B1 Admin, dari kiriman hingga terbit."
 ---
 
 # Konten Bersama — Pustaka Aset Bersama & Moderasi

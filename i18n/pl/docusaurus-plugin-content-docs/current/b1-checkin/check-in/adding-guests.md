@@ -1,5 +1,6 @@
 ---
 title: "Dodawanie gości"
+description: "Dodaj odwiedzające dziecko, krewnego lub przyjaciela do gospodarstwa domowego na kiosku B1 Checkin, następnie przypisz grupy i zakończ zameldowanie."
 ---
 
 # Dodawanie gości
@@ -13,8 +14,8 @@ Jeśli ktoś odwiedza twoją rodzinę i musi zameldować się razem z twoim gosp
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Wyszukaj swoją rodzinę](./looking-up-members) i wybierz członka z wyników wyszukiwania
-- Przejdź do [ekranu przeglądu gospodarstwa domowego](./household-review), gdzie widzisz członków swojej rodziny
+- [Wyszukaj swoją rodzinę](./looking-up-members.md) i wybierz członka z wyników wyszukiwania
+- Przejdź do [ekranu przeglądu gospodarstwa domowego](./household-review.md), gdzie widzisz członków swojej rodziny
 
 </div>
 
@@ -36,8 +37,8 @@ Jeśli imię i nazwisko gościa pasuje do osoby, która już znajduje się w sys
 
 Gdy gość pojawi się na liście gospodarstwa domowego, możesz:
 
-- **Rozwinąć jego kartę** i [przypisać go do grupy](./group-assignment), tak jak każdego innego członka rodziny.
-- **[Zameldować](./completing-checkin)** całe gospodarstwo domowe, w tym gościa.
+- **Rozwinąć jego kartę** i [przypisać go do grupy](./group-assignment.md), tak jak każdego innego członka rodziny.
+- **[Zameldować](./completing-checkin.md)** całe gospodarstwo domowe, w tym gościa.
 
 ## Anulowanie
 
@@ -49,4 +50,4 @@ Dodanie gościa na kiosku tworzy rekord osoby w bazie danych kościoła. Adminis
 
 ## Następny krok
 
-Po dodaniu gości i [przypisaniu grup](./group-assignment), w razie potrzeby, możesz przejść do [zakończenia meldowania](./completing-checkin).
+Po dodaniu gości i [przypisaniu grup](./group-assignment.md), w razie potrzeby, możesz przejść do [zakończenia meldowania](./completing-checkin.md).

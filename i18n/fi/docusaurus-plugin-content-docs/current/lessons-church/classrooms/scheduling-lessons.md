@@ -1,5 +1,7 @@
 ---
-title: "Oppituntien ajoittaminen"
+title: "Luokkaoppituntien aikataulutus portaalissa"
+sidebar_label: "Oppituntien ajoittaminen"
+description: "Aikatauluta Lessons.church-oppitunnit luokkakalenteriin B1 Adminin portaalissa: valitse kullekin päivälle ohjelma, opinto, oppitunti ja ikäkohtainen paikka."
 ---
 
 # Oppituntien ajoittaminen

@@ -1,5 +1,6 @@
 ---
 title: "Administration af skærme og grupper"
+description: "Tjek hvilke FreePlay-tv der er online og klar til søndag, rediger skærmindstillinger, og opret grupper, der deler én kalender, i FreePlay Admin."
 ---
 
 # Administration af skærme og grupper
@@ -14,7 +15,7 @@ Siden **Skærme** i FreePlay Admin viser alle tv'er, der er parret med din kirke
 <h4>Før du begynder</h4>
 
 - Log ind på FreePlay Admin på [admin.freeplay.church](https://admin.freeplay.church)
-- [Par mindst én skærm](./pairing-a-screen)
+- [Par mindst én skærm](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Brug **Vis** for at afspille skærmens kalender i din browser, eller **Rediger**
 
 Klik på en skærms etiket for at åbne dens side. Til venstre finder du:
 
-- **Vis i browser** - Afspil denne skærms kalender på fuld skærm i din browser, således som den ville se ud på tv'et. Se [Præsentation fra en browser](./scheduled-playback#presenting-from-a-browser)
+- **Vis i browser** - Afspil denne skærms kalender på fuld skærm i din browser, således som den ville se ud på tv'et. Se [Præsentation fra en browser](./scheduled-playback.md#presenting-from-a-browser)
 - **Rediger** - Ændr etiketten, gruppen eller tilstanden
 - **Mere** > **Fjern parring** - Afbryd tv'et. Det vender tilbage til at vise en parringskode
 
@@ -93,6 +94,6 @@ Hvis du sletter en gruppe, slettes også dens plan. Skærmene i gruppen slukkes,
 
 ## Relaterede artikler
 
-- **[Parring af en skærm](./pairing-a-screen)** - Tilføj et nyt tv
-- **[Planlægning af kalenderen](./scheduling-the-calendar)** - Angiv, hvad hver gruppe viser, og dens standardloop
-- **[Planlagt afspilning på tv'et](./scheduled-playback)** - Hvad datoen "Klar til" betyder på selve tv'et
+- **[Parring af en skærm](./pairing-a-screen.md)** - Tilføj et nyt tv
+- **[Planlægning af kalenderen](./scheduling-the-calendar.md)** - Angiv, hvad hver gruppe viser, og dens standardloop
+- **[Planlagt afspilning på tv'et](./scheduled-playback.md)** - Hvad datoen "Klar til" betyder på selve tv'et

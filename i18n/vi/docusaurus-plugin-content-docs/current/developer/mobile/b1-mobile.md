@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "Thiết lập và chạy ứng dụng B1 Mobile (React Native/Expo) cục bộ, cấu hình endpoint API, và build cho Android hoặc iOS. Lưu ý: B1 Mobile đã ngừng hỗ trợ."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobile là ứng dụng di động chính dành cho thành viên của Church
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Cài đặt **Node.js** và **Expo CLI** -- xem [Điều kiện tiên quyết](../setup/prerequisites)
+- Cài đặt **Node.js** và **Expo CLI** -- xem [Điều kiện tiên quyết](../setup/prerequisites.md)
 - Cài đặt **Android Studio** (cho trình giả lập Android) hoặc **Xcode** (cho trình mô phỏng iOS)
-- Cấu hình mục tiêu API của bạn (demo hoặc local) -- xem [Biến môi trường](../setup/environment-variables)
+- Cấu hình mục tiêu API của bạn (demo hoặc local) -- xem [Biến môi trường](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ Cập nhật OTA phù hợp nhất với các thay đổi chỉ có JavaScript. 
 
 ## Bài viết liên quan
 
-- **[Triển khai ứng dụng di động](../deployment/mobile)** -- Hướng dẫn đầy đủ về cách dựng, gửi và triển khai ứng dụng di động
-- **[Biến môi trường](../setup/environment-variables)** -- Tài liệu tham chiếu đầy đủ về cấu hình môi trường di động
+- **[Triển khai ứng dụng di động](../deployment/mobile.md)** -- Hướng dẫn đầy đủ về cách dựng, gửi và triển khai ứng dụng di động
+- **[Biến môi trường](../setup/environment-variables.md)** -- Tài liệu tham chiếu đầy đủ về cấu hình môi trường di động

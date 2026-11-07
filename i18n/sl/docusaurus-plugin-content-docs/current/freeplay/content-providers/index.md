@@ -1,5 +1,6 @@
 ---
 title: "Ponudniki vsebine"
+description: "Prebrskaj in prenesi gradiva ur, videe in slike iz Lessons.church, Dropboxa, OneDrive in drugih ponudnikov v aplikaciji FreePlay TV."
 ---
 
 # Ponudniki vsebine
@@ -14,7 +15,7 @@ Ponudniki vsebine so zunanje storitve, ki zagotavljajo učna gradiva, videoposne
 
 FreePlay trenutno vključuje naslednje ponudnike:
 
-- **[Lessons.church](../../lessons-church/)** - Brezplačen, odprtokodni kurikulum za otroško služenje
+- **[Lessons.church](../../lessons-church/index.md)** - Brezplačen, odprtokodni kurikulum za otroško služenje
 - **Bible Project** - Videoposnetki in viri, ki raziskujejo Biblijo
 - **SignPresenter** - Vsebine za predstavitve in označevanje za cerkve
 - **B1.church** - Vsebina iz vaše lastne nastavitve B1 cerkve
@@ -24,7 +25,7 @@ FreePlay trenutno vključuje naslednje ponudnike:
 - **OneDrive** - Brskanje in predvajanje slik, videoposnetkov in zvočnih posnetkov z vašega Microsoft OneDriva
 
 :::note
-Google Drive in FreeShow se v aplikaciji FreePlay TV ne prikazujeta več. Če želite uporabljati vsebino Google Drive na svojih televizorjih, jo povežite v [FreePlay Admin](../scheduled-mode/building-playlists#connecting-providers), datoteke dodajte v predvajalni seznam in ga načrtujte.
+Google Drive in FreeShow se v aplikaciji FreePlay TV ne prikazujeta več. Če želite uporabljati vsebino Google Drive na svojih televizorjih, jo povežite v [FreePlay Admin](../scheduled-mode/building-playlists.md#connecting-providers), datoteke dodajte v predvajalni seznam in ga načrtujte.
 :::
 
 :::info
@@ -37,14 +38,14 @@ Vsak ponudnik ima svojo knjižnico vsebine, organizirano v mape in datoteke. Ko 
 
 Povezani ponudniki se prikažejo v stranski vrstici na levi strani zaslona pod naslovom **Brskanje**. Med ponudniki lahko preklapljate tako, da jih izberete v stranski vrstici, kar olajša preskakovanje med viri vsebine med nastavitvijo.
 
-Prav tako lahko izberete mapo iz katerega koli povezanega ponudnika, da se na vašem televizorju predvaja v zanki kot [obvestila](./announcements).
+Prav tako lahko izberete mapo iz katerega koli povezanega ponudnika, da se na vašem televizorju predvaja v zanki kot [obvestila](./announcements.md).
 
 :::tip
-Ponudniki, ki jih povežete na televizorju, veljajo samo za ta televizor. Če uporabljate [Načrtovani način](../scheduled-mode/), ponudnike raje povežite enkrat v FreePlay Admin, nato pa lahko vsak načrtovani zaslon predvaja vsebino iz njih.
+Ponudniki, ki jih povežete na televizorju, veljajo samo za ta televizor. Če uporabljate [Načrtovani način](../scheduled-mode/index.md), ponudnike raje povežite enkrat v FreePlay Admin, nato pa lahko vsak načrtovani zaslon predvaja vsebino iz njih.
 :::
 
 ## V tem razdelku
 
-- **[Povezovanje s ponudniki](./connecting-providers)** - Kako se overiti in povezati
-- **[Brskanje in prenašanje vsebine](./browsing-content)** - Krmarjenje po mapah, prenos datotek in predvajanje vsebine
-- **[Obvestila](./announcements)** - Predvajanje mape s diapozitivi od ponudnika v zanki
+- **[Povezovanje s ponudniki](./connecting-providers.md)** - Kako se overiti in povezati
+- **[Brskanje in prenašanje vsebine](./browsing-content.md)** - Krmarjenje po mapah, prenos datotek in predvajanje vsebine
+- **[Obvestila](./announcements.md)** - Predvajanje mape s diapozitivi od ponudnika v zanki

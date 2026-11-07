@@ -1,5 +1,6 @@
 ---
 title: "Bảo mật dữ liệu"
+description: "Xem cách ChurchApps bảo vệ dữ liệu hội thánh của bạn trong B1 Admin, từ mật khẩu đã băm và HTTPS đến cơ sở dữ liệu tách biệt và công cụ dữ liệu GDPR."
 ---
 
 # Bảo mật dữ liệu

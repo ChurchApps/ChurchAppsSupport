@@ -1,5 +1,7 @@
 ---
-title: "Innhold"
+title: "Innholdsfunksjoner i B1 Mobile-appen"
+sidebar_label: "Innhold"
+description: "Finn preken, direktesendinger, bibellesing og Dagens vers i B1 Mobile-appen, og se hvilke innholdsfunksjoner menigheten din har slått på."
 ---
 
 # Innhold
@@ -30,20 +32,20 @@ Se et vakkert formatert bibelvers-bilde som endrer seg hver dag. Bildet tilpasse
 
 ### Lessons (utgått)
 
-Den innebygde Lessons-skjermen er erstattet av **[FreePlay](/docs/freeplay/)** for avspilling i klasserommet, og ved å besøke [Lessons.church](https://lessons.church) direkte for å bla gjennom innholdet. Se [referansesiden for Lessons](./lessons) for detaljer.
+Den innebygde Lessons-skjermen er erstattet av **[FreePlay](/docs/freeplay/)** for avspilling i klasserommet, og ved å besøke [Lessons.church](https://lessons.church) direkte for å bla gjennom innholdet. Se [referansesiden for Lessons](./lessons.md) for detaljer.
 
 ## Finne innhold
 
 Innholdsfunksjonene finner du i sidemenyen i appen. Menighetsadministratoren din bestemmer hvilke innholdsfunksjoner som er aktivert, så du ser kanskje ikke alle alternativene som er nevnt ovenfor. Hvis en bestemt funksjon mangler, er den kanskje ikke satt opp i menigheten din ennå.
 
 :::info
-Innholdsfunksjonene settes opp av menighetsadministratoren din via [B1 Admin](../../b1-admin/). Hvis du ikke ser en funksjon du forventer, kontakt menighetskontoret.
+Innholdsfunksjonene settes opp av menighetsadministratoren din via [B1 Admin](../../b1-admin/index.md). Hvis du ikke ser en funksjon du forventer, kontakt menighetskontoret.
 :::
 
 ## Neste steg
 
-- [Preker](./sermons) -- Bla gjennom og se opptak av preker
-- [Direktesending](./live-streaming) -- Se direktesendinger
-- [Bibel](./bible) -- Les Skriften i den innebygde leseren
-- [Dagens vers](./verse-of-the-day) -- Se dagens vers
+- [Preker](./sermons.md) -- Bla gjennom og se opptak av preker
+- [Direktesending](./live-streaming.md) -- Se direktesendinger
+- [Bibel](./bible.md) -- Les Skriften i den innebygde leseren
+- [Dagens vers](./verse-of-the-day.md) -- Se dagens vers
 - [FreePlay](/docs/freeplay/) -- Spill av leksjoner på klasserom-TV-er (erstatter den utgåtte Lessons-skjermen i appen)

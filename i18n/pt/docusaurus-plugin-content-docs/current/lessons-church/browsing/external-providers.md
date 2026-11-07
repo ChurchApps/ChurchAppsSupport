@@ -1,5 +1,6 @@
 ---
 title: "Provedores Externos"
+description: "Saiba como provedores terceiros de currículo adicionam seu conteúdo ao Lessons.church usando o Open Lesson Format e como conectar um pelo portal."
 ---
 
 # Provedores Externos

@@ -1,5 +1,6 @@
 ---
 title: "Project Overview"
+description: "Overzicht van alle ChurchApps-repositories per categorie, met frameworks, dev-poorten, databases en hoe de gedeelde @churchapps-pakketten ze verbinden."
 ---
 
 # Project Overview
@@ -13,7 +14,7 @@ ChurchApps bestaat uit ongeveer 20 onafhankelijke repositories, elk gepubliceerd
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Installeer de [voorwaarden](./prerequisites) voor de projectcategorie waarin u wilt werken
+- Installeer de [voorwaarden](./prerequisites.md) voor de projectcategorie waarin u wilt werken
 
 </div>
 
@@ -99,5 +100,5 @@ Alle frontend-apps zijn afhankelijk van `@churchapps/helpers`. Web-apps zijn daa
 
 ## Volgende Stappen
 
-- **[Environment Variables](./environment-variables)** -- Configureer uw `.env`-bestanden om verbinding te maken met API's
-- **[API Local Setup](../api/local-setup)** -- Stel de backend API lokaal in
+- **[Environment Variables](./environment-variables.md)** -- Configureer uw `.env`-bestanden om verbinding te maken met API's
+- **[API Local Setup](../api/local-setup.md)** -- Stel de backend API lokaal in

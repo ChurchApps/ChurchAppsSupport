@@ -1,5 +1,6 @@
 ---
 title: "Plantillas de planes"
+description: "Guarda el orden del servicio y las posiciones de un plan de servicio como plantilla reutilizable en B1 Admin, y aplícala a planes futuros con un solo clic."
 ---
 
 # Plantillas de planes

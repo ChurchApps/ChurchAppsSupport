@@ -1,5 +1,6 @@
 ---
 title: "Settings"
+description: "Die Einstellungen von B1 Admin finden: Gemeindeinfos, Branding, Standorte, eigene Felder, Benutzerrollen und Navigation der B1.church-App."
 ---
 
 # Settings

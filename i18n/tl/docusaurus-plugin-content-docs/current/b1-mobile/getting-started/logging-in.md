@@ -1,5 +1,7 @@
 ---
-title: "Pag-log In"
+title: "Pag-log In sa B1 Mobile"
+sidebar_label: "Pag-log In"
+description: "Mag-sign in sa B1 Mobile gamit ang ChurchApps account, magparehistro ng bagong account, o bawiin ang nakalimutang password gamit ang 6-digit na code."
 ---
 
 # Pag-log In
@@ -13,7 +15,7 @@ Ang B1 Mobile ay gumagamit ng parehong ChurchApps account na ginagamit mo sa B1.
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [Mag-install ng B1 Mobile](./installing) sa iyong iOS o Android device
+- [Mag-install ng B1 Mobile](./installing.md) sa iyong iOS o Android device
 
 </div>
 
@@ -24,7 +26,7 @@ Ang B1 Mobile ay gumagamit ng parehong ChurchApps account na ginagamit mo sa B1.
 3. Magpasok ng iyong **email address** at **password**.
 4. I-tap ang **Sign In**.
 
-Pagkatapos mag-sign in, ikaw ay dadalhin sa [dashboard](../dashboard/). Kung hindi ka pa nag-select ng simbahan, ikaw ay itatagal na maghanap at pumili ng isa.
+Pagkatapos mag-sign in, ikaw ay dadalhin sa [dashboard](../dashboard/index.md). Kung hindi ka pa nag-select ng simbahan, ikaw ay itatagal na maghanap at pumili ng isa.
 
 ## Paglikha ng Bagong Account
 

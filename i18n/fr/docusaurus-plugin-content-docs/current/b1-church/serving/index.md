@@ -1,5 +1,7 @@
 ---
-title: "Service"
+title: "Service bénévole et inscriptions sur B1.church"
+sidebar_label: "Service"
+description: "Parcourez les postes de bénévolat sur B1.church, inscrivez-vous aux postes ouverts, consultez vos affectations et annulez avant la date limite."
 ---
 
 # Service
@@ -14,8 +16,8 @@ La section Service de B1.church vous permet de parcourir les opportunités de b�
 
 - **Parcourir les opportunités de bénévolat** -- Consultez les plans de service à venir qui ont des postes ouverts à pourvoir.
 - **S'inscrire à un poste** -- Choisissez un poste et inscrivez-vous en un seul clic.
-- **Consulter vos plans** -- Voyez vos [affectations de service](../plans/viewing-plans) à venir et passées.
-- **Répondre aux affectations** -- Acceptez ou refusez les postes auxquels vous êtes programmé, depuis la page Plans ou la section **Vous servez** de l'accueil. Si vos plans changent après avoir accepté, vous pouvez [refuser une affectation acceptée](../plans/viewing-plans#declining-an-accepted-assignment) jusqu'à la fin du service.
+- **Consulter vos plans** -- Voyez vos [affectations de service](../plans/viewing-plans.md) à venir et passées.
+- **Répondre aux affectations** -- Acceptez ou refusez les postes auxquels vous êtes programmé, depuis la page Plans ou la section **Vous servez** de l'accueil. Si vos plans changent après avoir accepté, vous pouvez [refuser une affectation acceptée](../plans/viewing-plans.md#declining-an-accepted-assignment) jusqu'à la fin du service.
 - **Annuler les inscriptions** -- Annulez une inscription volontaire si vos plans changent (avant la date limite).
 
 ## Fonctionnement
@@ -28,5 +30,5 @@ Seuls les postes que votre administrateur d'église a activés pour l'inscriptio
 
 ## En savoir plus
 
-- [Inscription des bénévoles](./volunteer-signup) -- Guide étape par étape pour parcourir et vous inscrire aux postes de bénévolat
-- [Consulter les plans](../plans/viewing-plans) -- Consultez vos plans de service assignés et leurs ordres de service
+- [Inscription des bénévoles](./volunteer-signup.md) -- Guide étape par étape pour parcourir et vous inscrire aux postes de bénévolat
+- [Consulter les plans](../plans/viewing-plans.md) -- Consultez vos plans de service assignés et leurs ordres de service

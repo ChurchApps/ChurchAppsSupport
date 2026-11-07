@@ -1,5 +1,6 @@
 ---
 title: "Gekureerde agenda"
+description: "Stel in B1 Admin een kerkbrede gecureerde agenda in met evenementen van meerdere groepen en deel die via je website, ICS-abonnement of download."
 ---
 
 # Gekureerde agenda
@@ -15,7 +16,7 @@ Een gekureerde agenda voegt events van meerdere groepen samen in één geünific
 
 - Stel de [groepen](../groups/creating-groups.md) in waarvan u events wilt opnemen
 - Zorg dat groepsleiders events hebben toegevoegd aan hun respectieve groepen
-- Maak uzelf vertrouwd met de basisprincipes van [Agenda's maken](creating-calendars)
+- Maak uzelf vertrouwd met de basisprincipes van [Agenda's maken](./creating-calendars.md)
 
 </div>
 
@@ -54,5 +55,5 @@ Wanneer groepsleiders nieuwe events toevoegen aan hun [groepen](../groups/creati
 
 ## Volgende stappen
 
-- [Agenda's maken](creating-calendars) -- Leer de basisprincipes van agendaamaking
-- [Agenda's overzicht](./) -- Terug naar het overzicht van agenda's
+- [Agenda's maken](./creating-calendars.md) -- Leer de basisprincipes van agendaamaking
+- [Agenda's overzicht](./index.md) -- Terug naar het overzicht van agenda's

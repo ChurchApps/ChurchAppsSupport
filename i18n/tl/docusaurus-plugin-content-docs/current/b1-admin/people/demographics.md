@@ -1,5 +1,6 @@
 ---
 title: "Demograpiko"
+description: "Tingnan ang edad, kasarian, membership, marital status, at campus ng kongregasyon sa mga interactive chart ng B1 Admin, at himayin ang anumang grupo."
 ---
 
 # Demograpiko

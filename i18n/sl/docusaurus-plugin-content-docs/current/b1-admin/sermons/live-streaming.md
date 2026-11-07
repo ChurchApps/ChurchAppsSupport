@@ -1,5 +1,7 @@
 ---
-title: "Live Streaming"
+title: "Časi in nastavitev prenosov v živo v B1 Admin"
+sidebar_label: "Live Streaming"
+description: "V B1 Admin načrtujte tedenske ali enkratne prenose v živo, nastavite klepet in čas zgodnjega predvajanja, povežite kanal YouTube ter odpravite težave z vdelavo."
 ---
 
 # Live Streaming
@@ -19,7 +21,7 @@ Stran Live Stream Times vam omogoča, da nastavite urnik pretakanja vaše cerkve
 
 - Potrebujete dovoljenje **contentApi.streamingServices.edit**. Če nimate dostopa, glejte [Vloge in dovoljenja](../settings/roles-permissions.md).
 - Pripravite ID vašega kanala YouTube, če nameravate uporabljati samodejno živo pretakanje
-- Dodajte vsaj eno [pridigo](managing-sermons) ali trajni živi URL, ki bo služil kot vir pretakanja
+- Dodajte vsaj eno [pridigo](./managing-sermons.md) ali trajni živi URL, ki bo služil kot vir pretakanja
 
 </div>
 
@@ -80,13 +82,13 @@ ID vašega kanala YouTube najdete v naprednih nastavitvah vašega kanala YouTube
 
 ## Prilagoditev barv in logotipa
 
-Vaša stran za živo pretakanje uporablja nastavitve [videza](../website/appearance) vaše spletne strani:
+Vaša stran za živo pretakanje uporablja nastavitve [videza](../website/appearance.md) vaše spletne strani:
 
 - Za glavo se uporablja **svetla poudarna barva** s temnim besedilom.
 - Za stransko vrstico se uporablja **temna poudarna barva** s svetlim besedilom.
 - Na strani za pretakanje se prikaže vaš **Light Background Logo**. Uporabite sliko sprozornim ozadjem in razmerjem stranic 4:1.
 
-Če želite to spremeniti, pojdite na **Website**, nato na **Appearance** in posodobite nastavitve [barvne palete](../website/appearance#color-palette) in [logotipa](../website/appearance#logo-and-branding).
+Če želite to spremeniti, pojdite na **Website**, nato na **Appearance** in posodobite nastavitve [barvne palete](../website/appearance.md#color-palette) in [logotipa](../website/appearance.md#logo-and-branding).
 
 ## Dodajanje voditeljev pretakanja
 
@@ -133,5 +135,5 @@ Samodejna vdelava živega prenosa kanala YouTube se lahko blokira, če je v vaš
 
 ## Naslednji koraki
 
-- [Upravljanje pridig](managing-sermons) -- dodajanje pridig v vašo knjižnico
-- [Seznami predvajanja](playlists) -- razvrščanje pridig v serije
+- [Upravljanje pridig](./managing-sermons.md) -- dodajanje pridig v vašo knjižnico
+- [Seznami predvajanja](./playlists.md) -- razvrščanje pridig v serije

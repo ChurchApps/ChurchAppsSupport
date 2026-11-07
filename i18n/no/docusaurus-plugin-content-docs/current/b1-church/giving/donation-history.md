@@ -1,5 +1,7 @@
 ---
-title: "Gavehistorikk"
+title: "Gavehistorikk og oversikter i B1.church"
+sidebar_label: "Gavehistorikk"
+description: "Se tidligere gaver, filtrer etter år og skriv ut gaveoversikter til skatt fra Giving-siden i B1.church-medlemsportalen."
 ---
 
 # Gavehistorikk

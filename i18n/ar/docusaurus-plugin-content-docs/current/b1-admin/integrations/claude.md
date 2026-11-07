@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "اربط B1 Admin بـ Claude لتسأل عن الحضور والعطاء والمجموعات بلغة بسيطة، مع خيار تسجيل الدخول وخيار مفتاح بصلاحيات محدودة."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ claude mcp add --scope user --transport http b1 https://api.churchapps.org/mcp \
 
 - [API Keys](/docs/developer/api/api-keys) — المرجع الكامل للنطاقات
 - [MCP Server (developer reference)](/docs/developer/api/mcp) — تفاصيل البروتوكول ومخططات الأدوات
-- [ChatGPT](./chatgpt) — الفكرة نفسها، لنماذج OpenAI
+- [ChatGPT](./chatgpt.md) — الفكرة نفسها، لنماذج OpenAI

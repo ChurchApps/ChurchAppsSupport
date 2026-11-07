@@ -1,5 +1,6 @@
 ---
 title: "Özel Alanlar"
+description: "Arka plan kontrolü son geçerlilik tarihleri veya tişört bedenleri gibi ek kişi bilgilerini takip etmek için B1 Admin'de özel alanlar tanımlayın; ardından bunlarda arama ve filtreleme yapın."
 ---
 
 # Özel Alanlar

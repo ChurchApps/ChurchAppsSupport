@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "اربط B1 Admin بـ Zapier لبدء الأتمتة عند إضافة أشخاص أو تبرعات أو أعضاء مجموعات، وكتابة السجلات مرة أخرى إلى B1 دون الحاجة إلى برمجة."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ title: "Zapier"
 ### نشر التبرعات في قناة Slack ببطاقة أغنى من الموصل المدمج
 
 - **المشغّل** — B1: New Donation
-- **الإجراء** — Slack: Send Channel Message. صمّم أي تخطيط تريده، من أزرار ومرفقات وغيرها، مما لا يستطيع [موصل Slack](./slack-discord) المدمج تقديمه.
+- **الإجراء** — Slack: Send Channel Message. صمّم أي تخطيط تريده، من أزرار ومرفقات وغيرها، مما لا يستطيع [موصل Slack](./slack-discord.md) المدمج تقديمه.
 
 ### إضافة أعضاء المجموعات الجدد إلى Google Group
 
@@ -106,6 +107,6 @@ title: "Zapier"
 
 ## انظر أيضًا
 
-- [Make](./make) — النمط نفسه على منصة مختلفة
-- [Slack & Discord](./slack-discord) — إشعارات دردشة أبسط بدون Zapier
+- [Make](./make.md) — النمط نفسه على منصة مختلفة
+- [Slack & Discord](./slack-discord.md) — إشعارات دردشة أبسط بدون Zapier
 - [Webhooks (developer reference)](/docs/developer/api/webhooks)

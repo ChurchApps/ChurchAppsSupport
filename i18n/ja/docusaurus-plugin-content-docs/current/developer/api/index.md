@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "ChurchApps API のモジュラーモノリス設計、6 つのデータモジュール、技術スタック、ポート、Lambda 関数を説明します。開発者向けに、セットアップ、データベース、認証、エンドポイントのドキュメントへのリンクも掲載しています。"
 ---
 
 # API
@@ -52,8 +53,8 @@ AWSにデプロイされると、APIは6つのLambda関数として動作しま�
 
 APIは、ChurchAppsの共有パッケージ2つに依存しています。
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- 基本的なユーティリティ（DateHelper、ApiHelperなど）
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- 認証、データベースヘルパー、AWS連携を含むExpressサーバー用のユーティリティ
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- 基本的なユーティリティ（DateHelper、ApiHelperなど）
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- 認証、データベースヘルパー、AWS連携を含むExpressサーバー用のユーティリティ
 
 :::info
 APIはES modulesを使用しています（`package.json`に`"type": "module"`が設定されています）。インポートはES modulesの構文で記述してください。
@@ -61,11 +62,11 @@ APIはES modulesを使用しています（`package.json`に`"type": "module"`�
 
 ## このセクションの内容
 
-- **[ローカルセットアップ](./local-setup)** -- APIのクローン、設定、ローカルでの実行
-- **[データベース](./database)** -- モジュールごとのデータベース構成、スキーマスクリプト、データアクセスのパターン
-- **[モジュール構造](./module-structure)** -- コントローラー、リポジトリ、モデル、認証
-- **[APIキー](./api-keys)** -- スクリプトやコネクタ用の個人アクセストークン
-- **[接続済みアプリ（OAuth）](./connected-apps)** -- サードパーティアプリ向けのマルチテナントOAuthフロー
-- **[Webhook](./webhooks)** -- 外部システムへのイベント通知の送信
-- **[MCPサーバー](./mcp)** -- APIをAIアシスタントに公開するModel Context Protocolエンドポイント
-- **[エンドポイントリファレンス](./endpoints/)** -- すべてのモジュールのREST API完全ドキュメント
+- **[ローカルセットアップ](./local-setup.md)** -- APIのクローン、設定、ローカルでの実行
+- **[データベース](./database.md)** -- モジュールごとのデータベース構成、スキーマスクリプト、データアクセスのパターン
+- **[モジュール構造](./module-structure.md)** -- コントローラー、リポジトリ、モデル、認証
+- **[APIキー](./api-keys.md)** -- スクリプトやコネクタ用の個人アクセストークン
+- **[接続済みアプリ（OAuth）](./connected-apps.md)** -- サードパーティアプリ向けのマルチテナントOAuthフロー
+- **[Webhook](./webhooks.md)** -- 外部システムへのイベント通知の送信
+- **[MCPサーバー](./mcp.md)** -- APIをAIアシスタントに公開するModel Context Protocolエンドポイント
+- **[エンドポイントリファレンス](./endpoints/index.md)** -- すべてのモジュールのREST API完全ドキュメント

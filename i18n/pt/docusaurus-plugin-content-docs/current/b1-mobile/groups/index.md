@@ -1,5 +1,7 @@
 ---
-title: "Grupos"
+title: "Tela de Grupos no B1 Mobile"
+sidebar_label: "Grupos"
+description: "Encontre os grupos dos quais você faz parte na tela Grupos do B1 Mobile, com o grupo mais visitado no topo e os demais grupos da igreja abaixo."
 ---
 
 # Grupos
@@ -30,10 +32,10 @@ Veja o que você pode fazer a partir da tela de Grupos:
 - **Manter-se conectado** -- Veja o que os membros do seu grupo estão compartilhando, acompanhe as conversas e interaja com o conteúdo do grupo.
 
 :::tip
-A tela de Grupos se adapta ao seu uso, assim como o [painel](../dashboard/). Os grupos que você mais visita são colocados no topo para acesso rápido.
+A tela de Grupos se adapta ao seu uso, assim como o [painel](../dashboard/index.md). Os grupos que você mais visita são colocados no topo para acesso rápido.
 :::
 
 ## Próximos passos
 
-- [Detalhes do grupo](./group-details) -- Veja o que há na página de detalhes de um grupo
-- [Linha do tempo do grupo](./group-timeline) -- Saiba mais sobre o feed de atividades unificado dos seus grupos
+- [Detalhes do grupo](./group-details.md) -- Veja o que há na página de detalhes de um grupo
+- [Linha do tempo do grupo](./group-timeline.md) -- Saiba mais sobre o feed de atividades unificado dos seus grupos

@@ -1,5 +1,6 @@
 ---
 title: "Understøttelse af flere valutaer"
+description: "Registrér og rapportér donationer i forskellige valutaer i B1 Admin, herunder manuel indtastning, online gaver via Stripe og omregning af samlede totaler."
 ---
 
 # Understøttelse af flere valutaer

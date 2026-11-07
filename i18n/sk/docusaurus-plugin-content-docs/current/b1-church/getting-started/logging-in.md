@@ -1,5 +1,7 @@
 ---
-title: "Prihlásenie"
+title: "Prihlásenie do B1.church a členského portálu"
+sidebar_label: "Prihlásenie"
+description: "Prihláste sa do členského portálu B1.church, použite dvojfaktorové kódy alebo SSO, obnovte zabudnuté heslo a odhláste sa z ponuky účtu."
 ---
 
 # Prihlásenie
@@ -17,7 +19,7 @@ Prihlásenie na B1.church vám umožní prístup k portálu pre členov, kde mô
 <div class="prereqs">
 <h4>Predtým, než začnete</h4>
 
-- Potrebujete účet ChurchApps. Ako si ho vytvoriť, nájdete v článku [Začíname](../getting-started/).
+- Potrebujete účet ChurchApps. Ako si ho vytvoriť, nájdete v článku [Začíname](./index.md).
 - Potrebujete webovú adresu B1.church vašej cirkvi (napríklad `https://nazovvasejcirkvi.b1.church`).
 
 </div>
@@ -39,7 +41,7 @@ Zostanete prihlásený v rovnakom prehliadači alebo nainštalovanej aplikácii,
 
 ## Prístup k portálu pre členov
 
-Po prihlásení sa k portálu pre členov dostanete kliknutím na svoje **meno** v pravom hornom rohu stránky a výberom možnosti **Portál pre členov** z menu. Portál pre členov obsahuje všetky vaše osobné nástroje cirkvi, vrátane [domovskej nástenky](./navigating.md), [stránky Ja](./me-page.md), [skupín](../groups/), [darovania](../giving/) a ďalších.
+Po prihlásení sa k portálu pre členov dostanete kliknutím na svoje **meno** v pravom hornom rohu stránky a výberom možnosti **Portál pre členov** z menu. Portál pre členov obsahuje všetky vaše osobné nástroje cirkvi, vrátane [domovskej nástenky](./navigating.md), [stránky Ja](./me-page.md), [skupín](../groups/index.md), [darovania](../giving/index.md) a ďalších.
 
 ## Vaše používateľské menu
 

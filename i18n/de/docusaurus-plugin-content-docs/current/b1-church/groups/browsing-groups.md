@@ -1,5 +1,6 @@
 ---
 title: "Gruppen durchstöbern"
+description: "Durchsuchen Sie die öffentlichen Gruppen Ihrer Gemeinde auf B1.church nach Kategorie. Vergleichen Sie Termine, Orte und Beschreibungen auf den Karten."
 ---
 
 # Gruppen durchstöbern

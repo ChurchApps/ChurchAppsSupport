@@ -1,5 +1,6 @@
 ---
 title: "Értesítések és emlékeztetők architektúrája"
+description: "Hogyan irányítja a B1 Admin API az értesítéseket, az ütemezett emlékeztetőket, a gyülekezeti e-mail-korlátokat és az SMS-leiratkozásokat egyetlen kézbesítési csatornán és preferencia-kapun keresztül."
 ---
 
 # Értesítések és emlékeztetők architektúrája
@@ -185,6 +186,6 @@ Helyben ugyanez a logika igény szerint is elindítható az `Api` projektből: `
 
 ## Kapcsolódó oldalak
 
-- [Valós idejű architektúra](../realtime) — a WebSocket-protokoll és a kliensoldali primitívek (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), amelyekre az alkalmazáson belüli kézbesítési szint épül
-- [Web Push értesítések](../web-push) — VAPID-beállítás és a böngésző Push API útvonala, amelyet a push-szint használ
-- [Üzenetküldési végpontok](../api/endpoints/messaging) — a teljes REST-felület az üzenetekhez, beszélgetésekhez, kapcsolatokhoz, valamint az értesítési és emlékeztető-útvonalakhoz
+- [Valós idejű architektúra](../realtime.md) — a WebSocket-protokoll és a kliensoldali primitívek (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), amelyekre az alkalmazáson belüli kézbesítési szint épül
+- [Web Push értesítések](../web-push.md) — VAPID-beállítás és a böngésző Push API útvonala, amelyet a push-szint használ
+- [Üzenetküldési végpontok](../api/endpoints/messaging.md) — a teljes REST-felület az üzenetekhez, beszélgetésekhez, kapcsolatokhoz, valamint az értesítési és emlékeztető-útvonalakhoz

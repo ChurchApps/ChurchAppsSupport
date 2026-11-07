@@ -1,5 +1,7 @@
 ---
-title: "Narių katalogas"
+title: "Narių katalogas B1.church narių portale"
+sidebar_label: "Narių katalogas"
+description: "Ieškokite ir naršykite bažnyčios narius B1.church kataloge, peržiūrėkite jų profilius ir namų ūkio narius bei sužinokite, kas gali pasiekti katalogą."
 ---
 
 # Narių katalogas

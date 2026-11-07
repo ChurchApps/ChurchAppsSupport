@@ -1,5 +1,7 @@
 ---
-title: "Ordine di culto"
+title: "Dettagli dell'ordine di culto nell'app B1.church"
+sidebar_label: "Ordine di culto"
+description: "Visualizza l'ordine di culto di un piano nell'app B1.church, con tempi cumulativi, testi, trasposizione delle tonalità e anteprime delle lezioni per il team."
 ---
 
 # Ordine di culto

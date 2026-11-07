@@ -1,5 +1,6 @@
 ---
 title: Uvod v B1.church
+description: "Vodnik za prijavo v B1 Admin, orientacijo po nadzorni plošči in meniju Jump ter nastavitev podatkov o cerkvi pred raziskovanjem drugih orodij."
 ---
 
 # Dobrodošli v B1.church Admin!
@@ -34,7 +35,7 @@ Za dodatno pomoč pišite na [support@churchapps.org](mailto:support@churchapps.
 10. Zdaj lahko vstopite v B1.church prek **member portal** ali **admin portal**. Member portal vam omogoča, da vidite, kako B1.church izgleda vašim članom, si ogledate svoje skupine in upravljate svoje osebne donacije.
 
 :::tip
-Začnite na strani [Settings](./settings/) in nastavite ime cerkve, blagovno podobo in dovoljenja za ekipo. Tako bo vse, kar nastavite pozneje, pravilno prikazano.
+Začnite na strani [Settings](./settings/index.md) in nastavite ime cerkve, blagovno podobo in dovoljenja za ekipo. Tako bo vse, kar nastavite pozneje, pravilno prikazano.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -81,9 +82,9 @@ Iskanje je pogosto najhitrejši način, da pridete do strani -- vnesite del imen
 
 Po ogledu tega uvoda raziščite te ključne funkcije:
 
-- [Dodajanje oseb](./people/adding-people) -- Naučite se, kako dodati člane v svojo bazo podatkov
-- [Groups](./groups/) -- Nastavite in upravljajte cerkvene skupine
-- [Serving Plans](./serving/plans) -- Organizirajte svojo službo
-- [Attendance](./attendance/) -- Spremljajte udeležbo in prijave
-- [Website](./website/) -- Zgradite in prilagodite spletno stran svoje cerkve
-- [Settings](./settings/) -- Nastavite podatke o cerkvi in dovoljenja
+- [Dodajanje oseb](./people/adding-people.md) -- Naučite se, kako dodati člane v svojo bazo podatkov
+- [Groups](./groups/index.md) -- Nastavite in upravljajte cerkvene skupine
+- [Serving Plans](./serving/plans.md) -- Organizirajte svojo službo
+- [Attendance](./attendance/index.md) -- Spremljajte udeležbo in prijave
+- [Website](./website/index.md) -- Zgradite in prilagodite spletno stran svoje cerkve
+- [Settings](./settings/index.md) -- Nastavite podatke o cerkvi in dovoljenja

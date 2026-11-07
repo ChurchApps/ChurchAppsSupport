@@ -1,5 +1,6 @@
 ---
 title: "Meldinger"
+description: "Start, les, rediger og slett private samtaler med menighetsmedlemmer i B1 Mobile, og finn folk via medlemskatalogen."
 ---
 
 # Meldinger
@@ -13,7 +14,7 @@ B1 Mobile har innebygd privat meldingsfunksjon, slik at du kan ha samtaler med a
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- [Installer B1 Mobile](../getting-started/installing.md) og [logg inn](../getting-started/logging-in.md) på kontoen din
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile har innebygd privat meldingsfunksjon, slik at du kan ha samtaler med a
 ## Starte en ny samtale
 
 1. Trykk på alternativet for å starte en ny samtale på meldingsskjermen.
-2. Bruk søkefeltet til å finne medlemmet du vil skrive til. Du kan også finne medlemmer via [Medlemskatalogen](./member-directory).
+2. Bruk søkefeltet til å finne medlemmet du vil skrive til. Du kan også finne medlemmer via [Medlemskatalogen](./member-directory.md).
 3. Velg medlemmet fra søkeresultatene.
 4. Skriv meldingen din og trykk på **Send**.
 
@@ -52,11 +53,11 @@ Bruk meldinger til å koordinere med andre frivillige, følge opp noen du møtte
 :::
 
 :::info
-Aktiver [push-varsler](./notifications) for å få beskjed når noen sender deg en ny melding, selv når appen ikke er åpen.
+Aktiver [push-varsler](./notifications.md) for å få beskjed når noen sender deg en ny melding, selv når appen ikke er åpen.
 :::
 
 ## Relaterte artikler
 
-- [Medlemskatalog](./member-directory) -- Finn medlemmer å skrive til
-- [Varsler](./notifications) -- Få beskjed om nye meldinger
-- [Grupper](../groups/) -- Delta i gruppesamtaler
+- [Medlemskatalog](./member-directory.md) -- Finn medlemmer å skrive til
+- [Varsler](./notifications.md) -- Få beskjed om nye meldinger
+- [Grupper](../groups/index.md) -- Delta i gruppesamtaler

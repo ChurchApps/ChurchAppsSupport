@@ -1,5 +1,6 @@
 ---
 title: "Cadastro de visitantes"
+description: "Cadastre você e sua família como visitantes pela primeira vez com o formulário QR do B1 Checkin, para que os voluntários possam fazer seu check-in na chegada."
 ---
 
 # Cadastro de visitantes
@@ -22,7 +23,7 @@ Se você está visitando uma igreja pela primeira vez, pode se cadastrar como vi
 
 O cadastro de visitantes foi pensado para visitantes que ainda não têm uma conta. No quiosque de check-in da igreja, toque em **Cadastrar como visitante** para exibir um QR code que leva à página de cadastro. Você também pode receber o link de um voluntário ou recepcionista, ou encontrá-lo em um panfleto ou no site da igreja.
 
-Não tem o celular à mão? Na mesma janela do QR code do quiosque, toque em **Cadastrar aqui** para preencher o formulário no próprio quiosque. Veja [Cadastrando-se como visitante](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest) para saber como isso funciona no quiosque.
+Não tem o celular à mão? Na mesma janela do QR code do quiosque, toque em **Cadastrar aqui** para preencher o formulário no próprio quiosque. Veja [Cadastrando-se como visitante](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) para saber como isso funciona no quiosque.
 
 A página abre com o título **Cadastro de visitantes**. Se a igreja tiver adicionado uma foto de cabeçalho, ela aparece no topo da página; caso contrário, você verá um pequeno ícone.
 
@@ -51,7 +52,7 @@ O seu cadastro cria registros no banco de dados da igreja:
 - São criados **registros de pessoa** para cada membro da família, com a situação de membro "Visitante".
 - Quaisquer comentários que você informou são salvos como uma nota no registro do contato principal, para que a equipe da igreja possa lê-los.
 - Se a igreja tiver escolhido um grupo para os novos visitantes, a sua família é adicionada a ele. A igreja também pode registrar a sua presença automaticamente, caso você se cadastre durante um dos horários agendados desse grupo.
-- Um voluntário ou administrador da igreja pode então fazer o check-in da sua família pelo quiosque do [B1 Checkin](../../b1-checkin/check-in/looking-up-members).
+- Um voluntário ou administrador da igreja pode então fazer o check-in da sua família pelo quiosque do [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md).
 
 :::info
 Se você se cadastrar novamente com o mesmo primeiro nome e o mesmo e-mail ou telefone, os registros da igreja reconhecem você e reutilizam o seu perfil existente, em vez de criar uma duplicata. Qualquer outra pessoa é adicionada como nova. Se você já se cadastrou, também pode simplesmente pesquisar o seu nome ou número de telefone no quiosque.
@@ -63,6 +64,6 @@ Se o formulário pedir o seu endereço de e-mail, informá-lo ajuda a igreja a f
 
 ## Artigos relacionados
 
-- [Self check-in](./self-checkin) -- Faça o seu próprio check-in depois de se cadastrar
-- [Adicionando visitantes (quiosque)](../../b1-checkin/check-in/adding-guests) -- Como os voluntários adicionam visitantes no quiosque
-- [Check-in](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- Como os administradores da igreja configuram o cadastro de visitantes por QR code
+- [Self check-in](./self-checkin.md) -- Faça o seu próprio check-in depois de se cadastrar
+- [Adicionando visitantes (quiosque)](../../b1-checkin/check-in/adding-guests.md) -- Como os voluntários adicionam visitantes no quiosque
+- [Check-in](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Como os administradores da igreja configuram o cadastro de visitantes por QR code

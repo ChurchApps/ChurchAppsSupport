@@ -1,5 +1,7 @@
 ---
-title: "Detalles del grupo"
+title: "Detalles del grupo en el portal de miembros de B1.church"
+sidebar_label: "Detalles del grupo"
+description: "Encuentre, abra y gestione la página de detalles de un grupo vista para miembros en B1.church de B1 Admin: vea eventos, reuniones, formularios y miembros, y únase o solicite unirse."
 ---
 
 # Detalles del grupo

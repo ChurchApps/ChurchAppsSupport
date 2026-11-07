@@ -1,5 +1,6 @@
 ---
 title: "Yoklama Girişi ve Eğilim"
+description: "Adlı liste olmadan B1 Admin'de bir hizmet ya da grup için toplam katılımcı sayısı girin ve bu toplamları Headcount Trend raporunda haftalık olarak izleyin."
 ---
 
 # Yoklama Girişi ve Eğilim

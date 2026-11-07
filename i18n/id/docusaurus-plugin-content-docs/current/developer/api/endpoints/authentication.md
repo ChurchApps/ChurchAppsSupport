@@ -1,5 +1,6 @@
 ---
 title: "Autentikasi & Izin"
+description: "Referensi login JWT, masuk dua faktor, alur OAuth 2.0, dan model izin API ChurchApps bagi pengembang yang membangun integrasi."
 ---
 
 # Autentikasi & Izin
@@ -244,7 +245,7 @@ Untuk perangkat tanpa browser (aplikasi TV, kiosk):
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Mengambil klien berdasarkan client ID (secret disembunyikan) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Membuat atau memperbarui klien |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Menghapus klien |
-| POST | `/membership/oauth/register` | Publik | — | Pendaftaran klien dinamis (RFC 7591) untuk klien publik seperti konektor MCP. Lihat [Aplikasi Terhubung](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Publik | — | Pendaftaran klien dinamis (RFC 7591) untuk klien publik seperti konektor MCP. Lihat [Aplikasi Terhubung](../connected-apps.md#dynamic-client-registration) |
 
 ### Endpoint Persetujuan Perangkat
 
@@ -265,5 +266,5 @@ Dalam tabel endpoint di seluruh dokumentasi ini, keduanya ditandai masing-masing
 
 ## Halaman Terkait
 
-- [Struktur Modul](../module-structure) — Cara controller, repository, dan model diorganisasi
-- [Pengaturan Lokal](../local-setup) — Menjalankan API secara lokal untuk pengembangan
+- [Struktur Modul](../module-structure.md) — Cara controller, repository, dan model diorganisasi
+- [Pengaturan Lokal](../local-setup.md) — Menjalankan API secara lokal untuk pengembangan

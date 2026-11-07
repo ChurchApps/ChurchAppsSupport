@@ -1,5 +1,7 @@
 ---
-title: "Plačilo darila"
+title: "Kako darovati v B1 Mobile"
+sidebar_label: "Plačilo darila"
+description: "Darujte cerkvi na zavihku Darovanje v B1 Mobile: izberite sklad, vnesite znesek, plačajte s Stripe in hitro ponovite pretekle darove."
 ---
 
 # Plačilo darila
@@ -13,8 +15,8 @@ Darovanje prek aplikacije B1 Mobile je hitro in preprosto. Zavihek **Donate** v 
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite aplikacijo B1 Mobile](../getting-started/installing) in se [prijavite](../getting-started/logging-in) v svoj račun
-- Pripravite kreditno ali debetno kartico ali vnaprej [shranite način plačila](./managing-payments)
+- [Namestite aplikacijo B1 Mobile](../getting-started/installing.md) in se [prijavite](../getting-started/logging-in.md) v svoj račun
+- Pripravite kreditno ali debetno kartico ali vnaprej [shranite način plačila](./managing-payments.md)
 
 </div>
 
@@ -42,10 +44,10 @@ Pred oddajo še enkrat preverite znesek darila in sklad. Darila se obdelajo tako
 Če želite darovati enak znesek kot pri zadnjem darilu, vam ni treba znova prehoditi celotnega postopka. Zavihek **Overview** prikazuje vaše zadnje darilo skupaj z gumbom **Repeat**. Tapnite ga, da hitro ponovno oddate isto darilo.
 
 :::tip
-Če nameravate redno darovati, shranite svoj način plačila na zavihku **Manage**, da boste naslednjič lahko darovali še hitreje. Podrobnosti najdete v članku [Upravljanje načinov plačila](./managing-payments).
+Če nameravate redno darovati, shranite svoj način plačila na zavihku **Manage**, da boste naslednjič lahko darovali še hitreje. Podrobnosti najdete v članku [Upravljanje načinov plačila](./managing-payments.md).
 :::
 
 ## Sorodni članki
 
-- [Upravljanje načinov plačila](./managing-payments) -- Shranite kartico za hitrejše darovanje v prihodnje
-- [Zgodovina darovanj](./donation-history) -- Oglejte si povzetek darovanj in pretekla darila
+- [Upravljanje načinov plačila](./managing-payments.md) -- Shranite kartico za hitrejše darovanje v prihodnje
+- [Zgodovina darovanj](./donation-history.md) -- Oglejte si povzetek darovanj in pretekla darila

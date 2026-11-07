@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "Prijunkite B1 Admin prie Google Sheets su B1 Export priedu, kad pagal poreikį įkeltumėte Žmones, Aukas, Grupes ir Lankomumą į skaičiuoklių lapus."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ Eksportas vykdomas fone jūsų Google paskyroje. Jei API raktas pakeičiamas arb
 - **„B1 rejected the API key (401)“**: raktas panaikintas arba neteisingas. Sukurkite naują ir įklijuokite jį iš naujo.
 - **„This API key lacks permission for /giving/donations (403)“**: raktui trūksta `donations:read` teisės. Atnaujinkite rakto teises B1Admin programoje.
 - **Lapas neatsinaujina po eksporto**: įsitikinkite, kad žiūrite į *teisingą* skirtuko pavadinimą (`B1 People` ir pan.). Eksportas sukuria skirtuką, jei jo nebuvo.
-- **„Quota exceeded“**: Apps Script nustato kiekvieno naudotojo dienines `UrlFetchApp` kvotas (paprastai tūkstančius iškvietimų per dieną). Didelei bažnyčiai su daugybe įrašų gali reikėti padalyti eksportus į kelias dienas arba naudoti [Make](./make) ar pritaikytą integraciją didelės apimties sinchronizacijai.
+- **„Quota exceeded“**: Apps Script nustato kiekvieno naudotojo dienines `UrlFetchApp` kvotas (paprastai tūkstančius iškvietimų per dieną). Didelei bažnyčiai su daugybe įrašų gali reikėti padalyti eksportus į kelias dienas arba naudoti [Make](./make.md) ar pritaikytą integraciją didelės apimties sinchronizacijai.
 
 ## Priedo pritaikymas
 
@@ -108,6 +109,6 @@ Priedas yra atvirojo kodo. Apps Script projektas laikomas `B1Integrations/Google
 
 ## Taip pat žr.
 
-- [Zapier](./zapier): sinchronizacijai realiu laiku, o ne eksportui pagal poreikį
-- [Make](./make): sinchronizacijai su sudėtingesnėmis transformacijomis
+- [Zapier](./zapier.md): sinchronizacijai realiu laiku, o ne eksportui pagal poreikį
+- [Make](./make.md): sinchronizacijai su sudėtingesnėmis transformacijomis
 - [API raktai (kūrėjo žinynas)](/docs/developer/api/api-keys)

@@ -1,5 +1,6 @@
 ---
 title: "Formos"
+description: "Raskite, filtruokite, redaguokite, archyvuokite ir atkurkite formas B1 Admin, taip pat kur nustatyti formos narius ir peržiūrėti atsakymus."
 ---
 
 # Formos

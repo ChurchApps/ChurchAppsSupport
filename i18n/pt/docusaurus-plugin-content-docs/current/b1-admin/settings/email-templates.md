@@ -1,5 +1,6 @@
 ---
 title: "Modelos de e-mail"
+description: "Configure modelos de e-mail e mensagens de texto no B1 Admin, com campos de mesclagem, opções de SMS e visualizações para comunicação em massa."
 ---
 
 # Modelos de e-mail

@@ -1,5 +1,6 @@
 ---
 title: "Proveedor de contenido para FreePlay"
+description: "Lo que un proveedor de contenido debe ofrecer para conectar una biblioteca de lecciones a FreePlay: logotipo, inicio de sesión, catálogo, listas y formatos."
 ---
 
 # Proveedor de contenido para FreePlay

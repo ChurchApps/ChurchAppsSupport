@@ -1,5 +1,6 @@
 ---
 title: "Dizaineris: registracijos etikečių dizainas"
+description: "Pritaikykite B1 Admin registracijos metu spausdinamų vardinių ženkliukų ir atsiėmimo lapelių šablonus: laukus, pozicionavimą, gimtadienio ar pastabų sąlygas."
 ---
 
 # Dizaineris: registracijos etikečių dizainas
@@ -13,8 +14,8 @@ Etikečių dizaineris leidžia kurti ir tinkinti vardelių bei atsiėmimo lapeli
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Nustatykite [Lankomumą](setup) ir sukonfigūruokite bent vieną pamaldų laiką su įjungta registracija
-- Nustatykite [Registraciją](check-in), kad etiketės būtų spausdinamos
+- Nustatykite [Lankomumą](./setup.md) ir sukonfigūruokite bent vieną pamaldų laiką su įjungta registracija
+- Nustatykite [Registraciją](./check-in.md), kad etiketės būtų spausdinamos
 - Jums reikalinga administratoriaus prieiga prie Lankomumo skilties
 
 </div>
@@ -85,6 +86,6 @@ Po šablono redagavimo atspausdinkite bandomąjį egzempliorių, kad prieš kita
 
 ## Susiję straipsniai
 
-- [Registracijos sąranka](setup) — pamaldų ir grupių konfigūravimas registracijai
-- [Registracijos užbaigimas](check-in) — šeimų registracijos eiga
-- [B1 Checkin pradžia](../../b1-checkin/getting-started/) — Checkin kioskų programa
+- [Registracijos sąranka](./setup.md) — pamaldų ir grupių konfigūravimas registracijai
+- [Registracijos užbaigimas](./check-in.md) — šeimų registracijos eiga
+- [B1 Checkin pradžia](../../b1-checkin/getting-started/index.md) — Checkin kioskų programa

@@ -1,5 +1,7 @@
 ---
-title: "Preken"
+title: "Preken bekijken op je B1.church-website"
+sidebar_label: "Preken"
+description: "Bekijk opgenomen preken uit de bibliotheek van je kerk op de B1.church-site, gegroepeerd in series of afspeellijsten. Inloggen is niet nodig."
 ---
 
 # Preken

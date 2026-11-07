@@ -1,5 +1,6 @@
 ---
 title: "Gruppmedlemmar"
+description: "Lägg till, ta bort och utse ledare för gruppmedlemmar i B1 Admin och maila, sms:a, skriv ut eller exportera medlemslistan från gruppsidan."
 ---
 
 # Gruppmedlemmar

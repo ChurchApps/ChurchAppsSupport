@@ -1,5 +1,6 @@
 ---
 title: "Zadávanie počtu účastníkov a trend"
+description: "Zadajte celkový počet účastníkov bohoslužby alebo skupiny v B1 Admin bez mena v zozname a sledujte súčty týždeň po týždni v správe Headcount Trend."
 ---
 
 # Zadávanie počtu účastníkov a trend

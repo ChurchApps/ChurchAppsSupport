@@ -1,5 +1,6 @@
 ---
 title: "Yoklama Uç Noktaları"
+description: "B1 Admin ve B1 Checkin yoklama API'si: kampüsler, hizmetler, hizmet saatleri, oturumlar, ziyaretler, check-in kuralları ve dışa aktarma uç noktaları."
 ---
 
 # Yoklama Uç Noktaları
@@ -270,6 +271,6 @@ Bireylerin yoklama serilerini izler -- bir kişinin katıldığı ardışık haf
 
 ## İlgili Sayfalar
 
-- [Üyelik Uç Noktaları](./membership) — Kişiler, gruplar, roller ve kilise yönetimi
-- [Kimlik Doğrulama ve İzinler](./authentication) — Oturum açma akışı, JWT, izin modeli
-- [Modül Yapısı](../module-structure) — Kod organizasyon kalıpları
+- [Üyelik Uç Noktaları](./membership.md) — Kişiler, gruplar, roller ve kilise yönetimi
+- [Kimlik Doğrulama ve İzinler](./authentication.md) — Oturum açma akışı, JWT, izin modeli
+- [Modül Yapısı](../module-structure.md) — Kod organizasyon kalıpları

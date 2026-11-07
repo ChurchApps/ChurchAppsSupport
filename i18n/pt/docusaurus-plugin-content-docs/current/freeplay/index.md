@@ -1,5 +1,6 @@
 ---
 title: "Visão Geral do FreePlay"
+description: "Visão geral do FreePlay, app de TV para salas de aula com reprodução offline de lições em Android TV, Fire TV e Apple TV, e links para os guias de instalação."
 ---
 
 # Visão Geral do FreePlay
@@ -22,10 +23,10 @@ Nosso **<a href="/guides/freeplay-b1admin" target="_blank">guia completo de conf
 
 - **Reprodução offline** - Baixe antecipadamente vídeos e slides de imagem para nunca depender do Wi-Fi durante os cultos
 - **Gerenciamento de downloads** - Veja e gerencie todo o conteúdo baixado em **Configurações** > **Downloads**
-- **Modo agendado** - Monte playlists e coloque-as em um calendário em [admin.freeplay.church](https://admin.freeplay.church). As TVs pareadas as reproduzem nos horários certos, sem que ninguém precise apertar Iniciar -- veja [Modo Agendado](./scheduled-mode/)
+- **Modo agendado** - Monte playlists e coloque-as em um calendário em [admin.freeplay.church](https://admin.freeplay.church). As TVs pareadas as reproduzem nos horários certos, sem que ninguém precise apertar Iniciar -- veja [Modo Agendado](./scheduled-mode/index.md)
 - **Pareamento de plano** - Vincule o seu dispositivo a um plano de culto da igreja para um conteúdo coordenado entre as salas
 - **Provedores de conteúdo** - Navegue e baixe conteúdo de fontes externas como [Lessons.church](/docs/lessons-church/), Bible Project, Dropbox e OneDrive
-- **Avisos** - Repita em loop uma pasta de slides de um provedor conectado -- veja [Avisos](./content-providers/announcements)
+- **Avisos** - Repita em loop uma pasta de slides de um provedor conectado -- veja [Avisos](./content-providers/announcements.md)
 - **Compatível com controle remoto de TV** - Navegue por todo o aplicativo com um controle remoto de TV padrão, usando os botões direcionais e o de selecionar
 - **Barra lateral recolhível** - Uma barra lateral discreta mantém a navegação acessível sem poluir a tela
 
@@ -35,10 +36,10 @@ Quando você abre o FreePlay, ele se conecta aos seus provedores de conteúdo e 
 
 ## Seções
 
-- **[Primeiros Passos](./getting-started/)** - Instale o aplicativo, abra-o e escolha como se conectar
-- **[Modo Agendado](./scheduled-mode/)** - Pareie as TVs a um calendário e gerencie-as no FreePlay Admin
-- **[Modo Plano](./plan-mode/)** - Pareie com um plano de culto da igreja
-- **[Provedores de Conteúdo](./content-providers/)** - Conecte-se a fontes externas de conteúdo
+- **[Primeiros Passos](./getting-started/index.md)** - Instale o aplicativo, abra-o e escolha como se conectar
+- **[Modo Agendado](./scheduled-mode/index.md)** - Pareie as TVs a um calendário e gerencie-as no FreePlay Admin
+- **[Modo Plano](./plan-mode/index.md)** - Pareie com um plano de culto da igreja
+- **[Provedores de Conteúdo](./content-providers/index.md)** - Conecte-se a fontes externas de conteúdo
 
 :::info
 O FreePlay faz parte do conjunto de ferramentas gratuitas e de código aberto da [ChurchApps](https://churchapps.org) para igrejas.

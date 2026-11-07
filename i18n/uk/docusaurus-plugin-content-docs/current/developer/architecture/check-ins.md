@@ -1,5 +1,6 @@
 ---
 title: "Реєстрація дітей"
+description: "Реєстрація присутності в B1Checkin, B1App і B1 Admin: модель даних, групи як кімнати, ліміти місткості та правила безпеки видачі."
 ---
 
 # Реєстрація дітей
@@ -216,7 +217,7 @@ index (boot/auto-login) → selectChurch → services ──▶ lookup ──▶
 
 ## Пов’язані сторінки
 
-- [Endpoint-и відвідуваності](../api/endpoints/attendance) -- Повний REST-інтерфейс для кампусів, служінь, занять, візитів і візит-сесій
-- [Endpoint-и членства](../api/endpoints/membership) -- Люди, родини та групи
-- [Вебхуки](../api/webhooks) -- Події `session.created`, `attendance.recorded` і `attendance.checkout`
-- [Структура модуля](../api/module-structure) -- Як організовано модуль відвідуваності на боці сервера
+- [Endpoint-и відвідуваності](../api/endpoints/attendance.md) -- Повний REST-інтерфейс для кампусів, служінь, занять, візитів і візит-сесій
+- [Endpoint-и членства](../api/endpoints/membership.md) -- Люди, родини та групи
+- [Вебхуки](../api/webhooks.md) -- Події `session.created`, `attendance.recorded` і `attendance.checkout`
+- [Структура модуля](../api/module-structure.md) -- Як організовано модуль відвідуваності на боці сервера

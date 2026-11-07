@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "Make से B1 Admin को जोड़कर वर्कफ़्लो स्वचालित करें: API कुंजी बनाएँ, B1.church ट्रिगर और क्रियाएँ सेट करें, और आम त्रुटियों का समाधान करें।"
 ---
 
 # Make
@@ -110,6 +111,6 @@ B1.church Make ऐप ओपन सोर्स है। JSON परिभा�
 
 ## यह भी देखें
 
-- [Zapier](./zapier) — वही पैटर्न, सरल UI और बड़ी ऐप सूची के साथ
-- [Slack & Discord](./slack-discord) — Make के बिना बनी चैट सूचनाएँ
+- [Zapier](./zapier.md) — वही पैटर्न, सरल UI और बड़ी ऐप सूची के साथ
+- [Slack & Discord](./slack-discord.md) — Make के बिना बनी चैट सूचनाएँ
 - [Webhooks (developer reference)](/docs/developer/api/webhooks)

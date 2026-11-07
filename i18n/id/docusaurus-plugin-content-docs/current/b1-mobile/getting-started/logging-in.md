@@ -1,5 +1,7 @@
 ---
-title: "Masuk"
+title: "Masuk ke B1 Mobile"
+sidebar_label: "Masuk"
+description: "Masuk ke aplikasi B1 Mobile dengan akun ChurchApps Anda, daftar akun baru, atau pulihkan kata sandi yang terlupa dengan kode 6 digit."
 ---
 
 # Masuk
@@ -13,7 +15,7 @@ B1 Mobile menggunakan akun ChurchApps yang sama dengan yang Anda gunakan di B1.c
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- [Instal B1 Mobile](./installing) di perangkat iOS atau Android Anda
+- [Instal B1 Mobile](./installing.md) di perangkat iOS atau Android Anda
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile menggunakan akun ChurchApps yang sama dengan yang Anda gunakan di B1.c
 3. Masukkan **alamat email** dan **kata sandi** Anda.
 4. Ketuk **Masuk**.
 
-Setelah masuk, Anda akan diarahkan ke [dasbor](../dashboard/). Jika Anda belum memilih gereja, Anda akan diminta untuk mencari dan memilih gereja.
+Setelah masuk, Anda akan diarahkan ke [dasbor](../dashboard/index.md). Jika Anda belum memilih gereja, Anda akan diminta untuk mencari dan memilih gereja.
 
 ## Membuat Akun Baru
 

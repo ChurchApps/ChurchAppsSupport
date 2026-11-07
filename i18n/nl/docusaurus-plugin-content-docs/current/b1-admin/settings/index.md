@@ -1,5 +1,6 @@
 ---
 title: "Instellingen"
+description: "Vind je weg in de Instellingen van B1 Admin: kerkinfo, huisstijl, campussen, aangepaste velden, gebruikersrollen en de navigatie van de B1.church-app."
 ---
 
 # Instellingen

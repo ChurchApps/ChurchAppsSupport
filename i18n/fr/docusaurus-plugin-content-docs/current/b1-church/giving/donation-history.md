@@ -1,5 +1,7 @@
 ---
-title: "Historique des dons"
+title: "Historique des dons et relevés sur B1.church"
+sidebar_label: "Historique des dons"
+description: "Consultez vos dons passés, filtrez par année et imprimez vos relevés de dons pour les impôts depuis la page Dons du portail membre B1.church."
 ---
 
 # Historique des dons

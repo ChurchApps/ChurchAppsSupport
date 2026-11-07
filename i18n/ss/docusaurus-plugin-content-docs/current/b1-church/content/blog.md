@@ -1,5 +1,7 @@
 ---
-title: "Bulogi"
+title: "Kuphepha Ibhulogi ye-B1.church ne-RSS Feeds"
+sidebar_label: "Bulogi"
+description: "Phepha futsi uhlunge ibhulogi yesonto lakho ku-B1.church ngetigaba noma tithegi, uphindze emaposti lakudala, noma ulandzele emasha nge-RSS feeds."
 ---
 
 # Bulogi

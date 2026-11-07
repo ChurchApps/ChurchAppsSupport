@@ -1,5 +1,7 @@
 ---
-title: "Mga Detalye ng Grupo"
+title: "Mga Detalye ng Grupo sa B1 Mobile App"
+sidebar_label: "Mga Detalye ng Grupo"
+description: "Tingnan ang pahina ng detalye ng grupo sa B1 Mobile, kasama ang impormasyon, post, at miyembro, at kung paano ito buksan mula sa Groups screen."
 ---
 
 # Mga Detalye ng Grupo
@@ -13,7 +15,7 @@ Kapag nag-tap ka ng grupo mula sa Groups screen, dadalhin ka sa detail page ng g
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [I-install ang B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
 - Buksan ang screen ng [Mga Grupo](./index.md)
 
 </div>
@@ -46,5 +48,5 @@ Ang iyong pinakabinibisitang grupo ay lumalabas bilang hero card sa itaas ng Gro
 
 ## Mga Kaugnay na Artikulo
 
-- [Timeline ng Grupo](./group-timeline) -- Alamin ang tungkol sa pinag-isang activity feed sa lahat ng iyong mga grupo
+- [Timeline ng Grupo](./group-timeline.md) -- Alamin ang tungkol sa pinag-isang activity feed sa lahat ng iyong mga grupo
 - [Pagmemensahe](../community/messaging.md) -- Magpadala ng mga pribadong mensahe sa mga miyembro ng grupo

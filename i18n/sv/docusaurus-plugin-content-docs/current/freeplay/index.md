@@ -1,5 +1,6 @@
 ---
 title: "Översikt över FreePlay"
+description: "Översikt över FreePlay, klassrums-TV-appen för offlineuppspelning av lektioner på Android TV, Fire TV och Apple TV, med länkar till installationsguider."
 ---
 
 # Översikt över FreePlay
@@ -22,10 +23,10 @@ Vår **<a href="/guides/freeplay-b1admin" target="_blank">fullständiga installa
 
 - **Uppspelning offline** - Ladda ner videor och bildspel i förväg så att du aldrig behöver vara beroende av Wi-Fi under gudstjänsterna
 - **Hantering av nedladdningar** - Visa och hantera allt nedladdat innehåll under **Inställningar** > **Nedladdningar**
-- **Schemalagt läge** - Skapa spellistor och lägg dem i en kalender på [admin.freeplay.church](https://admin.freeplay.church), så spelar kopplade TV-apparater upp dem vid rätt tidpunkter utan att någon behöver trycka på Start -- se [Schemalagt läge](./scheduled-mode/)
+- **Schemalagt läge** - Skapa spellistor och lägg dem i en kalender på [admin.freeplay.church](https://admin.freeplay.church), så spelar kopplade TV-apparater upp dem vid rätt tidpunkter utan att någon behöver trycka på Start -- se [Schemalagt läge](./scheduled-mode/index.md)
 - **Kopplning till planer** - Koppla din enhet till en gudstjänstplan för samordnat innehåll mellan salar
 - **Innehållsleverantörer** - Bläddra bland och ladda ner innehåll från externa källor som [Lessons.church](/docs/lessons-church/), Bible Project, Dropbox och OneDrive
-- **Meddelanden** - Låt en mapp med bilder visas i loop från en ansluten leverantör -- se [Meddelanden](./content-providers/announcements)
+- **Meddelanden** - Låt en mapp med bilder visas i loop från en ansluten leverantör -- se [Meddelanden](./content-providers/announcements.md)
 - **Anpassad för TV-fjärrkontroll** - Navigera i hela appen med en vanlig TV-fjärrkontroll med hjälp av riktningsknapparna och välj-knappen
 - **Hopfällbar sidopanel** - En smal sidopanel gör navigeringen lättillgänglig utan att skärmen blir rörig
 
@@ -35,10 +36,10 @@ När du startar FreePlay ansluter den till dina innehållsleverantörer och kont
 
 ## Avsnitt
 
-- **[Komma igång](./getting-started/)** - Installera appen, starta den och välj hur du vill ansluta
-- **[Schemalagt läge](./scheduled-mode/)** - Koppla TV-apparater till en kalender och hantera dem i FreePlay Admin
-- **[Planläge](./plan-mode/)** - Koppla till en gudstjänstplan
-- **[Innehållsleverantörer](./content-providers/)** - Anslut till externa innehållskällor
+- **[Komma igång](./getting-started/index.md)** - Installera appen, starta den och välj hur du vill ansluta
+- **[Schemalagt läge](./scheduled-mode/index.md)** - Koppla TV-apparater till en kalender och hantera dem i FreePlay Admin
+- **[Planläge](./plan-mode/index.md)** - Koppla till en gudstjänstplan
+- **[Innehållsleverantörer](./content-providers/index.md)** - Anslut till externa innehållskällor
 
 :::info
 FreePlay är en del av [ChurchApps](https://churchapps.org), en svit med kostnadsfria verktyg med öppen källkod för kyrkor.

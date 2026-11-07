@@ -1,5 +1,6 @@
 ---
 title: "Impostazioni"
+description: "Orientati tra le Impostazioni di B1 Admin: dati della chiesa, branding, sedi, campi personalizzati, ruoli utente e navigazione dell'app B1.church."
 ---
 
 # Impostazioni

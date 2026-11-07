@@ -1,5 +1,6 @@
 ---
 title: "Statistika"
+description: "Atsisiuntimų skaičiai pagal mokymą, bažnyčios, naudojančios jūsų išteklius, ir jų vietos Lessons.church statistikoje, su datos intervalo filtru."
 ---
 
 # Statistika

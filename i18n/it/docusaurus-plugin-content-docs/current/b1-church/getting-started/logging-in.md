@@ -1,5 +1,7 @@
 ---
-title: "Accesso"
+title: "Accesso a B1.church e al portale membri"
+sidebar_label: "Accesso"
+description: "Accedi al portale membri B1.church, usa codici a due fattori o single sign-on, reimposta una password dimenticata ed esci dal menu account."
 ---
 
 # Accesso
@@ -13,7 +15,7 @@ Accedere a B1.church ti dà accesso al portale dei membri, dove puoi vedere cosa
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Ti serve un account ChurchApps. Vedi [Per iniziare](../getting-started/) per crearne uno.
+- Ti serve un account ChurchApps. Vedi [Per iniziare](./index.md) per crearne uno.
 - Ti serve l'URL di B1.church della tua chiesa (ad esempio `https://nomedellatuachiesa.b1.church`).
 
 </div>
@@ -35,7 +37,7 @@ Resti connesso sullo stesso browser o sulla stessa app installata finché non ti
 
 ## Accedere al portale dei membri
 
-Una volta connesso, puoi accedere al portale dei membri cliccando sul tuo **nome** nell'angolo in alto a destra della pagina e selezionando **Portale dei membri** dal menu. Il portale dei membri è dove si trovano tutti i tuoi strumenti personali della chiesa, tra cui la tua [Dashboard Home](./navigating.md), la [pagina Io](./me-page.md), i [gruppi](../groups/), le [donazioni](../giving/) e altro ancora.
+Una volta connesso, puoi accedere al portale dei membri cliccando sul tuo **nome** nell'angolo in alto a destra della pagina e selezionando **Portale dei membri** dal menu. Il portale dei membri è dove si trovano tutti i tuoi strumenti personali della chiesa, tra cui la tua [Dashboard Home](./navigating.md), la [pagina Io](./me-page.md), i [gruppi](../groups/index.md), le [donazioni](../giving/index.md) e altro ancora.
 
 ## Il tuo menu utente
 

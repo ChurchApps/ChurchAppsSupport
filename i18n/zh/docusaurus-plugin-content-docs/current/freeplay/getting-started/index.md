@@ -1,5 +1,7 @@
 ---
-title: "入门指南"
+title: "FreePlay TV 应用入门指南"
+sidebar_label: "入门指南"
+description: "在 Android TV、Fire TV 或 Apple TV 上设置 FreePlay：安装应用、首次打开，并了解遥控器按键和侧边栏。"
 ---
 
 # FreePlay 入门指南
@@ -42,7 +44,7 @@ FreePlay 可在 Fire TV（包括较新的 Vega OS 电视棒）、Android TV 和 
 
 首次打开 FreePlay 时，你会看到一个带有 FreePlay 标志的动画启动画面。应用会检查是否已连接过任何内容服务商。如果你已经连接了某个服务商，它会直接带你进入该服务商的内容浏览器。否则，它会打开**内容服务商**屏幕，供你连接第一个内容来源。
 
-如果该电视已与[定时模式](../scheduled-mode/)中的日历配对，FreePlay 会跳过上述所有步骤，直接打开定时播放器。
+如果该电视已与[定时模式](../scheduled-mode/index.md)中的日历配对，FreePlay 会跳过上述所有步骤，直接打开定时播放器。
 
 ## 使用电视遥控器导航
 
@@ -62,13 +64,13 @@ FreePlay 专为电视遥控器设计。以下是你在整个应用中会用到�
 
 侧边栏从上到下依次列出：
 
-- **今日计划** —— 当电视与某个计划配对时显示。参见[计划模式](../plan-mode/)
-- **公告** —— 在你选择了公告文件夹后显示。参见[公告](../content-providers/announcements)
-- **浏览** —— 每个已连接、可供浏览的内容服务商。参见[浏览和下载内容](../content-providers/browsing-content)
-- **设置** —— 位于侧边栏底部。可打开**配对到日历**（将此电视与日历或计划配对——参见[选择配对模式](./pairing-modes)）、**下载**（播放或删除保存在本设备上的内容），以及**服务商**（连接内容服务商并选择公告文件夹）
+- **今日计划** —— 当电视与某个计划配对时显示。参见[计划模式](../plan-mode/index.md)
+- **公告** —— 在你选择了公告文件夹后显示。参见[公告](../content-providers/announcements.md)
+- **浏览** —— 每个已连接、可供浏览的内容服务商。参见[浏览和下载内容](../content-providers/browsing-content.md)
+- **设置** —— 位于侧边栏底部。可打开**配对到日历**（将此电视与日历或计划配对——参见[选择配对模式](./pairing-modes.md)）、**下载**（播放或删除保存在本设备上的内容），以及**服务商**（连接内容服务商并选择公告文件夹）
 
 ## 下一步
 
-- **[选择配对模式](./pairing-modes)** —— 了解连接电视的不同方式
-- **[定时模式](../scheduled-mode/)** —— 使用 FreePlay Admin 将电视纳入日历排期
-- **[内容服务商](../content-providers/)** —— 连接 Lessons.church、Bible Project 等
+- **[选择配对模式](./pairing-modes.md)** —— 了解连接电视的不同方式
+- **[定时模式](../scheduled-mode/index.md)** —— 使用 FreePlay Admin 将电视纳入日历排期
+- **[内容服务商](../content-providers/index.md)** —— 连接 Lessons.church、Bible Project 等

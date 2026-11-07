@@ -1,5 +1,6 @@
 ---
 title: "Piani"
+description: "Scopri a quali piani di culto sei assegnato su B1.church, controlla i tuoi ruoli e le date, e accetta o rifiuta gli incarichi dal portale membri."
 ---
 
 # Piani

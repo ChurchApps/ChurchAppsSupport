@@ -1,5 +1,6 @@
 ---
 title: "Configurarea imprimantei"
+description: "Configurează o imprimantă de etichete în rețea pentru chioșcurile B1 Checkin: găsește-o pe Wi-Fi, alege-o, fă o tipărire de test și salvează selecția."
 ---
 
 # Configurarea imprimantei
@@ -13,7 +14,7 @@ B1 Church Checkin poate imprima etichete cu numele și talonele de preluare pent
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Autentificați-vă](./logging-in) în aplicația B1 Church Checkin și selectați biserica dumneavoastră
+- [Autentificați-vă](./logging-in.md) în aplicația B1 Church Checkin și selectați biserica dumneavoastră
 - Conectați o imprimantă de etichete compatibilă, din rețea, la aceeași rețea Wi-Fi ca tableta
 
 </div>
@@ -87,4 +88,4 @@ Dacă mutați chioscul într-o altă locație sau modificați configurația reț
 
 ## Pașii următori
 
-Odată configurată imprimanta, sunteți gata să începeți înregistrarea prezenței. Consultați [fluxul de lucru pentru check-in](../check-in/) pentru a afla cum funcționează întregul proces, începând cu [selectarea unei slujbe](../check-in/selecting-service).
+Odată configurată imprimanta, sunteți gata să începeți înregistrarea prezenței. Consultați [fluxul de lucru pentru check-in](../check-in/index.md) pentru a afla cum funcționează întregul proces, începând cu [selectarea unei slujbe](../check-in/selecting-service.md).

@@ -1,5 +1,7 @@
 ---
-title: "进行奉献"
+title: "在 B1 Mobile 中捐款"
+sidebar_label: "进行奉献"
+description: "在 B1 Mobile 的“捐赠”标签页中向教会奉献：选择基金、输入金额、通过 Stripe 支付，并可快速重复过去的奉献。"
 ---
 
 # 进行奉献
@@ -13,8 +15,8 @@ title: "进行奉献"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in)您的账户
-- 准备好信用卡或借记卡，或提前[保存支付方式](./managing-payments)
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md)您的账户
+- 准备好信用卡或借记卡，或提前[保存支付方式](./managing-payments.md)
 
 </div>
 
@@ -42,10 +44,10 @@ title: "进行奉献"
 如果您想奉献与上次相同的金额，无需经过完整的奉献流程。**概览**标签显示您最近的奉献以及一个**重复**按钮。点击它即可快速再次提交相同的奉献。
 
 :::tip
-如果您计划定期奉献，请在**管理**标签中保存您的支付方式，这样下次奉献会更快。详见[管理支付方式](./managing-payments)。
+如果您计划定期奉献，请在**管理**标签中保存您的支付方式，这样下次奉献会更快。详见[管理支付方式](./managing-payments.md)。
 :::
 
 ## 相关文章
 
-- [管理支付方式](./managing-payments) -- 保存卡片以便将来更快奉献
-- [奉献历史](./donation-history) -- 查看奉献摘要和过往奉献记录
+- [管理支付方式](./managing-payments.md) -- 保存卡片以便将来更快奉献
+- [奉献历史](./donation-history.md) -- 查看奉献摘要和过往奉献记录

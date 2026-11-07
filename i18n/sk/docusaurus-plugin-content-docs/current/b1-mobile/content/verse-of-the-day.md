@@ -1,5 +1,7 @@
 ---
-title: "Verš dňa"
+title: "Verš dňa v B1 Mobile"
+sidebar_label: "Verš dňa"
+description: "Otvorte obrazovku Verš dňa v B1 Mobile a pozrite si biblický verš na dnešok ako obrázok prispôsobený orientácii vášho telefónu alebo tabletu, aktualizovaný denne."
 ---
 
 # Verš dňa
@@ -13,7 +15,7 @@ Obrazovka Verš dňa zobrazuje denný biblický verš ako pekne naformátovaný 
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Nainštalujte B1 Mobile](../getting-started/installing) a [sa prihláste](../getting-started/logging-in) do svojho účtu
+- [Nainštalujte B1 Mobile](../getting-started/installing.md) a [sa prihláste](../getting-started/logging-in.md) do svojho účtu
 - Vaša cirkev musí mať zapnutú funkciu Verš dňa
 
 </div>
@@ -46,5 +48,5 @@ Verš dňa je vstavaná obsahová funkcia aplikácie B1 Mobile. Ak ho nevidíte 
 
 ## Súvisiace články
 
-- [Biblia](./bible) -- Čítajte celé úryvky Svätého písma vo vstavanom čítačke
-- [Kázne](./sermons) -- Pozerajte nahrané kázne zo svojej cirkvi
+- [Biblia](./bible.md) -- Čítajte celé úryvky Svätého písma vo vstavanom čítačke
+- [Kázne](./sermons.md) -- Pozerajte nahrané kázne zo svojej cirkvi

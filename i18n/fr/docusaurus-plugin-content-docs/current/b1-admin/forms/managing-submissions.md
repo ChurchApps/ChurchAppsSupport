@@ -1,5 +1,6 @@
 ---
 title: "Gérer les réponses"
+description: "Consultez, imprimez et réaffectez les soumissions de formulaires dans B1 Admin, en transmettant les réponses à la bonne personne et en assurant le suivi des cartes de visiteurs et des demandes de prière."
 ---
 
 # Gérer les réponses

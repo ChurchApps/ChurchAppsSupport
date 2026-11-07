@@ -1,5 +1,7 @@
 ---
-title: "Csoport részletei"
+title: "Csoport részletei a B1 Mobile alkalmazásban"
+sidebar_label: "Csoport részletei"
+description: "Nézd meg, mit mutat a B1 Mobile csoportreszlet-oldal: csoportinformációkat, bejegyzéseket és tagokat, valamint hogyan nyisd meg a Csoportok képernyőről."
 ---
 
 # Csoport részletei
@@ -13,7 +15,7 @@ Ha a Csoportok képernyőn megkoppint egy csoportot, a csoport részletei oldal�
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- [Telepítse a B1 Mobile alkalmazást](../getting-started/installing), majd [jelentkezzen be](../getting-started/logging-in) a fiókjába
+- [Telepítse a B1 Mobile alkalmazást](../getting-started/installing.md), majd [jelentkezzen be](../getting-started/logging-in.md) a fiókjába
 - Nyissa meg a [Csoportok](./index.md) képernyőt
 
 </div>
@@ -46,5 +48,5 @@ A leggyakrabban megtekintett csoportja a Csoportok képernyő tetején, főkárt
 
 ## Kapcsolódó cikkek
 
-- [Csoport idővonala](./group-timeline) -- Ismerje meg az összes csoportja közös tevékenységi hírfolyamát
+- [Csoport idővonala](./group-timeline.md) -- Ismerje meg az összes csoportja közös tevékenységi hírfolyamát
 - [Üzenetküldés](../community/messaging.md) -- Privát üzenetek küldése a csoport tagjainak

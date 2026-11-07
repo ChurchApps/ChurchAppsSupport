@@ -1,5 +1,6 @@
 ---
 title: "Guide: Lansera din kyrkas webbplats"
+description: "Ställ in en kyrkwebbplats i B1 Admin: bygg startsidan, anpassa färger och logotyp, lägg till viktiga sidor, koppla en egen domän och lägg till gåvoformulär."
 ---
 
 # Lansera din kyrkas webbplats

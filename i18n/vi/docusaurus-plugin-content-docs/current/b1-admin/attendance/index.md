@@ -1,5 +1,6 @@
 ---
 title: "Điểm danh"
+description: "Xem điểm danh hàng tuần, phòng và khách trong B1 Admin, sau đó thiết lập cơ sở, giờ lễ, sĩ số và check-in kiosk từ trang Điểm danh."
 ---
 
 # Điểm danh

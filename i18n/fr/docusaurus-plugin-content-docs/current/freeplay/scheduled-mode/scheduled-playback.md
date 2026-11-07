@@ -1,5 +1,6 @@
 ---
 title: "Lecture planifiée sur le téléviseur"
+description: "Une TV FreePlay appairée télécharge la semaine suivante et lit selon l'horloge, même hors ligne. Panneau d'informations, boutons et épinglage."
 ---
 
 # Lecture planifiée sur le téléviseur
@@ -13,8 +14,8 @@ Une fois qu'un téléviseur est associé à un calendrier, FreePlay le fait fonc
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Associer le téléviseur à un calendrier](./pairing-a-screen)
-- [Mettre quelque chose au calendrier](./scheduling-the-calendar), ou définir une boucle par défaut pour le groupe de l'écran
+- [Associer le téléviseur à un calendrier](./pairing-a-screen.md)
+- [Mettre quelque chose au calendrier](./scheduling-the-calendar.md), ou définir une boucle par défaut pour le groupe de l'écran
 
 </div>
 
@@ -40,7 +41,7 @@ Le panneau comporte aussi trois boutons :
 
 - **Épingler cette liste de lecture** - Garde le contenu actuel en boucle et ignore le calendrier. Sélectionnez **Désépingler la liste de lecture** pour revenir au calendrier
 - **Parcourir le contenu** - Quitte le lecteur planifié pour parcourir vos fournisseurs connectés
-- **Paramètres** - Ouvre les paramètres de FreePlay, où vous pouvez [dissocier ou associer à un autre calendrier](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Paramètres** - Ouvre les paramètres de FreePlay, où vous pouvez [dissocier ou associer à un autre calendrier](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 Pour revenir au calendrier après avoir parcouru le contenu, appuyez sur **Retour** de la télécommande depuis l'écran **Fournisseurs de contenu**, ou ouvrez **Paramètres**, sélectionnez **Associer à un calendrier** et choisissez **Retour au calendrier**. Un téléviseur associé revient aussi au lecteur planifié chaque fois que FreePlay repasse au premier plan, et il s'ouvre toujours sur le lecteur planifié.
@@ -77,6 +78,6 @@ Vous pouvez aussi lire le calendrier d'un écran dans un navigateur web. Dans Fr
 
 ## Articles connexes
 
-- **[Planifier le calendrier](./scheduling-the-calendar)** - Définir ce qui est lu et ce qui se passe lorsque le contenu se termine plus tôt
-- **[Gérer les écrans et les groupes](./managing-screens)** - Vérifier les téléchargements de chaque écran depuis FreePlay Admin
-- **[Lire du contenu](../content-providers/playing-content)** - Commandes du lecteur lorsque vous lisez vous-même le contenu
+- **[Planifier le calendrier](./scheduling-the-calendar.md)** - Définir ce qui est lu et ce qui se passe lorsque le contenu se termine plus tôt
+- **[Gérer les écrans et les groupes](./managing-screens.md)** - Vérifier les téléchargements de chaque écran depuis FreePlay Admin
+- **[Lire du contenu](../content-providers/playing-content.md)** - Commandes du lecteur lorsque vous lisez vous-même le contenu

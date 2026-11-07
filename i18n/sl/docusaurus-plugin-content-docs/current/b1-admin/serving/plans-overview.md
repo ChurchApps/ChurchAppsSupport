@@ -1,5 +1,6 @@
 ---
 title: "Pregled načrtov"
+description: "V B1 Admin si oglejte pregled dodelitev prostovoljcev na številnih datumih, odkrijte nezasedene položaje in z ene mreže zapolnite ali pošljite e-pošto ekipi."
 ---
 
 # Pregled načrtov

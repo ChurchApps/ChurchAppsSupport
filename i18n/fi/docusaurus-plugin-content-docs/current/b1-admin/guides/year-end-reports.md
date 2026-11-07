@@ -1,5 +1,6 @@
 ---
 title: "Guide: Luo vuosiraportit lahjoituksista"
+description: "Viimeistele B1 Adminissa vuoden lahjoituskirjaukset, tarkista rahastojen verotusasetukset ja luo kaikille lahjoittajille verovähennyskelpoiset lahjoitustodistukset."
 ---
 
 # Luo vuosiraportit lahjoituksista

@@ -1,5 +1,6 @@
 ---
 title: "Csoportok böngészése"
+description: "Böngészd gyülekezeted nyilvános csoportjait a B1.church oldalon kategóriánként, majd nézd meg a kártyákon a találkozási időket, helyszíneket és leírásokat."
 ---
 
 # Csoportok böngészése

@@ -1,5 +1,6 @@
 ---
 title: "Schválení změn profilu"
+description: "Projděte a schvalte žádosti členů o změnu profilu v B1 Admin a nastavte skupinu pro schvalování adresáře, která je dostává."
 ---
 
 # Schválení změn profilu

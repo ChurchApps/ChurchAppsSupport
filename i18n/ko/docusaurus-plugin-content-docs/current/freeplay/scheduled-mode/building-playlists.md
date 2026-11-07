@@ -1,5 +1,6 @@
 ---
 title: "제공업체 연결 및 재생 목록 만들기"
+description: "FreePlay Admin에서 연결된 콘텐츠 제공자를 설정한 뒤, 예약형 TV 화면용 재생목록을 만들고, 배열하고, 미리 봅니다."
 ---
 
 # 제공업체 연결 및 재생 목록 만들기
@@ -107,6 +108,6 @@ FreePlay Admin의 제공업체 연결은 한 사람이나 한 TV가 아니라 �
 
 ## 관련 문서
 
-- **[달력 예약하기](./scheduling-the-calendar)** - 재생 목록을 화면 그룹의 달력에 올립니다
-- **[화면 및 그룹 관리](./managing-screens)** - 재생 목록을 그룹의 기본 반복으로 설정합니다
-- **[콘텐츠 제공업체](../content-providers/)** - TV 자체에서 연결할 수 있는 제공업체
+- **[달력 예약하기](./scheduling-the-calendar.md)** - 재생 목록을 화면 그룹의 달력에 올립니다
+- **[화면 및 그룹 관리](./managing-screens.md)** - 재생 목록을 그룹의 기본 반복으로 설정합니다
+- **[콘텐츠 제공업체](../content-providers/index.md)** - TV 자체에서 연결할 수 있는 제공업체

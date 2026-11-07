@@ -1,5 +1,6 @@
 ---
 title: Tuyên bố đức tin
+description: "Niềm tin của ChurchApps về Đức Chúa Trời, Chúa Giê-su, Đức Thánh Linh, Kinh Thánh, sự cứu rỗi và Hội Thánh, làm tiêu chuẩn duyệt giáo trình."
 ---
 
 # Tuyên bố đức tin

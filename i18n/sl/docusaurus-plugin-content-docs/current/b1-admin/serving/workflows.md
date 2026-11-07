@@ -1,5 +1,6 @@
 ---
 title: "Delovni tokovi"
+description: "V B1 Admin ustvarite table v slogu Kanban, ki vodijo ljudi skozi korake nadaljnjih dejanj, s samodejnimi e-poštnimi sporočili, SMS-i in sprožilci, ki ljudi dodajo samodejno."
 ---
 
 # Delovni tokovi

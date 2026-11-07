@@ -1,5 +1,6 @@
 ---
 title: "Setări de confidențialitate"
+description: "Controlați ce detalii ale profilului, precum telefonul, e-mailul și adresa, pot vedea ceilalți membri în agenda B1 Mobile și verificați modificările în așteptare."
 ---
 
 # Setări de confidențialitate
@@ -13,7 +14,7 @@ Fila **Vizibilitate** de pe ecranul Profilului tău îți permite să controlezi
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalează B1 Mobile](../getting-started/installing) și [autentifică-te](../getting-started/logging-in) în contul tău
+- [Instalează B1 Mobile](../getting-started/installing.md) și [autentifică-te](../getting-started/logging-in.md) în contul tău
 
 </div>
 
@@ -52,8 +53,8 @@ Fila **Cont** oferă acces la setările de securitate. Folosește această filă
 
 | Filă | Scop |
 |---|---|
-| **Profil** | [Editează informațiile tale personale](./editing-profile) și fotografia |
-| **Gospodărie** | [Vezi membrii familiei tale](./household) |
+| **Profil** | [Editează informațiile tale personale](./editing-profile.md) și fotografia |
+| **Gospodărie** | [Vezi membrii familiei tale](./household.md) |
 | **Vizibilitate** | Controlează ce văd ceilalți în director |
 | **În așteptare** | Verifică modificările de profil care așteaptă aprobare |
 | **Cont** | Gestionează setările de securitate |
@@ -62,6 +63,6 @@ Aceste file funcționează împreună pentru a-ți oferi control deplin asupra i
 
 ## Articole conexe
 
-- [Editarea profilului tău](./editing-profile) -- Actualizează-ți informațiile personale
-- [Gospodărie](./household) -- Vezi și gestionează membrii familiei tale
+- [Editarea profilului tău](./editing-profile.md) -- Actualizează-ți informațiile personale
+- [Gospodărie](./household.md) -- Vezi și gestionează membrii familiei tale
 - [Director de membri](../community/member-directory.md) -- Vezi cum apare profilul tău pentru ceilalți

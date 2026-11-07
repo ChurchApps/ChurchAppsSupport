@@ -1,5 +1,6 @@
 ---
 title: "Správa obrazovek a skupin"
+description: "Ověřte, které FreePlay TV jsou online a připravené na neděli, upravte nastavení obrazovek a vytvořte skupiny sdílející jeden kalendář ve FreePlay Admin."
 ---
 
 # Správa obrazovek a skupin
@@ -14,7 +15,7 @@ Stránka **Obrazovky** v aplikaci FreePlay Admin uvádí každou televizi spáro
 <h4>Než začnete</h4>
 
 - Přihlaste se do aplikace FreePlay Admin na adrese [admin.freeplay.church](https://admin.freeplay.church)
-- [Spárujte alespoň jednu obrazovku](./pairing-a-screen)
+- [Spárujte alespoň jednu obrazovku](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Tlačítkem **Prezentovat** přehrajete kalendář obrazovky v prohlížeči, tl
 
 Kliknutím na popisek obrazovky otevřete její stránku. Vlevo najdete:
 
-- **Prezentovat v prohlížeči** - Přehrajte kalendář této obrazovky na celou obrazovku v prohlížeči tak, jak by vypadal na televizi. Viz [Prezentace z prohlížeče](./scheduled-playback#presenting-from-a-browser)
+- **Prezentovat v prohlížeči** - Přehrajte kalendář této obrazovky na celou obrazovku v prohlížeči tak, jak by vypadal na televizi. Viz [Prezentace z prohlížeče](./scheduled-playback.md#presenting-from-a-browser)
 - **Upravit** - Změňte popisek, skupinu nebo režim
 - **Více** > **Odpárovat** - Odpojte televizi. Vrátí se k zobrazení párovacího kódu
 
@@ -93,6 +94,6 @@ Smazáním skupiny smažete i její plán. Obrazovky v této skupině zhasnou, d
 
 ## Související články
 
-- **[Párování obrazovky](./pairing-a-screen)** - Přidání nové televize
-- **[Plánování kalendáře](./scheduling-the-calendar)** - Nastavení, co každá skupina přehrává, a její výchozí smyčka
-- **[Naplánované přehrávání na televizi](./scheduled-playback)** - Co datum „Připraveno do“ znamená přímo na televizi
+- **[Párování obrazovky](./pairing-a-screen.md)** - Přidání nové televize
+- **[Plánování kalendáře](./scheduling-the-calendar.md)** - Nastavení, co každá skupina přehrává, a její výchozí smyčka
+- **[Naplánované přehrávání na televizi](./scheduled-playback.md)** - Co datum „Připraveno do“ znamená přímo na televizi

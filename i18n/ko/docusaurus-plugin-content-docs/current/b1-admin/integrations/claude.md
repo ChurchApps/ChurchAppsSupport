@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "B1 Admin을 Claude에 연결해 출석, 헌금, 그룹에 관해 평이한 말로 질문합니다. 로그인 옵션과 권한이 제한된 키 옵션을 제공합니다."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ B1 API는 `/mcp`에 단일 MCP 엔드포인트를 노출합니다. Claude는 이
 
 - [API 키](/docs/developer/api/api-keys) -- 범위 전체 참고
 - [MCP 서버(개발자 참고)](/docs/developer/api/mcp) -- 프로토콜 세부 사항과 도구 스키마
-- [ChatGPT](./chatgpt) -- OpenAI 모델을 위한 같은 개념
+- [ChatGPT](./chatgpt.md) -- OpenAI 모델을 위한 같은 개념

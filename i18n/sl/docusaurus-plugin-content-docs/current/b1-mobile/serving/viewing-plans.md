@@ -1,5 +1,7 @@
 ---
-title: "Pregled planov"
+title: "Ogled servisnih načrtov v B1 Mobile"
+sidebar_label: "Pregled planov"
+description: "Preverite prihajajoči in pretekli urnik služenja v B1 Mobile, preberite podrobnosti načrta in potek bogoslužja ter natisnite načrte za vaje ali za zakulisje."
 ---
 
 # Pregled planov
@@ -13,7 +15,7 @@ Zaslon planov v B1 Mobile vam omogoča popoln pregled vašega urnika služenja. 
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite B1 Mobile](../getting-started/installing) in se [prijavite](../getting-started/logging-in) v svoj račun
+- [Namestite B1 Mobile](../getting-started/installing.md) in se [prijavite](../getting-started/logging-in.md) v svoj račun
 - Vaš cerkveni skrbnik vas mora dodeliti vsaj enemu planu služenja
 
 </div>
@@ -61,4 +63,4 @@ Potisna obvestila boste prejeli [takrat, ko vas dodelijo novemu planu](../commun
 
 ## Sorodni članki
 
-- [Prijava za prostovoljstvo](./volunteer-signup) -- Brskajte in se prijavite na proste prostovoljske položaje
+- [Prijava za prostovoljstvo](./volunteer-signup.md) -- Brskajte in se prijavite na proste prostovoljske položaje

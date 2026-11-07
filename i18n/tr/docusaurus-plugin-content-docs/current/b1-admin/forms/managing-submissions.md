@@ -1,5 +1,6 @@
 ---
 title: "Form Gönderilerini Yönetme"
+description: "B1 Admin'de form gönderilerini inceleyin, yazdırın ve yeniden atayın; yanıtları doğru kişiye yönlendirin, ziyaretçi kartları ve dua taleplerini takip edin."
 ---
 
 # Form Gönderilerini Yönetme

@@ -1,5 +1,6 @@
 ---
 title: "Ein Konto erstellen"
+description: "ChurchApps-Konto bei Lessons.church registrieren und mit einem neuen oder bestehenden Gemeindeprofil verbinden, um Klassenzimmer zu verwalten."
 ---
 
 # Ein Konto erstellen

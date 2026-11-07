@@ -1,5 +1,7 @@
 ---
-title: "Anmelden"
+title: "Anmeldung bei B1 Church Checkin"
+sidebar_label: "Anmelden"
+description: "Sich bei der Kiosk-App B1 Church Checkin anmelden, Gemeinde auswählen und Auto-Login, Admin-Einstellungen und Abmelden am Check-in-Tablet verstehen."
 ---
 
 # Anmelden
@@ -62,7 +64,7 @@ Die Administratoreinstellungen sind bewusst ausgeblendet, damit Gemeindemitglied
 2. Wenn eine Kiosk-PIN festgelegt ist, geben Sie die PIN ein, sobald Sie dazu aufgefordert werden.
 3. Der Bildschirm **Administratoreinstellungen** wird mit den folgenden Optionen geöffnet:
    - **Gottesdienst ändern** — den ausgewählten Gottesdienstzeitpunkt wechseln
-   - **Drucker ändern** — [Druckereinstellungen](./printer-setup) öffnen, um einen Drucker zu suchen und auszuwählen
+   - **Drucker ändern** — [Druckereinstellungen](./printer-setup.md) öffnen, um einen Drucker zu suchen und auszuwählen
    - **PIN festlegen/ändern** — die Kiosk-PIN festlegen oder aktualisieren, die den Administratorzugang schützt
    - **Abmelden** — sich abmelden und zum Anmeldebildschirm zurückkehren
 
@@ -72,4 +74,4 @@ Beim Abmelden werden alle gespeicherten Zugangsdaten und die Kirchenauswahl gel�
 
 ## Nächste Schritte
 
-Nach der Anmeldung können Sie [einen Drucker einrichten](./printer-setup) oder direkt zum [Check-in-Ablauf](../check-in/) wechseln.
+Nach der Anmeldung können Sie [einen Drucker einrichten](./printer-setup.md) oder direkt zum [Check-in-Ablauf](../check-in/index.md) wechseln.

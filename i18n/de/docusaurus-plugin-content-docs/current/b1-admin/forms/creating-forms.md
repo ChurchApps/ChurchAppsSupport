@@ -1,5 +1,6 @@
 ---
 title: "Formulare erstellen"
+description: "Erstellen Sie in B1 Admin eigene Formulare für Veranstaltungsanmeldungen, Umfragen und Besucherkarten und teilen Sie sie per Link, QR-Code oder Ausdruck."
 ---
 
 # Formulare erstellen

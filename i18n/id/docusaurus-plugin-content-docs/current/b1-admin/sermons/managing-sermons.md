@@ -1,5 +1,6 @@
 ---
 title: "Mengelola Khotbah"
+description: "Kelola pustaka khotbah di B1 Admin: tambahkan khotbah dari YouTube, Vimeo, atau Facebook, edit detailnya, dan dapatkan feed podcast untuk gereja Anda."
 ---
 
 # Mengelola Khotbah
@@ -14,7 +15,7 @@ Halaman Khotbah menampilkan seluruh pustaka khotbah Anda. Dari sini, Anda dapat 
 <h4>Sebelum Anda Mulai</h4>
 
 - Anda memerlukan izin **contentApi.streamingServices.edit**. Lihat [Peran & Izin](../settings/roles-permissions.md) jika Anda tidak memiliki akses.
-- Buat setidaknya satu [playlist](playlists) untuk mengelompokkan khotbah Anda
+- Buat setidaknya satu [playlist](./playlists.md) untuk mengelompokkan khotbah Anda
 - Siapkan ID video atau URL dari YouTube, Vimeo, atau Facebook
 
 </div>
@@ -35,7 +36,7 @@ Halaman Khotbah menampilkan seluruh pustaka khotbah Anda. Dari sini, Anda dapat 
 6. Buat perubahan yang diinginkan, lalu klik **Simpan**.
 
 :::tip
-Anda juga dapat menambahkan URL siaran langsung permanen dengan memilih **Tambah URL Live Permanen** dari menu tarik-turun **Tambah Khotbah**. Ini membuat koneksi tetap ke siaran langsung saluran YouTube Anda menggunakan Channel ID Anda. Lihat [Siaran Langsung](live-streaming) untuk informasi selengkapnya.
+Anda juga dapat menambahkan URL siaran langsung permanen dengan memilih **Tambah URL Live Permanen** dari menu tarik-turun **Tambah Khotbah**. Ini membuat koneksi tetap ke siaran langsung saluran YouTube Anda menggunakan Channel ID Anda. Lihat [Siaran Langsung](./live-streaming.md) untuk informasi selengkapnya.
 :::
 
 ## Mengedit Khotbah
@@ -73,11 +74,11 @@ Setelah menambahkan khotbah, Anda dapat menjadwalkannya untuk disiarkan di halam
 3. Khotbah akan diputar pada waktu kebaktian yang dijadwalkan.
 
 :::info
-Untuk mengimpor banyak khotbah sekaligus, alih-alih menambahkannya satu per satu, gunakan alat [Impor Massal](bulk-import) untuk mengambil video langsung dari akun YouTube atau Vimeo Anda.
+Untuk mengimpor banyak khotbah sekaligus, alih-alih menambahkannya satu per satu, gunakan alat [Impor Massal](./bulk-import.md) untuk mengambil video langsung dari akun YouTube atau Vimeo Anda.
 :::
 
 ## Langkah Selanjutnya
 
-- [Playlist](playlists) -- Mengatur khotbah ke dalam seri
-- [Siaran Langsung](live-streaming) -- Mengonfigurasi jadwal streaming Anda
-- [Impor Massal](bulk-import) -- Mengimpor banyak khotbah sekaligus
+- [Playlist](./playlists.md) -- Mengatur khotbah ke dalam seri
+- [Siaran Langsung](./live-streaming.md) -- Mengonfigurasi jadwal streaming Anda
+- [Impor Massal](./bulk-import.md) -- Mengimpor banyak khotbah sekaligus

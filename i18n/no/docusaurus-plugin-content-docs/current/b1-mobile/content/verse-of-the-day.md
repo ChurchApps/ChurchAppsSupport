@@ -1,5 +1,7 @@
 ---
-title: "Dagens vers"
+title: "Dagens vers i B1 Mobile"
+sidebar_label: "Dagens vers"
+description: "Åpne Dagens vers-skjermen i B1 Mobile for å se dagens bibelvers som bilde tilpasset telefonens eller nettbrettets retning, oppdatert daglig."
 ---
 
 # Dagens vers
@@ -13,7 +15,7 @@ Skjermbildet for Dagens vers viser et daglig bibelvers som et vakkert formatert 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- [Installer B1 Mobile](../getting-started/installing.md) og [logg inn](../getting-started/logging-in.md) på kontoen din
 - Menigheten din må ha funksjonen Dagens vers aktivert
 
 </div>
@@ -46,5 +48,5 @@ Dagens vers er en innebygd innholdsfunksjon i B1 Mobile. Hvis du ikke ser den i 
 
 ## Relaterte artikler
 
-- [Bibel](./bible) – Les hele bibelavsnitt i den innebygde leseren
-- [Preken](./sermons) – Se innspilte prekener fra menigheten din
+- [Bibel](./bible.md) – Les hele bibelavsnitt i den innebygde leseren
+- [Preken](./sermons.md) – Se innspilte prekener fra menigheten din

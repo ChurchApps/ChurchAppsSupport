@@ -1,5 +1,6 @@
 ---
 title: "Gösterge Paneli"
+description: "B1 Mobile ana ekranında gezinin; en çok kullanılan özellikler büyük kartlarda, diğerleri Hızlı İşlemler'de yer alır."
 ---
 
 # Gösterge Paneli
@@ -28,7 +29,7 @@ Ana kartın altında, yan yana gösterilen en fazla iki **öne çıkan kart** bu
 
 ## Hızlı İşlemler
 
-Kalan özellikler, öne çıkan kartların altındaki **Hızlı İşlemler** ızgarasında görünür. Her öğede bir simge ve etiket bulunur. Bunlar, kilisenizin yapılandırdığı diğer tüm gezinme bağlantılarıdır. [Gruplardan](../groups/) ve [bağışlardan](../giving/) [yoklamaya](../checkin/), [vaazlara](../content/sermons.md) ve daha fazlasına kadar her şeye buradan ulaşabilirsiniz.
+Kalan özellikler, öne çıkan kartların altındaki **Hızlı İşlemler** ızgarasında görünür. Her öğede bir simge ve etiket bulunur. Bunlar, kilisenizin yapılandırdığı diğer tüm gezinme bağlantılarıdır. [Gruplardan](../groups/index.md) ve [bağışlardan](../giving/index.md) [yoklamaya](../checkin/index.md), [vaazlara](../content/sermons.md) ve daha fazlasına kadar her şeye buradan ulaşabilirsiniz.
 
 ## Düzenin Nasıl Uyum Sağladığı
 
@@ -41,7 +42,7 @@ Gösterge panelinin düzeni kullanım alışkanlıklarınıza göre kişiselleş
 Uygulamayı henüz kullanmadıysanız özellikler, kilisenizin yapılandırdığı varsayılan sırayla görünür. Zamanla gösterge paneli alışkanlıklarınıza uyacak şekilde yeniden düzenlenir.
 
 :::info
-Gösterge panelinizde görünen özellikler, kilise yöneticiniz tarafından [B1 Admin](../../b1-admin/) üzerinden yapılandırılır. Beklediğiniz bir özelliği göremiyorsanız kilise ofisinize başvurun.
+Gösterge panelinizde görünen özellikler, kilise yöneticiniz tarafından [B1 Admin](../../b1-admin/index.md) üzerinden yapılandırılır. Beklediğiniz bir özelliği göremiyorsanız kilise ofisinize başvurun.
 :::
 
 ## Gösterge Panelini Yenileme

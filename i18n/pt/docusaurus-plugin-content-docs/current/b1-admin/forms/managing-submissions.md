@@ -1,5 +1,6 @@
 ---
 title: "Gerenciando Respostas"
+description: "Revise, imprima e redistribua respostas de formulários no B1 Admin, encaminhando-as à pessoa certa e acompanhando cartões de visitante e pedidos de oração."
 ---
 
 # Gerenciando Respostas

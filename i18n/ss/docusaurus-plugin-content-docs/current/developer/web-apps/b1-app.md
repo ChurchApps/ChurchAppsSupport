@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "Setfa i-B1App yelungu lencwadzi endzaweni nge-Next.js 22+, lungisa tindzawo te-API ku-.env, bese uqala i-dev server ku-port 3301."
 ---
 
 # B1App
@@ -13,8 +14,8 @@ B1App luhlelo lwelilunga leligobhondolo loluvelele emphakathini lolwakhiwe nge-N
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- Faka i-**Node.js 22+** kanye ne-**Git** -- bona [Tidzingo Letandzulelo](../setup/prerequisites)
-- Hlela indzawo yakho ye-API lohlosiwe (staging nome yasekhaya) -- bona [Tintfo Tesimo Sekusebenta](../setup/environment-variables)
+- Faka i-**Node.js 22+** kanye ne-**Git** -- bona [Tidzingo Letandzulelo](../setup/prerequisites.md)
+- Hlela indzawo yakho ye-API lohlosiwe (staging nome yasekhaya) -- bona [Tintfo Tesimo Sekusebenta](../setup/environment-variables.md)
 
 </div>
 
@@ -89,5 +90,5 @@ Kwakhiwa kwe-production kutfunyelwa ku-**S3 + CloudFront**:
 3. Kususa lokusesikhwameni kwe-CloudFront kuyacaliswa kuze kunikelwe lomniniko lomusha
 
 :::tip
-Kuze utfole imiyalo lengephetseli yekutfunyelwa, bona sicwayiso se-[Kutfunyelwa Kwetinhlelo TeWebhu](../deployment/web-apps).
+Kuze utfole imiyalo lengephetseli yekutfunyelwa, bona sicwayiso se-[Kutfunyelwa Kwetinhlelo TeWebhu](../deployment/web-apps.md).
 :::

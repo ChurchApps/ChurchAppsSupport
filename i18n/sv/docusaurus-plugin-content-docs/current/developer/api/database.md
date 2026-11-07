@@ -1,5 +1,6 @@
 ---
 title: "Databas"
+description: "Lär dig hur ChurchApps API delar upp data över sex MySQL-databaser, en per modul, och hur du konfigurerar och initierar anslutningarna."
 ---
 
 # Databas
@@ -13,8 +14,8 @@ ChurchApps API använder en **databas-per-modul**-arkitektur. Var och en av de s
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Installera **MySQL 8.0+** -- se [Förutsättningar](../setup/prerequisites)
-- Konfigurera databasens anslutningssträngar i din `.env`-fil -- se [Miljövariabler](../setup/environment-variables)
+- Installera **MySQL 8.0+** -- se [Förutsättningar](../setup/prerequisites.md)
+- Konfigurera databasens anslutningssträngar i din `.env`-fil -- se [Miljövariabler](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Viktiga designbeslut
 
 - **En databas per modul** -- Varje modul har sin egen MySQL-databas med en dedikerad anslutningspool (hanteras av `KyselyPool`). Detta gör modulerna frikopplade och gör det möjligt att utveckla schemat oberoende av varandra.
-- **Exklusivt ägarskap** -- En moduls tabeller läses och skrivs endast av den modulens egen kod. När en annan modul behöver datan anropar den den ägande modulens gateway i stället för att fråga tabellerna själv -- se [Kommunikation mellan moduler](./module-structure#cross-module-communication).
+- **Exklusivt ägarskap** -- En moduls tabeller läses och skrivs endast av den modulens egen kod. När en annan modul behöver datan anropar den den ägande modulens gateway i stället för att fråga tabellerna själv -- se [Kommunikation mellan moduler](./module-structure.md#cross-module-communication).
 - **Repository-mönster utan ORM** -- All dataåtkomst sker via repository-klasser som bygger typade SQL-frågor med Kysely-frågebyggaren mot modulens schema. Det ger full kontroll över frågornas prestanda och beteende.
 - **Flerhyresgäster by design** -- Varje fråga är avgränsad med `churchId`. Alla tabeller har en `churchId`-kolumn, och repository-lagret säkerställer tenant-isolering automatiskt.
 
@@ -129,5 +130,5 @@ Denna begränsning är det som gör modulgränserna verkliga: varje schema kan u
 
 ## Relaterade artiklar
 
-- **[Modulstruktur](./module-structure)** -- Hur kontroller och repositories är organiserade inom varje modul
-- **[Lokal API-installation](./local-setup)** -- Fullständig steg-för-steg-guide för installation
+- **[Modulstruktur](./module-structure.md)** -- Hur kontroller och repositories är organiserade inom varje modul
+- **[Lokal API-installation](./local-setup.md)** -- Fullständig steg-för-steg-guide för installation

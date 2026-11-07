@@ -1,5 +1,6 @@
 ---
 title: "Aplicaciones Móviles"
+description: "Resumen de las apps móviles Expo y React Native de ChurchApps (B1 Mobile, B1 Checkin y LessonsScreen) y enlace a la guía de configuración común."
 ---
 
 # Aplicaciones Móviles
@@ -14,13 +15,13 @@ Las aplicaciones móviles de ChurchApps se construyen con **React Native** y **E
 
 | Aplicación | Propósito | Plataforma |
 |-----|---------|----------|
-| [B1 Mobile](./b1-mobile) | Aplicación principal dirigida a miembros para miembros de la iglesia | Android, iOS |
+| [B1 Mobile](./b1-mobile.md) | Aplicación principal dirigida a miembros para miembros de la iglesia | Android, iOS |
 | B1 Checkin | Aplicación de quiosco para estaciones de registro | Android, iOS |
 | LessonsScreen | Aplicación Android TV para mostrar lecciones en aulas | Android TV |
 
 ### B1 Mobile
 
-La aplicación principal para miembros de la iglesia. Los miembros pueden ver directorios, acceder a donaciones, verificar asistencia, recibir notificaciones e interactuar con su comunidad de iglesia. Ver la [guía de configuración de B1 Mobile](./b1-mobile) para detalles.
+La aplicación principal para miembros de la iglesia. Los miembros pueden ver directorios, acceder a donaciones, verificar asistencia, recibir notificaciones e interactuar con su comunidad de iglesia. Ver la [guía de configuración de B1 Mobile](./b1-mobile.md) para detalles.
 
 ### B1 Checkin
 
@@ -31,5 +32,5 @@ Una aplicación de quiosco con propósito específico diseñada para estaciones 
 Una aplicación Android TV que muestra contenido de lecciones en aulas. Los maestros pueden enviar diapositivas de lecciones, videos y actividades a una pantalla de TV, lo que facilita la presentación del material del plan de estudios durante las clases.
 
 :::info
-Todas las aplicaciones móviles comparten la misma cadena de herramientas basada en Expo y siguen patrones de configuración similares. La guía [B1 Mobile](./b1-mobile) sirve como referencia para el proceso de configuración general en todos los proyectos móviles.
+Todas las aplicaciones móviles comparten la misma cadena de herramientas basada en Expo y siguen patrones de configuración similares. La guía [B1 Mobile](./b1-mobile.md) sirve como referencia para el proceso de configuración general en todos los proyectos móviles.
 :::

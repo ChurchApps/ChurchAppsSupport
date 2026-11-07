@@ -1,5 +1,6 @@
 ---
 title: "Statistiken"
+description: "Download-Zahlen nach Studie, nutzende Gemeinden und deren Standorte in der Statistik von Lessons.church, filterbar nach Zeitraum."
 ---
 
 # Statistiken

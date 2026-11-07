@@ -1,5 +1,7 @@
 ---
-title: "Kucala"
+title: "Kuqala Nge-ChurchApps: Emaminithi Lamu-15 Lekucala"
+sidebar_label: "Kucala"
+description: "Setfa i-akhawunti ye-ChurchApps emasitepisi ambalwa: engeza tinkhangiso telibandla, ngenisa bantfu ku-B1 Admin, memetela ikhambu lakho, bese ukhetsa iprojekthi yekuqala."
 ---
 
 # Kucala

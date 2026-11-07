@@ -1,5 +1,6 @@
 ---
 title: "Planuri"
+description: "Aflați la ce planuri de slujire sunteți alocat în B1.church, verificați pozițiile și datele, și acceptați sau refuzați alocările din portalul membrilor."
 ---
 
 # Planuri

@@ -1,5 +1,6 @@
 ---
 title: "Rendszergazda"
+description: "Áttekintés a Lessons.church adminfelületéről: programok, tanulmányok, leckék, források, statisztikák és külső tantervi szolgáltatók kezelése."
 ---
 
 # Rendszergazda

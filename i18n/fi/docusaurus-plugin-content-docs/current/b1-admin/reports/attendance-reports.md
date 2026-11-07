@@ -1,5 +1,6 @@
 ---
 title: "Raporti o osallistumisesta"
+description: "Ohje B1 Adminin kolmeen osallistumisraporttiin (Attendance Trend, Group Attendance, Daily Group Attendance): mitä kukin näyttää sekä ajo- ja vientiohjeet."
 ---
 
 # Raporti o osallistumisesta

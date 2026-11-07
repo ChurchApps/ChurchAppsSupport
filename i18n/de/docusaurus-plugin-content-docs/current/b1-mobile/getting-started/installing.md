@@ -1,5 +1,6 @@
 ---
 title: "App Installieren"
+description: "Installieren Sie B1 Mobile aus dem App Store oder von Google Play. Die App ist veraltet, empfohlen wird jetzt die B1.church-PWA."
 ---
 
 # App Installieren
@@ -25,7 +26,7 @@ Sie können auch nach „B1 Mobile" suchen, wenn die erste Suche keine Ergebniss
 
 ## Nach Der Installation
 
-Nachdem die App installiert ist, öffnen Sie sie von Ihrem Home-Bildschirm aus. Sie sehen den Kirchensuch-Bildschirm, auf dem Sie Ihre Kirche finden und auswählen können. Wenn Sie bereits ein ChurchApps-Konto haben, können Sie sich [anmelden](./logging-in) sofort anmelden. Wenn nicht, können Sie ein Konto vom Anmelde-Bildschirm aus erstellen.
+Nachdem die App installiert ist, öffnen Sie sie von Ihrem Home-Bildschirm aus. Sie sehen den Kirchensuch-Bildschirm, auf dem Sie Ihre Kirche finden und auswählen können. Wenn Sie bereits ein ChurchApps-Konto haben, können Sie sich [anmelden](./logging-in.md) sofort anmelden. Wenn nicht, können Sie ein Konto vom Anmelde-Bildschirm aus erstellen.
 
 Die App fordert Sie auf, die Berechtigung zum Versenden von Push-Benachrichtigungen zu geben. Wir empfehlen, Benachrichtigungen zuzulassen, damit Sie Updates von Ihrer Kirche und Gruppen erhalten.
 

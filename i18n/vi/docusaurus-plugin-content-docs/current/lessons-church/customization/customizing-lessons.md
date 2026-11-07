@@ -1,5 +1,6 @@
 ---
 title: "Tùy chỉnh bài học"
+description: "Gỡ, ẩn hoặc sắp xếp lại phần và vai trò trong bài học Lessons.church, và chọn áp dụng thay đổi cho một lớp học hay tất cả các lớp."
 ---
 
 # Tùy chỉnh bài học

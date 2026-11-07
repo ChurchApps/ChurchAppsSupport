@@ -1,5 +1,6 @@
 ---
 title: "Downloads und Materialien"
+description: "Druckbare Aktivitätsblätter, Leiterhandbücher und PDFs zu Lessons.church-Lektionen, Studien oder Programmen finden und für Ihre Klasse herunterladen."
 ---
 
 # Downloads und Materialien

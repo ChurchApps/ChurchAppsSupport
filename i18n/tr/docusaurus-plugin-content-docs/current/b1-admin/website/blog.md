@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "B1 Admin'de Web Siteniz için Blog Yazma"
+sidebar_label: "Blog"
+description: "B1 Admin'de kilise web sitenizde blog yazılarını oluşturun, zamanlayın ve yayımlayın; özetler, kategoriler, etiketler, başlık fotoğrafları ve yorum gömmeleri dahil."
 ---
 
 # Blog
@@ -13,8 +15,8 @@ Blog sayfası, kilisenizin web sitesinde haber, güncelleme ve devosyonal yazıl
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Web siteniz için [İlk Kurulum](initial-setup) adımlarını tamamlayın
-- Ziyaretçilerin blogunuzu menüden bulmasını istiyorsanız, [Sayfaları Yönetme](managing-pages) bölümünden `/blog` adresine bir gezinme bağlantısı ekleyin
+- Web siteniz için [İlk Kurulum](./initial-setup.md) adımlarını tamamlayın
+- Ziyaretçilerin blogunuzu menüden bulmasını istiyorsanız, [Sayfaları Yönetme](./managing-pages.md) bölümünden `/blog` adresine bir gezinme bağlantısı ekleyin
 
 </div>
 
@@ -31,7 +33,7 @@ Blog sayfası, kilisenizin web sitesinde haber, güncelleme ve devosyonal yazıl
 3. Bir **Özet** ekleyin. Bu, yazı listesinde, meta açıklamalarda ve RSS beslemesinde gösterilen kısa bir özettir. Boş bırakırsanız, yazı içeriğinin başından otomatik olarak bir özet oluşturulur.
 4. Yazı gövdesini Markdown kullanarak **İçerik** düzenleyicisine yazın. Biçimlendirilmiş yazının nasıl görüneceğini görmek için **Önizleme**'ye tıklayın.
 5. Bir **Kategori** seçin (mevcut bir kategoriyi seçin veya yeni bir tane yazın) ve isteğe bağlı olarak virgülle ayrılmış **Etiketler** ekleyin.
-6. [Dosyalar](files) galerinizden bir fotoğraf seçmek veya yeni bir fotoğraf yüklemek için **Görsel Seç**'e tıklayın. Yüklenen fotoğraflar, 16:9 oranına kilitlenmiş yerleşik bir kırpma aracında açılır. Böylece her fotoğrafı yazı başlığına ve liste kartlarına uygun şekilde çerçeveleyebilirsiniz.
+6. [Dosyalar](./files.md) galerinizden bir fotoğraf seçmek veya yeni bir fotoğraf yüklemek için **Görsel Seç**'e tıklayın. Yüklenen fotoğraflar, 16:9 oranına kilitlenmiş yerleşik bir kırpma aracında açılır. Böylece her fotoğrafı yazı başlığına ve liste kartlarına uygun şekilde çerçeveleyebilirsiniz.
 7. **Yazar**'ı belirleyin. Varsayılan olarak sizsiniz, ancak veritabanınızdaki herhangi bir kişiyi arayıp seçebilirsiniz.
 8. Yazıyı herkese açmaya hazır olduğunuzda **Yayında** seçeneğini açın ve bir **Yayın Tarihi** belirleyin. Yazıyı taslak olarak kaydetmek için bu seçeneği kapalı bırakın.
 
@@ -58,7 +60,7 @@ Listedeki her yazı üç durumdan birini gösterir:
 Yayımlanmış yazılar `{yoursite}/blog` adresinde, sayfa başına 10 yazı olacak şekilde görünür. Arşivde gezinmek için **Daha Eski** ve **Daha Yeni** bağlantıları, bir kategori filtresi ve her yazının yazar bilgisi ile fotoğrafı da yer alır. Etiketler de tıklanabilir çipler olarak gösterilir. Böylece ziyaretçiler listeyi etikete göre aynı şekilde filtreleyebilir. Her yazının kendi sayfası `{yoursite}/blog/{slug}` adresinde bulunur ve aynı kategorideki ilgili yazıları içerir. Blog sayfası ayrıca bir RSS beslemesi yayımlar. Bu besleme, okuyucu uygulamaları ve Zapier gibi otomasyon araçları tarafından otomatik olarak keşfedilebilir.
 
 :::info
-Blog yazıları, normal web sitesi sayfalarından ayrı bir içerik türüdür. Bunlar [sayfa düzenleyicisinde](page-editor) oluşturulmaz ve Sayfalar listesinde görünmez. Bu sayede blog yazımı hızlı kalır ve yazmaya odaklanır.
+Blog yazıları, normal web sitesi sayfalarından ayrı bir içerik türüdür. Bunlar [sayfa düzenleyicisinde](./page-editor.md) oluşturulmaz ve Sayfalar listesinde görünmez. Bu sayede blog yazımı hızlı kalır ve yazmaya odaklanır.
 :::
 
 ## Yazıların Altına Yorum Ekleme
@@ -77,6 +79,6 @@ Kutuyu boşaltıp **Kaydet**'e tıklayarak kodu tüm yazılardan kaldırabilirsi
 
 ## Sonraki Adımlar
 
-- [Sayfaları Yönetme](managing-pages) -- Bloginize bir gezinme bağlantısı ekleyin
-- [Dosyalar](files) -- Yazılarınızda kullanmak üzere fotoğraf yükleyin
+- [Sayfaları Yönetme](./managing-pages.md) -- Bloginize bir gezinme bağlantısı ekleyin
+- [Dosyalar](./files.md) -- Yazılarınızda kullanmak üzere fotoğraf yükleyin
 - [Zapier Entegrasyonu](../integrations/zapier.md) -- Yeni yazılar yayımlandığında otomasyonları tetikleyin

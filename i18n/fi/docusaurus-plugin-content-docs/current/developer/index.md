@@ -1,5 +1,6 @@
 ---
 title: "Kehittäjädokumentaatio"
+description: "Opas ChurchAppsin kehittäjädokumentaatioon: paikallinen asennus, API- ja verkkosovellusohjeet, jaetut kirjastot, mobiilikäännökset ja julkaisu."
 ---
 
 # Kehittäjädokumentaatio
@@ -24,16 +25,16 @@ Keskeiset ominaisuudet:
 
 ## Mitä tämä osio kattaa
 
-- **[Asennus](setup/)** -- Paikallinen kehitysympäristö, esivaatimukset ja määritykset
-  - [Esivaatimukset](setup/prerequisites) -- Vaaditut työkalut ja ohjelmistot
-  - [Projektin yleiskatsaus](setup/project-overview) -- Kaikki projektit yhdellä silmäyksellä
-  - [Ympäristömuuttujat](setup/environment-variables) -- `.env`-tiedostojen määrittäminen
-- **[API](api/)** -- Ydin-API:n paikallinen asennus, tietokannan alustus ja moduulirakenne
-- **[Verkkosovellukset](web-apps/)** -- B1Adminin, B1Appin ja LessonsAppin ajaminen paikallisesti
-- **[Mobiilisovellukset](mobile/)** -- B1Mobilen ja muiden Expo-sovellusten rakentaminen
-- **[Jaetut kirjastot](shared-libraries/)** -- Helpers-, ApiHelper- ja AppHelper-kirjastojen käyttö
-- **[Julkaisu](deployment/)** -- API:iden, verkkosovellusten ja mobiilisovellusten julkaiseminen
-- **[FreePlay-sisältöpalveluntarjoaja](freeplay-content-provider)** -- Oppituntikirjastosi integrointi FreePlayhin
+- **[Asennus](./setup/index.md)** -- Paikallinen kehitysympäristö, esivaatimukset ja määritykset
+  - [Esivaatimukset](./setup/prerequisites.md) -- Vaaditut työkalut ja ohjelmistot
+  - [Projektin yleiskatsaus](./setup/project-overview.md) -- Kaikki projektit yhdellä silmäyksellä
+  - [Ympäristömuuttujat](./setup/environment-variables.md) -- `.env`-tiedostojen määrittäminen
+- **[API](./api/index.md)** -- Ydin-API:n paikallinen asennus, tietokannan alustus ja moduulirakenne
+- **[Verkkosovellukset](./web-apps/index.md)** -- B1Adminin, B1Appin ja LessonsAppin ajaminen paikallisesti
+- **[Mobiilisovellukset](./mobile/index.md)** -- B1Mobilen ja muiden Expo-sovellusten rakentaminen
+- **[Jaetut kirjastot](./shared-libraries/index.md)** -- Helpers-, ApiHelper- ja AppHelper-kirjastojen käyttö
+- **[Julkaisu](./deployment/index.md)** -- API:iden, verkkosovellusten ja mobiilisovellusten julkaiseminen
+- **[FreePlay-sisältöpalveluntarjoaja](./freeplay-content-provider.md)** -- Oppituntikirjastosi integrointi FreePlayhin
 
 ## Yhteisö ja resurssit
 

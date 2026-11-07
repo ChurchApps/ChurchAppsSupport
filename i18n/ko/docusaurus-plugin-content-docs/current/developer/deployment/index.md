@@ -1,5 +1,6 @@
 ---
 title: "배포"
+description: "각 ChurchApps 프로젝트의 배포 위치를 확인하세요. AWS Lambda API, S3 웹 앱, Expo 모바일 빌드, Railway 또는 Docker에 직접 호스팅하는 B1 Admin까지 다룹니다."
 ---
 
 # 배포
@@ -14,12 +15,12 @@ ChurchApps는 프로젝트 유형에 따라 서로 다른 배포 전략을 사�
 
 | 프로젝트 유형 | 배포 대상 | 도구 |
 |-------------|-------------------|---------|
-| [API](./apis) | AWS Lambda | Serverless Framework v3(Node.js 24.x 런타임) |
-| [웹 앱](./web-apps) | S3 + CloudFront | 정적 빌드, S3 동기화, CloudFront 무효화 |
-| [모바일 앱](./mobile) | 앱 스토어 | Expo EAS Build + OTA 업데이트 |
-| [자체 호스팅(Railway)](./railway-template) | Railway | 원클릭 템플릿: MySQL + Api + B1Admin + B1App |
-| [자체 호스팅(Docker)](./docker) | 모든 Docker 호스트 | 한 줄 설치 프로그램, 미리 빌드된 GHCR 이미지 + Caddy, `./deploy/b1`로 업그레이드/백업/롤백 |
-| [Caddy 사용자 지정 도메인 프록시](./caddy-proxy) | Windows EC2(Elastic IP `3.23.251.61`) | 정적 Caddyfile + WinSW 서비스 + 예약된 맵 동기화 |
+| [API](./apis.md) | AWS Lambda | Serverless Framework v3(Node.js 24.x 런타임) |
+| [웹 앱](./web-apps.md) | S3 + CloudFront | 정적 빌드, S3 동기화, CloudFront 무효화 |
+| [모바일 앱](./mobile.md) | 앱 스토어 | Expo EAS Build + OTA 업데이트 |
+| [자체 호스팅(Railway)](./railway-template.md) | Railway | 원클릭 템플릿: MySQL + Api + B1Admin + B1App |
+| [자체 호스팅(Docker)](./docker.md) | 모든 Docker 호스트 | 한 줄 설치 프로그램, 미리 빌드된 GHCR 이미지 + Caddy, `./deploy/b1`로 업그레이드/백업/롤백 |
+| [Caddy 사용자 지정 도메인 프록시](./caddy-proxy.md) | Windows EC2(Elastic IP `3.23.251.61`) | 정적 Caddyfile + WinSW 서비스 + 예약된 맵 동기화 |
 | FreeShow | 직접 다운로드 | Electron Builder(플랫폼별 바이너리) |
 
 ## 환경

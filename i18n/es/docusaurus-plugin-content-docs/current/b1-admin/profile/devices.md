@@ -1,5 +1,6 @@
 ---
 title: "Administración de Dispositivos"
+description: "Vincula, etiqueta y elimina pantallas ChurchAppsPlayer y FreePlay conectadas a tu cuenta de B1 Admin, para mantenerlas actualizadas y seguras."
 ---
 
 # Administración de Dispositivos

@@ -1,5 +1,6 @@
 ---
 title: "Vadovas: internetinių aukų nustatymas"
+description: "Nustatykite internetinius aukojimus B1 Admin: sukurkite aukų fondus, prijunkite Stripe ir pridėkite Aukoti puslapį į B1.church svetainę."
 ---
 
 # Internetinių aukų nustatymas
@@ -70,7 +71,7 @@ Jei norite patikrinti be tikrų mokėjimų, pirmiausia naudokite Stripe testavim
 Praneškite, kad nariai gali aukoti internetu.
 
 1. Bendrinkite aukojimo URL per savo svetainę, el. pašto naujienlaiškius, biuletenius ir socialinius tinklus
-2. Nariai taip pat gali aukoti per [B1 Mobile programėlę](../../b1-mobile/giving/). Aukojimo funkcija jau įtraukta į programėlę.
+2. Nariai taip pat gali aukoti per [B1 Mobile programėlę](../../b1-mobile/giving/index.md). Aukojimo funkcija jau įtraukta į programėlę.
 
 :::info
 Prisijungę nariai gali išsaugoti mokėjimo būdus, nustatyti pasikartojančias aukas ir peržiūrėti savo aukojimo istoriją. Anoniminis aukojimas taip pat veikia, prisijungti nereikia.

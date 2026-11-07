@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Xhuma i-Donorbox ku-B1 Admin nge-Zapier kuze timinikelo ku-inthanethi tidale emarekhodi ngalokuzenzakalelako, ngaphandle kwekukhipha ngesandla."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ I-*Umnikelo Lomusha nobe Lobuyeketiwe* we-Donorbox iyachubeka nasekulungisweni f
 
 ## Buka Nalokunye
 
-- [Zapier (kubuka konkhe)](../zapier) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Zapier
-- [Subsplash](./subsplash) — lenye inkundla yemnikelo lenele-app ye-Zapier
-- [Mailchimp](./mailchimp) — hlanganisa "sipho lesisha" kuphawu le-imeyili
+- [Zapier (kubuka konkhe)](../zapier.md) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Zapier
+- [Subsplash](./subsplash.md) — lenye inkundla yemnikelo lenele-app ye-Zapier
+- [Mailchimp](./mailchimp.md) — hlanganisa "sipho lesisha" kuphawu le-imeyili

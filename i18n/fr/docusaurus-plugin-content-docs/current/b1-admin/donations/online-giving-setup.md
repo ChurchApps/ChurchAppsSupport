@@ -1,5 +1,6 @@
 ---
 title: "Configuration des dons en ligne"
+description: "Reliez Stripe, PayPal, Kingdom Funding ou Paystack à B1 Admin pour que les membres puissent donner en ligne via votre site B1.church et que les dons se synchronisent avec vos dossiers."
 ---
 
 # Configuration des dons en ligne

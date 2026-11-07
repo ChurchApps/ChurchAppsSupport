@@ -1,5 +1,6 @@
 ---
 title: "Serververwaltung"
+description: "Nur für Server.Admin-Benutzer: Zwei-Faktor-Anmeldung zurücksetzen, Konten übernehmen, Commons moderieren und Kirchen-E-Mails in B1 Admin freigeben."
 ---
 
 # Serververwaltung

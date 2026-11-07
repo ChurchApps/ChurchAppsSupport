@@ -1,5 +1,6 @@
 ---
 title: "Haku"
+description: "Etsi ohjelmia, opintoja ja oppitunteja avainsanalla tai raamatunkertomuksella ja opi, miten hakutulokset järjestetään ja merkitään."
 ---
 
 # Haku

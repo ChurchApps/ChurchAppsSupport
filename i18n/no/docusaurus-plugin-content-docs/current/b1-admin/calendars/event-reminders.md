@@ -1,21 +1,22 @@
 ---
 title: "Påminnelser om arrangementer"
+description: "Sett opp arrangementspåminnelser i B1 Admin for push, e-post og SMS, med valg av tidspunkt, mottakere og egen melding, slik at folk får varsel i tide."
 ---
 
 # Påminnelser om arrangementer
 
 <div class="article-intro">
 
-Påminnelser om arrangementer varsler automatisk rett personer før et arrangement starter -- for eksempel «Ikke gå glipp av det! Helsekurset starter i morgen kl. 09.00.» Du konfigurerer en påminnelse én gang på arrangementet, og B1 sender den ut til rett tid via pushvarsler, e-post og, hvis menigheten din har tekstmeldinger satt opp, SMS. Medlemmer kan styre hvilke påminnelser de får, fra sine egne [varslingsinnstillinger](../../b1-church/getting-started/notification-preferences).
+Påminnelser om arrangementer varsler automatisk rett personer før et arrangement starter -- for eksempel «Ikke gå glipp av det! Helsekurset starter i morgen kl. 09.00.» Du konfigurerer en påminnelse én gang på arrangementet, og B1 sender den ut til rett tid via pushvarsler, e-post og, hvis menigheten din har tekstmeldinger satt opp, SMS. Medlemmer kan styre hvilke påminnelser de får, fra sine egne [varslingsinnstillinger](../../b1-church/getting-started/notification-preferences.md).
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Opprett arrangementet du vil minne folk på (se [Opprette kalendere](creating-calendars))
-- For å nå påmeldte deltakere må du [aktivere påmelding](creating-calendars) på arrangementet
-- For å nå en hel gruppe må du sørge for at arrangementet tilhører en [gruppe](../groups/creating-groups) med medlemmer
+- Opprett arrangementet du vil minne folk på (se [Opprette kalendere](./creating-calendars.md))
+- For å nå påmeldte deltakere må du [aktivere påmelding](./creating-calendars.md) på arrangementet
+- For å nå en hel gruppe må du sørge for at arrangementet tilhører en [gruppe](../groups/creating-groups.md) med medlemmer
 
 </div>
 
@@ -57,21 +58,21 @@ Gjester som bare er registrert med navn (uten koblet personpost), kan ikke få e
 - Gjentakende arrangementer håndteres automatisk: hver kommende forekomst får sin egen påminnelse.
 
 :::tip
-Påminnelser sendes **først som push, med e-post som reserve**. Hvis et medlem har pushvarsler aktivert, får de en push; hvis ikke, får de en e-post i stedet. Medlemmer velger hvilke kanaler de vil ha per varslingstype i sine [varslingsinnstillinger](../../b1-church/getting-started/notification-preferences).
+Påminnelser sendes **først som push, med e-post som reserve**. Hvis et medlem har pushvarsler aktivert, får de en push; hvis ikke, får de en e-post i stedet. Medlemmer velger hvilke kanaler de vil ha per varslingstype i sine [varslingsinnstillinger](../../b1-church/getting-started/notification-preferences.md).
 :::
 
 ## Tekstpåminnelser
 
 Kanalen **Tekstmelding** vises bare når menigheten din har en leverandør for tekstmeldinger koblet til. Tekstmeldinger sendes via menighetens leverandør for tekstmeldinger, og hver melding kan koste menigheten penger. De sendes i tillegg til eventuelle push- eller e-postpåminnelser, og bare til personer som:
 
-- Har slått på **Tekstmeldinger** i sine [varslingsinnstillinger](../../b1-church/getting-started/notification-preferences), og
+- Har slått på **Tekstmeldinger** i sine [varslingsinnstillinger](../../b1-church/getting-started/notification-preferences.md), og
 - Har et mobilnummer på profilen sin.
 
 Hver tekstmelding begynner med menighetens navn, holdes innenfor én tekstmelding og avsluttes med «Svar STOPP for å melde deg av.» Den som svarer STOPP, slutter å motta tekstmeldinger fra menigheten din. For at STOPP-svar skal nå B1, limer du inn **URL for innkommende (STOPP) webhook** fra [innstillingene for tekstmeldinger](../settings/church-settings.md#texting) i innkommende meldings-webhook hos leverandøren din.
 
 ## Hva medlemmer kan styre
 
-Påminnelser følger alltid hvert medlems [varslingsinnstillinger](../../b1-church/getting-started/notification-preferences). Et medlem kan:
+Påminnelser følger alltid hvert medlems [varslingsinnstillinger](../../b1-church/getting-started/notification-preferences.md). Et medlem kan:
 
 - Slå **påminnelser om arrangementer** av for push, e-post eller tekst, mens andre varsler forblir på.
 - Slå tekstpåminnelser av eller på med **Tekstmeldinger**.
@@ -81,10 +82,10 @@ Du kan ikke overstyre et medlems valg om å melde seg av påminnelser om arrange
 
 ## Tjenestepåminnelser
 
-Frivillige som er planlagt på en plan, får en egen **tjenestepåminnelse** med detaljene om planen, og når de ikke har svart ennå, knapper for **Godta / Avslå** rett i e-posten. Disse påminnelsene konfigureres på plantypen i stedet for på et kalenderarrangement, og kan også sendes som tekstmelding -- se [Påminnelser for frivillige](../serving/plans#volunteer-reminders) og [Søndagens frivillige](../guides/sunday-volunteers) for hvordan planlegging av frivillige og påminnelser fungerer.
+Frivillige som er planlagt på en plan, får en egen **tjenestepåminnelse** med detaljene om planen, og når de ikke har svart ennå, knapper for **Godta / Avslå** rett i e-posten. Disse påminnelsene konfigureres på plantypen i stedet for på et kalenderarrangement, og kan også sendes som tekstmelding -- se [Påminnelser for frivillige](../serving/plans.md#volunteer-reminders) og [Søndagens frivillige](../guides/sunday-volunteers.md) for hvordan planlegging av frivillige og påminnelser fungerer.
 
 ## Neste steg
 
-- [Varslingsinnstillinger](../../b1-church/getting-started/notification-preferences) -- Hva medlemmer kan styre
-- [Veiledning for påmelding til arrangementer](../guides/event-registration) -- Sett opp påmelding slik at påminnelser kan nå deltakerne
-- [Opprette kalendere](creating-calendars) -- Gå tilbake til oppsett av kalender
+- [Varslingsinnstillinger](../../b1-church/getting-started/notification-preferences.md) -- Hva medlemmer kan styre
+- [Veiledning for påmelding til arrangementer](../guides/event-registration.md) -- Sett opp påmelding slik at påminnelser kan nå deltakerne
+- [Opprette kalendere](./creating-calendars.md) -- Gå tilbake til oppsett av kalender

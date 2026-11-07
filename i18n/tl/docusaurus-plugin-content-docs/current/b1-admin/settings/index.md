@@ -1,5 +1,6 @@
 ---
 title: "Settings"
+description: "Hanapin ang daan sa Settings ng B1 Admin: impormasyon ng simbahan, branding, campus, custom field, user role, at navigation ng B1.church app."
 ---
 
 # Settings

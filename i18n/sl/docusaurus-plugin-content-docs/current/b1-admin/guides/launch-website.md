@@ -1,5 +1,6 @@
 ---
 title: "Vodnik: Zaženite svojo cerkveno spletno stran"
+description: "Nastavite cerkveno spletno mesto v B1 Admin: oblikujte domačo stran, uskladite barve in logotip, dodajte ključne strani, domeno in obrazce za darove."
 ---
 
 # Zaženite svojo cerkveno spletno stran

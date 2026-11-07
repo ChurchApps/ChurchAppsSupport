@@ -1,5 +1,7 @@
 ---
-title: "Grupy"
+title: "Grupy kościelne w portalu członka B1.church"
+sidebar_label: "Grupy"
+description: "Przeglądaj i dołączaj do grup na swojej stronie B1.church. Na stronach grup sprawdzaj spotkania, wydarzenia, członków i zasoby oraz czatuj z grupą."
 ---
 
 # Grupy

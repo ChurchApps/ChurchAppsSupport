@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Duyệt blog B1.church và nguồn cấp RSS"
+sidebar_label: "Blog"
+description: "Duyệt và lọc blog B1.church của hội thánh bạn theo danh mục hoặc thẻ, xem các bài cũ hơn, hoặc theo dõi bài mới qua nguồn cấp RSS."
 ---
 
 # Blog

@@ -1,5 +1,6 @@
 ---
 title: "Innsjekkingsflyt"
+description: "Gå gjennom B1 Church Checkin-kiosken steg for steg, fra valg av gudstjeneste til utsjekking. Sett først opp gudstjenester, grupper og personer i B1 Admin."
 ---
 
 # Innsjekkingsflyt
@@ -12,13 +13,13 @@ Innsjekkingsprosessen i B1 Church Checkin følger en enkel, trinnvis flyt. Et ki
 
 ## Innsjekkingsflyten i et raskt overblikk
 
-1. **[Velg en gudstjeneste](./selecting-service)** -- Velg hvilken gudstjeneste du deltar på (f.eks. søndag formiddag, søndag kveld, midtukes).
-2. **[Slå opp familien din](./looking-up-members)** -- Søk etter telefonnummer eller etternavn for å finne deg selv i systemet.
-3. **[Gjennomgå husstanden din](./household-review)** -- Se alle familiemedlemmer og deres nåværende gruppetildelinger.
-4. **[Tildel grupper](./group-assignment)** -- Velg hvilken klasse eller gruppe hvert familiemedlem skal delta i for hvert gudstjenestetidspunkt.
-5. **[Legg til gjester](./adding-guests)** (valgfritt) -- Legg til en besøkende i husstanden din hvis de blir med deg.
-6. **[Fullfør innsjekking](./completing-checkin)** -- Trykk på innsjekkingsknappen for å sende inn oppmøte og skrive ut etiketter.
-7. **[Sjekk ut](./checking-out)** (bemannede stasjoner) -- Ved henting bekreftes sikkerhetskoden og hentepersonen, med lister over godkjente hentepersoner, tilkalling av foreldre og reutskrift av etiketter.
+1. **[Velg en gudstjeneste](./selecting-service.md)** -- Velg hvilken gudstjeneste du deltar på (f.eks. søndag formiddag, søndag kveld, midtukes).
+2. **[Slå opp familien din](./looking-up-members.md)** -- Søk etter telefonnummer eller etternavn for å finne deg selv i systemet.
+3. **[Gjennomgå husstanden din](./household-review.md)** -- Se alle familiemedlemmer og deres nåværende gruppetildelinger.
+4. **[Tildel grupper](./group-assignment.md)** -- Velg hvilken klasse eller gruppe hvert familiemedlem skal delta i for hvert gudstjenestetidspunkt.
+5. **[Legg til gjester](./adding-guests.md)** (valgfritt) -- Legg til en besøkende i husstanden din hvis de blir med deg.
+6. **[Fullfør innsjekking](./completing-checkin.md)** -- Trykk på innsjekkingsknappen for å sende inn oppmøte og skrive ut etiketter.
+7. **[Sjekk ut](./checking-out.md)** (bemannede stasjoner) -- Ved henting bekreftes sikkerhetskoden og hentepersonen, med lister over godkjente hentepersoner, tilkalling av foreldre og reutskrift av etiketter.
 
 Når innsjekkingen er fullført, viser appen en suksesskjerm og returnerer automatisk til oppslagsskjermen, klar for neste familie.
 
@@ -36,5 +37,5 @@ Sørg for at følgende er konfigurert i B1 Admin før du bruker innsjekkingskios
 - **Personer** er lagt til i systemet med husstandstilknytninger. Se [legge til personer](../../b1-admin/people/adding-people.md).
 
 :::info
-Hvis du ikke har satt opp selve kiosken ennå, se [Komme i gang](../getting-started/) for instruksjoner om installasjon, innlogging og skriverkonfigurasjon.
+Hvis du ikke har satt opp selve kiosken ennå, se [Komme i gang](../getting-started/index.md) for instruksjoner om installasjon, innlogging og skriverkonfigurasjon.
 :::

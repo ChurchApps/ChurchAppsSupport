@@ -1,5 +1,6 @@
 ---
 title: "Výběr zařízení"
+description: "Vyberte vhodné zařízení pro třídní TV s FreePlay v dokumentaci ChurchApps: od tyčinek Fire TV a boxů Onn po Apple TV a které raději vynechat."
 ---
 
 # Výběr zařízení pro FreePlay

@@ -1,5 +1,6 @@
 ---
 title: "Bewertung des Transferrisikos"
+description: "ChurchApps-Compliance-Nachweis für Übermittlungen von Gemeindedaten aus UK/EWR in die USA: Schutzmaßnahmen, Unterauftragsverarbeiter, Zugriffskontrollen."
 ---
 
 # Bewertung des Transferrisikos

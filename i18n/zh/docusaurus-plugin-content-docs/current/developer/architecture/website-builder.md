@@ -1,5 +1,6 @@
 ---
 title: "网站构建器架构"
+description: "B1 网站构建器的开发者概览：内容树、共享元素目录、渲染流程，以及 B1 Admin 和 B1.church 中的 AI 页面生成。"
 ---
 
 # 网站构建器架构
@@ -82,7 +83,7 @@ title: "网站构建器架构"
 
 ### 编辑器表单（B1Admin）
 
-编辑器中各类型的设置表单位于 `B1Admin/src/site/admin/elements/`——`ElementEdit.tsx` 会分派给专用组件（`GalleryEdit`、`TestimonialEdit`、`StatsEdit` 等），或为每种类型分派内联的字段构建器。面向 AI 的该目录镜像是 API 的 MCP `describe_page_builder` 工具（参见 [MCP 服务器](../api/mcp)）。
+编辑器中各类型的设置表单位于 `B1Admin/src/site/admin/elements/`——`ElementEdit.tsx` 会分派给专用组件（`GalleryEdit`、`TestimonialEdit`、`StatsEdit` 等），或为每种类型分派内联的字段构建器。面向 AI 的该目录镜像是 API 的 MCP `describe_page_builder` 工具（参见 [MCP 服务器](../api/mcp.md)）。
 
 编辑器预览挂载的 `Theme` 与线上网站相同，它会根据教会的全局样式设置 `--headingFont` / `--bodyFont` CSS 变量。B1App 通过 `pages.css` 应用这些变量，而 B1Admin 无法导入该文件，因此 `ContentEditor.tsx` 会注入 `EDITOR_PAGE_FONT_CSS`（`src/site/admin/editorCss.ts`），将其应用于 `.page` 正文文字以及 `h1`–`h6`。若缺少该步骤，预览中的标题会以管理端字体显示。
 
@@ -151,7 +152,7 @@ title: "网站构建器架构"
 |---------|--------------|
 | 元描述 | `pages.metaDescription`（≤300 个字符）通过 `MetaHelper.getMetaData()` 流入每个构建器渲染路由的 Next.js `Metadata`（description + Open Graph）。B1Admin 的页面设置包含一个 AI "Generate"（生成）按钮（见下文） |
 | 重定向 | 每个教会的 `redirects` 行在 `/content/redirects` 下管理（`content.edit`，200 行上限，路径已标准化）。在即将返回 404 时，B1App 的页面路由会将路径与 `GET /content/redirects/public/:churchId` 进行比对，并通过 Next 的 `permanentRedirect` 返回 HTTP 308；未匹配的路径则交给 `notFound()` 处理 |
-| 品牌化 404 | `not-found.tsx` 会渲染带有教会标志、名称和主题的 `BrandedNotFound`，而不是通用错误页。未知的 `/register/[eventId]`、`/events/[eventId]`、`/stream/[pageSlug]` 和 `/volunteer/[planId]` 路径会返回真正的 404，未知的子域名和格式错误的页面 slug 也是如此（参见[网站路由与多站点](./websites)） |
+| 品牌化 404 | `not-found.tsx` 会渲染带有教会标志、名称和主题的 `BrandedNotFound`，而不是通用错误页。未知的 `/register/[eventId]`、`/events/[eventId]`、`/stream/[pageSlug]` 和 `/volunteer/[planId]` 路径会返回真正的 404，未知的子域名和格式错误的页面 slug 也是如此（参见[网站路由与多站点](./websites.md)） |
 | 结构化数据 | 博客文章上的 `BlogPosting` JSON-LD；单场讲道页面（`/{sdSlug}/sermons/[sermonId]`）以及包含 `sermons` 元素的页面上的 `VideoObject`；构建器页面上日历/活动元素以及每个 `/{sdSlug}/events/[eventId]` 页面的 `Event`（下一次发生，以活动照片作为 `image`）；`serviceTimes` 元素生成的 schema.org `Event` |
 | 讲道页面 | 每场公开讲道都有一个可供爬虫抓取的页面 `/sermons/[sermonId]`，包含完整的元数据——讲道不再被锁定在客户端的浏览器元素中 |
 | 分析 | 公开设置键 `ga4MeasurementId`（在 B1Admin 中与重定向一起管理）通过 `next/script` 注入每个教会专属的 GA4 gtag。当其为有效的 `G-` ID 时，B1 应用（`/{sdSlug}/mobile`）也会将其页面浏览量发送到该 ID，同时发送 ChurchApps 自己的标签（GTM 容器 ID 仅限网站使用）。每个 `gtag('config')` 都会根据 `navigator.standalone` 或 `(display-mode: standalone)` 媒体查询携带 `installed` 或 `browser` 形式的 `display_mode`（`B1App/src/helpers/mobileAnalytics.ts`） |
@@ -199,7 +200,7 @@ B1Admin 中的 `SectionToolbar` 改写按钮和页面列表中的"Generate Site"
 | `POST /website/generateAltText` | 对最多 20 个图片网址进行视觉调用；返回简洁的替代文字（≤125 个字符，去除 "photo of" 前缀） |
 | `POST /website/generateMetaDescription` | 根据页面的文字内容生成一条 SEO 元描述（≤155 个字符）——与 B1Admin 页面设置中的 Generate 按钮相连 |
 
-这些端点的提示词是位于 `AskApi/config/instructions/` 下的 Markdown 文件，其中包括模型生成时所依据的元素目录。有两项设计确保了目录的准确性：客户端在每次请求中都会传入 `availableElementTypes`（提示词只能使用该列表中的类型——服务器从不硬编码完整集合），而 API 的 MCP `describe_page_builder` 工具则为通过 [MCP](../api/mcp) 工作的 AI 代理提供相同的指南。模型为通过 OpenRouter 调用的 Anthropic Claude——区块内容使用 3.5 Haiku（为了降低延迟），大纲、网站规划和视觉则使用 3.5 Sonnet——当未配置 OpenRouter 密钥时，回退到 OpenAI。
+这些端点的提示词是位于 `AskApi/config/instructions/` 下的 Markdown 文件，其中包括模型生成时所依据的元素目录。有两项设计确保了目录的准确性：客户端在每次请求中都会传入 `availableElementTypes`（提示词只能使用该列表中的类型——服务器从不硬编码完整集合），而 API 的 MCP `describe_page_builder` 工具则为通过 [MCP](../api/mcp.md) 工作的 AI 代理提供相同的指南。模型为通过 OpenRouter 调用的 Anthropic Claude——区块内容使用 3.5 Haiku（为了降低延迟），大纲、网站规划和视觉则使用 3.5 Sonnet——当未配置 OpenRouter 密钥时，回退到 OpenAI。
 
 ## 对话式表单
 
@@ -224,8 +225,8 @@ B1App 的公开渲染路径会缓存带有教会标签的获取请求（生产�
 
 ## 相关页面
 
-- [网站路由与多站点](./websites) —— 请求如何解析到某个教会/站点，以及自定义域名如何路由
-- [内容端点](../api/endpoints/content) —— 页面、区块、元素、博客文章、重定向和设置的完整 REST 接口
-- [AppHelper](../shared-libraries/app-helper) —— 提供渲染器、注册表、分隔线和小组件的 npm 包
-- [MCP 服务器](../api/mcp) —— 包括 `describe_page_builder` 指南工具
+- [网站路由与多站点](./websites.md) —— 请求如何解析到某个教会/站点，以及自定义域名如何路由
+- [内容端点](../api/endpoints/content.md) —— 页面、区块、元素、博客文章、重定向和设置的完整 REST 接口
+- [AppHelper](../shared-libraries/app-helper.md) —— 提供渲染器、注册表、分隔线和小组件的 npm 包
+- [MCP 服务器](../api/mcp.md) —— 包括 `describe_page_builder` 指南工具
 - [页面编辑器（终端用户）](/docs/b1-admin/website/page-editor) —— 面向工作人员的编辑器文档

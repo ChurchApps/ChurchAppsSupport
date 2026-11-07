@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "A LessonsApp Next.js leckeszerkesztő helyi beállítása Node.js 22+-szal, csatlakozás helyi LessonsApi-hoz, build- és S3/CloudFront-telepítés."
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ A LessonsApp a [Lessons.church](https://lessons.church) tartalomkezelő alkalmaz
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Telepítse a **Node.js 22+** verziót és a **Git**-et -- lásd: [Előfeltételek](../setup/prerequisites)
-- Állítsa be az API-célpontot (helyi LessonsApi) -- lásd: [Környezeti változók](../setup/environment-variables)
+- Telepítse a **Node.js 22+** verziót és a **Git**-et -- lásd: [Előfeltételek](../setup/prerequisites.md)
+- Állítsa be az API-célpontot (helyi LessonsApi) -- lásd: [Környezeti változók](../setup/environment-variables.md)
 
 </div>
 
@@ -81,5 +82,5 @@ Az éles buildek **S3 + CloudFront** rendszerbe kerülnek:
 3. CloudFront-invalidálás indul, hogy az új verzió legyen kiszolgálva
 
 :::tip
-A részletes telepítési útmutatóért lásd: [Webalkalmazások telepítése](../deployment/web-apps).
+A részletes telepítési útmutatóért lásd: [Webalkalmazások telepítése](../deployment/web-apps.md).
 :::

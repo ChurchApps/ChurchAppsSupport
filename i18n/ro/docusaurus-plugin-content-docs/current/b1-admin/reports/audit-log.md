@@ -1,5 +1,6 @@
 ---
 title: "Jurnal de audit"
+description: "Consultă jurnalul de audit din B1 Admin: cine s-a conectat, a editat fișe de persoane sau a schimbat permisiuni. Exportă intrările filtrate în CSV."
 ---
 
 # Jurnal de audit
@@ -78,6 +79,6 @@ Verificați jurnalul de audit în mod regulat, mai ales după integrarea de noi 
 
 ## Articole conexe
 
-- [Roluri și permisiuni](../settings/roles-permissions) -- Gestionați cine are acces la ce
-- [Securitatea datelor](../settings/data-security) -- Aflați cum sunt protejate datele dumneavoastră
+- [Roluri și permisiuni](../settings/roles-permissions.md) -- Gestionați cine are acces la ce
+- [Securitatea datelor](../settings/data-security.md) -- Aflați cum sunt protejate datele dumneavoastră
 - [Prezentare generală a rapoartelor](./index.md) -- Consultați toate rapoartele disponibile

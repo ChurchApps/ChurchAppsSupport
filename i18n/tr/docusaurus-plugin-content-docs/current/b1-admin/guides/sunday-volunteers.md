@@ -1,5 +1,6 @@
 ---
 title: "Kılavuz: Pazar Gönüllülerini Yönetin"
+description: "B1 Admin'de gönüllü ekipleri, haftalık ibadet planları ve pazar görevlerini kurun; gönüllüler atamaları B1.church ve mobil uygulamada görüp yanıtlasın."
 ---
 
 # Pazar Gönüllülerini Yönetin
@@ -95,7 +96,7 @@ Gönüllülerin yönetici atamalarını beklemek yerine pozisyonlara kendilerini
 3. Her pozisyon için, kendi kendine kayıt için kullanılabilir olması amacıyla **Kendi Kendine Kayda İzin Ver** kutusunu işaretleyin.
 4. Gönüllülerin rolün neler içerdiğini bilmesi için her pozisyona bir **Açıklama** ekleyin.
 
-Kendi kendine kayıt pozisyonları oluşturulduğunda, [B1.church](../../b1-church/serving/volunteer-signup) ve [B1 Mobile uygulamasındaki](../../b1-mobile/serving/volunteer-signup) gönüllü kayıt sayfalarında otomatik olarak görünür. Üyeler açık pozisyonlara göz atabilir, kalan yer sayısını görebilir ve tek tıklamayla kaydolabilir.
+Kendi kendine kayıt pozisyonları oluşturulduğunda, [B1.church](../../b1-church/serving/volunteer-signup.md) ve [B1 Mobile uygulamasındaki](../../b1-mobile/serving/volunteer-signup.md) gönüllü kayıt sayfalarında otomatik olarak görünür. Üyeler açık pozisyonlara göz atabilir, kalan yer sayısını görebilir ve tek tıklamayla kaydolabilir.
 
 :::tip
 Aynı planda yönetici tarafından atanan ve kendi kendine kayıt olunan pozisyonları karıştırın. Örneğin, ibadet liderinizi doğrudan atayın, ancak karşılayıcıların ve kahve servis görevlilerinin kendileri seçmesine izin verin.
@@ -109,7 +110,7 @@ Atanan gönüllüler planlarını otomatik olarak görür ve yanıt verebilir.
 2. Atamaları her iki platformdan doğrudan kabul edebilir veya reddedebilirler
 3. Müsait olmadıkları haftalar için engelleme tarihleri belirleyebilirler
 4. Planlar prova için yazdırılabilir veya sahne arkasına asılabilir
-5. Gönüllüler [gönüllü kayıt sayfası](../../b1-church/serving/volunteer-signup) üzerinden açık pozisyonlara göz atabilir ve kaydolabilir
+5. Gönüllüler [gönüllü kayıt sayfası](../../b1-church/serving/volunteer-signup.md) üzerinden açık pozisyonlara göz atabilir ve kaydolabilir
 
 :::tip
 Mobil uygulamadaki anlık bildirimler, gönüllülere yeni bir atama aldıklarında veya planlar değiştiğinde uyarı gönderir.
@@ -130,5 +131,5 @@ Gönüllü yönetim sisteminiz kurulmuş durumda. Her hafta yeni bir plan oluşt
 - [İş Akışları](../serving/workflows.md) — tetikleyiciler ve otomatik adımlarla kişileri tekrarlanabilir süreçlerden geçirin
 - [Planları Görüntüleme (Web)](../../b1-church/plans/viewing-plans.md) — gönüllülerin planları çevrim içi nasıl gördüğü
 - [Planları Görüntüleme (Mobil)](../../b1-mobile/serving/viewing-plans.md) — gönüllülerin planları mobilde nasıl gördüğü
-- [Gönüllü Kaydı (Web)](../../b1-church/serving/volunteer-signup) — üyelerin gönüllü pozisyonlarını kendilerinin seçmesi
-- [Gönüllü Kaydı (Mobil)](../../b1-mobile/serving/volunteer-signup) — mobilde gönüllü kendi kendine kaydı
+- [Gönüllü Kaydı (Web)](../../b1-church/serving/volunteer-signup.md) — üyelerin gönüllü pozisyonlarını kendilerinin seçmesi
+- [Gönüllü Kaydı (Mobil)](../../b1-mobile/serving/volunteer-signup.md) — mobilde gönüllü kendi kendine kaydı

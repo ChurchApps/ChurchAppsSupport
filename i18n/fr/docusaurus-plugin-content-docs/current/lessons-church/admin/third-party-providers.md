@@ -1,5 +1,6 @@
 ---
 title: "Fournisseurs tiers"
+description: "Ajouter un flux de curriculum externe à Lessons.church depuis la page Fournisseurs tiers, puis consulter, mettre à jour ou supprimer les connexions."
 ---
 
 # Fournisseurs tiers

@@ -1,5 +1,6 @@
 ---
 title: "Points de terminaison de présence"
+description: "Référence de l’API de présence dans B1 Admin et B1 Checkin : campus, services, horaires, sessions, visites, règles d’enregistrement et points d’export."
 ---
 
 # Points de terminaison de présence
@@ -270,6 +271,6 @@ Suit les séries de présence des personnes, c'est-à-dire le nombre de semaines
 
 ## Pages connexes
 
-- [Points de terminaison Membership](./membership) — Personnes, groupes, rôles et gestion de l'église
-- [Authentification et autorisations](./authentication) — Flux de connexion, JWT, modèle d'autorisations
-- [Structure du module](../module-structure) — Organisation du code
+- [Points de terminaison Membership](./membership.md) — Personnes, groupes, rôles et gestion de l'église
+- [Authentification et autorisations](./authentication.md) — Flux de connexion, JWT, modèle d'autorisations
+- [Structure du module](../module-structure.md) — Organisation du code

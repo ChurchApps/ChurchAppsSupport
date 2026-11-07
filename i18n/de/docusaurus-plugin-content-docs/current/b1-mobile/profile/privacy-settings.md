@@ -1,5 +1,6 @@
 ---
 title: "Datenschutzeinstellungen"
+description: "Bestimmen Sie, welche Angaben wie Telefon, E-Mail und Adresse im Verzeichnis von B1 Mobile sichtbar sind, und prüfen Sie ausstehende Änderungen."
 ---
 
 # Datenschutzeinstellungen
@@ -13,7 +14,7 @@ Die Registerkarte **Sichtbarkeit** auf deinem Profilbildschirm legt fest, welche
 <div class="prereqs">
 <h4>Bevor du beginnst</h4>
 
-- [Installiere B1 Mobile](../getting-started/installing) und [melde dich](../getting-started/logging-in) bei deinem Konto an
+- [Installiere B1 Mobile](../getting-started/installing.md) und [melde dich](../getting-started/logging-in.md) bei deinem Konto an
 
 </div>
 
@@ -52,8 +53,8 @@ Die Registerkarte **Konto** bietet Zugriff auf deine Sicherheitseinstellungen. V
 
 | Registerkarte | Zweck |
 |---|---|
-| **Profil** | [Persönliche Daten](./editing-profile) und Foto bearbeiten |
-| **Haushalt** | [Familienmitglieder anzeigen](./household) |
+| **Profil** | [Persönliche Daten](./editing-profile.md) und Foto bearbeiten |
+| **Haushalt** | [Familienmitglieder anzeigen](./household.md) |
 | **Sichtbarkeit** | Festlegen, was andere im Verzeichnis sehen |
 | **Ausstehend** | Profiländerungen prüfen, die auf Genehmigung warten |
 | **Konto** | Sicherheitseinstellungen verwalten |
@@ -62,6 +63,6 @@ Diese Registerkarten arbeiten zusammen, damit du die volle Kontrolle über deine
 
 ## Verwandte Artikel
 
-- [Profil bearbeiten](./editing-profile) -- Persönliche Daten aktualisieren
-- [Haushalt](./household) -- Familienmitglieder anzeigen und verwalten
+- [Profil bearbeiten](./editing-profile.md) -- Persönliche Daten aktualisieren
+- [Haushalt](./household.md) -- Familienmitglieder anzeigen und verwalten
 - [Mitgliederverzeichnis](../community/member-directory.md) -- Sehen, wie dein Profil für andere erscheint

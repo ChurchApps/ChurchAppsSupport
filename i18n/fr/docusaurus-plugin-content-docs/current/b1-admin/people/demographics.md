@@ -1,5 +1,6 @@
 ---
 title: "Données démographiques"
+description: "Consultez la composition de votre congrégation par âge, genre, statut de membre, état civil et campus dans les graphiques interactifs de B1 Admin, et explorez n'importe quel groupe."
 ---
 
 # Données démographiques

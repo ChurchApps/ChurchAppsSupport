@@ -1,5 +1,6 @@
 ---
 title: "Bejelentkezési biztonság"
+description: "Gyermekbiztonsági beállítások a B1 Admin-ban: teremkapacitás, önkéntesarány, megbízott átvételi listák és SMS a szülőknek bejelentkezéskor."
 ---
 
 # Bejelentkezési biztonság
@@ -15,7 +16,7 @@ A B1 a bejelentkezéshez gyermekbiztonsági funkciókat is tartalmaz: a helyisé
 
 - Állítsa be a [jelenléti struktúrát](setup.md) és a [bejelentkező kioszkokat](check-in.md)
 - A helyiségek az istentiszteleti időpontokhoz kapcsolt [csoportok](../groups/creating-groups.md) — az alábbi biztonsági beállítások a csoporton találhatók
-- A szülőnek szóló értesítés és a vészhelyzeti közlemény összekapcsolt SMS-szolgáltatót igényel ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream) vagy Mutual Ministry)
+- A szülőnek szóló értesítés és a vészhelyzeti közlemény összekapcsolt SMS-szolgáltatót igényel ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md) vagy Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Mindkét funkció az egyház összekapcsolt SMS-szolgáltatóján keresztül kü
 
 Azok, akik leiratkoztak az SMS-ekről, vagy nincs mobilszámuk rögzítve, automatikusan kimaradnak — a kioszk jelzi, hány üzenet ment el és hányat hagytak ki.
 
-A kioszkos részletes útmutatóért lásd: [Kijelentkezés és gyermekbiztonság](../../b1-checkin/check-in/checking-out).
+A kioszkos részletes útmutatóért lásd: [Kijelentkezés és gyermekbiztonság](../../b1-checkin/check-in/checking-out.md).
 
 ## Kapcsolódó cikkek
 
 - [Bejelentkezés](check-in.md) — kioszk beállítása és hardver
-- [Kijelentkezés és gyermekbiztonság](../../b1-checkin/check-in/checking-out) — a kioszk kijelentkezése, az átvétel ellenőrzése és az értesítési folyamatok
+- [Kijelentkezés és gyermekbiztonság](../../b1-checkin/check-in/checking-out.md) — a kioszk kijelentkezése, az átvétel ellenőrzése és az értesítési folyamatok
 - [Csoportok létrehozása](../groups/creating-groups.md) — ahol a helyiségbeállítások találhatók
 - [Jelenlét beállítása](setup.md) — szolgáltatások, istentiszteleti időpontok és helyiség-hozzárendelések
 - [Minimális életkor a privát üzenetekhez](../settings/mobile-app.md#member-directory--messaging-settings) — új privát üzenetbeszélgetéseket blokkol gyermekekkel, miközben megmarad a névjegyzékben

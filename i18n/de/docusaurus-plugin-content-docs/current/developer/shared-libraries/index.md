@@ -1,5 +1,6 @@
 ---
 title: "Gemeinsame Bibliotheken"
+description: "Doku der von B1 Admin, B1.church und den APIs genutzten @churchapps-npm-Pakete, Einrichtung des Packages-Workspace und Releases mit Changesets."
 ---
 
 # Gemeinsame Bibliotheken
@@ -14,9 +15,9 @@ Der gemeinsam genutzte ChurchApps-Code wird unter dem npm-Scope `@churchapps/*` 
 
 | Paket | Beschreibung | Verwendet von |
 |-------|--------------|---------------|
-| [`@churchapps/helpers`](./helpers) | Grundlagenschicht: framework-unabhängige Hilfsfunktionen und die gemeinsamen TypeScript-Schnittstellen, die den anwendungsübergreifenden Datenvertrag bilden | Alle Projekte |
-| [`@churchapps/apihelper`](./api-helper) | Serverseitige Express-Hilfsfunktionen: Authentifizierung, Basis-Controller, Datenbankzugriff, AWS- und E-Mail-Integrationen | Alle APIs |
-| [`@churchapps/apphelper`](./app-helper) | Gemeinsame React-Komponenten und Funktionsmodule (Anmeldung, Spenden, Formulare, Markdown, Website) | Alle Web-Apps |
+| [`@churchapps/helpers`](./helpers.md) | Grundlagenschicht: framework-unabhängige Hilfsfunktionen und die gemeinsamen TypeScript-Schnittstellen, die den anwendungsübergreifenden Datenvertrag bilden | Alle Projekte |
+| [`@churchapps/apihelper`](./api-helper.md) | Serverseitige Express-Hilfsfunktionen: Authentifizierung, Basis-Controller, Datenbankzugriff, AWS- und E-Mail-Integrationen | Alle APIs |
+| [`@churchapps/apphelper`](./app-helper.md) | Gemeinsame React-Komponenten und Funktionsmodule (Anmeldung, Spenden, Formulare, Markdown, Website) | Alle Web-Apps |
 | `@churchapps/content-providers` | Abstraktion über Drittanbieter für Inhalte (Lessons.church, Planning Center, Dropbox und weitere) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Werkzeugkasten für den Aufbau von B1.church-Integrationen: Webhook-Verifizierung, typisierter REST-Client, OAuth-Hilfsfunktionen | Externe Integrationsentwickler |
 | `@churchapps/texting` | Abstraktion für SMS-Anbieter (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

@@ -1,5 +1,6 @@
 ---
 title: "Razgovori"
+description: "Pradėkite, skaitykite, redaguokite ir trinkite privačius pokalbius su bažnyčios nariais B1 Mobile programėlėje ir raskite žmones per narių katalogą."
 ---
 
 # Razgovori
@@ -13,7 +14,7 @@ B1 Mobile uključuje privatne poruke kako biste mogli voditi razgovore jedan na 
 <div class="prereqs">
 <h4>Prije nego što počnete</h4>
 
-- [Instalirajte B1 Mobile](../getting-started/installing) i [se prijavite](../getting-started/logging-in) na svoj račun
+- [Instalirajte B1 Mobile](../getting-started/installing.md) i [se prijavite](../getting-started/logging-in.md) na svoj račun
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile uključuje privatne poruke kako biste mogli voditi razgovore jedan na 
 ## Pokretanje novog razgovora
 
 1. Na zaslonu za razmjenu poruka dodirnite opciju za pokretanje novog razgovora.
-2. Upotrijebite polje za pretraživanje da biste pronašli člana kojem želite poslati poruku. Članove možete pronaći i putem [Imenika članova](./member-directory).
+2. Upotrijebite polje za pretraživanje da biste pronašli člana kojem želite poslati poruku. Članove možete pronaći i putem [Imenika članova](./member-directory.md).
 3. Odaberite člana iz rezultata pretraživanja.
 4. Upišite svoju poruku i dodirnite **Send**.
 
@@ -52,11 +53,11 @@ Koristite razmjenu poruka za koordinaciju s drugim volonterima, za praćenje oso
 :::
 
 :::info
-Uključite [obavijesti push](./notifications) kako biste bili obaviješteni kada vam netko pošalje novu poruku, čak i kada aplikacija nije otvorena.
+Uključite [obavijesti push](./notifications.md) kako biste bili obaviješteni kada vam netko pošalje novu poruku, čak i kada aplikacija nije otvorena.
 :::
 
 ## Povezani članci
 
-- [Imenik članova](./member-directory) -- Pronađite članove kojima želite poslati poruku
-- [Obavijesti](./notifications) -- Saznajte o novim porukama
-- [Grupe](../groups/) -- Sudjelujte u grupnim razgovorima
+- [Imenik članova](./member-directory.md) -- Pronađite članove kojima želite poslati poruku
+- [Obavijesti](./notifications.md) -- Saznajte o novim porukama
+- [Grupe](../groups/index.md) -- Sudjelujte u grupnim razgovorima

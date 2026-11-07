@@ -1,5 +1,6 @@
 ---
 title: "Recherche de membres"
+description: "Retrouvez votre famille sur la borne B1 Checkin par chiffres du téléphone ou nom, ou inscrivez-vous comme invité lors d'une première visite."
 ---
 
 # Recherche de membres
@@ -13,7 +14,7 @@ Après avoir sélectionné un service, vous accédez à l'écran de recherche de
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Sélectionnez un service](./selecting-service) à partir de l'écran des services
+- [Sélectionnez un service](./selecting-service.md) à partir de l'écran des services
 - Assurez-vous que votre ménage a été [ajouté au système](../../b1-admin/people/adding-people.md) par un administrateur de l'église
 
 </div>
@@ -45,7 +46,7 @@ L'application recherche les membres dont le nom correspond à ce que vous avez s
 
 Les résultats de la recherche apparaissent sous forme de cartes sous le champ de recherche. Chaque carte affiche le **nom** et la **photo** de la personne (si l'une d'elles est en dossier).
 
-Appuyez sur la carte d'une personne pour la sélectionner. L'application charge tous les membres du ménage de cette personne et vous amène à l'[écran de révision du ménage](./household-review).
+Appuyez sur la carte d'une personne pour la sélectionner. L'application charge tous les membres du ménage de cette personne et vous amène à l'[écran de révision du ménage](./household-review.md).
 
 :::tip
 La recherche par les 4 derniers chiffres d'un numéro de téléphone est le moyen le plus rapide de rechercher votre famille. Encouragez les membres à utiliser cette méthode pour une expérience d'enregistrement plus rapide.
@@ -60,7 +61,7 @@ Si aucun résultat n'est trouvé, l'application affiche un message pour vous le 
 Si votre église a l'enregistrement des invités par code QR activé, un lien **S'inscrire en tant qu'invité** apparaît sous la recherche sur l'écran de recherche. Les visiteurs pour la première fois peuvent l'utiliser pour ajouter leur famille au système de l'église avant de s'enregistrer.
 
 1. Appuyez sur **S'inscrire en tant qu'invité**. Une fenêtre s'ouvre avec un code QR et le message « Scannez pour vous inscrire en tant qu'invité ».
-2. Choisissez comment remplir le [formulaire d'enregistrement des invités](../../b1-church/checkin/guest-registration) :
+2. Choisissez comment remplir le [formulaire d'enregistrement des invités](../../b1-church/checkin/guest-registration.md) :
    - **Sur votre téléphone** -- Scannez le code QR, remplissez le formulaire sur votre téléphone, et appuyez sur **OK** pour fermer la fenêtre.
    - **Sur le kiosque** -- Appuyez sur **S'inscrire ici** pour ouvrir le même formulaire directement sur la tablette. Remplissez-le et appuyez sur **S'inscrire**, puis appuyez sur **Terminé** (ou la flèche retour) pour revenir à l'écran de recherche.
 3. Une fois inscrit, recherchez votre famille par nom ou numéro de téléphone pour vous enregistrer.
@@ -71,7 +72,7 @@ Le formulaire ouvert avec **S'inscrire ici** reste sur la page d'enregistrement 
 
 ## Impression d'étiquettes pour un enregistrement par téléphone
 
-Les familles qui se sont déjà enregistrées sur leur téléphone via l'[auto-enregistrement B1 Church](../../b1-church/checkin/self-checkin) peuvent imprimer leurs badges au kiosque sans se rechercher.
+Les familles qui se sont déjà enregistrées sur leur téléphone via l'[auto-enregistrement B1 Church](../../b1-church/checkin/self-checkin.md) peuvent imprimer leurs badges au kiosque sans se rechercher.
 
 1. Sur l'écran de recherche, appuyez sur le bouton **Scanner le code** (l'icône du code QR).
 2. Tenez le code QR de votre téléphone face à la caméra. Si l'application demande l'accès à la caméra, appuyez sur **Autoriser la caméra**. La caméra avant est utilisée par défaut ; appuyez sur le bouton de basculement pour changer.
@@ -81,4 +82,4 @@ Le scan n'imprime que les étiquettes -- l'assiduité a déjà été enregistré
 
 ## Prochaine étape
 
-Après avoir sélectionné une personne, vous allez [réviser votre ménage](./household-review) et gérer les affectations de groupe.
+Après avoir sélectionné une personne, vous allez [réviser votre ménage](./household-review.md) et gérer les affectations de groupe.

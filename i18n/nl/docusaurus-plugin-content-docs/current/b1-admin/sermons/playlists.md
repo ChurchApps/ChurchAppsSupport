@@ -1,5 +1,6 @@
 ---
 title: "Afspeellijsten"
+description: "Groepeer je preken in B1 Admin in series, zodat bezoekers op je B1.church-website elke preekserie in volgorde kunnen bekijken en volgen."
 ---
 
 # Afspeellijsten
@@ -39,10 +40,10 @@ Maak eerst uw afspeellijsten voordat u preken toevoegt. Op deze manier kunt u el
 
 ## Preken aan een afspeellijst toevoegen
 
-Wanneer u [een preek toevoegt of bewerkt](managing-sermons), wijst u deze aan een afspeellijst toe met behulp van de vervolgkeuzelijst **Afspeellijst**. Alle preken die aan dezelfde afspeellijst zijn toegewezen, worden samen gegroepeerd en in volgorde op uw website weergegeven.
+Wanneer u [een preek toevoegt of bewerkt](./managing-sermons.md), wijst u deze aan een afspeellijst toe met behulp van de vervolgkeuzelijst **Afspeellijst**. Alle preken die aan dezelfde afspeellijst zijn toegewezen, worden samen gegroepeerd en in volgorde op uw website weergegeven.
 
 :::info
-U kunt preken ook aan afspeellijsten toewijzen tijdens [Bulkimport](bulk-import). Wanneer u van YouTube of Vimeo importeert, selecteert u een afspeellijst uit de vervolgkeuzelijst **Importeren in afspeellijst** voordat u op **Importeren** klikt.
+U kunt preken ook aan afspeellijsten toewijzen tijdens [Bulkimport](./bulk-import.md). Wanneer u van YouTube of Vimeo importeert, selecteert u een afspeellijst uit de vervolgkeuzelijst **Importeren in afspeellijst** voordat u op **Importeren** klikt.
 :::
 
 ## Hoe afspeellijsten op uw website verschijnen
@@ -55,5 +56,5 @@ Afspeellijsten worden op uw B1.church-website weergegeven als doorbladerbare ver
 
 ## Volgende stappen
 
-- [Preken beheren](managing-sermons) -- Voeg afzonderlijke preken aan uw afspeellijsten toe
-- [Bulkimport](bulk-import) -- Importeer meerdere preken en wijs deze aan afspeellijsten toe
+- [Preken beheren](./managing-sermons.md) -- Voeg afzonderlijke preken aan uw afspeellijsten toe
+- [Bulkimport](./bulk-import.md) -- Importeer meerdere preken en wijs deze aan afspeellijsten toe

@@ -1,5 +1,6 @@
 ---
 title: "Endpoint-uri pentru conținut"
+description: "Referință de endpoint-uri pentru API-ul de conținut ChurchApps: pagini de site, articole de blog, redirecționări, predici, evenimente, fișiere, căutări biblice și cântece din B1 Admin."
 ---
 
 # Endpoint-uri pentru conținut
@@ -133,7 +134,7 @@ Cale de bază: `/content/pageHistory`
 
 Cale de bază: `/content/posts`
 
-Postările de blog sunt rânduri independente: `title`, `slug` (unic pentru fiecare biserică), `excerpt`, `content` (corp în markdown), `authorId`, `photoUrl`, `publishDate`, `category` și `tags`. O postare este publicată după ce `publishDate` este setată și se află în trecut. Endpoint-urile de citire completează fiecare postare cu `authorName`, preluat din `authorId`. Consultați [Arhitectura constructorului de site-uri web](../../architecture/website-builder#blog).
+Postările de blog sunt rânduri independente: `title`, `slug` (unic pentru fiecare biserică), `excerpt`, `content` (corp în markdown), `authorId`, `photoUrl`, `publishDate`, `category` și `tags`. O postare este publicată după ce `publishDate` este setată și se află în trecut. Endpoint-urile de citire completează fiecare postare cu `authorName`, preluat din `authorId`. Consultați [Arhitectura constructorului de site-uri web](../../architecture/website-builder.md#blog).
 
 | Metodă | Cale | Autentificare | Permisiune | Descriere |
 |--------|------|---------------|------------|-----------|
@@ -458,8 +459,8 @@ Cale de bază: `/content/support`
 
 ## Pagini conexe
 
-- [Arhitectura constructorului de site-uri web](../../architecture/website-builder) -- Cum se integrează paginile, secțiunile, elementele, postările și redirecționările în toate aplicațiile
-- [Endpoint-uri pentru membri](./membership) -- Persoane, biserici, grupuri, roluri, permisiuni
-- [Endpoint-uri pentru prezență](./attendance) -- Urmărirea serviciilor și a vizitelor
-- [Autentificare și permisiuni](./authentication) -- Fluxul de autentificare, JWT, modelul de permisiuni
-- [Structura modulelor](../module-structure) -- Modele de organizare a codului
+- [Arhitectura constructorului de site-uri web](../../architecture/website-builder.md) -- Cum se integrează paginile, secțiunile, elementele, postările și redirecționările în toate aplicațiile
+- [Endpoint-uri pentru membri](./membership.md) -- Persoane, biserici, grupuri, roluri, permisiuni
+- [Endpoint-uri pentru prezență](./attendance.md) -- Urmărirea serviciilor și a vizitelor
+- [Autentificare și permisiuni](./authentication.md) -- Fluxul de autentificare, JWT, modelul de permisiuni
+- [Structura modulelor](../module-structure.md) -- Modele de organizare a codului

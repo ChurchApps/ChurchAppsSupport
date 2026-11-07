@@ -1,5 +1,6 @@
 ---
 title: "Estilos de Navegación"
+description: "Personaliza los colores de las barras de navegación sólidas y transparentes del sitio web en B1 Admin, incluyendo los estados de enlace, al pasar el cursor y activo para tu sitio de iglesia."
 ---
 
 # Estilos de Navegación

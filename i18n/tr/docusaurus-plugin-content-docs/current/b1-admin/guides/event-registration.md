@@ -1,5 +1,6 @@
 ---
 title: "Kılavuz: Etkinlik Kaydını Ayarlama"
+description: "B1 Admin'de katılımcı bilgilerini ve isteğe bağlı ödemeleri toplayan bir etkinlik kayıt formu kurun, web sitenize gömün ve kayıtları takip edin."
 ---
 
 # Etkinlik Kaydını Ayarlama
@@ -11,7 +12,7 @@ Bir etkinlik kayıt formu oluşturun, katılımcı bilgilerini ve isteğe bağl�
 </div>
 
 :::info
-**Etkinlik kaydını yönetmenin iki yolu:** Bu kılavuz, özel alanlar ve ödeme toplama üzerinde tam denetim sağlayan **form tabanlı kaydı** kapsar. Yalnızca kimin katılacağını takip etmeniz gereken daha basit etkinlikler için takvimde yerleşik olan **yerel etkinlik kaydını** kullanın. Kurulum talimatları için [Takvim Oluşturma](../calendars/creating-calendars.md#enabling-event-registration) bölümüne bakın. Yerel kayıt, üyelerin kapasite takibi, tarih aralıkları ve e-posta onayları ile [B1 web sitesi](../../b1-church/events/registering) ve [mobil uygulama](../../b1-mobile/events/registering) üzerinden doğrudan kaydolmasına olanak tanır.
+**Etkinlik kaydını yönetmenin iki yolu:** Bu kılavuz, özel alanlar ve ödeme toplama üzerinde tam denetim sağlayan **form tabanlı kaydı** kapsar. Yalnızca kimin katılacağını takip etmeniz gereken daha basit etkinlikler için takvimde yerleşik olan **yerel etkinlik kaydını** kullanın. Kurulum talimatları için [Takvim Oluşturma](../calendars/creating-calendars.md#enabling-event-registration) bölümüne bakın. Yerel kayıt, üyelerin kapasite takibi, tarih aralıkları ve e-posta onayları ile [B1 web sitesi](../../b1-church/events/registering.md) ve [mobil uygulama](../../b1-mobile/events/registering.md) üzerinden doğrudan kaydolmasına olanak tanır.
 :::
 
 <div class="prereqs">

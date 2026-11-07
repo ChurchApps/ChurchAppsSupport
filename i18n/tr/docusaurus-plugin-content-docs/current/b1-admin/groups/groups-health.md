@@ -1,5 +1,6 @@
 ---
 title: "Grup Sağlığı"
+description: "B1 Admin'de grup sağlığını kontrol edin: üyeler, katılımlar, ayrılmalar, kayıp oranı ve ortalama katılım için 90 günlük tabloyla takibi gereken grupları bulun."
 ---
 
 # Grup Sağlığı
@@ -13,8 +14,8 @@ Grup Sağlığı paneli, tüm gruplarınızın nasıl gittiğine dair kuşbakı�
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Anlamlı veriler görebilmek için üyeleri olan en az birkaç grubunuz olmalıdır. Bkz. [Grup Oluşturma](creating-groups).
-- Katılım verileri kaydedilmiş oturumlardan alınır. Bkz. [Katılım](../attendance/) bölümü.
+- Anlamlı veriler görebilmek için üyeleri olan en az birkaç grubunuz olmalıdır. Bkz. [Grup Oluşturma](./creating-groups.md).
+- Katılım verileri kaydedilmiş oturumlardan alınır. Bkz. [Katılım](../attendance/index.md) bölümü.
 
 </div>
 
@@ -48,6 +49,6 @@ Bir grup adına tıklamak sizi doğrudan grubun ayrıntı sayfasına götürür;
 
 ## İlgili Makaleler
 
-- [Grup Oluşturma](creating-groups) — grupları ayarlayın
-- [Grup Üyeleri](group-members) — grup üyeliğini yönetin
-- [Katılım Takibi](../attendance/tracking-attendance) — bu paneli besleyen katılım oturumlarını kaydedin
+- [Grup Oluşturma](./creating-groups.md) — grupları ayarlayın
+- [Grup Üyeleri](./group-members.md) — grup üyeliğini yönetin
+- [Katılım Takibi](../attendance/tracking-attendance.md) — bu paneli besleyen katılım oturumlarını kaydedin

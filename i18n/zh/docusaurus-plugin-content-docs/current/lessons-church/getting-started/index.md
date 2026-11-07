@@ -1,5 +1,7 @@
 ---
-title: "入门指南"
+title: "Lessons.church 入门指南"
+sidebar_label: "入门指南"
+description: "创建免费的 Lessons.church 账户，连接教会，设置教室，并安排第一批课程。无需订阅，也无需试用。"
 ---
 
 # 入门指南

@@ -1,5 +1,7 @@
 ---
-title: "群组"
+title: "B1.church 会员门户中的教会小组"
+sidebar_label: "群组"
+description: "在您的 B1.church 网站上浏览并加入教会小组，然后通过小组页面查看聚会、活动、成员和资源，并与小组成员聊天。"
 ---
 
 # 群组

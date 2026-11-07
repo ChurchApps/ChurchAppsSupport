@@ -1,5 +1,6 @@
 ---
 title: "Demografia"
+description: "Tarkastele seurakuntasi ikä-, sukupuoli-, jäsenyys-, siviilisääty- ja toimipisterakennetta B1 Adminin interaktiivisista kaavioista."
 ---
 
 # Demografia

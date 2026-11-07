@@ -1,5 +1,6 @@
 ---
 title: "Overføring av risikoevaluering"
+description: "ChurchApps' samsvarsdokumentasjon for overføring av kirkedata fra UK/EØS til USA i B1 Admin: sikkerhetstiltak, underdatabehandlere og tilgangskontroll."
 ---
 
 # Overføring av risikoevaluering

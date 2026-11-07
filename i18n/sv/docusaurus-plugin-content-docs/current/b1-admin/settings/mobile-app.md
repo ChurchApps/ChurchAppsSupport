@@ -1,5 +1,6 @@
 ---
 title: "Inställningar för mobilappen"
+description: "Konfigurera navigeringsflikar, startskärmsrutor, inloggningsuppmaning och integritetsinställningar för medlemskatalogen i B1.church-medlemsappen i B1 Admin."
 ---
 
 # Inställningar för mobilappen

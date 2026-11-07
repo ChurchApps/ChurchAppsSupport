@@ -1,5 +1,6 @@
 ---
 title: "Registrace hostů"
+description: "Zaregistrujte sebe a svou rodinu jako první návštěvníky pomocí formuláře QR v B1 Checkin, aby vás dobrovolníci mohli odbavit při příchodu."
 ---
 
 # Registrace hostů
@@ -22,7 +23,7 @@ Pokud navštěvujete kostel poprvé, můžete se a svou rodinu zaregistrovat jak
 
 Registrace hostů je určena pro návštěvníky, kteří zatím nemají účet. Na přihlašovacím kiosku kostela klepněte na **Zaregistrovat se jako host**, čímž se zobrazí QR kód odkazující na registrační stránku. Odkaz můžete také získat od dobrovolníka nebo uvaděče, nebo ho najdete na letáku či na webu kostela.
 
-Nemáte po ruce telefon? V tomtéž okně s QR kódem na kiosku klepněte na **Zaregistrovat se zde** a vyplňte formulář přímo na kiosku. Jak to funguje na kiosku, se dozvíte v části [Registrace jako host](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest).
+Nemáte po ruce telefon? V tomtéž okně s QR kódem na kiosku klepněte na **Zaregistrovat se zde** a vyplňte formulář přímo na kiosku. Jak to funguje na kiosku, se dozvíte v části [Registrace jako host](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest).
 
 Stránka se otevře s nadpisem **Registrace hostů**. Pokud kostel přidal záhlavní fotografii, zobrazí se nahoře na stránce; jinak uvidíte malou ikonu.
 
@@ -51,7 +52,7 @@ Vaše registrace vytvoří záznamy v databázi kostela:
 - Pro každého člena rodiny se vytvoří **záznamy osob** se stavem členství „Návštěvník“.
 - Veškeré poznámky, které jste zadali, se uloží jako poznámka k záznamu hlavního kontaktu, aby ji mohli přečíst pracovníci kostela.
 - Pokud kostel vybral skupinu pro nové hosty, vaše rodina do ní bude přidána. Kostel může také automaticky zaznamenat vaši účast, pokud se zaregistrujete v jeden z naplánovaných časů bohoslužby této skupiny.
-- Dobrovolník nebo správce z kostela pak může vaši rodinu přihlásit pomocí kiosku [B1 Checkin](../../b1-checkin/check-in/looking-up-members).
+- Dobrovolník nebo správce z kostela pak může vaši rodinu přihlásit pomocí kiosku [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md).
 
 :::info
 Pokud se znovu zaregistrujete se stejným křestním jménem a stejným e-mailem nebo telefonním číslem, záznamy kostela vás poznají a použijí váš stávající profil, nikoli aby vytvořily duplicitní záznam. Ostatní osoby se přidají jako nové. Pokud jste se již zaregistrovali, můžete také na kiosku jednoduše vyhledat své jméno nebo telefonní číslo.
@@ -63,6 +64,6 @@ Pokud formulář požaduje vaši e-mailovou adresu, její uvedení kostelu usnad
 
 ## Související články
 
-- [Samoobslužné přihlášení](./self-checkin) -- Přihlaste se sami po registraci
-- [Přidávání hostů (kiosek)](../../b1-checkin/check-in/adding-guests) -- Jak dobrovolníci přidávají hosty na kiosku
-- [Přihlášení](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- Jak správci kostela nastavují registraci hostů pomocí QR kódu
+- [Samoobslužné přihlášení](./self-checkin.md) -- Přihlaste se sami po registraci
+- [Přidávání hostů (kiosek)](../../b1-checkin/check-in/adding-guests.md) -- Jak dobrovolníci přidávají hosty na kiosku
+- [Přihlášení](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Jak správci kostela nastavují registraci hostů pomocí QR kódu

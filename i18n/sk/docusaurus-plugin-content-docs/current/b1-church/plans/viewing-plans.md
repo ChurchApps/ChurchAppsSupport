@@ -1,5 +1,7 @@
 ---
-title: "Zobrazenie plánov"
+title: "Vaše servisné plány na portáli členov B1.church"
+sidebar_label: "Zobrazenie plánov"
+description: "Skontrolujte svoje priradenia k servisným plánom v B1.church, prijmite alebo odmietnite žiadosti, nastavte dni nedostupnosti a prezrite si históriu služieb."
 ---
 
 # Zobrazenie plánov

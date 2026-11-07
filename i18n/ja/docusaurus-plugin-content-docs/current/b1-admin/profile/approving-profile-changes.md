@@ -1,5 +1,6 @@
 ---
 title: "プロフィール変更の承認"
+description: "B1 Admin で会員からのプロフィール変更リクエストを確認し承認します。また、それを受け取る Directory Approval Group を設定します。"
 ---
 
 # プロフィール変更の承認

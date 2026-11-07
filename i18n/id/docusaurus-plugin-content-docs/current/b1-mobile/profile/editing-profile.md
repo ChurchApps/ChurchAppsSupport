@@ -1,5 +1,7 @@
 ---
-title: "Mengedit Profil Anda"
+title: "Mengedit Profil Anda di Aplikasi B1 Mobile"
+sidebar_label: "Mengedit Profil Anda"
+description: "Perbarui nama, email, telepon, alamat, dan foto profil Anda di aplikasi B1 Mobile agar data gereja dan direktori tetap mutakhir."
 ---
 
 # Mengedit Profil Anda
@@ -13,7 +15,7 @@ Tab **Profil** memungkinkan Anda memperbarui informasi pribadi Anda agar gereja 
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- [Pasang B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Pasang B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 
 </div>
 
@@ -34,7 +36,7 @@ Profil Anda mencakup detail pribadi berikut:
 3. Ketuk kolom yang ingin Anda perbarui dan buat perubahan.
 4. Simpan perubahan Anda setelah selesai.
 
-Informasi yang diperbarui akan disinkronkan secara otomatis. Siapa pun yang melihat profil Anda (tergantung pada [pengaturan privasi](./privacy-settings) Anda) akan langsung melihat detail baru.
+Informasi yang diperbarui akan disinkronkan secara otomatis. Siapa pun yang melihat profil Anda (tergantung pada [pengaturan privasi](./privacy-settings.md) Anda) akan langsung melihat detail baru.
 
 :::tip
 Pastikan alamat email dan nomor telepon Anda selalu mutakhir. Gereja Anda menggunakan informasi ini untuk mengirimkan pembaruan dan pengingat penting kepada Anda.
@@ -46,7 +48,7 @@ Anda dapat menambah atau mengubah foto profil dari tab **Profil**. Foto Anda aka
 
 ## Perubahan di Seluruh ChurchApps
 
-Karena semua layanan ChurchApps menggunakan sistem akun yang sama, perubahan yang Anda buat di B1 Mobile langsung terlihat di [B1.church](../../b1-church/), alat admin gereja Anda, dan layanan terhubung lainnya. Anda tidak perlu memperbarui informasi Anda secara terpisah di setiap tempat.
+Karena semua layanan ChurchApps menggunakan sistem akun yang sama, perubahan yang Anda buat di B1 Mobile langsung terlihat di [B1.church](../../b1-church/index.md), alat admin gereja Anda, dan layanan terhubung lainnya. Anda tidak perlu memperbarui informasi Anda secara terpisah di setiap tempat.
 
 :::info
 Beberapa gereja memerlukan persetujuan administrator untuk perubahan profil tertentu. Jika pembaruan Anda tidak langsung muncul, periksa tab **Tertunda** pada layar profil Anda untuk melihat statusnya.
@@ -54,5 +56,5 @@ Beberapa gereja memerlukan persetujuan administrator untuk perubahan profil tert
 
 ## Artikel Terkait
 
-- [Rumah Tangga](./household) -- Melihat dan mengelola anggota keluarga Anda
-- [Pengaturan Privasi](./privacy-settings) -- Mengontrol apa yang dapat dilihat orang lain tentang Anda
+- [Rumah Tangga](./household.md) -- Melihat dan mengelola anggota keluarga Anda
+- [Pengaturan Privasi](./privacy-settings.md) -- Mengontrol apa yang dapat dilihat orang lain tentang Anda

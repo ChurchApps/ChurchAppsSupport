@@ -1,5 +1,7 @@
 ---
-title: "Thứ tự chương trình"
+title: "Chi tiết thứ tự buổi lễ trong ứng dụng B1.church"
+sidebar_label: "Thứ tự chương trình"
+description: "Xem thứ tự buổi lễ trong ứng dụng B1.church, với thời gian cộng dồn, lời bài hát, chuyển tông và xem trước bài học cho đội phục vụ của bạn."
 ---
 
 # Thứ tự chương trình

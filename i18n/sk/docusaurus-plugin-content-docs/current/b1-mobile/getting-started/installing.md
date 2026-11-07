@@ -1,5 +1,6 @@
 ---
 title: "Inštalácia aplikácie"
+description: "Nainštalujte aplikáciu B1 Mobile z App Store alebo Google Play, ale pamätajte, že je zastaraná a odporúča sa namiesto nej PWA B1.church."
 ---
 
 # Inštalácia aplikácie
@@ -25,7 +26,7 @@ Ak vyhľadávanie nevráti výsledky, môžete skúsiť hľadať aj „B1 Mobile
 
 ## Po inštalácii
 
-Po nainštalovaní aplikácie ju otvorte z domovskej obrazovky. Zobrazí sa obrazovka na vyhľadávanie cirkví, kde môžete nájsť a vybrať svoju cirkev. Ak už máte účet ChurchApps, môžete sa hneď [prihlásiť](./logging-in). Ak nie, účet si môžete vytvoriť z prihlasovacej obrazovky.
+Po nainštalovaní aplikácie ju otvorte z domovskej obrazovky. Zobrazí sa obrazovka na vyhľadávanie cirkví, kde môžete nájsť a vybrať svoju cirkev. Ak už máte účet ChurchApps, môžete sa hneď [prihlásiť](./logging-in.md). Ak nie, účet si môžete vytvoriť z prihlasovacej obrazovky.
 
 Aplikácia vás požiada o povolenie na zasielanie push notifikácií. Odporúčame ich povoliť, aby ste mohli dostávať aktuality od svojej cirkvi a skupín.
 

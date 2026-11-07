@@ -1,5 +1,6 @@
 ---
 title: "Ustawienia aplikacji mobilnej"
+description: "Skonfiguruj zakładki nawigacji, kafelki ekranu głównego, komunikat logowania i prywatność katalogu członków aplikacji B1.church w B1 Admin."
 ---
 
 # Ustawienia aplikacji mobilnej

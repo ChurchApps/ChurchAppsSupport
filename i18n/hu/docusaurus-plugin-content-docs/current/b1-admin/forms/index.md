@@ -1,5 +1,6 @@
 ---
 title: "Űrlapok"
+description: "Egyedi űrlapok keresése, szűrése, szerkesztése, archiválása és visszaállítása a B1 Admin-ban, valamint űrlaptagok beállítása és a beküldések áttekintése."
 ---
 
 # Űrlapok

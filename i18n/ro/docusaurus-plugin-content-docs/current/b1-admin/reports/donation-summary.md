@@ -1,5 +1,6 @@
 ---
 title: "Raport donații"
+description: "Rulează raportul Sumar donații din B1 Admin pentru a vedea totalul donațiilor, numărul de donatori unici și sumele pe fond, pentru orice interval de date."
 ---
 
 # Raport donații

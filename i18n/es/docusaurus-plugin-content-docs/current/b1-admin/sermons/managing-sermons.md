@@ -1,5 +1,6 @@
 ---
 title: "Gestionar Sermones"
+description: "Administra tu biblioteca de sermones en B1 Admin: agrega sermones desde YouTube, Vimeo o Facebook, edita los detalles y obtén una fuente de podcast para tu iglesia."
 ---
 
 # Gestionar Sermones
@@ -14,7 +15,7 @@ La página de Sermones muestra tu biblioteca completa de sermones. Desde aquí p
 <h4>Antes de Empezar</h4>
 
 - Necesitas el permiso **contentApi.streamingServices.edit**. Consulta [Roles y Permisos](../settings/roles-permissions.md) si no tienes acceso.
-- Crea al menos una [lista de reproducción](playlists) para organizar tus sermones
+- Crea al menos una [lista de reproducción](./playlists.md) para organizar tus sermones
 - Ten listos tus ID de video o URLs de YouTube, Vimeo o Facebook
 
 </div>
@@ -35,7 +36,7 @@ La página de Sermones muestra tu biblioteca completa de sermones. Desde aquí p
 6. Realiza los cambios que desees y haz clic en **Guardar**.
 
 :::tip
-También puedes añadir una URL de transmisión en vivo permanente seleccionando **Añadir URL de Transmisión en Vivo Permanente** en el menú desplegable **Añadir Sermón**. Esto crea una conexión persistente al flujo en vivo del canal de YouTube usando tu ID de Canal. Consulta [Transmisión en Vivo](live-streaming) para más detalles.
+También puedes añadir una URL de transmisión en vivo permanente seleccionando **Añadir URL de Transmisión en Vivo Permanente** en el menú desplegable **Añadir Sermón**. Esto crea una conexión persistente al flujo en vivo del canal de YouTube usando tu ID de Canal. Consulta [Transmisión en Vivo](./live-streaming.md) para más detalles.
 :::
 
 ## Editar un Sermón
@@ -73,11 +74,11 @@ Después de añadir un sermón, puedes programarlo para transmitirse en tu pági
 3. El sermón se reproducirá a la hora programada del servicio.
 
 :::info
-Para importar múltiples sermones de una vez en lugar de añadirlos uno por uno, usa la herramienta [Importación Masiva](bulk-import) para extraer videos directamente de tu cuenta de YouTube o Vimeo.
+Para importar múltiples sermones de una vez en lugar de añadirlos uno por uno, usa la herramienta [Importación Masiva](./bulk-import.md) para extraer videos directamente de tu cuenta de YouTube o Vimeo.
 :::
 
 ## Próximos Pasos
 
-- [Listas de Reproducción](playlists) -- Organiza sermones en series
-- [Transmisión en Vivo](live-streaming) -- Configura tu horario de transmisión
-- [Importación Masiva](bulk-import) -- Importa múltiples sermones de una vez
+- [Listas de Reproducción](./playlists.md) -- Organiza sermones en series
+- [Transmisión en Vivo](./live-streaming.md) -- Configura tu horario de transmisión
+- [Importación Masiva](./bulk-import.md) -- Importa múltiples sermones de una vez

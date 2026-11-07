@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "Forbind B1 Admin til Google Sheets med tilføjelsen B1 Export for at hente Personer, Donationer, Grupper og Fremmøde ind i regnearksfaner efter behov."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ Eksporten kører i baggrunden under din Google-konto. Hvis API-nøglen roteres e
 - **"B1 rejected the API key (401)"** — nøglen er tilbagekaldt eller forkert. Opret en ny og indsæt den igen.
 - **"This API key lacks permission for /giving/donations (403)"** — nøglen mangler `donations:read`. Opdatér nøglens tilladelser i B1Admin.
 - **Regnearket opdateres ikke** efter kørsel — kontroller, at du kigger på det *korrekte* fanenavn (`B1 People` osv.). Eksporten opretter fanen, hvis den ikke findes.
-- **"Quota exceeded"** — Apps Script pålægger daglige kvoter pr. bruger for `UrlFetchApp` (typisk tusindvis af kald pr. dag). En stor kirke med mange poster kan have brug for at fordele eksporter over flere dage eller bruge [Make](./make) / en skræddersyet integration til synkronisering med stort volumen.
+- **"Quota exceeded"** — Apps Script pålægger daglige kvoter pr. bruger for `UrlFetchApp` (typisk tusindvis af kald pr. dag). En stor kirke med mange poster kan have brug for at fordele eksporter over flere dage eller bruge [Make](./make.md) / en skræddersyet integration til synkronisering med stort volumen.
 
 ## Tilpasning af tilføjelsen
 
@@ -108,6 +109,6 @@ Tilføjelsen er open source — Apps Script-projektet ligger i repoet `B1Integra
 
 ## Se også
 
-- [Zapier](./zapier) — til synkronisering i realtid frem for eksport efter behov
-- [Make](./make) — til synkronisering med mere komplekse transformationer
+- [Zapier](./zapier.md) — til synkronisering i realtid frem for eksport efter behov
+- [Make](./make.md) — til synkronisering med mere komplekse transformationer
 - [API-nøgler (udviklerreference)](/docs/developer/api/api-keys)

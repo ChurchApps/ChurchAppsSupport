@@ -1,5 +1,7 @@
 ---
-title: "Inhoud"
+title: "Inhoudsfuncties in het ledenportaal van B1.church"
+sidebar_label: "Inhoud"
+description: "Zie welke inhoud je kerk inschakelt in het ledenportaal van B1.church, en blader daarna door preken, livestreams, Bijbellezen en lessen."
 ---
 
 # Inhoud

@@ -1,12 +1,13 @@
 ---
 title: "Docker로 자체 호스팅하기"
+description: "Docker로 개인용 B1 Admin, 회원 포털, API, MySQL 스택을 본인 컴퓨터에 설치하고, b1 명령으로 업그레이드하고 백업하세요."
 ---
 
 # Docker로 자체 호스팅하기
 
 <div class="article-intro">
 
-Docker가 설치된 모든 컴퓨터(홈 서버, 소규모 VPS, 자체 설치 장비)에서 B1 Admin, B1 교인 포털과 웹사이트, API, MySQL 데이터베이스의 개인 인스턴스를 직접 실행할 수 있습니다. 명령 한 줄로 설치하고, 명령 한 줄로 업그레이드하며, 업그레이드할 때마다 먼저 백업을 만듭니다. 서버를 직접 관리하고 싶지 않다면 관리형 대안인 [Railway에서 자체 호스팅하기](./railway-template)를 참고하세요.
+Docker가 설치된 모든 컴퓨터(홈 서버, 소규모 VPS, 자체 설치 장비)에서 B1 Admin, B1 교인 포털과 웹사이트, API, MySQL 데이터베이스의 개인 인스턴스를 직접 실행할 수 있습니다. 명령 한 줄로 설치하고, 명령 한 줄로 업그레이드하며, 업그레이드할 때마다 먼저 백업을 만듭니다. 서버를 직접 관리하고 싶지 않다면 관리형 대안인 [Railway에서 자체 호스팅하기](./railway-template.md)를 참고하세요.
 
 </div>
 
@@ -94,10 +95,10 @@ SUPPORT_EMAIL=noreply@church.example.org
 
 다음 기능은 Railway와 정확히 같은 방식으로 작동합니다. 같은 환경 변수를 Railway 대시보드 대신 `.env`에 설정하면 됩니다.
 
-- **[이메일 / SMTP](./railway-template#1-email-highly-recommended)** -- Resend, Brevo, Gmail 설정 안내
-- **[다중 사이트](./railway-template#3-multi-site-multiple-churches-on-one-instance)** -- 인스턴스 하나에 교회를 제한 없이 둘 수 있습니다. `/`는 슬러그가 `DEFAULT_CHURCH_SLUG`인 교회를 제공합니다(첫 번째 교회의 슬러그는 `church`). 추가 도메인은 이 컴퓨터를 가리키게 하고, B1Admin의 **설정 → 도메인**에서 연결하세요.
-- **[온라인 헌금](./railway-template#4-online-giving-stripe--paypal)** -- 교회별로 관리자 화면에서 설정합니다.
-- **[선택 연동 기능](./railway-template#6-optional-feature-integrations)** -- `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[이메일 / SMTP](./railway-template.md#1-email-highly-recommended)** -- Resend, Brevo, Gmail 설정 안내
+- **[다중 사이트](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** -- 인스턴스 하나에 교회를 제한 없이 둘 수 있습니다. `/`는 슬러그가 `DEFAULT_CHURCH_SLUG`인 교회를 제공합니다(첫 번째 교회의 슬러그는 `church`). 추가 도메인은 이 컴퓨터를 가리키게 하고, B1Admin의 **설정 → 도메인**에서 연결하세요.
+- **[온라인 헌금](./railway-template.md#4-online-giving-stripe--paypal)** -- 교회별로 관리자 화면에서 설정합니다.
+- **[선택 연동 기능](./railway-template.md#6-optional-feature-integrations)** -- `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[푸시 알림](#push-notifications)** -- `WEB_PUSH_*`. 설치 프로그램은 이 값을 비워 두므로, 직접 추가하기 전까지 푸시는 꺼져 있습니다.
 
 자체 호스팅 인스턴스에서는 초대장과 교회가 보내는 기타 이메일이 자동으로 켜집니다. (호스팅 서비스는 발신자 평판을 보호하기 위해 이 기능을 수동 검토 뒤에 둡니다.)
@@ -148,7 +149,7 @@ SUPPORT_EMAIL=noreply@church.example.org
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-미디어 라이브러리가 큰 경우 `FILE_STORE=S3`와 [Railway 가이드의 파일 저장소 섹션](./railway-template#5-file-storage)에 설명된 `AWS_*` 변수를 설정해 파일 저장소를 S3로 바꿀 수 있습니다. 데이터베이스 백업에는 S3 객체가 포함되지 않으므로, 해당 버킷에서 버전 관리를 켜세요.
+미디어 라이브러리가 큰 경우 `FILE_STORE=S3`와 [Railway 가이드의 파일 저장소 섹션](./railway-template.md#5-file-storage)에 설명된 `AWS_*` 변수를 설정해 파일 저장소를 S3로 바꿀 수 있습니다. 데이터베이스 백업에는 S3 객체가 포함되지 않으므로, 해당 버킷에서 버전 관리를 켜세요.
 
 ## 업데이트
 
@@ -187,6 +188,6 @@ docker compose -f docker-compose.yml -f docker-compose.build.yml up -d --build
 
 ## 관련 문서
 
-- **[Railway에서 자체 호스팅하기](./railway-template)** -- 관리형 호스팅 대안과 공통 배포 후 구성 가이드
-- **[초기 설정](../../getting-started/initial-setup)** -- 교회를 만든 뒤 처음 할 일
-- **[API 로컬 설정](../api/local-setup)** -- 개발을 위해 스택을 직접 실행하기
+- **[Railway에서 자체 호스팅하기](./railway-template.md)** -- 관리형 호스팅 대안과 공통 배포 후 구성 가이드
+- **[초기 설정](../../getting-started/initial-setup.md)** -- 교회를 만든 뒤 처음 할 일
+- **[API 로컬 설정](../api/local-setup.md)** -- 개발을 위해 스택을 직접 실행하기

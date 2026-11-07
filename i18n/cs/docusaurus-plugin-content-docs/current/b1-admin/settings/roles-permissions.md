@@ -1,5 +1,6 @@
 ---
 title: "Role a oprávnění"
+description: "Nastavte role v B1 Admin a řiďte, co mohou zaměstnanci a dobrovolníci vidět a měnit, od darů a docházky po osoby a skupiny."
 ---
 
 # Role a oprávnění

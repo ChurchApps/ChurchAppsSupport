@@ -1,5 +1,6 @@
 ---
 title: "Ryhmien terveys"
+description: "Tarkista ryhmien tila B1 Adminissa 90 päivän taulukosta, jossa näkyvät jäsenet, liittymiset, lähdöt, poistuma ja keskimääräinen läsnäolo."
 ---
 
 # Ryhmien terveys
@@ -13,8 +14,8 @@ Ryhmien terveys -kojelauta antaa sinulle yleiskuvan kaikkien ryhmiesi tilanteest
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Tarvitset vähintään muutaman ryhmän, jossa on jäseniä, jotta tiedoista on hyötyä. Katso [Ryhmien luominen](creating-groups).
-- Osallistumistiedot haetaan tallennetuista tapaamisista. Katso [Osallistuminen](../attendance/) -osio.
+- Tarvitset vähintään muutaman ryhmän, jossa on jäseniä, jotta tiedoista on hyötyä. Katso [Ryhmien luominen](./creating-groups.md).
+- Osallistumistiedot haetaan tallennetuista tapaamisista. Katso [Osallistuminen](../attendance/index.md) -osio.
 
 </div>
 
@@ -48,6 +49,6 @@ Kun klikkaat ryhmän nimeä, pääset suoraan ryhmän tietosivulle. Siellä voit
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Ryhmien luominen](creating-groups) – ryhmien perustaminen
-- [Ryhmän jäsenet](group-members) – ryhmäjäsenyyksien hallinta
-- [Osallistumisen seuranta](../attendance/tracking-attendance) – tämän kojelaudan tiedot syöttävät tapaamiset
+- [Ryhmien luominen](./creating-groups.md) – ryhmien perustaminen
+- [Ryhmän jäsenet](./group-members.md) – ryhmäjäsenyyksien hallinta
+- [Osallistumisen seuranta](../attendance/tracking-attendance.md) – tämän kojelaudan tiedot syöttävät tapaamiset

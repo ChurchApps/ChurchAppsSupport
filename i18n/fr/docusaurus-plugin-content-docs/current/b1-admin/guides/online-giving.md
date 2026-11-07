@@ -1,5 +1,6 @@
 ---
 title: "Guide : Configurer les dons en ligne"
+description: "Configurez les dons en ligne dans B1 Admin en créant des fonds de dons, en reliant Stripe et en ajoutant une page Faire un don à votre site B1.church pour les membres."
 ---
 
 # Configurer les dons en ligne
@@ -70,7 +71,7 @@ Utilisez d'abord le mode test de Stripe si vous souhaitez vérifier sans frais r
 Faites passer le mot pour que les membres sachent qu'ils peuvent donner en ligne.
 
 1. Partagez l'URL de dons via votre site web, vos newsletters par e-mail, vos bulletins et les réseaux sociaux
-2. Les membres peuvent également donner via l'[application B1 Mobile](../../b1-mobile/giving/) -- la fonctionnalité de don est intégrée
+2. Les membres peuvent également donner via l'[application B1 Mobile](../../b1-mobile/giving/index.md) -- la fonctionnalité de don est intégrée
 
 :::info
 Les membres qui se connectent peuvent enregistrer leurs moyens de paiement, configurer des dons récurrents et consulter leur historique de dons. Le don anonyme fonctionne aussi -- aucune connexion requise.

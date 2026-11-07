@@ -1,21 +1,22 @@
 ---
 title: "Przypomnienia o wydarzeniach"
+description: "Ustaw przypomnienia o wydarzeniach w B1 Admin (push, e-mail, SMS): wybierz termin, odbiorców i własną treść, by ludzie dostawali powiadomienia na czas."
 ---
 
 # Przypomnienia o wydarzeniach
 
 <div class="article-intro">
 
-Przypomnienia o wydarzeniach automatycznie informują odpowiednie osoby przed rozpoczęciem wydarzenia -- na przykład: „Nie przegap! Warsztat dotyczący zdrowia zaczyna się jutro o 9:00." Przypomnienie konfigurujesz raz, przy wydarzeniu, a B1 wysyła je zgodnie z harmonogramem w postaci powiadomień push, wiadomości e-mail oraz, jeśli Twój kościół ma skonfigurowane wysyłanie SMS-ów, wiadomości tekstowych. Członkowie mogą sami decydować, jakie przypomnienia chcą otrzymywać, w swoich [Ustawieniach powiadomień](../../b1-church/getting-started/notification-preferences).
+Przypomnienia o wydarzeniach automatycznie informują odpowiednie osoby przed rozpoczęciem wydarzenia -- na przykład: „Nie przegap! Warsztat dotyczący zdrowia zaczyna się jutro o 9:00." Przypomnienie konfigurujesz raz, przy wydarzeniu, a B1 wysyła je zgodnie z harmonogramem w postaci powiadomień push, wiadomości e-mail oraz, jeśli Twój kościół ma skonfigurowane wysyłanie SMS-ów, wiadomości tekstowych. Członkowie mogą sami decydować, jakie przypomnienia chcą otrzymywać, w swoich [Ustawieniach powiadomień](../../b1-church/getting-started/notification-preferences.md).
 
 </div>
 
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Utwórz wydarzenie, o którym chcesz przypominać (zobacz [Tworzenie kalendarzy](creating-calendars))
-- Aby dotrzeć do zarejestrowanych uczestników, [włącz rejestrację](creating-calendars) dla wydarzenia
-- Aby dotrzeć do całej grupy, upewnij się, że wydarzenie należy do [grupy](../groups/creating-groups) z członkami
+- Utwórz wydarzenie, o którym chcesz przypominać (zobacz [Tworzenie kalendarzy](./creating-calendars.md))
+- Aby dotrzeć do zarejestrowanych uczestników, [włącz rejestrację](./creating-calendars.md) dla wydarzenia
+- Aby dotrzeć do całej grupy, upewnij się, że wydarzenie należy do [grupy](../groups/creating-groups.md) z członkami
 
 </div>
 
@@ -57,21 +58,21 @@ Goście dodani tylko z imienia i nazwiska (bez powiązanej kartoteki osoby) nie 
 - Wydarzenia cykliczne są obsługiwane automatycznie: każde nadchodzące wystąpienie otrzymuje własne przypomnienie.
 
 :::tip
-Przypomnienia są wysyłane najpierw jako **push**, a e-mail pełni rolę zapasową. Jeśli członek ma włączone powiadomienia push, otrzyma push; jeśli nie, zamiast tego dostanie e-mail. Członkowie wybierają kanały dla każdego typu powiadomień w swoich [Ustawieniach powiadomień](../../b1-church/getting-started/notification-preferences).
+Przypomnienia są wysyłane najpierw jako **push**, a e-mail pełni rolę zapasową. Jeśli członek ma włączone powiadomienia push, otrzyma push; jeśli nie, zamiast tego dostanie e-mail. Członkowie wybierają kanały dla każdego typu powiadomień w swoich [Ustawieniach powiadomień](../../b1-church/getting-started/notification-preferences.md).
 :::
 
 ## Przypomnienia SMS
 
 Kanał **SMS** pojawia się tylko wtedy, gdy Twój kościół ma połączonego dostawcę usług SMS. Wiadomości są wysyłane przez dostawcę usług SMS Twojego kościoła, a każda z nich może generować koszty dla kościoła. Są wysyłane oprócz ewentualnych przypomnień push lub e-mail, i tylko do osób, które:
 
-- włączyły opcję **Wiadomości tekstowe** w swoich [Ustawieniach powiadomień](../../b1-church/getting-started/notification-preferences), oraz
+- włączyły opcję **Wiadomości tekstowe** w swoich [Ustawieniach powiadomień](../../b1-church/getting-started/notification-preferences.md), oraz
 - mają w profilu podany numer telefonu komórkowego.
 
 Każda wiadomość zaczyna się od nazwy Twojego kościoła, mieści się w jednej wiadomości SMS i kończy się tekstem „Odpowiedz STOP, aby zrezygnować." Każda osoba, która odpowie STOP, przestaje otrzymywać wiadomości SMS od Twojego kościoła. Aby odpowiedzi STOP docierały do B1, wklej **adres URL webhooka dla wiadomości przychodzących (STOP)** z [ustawień SMS](../settings/church-settings.md#texting) do webhooka wiadomości przychodzących swojego dostawcy.
 
 ## Co mogą kontrolować członkowie
 
-Przypomnienia zawsze respektują [Ustawienia powiadomień](../../b1-church/getting-started/notification-preferences) każdego członka. Członek może:
+Przypomnienia zawsze respektują [Ustawienia powiadomień](../../b1-church/getting-started/notification-preferences.md) każdego członka. Członek może:
 
 - wyłączyć **Przypomnienia o wydarzeniach** dla push, e-maila lub SMS-ów, zachowując inne powiadomienia,
 - włączyć lub wyłączyć przypomnienia SMS za pomocą opcji **Wiadomości tekstowe**,
@@ -81,10 +82,10 @@ Nie możesz nadpisać decyzji członka o rezygnacji z przypomnień o wydarzeniac
 
 ## Przypomnienia o służbie
 
-Wolontariusze zaplanowani w harmonogramie otrzymują osobne **przypomnienie o służbie** ze szczegółami planu oraz, jeśli jeszcze nie odpowiedzieli, przyciski **Akceptuję / Odrzucam** bezpośrednio w wiadomości e-mail. Te przypomnienia konfiguruje się w typie planu, a nie w wydarzeniu kalendarza, i mogą być również wysyłane jako SMS -- zobacz [Przypomnienia dla wolontariuszy](../serving/plans#volunteer-reminders) oraz [Wolontariusze w niedzielę](../guides/sunday-volunteers), aby dowiedzieć się, jak działa planowanie wolontariatu i przypomnienia.
+Wolontariusze zaplanowani w harmonogramie otrzymują osobne **przypomnienie o służbie** ze szczegółami planu oraz, jeśli jeszcze nie odpowiedzieli, przyciski **Akceptuję / Odrzucam** bezpośrednio w wiadomości e-mail. Te przypomnienia konfiguruje się w typie planu, a nie w wydarzeniu kalendarza, i mogą być również wysyłane jako SMS -- zobacz [Przypomnienia dla wolontariuszy](../serving/plans.md#volunteer-reminders) oraz [Wolontariusze w niedzielę](../guides/sunday-volunteers.md), aby dowiedzieć się, jak działa planowanie wolontariatu i przypomnienia.
 
 ## Następne kroki
 
-- [Ustawienia powiadomień](../../b1-church/getting-started/notification-preferences) -- co mogą kontrolować członkowie
-- [Przewodnik po rejestracji na wydarzenia](../guides/event-registration) -- konfiguracja rejestracji, aby przypomnienia mogły dotrzeć do uczestników
-- [Tworzenie kalendarzy](creating-calendars) -- powrót do konfiguracji kalendarza
+- [Ustawienia powiadomień](../../b1-church/getting-started/notification-preferences.md) -- co mogą kontrolować członkowie
+- [Przewodnik po rejestracji na wydarzenia](../guides/event-registration.md) -- konfiguracja rejestracji, aby przypomnienia mogły dotrzeć do uczestników
+- [Tworzenie kalendarzy](./creating-calendars.md) -- powrót do konfiguracji kalendarza

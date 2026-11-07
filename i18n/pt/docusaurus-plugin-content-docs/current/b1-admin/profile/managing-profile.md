@@ -1,5 +1,6 @@
 ---
 title: "Gerenciando seu perfil"
+description: "Atualize sua conta ChurchApps no B1 Admin: edite nome, e-mail e senha, ative a verificação em duas etapas, escolha um tema ou exclua sua conta."
 ---
 
 # Gerenciando seu perfil

@@ -1,5 +1,6 @@
 ---
 title: "Paghiling na Sumali sa Grupo"
+description: "Humiling na sumali sa grupong may pag-apruba sa B1.church, magdagdag ng opsyonal na tala para sa lider, at subaybayan o kanselahin ang kahilingan."
 ---
 
 # Paghiling na Sumali sa Grupo

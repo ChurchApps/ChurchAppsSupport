@@ -1,5 +1,6 @@
 ---
 title: "Sunum"
+description: "Lessons.church'te Sunum Modu ile dersleri projektörde gösterin, role dayalı gönüllü rehberlerini paylaşın ve dersten önce materyalleri yazdırın."
 ---
 
 # Sunum

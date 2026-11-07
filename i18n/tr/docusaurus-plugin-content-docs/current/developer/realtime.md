@@ -1,5 +1,6 @@
 ---
 title: "Gerçek Zamanlı Mimari"
+description: "ChurchApps'in WebSocket katmanının canlı sohbet, varlık bilgisi ve bildirimleri nasıl ilettiği: soket el sıkışması, oda abonelikleri ve geliştiriciler için istemci temel öğeleri."
 ---
 
 # Gerçek Zamanlı Mimari
@@ -226,8 +227,8 @@ Canlı yayın, çerçevenin en büyük anonim tüketicisidir. Oda kapsamı için
 
 ## İlgili sayfalar
 
-- [Bildirim Mimarisi](./architecture/notifications) -- Bu iletim katmanının beslediği uygulama içi/anlık bildirim/e-posta yükseltme hunisi
-- [Mesajlaşma Uç Noktaları](./api/endpoints/messaging) -- Mesajlar, konuşmalar, bağlantılar ve cihazlar için tam REST yüzeyi
-- [Web Anlık Bildirimleri](./web-push) -- Sayfa içi soket iletiminden ayrı, tarayıcı anlık bildirimleri
-- [AppHelper](./shared-libraries/app-helper) -- İstemci ilkel öğelerini paketleyen npm paketi
-- [Modül Yapısı](./api/module-structure) -- Mesajlaşma modülünün sunucu tarafında nasıl düzenlendiği
+- [Bildirim Mimarisi](./architecture/notifications.md) -- Bu iletim katmanının beslediği uygulama içi/anlık bildirim/e-posta yükseltme hunisi
+- [Mesajlaşma Uç Noktaları](./api/endpoints/messaging.md) -- Mesajlar, konuşmalar, bağlantılar ve cihazlar için tam REST yüzeyi
+- [Web Anlık Bildirimleri](./web-push.md) -- Sayfa içi soket iletiminden ayrı, tarayıcı anlık bildirimleri
+- [AppHelper](./shared-libraries/app-helper.md) -- İstemci ilkel öğelerini paketleyen npm paketi
+- [Modül Yapısı](./api/module-structure.md) -- Mesajlaşma modülünün sunucu tarafında nasıl düzenlendiği

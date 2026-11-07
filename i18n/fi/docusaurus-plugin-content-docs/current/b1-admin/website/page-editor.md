@@ -1,5 +1,6 @@
 ---
 title: "Sivueditorin käyttäminen"
+description: "Lisää B1 Adminin sivueditoriin osioita ja elementtejä, muotoile ne, esikatsele mobiilina ja julkaise luonnokset. Mukana kumoaminen ja versiohistoria."
 ---
 
 # Sivueditorin käyttäminen
@@ -17,8 +18,8 @@ B1-sivueditori on visuaalinen vedä ja pudota -rakentaja, jonka avulla voit suun
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Suorita [alkuasetukset](initial-setup), jotta verkkosivustosi on määritetty
-- Luo vähintään yksi sivu kohdassa [Sivujen hallinta](managing-pages)
+- Suorita [alkuasetukset](./initial-setup.md), jotta verkkosivustosi on määritetty
+- Luo vähintään yksi sivu kohdassa [Sivujen hallinta](./managing-pages.md)
 - Tarvitset **content.edit**-oikeuden päästäksesi editoriin
 
 </div>
@@ -31,7 +32,7 @@ B1-sivueditori on visuaalinen vedä ja pudota -rakentaja, jonka avulla voit suun
 Editori avautuu koko näytön tilassa. Vasemmassa paneelissa näkyy sivusi rakenne ja käytettävissä olevat sisältöelementit. Keskialueella on sivusi reaaliaikainen esikatselu.
 
 :::info
-Editori näytetään aina vaaleassa tilassa B1 Adminin teema-asetuksesta riippumatta. Se käyttää otsikko- ja leipätekstin fontteja, jotka valitsit kohdassa [Ulkoasu](appearance). Näin esikatselu vastaa tarkasti sitä, miltä sivusi näyttää verkkosivujen kävijöille.
+Editori näytetään aina vaaleassa tilassa B1 Adminin teema-asetuksesta riippumatta. Se käyttää otsikko- ja leipätekstin fontteja, jotka valitsit kohdassa [Ulkoasu](./appearance.md). Näin esikatselu vastaa tarkasti sitä, miltä sivusi näyttää verkkosivujen kävijöille.
 :::
 
 ## Sivun rakenne: osiot ja elementit
@@ -61,7 +62,7 @@ Jos olet jo rakentanut osion, mutta haluat toisenlaisen rakenteen, käytä osion
    - **Image** -- Lataa kuva tai linkitä siihen
    - **Button** -- Napsautettava toimintakehotuslinkki
    - **Card** -- Kuva, jossa on otsikko ja kuvaus
-   - **Form** -- Upota [lomake](../forms/creating-forms) suoraan sivulle. Jos lomakkeessa on [otsikkokuva](../forms/creating-forms.md#adding-a-header-photo), se näkyy kysymysten yläpuolella
+   - **Form** -- Upota [lomake](../forms/creating-forms.md) suoraan sivulle. Jos lomakkeessa on [otsikkokuva](../forms/creating-forms.md#adding-a-header-photo), se näkyy kysymysten yläpuolella
    - **Calendar** -- Näytä tapahtumakalenteri
    - **FAQ** -- Haitarimaiset kysymys- ja vastauslohkot
    - **Video** -- Upota video URL-osoitteella
@@ -79,7 +80,7 @@ Jos olet jo rakentanut osion, mutta haluat toisenlaisen rakenteen, käytä osion
    - **Map** -- Upotettu kartta, joka on keskitetty kirkkosi osoitteeseen
    - **Table** -- Yksinkertainen rivien ja sarakkeiden ruudukko taulukkomaiselle sisällölle
    - **Text with Photo** -- Teksti ja kuva vierekkäin
-   - **Logo** -- Kirkkosi logo, haettuna kohdasta [Ulkoasu](appearance)
+   - **Logo** -- Kirkkosi logo, haettuna kohdasta [Ulkoasu](./appearance.md)
    - **Live Stream** -- Suorasähköisen lähetyksesi soitin, upotettuna suoraan sivulle
    - **Podcast** -- Luettelo jaksoista, jotka haetaan antamasi ulkoisen podcast-RSS-syötteen URL-osoitteesta. Voit määrittää, kuinka monta jaksoa näytetään ja näytetäänkö päivämäärät ja kuvaukset. Live-sivustolla jokaisessa jaksossa on äänisoitin ja **Download**-linkki, joka tallentaa jakson äänitiedoston jakson otsikon mukaisella nimellä. Tämä on tarkoitettu minkä tahansa podcast-syötteen esittelyyn sivustollasi. Jos haluat julkaista omat saarnasi podcastina, katso sen sijaan [Saarnojen hallinta](../sermons/managing-sermons.md#your-podcast-feed)
    - **Donation** -- Lahjoituspainike tai upotettu lahjoituslomake
@@ -100,7 +101,7 @@ Jos liität JavaScript-ruutuun pelkän verkko-osoitteen (kuten kuvalinkin), ruut
 
 **Calendar**-elementti näyttää tapahtumia jostakin kalenteristasi:
 
-1. Kohdassa **Select** valitse **Group Calendar** (yhden ryhmän tapahtumat -- luettelossa näkyvät ryhmät, joiden jäsen olet) tai **Curated Calendar** (kalenteri, jonka rakensit kohdassa **Calendars**; katso [Curated Calendar](../calendars/curated-calendar)).
+1. Kohdassa **Select** valitse **Group Calendar** (yhden ryhmän tapahtumat -- luettelossa näkyvät ryhmät, joiden jäsen olet) tai **Curated Calendar** (kalenteri, jonka rakensit kohdassa **Calendars**; katso [Curated Calendar](../calendars/curated-calendar.md)).
 2. Kohdassa **Select Calendar** valitse ryhmä tai kalenteri.
 3. Kohdassa **Display** valitse, miten se näytetään:
    - **Month calendar** -- Kuukausiruudukko, jonka kävijät voivat selata.
@@ -133,7 +134,7 @@ Napsauta mitä tahansa elementtiä avataksesi sen tyylipaneelin. Yleisiä asetuk
 Edistyneempää tyylittelyä varten jokaisessa osiossa ja elementissä on kenttä **Custom CSS**, johon voit kirjoittaa omia CSS-sääntöjä. Ne rajautuvat kyseiseen elementtiin, joten ne eivät vahingossa vaikuta muuhun sivuun.
 
 :::tip
-Jos haluat soveltaa tyylejä koko sivustoosi, kuten mukautetun fontin tai yleisen värin, käytä [Ulkoasu](appearance)-asetuksia yksittäisten sivujen mukautetun CSS:n sijaan.
+Jos haluat soveltaa tyylejä koko sivustoosi, kuten mukautetun fontin tai yleisen värin, käytä [Ulkoasu](./appearance.md)-asetuksia yksittäisten sivujen mukautetun CSS:n sijaan.
 :::
 
 ## Sivusi esikatselu
@@ -188,7 +189,7 @@ Käytä luonnos- ja julkaisutyönkulkua, kun haluat valmistella sivun esimerkiks
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Sivujen hallinta](managing-pages) -- Luo sivuja, aseta URL-osoitteita ja hallitse sivuston navigointia
-- [Ulkoasu](appearance) -- Aseta koko sivustoa koskevat värit, fontit ja brändäys
-- [Tiedostot](files) -- Lataa editorissa käytettäviä kuvia ja asiakirjoja
-- [Lomakkeiden luominen](../forms/creating-forms) -- Rakenna lomakkeita, jotka voit upottaa sivuille
+- [Sivujen hallinta](./managing-pages.md) -- Luo sivuja, aseta URL-osoitteita ja hallitse sivuston navigointia
+- [Ulkoasu](./appearance.md) -- Aseta koko sivustoa koskevat värit, fontit ja brändäys
+- [Tiedostot](./files.md) -- Lataa editorissa käytettäviä kuvia ja asiakirjoja
+- [Lomakkeiden luominen](../forms/creating-forms.md) -- Rakenna lomakkeita, jotka voit upottaa sivuille

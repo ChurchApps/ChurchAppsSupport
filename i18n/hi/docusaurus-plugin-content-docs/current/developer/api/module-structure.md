@@ -1,5 +1,6 @@
 ---
 title: "मॉड्यूल संरचना"
+description: "API के मॉड्यूल कैसे व्यवस्थित हैं, इसकी व्याख्या: कंट्रोलर, रिपॉज़िटरी, गेटवे, प्रमाणीकरण जाँच और B1 डेवलपर वातावरण में कोड चलाने वाले छह Lambda फ़ंक्शन।"
 ---
 
 # मॉड्यूल संरचना
@@ -13,8 +14,8 @@ title: "मॉड्यूल संरचना"
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- API को स्थानीय रूप से सेट अप करें -- देखें [स्थानीय API सेटअप](./local-setup)
-- डेटा एक्सेस लेयर को समझने के लिए [Database](./database) आर्किटेक्चर की समीक्षा करें
+- API को स्थानीय रूप से सेट अप करें -- देखें [स्थानीय API सेटअप](./local-setup.md)
+- डेटा एक्सेस लेयर को समझने के लिए [Database](./database.md) आर्किटेक्चर की समीक्षा करें
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## क्रॉस-मॉड्यूल संचार
 
-हर मॉड्यूल अपने डेटाबेस का स्वामी है (देखें [Database](./database)), और कोई मॉड्यूल किसी दूसरे मॉड्यूल की tables को सीधे query नहीं करता। जब एक मॉड्यूल को किसी दूसरे के स्वामित्व वाला डेटा चाहिए -- उदाहरण के लिए, doing मॉड्यूल का membership से लोगों को resolve करना -- तो वह `src/shared/modules/` में स्थित स्वामी मॉड्यूल के **gateway** के माध्यम से जाता है:
+हर मॉड्यूल अपने डेटाबेस का स्वामी है (देखें [Database](./database.md)), और कोई मॉड्यूल किसी दूसरे मॉड्यूल की tables को सीधे query नहीं करता। जब एक मॉड्यूल को किसी दूसरे के स्वामित्व वाला डेटा चाहिए -- उदाहरण के लिए, doing मॉड्यूल का membership से लोगों को resolve करना -- तो वह `src/shared/modules/` में स्थित स्वामी मॉड्यूल के **gateway** के माध्यम से जाता है:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ AWS पर deploy होने पर, API छह Lambda फ़ंक्शन �
 
 ## संबंधित लेख
 
-- **[Database](./database)** -- Connection strings, schema scripts और डेटा एक्सेस पैटर्न
-- **[स्थानीय API सेटअप](./local-setup)** -- पूरी चरण-दर-चरण सेटअप गाइड
-- **[ApiHelper](../shared-libraries/api-helper)** -- साझा library जो `CustomBaseController` और auth middleware प्रदान करती है
+- **[Database](./database.md)** -- Connection strings, schema scripts और डेटा एक्सेस पैटर्न
+- **[स्थानीय API सेटअप](./local-setup.md)** -- पूरी चरण-दर-चरण सेटअप गाइड
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- साझा library जो `CustomBaseController` और auth middleware प्रदान करती है

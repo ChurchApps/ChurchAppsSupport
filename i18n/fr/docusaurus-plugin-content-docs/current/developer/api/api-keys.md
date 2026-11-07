@@ -1,5 +1,6 @@
 ---
 title: "Clés d'API"
+description: "Créez, limitez et révoquez les clés API B1 dans B1 Admin pour les scripts serveur et les connecteurs Zapier, Make ou Google Sheets, sans flux OAuth complet."
 ---
 
 # Clés d'API
@@ -104,7 +105,7 @@ Une clé révoquée est immédiatement inutilisable -- il n'y a aucune période 
 
 ## En quoi elles diffèrent d'OAuth
 
-Les clés d'API conviennent lorsque **votre église est la seule à utiliser l'intégration**. Pour un connecteur qui doit accéder aux données de nombreuses églises, chacune donnant son consentement explicite -- comme une application SaaS partagée au sein de la communauté B1 -- utilisez plutôt [OAuth et applications connectées](./connected-apps).
+Les clés d'API conviennent lorsque **votre église est la seule à utiliser l'intégration**. Pour un connecteur qui doit accéder aux données de nombreuses églises, chacune donnant son consentement explicite -- comme une application SaaS partagée au sein de la communauté B1 -- utilisez plutôt [OAuth et applications connectées](./connected-apps.md).
 
 | | Clé d'API | OAuth |
 |---|---|---|

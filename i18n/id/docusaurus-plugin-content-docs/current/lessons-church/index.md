@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "Jelajahi, jadwalkan, dan tampilkan pelajaran gratis per kelompok usia dari 12+ penyedia di Lessons.church, dengan kelas, venue, dan integrasi FreePlay atau B1."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church bekerja dengan alat ChurchApps lainnya untuk membantu Anda menyam
 
 ## Bagian Dokumentasi
 
-- [Memulai](./getting-started/) -- Buat akun Anda dan pelajari dasar-dasarnya
-- [Menelusuri Konten](./browsing/) -- Temukan program, studi, dan pelajaran
-- [Kelas](./classrooms/) -- Siapkan kelas dan jadwalkan pelajaran
-- [Kustomisasi](./customization/) -- Sesuaikan pelajaran dengan gereja Anda
-- [Presentasi](./presenting/) -- Sampaikan pelajaran di kelas menggunakan mode presenter
-- [Administrasi](./admin/) -- Kelola program, studi, dan pelajaran sebagai admin
+- [Memulai](./getting-started/index.md) -- Buat akun Anda dan pelajari dasar-dasarnya
+- [Menelusuri Konten](./browsing/index.md) -- Temukan program, studi, dan pelajaran
+- [Kelas](./classrooms/index.md) -- Siapkan kelas dan jadwalkan pelajaran
+- [Kustomisasi](./customization/index.md) -- Sesuaikan pelajaran dengan gereja Anda
+- [Presentasi](./presenting/index.md) -- Sampaikan pelajaran di kelas menggunakan mode presenter
+- [Administrasi](./admin/index.md) -- Kelola program, studi, dan pelajaran sebagai admin
 - [Pernyataan Iman](./statement-of-faith.md) -- Keyakinan inti dan pedoman kurikulum
 
 Untuk dukungan, kirim email ke [support@churchapps.org](mailto:support@churchapps.org).

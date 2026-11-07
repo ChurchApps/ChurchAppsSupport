@@ -1,5 +1,6 @@
 ---
 title: "기기 관리"
+description: "B1 Admin 계정에 연결된 ChurchAppsPlayer와 FreePlay 화면을 페어링, 라벨링, 제거해 교회 디스플레이를 최신 상태로 안전하게 유지합니다."
 ---
 
 # 기기 관리

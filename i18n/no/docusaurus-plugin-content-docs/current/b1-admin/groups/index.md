@@ -1,5 +1,7 @@
 ---
-title: "Grupper"
+title: "Grupper i B1 Admin"
+sidebar_label: "Grupper"
+description: "Sett opp og organiser grupper i B1 Admin, inkludert kategorier, medlemmer, kalendere og påmeldingsforespørsler, med veiledning til Groups-siden."
 ---
 
 # Grupper

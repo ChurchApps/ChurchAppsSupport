@@ -1,5 +1,6 @@
 ---
 title: "Auditų žurnalas"
+description: "Peržiūrėkite B1 Admin auditų žurnalą: kas prisijungė, redagavo asmenų įrašus ar keitė leidimus, ir eksportuokite filtruotus įrašus į CSV."
 ---
 
 # Auditų žurnalas
@@ -78,6 +79,6 @@ Auditų žurnalą peržiūrėkite reguliariai, ypač po naujų komandos narių �
 
 ## Susiję straipsniai
 
-- [Vaidmenys ir leidimai](../settings/roles-permissions) -- Tvarkykite, kas ir ką gali pasiekti
-- [Duomenų saugumas](../settings/data-security) -- Sužinokite, kaip saugomi jūsų duomenys
+- [Vaidmenys ir leidimai](../settings/roles-permissions.md) -- Tvarkykite, kas ir ką gali pasiekti
+- [Duomenų saugumas](../settings/data-security.md) -- Sužinokite, kaip saugomi jūsų duomenys
 - [Ataskaitų apžvalga](./index.md) -- Peržiūrėkite visas galimas ataskaitas

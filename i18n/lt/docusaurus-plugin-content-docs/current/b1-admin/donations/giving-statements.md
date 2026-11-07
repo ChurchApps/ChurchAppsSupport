@@ -1,5 +1,6 @@
 ---
 title: "Aukų pažymos"
+description: "Sukurkite metines aukų pažymas visiems aukotojams B1 Admin ir atsisiųskite CSV failais arba atspausdinkite siuntimui su lengvatinėmis sumomis."
 ---
 
 # Aukų pažymos

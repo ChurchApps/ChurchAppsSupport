@@ -1,5 +1,6 @@
 ---
 title: "Pregled projekta"
+description: "Pregled repozitorijev ChurchApps po kategorijah: ogrodja, razvojna vrata, baze in povezave med skupnimi paketi @churchapps."
 ---
 
 # Pregled projekta
@@ -13,7 +14,7 @@ ChurchApps sestavlja približno 20 neodvisnih repozitorijev, vsak objavljen pod 
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Namestite [predpogoje](./prerequisites) za kategorijo projektov, na kateri želite delati
+- Namestite [predpogoje](./prerequisites.md) za kategorijo projektov, na kateri želite delati
 
 </div>
 
@@ -72,7 +73,7 @@ Skupna koda je objavljena na npm pod področjem `@churchapps` in jo zgornji proj
 | `@churchapps/integration-sdk` | Orodjarna za integracije B1.church: webhooki, REST odjemalec, OAuth | Zunanji razvijalci integracij |
 | `@churchapps/texting` | Abstrakcija ponudnika SMS | Api |
 
-Glejte [Skupne knjižnice](../shared-libraries/) za nastavitev delovnega prostora in postopek izdaje.
+Glejte [Skupne knjižnice](../shared-libraries/index.md) za nastavitev delovnega prostora in postopek izdaje.
 
 ## Odnosi med projekti
 
@@ -90,5 +91,5 @@ Vse frontend aplikacije so odvisne od `@churchapps/helpers`. Spletne aplikacije 
 
 ## Naslednji koraki
 
-- **[Spremenljivke okolja](./environment-variables)** -- Nastavite svoje `.env` datoteke za povezavo z API-ji
-- **[Lokalna namestitev API-ja](../api/local-setup)** -- Nastavite zaledni API lokalno
+- **[Spremenljivke okolja](./environment-variables.md)** -- Nastavite svoje `.env` datoteke za povezavo z API-ji
+- **[Lokalna namestitev API-ja](../api/local-setup.md)** -- Nastavite zaledni API lokalno

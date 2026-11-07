@@ -1,5 +1,6 @@
 ---
 title: "Ryhmien aikajana"
+description: "Katso, miten B1 Mobilen ryhmäaikajana yhdistää kaikkien ryhmiesi julkaisut, keskustelut ja päivitykset yhdeksi syötteeksi ja mitä tehdä, kun aikajana on keskeytetty."
 ---
 
 # Ryhmien aikajana
@@ -17,7 +18,7 @@ Ryhmien aikajana-ominaisuus ei ole tilapäisesti käytettävissä, kun sitä par
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu sisään](../getting-started/logging-in) tilillesi
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu sisään](../getting-started/logging-in.md) tilillesi
 - Ole vähintään yhden seurakuntasi ryhmän jäsen
 
 </div>
@@ -41,7 +42,7 @@ Jokainen aikajanan kohde näyttää, mistä ryhmästä se on peräisin, joten ti
 Aikajana on mainio tapa pysyä yhteydessä seurakuntayhteisöösi yhdellä silmäyksellä. Tässä muutama vinkki, joilla saat siitä kaiken irti:
 
 - **Tarkista säännöllisesti** -- Avaa Ryhmät-näkymä ja selaa aikajanaa saadaksesi kiinni viimeaikaisesta toiminnasta.
-- **Napauta nähdäksesi lisää** -- Jos jokin julkaisu kiinnittää huomiosi, napauta sitä tai ryhmän nimeä siirtyäksesi täydelliseen [ryhmän tietosivuun](./group-details) lisätiedoille.
+- **Napauta nähdäksesi lisää** -- Jos jokin julkaisu kiinnittää huomiosi, napauta sitä tai ryhmän nimeä siirtyäksesi täydelliseen [ryhmän tietosivuun](./group-details.md) lisätiedoille.
 - **Kaikki yhdessä paikassa** -- Sinun ei tarvitse käydä jokaisessa ryhmässä erikseen. Aikajana tuo kaiken toiminnan sinulle.
 
 :::info
@@ -54,5 +55,5 @@ Ota [push-ilmoitukset](../community/notifications.md) käyttöön, saadaksesi il
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Ryhmän tiedot](./group-details) -- Katso yksittäisen ryhmän täydelliset tiedot ja julkaisut
+- [Ryhmän tiedot](./group-details.md) -- Katso yksittäisen ryhmän täydelliset tiedot ja julkaisut
 - [Ilmoitukset](../community/notifications.md) -- Saa ilmoitus ryhmien toiminnasta

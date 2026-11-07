@@ -1,5 +1,6 @@
 ---
 title: "Vodnik: Nastavitev prijave na dogodek"
+description: "Nastavite obrazec za prijavo na dogodek v B1 Admin, zberite podatke udeležencev in po želji plačila, vdelajte ga na spletno mesto in spremljajte prijave."
 ---
 
 # Nastavitev prijave na dogodek
@@ -11,7 +12,7 @@ Ustvarite obrazec za prijavo na dogodek, zbirajte podatke o udeležencih in po �
 </div>
 
 :::info
-**Dva načina za prijavo na dogodke:** Ta vodnik obravnava **prijavo prek obrazcev**, ki vam daje popoln nadzor nad prilagojenimi polji in zbiranjem plačil. Za preprostejše dogodke, kjer samo želite slediti, kdo bo prišel, uporabite **prijavo na dogodek prek koledarja**, ki je vgrajena v koledar -- navodila za nastavitev najdete v razdelku [Ustvarjanje koledarjev](../calendars/creating-calendars.md#enabling-event-registration). Prijava prek koledarja omogoča članom, da se prijavijo neposredno na [spletni strani B1](../../b1-church/events/registering) in v [mobilni aplikaciji](../../b1-mobile/events/registering), ob sledenju zasedenosti, časovnih oknih in e-poštnih potrditvah.
+**Dva načina za prijavo na dogodke:** Ta vodnik obravnava **prijavo prek obrazcev**, ki vam daje popoln nadzor nad prilagojenimi polji in zbiranjem plačil. Za preprostejše dogodke, kjer samo želite slediti, kdo bo prišel, uporabite **prijavo na dogodek prek koledarja**, ki je vgrajena v koledar -- navodila za nastavitev najdete v razdelku [Ustvarjanje koledarjev](../calendars/creating-calendars.md#enabling-event-registration). Prijava prek koledarja omogoča članom, da se prijavijo neposredno na [spletni strani B1](../../b1-church/events/registering.md) in v [mobilni aplikaciji](../../b1-mobile/events/registering.md), ob sledenju zasedenosti, časovnih oknih in e-poštnih potrditvah.
 :::
 
 <div class="prereqs">

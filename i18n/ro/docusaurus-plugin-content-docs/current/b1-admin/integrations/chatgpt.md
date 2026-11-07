@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "Conectați ChatGPT la datele bisericii în B1 cu o cheie API, ca să puteți pune întrebări în limbaj natural despre persoane, donații și prezență în B1 Admin."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Conectați ChatGPT la datele B1 ale bisericii dumneavoastră și puneți-i într
 </div>
 
 :::tip Recomandat: încercați mai întâi Claude — este gratuit
-[Claude](./claude) se conectează la B1 cu **planul gratuit** și se configurează în mai puțin de 3 minute — adăugați pur și simplu B1 caños conector și autentificați-vă cu contul B1. Nu este necesară nicio cheie. Este cea mai ușoară modalitate prin care biserica dumneavoastră poate încerca inteligența artificială împreună cu B1, înainte de a plăti pentru ceva.
+[Claude](./claude.md) se conectează la B1 cu **planul gratuit** și se configurează în mai puțin de 3 minute — adăugați pur și simplu B1 caños conector și autentificați-vă cu contul B1. Nu este necesară nicio cheie. Este cea mai ușoară modalitate prin care biserica dumneavoastră poate încerca inteligența artificială împreună cu B1, înainte de a plăti pentru ceva.
 :::
 
 ## Configurare
@@ -254,5 +255,5 @@ Oricine are linkul poate pune întrebări în limbaj natural. Permisiunile cheii
 
 - [Chei API](/docs/developer/api/api-keys) — lista completă a permisiunilor
 - [Server MCP (documentație pentru dezvoltatori)](/docs/developer/api/mcp) — detalii despre protocol și schemele uneltelor
-- [Claude](./claude) — același lucru, pentru modelele Anthropic
+- [Claude](./claude.md) — același lucru, pentru modelele Anthropic
 - [Referința REST API](/docs/developer/api/endpoints) — fiecare endpoint pe care îl poate apela o acțiune Custom GPT

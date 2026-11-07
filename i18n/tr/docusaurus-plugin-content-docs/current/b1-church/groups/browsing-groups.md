@@ -1,5 +1,6 @@
 ---
 title: "Grupları Keşfetme"
+description: "B1.church'te kilisenizin açık gruplarına kategoriye göre göz atın; her kartta toplantı saatlerini, konumları ve açıklamaları inceleyerek uygun grubu bulun."
 ---
 
 # Grupları Keşfetme

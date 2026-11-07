@@ -1,5 +1,6 @@
 ---
 title: "Modèles de plans"
+description: "Enregistrez l'ordre du culte et les postes d'un plan comme modèle réutilisable dans B1 Admin, puis appliquez-le aux plans suivants en un clic."
 ---
 
 # Modèles de plans

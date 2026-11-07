@@ -1,5 +1,6 @@
 ---
 title: "Programmes et études"
+description: "Comment les programmes, études, leçons et lieux de Lessons.church s'articulent, pour trouver le bon curriculum et naviguer entre leçons liées."
 ---
 
 # Programmes et études

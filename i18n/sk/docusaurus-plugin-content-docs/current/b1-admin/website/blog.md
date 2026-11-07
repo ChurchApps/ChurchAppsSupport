@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Písanie blogových príspevkov pre váš web v B1 Admin"
+sidebar_label: "Blog"
+description: "Vytvárajte, plánujte a publikujte blogové príspevky na webe zboru v B1 Admin, vrátane úvodov, kategórií, značiek, hlavných fotiek a komentárov."
 ---
 
 # Blog
@@ -13,8 +15,8 @@ Stránka Blog vám umožňuje publikovať novinky, aktualizácie a duchovné zam
 <div class="prereqs">
 <h4>Prv než začnete</h4>
 
-- Dokončite [Počiatočné nastavenie](initial-setup) pre vašu webovú stránku
-- Ak chcete, aby návštevníci našli váš blog v menu, pridajte odkaz na `/blog` v [Správe stránok](managing-pages)
+- Dokončite [Počiatočné nastavenie](./initial-setup.md) pre vašu webovú stránku
+- Ak chcete, aby návštevníci našli váš blog v menu, pridajte odkaz na `/blog` v [Správe stránok](./managing-pages.md)
 
 </div>
 
@@ -31,7 +33,7 @@ Stránka Blog vám umožňuje publikovať novinky, aktualizácie a duchovné zam
 3. Pridajte **Úryvok** -- krátke zhrnutie, ktoré sa zobrazuje v prehľade príspevkov, v meta popisoch a v kanáli RSS. Ak ho necháte prázdne, automaticky sa vytvorí z úvodu obsahu príspevku.
 4. Napíšte telo príspevku v editore **Obsah** pomocou Markdownu. Kliknutím na **Náhľad** zobrazíte, ako bude formátovaný príspevok vyzerať.
 5. Vyberte **Kategóriu** (existujúcu alebo napíšte novú) a voliteľne **Značky** oddelené čiarkami.
-6. Kliknite na **Vybrať obrázok**, aby ste vybrali fotografiu z galérie [Súbory](files), alebo nahrajte novú. Nahrané fotografie sa otvoria v zabudovanom nástroji na orezanie uzamknutom na pomer 16:9, takže môžete ľubovoľnú fotografiu upraviť tak, aby sa hodila do hlavičky príspevku a kariet v prehľade.
+6. Kliknite na **Vybrať obrázok**, aby ste vybrali fotografiu z galérie [Súbory](./files.md), alebo nahrajte novú. Nahrané fotografie sa otvoria v zabudovanom nástroji na orezanie uzamknutom na pomer 16:9, takže môžete ľubovoľnú fotografiu upraviť tak, aby sa hodila do hlavičky príspevku a kariet v prehľade.
 7. Nastavte **Autora** -- predvolene ste to vy, ale môžete vyhľadať a vybrať ľubovoľnú osobu z vašej databázy.
 8. Keď budete pripravení zverejniť príspevok, zapnite **Publikované** a nastavte **Dátum publikovania**. Ak ho necháte vypnuté, príspevok sa uloží ako koncept.
 
@@ -58,7 +60,7 @@ Každý príspevok v zozname zobrazuje jeden z troch stavov:
 Publikované príspevky sa zobrazujú na `{yoursite}/blog`, po 10 na stránke, s odkazmi **Staršie**/**Novšie** na listovanie v archíve, spolu s filtrom kategórií a autorom a fotografiou každého príspevku. Značky sa zobrazujú aj ako klikateľné štítky, takže návštevníci môžu zoznam filtrovať podľa značky rovnakým spôsobom. Jednotlivé príspevky sú na `{yoursite}/blog/{slug}` a obsahujú súvisiace príspevky z tej istej kategórie. Stránka blogu tiež publikuje kanál RSS, ktorý čítačky kanálov a automatizačné nástroje ako Zapier dokážu automaticky nájsť.
 
 :::info
-Blogové príspevky sú iný typ obsahu ako bežné stránky webu -- nevytvárajú sa v [editore stránok](page-editor) a nezobrazujú sa v zozname stránok. Vďaka tomu je písanie blogu rýchle a sústredené na samotný text.
+Blogové príspevky sú iný typ obsahu ako bežné stránky webu -- nevytvárajú sa v [editore stránok](./page-editor.md) a nezobrazujú sa v zozname stránok. Vďaka tomu je písanie blogu rýchle a sústredené na samotný text.
 :::
 
 ## Pridanie komentárov pod príspevky
@@ -77,6 +79,6 @@ Vymažte obsah poľa a kliknite na **Uložiť**, aby sa kód odstránil zo všet
 
 ## Ďalšie kroky
 
-- [Správa stránok](managing-pages) -- Pridanie odkazu na váš blog do navigácie
-- [Súbory](files) -- Nahrajte fotografie na použitie vo vašich príspevkoch
+- [Správa stránok](./managing-pages.md) -- Pridanie odkazu na váš blog do navigácie
+- [Súbory](./files.md) -- Nahrajte fotografie na použitie vo vašich príspevkoch
 - [Integrácia so Zapier](../integrations/zapier.md) -- Spúšťajte automatizácie pri publikovaní nových príspevkov

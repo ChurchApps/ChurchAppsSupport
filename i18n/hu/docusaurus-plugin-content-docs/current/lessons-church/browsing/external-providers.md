@@ -1,5 +1,6 @@
 ---
 title: "Külső szolgáltatók"
+description: "Hogyan adnak hozzá harmadik féltől származó szolgáltatók tartalmat a Lessons.churchhez a Nyílt Lecke Formátummal, és hogyan csatlakoztathat egyet."
 ---
 
 # Külső szolgáltatók

@@ -1,5 +1,7 @@
 ---
-title: "Etkinliklere Kayıt Olma"
+title: "B1.church'te Etkinlik Kaydı"
+sidebar_label: "Etkinliklere Kayıt Olma"
+description: "B1.church'te bir kilise etkinliğine kayıt olun: bilgilerinizi girin, aile üyeleri ekleyin, seçenekleri belirleyin, indirim kodlarını uygulayın ve ödeme yapın veya bekleme listesine katılın."
 ---
 
 # Etkinliklere Kayıt Olma
@@ -79,14 +81,14 @@ Etkinlik ayrıntılarını ve kayıt yaptırdığınız herkesin listesini içer
 
 ## Bekleme Listesine Katılma
 
-Etkinlik doluysa ve kilisiniz bekleme listesini etkinleştirmişse, ilk adımda şu mesaj görünür: *"Bu etkinlik dolu. Bekleme listesine katılabilirsiniz; bir yer açılırsa size haber vereceğiz."* Kaydı normal şekilde tamamlayın — bekleme listesindeyken ödeme adımı atlanır. Bir yer açıldığında bir e-posta alırsınız; ödeme gerekiyorsa, e-postada ödemeyi tamamlamak için bir bağlantı bulunur. Durumunuzu kontrol etmek ve ödeme yapmak için [Kayıtlarım](./my-registrations) sayfasını da kullanabilirsiniz.
+Etkinlik doluysa ve kilisiniz bekleme listesini etkinleştirmişse, ilk adımda şu mesaj görünür: *"Bu etkinlik dolu. Bekleme listesine katılabilirsiniz; bir yer açılırsa size haber vereceğiz."* Kaydı normal şekilde tamamlayın — bekleme listesindeyken ödeme adımı atlanır. Bir yer açıldığında bir e-posta alırsınız; ödeme gerekiyorsa, e-postada ödemeyi tamamlamak için bir bağlantı bulunur. Durumunuzu kontrol etmek ve ödeme yapmak için [Kayıtlarım](./my-registrations.md) sayfasını da kullanabilirsiniz.
 
 ## Kaydı Değiştirme veya İptal Etme
 
-Giriş yapmışsanız, üye portalındaki **Kayıtlar** sayfasından kaydınızı kendiniz düzenleyebilir veya iptal edebilirsiniz — bkz. [Kayıtlarım](./my-registrations). Misafirler kilise ofisiyle iletişime geçmelidir; personel ise değişikliği B1 Admin kayıtlar sayfasından yapabilir.
+Giriş yapmışsanız, üye portalındaki **Kayıtlar** sayfasından kaydınızı kendiniz düzenleyebilir veya iptal edebilirsiniz — bkz. [Kayıtlarım](./my-registrations.md). Misafirler kilise ofisiyle iletişime geçmelidir; personel ise değişikliği B1 Admin kayıtlar sayfasından yapabilir.
 
 ## İlgili Makaleler
 
 - [Etkinlikler Genel Bakış](./index.md) -- Kayıt alan yaklaşan etkinlikleri inceleyin
-- [Kayıtlarım](./my-registrations) -- Kayıtlarınızı görüntüleyin, düzenleyin, bakiye ödeyin ve iptal edin
-- [Bağış Yapma](../giving/making-donations) -- Etkinliğe katılımınızla birlikte bağış yapın
+- [Kayıtlarım](./my-registrations.md) -- Kayıtlarınızı görüntüleyin, düzenleyin, bakiye ödeyin ve iptal edin
+- [Bağış Yapma](../giving/making-donations.md) -- Etkinliğe katılımınızla birlikte bağış yapın

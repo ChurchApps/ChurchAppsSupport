@@ -1,5 +1,6 @@
 ---
 title: "Koostettu kalenteri"
+description: "Määritä B1 Adminissa koko seurakunnan kuratoitu kalenteri, joka kokoaa tapahtumat useilta ryhmiltä, ja jaa se verkkosivuilla, ICS-tilauksena tai latauksena."
 ---
 
 # Koostettu kalenteri
@@ -15,7 +16,7 @@ Koostettu kalenteri kokoaa useiden ryhmien tapahtumat yhteen yhtenäiseen kalent
 
 - Määritä ne [ryhmät](../groups/creating-groups.md), joiden tapahtumat haluat sisällyttää
 - Varmista, että ryhmien johtajat ovat lisänneet tapahtumat omiin ryhmiinsä
-- Tutustu [kalenterien luomisen](creating-calendars) perusteisiin
+- Tutustu [kalenterien luomisen](./creating-calendars.md) perusteisiin
 
 </div>
 
@@ -61,5 +62,5 @@ Verkkosivustosi koostetussa kalenterissa ja sen ICS-tilauksessa näkyvät vain *
 
 ## Seuraavat vaiheet
 
-- [Kalenterien luominen](creating-calendars) -- Opi kalenterin luomisen perusteet
-- [Kalenterien yleiskatsaus](./) -- Palaa kalenterien yleiskatsaukseen
+- [Kalenterien luominen](./creating-calendars.md) -- Opi kalenterin luomisen perusteet
+- [Kalenterien yleiskatsaus](./index.md) -- Palaa kalenterien yleiskatsaukseen

@@ -1,5 +1,6 @@
 ---
 title: "Check-in arbejdsgang"
+description: "Gennemgå B1 Church Checkin-kioskens trin for trin, fra valg af gudstjeneste til udtjek, og opsæt gudstjenester, grupper og personer i B1 Admin først."
 ---
 
 # Check-in arbejdsgang
@@ -12,12 +13,12 @@ Check-in processen i B1 Church Checkin følger en simpel, trin-for-trin flow. Et
 
 ## Check-in floden på et øjeblik
 
-1. **[Vælg en servin](./selecting-service)** -- Vælg hvilken servin du deltager i (f.eks. Søndag morgen, Søndag aften, Midtuge).
-2. **[Slå din familie op](./looking-up-members)** -- Søg efter telefonnummer eller efternavn for at finde dig selv i systemet.
-3. **[Gennemgå din husstand](./household-review)** -- Se alle familiemedlemmer og deres nuværende gruppe tildelinger.
-4. **[Tildel grupper](./group-assignment)** -- Vælg hvilken klasse eller gruppe hvert familiemedlem skal deltage i for hver servin tid.
-5. **[Tilføj gæster](./adding-guests)** (valgfrit) -- Tilføj en besøgende til din husstand, hvis de deltager med dig.
-6. **[Fuldføre checkin](./completing-checkin)** -- Tryk på check-in knappen for at indsende fremmøde og udskrive labels.
+1. **[Vælg en servin](./selecting-service.md)** -- Vælg hvilken servin du deltager i (f.eks. Søndag morgen, Søndag aften, Midtuge).
+2. **[Slå din familie op](./looking-up-members.md)** -- Søg efter telefonnummer eller efternavn for at finde dig selv i systemet.
+3. **[Gennemgå din husstand](./household-review.md)** -- Se alle familiemedlemmer og deres nuværende gruppe tildelinger.
+4. **[Tildel grupper](./group-assignment.md)** -- Vælg hvilken klasse eller gruppe hvert familiemedlem skal deltage i for hver servin tid.
+5. **[Tilføj gæster](./adding-guests.md)** (valgfrit) -- Tilføj en besøgende til din husstand, hvis de deltager med dig.
+6. **[Fuldføre checkin](./completing-checkin.md)** -- Tryk på check-in knappen for at indsende fremmøde og udskrive labels.
 
 Efter checkin er færdigt, viser appen en success skærm og returnerer automatisk til opslags skærmen, klar til næste familie.
 
@@ -35,5 +36,5 @@ Sørg for følgende er konfigureret i B1 Admin før brug af check-in kiosk:
 - **Mennesker** er tilføjet til systemet med husstandssamhørighed. Se [tilføjelse af mennesker](../../b1-admin/people/adding-people.md).
 
 :::info
-Hvis du endnu ikke har sat kiosken selv op, se [Kom godt i gang](../getting-started/) for installations-, login- og printer konfigurationsinstruktioner.
+Hvis du endnu ikke har sat kiosken selv op, se [Kom godt i gang](../getting-started/index.md) for installations-, login- og printer konfigurationsinstruktioner.
 :::

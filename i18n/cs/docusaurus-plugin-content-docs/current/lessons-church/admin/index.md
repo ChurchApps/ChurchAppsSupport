@@ -1,5 +1,6 @@
 ---
 title: "Správa"
+description: "Přehled administrace Lessons.church v ChurchApps: správa programů, studií, lekcí, zdrojů, statistik a externích poskytovatelů kurikula."
 ---
 
 # Správa

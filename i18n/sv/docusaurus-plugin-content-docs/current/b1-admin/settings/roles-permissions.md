@@ -1,5 +1,6 @@
 ---
 title: "Roller och behörigheter"
+description: "Ställ in roller i B1 Admin för att styra vad personal och volontärer kan se och ändra, från gåvor och närvaro till personer och grupper."
 ---
 
 # Roller och behörigheter

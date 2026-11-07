@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "Setup locale della web app per i membri B1App con Next.js 22+, configurazione degli endpoint API in .env ed esecuzione del server di sviluppo sulla porta 3301."
 ---
 
 # B1App
@@ -13,8 +14,8 @@ B1App è l'applicazione pubblica per i membri della chiesa, costruita con Next.j
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Installate **Node.js 22+** e **Git** -- vedere [Prerequisiti](../setup/prerequisites)
-- Configurate il vostro target API (demo o locale) -- vedere [Variabili d'ambiente](../setup/environment-variables)
+- Installate **Node.js 22+** e **Git** -- vedere [Prerequisiti](../setup/prerequisites.md)
+- Configurate il vostro target API (demo o locale) -- vedere [Variabili d'ambiente](../setup/environment-variables.md)
 
 </div>
 
@@ -89,5 +90,5 @@ Le build di produzione vengono distribuite su **S3 + CloudFront**:
 3. Viene attivata un'invalidazione di CloudFront per servire la nuova versione
 
 :::tip
-Per le istruzioni dettagliate sulla distribuzione, vedere la guida [Distribuzione delle web app](../deployment/web-apps).
+Per le istruzioni dettagliate sulla distribuzione, vedere la guida [Distribuzione delle web app](../deployment/web-apps.md).
 :::

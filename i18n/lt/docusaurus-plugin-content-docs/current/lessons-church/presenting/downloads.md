@@ -1,5 +1,6 @@
 ---
 title: "Atsisiuntimai ir medžiaga"
+description: "Raskite ir atsisiųskite spausdinamus veiklų lapus, vadovus ir PDF failus, pridėtus prie Lessons.church pamokų, mokymų ar programų savo klasei."
 ---
 
 # Atsisiuntimai ir medžiaga

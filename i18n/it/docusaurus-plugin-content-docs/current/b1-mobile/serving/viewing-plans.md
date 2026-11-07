@@ -1,5 +1,7 @@
 ---
-title: "Visualizzazione dei Piani"
+title: "Visualizzare i piani di servizio in B1 Mobile"
+sidebar_label: "Visualizzazione dei Piani"
+description: "Controlla il calendario di servizio passato e futuro in B1 Mobile, leggi i dettagli e l'ordine di culto, e stampa i piani per prove o backstage."
 ---
 
 # Visualizzazione dei Piani
@@ -13,7 +15,7 @@ La schermata dei piani in B1 Mobile ti offre un quadro completo del tuo programm
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- [Installa B1 Mobile](../getting-started/installing) e [accedi](../getting-started/logging-in) al tuo account
+- [Installa B1 Mobile](../getting-started/installing.md) e [accedi](../getting-started/logging-in.md) al tuo account
 - Essere assegnato ad almeno un piano di servizio dall'amministratore della tua chiesa
 
 </div>

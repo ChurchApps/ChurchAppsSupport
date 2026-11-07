@@ -1,5 +1,6 @@
 ---
 title: "Gestionar programas"
+description: "Crea y edita programas de currículo en Lessons.church, configura slugs y miniaturas, agrupa estudios en categorías y adjunta recursos a nivel de programa."
 ---
 
 # Gestionar programas

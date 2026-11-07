@@ -1,5 +1,6 @@
 ---
 title: "Pagba-browse ng Nilalaman"
+description: "Mag-browse ng libreng curriculum library ng Lessons.church nang walang account: home page, pag-browse ayon sa program, search, at external providers."
 ---
 
 # Pagba-browse ng Nilalaman

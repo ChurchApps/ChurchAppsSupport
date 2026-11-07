@@ -1,5 +1,7 @@
 ---
-title: "Enregistrement personnel"
+title: "Auto-enregistrement depuis l’application B1 Mobile"
+sidebar_label: "Enregistrement personnel"
+description: "Enregistrez-vous, vous et votre foyer, à un service depuis B1 Mobile, y compris le choix de l’horaire et l’affectation du groupe de chaque personne."
 ---
 
 # Enregistrement personnel
@@ -13,7 +15,7 @@ L'enregistrement depuis B1 Mobile est un processus simple en plusieurs étapes. 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Installez B1 Mobile](../getting-started/installing) et [connectez-vous](../getting-started/logging-in) à votre compte
+- [Installez B1 Mobile](../getting-started/installing.md) et [connectez-vous](../getting-started/logging-in.md) à votre compte
 - Assurez-vous que les [membres de votre foyer](../profile/household.md) sont configurés dans votre profil
 
 </div>

@@ -1,5 +1,6 @@
 ---
 title: "Pracovní postup odbavení"
+description: "Projděte krok za krokem kiosk B1 Church Checkin od výběru bohoslužby po odhlášení a nejprve nastavte služby, skupiny a osoby v B1 Admin."
 ---
 
 # Pracovní postup odbavení
@@ -12,13 +13,13 @@ Proces odbavení v B1 Church Checkin probíhá podle jednoduchého postupu krok 
 
 ## Přehled postupu odbavení
 
-1. **[Vyberte bohoslužbu](./selecting-service)** -- Zvolte, kterou bohoslužbu navštěvujete (např. nedělní dopoledne, nedělní odpoledne, uprostřed týdne).
-2. **[Vyhledejte svou rodinu](./looking-up-members)** -- Vyhledejte podle telefonního čísla nebo příjmení a najděte se v systému.
-3. **[Zkontrolujte svou domácnost](./household-review)** -- Zobrazí se všichni členové rodiny a jejich aktuální přiřazení ke skupinám.
-4. **[Přiřaďte skupiny](./group-assignment)** -- Vyberte třídu nebo skupinu, kterou má každý člen rodiny navštěvovat v jednotlivých časech bohoslužby.
-5. **[Přidejte hosty](./adding-guests)** (volitelné) -- Pokud se k vám připojuje návštěva, přidejte ji do své domácnosti.
-6. **[Dokončete odbavení](./completing-checkin)** -- Klepněte na tlačítko odbavení, odešlete docházku a vytiskněte štítky.
-7. **[Odhlaste se](./checking-out)** (stanoviště s obsluhou) -- V době vyzvednutí ověřte bezpečnostní kód a osobu, která dítě vyzvedává, včetně seznamů důvěryhodných osob, upozornění rodičů a znovu vytištěných štítků.
+1. **[Vyberte bohoslužbu](./selecting-service.md)** -- Zvolte, kterou bohoslužbu navštěvujete (např. nedělní dopoledne, nedělní odpoledne, uprostřed týdne).
+2. **[Vyhledejte svou rodinu](./looking-up-members.md)** -- Vyhledejte podle telefonního čísla nebo příjmení a najděte se v systému.
+3. **[Zkontrolujte svou domácnost](./household-review.md)** -- Zobrazí se všichni členové rodiny a jejich aktuální přiřazení ke skupinám.
+4. **[Přiřaďte skupiny](./group-assignment.md)** -- Vyberte třídu nebo skupinu, kterou má každý člen rodiny navštěvovat v jednotlivých časech bohoslužby.
+5. **[Přidejte hosty](./adding-guests.md)** (volitelné) -- Pokud se k vám připojuje návštěva, přidejte ji do své domácnosti.
+6. **[Dokončete odbavení](./completing-checkin.md)** -- Klepněte na tlačítko odbavení, odešlete docházku a vytiskněte štítky.
+7. **[Odhlaste se](./checking-out.md)** (stanoviště s obsluhou) -- V době vyzvednutí ověřte bezpečnostní kód a osobu, která dítě vyzvedává, včetně seznamů důvěryhodných osob, upozornění rodičů a znovu vytištěných štítků.
 
 Po dokončení odbavení aplikace zobrazí obrazovku s potvrzením a automaticky se vrátí na obrazovku vyhledávání, připravena pro další rodinu.
 
@@ -36,5 +37,5 @@ Před použitím odbavovacího kiosku se ujistěte, že jsou v B1 Admin nastaven
 - **Osoby** jsou přidány do systému se svými vazbami na domácnost. Viz [přidávání osob](../../b1-admin/people/adding-people.md).
 
 :::info
-Pokud kiosek ještě nemáte nastavený, instrukce k instalaci, přihlášení a nastavení tiskárny najdete v části [Začínáme](../getting-started/).
+Pokud kiosek ještě nemáte nastavený, instrukce k instalaci, přihlášení a nastavení tiskárny najdete v části [Začínáme](../getting-started/index.md).
 :::

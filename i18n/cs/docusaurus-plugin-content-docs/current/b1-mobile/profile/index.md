@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Profil a přiřazené karty v B1 Mobile"
+sidebar_label: "Profil"
+description: "Spravujte jméno, kontaktní údaje, domácnost a viditelnost soukromí v profilu B1 Mobile a vyřizujte karty pracovních postupů a úkoly, které vám byly přiřazeny."
 ---
 
 # Profil
@@ -20,7 +22,7 @@ Auf der Registerkarte **Profil** können Sie Ihre persönlichen Daten einsehen u
 
 ### Haushalt
 
-Auf der Registerkarte **Haushalt** sehen Sie Ihre Familienmitglieder und deren Rollen innerhalb Ihres Haushalts. Diese Informationen werden für Funktionen wie den [Check-in](../checkin/) genutzt, mit dem Sie Ihre ganze Familie auf einmal einchecken können.
+Auf der Registerkarte **Haushalt** sehen Sie Ihre Familienmitglieder und deren Rollen innerhalb Ihres Haushalts. Diese Informationen werden für Funktionen wie den [Check-in](../checkin/index.md) genutzt, mit dem Sie Ihre ganze Familie auf einmal einchecken können.
 
 ### Sichtbarkeit
 
@@ -55,6 +57,6 @@ Tippen Sie auf eine einfache Aufgabe, um zu sehen, von wem sie stammt, wen sie b
 
 ## Nächste Schritte
 
-- [Profil bearbeiten](./editing-profile) -- Name, Kontaktdaten und Foto aktualisieren
-- [Haushalt](./household) -- Familienmitglieder anzeigen und verwalten
-- [Datenschutzeinstellungen](./privacy-settings) -- Festlegen, was andere über Sie sehen können
+- [Profil bearbeiten](./editing-profile.md) -- Name, Kontaktdaten und Foto aktualisieren
+- [Haushalt](./household.md) -- Familienmitglieder anzeigen und verwalten
+- [Datenschutzeinstellungen](./privacy-settings.md) -- Festlegen, was andere über Sie sehen können

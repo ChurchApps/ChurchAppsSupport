@@ -1,5 +1,6 @@
 ---
 title: "Guida: configurare il check-in del ministero dei bambini"
+description: "Imposta il check-in dei bambini in B1 Admin: collega le famiglie, crea gruppi per età, configura i culti e stampa i cartellini per il chiosco B1 Checkin."
 ---
 
 # Configurare il check-in del ministero dei bambini

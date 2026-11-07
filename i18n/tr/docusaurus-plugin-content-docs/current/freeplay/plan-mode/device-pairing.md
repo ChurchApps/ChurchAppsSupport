@@ -1,5 +1,6 @@
 ---
 title: "Cihazınızı Eşleştirme"
+description: "B1 Admin'de ekranda gösterilen dört harfli kodu kullanarak bir FreePlay TV'yi plan türüne eşleştirin, ardından Plan Modu oynatma için planın medyasını indirin."
 ---
 
 # Cihazınızı Eşleştirme
@@ -13,7 +14,7 @@ Plan Modu'nu kullanmak için TV'nizi B1 Admin'de bir plan türüyle eşleştirir
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- FreePlay'i yükleyip başlatın. Bkz. [Başlarken](../getting-started/)
+- FreePlay'i yükleyip başlatın. Bkz. [Başlarken](../getting-started/index.md)
 - Eşleştirmeyi tamamlamak için bir bilgisayarda veya telefonda **B1 Admin**'e erişiminiz olsun
 
 </div>
@@ -25,7 +26,7 @@ Plan Modu'nu kullanmak için TV'nizi B1 Admin'de bir plan türüyle eşleştirir
 3. FreePlay, bir QR kodunun yanında dört harfli eşleştirme kodunu büyük harflerle gösterir.
 4. Kodun altında, yanıp sönen **Onay bekleniyor** göstergesi, FreePlay'in eşleştirmeyi tamamlamanızı beklediğini gösterir.
 
-Aynı kod, FreePlay Admin'deki [Zamanlanmış Mod](../scheduled-mode/) ve B1 Admin'deki Plan Modu için de çalışır. Ekrandaki QR kodu ve **freeplay.church/pair** adresi FreePlay Admin'i açar. Plan Modu için bunları yok sayın ve kodu aşağıda anlatıldığı gibi B1 Admin'e girin.
+Aynı kod, FreePlay Admin'deki [Zamanlanmış Mod](../scheduled-mode/index.md) ve B1 Admin'deki Plan Modu için de çalışır. Ekrandaki QR kodu ve **freeplay.church/pair** adresi FreePlay Admin'i açar. Plan Modu için bunları yok sayın ve kodu aşağıda anlatıldığı gibi B1 Admin'e girin.
 
 ## Kodu B1 Admin'e Girme
 
@@ -61,5 +62,5 @@ Eşleştirme kodlarının süresi 15 dakikada dolar. Eski kodun süresi dolduğu
 ## İlgili Makaleler
 
 - **[Plan Modu Genel Bakış](./index.md)** - Plan Modu'nun Zamanlanmış Mod'dan farkı
-- **[Bir Ekranı Eşleştirme](../scheduled-mode/pairing-a-screen)** - Aynı TV'yi bunun yerine FreePlay Admin'de bir takvimle eşleştirme
-- **[İçerik Oynatma](../content-providers/playing-content)** - Plan oynatma için oynatıcı denetimleri
+- **[Bir Ekranı Eşleştirme](../scheduled-mode/pairing-a-screen.md)** - Aynı TV'yi bunun yerine FreePlay Admin'de bir takvimle eşleştirme
+- **[İçerik Oynatma](../content-providers/playing-content.md)** - Plan oynatma için oynatıcı denetimleri

@@ -1,5 +1,6 @@
 ---
 title: "Gabay: Pag-set Up ng Check-In para sa Children's Ministry"
+description: "I-set up ang check-in ng mga bata sa B1 Admin: i-link ang pamilya, gumawa ng grupong ayon sa edad, i-configure ang serbisyo, at mag-print ng name tag para sa kiosk."
 ---
 
 # Pag-set Up ng Check-In para sa Children's Ministry

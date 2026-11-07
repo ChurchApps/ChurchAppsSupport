@@ -1,5 +1,7 @@
 ---
-title: "Predigten"
+title: "Predigten in B1 Admin"
+sidebar_label: "Predigten"
+description: "Predigtbibliothek, Playlists, Live-Stream-Zeitplan und Massenimporte aus YouTube oder Vimeo in B1 Admin einrichten und verwalten."
 ---
 
 # Predigten
@@ -20,27 +22,27 @@ Der Bereich Predigten ist in vier Hauptbereiche organisiert:
 
 ### Predigten
 
-Fügen Sie einzelne Predigteinträge zu Ihrer Bibliothek hinzu und verwalten Sie sie. Jede Predigt kann einen Titel, Sprecher, Datum, Beschreibung, Vorschaubild und Links zu Video- oder Audio-Inhalten enthalten. Sie können Predigten mit YouTube, Vimeo, Facebook oder benutzerdefinierten Video-URLs verknüpfen. Siehe [Predigten verwalten](managing-sermons) für alle Details.
+Fügen Sie einzelne Predigteinträge zu Ihrer Bibliothek hinzu und verwalten Sie sie. Jede Predigt kann einen Titel, Sprecher, Datum, Beschreibung, Vorschaubild und Links zu Video- oder Audio-Inhalten enthalten. Sie können Predigten mit YouTube, Vimeo, Facebook oder benutzerdefinierten Video-URLs verknüpfen. Siehe [Predigten verwalten](./managing-sermons.md) für alle Details.
 
 ### Playlists
 
-Organisieren Sie Ihre Predigten in Serien oder Sammlungen. Playlists erleichtern es Ihrer Gemeinde, eine Predigtserie der Reihe nach durchzustöbern. Jede Playlist hat ihren eigenen Namen, eine Beschreibung und ein Vorschaubild. Siehe [Playlists](playlists) für weitere Informationen.
+Organisieren Sie Ihre Predigten in Serien oder Sammlungen. Playlists erleichtern es Ihrer Gemeinde, eine Predigtserie der Reihe nach durchzustöbern. Jede Playlist hat ihren eigenen Namen, eine Beschreibung und ein Vorschaubild. Siehe [Playlists](./playlists.md) für weitere Informationen.
 
 ### Live-Stream-Zeiten
 
-Konfigurieren Sie den Live-Streaming-Zeitplan Ihrer Gemeinde. Richten Sie wiederkehrende wöchentliche Gottesdienste oder einmalige Veranstaltungen ein, verwalten Sie Chat- und Videoeinstellungen und steuern Sie, wann Ihr Stream live geht. Besucher sehen die nächste geplante Gottesdienstzeit auf Ihrer Streaming-Seite. Eine separate Seite **Einstellungen** unter **Predigten** steuert die Registerkarten (Chat, Gebet und benutzerdefinierte Links), die neben Ihrem Live-Stream angezeigt werden. Siehe [Live-Streaming](live-streaming) für Einrichtungsanweisungen.
+Konfigurieren Sie den Live-Streaming-Zeitplan Ihrer Gemeinde. Richten Sie wiederkehrende wöchentliche Gottesdienste oder einmalige Veranstaltungen ein, verwalten Sie Chat- und Videoeinstellungen und steuern Sie, wann Ihr Stream live geht. Besucher sehen die nächste geplante Gottesdienstzeit auf Ihrer Streaming-Seite. Eine separate Seite **Einstellungen** unter **Predigten** steuert die Registerkarten (Chat, Gebet und benutzerdefinierte Links), die neben Ihrem Live-Stream angezeigt werden. Siehe [Live-Streaming](./live-streaming.md) für Einrichtungsanweisungen.
 
 ### Massenimport
 
-Füllen Sie Ihre Predigtbibliothek schnell, indem Sie Videos massenhaft von YouTube oder Vimeo importieren. Dies ist der schnellste Weg, Ihre bestehenden Predigtinhalte in B1 zu migrieren. Siehe [Massenimport](bulk-import) für den Einstieg.
+Füllen Sie Ihre Predigtbibliothek schnell, indem Sie Videos massenhaft von YouTube oder Vimeo importieren. Dies ist der schnellste Weg, Ihre bestehenden Predigtinhalte in B1 zu migrieren. Siehe [Massenimport](./bulk-import.md) für den Einstieg.
 
 :::tip
-Wenn Sie Predigten zum ersten Mal einrichten, beginnen Sie mit der Erstellung einer [Playlist](playlists), dann [fügen Sie Predigten einzeln hinzu](managing-sermons) oder [importieren Sie sie massenhaft](bulk-import) von YouTube oder Vimeo.
+Wenn Sie Predigten zum ersten Mal einrichten, beginnen Sie mit der Erstellung einer [Playlist](./playlists.md), dann [fügen Sie Predigten einzeln hinzu](./managing-sermons.md) oder [importieren Sie sie massenhaft](./bulk-import.md) von YouTube oder Vimeo.
 :::
 
 ## Nächste Schritte
 
-- [Predigten verwalten](managing-sermons) -- Einzelne Predigten hinzufügen und bearbeiten
-- [Playlists](playlists) -- Predigten in Serien organisieren
-- [Live-Streaming](live-streaming) -- Ihren Live-Stream-Zeitplan und Einstellungen einrichten
-- [Massenimport](bulk-import) -- Predigten von YouTube oder Vimeo importieren
+- [Predigten verwalten](./managing-sermons.md) -- Einzelne Predigten hinzufügen und bearbeiten
+- [Playlists](./playlists.md) -- Predigten in Serien organisieren
+- [Live-Streaming](./live-streaming.md) -- Ihren Live-Stream-Zeitplan und Einstellungen einrichten
+- [Massenimport](./bulk-import.md) -- Predigten von YouTube oder Vimeo importieren

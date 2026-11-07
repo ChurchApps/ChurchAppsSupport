@@ -1,5 +1,6 @@
 ---
 title: "Schemalagd uppspelning på TV:n"
+description: "En kopplad FreePlay-TV laddar ner veckan framöver och spelar efter klockan, även offline. Omfattar infopanelen, fjärrknapparna och att fästa en spellista."
 ---
 
 # Schemalagd uppspelning på TV:n
@@ -13,8 +14,8 @@ När en TV har kopplats till en kalender sköter FreePlay resten. Den laddar ner
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Koppla TV:n till en kalender](./pairing-a-screen)
-- [Lägg något i kalendern](./scheduling-the-calendar), eller ange en standardslinga för skärmens grupp
+- [Koppla TV:n till en kalender](./pairing-a-screen.md)
+- [Lägg något i kalendern](./scheduling-the-calendar.md), eller ange en standardslinga för skärmens grupp
 
 </div>
 
@@ -40,7 +41,7 @@ Panelen har också tre knappar:
 
 - **Fäst den här spellistan** - Håll det aktuella innehållet i en loop och ignorera kalendern. Välj **Lossa spellistan** för att återgå till schemat
 - **Bläddra i innehåll** - Lämna den schemalagda spelaren för att bläddra bland dina anslutna leverantörer
-- **Inställningar** - Öppna FreePlays inställningar, där du kan [koppla bort eller koppla till en annan kalender](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Inställningar** - Öppna FreePlays inställningar, där du kan [koppla bort eller koppla till en annan kalender](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 För att återgå till schemat efter att du bläddrat, tryck på **Tillbaka** på fjärrkontrollen från skärmen **Innehållsleverantörer**, eller öppna **Inställningar**, välj **Koppla till en kalender** och välj **Tillbaka till schemat**. En kopplad TV återgår också till den schemalagda spelaren varje gång FreePlay kommer tillbaka i förgrunden, och den öppnar alltid till den schemalagda spelaren.
@@ -77,6 +78,6 @@ Du kan också spela upp en skärms kalender i en webbläsare. I FreePlay Admin �
 
 ## Relaterade artiklar
 
-- **[Schemalägga kalendern](./scheduling-the-calendar)** - Ange vad som spelas och vad som händer när det är klart tidigt
-- **[Hantera skärmar och grupper](./managing-screens)** - Kontrollera varje skärms nedladdningar från FreePlay Admin
-- **[Spela upp innehåll](../content-providers/playing-content)** - Spelarkontroller när du spelar upp innehåll själv
+- **[Schemalägga kalendern](./scheduling-the-calendar.md)** - Ange vad som spelas och vad som händer när det är klart tidigt
+- **[Hantera skärmar och grupper](./managing-screens.md)** - Kontrollera varje skärms nedladdningar från FreePlay Admin
+- **[Spela upp innehåll](../content-providers/playing-content.md)** - Spelarkontroller när du spelar upp innehåll själv

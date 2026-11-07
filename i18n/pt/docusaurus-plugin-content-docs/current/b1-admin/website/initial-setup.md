@@ -1,5 +1,7 @@
 ---
-title: "Configuração Inicial"
+title: "Primeiros Passos com o Seu Site no B1 Admin"
+sidebar_label: "Configuração Inicial"
+description: "Configure seu site da igreja no B1 Admin: aponte um subdomínio ou domínio próprio, crie a página inicial, escolha as cores e o logo e monte a navegação."
 ---
 
 # Configuração Inicial
@@ -45,7 +47,7 @@ Se você não vir a opção Settings, peça à pessoa que configurou sua conta d
 6. Após adicionar uma seção, clique em **Add Content** novamente para inserir texto, imagens, vídeos, cartões, formulários e muito mais arrastando-os para sua seção.
 
 :::info
-Para instruções detalhadas sobre como trabalhar com páginas e navegação, consulte [Managing Pages](managing-pages). Para um guia completo do editor visual, consulte [Using the Page Editor](page-editor).
+Para instruções detalhadas sobre como trabalhar com páginas e navegação, consulte [Managing Pages](./managing-pages.md). Para um guia completo do editor visual, consulte [Using the Page Editor](./page-editor.md).
 :::
 
 ## Configurando Aparência do Site
@@ -58,7 +60,7 @@ Para instruções detalhadas sobre como trabalhar com páginas e navegação, co
 5. Configure seu **Site Footer** com informações de contato e links de sua igreja.
 
 :::info
-As mudanças que você faz em Aparência se aplicam em todo o seu site. Consulte a página [Appearance](appearance) para instruções detalhadas em cada configuração.
+As mudanças que você faz em Aparência se aplicam em todo o seu site. Consulte a página [Appearance](./appearance.md) para instruções detalhadas em cada configuração.
 :::
 
 ## Configurando Navegação
@@ -71,6 +73,6 @@ Seus links de navegação aparecem na visualização Website Pages. Para organiz
 
 ## Próximas Etapas
 
-- [Managing Pages](managing-pages) -- Saiba como trabalhar com páginas e navegação em detalhes
-- [Appearance](appearance) -- Refine as cores, fontes e layout do seu site
-- [Files](files) -- Envie imagens e documentos para seu site
+- [Managing Pages](./managing-pages.md) -- Saiba como trabalhar com páginas e navegação em detalhes
+- [Appearance](./appearance.md) -- Refine as cores, fontes e layout do seu site
+- [Files](./files.md) -- Envie imagens e documentos para seu site

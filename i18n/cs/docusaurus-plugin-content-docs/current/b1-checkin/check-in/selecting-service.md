@@ -1,5 +1,6 @@
 ---
 title: "Výběr služby"
+description: "Vyberte bohoslužbu, které se účastníte, na obrazovce služeb v B1 Checkin. Určí časy a skupiny zobrazené v dalších krocích check-inu."
 ---
 
 # Výběr služby
@@ -13,7 +14,7 @@ Prvním krokem každého odbavení je výběr bohoslužby, které se účastnít
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Přihlaste se](../getting-started/logging-in) do aplikace B1 Church Checkin a vyberte svůj sbor
+- [Přihlaste se](../getting-started/logging-in.md) do aplikace B1 Church Checkin a vyberte svůj sbor
 - Ujistěte se, že správce vašeho sboru [nastavil služby a časy služeb](../../b1-admin/attendance/setup.md) v aplikaci B1 Admin
 
 </div>
@@ -24,11 +25,11 @@ Prvním krokem každého odbavení je výběr bohoslužby, které se účastnít
 2. Uvidíte seznam všech služeb nastavených pro váš sbor. Každá služba je zobrazena jako karta s názvem služby (například „Nedělní dopoledne“ nebo „Středeční večer“).
 3. Klepněte na službu, které se účastníte.
 
-Aplikace načte časy služeb a skupiny přiřazené k dané službě a poté vás přesune na [obrazovku vyhledání člena](./looking-up-members).
+Aplikace načte časy služeb a skupiny přiřazené k dané službě a poté vás přesune na [obrazovku vyhledání člena](./looking-up-members.md).
 
 ## Když odbavení není otevřené
 
-Pokud váš správce přiřadil času služby [rozvrh odbavení](../../b1-admin/attendance/setup#setting-a-check-in-schedule), aplikace umožní rodinám vybrat tento čas služby pouze tehdy, je-li jeho okno pro odbavení otevřené. Časy služeb, jejichž okno je právě zavřené, se stále zobrazují na [obrazovce domácnosti](./household-review), ale jsou označeny **Uzavřeno** (například **Uzavřeno · otevírá ne 9:30**) namísto nabídky tlačítka skupiny.
+Pokud váš správce přiřadil času služby [rozvrh odbavení](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule), aplikace umožní rodinám vybrat tento čas služby pouze tehdy, je-li jeho okno pro odbavení otevřené. Časy služeb, jejichž okno je právě zavřené, se stále zobrazují na [obrazovce domácnosti](./household-review.md), ale jsou označeny **Uzavřeno** (například **Uzavřeno · otevírá ne 9:30**) namísto nabídky tlačítka skupiny.
 
 Pokud jsou všechny časy služby, kterou jste klepli, uzavřené, aplikace vám sdělí, kdy se odbavení otevře – například **„Odbavení pro tuto službu se otevírá ne 9:30.“** (Pokud nelze zobrazit čas otevření, zobrazí se **„Odbavení pro tuto službu se právě neotevírá.“**) Klepněte na **Zpět** a vraťte se na seznam služeb a vyberte jinou službu, nebo počkejte, až se okno otevře, a zkuste to znovu.
 
@@ -56,4 +57,4 @@ Pokud má váš sbor nastavenou pouze jednu službu, stále ji musíte klepnout,
 
 ## Další krok
 
-Po výběru služby [vyhledáte svou rodinu](./looking-up-members) podle telefonního čísla nebo jména.
+Po výběru služby [vyhledáte svou rodinu](./looking-up-members.md) podle telefonního čísla nebo jména.

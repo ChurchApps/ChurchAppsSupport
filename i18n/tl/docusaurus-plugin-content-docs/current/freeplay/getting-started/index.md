@@ -1,5 +1,7 @@
 ---
-title: "Pagsisimula"
+title: "Pagsisimula sa FreePlay TV App"
+sidebar_label: "Pagsisimula"
+description: "I-set up ang FreePlay sa Android TV, Fire TV, o Apple TV: i-install ang app, buksan sa unang pagkakataon, at matutunan ang remote controls at sidebar."
 ---
 
 # Pagsisimula sa FreePlay
@@ -42,7 +44,7 @@ Tumatakbo ang FreePlay sa Fire TV (kasama ang mas bagong Vega OS na stick), Andr
 
 Kapag binuksan mo ang FreePlay sa unang pagkakataon, makikita mo ang animated na splash screen na may logo ng FreePlay. Tinitingnan ng app kung may nakakonektang content provider na dati. Kung nakakonekta ka na ng provider, dadalhin ka nito diretso sa content browser ng provider na iyon. Kung hindi, bubuksan nito ang screen na **Content Providers** kung saan maaari kang kumonekta sa unang content source mo.
 
-Kung nakapares ang TV sa isang calendar sa [Scheduled Mode](../scheduled-mode/), lalaktawan ng FreePlay ang lahat ng ito at didiretso sa scheduled player.
+Kung nakapares ang TV sa isang calendar sa [Scheduled Mode](../scheduled-mode/index.md), lalaktawan ng FreePlay ang lahat ng ito at didiretso sa scheduled player.
 
 ## Pag-navigate gamit ang TV Remote
 
@@ -62,13 +64,13 @@ Lumiliit ang sidebar sa makitid na hanay ng mga icon kapag nagba-browse ka ng ni
 
 Inililista ng sidebar, mula itaas hanggang ibaba:
 
-- **Today's Plan** -- Lumalabas kapag nakapares ang TV sa isang plan. Tingnan ang [Plan Mode](../plan-mode/)
-- **Announcements** -- Lumalabas kapag nakapili ka na ng folder ng mga anunsyo. Tingnan ang [Announcements](../content-providers/announcements)
-- **Browse** -- Bawat nakakonektang content provider na maaari mong i-browse. Tingnan ang [Browsing and Downloading Content](../content-providers/browsing-content)
-- **Settings** -- Nasa ilalim ng sidebar. Binubuksan ang **Pair to a calendar** (ipares ang TV na ito sa isang calendar o plan -- tingnan ang [Choosing a Pairing Mode](./pairing-modes)), **Downloads** (magpatugtog o magbura ng nilalamang naka-save sa device na ito), at **Providers** (kumonekta ng mga content provider at piliin ang folder ng mga anunsyo)
+- **Today's Plan** -- Lumalabas kapag nakapares ang TV sa isang plan. Tingnan ang [Plan Mode](../plan-mode/index.md)
+- **Announcements** -- Lumalabas kapag nakapili ka na ng folder ng mga anunsyo. Tingnan ang [Announcements](../content-providers/announcements.md)
+- **Browse** -- Bawat nakakonektang content provider na maaari mong i-browse. Tingnan ang [Browsing and Downloading Content](../content-providers/browsing-content.md)
+- **Settings** -- Nasa ilalim ng sidebar. Binubuksan ang **Pair to a calendar** (ipares ang TV na ito sa isang calendar o plan -- tingnan ang [Choosing a Pairing Mode](./pairing-modes.md)), **Downloads** (magpatugtog o magbura ng nilalamang naka-save sa device na ito), at **Providers** (kumonekta ng mga content provider at piliin ang folder ng mga anunsyo)
 
 ## Ano ang Susunod
 
-- **[Choosing a Pairing Mode](./pairing-modes)** - Alamin ang iba't ibang paraan ng pagkonekta sa iyong TV
-- **[Scheduled Mode](../scheduled-mode/)** - Ilagay ang iyong mga TV sa calendar gamit ang FreePlay Admin
-- **[Content Providers](../content-providers/)** - Kumonekta sa Lessons.church, Bible Project, at iba pa
+- **[Choosing a Pairing Mode](./pairing-modes.md)** - Alamin ang iba't ibang paraan ng pagkonekta sa iyong TV
+- **[Scheduled Mode](../scheduled-mode/index.md)** - Ilagay ang iyong mga TV sa calendar gamit ang FreePlay Admin
+- **[Content Providers](../content-providers/index.md)** - Kumonekta sa Lessons.church, Bible Project, at iba pa

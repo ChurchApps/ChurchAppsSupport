@@ -1,5 +1,6 @@
 ---
 title: "Audit Log"
+description: "Suriin sa B1 Admin ang audit log: kung sino ang nag-login, nag-edit ng people record, o nagbago ng permissions. I-export sa CSV ang mga na-filter na entry."
 ---
 
 # Audit Log
@@ -78,6 +79,6 @@ Regular na suriin ang audit log, lalo na pagkatapos mag-onboard ng mga bagong mi
 
 ## Mga Kaugnay na Artikulo
 
-- [Mga Role at Pahintulot](../settings/roles-permissions) -- Pamahalaan kung sino ang may access sa ano
-- [Seguridad ng Datos](../settings/data-security) -- Unawain kung paano pinoprotektahan ang inyong datos
+- [Mga Role at Pahintulot](../settings/roles-permissions.md) -- Pamahalaan kung sino ang may access sa ano
+- [Seguridad ng Datos](../settings/data-security.md) -- Unawain kung paano pinoprotektahan ang inyong datos
 - [Pangkalahatang-ideya ng mga Ulat](./index.md) -- Tingnan ang lahat ng available na ulat

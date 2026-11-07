@@ -1,5 +1,7 @@
 ---
-title: "Začínáme"
+title: "Začínáme s Lessons.church"
+sidebar_label: "Začínáme"
+description: "Vytvořte si bezplatný účet Lessons.church, připojte církev, nastavte třídy a naplánujte první lekce. Bez předplatného a bez zkušební doby."
 ---
 
 # Začínáme

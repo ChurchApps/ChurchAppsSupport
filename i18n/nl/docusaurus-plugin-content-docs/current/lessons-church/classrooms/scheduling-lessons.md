@@ -1,5 +1,7 @@
 ---
-title: "Scheduling Lessons"
+title: "Klaslessen plannen in het portaal"
+sidebar_label: "Scheduling Lessons"
+description: "Plan Lessons.church-lessen in de agenda van een klaslokaal in het B1 Admin-portaal: kies per datum een programma, studie, les en leeftijdsspecifieke locatie."
 ---
 
 # Scheduling Lessons

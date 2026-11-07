@@ -1,5 +1,6 @@
 ---
 title: "Požiadavka na udalosti a miestnosti"
+description: "Požiadajte o rezerváciu miestnosti alebo vybavenia z členského portálu B1.church, sledujte stav v Moje žiadosti a zrušte ju, kým je čakajúca."
 ---
 
 # Požiadavka na udalosti a miestnosti
@@ -42,11 +43,11 @@ Otvorte **Moje požiadavky** zo stránky Ja. Každá požiadavka zobrazuje udalo
 Kým je požiadavka stále čakajúca, môžete ju stiahnuť tlačidlom **Zrušiť požiadavku** (budete požiadaní o potvrdenie – zrušenie sa nedá vrátiť späť).
 
 :::info
-Požiadavky kontrolujú zamestnanci cirkvi na stránke [Schválenia](../../b1-admin/calendars/approvals) v B1 Admin. To, ktoré miestnosti a zdroje vyžadujú schválenie, určuje vaša cirkev – pozrite si [Miestnosti a zdroje](../../b1-admin/calendars/rooms-resources).
+Požiadavky kontrolujú zamestnanci cirkvi na stránke [Schválenia](../../b1-admin/calendars/approvals.md) v B1 Admin. To, ktoré miestnosti a zdroje vyžadujú schválenie, určuje vaša cirkev – pozrite si [Miestnosti a zdroje](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Súvisiace články
 
-- [Stránka Ja](../getting-started/me-page) -- Kde sa nachádzajú odkazy na požiadavky
-- [Schválenia kalendára (B1 Admin)](../../b1-admin/calendars/approvals) -- Ako zamestnanci požiadavky kontrolujú
-- [Miestnosti a zdroje (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Ako cirkvi nastavujú rezervovateľné priestory
+- [Stránka Ja](../getting-started/me-page.md) -- Kde sa nachádzajú odkazy na požiadavky
+- [Schválenia kalendára (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Ako zamestnanci požiadavky kontrolujú
+- [Miestnosti a zdroje (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Ako cirkvi nastavujú rezervovateľné priestory

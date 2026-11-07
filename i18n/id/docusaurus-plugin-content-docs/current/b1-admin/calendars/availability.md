@@ -1,5 +1,6 @@
 ---
 title: "Kalender Ketersediaan"
+description: "Atur ruangan dan peralatan yang bisa dipesan di B1 Admin, tambahkan jeda persiapan dan pembersihan, lalu kelola pemesanan berulang dan yang butuh persetujuan."
 ---
 
 # Kalender Ketersediaan
@@ -13,7 +14,7 @@ Kalender Ketersediaan memberi Anda gambaran menyeluruh tentang semua pemesanan r
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Siapkan setidaknya satu [ruangan atau sumber daya](rooms-resources) di bagian Ruangan & Sumber Daya
+- Siapkan setidaknya satu [ruangan atau sumber daya](./rooms-resources.md) di bagian Ruangan & Sumber Daya
 - Anda memerlukan akses edit ke bagian Kalender di B1 Admin
 
 </div>
@@ -58,7 +59,7 @@ Gunakan dropdown **Ruangan / Sumber Daya** di pojok kiri atas untuk mempersempit
 6. Klik **Simpan** untuk mengirim pemesanan.
 
 :::info
-Jika ruangan atau sumber daya memiliki **Grup Persetujuan**, pemesanan akan tampil sebagai **Menunggu** hingga pemimpin grup tersebut menyetujuinya. Lihat [Persetujuan Kalender](approvals) untuk alur persetujuannya.
+Jika ruangan atau sumber daya memiliki **Grup Persetujuan**, pemesanan akan tampil sebagai **Menunggu** hingga pemimpin grup tersebut menyetujuinya. Lihat [Persetujuan Kalender](./approvals.md) untuk alur persetujuannya.
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Kalender akan menyorot setiap bentrokan sebelum Anda menyimpan. Jika muncul peri
 
 ## Artikel Terkait
 
-- [Ruangan, Sumber Daya & Penjadwalan](rooms-resources) — siapkan ruang dan peralatan yang dapat dipesan
-- [Persetujuan Kalender](approvals) — setujui atau tolak permintaan pemesanan
-- [Membuat Kalender](creating-calendars) — kelola kalender acara
+- [Ruangan, Sumber Daya & Penjadwalan](./rooms-resources.md) — siapkan ruang dan peralatan yang dapat dipesan
+- [Persetujuan Kalender](./approvals.md) — setujui atau tolak permintaan pemesanan
+- [Membuat Kalender](./creating-calendars.md) — kelola kalender acara

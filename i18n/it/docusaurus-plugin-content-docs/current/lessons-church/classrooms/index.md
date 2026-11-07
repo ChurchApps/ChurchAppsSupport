@@ -1,5 +1,6 @@
 ---
 title: "Classi"
+description: "Configurare e gestire le aule che organizzano il calendario didattico della chiesa in Lessons.church, dalle stanze e fasce d'età alle viste per i volontari."
 ---
 
 # Classi

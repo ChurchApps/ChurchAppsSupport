@@ -1,5 +1,6 @@
 ---
 title: "Masinis importavimas"
+description: "Importuokite pamokslų vaizdo įrašus masiškai iš YouTube kanalo ar Vimeo paskyros į B1 Admin ir surūšiuokite juos į grojaraštį."
 ---
 
 # Masinis importavimas
@@ -14,7 +15,7 @@ Puslapis „Masinis importavimas" leidžia greitai užpildyti pamokslų bibliote
 <h4>Prieš pradedant</h4>
 
 - Jums reikia leidimo **contentApi.streamingServices.edit**. Jei neturite prieigos, žr. [Vaidmenys ir leidimai](../settings/roles-permissions.md).
-- Sukurkite bent vieną [grojaraštį](playlists), į kurį importuosite pamokslus
+- Sukurkite bent vieną [grojaraštį](./playlists.md), į kurį importuosite pamokslus
 - Turėkite paruoštą savo YouTube kanalo ID arba Vimeo paskyros informaciją
 
 </div>
@@ -39,7 +40,7 @@ Prieš importuodami vaizdo įrašus, jums reikia bent vieno grojaraščio, į ku
 2. Spustelėkite **Sukurti pirmąjį grojaraštį** ir užpildykite pavadinimą, aprašymą, publikavimo datą bei miniatiūrą.
 3. Spustelėkite **Išsaugoti**, tada grįžkite į masinį importavimą spustelėdami **Pridėti pamokslą** ir pasirinkdami **Masinis importavimas**.
 
-Išsamių nurodymų, kaip kurti ir tvarkyti grojaraščius, žr. [Grojaraščiai](playlists).
+Išsamių nurodymų, kaip kurti ir tvarkyti grojaraščius, žr. [Grojaraščiai](./playlists.md).
 
 ## Vaizdo įrašų importavimas
 
@@ -54,11 +55,11 @@ Išsamių nurodymų, kaip kurti ir tvarkyti grojaraščius, žr. [Grojaraščiai
 Jūsų vaizdo įrašai bus importuoti su visa jų informacija, įskaitant pavadinimus, aprašymus, datas ir miniatiūras. Specialieji simboliai YouTube pavadinimuose ir aprašymuose, pavyzdžiui, `&`, apostrofai ir kabutės, bus rodomi taip, kaip įvesti, o ne kaip kodai, pavyzdžiui, `&amp;`.
 
 :::info
-Masinis importavimas idealiai tinka pradžiai, kai perkeliate turinį iš kitos platformos. Pavienius pamokslus ateityje pridėkite puslapyje [Pamokslų tvarkymas](managing-sermons).
+Masinis importavimas idealiai tinka pradžiai, kai perkeliate turinį iš kitos platformos. Pavienius pamokslus ateityje pridėkite puslapyje [Pamokslų tvarkymas](./managing-sermons.md).
 :::
 
 ## Kiti žingsniai
 
-- [Pamokslų tvarkymas](managing-sermons) -- redaguoti importuotų pamokslų informaciją
-- [Grojaraščiai](playlists) -- kurti ir tvarkyti pamokslų serijas
-- [Tiesioginis transliavimas](live-streaming) -- nustatyti tiesioginį transliavimą jūsų pamaldoms
+- [Pamokslų tvarkymas](./managing-sermons.md) -- redaguoti importuotų pamokslų informaciją
+- [Grojaraščiai](./playlists.md) -- kurti ir tvarkyti pamokslų serijas
+- [Tiesioginis transliavimas](./live-streaming.md) -- nustatyti tiesioginį transliavimą jūsų pamaldoms

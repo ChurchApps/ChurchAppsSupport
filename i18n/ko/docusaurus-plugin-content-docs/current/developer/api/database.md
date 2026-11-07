@@ -1,5 +1,6 @@
 ---
 title: "데이터베이스"
+description: "ChurchApps API가 모듈별 여섯 개의 MySQL 데이터베이스에 데이터를 나누어 저장하는 방식과, 연결 설정 및 초기화 방법을 알아보세요."
 ---
 
 # 데이터베이스
@@ -13,8 +14,8 @@ ChurchApps API는 **모듈별 데이터베이스(database-per-module)** 아키�
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- **MySQL 8.0+**를 설치하세요 -- [사전 요구 사항](../setup/prerequisites) 참조
-- `.env` 파일에 데이터베이스 연결 문자열을 구성하세요 -- [환경 변수](../setup/environment-variables) 참조
+- **MySQL 8.0+**를 설치하세요 -- [사전 요구 사항](../setup/prerequisites.md) 참조
+- `.env` 파일에 데이터베이스 연결 문자열을 구성하세요 -- [환경 변수](../setup/environment-variables.md) 참조
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### 주요 설계 결정
 
 - **모듈당 하나의 데이터베이스** -- 각 모듈은 (`KyselyPool`이 관리하는) 전용 연결 풀을 가진 자체 MySQL 데이터베이스를 유지합니다. 이를 통해 모듈 간 결합도를 낮추고 스키마를 독립적으로 발전시킬 수 있습니다.
-- **배타적 소유권** -- 특정 모듈의 테이블은 오직 그 모듈 자체의 코드에서만 읽고 씁니다. 다른 모듈이 해당 데이터를 필요로 할 때는 테이블을 직접 조회하는 대신 소유 모듈의 게이트웨이를 호출합니다 -- [모듈 간 통신](./module-structure#cross-module-communication) 참조.
+- **배타적 소유권** -- 특정 모듈의 테이블은 오직 그 모듈 자체의 코드에서만 읽고 씁니다. 다른 모듈이 해당 데이터를 필요로 할 때는 테이블을 직접 조회하는 대신 소유 모듈의 게이트웨이를 호출합니다 -- [모듈 간 통신](./module-structure.md#cross-module-communication) 참조.
 - **ORM 없는 리포지토리 패턴** -- 모든 데이터 접근은 Kysely 쿼리 빌더를 사용해 모듈 스키마에 맞는 타입 지정 SQL을 생성하는 리포지토리 클래스를 통해 이루어집니다. 이를 통해 쿼리 성능과 동작을 완전히 제어할 수 있습니다.
 - **설계상 멀티테넌트** -- 모든 쿼리는 `churchId`로 범위가 지정됩니다. 모든 테이블에 `churchId` 열이 포함되며, 리포지토리 계층이 테넌트 격리를 자동으로 강제합니다.
 
@@ -129,5 +130,5 @@ const people = await repos.person.loadAll(churchId);
 
 ## 관련 문서
 
-- **[모듈 구조](./module-structure)** -- 각 모듈 내에서 컨트롤러와 리포지토리가 어떻게 구성되는지
-- **[로컬 API 설정](./local-setup)** -- 전체 단계별 설정 가이드
+- **[모듈 구조](./module-structure.md)** -- 각 모듈 내에서 컨트롤러와 리포지토리가 어떻게 구성되는지
+- **[로컬 API 설정](./local-setup.md)** -- 전체 단계별 설정 가이드

@@ -1,5 +1,6 @@
 ---
 title: "Mga File"
+description: "Mag-upload, mag-browse, at mamahala ng larawan at dokumento para sa website ng simbahan sa B1 Admin, at mag-link ng external storage para sa dagdag na espasyo."
 ---
 
 # Mga File
@@ -13,7 +14,7 @@ Ang pahinang Files ang sentrong imbakan ng lahat ng media at dokumentong ginagam
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- Kumpletuhin ang [Initial Setup](initial-setup) para sa iyong website
+- Kumpletuhin ang [Initial Setup](./initial-setup.md) para sa iyong website
 - I-optimize ang mga larawan bago i-upload para mas mabilis mag-load ang mga pahina
 - Ihanda ang iyong mga file sa karaniwang web format (PNG, JPG, PDF, atbp.)
 
@@ -42,7 +43,7 @@ Inililista ng files table ang bawat na-upload na file kasama ang **Name** at **S
 3. Ang mga file na ina-upload mo rito ay magagamit sa lahat ng pahina at content block ng iyong website.
 
 :::info
-Kapag bumubuo ng mga pahina sa [Pamamahala ng mga Pahina](managing-pages), maaari mong i-reference ang anumang file na na-upload dito gamit ang URL nito. Dahil dito, nananatiling organisado ang lahat ng iyong media sa iisang sentrong lokasyon.
+Kapag bumubuo ng mga pahina sa [Pamamahala ng mga Pahina](./managing-pages.md), maaari mong i-reference ang anumang file na na-upload dito gamit ang URL nito. Dahil dito, nananatiling organisado ang lahat ng iyong media sa iisang sentrong lokasyon.
 :::
 
 ## Pagtanggal ng mga File
@@ -57,5 +58,5 @@ Hindi na mababawi ang mga natanggal na file. Siguraduhing hindi na ginagamit ang
 
 ## Mga Susunod na Hakbang
 
-- [Pamamahala ng mga Pahina](managing-pages) -- Idagdag ang mga na-upload mong file sa mga pahina ng website
-- [Appearance](appearance) -- I-customize ang visual theme ng iyong site
+- [Pamamahala ng mga Pahina](./managing-pages.md) -- Idagdag ang mga na-upload mong file sa mga pahina ng website
+- [Appearance](./appearance.md) -- I-customize ang visual theme ng iyong site

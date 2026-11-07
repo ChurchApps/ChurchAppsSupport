@@ -1,12 +1,13 @@
 ---
 title: "Event Registrations"
+description: "B1 Admin और B1App में कार्यक्रम पंजीकरण कैसे काम करते हैं: प्रतिभागी प्रकार, भुगतान वाले ऐड-ऑन, छूट कोड, गेटवे के माध्यम से भुगतान और प्रतीक्षा सूची से पदोन्नति।"
 ---
 
 # Event Registrations
 
 <div class="article-intro">
 
-मूल इवेंट पंजीकरण content मॉड्यूल में रहता है और paid-registrations वेव के बाद से एक पूर्ण कॉमर्स मॉडल रखता है: मूल्य वाले attendee types, मूल्य वाले add-on selections, डिस्काउंट कोड, चर्च के मौजूदा giving gateway के माध्यम से भुगतान, और स्थिति-संचालित प्रतीक्षा सूची। भुगतान पथ जानबूझकर giving स्टैक का पुन: उपयोग करता है -- पंजीकरण नियंत्रक उसी `GatewayService` / `IGatewayProvider` abstraction के माध्यम से charge करता है जो [Giving](./giving) में वर्णित है, इसलिए content मॉड्यूल में कोई कार्ड डेटा या gateway SDK ज्ञान नहीं रहता। यह पृष्ठ डेटा मॉडल, मूल्य निर्धारण और क्षमता नियम, और पंजीकरण, भुगतान, और प्रतीक्षा सूची प्रवाह का मानचित्र देता है।
+मूल इवेंट पंजीकरण content मॉड्यूल में रहता है और paid-registrations वेव के बाद से एक पूर्ण कॉमर्स मॉडल रखता है: मूल्य वाले attendee types, मूल्य वाले add-on selections, डिस्काउंट कोड, चर्च के मौजूदा giving gateway के माध्यम से भुगतान, और स्थिति-संचालित प्रतीक्षा सूची। भुगतान पथ जानबूझकर giving स्टैक का पुन: उपयोग करता है -- पंजीकरण नियंत्रक उसी `GatewayService` / `IGatewayProvider` abstraction के माध्यम से charge करता है जो [Giving](./giving.md) में वर्णित है, इसलिए content मॉड्यूल में कोई कार्ड डेटा या gateway SDK ज्ञान नहीं रहता। यह पृष्ठ डेटा मॉडल, मूल्य निर्धारण और क्षमता नियम, और पंजीकरण, भुगतान, और प्रतीक्षा सूची प्रवाह का मानचित्र देता है।
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Tokenization ठीक दानों की तरह ब्राउज़र में होता है (देखें [Giving](./giving)) -- wizard apphelper payment provider रजिस्ट्री का पुन: उपयोग करता है, इसलिए लॉग-इन सदस्य सहेजे कार्डों से भुगतान कर सकते हैं और अतिथि एक नए कार्ड को tokenize करते हैं। नियंत्रक `DonateController` की provider विचित्रताओं को दर्शाता है (Kingdom Funding `pm-{id}` payment-method ids, Stripe SCA `requires_action` प्रतिक्रियाएँ जो भुगतान रिकॉर्ड किए बिना क्लाइंट को लौटाई जाती हैं)। सफल charge एक `registrationPayments` पंक्ति लिखता है, `amountPaid` बढ़ाता है, और पंजीकरण की पुष्टि करता है। **रिफ़ंड लागू नहीं हैं** -- एक रद्द किया गया भुगतान वाला पंजीकरण अपनी भुगतान पंक्तियाँ रखता है और किसी भी रिफ़ंड को gateway डैशबोर्ड में बाहर से संभाला जाता है।
+Tokenization ठीक दानों की तरह ब्राउज़र में होता है (देखें [Giving](./giving.md)) -- wizard apphelper payment provider रजिस्ट्री का पुन: उपयोग करता है, इसलिए लॉग-इन सदस्य सहेजे कार्डों से भुगतान कर सकते हैं और अतिथि एक नए कार्ड को tokenize करते हैं। नियंत्रक `DonateController` की provider विचित्रताओं को दर्शाता है (Kingdom Funding `pm-{id}` payment-method ids, Stripe SCA `requires_action` प्रतिक्रियाएँ जो भुगतान रिकॉर्ड किए बिना क्लाइंट को लौटाई जाती हैं)। सफल charge एक `registrationPayments` पंक्ति लिखता है, `amountPaid` बढ़ाता है, और पंजीकरण की पुष्टि करता है। **रिफ़ंड लागू नहीं हैं** -- एक रद्द किया गया भुगतान वाला पंजीकरण अपनी भुगतान पंक्तियाँ रखता है और किसी भी रिफ़ंड को gateway डैशबोर्ड में बाहर से संभाला जाता है।
 
 दोनों प्रवेश बिंदु एक ही कोड पथ से गुज़रते हैं: `register` (साइनअप पर भुगतान) और `pay` (शेष भुगतान / प्रतीक्षा सूची पूर्णता)।
 
@@ -147,7 +148,7 @@ Cross-module lookups (अतिथि व्यक्ति को हल या
 
 ## संबंधित पृष्ठ
 
-- [Giving](./giving) -- gateway abstraction, provider रजिस्ट्री, और tokenization मॉडल जिनका यह फ़ीचर पुन: उपयोग करता है
-- [Content Endpoints](../api/endpoints/content) -- content मॉड्यूल की REST सतह
-- [Webhooks](../api/webhooks) -- `registration.created` इवेंट
-- [Module Structure](../api/module-structure) -- content मॉड्यूल सर्वर-साइड पर कैसे व्यवस्थित है
+- [Giving](./giving.md) -- gateway abstraction, provider रजिस्ट्री, और tokenization मॉडल जिनका यह फ़ीचर पुन: उपयोग करता है
+- [Content Endpoints](../api/endpoints/content.md) -- content मॉड्यूल की REST सतह
+- [Webhooks](../api/webhooks.md) -- `registration.created` इवेंट
+- [Module Structure](../api/module-structure.md) -- content मॉड्यूल सर्वर-साइड पर कैसे व्यवस्थित है

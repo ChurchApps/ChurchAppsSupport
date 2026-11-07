@@ -1,5 +1,6 @@
 ---
 title: "Mengelola Profil Anda"
+description: "Perbarui akun ChurchApps Anda di B1 Admin: ubah nama, email, dan kata sandi, aktifkan verifikasi dua langkah, pilih tema, atau hapus akun Anda."
 ---
 
 # Mengelola Profil Anda

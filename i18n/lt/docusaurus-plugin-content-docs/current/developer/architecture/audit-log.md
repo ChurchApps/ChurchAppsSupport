@@ -1,5 +1,6 @@
 ---
 title: "Audito žurnalas ir atšaukiami paketai"
+description: "Aprašomas API auditų žurnalas, įrašantis kiekvieną vartotojo pakeitimą visuose moduliuose, ir kaip B1 Admin galima atšaukti importo partijas eilutė po eilutės."
 ---
 
 # Audito žurnalas ir atšaukiami paketai
@@ -155,6 +156,6 @@ Abu administravimo paviršiai dar **kuriami**; numatytas tikslas:
 
 ## Susiję puslapiai
 
-- [Modulio struktūra](../api/module-structure) – kaip ne narystės valdiklis pasiekia narystės repozitorijas per `RepoManager`
-- [Aukojimai](./giving) – aukojimo rašymo keliai, kurie auditojami kaip `sensitive`, net ir anonimiškai
-- [Narystės galinės vietos](../api/endpoints/membership) – REST paviršius, kuris perduoda `X-Batch-Id` ir atskleidžia `/auditlogs` bei `/batches`
+- [Modulio struktūra](../api/module-structure.md) – kaip ne narystės valdiklis pasiekia narystės repozitorijas per `RepoManager`
+- [Aukojimai](./giving.md) – aukojimo rašymo keliai, kurie auditojami kaip `sensitive`, net ir anonimiškai
+- [Narystės galinės vietos](../api/endpoints/membership.md) – REST paviršius, kuris perduoda `X-Batch-Id` ir atskleidžia `/auditlogs` bei `/batches`

@@ -1,5 +1,6 @@
 ---
 title: "Grupo Timeline"
+description: "Vedeți cum cronologia grupurilor din B1 Mobile unește postările, conversațiile și actualizările din toate grupurile într-un singur flux și ce să faceți cât timp este întreruptă."
 ---
 
 # Grupo Timeline
@@ -17,7 +18,7 @@ Funcția de timeline a grupurilor este temporar indisponibilă în timp ce se fa
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalează B1 Mobile](../getting-started/installing) și [autentifică-te](../getting-started/logging-in) în contul tău
+- [Instalează B1 Mobile](../getting-started/installing.md) și [autentifică-te](../getting-started/logging-in.md) în contul tău
 - Fii membru al cel puțin unui grup din biserica ta
 
 </div>
@@ -41,7 +42,7 @@ Fiecare element din timeline arată din ce grup provine, astfel încât să ști
 Timeline-ul este o modalitate excelentă de a rămâne conectat cu comunitatea bisericii tale dintr-o privire. Iată câteva sfaturi pentru a-l folosi cât mai bine:
 
 - **Verifică regulat** -- Deschide ecranul Grupuri și derulează timeline-ul pentru a recupera activitatea recentă.
-- **Apasă pentru mai multe detalii** -- Dacă o postare îți atrage atenția, apasă pe ea sau pe numele grupului pentru a accesa [pagina cu detaliile grupului](./group-details) și a vedea mai mult context.
+- **Apasă pentru mai multe detalii** -- Dacă o postare îți atrage atenția, apasă pe ea sau pe numele grupului pentru a accesa [pagina cu detaliile grupului](./group-details.md) și a vedea mai mult context.
 - **Totul într-un singur loc** -- Nu este nevoie să vizitezi fiecare grup separat. Timeline-ul aduce toată activitatea la tine.
 
 :::info
@@ -54,5 +55,5 @@ Activează [notificările push](../community/notifications.md) pentru a fi anun�
 
 ## Articole conexe
 
-- [Detaliile grupului](./group-details) -- Vezi profilul complet al unui grup și postările acestuia
+- [Detaliile grupului](./group-details.md) -- Vezi profilul complet al unui grup și postările acestuia
 - [Notificări](../community/notifications.md) -- Primește notificări despre activitatea din grupuri

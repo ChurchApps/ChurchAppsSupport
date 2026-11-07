@@ -1,5 +1,6 @@
 ---
 title: "Ricerca"
+description: "Trovare programmi, studi e lezioni nella biblioteca di Lessons.church per parola chiave o storia biblica, e come sono ordinati i risultati."
 ---
 
 # Ricerca

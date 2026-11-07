@@ -1,5 +1,6 @@
 ---
 title: "Stocare proprie (BYOS)"
+description: "Conectați propriul Google Drive, Dropbox, OneDrive sau bucket S3 compatibil în B1 Admin, astfel încât încărcările de fișiere ale bisericii să ocolească limita platformei de 100 MB."
 ---
 
 # Stocare proprie (BYOS)
@@ -8,7 +9,7 @@ Bisericile primesc ~100MB de stocare gratuită de fișiere găzduită (suprafeț
 
 ## Stratul de furnizori
 
-BYOS reutilizează stratul de stocare creat pentru [MinistryStuff](./ministrystuff): `IStorageProvider` (`Packages/apihelper`), rezolvat pentru fiecare biserică de `StorageResolver` din tabela `content.storageProviders`. Spre deosebire de furnizorii singleton `churchapps`/`ministrystuff`, furnizorii BYOS au credențiale specifice fiecărei biserici, deci `StorageResolver.forChurch` creează o instanță per cerere, pe baza rândului bisericii. Implementările se află lângă resolver, în `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, plus `ByosAuth` (schimbul de token-uri OAuth și reîmprospătarea single-flight — Dropbox rotește token-urile de reîmprospătare, deci reîmprospătările sunt deduplicate în același mod ca în `ProviderProxyController`).
+BYOS reutilizează stratul de stocare creat pentru [MinistryStuff](./ministrystuff.md): `IStorageProvider` (`Packages/apihelper`), rezolvat pentru fiecare biserică de `StorageResolver` din tabela `content.storageProviders`. Spre deosebire de furnizorii singleton `churchapps`/`ministrystuff`, furnizorii BYOS au credențiale specifice fiecărei biserici, deci `StorageResolver.forChurch` creează o instanță per cerere, pe baza rândului bisericii. Implementările se află lângă resolver, în `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, plus `ByosAuth` (schimbul de token-uri OAuth și reîmprospătarea single-flight — Dropbox rotește token-urile de reîmprospătare, deci reîmprospătările sunt deduplicate în același mod ca în `ProviderProxyController`).
 
 `storageProviders` conține credențialele: `accessToken`/`refreshToken`/`tokenExpiresAt` (criptate, trio-ul OAuth) sau `apiKey`/`apiSecret` și JSON-ul `settings` (`{endpoint, region, bucket, publicBase}`, pentru S3). Token-urile nu ajung niciodată la client — `GET /content/storage/providers` mascează secretele și returnează o valoare booleană `connected`.
 

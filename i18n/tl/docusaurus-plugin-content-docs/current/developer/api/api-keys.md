@@ -1,5 +1,6 @@
 ---
 title: "API Keys"
+description: "Gumawa, magtakda ng saklaw, at magbawi ng B1 API key sa B1 Admin para sa server script at Zapier, Make, o Google Sheets, nang walang buong OAuth flow."
 ---
 
 # API Keys
@@ -104,7 +105,7 @@ Agad nang hindi na gumagana ang nabawing key -- walang grace period.
 
 ## Pagkakaiba sa OAuth
 
-Angkop ang API keys kapag **ang iyong simbahan lamang ang gumagamit ng integration**. Para sa connector na kailangang mag-access ng maraming simbahan na may tahasang pahintulot ng bawat isa -- tulad ng SaaS app na ibinabahagi sa B1 community -- gamitin ang [OAuth and Connected Apps](./connected-apps) sa halip.
+Angkop ang API keys kapag **ang iyong simbahan lamang ang gumagamit ng integration**. Para sa connector na kailangang mag-access ng maraming simbahan na may tahasang pahintulot ng bawat isa -- tulad ng SaaS app na ibinabahagi sa B1 community -- gamitin ang [OAuth and Connected Apps](./connected-apps.md) sa halip.
 
 | | API key | OAuth |
 |---|---|---|

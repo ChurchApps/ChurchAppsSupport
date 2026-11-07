@@ -1,5 +1,6 @@
 ---
 title: "Dainos"
+description: "Tvarkykite giesmių biblioteką B1 Admin: ieškokite ir pridėkite dainas, pridėkite ChordPro žodžius, aranžuotes ir repeticijų garso įrašus."
 ---
 
 # Dainos

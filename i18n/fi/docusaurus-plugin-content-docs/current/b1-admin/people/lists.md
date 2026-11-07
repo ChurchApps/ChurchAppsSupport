@@ -1,5 +1,6 @@
 ---
 title: "Tallennetut listat"
+description: "Tallenna B1 Adminin henkilöhaku nimettynä listana ja lataa se yhdellä napsautuksella. Listat päivittyvät, joten uudet vastaavat jäsenet tulevat mukaan."
 ---
 
 # Tallennetut listat

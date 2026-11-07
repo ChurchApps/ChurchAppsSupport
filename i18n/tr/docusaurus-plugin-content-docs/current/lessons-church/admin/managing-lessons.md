@@ -1,5 +1,6 @@
 ---
 title: "Dersleri Yönetme"
+description: "Lessons.church yönetiminde bir dersin yapısını oluşturun: mekânlar, bölümler ve role dayalı Say, Do, Note veya Play eylemlerini ekleyin; ayrıca veli için evde kopya metni ve kaynaklar."
 ---
 
 # Dersleri Yönetme

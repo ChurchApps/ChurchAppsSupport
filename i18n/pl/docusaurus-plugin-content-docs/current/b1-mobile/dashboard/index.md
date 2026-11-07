@@ -1,5 +1,6 @@
 ---
 title: "Pulpit"
+description: "Poruszaj się po ekranie głównym B1 Mobile, gdzie najczęściej używane funkcje są pokazane jako duże karty, a reszta znajduje się w Szybkich działaniach."
 ---
 
 # Pulpit
@@ -28,7 +29,7 @@ Pod kartą główną zobaczysz do dwóch **wyróżnionych kart** wyświetlanych 
 
 ## Szybkie działania
 
-Pozostałe funkcje znajdują się w siatce **Szybkie działania** pod wyróżnionymi kartami. Każda pozycja pokazuje ikonę i etykietę. Są to wszystkie pozostałe linki nawigacyjne skonfigurowane przez Twój kościół, dające dostęp do wszystkiego: od [grup](../groups/) i [darowizn](../giving/), przez [check-in](../checkin/) i [kazania](../content/sermons.md), po inne.
+Pozostałe funkcje znajdują się w siatce **Szybkie działania** pod wyróżnionymi kartami. Każda pozycja pokazuje ikonę i etykietę. Są to wszystkie pozostałe linki nawigacyjne skonfigurowane przez Twój kościół, dające dostęp do wszystkiego: od [grup](../groups/index.md) i [darowizn](../giving/index.md), przez [check-in](../checkin/index.md) i [kazania](../content/sermons.md), po inne.
 
 ## Jak układ się dostosowuje
 
@@ -41,7 +42,7 @@ Układ pulpitu jest personalizowany na podstawie Twoich nawyków. Za każdym raz
 Jeśli nie korzystałeś jeszcze z aplikacji, funkcje pojawiają się w domyślnej kolejności skonfigurowanej przez Twój kościół. Z czasem pulpit zmienia układ, aby odpowiadał Twoim nawykom.
 
 :::info
-Funkcje dostępne na Twoim pulpicie są konfigurowane przez administratora kościoła w [B1 Admin](../../b1-admin/). Jeśli nie widzisz funkcji, której się spodziewasz, skontaktuj się z biurem kościoła.
+Funkcje dostępne na Twoim pulpicie są konfigurowane przez administratora kościoła w [B1 Admin](../../b1-admin/index.md). Jeśli nie widzisz funkcji, której się spodziewasz, skontaktuj się z biurem kościoła.
 :::
 
 ## Odświeżanie pulpitu

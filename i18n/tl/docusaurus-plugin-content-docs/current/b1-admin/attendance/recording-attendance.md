@@ -1,5 +1,6 @@
 ---
 title: "Pag-record ng Attendance"
+description: "I-record ang attendance sa bawat pulong ng grupo sa B1 Admin: gumawa ng session, markahan ang dumalo, magsulat ng tala, at mag-print o mag-export ng roll sheet."
 ---
 
 # Pag-record ng Attendance

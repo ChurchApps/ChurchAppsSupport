@@ -1,5 +1,6 @@
 ---
 title: "Biblioteci partajate"
+description: "Documentația pachetelor npm @churchapps folosite de B1 Admin, B1.church și API-uri, plus cum configurați spațiul Packages și publicați cu changesets."
 ---
 
 # Biblioteci partajate
@@ -14,9 +15,9 @@ Codul partajat ChurchApps este publicat pe npm sub domeniul `@churchapps/*`. Toa
 
 | Pachet | Descriere | Folosit de |
 |---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | Nivel de bază: funcții ajutătoare independente de framework și interfețele TypeScript partajate care formează contractul de date comun între aplicații | Toate proiectele |
-| [`@churchapps/apihelper`](./api-helper) | Utilitare Express pe server: autentificare, controlere de bază, acces la baza de date, integrări AWS și e-mail | Toate API-urile |
-| [`@churchapps/apphelper`](./app-helper) | Componente React partajate și module de funcționalități (autentificare, donații, formulare, markdown, site web) | Toate aplicațiile web |
+| [`@churchapps/helpers`](./helpers.md) | Nivel de bază: funcții ajutătoare independente de framework și interfețele TypeScript partajate care formează contractul de date comun între aplicații | Toate proiectele |
+| [`@churchapps/apihelper`](./api-helper.md) | Utilitare Express pe server: autentificare, controlere de bază, acces la baza de date, integrări AWS și e-mail | Toate API-urile |
+| [`@churchapps/apphelper`](./app-helper.md) | Componente React partajate și module de funcționalități (autentificare, donații, formulare, markdown, site web) | Toate aplicațiile web |
 | `@churchapps/content-providers` | Abstractizare peste furnizorii externi de conținut (Lessons.church, Planning Center, Dropbox și alții) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Set de instrumente pentru crearea integrărilor B1.church: verificarea webhook-urilor, client REST tipizat, ajutoare OAuth | Dezvoltatori externi de integrări |
 | `@churchapps/texting` | Abstractizare pentru furnizorii de SMS (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

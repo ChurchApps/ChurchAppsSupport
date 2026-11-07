@@ -1,5 +1,6 @@
 ---
 title: "Anleitung: Generiere Jahresend-Spendendberichte"
+description: "Schließen Sie in B1 Admin die Spendenaufzeichnungen des Jahres ab, prüfen Sie die steuerlichen Einstellungen der Fonds und erstellen Sie steuerlich absetzbare Spendenbescheinigungen für alle Spender."
 ---
 
 # Generiere Jahresend-Spendendberichte

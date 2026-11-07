@@ -1,5 +1,6 @@
 ---
 title: "奉献架构"
+description: "ChurchApps 奉献开发指南：B1 Admin 和 B1.church 如何通过 Stripe、PayPal、Kingdom Funding 或 Paystack 网关处理捐款。"
 ---
 
 # 奉献架构
@@ -134,7 +135,7 @@ giving 架构（`Api/src/modules/giving/db/DatabaseTypes.ts`，模型位于 `mod
 
 ### 访客 / 匿名奉献
 
-公开的奉献页面（`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`）以及"立即奉献"面板会渲染来自 `@churchapps/apphelper/website` 的 `NonAuthDonationWrapper`，它会在服务商的 `GuestForm` 外层注入 reCAPTCHA 以及网关的 Elements 上下文。访客无需登录，没有已保存的支付方式，也没有奉献历史。该流程会获取 `GET /giving/funds/churchId/:id` 和 `GET /giving/donate/gateways/:churchId`（仅公钥），通过 `POST /giving/donate/captcha-verify` 验证访客身份，在浏览器中完成令牌化，然后提交到 `/giving/donate/charge`（或 `/subscribe`）。验证调用会返回一个有效期 10 分钟、经 HMAC 签名的 `captchaPass`（`Api/src/modules/giving/helpers/CaptchaPass.ts`），表单在每次访客资金相关调用中都会携带它；当 `CAPTCHA_ENFORCE=true` 时，若没有该教会的有效通行证，API 会拒绝访客的 `create-order`、`charge`、`subscribe`、`addcard` 和 `ach-setup-intent-anon` 调用。访客的付费活动报名（`POST /content/registrations/register`）会在扣款前检查同一通行证；参见[活动报名](./registrations#payment-flow)。访客 ACH 使用匿名的 `POST /giving/paymentmethods/ach-setup-intent-anon`，该接口仅允许即时（Financial Connections）验证：小额测试打款的核实需要数天才能完成，而那时访客已离开奉献页面，因此无法完成奉献。表单会拒绝向未经验证的 SetupIntent 扣款，并引导捐献者使用银行卡或已登录后的银行账户绑定。
+公开的奉献页面（`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`）以及"立即奉献"面板会渲染来自 `@churchapps/apphelper/website` 的 `NonAuthDonationWrapper`，它会在服务商的 `GuestForm` 外层注入 reCAPTCHA 以及网关的 Elements 上下文。访客无需登录，没有已保存的支付方式，也没有奉献历史。该流程会获取 `GET /giving/funds/churchId/:id` 和 `GET /giving/donate/gateways/:churchId`（仅公钥），通过 `POST /giving/donate/captcha-verify` 验证访客身份，在浏览器中完成令牌化，然后提交到 `/giving/donate/charge`（或 `/subscribe`）。验证调用会返回一个有效期 10 分钟、经 HMAC 签名的 `captchaPass`（`Api/src/modules/giving/helpers/CaptchaPass.ts`），表单在每次访客资金相关调用中都会携带它；当 `CAPTCHA_ENFORCE=true` 时，若没有该教会的有效通行证，API 会拒绝访客的 `create-order`、`charge`、`subscribe`、`addcard` 和 `ach-setup-intent-anon` 调用。访客的付费活动报名（`POST /content/registrations/register`）会在扣款前检查同一通行证；参见[活动报名](./registrations.md#payment-flow)。访客 ACH 使用匿名的 `POST /giving/paymentmethods/ach-setup-intent-anon`，该接口仅允许即时（Financial Connections）验证：小额测试打款的核实需要数天才能完成，而那时访客已离开奉献页面，因此无法完成奉献。表单会拒绝向未经验证的 SetupIntent 扣款，并引导捐献者使用银行卡或已登录后的银行账户绑定。
 
 访客表单有三个选项会用于同一个扣款调用。奉献 URL 上的 `?fundId=` 和 `?amount=` 会预先选定基金拆分（各服务商的访客表单在挂载时读取它们，并通过常规的基金变更处理器进行处理，以便合计金额和手续费能够同步更新）。`anonymous: true` 会使 `DonateController.charge` 丢弃客户端发送的任何人员，并以 `personId = null` 记录奉献；访客表单会跳过 `/people/loadOrCreate` 以及客户/保险库步骤，三个立即记录的服务商也会停止根据网关客户解析人员。Apple Pay 需要在 Stripe 中注册页面的域名，因此 Stripe 访客表单会在每个会话中向公开的、有速率限制的 `POST /giving/donate/register-domain` 发送一次请求，该接口仅接受属于该教会的域名（`<subDomain>.b1.church`、内容模块域名表中的记录，或本地主机），然后才调用 Stripe 的 payment-method-domains API。
 
@@ -175,6 +176,6 @@ Stripe 导入（`B1Admin/src/donations/StripeImportPage.tsx`）用于回补在 B
 
 ## 相关页面
 
-- [奉献端点](../api/endpoints/giving) —— 奉献、基金、批次、网关、订阅、付款方式和 webhook 的完整 REST 接口
-- [AppHelper](../shared-libraries/app-helper) —— 提供支付 provider 注册表和奉献组件的 npm 包
-- [模块结构](../api/module-structure) —— GivingApi 模块在服务端的组织方式
+- [奉献端点](../api/endpoints/giving.md) —— 奉献、基金、批次、网关、订阅、付款方式和 webhook 的完整 REST 接口
+- [AppHelper](../shared-libraries/app-helper.md) —— 提供支付 provider 注册表和奉献组件的 npm 包
+- [模块结构](../api/module-structure.md) —— GivingApi 模块在服务端的组织方式

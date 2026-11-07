@@ -1,5 +1,6 @@
 ---
 title: "Ajastettu tila"
+description: "Aseta FreePlay-TV:t toistamaan soittolistoja FreePlay Adminin kalenterin mukaan: näytöt käynnistyvät ja pysähtyvät itse, myös Wi-Fi-katkoissa."
 ---
 
 # Ajastettu tila
@@ -18,16 +19,16 @@ FreePlay Admin käyttää ChurchApps-kirjautumistietojasi, samoja joita käytät
 
 FreePlay Adminissa on neljä pääsivua, jotka on listattu sivuston yläosassa:
 
-- **[Näytöt](./managing-screens)** - Parittamasi TV:t, niiden tila ja **näyttöryhmät**, joihin ne kuuluvat. Ryhmän näytöt jakavat yhden kalenterin ja yhden oletussilmukan
-- **[Soittolistat](./building-playlists)** - Kuvien ja videoiden silmukat, jotka valitset sisältöpalveluistasi
-- **[Kalenteri](./scheduling-the-calendar)** - Mitä kukin näyttöryhmä toistaa ja milloin
-- **[Palveluntarjoajat](./building-playlists#connecting-providers)** - Sisältölähteet, joista soittolistasi hakevat sisältöä. Yhdistät kukin lähteen kerran koko seurakunnalle
+- **[Näytöt](./managing-screens.md)** - Parittamasi TV:t, niiden tila ja **näyttöryhmät**, joihin ne kuuluvat. Ryhmän näytöt jakavat yhden kalenterin ja yhden oletussilmukan
+- **[Soittolistat](./building-playlists.md)** - Kuvien ja videoiden silmukat, jotka valitset sisältöpalveluistasi
+- **[Kalenteri](./scheduling-the-calendar.md)** - Mitä kukin näyttöryhmä toistaa ja milloin
+- **[Palveluntarjoajat](./building-playlists.md#connecting-providers)** - Sisältölähteet, joista soittolistasi hakevat sisältöä. Yhdistät kukin lähteen kerran koko seurakunnalle
 
 Kun mitään ei ole ajastettu, ryhmän näytöt toistavat sen **oletussilmukan**. Jos ryhmällä ei ole oletussilmukkaa, näytöt pimenevät.
 
 ## Ero suunnitelmatilaan
 
-- **[Suunnitelmatila](../plan-mode/)** seuraa yhtä palvelusuunnitelmatyyppiä B1 Administa. Joku painaa TV:ssä **Käynnistä suunnitelma** -painiketta, ja oppitunti alkaa toistua sen jälkeen
+- **[Suunnitelmatila](../plan-mode/index.md)** seuraa yhtä palvelusuunnitelmatyyppiä B1 Administa. Joku painaa TV:ssä **Käynnistä suunnitelma** -painiketta, ja oppitunti alkaa toistua sen jälkeen
 - **Ajastettu tila** seuraa kalenteria. Sisältö alkaa ja loppuu asettamiesi aikojen mukaan, joten se sopii hyvin aulan opasteisiin, ilmoitussilmukoihin ja luokkahuoneisiin, joissa oppitunnin pitää olla näkyvissä ennen kuin kukaan saapuu paikalle
 
 Kalenterimerkintä voi silti toistaa palvelusuunnitelman. Valitse suunnitelmatyyppi kohdassa **Palvelusuunnitelmat**, kun lisäät aikataulun, ja näyttö toistaa sen viikon aikana B1 Adminissa voimassa olevan suunnitelman. Tähän kuuluvat myös Go Curriculum -oppitunnit, myös ne, joita olet muokannut suunnitelmassa. Näyttö käyttää Go Curriculum -kirjautumista, joka on linkitetty suunnitelmatyypin seurakuntaryhmään B1 Adminissa, tai seurakunnan Go Curriculum -yhteyttä, jos ryhmällä ei ole omaa.
@@ -49,8 +50,8 @@ Avaa komentopaletti painamalla **Ctrl+K** (**⌘K** Macilla) tai napsauttamalla 
 
 ## Tässä osiossa
 
-- **[Näytön pariliittäminen](./pairing-a-screen)** - Näytä koodi TV:ssä ja parita se FreePlay Adminissa
-- **[Näyttöjen ja ryhmien hallinta](./managing-screens)** - Tarkista tila ja lataukset sekä järjestä näytöt ryhmiin
-- **[Palveluntarjoajien yhdistäminen ja soittolistojen luominen](./building-playlists)** - Linkitä sisältölähteitä ja luo kuvien ja videoiden silmukoita
-- **[Kalenterin aikatauluttaminen](./scheduling-the-calendar)** - Päätä, mitä toistetaan milloin, ja mitä tapahtuu, kun sisältö päättyy etuajassa
-- **[Ajastettu toisto TV:ssä](./scheduled-playback)** - Mitä TV tekee itsenäisesti ja miten kaukosäädintä käytetään toiston aikana
+- **[Näytön pariliittäminen](./pairing-a-screen.md)** - Näytä koodi TV:ssä ja parita se FreePlay Adminissa
+- **[Näyttöjen ja ryhmien hallinta](./managing-screens.md)** - Tarkista tila ja lataukset sekä järjestä näytöt ryhmiin
+- **[Palveluntarjoajien yhdistäminen ja soittolistojen luominen](./building-playlists.md)** - Linkitä sisältölähteitä ja luo kuvien ja videoiden silmukoita
+- **[Kalenterin aikatauluttaminen](./scheduling-the-calendar.md)** - Päätä, mitä toistetaan milloin, ja mitä tapahtuu, kun sisältö päättyy etuajassa
+- **[Ajastettu toisto TV:ssä](./scheduled-playback.md)** - Mitä TV tekee itsenäisesti ja miten kaukosäädintä käytetään toiston aikana

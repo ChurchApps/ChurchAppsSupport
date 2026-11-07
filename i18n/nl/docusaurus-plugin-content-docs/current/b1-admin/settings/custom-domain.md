@@ -1,5 +1,6 @@
 ---
 title: "Eigen domein"
+description: "Wijs je eigen domein, zoals www.jouwkerk.nl, naar je B1-site in B1 Admin door DNS-records in te stellen en het domein toe te voegen in Instellingen."
 ---
 
 # Eigen domein

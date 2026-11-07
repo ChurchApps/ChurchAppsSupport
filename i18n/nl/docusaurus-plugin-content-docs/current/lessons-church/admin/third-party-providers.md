@@ -1,5 +1,6 @@
 ---
 title: "Third-Party Providers"
+description: "Voeg een externe curriculumfeed toe aan Lessons.church via de Third-Party-beheerpagina, en bekijk, bewerk of verwijder providerkoppelingen wanneer nodig."
 ---
 
 # Third-Party Providers

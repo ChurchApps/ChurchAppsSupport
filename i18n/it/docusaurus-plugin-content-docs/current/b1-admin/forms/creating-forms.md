@@ -1,5 +1,6 @@
 ---
 title: "Creare moduli"
+description: "Crea moduli personalizzati in B1 Admin per iscrizioni, sondaggi e schede visitatori, poi condividili tramite link, codice QR o stampa."
 ---
 
 # Creare moduli

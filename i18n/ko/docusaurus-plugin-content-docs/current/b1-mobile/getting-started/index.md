@@ -1,5 +1,7 @@
 ---
-title: "시작하기"
+title: "B1 Mobile 시작하기(지원 종료)"
+sidebar_label: "시작하기"
+description: "휴대폰에 B1 Mobile을 설정하세요. 앱을 찾고, ChurchApps 계정으로 로그인하고, 교회를 선택합니다. B1 Mobile은 PWA로 대체되어 지원이 종료되었음에 유의하세요."
 ---
 
 # 시작하기
@@ -25,10 +27,10 @@ B1 Mobile을 시작하는 것은 몇 분이면 됩니다. 앱을 다운로드하
 
 ## 이 섹션에서
 
-- [앱 설치하기](./installing) -- B1 Mobile을 다운로드할 위치 및 기기 요구 사항.
-- [로그인](./logging-in) -- 로그인하거나 새 계정을 만드는 방법.
-- [교회 전환하기](./switching-churches) -- 한 개 이상의 교회에 속한 경우 교회 간 전환 방법.
+- [앱 설치하기](./installing.md) -- B1 Mobile을 다운로드할 위치 및 기기 요구 사항.
+- [로그인](./logging-in.md) -- 로그인하거나 새 계정을 만드는 방법.
+- [교회 전환하기](./switching-churches.md) -- 한 개 이상의 교회에 속한 경우 교회 간 전환 방법.
 
 :::tip
-B1 Mobile은 다른 모든 ChurchApps 제품과 동일한 ChurchApps 계정을 사용합니다. 이미 [B1.church](../../b1-church/), B1 Admin 또는 Lessons.church에서 계정을 가지고 있으면 동일한 자격증명을 사용하여 로그인할 수 있습니다.
+B1 Mobile은 다른 모든 ChurchApps 제품과 동일한 ChurchApps 계정을 사용합니다. 이미 [B1.church](../../b1-church/index.md), B1 Admin 또는 Lessons.church에서 계정을 가지고 있으면 동일한 자격증명을 사용하여 로그인할 수 있습니다.
 :::

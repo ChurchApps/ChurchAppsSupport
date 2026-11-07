@@ -1,5 +1,7 @@
 ---
-title: "Živé vysielanie"
+title: "Sledovanie živých prenosov na B1.church"
+sidebar_label: "Živé vysielanie"
+description: "Sledujte živé bohoslužby vášho zboru na stránke Stream v B1.church a pripojte sa k chatu počas prenosu, bez prihlásenia."
 ---
 
 # Živé vysielanie

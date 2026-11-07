@@ -1,5 +1,6 @@
 ---
 title: "Takvimi Planlama"
+description: "FreePlay Admin'in Takvim bölümünde haftalık veya tek seferlik bir program kurun; oynatma listeleri, ibadet planları ya da sağlayıcı klasörlerini ekran gruplarınızda, varsayılan döngüler yedek olacak şekilde çalıştırın."
 ---
 
 # Takvimi Planlama
@@ -13,8 +14,8 @@ FreePlay Admin'deki **Takvim** sayfası, her ekran grubunun neyi ne zaman oynata
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- En az bir ekran grubu oluşturun. Bkz. [Ekranları ve Grupları Yönetme](./managing-screens#screen-groups)
-- [Bir oynatma listesi oluşturun](./building-playlists) veya B1 Admin'de bir plan türünün ayarlanmış olduğundan emin olun
+- En az bir ekran grubu oluşturun. Bkz. [Ekranları ve Grupları Yönetme](./managing-screens.md#screen-groups)
+- [Bir oynatma listesi oluşturun](./building-playlists.md) veya B1 Admin'de bir plan türünün ayarlanmış olduğundan emin olun
 
 </div>
 
@@ -82,11 +83,11 @@ Ardından formu doldurun:
 
 ## Ekranlar Değişiklikleri Nasıl Alır
 
-Eşleştirilmiş ekranlar, önümüzdeki 7 gün için planlanan her şeyi indirir ve değişiklikleri kendi kendilerine denetler. Takvimi düzenledikten sonra TV'ye dokunmanız gerekmez. Bir ekranın gerekli her şeye sahip olup olmadığını görmek için [Ekranlar sayfası](./managing-screens) üzerindeki **Şu tarihe kadar hazır** bilgisine bakın.
+Eşleştirilmiş ekranlar, önümüzdeki 7 gün için planlanan her şeyi indirir ve değişiklikleri kendi kendilerine denetler. Takvimi düzenledikten sonra TV'ye dokunmanız gerekmez. Bir ekranın gerekli her şeye sahip olup olmadığını görmek için [Ekranlar sayfası](./managing-screens.md) üzerindeki **Şu tarihe kadar hazır** bilgisine bakın.
 
 ## İlgili Makaleler
 
-- **[Oynatma Listeleri Oluşturma](./building-playlists)** - Planladığınız oynatma listelerini oluşturun
-- **[TV'de Planlı Oynatma](./scheduled-playback)** - Öğretmen temposundaki derslerin ve uzaktan kumandanın TV'de nasıl çalıştığı
-- **[Ekranları ve Grupları Yönetme](./managing-screens)** - Grup ekleyin ve her ekranın indirmelerini kontrol edin
+- **[Oynatma Listeleri Oluşturma](./building-playlists.md)** - Planladığınız oynatma listelerini oluşturun
+- **[TV'de Planlı Oynatma](./scheduled-playback.md)** - Öğretmen temposundaki derslerin ve uzaktan kumandanın TV'de nasıl çalıştığı
+- **[Ekranları ve Grupları Yönetme](./managing-screens.md)** - Grup ekleyin ve her ekranın indirmelerini kontrol edin
 - **[Her Dersin Yalnızca Bir Bölümünü Tutma](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Bir plan türündeki planlanmış her dersi, odanızın oynattığı bölümlere indirin

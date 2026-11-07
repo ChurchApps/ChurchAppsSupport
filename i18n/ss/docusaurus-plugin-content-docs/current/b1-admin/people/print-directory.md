@@ -1,5 +1,6 @@
 ---
 title: "Phrinta Luhlu Lwemalunga"
+description: "Enta luhlu lolulungiselelwe kuphrintwa lwemalungu, lohlelwe ngemindeni, lunetifanekiso, tinchazelo tekutfola nemalanga ekuzalwa, ku-B1 Admin."
 ---
 
 # Phrinta Luhlu Lwemalunga

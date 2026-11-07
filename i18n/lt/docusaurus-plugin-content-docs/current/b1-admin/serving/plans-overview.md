@@ -1,5 +1,6 @@
 ---
 title: "Plano apžvalga"
+description: "Matykite savanorių paskyrimus daugelyje pamaldų datų B1 Admin, aptikite neužpildytas pareigas ir užpildykite ar parašykite komandai iš vienos lentelės."
 ---
 
 # Plano apžvalga

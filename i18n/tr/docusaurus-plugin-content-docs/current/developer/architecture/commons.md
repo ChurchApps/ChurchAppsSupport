@@ -1,5 +1,6 @@
 ---
 title: "İçerik Ortak Alanı"
+description: "Kullanıcı gönderimli ilahi, ders ve şablonların B1 Admin Sunucu Yönetimi'ndeki ortak moderasyon kuyruğunda gönderimden yayına kadar ilerlemesi."
 ---
 
 # İçerik Ortak Alanı — Paylaşılan Varlık Kütüphanesi ve Moderasyon

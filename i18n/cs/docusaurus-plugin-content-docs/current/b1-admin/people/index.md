@@ -1,5 +1,6 @@
 ---
 title: "Lidé"
+description: "Vyhledávejte, přidávejte a upravujte členy sboru v sekci Lidé v B1 Admin, včetně sledování domácností, hromadných úprav a tisku a exportu adresáře."
 ---
 
 # Lidé

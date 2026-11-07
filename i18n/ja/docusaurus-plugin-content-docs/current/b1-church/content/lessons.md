@@ -1,5 +1,7 @@
 ---
-title: "Lessons（非推奨）"
+title: "B1.church の廃止されたレッスンタブ"
+sidebar_label: "Lessons（非推奨）"
+description: "B1.church のレッスンタブは廃止されました。レッスンのカリキュラムは現在 Lessons.church で閲覧でき、FreePlay で教室のテレビに再生できます。"
 ---
 
 # Lessons（非推奨）
@@ -9,7 +11,7 @@ B1.church に埋め込まれていた **Lessons** タブは非推奨になりま
 
 カリキュラムを直接閲覧、スケジュール設定、編集するには、ブラウザで [Lessons.church](https://lessons.church) にサインインしてください。教室のテレビでレッスンを再生するには、テレビデバイスに [FreePlay](/docs/freeplay/getting-started/) をインストールしてください。
 
-B1Admin でレッスンプランの種類が関連付けられたグループの保護者には、[グループの詳細](/docs/b1-church/groups/group-details.md) ページに**今週のレッスン**が表示されます。この非推奨タブには表示されません。
+B1Admin でレッスンプランの種類が関連付けられたグループの保護者には、[グループの詳細](../groups/group-details.md) ページに**今週のレッスン**が表示されます。この非推奨タブには表示されません。
 :::
 
 <div class="article-intro">

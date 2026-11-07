@@ -1,5 +1,6 @@
 ---
 title: "Introducere și tendințe ale numărului de participanți"
+description: "Introduceți în B1 Admin numărul total de participanți pentru un serviciu sau grup, fără listă nominală, și urmăriți tendința în raportul Headcount Trend."
 ---
 
 # Introducere și tendințe ale numărului de participanți

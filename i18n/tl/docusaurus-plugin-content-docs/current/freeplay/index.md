@@ -1,5 +1,6 @@
 ---
 title: "Pangkalahatang-ideya ng FreePlay"
+description: "Pangkalahatang-tanaw ng FreePlay, ang classroom TV app para sa offline na playback ng aralin sa Android TV, Fire TV, at Apple TV, at mga gabay sa setup."
 ---
 
 # Pangkalahatang-ideya ng FreePlay
@@ -22,10 +23,10 @@ Ginagabayan ka ng aming **<a href="/guides/freeplay-b1admin" target="_blank">buo
 
 - **Offline playback** - I-download nang maaga ang mga video at image slide para hindi ka kailanman umasa sa Wi-Fi habang may serbisyo
 - **Pamamahala ng mga download** - Tingnan at pamahalaan ang lahat ng na-download na nilalaman mula sa **Settings** > **Downloads**
-- **Naka-iskedyul na mode** - Gumawa ng mga playlist at ilagay ang mga ito sa kalendaryo sa [admin.freeplay.church](https://admin.freeplay.church), at awtomatikong ipe-play ng mga nakapares na TV ang mga ito sa tamang oras nang walang nagpipindot ng Start -- tingnan ang [Naka-iskedyul na Mode](./scheduled-mode/)
+- **Naka-iskedyul na mode** - Gumawa ng mga playlist at ilagay ang mga ito sa kalendaryo sa [admin.freeplay.church](https://admin.freeplay.church), at awtomatikong ipe-play ng mga nakapares na TV ang mga ito sa tamang oras nang walang nagpipindot ng Start -- tingnan ang [Naka-iskedyul na Mode](./scheduled-mode/index.md)
 - **Plan pairing** - I-link ang iyong device sa plano ng serbisyo ng simbahan para sa magkakaugnay na nilalaman sa iba't ibang silid
 - **Content providers** - Mag-browse at mag-download ng nilalaman mula sa mga external na pinagmulan gaya ng [Lessons.church](/docs/lessons-church/), Bible Project, Dropbox, at OneDrive
-- **Mga anunsyo** - I-loop ang isang folder ng mga slide mula sa konektadong provider -- tingnan ang [Mga Anunsyo](./content-providers/announcements)
+- **Mga anunsyo** - I-loop ang isang folder ng mga slide mula sa konektadong provider -- tingnan ang [Mga Anunsyo](./content-providers/announcements.md)
 - **Madaling gamitin gamit ang TV remote** - I-navigate ang buong app gamit ang karaniwang TV remote sa pamamagitan ng directional buttons at select
 - **Collapsible sidebar** - Pinananatiling abot-kamay ng manipis na sidebar ang navigation nang hindi sinisiksik ang screen
 
@@ -35,10 +36,10 @@ Kapag binuksan mo ang FreePlay, kumokonekta ito sa iyong mga content provider at
 
 ## Mga Seksyon
 
-- **[Pagsisimula](./getting-started/)** - I-install ang app, buksan ito, at piliin kung paano kakonekta
-- **[Naka-iskedyul na Mode](./scheduled-mode/)** - Ipares ang mga TV sa kalendaryo at pamahalaan ang mga ito sa FreePlay Admin
-- **[Plan Mode](./plan-mode/)** - Ipares sa plano ng serbisyo ng simbahan
-- **[Content Providers](./content-providers/)** - Kumonekta sa mga external na pinagmumulan ng nilalaman
+- **[Pagsisimula](./getting-started/index.md)** - I-install ang app, buksan ito, at piliin kung paano kakonekta
+- **[Naka-iskedyul na Mode](./scheduled-mode/index.md)** - Ipares ang mga TV sa kalendaryo at pamahalaan ang mga ito sa FreePlay Admin
+- **[Plan Mode](./plan-mode/index.md)** - Ipares sa plano ng serbisyo ng simbahan
+- **[Content Providers](./content-providers/index.md)** - Kumonekta sa mga external na pinagmumulan ng nilalaman
 
 :::info
 Ang FreePlay ay bahagi ng [ChurchApps](https://churchapps.org) na suite ng libre at open-source na mga kagamitan para sa mga simbahan.

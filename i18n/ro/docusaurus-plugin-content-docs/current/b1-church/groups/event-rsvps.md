@@ -1,5 +1,6 @@
 ---
 title: "Evenimente RSVP"
+description: "Răspundeți Particip, Poate sau Nu particip la evenimentele grupului în portalul membrilor B1.church și vedeți câți alții vin. Liderii pot consulta și ei răspunsurile."
 ---
 
 # Evenimente RSVP
@@ -30,14 +31,14 @@ Răspunsul tău se aplică doar acelei întâlniri specifice. Pentru o întâlni
 ## Pentru liderii de grup
 
 - **Vizualizarea răspunsurilor** -- Liderii văd un link **Vezi răspunsurile** pe fiecare eveniment din calendarul grupului (**Toate evenimentele**). Acesta deschide fila **Răspunsuri**, care listează toate persoanele după răspuns: Particip, Poate și Nu particip. Dacă nimeni nu a răspuns încă, apare mesajul „Încă nu există răspunsuri”.
-- **Activarea sau dezactivarea RSVP-urilor** -- La crearea sau editarea unui eveniment, folosește comutatorul **Permite RSVP**. Evenimentele cu RSVP dezactivat nu afișează butoanele de răspuns. Personalul care creează evenimente în masă din B1 Admin are aceeași opțiune — vezi [Calendarul grupului](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Activarea sau dezactivarea RSVP-urilor** -- La crearea sau editarea unui eveniment, folosește comutatorul **Permite RSVP**. Evenimentele cu RSVP dezactivat nu afișează butoanele de răspuns. Personalul care creează evenimente în masă din B1 Admin are aceeași opțiune — vezi [Calendarul grupului](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-RSVP-urile sunt o numărătoare simplă a participanților. Dacă evenimentul tău necesită date de înscriere, gestionarea locurilor sau plată, folosește în schimb [înscrierea la eveniment](../events/registering).
+RSVP-urile sunt o numărătoare simplă a participanților. Dacă evenimentul tău necesită date de înscriere, gestionarea locurilor sau plată, folosește în schimb [înscrierea la eveniment](../events/registering.md).
 :::
 
 ## Articole înrudite
 
 - [Detaliile grupului](./group-details.md) -- Tot ce există pe pagina de detalii a grupului
-- [Calendarul grupului (B1 Admin)](../../b1-admin/groups/group-calendar) -- Cum gestionează personalul și liderii evenimentele și confirmările RSVP ale grupurilor
-- [Înscrierea la evenimente](../events/registering) -- Înscrierea completă la evenimente, cu locuri și plăți
+- [Calendarul grupului (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Cum gestionează personalul și liderii evenimentele și confirmările RSVP ale grupurilor
+- [Înscrierea la evenimente](../events/registering.md) -- Înscrierea completă la evenimente, cu locuri și plăți

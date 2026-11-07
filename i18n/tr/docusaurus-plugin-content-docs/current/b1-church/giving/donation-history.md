@@ -1,5 +1,7 @@
 ---
-title: "Bağış Geçmişi"
+title: "B1.church'te Bağış Geçmişi ve Belgeler"
+sidebar_label: "Bağış Geçmişi"
+description: "B1.church üye portalındaki Bağışlar sayfasından geçmiş bağışlarınızı görüntüleyin, yıla göre filtreleyin ve vergi için bağış belgelerini yazdırın."
 ---
 
 # Bağış Geçmişi

@@ -1,5 +1,6 @@
 ---
 title: "Importación masiva"
+description: "Importa en lote videos de sermones desde un canal de YouTube o una cuenta de Vimeo a B1 Admin, y luego organízalos en una lista de reproducción."
 ---
 
 # Importación masiva
@@ -14,7 +15,7 @@ La página de Importación masiva te permite llenar rápidamente tu biblioteca d
 <h4>Antes de empezar</h4>
 
 - Necesitas el permiso **contentApi.streamingServices.edit**. Consulta [Roles y permisos](../settings/roles-permissions.md) si no tienes acceso.
-- Crea al menos una [lista de reproducción](playlists) donde importar tus sermones
+- Crea al menos una [lista de reproducción](./playlists.md) donde importar tus sermones
 - Ten listo tu ID de canal de YouTube o la información de tu cuenta de Vimeo
 
 </div>
@@ -39,7 +40,7 @@ Antes de importar videos, necesitas al menos una lista de reproducción donde or
 2. Haz clic en **Crear primera lista de reproducción** y completa el nombre, la descripción, la fecha de publicación y la miniatura.
 3. Haz clic en **Guardar** y luego regresa a Importación masiva haciendo clic en **Agregar sermón** y eligiendo **Importación masiva**.
 
-Consulta [Listas de reproducción](playlists) para instrucciones detalladas sobre cómo crear y administrar listas de reproducción.
+Consulta [Listas de reproducción](./playlists.md) para instrucciones detalladas sobre cómo crear y administrar listas de reproducción.
 
 ## Importar videos
 
@@ -54,11 +55,11 @@ Consulta [Listas de reproducción](playlists) para instrucciones detalladas sobr
 Tus videos se importarán con todos sus detalles, incluidos títulos, descripciones, fechas y miniaturas. Los caracteres especiales en los títulos y descripciones de YouTube, como `&`, apóstrofes y comillas, se importan tal como están escritos, en lugar de aparecer como códigos como `&amp;`.
 
 :::info
-La importación masiva es ideal para empezar cuando migras desde otra plataforma. Para agregar sermones individuales en el futuro, usa la página de [Administrar sermones](managing-sermons) en su lugar.
+La importación masiva es ideal para empezar cuando migras desde otra plataforma. Para agregar sermones individuales en el futuro, usa la página de [Administrar sermones](./managing-sermons.md) en su lugar.
 :::
 
 ## Próximos pasos
 
-- [Administrar sermones](managing-sermons): edita los detalles de los sermones importados
-- [Listas de reproducción](playlists): crea y administra series de sermones
-- [Transmisión en vivo](live-streaming): configura la transmisión en vivo de tus servicios
+- [Administrar sermones](./managing-sermons.md): edita los detalles de los sermones importados
+- [Listas de reproducción](./playlists.md): crea y administra series de sermones
+- [Transmisión en vivo](./live-streaming.md): configura la transmisión en vivo de tus servicios

@@ -1,5 +1,6 @@
 ---
 title: "Serverbeheer"
+description: "Alleen voor Server.Admin-gebruikers: twee-factor-aanmelding resetten, inloggen als andere accounts, Commons modereren en kerk-e-mail goedkeuren in B1 Admin."
 ---
 
 # Serverbeheer

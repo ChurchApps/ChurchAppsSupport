@@ -1,5 +1,6 @@
 ---
 title: "Reproducir contenido"
+description: "Controla FreePlay con el remoto: pausa, salta diapositivas y videos, ve a cualquier mensaje y sal del reproductor desde proveedor, plan o descargas."
 ---
 
 # Reproducir contenido
@@ -13,13 +14,13 @@ El reproductor de FreePlay ocupa toda la pantalla y está diseñado para los man
 <div class="prereqs">
 <h4>Antes de empezar</h4>
 
-- Elige algo para reproducir. Consulta [Explorar y descargar contenido](./browsing-content), [Modo plan](../plan-mode/) o [Anuncios](./announcements)
+- Elige algo para reproducir. Consulta [Explorar y descargar contenido](./browsing-content.md), [Modo plan](../plan-mode/index.md) o [Anuncios](./announcements.md)
 - Pulsa **Iniciar** para abrir el reproductor
 
 </div>
 
 :::info
-Las pantallas vinculadas a un calendario usan un reproductor programado independiente con controles ligeramente distintos. Consulta [Reproducción programada en el televisor](../scheduled-mode/scheduled-playback).
+Las pantallas vinculadas a un calendario usan un reproductor programado independiente con controles ligeramente distintos. Consulta [Reproducción programada en el televisor](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Controles del reproductor
@@ -57,7 +58,7 @@ Pulsa **Arriba** durante la reproducción para abrir **Seleccionar un mensaje**.
 Pulsa **Abajo** o **Atrás** en el mando para salir del reproductor. A dónde vuelves depende de lo que estabas reproduciendo:
 
 - **Contenido de un proveedor** - Vuelves al explorador de contenido
-- **Un plan** - Vuelves a la pantalla de descarga del plan. Consulta [Modo plan](../plan-mode/)
+- **Un plan** - Vuelves a la pantalla de descarga del plan. Consulta [Modo plan](../plan-mode/index.md)
 - **Una descarga** - Vuelves a la pantalla **Descargas**
 
 :::info
@@ -66,5 +67,5 @@ La pantalla permanece activa mientras el reproductor está abierto, para que el 
 
 ## Artículos relacionados
 
-- **[Explorar y descargar contenido](./browsing-content)** - Encuentra contenido y descárgalo para reproducirlo sin conexión
-- **[Reproducción programada en el televisor](../scheduled-mode/scheduled-playback)** - Controles del mando para las pantallas que siguen un calendario
+- **[Explorar y descargar contenido](./browsing-content.md)** - Encuentra contenido y descárgalo para reproducirlo sin conexión
+- **[Reproducción programada en el televisor](../scheduled-mode/scheduled-playback.md)** - Controles del mando para las pantallas que siguen un calendario

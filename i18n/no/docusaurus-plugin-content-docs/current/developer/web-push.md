@@ -1,5 +1,6 @@
 ---
 title: "Push-varsler i nettleseren"
+description: "Sett opp VAPID-nøkler, WebPushHelper-klienten og service worker-håndtering slik at B1.church og B1 Admin kan levere push-varsler i nettleseren til medlemmer."
 ---
 
 # Push-varsler i nettleseren
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Relaterte sider
 
-- [Arkitektur for varsler](./architecture/notifications) — hele trakten for varsling i appen/push/e-post og påminnelsesmotoren
-- [Sanntidsarkitektur](./realtime) — WebSocket-levering; push utløses nå fra den samme varseltrakten i appen ved siden av socket-levering i samme runde, ikke bare som en reserve når en socket-levering ikke landet
-- [Messaging-endepunkter](./api/endpoints/messaging) — varsler, enheter og resten av messaging-flaten
-- [AppHelper](./shared-libraries/app-helper) — npm-pakken som leverer `WebPushHelper`
+- [Arkitektur for varsler](./architecture/notifications.md) — hele trakten for varsling i appen/push/e-post og påminnelsesmotoren
+- [Sanntidsarkitektur](./realtime.md) — WebSocket-levering; push utløses nå fra den samme varseltrakten i appen ved siden av socket-levering i samme runde, ikke bare som en reserve når en socket-levering ikke landet
+- [Messaging-endepunkter](./api/endpoints/messaging.md) — varsler, enheter og resten av messaging-flaten
+- [AppHelper](./shared-libraries/app-helper.md) — npm-pakken som leverer `WebPushHelper`

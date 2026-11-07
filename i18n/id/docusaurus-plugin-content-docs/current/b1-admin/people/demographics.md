@@ -1,5 +1,6 @@
 ---
 title: "Demografi"
+description: "Lihat usia, jenis kelamin, keanggotaan, status pernikahan, dan komposisi kampus jemaat Anda di grafik interaktif B1 Admin, lalu telusuri setiap grup."
 ---
 
 # Demografi

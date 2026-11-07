@@ -1,5 +1,6 @@
 ---
 title: "Importiranje podataka"
+description: "Preneste existujúcich ľudí, skupiny, účasť a záznamy darov do B1 Admin nástrojom B1 Transfer alebo si kedykoľvek exportujte zálohu údajov."
 ---
 
 Ovo je prijevod na slovački, vidi dolje.

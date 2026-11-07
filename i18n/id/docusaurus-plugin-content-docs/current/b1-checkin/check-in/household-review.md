@@ -1,5 +1,6 @@
 ---
 title: "Meninjau Rumah Tangga Anda"
+description: "Tinjau rumah tangga Anda di B1 Checkin setelah memilih orang, lalu tetapkan grup untuk tiap waktu ibadah dan tandai tamu atau relawan sebelum check-in."
 ---
 
 # Meninjau Rumah Tangga Anda
@@ -13,8 +14,8 @@ Setelah Anda memilih seseorang dari hasil pencarian, aplikasi memuat seluruh rum
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- [Pilih layanan](./selecting-service) dari layar layanan
-- [Cari anggota](./looking-up-members) dan pilih mereka dari hasil pencarian
+- [Pilih layanan](./selecting-service.md) dari layar layanan
+- [Cari anggota](./looking-up-members.md) dan pilih mereka dari hasil pencarian
 
 </div>
 
@@ -35,9 +36,9 @@ Ketuk kartu anggota untuk memperluasnya. Saat diperluas, Anda akan melihat satu 
 - **Grup yang tersedia** pada waktu layanan tersebut, dicantumkan di bawah nama (misalnya "Nursery, Preschool, Adult Bible Class"), sehingga Anda dapat melihat kelas apa saja yang tersedia sebelum memilih
 - **Tombol** yang menampilkan grup yang sedang ditetapkan, atau "Pilih Grup" jika belum ada grup yang ditetapkan
 
-Jika waktu layanan memiliki [jadwal check-in](../../b1-admin/attendance/setup#setting-a-check-in-schedule) dan jendelanya sedang tertutup, baris tersebut menampilkan **Tutup** alih-alih tombol, disertai waktu pembukaan berikutnya jika ada, misalnya **Tutup · buka Min 9:30 AM**. Jika orang tersebut sudah melakukan check-in pada waktu layanan itu, baris akan menampilkan grupnya dengan tanda centang sebagai gantinya (misalnya **Kids Room 1 · Sudah check-in**), sehingga Anda tetap dapat melihat keberadaan mereka meskipun jendela sudah tertutup.
+Jika waktu layanan memiliki [jadwal check-in](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) dan jendelanya sedang tertutup, baris tersebut menampilkan **Tutup** alih-alih tombol, disertai waktu pembukaan berikutnya jika ada, misalnya **Tutup · buka Min 9:30 AM**. Jika orang tersebut sudah melakukan check-in pada waktu layanan itu, baris akan menampilkan grupnya dengan tanda centang sebagai gantinya (misalnya **Kids Room 1 · Sudah check-in**), sehingga Anda tetap dapat melihat keberadaan mereka meskipun jendela sudah tertutup.
 
-Ketuk tombol grup untuk membuka [layar pemilihan grup](./group-assignment), tempat Anda dapat memilih atau mengubah grup untuk orang tersebut dan waktu layanan itu.
+Ketuk tombol grup untuk membuka [layar pemilihan grup](./group-assignment.md), tempat Anda dapat memilih atau mengubah grup untuk orang tersebut dan waktu layanan itu.
 
 Kartu yang diperluas juga menampilkan chip **Anggota**, **Tamu**, dan **Relawan**. Ketuk salah satunya untuk menentukan cara orang ini melakukan check-in. Anggota adalah pilihan default. Jenis ini penting untuk ruang anak: relawan dihitung dalam rasio relawan-terhadap-anak di ruangan tersebut, dan tamu dihitung terhadap kapasitas tamu apa pun yang telah ditetapkan gereja Anda.
 
@@ -51,9 +52,9 @@ Anda tidak perlu menugaskan setiap anggota keluarga ke grup. Orang dewasa yang m
 
 Dari layar tinjauan rumah tangga, Anda memiliki tiga pilihan:
 
-- **Perluas anggota** dan ketuk tombol waktu layanan untuk [menetapkan atau mengubah grup](./group-assignment).
-- **Ketuk tombol Tambah Tamu** di bawah daftar anggota untuk [menambahkan tamu](./adding-guests) ke rumah tangga Anda.
-- **Ketuk tombol Check-in** di bagian bawah layar untuk [menyelesaikan check-in](./completing-checkin) bagi seluruh anggota rumah tangga.
+- **Perluas anggota** dan ketuk tombol waktu layanan untuk [menetapkan atau mengubah grup](./group-assignment.md).
+- **Ketuk tombol Tambah Tamu** di bawah daftar anggota untuk [menambahkan tamu](./adding-guests.md) ke rumah tangga Anda.
+- **Ketuk tombol Check-in** di bagian bawah layar untuk [menyelesaikan check-in](./completing-checkin.md) bagi seluruh anggota rumah tangga.
 
 :::info
 Penugasan grup apa pun dari check-in sebelumnya ke layanan yang sama dimuat otomatis terlebih dahulu. Jika anak-anak Anda menghadiri grup yang sama setiap minggu, Anda mungkin tidak perlu mengubah apa pun. Cukup tinjau dan lakukan check-in.
@@ -61,6 +62,6 @@ Penugasan grup apa pun dari check-in sebelumnya ke layanan yang sama dimuat otom
 
 ## Langkah Selanjutnya
 
-- [Tetapkan grup](./group-assignment) bagi anggota keluarga yang perlu check-in ke kelas atau program tertentu.
-- [Tambahkan tamu](./adding-guests) jika seseorang berkunjung bersama keluarga Anda.
-- [Selesaikan check-in](./completing-checkin) setelah semua penugasan sudah sesuai.
+- [Tetapkan grup](./group-assignment.md) bagi anggota keluarga yang perlu check-in ke kelas atau program tertentu.
+- [Tambahkan tamu](./adding-guests.md) jika seseorang berkunjung bersama keluarga Anda.
+- [Selesaikan check-in](./completing-checkin.md) setelah semua penugasan sudah sesuai.

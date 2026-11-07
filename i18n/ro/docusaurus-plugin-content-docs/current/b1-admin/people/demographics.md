@@ -1,5 +1,6 @@
 ---
 title: "Demografie"
+description: "Vedeți vârsta, genul, statutul de membru, starea civilă și campusul congregației în graficele interactive din B1 Admin și detaliați orice grup."
 ---
 
 # Demografie

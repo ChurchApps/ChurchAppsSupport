@@ -1,5 +1,6 @@
 ---
 title: "Externe Anbieter"
+description: "Erfahren Sie, wie Lehrplananbieter ihre Inhalte mit dem Open Lesson Format in Lessons.church einbringen und wie Sie einen Anbieter im Portal verbinden."
 ---
 
 # Externe Anbieter

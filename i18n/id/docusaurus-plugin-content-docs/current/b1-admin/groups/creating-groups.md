@@ -1,5 +1,6 @@
 ---
 title: "Membuat Grup"
+description: "Buat grup baru di B1 Admin, mulai dari memilih kategori dan memberi nama hingga mengatur kebijakan bergabung, label, pesan, dan pengaturan kehadiran."
 ---
 
 # Membuat Grup

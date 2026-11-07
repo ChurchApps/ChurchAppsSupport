@@ -1,5 +1,7 @@
 ---
-title: "Přihlášení"
+title: "Přihlášení do B1.church a členského portálu"
+sidebar_label: "Přihlášení"
+description: "Přihlaste se do členského portálu B1.church, použijte dvoufázové kódy nebo jednotné přihlášení, obnovte zapomenuté heslo a odhlaste se z menu účtu."
 ---
 
 # Přihlášení
@@ -17,7 +19,7 @@ Přihlášení na B1.church vám dává přístup k členskému portálu, kde vi
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Potřebujete účet ChurchApps. Vytvoříte si ho v článku [Začínáme](../getting-started/).
+- Potřebujete účet ChurchApps. Vytvoříte si ho v článku [Začínáme](./index.md).
 - Potřebujete adresu URL vašeho sboru na B1.church (například `https://yourchurchname.b1.church`).
 
 </div>
@@ -39,7 +41,7 @@ Zůstanete přihlášeni ve stejném prohlížeči nebo nainstalované aplikaci,
 
 ## Přístup do členského portálu
 
-Po přihlášení se do členského portálu dostanete kliknutím na své **jméno** v pravém horním rohu stránky a výběrem **Členský portál** z nabídky. Členský portál je místo, kde jsou všechny vaše osobní nástroje sboru, včetně [domovského přehledu](./navigating.md), [stránky Já](./me-page.md), [skupin](../groups/), [darování](../giving/) a dalších.
+Po přihlášení se do členského portálu dostanete kliknutím na své **jméno** v pravém horním rohu stránky a výběrem **Členský portál** z nabídky. Členský portál je místo, kde jsou všechny vaše osobní nástroje sboru, včetně [domovského přehledu](./navigating.md), [stránky Já](./me-page.md), [skupin](../groups/index.md), [darování](../giving/index.md) a dalších.
 
 ## Vaše uživatelská nabídka
 

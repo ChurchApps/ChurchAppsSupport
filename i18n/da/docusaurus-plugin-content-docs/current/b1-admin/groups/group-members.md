@@ -1,5 +1,6 @@
 ---
 title: "Gruppemedlemmer"
+description: "Tilføj, fjern og udpeg ledere for gruppemedlemmer i B1 Admin, og send e-mail, sms, udskrift eller eksport af medlemslisten fra gruppesiden."
 ---
 
 # Gruppemedlemmer

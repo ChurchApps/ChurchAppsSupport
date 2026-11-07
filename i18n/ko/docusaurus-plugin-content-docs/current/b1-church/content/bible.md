@@ -1,5 +1,7 @@
 ---
-title: "성경"
+title: "B1.church에서 성경 읽기"
+sidebar_label: "성경"
+description: "B1.church의 성경 리더에서 책, 장, 번역 설정을 사용해 말씀을 읽고, 매일 읽기를 위한 성경 페이지를 이용하세요."
 ---
 
 # 성경

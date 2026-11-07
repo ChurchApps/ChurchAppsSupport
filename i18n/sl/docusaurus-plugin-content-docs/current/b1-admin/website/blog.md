@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Pisanje objav na blogu za vašo spletno stran v B1 Admin"
+sidebar_label: "Blog"
+description: "V B1 Admin ustvarjajte, načrtujte in objavljajte blogovske prispevke na spletni strani cerkve, vključno z izvlečki, kategorijami, oznakami, naslovnimi fotografijami in vdelavami komentarjev."
 ---
 
 # Blog
@@ -13,8 +15,8 @@ Stran Blog vam omogoča objavljanje novic, posodobitev in duhovnih premislekov n
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Dokončajte [začetno nastavitev](initial-setup) za svojo spletno stran
-- Če želite, da obiskovalci najdejo vaš blog v meniju, dodajte povezavo na `/blog` prek [upravljanja strani](managing-pages)
+- Dokončajte [začetno nastavitev](./initial-setup.md) za svojo spletno stran
+- Če želite, da obiskovalci najdejo vaš blog v meniju, dodajte povezavo na `/blog` prek [upravljanja strani](./managing-pages.md)
 
 </div>
 
@@ -31,7 +33,7 @@ Stran Blog vam omogoča objavljanje novic, posodobitev in duhovnih premislekov n
 3. Dodajte **Povzetek** -- kratek opis, ki se prikaže na seznamu objav, v opisih za iskalnike in v viru RSS. Če ga pustite prazno, se samodejno ustvari iz začetka vsebine objave.
 4. Napišite besedilo objave v urejevalniku **Vsebina** z uporabo Markdowna. Kliknite **Predogled**, da si ogledate, kako bo oblikovana objava videti.
 5. Izberite **Kategorijo** (izberite obstoječo ali vpišite novo) in po želji vnesite **Oznake**, ločene z vejicami.
-6. Kliknite **Izberi sliko**, da izberete fotografijo iz galerije [Datoteke](files), ali naložite novo. Naložene fotografije se odprejo v vgrajenem orodju za rezanje, ki je zaklenjeno na razmerje 16:9, tako da lahko fotografijo prilagodite glavi objave in karticam na seznamu.
+6. Kliknite **Izberi sliko**, da izberete fotografijo iz galerije [Datoteke](./files.md), ali naložite novo. Naložene fotografije se odprejo v vgrajenem orodju za rezanje, ki je zaklenjeno na razmerje 16:9, tako da lahko fotografijo prilagodite glavi objave in karticam na seznamu.
 7. Nastavite **Avtorja** -- privzeto ste to vi, lahko pa poiščete in izberete katerokoli osebo iz vaše baze podatkov.
 8. Vklopite **Objavljeno** in nastavite **Datum objave**, ko boste pripravljeni objavo narediti javno. Če stikalo pustite izklopljeno, se objava shrani kot osnutek.
 
@@ -58,7 +60,7 @@ Vsaka objava na seznamu prikazuje eno od treh stanj:
 Objavljene objave se prikažejo na naslovu `{yoursite}/blog`, po 10 na stran, z NAVIGACIJSKIMI povezavami za pregled arhiva, ter s filtrom po kategorijah, avtorjem in fotografijo vsake objave. Oznake so prikazane tudi kot klikljive značke, tako da lahko obiskovalci seznam filtrirajo po oznakah na enak način. Posamezne objave so dostopne na naslovu `{yoursite}/blog/{slug}` in vključujejo sorodne objave iz iste kategorije. Stran bloga objavlja tudi vir RSS, ki ga bralniki virov in orodja za avtomatizacijo, kot je Zapier, lahko samodejno zaznajo.
 
 :::info
-Objave v blogu so ločena vrsta vsebine od rednih spletnih strani -- ne ustvarjajo se v [urejevalniku strani](page-editor) in se ne prikažejo na seznamu Strani. Tako je pisanje objav hitrejše in osredotočeno na besedilo.
+Objave v blogu so ločena vrsta vsebine od rednih spletnih strani -- ne ustvarjajo se v [urejevalniku strani](./page-editor.md) in se ne prikažejo na seznamu Strani. Tako je pisanje objav hitrejše in osredotočeno na besedilo.
 :::
 
 ## Dodajanje komentarjev pod objave
@@ -77,6 +79,6 @@ Izpraznite polje in kliknite **Shrani**, da kodo odstranite iz vseh objav. To po
 
 ## Naslednji koraki
 
-- [Upravljanje strani](managing-pages) -- dodajte povezavo do svojega bloga v navigacijo
-- [Datoteke](files) -- naložite fotografije za uporabo v objavah
+- [Upravljanje strani](./managing-pages.md) -- dodajte povezavo do svojega bloga v navigacijo
+- [Datoteke](./files.md) -- naložite fotografije za uporabo v objavah
 - [Integracija z Zapierjem](../integrations/zapier.md) -- sprožite avtomatizacije ob objavi novih objav

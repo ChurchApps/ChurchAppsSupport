@@ -1,5 +1,7 @@
 ---
-title: "Configuración Inicial"
+title: "Primeros pasos con tu sitio web de B1 Admin"
+sidebar_label: "Configuración Inicial"
+description: "Configura tu sitio web de B1 Admin: apunta un subdominio o dominio propio, crea tu página de inicio, elige los colores de marca y el logotipo, y construye la navegación."
 ---
 
 # Configuración Inicial
@@ -45,7 +47,7 @@ Si no ves la opción Settings, pídele a la persona que configuró tu cuenta de 
 6. Después de agregar una sección, haz clic en **Add Content** nuevamente para insertar texto, imágenes, videos, tarjetas, formularios y más arrastrándolos a tu sección.
 
 :::info
-Para obtener instrucciones detalladas sobre cómo trabajar con páginas y navegación, consulta [Administración de Páginas](managing-pages). Para una guía completa del editor visual, consulta [Uso del Editor de Páginas](page-editor).
+Para obtener instrucciones detalladas sobre cómo trabajar con páginas y navegación, consulta [Administración de Páginas](./managing-pages.md). Para una guía completa del editor visual, consulta [Uso del Editor de Páginas](./page-editor.md).
 :::
 
 ## Configuración de la Apariencia del Sitio
@@ -57,7 +59,7 @@ Para obtener instrucciones detalladas sobre cómo trabajar con páginas y navega
 5. Configura tu **Site Footer** con la información de contacto de tu iglesia y enlaces.
 
 :::info
-Los cambios que hagas en Appearance se aplican en todo tu sitio web. Consulta la página [Apariencia](appearance) para obtener instrucciones detalladas sobre cada configuración.
+Los cambios que hagas en Appearance se aplican en todo tu sitio web. Consulta la página [Apariencia](./appearance.md) para obtener instrucciones detalladas sobre cada configuración.
 :::
 
 ## Configuración de la Navegación
@@ -70,6 +72,6 @@ Tus enlaces de navegación aparecen en la vista Website Pages. Para organizarlos
 
 ## Próximos Pasos
 
-- [Administración de Páginas](managing-pages) -- Aprende cómo trabajar con páginas y navegación en detalle
-- [Apariencia](appearance) -- Ajusta finamente los colores, fuentes y diseño de tu sitio
-- [Archivos](files) -- Carga imágenes y documentos para tu sitio web
+- [Administración de Páginas](./managing-pages.md) -- Aprende cómo trabajar con páginas y navegación en detalle
+- [Apariencia](./appearance.md) -- Ajusta finamente los colores, fuentes y diseño de tu sitio
+- [Archivos](./files.md) -- Carga imágenes y documentos para tu sitio web

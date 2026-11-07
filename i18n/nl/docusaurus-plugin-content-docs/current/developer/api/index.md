@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Uitleg van het modulaire monolietontwerp van de ChurchApps API: zes datamodules, techstack, poorten en Lambda-functies, met links naar de docs."
 ---
 
 # API
@@ -50,8 +51,8 @@ Bij implementatie in AWS draait de API als vier Lambda-functies:
 
 De API is afhankelijk van twee gedeelde ChurchApps-pakketten:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Basisutilities (DateHelper, ApiHelper, enz.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Express-serverutilities, inclusief verificatie, databasehelpers en AWS-integraties
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Basisutilities (DateHelper, ApiHelper, enz.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Express-serverutilities, inclusief verificatie, databasehelpers en AWS-integraties
 
 :::info
 De API gebruikt ES modules (`"type": "module"` in `package.json`). Zorg ervoor dat uw imports ES module-syntaxis gebruiken.
@@ -59,7 +60,7 @@ De API gebruikt ES modules (`"type": "module"` in `package.json`). Zorg ervoor d
 
 ## In Dit Gedeelte
 
-- **[Local Setup](./local-setup)** -- Kloon, configureer en voer de API lokaal uit
-- **[Database](./database)** -- Database-per-module-architectuur, schemaschriften en gegevenstoegangspatronen
-- **[Module Structure](./module-structure)** -- Controllers, repositories, modellen en verificatie
-- **[Endpoint Reference](./endpoints/)** -- Volledige REST API-documentatie voor alle modules
+- **[Local Setup](./local-setup.md)** -- Kloon, configureer en voer de API lokaal uit
+- **[Database](./database.md)** -- Database-per-module-architectuur, schemaschriften en gegevenstoegangspatronen
+- **[Module Structure](./module-structure.md)** -- Controllers, repositories, modellen en verificatie
+- **[Endpoint Reference](./endpoints/index.md)** -- Volledige REST API-documentatie voor alle modules

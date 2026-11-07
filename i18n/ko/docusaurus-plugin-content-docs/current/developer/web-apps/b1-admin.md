@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "B1 Admin을 로컬에 설정합니다: React/Vite 대시보드 클론, .env에서 API 엔드포인트 구성, 교회 관리 작업을 위한 개발 서버 시작."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin은 교회 관리 대시보드로, Vite와 Material-UI로 만든 React �
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- **Node.js 22+**와 **Git**을 설치하세요 -- [사전 요구 사항](../setup/prerequisites)을 참조하세요
-- API 대상(데모 또는 로컬)을 설정하세요 -- [환경 변수](../setup/environment-variables)를 참조하세요
+- **Node.js 22+**와 **Git**을 설치하세요 -- [사전 요구 사항](../setup/prerequisites.md)을 참조하세요
+- API 대상(데모 또는 로컬)을 설정하세요 -- [환경 변수](../setup/environment-variables.md)를 참조하세요
 
 </div>
 
@@ -87,5 +88,5 @@ Vite 개발 서버가 시작됩니다. 핫 모듈 교체가 활성화된 상태�
 3. 새 버전을 제공하도록 CloudFront 무효화를 트리거합니다
 
 :::tip
-자세한 배포 방법은 [웹 앱 배포](../deployment/web-apps) 가이드를 참조하세요.
+자세한 배포 방법은 [웹 앱 배포](../deployment/web-apps.md) 가이드를 참조하세요.
 :::

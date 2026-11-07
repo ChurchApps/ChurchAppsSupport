@@ -1,5 +1,6 @@
 ---
 title: "Den Kalender planen"
+description: "Zeitplan im Kalender von FreePlay Admin festlegen: Playlists, Gottesdienstpläne oder Anbieterordner für Bildschirmgruppen, Standardschleifen als Fallback."
 ---
 
 # Den Kalender planen
@@ -13,8 +14,8 @@ Die Seite **Kalender** in FreePlay Admin legt fest, was jede Bildschirmgruppe wa
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Legen Sie mindestens eine Bildschirmgruppe an. Siehe [Bildschirme und Gruppen verwalten](./managing-screens#screen-groups)
-- [Erstellen Sie eine Playlist](./building-playlists) oder richten Sie einen Plantyp in B1 Admin ein
+- Legen Sie mindestens eine Bildschirmgruppe an. Siehe [Bildschirme und Gruppen verwalten](./managing-screens.md#screen-groups)
+- [Erstellen Sie eine Playlist](./building-playlists.md) oder richten Sie einen Plantyp in B1 Admin ein
 
 </div>
 
@@ -82,10 +83,10 @@ Wenn sich zwei Termine überschneiden, zeigt das Formular eine Warnung: **Overla
 
 ## Wie Bildschirme Änderungen übernehmen
 
-Gekoppelte Bildschirme laden alles herunter, was für die nächsten 7 Tage geplant ist, und prüfen selbstständig auf Änderungen. Nach einer Änderung am Kalender müssen Sie den TV nicht anfassen. Um zu sehen, wann ein Bildschirm alles Nötige hat, prüfen Sie **Ready through** auf der [Seite Bildschirme](./managing-screens).
+Gekoppelte Bildschirme laden alles herunter, was für die nächsten 7 Tage geplant ist, und prüfen selbstständig auf Änderungen. Nach einer Änderung am Kalender müssen Sie den TV nicht anfassen. Um zu sehen, wann ein Bildschirm alles Nötige hat, prüfen Sie **Ready through** auf der [Seite Bildschirme](./managing-screens.md).
 
 ## Verwandte Artikel
 
-- **[Playlists erstellen](./building-playlists)** – Erstellen Sie die Playlists, die Sie planen
-- **[Geplante Wiedergabe auf dem TV](./scheduled-playback)** – Wie Lektionen im Modus „Teacher paced“ und die Fernbedienung auf dem TV funktionieren
-- **[Bildschirme und Gruppen verwalten](./managing-screens)** – Gruppen hinzufügen und die Downloads jedes Bildschirms prüfen
+- **[Playlists erstellen](./building-playlists.md)** – Erstellen Sie die Playlists, die Sie planen
+- **[Geplante Wiedergabe auf dem TV](./scheduled-playback.md)** – Wie Lektionen im Modus „Teacher paced“ und die Fernbedienung auf dem TV funktionieren
+- **[Bildschirme und Gruppen verwalten](./managing-screens.md)** – Gruppen hinzufügen und die Downloads jedes Bildschirms prüfen

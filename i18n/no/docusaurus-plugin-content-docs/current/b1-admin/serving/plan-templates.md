@@ -1,5 +1,6 @@
 ---
 title: "Plan-maler"
+description: "Lagre rekkefølgen og posisjonene i en gudstjenesteplan som mal i B1 Admin, og bruk den på fremtidige planer med ett klikk."
 ---
 
 # Plan-maler

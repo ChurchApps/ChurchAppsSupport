@@ -1,5 +1,6 @@
 ---
 title: "Inställning av närvaro"
+description: "Ställ in campus, gudstjänster, gudstjänsttider och gruppindelningar i B1 Admin så att närvarouppföljning och incheckningsscheman fungerar i hela församlingen."
 ---
 
 # Inställning av närvaro

@@ -1,5 +1,6 @@
 ---
 title: "Gönüllü Rehberleri"
+description: "Lessons.church'te her gönüllünün yalnızca kendi adımlarını görmesi için role özel rehberler kurun; dersten önce yazdırın veya paylaşın."
 ---
 
 # Gönüllü Rehberleri

@@ -1,5 +1,6 @@
 ---
 title: "Izvoz poročil o udeležbi"
+description: "Spoznajte tri poročila o udeležbi v B1 Admin (Trend udeležbe, Udeležba skupin, Dnevna udeležba skupin), kaj prikazuje vsako od njih, ter kako jih zaženete in izvozite."
 ---
 
 # Poročila o udeležbi

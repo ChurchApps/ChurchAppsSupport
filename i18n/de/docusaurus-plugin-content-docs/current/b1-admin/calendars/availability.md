@@ -1,5 +1,6 @@
 ---
 title: "Verfügbarkeitskalender"
+description: "Richten Sie in B1 Admin buchbare Räume und Geräte ein, buchen Sie sie im Kalender, fügen Sie Rüst- und Abbauzeiten hinzu und verwalten Sie wiederkehrende oder genehmigungspflichtige Buchungen."
 ---
 
 # Verfügbarkeitskalender
@@ -13,7 +14,7 @@ Der Verfügbarkeitskalender gibt Ihnen einen Überblick über alle Raum- und Res
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Richten Sie mindestens einen [Raum oder eine Ressource](rooms-resources) im Abschnitt "Räume & Ressourcen" ein
+- Richten Sie mindestens einen [Raum oder eine Ressource](./rooms-resources.md) im Abschnitt "Räume & Ressourcen" ein
 - Sie benötigen Bearbeitungszugriff auf den Abschnitt "Kalender" in B1 Admin
 
 </div>
@@ -58,7 +59,7 @@ Verwenden Sie das Dropdown-Menü **Raum / Ressource** oben links, um den Kalende
 6. Klicken Sie auf **Speichern**, um die Buchung einzureichen.
 
 :::info
-Wenn der Raum oder die Ressource eine konfigurierte **Genehmigungsgruppe** hat, wird die Buchung als **Genehmigung ausstehend** angezeigt, bis ein Leiter dieser Gruppe sie genehmigt. Siehe [Kalender-Genehmigungen](approvals) für den Genehmigungsworkflow.
+Wenn der Raum oder die Ressource eine konfigurierte **Genehmigungsgruppe** hat, wird die Buchung als **Genehmigung ausstehend** angezeigt, bis ein Leiter dieser Gruppe sie genehmigt. Siehe [Kalender-Genehmigungen](./approvals.md) für den Genehmigungsworkflow.
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Der Kalender hebt vor dem Speichern Konflikte hervor. Wenn Sie eine Konfliktwarn
 
 ## Verwandte Artikel
 
-- [Räume, Ressourcen & Zeitplanung](rooms-resources) – richten Sie buchbare Räume und Ausrüstung ein
-- [Kalender-Genehmigungen](approvals) – genehmigen oder lehnen Sie Buchungsanfragen ab
-- [Kalender erstellen](creating-calendars) – verwalten Sie Ereigniskalender
+- [Räume, Ressourcen & Zeitplanung](./rooms-resources.md) – richten Sie buchbare Räume und Ausrüstung ein
+- [Kalender-Genehmigungen](./approvals.md) – genehmigen oder lehnen Sie Buchungsanfragen ab
+- [Kalender erstellen](./creating-calendars.md) – verwalten Sie Ereigniskalender

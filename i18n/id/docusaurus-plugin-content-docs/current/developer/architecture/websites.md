@@ -1,12 +1,13 @@
 ---
 title: "Perutean Situs Web & Multi-Situs"
+description: "Cara B1.church memetakan subdomain dan domain kustom ke gereja atau situs sekunder yang tepat, serta edge Caddy yang menangani TLS untuk domain kustom."
 ---
 
 # Perutean Situs Web & Multi-Situs
 
 <div class="article-intro">
 
-Satu gereja kini dapat melayani lebih dari satu situs web yang berbeda, dan masing-masing dapat berada di subdomain `*.b1.church` atau di domain kustom sepenuhnya yang dimiliki gereja. Halaman ini memetakan lapisan perutean yang berada *di bawah* pembuat situs: bagaimana permintaan masuk diselesaikan menjadi gereja **dan** situs tertentu, model data multi-situs (nilai penanda `siteId` yang menjaga setiap situs yang sudah ada tetap tampil tanpa perubahan), serta tepi domain kustom, yaitu proxy Caddy yang dikelola sendiri di EC2 yang menangani TLS dan menulis ulang setiap domain gereja ke hulu `*.b1.church`-nya. Untuk hal yang benar-benar ditampilkan setelah permintaan berhasil diselesaikan, yaitu pohon halaman/bagian/elemen, lihat [Pembuat Situs Web](./website-builder).
+Satu gereja kini dapat melayani lebih dari satu situs web yang berbeda, dan masing-masing dapat berada di subdomain `*.b1.church` atau di domain kustom sepenuhnya yang dimiliki gereja. Halaman ini memetakan lapisan perutean yang berada *di bawah* pembuat situs: bagaimana permintaan masuk diselesaikan menjadi gereja **dan** situs tertentu, model data multi-situs (nilai penanda `siteId` yang menjaga setiap situs yang sudah ada tetap tampil tanpa perubahan), serta tepi domain kustom, yaitu proxy Caddy yang dikelola sendiri di EC2 yang menangani TLS dan menulis ulang setiap domain gereja ke hulu `*.b1.church`-nya. Untuk hal yang benar-benar ditampilkan setelah permintaan berhasil diselesaikan, yaitu pohon halaman/bagian/elemen, lihat [Pembuat Situs Web](./website-builder.md).
 
 </div>
 
@@ -92,7 +93,7 @@ Dua detail operasional pada middleware:
 
 - **Cache.** Hasil setiap host (hit *atau* miss yang dipastikan, bukan kesalahan jaringan) disimpan selama **10 menit** dalam `Map` di memori, per isolate serverless.
 - **Matcher.** Matcher secara sengaja menyertakan kembali `/sitemap.xml`, `/robots.txt`, dan `/manifest.webmanifest`. Pola pertamanya mengecualikan jalur yang memiliki titik, yang jika tidak akan menghilangkan berkas-berkas itu; berkas tersebut ditambahkan kembali agar berkas SEO/PWA per gereja pada domain kustom juga menerima header `x-site`.
-- **Header kanonis.** Untuk halaman gereja, middleware menambahkan header respons `Link: <{proto}://{host}{path}>; rel="canonical"` yang menyebutkan host tempat halaman sebenarnya disajikan, yaitu subdomain atau domain kustom (`helpers/canonicalLink.ts`). Ketika domain kustom mencapai B1App melalui [proxy Caddy](../deployment/caddy-proxy), host permintaan adalah subdomain `{sub}.b1.church`, sehingga middleware menggunakan domain pengunjung dari `X-Church-Host` sebagai gantinya, tetapi hanya setelah `/domains/public/lookup/{host}` memastikan bahwa domain tersebut memetakan ke subdomain yang sama (`ownsSubdomain()`). Tautan kanonis, `robots.txt`, dan `sitemap.xml` kemudian menyebutkan domain kustom alih-alih subdomain `b1.church`. Ini dilewati pada host non-gereja (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) dan pada `/mobile`, `/login`, `/logout`, serta berkas robots/sitemap/manifest yang dihasilkan.
+- **Header kanonis.** Untuk halaman gereja, middleware menambahkan header respons `Link: <{proto}://{host}{path}>; rel="canonical"` yang menyebutkan host tempat halaman sebenarnya disajikan, yaitu subdomain atau domain kustom (`helpers/canonicalLink.ts`). Ketika domain kustom mencapai B1App melalui [proxy Caddy](../deployment/caddy-proxy.md), host permintaan adalah subdomain `{sub}.b1.church`, sehingga middleware menggunakan domain pengunjung dari `X-Church-Host` sebagai gantinya, tetapi hanya setelah `/domains/public/lookup/{host}` memastikan bahwa domain tersebut memetakan ke subdomain yang sama (`ownsSubdomain()`). Tautan kanonis, `robots.txt`, dan `sitemap.xml` kemudian menyebutkan domain kustom alih-alih subdomain `b1.church`. Ini dilewati pada host non-gereja (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) dan pada `/mobile`, `/login`, `/logout`, serta berkas robots/sitemap/manifest yang dihasilkan.
 
 ### Menonaktifkan situs publik
 
@@ -201,7 +202,7 @@ Baris `www.*` dikecualikan dari peta; Caddy melayani `www.{host}` melalui pengal
 
 ### Keadaan saat ini: konfigurasi statis, tanpa status runtime
 
-Kotak tersebut (EC2 Windows di belakang Elastic IP permanen) menjalankan Caddy dari **Caddyfile statis**: TLS sesuai permintaan dengan `ask` yang mengarah ke `/membership/domains/authorize`, ditambah berkas peta host→hulu yang disegarkan setiap 5 menit dari `/membership/domains/hostmap` oleh tugas terjadwal yang diakhiri dengan `caddy reload` yang halus. Konfigurasi bertahan setelah restart tanpa status runtime sama sekali, tanpa proses priming ulang, dan SNI yang tidak dikenal **ditolak TLS-nya** (tidak ada sertifikat yang diterbitkan untuk host yang ditolak `authorize`), sementara host yang diotorisasi tetapi belum dipetakan (domain baru di dalam jendela sinkronisasi) mendapatkan 404 yang bersih. Domain baru dapat dirutekan dalam sekitar 5 menit setelah penyimpanan; sertifikatnya diterbitkan saat pertama kali diakses. Pembangunan/penyiapan, operasi, dan jebakan yang telah teruji di lapangan: [Proxy Domain Kustom Caddy](../deployment/caddy-proxy).
+Kotak tersebut (EC2 Windows di belakang Elastic IP permanen) menjalankan Caddy dari **Caddyfile statis**: TLS sesuai permintaan dengan `ask` yang mengarah ke `/membership/domains/authorize`, ditambah berkas peta host→hulu yang disegarkan setiap 5 menit dari `/membership/domains/hostmap` oleh tugas terjadwal yang diakhiri dengan `caddy reload` yang halus. Konfigurasi bertahan setelah restart tanpa status runtime sama sekali, tanpa proses priming ulang, dan SNI yang tidak dikenal **ditolak TLS-nya** (tidak ada sertifikat yang diterbitkan untuk host yang ditolak `authorize`), sementara host yang diotorisasi tetapi belum dipetakan (domain baru di dalam jendela sinkronisasi) mendapatkan 404 yang bersih. Domain baru dapat dirutekan dalam sekitar 5 menit setelah penyimpanan; sertifikatnya diterbitkan saat pertama kali diakses. Pembangunan/penyiapan, operasi, dan jebakan yang telah teruji di lapangan: [Proxy Domain Kustom Caddy](../deployment/caddy-proxy.md).
 
 ### Dorongan runtime lama: jalur rollback, menunggu penghapusan
 
@@ -209,8 +210,8 @@ Kotak tersebut (EC2 Windows di belakang Elastic IP permanen) menjalankan Caddy d
 
 ## Halaman terkait
 
-- [Proxy Domain Kustom Caddy](../deployment/caddy-proxy): kotak tepi itu sendiri, yaitu penyiapan kotak baru, layanan WinSW, tugas sinkronisasi peta, dan jebakan operasional
-- [Pembuat Situs Web](./website-builder): pohon halaman/bagian/elemen, renderer, blog, SEO, dan pembuatan AI (yang ditampilkan setelah permintaan berhasil diselesaikan ke gereja/situs)
-- [Endpoint Konten](../api/endpoints/content): permukaan REST untuk halaman, blok, tautan, dan gaya global, yang kini semuanya sadar `?siteId=`
-- [B1App](../web-apps/b1-app): aplikasi Next.js yang menjadi host middleware dan perutean `[sdSlug]`
-- [Deployment Aplikasi Web](../deployment/web-apps): cara B1App di-deploy ke Vercel
+- [Proxy Domain Kustom Caddy](../deployment/caddy-proxy.md): kotak tepi itu sendiri, yaitu penyiapan kotak baru, layanan WinSW, tugas sinkronisasi peta, dan jebakan operasional
+- [Pembuat Situs Web](./website-builder.md): pohon halaman/bagian/elemen, renderer, blog, SEO, dan pembuatan AI (yang ditampilkan setelah permintaan berhasil diselesaikan ke gereja/situs)
+- [Endpoint Konten](../api/endpoints/content.md): permukaan REST untuk halaman, blok, tautan, dan gaya global, yang kini semuanya sadar `?siteId=`
+- [B1App](../web-apps/b1-app.md): aplikasi Next.js yang menjadi host middleware dan perutean `[sdSlug]`
+- [Deployment Aplikasi Web](../deployment/web-apps.md): cara B1App di-deploy ke Vercel

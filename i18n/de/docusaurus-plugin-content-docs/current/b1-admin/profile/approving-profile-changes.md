@@ -1,5 +1,6 @@
 ---
 title: "Profiländerungen genehmigen"
+description: "Prüfen und genehmigen Sie in B1 Admin Änderungsanfragen zu Mitgliederprofilen und richten Sie die Gruppe Verzeichnisfreigabe ein, die sie erhält."
 ---
 
 # Profiländerungen genehmigen

@@ -1,5 +1,6 @@
 ---
 title: "Postavitev učilnic"
+description: "Ustvari, preimenuj in odstrani učilnice v portalu Lessons.church, da je vsak prostor ali starostna skupina pripravljen za tedensko načrtovanje ur."
 ---
 
 # Postavitev učilnic

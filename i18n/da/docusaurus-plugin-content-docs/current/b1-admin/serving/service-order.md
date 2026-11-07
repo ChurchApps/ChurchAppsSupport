@@ -1,5 +1,7 @@
 ---
-title: "tjeneste rækkefølge"
+title: "Gudstjenesteforløb i B1 Admin"
+sidebar_label: "tjeneste rækkefølge"
+description: "Opsæt et gudstjenesteforløb i B1 Admin: tilføj sange, lektioner og egne elementer, arrangér dem i sektioner, og print køreplanen."
 ---
 
 # tjeneste rækkefølge

@@ -1,5 +1,6 @@
 ---
 title: "Memasangkan Layar"
+description: "Pasangkan TV FreePlay ke kalender grup layar di FreePlay Admin dengan kode empat huruf di TV, agar memutar konten terjadwal secara mandiri."
 ---
 
 # Memasangkan Layar
@@ -13,9 +14,9 @@ Untuk menampilkan TV di kalender, pasangkan TV tersebut dengan **FreePlay Admin*
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- Pasang dan jalankan FreePlay di TV. Lihat [Memulai](../getting-started/)
+- Pasang dan jalankan FreePlay di TV. Lihat [Memulai](../getting-started/index.md)
 - Miliki akun login ChurchApps untuk gereja Anda agar dapat masuk ke FreePlay Admin
-- Opsional, [buat daftar putar](./building-playlists) dan [jadwalkan](./scheduling-the-calendar) terlebih dahulu agar TV langsung memiliki konten untuk diputar
+- Opsional, [buat daftar putar](./building-playlists.md) dan [jadwalkan](./scheduling-the-calendar.md) terlebih dahulu agar TV langsung memiliki konten untuk diputar
 
 </div>
 
@@ -38,7 +39,7 @@ Kode berlaku selama 15 menit, dan hitung mundur di bawahnya menunjukkan sisa wak
 5. Di bawah **Mode**, biarkan **Terjadwal** terpilih. TV akan diputar mengikuti kalender grup secara otomatis.
 6. Klik **Pasangkan**.
 
-TV akan menampilkan **Terhubung!** lalu **Memuat jadwal Anda...**. TV kemudian mengunduh konten yang dijadwalkan dan mulai memutarnya. Lihat [Pemutaran Terjadwal di TV](./scheduled-playback).
+TV akan menampilkan **Terhubung!** lalu **Memuat jadwal Anda...**. TV kemudian mengunduh konten yang dijadwalkan dan mulai memutarnya. Lihat [Pemutaran Terjadwal di TV](./scheduled-playback.md).
 
 :::info
 Jika FreePlay Admin menampilkan **Kode itu tidak cocok dengan TV mana pun**, periksa kembali kode di layar. Jika kode sudah kedaluwarsa, gunakan kode baru yang sedang ditampilkan TV.
@@ -51,11 +52,11 @@ Pengaturan **Mode** memiliki dua pilihan:
 - **Terjadwal** - Diputar mengikuti kalender grup secara otomatis. Tidak ada yang perlu menekan Mulai.
 - **Manual** - Seseorang memilih konten dengan remote. Layar manual tetap muncul dalam daftar **Layar** Anda, tetapi tidak mengikuti kalender, sehingga kolom **Grup** dinonaktifkan.
 
-Anda dapat mengubah mode layar nanti melalui **Edit** di [halaman Layar](./managing-screens).
+Anda dapat mengubah mode layar nanti melalui **Edit** di [halaman Layar](./managing-screens.md).
 
 ## Memasangkan ke Rencana Ibadah
 
-Kode di layar **Pasangkan layar ini** juga berfungsi di B1 Admin. Jika Anda memasukkannya di sana dan memilih jenis rencana di bawah **Tampilkan Rencana Untuk**, TV akan mengikuti jenis rencana tersebut dalam [Mode Rencana](../plan-mode/) alih-alih kalender. Lihat [Memasangkan Perangkat Anda](../plan-mode/device-pairing).
+Kode di layar **Pasangkan layar ini** juga berfungsi di B1 Admin. Jika Anda memasukkannya di sana dan memilih jenis rencana di bawah **Tampilkan Rencana Untuk**, TV akan mengikuti jenis rencana tersebut dalam [Mode Rencana](../plan-mode/index.md) alih-alih kalender. Lihat [Memasangkan Perangkat Anda](../plan-mode/device-pairing.md).
 
 ## Mengubah atau Membatalkan Pemasangan dari TV
 
@@ -79,6 +80,6 @@ TV akan kembali menampilkan kode pemasangan. Pasangkan kembali kapan pun Anda me
 
 ## Artikel Terkait
 
-- **[Mengelola Layar dan Grup](./managing-screens)** - Ganti nama layar, pindahkan ke grup lain, atau periksa unduhannya
-- **[Menjadwalkan Kalender](./scheduling-the-calendar)** - Tentukan konten yang diputar oleh layar dalam grup
-- **[Memilih Mode Pemasangan](../getting-started/pairing-modes)** - Bandingkan Mode Terjadwal dengan Mode Rencana dan penelusuran penyedia secara mandiri
+- **[Mengelola Layar dan Grup](./managing-screens.md)** - Ganti nama layar, pindahkan ke grup lain, atau periksa unduhannya
+- **[Menjadwalkan Kalender](./scheduling-the-calendar.md)** - Tentukan konten yang diputar oleh layar dalam grup
+- **[Memilih Mode Pemasangan](../getting-started/pairing-modes.md)** - Bandingkan Mode Terjadwal dengan Mode Rencana dan penelusuran penyedia secara mandiri

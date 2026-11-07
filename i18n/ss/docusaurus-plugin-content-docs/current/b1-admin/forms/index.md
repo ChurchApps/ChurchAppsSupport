@@ -1,5 +1,6 @@
 ---
 title: "Emafomu"
+description: "Tfola, hlunga, hlela, gcina ngelikhatsi nabuyisele tifomu ku-B1 Admin, kuhlanganise nelapho kumiswa khona emalungu etifomu netibhalo letitfunyelwe."
 ---
 
 # Emafomu

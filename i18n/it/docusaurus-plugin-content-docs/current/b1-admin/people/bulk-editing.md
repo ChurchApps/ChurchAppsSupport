@@ -1,5 +1,6 @@
 ---
 title: "Modifica multipla delle persone"
+description: "Aggiorna in B1 Admin in blocco stato di membro, stato civile, genere, opt-out, campi Sì/No personalizzati o appartenenza ai gruppi per più persone."
 ---
 
 # Modifica multipla delle persone

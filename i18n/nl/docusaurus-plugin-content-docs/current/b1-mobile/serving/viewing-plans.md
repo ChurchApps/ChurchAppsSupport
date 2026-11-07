@@ -1,5 +1,7 @@
 ---
-title: "Plannen bekijken"
+title: "Dienstplannen bekijken in B1 Mobile"
+sidebar_label: "Plannen bekijken"
+description: "Bekijk je komende en eerdere dienstrooster in B1 Mobile, lees plandetails en dienstvolgorde, en print plannen voor repetities of achter het podium."
 ---
 
 # Plannen bekijken
@@ -13,7 +15,7 @@ Het planenscherm in B1 Mobile geeft je een volledig beeld van je dienstschema. H
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [log in](../getting-started/logging-in) op je account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [log in](../getting-started/logging-in.md) op je account
 - Wees toegewezen aan minstens één dienstplan door je kerkbeheerder
 
 </div>
@@ -61,4 +63,4 @@ Je ontvangt [pushberichten](../community/notifications.md) wanneer je aan een ni
 
 ## Gerelateerde artikelen
 
-- [Vrijwilligensinschrijving](./volunteer-signup) -- Blader door en schrijf je in voor openstaande vrijwilligersposities
+- [Vrijwilligensinschrijving](./volunteer-signup.md) -- Blader door en schrijf je in voor openstaande vrijwilligersposities

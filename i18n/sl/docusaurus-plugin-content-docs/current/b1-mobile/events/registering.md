@@ -1,5 +1,7 @@
 ---
-title: "Prijava na dogodke"
+title: "Prijava na dogodke v B1 Mobile"
+sidebar_label: "Prijava na dogodke"
+description: "Prijavite sebe in družinske člane na cerkvene dogodke v aplikaciji B1 Mobile, preverite preostalo zmogljivost ter potrdite prijavo v treh korakih."
 ---
 
 # Prijava na dogodke
@@ -13,7 +15,7 @@ Prijavite se na cerkvene dogodke neposredno prek aplikacije B1 Mobile s preprost
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite B1 Mobile](../getting-started/installing) in [se prijavite](../getting-started/logging-in) v svoj račun
+- [Namestite B1 Mobile](../getting-started/installing.md) in [se prijavite](../getting-started/logging-in.md) v svoj račun
 - Dogodek mora imeti omogočeno prijavo, prijavno obdobje pa mora biti odprto
 
 </div>
@@ -50,4 +52,4 @@ Prejeli boste tudi **potrditveno e-poštno sporočilo** na e-naslov, povezan z v
 ## Sorodni članki
 
 - [Pregled dogodkov](./index.md) -- Brskajte po dogodkih s prijavo na mobilni napravi
-- [Ogled načrtov](../serving/viewing-plans) -- Oglejte si svoj urnik služenja
+- [Ogled načrtov](../serving/viewing-plans.md) -- Oglejte si svoj urnik služenja

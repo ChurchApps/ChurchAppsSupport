@@ -1,5 +1,6 @@
 ---
 title: "Web Push Notifications"
+description: "I-set up ang VAPID keys, WebPushHelper client, at service worker para makapagpadala ng browser push notification sa mga miyembro ang B1.church at B1 Admin."
 ---
 
 # Web Push Notifications
@@ -160,7 +161,7 @@ Partikular sa consumer ang `deepLinkFor` / `clientMatchesTarget` -- tingnan ang 
 
 ## Mga Kaugnay na Pahina
 
-- [Notifications Architecture](./architecture/notifications) -- Ang buong funnel ng escalation sa in-app/push/email at ang reminder engine
-- [Real-time Architecture](./realtime) -- WebSocket delivery; ang push ay nagpapaputok na ngayon mula sa parehong in-app funnel kasabay ng socket delivery sa parehong pass, hindi lang bilang fallback kapag hindi nakarating ang socket delivery
-- [Messaging Endpoints](./api/endpoints/messaging) -- Mga notification, device, at ang natitirang surface ng messaging
-- [AppHelper](./shared-libraries/app-helper) -- Ang npm package na naglalaman ng `WebPushHelper`
+- [Notifications Architecture](./architecture/notifications.md) -- Ang buong funnel ng escalation sa in-app/push/email at ang reminder engine
+- [Real-time Architecture](./realtime.md) -- WebSocket delivery; ang push ay nagpapaputok na ngayon mula sa parehong in-app funnel kasabay ng socket delivery sa parehong pass, hindi lang bilang fallback kapag hindi nakarating ang socket delivery
+- [Messaging Endpoints](./api/endpoints/messaging.md) -- Mga notification, device, at ang natitirang surface ng messaging
+- [AppHelper](./shared-libraries/app-helper.md) -- Ang npm package na naglalaman ng `WebPushHelper`

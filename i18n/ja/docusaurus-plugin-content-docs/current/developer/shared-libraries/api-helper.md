@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Packages ワークスペース内のすべての ChurchApps Express API が使う @churchapps/apihelper パッケージのリファレンス。ローカルビルド、Yarn ポータルでのテスト、changeset による公開を扱います。"
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ title: "ApiHelper"
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- **Node.js** と **Git** をインストールしてください -- [前提条件](../setup/prerequisites)を参照
+- **Node.js** と **Git** をインストールしてください -- [前提条件](../setup/prerequisites.md)を参照
 - [Packages ワークスペース](./index.md)のセットアップとリリースの流れに慣れておいてください
-- このパッケージは [`@churchapps/helpers`](./helpers) に依存しており (peer dependency として)、それを再エクスポートしています
+- このパッケージは [`@churchapps/helpers`](./helpers.md) に依存しており (peer dependency として)、それを再エクスポートしています
 
 </div>
 
@@ -65,6 +66,6 @@ title: "ApiHelper"
 
 ## 関連記事
 
-- **[Helpers](./helpers)** -- このパッケージが依存している基本のユーティリティパッケージ
-- **[モジュール構造](../api/module-structure)** -- API モジュールでコントローラーと認証ミドルウェアがどのように使われるか
-- **[ローカル API のセットアップ](../api/local-setup)** -- ローカル開発用に API をセットアップする方法
+- **[Helpers](./helpers.md)** -- このパッケージが依存している基本のユーティリティパッケージ
+- **[モジュール構造](../api/module-structure.md)** -- API モジュールでコントローラーと認証ミドルウェアがどのように使われるか
+- **[ローカル API のセットアップ](../api/local-setup.md)** -- ローカル開発用に API をセットアップする方法

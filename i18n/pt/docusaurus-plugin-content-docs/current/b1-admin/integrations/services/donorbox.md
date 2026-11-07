@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Conecte o Donorbox ao B1 Admin com o Zapier para que doações online criem registros e perfis de doadores automaticamente, sem exportação manual."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ O *Nova ou Atualizada Doação* do Donorbox dispara em edições também. Use um
 
 ## Veja Também
 
-- [Zapier (visão geral)](../zapier) — o lado B1 de cada receita Zapier
-- [Subsplash](./subsplash) — outra plataforma de doação com um aplicativo Zapier
-- [Mailchimp](./mailchimp) — cadeia "novo presente" em uma tag de email
+- [Zapier (visão geral)](../zapier.md) — o lado B1 de cada receita Zapier
+- [Subsplash](./subsplash.md) — outra plataforma de doação com um aplicativo Zapier
+- [Mailchimp](./mailchimp.md) — cadeia "novo presente" em uma tag de email

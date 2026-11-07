@@ -1,5 +1,6 @@
 ---
 title: "Eingaben verwalten"
+description: "Prüfen, drucken und Zuweisen Sie Formulareinsendungen in B1 Admin neu, leiten Sie Antworten an die richtige Person weiter und verfolgen Sie Besucherkarten und Gebetsanliegen nach."
 ---
 
 # Eingaben verwalten

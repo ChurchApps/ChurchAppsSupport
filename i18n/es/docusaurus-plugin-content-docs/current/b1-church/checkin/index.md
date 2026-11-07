@@ -1,5 +1,7 @@
 ---
-title: "Registro de entrada"
+title: "Registro de entrada en el portal de miembros de B1.church"
+sidebar_label: "Registro de entrada"
+description: "Registra tu entrada y la de los miembros de tu hogar en un servicio de la iglesia desde el portal de miembros de B1.church, sin usar el quiosco, y asigna grupos."
 ---
 
 # Registro de entrada

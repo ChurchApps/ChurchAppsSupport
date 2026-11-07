@@ -1,5 +1,7 @@
 ---
-title: "Treść"
+title: "Funkcje treści w portalu członka B1.church"
+sidebar_label: "Treść"
+description: "Sprawdź, jakie treści kościół włącza w portalu członka B1.church, a następnie przeglądaj kazania, transmisje na żywo, czytanie Biblii i lekcje."
 ---
 
 # Treść

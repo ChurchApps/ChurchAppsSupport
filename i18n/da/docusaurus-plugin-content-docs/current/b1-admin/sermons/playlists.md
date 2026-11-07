@@ -1,5 +1,6 @@
 ---
 title: "playlister"
+description: "Grupper dine prædikener i serier i B1 Admin, så besøgende på din B1.church-hjemmeside kan gennemse og følge hver prædikenserie i rækkefølge."
 ---
 
 # playlister
@@ -39,10 +40,10 @@ opbygning af dine playlister først før tilføjelse af prædikener. På denne m
 
 ## Tilføj prædikener til en playliste
 
-Når du [tilføjer eller redigerer en prædikenindtastning](managing-sermons), tildeler du den til en playliste ved hjælp af **playliste** dropdown. Alle prædikenindtastninger tildelt den samme playliste grupperes sammen og vises i orden på dit websted.
+Når du [tilføjer eller redigerer en prædikenindtastning](./managing-sermons.md), tildeler du den til en playliste ved hjælp af **playliste** dropdown. Alle prædikenindtastninger tildelt den samme playliste grupperes sammen og vises i orden på dit websted.
 
 :::info
-Du kan også tildele prædikener til playlister under [masseimport](bulk-import). Når import fra YouTube eller Vimeo, vælg en playliste fra **import ind i playliste** dropdown før klik **import**.
+Du kan også tildele prædikener til playlister under [masseimport](./bulk-import.md). Når import fra YouTube eller Vimeo, vælg en playliste fra **import ind i playliste** dropdown før klik **import**.
 :::
 
 ## hvordan playlister vises på dit websted
@@ -55,5 +56,5 @@ Playlister bliver vist på dit B1.church websted som gennemsynlige samlinger. Be
 
 ## Næste trin
 
-- [administrering af prædikener](managing-sermons) -- Tilføj individuelle prædikener til dine playlister
-- [masseimport](bulk-import) -- import flere prædikener og tildel dem til playlister
+- [administrering af prædikener](./managing-sermons.md) -- Tilføj individuelle prædikener til dine playlister
+- [masseimport](./bulk-import.md) -- import flere prædikener og tildel dem til playlister

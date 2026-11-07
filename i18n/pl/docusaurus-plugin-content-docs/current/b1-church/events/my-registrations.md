@@ -1,5 +1,6 @@
 ---
 title: "Moje rejestracje"
+description: "Sprawdź status rejestracji, opłać zaległą kwotę, edytuj uczestników lub dodatki albo anuluj zapis na wydarzenie w portalu członka B1 Church."
 ---
 
 # Moje rejestracje
@@ -14,7 +15,7 @@ Strona **Rejestracje** w portalu członka to Twoje centrum zarządzania wszystki
 <h4>Zanim zaczniesz</h4>
 
 - Musisz być [zalogowany](../getting-started/logging-in.md) — rejestracje gości nie pojawiają się tutaj
-- Potrzebujesz co najmniej jednej rejestracji na wydarzenie. Zobacz [Rejestracja na wydarzenia](./registering).
+- Potrzebujesz co najmniej jednej rejestracji na wydarzenie. Zobacz [Rejestracja na wydarzenia](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Twoje miejsce zostaje zwolnione natychmiast. Jeśli wydarzenie ma listę oczekuj
 
 ## Powiązane artykuły
 
-- [Rejestracja na wydarzenia](./registering) -- Proces zapisu, w tym płatności i listy oczekujących
+- [Rejestracja na wydarzenia](./registering.md) -- Proces zapisu, w tym płatności i listy oczekujących
 - [Przegląd wydarzeń](./index.md) -- Przeglądaj nadchodzące wydarzenia

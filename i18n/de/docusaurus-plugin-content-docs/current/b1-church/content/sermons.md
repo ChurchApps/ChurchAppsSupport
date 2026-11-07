@@ -1,5 +1,7 @@
 ---
-title: "Predigten"
+title: "Predigten auf Ihrer B1.church-Website ansehen"
+sidebar_label: "Predigten"
+description: "Aufgezeichnete Predigten aus der Bibliothek Ihrer Gemeinde auf der B1.church-Website ansehen, nach Reihen oder Playlists geordnet. Keine Anmeldung nötig."
 ---
 
 # Predigten

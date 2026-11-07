@@ -1,5 +1,6 @@
 ---
 title: "Uvoz podatkov"
+description: "Prenesite obstoječe osebe, skupine, prisotnost in evidence darov v B1 Admin z orodjem B1 Transfer ali kadar koli izvozite varnostno kopijo podatkov."
 ---
 
 # Uvoz podatkov

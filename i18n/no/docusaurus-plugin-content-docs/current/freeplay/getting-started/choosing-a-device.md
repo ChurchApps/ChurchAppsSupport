@@ -1,5 +1,6 @@
 ---
 title: "Velge en enhet"
+description: "Velg riktig enhet for FreePlay-klasseromsTV-er i ChurchApps støttedokumentasjon, fra Fire TV-pinner og Onn-bokser til Apple TV, og hvilke du bør unngå."
 ---
 
 # Velge en enhet for FreePlay

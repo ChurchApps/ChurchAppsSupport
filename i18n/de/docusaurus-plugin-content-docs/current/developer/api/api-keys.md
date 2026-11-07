@@ -1,5 +1,6 @@
 ---
 title: "API-Schlüssel"
+description: "B1-API-Schlüssel in B1 Admin erstellen, begrenzen und widerrufen: für Serverskripte und Zapier, Make oder Google Sheets, ohne vollständigen OAuth-Ablauf."
 ---
 
 # API-Schlüssel
@@ -104,7 +105,7 @@ Ein widerrufener Schlüssel ist sofort ungültig – es gibt keine Nachfrist.
 
 ## Unterschied zu OAuth
 
-API-Schlüssel eignen sich, wenn **Ihre Gemeinde die einzige ist, die die Integration nutzt**. Für einen Connector, der auf viele Gemeinden zugreifen muss, wobei jede Gemeinde ausdrücklich zustimmt – etwa eine SaaS-Anwendung, die in der B1-Community geteilt wird –, verwenden Sie stattdessen [OAuth und verbundene Apps](./connected-apps).
+API-Schlüssel eignen sich, wenn **Ihre Gemeinde die einzige ist, die die Integration nutzt**. Für einen Connector, der auf viele Gemeinden zugreifen muss, wobei jede Gemeinde ausdrücklich zustimmt – etwa eine SaaS-Anwendung, die in der B1-Community geteilt wird –, verwenden Sie stattdessen [OAuth und verbundene Apps](./connected-apps.md).
 
 | | API-Schlüssel | OAuth |
 |---|---|---|

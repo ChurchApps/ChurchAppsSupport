@@ -1,5 +1,7 @@
 ---
-title: "Configurarea inițială"
+title: "Primii pași cu site-ul tău B1 Admin"
+sidebar_label: "Configurarea inițială"
+description: "Configurează site-ul B1 Admin: indică un subdomeniu sau domeniu propriu, creează pagina principală, alege culorile, logo-ul și construiește navigarea."
 ---
 
 # Configurarea inițială
@@ -45,7 +47,7 @@ Dacă nu vedeți opțiunea Settings, rugați persoana care a configurat contul b
 6. După adăugarea unei secțiuni, faceți clic din nou pe **Add Content** pentru a insera text, imagini, videoclipuri, carduri, formulare și altele, trăgându-le în secțiunea dvs.
 
 :::info
-Pentru instrucțiuni detaliate despre lucrul cu pagini și navigare, consultați [Gestionarea paginilor](managing-pages). Pentru un ghid complet al editorului vizual, consultați [Utilizarea editorului de pagini](page-editor).
+Pentru instrucțiuni detaliate despre lucrul cu pagini și navigare, consultați [Gestionarea paginilor](./managing-pages.md). Pentru un ghid complet al editorului vizual, consultați [Utilizarea editorului de pagini](./page-editor.md).
 :::
 
 ## Configurarea aspectului site-ului
@@ -57,7 +59,7 @@ Pentru instrucțiuni detaliate despre lucrul cu pagini și navigare, consultați
 5. Configurați **Site Footer** cu datele de contact și linkurile bisericii dvs.
 
 :::info
-Modificările făcute în Appearance se aplică pe întregul dvs. site web. Consultați pagina [Appearance](appearance) pentru instrucțiuni detaliate despre fiecare setare.
+Modificările făcute în Appearance se aplică pe întregul dvs. site web. Consultați pagina [Appearance](./appearance.md) pentru instrucțiuni detaliate despre fiecare setare.
 :::
 
 ## Configurarea navigării
@@ -70,6 +72,6 @@ Linkurile de navigare apar în vizualizarea Website Pages. Pentru a le organiza:
 
 ## Pașii următori
 
-- [Gestionarea paginilor](managing-pages) -- Aflați cum să lucrați cu pagini și navigare în detaliu
-- [Appearance](appearance) -- Ajustați fin culorile, fonturile și aspectul site-ului
-- [Files](files) -- Încărcați imagini și documente pentru site-ul dvs. web
+- [Gestionarea paginilor](./managing-pages.md) -- Aflați cum să lucrați cu pagini și navigare în detaliu
+- [Appearance](./appearance.md) -- Ajustați fin culorile, fonturile și aspectul site-ului
+- [Files](./files.md) -- Încărcați imagini și documente pentru site-ul dvs. web

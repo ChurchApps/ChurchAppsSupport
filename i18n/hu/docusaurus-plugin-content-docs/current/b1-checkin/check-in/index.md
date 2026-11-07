@@ -1,5 +1,6 @@
 ---
 title: "Bejelentkezési folyamat"
+description: "A B1 Church Checkin kioszk lépései a szolgálat kiválasztásától a kijelentkezésig. Előbb állítsa be a szolgálatokat, csoportokat és személyeket a B1 Adminban."
 ---
 
 # Bejelentkezési folyamat
@@ -12,13 +13,13 @@ A bejelentkezési folyamat a B1 Church Checkinben egyszerű, lépésről lépés
 
 ## A bejelentkezési folyamat áttekintése
 
-1. **[Válasszon istentiszteletet](./selecting-service)** – Válassza ki, melyik alkalomra érkezik (pl. vasárnap délelőtt, vasárnap délután, közép­héten).
-2. **[Keresse meg a családját](./looking-up-members)** – Keressen telefonszám vagy vezetéknév alapján, hogy megtalálja magát a rendszerben.
-3. **[Ellenőrizze a háztartását](./household-review)** – Tekintse meg a család összes tagját és jelenlegi csoportbeosztásaikat.
-4. **[Rendeljen csoportokat](./group-assignment)** – Válassza ki, melyik osztályba vagy csoportba menjen az egyes családtagok az egyes istentiszteleti időpontokon.
-5. **[Adjon hozzá vendégeket](./adding-guests)** (opcionális) – Vegyen fel látogatót a háztartásába, ha önnel tart.
-6. **[Fejezze be a bejelentkezést](./completing-checkin)** – Nyomja meg a bejelentkezés gombot a részvétel rögzítéséhez és a címkék nyomtatásához.
-7. **[Kijelentkezés](./checking-out)** (személyzettel működő állomásokon) – Az átvétel idején ellenőrizze a biztonsági kódot és az átvevő személyt, a megbízható átvevők listáival, a szülő hívásával és a címkék újranyomtatásával.
+1. **[Válasszon istentiszteletet](./selecting-service.md)** – Válassza ki, melyik alkalomra érkezik (pl. vasárnap délelőtt, vasárnap délután, közép­héten).
+2. **[Keresse meg a családját](./looking-up-members.md)** – Keressen telefonszám vagy vezetéknév alapján, hogy megtalálja magát a rendszerben.
+3. **[Ellenőrizze a háztartását](./household-review.md)** – Tekintse meg a család összes tagját és jelenlegi csoportbeosztásaikat.
+4. **[Rendeljen csoportokat](./group-assignment.md)** – Válassza ki, melyik osztályba vagy csoportba menjen az egyes családtagok az egyes istentiszteleti időpontokon.
+5. **[Adjon hozzá vendégeket](./adding-guests.md)** (opcionális) – Vegyen fel látogatót a háztartásába, ha önnel tart.
+6. **[Fejezze be a bejelentkezést](./completing-checkin.md)** – Nyomja meg a bejelentkezés gombot a részvétel rögzítéséhez és a címkék nyomtatásához.
+7. **[Kijelentkezés](./checking-out.md)** (személyzettel működő állomásokon) – Az átvétel idején ellenőrizze a biztonsági kódot és az átvevő személyt, a megbízható átvevők listáival, a szülő hívásával és a címkék újranyomtatásával.
 
 A bejelentkezés befejezése után az alkalmazás sikerképernyőt jelenít meg, majd automatikusan visszatér a keresőképernyőre, készen a következő család fogadására.
 
@@ -36,5 +37,5 @@ Győződjön meg róla, hogy az alábbiak be vannak állítva a B1 Adminban, mie
 - **A személyek** a háztartási kapcsolataikkal együtt fel vannak véve a rendszerbe. Lásd: [személyek hozzáadása](../../b1-admin/people/adding-people.md).
 
 :::info
-Ha még nem állította be magát a kioszkot, a telepítéssel, a bejelentkezéssel és a nyomtató beállításával kapcsolatos tudnivalókért lásd: [Első lépések](../getting-started/).
+Ha még nem állította be magát a kioszkot, a telepítéssel, a bejelentkezéssel és a nyomtató beállításával kapcsolatos tudnivalókért lásd: [Első lépések](../getting-started/index.md).
 :::

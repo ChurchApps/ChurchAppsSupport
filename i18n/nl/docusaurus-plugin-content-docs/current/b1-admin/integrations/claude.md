@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Koppel B1 Admin aan Claude om in gewone taal te vragen naar aanwezigheid, giften en groepen, met inlogoptie en een API-sleutel met beperkte rechten."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ Dit is dezelfde `/membership/people`, `/giving/donations`, `/attendance/visits` 
 
 - [API Keys](/docs/developer/api/api-keys): volledige referentie van scopes
 - [MCP Server (ontwikkelaarsreferentie)](/docs/developer/api/mcp): protocoldetails en toolschema's
-- [ChatGPT](./chatgpt): hetzelfde idee, voor de modellen van OpenAI
+- [ChatGPT](./chatgpt.md): hetzelfde idee, voor de modellen van OpenAI

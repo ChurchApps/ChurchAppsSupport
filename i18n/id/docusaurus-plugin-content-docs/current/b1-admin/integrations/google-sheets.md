@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "Hubungkan B1 Admin ke Google Sheets dengan add-on B1 Export untuk menarik data Orang, Donasi, Grup, dan Kehadiran ke tab spreadsheet sesuai permintaan."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ Ekspor berjalan di latar belakang di bawah akun Google Anda. Jika kunci API diga
 - **"B1 rejected the API key (401)"**: kunci sudah dicabut atau salah. Buat ulang kunci dan tempelkan kembali.
 - **"This API key lacks permission for /giving/donations (403)"**: kunci tidak memiliki `donations:read`. Perbarui scope kunci di B1Admin.
 - **Sheet tidak diperbarui** setelah ekspor dijalankan: pastikan Anda melihat nama tab yang *benar* (misalnya `B1 People`). Ekspor akan membuat tab jika belum ada.
-- **"Quota exceeded"**: Apps Script menetapkan kuota harian per pengguna untuk `UrlFetchApp` (biasanya ribuan panggilan per hari). Gereja besar dengan banyak data mungkin perlu membagi ekspor ke beberapa hari, atau menggunakan [Make](./make) / integrasi kustom untuk sinkronisasi volume tinggi.
+- **"Quota exceeded"**: Apps Script menetapkan kuota harian per pengguna untuk `UrlFetchApp` (biasanya ribuan panggilan per hari). Gereja besar dengan banyak data mungkin perlu membagi ekspor ke beberapa hari, atau menggunakan [Make](./make.md) / integrasi kustom untuk sinkronisasi volume tinggi.
 
 ## Menyesuaikan Add-On
 
@@ -108,6 +109,6 @@ Add-on ini bersifat open source. Proyek Apps Script-nya berada di repositori `B1
 
 ## Lihat Juga
 
-- [Zapier](./zapier): untuk sinkronisasi real-time, bukan ekspor sesuai permintaan
-- [Make](./make): untuk sinkronisasi dengan transformasi yang lebih kompleks
+- [Zapier](./zapier.md): untuk sinkronisasi real-time, bukan ekspor sesuai permintaan
+- [Make](./make.md): untuk sinkronisasi dengan transformasi yang lebih kompleks
 - [Kunci API (referensi pengembang)](/docs/developer/api/api-keys)

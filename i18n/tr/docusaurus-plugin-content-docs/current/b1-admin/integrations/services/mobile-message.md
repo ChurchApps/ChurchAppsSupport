@@ -1,5 +1,6 @@
 ---
 title: "Mobile Message"
+description: "Avustralyalı SMS API'si Mobile Message'ı B1 Admin etkinliklerine Zapier veya Make webhook'larıyla bağlayarak karşılama, bağış ve hatırlatma SMS'leri gönderin."
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ Mobile Message'ın `/v1/messages` uç noktası, çağrı başına en fazla 10.00
 
 ### Make alternatifi
 
-Make'i tercih ederseniz, B1 Watch Events tetikleyicisinin ardına **HTTP — Make a request** modülünü ekleyin ve aynı şekilde yapılandırın (POST, Basic Auth, JSON gövde). B1 tarafı için [Make genel bakışına](../make) bakın.
+Make'i tercih ederseniz, B1 Watch Events tetikleyicisinin ardına **HTTP — Make a request** modülünü ekleyin ve aynı şekilde yapılandırın (POST, Basic Auth, JSON gövde). B1 tarafı için [Make genel bakışına](../make.md) bakın.
 
 ## Sınırlamalar ve Notlar
 
@@ -102,6 +103,6 @@ Make'i tercih ederseniz, B1 Watch Events tetikleyicisinin ardına **HTTP — Mak
 
 ## Ayrıca Bakınız
 
-- [Clearstream](./clearstream), [Text In Church](./text-in-church): Yerel Zapier uygulamaları olan alternatif SMS sağlayıcıları (Webhooks by Zapier adımı gerekmez)
-- [Zapier (genel bakış)](../zapier): Her Zapier tarifinin B1 tarafı
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md): Yerel Zapier uygulamaları olan alternatif SMS sağlayıcıları (Webhooks by Zapier adımı gerekmez)
+- [Zapier (genel bakış)](../zapier.md): Her Zapier tarifinin B1 tarafı
 - [Mobile Message API belgeleri](https://mobilemessage.com.au/api-documentation)

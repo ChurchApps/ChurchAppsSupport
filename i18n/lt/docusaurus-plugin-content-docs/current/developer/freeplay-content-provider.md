@@ -1,5 +1,6 @@
 ---
 title: "FreePlay turinio teikėjas"
+description: "Ką turinio teikėjas turi pateikti FreePlay: logotipą, prisijungimo modelį, katalogo ir grojaraščių galinius taškus bei medijos formatus."
 ---
 
 # FreePlay turinio teikėjas

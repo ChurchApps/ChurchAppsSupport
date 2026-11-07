@@ -1,5 +1,6 @@
 ---
 title: "Distribusjon"
+description: "Finn ut hvor hvert ChurchApps-prosjekt deployes, fra AWS Lambda-API-er og S3-webapper til Expo-mobilbygg og selvhostet B1 Admin på Railway eller Docker."
 ---
 
 # Distribusjon
@@ -14,12 +15,12 @@ ChurchApps bruker ulike distribusjonsstrategier avhengig av prosjekttype. API-er
 
 | Prosjekttype | Distribusjonsmål | Verktøy |
 |-------------|-------------------|---------|
-| [API-er](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 24.x-kjøretid) |
-| [Webapper](./web-apps) | S3 + CloudFront | Statisk bygg, S3-synkronisering, CloudFront-invalidering |
-| [Mobilapper](./mobile) | Appbutikker | Expo EAS Build + OTA-oppdateringer |
-| [Selvhosting (Railway)](./railway-template) | Railway | Ett-klikks-mal: MySQL + Api + B1Admin + B1App |
-| [Selvhosting (Docker)](./docker) | Enhver Docker-vert | Installasjonsprogram med én linje; ferdigbygde GHCR-images + Caddy, oppgradering/sikkerhetskopi/tilbakerulling med `./deploy/b1` |
-| [Caddy-proxy for egendefinerte domener](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Statisk Caddyfile + WinSW-tjeneste + planlagt kartsynkronisering |
+| [API-er](./apis.md) | AWS Lambda | Serverless Framework v3 (Node.js 24.x-kjøretid) |
+| [Webapper](./web-apps.md) | S3 + CloudFront | Statisk bygg, S3-synkronisering, CloudFront-invalidering |
+| [Mobilapper](./mobile.md) | Appbutikker | Expo EAS Build + OTA-oppdateringer |
+| [Selvhosting (Railway)](./railway-template.md) | Railway | Ett-klikks-mal: MySQL + Api + B1Admin + B1App |
+| [Selvhosting (Docker)](./docker.md) | Enhver Docker-vert | Installasjonsprogram med én linje; ferdigbygde GHCR-images + Caddy, oppgradering/sikkerhetskopi/tilbakerulling med `./deploy/b1` |
+| [Caddy-proxy for egendefinerte domener](./caddy-proxy.md) | Windows EC2 (Elastic IP `3.23.251.61`) | Statisk Caddyfile + WinSW-tjeneste + planlagt kartsynkronisering |
 | FreeShow | Direkte nedlasting | Electron Builder (plattformuavhengige binærfiler) |
 
 ## Miljøer

@@ -1,5 +1,6 @@
 ---
 title: "Rapoarte despre donații"
+description: "Revizuiți în B1 Admin totalurile donațiilor, donatorii inactivi și detaliile pe loturi, cu panoul Donations Summary, Lapsed Givers și exporturi CSV."
 ---
 
 # Rapoarte despre donații

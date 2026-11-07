@@ -1,5 +1,7 @@
 ---
-title: "Kusakata Bukhoma"
+title: "Kubuka Kusakazwa Ngqo ku-B1.church"
+sidebar_label: "Kusakata Bukhoma"
+description: "Buka tinkhonzo tesonto lakho letisakazwa ngqo ku-khasi le-Stream ye-B1.church, bese ujoyina ingxoxo nalokusakazwako, akudzingeki kungena."
 ---
 
 # Kusakata Bukhoma

@@ -1,5 +1,6 @@
 ---
 title: "Grupės kalendorius"
+description: "Planuokite grupės susitikimus kalendoriuje B1 Admin ir B1.church: masinis planavimas, atsakymai (RSVP) ir kalendorių prenumeratos."
 ---
 
 # Grupės kalendorius

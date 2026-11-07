@@ -1,5 +1,6 @@
 ---
 title: "Räume, Ressourcen & Zeitplanung"
+description: "Richten Sie in B1 Admin Räume, Geräte, Sperrzeiten und Terminvorlagen ein, damit Gruppen Buchungen anfragen können und Sie diese genehmigen, um Doppelbuchungen zu vermeiden."
 ---
 
 # Räume, Ressourcen & Zeitplanung
@@ -14,7 +15,7 @@ Räume und Ressourcen ermöglichen es Ihnen, die buchbaren Räume und Ausrüstun
 <h4>Bevor Sie beginnen</h4>
 
 - Sie benötigen Administratorzugriff auf den Kalenderbereich in B1 Admin
-- Richten Sie [Gruppen](../groups/creating-groups) ein, deren Mitglieder Buchungsanfragen einreichen werden
+- Richten Sie [Gruppen](../groups/creating-groups.md) ein, deren Mitglieder Buchungsanfragen einreichen werden
 
 </div>
 
@@ -76,7 +77,7 @@ Wenn Sie ein neues Ereignis erstellen, können Mitarbeiter eine bestehende Vorla
 
 ## Verwandte Artikel
 
-- [Verfügbarkeitskalender](availability) -- Zeigen Sie alle Buchungen auf einen Blick an und buchen Sie Räume oder Ressourcen direkt
-- [Kalender-Genehmigungen](approvals) -- Genehmigen oder lehnen Sie Raum- und Ressourcenbuchungsanfragen ab
-- [Kalender erstellen](creating-calendars) -- Richten Sie Ereigniskalender ein
-- [Gruppen erstellen](../groups/creating-groups) -- Richten Sie Gruppen ein, die Räume und Ressourcen buchen können
+- [Verfügbarkeitskalender](./availability.md) -- Zeigen Sie alle Buchungen auf einen Blick an und buchen Sie Räume oder Ressourcen direkt
+- [Kalender-Genehmigungen](./approvals.md) -- Genehmigen oder lehnen Sie Raum- und Ressourcenbuchungsanfragen ab
+- [Kalender erstellen](./creating-calendars.md) -- Richten Sie Ereigniskalender ein
+- [Gruppen erstellen](../groups/creating-groups.md) -- Richten Sie Gruppen ein, die Räume und Ressourcen buchen können

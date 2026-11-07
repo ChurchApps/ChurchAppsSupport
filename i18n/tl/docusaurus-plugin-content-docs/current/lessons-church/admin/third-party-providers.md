@@ -1,5 +1,6 @@
 ---
 title: "Mga Third-Party Provider"
+description: "Magdagdag ng external curriculum feed sa Lessons.church mula sa Third-Party page, at tingnan, i-update, o alisin ang koneksyon ng provider kung kailangan."
 ---
 
 # Mga Third-Party Provider

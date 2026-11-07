@@ -1,5 +1,7 @@
 ---
-title: "Skupiny"
+title: "Obrazovka Skupiny v B1 Mobile"
+sidebar_label: "Skupiny"
+description: "Najděte skupiny, do kterých patříte, na obrazovce Skupiny v B1 Mobile: nahoře vaši nejčastěji navštěvovanou skupinu a níže ostatní skupiny církve."
 ---
 
 # Skupiny
@@ -30,10 +32,10 @@ Z obrazovky Skupiny můžete:
 - **Zůstat ve spojení** -- Sledujte, co sdílejí členové vaší skupiny, držte krok s konverzacemi a zapojujte se do obsahu skupiny.
 
 :::tip
-Obrazovka Skupiny se přizpůsobuje vašemu používání, podobně jako [přehled](../dashboard/). Skupiny, které navštěvujete nejčastěji, se posouvají nahoru pro rychlý přístup.
+Obrazovka Skupiny se přizpůsobuje vašemu používání, podobně jako [přehled](../dashboard/index.md). Skupiny, které navštěvujete nejčastěji, se posouvají nahoru pro rychlý přístup.
 :::
 
 ## Další kroky
 
-- [Podrobnosti skupiny](./group-details) -- Co najdete na stránce podrobností skupiny
-- [Časová osa skupiny](./group-timeline) -- Seznamte se se společnou aktivitou napříč vašimi skupinami
+- [Podrobnosti skupiny](./group-details.md) -- Co najdete na stránce podrobností skupiny
+- [Časová osa skupiny](./group-timeline.md) -- Seznamte se se společnou aktivitou napříč vašimi skupinami

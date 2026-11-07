@@ -1,5 +1,6 @@
 ---
 title: "MCP Server"
+description: "Setha i-MCP ku-B1 API ukuze emaclient e-AI njenge-Claude Code, Cursor, noma Claude Desktop afinyelele ngetikhiye te-API noma nge-OAuth."
 ---
 
 # MCP Server
@@ -13,7 +14,7 @@ I-B1 API ihamba ne-server ye-[MCP (Model Context Protocol)](https://modelcontext
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- [Sikhiya se-B1 API](./api-keys) (`cak_…`) lesinema-scope lokufanele client abe nawo
+- [Sikhiya se-B1 API](./api-keys.md) (`cak_…`) lesinema-scope lokufanele client abe nawo
 - I-host ye-B1 API lefinyeleleka — `https://api.churchapps.org` kumabandla la-hosted, nobe deployment yakho ngokwakho
 - I-MCP client. Buka [Claude](/docs/b1-admin/integrations/claude) ne-[ChatGPT](/docs/b1-admin/integrations/chatgpt) kuhlelwa kwemsebentisi wekugcina
 
@@ -117,7 +118,7 @@ Umphumela wethulusi uphawulwa nge-`isError: true` kunome ngusiphi imphendvulo le
 
 ### `describe_page_builder`
 
-Lelodwa ithulusi lelingasilo lejikelele: umhlahlandlela lomile, lotimele wekwakha emakhasi ewebhusayithi ngema-endpoint e-`/content/*` — sifanekiso sedatha se-Page → Section → Element, inchubo yekwakha, `elementType` ngayinye ngesimo sayo se-`answersJSON`, tilungiselelo tesigaba njenge-shape dividers te-`dividerTop`/`dividerBottom`, kanye nesibonelo lesisebentako ekucaleni kuya ekugcineni. Ayidzingi kungeniso futsi ifanana neluhla lwema-element logcinwa ku-editor ye-B1Admin (buka [Website Builder Architecture](../architecture/website-builder)). Ema-Agent alindzelekile kubita loku kanye ngaphambi kwekwakha nobe kuhlela kucuketfwe kwelikhasi, bese enta ngesento nge-`api_call`.
+Lelodwa ithulusi lelingasilo lejikelele: umhlahlandlela lomile, lotimele wekwakha emakhasi ewebhusayithi ngema-endpoint e-`/content/*` — sifanekiso sedatha se-Page → Section → Element, inchubo yekwakha, `elementType` ngayinye ngesimo sayo se-`answersJSON`, tilungiselelo tesigaba njenge-shape dividers te-`dividerTop`/`dividerBottom`, kanye nesibonelo lesisebentako ekucaleni kuya ekugcineni. Ayidzingi kungeniso futsi ifanana neluhla lwema-element logcinwa ku-editor ye-B1Admin (buka [Website Builder Architecture](../architecture/website-builder.md)). Ema-Agent alindzelekile kubita loku kanye ngaphambi kwekwakha nobe kuhlela kucuketfwe kwelikhasi, bese enta ngesento nge-`api_call`.
 
 ## Sifanekiso Sekutivakalisa
 
@@ -190,8 +191,8 @@ I-MCP server ihlala ku-`src/modules/mcp/` ku-repository ye-Api. Emafayela lasemc
 
 ## Kuhlobene
 
-- [API Keys](./api-keys)
-- [Webhooks](./webhooks)
-- [Connected Apps (OAuth)](./connected-apps)
+- [API Keys](./api-keys.md)
+- [Webhooks](./webhooks.md)
+- [Connected Apps (OAuth)](./connected-apps.md)
 - [Claude — kuhlelwa kwemsebentisi wekugcina](/docs/b1-admin/integrations/claude)
 - [ChatGPT — kuhlelwa kwemsebentisi wekugcina](/docs/b1-admin/integrations/chatgpt)

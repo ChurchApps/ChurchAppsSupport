@@ -1,5 +1,6 @@
 ---
 title: "Distribuzione Mobile"
+description: "Guida alla creazione di release Android e iOS dell'app B1 Mobile con Expo EAS, alla pubblicazione sugli store e al rilascio di aggiornamenti OTA."
 ---
 
 # Distribuzione Mobile
@@ -13,7 +14,7 @@ Le applicazioni mobile di ChurchApps vengono compilate e distribuite utilizzando
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Configura l'app mobile in locale -- vedi [B1 Mobile](../mobile/b1-mobile)
+- Configura l'app mobile in locale -- vedi [B1 Mobile](../mobile/b1-mobile.md)
 - Installa e configura la [EAS CLI](https://docs.expo.dev/eas/)
 - Avere accesso alla Google Play Console (Android) e/o Apple App Store Connect (iOS)
 
@@ -77,6 +78,6 @@ Dimenticare di aggiornare i numeri di versione in tutti i file causerà errori d
 
 ## Articoli Correlati
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- Guida alla configurazione locale e allo sviluppo
-- **[Distribuzione delle API](./apis)** -- Distribuzione delle API backend
-- **[Distribuzione delle Applicazioni Web](./web-apps)** -- Distribuzione delle applicazioni web frontend
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- Guida alla configurazione locale e allo sviluppo
+- **[Distribuzione delle API](./apis.md)** -- Distribuzione delle API backend
+- **[Distribuzione delle Applicazioni Web](./web-apps.md)** -- Distribuzione delle applicazioni web frontend

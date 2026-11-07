@@ -1,5 +1,6 @@
 ---
 title: "Интеграције и проширења"
+description: "Мапа свих начина повезивања са ChurchApps B1: REST API, API кључеви, OAuth, webhook-ови, MCP и провајдери садржаја, са везама ка свакој референци."
 ---
 
 # Интеграције и проширења
@@ -14,12 +15,12 @@ title: "Интеграције и проширења"
 
 Постоји шест начина за улаз и излаз, и сви деле исти слој за ауторизацију:
 
-- **[REST API](../api/api-keys)** — цела површина производа, доступна са bearer токеном из било ког језика.
-- **[API кључеви](../api/api-keys)** — најједноставнији акредитив: токен `cak_…` везан за једну особу у једној цркви.
-- **[OAuth 2.0 и повезане апликације](../api/connected-apps)** — сагласност по цркви за апликације са више закупаца; издаје исти JWT који добија корисник.
-- **[Webhook-ови](../api/webhooks)** — потписани одлазни догађаји са гарантованом доставом.
-- **[MCP сервер](../api/mcp)** — омотач за AI преко REST API-ја на `/mcp`.
-- **[Провајдери садржаја](../freeplay-content-provider)** — улазни пут за спољне медијске библиотеке у FreePlay и B1 апликације.
+- **[REST API](../api/api-keys.md)** — цела површина производа, доступна са bearer токеном из било ког језика.
+- **[API кључеви](../api/api-keys.md)** — најједноставнији акредитив: токен `cak_…` везан за једну особу у једној цркви.
+- **[OAuth 2.0 и повезане апликације](../api/connected-apps.md)** — сагласност по цркви за апликације са више закупаца; издаје исти JWT који добија корисник.
+- **[Webhook-ови](../api/webhooks.md)** — потписани одлазни догађаји са гарантованом доставом.
+- **[MCP сервер](../api/mcp.md)** — омотач за AI преко REST API-ја на `/mcp`.
+- **[Провајдери садржаја](../freeplay-content-provider.md)** — улазни пут за спољне медијске библиотеке у FreePlay и B1 апликације.
 
 Све осим провајдера садржаја служи се кроз један монолитни API (репозиторијум [Api](https://github.com/ChurchApps/Api)), чији су модули монтирани под стабилним основним путањама — `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting` и `/mcp`.
 
@@ -80,7 +81,7 @@ OAuth токен за приступ има потпуно исти облик �
 - Опсег може само да *уклања* дозволе, па акредитив са ограниченим опсегом никад не може да се подигне на администрацију сервера или домена (те дозволе су намерно неповезане ни са једним опсегом).
 - API кључеви носе префикс `cak_`; `CustomAuthProvider.getUser()` то препознаје, хешира тајну и поново разрешава живе RBAC дозволе власника при сваком позиву.
 
-Погледајте [API кључеви → Опсези](../api/api-keys#scopes) за потпун каталог.
+Погледајте [API кључеви → Опсези](../api/api-keys.md#scopes) за потпун каталог.
 
 ## Референца о површинама
 
@@ -90,7 +91,7 @@ OAuth токен за приступ има потпуно исти облик �
 
 ### API кључеви
 
-Лични токен за приступ `cak_<prefix>.<secret>`, који се прави у **B1Admin → Settings → Developer → API Keys**. Чува се само SHA-256 хеш; сирови кључ се приказује једном. Управља се на `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Најбољи је за скрипте једне цркве и за конекторе попут Zapier-а, Make-а и Google Sheets-а. → **[API кључеви](../api/api-keys)**
+Лични токен за приступ `cak_<prefix>.<secret>`, који се прави у **B1Admin → Settings → Developer → API Keys**. Чува се само SHA-256 хеш; сирови кључ се приказује једном. Управља се на `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Најбољи је за скрипте једне цркве и за конекторе попут Zapier-а, Make-а и Google Sheets-а. → **[API кључеви](../api/api-keys.md)**
 
 ### OAuth 2.0 и повезане апликације
 
@@ -102,19 +103,19 @@ OAuth токен за приступ има потпуно исти облик �
 
 Јавни клијенти могу и сами да се региструју позивом `POST /oauth/register` (RFC 7591, динамичка регистрација клијента); добијају `client_id` без тајне, а њихови redirect URI-ји морају бити `https` или loopback.
 
-**Повезана апликација** је приказ одобреног токена намењен администратору цркве; може се видети и опозвати на `/membership/oauth/connections`. Контролер такође садржи OAuth **relay-session** мост (`/oauth/relay/*`) који омогућава уређају без прегледача да заврши пријаву код *спољног* провајдера. → **[Повезане апликације и OAuth](../api/connected-apps)**
+**Повезана апликација** је приказ одобреног токена намењен администратору цркве; може се видети и опозвати на `/membership/oauth/connections`. Контролер такође садржи OAuth **relay-session** мост (`/oauth/relay/*`) који омогућава уређају без прегледача да заврши пријаву код *спољног* провајдера. → **[Повезане апликације и OAuth](../api/connected-apps.md)**
 
 ### Webhook-ови
 
-Једина одлазна површина. Црква претплаћује јавни HTTPS крајњи пункт на догађаје. Када наступи одговарајућа промена, `WebhookDispatcher.emit(churchId, event, payload)` обогаћује корисна оптерећења која садрже само ID-јеве приказним именима (`personName`, `groupName`, `formName`; претраге се извршавају тек када се претплата подудари), бележи испоруку, а позадински радник шаље потписани JSON омотач уз поновне покушаје са паузама и поновну испоруку. Механизам је у `Api/src/shared/webhooks/`, а CRUD по цркви је под `/membership/webhooks` (`WebhookController.ts`). Поље `connectorType` преобликује тело за Slack и Discord. Конектор `mailchimp` иде даље и преузима цео HTTP разговор (метод, URL и ауторизација по догађају према Mailchimp API-ју; акредитиви су шифровани у `webhooks.connectorConfig`). → **[Webhook-ови](../api/webhooks)**
+Једина одлазна површина. Црква претплаћује јавни HTTPS крајњи пункт на догађаје. Када наступи одговарајућа промена, `WebhookDispatcher.emit(churchId, event, payload)` обогаћује корисна оптерећења која садрже само ID-јеве приказним именима (`personName`, `groupName`, `formName`; претраге се извршавају тек када се претплата подудари), бележи испоруку, а позадински радник шаље потписани JSON омотач уз поновне покушаје са паузама и поновну испоруку. Механизам је у `Api/src/shared/webhooks/`, а CRUD по цркви је под `/membership/webhooks` (`WebhookController.ts`). Поље `connectorType` преобликује тело за Slack и Discord. Конектор `mailchimp` иде даље и преузима цео HTTP разговор (метод, URL и ауторизација по догађају према Mailchimp API-ју; акредитиви су шифровани у `webhooks.connectorConfig`). → **[Webhook-ови](../api/webhooks.md)**
 
 ### MCP сервер
 
-Омотач намењен AI-ју на `/mcp` (`Api/src/modules/mcp/`). Три општа алата — `list_endpoints`, `describe_endpoint` и `api_call` — динамички излажу целу REST површину било ком MCP клијенту. Аутентификација је исти bearer токен као и све остало. За клијенте који се пријављују преко OAuth-а (claude.ai прилагођени конектори), одговор 401 са `/mcp` носи заглавље `WWW-Authenticate` које упућује на `/.well-known/oauth-protected-resource`. Путања `/.well-known/oauth-authorization-server` оглашава крајње тачке `/membership/oauth`, динамичку регистрацију, PKCE и страницу за сагласност B1Admin-а на `/oauth` (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` поново улази у Express стек у истом процесу, па се сва правила о дозволама и ограничењима по цркви и даље примењују. → **[MCP сервер](../api/mcp)**
+Омотач намењен AI-ју на `/mcp` (`Api/src/modules/mcp/`). Три општа алата — `list_endpoints`, `describe_endpoint` и `api_call` — динамички излажу целу REST површину било ком MCP клијенту. Аутентификација је исти bearer токен као и све остало. За клијенте који се пријављују преко OAuth-а (claude.ai прилагођени конектори), одговор 401 са `/mcp` носи заглавље `WWW-Authenticate` које упућује на `/.well-known/oauth-protected-resource`. Путања `/.well-known/oauth-authorization-server` оглашава крајње тачке `/membership/oauth`, динамичку регистрацију, PKCE и страницу за сагласност B1Admin-а на `/oauth` (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` поново улази у Express стек у истом процесу, па се сва правила о дозволама и ограничењима по цркви и даље примењују. → **[MCP сервер](../api/mcp.md)**
 
 ### Провајдери садржаја
 
-Улазни пут садржаја налази се у посебном пакету `Packages/content-providers` (`@churchapps/content-providers`), а не у API-ју. Сваки провајдер имплементира интерфејс `IProvider` (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions` и куке за аутентификацију — и сам се региструје у регистар `Map` (`src/providers/registry.ts`). Овде је **B1 OAuth клијент**: провајдер декларише `AuthType` вредност `none`, `oauth_pkce`, `device_flow` или `form_login`, а заједничке помоћне функције (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) изводе клијентски PKCE или device flow према спољном извору. Данас постоји једанаест провајдера, укључујући Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church и B1.church, који снабдевају FreePlay и B1 апликације. → **[FreePlay провајдер садржаја](../freeplay-content-provider)**
+Улазни пут садржаја налази се у посебном пакету `Packages/content-providers` (`@churchapps/content-providers`), а не у API-ју. Сваки провајдер имплементира интерфејс `IProvider` (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions` и куке за аутентификацију — и сам се региструје у регистар `Map` (`src/providers/registry.ts`). Овде је **B1 OAuth клијент**: провајдер декларише `AuthType` вредност `none`, `oauth_pkce`, `device_flow` или `form_login`, а заједничке помоћне функције (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) изводе клијентски PKCE или device flow према спољном извору. Данас постоји једанаест провајдера, укључујући Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church и B1.church, који снабдевају FreePlay и B1 апликације. → **[FreePlay провајдер садржаја](../freeplay-content-provider.md)**
 
 **Годишњи планови** теку овим путем. Издавач курикулума (са `lessons.edit`) одржава уређене низове недеља 1/2/3 у администрацији Lessons.church (табеле `yearPlans` и `yearPlanWeeks` у `LessonsApi`, са опционалним `startMonth` и по недељи вредношћу `anchor`: `easter` или `christmas`). `GET /yearPlans/public` на LessonsApi-ју анонимно служи активне планове и попуњава програм, студију и место сваке недеље из стабла лекција. Функција B1Admin-а **Serving → Plans → Schedule Lesson → Apply Year Plan** користи ту крајњу тачку и уписује по један DoingApi план за сваку укључену недељу (`providerId=lessonschurch`, `providerPlanId=/lessons/{programId}/{studyId}/{lessonId}/{venueId}`). Планови са `startMonth` разрешавају везане недеље према изабраној години (Ускрс по грегоријанском рачуну, Божић као недеља на или пре 25. децембра) и попуњавају периоде између њих. Планови без `startMonth` и даље мапирају недељу N на `startDate + (N−1)×7` дана. Недеље из спољних OLF провајдера или са непотпуном путањом се прескачу у време примене. Цркве уређују настале планове као и све остале, а FreePlay пушта све што је на плану.
 
@@ -122,12 +123,12 @@ OAuth токен за приступ има потпуно исти облик �
 
 | Површина | Механизам ауторизације | Смер | Где је имплементирано | Референца |
 |---|---|---|---|---|
-| REST API | `Bearer` JWT или кључ `cak_…` | Улазни | `Api/src/modules/*` | [API кључеви](../api/api-keys) |
-| API кључеви | `cak_` токен хеширан SHA-256 | Акредитив | `Api/.../membership/controllers/ApiKeyController.ts` | [API кључеви](../api/api-keys) |
-| OAuth 2.0 / Повезане апликације | Код за ауторизацију (PKCE) · device · refresh → JWT; динамичка регистрација клијента | Улазни | `Api/.../membership/controllers/OAuthController.ts` | [Повезане апликације](../api/connected-apps) |
-| Webhook-ови | Тајна за сваки webhook, потпис HMAC-SHA256 | Одлазни | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhook-ови](../api/webhooks) |
-| MCP сервер | `Bearer` JWT, OAuth JWT (откривен преко `/.well-known`) или кључ `cak_…` | Улазни (AI) | `Api/src/modules/mcp/` | [MCP сервер](../api/mcp) |
-| Провајдери садржаја | По провајдеру: нема / OAuth PKCE / device / форма | Улазни садржај | `Packages/content-providers/` | [Провајдер садржаја](../freeplay-content-provider) |
+| REST API | `Bearer` JWT или кључ `cak_…` | Улазни | `Api/src/modules/*` | [API кључеви](../api/api-keys.md) |
+| API кључеви | `cak_` токен хеширан SHA-256 | Акредитив | `Api/.../membership/controllers/ApiKeyController.ts` | [API кључеви](../api/api-keys.md) |
+| OAuth 2.0 / Повезане апликације | Код за ауторизацију (PKCE) · device · refresh → JWT; динамичка регистрација клијента | Улазни | `Api/.../membership/controllers/OAuthController.ts` | [Повезане апликације](../api/connected-apps.md) |
+| Webhook-ови | Тајна за сваки webhook, потпис HMAC-SHA256 | Одлазни | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhook-ови](../api/webhooks.md) |
+| MCP сервер | `Bearer` JWT, OAuth JWT (откривен преко `/.well-known`) или кључ `cak_…` | Улазни (AI) | `Api/src/modules/mcp/` | [MCP сервер](../api/mcp.md) |
+| Провајдери садржаја | По провајдеру: нема / OAuth PKCE / device / форма | Улазни садржај | `Packages/content-providers/` | [Провајдер садржаја](../freeplay-content-provider.md) |
 
 ## Готови конектори
 
@@ -143,9 +144,9 @@ OAuth токен за приступ има потпуно исти облик �
 
 ## Повезане странице
 
-- [API кључеви](../api/api-keys) — најједноставнији акредитив и каталог опсега
-- [Повезане апликације и OAuth](../api/connected-apps) — токови сагласности за више закупаца
-- [Webhook-ови](../api/webhooks) — систем одлазних догађаја
-- [MCP сервер](../api/mcp) — AI омотач за интеграцију
-- [FreePlay провајдер садржаја](../freeplay-content-provider) — постајање улазним извором садржаја
+- [API кључеви](../api/api-keys.md) — најједноставнији акредитив и каталог опсега
+- [Повезане апликације и OAuth](../api/connected-apps.md) — токови сагласности за више закупаца
+- [Webhook-ови](../api/webhooks.md) — систем одлазних догађаја
+- [MCP сервер](../api/mcp.md) — AI омотач за интеграцију
+- [FreePlay провајдер садржаја](../freeplay-content-provider.md) — постајање улазним извором садржаја
 - [Интеграције (за крајње кориснике)](/docs/b1-admin/integrations/) — водичи за подешавање готових конектора

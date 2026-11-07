@@ -1,5 +1,6 @@
 ---
 title: "Správa stránek"
+description: "Vytvářejte, upravujte a organizujte stránky a navigaci v zobrazení Pages v B1 Admin, včetně nastavení stránek, přesměrování a šablon webu."
 ---
 
 # Správa stránek
@@ -13,13 +14,13 @@ Zobrazení Stránky webu je vaším centrálním místem pro vytváření, úpra
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Dokončete [počáteční nastavení](initial-setup), ve kterém nakonfigurujete svou doménu a základní nastavení webu
-- Připravte si obsah a obrázky. Nejprve nahrajte mediální soubory pomocí správce [souborů](files).
+- Dokončete [počáteční nastavení](./initial-setup.md), ve kterém nakonfigurujete svou doménu a základní nastavení webu
+- Připravte si obsah a obrázky. Nejprve nahrajte mediální soubory pomocí správce [souborů](./files.md).
 
 </div>
 
 :::info
-Pokud má váš sbor více webů (například samostatné weby pro jednotlivé pobočky), použijte přepínač webů v horní části zobrazení Stránky webu a přecházejte mezi nimi. Každý web má vlastní stránky, navigaci a nastavení [vzhledu](appearance).
+Pokud má váš sbor více webů (například samostatné weby pro jednotlivé pobočky), použijte přepínač webů v horní části zobrazení Stránky webu a přecházejte mezi nimi. Každý web má vlastní stránky, navigaci a nastavení [vzhledu](./appearance.md).
 :::
 
 ## Typy stránek
@@ -35,7 +36,7 @@ Kteroukoli automaticky generovanou stránku můžete převést na vlastní strá
 
 1. Klikněte na tlačítko **Přidat stránku** vpravo nahoře v zobrazení Stránky webu.
 2. Vyberte typ stránky (prázdná stránka nebo šablona) a zadejte její název.
-3. Klikněte na **Upravit obsah** vedle libovolné stránky a otevřete [editor stránek](page-editor), kde můžete přidávat sekce, text, obrázky a další prvky.
+3. Klikněte na **Upravit obsah** vedle libovolné stránky a otevřete [editor stránek](./page-editor.md), kde můžete přidávat sekce, text, obrázky a další prvky.
 4. Klikněte na **Nastavení stránky** vedle stránky a upravte její název, cestu v URL a další metadata.
 5. Klikněte na cestu stránky ve sloupci **Cesta** a otevřete živou stránku v nové záložce. Uvidíte přesně, jak bude vypadat pro návštěvníky.
 
@@ -112,10 +113,10 @@ Pokud budujete web od začátku, můžete jej vytvořit pomocí **šablony webu*
 3. Až najdete šablonu, která se vám líbí, klikněte na **Použít šablonu**.
 4. Stránky, které dosud neexistují, se vytvoří a přidají do navigace. Existující stránky zůstanou beze změny.
 
-Po použití šablony otevřete každou stránku v [editoru stránek](page-editor) a nahraďte zástupný text a obrázky skutečným obsahem vašeho sboru.
+Po použití šablony otevřete každou stránku v [editoru stránek](./page-editor.md) a nahraďte zástupný text a obrázky skutečným obsahem vašeho sboru.
 
 :::info
-Šablony webu vytvářejí strukturu stránek a navigaci. Barevné schéma a písma webu nepřepisují -- ty řídí [Vzhled](appearance).
+Šablony webu vytvářejí strukturu stránek a navigaci. Barevné schéma a písma webu nepřepisují -- ty řídí [Vzhled](./appearance.md).
 :::
 
 ## Zvětšení obrázku (lightbox)
@@ -124,7 +125,7 @@ Když návštěvníci kliknou na obrázek na vašem webu, otevře se na celou ob
 
 ## Další kroky
 
-- [Počáteční nastavení](initial-setup) -- Pokyny pro první nastavení
-- [Používání editoru stránek](page-editor) -- Naučte se vytvářet a stylizovat obsah stránek
-- [Vzhled](appearance) -- Přizpůsobte vizuální motiv svého webu
-- [Soubory](files) -- Nahrávejte a spravujte mediální soubory pro své stránky
+- [Počáteční nastavení](./initial-setup.md) -- Pokyny pro první nastavení
+- [Používání editoru stránek](./page-editor.md) -- Naučte se vytvářet a stylizovat obsah stránek
+- [Vzhled](./appearance.md) -- Přizpůsobte vizuální motiv svého webu
+- [Soubory](./files.md) -- Nahrávejte a spravujte mediální soubory pro své stránky

@@ -1,5 +1,6 @@
 ---
 title: "Panduan: Mulai Gereja Anda dengan B1"
+description: "Panduan menyiapkan gereja baru di B1 Admin: buat akun, atur pengaturan, tambahkan peran, impor anggota, dan jalankan fitur inti."
 ---
 
 # Mulai Gereja Anda dengan B1

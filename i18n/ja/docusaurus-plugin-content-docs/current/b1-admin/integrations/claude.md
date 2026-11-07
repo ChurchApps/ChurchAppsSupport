@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "B1 Admin を Claude に接続し、出席、献金、グループについて平易な言葉で質問できるようにします。サインインのオプションと、権限を制限した API キーのオプションがあります。"
 ---
 
 # Claude
@@ -199,4 +200,4 @@ B1 API は、単一の MCP エンドポイント `/mcp` を公開しています
 
 - [API Keys](/docs/developer/api/api-keys) — スコープの完全なリファレンス
 - [MCP Server (developer reference)](/docs/developer/api/mcp) — プロトコルの詳細とツールのスキーマ
-- [ChatGPT](./chatgpt) — 同じ考え方で、OpenAI のモデルを使う方法
+- [ChatGPT](./chatgpt.md) — 同じ考え方で、OpenAI のモデルを使う方法

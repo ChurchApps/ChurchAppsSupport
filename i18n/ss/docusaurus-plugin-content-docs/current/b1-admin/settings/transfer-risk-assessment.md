@@ -1,5 +1,6 @@
 ---
 title: "Kuhlolwa Kwebungoti Bekutfutfusa Kwemininingwane"
+description: "Irekhodi lekuhambisana kwe-ChurchApps lekudluliseleni kwedatha yesonto kusuka e-UK/EEA kuya e-US ku-B1 Admin, lihlanganisa tindlela tekuvikela, tabahlinzeki labangaphansi, nekulawula kufinyelela."
 ---
 
 # Kuhlolwa Kwebungoti Bekutfutfusa Kwemininingwane

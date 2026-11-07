@@ -1,5 +1,7 @@
 ---
-title: "Per iniziare"
+title: "Guida introduttiva all'app FreePlay TV"
+sidebar_label: "Per iniziare"
+description: "Configurare FreePlay su Android TV, Fire TV o Apple TV: installare l'app, aprirla la prima volta e conoscere telecomando e barra laterale."
 ---
 
 # Per iniziare con FreePlay
@@ -42,7 +44,7 @@ FreePlay funziona su Fire TV (inclusi i nuovi stick con Vega OS), Android TV e G
 
 Quando apri FreePlay per la prima volta, vedrai una schermata di avvio animata con il logo di FreePlay. L'app controlla eventuali fornitori di contenuti già collegati. Se ne hai già collegato uno, ti porta direttamente al browser dei contenuti di quel fornitore. Altrimenti apre la schermata **Fornitori di contenuti**, dove puoi collegare la tua prima fonte di contenuti.
 
-Se la TV è abbinata a un calendario nella [Modalità programmata](../scheduled-mode/), FreePlay salta tutto questo e apre direttamente il lettore programmato.
+Se la TV è abbinata a un calendario nella [Modalità programmata](../scheduled-mode/index.md), FreePlay salta tutto questo e apre direttamente il lettore programmato.
 
 ## Navigare con il telecomando TV
 
@@ -62,13 +64,13 @@ La barra laterale si riduce a una striscia stretta di icone mentre sfogli i cont
 
 La barra laterale elenca, dall'alto in basso:
 
-- **Piano di oggi** -- Mostrato quando la TV è abbinata a un piano. Vedi [Modalità piano](../plan-mode/)
-- **Annunci** -- Mostrati dopo aver scelto una cartella degli annunci. Vedi [Annunci](../content-providers/announcements)
-- **Sfoglia** -- Ogni fornitore di contenuti collegato che puoi sfogliare. Vedi [Sfogliare e scaricare i contenuti](../content-providers/browsing-content)
-- **Impostazioni** -- In fondo alla barra laterale. Apre **Abbina a un calendario** (abbina questa TV a un calendario o a un piano -- vedi [Scegliere una modalità di abbinamento](./pairing-modes)), **Download** (riproduci o elimina i contenuti salvati su questo dispositivo) e **Fornitori** (collega i fornitori di contenuti e scegli la cartella degli annunci)
+- **Piano di oggi** -- Mostrato quando la TV è abbinata a un piano. Vedi [Modalità piano](../plan-mode/index.md)
+- **Annunci** -- Mostrati dopo aver scelto una cartella degli annunci. Vedi [Annunci](../content-providers/announcements.md)
+- **Sfoglia** -- Ogni fornitore di contenuti collegato che puoi sfogliare. Vedi [Sfogliare e scaricare i contenuti](../content-providers/browsing-content.md)
+- **Impostazioni** -- In fondo alla barra laterale. Apre **Abbina a un calendario** (abbina questa TV a un calendario o a un piano -- vedi [Scegliere una modalità di abbinamento](./pairing-modes.md)), **Download** (riproduci o elimina i contenuti salvati su questo dispositivo) e **Fornitori** (collega i fornitori di contenuti e scegli la cartella degli annunci)
 
 ## Prossimi passi
 
-- **[Scegliere una modalità di abbinamento](./pairing-modes)** - Scopri i diversi modi per collegare la tua TV
-- **[Modalità programmata](../scheduled-mode/)** - Metti le tue TV su un calendario con FreePlay Admin
-- **[Fornitori di contenuti](../content-providers/)** - Collegati a Lessons.church, Bible Project e altri ancora
+- **[Scegliere una modalità di abbinamento](./pairing-modes.md)** - Scopri i diversi modi per collegare la tua TV
+- **[Modalità programmata](../scheduled-mode/index.md)** - Metti le tue TV su un calendario con FreePlay Admin
+- **[Fornitori di contenuti](../content-providers/index.md)** - Collegati a Lessons.church, Bible Project e altri ancora

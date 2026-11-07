@@ -1,5 +1,7 @@
 ---
-title: "Grup"
+title: "Layar Grup di B1 Mobile"
+sidebar_label: "Grup"
+description: "Temukan grup yang Anda ikuti di layar Grup B1 Mobile, termasuk grup yang paling sering Anda kunjungi di atas dan grup lain gereja Anda di bawah."
 ---
 
 # Grup
@@ -30,10 +32,10 @@ Berikut yang dapat Anda lakukan dari layar Grup:
 - **Tetap terhubung** -- Lihat apa yang dibagikan anggota grup Anda, ikuti percakapan, dan berinteraksi dengan konten grup.
 
 :::tip
-Layar Grup menyesuaikan diri dengan cara Anda menggunakannya, sama seperti [dasbor](../dashboard/). Grup yang paling sering Anda kunjungi akan ditampilkan di bagian atas untuk akses cepat.
+Layar Grup menyesuaikan diri dengan cara Anda menggunakannya, sama seperti [dasbor](../dashboard/index.md). Grup yang paling sering Anda kunjungi akan ditampilkan di bagian atas untuk akses cepat.
 :::
 
 ## Langkah Selanjutnya
 
-- [Detail Grup](./group-details) -- Lihat apa yang ada di halaman detail grup
-- [Linimasa Grup](./group-timeline) -- Pelajari tentang feed aktivitas terpadu di seluruh grup Anda
+- [Detail Grup](./group-details.md) -- Lihat apa yang ada di halaman detail grup
+- [Linimasa Grup](./group-timeline.md) -- Pelajari tentang feed aktivitas terpadu di seluruh grup Anda

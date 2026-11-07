@@ -1,5 +1,6 @@
 ---
 title: "Danh sách đã lưu"
+description: "Lưu tìm kiếm Người trong B1 Admin thành danh sách có tên, rồi tải lại chỉ với một cú nhấp. Danh sách luôn cập nhật, thành viên mới phù hợp tự động xuất hiện."
 ---
 
 # Danh sách đã lưu

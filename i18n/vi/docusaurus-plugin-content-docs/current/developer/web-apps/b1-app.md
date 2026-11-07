@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "Thiết lập ứng dụng web thành viên B1App cục bộ với Next.js 22+, cấu hình endpoint API trong .env và chạy máy chủ phát triển ở cổng 3301."
 ---
 
 # B1App
@@ -13,8 +14,8 @@ B1App là ứng dụng dành cho thành viên hội thánh, được xây dựng
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Cài đặt **Node.js 22+** và **Git** -- xem [Điều kiện tiên quyết](../setup/prerequisites)
-- Cấu hình đích API (bản demo hoặc cục bộ) -- xem [Biến môi trường](../setup/environment-variables)
+- Cài đặt **Node.js 22+** và **Git** -- xem [Điều kiện tiên quyết](../setup/prerequisites.md)
+- Cấu hình đích API (bản demo hoặc cục bộ) -- xem [Biến môi trường](../setup/environment-variables.md)
 
 </div>
 
@@ -89,5 +90,5 @@ Các bản build production được triển khai lên **S3 + CloudFront**:
 3. Việc vô hiệu hóa CloudFront được kích hoạt để phục vụ phiên bản mới
 
 :::tip
-Để xem hướng dẫn triển khai chi tiết, hãy xem hướng dẫn [Triển khai ứng dụng web](../deployment/web-apps).
+Để xem hướng dẫn triển khai chi tiết, hãy xem hướng dẫn [Triển khai ứng dụng web](../deployment/web-apps.md).
 :::

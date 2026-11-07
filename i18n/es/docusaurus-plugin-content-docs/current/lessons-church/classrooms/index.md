@@ -1,5 +1,6 @@
 ---
 title: "Aulas"
+description: "Configura y administra las aulas del calendario de enseñanza de tu iglesia en Lessons.church, desde salas y grupos de edad hasta vistas para voluntarios."
 ---
 
 # Aulas

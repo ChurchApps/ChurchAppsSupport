@@ -1,5 +1,6 @@
 ---
 title: "Saved Lists"
+description: "I-save ang paghahanap sa People sa B1 Admin bilang pinangalanang listahan at i-load ito sa isang click. Awtomatikong lumalabas ang bagong tugmang miyembro."
 ---
 
 # Saved Lists

@@ -1,5 +1,6 @@
 ---
 title: "Gasten toevoegen"
+description: "Voeg een bezoekend kind, familielid of vriend toe aan een huishouden bij de B1 Checkin-kiosk, wijs groepen toe en rond het inchecken af."
 ---
 
 # Gasten toevoegen
@@ -13,8 +14,8 @@ Als iemand uw familie bezoekt en zich met uw huishouden wil aanmelden, kunt u he
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- [Zoek uw familie op](./looking-up-members) en selecteer een lid uit de zoekresultaten
-- Bevind u zich op het [scherm voor huishoudhoofddeling](./household-review) waar u uw gezinsleden kunt zien
+- [Zoek uw familie op](./looking-up-members.md) en selecteer een lid uit de zoekresultaten
+- Bevind u zich op het [scherm voor huishoudhoofddeling](./household-review.md) waar u uw gezinsleden kunt zien
 
 </div>
 
@@ -36,8 +37,8 @@ Als de naam van de gast overeenkomt met iemand die al in het systeem staat maar 
 
 Zodra de gast in uw huishoudlijst verschijnt, kunt u:
 
-- **Hun kaart uitvouwen** en [hen aan een groep toewijzen](./group-assignment), net als elk ander gezinslid.
-- **[Aanmelden](./completing-checkin)** het gehele huishouden inclusief de gast.
+- **Hun kaart uitvouwen** en [hen aan een groep toewijzen](./group-assignment.md), net als elk ander gezinslid.
+- **[Aanmelden](./completing-checkin.md)** het gehele huishouden inclusief de gast.
 
 ## Annuleren
 
@@ -49,4 +50,4 @@ Het toevoegen van een gast bij de kiosk maakt een persoonrecord in de database v
 
 ## Volgende stap
 
-Na het toevoegen van gasten en [groepen toewijzen](./group-assignment) indien nodig, bent u klaar om [aanmelden af te ronden](./completing-checkin).
+Na het toevoegen van gasten en [groepen toewijzen](./group-assignment.md) indien nodig, bent u klaar om [aanmelden af te ronden](./completing-checkin.md).

@@ -1,5 +1,6 @@
 ---
 title: "Plany nabożeństw"
+description: "Planuj wolontariuszy w B1 Admin: twórz plany według dat, kopiuj je z wcześniejszych tygodni, przypisuj zespół do stanowisk i ustawiaj terminy zapisów oraz przypomnienia."
 ---
 
 # Plany nabożeństw

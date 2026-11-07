@@ -1,5 +1,7 @@
 ---
-title: "Plannen Bekijken"
+title: "Je dienstplannen in het ledenportaal van B1.church"
+sidebar_label: "Plannen Bekijken"
+description: "Bekijk je dienstplantoewijzingen in B1.church, accepteer of weiger verzoeken, stel blokkeerdata in en bekijk je eerdere diensten."
 ---
 
 # Plannen Bekijken

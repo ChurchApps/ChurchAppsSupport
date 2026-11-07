@@ -1,5 +1,6 @@
 ---
 title: "Raporlar"
+description: "Bulunduğunuz bölüme göre B1 Admin'deki doğum günleri, katılım eğilimleri, bağış toplamları ve denetim günlüğü için yerleşik raporları bulun ve çalıştırın."
 ---
 
 # Raporlar
@@ -17,16 +18,16 @@ B1 Admin, kongregasyonunuz, yoklama ve bağışlarla ilgili verileri çekmek iç
 ## Raporlara Nerede Ulaşılır
 
 ### Kişiler
-- **[Doğum Günü ve Yıldönümü Listeleri](./birthday-report)** -- Yaklaşan doğum günlerinin veya yıldönümlerinin listesini almak için **Kişiler → Gelişmiş Arama** bölümünde Doğum Ayı veya Yıldönümü Ayı'na göre filtreleyin.
+- **[Doğum Günü ve Yıldönümü Listeleri](./birthday-report.md)** -- Yaklaşan doğum günlerinin veya yıldönümlerinin listesini almak için **Kişiler → Gelişmiş Arama** bölümünde Doğum Ayı veya Yıldönümü Ayı'na göre filtreleyin.
 
 ### Yoklama
-- **[Yoklama Raporları](./attendance-reports)** -- Yoklama eğilimleri ve grup yoklama verileri **Yoklama** bölümünde bulunur.
+- **[Yoklama Raporları](./attendance-reports.md)** -- Yoklama eğilimleri ve grup yoklama verileri **Yoklama** bölümünde bulunur.
 
 ### Bağışlar
-- **[Bağış Özeti](./donation-summary)** -- Bağış toplamları ve fon dökümleri **Bağışlar** bölümünde bulunur.
+- **[Bağış Özeti](./donation-summary.md)** -- Bağış toplamları ve fon dökümleri **Bağışlar** bölümünde bulunur.
 
 ### Ayarlar
-- **[Denetim Günlüğü](./audit-log)** -- Kilise yönetim sisteminizdeki tüm değişiklikleri ve işlemleri takip edin (**Ayarlar → Denetim Günlüğü** altında bulunur).
+- **[Denetim Günlüğü](./audit-log.md)** -- Kilise yönetim sisteminizdeki tüm değişiklikleri ve işlemleri takip edin (**Ayarlar → Denetim Günlüğü** altında bulunur).
 
 :::info
 Rapor verileri tutarlı veri girişine bağlıdır. En doğru sonuçlar için ekibinizin [yoklamayı takip ettiğinden](../attendance/tracking-attendance.md), [bağışları kaydettiğinden](../donations/recording-donations.md) ve [kişi kayıtlarını](../people/adding-people.md) güncel tuttuğundan emin olun.

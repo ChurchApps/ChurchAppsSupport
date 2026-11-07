@@ -1,5 +1,6 @@
 ---
 title: "モジュール構成"
+description: "API のモジュール構成を説明します。コントローラー、リポジトリ、ゲートウェイ、認可チェックに加え、B1 の開発環境でコードを実行する 6 つの Lambda 関数も扱います。"
 ---
 
 # モジュール構成
@@ -13,8 +14,8 @@ title: "モジュール構成"
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- API をローカルでセットアップします -- [ローカル API セットアップ](./local-setup) を参照してください
-- [データベース](./database) のアーキテクチャを確認し、データアクセス層の仕組みを理解してください
+- API をローカルでセットアップします -- [ローカル API セットアップ](./local-setup.md) を参照してください
+- [データベース](./database.md) のアーキテクチャを確認し、データアクセス層の仕組みを理解してください
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## モジュール間の通信
 
-各モジュールは独自のデータベースを所有しており（[データベース](./database) を参照）、あるモジュールが別のモジュールのテーブルに直接クエリを発行することはありません。あるモジュールが別のモジュールの所有するデータを必要とする場合（例: doing モジュールが membership の人物情報を解決する場合）、所有モジュールの **ゲートウェイ** を `src/shared/modules/` 経由で利用します。
+各モジュールは独自のデータベースを所有しており（[データベース](./database.md) を参照）、あるモジュールが別のモジュールのテーブルに直接クエリを発行することはありません。あるモジュールが別のモジュールの所有するデータを必要とする場合（例: doing モジュールが membership の人物情報を解決する場合）、所有モジュールの **ゲートウェイ** を `src/shared/modules/` 経由で利用します。
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ AWS にデプロイされると、API は 6 つの Lambda 関数として動作�
 
 ## 関連記事
 
-- **[データベース](./database)** -- 接続文字列、スキーマスクリプト、データアクセスのパターン
-- **[ローカル API セットアップ](./local-setup)** -- セットアップの手順を順番に説明したガイド全体
-- **[ApiHelper](../shared-libraries/api-helper)** -- `CustomBaseController` と認証ミドルウェアを提供する共有ライブラリ
+- **[データベース](./database.md)** -- 接続文字列、スキーマスクリプト、データアクセスのパターン
+- **[ローカル API セットアップ](./local-setup.md)** -- セットアップの手順を順番に説明したガイド全体
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- `CustomBaseController` と認証ミドルウェアを提供する共有ライブラリ

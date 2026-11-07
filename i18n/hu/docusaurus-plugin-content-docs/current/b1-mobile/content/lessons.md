@@ -1,5 +1,7 @@
 ---
-title: "Lessons (elavult)"
+title: "Leckék képernyő a B1 Mobile alkalmazásban (megszűnt)"
+sidebar_label: "Lessons (elavult)"
+description: "Leckék (elavult) oldal: miért vonták ki a B1 Mobile alkalmazás leckéi képernyőt, és hol találod most a tananyagot (FreePlay vagy Lessons.church)."
 ---
 
 # Lessons (elavult)
@@ -19,7 +21,7 @@ A Lessons képernyő hozzáférést biztosított gyülekezete tanterveihez és t
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- [Telepítse a B1 Mobile alkalmazást](../getting-started/installing), majd [jelentkezzen be](../getting-started/logging-in) fiókjába
+- [Telepítse a B1 Mobile alkalmazást](../getting-started/installing.md), majd [jelentkezzen be](../getting-started/logging-in.md) fiókjába
 - A gyülekezetének Lessons.church-on keresztül kell tantervet beállítania
 
 </div>
@@ -54,5 +56,5 @@ A Lessons képernyő akkor jelenik meg, ha a gyülekezete beállított tantervet
 
 - [FreePlay áttekintés](/docs/freeplay/) -- A leckelejátszáshoz használt, felváltó TV-alkalmazás
 - [Lessons.church](/docs/lessons-church/) -- Tantervi tartalmak közvetlen böngészése és kezelése
-- [Biblia](./bible) -- Olvassa a Szentírást a leckéi mellett
-- [Igehirdetések](./sermons) -- Nézze meg a tanulmányait kiegészítő igehirdetéseket
+- [Biblia](./bible.md) -- Olvassa a Szentírást a leckéi mellett
+- [Igehirdetések](./sermons.md) -- Nézze meg a tanulmányait kiegészítő igehirdetéseket

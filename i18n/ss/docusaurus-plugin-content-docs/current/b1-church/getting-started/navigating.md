@@ -1,5 +1,6 @@
 ---
 title: "Kuhamba nge-B1App"
+description: "Hamba ku-portal yelilungu le-B1.church ku-foni noma kukhompyutha: ideshibhodi yeKhaya, ibha yetigaba lengezansi, ikhasi le-More netikhasi le-Me."
 ---
 
 # Kuhamba nge-B1App
@@ -22,13 +23,13 @@ Iphothali yemalungu ku-B1.church isebentisa luhlaka lwekuhamba lwebha lelisemace
 Nawungena eliphothalini yemalungu, utawubona bha lelimile lelisemaceleni lesenshoni yesikhrini. Lebha ine-tabs tengcenye ngayinye yeliphothali:
 
 - **I-Timeline** -- I-feed yakho lekhethekile yetibiko netinkulumo letisuka emacenjini akho nasebandleni. Lena yitabs levele ilayishwa nawuvula iphothali yemalungu.
-- **Me** -- I-dashbhodi yakho yemuntfu ngamunye yetabelo tekukhonta letitako, kubhaliswa, imicimbi yemacembu, kanye netatiso takho letisha kakhulu. Bona [Likhasi Lami](./me-page).
-- **Emacembu** -- Bona futsi uhlangane [nemacembu](../groups/) lawulunga kuwo.
+- **Me** -- I-dashbhodi yakho yemuntfu ngamunye yetabelo tekukhonta letitako, kubhaliswa, imicimbi yemacembu, kanye netatiso takho letisha kakhulu. Bona [Likhasi Lami](./me-page.md).
+- **Emacembu** -- Bona futsi uhlangane [nemacembu](../groups/index.md) lawulunga kuwo.
 - **Umphakatsi** -- Cwaninga [luhlu lwemalungu](../community/member-directory.md) lelibandla.
-- **Tinhlelo** -- Bona [tinhlelo temsebenti](../plans/) letitako kanye netikhundla takho tebuvolontiya lotinikiwe.
-- **Kubhalisa Ekufikeni** -- [Bhalisa Ekufikeni](../checkin/) wena nemndeni wakho emitini netimicimbini.
+- **Tinhlelo** -- Bona [tinhlelo temsebenti](../plans/index.md) letitako kanye netikhundla takho tebuvolontiya lotinikiwe.
+- **Kubhalisa Ekufikeni** -- [Bhalisa Ekufikeni](../checkin/index.md) wena nemndeni wakho emitini netimicimbini.
 - **Tifundvo** *(seyiyekiwe)* -- I-tab yeTifundvo ngekhatsi kweliphothali seyifakwe endzaweni [ye-FreePlay](/docs/freeplay/) yekudlala kwendzawo yekufundzisa. Cwaninga inhlelo yekufundza ngco ku-[Lessons.church](https://lessons.church) nome bona [likhasi lekubhekiswa kwetifundvo](../content/lessons.md) kutfola imininingwane.
-- **Kunikela** -- Yenta [imnikelo](../giving/) nge-inthanethi futsi ubone umlandvo wakho wekunikela.
+- **Kunikela** -- Yenta [imnikelo](../giving/index.md) nge-inthanethi futsi ubone umlandvo wakho wekunikela.
 
 Chofoza noma ngutiphi i-tab kuze ushintjele kuloyo ngcenye. I-tab lesebentako iyakhonjiswa ngekukhanya kuze uhlale wati kutsi ukuphi.
 

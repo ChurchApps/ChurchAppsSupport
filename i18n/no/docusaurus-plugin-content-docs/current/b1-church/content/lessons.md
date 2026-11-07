@@ -1,5 +1,7 @@
 ---
-title: "Leksjoner (utfasa)"
+title: "Avviklet Lessons-fane i B1.church"
+sidebar_label: "Leksjoner (utfasa)"
+description: "Lessons-fanen i B1.church er avviklet. Finn der leksjonsplanene nå ligger: bla på Lessons.church og spill dem av på TV-er i klasserommet med FreePlay."
 ---
 
 # Leksjoner (utfasa)
@@ -9,7 +11,7 @@ Den innebygde fanen **Leksjoner** på B1.church er utfasa. Avspilling av lærepl
 
 For å bla i, planlegge eller redigere læreplaner direkte logger du inn på [Lessons.church](https://lessons.church) i nettleseren. For å spille av leksjoner på en TV i klasserommet installerer du [FreePlay](/docs/freeplay/getting-started/) på TV-enheten din.
 
-Foresatte i grupper som er knyttet til en leksjonsplantype i B1Admin, ser **ukas leksjon** på siden for [gruppedetaljer](/docs/b1-church/groups/group-details.md) — ikke i denne utfasa fanen.
+Foresatte i grupper som er knyttet til en leksjonsplantype i B1Admin, ser **ukas leksjon** på siden for [gruppedetaljer](../groups/group-details.md) — ikke i denne utfasa fanen.
 :::
 
 <div class="article-intro">

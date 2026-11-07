@@ -1,5 +1,6 @@
 ---
 title: "API-kulcsok"
+description: "Hozz létre, határozz meg hatókört, és vonj vissza B1 API-kulcsokat a B1 Admin felületén szerveri szkriptekhez és a Zapier, Make vagy Google Sheets összekötőkhöz, teljes OAuth-folyamat nélkül."
 ---
 
 # API-kulcsok
@@ -104,7 +105,7 @@ A visszavont kulcs azonnal érvényét veszíti, nincs türelmi idő.
 
 ## Az OAuth-tól való különbség
 
-Az API-kulcsok akkor megfelelőek, ha **az Ön gyülekezete az egyetlen, amely használja az integrációt**. Olyan összekötőhöz, amely több gyülekezet eléréséhez kér kifejezett, gyülekezetenkénti hozzájárulást, például a B1-közösségben megosztott SaaS-alkalmazáshoz, inkább a [OAuth és csatlakoztatott alkalmazások](./connected-apps) oldalt használja.
+Az API-kulcsok akkor megfelelőek, ha **az Ön gyülekezete az egyetlen, amely használja az integrációt**. Olyan összekötőhöz, amely több gyülekezet eléréséhez kér kifejezett, gyülekezetenkénti hozzájárulást, például a B1-közösségben megosztott SaaS-alkalmazáshoz, inkább a [OAuth és csatlakoztatott alkalmazások](./connected-apps.md) oldalt használja.
 
 | | API-kulcs | OAuth |
 |---|---|---|

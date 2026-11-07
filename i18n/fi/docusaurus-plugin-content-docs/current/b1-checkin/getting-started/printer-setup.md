@@ -1,5 +1,6 @@
 ---
 title: "Tulostimen asetukset"
+description: "Määritä verkkotarratulostin B1 Checkin-kioskeille: löydä se Wi-Fi-verkostasi, valitse se, tulosta testisivu ja tallenna valinta."
 ---
 
 # Tulostimen asetukset
@@ -13,7 +14,7 @@ B1 Church Checkin voi tulostaa nimitarroja ja vanhempien noutolappuja verkkoon l
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Kirjaudu sisään](./logging-in) B1 Church Checkin -sovellukseen ja valitse seurakuntasi
+- [Kirjaudu sisään](./logging-in.md) B1 Church Checkin -sovellukseen ja valitse seurakuntasi
 - Yhdistä yhteensopiva verkkotarrakirjoitin samaan Wi-Fi-verkkoon kuin tabletti
 
 </div>
@@ -87,4 +88,4 @@ Jos siirrät kioskin toiseen paikkaan tai muutat verkkoasetuksia, palaa tulostin
 
 ## Seuraavat vaiheet
 
-Kun tulostin on määritetty, voit aloittaa sisäänkirjautumisen. Katso [sisäänkirjautumisprosessin kulku](../check-in/), jotta ymmärrät koko prosessin, ja aloita [palvelun valitsemisesta](../check-in/selecting-service).
+Kun tulostin on määritetty, voit aloittaa sisäänkirjautumisen. Katso [sisäänkirjautumisprosessin kulku](../check-in/index.md), jotta ymmärrät koko prosessin, ja aloita [palvelun valitsemisesta](../check-in/selecting-service.md).

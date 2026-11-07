@@ -1,5 +1,6 @@
 ---
 title: "Créer des formulaires"
+description: "Créez des formulaires personnalisés dans B1 Admin pour les inscriptions aux événements, les sondages et les cartes de visiteurs, puis partagez-les par lien, code QR ou impression."
 ---
 
 # Créer des formulaires

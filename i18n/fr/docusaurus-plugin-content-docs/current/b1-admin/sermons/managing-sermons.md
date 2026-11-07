@@ -1,5 +1,6 @@
 ---
 title: "Gestion des sermons"
+description: "Gérez la bibliothèque de prédications dans B1 Admin : ajoutez-les depuis YouTube, Vimeo ou Facebook, modifiez-les et obtenez un flux podcast."
 ---
 
 # Gestion des sermons
@@ -14,7 +15,7 @@ La page Sermons affiche votre bibliothèque complète de sermons. De là, vous p
 <h4>Avant de commencer</h4>
 
 - Vous avez besoin de la permission **contentApi.streamingServices.edit**. Consultez [Rôles & Autorisations](../settings/roles-permissions.md) si vous n'avez pas accès.
-- Créez au moins une [playlist](playlists) pour organiser vos sermons
+- Créez au moins une [playlist](./playlists.md) pour organiser vos sermons
 - Ayez vos identifiants vidéo ou vos URL prêts à partir de YouTube, Vimeo ou Facebook
 
 </div>
@@ -35,7 +36,7 @@ La page Sermons affiche votre bibliothèque complète de sermons. De là, vous p
 6. Apportez les modifications souhaitées et cliquez sur **Enregistrer**.
 
 :::tip
-Vous pouvez également ajouter une URL de diffusion en direct permanente en sélectionnant **Ajouter une URL de diffusion en direct permanente** dans le menu déroulant **Ajouter un sermon**. Cela crée une connexion persistante à la diffusion en direct de votre chaîne YouTube à l'aide de votre ID de chaîne. Consultez [Diffusion en direct](live-streaming) pour plus de détails.
+Vous pouvez également ajouter une URL de diffusion en direct permanente en sélectionnant **Ajouter une URL de diffusion en direct permanente** dans le menu déroulant **Ajouter un sermon**. Cela crée une connexion persistante à la diffusion en direct de votre chaîne YouTube à l'aide de votre ID de chaîne. Consultez [Diffusion en direct](./live-streaming.md) pour plus de détails.
 :::
 
 ## Modification d'un sermon
@@ -73,11 +74,11 @@ Après avoir ajouté un sermon, vous pouvez le planifier pour la diffusion sur v
 3. Le sermon sera diffusé à l'heure de service planifiée.
 
 :::info
-Pour importer plusieurs sermons à la fois au lieu de les ajouter un par un, utilisez l'outil [Importation en masse](bulk-import) pour extraire les vidéos directement de votre compte YouTube ou Vimeo.
+Pour importer plusieurs sermons à la fois au lieu de les ajouter un par un, utilisez l'outil [Importation en masse](./bulk-import.md) pour extraire les vidéos directement de votre compte YouTube ou Vimeo.
 :::
 
 ## Prochaines étapes
 
-- [Playlists](playlists) -- Organiser les sermons en séries
-- [Diffusion en direct](live-streaming) -- Configurer votre calendrier de diffusion
-- [Importation en masse](bulk-import) -- Importer plusieurs sermons à la fois
+- [Playlists](./playlists.md) -- Organiser les sermons en séries
+- [Diffusion en direct](./live-streaming.md) -- Configurer votre calendrier de diffusion
+- [Importation en masse](./bulk-import.md) -- Importer plusieurs sermons à la fois

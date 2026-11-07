@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "B1.church sitenizin üyelere sunduklarını öğrenin: üye portalı ve gruplardan bağış, etkinlik, hizmet ve check-in'e kadar."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ B1.church, kiliseniz için üyelere yönelik portaldır. Cemaatinizin hafta boyu
 
 ## Daha Fazla Bilgi
 
-- [Başlarken](./getting-started/) -- Hesabınızı oluşturun, oturum açın ve B1.church'te nasıl gezineceğinizi öğrenin.
-- [Gruplar](./groups/) -- Kilisenizin gruplarına katılın ve bu gruplarda yer alın.
-- [Bağış](./giving/) -- Bağış yapın ve bağışlarınızı yönetin.
-- [Etkinlikler](./events/) -- Yaklaşan kilise etkinliklerine göz atın ve kaydolun.
-- [Hizmet](./serving/) -- Planları görüntüleyin ve gönüllü pozisyonlarına kaydolun.
-- [Planlar](./plans/) -- Hizmet planlarını ve gönüllü pozisyonlarınızı görüntüleyin.
-- [Check-In](./checkin/) -- Ibadetler, etkinlikler ve misafir kaydı için check-in yapın.
-- [Topluluk Rehberi](./community/) -- Diğer üyeleri bulun ve onlarla bağlantı kurun.
-- [İçerik](./content/) -- Vaazlar, İncil, günlük ayet ve canlı yayın. (Ders oynatma [FreePlay](/docs/freeplay/)'e taşınmıştır.)
+- [Başlarken](./getting-started/index.md) -- Hesabınızı oluşturun, oturum açın ve B1.church'te nasıl gezineceğinizi öğrenin.
+- [Gruplar](./groups/index.md) -- Kilisenizin gruplarına katılın ve bu gruplarda yer alın.
+- [Bağış](./giving/index.md) -- Bağış yapın ve bağışlarınızı yönetin.
+- [Etkinlikler](./events/index.md) -- Yaklaşan kilise etkinliklerine göz atın ve kaydolun.
+- [Hizmet](./serving/index.md) -- Planları görüntüleyin ve gönüllü pozisyonlarına kaydolun.
+- [Planlar](./plans/index.md) -- Hizmet planlarını ve gönüllü pozisyonlarınızı görüntüleyin.
+- [Check-In](./checkin/index.md) -- Ibadetler, etkinlikler ve misafir kaydı için check-in yapın.
+- [Topluluk Rehberi](./community/index.md) -- Diğer üyeleri bulun ve onlarla bağlantı kurun.
+- [İçerik](./content/index.md) -- Vaazlar, İncil, günlük ayet ve canlı yayın. (Ders oynatma [FreePlay](/docs/freeplay/)'e taşınmıştır.)
 
 :::info
 B1.church kiliseler ve üyeler için tamamen ücretsizdir. Kilise yöneticiniz siteyi B1 Admin üzerinden kurar ve özelleştirir. Bir üye olarak, başlamak için yalnızca kilisenizin B1.church URL'sini ziyaret etmeniz yeterlidir.

@@ -1,5 +1,6 @@
 ---
 title: "Översikt över planer"
+description: "Få en översikt över volontärers uppdrag för många gudstjänstdatum i B1 Admin, upptäck obesatta positioner och fyll i eller maila ditt team från ett rutnät."
 ---
 
 # Översikt över planer

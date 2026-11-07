@@ -1,5 +1,6 @@
 ---
 title: "Gavesammendrag"
+description: "Kjør rapporten Donation Summary i B1 Admin for å se samlede gaver, antall unike givere og beløp per fond for den datoperioden du velger."
 ---
 
 # Gavesammendrag

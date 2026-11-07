@@ -1,5 +1,7 @@
 ---
-title: "Kirjautuminen"
+title: "Kirjautuminen B1 Mobileen"
+sidebar_label: "Kirjautuminen"
+description: "Kirjaudu B1 Mobile -sovellukseen ChurchApps-tililläsi, rekisteröi uusi tili tai palauta unohtunut salasana 6-numeroisella koodilla."
 ---
 
 # Kirjautuminen
@@ -13,7 +15,7 @@ B1 Mobile käyttää samaa ChurchApps-tiliä, jota käytät B1.churchissa ja mui
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](./installing) iOS- tai Android-laitteellesi
+- [Asenna B1 Mobile](./installing.md) iOS- tai Android-laitteellesi
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile käyttää samaa ChurchApps-tiliä, jota käytät B1.churchissa ja mui
 3. Anna **sähköpostiosoitteesi** ja **salasanasi**.
 4. Napauta **Kirjaudu sisään**.
 
-Kirjauduttuasi sisään sinut ohjataan [kojelaudalle](../dashboard/). Jos et ole vielä valinnut seurakuntaa, sinua pyydetään hakemaan ja valitsemaan se.
+Kirjauduttuasi sisään sinut ohjataan [kojelaudalle](../dashboard/index.md). Jos et ole vielä valinnut seurakuntaa, sinua pyydetään hakemaan ja valitsemaan se.
 
 ## Uuden tilin luominen
 

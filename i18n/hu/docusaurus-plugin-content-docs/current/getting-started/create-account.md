@@ -1,5 +1,6 @@
 ---
 title: "Fiók létrehozása"
+description: "ChurchApps-fiók regisztrálása a B1.church oldalon, e-mail-cím megerősítése, egyház létrehozása vagy csatlakozás, hogy elkezdhesse a B1 Admin beállítását."
 ---
 
 # Fiók létrehozása

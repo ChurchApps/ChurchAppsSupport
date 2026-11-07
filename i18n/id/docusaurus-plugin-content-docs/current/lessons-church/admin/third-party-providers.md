@@ -1,5 +1,6 @@
 ---
 title: "Penyedia Pihak Ketiga"
+description: "Tambahkan feed kurikulum eksternal ke Lessons.church dari halaman admin Third-Party, lalu lihat, perbarui, atau hapus koneksi penyedia sesuai kebutuhan."
 ---
 
 # Penyedia Pihak Ketiga

@@ -1,5 +1,6 @@
 ---
 title: "Mga Gawain"
+description: "Gumawa, magtalaga, at isara ang mga gawain sa B1 Admin, hanapin sa Serving > My Work, at magtakda ng paalala sa due date para hindi malampasan ang follow-up."
 ---
 
 # Mga Gawain

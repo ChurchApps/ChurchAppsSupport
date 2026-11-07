@@ -1,5 +1,6 @@
 ---
 title: "Check-In Güvenliği"
+description: "B1 Admin'de çocuk güvenliği ayarlarını yapılandırın: oda kapasitesi, gönüllü oranları, güvenilir teslim listeleri ve check-in için ebeveyn bildirim mesajları."
 ---
 
 # Check-In Güvenliği
@@ -15,7 +16,7 @@ B1, check-in için bir dizi çocuk güvenliği denetimi içerir: oda kapasite s�
 
 - [Katılım yapısını](setup.md) ve [check-in kiosklarını](check-in.md) ayarlayın
 - Odalar, ibadet saatlerine bağlı [gruplardır](../groups/creating-groups.md) — aşağıdaki güvenlik ayarları grubun üzerinde bulunur
-- Ebeveyni çağırma ve acil durum yayını için bağlı bir SMS sağlayıcısı gerekir ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream) veya Mutual Ministry)
+- Ebeveyni çağırma ve acil durum yayını için bağlı bir SMS sağlayıcısı gerekir ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md) veya Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Bu iki özellik de mesajları kilisenizin bağlı SMS sağlayıcısı üzerinden
 
 Mesaj almayı reddetmiş veya dosyasında cep telefonu numarası bulunmayan kişiler otomatik olarak atlanır. Kiosk kaç mesajın gönderildiğini ve kaçının atlandığını bildirir.
 
-Kiosk tarafındaki adım adım anlatım için [Check-Out ve Çocuk Güvenliği](../../b1-checkin/check-in/checking-out) bölümüne bakın.
+Kiosk tarafındaki adım adım anlatım için [Check-Out ve Çocuk Güvenliği](../../b1-checkin/check-in/checking-out.md) bölümüne bakın.
 
 ## İlgili Makaleler
 
 - [Check-In](check-in.md) — kiosk kurulumu ve donanım
-- [Check-Out ve Çocuk Güvenliği](../../b1-checkin/check-in/checking-out) — kiosk check-out, teslim alma doğrulaması ve çağırma akışları
+- [Check-Out ve Çocuk Güvenliği](../../b1-checkin/check-in/checking-out.md) — kiosk check-out, teslim alma doğrulaması ve çağırma akışları
 - [Grup Oluşturma](../groups/creating-groups.md) — oda ayarlarının bulunduğu yer
 - [Katılım Kurulumu](setup.md) — ibadetler, ibadet saatleri ve oda atamaları
 - [Özel Mesajlar için Minimum Yaş](../settings/mobile-app.md#member-directory--messaging-settings) — çocuklarla yeni özel mesaj konuşmalarını engeller, ancak onları dizinde tutar

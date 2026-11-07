@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "在 Lessons.church 中浏览、安排并展示来自 12 家以上提供方的免费分龄课程，并可使用教室、场地以及 FreePlay 或 B1 集成功能。"
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church 与其他 ChurchApps 工具配合工作，帮助您交付内容�
 
 ## 文档部分
 
-- [入门指南](./getting-started/)——创建您的账户并学习基础知识
-- [浏览内容](./browsing/)——查找程序、研究和课程
-- [教室](./classrooms/)——设置教室和安排课程
-- [自定义](./customization/)——为您的教会定制课程
-- [呈现](./presenting/)——使用呈现者模式在课堂中传递课程
-- [管理](./admin/)——管理程序、研究和课程作为管理员
+- [入门指南](./getting-started/index.md)——创建您的账户并学习基础知识
+- [浏览内容](./browsing/index.md)——查找程序、研究和课程
+- [教室](./classrooms/index.md)——设置教室和安排课程
+- [自定义](./customization/index.md)——为您的教会定制课程
+- [呈现](./presenting/index.md)——使用呈现者模式在课堂中传递课程
+- [管理](./admin/index.md)——管理程序、研究和课程作为管理员
 - [信仰陈述](./statement-of-faith.md)——核心信念和课程准则
 
 如需支持，请发送电子邮件至 [support@churchapps.org](mailto:support@churchapps.org)。

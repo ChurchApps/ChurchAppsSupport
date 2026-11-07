@@ -1,5 +1,6 @@
 ---
 title: "Kirkeinnstillinger"
+description: "Angi navn, adresse, subdomene, tidssone, regionformat, SMS-leverandør og fillagring for menigheten din på siden Church Settings i B1 Admin."
 ---
 
 # Kirkeinnstillinger

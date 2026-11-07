@@ -1,5 +1,6 @@
 ---
 title: "Opprette kontoen din"
+description: "Registrer en ChurchApps-konto på B1.church, bekreft e-posten din, og opprett eller bli med i en kirke slik at du kan begynne å sette opp B1 Admin."
 ---
 
 # Opprette kontoen din

@@ -1,5 +1,6 @@
 ---
 title: "Pamamahala ng mga Paraan ng Pagbabayad"
+description: "Magdagdag, suriin, at magtanggal ng naka-save na card sa Manage tab ng B1 Mobile, para mas mabilis ang paulit-ulit na donasyon."
 ---
 
 # Pamamahala ng mga Paraan ng Pagbabayad
@@ -13,7 +14,7 @@ Ang **Manage** tab sa seksyon ng pagbibigay ay nagbibigay-daan sa iyong tingnan 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [I-install ang B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
 
 </div>
 
@@ -31,7 +32,7 @@ Para magdagdag ng bagong card:
 4. Ilagay ang iyong mga detalye ng card. Ang impormasyon ay secure na ipinapadala sa **Stripe** para sa pagproseso.
 5. Kapag na-save na, ang bagong card ay lalabas sa iyong listahan ng mga paraan ng pagbabayad.
 
-Ang iyong naka-save na card ay magiging available bilang opsyon sa pagbabayad sa susunod na [magbibigay ka ng donasyon](./making-donations) mula sa **Donate** tab.
+Ang iyong naka-save na card ay magiging available bilang opsyon sa pagbabayad sa susunod na [magbibigay ka ng donasyon](./making-donations.md) mula sa **Donate** tab.
 
 ## Pag-alis ng Paraan ng Pagbabayad
 
@@ -44,7 +45,7 @@ Kung ayaw mo nang may card na naka-file, maaari mo itong alisin mula sa **Manage
 Ang card ay hindi na lalabas bilang opsyon sa pagbabayad kapag nagbigay ka ng donasyon.
 
 :::info
-Ang pag-alis ng paraan ng pagbabayad ay hindi nakakaapekto sa anumang nakaraang donasyon. Ang iyong [kasaysayan ng donasyon](./donation-history) ay nananatiling hindi nagbabago.
+Ang pag-alis ng paraan ng pagbabayad ay hindi nakakaapekto sa anumang nakaraang donasyon. Ang iyong [kasaysayan ng donasyon](./donation-history.md) ay nananatiling hindi nagbabago.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Panatilihin ang kahit isang naka-save na paraan ng pagbabayad para sa mabilisang
 
 ## Mga Kaugnay na Artikulo
 
-- [Pagbibigay ng Donasyon](./making-donations) -- Alamin kung paano magbigay ng regalo gamit ang naka-save na paraan ng pagbabayad
-- [Kasaysayan ng Donasyon](./donation-history) -- Tingnan ang iyong buod ng pagbibigay at mga nakaraang donasyon
+- [Pagbibigay ng Donasyon](./making-donations.md) -- Alamin kung paano magbigay ng regalo gamit ang naka-save na paraan ng pagbabayad
+- [Kasaysayan ng Donasyon](./donation-history.md) -- Tingnan ang iyong buod ng pagbibigay at mga nakaraang donasyon

@@ -1,5 +1,6 @@
 ---
 title: "Przewodnik: Uruchom swoją stronę internetową kościoła"
+description: "Skonfiguruj stronę kościoła w B1 Admin: zbuduj stronę główną, dopasuj kolory i logo, dodaj kluczowe podstrony, podłącz własną domenę i formularze darowizn."
 ---
 
 # Uruchom swoją stronę internetową kościoła

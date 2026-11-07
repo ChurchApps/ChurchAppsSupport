@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Make.com से B1 Admin स्वयंसेवक साइन-अप को Checkr पृष्ठभूमि जाँच से जोड़ें, साथ में सुरक्षित सेवा समन्वयक के लिए वैकल्पिक रिपोर्ट स्थिति अलर्ट।"
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Scenario चालू करें। लक्षित समूह के न
 
 ## यह भी देखें
 
-- [Make (overview)](../make) — हर Make scenario का B1 पक्ष
-- [Mobile Message](./mobile-message) — ऐसे SMS प्रदाताओं के लिए जिनका Zapier ऐप नहीं है; वही Webhooks/HTTP पैटर्न जो Checkr के Make सेटअप में है
+- [Make (overview)](../make.md) — हर Make scenario का B1 पक्ष
+- [Mobile Message](./mobile-message.md) — ऐसे SMS प्रदाताओं के लिए जिनका Zapier ऐप नहीं है; वही Webhooks/HTTP पैटर्न जो Checkr के Make सेटअप में है
 - [Checkr API docs](https://docs.checkr.com/)

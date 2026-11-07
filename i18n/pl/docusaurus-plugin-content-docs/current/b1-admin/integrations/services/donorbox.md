@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Połącz Donorbox z B1 Admin przez Zapier, aby darowizny online automatycznie tworzyły rekordy darowizn i profile darczyńców, bez ręcznego eksportu."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Zdarzenie *New or Updated Donation* w Donorbox uruchamia się także przy edycja
 
 ## Zobacz także
 
-- [Zapier (przegląd)](../zapier) — strona B1 każdego przepisu Zapier
-- [Subsplash](./subsplash) — inna platforma darowizn z aplikacją Zapier
-- [Mailchimp](./mailchimp) — połącz „nową darowiznę" z tagiem e-mail
+- [Zapier (przegląd)](../zapier.md) — strona B1 każdego przepisu Zapier
+- [Subsplash](./subsplash.md) — inna platforma darowizn z aplikacją Zapier
+- [Mailchimp](./mailchimp.md) — połącz „nową darowiznę" z tagiem e-mail

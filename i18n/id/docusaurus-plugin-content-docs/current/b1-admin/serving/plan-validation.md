@@ -1,5 +1,6 @@
 ---
 title: "Validasi Rencana & Notifikasi"
+description: "Periksa rencana ibadah di B1 Admin untuk posisi kosong, bentrok jadwal, dan relawan yang tidak bisa hadir, lalu beri notifikasi ke seluruh tim sekaligus."
 ---
 
 # Validasi Rencana & Notifikasi Relawan

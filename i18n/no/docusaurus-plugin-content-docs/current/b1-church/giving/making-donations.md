@@ -1,5 +1,7 @@
 ---
-title: "Gi en gave"
+title: "Gi gaver i medlemsportalen i B1.church"
+sidebar_label: "Gi en gave"
+description: "Gi en engangsgave eller fast gave til menigheten din via B1.church, med eller uten konto, og se givinghistorikken din etterpå."
 ---
 
 # Gi en gave

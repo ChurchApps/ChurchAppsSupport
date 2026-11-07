@@ -1,5 +1,7 @@
 ---
-title: "Contenu"
+title: "Contenus dans le portail membre B1.church"
+sidebar_label: "Contenu"
+description: "Voyez quels contenus votre église active dans le portail membre B1.church, puis parcourez prédications, diffusions en direct, lecture biblique et leçons."
 ---
 
 # Contenu

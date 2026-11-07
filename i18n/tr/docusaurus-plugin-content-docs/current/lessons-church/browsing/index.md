@@ -1,5 +1,6 @@
 ---
 title: "İçeriklere Göz Atma"
+description: "Hesap olmadan Lessons.church'in ücretsiz müfredat kütüphanesine nasıl göz atılacağını öğrenin: ana sayfa düzeni, programa göre gezinme, arama ve harici sağlayıcılar."
 ---
 
 # İçeriklere Göz Atma

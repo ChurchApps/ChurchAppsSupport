@@ -1,5 +1,6 @@
 ---
 title: "Demografi"
+description: "B1 Admin'in etkileşimli grafiklerinde yaş, cinsiyet, üyelik, medeni durum ve kampüs dağılımını görün ve herhangi bir gruba ayrıntılı bakın."
 ---
 
 # Demografi

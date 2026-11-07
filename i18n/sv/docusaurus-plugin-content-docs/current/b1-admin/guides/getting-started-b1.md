@@ -1,5 +1,6 @@
 ---
 title: "Guide: Kom igång med B1 för din församling"
+description: "Gå igenom hur du sätter upp en ny församling i B1 Admin: skapa konto, konfigurera inställningar, lägg till roller, importera medlemmar och starta grundfunktionerna."
 ---
 
 # Kom igång med B1 för din församling

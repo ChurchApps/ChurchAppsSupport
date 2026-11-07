@@ -1,5 +1,6 @@
 ---
 title: "Strona Ja"
+description: "Co strona Ja w portalu B1App pokazuje na jednym ekranie: nadchodzące służby, wydarzenia i zapisy oraz gospodarstwo, grupy, darowizny, formularze, frekwencję i skrzynkę."
 ---
 
 # Strona Ja
@@ -31,7 +32,7 @@ Jeśli jesteś wylogowany, zamiast tego zobaczysz komunikat „Zaloguj się, aby
 Sekcja **Nadchodzące** wyświetla Twoje trzy najbliższe pozycje w kolejności dat, każda oznaczona znacznikiem typu. Jeśli jest ich więcej, stuknij **Wszystkie nadchodzące**, aby zobaczyć pełną listę, a **Wróć do Ja**, aby wrócić.
 
 - **Służba** -- Twoje funkcje wolontariackie w nadchodzących planach nabożeństw, z datą i godziną rozpoczęcia nabożeństwa, w którym służysz (godzina, na którą potrzebny jest Twój zespół, gdy plan ma kilka godzin nabożeństw, lub sama data, jeśli plan nie ma godzin). Stuknij pozycję, aby otworzyć plan.
-- **Zapis** -- Wydarzenia, na które [się zapisałeś](../events/registering). Stuknij, aby przejść do swoich [zapisów](../events/my-registrations).
+- **Zapis** -- Wydarzenia, na które [się zapisałeś](../events/registering.md). Stuknij, aby przejść do swoich [zapisów](../events/my-registrations.md).
 - **Wydarzenie** -- Nadchodzące wydarzenia z grup, do których należysz. Stuknij jedno, aby otworzyć wydarzenia grupy.
 
 Jeśli wydarzenie lub zapis ma zdjęcie, na początku wiersza pojawi się jego mała miniatura.
@@ -66,7 +67,7 @@ Sekcja **Prośby i zapisy** pokazuje, ilu masz zapisów na wydarzenia, wraz z ł
 
 Jeśli Twój kościół ma sale lub zasoby do rezerwacji, pojawią się dwa kolejne łącza:
 
-- **Zgłoś wydarzenie** -- Poproś o zorganizowanie wydarzenia z potrzebnymi salami i sprzętem. Zobacz [Zgłaszanie wydarzeń i sal](../events/requesting-events).
+- **Zgłoś wydarzenie** -- Poproś o zorganizowanie wydarzenia z potrzebnymi salami i sprzętem. Zobacz [Zgłaszanie wydarzeń i sal](../events/requesting-events.md).
 - **Moje prośby** -- Śledź status swoich próśb i anuluj oczekujące.
 
 Jeśli Twój kościół nie skonfigurował sal ani zasobów, te łącza są ukryte.
@@ -77,8 +78,8 @@ Sekcja **Skrzynka odbiorcza** pokazuje Twoje dwa najnowsze powiadomienia, dzięk
 
 ## Powiązane artykuły
 
-- [Nawigacja w B1App](./navigating) -- Układ portalu członka
-- [Zgłaszanie wydarzeń i sal](../events/requesting-events) -- Składanie i śledzenie próśb o salę lub zasoby
-- [Moje zapisy](../events/my-registrations) -- Zarządzanie swoimi zapisami na wydarzenia
-- [Zapis na wolontariat](../serving/volunteer-signup) -- Jak działają przydziały do służby
-- [Samodzielne meldowanie](../checkin/self-checkin) -- Jak rejestrowana jest Twoja obecność
+- [Nawigacja w B1App](./navigating.md) -- Układ portalu członka
+- [Zgłaszanie wydarzeń i sal](../events/requesting-events.md) -- Składanie i śledzenie próśb o salę lub zasoby
+- [Moje zapisy](../events/my-registrations.md) -- Zarządzanie swoimi zapisami na wydarzenia
+- [Zapis na wolontariat](../serving/volunteer-signup.md) -- Jak działają przydziały do służby
+- [Samodzielne meldowanie](../checkin/self-checkin.md) -- Jak rejestrowana jest Twoja obecność

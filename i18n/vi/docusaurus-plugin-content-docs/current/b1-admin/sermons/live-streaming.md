@@ -1,5 +1,7 @@
 ---
-title: "Phát trực tiếp"
+title: "Thời gian và cài đặt phát trực tiếp trong B1 Admin"
+sidebar_label: "Phát trực tiếp"
+description: "Lên lịch phát trực tiếp hằng tuần hoặc một lần, cài đặt thời gian trò chuyện và video sớm, kết nối kênh YouTube và khắc phục lỗi nhúng trong B1 Admin."
 ---
 
 # Phát trực tiếp
@@ -19,7 +21,7 @@ Trang Live Stream Times cho phép bạn cấu hình lịch phát trực tiếp c
 
 - Bạn cần quyền **contentApi.streamingServices.edit**. Xem [Vai trò & Quyền hạn](../settings/roles-permissions.md) nếu bạn chưa có quyền truy cập.
 - Chuẩn bị sẵn YouTube Channel ID nếu bạn dự định dùng tính năng phát trực tiếp tự động
-- Thêm ít nhất một [bài giảng](managing-sermons) hoặc URL trực tiếp cố định để làm nguồn phát
+- Thêm ít nhất một [bài giảng](./managing-sermons.md) hoặc URL trực tiếp cố định để làm nguồn phát
 
 </div>
 
@@ -80,13 +82,13 @@ Trên trang **Live Stream Times**, nhấp **View Your Stream** ở đầu trang 
 
 ## Tùy chỉnh màu sắc và logo
 
-Trang phát trực tiếp của bạn sử dụng cài đặt [Appearance](../website/appearance) của trang web:
+Trang phát trực tiếp của bạn sử dụng cài đặt [Appearance](../website/appearance.md) của trang web:
 
 - **Màu nhấn sáng** với chữ tối được dùng cho tiêu đề.
 - **Màu nhấn tối** với chữ sáng được dùng cho thanh bên.
 - **Logo nền sáng** của bạn xuất hiện trên trang phát trực tiếp. Hãy dùng hình ảnh có nền trong suốt và tỷ lệ khung hình 4:1.
 
-Để thay đổi các mục này, vào **Website** rồi **Appearance**, sau đó cập nhật cài đặt [Color Palette](../website/appearance#color-palette) và [Logo](../website/appearance#logo-and-branding).
+Để thay đổi các mục này, vào **Website** rồi **Appearance**, sau đó cập nhật cài đặt [Color Palette](../website/appearance.md#color-palette) và [Logo](../website/appearance.md#logo-and-branding).
 
 ## Thêm người dẫn chương trình phát trực tiếp
 
@@ -133,5 +135,5 @@ Khung nhúng luồng trực tiếp tự động của kênh YouTube có thể b�
 
 ## Bước tiếp theo
 
-- [Quản lý bài giảng](managing-sermons) -- Thêm bài giảng vào thư viện của bạn
-- [Playlist](playlists) -- Sắp xếp bài giảng thành loạt bài
+- [Quản lý bài giảng](./managing-sermons.md) -- Thêm bài giảng vào thư viện của bạn
+- [Playlist](./playlists.md) -- Sắp xếp bài giảng thành loạt bài

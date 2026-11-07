@@ -1,5 +1,6 @@
 ---
 title: "Web 应用"
+description: "ChurchApps 三个网页应用（B1 Admin、B1.church、Lessons.church）概览，包括它们共用的 React 和 MUI 技术栈、apphelper 包以及构建工具。"
 ---
 
 # Web 应用
@@ -41,7 +42,7 @@ ChurchApps 包含三个 Web 应用，各自服务于不同的受众和目的。�
 | `@churchapps/apphelper-website` | 网站/CMS 组件 |
 
 :::tip
-有关在本地开发这些共享包的详细信息，请参见 [AppHelper](../shared-libraries/app-helper) 文档。
+有关在本地开发这些共享包的详细信息，请参见 [AppHelper](../shared-libraries/app-helper.md) 文档。
 :::
 
 ## Postinstall 脚本

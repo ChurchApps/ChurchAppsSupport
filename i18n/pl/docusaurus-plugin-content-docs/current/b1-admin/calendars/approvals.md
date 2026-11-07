@@ -1,5 +1,6 @@
 ---
 title: "Zatwierdzanie kalendarza"
+description: "Przeglądaj wnioski o rezerwację sal i zasobów w B1 Admin, sprawdzaj konflikty, po czym zatwierdź lub odrzuć je, opcjonalnie publikując wydarzenie."
 ---
 
 # Zatwierdzanie kalendarza
@@ -13,7 +14,7 @@ Strona Zatwierdzenia to miejsce, w którym administratorzy przeglądają oczekuj
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Skonfiguruj sale lub zasoby z **grupą zatwierdzającą** w sekcji [Sale i zasoby](rooms-resources)
+- Skonfiguruj sale lub zasoby z **grupą zatwierdzającą** w sekcji [Sale i zasoby](./rooms-resources.md)
 - Potrzebujesz uprawnienia **Administrator kalendarzy** lub uprawnienia **content.edit**
 
 </div>
@@ -41,7 +42,7 @@ Kliknij **Zatwierdź** lub **Odrzuć** przy dowolnym żądaniu rezerwacji (odrzu
 Gdy klikniesz **Zatwierdź**, otworzy się okno **Zatwierdź rezerwację**, w którym możesz od razu opublikować wydarzenie:
 
 1. Zaznacz **Opublikuj w kalendarzu publicznym**, aby wydarzenie było widoczne w kalendarzu jego grupy. Pozostaw pole niezaznaczone, aby zatwierdzić rezerwację bez zmiany widoczności wydarzenia.
-2. Gdy zaznaczysz **Opublikuj w kalendarzu publicznym**, możesz opcjonalnie wybrać kalendarz kuratorski z listy **Dodaj również do kalendarza**, aby dodać wydarzenie także do jednego z [kalendarzy kuratorskich](curated-calendar). Pozostaw ustawienie **Brak**, jeśli nie chcesz tego robić. (Ta opcja pojawia się tylko wtedy, gdy masz uprawnienie **content.edit**).
+2. Gdy zaznaczysz **Opublikuj w kalendarzu publicznym**, możesz opcjonalnie wybrać kalendarz kuratorski z listy **Dodaj również do kalendarza**, aby dodać wydarzenie także do jednego z [kalendarzy kuratorskich](./curated-calendar.md). Pozostaw ustawienie **Brak**, jeśli nie chcesz tego robić. (Ta opcja pojawia się tylko wtedy, gdy masz uprawnienie **content.edit**).
 3. Kliknij **Zatwierdź**.
 
 ## Oczekujące wydarzenia
@@ -49,10 +50,10 @@ Gdy klikniesz **Zatwierdź**, otworzy się okno **Zatwierdź rezerwację**, w kt
 Jeśli w Twoim procesie pracy z kalendarzem wydarzenia muszą być zatwierdzone, zanim staną się widoczne dla opinii publicznej, oczekujące wydarzenia pojawiają się w sekcji **Żądania wydarzeń**. Kliknij **Zatwierdź**, aby opublikować wydarzenie w kalendarzu, lub **Odrzuć**, aby powiadomić osobę zgłaszającą, że potrzebne są zmiany.
 
 :::tip
-Ustaw grupę zatwierdzającą dla sali w sekcji [Sale i zasoby](rooms-resources), aby wymagać zatwierdzenia rezerwacji tej sali. Grupy z dostępem mogą wtedy prosić o salę podczas tworzenia wydarzeń, a takie żądania trafią na tę stronę.
+Ustaw grupę zatwierdzającą dla sali w sekcji [Sale i zasoby](./rooms-resources.md), aby wymagać zatwierdzenia rezerwacji tej sali. Grupy z dostępem mogą wtedy prosić o salę podczas tworzenia wydarzeń, a takie żądania trafią na tę stronę.
 :::
 
 ## Powiązane artykuły
 
-- [Sale, zasoby i planowanie](rooms-resources) — konfigurowanie sal i zasobów do rezerwacji
-- [Tworzenie kalendarzy](creating-calendars) — zarządzanie kalendarzami i wydarzeniami
+- [Sale, zasoby i planowanie](./rooms-resources.md) — konfigurowanie sal i zasobów do rezerwacji
+- [Tworzenie kalendarzy](./creating-calendars.md) — zarządzanie kalendarzami i wydarzeniami

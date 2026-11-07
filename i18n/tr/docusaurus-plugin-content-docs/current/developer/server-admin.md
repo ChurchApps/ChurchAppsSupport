@@ -1,5 +1,6 @@
 ---
 title: "Sunucu Yönetimi"
+description: "Yalnızca Server.Admin kullanıcıları için: iki faktörlü oturum açmayı sıfırlama, hesapları taklit etme, Commons'ı denetleme ve B1 Admin'de kilise e-postasını onaylama."
 ---
 
 # Sunucu Yönetimi

@@ -1,5 +1,6 @@
 ---
 title: "Przewodnik: Rozpocznij pracę kościoła z B1"
+description: "Przejdź przez konfigurację nowego kościoła w B1 Admin: załóż konto, ustaw ustawienia, dodaj role, zaimportuj członków i uruchom podstawowe funkcje."
 ---
 
 # Rozpocznij pracę kościoła z B1

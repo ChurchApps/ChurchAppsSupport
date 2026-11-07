@@ -1,5 +1,7 @@
 ---
-title: "Anmelden"
+title: "Anmeldung bei B1.church und im Mitgliederportal"
+sidebar_label: "Anmelden"
+description: "Im B1.church-Mitgliederportal anmelden, Zwei-Faktor-Codes oder Single Sign-On nutzen, Passwort zurücksetzen und über das Kontomenü abmelden."
 ---
 
 # Anmelden
@@ -13,7 +15,7 @@ Wenn Sie sich bei B1.church anmelden, erhalten Sie Zugang zum Mitgliederportal, 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie benötigen ein ChurchApps-Konto. Informationen zum Erstellen finden Sie unter [Erste Schritte](../getting-started/).
+- Sie benötigen ein ChurchApps-Konto. Informationen zum Erstellen finden Sie unter [Erste Schritte](./index.md).
 - Sie benötigen die B1.church-URL Ihrer Kirche (zum Beispiel `https://ihrekirchenname.b1.church`).
 
 </div>
@@ -35,7 +37,7 @@ Sie bleiben im selben Browser oder in der installierten App angemeldet, bis Sie 
 
 ## Zugriff auf das Mitgliederportal
 
-Nach der Anmeldung erreichen Sie das Mitgliederportal, indem Sie oben rechts auf der Seite auf Ihren **Namen** klicken und im Menü **Mitgliederportal** auswählen. Im Mitgliederportal befinden sich alle Ihre persönlichen Werkzeuge für die Kirche, darunter Ihr [Startbereich](./navigating.md), Ihre [Me-Seite](./me-page.md), [Gruppen](../groups/), [Geben](../giving/) und mehr.
+Nach der Anmeldung erreichen Sie das Mitgliederportal, indem Sie oben rechts auf der Seite auf Ihren **Namen** klicken und im Menü **Mitgliederportal** auswählen. Im Mitgliederportal befinden sich alle Ihre persönlichen Werkzeuge für die Kirche, darunter Ihr [Startbereich](./navigating.md), Ihre [Me-Seite](./me-page.md), [Gruppen](../groups/index.md), [Geben](../giving/index.md) und mehr.
 
 ## Ihr Benutzermenü
 

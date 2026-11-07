@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (Kullanımdan Kaldırıldı)"
+description: "B1 Mobile yerel uygulaması kullanımdan kaldırıldı; üye ve yöneticiler B1.church PWA'yı kullanmalı. Eski sayfalar başvuru için saklanmaktadır."
 ---
 
 # B1 Mobile (Kullanımdan Kaldırıldı)
@@ -40,16 +41,16 @@ B1 Mobile, kilisenizden veya gruplarınızdan gelen önemli bir güncellemeyi ka
 
 ## Daha Fazla Bilgi
 
-- [Başlangıç](./getting-started/) -- Uygulamayı yükleyin, hesap oluşturun ve kilisenizi seçin.
-- [Pano](./dashboard/) -- Kişiselleştirilmiş ana ekranınızı anlayın.
-- [Gruplar](./groups/) -- Kilise gruplarınızla bağlantıda kalın.
-- [Bağışlar](./giving/) -- Telefonunuzdan bağış yapın.
-- [Etkinlikler](./events/) -- Yaklaşan kilise etkinliklerine göz atın ve kayıt olun.
-- [Check-In](./checkin/) -- Ayinler ve etkinlikler için check-in yapın.
-- [Hizmet](./serving/) -- Hizmet planlarınızı, atamalarınızı ve gönüllülük fırsatlarını görüntüleyin.
-- [Topluluk](./community/) -- Üye rehberine göz atın ve mesaj gönderin.
-- [İçerik](./content/) -- Vaazlar, İncil, günün ayeti ve dersler (ders ekranı kullanımdan kaldırıldı — bkz. [FreePlay](/docs/freeplay/)).
-- [Profil](./profile/) -- Profilinizi ve hesap ayarlarınızı yönetin.
+- [Başlangıç](./getting-started/index.md) -- Uygulamayı yükleyin, hesap oluşturun ve kilisenizi seçin.
+- [Pano](./dashboard/index.md) -- Kişiselleştirilmiş ana ekranınızı anlayın.
+- [Gruplar](./groups/index.md) -- Kilise gruplarınızla bağlantıda kalın.
+- [Bağışlar](./giving/index.md) -- Telefonunuzdan bağış yapın.
+- [Etkinlikler](./events/index.md) -- Yaklaşan kilise etkinliklerine göz atın ve kayıt olun.
+- [Check-In](./checkin/index.md) -- Ayinler ve etkinlikler için check-in yapın.
+- [Hizmet](./serving/index.md) -- Hizmet planlarınızı, atamalarınızı ve gönüllülük fırsatlarını görüntüleyin.
+- [Topluluk](./community/index.md) -- Üye rehberine göz atın ve mesaj gönderin.
+- [İçerik](./content/index.md) -- Vaazlar, İncil, günün ayeti ve dersler (ders ekranı kullanımdan kaldırıldı — bkz. [FreePlay](/docs/freeplay/)).
+- [Profil](./profile/index.md) -- Profilinizi ve hesap ayarlarınızı yönetin.
 
 :::info
 B1 Mobile, [B1.church PWA](../b1-church/getting-started/installing-pwa.md) ile değiştirildi. Yeni kurulumlarda PWA kullanılmalıdır — yerel uygulama artık güncellenmiyor.

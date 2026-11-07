@@ -1,5 +1,6 @@
 ---
 title: "Obvestila"
+description: "Predvajaj zanko diapozitivov na FreePlay TV za objave v avli ali pred uro: izberi mapo ponudnika, jo sinhroniziraj in po koncu izklopi."
 ---
 
 # Obvestila
@@ -13,7 +14,7 @@ FreePlay lahko na vašem televizorju v zanki predvaja mapo z obvestilnimi diapoz
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Povežite se z ponudnikom vsebin](./connecting-providers), ki hrani vaše obvestilne diapozitive, na primer Dropbox ali OneDrive
+- [Povežite se z ponudnikom vsebin](./connecting-providers.md), ki hrani vaše obvestilne diapozitive, na primer Dropbox ali OneDrive
 - Slike ali videoposnetke, ki jih želite predvajati v zanki, združite v eno mapo pri tem ponudniku
 
 </div>
@@ -37,7 +38,7 @@ Ko so diapozitivi preneseni, se na vrhu stranske vrstice prikaže element **Obve
 - Po zadnjem diapozitivu se zanka začne znova od prvega
 - Če mapa vsebuje en sam videoposnetek, se ta ponavlja na mestu
 
-Zanka se predvaja iz datotek, shranjenih v napravi, zato deluje tudi brez internetne povezave. Enake daljinske upravljalnike lahko uporabljate kot pri vsaki drugi vsebini -- glejte [Predvajanje vsebine](./playing-content).
+Zanka se predvaja iz datotek, shranjenih v napravi, zato deluje tudi brez internetne povezave. Enake daljinske upravljalnike lahko uporabljate kot pri vsaki drugi vsebini -- glejte [Predvajanje vsebine](./playing-content.md).
 
 ## Posodabljanje diapozitivov
 
@@ -61,6 +62,6 @@ Odklop ponudnika prav tako izklopi obvestila, ki so prihajala iz njega.
 
 ## Sorodni članki
 
-- **[Povezovanje s ponudniki](./connecting-providers)** - Povežite ponudnika, ki hrani vaše diapozitive
-- **[Brskanje in prenos vsebine](./browsing-content)** - Brskajte po mapah ponudnika in predvajajte vsebino na zahtevo
-- **[Predvajanje vsebine](./playing-content)** - Upravljanje predvajanja z daljinskim upravljalnikom televizorja
+- **[Povezovanje s ponudniki](./connecting-providers.md)** - Povežite ponudnika, ki hrani vaše diapozitive
+- **[Brskanje in prenos vsebine](./browsing-content.md)** - Brskajte po mapah ponudnika in predvajajte vsebino na zahtevo
+- **[Predvajanje vsebine](./playing-content.md)** - Upravljanje predvajanja z daljinskim upravljalnikom televizorja

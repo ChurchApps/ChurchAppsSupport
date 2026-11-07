@@ -1,5 +1,6 @@
 ---
 title: "Emalulu Lagciniwe"
+description: "Gcina kusesha kwebantfu ku-B1 Admin njengluhlu lolubizwa ngelibito, bese ulilayisha ngekucindzetela kanye. Tintsha letifanele tingena ngalokuzenzakalelako."
 ---
 
 # Emalulu Lagciniwe

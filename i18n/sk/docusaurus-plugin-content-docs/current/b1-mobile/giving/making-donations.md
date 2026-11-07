@@ -1,5 +1,7 @@
 ---
-title: "Vykonávanie daru"
+title: "Odoslanie daru v B1 Mobile"
+sidebar_label: "Vykonávanie daru"
+description: "Darujte svojej cirkvi z karty Darovať v B1 Mobile: vyberte fond, zadajte sumu, zaplaťte cez Stripe a rýchlo zopakujte predchádzajúce dary."
 ---
 
 # Vykonávanie daru
@@ -13,8 +15,8 @@ Darovanie cez B1 Mobile je rýchle a jednoduché. Karta **Darovať** v sekcii da
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- [Nainštalujte B1 Mobile](../getting-started/installing) a [prihláste sa](../getting-started/logging-in) do svojho účtu
-- Pripravte si platobnú kreditnú alebo debetnú kartu, prípadne si vopred [uložte spôsob platby](./managing-payments)
+- [Nainštalujte B1 Mobile](../getting-started/installing.md) a [prihláste sa](../getting-started/logging-in.md) do svojho účtu
+- Pripravte si platobnú kreditnú alebo debetnú kartu, prípadne si vopred [uložte spôsob platby](./managing-payments.md)
 
 </div>
 
@@ -42,10 +44,10 @@ Pred odoslaním si dvakrát skontrolujte sumu daru a fond. Dary sa spracúvajú 
 Ak chcete darovať rovnakú sumu ako pri svojom poslednom dare, nemusíte prechádzať celým procesom darovania. Karta **Prehľad** zobrazuje váš najnovší dar spolu s tlačidlom **Opakovať**. Klepnutím na ňu rýchlo odošlete rovnaký dar znova.
 
 :::tip
-Ak plánujete darovať pravidelne, uložte si spôsob platby na karte **Spravovať**, aby ste budúci dar mohli vykonať ešte rýchlejšie. Podrobnosti nájdete v článku [Správa spôsobov platby](./managing-payments).
+Ak plánujete darovať pravidelne, uložte si spôsob platby na karte **Spravovať**, aby ste budúci dar mohli vykonať ešte rýchlejšie. Podrobnosti nájdete v článku [Správa spôsobov platby](./managing-payments.md).
 :::
 
 ## Súvisiace články
 
-- [Správa spôsobov platby](./managing-payments) -- Uloženie karty pre rýchlejšie darovanie v budúcnosti
-- [História darov](./donation-history) -- Zobrazenie prehľadu darovania a minulých darov
+- [Správa spôsobov platby](./managing-payments.md) -- Uloženie karty pre rýchlejšie darovanie v budúcnosti
+- [História darov](./donation-history.md) -- Zobrazenie prehľadu darovania a minulých darov

@@ -1,5 +1,6 @@
 ---
 title: "Režim plánu"
+description: "Připojte TV ve FreePlay k plánu bohoslužby z B1 Admin, aby zobrazovala lekce, prezentace a média aktuálního týdne v pořadí."
 ---
 
 # Režim plánu
@@ -12,13 +13,13 @@ Režim plánu propojí vaši televizi s plánem bohoslužby. Namísto načítán
 
 ## Čím se liší od ostatních režimů
 
-- **[Režim podle plánu](../scheduled-mode/)** přehrává seznamy skladeb z kalendáře ve FreePlay Admin v časy, které nastavíte, bez toho, aby někdo musel stisknout Start
+- **[Režim podle plánu](../scheduled-mode/index.md)** přehrává seznamy skladeb z kalendáře ve FreePlay Admin v časy, které nastavíte, bez toho, aby někdo musel stisknout Start
 - **Režim plánu** načítá obsah připojený k typu plánu, který může zahrnovat lekce, prezentace poskytovatelů, doplňky a další média uspořádaná ve vlastním pořadí
 
 Režim plánu je užitečný zejména tehdy, když váš plán bohoslužby obsahuje směs obsahu z různých zdrojů uspořádaného do jedné posloupnosti.
 
 :::tip
-Chcete, aby se aktuální plán přehrál sám v nastavenou dobu? Ve FreePlay Admin přidejte záznam do kalendáře a v části **Plány bohoslužeb** vyberte typ plánu. Viz [Plánování kalendáře](../scheduled-mode/scheduling-the-calendar).
+Chcete, aby se aktuální plán přehrál sám v nastavenou dobu? Ve FreePlay Admin přidejte záznam do kalendáře a v části **Plány bohoslužeb** vyberte typ plánu. Viz [Plánování kalendáře](../scheduled-mode/scheduling-the-calendar.md).
 :::
 
 ## Jak to funguje
@@ -32,4 +33,4 @@ Televize zůstane spárovaná s typem plánu. Každý týden automaticky načte 
 
 ## V této sekci
 
-- **[Párování zařízení](./device-pairing)** - Jak vygenerovat párovací kód a zadat ho
+- **[Párování zařízení](./device-pairing.md)** - Jak vygenerovat párovací kód a zadat ho

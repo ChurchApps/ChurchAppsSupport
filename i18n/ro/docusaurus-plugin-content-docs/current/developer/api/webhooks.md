@@ -1,5 +1,6 @@
 ---
 title: "Webhookuri"
+description: "Configurați webhook-uri în timp real din B1 Admin: înregistrați endpoint-uri, alegeți evenimentele, verificați semnăturile HMAC, gestionați reîncercările și retrimiteți payload-urile eșuate."
 ---
 
 # Webhookuri
@@ -33,7 +34,7 @@ Mergeți la **Settings → Developer → Webhooks → New Webhook**. Introduceț
 
 ### Prin API
 
-Toate endpoint-urile se află sub calea de bază a modulului Membership, `/membership/webhooks`, și necesită fie un JWT de la un administrator al bisericii cu permisiunea `Settings / Edit`, **fie o [cheie API](./api-keys) creată cu scope-ul `settings:write`**. Aceleași rute acceptă ambele variante. Acest lucru permite Zapier și Make să înregistreze webhookuri în numele bisericii atunci când un Zap sau un scenariu este activat.
+Toate endpoint-urile se află sub calea de bază a modulului Membership, `/membership/webhooks`, și necesită fie un JWT de la un administrator al bisericii cu permisiunea `Settings / Edit`, **fie o [cheie API](./api-keys.md) creată cu scope-ul `settings:write`**. Aceleași rute acceptă ambele variante. Acest lucru permite Zapier și Make să înregistreze webhookuri în numele bisericii atunci când un Zap sau un scenariu este activat.
 
 ```http
 POST /membership/webhooks

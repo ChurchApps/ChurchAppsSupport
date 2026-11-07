@@ -1,5 +1,6 @@
 ---
 title: "Aplikasi Web"
+description: "Ikhtisar tiga aplikasi web ChurchApps (B1 Admin, B1.church, Lessons.church), stack React dan MUI bersama, paket apphelper, dan tooling build."
 ---
 
 # Aplikasi Web
@@ -41,7 +42,7 @@ Aplikasi-aplikasi ini berbagi komponen UI dan utilitas melalui keluarga paket `@
 | `@churchapps/apphelper-website` | Komponen situs web/CMS |
 
 :::tip
-Untuk detail tentang pengembangan paket bersama ini secara lokal, lihat dokumentasi [AppHelper](../shared-libraries/app-helper).
+Untuk detail tentang pengembangan paket bersama ini secara lokal, lihat dokumentasi [AppHelper](../shared-libraries/app-helper.md).
 :::
 
 ## Skrip Postinstall

@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "Koble ChatGPT til menighetens B1-data med en API-nøkkel, slik at du kan stille spørsmål i klartekst om personer, gaver og oppmøte i B1 Admin."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Koble ChatGPT til menighetens B1-data og still spørsmål på vanlig språk -- d
 </div>
 
 :::tip Anbefalt: prøv Claude først -- det er gratis
-[Claude](./claude) kobles til B1 på **gratisplanen** og settes opp på under 3 minutter -- legg bare til B1 som en connector og logg inn med B1-kontoen din. Ingen nøkkel trengs. Det er den enkleste måten for menigheten din å prøve KI med B1 før dere betaler for noe.
+[Claude](./claude.md) kobles til B1 på **gratisplanen** og settes opp på under 3 minutter -- legg bare til B1 som en connector og logg inn med B1-kontoen din. Ingen nøkkel trengs. Det er den enkleste måten for menigheten din å prøve KI med B1 før dere betaler for noe.
 :::
 
 ## Slik setter du det opp
@@ -254,5 +255,5 @@ Alle med lenken kan stille spørsmål på vanlig språk. Nøklens tillatelser gj
 
 - [API Keys](/docs/developer/api/api-keys) — fullstendig referanse for tillatelser
 - [MCP Server (utviklerreferanse)](/docs/developer/api/mcp) — protokolldetaljer og verktøyskjemaer
-- [Claude](./claude) — samme idé, for Anthropics modeller
+- [Claude](./claude.md) — samme idé, for Anthropics modeller
 - [REST API-referanse](/docs/developer/api/endpoints) — alle endepunkter en Custom GPT-handling kan kalle

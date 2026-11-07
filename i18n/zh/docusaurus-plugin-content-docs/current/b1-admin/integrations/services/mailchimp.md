@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "以标签形式将 B1 Admin 中的人员及小组或已保存名单成员同步到 Mailchimp 受众名单，包括设置、初始导入和故障排除步骤。"
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ title: "Mailchimp"
 
 ## 其他方法（Zapier / Make）
 
-任何超出受众同步的内容 — 在`donation.created`上标记捐赠者、Mailchimp → B1 反向方向或完全同步到不同的电子邮件平台（Constant Contact、Brevo 等） — 仍然可通过 [Zapier](../zapier) 或 [Make](../make) 获得，它们触发相同的 webhook 事件：
+任何超出受众同步的内容 — 在`donation.created`上标记捐赠者、Mailchimp → B1 反向方向或完全同步到不同的电子邮件平台（Constant Contact、Brevo 等） — 仍然可通过 [Zapier](../zapier.md) 或 [Make](../make.md) 获得，它们触发相同的 webhook 事件：
 
 - **标记捐赠者：** B1 *新捐赠* → B1 *查找人员* → Mailchimp *添加订阅者到标签* (`Gave-2026`)
 - **双向：** Mailchimp *新订阅者* → B1 *创建人员*

@@ -1,5 +1,6 @@
 ---
 title: "Medbring din egen lagring"
+description: "Forbind dit eget Google Drive, Dropbox, OneDrive eller S3-kompatible bucket i B1 Admin, så kirkens filuploads springer over platformens 100 MB-grænse."
 ---
 
 # Medbring din egen lagring (BYOS)
@@ -8,7 +9,7 @@ Kirker får ca. 100 MB gratis hostet filplads (`/content/files`-områderne: file
 
 ## Udbyderlaget
 
-BYOS genbruger det lagringslag, der blev bygget til [MinistryStuff](./ministrystuff): `IStorageProvider` (`Packages/apihelper`), som for hver kirke slås op via `StorageResolver` fra tabellen `content.storageProviders`. I modsætning til de singleton-udbydere `churchapps`/`ministrystuff` har BYOS-udbydere kirkespecifikke legitimationsoplysninger, så `StorageResolver.forChurch` opretter en instans pr. anmodning ud fra kirkens række. Implementeringerne ligger ved siden af resolveren i `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider` samt `ByosAuth` (OAuth-tokenudveksling og opdatering med single-flight-deduplikering — Dropbox roterer opdaterings-tokens, så opdateringer deduplikeres på samme måde som i `ProviderProxyController`).
+BYOS genbruger det lagringslag, der blev bygget til [MinistryStuff](./ministrystuff.md): `IStorageProvider` (`Packages/apihelper`), som for hver kirke slås op via `StorageResolver` fra tabellen `content.storageProviders`. I modsætning til de singleton-udbydere `churchapps`/`ministrystuff` har BYOS-udbydere kirkespecifikke legitimationsoplysninger, så `StorageResolver.forChurch` opretter en instans pr. anmodning ud fra kirkens række. Implementeringerne ligger ved siden af resolveren i `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider` samt `ByosAuth` (OAuth-tokenudveksling og opdatering med single-flight-deduplikering — Dropbox roterer opdaterings-tokens, så opdateringer deduplikeres på samme måde som i `ProviderProxyController`).
 
 `storageProviders` indeholder legitimationsoplysningerne: `accessToken`/`refreshToken`/`tokenExpiresAt` (krypteret, OAuth-trioen) eller `apiKey`/`apiSecret` + `settings`-JSON (`{endpoint, region, bucket, publicBase}`, S3). Tokens sendes aldrig til klienten — `GET /content/storage/providers` skjuler hemmeligheder og returnerer en boolesk værdi `connected`.
 

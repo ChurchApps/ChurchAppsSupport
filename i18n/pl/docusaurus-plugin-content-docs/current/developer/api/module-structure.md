@@ -1,5 +1,6 @@
 ---
 title: "Struktura modułu"
+description: "Wyjaśnia układ modułów API: kontrolery, repozytoria, bramki, sprawdzenia autoryzacji i sześć funkcji Lambda uruchamiających kod w środowiskach B1."
 ---
 
 # Struktura modułu
@@ -13,8 +14,8 @@ Każdy moduł API ma spójną wewnętrzną strukturę, na którą składają si�
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Skonfiguruj API lokalnie -- zob. [Lokalna konfiguracja API](./local-setup)
-- Zapoznaj się z architekturą [bazy danych](./database), aby zrozumieć warstwę dostępu do danych
+- Skonfiguruj API lokalnie -- zob. [Lokalna konfiguracja API](./local-setup.md)
+- Zapoznaj się z architekturą [bazy danych](./database.md), aby zrozumieć warstwę dostępu do danych
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Komunikacja między modułami
 
-Każdy moduł posiada własną bazę danych (zob. [Baza danych](./database)), a moduł nigdy nie wysyła zapytań bezpośrednio do tabel innego modułu. Gdy jeden moduł potrzebuje danych należących do innego -- na przykład moduł doing pobierający osoby z membership -- korzysta z **bramy** (gateway) modułu będącego właścicielem danych, znajdującej się w `src/shared/modules/`:
+Każdy moduł posiada własną bazę danych (zob. [Baza danych](./database.md)), a moduł nigdy nie wysyła zapytań bezpośrednio do tabel innego modułu. Gdy jeden moduł potrzebuje danych należących do innego -- na przykład moduł doing pobierający osoby z membership -- korzysta z **bramy** (gateway) modułu będącego właścicielem danych, znajdującej się w `src/shared/modules/`:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Lokalnie funkcja `web` działa na porcie 8084, a funkcja `socket` na porcie 8087
 
 ## Powiązane artykuły
 
-- **[Baza danych](./database)** -- Ciągi połączeń, skrypty schematu i wzorce dostępu do danych
-- **[Lokalna konfiguracja API](./local-setup)** -- Pełny przewodnik konfiguracji krok po kroku
-- **[ApiHelper](../shared-libraries/api-helper)** -- Współdzielona biblioteka udostępniająca `CustomBaseController` i middleware uwierzytelniania
+- **[Baza danych](./database.md)** -- Ciągi połączeń, skrypty schematu i wzorce dostępu do danych
+- **[Lokalna konfiguracja API](./local-setup.md)** -- Pełny przewodnik konfiguracji krok po kroku
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- Współdzielona biblioteka udostępniająca `CustomBaseController` i middleware uwierzytelniania

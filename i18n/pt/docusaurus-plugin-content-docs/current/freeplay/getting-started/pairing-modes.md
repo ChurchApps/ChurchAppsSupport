@@ -1,5 +1,6 @@
 ---
 title: "Escolhendo um Modo de Pareamento"
+description: "Escolha a forma certa de parear uma TV FreePlay: um calendário do FreePlay Admin, um plano de culto do B1 Admin ou nenhum pareamento."
 ---
 
 # Escolhendo um Modo de Pareamento
@@ -32,7 +33,7 @@ Informe o código no **FreePlay Admin** em [admin.freeplay.church](https://admin
 
 **Ideal para:** Sinalização de saguão e corredores, loops de anúncios e salas de aula em que a lição já deve estar sendo exibida quando as pessoas chegam.
 
-Consulte **[Modo programado](../scheduled-mode/)** para o guia completo.
+Consulte **[Modo programado](../scheduled-mode/index.md)** para o guia completo.
 
 ## Modo de plano (B1 Admin)
 
@@ -42,7 +43,7 @@ Informe o código no **B1 Admin** quando quiser que a TV siga um tipo de plano d
 
 **Ideal para:** TVs que exibem conteúdo ligado ao plano de culto semanal, quando alguém inicia a reprodução na hora certa.
 
-Consulte **[Modo de plano](../plan-mode/)** para o guia completo.
+Consulte **[Modo de plano](../plan-mode/index.md)** para o guia completo.
 
 :::tip
 Você também pode reproduzir o plano de culto atual em uma programação. No FreePlay Admin, adicione uma entrada no calendário e escolha o tipo de plano em **Planos de culto**.
@@ -50,7 +51,7 @@ Você também pode reproduzir o plano de culto atual em uma programação. No Fr
 
 ## Provedores de conteúdo (sem pareamento)
 
-Se você não precisar parear a TV, pode navegar diretamente pelos provedores de conteúdo. Provedores como [Lessons.church](../../lessons-church/) e o Bible Project têm conteúdo que você pode baixar e reproduzir quando quiser.
+Se você não precisar parear a TV, pode navegar diretamente pelos provedores de conteúdo. Provedores como [Lessons.church](../../lessons-church/index.md) e o Bible Project têm conteúdo que você pode baixar e reproduzir quando quiser.
 
 **Ideal para:** TVs em que os voluntários escolhem o que exibir a cada semana, ou quando você quer conhecer o que está disponível.
 
@@ -60,6 +61,6 @@ Você pode abrir a tela **Provedores** a qualquer momento em **Configurações**
 
 ## Artigos relacionados
 
-- **[Modo programado](../scheduled-mode/)** - Coloque as TVs em um calendário com o FreePlay Admin
-- **[Modo de plano](../plan-mode/)** - Guia completo para parear com um plano de culto
-- **[Provedores de conteúdo](../content-providers/)** - Navegue e baixe conteúdo de fontes externas
+- **[Modo programado](../scheduled-mode/index.md)** - Coloque as TVs em um calendário com o FreePlay Admin
+- **[Modo de plano](../plan-mode/index.md)** - Guia completo para parear com um plano de culto
+- **[Provedores de conteúdo](../content-providers/index.md)** - Navegue e baixe conteúdo de fontes externas

@@ -1,5 +1,6 @@
 ---
 title: "Pag-browse ng mga Grupo"
+description: "Tingnan ang mga pampublikong grupo ng simbahan sa B1.church ayon sa kategorya, at suriin ang oras, lokasyon, at paglalarawan ng bawat card."
 ---
 
 # Pag-browse ng mga Grupo

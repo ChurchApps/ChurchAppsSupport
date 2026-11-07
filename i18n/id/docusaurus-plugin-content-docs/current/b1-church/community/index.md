@@ -1,5 +1,7 @@
 ---
-title: "Komunitas"
+title: "Direktori Komunitas Anggota di B1.church"
+sidebar_label: "Komunitas"
+description: "Cari direktori anggota gereja di B1.church berdasarkan nama atau grup, lihat profil, dan temukan tempat pembaruan Timeline yang sudah dipensiunkan."
 ---
 
 # Komunitas
@@ -26,5 +28,5 @@ Anggota dan informasi yang terlihat oleh Anda di direktori bergantung pada penga
 :::
 
 :::tip
-Gunakan fitur komunitas bersama [Grup](../groups/) untuk tetap terlibat dengan gereja Anda sepanjang minggu.
+Gunakan fitur komunitas bersama [Grup](../groups/index.md) untuk tetap terlibat dengan gereja Anda sepanjang minggu.
 :::

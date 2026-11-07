@@ -1,5 +1,6 @@
 ---
 title: "Søke etter personer"
+description: "Søk i B1 Admin-katalogen etter navn, sorter og velg kolonner i tabellvisningen, bygg filtre med Advanced Search, og eksporter treff til CSV."
 ---
 
 # Søke etter personer

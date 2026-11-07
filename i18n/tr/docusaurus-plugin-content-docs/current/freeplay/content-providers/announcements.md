@@ -1,5 +1,6 @@
 ---
 title: "Duyurular"
+description: "Lobi veya ders öncesi duyurular için FreePlay TV'de bir slayt klasörünü döngüde oynatın: sağlayıcı klasörünü seçin, senkronize tutun ve bitince kapatın."
 ---
 
 # Duyurular
@@ -13,7 +14,7 @@ FreePlay, bir klasördeki duyuru slaytlarını TV'nizde döngüsel olarak göste
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Duyuru slaytlarınızı içeren [bir içerik sağlayıcısına bağlanın](./connecting-providers), örneğin Dropbox veya OneDrive
+- Duyuru slaytlarınızı içeren [bir içerik sağlayıcısına bağlanın](./connecting-providers.md), örneğin Dropbox veya OneDrive
 - Döngüde göstermek istediğiniz resimleri veya videoları o sağlayıcıda tek bir klasöre koyun
 
 </div>
@@ -37,7 +38,7 @@ Slaytlar indirildikten sonra kenar çubuğunun üst kısmında bir **Duyurular**
 - Son slayttan sonra döngü ilk slayttan yeniden başlar
 - Klasörde tek bir video varsa, o video kendi kendini tekrar eder
 
-Döngü cihazda kayıtlı dosyalardan oynatılır, bu yüzden internet bağlantısı olmadan da çalışmaya devam eder. Diğer tüm içeriklerle aynı uzaktan kumanda tuşlarını kullanabilirsiniz. Bkz. [İçerik Oynatma](./playing-content).
+Döngü cihazda kayıtlı dosyalardan oynatılır, bu yüzden internet bağlantısı olmadan da çalışmaya devam eder. Diğer tüm içeriklerle aynı uzaktan kumanda tuşlarını kullanabilirsiniz. Bkz. [İçerik Oynatma](./playing-content.md).
 
 ## Slaytları Güncelleme
 
@@ -61,6 +62,6 @@ Sağlayıcının bağlantısını kesmek, o sağlayıcıdan gelen duyuruları da
 
 ## İlgili Makaleler
 
-- **[Sağlayıcılara Bağlanma](./connecting-providers)** - Slaytlarınızı içeren sağlayıcıya bağlanın
-- **[İçeriklere Göz Atma ve İndirme](./browsing-content)** - Bir sağlayıcının klasörlerine göz atın ve içeriği istediğiniz zaman oynatın
-- **[İçerik Oynatma](./playing-content)** - TV uzaktan kumandanız için oynatıcı denetimleri
+- **[Sağlayıcılara Bağlanma](./connecting-providers.md)** - Slaytlarınızı içeren sağlayıcıya bağlanın
+- **[İçeriklere Göz Atma ve İndirme](./browsing-content.md)** - Bir sağlayıcının klasörlerine göz atın ve içeriği istediğiniz zaman oynatın
+- **[İçerik Oynatma](./playing-content.md)** - TV uzaktan kumandanız için oynatıcı denetimleri

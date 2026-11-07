@@ -1,5 +1,6 @@
 ---
 title: "访客登记"
+description: "通过 B1 Checkin 的二维码表格，将您和家人注册为首次到访的来宾，以便志愿者在您到达时为您办理登记。"
 ---
 
 # 访客登记
@@ -22,7 +23,7 @@ title: "访客登记"
 
 访客登记专为尚未拥有账号的访客设计。在教会的签到自助机上，点击 **Register as guest**（以访客身份登记）即可显示一个二维码，扫描后会链接到登记页面。你也可以从志愿者或迎宾人员那里获取链接，或在传单或教会网站上找到它。
 
-身边没有手机？在自助机的同一二维码窗口中，点击 **Register here**，即可直接在自助机上填写表单。有关在自助机上的操作方式，请参阅[以访客身份登记](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest)。
+身边没有手机？在自助机的同一二维码窗口中，点击 **Register here**，即可直接在自助机上填写表单。有关在自助机上的操作方式，请参阅[以访客身份登记](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest)。
 
 页面会以 **Guest Registration**（访客登记）为标题打开。如果教会添加了页眉照片，它会显示在页面顶部；否则你会看到一个小图标。
 
@@ -51,7 +52,7 @@ title: "访客登记"
 - 为每位家庭成员创建**人员记录**，会籍状态为"Visitor"（访客）。
 - 你填写的任何备注都会作为备注保存在主要联系人的记录中，供教会工作人员阅读。
 - 如果教会为新来宾选择了某个小组，你的家庭会被加入该小组。如果你在该小组的某个已安排礼拜时间内登记，教会可能还会自动为你记录出勤。
-- 教会的志愿者或管理员随后即可使用 [B1 Checkin](../../b1-checkin/check-in/looking-up-members) 自助机为你的家庭签到。
+- 教会的志愿者或管理员随后即可使用 [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md) 自助机为你的家庭签到。
 
 :::info
 如果你使用相同的名字以及相同的电子邮件或电话再次登记，教会的记录会识别出你，并复用你现有的资料，而不会添加重复记录。其他人则会被作为新人员添加。如果你已经登记过，也可以直接在自助机上搜索你的姓名或电话号码。
@@ -63,6 +64,6 @@ title: "访客登记"
 
 ## 相关文章
 
-- [自助签到](./self-checkin) —— 登记后为自己签到
-- [添加访客（自助机）](../../b1-checkin/check-in/adding-guests) —— 志愿者如何在自助机上添加访客
-- [签到](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) —— 教会管理员如何设置二维码访客登记
+- [自助签到](./self-checkin.md) —— 登记后为自己签到
+- [添加访客（自助机）](../../b1-checkin/check-in/adding-guests.md) —— 志愿者如何在自助机上添加访客
+- [签到](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) —— 教会管理员如何设置二维码访客登记

@@ -1,5 +1,6 @@
 ---
 title: "Gästeregistrierung"
+description: "Rekisteröi itsesi ja perheesi ensikertalaisvieraiksi B1 Checkinin QR-lomakkeella, jotta vapaaehtoiset voivat kirjata sinut sisään saapuessasi."
 ---
 
 # Gästeregistrierung
@@ -22,7 +23,7 @@ Wenn Sie eine Kirche zum ersten Mal besuchen, können Sie sich und Ihre Familie 
 
 Die Gästeregistrierung ist für Besucher gedacht, die noch kein Konto haben. Tippen Sie am Check-in-Terminal der Kirche auf **Als Gast registrieren**, um einen QR-Code anzuzeigen, der zur Registrierungsseite führt. Den Link können Sie auch von einem ehrenamtlichen Mitarbeiter oder Empfangsmitarbeiter erhalten oder auf einem Flyer bzw. der Website der Kirche finden.
 
-Kein Telefon zur Hand? Tippen Sie im selben QR-Code-Fenster am Terminal auf **Hier registrieren**, um das Formular direkt am Terminal auszufüllen. Wie dies am Terminal funktioniert, erfahren Sie unter [Als Gast registrieren](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest).
+Kein Telefon zur Hand? Tippen Sie im selben QR-Code-Fenster am Terminal auf **Hier registrieren**, um das Formular direkt am Terminal auszufüllen. Wie dies am Terminal funktioniert, erfahren Sie unter [Als Gast registrieren](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest).
 
 Die Seite öffnet sich mit dem Titel **Gästeregistrierung**. Wenn die Kirche ein Kopfbild hinzugefügt hat, erscheint es oben auf der Seite; andernfalls sehen Sie ein kleines Symbol.
 
@@ -51,7 +52,7 @@ Ihre Registrierung legt Einträge in der Datenbank der Kirche an:
 - Für jedes Familienmitglied werden **Personendatensätze** mit dem Mitgliedschaftsstatus „Besucher“ angelegt.
 - Eventuelle Kommentare werden als Notiz im Datensatz des Hauptkontakts gespeichert, damit die Mitarbeiter der Kirche sie lesen können.
 - Hat die Kirche eine Gruppe für neue Gäste festgelegt, wird Ihre Familie dieser Gruppe hinzugefügt. Die Kirche kann Ihre Anwesenheit außerdem automatisch erfassen, wenn Sie sich während eines geplanten Gottesdienstzeitpunkts dieser Gruppe registrieren.
-- Ein ehrenamtlicher Mitarbeiter oder Administrator kann Ihre Familie anschließend über das [B1 Checkin](../../b1-checkin/check-in/looking-up-members)-Terminal einchecken.
+- Ein ehrenamtlicher Mitarbeiter oder Administrator kann Ihre Familie anschließend über das [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md)-Terminal einchecken.
 
 :::info
 Wenn Sie sich erneut mit demselben Vornamen und derselben E-Mail-Adresse oder Telefonnummer registrieren, erkennen die Unterlagen der Kirche Sie und verwenden Ihr bestehendes Profil, anstatt ein Duplikat anzulegen. Alle anderen Personen werden als neue Einträge hinzugefügt. Wenn Sie sich bereits registriert haben, können Sie auch einfach Ihren Namen oder Ihre Telefonnummer am Terminal suchen.
@@ -63,6 +64,6 @@ Wenn das Formular nach Ihrer E-Mail-Adresse fragt, hilft deren Angabe der Kirche
 
 ## Verwandte Artikel
 
-- [Selbst-Check-in](./self-checkin) -- Checken Sie sich nach der Registrierung selbst ein
-- [Gäste hinzufügen (Terminal)](../../b1-checkin/check-in/adding-guests) -- Wie ehrenamtliche Mitarbeiter am Terminal Gäste hinzufügen
-- [Check-in](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- Wie Kirchenadministratoren die QR-Gästeregistrierung einrichten
+- [Selbst-Check-in](./self-checkin.md) -- Checken Sie sich nach der Registrierung selbst ein
+- [Gäste hinzufügen (Terminal)](../../b1-checkin/check-in/adding-guests.md) -- Wie ehrenamtliche Mitarbeiter am Terminal Gäste hinzufügen
+- [Check-in](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Wie Kirchenadministratoren die QR-Gästeregistrierung einrichten

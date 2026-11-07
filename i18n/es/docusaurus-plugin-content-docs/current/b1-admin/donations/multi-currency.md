@@ -1,5 +1,6 @@
 ---
 title: "Soporte Multimoneda"
+description: "Registra e informa de donaciones en varias monedas en B1 Admin: entrada manual, donaciones con Stripe y conversión de los totales combinados."
 ---
 
 # Soporte Multimoneda

@@ -1,5 +1,6 @@
 ---
 title: "Nustatymas"
+description: "Pasirinkite vietinį kūrimo būdą: priekinės dalies darbui naudokite bendrus demo API, o backend pakeitimams paleiskite visą sistemą vietoje su MySQL."
 ---
 
 # Nustatymas
@@ -40,15 +41,15 @@ Demonstracinėje aplinkoje veikia naujausias kodas iš `main` šakos, o pavyzdin
 
 ### 2. Viso sprendimo paleidimas lokaliai
 
-Jei reikia keisti API kodą arba dirbti be interneto, visą sistemą galite paleisti lokaliai. Tam reikia MySQL 8.0+ ir papildomos konfigūracijos. Išsamių nurodymų ieškokite vadove [API lokali sąranka](../api/local-setup).
+Jei reikia keisti API kodą arba dirbti be interneto, visą sistemą galite paleisti lokaliai. Tam reikia MySQL 8.0+ ir papildomos konfigūracijos. Išsamių nurodymų ieškokite vadove [API lokali sąranka](../api/local-setup.md).
 
 ## Pradžia
 
 Vadovaukitės šiais puslapiais tokia tvarka:
 
-1. **[Būtinos sąlygos](prerequisites)** – įdiekite reikalingus įrankius (Node.js, Git, MySQL ir kt.)
-2. **[Projektų apžvalga](project-overview)** – sužinokite, kokie projektai egzistuoja ir ką jie daro
-3. **[Aplinkos kintamieji](environment-variables)** – sukonfigūruokite `.env` failus, kad visi komponentai būtų susieti
+1. **[Būtinos sąlygos](./prerequisites.md)** – įdiekite reikalingus įrankius (Node.js, Git, MySQL ir kt.)
+2. **[Projektų apžvalga](./project-overview.md)** – sužinokite, kokie projektai egzistuoja ir ką jie daro
+3. **[Aplinkos kintamieji](./environment-variables.md)** – sukonfigūruokite `.env` failus, kad visi komponentai būtų susieti
 
 :::info
 Kiekvienas ChurchApps projektas yra savarankiška Git saugykla. Reikia klonuoti tik tuos projektus, su kuriais norite dirbti.

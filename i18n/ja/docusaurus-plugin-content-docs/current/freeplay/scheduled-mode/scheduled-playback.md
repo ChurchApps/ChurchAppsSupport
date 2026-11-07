@@ -1,5 +1,6 @@
 ---
 title: "テレビでのスケジュール再生"
+description: "ペアリング済みの FreePlay TV は、翌週分をダウンロードして時刻に従って再生します。オフラインでも動作します。情報パネル、リモコンのボタン、プレイリストの固定について説明します。"
 ---
 
 # テレビでのスケジュール再生
@@ -13,8 +14,8 @@ title: "テレビでのスケジュール再生"
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- [テレビをカレンダーとペアリングする](./pairing-a-screen)
-- [カレンダーにコンテンツを予定する](./scheduling-the-calendar)、または画面のグループに既定のループを設定する
+- [テレビをカレンダーとペアリングする](./pairing-a-screen.md)
+- [カレンダーにコンテンツを予定する](./scheduling-the-calendar.md)、または画面のグループに既定のループを設定する
 
 </div>
 
@@ -40,7 +41,7 @@ title: "テレビでのスケジュール再生"
 
 - **Pin This Playlist** - 現在の内容をループで再生し続け、カレンダーを無視します。スケジュールに戻すには**Unpin Playlist**を選択します
 - **Browse Content** - 予定された再生画面を離れ、接続済みのプロバイダーを閲覧します
-- **Settings** - FreePlayの設定を開きます。ここで[カレンダーとのペアリングを解除する、または別のカレンダーにペアリングする](./pairing-a-screen#changing-or-unpairing-from-the-tv)ことができます
+- **Settings** - FreePlayの設定を開きます。ここで[カレンダーとのペアリングを解除する、または別のカレンダーにペアリングする](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)ことができます
 
 :::tip
 閲覧後にスケジュールへ戻るには、**Content Providers**画面でリモコンの**Back**を押すか、**Settings**を開いて**Pair to a calendar**を選択し、**Back to schedule**を選びます。ペアリング済みのテレビは、FreePlayがフォアグラウンドに戻るたびに予定された再生画面へ戻ります。起動時も常に予定された再生画面が開きます。
@@ -77,6 +78,6 @@ title: "テレビでのスケジュール再生"
 
 ## 関連記事
 
-- **[カレンダーの設定](./scheduling-the-calendar)** - 再生する内容と、早く終了した場合の動作を設定します
-- **[画面とグループの管理](./managing-screens)** - FreePlay Adminで各画面のダウンロード状況を確認します
-- **[コンテンツの再生](../content-providers/playing-content)** - 自分でコンテンツを再生するときのプレーヤー操作
+- **[カレンダーの設定](./scheduling-the-calendar.md)** - 再生する内容と、早く終了した場合の動作を設定します
+- **[画面とグループの管理](./managing-screens.md)** - FreePlay Adminで各画面のダウンロード状況を確認します
+- **[コンテンツの再生](../content-providers/playing-content.md)** - 自分でコンテンツを再生するときのプレーヤー操作

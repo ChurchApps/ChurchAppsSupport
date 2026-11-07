@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (Veraltet)"
+description: "Die native B1 Mobile App ist veraltet. Mitglieder und Admins sollten die B1.church-PWA nutzen. Ältere Seiten bleiben als Referenz erhalten."
 ---
 
 # B1 Mobile (Veraltet)
@@ -40,16 +41,16 @@ B1 Mobile unterstützte Push-Benachrichtigungen, damit Sie ein wichtiges Update 
 
 ## Mehr Erfahren
 
-- [Erste Schritte](./getting-started/) – Installieren Sie die App, erstellen Sie ein Konto und wählen Sie Ihre Kirche aus.
-- [Dashboard](./dashboard/) – Verstehen Sie Ihren personalisierten Startbildschirm.
-- [Groups](./groups/) – Bleiben Sie mit Ihren Kirchengruppen verbunden.
-- [Giving](./giving/) – Spenden Sie von Ihrem Telefon aus.
-- [Events](./events/) – Durchsuchen und registrieren Sie sich für bevorstehende Kirchenveranstaltungen.
-- [Check-In](./checkin/) – Melden Sie sich für Dienste und Veranstaltungen an.
-- [Serving](./serving/) – Sehen Sie Ihre Dienst-Pläne, Zuweisungen und Freiwilligenmöglichkeiten.
-- [Community](./community/) – Durchsuchen Sie das Mitgliedeverzeichnis und versenden Sie Nachrichten.
-- [Content](./content/) – Predigten, Bibel, Vers des Tages und Lektionen (Lektionen-Bildschirm veraltet – siehe [FreePlay](/docs/freeplay/)).
-- [Profile](./profile/) – Verwalten Sie Ihr Profil und Ihre Kontoeinstellungen.
+- [Erste Schritte](./getting-started/index.md) – Installieren Sie die App, erstellen Sie ein Konto und wählen Sie Ihre Kirche aus.
+- [Dashboard](./dashboard/index.md) – Verstehen Sie Ihren personalisierten Startbildschirm.
+- [Groups](./groups/index.md) – Bleiben Sie mit Ihren Kirchengruppen verbunden.
+- [Giving](./giving/index.md) – Spenden Sie von Ihrem Telefon aus.
+- [Events](./events/index.md) – Durchsuchen und registrieren Sie sich für bevorstehende Kirchenveranstaltungen.
+- [Check-In](./checkin/index.md) – Melden Sie sich für Dienste und Veranstaltungen an.
+- [Serving](./serving/index.md) – Sehen Sie Ihre Dienst-Pläne, Zuweisungen und Freiwilligenmöglichkeiten.
+- [Community](./community/index.md) – Durchsuchen Sie das Mitgliedeverzeichnis und versenden Sie Nachrichten.
+- [Content](./content/index.md) – Predigten, Bibel, Vers des Tages und Lektionen (Lektionen-Bildschirm veraltet – siehe [FreePlay](/docs/freeplay/)).
+- [Profile](./profile/index.md) – Verwalten Sie Ihr Profil und Ihre Kontoeinstellungen.
 
 :::info
 B1 Mobile wurde durch die [B1.church PWA](../b1-church/getting-started/installing-pwa.md) ersetzt. Neue Bereitstellungen sollten die PWA verwenden – die native App wird nicht mehr aktualisiert.

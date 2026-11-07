@@ -1,5 +1,6 @@
 ---
 title: "Esportazione dei dati"
+description: "Esporta da B1 Admin persone in CSV, elenchi dei membri di un gruppo o un backup completo del database B1, e scopri cosa contiene lo ZIP di esportazione."
 ---
 
 # Esportazione dei dati

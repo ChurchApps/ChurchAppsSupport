@@ -1,5 +1,6 @@
 ---
 title: "Szolgálati tervek"
+description: "Önkéntes ütemezés beállítása a B1 Adminban: tervek dátum szerint, korábbi hetekből másolás, pozíciók kiosztása és jelentkezési határidők, emlékeztetők."
 ---
 
 # Szolgálati tervek

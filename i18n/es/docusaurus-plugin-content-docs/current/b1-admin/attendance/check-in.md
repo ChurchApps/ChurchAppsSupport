@@ -1,5 +1,7 @@
 ---
-title: "Registro de entrada"
+title: "Configuración del autorregistro con B1 Checkin y B1 Admin"
+sidebar_label: "Registro de entrada"
+description: "Configura el autorregistro en los servicios con B1 Checkin en B1 Admin: dispositivos, quioscos, horarios, marca y registro de visitantes por QR."
 ---
 
 # Registro de entrada
@@ -99,7 +101,7 @@ Use la pantalla de reposo para mostrar anuncios, próximos eventos o mensajes de
 
 El quiosco de registro de entrada puede mostrar un código QR que los visitantes escanean para registrarse ellos mismos y a su familia desde su propio teléfono. Esto agiliza el proceso de registro de entrada para los invitados que llegan por primera vez.
 
-Cuando un invitado escanea el código QR, se le lleva a una [página de registro de invitados](../../b1-church/checkin/guest-registration) donde ingresa los nombres de su familia y los demás datos que usted decida solicitar. Luego, un voluntario puede buscarlo en el quiosco y registrar su entrada.
+Cuando un invitado escanea el código QR, se le lleva a una [página de registro de invitados](../../b1-church/checkin/guest-registration.md) donde ingresa los nombres de su familia y los demás datos que usted decida solicitar. Luego, un voluntario puede buscarlo en el quiosco y registrar su entrada.
 
 ### Activación del registro de invitados mediante QR
 

@@ -1,5 +1,6 @@
 ---
 title: "Edellytykset"
+description: "Asenna Node.js, npm, Git ja alustakohtaiset työkalut ennen ChurchAppsin projektien (B1 Admin, Lessons.church, FreePlay, API) paikallista käyttöä."
 ---
 
 # Edellytykset
@@ -13,7 +14,7 @@ Tarvittavat työkalut riippuvat siitä, mitä projekteja aiot työstää. Tämä
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Tutustu [projektien yleiskatsaukseen](./project-overview), jotta voit päättää, mitä projekteja haluat työstää
+- Tutustu [projektien yleiskatsaukseen](./project-overview.md), jotta voit päättää, mitä projekteja haluat työstää
 - Sinulla on oltava ylläpitäjän oikeudet kehityskoneellasi ohjelmistojen asentamiseksi
 
 </div>
@@ -40,7 +41,7 @@ Jos aiot ajaa API-palvelun paikallisesti (demo-API-rajapintojen sijaan):
 |------|---------|-------|
 | **MySQL** | 8.0+ | Jokainen API-moduuli käyttää omaa tietokantaansa |
 
-Tarvitset ydin-API:lle kuusi tietokantaa: `membership`, `attendance`, `content`, `giving`, `messaging` ja `doing`. API sisältää skriptejä skeeman alustamiseen -- katso [API:n paikallisen asennuksen](../api/local-setup) opas.
+Tarvitset ydin-API:lle kuusi tietokantaa: `membership`, `attendance`, `content`, `giving`, `messaging` ja `doing`. API sisältää skriptejä skeeman alustamiseen -- katso [API:n paikallisen asennuksen](../api/local-setup.md) opas.
 
 ## Mobiilisovellusten kehitys
 
@@ -110,5 +111,5 @@ mysql --version   # Only needed for local API development
 
 ## Seuraavat vaiheet
 
-- **[Projektien yleiskatsaus](./project-overview)** -- Katso kaikki projektit ja niiden tehtävät
-- **[Ympäristömuuttujat](./environment-variables)** -- Määritä `.env`-tiedostot
+- **[Projektien yleiskatsaus](./project-overview.md)** -- Katso kaikki projektit ja niiden tehtävät
+- **[Ympäristömuuttujat](./environment-variables.md)** -- Määritä `.env`-tiedostot

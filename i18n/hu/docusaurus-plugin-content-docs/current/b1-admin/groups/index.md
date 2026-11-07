@@ -1,5 +1,7 @@
 ---
-title: "Csoportok"
+title: "Csoportok a B1 Admin-ban"
+sidebar_label: "Csoportok"
+description: "Csoportok beállítása és szervezése a B1 Admin-ban: kategóriák, tagok, naptárak és csatlakozási kérelmek, útmutatóval a Groups oldal megtalálásához."
 ---
 
 # Csoportok

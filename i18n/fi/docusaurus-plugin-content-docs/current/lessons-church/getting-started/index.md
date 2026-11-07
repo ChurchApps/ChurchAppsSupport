@@ -1,5 +1,7 @@
 ---
-title: "Aloitus"
+title: "Aloittaminen Lessons.churchin kanssa"
+sidebar_label: "Aloitus"
+description: "Luo ilmainen Lessons.church-tili, yhdistä seurakuntasi, määritä luokkahuoneet ja aikatauluta ensimmäiset oppitunnit. Tilausta tai kokeilua ei tarvita."
 ---
 
 # Aloitus

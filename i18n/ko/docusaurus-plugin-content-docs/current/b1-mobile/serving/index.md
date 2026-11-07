@@ -1,5 +1,7 @@
 ---
-title: "봉사"
+title: "B1 Mobile 앱의 봉사 일정"
+sidebar_label: "봉사"
+description: "B1 Mobile 앱에서 봉사 일정, 다가오는 배정, 직책 상태를 확인하고, 모집 중인 봉사직에 신청하는 방법을 알아보세요."
 ---
 
 # 봉사

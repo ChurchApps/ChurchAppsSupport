@@ -1,5 +1,6 @@
 ---
 title: "Implementarea aplicației mobile"
+description: "Parcurge construirea versiunilor Android și iOS ale aplicației B1 Mobile cu Expo EAS, trimiterea lor în magazinele de aplicații și publicarea actualizărilor OTA."
 ---
 
 # Implementarea aplicației mobile
@@ -13,7 +14,7 @@ Aplicațiile mobile ChurchApps sunt construite și implementate folosind **Expo 
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Configurați aplicația mobilă local -- consultați [B1 Mobile](../mobile/b1-mobile)
+- Configurați aplicația mobilă local -- consultați [B1 Mobile](../mobile/b1-mobile.md)
 - Instalați și configurați [EAS CLI](https://docs.expo.dev/eas/)
 - Aveți acces la Google Play Console (Android) și/sau Apple App Store Connect (iOS)
 
@@ -77,6 +78,6 @@ Dacă uitați să actualizați numerele versiunilor în toate fișierele, constr
 
 ## Articole înrudite
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- Ghid de configurare locală și de dezvoltare
-- **[Implementarea API-urilor](./apis)** -- Implementarea serviciilor backend
-- **[Implementarea aplicațiilor web](./web-apps)** -- Implementarea aplicațiilor web frontend
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- Ghid de configurare locală și de dezvoltare
+- **[Implementarea API-urilor](./apis.md)** -- Implementarea serviciilor backend
+- **[Implementarea aplicațiilor web](./web-apps.md)** -- Implementarea aplicațiilor web frontend

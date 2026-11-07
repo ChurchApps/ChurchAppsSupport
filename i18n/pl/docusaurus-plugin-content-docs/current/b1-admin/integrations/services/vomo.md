@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Połącz zgłoszenia wolontariuszy VOMO i meldowania kioskowe z osobami i grupami w B1 Admin przez Zapier, wraz z zakresami kluczy API i krokami konfiguracji."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ Gdy projekt VOMO się zakończy, ręcznie wyczyść grupę w B1 (albo połącz t
 
 ### Wysyłanie SMS-a z podziękowaniem za zapis
 
-W tym samym Zapie połącz VOMO Participation z akcją Clearstream Send Text lub Text In Church Send Message. Obie mają natywne akcje Zapiera. Zobacz [Clearstream](./clearstream) i [Text In Church](./text-in-church).
+W tym samym Zapie połącz VOMO Participation z akcją Clearstream Send Text lub Text In Church Send Message. Obie mają natywne akcje Zapiera. Zobacz [Clearstream](./clearstream.md) i [Text In Church](./text-in-church.md).
 
 ### Wykrywanie rezygnacji
 
@@ -91,6 +92,6 @@ Uruchom codzienny wyzwalacz *Schedule* w Zapierze, który wywołuje akcję Find 
 
 ## Zobacz także
 
-- [Zapier (przegląd)](../zapier) — strona B1 dla każdego scenariusza Zapiera
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — łączą zapisy wolontariuszy z potwierdzeniami SMS
+- [Zapier (przegląd)](../zapier.md) — strona B1 dla każdego scenariusza Zapiera
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — łączą zapisy wolontariuszy z potwierdzeniami SMS
 - [Webhooks (dokumentacja deweloperska)](/docs/developer/api/webhooks) — zdarzenia, które mogą uruchamiać VOMO

@@ -1,5 +1,6 @@
 ---
 title: "Bài hát"
+description: "Quản lý thư viện bài hát thờ phượng trong B1 Admin: tìm kiếm và thêm bài hát, chỉnh sửa chi tiết, đính kèm lời ChordPro và bản phối, và tải lên âm thanh tập luyện."
 ---
 
 # Bài hát

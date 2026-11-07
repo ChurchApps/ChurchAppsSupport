@@ -1,5 +1,6 @@
 ---
 title: "Laporan Donasi"
+description: "Tinjau total pemberian, donatur yang berhenti, dan rincian batch di B1 Admin lewat dasbor Ringkasan Donasi, tampilan Donatur Tidak Aktif, serta ekspor CSV."
 ---
 
 # Laporan Donasi

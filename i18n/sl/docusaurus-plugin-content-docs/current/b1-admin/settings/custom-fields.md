@@ -1,5 +1,6 @@
 ---
 title: "Polja po meri"
+description: "V B1 Admin določite polja po meri za dodatne podatke o osebah, na primer datume poteka preverjanja preteklosti ali velikosti majic, nato pa jih uporabite pri iskanju in filtriranju."
 ---
 
 # Polja po meri

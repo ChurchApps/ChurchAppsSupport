@@ -1,5 +1,6 @@
 ---
 title: "Oppgaver"
+description: "Lag, tildel og lukk oppgaver i B1 Admin, finn dem under Serving > My Work, og sett forfallspåminnelser slik at oppfølging aldri glipper."
 ---
 
 # Oppgaver

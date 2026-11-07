@@ -1,5 +1,6 @@
 ---
 title: "Projektant etykiet zameldowania"
+description: "Dostosuj szablony identyfikatorów i kwitków odbioru drukowanych przy meldowaniu w B1 Admin, w tym pola, pozycjonowanie oraz warunki dla urodzin i uwag."
 ---
 
 # Projektant etykiet zameldowania
@@ -13,8 +14,8 @@ Projektant etykiet pozwala tworzyć i dostosowywać szablony plakietek z imienie
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Skonfiguruj [Frekwencję](setup) i ustaw co najmniej jedną porę nabożeństwa z włączonym zameldowaniem
-- Skonfiguruj [Zameldowanie](check-in), aby etykiety były drukowane
+- Skonfiguruj [Frekwencję](./setup.md) i ustaw co najmniej jedną porę nabożeństwa z włączonym zameldowaniem
+- Skonfiguruj [Zameldowanie](./check-in.md), aby etykiety były drukowane
 - Potrzebujesz uprawnień administratora w sekcji Frekwencja
 
 </div>
@@ -85,6 +86,6 @@ Po edycji szablonu wydrukuj próbną etykietę, aby upewnić się, że układ wy
 
 ## Powiązane artykuły
 
-- [Konfiguracja zameldowania](setup) — konfiguracja nabożeństw i grup na potrzeby zameldowania
-- [Przeprowadzanie zameldowania](check-in) — proces zameldowania dla rodzin
-- [Pierwsze kroki z B1 Checkin](../../b1-checkin/getting-started/) — aplikacja kiosku Checkin
+- [Konfiguracja zameldowania](./setup.md) — konfiguracja nabożeństw i grup na potrzeby zameldowania
+- [Przeprowadzanie zameldowania](./check-in.md) — proces zameldowania dla rodzin
+- [Pierwsze kroki z B1 Checkin](../../b1-checkin/getting-started/index.md) — aplikacja kiosku Checkin

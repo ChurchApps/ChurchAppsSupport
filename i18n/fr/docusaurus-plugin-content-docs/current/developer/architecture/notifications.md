@@ -1,5 +1,6 @@
 ---
 title: "Architecture des notifications et des rappels"
+description: "Acheminement des notifications dans l’API B1 Admin : rappels, limites d’e-mails et désabonnements SMS, par un circuit unique et un filtre de préférences."
 ---
 
 # Architecture des notifications et des rappels
@@ -185,6 +186,6 @@ En local, la même logique peut être déclenchée à la demande avec `npm run t
 
 ## Pages connexes
 
-- [Architecture temps réel](../realtime) — le protocole WebSocket et les primitives côté client (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) sur lesquels repose le niveau de remise in-app
-- [Notifications push Web](../web-push) — configuration VAPID et chemin de l'API Push du navigateur utilisé par le niveau d'escalade push
-- [Points de terminaison de messagerie](../api/endpoints/messaging) — l'API REST complète pour les messages, les conversations, les connexions et les routes de notifications et de rappels
+- [Architecture temps réel](../realtime.md) — le protocole WebSocket et les primitives côté client (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) sur lesquels repose le niveau de remise in-app
+- [Notifications push Web](../web-push.md) — configuration VAPID et chemin de l'API Push du navigateur utilisé par le niveau d'escalade push
+- [Points de terminaison de messagerie](../api/endpoints/messaging.md) — l'API REST complète pour les messages, les conversations, les connexions et les routes de notifications et de rappels

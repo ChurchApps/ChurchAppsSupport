@@ -1,5 +1,6 @@
 ---
 title: "Doing 端点"
+description: "B1 Admin 中 Doing API 的端点参考，该 API 支撑礼拜计划、志愿者分配、任务和自动化，包含路径、认证和权限。"
 ---
 
 # Doing 端点
@@ -278,6 +279,6 @@ Authorization: Bearer <token>
 
 ## 相关页面
 
-- [会员端点](./membership) —— 人员、小组、角色和权限
-- [出勤端点](./attendance) —— 礼拜和到访记录
-- [模块结构](../module-structure) —— 代码组织模式
+- [会员端点](./membership.md) —— 人员、小组、角色和权限
+- [出勤端点](./attendance.md) —— 礼拜和到访记录
+- [模块结构](../module-structure.md) —— 代码组织模式

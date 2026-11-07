@@ -1,5 +1,6 @@
 ---
 title: "Configurações"
+description: "Conheça as configurações do B1 Admin: dados da igreja, identidade visual, campi, campos personalizados, funções de usuário e navegação do app B1.church."
 ---
 
 # Configurações

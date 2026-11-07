@@ -1,5 +1,6 @@
 ---
 title: "Веб апликације"
+description: "Преглед три ChurchApps веб апликације (B1 Admin, B1.church, Lessons.church), њихов заједнички React и MUI стек, apphelper пакети и алати за build."
 ---
 
 # Веб апликације
@@ -41,7 +42,7 @@ ChurchApps укључује три веб апликације, од којих 
 | `@churchapps/apphelper-website` | Компоненте за веб сајт и CMS |
 
 :::tip
-За детаље о локалном развоју ових дељених пакета погледајте документацију за [AppHelper](../shared-libraries/app-helper).
+За детаље о локалном развоју ових дељених пакета погледајте документацију за [AppHelper](../shared-libraries/app-helper.md).
 :::
 
 ## Postinstall скрипта

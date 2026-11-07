@@ -1,5 +1,7 @@
 ---
-title: "Emacembu"
+title: "Sikrini Semaqembu Ku-B1 Mobile"
+sidebar_label: "Emacembu"
+description: "Thola emaqembu lowakhunga kuwo kusikrini semaqembu se-B1 Mobile, kuhlanganisa leliqembu lakho lelivakashelwa kakhulu ngasemuva, nemaqembu asele elicawe lakho ngaphansi kwalo."
 ---
 
 # Emacembu
@@ -30,10 +32,10 @@ Nakuku loko longakwenta usuka esikrinini se-Emacembu:
 - **Hlala uhlangene** -- Bona loko lokwabelwane bemalunga elicembu lakho, ulandzele ingcoco, futsi uhlanganyele nekucuketfwe kwelicembu.
 
 :::tip
-Sikrini se-Emacembu sitivumelanisa nekusetjentiswa kwakho, njengalokufananako [i-dashboard](../dashboard/). Emacembu lowavakashela kakhulu akhushulelwa etulu kute ufinyelele kalula.
+Sikrini se-Emacembu sitivumelanisa nekusetjentiswa kwakho, njengalokufananako [i-dashboard](../dashboard/index.md). Emacembu lowavakashela kakhulu akhushulelwa etulu kute ufinyelele kalula.
 :::
 
 ## Tinyatselo Letilandzelako
 
-- [Imininingwane Yelicembu](./group-details) -- Bona loko lokusekhasini lemininingwane yelicembu
-- [Sikhatsi Selicembu](./group-timeline) -- Funda ngeluhlu lwetento loluhlangene emacenjini akho
+- [Imininingwane Yelicembu](./group-details.md) -- Bona loko lokusekhasini lemininingwane yelicembu
+- [Sikhatsi Selicembu](./group-timeline.md) -- Funda ngeluhlu lwetento loluhlangene emacenjini akho

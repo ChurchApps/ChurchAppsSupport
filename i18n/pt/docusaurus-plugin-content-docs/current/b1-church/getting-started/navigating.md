@@ -1,5 +1,6 @@
 ---
 title: "Navegando pelo B1App"
+description: "Encontre o caminho no portal de membros do B1.church pelo celular ou computador: painel Home, barra de abas inferior, página More e página Me."
 ---
 
 # Navegando pelo B1App
@@ -92,7 +93,7 @@ As páginas de detalhes -- um grupo, um plano, sua página Eu, as telas Planos e
 
 ## A página Eu
 
-**Eu** (`/mobile/me`) é o seu centro pessoal. Ela mostra seu nome e sua foto, com os botões **Editar perfil** e **Configurações** ([preferências de notificação](./notification-preferences.md)), e depois o que está previsto para você -- compromissos de voluntariado, inscrições em eventos e eventos de grupos --, seguido da sua família, dos seus grupos, das suas [doações](../giving/) neste ano, dos formulários que você enviou, do seu histórico de presença, das suas [inscrições](../events/my-registrations.md) e das suas notificações e mensagens recentes. Veja [A página Eu](./me-page) para mais detalhes.
+**Eu** (`/mobile/me`) é o seu centro pessoal. Ela mostra seu nome e sua foto, com os botões **Editar perfil** e **Configurações** ([preferências de notificação](./notification-preferences.md)), e depois o que está previsto para você -- compromissos de voluntariado, inscrições em eventos e eventos de grupos --, seguido da sua família, dos seus grupos, das suas [doações](../giving/index.md) neste ano, dos formulários que você enviou, do seu histórico de presença, das suas [inscrições](../events/my-registrations.md) e das suas notificações e mensagens recentes. Veja [A página Eu](./me-page.md) para mais detalhes.
 
 Se você estiver desconectado, a página Eu mostra um botão **Entrar** no lugar.
 

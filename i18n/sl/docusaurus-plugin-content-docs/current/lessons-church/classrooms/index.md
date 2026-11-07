@@ -1,5 +1,6 @@
 ---
 title: "Razredi"
+description: "Nastavi in upravljaj učilnice, ki organizirajo urnik poučevanja v Lessons.church: od prostorov in starostnih skupin do pogledov za prostovoljce."
 ---
 
 # Razredi

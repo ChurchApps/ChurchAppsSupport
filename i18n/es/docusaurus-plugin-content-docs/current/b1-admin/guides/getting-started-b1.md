@@ -1,5 +1,6 @@
 ---
 title: "Guía: Cómo empezar con B1 en tu iglesia"
+description: "Guía para configurar una iglesia nueva en B1 Admin: crear tu cuenta, ajustar la configuración, añadir roles, importar miembros y activar funciones clave."
 ---
 
 # Cómo empezar con B1 en tu iglesia

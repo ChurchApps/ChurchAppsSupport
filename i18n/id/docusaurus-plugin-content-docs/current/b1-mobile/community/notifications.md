@@ -1,5 +1,6 @@
 ---
 title: "Notifikasi"
+description: "Atur notifikasi push untuk aplikasi B1 Mobile, lalu lihat, buka, dan hapus notifikasi gereja Anda untuk pesan, grup, dan pelayanan."
 ---
 
 # Notifikasi
@@ -13,7 +14,7 @@ B1 Mobile menggunakan notifikasi push untuk membantu Anda tetap mengetahui apa y
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- [Pasang B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Pasang B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 - Izinkan notifikasi untuk B1 Mobile di pengaturan perangkat Anda
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile menggunakan notifikasi push untuk membantu Anda tetap mengetahui apa y
 
 Notifikasi dapat mencakup berbagai aktivitas, antara lain:
 
-- **Pesan** -- Ketika seseorang mengirim Anda [pesan pribadi](./messaging).
-- **Aktivitas grup** -- Pembaruan, postingan, dan percakapan dari [grup](../groups/) yang Anda ikuti.
+- **Pesan** -- Ketika seseorang mengirim Anda [pesan pribadi](./messaging.md).
+- **Aktivitas grup** -- Pembaruan, postingan, dan percakapan dari [grup](../groups/index.md) yang Anda ikuti.
 - **Tugas pelayanan** -- Ketika Anda ditugaskan ke sebuah [jadwal](../serving/viewing-plans.md) atau ketika status tugas Anda berubah.
 - **Pembaruan lainnya** -- Pengumuman umum dan aktivitas yang relevan bagi Anda.
 

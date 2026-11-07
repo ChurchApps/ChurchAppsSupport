@@ -1,5 +1,7 @@
 ---
-title: "Pengaturan Awal"
+title: "Pengaturan Awal Gereja di B1 Admin"
+sidebar_label: "Pengaturan Awal"
+description: "Panduan konfigurasi awal gereja baru di B1 Admin: info gereja, branding, peran, dan urutan yang disarankan untuk jemaat, grup, kehadiran, dan persembahan."
 ---
 
 # Pengaturan Awal

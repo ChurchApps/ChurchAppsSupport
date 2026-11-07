@@ -1,5 +1,6 @@
 ---
 title: "Daten importieren"
+description: "Übernehmen Sie in B1 Admin bestehende Personen-, Gruppen-, Anwesenheits- und Spendendaten mit dem Werkzeug B1 Transfer oder exportieren Sie jederzeit eine Sicherung Ihrer Daten."
 ---
 
 # Daten importieren

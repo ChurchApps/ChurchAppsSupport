@@ -1,5 +1,6 @@
 ---
 title: "Ryhmien liittymispyynnöt"
+description: "Käsittele ryhmien liittymispyynnöt B1 Adminissa: hyväksy tai hylkää ne, etsi vastaamattomat pyynnöt ohjaajana tai pääkäyttäjänä ja lisää syy hylätessä."
 ---
 
 # Ryhmien liittymispyynnöt

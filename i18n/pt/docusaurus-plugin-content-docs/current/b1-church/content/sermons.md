@@ -1,5 +1,7 @@
 ---
-title: "Sermões"
+title: "Navegando por Sermões no Seu Site B1.church"
+sidebar_label: "Sermões"
+description: "Navegue e assista a sermões gravados da biblioteca da sua igreja no site B1.church, organizados em séries ou playlists. Sem necessidade de login."
 ---
 
 # Sermões

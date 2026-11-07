@@ -1,5 +1,6 @@
 ---
 title: "Salles, ressources et planification"
+description: "Configurez les salles, équipements, plages bloquées et modèles d'événements dans B1 Admin pour que les groupes puissent demander des réservations que vous approuvez afin d'éviter les doubles réservations."
 ---
 
 # Salles, ressources et planification
@@ -14,7 +15,7 @@ Les salles et ressources vous permettent de suivre les espaces réservables et l
 <h4>Avant de commencer</h4>
 
 - Vous devez avoir accès administratif à la section Calendriers dans B1 Admin
-- Configurez les [groupes](../groups/creating-groups) dont les membres soumettront les demandes de réservation
+- Configurez les [groupes](../groups/creating-groups.md) dont les membres soumettront les demandes de réservation
 
 </div>
 
@@ -76,7 +77,7 @@ Quand créer un nouvel événement, le personnel peut choisir un modèle existan
 
 ## Articles connexes
 
-- [Calendrier de disponibilité](availability) — afficher toutes les réservations d'un coup d'œil et réserver les salles ou ressources directement
-- [Approbations de calendrier](approvals) — approuver ou rejeter les demandes de réservation de salles et ressources
-- [Créer des calendriers](creating-calendars) — configurer des calendriers d'événements
-- [Créer des groupes](../groups/creating-groups) — configurer les groupes qui peuvent réserver les salles et ressources
+- [Calendrier de disponibilité](./availability.md) — afficher toutes les réservations d'un coup d'œil et réserver les salles ou ressources directement
+- [Approbations de calendrier](./approvals.md) — approuver ou rejeter les demandes de réservation de salles et ressources
+- [Créer des calendriers](./creating-calendars.md) — configurer des calendriers d'événements
+- [Créer des groupes](../groups/creating-groups.md) — configurer les groupes qui peuvent réserver les salles et ressources

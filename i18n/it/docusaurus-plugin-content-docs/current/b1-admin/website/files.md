@@ -1,5 +1,6 @@
 ---
 title: "File"
+description: "Carica, sfoglia e gestisci immagini e documenti per il sito della chiesa in B1 Admin, anche collegando uno spazio di archiviazione esterno per più capacità."
 ---
 
 # File
@@ -13,7 +14,7 @@ La pagina File è il repository centrale per tutti i media e i documenti utilizz
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Completa la [Configurazione Iniziale](initial-setup) per il tuo sito web
+- Completa la [Configurazione Iniziale](./initial-setup.md) per il tuo sito web
 - Ottimizza le immagini prima di caricarle per tempi di caricamento della pagina più veloci
 - Prepara i tuoi file in formati web comuni (PNG, JPG, PDF, ecc.)
 
@@ -42,7 +43,7 @@ La tabella dei file elenca tutti i file caricati con il loro **Nome** e la **Dim
 3. I file che carichi qui sono disponibili per l'uso su tutte le pagine del sito web e i blocchi di contenuto.
 
 :::info
-Quando costruisci le pagine in [Gestione Pagine](managing-pages), puoi fare riferimento a qualsiasi file caricato qui dal suo URL. Questo mantiene tutti i tuoi media organizzati in un'unica posizione centrale.
+Quando costruisci le pagine in [Gestione Pagine](./managing-pages.md), puoi fare riferimento a qualsiasi file caricato qui dal suo URL. Questo mantiene tutti i tuoi media organizzati in un'unica posizione centrale.
 :::
 
 ## Eliminazione di File
@@ -57,5 +58,5 @@ I file eliminati non possono essere recuperati. Verifica due volte che un file n
 
 ## Prossimi Passaggi
 
-- [Gestione Pagine](managing-pages) -- Aggiungi i tuoi file caricati alle pagine del sito web
-- [Aspetto](appearance) -- Personalizza il tema visivo del tuo sito
+- [Gestione Pagine](./managing-pages.md) -- Aggiungi i tuoi file caricati alle pagine del sito web
+- [Aspetto](./appearance.md) -- Personalizza il tema visivo del tuo sito

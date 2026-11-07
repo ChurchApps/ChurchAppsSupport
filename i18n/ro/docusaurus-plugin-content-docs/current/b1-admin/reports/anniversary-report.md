@@ -1,5 +1,6 @@
 ---
 title: "Listă de aniversări"
+description: "Extrage din B1 Admin lista persoanelor cu aniversare de nuntă într-o lună aleasă, cu datele afișate în rezultate și exportabilă într-o foaie de calcul."
 ---
 
 # Listă de aniversări

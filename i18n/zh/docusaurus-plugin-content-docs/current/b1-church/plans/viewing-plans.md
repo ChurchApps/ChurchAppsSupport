@@ -1,5 +1,7 @@
 ---
-title: "查看计划"
+title: "B1.church 会员门户中的您的服事计划"
+sidebar_label: "查看计划"
+description: "在 B1.church 中查看您的服事计划分配，接受或拒绝请求，设置不可服事的日期，并回顾您过去的服事记录。"
 ---
 
 # 查看计划

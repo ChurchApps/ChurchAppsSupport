@@ -1,5 +1,6 @@
 ---
 title: "메시징"
+description: "B1 Mobile에서 교회 회원과 1:1 개인 대화를 시작하고, 읽고, 수정하고, 삭제하세요. 회원 디렉터리에서 사람을 찾을 수도 있습니다."
 ---
 
 # 메시징
@@ -13,7 +14,7 @@ B1 Mobile에는 개인 메시징이 포함되어 있어 앱에서 직접 다른 
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [B1 Mobile을 설치하고](../getting-started/installing) [로그인](../getting-started/logging-in)하세요
+- [B1 Mobile을 설치하고](../getting-started/installing.md) [로그인](../getting-started/logging-in.md)하세요
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile에는 개인 메시징이 포함되어 있어 앱에서 직접 다른 
 ## 새 대화 시작하기
 
 1. 메시징 화면에서 새 대화를 시작하는 옵션을 탭하세요.
-2. 검색 필드를 사용하여 메시지를 보낼 회원을 찾으세요. [Member Directory](./member-directory)를 통해 회원을 찾을 수도 있습니다.
+2. 검색 필드를 사용하여 메시지를 보낼 회원을 찾으세요. [Member Directory](./member-directory.md)를 통해 회원을 찾을 수도 있습니다.
 3. 검색 결과에서 회원을 선택하세요.
 4. 메시지를 입력하고 **Send**를 탭하세요.
 
@@ -52,11 +53,11 @@ B1 Mobile에는 개인 메시징이 포함되어 있어 앱에서 직접 다른 
 :::
 
 :::info
-[push notifications](./notifications)을 활성화하여 앱이 열려 있지 않아도 누군가 새 메시지를 보낼 때 알림을 받으세요.
+[push notifications](./notifications.md)을 활성화하여 앱이 열려 있지 않아도 누군가 새 메시지를 보낼 때 알림을 받으세요.
 :::
 
 ## 관련 문서
 
-- [Member Directory](./member-directory) -- 메시지를 보낼 회원 찾기
-- [Notifications](./notifications) -- 새 메시지에 대한 알림 받기
-- [Groups](../groups/) -- 그룹 대화에 참여하기
+- [Member Directory](./member-directory.md) -- 메시지를 보낼 회원 찾기
+- [Notifications](./notifications.md) -- 새 메시지에 대한 알림 받기
+- [Groups](../groups/index.md) -- 그룹 대화에 참여하기

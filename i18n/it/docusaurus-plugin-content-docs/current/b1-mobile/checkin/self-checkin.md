@@ -1,5 +1,7 @@
 ---
-title: "Check-In Autonomo"
+title: "Self check-in dall'app B1 Mobile"
+sidebar_label: "Check-In Autonomo"
+description: "Registra te stesso e il tuo nucleo familiare a un servizio dall'app B1 Mobile, scegliendo l'orario del culto e assegnando il gruppo di ciascuna persona."
 ---
 
 # Check-In Autonomo
@@ -13,7 +15,7 @@ Registrare la presenza da B1 Mobile è un processo semplice a più passaggi. In 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- [Installa B1 Mobile](../getting-started/installing) e [accedi](../getting-started/logging-in) al tuo account
+- [Installa B1 Mobile](../getting-started/installing.md) e [accedi](../getting-started/logging-in.md) al tuo account
 - Assicurati che i [membri della tua famiglia](../profile/household.md) siano configurati nel tuo profilo
 
 </div>

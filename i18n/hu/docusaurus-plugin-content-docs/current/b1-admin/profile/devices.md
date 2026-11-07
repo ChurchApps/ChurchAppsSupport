@@ -1,5 +1,6 @@
 ---
 title: "Eszközök kezelése"
+description: "ChurchAppsPlayer és FreePlay képernyők párosítása, címkézése és eltávolítása a fiókjához kapcsolt B1 Admin-ban, biztonságos és naprakész kijelzőkhöz."
 ---
 
 # Eszközök kezelése

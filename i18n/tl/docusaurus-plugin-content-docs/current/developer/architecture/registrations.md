@@ -1,12 +1,13 @@
 ---
 title: "Mga Event Registration"
+description: "Paano gumagana ang event registration sa B1 Admin at B1App: uri ng dadalo, bayad na add-on, discount code, bayad sa gateway, at promosyon sa waitlist."
 ---
 
 # Mga Event Registration
 
 <div class="article-intro">
 
-Nakatira ang native na event registration sa content module at, simula ng paid-registrations wave, nagdadala ng buong commerce model: mga uri ng dadalo na may presyo, mga opsyonal na add-on selection na may presyo, mga discount code, mga bayad sa pamamagitan ng umiiral na giving gateway ng simbahan, at isang waitlist na pinapatakbo ng status. Sadyang muling ginagamit ng daloy ng pera ang giving stack -- ang registration controller ay naniningil sa pamamagitan ng parehong abstraction na `GatewayService` / `IGatewayProvider` na nakadokumento sa [Giving](./giving), kaya walang datos ng card o kaalaman sa SDK ng gateway sa content module. Inilalarawan ng pahinang ito ang data model, mga panuntunan sa presyo at capacity, at ang mga daloy ng registration, bayad, at waitlist.
+Nakatira ang native na event registration sa content module at, simula ng paid-registrations wave, nagdadala ng buong commerce model: mga uri ng dadalo na may presyo, mga opsyonal na add-on selection na may presyo, mga discount code, mga bayad sa pamamagitan ng umiiral na giving gateway ng simbahan, at isang waitlist na pinapatakbo ng status. Sadyang muling ginagamit ng daloy ng pera ang giving stack -- ang registration controller ay naniningil sa pamamagitan ng parehong abstraction na `GatewayService` / `IGatewayProvider` na nakadokumento sa [Giving](./giving.md), kaya walang datos ng card o kaalaman sa SDK ng gateway sa content module. Inilalarawan ng pahinang ito ang data model, mga panuntunan sa presyo at capacity, at ang mga daloy ng registration, bayad, at waitlist.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Nangyayari ang tokenization sa browser gaya ng sa mga donasyon (tingnan ang [Giving](./giving)) -- muling ginagamit ng wizard ang apphelper payment provider registry, kaya maaaring magbayad ang mga naka-log in na miyembro gamit ang mga naka-save na card at nagto-tokenize ng bagong card ang mga guest. Sinasalamin ng controller ang mga kakaibang ugali ng provider ng `DonateController` (mga payment-method id ng Kingdom Funding na `pm-{id}`, mga tugon ng Stripe SCA na `requires_action` na ibinabalik sa client nang hindi nagtatala ng bayad). Ang matagumpay na singil ay nagsusulat ng row ng `registrationPayments`, dinadagdagan ang `amountPaid`, at kinukumpirma ang registration. **Hindi pa naipapatupad ang mga refund** -- ang nakanselang bayad na registration ay nananatili ang mga row ng bayad, at anumang refund ay ginagawa sa labas ng sistema sa dashboard ng gateway.
+Nangyayari ang tokenization sa browser gaya ng sa mga donasyon (tingnan ang [Giving](./giving.md)) -- muling ginagamit ng wizard ang apphelper payment provider registry, kaya maaaring magbayad ang mga naka-log in na miyembro gamit ang mga naka-save na card at nagto-tokenize ng bagong card ang mga guest. Sinasalamin ng controller ang mga kakaibang ugali ng provider ng `DonateController` (mga payment-method id ng Kingdom Funding na `pm-{id}`, mga tugon ng Stripe SCA na `requires_action` na ibinabalik sa client nang hindi nagtatala ng bayad). Ang matagumpay na singil ay nagsusulat ng row ng `registrationPayments`, dinadagdagan ang `amountPaid`, at kinukumpirma ang registration. **Hindi pa naipapatupad ang mga refund** -- ang nakanselang bayad na registration ay nananatili ang mga row ng bayad, at anumang refund ay ginagawa sa labas ng sistema sa dashboard ng gateway.
 
 Pareho ang landas ng code ng dalawang entry point: `register` (magbayad sa pag-sign up) at `pay` (bayad ng balanse / pagkumpleto ng waitlist).
 
@@ -147,7 +148,7 @@ Ang mga cross-module na lookup (pag-resolve o paggawa ng guest na tao, pag-load 
 
 ## Mga Kaugnay na Pahina
 
-- [Giving](./giving) -- ang gateway abstraction, provider registry, at modelo ng tokenization na muling ginagamit ng feature na ito
-- [Content Endpoints](../api/endpoints/content) -- ang REST surface ng content module
-- [Webhooks](../api/webhooks) -- ang event na `registration.created`
-- [Module Structure](../api/module-structure) -- kung paano inaayos ang content module sa panig ng server
+- [Giving](./giving.md) -- ang gateway abstraction, provider registry, at modelo ng tokenization na muling ginagamit ng feature na ito
+- [Content Endpoints](../api/endpoints/content.md) -- ang REST surface ng content module
+- [Webhooks](../api/webhooks.md) -- ang event na `registration.created`
+- [Module Structure](../api/module-structure.md) -- kung paano inaayos ang content module sa panig ng server

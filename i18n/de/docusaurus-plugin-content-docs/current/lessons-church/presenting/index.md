@@ -1,5 +1,6 @@
 ---
 title: "Präsentation"
+description: "Lektionen per Beamer mit dem Präsentationsmodus von Lessons.church zeigen, Leitfäden für Ehrenamtliche teilen und Material vorab drucken."
 ---
 
 # Präsentation

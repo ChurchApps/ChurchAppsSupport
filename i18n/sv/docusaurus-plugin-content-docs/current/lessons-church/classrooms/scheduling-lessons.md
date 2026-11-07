@@ -1,5 +1,7 @@
 ---
-title: "Schemalägga lektioner"
+title: "Schemalägga klassrumslektioner i portalen"
+sidebar_label: "Schemalägga lektioner"
+description: "Schemalägg Lessons.church-lektioner i klassrumskalendern i B1 Admin-portalen genom att välja program, studie, lektion och åldersvariant för varje datum."
 ---
 
 # Schemalägga lektioner

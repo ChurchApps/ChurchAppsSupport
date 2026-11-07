@@ -1,5 +1,6 @@
 ---
 title: "Triển khai ứng dụng web"
+description: "Hướng dẫn triển khai ứng dụng web ChurchApps như B1 Admin lên Amazon S3 và CloudFront, tự động qua GitHub Actions khi merge hoặc chạy lệnh thủ công."
 ---
 
 # Triển khai ứng dụng web
@@ -13,7 +14,7 @@ Các ứng dụng web của ChurchApps được triển khai dưới dạng tran
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Thiết lập ứng dụng web trên máy cục bộ và xác nhận ứng dụng build thành công -- xem [Ứng dụng web](../web-apps/)
+- Thiết lập ứng dụng web trên máy cục bộ và xác nhận ứng dụng build thành công -- xem [Ứng dụng web](../web-apps/index.md)
 - Cấu hình thông tin xác thực AWS với quyền truy cập S3 và CloudFront
 - Biết tên S3 bucket đích và ID của CloudFront distribution
 
@@ -53,6 +54,6 @@ Nếu bạn cần kiểm tra bản build trên máy cục bộ trước khi tri�
 
 ## Bài viết liên quan
 
-- **[Ứng dụng web](../web-apps/)** -- Hướng dẫn thiết lập cho B1Admin, B1App và LessonsApp
-- **[Triển khai API](./apis)** -- Triển khai các API phía máy chủ
-- **[Triển khai ứng dụng di động](./mobile)** -- Triển khai ứng dụng di động lên cửa hàng ứng dụng
+- **[Ứng dụng web](../web-apps/index.md)** -- Hướng dẫn thiết lập cho B1Admin, B1App và LessonsApp
+- **[Triển khai API](./apis.md)** -- Triển khai các API phía máy chủ
+- **[Triển khai ứng dụng di động](./mobile.md)** -- Triển khai ứng dụng di động lên cửa hàng ứng dụng

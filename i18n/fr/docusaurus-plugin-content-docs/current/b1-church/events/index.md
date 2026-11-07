@@ -1,5 +1,7 @@
 ---
-title: "Événements"
+title: "Événements B1.church : parcourir et s'inscrire"
+sidebar_label: "Événements"
+description: "Parcourez les événements à venir sur B1.church, vérifiez l'état des inscriptions, et inscrivez-vous ou ajoutez-les à votre agenda."
 ---
 
 # Événements
@@ -43,7 +45,7 @@ Si un événement est complet, vous pouvez peut-être toujours rejoindre la **li
 
 ## En savoir plus
 
-- [S'inscrire à un événement](./registering) -- Guide pas à pas pour s'inscrire à un événement
-- [Mes inscriptions](./my-registrations) -- Consulter vos inscriptions, régler les soldes, modifier ou annuler
-- [Demander un événement et des salles](./requesting-events) -- Demander un événement avec les salles et ressources nécessaires
-- [Enregistrement autonome](../checkin/self-checkin) -- Enregistrez votre arrivée à l'événement
+- [S'inscrire à un événement](./registering.md) -- Guide pas à pas pour s'inscrire à un événement
+- [Mes inscriptions](./my-registrations.md) -- Consulter vos inscriptions, régler les soldes, modifier ou annuler
+- [Demander un événement et des salles](./requesting-events.md) -- Demander un événement avec les salles et ressources nécessaires
+- [Enregistrement autonome](../checkin/self-checkin.md) -- Enregistrez votre arrivée à l'événement

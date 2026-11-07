@@ -1,5 +1,7 @@
 ---
-title: "Blogi"
+title: "Blogin selaaminen B1.churchissa ja RSS-syötteet"
+sidebar_label: "Blogi"
+description: "Selaa ja suodata seurakuntasi B1.church-blogia kategorian tai tagin mukaan, selaa vanhempia kirjoituksia tai seuraa uusia RSS-syötteiden kautta."
 ---
 
 # Blogi

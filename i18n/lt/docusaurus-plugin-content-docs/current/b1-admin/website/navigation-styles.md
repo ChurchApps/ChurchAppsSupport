@@ -1,5 +1,6 @@
 ---
 title: "Navigacijos stiliai"
+description: "Pritaikykite B1 Admin svetainės naršymo juostų spalvas vientisoms ir permatomoms juostoms, įskaitant nuorodų, užvedimo ir aktyvias būsenas."
 ---
 
 # Navigacijos stiliai

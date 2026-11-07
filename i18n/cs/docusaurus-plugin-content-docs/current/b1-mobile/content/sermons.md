@@ -1,5 +1,7 @@
 ---
-title: "Kázání"
+title: "Sledování kázání v B1 Mobile"
+sidebar_label: "Kázání"
+description: "Procházejte, vyhledávejte a sledujte nahraná kázání a série v aplikaci B1 Mobile, včetně způsobu, jak sledovat odpočet živého přenosu."
 ---
 
 # Kázání
@@ -13,7 +15,7 @@ Obrazovka Kázání vám umožňuje procházet a sledovat nahraná kázání z v
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing) a [přihlaste se](../getting-started/logging-in) ke svému účtu
+- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing.md) a [přihlaste se](../getting-started/logging-in.md) ke svému účtu
 - Váš sbor musí mít nakonfigurovaný obsah kázání v administrační části
 
 </div>
@@ -29,7 +31,7 @@ V horní části obrazovky je nejnovější kázání zobrazeno jako zvýrazněn
 
 ## Odpočet živého přenosu
 
-Pokud se [živý přenos](./live-streaming) chystá v následujících 24 hodinách, na obrazovce Kázání se zobrazí odpočítávací časovač. Díky němu víte, kdy začne vysílání další bohoslužby, a můžete si naplánovat sledování naživo.
+Pokud se [živý přenos](./live-streaming.md) chystá v následujících 24 hodinách, na obrazovce Kázání se zobrazí odpočítávací časovač. Díky němu víte, kdy začne vysílání další bohoslužby, a můžete si naplánovat sledování naživo.
 
 ## Sledování kázání
 
@@ -51,7 +53,7 @@ Každý záznam kázání může zobrazovat:
 - **Náhled** -- Náhledový obrázek kázání
 
 :::tip
-Pokud na obrazovce Kázání uvidíte odpočet, klepnutím na něj přejdete přímo na [živý přenos](./live-streaming), jakmile začne.
+Pokud na obrazovce Kázání uvidíte odpočet, klepnutím na něj přejdete přímo na [živý přenos](./live-streaming.md), jakmile začne.
 :::
 
 ## Dostupnost

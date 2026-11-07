@@ -1,5 +1,6 @@
 ---
 title: Declarația de credință
+description: "Ce crede ChurchApps despre Dumnezeu, Isus, Duhul Sfânt, Scriptură, mântuire și biserică, standardul pentru revizuirea curriculumului Lessons.church."
 ---
 
 # Declarația de credință

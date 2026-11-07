@@ -1,5 +1,6 @@
 ---
 title: "Self-hosting na Railway"
+description: "Nasadte súkromnú inštanciu ChurchApps na Railway za približne 15 minút a potom nakonfigurujte e-mail, vlastné domény, smerovanie viacerých cirkví, dary a úložisko súborov pre B1 Admin a B1App."
 ---
 
 # Self-hosting na Railway
@@ -195,7 +196,7 @@ Tieto integrácie odomykajú konkrétne funkcie a dajú sa pridať neskôr cez p
 | `VIMEO_TOKEN` | Podpora kázní na Vimeo |
 | `API_BIBLE_KEY` | Vyhľadávanie biblických veršov v lekciách a obsahu |
 | `YOUVERSION_API_KEY` | Integrácia Biblie YouVersion |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Push upozornenia v prehliadači ([vygenerujte pár kľúčov VAPID](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Push upozornenia v prehliadači ([vygenerujte pár kľúčov VAPID](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Voliteľná synchronizácia CRM pre nové registrácie |
 
 ## Aktualizácie
@@ -234,9 +235,9 @@ Ak narazíte na niečo, čo tu nie je, otvorte issue na [github.com/ChurchApps/A
 
 ## Súvisiace články
 
-- **[Self-hosting s Dockerom](./docker)** — Rovnaký stack na vlastnom hardvéri alebo VPS
-- **[Počiatočné nastavenie](../../getting-started/initial-setup)** — Prvé kroky po vytvorení kostola
-- **[Počiatočné nastavenie webu](../../b1-admin/website/initial-setup)** — Konfigurácia verejnej stránky kostola
-- **[Nastavenia darov](../../b1-admin/donations/online-giving-setup)** — Pripojenie Stripe alebo PayPal
-- **[Lokálne nastavenie API](../api/local-setup)** — Spustenie stacku lokálne na vývoj
-- **[Nasadenie API (AWS)](./apis)** — Ako sa nasadzuje oficiálny SaaS ChurchApps
+- **[Self-hosting s Dockerom](./docker.md)** — Rovnaký stack na vlastnom hardvéri alebo VPS
+- **[Počiatočné nastavenie](../../getting-started/initial-setup.md)** — Prvé kroky po vytvorení kostola
+- **[Počiatočné nastavenie webu](../../b1-admin/website/initial-setup.md)** — Konfigurácia verejnej stránky kostola
+- **[Nastavenia darov](../../b1-admin/donations/online-giving-setup.md)** — Pripojenie Stripe alebo PayPal
+- **[Lokálne nastavenie API](../api/local-setup.md)** — Spustenie stacku lokálne na vývoj
+- **[Nasadenie API (AWS)](./apis.md)** — Ako sa nasadzuje oficiálny SaaS ChurchApps

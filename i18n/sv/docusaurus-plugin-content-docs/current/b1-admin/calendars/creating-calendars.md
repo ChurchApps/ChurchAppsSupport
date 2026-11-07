@@ -1,5 +1,6 @@
 ---
 title: "Skapa kalendrar"
+description: "Skapa en kalender i B1 Admin, koppla grupper eller importera .ics-filer och hantera händelser, anmälningar och anteckningar på ett och samma ställe."
 ---
 
 # Skapa kalendrar
@@ -61,7 +62,7 @@ Att koppla grupper till din kalender är ett kraftfullt sätt att automatiskt sa
 :::
 
 :::info
-Om du vill skapa en enda kalender som hämtar händelser från många grupper i din kyrka, se [Kuraterad kalender](curated-calendar) för ett smidigt tillvägagångssätt.
+Om du vill skapa en enda kalender som hämtar händelser från många grupper i din kyrka, se [Kuraterad kalender](./curated-calendar.md) för ett smidigt tillvägagångssätt.
 :::
 
 ## Lägga till och redigera händelser {#adding-and-editing-events}
@@ -75,7 +76,7 @@ Klicka på **Ny händelse** på kalenderns detaljsida för att lägga till en h�
 - **Start** och **Slut**, **Upprepas** och **Synlighet** (**Offentlig** eller **Privat**).
 - **Taggar** -- Kommaseparerade etiketter, till exempel `youth, students`. Ett Kalenderelement på din webbplats kan ställas in så att det bara visar händelser med en viss tagg. Det här är samma fält **Taggar** som visas i händelsens registreringsinställningar.
 - **Vem kan visa anteckningar** och **Vem kan skriva anteckningar** -- Vem som kan läsa och lägga till i händelsens anteckningar (se [Händelseanteckningar](#event-notes)). Välj **Endast personal** (standard), **Gruppledare** (ledare för händelsens grupp) eller **Gruppmedlemmar** (alla i händelsens grupp, inklusive dess ledare).
-- **Rum** och **Resurser** -- Reservera utrymme och utrustning för händelsen. Se [Rum, resurser och schemaläggning](rooms-resources).
+- **Rum** och **Resurser** -- Reservera utrymme och utrustning för händelsen. Se [Rum, resurser och schemaläggning](./rooms-resources.md).
 
 Klicka på **Spara**. Om händelsen upprepas ber B1 dig bekräfta, eftersom sparandet uppdaterar varje förekomst i serien.
 
@@ -101,12 +102,12 @@ Du kan aktivera registrering för vilken kalenderhändelse som helst så att med
    - **Registrering stängs** -- Datum och tid då registreringen stängs.
    - **Taggar** -- Kommaseparerade etiketter (t.ex. "ungdom, reträtt, vbs") för att kategorisera händelser som går att anmäla sig till.
    - **Registreringsfrågor** -- Bifoga valfritt ett [formulär](../forms/creating-forms.md) så att deltagare kan svara på extra frågor (kostrestriktioner, T-shirtstorlek, nödkontakt med mera) som en del av anmälan. Välj **Ingen** för att hoppa över frågor.
-   - **Aktivera väntelista** -- När händelsen blir fullbokad kan ytterligare deltagare gå med i en väntelista i stället för att nekas. Se [Betalda registreringar](paid-registrations#waitlist).
+   - **Aktivera väntelista** -- När händelsen blir fullbokad kan ytterligare deltagare gå med i en väntelista i stället för att nekas. Se [Betalda registreringar](./paid-registrations.md#waitlist).
 4. Spara händelsen.
 
-För betalda händelser låter samma inställningssida dig definiera prissatta **Deltagartyper**, valfria **Val** (tillägg) och **Rabattkoder**, med betalning via din kyrkas givartjänst. Se [Betalda registreringar](paid-registrations) för den fullständiga genomgången.
+För betalda händelser låter samma inställningssida dig definiera prissatta **Deltagartyper**, valfria **Val** (tillägg) och **Rabattkoder**, med betalning via din kyrkas givartjänst. Se [Betalda registreringar](./paid-registrations.md) för den fullständiga genomgången.
 
-När registrering är aktiverad ser medlemmar en knapp **Registrera dig för denna händelse** när de visar händelsen på [B1-webbplatsen](../../b1-church/events/registering) eller [B1-mobilappen](../../b1-mobile/events/registering). Om du har bifogat ett formulär ser deltagarna ett steg **Frågor** under registreringen, och deras svar sparas tillsammans med deras registrering.
+När registrering är aktiverad ser medlemmar en knapp **Registrera dig för denna händelse** när de visar händelsen på [B1-webbplatsen](../../b1-church/events/registering.md) eller [B1-mobilappen](../../b1-mobile/events/registering.md). Om du har bifogat ett formulär ser deltagarna ett steg **Frågor** under registreringen, och deras svar sparas tillsammans med deras registrering.
 
 :::info
 Registreringsfrågor fungerar bara med formulär som **inte** är markerade som begränsade. Ett begränsat formulär hoppas över automatiskt vid registrering i stället för att visas, så använd ett obegränsat formulär när du bifogar frågor till en händelse.
@@ -126,7 +127,7 @@ För att visa och hantera registreringar för dina händelser:
    - **Flytta upp** registreringar från väntelistan när en plats blir ledig
    - **Exportera CSV** -- Ladda ner alla registreringar, inklusive deltagartyper, val, betalningsbelopp och frågesvar
 
-Om händelsen har bifogade registreringsfrågor visar detaljsidan även ett filter **Endast obesvarade frågor** för att snabbt hitta deltagare som ännu inte har skickat in svar, och en knapp **Visa svar** på varje besvarad registrering för att se deras svar. Betalda händelser lägger till en kolumn **Typ**, en kolumn **Betalda / Totalt**, antal per typ och en dialogruta med betalningsdetaljer -- se [Betalda registreringar](paid-registrations#the-registration-roster).
+Om händelsen har bifogade registreringsfrågor visar detaljsidan även ett filter **Endast obesvarade frågor** för att snabbt hitta deltagare som ännu inte har skickat in svar, och en knapp **Visa svar** på varje besvarad registrering för att se deras svar. Betalda händelser lägger till en kolumn **Typ**, en kolumn **Betalda / Totalt**, antal per typ och en dialogruta med betalningsdetaljer -- se [Betalda registreringar](./paid-registrations.md#the-registration-roster).
 
 :::tip
 Använd förloppsindikatorn för kapacitet för att följa hur snabbt händelser fylls på. Stapeln blir röd när en händelse är fullbokad eller överbokad.
@@ -134,7 +135,7 @@ Använd förloppsindikatorn för kapacitet för att följa hur snabbt händelser
 
 ## Nästa steg
 
-- [Kuraterad kalender](curated-calendar) -- Skapa en kalender som hämtar från flera grupper
-- [Betalda registreringar](paid-registrations) -- Deltagartyper, tilläggsval, rabattkoder, betalningar och väntelistor
-- [Guide för händelseregistrering](../guides/event-registration) -- Steg-för-steg-guide för att ställa in händelseregistrering
-- [Översikt över kalendrar](./) -- Tillbaka till översikten över kalendrar
+- [Kuraterad kalender](./curated-calendar.md) -- Skapa en kalender som hämtar från flera grupper
+- [Betalda registreringar](./paid-registrations.md) -- Deltagartyper, tilläggsval, rabattkoder, betalningar och väntelistor
+- [Guide för händelseregistrering](../guides/event-registration.md) -- Steg-för-steg-guide för att ställa in händelseregistrering
+- [Översikt över kalendrar](./index.md) -- Tillbaka till översikten över kalendrar

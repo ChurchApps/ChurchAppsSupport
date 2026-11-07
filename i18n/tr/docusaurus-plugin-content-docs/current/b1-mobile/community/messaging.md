@@ -1,5 +1,6 @@
 ---
 title: "Mesajlaşma"
+description: "B1 Mobile'da kilise üyeleriyle birebir özel sohbetleri başlatın, okuyun, düzenleyin ve silin; ayrıca Üye Dizini üzerinden kişileri bulun."
 ---
 
 # Mesajlaşma
@@ -13,7 +14,7 @@ B1 Mobile, uygulama üzerinden diğer kilise üyeleriyle doğrudan bire bir sohb
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile, uygulama üzerinden diğer kilise üyeleriyle doğrudan bire bir sohb
 ## Yeni Sohbet Başlatma
 
 1. Mesajlaşma ekranında, yeni bir sohbet başlatmak için seçeneğe dokunun.
-2. Mesaj göndermek istediğiniz üyeyi bulmak için arama alanını kullanın. Üyeleri [Üye Dizini](./member-directory) üzerinden de bulabilirsiniz.
+2. Mesaj göndermek istediğiniz üyeyi bulmak için arama alanını kullanın. Üyeleri [Üye Dizini](./member-directory.md) üzerinden de bulabilirsiniz.
 3. Arama sonuçlarından üyeyi seçin.
 4. Mesajınızı yazın ve **Gönder** seçeneğine dokunun.
 
@@ -52,11 +53,11 @@ Mesajlaşmayı kilise gönüllüleriyle koordinasyon sağlamak, kilisede tanış
 :::
 
 :::info
-Uygulama açık olmasa bile birisi size yeni bir mesaj gönderdiğinde bildirim almak için [anlık bildirimleri](./notifications) etkinleştirin.
+Uygulama açık olmasa bile birisi size yeni bir mesaj gönderdiğinde bildirim almak için [anlık bildirimleri](./notifications.md) etkinleştirin.
 :::
 
 ## İlgili Makaleler
 
-- [Üye Dizini](./member-directory) -- Mesaj göndermek için üyeleri bulun
-- [Bildirimler](./notifications) -- Yeni mesajlar hakkında bildirim alın
-- [Gruplar](../groups/) -- Grup sohbetlerine katılın
+- [Üye Dizini](./member-directory.md) -- Mesaj göndermek için üyeleri bulun
+- [Bildirimler](./notifications.md) -- Yeni mesajlar hakkında bildirim alın
+- [Gruplar](../groups/index.md) -- Grup sohbetlerine katılın

@@ -1,5 +1,6 @@
 ---
 title: "Autentifikavimas ir leidimai"
+description: "Nuoroda į ChurchApps API JWT prisijungimą, dviejų veiksnių prisijungimą, OAuth 2.0 srautus ir leidimų modelį kūrėjams, kurie kuria integracijas."
 ---
 
 # Autentifikavimas ir leidimai
@@ -244,7 +245,7 @@ Prieigos raktai galioja **12 valandų**.
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Gauti klientą pagal kliento ID (slaptas raktas paslėptas) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Sukurti arba atnaujinti klientą |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Ištrinti klientą |
-| POST | `/membership/oauth/register` | Viešas | — | Dinaminė kliento registracija (RFC 7591) viešiems klientams, pavyzdžiui, MCP jungtims. Žr. [Susietos programėlės](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Viešas | — | Dinaminė kliento registracija (RFC 7591) viešiems klientams, pavyzdžiui, MCP jungtims. Žr. [Susietos programėlės](../connected-apps.md#dynamic-client-registration) |
 
 ### Įrenginio patvirtinimo galutiniai taškai
 
@@ -265,5 +266,5 @@ API naudoja dvi apvalkalo funkcijas, kurios nustato autentifikavimo reikalavimus
 
 ## Susiję puslapiai
 
-- [Modulio struktūra](../module-structure) — kaip organizuojami valdikliai, saugyklos ir modeliai
-- [Vietinė sąranka](../local-setup) — API paleidimas vietoje kūrimui
+- [Modulio struktūra](../module-structure.md) — kaip organizuojami valdikliai, saugyklos ir modeliai
+- [Vietinė sąranka](../local-setup.md) — API paleidimas vietoje kūrimui

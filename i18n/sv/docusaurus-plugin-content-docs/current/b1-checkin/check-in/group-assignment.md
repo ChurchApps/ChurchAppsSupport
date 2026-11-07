@@ -1,5 +1,6 @@
 ---
 title: "Gruppen zuweisen"
+description: "Välj vilken grupp eller klass en familjemedlem ska delta i för varje gudstjänsttid i B1 Checkin, med hjälp av kategorier, ålders- och årskursvägledning och alternativet None."
 ---
 
 # Gruppen zuweisen
@@ -13,7 +14,7 @@ Wenn Sie auf dem Bildschirm zur Haushaltsprüfung auf eine Gottesdienstzeit-Scha
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [Prüfen Sie Ihren Haushalt](./household-review) auf dem Bildschirm zur Haushaltsprüfung
+- [Prüfen Sie Ihren Haushalt](./household-review.md) auf dem Bildschirm zur Haushaltsprüfung
 - Klappen Sie das Mitglied auf, das Sie zuweisen möchten, und tippen Sie auf eine Gottesdienstzeit-Schaltfläche
 - Stellen Sie sicher, dass Ihr Gemeindeadministrator [Gruppen erstellt](../../b1-admin/groups/creating-groups.md) und sie in B1 Admin mit Gottesdienstzeiten verknüpft hat
 
@@ -34,7 +35,7 @@ Tippen Sie auf eine Kategoriekarte, um sie aufzuklappen und die einzelnen Gruppe
 2. Prüfen Sie die Liste der Gruppen in dieser Kategorie. Jede Gruppe zeigt ihren Namen mit einem Auswahlsymbol rechts.
 3. Tippen Sie auf den **Gruppennamen**, den Sie zuweisen möchten.
 
-Die App speichert Ihre Auswahl und bringt Sie zurück zum [Bildschirm zur Haushaltsprüfung](./household-review). Die Gottesdienstzeit-Schaltfläche für dieses Mitglied zeigt nun den Namen der ausgewählten Gruppe an.
+Die App speichert Ihre Auswahl und bringt Sie zurück zum [Bildschirm zur Haushaltsprüfung](./household-review.md). Die Gottesdienstzeit-Schaltfläche für dieses Mitglied zeigt nun den Namen der ausgewählten Gruppe an.
 
 ## Hinweise zu Alter und Klassenstufe
 
@@ -52,7 +53,7 @@ Verwenden Sie die Option **Keine** für Erwachsene, die am Hauptgottesdienst tei
 
 So ändern Sie eine bereits erfolgte Gruppenzuweisung:
 
-1. Kehren Sie zum [Bildschirm zur Haushaltsprüfung](./household-review) zurück.
+1. Kehren Sie zum [Bildschirm zur Haushaltsprüfung](./household-review.md) zurück.
 2. Klappen Sie das Mitglied auf, dessen Gruppe Sie ändern möchten.
 3. Tippen Sie auf die Gottesdienstzeit-Schaltfläche (die nun den aktuell zugewiesenen Gruppennamen anzeigt).
 4. Wählen Sie eine andere Gruppe oder tippen Sie auf **Keine**.
@@ -63,8 +64,8 @@ Gruppen und Kategorien werden von Ihrem Gemeindeadministrator in B1 Admin konfig
 
 ## Nächste Schritte
 
-Kehren Sie nach dem Zuweisen von Gruppen zum [Bildschirm zur Haushaltsprüfung](./household-review) zurück, um:
+Kehren Sie nach dem Zuweisen von Gruppen zum [Bildschirm zur Haushaltsprüfung](./household-review.md) zurück, um:
 
 - weiteren Familienmitgliedern Gruppen zuzuweisen
-- [einen Gast hinzuzufügen](./adding-guests), wenn jemand mit Ihrer Familie zu Besuch ist
-- [den Check-in abzuschließen](./completing-checkin), wenn alle Zuweisungen bereit sind
+- [einen Gast hinzuzufügen](./adding-guests.md), wenn jemand mit Ihrer Familie zu Besuch ist
+- [den Check-in abzuschließen](./completing-checkin.md), wenn alle Zuweisungen bereit sind

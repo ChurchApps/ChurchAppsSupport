@@ -1,5 +1,6 @@
 ---
 title: "Skupinový kalendár"
+description: "Plánujte stretnutia a opakujúce sa udalosti v kalendári skupiny v B1 Admin a B1.church, s hromadným plánovaním, RSVP a odbermi kalendára."
 ---
 
 # Skupinový kalendár

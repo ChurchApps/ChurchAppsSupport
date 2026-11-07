@@ -1,5 +1,6 @@
 ---
 title: "Donationsbatcher"
+description: "Saml gaver i donationsbatches i B1 Admin, og luk, udskriv eller eksportér hver batch, så totalerne stemmer med dine bankindbetalinger."
 ---
 
 # Donationsbatcher

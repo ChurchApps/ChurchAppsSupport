@@ -1,5 +1,6 @@
 ---
 title: "Tổng quan dự án"
+description: "Bản đồ mọi kho mã ChurchApps theo nhóm: framework, cổng phát triển, cơ sở dữ liệu, và cách các gói @churchapps dùng chung kết nối chúng."
 ---
 
 # Tổng quan dự án
@@ -13,7 +14,7 @@ ChurchApps gồm khoảng 20 kho mã nguồn độc lập, mỗi kho được xu
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Cài đặt [các yêu cầu tiên quyết](./prerequisites) cho loại dự án bạn muốn làm việc
+- Cài đặt [các yêu cầu tiên quyết](./prerequisites.md) cho loại dự án bạn muốn làm việc
 
 </div>
 
@@ -72,7 +73,7 @@ Mã dùng chung được xuất bản lên npm dưới phạm vi `@churchapps` v
 | `@churchapps/integration-sdk` | Bộ công cụ tích hợp B1.church: webhook, REST client, OAuth | Nhà phát triển tích hợp bên ngoài |
 | `@churchapps/texting` | Lớp trừu tượng cho nhà cung cấp SMS | Api |
 
-Xem [Thư viện dùng chung](../shared-libraries/) để biết cách thiết lập workspace và quy trình phát hành.
+Xem [Thư viện dùng chung](../shared-libraries/index.md) để biết cách thiết lập workspace và quy trình phát hành.
 
 ## Mối quan hệ giữa các dự án
 
@@ -90,5 +91,5 @@ Tất cả ứng dụng giao diện phụ thuộc vào `@churchapps/helpers`. �
 
 ## Bước tiếp theo
 
-- **[Biến môi trường](./environment-variables)** -- Cấu hình các tệp `.env` để kết nối với API
-- **[Thiết lập API cục bộ](../api/local-setup)** -- Thiết lập API phía máy chủ trên máy cục bộ
+- **[Biến môi trường](./environment-variables.md)** -- Cấu hình các tệp `.env` để kết nối với API
+- **[Thiết lập API cục bộ](../api/local-setup.md)** -- Thiết lập API phía máy chủ trên máy cục bộ

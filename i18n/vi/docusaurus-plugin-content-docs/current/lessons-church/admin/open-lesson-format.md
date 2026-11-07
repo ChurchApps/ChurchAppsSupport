@@ -1,5 +1,6 @@
 ---
 title: "Định dạng Bài học Mở"
+description: "Đặc tả định dạng cho nhà cung cấp giáo trình bên thứ ba trên Lessons.church: cây nhà cung cấp, trường JSON của nguồn địa điểm, hành động và tệp media."
 ---
 
 # Định dạng Bài học Mở

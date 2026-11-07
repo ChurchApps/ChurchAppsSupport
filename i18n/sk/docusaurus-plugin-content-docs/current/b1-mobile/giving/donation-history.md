@@ -1,5 +1,7 @@
 ---
-title: "Historie darov"
+title: "Zobrazenie histórie darov v B1 Mobile"
+sidebar_label: "Historie darov"
+description: "Pozrite si svoje dary od začiatku roka, posledný dar a úplný záznam darov v B1 Mobile a jedným klepnutím zopakujte predchádzajúci dar na karte Prehľad."
 ---
 
 # Historie darov
@@ -13,8 +15,8 @@ B1 Mobile vám poskytuje prehľad o vašich daroch prostredníctvom dvoch kariet
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- [Nainštalujte B1 Mobile](../getting-started/installing) a [sa prihláste](../getting-started/logging-in) do svojho účtu
-- [Uskutočnite aspoň jeden dar](./making-donations), aby sa zobrazila vaša história
+- [Nainštalujte B1 Mobile](../getting-started/installing.md) a [sa prihláste](../getting-started/logging-in.md) do svojho účtu
+- [Uskutočnite aspoň jeden dar](./making-donations.md), aby sa zobrazila vaša história
 
 </div>
 
@@ -45,5 +47,5 @@ Pravidelne kontrolujte kartu **Prehľad**, aby ste mali prehľad o svojich darco
 
 ## Súvisiace články
 
-- [Uskutočnenie daru](./making-donations) -- Vytvorte nový dar z aplikácie
-- [Správa spôsobov platby](./managing-payments) -- Pridajte alebo odstráňte uložené spôsoby platby
+- [Uskutočnenie daru](./making-donations.md) -- Vytvorte nový dar z aplikácie
+- [Správa spôsobov platby](./managing-payments.md) -- Pridajte alebo odstráňte uložené spôsoby platby

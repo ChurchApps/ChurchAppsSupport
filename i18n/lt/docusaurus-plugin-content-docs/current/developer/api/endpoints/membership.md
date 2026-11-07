@@ -1,5 +1,6 @@
 ---
 title: "Narystės galutiniai taškai"
+description: "Galutinių taškų nuoroda ChurchApps Membership API: asmenys, namų ūkiai, grupės, vaidmenys, formos ir nustatymai, su autentifikacijos ir leidimų taisyklėmis."
 ---
 
 # Narystės galutiniai taškai
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Pagrindinis kelias: `/membership/users`
 
-Prisijungimo, registracijos ir slaptažodžio valdymo galutinius taškus žr. [Autentifikacija ir leidimai](./authentication).
+Prisijungimo, registracijos ir slaptažodžio valdymo galutinius taškus žr. [Autentifikacija ir leidimai](./authentication.md).
 
 | Metodas | Kelias | Autentifikacija | Leidimas | Aprašymas |
 |--------|------|------|------------|-------------|
@@ -342,6 +343,6 @@ Pagrindinis kelias: `/membership/clientErrors`
 
 ## Susiję puslapiai
 
-- [Autentifikacija ir leidimai](./authentication) — Prisijungimo eiga, JWT, OAuth, leidimų modelis
-- [Lankomumo galutiniai taškai](./attendance) — Pamaldų ir apsilankymų sekimas
-- [Modulių struktūra](../module-structure) — Kodo organizavimo modeliai
+- [Autentifikacija ir leidimai](./authentication.md) — Prisijungimo eiga, JWT, OAuth, leidimų modelis
+- [Lankomumo galutiniai taškai](./attendance.md) — Pamaldų ir apsilankymų sekimas
+- [Modulių struktūra](../module-structure.md) — Kodo organizavimo modeliai

@@ -1,5 +1,6 @@
 ---
 title: "Check-ins"
+description: "Hoe inchecken werkt in B1Checkin, B1App en B1 Admin: het aanwezigheidsdatamodel, groepen als ruimten, capaciteitsgrenzen en regels voor veilig ophalen."
 ---
 
 # Check-ins
@@ -216,7 +217,7 @@ De QR-aanmelding wordt aangestuurd door de kerkinstellingen die zijn opgeslagen 
 
 ## Gerelateerde pagina's
 
-- [Aanwezigheid-endpoints](../api/endpoints/attendance): de volledige REST-interface voor campussen, diensten, sessies, bezoeken en bezoek-sessies
-- [Membership-endpoints](../api/endpoints/membership): personen, huishoudens en groepen
-- [Webhooks](../api/webhooks): de gebeurtenissen `session.created`, `attendance.recorded` en `attendance.checkout`
-- [Modulestructuur](../api/module-structure): hoe de attendance-module server-side is ingedeeld
+- [Aanwezigheid-endpoints](../api/endpoints/attendance.md): de volledige REST-interface voor campussen, diensten, sessies, bezoeken en bezoek-sessies
+- [Membership-endpoints](../api/endpoints/membership.md): personen, huishoudens en groepen
+- [Webhooks](../api/webhooks.md): de gebeurtenissen `session.created`, `attendance.recorded` en `attendance.checkout`
+- [Modulestructuur](../api/module-structure.md): hoe de attendance-module server-side is ingedeeld

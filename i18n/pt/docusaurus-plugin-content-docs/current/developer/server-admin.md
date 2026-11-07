@@ -1,5 +1,6 @@
 ---
 title: "Administração do servidor"
+description: "Apenas para usuários Server.Admin: redefinir o login em duas etapas, personificar contas, moderar a Commons e aprovar e-mails da igreja no B1 Admin."
 ---
 
 # Administração do servidor

@@ -1,5 +1,6 @@
 ---
 title: "프로젝트 개요"
+description: "개발자 설정 문서에서 모든 ChurchApps 저장소를 카테고리별로 정리합니다. 프레임워크, 개발 포트, 데이터베이스, 공유 @churchapps 패키지가 이들을 연결하는 방식을 설명합니다."
 ---
 
 # 프로젝트 개요
@@ -13,7 +14,7 @@ ChurchApps는 [ChurchApps GitHub 조직](https://github.com/ChurchApps) 아래�
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- 작업하려는 프로젝트 카테고리에 맞는 [전제 조건](./prerequisites)을 설치합니다
+- 작업하려는 프로젝트 카테고리에 맞는 [전제 조건](./prerequisites.md)을 설치합니다
 
 </div>
 
@@ -72,7 +73,7 @@ ChurchApps는 [ChurchApps GitHub 조직](https://github.com/ChurchApps) 아래�
 | `@churchapps/integration-sdk` | B1.church 통합 툴킷: 웹훅, REST 클라이언트, OAuth | 외부 통합 개발자 |
 | `@churchapps/texting` | SMS 제공자 추상화 | Api |
 
-워크스페이스 설정과 릴리스 워크플로는 [공유 라이브러리](../shared-libraries/)를 참조하세요.
+워크스페이스 설정과 릴리스 워크플로는 [공유 라이브러리](../shared-libraries/index.md)를 참조하세요.
 
 ## 프로젝트 관계
 
@@ -90,5 +91,5 @@ FreeShow     ──────┘       @churchapps/apihelper ◄────�
 
 ## 다음 단계
 
-- **[환경 변수](./environment-variables)** -- API에 연결하도록 `.env` 파일 구성하기
-- **[API 로컬 설정](../api/local-setup)** -- 백엔드 API를 로컬로 설정하기
+- **[환경 변수](./environment-variables.md)** -- API에 연결하도록 `.env` 파일 구성하기
+- **[API 로컬 설정](../api/local-setup.md)** -- 백엔드 API를 로컬로 설정하기

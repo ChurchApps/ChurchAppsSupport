@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Referensi paket @churchapps/apihelper untuk API Express ChurchApps di workspace Packages: build lokal, uji dengan portal Yarn, dan publikasi changeset."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ Paket `@churchapps/apihelper` menyediakan utilitas sisi server untuk semua API E
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- Instal **Node.js** dan **Git** -- lihat [Prasyarat](../setup/prerequisites)
+- Instal **Node.js** dan **Git** -- lihat [Prasyarat](../setup/prerequisites.md)
 - Pelajari pengaturan dan alur rilis [workspace Packages](./index.md)
-- Paket ini bergantung pada [`@churchapps/helpers`](./helpers) (sebagai peer dependency) dan mengekspornya kembali
+- Paket ini bergantung pada [`@churchapps/helpers`](./helpers.md) (sebagai peer dependency) dan mengekspornya kembali
 
 </div>
 
@@ -65,6 +66,6 @@ Paket ini adalah dependensi dari setiap API ChurchApps -- Api inti, AskApi, dan 
 
 ## Artikel Terkait
 
-- **[Helpers](./helpers)** -- Paket utilitas dasar yang menjadi dependensi paket ini
-- **[Struktur Modul](../api/module-structure)** -- Cara controller dan middleware autentikasi digunakan dalam modul API
-- **[Pengaturan API Lokal](../api/local-setup)** -- Menyiapkan API untuk pengembangan lokal
+- **[Helpers](./helpers.md)** -- Paket utilitas dasar yang menjadi dependensi paket ini
+- **[Struktur Modul](../api/module-structure.md)** -- Cara controller dan middleware autentikasi digunakan dalam modul API
+- **[Pengaturan API Lokal](../api/local-setup.md)** -- Menyiapkan API untuk pengembangan lokal

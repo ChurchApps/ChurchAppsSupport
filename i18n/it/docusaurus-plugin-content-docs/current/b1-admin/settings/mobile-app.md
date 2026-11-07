@@ -1,5 +1,6 @@
 ---
 title: "Impostazioni dell'app mobile"
+description: "Configura schede di navigazione, riquadri della Home, richiesta di accesso e privacy della rubrica per l'app membri B1.church da B1 Admin."
 ---
 
 # Impostazioni dell'app mobile

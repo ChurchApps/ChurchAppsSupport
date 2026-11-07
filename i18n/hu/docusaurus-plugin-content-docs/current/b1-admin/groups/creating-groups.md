@@ -1,5 +1,6 @@
 ---
 title: "Grupper oprettes"
+description: "Új csoport létrehozása a B1 Admin-ban: kategória és név kiválasztásától a csatlakozási szabályzat, címkék, üzenetküldés és részvételi beállítások konfigurálásáig."
 ---
 
 # Grupper oprettes

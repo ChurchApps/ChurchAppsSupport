@@ -1,5 +1,6 @@
 ---
 title: "Сервер MCP"
+description: "Настройте MCP-доступ к API B1, чтобы AI-клиенты (Claude Code, Cursor, Claude Desktop) вызывали эндпоинты данных церкви по API-ключам или OAuth."
 ---
 
 # Сервер MCP
@@ -13,7 +14,7 @@ B1 API предоставляет сервер [MCP (Model Context Protocol)](ht
 <div class="prereqs">
 <h4>Перед началом</h4>
 
-- [Ключ API B1](./api-keys) (`cak_…`) с областями доступа, которые должен иметь клиент, либо MCP-клиент, который может войти через OAuth (см. [Обнаружение OAuth](#oauth-discovery))
+- [Ключ API B1](./api-keys.md) (`cak_…`) с областями доступа, которые должен иметь клиент, либо MCP-клиент, который может войти через OAuth (см. [Обнаружение OAuth](#oauth-discovery))
 - Доступный хост B1 API — `https://api.churchapps.org` для размещенных церквей или ваше собственное развертывание
 - MCP-клиент. См. [Claude](/docs/b1-admin/integrations/claude) и [ChatGPT](/docs/b1-admin/integrations/chatgpt) для настройки конечного пользователя
 
@@ -119,7 +120,7 @@ Authorization: Bearer cak_<prefix>.<secret>
 
 ### `describe_page_builder`
 
-Единственный неуниверсальный инструмент: статическое самодостаточное руководство по созданию страниц сайта через эндпоинты `/content/*` — модель данных Page → Section → Element, порядок создания, каждый `elementType` с формой его `answersJSON`, настройки уровня секции, например формы разделителей `dividerTop`/`dividerBottom`, и пример от начала до конца. Он не принимает входных данных и повторяет каталог элементов, который поддерживается в редакторе B1Admin (см. [Архитектура конструктора сайтов](../architecture/website-builder)). Ожидается, что агенты вызовут его один раз перед созданием или редактированием содержимого страницы, а затем будут действовать через `api_call`.
+Единственный неуниверсальный инструмент: статическое самодостаточное руководство по созданию страниц сайта через эндпоинты `/content/*` — модель данных Page → Section → Element, порядок создания, каждый `elementType` с формой его `answersJSON`, настройки уровня секции, например формы разделителей `dividerTop`/`dividerBottom`, и пример от начала до конца. Он не принимает входных данных и повторяет каталог элементов, который поддерживается в редакторе B1Admin (см. [Архитектура конструктора сайтов](../architecture/website-builder.md)). Ожидается, что агенты вызовут его один раз перед созданием или редактированием содержимого страницы, а затем будут действовать через `api_call`.
 
 ## Модель авторизации
 
@@ -153,11 +154,11 @@ Authorization: Bearer cak_<prefix>.<secret>
 
 ## Обнаружение OAuth {#oauth-discovery}
 
-Сервер MCP публикует метаданные OAuth 2.1, чтобы клиенты, которые подключаются только к серверам, найденным через OAuth — в частности, интерфейс «Add custom connector» в Claude.ai, — могли войти пользователем без вставки ключа. `/mcp` является защищенным ресурсом, существующий [провайдер OAuth](./connected-apps) в `/membership/oauth` выступает сервером авторизации, а страница `/oauth` в B1Admin — экраном согласия.
+Сервер MCP публикует метаданные OAuth 2.1, чтобы клиенты, которые подключаются только к серверам, найденным через OAuth — в частности, интерфейс «Add custom connector» в Claude.ai, — могли войти пользователем без вставки ключа. `/mcp` является защищенным ресурсом, существующий [провайдер OAuth](./connected-apps.md) в `/membership/oauth` выступает сервером авторизации, а страница `/oauth` в B1Admin — экраном согласия.
 
 | Эндпоинт | Назначение |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (также `/.well-known/oauth-protected-resource/mcp`) | Метаданные защищенного ресурса (RFC 9728): `resource` — это `<api>/mcp`, `authorization_servers` — корень API, `scopes_supported` перечисляет каждую [область ключа API](./api-keys#scopes) |
+| `GET /.well-known/oauth-protected-resource` (также `/.well-known/oauth-protected-resource/mcp`) | Метаданные защищенного ресурса (RFC 9728): `resource` — это `<api>/mcp`, `authorization_servers` — корень API, `scopes_supported` перечисляет каждую [область ключа API](./api-keys.md#scopes) |
 | `GET /.well-known/oauth-authorization-server` | Метаданные сервера авторизации (RFC 8414): `authorization_endpoint` — `/oauth` в B1Admin, `token_endpoint` — `/membership/oauth/token`, `registration_endpoint` — `/membership/oauth/register` |
 | `POST /membership/oauth/register` | Динамическая регистрация клиента (RFC 7591) |
 
@@ -209,8 +210,8 @@ npx @modelcontextprotocol/inspector
 
 ## Связанные материалы
 
-- [API-ключи](./api-keys)
-- [Вебхуки](./webhooks)
-- [Подключенные приложения (OAuth)](./connected-apps)
+- [API-ключи](./api-keys.md)
+- [Вебхуки](./webhooks.md)
+- [Подключенные приложения (OAuth)](./connected-apps.md)
 - [Claude — настройка для конечного пользователя](/docs/b1-admin/integrations/claude)
 - [ChatGPT — настройка для конечного пользователя](/docs/b1-admin/integrations/chatgpt)
