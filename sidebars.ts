@@ -237,7 +237,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'B1 - Website',
+      label: 'B1 - App',
       link: { type: 'doc', id: 'b1-church/index' },
       items: [
         {

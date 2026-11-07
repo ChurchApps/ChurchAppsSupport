@@ -44,7 +44,7 @@ const products = [
     color: '#2196F3',
   },
   {
-    title: translate({id: 'homepage.products.b1website.title', message: 'B1 Website'}),
+    title: translate({id: 'homepage.products.b1website.title', message: 'B1 App'}),
     description: translate({id: 'homepage.products.b1website.description', message: 'Public-facing church website and member portal.'}),
     link: '/docs/b1-church/',
     icon: (

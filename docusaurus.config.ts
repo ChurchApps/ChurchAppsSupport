@@ -221,7 +221,7 @@ const config: Config = {
           position: 'left',
           items: [
             { label: 'B1 - Admin', to: '/docs/b1-admin/' },
-            { label: 'B1 - Website', to: '/docs/b1-church/' },
+            { label: 'B1 - App', to: '/docs/b1-church/' },
             { label: 'B1 - Mobile', to: '/docs/b1-mobile/' },
             { label: 'B1 - Checkin', to: '/docs/b1-checkin/' },
             { label: 'Lessons.church', to: '/docs/lessons-church/' },
