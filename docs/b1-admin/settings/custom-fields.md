@@ -1,5 +1,6 @@
 ---
 title: "Custom Fields"
+description: "Define custom fields in B1 Admin to track extra person details, like background-check expiration dates or shirt sizes, then search and filter on them."
 ---
 
 # Custom Fields

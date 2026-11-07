@@ -1,5 +1,6 @@
 ---
 title: "Print Directory"
+description: "Generate a printable, household-grouped member directory from B1 Admin with photos, contact info, and birthdays, sized for letter paper."
 ---
 
 # Print Directory

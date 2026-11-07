@@ -1,5 +1,7 @@
 ---
-title: "Registering for Events"
+title: "Registering for Events in B1 Mobile"
+sidebar_label: "Registering for Events"
+description: "Register yourself and family members for church events from the B1 Mobile app, check remaining capacity, and confirm your sign-up in three steps."
 ---
 
 # Registering for Events
@@ -13,7 +15,7 @@ Register for church events directly from B1 Mobile using a simple three-step pro
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- [Install B1 Mobile](../getting-started/installing.md) and [log in](../getting-started/logging-in.md) to your account
 - The event must have registration enabled and the registration window must be open
 
 </div>
@@ -50,4 +52,4 @@ If you need to cancel, contact your church administrator. They can cancel your r
 ## Related Articles
 
 - [Events Overview](./index.md) -- Browse events with registration on mobile
-- [Viewing Plans](../serving/viewing-plans) -- See your serving schedule
+- [Viewing Plans](../serving/viewing-plans.md) -- See your serving schedule

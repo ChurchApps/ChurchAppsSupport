@@ -1,5 +1,6 @@
 ---
 title: "Real-time Architecture"
+description: "How ChurchApps' WebSocket layer delivers live chat, presence, and notifications: the socket handshake, room subscriptions, and client primitives for developers."
 ---
 
 # Real-time Architecture
@@ -226,8 +227,8 @@ The live stream is the largest anonymous consumer of the framework. It uses two 
 
 ## Related Pages
 
-- [Notifications Architecture](./architecture/notifications) -- The in-app/push/email escalation funnel this transport feeds into
-- [Messaging Endpoints](./api/endpoints/messaging) -- Full REST surface for messages, conversations, connections, devices
-- [Web Push Notifications](./web-push) -- Browser push, separate from in-page socket delivery
-- [AppHelper](./shared-libraries/app-helper) -- The npm package that ships the client primitives
-- [Module Structure](./api/module-structure) -- How the messaging module is organized server-side
+- [Notifications Architecture](./architecture/notifications.md) -- The in-app/push/email escalation funnel this transport feeds into
+- [Messaging Endpoints](./api/endpoints/messaging.md) -- Full REST surface for messages, conversations, connections, devices
+- [Web Push Notifications](./web-push.md) -- Browser push, separate from in-page socket delivery
+- [AppHelper](./shared-libraries/app-helper.md) -- The npm package that ships the client primitives
+- [Module Structure](./api/module-structure.md) -- How the messaging module is organized server-side

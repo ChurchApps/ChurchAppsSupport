@@ -1,5 +1,7 @@
 ---
-title: "Group Details"
+title: "Group Details in the B1.church Member Portal"
+sidebar_label: "Group Details"
+description: "Find, open, and manage a group's detail page in B1 Admin's member-facing B1.church view: see events, meetings, forms, and members, and join or request to join."
 ---
 
 # Group Details

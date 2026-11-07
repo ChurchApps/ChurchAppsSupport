@@ -1,5 +1,7 @@
 ---
-title: "Groups"
+title: "Groups Screen in B1 Mobile"
+sidebar_label: "Groups"
+description: "Find the groups you belong to in B1 Mobile's Groups screen, including your most-visited group at the top and the rest of your church's groups below."
 ---
 
 # Groups
@@ -30,10 +32,10 @@ Here is what you can do from the Groups screen:
 - **Stay connected** -- See what your group members are sharing, keep up with conversations, and engage with group content.
 
 :::tip
-The Groups screen adapts to your usage, just like the [dashboard](../dashboard/). The groups you visit most often are promoted to the top for quick access.
+The Groups screen adapts to your usage, just like the [dashboard](../dashboard/index.md). The groups you visit most often are promoted to the top for quick access.
 :::
 
 ## Next Steps
 
-- [Group Details](./group-details) -- See what is on a group's detail page
-- [Group Timeline](./group-timeline) -- Learn about the unified activity feed across your groups
+- [Group Details](./group-details.md) -- See what is on a group's detail page
+- [Group Timeline](./group-timeline.md) -- Learn about the unified activity feed across your groups

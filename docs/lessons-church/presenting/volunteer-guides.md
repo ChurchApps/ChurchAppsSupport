@@ -1,5 +1,6 @@
 ---
 title: "Volunteer Guides"
+description: "Set up role-specific guides in Lessons.church so each volunteer sees only their own steps, and print or share them before class."
 ---
 
 # Volunteer Guides

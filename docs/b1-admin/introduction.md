@@ -1,5 +1,6 @@
 ---
 title: Introduction to B1.church
+description: "Walks you through signing in to B1 Admin, finding your way around the Dashboard and Jump menu, and setting up church information before exploring other tools."
 ---
 
 # Welcome to B1.church Admin!
@@ -34,7 +35,7 @@ For further support, please email [support@churchapps.org](mailto:support@church
 10. You can now enter B1.church through the **member portal** or the **admin portal**. The member portal allows you to see how B1.church looks to your members, view your groups, and manage your personal donations.
 
 :::tip
-Start with the [Settings](./settings/) page to configure your church name, branding, and team permissions. This ensures everything else you set up will display correctly.
+Start with the [Settings](./settings/index.md) page to configure your church name, branding, and team permissions. This ensures everything else you set up will display correctly.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -81,9 +82,9 @@ Searching is often the fastest way to reach a page -- type part of the page name
 
 After watching this introduction, explore these key features:
 
-- [Adding People](./people/adding-people) -- Learn how to add members to your database
-- [Groups](./groups/) -- Set up and manage church groups
-- [Serving Plans](./serving/plans) -- Organize your serving ministry
-- [Attendance](./attendance/) -- Track attendance and check-in
-- [Website](./website/) -- Build and customize your church website
-- [Settings](./settings/) -- Configure your church information and permissions
+- [Adding People](./people/adding-people.md) -- Learn how to add members to your database
+- [Groups](./groups/index.md) -- Set up and manage church groups
+- [Serving Plans](./serving/plans.md) -- Organize your serving ministry
+- [Attendance](./attendance/index.md) -- Track attendance and check-in
+- [Website](./website/index.md) -- Build and customize your church website
+- [Settings](./settings/index.md) -- Configure your church information and permissions

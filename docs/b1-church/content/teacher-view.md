@@ -1,5 +1,6 @@
 ---
 title: "Teacher View for Lessons"
+description: "Open a lesson in full-screen Teacher View from a plan on B1.church, then jump between sections, play media, and download class resources."
 ---
 
 # Teacher View for Lessons

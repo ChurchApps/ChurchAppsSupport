@@ -1,5 +1,6 @@
 ---
 title: "Rooms, Resources & Scheduling"
+description: "Set up rooms, equipment, blockouts, and event templates in B1 Admin so groups can request bookings and you can approve them to avoid double-booking."
 ---
 
 # Rooms, Resources & Scheduling
@@ -14,7 +15,7 @@ Rooms and Resources let you track your church's bookable spaces and equipment. W
 <h4>Before You Begin</h4>
 
 - You need administrative access to the Calendars section in B1 Admin
-- Set up [groups](../groups/creating-groups) whose members will be submitting booking requests
+- Set up [groups](../groups/creating-groups.md) whose members will be submitting booking requests
 
 </div>
 
@@ -76,7 +77,7 @@ When creating a new event, staff can choose an existing template to pre-fill the
 
 ## Related Articles
 
-- [Availability Calendar](availability) — view all bookings at a glance and book rooms or resources directly
-- [Calendar Approvals](approvals) — approve or reject room and resource booking requests
-- [Creating Calendars](creating-calendars) — set up event calendars
-- [Creating Groups](../groups/creating-groups) — set up groups that can book rooms and resources
+- [Availability Calendar](./availability.md) — view all bookings at a glance and book rooms or resources directly
+- [Calendar Approvals](./approvals.md) — approve or reject room and resource booking requests
+- [Creating Calendars](./creating-calendars.md) — set up event calendars
+- [Creating Groups](../groups/creating-groups.md) — set up groups that can book rooms and resources

@@ -1,5 +1,6 @@
 ---
 title: "Dashboard"
+description: "Find your way around the B1 Mobile home screen, where your most-used features are featured as large cards and the rest sit in Quick Actions."
 ---
 
 # Dashboard
@@ -28,7 +29,7 @@ Beneath the hero card, you will see up to two **featured cards** displayed side 
 
 ## Quick Actions
 
-The remaining features appear in a **Quick Actions** grid below the featured cards. Each item shows an icon and label. These are all the other navigation links your church has configured, giving you access to everything from [groups](../groups/) and [giving](../giving/) to [check-in](../checkin/), [sermons](../content/sermons.md), and more.
+The remaining features appear in a **Quick Actions** grid below the featured cards. Each item shows an icon and label. These are all the other navigation links your church has configured, giving you access to everything from [groups](../groups/index.md) and [giving](../giving/index.md) to [check-in](../checkin/index.md), [sermons](../content/sermons.md), and more.
 
 ## How the Layout Adapts
 
@@ -41,7 +42,7 @@ The dashboard layout is personalized based on your usage patterns. Every time yo
 If you have not used the app yet, features appear in the default order your church has configured. Over time, the dashboard reshuffles to match your habits.
 
 :::info
-The features available on your dashboard are configured by your church administrator through [B1 Admin](../../b1-admin/). If you do not see a feature you expect, contact your church office.
+The features available on your dashboard are configured by your church administrator through [B1 Admin](../../b1-admin/index.md). If you do not see a feature you expect, contact your church office.
 :::
 
 ## Refreshing the Dashboard

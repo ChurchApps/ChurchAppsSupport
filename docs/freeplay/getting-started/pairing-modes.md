@@ -1,5 +1,6 @@
 ---
 title: "Choosing a Pairing Mode"
+description: "Pick the right way to pair a FreePlay TV: a calendar from FreePlay Admin, a service plan from B1 Admin, or no pairing at all."
 ---
 
 # Choosing a Pairing Mode
@@ -32,7 +33,7 @@ Enter the code in **FreePlay Admin** at [admin.freeplay.church](https://admin.fr
 
 **Best for:** Lobby and hallway signage, announcement loops, and classrooms where the lesson should already be playing when people walk in.
 
-See **[Scheduled Mode](../scheduled-mode/)** for the full guide.
+See **[Scheduled Mode](../scheduled-mode/index.md)** for the full guide.
 
 ## Plan Mode (B1 Admin)
 
@@ -42,7 +43,7 @@ Enter the code in **B1 Admin** when you want the TV to follow a service plan typ
 
 **Best for:** TVs that show content tied to your weekly service plan, where someone starts playback when it's time.
 
-See **[Plan Mode](../plan-mode/)** for the full guide.
+See **[Plan Mode](../plan-mode/index.md)** for the full guide.
 
 :::tip
 You can also play the current service plan on a schedule. In FreePlay Admin, add a calendar entry and choose the plan type under **Service plans**.
@@ -50,7 +51,7 @@ You can also play the current service plan on a schedule. In FreePlay Admin, add
 
 ## Content Providers (No Pairing)
 
-If you don't need to pair the TV at all, you can browse content providers directly. Providers like [Lessons.church](../../lessons-church/) and Bible Project have content you can download and play whenever you like.
+If you don't need to pair the TV at all, you can browse content providers directly. Providers like [Lessons.church](../../lessons-church/index.md) and Bible Project have content you can download and play whenever you like.
 
 **Best for:** TVs where volunteers choose what to play each week, or when you want to explore what's available.
 
@@ -60,6 +61,6 @@ You can open the **Providers** screen any time from **Settings** at the bottom o
 
 ## Related Articles
 
-- **[Scheduled Mode](../scheduled-mode/)** - Put TVs on a calendar with FreePlay Admin
-- **[Plan Mode](../plan-mode/)** - Full guide to pairing with a service plan
-- **[Content Providers](../content-providers/)** - Browse and download content from external sources
+- **[Scheduled Mode](../scheduled-mode/index.md)** - Put TVs on a calendar with FreePlay Admin
+- **[Plan Mode](../plan-mode/index.md)** - Full guide to pairing with a service plan
+- **[Content Providers](../content-providers/index.md)** - Browse and download content from external sources

@@ -222,5 +222,53 @@
   "sidebar.docsSidebar.category.Deployment": {
     "message": "Triển khai",
     "description": "The label for category 'Deployment' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Integrations": {
+    "message": "Tích hợp",
+    "description": "The label for category 'Integrations' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Connected services": {
+    "message": "Dịch vụ được kết nối",
+    "description": "The label for category 'Connected services' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Guides.link.generated-index.title": {
+    "message": "Hướng dẫn B1 Admin",
+    "description": "The generated-index page title for category 'Guides' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Guides.link.generated-index.description": {
+    "message": "Hướng dẫn từng bước cho các tác vụ phổ biến trong B1 Admin: bắt đầu sử dụng, quyên góp trực tuyến, ra mắt trang web của bạn, điểm danh trẻ em, tình nguyện viên, bài giảng, nhóm nhỏ, sự kiện, điểm danh và báo cáo quyên góp cuối năm.",
+    "description": "The generated-index page description for category 'Guides' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-events": {
+    "message": "Sự kiện",
+    "description": "The label for category 'Events' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-serving": {
+    "message": "Phục vụ",
+    "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Mobile (Deprecated)": {
+    "message": "B1 - Mobile (Không còn hỗ trợ)",
+    "description": "The label for category 'B1 - Mobile (Deprecated)' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-events": {
+    "message": "Sự kiện",
+    "description": "The label for category 'Events' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Scheduled Mode": {
+    "message": "Chế độ theo lịch",
+    "description": "The label for category 'Scheduled Mode' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Architecture": {
+    "message": "Kiến trúc",
+    "description": "The label for category 'Architecture' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Proposals": {
+    "message": "Đề xuất",
+    "description": "The label for category 'Proposals' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Endpoint Reference": {
+    "message": "Tham chiếu điểm cuối",
+    "description": "The label for category 'Endpoint Reference' in sidebar 'docsSidebar'"
   }
 }

@@ -1,5 +1,6 @@
 ---
 title: "Managing Funds"
+description: "Create and organize donation funds in B1 Admin, set tax-deductible status and donor visibility, and review fund totals and gift history for reporting."
 ---
 
 # Managing Funds

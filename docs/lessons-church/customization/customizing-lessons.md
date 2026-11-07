@@ -1,5 +1,6 @@
 ---
 title: "Customizing Lessons"
+description: "Remove, hide, or reorder sections and roles in a Lessons.church lesson, and pick whether the changes apply to one classroom or all of them."
 ---
 
 # Customizing Lessons

@@ -1,5 +1,7 @@
 ---
-title: "Giving"
+title: "Online Giving and Donations in B1.church"
+sidebar_label: "Giving"
+description: "Donate to your church online in B1.church without an account, or log in to manage recurring gifts, payment methods, and giving statements."
 ---
 
 # Giving

@@ -1,5 +1,7 @@
 ---
-title: "Lessons (Deprecated)"
+title: "Deprecated Lessons Tab in B1.church"
+sidebar_label: "Lessons (Deprecated)"
+description: "The Lessons tab in B1.church is deprecated. Find where lesson curriculum now lives: browse on Lessons.church and play it on classroom TVs with FreePlay."
 ---
 
 # Lessons (Deprecated)

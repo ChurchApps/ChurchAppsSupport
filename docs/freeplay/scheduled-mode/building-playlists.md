@@ -1,5 +1,6 @@
 ---
 title: "Connecting Providers and Building Playlists"
+description: "Set up connected content providers in FreePlay Admin, then build, arrange, and preview playlists for scheduled TV screens."
 ---
 
 # Connecting Providers and Building Playlists
@@ -107,6 +108,6 @@ Click **Present** to play the playlist full screen in your browser. This is hand
 
 ## Related Articles
 
-- **[Scheduling the Calendar](./scheduling-the-calendar)** - Put your playlist on a screen group's calendar
-- **[Managing Screens and Groups](./managing-screens)** - Set a playlist as a group's default loop
-- **[Content Providers](../content-providers/)** - Providers you can connect on the TV itself
+- **[Scheduling the Calendar](./scheduling-the-calendar.md)** - Put your playlist on a screen group's calendar
+- **[Managing Screens and Groups](./managing-screens.md)** - Set a playlist as a group's default loop
+- **[Content Providers](../content-providers/index.md)** - Providers you can connect on the TV itself

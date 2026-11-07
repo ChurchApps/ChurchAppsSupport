@@ -1,5 +1,6 @@
 ---
 title: "Tasks"
+description: "Create, assign, and close tasks in B1 Admin, find them under Serving > My Work, and set due-date reminders so follow-up items never slip through."
 ---
 
 # Tasks

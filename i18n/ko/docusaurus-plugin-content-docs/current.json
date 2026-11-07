@@ -226,5 +226,49 @@
   "sidebar.docsSidebar.category.Deployment": {
     "message": "배포",
     "description": "The label for category 'Deployment' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Integrations": {
+    "message": "통합",
+    "description": "The label for category 'Integrations' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Connected services": {
+    "message": "연결된 서비스",
+    "description": "The label for category 'Connected services' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Guides.link.generated-index.title": {
+    "message": "B1 Admin 가이드",
+    "description": "The generated-index page title for category 'Guides' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Guides.link.generated-index.description": {
+    "message": "B1 Admin의 주요 작업을 위한 단계별 가이드입니다. 시작하기, 온라인 헌금, 웹사이트 출시, 어린이 체크인, 봉사자, 설교, 소그룹, 행사, 출석 및 연말 헌금 명세서를 다룹니다.",
+    "description": "The generated-index page description for category 'Guides' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-events": {
+    "message": "행사",
+    "description": "The label for category 'Events' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-serving": {
+    "message": "봉사",
+    "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Mobile (Deprecated)": {
+    "message": "B1 - Mobile (지원 종료)",
+    "description": "The label for category 'B1 - Mobile (Deprecated)' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-events": {
+    "message": "행사",
+    "description": "The label for category 'Events' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Scheduled Mode": {
+    "message": "예약 모드",
+    "description": "The label for category 'Scheduled Mode' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Architecture": {
+    "message": "아키텍처",
+    "description": "The label for category 'Architecture' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Proposals": {
+    "message": "제안",
+    "description": "The label for category 'Proposals' in sidebar 'docsSidebar'"
   }
 }

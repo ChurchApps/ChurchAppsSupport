@@ -1,5 +1,6 @@
 ---
 title: "Managing Your Profile"
+description: "Update your ChurchApps account in B1 Admin: edit your name, email, and password, turn on two-factor sign-in, pick a theme, or delete your account."
 ---
 
 # Managing Your Profile

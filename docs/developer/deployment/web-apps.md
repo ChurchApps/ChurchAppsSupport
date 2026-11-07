@@ -1,5 +1,6 @@
 ---
 title: "Web App Deployment"
+description: "Steps to deploy ChurchApps web apps like B1 Admin to Amazon S3 and CloudFront, with automatic GitHub Actions deploys on merge or manual commands."
 ---
 
 # Web App Deployment
@@ -13,7 +14,7 @@ ChurchApps web applications are deployed as static sites to **Amazon S3** with *
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Set up the web app locally and verify it builds -- see [Web Apps](../web-apps/)
+- Set up the web app locally and verify it builds -- see [Web Apps](../web-apps/index.md)
 - Configure AWS credentials with S3 and CloudFront access
 - Know the target S3 bucket name and CloudFront distribution ID
 
@@ -53,6 +54,6 @@ If you need to verify a build locally before deploying, run `npm run build` and 
 
 ## Related Articles
 
-- **[Web Apps](../web-apps/)** -- Setup guides for B1Admin, B1App, and LessonsApp
-- **[API Deployment](./apis)** -- Deploying the backend APIs
-- **[Mobile Deployment](./mobile)** -- Deploying mobile apps to app stores
+- **[Web Apps](../web-apps/index.md)** -- Setup guides for B1Admin, B1App, and LessonsApp
+- **[API Deployment](./apis.md)** -- Deploying the backend APIs
+- **[Mobile Deployment](./mobile.md)** -- Deploying mobile apps to app stores

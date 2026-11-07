@@ -1,5 +1,6 @@
 ---
 title: "Demographics"
+description: "See your congregation's age, gender, membership, marital status, and campus makeup in B1 Admin's interactive charts, and drill into any group."
 ---
 
 # Demographics

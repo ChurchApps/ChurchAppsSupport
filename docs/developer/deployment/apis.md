@@ -1,5 +1,6 @@
 ---
 title: "API Deployment"
+description: "Deploy the ChurchApps API to AWS Lambda with Serverless, covering builds, the demo and prod workflows, database migrations, and SSM configuration."
 ---
 
 # API Deployment
@@ -13,7 +14,7 @@ ChurchApps APIs are deployed as AWS Lambda functions using the Serverless Framew
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Set up the API locally -- see [Local API Setup](../api/local-setup)
+- Set up the API locally -- see [Local API Setup](../api/local-setup.md)
 - Configure AWS credentials on your machine
 - Ensure you have access to the target AWS account
 
@@ -47,7 +48,7 @@ In practice the Api is deployed by GitHub Actions: **Deploy Demo** runs on every
 
 ## Database Migrations
 
-**Deploy Prod** applies pending database migrations as part of the deploy. The production databases only accept connections from inside the VPC, so right after `serverless deploy` the workflow invokes the `migrate` Lambda (`api-Prod-migrate`), which runs every module's pending migrations and returns `{ ok, environment, modules }`. If any module fails or is refused (for example a database with no migration history), the job fails so the schema is never left behind the code. **Rollback Prod** reverts the Lambda code only; migrations stay applied, so keep them additive. See [Server Admin -- Database Migrations](../server-admin#database-migrations) for checking status or running migrations by hand.
+**Deploy Prod** applies pending database migrations as part of the deploy. The production databases only accept connections from inside the VPC, so right after `serverless deploy` the workflow invokes the `migrate` Lambda (`api-Prod-migrate`), which runs every module's pending migrations and returns `{ ok, environment, modules }`. If any module fails or is refused (for example a database with no migration history), the job fails so the schema is never left behind the code. **Rollback Prod** reverts the Lambda code only; migrations stay applied, so keep them additive. See [Server Admin -- Database Migrations](../server-admin.md#database-migrations) for checking status or running migrations by hand.
 
 ## What Gets Created
 
@@ -75,6 +76,6 @@ Every merge to `main` deploys to the demo environment first. Check your change t
 
 ## Related Articles
 
-- **[Local API Setup](../api/local-setup)** -- Setting up the API for development
-- **[Module Structure](../api/module-structure)** -- Understanding the Lambda function architecture
-- **[Web App Deployment](./web-apps)** -- Deploying the frontend applications
+- **[Local API Setup](../api/local-setup.md)** -- Setting up the API for development
+- **[Module Structure](../api/module-structure.md)** -- Understanding the Lambda function architecture
+- **[Web App Deployment](./web-apps.md)** -- Deploying the frontend applications

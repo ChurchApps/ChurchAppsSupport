@@ -1,5 +1,6 @@
 ---
 title: "Local API Setup"
+description: "Set up the ChurchApps API locally: clone the repo, configure six MySQL module databases, initialize the schema, and start the hot-reload dev server."
 ---
 
 # Local API Setup
@@ -13,9 +14,9 @@ This guide walks you through setting up the ChurchApps API for local development
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Install **Node.js 24+**, **Git**, and **MySQL 8.0+** -- see [Prerequisites](../setup/prerequisites)
+- Install **Node.js 24+**, **Git**, and **MySQL 8.0+** -- see [Prerequisites](../setup/prerequisites.md)
 - Create a MySQL user with database creation privileges
-- Review the [Environment Variables](../setup/environment-variables) reference for API configuration
+- Review the [Environment Variables](../setup/environment-variables.md) reference for API configuration
 
 </div>
 
@@ -82,7 +83,7 @@ The API starts with hot reload at [http://localhost:8084](http://localhost:8084)
 
 ## Deployment
 
-The staging environment has been retired. The Api deploys to the demo environment on every push to `main` and to production through the manual **Deploy Prod** workflow, which also applies pending database migrations. See [API Deployment](../deployment/apis) for details.
+The staging environment has been retired. The Api deploys to the demo environment on every push to `main` and to production through the manual **Deploy Prod** workflow, which also applies pending database migrations. See [API Deployment](../deployment/apis.md) for details.
 
 ## Local Library Development
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-This lets you test library changes against the API without publishing to npm. See [Shared Libraries](../shared-libraries/#local-development-against-a-consuming-app) for details -- and never commit the portal resolution the link writes into `package.json`.
+This lets you test library changes against the API without publishing to npm. See [Shared Libraries](../shared-libraries/index.md#local-development-against-a-consuming-app) for details -- and never commit the portal resolution the link writes into `package.json`.
 
 ## Related Articles
 
-- **[Database](./database)** -- Understanding the database-per-module architecture
-- **[Module Structure](./module-structure)** -- How controllers, repositories, and models are organized
-- **[Shared Libraries](../shared-libraries/)** -- Working with `@churchapps/helpers` and `@churchapps/apihelper`
+- **[Database](./database.md)** -- Understanding the database-per-module architecture
+- **[Module Structure](./module-structure.md)** -- How controllers, repositories, and models are organized
+- **[Shared Libraries](../shared-libraries/index.md)** -- Working with `@churchapps/helpers` and `@churchapps/apihelper`

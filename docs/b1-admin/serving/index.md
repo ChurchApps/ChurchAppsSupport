@@ -1,5 +1,7 @@
 ---
-title: "Serving"
+title: "Serving Overview in B1 Admin"
+sidebar_label: "Serving"
+description: "Coordinate volunteers and plan church services in B1 Admin's Serving area, from ministry tabs and teams to service plans, songs, and tasks."
 ---
 
 # Serving

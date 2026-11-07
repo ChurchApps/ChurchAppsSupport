@@ -1,5 +1,6 @@
 ---
 title: "Managing Year Plans"
+description: "Create a year plan of weekly lessons in Lessons.church, anchor weeks to Easter or Christmas, and publish it for churches to apply in B1 Admin."
 ---
 
 # Managing Year Plans

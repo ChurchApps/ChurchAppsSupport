@@ -1,5 +1,7 @@
 ---
-title: "Content"
+title: "Content Features in the B1.church Member Portal"
+sidebar_label: "Content"
+description: "See which content your church enables in the B1.church member portal, then browse sermons, live streams, Bible reading, and lessons."
 ---
 
 # Content

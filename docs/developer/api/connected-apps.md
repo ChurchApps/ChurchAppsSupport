@@ -1,12 +1,13 @@
 ---
 title: "Connected Apps & OAuth"
+description: "Connect third-party apps to a church's B1 data with OAuth 2.0 consent, no shared passwords or API keys, and revoke access anytime from B1 Admin settings."
 ---
 
 # Connected Apps & OAuth
 
 <div class="article-intro">
 
-The B1 API supports OAuth 2.0 so a third-party application can ask each church admin for permission to access their data — without the church ever sharing a password or API key. A **Connected App** is an OAuth token a church admin has approved; revoking it severs the third-party app's access in one click. Use this path for multi-tenant SaaS connectors. For a single-church integration prefer [API Keys](./api-keys).
+The B1 API supports OAuth 2.0 so a third-party application can ask each church admin for permission to access their data — without the church ever sharing a password or API key. A **Connected App** is an OAuth token a church admin has approved; revoking it severs the third-party app's access in one click. Use this path for multi-tenant SaaS connectors. For a single-church integration prefer [API Keys](./api-keys.md).
 
 </div>
 
@@ -27,7 +28,7 @@ The B1 API supports OAuth 2.0 so a third-party application can ask each church a
 | **Connected App** | A specific `(client, church-admin)` pair where the admin has granted the client access. Each Connected App is backed by an OAuth refresh token. |
 | **Access token** | A short-lived JWT (≈ 7 days) the client uses for API calls. Same shape as a user JWT — `Authorization: Bearer <jwt>`. |
 | **Refresh token** | A long-lived opaque string (≈ 90 days) the client uses to mint new access tokens. |
-| **Scope** | Narrows what the access token can do — see the [scope catalog](./api-keys#scopes). |
+| **Scope** | Narrows what the access token can do — see the [scope catalog](./api-keys.md#scopes). |
 
 ## Grant Flows
 
@@ -162,7 +163,7 @@ The list excludes expired tokens automatically.
 
 ## Scopes & Consent
 
-The scope strings are the same catalog as [API keys](./api-keys#scopes). Best practices for clients:
+The scope strings are the same catalog as [API keys](./api-keys.md#scopes). Best practices for clients:
 
 - **Request the narrowest scopes that work.** Churches notice if you ask for `donations:write` when you only need to read people.
 - **Use a refresh token plus short-lived access tokens.** Long-lived access tokens are harder to revoke quickly.
@@ -183,7 +184,7 @@ Registered redirect URIs must match the `redirect_uri` on the request exactly; a
 
 ### Dynamic Client Registration
 
-`POST /membership/oauth/register` (public, RFC 7591) lets a client such as claude.ai's MCP connector register itself. It's advertised by the API's `/.well-known/oauth-authorization-server` document — see [MCP Server → OAuth Discovery](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (public, RFC 7591) lets a client such as claude.ai's MCP connector register itself. It's advertised by the API's `/.well-known/oauth-authorization-server` document — see [MCP Server → OAuth Discovery](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ On the B1Admin consent page, a self-registered client gets a notice that it regi
 
 ## SDK Support
 
-The `@churchapps/integration-sdk` package wraps every OAuth flow with typed helpers — `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. See the package README and [Webhooks](./webhooks#sdk-support) for an end-to-end example.
+The `@churchapps/integration-sdk` package wraps every OAuth flow with typed helpers — `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. See the package README and [Webhooks](./webhooks.md#sdk-support) for an end-to-end example.

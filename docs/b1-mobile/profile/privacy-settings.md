@@ -1,5 +1,6 @@
 ---
 title: "Privacy Settings"
+description: "Control which profile details like phone, email, and address other members can see in the B1 Mobile directory, and review pending changes."
 ---
 
 # Privacy Settings
@@ -13,7 +14,7 @@ The **Visibility** tab on your Profile screen lets you control what other church
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- [Install B1 Mobile](../getting-started/installing.md) and [log in](../getting-started/logging-in.md) to your account
 
 </div>
 
@@ -52,8 +53,8 @@ The **Account** tab provides access to your security settings. Use this tab to m
 
 | Tab | Purpose |
 |---|---|
-| **Profile** | [Edit your personal information](./editing-profile) and photo |
-| **Household** | [View your family members](./household) |
+| **Profile** | [Edit your personal information](./editing-profile.md) and photo |
+| **Household** | [View your family members](./household.md) |
 | **Visibility** | Control what others see in the directory |
 | **Pending** | Review profile changes awaiting approval |
 | **Account** | Manage security settings |
@@ -62,6 +63,6 @@ These tabs work together to give you full control over your personal information
 
 ## Related Articles
 
-- [Editing Your Profile](./editing-profile) -- Update your personal information
-- [Household](./household) -- View and manage your family members
+- [Editing Your Profile](./editing-profile.md) -- Update your personal information
+- [Household](./household.md) -- View and manage your family members
 - [Member Directory](../community/member-directory.md) -- See how your profile appears to others

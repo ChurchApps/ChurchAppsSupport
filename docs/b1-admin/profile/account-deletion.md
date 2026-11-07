@@ -1,5 +1,6 @@
 ---
 title: "Reviewing Account Deletion Requests"
+description: "Approve or decline member account deletion requests in B1 Admin, route them through the Directory Approval Group, and meet the 30-day GDPR deadline."
 ---
 
 # Reviewing Account Deletion Requests

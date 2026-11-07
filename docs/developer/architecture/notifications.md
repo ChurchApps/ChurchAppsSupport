@@ -1,5 +1,6 @@
 ---
 title: "Notifications & Reminders Architecture"
+description: "How the B1 Admin API routes notifications, scheduled reminders, church email limits, and text opt-outs through one delivery funnel and preference gate."
 ---
 
 # Notifications & Reminders Architecture
@@ -185,6 +186,6 @@ Locally, the same logic can be triggered on demand with `npm run timer:30min` an
 
 ## Related Pages
 
-- [Real-time Architecture](../realtime) — the WebSocket protocol and client primitives (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) that the in-app delivery level rides on
-- [Web Push Notifications](../web-push) — VAPID setup and the browser Push API path used by the push escalation level
-- [Messaging Endpoints](../api/endpoints/messaging) — full REST surface for messages, conversations, connections, and notification/reminder routes
+- [Real-time Architecture](../realtime.md) — the WebSocket protocol and client primitives (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) that the in-app delivery level rides on
+- [Web Push Notifications](../web-push.md) — VAPID setup and the browser Push API path used by the push escalation level
+- [Messaging Endpoints](../api/endpoints/messaging.md) — full REST surface for messages, conversations, connections, and notification/reminder routes

@@ -386,13 +386,13 @@
     "message": "B1 Mobile"
   },
   "homepage.products.b1mobile.description": {
-    "message": "App mobile per i membri della chiesa su iOS e Android."
+    "message": "App per i membri legacy per iOS e Android, ora sostituita dall'app web di B1.church."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Check-in"
   },
   "homepage.products.b1checkin.description": {
-    "message": "App di check-in self-service per tablet Android."
+    "message": "App chiosco per il self-service check-in su tablet iPad e Android."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -425,10 +425,10 @@
     "message": "Progettato specificamente per i flussi di lavoro ecclesiastici — nessuno strumento generico riadattato per il ministero."
   },
   "homepage.title": {
-    "message": "Pagina iniziale"
+    "message": "Guida per B1.church, Lessons.church e FreePlay"
   },
   "homepage.description": {
-    "message": "Documentazione di supporto per ChurchApps — strumenti open source gratuiti per la gestione della chiesa."
+    "message": "Guide e documentazione per il software gratuito e open source di ChurchApps per le chiese: gestione ecclesiale, check-in, donazioni e siti web di B1.church, il curriculum di Lessons.church e FreePlay."
   },
   "homepage.products.heading": {
     "message": "Scegli il tuo prodotto"

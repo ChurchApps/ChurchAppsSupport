@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Reference for the @churchapps/apihelper package used by all ChurchApps Express APIs in the Packages workspace, covering local build, testing with a Yarn portal, and changeset publishing."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ The `@churchapps/apihelper` package provides server-side utilities for all Churc
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Install **Node.js** and **Git** -- see [Prerequisites](../setup/prerequisites)
+- Install **Node.js** and **Git** -- see [Prerequisites](../setup/prerequisites.md)
 - Familiarize yourself with the [Packages workspace](./index.md) setup and release flow
-- This package depends on [`@churchapps/helpers`](./helpers) (as a peer dependency) and re-exports it
+- This package depends on [`@churchapps/helpers`](./helpers.md) (as a peer dependency) and re-exports it
 
 </div>
 
@@ -65,6 +66,6 @@ This package is a dependency of every ChurchApps API -- the core Api, AskApi, an
 
 ## Related Articles
 
-- **[Helpers](./helpers)** -- The base utility package that this package depends on
-- **[Module Structure](../api/module-structure)** -- How controllers and auth middleware are used in API modules
-- **[Local API Setup](../api/local-setup)** -- Setting up the API for local development
+- **[Helpers](./helpers.md)** -- The base utility package that this package depends on
+- **[Module Structure](../api/module-structure.md)** -- How controllers and auth middleware are used in API modules
+- **[Local API Setup](../api/local-setup.md)** -- Setting up the API for local development

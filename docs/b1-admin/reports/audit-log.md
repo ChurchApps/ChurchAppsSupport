@@ -1,5 +1,6 @@
 ---
 title: "Audit Log"
+description: "Review the audit log in B1 Admin to see who logged in, edited people records, or changed permissions, and export filtered entries to CSV."
 ---
 
 # Audit Log
@@ -78,6 +79,6 @@ Review the audit log regularly, especially after onboarding new team members or 
 
 ## Related Articles
 
-- [Roles & Permissions](../settings/roles-permissions) -- Manage who has access to what
-- [Data Security](../settings/data-security) -- Understand how your data is protected
+- [Roles & Permissions](../settings/roles-permissions.md) -- Manage who has access to what
+- [Data Security](../settings/data-security.md) -- Understand how your data is protected
 - [Reports Overview](./index.md) -- See all available reports

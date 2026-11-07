@@ -1,5 +1,6 @@
 ---
 title: "Reviewing Your Household"
+description: "Review your household in B1 Checkin after picking a person, then assign groups for each service time and mark guests or volunteers before checking in."
 ---
 
 # Reviewing Your Household
@@ -13,8 +14,8 @@ After you select a person from the search results, the app loads your entire hou
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Select a service](./selecting-service) from the services screen
-- [Look up a member](./looking-up-members) and select them from the search results
+- [Select a service](./selecting-service.md) from the services screen
+- [Look up a member](./looking-up-members.md) and select them from the search results
 
 </div>
 
@@ -35,9 +36,9 @@ Tap a member's card to expand it. When expanded, you will see a row for each **s
 - The **groups offered** at that service time, listed below the name (for example, "Nursery, Preschool, Adult Bible Class"), so you can see which classes are available before you choose
 - A **button** showing the currently assigned group, or "Select Group" if no group has been assigned yet
 
-If a service time has a [check-in schedule](../../b1-admin/attendance/setup#setting-a-check-in-schedule) and its window is closed right now, the row shows **Closed** instead of a button -- with the next opening time when there is one, such as **Closed · opens Sun 9:30 AM**. If the person is already checked in to that service time, the row shows their group with a check mark instead (for example, **Kids Room 1 · Checked in**), so you can see where they are even though the window has closed.
+If a service time has a [check-in schedule](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) and its window is closed right now, the row shows **Closed** instead of a button -- with the next opening time when there is one, such as **Closed · opens Sun 9:30 AM**. If the person is already checked in to that service time, the row shows their group with a check mark instead (for example, **Kids Room 1 · Checked in**), so you can see where they are even though the window has closed.
 
-Tap the group button to go to the [group selection screen](./group-assignment) where you can choose or change the group for that person and service time.
+Tap the group button to go to the [group selection screen](./group-assignment.md) where you can choose or change the group for that person and service time.
 
 The expanded card also shows **Member**, **Guest**, and **Volunteer** chips. Tap one to set how this person is checking in — Member is the default. The type matters for children's rooms: volunteers count toward the room's volunteer-to-child ratio, and guests count against any guest capacity your church has set.
 
@@ -51,9 +52,9 @@ You do not need to assign every family member to a group. Adults who are attendi
 
 From the household review screen, you have three options:
 
-- **Expand a member** and tap a service time button to [assign or change a group](./group-assignment).
-- **Tap the Add Guest button** below the member list to [add a guest](./adding-guests) to your household.
-- **Tap the Check-in button** at the bottom of the screen to [complete the check-in](./completing-checkin) for everyone in the household.
+- **Expand a member** and tap a service time button to [assign or change a group](./group-assignment.md).
+- **Tap the Add Guest button** below the member list to [add a guest](./adding-guests.md) to your household.
+- **Tap the Check-in button** at the bottom of the screen to [complete the check-in](./completing-checkin.md) for everyone in the household.
 
 :::info
 Any group assignments from a previous check-in to the same service are pre-loaded automatically. If your children attend the same groups each week, you may not need to change anything -- just review and check in.
@@ -61,6 +62,6 @@ Any group assignments from a previous check-in to the same service are pre-loade
 
 ## Next Steps
 
-- [Assign groups](./group-assignment) to family members who need to check into a specific class or program.
-- [Add a guest](./adding-guests) if someone is visiting with your family.
-- [Complete check-in](./completing-checkin) when everyone's assignments look correct.
+- [Assign groups](./group-assignment.md) to family members who need to check into a specific class or program.
+- [Add a guest](./adding-guests.md) if someone is visiting with your family.
+- [Complete check-in](./completing-checkin.md) when everyone's assignments look correct.

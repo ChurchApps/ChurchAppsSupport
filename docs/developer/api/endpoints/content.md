@@ -1,5 +1,6 @@
 ---
 title: "Content Endpoints"
+description: "Endpoint reference for the ChurchApps Content API: website pages, blog posts, redirects, sermons, events, files, Bible lookups, and songs in B1 Admin."
 ---
 
 # Content Endpoints
@@ -133,7 +134,7 @@ Base path: `/content/pageHistory`
 
 Base path: `/content/posts`
 
-Blog posts are standalone rows: `title`, `slug` (unique per church), `excerpt`, `content` (markdown body), `authorId`, `photoUrl`, `publishDate`, `category`, and `tags`. A post is published once `publishDate` is set and in the past. Read endpoints enrich each post with `authorName` resolved from `authorId`. See [Website Builder Architecture](../../architecture/website-builder#blog).
+Blog posts are standalone rows: `title`, `slug` (unique per church), `excerpt`, `content` (markdown body), `authorId`, `photoUrl`, `publishDate`, `category`, and `tags`. A post is published once `publishDate` is set and in the past. Read endpoints enrich each post with `authorName` resolved from `authorId`. See [Website Builder Architecture](../../architecture/website-builder.md#blog).
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
@@ -458,8 +459,8 @@ Base path: `/content/support`
 
 ## Related Pages
 
-- [Website Builder Architecture](../../architecture/website-builder) -- How pages, sections, elements, posts, and redirects fit together across the apps
-- [Membership Endpoints](./membership) -- People, churches, groups, roles, permissions
-- [Attendance Endpoints](./attendance) -- Service and visit tracking
-- [Authentication & Permissions](./authentication) -- Login flow, JWT, permission model
-- [Module Structure](../module-structure) -- Code organization patterns
+- [Website Builder Architecture](../../architecture/website-builder.md) -- How pages, sections, elements, posts, and redirects fit together across the apps
+- [Membership Endpoints](./membership.md) -- People, churches, groups, roles, permissions
+- [Attendance Endpoints](./attendance.md) -- Service and visit tracking
+- [Authentication & Permissions](./authentication.md) -- Login flow, JWT, permission model
+- [Module Structure](../module-structure.md) -- Code organization patterns

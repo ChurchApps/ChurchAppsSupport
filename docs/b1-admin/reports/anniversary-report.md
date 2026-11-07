@@ -1,5 +1,6 @@
 ---
 title: "Anniversary List"
+description: "Pull a list of everyone with a wedding anniversary in a chosen month in B1 Admin, with dates shown in the results and exportable to a spreadsheet for bulletins or cards."
 ---
 
 # Anniversary List

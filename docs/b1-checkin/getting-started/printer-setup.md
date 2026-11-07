@@ -1,5 +1,6 @@
 ---
 title: "Printer Setup"
+description: "Set up a network label printer for B1 Checkin kiosks: find it on your Wi-Fi, choose it, run a test print, and save the selection."
 ---
 
 # Printer Setup
@@ -13,7 +14,7 @@ B1 Church Checkin can print name labels and parent pickup slips to a network lab
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Log in](./logging-in) to the B1 Church Checkin app and select your church
+- [Log in](./logging-in.md) to the B1 Church Checkin app and select your church
 - Connect a compatible network label printer to the same Wi-Fi network as the tablet
 
 </div>
@@ -87,4 +88,4 @@ If you move the kiosk to a different location or change your network setup, retu
 
 ## Next Steps
 
-With your printer configured, you are ready to start checking in. See the [check-in workflow](../check-in/) to learn how the full process works, starting with [selecting a service](../check-in/selecting-service).
+With your printer configured, you are ready to start checking in. See the [check-in workflow](../check-in/index.md) to learn how the full process works, starting with [selecting a service](../check-in/selecting-service.md).

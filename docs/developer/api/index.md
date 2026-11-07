@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Explains the ChurchApps API's modular monolith design, its six data modules, tech stack, ports, and Lambda functions, with links to setup, database, auth, and endpoint docs for developers."
 ---
 
 # API
@@ -52,8 +53,8 @@ When deployed to AWS, the API runs as six Lambda functions:
 
 The API depends on two shared ChurchApps packages:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Base utilities (DateHelper, ApiHelper, etc.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Express server utilities including auth, database helpers, and AWS integrations
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Base utilities (DateHelper, ApiHelper, etc.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Express server utilities including auth, database helpers, and AWS integrations
 
 :::info
 The API uses ES modules (`"type": "module"` in `package.json`). Make sure your imports use the ES module syntax.
@@ -61,11 +62,11 @@ The API uses ES modules (`"type": "module"` in `package.json`). Make sure your i
 
 ## In This Section
 
-- **[Local Setup](./local-setup)** -- Clone, configure, and run the API locally
-- **[Database](./database)** -- Database-per-module architecture, schema scripts, and data access patterns
-- **[Module Structure](./module-structure)** -- Controllers, repositories, models, and authentication
-- **[API Keys](./api-keys)** -- Personal access tokens for scripts and connectors
-- **[Connected Apps (OAuth)](./connected-apps)** -- Multi-tenant OAuth flow for third-party apps
-- **[Webhooks](./webhooks)** -- Push event notifications to external systems
-- **[MCP Server](./mcp)** -- Model Context Protocol endpoint that exposes the API to AI assistants
-- **[Endpoint Reference](./endpoints/)** -- Complete REST API documentation for all modules
+- **[Local Setup](./local-setup.md)** -- Clone, configure, and run the API locally
+- **[Database](./database.md)** -- Database-per-module architecture, schema scripts, and data access patterns
+- **[Module Structure](./module-structure.md)** -- Controllers, repositories, models, and authentication
+- **[API Keys](./api-keys.md)** -- Personal access tokens for scripts and connectors
+- **[Connected Apps (OAuth)](./connected-apps.md)** -- Multi-tenant OAuth flow for third-party apps
+- **[Webhooks](./webhooks.md)** -- Push event notifications to external systems
+- **[MCP Server](./mcp.md)** -- Model Context Protocol endpoint that exposes the API to AI assistants
+- **[Endpoint Reference](./endpoints/index.md)** -- Complete REST API documentation for all modules

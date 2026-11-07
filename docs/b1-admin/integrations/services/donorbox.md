@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Connect Donorbox to B1 Admin with Zapier so online donations create donation records and donor person profiles automatically, no manual export needed."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Donorbox's *New or Updated Donation* fires on edits too. Use a Zapier *Path* ste
 
 ## See Also
 
-- [Zapier (overview)](../zapier) — the B1 side of every Zapier recipe
-- [Subsplash](./subsplash) — another donation platform with a Zapier app
-- [Mailchimp](./mailchimp) — chain "new gift" into an email tag
+- [Zapier (overview)](../zapier.md) — the B1 side of every Zapier recipe
+- [Subsplash](./subsplash.md) — another donation platform with a Zapier app
+- [Mailchimp](./mailchimp.md) — chain "new gift" into an email tag

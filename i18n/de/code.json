@@ -386,13 +386,13 @@
     "message": "B1 Mobil"
   },
   "homepage.products.b1mobile.description": {
-    "message": "Mobile App für Gemeindemitglieder auf iOS und Android."
+    "message": "Ältere Mitglieder-App für iOS und Android, die inzwischen durch die B1.church-Web-App ersetzt wurde."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Check-in"
   },
   "homepage.products.b1checkin.description": {
-    "message": "Selbstbedienungs-Kiosk-Check-in-App für Android-Tablets."
+    "message": "Selbstbedienungs-Check-in-Kiosk-App für iPad- und Android-Tablets."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -425,10 +425,10 @@
     "message": "Speziell für Gemeinde-Arbeitsabläufe entwickelt — kein generisches Tool, das für den Dienst umfunktioniert wurde."
   },
   "homepage.title": {
-    "message": "Startseite"
+    "message": "Hilfe zu B1.church, Lessons.church & FreePlay"
   },
   "homepage.description": {
-    "message": "Support-Dokumentation für ChurchApps — kostenlose Open-Source-Tools für die Gemeindeverwaltung."
+    "message": "Anleitungen und Dokumentation zur kostenlosen Open-Source-Gemeindesoftware von ChurchApps: B1.church für Gemeindeverwaltung, Check-in, Spenden und Websites, Lessons.church-Lehrpläne sowie FreePlay."
   },
   "homepage.products.heading": {
     "message": "Wählen Sie Ihr Produkt"

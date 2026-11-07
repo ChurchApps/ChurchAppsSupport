@@ -1,5 +1,7 @@
 ---
-title: "Sermons"
+title: "Browsing Sermons on Your B1.church Website"
+sidebar_label: "Sermons"
+description: "Browse and watch recorded sermons from your church library on the B1.church site, grouped into series or playlists. No login needed."
 ---
 
 # Sermons

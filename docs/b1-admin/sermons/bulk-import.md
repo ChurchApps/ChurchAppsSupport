@@ -1,5 +1,6 @@
 ---
 title: "Bulk Import"
+description: "Import sermon videos in bulk from a YouTube channel or Vimeo account into B1 Admin, then sort them into a playlist."
 ---
 
 # Bulk Import
@@ -14,7 +15,7 @@ The Bulk Import page lets you quickly populate your sermon library by importing 
 <h4>Before You Begin</h4>
 
 - You need the **contentApi.streamingServices.edit** permission. See [Roles & Permissions](../settings/roles-permissions.md) if you do not have access.
-- Create at least one [playlist](playlists) to import your sermons into
+- Create at least one [playlist](./playlists.md) to import your sermons into
 - Have your YouTube Channel ID or Vimeo account information ready
 
 </div>
@@ -39,7 +40,7 @@ Before importing videos, you need at least one playlist to organize them into. I
 2. Click **Create First Playlist** and fill in the name, description, publish date, and thumbnail.
 3. Click **Save**, then return to Bulk Import by clicking **Add Sermon** and choosing **Bulk Import**.
 
-See [Playlists](playlists) for detailed instructions on creating and managing playlists.
+See [Playlists](./playlists.md) for detailed instructions on creating and managing playlists.
 
 ## Importing Videos
 
@@ -54,11 +55,11 @@ See [Playlists](playlists) for detailed instructions on creating and managing pl
 Your videos will be imported with all their details, including titles, descriptions, dates, and thumbnails. Special characters in YouTube titles and descriptions, such as `&`, apostrophes, and quotation marks, come through as written rather than as codes like `&amp;`.
 
 :::info
-Bulk import is ideal for getting started when you are migrating from another platform. For adding individual sermons going forward, use the [Managing Sermons](managing-sermons) page instead.
+Bulk import is ideal for getting started when you are migrating from another platform. For adding individual sermons going forward, use the [Managing Sermons](./managing-sermons.md) page instead.
 :::
 
 ## Next Steps
 
-- [Managing Sermons](managing-sermons) -- Edit imported sermon details
-- [Playlists](playlists) -- Create and manage sermon series
-- [Live Streaming](live-streaming) -- Set up live streaming for your services
+- [Managing Sermons](./managing-sermons.md) -- Edit imported sermon details
+- [Playlists](./playlists.md) -- Create and manage sermon series
+- [Live Streaming](./live-streaming.md) -- Set up live streaming for your services

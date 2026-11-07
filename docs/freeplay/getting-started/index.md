@@ -1,5 +1,7 @@
 ---
-title: "Getting Started"
+title: "Getting Started with FreePlay TV App"
+sidebar_label: "Getting Started"
+description: "Set up FreePlay on Android TV, Fire TV, or Apple TV: install the app, open it for the first time, and learn the remote controls and sidebar."
 ---
 
 # Getting Started with FreePlay
@@ -42,7 +44,7 @@ FreePlay runs on Fire TV (including the newer Vega OS sticks), Android TV and Go
 
 When you open FreePlay for the first time, you will see an animated splash screen with the FreePlay logo. The app checks for any previously connected content providers. If you have already connected a provider, it will take you directly to that provider's content browser. Otherwise, it will open the **Content Providers** screen where you can connect to your first content source.
 
-If the TV is paired to a calendar in [Scheduled Mode](../scheduled-mode/), FreePlay skips all of this and opens straight to the scheduled player.
+If the TV is paired to a calendar in [Scheduled Mode](../scheduled-mode/index.md), FreePlay skips all of this and opens straight to the scheduled player.
 
 ## Navigating with Your TV Remote
 
@@ -62,13 +64,13 @@ The sidebar collapses to a narrow strip of icons when you are browsing content. 
 
 The sidebar lists, from top to bottom:
 
-- **Today's Plan** -- Shown when the TV is paired to a plan. See [Plan Mode](../plan-mode/)
-- **Announcements** -- Shown once you have chosen an announcements folder. See [Announcements](../content-providers/announcements)
-- **Browse** -- Each connected content provider you can browse. See [Browsing and Downloading Content](../content-providers/browsing-content)
-- **Settings** -- At the bottom of the sidebar. Opens **Pair to a calendar** (pair this TV to a calendar or plan -- see [Choosing a Pairing Mode](./pairing-modes)), **Downloads** (play or delete content saved on this device), and **Providers** (connect content providers and choose the announcements folder)
+- **Today's Plan** -- Shown when the TV is paired to a plan. See [Plan Mode](../plan-mode/index.md)
+- **Announcements** -- Shown once you have chosen an announcements folder. See [Announcements](../content-providers/announcements.md)
+- **Browse** -- Each connected content provider you can browse. See [Browsing and Downloading Content](../content-providers/browsing-content.md)
+- **Settings** -- At the bottom of the sidebar. Opens **Pair to a calendar** (pair this TV to a calendar or plan -- see [Choosing a Pairing Mode](./pairing-modes.md)), **Downloads** (play or delete content saved on this device), and **Providers** (connect content providers and choose the announcements folder)
 
 ## What's Next
 
-- **[Choosing a Pairing Mode](./pairing-modes)** - Learn about the different ways to connect your TV
-- **[Scheduled Mode](../scheduled-mode/)** - Put your TVs on a calendar with FreePlay Admin
-- **[Content Providers](../content-providers/)** - Connect to Lessons.church, Bible Project, and more
+- **[Choosing a Pairing Mode](./pairing-modes.md)** - Learn about the different ways to connect your TV
+- **[Scheduled Mode](../scheduled-mode/index.md)** - Put your TVs on a calendar with FreePlay Admin
+- **[Content Providers](../content-providers/index.md)** - Connect to Lessons.church, Bible Project, and more

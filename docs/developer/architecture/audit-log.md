@@ -1,5 +1,6 @@
 ---
 title: "Audit Log & Undoable Batches"
+description: "Covers the Api audit log that records every user change across modules, and how import batches can be undone row by row in B1 Admin."
 ---
 
 # Audit Log & Undoable Batches
@@ -155,6 +156,6 @@ Both admin surfaces are **in progress**; the intent:
 
 ## Related Pages
 
-- [Module Structure](../api/module-structure) — how a non-membership controller reaches the membership repos through `RepoManager`
-- [Giving](./giving) — the donation write paths that are audited as `sensitive` even when anonymous
-- [Membership Endpoints](../api/endpoints/membership) — the REST surface that carries `X-Batch-Id` and exposes `/auditlogs` and `/batches`
+- [Module Structure](../api/module-structure.md) — how a non-membership controller reaches the membership repos through `RepoManager`
+- [Giving](./giving.md) — the donation write paths that are audited as `sensitive` even when anonymous
+- [Membership Endpoints](../api/endpoints/membership.md) — the REST surface that carries `X-Batch-Id` and exposes `/auditlogs` and `/batches`

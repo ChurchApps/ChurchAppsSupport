@@ -1,5 +1,6 @@
 ---
 title: "Forms"
+description: "Find, filter, edit, archive, and restore custom forms in B1 Admin, plus where to set form members and review submissions."
 ---
 
 # Forms

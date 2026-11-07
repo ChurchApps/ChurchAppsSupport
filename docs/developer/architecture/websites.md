@@ -1,12 +1,13 @@
 ---
 title: "Website Routing & Multi-Site"
+description: "How B1.church maps subdomains and custom domains to the right church or secondary site, plus the Caddy edge that handles TLS for custom domains."
 ---
 
 # Website Routing & Multi-Site
 
 <div class="article-intro">
 
-A single church can now serve more than one distinct website, and each one can live on a `*.b1.church` subdomain or on a fully custom, church-owned domain. This page maps the routing layer that sits *underneath* the builder: how an incoming request resolves to a church **and** to a specific site, the multi-site data model (the `siteId` sentinel that keeps every pre-existing site rendering unchanged), and the custom-domain edge — a self-managed Caddy proxy on EC2 that terminates TLS and rewrites each church domain onto its `*.b1.church` upstream. For what actually renders once a request has resolved — the page/section/element tree — see [Website Builder](./website-builder).
+A single church can now serve more than one distinct website, and each one can live on a `*.b1.church` subdomain or on a fully custom, church-owned domain. This page maps the routing layer that sits *underneath* the builder: how an incoming request resolves to a church **and** to a specific site, the multi-site data model (the `siteId` sentinel that keeps every pre-existing site rendering unchanged), and the custom-domain edge — a self-managed Caddy proxy on EC2 that terminates TLS and rewrites each church domain onto its `*.b1.church` upstream. For what actually renders once a request has resolved — the page/section/element tree — see [Website Builder](./website-builder.md).
 
 </div>
 
@@ -201,7 +202,7 @@ WHERE d.domainName NOT LIKE '%www.%'
 
 ### Current state — static config, no runtime state
 
-The box (Windows EC2 behind the permanent Elastic IP) runs Caddy from a **static Caddyfile**: on-demand TLS whose `ask` points at `/membership/domains/authorize`, plus a host→upstream map file refreshed every 5 minutes from `/membership/domains/hostmap` by a scheduled task that ends in a graceful `caddy reload`. Config survives restarts with zero runtime state — no re-priming dance — and an unknown SNI is **TLS-refused** (no cert is minted for a host `authorize` rejects), while an authorized-but-not-yet-mapped host (a brand-new domain inside the sync window) gets a clean 404. New domains become routable within ~5 minutes of a save; their certificates are minted on first hit. Build/setup, operations, and field-tested gotchas: [Caddy Custom-Domain Proxy](../deployment/caddy-proxy).
+The box (Windows EC2 behind the permanent Elastic IP) runs Caddy from a **static Caddyfile**: on-demand TLS whose `ask` points at `/membership/domains/authorize`, plus a host→upstream map file refreshed every 5 minutes from `/membership/domains/hostmap` by a scheduled task that ends in a graceful `caddy reload`. Config survives restarts with zero runtime state — no re-priming dance — and an unknown SNI is **TLS-refused** (no cert is minted for a host `authorize` rejects), while an authorized-but-not-yet-mapped host (a brand-new domain inside the sync window) gets a clean 404. New domains become routable within ~5 minutes of a save; their certificates are minted on first hit. Build/setup, operations, and field-tested gotchas: [Caddy Custom-Domain Proxy](../deployment/caddy-proxy.md).
 
 ### Legacy runtime push — rollback path, pending deletion
 
@@ -209,8 +210,8 @@ The box (Windows EC2 behind the permanent Elastic IP) runs Caddy from a **static
 
 ## Related Pages
 
-- [Caddy Custom-Domain Proxy](../deployment/caddy-proxy) — the edge box itself: fresh-box setup, WinSW service, map sync task, and operational gotchas
-- [Website Builder](./website-builder) — the page/section/element tree, renderers, blog, SEO, and AI generation (what renders once a request has resolved to a church/site)
-- [Content Endpoints](../api/endpoints/content) — the REST surface for pages, blocks, links, and global styles, all now `?siteId=`-aware
-- [B1App](../web-apps/b1-app) — the Next.js app that hosts the middleware and `[sdSlug]` routing
-- [Web App Deployment](../deployment/web-apps) — how B1App is deployed to Vercel
+- [Caddy Custom-Domain Proxy](../deployment/caddy-proxy.md) — the edge box itself: fresh-box setup, WinSW service, map sync task, and operational gotchas
+- [Website Builder](./website-builder.md) — the page/section/element tree, renderers, blog, SEO, and AI generation (what renders once a request has resolved to a church/site)
+- [Content Endpoints](../api/endpoints/content.md) — the REST surface for pages, blocks, links, and global styles, all now `?siteId=`-aware
+- [B1App](../web-apps/b1-app.md) — the Next.js app that hosts the middleware and `[sdSlug]` routing
+- [Web App Deployment](../deployment/web-apps.md) — how B1App is deployed to Vercel

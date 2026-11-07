@@ -1,5 +1,6 @@
 ---
 title: "Multi-Currency Support"
+description: "Record and report donations in different currencies in B1 Admin, including manual entry, Stripe online giving, and how combined totals are converted."
 ---
 
 # Multi-Currency Support

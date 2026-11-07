@@ -1,5 +1,7 @@
 ---
-title: "Getting Started"
+title: "Getting Started with B1 Mobile (Deprecated)"
+sidebar_label: "Getting Started"
+description: "Set up B1 Mobile on your phone: find the app, log in with your ChurchApps account, and pick your church. Note that B1 Mobile is deprecated in favor of the PWA."
 ---
 
 # Getting Started
@@ -25,10 +27,10 @@ That is it. Once you have selected your church, the app loads your church's bran
 
 ## In This Section
 
-- [Installing the App](./installing) -- Where to download B1 Mobile and device requirements.
-- [Logging In](./logging-in) -- How to sign in or create a new account.
-- [Switching Churches](./switching-churches) -- How to switch between churches if you belong to more than one.
+- [Installing the App](./installing.md) -- Where to download B1 Mobile and device requirements.
+- [Logging In](./logging-in.md) -- How to sign in or create a new account.
+- [Switching Churches](./switching-churches.md) -- How to switch between churches if you belong to more than one.
 
 :::tip
-B1 Mobile uses the same ChurchApps account as all other ChurchApps products. If you already have an account from [B1.church](../../b1-church/), B1 Admin, or Lessons.church, you can use those same credentials to log in.
+B1 Mobile uses the same ChurchApps account as all other ChurchApps products. If you already have an account from [B1.church](../../b1-church/index.md), B1 Admin, or Lessons.church, you can use those same credentials to log in.
 :::

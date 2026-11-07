@@ -1,5 +1,6 @@
 ---
 title: "Attendance Setup"
+description: "Set up campuses, services, service times, and group assignments in B1 Admin so attendance tracking and check-in schedules work across your church."
 ---
 
 # Attendance Setup

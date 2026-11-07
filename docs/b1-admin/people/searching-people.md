@@ -1,5 +1,6 @@
 ---
 title: "Searching People"
+description: "Search your B1 Admin People directory by name, sort and choose columns in the table view, build filters with Advanced Search, and export matches to CSV."
 ---
 
 # Searching People

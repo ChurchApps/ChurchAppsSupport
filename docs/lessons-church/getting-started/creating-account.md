@@ -1,5 +1,6 @@
 ---
 title: "Creating an Account"
+description: "Register a ChurchApps account on Lessons.church, then connect it to a new or existing church profile so you can manage classrooms and schedules."
 ---
 
 # Creating an Account

@@ -1,5 +1,6 @@
 ---
 title: "Timeline"
+description: "The Timeline tab in the B1.church member portal has been retired. Find group chats, events, tasks, and alerts on the Me page, bell icon, and each group."
 ---
 
 # Timeline
@@ -16,13 +17,13 @@ The standalone **Timeline** tab has been retired. The member portal now opens on
 | --- | --- |
 | Group conversations and announcements | The chat inside each [group](../groups/conversations.md) (**Open chat**) |
 | Upcoming events for you and your groups | The **Me** page (`/mobile/me`) and each group's **Next event** section |
-| Tasks and serving assignments | The **Me** page and [Plans](../plans/) |
+| Tasks and serving assignments | The **Me** page and [Plans](../plans/index.md) |
 | New sermons | The **Latest sermon** section on Home and the [Sermons](../content/sermons.md) tab |
 | Anything that pinged you | The **bell** icon in the app bar, or `/mobile/notifications` |
 
 ## The Me Page
 
-[The Me Page](../getting-started/me-page) is the closest replacement for the old feed. It lists what is coming up for you -- serving assignments, event registrations, and group events -- along with the forms you've submitted, your attendance history, and your most recent notifications, and links straight to your profile, notification preferences, messages, giving, and registrations.
+[The Me Page](../getting-started/me-page.md) is the closest replacement for the old feed. It lists what is coming up for you -- serving assignments, event registrations, and group events -- along with the forms you've submitted, your attendance history, and your most recent notifications, and links straight to your profile, notification preferences, messages, giving, and registrations.
 
 ## Notifications
 

@@ -1,5 +1,6 @@
 ---
 title: "AI Search"
+description: "Search your B1 Admin people directory with plain-language questions such as which members have not attended in three months, instead of building filters."
 ---
 
 # AI Search

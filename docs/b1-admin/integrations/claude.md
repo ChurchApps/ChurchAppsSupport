@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Connect B1 Admin to Claude so you can ask about attendance, giving, and groups in plain English, with a sign-in option and a limited-permission key option."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ This is the same `/membership/people`, `/giving/donations`, `/attendance/visits`
 
 - [API Keys](/docs/developer/api/api-keys) — full scope reference
 - [MCP Server (developer reference)](/docs/developer/api/mcp) — protocol details and tool schemas
-- [ChatGPT](./chatgpt) — same idea, for OpenAI's models
+- [ChatGPT](./chatgpt.md) — same idea, for OpenAI's models

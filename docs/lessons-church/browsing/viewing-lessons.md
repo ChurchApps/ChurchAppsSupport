@@ -1,5 +1,6 @@
 ---
 title: "Viewing Lessons"
+description: "Walk through opening a lesson on Lessons.church, reading its sections and role actions, finding downloads, and switching age-group venues before class."
 ---
 
 # Viewing Lessons

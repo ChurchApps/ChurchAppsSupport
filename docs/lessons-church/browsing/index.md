@@ -1,5 +1,6 @@
 ---
 title: "Browsing Content"
+description: "Find out how to browse Lessons.church's free curriculum library without an account, including the home page layout, browsing by program, search, and external providers."
 ---
 
 # Browsing Content

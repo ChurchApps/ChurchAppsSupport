@@ -1,5 +1,6 @@
 ---
 title: "Creating Groups"
+description: "Set up a new group in B1 Admin, from choosing a category and naming it to configuring join policy, labels, messaging, and attendance settings."
 ---
 
 # Creating Groups

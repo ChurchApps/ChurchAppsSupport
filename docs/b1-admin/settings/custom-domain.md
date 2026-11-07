@@ -1,5 +1,6 @@
 ---
 title: "Custom Domain"
+description: "Point your own domain, like www.yourchurch.org, at your B1 site in B1 Admin by setting up DNS records and adding the domain in Settings."
 ---
 
 # Custom Domain

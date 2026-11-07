@@ -1,5 +1,6 @@
 ---
 title: "Endpoint Reference"
+description: "Find every ChurchApps API endpoint by module, see the HTTP method, path, auth, and permission for each route, and learn the batch-save and error conventions before calling the API."
 ---
 
 # Endpoint Reference
@@ -89,10 +90,10 @@ Report parameters are passed as query string values (e.g. `?startDate=2024-01-01
 
 | Module | Base Path | Description |
 |--------|-----------|-------------|
-| [Authentication](./authentication) | `/membership/users`, `/membership/oauth` | Login, registration, JWT tokens, OAuth, permissions |
-| [Membership](./membership) | `/membership/*` | People, churches, groups, households, roles, forms, settings |
-| [Attendance](./attendance) | `/attendance/*` | Campuses, services, sessions, visits, check-in records |
-| [Content](./content) | `/content/*` | Pages, sermons, events, files, galleries, Bible, streaming |
-| [Giving](./giving) | `/giving/*` | Donations, funds, payment gateways, subscriptions |
-| [Messaging](./messaging) | `/messaging/*` | Conversations, notifications, devices, SMS |
-| [Doing](./doing) | `/doing/*` | Plans, tasks, assignments, automations, scheduling |
+| [Authentication](./authentication.md) | `/membership/users`, `/membership/oauth` | Login, registration, JWT tokens, OAuth, permissions |
+| [Membership](./membership.md) | `/membership/*` | People, churches, groups, households, roles, forms, settings |
+| [Attendance](./attendance.md) | `/attendance/*` | Campuses, services, sessions, visits, check-in records |
+| [Content](./content.md) | `/content/*` | Pages, sermons, events, files, galleries, Bible, streaming |
+| [Giving](./giving.md) | `/giving/*` | Donations, funds, payment gateways, subscriptions |
+| [Messaging](./messaging.md) | `/messaging/*` | Conversations, notifications, devices, SMS |
+| [Doing](./doing.md) | `/doing/*` | Plans, tasks, assignments, automations, scheduling |

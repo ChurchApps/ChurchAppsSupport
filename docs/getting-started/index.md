@@ -1,5 +1,7 @@
 ---
-title: "Getting Started"
+title: "Getting Started with ChurchApps: First 15 Minutes"
+sidebar_label: "Getting Started"
+description: "Set up a new ChurchApps account in a few steps: add your church details, import people into B1 Admin, invite your team, and pick a first project."
 ---
 
 # Getting Started

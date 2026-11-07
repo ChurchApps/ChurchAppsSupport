@@ -222,5 +222,53 @@
   "sidebar.docsSidebar.category.Deployment": {
     "message": "Розгортання",
     "description": "The label for category 'Deployment' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Integrations": {
+    "message": "Інтеграції",
+    "description": "The label for category 'Integrations' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Connected services": {
+    "message": "Підключені сервіси",
+    "description": "The label for category 'Connected services' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Guides.link.generated-index.title": {
+    "message": "Посібники з B1 Admin",
+    "description": "The generated-index page title for category 'Guides' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Guides.link.generated-index.description": {
+    "message": "Покрокові посібники з типових завдань у B1 Admin: початок роботи, онлайн-пожертви, запуск вашого сайту, реєстрація дітей, волонтери, проповіді, малі групи, події, відвідуваність і річні звіти про пожертви.",
+    "description": "The generated-index page description for category 'Guides' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-events": {
+    "message": "Події",
+    "description": "The label for category 'Events' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-serving": {
+    "message": "Служіння",
+    "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Mobile (Deprecated)": {
+    "message": "B1 - Mobile (застарілий)",
+    "description": "The label for category 'B1 - Mobile (Deprecated)' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-events": {
+    "message": "Події",
+    "description": "The label for category 'Events' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Scheduled Mode": {
+    "message": "Режим за розкладом",
+    "description": "The label for category 'Scheduled Mode' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Architecture": {
+    "message": "Архітектура",
+    "description": "The label for category 'Architecture' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Proposals": {
+    "message": "Пропозиції",
+    "description": "The label for category 'Proposals' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Endpoint Reference": {
+    "message": "Довідник з ендпоінтів",
+    "description": "The label for category 'Endpoint Reference' in sidebar 'docsSidebar'"
   }
 }

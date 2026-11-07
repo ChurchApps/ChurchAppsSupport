@@ -6,7 +6,7 @@ description: "Draft B1 church-owned Twilio setup, public signup guidance, campai
 # Church-owned Twilio onboarding draft
 
 :::caution Draft for the proposed integration
-This is a proposed workflow. B1 now has a basic **Twilio** choice under **Settings > Texting** (Account SID, Auth Token, From Number, and the inbound STOP webhook) -- see [Church Settings: Texting](../../b1-admin/settings/church-settings.md#texting). The additional B1 setup controls, consent mapping, and validation steps below are requirements for a future release, not instructions to find existing settings. Read the [technical proposal](./twilio-byok-proposal) for scope and dependencies. Twilio sources were checked on October 22, 2026; verify current requirements before submitting a campaign.
+This is a proposed workflow. B1 now has a basic **Twilio** choice under **Settings > Texting** (Account SID, Auth Token, From Number, and the inbound STOP webhook) -- see [Church Settings: Texting](../../b1-admin/settings/church-settings.md#texting). The additional B1 setup controls, consent mapping, and validation steps below are requirements for a future release, not instructions to find existing settings. Read the [technical proposal](./twilio-byok-proposal.md) for scope and dependencies. Twilio sources were checked on October 22, 2026; verify current requirements before submitting a campaign.
 :::
 
 ## The recommended arrangement
@@ -34,7 +34,7 @@ For the proposed SMS signup form:
 | Existing automations | Do not enroll every form submitter or group member into a texting workflow. Only the proposed verified consent mapping may authorize that program. |
 | Thank-you text | Confirm the form was received without claiming SMS enrollment when the box was declined or confirmation/review is still pending. |
 
-An existing checkbox question can illustrate the form, but B1 still needs the consent ledger and send gates. The current shared renderer shows descriptions as plain text; typing Markdown or a URL there is not sufficient assurance that policy links are clickable. The implementation must supply an accessible consent control with actual links. See [creating B1 forms](../../b1-admin/forms/creating-forms) and the [technical proposal](./twilio-byok-proposal#consent-and-suppression-are-required-release-work).
+An existing checkbox question can illustrate the form, but B1 still needs the consent ledger and send gates. The current shared renderer shows descriptions as plain text; typing Markdown or a URL there is not sufficient assurance that policy links are clickable. The implementation must supply an accessible consent control with actual links. See [creating B1 forms](../../b1-admin/forms/creating-forms.md) and the [technical proposal](./twilio-byok-proposal.md#consent-and-suppression-are-required-release-work).
 
 Twilio requires a voluntary, verifiable opt-in. Do not bundle SMS with required membership terms, email/phone permissions, donation consent, or event registration. A mobile number on a visitor card is not itself SMS consent. See Twilio's [voluntary-consent requirements](https://www.twilio.com/docs/api/errors/30923) and [campaign recommendations](https://help.twilio.com/hc/en-us/articles/26149060902555-A2P-10DLC-Campaign-Registration-Recommendations).
 

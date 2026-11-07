@@ -1,5 +1,6 @@
 ---
 title: "Plan Validation & Notifications"
+description: "Check service plans in B1 Admin for unfilled positions, scheduling conflicts, and blocked-out volunteers, then push-notify your whole team in one click."
 ---
 
 # Plan Validation & Volunteer Notifications

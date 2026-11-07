@@ -1,5 +1,6 @@
 ---
 title: "Group Conversations"
+description: "Learn how to post, edit, react to, and manage messages in a B1.church group chat, including announcements and leader moderation tools."
 ---
 
 # Group Conversations

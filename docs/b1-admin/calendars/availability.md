@@ -1,5 +1,6 @@
 ---
 title: "Availability Calendar"
+description: "Set up bookable rooms and equipment in B1 Admin, then book them on the calendar, add setup/teardown buffers, and handle recurring or approval-required bookings."
 ---
 
 # Availability Calendar
@@ -13,7 +14,7 @@ The Availability Calendar gives you a bird's-eye view of all room and resource b
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Set up at least one [room or resource](rooms-resources) in the Rooms & Resources section
+- Set up at least one [room or resource](./rooms-resources.md) in the Rooms & Resources section
 - You need edit access to the Calendars section in B1 Admin
 
 </div>
@@ -58,7 +59,7 @@ Use the **Room / Resource** dropdown at the top left to narrow the calendar to a
 6. Click **Save** to submit the booking.
 
 :::info
-If the room or resource has an **Approval Group** configured, the booking will appear as **Pending** until a leader of that group approves it. See [Calendar Approvals](approvals) for the approval workflow.
+If the room or resource has an **Approval Group** configured, the booking will appear as **Pending** until a leader of that group approves it. See [Calendar Approvals](./approvals.md) for the approval workflow.
 :::
 
 :::tip
@@ -67,6 +68,6 @@ The calendar will highlight any conflicts before you save. If you see a conflict
 
 ## Related Articles
 
-- [Rooms, Resources & Scheduling](rooms-resources) — set up bookable spaces and equipment
-- [Calendar Approvals](approvals) — approve or deny booking requests
-- [Creating Calendars](creating-calendars) — manage event calendars
+- [Rooms, Resources & Scheduling](./rooms-resources.md) — set up bookable spaces and equipment
+- [Calendar Approvals](./approvals.md) — approve or deny booking requests
+- [Creating Calendars](./creating-calendars.md) — manage event calendars

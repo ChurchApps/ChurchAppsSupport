@@ -1,5 +1,6 @@
 ---
 title: "Church Settings"
+description: "Set the name, address, subdomain, time zone, region format, texting provider, and file storage for your church in the B1 Admin Church Settings page."
 ---
 
 # Church Settings

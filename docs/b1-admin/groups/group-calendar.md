@@ -1,5 +1,6 @@
 ---
 title: "Group Calendar"
+description: "Plan meetings and recurring events on a group calendar in B1 Admin and B1.church, with bulk scheduling, RSVPs, and calendar subscriptions."
 ---
 
 # Group Calendar

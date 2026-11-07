@@ -222,5 +222,53 @@
   "sidebar.docsSidebar.category.Deployment": {
     "message": "Развёртывание",
     "description": "The label for category 'Deployment' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Integrations": {
+    "message": "Интеграции",
+    "description": "The label for category 'Integrations' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Connected services": {
+    "message": "Подключённые сервисы",
+    "description": "The label for category 'Connected services' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Guides.link.generated-index.title": {
+    "message": "Руководства по B1 Admin",
+    "description": "The generated-index page title for category 'Guides' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Guides.link.generated-index.description": {
+    "message": "Пошаговые руководства по основным задачам в B1 Admin: начало работы, онлайн-пожертвования, запуск сайта, регистрация детей, волонтёры, проповеди, малые группы, события, посещаемость и годовые справки о пожертвованиях.",
+    "description": "The generated-index page description for category 'Guides' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-events": {
+    "message": "События",
+    "description": "The label for category 'Events' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-serving": {
+    "message": "Служение",
+    "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Mobile (Deprecated)": {
+    "message": "B1 - Mobile (устарело)",
+    "description": "The label for category 'B1 - Mobile (Deprecated)' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-events": {
+    "message": "События",
+    "description": "The label for category 'Events' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Scheduled Mode": {
+    "message": "Режим по расписанию",
+    "description": "The label for category 'Scheduled Mode' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Architecture": {
+    "message": "Архитектура",
+    "description": "The label for category 'Architecture' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Proposals": {
+    "message": "Предложения",
+    "description": "The label for category 'Proposals' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Endpoint Reference": {
+    "message": "Справочник по конечным точкам",
+    "description": "The label for category 'Endpoint Reference' in sidebar 'docsSidebar'"
   }
 }

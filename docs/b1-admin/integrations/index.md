@@ -1,5 +1,6 @@
 ---
 title: "Integrations"
+description: "Connect B1 Admin to Slack, Discord, Zapier, Make, Google Sheets, and AI assistants like Claude, with setup steps and the API key scopes each one needs."
 ---
 
 # Integrations
@@ -14,21 +15,21 @@ B1 plugs into the tools your team already uses. Connect Slack or Discord for sta
 
 | Integration | What it does | Direction | Effort to set up |
 |---|---|---|---|
-| **[Slack](./slack-discord)** | Post readable notifications (new people, donations, sign-ups, …) to a Slack channel | B1 → Slack | 2 minutes |
-| **[Discord](./slack-discord)** | Same, in a Discord channel | B1 → Discord | 2 minutes |
-| **[Zapier](./zapier)** | Use B1 events as triggers and B1 actions in any of Zapier's 7,000+ apps | Both | 5–10 min per Zap |
-| **[Make](./make)** | Same idea as Zapier, in Make's visual scenario builder | Both | 5–10 min per scenario |
-| **[Google Sheets](./google-sheets)** | Export People / Donations / Groups / Attendance to a spreadsheet on demand | B1 → Sheet | 5 minutes |
-| **[Claude](./claude)** | Ask Anthropic's Claude questions about your church data, scoped to your permissions — free to try, recommended | Both | Under 3 minutes |
-| **[ChatGPT](./chatgpt)** | Same idea with OpenAI's ChatGPT (needs a paid ChatGPT plan) | Both | 10 minutes |
-| **[Connected services](./services/)** | Curated recipes for Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Varies | 5–10 min each |
+| **[Slack](./slack-discord.md)** | Post readable notifications (new people, donations, sign-ups, …) to a Slack channel | B1 → Slack | 2 minutes |
+| **[Discord](./slack-discord.md)** | Same, in a Discord channel | B1 → Discord | 2 minutes |
+| **[Zapier](./zapier.md)** | Use B1 events as triggers and B1 actions in any of Zapier's 7,000+ apps | Both | 5–10 min per Zap |
+| **[Make](./make.md)** | Same idea as Zapier, in Make's visual scenario builder | Both | 5–10 min per scenario |
+| **[Google Sheets](./google-sheets.md)** | Export People / Donations / Groups / Attendance to a spreadsheet on demand | B1 → Sheet | 5 minutes |
+| **[Claude](./claude.md)** | Ask Anthropic's Claude questions about your church data, scoped to your permissions — free to try, recommended | Both | Under 3 minutes |
+| **[ChatGPT](./chatgpt.md)** | Same idea with OpenAI's ChatGPT (needs a paid ChatGPT plan) | Both | 10 minutes |
+| **[Connected services](./services/index.md)** | Curated recipes for Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Varies | 5–10 min each |
 
 ## How to Pick
 
 - **Just want a notification in chat?** Use **Slack** or **Discord** — no third-party account, no Zap to maintain. Configured entirely inside B1Admin.
 - **Want to automate something across apps** (e.g. "when someone gives, add them to my Mailchimp list and Slack #donations")? Use **Zapier** or **Make**. Zapier is friendlier; Make is cheaper at scale and has more flexible logic.
 - **Need a one-off data pull or a scheduled report**? Use **Google Sheets** — paste an API key into the add-on's sidebar and click Export.
-- **Want to ask questions in plain English** ("how many first-time visitors last Sunday?", "summarize giving this month")? Start with **[Claude](./claude)** — it's free to try and sets up in less than 3 minutes. **[ChatGPT](./chatgpt)** works too with a paid plan. Claude connects by signing in with your B1 account; ChatGPT uses a B1 API key.
+- **Want to ask questions in plain English** ("how many first-time visitors last Sunday?", "summarize giving this month")? Start with **[Claude](./claude.md)** — it's free to try and sets up in less than 3 minutes. **[ChatGPT](./chatgpt.md)** works too with a paid plan. Claude connects by signing in with your B1 account; ChatGPT uses a B1 API key.
 - **Building your own custom integration?** None of the above — talk to the [REST API](/docs/developer/api) directly with an [API key](/docs/developer/api/api-keys), or subscribe a server you control to [webhooks](/docs/developer/api/webhooks).
 
 ## What They Have In Common
@@ -59,10 +60,10 @@ If none of the above fits, every B1 surface is open:
 
 ## Next Steps
 
-- [Slack & Discord](./slack-discord) — post chat notifications
-- [Zapier](./zapier) — connect to 7,000+ apps
-- [Make](./make) — visual workflow automation
-- [Google Sheets](./google-sheets) — export to spreadsheets
-- [Claude](./claude) — ask Anthropic's Claude about your church data
-- [ChatGPT](./chatgpt) — ask OpenAI's ChatGPT about your church data
-- [Connected services](./services/) — per-service recipes (Mailchimp, Donorbox, Clearstream, …)
+- [Slack & Discord](./slack-discord.md) — post chat notifications
+- [Zapier](./zapier.md) — connect to 7,000+ apps
+- [Make](./make.md) — visual workflow automation
+- [Google Sheets](./google-sheets.md) — export to spreadsheets
+- [Claude](./claude.md) — ask Anthropic's Claude about your church data
+- [ChatGPT](./chatgpt.md) — ask OpenAI's ChatGPT about your church data
+- [Connected services](./services/index.md) — per-service recipes (Mailchimp, Donorbox, Clearstream, …)

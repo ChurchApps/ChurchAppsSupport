@@ -1,5 +1,6 @@
 ---
 title: "Developer Documentation"
+description: "Find your way around the ChurchApps developer docs: local setup, API and web app guides, shared libraries, mobile builds, and deployment for the open-source projects."
 ---
 
 # Developer Documentation
@@ -24,16 +25,16 @@ Key characteristics:
 
 ## What This Section Covers
 
-- **[Setup](setup/)** -- Local development environment, prerequisites, and configuration
-  - [Prerequisites](setup/prerequisites) -- Required tools and software
-  - [Project Overview](setup/project-overview) -- All projects at a glance
-  - [Environment Variables](setup/environment-variables) -- Configuring `.env` files
-- **[API](api/)** -- Core API local setup, database initialization, and module structure
-- **[Web Apps](web-apps/)** -- Running B1Admin, B1App, and LessonsApp locally
-- **[Mobile Apps](mobile/)** -- Building B1Mobile and other Expo apps
-- **[Shared Libraries](shared-libraries/)** -- Working with Helpers, ApiHelper, and AppHelper
-- **[Deployment](deployment/)** -- Deploying APIs, web apps, and mobile apps
-- **[FreePlay Content Provider](freeplay-content-provider)** -- Integrating your lesson library with FreePlay
+- **[Setup](./setup/index.md)** -- Local development environment, prerequisites, and configuration
+  - [Prerequisites](./setup/prerequisites.md) -- Required tools and software
+  - [Project Overview](./setup/project-overview.md) -- All projects at a glance
+  - [Environment Variables](./setup/environment-variables.md) -- Configuring `.env` files
+- **[API](./api/index.md)** -- Core API local setup, database initialization, and module structure
+- **[Web Apps](./web-apps/index.md)** -- Running B1Admin, B1App, and LessonsApp locally
+- **[Mobile Apps](./mobile/index.md)** -- Building B1Mobile and other Expo apps
+- **[Shared Libraries](./shared-libraries/index.md)** -- Working with Helpers, ApiHelper, and AppHelper
+- **[Deployment](./deployment/index.md)** -- Deploying APIs, web apps, and mobile apps
+- **[FreePlay Content Provider](./freeplay-content-provider.md)** -- Integrating your lesson library with FreePlay
 
 ## Community and Resources
 

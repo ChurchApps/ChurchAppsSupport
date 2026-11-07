@@ -1,5 +1,6 @@
 ---
 title: "Giving Statements"
+description: "Create year-end giving statements for every donor in B1 Admin, then download them as CSV files or print them for mailing with tax-deductible totals."
 ---
 
 # Giving Statements

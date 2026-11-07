@@ -1,5 +1,6 @@
 ---
 title: "Creating Forms"
+description: "Build custom forms in B1 Admin for event registrations, surveys, and visitor cards, then share them by link, QR code, or print."
 ---
 
 # Creating Forms

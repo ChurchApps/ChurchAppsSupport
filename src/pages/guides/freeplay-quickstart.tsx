@@ -9,14 +9,14 @@ const SS = '/img/guides/quickstart/';
 type Step = { text: string; img?: string };
 
 const steps: Step[] = [
-  { text: 'On your Fire TV, Apple TV, or Android TV, open the app store and search for FreePlay.', img: SS + '1.png' },
-  { text: 'Select FreePlay and tap Download — it\'s completely free, no subscription or trial.', img: SS + '2.png' },
-  { text: 'FreePlay opens to the Content Providers screen — this is where you connect to your content sources.', img: SS + '3.png' },
-  { text: 'Already using a paid curriculum provider? Select it and scan the QR code with your phone. Sign in with your existing account and you\'re connected.', img: SS + 'qr.png' },
-  { text: 'For a free option, select The Bible Project — it connects instantly, no account needed. Your full library appears right on the TV.', img: SS + '4.png' },
-  { text: 'Select any series to see every video inside.', img: SS + '5.png' },
-  { text: 'FreePlay downloads the video to your device so it plays perfectly on Sunday morning — even if your Wi-Fi is slow.', img: SS + '6.png' },
-  { text: 'When the download finishes, the Start button appears. Press Select on your remote and you\'re playing.', img: SS + '7.png' },
+  { text: 'On your Fire TV, Apple TV, or Android TV, open the app store and search for FreePlay.', img: SS + '1.webp' },
+  { text: 'Select FreePlay and tap Download — it\'s completely free, no subscription or trial.', img: SS + '2.webp' },
+  { text: 'FreePlay opens to the Content Providers screen — this is where you connect to your content sources.', img: SS + '3.webp' },
+  { text: 'Already using a paid curriculum provider? Select it and scan the QR code with your phone. Sign in with your existing account and you\'re connected.', img: SS + 'qr.webp' },
+  { text: 'For a free option, select The Bible Project — it connects instantly, no account needed. Your full library appears right on the TV.', img: SS + '4.webp' },
+  { text: 'Select any series to see every video inside.', img: SS + '5.webp' },
+  { text: 'FreePlay downloads the video to your device so it plays perfectly on Sunday morning — even if your Wi-Fi is slow.', img: SS + '6.webp' },
+  { text: 'When the download finishes, the Start button appears. Press Select on your remote and you\'re playing.', img: SS + '7.webp' },
 ];
 
 function Lightbox({ src, onClose }: { src: string; onClose: () => void }) {

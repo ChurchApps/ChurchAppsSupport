@@ -386,13 +386,13 @@
     "message": "B1 モバイル"
   },
   "homepage.products.b1mobile.description": {
-    "message": "iOS と Android 向けの教会メンバー用モバイルアプリ。"
+    "message": "iOS と Android 向けの従来のメンバーアプリ。現在は B1.church のWebアプリに置き換えられています。"
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 チェックイン"
   },
   "homepage.products.b1checkin.description": {
-    "message": "Android タブレット用のセルフサービス チェックイン キオスク アプリ。"
+    "message": "iPad と Android タブレット向けのセルフサービス・チェックイン・キオスクアプリ。"
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -425,10 +425,10 @@
     "message": "教会のワークフローに特別に設計されています。事業向けツールを事業に適応させたものではありません。"
   },
   "homepage.title": {
-    "message": "ホーム"
+    "message": "B1.church、Lessons.church、FreePlay のヘルプ"
   },
   "homepage.description": {
-    "message": "ChurchApps サポート ドキュメント - 教会管理向けの無料でオープンソースのツール。"
+    "message": "ChurchApps の無料のオープンソース教会ソフトウェアのガイドとドキュメント：B1.church の教会管理、チェックイン、献金、Webサイト、Lessons.church のカリキュラム、そして FreePlay。"
   },
   "homepage.products.heading": {
     "message": "あなたの製品を選択します"

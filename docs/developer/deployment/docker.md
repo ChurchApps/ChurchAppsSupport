@@ -1,12 +1,13 @@
 ---
 title: "Self-Hosting with Docker"
+description: "Install a private B1 Admin, member portal, API, and MySQL stack on your own machine with Docker, then upgrade and back it up with the b1 command."
 ---
 
 # Self-Hosting with Docker
 
 <div class="article-intro">
 
-Run your own private instance of B1 Admin, the B1 member portal and website, the API, and a MySQL database on any machine with Docker — a home server, a small VPS, or an on-prem box. One command installs it, one command upgrades it, and every upgrade takes a backup first. If you'd rather not manage a server at all, see [Self-Hosting on Railway](./railway-template) for the managed alternative.
+Run your own private instance of B1 Admin, the B1 member portal and website, the API, and a MySQL database on any machine with Docker — a home server, a small VPS, or an on-prem box. One command installs it, one command upgrades it, and every upgrade takes a backup first. If you'd rather not manage a server at all, see [Self-Hosting on Railway](./railway-template.md) for the managed alternative.
 
 </div>
 
@@ -94,10 +95,10 @@ If you installed on `localhost` and later want it public: point DNS at the machi
 
 These work exactly as on Railway — the same environment variables, set in `.env` instead of the Railway dashboard:
 
-- **[Email / SMTP](./railway-template#1-email-highly-recommended)** — provider walkthroughs for Resend, Brevo, and Gmail
-- **[Multi-site](./railway-template#3-multi-site-multiple-churches-on-one-instance)** — unlimited churches per instance. `/` serves the church whose slug is `DEFAULT_CHURCH_SLUG` (the first church is `church`); point extra domains at the box and map them under **Settings → Domains** in B1Admin
-- **[Online giving](./railway-template#4-online-giving-stripe--paypal)** — configured per church in the admin UI
-- **[Optional integrations](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[Email / SMTP](./railway-template.md#1-email-highly-recommended)** — provider walkthroughs for Resend, Brevo, and Gmail
+- **[Multi-site](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** — unlimited churches per instance. `/` serves the church whose slug is `DEFAULT_CHURCH_SLUG` (the first church is `church`); point extra domains at the box and map them under **Settings → Domains** in B1Admin
+- **[Online giving](./railway-template.md#4-online-giving-stripe--paypal)** — configured per church in the admin UI
+- **[Optional integrations](./railway-template.md#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Push notifications](#push-notifications)** — `WEB_PUSH_*`; the installer leaves these blank, so push is off until you add them
 
 Invitations and other church-sent email are enabled automatically on a self-hosted instance (the hosted service gates these behind a manual review to protect its sender reputation).
@@ -148,7 +149,7 @@ Three named Docker volumes hold all state:
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-For large media libraries you can switch file storage to S3 — set `FILE_STORE=S3` plus the `AWS_*` variables described in the [Railway guide's File Storage section](./railway-template#5-file-storage). Database backups do not include S3 objects; enable bucket versioning there.
+For large media libraries you can switch file storage to S3 — set `FILE_STORE=S3` plus the `AWS_*` variables described in the [Railway guide's File Storage section](./railway-template.md#5-file-storage). Database backups do not include S3 objects; enable bucket versioning there.
 
 ## Updating
 
@@ -187,6 +188,6 @@ Still stuck? Open an issue at [github.com/ChurchApps/ChurchAppsSupport/issues](h
 
 ## Related Articles
 
-- **[Self-Hosting on Railway](./railway-template)** — managed hosting alternative, plus the shared post-deploy configuration guides
-- **[Initial Setup](../../getting-started/initial-setup)** — first steps after your church is created
-- **[Local API Setup](../api/local-setup)** — running the stack directly for development
+- **[Self-Hosting on Railway](./railway-template.md)** — managed hosting alternative, plus the shared post-deploy configuration guides
+- **[Initial Setup](../../getting-started/initial-setup.md)** — first steps after your church is created
+- **[Local API Setup](../api/local-setup.md)** — running the stack directly for development

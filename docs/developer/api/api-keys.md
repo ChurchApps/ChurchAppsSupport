@@ -1,5 +1,6 @@
 ---
 title: "API Keys"
+description: "Create, scope, and revoke B1 API keys in B1 Admin for server scripts and Zapier, Make, or Google Sheets connectors, without a full OAuth flow."
 ---
 
 # API Keys
@@ -104,7 +105,7 @@ A revoked key is gone immediately — there is no grace period.
 
 ## How It Differs from OAuth
 
-API keys are appropriate when **your church is the only one using the integration**. For a connector that needs to access many churches with each one's explicit consent — like a SaaS app shared across the B1 community — use [OAuth and Connected Apps](./connected-apps) instead.
+API keys are appropriate when **your church is the only one using the integration**. For a connector that needs to access many churches with each one's explicit consent — like a SaaS app shared across the B1 community — use [OAuth and Connected Apps](./connected-apps.md) instead.
 
 | | API key | OAuth |
 |---|---|---|

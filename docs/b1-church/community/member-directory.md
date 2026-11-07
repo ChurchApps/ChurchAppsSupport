@@ -1,5 +1,7 @@
 ---
-title: "Member Directory"
+title: "Member Directory in the B1.church Member Portal"
+sidebar_label: "Member Directory"
+description: "Search and browse church members in the B1.church directory, view their profiles and household members, and see who can access the directory."
 ---
 
 # Member Directory

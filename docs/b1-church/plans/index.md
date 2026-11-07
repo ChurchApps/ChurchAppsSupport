@@ -1,5 +1,6 @@
 ---
 title: "Plans"
+description: "Find out which service plans you're assigned to in B1.church, check your positions and dates, and accept or decline assignments from your member portal."
 ---
 
 # Plans

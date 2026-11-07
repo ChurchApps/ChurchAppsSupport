@@ -1,5 +1,6 @@
 ---
 title: "Service Plans"
+description: "Set up volunteer scheduling in B1 Admin: create service plans by date, copy from earlier weeks, assign team members to positions, and manage signup deadlines and reminders."
 ---
 
 # Service Plans

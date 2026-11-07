@@ -1,5 +1,7 @@
 ---
-title: "Bible"
+title: "Reading the Bible on B1.church"
+sidebar_label: "Bible"
+description: "Read Scripture in the B1.church Bible reader, with book, chapter, and translation controls and a Bible page for daily reading."
 ---
 
 # Bible

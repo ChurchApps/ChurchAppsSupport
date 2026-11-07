@@ -1,5 +1,6 @@
 ---
 title: "Module Structure"
+description: "Explains how the API's modules are laid out, with controllers, repositories, gateways, auth checks, and the six Lambda functions that run the code in B1 developer environments."
 ---
 
 # Module Structure
@@ -13,8 +14,8 @@ Each API module follows a consistent internal structure with controllers, reposi
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Set up the API locally -- see [Local API Setup](./local-setup)
-- Review the [Database](./database) architecture to understand the data access layer
+- Set up the API locally -- see [Local API Setup](./local-setup.md)
+- Review the [Database](./database.md) architecture to understand the data access layer
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Cross-Module Communication
 
-Each module owns its own database (see [Database](./database)), and a module never queries another module's tables directly. When one module needs data owned by another -- for example, the doing module resolving people from membership -- it goes through the owning module's **gateway** in `src/shared/modules/`:
+Each module owns its own database (see [Database](./database.md)), and a module never queries another module's tables directly. When one module needs data owned by another -- for example, the doing module resolving people from membership -- it goes through the owning module's **gateway** in `src/shared/modules/`:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Locally, the `web` function runs on port 8084 and the `socket` function runs on 
 
 ## Related Articles
 
-- **[Database](./database)** -- Connection strings, schema scripts, and data access patterns
-- **[Local API Setup](./local-setup)** -- Full step-by-step setup guide
-- **[ApiHelper](../shared-libraries/api-helper)** -- The shared library that provides `CustomBaseController` and auth middleware
+- **[Database](./database.md)** -- Connection strings, schema scripts, and data access patterns
+- **[Local API Setup](./local-setup.md)** -- Full step-by-step setup guide
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- The shared library that provides `CustomBaseController` and auth middleware

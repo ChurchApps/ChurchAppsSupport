@@ -1,5 +1,7 @@
 ---
-title: "Lessons (Deprecated)"
+title: "Lessons Screen in B1 Mobile (Retired)"
+sidebar_label: "Lessons (Deprecated)"
+description: "Lessons (Deprecated) page: why the in-app Lessons screen in B1 Mobile was retired, and where to find curriculum now (FreePlay or Lessons.church)."
 ---
 
 # Lessons (Deprecated)
@@ -19,7 +21,7 @@ The Lessons screen gave you access to your church's curriculum and learning mate
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- [Install B1 Mobile](../getting-started/installing.md) and [log in](../getting-started/logging-in.md) to your account
 - Your church must have curriculum configured through Lessons.church
 
 </div>
@@ -54,5 +56,5 @@ The Lessons screen appears when your church has configured curriculum through Le
 
 - [FreePlay Overview](/docs/freeplay/) -- The replacement TV app for classroom lesson playback
 - [Lessons.church](/docs/lessons-church/) -- Browse and manage curriculum content directly
-- [Bible](./bible) -- Read Scripture alongside your lessons
-- [Sermons](./sermons) -- Watch sermons that complement your studies
+- [Bible](./bible.md) -- Read Scripture alongside your lessons
+- [Sermons](./sermons.md) -- Watch sermons that complement your studies

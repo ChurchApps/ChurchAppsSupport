@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Sync B1 Admin people and group or saved-list membership to a Mailchimp audience as tags, with setup, initial import, and troubleshooting steps."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Doing the initial load through Mailchimp's importer keeps you in control of the 
 
 ## Other Recipes (Zapier / Make)
 
-Anything beyond audience sync — tagging givers on `donation.created`, a Mailchimp → B1 reverse direction, or syncing to a different email platform entirely (Constant Contact, Brevo, etc.) — is still available through [Zapier](../zapier) or [Make](../make), which trigger on the same webhook events:
+Anything beyond audience sync — tagging givers on `donation.created`, a Mailchimp → B1 reverse direction, or syncing to a different email platform entirely (Constant Contact, Brevo, etc.) — is still available through [Zapier](../zapier.md) or [Make](../make.md), which trigger on the same webhook events:
 
 - **Tag givers:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Two-way:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ If you previously wired person/group sync through Zapier, switch those Zaps off 
 
 - [Webhooks (developer reference)](/docs/developer/api/webhooks) — the engine underneath, event catalog, delivery/retry semantics
 - [Saved Lists](/docs/b1-admin/people/lists) — rule-based audiences that map naturally onto Mailchimp tags
-- [Zapier (overview)](../zapier) — for recipes beyond audience sync
+- [Zapier (overview)](../zapier.md) — for recipes beyond audience sync

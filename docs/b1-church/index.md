@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Find out what your church's B1.church site offers members, from the member portal and groups to giving, events, serving, and check-in."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ When members visit your B1.church site, they see your church's public website wi
 
 ## Learn More
 
-- [Getting Started](./getting-started/) -- Create your account, log in, and learn how to navigate B1.church.
-- [Groups](./groups/) -- Join and participate in your church's groups.
-- [Giving](./giving/) -- Make donations and manage your giving.
-- [Events](./events/) -- Browse and register for upcoming church events.
-- [Serving](./serving/) -- View plans and sign up for volunteer positions.
-- [Plans](./plans/) -- View service plans and your volunteer positions.
-- [Check-In](./checkin/) -- Check in for services, events, and guest registration.
-- [Community Directory](./community/) -- Find and connect with other members.
-- [Content](./content/) -- Sermons, Bible, daily verse, and live streaming. (Lessons playback has moved to [FreePlay](/docs/freeplay/).)
+- [Getting Started](./getting-started/index.md) -- Create your account, log in, and learn how to navigate B1.church.
+- [Groups](./groups/index.md) -- Join and participate in your church's groups.
+- [Giving](./giving/index.md) -- Make donations and manage your giving.
+- [Events](./events/index.md) -- Browse and register for upcoming church events.
+- [Serving](./serving/index.md) -- View plans and sign up for volunteer positions.
+- [Plans](./plans/index.md) -- View service plans and your volunteer positions.
+- [Check-In](./checkin/index.md) -- Check in for services, events, and guest registration.
+- [Community Directory](./community/index.md) -- Find and connect with other members.
+- [Content](./content/index.md) -- Sermons, Bible, daily verse, and live streaming. (Lessons playback has moved to [FreePlay](/docs/freeplay/).)
 
 :::info
 B1.church is completely free for churches and members. Your church administrator sets up and customizes the site through B1 Admin. As a member, you simply visit your church's B1.church URL to get started.

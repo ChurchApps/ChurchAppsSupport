@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "Set up B1 Admin locally: clone the React/Vite dashboard, configure API endpoints in .env, and start the dev server for church management work."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin is the church administration dashboard -- a React single-page applicatio
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Install **Node.js 22+** and **Git** -- see [Prerequisites](../setup/prerequisites)
-- Configure your API target (demo or local) -- see [Environment Variables](../setup/environment-variables)
+- Install **Node.js 22+** and **Git** -- see [Prerequisites](../setup/prerequisites.md)
+- Configure your API target (demo or local) -- see [Environment Variables](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Production builds are deployed to **S3 + CloudFront**:
 3. CloudFront invalidation is triggered to serve the new version
 
 :::tip
-For detailed deployment instructions, see the [Web App Deployment](../deployment/web-apps) guide.
+For detailed deployment instructions, see the [Web App Deployment](../deployment/web-apps.md) guide.
 :::

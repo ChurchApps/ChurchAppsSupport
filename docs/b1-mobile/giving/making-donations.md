@@ -1,5 +1,7 @@
 ---
-title: "Making a Donation"
+title: "Making a Donation in B1 Mobile"
+sidebar_label: "Making a Donation"
+description: "Give to your church from the Donate tab in B1 Mobile: pick a fund, enter an amount, pay with Stripe, and repeat past gifts quickly."
 ---
 
 # Making a Donation
@@ -13,8 +15,8 @@ Giving through B1 Mobile is quick and straightforward. The **Donate** tab in the
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
-- Have a credit or debit card ready, or [save a payment method](./managing-payments) in advance
+- [Install B1 Mobile](../getting-started/installing.md) and [log in](../getting-started/logging-in.md) to your account
+- Have a credit or debit card ready, or [save a payment method](./managing-payments.md) in advance
 
 </div>
 
@@ -42,10 +44,10 @@ Double-check the donation amount and fund before submitting. Donations are proce
 If you want to give the same amount as your last donation, you do not need to go through the full donation flow. The **Overview** tab shows your most recent gift along with a **Repeat** button. Tap it to quickly submit the same donation again.
 
 :::tip
-If you plan to give regularly, save your payment method in the **Manage** tab so you can donate even faster next time. See [Managing Payment Methods](./managing-payments) for details.
+If you plan to give regularly, save your payment method in the **Manage** tab so you can donate even faster next time. See [Managing Payment Methods](./managing-payments.md) for details.
 :::
 
 ## Related Articles
 
-- [Managing Payment Methods](./managing-payments) -- Save a card for faster future giving
-- [Donation History](./donation-history) -- View your giving summary and past donations
+- [Managing Payment Methods](./managing-payments.md) -- Save a card for faster future giving
+- [Donation History](./donation-history.md) -- View your giving summary and past donations

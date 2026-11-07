@@ -1,5 +1,6 @@
 ---
 title: "Calendar Approvals"
+description: "Review pending room and resource booking requests in B1 Admin, check for conflicts, then approve or reject them, optionally publishing the event."
 ---
 
 # Calendar Approvals
@@ -13,7 +14,7 @@ The Approvals page is where administrators review and act on pending room and re
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Configure rooms or resources with an **Approval Group** in [Rooms & Resources](rooms-resources)
+- Configure rooms or resources with an **Approval Group** in [Rooms & Resources](./rooms-resources.md)
 - You need the **Calendars Admin** permission or the **content.edit** permission
 
 </div>
@@ -41,7 +42,7 @@ Click **Approve** or **Reject** on any booking request (rejecting asks you to co
 When you click **Approve**, an **Approve booking** dialog opens so you can also publish the event in the same step:
 
 1. Check **Publish to public calendar** to make the event public on its group's calendar. Leave it unchecked to approve the booking without changing the event's visibility.
-2. Once **Publish to public calendar** is checked, you can optionally choose a curated calendar from **Also add to calendar** to add the event to one of your [curated calendars](curated-calendar) as well. Leave it set to **None** to skip this. (This option only appears if you have the **content.edit** permission.)
+2. Once **Publish to public calendar** is checked, you can optionally choose a curated calendar from **Also add to calendar** to add the event to one of your [curated calendars](./curated-calendar.md) as well. Leave it set to **None** to skip this. (This option only appears if you have the **content.edit** permission.)
 3. Click **Approve**.
 
 ## Pending Events
@@ -49,10 +50,10 @@ When you click **Approve**, an **Approve booking** dialog opens so you can also 
 If your calendar workflow requires event approval before events become visible to the public, pending events appear in the **Event Requests** section. Click **Approve** to publish an event to the calendar, or **Reject** to notify the submitter that changes are needed.
 
 :::tip
-Set up an Approval Group on a room in [Rooms & Resources](rooms-resources) to require approval for that room. Groups with access can then request the room when creating events, and those requests flow into this page.
+Set up an Approval Group on a room in [Rooms & Resources](./rooms-resources.md) to require approval for that room. Groups with access can then request the room when creating events, and those requests flow into this page.
 :::
 
 ## Related Articles
 
-- [Rooms, Resources & Scheduling](rooms-resources) — configure bookable rooms and resources
-- [Creating Calendars](creating-calendars) — manage calendars and events
+- [Rooms, Resources & Scheduling](./rooms-resources.md) — configure bookable rooms and resources
+- [Creating Calendars](./creating-calendars.md) — manage calendars and events

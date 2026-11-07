@@ -1,5 +1,6 @@
 ---
 title: "Scheduled Playback on the TV"
+description: "A paired FreePlay TV downloads the week ahead and plays by the clock, even offline. Covers the info panel, remote buttons, and pinning a playlist."
 ---
 
 # Scheduled Playback on the TV
@@ -13,8 +14,8 @@ Once a TV is paired to a calendar, FreePlay runs it for you. It downloads the we
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Pair the TV to a calendar](./pairing-a-screen)
-- [Put something on the calendar](./scheduling-the-calendar), or set a default loop for the screen's group
+- [Pair the TV to a calendar](./pairing-a-screen.md)
+- [Put something on the calendar](./scheduling-the-calendar.md), or set a default loop for the screen's group
 
 </div>
 
@@ -40,7 +41,7 @@ The panel also has three buttons:
 
 - **Pin This Playlist** - Keep the current content playing in a loop and ignore the calendar. Select **Unpin Playlist** to go back to the schedule
 - **Browse Content** - Leave the scheduled player to browse your connected providers
-- **Settings** - Open FreePlay settings, where you can [unpair or pair to a different calendar](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Settings** - Open FreePlay settings, where you can [unpair or pair to a different calendar](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 To go back to the schedule after browsing, press **Back** on the remote from the **Content Providers** screen, or open **Settings**, select **Pair to a calendar**, and choose **Back to schedule**. A paired TV also returns to the scheduled player whenever FreePlay comes back to the foreground, and it always opens to the scheduled player.
@@ -77,6 +78,6 @@ You can also play a screen's calendar in a web browser. In FreePlay Admin, open 
 
 ## Related Articles
 
-- **[Scheduling the Calendar](./scheduling-the-calendar)** - Set what plays and what happens when it finishes early
-- **[Managing Screens and Groups](./managing-screens)** - Check each screen's downloads from FreePlay Admin
-- **[Playing Content](../content-providers/playing-content)** - Player controls when you play content yourself
+- **[Scheduling the Calendar](./scheduling-the-calendar.md)** - Set what plays and what happens when it finishes early
+- **[Managing Screens and Groups](./managing-screens.md)** - Check each screen's downloads from FreePlay Admin
+- **[Playing Content](../content-providers/playing-content.md)** - Player controls when you play content yourself

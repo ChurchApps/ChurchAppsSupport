@@ -1,5 +1,6 @@
 ---
 title: "Calendars"
+description: "Set up calendars in B1 Admin, manage which events appear on them, and publish them to your B1.church website so your congregation can see upcoming church events."
 ---
 
 # Calendars
@@ -18,20 +19,20 @@ The Calendars section in B1 Admin lets you create curated calendars for your chu
 
 ## What You Can Do
 
-- **Add a new calendar** -- Click **Add Calendar** at the top of the page to create a calendar for a specific ministry, event type, or purpose. See [Creating Calendars](creating-calendars) for step-by-step instructions.
+- **Add a new calendar** -- Click **Add Calendar** at the top of the page to create a calendar for a specific ministry, event type, or purpose. See [Creating Calendars](./creating-calendars.md) for step-by-step instructions.
 - **Edit a calendar** -- Click **Manage Events** on any calendar to open it and manage which groups are included in it.
 - **Publish calendars** -- Calendars can be displayed on your B1.church website so visitors can see upcoming events at your church.
-- **Create curated calendars** -- Pull events from multiple groups into a single calendar view for a comprehensive look at everything happening at your church. See [Curated Calendar](curated-calendar) for details.
-- **Manage rooms and resources** -- Track bookable spaces and equipment and handle approval requests. See [Rooms & Resources](rooms-resources) for details.
-- **View availability** -- See all room and resource bookings on a single calendar and book spaces for upcoming events. See [Availability Calendar](availability) for details.
+- **Create curated calendars** -- Pull events from multiple groups into a single calendar view for a comprehensive look at everything happening at your church. See [Curated Calendar](./curated-calendar.md) for details.
+- **Manage rooms and resources** -- Track bookable spaces and equipment and handle approval requests. See [Rooms & Resources](./rooms-resources.md) for details.
+- **View availability** -- See all room and resource bookings on a single calendar and book spaces for upcoming events. See [Availability Calendar](./availability.md) for details.
 
 :::info
-Calendars work closely with [Groups](../groups/creating-groups.md). When groups have events scheduled, those events can be pulled into your calendars. See the [Creating Calendars](creating-calendars) page to learn how to connect groups to calendars.
+Calendars work closely with [Groups](../groups/creating-groups.md). When groups have events scheduled, those events can be pulled into your calendars. See the [Creating Calendars](./creating-calendars.md) page to learn how to connect groups to calendars.
 :::
 
 ## Next Steps
 
-- [Creating Calendars](creating-calendars) -- Set up a new calendar and connect groups
-- [Curated Calendar](curated-calendar) -- Aggregate events from multiple groups into one view
-- [Rooms & Resources](rooms-resources) -- Manage bookable spaces and equipment
-- [Availability Calendar](availability) -- View and manage room/resource bookings
+- [Creating Calendars](./creating-calendars.md) -- Set up a new calendar and connect groups
+- [Curated Calendar](./curated-calendar.md) -- Aggregate events from multiple groups into one view
+- [Rooms & Resources](./rooms-resources.md) -- Manage bookable spaces and equipment
+- [Availability Calendar](./availability.md) -- View and manage room/resource bookings

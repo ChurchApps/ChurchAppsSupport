@@ -1,5 +1,6 @@
 ---
 title: "MCP Server"
+description: "Set up MCP access to the B1 API so AI clients like Claude Code, Cursor, or Claude Desktop can call church data endpoints using API keys or OAuth sign-in."
 ---
 
 # MCP Server
@@ -13,7 +14,7 @@ The B1 API ships an [MCP (Model Context Protocol)](https://modelcontextprotocol.
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- A [B1 API key](./api-keys) (`cak_…`) with the scopes the client should have, or an MCP client that can sign in with OAuth (see [OAuth Discovery](#oauth-discovery))
+- A [B1 API key](./api-keys.md) (`cak_…`) with the scopes the client should have, or an MCP client that can sign in with OAuth (see [OAuth Discovery](#oauth-discovery))
 - A reachable B1 API host — `https://api.churchapps.org` for hosted churches, or your own deployment
 - An MCP client. See [Claude](/docs/b1-admin/integrations/claude) and [ChatGPT](/docs/b1-admin/integrations/chatgpt) for end-user setup
 
@@ -119,7 +120,7 @@ Tool result is marked `isError: true` for any response with status ≥ 400.
 
 ### `describe_page_builder`
 
-The one non-generic tool: a static, self-contained guide to building website pages through the `/content/*` endpoints — the Page → Section → Element data model, the create workflow, each `elementType` with its `answersJSON` shape, section-level settings such as the `dividerTop`/`dividerBottom` shape dividers, and a worked end-to-end example. It takes no input and mirrors the element catalog maintained in the B1Admin editor (see [Website Builder Architecture](../architecture/website-builder)). Agents are expected to call it once before creating or editing page content, then act via `api_call`.
+The one non-generic tool: a static, self-contained guide to building website pages through the `/content/*` endpoints — the Page → Section → Element data model, the create workflow, each `elementType` with its `answersJSON` shape, section-level settings such as the `dividerTop`/`dividerBottom` shape dividers, and a worked end-to-end example. It takes no input and mirrors the element catalog maintained in the B1Admin editor (see [Website Builder Architecture](../architecture/website-builder.md)). Agents are expected to call it once before creating or editing page content, then act via `api_call`.
 
 ## Auth Model
 
@@ -153,11 +154,11 @@ There is no application-level rate limit on `/mcp`. Throttling is deferred to AP
 
 ## OAuth Discovery
 
-The MCP server advertises OAuth 2.1 metadata so clients that only connect to OAuth-discovered servers — notably Claude.ai's "Add custom connector" UI — can sign a user in without a pasted key. `/mcp` is the protected resource, the existing [OAuth provider](./connected-apps) under `/membership/oauth` is its authorization server, and the B1Admin `/oauth` page is the consent screen.
+The MCP server advertises OAuth 2.1 metadata so clients that only connect to OAuth-discovered servers — notably Claude.ai's "Add custom connector" UI — can sign a user in without a pasted key. `/mcp` is the protected resource, the existing [OAuth provider](./connected-apps.md) under `/membership/oauth` is its authorization server, and the B1Admin `/oauth` page is the consent screen.
 
 | Endpoint | Purpose |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (also `/.well-known/oauth-protected-resource/mcp`) | Protected resource metadata (RFC 9728): `resource` is `<api>/mcp`, `authorization_servers` is the API root, `scopes_supported` lists every [API key scope](./api-keys#scopes) |
+| `GET /.well-known/oauth-protected-resource` (also `/.well-known/oauth-protected-resource/mcp`) | Protected resource metadata (RFC 9728): `resource` is `<api>/mcp`, `authorization_servers` is the API root, `scopes_supported` lists every [API key scope](./api-keys.md#scopes) |
 | `GET /.well-known/oauth-authorization-server` | Authorization server metadata (RFC 8414): `authorization_endpoint` is B1Admin `/oauth`, `token_endpoint` is `/membership/oauth/token`, `registration_endpoint` is `/membership/oauth/register` |
 | `POST /membership/oauth/register` | Dynamic client registration (RFC 7591) |
 
@@ -209,8 +210,8 @@ The MCP server lives at `src/modules/mcp/` in the Api repo. Notable files:
 
 ## Related
 
-- [API Keys](./api-keys)
-- [Webhooks](./webhooks)
-- [Connected Apps (OAuth)](./connected-apps)
+- [API Keys](./api-keys.md)
+- [Webhooks](./webhooks.md)
+- [Connected Apps (OAuth)](./connected-apps.md)
 - [Claude — end-user setup](/docs/b1-admin/integrations/claude)
 - [ChatGPT — end-user setup](/docs/b1-admin/integrations/chatgpt)

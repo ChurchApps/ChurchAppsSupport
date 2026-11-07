@@ -1,5 +1,6 @@
 ---
 title: "Adding People"
+description: "Add a person to your church database in B1 Admin, fill in their details, and link family members into households for check-in and reporting."
 ---
 
 # Adding People

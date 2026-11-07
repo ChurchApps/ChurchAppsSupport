@@ -1,5 +1,7 @@
 ---
-title: "Editing Your Profile"
+title: "Editing Your Profile in the B1.church Member Portal"
+sidebar_label: "Editing Your Profile"
+description: "Update your contact details, household members, login email and password, and privacy settings in the B1.church member portal."
 ---
 
 # Editing Your Profile

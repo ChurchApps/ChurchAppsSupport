@@ -1,5 +1,6 @@
 ---
 title: "Searching"
+description: "Find programs, studies, and lessons in the Lessons.church library by keyword or Bible story, and learn how search results are ranked and labeled."
 ---
 
 # Searching

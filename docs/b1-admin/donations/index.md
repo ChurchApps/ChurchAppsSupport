@@ -1,5 +1,6 @@
 ---
 title: "Donations"
+description: "Record, organize, and report on church giving in B1 Admin, from batches and funds to year-end statements and Stripe or PayPal online donations."
 ---
 
 # Donations

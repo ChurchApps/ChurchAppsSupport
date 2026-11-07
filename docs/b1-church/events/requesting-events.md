@@ -1,5 +1,6 @@
 ---
 title: "Requesting Events & Rooms"
+description: "Request a room or equipment booking for an event from the B1.church member portal, track its status in My Requests, and cancel it while pending."
 ---
 
 # Requesting Events & Rooms
@@ -42,11 +43,11 @@ Open **My Requests** from the Me page. Each request shows the event, when you re
 While a request is still pending, you can withdraw it with **Cancel request** (you'll be asked to confirm — cancellation cannot be undone).
 
 :::info
-Requests are reviewed by church staff on the B1 Admin [Approvals page](../../b1-admin/calendars/approvals). Which rooms and resources need approval is up to your church — see [Rooms & Resources](../../b1-admin/calendars/rooms-resources).
+Requests are reviewed by church staff on the B1 Admin [Approvals page](../../b1-admin/calendars/approvals.md). Which rooms and resources need approval is up to your church — see [Rooms & Resources](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Related Articles
 
-- [The Me Page](../getting-started/me-page) -- Where the request links live
-- [Calendar Approvals (B1 Admin)](../../b1-admin/calendars/approvals) -- How staff review requests
-- [Rooms & Resources (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- How churches configure bookable spaces
+- [The Me Page](../getting-started/me-page.md) -- Where the request links live
+- [Calendar Approvals (B1 Admin)](../../b1-admin/calendars/approvals.md) -- How staff review requests
+- [Rooms & Resources (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- How churches configure bookable spaces

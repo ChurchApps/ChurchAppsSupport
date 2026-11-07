@@ -1,5 +1,6 @@
 ---
 title: "Group Join Requests"
+description: "Review, approve, or decline group join requests in B1 Admin, find pending requests as a leader or admin, and add a reason when declining."
 ---
 
 # Group Join Requests

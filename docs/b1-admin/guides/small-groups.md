@@ -1,5 +1,6 @@
 ---
 title: "Guide: Run Small Groups"
+description: "Set up small groups, Bible studies, and ministry teams in B1 Admin, then publish a church-wide calendar and groups section to your B1 website."
 ---
 
 # Run Small Groups
@@ -78,7 +79,7 @@ Members can discover, join, and participate in groups from their phone or comput
 
 1. Members browse and join groups on [B1.church](../../b1-church/groups/browsing-groups.md)
 2. Group members can view details, calendars, and post in [conversations](../../b1-church/groups/conversations.md)
-3. All group features are also available on the [B1 Mobile app](../../b1-mobile/groups/)
+3. All group features are also available on the [B1 Mobile app](../../b1-mobile/groups/index.md)
 
 :::info
 Members see their groups, upcoming events, and group conversations on both web and mobile — everything stays in sync.
@@ -97,4 +98,4 @@ Your small groups are set up and connected. Members can discover groups, view ev
 - [Curated Calendar](../calendars/curated-calendar.md) — build a unified church calendar
 - [Browsing Groups (Web)](../../b1-church/groups/browsing-groups.md) — how members find groups
 - [Group Conversations (Web)](../../b1-church/groups/conversations.md) — group discussions
-- [Groups (Mobile)](../../b1-mobile/groups/) — groups on the mobile app
+- [Groups (Mobile)](../../b1-mobile/groups/index.md) — groups on the mobile app

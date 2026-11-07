@@ -1,5 +1,7 @@
 ---
-title: "Giving"
+title: "Giving in the B1 Mobile App"
+sidebar_label: "Giving"
+description: "Make a gift in the B1 Mobile app, check your year-to-date giving, and manage saved payment methods. Covers the Overview, Donate, Manage, and History tabs."
 ---
 
 # Giving
@@ -24,7 +26,7 @@ The giving section is organized into four tabs:
 All donations made through B1 Mobile are processed securely through **Stripe**. Your payment information is handled by Stripe's secure infrastructure and is never stored on ChurchApps servers. You can give with confidence knowing your financial details are protected.
 
 :::info
-Your church administrator sets up the available funds and payment processing through [B1 Admin](../../b1-admin/). If you do not see a giving option in the app, your church may not have this feature configured yet.
+Your church administrator sets up the available funds and payment processing through [B1 Admin](../../b1-admin/index.md). If you do not see a giving option in the app, your church may not have this feature configured yet.
 :::
 
 ## What You Can Do
@@ -38,6 +40,6 @@ Here is what you can do from the giving section:
 
 ## Next Steps
 
-- [Making a Donation](./making-donations) -- Learn how to make a gift from the app
-- [Managing Payment Methods](./managing-payments) -- Add or remove saved payment methods
-- [Donation History](./donation-history) -- View your giving summary and past donations
+- [Making a Donation](./making-donations.md) -- Learn how to make a gift from the app
+- [Managing Payment Methods](./managing-payments.md) -- Add or remove saved payment methods
+- [Donation History](./donation-history.md) -- View your giving summary and past donations

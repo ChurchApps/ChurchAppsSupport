@@ -386,13 +386,13 @@
     "message": "B1 - Mobil"
   },
   "homepage.products.b1mobile.description": {
-    "message": "Mobilapp för kyrkmedlemmar på iOS och Android."
+    "message": "Äldre medlemsapp för iOS och Android, nu ersatt av B1.church-webbappen."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 - Incheckning"
   },
   "homepage.products.b1checkin.description": {
-    "message": "Självbetjäningsapp för incheckning av kioskprogram för Android-surfplattor."
+    "message": "Självbetjäningsapp för incheckningskiosker på iPad- och Android-surfplattor."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -425,10 +425,10 @@
     "message": "Speciellt utformat för kyrkliga arbetsflöden — inte ett generiskt verktyg anpassat för ministrationen."
   },
   "homepage.title": {
-    "message": "Hem"
+    "message": "Hjälp för B1.church, Lessons.church och FreePlay"
   },
   "homepage.description": {
-    "message": "Supportdokumentation för ChurchApps — gratis och öppen källkod-verktyg för kyrkhantering."
+    "message": "Guider och dokumentation för ChurchApps gratis programvara med öppen källkod för kyrkor: B1.church kyrkoadministration, incheckning, givande och webbplatser, Lessons.church-läroplaner och FreePlay."
   },
   "homepage.products.heading": {
     "message": "Välj Din Produkt"

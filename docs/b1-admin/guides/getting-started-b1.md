@@ -1,5 +1,6 @@
 ---
 title: "Guide: Get Your Church Started with B1"
+description: "Walk through setting up a new church in B1 Admin: create your account, configure settings, add roles, import members, and launch core features."
 ---
 
 # Get Your Church Started with B1

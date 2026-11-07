@@ -1,5 +1,6 @@
 ---
 title: "Caddy Custom-Domain Proxy"
+description: "Build and run the Caddy reverse proxy that serves custom church domains for B1.church sites, covering TLS certificates, host mapping, and known pitfalls."
 ---
 
 # Caddy Custom-Domain Proxy
@@ -10,7 +11,7 @@ Custom church domains (`mychurch.org` → the church's B1 website) terminate at 
 
 </div>
 
-For how a request resolves to a church/site once it reaches B1App, see [Website Routing & Multi-Site](../architecture/websites).
+For how a request resolves to a church/site once it reaches B1App, see [Website Routing & Multi-Site](../architecture/websites.md).
 
 ## Components
 
@@ -88,5 +89,5 @@ The admin API binds to `localhost:2019` only. The legacy runtime mode exposed it
 
 ## Related Pages
 
-- [Website Routing & Multi-Site](../architecture/websites) — how the proxied request resolves to a church/site in B1App
-- [API Deployment](./apis) — deploying the Membership API that serves `authorize`/`hostmap`
+- [Website Routing & Multi-Site](../architecture/websites.md) — how the proxied request resolves to a church/site in B1App
+- [API Deployment](./apis.md) — deploying the Membership API that serves `authorize`/`hostmap`

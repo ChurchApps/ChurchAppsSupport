@@ -1,5 +1,6 @@
 ---
 title: "Doing Endpoints"
+description: "Endpoint reference for the Doing API behind service plans, volunteer assignments, tasks, and automations in B1 Admin, with paths, auth, and permissions."
 ---
 
 # Doing Endpoints
@@ -278,6 +279,6 @@ Proxies requests to external content providers (e.g., ProPresenter, EasyWorship)
 
 ## Related Pages
 
-- [Membership Endpoints](./membership) — People, groups, roles, and permissions
-- [Attendance Endpoints](./attendance) — Service and visit tracking
-- [Module Structure](../module-structure) — Code organization patterns
+- [Membership Endpoints](./membership.md) — People, groups, roles, and permissions
+- [Attendance Endpoints](./attendance.md) — Service and visit tracking
+- [Module Structure](../module-structure.md) — Code organization patterns

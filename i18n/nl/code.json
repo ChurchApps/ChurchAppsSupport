@@ -386,13 +386,13 @@
     "message": "B1 Mobiel"
   },
   "homepage.products.b1mobile.description": {
-    "message": "Mobiele app voor kerkleden op iOS en Android."
+    "message": "Verouderde ledenapp voor iOS en Android, nu vervangen door de B1.church-webapp."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Incheckservice"
   },
   "homepage.products.b1checkin.description": {
-    "message": "Zelfbediening kiosk incheck-app voor Android-tablets."
+    "message": "Zelfbedieningskiosk-app voor incheck op iPad- en Android-tablets."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -425,10 +425,10 @@
     "message": "Speciaal ontworpen voor kerkworkflows - geen generieke tool die voor ministerie is aangepast."
   },
   "homepage.title": {
-    "message": "Start"
+    "message": "Hulp voor B1.church, Lessons.church & FreePlay"
   },
   "homepage.description": {
-    "message": "Ondersteuningsdocumentatie voor ChurchApps - gratis en open-source tools voor kerkbeheer."
+    "message": "Handleidingen en documentatie voor de gratis, open-source kerksoftware van ChurchApps: B1.church-kerkbeheer, incheck, geven en websites, Lessons.church-curriculum en FreePlay."
   },
   "homepage.products.heading": {
     "message": "Kies uw product"

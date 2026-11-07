@@ -21,13 +21,13 @@
     "message": "B1 Mobile"
   },
   "homepage.products.b1mobile.description": {
-    "message": "Application mobile pour les membres de l'église sur iOS et Android."
+    "message": "Ancienne application membre pour iOS et Android, désormais remplacée par l'application web B1.church."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Pointage"
   },
   "homepage.products.b1checkin.description": {
-    "message": "Application de borne de pointage en libre-service pour tablettes Android."
+    "message": "Application de borne d'enregistrement en libre-service pour tablettes iPad et Android."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -60,10 +60,10 @@
     "message": "Conçu spécifiquement pour les flux de travail des églises — pas un outil générique adapté au ministère."
   },
   "homepage.title": {
-    "message": "Accueil"
+    "message": "Aide pour B1.church, Lessons.church et FreePlay"
   },
   "homepage.description": {
-    "message": "Documentation de support pour ChurchApps — outils gratuits et open source de gestion d'église."
+    "message": "Guides et documentation pour les logiciels d'église gratuits et open source de ChurchApps : gestion d'église B1.church, enregistrement, dons et sites web, programme Lessons.church, et FreePlay."
   },
   "homepage.products.heading": {
     "message": "Choisissez votre produit"

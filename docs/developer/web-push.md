@@ -1,5 +1,6 @@
 ---
 title: "Web Push Notifications"
+description: "Set up VAPID keys, the WebPushHelper client, and service worker handling so B1.church and B1 Admin can deliver browser push notifications to members."
 ---
 
 # Web Push Notifications
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Related Pages
 
-- [Notifications Architecture](./architecture/notifications) -- The full in-app/push/email escalation funnel and the reminder engine
-- [Real-time Architecture](./realtime) -- WebSocket delivery; push now fires from the same in-app funnel alongside socket delivery in the same pass, not only as a fallback when a socket delivery doesn't land
-- [Messaging Endpoints](./api/endpoints/messaging) -- Notifications, devices, and the rest of the messaging surface
-- [AppHelper](./shared-libraries/app-helper) -- The npm package that ships `WebPushHelper`
+- [Notifications Architecture](./architecture/notifications.md) -- The full in-app/push/email escalation funnel and the reminder engine
+- [Real-time Architecture](./realtime.md) -- WebSocket delivery; push now fires from the same in-app funnel alongside socket delivery in the same pass, not only as a fallback when a socket delivery doesn't land
+- [Messaging Endpoints](./api/endpoints/messaging.md) -- Notifications, devices, and the rest of the messaging surface
+- [AppHelper](./shared-libraries/app-helper.md) -- The npm package that ships `WebPushHelper`

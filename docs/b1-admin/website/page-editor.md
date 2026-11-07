@@ -1,5 +1,6 @@
 ---
 title: "Using the Page Editor"
+description: "Set up a page editor in B1 Admin by adding sections and elements, styling them, previewing on mobile, and publishing drafts. Covers undo and version history too."
 ---
 
 # Using the Page Editor
@@ -17,8 +18,8 @@ The B1 page editor is a visual drag-and-drop builder that lets you design your c
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Complete [Initial Setup](initial-setup) to get your website configured
-- Create at least one page in [Managing Pages](managing-pages)
+- Complete [Initial Setup](./initial-setup.md) to get your website configured
+- Create at least one page in [Managing Pages](./managing-pages.md)
 - You need the **content.edit** permission to access the editor
 
 </div>
@@ -31,7 +32,7 @@ The B1 page editor is a visual drag-and-drop builder that lets you design your c
 The editor opens in full-screen mode. The left panel shows your page structure and available content elements; the center area shows a live preview of your page.
 
 :::info
-The editor always displays in light mode, regardless of your B1 Admin theme setting, and uses the heading and body fonts you chose in [Appearance](appearance). This ensures the preview accurately matches how your page will look to website visitors.
+The editor always displays in light mode, regardless of your B1 Admin theme setting, and uses the heading and body fonts you chose in [Appearance](./appearance.md). This ensures the preview accurately matches how your page will look to website visitors.
 :::
 
 ## Page Structure: Sections and Elements
@@ -61,7 +62,7 @@ Already built out a section but want a different structure? Use the layout switc
    - **Image** -- Upload or link to a photo
    - **Button** -- A clickable call-to-action link
    - **Card** -- An image with a title and description
-   - **Form** -- Embed a [form](../forms/creating-forms) directly on the page. If the form has a [header photo](../forms/creating-forms.md#adding-a-header-photo), it shows above the questions
+   - **Form** -- Embed a [form](../forms/creating-forms.md) directly on the page. If the form has a [header photo](../forms/creating-forms.md#adding-a-header-photo), it shows above the questions
    - **Calendar** -- Display an event calendar
    - **FAQ** -- Accordion-style question and answer blocks
    - **Video** -- Embed a video by URL
@@ -79,7 +80,7 @@ Already built out a section but want a different structure? Use the layout switc
    - **Map** -- An embedded map centered on your church's address
    - **Table** -- A simple grid of rows and columns for tabular content
    - **Text with Photo** -- Text and an image side by side
-   - **Logo** -- Your church logo, pulled from [Appearance](appearance)
+   - **Logo** -- Your church logo, pulled from [Appearance](./appearance.md)
    - **Live Stream** -- Your live stream player, embedded directly on the page
    - **Podcast** -- A list of episodes pulled from an external podcast RSS feed URL you provide, with settings for how many episodes to show and whether to display dates and descriptions. Each episode on the live site has an audio player and a **Download** link that saves the episode's audio file under the episode title. This is for featuring any podcast feed on your site; to publish your own sermons as a podcast, see [Managing Sermons](../sermons/managing-sermons.md#your-podcast-feed) instead.
    - **Donation** -- A giving button or embedded donation form
@@ -100,7 +101,7 @@ If you paste only a web address (such as an image link) into the JavaScript box,
 
 The **Calendar** element shows events from one of your calendars:
 
-1. Under **Select**, choose **Group Calendar** (one group's events -- the list shows groups you belong to) or **Curated Calendar** (a calendar you built under **Calendars**; see [Curated Calendar](../calendars/curated-calendar)).
+1. Under **Select**, choose **Group Calendar** (one group's events -- the list shows groups you belong to) or **Curated Calendar** (a calendar you built under **Calendars**; see [Curated Calendar](../calendars/curated-calendar.md)).
 2. Under **Select Calendar**, pick the group or calendar.
 3. Under **Display**, choose how to show it:
    - **Month calendar** -- A month grid that visitors can page through.
@@ -133,7 +134,7 @@ Click any element to open its style panel. Common options include font size, col
 For advanced styling, each section and element has a **Custom CSS** field where you can write your own CSS rules. These are scoped to that element, so they will not unintentionally affect the rest of the page.
 
 :::tip
-If you need to apply styles across your entire site -- such as a custom font or global color -- use the [Appearance](appearance) settings instead of custom CSS on individual pages.
+If you need to apply styles across your entire site -- such as a custom font or global color -- use the [Appearance](./appearance.md) settings instead of custom CSS on individual pages.
 :::
 
 ## Previewing Your Page
@@ -188,7 +189,7 @@ Use the draft/publish workflow when you want to prepare a page -- for example, f
 
 ## Related Articles
 
-- [Managing Pages](managing-pages) -- Create pages, set URLs, and manage site navigation
-- [Appearance](appearance) -- Set site-wide colors, fonts, and branding
-- [Files](files) -- Upload images and documents to use in the editor
-- [Creating Forms](../forms/creating-forms) -- Build forms you can embed on pages
+- [Managing Pages](./managing-pages.md) -- Create pages, set URLs, and manage site navigation
+- [Appearance](./appearance.md) -- Set site-wide colors, fonts, and branding
+- [Files](./files.md) -- Upload images and documents to use in the editor
+- [Creating Forms](../forms/creating-forms.md) -- Build forms you can embed on pages

@@ -1,5 +1,6 @@
 ---
 title: "Managing Lessons"
+description: "Build a lesson's structure in Lessons.church admin: add venues, sections, and role-based Say, Do, Note, or Play actions, plus parent take-home copy and resources."
 ---
 
 # Managing Lessons

@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Connect B1 Admin to Zapier to start automations on new people, donations, and group members, and write records back to B1 with no coding required."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Pick a trigger, then add one or more action steps. Examples below.
 ### Post donations to a Slack channel with a richer card than the built-in connector
 
 - **Trigger** — B1: New Donation
-- **Action** — Slack: Send Channel Message. Compose any layout — buttons, attachments, etc. — that the built-in [Slack connector](./slack-discord) can't.
+- **Action** — Slack: Send Channel Message. Compose any layout — buttons, attachments, etc. — that the built-in [Slack connector](./slack-discord.md) can't.
 
 ### Add new group members to a Google Group
 
@@ -106,6 +107,6 @@ This means the trigger only fires for events that happen **after** the Zap is tu
 
 ## See Also
 
-- [Make](./make) — same pattern, different platform
-- [Slack & Discord](./slack-discord) — simpler chat notifications without Zapier
+- [Make](./make.md) — same pattern, different platform
+- [Slack & Discord](./slack-discord.md) — simpler chat notifications without Zapier
 - [Webhooks (developer reference)](/docs/developer/api/webhooks)

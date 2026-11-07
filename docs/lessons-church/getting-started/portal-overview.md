@@ -1,5 +1,6 @@
 ---
 title: "Portal Overview"
+description: "Tour the Lessons.church portal to find classrooms, review scheduled lessons, set up feed links, and reach External Providers and Admin tools."
 ---
 
 # Portal Overview

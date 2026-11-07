@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Connect B1 Admin volunteer sign-ups to Checkr background checks using Make.com, with optional report status alerts for your safe-ministry coordinator."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ If your church uses B1 group membership to gate access (e.g. only "Cleared" grou
 
 ## See Also
 
-- [Make (overview)](../make) — B1 side of every Make scenario
-- [Mobile Message](./mobile-message) — for SMS-providers-without-Zapier-apps, same Webhooks/HTTP pattern as the Checkr Make wiring
+- [Make (overview)](../make.md) — B1 side of every Make scenario
+- [Mobile Message](./mobile-message.md) — for SMS-providers-without-Zapier-apps, same Webhooks/HTTP pattern as the Checkr Make wiring
 - [Checkr API docs](https://docs.checkr.com/)

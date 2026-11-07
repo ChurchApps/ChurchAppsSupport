@@ -222,5 +222,53 @@
   "sidebar.docsSidebar.category.Deployment": {
     "message": "Deployment",
     "description": "The label for category 'Deployment' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Integrations": {
+    "message": "Mga Integrasyon",
+    "description": "The label for category 'Integrations' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Connected services": {
+    "message": "Mga Konektadong Serbisyo",
+    "description": "The label for category 'Connected services' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Guides.link.generated-index.title": {
+    "message": "Mga Gabay sa B1 Admin",
+    "description": "The generated-index page title for category 'Guides' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Guides.link.generated-index.description": {
+    "message": "Mga hakbang-hakbang na gabay para sa karaniwang gawain sa B1 Admin: pagsisimula, online giving, paglulunsad ng iyong website, check-in ng mga bata, mga boluntaryo, mga sermon, maliliit na grupo, mga event, attendance, at mga year-end giving statement.",
+    "description": "The generated-index page description for category 'Guides' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-events": {
+    "message": "Mga Event",
+    "description": "The label for category 'Events' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-serving": {
+    "message": "Paglilingkod",
+    "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Mobile (Deprecated)": {
+    "message": "B1 - Mobile (Hindi na Ginagamit)",
+    "description": "The label for category 'B1 - Mobile (Deprecated)' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-events": {
+    "message": "Mga Event",
+    "description": "The label for category 'Events' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Scheduled Mode": {
+    "message": "Naka-iskedyul na Mode",
+    "description": "The label for category 'Scheduled Mode' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Architecture": {
+    "message": "Arkitektura",
+    "description": "The label for category 'Architecture' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Proposals": {
+    "message": "Mga Panukala",
+    "description": "The label for category 'Proposals' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Endpoint Reference": {
+    "message": "Sanggunian ng Endpoint",
+    "description": "The label for category 'Endpoint Reference' in sidebar 'docsSidebar'"
   }
 }

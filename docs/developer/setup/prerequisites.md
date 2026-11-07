@@ -1,5 +1,6 @@
 ---
 title: "Prerequisites"
+description: "Set up Node.js, npm, Git, and platform toolchains before working on ChurchApps projects like B1 Admin, Lessons.church, FreePlay, or the API locally."
 ---
 
 # Prerequisites
@@ -13,7 +14,7 @@ The tools you need depend on which projects you plan to work on. This page lists
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Review the [Project Overview](./project-overview) to determine which projects you want to work on
+- Review the [Project Overview](./project-overview.md) to determine which projects you want to work on
 - Have administrator access on your development machine for installing software
 
 </div>
@@ -40,7 +41,7 @@ If you plan to run the API locally (rather than pointing to the demo APIs):
 |------|---------|-------|
 | **MySQL** | 8.0+ | Each API module uses its own database |
 
-You will need six databases for the core API: `membership`, `attendance`, `content`, `giving`, `messaging`, and `doing`. The API includes scripts to initialize the schema -- see the [API local setup](../api/local-setup) guide.
+You will need six databases for the core API: `membership`, `attendance`, `content`, `giving`, `messaging`, and `doing`. The API includes scripts to initialize the schema -- see the [API local setup](../api/local-setup.md) guide.
 
 ## Mobile App Development
 
@@ -110,5 +111,5 @@ mysql --version   # Only needed for local API development
 
 ## Next Steps
 
-- **[Project Overview](./project-overview)** -- See all projects and what they do
-- **[Environment Variables](./environment-variables)** -- Configure your `.env` files
+- **[Project Overview](./project-overview.md)** -- See all projects and what they do
+- **[Environment Variables](./environment-variables.md)** -- Configure your `.env` files

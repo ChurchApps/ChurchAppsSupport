@@ -1,5 +1,6 @@
 ---
 title: "Looking Up Members"
+description: "Find your family on the B1 Checkin kiosk by searching phone digits or name, and register as a guest if you're a first-time visitor."
 ---
 
 # Looking Up Members
@@ -13,7 +14,7 @@ After selecting a service, you arrive at the member lookup screen. This is where
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Select a service](./selecting-service) from the services screen
+- [Select a service](./selecting-service.md) from the services screen
 - Ensure your household has been [added to the system](../../b1-admin/people/adding-people.md) by a church administrator
 
 </div>
@@ -45,7 +46,7 @@ The app searches for members whose name matches what you typed.
 
 Search results appear as cards below the search field. Each card shows the person's **name** and **photo** (if one is on file).
 
-Tap a person's card to select them. The app loads all members of that person's household and takes you to the [household review screen](./household-review).
+Tap a person's card to select them. The app loads all members of that person's household and takes you to the [household review screen](./household-review.md).
 
 :::tip
 Searching by the last 4 digits of a phone number is the fastest way to look up your family. Encourage members to use this method for a quicker check-in experience.
@@ -60,7 +61,7 @@ If no results are found, the app displays a message letting you know. Double-che
 If your church has QR guest registration turned on, a **Register as guest** link appears below the search on the lookup screen. First-time visitors can use it to add their family to the church's system before checking in.
 
 1. Tap **Register as guest**. A window opens with a QR code and the message "Scan to register as a guest."
-2. Choose how to fill in the [guest registration form](../../b1-church/checkin/guest-registration):
+2. Choose how to fill in the [guest registration form](../../b1-church/checkin/guest-registration.md):
    - **On your phone** -- Scan the QR code, fill in the form on your phone, and tap **OK** to close the window.
    - **On the kiosk** -- Tap **Register here** to open the same form right on the tablet. Fill it in and tap **Register**, then tap **Done** (or the back arrow) to return to the lookup screen.
 3. Once registered, search for your family by name or phone number to check in.
@@ -71,7 +72,7 @@ The form opened with **Register here** stays on the guest registration page -- v
 
 ## Printing Labels for a Phone Check-In
 
-Families who already checked in on their phone through [B1 Church self check-in](../../b1-church/checkin/self-checkin) can print their name tags at the kiosk without looking themselves up.
+Families who already checked in on their phone through [B1 Church self check-in](../../b1-church/checkin/self-checkin.md) can print their name tags at the kiosk without looking themselves up.
 
 1. On the lookup screen, tap the **Scan code** button (the QR code icon).
 2. Hold the QR code from your phone up to the camera. If the app asks for camera access, tap **Allow Camera**. The front camera is used by default; tap the flip button to switch.
@@ -81,4 +82,4 @@ Scanning only prints labels -- the attendance was already recorded when the fami
 
 ## Next Step
 
-After selecting a person, you will [review your household](./household-review) and manage group assignments.
+After selecting a person, you will [review your household](./household-review.md) and manage group assignments.

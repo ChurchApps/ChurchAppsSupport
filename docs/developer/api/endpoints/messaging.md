@@ -1,5 +1,6 @@
 ---
 title: "Messaging Endpoints"
+description: "Reference for ChurchApps messaging API endpoints: conversations, notes access rules, texting, email templates, notifications, and devices."
 ---
 
 # Messaging Endpoints
@@ -190,7 +191,7 @@ Base path: `/messaging/notificationpreferences`
 
 Base path: `/messaging/connections`
 
-Manages WebSocket/real-time connections for chat, group conversations, private messages, and live streaming. See [Real-time Architecture](../../realtime) for the end-to-end protocol.
+Manages WebSocket/real-time connections for chat, group conversations, private messages, and live streaming. See [Real-time Architecture](../../realtime.md) for the end-to-end protocol.
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
@@ -367,9 +368,9 @@ Tracks delivery status for sent messages (SMS, push notifications, email).
 
 ## Related Pages
 
-- [Real-time Architecture](../../realtime) -- WebSocket protocol, room subscriptions, and the unified delivery framework
-- [Web Push Notifications](../../web-push) -- Browser push enrollment and delivery
-- [Membership Endpoints](./membership) -- People, groups, roles, and core identity
-- [Attendance Endpoints](./attendance) -- Service and visit tracking
-- [Authentication & Permissions](./authentication) -- Login flow, JWT, OAuth, permission model
-- [Module Structure](../module-structure) -- Code organization patterns
+- [Real-time Architecture](../../realtime.md) -- WebSocket protocol, room subscriptions, and the unified delivery framework
+- [Web Push Notifications](../../web-push.md) -- Browser push enrollment and delivery
+- [Membership Endpoints](./membership.md) -- People, groups, roles, and core identity
+- [Attendance Endpoints](./attendance.md) -- Service and visit tracking
+- [Authentication & Permissions](./authentication.md) -- Login flow, JWT, OAuth, permission model
+- [Module Structure](../module-structure.md) -- Code organization patterns

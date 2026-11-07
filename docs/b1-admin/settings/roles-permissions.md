@@ -1,5 +1,6 @@
 ---
 title: "Roles & Permissions"
+description: "Set up roles in B1 Admin to control what staff and volunteers can see and change, from donations and attendance to people and groups."
 ---
 
 # Roles & Permissions

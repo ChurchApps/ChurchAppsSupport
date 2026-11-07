@@ -1,5 +1,6 @@
 ---
 title: "Saved Lists"
+description: "Save a People search in B1 Admin as a named list, then reload it in one click. Lists stay live, so new matching members appear automatically."
 ---
 
 # Saved Lists

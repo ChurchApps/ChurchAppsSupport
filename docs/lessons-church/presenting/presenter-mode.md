@@ -1,5 +1,6 @@
 ---
 title: "Presenter Mode"
+description: "Run a lesson full-screen on a classroom projector or TV with Presenter Mode in Lessons.church, and step through each section during class."
 ---
 
 # Presenter Mode

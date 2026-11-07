@@ -1,5 +1,6 @@
 ---
 title: "FreePlay Overview"
+description: "Overview of FreePlay, the classroom TV app for offline lesson playback on Android TV, Fire TV, and Apple TV, with links to setup guides."
 ---
 
 # FreePlay Overview
@@ -22,10 +23,10 @@ Our **<a href="/guides/freeplay-b1admin" target="_blank">full setup guide</a>** 
 
 - **Offline playback** - Download videos and image slides ahead of time so you never depend on Wi-Fi during services
 - **Downloads management** - View and manage all downloaded content from **Settings** > **Downloads**
-- **Scheduled mode** - Build playlists and put them on a calendar at [admin.freeplay.church](https://admin.freeplay.church), and paired TVs play them at the right times with no one pressing Start -- see [Scheduled Mode](./scheduled-mode/)
+- **Scheduled mode** - Build playlists and put them on a calendar at [admin.freeplay.church](https://admin.freeplay.church), and paired TVs play them at the right times with no one pressing Start -- see [Scheduled Mode](./scheduled-mode/index.md)
 - **Plan pairing** - Link your device to a church service plan for coordinated content across rooms
 - **Content providers** - Browse and download content from external sources like [Lessons.church](/docs/lessons-church/), Bible Project, Dropbox, and OneDrive
-- **Announcements** - Loop a folder of slides from a connected provider -- see [Announcements](./content-providers/announcements)
+- **Announcements** - Loop a folder of slides from a connected provider -- see [Announcements](./content-providers/announcements.md)
 - **TV remote friendly** - Navigate the entire app with a standard TV remote using directional buttons and select
 - **Collapsible sidebar** - A slim sidebar keeps navigation accessible without cluttering the screen
 
@@ -35,10 +36,10 @@ When you launch FreePlay, it connects to your content providers and checks for a
 
 ## Sections
 
-- **[Getting Started](./getting-started/)** - Install the app, launch it, and choose how to connect
-- **[Scheduled Mode](./scheduled-mode/)** - Pair TVs to a calendar and manage them in FreePlay Admin
-- **[Plan Mode](./plan-mode/)** - Pair to a church service plan
-- **[Content Providers](./content-providers/)** - Connect to external content sources
+- **[Getting Started](./getting-started/index.md)** - Install the app, launch it, and choose how to connect
+- **[Scheduled Mode](./scheduled-mode/index.md)** - Pair TVs to a calendar and manage them in FreePlay Admin
+- **[Plan Mode](./plan-mode/index.md)** - Pair to a church service plan
+- **[Content Providers](./content-providers/index.md)** - Connect to external content sources
 
 :::info
 FreePlay is part of the [ChurchApps](https://churchapps.org) suite of free, open-source tools for churches.

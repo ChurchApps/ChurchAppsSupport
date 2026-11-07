@@ -1,5 +1,6 @@
 ---
 title: "Guide: Track Church Attendance"
+description: "Track church attendance in B1 Admin by setting up campuses and service times, recording it manually or via self check-in, and reading reports."
 ---
 
 # Track Church Attendance

@@ -1,5 +1,6 @@
 ---
 title: "Choosing a Device"
+description: "Pick the right device for FreePlay classroom TVs in ChurchApps support docs, from Fire TV sticks and Onn boxes to Apple TV, and which to skip."
 ---
 
 # Choosing a Device for FreePlay

@@ -1,5 +1,7 @@
 ---
-title: "Making a Donation"
+title: "Making Donations in the B1.church Member Portal"
+sidebar_label: "Making a Donation"
+description: "Make a one-time or recurring gift to your church through B1.church, with or without an account, and review your giving history afterward."
 ---
 
 # Making a Donation

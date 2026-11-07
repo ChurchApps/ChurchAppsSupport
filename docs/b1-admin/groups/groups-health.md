@@ -1,5 +1,6 @@
 ---
 title: "Groups Health"
+description: "Check group health in B1 Admin with a 90-day table of members, joins, departures, churn, and average attendance to spot groups needing follow-up."
 ---
 
 # Groups Health
@@ -13,8 +14,8 @@ The Groups Health dashboard gives you a bird's-eye view of how all your groups a
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- You need at least a few groups with members to see meaningful data. See [Creating Groups](creating-groups).
-- Attendance data is pulled from recorded sessions. See the [Attendance](../attendance/) section.
+- You need at least a few groups with members to see meaningful data. See [Creating Groups](./creating-groups.md).
+- Attendance data is pulled from recorded sessions. See the [Attendance](../attendance/index.md) section.
 
 </div>
 
@@ -48,6 +49,6 @@ Clicking a group name takes you directly to the group's detail page where you ca
 
 ## Related Articles
 
-- [Creating Groups](creating-groups) — set up groups
-- [Group Members](group-members) — manage group membership
-- [Tracking Attendance](../attendance/tracking-attendance) — record attendance sessions that feed this dashboard
+- [Creating Groups](./creating-groups.md) — set up groups
+- [Group Members](./group-members.md) — manage group membership
+- [Tracking Attendance](../attendance/tracking-attendance.md) — record attendance sessions that feed this dashboard

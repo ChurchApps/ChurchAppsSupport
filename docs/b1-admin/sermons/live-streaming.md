@@ -1,5 +1,7 @@
 ---
-title: "Live Streaming"
+title: "Live Stream Times and Setup in B1 Admin"
+sidebar_label: "Live Streaming"
+description: "Schedule weekly or one-time live stream services, set chat and early video timing, connect a YouTube channel, and troubleshoot embeds in B1 Admin."
 ---
 
 # Live Streaming
@@ -19,7 +21,7 @@ The Live Stream Times page lets you configure your church's streaming schedule, 
 
 - You need the **contentApi.streamingServices.edit** permission. See [Roles & Permissions](../settings/roles-permissions.md) if you do not have access.
 - Have your YouTube Channel ID ready if you plan to use automated live streaming
-- Add at least one [sermon](managing-sermons) or permanent live URL to use as your stream source
+- Add at least one [sermon](./managing-sermons.md) or permanent live URL to use as your stream source
 
 </div>
 
@@ -80,13 +82,13 @@ To find your YouTube Channel ID, go to your YouTube channel's advanced settings 
 
 ## Customizing Colors and Logo
 
-Your live stream page uses your website's [Appearance](../website/appearance) settings:
+Your live stream page uses your website's [Appearance](../website/appearance.md) settings:
 
 - The **light accent color** with dark text is used for the header.
 - The **dark accent color** with light text is used for the sidebar.
 - Your **Light Background Logo** appears on the streaming page. Use an image with a transparent background and a 4:1 aspect ratio.
 
-To change these, go to **Website** then **Appearance** and update your [Color Palette](../website/appearance#color-palette) and [Logo](../website/appearance#logo-and-branding) settings.
+To change these, go to **Website** then **Appearance** and update your [Color Palette](../website/appearance.md#color-palette) and [Logo](../website/appearance.md#logo-and-branding) settings.
 
 ## Adding Streaming Hosts
 
@@ -133,5 +135,5 @@ YouTube's automated channel live stream embed can be blocked when there are mult
 
 ## Next Steps
 
-- [Managing Sermons](managing-sermons) -- Add sermons to your library
-- [Playlists](playlists) -- Organize sermons into series
+- [Managing Sermons](./managing-sermons.md) -- Add sermons to your library
+- [Playlists](./playlists.md) -- Organize sermons into series

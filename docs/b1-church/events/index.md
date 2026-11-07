@@ -1,5 +1,7 @@
 ---
-title: "Events"
+title: "Church Events on B1.church: Browse and Register"
+sidebar_label: "Events"
+description: "Browse upcoming church events on B1.church, check registration status, and sign up or add events to your calendar."
 ---
 
 # Events
@@ -43,7 +45,7 @@ If an event is full, you may still be able to join the **waitlist** when your ch
 
 ## Learn More
 
-- [Registering for Events](./registering) -- Step-by-step guide to signing up for an event
-- [My Registrations](./my-registrations) -- View your registrations, pay balances, edit, or cancel
-- [Requesting Events & Rooms](./requesting-events) -- Request an event with the rooms and resources it needs
-- [Self Check-In](../checkin/self-checkin) -- Check in when you arrive at the event
+- [Registering for Events](./registering.md) -- Step-by-step guide to signing up for an event
+- [My Registrations](./my-registrations.md) -- View your registrations, pay balances, edit, or cancel
+- [Requesting Events & Rooms](./requesting-events.md) -- Request an event with the rooms and resources it needs
+- [Self Check-In](../checkin/self-checkin.md) -- Check in when you arrive at the event

@@ -1,5 +1,6 @@
 ---
 title: "Plan Mode"
+description: "Connect a TV in FreePlay to a church service plan from B1 Admin so it shows the current week's lessons, presentations, and media in order."
 ---
 
 # Plan Mode
@@ -12,13 +13,13 @@ Plan Mode connects your TV to a church service plan. Instead of pulling content 
 
 ## How It Differs from Other Modes
 
-- **[Scheduled Mode](../scheduled-mode/)** plays playlists from a calendar in FreePlay Admin at the times you set, with no one pressing Start
+- **[Scheduled Mode](../scheduled-mode/index.md)** plays playlists from a calendar in FreePlay Admin at the times you set, with no one pressing Start
 - **Plan Mode** fetches the content tied to a plan type, which can include lessons, provider presentations, add-ons, and other media arranged in a custom order
 
 Plan Mode is especially useful when your service plan includes a mix of content from different sources, all organized into a single sequence.
 
 :::tip
-Want the current plan to play on its own at a set time? In FreePlay Admin, add a calendar entry and choose the plan type under **Service plans**. See [Scheduling the Calendar](../scheduled-mode/scheduling-the-calendar).
+Want the current plan to play on its own at a set time? In FreePlay Admin, add a calendar entry and choose the plan type under **Service plans**. See [Scheduling the Calendar](../scheduled-mode/scheduling-the-calendar.md).
 :::
 
 ## How It Works
@@ -32,4 +33,4 @@ The TV stays paired to the plan type. Each week, it automatically picks up the l
 
 ## In This Section
 
-- **[Pairing Your Device](./device-pairing)** - How to generate and enter the pairing code
+- **[Pairing Your Device](./device-pairing.md)** - How to generate and enter the pairing code

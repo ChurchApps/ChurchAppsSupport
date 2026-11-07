@@ -1,5 +1,6 @@
 ---
 title: "Downloads and Materials"
+description: "Find and download printable activity sheets, leader guides, and PDFs attached to Lessons.church lessons, studies, or programs for your class."
 ---
 
 # Downloads and Materials

@@ -1,5 +1,6 @@
 ---
 title: "Creating Calendars"
+description: "Create a calendar in B1 Admin, connect groups or import .ics files, and manage its events, registrations, and notes from one place."
 ---
 
 # Creating Calendars
@@ -61,7 +62,7 @@ Connecting groups to your calendar is a powerful way to automatically aggregate 
 :::
 
 :::info
-If you want to create a single calendar that pulls events from many groups across your church, see [Curated Calendar](curated-calendar) for a streamlined approach.
+If you want to create a single calendar that pulls events from many groups across your church, see [Curated Calendar](./curated-calendar.md) for a streamlined approach.
 :::
 
 ## Adding and Editing Events {#adding-and-editing-events}
@@ -75,7 +76,7 @@ Click **New Event** on the calendar detail page to add an event, or click an eve
 - **Start** and **End**, **Repeats**, and **Visibility** (**Public** or **Private**).
 - **Tags** -- Comma-separated labels, such as `youth, students`. A Calendar element on your website can be set to show only events with a certain tag. This is the same **Tags** field shown in the event's registration settings.
 - **Who can view notes** and **Who can post notes** -- Who can read and add to the event's notes (see [Event Notes](#event-notes)). Choose **Staff only** (the default), **Group leaders** (leaders of the event's group), or **Group members** (everyone in the event's group, including its leaders).
-- **Rooms** and **Resources** -- Reserve space and equipment for the event. See [Rooms, Resources & Scheduling](rooms-resources).
+- **Rooms** and **Resources** -- Reserve space and equipment for the event. See [Rooms, Resources & Scheduling](./rooms-resources.md).
 
 Click **Save**. If the event repeats, B1 asks you to confirm, because saving updates every occurrence in the series.
 
@@ -101,12 +102,12 @@ You can enable registration for any calendar event so members can sign up throug
    - **Registration Closes** -- The date and time when registration closes.
    - **Tags** -- Comma-separated labels (e.g., "youth, retreat, vbs") to help categorize registerable events.
    - **Registration Questions** -- Optionally attach a [form](../forms/creating-forms.md) so registrants answer extra questions (dietary restrictions, T-shirt size, emergency contact, etc.) as part of signing up. Choose **None** to skip questions.
-   - **Enable Waitlist** -- When the event fills up, let additional registrants join a waitlist instead of being turned away. See [Paid Registrations](paid-registrations#waitlist).
+   - **Enable Waitlist** -- When the event fills up, let additional registrants join a waitlist instead of being turned away. See [Paid Registrations](./paid-registrations.md#waitlist).
 4. Save the event.
 
-For paid events, the same settings page lets you define priced **Attendee Types**, optional **Selections** (add-ons), and **Discount Codes**, with payment collected through your church's giving provider. See [Paid Registrations](paid-registrations) for the full walkthrough.
+For paid events, the same settings page lets you define priced **Attendee Types**, optional **Selections** (add-ons), and **Discount Codes**, with payment collected through your church's giving provider. See [Paid Registrations](./paid-registrations.md) for the full walkthrough.
 
-Once registration is enabled, members will see a **Register for this Event** button when they view the event on the [B1 website](../../b1-church/events/registering) or [B1 Mobile app](../../b1-mobile/events/registering). If you attached a form, registrants see a **Questions** step during registration and their answers are saved with their registration.
+Once registration is enabled, members will see a **Register for this Event** button when they view the event on the [B1 website](../../b1-church/events/registering.md) or [B1 Mobile app](../../b1-mobile/events/registering.md). If you attached a form, registrants see a **Questions** step during registration and their answers are saved with their registration.
 
 :::info
 Registration Questions only works with forms that are **not** marked Restricted. A restricted form is skipped automatically during registration rather than shown, so use an unrestricted form when attaching questions to an event.
@@ -126,7 +127,7 @@ To view and manage registrations for your events:
    - **Promote** waitlisted registrations when a spot opens
    - **Export CSV** -- Download all registrations, including attendee types, selections, payment amounts, and question answers
 
-If the event has Registration Questions attached, the detail page also shows an **Unanswered questions only** filter to quickly find registrants who haven't submitted answers yet, and a **View Answers** button on each answered registration to see their responses. Paid events add a **Type** column, a **Paid / Total** column, per-type counts, and a payments detail dialog -- see [Paid Registrations](paid-registrations#the-registration-roster).
+If the event has Registration Questions attached, the detail page also shows an **Unanswered questions only** filter to quickly find registrants who haven't submitted answers yet, and a **View Answers** button on each answered registration to see their responses. Paid events add a **Type** column, a **Paid / Total** column, per-type counts, and a payments detail dialog -- see [Paid Registrations](./paid-registrations.md#the-registration-roster).
 
 :::tip
 Use the capacity progress bar to monitor how quickly events are filling up. The bar turns red when an event is at or over capacity.
@@ -134,7 +135,7 @@ Use the capacity progress bar to monitor how quickly events are filling up. The 
 
 ## Next Steps
 
-- [Curated Calendar](curated-calendar) -- Create a calendar that pulls from multiple groups
-- [Paid Registrations](paid-registrations) -- Attendee types, add-on selections, discount codes, payments, and waitlists
-- [Event Registration Guide](../guides/event-registration) -- Step-by-step guide for setting up event registration
-- [Calendars Overview](./) -- Return to the calendars overview
+- [Curated Calendar](./curated-calendar.md) -- Create a calendar that pulls from multiple groups
+- [Paid Registrations](./paid-registrations.md) -- Attendee types, add-on selections, discount codes, payments, and waitlists
+- [Event Registration Guide](../guides/event-registration.md) -- Step-by-step guide for setting up event registration
+- [Calendars Overview](./index.md) -- Return to the calendars overview

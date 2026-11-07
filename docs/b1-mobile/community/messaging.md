@@ -1,5 +1,6 @@
 ---
 title: "Messaging"
+description: "Start, read, edit, and delete private one-on-one conversations with church members in B1 Mobile, plus find people through the Member Directory."
 ---
 
 # Messaging
@@ -13,7 +14,7 @@ B1 Mobile includes private messaging so you can have one-on-one conversations wi
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- [Install B1 Mobile](../getting-started/installing.md) and [log in](../getting-started/logging-in.md) to your account
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile includes private messaging so you can have one-on-one conversations wi
 ## Starting a New Conversation
 
 1. From the messaging screen, tap the option to start a new conversation.
-2. Use the search field to find the member you want to message. You can also find members through the [Member Directory](./member-directory).
+2. Use the search field to find the member you want to message. You can also find members through the [Member Directory](./member-directory.md).
 3. Select the member from the search results.
 4. Type your message and tap **Send**.
 
@@ -52,11 +53,11 @@ Use messaging to coordinate with fellow volunteers, follow up with someone you m
 :::
 
 :::info
-Enable [push notifications](./notifications) to get alerted when someone sends you a new message, even when the app is not open.
+Enable [push notifications](./notifications.md) to get alerted when someone sends you a new message, even when the app is not open.
 :::
 
 ## Related Articles
 
-- [Member Directory](./member-directory) -- Find members to message
-- [Notifications](./notifications) -- Get notified about new messages
-- [Groups](../groups/) -- Participate in group conversations
+- [Member Directory](./member-directory.md) -- Find members to message
+- [Notifications](./notifications.md) -- Get notified about new messages
+- [Groups](../groups/index.md) -- Participate in group conversations

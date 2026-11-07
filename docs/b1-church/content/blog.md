@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Browsing the B1.church Blog and RSS Feeds"
+sidebar_label: "Blog"
+description: "Browse and filter the B1.church blog for your church by category or tag, page through older posts, or follow new ones through RSS feeds."
 ---
 
 # Blog

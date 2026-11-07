@@ -1,5 +1,7 @@
 ---
-title: "Content"
+title: "Content Features in the B1 Mobile App"
+sidebar_label: "Content"
+description: "Find sermons, live streams, Bible reading, and Verse of the Day in the B1 Mobile app, and see which content features your church has turned on."
 ---
 
 # Content
@@ -30,20 +32,20 @@ View a beautifully formatted Bible verse image that changes every day. The image
 
 ### Lessons (Deprecated)
 
-The embedded Lessons screen has been replaced by **[FreePlay](/docs/freeplay/)** for classroom playback, and by visiting [Lessons.church](https://lessons.church) directly for browsing. See the [Lessons reference page](./lessons) for details.
+The embedded Lessons screen has been replaced by **[FreePlay](/docs/freeplay/)** for classroom playback, and by visiting [Lessons.church](https://lessons.church) directly for browsing. See the [Lessons reference page](./lessons.md) for details.
 
 ## Finding Content
 
 Content features are available through the drawer menu in the app. Your church administrator decides which content features are enabled, so you may not see all of the options listed above. If a particular feature is missing, your church may not have it configured yet.
 
 :::info
-Content features are configured by your church administrator through [B1 Admin](../../b1-admin/). If you do not see a feature you expect, contact your church office.
+Content features are configured by your church administrator through [B1 Admin](../../b1-admin/index.md). If you do not see a feature you expect, contact your church office.
 :::
 
 ## Next Steps
 
-- [Sermons](./sermons) -- Browse and watch recorded sermons
-- [Live Streaming](./live-streaming) -- Watch live broadcasts
-- [Bible](./bible) -- Read Scripture in the built-in reader
-- [Verse of the Day](./verse-of-the-day) -- See today's daily verse
+- [Sermons](./sermons.md) -- Browse and watch recorded sermons
+- [Live Streaming](./live-streaming.md) -- Watch live broadcasts
+- [Bible](./bible.md) -- Read Scripture in the built-in reader
+- [Verse of the Day](./verse-of-the-day.md) -- See today's daily verse
 - [FreePlay](/docs/freeplay/) -- Play lessons on classroom TVs (replaces the deprecated in-app Lessons screen)

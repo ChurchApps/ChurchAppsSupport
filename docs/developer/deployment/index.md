@@ -1,5 +1,6 @@
 ---
 title: "Deployment"
+description: "Find where each ChurchApps project deploys, from AWS Lambda APIs and S3 web apps to Expo mobile builds and self-hosted B1 Admin on Railway or Docker."
 ---
 
 # Deployment
@@ -14,12 +15,12 @@ ChurchApps uses different deployment strategies depending on the project type. A
 
 | Project Type | Deployment Target | Tooling |
 |-------------|-------------------|---------|
-| [APIs](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 24.x runtime) |
-| [Web Apps](./web-apps) | S3 + CloudFront | Static build, S3 sync, CloudFront invalidation |
-| [Mobile Apps](./mobile) | App Stores | Expo EAS Build + OTA Updates |
-| [Self-Hosting (Railway)](./railway-template) | Railway | One-click template: MySQL + Api + B1Admin + B1App |
-| [Self-Hosting (Docker)](./docker) | Any Docker host | One-line installer; prebuilt GHCR images + Caddy, `./deploy/b1` upgrade/backup/rollback |
-| [Caddy Custom-Domain Proxy](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Static Caddyfile + WinSW service + scheduled map sync |
+| [APIs](./apis.md) | AWS Lambda | Serverless Framework v3 (Node.js 24.x runtime) |
+| [Web Apps](./web-apps.md) | S3 + CloudFront | Static build, S3 sync, CloudFront invalidation |
+| [Mobile Apps](./mobile.md) | App Stores | Expo EAS Build + OTA Updates |
+| [Self-Hosting (Railway)](./railway-template.md) | Railway | One-click template: MySQL + Api + B1Admin + B1App |
+| [Self-Hosting (Docker)](./docker.md) | Any Docker host | One-line installer; prebuilt GHCR images + Caddy, `./deploy/b1` upgrade/backup/rollback |
+| [Caddy Custom-Domain Proxy](./caddy-proxy.md) | Windows EC2 (Elastic IP `3.23.251.61`) | Static Caddyfile + WinSW service + scheduled map sync |
 | FreeShow | Direct download | Electron Builder (cross-platform binaries) |
 
 ## Environments

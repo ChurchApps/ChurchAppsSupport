@@ -1,5 +1,6 @@
 ---
 title: "Plans Overview"
+description: "Get a bird's-eye view of volunteer assignments across many service dates in B1 Admin, spot unfilled positions, and fill or email your team from one grid."
 ---
 
 # Plans Overview

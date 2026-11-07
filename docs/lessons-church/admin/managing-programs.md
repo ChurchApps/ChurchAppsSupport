@@ -1,5 +1,6 @@
 ---
 title: "Managing Programs"
+description: "Create and edit curriculum programs in Lessons.church, set up slugs and thumbnails, group studies into categories, and attach program-level resources."
 ---
 
 # Managing Programs

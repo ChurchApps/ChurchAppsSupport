@@ -1,5 +1,6 @@
 ---
 title: "Importing Data"
+description: "Bring existing people, groups, attendance, and giving records into B1 Admin with the B1 Transfer tool, or export a backup of your data at any time."
 ---
 
 # Importing Data

@@ -1,5 +1,7 @@
 ---
-title: "Donation History"
+title: "Giving History and Statements in B1.church"
+sidebar_label: "Donation History"
+description: "View your past donations, filter by year, and print giving statements for taxes from the Giving page in the B1.church member portal."
 ---
 
 # Donation History

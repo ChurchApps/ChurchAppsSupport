@@ -1,5 +1,6 @@
 ---
 title: "Managing Screens and Groups"
+description: "Check which FreePlay TVs are online and ready for Sunday, then edit screen settings and set up groups that share one calendar in FreePlay Admin."
 ---
 
 # Managing Screens and Groups
@@ -14,7 +15,7 @@ The **Screens** page in FreePlay Admin lists every TV paired to your church, wit
 <h4>Before You Begin</h4>
 
 - Sign in to FreePlay Admin at [admin.freeplay.church](https://admin.freeplay.church)
-- [Pair at least one screen](./pairing-a-screen)
+- [Pair at least one screen](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Use **Present** to play the screen's calendar in your browser, or **Edit** to ch
 
 Click a screen's label to open its page. On the left:
 
-- **Present in browser** - Play this screen's calendar full screen in your browser, as it would look on the TV. See [Presenting from a Browser](./scheduled-playback#presenting-from-a-browser)
+- **Present in browser** - Play this screen's calendar full screen in your browser, as it would look on the TV. See [Presenting from a Browser](./scheduled-playback.md#presenting-from-a-browser)
 - **Edit** - Change the label, group, or mode
 - **More** > **Unpair** - Disconnect the TV. It goes back to showing a pairing code
 
@@ -93,6 +94,6 @@ Deleting a group deletes its schedule too. Screens in that group go dark until y
 
 ## Related Articles
 
-- **[Pairing a Screen](./pairing-a-screen)** - Add a new TV
-- **[Scheduling the Calendar](./scheduling-the-calendar)** - Set what each group plays and its default loop
-- **[Scheduled Playback on the TV](./scheduled-playback)** - What the "Ready through" date means on the TV itself
+- **[Pairing a Screen](./pairing-a-screen.md)** - Add a new TV
+- **[Scheduling the Calendar](./scheduling-the-calendar.md)** - Set what each group plays and its default loop
+- **[Scheduled Playback on the TV](./scheduled-playback.md)** - What the "Ready through" date means on the TV itself

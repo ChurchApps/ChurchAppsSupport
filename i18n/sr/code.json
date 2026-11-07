@@ -386,13 +386,13 @@
     "message": "B1 Мобилна"
   },
   "homepage.products.b1mobile.description": {
-    "message": "Мобилна апликација за чланове цркве на iOS и Android."
+    "message": "Наслеђена апликација за чланове за iOS и Android, сада замењена B1.church веб апликацијом."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Регистрација"
   },
   "homepage.products.b1checkin.description": {
-    "message": "Апликација за аутоматску регистрацију на киосцима за Android таблете."
+    "message": "Апликација за самопослужну пријаву на киоску за iPad и Android таблете."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -425,10 +425,10 @@
     "message": "Специјално дизајниран за радне токе цркве — није генерички алат приспособљен за министерство."
   },
   "homepage.title": {
-    "message": "Почетна страница"
+    "message": "Помоћ за B1.church, Lessons.church и FreePlay"
   },
   "homepage.description": {
-    "message": "Документација подршке за ChurchApps — бесплатни алати са отвореним изворним кодом за управљање црквом."
+    "message": "Водичи и документација за ChurchApps-ов бесплатан софтвер отвореног кода за цркве: управљање црквом B1.church, пријава, давања и веб-сајтови, Lessons.church курикулум и FreePlay."
   },
   "homepage.products.heading": {
     "message": "Одабери свој производ"

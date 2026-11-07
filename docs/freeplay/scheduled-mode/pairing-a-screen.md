@@ -1,5 +1,6 @@
 ---
 title: "Pairing a Screen"
+description: "Pair a FreePlay TV to a screen group calendar in FreePlay Admin using the four-letter code on the TV, so it plays scheduled content on its own."
 ---
 
 # Pairing a Screen
@@ -13,9 +14,9 @@ To put a TV on a calendar, pair it with **FreePlay Admin**. The TV shows a four-
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Install and launch FreePlay on the TV. See [Getting Started](../getting-started/)
+- Install and launch FreePlay on the TV. See [Getting Started](../getting-started/index.md)
 - Have a ChurchApps login for your church so you can sign in to FreePlay Admin
-- Optionally, [build a playlist](./building-playlists) and [schedule it](./scheduling-the-calendar) first so the TV has something to play right away
+- Optionally, [build a playlist](./building-playlists.md) and [schedule it](./scheduling-the-calendar.md) first so the TV has something to play right away
 
 </div>
 
@@ -38,7 +39,7 @@ The code lasts 15 minutes, and a countdown below it shows how much time is left.
 5. Under **Mode**, leave **Scheduled** selected. The TV will play by the group's calendar on its own.
 6. Click **Pair**.
 
-The TV shows **Connected!** and then **Loading your schedule...**. It downloads what's scheduled and starts playing. See [Scheduled Playback on the TV](./scheduled-playback).
+The TV shows **Connected!** and then **Loading your schedule...**. It downloads what's scheduled and starts playing. See [Scheduled Playback on the TV](./scheduled-playback.md).
 
 :::info
 If FreePlay Admin says **That code didn't match a TV**, check the code on the screen. If it has expired, use the new code the TV is showing now.
@@ -51,11 +52,11 @@ The **Mode** setting has two options:
 - **Scheduled** - Plays by the group's calendar on its own. Nobody has to press Start.
 - **Manual** - Someone picks content with the remote. A manual screen still appears in your **Screens** list, but it doesn't follow a calendar, so the **Group** field is turned off.
 
-You can switch a screen's mode later from **Edit** on the [Screens page](./managing-screens).
+You can switch a screen's mode later from **Edit** on the [Screens page](./managing-screens.md).
 
 ## Pairing to a Service Plan Instead
 
-The code on the **Pair this screen** screen also works in B1 Admin. If you enter it there and pick a plan type under **Show Plans For**, the TV follows that plan type in [Plan Mode](../plan-mode/) instead of a calendar. See [Pairing Your Device](../plan-mode/device-pairing).
+The code on the **Pair this screen** screen also works in B1 Admin. If you enter it there and pick a plan type under **Show Plans For**, the TV follows that plan type in [Plan Mode](../plan-mode/index.md) instead of a calendar. See [Pairing Your Device](../plan-mode/device-pairing.md).
 
 ## Changing or Unpairing from the TV
 
@@ -79,6 +80,6 @@ The TV goes back to showing a pairing code. Pair it again whenever you want it b
 
 ## Related Articles
 
-- **[Managing Screens and Groups](./managing-screens)** - Rename a screen, move it to another group, or check its downloads
-- **[Scheduling the Calendar](./scheduling-the-calendar)** - Decide what the group's screens play
-- **[Choosing a Pairing Mode](../getting-started/pairing-modes)** - Compare Scheduled Mode with Plan Mode and browsing providers yourself
+- **[Managing Screens and Groups](./managing-screens.md)** - Rename a screen, move it to another group, or check its downloads
+- **[Scheduling the Calendar](./scheduling-the-calendar.md)** - Decide what the group's screens play
+- **[Choosing a Pairing Mode](../getting-started/pairing-modes.md)** - Compare Scheduled Mode with Plan Mode and browsing providers yourself

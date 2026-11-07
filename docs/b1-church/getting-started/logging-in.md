@@ -1,5 +1,7 @@
 ---
-title: "Logging In"
+title: "Logging In to B1.church and the Member Portal"
+sidebar_label: "Logging In"
+description: "Sign in to your B1.church member portal, use two-factor codes or single sign-on, reset a forgotten password, and log out from your account menu."
 ---
 
 # Logging In
@@ -17,7 +19,7 @@ Logging in to B1.church gives you access to the member portal where you can see 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- You need a ChurchApps account. See [Getting Started](../getting-started/) to create one.
+- You need a ChurchApps account. See [Getting Started](./index.md) to create one.
 - You need your church's B1.church URL (for example, `https://yourchurchname.b1.church`).
 
 </div>
@@ -39,7 +41,7 @@ You stay signed in on the same browser or installed app until you log out, even 
 
 ## Accessing the Member Portal
 
-Once logged in, you can access the member portal by clicking on your **name** in the top-right corner of the page and selecting **Member Portal** from the menu. The member portal is where all of your personal church tools live, including your [Home dashboard](./navigating.md), [Me page](./me-page.md), [groups](../groups/), [giving](../giving/), and more.
+Once logged in, you can access the member portal by clicking on your **name** in the top-right corner of the page and selecting **Member Portal** from the menu. The member portal is where all of your personal church tools live, including your [Home dashboard](./navigating.md), [Me page](./me-page.md), [groups](../groups/index.md), [giving](../giving/index.md), and more.
 
 ## Your User Menu
 

@@ -1,5 +1,6 @@
 ---
 title: "Shared Libraries"
+description: "Docs for the @churchapps npm packages shared by B1 Admin, B1.church, and APIs, plus how to set up the Packages workspace and release with changesets."
 ---
 
 # Shared Libraries
@@ -14,9 +15,9 @@ ChurchApps shared code is published to npm under the `@churchapps/*` scope. All 
 
 | Package | Description | Used By |
 |---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | Foundation layer: framework-free helper functions and the shared TypeScript interfaces that form the cross-app data contract | All projects |
-| [`@churchapps/apihelper`](./api-helper) | Server-side Express utilities: auth, base controllers, database access, AWS and email integrations | All APIs |
-| [`@churchapps/apphelper`](./app-helper) | Shared React components and feature modules (login, donations, forms, markdown, website) | All web apps |
+| [`@churchapps/helpers`](./helpers.md) | Foundation layer: framework-free helper functions and the shared TypeScript interfaces that form the cross-app data contract | All projects |
+| [`@churchapps/apihelper`](./api-helper.md) | Server-side Express utilities: auth, base controllers, database access, AWS and email integrations | All APIs |
+| [`@churchapps/apphelper`](./app-helper.md) | Shared React components and feature modules (login, donations, forms, markdown, website) | All web apps |
 | `@churchapps/content-providers` | Abstraction over third-party content providers (Lessons.church, Planning Center, Dropbox, and others) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Toolkit for building B1.church integrations: webhook verification, typed REST client, OAuth helpers | External integration developers |
 | `@churchapps/texting` | SMS provider abstraction (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

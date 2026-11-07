@@ -1,5 +1,6 @@
 ---
 title: "Managing Sermons"
+description: "Manage your sermon library in B1 Admin: add sermons from YouTube, Vimeo, or Facebook, edit details, and get a podcast feed for your church."
 ---
 
 # Managing Sermons
@@ -14,7 +15,7 @@ The Sermons page displays your entire sermon library. From here you can add new 
 <h4>Before You Begin</h4>
 
 - You need the **contentApi.streamingServices.edit** permission. See [Roles & Permissions](../settings/roles-permissions.md) if you do not have access.
-- Create at least one [playlist](playlists) to organize your sermons into
+- Create at least one [playlist](./playlists.md) to organize your sermons into
 - Have your video IDs or URLs ready from YouTube, Vimeo, or Facebook
 
 </div>
@@ -35,7 +36,7 @@ The Sermons page displays your entire sermon library. From here you can add new 
 6. Make any changes you want and click **Save**.
 
 :::tip
-You can also add a permanent live stream URL by selecting **Add Permanent Live URL** from the **Add Sermon** dropdown. This creates a persistent connection to your YouTube channel's live stream using your Channel ID. See [Live Streaming](live-streaming) for more details.
+You can also add a permanent live stream URL by selecting **Add Permanent Live URL** from the **Add Sermon** dropdown. This creates a persistent connection to your YouTube channel's live stream using your Channel ID. See [Live Streaming](./live-streaming.md) for more details.
 :::
 
 ## Editing a Sermon
@@ -73,11 +74,11 @@ After adding a sermon, you can schedule it for broadcast on your live stream pag
 3. The sermon will play at the scheduled service time.
 
 :::info
-For importing multiple sermons at once instead of adding them one by one, use the [Bulk Import](bulk-import) tool to pull videos directly from your YouTube or Vimeo account.
+For importing multiple sermons at once instead of adding them one by one, use the [Bulk Import](./bulk-import.md) tool to pull videos directly from your YouTube or Vimeo account.
 :::
 
 ## Next Steps
 
-- [Playlists](playlists) -- Organize sermons into series
-- [Live Streaming](live-streaming) -- Configure your streaming schedule
-- [Bulk Import](bulk-import) -- Import multiple sermons at once
+- [Playlists](./playlists.md) -- Organize sermons into series
+- [Live Streaming](./live-streaming.md) -- Configure your streaming schedule
+- [Bulk Import](./bulk-import.md) -- Import multiple sermons at once

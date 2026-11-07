@@ -1,5 +1,6 @@
 ---
 title: "The Me Page"
+description: "Shows what the Me page in the B1App member portal puts on one screen: upcoming serving, events, and registrations, plus household, groups, giving, forms, attendance, and inbox."
 ---
 
 # The Me Page
@@ -31,7 +32,7 @@ If you are signed out, you'll see "Sign in to see your week" and a **Sign In** b
 The **Upcoming** section lists your next three items in date order, each tagged with a type badge. If you have more, tap **All upcoming** to see the full list, and **Back to Me** to return.
 
 - **Serving** -- Your volunteer positions on upcoming service plans, with the date and start time of the service you're serving in (the time your team is needed when the plan has several service times, or just the date if the plan has no times). Tap one to open the plan.
-- **Registration** -- Events you have [registered for](../events/registering). Tap through to your [registrations](../events/my-registrations).
+- **Registration** -- Events you have [registered for](../events/registering.md). Tap through to your [registrations](../events/my-registrations.md).
 - **Event** -- Upcoming events from groups you belong to. Tap one to open the group's events.
 
 If an event or registration has a photo, a small thumbnail of it appears at the start of the row.
@@ -66,7 +67,7 @@ The **Requests & registrations** section shows how many event registrations you 
 
 If your church has bookable rooms or resources, two more links appear:
 
-- **Request an Event** -- Ask to hold an event with the rooms and equipment you need. See [Requesting Events & Rooms](../events/requesting-events).
+- **Request an Event** -- Ask to hold an event with the rooms and equipment you need. See [Requesting Events & Rooms](../events/requesting-events.md).
 - **My Requests** -- Track the status of your requests and cancel pending ones.
 
 If your church hasn't set up rooms or resources, these links are hidden.
@@ -77,8 +78,8 @@ The **Inbox** section shows your two most recent notifications so you can catch 
 
 ## Related Articles
 
-- [Navigating B1App](./navigating) -- The member portal layout
-- [Requesting Events & Rooms](../events/requesting-events) -- Submit and track room/resource requests
-- [My Registrations](../events/my-registrations) -- Manage your event registrations
-- [Volunteer Signup](../serving/volunteer-signup) -- How serving assignments work
-- [Self Check-In](../checkin/self-checkin) -- How your attendance gets recorded
+- [Navigating B1App](./navigating.md) -- The member portal layout
+- [Requesting Events & Rooms](../events/requesting-events.md) -- Submit and track room/resource requests
+- [My Registrations](../events/my-registrations.md) -- Manage your event registrations
+- [Volunteer Signup](../serving/volunteer-signup.md) -- How serving assignments work
+- [Self Check-In](../checkin/self-checkin.md) -- How your attendance gets recorded
