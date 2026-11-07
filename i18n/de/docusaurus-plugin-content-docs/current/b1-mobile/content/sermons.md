@@ -6,40 +6,40 @@ title: "Predigten"
 
 <div class="article-intro">
 
-Der Predigten-Bildschirm ermoeglicht es Ihnen, aufgezeichnete Predigten Ihrer Gemeinde zu durchsuchen und anzuschauen. Hier koennen Sie verpasste Botschaften nachholen oder eine Predigt erneut anhoeren, die Sie besonders angesprochen hat.
+Der Bereich Predigten ermöglicht es dir, aufgezeichnete Predigten aus deiner Gemeinde anzusehen. Er ist die ideale Anlaufstelle, um verpasste Botschaften nachzuholen oder eine Predigt, die dich berührt hat, noch einmal anzuschauen.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich an](../getting-started/logging-in) bei Ihrem Konto
-- Ihre Gemeinde muss Predigtinhalte in ihrem Admin-Portal konfiguriert haben
+- [Installiere B1 Mobile](../getting-started/installing) und [melde dich](../getting-started/logging-in) bei deinem Konto an
+- Deine Gemeinde muss Predigtinhalte in ihrem Admin-Portal eingerichtet haben
 
 </div>
 
-## Was Sie sehen werden
+## Was du siehst
 
-Der Predigten-Bildschirm ist in einer Tab-Ansicht mit zwei Hauptbereichen organisiert:
+Der Bereich Predigten ist in eine Registerkartenansicht mit zwei Hauptbereichen gegliedert:
 
-- **Wiedergabelisten-Tab** -- Zeigt die Predigt-Wiedergabelisten (Serien) Ihrer Gemeinde, sortiert nach Datum. Jede Wiedergabeliste fasst zusammengehoerige Predigten zusammen, sodass Sie eine mehrteilige Serie einfach von Anfang bis Ende verfolgen koennen.
-- **Aktuell-Tab** -- Zeigt eine Liste einzelner Predigten in umgekehrter chronologischer Reihenfolge, sodass die neuesten Botschaften immer oben stehen.
+- **Registerkarte Playlists** -- Zeigt die Predigt-Playlists (Serien) deiner Gemeinde, sortiert nach Datum. Jede Playlist fasst zusammengehörige Predigten zusammen, sodass du eine mehrwöchige Serie leicht von Anfang bis Ende verfolgen kannst.
+- **Registerkarte Neueste** -- Zeigt eine Liste einzelner Predigten in umgekehrter chronologischer Reihenfolge, sodass die neuesten Botschaften immer oben stehen.
 
-Am oberen Bildschirmrand wird die neueste Predigt als hervorgehobene Karte angezeigt, die Ihnen schnellen Zugriff auf die aktuelle Botschaft bietet.
+Oben im Bereich wird die neueste Predigt als hervorgehobene Karte angezeigt, sodass du schnell auf die aktuellste Botschaft zugreifen kannst.
 
-## Livestream-Countdown
+## Countdown zum Live-Stream
 
-Wenn ein [Livestream](./live-streaming) innerhalb der naechsten 24 Stunden stattfindet, erscheint ein Countdown-Timer auf dem Predigten-Bildschirm. So erfahren Sie, wann der naechste Gottesdienst uebertragen wird, damit Sie die Live-Uebertragung einplanen koennen.
+Wenn in den nächsten 24 Stunden ein [Live-Stream](./live-streaming) beginnt, erscheint im Bereich Predigten ein Countdown-Timer. So weißt du, wann der nächste Gottesdienst übertragen wird, und kannst planen, live dabei zu sein.
 
 ## Eine Predigt ansehen
 
-1. Oeffnen Sie den **Predigten**-Bildschirm ueber das Seitenmenue.
-2. Durchsuchen Sie den **Wiedergabelisten**- oder **Aktuell**-Tab, um die gewuenschte Predigt zu finden.
-3. Tippen Sie auf eine Predigt, um sie zu oeffnen und abzuspielen.
+1. Öffne den Bereich **Predigten** über das Seitenmenü.
+2. Durchsuche die Registerkarte **Playlists** oder **Neueste**, um die gewünschte Predigt zu finden.
+3. Tippe auf eine Predigt, um sie zu öffnen und die Wiedergabe zu starten.
 
-Sie koennen auch auf eine Wiedergabeliste tippen, um alle Predigten dieser Serie anzuzeigen, und dann die gewuenschte Predigt auswaehlen.
+Du kannst auch auf eine Playlist tippen, um alle Predigten dieser Serie zu sehen, und dann die gewünschte Predigt auswählen.
 
-Predigten koennen Video- oder Audioinhalte enthalten, die auf Plattformen wie YouTube, Vimeo oder Facebook gehostet werden. Wenn Sie auf eine Predigt tippen, wird das Medium direkt in der App abgespielt.
+Predigten können Video- oder Audioinhalte enthalten, die auf Plattformen wie YouTube, Vimeo oder Facebook gehostet werden. Wenn du auf eine Predigt tippst, wird der Medieninhalt direkt in der App abgespielt.
 
 ## Was jede Predigt anzeigt
 
@@ -47,13 +47,13 @@ Jeder Predigteintrag kann Folgendes anzeigen:
 
 - **Titel** -- Der Name der Predigt
 - **Redner** -- Wer die Botschaft gehalten hat
-- **Datum** -- Wann die Predigt aufgenommen oder veroeffentlicht wurde
-- **Vorschaubild** -- Ein Vorschaubild fuer die Predigt
+- **Datum** -- Wann die Predigt aufgezeichnet oder veröffentlicht wurde
+- **Vorschaubild** -- Ein Vorschaubild für die Predigt
 
 :::tip
-Wenn Sie einen Countdown auf dem Predigten-Bildschirm sehen, tippen Sie darauf, um direkt zum [Livestream](./live-streaming) zu springen, sobald er beginnt.
+Wenn du einen Countdown im Bereich Predigten siehst, tippe darauf, um direkt zum [Live-Stream](./live-streaming) zu gelangen, sobald er beginnt.
 :::
 
-## Verfuegbarkeit
+## Verfügbarkeit
 
-Der Predigten-Bildschirm ist verfuegbar, wenn Ihre Gemeinde Predigtinhalte ueber ihr Admin-Portal hinzugefuegt hat. Wenn Sie **Predigten** nicht in Ihrer App sehen, hat Ihre Gemeinde diese Funktion moeglicherweise noch nicht konfiguriert.
+Der Bereich Predigten ist verfügbar, sobald deine Gemeinde über das Admin-Portal Predigtinhalte hinzugefügt hat. Wenn du **Predigten** in deiner App nicht siehst, ist diese Funktion in deiner Gemeinde möglicherweise noch nicht eingerichtet.

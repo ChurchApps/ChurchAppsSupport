@@ -6,45 +6,45 @@ title: "Direktesending"
 
 <div class="article-intro">
 
-B1 Mobile lar deg se kirkens direktesending rett fra telefonen. Nar en gudstjeneste sendes, kan du folge med fra hvor du enn er og se i sanntid.
+B1 Mobile lar deg se kirkens direktesending rett fra telefonen. Når en gudstjeneste sendes direkte, kan du se med fra hvor du er og følge med i sanntid.
 
 </div>
 
 <div class="prereqs">
-<h4>For Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) pa kontoen din
-- Kirken din ma ha en sendingsplan konfigurert
+- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- Kirken din må ha en konfigurert sendeplan for direktesending
 
 </div>
 
-## Se en Direktesending
+## Se en direktesending
 
-1. Apne **Stream**-skjermen fra sidemenyen, eller trykk pa nedtellingen pa [Prekener](./sermons)-skjermen nar en direktesending er i ferd med a begynne.
-2. Hvis en gudstjeneste sendes na, lastes videospilleren automatisk og sendingen begynner a spille.
+1. Åpne skjermbildet **Stream** fra sidemenyen, eller trykk på nedtellingen på skjermbildet [Prekener](./sermons) når en direktesending er i ferd med å starte.
+2. Hvis en gudstjeneste sendes akkurat nå, lastes videospilleren automatisk inn, og sendingen starter.
 3. Se sendingen direkte i appen.
 
-Nar ingen direktesending er aktiv, kan skjermen vise offline-innhold eller informasjon om neste planlagte gudstjeneste.
+Når ingen direktesending er aktiv, kan skjermbildet vise innhold for frakoblet modus eller informasjon om neste planlagte gudstjeneste.
 
-## Komme til Sendingen
+## Slik kommer du til direktesendingen
 
-Det er to mater a fa tilgang til direktesendingen pa:
+Det finnes to måter å få tilgang til direktesendingen på:
 
-- **Sidemeny** -- Apne sidemenyen og trykk pa **Stream** for a ga direkte til direktesendingsskjermen.
-- **Prekener-skjermen** -- Nar en direktesending er planlagt innen de neste 24 timene, vises en nedtelling pa [Prekener](./sermons)-skjermen. Nar sendingen begynner, kan du navigere til stroemmen derfra.
+- **Sidemenyen** -- Åpne sidemenyen og trykk på **Stream** for å gå rett til skjermbildet for direktesending.
+- **Skjermbildet Prekener** -- Når en direktesending er planlagt innen de neste 24 timene, vises en nedtelling på skjermbildet [Prekener](./sermons). Når sendingen starter, kan du gå videre til direktesendingen derfra.
 
-## For og Etter Gudstjenesten
+## Før og etter gudstjenesten
 
-Kirken din setter bestemte tider for nar stroemmen blir tilgjengelig. Du kan se en nedtelling eller offline-melding for gudstjenesten starter. Etter at sendingen er ferdig, gar stream-skjermen tilbake til sin offline-tilstand.
+Kirken din angir bestemte tidspunkter for når direktesendingen blir tilgjengelig. Du kan se en nedtelling eller en melding om frakoblet modus før gudstjenesten starter. Etter at sendingen er avsluttet, går skjermbildet for direktesending tilbake til frakoblet modus.
 
 :::info
-Hvis stream-skjermen viser en nedtelling eller offline-melding, har den neste planlagte gudstjenesten ikke startet enna. Sjekk tilbake pa det oppgitte gudstjenestetidspunktet.
+Hvis skjermbildet for direktesending viser en nedtelling eller en melding om frakoblet modus, har ikke den neste planlagte gudstjenesten startet ennå. Sjekk igjen på det oppgitte klokkeslettet for gudstjenesten.
 :::
 
 ## Tilgjengelighet
 
-Direktesendingsskjermen er tilgjengelig nar kirken din har konfigurert en sendingsplan. Hvis du ikke ser et **Stream**-alternativ i appens sidemeny, har kanskje ikke kirken din satt opp direktesending. Kontakt kirkens administrator for detaljer.
+Skjermbildet for direktesending er tilgjengelig når kirken din har konfigurert en sendeplan. Hvis du ikke ser alternativet **Stream** i sidemenyen i appen, har kirken din kanskje ikke satt opp direktesending. Kontakt kirkeadministratoren for mer informasjon.
 
 :::tip
-Sjekk [Prekener](./sermons)-skjermen for en nedtellingstimer som viser nar neste direktesending begynner.
+Sjekk skjermbildet [Prekener](./sermons) for en nedtelling som viser når neste direktesending starter.
 :::

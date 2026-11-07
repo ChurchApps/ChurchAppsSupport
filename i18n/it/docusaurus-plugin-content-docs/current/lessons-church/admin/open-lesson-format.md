@@ -1,27 +1,27 @@
 ---
-title: "Formato Lezione Aperta"
+title: "Formato Open Lesson"
 ---
 
-# Apri Lezione Format
+# Formato Open Lesson
 
 <div class="article-intro">
 
-The Apri Lezione Format is a standardized JSON schema that allows third-party content providers Per publish curriculum for Lessons.church. Any organization that hosts a feed in this format can be added as an external provider, making their content browsable and playable alongside the built-in library.
+Il formato Open Lesson è uno schema JSON standardizzato che consente ai fornitori di contenuti di terze parti di pubblicare curricula per Lessons.church. Qualsiasi organizzazione che ospiti un feed in questo formato può essere aggiunta come fornitore esterno, rendendo i propri contenuti consultabili e riproducibili insieme alla libreria integrata.
 
 </div>
 
-## How It Works
+## Come funziona
 
-A provider hosts two types of endpoints:
+Un fornitore ospita due tipi di endpoint:
 
-1. **Provider Tree** -- A single URL that returns the full catalog of programs, studies, lessons, and venues. Each venue includes a feed URL pointing Per the detailed lesson content.
-2. **Venue Feed** -- One URL per venue, returning the full lesson content (sections, actions, and media files).
+1. **Albero del fornitore** -- Un singolo URL che restituisce il catalogo completo di programmi, studi, lezioni e venue. Ogni venue include un URL di feed che punta al contenuto dettagliato della lezione.
+2. **Feed del venue** -- Un URL per ciascun venue, che restituisce il contenuto completo della lezione (sezioni, azioni e file multimediali).
 
-When a church adds your provider URL in Lessons.church, the platform fetches your tree Per discover Disponibile content, then fetches individual venue feeds on demand.
+Quando una chiesa aggiunge l'URL del tuo fornitore in Lessons.church, la piattaforma recupera l'albero per scoprire i contenuti disponibili, quindi recupera i singoli feed dei venue su richiesta.
 
-## Provider Tree
+## Albero del fornitore
 
-Your provider URL must return a JSON object with this structure:
+L'URL del tuo fornitore deve restituire un oggetto JSON con questa struttura:
 
 ```json
 {
@@ -71,40 +71,40 @@ Your provider URL must return a JSON object with this structure:
 }
 ```
 
-### Tree Fields
+### Campi dell'albero
 
-| Field | Digita | Description |
+| Campo | Tipo | Descrizione |
 |-------|------|-------------|
-| `programs[].id` | string | Unique program identifier |
-| `programs[].name` | string | Display name |
-| `programs[].slug` | string | URL-friendly name |
-| `programs[].image` | string | Program image URL (Facoltativo) |
-| `programs[].about` | string | Description (Facoltativo) |
-| `studies[].id` | string | Unique study identifier |
-| `studies[].name` | string | Display name |
-| `studies[].slug` | string | URL-friendly name |
-| `studies[].image` | string | Study image URL (Facoltativo) |
-| `lessons[].id` | string | Unique lesson identifier |
-| `lessons[].name` | string | Display name |
-| `lessons[].slug` | string | URL-friendly name |
-| `lessons[].title` | string | Full title |
-| `lessons[].image` | string | Lezione image URL (Facoltativo) |
-| `lessons[].description` | string | Lezione summary (Facoltativo). Catalog copy for teachers browsing the library — not parent take-home. |
-| `lessons[].bottomLine` | string | One-sentence parent take-home (Facoltativo) |
-| `lessons[].verse` | string | Memory verse reference and short text (Facoltativo) |
-| `lessons[].parentQuestion` | string | One question for parents Per ask at home (Facoltativo) |
-| `lessons[].parentNote` | string | Facoltativo extra note for parents (markdown) |
-| `venues[].id` | string | Unique venue identifier |
-| `venues[].name` | string | Venue name (e.g. "Kids", "Adults", "Youth") |
-| `venues[].apiUrl` | string | URL returning the venue feed (see below) |
+| `programs[].id` | stringa | Identificatore univoco del programma |
+| `programs[].name` | stringa | Nome visualizzato |
+| `programs[].slug` | stringa | Nome compatibile con gli URL |
+| `programs[].image` | stringa | URL dell'immagine del programma (facoltativo) |
+| `programs[].about` | stringa | Descrizione (facoltativo) |
+| `studies[].id` | stringa | Identificatore univoco dello studio |
+| `studies[].name` | stringa | Nome visualizzato |
+| `studies[].slug` | stringa | Nome compatibile con gli URL |
+| `studies[].image` | stringa | URL dell'immagine dello studio (facoltativo) |
+| `lessons[].id` | stringa | Identificatore univoco della lezione |
+| `lessons[].name` | stringa | Nome visualizzato |
+| `lessons[].slug` | stringa | Nome compatibile con gli URL |
+| `lessons[].title` | stringa | Titolo completo |
+| `lessons[].image` | stringa | URL dell'immagine della lezione (facoltativo) |
+| `lessons[].description` | stringa | Riepilogo della lezione (facoltativo). Testo di catalogo per gli insegnanti che sfogliano la libreria, non per la sintesi destinata ai genitori. |
+| `lessons[].bottomLine` | stringa | Messaggio chiave per i genitori, in una sola frase (facoltativo) |
+| `lessons[].verse` | stringa | Riferimento del versetto da memorizzare e breve testo (facoltativo) |
+| `lessons[].parentQuestion` | stringa | Una domanda che i genitori possono porre a casa (facoltativo) |
+| `lessons[].parentNote` | stringa | Nota aggiuntiva facoltativa per i genitori (markdown) |
+| `venues[].id` | stringa | Identificatore univoco del venue |
+| `venues[].name` | stringa | Nome del venue (ad es. "Kids", "Adults", "Youth") |
+| `venues[].apiUrl` | stringa | URL che restituisce il feed del venue (vedi sotto) |
 
-The four parent take-home fields (`bottomLine`, `verse`, `parentQuestion`, `parentNote`) are Facoltativo on both the tree and the venue feed. If omitted they are treated as empty. Do not copy `description` into them.
+I quattro campi di sintesi per i genitori (`bottomLine`, `verse`, `parentQuestion`, `parentNote`) sono facoltativi sia nell'albero sia nel feed del venue. Se omessi, vengono trattati come vuoti. Non copiare `description` in questi campi.
 
-**Venues** represent different versions of the same lesson tailored for different audiences (age Gruppi, Impostazioni, etc.).
+**I venue** rappresentano versioni diverse della stessa lezione, adattate a pubblici differenti (fasce d'età, contesti, ecc.).
 
-## Venue Feed
+## Feed del venue
 
-Each venue's `apiUrl` must return a JSON object matching this schema:
+L'`apiUrl` di ciascun venue deve restituire un oggetto JSON conforme a questo schema:
 
 ```json
 {
@@ -169,83 +169,83 @@ Each venue's `apiUrl` must return a JSON object matching this schema:
 }
 ```
 
-### Venue Feed Fields
+### Campi del feed del venue
 
-#### Root Object
+#### Oggetto radice
 
-| Field | Digita | Description |
+| Campo | Tipo | Descrizione |
 |-------|------|-------------|
-| `id` | string | Venue identifier |
-| `name` | string | Venue name |
-| `lessonId` | string | Lezione identifier |
-| `lessonName` | string | Lezione display name |
-| `lessonImage` | string | Lezione image URL |
-| `lessonDescription` | string | Lezione summary (catalog copy) |
-| `bottomLine` | string | One-sentence parent take-home (Facoltativo) |
-| `verse` | string | Memory verse reference and short text (Facoltativo) |
-| `parentQuestion` | string | One question for parents Per ask at home (Facoltativo) |
-| `parentNote` | string | Facoltativo extra note for parents, markdown (Facoltativo) |
-| `studyName` | string | Parent study name |
-| `studySlug` | string | Parent study slug |
-| `programName` | string | Parent program name |
-| `programSlug` | string | Parent program slug |
-| `programAbout` | string | Program description |
-| `downloads` | array | Downloadable file bundles |
-| `sections` | array | Ordered lesson sections |
+| `id` | stringa | Identificatore del venue |
+| `name` | stringa | Nome del venue |
+| `lessonId` | stringa | Identificatore della lezione |
+| `lessonName` | stringa | Nome visualizzato della lezione |
+| `lessonImage` | stringa | URL dell'immagine della lezione |
+| `lessonDescription` | stringa | Riepilogo della lezione (testo di catalogo) |
+| `bottomLine` | stringa | Messaggio chiave per i genitori, in una sola frase (facoltativo) |
+| `verse` | stringa | Riferimento del versetto da memorizzare e breve testo (facoltativo) |
+| `parentQuestion` | stringa | Una domanda che i genitori possono porre a casa (facoltativo) |
+| `parentNote` | stringa | Nota aggiuntiva facoltativa per i genitori, in markdown (facoltativo) |
+| `studyName` | stringa | Nome dello studio di appartenenza |
+| `studySlug` | stringa | Nome compatibile con gli URL dello studio di appartenenza |
+| `programName` | stringa | Nome del programma di appartenenza |
+| `programSlug` | stringa | Nome compatibile con gli URL del programma di appartenenza |
+| `programAbout` | stringa | Descrizione del programma |
+| `downloads` | array | Pacchetti di file scaricabili |
+| `sections` | array | Sezioni della lezione, in ordine |
 
-#### Section
+#### Sezione
 
-| Field | Digita | Description |
+| Campo | Tipo | Descrizione |
 |-------|------|-------------|
-| `id` | string | Section identifier |
-| `name` | string | Section title |
-| `sort` | number | Display order |
-| `materials` | string | Materials or preparation notes (Facoltativo) |
-| `actions` | array | Ordered actions within this section |
+| `id` | stringa | Identificatore della sezione |
+| `name` | stringa | Titolo della sezione |
+| `sort` | numero | Ordine di visualizzazione |
+| `materials` | stringa | Materiali o note di preparazione (facoltativo) |
+| `actions` | array | Azioni della sezione, in ordine |
 
-#### Action
+#### Azione
 
-| Field | Digita | Description |
+| Campo | Tipo | Descrizione |
 |-------|------|-------------|
-| `id` | string | Action identifier |
-| `actionType` | string | One of: `play`, `text`, `question`, `quote`, `subhead` |
-| `content` | string | Text content or media label |
-| `sort` | number | Display order |
-| `Ruolo` | string | Ruolo name, e.g. "Leader", "Kids" (Facoltativo) |
-| `roleId` | string | Ruolo identifier (Facoltativo) |
-| `files` | array | Media files for `play` actions (Facoltativo) |
+| `id` | stringa | Identificatore dell'azione |
+| `actionType` | stringa | Uno tra: `play`, `text`, `question`, `quote`, `subhead` |
+| `content` | stringa | Contenuto testuale o etichetta del file multimediale |
+| `sort` | numero | Ordine di visualizzazione |
+| `role` | stringa | Nome del ruolo, ad es. "Leader", "Kids" (facoltativo) |
+| `roleId` | stringa | Identificatore del ruolo (facoltativo) |
+| `files` | array | File multimediali per le azioni `play` (facoltativo) |
 
 #### File
 
-| Field | Digita | Description |
+| Campo | Tipo | Descrizione |
 |-------|------|-------------|
-| `id` | string | File identifier |
-| `name` | string | File name |
-| `url` | string | Direct Scarica URL |
-| `streamUrl` | string | Streaming URL, e.g. Vimeo link (Facoltativo) |
-| `fileType` | string | MIME Digita (e.g. `video/mp4`, `image/jpeg`) |
-| `seconds` | number | Duration in seconds for audio/video (Facoltativo) |
-| `bytes` | number | File size in bytes (Facoltativo) |
-| `thumbnail` | string | Thumbnail image URL (Facoltativo) |
-| `loop` | boolean | Whether media should loop (Facoltativo, default false) |
+| `id` | stringa | Identificatore del file |
+| `name` | stringa | Nome del file |
+| `url` | stringa | URL di download diretto |
+| `streamUrl` | stringa | URL di streaming, ad es. un link Vimeo (facoltativo) |
+| `fileType` | stringa | Tipo MIME (ad es. `video/mp4`, `image/jpeg`) |
+| `seconds` | numero | Durata in secondi per audio e video (facoltativo) |
+| `bytes` | numero | Dimensione del file in byte (facoltativo) |
+| `thumbnail` | stringa | URL dell'immagine di anteprima (facoltativo) |
+| `loop` | booleano | Indica se il file multimediale deve essere riprodotto in loop (facoltativo, predefinito false) |
 
-#### Scarica
+#### Download
 
-| Field | Digita | Description |
+| Campo | Tipo | Descrizione |
 |-------|------|-------------|
-| `name` | string | Scarica bundle name (e.g. "Printable Materials") |
-| `files` | array | Files in this Scarica bundle (same fields as File above) |
+| `name` | stringa | Nome del pacchetto di download (ad es. "Printable Materials") |
+| `files` | array | File contenuti in questo pacchetto (stessi campi di File sopra) |
 
-## Action Types
+## Tipi di azione
 
-| Digita | Purpose |
-|------|---------|
-| `play` | Media playback -- video, audio, or slideshow. Must include `files`. |
-| `text` | Static text content. Supports markdown-style bold (`**text**`). |
-| `question` | Discussion or reflection question for the audience. |
-| `quote` | A highlighted quote or Scripture passage. |
-| `subhead` | A heading or divider within a section. |
+| Tipo | Scopo |
+|------|-------|
+| `play` | Riproduzione multimediale -- video, audio o presentazione. Deve includere `files`. |
+| `text` | Contenuto testuale statico. Supporta il grassetto in stile markdown (`**testo**`). |
+| `question` | Domanda di discussione o riflessione per il pubblico. |
+| `quote` | Una citazione evidenziata o un passo della Scrittura. |
+| `subhead` | Un titolo o un separatore all'interno di una sezione. |
 
 :::tip
-Per see a working example of the feed in action, you can Visualizza the built-in Lessons.church content tree at `https://api.lessons.church/lessons/public/tree` and fetch any venue feed URL from it.
+Per vedere un esempio funzionante del feed in azione, puoi consultare l'albero dei contenuti integrato di Lessons.church all'indirizzo `https://api.lessons.church/lessons/public/tree` e recuperare da lì un qualsiasi URL di feed di venue.
 :::

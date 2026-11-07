@@ -1,51 +1,51 @@
 ---
-title: "Fazendo uma Doacao"
+title: "Fazendo uma Doação"
 ---
 
-# Fazendo uma Doacao
+# Fazendo uma Doação
 
 <div class="article-intro">
 
-Doar pelo B1 Mobile e rapido e simples. A aba **Doar** na secao de ofertas guia voce pelo processo em poucos passos, para que voce possa apoiar sua igreja de onde estiver.
+Contribuir pelo B1 Mobile é rápido e simples. A aba **Donate** na seção de ofertas guia você pelo processo em apenas alguns passos, para que você possa apoiar sua igreja de onde estiver.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comecar</h4>
+<h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faca login](../getting-started/logging-in) na sua conta
-- Tenha um cartao de credito ou debito pronto, ou [salve um metodo de pagamento](./managing-payments) com antecedencia
+- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
+- Tenha um cartão de crédito ou débito em mãos, ou [salve um método de pagamento](./managing-payments) com antecedência
 
 </div>
 
-## Como Doar
+## Como Contribuir
 
-1. Abra a secao **Ofertas** no B1 Mobile.
-2. Toque na aba **Doar**.
-3. Selecione o **fundo** para o qual deseja doar. Sua igreja pode ter varios fundos disponiveis, como Fundo Geral, Fundo de Missoes ou Fundo de Construcao.
-4. Insira o **valor** que deseja doar.
-5. Forneca seus **detalhes de pagamento**. Se voce tem um metodo de pagamento salvo, pode seleciona-lo aqui. Caso contrario, insira as informacoes do seu cartao.
-6. Envie sua doacao.
+1. Abra a seção **Giving** no B1 Mobile.
+2. Toque na aba **Donate**.
+3. Selecione o **fundo** para o qual você deseja contribuir. Sua igreja pode ter vários fundos disponíveis, como um Fundo Geral, Fundo de Missões ou Fundo de Construção.
+4. Informe o **valor** que você deseja doar.
+5. Forneça os seus **dados de pagamento**. Se você tiver um método de pagamento salvo, poderá selecioná-lo aqui. Caso contrário, insira os dados do seu cartão.
+6. Envie a sua doação.
 
-Apos a doacao ser processada, voce vera uma confirmacao de que sua oferta foi bem-sucedida. A doacao tambem aparecera na sua aba **Historico**.
+Depois que a sua doação for processada, você verá uma confirmação de que sua contribuição foi concluída com sucesso. A doação também aparecerá na aba **History**.
 
 ## Pagamentos Seguros
 
-Todos os pagamentos sao processados pelo **Stripe**, uma plataforma de pagamento confiavel e amplamente utilizada. Os dados do seu cartao sao tratados com seguranca pelo Stripe e nunca sao armazenados nos servidores do ChurchApps. Voce pode doar com confianca de que suas informacoes financeiras estao protegidas.
+Todos os pagamentos são processados pelo **Stripe**, uma plataforma de pagamentos confiável e amplamente utilizada. Os dados do seu cartão são tratados com segurança pelo Stripe e nunca são armazenados nos servidores da ChurchApps. Você pode contribuir com confiança, sabendo que suas informações financeiras estão protegidas.
 
 :::warning
-Verifique o valor da doacao e o fundo antes de enviar. As doacoes sao processadas imediatamente e nao podem ser revertidas de dentro do aplicativo.
+Confira o valor e o fundo da doação antes de enviar. As doações são processadas imediatamente e não podem ser revertidas pelo aplicativo.
 :::
 
-## Doacao Rapida Repetida
+## Contribuição Rápida Repetida
 
-Se voce quer doar o mesmo valor da ultima doacao, nao precisa passar por todo o processo. A aba **Visao Geral** mostra sua oferta mais recente junto com um botao **Repetir**. Toque nele para enviar rapidamente a mesma doacao novamente.
+Se você quiser doar o mesmo valor da sua última doação, não precisa passar por todo o fluxo de doação. A aba **Overview** mostra sua contribuição mais recente junto com um botão **Repeat**. Toque nele para enviar rapidamente a mesma doação novamente.
 
 :::tip
-Se voce planeja doar regularmente, salve seu metodo de pagamento na aba **Gerenciar** para doar ainda mais rapido na proxima vez. Consulte [Gerenciando Metodos de Pagamento](./managing-payments) para detalhes.
+Se você planeja contribuir regularmente, salve seu método de pagamento na aba **Manage** para poder doar ainda mais rápido na próxima vez. Consulte [Gerenciando Métodos de Pagamento](./managing-payments) para mais detalhes.
 :::
 
 ## Artigos Relacionados
 
-- [Gerenciando Metodos de Pagamento](./managing-payments) -- Salve um cartao para doacoes futuras mais rapidas
-- [Historico de Doacoes](./donation-history) -- Veja o resumo de ofertas e doacoes anteriores
+- [Gerenciando Métodos de Pagamento](./managing-payments) -- Salve um cartão para contribuições futuras mais rápidas
+- [Histórico de Doações](./donation-history) -- Veja o resumo das suas contribuições e doações anteriores

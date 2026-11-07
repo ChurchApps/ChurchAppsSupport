@@ -6,42 +6,55 @@ title: "Profil"
 
 <div class="article-intro">
 
-Profilen din i B1 Mobile er der du administrerer personlig informasjon, familien din og personverninnstillingene dine. Alt du oppdaterer her, gjenspeiles pa tvers av alle ChurchApps-tjenester, slik at du bare trenger a gjore endringer ett sted.
+Profilen din i B1 Mobile er der du administrerer personlige opplysninger, husstanden din og personverninnstillingene dine. Alt du oppdaterer her gjenspeiles i alle ChurchApps-tjenester, så du trenger bare å gjøre endringer ett sted.
 
 </div>
 
 ## Profilfaner
 
-Profilskjermen er organisert i flere faner:
+Profilskjermen er delt inn i flere faner:
 
 ### Profil
 
-**Profil**-fanen lar deg se og redigere personlig informasjon, inkludert navn, kontaktdetaljer og profilbilde. A holde profilen oppdatert hjelper kirken med a holde kontakten med deg.
+Fanen **Profil** lar deg se og redigere personlige opplysninger, inkludert navn, kontaktopplysninger og profilbilde. Ved å holde profilen oppdatert gjør du det lettere for menigheten å holde kontakt med deg.
 
-### Familie
+### Husstand
 
-**Familie**-fanen viser familiemedlemmene dine og rollene deres i husstanden. Denne informasjonen brukes til funksjoner som [innsjekking](../checkin/), der du kan sjekke inn hele familien pa en gang.
+Fanen **Husstand** viser familiemedlemmene dine og deres roller i husstanden. Denne informasjonen brukes til funksjoner som [innsjekking](../checkin/), der du kan sjekke inn hele familien samtidig.
 
 ### Synlighet
 
-**Synlighet**-fanen lar deg kontrollere hva andre menighetsmedlemmer kan se om deg i [katalogen](../community/member-directory.md). Du bestemmer hvilke personlige detaljer som deles og hvilke som forblir private.
+Fanen **Synlighet** lar deg styre hva andre medlemmer av menigheten kan se om deg i [katalogen](../community/member-directory.md). Du bestemmer hvilke personlige opplysninger som deles, og hvilke som forblir private.
 
-### Ventende
+### Venter
 
-**Ventende**-fanen viser profilendringer du har sendt inn som venter pa godkjenning fra administrator.
+Fanen **Venter** viser eventuelle profilendringer du har sendt inn som venter på godkjenning fra en administrator.
 
 ### Konto
 
-**Konto**-fanen gir tilgang til sikkerhetsinnstillingene dine.
+Fanen **Konto** gir deg tilgang til sikkerhetsinnstillingene dine.
 
-## Komme til Profilen
+## Mine kort og mine oppgaver
 
-1. Apne sidemenyen.
-2. Trykk pa **Profil** for a apne profilskjermen.
-3. Bruk fanene overst for a navigere mellom seksjonene.
+Hvis menigheten din tildeler deg [arbeidsflytkort](../../b1-admin/serving/workflows.md) eller [oppgaver](../../b1-admin/serving/tasks.md), viser **Meg**-skjermen en seksjon for **Mine kort** og en seksjon for **Mine oppgaver**, og **Hjem** viser en kort liste over **Dine oppfølginger**. Disse seksjonene vises bare når noe er tildelt deg, og lukkede oppgaver vises aldri. Trykk på **Alle kort**, **Alle oppgaver** eller **Alle** for å se alt som er tildelt deg.
 
-## Neste Steg
+Trykk på et kort for å åpne det. Du kan:
 
-- [Redigere Profilen](./editing-profile) -- Oppdater navn, kontaktdetaljer og bilde
-- [Familie](./household) -- Se og administrer familiemedlemmene dine
+- Se steget, forfallsdatoen og personen kortet gjelder. Navnet på personen åpner vedkommendes katalogprofil når katalogen viser personen for deg.
+- Trykke på **Fullfør** (eller knappen for stegets resultat) når steget er gjennomført.
+- **Utsette** kortet i 1, 3 eller 7 dager.
+- Lese og legge til **Notater**. Dette er de samme notatene som ansatte ser på kortet i B1 Admin.
+
+Trykk på en vanlig oppgave for å se hvem den er fra, hvem den gjelder, og notatene til den. Lukking av en vanlig oppgave gjøres fortsatt i B1 Admin.
+
+## Slik kommer du til profilen din
+
+1. Åpne sidemenyen.
+2. Trykk på **Profil** for å åpne profilskjermen.
+3. Bruk fanene øverst for å navigere mellom seksjonene.
+
+## Neste steg
+
+- [Redigere profilen din](./editing-profile) -- Oppdater navnet, kontaktopplysningene og bildet ditt
+- [Husstand](./household) -- Se og administrer familiemedlemmene dine
 - [Personverninnstillinger](./privacy-settings) -- Kontroller hva andre kan se om deg

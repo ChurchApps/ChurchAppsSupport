@@ -6,45 +6,45 @@ title: "Gruppedetaljer"
 
 <div class="article-intro">
 
-Nar du trykker pa en gruppe fra Grupper-skjermen, blir du tatt til den gruppens detaljside. Det er her du kan se alt om gruppen og samhandle med innholdet, inkludert innlegg, medlemslister og gruppeinformasjon.
+Når du trykker på en gruppe på Grupper-skjermen, kommer du til gruppens detaljside. Her kan du se alt om gruppen og samhandle med innholdet, inkludert innlegg, medlemslister og gruppeinformasjon.
 
 </div>
 
 <div class="prereqs">
-<h4>For Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) pa kontoen din
-- Apne [Grupper](./index.md)-skjermen
+- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- Åpne [Grupper](./index.md)-skjermen
 
 </div>
 
-## Hva Du Vil Se
+## Hva du vil se
 
-Gruppens detaljside gir deg en fullstendig profil av gruppen:
+Siden med gruppedetaljer gir deg en fullstendig oversikt over gruppen:
 
-- **Gruppeinformasjon** -- Gruppens navn, beskrivelse, motedetaljer og annen informasjon gruppelederne har oppgitt.
-- **Innlegg og tidslinje** -- En stroem av innlegg og aktivitet spesifikt for denne gruppen. Du kan se hva ledere og medlemmer har delt, inkludert oppdateringer, kunngjoeringer og samtaler.
-- **Medlemmer** -- Se hvem som tilhorer gruppen. Dette hjelper deg a se hvem du knytter kontakt med og gjenkjenne kjente ansikter.
+- **Gruppeinformasjon** -- Gruppens navn, beskrivelse, møteinformasjon og annen informasjon som gruppelederne har lagt inn.
+- **Innlegg og tidslinje** -- En strøm med innlegg og aktivitet som gjelder denne gruppen. Du kan se det gruppeledere og medlemmer har delt, inkludert oppdateringer, kunngjøringer og samtaler.
+- **Medlemmer** -- Se hvem som er med i gruppen. Dette hjelper deg å se hvem du kobler deg sammen med, og å gjenkjenne kjente ansikter.
 
-## Samhandle med Gruppeinnhold
+## Slik samhandler du med gruppeinnhold
 
-Fra gruppens detaljside kan du engasjere deg med gruppen pa flere mater:
+Fra siden med gruppedetaljer kan du engasjere deg i gruppen på flere måter:
 
-- **Les innlegg** -- Bla gjennom gruppens tidslinje for a folge med pa den siste aktiviteten.
-- **Se medlemsprofiler** -- Trykk pa et medlem for a se profilinformasjonen i [medlemskatalogen](../community/member-directory.md).
-- **Hold deg informert** -- Sjekk regelmessig for a se nye innlegg, kunngjoeringer og oppdateringer fra gruppelederne og medmlemmer.
+- **Les innlegg** -- Bla gjennom gruppens tidslinje for å se det siste som har skjedd.
+- **Se medlemsprofiler** -- Trykk på et medlem for å se profilinformasjonen i [medlemskatalogen](../community/member-directory.md).
+- **Hold deg oppdatert** -- Sjekk innom jevnlig for å se nye innlegg, kunngjøringer og oppdateringer fra gruppelederne og de andre medlemmene.
 
-## Komme Dit
+## Slik kommer du dit
 
-1. Apne **Grupper**-skjermen i B1 Mobile.
-2. Trykk pa en gruppe -- hero-gruppen din, et fremhevet kort eller en gruppe i listen.
-3. Gruppens detaljside apnes med alt innhold og informasjon.
+1. Åpne **Grupper**-skjermen i B1 Mobile.
+2. Trykk på en hvilken som helst gruppe -- hovedgruppen din, et utvalgt kort eller en gruppe i listen.
+3. Gruppedetaljesiden åpnes med alt innhold og all informasjon om gruppen.
 
 :::tip
-Den mest besokrte gruppen din vises som hero-kortet overst pa Grupper-skjermen, sa a komme til favorittgruppen din er alltid bare ett trykk unna.
+Gruppen du besøker oftest, vises som hovedkort øverst på Grupper-skjermen, så du kommer alltid til favorittgruppen din med ett trykk.
 :::
 
-## Relaterte Artikler
+## Relaterte artikler
 
-- [Gruppetidslinje](./group-timeline) -- Laer om den samlede aktivitetsstroemmen pa tvers av alle gruppene dine
-- [Meldingstjeneste](../community/messaging.md) -- Send private meldinger til gruppemedlemmer
+- [Gruppetidslinje](./group-timeline) -- Lær om den samlede aktivitetsstrømmen på tvers av alle gruppene dine
+- [Meldinger](../community/messaging.md) -- Send private meldinger til gruppemedlemmer

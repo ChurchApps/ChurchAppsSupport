@@ -1,59 +1,59 @@
 ---
-title: "Panoramica Portale"
+title: "Panoramica del portale"
 ---
 
-# Portal Panoramica
+# Panoramica del portale
 
 <div class="article-intro">
 
-After logging in Per Lessons.church, you are taken Per the **Portal** -- your church's dashboard for managing classrooms and lesson schedules. This is where you will spend most of your Ora when organizing curriculum for your church.
+Dopo aver effettuato l'accesso a Lessons.church, si viene indirizzati al **Portale**, la dashboard della tua chiesa per la gestione delle aule e del calendario delle lezioni. È qui che trascorrerai la maggior parte del tempo quando organizzi il programma didattico per la tua chiesa.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- [Create an account](./creating-account.md) and connect Per your church
-- Log in Per [Lessons.church](https://lessons.church)
+- [Crea un account](./creating-account.md) e collegalo alla tua chiesa
+- Accedi a [Lessons.church](https://lessons.church)
 
 </div>
 
-## What You See
+## Cosa vedi
 
-The portal is organized into two main areas:
+Il portale è organizzato in due aree principali:
 
-- **Classrooms** (lato destro) -- A list of your church's classrooms. Fai clic a classroom name Per Visualizza its scheduled lessons. You can also Aggiungi new classrooms or Modifica existing ones from here.
-- **Scheduled Lessons** (lato sinistro) -- Once you Seleziona a classroom, this area displays the lessons that have been scheduled for it. If you have not set up any classrooms yet, you will see a Configurazione instructions video Per help you get started.
+- **Aule** (lato destro): un elenco delle aule della tua chiesa. Fai clic sul nome di un'aula per visualizzare le lezioni programmate. Da qui puoi anche aggiungere nuove aule o modificare quelle esistenti.
+- **Lezioni programmate** (lato sinistro): una volta selezionata un'aula, questa area mostra le lezioni programmate per essa. Se non hai ancora configurato alcuna aula, vedrai un video con le istruzioni di configurazione che ti aiuterà a iniziare.
 
-## What You Can Do from the Portal
+## Cosa puoi fare dal portale
 
-From the portal, you can:
+Dal portale puoi:
 
-1. **Manage classrooms** -- Aggiungi, Modifica, or Rimuovi classrooms. Each classroom can be linked Per a Volontario team (so they see upcoming lessons in the B1 app) and a parent/student Gruppo (so they can access recent lessons). Churches still on this classroom schedule path: parents Apri the classroom page (without `?upcoming=1`) Per see take-home content. Churches using B1Admin plan types see the take-home card on the associated Gruppo's page in B1 instead.
-2. **Visualizza and manage scheduled lessons** -- See which lessons are coming up for each classroom and make changes as needed.
-3. **Subscribe Per classroom feeds** -- Fai clic the feed icon Avanti Per a classroom Per get a playlist feed URL you can use with compatible apps.
-4. **Access External Providers** -- Use the **External Providers** page Per configure third-party content sources that support the Apri Lezione Format. This lets you bring in lessons from other providers beyond the built-in Lessons.church library.
-5. **Access the Admin area** -- If you have admin Permessi, you will see an **Admin** option in the navigation. The admin area lets you manage programs, studies, and lessons at a content level.
+1. **Gestire le aule**: aggiungere, modificare o rimuovere aule. Ogni aula può essere collegata a un team di volontari (così possono vedere le prossime lezioni nell'app B1) e a un gruppo di genitori o studenti (così possono accedere alle lezioni recenti). Le chiese che utilizzano ancora questo percorso di pianificazione delle aule possono far sì che i genitori aprano la pagina dell'aula (senza `?upcoming=1`) per vedere i contenuti da portare a casa. Le chiese che utilizzano i tipi di piano B1Admin vedono invece la scheda dei contenuti da portare a casa nella pagina del gruppo associato in B1.
+2. **Visualizzare e gestire le lezioni programmate**: vedere quali lezioni sono in arrivo per ogni aula e apportare le modifiche necessarie.
+3. **Iscriversi ai feed delle aule**: fai clic sull'icona del feed accanto a un'aula per ottenere un URL di feed della playlist da utilizzare con app compatibili.
+4. **Accedere ai fornitori esterni**: usa la pagina **Fornitori esterni** per configurare fonti di contenuto di terze parti che supportano il formato Open Lesson. Questo ti permette di importare lezioni da altri fornitori, oltre alla libreria integrata di Lessons.church.
+5. **Accedere all'area di amministrazione**: se hai i permessi di amministratore, vedrai l'opzione **Admin** nella navigazione. L'area di amministrazione ti consente di gestire programmi, studi e lezioni a livello di contenuto.
 
-## Navigation
+## Navigazione
 
-The portal navigation includes:
+La navigazione del portale include:
 
-- **Home** -- Return Per the public Lessons.church home page Per browse content.
-- **Schedules** -- The main portal Visualizza for managing classrooms and lesson schedules.
-- **External Providers** -- Configure third-party lesson providers.
-- **Admin** -- Manage programs, studies, and lesson content (visible only if you have admin Permessi).
+- **Home**: torna alla pagina iniziale pubblica di Lessons.church per sfogliare i contenuti.
+- **Calendari**: la vista principale del portale per la gestione delle aule e del calendario delle lezioni.
+- **Fornitori esterni**: configura fornitori di lezioni di terze parti.
+- **Admin**: gestisci programmi, studi e contenuti delle lezioni (visibile solo se hai i permessi di amministratore).
 
 :::info
-The **Admin** option only appears if your Account has been granted content editing Permessi. Most church Staff will use the **Schedules** and **External Providers** pages for Giorno-Per-Giorno management.
+L'opzione **Admin** appare solo se al tuo account sono stati concessi i permessi di modifica dei contenuti. La maggior parte del personale della chiesa utilizzerà le pagine **Calendari** e **Fornitori esterni** per la gestione quotidiana.
 :::
 
-## Guida Introduttiva
+## Come iniziare
 
-If you are visiting the portal for the first Ora and have not created any classrooms yet, start by clicking **Aggiungi First Classroom** in the classrooms panel. Give your classroom a name (for example, "Preschool" or "3rd-5th Grade") and Salva it. From there, you can begin [scheduling lessons](../classrooms/scheduling-lessons.md).
+Se è la prima volta che visiti il portale e non hai ancora creato alcuna aula, inizia facendo clic su **Aggiungi la prima aula** nel pannello delle aule. Assegna un nome alla tua aula (ad esempio "Scuola materna" o "3ª-5ª elementare") e salvala. Da qui potrai iniziare a [programmare le lezioni](../classrooms/scheduling-lessons.md).
 
-## Articoli Correlati
+## Articoli correlati
 
-- [Setting Up Classrooms](../classrooms/setting-up-classrooms.md) -- Detailed guide for creating and managing classrooms
-- [Browsing Content](../browsing/index.md) -- Trova programs and studies Per schedule
-- [External Providers](../browsing/external-providers.md) -- Aggiungi third-party curriculum sources
+- [Configurare le aule](../classrooms/setting-up-classrooms.md): guida dettagliata per creare e gestire le aule
+- [Sfogliare i contenuti](../browsing/index.md): trova programmi e studi da programmare
+- [Fornitori esterni](../browsing/external-providers.md): aggiungi fonti di programmi di terze parti

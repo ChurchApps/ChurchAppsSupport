@@ -1,58 +1,58 @@
 ---
-title: "Redigere Profilen"
+title: "Redigere profilen din"
 ---
 
-# Redigere Profilen
+# Redigere profilen din
 
 <div class="article-intro">
 
-**Profil**-fanen lar deg oppdatere personlig informasjon slik at kirken alltid har riktige opplysninger. Endringer du gjor her, gjenspeiles pa tvers av alle ChurchApps-tjenester, inkludert B1.church og andre apper kirken bruker.
+Fanen **Profil** lar deg oppdatere dine personlige opplysninger, slik at menigheten alltid har riktige detaljer registrert. Endringene du gjør her vises i alle ChurchApps-tjenester, inkludert B1.church og andre apper menigheten din bruker.
 
 </div>
 
 <div class="prereqs">
-<h4>For Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) pa kontoen din
+- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
 
 </div>
 
-## Hva Du Kan Redigere
+## Hva du kan redigere
 
-Profilen din inkluderer folgende personlige opplysninger:
+Profilen din inneholder følgende personlige opplysninger:
 
-- **Fornavn og etternavn** -- Visningsnavnet ditt pa tvers av ChurchApps
-- **E-postadresse** -- Brukes til kirkekommunikasjon og kontogjenoppretting
-- **Telefonnummer** -- Slik at kirken kan na deg ved behov
-- **Adresse** -- Hjemmeadressen din for kirkens registre
-- **Profilbilde** -- Bildet som representerer deg i [katalogen](../community/member-directory.md) og gjennom hele appen
+- **Fornavn og etternavn** -- Visningsnavnet ditt på tvers av ChurchApps
+- **E-postadresse** -- Brukes til kommunikasjon fra menigheten og kontogjenoppretting
+- **Telefonnummer** -- Slik at menigheten kan nå deg når det er nødvendig
+- **Adresse** -- Hjemmeadressen din i menighetens registre
+- **Profilbilde** -- Bildet som representerer deg i [katalogen](../community/member-directory.md) og i hele appen
 
-## Oppdatere Informasjonen
+## Oppdatere opplysningene dine
 
-1. Apne sidemenyen og trykk pa **Profil**.
-2. Velg **Profil**-fanen hvis den ikke allerede er aktiv.
-3. Trykk pa feltet du vil oppdatere og gjor endringene.
-4. Lagre endringene nar du er ferdig.
+1. Åpne sidemenyen og trykk på **Profil**.
+2. Velg fanen **Profil** hvis den ikke allerede er aktiv.
+3. Trykk på feltet du vil oppdatere, og gjør endringene dine.
+4. Lagre endringene når du er ferdig.
 
-Den oppdaterte informasjonen synkroniseres automatisk. Alle som ser profilen din (i henhold til [personverninnstillingene](./privacy-settings) dine) vil se de nye detaljene med en gang.
+Oppdaterte opplysninger synkroniseres automatisk. Alle som ser profilen din (avhengig av dine [personverninnstillinger](./privacy-settings)) vil se de nye opplysningene med en gang.
 
 :::tip
-Hold e-postadressen og telefonnummeret ditt oppdatert. Kirken bruker denne informasjonen til a sende deg viktige oppdateringer og paminnelser.
+Hold e-postadressen og telefonnummeret ditt oppdatert. Menigheten bruker disse opplysningene til å sende deg viktige oppdateringer og påminnelser.
 :::
 
 ## Profilbilde
 
-Du kan legge til eller endre profilbildet fra **Profil**-fanen. Bildet vises i [medlemskatalogen](../community/member-directory.md), gruppemedlemslister og overalt ellers der profilen din vises.
+Du kan legge til eller endre profilbildet ditt fra fanen **Profil**. Bildet ditt vises i [medlemskatalogen](../community/member-directory.md), i gruppemedlemslister og overalt ellers der profilen din vises.
 
-## Endringer Pa Tvers av ChurchApps
+## Endringer på tvers av ChurchApps
 
-Fordi alle ChurchApps-tjenester deler samme kontosystem, er en endring du gjor i B1 Mobile umiddelbart synlig pa [B1.church](../../b1-church/), kirkens administrasjonsverktoy og andre tilkoblede tjenester. Du trenger ikke a oppdatere informasjonen separat hvert sted.
+Fordi alle ChurchApps-tjenester bruker samme kontosystem, vises en endring du gjør i B1 Mobile umiddelbart i [B1.church](../../b1-church/), menighetens administrasjonsverktøy og alle andre tilkoblede tjenester. Du trenger ikke oppdatere opplysningene dine separat på hvert sted.
 
 :::info
-Noen kirker krever administratorgodkjenning for visse profilendringer. Hvis oppdateringen ikke vises umiddelbart, sjekk **Ventende**-fanen pa profilskjermen for status.
+Noen menigheter krever godkjenning fra administrator for visse endringer i profilen. Hvis oppdateringen din ikke vises med en gang, sjekk fanen **Venter** på profilskjermen for status.
 :::
 
-## Relaterte Artikler
+## Relaterte artikler
 
-- [Familie](./household) -- Se og administrer familiemedlemmene dine
+- [Husstand](./household) -- Se og administrer familiemedlemmene dine
 - [Personverninnstillinger](./privacy-settings) -- Kontroller hva andre kan se om deg

@@ -1,33 +1,33 @@
 ---
-title: "Check-in"
+title: "Check-In"
 ---
 
-# Check-in
+# Check-In
 
 <div class="article-intro">
 
-Mit B1 Mobile koennen Sie sich selbst und Ihre Haushaltsmitglieder direkt von Ihrem Telefon aus fuer Gottesdienste anmelden. Ueberspringen Sie die Warteschlange am Kiosk und erfassen Sie Ihre Anwesenheit, noch bevor Sie durch die Tuer gehen.
+Mit B1 Mobile können Sie sich und Ihre Haushaltsmitglieder direkt von Ihrem Telefon aus für Gottesdienste einchecken. Überspringen Sie die Schlange am Terminal und erfassen Sie Ihre Anwesenheit, noch bevor Sie die Türen durchschreiten.
 
 </div>
 
-## So funktioniert es
+## Wie es funktioniert
 
-Der Check-in-Vorgang ist ein schneller, mehrstufiger Ablauf, der Sie durch die Auswahl eines Gottesdienstes, die Auswahl der Teilnehmer und die Zuweisung jeder Person zu einer Gruppe fuehrt. Nach der Bestaetigung wird Ihre Anwesenheit automatisch erfasst.
+Der Check-in-Vorgang ist ein kurzer, mehrstufiger Ablauf. Er führt Sie durch die Auswahl eines Gottesdienstes, die Angabe, wer teilnimmt, und die Zuordnung jeder Person zu einer Gruppe. Sobald Sie bestätigen, wird Ihre Anwesenheit automatisch erfasst.
 
 ## Erste Schritte
 
-Um auf den Check-in zuzugreifen, oeffnen Sie den Bereich **Check-in** in B1 Mobile. Sie muessen angemeldet sein, um diese Funktion nutzen zu koennen. Wenn Sie nicht angemeldet sind, werden Sie aufgefordert, sich zuerst [anzumelden](../getting-started/logging-in).
+Um auf den Check-in zuzugreifen, öffnen Sie den Bereich **Check-In** in B1 Mobile. Sie müssen angemeldet sein, um diese Funktion zu nutzen. Falls Sie nicht angemeldet sind, werden Sie zuerst aufgefordert, sich [anzumelden](../getting-started/logging-in).
 
 :::info
-Die Check-in-Funktion erfordert, dass Ihre Gemeinde Gottesdienste und Anwesenheitsgruppen in ihren Verwaltungseinstellungen eingerichtet hat. Wenn beim Oeffnen des Check-in-Bildschirms keine Gottesdienste angezeigt werden, hat Ihre Gemeinde diese Funktion moeglicherweise noch nicht konfiguriert. Wenden Sie sich an Ihren Gemeindeadministrator fuer Hilfe.
+Die Check-in-Funktion setzt voraus, dass Ihre Gemeinde Gottesdienste und Anwesenheitsgruppen in den Verwaltungseinstellungen eingerichtet hat. Wenn beim Öffnen des Check-in-Bildschirms keine Gottesdienste angezeigt werden, ist diese Funktion in Ihrer Gemeinde möglicherweise noch nicht konfiguriert. Wenden Sie sich für Hilfe an Ihre Gemeindeverwaltung.
 :::
 
-## Was Sie tun koennen
+## Was Sie tun können
 
-- **Ihren Haushalt anmelden** -- Waehlen Sie aus, welche Familienmitglieder teilnehmen, und erfassen Sie die Anwesenheit fuer alle gleichzeitig. Siehe [Haushalt](../profile/household.md), um mehr ueber die Verwaltung Ihrer Familienmitglieder zu erfahren.
-- **Gottesdienste und Zeiten auswaehlen** -- Waehlen Sie aus den verfuegbaren Gottesdiensten und Zeitfenstern, die Ihre Gemeinde konfiguriert hat.
-- **Gruppen zuweisen** -- Ordnen Sie jede Person der passenden Gruppe fuer den Gottesdienst zu, wie z. B. Hauptgottesdienst, Kinderraum oder Jugendgruppe.
+- **Haushalt einchecken** -- Wählen Sie aus, welche Familienmitglieder teilnehmen, und erfassen Sie die Anwesenheit aller auf einmal. Unter [Haushalt](../profile/household.md) erfahren Sie, wie Sie Ihre Familienmitglieder verwalten.
+- **Gottesdienste und Zeiten wählen** -- Wählen Sie aus den verfügbaren Gottesdiensten und Zeitfenstern, die Ihre Gemeinde eingerichtet hat.
+- **Gruppen zuweisen** -- Ordnen Sie jede Person der passenden Gruppe für den Gottesdienst zu, zum Beispiel Hauptgottesdienst, Kinderraum oder Jugendgruppe.
 
-## Naechste Schritte
+## Nächste Schritte
 
-- [Selbst-Check-in](./self-checkin) -- Schritt-fuer-Schritt-Anleitung zum Einchecken von Ihrem Telefon aus
+- [Selbst-Check-in](./self-checkin) -- Schritt-für-Schritt-Anleitung zum Einchecken mit Ihrem Telefon

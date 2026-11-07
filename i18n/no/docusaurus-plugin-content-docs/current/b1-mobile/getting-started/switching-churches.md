@@ -1,43 +1,43 @@
 ---
-title: "Bytte Kirke"
+title: "Bytte menigheter"
 ---
 
-# Bytte Kirke
+# Bytte menigheter
 
 <div class="article-intro">
 
-Hvis du er medlem av mer enn en kirke, gjor B1 Mobile det enkelt a bytte mellom dem. Kontoen din fungerer pa tvers av alle kirker som bruker ChurchApps, sa du trenger bare en innlogging.
+Hvis du er medlem av mer enn én menighet, gjør B1 Mobile det enkelt å bytte mellom dem. Kontoen din fungerer på tvers av alle menigheter som bruker ChurchApps, så du trenger bare én innlogging.
 
 </div>
 
 <div class="prereqs">
-<h4>For Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](./installing) og [logg inn](./logging-in) pa kontoen din
+- [Installer B1 Mobile](./installing) og [logg inn](./logging-in) på kontoen din
 
 </div>
 
-## Hvordan Bytte Kirke
+## Slik bytter du menighet
 
-1. Apne sidemenyen ved a trykke pa **hamburgerikonet** (tre horisontale linjer) overst til venstre.
-2. I sidemenyens topptekst, trykk pa knappen som viser ditt navaerende kirkenavn (eller **Finn en Kirke** hvis ingen kirke er valgt).
-3. **Kirkesok**-skjermen vises. Nylig besokte kirker vises overst for rask tilgang.
-4. Trykk pa en nylig besokrt kirke for a bytte til den, eller skriv i sokefeltet for a finne en annen kirke.
+1. Åpne sidemenyen ved å trykke på **hamburgerikonet** (tre horisontale streker) øverst til venstre.
+2. I toppen av sidemenyen trykker du på knappen som viser navnet på den gjeldende menigheten (eller **Finn en menighet** hvis ingen menighet er valgt).
+3. Skjermbildet **Menighetssøk** vises. Menighetene du nylig har besøkt, vises øverst for rask tilgang.
+4. Trykk på en nylig besøkt menighet for å bytte til den, eller skriv i søkefeltet for å finne en annen menighet.
 
-Nar du bytter kirke, lastes appen pa nytt med den kirkens merkevare, navigasjonslenker og innhold. [Hjemmesiden](../dashboard/) din, [gruppene](../groups/) dine og andre data vil gjenspeile den nylig valgte kirken.
+Når du bytter menighet, laster appen på nytt med den menighetens profil, navigasjonslenker og innhold. [Oversikten](../dashboard/), [gruppene](../groups/) og andre data dine vil da vise den nyvalgte menigheten.
 
-## Soke Etter en Kirke
+## Søke etter en menighet
 
-Pa Kirkesok-skjermen, skriv minst 3 tegn av kirkenavnet i sokefeltet. Matchende kirker vises i en liste nedenfor. Trykk pa en kirke for a velge den.
+På skjermbildet Menighetssøk skriver du minst 3 tegn fra menighetens navn i søkefeltet. Menigheter som samsvarer, vises i en liste under. Trykk på en menighet for å velge den.
 
 :::info
-Hvis ingen resultater vises, prov en annen stavemade eller en kortere del av kirkenavnet. Soket matcher mot kirkenavn registrert hos ChurchApps.
+Hvis ingen resultater vises, prøv en annen stavemåte eller en kortere del av menighetens navn. Søket samsvarer med menighetsnavn som er registrert hos ChurchApps.
 :::
 
-## Nylige Kirker
+## Nylige menigheter
 
-Kirkesok-skjermen husker kirker du har besokrt for. Nar du ikke har skrevet inn et sokeord, vises dine nylige kirker automatisk. Dette gjor det raskt a bytte tilbake til en kirke du bruker regelmessig.
+Skjermbildet Menighetssøk husker menighetene du har besøkt tidligere. Når du ikke har skrevet et søk, vises de nylige menighetene dine automatisk. Dette gjør det raskt å bytte tilbake til en menighet du bruker regelmessig.
 
 :::tip
-Du trenger ikke a logge ut og logge inn igjen for a bytte kirke. Din ene ChurchApps-konto fungerer pa tvers av alle kirkene dine. Bare velg en annen kirke fra Kirkesok-skjermen, og du er klar.
+Du trenger ikke å logge ut og logge inn igjen for å bytte menighet. Den ene ChurchApps-kontoen din fungerer på tvers av alle menighetene dine. Velg bare en annen menighet fra skjermbildet Menighetssøk, så er du klar.
 :::

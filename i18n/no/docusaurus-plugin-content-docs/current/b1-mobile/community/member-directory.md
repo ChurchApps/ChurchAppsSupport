@@ -6,50 +6,50 @@ title: "Medlemskatalog"
 
 <div class="article-intro">
 
-Medlemskatalogen i B1 Mobile lar deg bla gjennom og soke etter folk i kirken din. Enten du trenger a sla opp et gruppemedlem eller finne noen du moette pa sondag, gjor katalogen det enkelt a knytte kontakt.
+Medlemskatalogen i B1 Mobile lar deg bla gjennom og søke etter personer i menigheten din. Enten du vil slå opp en medlem i gruppen din eller finne noen du møtte på søndag, gjør katalogen det enkelt å ta kontakt.
 
 </div>
 
 <div class="prereqs">
-<h4>For Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) pa kontoen din
+- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
 
 </div>
 
-## Tilgang til Katalogen
+## Åpne katalogen
 
-1. Trykk pa **Katalog**-alternativet i appens navigasjon.
-2. Katalogen lastes inn med kirkens medlemmer oppfort alfabetisk.
+1. Trykk på **Katalog** i navigasjonen i appen.
+2. Katalogen lastes inn med medlemmene i menigheten din sortert alfabetisk.
 
-## Bla Gjennom Katalogen
+## Bla i katalogen
 
-Medlemmene er indeksert alfabetisk etter etternavn og organisert under bokstavoverskrifter (A, B, C og sa videre). Du kan bla gjennom listen for a utforske kirkefamilien din. Hver oppforing viser medlemmets navn og bilde, noe som gjor det enkelt a finne den du leter etter.
+Medlemmene er indeksert alfabetisk etter etternavn og plassert under bokstavoverskrifter (A, B, C, og så videre). Du kan rulle gjennom listen for å bla blant menighetsfellesskapet ditt. Hver oppføring viser medlemmets navn og bilde, slik at det er enkelt å finne den du leter etter.
 
-## Soke Etter Medlemmer
+## Søke etter medlemmer
 
-Hvis du vet hvem du leter etter, er sokefeltet overst i katalogen den raskeste maten a finne dem pa.
+Hvis du vet hvem du leter etter, er søkefeltet øverst i katalogen den raskeste måten å finne personen på.
 
-1. Trykk pa **sokefeltet** overst pa skjermen.
+1. Trykk på **søkefeltet** øverst på skjermen.
 2. Skriv inn et navn.
-3. Listen filtreres i sanntid for a vise matchende resultater.
+3. Listen filtreres i sanntid og viser samsvarende resultater.
 
 :::tip
-Dette er spesielt nyttig i storre kirker der det a bla gjennom hele listen ville tatt lang tid. Bare skriv de forste bokstavene i et navn for raskt a begrense resultatene.
+Dette er spesielt nyttig i større menigheter, der det kan ta litt tid å rulle gjennom hele listen. Skriv bare inn de første bokstavene i et navn for raskt å snevre inn resultatene.
 :::
 
-## Se en Medlemsprofil
+## Se en medlemsprofil
 
-Trykk pa et hvilket som helst medlem i listen for a apne profilen. Profilsiden kan inneholde:
+Trykk på et hvilket som helst medlem i listen for å åpne profilen deres. Profilsiden kan inneholde:
 
-- **Kontaktinformasjon** -- Telefonnummer, e-postadresse og andre detaljer kirken har gjort tilgjengelig.
-- **Familieforbindelser** -- [Familiemedlemmer](../profile/household.md) koblet til denne personens profil. Du kan trykke pa et familiemedlem for a navigere til deres profil ogsa.
+- **Kontaktinformasjon** -- Telefonnummer, e-postadresse og andre opplysninger menigheten din har gjort tilgjengelige.
+- **Familietilknytninger** -- [Husstandsmedlemmer](../profile/household.md) som er koblet til denne personens profil. Du kan også trykke på et familiemedlem for å gå til profilen deres.
 
 :::info
-Informasjonen som er synlig i hver profil, avhenger av kirkens personvern- og kataloginnstillinger. Ikke alle felt vises for hvert medlem. Medlemmer kan kontrollere sin egen synlighet fra [Personverninnstillinger](../profile/privacy-settings.md). Hvis du har sporsmaal om hva som deles, kontakt kirkens administrator.
+Informasjonen som vises i hver profil avhenger av menighetens personvern- og kataloccinnstillinger. Ikke alle felt vises nødvendigvis for alle medlemmer. Medlemmer kan styre synligheten sin fra [Personverninnstillinger](../profile/privacy-settings.md). Hvis du har spørsmål om hva som deles, kan du kontakte menighetsadministratoren din.
 :::
 
-## Relaterte Artikler
+## Relaterte artikler
 
-- [Meldingstjeneste](./messaging) -- Send en privat melding til noen du finner i katalogen
-- [Personverninnstillinger](../profile/privacy-settings.md) -- Kontroller hva andre kan se om deg i katalogen
+- [Meldinger](./messaging) -- Send en privat melding til noen du finner i katalogen
+- [Personverninnstillinger](../profile/privacy-settings.md) -- Styr hva andre kan se om deg i katalogen

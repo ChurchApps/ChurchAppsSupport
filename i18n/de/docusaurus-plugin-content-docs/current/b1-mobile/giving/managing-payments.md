@@ -6,52 +6,52 @@ title: "Zahlungsmethoden verwalten"
 
 <div class="article-intro">
 
-Der **Verwalten**-Tab im Spendenbereich ermoeglicht es Ihnen, Ihre gespeicherten Zahlungsmethoden anzusehen und zu verwalten. Durch das Speichern einer Karte koennen Sie zukuenftige Spenden schneller taetigen, ohne Ihre Daten jedes Mal erneut eingeben zu muessen.
+Der Tab **Verwalten** im Bereich Spenden zeigt dir deine gespeicherten Zahlungsmethoden an und ermöglicht dir, sie zu verwalten. Wenn du eine Karte speicherst, kannst du künftige Spenden schneller abschließen, ohne deine Daten jedes Mal erneut eingeben zu müssen.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich an](../getting-started/logging-in) bei Ihrem Konto
+- [Installiere B1 Mobile](../getting-started/installing) und [melde dich](../getting-started/logging-in) bei deinem Konto an
 
 </div>
 
-## Ihre Zahlungsmethoden ansehen
+## Deine Zahlungsmethoden anzeigen
 
-Wenn Sie den **Verwalten**-Tab oeffnen, sehen Sie eine Liste aller Ihrer gespeicherten Zahlungsmethoden. Jeder Eintrag zeigt den Kartentyp und die letzten vier Ziffern der Kartennummer, sodass Sie leicht erkennen koennen, welche Karte welche ist.
+Wenn du den Tab **Verwalten** öffnest, siehst du eine Liste aller deiner gespeicherten Zahlungsmethoden. Jeder Eintrag zeigt den Kartentyp und die letzten vier Ziffern der Kartennummer, sodass du leicht erkennst, welche Karte welche ist.
 
-## Eine neue Zahlungsmethode hinzufuegen
+## Eine neue Zahlungsmethode hinzufügen
 
-Um eine neue Karte hinzuzufuegen:
+So fügst du eine neue Karte hinzu:
 
-1. Oeffnen Sie den Bereich **Spenden** in B1 Mobile.
-2. Tippen Sie auf den **Verwalten**-Tab.
-3. Tippen Sie auf die Option, eine neue Zahlungsmethode hinzuzufuegen.
-4. Geben Sie Ihre Kartendaten ein. Die Informationen werden sicher an **Stripe** zur Verarbeitung gesendet.
-5. Nach dem Speichern erscheint die neue Karte in Ihrer Liste der Zahlungsmethoden.
+1. Öffne den Bereich **Spenden** in B1 Mobile.
+2. Tippe auf den Tab **Verwalten**.
+3. Tippe auf die Option, eine neue Zahlungsmethode hinzuzufügen.
+4. Gib deine Kartendaten ein. Die Informationen werden sicher an **Stripe** zur Verarbeitung übermittelt.
+5. Nach dem Speichern erscheint die neue Karte in deiner Liste der Zahlungsmethoden.
 
-Ihre gespeicherte Karte steht dann beim naechsten Mal, wenn Sie eine [Spende taetigen](./making-donations), als Zahlungsoption im **Spenden**-Tab zur Verfuegung.
+Deine gespeicherte Karte steht dann beim nächsten Mal als Zahlungsoption zur Verfügung, wenn du im Tab **Spenden** eine [Spende tätigst](./making-donations).
 
 ## Eine Zahlungsmethode entfernen
 
-Wenn Sie eine Karte nicht mehr hinterlegt haben moechten, koennen Sie sie im **Verwalten**-Tab entfernen:
+Wenn du eine Karte nicht mehr hinterlegt haben möchtest, kannst du sie im Tab **Verwalten** entfernen:
 
-1. Suchen Sie die Karte, die Sie entfernen moechten, in Ihrer Liste der gespeicherten Zahlungsmethoden.
-2. Tippen Sie auf die Entfernen- oder Loeschen-Option neben der Karte.
-3. Bestaetigen Sie die Entfernung.
+1. Suche die Karte, die du entfernen möchtest, in deiner Liste der gespeicherten Zahlungsmethoden.
+2. Tippe neben der Karte auf die Option zum Entfernen oder Löschen.
+3. Bestätige das Entfernen.
 
-Die Karte wird nicht mehr als Zahlungsoption angezeigt, wenn Sie eine Spende taetigen.
+Die Karte wird beim Tätigen einer Spende nicht mehr als Zahlungsoption angezeigt.
 
 :::info
-Das Entfernen einer Zahlungsmethode hat keinen Einfluss auf vergangene Spenden. Ihre [Spendenhistorie](./donation-history) bleibt unveraendert.
+Das Entfernen einer Zahlungsmethode wirkt sich nicht auf frühere Spenden aus. Dein [Spendenverlauf](./donation-history) bleibt unverändert.
 :::
 
 :::tip
-Behalten Sie mindestens eine Zahlungsmethode gespeichert fuer schnelles Spenden. So koennen Sie die **Wiederholen**-Schaltflaeche im **Uebersicht**-Tab nutzen, um mit einem einzigen Fingertipp erneut zu spenden.
+Behalte mindestens eine gespeicherte Zahlungsmethode für schnelles Spenden. So kannst du mit einem Tipp auf die Schaltfläche **Wiederholen** im Tab **Übersicht** erneut spenden.
 :::
 
 ## Verwandte Artikel
 
-- [Eine Spende taetigen](./making-donations) -- Erfahren Sie, wie Sie mit einer gespeicherten Zahlungsmethode spenden
-- [Spendenhistorie](./donation-history) -- Sehen Sie Ihre Spendenuebersicht und vergangene Spenden ein
+- [Eine Spende tätigen](./making-donations) -- Erfahre, wie du mit einer gespeicherten Zahlungsmethode ein Geschenk gibst
+- [Spendenverlauf](./donation-history) -- Zeige deine Spendenübersicht und frühere Spenden an

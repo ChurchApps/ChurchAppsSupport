@@ -1,43 +1,43 @@
 ---
-title: "Ofertas"
+title: "Doações"
 ---
 
-# Ofertas
+# Doações
 
 <div class="article-intro">
 
-B1 Mobile facilita o apoio a sua igreja com uma experiencia completa de ofertas diretamente do seu telefone. Se voce quer fazer uma oferta rapida, verificar seu historico de doacoes ou gerenciar seus metodos de pagamento, tudo esta disponivel em um so lugar.
+O B1 Mobile facilita a experiência completa de doação para apoiar sua igreja diretamente do seu celular. Seja para fazer uma oferta rápida, revisar seu histórico de doações ou gerenciar seus métodos de pagamento, tudo está disponível em um único lugar.
 
 </div>
 
-## As Abas de Ofertas
+## As Abas de Doação
 
-A secao de ofertas e organizada em quatro abas:
+A seção de doações está organizada em quatro abas:
 
-- **Visao Geral** -- Um resumo da sua atividade de doacoes. Veja o total acumulado no ano, o numero de ofertas feitas e detalhes sobre sua ultima doacao, incluindo um botao **Repetir** para dar o mesmo valor novamente.
-- **Doar** -- Faca uma nova doacao. Selecione um fundo, insira um valor e forneca os detalhes de pagamento para completar uma oferta.
-- **Gerenciar** -- Visualize e gerencie seus metodos de pagamento salvos. Adicione novos cartoes ou remova os que nao usa mais.
-- **Historico** -- Uma lista detalhada de todas as suas doacoes anteriores para que voce possa revisar seu registro completo de ofertas.
+- **Visão Geral** -- Um resumo da sua atividade de doações. Veja o total do ano até o momento, o número de doações que você realizou e os detalhes da sua última doação, incluindo um botão **Repetir** para doar o mesmo valor novamente.
+- **Doar** -- Faça uma nova doação. Selecione um fundo, informe um valor e forneça seus dados de pagamento para concluir a oferta.
+- **Gerenciar** -- Visualize e gerencie seus métodos de pagamento salvos. Adicione novos cartões ou remova os que não usa mais.
+- **Histórico** -- Uma lista detalhada de todas as suas doações anteriores, para que você possa revisar o registro completo de suas contribuições.
 
-## Como os Pagamentos Funcionam
+## Como Funcionam os Pagamentos
 
-Todas as doacoes feitas pelo B1 Mobile sao processadas com seguranca pelo **Stripe**. Suas informacoes de pagamento sao tratadas pela infraestrutura segura do Stripe e nunca sao armazenadas nos servidores do ChurchApps. Voce pode doar com confianca sabendo que seus dados financeiros estao protegidos.
+Todas as doações feitas pelo B1 Mobile são processadas com segurança pelo **Stripe**. Suas informações de pagamento são tratadas pela infraestrutura segura do Stripe e nunca são armazenadas nos servidores da ChurchApps. Você pode doar com tranquilidade, sabendo que seus dados financeiros estão protegidos.
 
 :::info
-O administrador da sua igreja configura os fundos disponiveis e o processamento de pagamentos atraves do [B1 Admin](../../b1-admin/). Se voce nao ve uma opcao de oferta no aplicativo, sua igreja pode nao ter este recurso configurado ainda.
+O administrador da sua igreja configura os fundos disponíveis e o processamento de pagamentos pelo [B1 Admin](../../b1-admin/). Se você não vir uma opção de doação no aplicativo, sua igreja pode ainda não ter configurado este recurso.
 :::
 
-## O Que Voce Pode Fazer
+## O Que Você Pode Fazer
 
-Aqui esta o que voce pode fazer na secao de ofertas:
+Veja o que você pode fazer na seção de doações:
 
-- **Doar para fundos especificos** -- Escolha para qual fundo direcionar sua doacao, como Fundo Geral, Fundo de Missoes ou Fundo de Construcao.
-- **Revisar suas ofertas** -- Verifique o resumo acumulado no ano e navegue pelo historico completo de doacoes.
-- **Salvar metodos de pagamento** -- Armazene os dados do seu cartao para doacoes mais rapidas no futuro.
-- **Repetir uma oferta** -- De rapidamente o mesmo valor da sua ultima doacao com um unico toque.
+- **Doar para fundos específicos** -- Escolha para qual fundo direcionar sua doação, como o Fundo Geral, o Fundo de Missões ou o Fundo de Construção.
+- **Revisar suas doações** -- Confira o resumo do ano até o momento e navegue pelo seu histórico completo de doações.
+- **Salvar métodos de pagamento** -- Armazene os dados do seu cartão para doar com mais rapidez no futuro.
+- **Repetir uma doação** -- Doe rapidamente o mesmo valor da sua última contribuição com um único toque.
 
-## Proximos Passos
+## Próximos Passos
 
-- [Fazendo uma Doacao](./making-donations) -- Saiba como fazer uma oferta pelo aplicativo
-- [Gerenciando Metodos de Pagamento](./managing-payments) -- Adicione ou remova metodos de pagamento salvos
-- [Historico de Doacoes](./donation-history) -- Veja o resumo de ofertas e doacoes anteriores
+- [Fazendo uma Doação](./making-donations) -- Saiba como fazer uma oferta pelo aplicativo
+- [Gerenciando Métodos de Pagamento](./managing-payments) -- Adicione ou remova métodos de pagamento salvos
+- [Histórico de Doações](./donation-history) -- Veja o resumo das suas doações e contribuições anteriores

@@ -1,27 +1,27 @@
 ---
-title: "खुली पाठ प्रारूप"
+title: "ओपन लेसन फ़ॉर्मेट"
 ---
 
-# Open Lesson Format
+# ओपन लेसन फ़ॉर्मेट
 
 <div class="article-intro">
 
-The Open Lesson Format is a standardized JSON schema that allows third-party content providers to publish curriculum for Lessons.church. Any organization that hosts a feed in this format can be added as an external provider, making their content browsable and playable alongside the built-in library.
+ओपन लेसन फ़ॉर्मेट एक मानकीकृत JSON स्कीमा है, जो तृतीय-पक्ष कंटेंट प्रदाताओं को Lessons.church के लिए पाठ्यक्रम प्रकाशित करने की अनुमति देता है। कोई भी संगठन जो इस फ़ॉर्मेट में फ़ीड होस्ट करता है, उसे बाहरी प्रदाता के रूप में जोड़ा जा सकता है, जिससे उसकी सामग्री इन-बिल्ट लाइब्रेरी के साथ-साथ ब्राउज़ और चलाने योग्य बन जाती है।
 
 </div>
 
-## How It Works
+## यह कैसे काम करता है
 
-A provider hosts two types of endpoints:
+एक प्रदाता दो प्रकार के एंडपॉइंट होस्ट करता है:
 
-1. **Provider Tree** -- A single URL that returns the full catalog of programs, studies, lessons, and venues. Each venue includes a feed URL pointing to the detailed lesson content.
-2. **Venue Feed** -- One URL per venue, returning the full lesson content (sections, actions, and media files).
+1. **प्रोवाइडर ट्री** -- एक ही URL जो प्रोग्रामों, अध्ययनों, लेसनों और वेन्यू की पूरी सूची लौटाता है। हर वेन्यू में विस्तृत लेसन सामग्री की ओर इशारा करने वाला एक फ़ीड URL होता है।
+2. **वेन्यू फ़ीड** -- हर वेन्यू के लिए एक URL, जो पूरी लेसन सामग्री (सेक्शन, एक्शन और मीडिया फ़ाइलें) लौटाता है।
 
-When a church adds your provider URL in Lessons.church, the platform fetches your tree to discover available content, then fetches individual venue feeds on demand.
+जब कोई चर्च Lessons.church में आपका प्रदाता URL जोड़ता है, तो प्लेटफ़ॉर्म उपलब्ध सामग्री खोजने के लिए आपका ट्री फ़ेच करता है, और फिर माँग के अनुसार अलग-अलग वेन्यू फ़ीड फ़ेच करता है।
 
-## Provider Tree
+## प्रोवाइडर ट्री
 
-Your provider URL must return a JSON object with this structure:
+आपका प्रदाता URL इस संरचना वाला JSON ऑब्जेक्ट लौटाना चाहिए:
 
 ```json
 {
@@ -71,40 +71,40 @@ Your provider URL must return a JSON object with this structure:
 }
 ```
 
-### Tree Fields
+### ट्री फ़ील्ड
 
-| Field | Type | Description |
+| फ़ील्ड | प्रकार | विवरण |
 |-------|------|-------------|
-| `programs[].id` | string | Unique program identifier |
-| `programs[].name` | string | Display name |
-| `programs[].slug` | string | URL-friendly name |
-| `programs[].image` | string | Program image URL (optional) |
-| `programs[].about` | string | Description (optional) |
-| `studies[].id` | string | Unique study identifier |
-| `studies[].name` | string | Display name |
-| `studies[].slug` | string | URL-friendly name |
-| `studies[].image` | string | Study image URL (optional) |
-| `lessons[].id` | string | Unique lesson identifier |
-| `lessons[].name` | string | Display name |
-| `lessons[].slug` | string | URL-friendly name |
-| `lessons[].title` | string | Full title |
-| `lessons[].image` | string | Lesson image URL (optional) |
-| `lessons[].description` | string | Lesson summary (optional). Catalog copy for teachers browsing the library — not parent take-home. |
-| `lessons[].bottomLine` | string | One-sentence parent take-home (optional) |
-| `lessons[].verse` | string | Memory verse reference and short text (optional) |
-| `lessons[].parentQuestion` | string | One question for parents to ask at home (optional) |
-| `lessons[].parentNote` | string | Optional extra note for parents (markdown) |
-| `venues[].id` | string | Unique venue identifier |
-| `venues[].name` | string | Venue name (e.g. "Kids", "Adults", "Youth") |
-| `venues[].apiUrl` | string | URL returning the venue feed (see below) |
+| `programs[].id` | string | अनूठा प्रोग्राम पहचानकर्ता |
+| `programs[].name` | string | प्रदर्शित होने वाला नाम |
+| `programs[].slug` | string | URL-अनुकूल नाम |
+| `programs[].image` | string | प्रोग्राम की छवि का URL (वैकल्पिक) |
+| `programs[].about` | string | विवरण (वैकल्पिक) |
+| `studies[].id` | string | अनूठा अध्ययन पहचानकर्ता |
+| `studies[].name` | string | प्रदर्शित होने वाला नाम |
+| `studies[].slug` | string | URL-अनुकूल नाम |
+| `studies[].image` | string | अध्ययन की छवि का URL (वैकल्पिक) |
+| `lessons[].id` | string | अनूठा लेसन पहचानकर्ता |
+| `lessons[].name` | string | प्रदर्शित होने वाला नाम |
+| `lessons[].slug` | string | URL-अनुकूल नाम |
+| `lessons[].title` | string | पूरा शीर्षक |
+| `lessons[].image` | string | लेसन की छवि का URL (वैकल्पिक) |
+| `lessons[].description` | string | लेसन का सारांश (वैकल्पिक)। यह लाइब्रेरी ब्राउज़ करने वाले शिक्षकों के लिए कैटलॉग का पाठ है, माता-पिता के घर ले जाने वाला संदेश नहीं। |
+| `lessons[].bottomLine` | string | माता-पिता के लिए घर ले जाने वाला एक वाक्य का संदेश (वैकल्पिक) |
+| `lessons[].verse` | string | स्मरण वाक्य का संदर्भ और संक्षिप्त पाठ (वैकल्पिक) |
+| `lessons[].parentQuestion` | string | माता-पिता के लिए घर पर पूछने हेतु एक प्रश्न (वैकल्पिक) |
+| `lessons[].parentNote` | string | माता-पिता के लिए अतिरिक्त वैकल्पिक नोट (markdown) |
+| `venues[].id` | string | अनूठा वेन्यू पहचानकर्ता |
+| `venues[].name` | string | वेन्यू का नाम (जैसे "Kids", "Adults", "Youth") |
+| `venues[].apiUrl` | string | वह URL जो वेन्यू फ़ीड लौटाता है (नीचे देखें) |
 
-The four parent take-home fields (`bottomLine`, `verse`, `parentQuestion`, `parentNote`) are optional on both the tree and the venue feed. If omitted they are treated as empty. Do not copy `description` into them.
+माता-पिता के लिए घर ले जाने वाले चारों फ़ील्ड (`bottomLine`, `verse`, `parentQuestion`, `parentNote`) ट्री और वेन्यू फ़ीड, दोनों में वैकल्पिक हैं। यदि इन्हें छोड़ा जाए, तो इन्हें खाली माना जाता है। इनमें `description` की सामग्री न डालें।
 
-**Venues** represent different versions of the same lesson tailored for different audiences (age groups, settings, etc.).
+**वेन्यू** एक ही लेसन के अलग-अलग संस्करणों को दर्शाते हैं, जो विभिन्न दर्शकों (आयु वर्ग, परिस्थितियाँ आदि) के लिए तैयार किए गए हों।
 
-## Venue Feed
+## वेन्यू फ़ीड
 
-Each venue's `apiUrl` must return a JSON object matching this schema:
+हर वेन्यू का `apiUrl` इस स्कीमा से मेल खाने वाला JSON ऑब्जेक्ट लौटाना चाहिए:
 
 ```json
 {
@@ -169,83 +169,83 @@ Each venue's `apiUrl` must return a JSON object matching this schema:
 }
 ```
 
-### Venue Feed Fields
+### वेन्यू फ़ीड फ़ील्ड
 
-#### Root Object
+#### रूट ऑब्जेक्ट
 
-| Field | Type | Description |
+| फ़ील्ड | प्रकार | विवरण |
 |-------|------|-------------|
-| `id` | string | Venue identifier |
-| `name` | string | Venue name |
-| `lessonId` | string | Lesson identifier |
-| `lessonName` | string | Lesson display name |
-| `lessonImage` | string | Lesson image URL |
-| `lessonDescription` | string | Lesson summary (catalog copy) |
-| `bottomLine` | string | One-sentence parent take-home (optional) |
-| `verse` | string | Memory verse reference and short text (optional) |
-| `parentQuestion` | string | One question for parents to ask at home (optional) |
-| `parentNote` | string | Optional extra note for parents, markdown (optional) |
-| `studyName` | string | Parent study name |
-| `studySlug` | string | Parent study slug |
-| `programName` | string | Parent program name |
-| `programSlug` | string | Parent program slug |
-| `programAbout` | string | Program description |
-| `downloads` | array | Downloadable file bundles |
-| `sections` | array | Ordered lesson sections |
+| `id` | string | वेन्यू पहचानकर्ता |
+| `name` | string | वेन्यू का नाम |
+| `lessonId` | string | लेसन पहचानकर्ता |
+| `lessonName` | string | लेसन का प्रदर्शित नाम |
+| `lessonImage` | string | लेसन की छवि का URL |
+| `lessonDescription` | string | लेसन का सारांश (कैटलॉग का पाठ) |
+| `bottomLine` | string | माता-पिता के लिए घर ले जाने वाला एक वाक्य का संदेश (वैकल्पिक) |
+| `verse` | string | स्मरण वाक्य का संदर्भ और संक्षिप्त पाठ (वैकल्पिक) |
+| `parentQuestion` | string | माता-पिता के लिए घर पर पूछने हेतु एक प्रश्न (वैकल्पिक) |
+| `parentNote` | string | माता-पिता के लिए अतिरिक्त वैकल्पिक नोट, markdown में (वैकल्पिक) |
+| `studyName` | string | मूल अध्ययन का नाम |
+| `studySlug` | string | मूल अध्ययन का slug |
+| `programName` | string | मूल प्रोग्राम का नाम |
+| `programSlug` | string | मूल प्रोग्राम का slug |
+| `programAbout` | string | प्रोग्राम का विवरण |
+| `downloads` | array | डाउनलोड योग्य फ़ाइल समूह |
+| `sections` | array | क्रमबद्ध लेसन सेक्शन |
 
-#### Section
+#### सेक्शन
 
-| Field | Type | Description |
+| फ़ील्ड | प्रकार | विवरण |
 |-------|------|-------------|
-| `id` | string | Section identifier |
-| `name` | string | Section title |
-| `sort` | number | Display order |
-| `materials` | string | Materials or preparation notes (optional) |
-| `actions` | array | Ordered actions within this section |
+| `id` | string | सेक्शन पहचानकर्ता |
+| `name` | string | सेक्शन का शीर्षक |
+| `sort` | number | प्रदर्शन क्रम |
+| `materials` | string | सामग्री या तैयारी से जुड़े नोट (वैकल्पिक) |
+| `actions` | array | इस सेक्शन के भीतर क्रमबद्ध एक्शन |
 
-#### Action
+#### एक्शन
 
-| Field | Type | Description |
+| फ़ील्ड | प्रकार | विवरण |
 |-------|------|-------------|
-| `id` | string | Action identifier |
-| `actionType` | string | One of: `play`, `text`, `question`, `quote`, `subhead` |
-| `content` | string | Text content or media label |
-| `sort` | number | Display order |
-| `role` | string | Role name, e.g. "Leader", "Kids" (optional) |
-| `roleId` | string | Role identifier (optional) |
-| `files` | array | Media files for `play` actions (optional) |
+| `id` | string | एक्शन पहचानकर्ता |
+| `actionType` | string | इनमें से एक: `play`, `text`, `question`, `quote`, `subhead` |
+| `content` | string | पाठ्य सामग्री या मीडिया का लेबल |
+| `sort` | number | प्रदर्शन क्रम |
+| `role` | string | भूमिका का नाम, जैसे "Leader", "Kids" (वैकल्पिक) |
+| `roleId` | string | भूमिका पहचानकर्ता (वैकल्पिक) |
+| `files` | array | `play` एक्शन के लिए मीडिया फ़ाइलें (वैकल्पिक) |
 
-#### File
+#### फ़ाइल
 
-| Field | Type | Description |
+| फ़ील्ड | प्रकार | विवरण |
 |-------|------|-------------|
-| `id` | string | File identifier |
-| `name` | string | File name |
-| `url` | string | Direct download URL |
-| `streamUrl` | string | Streaming URL, e.g. Vimeo link (optional) |
-| `fileType` | string | MIME type (e.g. `video/mp4`, `image/jpeg`) |
-| `seconds` | number | Duration in seconds for audio/video (optional) |
-| `bytes` | number | File size in bytes (optional) |
-| `thumbnail` | string | Thumbnail image URL (optional) |
-| `loop` | boolean | Whether media should loop (optional, default false) |
+| `id` | string | फ़ाइल पहचानकर्ता |
+| `name` | string | फ़ाइल का नाम |
+| `url` | string | सीधा डाउनलोड URL |
+| `streamUrl` | string | स्ट्रीमिंग URL, जैसे Vimeo लिंक (वैकल्पिक) |
+| `fileType` | string | MIME प्रकार (जैसे `video/mp4`, `image/jpeg`) |
+| `seconds` | number | ऑडियो/वीडियो की अवधि सेकंड में (वैकल्पिक) |
+| `bytes` | number | फ़ाइल का आकार बाइट्स में (वैकल्पिक) |
+| `thumbnail` | string | थंबनेल छवि का URL (वैकल्पिक) |
+| `loop` | boolean | क्या मीडिया लूप होना चाहिए (वैकल्पिक, डिफ़ॉल्ट false) |
 
-#### Download
+#### डाउनलोड
 
-| Field | Type | Description |
+| फ़ील्ड | प्रकार | विवरण |
 |-------|------|-------------|
-| `name` | string | Download bundle name (e.g. "Printable Materials") |
-| `files` | array | Files in this download bundle (same fields as File above) |
+| `name` | string | डाउनलोड समूह का नाम (जैसे "Printable Materials") |
+| `files` | array | इस डाउनलोड समूह की फ़ाइलें (ऊपर दिए `File` के समान फ़ील्ड) |
 
-## Action Types
+## एक्शन के प्रकार
 
-| Type | Purpose |
+| प्रकार | उद्देश्य |
 |------|---------|
-| `play` | Media playback -- video, audio, or slideshow. Must include `files`. |
-| `text` | Static text content. Supports markdown-style bold (`**text**`). |
-| `question` | Discussion or reflection question for the audience. |
-| `quote` | A highlighted quote or Scripture passage. |
-| `subhead` | A heading or divider within a section. |
+| `play` | मीडिया प्लेबैक -- वीडियो, ऑडियो या स्लाइडशो। इसमें `files` शामिल होना चाहिए। |
+| `text` | स्थिर पाठ्य सामग्री। markdown-शैली का बोल्ड (`**text**`) समर्थित है। |
+| `question` | दर्शकों के लिए चर्चा या चिंतन का प्रश्न। |
+| `quote` | एक हाइलाइट किया गया उद्धरण या धर्मग्रंथ का अंश। |
+| `subhead` | किसी सेक्शन के भीतर एक शीर्षक या विभाजक। |
 
 :::tip
-To see a working example of the feed in action, you can view the built-in Lessons.church content tree at `https://api.lessons.church/lessons/public/tree` and fetch any venue feed URL from it.
+फ़ीड को कार्य करते हुए देखने के लिए, आप `https://api.lessons.church/lessons/public/tree` पर Lessons.church का बिल्ट-इन कंटेंट ट्री देख सकते हैं और उसमें से किसी भी वेन्यू फ़ीड URL को फ़ेच कर सकते हैं।
 :::

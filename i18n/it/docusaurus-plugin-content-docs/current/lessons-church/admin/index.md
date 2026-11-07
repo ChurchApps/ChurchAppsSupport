@@ -1,46 +1,46 @@
 ---
-title: "Administration"
+title: "Amministrazione"
 ---
 
-# Administration
+# Amministrazione
 
 <div class="article-intro">
 
-The admin area in Lessons.church is where content creators and administrators manage the lesson library. From here you can build out your curriculum structure, Carica resources, review usage statistics, and connect third-party content providers.
+L'area di amministrazione di Lessons.church è il luogo in cui i creatori di contenuti e gli amministratori gestiscono la libreria delle lezioni. Da qui puoi costruire la struttura del tuo curriculum, caricare risorse, consultare le statistiche di utilizzo e collegare fornitori di contenuti di terze parti.
 
 </div>
 
 :::warning
-Admin access requires appropriate Permessi. If you do not see the admin options, contact your church administrator Per request access.
+L'accesso all'amministrazione richiede le autorizzazioni appropriate. Se non vedi le opzioni di amministrazione, contatta l'amministratore della tua chiesa per richiedere l'accesso.
 :::
 
-## What You Can Do
+## Cosa puoi fare
 
-The admin area gives you full control over your content:
+L'area di amministrazione ti offre il pieno controllo sui tuoi contenuti:
 
-- **Crea and Modifica programs** -- Set up top-level curriculum series with names, descriptions, images, and slugs.
-- **Manage studies** -- Organize Gruppi of related lessons within each program.
-- **Build lessons** -- Aggiungi individual lessons with venues, sections, Ruoli, and actions.
-- **Carica resources** -- Attach downloadable files (PDFs, activity sheets, images) at the program, study, or lesson level.
-- **Visualizza statistics** -- See which content is being downloaded, by whom, and where.
-- **Configure providers** -- Connect external curriculum providers that use the Apri Lezione Format.
-- **Anno plans** -- Publish week 1, 2, 3… sequences for any curriculum. Churches apply them in B1 Admin.
+- **Creare e modificare programmi** -- Imposta serie di curriculum di alto livello con nomi, descrizioni, immagini e slug.
+- **Gestire gli studi** -- Organizza gruppi di lezioni correlate all'interno di ciascun programma.
+- **Costruire le lezioni** -- Aggiungi singole lezioni con sedi, sezioni, ruoli e azioni.
+- **Caricare risorse** -- Allega file scaricabili (PDF, schede di attività, immagini) a livello di programma, studio o lezione.
+- **Visualizzare le statistiche** -- Vedi quali contenuti vengono scaricati, da chi e da dove.
+- **Configurare i fornitori** -- Collega fornitori di curriculum esterni che utilizzano il formato Open Lesson Format.
+- **Piani annuali** -- Pubblica sequenze di settimana 1, 2, 3… per qualsiasi curriculum. Le chiese le applicano in B1 Admin.
 
-## Content Hierarchy
+## Struttura dei contenuti
 
-As an admin, it helps Per understand how content is structured:
+Come amministratore, è utile capire come sono strutturati i contenuti:
 
-1. **Programs** contain one or more studies.
-2. **Studies** contain one or more lessons.
-3. **Lessons** contain one or more venues (age-Gruppo variations).
-4. **Venues** contain sections, and sections contain Ruolo-based actions.
+1. **I programmi** contengono uno o più studi.
+2. **Gli studi** contengono una o più lezioni.
+3. **Le lezioni** contengono una o più sedi (varianti per fascia d'età).
+4. **Le sedi** contengono sezioni, e le sezioni contengono azioni basate sui ruoli.
 
-Each level can have its own downloadable resources attached.
+Ogni livello può avere le proprie risorse scaricabili allegate.
 
-## Avanti Steps
+## Prossimi passi
 
-- [Managing Programs](./managing-programs.md) -- Crea and configure programs
-- [Managing Studies](./managing-studies.md) -- Aggiungi studies within a program
-- [Managing Lessons](./managing-lessons.md) -- Build out lessons with venues, sections, and actions
-- [Statistics](./statistics.md) -- Review Scarica and usage data
-- [Third-Party Providers](./third-party-providers.md) -- Connect external curriculum feeds
+- [Gestire i programmi](./managing-programs.md) -- Crea e configura i programmi
+- [Gestire gli studi](./managing-studies.md) -- Aggiungi studi all'interno di un programma
+- [Gestire le lezioni](./managing-lessons.md) -- Costruisci le lezioni con sedi, sezioni e azioni
+- [Statistiche](./statistics.md) -- Consulta i dati di download e utilizzo
+- [Fornitori di terze parti](./third-party-providers.md) -- Collega feed di curriculum esterni

@@ -1,93 +1,93 @@
 ---
-title: "Gerenciando Aulas"
+title: "Gerenciando Lições"
 ---
 
-# Gerenciando Aulas
+# Gerenciando Lições
 
 <div class="article-intro">
 
-Lessons are the individual teaching sessions within a study. Each lesson represents what happens during a single class meeting. This is where you build out the detailed content -- venues, sections, roles, and actions -- that volunteers will use when they teach.
+As lições são as sessões individuais de ensino de um estudo. Cada lição representa o que acontece durante um único encontro de classe. É aqui que você desenvolve o conteúdo detalhado -- locais, seções, funções e ações -- que os voluntários usarão quando forem ensinar.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de Começar</h4>
 
-- [Create a program](./managing-programs.md) and [add a study](./managing-studies.md) to it
-- Have admin permissions for Lessons.church (see the [Administration overview](./index.md))
+- [Crie um programa](./managing-programs.md) e [adicione um estudo](./managing-studies.md) a ele
+- Tenha permissões de administrador no Lessons.church (veja a [visão geral da Administração](./index.md))
 
 </div>
 
-## Creating a Lesson
+## Criando uma Lição
 
-1. Navigate to the **Admin** area, expand the program and study, and find the study you want to add a lesson to.
-2. Click **Add Lesson**.
-3. Enter a **Name** and other details for the lesson.
-4. Save the lesson.
+1. Acesse a área **Admin**, expanda o programa e o estudo, e encontre o estudo ao qual você deseja adicionar uma lição.
+2. Clique em **Adicionar Lição**.
+3. Digite um **Nome** e outros detalhes para a lição.
+4. Salve a lição.
 
-## Parent Take-Home
+## Resumo para os Pais
 
-Each lesson has an optional **Parent take-home** section under Description. These fields are what parents see on their B1 group after class (and on the classroom parent page). They are not a second lesson description.
+Cada lição tem uma seção opcional **Resumo para os pais** em Descrição. Estes campos são o que os pais veem em seu grupo do B1 após a aula (e na página de pais da sala de aula). Eles não são uma segunda descrição da lição.
 
-| Field | Purpose |
+| Campo | Finalidade |
 |---|---|
-| **Bottom line** | One sentence. "God keeps His promises." |
-| **Verse** | Memory verse reference and short text. |
-| **Question** | One car-ride question parents can ask without a PDF. |
-| **Optional note** | Extra (prayer prompt, family activity). Markdown. Hidden when empty. |
+| **Ideia central** | Uma frase. "Deus cumpre as suas promessas." |
+| **Versículo** | Referência do versículo para memorizar e um texto curto. |
+| **Pergunta** | Uma pergunta para o trajeto de carro que os pais podem fazer sem precisar de um PDF. |
+| **Observação opcional** | Extra (sugestão de oração, atividade em família). Markdown. Fica oculto quando vazio. |
 
-Bottom line and one question matter more than an overview. Leave all four empty if you have nothing for parents that week — nothing is shown.
+A ideia central e a pergunta são mais importantes do que uma visão geral. Deixe os quatro campos vazios se não tiver nada para os pais naquela semana — nada será exibido.
 
-Do not put parent copy in **Description**. Description is catalog copy for teachers browsing lessons.church.
+Não coloque conteúdo para os pais na **Descrição**. A Descrição é o texto do catálogo para professores que navegam pelas lições no lessons.church.
 
-## Understanding the Lesson Structure
+## Entendendo a Estrutura da Lição
 
-Each lesson is organized into several layers:
+Cada lição é organizada em várias camadas:
 
-- **Venues** -- Different versions of the lesson for different age groups or settings. For example, you might have a "Preschool" venue and an "Elementary" venue for the same lesson.
-- **Sections** -- The segments within a venue, such as "Welcome", "Video", "Bible Story", and "Activity". Sections control the flow of the class time.
-- **Roles and Actions** -- Within each section, you assign roles (for example, "Lead Teacher" or "Small Group Leader") and give each role specific actions.
+- **Locais** -- Diferentes versões da lição para diferentes faixas etárias ou contextos. Por exemplo, você pode ter um local "Maternal" e um local "Infantil" para a mesma lição.
+- **Seções** -- Os segmentos dentro de um local, como "Boas-vindas", "Vídeo", "História Bíblica" e "Atividade". As seções controlam o fluxo do tempo da aula.
+- **Funções e Ações** -- Dentro de cada seção, você atribui funções (por exemplo, "Professor Principal" ou "Líder de Pequeno Grupo") e dá a cada função ações específicas.
 
-## Action Types
+## Tipos de Ação
 
-There are four types of actions you can assign to a role within a section:
+Há quatro tipos de ações que você pode atribuir a uma função dentro de uma seção:
 
-- **Say** -- Text the volunteer should speak or paraphrase to the class.
-- **Do** -- A physical activity or instruction to carry out.
-- **Note** -- Background information or a reminder for the volunteer (not read aloud).
-- **Play** -- A video or audio clip to play during the section.
+- **Falar** -- Texto que o voluntário deve dizer ou parafrasear para a classe.
+- **Fazer** -- Uma atividade física ou instrução a ser executada.
+- **Observação** -- Informações de contexto ou um lembrete para o voluntário (não é lido em voz alta).
+- **Tocar** -- Um clipe de vídeo ou áudio a ser reproduzido durante a seção.
 
-## Adding a Venue
+## Adicionando um Local
 
-1. Open the lesson in the admin view.
-2. Click **Add Venue**.
-3. Enter a name for the venue (e.g., "Preschool" or "Elementary").
-4. Save. You can now add sections to this venue.
+1. Abra a lição na visualização de administração.
+2. Clique em **Adicionar Local**.
+3. Digite um nome para o local (por exemplo, "Maternal" ou "Infantil").
+4. Salve. Agora você pode adicionar seções a este local.
 
-## Adding Sections and Actions
+## Adicionando Seções e Ações
 
-1. Expand a venue to see its sections.
-2. Click **Add Section** and give it a name (e.g., "Welcome").
-3. Within the section, click **Add Action**.
-4. Choose the **role**, **action type** (Say, Do, Note, or Play), and enter the content.
-5. Save.
+1. Expanda um local para ver suas seções.
+2. Clique em **Adicionar Seção** e dê a ela um nome (por exemplo, "Boas-vindas").
+3. Dentro da seção, clique em **Adicionar Ação**.
+4. Escolha a **função**, o **tipo de ação** (Falar, Fazer, Observação ou Tocar) e digite o conteúdo.
+5. Salve.
 
-Repeat this process to build out the full lesson flow.
+Repita este processo para montar o fluxo completo da lição.
 
-## Uploading Lesson-Level Resources
+## Enviando Recursos no Nível da Lição
 
-You can attach downloadable materials directly to a lesson -- for example, an activity sheet or coloring page specific to that week.
+Você pode anexar materiais para download diretamente a uma lição -- por exemplo, uma folha de atividades ou uma página para colorir específica daquela semana.
 
-1. Open the lesson in the admin view.
-2. Navigate to the **Resources** section.
-3. Upload your files.
+1. Abra a lição na visualização de administração.
+2. Acesse a seção **Recursos**.
+3. Envie seus arquivos.
 
 :::tip
-Build your lesson from the volunteer's perspective. Step through the sections and actions in order and ask yourself whether a first-time volunteer could follow along without any other preparation.
+Monte a sua lição a partir da perspectiva do voluntário. Percorra as seções e ações na ordem e pergunte a si mesmo se um voluntário de primeira viagem conseguiria acompanhar sem qualquer outra preparação.
 :::
 
 ## Artigos Relacionados
 
-- [Managing Programs](./managing-programs.md) -- Set up the top-level curriculum container
-- [Managing Studies](./managing-studies.md) -- Organize lessons into study groups
-- [Statistics](./statistics.md) -- Track how your lessons are being used
+- [Gerenciando Programas](./managing-programs.md) -- Configure o contêiner curricular de nível superior
+- [Gerenciando Estudos](./managing-studies.md) -- Organize as lições em grupos de estudo
+- [Estatísticas](./statistics.md) -- Acompanhe como suas lições estão sendo usadas

@@ -1,16 +1,16 @@
 ---
-title: "Audit Log & Undoable Batches"
+title: "Log de Auditoria e Lotes Reversíveis"
 ---
 
-# Audit Log & Undoable Batches
+# Log de Auditoria e Lotes Reversíveis
 
 <div class="article-intro">
 
-Every user-initiated mutation in the Api is recorded — who, what, when, and from where — across all modules, without any per-controller wiring. On top of that ledger sits a batch layer: an import or bulk action can be tagged as a batch and later **undone** row-by-row, Planning-Center-style. Both live in a single `auditLogs` table in the membership database and are driven entirely from one choke point, `BaseController.actionWrapper`. This page maps what gets audited, where the data lives, the performance trade-offs that shape it, and how undo reverses a batch safely without cross-database transactions.
+Toda mutação iniciada por usuário na Api é registrada — quem, o quê, quando e de onde — em todos os módulos, sem nenhuma configuração específica em cada controller. Sobre esse registro existe uma camada de lotes: uma importação ou ação em massa pode ser marcada como lote e depois **desfeita** linha a linha, no estilo do Planning Center. Ambos ficam em uma única tabela `auditLogs` no banco de dados de membros e são controlados inteiramente por um único ponto de entrada, `BaseController.actionWrapper`. Esta página mostra o que é auditado, onde os dados ficam, os compromissos de desempenho que moldam a solução e como a reversão de um lote acontece com segurança, sem transações entre bancos de dados.
 
 </div>
 
-## Visão Geral
+## Visão geral
 
 ```
 every mutating request (POST/PUT/PATCH/DELETE)
@@ -31,130 +31,130 @@ BaseController.actionWrapper ──▶ derive {module, entityType, category, act
                                           conflict guard → restore / delete / re-insert
 ```
 
-Two structural facts drive everything below:
+Dois fatos estruturais sustentam tudo o que vem a seguir:
 
-1. **The controller layer is the only place that knows the actor.** Repositories never see `AuthenticatedUser`; only controllers hold `au`. Every module's controllers already pass through `BaseController.actionWrapper`, so that is where auditing hooks in — no repo signatures change anywhere.
-2. **One table serves all modules.** Audit rows for giving, attendance, content, etc. are all written into the membership DB's `auditLogs` via `RepoManager.getRepos("membership")`, even from a non-membership controller. "Everything Jane changed today" stays a single query.
+1. **A camada de controllers é o único lugar que conhece o autor da ação.** Os repositórios nunca recebem `AuthenticatedUser`; somente os controllers têm `au`. Todos os controllers de cada módulo já passam por `BaseController.actionWrapper`, por isso é ali que a auditoria é acoplada — nenhuma assinatura de repositório precisa mudar.
+2. **Uma única tabela atende todos os módulos.** Os registros de auditoria de doações, presenças, conteúdo etc. são gravados na tabela `auditLogs` do banco de membros por meio de `RepoManager.getRepos("membership")`, mesmo quando partem de um controller que não é de membros. Assim, "tudo o que a Jane alterou hoje" continua sendo uma única consulta.
 
-## What gets audited
+## O que é auditado
 
-Auditing is **default-on for every mutating verb on every route**. `actionWrapper` derives the audit fields from the request with zero per-route config:
+A auditoria fica **ativada por padrão para todos os verbos de escrita em todas as rotas**. O `actionWrapper` deriva os campos de auditoria da requisição, sem nenhuma configuração por rota:
 
-| Field | Derived from |
-|-------|--------------|
-| `module` | `this.moduleName` (the owning module) |
-| `entityType` | singularized last segment of `req.baseUrl` (e.g. `/membership/people` → `person`) |
-| `category` | defaults to `entityType` |
-| `action` | `${entityType}_saved` for `POST /`, `${entityType}_deleted` for `DELETE /:id`, else `${entityType}_${method}:${routePath}` so non-CRUD sub-routes (e.g. `task_post:/:id/move`) are captured automatically |
+| Campo | Derivado de |
+|-------|-------------|
+| `module` | `this.moduleName` (o módulo proprietário) |
+| `entityType` | último segmento de `req.baseUrl` no singular (ex.: `/membership/people` → `person`) |
+| `category` | assume o valor de `entityType` por padrão |
+| `action` | `${entityType}_saved` para `POST /`, `${entityType}_deleted` para `DELETE /:id`, caso contrário `${entityType}_${method}:${routePath}`, de modo que sub-rotas que não são CRUD (ex.: `task_post:/:id/move`) sejam capturadas automaticamente |
 
-`BaseController.AUDIT_REGISTRY` is **only for overrides and opt-outs** — it is not an allowlist. A route appears there to rename its category/entityType, to declare `{ dbModule, table }` (which makes it batch- and undo-capable), to mark it `sensitive` (audit anonymous mutations), or to switch it off with `optOut: true`.
+`BaseController.AUDIT_REGISTRY` serve **apenas para substituições e exclusões** — não é uma lista de permissões. Uma rota aparece ali para renomear sua categoria ou entityType, para declarar `{ dbModule, table }` (o que a torna capaz de operar em lote e de ser desfeita), para marcá-la como `sensitive` (auditar mutações anônimas) ou para desativá-la com `optOut: true`.
 
-**Opt-out list** (firehose write paths that would drown the ledger): attendance `visits` / `visitsessions` / `sessions` / `checkin` (the Sunday check-in storm) and messaging `messages` / `connections` / `devices` (chat and presence). Everything else logs.
+**Lista de exclusões** (caminhos de escrita de alto volume que sobrecarregariam o registro): `visits` / `visitsessions` / `sessions` / `checkin` de attendance (a enxurrada de check-ins do domingo) e `messages` / `connections` / `devices` de messaging (chat e presença). Todo o restante é registrado.
 
-**Bulk endpoints** (`people/bulk-delete`, `people/bulk-update`, `groupmembers/bulk-add`, `groupmembers/bulk-remove`) are registered in `BULK_ROUTES` and emit **one audit row per touched id**, so a 10k-person import produces 10k rows — that per-entity granularity is exactly what makes the batch undoable.
+**Endpoints em massa** (`people/bulk-delete`, `people/bulk-update`, `groupmembers/bulk-add`, `groupmembers/bulk-remove`) estão registrados em `BULK_ROUTES` e geram **um registro de auditoria por ID afetado**; assim, uma importação de 10 mil pessoas produz 10 mil registros. Essa granularidade por entidade é exatamente o que torna o lote reversível.
 
-**Anonymous mutations** (`actionWrapperAnon` — guest giving, guest registration, form submissions) are audited only for registry-flagged `sensitive` routes, written with `userId="anonymous"` plus the client IP. Donations lead the list; that path has a real regression history.
+**Mutações anônimas** (`actionWrapperAnon` — doações de visitantes, cadastros de visitantes, envios de formulários) são auditadas apenas nas rotas marcadas como `sensitive` no registro. Elas são gravadas com `userId="anonymous"` e o IP do cliente. As doações lideram essa lista, e esse caminho já teve regressões reais.
 
-### Secret redaction and size caps
+### Redação de segredos e limites de tamanho
 
-Before any `details` payload is stored, `AuditLogHelper.capDetails()` runs `sanitizeValue()` over it:
+Antes de qualquer payload de `details` ser armazenado, `AuditLogHelper.capDetails()` executa `sanitizeValue()` sobre ele:
 
-- **Secret keys are redacted.** Any field whose lowercased name is in `SENSITIVE_KEYS` (`password`, `token`, `cvv`, `cardnumber`, `routing_number`, `accesstoken`, `clientsecret`, …) is replaced with `"[redacted]"`.
-- **Huge scalars are stripped.** Any `data:` URI or string over 4 KB (base64 photos, blobs) becomes `"[stripped]"`.
-- **Oversized rows are capped.** If the serialized JSON exceeds ~64 KB the whole payload is replaced with `{ truncated: true }`. Truncated rows are still viewable — but **not undoable** (there is no before/after image to restore from).
+- **Chaves secretas são redigidas.** Qualquer campo cujo nome em minúsculas esteja em `SENSITIVE_KEYS` (`password`, `token`, `cvv`, `cardnumber`, `routing_number`, `accesstoken`, `clientsecret`, …) é substituído por `"[redacted]"`.
+- **Valores escalares grandes são removidos.** Qualquer URI `data:` ou string com mais de 4 KB (fotos em base64, blobs) vira `"[stripped]"`.
+- **Linhas excessivas são limitadas.** Se o JSON serializado ultrapassar cerca de 64 KB, todo o payload é substituído por `{ truncated: true }`. Linhas truncadas continuam visíveis, mas **não podem ser desfeitas** (não há imagem anterior/posterior para restaurar).
 
-## Where the data lives
+## Onde os dados ficam
 
-A single `auditLogs` table in the **membership** database backs every module. Columns: `id, churchId, userId, category, action, entityType, entityId, details (MEDIUMTEXT JSON string), ipAddress, module, batchId, created`. The migration `tools/migrations/membership/2026-07-04_audit_universal.ts` adds `module` + `batchId`, widens `details` from `TEXT` to `MEDIUMTEXT`, adds indexes `ix_auditLogs_batch (batchId)` and `ix_auditLogs_entity (churchId, module, entityType, entityId, created)`, and creates the `batches` table. The `module` column exists precisely so `entityType` collisions across modules (`note`, `setting` exist in several) stay filterable, and the entity index is what powers both per-entity history and the undo conflict guard.
+Uma única tabela `auditLogs` no banco de dados de **membros** atende a todos os módulos. Colunas: `id, churchId, userId, category, action, entityType, entityId, details (JSON em MEDIUMTEXT), ipAddress, module, batchId, created`. A migração `tools/migrations/membership/2026-07-04_audit_universal.ts` adiciona `module` e `batchId`, troca o tipo de `details` de `TEXT` para `MEDIUMTEXT`, cria os índices `ix_auditLogs_batch (batchId)` e `ix_auditLogs_entity (churchId, module, entityType, entityId, created)` e cria a tabela `batches`. A coluna `module` existe justamente para que colisões de `entityType` entre módulos (`note` e `setting` existem em vários) continuem filtráveis, e o índice por entidade é o que sustenta tanto o histórico por entidade quanto a verificação de conflitos na reversão.
 
-Cross-module writes go through `RepoManager.getRepos("membership")` from inside the wrapper. Ordering is deliberate: **the main write commits in the module DB first, the audit insert second.** In normal mode an audit-insert failure is swallowed (`console.error`, Sentry picks it up) — audit is advisory and must never fail a user's request. In **batch mode it is strict** (see below).
+As gravações entre módulos passam por `RepoManager.getRepos("membership")` de dentro do wrapper. A ordem é intencional: **a gravação principal é confirmada primeiro no banco do módulo; a inserção de auditoria vem depois.** No modo normal, uma falha na inserção de auditoria é engolida (`console.error`, e o Sentry a captura), pois a auditoria é consultiva e nunca pode fazer falhar a requisição de um usuário. No **modo de lote** ela é estrita (veja abaixo).
 
-:::info Why not triggers, CDC, or per-module tables?
-- **MySQL triggers** don't know the acting user (the connection has no `au`), and would mean maintaining trigger sets across every schema.
-- **binlog / CDC** is a whole infrastructure project with the same actor-identity problem.
-- **Threading `userId` through every repo** would touch hundreds of files to move information the controller layer already has.
-- **Per-module audit tables** would mean 7× the plumbing and fan-out queries for any cross-module question. One table at the controller choke point is the least-code design that still captures the actor.
+:::info Por que não triggers, CDC ou tabelas de auditoria por módulo?
+- **Triggers do MySQL** não conhecem o usuário que executa a ação (a conexão não tem `au`) e exigiriam manter conjuntos de triggers em todos os schemas.
+- **binlog / CDC** é um projeto de infraestrutura completo com o mesmo problema de identificação do autor.
+- **Propagar `userId` por todos os repositórios** exigiria alterar centenas de arquivos para transmitir uma informação que a camada de controllers já possui.
+- **Tabelas de auditoria por módulo** significariam 7 vezes mais encanamento e consultas distribuídas para qualquer pergunta entre módulos. Uma única tabela no ponto de entrada dos controllers é o design com menos código que ainda captura o autor.
 :::
 
-## Performance stance
+## Compromissos de desempenho
 
-The hot path is deliberately cheap; the cost is paid only where it buys something.
+O caminho crítico é deliberadamente barato; o custo só é pago onde traz algum benefício.
 
-- **No read-before-write on normal updates.** A regular save does **not** load the old record. The **submitted after-values** are stored in `details.after`; the UI reconstructs old→new at *view* time by diffing against the entity's previous audit row. One query at view time, zero cost at write time. Fields never touched since launch simply show no "old" value — acceptable.
-- **Deletes get a before-image.** `DELETE /:id` on a registry route with `{ dbModule, table }` loads the row generically first and stores it in `details.before`. Deletes are rare and the before-image is the entire forensic value.
-- **Batch mode is the only systematic read-before-write**, and it is opt-in — a bulk/import operation is already expensive, so N snapshot reads are the price of undo.
-- **Audit inserts are awaited.** `actionWrapper` collects the log promises and `await Promise.allSettled(...)` before returning. This is the single most important invariant: on Lambda the container **freezes the instant the response returns**, so an un-awaited insert is silently dropped. "Fire and forget" here means *errors never fail the request*, not *don't await* — a single insert on the already-warm membership pool is ~1–3 ms.
+- **Nenhuma leitura antes da escrita em atualizações comuns.** Um salvamento normal **não** carrega o registro antigo. Os **valores posteriores enviados** são armazenados em `details.after`; a interface reconstrói o valor antigo → novo no momento da *visualização*, comparando com o registro de auditoria anterior da entidade. Uma consulta na visualização, custo zero na escrita. Campos que nunca foram alterados desde o lançamento simplesmente não mostram um valor "antigo" — aceitável.
+- **Exclusões guardam uma imagem anterior.** `DELETE /:id` em uma rota do registro com `{ dbModule, table }` carrega primeiro a linha de forma genérica e a armazena em `details.before`. Exclusões são raras e a imagem anterior é todo o valor forense.
+- **O modo de lote é a única leitura sistemática antes da escrita**, e é opt-in — uma operação em massa ou de importação já é cara, então N leituras de snapshot são o preço da reversibilidade.
+- **As inserções de auditoria são aguardadas.** O `actionWrapper` coleta as promessas de log e executa `await Promise.allSettled(...)` antes de retornar. Esta é a invariante mais importante: no Lambda, o contêiner **é congelado no instante em que a resposta é devolvida**, então uma inserção não aguardada é descartada silenciosamente. "Disparar e esquecer" aqui significa *erros nunca fazem a requisição falhar*, não *não aguardar* — uma única inserção no pool de membros já aquecido leva cerca de 1–3 ms.
 
-## Batches and undo
+## Lotes e desfazer
 
-A **batch** groups a set of mutations so they can be reviewed and reversed together. There are two ways to open one:
+Um **lote** agrupa um conjunto de mutações para que possam ser revisadas e revertidas em conjunto. Há duas formas de abrir um lote:
 
-- **Explicit:** `POST /membership/batches { label, source }` returns a `batchId`. The client (B1Transfer, a B1Admin import UI) then sends `X-Batch-Id: <id>` on every subsequent save/delete. `POST /membership/batches/:id/complete` closes it and stamps `itemCount`.
-- **Implicit:** the four bulk endpoints open, populate, and complete their own batch inside the single request, returning the `batchId` in the response.
+- **Explícita:** `POST /membership/batches { label, source }` retorna um `batchId`. O cliente (B1Transfer, uma interface de importação do B1Admin) então envia `X-Batch-Id: <id>` em todos os salvamentos e exclusões seguintes. `POST /membership/batches/:id/complete` fecha o lote e grava `itemCount`.
+- **Implícita:** os quatro endpoints em massa abrem, preenchem e concluem o próprio lote dentro de uma única requisição, retornando o `batchId` na resposta.
 
-The `batches` table (membership DB): `id, churchId, userId, label, source, status (open|completed|undone|partial|failed), itemCount, created, completedAt, undoneAt`.
+A tabela `batches` (banco de membros): `id, churchId, userId, label, source, status (open|completed|undone|partial|failed), itemCount, created, completedAt, undoneAt`.
 
-### Batch mode is strict
+### O modo de lote é estrito
 
-When `X-Batch-Id` is present, `actionWrapper` tightens every guard (`writeBatchAuditRows`):
+Quando `X-Batch-Id` está presente, o `actionWrapper` reforça todas as validações (`writeBatchAuditRows`):
 
-1. The batch must exist, be `open`, and belong to `au.churchId` — otherwise **403**.
-2. The route must be batch-capable (`{ dbModule, table }` in the registry) — otherwise **400**.
-3. Before the action runs, before-images for all affected ids are loaded in **one** `WHERE id IN (...) AND churchId = ?` query. If that snapshot read fails, the request **fails 500 and the action does not execute** — batch mode must never produce an un-undoable ledger silently. (Normal mode, by contrast, is best-effort and swallows snapshot failures.)
-4. After the action succeeds, one audit row per entity is written with `batchId`, `details.before`, and `details.after`, plus an explicit **create marker** for rows the batch created.
+1. O lote deve existir, estar `open` e pertencer a `au.churchId` — caso contrário, **403**.
+2. A rota deve ser capaz de operar em lote (`{ dbModule, table }` no registro) — caso contrário, **400**.
+3. Antes de a ação ser executada, as imagens anteriores de todos os IDs afetados são carregadas em uma **única** consulta `WHERE id IN (...) AND churchId = ?`. Se essa leitura de snapshot falhar, a requisição **falha com 500 e a ação não é executada** — o modo de lote nunca pode produzir silenciosamente um registro que não pode ser desfeito. (Já o modo normal é de melhor esforço e ignora falhas de snapshot.)
+4. Após a ação ser concluída com sucesso, um registro de auditoria por entidade é gravado com `batchId`, `details.before` e `details.after`, além de um **marcador de criação** explícito para as linhas criadas pelo lote.
 
-### Undo
+### Desfazer
 
-`POST /membership/batches/:id/undo` (permission: batch creator or `Permissions.server.admin`). It refuses if the batch is not `completed` or is older than the **30-day undo window**. `BatchUndoHelper.undo()` then:
+`POST /membership/batches/:id/undo` (permissão: quem criou o lote ou `Permissions.server.admin`). A operação é recusada se o lote não estiver `completed` ou se for mais antigo que a **janela de desfazer de 30 dias**. Em seguida, `BatchUndoHelper.undo()`:
 
-1. Loads the batch's audit rows and **groups them by `(module, entityType, entityId)`.** An entity touched several times inside one batch is reversed **once**, back to its true pre-batch state — the earliest before-image, or a delete if the batch created it. This is why undo does not naively replay each row: restoring an intermediate mid-batch snapshot would be wrong.
-2. For each entity, runs the **conflict guard first**: `auditLog.hasLaterModification()` asks whether any *later* audit entry exists for that same `(module, entityType, entityId)` outside this batch. If so, the entity was edited after the import — it is **skipped and reported**, never clobbered. This reuses the audit log itself as the modification detector; no `modifiedAt` columns are needed on any table.
-3. Reverses per the recorded op, resolving `{ dbModule, table }` from the registry and using generic Kysely writes:
-   - **created** → hard-delete the row.
-   - **updated** → write `details.before` back.
-   - **deleted** → re-insert `details.before` (update-or-insert if a row with that id resurfaced).
-4. Each reversal is itself audited (`action: "<entityType>_undone"`, no `batchId` — undo-of-undo is out of scope).
+1. Carrega os registros de auditoria do lote e os **agrupa por `(module, entityType, entityId)`**. Uma entidade modificada várias vezes dentro de um mesmo lote é revertida **uma única vez**, ao seu verdadeiro estado anterior ao lote — a imagem anterior mais antiga, ou uma exclusão caso o lote a tenha criado. É por isso que a reversão não reexecuta cada linha ingenuamente: restaurar um snapshot intermediário no meio do lote estaria errado.
+2. Para cada entidade, executa primeiro a **verificação de conflitos**: `auditLog.hasLaterModification()` pergunta se existe algum registro de auditoria *posterior* para essa mesma `(module, entityType, entityId)` fora deste lote. Se existir, a entidade foi editada depois da importação — ela é **ignorada e relatada**, nunca sobrescrita. Isso reaproveita o próprio log de auditoria como detector de modificações; não são necessárias colunas `modifiedAt` em nenhuma tabela.
+3. Reverte conforme a operação registrada, resolvendo `{ dbModule, table }` a partir do registro e usando escritas genéricas com Kysely:
+   - **criado** → exclui permanentemente a linha.
+   - **atualizado** → regrava `details.before`.
+   - **excluído** → reinsere `details.before` (atualiza ou insere, caso uma linha com aquele ID tenha reaparecido).
+4. Cada reversão também é auditada (`action: "<entityType>_undone"`, sem `batchId` — desfazer um desfazer está fora do escopo).
 
-The op is chosen from the explicit **create marker**, not inferred from a missing before-image — a legitimately empty before-image or a truncated row must not be mistaken for a create.
+A operação é escolhida pelo **marcador de criação** explícito, e não inferida pela ausência de imagem anterior — uma imagem anterior legitimamente vazia ou uma linha truncada não pode ser confundida com uma criação.
 
-The result payload is `{ restored, skippedConflicts: [...], failed: [...], status }`; the batch moves to `undone` (clean) or `partial`. **There is no cross-DB transaction** — undo is best-effort per row, the same limitation Planning Center documents for merged profiles.
+O payload de resultado é `{ restored, skippedConflicts: [...], failed: [...], status }`; o lote passa para `undone` (sem problemas) ou `partial`. **Não existe transação entre bancos** — a reversão é de melhor esforço, linha a linha, a mesma limitação que o Planning Center documenta para perfis mesclados.
 
-:::warning Side-effect entities need an `onUndo` hook
-Reversing a `groupMember` create must also write `groupMemberHistory` ("left"), or churn analytics silently break — a standing workspace invariant. Such entities register an `onUndo` callback in `AUDIT_REGISTRY` that returns `true` when it has fully handled the reversal, bypassing the generic path. `groupMembers` is the canonical case (keyed by row id on the explicit path but by `personId` on bulk endpoints, and history-tracked on every add/remove).
+:::warning Entidades com efeitos colaterais precisam de um hook `onUndo`
+Reverter a criação de um `groupMember` também precisa gravar `groupMemberHistory` ("left"); caso contrário, as análises de rotatividade quebram silenciosamente — uma invariante permanente do workspace. Essas entidades registram um callback `onUndo` em `AUDIT_REGISTRY` que retorna `true` quando tratou totalmente a reversão, contornando o caminho genérico. `groupMembers` é o caso canônico (identificado pelo ID da linha no caminho explícito, mas por `personId` nos endpoints em massa, e com histórico rastreado em toda adição e remoção).
 :::
 
-## Consumer surfaces
+## Superfícies de consumo
 
-Both admin surfaces are **in progress**; the intent:
+As duas interfaces administrativas estão **em andamento**; a intenção é:
 
-| Surface | Repo | Purpose |
-|---------|------|---------|
-| **Audit Log page** | B1Admin (ManageChurch → Audit Log) | Filter by module/category/user/entity and render old→new diffs — for edits by diffing against the entity's previous entry, for deletes from `details.before`. Backed by `GET /membership/auditlogs`, gated by `Permissions.server.admin`. |
-| **Batches page** | B1Admin (same Settings hub) | List batches with status and counts, **View Results** (the batch's audit rows via `GET /membership/batches/:id/results`), and an **Undo** button that surfaces the skipped-conflict / failed report. |
-| **Import batches** | B1Transfer | Open a batch, send `X-Batch-Id` on its normal save calls, complete at the end — imports become undoable with no new import endpoints. The legacy `importKey` stays as a creates-only lineage marker, superseded for undo. |
+| Superfície | Repositório | Finalidade |
+|------------|-------------|------------|
+| **Página de Log de Auditoria** | B1Admin (ManageChurch → Audit Log) | Filtrar por módulo, categoria, usuário ou entidade e exibir diferenças antigo → novo — para edições, comparando com o registro anterior da entidade; para exclusões, a partir de `details.before`. Alimentada por `GET /membership/auditlogs`, restrita a `Permissions.server.admin`. |
+| **Página de Lotes** | B1Admin (mesmo hub de Configurações) | Listar lotes com status e contagens, **Ver resultados** (os registros de auditoria do lote via `GET /membership/batches/:id/results`) e um botão **Desfazer** que exibe o relatório de conflitos ignorados e falhas. |
+| **Lotes de importação** | B1Transfer | Abrir um lote, enviar `X-Batch-Id` nas chamadas normais de salvamento e concluí-lo ao final — as importações passam a ser reversíveis sem novos endpoints de importação. O `importKey` legado permanece como marcador de linhagem apenas para criações, substituído para fins de reversão. |
 
-## Gotchas a future change must not regress
+## Armadilhas que uma mudança futura não deve regredir
 
-- **Audit inserts must stay awaited.** Un-awaited `AuditLogHelper.log(...)` is dropped by the Lambda freeze. Collect promises and `await Promise.allSettled` before returning.
-- **Kysely drops `undefined` from `.set()`/`.values()`.** On restore, a cleared column would survive untouched. `BatchUndoHelper` converts every absent field to explicit `null` (`nullify`) — never bypass it for a "faster" direct write.
-- **Retention must stay well above the undo window.** `AuditLogRepo.deleteOld()` runs on the nightly timer (default 365-day retention); the undo window is 30 days. If retention ever drops toward the window, undo ledgers get purged out from under open batches.
-- **Truncated rows are not undoable.** A `{ truncated: true }` payload has no before/after image; undo reports it as `failed`, never guesses.
-- **Ordering is module-write-then-audit.** Never move the audit insert ahead of the real write, and keep it strict-in-batch / advisory-in-normal.
+- **As inserções de auditoria devem continuar aguardadas.** Um `AuditLogHelper.log(...)` não aguardado é descartado pelo congelamento do Lambda. Colete as promessas e execute `await Promise.allSettled` antes de retornar.
+- **O Kysely descarta `undefined` em `.set()`/`.values()`.** Na restauração, uma coluna limpa sobreviveria intacta. O `BatchUndoHelper` converte todo campo ausente em `null` explícito (`nullify`) — nunca contorne isso em uma escrita direta "mais rápida".
+- **A retenção deve permanecer bem acima da janela de desfazer.** `AuditLogRepo.deleteOld()` roda no timer noturno (retenção padrão de 365 dias); a janela de desfazer é de 30 dias. Se a retenção algum dia se aproximar dessa janela, os registros para desfazer podem ser apagados enquanto lotes ainda estão abertos.
+- **Linhas truncadas não podem ser desfeitas.** Um payload `{ truncated: true }` não tem imagem anterior/posterior; a reversão o informa como `failed` e nunca tenta adivinhar.
+- **A ordem é escrita no módulo e depois auditoria.** Nunca mova a inserção de auditoria para antes da escrita real, e mantenha o modo estrito em lotes e consultivo no modo normal.
 
-## File inventory
+## Inventário de arquivos
 
-| Area | Files |
-|------|-------|
-| Wrapper / registry | `Api/src/shared/infrastructure/BaseController.ts` (`AUDIT_REGISTRY`, `BULK_ROUTES`, `actionWrapper`, `actionWrapperAnon`, snapshot + write-rows) |
-| Undo engine | `Api/src/shared/infrastructure/BatchUndoHelper.ts` |
-| Audit helper | `Api/src/modules/membership/helpers/AuditLogHelper.ts` (`log`, `capDetails`/`sanitizeValue`, `diffFields`, `getClientIp`) |
+| Área | Arquivos |
+|------|----------|
+| Wrapper / registro | `Api/src/shared/infrastructure/BaseController.ts` (`AUDIT_REGISTRY`, `BULK_ROUTES`, `actionWrapper`, `actionWrapperAnon`, snapshot + escrita das linhas de auditoria) |
+| Motor de reversão | `Api/src/shared/infrastructure/BatchUndoHelper.ts` |
+| Helper de auditoria | `Api/src/modules/membership/helpers/AuditLogHelper.ts` (`log`, `capDetails`/`sanitizeValue`, `diffFields`, `getClientIp`) |
 | Controllers | `Api/src/modules/membership/controllers/AuditLogController.ts`, `BatchController.ts` |
-| Models / repos | `Api/src/modules/membership/models/AuditLog.ts`, `Batch.ts`; `repositories/AuditLogRepo.ts` (`loadFiltered`, `loadForBatch`, `hasLaterModification`, `deleteOld`), `BatchRepo.ts` |
-| Migration | `Api/tools/migrations/membership/2026-07-04_audit_universal.ts` |
-| Admin UI (in progress) | B1Admin Audit Log + Batches pages; B1Transfer import-batch header |
+| Modelos / repositórios | `Api/src/modules/membership/models/AuditLog.ts`, `Batch.ts`; `repositories/AuditLogRepo.ts` (`loadFiltered`, `loadForBatch`, `hasLaterModification`, `deleteOld`), `BatchRepo.ts` |
+| Migração | `Api/tools/migrations/membership/2026-07-04_audit_universal.ts` |
+| Interface administrativa (em andamento) | Páginas Audit Log e Batches do B1Admin; cabeçalho de lote de importação do B1Transfer |
 
-## Related Pages
+## Páginas relacionadas
 
-- [Module Structure](../api/module-structure) — how a non-membership controller reaches the membership repos through `RepoManager`
-- [Giving](./giving) — the donation write paths that are audited as `sensitive` even when anonymous
-- [Membership Endpoints](../api/endpoints/membership) — the REST surface that carries `X-Batch-Id` and exposes `/auditlogs` and `/batches`
+- [Estrutura de módulos](../api/module-structure) — como um controller que não é de membros acessa os repositórios de membros por meio do `RepoManager`
+- [Doações](./giving) — os caminhos de escrita de doações que são auditados como `sensitive` mesmo quando anônimos
+- [Endpoints de membros](../api/endpoints/membership) — a superfície REST que carrega `X-Batch-Id` e expõe `/auditlogs` e `/batches`

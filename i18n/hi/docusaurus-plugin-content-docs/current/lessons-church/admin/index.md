@@ -1,46 +1,46 @@
 ---
-title: "Administration"
+title: "प्रशासन"
 ---
 
-# Administration
+# प्रशासन
 
 <div class="article-intro">
 
-The admin area in Lessons.church is where content creators and administrators manage the lesson library. From here you can build out your curriculum structure, upload resources, review usage statistics, and connect third-party content providers.
+Lessons.church का प्रशासन क्षेत्र वह जगह है जहाँ सामग्री निर्माता और प्रशासक पाठ लाइब्रेरी का प्रबंधन करते हैं। यहाँ से आप अपनी पाठ्यक्रम संरचना तैयार कर सकते हैं, संसाधन अपलोड कर सकते हैं, उपयोग के आँकड़े देख सकते हैं, और तृतीय-पक्ष सामग्री प्रदाताओं को जोड़ सकते हैं।
 
 </div>
 
 :::warning
-Admin access requires appropriate permissions. If you do not see the admin options, contact your church administrator to request access.
+प्रशासन तक पहुँच के लिए उपयुक्त अनुमतियाँ आवश्यक हैं। यदि आपको प्रशासन विकल्प दिखाई न दें, तो पहुँच का अनुरोध करने के लिए अपने चर्च प्रशासक से संपर्क करें।
 :::
 
-## What You Can Do
+## आप क्या कर सकते हैं
 
-The admin area gives you full control over your content:
+प्रशासन क्षेत्र आपको अपनी सामग्री पर पूरा नियंत्रण देता है:
 
-- **Create and edit programs** -- Set up top-level curriculum series with names, descriptions, images, and slugs.
-- **Manage studies** -- Organize groups of related lessons within each program.
-- **Build lessons** -- Add individual lessons with venues, sections, roles, and actions.
-- **Upload resources** -- Attach downloadable files (PDFs, activity sheets, images) at the program, study, or lesson level.
-- **View statistics** -- See which content is being downloaded, by whom, and where.
-- **Configure providers** -- Connect external curriculum providers that use the Open Lesson Format.
-- **Year plans** -- Publish week 1, 2, 3… sequences for any curriculum. Churches apply them in B1 Admin.
+- **कार्यक्रम बनाएँ और संपादित करें** -- नाम, विवरण, चित्र और स्लग के साथ शीर्ष-स्तरीय पाठ्यक्रम श्रृंखलाएँ सेट करें।
+- **अध्ययन प्रबंधित करें** -- हर कार्यक्रम के भीतर संबंधित पाठों के समूह व्यवस्थित करें।
+- **पाठ बनाएँ** -- वेन्यू, सेक्शन, भूमिकाओं और कार्यों के साथ व्यक्तिगत पाठ जोड़ें।
+- **संसाधन अपलोड करें** -- कार्यक्रम, अध्ययन या पाठ स्तर पर डाउनलोड करने योग्य फ़ाइलें (PDF, गतिविधि पत्रक, चित्र) संलग्न करें।
+- **आँकड़े देखें** -- देखें कि कौन-सी सामग्री किसके द्वारा और कहाँ डाउनलोड की जा रही है।
+- **प्रदाता कॉन्फ़िगर करें** -- Open Lesson Format का उपयोग करने वाले बाहरी पाठ्यक्रम प्रदाताओं को जोड़ें।
+- **वार्षिक योजनाएँ** -- किसी भी पाठ्यक्रम के लिए सप्ताह 1, 2, 3… के क्रम प्रकाशित करें। चर्च इन्हें B1 Admin में लागू करते हैं।
 
-## Content Hierarchy
+## सामग्री की संरचना
 
-As an admin, it helps to understand how content is structured:
+एक प्रशासक के रूप में, यह समझना उपयोगी है कि सामग्री कैसे व्यवस्थित है:
 
-1. **Programs** contain one or more studies.
-2. **Studies** contain one or more lessons.
-3. **Lessons** contain one or more venues (age-group variations).
-4. **Venues** contain sections, and sections contain role-based actions.
+1. **कार्यक्रमों** में एक या अधिक अध्ययन होते हैं।
+2. **अध्ययनों** में एक या अधिक पाठ होते हैं।
+3. **पाठों** में एक या अधिक वेन्यू (आयु-वर्ग के अनुसार भिन्नताएँ) होते हैं।
+4. **वेन्यू** में सेक्शन होते हैं, और सेक्शन में भूमिका-आधारित कार्य होते हैं।
 
-Each level can have its own downloadable resources attached.
+हर स्तर पर अपने स्वयं के डाउनलोड करने योग्य संसाधन संलग्न किए जा सकते हैं।
 
-## Next Steps
+## अगले चरण
 
-- [Managing Programs](./managing-programs.md) -- Create and configure programs
-- [Managing Studies](./managing-studies.md) -- Add studies within a program
-- [Managing Lessons](./managing-lessons.md) -- Build out lessons with venues, sections, and actions
-- [Statistics](./statistics.md) -- Review download and usage data
-- [Third-Party Providers](./third-party-providers.md) -- Connect external curriculum feeds
+- [कार्यक्रम प्रबंधित करना](./managing-programs.md) -- कार्यक्रम बनाएँ और कॉन्फ़िगर करें
+- [अध्ययन प्रबंधित करना](./managing-studies.md) -- किसी कार्यक्रम के भीतर अध्ययन जोड़ें
+- [पाठ प्रबंधित करना](./managing-lessons.md) -- वेन्यू, सेक्शन और कार्यों के साथ पाठ तैयार करें
+- [आँकड़े](./statistics.md) -- डाउनलोड और उपयोग का डेटा देखें
+- [तृतीय-पक्ष प्रदाता](./third-party-providers.md) -- बाहरी पाठ्यक्रम फ़ीड जोड़ें

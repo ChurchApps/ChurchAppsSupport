@@ -2,89 +2,89 @@
 title: "प्रिंटर सेटअप"
 ---
 
-# Printer Setup
+# प्रिंटर सेटअप
 
 <div class="article-intro">
 
-B1 Church Checkin can print name labels and parent pickup slips to a network label printer. Setting up the printer is optional -- you can use the app without a printer for attendance tracking only.
+B1 Church Checkin नेटवर्क लेबल प्रिंटर पर नाम के लेबल और पेरेंट पिकअप स्लिप प्रिंट कर सकता है। प्रिंटर सेट करना वैकल्पिक है। अगर आपको केवल उपस्थिति दर्ज करनी है, तो आप बिना प्रिंटर के भी ऐप का उपयोग कर सकते हैं।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- [Log in](./logging-in) to the B1 Church Checkin app and select your church
-- Connect a compatible network label printer to the same Wi-Fi network as the tablet
+- B1 Church Checkin ऐप में [लॉग इन](./logging-in) करें और अपना चर्च चुनें
+- एक संगत नेटवर्क लेबल प्रिंटर को उसी Wi-Fi नेटवर्क से जोड़ें जिससे टैबलेट जुड़ा है
 
 </div>
 
-## Recommended Labels
+## अनुशंसित लेबल
 
-B1 Checkin's default label template is sized for **1.1" × 3.5"** labels.
+B1 Checkin का डिफ़ॉल्ट लेबल टेम्पलेट **1.1" × 3.5"** आकार के लेबल के लिए बना है।
 
-If you are using a **Brother QL printer**, you must use **Brother DK-1201** labels (1.1" × 3.5"). Brother printers detect the label size from the physical roll loaded in the printer — if the roll does not match the template size, the printer will not print. Do not substitute a different size.
+अगर आप **Brother QL प्रिंटर** का उपयोग कर रहे हैं, तो आपको **Brother DK-1201** लेबल (1.1" × 3.5") ही इस्तेमाल करने होंगे। Brother प्रिंटर प्रिंटर में डाले गए रोल से लेबल का आकार पहचानते हैं। अगर रोल टेम्पलेट के आकार से मेल नहीं खाता, तो प्रिंटर प्रिंट नहीं करेगा। कोई दूसरा आकार इस्तेमाल न करें।
 
 [Brother DK-1201 Compatible Labels — 12 Rolls (Amazon)](https://www.amazon.com/dp/B0716XB6JG?tag=signpresenter-20)
 
 ---
 
-## Accessing Printer Settings
+## प्रिंटर सेटिंग्स खोलना
 
-You can open the printer settings screen at any time through the **Admin Settings** menu:
+आप **Admin Settings** मेनू के माध्यम से किसी भी समय प्रिंटर सेटिंग्स स्क्रीन खोल सकते हैं:
 
-1. Tap the **church logo** in the header **seven times** in quick succession (within two seconds).
-2. If a kiosk PIN is set, enter the PIN when prompted.
-3. On the Admin Settings screen, tap **Change Printer**.
+1. हेडर में **चर्च लोगो** पर दो सेकंड के भीतर लगातार **सात बार** टैप करें।
+2. अगर कियोस्क PIN सेट है, तो पूछे जाने पर PIN दर्ज करें।
+3. Admin Settings स्क्रीन पर **Change Printer** टैप करें।
 
-This opens the printer settings screen where you can scan for printers, select one, and run a test print.
+इससे प्रिंटर सेटिंग्स स्क्रीन खुलती है, जहाँ आप प्रिंटर खोज सकते हैं, एक चुन सकते हैं और टेस्ट प्रिंट चला सकते हैं।
 
-## Scanning for Printers
+## प्रिंटर खोजना
 
-When the printer settings screen opens, the app automatically scans your local network for compatible printers. You will see a loading indicator with the message "Scanning for printers" while the scan is in progress.
+जब प्रिंटर सेटिंग्स स्क्रीन खुलती है, तो ऐप अपने आप आपके लोकल नेटवर्क पर संगत प्रिंटर खोजता है। खोज चलने के दौरान आपको "Scanning for printers" संदेश के साथ एक लोडिंग इंडिकेटर दिखेगा।
 
-Once the scan completes, you will see a list of discovered printers. Each printer card shows:
+खोज पूरी होने पर आपको मिले हुए प्रिंटरों की सूची दिखेगी। हर प्रिंटर कार्ड में ये जानकारी दिखती है:
 
-- The **printer model** name
-- The **IP address** of the printer on your network
+- **प्रिंटर मॉडल** का नाम
+- आपके नेटवर्क पर प्रिंटर का **IP पता**
 
-A **No Printer** option is always included at the bottom of the list.
+सूची के सबसे नीचे हमेशा **No Printer** विकल्प शामिल रहता है।
 
 :::warning
-The tablet and the printer must be connected to the same local network for the scan to discover the printer. If your printer does not appear, verify that both devices are on the same Wi-Fi network and that the printer is powered on.
+स्कैन में प्रिंटर मिलने के लिए टैबलेट और प्रिंटर एक ही लोकल नेटवर्क से जुड़े होने चाहिए। अगर आपका प्रिंटर सूची में नहीं आता, तो जाँच लें कि दोनों डिवाइस एक ही Wi-Fi नेटवर्क पर हैं और प्रिंटर चालू है।
 :::
 
-## Selecting a Printer
+## प्रिंटर चुनना
 
-1. Tap the printer you want to use. The selected printer card becomes highlighted with a checkmark.
-2. To print without a physical printer (for testing or attendance-only mode), select **No Printer**.
+1. जिस प्रिंटर का उपयोग करना है, उस पर टैप करें। चुना गया प्रिंटर कार्ड हाइलाइट हो जाएगा और उस पर चेकमार्क दिखेगा।
+2. बिना भौतिक प्रिंटर के प्रिंट करने के लिए (टेस्टिंग या केवल उपस्थिति मोड के लिए), **No Printer** चुनें।
 
-## Test Printing
+## टेस्ट प्रिंट
 
-Before saving your selection, you can verify the connection works:
+अपना चयन सेव करने से पहले आप जाँच सकते हैं कि कनेक्शन काम कर रहा है:
 
-1. Select a printer from the list.
-2. Tap the **Test Print** button at the bottom of the screen.
-3. The app sends a test label to the printer. If the printer is connected properly, a test page will print.
+1. सूची से एक प्रिंटर चुनें।
+2. स्क्रीन के नीचे **Test Print** बटन टैप करें।
+3. ऐप प्रिंटर को एक टेस्ट लेबल भेजता है। अगर प्रिंटर सही तरह से जुड़ा है, तो एक टेस्ट पेज प्रिंट होगा।
 
-If you tap **Test Print** with **No Printer** selected, the app will display an alert reminding you that no printer is selected.
+अगर **No Printer** चुना होने पर आप **Test Print** टैप करते हैं, तो ऐप एक अलर्ट दिखाएगा कि कोई प्रिंटर चुना नहीं गया है।
 
 :::tip
-Always run a test print after selecting a printer to confirm the connection before your next service.
+प्रिंटर चुनने के बाद, अगली सर्विस से पहले हमेशा एक टेस्ट प्रिंट चलाएँ और कनेक्शन की पुष्टि करें।
 :::
 
-## Saving Your Selection
+## अपना चयन सेव करना
 
-When you are satisfied with your printer choice:
+जब आप प्रिंटर के चुनाव से संतुष्ट हों:
 
-1. Tap the **Save & Restart** button at the bottom of the screen.
-2. The app saves your printer selection and restarts to apply the settings.
+1. स्क्रीन के नीचे **Save & Restart** बटन टैप करें।
+2. ऐप आपका प्रिंटर चयन सेव करता है और सेटिंग्स लागू करने के लिए स्वयं को रीस्टार्ट करता है।
 
-Your printer selection is remembered across app restarts. You do not need to set it up again unless you want to change printers.
+आपका प्रिंटर चयन ऐप के रीस्टार्ट होने पर भी याद रहता है। जब तक आप प्रिंटर बदलना न चाहें, आपको इसे दोबारा सेट करने की ज़रूरत नहीं है।
 
 :::info
-If you move the kiosk to a different location or change your network setup, return to the printer settings to scan for printers again and update your selection.
+अगर आप कियोस्क को किसी दूसरी जगह ले जाते हैं या अपने नेटवर्क सेटअप में बदलाव करते हैं, तो प्रिंटर सेटिंग्स पर लौटें, प्रिंटर फिर से खोजें और अपना चयन अपडेट करें।
 :::
 
-## Next Steps
+## अगले चरण
 
-With your printer configured, you are ready to start checking in. See the [check-in workflow](../check-in/) to learn how the full process works, starting with [selecting a service](../check-in/selecting-service).
+प्रिंटर कॉन्फ़िगर हो जाने के बाद, आप चेक-इन शुरू करने के लिए तैयार हैं। पूरी प्रक्रिया कैसे काम करती है, यह जानने के लिए [चेक-इन वर्कफ़्लो](../check-in/) देखें, जो [सर्विस चुनने](../check-in/selecting-service) से शुरू होता है।

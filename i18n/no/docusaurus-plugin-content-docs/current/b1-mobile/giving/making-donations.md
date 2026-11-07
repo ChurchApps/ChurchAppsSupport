@@ -1,51 +1,51 @@
 ---
-title: "Gi en Donasjon"
+title: "Gjøre en donasjon"
 ---
 
-# Gi en Donasjon
+# Gjøre en donasjon
 
 <div class="article-intro">
 
-A gi gjennom B1 Mobile er raskt og enkelt. **Gi**-fanen i givertjenesteseksjonen guider deg gjennom prosessen pa bare noen fa trinn, slik at du kan stotte kirken din fra hvor du enn er.
+Å gi gjennom B1 Mobile er raskt og enkelt. Fanen **Donate** i giveseksjonen leder deg gjennom prosessen på bare noen få steg, slik at du kan støtte menigheten din uansett hvor du er.
 
 </div>
 
 <div class="prereqs">
-<h4>For Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) pa kontoen din
-- Ha et kreditt- eller debetkort klart, eller [lagre en betalingsmetode](./managing-payments) pa forhand
+- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- Ha et kredittkort eller debetkort klart, eller [lagre en betalingsmetode](./managing-payments) på forhånd
 
 </div>
 
-## Hvordan Gi
+## Slik gir du
 
-1. Apne **Givertjeneste**-seksjonen i B1 Mobile.
-2. Trykk pa **Gi**-fanen.
-3. Velg **fondet** du vil gi til. Kirken din kan ha flere fond tilgjengelig, som Generelt Fond, Misjonsfond eller Byggefond.
-4. Skriv inn **belopet** du vil donere.
-5. Oppgi **betalingsdetaljene** dine. Hvis du har en lagret betalingsmetode, kan du velge den her. Ellers skriver du inn kortinformasjonen.
-6. Send donasjonen.
+1. Åpne **Giving**-seksjonen i B1 Mobile.
+2. Trykk på fanen **Donate**.
+3. Velg **fondet** du ønsker å gi til. Menigheten din kan ha flere fond tilgjengelig, for eksempel et generelt fond, et misjonsfond eller et byggefond.
+4. Skriv inn **beløpet** du ønsker å donere.
+5. Oppgi **betalingsopplysningene** dine. Hvis du har en lagret betalingsmetode, kan du velge den her. Ellers skriver du inn kortinformasjonen din.
+6. Send inn donasjonen.
 
-Etter at donasjonen er behandlet, ser du en bekreftelse pa at gaven var vellykket. Donasjonen vises ogsa i **Historikk**-fanen.
+Når donasjonen er behandlet, får du en bekreftelse på at gaven din er gjennomført. Donasjonen vises også i fanen **History**.
 
-## Sikre Betalinger
+## Sikre betalinger
 
-Alle betalinger behandles gjennom **Stripe**, en palitelig og mye brukt betalingsplattform. Kortopplysningene dine handteres sikkert av Stripe og lagres aldri pa ChurchApps-servere. Du kan gi med trygghet om at finansinformasjonen din er beskyttet.
+Alle betalinger behandles gjennom **Stripe**, en pålitelig og mye brukt betalingsplattform. Kortopplysningene dine håndteres trygt av Stripe og lagres aldri på ChurchApps-servere. Du kan gi med trygghet, vitende om at økonomiske opplysninger dine er beskyttet.
 
 :::warning
-Dobbeltsjekk donasjonsbelopet og fondet for du sender. Donasjoner behandles umiddelbart og kan ikke reverseres fra appen.
+Dobbeltsjekk donasjonsbeløpet og fondet før du sender inn. Donasjoner behandles umiddelbart og kan ikke reverseres fra appen.
 :::
 
-## Rask Gjentatt Giving
+## Rask gjentakelse av gave
 
-Hvis du vil gi samme belop som forrige donasjon, trenger du ikke a ga gjennom hele donasjonsprosessen. **Oversikt**-fanen viser den nyeste gaven din sammen med en **Gjenta**-knapp. Trykk pa den for raskt a sende inn samme donasjon igjen.
+Hvis du ønsker å gi samme beløp som din siste donasjon, trenger du ikke gå gjennom hele donasjonsprosessen. Fanen **Overview** viser din siste gave sammen med en **Repeat**-knapp. Trykk på den for raskt å sende inn samme donasjon igjen.
 
 :::tip
-Hvis du planlegger a gi regelmessig, lagre betalingsmetoden din i **Administrer**-fanen slik at du kan donere enda raskere neste gang. Se [Administrere Betalingsmetoder](./managing-payments) for detaljer.
+Hvis du planlegger å gi regelmessig, kan du lagre betalingsmetoden din i fanen **Manage**, slik at du kan donere enda raskere neste gang. Se [Administrere betalingsmetoder](./managing-payments) for detaljer.
 :::
 
-## Relaterte Artikler
+## Relaterte artikler
 
-- [Administrere Betalingsmetoder](./managing-payments) -- Lagre et kort for raskere fremtidig giving
-- [Donasjonshistorikk](./donation-history) -- Se giversammendraget og tidligere donasjoner
+- [Administrere betalingsmetoder](./managing-payments) -- Lagre et kort for raskere gaver i fremtiden
+- [Donasjonshistorikk](./donation-history) -- Se oversikten over giving og tidligere donasjoner

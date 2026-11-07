@@ -6,44 +6,44 @@ title: "Inhalte"
 
 <div class="article-intro">
 
-B1 Mobile bietet Ihnen einen zentralen Ort, um auf alle Inhalte zuzugreifen, die Ihre Gemeinde teilt, direkt von Ihrem Telefon aus. Je nachdem, was Ihre Gemeinde konfiguriert hat, haben Sie moeglicherweise Zugang zu Predigten, Livestreaming, Bibellektuere, einem Tagesvers und Lektionsmaterialien -- alles ohne die App zu verlassen.
+B1 Mobile bietet dir einen zentralen Ort, an dem du auf alle Inhalte zugreifen kannst, die deine Gemeinde teilt, direkt von deinem Telefon aus. Je nachdem, was deine Gemeinde eingerichtet hat, hast du Zugriff auf Predigten, Live-Streaming, Bibellesen, einen Vers des Tages und Unterrichtsmaterialien -- alles, ohne die App zu verlassen.
 
 </div>
 
-## Verfuegbare Inhaltsfunktionen
+## Verfügbare Inhaltsfunktionen
 
 ### Predigten
 
-Durchsuchen und schauen Sie aufgezeichnete Predigten Ihrer Gemeinde. Predigten sind in Wiedergabelisten und Serien organisiert, sodass Sie vergangene Botschaften leicht finden oder einer aktuellen Serie folgen koennen.
+Durchsuche und sieh dir aufgezeichnete Predigten deiner Gemeinde an. Predigten sind in Playlists und Serien organisiert, sodass du vergangene Botschaften leicht finden oder einer aktuellen Serie folgen kannst.
 
-### Livestreaming
+### Live-Streaming
 
-Schauen Sie die Live-Uebertragung Ihrer Gemeinde direkt in der App. Wenn ein Gottesdienst gestreamt wird, koennen Sie sich einschalten und von ueberall aus zuschauen.
+Verfolge die Live-Übertragung deiner Gemeinde direkt in der App. Wenn ein Gottesdienst gestreamt wird, kannst du einschalten und von überall aus zusehen.
 
 ### Bibel
 
-Lesen Sie die Heilige Schrift mit dem integrierten Bibelleser. Navigieren Sie durch Buecher, Kapitel und Verse, ohne die App zu wechseln.
+Lies die Heilige Schrift mit dem integrierten Bibelleser. Navigiere durch Bücher, Kapitel und Verse, ohne die App zu wechseln.
 
-### Tagesvers
+### Vers des Tages
 
-Sehen Sie ein schoeon gestaltetes Bibelvers-Bild, das sich taeglich aendert. Das Bild passt sich automatisch an die Bildschirmausrichtung Ihres Geraetes an.
+Sieh dir ein schön gestaltetes Bibelvers-Bild an, das sich jeden Tag ändert. Das Bild passt sich automatisch an die Ausrichtung des Bildschirms deines Geräts an.
 
-### Lektionen
+### Lessons (veraltet)
 
-Greifen Sie auf den Lehrplan und die Lernmaterialien Ihrer Gemeinde ueber die eingebettete Lessons.church-Plattform zu. Durchsuchen und sehen Sie geplante Lektionen direkt in B1 Mobile ein.
+Der eingebettete Lessons-Bereich wurde durch **[FreePlay](/docs/freeplay/)** für die Wiedergabe im Klassenzimmer ersetzt sowie durch den direkten Besuch von [Lessons.church](https://lessons.church) zum Durchsuchen. Details findest du auf der [Lessons-Referenzseite](./lessons).
 
 ## Inhalte finden
 
-Inhaltsfunktionen sind ueber das Seitenmenue in der App verfuegbar. Ihr Gemeindeadministrator entscheidet, welche Inhaltsfunktionen aktiviert werden, sodass Sie moeglicherweise nicht alle oben aufgefuehrten Optionen sehen. Wenn eine bestimmte Funktion fehlt, hat Ihre Gemeinde sie moeglicherweise noch nicht konfiguriert.
+Inhaltsfunktionen sind über das Seitenmenü in der App verfügbar. Dein Gemeindeadministrator entscheidet, welche Inhaltsfunktionen aktiviert sind, daher siehst du möglicherweise nicht alle oben aufgeführten Optionen. Wenn eine bestimmte Funktion fehlt, hat deine Gemeinde sie möglicherweise noch nicht eingerichtet.
 
 :::info
-Inhaltsfunktionen werden von Ihrem Gemeindeadministrator ueber [B1 Admin](../../b1-admin/) konfiguriert. Wenn Sie eine erwartete Funktion nicht sehen, wenden Sie sich an Ihr Gemeindebuero.
+Inhaltsfunktionen werden von deinem Gemeindeadministrator über [B1 Admin](../../b1-admin/) konfiguriert. Wenn du eine Funktion nicht siehst, die du erwartest, wende dich an das Gemeindebüro.
 :::
 
-## Naechste Schritte
+## Nächste Schritte
 
-- [Predigten](./sermons) -- Durchsuchen und schauen Sie aufgezeichnete Predigten
-- [Livestreaming](./live-streaming) -- Schauen Sie Live-Uebertragungen
-- [Bibel](./bible) -- Lesen Sie die Heilige Schrift im integrierten Leser
-- [Tagesvers](./verse-of-the-day) -- Sehen Sie den heutigen Tagesvers
-- [Lektionen](./lessons) -- Greifen Sie auf Lehrplaene und Lernmaterialien zu
+- [Predigten](./sermons) -- Aufgezeichnete Predigten durchsuchen und ansehen
+- [Live-Streaming](./live-streaming) -- Live-Übertragungen verfolgen
+- [Bibel](./bible) -- Die Heilige Schrift im integrierten Leser lesen
+- [Vers des Tages](./verse-of-the-day) -- Den heutigen Vers des Tages ansehen
+- [FreePlay](/docs/freeplay/) -- Lektionen auf Klassenzimmer-Fernsehern abspielen (ersetzt den veralteten Lessons-Bereich in der App)

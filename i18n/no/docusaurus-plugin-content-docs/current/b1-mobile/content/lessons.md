@@ -1,50 +1,58 @@
 ---
-title: "Leksjoner"
+title: "Lessons (utfaset)"
 ---
 
-# Leksjoner
+# Lessons (utfaset)
+
+:::danger Lessons-skjermen er erstattet av FreePlay
+Den innebygde **Lessons**-skjermen er utfaset. Læreplaninnhold fra Lessons.church leveres nå gjennom **[FreePlay](/docs/freeplay/)**, ChurchApps' gratis TV-app for klasseromskjermer, Fire TV, Apple TV og Android TV. FreePlay tilbyr avspilling uten nettilkobling, koblingsfunksjon for klasserom og en brukeropplevelse tilpasset TV-fjernkontroll, noe den innebygde Lessons-skjermen ikke kunne tilby.
+
+For frivillige og lærere som trenger å bla gjennom læreplaner på mobil eller nettbrett, logg inn direkte på [Lessons.church](https://lessons.church) i nettleseren din.
+:::
 
 <div class="article-intro">
 
-Leksjoner-skjermen gir deg tilgang til kirkens undervisningsopplegg og laeringsmateriell. Innholdet leveres gjennom Lessons.church-plattformen og er innebygd direkte i B1 Mobile, slik at du kan bla gjennom og se leksjoner uten a bytte til en annen app.
+Lessons-skjermen ga deg tilgang til menighetens læreplaner og læringsmateriell. Innholdet ble levert via Lessons.church-plattformen og var innebygd direkte i B1 Mobile, slik at du kunne bla gjennom og se leksjoner uten å bytte til en annen app.
 
 </div>
 
 <div class="prereqs">
-<h4>For Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) pa kontoen din
-- Kirken din ma ha undervisningsopplegg konfigurert gjennom Lessons.church
+- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- Menigheten din må ha satt opp læreplaner i Lessons.church
 
 </div>
 
-## Tilgang til Leksjoner
+## Slik får du tilgang til Lessons
 
-1. Apne **Leksjoner**-skjermen fra sidemenyen.
-2. Lessons.church-innholdet lastes direkte i appen.
-3. Bla gjennom undervisningsopplegget kirken din har gjort tilgjengelig.
+1. Åpne **Lessons**-skjermen fra sidemenyen.
+2. Innholdet fra Lessons.church lastes direkte i appen.
+3. Bla gjennom læreplanene menigheten din har gjort tilgjengelige.
 
-Kirken din konfigurerer hvilke leksjoner og programmer som vises her. Du ser innholdet som har blitt planlagt eller tildelt av kirkens team.
+Menigheten din bestemmer hvilke leksjoner og programmer som vises her. Du vil se innholdet som menighetens team har planlagt eller tildelt.
 
-## Hva Du Kan Gjore
+## Hva du kan gjøre
 
-Inne pa Leksjoner-skjermen kan du bla gjennom og se materialene kirken din har satt opp. Avhengig av hva kirken din har konfigurert, kan du finne:
+Når du er inne i Lessons-skjermen, kan du bla gjennom og se materialet menigheten din har satt opp. Avhengig av hva menigheten har konfigurert, kan du finne:
 
 - **Leksjonsplaner** -- Strukturerte oversikter med seksjoner og aktiviteter
-- **Presentasjoner og medier** -- Lysbilder, videoer og bilder som folger leksjonene
-- **Nedlastbare ressurser** -- Filer og materialer for videre studier
+- **Presentasjoner og medier** -- Lysbilder, videoer og bilder til leksjonene
+- **Nedlastbare ressurser** -- Filer og materiale for videre studier
 
-Trykk pa individuelle seksjoner innenfor en leksjon for a se innholdet. Bruk navigasjonskontrollene for a flytte mellom seksjoner eller ga tilbake til leksjonslisten.
+Trykk på enkeltseksjoner i en leksjon for å se innholdet. Bruk navigasjonskontrollene for å gå mellom seksjoner eller gå tilbake til leksjonslisten.
 
 :::info
-Lessons.church er en egen ChurchApps-plattform som integreres med B1 Mobile. Kirkens administrator administrerer leksjonsinnholdet gjennom Lessons.church-portalen.
+Lessons.church er en egen plattform fra ChurchApps som integrerer med B1 Mobile. Menighetsadministratoren din håndterer leksjonsinnholdet gjennom Lessons.church-portalen.
 :::
 
 ## Tilgjengelighet
 
-Leksjoner-skjermen vises nar kirken din har konfigurert undervisningsopplegg gjennom Lessons.church. Hvis du ikke ser et **Leksjoner**-alternativ i sidemenyen, har kanskje ikke kirken din satt opp leksjonsinnhold. Kontakt kirkens administrator for mer informasjon.
+Lessons-skjermen vises når menigheten din har satt opp læreplaner i Lessons.church. Hvis du ikke ser et **Lessons**-alternativ i sidemenyen, har menigheten din kanskje ikke satt opp leksjonsinnhold. Kontakt menighetsadministratoren for mer informasjon.
 
-## Relaterte Artikler
+## Relaterte artikler
 
+- [FreePlay-oversikt](/docs/freeplay/) -- TV-appen som erstatter avspilling av leksjoner i klasserom
+- [Lessons.church](/docs/lessons-church/) -- Bla gjennom og administrer læreplaninnhold direkte
 - [Bibelen](./bible) -- Les Skriften sammen med leksjonene dine
-- [Prekener](./sermons) -- Se prekener som utfyller studiene dine
+- [Preken](./sermons) -- Se taler som utfyller studiene dine

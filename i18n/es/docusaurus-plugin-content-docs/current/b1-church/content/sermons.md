@@ -6,42 +6,42 @@ title: "Sermones"
 
 <div class="article-intro">
 
-La pagina de Sermones te permite explorar y ver sermones grabados de tu iglesia. La biblioteca de sermones de tu iglesia se muestra usando la apariencia y el diseno que tu iglesia ha configurado, por lo que la imagen y el estilo coincidiran con la marca de tu iglesia.
+La página de Sermones te permite explorar y ver sermones grabados de tu iglesia. La biblioteca de sermones de tu iglesia se muestra con la apariencia y el diseño que tu iglesia haya configurado, así que el aspecto será coherente con la identidad visual de tu iglesia.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- No se requiere iniciar sesion para ver sermones. La pagina de Sermones es de acceso publico.
-- Tu iglesia debe haber agregado contenido de sermones a traves de su portal de administracion.
+- No se requiere iniciar sesión para ver los sermones. La página de Sermones es de acceso público.
+- Tu iglesia debe haber agregado contenido de sermones a través de su portal de administración.
 
 </div>
 
-## Explorar Sermones
+## Explorar sermones
 
-1. Navega a la pagina de **Sermones** desde la navegacion del sitio de tu iglesia.
-2. Veras un listado de sermones disponibles, generalmente organizados por lista de reproduccion o serie.
-3. Haz clic en cualquier sermon para verlo o escucharlo.
+1. Ve a la página **Sermones** desde el menú de navegación del sitio de tu iglesia.
+2. Verás una lista de los sermones disponibles, normalmente organizados por lista de reproducción o serie.
+3. Haz clic en cualquier sermón para verlo o escucharlo.
 
-Los sermones pueden incluir contenido de video o audio alojado en plataformas como YouTube, Vimeo o Facebook. Cuando haces clic en un sermon, el contenido multimedia se reproduce directamente en la pagina.
+Los sermones pueden incluir contenido de video o audio alojado en plataformas como YouTube, Vimeo o Facebook. Al hacer clic en un sermón, el contenido se reproduce directamente en la página.
 
-## Lo que Veras
+## Lo que verás
 
-Cada entrada de sermon puede mostrar:
+Cada entrada de sermón puede mostrar:
 
-- **Titulo** -- El nombre del sermon
-- **Predicador** -- Quien dio el mensaje
-- **Fecha** -- Cuando se grabo o publico el sermon
-- **Descripcion** -- Un resumen del contenido del sermon
-- **Miniatura** -- Una imagen de vista previa del sermon
+- **Título** -- El nombre del sermón
+- **Predicador** -- Quién dio el mensaje
+- **Fecha** -- Cuándo se grabó o se publicó el sermón
+- **Descripción** -- Un resumen del contenido del sermón
+- **Miniatura** -- Una imagen de vista previa del sermón
 
-Tu iglesia organiza los sermones en listas de reproduccion o series. Esto facilita seguir una serie de varias semanas o encontrar sermones sobre un tema en particular.
+Tu iglesia organiza los sermones en listas de reproducción o series. Esto facilita seguir una serie de varias semanas o encontrar sermones sobre un tema en particular.
 
 :::tip
-Si buscas una transmision en vivo en lugar de un sermon grabado, consulta la pagina de [Transmision en Vivo](./live-streaming.md).
+Si buscas una transmisión en vivo en lugar de un sermón grabado, consulta la página de [Transmisiones en vivo](./live-streaming.md).
 :::
 
 ## Disponibilidad
 
-La pagina de Sermones esta disponible cuando tu iglesia ha agregado contenido de sermones a traves de su portal de administracion. Si no ves un enlace de **Sermones** en la navegacion de tu iglesia, es posible que tu iglesia aun no haya configurado esta funcion. Contacta al administrador de tu iglesia para mas informacion.
+La página de Sermones está disponible cuando tu iglesia ha agregado contenido de sermones a través de su portal de administración. Si no ves un enlace a **Sermones** en el menú de navegación de tu iglesia, es posible que esta función aún no esté configurada. Comunícate con el administrador de tu iglesia para obtener más información.

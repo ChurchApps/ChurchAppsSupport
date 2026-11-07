@@ -1,46 +1,50 @@
 ---
-title: "Membership Endpoints"
+title: "Ledenschapseindpunten"
 ---
 
-# Membership Endpoints
+# Ledenschapseindpunten
 
 <div class="article-intro">
 
-De Membership module beheert personen, kerken, groepen, huishoudens, rollen, machtigingen, formulieren en instellingen. Het is de grootste module en biedt de kernidentiteits- en autorisatielaag voor alle andere modules.
+De module Leden beheert personen, kerken, groepen, huishoudens, rollen, rechten, formulieren en instellingen. Het is de grootste module en vormt de kern van identiteit en autorisatie voor alle andere modules.
 
 </div>
 
-**Base path:** `/membership`
+**Basispad:** `/membership`
 
 ## Personen
 
-Base path: `/membership/people`
+Basispad: `/membership/people`
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | People.View of Lid | Alle personen voor de kerk weergeven |
+| GET | `/` | JWT | People.View of Member | Alle personen van de kerk weergeven |
 | GET | `/:id` | JWT | People.View of eigen record | Een persoon op ID ophalen (inclusief formulierinzendingen) |
-| GET | `/ids?ids=` | JWT | People.View of Lid | Meerdere personen op kommagescheiden ID's ophalen |
-| GET | `/basic?ids=` | JWT | — | Basisinformatie (naam alleen) voor meerdere personen ophalen |
-| GET | `/recent` | JWT | People.View of Lid | Onlangs toegevoegde personen |
-| GET | `/search?term=&email=` | JWT | People.View of Lid | Personen op naam of e-mail zoeken |
-| GET | `/search/phone?number=` | JWT | People.View of Lid | Op telefoonnummer zoeken |
-| GET | `/search/group?groupId=` | JWT | People.View of Lid | Personen in een specifieke groep ophalen |
+| GET | `/ids?ids=` | JWT | People.View, Member of People.ViewNames | Meerdere personen ophalen op basis van door komma's gescheiden ID's. Aanroepers met alleen People.ViewNames (zonder People.View) krijgen het basismodel, waarbij personen die zich hebben afgemeld worden weggelaten (behalve de aanroeper zelf) |
+| GET | `/basic?ids=` | JWT | — | Basisgegevens (alleen naam) ophalen voor meerdere personen |
+| GET | `/names?ids=` | JWT | Elk kerkrecht | `[{ id, name: { display, first, last }, photo }]`, gesorteerd op achternaam en daarna voornaam, voor door komma's gescheiden ID's waarop de aanroeper al toegang heeft. Zo kunnen rollen zonder People.View (zoals donaties en aanwezigheid) personen een naam geven. Geen zoekfunctie en geen filter op de ledenlijst |
+| POST | `/names` | JWT | Elk kerkrecht | Hetzelfde als `GET /names`. Body: `{ peopleIds }` (of `{ ids }`) |
+| GET | `/recent` | JWT | People.View, Member of People.ViewNames | Recent toegevoegde personen. Aanroepers met alleen People.ViewNames (ook leden met toegang tot de ledenlijst) krijgen het basismodel (`id`, `name.display`, `photo`, `membershipStatus`), waarbij personen die zich hebben afgemeld worden weggelaten |
+| GET | `/guest-register/options?churchId=` | Openbaar | — | Controlelijst voor gastregistratie via QR-code: geeft `{ email, phone, address, birthDate, gender, maritalStatus, grade, comments }` terug, elk met de waarde `"off"`, `"optional"` of `"required"` (afgeleid van de openbare instelling `guestRegistrationFields`; ontbrekende of ongeldige waarden vallen terug op e-mail en telefoon als optioneel, en de rest als uit). Vereist `enableQRGuestRegistration`, tenzij het verzoek een overeenkomend site- of kerktoken bevat. Snelheidslimiet van toepassing (429) |
+| GET | `/search?term=&email=` | JWT | People.View, Member of People.ViewNames | Personen zoeken op naam of e-mail (maximaal 100, gesorteerd op achternaam en daarna voornaam). Aanroepers met alleen People.ViewNames (ook leden met toegang tot de ledenlijst) krijgen een naamzoekopdracht die het basismodel teruggeeft; een zoekopdracht op `email` geeft `[]` terug |
+| GET | `/search/phone?number=` | JWT | People.View of Member | Zoeken op telefoonnummer |
+| GET | `/search/group?groupId=` | JWT | People.View of Member | Personen in een specifieke groep ophalen |
 | GET | `/household/:householdId` | JWT | — | Alle personen in een huishouden ophalen |
 | GET | `/attendance` | JWT | People.Edit | Deelnemers laden met filters (campusId, serviceId, serviceTimeId, groupId, categoryName, startDate, endDate) |
-| GET | `/timeline?personIds=&groupIds=` | JWT | — | Timelinegegevens voor personen en groepen laden |
-| GET | `/directory/:id` | JWT | — | Persoon voor directoryweergave ophalen (respecteert zichtbaarheidsvoorkeuren) |
-| GET | `/claim/:churchId` | JWT | — | Een persoonrecord voor de huidige gebruiker claimen in een kerk |
-| POST | `/` | JWT | People.Edit of EditSelf | Personen maken of bijwerken (batch) |
-| POST | `/search` | JWT | People.View of Lid | Personen zoeken (POST-variant) |
-| POST | `/advancedSearch` | JWT | People.View of Lid | Zoekopdracht met meerdere voorwaarden (leeftijd, geboortemaand, lidmaatschapsstatus, enz.) |
-| POST | `/loadOrCreate` | Public | — | Een persoon op e-mail zoeken of aanmaken. Body: `{ churchId, email, firstName, lastName }` |
-| POST | `/household/:householdId` | JWT | People.Edit | Huishoudenlidtoewijzingen bijwerken |
-| POST | `/public/email` | Public | — | Een e-mail naar een persoon verzenden. Body: `{ churchId, personId, subject, body, appName }` |
-| POST | `/apiEmails` | Internal | — | Persone-mails op ID's laden (server-naar-server, vereist jwtSecret) |
+| GET | `/timeline?personIds=&groupIds=` | JWT | — | Tijdlijngegevens laden voor personen en groepen |
+| GET | `/directory/:id` | JWT | — | Persoon ophalen voor de ledenlijstweergave (houdt rekening met zichtbaarheidsvoorkeuren) |
+| GET | `/claim/:churchId` | JWT | — | Een persoonsrecord voor de huidige gebruiker claimen bij een kerk |
+| POST | `/` | JWT | People.Edit of EditSelf | Personen aanmaken of bijwerken (in batch) |
+| POST | `/search` | JWT | People.View, Member of People.ViewNames | Personen zoeken (POST-variant). Body: `{ term }` of `{ email }`; dezelfde regels voor alleen namen als bij `GET /search` |
+| POST | `/advancedSearch` | JWT | People.View of Member | Zoeken met meerdere voorwaarden (leeftijd, birthMonth, membershipStatus, enz.). De body is een array van voorwaarden; een lege body betekent geen voorwaarden, en elke andere body die geen array is, geeft 400 terug |
+| POST | `/loadOrCreate` | Openbaar | — | Een persoon zoeken op e-mail of aanmaken. Body: `{ churchId, email, firstName, lastName }` |
+| POST | `/guest-register` | Openbaar | — | Gastregistratie via QR-code. Body: `{ churchId, members: [{ firstName, lastName, email?, phone?, birthDate?, gender?, grade? }], address?, maritalStatus?, comments? }` (1 tot 10 leden; email, phone en maritalStatus gelden alleen voor het eerste lid). Velden die de kerk heeft uitgeschakeld, worden genegeerd; ontbrekende verplichte of ongeldige waarden geven 400 terug. Eerst worden bestaande personen hergebruikt: een lid komt overeen wanneer precies één niet-verwijderde persoon dezelfde voornaam heeft (hoofdletterongevoelig) en hetzelfde e-mailadres of hetzelfde telefoonnummer (thuis, werk of mobiel). Een lid zonder e-mail of telefoon komt overeen op voornaam binnen het gevonden huishouden. Gevonden personen worden nooit gewijzigd. Niet-gevonden leden worden toegevoegd aan het gevonden huishouden, of anders aan een nieuw huishouden (genoemd naar de achternaam van het eerste lid), met `membershipStatus: "Visitor"` en het gedeelde `address`. `comments` wordt opgeslagen als notitie bij het eerste lid. Iedereen wordt toegevoegd aan de privégroep `guestRegistrationGroupId`, als die is ingesteld. Als `guestRegistrationRecordAttendance` gelijk is aan `"true"`, wordt aanwezigheid geregistreerd voor de geplande dienstijden van die groep waarvan het inchecktijdvenster nu open is. Geeft `{ householdId, people: [{ id, name }] }` terug, met de ingediende namen in plaats van de opgeslagen namen. Dezelfde opt-in- en tokenregels en snelheidslimieten gelden als voor de opties-aanroep |
+| POST | `/household/:householdId` | JWT | People.Edit | Huishoudelijke leden toewijzingen bijwerken |
+| POST | `/public/email` | Openbaar | — | Een e-mail naar een persoon sturen. Body: `{ churchId, personId, subject, body, appName }` |
+| POST | `/apiEmails` | Intern | — | E-mailadressen van personen laden op basis van ID's (server-naar-serververkeer, vereist jwtSecret) |
 | DELETE | `/:id` | JWT | People.Edit | Een persoon verwijderen |
 
-### Voorbeeld: Personen Zoeken
+### Voorbeeld: personen zoeken
 
 ```
 GET /membership/people/search?term=John
@@ -58,7 +62,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-### Voorbeeld: Een Persoon Aanmaken
+### Voorbeeld: een persoon aanmaken
 
 ```
 POST /membership/people
@@ -69,268 +73,275 @@ Authorization: Bearer <token>
 
 ## Gebruikers
 
-Base path: `/membership/users`
+Basispad: `/membership/users`
 
-Zie [Authentication & Permissions](./authentication) voor login-, registratie- en wachtwoord-beheerendpunten.
+Zie [Authenticatie en rechten](./authentication) voor eindpunten voor inloggen, registratie en wachtwoordbeheer.
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| POST | `/login` | Public | — | Inloggen (e-mail/wachtwoord, JWT-vernieuming, of authGuid) |
-| POST | `/register` | Public | — | Een nieuwe gebruiker registreren |
-| POST | `/forgot` | Public | — | Wachtwoordresetstuurmail verzenden |
-| POST | `/setPasswordGuid` | Public | — | Wachtwoord instellen met auth GUID uit e-maillink |
-| POST | `/verifyCredentials` | Public | — | E-mail/wachtwoord verifiëren en bijbehorende kerken retourneren |
-| POST | `/loadOrCreate` | JWT | — | Een gebruiker op e-mail/userId zoeken of aanmaken |
-| POST | `/setDisplayName` | JWT | — | Voornaam en achternaam van gebruiker bijwerken |
-| POST | `/updateEmail` | JWT | — | E-mailadres van gebruiker wijzigen |
-| POST | `/updatePassword` | JWT | — | Wachtwoord van gebruiker wijzigen (min. 6 tekens) |
-| POST | `/updateOptedOut` | JWT | — | Opt-out-status van een persoon instellen |
-| GET | `/search?term=` | JWT | Server.Admin | Alle gebruikers op naam/e-mail zoeken |
-| DELETE | `/` | JWT | — | Huidige gebruikersaccount verwijderen |
+| POST | `/login` | Openbaar | — | Inloggen (e-mail/wachtwoord, JWT-vernieuwing of authGuid) |
+| POST | `/register` | Openbaar | — | Een nieuwe gebruiker registreren |
+| POST | `/forgot` | Openbaar | — | E-mail voor wachtwoordherstel versturen |
+| POST | `/setPasswordGuid` | Openbaar | — | Wachtwoord instellen met de auth-GUID uit de e-mailkoppeling |
+| POST | `/verifyCredentials` | Openbaar | — | E-mail en wachtwoord verifiëren en de bijbehorende kerken teruggeven |
+| POST | `/loadOrCreate` | JWT | — | Een gebruiker zoeken op e-mail/userId of aanmaken |
+| POST | `/setDisplayName` | JWT | — | De voor- en achternaam van de gebruiker bijwerken |
+| POST | `/updateEmail` | JWT | — | Het e-mailadres van de gebruiker wijzigen |
+| POST | `/updatePassword` | JWT | — | Het wachtwoord van de gebruiker wijzigen (minimaal 6 tekens) |
+| POST | `/updateOptedOut` | JWT | — | De afmeldstatus van een persoon instellen |
+| POST | `/sendInviteEmail` | JWT | People.Edit | Een uitnodiging per e-mail sturen naar een persoon in deze kerk (`email`, `personName`, `contextName`). De knop toont **Registreren** voor iemand zonder account en **Inloggen** voor een bestaande gebruiker. Een gebruiker die nog nooit is ingelogd, krijgt in plaats daarvan een link **Stel je wachtwoord in** die na 7 dagen verloopt. Dit is een vaste sjabloon en telt daarom niet mee voor de dagelijkse e-maillimiet van de kerk |
+| GET | `/search?term=` | JWT | Server.Admin | Alle gebruikers zoeken op naam of e-mail |
+| DELETE | `/` | JWT | — | Het account van de huidige gebruiker verwijderen |
 
 ## Kerken
 
-Base path: `/membership/churches`
+Basispad: `/membership/churches`
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Alle kerken voor de huidige gebruiker laden |
-| GET | `/:id` | JWT | — | Kerk op ID ophalen |
-| GET | `/:id/getDomainAdmin` | JWT | — | Domeinbeheerder voor een kerk ophalen |
-| GET | `/:id/impersonate` | JWT | Server.Admin | Een kerk zich voordoen (alleen serverbeheerder) |
-| GET | `/all?term=` | JWT | Server.Admin | Alle kerken zoeken (beheerder) |
-| GET | `/search/?name=` | Public | — | Kerken op naam zoeken |
-| GET | `/lookup/?subDomain=&id=` | Public | — | Een kerk op subdomein of ID opzoeken |
-| POST | `/` | JWT | Settings.Edit | Kerkdetails bijwerken |
+| GET | `/` | JWT | — | Alle kerken van de huidige gebruiker laden |
+| GET | `/:id` | JWT | — | Kerk ophalen op ID |
+| GET | `/:id/getDomainAdmin` | JWT | — | De domeinbeheerder van een kerk ophalen |
+| GET | `/:id/impersonate` | JWT | Server.Admin | Een kerk imiteren (alleen serverbeheerder) |
+| GET | `/all?term=` | JWT | Server.Admin | Alle kerken doorzoeken (beheerder) |
+| GET | `/search/?name=` | Openbaar | — | Kerken zoeken op naam |
+| GET | `/lookup/?subDomain=&id=` | Openbaar | — | Een kerk opzoeken op subdomein of ID |
+| POST | `/` | JWT | Settings.Edit | Kerkgegevens bijwerken |
 | POST | `/add` | JWT | — | Een nieuwe kerk registreren. Verplichte velden: name, address1, city, state, zip, country |
-| POST | `/search` | Public | — | Kerken op naam zoeken (POST-variant) |
-| POST | `/select` | JWT | — | Naar een kerk gaan/overschakelen. Body: `{ churchId }` of `{ subDomain }` |
-| POST | `/:id/archive` | JWT | Server.Admin | Een kerk archiveren of uit archief halen |
-| POST | `/byIds` | Public | — | Meerdere kerken op ID's laden |
-| DELETE | `/deleteAbandoned` | JWT | Server.Admin | Kerken die 7+ dagen verlaten zijn, verwijderen |
+| POST | `/search` | Openbaar | — | Kerken zoeken op naam (POST-variant) |
+| POST | `/select` | JWT | — | Een kerk selecteren of wisselen. Body: `{ churchId }` of `{ subDomain }` |
+| POST | `/:id/archive` | JWT | Server.Admin | Een kerk archiveren of het archief opheffen |
+| POST | `/byIds` | Openbaar | — | Meerdere kerken laden op basis van ID's |
+| DELETE | `/deleteAbandoned` | JWT | Server.Admin | Kerken verwijderen die 7 dagen of langer inactief zijn |
 
 ## Groepen
 
-Base path: `/membership/groups`
+Basispad: `/membership/groups`
 
-Breidt standaard CRUD uit (GET `/`, GET `/:id` van basisklasse).
+Breidt de standaard CRUD uit (GET `/`, GET `/:id` uit de basisklasse).
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | Alle groepen weergeven |
-| GET | `/:id` | JWT | — | Groep op ID ophalen |
-| GET | `/search?campusId=&serviceId=&serviceTimeId=` | JWT | — | Groepen op servicefilters zoeken |
+| GET | `/:id` | JWT | — | Groep ophalen op ID |
+| GET | `/search?campusId=&serviceId=&serviceTimeId=` | JWT | — | Groepen zoeken op basis van dienstfilters |
 | GET | `/my` | JWT | — | Groepen voor de huidige gebruiker ophalen |
-| GET | `/my/:tag` | JWT | — | Groepen van huidige gebruiker gefilterd op tag |
+| GET | `/my/:tag` | JWT | — | Groepen van de huidige gebruiker ophalen, gefilterd op tag |
 | GET | `/tag/:tag` | JWT | — | Alle groepen met een specifieke tag ophalen |
-| GET | `/public/:churchId/:id` | Public | — | Een openbare groep op kerk en ID ophalen |
-| GET | `/public/:churchId/tag/:tag` | Public | — | Openbare groepen op tag ophalen |
-| GET | `/public/:churchId/label?label=` | Public | — | Openbare groepen op label ophalen |
-| GET | `/public/:churchId/slug/:slug` | Public | — | Een openbare groep op slug ophalen |
-| POST | `/` | JWT | Groups.Edit | Groepen maken of bijwerken (genereert automatisch slug) |
-| DELETE | `/:id` | JWT | Groups.Edit | Een groep verwijderen (verwijdert ook onderliggende teams voor ministerie-groepen) |
+| GET | `/public/:churchId/:id` | Openbaar | — | Een openbare groep ophalen op kerk en ID |
+| GET | `/public/:churchId/tag/:tag` | Openbaar | — | Openbare groepen ophalen op tag |
+| GET | `/public/:churchId/label?label=` | Openbaar | — | Openbare groepen ophalen op label |
+| GET | `/public/:churchId/slug/:slug` | Openbaar | — | Een openbare groep ophalen op slug |
+| POST | `/` | JWT | Groups.Edit | Groepen aanmaken of bijwerken (genereert automatisch een slug) |
+| DELETE | `/:id` | JWT | Groups.Edit | Een groep verwijderen (verwijdert bij bedieningsgroepen ook de onderliggende teams) |
 
 ## Groepsleden
 
-Base path: `/membership/groupmembers`
+Basispad: `/membership/groupmembers`
 
-Breidt standaard CRUD uit (GET `/:id`, DELETE `/:id` van basisklasse).
+Breidt de standaard CRUD uit (GET `/:id`, DELETE `/:id` uit de basisklasse).
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | GroupMembers.View | Groepslid op ID ophalen |
-| GET | `/` | JWT | GroupMembers.View* | Groepsleden weergeven. Filteren op `?groupId=`, `?groupIds=`, of `?personId=`. *Ook toegestaan als gebruiker in de groep is of eigen personId opvraagt |
-| GET | `/my` | JWT | — | Groepslidmaatschappen van huidige gebruiker ophalen |
-| GET | `/basic/:groupId` | JWT | — | Basisledenlijst voor een groep ophalen |
-| GET | `/public/leaders/:churchId/:groupId` | Public | — | Groepsleiders ophalen (openbaar) |
+| GET | `/:id` | JWT | GroupMembers.View | Groepslid ophalen op ID |
+| GET | `/` | JWT | GroupMembers.View* | Groepsleden weergeven. Filteren met `?groupId=`, `?groupIds=` of `?personId=`. *Ook toegestaan als de gebruiker lid is van de groep of het eigen personId opvraagt, en voor `?groupId=` van elke niet-vertrouwelijke groep wanneer de gebruiker Attendance.View of Attendance.Edit heeft (leden jonger dan 13 jaar worden dan meegenomen) |
+| GET | `/my` | JWT | — | Groepslidmaatschappen van de huidige gebruiker ophalen |
+| GET | `/basic/:groupId` | JWT | — | Eenvoudige ledenlijst van een groep ophalen |
+| GET | `/public/leaders/:churchId/:groupId` | Openbaar | — | Groepsleiders ophalen (openbaar) |
+| GET | `/public/:churchId/:groupId` | Openbaar | — | De openbare ledenlijst van een groep ophalen (beperkte velden: `personId`, `displayName`, `leader`, foto). Alleen wanneer de groep meedoet via `publicRoster`; dit drijft het element `staffGrid` van de websitebouwer aan |
 | POST | `/` | JWT | GroupMembers.Edit | Groepsleden toevoegen of bijwerken |
 | DELETE | `/:id` | JWT | GroupMembers.View | Een groepslid verwijderen |
 
 ## Huishoudens
 
-Base path: `/membership/households`
+Basispad: `/membership/households`
 
 Standaard CRUD-controller.
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | Alle huishoudens weergeven |
-| GET | `/:id` | JWT | — | Huishouden op ID ophalen |
-| POST | `/` | JWT | People.Edit | Huishoudens maken of bijwerken |
+| GET | `/:id` | JWT | — | Huishouden ophalen op ID |
+| POST | `/` | JWT | People.Edit | Huishoudens aanmaken of bijwerken |
 | DELETE | `/:id` | JWT | People.Edit | Een huishouden verwijderen |
 
 ## Rollen
 
-Base path: `/membership/roles`
+Basispad: `/membership/roles`
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | Roles.View | Rol op ID ophalen |
-| GET | `/church/:churchId` | JWT | Roles.View | Alle rollen voor een kerk ophalen |
-| POST | `/` | JWT | Roles.Edit | Rollen maken of bijwerken |
-| DELETE | `/:id` | JWT | Roles.Edit | Een rol verwijderen (verwijdert ook bijbehorende machtigingen en leden) |
+| GET | `/:id` | JWT | Roles.View | Rol ophalen op ID |
+| GET | `/church/:churchId` | JWT | Roles.View | Alle rollen van een kerk ophalen. Elke rol bevat `memberCount`, het aantal verschillende gebruikers in die rol |
+| POST | `/` | JWT | Roles.Edit | Rollen aanmaken of bijwerken |
+| DELETE | `/:id` | JWT | Roles.Edit | Een rol verwijderen (verwijdert ook de rechten en leden ervan) |
 
 ## Rolleden
 
-Base path: `/membership/rolemembers`
+Basispad: `/membership/rolemembers`
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| GET | `/roles/:id` | JWT | Roles.View | Leden voor een rol ophalen. Voeg `?include=users` toe voor gebruikersdetails |
-| POST | `/` | JWT | Roles.Edit | Leden aan een rol toevoegen (maakt gebruiker aan als e-mail niet bestaat) |
+| GET | `/roles/:id` | JWT | Roles.View | Leden van een rol ophalen. Voeg `?include=users` toe om gebruikersgegevens mee te nemen |
+| POST | `/` | JWT | Roles.Edit | Leden aan een rol toevoegen (maakt een gebruiker aan als het e-mailadres nog niet bestaat) |
 | DELETE | `/:id` | JWT | Roles.View | Een rollid verwijderen |
-| DELETE | `/self/:churchId/:userId` | JWT | — | Jezelf van een kerk verwijderen |
+| DELETE | `/self/:churchId/:userId` | JWT | — | Uzelf uit een kerk verwijderen |
 
-## Rolmachtigingen
+## Rolrechten
 
-Base path: `/membership/rolepermissions`
+Basispad: `/membership/rolepermissions`
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| GET | `/roles/:id` | JWT | Roles.View | Machtigingen voor een rol ophalen (gebruik `null` als ID voor "Iedereen"-rol) |
-| POST | `/` | JWT | Roles.Edit | Rolmachtigingen maken of bijwerken |
-| DELETE | `/:id` | JWT | Roles.Edit | Een rolmachtiging verwijderen |
+| GET | `/roles/:id` | JWT | Roles.View | Rechten van een rol ophalen (gebruik `null` als ID voor de rol "Everyone") |
+| POST | `/` | JWT | Roles.Edit | Rolrechten aanmaken of bijwerken |
+| DELETE | `/:id` | JWT | Roles.Edit | Een rolrecht verwijderen |
 
-## Machtigingen
+## Rechten
 
-Base path: `/membership/permissions`
+Basispad: `/membership/permissions`
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | De volledige lijst beschikbare machtigingen ophalen |
+| GET | `/` | JWT | — | De volledige lijst met beschikbare rechten ophalen |
+
+Elk item heeft `apiName`, `section` (inhoudstype), `action` en de labels `displaySection` / `displayAction` die de rolleneditor van B1Admin toont. Recente toevoegingen zijn `MembershipApi` / `People` / `View Names` (**Alleen namen van personen bekijken**, onder Personen en groepen) en `GivingApi` / `Donations` / `Enter` (**Donaties invoeren**, onder Donaties; zie [Donatiebatches](./giving.md#donation-batches)).
 
 ## Formulieren
 
-Base path: `/membership/forms`
+Basispad: `/membership/forms`
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Forms.Admin of Forms.Edit | Alle formulieren weergeven (beheerder ziet alles; editors zien toegewezen + niet-leden-formulieren) |
-| GET | `/:id` | JWT | Formulieertoegang | Een formulier op ID ophalen |
+| GET | `/` | JWT | Forms.Admin of Forms.Edit | Alle formulieren weergeven (beheerders zien alles; editors zien toegewezen formulieren en formulieren die niet voor leden zijn) |
+| GET | `/:id` | JWT | Toegang tot formulier | Formulier ophalen op ID |
 | GET | `/archived` | JWT | Forms.Admin of Forms.Edit | Gearchiveerde formulieren weergeven |
-| GET | `/standalone/:id?churchId=` | JWT | — | Een standalone-formulier ophalen (beperkte formulieren vereisen verificatie) |
-| POST | `/` | JWT | Forms.Admin of Forms.Edit | Formulieren maken of bijwerken |
-| DELETE | `/:id` | JWT | Formulieertoegang | Een formulier verwijderen |
+| GET | `/group/:groupId` | JWT | Groepslid, groepsleider of Forms.Admin | Zelfstandige formulieren die aan de groep zijn gekoppeld (`forms.groupId`), zonder gearchiveerde, gesorteerd op naam. Geeft `id`, `name`, `description` en `open` terug (binnen het beschikbaarheidsvenster). Leden krijgen alleen open formulieren; leiders en formulierbeheerders krijgen ook gesloten formulieren. Levert de gekoppelde formulieren op de groepspagina |
+| GET | `/standalone/:id?churchId=` | JWT | — | Een zelfstandig formulier ophalen (beperkte formulieren vereisen authenticatie) |
+| POST | `/` | JWT | Forms.Admin of Forms.Edit | Formulieren aanmaken of bijwerken. Zelfstandige formulieren accepteren een optionele `photoUrl` (koptekstafbeelding boven het formulier) en `groupId` (gekoppelde groep) |
+| DELETE | `/:id` | JWT | Toegang tot formulier | Een formulier verwijderen |
 
 ## Formulierinzendingen
 
-Base path: `/membership/formsubmissions`
+Basispad: `/membership/formsubmissions`
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Forms.Admin of Forms.Edit | Inzendingen weergeven. Filteren op `?personId=` of `?formId=` |
-| GET | `/:id` | JWT | Forms.Admin of Forms.Edit | Inzending op ID ophalen. Voeg `?include=form,questions,answers` toe |
-| GET | `/formId/:formId` | JWT | Formulieertoegang | Alle inzendingen voor een formulier ophalen (inclusief formulier, vragen, antwoorden) |
-| POST | `/` | JWT | — | Formulierantwoorden indienen (verwerkt beperkte/onbeperkte formulieren, verzendt e-mailmeldingen) |
-| DELETE | `/:id` | JWT | Forms.Admin of Forms.Edit | Een inzending en antwoorden ervan verwijderen |
+| GET | `/` | JWT | Forms.Admin of Forms.Edit | Inzendingen weergeven. Filteren met `?personId=` of `?formId=` |
+| GET | `/my?include=questions,answers` | JWT | — | Alleen eigen gegevens: maximaal 50 zelfstandige formulierinzendingen (geen persoonsformulieren) die het ingelogde lid heeft gedaan of die aan de eigen persoon zijn gekoppeld (`contentType` `person`, `contentId` = het eigen persoon-ID, bijvoorbeeld na een wijziging van de persoon door een beheerder), van nieuw naar oud, elk met `form.name`. Met `include` worden de vragen van elk formulier en de antwoorden van de inzending meegestuurd. Geeft `401` terug als de gebruiker niet aan een persoon is gekoppeld. Levert de sectie **Mijn formulieren** op de B1-pagina Ik |
+| GET | `/group/:groupId` | JWT | Leider van de groep | Antwoorden voor de leiders van de groep: één item per gekoppeld formulier en per groepsevenement met een registratieformulier, elk met `form`, `event` (`id`, `title`, `start`; alleen bij evenementen), `questions` en `submissions` (met `answers` en `personName`, `null` bij anonieme inzendingen) |
+| GET | `/:id` | JWT | Forms.Admin, Forms.Edit of leesrecht | Inzending ophalen op ID. Voeg `?include=form,questions,answers` toe. Leiders van de aan het formulier gekoppelde groep, en leiders van de groep waartoe een evenementregistratie behoort, kunnen deze ook lezen |
+| GET | `/formId/:formId` | JWT | Toegang tot formulier (lezen) | Alle inzendingen voor een formulier ophalen (inclusief formulier, vragen en antwoorden). Leiders van de aan het formulier gekoppelde groep hebben leesrecht |
+| POST | `/` | JWT | — | Formulierantwoorden indienen (verwerkt beperkte en onbeperkte formulieren, verstuurt e-mailmeldingen). Wanneer het formulier `autoCreatePerson` heeft, wordt een gastpersoon op e-mail gezocht of aangemaakt en wordt de inzending daaraan gekoppeld; wanneer het formulier ook een `groupId` heeft, wordt die persoon aan de groep toegevoegd; wanneer `followUpSubject`/`followUpBody` zijn ingesteld, wordt een e-mail met een vaste sjabloon als vervolg naar de indiener gestuurd. Tenzij de aanroeper het formulier kan beheren, wordt `submittedBy` altijd ingesteld op de persoon van het ingelogde lid (of leeg gelaten bij anonieme inzendingen) |
+| DELETE | `/:id` | JWT | Forms.Admin of Forms.Edit | Een inzending en de bijbehorende antwoorden verwijderen |
 
 ## Vragen
 
-Base path: `/membership/questions`
+Basispad: `/membership/questions`
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Formulieertoegang | Vragen voor een formulier weergeven. Vereist `?formId=` |
-| GET | `/:id` | JWT | Formulieertoegang | Een vraag op ID ophalen |
+| GET | `/` | JWT | Toegang tot formulier | Vragen voor een formulier weergeven. Vereist `?formId=` |
+| GET | `/:id` | JWT | Toegang tot formulier | Vraag ophalen op ID |
 | GET | `/unrestricted?formId=` | JWT | — | Vragen voor een onbeperkt formulier ophalen |
-| GET | `/sort/:id/up` | JWT | — | Een vraag in sorteervolgorde omhoog verplaatsen |
-| GET | `/sort/:id/down` | JWT | — | Een vraag in sorteervolgorde omlaag verplaatsen |
-| POST | `/` | JWT | Formulieertoegang | Vragen maken of bijwerken (wijst automatisch sorteervolgorde toe) |
-| DELETE | `/:id?formId=` | JWT | Formulieertoegang | Een vraag verwijderen |
+| GET | `/sort/:id/up` | JWT | — | Een vraag omhoog verplaatsen in de sorteervolgorde |
+| GET | `/sort/:id/down` | JWT | — | Een vraag omlaag verplaatsen in de sorteervolgorde |
+| POST | `/` | JWT | Toegang tot formulier | Vragen aanmaken of bijwerken (wijst automatisch een sorteervolgorde toe) |
+| DELETE | `/:id?formId=` | JWT | Toegang tot formulier | Een vraag verwijderen |
 
 ## Antwoorden
 
-Base path: `/membership/answers`
+Basispad: `/membership/answers`
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Forms.Admin of Forms.Edit | Antwoorden weergeven. Filteren op `?formSubmissionId=` |
-| POST | `/` | JWT | Forms.Admin of Forms.Edit | Antwoorden maken of bijwerken |
+| GET | `/` | JWT | Forms.Admin of Forms.Edit | Antwoorden weergeven. Filteren met `?formSubmissionId=` |
+| POST | `/` | JWT | Forms.Admin of Forms.Edit | Antwoorden aanmaken of bijwerken |
 
-## Lidmachtigingen
+## Ledenrechten
 
-Base path: `/membership/memberpermissions`
+Basispad: `/membership/memberpermissions`
 
-Bepaalt toegang per lid tot specifieke formulieren.
+Bepaalt de toegang van leden tot specifieke formulieren.
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | Formulieertoegang | Een lidmachtiging op ID ophalen |
-| GET | `/member/:id` | JWT | Formulieertoegang | Alle formuliermachtigingen voor een lid ophalen |
-| GET | `/form/:id` | JWT | Formulieertoegang | Alle lidmachtigingen voor een formulier ophalen |
-| GET | `/form/:id/my` | JWT | Formulieertoegang | Eigen machtigung voor een formulier ophalen |
-| POST | `/` | JWT | Formulieertoegang | Lidmachtigingen maken of bijwerken |
-| DELETE | `/:id?formId=` | JWT | Formulieertoegang | Een lidmachtiging verwijderen |
-| DELETE | `/member/:id?formId=` | JWT | Formulieertoegang | Alle machtiningingen voor een lid op een formulier verwijderen |
+| GET | `/:id` | JWT | Toegang tot formulier | Een ledenrecht ophalen op ID |
+| GET | `/member/:id` | JWT | Toegang tot formulier | Alle formulierrechten van een lid ophalen |
+| GET | `/form/:id` | JWT | Toegang tot formulier | Alle ledenrechten voor een formulier ophalen |
+| GET | `/form/:id/my` | JWT | Toegang tot formulier | Het recht van de huidige gebruiker voor een formulier ophalen |
+| POST | `/` | JWT | Toegang tot formulier | Ledenrechten aanmaken of bijwerken |
+| DELETE | `/:id?formId=` | JWT | Toegang tot formulier | Een ledenrecht verwijderen |
+| DELETE | `/member/:id?formId=` | JWT | Toegang tot formulier | Alle rechten van een lid op een formulier verwijderen |
 
 ## Instellingen
 
-Base path: `/membership/settings`
+Basispad: `/membership/settings`
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Settings.Edit | Alle instellingen voor de kerk ophalen |
-| GET | `/public/:churchId` | Public | — | Openbare instellingen voor een kerk ophalen |
-| POST | `/` | JWT | Settings.Edit | Instellingen opslaan (ondersteunt base64-afbeeldingsupload) |
+| GET | `/` | JWT | Settings.Edit | Alle instellingen van de kerk ophalen |
+| GET | `/public/:churchId` | Openbaar | — | Openbare instellingen van een kerk ophalen |
+| POST | `/` | JWT | Settings.Edit | Instellingen opslaan (ondersteunt uploaden van afbeeldingen als base64) |
 
 ## Domeinen
 
-Base path: `/membership/domains`
+Basispad: `/membership/domains`
 
-Breidt standaard CRUD uit (GET `/:id`, GET `/`, DELETE `/:id` van basisklasse).
+Breidt de standaard CRUD uit (GET `/:id`, GET `/`, DELETE `/:id` uit de basisklasse).
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | Alle domeinen weergeven |
-| GET | `/:id` | JWT | — | Domein op ID ophalen |
-| GET | `/lookup/:domainName` | JWT | — | Een domein op naam opzoeken |
-| GET | `/public/lookup/:domainName` | Public | — | Openbare domeinizipopeking op naam |
-| GET | `/health/check` | Public | — | Gezondheidscheck op ongecontroleerde domeinen uitvoeren |
-| POST | `/` | JWT | Settings.Edit | Domeinen maken of bijwerken (triggert Caddy-update) |
+| GET | `/:id` | JWT | — | Domein ophalen op ID |
+| GET | `/lookup/:domainName` | JWT | — | Een domein opzoeken op naam |
+| GET | `/public/lookup/:domainName` | Openbaar | — | Openbaar domein opzoeken op naam |
+| GET | `/health/check` | Openbaar | — | Een gezondheidscontrole uitvoeren op niet-gecontroleerde domeinen |
+| POST | `/` | JWT | Settings.Edit | Domeinen aanmaken of bijwerken (activeert een Caddy-update) |
 | DELETE | `/:id` | JWT | Settings.Edit | Een domein verwijderen |
 
-## Gebruikerskerk
+## Gebruiker-kerk
 
-Base path: `/membership/userchurch`
+Basispad: `/membership/userchurch`
 
-Beheert de associatie tussen gebruikers en kerken.
+Beheert de koppeling tussen gebruikers en kerken.
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| GET | `/userid/:userId` | JWT | — | Gebruiker-kerkrecord op gebruikers-ID ophalen |
-| GET | `/personid/:personId` | JWT | — | E-mail voor gekoppelde gebruiker van een persoon ophalen |
-| GET | `/user/:userId` | JWT | Server.Admin | Alle kerken voor een gebruiker laden |
-| POST | `/` | JWT | — | Een gebruiker-kerkassociatie maken |
-| PATCH | `/:userId` | JWT | — | Laatst geopende tijd bijwerken en toegang registreren |
+| GET | `/userid/:userId` | JWT | — | Gebruiker-kerkrecord ophalen op gebruikers-ID |
+| GET | `/personid/:personId` | JWT | — | E-mailadres ophalen van de gekoppelde gebruiker van een persoon |
+| GET | `/user/:userId` | JWT | Server.Admin | Alle kerken van een gebruiker laden |
+| POST | `/` | JWT | — | Een koppeling tussen gebruiker en kerk aanmaken |
+| PATCH | `/:userId` | JWT | — | Laatst geopende tijd bijwerken en de toegang registreren |
 | DELETE | `/record/:userId/:churchId/:personId` | JWT | — | Een gebruiker-kerkrecord verwijderen |
 
 ## Zichtbaarheidsvoorkeuren
 
-Base path: `/membership/visibilityPreferences`
+Basispad: `/membership/visibilityPreferences`
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| GET | `/my` | JWT | — | Zichtbaarheidsvoorkeuren van huidige gebruiker ophalen |
-| POST | `/` | JWT | — | Zichtbaarheidsvoorkeuren opslaan (adres-, telefoon-, e-mailzichtbaarheid) |
+| GET | `/my` | JWT | — | Zichtbaarheidsvoorkeuren van de huidige gebruiker ophalen |
+| POST | `/` | JWT | — | Zichtbaarheidsvoorkeuren opslaan (zichtbaarheid van adres, telefoon en e-mail) |
 
 ## Query
 
-Base path: `/membership/query`
+Basispad: `/membership/query`
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| POST | `/members` | JWT | — | Zoeken naar leden in natuurlijke taal met AI. Body: `{ text, subDomain, siteUrl }` |
+| POST | `/members` | JWT | — | Ledenzoekopdracht in natuurlijke taal met AI. Body: `{ text, subDomain, siteUrl }` |
 
 ## Clientfouten
 
-Base path: `/membership/clientErrors`
+Basispad: `/membership/clientErrors`
 
-| Method | Path | Auth | Permission | Description |
+| Methode | Pad | Auth | Recht | Beschrijving |
 |--------|------|------|------------|-------------|
-| POST | `/` | JWT | — | Een client-side-fout registreren |
+| POST | `/` | JWT | — | Een fout aan de clientzijde registreren |
 
-## Gerelateerde Pagina's
+## Gerelateerde pagina's
 
-- [Authentication & Permissions](./authentication) — Loginflow, JWT, OAuth, machtigingsmodel
-- [Attendance Endpoints](./attendance) — Service- en bezoektracking
-- [Module Structure](../module-structure) — Codeorganisatiepatronen
+- [Authenticatie en rechten](./authentication) — Inlogproces, JWT, OAuth, rechtenmodel
+- [Aanwezigheidseindpunten](./attendance) — Registratie van diensten en bezoeken
+- [Modulestructuur](../module-structure) — Patronen voor de codeorganisatie

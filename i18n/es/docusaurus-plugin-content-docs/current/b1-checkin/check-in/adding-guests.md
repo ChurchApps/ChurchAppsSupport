@@ -6,47 +6,47 @@ title: "Agregar invitados"
 
 <div class="article-intro">
 
-Si alguien esta visitando a su familia y necesita registrarse con su hogar, puede agregarlo como invitado directamente desde el quiosco. Esto es util para ninos visitantes, familiares o amigos que aun no estan en el sistema de la iglesia.
+Si alguien visita a su familia y necesita registrarse con su hogar, puede agregarlo como invitado directamente desde el kiosco. Esto es útil para niños de visita, familiares o amigos que todavía no están en el sistema de la iglesia.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- [Busque a su familia](./looking-up-members) y seleccione un miembro de los resultados de busqueda
-- Este en la [pantalla de revision del hogar](./household-review) donde pueda ver a los miembros de su familia
+- [Busque a su familia](./looking-up-members) y seleccione a un miembro de los resultados de la búsqueda
+- Esté en la [pantalla de revisión del hogar](./household-review), donde puede ver a los miembros de su familia
 
 </div>
 
-## Como agregar un invitado
+## Cómo agregar un invitado
 
-1. Desde la **pantalla de revision del hogar**, toque el boton **Add Guest** ubicado debajo de la lista de miembros del hogar.
-2. Aparece el formulario de agregar invitado con dos campos:
-   - **First Name** -- Ingrese el nombre del invitado.
-   - **Last Name** -- Ingrese el apellido del invitado.
-3. Toque el boton **Add Guest** para guardar.
+1. En la **pantalla de revisión del hogar**, toque el botón **Agregar invitado** ubicado debajo de la lista de miembros del hogar.
+2. Aparece el formulario para agregar invitados con dos campos:
+   - **Nombre** -- Escriba el nombre de pila del invitado.
+   - **Apellido** -- Escriba el apellido del invitado.
+3. Toque el botón **Agregar invitado** para guardar.
 
-El invitado se agrega a su hogar y regresa a la pantalla de revision del hogar. El nuevo invitado aparecera en su lista de miembros junto con los demas miembros de su familia.
+El invitado se agrega a su hogar y usted regresa a la pantalla de revisión del hogar. El nuevo invitado aparecerá en su lista de miembros junto con los demás miembros de su familia.
 
 :::info
-Si el nombre del invitado coincide con alguien que ya esta en el sistema y no es miembro, la aplicacion se vinculara a ese registro existente en lugar de crear un duplicado. Esto ayuda a mantener limpia la base de datos de su iglesia.
+Si el nombre del invitado coincide con el de alguien que ya está en el sistema y que no es miembro, la aplicación vinculará ese registro existente en lugar de crear un duplicado. Esto ayuda a mantener limpia la base de datos de la iglesia.
 :::
 
-## Despues de agregar un invitado
+## Después de agregar un invitado
 
 Una vez que el invitado aparezca en la lista de su hogar, puede:
 
-- **Expandir su tarjeta** y [asignarle un grupo](./group-assignment), igual que a cualquier otro miembro de la familia.
-- **[Registrar](./completing-checkin)** a todo el hogar incluyendo al invitado.
+- **Expandir su tarjeta** y [asignarlo a un grupo](./group-assignment), igual que a cualquier otro miembro de la familia.
+- **[Registrar la entrada](./completing-checkin)** de todo el hogar, incluido el invitado.
 
 ## Cancelar
 
-Si cambia de opinion, toque el boton **Cancel** en la parte inferior del formulario de agregar invitado para regresar a la pantalla de revision del hogar sin agregar a nadie.
+Si cambia de opinión, toque el botón **Cancelar** en la parte inferior del formulario para agregar invitados y regresar a la pantalla de revisión del hogar sin agregar a nadie.
 
 :::tip
-Agregar un invitado en el quiosco crea un registro de persona en la base de datos de su iglesia. El administrador de su iglesia puede actualizar los datos completos del invitado mas tarde en B1 Admin en [Personas](../../b1-admin/people/adding-people.md).
+Agregar un invitado en el kiosco crea un registro de persona en la base de datos de su iglesia. El administrador de la iglesia puede actualizar los datos completos del invitado más adelante en B1 Admin, en [Personas](../../b1-admin/people/adding-people.md).
 :::
 
 ## Siguiente paso
 
-Despues de agregar invitados y [asignar grupos](./group-assignment) segun sea necesario, esta listo para [completar el registro](./completing-checkin).
+Después de agregar los invitados y [asignar grupos](./group-assignment) según sea necesario, estará listo para [completar el registro de entrada](./completing-checkin).

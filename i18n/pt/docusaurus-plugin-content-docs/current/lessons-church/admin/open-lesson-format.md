@@ -1,27 +1,27 @@
 ---
-title: "Formato de Aula Aberta"
+title: "Formato de Lição Aberta"
 ---
 
-# Formato de Aula Aberta
+# Formato de Lição Aberta
 
 <div class="article-intro">
 
-The Open Lesson Format is a standardized JSON schema that allows third-party content providers to publish curriculum for Lessons.church. Any organization that hosts a feed in this format can be added as an external provider, making their content browsable and playable alongside the built-in library.
+O Formato de Lição Aberta é um esquema JSON padronizado que permite que provedores de conteúdo terceiros publiquem currículos para o Lessons.church. Qualquer organização que hospede um feed nesse formato pode ser adicionada como provedor externo, tornando seu conteúdo navegável e reproduzível junto com a biblioteca integrada.
 
 </div>
 
-## How It Works
+## Como Funciona
 
-A provider hosts two types of endpoints:
+Um provedor hospeda dois tipos de endpoints:
 
-1. **Provider Tree** -- A single URL that returns the full catalog of programs, studies, lessons, and venues. Each venue includes a feed URL pointing to the detailed lesson content.
-2. **Venue Feed** -- One URL per venue, returning the full lesson content (sections, actions, and media files).
+1. **Árvore do Provedor** -- Uma única URL que retorna o catálogo completo de programas, estudos, lições e versões. Cada versão inclui uma URL de feed apontando para o conteúdo detalhado da lição.
+2. **Feed da Versão** -- Uma URL por versão, retornando o conteúdo completo da lição (seções, ações e arquivos de mídia).
 
-When a church adds your provider URL in Lessons.church, the platform fetches your tree to discover available content, then fetches individual venue feeds on demand.
+Quando uma igreja adiciona a URL do seu provedor no Lessons.church, a plataforma busca sua árvore para descobrir o conteúdo disponível e, em seguida, busca os feeds de cada versão sob demanda.
 
-## Provider Tree
+## Árvore do Provedor
 
-Your provider URL must return a JSON object with this structure:
+A URL do seu provedor deve retornar um objeto JSON com esta estrutura:
 
 ```json
 {
@@ -71,40 +71,40 @@ Your provider URL must return a JSON object with this structure:
 }
 ```
 
-### Tree Fields
+### Campos da Árvore
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `programs[].id` | string | Unique program identifier |
-| `programs[].name` | string | Display name |
-| `programs[].slug` | string | URL-friendly name |
-| `programs[].image` | string | Program image URL (optional) |
-| `programs[].about` | string | Description (optional) |
-| `studies[].id` | string | Unique study identifier |
-| `studies[].name` | string | Display name |
-| `studies[].slug` | string | URL-friendly name |
-| `studies[].image` | string | Study image URL (optional) |
-| `lessons[].id` | string | Unique lesson identifier |
-| `lessons[].name` | string | Display name |
-| `lessons[].slug` | string | URL-friendly name |
-| `lessons[].title` | string | Full title |
-| `lessons[].image` | string | Lesson image URL (optional) |
-| `lessons[].description` | string | Lesson summary (optional). Catalog copy for teachers browsing the library — not parent take-home. |
-| `lessons[].bottomLine` | string | One-sentence parent take-home (optional) |
-| `lessons[].verse` | string | Memory verse reference and short text (optional) |
-| `lessons[].parentQuestion` | string | One question for parents to ask at home (optional) |
-| `lessons[].parentNote` | string | Optional extra note for parents (markdown) |
-| `venues[].id` | string | Unique venue identifier |
-| `venues[].name` | string | Venue name (e.g. "Kids", "Adults", "Youth") |
-| `venues[].apiUrl` | string | URL returning the venue feed (see below) |
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| `programs[].id` | string | Identificador único do programa |
+| `programs[].name` | string | Nome de exibição |
+| `programs[].slug` | string | Nome amigável para URL |
+| `programs[].image` | string | URL da imagem do programa (opcional) |
+| `programs[].about` | string | Descrição (opcional) |
+| `studies[].id` | string | Identificador único do estudo |
+| `studies[].name` | string | Nome de exibição |
+| `studies[].slug` | string | Nome amigável para URL |
+| `studies[].image` | string | URL da imagem do estudo (opcional) |
+| `lessons[].id` | string | Identificador único da lição |
+| `lessons[].name` | string | Nome de exibição |
+| `lessons[].slug` | string | Nome amigável para URL |
+| `lessons[].title` | string | Título completo |
+| `lessons[].image` | string | URL da imagem da lição (opcional) |
+| `lessons[].description` | string | Resumo da lição (opcional). Texto de catálogo para professores que navegam pela biblioteca, não a mensagem para levar para casa aos pais. |
+| `lessons[].bottomLine` | string | Frase única com a mensagem para os pais levarem para casa (opcional) |
+| `lessons[].verse` | string | Referência do versículo para memorizar e texto curto (opcional) |
+| `lessons[].parentQuestion` | string | Uma pergunta para os pais fazerem em casa (opcional) |
+| `lessons[].parentNote` | string | Nota extra opcional para os pais (markdown) |
+| `venues[].id` | string | Identificador único da versão |
+| `venues[].name` | string | Nome da versão (por exemplo, "Crianças", "Adultos", "Jovens") |
+| `venues[].apiUrl` | string | URL que retorna o feed da versão (veja abaixo) |
 
-The four parent take-home fields (`bottomLine`, `verse`, `parentQuestion`, `parentNote`) are optional on both the tree and the venue feed. If omitted they are treated as empty. Do not copy `description` into them.
+Os quatro campos de mensagem para os pais (`bottomLine`, `verse`, `parentQuestion`, `parentNote`) são opcionais tanto na árvore quanto no feed da versão. Se forem omitidos, serão tratados como vazios. Não copie `description` para esses campos.
 
-**Venues** represent different versions of the same lesson tailored for different audiences (age groups, settings, etc.).
+**Versões** representam diferentes adaptações da mesma lição, voltadas para públicos diferentes (faixas etárias, contextos etc.).
 
-## Venue Feed
+## Feed da Versão
 
-Each venue's `apiUrl` must return a JSON object matching this schema:
+O `apiUrl` de cada versão deve retornar um objeto JSON que corresponda a este esquema:
 
 ```json
 {
@@ -169,83 +169,83 @@ Each venue's `apiUrl` must return a JSON object matching this schema:
 }
 ```
 
-### Venue Feed Fields
+### Campos do Feed da Versão
 
-#### Root Object
+#### Objeto Raiz
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `id` | string | Venue identifier |
-| `name` | string | Venue name |
-| `lessonId` | string | Lesson identifier |
-| `lessonName` | string | Lesson display name |
-| `lessonImage` | string | Lesson image URL |
-| `lessonDescription` | string | Lesson summary (catalog copy) |
-| `bottomLine` | string | One-sentence parent take-home (optional) |
-| `verse` | string | Memory verse reference and short text (optional) |
-| `parentQuestion` | string | One question for parents to ask at home (optional) |
-| `parentNote` | string | Optional extra note for parents, markdown (optional) |
-| `studyName` | string | Parent study name |
-| `studySlug` | string | Parent study slug |
-| `programName` | string | Parent program name |
-| `programSlug` | string | Parent program slug |
-| `programAbout` | string | Program description |
-| `downloads` | array | Downloadable file bundles |
-| `sections` | array | Ordered lesson sections |
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| `id` | string | Identificador da versão |
+| `name` | string | Nome da versão |
+| `lessonId` | string | Identificador da lição |
+| `lessonName` | string | Nome de exibição da lição |
+| `lessonImage` | string | URL da imagem da lição |
+| `lessonDescription` | string | Resumo da lição (texto de catálogo) |
+| `bottomLine` | string | Frase única com a mensagem para os pais levarem para casa (opcional) |
+| `verse` | string | Referência do versículo para memorizar e texto curto (opcional) |
+| `parentQuestion` | string | Uma pergunta para os pais fazerem em casa (opcional) |
+| `parentNote` | string | Nota extra opcional para os pais, em markdown (opcional) |
+| `studyName` | string | Nome do estudo pai |
+| `studySlug` | string | Nome amigável para URL do estudo pai |
+| `programName` | string | Nome do programa pai |
+| `programSlug` | string | Nome amigável para URL do programa pai |
+| `programAbout` | string | Descrição do programa |
+| `downloads` | array | Pacotes de arquivos para download |
+| `sections` | array | Seções ordenadas da lição |
 
-#### Section
+#### Seção
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `id` | string | Section identifier |
-| `name` | string | Section title |
-| `sort` | number | Display order |
-| `materials` | string | Materials or preparation notes (optional) |
-| `actions` | array | Ordered actions within this section |
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| `id` | string | Identificador da seção |
+| `name` | string | Título da seção |
+| `sort` | número | Ordem de exibição |
+| `materials` | string | Materiais ou notas de preparação (opcional) |
+| `actions` | array | Ações ordenadas dentro desta seção |
 
-#### Action
+#### Ação
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `id` | string | Action identifier |
-| `actionType` | string | One of: `play`, `text`, `question`, `quote`, `subhead` |
-| `content` | string | Text content or media label |
-| `sort` | number | Display order |
-| `role` | string | Role name, e.g. "Leader", "Kids" (optional) |
-| `roleId` | string | Role identifier (optional) |
-| `files` | array | Media files for `play` actions (optional) |
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| `id` | string | Identificador da ação |
+| `actionType` | string | Um de: `play`, `text`, `question`, `quote`, `subhead` |
+| `content` | string | Conteúdo de texto ou rótulo da mídia |
+| `sort` | número | Ordem de exibição |
+| `role` | string | Nome do papel, por exemplo, "Líder", "Crianças" (opcional) |
+| `roleId` | string | Identificador do papel (opcional) |
+| `files` | array | Arquivos de mídia para ações `play` (opcional) |
 
-#### File
+#### Arquivo
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `id` | string | File identifier |
-| `name` | string | File name |
-| `url` | string | Direct download URL |
-| `streamUrl` | string | Streaming URL, e.g. Vimeo link (optional) |
-| `fileType` | string | MIME type (e.g. `video/mp4`, `image/jpeg`) |
-| `seconds` | number | Duration in seconds for audio/video (optional) |
-| `bytes` | number | File size in bytes (optional) |
-| `thumbnail` | string | Thumbnail image URL (optional) |
-| `loop` | boolean | Whether media should loop (optional, default false) |
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| `id` | string | Identificador do arquivo |
+| `name` | string | Nome do arquivo |
+| `url` | string | URL de download direto |
+| `streamUrl` | string | URL de streaming, por exemplo, link do Vimeo (opcional) |
+| `fileType` | string | Tipo MIME (por exemplo, `video/mp4`, `image/jpeg`) |
+| `seconds` | número | Duração em segundos para áudio ou vídeo (opcional) |
+| `bytes` | número | Tamanho do arquivo em bytes (opcional) |
+| `thumbnail` | string | URL da imagem de miniatura (opcional) |
+| `loop` | booleano | Se a mídia deve ser repetida (opcional, padrão `false`) |
 
 #### Download
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `name` | string | Download bundle name (e.g. "Printable Materials") |
-| `files` | array | Files in this download bundle (same fields as File above) |
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| `name` | string | Nome do pacote de download (por exemplo, "Materiais Imprimíveis") |
+| `files` | array | Arquivos neste pacote de download (mesmos campos de Arquivo acima) |
 
-## Action Types
+## Tipos de Ação
 
-| Type | Purpose |
-|------|---------|
-| `play` | Media playback -- video, audio, or slideshow. Must include `files`. |
-| `text` | Static text content. Supports markdown-style bold (`**text**`). |
-| `question` | Discussion or reflection question for the audience. |
-| `quote` | A highlighted quote or Scripture passage. |
-| `subhead` | A heading or divider within a section. |
+| Tipo | Finalidade |
+|------|------------|
+| `play` | Reprodução de mídia -- vídeo, áudio ou apresentação de slides. Deve incluir `files`. |
+| `text` | Conteúdo de texto estático. Aceita negrito no estilo markdown (`**texto**`). |
+| `question` | Pergunta para discussão ou reflexão do público. |
+| `quote` | Uma citação destacada ou passagem das Escrituras. |
+| `subhead` | Um título ou divisor dentro de uma seção. |
 
 :::tip
-To see a working example of the feed in action, you can view the built-in Lessons.church content tree at `https://api.lessons.church/lessons/public/tree` and fetch any venue feed URL from it.
+Para ver um exemplo funcional do feed em ação, você pode consultar a árvore de conteúdo integrada do Lessons.church em `https://api.lessons.church/lessons/public/tree` e buscar qualquer URL de feed de versão a partir dela.
 :::

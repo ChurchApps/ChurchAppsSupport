@@ -1,49 +1,49 @@
 ---
-title: "Conteudo"
+title: "Conteúdo"
 ---
 
-# Conteudo
+# Conteúdo
 
 <div class="article-intro">
 
-B1 Mobile oferece um lugar central para acessar todo o conteudo que sua igreja compartilha, direto do seu telefone. Dependendo do que sua igreja configurou, voce pode ter acesso a sermoes, transmissao ao vivo, leitura da Biblia, um versiculo diario e materiais de licoes -- tudo sem sair do aplicativo.
+O B1 Mobile oferece um lugar central para acessar todo o conteúdo que a sua igreja compartilha, direto do seu celular. Dependendo da configuração da sua igreja, você pode ter acesso a sermões, transmissões ao vivo, leitura da Bíblia, um versículo diário e materiais de lições -- tudo sem sair do aplicativo.
 
 </div>
 
-## Recursos de Conteudo Disponiveis
+## Recursos de Conteúdo Disponíveis
 
-### Sermoes
+### Sermões
 
-Navegue e assista sermoes gravados da sua igreja. Os sermoes sao organizados em playlists e series para que voce possa encontrar facilmente mensagens passadas ou acompanhar uma serie atual.
+Navegue e assista a sermões gravados da sua igreja. Os sermões são organizados em listas de reprodução e séries, para que você possa encontrar facilmente mensagens anteriores ou acompanhar uma série atual.
 
-### Transmissao ao Vivo
+### Transmissão ao Vivo
 
-Assista a transmissao ao vivo da sua igreja diretamente no aplicativo. Quando um culto esta sendo transmitido, voce pode sintonizar e assistir de onde estiver.
+Assista à transmissão ao vivo da sua igreja diretamente no aplicativo. Quando um culto estiver sendo transmitido, você pode sintonizar e assistir de onde estiver.
 
-### Biblia
+### Bíblia
 
-Leia as Escrituras usando o leitor biblico integrado. Navegue por livros, capitulos e versiculos sem trocar de aplicativo.
+Leia as Escrituras usando o leitor de Bíblia integrado. Navegue por livros, capítulos e versículos sem trocar de aplicativo.
 
-### Versiculo do Dia
+### Versículo do Dia
 
-Visualize um versiculo biblico lindamente formatado como imagem que muda todos os dias. A imagem se ajusta automaticamente a orientacao da tela do seu dispositivo.
+Veja uma imagem de versículo bíblico com formatação elegante, que muda todos os dias. A imagem se ajusta automaticamente à orientação da tela do seu dispositivo.
 
-### Licoes
+### Lessons (Descontinuado)
 
-Acesse o curriculo e materiais de aprendizado da sua igreja atraves da plataforma integrada Lessons.church. Navegue e visualize licoes agendadas diretamente no B1 Mobile.
+A tela de Lessons integrada foi substituída pelo **[FreePlay](/docs/freeplay/)** para reprodução em sala de aula, e por visitar diretamente o [Lessons.church](https://lessons.church) para navegação. Consulte a [página de referência de Lessons](./lessons) para mais detalhes.
 
-## Encontrando Conteudo
+## Encontrando Conteúdo
 
-Os recursos de conteudo estao disponiveis no menu lateral do aplicativo. O administrador da sua igreja decide quais recursos de conteudo estao habilitados, entao voce pode nao ver todas as opcoes listadas acima. Se um recurso especifico estiver faltando, sua igreja pode nao te-lo configurado ainda.
+Os recursos de conteúdo estão disponíveis pelo menu lateral do aplicativo. O administrador da sua igreja decide quais recursos de conteúdo estão habilitados, por isso você pode não ver todas as opções listadas acima. Se algum recurso específico não aparecer, a sua igreja pode ainda não tê-lo configurado.
 
 :::info
-Os recursos de conteudo sao configurados pelo administrador da sua igreja atraves do [B1 Admin](../../b1-admin/). Se voce nao ve um recurso que espera, entre em contato com o escritorio da sua igreja.
+Os recursos de conteúdo são configurados pelo administrador da sua igreja por meio do [B1 Admin](../../b1-admin/). Se você não vir um recurso que espera encontrar, entre em contato com a secretaria da sua igreja.
 :::
 
-## Proximos Passos
+## Próximos Passos
 
-- [Sermoes](./sermons) -- Navegue e assista sermoes gravados
-- [Transmissao ao Vivo](./live-streaming) -- Assista transmissoes ao vivo
-- [Biblia](./bible) -- Leia as Escrituras no leitor integrado
-- [Versiculo do Dia](./verse-of-the-day) -- Veja o versiculo diario de hoje
-- [Licoes](./lessons) -- Acesse curriculo e materiais de aprendizado
+- [Sermões](./sermons) -- Navegue e assista a sermões gravados
+- [Transmissão ao Vivo](./live-streaming) -- Assista a transmissões ao vivo
+- [Bíblia](./bible) -- Leia as Escrituras no leitor integrado
+- [Versículo do Dia](./verse-of-the-day) -- Veja o versículo diário de hoje
+- [FreePlay](/docs/freeplay/) -- Reproduza lições em TVs de sala de aula (substitui a tela Lessons descontinuada no aplicativo)

@@ -1,55 +1,55 @@
 ---
-title: "Diretorio de Membros"
+title: "Diretório de Membros"
 ---
 
-# Diretorio de Membros
+# Diretório de Membros
 
 <div class="article-intro">
 
-O diretorio de membros no B1 Mobile permite que voce navegue e pesquise pessoas na sua igreja. Se voce precisa procurar um membro do grupo ou encontrar alguem que conheceu no domingo, o diretorio facilita a conexao.
+O diretório de membros no B1 Mobile permite navegar e pesquisar pessoas da sua igreja. Seja para encontrar um colega do grupo ou alguém que você conheceu no domingo, o diretório facilita a conexão.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comecar</h4>
+<h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faca login](../getting-started/logging-in) na sua conta
+- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
 
 </div>
 
-## Acessando o Diretorio
+## Acessando o Diretório
 
-1. Toque na opcao **Diretorio** na navegacao do aplicativo.
-2. O diretorio carrega com os membros da sua igreja listados em ordem alfabetica.
+1. Toque na opção **Diretório** na navegação do aplicativo.
+2. O diretório carrega com os membros da sua igreja listados em ordem alfabética.
 
-## Navegando pelo Diretorio
+## Navegando pelo Diretório
 
-Os membros sao indexados alfabeticamente pelo sobrenome e organizados sob cabecalhos de letras (A, B, C e assim por diante). Voce pode rolar pela lista para explorar a familia da sua igreja. Cada entrada mostra o nome e a foto do membro, facilitando encontrar quem voce esta procurando.
+Os membros são indexados alfabeticamente pelo sobrenome e organizados sob cabeçalhos de letras (A, B, C, e assim por diante). Você pode rolar pela lista para navegar pela sua família da igreja. Cada registro mostra o nome e a foto do membro, facilitando encontrar quem você procura.
 
 ## Pesquisando Membros
 
-Se voce sabe quem esta procurando, a barra de pesquisa no topo do diretorio e a maneira mais rapida de encontra-lo.
+Se você sabe quem procura, a barra de pesquisa no topo do diretório é a forma mais rápida de encontrá-lo.
 
 1. Toque na **barra de pesquisa** no topo da tela.
 2. Digite um nome.
-3. A lista filtra em tempo real para mostrar resultados correspondentes.
+3. A lista é filtrada em tempo real para mostrar os resultados correspondentes.
 
 :::tip
-Isso e especialmente util em igrejas maiores onde rolar pela lista completa levaria muito tempo. Basta digitar as primeiras letras de um nome para restringir rapidamente os resultados.
+Isso é especialmente útil em igrejas maiores, onde rolar pela lista completa levaria algum tempo. Basta digitar as primeiras letras de um nome para restringir rapidamente os resultados.
 :::
 
 ## Visualizando o Perfil de um Membro
 
-Toque em qualquer membro na lista para abrir o perfil. A pagina do perfil pode incluir:
+Toque em qualquer membro da lista para abrir o perfil dele. A página do perfil pode incluir:
 
-- **Informacoes de contato** -- Numero de telefone, endereco de e-mail e outros detalhes que sua igreja disponibilizou.
-- **Conexoes familiares** -- [Membros da familia](../profile/household.md) vinculados ao perfil desta pessoa. Voce pode tocar em um membro da familia para navegar ate o perfil dele tambem.
+- **Informações de contato** -- Número de telefone, endereço de e-mail e outros dados que sua igreja tenha disponibilizado.
+- **Conexões familiares** -- [Membros da família](../profile/household.md) vinculados ao perfil desta pessoa. Você também pode tocar em um familiar para navegar até o perfil dele.
 
 :::info
-As informacoes visiveis em cada perfil dependem das configuracoes de privacidade e diretorio da sua igreja. Nem todos os campos podem ser mostrados para cada membro. Os membros podem controlar sua propria visibilidade nas [Configuracoes de Privacidade](../profile/privacy-settings.md). Se tiver duvidas sobre o que e compartilhado, entre em contato com o administrador da sua igreja.
+As informações visíveis em cada perfil dependem das configurações de privacidade e do diretório da sua igreja. Nem todos os campos podem ser exibidos para todos os membros. Os próprios membros podem controlar sua visibilidade em [Configurações de Privacidade](../profile/privacy-settings.md). Se tiver dúvidas sobre o que é compartilhado, entre em contato com o administrador da sua igreja.
 :::
 
 ## Artigos Relacionados
 
-- [Mensagens](./messaging) -- Envie uma mensagem privada para alguem que encontrou no diretorio
-- [Configuracoes de Privacidade](../profile/privacy-settings.md) -- Controle o que outros podem ver sobre voce no diretorio
+- [Mensagens](./messaging) -- Envie uma mensagem privada para alguém que você encontrou no diretório
+- [Configurações de Privacidade](../profile/privacy-settings.md) -- Controle o que outras pessoas podem ver sobre você no diretório

@@ -1,50 +1,58 @@
 ---
-title: "Lektionen"
+title: "Lektionen (veraltet)"
 ---
 
-# Lektionen
+# Lektionen (veraltet)
+
+:::danger Der Bereich Lektionen wurde durch FreePlay ersetzt
+Der Bereich **Lektionen** in der App wurde eingestellt. Lehrplaninhalte von Lessons.church werden jetzt über **[FreePlay](/docs/freeplay/)** bereitgestellt, die kostenlose TV-App von ChurchApps für Klassenraumbildschirme, Fire TV, Apple TV und Android TV. FreePlay bietet Offline-Wiedergabe, Kopplung im Klassenraum und eine Bedienung mit der TV-Fernbedienung, die der Bereich Lektionen in der App nicht bieten konnte.
+
+Ehrenamtliche Mitarbeitende und Lehrkräfte, die Lehrpläne auf einem Telefon oder Tablet durchsuchen möchten, können sich direkt in ihrem Browser auf [Lessons.church](https://lessons.church) anmelden.
+:::
 
 <div class="article-intro">
 
-Der Lektionen-Bildschirm bietet Ihnen Zugang zum Lehrplan und zu den Lernmaterialien Ihrer Gemeinde. Die Inhalte werden ueber die Lessons.church-Plattform bereitgestellt und sind direkt in B1 Mobile eingebettet, sodass Sie Lektionen durchsuchen und ansehen koennen, ohne zu einer anderen App zu wechseln.
+Der Bereich Lektionen gab dir Zugriff auf den Lehrplan und die Lernmaterialien deiner Gemeinde. Die Inhalte wurden über die Plattform Lessons.church bereitgestellt und direkt in B1 Mobile eingebettet, sodass du Lektionen durchsuchen und ansehen konntest, ohne zu einer anderen App wechseln zu müssen.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich an](../getting-started/logging-in) bei Ihrem Konto
-- Ihre Gemeinde muss einen Lehrplan ueber Lessons.church konfiguriert haben
+- [B1 Mobile installieren](../getting-started/installing) und dich [in deinem Konto anmelden](../getting-started/logging-in)
+- Deine Gemeinde muss den Lehrplan über Lessons.church eingerichtet haben
 
 </div>
 
-## Auf Lektionen zugreifen
+## Zugriff auf Lektionen
 
-1. Oeffnen Sie den **Lektionen**-Bildschirm ueber das Seitenmenue.
-2. Die Lessons.church-Inhalte werden direkt in der App geladen.
-3. Durchsuchen Sie den Lehrplan, den Ihre Gemeinde bereitgestellt hat.
+1. Öffne den Bereich **Lektionen** über das Seitenmenü.
+2. Die Inhalte von Lessons.church werden direkt in der App geladen.
+3. Durchsuche den Lehrplan, den deine Gemeinde zur Verfügung gestellt hat.
 
-Ihre Gemeinde konfiguriert, welche Lektionen und Programme hier erscheinen. Sie sehen die Inhalte, die vom Team Ihrer Gemeinde geplant oder zugewiesen wurden.
+Deine Gemeinde legt fest, welche Lektionen und Programme hier angezeigt werden. Du siehst die Inhalte, die vom Team deiner Gemeinde geplant oder zugewiesen wurden.
 
-## Was Sie tun koennen
+## Was du tun kannst
 
-Im Lektionen-Bildschirm koennen Sie die Materialien durchsuchen und ansehen, die Ihre Gemeinde eingerichtet hat. Je nach Konfiguration Ihrer Gemeinde finden Sie moeglicherweise:
+Innerhalb des Bereichs Lektionen kannst du die Materialien durchsuchen und ansehen, die deine Gemeinde eingerichtet hat. Je nachdem, was deine Gemeinde konfiguriert hat, findest du möglicherweise:
 
-- **Lektionsplaene** -- Strukturierte Ablaeufe mit Abschnitten und Aktivitaeten
-- **Praesentationen und Medien** -- Folien, Videos und Bilder als Begleitung zu Lektionen
-- **Herunterladbare Ressourcen** -- Dateien und Materialien fuer weitergehendes Studium
+- **Unterrichtspläne** -- Strukturierte Gliederungen mit Abschnitten und Aktivitäten
+- **Präsentationen und Medien** -- Folien, Videos und Bilder zur Begleitung der Lektionen
+- **Herunterladbare Ressourcen** -- Dateien und Materialien zur weiteren Vertiefung
 
-Tippen Sie auf einzelne Abschnitte innerhalb einer Lektion, um deren Inhalt anzusehen. Verwenden Sie die Navigationssteuerungen, um zwischen Abschnitten zu wechseln oder zur Lektionsliste zurueckzukehren.
+Tippe auf einzelne Abschnitte innerhalb einer Lektion, um deren Inhalt anzuzeigen. Mit den Navigationselementen kannst du zwischen Abschnitten wechseln oder zur Liste der Lektionen zurückkehren.
 
 :::info
-Lessons.church ist eine separate ChurchApps-Plattform, die in B1 Mobile integriert ist. Ihr Gemeindeadministrator verwaltet die Lektionsinhalte ueber das Lessons.church-Portal.
+Lessons.church ist eine eigenständige Plattform von ChurchApps, die sich in B1 Mobile integriert. Dein Gemeindeadministrator verwaltet die Lektionsinhalte über das Lessons.church-Portal.
 :::
 
-## Verfuegbarkeit
+## Verfügbarkeit
 
-Der Lektionen-Bildschirm wird angezeigt, wenn Ihre Gemeinde einen Lehrplan ueber Lessons.church konfiguriert hat. Wenn Sie keine **Lektionen**-Option im Seitenmenue sehen, hat Ihre Gemeinde moeglicherweise keine Lektionsinhalte eingerichtet. Wenden Sie sich an Ihren Gemeindeadministrator fuer weitere Informationen.
+Der Bereich Lektionen wird angezeigt, wenn deine Gemeinde einen Lehrplan über Lessons.church eingerichtet hat. Wenn du im Seitenmenü keine Option **Lektionen** siehst, hat deine Gemeinde möglicherweise noch keine Lektionsinhalte eingerichtet. Wende dich für weitere Informationen an deinen Gemeindeadministrator.
 
 ## Verwandte Artikel
 
-- [Bibel](./bible) -- Lesen Sie die Heilige Schrift begleitend zu Ihren Lektionen
-- [Predigten](./sermons) -- Schauen Sie Predigten, die Ihr Studium ergaenzen
+- [FreePlay-Übersicht](/docs/freeplay/) -- Die TV-App, die den Bereich Lektionen ersetzt, zur Wiedergabe von Unterrichtsmaterialien
+- [Lessons.church](/docs/lessons-church/) -- Lehrplaninhalte direkt durchsuchen und verwalten
+- [Bibel](./bible) -- Die Schrift parallel zu deinen Lektionen lesen
+- [Predigten](./sermons) -- Predigten ansehen, die deine Studien ergänzen

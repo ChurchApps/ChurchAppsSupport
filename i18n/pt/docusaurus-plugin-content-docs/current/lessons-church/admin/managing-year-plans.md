@@ -6,30 +6,32 @@ title: "Gerenciando Planos Anuais"
 
 <div class="article-intro">
 
-A year plan is an ordered list of lessons — week 1, week 2, week 3 — that churches apply in B1 Admin. You can publish a plan for any curriculum in the library. Plans are stored in the database and are not tied to a calendar year.
+Um plano anual é uma lista ordenada de lições (semana 1, semana 2, semana 3) que as igrejas aplicam no B1 Admin. Você pode publicar um plano para qualquer currículo da biblioteca. Campos de calendário opcionais informam ao B1 Admin a qual mês a semana 1 pertence e quais semanas devem cair no Domingo de Páscoa ou no Natal.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de Começar</h4>
 
-- Have admin permissions for Lessons.church
-- Have at least one [program](./managing-programs.md) with published lessons
+- Ter permissões de administrador no Lessons.church
+- Ter pelo menos um [programa](./managing-programs.md) com lições publicadas
 
 </div>
 
-## Creating a Plan
+## Criando um Plano
 
-1. Open **Admin → Year Plans**.
-2. Click **Add**.
-3. Enter a name (for example, "Elementary 2026–27" or "High Voltage Year 1") and optional slug.
-4. Optionally set a **default venue preference** — comma-separated venue names used when a week does not specify a venue.
-5. Check **Publish** when churches should see the plan in B1 Admin. Leave it off for a draft.
-6. Add weeks from any curriculum: choose a **source**, then program, study, lesson, and venue. Click **Add**. A single plan can mix programs if you want. Use the arrows to reorder.
-7. Save.
+1. Abra **Admin → Planos Anuais**.
+2. Clique em **Adicionar**.
+3. Digite um nome (por exemplo, "Infantil 2026–27" ou "High Voltage Year 1") e, opcionalmente, um slug.
+4. Opcionalmente, defina uma **preferência de local padrão**: nomes de locais separados por vírgula, usados quando uma semana não especifica um local.
+5. Opcionalmente, defina **Ano começa em** (por exemplo, janeiro) para que as igrejas apliquem o plano em um ano civil real, e não apenas a partir de uma data de início.
+6. Marque **Publicar** quando as igrejas devem ver o plano no B1 Admin. Deixe desmarcado para manter um rascunho.
+7. Adicione semanas de qualquer currículo: escolha uma **origem** e, em seguida, o programa, o estudo, a lição e o local. Clique em **Adicionar**. Um único plano pode combinar programas, se desejar. Use as setas para reordenar.
+8. Para estudos sazonais, defina a **Âncora** de uma semana como Páscoa ou Natal. Ancore a última semana do estudo para que a série termine nos domingos que antecedem esse feriado.
+9. Salve.
 
-Churches apply a published plan from **B1 Admin → Serving → Plans → Schedule Lesson → Apply Year Plan**. That fills the next 12–52 weeks on their serving schedule. They edit individual weeks there afterward; FreePlay plays whatever is on the plan.
+As igrejas aplicam um plano publicado em **B1 Admin → Serving → Plans → Schedule Lesson → Apply Year Plan**. Planos ancorados no calendário pedem um ano-alvo e um intervalo de datas; os demais ainda usam uma data da primeira aula e a quantidade de semanas. Depois, elas editam semanas individuais nessa tela; o FreePlay reproduz o que estiver no plano.
 
 ## Artigos Relacionados
 
-- [Scheduling Lessons](../../b1-admin/serving/scheduling-lessons.md) -- How churches apply a year plan in B1 Admin
+- [Agendando Lições](../../b1-admin/serving/scheduling-lessons.md) -- Como as igrejas aplicam um plano anual no B1 Admin

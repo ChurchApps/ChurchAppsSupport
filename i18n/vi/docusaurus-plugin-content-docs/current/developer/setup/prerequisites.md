@@ -1,0 +1,114 @@
+---
+title: "Điều kiện tiên quyết"
+---
+
+# Điều kiện tiên quyết
+
+<div class="article-intro">
+
+Các công cụ bạn cần phụ thuộc vào những dự án bạn định làm việc. Trang này liệt kê toàn bộ phần mềm bắt buộc, được sắp xếp theo từng lĩnh vực phát triển, từ các yêu cầu chung cho mọi dự án đến bộ công cụ dành riêng cho từng nền tảng.
+
+</div>
+
+<div class="prereqs">
+<h4>Trước khi bắt đầu</h4>
+
+- Xem [Tổng quan dự án](./project-overview) để xác định những dự án bạn muốn làm việc
+- Có quyền quản trị viên trên máy phát triển để cài đặt phần mềm
+
+</div>
+
+## Tất cả dự án
+
+Các công cụ sau đây bắt buộc đối với mọi dự án:
+
+| Công cụ | Phiên bản | Ghi chú |
+|------|---------|-------|
+| **Node.js** | 20+ | Cần phiên bản 22+ cho B1App và LessonsApp (Next.js 16); cần 24+ cho Api |
+| **npm** | Đi kèm với Node.js | Được dùng làm trình quản lý gói cho tất cả dự án |
+| **Git** | Mới nhất | Mỗi dự án là một kho lưu trữ riêng |
+
+:::tip
+Hãy dùng trình quản lý phiên bản Node như [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) hoặc [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) để dễ dàng chuyển đổi giữa các phiên bản Node.
+:::
+
+## Phát triển Backend API
+
+Nếu bạn định chạy API cục bộ (thay vì trỏ đến các API demo):
+
+| Công cụ | Phiên bản | Ghi chú |
+|------|---------|-------|
+| **MySQL** | 8.0+ | Mỗi mô-đun API dùng một cơ sở dữ liệu riêng |
+
+Bạn sẽ cần sáu cơ sở dữ liệu cho API cốt lõi: `membership`, `attendance`, `content`, `giving`, `messaging` và `doing`. API có kèm các script để khởi tạo lược đồ -- xem hướng dẫn [thiết lập API cục bộ](../api/local-setup).
+
+## Phát triển ứng dụng di động
+
+Dành cho B1Mobile, B1Checkin, LessonsScreen hoặc các ứng dụng React Native / Expo khác:
+
+| Công cụ | Phiên bản | Ghi chú |
+|------|---------|-------|
+| **Expo CLI** | Mới nhất | Cài đặt toàn cục: `npm install -g expo-cli` |
+| **Android Studio** | Mới nhất | Bắt buộc để phát triển Android (bao gồm Android SDK) |
+| **Xcode** | Mới nhất | Bắt buộc để phát triển iOS (chỉ dành cho macOS) |
+
+:::info
+Bạn có thể dùng ứng dụng Expo Go trên thiết bị thật để thử nghiệm nhanh mà không cần Android Studio hay Xcode. Tuy nhiên, để build bản production cần có bộ công cụ native đầy đủ.
+:::
+
+## Phát triển FreeShow (ứng dụng máy tính)
+
+FreeShow cần thêm một số phụ thuộc build native vì nó biên dịch các mô-đun Node native (như `canvas`):
+
+### Tất cả nền tảng
+
+| Công cụ | Phiên bản | Ghi chú |
+|------|---------|-------|
+| **Python** | 3.12 | Được `node-gyp` yêu cầu để biên dịch mô-đun native |
+| **setuptools** | Mới nhất | Cài đặt qua `pip install setuptools` |
+
+### Windows
+
+| Công cụ | Ghi chú |
+|------|-------|
+| **Visual Studio** | Bản Community là đủ |
+| **Khối lượng công việc "Desktop development with C++"** | Chọn trong quá trình cài đặt Visual Studio |
+| **Windows 10 SDK** | Có sẵn trong khối lượng công việc C++; hãy đảm bảo đã chọn |
+
+Bạn có thể cài đặt bộ công cụ build Visual Studio qua dòng lệnh:
+
+```bash
+npm install --global windows-build-tools
+```
+
+Hoặc cài đặt Visual Studio Community và chọn khối lượng công việc "Desktop development with C++" trong quá trình cài đặt.
+
+### Linux
+
+```bash
+sudo apt-get install libfontconfig1-dev
+```
+
+### macOS
+
+Thông thường, Xcode Command Line Tools là đủ:
+
+```bash
+xcode-select --install
+```
+
+## Kiểm tra cài đặt
+
+Chạy các lệnh sau để xác nhận mọi thứ đã được cài đặt:
+
+```bash
+node --version    # Nên in ra v20.x.x trở lên
+npm --version     # Nên in ra 10.x.x trở lên
+git --version     # Nên in ra git version 2.x.x
+mysql --version   # Chỉ cần khi phát triển API cục bộ
+```
+
+## Bước tiếp theo
+
+- **[Tổng quan dự án](./project-overview)** -- Xem tất cả các dự án và chức năng của chúng
+- **[Biến môi trường](./environment-variables)** -- Cấu hình các tệp `.env` của bạn

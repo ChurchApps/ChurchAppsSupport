@@ -6,47 +6,56 @@ title: "Varsler"
 
 <div class="article-intro">
 
-B1 Mobile bruker push-varsler for a holde deg informert om hva som skjer i kirken din. I stedet for a matte apne appen for a sjekke oppdateringer, kommer viktig informasjon til deg automatisk.
+B1 Mobile bruker push-varsler for å holde deg informert om hva som skjer i menigheten din. I stedet for å måtte åpne appen for å se etter oppdateringer, kommer viktig informasjon automatisk til deg.
 
 </div>
 
 <div class="prereqs">
-<h4>For Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) pa kontoen din
-- Tillat varsler for B1 Mobile i enhetsinnstillingene
+- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- Tillat varsler for B1 Mobile i innstillingene på enheten din
 
 </div>
 
-## Hva Du Blir Varslet Om
+## Hva du får varsler om
 
-Varsler kan dekke en rekke aktiviteter, inkludert:
+Varsler kan omfatte en rekke aktiviteter, blant annet:
 
-- **Meldinger** -- Nar noen sender deg en [privat melding](./messaging).
-- **Gruppeaktivitet** -- Oppdateringer, innlegg og samtaler fra [grupper](../groups/) du tilhorer.
-- **Tjenesteoppgaver** -- Nar du blir tildelt en [plan](../serving/viewing-plans.md) eller nar oppgavestatusen din endres.
-- **Andre oppdateringer** -- Generelle kunngjoeringer og aktivitet som er relevant for deg.
+- **Meldinger** -- Når noen sender deg en [privat melding](./messaging).
+- **Gruppeaktivitet** -- Oppdateringer, innlegg og samtaler i [grupper](../groups/) du er medlem av.
+- **Tjenesteoppdrag** -- Når du blir tildelt en [plan](../serving/viewing-plans.md), eller når statusen på oppdraget ditt endres.
+- **Andre oppdateringer** -- Generelle kunngjøringer og aktivitet som er relevant for deg.
 
-## Se Varslene Dine
+## Se varslene dine
 
-1. Trykk pa **bjelleikonet** overst til hoeyre i appen, eller trykk pa **Varsler**-alternativet i navigasjonen.
-2. Varselskjermen viser alle dine nylige varsler i en fanevisning, organisert slik at du raskt kan finne det du leter etter.
+1. Trykk på **klokkeikonet** øverst til høyre i appen, eller trykk på **Varsler** i navigasjonen.
+2. Varselskjermen viser alle de nyeste varslene dine i en fanebasert visning, ordnet slik at du raskt kan finne det du leter etter.
 
-Hvert varsel inkluderer et kort sammendrag av oppdateringen. Trykk pa et varsel for a ga direkte til det relevante innholdet -- for eksempel apner et meldingsvarsel samtalen, og et tjenestevarsel tar deg til planen.
+Hvert varsel inneholder et kort sammendrag av oppdateringen. Trykk på et varsel for å gå direkte til det aktuelle innholdet. Hvis du trykker på et meldingsvarsel, åpnes samtalen, og hvis du trykker på et tjenestevarsel, går du til planen.
 
-## Push-Varsler
+## Fjerne varsler
 
-B1 Mobile sender push-varsler til enheten din slik at du mottar oppdateringer selv nar appen ikke er apen. For a motta push-varsler, forsikre deg om at du har tillatt varsler for B1 Mobile i enhetsinnstillingene.
+Du kan fjerne varsler når du har lest dem, slik at listen din bare viser det som er nytt.
 
-### Aktivere Push-Varsler
+- **Slett ett enkelt varsel** -- Trykk på søppelbøtteikonet til høyre på en varselrad for å fjerne bare det elementet.
+- **Fjern alle varsler** -- Trykk på **Fjern alle** øverst i varsellisten for å fjerne alle varslene samtidig. Du blir bedt om å bekrefte før alt fjernes.
 
-- **iOS** -- Ga til **Innstillinger** > **Varsler** > **B1 Mobile** og sla pa **Tillat Varsler**.
-- **Android** -- Ga til **Innstillinger** > **Apper** > **B1 Mobile** > **Varsler** og forsikre deg om at varsler er aktivert.
+Når du fjerner et varsel, påvirker det bare visningen din. Det endrer ikke den underliggende aktiviteten (meldingen, planen eller gruppeinnlegget finnes fortsatt). Hvis du har varsler aktivert på flere enheter, synkroniseres fjerningen til de andre enhetene når du fjerner varsler på én enhet.
+
+## Push-varsler
+
+B1 Mobile sender push-varsler til enheten din, slik at du får oppdateringer selv når appen ikke er åpen. For å motta push-varsler må du sørge for at du har tillatt varsler for B1 Mobile i innstillingene på enheten din.
+
+### Aktivere push-varsler
+
+- **iOS** -- Gå til **Innstillinger** > **Varsler** > **B1 Mobile**, og slå på **Tillat varsler**.
+- **Android** -- Gå til **Innstillinger** > **Apper** > **B1 Mobile** > **Varsler**, og sørg for at varsler er aktivert.
 
 :::warning
-Hvis du ikke mottar varsler, sjekk enhetsinnstillingene for a forsikre deg om at de er aktivert. Bekreft ogsa at du er logget inn i appen, siden varsler er knyttet til kontoen din.
+Hvis du ikke mottar varsler, kontroller innstillingene på enheten din for å være sikker på at de er aktivert. Bekreft også at du er logget inn i appen, siden varsler er knyttet til kontoen din.
 :::
 
 :::tip
-Du kan administrere varselpreferanser pa enhetsniva. Hvis du synes varslene er for hyppige, juster enhetsinnstillingene for a kontrollere hvordan og nar varsler vises.
+Du kan administrere varselinnstillingene på enhetsnivå. Hvis du synes varslene kommer for ofte, kan du justere innstillingene på enheten din for å styre hvordan og når varsler vises.
 :::

@@ -1,35 +1,37 @@
 ---
-title: "वर्षीय योजनाएं प्रबंधित करना"
+title: "वार्षिक योजनाएँ प्रबंधित करना"
 ---
 
-# Managing Year Plans
+# वार्षिक योजनाएँ प्रबंधित करना
 
 <div class="article-intro">
 
-A year plan is an ordered list of lessons — week 1, week 2, week 3 — that churches apply in B1 Admin. You can publish a plan for any curriculum in the library. Plans are stored in the database and are not tied to a calendar year.
+वार्षिक योजना पाठों की एक क्रमबद्ध सूची होती है — पहला सप्ताह, दूसरा सप्ताह, तीसरा सप्ताह — जिसे चर्च B1 Admin में लागू करते हैं। आप लाइब्रेरी के किसी भी पाठ्यक्रम के लिए योजना प्रकाशित कर सकते हैं। वैकल्पिक कैलेंडर फ़ील्ड B1 Admin को बताते हैं कि पहला सप्ताह किस महीने में आता है और कौन से सप्ताह ईस्टर या क्रिसमस पर पड़ने चाहिए।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- Have admin permissions for Lessons.church
-- Have at least one [program](./managing-programs.md) with published lessons
+- Lessons.church के लिए एडमिन अनुमतियाँ होनी चाहिए
+- कम से कम एक [प्रोग्राम](./managing-programs.md) होना चाहिए जिसमें पाठ प्रकाशित हों
 
 </div>
 
-## Creating a Plan
+## योजना बनाना
 
-1. Open **Admin → Year Plans**.
-2. Click **Add**.
-3. Enter a name (for example, "Elementary 2026–27" or "High Voltage Year 1") and optional slug.
-4. Optionally set a **default venue preference** — comma-separated venue names used when a week does not specify a venue.
-5. Check **Publish** when churches should see the plan in B1 Admin. Leave it off for a draft.
-6. Add weeks from any curriculum: choose a **source**, then program, study, lesson, and venue. Click **Add**. A single plan can mix programs if you want. Use the arrows to reorder.
-7. Save.
+1. **Admin → Year Plans** खोलें।
+2. **Add** पर क्लिक करें।
+3. एक नाम दर्ज करें (जैसे, "Elementary 2026–27" या "High Voltage Year 1") और यदि चाहें तो स्लग भी दर्ज करें।
+4. यदि चाहें तो **default venue preference** सेट करें — यह अल्पविराम से अलग किए गए स्थानों के नाम होते हैं, जिन्हें तब उपयोग किया जाता है जब किसी सप्ताह में स्थान निर्दिष्ट न हो।
+5. यदि चाहें तो **Year starts in** सेट करें (जैसे January), ताकि चर्च योजना को केवल एक प्रारंभ तिथि के बजाय वास्तविक कैलेंडर वर्ष के आधार पर लागू कर सकें।
+6. जब चर्च B1 Admin में योजना देखें, तब **Publish** को चुनें। ड्राफ़्ट के लिए इसे बंद रखें।
+7. किसी भी पाठ्यक्रम से सप्ताह जोड़ें: **source** चुनें, फिर प्रोग्राम, स्टडी, पाठ और स्थान चुनें। **Add** पर क्लिक करें। यदि आप चाहें तो एक ही योजना में कई प्रोग्राम मिला सकते हैं। क्रम बदलने के लिए तीरों का उपयोग करें।
+8. मौसमी अध्ययनों के लिए, किसी सप्ताह का **Anchor** ईस्टर या क्रिसमस पर सेट करें। अध्ययन के अंतिम सप्ताह को एंकर करें, ताकि श्रृंखला उस त्योहार से पहले के रविवारों पर समाप्त हो।
+9. सेव करें।
 
-Churches apply a published plan from **B1 Admin → Serving → Plans → Schedule Lesson → Apply Year Plan**. That fills the next 12–52 weeks on their serving schedule. They edit individual weeks there afterward; FreePlay plays whatever is on the plan.
+चर्च प्रकाशित योजना को **B1 Admin → Serving → Plans → Schedule Lesson → Apply Year Plan** से लागू करते हैं। कैलेंडर-आधारित योजनाएँ लक्ष्य वर्ष और तिथि सीमा माँगती हैं; अन्य योजनाओं में अब भी पहली कक्षा की तिथि और सप्ताहों की संख्या दी जाती है। इसके बाद वे वहीं व्यक्तिगत सप्ताह संपादित कर सकते हैं; FreePlay योजना में जो भी हो, वही चलाता है।
 
-## Related Articles
+## संबंधित लेख
 
-- [Scheduling Lessons](../../b1-admin/serving/scheduling-lessons.md) -- How churches apply a year plan in B1 Admin
+- [पाठ निर्धारित करना](../../b1-admin/serving/scheduling-lessons.md) -- चर्च B1 Admin में वार्षिक योजना कैसे लागू करते हैं

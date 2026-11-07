@@ -6,44 +6,44 @@ title: "Donasjonshistorikk"
 
 <div class="article-intro">
 
-B1 Mobile gir deg et tydelig bilde av givingen din gjennom to faner: **Oversikt** for et raskt sammendrag og **Historikk** for en detaljert oversikt over hver donasjon. Bruk disse til a folge med pa din generositet gjennom aret.
+B1 Mobile gir deg en tydelig oversikt over dine gaver gjennom to faner: **Oversikt** for et raskt sammendrag og **Historikk** for en detaljert oversikt over hver donasjon. Bruk disse for å følge med på din givergjerning gjennom hele året.
 
 </div>
 
 <div class="prereqs">
-<h4>For Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) pa kontoen din
-- [Gi minst en donasjon](./making-donations) for a se historikken
+- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- [Gi minst én donasjon](./making-donations) for å se historikken din
 
 </div>
 
-## Oversikt-fanen
+## Fanen Oversikt
 
-**Oversikt**-fanen gir et overblikk over givervirksomheten din. Den viser:
+Fanen **Oversikt** gir deg et øyeblikksbilde av din givergjerning. Den viser:
 
-- **Total sa langt i aret** -- Det totale belopet du har gitt sa langt i ar.
-- **Antall gaver** -- Hvor mange individuelle donasjoner du har gitt i ar.
-- **Siste gave** -- Detaljer om din nyeste donasjon, inkludert belop og dato.
-- **Gjenta-knapp** -- En rask **Gjenta**-knapp ved siden av siste gave lar deg gi samme belop igjen med bare ett trykk. Dette er praktisk hvis du gir samme belop regelmessig.
+- **Totalbeløp i år** -- Det totale beløpet du har gitt så langt i år.
+- **Antall gaver** -- Hvor mange enkeltdonasjoner du har gitt i år.
+- **Siste gave** -- Detaljer om din nyeste donasjon, inkludert beløp og dato.
+- **Gjenta-knapp** -- En rask **Gjenta**-knapp ved siden av din siste gave lar deg gi samme beløp igjen med et enkelt trykk. Dette er nyttig hvis du gir samme beløp regelmessig.
 
-Oversikt-fanen er et godt utgangspunkt nar du apner givertjenesteseksjonen. Den forteller deg hvor du star og gjor det enkelt a gi igjen med en gang.
+Fanen Oversikt er et godt utgangspunkt når du åpner givingsdelen. Den viser hvor du står og gjør det enkelt å gi igjen med en gang.
 
-## Historikk-fanen
+## Fanen Historikk
 
-**Historikk**-fanen viser en komplett, detaljert liste over alle dine tidligere donasjoner. Hver oppforing inkluderer informasjon som:
+Fanen **Historikk** viser en fullstendig, detaljert liste over alle dine tidligere donasjoner. Hver oppføring inneholder informasjon som:
 
-- **Dato** -- Nar donasjonen ble gjort.
-- **Fond** -- Hvilket fond donasjonen ble rettet til.
-- **Belop** -- Donasjonsbelopet.
+- **Dato** -- Når donasjonen ble gitt.
+- **Fond** -- Hvilket fond donasjonen gikk til.
+- **Beløp** -- Beløpet for donasjonen.
 
-Bla gjennom listen for a gjennomga den fulle giverloggen din. Dette er nyttig for a holde oversikt over din generositet gjennom aret eller sla opp en bestemt tidligere donasjon.
+Bla gjennom listen for å gå igjennom hele givingshistorikken din. Dette er nyttig for å følge med på din givergjerning gjennom året, eller for å slå opp en bestemt tidligere donasjon.
 
 :::tip
-Sjekk **Oversikt**-fanen regelmessig for a holde deg oppdatert pa givermalene dine. Totalen sa langt i aret gjor det enkelt a se fremgangen din med et blikk.
+Sjekk fanen **Oversikt** regelmessig for å holde oversikt over dine givingsmål. Totalbeløpet i år gjør det enkelt å se fremgangen din med et raskt blikk.
 :::
 
-## Relaterte Artikler
+## Relaterte artikler
 
-- [Gi en Donasjon](./making-donations) -- Gi en ny gave fra appen
-- [Administrere Betalingsmetoder](./managing-payments) -- Legg til eller fjern lagrede betalingsmetoder
+- [Gi en donasjon](./making-donations) -- Gi en ny gave fra appen
+- [Administrere betalingsmetoder](./managing-payments) -- Legg til eller fjern lagrede betalingsmetoder
