@@ -66,8 +66,12 @@ Admin settings are intentionally hidden so that church members using the kiosk c
 3. The **Admin Settings** screen will open with the following options:
    - **Change Service** — switch the selected service time
    - **Change Printer** — open [printer settings](./printer-setup.md) to scan for and select a printer
-   - **Set/Change PIN** — set or update the kiosk PIN that protects admin access
+   - **Set Admin PIN** (or **Change Admin PIN** once one is set) — set or update the kiosk PIN that protects admin access
+   - **Emergency broadcast** — text the guardians of every checked-in household (see [Emergency Broadcast](../check-in/checking-out.md#emergency-broadcast))
+   - **Manned station mode** — a switch that adds check-out, paging, reprint, and profile editing to this station (see [Checking Out](../check-in/checking-out.md))
    - **Logout** — sign out and return to the login screen
+
+   Tap **Back to Kiosk** to return to check-in.
 
 :::warning
 Logging out clears all saved credentials and church selection. You will need to re-enter your email and password to use the kiosk again. Only log out when you need to switch accounts or reconfigure the kiosk.

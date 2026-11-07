@@ -19,7 +19,7 @@ FreePlay currently includes the following providers:
 - **Bible Project** - Videos and resources exploring the Bible
 - **SignPresenter** - Presentation and signage content for churches
 - **B1.church** - Content from your own B1 church setup
-- **Go Curriculum** - Curriculum from gocurriculum.com, organized by collection and lesson
+- **Go Curriculum** - Curriculum from gocurriculum.com, organized by age group (**Elementary** and **Preschool**), then collection and lesson. You only see the age groups and videos your Go membership includes
 - **Dropbox** - Browse and play images and videos from your own Dropbox
 - **Jesus Film Project** - Films and video clips from the Jesus Film Project
 - **OneDrive** - Browse and play images, videos, and audio from your own Microsoft OneDrive

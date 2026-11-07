@@ -24,7 +24,7 @@ The admin area gives you full control over your content:
 - **Build lessons** -- Add individual lessons with venues, sections, roles, and actions.
 - **Upload resources** -- Attach downloadable files (PDFs, activity sheets, images) at the program, study, or lesson level.
 - **View statistics** -- See which content is being downloaded, by whom, and where.
-- **Configure providers** -- Connect external curriculum providers that use the Open Lesson Format.
+- **Configure providers** -- Connect external curriculum providers that use the Open Lesson Format. This is done from the **External Providers** page, not the admin area.
 - **Year plans** -- Publish week 1, 2, 3… sequences for any curriculum. Churches apply them in B1 Admin.
 
 ## Content Hierarchy

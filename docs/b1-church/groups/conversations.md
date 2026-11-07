@@ -45,6 +45,18 @@ If your church has only turned on one of the two feeds for this group, the chat 
 
 Your message will be visible to all members of the group. Each message shows when it was sent: the time for today's messages, "yesterday" and the time, or the date and time for older ones.
 
+## Formatting Your Message {#formatting-your-message}
+
+You can add bold text, italics, and lists to a message:
+
+1. Type your message, then highlight the words or lines you want to format.
+2. A small toolbar appears above the message box with **Bold**, **Italic**, **Bulleted list**, and **Numbered list** buttons. Tap one to apply it. Tap the same button again with the text still highlighted to remove it.
+3. Send the message as usual.
+
+On a computer you can also press **Ctrl+B** (or **Cmd+B** on a Mac) for bold and **Ctrl+I** (**Cmd+I**) for italic.
+
+The toolbar adds simple markdown to your text: `**bold**`, `_italic_`, a `- ` at the start of a line for a bulleted list, and `1. ` for a numbered list. You can type these yourself too. Everyone in the chat sees the formatted message, web links stay clickable, and line breaks are kept. The same formatting works in announcements, [leader notes](./group-details.md#leader-notes), and private messages.
+
 ## Editing or Deleting Your Messages
 
 You can edit or delete any message you have posted:

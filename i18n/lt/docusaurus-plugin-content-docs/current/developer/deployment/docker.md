@@ -30,8 +30,8 @@ Jei praleisite `--domain`, programa veiks adresu `http://localhost`. Diegimo pro
 
 Kai diegimas baigtas:
 
-1. Atidarykite **https://church.example.org/admin** (arba http://localhost/admin) ir spustelėkite **Register**. Pirmoji paskyra automatiškai tampa serverio administratoriaus paskyra.
-2. Vykdykite programos nurodymus ir sukurkite pirmąją bažnyčią. Jos svetainė ir narių portalas iš karto pasiekiami adresu **https://church.example.org/**, kai tik bažnyčia sukuriama.
+1. Atidarykite `https://church.example.org/admin` (arba http://localhost/admin) ir spustelėkite **Register**. Pirmoji paskyra automatiškai tampa serverio administratoriaus paskyra.
+2. Vykdykite programos nurodymus ir sukurkite pirmąją bažnyčią. Jos svetainė ir narių portalas iš karto pasiekiami adresu `https://church.example.org/`, kai tik bažnyčia sukuriama.
 
 Viskas veikia po vienu domenu:
 

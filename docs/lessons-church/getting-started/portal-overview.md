@@ -21,10 +21,10 @@ After logging in to Lessons.church, you are taken to the **Portal** -- your chur
 
 ## What You See
 
-The portal is organized into two main areas:
+The portal opens on the **Classroom Management** page, which is organized into two main areas:
 
 - **Classrooms** (right side) -- A list of your church's classrooms. Click a classroom name to view its scheduled lessons. You can also add new classrooms or edit existing ones from here.
-- **Scheduled Lessons** (left side) -- Once you select a classroom, this area displays the lessons that have been scheduled for it. If you have not set up any classrooms yet, you will see a setup instructions video to help you get started.
+- **Lesson Schedule** (left side) -- Once you select a classroom, this area displays the lessons that have been scheduled for it. If you have not set up any classrooms yet, you will see a setup instructions video to help you get started.
 
 ## What You Can Do from the Portal
 

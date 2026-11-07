@@ -123,8 +123,10 @@ The **Sign-up fields** checklist controls what the registration form asks for. *
 
 | Field | Asked for | Included by default |
 |-------|-----------|---------------------|
+| **Title** | Each family member, as a dropdown in front of the name (Mr, Mrs, Miss, Ms, Dr, Prof, Rev, Pastor) | No |
 | **Email** | Primary contact only | Yes (optional) |
-| **Phone** | Primary contact only | Yes (optional) |
+| **Phone** | Each family member. When required, only the primary contact must fill it in. | Yes (optional) |
+| **Household role** | Each family member after the primary contact -- Spouse, Child, or Other. The primary contact is head of a new household. Anyone without a role is saved as Other. | Yes (optional) |
 | **Home address** | Once for the family -- street, address line 2, city, state, and zip. When required, everything except address line 2 must be filled in. The address is saved on every family member. | No |
 | **Birth date** | Each family member | No |
 | **Gender** | Each family member | No |

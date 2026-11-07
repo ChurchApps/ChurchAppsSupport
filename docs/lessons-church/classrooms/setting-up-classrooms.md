@@ -23,9 +23,9 @@ Before you can schedule lessons, you need to create classrooms that represent yo
 
 1. Log in to your account at [Lessons.church](https://lessons.church).
 2. Navigate to your **Portal**. This is your church's central hub for managing classrooms and schedules.
-3. Click **Add Classroom**.
-4. Enter a name for your classroom. Choose something descriptive that your volunteers will recognize -- for example, "Preschool," "Elementary K-2," or "Middle School."
-5. Save your new classroom. It will appear on your portal dashboard right away.
+3. In the **Classrooms** box, click **Add**. If you don't have any classrooms yet, click **Add First Classroom** instead.
+4. Enter a **Classroom Name**. Choose something descriptive that your volunteers will recognize -- for example, "Preschool," "Elementary K-2," or "Middle School."
+5. Click **Save**. Your new classroom appears in the **Classrooms** list right away.
 
 Repeat these steps for each room or age group at your church. You can create as many classrooms as you need.
 
@@ -41,8 +41,8 @@ Name your classrooms to match how your volunteers already think about your rooms
 
 Your classrooms appear on the portal dashboard where you can manage them at any time. From here you can:
 
-- **Rename a classroom** -- Update the name if your rooms or age groups change.
-- **Remove a classroom** -- Delete classrooms you no longer need.
+- **Rename a classroom** -- Click the **Edit classroom** (pencil) icon next to it, change the **Classroom Name**, and click **Save**.
+- **Remove a classroom** -- Click **Edit classroom**, then click the **Delete classroom** (trash can) icon and confirm.
 - **View the schedule** -- Click on any classroom to see its lesson schedule.
 
 ## What's Next

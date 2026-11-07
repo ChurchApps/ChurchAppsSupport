@@ -46,6 +46,15 @@ The [Lessons.church](../../lessons-church/index.md) library is organized the sam
 
 Press **Back** at any level to go up one step.
 
+## Browsing Go Curriculum
+
+After you [sign in with your gocurriculum.com account](./connecting-providers.md#phone-sign-in-qr-code-only), Go Curriculum opens to its age groups, **Elementary** and **Preschool**. Drill in by age group, then collection, then lesson, and select a lesson to open its download screen.
+
+What you see depends on your Go membership:
+
+- Only the age groups your membership covers are listed. If your login has no Go membership, the library is empty
+- Some videos are only for certain membership levels. Videos your membership doesn't include are left out of the lesson
+
 ## Downloading and Playing Content
 
 When you select a folder that contains playable files (or select an individual file), FreePlay shows the content title with a cover image and two choices:

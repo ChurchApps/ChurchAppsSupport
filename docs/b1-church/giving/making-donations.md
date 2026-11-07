@@ -48,7 +48,7 @@ When you are logged in, the **Giving** page in the member portal shows a **Give*
 To give:
 
 1. Open the giving page from your church's **Donate** tab, from the **Give** button in the **Giving** section of your [Home dashboard](../getting-started/navigating.md#home), or from **History** in the **Giving** section of your [Me page](../getting-started/me-page.md). On the Giving page, tap **Give** to open the donation form.
-2. Choose the **fund** you would like to give to and enter your donation amount.
+2. Choose the **fund** you would like to give to and enter your donation amount. The list shows only the funds your church offers to donors, even if you are a staff member who can see other funds in B1 Admin.
 3. Select an existing saved payment method or enter new payment details.
 4. Submit the form to complete your donation.
 

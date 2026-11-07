@@ -30,8 +30,8 @@ curl -fsSL https://raw.githubusercontent.com/ChurchApps/B1Admin/main/deploy/inst
 
 インストールが完了したら、次の手順に進みます。
 
-1. **https://church.example.org/admin**（または http://localhost/admin）を開き、**Register** をクリックします。最初に作成されたアカウントは、自動的にサーバー管理者になります。
-2. アプリ内の案内に従って、最初の教会を作成します。教会が作成されると、そのウェブサイトと会員ポータルが **https://church.example.org/** で直ちに公開されます。
+1. `https://church.example.org/admin`（または http://localhost/admin）を開き、**Register** をクリックします。最初に作成されたアカウントは、自動的にサーバー管理者になります。
+2. アプリ内の案内に従って、最初の教会を作成します。教会が作成されると、そのウェブサイトと会員ポータルが `https://church.example.org/` で直ちに公開されます。
 
 すべてのサービスは、1 つのドメインの配下で動作します。
 

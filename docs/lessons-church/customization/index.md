@@ -19,16 +19,16 @@ For example, a lesson might include a craft activity that works great for presch
 
 ## What You Can Customize
 
-- **Remove sections** -- Hide entire sections of a lesson that do not apply to a specific classroom or age group.
-- **Hide roles or actions** -- Remove individual roles or actions within a section if they are not needed.
+- **Remove sections** -- Remove entire sections of a lesson that do not apply to a specific classroom or age group.
+- **Remove roles or actions** -- Remove individual roles or actions within a section if they are not needed.
 - **Reorder content** -- Rearrange sections and actions to match the flow you prefer for your classroom.
 
 ## Classroom-Specific or Global
 
-When you save a customization, you choose how broadly it applies:
+Each time you make a change, you choose how broadly it applies:
 
-- **Single classroom** -- The customization only affects the current classroom. Other classrooms see the original content.
-- **All classrooms** -- The customization applies across every classroom at your church.
+- **This Classroom** -- The change only affects the current classroom. Other classrooms see the original content.
+- **All the Classrooms** -- The change applies across every classroom at your church.
 
 This flexibility means you can set up different views of the same lesson for different age groups, or make a change that applies everywhere at once.
 

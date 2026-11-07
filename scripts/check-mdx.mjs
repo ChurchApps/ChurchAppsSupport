@@ -25,7 +25,10 @@ console.error(`checking ${files.length} files...`);
 let bad = 0;
 for (const f of files) {
   let src = readFileSync(f, 'utf8');
+  src = src.replace(/\r\n/g, '\n');
   src = src.replace(/^---\n[\s\S]*?\n---\n/, ''); // strip frontmatter
+  // Docusaurus explicit heading ids ({#my-id}) aren't plain MDX; drop them before compiling
+  src = src.replace(/[ \t]*\{#[\w-]+\}[ \t]*$/gm, '');
 
   // 1) hard parse errors
   try {

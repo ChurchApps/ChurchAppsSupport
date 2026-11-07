@@ -24,17 +24,18 @@ Once your classrooms are set up, the next step is scheduling lessons so your vol
 
 1. Log in and navigate to your **Portal**.
 2. Click on the **classroom** you want to schedule.
-3. The schedule view displays the **last 4 past lessons** and the **next 4 upcoming lessons**. This gives you a quick look at what was recently taught and what is coming up.
+3. The **Lesson Schedule** box lists every lesson scheduled for that classroom, newest date first. Each one is tagged **Upcoming**, **Today**, or **Past**, so you can see at a glance what was recently taught and what is coming up.
 
 ## Adding a Lesson to the Schedule
 
-1. From the classroom schedule view, click to add a new lesson.
-2. Select the **date** for the lesson.
-3. Choose the **program** you want to teach from (for example, "Bible Stories for Kids").
-4. Select the **study** within that program (for example, "Creation and Early Stories").
-5. Pick the specific **lesson** you want to schedule.
-6. Choose the appropriate **venue** for this classroom. Venues represent age-group-specific versions of the lesson content (for example, "Preschool" or "Elementary"). Picking the right venue ensures your volunteers see content tailored to their classroom's age group.
-7. Save the scheduled lesson.
+1. In the **Lesson Schedule** box, click **Add Schedule**. If the classroom has nothing scheduled yet, click **Add First Schedule** instead.
+2. Enter the **Schedule Date** for the lesson.
+3. If you have added any [external providers](../admin/third-party-providers.md), choose a **Provider**. Leave it on **Lessons.church** to schedule from the Lessons.church library.
+4. Choose the **Program** you want to teach from (for example, "Bible Stories for Kids").
+5. Select the **Study** within that program (for example, "Creation and Early Stories").
+6. Pick the specific **Lesson** you want to schedule.
+7. Choose the appropriate **Venue** for this classroom. Venues represent age-group-specific versions of the lesson content (for example, "Preschool" or "Elementary"). Picking the right venue ensures your volunteers see content tailored to their classroom's age group.
+8. Click **Save**. To check the lesson first, click **Preview / Print** to open it in a new tab.
 
 The lesson will now appear on the classroom's schedule for that date.
 

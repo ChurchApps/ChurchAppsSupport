@@ -98,6 +98,17 @@ const products = [
     ),
     color: '#C62828',
   },
+  {
+    title: translate({id: 'homepage.products.worshipcommons.title', message: 'WorshipCommons'}),
+    description: translate({id: 'homepage.products.worshipcommons.description', message: 'Free, open library of worship songs with chord charts in any key, lyrics, and slides.'}),
+    link: '/docs/worship-commons/',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+      </svg>
+    ),
+    color: '#6D4C41',
+  },
 ];
 
 function ProductCard({title, description, link, icon, color}: {
@@ -143,7 +154,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={translate({id: 'homepage.title', message: 'Help for B1.church, Lessons.church & FreePlay'})}
-      description={translate({id: 'homepage.description', message: 'Guides and documentation for ChurchApps\' free, open-source church software: B1.church church management, check-in, giving and websites, Lessons.church curriculum, and FreePlay.'})}
+      description={translate({id: 'homepage.description', message: 'Guides and documentation for ChurchApps\' free, open-source church software: B1.church church management, check-in, giving and websites, Lessons.church curriculum, FreePlay, and WorshipCommons.'})}
     >
       <HomepageHeader />
       <main>

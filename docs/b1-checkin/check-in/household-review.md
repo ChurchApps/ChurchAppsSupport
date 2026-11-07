@@ -26,6 +26,7 @@ Each household member appears as a card with:
 - Their **photo** (or a placeholder icon if no photo is on file)
 - Their **display name**
 - A **summary of their current group assignments** (shown as small chips below the name when the card is collapsed)
+- An **Already checked in** badge if they have already checked in for this service today
 - An **expand/collapse arrow** on the right side
 
 ## Expanding a Member

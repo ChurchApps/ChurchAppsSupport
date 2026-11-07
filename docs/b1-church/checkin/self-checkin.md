@@ -41,9 +41,13 @@ After selecting a service, you will see your household members under **Who's her
 
 You do not need to check in every household member -- only expand and assign groups for the people who are actually present.
 
+Anyone who has already checked in for this service today shows an **Already Checked In** badge next to their name.
+
 ### Step 3: Confirmation
 
 Once you have selected groups for everyone who is attending, tap the button at the bottom of the page. It counts the people you have selected -- for example, **Check in 1 person** or **Check in 3 people**.
+
+If someone you selected already checked in for this service today, an **Already Checked In** window names them first. Tap **Check In Again** to update their groups, or **Cancel** to go back.
 
 You will see a confirmation that your check-in is complete and your attendance has been saved. After a moment the page returns to the service list, ready for the next check-in.
 
@@ -62,6 +66,7 @@ If you need to change a group selection before completing check-in, tap the **Ch
 - If you select a service and see a message such as "Check-in opens Sun 9:30 AM." (or "Check-in isn't open for this service right now."), none of that service's times are currently within their check-in window. Try again once check-in opens.
 - If your household checked in for an earlier service time, you can come back and check in for a later service time once it opens, even after the earlier one has closed.
 - If a room you picked is full or closed, you'll see "A room you picked is full or closed for check-in. Please see a volunteer."
+- If a children's room doesn't have enough volunteers checked in for another child, you'll see a message naming the room -- for example, "Kids Room 1 doesn't have enough volunteers for another child right now. Please pick a different room or see a volunteer."
 
 :::warning
 Check-in is only available when your church has active services configured. If you do not see any services listed, check with your church office to confirm whether self check-in is enabled.
