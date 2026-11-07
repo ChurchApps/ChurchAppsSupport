@@ -1,49 +1,53 @@
 ---
-title: "Explorar Grupos"
+title: "Explorar grupos"
 ---
 
-# Explorar Grupos
+# Explorar grupos
 
 <div class="article-intro">
 
-La pagina publica de grupos de tu iglesia facilita descubrir grupos que te interesen. Los grupos estan organizados por categoria, para que puedas revisar rapidamente los diferentes tipos de grupos y encontrar el adecuado para ti.
+La página pública de grupos de tu iglesia facilita encontrar grupos que te interesen. Los grupos están organizados por categoría, así que puedes revisar rápidamente distintos tipos de grupos y encontrar el que mejor te convenga.
 
 </div>
+
+## Video de capacitación
+
+<YouTube id="2tDaqvzhrng" title="Unirse a un grupo y chatear con él" />
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- No se requiere iniciar sesion para explorar grupos. Sin embargo, [iniciar sesion](../getting-started/logging-in.md) te da acceso a funciones adicionales en la pagina de detalles de cada grupo.
+- No se requiere inicio de sesión para explorar los grupos. Sin embargo, [iniciar sesión](../getting-started/logging-in.md) te da acceso a funciones adicionales en la página de detalles de cada grupo.
 
 </div>
 
-## Encontrar la Pagina de Grupos
+## Cómo encontrar la página de grupos
 
-Navega a la pagina de **Grupos** en el sitio B1.church de tu iglesia. Esta pagina es de acceso publico, por lo que no necesitas haber iniciado sesion para explorar.
+Ve a la página **Grupos** del sitio B1.church de tu iglesia. Esta página es de acceso público, por lo que no necesitas iniciar sesión para explorarla.
 
-## Como Estan Organizados los Grupos
+## Cómo están organizados los grupos
 
-Los grupos se muestran por **categoria** (tambien llamada etiqueta). Las categorias son configuradas por los administradores de tu iglesia y pueden incluir etiquetas como "Grupos Pequenos", "Ministerios", "Jovenes" o "Estudios Biblicos". Cada categoria muestra todos los grupos que pertenecen a ella.
+Los grupos se muestran por **categoría** (también llamada etiqueta). Los administradores de tu iglesia configuran las categorías, que pueden incluir etiquetas como "Grupos pequeños", "Ministerios", "Jóvenes" o "Estudios bíblicos". Cada categoría muestra todos los grupos que le pertenecen.
 
-## Leer las Tarjetas de Grupo
+## Cómo leer las tarjetas de grupo
 
-Cada grupo se muestra como una tarjeta con la siguiente informacion:
+Cada grupo se muestra como una tarjeta con la siguiente información:
 
 - **Foto del grupo** -- Una imagen de portada que representa al grupo. Si no se ha establecido una foto, se muestra una imagen predeterminada.
-- **Nombre del grupo** -- Se muestra de manera prominente sobre la foto.
-- **Horario de reunion** -- Cuando se reune normalmente el grupo (por ejemplo, "Miercoles a las 7 PM"). Si no se ha establecido un horario, se muestra un marcador de posicion.
-- **Lugar de reunion** -- Donde se reune el grupo. Si no se ha establecido una ubicacion, se muestra un marcador de posicion.
-- **Descripcion** -- Una breve vista previa de lo que trata el grupo, limitada a unas pocas lineas. Haz clic en el grupo para leer la descripcion completa.
+- **Nombre del grupo** -- Se muestra de forma destacada sobre la foto.
+- **Horario de reunión** -- Cuándo se reúne habitualmente el grupo (por ejemplo, "Miércoles a las 7 p. m."). Si no se ha definido un horario, se muestra un marcador de posición.
+- **Lugar de reunión** -- Dónde se reúne el grupo. Si no se ha definido un lugar, se muestra un marcador de posición.
+- **Descripción** -- Una breve vista previa de lo que trata el grupo, limitada a unas pocas líneas. Haz clic en el grupo para leer la descripción completa.
 
-## Ver un Grupo
+## Cómo ver un grupo
 
-Haz clic en cualquier tarjeta de grupo para abrir la pagina completa de detalles del grupo. Alli encontraras la descripcion completa, informacion sobre los lideres del grupo, proximos eventos del calendario y una forma de ponerte en contacto.
+Haz clic en cualquier tarjeta de grupo para abrir su página de detalles completa. Allí encontrarás la descripción completa, información sobre los líderes del grupo, los próximos eventos del calendario y una forma de ponerte en contacto.
 
 :::tip
-Si buscas un tipo especifico de grupo, revisa primero los encabezados de las categorias. Esto te ayuda a ir directamente a la seccion que te interesa en lugar de desplazarte por todos los grupos.
+Si buscas un tipo específico de grupo, revisa primero los títulos de las categorías. Así podrás ir directamente a la sección que te interesa en lugar de desplazarte por todos los grupos.
 :::
 
-## Siguientes Pasos
+## Próximos pasos
 
-- [Detalles del Grupo](./group-details.md) -- Aprende lo que encontraras en la pagina de detalles del grupo
-- [Conversaciones de Grupo](./conversations.md) -- Descubre como participar en las discusiones del grupo una vez que te unas
+- [Detalles del grupo](./group-details.md) -- Conoce lo que encontrarás en la página de detalles del grupo
+- [Conversaciones del grupo](./conversations.md) -- Descubre cómo participar en las discusiones del grupo una vez que te unas

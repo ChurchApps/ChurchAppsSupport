@@ -1,90 +1,90 @@
 ---
-title: "Configurazione Stampante"
+title: "Configurazione della stampante"
 ---
 
-# Printer Configurazione
+# Configurazione della stampante
 
 <div class="article-intro">
 
-B1 Church Checkin can print name labels and parent pickup slips Per a network label printer. Setting up the printer is Facoltativo -- you can use the app without a printer for Frequenza tracking only.
+B1 Church Checkin può stampare etichette con i nomi e tagliandi di ritiro per i genitori su una stampante di etichette di rete. La configurazione della stampante è facoltativa: puoi usare l'app solo per il monitoraggio delle presenze, senza stampante.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- [Log in](./logging-in) Per the B1 Church Checkin app and Seleziona your church
-- Connect a compatible network label printer Per the same Wi-Fi network as the tablet
+- [Accedi](./logging-in) all'app B1 Church Checkin e seleziona la tua chiesa
+- Collega una stampante di etichette di rete compatibile alla stessa rete Wi-Fi del tablet
 
 </div>
 
-## Recommended Labels
+## Etichette consigliate
 
-B1 Checkin's default label template is sized for **1.1" × 3.5"** labels.
+Il modello di etichetta predefinito di B1 Checkin è dimensionato per etichette da **1,1" × 3,5"**.
 
-If you are using a **Brother QL printer**, you must use **Brother DK-1201** labels (1.1" × 3.5"). Brother printers detect the label size from the physical roll loaded in the printer — if the roll does not match the template size, the printer will not print. Do not substitute a different size.
+Se stai usando una **stampante Brother QL**, devi usare etichette **Brother DK-1201** (1,1" × 3,5"). Le stampanti Brother rilevano le dimensioni dell'etichetta dal rotolo fisico caricato nella stampante: se il rotolo non corrisponde alle dimensioni del modello, la stampante non stamperà. Non sostituirle con un formato diverso.
 
-[Brother DK-1201 Compatible Labels — 12 Rolls (Amazon)](https://www.amazon.com/dp/B0716XB6JG?tag=signpresenter-20)
+[Etichette compatibili Brother DK-1201 — 12 rotoli (Amazon)](https://www.amazon.com/dp/B0716XB6JG?tag=signpresenter-20)
 
 ---
 
-## Accessing Printer Impostazioni
+## Accesso alle impostazioni della stampante
 
-You can Apri the printer Impostazioni screen at any Ora through the **Admin Impostazioni** menu:
+Puoi aprire la schermata delle impostazioni della stampante in qualsiasi momento tramite il menu **Impostazioni amministratore**:
 
-1. Tap the **church logo** in the header **seven times** in quick succession (within two seconds).
-2. If a kiosk PIN is set, Inserisci the PIN when prompted.
-3. On the Admin Impostazioni screen, tap **Change Printer**.
+1. Tocca il **logo della chiesa** nell'intestazione **sette volte** in rapida successione (entro due secondi).
+2. Se è stato impostato un PIN del chiosco, inseriscilo quando richiesto.
+3. Nella schermata Impostazioni amministratore, tocca **Cambia stampante**.
 
-This opens the printer Impostazioni screen where you can scan for printers, Seleziona one, and run a test print.
+Si apre la schermata delle impostazioni della stampante, dove puoi cercare le stampanti, selezionarne una ed eseguire una stampa di prova.
 
-## Scanning for Printers
+## Ricerca delle stampanti
 
-When the printer Impostazioni screen opens, the app automatically scans your local network for compatible printers. You will see a loading indicator with the message "Scanning for printers" while the scan is in progress.
+Quando si apre la schermata delle impostazioni della stampante, l'app analizza automaticamente la rete locale alla ricerca di stampanti compatibili. Mentre la ricerca è in corso, vedrai un indicatore di caricamento con il messaggio "Ricerca stampanti in corso".
 
-Once the scan completes, you will see a list of discovered printers. Each printer card shows:
+Al termine della ricerca, vedrai un elenco delle stampanti trovate. Ogni scheda stampante mostra:
 
-- The **printer model** name
-- The **IP address** of the printer on your network
+- Il nome del **modello di stampante**
+- L'**indirizzo IP** della stampante nella tua rete
 
-A **No Printer** option is always included at the bottom of the list.
+In fondo all'elenco è sempre presente l'opzione **Nessuna stampante**.
 
 :::warning
-The tablet and the printer must be connected Per the same local network for the scan Per discover the printer. If your printer does not appear, verify that both devices are on the same Wi-Fi network and that the printer is powered on.
+Il tablet e la stampante devono essere connessi alla stessa rete locale perché la ricerca possa trovare la stampante. Se la stampante non compare, verifica che entrambi i dispositivi siano sulla stessa rete Wi-Fi e che la stampante sia accesa.
 :::
 
-## Selecting a Printer
+## Selezione di una stampante
 
-1. Tap the printer you want Per use. The selected printer card becomes highlighted with a checkmark.
-2. Per print without a physical printer (for testing or Frequenza-only mode), Seleziona **No Printer**.
+1. Tocca la stampante che vuoi usare. La scheda della stampante selezionata viene evidenziata con un segno di spunta.
+2. Per stampare senza una stampante fisica (per test o in modalità solo presenze), seleziona **Nessuna stampante**.
 
-## Test Printing
+## Stampa di prova
 
-Before saving your selection, you can verify the connection works:
+Prima di salvare la selezione, puoi verificare che la connessione funzioni:
 
-1. Seleziona a printer from the list.
-2. Tap the **Test Print** button at the bottom of the screen.
-3. The app sends a test label Per the printer. If the printer is connected properly, a test page will print.
+1. Seleziona una stampante dall'elenco.
+2. Tocca il pulsante **Stampa di prova** in fondo alla schermata.
+3. L'app invia un'etichetta di prova alla stampante. Se la stampante è collegata correttamente, verrà stampata una pagina di prova.
 
-If you tap **Test Print** with **No Printer** selected, the app will display an alert reminding you that No printer is selected.
+Se tocchi **Stampa di prova** con **Nessuna stampante** selezionata, l'app mostrerà un avviso che ricorda che non è stata selezionata alcuna stampante.
 
 :::tip
-Always run a test print after selecting a printer Per confirm the connection before your Avanti Servizio.
+Esegui sempre una stampa di prova dopo aver selezionato una stampante, per confermare la connessione prima del tuo prossimo culto.
 :::
 
-## Saving Your Selection
+## Salvataggio della selezione
 
-When you are satisfied with your printer choice:
+Quando sei soddisfatto della stampante scelta:
 
-1. Tap the **Salva & Restart** button at the bottom of the screen.
-2. The app saves your printer selection and restarts Per apply the Impostazioni.
+1. Tocca il pulsante **Salva e riavvia** in fondo alla schermata.
+2. L'app salva la selezione della stampante e si riavvia per applicare le impostazioni.
 
-Your printer selection is remembered across app restarts. You do not need Per set it up again unless you want Per change printers.
+La selezione della stampante viene ricordata anche dopo i riavvii dell'app. Non devi configurarla di nuovo, a meno che tu non voglia cambiare stampante.
 
 :::info
-If you move the kiosk Per a different location or change your network Configurazione, return Per the printer Impostazioni Per scan for printers again and update your selection.
+Se sposti il chiosco in un'altra posizione o modifichi la configurazione della rete, torna alle impostazioni della stampante per cercare di nuovo le stampanti e aggiornare la selezione.
 :::
 
-## Avanti Steps
+## Passaggi successivi
 
-With your printer configured, you are ready Per start checking in. See the [check-in workflow](../check-in/) Per learn how the full process works, starting with [selecting a service](../check-in/selecting-service).
+Con la stampante configurata, sei pronto a iniziare con i check-in. Consulta il [flusso di lavoro del check-in](../check-in/) per capire come funziona l'intero processo, a partire da [selezione di un culto](../check-in/selecting-service).

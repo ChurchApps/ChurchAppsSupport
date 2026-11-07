@@ -1,59 +1,59 @@
 ---
-title: "पाठों को शेड्यूल करना"
+title: "पाठ निर्धारित करना"
 ---
 
-# Scheduling Lessons
+# पाठ निर्धारित करना
 
 <div class="article-intro">
 
-Once your classrooms are set up, the next step is scheduling lessons so your volunteers know exactly what to teach and when. Scheduling connects the lesson content from Lessons.church to your classroom calendar.
+एक बार आपकी कक्षाएँ सेट हो जाएँ, तो अगला कदम है पाठ निर्धारित करना, ताकि आपके स्वयंसेवकों को ठीक से पता रहे कि उन्हें क्या और कब पढ़ाना है। शेड्यूलिंग Lessons.church की पाठ सामग्री को आपके कक्षा कैलेंडर से जोड़ती है।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- [Set up at least one classroom](./setting-up-classrooms.md) in the portal
-- [Browse the content library](../browsing/index.md) to find a program and study you want to teach
+- पोर्टल में कम से कम एक कक्षा [सेट करें](./setting-up-classrooms.md)
+- वह कार्यक्रम और अध्ययन खोजने के लिए [सामग्री लाइब्रेरी ब्राउज़ करें](../browsing/index.md) जिसे आप पढ़ाना चाहते हैं
 
 </div>
 
-## Viewing a Classroom Schedule
+## कक्षा का शेड्यूल देखना
 
-1. Log in and navigate to your **Portal**.
-2. Click on the **classroom** you want to schedule.
-3. The schedule view displays the **last 4 past lessons** and the **next 4 upcoming lessons**. This gives you a quick look at what was recently taught and what is coming up.
+1. लॉग इन करें और अपने **पोर्टल** पर जाएँ।
+2. वह **कक्षा** चुनें जिसका शेड्यूल आप बनाना चाहते हैं।
+3. शेड्यूल व्यू में **पिछले 4 पाठ** और **आने वाले 4 पाठ** दिखाई देते हैं। इससे आप जल्दी देख सकते हैं कि हाल में क्या पढ़ाया गया और आगे क्या आने वाला है।
 
-## Adding a Lesson to the Schedule
+## शेड्यूल में पाठ जोड़ना
 
-1. From the classroom schedule view, click to add a new lesson.
-2. Select the **date** for the lesson.
-3. Choose the **program** you want to teach from (for example, "Bible Stories for Kids").
-4. Select the **study** within that program (for example, "Creation and Early Stories").
-5. Pick the specific **lesson** you want to schedule.
-6. Choose the appropriate **venue** for this classroom. Venues represent age-group-specific versions of the lesson content (for example, "Preschool" or "Elementary"). Picking the right venue ensures your volunteers see content tailored to their classroom's age group.
-7. Save the scheduled lesson.
+1. कक्षा के शेड्यूल व्यू से नया पाठ जोड़ने के लिए क्लिक करें।
+2. पाठ की **तारीख** चुनें।
+3. वह **कार्यक्रम** चुनें जिसे आप पढ़ाना चाहते हैं (उदाहरण के लिए, "बच्चों के लिए बाइबल कहानियाँ")।
+4. उस कार्यक्रम के भीतर **अध्ययन** चुनें (उदाहरण के लिए, "सृष्टि और प्रारंभिक कहानियाँ")।
+5. उस अध्ययन का विशिष्ट **पाठ** चुनें जिसे आप निर्धारित करना चाहते हैं।
+6. इस कक्षा के लिए उपयुक्त **स्थान** (venue) चुनें। स्थान पाठ सामग्री के आयु-समूह के अनुसार बने संस्करण होते हैं (उदाहरण के लिए, "प्रीस्कूल" या "प्राथमिक")। सही स्थान चुनने से आपके स्वयंसेवकों को अपनी कक्षा के आयु-समूह के अनुरूप सामग्री दिखेगी।
+7. निर्धारित पाठ को सहेजें।
 
-The lesson will now appear on the classroom's schedule for that date.
+अब वह पाठ उस तारीख के लिए कक्षा के शेड्यूल में दिखाई देगा।
 
 :::info
-Programs, studies, and lessons are the content hierarchy on Lessons.church. A program contains multiple studies, and each study contains individual lessons. Venues provide age-specific variations of the same lesson. See [Programs and Studies](../browsing/programs-and-studies.md) for a full explanation.
+कार्यक्रम, अध्ययन और पाठ Lessons.church पर सामग्री का क्रम हैं। एक कार्यक्रम में कई अध्ययन होते हैं, और हर अध्ययन में अलग-अलग पाठ होते हैं। स्थान एक ही पाठ के आयु-विशिष्ट रूप होते हैं। पूरी व्याख्या के लिए [कार्यक्रम और अध्ययन](../browsing/programs-and-studies.md) देखें।
 :::
 
-## How Volunteers Use the Schedule
+## स्वयंसेवक शेड्यूल का उपयोग कैसे करते हैं
 
-Once you have scheduled lessons, your volunteers can open the portal, select their classroom, and immediately see what is coming up. They can review the lesson content ahead of time, download any materials they need, and arrive prepared. No more guesswork about what to teach next.
+एक बार पाठ निर्धारित हो जाने पर, आपके स्वयंसेवक पोर्टल खोलकर अपनी कक्षा चुन सकते हैं और तुरंत देख सकते हैं कि आगे क्या आने वाला है। वे पहले से पाठ सामग्री देख सकते हैं, ज़रूरी सामग्री डाउनलोड कर सकते हैं, और तैयार होकर पहुँच सकते हैं। अब यह अनुमान लगाने की ज़रूरत नहीं कि अगला क्या पढ़ाना है।
 
-## Tips for Scheduling
+## शेड्यूल करने के सुझाव
 
-- **Plan ahead** -- Churches schedule classroom lessons in [B1 Admin](../../b1-admin/serving/scheduling-lessons.md), including applying a published year plan.
-- **Stay consistent** -- Following a program sequentially helps kids build on what they learned the previous week.
-- **Check the history** -- Use the past lesson list to make sure you are not accidentally repeating content.
+- **पहले से योजना बनाएँ** -- चर्च [B1 Admin](../../b1-admin/serving/scheduling-lessons.md) में कक्षा के पाठ निर्धारित करते हैं, जिसमें प्रकाशित वार्षिक योजना लागू करना भी शामिल है।
+- **लगातार रहें** -- किसी कार्यक्रम को क्रम से पढ़ाने से बच्चों को पिछले हफ़्ते सीखी बातों पर आगे बढ़ने में मदद मिलती है।
+- **इतिहास देखें** -- गलती से वही सामग्री दोबारा न पढ़ाई जाए, इसके लिए पिछले पाठों की सूची देखें।
 
 :::warning
-Make sure to select the correct venue for your classroom's age group. Choosing the wrong venue means your volunteers will see content designed for a different age level.
+अपनी कक्षा के आयु-समूह के लिए सही स्थान अवश्य चुनें। गलत स्थान चुनने का मतलब है कि आपके स्वयंसेवकों को किसी दूसरे आयु-स्तर के लिए बनी सामग्री दिखेगी।
 :::
 
-## What's Next
+## आगे क्या करें
 
-After scheduling lessons, you may want to [customize the lesson content](../customization/customizing-lessons.md) for specific classrooms to match your teaching style and age group needs. When it is time to teach, learn about [Presenting](../presenting/index.md) to deliver lessons effectively.
+पाठ निर्धारित करने के बाद, आप विशिष्ट कक्षाओं के लिए [पाठ सामग्री को अनुकूलित](../customization/customizing-lessons.md) करना चाहें, ताकि वह आपकी शिक्षण शैली और आयु-समूह की ज़रूरतों से मेल खाए। जब पढ़ाने का समय हो, तो पाठ प्रभावी ढंग से देने के लिए [प्रस्तुति](../presenting/index.md) के बारे में जानें।

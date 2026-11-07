@@ -6,45 +6,45 @@ title: "Tagesvers"
 
 <div class="article-intro">
 
-Der Tagesvers-Bildschirm zeigt einen taeglichen Bibelvers als schoen gestaltetes Bild an. Es ist eine einfache Moeglichkeit, Ihren Tag mit der Heiligen Schrift zu beginnen oder einen Moment der Ermutigung zu finden, wann immer Sie die App oeffnen.
+Der Bildschirm „Tagesvers" zeigt einen täglichen Bibelvers als ansprechend gestaltetes Bild. Er ist eine einfache Möglichkeit, den Tag mit einem Bibelwort zu beginnen oder sich jederzeit beim Öffnen der App ermutigen zu lassen.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich an](../getting-started/logging-in) bei Ihrem Konto
-- Ihre Gemeinde muss die Tagesvers-Funktion aktiviert haben
+- [B1 Mobile installieren](../getting-started/installing) und sich [anmelden](../getting-started/logging-in)
+- Ihre Gemeinde muss die Funktion „Tagesvers" aktiviert haben
 
 </div>
 
-## Den Vers ansehen
+## Den Vers anzeigen
 
-1. Oeffnen Sie den **Tagesvers**-Bildschirm ueber das Seitenmenue.
+1. Öffnen Sie den Bildschirm **Tagesvers** über das Menü.
 2. Der Bildschirm zeigt den heutigen Vers als gestaltetes Bild an.
 3. Jeden Tag erscheint automatisch ein neuer Vers.
 
-Sie muessen nichts weiter tun -- oeffnen Sie einfach den Bildschirm und der Vers des aktuellen Tages wird angezeigt.
+Sie müssen nichts weiter tun -- öffnen Sie einfach den Bildschirm, und der Vers des aktuellen Tages wird angezeigt.
 
-## Responsive Darstellung
+## Anzeige je nach Ausrichtung
 
-Das Versbild passt sich automatisch an die Bildschirmausrichtung Ihres Geraetes an. Je nachdem, wie Sie Ihr Telefon oder Tablet halten, sehen Sie eines von drei Formaten:
+Das Versbild passt sich automatisch an die Ausrichtung des Bildschirms Ihres Geräts an. Je nachdem, wie Sie Ihr Smartphone oder Tablet halten, sehen Sie eines von drei Formaten:
 
-- **Hochformat (9:16)** -- Optimiert fuer vertikal gehaltene Telefone
-- **Querformat (16:9)** -- Am besten fuer Tablets oder horizontal gehaltene Telefone
-- **Quadratisch (1:1)** -- Wird verwendet, wenn Ihre Bildschirmabmessungen annaehernd gleich sind
+- **Hochformat (9:16)** -- Optimiert für Smartphones, die senkrecht gehalten werden
+- **Querformat (16:9)** -- Ideal für Tablets oder Smartphones, die waagerecht gehalten werden
+- **Quadrat (1:1)** -- Wird verwendet, wenn Ihr Bildschirm annähernd gleich breit und hoch ist
 
-Die App erkennt Ihre Bildschirmausrichtung und waehlt das beste Format aus, sodass der Vers immer gut aussieht, egal wie Sie ihn betrachten. Wenn Sie Ihr Geraet drehen, aktualisiert sich das Bild passend zur neuen Ausrichtung.
+Die App erkennt die Ausrichtung Ihres Bildschirms und wählt das passende Format aus, sodass der Vers unabhängig von der Ansicht immer gut aussieht. Wenn Sie Ihr Gerät drehen, wird das Bild an die neue Ausrichtung angepasst.
 
 :::tip
-Machen Sie den Tagesvers zu einem Teil Ihrer Morgenroutine. Oeffnen Sie die App jeden Tag fuer einen Moment der Besinnung, bevor Sie in den Tag starten.
+Machen Sie den Tagesvers zu einem Teil Ihrer Morgenroutine. Öffnen Sie die App jeden Tag für einen kurzen Moment der Besinnung, bevor Sie in den Tag starten.
 :::
 
-## Verfuegbarkeit
+## Verfügbarkeit
 
-Der Tagesvers ist eine integrierte Inhaltsfunktion von B1 Mobile. Wenn Sie ihn nicht im Seitenmenue sehen, hat Ihr Gemeindeadministrator ihn moeglicherweise nicht zur App hinzugefuegt. Wenden Sie sich an Ihren Gemeindeadministrator, um ihn anzufordern.
+Der Tagesvers ist eine integrierte Inhaltsfunktion von B1 Mobile. Wenn Sie ihn im Menü nicht finden, hat Ihr Gemeindeadministrator ihn möglicherweise nicht in der App hinzugefügt. Wenden Sie sich an Ihren Gemeindeadministrator, um die Aktivierung anzufragen.
 
 ## Verwandte Artikel
 
-- [Bibel](./bible) -- Lesen Sie ganze Schriftpassagen im integrierten Leser
-- [Predigten](./sermons) -- Schauen Sie aufgezeichnete Predigten Ihrer Gemeinde
+- [Bibel](./bible) -- Vollständige Bibeltexte im integrierten Leser lesen
+- [Predigten](./sermons) -- Aufgezeichnete Predigten Ihrer Gemeinde ansehen

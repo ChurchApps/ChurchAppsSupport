@@ -6,34 +6,34 @@ title: "Gruppen"
 
 <div class="article-intro">
 
-Gruppen in B1 Mobile helfen Ihnen, mit den Menschen und Diensten in Kontakt zu bleiben, die Ihnen wichtig sind. Ob Sie einer Kleingruppe, einem Bibelkreis, einem Ehrenamtlichen-Team oder einem Dienst angehoeren -- der Gruppen-Bildschirm ist Ihre Anlaufstelle fuer alles, was in Ihrer Gemeindegemeinschaft passiert.
+Gruppen in B1 Mobile helfen dir, mit den Menschen und Diensten in Verbindung zu bleiben, die dir wichtig sind. Ob du einer Kleingruppe, einem Bibelkreis, einem Ehrenamtsteam oder einem Dienst angehörst: Der Bereich Gruppen ist dein Zentrum für alles, was in deiner Kirchengemeinde passiert.
 
 </div>
 
-## Was Sie sehen werden
+## Was du siehst
 
-Wenn Sie den **Gruppen**-Bildschirm oeffnen, sind Ihre Gruppen nach Besuchshaeufigkeit sortiert:
+Wenn du den Bereich **Gruppen** öffnest, sind deine Gruppen danach sortiert, wie oft du sie besuchst:
 
-- **Hero-Gruppe** -- Ihre meistbesuchte Gruppe wird prominent als grosse Hero-Karte oben auf dem Bildschirm angezeigt. Tippen Sie darauf, um direkt zur Detailseite dieser Gruppe zu gelangen.
-- **Empfohlene Gruppen** -- Ihre naechstmeistbesuchten Gruppen erscheinen als empfohlene Karten direkt unter dem Hero-Bereich. Diese bieten Ihnen schnellen Zugriff auf die Gruppen, mit denen Sie am meisten interagieren.
-- **Alle Gruppen** -- Unterhalb des empfohlenen Bereichs koennen Sie die uebrigen Gruppen Ihrer Gemeinde durchsuchen.
+- **Hauptgruppe** -- Deine meistbesuchte Gruppe wird oben auf dem Bildschirm als große Hauptkarte hervorgehoben. Tippe darauf, um direkt zur Detailseite dieser Gruppe zu gelangen.
+- **Empfohlene Gruppen** -- Deine nächsten meistbesuchten Gruppen erscheinen als empfohlene Karten direkt unterhalb der Hauptgruppe. So hast du schnellen Zugriff auf die Gruppen, mit denen du am häufigsten interagierst.
+- **Alle Gruppen** -- Unterhalb des Empfehlungsbereichs kannst du die übrigen Gruppen deiner Kirchengemeinde durchsehen.
 
-Dieses Layout macht es einfach, mit einem einzigen Fingertipp zu den Gruppen zu gelangen, die Ihnen am wichtigsten sind, waehrend Sie gleichzeitig Zugriff auf alles andere haben.
+Dieses Layout macht es leicht, mit einem einzigen Tipp zu den Gruppen zu gelangen, die dir am wichtigsten sind, und du hast trotzdem Zugriff auf alles andere.
 
-## Was Sie tun koennen
+## Was du tun kannst
 
-Folgendes koennen Sie auf dem Gruppen-Bildschirm tun:
+Dies kannst du im Bereich Gruppen tun:
 
-- **Gruppen durchsuchen** -- Scrollen Sie durch die verfuegbaren Gruppen Ihrer Gemeinde und entdecken Sie neue, denen Sie beitreten koennen.
-- **Gruppendetails ansehen** -- Tippen Sie auf eine beliebige Gruppe, um ihr vollstaendiges Profil einzusehen, einschliesslich Beitraegen, Mitgliedern und Gruppeninformationen.
-- **Der Zeitachse folgen** -- Ein vereinheitlichter Zeitachsen-Feed zeigt Beitraege und Aktivitaeten aus all Ihren Gruppen an einem Ort, damit Sie kein Update verpassen.
-- **In Kontakt bleiben** -- Sehen Sie, was Ihre Gruppenmitglieder teilen, verfolgen Sie Gespraeche und engagieren Sie sich mit Gruppeninhalten.
+- **Gruppen durchsuchen** -- Blättere durch die verfügbaren Gruppen deiner Kirchengemeinde und entdecke neue, denen du beitreten kannst.
+- **Gruppendetails ansehen** -- Tippe auf eine beliebige Gruppe, um ihr vollständiges Profil zu sehen, einschließlich Beiträge, Mitglieder und Gruppeninformationen.
+- **Der Zeitleiste folgen** -- Eine gemeinsame Zeitleiste zeigt Beiträge und Aktivitäten aus all deinen Gruppen an einem Ort, damit du keine Neuigkeit verpasst.
+- **In Verbindung bleiben** -- Sieh, was deine Gruppenmitglieder teilen, verfolge Gespräche und beteilige dich an Gruppeninhalten.
 
 :::tip
-Der Gruppen-Bildschirm passt sich Ihrem Nutzungsverhalten an, genau wie das [Dashboard](../dashboard/). Die Gruppen, die Sie am haeufigsten besuchen, werden fuer schnellen Zugriff nach oben verschoben.
+Der Bereich Gruppen passt sich deiner Nutzung an, genau wie das [Dashboard](../dashboard/). Die Gruppen, die du am häufigsten besuchst, werden für schnellen Zugriff nach oben gestellt.
 :::
 
-## Naechste Schritte
+## Nächste Schritte
 
-- [Gruppendetails](./group-details) -- Sehen Sie, was auf der Detailseite einer Gruppe zu finden ist
-- [Gruppen-Zeitachse](./group-timeline) -- Erfahren Sie mehr ueber den vereinheitlichten Aktivitaeten-Feed Ihrer Gruppen
+- [Gruppendetails](./group-details) -- Was auf der Detailseite einer Gruppe zu sehen ist
+- [Gruppen-Zeitleiste](./group-timeline) -- Mehr über die gemeinsame Aktivitätsübersicht aller deiner Gruppen

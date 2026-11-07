@@ -1,66 +1,66 @@
 ---
-title: "Selvinnsjekking"
+title: "Selvinnsjekk"
 ---
 
-# Selvinnsjekking
+# Selvinnsjekk
 
 <div class="article-intro">
 
-A sjekke inn fra B1 Mobile er en enkel flertrinnsprosess. Med bare noen fa trykk kan du registrere oppmote for deg selv og familiemedlemmene dine uten a stille i ko ved en kiosk.
+Innsjekking fra B1 Mobile er en enkel prosess i flere steg. Med noen få trykk kan du registrere oppmøte for deg selv og medlemmene i husstanden din, uten å stå i kø ved en kiosk.
 
 </div>
 
 <div class="prereqs">
-<h4>For Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) pa kontoen din
-- Forsikre deg om at [familiemedlemmene](../profile/household.md) dine er satt opp i profilen din
+- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- Kontroller at [husstandsmedlemmene](../profile/household.md) dine er lagt inn i profilen din
 
 </div>
 
 ## Innsjekkingsflyten
 
-### Trinn 1: Velg en Gudstjeneste og Tidspunkt
+### Steg 1: Velg en gudstjeneste og et tidspunkt
 
-Nar du apner innsjekkingsskjermen, ser du en liste over tilgjengelige gudstjenester og tidspunkter. Disse er konfigurert av kirken din og kan inkludere alternativer som "Sondag Morgen 09:00" eller "Onsdag Kveld 18:30".
+Når du åpner innsjekkingsskjermen, ser du en liste over tilgjengelige gudstjenester og tidspunkter. Disse er satt opp av menigheten din og kan inkludere alternativer som «Søndag morgen kl. 09.00» eller «Onsdag kveld kl. 18.30».
 
-1. Gjennomga de tilgjengelige gudstjenestealternativene.
-2. Trykk pa gudstjenesten og tidspunktet du skal delta pa.
+1. Gå gjennom de tilgjengelige gudstjenestealternativene.
+2. Trykk på gudstjenesten og tidspunktet du skal delta på.
 
-### Trinn 2: Velg Familiemedlemmer
+### Steg 2: Velg husstandsmedlemmer
 
-Etter a ha valgt en gudstjeneste, ser du en liste over medlemmene i familien din.
+Etter at du har valgt en gudstjeneste, ser du en liste over medlemmene i husstanden din.
 
-1. Gjennomga listen over familiemedlemmer.
-2. Velg hver person som skal delta pa gudstjenesten.
+1. Gå gjennom listen over husstandsmedlemmer.
+2. Velg hver person som skal delta på gudstjenesten.
 
-Du trenger ikke a sjekke inn alle -- velg bare personene som faktisk er til stede.
+Du trenger ikke å sjekke inn alle – velg bare de som faktisk er til stede.
 
-### Trinn 3: Tildel Grupper
+### Steg 3: Tildel grupper
 
-For hver person du valgte, tildeler du dem til en gruppe for gudstjenesten. Grupper kan inkludere alternativer som Hovedgudstjeneste, Barnerom 1, Barnerom 2 eller Ungdomsgruppe.
+For hver person du har valgt, tildeler du dem en gruppe for gudstjenesten. Grupper kan være alternativer som Hovedgudstjeneste, Barnerom 1, Barnerom 2 eller Ungdomsgruppe.
 
-1. For hvert valgte familiemedlem, trykk for a velge riktig **gruppe**.
-2. Forsikre deg om at hver person er tildelt riktig gruppe for sin alder eller rolle.
+1. For hvert valgt husstandsmedlem trykker du for å velge riktig **gruppe**.
+2. Sørg for at hver person er plassert i riktig gruppe for alder eller rolle.
 
-### Trinn 4: Bekreftelse
+### Steg 4: Bekreftelse
 
-Nar du har tildelt grupper for alle som deltar, fullfor innsjekkingen.
+Når du har tildelt grupper til alle som deltar, fullfører du innsjekkingen.
 
-1. Gjennomga valgene dine for a forsikre deg om at alt ser riktig ut.
+1. Gå gjennom valgene dine for å kontrollere at alt ser riktig ut.
 2. Bekreft innsjekkingen.
-3. Du ser en bekreftelsesskjerm som forteller deg at oppmotret ditt er registrert.
+3. Du får en bekreftelsesskjerm som forteller deg at oppmøtet ditt er registrert.
 
-## Ting a Vite
+## Dette bør du vite
 
-- Du kan bare sjekke inn familiemedlemmer som er koblet til kontoen din. Hvis noen mangler fra listen, be kirkens administrator om a legge dem til i [familien](../profile/household.md) din.
-- Hvis ingen gudstjenester vises pa innsjekkingsskjermen, har kanskje ikke kirken din noen gudstjenester konfigurert for innsjekking akkurat na.
-- Hvis du trenger a endre et valg for du bekrefter, kan du ga tilbake og justere valgene dine.
+- Du kan bare sjekke inn husstandsmedlemmer som er koblet til kontoen din. Hvis noen mangler i listen, be menighetsadministratoren legge dem til i [husstanden](../profile/household.md) din.
+- Hvis ingen gudstjenester vises på innsjekkingsskjermen, har menigheten din kanskje ikke satt opp noen gudstjenester for innsjekking akkurat nå.
+- Hvis du må endre et valg før du bekrefter, kan du gå tilbake og justere valgene dine.
 
 :::warning
-Forsikre deg om at du velger riktig gudstjenestetidspunkt og gruppetildelinger for du bekrefter. Nar oppmotret er registrert, ma endringer kanskje gjores av kirkens administrator.
+Kontroller at du velger riktig gudstjenestetidspunkt og riktig gruppetildeling før du bekrefter. Når oppmøtet er registrert, kan endringer måtte gjøres av menighetsadministratoren.
 :::
 
 :::tip
-Apne innsjekkingsskjermen pa vei til kirken slik at du er klar til a sjekke inn sa snart du ankommer. Det tar bare noen sekunder a fullfoere prosessen.
+Åpne innsjekkingsskjermen på vei til kirken, slik at du er klar til å sjekke inn så snart du kommer frem. Det tar bare noen få sekunder å fullføre prosessen.
 :::

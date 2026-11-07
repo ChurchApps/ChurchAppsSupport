@@ -1,43 +1,43 @@
 ---
-title: "Gemeinde wechseln"
+title: "Kirche wechseln"
 ---
 
-# Gemeinde wechseln
+# Kirche wechseln
 
 <div class="article-intro">
 
-Wenn Sie Mitglied in mehr als einer Gemeinde sind, macht es B1 Mobile einfach, zwischen ihnen zu wechseln. Ihr Konto funktioniert bei allen Gemeinden, die ChurchApps nutzen, sodass Sie nur eine Anmeldung benoetigen.
+Wenn du Mitglied in mehr als einer Kirche bist, macht B1 Mobile es dir leicht, zwischen ihnen zu wechseln. Dein Konto funktioniert bei allen Kirchen, die ChurchApps verwenden, sodass du nur einen Login benötigst.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Vor dem Start</h4>
 
-- [Installieren Sie B1 Mobile](./installing) und [melden Sie sich an](./logging-in) bei Ihrem Konto
+- [B1 Mobile installieren](./installing) und dich [in deinem Konto anmelden](./logging-in)
 
 </div>
 
-## So wechseln Sie die Gemeinde
+## So wechselst du die Kirche
 
-1. Oeffnen Sie das Seitenmenue, indem Sie auf das **Hamburger-Symbol** (drei horizontale Linien) in der oberen linken Ecke tippen.
-2. Tippen Sie im Kopfbereich des Seitenmenues auf die Schaltflaeche mit dem Namen Ihrer aktuellen Gemeinde (oder **Gemeinde finden**, wenn keine Gemeinde ausgewaehlt ist).
-3. Der **Gemeinde-Suche**-Bildschirm erscheint. Ihre zuletzt besuchten Gemeinden werden oben fuer schnellen Zugriff angezeigt.
-4. Tippen Sie auf eine kuerzlich besuchte Gemeinde, um zu ihr zu wechseln, oder geben Sie im Suchfeld eine andere Gemeinde ein.
+1. Öffne das Seitenmenü, indem du oben links auf das **Hamburger-Symbol** (drei waagerechte Linien) tippst.
+2. Tippe im Kopfbereich des Menüs auf die Schaltfläche mit dem Namen deiner aktuellen Kirche (oder auf **Kirche finden**, wenn noch keine Kirche ausgewählt ist).
+3. Der Bildschirm **Kirchensuche** wird angezeigt. Die zuletzt besuchten Kirchen werden oben angezeigt, damit du schnell darauf zugreifen kannst.
+4. Tippe auf eine kürzlich besuchte Kirche, um zu ihr zu wechseln, oder gib im Suchfeld den Namen einer anderen Kirche ein.
 
-Wenn Sie die Gemeinde wechseln, laedt die App das Branding, die Navigationslinks und die Inhalte dieser Gemeinde neu. Ihr [Dashboard](../dashboard/), Ihre [Gruppen](../groups/) und andere Daten werden die neu ausgewaehlte Gemeinde widerspiegeln.
+Wenn du die Kirche wechselst, lädt die App neu und zeigt das Branding, die Navigationslinks und die Inhalte dieser Kirche an. Deine [Startseite](../dashboard/), [Gruppen](../groups/) und andere Daten beziehen sich dann auf die neu ausgewählte Kirche.
 
-## Nach einer Gemeinde suchen
+## Nach einer Kirche suchen
 
-Geben Sie auf dem Gemeinde-Suche-Bildschirm mindestens 3 Zeichen des Gemeindenamens in das Suchfeld ein. Passende Gemeinden erscheinen in einer Liste darunter. Tippen Sie auf eine Gemeinde, um sie auszuwaehlen.
+Gib auf dem Bildschirm Kirchensuche mindestens 3 Zeichen des Kirchennamens in das Suchfeld ein. Passende Kirchen werden darunter in einer Liste angezeigt. Tippe auf eine Kirche, um sie auszuwählen.
 
 :::info
-Wenn keine Ergebnisse erscheinen, versuchen Sie eine andere Schreibweise oder einen kuerzeren Teil des Gemeindenamens. Die Suche gleicht mit bei ChurchApps registrierten Gemeindenamen ab.
+Wenn keine Ergebnisse angezeigt werden, versuche eine andere Schreibweise oder einen kürzeren Teil des Kirchennamens. Die Suche gleicht die Namen mit den bei ChurchApps registrierten Kirchennamen ab.
 :::
 
-## Kuerzlich besuchte Gemeinden
+## Zuletzt besuchte Kirchen
 
-Der Gemeinde-Suche-Bildschirm merkt sich Gemeinden, die Sie zuvor besucht haben. Wenn Sie keine Suchanfrage eingegeben haben, werden Ihre kuerzlich besuchten Gemeinden automatisch angezeigt. So koennen Sie schnell zu einer Gemeinde zurueckwechseln, die Sie regelmaessig nutzen.
+Der Bildschirm Kirchensuche merkt sich Kirchen, die du bereits besucht hast. Wenn du keine Suchanfrage eingegeben hast, werden deine zuletzt besuchten Kirchen automatisch angezeigt. So kannst du schnell zu einer Kirche zurückwechseln, die du regelmäßig nutzt.
 
 :::tip
-Sie muessen sich nicht ab- und wieder anmelden, um die Gemeinde zu wechseln. Ihr einziges ChurchApps-Konto funktioniert bei allen Ihren Gemeinden. Waehlen Sie einfach eine andere Gemeinde auf dem Gemeinde-Suche-Bildschirm aus und schon kann es losgehen.
+Du musst dich nicht ab- und wieder anmelden, um die Kirche zu wechseln. Dein einziges ChurchApps-Konto funktioniert bei allen deinen Kirchen. Wähle einfach auf dem Bildschirm Kirchensuche eine andere Kirche aus, und schon kannst du loslegen.
 :::

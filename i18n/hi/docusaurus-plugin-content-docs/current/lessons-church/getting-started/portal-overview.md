@@ -1,59 +1,59 @@
 ---
-title: "पोर्टल अवलोकन"
+title: "पोर्टल का परिचय"
 ---
 
-# Portal Overview
+# पोर्टल का परिचय
 
 <div class="article-intro">
 
-After logging in to Lessons.church, you are taken to the **Portal** -- your church's dashboard for managing classrooms and lesson schedules. This is where you will spend most of your time when organizing curriculum for your church.
+Lessons.church में लॉग इन करने के बाद, आप **पोर्टल** पर पहुँच जाते हैं -- यह आपके चर्च का डैशबोर्ड है, जहाँ आप कक्षाओं और पाठ-कार्यक्रमों का प्रबंधन करते हैं। आपके चर्च के लिए पाठ्यक्रम व्यवस्थित करते समय आप सबसे ज़्यादा समय इसी पर बिताएँगे।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- [Create an account](./creating-account.md) and connect to your church
-- Log in to [Lessons.church](https://lessons.church)
+- [एक खाता बनाएँ](./creating-account.md) और अपने चर्च से जुड़ें
+- [Lessons.church](https://lessons.church) पर लॉग इन करें
 
 </div>
 
-## What You See
+## आपको क्या दिखता है
 
-The portal is organized into two main areas:
+पोर्टल दो मुख्य भागों में बँटा है:
 
-- **Classrooms** (right side) -- A list of your church's classrooms. Click a classroom name to view its scheduled lessons. You can also add new classrooms or edit existing ones from here.
-- **Scheduled Lessons** (left side) -- Once you select a classroom, this area displays the lessons that have been scheduled for it. If you have not set up any classrooms yet, you will see a setup instructions video to help you get started.
+- **कक्षाएँ** (दाईं ओर) -- आपके चर्च की कक्षाओं की सूची। किसी कक्षा के नाम पर क्लिक करके उसके निर्धारित पाठ देखें। आप यहीं से नई कक्षाएँ जोड़ सकते हैं या मौजूदा कक्षाओं को संपादित कर सकते हैं।
+- **निर्धारित पाठ** (बाईं ओर) -- एक कक्षा चुनने के बाद, यह भाग उस कक्षा के लिए निर्धारित पाठ दिखाता है। यदि आपने अभी तक कोई कक्षा सेट नहीं की है, तो आपको शुरुआती सेटअप में मदद करने वाला निर्देश वीडियो दिखाई देगा।
 
-## What You Can Do from the Portal
+## पोर्टल से आप क्या कर सकते हैं
 
-From the portal, you can:
+पोर्टल से आप:
 
-1. **Manage classrooms** -- Add, edit, or remove classrooms. Each classroom can be linked to a volunteer team (so they see upcoming lessons in the B1 app) and a parent/student group (so they can access recent lessons). Churches still on this classroom schedule path: parents open the classroom page (without `?upcoming=1`) to see take-home content. Churches using B1Admin plan types see the take-home card on the associated group's page in B1 instead.
-2. **View and manage scheduled lessons** -- See which lessons are coming up for each classroom and make changes as needed.
-3. **Subscribe to classroom feeds** -- Click the feed icon next to a classroom to get a playlist feed URL you can use with compatible apps.
-4. **Access External Providers** -- Use the **External Providers** page to configure third-party content sources that support the Open Lesson Format. This lets you bring in lessons from other providers beyond the built-in Lessons.church library.
-5. **Access the Admin area** -- If you have admin permissions, you will see an **Admin** option in the navigation. The admin area lets you manage programs, studies, and lessons at a content level.
+1. **कक्षाओं का प्रबंधन करें** -- कक्षाएँ जोड़ें, संपादित करें या हटाएँ। हर कक्षा को एक स्वयंसेवक टीम से जोड़ा जा सकता है (ताकि वे B1 ऐप में आने वाले पाठ देख सकें) और एक अभिभावक/छात्र समूह से (ताकि वे हाल के पाठों तक पहुँच सकें)। जो चर्च अब भी इस कक्षा-कार्यक्रम के तरीके पर हैं, उनके अभिभावक घर ले जाने योग्य सामग्री देखने के लिए कक्षा का पेज खोलते हैं (बिना `?upcoming=1` के)। B1Admin प्लान प्रकार का उपयोग करने वाले चर्च B1 में संबंधित समूह के पेज पर घर ले जाने योग्य सामग्री का कार्ड देखते हैं।
+2. **निर्धारित पाठ देखें और प्रबंधित करें** -- देखें कि हर कक्षा के लिए कौन-से पाठ आने वाले हैं और आवश्यकता अनुसार बदलाव करें।
+3. **कक्षा फ़ीड की सदस्यता लें** -- किसी कक्षा के आगे फ़ീड आइकन पर क्लिक करें और संगत ऐप्स के साथ उपयोग करने के लिए एक प्लेलिस्ट फ़ीड URL प्राप्त करें।
+4. **बाहरी प्रदाताओं तक पहुँचें** -- तीसरे पक्ष की ऐसी सामग्री स्रोत कॉन्फ़िगर करने के लिए **External Providers** पेज का उपयोग करें जो Open Lesson Format को सपोर्ट करते हों। इससे Lessons.church की अंतर्निर्मित लाइब्रेरी से बाहर के अन्य प्रदाताओं के पाठ भी लाए जा सकते हैं।
+5. **एडमिन क्षेत्र तक पहुँचें** -- यदि आपके पास एडमिन अनुमतियाँ हैं, तो नेविगेशन में आपको **Admin** विकल्प दिखेगा। एडमिन क्षेत्र में आप सामग्री के स्तर पर कार्यक्रम, अध्ययन और पाठों का प्रबंधन कर सकते हैं।
 
-## Navigation
+## नेविगेशन
 
-The portal navigation includes:
+पोर्टल के नेविगेशन में शामिल हैं:
 
-- **Home** -- Return to the public Lessons.church home page to browse content.
-- **Schedules** -- The main portal view for managing classrooms and lesson schedules.
-- **External Providers** -- Configure third-party lesson providers.
-- **Admin** -- Manage programs, studies, and lesson content (visible only if you have admin permissions).
+- **Home** -- सामग्री ब्राउज़ करने के लिए सार्वजनिक Lessons.church होम पेज पर वापस जाएँ।
+- **Schedules** -- कक्षाओं और पाठ-कार्यक्रमों के प्रबंधन के लिए मुख्य पोर्टल दृश्य।
+- **External Providers** -- तीसरे पक्ष के पाठ प्रदाता कॉन्फ़िगर करें।
+- **Admin** -- कार्यक्रम, अध्ययन और पाठ सामग्री का प्रबंधन करें (केवल तभी दिखता है जब आपके पास एडमिन अनुमतियाँ हों)।
 
 :::info
-The **Admin** option only appears if your account has been granted content editing permissions. Most church staff will use the **Schedules** and **External Providers** pages for day-to-day management.
+**Admin** विकल्प तभी दिखता है जब आपके खाते को सामग्री संपादन की अनुमतियाँ दी गई हों। अधिकांश चर्च कर्मचारी रोज़मर्रा के प्रबंधन के लिए **Schedules** और **External Providers** पेज का उपयोग करेंगे।
 :::
 
-## Getting Started
+## शुरुआत कैसे करें
 
-If you are visiting the portal for the first time and have not created any classrooms yet, start by clicking **Add First Classroom** in the classrooms panel. Give your classroom a name (for example, "Preschool" or "3rd-5th Grade") and save it. From there, you can begin [scheduling lessons](../classrooms/scheduling-lessons.md).
+यदि आप पहली बार पोर्टल पर आए हैं और अभी तक कोई कक्षा नहीं बनाई है, तो कक्षाओं वाले पैनल में **Add First Classroom** पर क्लिक करके शुरू करें। अपनी कक्षा को एक नाम दें (उदाहरण के लिए, "Preschool" या "3rd-5th Grade") और उसे सेव करें। इसके बाद आप [पाठ निर्धारित करना](../classrooms/scheduling-lessons.md) शुरू कर सकते हैं।
 
-## Related Articles
+## संबंधित लेख
 
-- [Setting Up Classrooms](../classrooms/setting-up-classrooms.md) -- Detailed guide for creating and managing classrooms
-- [Browsing Content](../browsing/index.md) -- Find programs and studies to schedule
-- [External Providers](../browsing/external-providers.md) -- Add third-party curriculum sources
+- [कक्षाएँ सेट करना](../classrooms/setting-up-classrooms.md) -- कक्षाएँ बनाने और प्रबंधित करने की विस्तृत गाइड
+- [सामग्री ब्राउज़ करना](../browsing/index.md) -- निर्धारित करने के लिए कार्यक्रम और अध्ययन खोजें
+- [External Providers](../browsing/external-providers.md) -- तीसरे पक्ष के पाठ्यक्रम स्रोत जोड़ें

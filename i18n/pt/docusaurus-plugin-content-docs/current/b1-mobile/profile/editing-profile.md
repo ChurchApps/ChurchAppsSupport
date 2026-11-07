@@ -6,53 +6,53 @@ title: "Editando Seu Perfil"
 
 <div class="article-intro">
 
-A aba **Perfil** permite que voce atualize suas informacoes pessoais para que sua igreja sempre tenha os dados corretos. As alteracoes feitas aqui sao refletidas em todos os servicos ChurchApps, incluindo B1.church e qualquer outro aplicativo que sua igreja usa.
+A aba **Perfil** permite que você atualize suas informações pessoais para que sua igreja sempre tenha os dados corretos registrados. As alterações feitas aqui são refletidas em todos os serviços da ChurchApps, incluindo o B1.church e quaisquer outros aplicativos que sua igreja utilize.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comecar</h4>
+<h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faca login](../getting-started/logging-in) na sua conta
+- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
 
 </div>
 
-## O Que Voce Pode Editar
+## O Que Você Pode Editar
 
-Seu perfil inclui os seguintes detalhes pessoais:
+Seu perfil inclui os seguintes dados pessoais:
 
-- **Nome e sobrenome** -- Seu nome de exibicao em todos os servicos ChurchApps
-- **Endereco de e-mail** -- Usado para comunicacoes da igreja e recuperacao de conta
-- **Numero de telefone** -- Para que sua igreja possa contata-lo quando necessario
-- **Endereco** -- Seu endereco residencial para registros da igreja
-- **Foto do perfil** -- A imagem que representa voce no [diretorio](../community/member-directory.md) e em todo o aplicativo
+- **Nome e sobrenome** -- Seu nome de exibição em todos os serviços da ChurchApps
+- **Endereço de e-mail** -- Usado para comunicações da igreja e recuperação de conta
+- **Número de telefone** -- Para que sua igreja possa entrar em contato quando necessário
+- **Endereço** -- Seu endereço residencial para os registros da igreja
+- **Foto de perfil** -- A imagem que representa você no [diretório](../community/member-directory.md) e em todo o aplicativo
 
-## Atualizando Suas Informacoes
+## Atualizando Suas Informações
 
 1. Abra o menu lateral e toque em **Perfil**.
-2. Selecione a aba **Perfil** se ela nao estiver ativa.
-3. Toque no campo que deseja atualizar e faca as alteracoes.
-4. Salve as alteracoes quando terminar.
+2. Selecione a aba **Perfil**, caso ela ainda não esteja ativa.
+3. Toque no campo que deseja atualizar e faça as alterações.
+4. Salve suas alterações ao concluir.
 
-Suas informacoes atualizadas sao sincronizadas automaticamente. Qualquer pessoa que visualize seu perfil (sujeito as suas [configuracoes de privacidade](./privacy-settings)) vera os novos detalhes imediatamente.
+Suas informações atualizadas são sincronizadas automaticamente. Qualquer pessoa que visualizar seu perfil (de acordo com suas [configurações de privacidade](./privacy-settings)) verá os novos dados imediatamente.
 
 :::tip
-Mantenha seu endereco de e-mail e numero de telefone atualizados. Sua igreja usa essas informacoes para enviar atualizacoes e lembretes importantes.
+Mantenha seu endereço de e-mail e número de telefone atualizados. Sua igreja usa essas informações para enviar atualizações e lembretes importantes.
 :::
 
-## Foto do Perfil
+## Foto de Perfil
 
-Voce pode adicionar ou alterar sua foto do perfil na aba **Perfil**. Sua foto aparece no [diretorio de membros](../community/member-directory.md), listas de membros de grupos e em qualquer lugar onde seu perfil e exibido.
+Você pode adicionar ou alterar sua foto de perfil na aba **Perfil**. Sua foto aparece no [diretório de membros](../community/member-directory.md), nas listas de membros dos grupos e em qualquer outro lugar onde seu perfil for exibido.
 
-## Alteracoes em Todos os Servicos ChurchApps
+## Alterações em Todos os Serviços da ChurchApps
 
-Como todos os servicos ChurchApps compartilham o mesmo sistema de contas, uma alteracao feita no B1 Mobile e imediatamente visivel no [B1.church](../../b1-church/), nas ferramentas de administracao da sua igreja e em qualquer outro servico conectado. Voce nao precisa atualizar suas informacoes separadamente em cada lugar.
+Como todos os serviços da ChurchApps compartilham o mesmo sistema de contas, uma alteração feita no B1 Mobile fica imediatamente visível no [B1.church](../../b1-church/), nas ferramentas administrativas da sua igreja e em quaisquer outros serviços conectados. Você não precisa atualizar suas informações separadamente em cada lugar.
 
 :::info
-Algumas igrejas exigem aprovacao do administrador para certas alteracoes no perfil. Se sua atualizacao nao aparecer imediatamente, verifique a aba **Pendente** na tela do perfil para o status.
+Algumas igrejas exigem aprovação do administrador para determinadas alterações de perfil. Se sua atualização não aparecer imediatamente, verifique o status dela na aba **Pendente** da tela do seu perfil.
 :::
 
 ## Artigos Relacionados
 
-- [Familia](./household) -- Visualize e gerencie os membros da sua familia
-- [Configuracoes de Privacidade](./privacy-settings) -- Controle o que outros podem ver sobre voce
+- [Familia](./household) -- Visualize e gerencie os membros da sua família
+- [Configurações de Privacidade](./privacy-settings) -- Controle o que outras pessoas podem ver sobre você

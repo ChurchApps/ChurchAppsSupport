@@ -1,59 +1,59 @@
 ---
-title: "Sermoes"
+title: "Sermões"
 ---
 
-# Sermoes
+# Sermões
 
 <div class="article-intro">
 
-A tela de Sermoes permite que voce navegue e assista sermoes gravados da sua igreja. E o seu destino para recuperar mensagens que perdeu ou revisitar um sermao que tocou voce.
+A tela de Sermões permite que você navegue e assista a sermões gravados da sua igreja. É o lugar ideal para acompanhar mensagens que você perdeu ou revisitar um sermão que tocou o seu coração.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comecar</h4>
+<h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faca login](../getting-started/logging-in) na sua conta
-- Sua igreja deve ter conteudo de sermoes configurado no portal de administracao
+- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
+- Sua igreja precisa ter conteúdo de sermões configurado no portal administrativo
 
 </div>
 
-## O Que Voce Vera
+## O Que Você Verá
 
-A tela de Sermoes e organizada em uma visualizacao por abas com duas secoes principais:
+A tela de Sermões é organizada em uma visualização com abas e duas seções principais:
 
-- **Aba Playlists** -- Mostra as playlists de sermoes (series) da sua igreja, ordenadas por data. Cada playlist agrupa sermoes relacionados, facilitando acompanhar uma serie de varias semanas do inicio ao fim.
-- **Aba Recentes** -- Mostra uma lista de sermoes individuais em ordem cronologica reversa, para que as mensagens mais recentes estejam sempre no topo.
+- **Aba Playlists** -- Mostra as playlists de sermões (séries) da sua igreja, ordenadas por data. Cada playlist agrupa sermões relacionados, facilitando acompanhar uma série de várias semanas do início ao fim.
+- **Aba Recentes** -- Mostra uma lista de sermões individuais em ordem cronológica inversa, para que as mensagens mais novas estejam sempre no topo.
 
-No topo da tela, o sermao mais recente e exibido como um cartao em destaque, dando acesso rapido a ultima mensagem.
+No topo da tela, o sermão mais recente é exibido como um cartão em destaque, dando acesso rápido à mensagem mais recente.
 
-## Contagem Regressiva para Transmissao ao Vivo
+## Contagem Regressiva da Transmissão ao Vivo
 
-Quando uma [transmissao ao vivo](./live-streaming) esta programada para as proximas 24 horas, um temporizador de contagem regressiva aparece na tela de Sermoes. Isso informa quando o proximo culto sera transmitido para que voce possa planejar assistir ao vivo.
+Quando uma [transmissão ao vivo](./live-streaming) está prevista para acontecer nas próximas 24 horas, um cronômetro de contagem regressiva aparece na tela de Sermões. Ele informa quando o próximo culto será transmitido, para que você possa se programar para assistir ao vivo.
 
-## Assistindo um Sermao
+## Assistindo a um Sermão
 
-1. Abra a tela de **Sermoes** no menu lateral.
-2. Navegue pela aba **Playlists** ou **Recentes** para encontrar o sermao desejado.
-3. Toque em um sermao para abri-lo e comecar a assistir.
+1. Abra a tela **Sermões** pelo menu lateral.
+2. Navegue pelas abas **Playlists** ou **Recentes** para encontrar o sermão que deseja.
+3. Toque em um sermão para abri-lo e começar a assistir.
 
-Voce tambem pode tocar em uma playlist para ver todos os sermoes daquela serie e selecionar o sermao especifico que deseja assistir.
+Você também pode tocar em uma playlist para ver todos os sermões dessa série e, em seguida, selecionar o sermão específico que deseja assistir.
 
-Os sermoes podem incluir conteudo de video ou audio hospedado em plataformas como YouTube, Vimeo ou Facebook. Quando voce toca em um sermao, a midia e reproduzida diretamente no aplicativo.
+Os sermões podem incluir conteúdo de vídeo ou áudio hospedado em plataformas como YouTube, Vimeo ou Facebook. Ao tocar em um sermão, a mídia é reproduzida diretamente no aplicativo.
 
-## O Que Cada Sermao Mostra
+## O Que Cada Sermão Exibe
 
-Cada entrada de sermao pode exibir:
+Cada item de sermão pode mostrar:
 
-- **Titulo** -- O nome do sermao
-- **Pregador** -- Quem entregou a mensagem
-- **Data** -- Quando o sermao foi gravado ou publicado
-- **Miniatura** -- Uma imagem de pre-visualizacao do sermao
+- **Título** -- O nome do sermão
+- **Pregador** -- Quem apresentou a mensagem
+- **Data** -- Quando o sermão foi gravado ou publicado
+- **Miniatura** -- Uma imagem de pré-visualização do sermão
 
 :::tip
-Se voce vir uma contagem regressiva na tela de Sermoes, toque nela para ir direto para a [transmissao ao vivo](./live-streaming) quando comecar.
+Se você vir uma contagem regressiva na tela de Sermões, toque nela para ir diretamente à [transmissão ao vivo](./live-streaming) quando ela começar.
 :::
 
 ## Disponibilidade
 
-A tela de Sermoes esta disponivel quando sua igreja adicionou conteudo de sermoes atraves do portal de administracao. Se voce nao ve **Sermoes** no seu aplicativo, sua igreja pode nao ter este recurso configurado ainda.
+A tela de Sermões está disponível quando sua igreja adicionou conteúdo de sermões pelo portal administrativo. Se você não vir **Sermões** no seu aplicativo, sua igreja pode ainda não ter configurado este recurso.

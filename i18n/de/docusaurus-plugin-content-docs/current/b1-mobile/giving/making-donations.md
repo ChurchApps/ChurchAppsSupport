@@ -1,51 +1,51 @@
 ---
-title: "Eine Spende taetigen"
+title: "Eine Spende geben"
 ---
 
-# Eine Spende taetigen
+# Eine Spende geben
 
 <div class="article-intro">
 
-Spenden ueber B1 Mobile ist schnell und unkompliziert. Der **Spenden**-Tab im Spendenbereich fuehrt Sie in wenigen Schritten durch den Vorgang, sodass Sie Ihre Gemeinde von ueberall aus unterstuetzen koennen.
+Über B1 Mobile zu spenden ist schnell und unkompliziert. Der Tab **Spenden** im Bereich Geben führt dich in wenigen Schritten durch den Vorgang, sodass du deine Gemeinde von überall aus unterstützen kannst.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich an](../getting-started/logging-in) bei Ihrem Konto
-- Halten Sie eine Kredit- oder Debitkarte bereit oder [speichern Sie eine Zahlungsmethode](./managing-payments) im Voraus
+- [B1 Mobile installieren](../getting-started/installing) und dich [in deinem Konto anmelden](../getting-started/logging-in)
+- Halte eine Kredit- oder Debitkarte bereit oder [speichere vorab eine Zahlungsmethode](./managing-payments)
 
 </div>
 
-## So spenden Sie
+## So gibst du
 
-1. Oeffnen Sie den Bereich **Spenden** in B1 Mobile.
-2. Tippen Sie auf den **Spenden**-Tab.
-3. Waehlen Sie den **Fonds**, an den Sie spenden moechten. Ihre Gemeinde hat moeglicherweise mehrere Fonds verfuegbar, wie z. B. einen Allgemeinen Fonds, Missionsfonds oder Baufonds.
-4. Geben Sie den **Betrag** ein, den Sie spenden moechten.
-5. Geben Sie Ihre **Zahlungsdaten** an. Wenn Sie eine gespeicherte Zahlungsmethode haben, koennen Sie sie hier auswaehlen. Andernfalls geben Sie Ihre Kartendaten ein.
-6. Senden Sie Ihre Spende ab.
+1. Öffne den Bereich **Geben** in B1 Mobile.
+2. Tippe auf den Tab **Spenden**.
+3. Wähle den **Fonds** aus, dem du spenden möchtest. Deine Gemeinde hat möglicherweise mehrere Fonds zur Auswahl, etwa einen Allgemeinen Fonds, einen Missionsfonds oder einen Gebäudefonds.
+4. Gib den **Betrag** ein, den du spenden möchtest.
+5. Gib deine **Zahlungsdaten** an. Wenn du eine gespeicherte Zahlungsmethode hast, kannst du sie hier auswählen. Andernfalls gibst du deine Kartendaten ein.
+6. Sende deine Spende ab.
 
-Nachdem Ihre Spende verarbeitet wurde, sehen Sie eine Bestaetigung, dass Ihre Spende erfolgreich war. Die Spende erscheint auch in Ihrem **Verlauf**-Tab.
+Nachdem deine Spende verarbeitet wurde, siehst du eine Bestätigung, dass deine Gabe erfolgreich war. Die Spende erscheint außerdem im Tab **Verlauf**.
 
 ## Sichere Zahlungen
 
-Alle Zahlungen werden ueber **Stripe** abgewickelt, eine vertrauenswuerdige und weit verbreitete Zahlungsplattform. Ihre Kartendaten werden sicher von Stripe verarbeitet und niemals auf ChurchApps-Servern gespeichert. Sie koennen mit der Gewissheit spenden, dass Ihre Finanzdaten geschuetzt sind.
+Alle Zahlungen werden über **Stripe** abgewickelt, eine vertrauenswürdige und weit verbreitete Zahlungsplattform. Deine Kartendaten werden von Stripe sicher verarbeitet und niemals auf Servern von ChurchApps gespeichert. Du kannst beruhigt geben, denn deine Finanzdaten sind geschützt.
 
 :::warning
-Ueberpruefen Sie den Spendenbetrag und den Fonds vor dem Absenden. Spenden werden sofort verarbeitet und koennen nicht innerhalb der App rueckgaengig gemacht werden.
+Überprüfe Spendenbetrag und Fonds, bevor du absendest. Spenden werden sofort verarbeitet und können in der App nicht rückgängig gemacht werden.
 :::
 
-## Schnelles Wiederholen von Spenden
+## Schnelles Wiederholen einer Spende
 
-Wenn Sie den gleichen Betrag wie Ihre letzte Spende geben moechten, muessen Sie nicht den gesamten Spendenvorgang durchlaufen. Der **Uebersicht**-Tab zeigt Ihre letzte Spende zusammen mit einer **Wiederholen**-Schaltflaeche. Tippen Sie darauf, um schnell dieselbe Spende erneut einzureichen.
+Wenn du denselben Betrag wie bei deiner letzten Spende geben möchtest, musst du nicht den gesamten Spendenablauf durchlaufen. Im Tab **Übersicht** werden deine letzte Gabe sowie eine Schaltfläche **Wiederholen** angezeigt. Tippe darauf, um dieselbe Spende schnell erneut abzusenden.
 
 :::tip
-Wenn Sie regelmaessig spenden moechten, speichern Sie Ihre Zahlungsmethode im **Verwalten**-Tab, damit Sie beim naechsten Mal noch schneller spenden koennen. Siehe [Zahlungsmethoden verwalten](./managing-payments) fuer Details.
+Wenn du regelmäßig geben möchtest, speichere deine Zahlungsmethode im Tab **Verwalten**, damit du beim nächsten Mal noch schneller spenden kannst. Details findest du unter [Zahlungsmethoden verwalten](./managing-payments).
 :::
 
 ## Verwandte Artikel
 
-- [Zahlungsmethoden verwalten](./managing-payments) -- Speichern Sie eine Karte fuer schnelleres zukuenftiges Spenden
-- [Spendenhistorie](./donation-history) -- Sehen Sie Ihre Spendenuebersicht und vergangene Spenden ein
+- [Zahlungsmethoden verwalten](./managing-payments) -- Eine Karte für schnelleres künftiges Geben speichern
+- [Spendenverlauf](./donation-history) -- Deine Übersicht über Gaben und frühere Spenden ansehen

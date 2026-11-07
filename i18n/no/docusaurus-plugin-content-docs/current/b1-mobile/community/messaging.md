@@ -1,58 +1,62 @@
 ---
-title: "Meldingstjeneste"
+title: "Meldinger"
 ---
 
-# Meldingstjeneste
+# Meldinger
 
 <div class="article-intro">
 
-B1 Mobile inkluderer privat meldingstjeneste slik at du kan ha en-til-en-samtaler med andre menighetsmedlemmer direkte fra appen. Det er en enkel mate a holde kontakten uten a matte dele personlige telefonnumre eller e-postadresser.
+B1 Mobile har innebygd privat meldingsfunksjon, slik at du kan ha samtaler med andre medlemmer i menigheten direkte i appen. Det er en enkel måte å holde kontakten på uten å dele personlige telefonnumre eller e-postadresser.
 
 </div>
 
 <div class="prereqs">
-<h4>For Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) pa kontoen din
+- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
 
 </div>
 
-## Tilgang til Meldingene Dine
+## Gå til meldingene dine
 
-1. Trykk pa **Meldinger** i appens navigasjon.
-2. Tidligere samtaler er listet opp for rask tilgang.
+1. Trykk på **Meldinger** i navigasjonen i appen.
+2. Tidligere samtaler vises i en liste, slik at du raskt kommer til dem.
 
-## Starte en Ny Samtale
+## Starte en ny samtale
 
-1. Fra meldingsskjermen, trykk pa alternativet for a starte en ny samtale.
-2. Bruk sokefeltet for a finne medlemmet du vil sende melding til. Du kan ogsa finne medlemmer gjennom [Medlemskatalogen](./member-directory).
-3. Velg medlemmet fra sokeresultatene.
-4. Skriv meldingen din og trykk pa **Send**.
+1. Trykk på alternativet for å starte en ny samtale på meldingsskjermen.
+2. Bruk søkefeltet til å finne medlemmet du vil skrive til. Du kan også finne medlemmer via [Medlemskatalogen](./member-directory).
+3. Velg medlemmet fra søkeresultatene.
+4. Skriv meldingen din og trykk på **Send**.
 
-Den nye samtalen din vil na vises i samtalelisten slik at du enkelt kan ta den opp igjen senere.
+Den nye samtalen vises nå i samtalelisten din, slik at du enkelt kan fortsette senere.
 
-## Lese og Sende Meldinger
+## Lese og sende meldinger
 
-Nar du apner en samtale, ser du hele meldingstraden. Hver melding viser avsenderens avatar og navn, sa det er enkelt a folge med. For a svare, skriv meldingen din i tekstfeltet nederst pa skjermen og trykk pa **Send**.
+Når du åpner en samtale, ser du hele meldingstråden. Hver melding viser avsenderens profilbilde og navn, slik at det er lett å følge med. For å svare skriver du meldingen i tekstfeltet nederst på skjermen og trykker på **Send**.
 
-## Redigere Meldinger
+## Redigere meldinger
 
-Hvis du trenger a rette noe etter a ha sendt en melding, kan du redigere den. Trykk pa meldingen du vil endre, velg redigeringsalternativet, gjor rettelsen og lagre. Den oppdaterte meldingen erstatter den opprinnelige i samtalen.
+Hvis du må rette opp noe etter at du har sendt en melding, kan du redigere den. Trykk på meldingen du vil endre, velg redigeringsalternativet, gjør rettelsen og lagre. Den oppdaterte meldingen erstatter originalen i samtalen.
 
-## Samtalelisten Din
+## Samtalelisten din
 
-Alle aktive samtalene dine vises i en liste pa hovedmeldingsskjermen. Listen viser den andre personens navn og avatar, noe som gjor det enkelt a finne samtalen du leter etter. Trykk pa en hvilken som helst samtale for a apne den og fortsette der du slapp.
+Alle aktive samtaler vises i en liste på hovedskjermen for meldinger. Listen viser navnet og profilbildet til den andre personen, slik at det er enkelt å finne samtalen du leter etter. Trykk på en samtale for å åpne den og fortsette der du slapp.
+
+## Slette en samtale
+
+Hvis du vil fjerne en samtale fra listen din, trykker du på søppelbøtteikonet til høyre på samtaleraden og bekrefter. Samtalen fjernes fra visningen din, men den andre personen kan fortsatt se sin kopi av tråden på sin side. Hvis du vil fortsette å snakke med den samme personen senere, starter du bare en ny samtale.
 
 :::tip
-Bruk meldingstjenesten til a koordinere med medarbeidere, folge opp noen du moette i kirken eller bare sjekke inn med en venn. Det holder all kirkekommunikasjon pa ett praktisk sted.
+Bruk meldinger til å koordinere med andre frivillige, følge opp noen du møtte i menigheten, eller bare ta en prat med en venn. Da samler du menighetskommunikasjonen din på ett praktisk sted.
 :::
 
 :::info
-Aktiver [push-varsler](./notifications) for a bli varslet nar noen sender deg en ny melding, selv nar appen ikke er apen.
+Aktiver [push-varsler](./notifications) for å få beskjed når noen sender deg en ny melding, selv når appen ikke er åpen.
 :::
 
-## Relaterte Artikler
+## Relaterte artikler
 
-- [Medlemskatalog](./member-directory) -- Finn medlemmer a sende meldinger til
-- [Varsler](./notifications) -- Bli varslet om nye meldinger
+- [Medlemskatalog](./member-directory) -- Finn medlemmer å skrive til
+- [Varsler](./notifications) -- Få beskjed om nye meldinger
 - [Grupper](../groups/) -- Delta i gruppesamtaler

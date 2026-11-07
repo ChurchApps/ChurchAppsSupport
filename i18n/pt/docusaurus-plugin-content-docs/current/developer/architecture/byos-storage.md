@@ -1,39 +1,39 @@
 ---
-title: "Bring-Your-Own Storage"
+title: "Traga o seu próprio armazenamento"
 ---
 
-# Bring-Your-Own Storage (BYOS)
+# Traga o seu próprio armazenamento (BYOS)
 
-Churches get ~100MB of free hosted file storage (the `/content/files` surfaces: website Files, group resources). BYOS lets a church link its own cloud storage — **Google Drive, Dropbox, OneDrive, or any S3-compatible bucket (AWS S3, Cloudflare R2, Backblaze B2)** — so new uploads land in the church's own account with no platform cap. ChurchApps stays free; the church's own account is the limit.
+As igrejas recebem cerca de 100MB de armazenamento gratuito de arquivos hospedado (as superfícies `/content/files`: Arquivos do site e recursos de grupos). O BYOS permite que a igreja conecte o próprio armazenamento em nuvem, seja **Google Drive, Dropbox, OneDrive ou qualquer bucket compatível com S3** (AWS S3, Cloudflare R2, Backblaze B2), para que os novos envios sejam gravados na conta da própria igreja, sem limite imposto pela plataforma. A ChurchApps continua gratuita; o limite passa a ser a conta da própria igreja.
 
-## The provider seam
+## A camada de provedores
 
-BYOS reuses the storage seam built for [MinistryStuff](./ministrystuff): `IStorageProvider` (`Packages/apihelper`) resolved per church by `StorageResolver` from the `content.storageProviders` table. Unlike the singleton `churchapps`/`ministrystuff` providers, BYOS providers hold per-church credentials, so `StorageResolver.forChurch` constructs an instance per request from the church's row. Implementations live beside the resolver in `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, plus `ByosAuth` (OAuth token exchange + single-flight refresh — Dropbox rotates refresh tokens, so refreshes are de-duplicated the same way `ProviderProxyController` does).
+O BYOS reutiliza a camada de armazenamento criada para o [MinistryStuff](./ministrystuff): `IStorageProvider` (`Packages/apihelper`), resolvido para cada igreja pelo `StorageResolver` a partir da tabela `content.storageProviders`. Diferentemente dos provedores singleton `churchapps` e `ministrystuff`, os provedores BYOS mantêm credenciais por igreja; por isso, `StorageResolver.forChurch` cria uma instância por requisição, a partir do registro da igreja. As implementações ficam ao lado do resolvedor, em `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, além de `ByosAuth` (troca de tokens OAuth e renovação com instância única, pois o Dropbox rotaciona os refresh tokens; por isso as renovações são deduplicadas da mesma forma que o `ProviderProxyController` faz).
 
-`storageProviders` carries the credentials: `accessToken`/`refreshToken`/`tokenExpiresAt` (encrypted, OAuth trio) or `apiKey`/`apiSecret` + `settings` JSON (`{endpoint, region, bucket, publicBase}`, S3). Tokens never reach the client — `GET /content/storage/providers` masks secrets and returns a `connected` boolean.
+`storageProviders` guarda as credenciais: `accessToken`/`refreshToken`/`tokenExpiresAt` (criptografados, o trio OAuth) ou `apiKey`/`apiSecret` + JSON em `settings` (`{endpoint, region, bucket, publicBase}`, para S3). Os tokens nunca chegam ao cliente: `GET /content/storage/providers` mascara os segredos e retorna um booleano `connected`.
 
-## Upload flow
+## Fluxo de envio
 
-Same three-step contract as before, with an extended presign shape. `POST /content/files/postUrl` returns `PresignedPostData` which now optionally carries `method`, `rawBody`, `headers`, `chunkSize`, and `externalIdField`:
+É o mesmo contrato de três etapas de antes, com um formato de pré-assinatura (presign) estendido. `POST /content/files/postUrl` retorna `PresignedPostData`, que agora pode conter, opcionalmente, `method`, `rawBody`, `headers`, `chunkSize` e `externalIdField`:
 
-| Provider | Presign | Client sends bytes |
+| Provedor | Pré-assinatura | Cliente envia os bytes |
 |---|---|---|
-| churchapps (default) | S3 presigned POST | multipart form (legacy) |
-| Google Drive | resumable upload session (`drive.file` scope) | single PUT to the session URI |
-| Dropbox | `files/get_temporary_upload_link` (4h) | raw POST |
-| OneDrive | `createUploadSession` (approot) | chunked PUT (20MiB, Graph 320KiB-multiple) |
-| S3-compatible | presigned PUT (B2 has no POST policies) | raw PUT |
+| churchapps (padrão) | POST pré-assinado do S3 | formulário multipart (legado) |
+| Google Drive | sessão de upload retomável (escopo `drive.file`) | um único PUT para a URI da sessão |
+| Dropbox | `files/get_temporary_upload_link` (4h) | POST bruto |
+| OneDrive | `createUploadSession` (approot) | PUT em partes (20MiB, múltiplos de 320KiB do Graph) |
+| Compatível com S3 | PUT pré-assinado (o B2 não tem políticas de POST) | PUT bruto |
 
-`FileHelper.uploadPresignedFile` (`@churchapps/helpers`) handles all shapes and returns the provider file id when the response carries one (Drive). The client passes it as `externalId` in the `POST /content/files` registration; `files.provider` + `files.externalId` record where the bytes live (Drive file id; path for the others). The 100MB quota check only applies when the resolved provider is `churchapps`.
+`FileHelper.uploadPresignedFile` (`@churchapps/helpers`) trata todos os formatos e retorna o id do arquivo no provedor quando a resposta o inclui (Drive). O cliente o envia como `externalId` no registro `POST /content/files`. `files.provider` e `files.externalId` registram onde os bytes estão (o id do arquivo no Drive; o caminho nos demais provedores). A verificação da cota de 100MB só se aplica quando o provedor resolvido é `churchapps`.
 
-## Public downloads
+## Downloads públicos
 
-Consumer clouds can't be hotlinked (Drive links quota-out, Dropbox/OneDrive links expire), so for the OAuth trio `contentPath` points at a stable Api route: `GET /content/files/download/:id` (anonymous) loads the file row, mints a short-lived direct link via the provider's `getDownloadUrl` (`webContentLink` / `get_temporary_link` / `@microsoft.graph.downloadUrl`), caches it in-memory for 30 minutes, and 302-redirects with `Cache-Control: max-age=300`. Bandwidth flows browser↔provider, never through the Api. S3-compatible skips the redirect entirely — `contentPath` is the stable `publicBase + key` URL (the bucket must allow public read and CORS PUT).
+Nuvens de consumo não podem ser acessadas por hotlink (os links do Drive atingem a cota, e os links do Dropbox e do OneDrive expiram). Por isso, para o trio OAuth, `contentPath` aponta para uma rota estável da Api: `GET /content/files/download/:id` (anônima) carrega o registro do arquivo, gera um link direto de curta duração pelo `getDownloadUrl` do provedor (`webContentLink` / `get_temporary_link` / `@microsoft.graph.downloadUrl`), armazena-o em cache na memória por 30 minutos e faz um redirecionamento 302 com `Cache-Control: max-age=300`. O tráfego flui entre o navegador e o provedor, nunca pela Api. O provedor compatível com S3 ignora o redirecionamento: `contentPath` é a URL estável `publicBase + key` (o bucket precisa permitir leitura pública e CORS PUT).
 
-Deletes and downloads route by `files.provider` (`StorageResolver.forFile`); legacy rows without it fall back to URL-prefix routing. Renames are DB-only for BYOS files (bytes are addressed by `externalId`, not name). Disconnecting a provider that still has files soft-disables the row (keeps tokens so downloads/deletes keep working) instead of deleting it.
+Exclusões e downloads são roteados por `files.provider` (`StorageResolver.forFile`). Registros antigos sem esse campo recorrem ao roteamento por prefixo de URL. Renomeações afetam apenas o banco de dados para arquivos BYOS, pois os bytes são endereçados por `externalId`, não pelo nome. Ao desconectar um provedor que ainda possui arquivos, o registro é desativado sem ser apagado (os tokens são mantidos para que downloads e exclusões continuem funcionando).
 
-## Connecting (B1Admin → Settings → File Storage)
+## Conexão (B1Admin → Configurações → Armazenamento de arquivos)
 
-The OAuth trio uses the same relay flow as content providers: popup → provider consent → `{membershipApi}/oauth/relay/callback` → B1Admin polls the relay session → `POST /content/storage/exchange` performs the server-side code→token exchange (client secrets never leave the server; Google `GOOGLE_DRIVE_CLIENT_SECRET`, OneDrive `ONEDRIVE_CLIENT_SECRET`, Dropbox is a PKCE public client). Client ids live in `B1Admin/src/settings/components/byosProviders.ts` and `Api .../ByosAuth.ts`. Scopes are deliberately minimal: Google `drive.file` (app-created files only — no restricted-scope verification), OneDrive `Files.ReadWrite.AppFolder`, Dropbox app-folder access. S3 is a plain credential form.
+O trio OAuth usa o mesmo fluxo de relé dos provedores de conteúdo: pop-up → consentimento do provedor → `{membershipApi}/oauth/relay/callback` → o B1Admin consulta a sessão do relé → `POST /content/storage/exchange` realiza a troca de código por token no servidor. Os segredos de cliente nunca saem do servidor: `GOOGLE_DRIVE_CLIENT_SECRET` para o Google e `ONEDRIVE_CLIENT_SECRET` para o OneDrive; o Dropbox é um cliente público com PKCE. Os ids de cliente ficam em `B1Admin/src/settings/components/byosProviders.ts` e `Api .../ByosAuth.ts`. Os escopos são deliberadamente mínimos: `drive.file` do Google (somente arquivos criados pelo aplicativo, sem verificação de escopo restrito), `Files.ReadWrite.AppFolder` do OneDrive e acesso à pasta do aplicativo no Dropbox. O S3 usa um formulário simples de credenciais.
 
-Scope note: BYOS covers the `/content/files` surfaces only. Gallery images, thumbnails, logos and person photos stay on the default provider (small, CDN-served, image-optimized). A client may also pass `platformStorage: true` in the `postUrl` body to pin an upload to the default churchapps provider regardless of the church's BYOS setting — FreeShow uses this for its `files/group/{teamId}/current.zip` sync state, which is read directly off the public content host and never registered as a file row.
+Nota sobre o escopo: o BYOS cobre apenas as superfícies `/content/files`. Imagens de galeria, miniaturas, logotipos e fotos de pessoas permanecem no provedor padrão (são arquivos pequenos, servidos por CDN e otimizados para imagem). Um cliente também pode enviar `platformStorage: true` no corpo do `postUrl` para fixar um envio no provedor churchapps padrão, independentemente da configuração BYOS da igreja. O FreeShow usa isso para o estado de sincronização em `files/group/{teamId}/current.zip`, que é lido diretamente do host público de conteúdo e nunca é registrado como linha de arquivo.

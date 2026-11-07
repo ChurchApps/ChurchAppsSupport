@@ -1,67 +1,67 @@
 ---
-title: "Configuracoes de Privacidade"
+title: "Configurações de Privacidade"
 ---
 
-# Configuracoes de Privacidade
+# Configurações de Privacidade
 
 <div class="article-intro">
 
-A aba **Visibilidade** na tela do Perfil permite que voce controle o que outros membros da igreja podem ver sobre voce no diretorio. Voce decide quais detalhes pessoais sao compartilhados publicamente e quais permanecem privados.
+A aba **Visibilidade** na tela do seu Perfil permite controlar quais informações sobre você os outros membros da igreja podem ver no diretório. Você decide quais dados pessoais são compartilhados publicamente e quais permanecem privados.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comecar</h4>
+<h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faca login](../getting-started/logging-in) na sua conta
+- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
 
 </div>
 
-## Controlando Sua Visibilidade
+## Controlando sua Visibilidade
 
 1. Abra o menu lateral e toque em **Perfil**.
 2. Selecione a aba **Visibilidade**.
-3. Revise cada campo e escolha se esta visivel para outros membros.
-4. Salve suas alteracoes.
+3. Analise cada campo e escolha se ele fica visível para os outros membros.
+4. Salve suas alterações.
 
-Voce pode controlar a visibilidade de detalhes como:
+Você pode controlar a visibilidade de informações como:
 
-- **Numero de telefone** -- Se outros membros podem ver seu numero de telefone
-- **Endereco de e-mail** -- Se seu e-mail e exibido no [diretorio](../community/member-directory.md)
-- **Endereco** -- Se seu endereco residencial e visivel para outros
+- **Número de telefone** -- Se outros membros podem ver seu número de telefone
+- **Endereço de e-mail** -- Se seu e-mail é exibido no [diretório](../community/member-directory.md)
+- **Endereço** -- Se seu endereço residencial é visível para outras pessoas
 
-Por padrao, sua igreja pode ter certos campos visiveis ou ocultos. Voce pode ajustar essas configuracoes a qualquer momento para corresponder ao seu nivel de conforto.
+Por padrão, sua igreja pode deixar certos campos visíveis ou ocultos. Você pode ajustar essas configurações a qualquer momento, de acordo com o seu nível de conforto.
 
 :::tip
-Se voce nao tem certeza do que outros podem ver, visite a aba **Visibilidade** e revise as configuracoes atuais. Voce sempre pode fazer alteracoes depois.
+Se não tiver certeza do que outras pessoas podem ver, acesse a aba **Visibilidade** e revise suas configurações atuais. Você sempre poderá fazer alterações depois.
 :::
 
-## Alteracoes Pendentes
+## Alterações Pendentes
 
-A aba **Pendente** mostra alteracoes no perfil que voce enviou e que estao aguardando aprovacao do administrador. Algumas igrejas exigem que um administrador revise e aprove certas alteracoes antes que entrem em vigor. Se voce fez uma alteracao que requer aprovacao, vera-a listada aqui junto com seu status atual.
+A aba **Pendente** mostra as atualizações de perfil que você enviou e que estão aguardando aprovação do administrador. Algumas igrejas exigem que um administrador revise e aprove determinadas alterações antes que elas tenham efeito. Se você fez uma alteração que precisa de aprovação, ela aparecerá listada aqui, junto com seu status atual.
 
 :::info
-Se uma alteracao que voce fez ainda nao entrou em vigor, verifique a aba **Pendente**. O administrador da sua igreja pode precisar aprova-la primeiro.
+Se uma alteração que você fez ainda não entrou em vigor, verifique a aba **Pendente**. Seu administrador da igreja pode precisar aprová-la primeiro.
 :::
 
-## Configuracoes da Conta
+## Configurações da Conta
 
-A aba **Conta** fornece acesso as suas configuracoes de seguranca. Use esta aba para gerenciar configuracoes relacionadas ao acesso e seguranca da sua conta.
+A aba **Conta** oferece acesso às suas configurações de segurança. Use essa aba para gerenciar as configurações relacionadas ao acesso e à segurança da sua conta.
 
 ## Resumo das Abas do Perfil
 
 | Aba | Finalidade |
 |---|---|
-| **Perfil** | [Editar suas informacoes pessoais](./editing-profile) e foto |
-| **Familia** | [Ver os membros da sua familia](./household) |
-| **Visibilidade** | Controlar o que outros veem no diretorio |
-| **Pendente** | Revisar alteracoes no perfil aguardando aprovacao |
-| **Conta** | Gerenciar configuracoes de seguranca |
+| **Perfil** | [Edite suas informações pessoais](./editing-profile) e sua foto |
+| **Família** | [Veja os membros da sua família](./household) |
+| **Visibilidade** | Controle o que outros veem no diretório |
+| **Pendente** | Revise as alterações de perfil que aguardam aprovação |
+| **Conta** | Gerencie as configurações de segurança |
 
-Essas abas trabalham juntas para dar a voce controle total sobre suas informacoes pessoais e como elas sao compartilhadas na comunidade da sua igreja.
+Essas abas trabalham em conjunto para dar a você controle total sobre suas informações pessoais e sobre como elas são compartilhadas dentro da sua comunidade da igreja.
 
 ## Artigos Relacionados
 
-- [Editando Seu Perfil](./editing-profile) -- Atualize suas informacoes pessoais
-- [Familia](./household) -- Visualize e gerencie os membros da sua familia
-- [Diretorio de Membros](../community/member-directory.md) -- Veja como seu perfil aparece para outros
+- [Editando seu Perfil](./editing-profile) -- Atualize suas informações pessoais
+- [Família](./household) -- Veja e gerencie os membros da sua família
+- [Diretório de Membros](../community/member-directory.md) -- Veja como seu perfil aparece para os outros

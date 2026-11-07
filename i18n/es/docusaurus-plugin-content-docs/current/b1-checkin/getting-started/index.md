@@ -6,43 +6,43 @@ title: "Primeros pasos"
 
 <div class="article-intro">
 
-Configurar B1 Church Checkin toma solo unos minutos. Esta seccion le guia a traves de la instalacion de la aplicacion en una tableta Android, el inicio de sesion con su cuenta de ChurchApps y, opcionalmente, la configuracion de una impresora de etiquetas de red.
+Configurar B1 Church Checkin solo lleva unos minutos. Esta sección te guía para instalar la aplicación en una tableta Android, iniciar sesión con tu cuenta de ChurchApps y, opcionalmente, configurar una impresora de etiquetas de red.
 
 </div>
 
-## Lo que necesita
+## Lo que necesitas
 
 - **Una tableta Android** -- Una tableta de 10 pulgadas funciona mejor para la experiencia de quiosco.
-- **Una cuenta de ChurchApps** -- El correo electronico y la contrasena que usa para B1 Admin u otros productos de ChurchApps.
-- **Una impresora de etiquetas de red** (opcional) -- Para imprimir etiquetas con nombres y comprobantes de recogida para padres. La aplicacion puede escanear su red local para encontrar impresoras compatibles.
+- **Una cuenta de ChurchApps** -- El correo electrónico y la contraseña que usas en B1 Admin u otros productos de ChurchApps.
+- **Una impresora de etiquetas de red** (opcional) -- Para imprimir etiquetas con nombres y comprobantes de recogida para padres. La aplicación puede buscar en tu red local las impresoras compatibles.
 
-## Instalacion
+## Instalación
 
-1. Abra **Google Play Store** en su tableta Android.
-2. Busque **B1 Church Checkin**.
-3. Toque **Instalar** y espere a que termine la descarga.
-4. Abra la aplicacion. Vera una pantalla de inicio mientras se inicializa.
+1. Abre **Google Play Store** en tu tableta Android.
+2. Busca **B1 Church Checkin**.
+3. Toca **Instalar** y espera a que termine la descarga.
+4. Abre la aplicación. Verás una pantalla de inicio mientras se inicializa.
 
-## Configuracion inicial
+## Configuración inicial
 
-Cuando inicie la aplicacion por primera vez, seguira tres pasos:
+Cuando abras la aplicación por primera vez, seguirás tres pasos:
 
-1. **[Iniciar sesion](./logging-in)** -- Ingrese su correo electronico y contrasena para autenticarse.
-2. **[Seleccionar su iglesia](./logging-in)** -- Si su cuenta esta vinculada a varias iglesias, elija cual servira este quiosco.
-3. **[Configurar una impresora](./printer-setup)** -- Configure una impresora de red para la impresion de etiquetas, u omita este paso si no necesita etiquetas.
+1. **[Inicia sesión](./logging-in)** -- Introduce tu correo electrónico y contraseña para autenticarte.
+2. **[Selecciona tu iglesia](./logging-in)** -- Si tu cuenta está vinculada a varias iglesias, elige cuál debe atender este quiosco.
+3. **[Configura una impresora](./printer-setup)** -- Configura una impresora de red para imprimir etiquetas, o omite este paso si no necesitas etiquetas.
 
-Despues del primer inicio de sesion, la aplicacion guarda sus credenciales y la seleccion de iglesia. En futuros inicios, ira directamente a la pantalla de servicios automaticamente.
+Después del primer inicio de sesión, la aplicación guarda tus credenciales y la selección de iglesia. En los siguientes inicios, pasará directamente a la pantalla de servicios automáticamente.
 
 :::info
-La aplicacion busca actualizaciones en cada inicio. Si hay una actualizacion disponible, se descarga y aplica automaticamente antes de llegar a la pantalla de inicio de sesion.
+La aplicación busca actualizaciones por aire (OTA) cada vez que se inicia. Si hay una actualización disponible, se descarga y aplica automáticamente antes de que llegues a la pantalla de inicio de sesión.
 :::
 
 :::tip
-Asegurese de que el administrador de su iglesia haya configurado los servicios, horarios de servicio y grupos en B1 Admin antes de configurar el quiosco. Consulte la [guia de configuracion de asistencia](../../b1-admin/attendance/setup.md) para mas detalles.
+Asegúrate de que el administrador de tu iglesia haya configurado los servicios, los horarios de servicio y los grupos en B1 Admin antes de configurar el quiosco. Consulta la [guía de configuración de asistencia](../../b1-admin/attendance/setup.md) para más detalles.
 :::
 
-## Siguientes pasos
+## Próximos pasos
 
-- [Iniciar sesion](./logging-in) -- Instrucciones detalladas de inicio de sesion y seleccion de iglesia.
-- [Configuracion de impresora](./printer-setup) -- Como descubrir, seleccionar y probar su impresora de etiquetas.
-- [Flujo de registro](../check-in/) -- Aprenda el flujo completo de registro una vez que su quiosco este configurado.
+- [Iniciar sesión](./logging-in) -- Instrucciones detalladas para iniciar sesión y seleccionar la iglesia.
+- [Configuración de la impresora](./printer-setup) -- Cómo encontrar, seleccionar y probar tu impresora de etiquetas.
+- [Flujo de registro](../check-in/) -- Aprende el proceso completo de registro una vez configurado el quiosco.

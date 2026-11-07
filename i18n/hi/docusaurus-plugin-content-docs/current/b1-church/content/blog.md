@@ -2,40 +2,40 @@
 title: "ब्लॉग"
 ---
 
-# Blog
+# ब्लॉग
 
 <div class="article-intro">
 
-The Blog page shares news, updates, and devotionals from your church. Posts are organized by category and tag, so you can browse the topics you care about most.
+ब्लॉग पेज आपके चर्च की ख़बरें, अपडेट और भक्ति-लेख साझा करता है। पोस्ट श्रेणी और टैग के अनुसार व्यवस्थित होती हैं, ताकि आप उन विषयों को आसानी से देख सकें जो आपके लिए सबसे अधिक मायने रखते हैं।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- No login is required to read blog posts. The Blog page is publicly accessible.
-- Your church must have published at least one post for the Blog page to appear.
+- ब्लॉग पोस्ट पढ़ने के लिए लॉगिन की आवश्यकता नहीं है। ब्लॉग पेज सार्वजनिक रूप से उपलब्ध है।
+- ब्लॉग पेज दिखने के लिए आपके चर्च को कम से कम एक पोस्ट प्रकाशित करनी होगी।
 
 </div>
 
-## Browsing Posts
+## पोस्ट देखना
 
-1. Navigate to the **Blog** page from your church's site navigation.
-2. Posts are listed newest first, 10 per page. Use the **Older**/**Newer** links at the bottom to page through the archive.
-3. Click a post to read it in full.
+1. अपने चर्च की साइट नेविगेशन से **ब्लॉग** पेज पर जाएँ।
+2. पोस्ट सबसे नई पहले, प्रति पेज 10 के हिसाब से सूचीबद्ध होती हैं। आर्काइव में आगे-पीछे जाने के लिए नीचे दिए गए **पुरानी**/**नई** लिंक का उपयोग करें।
+3. किसी पोस्ट को पूरा पढ़ने के लिए उस पर क्लिक करें।
 
-## Filtering by Category or Tag
+## श्रेणी या टैग के अनुसार फ़िल्टर करना
 
-Click a **category** or **tag** chip on any post, or in the blog list, to filter the listing down to posts that match. This makes it easy to catch up on a specific topic or series.
+किसी भी पोस्ट पर, या ब्लॉग सूची में, किसी **श्रेणी** या **टैग** चिप पर क्लिक करें, ताकि सूची को उन पोस्ट तक सीमित किया जा सके जो उससे मेल खाती हैं। इससे किसी ख़ास विषय या श्रृंखला की पोस्ट आसानी से पढ़ी जा सकती हैं।
 
-## Related Posts
+## संबंधित पोस्ट
 
-At the end of each post, you will find a **Related Posts** section suggesting other posts from the same category.
+हर पोस्ट के अंत में आपको **संबंधित पोस्ट** अनुभाग मिलेगा, जिसमें उसी श्रेणी की अन्य पोस्ट सुझाई जाती हैं।
 
-## Subscribing via RSS
+## RSS के माध्यम से सदस्यता
 
-Every church blog publishes an RSS feed that feed readers and automation tools can subscribe to, so you are notified automatically when a new post goes up rather than checking back manually.
+हर चर्च ब्लॉग एक RSS फ़ीड प्रकाशित करता है, जिसकी सदस्यता फ़ीड रीडर और ऑटोमेशन टूल ले सकते हैं। इससे जब कोई नई पोस्ट प्रकाशित होती है, तो आपको स्वचालित सूचना मिलती है, और आपको मैन्युअल रूप से जाँचने की ज़रूरत नहीं पड़ती।
 
-## Availability
+## उपलब्धता
 
-The Blog page is available when your church has published at least one post. If you do not see a **Blog** link in your church's navigation, your church may not have this set up yet. Contact your church administrator for more information.
+ब्लॉग पेज तब उपलब्ध होता है जब आपके चर्च ने कम से कम एक पोस्ट प्रकाशित की हो। यदि आपको अपने चर्च के नेविगेशन में **ब्लॉग** लिंक दिखाई नहीं देता, तो हो सकता है कि आपके चर्च में यह अभी सेट न किया गया हो। अधिक जानकारी के लिए अपने चर्च के प्रशासक से संपर्क करें।

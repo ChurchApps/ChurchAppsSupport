@@ -6,45 +6,45 @@ title: "Gruppendetails"
 
 <div class="article-intro">
 
-Wenn Sie auf dem Gruppen-Bildschirm auf eine Gruppe tippen, gelangen Sie zur Detailseite dieser Gruppe. Hier koennen Sie alles ueber die Gruppe sehen und mit ihren Inhalten interagieren, einschliesslich Beitraegen, Mitgliederlisten und Gruppeninformationen.
+Wenn du in der Gruppen-Ansicht auf eine Gruppe tippst, gelangst du zur Detailseite dieser Gruppe. Hier siehst du alles über die Gruppe und kannst mit ihren Inhalten interagieren, einschließlich Beiträgen, Mitgliederlisten und Gruppeninformationen.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich an](../getting-started/logging-in) bei Ihrem Konto
-- Oeffnen Sie den [Gruppen](./index.md)-Bildschirm
+- [B1 Mobile installieren](../getting-started/installing) und [in dein Konto einloggen](../getting-started/logging-in)
+- Öffne den Bildschirm [Gruppen](./index.md)
 
 </div>
 
-## Was Sie sehen werden
+## Was du siehst
 
-Die Gruppendetailseite gibt Ihnen ein vollstaendiges Profil der Gruppe:
+Die Detailseite einer Gruppe bietet dir ein vollständiges Profil der Gruppe:
 
-- **Gruppeninfo** -- Name, Beschreibung, Treffendetails und weitere Informationen, die die Gruppenleiter bereitgestellt haben.
-- **Beitraege und Zeitachse** -- Ein Feed mit Beitraegen und Aktivitaeten speziell fuer diese Gruppe. Sie koennen sehen, was Leiter und Mitglieder geteilt haben, einschliesslich Neuigkeiten, Ankuendigungen und Gespraeche.
-- **Mitglieder** -- Sehen Sie, wer zur Gruppe gehoert. Das hilft Ihnen zu sehen, mit wem Sie in Kontakt sind, und bekannte Gesichter wiederzuerkennen.
+- **Gruppeninfo** -- Der Name der Gruppe, die Beschreibung, Details zu den Treffen und alle weiteren Informationen, die die Gruppenleiter angegeben haben.
+- **Beiträge und Zeitleiste** -- Ein Feed mit Beiträgen und Aktivitäten, die speziell für diese Gruppe gelten. Du siehst, was Leiter und Mitglieder geteilt haben, darunter Updates, Ankündigungen und Gespräche.
+- **Mitglieder** -- Sieh dir an, wer zu der Gruppe gehört. So erkennst du, mit wem du in Kontakt kommst, und findest bekannte Gesichter wieder.
 
 ## Mit Gruppeninhalten interagieren
 
-Von der Gruppendetailseite aus koennen Sie sich auf verschiedene Weise in der Gruppe engagieren:
+Auf der Detailseite einer Gruppe kannst du auf verschiedene Weise mit der Gruppe interagieren:
 
-- **Beitraege lesen** -- Scrollen Sie durch die Zeitachse der Gruppe, um die neuesten Aktivitaeten nachzulesen.
-- **Mitgliederprofile ansehen** -- Tippen Sie auf ein Mitglied, um dessen Profilinformationen im [Mitgliederverzeichnis](../community/member-directory.md) einzusehen.
-- **Informiert bleiben** -- Schauen Sie regelmaessig vorbei, um neue Beitraege, Ankuendigungen und Neuigkeiten von Ihren Gruppenleitern und Mitgliedern zu sehen.
+- **Beiträge lesen** -- Scrolle durch die Zeitleiste der Gruppe, um die neuesten Aktivitäten nachzulesen.
+- **Mitgliederprofile ansehen** -- Tippe auf ein Mitglied, um dessen Profilinformationen im [Mitgliederverzeichnis](../community/member-directory.md) zu sehen.
+- **Auf dem Laufenden bleiben** -- Schau regelmäßig nach neuen Beiträgen, Ankündigungen und Updates von deinen Gruppenleitern und anderen Mitgliedern.
 
-## Dorthin gelangen
+## So gelangst du dorthin
 
-1. Oeffnen Sie den **Gruppen**-Bildschirm in B1 Mobile.
-2. Tippen Sie auf eine beliebige Gruppe -- Ihre Hero-Gruppe, eine empfohlene Karte oder eine beliebige Gruppe in der Liste.
-3. Die Detailseite der Gruppe oeffnet sich mit allen Inhalten und Informationen.
+1. Öffne in B1 Mobile den Bildschirm **Gruppen**.
+2. Tippe auf eine beliebige Gruppe -- deine Hauptgruppe, eine hervorgehobene Karte oder eine andere Gruppe aus der Liste.
+3. Die Detailseite der Gruppe öffnet sich mit all ihren Inhalten und Informationen.
 
 :::tip
-Ihre meistbesuchte Gruppe erscheint als Hero-Karte oben auf dem Gruppen-Bildschirm, sodass Sie Ihre Lieblingsgruppe immer mit nur einem Fingertipp erreichen.
+Deine meistbesuchte Gruppe erscheint als Hauptkarte oben im Gruppen-Bildschirm. So bist du deine Lieblingsgruppe immer nur einen Tipp entfernt.
 :::
 
 ## Verwandte Artikel
 
-- [Gruppen-Zeitachse](./group-timeline) -- Erfahren Sie mehr ueber den vereinheitlichten Aktivitaeten-Feed aller Ihrer Gruppen
-- [Nachrichten](../community/messaging.md) -- Senden Sie private Nachrichten an Gruppenmitglieder
+- [Gruppen-Zeitleiste](./group-timeline) -- Erfahre mehr über den gemeinsamen Aktivitätsfeed aller deiner Gruppen
+- [Nachrichten](../community/messaging.md) -- Sende private Nachrichten an Gruppenmitglieder

@@ -1,93 +1,93 @@
 ---
-title: "Gestione Lezioni"
+title: "Gestire le lezioni"
 ---
 
-# Managing Lessons
+# Gestire le lezioni
 
 <div class="article-intro">
 
-Lessons are the individual teaching Sessioni within a study. Each lesson represents what happens during a single class meeting. This is where you build out the detailed content -- venues, sections, Ruoli, and actions -- that Volontari will use when they teach.
+Le lezioni sono le singole sessioni di insegnamento di uno studio. Ogni lezione rappresenta ciò che accade durante un singolo incontro di classe. Qui si costruisce il contenuto dettagliato -- sedi, sezioni, ruoli e azioni -- che i volontari useranno quando insegnano.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- [Create a program](./managing-programs.md) and [add a study](./managing-studies.md) Per it
-- Have admin Permessi for Lessons.church (see the [Administration overview](./index.md))
+- [Crea un programma](./managing-programs.md) e [aggiungi uno studio](./managing-studies.md) al programma
+- Disporre dei permessi di amministratore per Lessons.church (vedi la [panoramica dell'amministrazione](./index.md))
 
 </div>
 
-## Creating a Lezione
+## Creare una lezione
 
-1. Navigate Per the **Admin** area, expand the program and study, and Trova the study you want Per Aggiungi a lesson Per.
-2. Fai clic **Aggiungi Lezione**.
-3. Inserisci a **Name** and other details for the lesson.
-4. Salva the lesson.
+1. Vai all'area **Admin**, espandi il programma e lo studio, e trova lo studio a cui vuoi aggiungere una lezione.
+2. Fai clic su **Aggiungi lezione**.
+3. Inserisci un **Nome** e gli altri dettagli della lezione.
+4. Salva la lezione.
 
-## Parent Take-Home
+## Riepilogo per i genitori
 
-Each lesson has an Facoltativo **Parent take-home** section under Description. These fields are what parents see on their B1 Gruppo after class (and on the classroom parent page). They are not a second lesson description.
+Ogni lezione ha una sezione facoltativa **Riepilogo per i genitori** nella parte Descrizione. Questi campi sono ciò che i genitori vedono nel loro gruppo B1 dopo la lezione (e nella pagina dei genitori della classe). Non sono una seconda descrizione della lezione.
 
-| Field | Purpose |
+| Campo | Scopo |
 |---|---|
-| **Bottom line** | One sentence. "God keeps His promises." |
-| **Verse** | Memory verse reference and short text. |
-| **Question** | One car-ride question parents can ask without a PDF. |
-| **Facoltativo note** | Extra (prayer prompt, family activity). Markdown. Hidden when empty. |
+| **Messaggio principale** | Una frase. "Dio mantiene le sue promesse." |
+| **Versetto** | Riferimento del versetto da memorizzare e breve testo. |
+| **Domanda** | Una domanda da fare in macchina, senza bisogno di un PDF. |
+| **Nota facoltativa** | Informazioni extra (spunto di preghiera, attività in famiglia). Markdown. Nascosta se vuota. |
 
-Bottom line and one question matter more than an Panoramica. Leave all four empty if you have nothing for parents that week — nothing is shown.
+Il messaggio principale e la domanda sono più importanti di una panoramica. Lascia vuoti tutti e quattro i campi se per quella settimana non hai nulla da dire ai genitori: in tal caso non viene mostrato nulla.
 
-Do not put parent copy in **Description**. Description is catalog copy for teachers browsing lessons.church.
+Non inserire testo destinato ai genitori nella **Descrizione**. La descrizione è il testo di catalogo per gli insegnanti che sfogliano le lezioni su Lessons.church.
 
-## Understanding the Lezione Structure
+## Capire la struttura della lezione
 
-Each lesson is organized into several layers:
+Ogni lezione è organizzata in diversi livelli:
 
-- **Venues** -- Different versions of the lesson for different age Gruppi or Impostazioni. For example, you might have a "Preschool" venue and an "Elementary" venue for the same lesson.
-- **Sections** -- The segments within a venue, such as "Welcome", "Video", "Bible Story", and "Activity". Sections control the flow of the class Ora.
-- **Ruoli and Actions** -- Within each section, you assign Ruoli (for example, "Lead Teacher" or "Small Gruppo Leader") and give each Ruolo specific actions.
+- **Sedi** -- Versioni diverse della lezione per fasce d'età o contesti differenti. Ad esempio, potresti avere una sede "Prescolare" e una sede "Elementari" per la stessa lezione.
+- **Sezioni** -- I segmenti all'interno di una sede, come "Accoglienza", "Video", "Storia biblica" e "Attività". Le sezioni controllano il flusso del tempo di classe.
+- **Ruoli e azioni** -- All'interno di ogni sezione, assegni dei ruoli (ad esempio "Insegnante principale" o "Responsabile del piccolo gruppo") e assegni a ciascun ruolo azioni specifiche.
 
-## Action Types
+## Tipi di azione
 
-There are four types of actions you can assign Per a Ruolo within a section:
+Ci sono quattro tipi di azione che puoi assegnare a un ruolo all'interno di una sezione:
 
-- **Say** -- Text the Volontario should speak or paraphrase Per the class.
-- **Do** -- A physical activity or instruction Per carry out.
-- **Note** -- Background information or a reminder for the Volontario (not read aloud).
-- **Play** -- A video or audio clip Per play during the section.
+- **Di'** -- Testo che il volontario deve pronunciare o parafrasare davanti alla classe.
+- **Fai** -- Un'attività fisica o un'istruzione da eseguire.
+- **Nota** -- Informazioni di contesto o un promemoria per il volontario (non letto ad alta voce).
+- **Riproduci** -- Un video o un clip audio da riprodurre durante la sezione.
 
-## Adding a Venue
+## Aggiungere una sede
 
-1. Apri the lesson in the admin Visualizza.
-2. Fai clic **Aggiungi Venue**.
-3. Inserisci a name for the venue (e.g., "Preschool" or "Elementary").
-4. Salva. You can now Aggiungi sections Per this venue.
+1. Apri la lezione nella vista di amministrazione.
+2. Fai clic su **Aggiungi sede**.
+3. Inserisci un nome per la sede (ad esempio «Prescolare» o «Elementari»).
+4. Salva. Ora puoi aggiungere sezioni a questa sede.
 
-## Adding Sections and Actions
+## Aggiungere sezioni e azioni
 
-1. Expand a venue Per see its sections.
-2. Fai clic **Aggiungi Section** and give it a name (e.g., "Welcome").
-3. Within the section, Fai clic **Aggiungi Action**.
-4. Scegli the **Ruolo**, **action Digita** (Say, Do, Note, or Play), and Inserisci the content.
+1. Espandi una sede per vedere le sue sezioni.
+2. Fai clic su **Aggiungi sezione** e assegnale un nome (ad esempio «Accoglienza»).
+3. All'interno della sezione, fai clic su **Aggiungi azione**.
+4. Scegli il **ruolo**, il **tipo di azione** (Di', Fai, Nota o Riproduci) e inserisci il contenuto.
 5. Salva.
 
-Repeat this process Per build out the full lesson flow.
+Ripeti questo processo per costruire l'intero flusso della lezione.
 
-## Uploading Lezione-Level Resources
+## Caricare risorse a livello di lezione
 
-You can attach downloadable materials directly Per a lesson -- for example, an activity sheet or coloring page specific Per that week.
+Puoi allegare direttamente alla lezione materiali scaricabili -- ad esempio una scheda di attività o una pagina da colorare specifica per quella settimana.
 
-1. Apri the lesson in the admin Visualizza.
-2. Navigate Per the **Resources** section.
-3. Carica your files.
+1. Apri la lezione nella vista di amministrazione.
+2. Vai alla sezione **Risorse**.
+3. Carica i tuoi file.
 
 :::tip
-Build your lesson from the Volontario's perspective. Step through the sections and actions in order and ask yourself whether a first-Ora Volontario could follow along without any other preparation.
+Costruisci la lezione dal punto di vista del volontario. Percorri le sezioni e le azioni in ordine e chiediti se un volontario alle prime armi riuscirebbe a seguire senza alcuna altra preparazione.
 :::
 
-## Articoli Correlati
+## Articoli correlati
 
-- [Managing Programs](./managing-programs.md) -- Set up the top-level curriculum container
-- [Managing Studies](./managing-studies.md) -- Organize lessons into study Gruppi
-- [Statistics](./statistics.md) -- Track how your lessons are being used
+- [Gestire i programmi](./managing-programs.md) -- Configura il contenitore curricolare di primo livello
+- [Gestire gli studi](./managing-studies.md) -- Organizza le lezioni in gruppi di studio
+- [Statistiche](./statistics.md) -- Monitora come vengono utilizzate le tue lezioni

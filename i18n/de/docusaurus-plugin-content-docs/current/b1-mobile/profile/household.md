@@ -6,51 +6,51 @@ title: "Haushalt"
 
 <div class="article-intro">
 
-Der **Haushalt**-Tab auf Ihrem Profilbildschirm zeigt Ihre Familienmitglieder. Hier koennen Sie sehen, wer zu Ihrem Haushalt gehoert und wie die Mitglieder miteinander verbunden sind, was fuer Funktionen wie den Check-in wichtig ist.
+Der Tab **Haushalt** auf Ihrem Profilbildschirm zeigt Ihre Familienmitglieder an. Hier sehen Sie, wer zu Ihrem Haushalt gehört und wie die Mitglieder miteinander verbunden sind. Das ist für Funktionen wie den Check-in unverzichtbar.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich an](../getting-started/logging-in) bei Ihrem Konto
+- [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich](../getting-started/logging-in) bei Ihrem Konto an
 
 </div>
 
-## Was Sie sehen werden
+## Was Sie sehen
 
-Wenn Sie den **Haushalt**-Tab oeffnen, sehen Sie eine Liste der Personen in Ihrem Haushalt. Der Eintrag jedes Mitglieds zeigt:
+Wenn Sie den Tab **Haushalt** öffnen, sehen Sie eine Liste der Personen in Ihrem Haushalt. Der Eintrag jedes Mitglieds zeigt:
 
 - **Name** -- Vor- und Nachname der Person
-- **Rolle** -- Die Rolle innerhalb des Haushalts (wie z. B. Hauptperson oder Andere)
+- **Rolle** -- Die Rolle innerhalb des Haushalts (z. B. Haupt- oder Sonstige Person)
 - **Profilfoto** -- Das Bild der Person, sofern eines hochgeladen wurde
 
-Ihr Haushalt ist eine gemeinsame Gruppe, die Ihre Familienmitglieder innerhalb des Gemeindesystems miteinander verbindet.
+Ihr Haushalt ist eine gemeinsame Gruppe, die Ihre Familienmitglieder innerhalb des Systems der Kirche miteinander verbindet.
 
 ## Warum der Haushalt wichtig ist
 
-Ihre Haushaltsinformationen werden von mehreren Funktionen in B1 Mobile und in allen ChurchApps-Diensten genutzt:
+Die Informationen zu Ihrem Haushalt werden von mehreren Funktionen in B1 Mobile und in ChurchApps verwendet:
 
-- **Check-in** -- Wenn Sie sich fuer einen Gottesdienst oder eine Veranstaltung [einchecken](../checkin/self-checkin.md), koennen Sie Ihren gesamten Haushalt auf einmal anmelden, anstatt jede Person einzeln einzuchecken.
-- **Gemeindeakten** -- Ihre Gemeinde verwendet Haushaltsdaten, um Familienakten zu organisieren und mit Ihrer Familie als Einheit zu kommunizieren.
-- **Verzeichnis** -- Andere Mitglieder koennen Ihre Haushaltsinformationen im [Gemeindeverzeichnis](../community/member-directory.md) sehen, abhaengig von Ihren [Datenschutzeinstellungen](./privacy-settings).
+- **Check-in** -- Wenn Sie sich für einen Gottesdienst oder eine Veranstaltung [einchecken](../checkin/self-checkin.md), können Sie Ihren gesamten Haushalt auf einmal einchecken, statt jede Person einzeln anzumelden.
+- **Gemeindedaten** -- Ihre Kirche nutzt die Haushaltsdaten, um Familienunterlagen zu ordnen und mit Ihrer Familie als Einheit zu kommunizieren.
+- **Verzeichnis** -- Andere Mitglieder können Ihre Haushaltsdaten im [Gemeindeverzeichnis](../community/member-directory.md) sehen, abhängig von Ihren [Datenschutzeinstellungen](./privacy-settings).
 
-## Ihren Haushalt ansehen
+## Ihren Haushalt anzeigen
 
-1. Oeffnen Sie das Seitenmenue und tippen Sie auf **Profil**.
-2. Waehlen Sie den **Haushalt**-Tab.
+1. Öffnen Sie das Schubladenmenü und tippen Sie auf **Profil**.
+2. Wählen Sie den Tab **Haushalt**.
 3. Durchsuchen Sie die Liste der Familienmitglieder in Ihrem Haushalt.
 
 :::info
-Die Haushaltszugehoerigkeit wird in der Regel von Ihrem Gemeindeadministrator verwaltet. Wenn Sie jemanden zu Ihrem Haushalt hinzufuegen oder daraus entfernen muessen, wenden Sie sich an Ihr Gemeindebuero.
+Die Zugehörigkeit zum Haushalt wird in der Regel von Ihrem Kirchenadministrator verwaltet. Wenn Sie jemanden zu Ihrem Haushalt hinzufügen oder daraus entfernen möchten, wenden Sie sich bitte für Unterstützung an Ihr Gemeindebüro.
 :::
 
 ## Informationen aktuell halten
 
-Wenn die Daten eines Familienmitglieds aktualisiert werden muessen, kann es sein [eigenes Profil bearbeiten](./editing-profile), oder Sie koennen sich an Ihren Gemeindeadministrator wenden, um Aenderungen vorzunehmen. Aktuelle Haushaltsinformationen stellen sicher, dass Funktionen wie der [Check-in](../checkin/) fuer Ihre ganze Familie reibungslos funktionieren.
+Wenn die Angaben eines Familienmitglieds aktualisiert werden müssen, kann es [sein eigenes Profil bearbeiten](./editing-profile). Alternativ können Sie sich an Ihren Kirchenadministrator wenden, um Änderungen vornehmen zu lassen. Aktuelle Haushaltsinformationen sorgen dafür, dass Funktionen wie der [Check-in](../checkin/) für Ihre ganze Familie reibungslos funktionieren.
 
 ## Verwandte Artikel
 
-- [Selbst-Check-in](../checkin/self-checkin.md) -- Melden Sie Ihre Haushaltsmitglieder fuer Gottesdienste an
-- [Profil bearbeiten](./editing-profile) -- Aktualisieren Sie Ihre eigenen persoenlichen Informationen
-- [Datenschutzeinstellungen](./privacy-settings) -- Steuern Sie, was andere ueber Ihren Haushalt sehen koennen
+- [Selbst-Check-in](../checkin/self-checkin.md) -- Checken Sie Ihre Haushaltsmitglieder für Gottesdienste ein
+- [Ihr Profil bearbeiten](./editing-profile) -- Aktualisieren Sie Ihre persönlichen Angaben
+- [Datenschutzeinstellungen](./privacy-settings) -- Legen Sie fest, was andere über Ihren Haushalt sehen können

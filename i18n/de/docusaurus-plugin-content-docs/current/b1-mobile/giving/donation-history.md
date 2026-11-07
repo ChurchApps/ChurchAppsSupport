@@ -1,49 +1,49 @@
 ---
-title: "Spendenhistorie"
+title: "Spendenverlauf"
 ---
 
-# Spendenhistorie
+# Spendenverlauf
 
 <div class="article-intro">
 
-B1 Mobile gibt Ihnen einen klaren Ueberblick ueber Ihre Spenden in zwei Tabs: **Uebersicht** fuer eine schnelle Zusammenfassung und **Verlauf** fuer eine detaillierte Aufzeichnung jeder Spende. Nutzen Sie diese, um Ihre Grosszuegigkeit das ganze Jahr ueber nachzuverfolgen.
+B1 Mobile zeigt dir deine Spenden übersichtlich in zwei Reitern: **Übersicht** für eine schnelle Zusammenfassung und **Verlauf** für eine detaillierte Aufstellung jeder Spende. Nutze beides, um deine Großzügigkeit das ganze Jahr über im Blick zu behalten.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich an](../getting-started/logging-in) bei Ihrem Konto
-- [Taetigen Sie mindestens eine Spende](./making-donations), um Ihren Verlauf einzusehen
+- [B1 Mobile installieren](../getting-started/installing) und dich in deinem Konto [anmelden](../getting-started/logging-in)
+- [Mindestens eine Spende tätigen](./making-donations), um deinen Verlauf zu sehen
 
 </div>
 
-## Uebersicht-Tab
+## Reiter „Übersicht"
 
-Der **Uebersicht**-Tab bietet Ihnen einen schnellen Ueberblick ueber Ihre Spendenaktivitaet. Er zeigt:
+Der Reiter **Übersicht** bietet dir auf einen Blick einen Schnappschuss deiner Spendenaktivitäten. Er zeigt:
 
-- **Jahressumme** -- Der Gesamtbetrag, den Sie in diesem Jahr bisher gespendet haben.
-- **Anzahl der Spenden** -- Wie viele einzelne Spenden Sie in diesem Jahr getaetigt haben.
-- **Letzte Spende** -- Details zu Ihrer letzten Spende, einschliesslich Betrag und Datum.
-- **Wiederholen-Schaltflaeche** -- Eine schnelle **Wiederholen**-Schaltflaeche neben Ihrer letzten Spende ermoeglicht es Ihnen, den gleichen Betrag mit nur einem Fingertipp erneut zu spenden. Dies ist praktisch, wenn Sie regelmaessig den gleichen Betrag spenden.
+- **Summe seit Jahresbeginn** -- Der Gesamtbetrag, den du bisher in diesem Jahr gespendet hast.
+- **Anzahl der Spenden** -- Wie viele einzelne Spenden du in diesem Jahr getätigt hast.
+- **Letzte Spende** -- Details zu deiner jüngsten Spende, einschließlich Betrag und Datum.
+- **Schaltfläche „Wiederholen"** -- Eine schnelle Schaltfläche **Wiederholen** neben deiner letzten Spende ermöglicht es dir, mit nur einem Tipp denselben Betrag erneut zu spenden. Das ist praktisch, wenn du regelmäßig denselben Betrag gibst.
 
-Der Uebersicht-Tab ist ein guter Ausgangspunkt, wenn Sie den Spendenbereich oeffnen. Er zeigt Ihnen, wo Sie stehen, und macht es einfach, sofort wieder zu spenden.
+Der Reiter Übersicht ist ein guter Ausgangspunkt, wenn du den Bereich Spenden öffnest. Er zeigt dir, wo du stehst, und macht es einfach, sofort erneut zu spenden.
 
-## Verlauf-Tab
+## Reiter „Verlauf"
 
-Der **Verlauf**-Tab zeigt eine vollstaendige, detaillierte Liste aller Ihrer vergangenen Spenden. Jeder Eintrag enthaelt Informationen wie:
+Der Reiter **Verlauf** zeigt eine vollständige, detaillierte Liste all deiner bisherigen Spenden. Jeder Eintrag enthält Informationen wie:
 
-- **Datum** -- Wann die Spende getaetigt wurde.
-- **Fonds** -- An welchen Fonds die Spende gerichtet war.
-- **Betrag** -- Der Betrag der Spende.
+- **Datum** -- Wann die Spende getätigt wurde.
+- **Fonds** -- Für welchen Fonds die Spende bestimmt war.
+- **Betrag** -- Der Geldbetrag der Spende.
 
-Scrollen Sie durch die Liste, um Ihren gesamten Spendenverlauf einzusehen. Dies ist nuetzlich, um Ihre Grosszuegigkeit das ganze Jahr ueber nachzuverfolgen oder eine bestimmte vergangene Spende nachzuschlagen.
+Scrolle durch die Liste, um dir dein vollständiges Spendenprotokoll anzusehen. Das ist nützlich, um dir einen Überblick über deine Großzügigkeit im Laufe des Jahres zu verschaffen oder eine bestimmte frühere Spende nachzuschlagen.
 
 :::tip
-Pruefen Sie den **Uebersicht**-Tab regelmaessig, um Ihre Spendenziele im Blick zu behalten. Die Jahressumme ermoeglicht es Ihnen, Ihren Fortschritt auf einen Blick zu sehen.
+Schau regelmäßig im Reiter **Übersicht** nach, um deine Spendenziele im Blick zu behalten. Die Summe seit Jahresbeginn zeigt dir auf einen Blick, wie weit du bist.
 :::
 
 ## Verwandte Artikel
 
-- [Eine Spende taetigen](./making-donations) -- Taetigen Sie eine neue Spende ueber die App
-- [Zahlungsmethoden verwalten](./managing-payments) -- Fuegen Sie gespeicherte Zahlungsmethoden hinzu oder entfernen Sie sie
+- [Eine Spende tätigen](./making-donations) -- Eine neue Spende über die App tätigen
+- [Zahlungsmethoden verwalten](./managing-payments) -- Gespeicherte Zahlungsmethoden hinzufügen oder entfernen

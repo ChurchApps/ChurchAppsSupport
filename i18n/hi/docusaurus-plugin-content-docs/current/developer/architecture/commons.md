@@ -1,41 +1,45 @@
 ---
-title: "सामान्य"
+title: "कंटेंट कॉमन्स"
 ---
 
-# Content Commons — Shared Asset Library & Moderation
+# कंटेंट कॉमन्स — साझा एसेट लाइब्रेरी और मॉडरेशन
 
-User-submitted content shared across products (WorshipCommons songs, Lessons.church lessons, FreeShow templates, B1 website templates) goes through one moderation queue rather than a per-product review flow. This page covers the submission/approval lifecycle, the shared asset data model, and where moderation lives.
+उत्पादों में साझा होने वाली उपयोगकर्ता-द्वारा जमा की गई सामग्री (WorshipCommons के गाने, Lessons.church के पाठ, FreeShow टेम्पलेट, B1 वेबसाइट टेम्पलेट) हर उत्पाद के लिए अलग समीक्षा प्रक्रिया से गुजरने के बजाय एक ही मॉडरेशन कतार से होकर गुजरती है। इस पेज में जमा करने और स्वीकृति की प्रक्रिया, साझा एसेट डेटा मॉडल, और मॉडरेशन कहाँ स्थित है, इसकी जानकारी दी गई है।
 
-## The asset spine
+## एसेट की मुख्य संरचना
 
-Two tables carry every commons item, regardless of product:
+दो तालिकाएँ हर कॉमन्स आइटम को संभालती हैं, चाहे वह किसी भी उत्पाद का हो:
 
-- **`assets`** — the public identity row. `status`: `pending` | `published` | `unpublished` | `removed`. Type-specific data (song details, authors) lives in satellite tables joined by `assetId`.
-- **`assetFiles`** — every file attached to an asset (audio, images, documents), replacing the older `path` + comma-separated `files` columns on individual content tables.
-- **`submissions`** — the moderation unit. Lifecycle: `draft → pending → approved | rejected | withdrawn`. A submission can be a brand-new asset or an edit to an existing published one (by the original author or a third party).
+- **`assets`** — सार्वजनिक पहचान वाली पंक्ति। `status`: `pending` | `published` | `unpublished` | `removed`। प्रकार-विशिष्ट डेटा (गाने का विवरण, लेखक) `assetId` द्वारा जुड़ी सहायक तालिकाओं में रहता है।
+- **`assetFiles`** — किसी एसेट से जुड़ी हर फ़ाइल (ऑडियो, छवियाँ, दस्तावेज़)। यह व्यक्तिगत सामग्री तालिकाओं पर मौजूद पुराने `path` और कॉमा-से-अलग `files` कॉलम की जगह लेती है।
+- **`submissions`** — मॉडरेशन की इकाई। जीवनचक्र: `draft → pending → approved | rejected | withdrawn`। कोई सबमिशन पूरी तरह नया एसेट हो सकता है, या किसी मौजूदा प्रकाशित एसेट में संपादन हो सकता है (मूल लेखक द्वारा या किसी तीसरे पक्ष द्वारा)।
 
-Approving a submission runs a product-specific **publish hook** (`Api/src/modules/commons/helpers/publishHooks/`, e.g. `song.ts`) that expands the submission into the product's own records.
+किसी सबमिशन को स्वीकृत करने पर एक उत्पाद-विशिष्ट **पब्लिश हुक** (`Api/src/modules/commons/helpers/publishHooks/`, जैसे `song.ts`) चलता है, जो सबमिशन को उस उत्पाद के अपने रिकॉर्ड में विस्तारित करता है।
 
-## Submission flow
+## सबमिशन प्रक्रिया
 
-`CommonsSubmissionController` (`Api/src/modules/commons/`) is the end-user-facing API: create a draft, presign and attach files, submit for review, or withdraw. Its actual clients are external producer sites (the WorshipCommons site, Lessons.church, FreeShow, the B1 website template gallery) — not B1Admin.
+`CommonsSubmissionController` (`Api/src/modules/commons/`) अंतिम-उपयोगकर्ता के लिए API है: ड्राफ्ट बनाना, फ़ाइलों के लिए प्रीसाइन करके संलग्न करना, समीक्षा के लिए सबमिट करना, या वापस लेना। इसके वास्तविक क्लाइंट बाहरी उत्पादक साइटें हैं (WorshipCommons साइट, Lessons.church, FreeShow, B1 वेबसाइट टेम्पलेट गैलरी), B1Admin नहीं।
 
-## Moderation queue
+## चर्च-मुखी उपयोग
 
-The queue lives in **B1Admin → Server Admin → Commons** (`B1Admin/src/serverAdmin/components/CommonsTab.tsx`), gated by the `Permissions.server.admin` permission — the same one that gates Churches/Impersonate/Jobs on that page. This is a ChurchApps-staff-only internal tool, not something individual churches see.
+मॉडरेशन के अलावा, B1Admin सीधे कॉमन्स की मुख्य संरचना से भी डेटा पढ़ता है। उसका Serving → Songs "Add Song" खोज `GET /songs?sundayReady=true` क्वेरी करती है, जो मौजूदा बाहरी गीत डेटाबेस के साथ-साथ चलती है। यह WorshipCommons के उन प्रकाशित गानों को दिखाती है जिन्हें स्टाफ ने Sunday-ready चिह्नित किया है (नीचे listen gate देखें), और हर गाने के साथ लाइसेंस बैज होता है। किसी एक को चुनने पर नया `SongDetail` `songDetailLinks` के माध्यम से अपने स्रोत से जुड़ जाता है। यह वह एकमात्र मार्ग है जहाँ किसी एक चर्च का B1Admin सीधे कॉमन्स डेटा को छूता है, न कि केवल स्टाफ-only Server Admin टूल्स के माध्यम से। चर्च-मुखी विवरण के लिए सहायता दस्तावेज़ का [WorshipCommons के निःशुल्क गाने](/docs/b1-admin/serving/songs#free-songs-from-worshipcommons) अनुभाग देखें।
 
-Three sub-tabs:
+## मॉडरेशन कतार
 
-- **Queue** — every pending submission across all products, filterable by product/asset type. Each row shows a new-asset vs. edit-by-author vs. edit-by-third-party badge, the submitter's approval track record, a field/file diff summary, and age (flagged past 72h). **Review** opens a drawer with field-level diffs, file previews, and an embedded read-only product preview; Approve/Reject support keyboard shortcuts (j/k to navigate, a/r to act).
-- **Reports** — copyright and policy/quality reports on published assets, split into two queues plus resolved history. A staff member claims a report, then resolves it with a resolution (upheld/dismissed/duplicate) and an action (none/unpublish/remove).
-- **Assets** — a searchable browser of published content with per-asset actions: feature, unpublish/republish, or remove (reason: copyright/policy).
+यह कतार **B1Admin → Server Admin → Commons** में है (`B1Admin/src/serverAdmin/components/CommonsTab.tsx`), और `Permissions.server.admin` अनुमति से सुरक्षित है। यही अनुमति इस पेज पर Churches, Impersonate और Jobs को भी नियंत्रित करती है। यह केवल ChurchApps स्टाफ के लिए आंतरिक टूल है, व्यक्तिगत चर्च इसे नहीं देखते।
 
-Every endpoint under `/commons/admin/*` (`CommonsAdminController.ts`) independently re-checks the server-admin permission.
+इसमें तीन उप-टैब हैं:
+
+- **Queue**: सभी उत्पादों के हर लंबित सबमिशन, जिन्हें उत्पाद या एसेट प्रकार से फ़िल्टर किया जा सकता है। हर पंक्ति में नया-एसेट, लेखक-द्वारा-संपादन, या तीसरे-पक्ष-द्वारा-संपादन बैज, सबमिट करने वाले का स्वीकृति रिकॉर्ड, फ़ील्ड और फ़ाइल अंतर का सारांश, और आयु दिखती है (72 घंटे से पुराने सबमिशन चिह्नित होते हैं)। **Review** एक ड्रॉअर खोलता है जिसमें फ़ील्ड-स्तरीय अंतर, फ़ाइल पूर्वावलोकन, और एक एम्बेडेड केवल-पढ़ने योग्य उत्पाद पूर्वावलोकन होता है। Approve और Reject के लिए कीबोर्ड शॉर्टकट हैं (नेविगेट करने के लिए `j`/`k`, कार्रवाई के लिए `a`/`r`)।
+- **Reports**: प्रकाशित एसेट पर कॉपीराइट और नीति या गुणवत्ता से जुड़ी रिपोर्ट, जो दो कतारों और हल हो चुके इतिहास में बँटी हैं। कोई स्टाफ सदस्य रिपोर्ट का दावा करता है, फिर उसे एक समाधान (upheld, dismissed या duplicate) और एक कार्रवाई (none, unpublish या remove) के साथ हल करता है।
+- **Assets**: प्रकाशित सामग्री का खोज योग्य ब्राउज़र, जिसमें हर एसेट के लिए कार्रवाइयाँ हैं: feature, unpublish/republish, या remove (कारण: copyright या policy)। गानों के लिए यहाँ का **listen gate** ही वह तरीका है जिससे कोई गाना "Sunday-ready" बनता है। स्टाफ उसे तब चिह्नित करता है जब उन्होंने हर प्रकाशित key को सुन लिया हो और पुष्टि कर ली हो कि स्कोर, कॉर्ड और स्लाइड, सब मौजूद हैं।
+
+`/commons/admin/*` के अंतर्गत हर एंडपॉइंट (`CommonsAdminController.ts`) स्वतंत्र रूप से server-admin अनुमति की जाँच दोबारा करता है।
 
 :::info
-This design intentionally has a single queue: WorshipCommons' own `/admin` moderation UI was retired in favor of routing every product's submissions through B1Admin's Server Admin tools.
+यह डिज़ाइन जानबूझकर एक ही कतार रखता है। WorshipCommons का अपना `/admin` मॉडरेशन UI हटा दिया गया, ताकि हर उत्पाद के सबमिशन B1Admin के Server Admin टूल्स के माध्यम से जाएँ।
 :::
 
-## Spans
+## दायरा
 
-Api (commons module), B1Admin (Server Admin), and the external producer sites: WorshipCommons, Lessons.church, FreeShow, B1 website builder templates.
+Api (commons module), B1Admin (Server Admin), और बाहरी उत्पादक साइटें: WorshipCommons, Lessons.church, FreeShow, B1 वेबसाइट बिल्डर टेम्पलेट।

@@ -6,22 +6,22 @@ title: "Comunidade"
 
 <div class="article-intro">
 
-Os recursos de **Comunidade** no B1 Mobile ajudam voce a manter-se conectado com a familia da sua igreja diretamente do seu telefone. Se voce precisa procurar um membro, enviar uma mensagem rapida ou verificar as ultimas notificacoes, tudo esta a um toque de distancia.
+Os recursos de **Comunidade** no B1 Mobile ajudam você a se manter conectado com sua família da igreja direto do celular. Seja para procurar outro membro, enviar uma mensagem rápida ou conferir as notificações mais recentes, tudo está a um toque de distância.
 
 </div>
 
-## O Que Voce Encontrara
+## O que você encontra
 
-- **[Diretorio de Membros](./member-directory)** -- Navegue e pesquise no diretorio de membros da sua igreja. Procure pessoas pelo nome e toque em um membro para ver o perfil com informacoes de contato e conexoes familiares.
-- **[Mensagens](./messaging)** -- Envie e receba mensagens privadas com outros membros da igreja. Inicie novas conversas ou continue de onde parou com as existentes.
-- **[Notificacoes](./notifications)** -- Mantenha-se atualizado com notificacoes push sobre atividade dos grupos, mensagens, atribuicoes de servico e outras atualizacoes importantes da sua igreja.
+- **[Diretório de Membros](./member-directory)** -- Navegue e pesquise no diretório de membros da sua igreja. Procure pessoas pelo nome e toque em um membro para ver o perfil dele, com informações de contato e vínculos familiares.
+- **[Mensagens](./messaging)** -- Envie e receba mensagens privadas com outros membros da igreja. Inicie novas conversas ou retome de onde parou nas conversas existentes.
+- **[Notificações](./notifications)** -- Fique atualizado com notificações push sobre atividades de grupos, mensagens, escalas de voluntariado e outras atualizações importantes da sua igreja.
 
-## Primeiros Passos
+## Primeiros passos
 
-Voce deve estar conectado para acessar os recursos da comunidade. Se nao estiver conectado, sera solicitado a [fazer login](../getting-started/logging-in) quando tentar usar qualquer uma dessas secoes.
+Você precisa estar logado para acessar os recursos de comunidade. Se não estiver conectado, você será solicitado a [fazer login](../getting-started/logging-in) quando tentar usar qualquer uma dessas seções.
 
-O diretorio de membros, mensagens e notificacoes sao acessiveis pela navegacao do aplicativo. Juntos, oferecem uma maneira simples de encontrar pessoas, comunicar-se de forma privada e manter-se informado sobre o que esta acontecendo na sua igreja.
+O diretório de membros, as mensagens e as notificações podem ser acessados pela navegação do aplicativo. Juntos, eles oferecem uma forma simples de encontrar pessoas, conversar em particular e ficar por dentro do que acontece na sua igreja.
 
 :::info
-Os membros e informacoes visiveis para voce no diretorio dependem das configuracoes de privacidade da sua igreja. Voce pode controlar sua propria visibilidade na tela de [Configuracoes de Privacidade](../profile/privacy-settings.md). Se tiver duvidas sobre o que e compartilhado, entre em contato com o administrador da sua igreja.
+As pessoas e as informações visíveis para você no diretório dependem das configurações de privacidade da sua igreja. Você pode controlar a sua própria visibilidade na tela de [Configurações de Privacidade](../profile/privacy-settings.md). Se tiver dúvidas sobre o que é compartilhado, entre em contato com o administrador da sua igreja.
 :::

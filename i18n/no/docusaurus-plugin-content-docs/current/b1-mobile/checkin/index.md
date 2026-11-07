@@ -1,33 +1,33 @@
 ---
-title: "Innsjekking"
+title: "Innsjekk"
 ---
 
-# Innsjekking
+# Innsjekk
 
 <div class="article-intro">
 
-B1 Mobile lar deg sjekke inn deg selv og familiemedlemmene dine for gudstjenester rett fra telefonen. Hopp over koen ved kiosken og registrer oppmotret ditt for du engang gar gjennom dorene.
+B1 Mobile lar deg sjekke inn deg selv og medlemmene i husstanden din til kirkens gudstjenester direkte fra telefonen. Hopp over køen ved kiosken og registrer oppmøtet ditt før du i det hele tatt går gjennom dørene.
 
 </div>
 
-## Hvordan Det Fungerer
+## Slik fungerer det
 
-Innsjekkingsprosessen er en rask, flertrinnsprosess som guider deg gjennom a velge en gudstjeneste, velge hvem som deltar og tildele hver person til en gruppe. Nar du bekrefter, registreres oppmotret ditt automatisk.
+Innsjekkingsprosessen er en rask flertrinnsflyt som veileder deg gjennom å velge en gudstjeneste, velge hvem som deltar, og tildele hver person til en gruppe. Når du bekrefter, blir oppmøtet ditt registrert automatisk.
 
-## Komme i Gang
+## Komme i gang
 
-For a fa tilgang til innsjekking, apne **Innsjekking**-seksjonen i B1 Mobile. Du ma vaere innlogget for a bruke denne funksjonen. Hvis du ikke er logget inn, blir du bedt om a [logge inn](../getting-started/logging-in) forst.
+For å få tilgang til innsjekk, åpne **Innsjekk**-seksjonen i B1 Mobile. Du må være logget inn for å bruke denne funksjonen. Hvis du ikke er logget inn, blir du bedt om å [logge inn](../getting-started/logging-in) først.
 
 :::info
-Innsjekkingsfunksjonen krever at kirken din har satt opp gudstjenester og oppmotegrupper i administrasjonsinnstillingene. Hvis ingen gudstjenester vises nar du apner innsjekkingsskjermen, har kanskje ikke kirken din konfigurert denne funksjonen enna. Kontakt kirkens administrator for hjelp.
+Innsjekkfunksjonen krever at kirken din har satt opp gudstjenester og oppmøtegrupper i administrasjonsinnstillingene. Hvis ingen gudstjenester vises når du åpner innsjekkskjermen, er kanskje ikke denne funksjonen konfigurert ennå hos kirken din. Kontakt kirkeadministratoren din for hjelp.
 :::
 
-## Hva Du Kan Gjore
+## Hva du kan gjøre
 
-- **Sjekk inn familien din** -- Velg hvilke familiemedlemmer som deltar og registrer oppmote for alle pa en gang. Se [Familie](../profile/household.md) for a laere om administrering av familiemedlemmene dine.
-- **Velg gudstjenester og tidspunkter** -- Velg blant tilgjengelige gudstjenester og tidspunkter som kirken din har konfigurert.
-- **Tildel grupper** -- Plasser hver person i riktig gruppe for gudstjenesten, som Hovedgudstjeneste, Barnerom eller Ungdomsgruppe.
+- **Sjekk inn husstanden din** -- Velg hvilke familiemedlemmer som deltar, og registrer oppmøte for alle samtidig. Se [Husstand](../profile/household.md) for å lære om å administrere familiemedlemmene dine.
+- **Velg gudstjenester og tidspunkter** -- Velg blant de tilgjengelige gudstjenestene og tidsluker som kirken din har satt opp.
+- **Tildel grupper** -- Plasser hver person i riktig gruppe for gudstjenesten, for eksempel Hovedgudstjeneste, Barnerom eller Ungdomsgruppe.
 
-## Neste Steg
+## Neste steg
 
-- [Selvinnsjekking](./self-checkin) -- Trinn-for-trinn-guide for innsjekking fra telefonen
+- [Selvinnsjekk](./self-checkin) -- Trinn-for-trinn-veiledning for å sjekke inn fra telefonen

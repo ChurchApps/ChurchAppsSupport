@@ -6,54 +6,54 @@ title: "Agendando Aulas"
 
 <div class="article-intro">
 
-Once your classrooms are set up, the next step is scheduling lessons so your volunteers know exactly what to teach and when. Scheduling connects the lesson content from Lessons.church to your classroom calendar.
+Depois que suas salas estiverem configuradas, o próximo passo é agendar as aulas para que seus voluntários saibam exatamente o que ensinar e quando. O agendamento conecta o conteúdo das aulas do Lessons.church ao calendário da sua sala.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de Começar</h4>
 
-- [Set up at least one classroom](./setting-up-classrooms.md) in the portal
-- [Browse the content library](../browsing/index.md) to find a program and study you want to teach
+- [Configure pelo menos uma sala](./setting-up-classrooms.md) no portal
+- [Explore a biblioteca de conteúdo](../browsing/index.md) para encontrar um programa e um estudo que você queira ensinar
 
 </div>
 
-## Viewing a Classroom Schedule
+## Visualizando a Agenda de uma Sala
 
-1. Log in and navigate to your **Portal**.
-2. Click on the **classroom** you want to schedule.
-3. The schedule view displays the **last 4 past lessons** and the **next 4 upcoming lessons**. This gives you a quick look at what was recently taught and what is coming up.
+1. Faça login e acesse seu **Portal**.
+2. Clique na **sala** que você deseja agendar.
+3. A visualização da agenda mostra as **últimas 4 aulas** e as **próximas 4 aulas**. Assim você tem uma visão rápida do que foi ensinado recentemente e do que vem a seguir.
 
-## Adding a Lesson to the Schedule
+## Adicionando uma Aula à Agenda
 
-1. From the classroom schedule view, click to add a new lesson.
-2. Select the **date** for the lesson.
-3. Choose the **program** you want to teach from (for example, "Bible Stories for Kids").
-4. Select the **study** within that program (for example, "Creation and Early Stories").
-5. Pick the specific **lesson** you want to schedule.
-6. Choose the appropriate **venue** for this classroom. Venues represent age-group-specific versions of the lesson content (for example, "Preschool" or "Elementary"). Picking the right venue ensures your volunteers see content tailored to their classroom's age group.
-7. Save the scheduled lesson.
+1. Na visualização da agenda da sala, clique para adicionar uma nova aula.
+2. Selecione a **data** da aula.
+3. Escolha o **programa** que você deseja ensinar (por exemplo, "Histórias Bíblicas para Crianças").
+4. Selecione o **estudo** dentro desse programa (por exemplo, "Criação e Primeiras Histórias").
+5. Escolha a **aula** específica que você deseja agendar.
+6. Escolha o **local** apropriado para esta sala. Os locais representam versões do conteúdo da aula voltadas a faixas etárias específicas (por exemplo, "Pré-escola" ou "Fundamental"). Escolher o local certo garante que seus voluntários vejam um conteúdo adequado à faixa etária da sua sala.
+7. Salve a aula agendada.
 
-The lesson will now appear on the classroom's schedule for that date.
+A aula agora aparecerá na agenda da sala para essa data.
 
 :::info
-Programs, studies, and lessons are the content hierarchy on Lessons.church. A program contains multiple studies, and each study contains individual lessons. Venues provide age-specific variations of the same lesson. See [Programs and Studies](../browsing/programs-and-studies.md) for a full explanation.
+Programas, estudos e aulas formam a hierarquia de conteúdo do Lessons.church. Um programa contém vários estudos, e cada estudo contém aulas individuais. Os locais oferecem variações por faixa etária da mesma aula. Consulte [Programas e Estudos](../browsing/programs-and-studies.md) para uma explicação completa.
 :::
 
-## How Volunteers Use the Schedule
+## Como os Voluntários Usam a Agenda
 
-Once you have scheduled lessons, your volunteers can open the portal, select their classroom, and immediately see what is coming up. They can review the lesson content ahead of time, download any materials they need, and arrive prepared. No more guesswork about what to teach next.
+Depois que você agendar as aulas, seus voluntários podem abrir o portal, selecionar a sala e ver imediatamente o que está por vir. Eles podem revisar o conteúdo da aula com antecedência, baixar os materiais de que precisam e chegar preparados. Chega de adivinhar o que ensinar em seguida.
 
-## Tips for Scheduling
+## Dicas para Agendar
 
-- **Plan ahead** -- Churches schedule classroom lessons in [B1 Admin](../../b1-admin/serving/scheduling-lessons.md), including applying a published year plan.
-- **Stay consistent** -- Following a program sequentially helps kids build on what they learned the previous week.
-- **Check the history** -- Use the past lesson list to make sure you are not accidentally repeating content.
+- **Planeje com antecedência** -- As igrejas agendam aulas das salas no [B1 Admin](../../b1-admin/serving/scheduling-lessons.md), inclusive aplicando um plano anual publicado.
+- **Mantenha a consistência** -- Seguir um programa em sequência ajuda as crianças a construir sobre o que aprenderam na semana anterior.
+- **Confira o histórico** -- Use a lista de aulas anteriores para garantir que você não esteja repetindo conteúdo sem querer.
 
 :::warning
-Make sure to select the correct venue for your classroom's age group. Choosing the wrong venue means your volunteers will see content designed for a different age level.
+Certifique-se de selecionar o local correto para a faixa etária da sua sala. Escolher o local errado significa que seus voluntários verão conteúdo planejado para outro nível de idade.
 :::
 
-## What's Next
+## Próximos Passos
 
-After scheduling lessons, you may want to [customize the lesson content](../customization/customizing-lessons.md) for specific classrooms to match your teaching style and age group needs. When it is time to teach, learn about [Presenting](../presenting/index.md) to deliver lessons effectively.
+Depois de agendar as aulas, você pode querer [personalizar o conteúdo das aulas](../customization/customizing-lessons.md) para salas específicas, de acordo com o seu estilo de ensino e as necessidades da faixa etária. Quando chegar a hora de ensinar, saiba mais sobre [Apresentação](../presenting/index.md) para transmitir as aulas com eficácia.

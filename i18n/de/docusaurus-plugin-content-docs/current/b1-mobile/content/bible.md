@@ -6,46 +6,46 @@ title: "Bibel"
 
 <div class="article-intro">
 
-B1 Mobile enthaelt einen integrierten Bibelleser, mit dem Sie die Heilige Schrift direkt in der App lesen koennen. Der Leser ist direkt in den Bibel-Bildschirm eingebettet und bietet Ihnen schnellen Zugriff auf jede Passage, ohne zu einer anderen App wechseln zu muessen.
+B1 Mobile enthält einen integrierten Bibelleser, mit dem du die Heilige Schrift direkt in der App lesen kannst. Der Leser ist unmittelbar in den Bildschirm „Bibel" eingebettet. So erreichst du jede Textstelle schnell, ohne zu einer anderen App wechseln zu müssen.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich an](../getting-started/logging-in) bei Ihrem Konto
-- Ihre Gemeinde muss die Bibel-Funktion aktiviert haben
+- [B1 Mobile installieren](../getting-started/installing) und dich [anmelden](../getting-started/logging-in)
+- Deine Kirche muss die Bibelfunktion aktiviert haben
 
 </div>
 
 ## Die Bibel lesen
 
-1. Oeffnen Sie den **Bibel**-Bildschirm ueber das Seitenmenue.
-2. Der Leser wird mit einer Standardpassage geladen.
-3. Verwenden Sie die Navigationssteuerungen innerhalb des Lesers, um zu einem anderen Buch, Kapitel oder Vers zu wechseln.
+1. Öffne den Bildschirm **Bibel** über das Seitenmenü.
+2. Der Leser lädt mit einer voreingestellten Textstelle.
+3. Nutze die Navigationsschaltflächen im Leser, um zu einem anderen Buch, Kapitel oder Vers zu wechseln.
 
-Der Bibelleser wird von YouVersion oder einem alternativen Anbieter betrieben, der von Ihrer Gemeinde konfiguriert wurde. Das Leseerlebnis funktioniert unabhaengig vom verwendeten Anbieter auf die gleiche Weise.
+Der Bibelleser basiert auf YouVersion oder einem alternativen Anbieter, den deine Kirche eingerichtet hat. Das Leseerlebnis ist unabhängig vom verwendeten Anbieter dasselbe.
 
-## Durch Passagen navigieren
+## Textstellen durchblättern
 
-Der eingebettete Leser bietet Steuerungen zum Navigieren durch die Heilige Schrift. Sie koennen:
+Der eingebettete Leser bietet Bedienelemente, um in der Schrift zu navigieren. Du kannst:
 
-- Zu einem bestimmten Buch der Bibel blaettern
-- Zu einem bestimmten Kapitel springen
-- Durch Verse innerhalb eines Kapitels scrollen
+- zu einem bestimmten Buch der Bibel blättern
+- zu einem bestimmten Kapitel springen
+- innerhalb eines Kapitels durch die Verse scrollen
 
-Der Leser fuellt den Bildschirm, sodass Sie auf Ihrem Geraet bequem lesen koennen.
+Der Leser füllt den Bildschirm aus und bietet dir so viel Platz, um auf deinem Gerät bequem zu lesen.
 
 :::tip
-Machen Sie den Bibel-Bildschirm zu einem Teil Ihrer taeglichen Routine -- er ist eine schnelle Moeglichkeit, die Heilige Schrift ueberall zu lesen. Kombinieren Sie ihn mit dem [Tagesvers](./verse-of-the-day) fuer taegliche Inspiration.
+Mach den Bildschirm „Bibel" zu einem festen Bestandteil deines Alltags. So kannst du jederzeit und überall schnell in der Schrift lesen. Kombiniere ihn mit dem [Vers des Tages](./verse-of-the-day) für tägliche Inspiration.
 :::
 
-## Verfuegbarkeit
+## Verfügbarkeit
 
-Der Bibel-Bildschirm ist verfuegbar, wenn Ihre Gemeinde diese Funktion aktiviert hat. Wenn Sie keine **Bibel**-Option im Seitenmenue sehen, hat Ihr Gemeindeadministrator sie moeglicherweise nicht zur App hinzugefuegt. Wenden Sie sich an Ihren Gemeindeadministrator, um sie anzufordern.
+Der Bildschirm „Bibel" steht zur Verfügung, wenn deine Kirche diese Funktion aktiviert hat. Wenn du im Seitenmenü keine Option **Bibel** siehst, hat deine Kirchenverwaltung sie möglicherweise nicht in der App hinzugefügt. Wende dich an deine Kirchenverwaltung, um sie anzufordern.
 
 ## Verwandte Artikel
 
-- [Tagesvers](./verse-of-the-day) -- Sehen Sie einen taeglichen Bibelvers
-- [Predigten](./sermons) -- Schauen Sie Predigten, die Ihre Bibellektuere ergaenzen
-- [Lektionen](./lessons) -- Greifen Sie auf strukturierte Lehrplaene und Studienmaterialien zu
+- [Vers des Tages](./verse-of-the-day) -- Ein tägliches Bibelwort sehen
+- [Predigten](./sermons) -- Predigten ansehen, die dein Bibellesen ergänzen
+- [FreePlay](/docs/freeplay/) -- Strukturierte Lehrpläne auf Fernsehern im Klassenzimmer abspielen (ersetzt den veralteten Lessons-Bildschirm in der App)

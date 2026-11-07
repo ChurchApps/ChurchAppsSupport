@@ -1,51 +1,51 @@
 ---
-title: "Bibelen"
+title: "Bibel"
 ---
 
-# Bibelen
+# Bibel
 
 <div class="article-intro">
 
-B1 Mobile inkluderer en innebygd bibelleser slik at du kan lese Skriften rett fra appen. Leseren er innebygd direkte i Bibelen-skjermen, noe som gir deg rask tilgang til ethvert avsnitt uten a bytte til en annen app.
+B1 Mobile har en innebygd Bibelleser, slik at du kan lese Skriften direkte i appen. Leseren er integrert i Bibel-skjermen, og gir deg rask tilgang til alle bibelavsnitt uten å bytte til en annen app.
 
 </div>
 
 <div class="prereqs">
-<h4>For Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) pa kontoen din
-- Kirken din ma ha Bibelen-funksjonen aktivert
+- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- Menigheten din må ha Bibel-funksjonen aktivert
 
 </div>
 
-## Lese Bibelen
+## Lese i Bibelen
 
-1. Apne **Bibelen**-skjermen fra sidemenyen.
-2. Leseren laster inn med et standard avsnitt.
-3. Bruk navigasjonskontrollene i leseren for a flytte til en annen bok, kapittel eller vers.
+1. Åpne **Bibel**-skjermen fra sidemenyen.
+2. Leseren åpnes med et standardavsnitt.
+3. Bruk navigasjonskontrollene i leseren for å gå til en annen bok, et annet kapittel eller et annet vers.
 
-Bibelleseren drives av YouVersion eller en alternativ leverandor konfigurert av kirken din. Leseopplevelsen fungerer pa samme mate uavhengig av hvilken leverandor som brukes.
+Bibelleseren drives av YouVersion eller en alternativ leverandør som menigheten din har satt opp. Leseopplevelsen er den samme uansett hvilken leverandør som brukes.
 
-## Navigere i Avsnitt
+## Navigere i avsnitt
 
-Den innebygde leseren gir kontroller for a navigere gjennom Skriften. Du kan:
+Den innebygde leseren har kontroller for å bevege seg gjennom Skriften. Du kan:
 
 - Bla til en bestemt bok i Bibelen
 - Hoppe til et bestemt kapittel
-- Bla gjennom vers innenfor et kapittel
+- Scrolle gjennom versene i et kapittel
 
-Leseren fyller skjermen, noe som gir deg god plass til a lese komfortabelt pa enheten din.
+Leseren fyller skjermen, slik at du har god plass til å lese komfortabelt på enheten din.
 
 :::tip
-Gjor Bibelen-skjermen til en del av din daglige rutine -- det er en rask mate a lese Skriften uansett hvor du er. Kombiner det med [Dagens Bibelvers](./verse-of-the-day) for daglig inspirasjon.
+Gjør Bibel-skjermen til en del av den daglige rutinen din. Det er en rask måte å lese Skriften på, uansett hvor du er. Kombiner den gjerne med [Dagens vers](./verse-of-the-day) for daglig inspirasjon.
 :::
 
 ## Tilgjengelighet
 
-Bibelen-skjermen er tilgjengelig nar kirken din har aktivert denne funksjonen. Hvis du ikke ser et **Bibelen**-alternativ i sidemenyen, har kanskje ikke kirkens administrator lagt den til i appen. Kontakt kirkens administrator for a be om den.
+Bibel-skjermen er tilgjengelig når menigheten din har aktivert denne funksjonen. Hvis du ikke ser et **Bibel**-alternativ i sidemenyen, har kanskje ikke menighetsadministratoren lagt det til i appen. Kontakt menighetsadministratoren din for å be om det.
 
-## Relaterte Artikler
+## Relaterte artikler
 
-- [Dagens Bibelvers](./verse-of-the-day) -- Se et daglig bibelvers
-- [Prekener](./sermons) -- Se prekener som utfyller bibellesingen din
-- [Leksjoner](./lessons) -- Fa tilgang til strukturert undervisningsopplegg og studiemateriell
+- [Dagens vers](./verse-of-the-day) -- Se et daglig bibelvers
+- [Preken](./sermons) -- Se prekener som utfyller bibellesingen din
+- [FreePlay](/docs/freeplay/) -- Spill strukturert læreplan på TV-er i klasserommet (erstatter den utfasede Lessons-skjermen i appen)

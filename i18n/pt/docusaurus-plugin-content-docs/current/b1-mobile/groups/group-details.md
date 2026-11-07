@@ -6,45 +6,45 @@ title: "Detalhes do Grupo"
 
 <div class="article-intro">
 
-Quando voce toca em um grupo na tela de Grupos, e levado para a pagina de detalhes desse grupo. E aqui que voce pode ver tudo sobre o grupo e interagir com seu conteudo, incluindo publicacoes, listas de membros e informacoes do grupo.
+Ao tocar em um grupo na tela Grupos, você é levado à página de detalhes desse grupo. Aqui você pode ver tudo sobre o grupo e interagir com o conteúdo dele, incluindo publicações, listas de membros e informações do grupo.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comecar</h4>
+<h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faca login](../getting-started/logging-in) na sua conta
-- Abra a tela de [Grupos](./index.md)
+- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
+- Abra a tela [Grupos](./index.md)
 
 </div>
 
-## O Que Voce Vera
+## O Que Você Verá
 
-A pagina de detalhes do grupo oferece um perfil completo do grupo:
+A página de detalhes do grupo oferece um perfil completo do grupo:
 
-- **Informacoes do grupo** -- O nome do grupo, descricao, detalhes de reunioes e qualquer outra informacao que os lideres do grupo forneceram.
-- **Publicacoes e timeline** -- Um feed de publicacoes e atividades especificas deste grupo. Voce pode ver o que lideres e membros compartilharam, incluindo atualizacoes, anuncios e conversas.
-- **Membros** -- Veja quem pertence ao grupo. Isso ajuda voce a ver com quem esta se conectando e reconhecer rostos familiares.
+- **Informações do grupo** -- O nome do grupo, a descrição, os detalhes dos encontros e quaisquer outras informações que os líderes do grupo tenham fornecido.
+- **Publicações e linha do tempo** -- Um feed de publicações e atividades específicas deste grupo. Você pode ver o que líderes e membros compartilharam, incluindo atualizações, anúncios e conversas.
+- **Membros** -- Veja quem faz parte do grupo. Isso ajuda você a saber com quem está se conectando e a reconhecer rostos conhecidos.
 
-## Interagindo com o Conteudo do Grupo
+## Interagindo com o Conteúdo do Grupo
 
-Na pagina de detalhes do grupo, voce pode interagir com o grupo de varias maneiras:
+A partir da página de detalhes do grupo, você pode interagir com o grupo de várias formas:
 
-- **Ler publicacoes** -- Role pela timeline do grupo para acompanhar a atividade mais recente.
-- **Ver perfis de membros** -- Toque em um membro para ver as informacoes do perfil no [diretorio de membros](../community/member-directory.md).
-- **Manter-se informado** -- Verifique regularmente para ver novas publicacoes, anuncios e atualizacoes dos lideres e membros do grupo.
+- **Ler publicações** -- Role pela linha do tempo do grupo para acompanhar as atividades mais recentes.
+- **Ver perfis de membros** -- Toque em um membro para ver as informações do perfil dele no [diretório de membros](../community/member-directory.md).
+- **Ficar informado** -- Volte regularmente para ver novas publicações, anúncios e atualizações dos líderes e dos demais membros do grupo.
 
-## Como Chegar La
+## Como Chegar Lá
 
 1. Abra a tela **Grupos** no B1 Mobile.
-2. Toque em qualquer grupo -- seu grupo hero, um cartao em destaque ou qualquer grupo na lista.
-3. A pagina de detalhes do grupo abre com todo o conteudo e informacoes.
+2. Toque em qualquer grupo -- seu grupo principal, um cartão em destaque ou qualquer grupo da lista.
+3. A página de detalhes do grupo será aberta com todo o seu conteúdo e informações.
 
 :::tip
-Seu grupo mais visitado aparece como o cartao hero no topo da tela de Grupos, entao acessar seu grupo favorito esta sempre a um unico toque de distancia.
+O grupo que você mais acessa aparece como cartão principal no topo da tela Grupos, então chegar ao seu grupo favorito é sempre a um toque de distância.
 :::
 
 ## Artigos Relacionados
 
-- [Timeline do Grupo](./group-timeline) -- Saiba sobre o feed de atividade unificado entre todos os seus grupos
-- [Mensagens](../community/messaging.md) -- Envie mensagens privadas para membros do grupo
+- [Linha do Tempo do Grupo](./group-timeline) -- Saiba mais sobre o feed de atividades unificado de todos os seus grupos
+- [Mensagens](../community/messaging.md) -- Envie mensagens privadas aos membros do grupo

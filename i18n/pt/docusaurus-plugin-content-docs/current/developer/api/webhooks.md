@@ -6,34 +6,34 @@ title: "Webhooks"
 
 <div class="article-intro">
 
-Webhooks let a church push real-time notifications to third-party tools — automation platforms (Zapier, Make, n8n), CRMs, accounting systems, or anything that accepts an HTTP POST. When a person, group, or household changes in B1, B1 sends a signed JSON payload to every URL subscribed to that event.
+Os webhooks permitem que uma igreja envie notificações em tempo real para ferramentas de terceiros — plataformas de automação (Zapier, Make, n8n), CRMs, sistemas contábeis ou qualquer serviço que aceite um HTTP POST. Quando uma pessoa, um grupo ou uma família é alterado no B1, o B1 envia um payload JSON assinado para cada URL inscrita nesse evento.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de começar</h4>
 
-- A church admin with the **Edit Church Settings** permission registers and manages webhooks
-- Your receiving endpoint must be reachable over **HTTPS** at a public address
-- Have a way to store the signing secret securely — it is shown only once
+- Um administrador da igreja com a permissão **Editar Configurações da Igreja** registra e gerencia os webhooks
+- Seu endpoint de recebimento precisa estar acessível por **HTTPS** em um endereço público
+- Tenha uma forma segura de armazenar o segredo de assinatura — ele é exibido apenas uma vez
 
 </div>
 
-## Visão Geral
+## Visão geral
 
-Webhooks are **outbound** only: B1 calls your endpoint, you do not call B1. Each webhook is a per-church subscription consisting of a destination URL, a signing secret, and a list of subscribed events.
+Os webhooks são somente de **saída**: o B1 chama o seu endpoint, e você não chama o B1. Cada webhook é uma assinatura por igreja, composta por uma URL de destino, um segredo de assinatura e uma lista de eventos inscritos.
 
-Delivery uses a **durable outbox**: when a subscribed event occurs, B1 records a delivery row and a background worker POSTs it within about a minute. Failed deliveries are retried with exponential backoff. Nothing is lost if a delivery is slow or your endpoint is briefly down.
+A entrega usa uma **fila de saída durável**: quando um evento inscrito ocorre, o B1 registra uma linha de entrega e um worker em segundo plano envia o POST em até cerca de um minuto. Entregas com falha são repetidas com backoff exponencial. Nada é perdido se uma entrega estiver lenta ou se o seu endpoint estiver temporariamente indisponível.
 
-## Registering a Webhook
+## Registrando um webhook
 
-### In B1Admin
+### No B1Admin
 
-Go to **Settings → Developer → Webhooks → New Webhook**. Enter a name, the payload URL, and select the events to subscribe to. On save, the **signing secret is displayed once** — copy it immediately and store it with your integration. It is never shown again (you can rotate it later, but you cannot retrieve the original).
+Acesse **Configurações → Desenvolvedor → Webhooks → Novo Webhook**. Informe um nome, a URL do payload e selecione os eventos para assinar. Ao salvar, o **segredo de assinatura é exibido uma única vez** — copie-o imediatamente e armazene-o junto com a sua integração. Ele nunca mais será exibido (você pode gerar um novo depois, mas não pode recuperar o original).
 
-### Via the API
+### Via API
 
-All endpoints are under the Membership module base path `/membership/webhooks` and require either a JWT from a church admin with the `Settings / Edit` permission, **or an [API key](./api-keys) minted with the `settings:write` scope**. The same routes accept both. This is what lets Zapier and Make register webhooks on the church's behalf when a Zap or scenario is turned on.
+Todos os endpoints ficam sob o caminho base do módulo Membership `/membership/webhooks` e exigem um JWT de um administrador da igreja com a permissão `Settings / Edit`, **ou uma [chave de API](./api-keys) gerada com o escopo `settings:write`**. As mesmas rotas aceitam ambos. É isso que permite ao Zapier e ao Make registrar webhooks em nome da igreja quando um Zap ou cenário é ativado.
 
 ```http
 POST /membership/webhooks
@@ -47,7 +47,7 @@ Content-Type: application/json
 }
 ```
 
-The create response — and **only** the create response — includes the `secret`:
+A resposta de criação — e **somente** a resposta de criação — inclui o `secret`:
 
 ```json
 {
@@ -60,58 +60,58 @@ The create response — and **only** the create response — includes the `secre
 }
 ```
 
-| Method & Path | Purpose |
+| Método e caminho | Finalidade |
 |---|---|
-| `GET /membership/webhooks` | List the church's webhooks (secret omitted) |
-| `GET /membership/webhooks/events` | The catalog of valid event names |
-| `GET /membership/webhooks/:id` | Load one webhook |
-| `POST /membership/webhooks` | Create (no `id`) or update (with `id`) |
-| `POST /membership/webhooks/:id/regenerate-secret` | Rotate the signing secret; returns the new value once |
-| `DELETE /membership/webhooks/:id` | Delete a webhook |
-| `GET /membership/webhooks/:id/deliveries` | Recent delivery attempts for a webhook |
-| `GET /membership/webhooks/deliveries/:deliveryId` | Full payload and response for one delivery |
-| `POST /membership/webhooks/deliveries/:deliveryId/redeliver` | Re-queue a delivery |
+| `GET /membership/webhooks` | Lista os webhooks da igreja (sem o segredo) |
+| `GET /membership/webhooks/events` | O catálogo de nomes de eventos válidos |
+| `GET /membership/webhooks/:id` | Carrega um webhook |
+| `POST /membership/webhooks` | Cria (sem `id`) ou atualiza (com `id`) |
+| `POST /membership/webhooks/:id/regenerate-secret` | Gera um novo segredo de assinatura; retorna o novo valor uma única vez |
+| `DELETE /membership/webhooks/:id` | Exclui um webhook |
+| `GET /membership/webhooks/:id/deliveries` | Tentativas de entrega recentes de um webhook |
+| `GET /membership/webhooks/deliveries/:deliveryId` | Payload e resposta completos de uma entrega |
+| `POST /membership/webhooks/deliveries/:deliveryId/redeliver` | Coloca uma entrega novamente na fila |
 
-## Event Catalog
+## Catálogo de eventos
 
-Event names follow the pattern `{entity}.{action}`. Fetch the live list from `GET /membership/webhooks/events`.
+Os nomes dos eventos seguem o padrão `{entity}.{action}`. Obtenha a lista atualizada em `GET /membership/webhooks/events`.
 
-| Event | Fires when |
+| Evento | Disparado quando |
 |---|---|
-| `person.created` | A person is added |
-| `person.updated` | A person record is changed |
-| `person.destroyed` | A person is deleted |
-| `household.created` | A household is added |
-| `household.updated` | A household is changed |
-| `household.destroyed` | A household is deleted |
-| `group.created` | A group is added |
-| `group.updated` | A group is changed |
-| `group.destroyed` | A group is deleted |
-| `group.member.added` | A person is added to a group |
-| `group.member.removed` | A person is removed from a group |
-| `donation.created` | A gift is recorded — manual entry, online, or the pending → complete transition |
-| `donation.updated` | A donation record is edited |
-| `attendance.recorded` | A visit is logged (manual entry or check-in) |
-| `session.created` | A new attendance session is created (manually or auto on first check-in) |
-| `form.submission.created` | A form is submitted |
-| `event.created` | A calendar event is added |
-| `event.updated` | A calendar event is edited |
-| `event.destroyed` | A calendar event is deleted |
+| `person.created` | Uma pessoa é adicionada |
+| `person.updated` | O registro de uma pessoa é alterado |
+| `person.destroyed` | Uma pessoa é excluída |
+| `household.created` | Uma família é adicionada |
+| `household.updated` | Uma família é alterada |
+| `household.destroyed` | Uma família é excluída |
+| `group.created` | Um grupo é adicionado |
+| `group.updated` | Um grupo é alterado |
+| `group.destroyed` | Um grupo é excluído |
+| `group.member.added` | Uma pessoa é adicionada a um grupo |
+| `group.member.removed` | Uma pessoa é removida de um grupo |
+| `donation.created` | Uma doação é registrada — lançamento manual, online ou a transição de pendente → concluída |
+| `donation.updated` | Um registro de doação é editado |
+| `attendance.recorded` | Uma presença é registrada (lançamento manual ou check-in) |
+| `session.created` | Uma nova sessão de presença é criada (manualmente ou automaticamente no primeiro check-in) |
+| `form.submission.created` | Um formulário é enviado |
+| `event.created` | Um evento do calendário é adicionado |
+| `event.updated` | Um evento do calendário é editado |
+| `event.destroyed` | Um evento do calendário é excluído |
 
-## Payload Format
+## Formato do payload
 
-Every delivery is an HTTP `POST` with a JSON body and these headers:
+Cada entrega é um `POST` HTTP com um corpo JSON e estes cabeçalhos:
 
-| Header | Description |
+| Cabeçalho | Descrição |
 |---|---|
-| `Content-Type` | Always `application/json` |
-| `X-B1-Event` | The event name, e.g. `person.created` |
-| `X-B1-Delivery-Id` | Unique id for this delivery attempt — use it to deduplicate |
-| `X-B1-Signature` | HMAC-SHA256 signature of the raw body (see below) |
-| `X-B1-Timestamp` | Unix epoch seconds when the request was sent |
+| `Content-Type` | Sempre `application/json` |
+| `X-B1-Event` | O nome do evento, por exemplo `person.created` |
+| `X-B1-Delivery-Id` | Identificador único desta tentativa de entrega — use-o para deduplicar |
+| `X-B1-Signature` | Assinatura HMAC-SHA256 do corpo bruto (veja abaixo) |
+| `X-B1-Timestamp` | Segundos desde a época Unix em que a requisição foi enviada |
 | `User-Agent` | `B1-Webhooks/1.0` |
 
-The body wraps the changed resource in a small envelope:
+O corpo envolve o recurso alterado em um pequeno envelope:
 
 ```json
 {
@@ -127,32 +127,32 @@ The body wraps the changed resource in a small envelope:
 }
 ```
 
-For `*.destroyed` events, `data` contains only the `id` and `churchId` of the deleted record.
+Para eventos `*.destroyed`, `data` contém apenas o `id` e o `churchId` do registro excluído.
 
-Events whose payloads reference other records by id also carry human-readable names, resolved at delivery time: `personName` and `groupName` on the group membership events, `personName` on attendance, donation, and list membership events, `groupName` on `session.created`, and `formName` (plus `personName` when the submission is tied to a person) on `form.submission.created`.
+Eventos cujos payloads referenciam outros registros por id também incluem nomes legíveis, resolvidos no momento da entrega: `personName` e `groupName` nos eventos de associação a grupos, `personName` nos eventos de presença, doação e associação a listas, `groupName` em `session.created`, e `formName` (além de `personName`, quando o envio está vinculado a uma pessoa) em `form.submission.created`.
 
-## Connector Types
+## Tipos de conector
 
-The default delivery format is the JSON envelope above — `connectorType: "standard"`. For [Slack and Discord](/docs/b1-admin/integrations/slack-discord) the same webhook engine instead posts a chat-shaped message that those services accept directly:
+O formato de entrega padrão é o envelope JSON acima — `connectorType: "standard"`. Para o [Slack e o Discord](/docs/b1-admin/integrations/slack-discord), o mesmo mecanismo de webhook envia uma mensagem no formato de chat, que esses serviços aceitam diretamente:
 
-| `connectorType` | Body sent | Use when |
+| `connectorType` | Corpo enviado | Use quando |
 |---|---|---|
-| `"standard"` (default) | `{event, churchId, occurredAt, data}` envelope, signed | You're writing your own integration, or pointing at Zapier / Make / a custom server |
-| `"slack"` | `{ "text": "💝 New donation: $50.00" }` | You're posting straight to a Slack Incoming Webhook URL |
-| `"discord"` | `{ "content": "💝 New donation: $50.00" }` | You're posting straight to a Discord channel webhook URL |
-| `"mailchimp"` | n/a — the connector calls Mailchimp's API itself | You want [audience sync](/docs/b1-admin/integrations/services/mailchimp) with no URL to host |
+| `"standard"` (padrão) | Envelope `{event, churchId, occurredAt, data}`, assinado | Você está criando a sua própria integração, ou apontando para Zapier / Make / um servidor personalizado |
+| `"slack"` | `{ "text": "💝 New donation: $50.00" }` | Você está enviando diretamente para uma URL de Incoming Webhook do Slack |
+| `"discord"` | `{ "content": "💝 New donation: $50.00" }` | Você está enviando diretamente para uma URL de webhook de canal do Discord |
+| `"mailchimp"` | n/a — o conector chama a própria API do Mailchimp | Você quer [sincronização de audiência](/docs/b1-admin/integrations/services/mailchimp) sem nenhuma URL para hospedar |
 
-The connector type is set in the **Connector Type** dropdown on the webhook editor, or via `connectorType` in the `POST /membership/webhooks` body. The signed `X-B1-Signature` header is still sent for Slack/Discord deliveries (they ignore it harmlessly), so switching a webhook back to `standard` later requires no resigning.
+O tipo de conector é definido na lista suspensa **Tipo de conector** no editor de webhooks, ou pelo `connectorType` no corpo de `POST /membership/webhooks`. O cabeçalho `X-B1-Signature` assinado continua sendo enviado nas entregas para Slack/Discord (eles o ignoram sem problemas), então voltar um webhook para `standard` depois não exige nova assinatura.
 
-Slack and Discord are pure body reshapes — the engine still POSTs to the church-supplied URL. `mailchimp` is the first connector that instead owns its HTTP exchange: per event it issues authenticated upsert/archive/tag requests against Mailchimp's API (`MailchimpConnector.deliver`), and its credentials (`{apiKey, audienceId}`) are stored AES-encrypted in `webhooks.connectorConfig`, write-only through the API. Mailchimp webhooks accept only person, group-member, and list-member events; the save route verifies the key and audience against Mailchimp before accepting. Delivery rows store the standard envelope, so the delivery log shows what B1 saw alongside Mailchimp's response. Unmapped situations (person with no email, event with no mapping) complete as succeeded with a `Skipped:` response body rather than burning retries.
+Slack e Discord são apenas reformatações do corpo — o mecanismo ainda envia o POST para a URL fornecida pela igreja. `mailchimp` é o primeiro conector que gerencia a própria troca HTTP: para cada evento, ele faz requisições autenticadas de upsert/arquivamento/tag na API do Mailchimp (`MailchimpConnector.deliver`), e suas credenciais (`{apiKey, audienceId}`) são armazenadas criptografadas com AES em `webhooks.connectorConfig`, somente gravação pela API. Webhooks do Mailchimp aceitam apenas eventos de pessoa, de membro de grupo e de membro de lista; a rota de salvamento verifica a chave e a audiência no Mailchimp antes de aceitá-las. As linhas de entrega armazenam o envelope padrão, então o log de entregas mostra o que o B1 recebeu junto com a resposta do Mailchimp. Situações sem mapeamento (pessoa sem e-mail, evento sem mapeamento) são concluídas como bem-sucedidas com um corpo de resposta `Skipped:`, em vez de consumir novas tentativas.
 
-## Test Deliveries
+## Entregas de teste
 
-Every webhook editor has a **Send Test Event** button — the corresponding API call is `POST /membership/webhooks/:id/test`. The test route builds a synthetic payload for the first subscribed event, dispatches it synchronously through the real signed-delivery path (and through `formatForConnector` for Slack/Discord), and returns the resulting delivery row including `responseStatus` and `responseBody`. Use it to confirm connectivity and signature handling before flipping the integration on for real. For `mailchimp` webhooks the test instead verifies the stored credentials against the Mailchimp API (a synthetic event would write a fake subscriber into the church's real audience) and returns a delivery-shaped result without creating a row.
+Todo editor de webhook tem um botão **Enviar evento de teste** — a chamada de API correspondente é `POST /membership/webhooks/:id/test`. A rota de teste monta um payload sintético para o primeiro evento inscrito, despacha-o de forma síncrona pelo caminho real de entrega assinada (e pelo `formatForConnector` para Slack/Discord), e retorna a linha de entrega resultante, incluindo `responseStatus` e `responseBody`. Use-a para confirmar a conectividade e o tratamento da assinatura antes de ativar a integração de verdade. Para webhooks `mailchimp`, o teste verifica as credenciais armazenadas na API do Mailchimp (um evento sintético gravaria um assinante falso na audiência real da igreja) e retorna um resultado no formato de entrega, sem criar uma linha.
 
-## Verifying Signatures
+## Verificando assinaturas
 
-Always verify `X-B1-Signature` before trusting a payload. The signature is `sha256=` followed by the hex HMAC-SHA256 of the **raw request body** keyed with your signing secret. Compute it over the bytes you received — do not re-serialize the parsed JSON.
+Sempre verifique o `X-B1-Signature` antes de confiar em um payload. A assinatura é `sha256=` seguido do HMAC-SHA256 em hexadecimal do **corpo bruto da requisição**, usando o seu segredo de assinatura como chave. Calcule-a sobre os bytes recebidos — não serialize novamente o JSON já analisado.
 
 **Node.js**
 
@@ -186,11 +186,11 @@ function isValid(string $rawBody, string $signatureHeader, string $secret): bool
 }
 ```
 
-Reject any request whose signature does not match. Optionally also reject requests whose `X-B1-Timestamp` is more than a few minutes old to limit replay windows.
+Rejeite qualquer requisição cuja assinatura não corresponda. Opcionalmente, rejeite também requisições cujo `X-B1-Timestamp` tenha mais de alguns minutos, para limitar a janela de reenvio malicioso (replay).
 
-## SDK Support
+## Suporte ao SDK
 
-For Node.js, `@churchapps/integration-sdk` ships a typed verifier and an Express middleware that handles the raw-body capture, signature check, and envelope parsing for you:
+Para Node.js, o `@churchapps/integration-sdk` inclui um verificador tipado e um middleware para Express que cuida, para você, da captura do corpo bruto, da verificação da assinatura e da análise do envelope:
 
 ```ts
 import express from "express";
@@ -209,32 +209,32 @@ app.post("/webhooks/b1", b1WebhookMiddleware({ secret: process.env.B1_WEBHOOK_SE
 });
 ```
 
-The SDK also exposes `WebhookVerifier.verify(secret, rawBody, signatureHeader)` for non-Express runtimes (serverless functions, Fastify, etc.). See the package on npm.
+O SDK também expõe `WebhookVerifier.verify(secret, rawBody, signatureHeader)` para runtimes que não são Express (funções serverless, Fastify, etc.). Consulte o pacote no npm.
 
-## Delivery & Retries
+## Entrega e novas tentativas
 
-Your endpoint should respond with a `2xx` status as quickly as possible — ideally after only queuing the work, not after processing it. Any non-`2xx` response, a connection failure, or a response slower than **10 seconds** counts as a failed delivery.
+Seu endpoint deve responder com status `2xx` o mais rápido possível — idealmente depois de apenas enfileirar o trabalho, e não depois de processá-lo. Qualquer resposta que não seja `2xx`, falha de conexão ou resposta mais lenta que **10 segundos** conta como entrega com falha.
 
-Failed deliveries are retried with exponential backoff — **16 attempts over roughly 5 days**. The interval grows from 1 minute, through hours, up to 3-day gaps for the final attempts. After the 16th failed attempt the delivery is marked `exhausted` and abandoned.
+Entregas com falha são repetidas com backoff exponencial — **16 tentativas em cerca de 5 dias**. O intervalo começa em 1 minuto, passa por horas e chega a intervalos de até 3 dias nas últimas tentativas. Após a 16ª tentativa falha, a entrega é marcada como `exhausted` (esgotada) e abandonada.
 
-Delivery is **at-least-once**: a delivery may arrive more than once (for example, if your endpoint succeeds but the response is lost). Use the `X-B1-Delivery-Id` header to deduplicate — process each id only once and treat repeats as no-ops.
+A entrega é **pelo menos uma vez**: uma entrega pode chegar mais de uma vez (por exemplo, se o seu endpoint tiver sucesso mas a resposta se perder). Use o cabeçalho `X-B1-Delivery-Id` para deduplicar — processe cada id apenas uma vez e trate as repetições como operações sem efeito.
 
-### Auto-disabling
+### Desativação automática
 
-If a webhook produces **three consecutive exhausted deliveries**, B1 disables it automatically. Fix your endpoint, then re-enable the webhook in B1Admin (or via `POST /membership/webhooks` with `"active": true`).
+Se um webhook produzir **três entregas esgotadas consecutivas**, o B1 o desativa automaticamente. Corrija o seu endpoint e, em seguida, reative o webhook no B1Admin (ou via `POST /membership/webhooks` com `"active": true`).
 
-## Inspecting & Redelivering
+## Inspecionando e reenviando
 
-The webhook editor in B1Admin shows a **Recent Deliveries** table — event, status, attempt count, response code, and timestamp. Selecting a row reveals the full payload that was sent and the response that came back.
+O editor de webhooks no B1Admin mostra uma tabela de **Entregas recentes** — evento, status, número de tentativas, código de resposta e data/hora. Ao selecionar uma linha, você vê o payload completo que foi enviado e a resposta recebida.
 
-Use **Redeliver** to re-queue any past delivery with its original payload — useful after fixing a bug in your endpoint, or to backfill events your endpoint missed while it was down.
+Use **Reenviar** para colocar novamente na fila qualquer entrega anterior com o payload original — útil após corrigir um bug no seu endpoint, ou para reprocessar eventos que o seu endpoint deixou de receber enquanto estava indisponível.
 
-## URL Requirements
+## Requisitos de URL
 
-Because webhook URLs are church-supplied, B1 enforces guards against server-side request forgery. A webhook URL is rejected — at registration and re-checked before every delivery — if it:
+Como as URLs de webhook são fornecidas pela igreja, o B1 aplica proteções contra falsificação de requisições do lado do servidor (SSRF). Uma URL de webhook é rejeitada — no registro e novamente verificada antes de cada entrega — se:
 
-- does not use **`https`**
-- points at `localhost`, a `.local` / `.internal` hostname, or
-- resolves to a **private, loopback, link-local, or cloud-metadata** IP address
+- não usar **`https`**
+- apontar para `localhost`, um nome de host `.local` / `.internal`, ou
+- resolver para um endereço IP **privado, de loopback, link-local ou de metadados de nuvem**
 
-Your endpoint must be a publicly reachable HTTPS service.
+Seu endpoint precisa ser um serviço HTTPS acessível publicamente.

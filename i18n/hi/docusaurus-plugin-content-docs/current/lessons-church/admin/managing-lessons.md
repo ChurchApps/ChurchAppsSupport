@@ -1,93 +1,93 @@
 ---
-title: "पाठों को प्रबंधित करना"
+title: "पाठों का प्रबंधन"
 ---
 
-# Managing Lessons
+# पाठों का प्रबंधन
 
 <div class="article-intro">
 
-Lessons are the individual teaching sessions within a study. Each lesson represents what happens during a single class meeting. This is where you build out the detailed content -- venues, sections, roles, and actions -- that volunteers will use when they teach.
+पाठ किसी अध्ययन के अलग-अलग शिक्षण सत्र होते हैं। हर पाठ कक्षा की एक बैठक में होने वाली गतिविधियों को दर्शाता है। यहीं आप विस्तृत सामग्री तैयार करते हैं -- स्थान, खंड, भूमिकाएँ और क्रियाएँ -- जिनका उपयोग स्वयंसेवक पढ़ाते समय करेंगे।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- [Create a program](./managing-programs.md) and [add a study](./managing-studies.md) to it
-- Have admin permissions for Lessons.church (see the [Administration overview](./index.md))
+- एक [कार्यक्रम बनाएँ](./managing-programs.md) और उसमें [अध्ययन जोड़ें](./managing-studies.md)
+- Lessons.church के लिए एडमिन अनुमतियाँ होना (देखें [एडमिनिस्ट्रेशन का अवलोकन](./index.md))
 
 </div>
 
-## Creating a Lesson
+## पाठ बनाना
 
-1. Navigate to the **Admin** area, expand the program and study, and find the study you want to add a lesson to.
-2. Click **Add Lesson**.
-3. Enter a **Name** and other details for the lesson.
-4. Save the lesson.
+1. **एडमिन** क्षेत्र में जाएँ, कार्यक्रम और अध्ययन का विस्तार करें, और वह अध्ययन ढूँढें जिसमें आप पाठ जोड़ना चाहते हैं।
+2. **पाठ जोड़ें** पर क्लिक करें।
+3. पाठ का **नाम** और अन्य विवरण दर्ज करें।
+4. पाठ सहेजें।
 
-## Parent Take-Home
+## माता-पिता के लिए घर ले जाने योग्य सार
 
-Each lesson has an optional **Parent take-home** section under Description. These fields are what parents see on their B1 group after class (and on the classroom parent page). They are not a second lesson description.
+हर पाठ में विवरण के अंतर्गत एक वैकल्पिक **माता-पिता के लिए घर ले जाने योग्य सार** खंड होता है। ये फ़ील्ड वे हैं जो कक्षा के बाद माता-पिता अपने B1 समूह पर (और कक्षा के माता-पिता पृष्ठ पर) देखते हैं। ये पाठ के विवरण का दूसरा रूप नहीं हैं।
 
-| Field | Purpose |
+| फ़ील्ड | उद्देश्य |
 |---|---|
-| **Bottom line** | One sentence. "God keeps His promises." |
-| **Verse** | Memory verse reference and short text. |
-| **Question** | One car-ride question parents can ask without a PDF. |
-| **Optional note** | Extra (prayer prompt, family activity). Markdown. Hidden when empty. |
+| **मुख्य बात** | एक वाक्य। "परमेश्वर अपनी प्रतिज्ञाओं को निभाते हैं।" |
+| **पद** | याद करने योग्य पद का संदर्भ और छोटा पाठ। |
+| **प्रश्न** | एक ऐसा प्रश्न जिसे माता-पिता बिना PDF के गाड़ी की सवारी में पूछ सकें। |
+| **वैकल्पिक नोट** | अतिरिक्त जानकारी (प्रार्थना का संकेत, पारिवारिक गतिविधि)। Markdown। खाली होने पर छिपा रहता है। |
 
-Bottom line and one question matter more than an overview. Leave all four empty if you have nothing for parents that week — nothing is shown.
+मुख्य बात और एक प्रश्न, किसी सारांश से अधिक महत्वपूर्ण हैं। यदि उस सप्ताह माता-पिता के लिए आपके पास कुछ न हो, तो चारों फ़ील्ड खाली छोड़ दें -- कुछ भी नहीं दिखाया जाएगा।
 
-Do not put parent copy in **Description**. Description is catalog copy for teachers browsing lessons.church.
+माता-पिता के लिए सामग्री **विवरण** में न डालें। विवरण वह कैटलॉग सामग्री है जो शिक्षक Lessons.church पर पाठ ब्राउज़ करते समय देखते हैं।
 
-## Understanding the Lesson Structure
+## पाठ की संरचना को समझना
 
-Each lesson is organized into several layers:
+हर पाठ कई परतों में व्यवस्थित होता है:
 
-- **Venues** -- Different versions of the lesson for different age groups or settings. For example, you might have a "Preschool" venue and an "Elementary" venue for the same lesson.
-- **Sections** -- The segments within a venue, such as "Welcome", "Video", "Bible Story", and "Activity". Sections control the flow of the class time.
-- **Roles and Actions** -- Within each section, you assign roles (for example, "Lead Teacher" or "Small Group Leader") and give each role specific actions.
+- **स्थान** -- एक ही पाठ के अलग-अलग आयु समूहों या परिस्थितियों के लिए अलग-अलग संस्करण। उदाहरण के लिए, एक ही पाठ के लिए आपके पास "प्रीस्कूल" स्थान और "प्राथमिक" स्थान हो सकते हैं।
+- **खंड** -- किसी स्थान के भीतर के भाग, जैसे "स्वागत", "वीडियो", "बाइबल कहानी" और "गतिविधि"। खंड कक्षा के समय का क्रम नियंत्रित करते हैं।
+- **भूमिकाएँ और क्रियाएँ** -- हर खंड के भीतर आप भूमिकाएँ (जैसे "मुख्य शिक्षक" या "छोटे समूह के नेता") निर्धारित करते हैं और हर भूमिका को विशिष्ट क्रियाएँ देते हैं।
 
-## Action Types
+## क्रिया के प्रकार
 
-There are four types of actions you can assign to a role within a section:
+किसी खंड में किसी भूमिका को सौंपी जा सकने वाली चार प्रकार की क्रियाएँ हैं:
 
-- **Say** -- Text the volunteer should speak or paraphrase to the class.
-- **Do** -- A physical activity or instruction to carry out.
-- **Note** -- Background information or a reminder for the volunteer (not read aloud).
-- **Play** -- A video or audio clip to play during the section.
+- **कहें** -- वह पाठ जो स्वयंसेवक कक्षा से बोले या अपने शब्दों में समझाए।
+- **करें** -- कोई शारीरिक गतिविधि या निर्देश जिसे पूरा करना है।
+- **नोट** -- स्वयंसेवक के लिए पृष्ठभूमि की जानकारी या अनुस्मारक (ज़ोर से नहीं पढ़ा जाता)।
+- **चलाएँ** -- खंड के दौरान चलाने के लिए एक वीडियो या ऑडियो क्लिप।
 
-## Adding a Venue
+## स्थान जोड़ना
 
-1. Open the lesson in the admin view.
-2. Click **Add Venue**.
-3. Enter a name for the venue (e.g., "Preschool" or "Elementary").
-4. Save. You can now add sections to this venue.
+1. एडमिन दृश्य में पाठ खोलें।
+2. **स्थान जोड़ें** पर क्लिक करें।
+3. स्थान का नाम दर्ज करें (जैसे "प्रीस्कूल" या "प्राथमिक")।
+4. सहेजें। अब आप इस स्थान में खंड जोड़ सकते हैं।
 
-## Adding Sections and Actions
+## खंड और क्रियाएँ जोड़ना
 
-1. Expand a venue to see its sections.
-2. Click **Add Section** and give it a name (e.g., "Welcome").
-3. Within the section, click **Add Action**.
-4. Choose the **role**, **action type** (Say, Do, Note, or Play), and enter the content.
-5. Save.
+1. किसी स्थान का विस्तार करके उसके खंड देखें।
+2. **खंड जोड़ें** पर क्लिक करें और उसे नाम दें (जैसे "स्वागत")।
+3. खंड के भीतर **क्रिया जोड़ें** पर क्लिक करें।
+4. **भूमिका**, **क्रिया का प्रकार** (कहें, करें, नोट, या चलाएँ) चुनें और सामग्री दर्ज करें।
+5. सहेजें।
 
-Repeat this process to build out the full lesson flow.
+पूरा पाठ क्रम बनाने के लिए यह प्रक्रिया दोहराएँ।
 
-## Uploading Lesson-Level Resources
+## पाठ-स्तर की सामग्री अपलोड करना
 
-You can attach downloadable materials directly to a lesson -- for example, an activity sheet or coloring page specific to that week.
+आप किसी पाठ से सीधे डाउनलोड करने योग्य सामग्री जोड़ सकते हैं -- उदाहरण के लिए, उस सप्ताह के लिए विशेष गतिविधि पत्रक या रंग भरने का पन्ना।
 
-1. Open the lesson in the admin view.
-2. Navigate to the **Resources** section.
-3. Upload your files.
+1. एडमिन दृश्य में पाठ खोलें।
+2. **संसाधन** खंड पर जाएँ।
+3. अपनी फ़ाइलें अपलोड करें।
 
 :::tip
-Build your lesson from the volunteer's perspective. Step through the sections and actions in order and ask yourself whether a first-time volunteer could follow along without any other preparation.
+पाठ को स्वयंसेवक के दृष्टिकोण से बनाएँ। खंडों और क्रियाओं में क्रम से आगे बढ़ें और स्वयं से पूछें कि क्या कोई पहली बार आया स्वयंसेवक बिना किसी अन्य तैयारी के साथ चल सकता है।
 :::
 
-## Related Articles
+## संबंधित लेख
 
-- [Managing Programs](./managing-programs.md) -- Set up the top-level curriculum container
-- [Managing Studies](./managing-studies.md) -- Organize lessons into study groups
-- [Statistics](./statistics.md) -- Track how your lessons are being used
+- [कार्यक्रमों का प्रबंधन](./managing-programs.md) -- सर्वोच्च स्तर का पाठ्यक्रम कंटेनर सेट करें
+- [अध्ययनों का प्रबंधन](./managing-studies.md) -- पाठों को अध्ययन समूहों में व्यवस्थित करें
+- [आँकड़े](./statistics.md) -- देखें कि आपके पाठों का उपयोग कैसे हो रहा है

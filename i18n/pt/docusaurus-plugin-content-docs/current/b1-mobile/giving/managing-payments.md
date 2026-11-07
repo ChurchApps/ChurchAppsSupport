@@ -1,57 +1,57 @@
 ---
-title: "Gerenciando Metodos de Pagamento"
+title: "Gerenciando Métodos de Pagamento"
 ---
 
-# Gerenciando Metodos de Pagamento
+# Gerenciando Métodos de Pagamento
 
 <div class="article-intro">
 
-A aba **Gerenciar** na secao de ofertas permite que voce visualize e gerencie seus metodos de pagamento salvos. Ao salvar um cartao, voce pode fazer doacoes futuras mais rapidamente sem precisar reinserir seus dados a cada vez.
+A aba **Gerenciar** na seção de doações permite visualizar e administrar seus métodos de pagamento salvos. Ao salvar um cartão, você pode fazer doações futuras com mais rapidez, sem precisar digitar seus dados novamente a cada vez.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comecar</h4>
+<h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faca login](../getting-started/logging-in) na sua conta
+- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
 
 </div>
 
-## Visualizando Seus Metodos de Pagamento
+## Visualizando Seus Métodos de Pagamento
 
-Quando voce abre a aba **Gerenciar**, vera uma lista de todos os seus metodos de pagamento salvos. Cada entrada mostra o tipo do cartao e os ultimos quatro digitos do numero do cartao, para identificar facilmente qual cartao e qual.
+Ao abrir a aba **Gerenciar**, você verá uma lista de todos os seus métodos de pagamento salvos. Cada item mostra o tipo do cartão e os últimos quatro dígitos do número, para que você possa identificar facilmente qual é cada cartão.
 
-## Adicionando um Novo Metodo de Pagamento
+## Adicionando um Novo Método de Pagamento
 
-Para adicionar um novo cartao:
+Para adicionar um novo cartão:
 
-1. Abra a secao **Ofertas** no B1 Mobile.
+1. Abra a seção **Doações** no B1 Mobile.
 2. Toque na aba **Gerenciar**.
-3. Toque na opcao para adicionar um novo metodo de pagamento.
-4. Insira os dados do seu cartao. As informacoes sao enviadas com seguranca para o **Stripe** para processamento.
-5. Depois de salvo, o novo cartao aparecera na sua lista de metodos de pagamento.
+3. Toque na opção para adicionar um novo método de pagamento.
+4. Digite os dados do seu cartão. As informações são enviadas com segurança para a **Stripe** para processamento.
+5. Após salvar, o novo cartão aparecerá na sua lista de métodos de pagamento.
 
-O cartao salvo estara entao disponivel como opcao de pagamento na proxima vez que voce [fizer uma doacao](./making-donations) na aba **Doar**.
+Seu cartão salvo ficará então disponível como opção de pagamento na próxima vez que você [fizer uma doação](./making-donations) pela aba **Doar**.
 
-## Removendo um Metodo de Pagamento
+## Removendo um Método de Pagamento
 
-Se voce nao quer mais ter um cartao registrado, pode remove-lo na aba **Gerenciar**:
+Se você não quiser mais um cartão salvo, pode removê-lo na aba **Gerenciar**:
 
-1. Encontre o cartao que deseja remover na lista de metodos de pagamento salvos.
-2. Toque na opcao de remover ou excluir ao lado do cartao.
-3. Confirme a remocao.
+1. Encontre o cartão que deseja remover na sua lista de métodos de pagamento salvos.
+2. Toque na opção de remover ou excluir ao lado do cartão.
+3. Confirme a remoção.
 
-O cartao nao aparecera mais como opcao de pagamento quando voce fizer uma doacao.
+O cartão não aparecerá mais como opção de pagamento ao fazer uma doação.
 
 :::info
-Remover um metodo de pagamento nao afeta doacoes anteriores. Seu [historico de doacoes](./donation-history) permanece inalterado.
+Remover um método de pagamento não afeta doações anteriores. Seu [histórico de doações](./donation-history) permanece inalterado.
 :::
 
 :::tip
-Mantenha pelo menos um metodo de pagamento salvo para doacoes rapidas. Assim, voce pode usar o botao **Repetir** na aba **Visao Geral** para doar novamente com um unico toque.
+Mantenha pelo menos um método de pagamento salvo para doações rápidas. Assim, você pode usar o botão **Repetir** na aba **Visão Geral** para doar novamente com um único toque.
 :::
 
 ## Artigos Relacionados
 
-- [Fazendo uma Doacao](./making-donations) -- Saiba como fazer uma oferta usando um metodo de pagamento salvo
-- [Historico de Doacoes](./donation-history) -- Veja o resumo de ofertas e doacoes anteriores
+- [Fazendo uma Doação](./making-donations) -- Saiba como fazer uma contribuição usando um método de pagamento salvo
+- [Histórico de Doações](./donation-history) -- Veja seu resumo de doações e doações anteriores

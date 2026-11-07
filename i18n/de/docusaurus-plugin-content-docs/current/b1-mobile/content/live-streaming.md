@@ -1,50 +1,50 @@
 ---
-title: "Livestreaming"
+title: "Live-Streaming"
 ---
 
-# Livestreaming
+# Live-Streaming
 
 <div class="article-intro">
 
-Mit B1 Mobile koennen Sie den Livestream Ihrer Gemeinde direkt auf Ihrem Telefon ansehen. Wenn ein Gottesdienst uebertragen wird, koennen Sie sich von ueberall einschalten und in Echtzeit zuschauen.
+Mit B1 Mobile können Sie den Live-Stream Ihrer Kirche direkt auf Ihrem Telefon ansehen. Wenn ein Gottesdienst übertragen wird, können Sie von überall aus zuschauen und das Geschehen in Echtzeit verfolgen.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich an](../getting-started/logging-in) bei Ihrem Konto
-- Ihre Gemeinde muss einen Streaming-Zeitplan konfiguriert haben
+- [B1 Mobile installieren](../getting-started/installing) und sich [anmelden](../getting-started/logging-in)
+- Ihre Kirche muss einen Streaming-Zeitplan eingerichtet haben
 
 </div>
 
-## Einen Livestream ansehen
+## Einen Live-Stream ansehen
 
-1. Oeffnen Sie den **Stream**-Bildschirm ueber das Seitenmenue oder tippen Sie auf den Countdown auf dem [Predigten](./sermons)-Bildschirm, wenn ein Livestream bald beginnt.
-2. Wenn ein Gottesdienst gerade live ist, wird der Videoplayer automatisch geladen und die Uebertragung beginnt abzuspielen.
-3. Schauen Sie den Stream direkt in der App.
+1. Öffnen Sie den Bildschirm **Stream** über das Seitenmenü oder tippen Sie auf den Countdown im Bildschirm [Predigten](./sermons), wenn ein Live-Stream bald beginnt.
+2. Wenn gerade ein Gottesdienst live läuft, wird der Videoplayer automatisch geladen und die Übertragung beginnt.
+3. Sehen Sie sich den Stream direkt in der App an.
 
-Wenn kein Livestream gerade aktiv ist, zeigt der Bildschirm moeglicherweise Offline-Inhalte oder Informationen ueber den naechsten geplanten Gottesdienst an.
+Wenn gerade kein Live-Stream aktiv ist, zeigt der Bildschirm möglicherweise Offline-Inhalte oder Informationen zum nächsten geplanten Gottesdienst an.
 
-## Zum Stream gelangen
+## So gelangen Sie zum Stream
 
-Es gibt zwei Moeglichkeiten, auf den Livestream zuzugreifen:
+Es gibt zwei Möglichkeiten, auf den Live-Stream zuzugreifen:
 
-- **Seitenmenue** -- Oeffnen Sie das Seitenmenue und tippen Sie auf **Stream**, um direkt zum Livestream-Bildschirm zu gelangen.
-- **Predigten-Bildschirm** -- Wenn ein Livestream innerhalb der naechsten 24 Stunden geplant ist, erscheint ein Countdown auf dem [Predigten](./sermons)-Bildschirm. Sobald die Uebertragung beginnt, koennen Sie von dort aus zum Stream navigieren.
+- **Seitenmenü** -- Öffnen Sie das Seitenmenü und tippen Sie auf **Stream**, um direkt zum Live-Stream-Bildschirm zu gelangen.
+- **Bildschirm Predigten** -- Wenn ein Live-Stream innerhalb der nächsten 24 Stunden geplant ist, erscheint auf dem Bildschirm [Predigten](./sermons) ein Countdown. Sobald die Übertragung beginnt, können Sie von dort aus zum Stream wechseln.
 
 ## Vor und nach dem Gottesdienst
 
-Ihre Gemeinde legt bestimmte Zeiten fest, wann der Stream verfuegbar wird. Moeglicherweise sehen Sie einen Countdown oder eine Offline-Nachricht, bevor der Gottesdienst beginnt. Nach Ende der Uebertragung kehrt der Stream-Bildschirm in seinen Offline-Zustand zurueck.
+Ihre Kirche legt fest, zu welchen Zeiten der Stream verfügbar ist. Vor Beginn des Gottesdienstes sehen Sie unter Umständen einen Countdown oder eine Offline-Meldung. Nach Ende der Übertragung kehrt der Stream-Bildschirm in den Offline-Zustand zurück.
 
 :::info
-Wenn der Stream-Bildschirm einen Countdown oder eine Offline-Nachricht anzeigt, hat der naechste geplante Gottesdienst noch nicht begonnen. Schauen Sie zur angegebenen Gottesdienstzeit wieder vorbei.
+Wenn der Stream-Bildschirm einen Countdown oder eine Offline-Meldung anzeigt, hat der nächste geplante Gottesdienst noch nicht begonnen. Schauen Sie zur angegebenen Gottesdienstzeit noch einmal nach.
 :::
 
-## Verfuegbarkeit
+## Verfügbarkeit
 
-Der Livestream-Bildschirm ist verfuegbar, wenn Ihre Gemeinde einen Streaming-Zeitplan konfiguriert hat. Wenn Sie keine **Stream**-Option im Seitenmenue Ihrer App sehen, hat Ihre Gemeinde moeglicherweise kein Livestreaming eingerichtet. Wenden Sie sich an Ihren Gemeindeadministrator fuer Details.
+Der Live-Stream-Bildschirm ist verfügbar, wenn Ihre Kirche einen Streaming-Zeitplan eingerichtet hat. Wenn Sie im Seitenmenü Ihrer App keine Option **Stream** sehen, ist für Ihre Kirche möglicherweise kein Live-Streaming eingerichtet. Wenden Sie sich für Details an Ihre Kirchenverwaltung.
 
 :::tip
-Pruefen Sie den [Predigten](./sermons)-Bildschirm auf einen Countdown-Timer, der anzeigt, wann die naechste Live-Uebertragung beginnt.
+Im Bildschirm [Predigten](./sermons) finden Sie einen Countdown, der anzeigt, wann die nächste Live-Übertragung beginnt.
 :::

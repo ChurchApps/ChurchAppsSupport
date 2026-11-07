@@ -1,97 +1,97 @@
 ---
-title: "ऐप सहायक"
+title: "AppHelper"
 ---
 
 # AppHelper
 
 <div class="article-intro">
 
-The `@churchapps/apphelper` package provides shared React components and utilities for all ChurchApps web applications. It is a single published package that exposes feature modules through subpath entry points -- login, donations, forms, markdown, and website/CMS functionality -- alongside a core set of shared components and helpers.
+`@churchapps/apphelper` पैकेज सभी ChurchApps वेब एप्लिकेशन के लिए साझा React कंपोनेंट और utilities प्रदान करता है। यह एक ही प्रकाशित पैकेज है, जो subpath entry points के ज़रिए फ़ीचर मॉड्यूल उपलब्ध कराता है: लॉगिन, दान, फ़ॉर्म, markdown, और वेबसाइट/CMS कार्यक्षमता। इसके साथ इसमें साझा कोर कंपोनेंट और helpers का एक मूल सेट भी शामिल है।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- Install **Node.js** and **Git** -- see [Prerequisites](../setup/prerequisites)
-- Familiarize yourself with the [Packages workspace](./index.md) setup and release flow
+- **Node.js** और **Git** इंस्टॉल करें -- देखें [पूर्वापेक्षाएँ](../setup/prerequisites)
+- [Packages वर्कस्पेस](./index.md) सेटअप और release flow से परिचित हो जाएँ
 
 </div>
 
-## Entry Points
+## प्रवेश बिंदु (Entry Points)
 
-The package defines subpath exports in its `package.json`, so each feature module is importable on its own:
+पैकेज अपनी `package.json` में subpath exports परिभाषित करता है, इसलिए हर फ़ीचर मॉड्यूल अलग से इम्पोर्ट किया जा सकता है:
 
-| Entry point | Contents |
+| प्रवेश बिंदु | सामग्री |
 |-------------|----------|
-| `@churchapps/apphelper` | Core components, helpers, and hooks |
-| `@churchapps/apphelper/login` | Login and registration UI |
-| `@churchapps/apphelper/donations` | Giving and donation components |
-| `@churchapps/apphelper/forms` | Form submission components |
-| `@churchapps/apphelper/markdown` | Markdown and HTML editors and renderers |
-| `@churchapps/apphelper/website` | Website builder and CMS components |
+| `@churchapps/apphelper` | कोर कंपोनेंट, helpers, और hooks |
+| `@churchapps/apphelper/login` | लॉगिन और पंजीकरण UI |
+| `@churchapps/apphelper/donations` | दान और donation कंपोनेंट |
+| `@churchapps/apphelper/forms` | फ़ॉर्म सबमिशन कंपोनेंट |
+| `@churchapps/apphelper/markdown` | Markdown और HTML editors व renderers |
+| `@churchapps/apphelper/website` | वेबसाइट बिल्डर और CMS कंपोनेंट |
 
-## Who Consumes What
+## कौन क्या उपयोग करता है
 
-Before changing a shared export, check which apps import it:
+किसी साझा export को बदलने से पहले जाँच लें कि कौन-से ऐप उसे इम्पोर्ट करते हैं:
 
-| Export area | What it provides | Consumed by |
+| Export क्षेत्र | यह क्या प्रदान करता है | उपयोग करने वाले ऐप |
 |---|---|---|
-| Root -- core components & hooks | `DisplayBox`, `InputBox`, `Loading`, `PageHeader`, `PersonAvatar`, `SmallButton`, `ErrorMessages`, `ExportLink`, `useMountedState`, plus re-exported `@churchapps/helpers` utilities (`ApiHelper`, `DateHelper`, `Locale`, `UserHelper`, etc.) | B1Admin, B1App, B1Transfer, LessonsApp |
-| Root -- site chrome | `SiteHeader` (nav, user menu, notifications) | B1Admin, B1Transfer, LessonsApp |
-| Root -- admin content editors | `ImageEditor`, `HelpIcon` | B1Admin |
+| Root -- कोर कंपोनेंट और hooks | `DisplayBox`, `InputBox`, `Loading`, `PageHeader`, `PersonAvatar`, `SmallButton`, `ErrorMessages`, `ExportLink`, `useMountedState`, साथ ही पुनः export किए गए `@churchapps/helpers` utilities (`ApiHelper`, `DateHelper`, `Locale`, `UserHelper`, आदि) | B1Admin, B1App, B1Transfer, LessonsApp |
+| Root -- साइट chrome | `SiteHeader` (नेविगेशन, उपयोगकर्ता मेनू, सूचनाएँ) | B1Admin, B1Transfer, LessonsApp |
+| Root -- एडमिन कंटेंट editors | `ImageEditor`, `HelpIcon` | B1Admin |
 | Root -- realtime plumbing | `SocketHelper`, `SubscriptionManager`, `NotificationService` | B1Admin, B1App |
 | Root -- chat/presence stores | `ConversationStore`, `PresenceStore` | B1App |
-| Root -- notes & messaging UI | `Notes` (staff notes on people/tasks); `AddNote`, `SubscriptionToggle` (member messaging) | B1Admin (`Notes`), B1App (`AddNote`, `SubscriptionToggle`) |
-| Root -- Lessons-specific | `AnalyticsHelper`, `FloatingSupport`, `SupportModal` | LessonsApp |
+| Root -- नोट्स और messaging UI | `Notes` (लोगों/कार्यों पर स्टाफ़ नोट्स); `AddNote`, `SubscriptionToggle` (सदस्य messaging) | B1Admin (`Notes`), B1App (`AddNote`, `SubscriptionToggle`) |
+| Root -- Lessons-विशिष्ट | `AnalyticsHelper`, `FloatingSupport`, `SupportModal` | LessonsApp |
 | `./login` | `LoginPage`, `LogoutPage` | B1Admin, B1App, B1Transfer, LessonsApp |
-| `./markdown` | `MarkdownEditor`, `MarkdownPreviewLight` (shared); `MarkdownPreview`, `HtmlEditor` (admin content editing) | B1Admin, B1App, LessonsApp |
-| `./donations` | `MultiGatewayDonationForm`, `RecurringDonations`, `PaymentMethods`, `StripePaymentMethod`, `DonationHelper`/`getPaymentProvider` (shared); `FundDonations` (admin only) | B1Admin, B1App |
-| `./forms` | `FormSubmissionEdit` (renders `ConversationalForm` when the form's `displayMode` is `conversational`) | B1Admin, B1App |
-| `./website` | Page-rendering core shared by the editor and renderer (`Element` + the per-type renderers resolved via `ElementRegistry`, `StyleHelper`, `DroppableArea`, `DraggableWrapper`, `Theme`, `YoutubeBackground`, `SectionDivider`/`parseDividerConfig`); site-wide widgets (`AnnouncementBanner`, `Launcher` + their `parse*Config` helpers); `Animate`, `ElementBlock`, `NonAuthDonationWrapper`, `SermonElement` used only by the public-facing renderer | B1Admin (editor), B1App (editor components + renderer) |
+| `./markdown` | `MarkdownEditor`, `MarkdownPreviewLight` (साझा); `MarkdownPreview`, `HtmlEditor` (एडमिन कंटेंट संपादन) | B1Admin, B1App, LessonsApp |
+| `./donations` | `MultiGatewayDonationForm`, `RecurringDonations`, `PaymentMethods`, `StripePaymentMethod`, `DonationHelper`/`getPaymentProvider` (साझा); `FundDonations` (केवल एडमिन) | B1Admin, B1App |
+| `./forms` | `FormSubmissionEdit` (जब फ़ॉर्म का `displayMode` `conversational` हो, तब `ConversationalForm` रेंडर करता है) | B1Admin, B1App |
+| `./website` | संपादक और renderer दोनों द्वारा साझा पेज-रेंडरिंग कोर (`Element` और `ElementRegistry` के ज़रिए हल होने वाले प्रकार-अनुसार renderers, `StyleHelper`, `DroppableArea`, `DraggableWrapper`, `Theme`, `YoutubeBackground`, `SectionDivider`/`parseDividerConfig`); साइट-व्यापी विजेट (`AnnouncementBanner`, `Launcher` और उनके `parse*Config` helpers); `Animate`, `ElementBlock`, `NonAuthDonationWrapper`, `SermonElement` केवल सार्वजनिक renderer द्वारा उपयोग किए जाते हैं | B1Admin (संपादक), B1App (संपादक कंपोनेंट + renderer) |
 
-B1Transfer and LessonsApp use only the root and `login` entry points -- the `donations`, `forms`, and `website` subpaths are consumed exclusively by B1Admin and B1App today.
+B1Transfer और LessonsApp केवल root और `login` entry points का उपयोग करते हैं -- `donations`, `forms`, और `website` subpaths आज केवल B1Admin और B1App द्वारा उपयोग किए जाते हैं।
 
-## Setup for Local Development
+## स्थानीय विकास के लिए सेटअप
 
-This package lives in the [Packages](https://github.com/ChurchApps/Packages) workspace alongside the other shared libraries:
+यह पैकेज [Packages](https://github.com/ChurchApps/Packages) वर्कस्पेस में अन्य साझा लाइब्रेरी के साथ रहता है:
 
-1. Clone the workspace:
+1. वर्कस्पेस क्लोन करें:
 
    ```bash
    git clone https://github.com/ChurchApps/Packages.git
    ```
 
-2. Install dependencies at the workspace root:
+2. वर्कस्पेस root पर डिपेंडेंसी इंस्टॉल करें:
 
    ```bash
    cd Packages && yarn install
    ```
 
-3. Launch the Vite playground from the package directory:
+3. पैकेज डायरेक्टरी से Vite playground लॉन्च करें:
 
    ```bash
    cd apphelper && yarn dev
    ```
 
-   The playground dev server starts at `http://localhost:3001`. Copy `playground/dotenv.sample` to `playground/.env` and fill in the required values first.
+   Playground dev server `http://localhost:3001` पर शुरू होता है। पहले `playground/dotenv.sample` को `playground/.env` में कॉपी करें और आवश्यक मान भरें।
 
-To build the package for consumption (compiles to `dist/` and copies locale/CSS assets), run `yarn workspace @churchapps/apphelper build` -- or `yarn build` at the root to build every package in dependency order. To test an unpublished build inside a consuming app, use a temporary Yarn portal -- see [Local Development Against a Consuming App](./index.md#local-development-against-a-consuming-app).
+उपभोग के लिए पैकेज बनाने हेतु (जो `dist/` में compile करता है और locale/CSS assets कॉपी करता है), `yarn workspace @churchapps/apphelper build` चलाएँ -- या निर्भरता-क्रम में हर पैकेज बनाने के लिए root पर `yarn build`। किसी उपभोक्ता ऐप के अंदर बिना प्रकाशित build का परीक्षण करने के लिए अस्थायी Yarn portal का उपयोग करें -- देखें [उपभोक्ता ऐप के विरुद्ध स्थानीय विकास](./index.md#local-development-against-a-consuming-app)।
 
 :::tip
-The playground is the fastest way to develop and test AppHelper components. It hot-reloads the Vite dev server so you can see changes in real time.
+AppHelper कंपोनेंट विकसित और परीक्षण करने का सबसे तेज़ तरीका playground है। यह Vite dev server को hot-reload करता है, ताकि आप बदलाव तुरंत देख सकें।
 :::
 
-## Publishing
+## प्रकाशन
 
-Releases go through changesets: run `yarn changeset` at the workspace root with every change, then `yarn publish-all` when ready to release. See the [Shared Libraries Overview](./index.md#releasing-with-changesets) for the full flow.
+Releases changesets के ज़रिए होते हैं: हर बदलाव के साथ workspace root पर `yarn changeset` चलाएँ, फिर तैयार होने पर `yarn publish-all` चलाएँ। पूरे flow के लिए देखें [साझा लाइब्रेरी अवलोकन](./index.md#releasing-with-changesets)।
 
 :::warning
-Never remove or rename an export until the replacement is published and every consumer has been migrated -- grep all consuming repos before merging a removal.
+जब तक प्रतिस्थापन प्रकाशित न हो जाए और हर उपभोक्ता माइग्रेट न हो जाए, तब तक कोई export न हटाएँ या उसका नाम न बदलें -- हटाने को merge करने से पहले सभी उपभोक्ता repos में grep ज़रूर करें।
 :::
 
-## Related Articles
+## संबंधित लेख
 
-- **[Helpers](./helpers)** -- The base utility package used alongside AppHelper
-- **[Web Apps](../web-apps/)** -- The web applications that consume this package
-- **[Shared Libraries Overview](./index.md)** -- Workspace setup, release flow, and local-link workflow
+- **[Helpers](./helpers)** -- AppHelper के साथ उपयोग होने वाला आधार utility पैकेज
+- **[वेब ऐप्स](../web-apps/)** -- वे वेब एप्लिकेशन जो इस पैकेज का उपयोग करते हैं
+- **[साझा लाइब्रेरी अवलोकन](./index.md)** -- वर्कस्पेस सेटअप, release flow, और local-link workflow

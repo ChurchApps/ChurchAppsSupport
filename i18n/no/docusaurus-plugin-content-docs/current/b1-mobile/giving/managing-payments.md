@@ -1,57 +1,57 @@
 ---
-title: "Administrere Betalingsmetoder"
+title: "Administrering av betalingsmetoder"
 ---
 
-# Administrere Betalingsmetoder
+# Administrering av betalingsmetoder
 
 <div class="article-intro">
 
-**Administrer**-fanen i givertjenesteseksjonen lar deg se og administrere dine lagrede betalingsmetoder. Ved a lagre et kort kan du gi fremtidige donasjoner raskere uten a matte skrive inn detaljene pa nytt hver gang.
+Fanen **Administrer** i gaveseksjonen lar deg se og administrere de lagrede betalingsmetodene dine. Ved å lagre et kort kan du gi fremtidige gaver raskere uten å måtte skrive inn opplysningene dine på nytt hver gang.
 
 </div>
 
 <div class="prereqs">
-<h4>For Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) pa kontoen din
+- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
 
 </div>
 
-## Se Betalingsmetodene Dine
+## Se betalingsmetodene dine
 
-Nar du apner **Administrer**-fanen, ser du en liste over alle dine lagrede betalingsmetoder. Hver oppforing viser korttypen og de fire siste sifrene i kortnummeret, slik at du enkelt kan identifisere hvilket kort som er hvilket.
+Når du åpner fanen **Administrer**, ser du en liste over alle de lagrede betalingsmetodene dine. Hver oppføring viser korttypen og de fire siste sifrene i kortnummeret, slik at du enkelt kan se hvilket kort som er hvilket.
 
-## Legge til en Ny Betalingsmetode
+## Legge til en ny betalingsmetode
 
-For a legge til et nytt kort:
+Slik legger du til et nytt kort:
 
-1. Apne **Givertjeneste**-seksjonen i B1 Mobile.
-2. Trykk pa **Administrer**-fanen.
-3. Trykk pa alternativet for a legge til en ny betalingsmetode.
-4. Skriv inn kortopplysningene dine. Informasjonen sendes sikkert til **Stripe** for behandling.
-5. Nar det er lagret, vises det nye kortet i listen over betalingsmetoder.
+1. Åpne **Giving**-seksjonen i B1 Mobile.
+2. Trykk på fanen **Administrer**.
+3. Trykk på alternativet for å legge til en ny betalingsmetode.
+4. Skriv inn kortopplysningene dine. Opplysningene sendes sikkert til **Stripe** for behandling.
+5. Når kortet er lagret, vises det nye kortet i listen over betalingsmetoder.
 
-Det lagrede kortet er da tilgjengelig som betalingsalternativ neste gang du [gir en donasjon](./making-donations) fra **Gi**-fanen.
+Det lagrede kortet ditt vil deretter være tilgjengelig som betalingsalternativ neste gang du [gir en gave](./making-donations) fra fanen **Gi**.
 
-## Fjerne en Betalingsmetode
+## Fjerne en betalingsmetode
 
-Hvis du ikke lenger onsker a ha et kort registrert, kan du fjerne det fra **Administrer**-fanen:
+Hvis du ikke lenger vil ha et kort lagret, kan du fjerne det fra fanen **Administrer**:
 
 1. Finn kortet du vil fjerne i listen over lagrede betalingsmetoder.
-2. Trykk pa fjern- eller slettealternativet ved siden av kortet.
+2. Trykk på alternativet for å fjerne eller slette ved siden av kortet.
 3. Bekreft fjerningen.
 
-Kortet vises ikke lenger som betalingsalternativ nar du gir en donasjon.
+Kortet vises ikke lenger som betalingsalternativ når du gir en gave.
 
 :::info
-A fjerne en betalingsmetode pavirker ikke tidligere donasjoner. [Donasjonshistorikken](./donation-history) din forblir uendret.
+Å fjerne en betalingsmetode påvirker ikke tidligere gaver. [Gavehistorikken](./donation-history) din forblir uendret.
 :::
 
 :::tip
-Behold minst en lagret betalingsmetode for rask giving. Pa denne maten kan du bruke **Gjenta**-knappen pa **Oversikt**-fanen for a gi igjen med ett enkelt trykk.
+Behold minst én lagret betalingsmetode for rask giving. Da kan du bruke knappen **Gjenta** på fanen **Oversikt** for å gi igjen med ett trykk.
 :::
 
-## Relaterte Artikler
+## Relaterte artikler
 
-- [Gi en Donasjon](./making-donations) -- Laer hvordan du gir en gave med en lagret betalingsmetode
-- [Donasjonshistorikk](./donation-history) -- Se giversammendraget og tidligere donasjoner
+- [Gi en gave](./making-donations) -- Lær hvordan du gir en gave med en lagret betalingsmetode
+- [Gavehistorikk](./donation-history) -- Se gaveoversikten og tidligere gaver din

@@ -6,42 +6,55 @@ title: "Profil"
 
 <div class="article-intro">
 
-Ihr Profil in B1 Mobile ist der Ort, an dem Sie Ihre persoenlichen Informationen, Ihren Haushalt und Ihre Datenschutzeinstellungen verwalten. Alles, was Sie hier aktualisieren, wird in allen ChurchApps-Diensten widergespiegelt, sodass Sie Aenderungen nur an einer Stelle vornehmen muessen.
+Dein Profil in B1 Mobile ist der Ort, an dem du deine persönlichen Daten, deinen Haushalt und deine Datenschutzeinstellungen verwaltest. Alles, was du hier aktualisierst, wird in allen ChurchApps-Diensten übernommen, sodass du Änderungen nur an einer Stelle vornehmen musst.
 
 </div>
 
 ## Profil-Tabs
 
-Der Profilbildschirm ist in mehrere Tabs unterteilt:
+Der Bildschirm „Profil" ist in mehrere Tabs unterteilt:
 
 ### Profil
 
-Der **Profil**-Tab ermoeglicht es Ihnen, Ihre persoenlichen Informationen einzusehen und zu bearbeiten, einschliesslich Ihres Namens, Ihrer Kontaktdaten und Ihres Profilfotos. Wenn Sie Ihr Profil aktuell halten, hilft das Ihrer Gemeinde, mit Ihnen in Kontakt zu bleiben.
+Im Tab **Profil** kannst du deine persönlichen Daten anzeigen und bearbeiten, einschließlich deines Namens, deiner Kontaktdaten und deines Profilfotos. Ein aktuelles Profil hilft deiner Gemeinde, mit dir in Kontakt zu bleiben.
 
 ### Haushalt
 
-Der **Haushalt**-Tab zeigt Ihre Familienmitglieder und deren Rollen innerhalb Ihres Haushalts. Diese Informationen werden fuer Funktionen wie den [Check-in](../checkin/) verwendet, bei dem Sie Ihre ganze Familie auf einmal anmelden koennen.
+Der Tab **Haushalt** zeigt deine Familienmitglieder und ihre Rollen in deinem Haushalt. Diese Informationen werden für Funktionen wie den [Check-in](../checkin/) verwendet, mit dem du deine ganze Familie auf einmal einchecken kannst.
 
 ### Sichtbarkeit
 
-Der **Sichtbarkeit**-Tab ermoeglicht es Ihnen zu steuern, was andere Gemeindemitglieder im [Verzeichnis](../community/member-directory.md) ueber Sie sehen koennen. Sie entscheiden, welche persoenlichen Details geteilt werden und welche privat bleiben.
+Im Tab **Sichtbarkeit** legst du fest, was andere Gemeindemitglieder im [Verzeichnis](../community/member-directory.md) über dich sehen können. Du entscheidest, welche persönlichen Angaben geteilt werden und welche privat bleiben.
 
 ### Ausstehend
 
-Der **Ausstehend**-Tab zeigt alle Profilaenderungen, die Sie eingereicht haben und die auf eine Administratorgenehmigung warten.
+Der Tab **Ausstehend** zeigt alle Profiländerungen, die du eingereicht hast und die noch auf die Genehmigung durch einen Administrator warten.
 
 ### Konto
 
-Der **Konto**-Tab bietet Zugang zu Ihren Sicherheitseinstellungen.
+Der Tab **Konto** bietet Zugriff auf deine Sicherheitseinstellungen.
 
-## Zu Ihrem Profil gelangen
+## Meine Karten und Meine Aufgaben
 
-1. Oeffnen Sie das Seitenmenue.
-2. Tippen Sie auf **Profil**, um Ihren Profilbildschirm zu oeffnen.
-3. Verwenden Sie die Tabs oben, um zwischen den Bereichen zu navigieren.
+Wenn deine Gemeinde dir [Workflow-Karten](../../b1-admin/serving/workflows.md) oder [Aufgaben](../../b1-admin/serving/tasks.md) zuweist, zeigt der Bildschirm **Ich** einen Abschnitt **Meine Karten** und einen Abschnitt **Meine Aufgaben** an. Auf der **Startseite** erscheint außerdem eine kurze Liste **Deine Nachfassaktionen**. Diese Abschnitte werden nur angezeigt, wenn dir etwas zugewiesen ist, und abgeschlossene Aufgaben werden nie angezeigt. Tippe auf **Alle Karten**, **Alle Aufgaben** oder **Alle**, um alles zu sehen, was dir zugewiesen ist.
 
-## Naechste Schritte
+Tippe auf eine Karte, um sie zu öffnen. Du kannst:
 
-- [Profil bearbeiten](./editing-profile) -- Aktualisieren Sie Ihren Namen, Ihre Kontaktdaten und Ihr Foto
-- [Haushalt](./household) -- Sehen und verwalten Sie Ihre Familienmitglieder
-- [Datenschutzeinstellungen](./privacy-settings) -- Steuern Sie, was andere ueber Sie sehen koennen
+- Den Schritt, das Fälligkeitsdatum und die Person sehen, um die es geht. Der Name der Person öffnet ihr Verzeichnisprofil, sofern das Verzeichnis es dir anzeigt.
+- **Abschließen** tippen (oder die Ergebnisschaltfläche des Schritts), wenn der Schritt erledigt ist.
+- Die Karte für 1, 3 oder 7 Tage **zurückstellen**.
+- **Notizen** lesen und hinzufügen. Dies sind dieselben Notizen, die Mitarbeitende auf der Karte in B1 Admin sehen.
+
+Tippe auf eine einfache Aufgabe, um zu sehen, von wem sie stammt, wem sie gilt und welche Notizen dazu existieren. Das Schließen einer einfachen Aufgabe erfolgt weiterhin in B1 Admin.
+
+## Zu deinem Profil gelangen
+
+1. Öffne das Schubladenmenü.
+2. Tippe auf **Profil**, um den Profilbildschirm zu öffnen.
+3. Nutze die Tabs oben, um zwischen den Abschnitten zu wechseln.
+
+## Nächste Schritte
+
+- [Dein Profil bearbeiten](./editing-profile) -- Name, Kontaktdaten und Foto aktualisieren
+- [Haushalt](./household) -- Familienmitglieder anzeigen und verwalten
+- [Datenschutzeinstellungen](./privacy-settings) -- Festlegen, was andere über dich sehen können

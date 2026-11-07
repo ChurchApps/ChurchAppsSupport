@@ -1,56 +1,56 @@
 ---
-title: "Familia"
+title: "Domicílio"
 ---
 
-# Familia
+# Domicílio
 
 <div class="article-intro">
 
-A aba **Familia** na tela do Perfil mostra os membros da sua familia. Aqui voce pode ver quem faz parte do seu nucleo familiar e como os membros estao conectados, o que e essencial para recursos como check-in.
+A aba **Domicílio** na sua tela de Perfil mostra os membros da sua família. É aqui que você pode ver quem faz parte do seu domicílio e como os membros estão conectados, o que é essencial para recursos como o check-in.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comecar</h4>
+<h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faca login](../getting-started/logging-in) na sua conta
+- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
 
 </div>
 
-## O Que Voce Vera
+## O Que Você Verá
 
-Quando voce abre a aba **Familia**, vera uma lista das pessoas no seu nucleo familiar. A entrada de cada membro mostra:
+Ao abrir a aba **Domicílio**, você verá uma lista das pessoas do seu domicílio. A entrada de cada membro mostra:
 
-- **Nome** -- O nome e sobrenome da pessoa
-- **Funcao** -- A funcao dentro do nucleo familiar (como Responsavel ou Outro)
-- **Foto do perfil** -- A foto, se uma foi carregada
+- **Nome** -- O primeiro e o último nome da pessoa
+- **Função** -- A função dela dentro do domicílio (como Responsável ou Outro)
+- **Foto de perfil** -- A foto dela, se tiver sido enviada
 
-Seu nucleo familiar e um grupo compartilhado que conecta os membros da sua familia dentro do sistema da igreja.
+Seu domicílio é um grupo compartilhado que une os membros da sua família dentro do sistema da igreja.
 
-## Por Que a Familia e Importante
+## Por Que o Domicílio É Importante
 
-As informacoes da sua familia sao usadas por varios recursos no B1 Mobile e em todos os servicos ChurchApps:
+As informações do seu domicílio são usadas por vários recursos do B1 Mobile e de toda a ChurchApps:
 
-- **Check-in** -- Quando voce [registra presenca](../checkin/self-checkin.md) para um culto ou evento, pode registrar toda a familia de uma vez em vez de registrar cada pessoa individualmente.
-- **Registros da igreja** -- Sua igreja usa dados familiares para manter os registros das familias organizados e comunicar-se com sua familia como uma unidade.
-- **Diretorio** -- Outros membros podem ver as informacoes da sua familia no [diretorio da igreja](../community/member-directory.md), dependendo das suas [configuracoes de privacidade](./privacy-settings).
+- **Check-in** -- Ao [fazer check-in](../checkin/self-checkin.md) em um culto ou evento, você pode fazer check-in de todo o seu domicílio de uma só vez, em vez de fazer check-in de cada pessoa individualmente.
+- **Registros da igreja** -- Sua igreja usa os dados do domicílio para manter os registros familiares organizados e para se comunicar com sua família como um todo.
+- **Diretório** -- Outros membros podem ver as informações do seu domicílio no [diretório da igreja](../community/member-directory.md), dependendo das suas [configurações de privacidade](./privacy-settings).
 
-## Visualizando Sua Familia
+## Como Visualizar Seu Domicílio
 
 1. Abra o menu lateral e toque em **Perfil**.
-2. Selecione a aba **Familia**.
-3. Navegue pela lista de membros da familia no seu nucleo familiar.
+2. Selecione a aba **Domicílio**.
+3. Percorra a lista dos membros da sua família.
 
 :::info
-A participacao no nucleo familiar e geralmente administrada pelo administrador da sua igreja. Se voce precisar adicionar ou remover alguem do seu nucleo familiar, entre em contato com o escritorio da sua igreja para assistencia.
+A participação no domicílio normalmente é gerenciada pelo administrador da sua igreja. Se você precisar adicionar ou remover alguém do seu domicílio, entre em contato com a secretaria da igreja para obter ajuda.
 :::
 
-## Mantendo as Informacoes Atualizadas
+## Mantendo as Informações Atualizadas
 
-Se os dados de um membro da familia precisam de atualizacao, eles podem [editar seu proprio perfil](./editing-profile), ou voce pode entrar em contato com o administrador da sua igreja para fazer alteracoes. Manter as informacoes familiares precisas garante que recursos como [check-in](../checkin/) funcionem sem problemas para toda a familia.
+Se os dados de algum membro da família precisarem de atualização, ele pode [editar o próprio perfil](./editing-profile), ou você pode entrar em contato com o administrador da igreja para fazer as alterações. Manter as informações do domicílio precisas garante que recursos como o [check-in](../checkin/) funcionem bem para toda a sua família.
 
 ## Artigos Relacionados
 
-- [Auto Check-In](../checkin/self-checkin.md) -- Registre presenca dos membros da familia para cultos
-- [Editando Seu Perfil](./editing-profile) -- Atualize suas proprias informacoes pessoais
-- [Configuracoes de Privacidade](./privacy-settings) -- Controle o que outros podem ver sobre sua familia
+- [Check-in Próprio](../checkin/self-checkin.md) -- Faça check-in dos membros do seu domicílio para os cultos
+- [Editando Seu Perfil](./editing-profile) -- Atualize suas informações pessoais
+- [Configurações de Privacidade](./privacy-settings) -- Controle o que outras pessoas podem ver sobre o seu domicílio
