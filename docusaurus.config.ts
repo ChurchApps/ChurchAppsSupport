@@ -141,6 +141,11 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        // GA4: reports into the ChurchApps.org property (363427908); filter by hostName = support.churchapps.org.
+        gtag: {
+          trackingID: 'G-KQ02ER7SZ9',
+          anonymizeIP: true,
+        },
       } satisfies Preset.Options,
     ],
   ],
